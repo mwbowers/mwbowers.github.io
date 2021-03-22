@@ -1,0 +1,235 @@
+---
+title: ASNA.QSys Program
+---
+
+The Concept of a `Program` in [.NET 5](https://docs.microsoft.com/en-us/dotnet/core/introduction) is different than that on the IBM i.
+
+.NET 5 is a development platform for building **many kinds** of applications and services.
+
+QSys implements the most important [IBM i Program Semantics]({{ site.rooturl }}/ibmi-program/):
+
+1. Program Activation.
+2. Program Activation Groups.
+3. Keeping Programs Active.
+4. Calling Programs Dynamically.
+
+The `ASNA.QSys Program` is the class that is used as the *base* class for any `RPG` IBM i migrated program.
+
+## Program *Entry Procedure*
+Callable IBM i Programs require an Entry point to the *Main Procedure*[^1]. After an IBM i Program has been Activated, passed parameters are processed and the *Entry Procedure* starts executing.
+
+RPG Programs are migrated as classes derived from `ASNA.QSys Program` and the [C# attribute](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/) `ProgramEntry` is defined with the value set to `_ENTRY`[^2].
+
+RPG Programs are migrated using a template to implement the `__ENTRY` method[^4], with a code similar to the following:
+
+```cs
+void __ENTRY(out Indicator __inLR, bool _isNew, /* optional parameters*/)
+{
+    int _pc_parms = /* constant */;
+    bool _cleanup = true;
+
+    /* Process optional parameters */
+
+    __inLR = '0';
+    try
+    {
+        _parms = _pc_parms;
+        if (_isNew)
+            PROCESS_STAR_INZSR();
+        StarEntry(_pc_parms);
+    }
+    catch(Return)
+    {
+    }
+    catch(System.Threading.ThreadAbortException)
+    {
+        _cleanup = false;
+        __inLR = '1';
+    }
+    finally
+    {
+        if (_cleanup)
+        {
+            /* Copy values to 'out' parameters */ 
+            __inLR = _INLR;
+        }
+    }
+}
+```
+
+Notice how after processing optional parameters, if the *Call* to the *Program* was that for a new *Activation*[^3], the optional `PROCESS_STAR_INZSR` method is called.
+
+Then the *Logic* `StarEntry` starts running, with the number of parameters known and parameter values loaded. IBM i RPG compiler generated code similar to what we just described. To avoid distraction, that code is hidden to the IBM i Developer (considered *internal templated code*).
+
+>&#128161; When Maintaining migrated Programs, consider treating the `StarEntry` as the Program's Entry Procedure. In practical terms, the code in the `StarEntry` is the *first* code that executes the Program's Business Logic.
+
+The `ASNA.QSys Program` provides:
+
+1. Activation and Activation Group support.
+2. [INZSR](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/inz_subr.htm) Support.
+3. Parameter Passing support.
+4. Access to its parent [QSys Job]({{ site.rooturl }}/qsys-job/).
+5. Access to Job Services (Spooler, DLO, IFS).
+6. Program Message Support.
+7. [SQL Communications Area](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/db2/rbafzsqlcca.htm).
+
+
+## Activation and Activation Group support
+
+Activation Group name is implemented using [C# Attributes](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/). Collections of `ASNA.QSys Program` instances may be found to process operations on Programs (inheritance rules, de-activation, etc. )
+
+##  QSys Activation Call Stack.
+Although implementation details on how C# implements a [Call Stack](https://en.wikipedia.org/wiki/Call_stack) in .NET is somewhat hidden to the .NET developer, it is well defined that local variables (*state*) are **volatile** and no longer accessible when a method call returns.  
+
+The concept of calling a *piece of code* in a way that *state* is kept *Active* in case we want to call it again is an *odd* non-existing concept. Particularly if the *semantics* of how *pieces of code* may define *state* as methods are called, and when the *call stack* rewinds, **some** state remain in memory, is just not a common implementation in modern languages such as C#.
+
+To preserve Legacy Logic that depended on Program *Activation* with *stay active* rules, `QSys` had to implement its own `Activation Call Stack`. 
+
+## Implicit Logic Cycle
+IBM i RPG compiler supplies code that implements a [logic cycle](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/rpgcycle.htm).
+
+RPG Programs migrated to `ASNA.QSys Program` explicitly, contain code to implement the *logic cycle*, as a `do while` tool in `StarEntry` method:
+
+```cs
+void StarEntry(int _pc_parms)
+{
+    do
+    {
+        /* Migrated Entry Procedure code */
+        
+    } while (!(bool)_INLR);
+}
+```
+
+The idea of an implicit loop came from the [Punched Card](https://en.wikipedia.org/wiki/Computer_programming_in_the_punched_card_era) where *feed hopper* would process continuously cards until the **Last** record or card was processed.
+
+## Keeping Programs Active
+Particularly for Developers maintaining QSys Programs generated by a *Migration Process*, who may be unfamiliar with `RPG` semantics, it is important to understand the role of [Last Record Indicator](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/lrind.htm) to signal a program that is completing the *Entry Procedure* to **Remain in Memory**.
+
+Programs that are *Called Dynamically* main remain *Active* in their Activation Group Program Stack, when the *Last Record Indicator* has the value `1`.
+
+## INZSR Support
+The optional code in RPG legacy source for the *Initialization Subroutine* `INZSR` is migrated as the method `PROCESS_STAR_INZSR`, and its called when the Program is *Activated*.
+
+## Parameter Passing support.
+Parameter passing semantics are also generated explicitly.
+
+The best way to describe the logic of generated code is by a simple example.
+
+The following sample code [Identifies the Parameter List](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/zzplist.htm) for the *Entry Procedure* as follows:
+
+```
+0030.00     C     *Entry        Plist
+0031.00     C                   Parm                    Cust#Ch
+0032.00     C                   Parm                    SalesCh
+0033.00     C                   Parm                    ReturnsCh
+     
+```
+
+Where the parameters are described by [Definition Specs](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/defcntxm.htm) as:
+
+```
+0018.00     D Cust#Ch         S              9A
+0019.00     D SalesCh         S             13A
+0020.00     D ReturnsCh       S             13A
+```
+
+The generated code is the following:
+
+```cs
+void __ENTRY(out Indicator __inLR, bool _isNew, ref FixedString<_9> _Cust_lb_Ch, ref FixedString<_13> _SalesCh, ref FixedString<_13> _ReturnsCh)
+{
+    int _pc_parms = 3;
+    bool _cleanup = true;
+    ReturnsCh = _ReturnsCh;
+    SalesCh = _SalesCh;
+    Cust_lb_Ch = _Cust_lb_Ch;
+    __inLR = '0';
+    try
+    {
+        _parms = _pc_parms;
+        if (_isNew)
+            PROCESS_STAR_INZSR();
+        StarEntry(_pc_parms);
+    }
+    catch(Return)
+    {
+    }
+    catch(System.Threading.ThreadAbortException)
+    {
+        _cleanup = false;
+        __inLR = '1';
+    }
+    finally
+    {
+        if (_cleanup)
+        {
+            _Cust_lb_Ch = Cust_lb_Ch;
+            _SalesCh = SalesCh;
+            _ReturnsCh = ReturnsCh;
+            __inLR = _INLR;
+        }
+    }
+}
+```
+>Note:
+* Parameters are passed to the method (using underscore prefix).
+* The Parameter count is resolved.
+* The parameters are copied to fields in the class (without underscore)
+* StarEntry - (the logical Entry Procedure) is called.
+* When the Program *finalizes* (if it did not crash), the resulting values of the parameters are copied back to the *passed* parameters.
+
+## Program Message Support
+`ASNA.QSys Program` implements the basic [IBM i Messaging Protocol](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rbam6/wmsgs.htm).
+
+`ASNA.QSys CL Program` class is derived from `ASNA.QSys Program`, legacy calls to [SNDPGMMSG](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rbam6/msgcl.htm) are migrated as:
+
+```cs
+SendProgramMessage( string id, string file, string data, string pgmQ, MessageType type )
+```
+> There are other methods `SendProgramMessage` with parameter overloading that may be used to simplify the code.
+
+Additional support for Program Messages include:
+* RemoveMessage
+* SendExternalMessage
+* Message Subfile on [Display Pages]({{ site.rooturl }}/qsys-expo-display-pages/).
+
+## SQL Communications Area
+IBM i RPG Programs using *Embedded SQL* had at their disposal a data structure called [SQL communication area](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/db2/rbafzsqlcca.htm) or `SQLCA`.
+
+`ASNA.QSys Program` has a property to get an instance of a class of type `SQL_CommunicationsArea`. Each time a SQL statement is executed, an instance of class `SQL_CommunicationsArea` and made available as property `SQLCA`.
+
+SQLCA has properties to access equivalent to the RPG data structure fields defined by SQLCA, including:
+
+* SQLCOD (or SQLCODE)
+* SQLSTT (or SQLSTATE)  
+
+It also captures the last SQL Exception thrown, as the property SQL_Exception.
+
+> The value conventions of SQL execution result CODE and STATE, are unique to [IBM i](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/db2/rbafzfielddescsqlca.htm). The `SQLCA` implementation in `ASNA.QSys Program` converts standard SQL error codes to the IBM i conventions as best as possible.
+
+## Calling Programs Dynamically
+IBM i RPG has support for three different ways to CALL a Program:
+
+1. CALL - External CALL to a IBMi *Program Object*.
+2. CALLB - CALL to a *Bound* **Procedure**. A **Procedure** is similar to a program within a program.
+3. CALLP - Like CALLB, but the **Procedure** has a pre-defined [Prototype](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzasd/ptyp.htm).
+
+> C# is a [Strongly Typed Language](https://en.wikipedia.org/wiki/Strong_and_weak_typing). Method calls are *implicitly* strongly typed. The use of a *Prototype* is unnecessary.
+
+Removing the distinction of CALLB and CALLP, we are left with two options:
+
+1. CALL to an External Program. Call to a Program in a different .NET Assembly.
+2. CALL to a *Bound* Program. Internal call to a `ASNA.QSys Program` by name.
+
+> $ TO-DO: Explain 1. and 2. -- Is the `DynamicCaller_` used for CALL *Bound* ???
+
+<br>
+<br>
+<br>
+
+[^1]: The original RPG did not have the concept of *Main Procedure*, the first `C` Spec (Calculation Specification) was used. It was also referred as the *Main C-Specs*.
+[^2]: RPG used `*` as the prefix for *System* predefined names. It would have been preferable to call the `_ENTRY` `*Entry` to be more consistent with legacy language, but C# names cannot start with a symbol. In general, wherever `*` would be used, the migrations uses `_` instead.
+[^3]: Programs that are called after having been *Activated* earlier, keep their old state (initialization code is avoided).
+[^4]: There are two `ENTRY` (uppercase) one with double underline prefix, and one with single underline prefix. The single underline version `__ENTRY` is static and used by the *Activation Manager* Logic.
+
