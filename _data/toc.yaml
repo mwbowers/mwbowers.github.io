@@ -3,10 +3,10 @@ horizontalnav:
 - title: Home
   path: /
   node: home
-- title: Background Information
+- title: Background
   path: /Background/Welcome.html
   node: Background
-- title: Application Architecture
+- title: Architecture
   path: /Architecture/Welcome.html
   node: Architecture
 - title: Program Structure
@@ -15,10 +15,10 @@ horizontalnav:
 - title: User Interface
   path: /UserInterface/Welcome.html
   node: UserInterface
-- title: Monarch Framework
+- title: Reference
   path: /MonarchFX/Welcome.html
   node: MonarchFX
-- title: Enhancing Migrated Applications
+- title: Enhancing Apps
   path: /Enhancements/Welcome.html
   node: Enhancements
 
