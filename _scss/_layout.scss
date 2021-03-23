@@ -4,7 +4,7 @@
 
 .logo {
     margin: 12px 10px 0 10px;
-    width: 32px;
+    width: 128;
     display: none;
 
     @include lg-width {
@@ -17,7 +17,6 @@
 
         img {
             margin: 12px 15px;
-            height: 30px;
         }
     }
 
