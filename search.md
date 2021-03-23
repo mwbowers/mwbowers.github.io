@@ -27,7 +27,7 @@ skip_read_time: true
 <div id="my-cse1">
 <script>
   (function() {
-    const cx = '54905bb518ef51baf';
+    const cx = '92bc2fb74fc35c744';
     let gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
