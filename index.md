@@ -13,10 +13,10 @@ This site documents the ASNA Monarch Core Framework
 
 
 - [Concepts](/concepts/concepts-overview.html)
-  Provides background information on the concepts behind the Framework
+  Provides background information related to the overall Framework Design.
 
 - [Reference](/reference/reference-overview.html)
-  Documentation on the Framework Classes and their members
+  Documentation on the Framework Classes, members and properties.
 
 - [Mobile](/mobile/mobile-overview.html)
-  Things specific to support for Mobile devices.
+  Special considerations for Mobile devices.
