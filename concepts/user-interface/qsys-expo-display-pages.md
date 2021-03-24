@@ -8,7 +8,7 @@ An `ASNA.QSys Expo Display Page` is a [ASP.NET RazorPage](https://en.wikipedia.o
 ## ASNA.QSys.Expo Assembly
 ASNA.QSys.Expo is the implementation of the Application Presentation Layer. *Present*, *Expose* or *Exhibit* on Display, this is where the `Expo` name came from. 
 
-The ASNA.QSys.Expo Assembly is the subsystem of ASNA.QSys that implements the classes to Render a [Workstation file](/concepts/user-interface//qsys-workstationfile/) on a Web Page.
+The ASNA.QSys.Expo Assembly is the subsystem of ASNA.QSys that implements the classes to Render a [Workstation file](/concepts/user-interface//qsys-workstationfile.html/) on a Web Page.
 
 The ASNA.QSys Expo Display Page extends the [ASP.NET 5 Websites](/concepts/user-interface/asp-net-websites.html/) model, providing [DDS-like](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/kickoff.htm) TagHelpers.
 

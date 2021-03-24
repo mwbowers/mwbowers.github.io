@@ -169,7 +169,7 @@ All fields refereed to by the following TagHelpers, need support from the [Expo 
 
 ## DdsCharField
 
-The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length](/concepts/program-architecture/qsys-fixedtypes/)
+The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length](/concepts/program-architecture/qsys-fixedtypes.html/)
 
 The attribute `For` is required and its value is the qualified name of the field in the *Model*
 
