@@ -16,10 +16,10 @@ There are two CSS files in the library:
 
 Web Technology:
 * Javascript is implemented using [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-* CSS layout styles rely heavily on [advanced CSS features]({{ site.rooturl }}/qsys-expo-client-advanced-css/) 
+* CSS layout styles rely heavily on [advanced CSS features](/concepts/user-interface/qsys-expo-client-advanced-css/) 
 
 
-Every Display Page will loads the Expo Client Library as described by [Expo Web Content]({{ site.rooturl }}/qsys-expo-web-content/)
+Every Display Page will loads the Expo Client Library as described by [Expo Web Content](/concepts/user-interface/qsys-expo-web-content.html/)
 
 > The Browser *cache* technology optimizes the loading of these web resources.
 
@@ -329,7 +329,7 @@ Let's peek at the definition for the style `dds-grid-row`, on file:
 
 <br>
 
-> For better understanding, review [Library Advanced CSS]({{ site.rooturl }}/qsys-expo-client-advanced-css/) 
+> For better understanding, review [Library Advanced CSS](/concepts/user-interface//qsys-expo-client-advanced-css/) 
 
 
 Now look again at the image we used previously (repeated here for clarity):
@@ -396,7 +396,7 @@ The following shows the Markup for a Subfile Controller and the Subfile record c
 </DdsSubfileControl>
 ```
 
-[Continue with Subfile Design ...]({{ site.rooturl }}/qsys-expo-client-subfile/)
+[Continue with Subfile Design ...](/concepts/user-interface/qsys-expo-client-subfile.html/)
 
 <br>
 <br>

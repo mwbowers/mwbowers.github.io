@@ -3,7 +3,7 @@ title: RPG Language Support
 ---
 
 ## Externally Described Files
-As we have discussed in the topic [IBM i Developer's model]({{ site.rooturl }}/ibmi-developer-model/), we will *focus* on files that are Described Externally, in particular:
+As we have discussed in the topic [IBM i Developer's model](/concepts/background/ibmi-developer-model.html/), we will *focus* on files that are Described Externally, in particular:
 1. Displayfile.
 2. Database file.
 3. Message file. 
@@ -39,9 +39,9 @@ Legacy Source *Members* used a fixed position System that came from the [Punched
 
 Note how typically, listings were presented with a ruler at the top, to provide a clue regarding the positions of the data columns.
 
-Focus for a minute on positions from `col 7` to `col 16`. You can see codes being used such as `N01`, `02`, `72 73`, `60 61 62`, etc. These codes represent *Conditions*, and are indicated in a particular expression `syntax`. The basic element used for a *condition* is the [Indicator]({{ site.rooturl }}/ibmi-developer-model/) explained before.
+Focus for a minute on positions from `col 7` to `col 16`. You can see codes being used such as `N01`, `02`, `72 73`, `60 61 62`, etc. These codes represent *Conditions*, and are indicated in a particular expression `syntax`. The basic element used for a *condition* is the [Indicator](/concepts/background/ibmi-developer-model.html/) explained before.
 
-Without going into too much detail, the *validity* of the combined *Indicator* expression, determines if the rest of the line is *included* or not. As you may recall from [IBM i Developer's Model]({{ site.rooturl }}/ibmi-developer-model/) an IBM i Program shares its *Indicators* with the Displayfile being used, and *the Program* is responsible for establishing the *state* of the *Indicators* before records are *written* to the Displayfile. 
+Without going into too much detail, the *validity* of the combined *Indicator* expression, determines if the rest of the line is *included* or not. As you may recall from [IBM i Developer's Model](/concepts/background/ibmi-developer-model/) an IBM i Program shares its *Indicators* with the Displayfile being used, and *the Program* is responsible for establishing the *state* of the *Indicators* before records are *written* to the Displayfile. 
 
 Now, focus on positions from `col 19` to `col 28`. You can see names like `FLDA`, `FLDB`, `FLDC`. These are names that identify elements in `DDS`. For *records* that define `fields` such as `FLDA`, `FLDB`, `FLDC`, `columns 30 through 37` define the *Type*. 
 
@@ -71,7 +71,7 @@ Generally speaking, `column positions 45 to 80` are used as [DDS Keywords](https
 
 Modern Relational DBMS operates on *Sets*. A *Set* is a result of a *Database Query* where you join several *Tables* and describe in detail how the *Set* should be processed by the DBMS to produce a result (typically with many rows). DBMS that operate on *Sets* are better suited to implement [Commitment control](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakj/rzakjcommitkickoff.htm) 
 
->[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch Nomad]({{ site.rooturl }}/asna-qsys/)
+>[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch Nomad](/concepts/architecture/asna-qsys.html/)
 
 ## Message Files
 The management of User messages when working with Programs for the IBM i, is also an area that is very well integrated into the IBM i Operating System.
@@ -110,4 +110,4 @@ Just like a *File Object*, Display `subfile` can be *written to*, *read from*, *
 
 `Subfile` configuration and usage is **very** flexible, so much that a *special* Displayfile element had to be created to control them, the [Subfile Control Record](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakc/rzakcmstdfsfctl.htm)
 
->Familiarity to these concepts is essential to understand  [ASNA Nomad Display Page's]({{ site.rooturl }}/asp-net-websites/) markup.
+>Familiarity to these concepts is essential to understand  [ASNA Nomad Display Page's](/concepts/user-interface/asp-net-websites.html/) markup.
