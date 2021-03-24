@@ -21,15 +21,6 @@ Support for:
 5. [Expo Client Library](/concepts/user-interface/qsys-expo-client-library/).
 
 
-## ASNA.QSys.Expo Assembly
-Support for:
-1. [Display Pages]({{ site.rooturl }}/qsys-expo-display-pages/).
-2. [DDS-like TagHelpers]({{ site.rooturl }}/qsys-expo-dds-elements/).
-3. [Display Page Model]({{ site.rooturl }}/qsys-expo-display-page-model/).
-4. [Expo Web Content]({{ site.rooturl }}/qsys-expo-web-content/).
-5. [Expo Client Library]({{ site.rooturl }}/qsys-expo-client-library/).
-
-
 <br>
 
 ## ASNA.QSys.DataGate.Client Assembly
