@@ -22,13 +22,13 @@ A peculiar aspect of IBM i Programs is that by default they will remain *active*
 Keeping a program active may be used to improve performance and keep state, such as database files open.
 
 ## IBM i Programs are *Independent* from other Programs
-IBM i Applications typically consisted on thousands of small very independent Programs. The dependency of programs was defined by the external definition of files (or other devices). As long as the file schema (*format* in IBM i terms) does not change, Programs on IBM i Applications *do not need* to be recompiled.
+IBM i Applications typically consisted of thousands of *small* (very independent) Programs. The dependency of programs was defined by the external definition of files (or other devices). As long as the file schema (*format* in IBM i terms) does not change, Programs on IBM i Applications *do not need* to be recompiled.
 
-The Operating system facilitated the checking of the *independence* of programs, in that if a program was affected by external definitions and an Application try to call the program, the Operating System would throw an exception.
+The Operating system facilitated the checking of the *independence* of programs, in that if a program was affected by external definitions and an Application tried to call the program, the Operating System would *throw an exception*.
 
-IBM i Program independence made the system very robust. Changing a few Programs in a large application, would not affect the rest of the Programs and the Testing and Deployment cycle was accelerated.
+IBM i Program independence made the system **very robust**. Changing a few Programs in a large application, would not affect the rest of the Programs and the Testing and Deployment cycle was accelerated.
 
-> This was so prevalent on Applications running on IBM i, where many thousands of *program objects* remain unchanged throughout the years, that oftentimes the source code was lost or misplaced.
+> This was so prevalent on Applications running on IBM i, where many thousands of *program objects* remain unchanged throughout the years, that oftentimes the source code was lost or misplaced (without noticeable consequences).
 
 ## CL Programs
 A [CL Program](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rbam6/clpr.htm) is a IBM i Program that is created from Operating System *commands*.

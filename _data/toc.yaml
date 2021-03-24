@@ -19,11 +19,11 @@ Reference:
 
 ##
 Concepts:
-- sectiontitle: Concepts Behind the Framework
+- sectiontitle: Framework Concepts
   section:
   - title: Overview
     path: /concepts/concepts-overview.html
-  - sectiontitle: Background Information
+  - sectiontitle: Legacy Application Background
     section:
     - title: Overview
       path: /concepts/background/background-overview.html
@@ -35,15 +35,15 @@ Concepts:
       path: /concepts/background/ibmi-job.html
     - title: IBM i Program
       path: /concepts/background/ibmi-program.html
-  - sectiontitle: Application Architecture
+  - sectiontitle: Monarch Core Application Architecture
     section:
     - title: Overview
       path: /concepts/architecture/architecture-overview.html
-    - title: QSys Job
-      path: /concepts/architecture/asna-qsys.html
     - title: ASNA.QSys
+      path: /concepts/architecture/asna-qsys.html
+    - title: QSys Job
       path: /concepts/architecture/qsys-job.html
-  - sectiontitle: Program Structure
+  - sectiontitle: QSys Program Structure
     section:
     - title: Overview
       path: /concepts/program-structure/program-structure-overview.html
@@ -59,7 +59,7 @@ Concepts:
       path: /concepts/program-structure/qsys-fixedtypes.html
     - title: ASNA.QSys WorkstationFile
       path: /concepts/program-structure/qsys-workstationfile.html
-  - sectiontitle: User Interface
+  - sectiontitle: QSys User Interface
     section:
     - title: User Interface Overview
       path: /concepts/user-interface/ui-overview.html
@@ -79,6 +79,10 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html
     - title: Expo Client Subfile
       path: /concepts/user-interface/qsys-expo-client-subfile.html
+  - sectiontitle: QSys Printing
+    section:
+    - title: Printing Overview
+      path: /concepts/printing/printing-overview.html
   - sectiontitle: Enhancing Migrated Applications
     section:
     - title: Overview
@@ -87,11 +91,7 @@ Concepts:
       path: /concepts/enhancements/new-application-features.html
     - title: Nomad Tools
       path: /concepts/enhancements/nomad-tools.html
-  - sectiontitle: Printing
-    section:
-    - title: Printing Overview
-      path: /concepts/printing/printing-overview.html
-  - sectiontitle: Old Manual - Monarch Framework Concepts
+  - sectiontitle: Classic Monarch Framework Concepts
     section:
     - title: Overview
       path: /MonarchFX/amfASNAMonarchFrameworkConceptsMain.html

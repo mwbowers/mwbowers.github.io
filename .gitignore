@@ -7,3 +7,4 @@ _site/
 ### Visual Studio ###
 slnx.sqlite
 ProjectSettings.json
+.suo
