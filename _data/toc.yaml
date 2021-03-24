@@ -61,20 +61,20 @@ Concepts:
       path: /concepts/program-structure/qsys-fixedtypes.html
   - sectiontitle: QSys User Interface
     section:
-    - title: User Interface Overview
+    - title: Overview
       path: /concepts/user-interface/ui-overview.html
     - title: ASP.NET 5 Websites
       path: /concepts/user-interface/asp-net-websites.html
-    - title: Expo DDS-like TagHelpers
-      path: /concepts/user-interface/qsys-expo-dds-elements.html
     - title: ASNA.QSys Expo Display Pages
       path: /concepts/user-interface/qsys-expo-display-pages.html
-    - title: ASNA.QSys Expo Messagefile
-      path: /concepts/user-interface/qsys-expo-messagefile.html
     - title: QSys Expo Web Content
       path: /concepts/user-interface/qsys-expo-web-content.html
     - title: Expo Client Library
       path: /concepts/user-interface/qsys-expo-client-library.html
+    - title: Expo DDS-like TagHelpers
+      path: /concepts/user-interface/qsys-expo-dds-elements.html
+    - title: ASNA.QSys Expo Messagefile
+      path: /concepts/user-interface/qsys-expo-messagefile.html
     - title: Expo Client Library Advanced CSS
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html
     - title: Expo Client Subfile

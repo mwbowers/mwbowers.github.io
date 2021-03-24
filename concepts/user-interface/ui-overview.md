@@ -1,8 +1,13 @@
 ---
-title: Welcome
+title: QSys User Interface
 ---
 
+The QSys Application architecture has a Layer that deals with the *Presentation*.
 
-### Welcome to ...
-This document provides ...
+Website-based Applications use the *Web Browser* as the Presentation *Canvas*.
+
+The Response to Application Pages requests, should be formatted using `HTML` syntax.
+
+This section introduces to the Concepts behind how QSys Applications form the Responses issued by End-users Requests coming from a Web Browser, going thru the Business Logic implemented as a collection of QSys Programs running on a server.
+
 
