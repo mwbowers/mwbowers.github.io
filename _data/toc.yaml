@@ -53,12 +53,12 @@ Concepts:
       path: /concepts/program-structure/qsys-program.html
     - title: ASNA.QSys CL Program
       path: /concepts/program-structure/qsys-cl-program.html
+    - title: ASNA.QSys WorkstationFile
+      path: /concepts/program-structure/qsys-workstationfile.html
     - title: ASNA.QSys DatabaseFile
       path: /concepts/program-structure/qsys-databasefile.html
     - title: ASNA.QSys Fixed Types
       path: /concepts/program-structure/qsys-fixedtypes.html
-    - title: ASNA.QSys WorkstationFile
-      path: /concepts/program-structure/qsys-workstationfile.html
   - sectiontitle: QSys User Interface
     section:
     - title: User Interface Overview
