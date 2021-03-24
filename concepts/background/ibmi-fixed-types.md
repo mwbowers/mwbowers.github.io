@@ -25,14 +25,14 @@ The same is true for decimal values, if the *universe* of values allowed for a f
 Input records entered into the Terminal was transmitted to the IBM i using a *serial* protocol. This is *similar* how Today's Browser request is sent to the *Web Server* using TCP/IP.
 The IBM i Developer would constantly *think* of data-blocks as data serialized into a *packet* or *Memory Buffer*.
 
-If the Developer was *conscious* of how dta was laid out into *Memory Buffer*, some very interesting techniques were used, among them:
+If the Developer was *conscious* of how data was laid out into *Memory Buffer*, some very interesting techniques were used, among them:
 
 1. Memory buffers may be sub-divided for processing.
 2. Memory buffers may be cleared (effectively initializing data fields in one shot)
-3. Memory buffers may copied.
+3. Memory buffers may be copied.
 4. Memory buffers may re-mapped into new symbols.
 
->&#128161; Direct manipulation of Memory Buffers is now considered *unsafe*.
+>&#128161; Direct manipulation of Memory Buffers is now considered *unsafe* [by modern languages](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/unsafe-code-pointers/).
 
 Consider the following RPG Data-structure declaration:
 ```
@@ -56,7 +56,7 @@ Operations performed on `DATE` affect `MONTH`, `DAY` and `YEAR` memory buffer po
 
 Also, operations performed either `MONTH`, `DAY` or `YEAR`, indirectly affect `DATE` value.
 
->Field definitions may also be specified by indicating positions *overlap* other fields (or part of them). .NET languages do not allow arbitrary memory mapped types. [See ASNA.QSys Fixed types]({{ site.rooturl }}/asna-qsys/)
+>Field definitions may also be specified by indicating positions *overlapping* other fields (or part of them). .NET languages do not allow arbitrary memory mapped types. [See ASNA.QSys Fixed types](/concepts/program-structure/qsys-fixedtypes.html)
 
 ## Transmission speed 
 
@@ -66,7 +66,7 @@ Typical Terminal data speed was 9600 bauds (bits per second). That is: 1,200 byt
 
 `RPG` also allows to optimize memory footprint on decimal fields. [See Packed-decimal format.](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzasd/padecfo.htm)
 
->All these optimizations are not *natively* supported by .NET, but Legacy `RPG` logic must have a target which produces the exact effect. This is where [ASNA.QSys comes to the rescue]({{ site.rooturl }}/asna-qsys/)
+>All these optimizations are not *natively* supported by .NET, but Legacy `RPG` logic must have a target which produces the exact effect. This is where [ASNA.QSys comes to the rescue](/concepts/architecture/asna-qsys/)
 
 ## IBM i RPG Fixed Types
 
