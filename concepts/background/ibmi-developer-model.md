@@ -24,7 +24,7 @@ Most IBM i&#174; Programs can be grouped in two categories:
 1. Interactive - interact with user, usually on a [Terminal](https://en.wikipedia.org/wiki/Computer_terminal).
 2. Batch - there is no user interaction.
 
-> Assume that the IBM i Developer's Model we are concerned with, with the purpose of comparing with ASP.NET, are *Interactive* Applications. 
+> Assume that the IBM i Developer's Model we are concerned with - with the purpose of comparing with ASP.NET - is that of *Interactive* Applications. 
 
 ## Separation of Concerns
 IBM i Interactive Applications use  [Displayfile](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/cl/crtdspf.htm) objects to allow users to interact with the Application. The Displayfile represents to the `RPG` Program an external file which can be *written to* or *read from* (just like any other file type).
