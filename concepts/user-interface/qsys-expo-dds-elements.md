@@ -132,7 +132,68 @@ The best way to describe the syntax, is by an example:
 </form>
 ```
 
+Assuming that the Record CUSTREC is Active (records have ben written in a program that uses a WorkstationFile C# class instance, linked to this Display Page), the label `Account number` will be rendered as a HTML `<span>`. The location on the Page will be layout out as described by [Expo Client Library]({{ site.rooturl }}/qsys-expo-client-library/).
 
+Notice how the spacing on constants has been *Stretched-out* (by default). This is done, to fill out the intended Legacy design, where constants may be either aligned *manually* to the right, or multiple constant sections are supposed to be joined to form a large text see [Expo Client Library]({{ site.rooturl }}/qsys-expo-client-library/). The constant should look like the following image:
+
+![DdsConstant Stretch](/images/qsys-expo-ddsconstant-stretch.png/)
+
+**Notes:**
+1. The grid lines in the image only show when *Developer Tools* are running and the selection is the div at *Row=2*.
+2. The *letter-spacing* CSS style has bee computed to stretch out the text so that it spans from column one to column 21. 
+> End column equals `8 + length - 1`, where length is equal to `14` characters.
+
+You can override the default behavior, by turning off the *Stretch Constant* property which can be done at the field-level, but more commonly done at the *Record* level (or *File* level).
+
+Adding the attribute `StretchConstantText=false` to the *Container* DdsRecord, with markup like the following:
+
+```html
+<DdsRecord For="CUSTREC" StretchConstantText=false KeyNames="ENTER 'Submit'; F3 'Exit';">
+    <div Row="2">
+        <DdsConstant Col="8" Text="Account number" />
+    </div>
+</DdsRecord>
+```
+
+Would rendering the result as displayed in following image:
+
+![DdsConstant Stretch](/images/qsys-expo-ddsconstant-no-stretch.png/)
+
+> Note: The text spans from column one to column sixteen. Not only does it look more natural - as designed by the Font maker - but it can also save horizontal screen real-state (more elements can fit in a *Row*).
+
+Field TagHelpers: DdsCharField, DdsDecField, DdsDateField and DdsDecDateField. These four are the basic TagHelpers associated with fields in the *DataSet*.
+
+All fields refereed to by the following TagHelpers, need support from the [Expo DisplayPageModel]({{ site.rooturl }}/qsys-expo-display-page-model/).
+
+> Fields cannot be declared in the Razor Page Markup. All fields must be declared in the corresponding Model class.
+
+## DdsCharField
+
+The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length]({{ site.rooturl }}/qsys-fixedtypes/)
+
+The attribute `For` is required and its value is the qualified name of the field in the *Model*
+
+```html
+<div Row="4">
+    <DdsCharField Col="27" For="CUSTREC.SFNAME" VirtualRowCol="7,27" PositionCursor="40" />
+</div>
+```
+
+
+```cs
+public class CUSTREC_Model : RecordModel
+{
+
+    [Char(40)]
+    public string SFNAME { get; set; }
+}
+```
+
+## DdsDecField
+
+## DdsDateField
+
+## DdsDecDateField
 
 <br>
 <br>
