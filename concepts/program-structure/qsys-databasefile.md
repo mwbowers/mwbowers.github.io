@@ -116,7 +116,7 @@ The `Overrider` property is explained later.
 
 ## Database fields automatic declaration
 
-IBM i RPG compiler generated code that was not visible to the IBM i Developer, to assist with the [Application Development model]({{ site.rooturl }}/ibmi-developer-model/). In particular:
+IBM i RPG compiler generated code that was not visible to the IBM i Developer, to assist with the [Application Development model](/concepts/background/ibmi-developer-model.html/). In particular:
 
 > &#128161; For every **field** on every **record** defined by any externally described **file**, a stand alone field was declared which was *bound* to the *active* record at execution time.
 
@@ -142,7 +142,7 @@ During Migration, ASNA Nomad Tools query the *Database Schema* to extract detail
 
 >In addition to *Database Schema* XFU files contain information about how Data-Structures are mapped into records of the database, according to RPG [Definition Specifications](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/dspec9.htm)
 
-To generate *MY_PROGRAM.Io.cs* partial class ASNA Nomad Tools use *MY_PROGRAM.Io.xfu* to declare using C# syntax, field declaration of the types defined by the [Fixed Types]({{ site.rooturl }}/qsys-fixedtypes/).
+To generate *MY_PROGRAM.Io.cs* partial class ASNA Nomad Tools use *MY_PROGRAM.Io.xfu* to declare using C# syntax, field declaration of the types defined by the [Fixed Types](/concepts/program-structure/qsys-fixedtypes.html/).
 
 > It is assumed that field names - across records - do not collide, RPG had ways to rename fields to avoid collisions.
 
@@ -172,19 +172,19 @@ namespace MyCompany.MyApplication
         private FixedString<_1> CMYN03;
 ```
 
-The `Fixed`XXX where *XXX* is the .NET-*like* data type is described [Here]({{ site.rooturl }}/qsys-fixedtypes/).
+The `Fixed`XXX where *XXX* is the .NET-*like* data type is described [Here](/concepts/program-structure/qsys-fixedtypes.html/).
 
 The names of the *fields* are **ALL** fields in **records** defined according to the **file** schema. The types, lengths, precision etc. are *static snapshots* of the state of the Database *schema* when the Program was Migrated (more specifically converted to C#).
 
 **THE I/O BUFFER**
 
-As discussed in the concept [Workstation file]({{ site.rooturl }}/qsys-workstationfile/), the only *shared* abstraction of the Data between the Presentation Layers and the Business Logic is the [DataSet](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/).
+As discussed in the concept [Workstation file](/concepts/program-structure/qsys-workstationfile.html), the only *shared* abstraction of the Data between the Presentation Layers and the Business Logic is the [DataSet](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/).
 
 The **DatSet** is a collection of all **DataTable**s as defined by the records in each file.
 
 The **DataTable** is a collection of **DataRow**s which are records that have been read from the file. 
 
-Referring to the concept [RPG language-provided Display and Database support]({{ site.rooturl }}/rpg-language-support/), where we touched on the topic `one-record-at-a-time` access, RPG normally deals with one record per Table, known as the *Active* record, or *I/O Buffer*[^2].
+Referring to the concept [RPG language-provided Display and Database support](/concepts/program-structure/rpg-language-support.html/), where we touched on the topic `one-record-at-a-time` access, RPG normally deals with one record per Table, known as the *Active* record, or *I/O Buffer*[^2].
 
 The *I/O* Buffer for a file, is the *Active* **DataRow** of the *DataTable*.
 
