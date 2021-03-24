@@ -2,7 +2,7 @@
 title: ASNA.QSys Fixed Types
 ---
 
-IBM i RPG applications were coded using a [Fixed Type System]({{ site.rooturl }}/ibmi-fixed-types/).
+IBM i RPG applications were coded using a [Fixed Type System](/concepts/background/ibmi-fixed-types.html/).
 
 Fixed types are those than when *serialized* to a *flat* representation, the length of the serialized object is known in advance and does not change.
 
@@ -36,7 +36,7 @@ In RPG, the *Serialized* buffer representation in memory of the field `CustomerN
 
 In most of modern General Purpose languages, such as C#, the length of the *serialized* memory representation will be *variable*, depending on the data.
 
-Both approaches have their [advantages]({{ site.rooturl }}/ibmi-fixed-types/) and disadvantages. 
+Both approaches have their [advantages](/concepts/background/ibmi-fixed-types.html/) and disadvantages. 
 
 The *fact* is that their are incompatible and a *new* type system is required to make it possible for the *mapping* logic spread-out in the Business Logic, to continue executing providing the same results.
 

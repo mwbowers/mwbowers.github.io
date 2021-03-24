@@ -6,7 +6,7 @@ The Concept of a `Program` in [.NET 5](https://docs.microsoft.com/en-us/dotnet/c
 
 .NET 5 is a development platform for building **many kinds** of applications and services.
 
-QSys implements the most important [IBM i Program Semantics]({{ site.rooturl }}/ibmi-program/):
+QSys implements the most important [IBM i Program Semantics](/concepts/background/ibmi-program.html/):
 
 1. Program Activation.
 2. Program Activation Groups.
@@ -68,7 +68,7 @@ The `ASNA.QSys Program` provides:
 1. Activation and Activation Group support.
 2. [INZSR](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/inz_subr.htm) Support.
 3. Parameter Passing support.
-4. Access to its parent [QSys Job]({{ site.rooturl }}/qsys-job/).
+4. Access to its parent [QSys Job]({/concepts/program-structure/qsys-job.html/).
 5. Access to Job Services (Spooler, DLO, IFS).
 6. Program Message Support.
 7. [SQL Communications Area](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/db2/rbafzsqlcca.htm).
@@ -192,7 +192,7 @@ SendProgramMessage( string id, string file, string data, string pgmQ, MessageTyp
 Additional support for Program Messages include:
 * RemoveMessage
 * SendExternalMessage
-* Message Subfile on [Display Pages]({{ site.rooturl }}/qsys-expo-display-pages/).
+* Message Subfile on [Display Pages](/concepts/program-structure/qsys-expo-display-pages.html/).
 
 ## SQL Communications Area
 IBM i RPG Programs using *Embedded SQL* had at their disposal a data structure called [SQL communication area](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/db2/rbafzsqlcca.htm) or `SQLCA`.

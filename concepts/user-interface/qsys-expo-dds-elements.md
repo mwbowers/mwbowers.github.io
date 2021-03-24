@@ -107,7 +107,7 @@ In this example, we use the `KeyNames` attribute which sets the `CUSTREC.KeyName
 
 Just like in DDS, *Record*s may contain Constants or Field specifications.
 
-As we have mentioned in [Expo Client Library]({{ site.rooturl }}/qsys-expo-client-library/) Constants and Field specifications are *positioned* using *Row* and *Column*.
+As we have mentioned in [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html/) Constants and Field specifications are *positioned* using *Row* and *Column*.
 
 A Nomad Display Page conveniently uses the standard `<div>` tag as a container to group all elements in a particular *Row*.
 
@@ -132,9 +132,9 @@ The best way to describe the syntax, is by an example:
 </form>
 ```
 
-Assuming that the Record CUSTREC is Active (records have ben written in a program that uses a WorkstationFile C# class instance, linked to this Display Page), the label `Account number` will be rendered as a HTML `<span>`. The location on the Page will be layout out as described by [Expo Client Library]({{ site.rooturl }}/qsys-expo-client-library/).
+Assuming that the Record CUSTREC is Active (records have ben written in a program that uses a WorkstationFile C# class instance, linked to this Display Page), the label `Account number` will be rendered as a HTML `<span>`. The location on the Page will be layout out as described by [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html/).
 
-Notice how the spacing on constants has been *Stretched-out* (by default). This is done, to fill out the intended Legacy design, where constants may be either aligned *manually* to the right, or multiple constant sections are supposed to be joined to form a large text see [Expo Client Library]({{ site.rooturl }}/qsys-expo-client-library/). The constant should look like the following image:
+Notice how the spacing on constants has been *Stretched-out* (by default). This is done, to fill out the intended Legacy design, where constants may be either aligned *manually* to the right, or multiple constant sections are supposed to be joined to form a large text see [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html/). The constant should look like the following image:
 
 ![DdsConstant Stretch](/images/qsys-expo-ddsconstant-stretch.png/)
 
@@ -163,13 +163,13 @@ Would rendering the result as displayed in following image:
 
 Field TagHelpers: DdsCharField, DdsDecField, DdsDateField and DdsDecDateField. These four are the basic TagHelpers associated with fields in the *DataSet*.
 
-All fields refereed to by the following TagHelpers, need support from the [Expo DisplayPageModel]({{ site.rooturl }}/qsys-expo-display-page-model/).
+All fields refereed to by the following TagHelpers, need support from the [Expo DisplayPageModel](/concepts/user-interface/qsys-expo-display-page-model.html/).
 
 > Fields cannot be declared in the Razor Page Markup. All fields must be declared in the corresponding Model class.
 
 ## DdsCharField
 
-The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length]({{ site.rooturl }}/qsys-fixedtypes/)
+The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length](/concepts/program-architecture/qsys-fixedtypes/)
 
 The attribute `For` is required and its value is the qualified name of the field in the *Model*
 
