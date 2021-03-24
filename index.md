@@ -52,15 +52,16 @@ When looking at a Monarch application's architecture the first thing to note is 
 For this discussion, the database server is assumed to be running on its own server, however, it is entirely possible to run it on any of the application or web servers.
 
 ### Batch Job Architecture
-Batch jobs execute in their own .NET Process.
+Batch jobs execute in their own .NET Process as console programs.
 
 ![Batch Job](images/batch_job.png)
 
 _Batch Job running on its own process_
 
 ### Interactive Job Architecture
+As mentioned earlier, a set of interactive programs is packaged as a  class library derived from the CL and RPG programs and an Area in a website with the set of Razor Pages representing the programs' screens.
 
-### Monarch Application Server
+#### Monarch Application Server
 The Monarch Application Server (MAS) is an execution environment that provides the facilities to host interactive Monarch Jobs and enables their interaction with the website hosting the Razor Pages serving as their user interface.
 
 The core of the MAS is contained in the assembly ASNA.QSys.MonaServer.dll.  MonaServer can be configured to be instantiated within the website's ASP.NET process itself or it can be run as a separate process hosted by the (executable) service ASNA.QSys.MonaLisa (.exe).
@@ -78,7 +79,7 @@ The appsettings.json file contains a section dedicated to the Monarch Applicatio
 
 The special value *InProcess as a HostName signals the website startup process to start the MAS inside the website's process. Whenever the website has to communicate with the MAS, the HostName and Port values are used to establish a connection for the transaction, typically in response to a web browser GET or POST request.
 
-### In-Process
+#### In-Process
 In its simplest configuration, the migrated code along with the website can be run in a single process. 
 
 ![Interactive Job in process MAS](images/interactive_job_mas_inprocess.png)
@@ -109,8 +110,8 @@ Here is the [Reference](/reference/reference-overview.html) documentation on the
 The ASNA Monarch Core Framework consists of the following assemblies:
 - ASNA.DataGate.Client.dll
 - ASNA.QSys.Runtime.dll
-- ASNA.QSys.ExpoModel.dll
-- ASNA.QSys.ExpoTags.dll
+- ASNA.QSys.Expo.Model.dll
+- ASNA.QSys.Expo.Tags.dll
 - ASNA.QSys.MonaServer.dll
 - ASNA.QSys.MonaLisa.exe
 
@@ -120,8 +121,8 @@ Assemblies migrated from Programs, regardless of being Interactive or Batch, dep
 - ASNA.QSys.Runtime.dll
 
 The Websites hosting the Razor Pages Areas depend on:
-- ASNA.QSys.ExpoModel.dll
-- ASNA.QSys.ExpoTags.dll
+- ASNA.QSys.Expo.Model.dll
+- ASNA.QSys.Expo.Tags.dll
 
 If the Monarch Application Server is to be run In-Process within the Website, then the site will also depend on this assemblies:
 - ASNA.DataGate.Client.dll
@@ -138,14 +139,17 @@ To facilitate the building of migrated applications, the Framework is made avail
 
 - **ASNA.DataGate.Client package**
   - ASNA.DataGate.Client.dll
+
 - **ASNA.QSys.Runtime package**
   - ASNA.DataGate.Client package
   - ASNA.QSys.Runtime.dll
+
 - **ASNA.QSys.MonaServer package**
   - ASNA.QSys.Runtime package
   - ASNA.QSys.MonaServer.dll
+
 - **ASNA.QSys.Expo package**
-  - ASNA.QSys.ExpoModel.dll
-  - ASNA.QSys.ExpoTags.dll
+  - ASNA.QSys.Expo.Model.dll
+  - ASNA.QSys.Expo.Tags.dll
 
 The NuGet packages are available at [GitHub](https://github.com/orgs/asnaqsys/packages)
