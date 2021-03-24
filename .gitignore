@@ -3,3 +3,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+### Visual Studio ###
+slnx.sqlite
+ProjectSettings.json
+.suo
