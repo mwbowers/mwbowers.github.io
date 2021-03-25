@@ -41,7 +41,7 @@ ASNA.QSys Application Life-Cycle logic uses the `Session ID` to find the WebJob 
 ## Monarch Display Page Application Architecture
 Just as we have discussed how **ASP.NET 5 Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/asp-net-websites), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
 
-![Monarch Display Page Architecture](../UserInterface/images/qsys-display-page-architecture.png)
+![Monarch Display Page Architecture](images/qsys-display-page-architecture.png)
 
 On each Web Request/Response cycle, *data flows* from the *Yellow* `Display Page` layer all the way to the *Blue* `Program` layer passing thru intermediate components.
 
