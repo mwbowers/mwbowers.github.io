@@ -1,11 +1,7 @@
 ---
 title: ASNA Monarch Core Framework Concepts
-
 Id: Welcome
 TocParent: -1
-
-keywords: ASNA Monarch Core Framework Documents
-
 ---
 
 This topic presents *Concepts* that are important in the understanding to efficiently:

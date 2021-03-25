@@ -1,11 +1,7 @@
 ---
 title: ASNA Monarch Core Framework
-
 Id: Welcome
 TocParent: -1
-
-keywords: ASNA Monarch Core Framework Documents
-
 ---
 
 The application you are enhancing, maintaining or trying to understand probably originated on an IBM i and was migrated with ASNA's Monarch technology.
