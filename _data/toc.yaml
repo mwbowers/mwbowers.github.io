@@ -4,13 +4,16 @@ horizontalnav:
   path: /
   node: home
 - title: Concepts
-  path: /concepts/concepts-overview.html
+  path: /concepts/concepts-overview
   node: Concepts
+- title: Manuals
+  path: /manuals/manuals-overview
+  node: Manuals
 - title: Reference
-  path: /reference/reference-overview.html
+  path: /reference/reference-overview
   node: Reference
 - title: Mobile Support
-  path: /mobile/mobile-overview.html
+  path: /mobile/mobile-overview
   node: Mobile
 
 home: {}
@@ -23,6 +26,8 @@ Concepts:
   section:
   - title: Overview
     path: /concepts/concepts-overview.html
+  - title: Introduction
+    path: /concepts/introduction.html
   - sectiontitle: Legacy Application Background
     section:
     - title: Overview
@@ -178,6 +183,24 @@ Concepts:
       - title: Multimember File Migration
         path: /MonarchFX/amfMultiMemberSupport.html
 
+##
+Manuals:
+- sectiontitle: Framework Concepts
+  section:
+  - title: Manuals Overview
+    path: /manuals/manuals-overview.html
+  - sectiontitle: Monarch Operations Management
+    section:
+    - title: Operations Management Overview
+      path: /manuals/mom/management-overview
+    - title: Printing
+      path: /manuals/mom/printing
+    - title: Batch Processor
+      path: /manuals/mom/batch-processor
+  - sectiontitle: DataGate
+    section:
+    - title: DataGate Overview
+      path: /manuals/datagate/datagate-overview
 
 ##
 Reference:
