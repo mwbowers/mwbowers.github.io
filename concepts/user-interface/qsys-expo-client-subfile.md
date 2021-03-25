@@ -2,7 +2,7 @@
 title: Expo Client Subfile
 ---
 
-DdsSubfileControl record is a bit more complex than a regular DdsRecord as explained in topic [Expo Client Library](/concepts/user-interface//qsys-expo-client-library.html/).
+DdsSubfileControl record is a bit more complex than a regular DdsRecord as explained in topic [Expo Client Library](/concepts/user-interface//qsys-expo-client-library).
 
 Let's review the page [Customer Inquiry](https://github.com/ASNA/SunFarm/blob/master/CustomerAppSite/Areas/CustomerAppViews/Pages/CUSTDSPF.cshtml) and focus out attention on the Subfile Control Record named `"SFLC"`, as follows:
 
@@ -51,7 +51,7 @@ Let's first identify the similarities in the generated HTML, with respect to the
 2. Contained elements above (or below) the Subfile, are also rendered as `div`s with the row number as a value of the attribute `data-asna-row`, like `"2"`, `"3"`. Rows non-specified in markup are also rendered with the appropriate `data-asna-row` - filling the gaps - but with `class=dds-grid-empty-row`.
 3. If you were to open any of the `div` nodes with the `data-asna-row` attribute, you would find elements with the rendering for the `DdsConstant` and `DdsCharField` as  indicated in the markup with their corresponding grid-column positioning style, following the markup's `Col` TagHelper attribute.
 
-All should be familiar [if you followed Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html/) discussion.
+All should be familiar [if you followed Expo Client Library](/concepts/user-interface/qsys-expo-client-library) discussion.
 
 After `<div data-asna-row="3" class="dds-grid-row">`, there is something new:
 
