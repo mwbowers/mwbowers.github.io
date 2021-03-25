@@ -1,8 +1,7 @@
 ---
-title: Adding New Application Features
+title: Adding New Functionality
 ---
 
-## Staying in the ASNA Monarch Developer Model 
-
-## Coding using different Development Model
+- Staying in the ASNA Monarch Developer Model 
+- Coding using different Development Model
 

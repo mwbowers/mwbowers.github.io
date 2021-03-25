@@ -94,7 +94,7 @@ Concepts:
     section:
     - title: Overview
       path: /concepts/enhancements/enhancements-overview.html
-    - title: Adding New Application Features
+    - title: Adding New Functionality
       path: /concepts/enhancements/new-application-features.html
     - title: Nomad Tools
       path: /concepts/enhancements/nomad-tools.html
