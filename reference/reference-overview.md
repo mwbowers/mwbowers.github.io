@@ -1,10 +1,8 @@
 ---
-title: ASNA Monarch Core Framework Docs
+title: ASNA Monarch Core Framework Reference
 
 Id: Welcome
 TocParent: -1
-
-keywords: ASNA Monarch Core Framework Documents
 
 ---
 
