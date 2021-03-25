@@ -188,7 +188,7 @@ Manuals:
 - sectiontitle: Framework Concepts
   section:
   - title: Manuals Overview
-    path: /manuals/manuals-overview
+    path: /manuals/manuals-overview.html
   - sectiontitle: Monarch Operations Management
     section:
     - title: Operations Management Overview

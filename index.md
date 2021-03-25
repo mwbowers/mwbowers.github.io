@@ -60,7 +60,7 @@ skip_read_time: true
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 card-holder">
-        <a class="card manuals" href="/language/">
+        <a class="card manuals" href="/manuals/manuals-overview/">
           <h5 class="title">Manuals</h5>
           <p>
             Learn how to setup and operate the application environment.
