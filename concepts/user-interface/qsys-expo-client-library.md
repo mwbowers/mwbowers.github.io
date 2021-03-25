@@ -19,7 +19,7 @@ Web Technology:
 * CSS layout styles rely heavily on [advanced CSS features](/concepts/user-interface/qsys-expo-client-advanced-css/) 
 
 
-Every Display Page will loads the Expo Client Library as described by [Expo Web Content](/concepts/user-interface/qsys-expo-web-content.html/)
+Every Display Page will loads the Expo Client Library as described by [Expo Web Content](/concepts/user-interface/qsys-expo-web-content)
 
 > The Browser *cache* technology optimizes the loading of these web resources.
 
@@ -396,7 +396,7 @@ The following shows the Markup for a Subfile Controller and the Subfile record c
 </DdsSubfileControl>
 ```
 
-[Continue with Subfile Design ...](/concepts/user-interface/qsys-expo-client-subfile.html/)
+[Continue with Subfile Design ...](/concepts/user-interface/qsys-expo-client-subfile)
 
 <br>
 <br>

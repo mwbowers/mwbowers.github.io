@@ -40,7 +40,7 @@ Concepts:
       path: /concepts/background/ibmi-job.html
     - title: IBM i Program
       path: /concepts/background/ibmi-program.html
-  - sectiontitle: Monarch Core Application Architecture
+  - sectiontitle: Monarch Core Architecture
     section:
     - title: Overview
       path: /concepts/architecture/architecture-overview.html
@@ -78,6 +78,8 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-library.html
     - title: Expo DDS-like TagHelpers
       path: /concepts/user-interface/qsys-expo-dds-elements.html
+    - title: Display Page Model
+      path: /concepts/user-interface/qsys-expo-display-page-model.html
     - title: ASNA.QSys Expo Messagefile
       path: /concepts/user-interface/qsys-expo-messagefile.html
     - title: Expo Client Library Advanced CSS

@@ -1,7 +1,7 @@
 ---
 title: QSys Job
 ---
-ASP.NET 5 does not implement the concept of a *Job* like [IBM i does](/concepts/background/ibmi-job.html/). The closest is [Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state), but it is not what the [IBM i Developer Model](/concepts/background/ibmi-developer-model.html/) expects.
+ASP.NET 5 does not implement the concept of a *Job* like [IBM i does](/concepts/background/ibmi-job). The closest is [Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state), but it is not what the [IBM i Developer Model](/concepts/background/ibmi-developer-model) expects.
 
 ASNA.QSys.Runtime assembly provides a more suitable class in the namespace ASNA.QSys.HostServices called `Job`.
 
@@ -25,7 +25,7 @@ The ASNA.QSys Interactive Job specialized for Web, is conveniently named `WebJob
 ASNA.QSys.HostServices.WebJob : Job
 ```
 
-In addition to the *base* `Job` services, `WebJob` allows [Procedurally-Designed Programs](https://en.wikipedia.org/wiki/Procedural_programming) to use [Workstation files](/concepts/program-structure/qsys-workstationfile.html/) on a Web environment.
+In addition to the *base* `Job` services, `WebJob` allows [Procedurally-Designed Programs](https://en.wikipedia.org/wiki/Procedural_programming) to use [Workstation files](/concepts/program-structure/qsys-workstationfile) on a Web environment.
 
 ## How does the WebJob allow *Procedurally-Designed* Programs to run?
 

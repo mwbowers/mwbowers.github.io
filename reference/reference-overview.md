@@ -1,9 +1,7 @@
 ---
-title: ASNA Monarch Core Framework Reference
-
+title: ASNA Monarch Core Framework Docs
 Id: Welcome
 TocParent: -1
-
 ---
 
 The ASNA Monarch Core Framework consists of the following assemblies:

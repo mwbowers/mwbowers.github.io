@@ -2,7 +2,7 @@
 title: ASNA.QSys WorkstationFile
 ---
 
-[The IBM i RPG Application development Model](/concepts/background/ibmi-developer-model.html/) includes the concept of a [WORKSTN File](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasc/hintapp.htm)
+[The IBM i RPG Application development Model](/concepts/background/ibmi-developer-model) includes the concept of a [WORKSTN File](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasc/hintapp.htm)
 
 * A `WORKSTN File` *is* a **File**.
 
@@ -39,16 +39,16 @@ ASNA.QSys Application Life-Cycle logic uses the `Session ID` to find the WebJob 
 > Job start: Initially, there will not be any `Session ID` and when the first Request comes into the Web Server, the Web Server will start a Session, instance a new Job, remember the Job in the newly created Session, instances the Entry Point Program (according to MyJob class) and starts executing the Program.
 
 ## Monarch Display Page Application Architecture
-Just as we have discussed how **ASP.NET 5 Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/asp-net-websites.html/), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
+Just as we have discussed how **ASP.NET 5 Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/asp-net-websites), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
 
-![Monarch Display Page Architecture](../UserInterface/images/qsys-display-page-architecture.png)
+![Monarch Display Page Architecture](images/qsys-display-page-architecture.png)
 
 On each Web Request/Response cycle, *data flows* from the *Yellow* `Display Page` layer all the way to the *Blue* `Program` layer passing thru intermediate components.
 
 Components:
 1. Display Page "Yellow"- Presentation logic with a *thin* data-layer (PageModel). ASP.NET 5 extended with QSys Monarch Expo TagHelpers.
 2. DataSet "Green"- Active Record's Field data (no markup or constants). The DataSet is serialized into an XML string.
-3. MonaLisa - Monarch Application Server. Coordinates which Session's Active Program should process the [DataSet](/concepts/user-interface/qsys-expo-display-pages.html/) requested.
+3. MonaLisa - Monarch Application Server. Coordinates which Session's Active Program should process the [DataSet](/concepts/user-interface/qsys-expo-display-pages) requested.
 4. Workstationfile - Application side abstraction of a **File** that represents to a Program the DataSet.
 5. RPG-like Program "Blue"- Business Logic (programming language is C#, but logic follows RPG-like semantics)
 
@@ -59,12 +59,12 @@ Components:
 Meaning that:
 1. The "Yellow" side is the Website side or `yellow thread` in execution terms.
 2. The "Blue" side is the Business Logic side or `blue thread`.
-3. The only common concept between the `yellow` and `blue` threads is the `green` [DataSet](/concepts/user-interface/qsys-expo-display-pages.html/).
+3. The only common concept between the `yellow` and `blue` threads is the `green` [DataSet](/concepts/user-interface/qsys-expo-display-pages).
 
 It is important to remember that: 
 1. `Yellow` components **cannot** be reached from the `Blue` side.
 2. `Blue` fields **cannot** be reached reached from the `Yellow` side.
-3. Any data-logic (including *indicators*) needs to be placed on the *intersection* of the `Yellow` and `Blue`, that is, the `Green` [DataSet](/concepts/user-interface/qsys-expo-display-pages.html/).
+3. Any data-logic (including *indicators*) needs to be placed on the *intersection* of the `Yellow` and `Blue`, that is, the `Green` [DataSet](/concepts/user-interface/qsys-expo-display-pages).
 
 
 > Productions installations may have all components running on a **single** server, or **multiple** servers.

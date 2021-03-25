@@ -1,6 +1,5 @@
 ---
 description: ASNA Monarch Core documentation search results
-keywords: Search, Monarch Core, documentation, manual, guide, reference, api
 noratings: true
 notoc: true
 notags: true
