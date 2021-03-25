@@ -70,7 +70,7 @@ Concepts:
       path: /concepts/user-interface/ui-overview.html
     - title: ASP.NET 5 Websites
       path: /concepts/user-interface/asp-net-websites.html
-    - title: ASNA.QSys Expo Display Pages
+    - title: QSys Expo Display Pages
       path: /concepts/user-interface/qsys-expo-display-pages.html
     - title: QSys Expo Web Content
       path: /concepts/user-interface/qsys-expo-web-content.html
@@ -80,7 +80,7 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-dds-elements.html
     - title: Expo Display Page Model
       path: /concepts/user-interface/qsys-expo-display-page-model.html
-    - title: ASNA.QSys Expo Messagefile
+    - title: QSys Expo Messagefile
       path: /concepts/user-interface/qsys-expo-messagefile.html
     - title: Expo Client Library Advanced CSS
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html
