@@ -178,7 +178,7 @@ The names of the *fields* are **ALL** fields in **records** defined according to
 
 **THE I/O BUFFER**
 
-As discussed in the concept [Workstation file](/concepts/program-structure/qsys-workstationfile.html), the only *shared* abstraction of the Data between the Presentation Layers and the Business Logic is the [DataSet](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/).
+As discussed in the concept [Workstation file](/concepts/program-structure/qsys-workstationfile), the only *shared* abstraction of the Data between the Presentation Layers and the Business Logic is the [DataSet](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/).
 
 The **DatSet** is a collection of all **DataTable**s as defined by the records in each file.
 

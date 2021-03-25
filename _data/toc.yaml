@@ -73,7 +73,7 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-library.html
     - title: Expo DDS-like TagHelpers
       path: /concepts/user-interface/qsys-expo-dds-elements.html
-    - title: Display Page Model
+    - title: Expo Display Page Model
       path: /concepts/user-interface/qsys-expo-display-page-model.html
     - title: ASNA.QSys Expo Messagefile
       path: /concepts/user-interface/qsys-expo-messagefile.html
