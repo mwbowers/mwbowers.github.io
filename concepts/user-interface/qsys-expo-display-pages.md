@@ -1,8 +1,8 @@
 ---
-title: ASNA.QSys Expo Display Pages
+title: QSys Expo Display Pages
 ---
 
-An `ASNA.QSys Expo Display Page` is a [ASP.NET RazorPage](https://en.wikipedia.org/wiki/ASP.NET_Razor) that uses ASNA.Expo *TagHelpers* to Render a [Workstation file](/concepts/user-interface/qsys-workstationfile) using a flexible Grid Layout suitable to present *with fidelity* an [IBM i Displayfile](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/displ.htm). 
+An `QSys Expo Display Page` is a [ASP.NET RazorPage](https://en.wikipedia.org/wiki/ASP.NET_Razor) that uses ASNA.Expo *TagHelpers* to Render a [Workstation file](/concepts/user-interface/qsys-workstationfile) using a flexible Grid Layout suitable to present *with fidelity* an [IBM i Displayfile](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/displ.htm). 
 
 
 ## ASNA.QSys.Expo Assembly
@@ -10,7 +10,7 @@ ASNA.QSys.Expo is the implementation of the Application Presentation Layer. *Pre
 
 The ASNA.QSys.Expo Assembly is the subsystem of ASNA.QSys that implements the classes to Render a [Workstation file](/concepts/user-interface//qsys-workstationfile) on a Web Page.
 
-The ASNA.QSys Expo Display Page extends the [ASP.NET 5 Websites](/concepts/user-interface/asp-net-websites) model, providing [DDS-like](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/kickoff.htm) TagHelpers.
+The QSys Expo Display Page extends the [ASP.NET 5 Websites](/concepts/user-interface/asp-net-websites) model, providing [DDS-like](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/kickoff.htm) TagHelpers.
 
 ASNA.QSys.Expo.Tags
 : DDS-like Presentation TagHelper implementation.
@@ -20,7 +20,7 @@ ASNA.QSys.Expo.Model
 
 ![Display Page Components](images/qsys-expo-display-page.png/)
 
-## ASNA.QSys "Display Page" vs IBM i "Displayfile"
+## QSys "Display Page" vs IBM i "Displayfile"
 
 **SIMILARITIES**
 
