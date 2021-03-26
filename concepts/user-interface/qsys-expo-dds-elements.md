@@ -136,7 +136,7 @@ Assuming that the Record CUSTREC is Active (records have ben written in a progra
 
 Notice how the spacing on constants has been *Stretched-out* (by default). This is done, to fill out the intended Legacy design, where constants may be either aligned *manually* to the right, or multiple constant sections are supposed to be joined to form a large text see [Expo Client Library](/concepts/user-interface/qsys-expo-client-library). The constant should look like the following image:
 
-![DdsConstant Stretch](/images/qsys-expo-ddsconstant-stretch.png/)
+![DdsConstant Stretch](images/qsys-expo-ddsconstant-stretch.png)
 
 **Notes:**
 1. The grid lines in the image only show when *Developer Tools* are running and the selection is the div at *Row=2*.
@@ -157,7 +157,7 @@ Adding the attribute `StretchConstantText=false` to the *Container* DdsRecord, w
 
 Would rendering the result as displayed in following image:
 
-![DdsConstant Stretch](/images/qsys-expo-ddsconstant-no-stretch.png/)
+![DdsConstant Stretch](images/qsys-expo-ddsconstant-no-stretch.png)
 
 > Note: The text spans from column one to column sixteen. Not only does it look more natural - as designed by the Font maker - but it can also save horizontal screen real-state (more elements can fit in a *Row*).
 
