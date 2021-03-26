@@ -2,7 +2,7 @@
 description: Home page for ASNA Monarch Core Framework's documentation
 keywords: documentation, reference, concepts, manuals
 layout: landing
-title: ASNA Monarch Core Framework Documentation
+title: ASNA Monarch Core Framework Docs
 notoc: true
 notags: true
 skip_read_time: true
