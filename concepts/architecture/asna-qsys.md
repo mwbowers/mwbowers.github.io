@@ -24,7 +24,13 @@ Support for:
 <br>
 
 ## ASNA.QSys.DataGate.Client Assembly
-Support for ASNA.QSys.Runtime I/O
-Additionally:
-1. CopyFromImportFile
+Support for:
+
+1. [Record-level File Access](/concepts/program-structure/qsys-databasefile).
+2. Multi-member File.
+3. IBM i OS-Execute.
+4. [Printfiles](/concepts/printing/printing-overview).
+5. DataAreas.
+6. CL File/IO Command support - Directory services, Copy Data, CopyFromImportFile, etc.
+7. Database Security - SSL.
 
