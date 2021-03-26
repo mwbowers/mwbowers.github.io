@@ -204,6 +204,7 @@ Markup example:
     <DdsDecField Col="20" For="CUSTREC.SFCUSTNO" VirtualRowCol="5,27" Color="DarkBlue" EditCode="Z" Comment="CUSTOMER NUMBER" />
 </div>
 ```
+
 Model example:
 ```cs
 public class CUSTREC_Model : RecordModel
@@ -215,7 +216,78 @@ public class CUSTREC_Model : RecordModel
 
 ## DdsDateField
 
+The DdsDateField TagHelper is used to add fixed DateTime fields to the *Record*. The field must have been declared in the *Model* as a DateTime with a [fixed](/concepts/program-architecture/qsys-fixedtypes) length according to a DDS-like *Date Format* and *Date Separator*.
+
+**Date Formats**
+
+| **Name**   | **Format**
+| ISO        | `yyyy-mm-dd`
+| USA        | `mm/dd/yyyy`
+| EUR        | `dd.mm.yyyy`
+| JIS        | `yyyy-mm-dd`
+| YMD        | `yy/mm/dd`
+| MDY        | `mm/dd/yy`
+| DMY        | `dd/mm/yy`
+| SERVER     | *ISO*
+| JUL        | `yy/ddd`
+           
+> Date format separator defaults to `-`, but it chan be any `char`.
+
+Markup example:
+
+```html
+<div Row="4">
+    <DdsDateField Col="29+2" For="CUSTREC.ORDDATE"  VirtualRowCol="4,29" Comment="ORDER DATE" />
+</div>
+```
+
+Model example:
+```cs
+public class CUSTREC_Model : RecordModel
+{
+    [Date(DateFormat = DateAttribute.DdsDateFormat.USA)]
+    public DateTime ORDDATE { get; private set; } // ORDER DATE
+}
+```
+
+Note how during *Presentation*, the date, when formatted as text (including how it is input as text), shows according to the *DateFormat*, as shown in the following image:
+
+![DdsDateField](images/qsys-expo-ddsdatefield.png)
+
+> Note how, for input-capable date fields, an *icon* is presented to the right of the date text-box on the page, giving the user the option to interact with the date using a *Calendar* interface.
+
+After selecting the new date using the calendar, JavaScript logic will convert the selected date to text, according to the *DateFormat* definition. 
+
+![DdsDateField Calendar](images/qsys-expo-ddsdatefield-calendar.png)
+
+<br>
+<br>
+
 ## DdsDecDateField
+
+The concept of a *Date* type came to RPG in a rather late stage. Older Legacy Applications used *decimal* types - with zero decimals - to store and manipulate dates. Typically, Programmers would use lengths of 6, 7 and 8 to store dates.
+
+> During Migration, if a DDS defined field is of numeric type and it uses an *Edit Word* keyword that *Looks like a Date* `    -  -  `, `    /  /  `, `  /  /    `, `0 /  /    `, `  .  .    ` the assumption will be that the field represents a date. 
+
+The DdsDecDateField TagHelper is used to add fixed decimal fields *that represent Dates* to the *Record*. The field must have been declared in the *Model* as a decimal with a [fixed](/concepts/program-architecture/qsys-fixedtypes) length according to a DDS-like *Date Format* and *Date Separator*.
+
+
+Markup example:
+
+```html
+<div Row="4">
+    <DdsDecDateField Col="29+2" For="CUSTREC.DELIVDATE"  Comment="Delivery Date" />
+</div>
+```
+
+Model example:
+```cs
+public class CUSTREC_Model : RecordModel
+{
+    [Dec(8,0,DateFormat = DateAttribute.DdsDateFormat.USA)]
+    public decimal DELIVDATE { get; private set; } // Delivery Date
+}
+```
 
 <br>
 <br>
