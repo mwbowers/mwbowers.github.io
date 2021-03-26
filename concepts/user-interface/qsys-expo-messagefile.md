@@ -26,20 +26,20 @@ Let's assume that the following is the contents of Messagefile `CUSTMSGF.amfx` m
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!-- Message File SOMELIB/CUSTMSGF ASNA Monarch(R) version 10.0.27.0 at 1/27/2021 -->
-<LegacyMsgFileContents version="1.0">
-<messages>
-<MSG MSGID="CST0001" SEVERITY="0" DATACOUNT="1" TEXT="Customer &amp;1 has been added" SECLVL="" TYPE1="*CHAR" LEN1="9" DEC1="0" />
-<MSG MSGID="CST0002" SEVERITY="0" DATACOUNT="1" TEXT="Customer &amp;1 has been updated" SECLVL="Cause ... : You updated the customer. Recovery:  Continue working." TYPE1="*CHAR" LEN1="9" DEC1="0" />
-<MSG MSGID="CST0003" SEVERITY="0" DATACOUNT="1" TEXT="Customer &amp;1 has been deleted" SECLVL="" TYPE1="*CHAR" LEN1="9" DEC1="0" />
-<MSG MSGID="CST0004" SEVERITY="20" DATACOUNT="0" TEXT="Prompting is available for State and Status only." SECLVL="" />
-<MSG MSGID="CST0005" SEVERITY="0" DATACOUNT="1" TEXT="&amp;1 customer(s) were submitted to batch for processing." SECLVL="" TYPE1="*CHAR" LEN1="3" DEC1="0" />
-<MSG MSGID="CST0006" SEVERITY="0" DATACOUNT="1" TEXT="The sales report has been printed." SECLVL="" TYPE1="*DEC" LEN1="7" DEC1="0" />
-<MSG MSGID="CST1000" SEVERITY="20" DATACOUNT="3" TEXT="One Thousand is &amp;1 and One Hundred is &amp;2 which is spelled &amp;3" SECLVL="And here &amp;1 is the same &amp;3" TYPE1="*CHAR" LEN1="10" DEC1="0" TYPE2="*DEC" LEN2="9" DEC2="2" TYPE3="*CHAR" LEN3="50" DEC3="0" />
-<MSG MSGID="CST1001" SEVERITY="20" DATACOUNT="1" TEXT="The &amp;1 cannot be blank." SECLVL="" TYPE1="*CHAR" LEN1="25" DEC1="0" />
-<MSG MSGID="CST1002" SEVERITY="20" DATACOUNT="1" TEXT="The &amp;1 cannot be blank.  Press F4 to prompt." SECLVL="" TYPE1="*CHAR" LEN1="20" DEC1="0" />
-<MSG MSGID="CST1015" SEVERITY="20" DATACOUNT="3" TEXT="Library &amp;1 is not accessible." SECLVL="The system returned an error &amp;2 when trying to execute &amp;3 on library &amp;1." TYPE1="*CHAR" LEN1="10" DEC1="0" TYPE2="*CHAR" LEN2="7" DEC2="0" TYPE3="*CHAR" LEN3="20" DEC3="0" />
-</messages>
-</LegacyMsgFileContents>
+    <LegacyMsgFileContents version="1.0">
+        <messages>
+            <MSG MSGID="CST0001" SEVERITY="0" DATACOUNT="1" TEXT="Customer &amp;1 has been added" SECLVL="" TYPE1="*CHAR" LEN1="9" DEC1="0" />
+            <MSG MSGID="CST0002" SEVERITY="0" DATACOUNT="1" TEXT="Customer &amp;1 has been updated" SECLVL="Cause ... : You updated the customer. Recovery:  Continue working." TYPE1="*CHAR" LEN1="9" DEC1="0" />
+            <MSG MSGID="CST0003" SEVERITY="0" DATACOUNT="1" TEXT="Customer &amp;1 has been deleted" SECLVL="" TYPE1="*CHAR" LEN1="9" DEC1="0" />
+            <MSG MSGID="CST0004" SEVERITY="20" DATACOUNT="0" TEXT="Prompting is available for State and Status only." SECLVL="" />
+            <MSG MSGID="CST0005" SEVERITY="0" DATACOUNT="1" TEXT="&amp;1 customer(s) were submitted to batch for processing." SECLVL="" TYPE1="*CHAR" LEN1="3" DEC1="0" />
+            <MSG MSGID="CST0006" SEVERITY="0" DATACOUNT="1" TEXT="The sales report has been printed." SECLVL="" TYPE1="*DEC" LEN1="7" DEC1="0" />
+            <MSG MSGID="CST1000" SEVERITY="20" DATACOUNT="3" TEXT="One Thousand is &amp;1 and One Hundred is &amp;2 which is spelled &amp;3" SECLVL="And here &amp;1 is the same &amp;3" TYPE1="*CHAR" LEN1="10" DEC1="0" TYPE2="*DEC" LEN2="9" DEC2="2" TYPE3="*CHAR" LEN3="50" DEC3="0" />
+            <MSG MSGID="CST1001" SEVERITY="20" DATACOUNT="1" TEXT="The &amp;1 cannot be blank." SECLVL="" TYPE1="*CHAR" LEN1="25" DEC1="0" />
+            <MSG MSGID="CST1002" SEVERITY="20" DATACOUNT="1" TEXT="The &amp;1 cannot be blank.  Press F4 to prompt." SECLVL="" TYPE1="*CHAR" LEN1="20" DEC1="0" />
+            <MSG MSGID="CST1015" SEVERITY="20" DATACOUNT="3" TEXT="Library &amp;1 is not accessible." SECLVL="The system returned an error &amp;2 when trying to execute &amp;3 on library &amp;1." TYPE1="*CHAR" LEN1="10" DEC1="0" TYPE2="*CHAR" LEN2="7" DEC2="0" TYPE3="*CHAR" LEN3="20" DEC3="0" />
+        </messages>
+    </LegacyMsgFileContents>
 ```
 
 This Messagefile defines the 10 messages, with the unique IDs: "CST0001", "CST0002", "CST0003", "CST0004", "CST0005", "CST0006", ""CST1000", "CST1001", "CST1002" and "CST1015"
@@ -61,7 +61,7 @@ The command would be Migrated as the following C# code:
     SendProgramMessage(_MSGID, "CUSTMSGF", _MSGTXT);
 ```
 
-> Note: ampersand (&) is not a valid C# start of variable name, it is replace by underscore (_) during migration.
+> Note: ampersand (&) is not a valid C# start of variable name, it is replaced by underscore (_) during migration.
 
 The call to `SendProgramMessage` would cause to load the `CUSTMSGF.amfx` file into a [.NET Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0) collection and the key `CST0002` would be used to find the entry:
 
@@ -82,7 +82,7 @@ Cause ... : You updated the customer.
 Recovery:  Continue working.
 ~~~
 
-> The message allows for one value to be replaced where the `&1` symbol exists, indicating its position within the text. (XML *escaped* the `&` as `amp;`). Lastly, the expected type of the value is *Char 9,0 (or nine-long fixed length string).
+> The message allows for one value to be replaced where the `&1` symbol exists, indicating its position within the text. (XML *escaped* the "`&`" symbol  as "`amp;`" code). Lastly, the expected type of the value is *Char 9,0 (or nine-long fixed length string).
 
 ## A field uses DDS Keyword `MSGCON`
 
@@ -105,4 +105,6 @@ The DDS line would be migrated as the following Razor Page markup:
         <DdsConstant Col="1" Text=@Model.GetMessageText("MESSAGE/MSGF", "MSG0001", 10) />
 ```
  
-Note how C# code is used to format the Text fot the constant. The same code used to find the Message entry in the Dictionary collection as explained in the previous topic is used.
+Note how C# code is used to format the Text for the constant. 
+
+The same code is used to find the Message entry in the Dictionary collection as explained in the previous topic.
