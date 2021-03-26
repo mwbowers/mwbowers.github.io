@@ -82,7 +82,7 @@ Cause ... : You updated the customer.
 Recovery:  Continue working.
 ~~~
 
-> The message allows for one value to be replaced where the `&1` symbol exists, indicating its position within the text. (XML *escaped* the "`&`" symbol  as "`amp;`" code). Lastly, the expected type of the value is *Char 9,0 (or nine-long fixed length string).
+> In this example, the message allows for one value to be replaced where the `&1` symbol exists, indicating its position within the text. (XML *escaped* the "`&`" symbol  as "`amp;`" code). Lastly, the expected type of the value is *Char 9,0 (or nine-long fixed length string).
 
 ## A field uses DDS Keyword `MSGCON`
 
