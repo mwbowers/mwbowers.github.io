@@ -2,25 +2,26 @@
 title: IBM i Job
 ---
 
-All work done on a IBM i is performed through jobs. 
+## Some Facts
+- All work done on a IBM i is performed through jobs. 
 
-Each job has a unique name within the system. 
+- Each job has a unique name within the system. 
 
-All jobs, with the exception of system jobs, run within subsystems. 
+- All jobs, with the exception of system jobs, run within subsystems. 
 
-A job can enter the subsystem from any of the work entries, such as a job queue entry, workstation entry, communications entry, autostart job entry, or prestart job entry.
+- A job can enter the subsystem from any of the work entries, such as a job queue entry, workstation entry, communications entry, autostart job entry, or prestart job entry.
 
-Each active job contains at least one thread (the initial thread) and may contain additional secondary threads. 
+- Each active job contains at least one thread (the initial thread) and may contain additional secondary threads. 
 
-Threads are independent units of work. 
+- Threads are independent units of work. 
 
-Job attributes are shared among the threads of the job, however threads also have some of their own attributes, such as a call stack. 
+- Job attributes are shared among the threads of the job, however threads also have some of their own attributes, such as a call stack. 
 
-The job's attributes contain information about how the work is processed. 
+- The job's attributes contain information about how the work is processed. 
 
-The job serves as the owner for attributes that are shared among threads within the same job. 
+- The job serves as the owner for attributes that are shared among threads within the same job. 
 
-Work management provides a way for you to control the work done on your system through a job's attributes.
+- Work management provides a way for you to control the work done on your system through a job's attributes.
 
 
 ## IBM i Interactive Job

@@ -80,7 +80,7 @@ A Message File is another File *object* IBM i manages and provides an convenient
 
 Messages files provide a dictionary collection of text messages, where the *key* is a string identifier. The IBM i Operating System uses message files to interact with the user as well.
 
-In addition to well integrated Dictionary collection of text messages, *Message Files* allow a Program to deal with variable text that is merged with the message text *body*, using current field values programmatically.
+In addition to well integrated Dictionary collection of text messages, [Message Files](/concepts/user-interface/qsys-expo-messagefile) allow a Program to deal with variable text that is merged with the message text *body*, using current field values programmatically.
 
 >Message files are converted to XML documents as ASNA Monarch Cocoon migrates the Legacy Application.
 
