@@ -28,9 +28,10 @@ Support for:
 
 1. [Record-level File Access](/concepts/program-structure/qsys-databasefile).
 2. Multi-member File.
-3. IBM i OS-Execute.
-4. [Printfiles](/concepts/printing/printing-overview).
-5. DataAreas.
-6. CL File/IO Command support - Directory services, Copy Data, CopyFromImportFile, etc.
-7. Database Security - SSL.
+3. QTEMP.
+4. IBM i OS Execute.
+5. [Printfiles](/concepts/printing/printing-overview).
+6. DataAreas.
+7. CL File/IO Command support - Directory services, Copy Data, CopyFromImportFile, etc.
+8. Database Security - SSL.
 
