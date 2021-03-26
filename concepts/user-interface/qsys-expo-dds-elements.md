@@ -171,15 +171,16 @@ All fields refereed to by the following TagHelpers, need support from the [Expo 
 
 The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length](/concepts/program-architecture/qsys-fixedtypes)
 
-The attribute `For` is required and its value is the qualified name of the field in the *Model*
+The attribute `For` is required and its value is the qualified name of the field in the *Model*.
 
+Markup example:
 ```html
 <div Row="4">
     <DdsCharField Col="27" For="CUSTREC.SFNAME" VirtualRowCol="7,27" PositionCursor="40" />
 </div>
 ```
 
-
+Model example:
 ```cs
 public class CUSTREC_Model : RecordModel
 {
@@ -190,6 +191,27 @@ public class CUSTREC_Model : RecordModel
 ```
 
 ## DdsDecField
+The DdsDecField TagHelper is used to add fixed decimal fields to the *Record*. The field must have been declared in the *Model* as a decimal with a [fixed](/concepts/program-architecture/qsys-fixedtypes) length and decimal positions.
+
+The attribute `For` is required and its value is the qualified name of the field in the *Model*
+
+> Note that *Presentation* properties are only defined in the Markup - i.e. EditCode, Colors etc. -.
+
+Markup example:
+
+```html
+<div Row="4">
+    <DdsDecField Col="20" For="CUSTREC.SFCUSTNO" VirtualRowCol="5,27" Color="DarkBlue" EditCode="Z" Comment="CUSTOMER NUMBER" />
+</div>
+```
+Model example:
+```cs
+public class CUSTREC_Model : RecordModel
+{
+    [Dec(6, 0)]
+    public decimal SFCUSTNO { get; private set; } // CUSTOMER NUMBER
+}
+```
 
 ## DdsDateField
 
