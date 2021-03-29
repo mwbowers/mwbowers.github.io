@@ -8,7 +8,7 @@ IBM i RPG [File Description Specifications](https://www.ibm.com/support/knowledg
 
 `ASNA.QSys.DatabaseFile` provides the expected methods to perform classical RPG I/O operations, including:
 * Open/Close
-* Chain (Sequential and by Key)
+* Chain (Read by Key)
 * Write
 * Read / ReadNext / ReadPrevious / Read Equal, etc.
 * Update

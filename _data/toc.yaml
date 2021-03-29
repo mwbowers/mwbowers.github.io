@@ -58,10 +58,12 @@ Concepts:
       path: /concepts/program-structure/qsys-program.html
     - title: ASNA.QSys CL Program
       path: /concepts/program-structure/qsys-cl-program.html
-    - title: ASNA.QSys WorkstationFile
-      path: /concepts/program-structure/qsys-workstationfile.html
     - title: ASNA.QSys DatabaseFile
       path: /concepts/program-structure/qsys-databasefile.html
+    - title: ASNA.QSys PrintFile
+      path: /concepts/program-structure/qsys-printfile.html
+    - title: ASNA.QSys WorkstationFile
+      path: /concepts/program-structure/qsys-workstationfile.html
     - title: ASNA.QSys Fixed Types
       path: /concepts/program-structure/qsys-fixedtypes.html
   - sectiontitle: QSys User Interface
@@ -86,10 +88,12 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html
     - title: Expo Client Subfile
       path: /concepts/user-interface/qsys-expo-client-subfile.html
-  - sectiontitle: QSys Printing
+  - sectiontitle: Printing
     section:
     - title: Printing Overview
-      path: /concepts/printing/printing-overview.html
+      path: /concepts/printing/printing-introduction.html
+    - title: Equivalent CL Print Commands
+      path: /concepts/printing/equivalent-cl-print-commands.html
   - sectiontitle: Enhancing Migrated Applications
     section:
     - title: Overview
