@@ -8,9 +8,9 @@ This is another place where IBM i successfully *Separated* concerns to improve d
 
 If all messages to be displayed by an application are *externalized*, and the *Operating System* allows to override where system components will be found at runtime, something as challenging as supporting multiple spoken Languages becomes trivial.
 
-This feature make it possible to maintain text constants *dictionaries* separate from the Business Logic.
+This feature makes it possible to maintain text constants *dictionaries* separate from the Business Logic.
 
-To the *Application Developer*, a message has a unique `ID` and may store two *Message Text* (**First* and *Second* level) with the ability to specify placeholders for replacement values.
+To the *Application Developer*, a message has a unique `ID` and may store two *Message Text* (*First* and *Second* level) with the ability to specify placeholders for replacement values.
 
 [ASNA Monarch Cocoon](https://asna.com/us/products/monarch) converts IBM i Message file Objects, to stand-alone [XML](https://en.wikipedia.org/wiki/XML) files. For convenience, Message files are given the extension: `amfx` (Asna Monarch Message File Xml).
 
