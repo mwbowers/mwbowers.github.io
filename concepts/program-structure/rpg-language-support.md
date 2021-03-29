@@ -106,7 +106,7 @@ This is not unique to IBM i Applications, Website Applications have the similar 
 
 What is *unique* is how IBM i Applications use a *View* into a *Table* (or joined Tables), as if it were a *File*, within a *File*, hence the name [subfile](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakc/rzakcmstdfsfl.htm).
 
-Just like a *File Object*, Display `subfile` can be *written to*, *read from*, *updated*, etc. 
+Just like a *File Object*, the Display `subfile` can be *written to*, *read from*, *updated*, etc. 
 
 `Subfile` configuration and usage is **very** flexible, so much that a *special* Displayfile element had to be created to control them, the [Subfile Control Record](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakc/rzakcmstdfsfctl.htm)
 
