@@ -2,7 +2,7 @@
 title: Nomad Tools
 ---
 
-There are processes in Application development where trivial repetitive segments of code need to be produced or maintained in sync with external resources. For the purposes of the contents of this chapter, we will call these segments `boilerplate` code.
+There are processes in Application development where trivial repetitive segments of code are need to be produced or maintained in sync with external resources. For the purposes of the contents of this chapter, we will call these segments `boilerplate` code.
 
 *Boilerplate code* is often [hidden from the view](/concepts/program-structure/rpg-language-support.html) and made part of the syntax in *Special Purpose* programming languages such as RPG.
 
@@ -42,3 +42,23 @@ Typically, `.cs` C# source files will have:
 | Copy to Output Directory | AdgFileUsageGenerator
 | Custom Tool              | (blank)
 
+When a C# Project is built, the different source files are checked for changes. When source file changes, the actions and/or Custom Tools associated with each file run.
+
+For files with associated **Custom Tool**, the user may force the tool to re-run, using the context menu option (right-click menu): "Run Custom Tool".
+
+### AdgFileUsageGenerator
+
+The `AdgFileUsageGenerator` custom tool will load the XFU Xml file which contains detailed schema for all  the objects of the ASNA.QSys types:
+
+- DatabaseFile
+- WorkstationFile
+- PrintFile
+
+For every file schema found in XFu, the `AdgFileUsageGenerator` custom tool will re-generate the following partial-class code (in `.io.cs`):
+
+- Explicitly create [FixedType](/concepts/program-structure/qsys-fixedtypes.html) declaration for all fields used by records in the file Objects.
+- For every file object, generate implementation for I/O methods:
+    - PopulateBuffer*filename*
+    - PopulateField*filename*
+
+> Avoid adding user-code to the partial class and/or alter XFU directly. You may loose your changes.
