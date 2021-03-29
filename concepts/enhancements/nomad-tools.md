@@ -62,3 +62,17 @@ For every file schema found in XFu, the `AdgFileUsageGenerator` custom tool will
     - PopulateField*filename*
 
 > Avoid adding user-code to the partial class and/or alter XFU directly. You may loose your changes.
+
+## Refresh XFU Visual Studio context menu option.
+
+The `.io.xfu` file associated with the QSys Program Application source, is initially generated when the Nomad Migration was converted from [AVR](https://asna.com/us/products/visual-rpg) programming language to C#.
+
+There are times when you would want to **force** to re-generate (or *Refresh*) the XFU Xml metadata.
+
+- When you change the Workstation file definition: by adding or changing the Razor Page Model classes.
+- When changing file definitions of DataGate Physical or Logical files. This includes adding, deleting or changing any field definitions on any of the record formats.
+- When changing .NET Printfile definitions. This includes adding, deleting or changing any field definitions on any of the record formats.
+
+As a general rule, every time that you *Refresh XFU* on any of the QSys Application Programs, run the "Custom Tool" on the XFU file to synchronize the code with the latest external file definitions.
+
+> ASNA.QSys runtime support will throw an exception when attempting to open files that had their schema out-of-sync with respect to the current partial class I/O implementation.
