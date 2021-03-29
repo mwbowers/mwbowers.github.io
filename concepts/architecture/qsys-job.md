@@ -42,42 +42,42 @@ All ASNA Monarch .NET Projects have a specialized class derived from ASNA.QSys `
 The generated MyJob looks like the [following code](https://github.com/ASNA/SunFarm/blob/master/CustomerAppLogic/MyJob.cs):
 
 ~~~cs
-    public partial class MyJob : ASNA.QSys.HostServices.WebJob
+public partial class MyJob : ASNA.QSys.HostServices.WebJob
+{
+    protected Indicator _INLR;
+    protected Indicator _INRT;
+    protected IndicatorArray<Len<_1, _0, _0>> _IN;
+    protected dynamic DynamicCaller_;
+    public Database MyDatabase = new Database(<dbname>);
+    public Database MyPrinterDB = new Database(<printer-db-name>);
+.
+.
+.
+    MyJob(ASNA.QSys.JobSupport.IJobServices JobServices)
+        : base(JobServices)
     {
-        protected Indicator _INLR;
-        protected Indicator _INRT;
-        protected IndicatorArray<Len<_1, _0, _0>> _IN;
-        protected dynamic DynamicCaller_;
-        public Database MyDatabase = new Database(<dbname>);
-        public Database MyPrinterDB = new Database(<printer-db-name>);
-.
-.
-.
-        MyJob(ASNA.QSys.JobSupport.IJobServices JobServices)
-            : base(JobServices)
-        {
-            _IN = new IndicatorArray<Len<_1, _0, _0>>((char[])null);
-            _instanceInit();
-        }
+        _IN = new IndicatorArray<Len<_1, _0, _0>>((char[])null);
+        _instanceInit();
+    }
 
-        override public void Dispose(bool disposing)
+    override public void Dispose(bool disposing)
+    {
+        if (disposing)
         {
-            if (disposing)
-            {
-                MyDatabase.Close();
-                MyPrinterDB.Close();
-            }
-            base.Dispose(disposing);
+            MyDatabase.Close();
+            MyPrinterDB.Close();
         }
+        base.Dispose(disposing);
+    }
 
-        override protected void ExecuteStartupProgram()
-        {
-            Indicator _LR = '0';
-            MyDatabase.Open();
-            MyPrinterDB.Open();
+    override protected void ExecuteStartupProgram()
+    {
+        Indicator _LR = '0';
+        MyDatabase.Open();
+        MyPrinterDB.Open();
 
-            DynamicCaller_.CallD(<entry-point>, out _LR);
-        }
+        DynamicCaller_.CallD(<entry-point>, out _LR);
+    }
 ~~~
 
 > Note: `<dbname>`, `<printer-db-name>` and `<entry-point>` are placeholders for actual string constants, depending on the Application configuration. 
