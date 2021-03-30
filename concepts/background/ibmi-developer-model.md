@@ -2,7 +2,7 @@
 title: IBM i Developer's model
 ---
 
-Most IBM i Applications start by running a Program (or command) [object](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzal2/rzal2objects.htm) which starts executing business-logic *commands*.
+Most IBM i Applications start by running a Program (or command) [object](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzal2/rzal2objects.htm), which starts executing business-logic *commands*.
 
 > *To simplify we will focus on `RPG ILE` Programs* on this topic.
 
@@ -15,7 +15,7 @@ The [IBM i Program](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/
 4. Calculation - how memory-data and input-records are affected by operations. 
 5. Output - describe output records.
 
-> &#128161; These operations are grouped in [RPG Specifications](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasc/ovvwspecs.htm)  
+> &#128161; These operations are grouped in [RPG Specifications](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasc/ovvwspecs.htm).  
 
 Even when files may be described by an `RPG` Program as *Internal* or *External*, we will focus only on *External* Descriptions. ([ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help150/Main_Monarch_90.htm) converts Internally described files into Externally Described files during Migration).
 
@@ -27,7 +27,7 @@ Most IBM i&#174; Programs can be grouped in two categories:
 > Assume that the IBM i Developer's Model we are concerned with - with the purpose of comparing with ASP.NET - is that of *Interactive* Applications. 
 
 ## Separation of Concerns
-IBM i Interactive Applications use  [Displayfile](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/cl/crtdspf.htm) objects to allow users to interact with the Application. The Displayfile represents to the `RPG` Program an external file which can be *written to* or *read from* (just like any other file type).
+IBM i Interactive Applications use  [Displayfile](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/cl/crtdspf.htm) objects to allow users to interact with the Application. The Displayfile represents to the `RPG` Program an external file which can be *written to*, or *read from* (just like any other file type).
 
 > &#128161; The closest thing to a [Terminal](https://en.wikipedia.org/wiki/Computer_terminal) in Modern computing is the [Web Browser](https://en.wikipedia.org/wiki/Web_browser). 
 
@@ -39,7 +39,7 @@ On the IBM i the two *concerns* where separated in different object types: **Pro
 
 ## Indicators
 
-`RPG` Programs use a set of pre-defined global fields called [Indicators](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/rpgivui.htm). This *indicators* define a collection of 99 *flags* with the name `*IN` which can hold the value `1` or `0` (or symbol `*On` or `*Off`).
+`RPG` Programs use a set of pre-defined global fields called [Indicators](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/rpgivui.htm). These *indicators* define a collection of 99 *flags* with the name `*IN` which can hold the value `1` or `0` (or symbol `*On` or `*Off`).
 
 Examples, of indicators are: `*IN03` and `*IN12`.
 
@@ -50,7 +50,7 @@ The collection of *Indicators* is shared with **ALL** *Active* Programs in a cal
 ## Embedded SQL
 Modern `RPG` allows the use of [SQL](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzahg/rzahgsql.htm) commands.
 
-In addition to the [RPG Language Database Support](/concepts/program-structure/rpg-language-support)), `RPG` extends the operations that may be executed to affect Database operations with a subset of the  [Structured Query Language](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzahg/rzahgsql.htm)
+In addition to the [RPG Language Database Support](/concepts/program-structure/rpg-language-support), `RPG` extends the operations that may be executed to affect Database operations with a subset of the  [Structured Query Language](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzahg/rzahgsql.htm)
 
 ## The Program *Drives* the Displayfile
 
