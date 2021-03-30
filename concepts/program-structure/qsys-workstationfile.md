@@ -12,11 +12,11 @@ title: ASNA.QSys WorkstationFile
 
 * Operations on **File**(s) include: *Open*, *Write*, *Read* and *Close*.
 
-* *Execute* is typical operation on `WORKSTN File`(s) that translates to *Write immediately followed by Read*.
+* *Execute Format* is a typical operation on `WORKSTN File`(s) that translates to *Write immediately followed by Read*.
 
 > `WORKSTN File` contains Display file information and a description of the fields in the records.
 
-<br>
+<br/>
 
 # What does it mean to **Read** a *Displayfile* in a Web Environment?
 The most challenging `WORKSTN File` operation to implement in a Request/Response Paradigm environment (such as Internet Web), is *Read*.

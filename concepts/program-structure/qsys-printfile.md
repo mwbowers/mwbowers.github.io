@@ -1,17 +1,17 @@
 ---
-title: QSys Printing
+title: ASNA.QSys PrintFile
 ---
 
-`ASNA.DataGate.Common.Printfile` or `DataGate Printfile` (for short), is the ASNA.QSys class that abstracts the concept of a [IBM i Printer file](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzalu/rzaluprtfover.htm).
+`ASNA.QSys.Printfile` or `QSys Printfile` (for short), is the ASNA.QSys class that abstracts the concept of a [IBM i Printer file](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzalu/rzaluprtfover.htm).
 
-Similarly to a [QSys DatabaseFile](/concepts/program-structure/qsys-databasefile), a `DataGate Printfile` is a class used to instance objects to produce output records, according to external definitions.
+Similarly to a [QSys DatabaseFile](/concepts/program-structure/qsys-databasefile), a `QSys Printfile` is a class used to instance objects to produce output records, according to external definitions.
 
-## External Definition of a .NET Printfile
-.NET Printfiles are output data definition records stored as a database objects.
+## External Definition of a DataGate .NET Printer file
+The QSys Printfile obtains its general characteristics like field definitions, page layout, printer attributes from a DataGate .NET Printerfile.
 
-> .NET Printfiles database objects as [Blobs](https://en.wikipedia.org/wiki/Binary_large_object) that contain the [XML](https://en.wikipedia.org/wiki/XML) detailed schema definition of the file. Such schema may be exported to a file for inspection.
+A DataGate .NET Printer File is composed of one or more record formats, each defining a template of what is to be shown in a segment of the page.  A record format is a collection of fields.  Each field is within a record is embodied by a .NET control.   The definition of a Printer file is kept as part of a DataGate database.
 
-## Creating/Designing `DataGate Printfile` objects
+### Creating/Designing `DataGate Printfile` objects
 Microsoft Visual Studio (with DataGate integration) is used to create and maintain .NET Printfiles.
 
 ## Using PrintFiles in a QSys Program.
