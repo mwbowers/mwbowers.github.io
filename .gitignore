@@ -5,7 +5,7 @@ _site/
 .jekyll-metadata
 
 ### Visual Studio ###
-slnx.sqlite
+.vs/
 ProjectSettings.json
 .suo
 

@@ -11,6 +11,9 @@ These will be ASNA Monarch Core Framework Manuals:
     - MonaLisa
     - Printing
     - Batch Processor
+
+- Migrations
+
 - DataGate
     - Installation
 
