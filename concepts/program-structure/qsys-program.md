@@ -86,7 +86,7 @@ Activation Group name is implemented using [C# Attributes](https://docs.microsof
 ##  QSys Activation Call Stack.
 Although implementation details on how C# implements a [Call Stack](https://en.wikipedia.org/wiki/Call_stack) in .NET is somewhat hidden to the .NET developer, it is well defined that local variables (*state*) are **volatile** and no longer accessible when a method call returns.  
 
-The concept of calling a *piece of code* in a way that *state* is kept *Active* in case we want to call it again is an *odd* non-existing concept. Particularly if the *semantics* of how *pieces of code* may define *state* as methods are called, and when the *call stack* rewinds, **some** state remain in memory, is just not a common implementation in modern languages such as C#.
+The concept of calling a *piece of code* in a way that *state* is kept *Active* in case we want to call it again, is an *odd* concept to modern programming languages. Particularly if the *semantics* of how *pieces of code* may define *state* as methods are called, and when the *call stack* rewinds, **some** state remain in memory, is just not a common implementation in modern languages such as C#.
 
 To preserve Legacy Logic that depended on Program *Activation* with *stay active* rules, `QSys` had to implement its own `Activation Call Stack`. 
 
