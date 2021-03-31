@@ -28,7 +28,7 @@ This overloaded method constructs a new instance of a **SQL_CommunicationsArea**
             <th>Description</th>
           </tr>          <tr>
             <td>[
-            SQL_CommunicationsArea (string)](amfProgramSQL_CommunicationsAreaClassConstructor1.html)
+            SQL_CommunicationsArea (string)](program-sql-communications-area-class-constructor1.html)
             </td>
             <td>Creates a new instance of a
           SQL_CommunicationsArea object with command text.</td>
@@ -36,7 +36,7 @@ This overloaded method constructs a new instance of a **SQL_CommunicationsArea**
           <tr>
             <td>[
             SQL_CommunicationsArea (string,
- *int, int* )](amfProgramSQL_CommunicationsAreaClassConstructor2.html)
+ *int, int* )](program-sql-communications-area-class-constructor2.html)
             </td>
             <td>Creates a new instance of a
           SQL_CommunicationsArea object with command text, execution status code, and state.</td>
@@ -44,7 +44,7 @@ This overloaded method constructs a new instance of a **SQL_CommunicationsArea**
           <tr>
             <td>[
             SQL_CommunicationsArea (string,
- *int, int, System.Exception* )](amfProgramSQL_CommunicationsAreaClassConstructor3.html)
+ *int, int, System.Exception* )](program-sql-communications-area-class-constructor3.html)
             </td>
             <td>Creates a new instance of a
           SQL_CommunicationsArea object with command
@@ -54,7 +54,7 @@ This overloaded method constructs a new instance of a **SQL_CommunicationsArea**
           <tr>
             <td>[
             SQL_CommunicationsArea (string,
-            SqlClient.SqlExcption)](amfProgramSQL_CommunicationsAreaClassConstructor4.html)
+            SqlClient.SqlExcption)](program-sql-communications-area-class-constructor4.html)
             </td>
             <td>Creates a new instance of a
           SQL_CommunicationsArea object with command text
@@ -70,7 +70,7 @@ This overloaded method constructs a new instance of a **SQL_CommunicationsArea**
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -87,11 +87,11 @@ This overloaded method constructs a new instance of a **SQL_CommunicationsArea**
 #### See Also
 <dl>
     <dd>[
-    Program.SQL_CommunicationsArea Class](amfProgramSQL_CommunicationsAreaClass.html)</dd>
+    Program.SQL_CommunicationsArea Class](program-sql-communications-area-class.html)</dd>
     <dd>[
-    Program.SQL_CommunicationsArea Class Members](amfProgramSQL_CommunicationsAreaClassMembers.html)</dd>
+    Program.SQL_CommunicationsArea Class Members](program-sql-communications-area-class-members.html)</dd>
     <dd>[ASNA.Monarch
-    Namespace](amfMonarchNamespace.html)</dd>
+    Namespace](monarch-namespace.html)</dd>
     <dd><a href="http://msdn2.microsoft.com/en-us/library/System.Data.DbType.aspx">
     System.Data.DbType</a></dd>
     <dd><a href="http://msdn2.microsoft.com/en-us/library/system.data.parameterdirection.aspx">

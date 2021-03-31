@@ -21,7 +21,7 @@ Readonly value indicating the type of message.
 <pre class="syntax"> **BegProp ReadOnly MessageType Access(*Public) Type(ASNA.Monarch.MessageTypes)**       </pre>
 
 #### Field Value
-[ ASNA.Monarch.MessageTypes](amfMessageTypesEnumeration.html) enumeration value indicating the type of message.
+[ ASNA.Monarch.MessageTypes](messa-ge-types-enumeration.html) enumeration value indicating the type of message.
 <!-- start -->
 
 #### Requirements
@@ -32,7 +32,7 @@ Readonly value indicating the type of message.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -47,4 +47,4 @@ Readonly value indicating the type of message.
 <!-- end -->
 
 #### See Also
-[Message Class](amfMessageClass.html) <br /> [Message Class Members](amfMessageClassMembers.html) <br /> [ ASNA.Monarch.MessageTypes Enumeration](amfMessageTypesEnumeration.html) <br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[Message Class](message-class.html) <br /> [Message Class Members](message-class-members.html) <br /> [ ASNA.Monarch.MessageTypes Enumeration](messa-ge-types-enumeration.html) <br />[ASNA.Monarch Namespace](monarch-namespace.html)

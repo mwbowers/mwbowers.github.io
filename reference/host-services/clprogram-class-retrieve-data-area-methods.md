@@ -30,14 +30,14 @@ A local data area is created for each job in the system. The system creates a lo
           <tr>
             <td>            <code>[
               RetrieveDataArea (
- *string* )](amfCLProgramClassRetrieveDataAreaMethod1.html)</code>
+ *string* )](clprogram-class-retrieve-data-area-method1.html)</code>
             </td>
             <td>Retrieves the path to the local *data area*  named.</td>
           </tr>
           <tr>
             <td>             <code>[
               RetrieveDataArea (
- *string, integer, integer* )](amfCLProgramClassRetrieveDataAreaMethod2.html)</code>
+ *string, integer, integer* )](clprogram-class-retrieve-data-area-method2.html)</code>
             </td>
             <td>Retrieves the path to the partial
             contents of the local 
@@ -50,7 +50,7 @@ A local data area is created for each job in the system. The system creates a lo
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -58,4 +58,4 @@ A local data area is created for each job in the system. The system creates a lo
 <!-- end -->
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

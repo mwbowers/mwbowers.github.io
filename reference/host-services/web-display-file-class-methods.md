@@ -10,7 +10,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
 
 ---
 
-[ WebDisplayFile Class Overview](amfWebDisplayFileClass.html) 
+[ WebDisplayFile Class Overview](web-display-file-class.html) 
 
 #### Public Methods
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              Attach](amfWebDisplayFileClassAttachMethod.html)
+              Attach](web-display-file-class-attach-method.html)
             </td>
             <td>Returns an 
  **ASNA.DataGate.Client.AdgDataSet**  object
@@ -35,7 +35,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              ClearSubfile](amfWebDisplayFileClassClearSubfileMethod.html)
+              ClearSubfile](web-display-file-class-clear-subfile-method.html)
             </td>
             <td>Clears the format records
             for the subfile named.</td>
@@ -43,7 +43,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td style="height: 31px"><img alt="public property" src="images/methods.bmp" />
               [
-              Close](amfWebDisplayFileClassCloseMethod.html)
+              Close](web-display-file-class-close-method.html)
             </td>
             <td style="height: 31px">Closes the '.aspx.' web
             form program and dataSet for the 
@@ -52,7 +52,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              DeactivateFormats](amfWebDisplayFileClassDeactivateFormatsMethod.html)
+              DeactivateFormats](web-display-file-class-deactivate-formats-method.html)
             </td>
             <td>Deactivates the formats
             named.</td>
@@ -60,7 +60,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              DisplaySubfileRecords](amfWebDisplayFileClassDisplaySubfileRecordsMethod.html)
+              DisplaySubfileRecords](web-display-file-class-display-subfile-records-method.html)
             </td>
             <td>Displays the format records
             for the subfile named.</td>
@@ -68,7 +68,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              GetCurrentRow](amfWebDisplayFileClassGetCurrentRowMethod.html)
+              GetCurrentRow](web-display-file-class-get-current-row-method.html)
             </td>
             <td>Returns the current row
             number of the format name specified.</td>
@@ -76,7 +76,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              GetSharedFile](amfWebDisplayFileClassGetSharedFileMethod.html)
+              GetSharedFile](web-display-file-class-get-shared-file-method.html)
             </td>
             <td>Returns the 
  **WebDisplayFile**  for the declared
@@ -85,7 +85,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              InitMessageSubfile](amfWebDisplayFileClassInitMessageSubfileMethod2.html)
+              InitMessageSubfile](web-display-file-classInit-message-subfile-method2.html)
             </td>
             <td>Controls a new instance of
             a 
@@ -96,7 +96,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              IsActive](amfWebDisplayFileClassIsActiveMethod.html)
+              IsActive](web-display-file-classIs-active-method.html)
             </td>
             <td>Returns 
  **True**  if the format name specified is
@@ -105,7 +105,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           </tr>
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
-              [Open](amfWebDisplayFileClassOpenMethod.html)
+              [Open](web-display-file-class-open-method.html)
             </td>
             <td>Opens the '.aspx.' web form
             program and dataSet for the 
@@ -113,7 +113,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           </tr>
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
-              [Read](amfWebDisplayFileClassReadMethod.html)
+              [Read](web-display-file-class-read-method.html)
             </td>
             <td>Reads an array of
             characters in the 
@@ -123,7 +123,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              SetActive](amfWebDisplayFileClassSetActiveMethod.html)
+              SetActive](web-display-file-class-set-active-method.html)
             </td>
             <td>Sets the active format to
             the format name specified.</td>
@@ -131,7 +131,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              SetCurrentRow](amfWebDisplayFileClassSetCurrentRowMethod.html)
+              SetCurrentRow](web-display-file-class-set-current-row-method.html)
             </td>
             <td>Sets the current row to the
             row and format name specified.</td>
@@ -139,7 +139,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              Update](amfWebDisplayFileClassUpdateMethod.html)
+              Update](web-display-file-class-update-method.html)
             </td>
             <td>Updates a format record to
             the 
@@ -149,7 +149,7 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/methods.bmp" />
               [
-              Write](amfWebDisplayFileClassWriteMethod.html)
+              Write](web-display-file-classWrite-method.html)
             </td>
             <td>Writes a record
             to a Monarch workstation file, database file, or
@@ -158,4 +158,4 @@ keywords: methods [ASNA.Monarch], WebDisplayFile class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ WebDisplayFile Class](web-display-file-class.html) 

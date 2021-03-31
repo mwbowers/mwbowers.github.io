@@ -22,7 +22,7 @@ Signals the **WebDevice** object thread the device is to wait for data from a pr
 #### Remarks
 This method is used to signal to the **WebDevice** object the device is to wait for data from a program event. The thread state of the current program will be changed from "running" or "ready" to "waiting".
 
-This **WaitForDataForProgram** method returns when the WebDevice object is in the signaled state, or when the time-out interval elapses. This function does not return if there is unread input in the queue. It returns only when new input arrives. Use [ SignalDataReadyForProgram](amfWebDeviceClassSignalDataReadyForProgramMethod.html) when the data is available and to remove the wait state.
+This **WaitForDataForProgram** method returns when the WebDevice object is in the signaled state, or when the time-out interval elapses. This function does not return if there is unread input in the queue. It returns only when new input arrives. Use [ SignalDataReadyForProgram](web-device-class-signal-dat-a-ready-for-program-method.html) when the data is available and to remove the wait state.
 <!-- -->
 
 #### Requirements
@@ -33,7 +33,7 @@ This **WaitForDataForProgram** method returns when the WebDevice object is in th
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -46,4 +46,4 @@ This **WaitForDataForProgram** method returns when the WebDevice object is in th
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Class Members](web-device-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

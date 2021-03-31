@@ -36,7 +36,7 @@ String. The path to the data area to delete.
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -46,12 +46,12 @@ String. The path to the data area to delete.
 #### See Also
 <dl><dt>
         [CLProgram
-        Class](amfCLProgramClass.html)
+        Class](clprogram-class.html)
         <br clear="none" />
         [
-        CLProgram Class Members](amfCLProgramClassMembers.html)
+        CLProgram Class Members](clprogram-class-members.html)
         <br clear="none" />
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dt>
+        Namespace](monarch-namespace.html)</dt>
 </dl>
 

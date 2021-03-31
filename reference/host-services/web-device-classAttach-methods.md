@@ -31,7 +31,7 @@ Attaches a <code>WebDisplayFile</code> to a <code> **WebDevice** </code> and opt
           </tr>
           <tr>
             <td>[<code>Attach (
- *string, WebDisplayFile* )</code>](amfWebDeviceClassAttachMethod.html)
+ *string, WebDisplayFile* )</code>](web-device-classAttach-method.html)
             </td>
             <td>Attaches the
           <code>WebDisplayFile</code> and a shared file to a
@@ -39,7 +39,7 @@ Attaches a <code>WebDisplayFile</code> to a <code> **WebDevice** </code> and opt
           </tr>
           <tr>
             <td>[<code>Attach (
- *WebDisplayFile* )</code>](amfWebDeviceClassAttachMethod2.html)
+ *WebDisplayFile* )</code>](web-device-classAttach-method2.html)
             </td>
             <td>Attaches the
           <code>WebDisplayFile</code> to a <code>WebDevice</code>.</td>
@@ -56,7 +56,7 @@ Attaches a <code>WebDisplayFile</code> to a <code> **WebDevice** </code> and opt
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -71,4 +71,4 @@ Attaches a <code>WebDisplayFile</code> to a <code> **WebDevice** </code> and opt
 <!-- end -->    
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html)<br />[WebDevice Class Members](amfWebDeviceClassMembers.html)<br />[ ASNA.Monarch.WebDisplayFile](amfWebDisplayFileClass.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[WebDevice Class](web-device-class.html)<br />[WebDevice Class Members](web-device-class-members.html)<br />[ ASNA.Monarch.WebDisplayFile](web-display-file-class.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)

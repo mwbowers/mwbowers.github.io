@@ -10,7 +10,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
 
 ---
 
-[ WebDisplayFile Class Overview](amfWebDisplayFileClass.html) 
+[ WebDisplayFile Class Overview](web-display-file-class.html) 
 <!-- start public properties table -->	
 
 #### Public Properties
@@ -27,7 +27,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              AttnID](amfWebDisplayFileClassAttnIDProperty.html)</code>
+              AttnID](web-display-file-class-attnid-property.html)</code>
             </td>
             <td>Sets the unique
             identification for each format record in the message
@@ -36,7 +36,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              DataSet](amfWebDisplayFileClassdataSetProperty.html)</code>
+              DataSet](web-display-file-class-dataset-property.html)</code>
             </td>
             <td>Gets the in-memory 
  **System.Data.DataSet**  containing the
@@ -47,7 +47,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              DisplayErrorMessages](amfWebDisplayFileClassDisplayErrorMessagesProperty.html)</code>
+              DisplayErrorMessages](web-display-file-class-display-error-messages-property.html)</code>
             </td>
             <td>Gets the boolean value
             indicating if error messages are to be displayed.</td>
@@ -62,7 +62,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              FeedbackAID](amfWebDisplayFileClassFeedbackAIDProperty.html)</code>
+              FeedbackAID](web-display-file-class-feedback-aid-property.html)</code>
             </td>
             <td>Gets the
             Aid key used to provide feedback for a specific
@@ -71,7 +71,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              FeedbackCursor](amfWebDisplayFileClassFeedbackCursorProperty.html)</code>
+              FeedbackCursor](web-display-file-class-feedback-cursor-property.html)</code>
             </td>
             <td>Gets the cursor
             coordinates used to provide feedback for a specific
@@ -80,7 +80,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              FeedbackField](amfWebDisplayFileClassFeedbackFieldProperty.html)</code>
+              FeedbackField](web-display-file-class-feedback-field-property.html)</code>
             </td>
             <td>Gets the specific
             field for which the feedback is to be provided.</td>
@@ -88,7 +88,7 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              FeedbackFlags](amfWebDisplayFileClassFeedbackFlagsProperty.html)</code>
+              FeedbackFlags](web-display-file-class-feedback-flags-property.html)</code>
             </td>
             <td>Gets the flags used to
             provide feedback for specific field on the web
@@ -97,27 +97,27 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
 		  		   <tr>
             <td style="height: 28px"><img alt="public property" src="images/property.bmp" />
               [
-              FeedbackLowestSubfile](amfWebDisplayFileClassFeedbackLowestSubfileProperty.html)
+              FeedbackLowestSubfile](web-display-file-class-feedbackLowest-subfile-property.html)
             </td>
             <td style="height: 28px">Gets the lowest subfile used to provide feedback.</td>
           </tr>
 		  	<tr>
             <td style="height: 28px"><img alt="public property" src="images/property.bmp" />
               [
-              FeedbackSubfileCursorRRN](amfWebDisplayFileClassFeedbackSubfileCursorRRNProperty.html)</td>
+              FeedbackSubfileCursorRRN](web-display-file-class-feedback-subfile-cursor-rrn-property.html)</td>
 			 <td>Gets the Subfile Record row number where the cursor is currently located.</td>
 			 </tr>
           <tr>
             <td><img alt="public property" src="images/property.bmp" /> 
             <code>[
-            LastFormatName](amfWebDisplayFileClassLastFormatNameProperty.html)</code></td>
+            LastFormatName](web-display-file-classLast-format-name-property.html)</code></td>
             <td>Gets or sets the last
             format name for the Display File.</td>
           </tr>
           <tr>
             <td><img alt="public property" src="images/property.bmp" />
               <code>[
-              ResetKeyIndicators](amfWebDisplayFileClassResetKeyIndicatorsProperty.html)</code>
+              ResetKeyIndicators](web-display-file-class-reset-key-indicators-property.html)</code>
             </td>
             <td>Gets or sets the string
             containing the indicator expressions reset for
@@ -126,4 +126,4 @@ keywords: properties [ASNA.Monarch], WebDisplayFile class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ WebDisplayFile Class](web-display-file-class.html)

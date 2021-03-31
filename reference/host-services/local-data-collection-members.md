@@ -11,7 +11,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
 
 ---
 
-[ LocalDataCollection Class Overview](amfLocalDataCollectionClass.html) 
+[ LocalDataCollection Class Overview](local-data-collection-class.html) 
 <!-- start constructor table -->	
 
 #### Constructor
@@ -27,7 +27,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
 <!-- end copy BUT put in extra div and end of table -->          <tr valign="top">
             <td><img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              LocalDataCollection](amfLocalDataCollectionClassConstructors.html)
+              LocalDataCollection](local-data-collection-class-constructors.html)
             </td>
             <td>Creates a new instance of a **LocalDataCollection**  object.</td>
           </tr>
@@ -49,7 +49,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr valign="top">
             <td><img id="IMG2" style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              Add](amfLocalDataCollectionClassAddMethod.html)
+              Add](local-data-collection-class-add-method.html)
             </td>
             <td>Adds an element to the
             collection with the provided name and value pair.</td>
@@ -57,7 +57,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img id="Img3" style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              Clear](amfLocalDataCollectionClassClearMethod.html)
+              Clear](local-data-collection-class-clear-method.html)
             </td>
             <td>Clears the 
  **IDictionary**  collection.</td>
@@ -65,7 +65,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img id="Img21" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              Contains](amfLocalDataCollectionClassContainsMethod.html)
+              Contains](local-data-collection-class-contains-method.html)
             </td>
             <td>Returns a boolean value
             indicating if the 
@@ -75,7 +75,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img id="Img21" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              GetEnumerator](amfLocalDataCollectionClassGetEnumeratorMethod.html)
+              GetEnumerator](local-data-collection-class-get-enumerator-method.html)
             </td>
             <td>Returns an enumerator that
             can iterate through the elements in a dictionary.</td>
@@ -83,7 +83,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img id="Img21" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              Remove](amfLocalDataCollectionClassRemoveMethod.html)
+              Remove](local-data-collection-class-remove-method.html)
             </td>
             <td>Removes an element from 
  **IDictionary**  for the name
@@ -92,7 +92,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img id="Img1" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              RemoveAll](amfLocalDataCollectionClassRemoveAllMethod.html)
+              RemoveAll](local-data-collection-class-remove-all-method.html)
             </td>
             <td>Removes all elements from 
  **IDictionary** .</td>
@@ -115,7 +115,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr valign="top">
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              Count](amfLocalDataCollectionClassCountProperty.html)
+              Count](local-data-collection-class-count-property.html)
             </td>
             <td>Gets the number of elements
             in 
@@ -124,7 +124,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              this](amfLocalDataCollectionClassthisProperty.html)
+              this](local-data-collection-classthis-property.html)
             </td>
             <td>Gets or sets the collection
             element with the specified name.</td>
@@ -132,7 +132,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              Names](amfLocalDataCollectionClassNamesProperty.html)
+              Names](local-data-collection-class-names-property.html)
             </td>
             <td>Gets an 
  **ICollection**  containing the names in the
@@ -142,7 +142,7 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              Values](amfLocalDataCollectionClassValuesProperty.html)
+              Values](local-data-collection-class-values-property.html)
             </td>
             <td>Gets an 
  **ICollection**  containing the values in
@@ -152,4 +152,4 @@ keywords: members [ASNA.Monarch], LocalDataCollection class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ LocalDataCollection Class](amfLocalDataCollectionClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ LocalDataCollection Class](local-data-collection-class.html) 

@@ -36,7 +36,7 @@ String containing the database, print, or workstation file name to remove overri
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -50,10 +50,10 @@ String containing the database, print, or workstation file name to remove overri
 
 #### See Also
 <dl>
-        <dd>[Job Class](amfJobClass.html)</dd>
-       <dd>[Job Class Members](amfJobMembers.html)</dd>
+        <dd>[Job Class](job-class.html)</dd>
+       <dd>[Job Class Members](job-members.html)</dd>
         <dd>[Job.ApplyOverrides Methods](amfJobClassApplyOverridesMethods.html)</dd>
-      <dd>[Job.OverrideFile Methods](amfJobClassOverrideFileMethods.html)</dd>
-      <dd>[ASNA.Monarch Namespace](amfMonarchNamespace.html)</dd>
+      <dd>[Job.OverrideFile Methods](job-class-override-file-methods.html)</dd>
+      <dd>[ASNA.Monarch Namespace](monarch-namespace.html)</dd>
 </dl>
 

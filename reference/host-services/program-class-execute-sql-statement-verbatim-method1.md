@@ -27,7 +27,7 @@ Executes a SQL command statement specifying the SQL statement (exactly as stated
  *parameters*  </dt>
         <dd>
           [
-        DBParm](amfProgramDBParmClass.html). An array containing the command
+        DBParm](program-db-parm-class.html). An array containing the command
         parameters.</dd>
 </dl>
 
@@ -43,7 +43,7 @@ Executes a SQL command statement specifying the SQL statement (exactly as stated
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -58,4 +58,4 @@ Executes a SQL command statement specifying the SQL statement (exactly as stated
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ Program.DBParm Class](amfProgramDBParmClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ Program.DBParm Class](program-db-parm-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

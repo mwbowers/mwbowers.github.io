@@ -10,7 +10,7 @@ keywords: properties [ASNA.Monarch], Job class
 
 ---
 
-[Job Class Overview](amfJobClass.html) 
+[Job Class Overview](job-class.html) 
 <!-- start public properties table -->	
 
 #### Public Properties
@@ -27,7 +27,7 @@ keywords: properties [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              ADO_Connection](amfJobClassADO_ConnectionProperty.html)
+              ADO_Connection](job-class-ado-connection-property.html)
             </td>
             <td>Gets the 
             [
@@ -44,7 +44,7 @@ keywords: properties [ASNA.Monarch], Job class
           </tr>
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
-              [Database](amfJobClassDatabaseProperty.html)
+              [Database](job-class-database-property.html)
             </td>
             <td>Gets the
             ASNA.VisualRPG.Runtime.Database connection object
@@ -53,7 +53,7 @@ keywords: properties [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              MesssageFileFolder](amfJobClassMessageFileFolderProperty.html)
+              MesssageFileFolder](job-class-message-file-folder-property.html)
             </td>
             <td>Gets or sets the name of
             the folder containing the message file for this
@@ -61,7 +61,7 @@ keywords: properties [ASNA.Monarch], Job class
           </tr>
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
-              [PrinterDB](amfJobClassPrinterDBProperty.html)
+              [PrinterDB](job-class-printer-db-property.html)
             </td>
             <td>Gets the
             ASNA.VisualRPG.Runtime.Database connection object for
@@ -70,7 +70,7 @@ keywords: properties [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              StartupMoment](amfJobClassStartupMomentProperty.html)
+              StartupMoment](job-class-startup-moment-property.html)
             </td>
             <td>Gets the System.DateTime
             when the Job was started.</td>
@@ -79,9 +79,9 @@ keywords: properties [ASNA.Monarch], Job class
 
 #### See Also
 <dl>
-        <dd>[Job Class](amfJobClass.html)
+        <dd>[Job Class](job-class.html)
         </dd>
                 <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

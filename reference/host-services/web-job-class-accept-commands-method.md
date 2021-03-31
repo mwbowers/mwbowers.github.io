@@ -55,7 +55,7 @@ EndIf</span></pre>
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -70,4 +70,4 @@ EndIf</span></pre>
 <!-- end -->
 
 #### See Also
-[WebJob Class](amfWebJobClass.html) <br /> [WebJob Class Members](amfWebJobClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebJob Class](web-job-class.html) <br /> [WebJob Class Members](web-job-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

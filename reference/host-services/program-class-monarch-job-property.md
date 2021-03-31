@@ -14,7 +14,7 @@ keywords: how to, get program job name
 
 ---
 
-Gets the name of the [ ASNA.Monarch.Job](amfJobClass.html) under which the **Program** is running.
+Gets the name of the [ ASNA.Monarch.Job](job-class.html) under which the **Program** is running.
 <!-- start -->
 
 #### Syntax
@@ -35,7 +35,7 @@ The name of the **ASNA.Monarch.Job** under which the Program is running.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -50,4 +50,4 @@ The name of the **ASNA.Monarch.Job** under which the Program is running.
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

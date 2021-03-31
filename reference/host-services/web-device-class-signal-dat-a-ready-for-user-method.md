@@ -21,7 +21,7 @@ Signals the **WebDevice** object thread indicate the device is ready for data fr
 <pre class="prettyprint"> **BegSr SignalDataReadyForUser() Access(*Public) Type(Void)**      </pre> 
 
 #### Remarks
-This method is used to signal to the **WebDevice** object program thread that the device is ready for data from a user event. The thread state of the current program will be changed from "waiting" to "running" or "ready". Use [ WaitForDataForUser](amfWebDeviceClassWaitForDataForUserMethod.html) to place the thread in the 'wait' state.
+This method is used to signal to the **WebDevice** object program thread that the device is ready for data from a user event. The thread state of the current program will be changed from "waiting" to "running" or "ready". Use [ WaitForDataForUser](web-device-class-wait-for-data-for-user-method.html) to place the thread in the 'wait' state.
 <!-- -->
 
 #### Requirements
@@ -32,7 +32,7 @@ This method is used to signal to the **WebDevice** object program thread that th
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -45,4 +45,4 @@ This method is used to signal to the **WebDevice** object program thread that th
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Class Members](web-device-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

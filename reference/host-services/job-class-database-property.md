@@ -33,7 +33,7 @@ ASNA.VisualRPG.Runtime.Database connection object for the job.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -47,13 +47,13 @@ ASNA.VisualRPG.Runtime.Database connection object for the job.
 
 #### See Also
 <dl>
-        <dd>[Job Class](amfJobClass.html)
+        <dd>[Job Class](job-class.html)
         </dd><dd>
         [Job Class
-        Members](amfJobMembers.html)</dd>
+        Members](job-members.html)</dd>
        <dd>[
-        Job.getDatabase Method](amfJobClassgetDatabaseMethod.html)</dd>
+        Job.getDatabase Method](job-class-get-database-method.html)</dd>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

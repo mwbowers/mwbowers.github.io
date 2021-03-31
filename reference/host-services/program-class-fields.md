@@ -10,7 +10,7 @@ keywords: fields [ASNA.Monarch], Program class
 
 ---
 
-[Program Class Overview](amfProgramClass.html) 
+[Program Class Overview](program-class.html) 
 
 #### Public Fields
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: fields [ASNA.Monarch], Program class
           <tr valign="top">
             <td><img id="Img6" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SqlQueryResults](amfProgramClassSqlQueryResultsField.html)
+              SqlQueryResults](program-class-sql-query-results-field.html)
             </td>
             <td>A field containing a
             collection representing the query results.</td>
@@ -45,9 +45,9 @@ keywords: fields [ASNA.Monarch], Program class
           <tr>
             <td><img id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" /> 
             [
-            SQLCA](amfProgramClassSQLCAField.html)</td>
+            SQLCA](program-class-sqlca-field.html)</td>
             <td>[
-            SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html) object that represents
+            SQL_CommunicationsArea](program-sql-communications-area-class.html) object that represents
             the SQLCA to trap and report run-time errors
             for the 
  **Program** .</td>
@@ -55,7 +55,7 @@ keywords: fields [ASNA.Monarch], Program class
           <tr valign="top">
             <td><img id="Img5" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              StartupMoment](amfProgramClassStartupMomentField.html)
+              StartupMoment](program-class-startup-moment-field.html)
             </td>
             <td>A read-only field
             containing the System.DateTime of when the program
@@ -64,4 +64,4 @@ keywords: fields [ASNA.Monarch], Program class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [Program Class](amfProgramClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [Program Class](program-class.html) 

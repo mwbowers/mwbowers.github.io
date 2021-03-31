@@ -13,11 +13,11 @@ keywords: classes [ASNA.Monarch], WebDisplayFile class
 
 The **WebDisplayFile** class provides for form control for program web device, program, and job.
 
-For a list of all members of this type, see [ WebDisplayFile Members](amfWebDisplayFileClassMembers.html).
+For a list of all members of this type, see [ WebDisplayFile Members](web-display-file-class-members.html).
 <!--mine -->
 
 #### Inheritance Hierarchy
-<pre>[ ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.WebDisplayFile**       </pre>
 
 #### Syntax
@@ -42,7 +42,7 @@ With each format definition a list of AID keys (i.e.: function keys) available t
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -57,4 +57,4 @@ With each format definition a list of AID keys (i.e.: function keys) available t
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ WebDisplayFile Class Members](amfWebDisplayFileClassMembers.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ WebDisplayFile Class Members](web-display-file-class-members.html)

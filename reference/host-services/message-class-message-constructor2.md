@@ -17,7 +17,7 @@ Constructs a new instance of a predefined message.
   DclSrParm *id*  Type(*String)
   DclSrParm *data*  Type (*String)
   DclSrParm *file*  Type (*String)
-  DclSrParm *type*  Type ([ASNA.Monarch.MessageTypes](amfMessageTypesEnumeration.html))**       </pre>
+  DclSrParm *type*  Type ([ASNA.Monarch.MessageTypes](messa-ge-types-enumeration.html))**       </pre>
 
 #### Parameters
 <dl>
@@ -61,7 +61,7 @@ Constructs a new instance of a predefined message.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -76,4 +76,4 @@ Constructs a new instance of a predefined message.
 <!-- end -->
 
 #### See Also
-[Message Class](amfMessageClass.html) <br /> [Message Class Members](amfMessageClassMembers.html) <br /> [ ASNA.Monarch.MessageTypes](amfMessageTypesEnumeration.html) <br /> [ASNA.Monarch](amfMonarchNamespace.html)
+[Message Class](message-class.html) <br /> [Message Class Members](message-class-members.html) <br /> [ ASNA.Monarch.MessageTypes](messa-ge-types-enumeration.html) <br /> [ASNA.Monarch](monarch-namespace.html)

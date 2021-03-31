@@ -36,14 +36,14 @@ The overloaded method constructs a new instance of a **Message** object for an i
             <th>Description</th>
           </tr>
           <tr>
-            <td>[Message ( *string, MessageTypes* )](amfMessageClassMessageConstructor1.html)
+            <td>[Message ( *string, MessageTypes* )](message-class-message-constructor1.html)
             </td>
             <td>Constructs a new instance of
           an immediate message supplying text and message
           type.</td>
           </tr>
           <tr>
-            <td>[Message ( *string, string, string, MessageTypes* )](amfMessageClassMessageConstructor2.html)
+            <td>[Message ( *string, string, string, MessageTypes* )](message-class-message-constructor2.html)
             </td>
             <td>Constructs a new instance of
           a predefined message supplying the message id,
@@ -61,7 +61,7 @@ The overloaded method constructs a new instance of a **Message** object for an i
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -76,4 +76,4 @@ The overloaded method constructs a new instance of a **Message** object for an i
 <!-- end -->
 
 #### See Also
-[Message Class](amfMessageClass.html)<br />[Message Class Members](amfMessageClassMembers.html)<br />[ ASNA.Monarch.MessageTypes](amfMessageTypesEnumeration.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[Message Class](message-class.html)<br />[Message Class Members](message-class-members.html)<br />[ ASNA.Monarch.MessageTypes](messa-ge-types-enumeration.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)

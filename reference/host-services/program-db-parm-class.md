@@ -14,13 +14,13 @@ keywords: SQL parameters
 
 The **Program.DBParm** (nested) class defines an object that represents a parameter to a SQL statement where the length can be determined by its type.
 
-For a list of all members of this type, see [ Program.DBParm Class Members](amfProgramDBParmClassMembers.html).
+For a list of all members of this type, see [ Program.DBParm Class Members](program-db-parm-class-members.html).
 
 #### Inheritance Hierarchy
 <pre> [
-        ASNA.Monarch](amfMonarchNamespace.html)
+        ASNA.Monarch](monarch-namespace.html)
         [
-        ASNA.Monarch.Program](amfProgramClass.html)
+        ASNA.Monarch.Program](program-class.html)
  **ASNA.Monarch.Program.DBParm** 
       </pre>
 
@@ -33,7 +33,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 #### Remarks
 DBParm is defined as a nested class of ASNA.Monarch.Program and can directly use names, type names, names of static members, and enumerators only from the enclosing class. To use names of other class members, you must use pointers, references, or object names.
 
-See the inherited classes [ DBStrParm](amfProgramDBStrParmClass.html) for string parameters and [ DBScaledParm](amfProgramDBScaledParmClass.html) for decimal parameters.
+See the inherited classes [ DBStrParm](program-db-str-parm-class.html) for string parameters and [ DBScaledParm](program-db-scaled-parm-class.html) for decimal parameters.
 <!-- start -->
 
 #### Requirements
@@ -44,7 +44,7 @@ See the inherited classes [ DBStrParm](amfProgramDBStrParmClass.html) for string
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -59,4 +59,4 @@ See the inherited classes [ DBStrParm](amfProgramDBStrParmClass.html) for string
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.DBParm Class Members](amfProgramDBParmClassMembers.html) <br /> [Program Class](amfProgramClass.html) <br /> [ Program.SqlQueryResults Field](amfProgramClassSqlQueryResultsField.html) <br /> [ Embedded SQL Overview](amfconSQLStatementExamples.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.DBParm Class Members](program-db-parm-class-members.html) <br /> [Program Class](program-class.html) <br /> [ Program.SqlQueryResults Field](program-class-sql-query-results-field.html) <br /> [ Embedded SQL Overview](amfconSQLStatementExamples.html) 

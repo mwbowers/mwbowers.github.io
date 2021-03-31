@@ -17,13 +17,13 @@ keywords: SQL, prepared statement, SQLCA
 
 ---
 
-<code>[ SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html)</code> object representing the SQLCA to trap and report run-time errors for the <code> **SqlPreparedStatement** </code>.
+<code>[ SQL_CommunicationsArea](program-sql-communications-area-class.html)</code> object representing the SQLCA to trap and report run-time errors for the <code> **SqlPreparedStatement** </code>.
 
 #### Syntax
 <pre class="prettyprint"> **BegProp SQLCA Access(*Public) Type(Program.SQL_CommunicationsArea)**       </pre>
 
 #### Field Value
-<code>[ Program.SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html)</code> object representing the SQLCA to trap and report run-time errors for the **SqlPreparedStatement** .
+<code>[ Program.SQL_CommunicationsArea](program-sql-communications-area-class.html)</code> object representing the SQLCA to trap and report run-time errors for the **SqlPreparedStatement** .
 
 #### Requirements
 <table class="dttable" cellspacing="0" cellpadding="4" width="60%">
@@ -33,7 +33,7 @@ keywords: SQL, prepared statement, SQLCA
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -48,4 +48,4 @@ keywords: SQL, prepared statement, SQLCA
 <!-- end -->
 
 #### See Also
-[ Program.SqlPreparedStatement Class](amfProgramSqlPreparedStatementClass.html) <br /> [ Program.SqlPreparedStatement Class Members](amfProgramSqlPreparedStatementClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.SqlPreparedStatement Class](program-sql-prepared-statement-class.html) <br /> [ Program.SqlPreparedStatement Class Members](program-sql-prepared-statement-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

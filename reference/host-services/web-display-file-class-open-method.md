@@ -29,7 +29,7 @@ Opens the '.aspx.' web form program and dataSet for the **WebDisplayFile** .
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -44,4 +44,4 @@ Opens the '.aspx.' web form program and dataSet for the **WebDisplayFile** .
 <!-- end -->
 
 #### See Also
-[ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ WebDisplayFile Class Members](amfWebDisplayFileClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ WebDisplayFile Class](web-display-file-class.html) <br /> [ WebDisplayFile Class Members](web-display-file-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html)

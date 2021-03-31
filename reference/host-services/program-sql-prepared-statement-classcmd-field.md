@@ -31,7 +31,7 @@ keywords: how to, determine SQL command for prepared statement
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -46,4 +46,4 @@ keywords: how to, determine SQL command for prepared statement
 <!-- end -->
 
 #### See Also
-[ Program.SqlPreparedStatement Class](amfProgramSqlPreparedStatementClass.html) <br /> [ Program.SqlPreparedStatement Class Members](amfProgramSqlPreparedStatementClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.SqlPreparedStatement Class](program-sql-prepared-statement-class.html) <br /> [ Program.SqlPreparedStatement Class Members](program-sql-prepared-statement-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

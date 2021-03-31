@@ -25,7 +25,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              ActivationGroupAttribute](amfActivationGroupAttributeClass.html)
+              ActivationGroupAttribute](activation-group-attribute-class.html)
             </td>
             <td>The 
  **ActivationGroupAttribute**  class
@@ -34,7 +34,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              CallerActivationGroupAttribute](amfCallerActivationGroupAttributeClass.html)
+              CallerActivationGroupAttribute](caller-activation-group-attribute-class.html)
             </td>
             <td>The 
  **CallerActivationGroupAttribute**  class
@@ -45,7 +45,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              CLProgram](amfCLProgramClass.html)
+              CLProgram](clprogram-class.html)
             </td>
             <td>The 
  **CLProgram**  class provides support for:
@@ -66,7 +66,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              LocalDataCollection](amfLocalDataCollectionClass.html)
+              LocalDataCollection](local-data-collection-class.html)
             </td>
             <td>
               The 
@@ -76,7 +76,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Message](amfMessageClass.html)
+              Message](message-class.html)
             </td>
             <td>The 
  **Message**  class is a container class
@@ -84,7 +84,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              MessageFormatter](amfMessageFormatterClass.html)
+              MessageFormatter](message-formatter-class.html)
             </td>
             <td>The 
  **MessageFormatter**  class is used to
@@ -92,7 +92,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              MessageQueue](amfMessageQueueClass.html)
+              MessageQueue](message-queue-class.html)
             </td>
             <td>The 
  **MessageQueue**  class provides support
@@ -100,7 +100,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              NewActivationGroupAttribute](amfNewActivationGroupAttributeClass.html)
+              NewActivationGroupAttribute](new-activation-group-attribute-class.html)
             </td>
             <td>The 
  **NewActivationGroupAttribute**  class
@@ -111,7 +111,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program](amfProgramClass.html)
+              Program](program-class.html)
             </td>
             <td>The 
  **Program**  class provides
@@ -122,7 +122,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.DBParm](amfProgramDBParmClass.html)
+              Program.DBParm](program-db-parm-class.html)
             </td>
             <td>The 
  **Program.DBParm**  (nested)
@@ -132,7 +132,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.DBScaledParm](amfProgramDBScaledParmClass.html)
+              Program.DBScaledParm](program-db-scaled-parm-class.html)
             </td>
             <td>The 
  **Program.DBScaledParm**  is a derived
@@ -142,7 +142,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.DBStrParm](amfProgramDBStrParmClass.html)
+              Program.DBStrParm](program-db-str-parm-class.html)
             </td>
             <td>The 
  **Program.DBStrParm**  is a derived
@@ -152,7 +152,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html)
+              Program.SQL_CommunicationsArea](program-sql-communications-area-class.html)
             </td>
             <td>The 
  **Program.SQL_CommunicationsArea**  is
@@ -162,7 +162,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.SqlCursor](amfProgramSqlCursorClass.html)
+              Program.SqlCursor](program-sql-cursor-class.html)
             </td>
             <td>The 
  **Program.SqlCursor**  is a nested
@@ -172,7 +172,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.SqlPreparedStatement](amfProgramSqlPreparedStatementClass.html)
+              Program.SqlPreparedStatement](program-sql-prepared-statement-class.html)
             </td>
             <td>The 
  **Program.SqlPreparedStatement**  is a
@@ -181,7 +181,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              WebDevice](amfWebDeviceClass.html)
+              WebDevice](web-device-class.html)
             </td>
             <td>The 
  **WebDevice**  class provides for device
@@ -191,7 +191,7 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              WebDisplayFile](amfWebDisplayFileClass.html)
+              WebDisplayFile](web-display-file-class.html)
             </td>
             <td>The 
  **WebDisplayFile**  class provides for form
@@ -200,7 +200,7 @@ This document contains a listing of the classes and enumerations contained with 
  **Job**  objects.</td>
           </tr>
           <tr>
-            <td>[WebJob](amfWebJobClass.html)
+            <td>[WebJob](web-job-class.html)
             </td>
             <td>The 
  **WebJob**  class provides an environment
@@ -223,20 +223,20 @@ This document contains a listing of the classes and enumerations contained with 
 
           <tr>
             <td>[
-              MessageTypes](amfMessageTypesEnumeration.html)
+              MessageTypes](messa-ge-types-enumeration.html)
             </td>
             <td>Defines constant values indicating the type of program
             message.</td>
           </tr>
           <tr>
             <td>[
-              OverrideOptions](amfOverrideOptionsEnumeration.html)
+              OverrideOptions](override-options-enumeration.html)
             </td>
             <td>Defines constant option values for the type of override.</td>
           </tr>
           <tr>
             <td>[
-              OverrideScope](amfOverrideScopeEnumeration.html)
+              OverrideScope](overrideScope-enumeration.html)
             </td>
             <td>Defines constant
             values indicating what the override applies to &#8211; the
@@ -244,16 +244,16 @@ This document contains a listing of the classes and enumerations contained with 
           </tr>
           <tr>
             <td>[
-              Program.SqlCursor.FetchOrientations](amfProgramSqlCursorFetchOrientationsEnumeration.html)
+              Program.SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html)
             </td>
             <td>Defines constant values for the fetch
             orientation of 
             [
-            Program.SqlCursor](amfProgramSqlCursorClass.html).</td>
+            Program.SqlCursor](program-sql-cursor-class.html).</td>
           </tr>
           <tr>
             <td>[
-              Program.SqlCursor.ScrollTypes](amfProgramSqlCursorScrollTypesEnumeration.html)
+              Program.SqlCursor.ScrollTypes](program-sql-cursor-scroll-types-enumeration.html)
             </td>
             <td>Defines constant values for the type of
             scrolling allowed for 
@@ -262,4 +262,4 @@ This document contains a listing of the classes and enumerations contained with 
 </table>
 
 #### See Also
-[Class Library](amfClassLibraryMain.html) 
+[Class Library](class-library-main.html) 

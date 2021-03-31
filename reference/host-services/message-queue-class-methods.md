@@ -10,7 +10,7 @@ keywords: methods [ASNA.Monarch], MessageQueue class
 
 ---
 
-[MessageQueue Class Overview](amfMessageQueueClass.html) 
+[MessageQueue Class Overview](message-queue-class.html) 
 
 #### Public Methods
 <table class="mytable" cellspacing="0" cellpadding="4" width="60%">
@@ -24,7 +24,7 @@ keywords: methods [ASNA.Monarch], MessageQueue class
           </tr>
           <tr>
             <td><img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
-              [Queue](amfMessageQueueClassQueueMethod.html)
+              [Queue](message-queue-class-queue-method.html)
             </td>
             <td>Places an 
  **ASNA.Monarch.Message**  object in the
@@ -33,4 +33,4 @@ keywords: methods [ASNA.Monarch], MessageQueue class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [MessageQueue Class](amfMessageQueueClass.html) <br />[Message Class](amfMessageClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [MessageQueue Class](message-queue-class.html) <br />[Message Class](message-class.html) 

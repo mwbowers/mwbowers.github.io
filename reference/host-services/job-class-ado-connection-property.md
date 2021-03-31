@@ -47,4 +47,4 @@ Gets the [ASNA.Monarch](http://msdn2.microsoft.com/en-us/library/system.data.com
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br clear="none" /> [Job Class Members](amfJobMembers.html) <br clear="none" /> [ Job.PrinterDB Property](amfJobClassPrinterDBProperty.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br clear="none" /> [Job Class Members](job-members.html) <br clear="none" /> [ Job.PrinterDB Property](job-class-printer-db-property.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

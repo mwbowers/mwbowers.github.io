@@ -39,7 +39,7 @@ Set a value indicating the 'on'/'off' status of a specific job attribute switch.
 </dl>
 
 #### Remarks
-RPG programs have access to these switches via the *INUx indicators. In order to support applications using these switches, the **Job** class provides a set of methods to access the 8 values. Additional methods to return these switches are [ GetSwitches](amfJobClassGetSwitchesMethod.html) and [ GetSwitch](amfJobClassGetSwitchMethod.html). The [ CLProgram](amfCLProgramClass.html) class also provides the method [ RTVJOBA_SWS](amfCLProgramClassRTVJOBA_SWSMethod.html) to facilitate the translation of the RTVJOBA CL command SWS attribute.
+RPG programs have access to these switches via the *INUx indicators. In order to support applications using these switches, the **Job** class provides a set of methods to access the 8 values. Additional methods to return these switches are [ GetSwitches](job-class-get-switches-method.html) and [ GetSwitch](job-class-get-switch-method.html). The [ CLProgram](clprogram-class.html) class also provides the method [ RTVJOBA_SWS](clprogram-class-rtv-joba-sws-method.html) to facilitate the translation of the RTVJOBA CL command SWS attribute.
 
 In addition, when the CL Command CHGJOB keyword SWS(nnnnnnnn) is encountered, the RPG Agent uses this method to set each switch on or off depending on the values in the SWS keyword. 
 <!-- start -->
@@ -52,7 +52,7 @@ In addition, when the CL Command CHGJOB keyword SWS(nnnnnnnn) is encountered, th
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -67,4 +67,4 @@ In addition, when the CL Command CHGJOB keyword SWS(nnnnnnnn) is encountered, th
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

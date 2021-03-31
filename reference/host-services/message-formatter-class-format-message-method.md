@@ -33,7 +33,7 @@ Returns a formatted message.
         </dt>
         <dd>An instance of an 
         [
-        ASNA.Monarch.Message](amfMessageClass.html) object being
+        ASNA.Monarch.Message](message-class.html) object being
         formatted.</dd>
 </dl> 
 
@@ -72,7 +72,7 @@ The following exceptions may be encountered during the execution of this method.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -87,4 +87,4 @@ The following exceptions may be encountered during the execution of this method.
 <!-- end -->
 
 #### See Also
-[ MessageFormatter Class](amfMessageFormatterClass.html) <br /> [ MessageFormatter Class Members](amfMessageFormatterMembers.html) <br /> [ ASNA.Monarch.Message Class](amfMessageClass.html) <br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ MessageFormatter Class](message-formatter-class.html) <br /> [ MessageFormatter Class Members](message-formatter-members.html) <br /> [ ASNA.Monarch.Message Class](message-class.html) <br />[ASNA.Monarch Namespace](monarch-namespace.html)

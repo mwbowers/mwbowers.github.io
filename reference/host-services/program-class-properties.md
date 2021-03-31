@@ -10,7 +10,7 @@ keywords: properties [ASNA.Monarch], Program class
 
 ---
 
-[Program Class Overview](amfProgramClass.html) 
+[Program Class Overview](program-class.html) 
 <!-- start public properties table -->	
 
 #### Protected Properties
@@ -25,16 +25,16 @@ keywords: properties [ASNA.Monarch], Program class
           </tr>
 <!-- end copy BUT put in extra div and end of table -->
           <tr valign="top">
-            <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="protected property" src="images/Protectedproperty.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
+            <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="protected property" src="images/protected-property.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              MonarchJob](amfProgramClassMonarchJobProperty.html)
+              MonarchJob](program-class-monarch-job-property.html)
             </td>
             <td>Gets the name of the 
             [
-            ASNA.Monarch.Job](amfJobClass.html) under which the Program
+            ASNA.Monarch.Job](job-class.html) under which the Program
             <strong />is running.</td>
           </tr>
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [Program Class](amfProgramClass.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [Program Class](program-class.html)

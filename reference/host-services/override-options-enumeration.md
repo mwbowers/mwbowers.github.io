@@ -28,7 +28,7 @@ keywords: WaitRcd enumeration member
 
 ---
 
-The **OverrideOptions** enumerated constant defines file override options within Monarch. Used by the [ CLProgram.OverrideFile](amfCLProgramClassOverrideFileMethods.html) and [ Job.OverrideFile](amfJobClassOverrideFileMethods.html) methods.
+The **OverrideOptions** enumerated constant defines file override options within Monarch. Used by the [ CLProgram.OverrideFile](clprogram-class-override-file-methods.html) and [ Job.OverrideFile](job-class-override-file-methods.html) methods.
 
 #### Syntax
 <pre class="prettyprint"> **BegEnum OverrideOptions Access(*Public)** </pre>
@@ -197,7 +197,7 @@ The **OverrideOptions** enumerated constants defines file override options withi
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -214,6 +214,6 @@ The **OverrideOptions** enumerated constants defines file override options withi
 #### See Also
 <dl><dd>
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

@@ -10,7 +10,7 @@ keywords: methods [ASNA.Monarch], Program class
 
 ---
 
-[Program Class Overview](amfProgramClass.html) 
+[Program Class Overview](program-class.html) 
 <!-- start public properties table -->	
 
 #### Protected Methods
@@ -42,7 +42,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/promethod.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              ExecCommand](amfProgramClassExecCommandMethod.html)
+              ExecCommand](program-class-exec-command-method.html)
             </td>
             <td>Executes the Program
             command specified in 
@@ -56,7 +56,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/promethod.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              RemoveMessage](amfProgramClassRemoveMessageMethods.html)
+              RemoveMessage](program-class-remove-message-methods.html)
             </td>
             <td>Overloaded. Remove messages
             from the program message queue of the caller's
@@ -65,7 +65,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/promethod.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SendExternalMessage](amfProgramClassSendExternalMessageMethod.html)
+              SendExternalMessage](program-class-end-external-message-method.html)
             </td>
             <td>Append a message to
             the external message queue.</td>
@@ -73,7 +73,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/promethod.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SendProgramMessage](amfProgramClassSendProgramMessageMethods.html)
+              SendProgramMessage](program-class-end-program-message-methods.html)
             </td>
             <td>Overloaded.
             Appends different message types to the
@@ -102,7 +102,7 @@ keywords: methods [ASNA.Monarch], Program class
 <!-- end copy BUT put in extra div and end of table -->
           <tr valign="top">
             <td><img id="Img3" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
-              [Dispose](amfProgramClassDisposeMethod.html)
+              [Dispose](program-class-dispose-method.html)
             </td>
             <td>Releases managed and
             unmanaged or just unmanaged resources used by the
@@ -111,7 +111,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-              ExecuteSQL_Query](amfProgramClassExecuteSQL_QueryMethods.html)
+              ExecuteSQL_Query](program-class-execute-sql-query-methods.html)
             </td>
             <td>Overloaded methods to
             execute a SQL query command.</td>
@@ -119,7 +119,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-              ExecuteSQL_QueryVerbatim](amfProgramClassExecuteSQL_QueryVerbatimMethods.html)
+              ExecuteSQL_QueryVerbatim](program-class-execute-sql-query-verbatim-methods.html)
             </td>
             <td>Overloaded methods to
             execute a SQL query command with the string
@@ -129,7 +129,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-              ExecuteSQL_Statement](amfProgramClassExecuteSQL_StatementMethods.html)
+              ExecuteSQL_Statement](program-class-execute-sql-statement-methods.html)
             </td>
             <td>Overloaded methods to
             execute a SQL command statement.</td>
@@ -137,7 +137,7 @@ keywords: methods [ASNA.Monarch], Program class
           <tr>
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-              ExecuteSQL_StatementVerbatim](amfProgramClassExecuteSQL_StatementVerbatimMethods.html)
+              ExecuteSQL_StatementVerbatim](program-class-execute-sql-statement-verbatim-methods.html)
             </td>
             <td>Overloaded methods to
             execute a SQL command statement with the string
@@ -147,4 +147,4 @@ keywords: methods [ASNA.Monarch], Program class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [Program Class](amfProgramClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [Program Class](program-class.html) 

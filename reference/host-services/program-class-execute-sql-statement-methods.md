@@ -31,7 +31,7 @@ Overloaded method to execute a SQL command statement.
           <tr>
             <td>[
             ExecuteSQL_Statement (
- *string)* ](amfProgramClassExecuteSQL_StatementMethod3.html)
+ *string)* ](program-class-execute-sql-statement-method3.html)
               <em />
             </td>
             <td>Executes a SQL command
@@ -40,7 +40,7 @@ Overloaded method to execute a SQL command statement.
           <tr>
             <td>[
             ExecuteSQL_Statement (
- *string, DBParm[]* )](amfProgramClassExecuteSQL_StatementMethod1.html)
+ *string, DBParm[]* )](program-class-execute-sql-statement-method1.html)
             </td>
             <td>Executes a SQL command
           statement specifying the SQL statement and
@@ -49,7 +49,7 @@ Overloaded method to execute a SQL command statement.
           <tr>
             <td>[
             ExecuteSQL_Statement (
- *DbConnection, string)* ](amfProgramClassExecuteSQL_StatementMethod4.html)
+ *DbConnection, string)* ](program-class-execute-sql-statement-method4.html)
               <em />
             </td>
             <td>Executes a SQL command
@@ -59,7 +59,7 @@ Overloaded method to execute a SQL command statement.
           <tr>
             <td>[
             ExecuteSQL_Statement (
- *DbConnection, string, DBParm[]* )](amfProgramClassExecuteSQL_StatementMethod2.html)
+ *DbConnection, string, DBParm[]* )](program-class-execute-sql-statement-method2.html)
             </td>
             <td>Executes a SQL command
           statement specifying the database connection,
@@ -77,7 +77,7 @@ Overloaded method to execute a SQL command statement.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -92,4 +92,4 @@ Overloaded method to execute a SQL command statement.
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html)<br />[Program Class Members](amfProgramClassMembers.html)<br />[Program.DBParm Class](amfProgramDBParmClass.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)<br />[Embedded SQL Overview](amfconSQLStatementExamples.html)
+[Program Class](program-class.html)<br />[Program Class Members](program-class-members.html)<br />[Program.DBParm Class](program-db-parm-class.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)<br />[Embedded SQL Overview](amfconSQLStatementExamples.html)

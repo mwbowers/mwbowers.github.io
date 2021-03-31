@@ -50,7 +50,7 @@ keywords: ASNA.Monarch.Program.SqlCursor.FetchOrientations.Relative
 
 ---
 
-The **FetchOrientations** enumerated constant defines values for the fetch orientation of [ SqlCursor](amfProgramSqlCursorClass.html).
+The **FetchOrientations** enumerated constant defines values for the fetch orientation of [ SqlCursor](program-sql-cursor-class.html).
 
 #### Syntax
 <pre class="syntax"> **BegEnum FetchOrientations Access(*Public)** </pre>
@@ -143,7 +143,7 @@ The **FetchOrientations** enumerated constant defines values for the fetch orien
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -159,6 +159,6 @@ The **FetchOrientations** enumerated constant defines values for the fetch orien
 
 #### See Also
 <dl><dd>[
-    Program.SqlCursor Class](amfProgramSqlCursorClass.html)</dd><dd>[ASNA.Monarch
-    Namespace](amfMonarchNamespace.html)</dd></dl> 
+    Program.SqlCursor Class](program-sql-cursor-class.html)</dd><dd>[ASNA.Monarch
+    Namespace](monarch-namespace.html)</dd></dl> 
 

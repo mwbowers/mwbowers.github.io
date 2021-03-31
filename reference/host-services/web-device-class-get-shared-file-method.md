@@ -14,10 +14,10 @@ keywords: how to, getting shared file for device
 
 ---
 
-Returns an instance of the [ WebDisplayFile](amfWebDisplayFileClass.html) object for the file name specified.
+Returns an instance of the [ WebDisplayFile](web-display-file-class.html) object for the file name specified.
 
 #### Syntax
-<pre class="syntax"><code class="avr"> **BegFunc GetSharedFile Access(*Public) Type([WebDisplayFile](amfWebDisplayFileClass.html))
+<pre class="syntax"><code class="avr"> **BegFunc GetSharedFile Access(*Public) Type([WebDisplayFile](web-display-file-class.html))
    DclSrParm *shareFileName*  Type(*String)**       </code></pre>  
 
 #### Parameters
@@ -42,7 +42,7 @@ An instance of the **WebDisplayFile** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -55,4 +55,4 @@ An instance of the **WebDisplayFile** object.
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Class Members](web-device-class-members.html) <br /> [ WebDisplayFile Class](web-display-file-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

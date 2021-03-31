@@ -11,7 +11,7 @@ keywords: SQL_CommunicationsArea class, members
 
 ---
 
-[ Program.SQL_CommunicationsArea Class Overview](amfProgramSQL_CommunicationsAreaClass.html) 
+[ Program.SQL_CommunicationsArea Class Overview](program-sql-communications-area-class.html) 
 <!--mine -->
 
 #### Constructor
@@ -27,7 +27,7 @@ keywords: SQL_CommunicationsArea class, members
           <tr valign="top">
             <td><img id="IMG1" style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/constructor.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClassConstructors.html)</td>
+            SQL_CommunicationsArea](program-sql-communications-area-class-constructors.html)</td>
             <td>Overloaded. Creates a
             new instance of a 
  **SQL_CommunicationsArea**  object.</td>
@@ -46,7 +46,7 @@ keywords: SQL_CommunicationsArea class, members
           </tr>          <tr valign="top">
             <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SQL_Exception](amfProgramSQL_CommunicationsAreaClassSQL_ExceptionField.html)
+              SQL_Exception](program-sql-communications-area-class-sql-exception-field.html)
             </td>
             <td>[
               SQLCOD](http://msdn2.microsoft.com/en-us/library/system.data.sqlclient.sqlexception_members(VS.71).aspx">
@@ -63,7 +63,7 @@ keywords: SQL_CommunicationsArea class, members
           <tr valign="top">
             <td><img id="Img5" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SqlCommandText](amfProgramSQL_CommunicationsAreaClassSqlCommandTextField.html)
+              SqlCommandText](program-sql-communications-area-class-sql-command-text-field.html)
             </td>
             <td>Read-only actual SQL
             command text executed.</td>
@@ -71,7 +71,7 @@ keywords: SQL_CommunicationsArea class, members
           <tr valign="top">
             <td><img id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SQLSTT](amfProgramSQL_CommunicationsAreaClassSQLSTTField.html)
+              SQLSTT](program-sql-communications-area-class-sqlsst-field.html)
             </td>
             <td>An additional common
             return code of the last SQL statement
@@ -80,4 +80,4 @@ keywords: SQL_CommunicationsArea class, members
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.SQL_CommunicationsArea Class](amfProgramDBParmClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.SQL_CommunicationsArea Class](program-db-parm-class.html) 

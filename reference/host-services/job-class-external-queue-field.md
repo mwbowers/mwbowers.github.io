@@ -17,7 +17,7 @@ A reference to an instance of an **ASNA.Monarch.MessageQueue** object for the ex
 <!-- start -->
 
 #### Syntax
-<pre class="prettyprint"> **BegProp ExternalQueue Access(*Public) Type([ASNA.Monarch.MessageQueue](amfMessageQueueClass.html))**       </pre>
+<pre class="prettyprint"> **BegProp ExternalQueue Access(*Public) Type([ASNA.Monarch.MessageQueue](message-queue-class.html))**       </pre>
 
 <!-- start -->
 
@@ -33,7 +33,7 @@ A reference to an instance of an **ASNA.Monarch.MessageQueue** object for the ex
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -48,4 +48,4 @@ A reference to an instance of an **ASNA.Monarch.MessageQueue** object for the ex
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br clear="none" /> [Job Class Members](amfJobMembers.html) <br clear="none" /> [ MessageQueue Class](amfMessageQueueClass.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br clear="none" /> [Job Class Members](job-members.html) <br clear="none" /> [ MessageQueue Class](message-queue-class.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

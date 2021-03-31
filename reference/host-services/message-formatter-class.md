@@ -16,10 +16,10 @@ keywords: LIBRARY constant
 
 The **MessageFormatter** is a class used to format messages for Message File data.
 
-For a list of all members of this type, see [ MessageFormatter Members](amfMessageFormatterMembers.html).
+For a list of all members of this type, see [ MessageFormatter Members](message-formatter-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html) 
+<pre>[ASNA.Monarch](monarch-namespace.html) 
  **ASNA.Monarch.MessageFormatter**       </pre>
 
 #### Syntax
@@ -40,7 +40,7 @@ There are four constants defined in this class that can be referred to as DBCONN
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -55,4 +55,4 @@ There are four constants defined in this class that can be referred to as DBCONN
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ MessageFormatter Members](amfMessageFormatterMembers.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ MessageFormatter Members](message-formatter-members.html) 

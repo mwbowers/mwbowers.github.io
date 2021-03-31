@@ -12,7 +12,7 @@ keywords: how to, set web job device
 
 ---
 
-This field contains the name of the [ ASNA.Monarch.WebDevice](amfWebDeviceClass.html) used by the WebJob.
+This field contains the name of the [ ASNA.Monarch.WebDevice](web-device-class.html) used by the WebJob.
 
 #### Syntax
 <pre class="prettyprint"><code class="avr"> **BegProp Device Access(*Public) Type(ASNA.Monarch.WebDevice)**  </code></pre>
@@ -29,7 +29,7 @@ The name of the **ASNA.Monarch.WebDevice** used by the **WebJob** .
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -44,4 +44,4 @@ The name of the **ASNA.Monarch.WebDevice** used by the **WebJob** .
 <!-- end -->
 
 #### See Also
-[WebJob Class](amfWebJobClass.html) <br /> [WebJob Class Members](amfWebJobClassMembers.html) <br /> [WebDevice Class](amfWebDeviceClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebJob Class](web-job-class.html) <br /> [WebJob Class Members](web-job-class-members.html) <br /> [WebDevice Class](web-device-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

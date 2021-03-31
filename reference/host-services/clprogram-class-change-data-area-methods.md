@@ -31,7 +31,7 @@ Changes the path to the data area associated with the CLProgram object.
           <tr>
           <td>  <code>[
               ChangeDataArea (
- *string, string* )](amfCLProgramClassChangeDataAreaMethod2.html)</code>
+ *string, string* )](clprogram-class-change-data-area-method2.html)</code>
             </td>
             <td>Changes the 
  *dataArea*  substitution variable values to
@@ -41,7 +41,7 @@ Changes the path to the data area associated with the CLProgram object.
           <tr>
             <td> <code>[
               ChangeDataArea (
- *string, integer, integer, string* )](amfCLProgramClassChangeDataAreaMethod1.html)</code>
+ *string, integer, integer, string* )](clprogram-class-change-data-area-method1.html)</code>
             </td>
             <td>Changes the 
  *dataArea*  substitution variable values, as
@@ -55,7 +55,7 @@ Changes the path to the data area associated with the CLProgram object.
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -65,12 +65,12 @@ Changes the path to the data area associated with the CLProgram object.
 #### See Also
 <dl><dt>
         [CLProgram
-        Class](amfCLProgramClass.html)
+        Class](clprogram-class.html)
         <br clear="none" />
         [
-        CLProgram Class Members](amfCLProgramClassMembers.html)
+        CLProgram Class Members](clprogram-class-members.html)
         <br clear="none" />
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)
+        Namespace](monarch-namespace.html)
       </dt></dl>
 

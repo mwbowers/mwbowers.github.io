@@ -13,10 +13,10 @@ keywords: how to, get active display file
 
 ---
 
-Gets an instance of the [ WebDisplayFile](amfWebDisplayFileClass.html) object for the **WebDevice** .
+Gets an instance of the [ WebDisplayFile](web-display-file-class.html) object for the **WebDevice** .
 
 #### Syntax
-<pre class="prettyprint"> **BegProp ActiveDisplayFile Access(*Public) Type([WebDisplayFile](amfWebDisplayFileClass.html))
+<pre class="prettyprint"> **BegProp ActiveDisplayFile Access(*Public) Type([WebDisplayFile](web-display-file-class.html))
     BegGet;**       </pre>  
 
 #### Property Values
@@ -31,7 +31,7 @@ An instance of the **WebDisplayFile** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -44,4 +44,4 @@ An instance of the **WebDisplayFile** object.
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Class Members](web-device-class-members.html) <br /> [ WebDisplayFile Class](web-display-file-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

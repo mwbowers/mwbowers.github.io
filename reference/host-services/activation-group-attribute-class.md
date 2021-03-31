@@ -16,10 +16,10 @@ keywords: NEW constant
 
 The **ActivationGroupAttribute** is provided to support the job activation manager to set an activation group attribute.
 
-For a list of all members of this class, see [ ActivationGroupAttribute Class Members](amfActivationGroupAttributeClassMembers.html).
+For a list of all members of this class, see [ ActivationGroupAttribute Class Members](activation-group-attribute-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.ActivationGroupAttribute** </pre>
 
 #### Syntax
@@ -34,26 +34,26 @@ The **Job** maintains an ***activation manager*** responsible for handling the a
 - *Name* - A user provided name identifying the
         activation group to use for the program. The 
         [
-        GroupName](amfActivationGroupAttributeClassGroupNameProperty.html) property will contain this activation
+        GroupName](activation-group-attribute-class-group-name-property.html) property will contain this activation
         group name.
 - '*Default' - A predefined activation
         group called "*Default". Programs not marked
         with an ActivationGroup attribute are allocated in this
         group. The 
         [
-        IsDefault](amfActivationGroupAttributeClassIsDefaultProperty.html) property will be 
+        IsDefault](activation-group-attribute-classIs-default-property.html) property will be 
  **True** .
 - '*New' - This special value indicates
         that the program is to be run in a new activation group.
         Monarch will create a new unique name for the group. The 
         [
-        IsNew](amfActivationGroupAttributeClassIsNewProperty.html) property will be 
+        IsNew](activation-group-attribute-classIs-new-property.html) property will be 
  **True** .
 - '*Caller' - This special value states that
         the program will be allocated in the same activation group
         as the program calling this program. The 
         [
-        IsCaller](amfActivationGroupAttributeClassIsCallerProperty.html) property will be 
+        IsCaller](activation-group-attribute-classIs-caller-property.html) property will be 
  **True** .
 
 Instead of using hard-coded string literals for the special values, the **ActivationGroupAttribute** class provides the following three constants:
@@ -73,7 +73,7 @@ An example using each of these is shown below:
  Attributes (ActivationGroup( ActivationGroupAttribute.Caller ))  
 </pre>
 
-Monarch also defines a couple of additional classes for use in the cases of *New and *Caller, these are: [ NewActivationGroupAttribute](amfNewActivationGroupAttributeClass.html) and [ CallerActivationGroupAttribute](amfCallerActivationGroupAttributeClass.html) respectively. 
+Monarch also defines a couple of additional classes for use in the cases of *New and *Caller, these are: [ NewActivationGroupAttribute](new-activation-group-attribute-class.html) and [ CallerActivationGroupAttribute](caller-activation-group-attribute-class.html) respectively. 
 
 **Note:** By convention, attribute names end up with the word "Attribute", as in ActivationGroup **Attribute** or CallerActivationGroup **Attribute** . When the attribute class is being referenced in the Attributes keyword, the **Attribute** suffix can be omitted from the name of the attribute. Therefore, the following pairs are equivalent.
 <pre class="example"> BegClass Custcalc Attributes (ActivationGroup( "myGroupName" ))
@@ -89,7 +89,7 @@ See [ Monarch Job and Program Concepts](amfconMonarchJobandProgramClasses.html) 
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL
 
@@ -99,13 +99,13 @@ See [ Monarch Job and Program Concepts](amfconMonarchJobandProgramClasses.html) 
 #### See Also
 <dl><dt>
         [ASNA.Monarch
-      Namespace](amfMonarchNamespace.html)</dt>
+      Namespace](monarch-namespace.html)</dt>
         <dt>
         [
-      ActivationGroupAttribute Class Members](amfActivationGroupAttributeClassMembers.html) </dt>
+      ActivationGroupAttribute Class Members](activation-group-attribute-class-members.html) </dt>
 		  <dt>[
       Monarch Job and Program Concepts](amfconMonarchJobandProgramClasses.html)</dt>
      <dt>[
-      NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html)<br clear="none" />[
-      CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html)</dt></dl>
+      NewActivationGroupAttribute Class](new-activation-group-attribute-class.html)<br clear="none" />[
+      CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html)</dt></dl>
 

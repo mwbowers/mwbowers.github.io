@@ -44,7 +44,7 @@ String. Concatenated *prefix* , "variable", *suffix* with a blank between each p
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -52,4 +52,4 @@ String. Concatenated *prefix* , "variable", *suffix* with a blank between each p
 <!-- end -->
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -31,7 +31,7 @@ A collection representing the query results (string and object) allowing values 
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -46,4 +46,4 @@ A collection representing the query results (string and object) allowing values 
 <!-- end -->
 
 #### See Also
-[ Program.SqlCursor Class](amfProgramSqlCursorClass.html) <br /> [ Program.SqlCursor Class Members](amfProgramSqlCursorClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.SqlCursor Class](program-sql-cursor-class.html) <br /> [ Program.SqlCursor Class Members](program-sql-cursor-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

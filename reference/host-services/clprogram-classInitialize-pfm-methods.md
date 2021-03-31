@@ -33,7 +33,7 @@ Initializes records in a member of a physical file. As many records are added as
             <td>              <code>[
               InitializePFM (
  *string, string, InitializePFMOptions,
-              integer* )](amfCLProgramClassInitializePFMMethod1.html)</code>
+              integer* )](clprogram-classInitialize-pfm-method1.html)</code>
             </td>
             <td>Initializes records
             in the 
@@ -46,7 +46,7 @@ Initializes records in a member of a physical file. As many records are added as
           <tr>
             <td>              <code>[
               InitializePFM (
- *string, string, integer* )](amfCLProgramClassInitializePFMMethod2.html)</code>
+ *string, string, integer* )](clprogram-classInitialize-pfm-method2.html)</code>
             </td>
             <td>Initializes records
             in the 
@@ -60,7 +60,7 @@ Initializes records in a member of a physical file. As many records are added as
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -68,4 +68,4 @@ Initializes records in a member of a physical file. As many records are added as
 <!-- end -->
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

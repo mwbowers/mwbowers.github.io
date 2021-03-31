@@ -10,7 +10,7 @@ keywords: members [ASNA.Monarch], WebDevice class
 
 ---
 
-[WebDevice Class Overview](amfWebDeviceClass.html) 
+[WebDevice Class Overview](web-device-class.html) 
 
 #### Constructor
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,13 +25,13 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr valign="top">
             <td>              <img  id="IMG1" height="16" alt="public property" src="images/constructor.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              WebDevice](amfWebDeviceClassWebDeviceConstructors.html)
+              WebDevice](web-device-class-web-device-constructors.html)
             </td>
             <td>Creates a new instance of a
 
  **WebDevice**  object for 
             [
-            WebJob](amfWebJobClass.html).</td>
+            WebJob](web-job-class.html).</td>
           </tr>
 </table>
 
@@ -50,11 +50,11 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img alt="public property" src="images/property.bmp" />
               [
-              ActiveDisplayFile](amfWebDeviceClassActiveDisplayFileProperty.html)
+              ActiveDisplayFile](web-device-class-active-display-file-property.html)
             </td>
             <td>Gets an instance of the 
             [
-            WebDisplayFile](amfWebDisplayFileClass.html) object for the 
+            WebDisplayFile](web-display-file-class.html) object for the 
  **WebDevice** .</td>
           </tr>
 </table>
@@ -73,7 +73,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img id="IMG2" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Attach](amfWebDeviceClassAttachMethods.html)
+              [Attach](web-device-classAttach-methods.html)
             </td>
             <td>Overloaded. Attaches a
 
@@ -83,7 +83,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img id="Img4" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Detach](amfWebDeviceClassDetachMethods.html)
+              [Detach](web-device-classDetach-methods.html)
             </td>
             <td>Overloaded. Detaches a
             shared file or 
@@ -93,7 +93,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img id="Img5" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Dispose](amfWebDeviceClassDisposeMethod.html)
+              [Dispose](web-device-class-dispose-method.html)
             </td>
             <td>Releases the resources of
             the 
@@ -102,7 +102,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img id="Img8" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            GetRecordIndex](amfWebDeviceClassGetRecordIndexMethod.html)</td>
+            GetRecordIndex](web-device-class-get-record-index-method.html)</td>
             <td>Gets an integer
             containing the index for the record
             format specified.</td>
@@ -110,7 +110,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img id="Img6" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            GetRecordIndicators](amfWebDeviceClassGetRecordIndicatorsMethod.html)</td>
+            GetRecordIndicators](web-device-class-get-record-indicators-method.html)</td>
             <td>Gets an array
             of boolean values representing the evaluation (true or
             false) for each of the indicators of the record
@@ -119,7 +119,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img id="Img7" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              GetSharedFile](amfWebDeviceClassGetSharedFileMethod.html)
+              GetSharedFile](web-device-class-get-shared-file-method.html)
             </td>
             <td>Returns an instance of the 
  **WebDisplayFile**  object for the file name
@@ -128,7 +128,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img9" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              GetThreadDevice](amfWebDeviceClassGetThreadDeviceMethod.html)
+              GetThreadDevice](web-device-class-get-thread-device-method.html)
             </td>
             <td
 
@@ -137,7 +137,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="Img10" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Read](amfWebDeviceClassReadMethod2.html)
+              [Read](web-device-class-read-method2.html)
             </td>
             <td>Reads the display file for
             the 
@@ -146,7 +146,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img11" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            SetRecordIndex](amfWebDeviceClassSetRecordIndexMethod.html)</td>
+            SetRecordIndex](web-device-class-set-record-index-method.html)</td>
             <td
 
 >Sets the
@@ -156,7 +156,7 @@ keywords: members [ASNA.Monarch], WebDevice class
             <td>
               <img  id="Img12" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            SetRecordIndicators](amfWebDeviceClassSetRecordIndicatorsMethod.html)</td>
+            SetRecordIndicators](web-device-class-set-record-indicators-method.html)</td>
             <td>Sets an
             array of boolean values representing the evaluation
             (true or false) for each of the indicators for the
@@ -165,7 +165,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img13" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SetRecordState](amfWebDeviceClassSetRecordStateMethod.html)
+              SetRecordState](web-device-class-set-record-state-method.html)
             </td>
             <td>Sets the index and an
             array of boolean values representing the evaluation
@@ -175,7 +175,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td style="height: 28px">              <img  id="Img14" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SignalDataReadyForProgram](amfWebDeviceClassSignalDataReadyForProgramMethod.html)
+              SignalDataReadyForProgram](web-device-class-signal-dat-a-ready-for-program-method.html)
             </td>
             <td style="height: 28px">Signals the 
  **WebDevice**  object thread the device is ready for
@@ -184,7 +184,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img15" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SignalDataReadyForUser](amfWebDeviceClassSignalDataReadyForUserMethod.html)
+              SignalDataReadyForUser](web-device-class-signal-dat-a-ready-for-user-method.html)
             </td>
             <td>Signals the 
  **WebDevice**  object thread the device is ready for
@@ -193,7 +193,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img16" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              WaitForDataForProgram](amfWebDeviceClassWaitForDataForProgramMethod.html)
+              WaitForDataForProgram](web-device-class-wait-for-data-for-program-method.html)
             </td>
             <td>Signals the 
  **WebDevice**  object thread the device is to wait for
@@ -202,7 +202,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img17" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              WaitForDataForUser](amfWebDeviceClassWaitForDataForUserMethod.html)
+              WaitForDataForUser](web-device-class-wait-for-data-for-user-method.html)
             </td>
             <td>Signals the 
  **WebDevice**  object thread the device is to wait for
@@ -224,7 +224,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="Img3" height="16" alt="field" src="images/field.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [AbEnd](amfWebDeviceClassAbEndField.html)
+              [AbEnd](web-device-class-abend-field.html)
             </td>
             <td>Boolean. 
  **True**  if the 
@@ -235,7 +235,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img3" height="16" alt="field" src="images/field.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              AbEndMessage](amfWebDeviceClassAbEndMessageField.html)
+              AbEndMessage](web-device-class-abend-message-field.html)
             </td>
             <td>String. The abnormal device
             termination message.</td>
@@ -243,7 +243,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img3" height="16" alt="field" src="images/field.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              AbEndStack](amfWebDeviceClassAbEndStackField.html)
+              AbEndStack](web-device-class-abend-stack-field.html)
             </td>
             <td>String. The stack from the
             terminating application.</td>
@@ -251,7 +251,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img3" height="16" alt="field" src="images/field.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              DeviceIsOpen](amfWebDeviceClassDeviceIsOpenField.html)
+              DeviceIsOpen](web-device-class-deviceIs-open-field.html)
             </td>
             <td>Boolean. The open or closed
             status of the 
@@ -262,7 +262,7 @@ keywords: members [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img3" height="16" alt="field" src="images/field.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              OutsidePages](amfWebDeviceClassOutsidePagesField.html)
+              OutsidePages](web-device-class-outside-pages-field.html)
             </td>
             <td> **System.Collections.Stack**  representing a simple
             last-in first-out non-generic collection of
@@ -271,4 +271,4 @@ keywords: members [ASNA.Monarch], WebDevice class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [WebDevice Class](amfWebDeviceClass.html) <br /> [ASNA.Monarch.WebJob Class](amfWebJobClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [WebDevice Class](web-device-class.html) <br /> [ASNA.Monarch.WebJob Class](web-job-class.html) 

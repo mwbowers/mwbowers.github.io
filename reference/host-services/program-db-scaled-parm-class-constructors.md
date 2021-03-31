@@ -29,7 +29,7 @@ This overloaded method constructs a new instance of a **DBScaledParm** object.
           </tr>
           <tr>
             <td>[
-            DBScaledParm ( *DbType, int, int* )](amfProgramDBScaledParmClassConstructor1.html)
+            DBScaledParm ( *DbType, int, int* )](program-db-scaled-parm-class-constructor1.html)
             </td>
             <td>Creates a new instance of a
           DBScaledParm object with the data type, length,
@@ -37,7 +37,7 @@ This overloaded method constructs a new instance of a **DBScaledParm** object.
           </tr>
           <tr>
             <td>[
-            DBScaledParm ( *DbType, Object, int, int* )](amfProgramDBScaledParmClassConstructor3.html)
+            DBScaledParm ( *DbType, Object, int, int* )](program-db-scaled-parm-class-constructor3.html)
             </td>
             <td>Creates a new instance of a
           DBScaledParm object with the data type,
@@ -47,7 +47,7 @@ This overloaded method constructs a new instance of a **DBScaledParm** object.
           <tr>
             <td>[
             DBScaledParm ( *DbType, ParameterDirection, Object, int,
-            int* )](amfProgramDBScaledParmClassConstructor2.html)
+            int* )](program-db-scaled-parm-class-constructor2.html)
             </td>
             <td>Creates a new instance of a
           DBScaledParm object with the data type,
@@ -65,7 +65,7 @@ This overloaded method constructs a new instance of a **DBScaledParm** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -80,4 +80,4 @@ This overloaded method constructs a new instance of a **DBScaledParm** object.
 <!-- end -->
 
 #### See Also
-[ Program.DBScaledParm Class](amfProgramDBScaledParmClass.html)<br />[ ProgramDBScaledParm Class Members](amfProgramDBScaledParmClassMembers.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.DBScaledParm Class](program-db-scaled-parm-class.html)<br />[ ProgramDBScaledParm Class Members](program-db-scaled-parm-class-members.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html) 

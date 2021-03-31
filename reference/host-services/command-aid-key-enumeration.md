@@ -251,7 +251,7 @@ The **Command.AidKey** enumerated constant defines the function and attention ke
 <!-- -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.isualRPG.Runtime.DLL 
 
@@ -261,6 +261,6 @@ The **Command.AidKey** enumerated constant defines the function and attention ke
 #### See Also
 <dl>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

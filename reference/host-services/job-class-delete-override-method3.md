@@ -42,7 +42,7 @@ Integer. The number of call levels for which the override is to be removed.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -57,4 +57,4 @@ Integer. The number of call levels for which the override is to be removed.
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br clear="none" /> [Job Class Members](amfJobMembers.html) <br clear="none" /> [ Job.ApplyOverrides Methods](amfJobClassApplyOverridesMethods.html) <br clear="none" />[ Job.OverrideFile Methods](amfJobClassOverrideFileMethods.html)<br clear="none" />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[Job Class](job-class.html) <br clear="none" /> [Job Class Members](job-members.html) <br clear="none" /> [ Job.ApplyOverrides Methods](amfJobClassApplyOverridesMethods.html) <br clear="none" />[ Job.OverrideFile Methods](job-class-override-file-methods.html)<br clear="none" />[ASNA.Monarch Namespace](monarch-namespace.html)

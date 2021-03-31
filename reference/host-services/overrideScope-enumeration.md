@@ -13,7 +13,7 @@ keywords: file overrides, levels
 
 ---
 
-The **OverrideScope** enumerated constant defines values for the level of override. Used by [ Job.OverrideFile](amfJobClassOverrideFileMethod2.html), [ Job.DeleteOverride](amfJobClassDeleteOverrideMethod2.html), [ CLProgram.OverrideFile](amfCLProgramClassOverrideFileMethod2.html), and [ CLProgram.DeleteOverride](amfCLProgramClassDeleteOverrideMethod2.html) methods. 
+The **OverrideScope** enumerated constant defines values for the level of override. Used by [ Job.OverrideFile](job-class-override-file-method2.html), [ Job.DeleteOverride](job-class-delete-override-method2.html), [ CLProgram.OverrideFile](clprogram-class-override-file-method2.html), and [ CLProgram.DeleteOverride](clprogram-class-delete-override-method2.html) methods. 
 
 #### Syntax
 <pre class="prettyprint"> **BegEnum OverrideScope Access(*Public)** </pre>
@@ -47,7 +47,7 @@ The **OverrideScope** enumerated constant defines values for the level of overri
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -63,5 +63,5 @@ The **OverrideScope** enumerated constant defines values for the level of overri
 
 #### See Also
 <dl><dd>[ASNA.Monarch
-    Namespace](amfMonarchNamespace.html)</dd></dl>
+    Namespace](monarch-namespace.html)</dd></dl>
 

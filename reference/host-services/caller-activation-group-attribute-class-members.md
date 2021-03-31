@@ -27,7 +27,7 @@ This documents shows all of the members for the class.
           <tr valign="top">
             <td>              <img class="hcp4" style="WIDTH: 16px; HEIGHT: 16px" height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               <code>[
-              CallerActivationGroupAttribute](amfCallerActivationGroupAttributeClassConstructors.html)</code>
+              CallerActivationGroupAttribute](caller-activation-group-attribute-class-constructors.html)</code>
             </td>
             <td
 
@@ -40,9 +40,9 @@ This documents shows all of the members for the class.
 #### See Also
 <dl><dt>
         [
-        CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html)
+        CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html)
         <br clear="none" />
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)
+        Namespace](monarch-namespace.html)
       </dt></dl>
 

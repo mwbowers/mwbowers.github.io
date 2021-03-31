@@ -42,7 +42,7 @@ The element with the specified name.
 #### Remarks
 This property provides the ability to access a specific element in the collection.
 
-When setting the property, if the specific name already exists in the dictionary, the value is replaced; otherwise, a new element is created. In contrast, the [Add](amfLocalDataCollectionClassAddMethod.html) method does not modify existing elements.
+When setting the property, if the specific name already exists in the dictionary, the value is replaced; otherwise, a new element is created. In contrast, the [Add](local-data-collection-class-add-method.html) method does not modify existing elements.
 <!-- start -->
 
 #### Requirements
@@ -53,7 +53,7 @@ When setting the property, if the specific name already exists in the dictionary
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -68,4 +68,4 @@ When setting the property, if the specific name already exists in the dictionary
 <!-- end -->
 
 #### See Also
-[ LocalDataCollection Class](amfLocalDataCollectionClass.html) <br /> [ LocalDataCollection Members](amfLocalDataCollectionMembers.html) <br /> [Add Method](amfLocalDataCollectionClassAddMethod.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ LocalDataCollection Class](local-data-collection-class.html) <br /> [ LocalDataCollection Members](local-data-collection-members.html) <br /> [Add Method](local-data-collection-class-add-method.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

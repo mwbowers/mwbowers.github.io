@@ -31,7 +31,7 @@ Removes all elements from **IDictionary** .
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -46,4 +46,4 @@ Removes all elements from **IDictionary** .
 <!-- end -->
 
 #### See Also
-[ LocalDataCollection Class](amfLocalDataCollectionClass.html) <br /> [ LocalDataCollection Members](amfLocalDataCollectionMembers.html) <br /> [Remove Method](amfLocalDataCollectionClassRemoveMethod.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ LocalDataCollection Class](local-data-collection-class.html) <br /> [ LocalDataCollection Members](local-data-collection-members.html) <br /> [Remove Method](local-data-collection-class-remove-method.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

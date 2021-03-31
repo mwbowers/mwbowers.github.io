@@ -10,7 +10,7 @@ keywords: fields [ASNA.Monarch], WebDevice class
 
 ---
 
-[WebDevice Class Overview](amfWebDeviceClass.html) 
+[WebDevice Class Overview](web-device-class.html) 
 <!--mine -->
 
 #### Public Fields
@@ -25,7 +25,7 @@ keywords: fields [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="Img3" style="WIDTH: 16px; HEIGHT: 16px" alt="field" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
-              <code>[AbEnd](amfWebDeviceClassAbEndField.html)</code>
+              <code>[AbEnd](web-device-class-abend-field.html)</code>
             </td>
             <td>Boolean. 
             <code> **True** </code> if the 
@@ -35,7 +35,7 @@ keywords: fields [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="field" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               <code>[
-              AbEndMessage](amfWebDeviceClassAbEndMessageField.html)</code>
+              AbEndMessage](web-device-class-abend-message-field.html)</code>
             </td>
             <td>String. The abnormal device
             termination message.</td>
@@ -43,7 +43,7 @@ keywords: fields [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img5" style="WIDTH: 16px; HEIGHT: 16px" alt="field" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               <code>[
-              AbEndStack](amfWebDeviceClassAbEndStackField.html)</code>
+              AbEndStack](web-device-class-abend-stack-field.html)</code>
             </td>
             <td>String. The stack from the
             terminating application.</td>
@@ -51,7 +51,7 @@ keywords: fields [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img7" style="WIDTH: 16px; HEIGHT: 16px" alt="field" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               <code>[
-              DeviceIsOpen](amfWebDeviceClassDeviceIsOpenField.html)</code>
+              DeviceIsOpen](web-device-class-deviceIs-open-field.html)</code>
             </td>
             <td>Boolean. The open or closed
             status of the 
@@ -62,7 +62,7 @@ keywords: fields [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img1" style="WIDTH: 16px; HEIGHT: 16px" alt="field" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               <code>[
-              OutsidePages](amfWebDeviceClassOutsidePagesField.html)</code>
+              OutsidePages](web-device-class-outside-pages-field.html)</code>
             </td>
             <td>representing a simple
             last-in first-out non-generic collection of
@@ -71,4 +71,4 @@ keywords: fields [ASNA.Monarch], WebDevice class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [WebDevice Class](amfWebDeviceClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [WebDevice Class](web-device-class.html) 

@@ -30,7 +30,7 @@ This overloaded method removes file overrides previously applied to the job.
           <tr>
             <td>              [
             DeleteOverride (
- *string* )](amfJobClassDeleteOverrideMethod1.html)
+ *string* )](job-class-delete-override-method1.html)
                   </td>
                   <td>Remove previous overrides for
           the database, print, or workstation file named.</td>
@@ -38,7 +38,7 @@ This overloaded method removes file overrides previously applied to the job.
           <tr>
             <td>              [
             DeleteOverride (
- *string, OverrideScope* )](amfJobClassDeleteOverrideMethod2.html)
+ *string, OverrideScope* )](job-class-delete-override-method2.html)
                   </td>
                   <td>Remove previous overrides for
           the database, print, or workstation file named for the
@@ -47,7 +47,7 @@ This overloaded method removes file overrides previously applied to the job.
           <tr>
             <td>              [
             DeleteOverride (
- *string, integer* )](amfJobClassDeleteOverrideMethod3.html)
+ *string, integer* )](job-class-delete-override-method3.html)
                   </td>
                   <td>Remove previous overrides for
           the database, print, or workstation file named for the
@@ -65,7 +65,7 @@ This overloaded method removes file overrides previously applied to the job.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -80,4 +80,4 @@ This overloaded method removes file overrides previously applied to the job.
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html)<br clear="none" /> [Job Class Members](amfJobMembers.html)<br clear="none" /> [ASNA.Monarch.OverrideScope](amfOverrideScopeEnumeration.html) <br clear="none" />[ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html)<br clear="none" /> [Job Class Members](job-members.html)<br clear="none" /> [ASNA.Monarch.OverrideScope](overrideScope-enumeration.html) <br clear="none" />[ASNA.Monarch Namespace](monarch-namespace.html) 

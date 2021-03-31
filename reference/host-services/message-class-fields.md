@@ -10,7 +10,7 @@ keywords: fields [ASNA.Monarch], Message class
 
 ---
 
-[Message Class Overview](amfMessageClass.html) 
+[Message Class Overview](message-class.html) 
 
 #### Public Fields
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: fields [ASNA.Monarch], Message class
           <tr>
             <td><img class="hcp4" height="16" alt="public field" src="images/field.bmp" width="16" border="0" />
               [
-            Data](amfMessageClassDataField.html)
+            Data](message-class-data-field.html)
             </td>
             <td>Read-only.  The
           substitution variables or name of the field containing
@@ -34,7 +34,7 @@ keywords: fields [ASNA.Monarch], Message class
           <tr>
             <td><img height="16" alt="public field" src="images/field.bmp" width="16" border="0" />
               [
-            Id](amfMessageClassIdField.html)
+            Id](message-classId-field.html)
             </td>
             <td>Read-only.  The message
           identifier for a predefined message.</td>
@@ -42,7 +42,7 @@ keywords: fields [ASNA.Monarch], Message class
           <tr>
             <td><img height="16" alt="public field" src="images/field.bmp" width="16" border="0" />
               [
-            Key](amfMessageClassKeyField.html)
+            Key](message-class-key-field.html)
             </td>
             <td>Read-only.  The unique
           message identification key.</td>
@@ -50,7 +50,7 @@ keywords: fields [ASNA.Monarch], Message class
           <tr>
             <td><img height="16" alt="public field" src="images/field.bmp" width="16" border="0" />
               [
-            MessageFile](amfMessageClassMessageFileField.html)
+            MessageFile](message-class-message-file-field.html)
             </td>
             <td>Read-only.  The name of
           the Message File in which the message is contained.</td>
@@ -58,7 +58,7 @@ keywords: fields [ASNA.Monarch], Message class
           <tr>
             <td><img height="16" alt="public field" src="images/field.bmp" width="16" border="0" />
               [
-            MessageType](amfMessageClassMessageTypeField.html)
+            MessageType](message-class-message-ge-type-field.html)
             </td>
             <td>Read-only.  The 
  **ASNA.Monarch.MessageTypes**  enumeration
@@ -67,7 +67,7 @@ keywords: fields [ASNA.Monarch], Message class
           <tr>
             <td><img height="16" alt="public field" src="images/field.bmp" width="16" border="0" />
               [
-            Text](amfMessageClassTextField.html)
+            Text](message-class-text-field.html)
             </td>
             <td>Read-only. 
           The text of an immediate message</td>
@@ -75,4 +75,4 @@ keywords: fields [ASNA.Monarch], Message class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [Message Class](amfMessageClass.html) <br />[ ASNA.Monarch.MessageTypes Enumeration](amfMessageTypesEnumeration.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [Message Class](message-class.html) <br />[ ASNA.Monarch.MessageTypes Enumeration](messa-ge-types-enumeration.html)

@@ -29,7 +29,7 @@ This overloaded method constructs a new instance of a **DBStrParm** object.
           </tr>
           <tr>
             <td>[
-            DBStrParm ( *DbType, int* )](amfProgramDBStrParmClassConstructor1.html)
+            DBStrParm ( *DbType, int* )](program-db-str-parm-class-constructor1.html)
             </td>
             <td>Creates a new instance of a
           DBStrParm object with the data type
@@ -37,7 +37,7 @@ This overloaded method constructs a new instance of a **DBStrParm** object.
           </tr>
           <tr>
             <td>[
-            DBStrParm ( *DbType, Object, int* )](amfProgramDBStrParmClassConstructor3.html)
+            DBStrParm ( *DbType, Object, int* )](program-db-str-parm-class-constructor3.html)
             </td>
             <td>Creates a new instance of a
           DBStrParm object with the data type, value, and
@@ -45,7 +45,7 @@ This overloaded method constructs a new instance of a **DBStrParm** object.
           </tr>
           <tr>
             <td>[
-            DBStrParm ( *DbType, ParameterDirection, Object, int* )](amfProgramDBStrParmClassConstructor2.html)
+            DBStrParm ( *DbType, ParameterDirection, Object, int* )](program-db-str-parm-class-constructor2.html)
             </td>
             <td>Creates a new instance of a
           DBStrParm object with the data type,
@@ -63,7 +63,7 @@ This overloaded method constructs a new instance of a **DBStrParm** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -78,4 +78,4 @@ This overloaded method constructs a new instance of a **DBStrParm** object.
 <!-- end -->
 
 #### See Also
-[Program.DBStrParm Class](amfProgramDBStrParmClass.html)<br />[ Program.DBStrParm Class Members](amfProgramDBStrParmClassMembers.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program.DBStrParm Class](program-db-str-parm-class.html)<br />[ Program.DBStrParm Class Members](program-db-str-parm-class-members.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html) 

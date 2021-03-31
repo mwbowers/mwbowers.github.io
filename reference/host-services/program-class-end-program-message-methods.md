@@ -39,7 +39,7 @@ Appends different message types to the program message queue associated with the
           <tr>
             <td>[
             SendProgramMessage (
- *string* )](amfProgramClassSendProgramMessageMethod1.html)
+ *string* )](program-class-end-program-message-method1.html)
             </td>
             <td>Appends an
           immediate message to the program message queue
@@ -48,7 +48,7 @@ Appends different message types to the program message queue associated with the
           <tr>
             <td>[
             SendProgramMessage (
- *string, string, MessageTypes* )](amfProgramClassSendProgramMessageMethod2.html)
+ *string, string, MessageTypes* )](program-class-end-program-message-method2.html)
             </td>
             <td>Appends an immediate message
           to a specified program message queue.</td>
@@ -56,7 +56,7 @@ Appends different message types to the program message queue associated with the
           <tr>
             <td>[
             SendProgramMessage (
- *string, string, string* )](amfProgramClassSendProgramMessageMethod3.html)
+ *string, string, string* )](program-class-end-program-message-method3.html)
             </td>
             <td>Appends an informational
           message to the program message queue associated with the
@@ -65,7 +65,7 @@ Appends different message types to the program message queue associated with the
           <tr>
             <td>[
             SendProgramMessage (
- *string, string, string, string* )](amfProgramClassSendProgramMessageMethod4.html)
+ *string, string, string, string* )](program-class-end-program-message-method4.html)
             </td>
             <td>Appends an informational
           message to the specified program message queue.</td>
@@ -74,7 +74,7 @@ Appends different message types to the program message queue associated with the
             <td>[
             SendProgramMessage (
  *string, string, string, string,
-            MessageTypes* )](amfProgramClassSendProgramMessageMethod5.html)
+            MessageTypes* )](program-class-end-program-message-method5.html)
             </td>
             <td>Appends a message to the
           specified program message queue.</td>
@@ -91,7 +91,7 @@ Appends different message types to the program message queue associated with the
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -106,4 +106,4 @@ Appends different message types to the program message queue associated with the
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html)<br />[Program Class Members](amfProgramClassMembers.html)<br />[ ASNA.Monarch.MessageTypes](amfMessageTypesEnumeration.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[Program Class](program-class.html)<br />[Program Class Members](program-class-members.html)<br />[ ASNA.Monarch.MessageTypes](messa-ge-types-enumeration.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)

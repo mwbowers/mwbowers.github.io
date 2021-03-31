@@ -17,9 +17,9 @@ This method provides CLProgram file override options within Monarch for the spec
 #### Syntax
 <pre class="syntax"> **BegSr OverrideFile Access(*Public) Type(Void)
    DclSrParm *fileName*  Type(*String)
-   DclSrParm *option*    Type([ASNA.Monarch.OverrideOptions](amfOverrideOptionsEnumeration.html))
+   DclSrParm *option*    Type([ASNA.Monarch.OverrideOptions](override-options-enumeration.html))
    DclSrParm *newValue*  Type(*Object)
-   DclSrParm *scope*     Type([ASNA.Monarch.OverrideScope](amfOverrideScopeEnumeration.html))**       </pre>
+   DclSrParm *scope*     Type([ASNA.Monarch.OverrideScope](overrideScope-enumeration.html))**       </pre>
 
 #### Parameters
 <dl>
@@ -217,7 +217,7 @@ The following table details the member name, the value type, and the valid optio
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -225,4 +225,4 @@ The following table details the member name, the value type, and the valid optio
 <!-- end -->
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [ DeleteOverride Method](amfCLProgramClassDeleteOverrideMethods.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [ DeleteOverride Method](clprogram-class-delete-override-methods.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

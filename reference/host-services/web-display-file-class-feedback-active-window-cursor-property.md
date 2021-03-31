@@ -32,7 +32,7 @@ When a Window (popup) is active, this property reports the Cursor location withi
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td style="height: 27px">Assembly:</td>
@@ -47,4 +47,4 @@ When a Window (popup) is active, this property reports the Cursor location withi
 <!-- end -->
 
 #### See Also
-[ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ WebDisplayFile Class Members](amfWebDisplayFileClassMembers.html) <br /> [ AidKeyIBM Enumeration](amfAidKeyIBMEnumeration.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ WebDisplayFile Class](web-display-file-class.html) <br /> [ WebDisplayFile Class Members](web-display-file-class-members.html) <br /> [ AidKeyIBM Enumeration](amfAidKeyIBMEnumeration.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html)

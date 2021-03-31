@@ -84,4 +84,4 @@ Migrated codes appears as:
 <!-- end -->      
 
 #### See Also
-[ Program.DBStrParm Class](amfProgramDBStrParmClass.html) <br /> [ Program.DBStrParm Class Members](amfProgramDBStrParmClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.DBStrParm Class](program-db-str-parm-class.html) <br /> [ Program.DBStrParm Class Members](program-db-str-parm-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

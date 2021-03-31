@@ -61,7 +61,7 @@ F1Emp# = SqlQueryResults["WDEMP#"] *AsFld F1Emp#
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -76,4 +76,4 @@ F1Emp# = SqlQueryResults["WDEMP#"] *AsFld F1Emp#
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ Program.DBParm Class](amfProgramDBParmClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ Program.DBParm Class](program-db-parm-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

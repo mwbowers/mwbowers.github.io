@@ -29,7 +29,7 @@ Removes program messages.
           </tr>
           <tr>
             <td>[
-              RemoveMessage ( *string* )](amfProgramClassRemoveMessageMethod1.html)
+              RemoveMessage ( *string* )](program-class-remove-message-method1.html)
             </td>
             <td>Remove messages from the
             program message queue of the caller's
@@ -37,7 +37,7 @@ Removes program messages.
           </tr>
           <tr>
             <td>[
-              RemoveMessage ( *string, string* )](amfProgramClassRemoveMessageMethod2.html)
+              RemoveMessage ( *string, string* )](program-class-remove-message-method2.html)
             </td>
             <td>Removes messages from the
             program queue.</td>
@@ -56,7 +56,7 @@ Removes program messages.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -71,4 +71,4 @@ Removes program messages.
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

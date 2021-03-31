@@ -49,4 +49,4 @@ Constructs a new instance of a DBParm object of the data type indicated.
 <!-- end --> 
 
 #### See Also
-[ Program.DBParm Class](amfProgramDBParmClass.html) <br /> [ Program.DBParm Class Members](amfProgramDBParmClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.DBParm Class](program-db-parm-class.html) <br /> [ Program.DBParm Class Members](program-db-parm-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

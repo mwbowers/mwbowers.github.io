@@ -16,7 +16,7 @@ keywords: how to, access job local data collection
 
 ---
 
-The **LDC** Field contains a reference to an instance of a [ LocalDataCollection](amfLocalDataCollectionClass.html) object containing a collection of name/value pairs.
+The **LDC** Field contains a reference to an instance of a [ LocalDataCollection](local-data-collection-class.html) object containing a collection of name/value pairs.
 
 #### Syntax
 <pre class="prettyprint"> **BegFunc LDC Access(*Public) Type(LocalDataCollection)**       </pre>
@@ -33,7 +33,7 @@ The **LDC** Field contains a reference to an instance of a [ LocalDataCollection
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -48,4 +48,4 @@ The **LDC** Field contains a reference to an instance of a [ LocalDataCollection
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br /> [ LocalDataCollection Class](amfLocalDataCollectionClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br /> [ LocalDataCollection Class](local-data-collection-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -26,7 +26,7 @@ Places an **ASNA.Monarch.Message** object in the message queue.
         </dt>
         <dd>An instance of an 
         [
-        ASNA.Monarch.Message](amfMessageClass.html) object.</dd>
+        ASNA.Monarch.Message](message-class.html) object.</dd>
 </dl>
 
 <!-- start -->
@@ -39,7 +39,7 @@ Places an **ASNA.Monarch.Message** object in the message queue.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -54,4 +54,4 @@ Places an **ASNA.Monarch.Message** object in the message queue.
 <!-- end -->
 
 #### See Also
-[MessageQueue Class](amfMessageQueueClass.html) <br /> [ MessageQueue Class Members](amfMessageQueueClassMembers.html) <br /> [ ASNA.Monarch.Message Class](amfMessageClass.html) <br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[MessageQueue Class](message-queue-class.html) <br /> [ MessageQueue Class Members](message-queue-class-members.html) <br /> [ ASNA.Monarch.Message Class](message-class.html) <br />[ASNA.Monarch Namespace](monarch-namespace.html)

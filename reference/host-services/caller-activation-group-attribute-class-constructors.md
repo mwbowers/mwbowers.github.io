@@ -24,11 +24,11 @@ Using **CallerActivationGroupAttribute** defines an instance when the activation
 <pre class="example"> BegClass Custcalc Extends (ASNA.Monarch.Program Access ( *Public ) +
  Attributes ( CallerActivationGroupAttribute ())</pre>
 
-Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html) and [ NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html) for more information.
+Refer to [ ActivationGroupAttribute Class](activation-group-attribute-class.html) and [ NewActivationGroupAttribute Class](new-activation-group-attribute-class.html) for more information.
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -38,12 +38,12 @@ Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html
 #### See Also
 <dl><dt>
         [
-        CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html)
+        CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html)
         <br clear="none" />
         [
-        CallerActivationGroupAttribute Class Members](amfCallerActivationGroupAttributeClassMembers.html)
+        CallerActivationGroupAttribute Class Members](caller-activation-group-attribute-class-members.html)
         <br clear="none" />
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)
+        Namespace](monarch-namespace.html)
       </dt></dl>
 

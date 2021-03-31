@@ -10,7 +10,7 @@ keywords: members [ASNA.Monarch], Job class
 
 ---
 
-[Job Class Overview](amfJobClass.html) 
+[Job Class Overview](job-class.html) 
 <!-- start constructor table -->	
 
 #### Constructor
@@ -26,7 +26,7 @@ keywords: members [ASNA.Monarch], Job class
 <!-- end copy BUT put in extra div and end of table -->          <tr valign="top">
             <td><img id="IMG1" style="WIDTH: 16px; HEIGHT: 16px" alt="constructor" src="images/constructor.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            Job](amfJobClassJobConstructors.html)
+            Job](job-class-job-constructors.html)
             </td>
             <td>Creates a new instance of a
           Job object.</td>
@@ -49,7 +49,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img3" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            DeleteOverride](amfJobClassDeleteOverrideMethods.html)
+            DeleteOverride](job-class-delete-override-methods.html)
             </td>
             <td>Overloaded. Removes
           theÂ database, print, or workstation file overrides
@@ -58,7 +58,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img21" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            Dispose](amfJobClassDisposeMethod.html)
+            Dispose](job-class-dispose-method.html)
             </td>
             <td>Releases managed and
           unmanaged or just unmanaged resources used by the
@@ -66,7 +66,7 @@ keywords: members [ASNA.Monarch], Job class
           </tr>
           <tr>
             <td><img id="Img5" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
-              [EndPrograms](amfJobClassEndProgramsMethod.html)
+              [EndPrograms](job-class-end-programs-method.html)
             </td>
             <td>De-activates any program that
           is still active.</td>
@@ -79,7 +79,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img10" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            GetSwitch](amfJobClassGetSwitchMethod.html)
+            GetSwitch](job-class-get-switch-method.html)
             </td>
             <td>Returns a value indicating
           the 'on'/'off' status of a specific job attribute
@@ -87,7 +87,7 @@ keywords: members [ASNA.Monarch], Job class
           </tr>
           <tr>
             <td><img id="Img11" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
-              [GetSwitches](amfJobClassGetSwitchesMethod.html)
+              [GetSwitches](job-class-get-switches-method.html)
             </td>
             <td>Returns a string of 8
           characters with values '0' and '1', each character
@@ -96,7 +96,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img12" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            OverrideFile](amfJobClassOverrideFileMethods.html)
+            OverrideFile](job-class-override-file-methods.html)
             </td>
             <td>Overloaded. Provides Job file
           override options.</td>
@@ -109,14 +109,14 @@ keywords: members [ASNA.Monarch], Job class
            <tr>
             <td><img id="Img18" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            Request](amfJobClassRequestMethod.html)
+            Request](job-class-request-method.html)
             </td>
             <td>Set a value in seconds to wait for programs to shut down elegantly when a session ends.</td>
           </tr>
           <tr>
             <td><img id="Img18" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            SetSwitch](amfJobClassSetSwitchMethod.html)
+            SetSwitch](job-class-set-switch-method.html)
             </td>
             <td>Set a value indicating the
           'on'/'off' status of a specific job attribute
@@ -125,7 +125,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img19" style="WIDTH: 16px; HEIGHT: 16px" alt="method" src="images/methods.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            ShutDown](amfJobClassShutDownMethod.html)
+            ShutDown](job-class-shutdown-method.html)
             </td>
             <td>Terminates the Job program
           when an abnormal condition occurs.</td>
@@ -149,7 +149,7 @@ keywords: members [ASNA.Monarch], Job class
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="protected method" src="images/promethod.bmp
 " border="0" x-maintain-ratio="TRUE" />
               [
-            getADO_Connection](amfJobClassgetADO_ConnectionMethod.html)
+            getADO_Connection](job-class-get-ado-connection-method.html)
             </td>
             <td>Returns a new instance of
           aÂ 
@@ -170,7 +170,7 @@ keywords: members [ASNA.Monarch], Job class
             <td><img style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/promethod.bmp
 " border="0" x-maintain-ratio="TRUE" />
               [
-            getPrinterDB](amfJobClassgetPrinterDBMethod.html)
+            getPrinterDB](job-class-get-printer-db-method.html)
             </td>
             <td>Returns a new instance of
           ASNA.VisualRPG.Runtime.Database connection object for
@@ -194,7 +194,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-            ADO_Connection](amfJobClassADO_ConnectionProperty.html)
+            ADO_Connection](job-class-ado-connection-property.html)
             </td>
             <td>Gets the 
           [CurrentJob](http://msdn2.microsoft.com/en-us/library/system.data.common.dbconnection.aspx">
@@ -211,7 +211,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-            Database](amfJobClassDatabaseProperty.html)
+            Database](job-class-database-property.html)
             </td>
             <td>Gets the
           ASNA.VisualRPG.Runtime.Database connection object
@@ -220,14 +220,14 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-            MesssageFileFolder](amfJobClassMessageFileFolderProperty.html)
+            MesssageFileFolder](job-class-message-file-folder-property.html)
             </td>
             <td>Gets or sets the name of the
           folder containing the message file for this job.</td>
           </tr>
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
-              [PrinterDB](amfJobClassPrinterDBProperty.html)
+              [PrinterDB](job-class-printer-db-property.html)
             </td>
             <td>Gets the
           ASNA.VisualRPG.Runtime.Database connection object for the
@@ -236,7 +236,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-            StartupMoment](amfJobClassStartupMomentProperty.html)
+            StartupMoment](job-class-startup-moment-property.html)
             </td>
             <td>Gets the System.DateTime when
           the Job was started.</td>
@@ -260,30 +260,30 @@ keywords: members [ASNA.Monarch], Job class
             <td style="height: 29px"><img id="Img8" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp
 " border="0" x-maintain-ratio="TRUE" />
               [
-            ExternalQueue](amfJobClassExternalQueueField.html)
+            ExternalQueue](job-class-external-queue-field.html)
             </td>
             <td style="height: 29px">A reference to an instance of
           an 
           [
-          ASNA.Monarch.MessageQueue](amfMessageQueueClass.html)Â object for an external
+          ASNA.Monarch.MessageQueue](message-queue-class.html)Â object for an external
           message queue for this job.</td>
           </tr>
           <tr>
             <td><img id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp
 " border="0" x-maintain-ratio="TRUE" />
-              [LDC](amfJobClassLDCField.html)
+              [LDC](job-class-ldc-field.html)
             </td>
             <td>A reference to an instance of
           a 
           [
-          LocalDataCollection](amfLocalDataCollectionClass.html) object containing a collection of
+          LocalDataCollection](local-data-collection-class.html) object containing a collection of
           name/value pairs.</td>
           </tr>
           <tr>
             <td><img id="Img6" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp
 " border="0" x-maintain-ratio="TRUE" />
               [
-            PsdsJobName](amfJobClassPsdsJobNameField.html)
+            PsdsJobName](job-class-psds-job-name-field.html)
             </td>
             <td>The 10-character job name
           field in the program status data structure.</td>
@@ -292,7 +292,7 @@ keywords: members [ASNA.Monarch], Job class
             <td><img id="Img22" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp
 " border="0" x-maintain-ratio="TRUE" />
               [
-            PsdsJobNumber](amfJobClassPsdsJobNumberField.html)
+            PsdsJobNumber](job-class-psds-job-number-field.html)
             </td>
             <td>The 6-digit job number field
           in the program status data structure.</td>
@@ -301,7 +301,7 @@ keywords: members [ASNA.Monarch], Job class
             <td><img id="Img23" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp
 " border="0" x-maintain-ratio="TRUE" />
               [
-            PsdsJobUser](amfJobClassPsdsJobUserField.html)
+            PsdsJobUser](job-class-psds-job-user-field.html)
             </td>
             <td>The 10-character user name
           field in the program status data structure.</td>
@@ -324,7 +324,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img7" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-            FileOverrideTable](amfJobClassFileOverrideTableField.html)
+            FileOverrideTable](job-class-file-override-table-field.html)
             </td>
             <td>A referenceÂ to an
           instance of a System.Collection.Hashtable representing
@@ -337,7 +337,7 @@ keywords: members [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img25" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-            messageFileFolder](amfJobClassmessageFileFolderField.html)
+            messageFileFolder](job-class-message-file-folder-field.html)
             </td>
             <td>A reference to the message
           file folder object containing the message file for this
@@ -347,16 +347,16 @@ keywords: members [ASNA.Monarch], Job class
 
 #### See Also
 <dl>
-        <dd>[Job Class](amfJobClass.html)
+        <dd>[Job Class](job-class.html)
         </dd><dd>
         [Job Class
-        Members](amfJobMembers.html)</dd>
+        Members](job-members.html)</dd>
  <dd>[
-    LocalDataCollection Class](amfLocalDataCollectionClass.html)</dd>
+    LocalDataCollection Class](local-data-collection-class.html)</dd>
     <dd>[MessageQueue
-    Class](amfMessageQueueClass.html)</dd>
-       <dd>[Program Class](amfProgramClass.html)</dd>
+    Class](message-queue-class.html)</dd>
+       <dd>[Program Class](program-class.html)</dd>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

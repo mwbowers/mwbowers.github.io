@@ -20,7 +20,7 @@ Opens a **SqlCursor** object positioned before the first row of the result set.
         </dt>
         <dd>
           [
-        ASNA.Monarch.Program.DBParm](amfProgramDBParmClass.html). An array containing
+        ASNA.Monarch.Program.DBParm](program-db-parm-class.html). An array containing
         the statement parameters.</dd>
 </dl>
 
@@ -32,7 +32,7 @@ Opens a **SqlCursor** object positioned before the first row of the result set.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -47,4 +47,4 @@ Opens a **SqlCursor** object positioned before the first row of the result set.
 <!-- end -->
 
 #### See Also
-[ Program.SqlCursor Class](amfProgramSqlCursorClass.html) <br /> [ Program.SqlCursor Class Members](amfProgramSqlCursorClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.SqlCursor Class](program-sql-cursor-class.html) <br /> [ Program.SqlCursor Class Members](program-sql-cursor-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -36,7 +36,7 @@ Executes a SQL query specifying the SQL statement with no parameters.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -51,4 +51,4 @@ Executes a SQL query specifying the SQL statement with no parameters.
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ SqlQueryResults Field](amfProgramClassSqlQueryResultsField.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ SqlQueryResults Field](program-class-sql-query-results-field.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

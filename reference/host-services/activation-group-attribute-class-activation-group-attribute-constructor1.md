@@ -16,7 +16,7 @@ This method constructs a new instance of an **ActivationGroupAttribute** with de
  <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL
 
@@ -26,12 +26,12 @@ This method constructs a new instance of an **ActivationGroupAttribute** with de
 #### See Also
 <dl><dt>
         [
-        ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html)
+        ActivationGroupAttribute Class](activation-group-attribute-class.html)
        </dt><dt>
         [
-        ActivationGroupAttribute Class Members](amfActivationGroupAttributeClassMembers.html)
+        ActivationGroupAttribute Class Members](activation-group-attribute-class-members.html)
         </dt><dt>
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dt>
+        Namespace](monarch-namespace.html)</dt>
 </dl>
 

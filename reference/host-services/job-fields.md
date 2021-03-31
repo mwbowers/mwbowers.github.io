@@ -10,7 +10,7 @@ keywords: fields [ASNA.Monarch], Job class
 
 ---
 
-[Job Class Overview](amfJobClass.html) 
+[Job Class Overview](job-class.html) 
 <!-- start public properties table -->	
 
 #### Public Fields
@@ -27,28 +27,28 @@ keywords: fields [ASNA.Monarch], Job class
           <tr valign="top">
             <td><img id="Img8" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            ExternalQueue](amfJobClassExternalQueueField.html)
+            ExternalQueue](job-class-external-queue-field.html)
             </td>
             <td>A reference to an instance of
           an 
           [
-          ASNA.Monarch.MessageQueue](amfMessageQueueClass.html) object for an external
+          ASNA.Monarch.MessageQueue](message-queue-class.html) object for an external
           message queue for this job.</td>
           </tr>
           <tr>
             <td><img id="Img1" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
-              [LDC](amfJobClassLDCField.html)
+              [LDC](job-class-ldc-field.html)
             </td>
             <td>A reference to an instance of
           a 
           [
-          LocalDataCollection](amfLocalDataCollectionClass.html) object containing a collection of
+          LocalDataCollection](local-data-collection-class.html) object containing a collection of
           name/value pairs.</td>
           </tr>
           <tr>
             <td><img id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            PsdsJobName](amfJobClassPsdsJobNameField.html)
+            PsdsJobName](job-class-psds-job-name-field.html)
             </td>
             <td>The 10-character job name
           field in the program status data structure.</td>
@@ -56,7 +56,7 @@ keywords: fields [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img22" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            PsdsJobNumber](amfJobClassPsdsJobNumberField.html)
+            PsdsJobNumber](job-class-psds-job-number-field.html)
             </td>
             <td>The 6-digit job number field
           in the program status data structure.</td>
@@ -64,7 +64,7 @@ keywords: fields [ASNA.Monarch], Job class
           <tr>
             <td><img id="Img23" style="WIDTH: 16px; HEIGHT: 16px" alt="public fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            PsdsJobUser](amfJobClassPsdsJobUserField.html)
+            PsdsJobUser](job-class-psds-job-user-field.html)
             </td>
             <td>The 10-character user name
           field in the program status data structure.</td>
@@ -88,7 +88,7 @@ keywords: fields [ASNA.Monarch], Job class
             <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/
 protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-            FileOverrideTable](amfJobClassFileOverrideTableField.html)
+            FileOverrideTable](job-class-file-override-table-field.html)
             </td>
             <td>A reference to an
           instance of a System.Collection.Hashtable representing
@@ -103,7 +103,7 @@ protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" /> Lda</td>
             <td><img id="Img25" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/
 protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-            messageFileFolder](amfJobClassmessageFileFolderField.html)
+            messageFileFolder](job-class-message-file-folder-field.html)
             </td>
             <td>A reference to the message
           file folder object containing the message file for this
@@ -113,15 +113,15 @@ protected-field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
 
 #### See Also
 <dl>
-        <dd>[Job Class](amfJobClass.html)
+        <dd>[Job Class](job-class.html)
         </dd><dd>
         [Job Class
-        Members](amfJobMembers.html)</dd>
+        Members](job-members.html)</dd>
        <dd>[MessageQueue
-    Class](amfMessageQueueClass.html)</dd>
+    Class](message-queue-class.html)</dd>
     <dd>[
-    LocalDataCollection Class](amfLocalDataCollectionClass.html)</dd>
+    LocalDataCollection Class](local-data-collection-class.html)</dd>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

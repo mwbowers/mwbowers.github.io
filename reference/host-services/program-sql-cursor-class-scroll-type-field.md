@@ -24,7 +24,7 @@ An enumeration value defining the type of scrolling for the cursor.
 <pre class="syntax"> **BegProp ScrollType Access(*Public) Type(SqlCursor.ScrollTypes)**       </pre>
 
 #### Field Value
-[ Program.SqlCursor.ScrollTypes](amfProgramSqlCursorScrollTypesEnumeration.html) enumeration value defining the type of scrolling for the cursor.
+[ Program.SqlCursor.ScrollTypes](program-sql-cursor-scroll-types-enumeration.html) enumeration value defining the type of scrolling for the cursor.
 
 #### Requirements
 <table class="dttable" cellspacing="0" cellpadding="4" width="60%">
@@ -34,7 +34,7 @@ An enumeration value defining the type of scrolling for the cursor.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -47,4 +47,4 @@ An enumeration value defining the type of scrolling for the cursor.
 </table>
 
 #### See Also
-[ Program.SqlCursor Class](amfProgramSqlCursorClass.html) <br /> [ Program.SqlCursor Class Members](amfProgramSqlCursorClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.SqlCursor.ScrollTypes Enumeration](amfProgramSqlCursorScrollTypesEnumeration.html) 
+[ Program.SqlCursor Class](program-sql-cursor-class.html) <br /> [ Program.SqlCursor Class Members](program-sql-cursor-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.SqlCursor.ScrollTypes Enumeration](program-sql-cursor-scroll-types-enumeration.html) 

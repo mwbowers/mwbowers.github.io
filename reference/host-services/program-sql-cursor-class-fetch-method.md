@@ -16,7 +16,7 @@ keywords: Program.SqlCursor.FetchOrientations enumeration, used by
 
 ---
 
-Determines if results are available and conditions the lines that retrieve the query results by the [ SqlCursor.FetchOrientations](amfProgramSqlCursorFetchOrientationsEnumeration.html) value.
+Determines if results are available and conditions the lines that retrieve the query results by the [ SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html) value.
 
 #### Syntax
 <pre class="syntax"> **BegFunc SqlCursor.Fetch Access(public) Type(Boolean)
@@ -29,7 +29,7 @@ Determines if results are available and conditions the lines that retrieve the q
         </dt>
         <dd>
           [
-        SqlCursor.FetchOrientations](amfProgramSqlCursorFetchOrientationsEnumeration.html) enumeration value defining
+        SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html) enumeration value defining
         the orientation of the cursor for the fetch.</dd>
 </dl>
 
@@ -79,7 +79,7 @@ The following migrated code is generated for just the statement above:
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -94,12 +94,12 @@ The following migrated code is generated for just the statement above:
 #### See Also
 <dl>
         <dd>[
-        Program.SqlCursor Class](amfProgramSqlCursorClass.html)</dd>
+        Program.SqlCursor Class](program-sql-cursor-class.html)</dd>
         <dd>[
-        Program.SqlCursor Class Members](amfProgramSqlCursorClassMembers.html)</dd>
+        Program.SqlCursor Class Members](program-sql-cursor-class-members.html)</dd>
         <dd>[
-        Program.SqlCursor.FetchOrientations Enumeration](amfProgramSqlCursorFetchOrientationsEnumeration.html)</dd>
+        Program.SqlCursor.FetchOrientations Enumeration](program-sql-cursor-fetch-orientations-enumeration.html)</dd>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

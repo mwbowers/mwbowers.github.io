@@ -14,11 +14,11 @@ keywords: new web device
 
 ---
 
-Constructs a new instance of a **WebDevice** object for a [WebJob](amfWebJobClass.html).
+Constructs a new instance of a **WebDevice** object for a [WebJob](web-job-class.html).
 
 #### Syntax 
 <pre class="prettyprint"> **BegConstructor WebDevice Access(*Public)
-   DclSrParm *job*  Type([ASNA.Monarch.WebJob](amfWebJobClass.html))**       </pre>  
+   DclSrParm *job*  Type([ASNA.Monarch.WebJob](web-job-class.html))**       </pre>  
 
 #### Parameters
 <dl>
@@ -39,7 +39,7 @@ Constructs a new instance of a **WebDevice** object for a [WebJob](amfWebJobClas
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -52,4 +52,4 @@ Constructs a new instance of a **WebDevice** object for a [WebJob](amfWebJobClas
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [WebDevice Class Members](amfWebDeviceClassMembers.html) <br />[WebJob Class](amfWebJobClass.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[WebDevice Class](web-device-class.html) <br /> [WebDevice Class Members](web-device-class-members.html) <br />[WebJob Class](web-job-class.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)

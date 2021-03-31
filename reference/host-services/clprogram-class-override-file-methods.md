@@ -54,7 +54,7 @@ You should ensure that the format of the data in the overriding file is the same
           <tr>
             <td>           <code>[
               OverrideFile (
- *string, OverrideOptions, object* )](amfCLProgramClassOverrideFileMethod1.html)</code>
+ *string, OverrideOptions, object* )](clprogram-class-override-file-method1.html)</code>
             </td>
             <td>Overrides a 
  *CL procedure, program,
@@ -66,7 +66,7 @@ You should ensure that the format of the data in the overriding file is the same
             <td>              <code>[
               OverrideFile (
  *string, OverrideOptions, object,
-              OverrideScope* )](amfCLProgramClassOverrideFileMethod2.html)</code>
+              OverrideScope* )](clprogram-class-override-file-method2.html)</code>
             </td>
             <td>Overrides a 
  *CL procedure, program,
@@ -80,7 +80,7 @@ You should ensure that the format of the data in the overriding file is the same
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -88,4 +88,4 @@ You should ensure that the format of the data in the overriding file is the same
 <!-- end -->      
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Members](amfCLProgramClassMembers.html) <br clear="none" /> [ ASNA.Monarch.OverrideOptions](amfOverrideOptionsEnumeration.html) <br clear="none" /> [ ASNA.Monarch.OverrideScope](amfOverrideScopeEnumeration.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Members](clprogram-class-members.html) <br clear="none" /> [ ASNA.Monarch.OverrideOptions](override-options-enumeration.html) <br clear="none" /> [ ASNA.Monarch.OverrideScope](overrideScope-enumeration.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

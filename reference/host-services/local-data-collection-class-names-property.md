@@ -24,7 +24,7 @@ Gets an **ICollection** containing the names in the **IDictionary** .
 An **ICollection** object containing the names in the **IDictionary** .
 
 #### Remarks
-The order of the names in the returned **ICollection** is unspecified, but it is guaranteed to be the same order as the corresponding values in the **ICollection** returned by the [ Values](amfLocalDataCollectionClassValuesProperty.html) property.
+The order of the names in the returned **ICollection** is unspecified, but it is guaranteed to be the same order as the corresponding values in the **ICollection** returned by the [ Values](local-data-collection-class-values-property.html) property.
 <!-- start -->
 
 #### Requirements
@@ -35,7 +35,7 @@ The order of the names in the returned **ICollection** is unspecified, but it is
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -50,4 +50,4 @@ The order of the names in the returned **ICollection** is unspecified, but it is
 <!-- end -->
 
 #### See Also
-[ LocalDataCollection Class](amfLocalDataCollectionClass.html) <br /> [ LocalDataCollection Members](amfLocalDataCollectionMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ LocalDataCollection Class](local-data-collection-class.html) <br /> [ LocalDataCollection Members](local-data-collection-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

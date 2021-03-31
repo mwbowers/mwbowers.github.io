@@ -32,7 +32,7 @@ Detaches a previously attached shared file from the <code> **WebDevice** </code>
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -47,4 +47,4 @@ Detaches a previously attached shared file from the <code> **WebDevice** </code>
 <!-- end -->
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Members](amfWebDeviceClassMembers.html) <br /> [ Attach Method (string, ASNA.Monarch.WebDisplayFile)](amfWebDeviceClassAttachMethod.html) <br /> [ Detach Method (ASNA.Monarch.WebDisplayFile)](amfWebDeviceClassDetachMethod2.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Members](web-device-class-members.html) <br /> [ Attach Method (string, ASNA.Monarch.WebDisplayFile)](web-device-classAttach-method.html) <br /> [ Detach Method (ASNA.Monarch.WebDisplayFile)](web-device-classDetach-method2.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

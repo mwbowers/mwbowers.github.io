@@ -33,7 +33,7 @@ Gets the System.DateTime when the job was started.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -47,11 +47,11 @@ Gets the System.DateTime when the job was started.
 
 #### See Also
 <dl>
-        <dd>[Job Class](amfJobClass.html)
+        <dd>[Job Class](job-class.html)
         </dd><dd>
         [Job Class
-        Members](amfJobMembers.html)</dd>
+        Members](job-members.html)</dd>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

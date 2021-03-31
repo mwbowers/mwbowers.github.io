@@ -11,7 +11,7 @@ keywords: SqlCursor class, methods
 
 ---
 
-[ Program.SqlCursor Class Overview](amfProgramSqlCursorClass.html) 
+[ Program.SqlCursor Class Overview](program-sql-cursor-class.html) 
 <!--mine -->
 
 #### Public Methods
@@ -27,7 +27,7 @@ keywords: SqlCursor class, methods
           <tr>
             <td><img id="Img6" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
               [
-              Close](amfProgramSqlCursorClassCloseMethod.html)
+              Close](program-sql-cursor-class-close-method.html)
             </td>
             <td>Closes a SqlCursor.
             </td>
@@ -36,19 +36,19 @@ keywords: SqlCursor class, methods
             <td> 
                 <img id="Img7" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
               [
-              Fetch](amfProgramSqlCursorClassFetchMethod.html)
+              Fetch](program-sql-cursor-class-fetch-method.html)
             </td>
             <td> Determines if results are available
               and conditions the lines that retrieve the query
               results by the 
               [
-              SqlCursor.FetchOrientations](amfProgramSqlCursorFetchOrientationsEnumeration.html) value.
+              SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html) value.
             </td>
           </tr>
           <tr>
             <td>  <img id="Img8" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
               [
-              Open](amfProgramSqlCursorClassOpenMethods.html)
+              Open](program-sql-cursor-class-open-methods.html)
             </td>
             <td>Overloaded. Executes the select statement and
               populates the SQL cursor with or without select
@@ -58,7 +58,7 @@ keywords: SqlCursor class, methods
           <tr>
             <td><img id="Img9" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
               [
-              SqlQueryResultsByIndex](amfProgramSqlCursorClassSqlQueryResultsByIndexMethod.html)
+              SqlQueryResultsByIndex](program-sql-cursor-class-sql-query-results-by-index-method.html)
             </td>
             <td>Returns an object from the SqlCursor result set by index.
             </td>
@@ -66,4 +66,4 @@ keywords: SqlCursor class, methods
 </table>
 
 #### See Also
-[ ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.SqlCursor Class](amfProgramDBParmClass.html) <br /> [ SqlCursor.FetchOrientations Enumeration](amfProgramSqlCursorFetchOrientationsEnumeration.html) 
+[ ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.SqlCursor Class](program-db-parm-class.html) <br /> [ SqlCursor.FetchOrientations Enumeration](program-sql-cursor-fetch-orientations-enumeration.html) 

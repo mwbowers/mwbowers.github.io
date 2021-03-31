@@ -33,7 +33,7 @@ String. The substitution variables or name of the field containing the substitut
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -48,4 +48,4 @@ String. The substitution variables or name of the field containing the substitut
 <!-- end -->
 
 #### See Also
-[Message Class](amfMessageClass.html) <br /> [Message Class Members](amfMessageClassMembers.html) <br /> [ASNA.Monarch ](amfMonarchNamespace.html)
+[Message Class](message-class.html) <br /> [Message Class Members](message-class-members.html) <br /> [ASNA.Monarch ](monarch-namespace.html)

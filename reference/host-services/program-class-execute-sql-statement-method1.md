@@ -27,7 +27,7 @@ Executes a SQL command statement specifying the SQL statement and statement para
  *parameters*  </dt>
         <dd>
           [
-        DBParm](amfProgramDBParmClass.html). An array containing the statement
+        DBParm](program-db-parm-class.html). An array containing the statement
         parameters.</dd>
 </dl>
 
@@ -68,7 +68,7 @@ Gets migrated as:
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -83,13 +83,13 @@ Gets migrated as:
 #### See Also
 <dl>
         <dd>[Program
-        Class](amfProgramClass.html)</dd>
+        Class](program-class.html)</dd>
         <dd>
         [Program
-        Class Members](amfProgramClassMembers.html)</dd>
+        Class Members](program-class-members.html)</dd>
 <dd>[
-        Program.DBParm Class](amfProgramDBParmClass.html)</dd>
+        Program.DBParm Class](program-db-parm-class.html)</dd>
 <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

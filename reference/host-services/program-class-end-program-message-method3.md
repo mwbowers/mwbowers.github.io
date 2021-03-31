@@ -68,7 +68,7 @@ The following exceptions may be encountered during the execution of this method.
 #### Remarks
 This version of **SendProgramMessage** creates a message of type MessageTypes.Informational. The message is appended to the program message queue associated with the invocation prior to the caller's. This version permits the conventional use of message file-formatted texts.
 
-The *id* parameter may be used to identify a predefined message contained in a message file named by the *file* parameter. In this case, the message object added to the queue would be suitable for use with the [ MessageFormatter.FormatMessage](amfMessageFormatterClassFormatMessageMethod.html) method. Also, the *data* parameter may be used to provide values required by any substitution variables defined in the predefined message. Note that this describes the conventional use of *id* , *file* , and *data* , as supported by some Monarch Framework utility functions such as **FormatMessage** . Customized usage of these parameters is allowed, to say, create an "immediate" message that does not require predefined message files.
+The *id* parameter may be used to identify a predefined message contained in a message file named by the *file* parameter. In this case, the message object added to the queue would be suitable for use with the [ MessageFormatter.FormatMessage](message-formatter-class-format-message-method.html) method. Also, the *data* parameter may be used to provide values required by any substitution variables defined in the predefined message. Note that this describes the conventional use of *id* , *file* , and *data* , as supported by some Monarch Framework utility functions such as **FormatMessage** . Customized usage of these parameters is allowed, to say, create an "immediate" message that does not require predefined message files.
 
 Note that using this version of **SendProgramMessage** is precisely the same as calling the five-parameter overload as follows:
 
@@ -87,7 +87,7 @@ The method returns a message key which may be used to identify the message on th
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -102,4 +102,4 @@ The method returns a message key which may be used to identify the message on th
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

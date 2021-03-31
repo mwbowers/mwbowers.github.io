@@ -26,7 +26,7 @@ keywords: properties [ASNA.Monarch], WebJob class
           <tr>
             <td><img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               [
-              CurrentWebJob](amfWebJobClassCurrentWebJobProperty.html)
+              CurrentWebJob](web-job-class-current-web-job-property.html)
             </td>
             <td>Gets a reference to
             the currently running 
@@ -35,15 +35,15 @@ keywords: properties [ASNA.Monarch], WebJob class
             <td><img id="Img8" alt="public property" src="images/
 property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
               [
-              Device](amfWebJobClassDeviceProperty.html)
+              Device](web-job-class-device-property.html)
             </td>
             <td>The name of the 
             [
-            ASNA.Monarch.WebDevice](amfWebDeviceClass.html) used by the 
+            ASNA.Monarch.WebDevice](web-device-class.html) used by the 
  **WebJob** .</td>
           </tr>
 
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [WebJob Class](amfWebJobClass.html) <br /> [WebJob Members](amfWebJobClassMembers.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [WebJob Class](web-job-class.html) <br /> [WebJob Members](web-job-class-members.html) 

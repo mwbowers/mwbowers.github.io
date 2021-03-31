@@ -22,11 +22,11 @@ Gets a boolean value indicating whether the program will be allocated in the sam
 Boolean. **True** indicates the program will be allocated in the same activation group as the program calling this program; otherwise **False** .
 
 #### Remarks
-Refer to [ GroupName](amfActivationGroupAttributeClassGroupNameProperty.html), [ IsDefault](amfActivationGroupAttributeClassIsDefaultProperty.html), and [ IsNew](amfActivationGroupAttributeClassIsNewProperty.html) properties for additional information.
+Refer to [ GroupName](activation-group-attribute-class-group-name-property.html), [ IsDefault](activation-group-attribute-classIs-default-property.html), and [ IsNew](activation-group-attribute-classIs-new-property.html) properties for additional information.
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL
 
@@ -34,4 +34,4 @@ Refer to [ GroupName](amfActivationGroupAttributeClassGroupNameProperty.html), [
 <!-- end -->
 
 #### See Also
-[ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html) <br clear="none" /> [ ActivationGroupAttribute Members](amfActivationGroupAttributeClassMembers.html) <br clear="none" /> [ CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html) <br clear="none" /> [ NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ ActivationGroupAttribute Class](activation-group-attribute-class.html) <br clear="none" /> [ ActivationGroupAttribute Members](activation-group-attribute-class-members.html) <br clear="none" /> [ CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html) <br clear="none" /> [ NewActivationGroupAttribute Class](new-activation-group-attribute-class.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

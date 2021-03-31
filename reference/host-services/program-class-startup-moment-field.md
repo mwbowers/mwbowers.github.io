@@ -34,7 +34,7 @@ Read-only field containing the System.DateTime of when the Program was started.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td style="height: 27px">Assembly:</td>
@@ -49,4 +49,4 @@ Read-only field containing the System.DateTime of when the Program was started.
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

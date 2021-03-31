@@ -27,7 +27,7 @@ This overloaded method constructs a new instance of a **SqlPreparedStatement** o
             <th>Description</th>
           </tr>          <tr>
             <td>[
-            SqlPreparedStatement ( *DbConnection, string* )](amfProgramSqlPreparedStatementClassConstructor1.html)
+            SqlPreparedStatement ( *DbConnection, string* )](program-sql-prepared-statement-class-constructor1.html)
             </td>
             <td>Constructs a new instance of
           a SqlPreparedStatement object specifying the database
@@ -35,7 +35,7 @@ This overloaded method constructs a new instance of a **SqlPreparedStatement** o
           </tr>
           <tr>
             <td>[
-            SqlPreparedStatement ( *DbConnection, string, DBParm[ ]* )](amfProgramSqlPreparedStatementClassConstructor2.html)
+            SqlPreparedStatement ( *DbConnection, string, DBParm[ ]* )](program-sql-prepared-statement-class-constructor2.html)
             </td>
             <td>Constructs a new instance of
           a SqlPreparedStatement object specifying the database
@@ -51,7 +51,7 @@ This overloaded method constructs a new instance of a **SqlPreparedStatement** o
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -68,7 +68,7 @@ This overloaded method constructs a new instance of a **SqlPreparedStatement** o
 See Also
 
 [
-    Program.SqlPreparedStatement Class](amfProgramSqlPreparedStatementClass.html)<br />[
-    Program.SqlPreparedStatement Class Members](amfProgramSqlPreparedStatementClassMembers.html)<br />[ASNA.Monarch
-    Namespace](amfMonarchNamespace.html)<p />
+    Program.SqlPreparedStatement Class](program-sql-prepared-statement-class.html)<br />[
+    Program.SqlPreparedStatement Class Members](program-sql-prepared-statement-class-members.html)<br />[ASNA.Monarch
+    Namespace](monarch-namespace.html)<p />
 

@@ -16,10 +16,10 @@ keywords: activation group attributes, _Star_new
 
 The **NewActivationGroupAttribute** is provided to support the job activation manager when a program is to run in a new activation group. Monarch will create a new unique name for the group.
 
-For a list of all members of this class, see [ NewActivationGroupAttribute Class Members](amfNewActivationGroupAttributeClassMembers.html).
+For a list of all members of this class, see [ NewActivationGroupAttribute Class Members](new-activation-group-attribute-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.NewActivationGroupAttribute** </pre>
 
 <pre class="prettyprint"> **Public class NewActivationGroupAttribute Inherits System.Attribute**       </pre>
@@ -32,7 +32,7 @@ The **Job** maintains an ***activation manager*** responsible for handling the a
 <pre class="example"> BegClass Custcalc Extends (ASNA.Monarch.Program Access ( *Public ) +        
  Attributes ( NewActivationGroup ())</pre>
 
-Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html) and [ CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html) for more information.
+Refer to [ ActivationGroupAttribute Class](activation-group-attribute-class.html) and [ CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html) for more information.
 <!-- start -->
 
 #### Requirements
@@ -43,7 +43,7 @@ Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -58,4 +58,4 @@ Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ NewActivationGroupAttribute Class Members](amfNewActivationGroupAttributeClassMembers.html) <br />[ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html)<br />[ CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ NewActivationGroupAttribute Class Members](new-activation-group-attribute-class-members.html) <br />[ ActivationGroupAttribute Class](activation-group-attribute-class.html)<br />[ CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html)

@@ -42,7 +42,7 @@ Invoked by default as part of the session_end process in the global.asax file fo
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -57,4 +57,4 @@ Invoked by default as part of the session_end process in the global.asax file fo
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

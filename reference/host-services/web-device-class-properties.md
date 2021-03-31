@@ -10,7 +10,7 @@ keywords: properties [ASNA.Monarch], WebDevice class
 
 ---
 
-[WebDevice Class Overview](amfWebDeviceClass.html) 
+[WebDevice Class Overview](web-device-class.html) 
 <!-- start public properties table -->	
 
 #### Public Properties
@@ -27,14 +27,14 @@ keywords: properties [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img alt="public property" src="images/property.bmp" />
               [
-              ActiveDisplayFile](amfWebDeviceClassActiveDisplayFileProperty.html)
+              ActiveDisplayFile](web-device-class-active-display-file-property.html)
             </td>
             <td>Gets an instance of the 
             [
-            WebDisplayFile](amfWebDisplayFileClass.html) object for the 
+            WebDisplayFile](web-display-file-class.html) object for the 
  **WebDevice** .</td>
           </tr>
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [WebDevice Class](amfWebDeviceClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [WebDevice Class](web-device-class.html) 

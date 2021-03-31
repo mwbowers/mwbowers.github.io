@@ -13,10 +13,10 @@ keywords: message queues
 
 The **MessageQueue** is a class used for messages in the message queue.
 
-For a list of all members of this type, see [ MessageQueue Members](amfMessageQueueClassMembers.html).
+For a list of all members of this type, see [ MessageQueue Members](message-queue-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)   
+<pre>[ASNA.Monarch](monarch-namespace.html)   
  **ASNA.Monarch.MessageQueue**       </pre>
 
 #### Syntax
@@ -34,7 +34,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -49,4 +49,4 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ MessageQueue Members](amfMessageQueueClassMembers.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ MessageQueue Members](message-queue-class-members.html) 

@@ -22,11 +22,11 @@ This class provides support in the areas of:
 - Program Control
 - Embedded SQL support
 
-For a list of all members of this type, see [Program Class Members](amfProgramClassMembers.html).
+For a list of all members of this type, see [Program Class Members](program-class-members.html).
 <!-- start -->
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.Program** </pre>
 
 <!-- start -->
@@ -55,32 +55,32 @@ Any public static (Shared) members of this type are safe for multithreaded opera
         program, or a system user, it is placed on a message queue
         associated with that procedure, program, or user. The 
         [
-        SendExternalMessage](amfProgramClassSendExternalMessageMethod.html) method sends an immediate or
+        SendExternalMessage](program-class-end-external-message-method.html) method sends an immediate or
         predefined external program message and returns a response
         depending on the 
         [
-        type](amfMessageTypesEnumeration.html) of message sent. The response may be entered by the
+        type](messa-ge-types-enumeration.html) of message sent. The response may be entered by the
         user, the default message (if any), or *N. The overloaded 
         [
-        SendProgramMessage](amfProgramClassSendProgramMessageMethods.html) method sends an immediate or
+        SendProgramMessage](program-class-end-program-message-methods.html) method sends an immediate or
         predefined program message. The different overloaded
         methods allow messages to be sent to specific message files
         and program queues and to return a response depending on
         the ** *type* **  of message sent. The overloaded 
         [
-        RemoveMessage](amfProgramClassRemoveMessageMethods.html) method removes a message by message key or
+        RemoveMessage](program-class-remove-message-methods.html) method removes a message by message key or
         message key and program queue.
 
 **Program Control** 
 
 - The 
         [
-        ExecCommand](amfProgramClassExecCommandMethod.html) method executes the program command specified. The 
+        ExecCommand](program-class-exec-command-method.html) method executes the program command specified. The 
         [
-        MonarchJob](amfProgramClassMonarchJobProperty.html) read-only property contains the name of the 
+        MonarchJob](program-class-monarch-job-property.html) read-only property contains the name of the 
  **ASNA.Monarch.Job**  under which the 
  **Program**  is running. The 
-        [Dispose](amfProgramClassDisposeMethod.html) returns 
+        [Dispose](program-class-dispose-method.html) returns 
  **true**  if the program is in the process of
         being disposed of.
 
@@ -88,33 +88,33 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 - For SQL, the Program Class provides 
         [
-        ExecuteSQL_Query](amfProgramClassExecuteSQL_QueryMethods.html) and 
+        ExecuteSQL_Query](program-class-execute-sql-query-methods.html) and 
         [
-        ExecuteSQL_Statement](amfProgramClassExecuteSQL_StatementMethods.html) methods for the execution of
+        ExecuteSQL_Statement](program-class-execute-sql-statement-methods.html) methods for the execution of
         query and non-query SQL statements respectively.  (For
         debugging 
         [
-        ExecuteSQL_QueryVerbatim](amfProgramClassExecuteSQL_QueryVerbatimMethods.html) and 
+        ExecuteSQL_QueryVerbatim](program-class-execute-sql-query-verbatim-methods.html) and 
         [
-        ExecuteSQL_StatementVerbatim](amfProgramClassExecuteSQL_StatementVerbatimMethods.html) methods are also
+        ExecuteSQL_StatementVerbatim](program-class-execute-sql-statement-verbatim-methods.html) methods are also
         provided.)  Results data sets are contained in the
         protected
         [
-        SqlQueryResults](amfProgramClassSqlQueryResultsField.html) field.  Nested classes for
+        SqlQueryResults](program-class-sql-query-results-field.html) field.  Nested classes for
         SQL include: 
         [
-        DBParm](amfProgramDBParmClass.html), 
+        DBParm](program-db-parm-class.html), 
         [
-        DBScaledParm,](amfProgramDBScaledParmClass.html) and 
+        DBScaledParm,](program-db-scaled-parm-class.html) and 
         [
-        DBStrParm](amfProgramDBStrParmClass.html) for defining parameters, 
+        DBStrParm](program-db-str-parm-class.html) for defining parameters, 
         [
-        SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html) for the global SQLCA, 
+        SQL_CommunicationsArea](program-sql-communications-area-class.html) for the global SQLCA, 
         [
-        SqlCursor](amfProgramSqlCursorClass.html) for multi-row dataset on which the
+        SqlCursor](program-sql-cursor-class.html) for multi-row dataset on which the
         cursor methods operate, and 
         [
-        SqlPreparedStatement](amfProgramSqlPreparedStatementClass.html) for the prepared version of a
+        SqlPreparedStatement](program-sql-prepared-statement-class.html) for the prepared version of a
         SQL command.
 
 <!-- start -->
@@ -127,7 +127,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -142,9 +142,9 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 #### See Also
 <dl>
     <dd>[Monarch Job and Program Classes Concepts](amfconMonarchJobandProgramClasses.html)</dd>
-          <dd>[ASNA.Monarch Namespace](amfMonarchNamespace.html)</dd>
-          <dd>[Program Class Members](amfProgramClassMembers.html)</dd>
-          <dd>[ASNA.Monarch.MessageTypes](amfMessageTypesEnumeration.html)</dd>
+          <dd>[ASNA.Monarch Namespace](monarch-namespace.html)</dd>
+          <dd>[Program Class Members](program-class-members.html)</dd>
+          <dd>[ASNA.Monarch.MessageTypes](messa-ge-types-enumeration.html)</dd>
           <dd>[Embedded SQL Overview](amfconSQLStatementExamples.html)</dd>
 </dl>
 

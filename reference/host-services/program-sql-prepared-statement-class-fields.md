@@ -11,7 +11,7 @@ keywords: SqlPreparedStatement class, fields
 
 ---
 
-[ Program.SqlPreparedStatement Class Overview](amfProgramSqlPreparedStatementClass.html) 
+[ Program.SqlPreparedStatement Class Overview](program-sql-prepared-statement-class.html) 
 
 #### Public Fields
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: SqlPreparedStatement class, fields
           </tr>          <tr>
             <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-            cmd](amfProgramSqlPreparedStatementClasscmdField.html)
+            cmd](program-sql-prepared-statement-classcmd-field.html)
             </td>
             <td> **System.Data.IDbCommand**  object
           representing an SQL statement that is
@@ -34,13 +34,13 @@ keywords: SqlPreparedStatement class, fields
           <tr>
             <td><img id="Img5" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-            SQLCA](amfProgramSqlPreparedStatementClassSQLCAField.html)
+            SQLCA](program-sql-prepared-statement-class-sqlca-field.html)
             </td>
             <td>[
-          SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html) object to trap and report
+          SQL_CommunicationsArea](program-sql-communications-area-class.html) object to trap and report
           run-time errors for the SqlPreparedStatement.</td>
           </tr>
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.SQL_CommunicationsArea Class](amfProgramSqlPreparedStatementClass.htm" target=""> Program.SqlPreparedStatement Class</a> <br /> <a href="amfProgramSQL_CommunicationsAreaClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.SQL_CommunicationsArea Class](amfProgramSqlPreparedStatementClass.htm" target=""> Program.SqlPreparedStatement Class</a> <br /> <a href="amfProgramSQL_CommunicationsAreaClass.html) 

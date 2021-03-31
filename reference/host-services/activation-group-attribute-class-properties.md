@@ -10,7 +10,7 @@ keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
 
 ---
 
-[ ActivationGroupAttribute Overview](amfActivationGroupAttributeClass.html) 
+[ ActivationGroupAttribute Overview](activation-group-attribute-class.html) 
 <!-- start public properties table -->	
 
 #### Public Properties
@@ -27,7 +27,7 @@ keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
           <tr valign="top">
             <td>              <img class="hcp4" style="WIDTH: 16px; HEIGHT: 16px" height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              GroupName](amfActivationGroupAttributeClassGroupNameProperty.html)
+              GroupName](activation-group-attribute-class-group-name-property.html)
             </td>
             <td
 
@@ -38,7 +38,7 @@ keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
           <tr>
             <td>              ![](images/property.bmp)
               [
-              IsCaller](amfActivationGroupAttributeClassIsCallerProperty.html)
+              IsCaller](activation-group-attribute-classIs-caller-property.html)
             </td>
             <td>Gets a boolean value
             indicating whether the program will be allocated in the
@@ -49,7 +49,7 @@ keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
           <tr>
             <td>              ![](images/property.bmp)
               [
-              IsDefault](amfActivationGroupAttributeClassIsDefaultProperty.html)
+              IsDefault](activation-group-attribute-classIs-default-property.html)
             </td>
             <td>Gets a boolean value
             indicating whether the program falls into the *Default
@@ -61,7 +61,7 @@ keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
           <tr>
             <td>              ![](images/property.bmp)
               [
-              IsNew](amfActivationGroupAttributeClassIsNewProperty.html)
+              IsNew](activation-group-attribute-classIs-new-property.html)
             </td>
             <td
 
@@ -73,4 +73,4 @@ keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
 </table>
 
 #### See Also
-[ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ ActivationGroupAttribute Class](activation-group-attribute-class.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

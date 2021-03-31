@@ -11,7 +11,7 @@ keywords: members [ASNA.Monarch], MessageFormatter class
 
 ---
 
-[ MessageFormatter Class Overview](amfMessageFormatterClass.html) 
+[ MessageFormatter Class Overview](message-formatter-class.html) 
 <!--mine -->
 
 #### Constructors
@@ -27,7 +27,7 @@ keywords: members [ASNA.Monarch], MessageFormatter class
           <tr valign="top">
             <td>  <img height="16" alt="constructor" src="images/constructor.bmp" width="16" border="0" />
               [
-              MessageFormatter](amfMessageFormatterClassConstructors.html)
+              MessageFormatter](message-formatter-class-constructors.html)
             </td>
             <td>Creates a new instance of a
 
@@ -50,7 +50,7 @@ keywords: members [ASNA.Monarch], MessageFormatter class
           <tr>
             <td>  <img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              FormatMessage](amfMessageFormatterClassFormatMessageMethod.html)
+              FormatMessage](message-formatter-class-format-message-method.html)
             </td>
             <td>Returns a formatted
             message.</td>
@@ -58,7 +58,7 @@ keywords: members [ASNA.Monarch], MessageFormatter class
           <tr>
             <td>  <img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              IsPhysicalMsgFilePath](amfMessageFormatterClassIsPhysicalMsgFilePathMethod.html)
+              IsPhysicalMsgFilePath](message-formatter-classIs-physical-msg-file-path-method.html)
             </td>
             <td>Returns boolean true when
             the message formatted is a physical file path and also
@@ -76,9 +76,9 @@ keywords: members [ASNA.Monarch], MessageFormatter class
 
 #### See Also
 [ASNA.Monarch
-      Namespace](amfMonarchNamespace.html)
+      Namespace](monarch-namespace.html)
       <br />
       [
-      MessageFormatter Class](amfMessageFormatterClass.html)
+      MessageFormatter Class](message-formatter-class.html)
       <p />  
 

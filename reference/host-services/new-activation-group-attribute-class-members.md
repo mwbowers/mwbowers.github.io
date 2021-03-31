@@ -12,7 +12,7 @@ keywords: ASNA.Monarch.NewActivationGroupAttribute class
 
 ---
 
-[ NewActivationGroupAttribute Overview](amfNewActivationGroupAttributeClass.html) 
+[ NewActivationGroupAttribute Overview](new-activation-group-attribute-class.html) 
 
 #### Constructor
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -27,7 +27,7 @@ keywords: ASNA.Monarch.NewActivationGroupAttribute class
           <tr valign="top">
             <td><img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              NewActivationGroupAttribute](amfNewActivationGroupAttributeClassConstructors.html)
+              NewActivationGroupAttribute](new-activation-group-attribute-class-constructors.html)
             </td>
             <td>Method to construct a new
             instance of a 
@@ -36,4 +36,4 @@ keywords: ASNA.Monarch.NewActivationGroupAttribute class
 </table>
 
 #### See Also
-[ NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ NewActivationGroupAttribute Class](new-activation-group-attribute-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html)

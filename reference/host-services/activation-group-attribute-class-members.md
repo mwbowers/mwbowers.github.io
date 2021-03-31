@@ -28,7 +28,7 @@ This document contains all members listed for the class.
             <td>
               <img class="hcp4" style="WIDTH: 16px; HEIGHT: 16px" height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              ActivationGroupAttribute](amfActivationGroupAttributeClassConstructors.html)
+              ActivationGroupAttribute](activation-group-attribute-class-constructors.html)
             </td>
             <td>Overloaded method to
             construct a new instance of an 
@@ -50,7 +50,7 @@ This document contains all members listed for the class.
           <tr valign="top">
             <td>              <img class="hcp4" style="WIDTH: 16px; HEIGHT: 16px" height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              GroupName](amfActivationGroupAttributeClassGroupNameProperty.html)
+              GroupName](activation-group-attribute-class-group-name-property.html)
             </td>
             <td
 
@@ -61,7 +61,7 @@ This document contains all members listed for the class.
           <tr>
             <td>              ![](images/property.bmp)
               [
-              IsCaller](amfActivationGroupAttributeClassIsCallerProperty.html)
+              IsCaller](activation-group-attribute-classIs-caller-property.html)
             </td>
             <td
 
@@ -74,7 +74,7 @@ This document contains all members listed for the class.
           <tr>
             <td>              ![](images/property.bmp)
               [
-              IsDefault](amfActivationGroupAttributeClassIsDefaultProperty.html)
+              IsDefault](activation-group-attribute-classIs-default-property.html)
             </td>
             <td
 
@@ -88,7 +88,7 @@ This document contains all members listed for the class.
           <tr>
             <td>              ![](images/property.bmp)
               [
-              IsNew](amfActivationGroupAttributeClassIsNewProperty.html)
+              IsNew](activation-group-attribute-classIs-new-property.html)
             </td>
             <td
 
@@ -102,9 +102,9 @@ This document contains all members listed for the class.
 #### See Also
 <dl><dt>
         [
-        ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html)</dt>
+        ActivationGroupAttribute Class](activation-group-attribute-class.html)</dt>
        <dt>
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dt>
+        Namespace](monarch-namespace.html)</dt>
 </dl>
 

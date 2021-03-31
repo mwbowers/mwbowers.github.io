@@ -29,7 +29,7 @@ A readonly **System.Collections.ArrayList** of the messages in the message queue
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -44,4 +44,4 @@ A readonly **System.Collections.ArrayList** of the messages in the message queue
 <!-- end -->
 
 #### See Also
-[ MessageQueue Class](amfMessageQueueClass.html) <br /> [ MessageQueue Class Members](amfMessageQueueClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ MessageQueue Class](message-queue-class.html) <br /> [ MessageQueue Class Members](message-queue-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

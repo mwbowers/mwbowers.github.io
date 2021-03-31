@@ -29,7 +29,7 @@ Overloaded method to execute a SQL query with the SQL statement exactly as conta
 
           <tr>
             <td>[
-            ExecuteSQL_QueryVerbatim ( *string)* ](amfProgramClassExecuteSQL_QueryVerbatimMethod3.html)
+            ExecuteSQL_QueryVerbatim ( *string)* ](program-class-execute-sql-query-verbatim-method3.html)
               <em />
             </td>
             <td>Executes a SQL query
@@ -37,7 +37,7 @@ Overloaded method to execute a SQL query with the SQL statement exactly as conta
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_QueryVerbatim ( *string, DBParm[ ]* )](amfProgramClassExecuteSQL_QueryVerbatimMethod1.html)
+            ExecuteSQL_QueryVerbatim ( *string, DBParm[ ]* )](program-class-execute-sql-query-verbatim-method1.html)
             </td>
             <td>Executes a SQL query
           specifying the SQL statement and statement
@@ -45,7 +45,7 @@ Overloaded method to execute a SQL query with the SQL statement exactly as conta
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_QueryVerbatim ( *DbConnection, string)* ](amfProgramClassExecuteSQL_QueryVerbatimMethod4.html)
+            ExecuteSQL_QueryVerbatim ( *DbConnection, string)* ](program-class-execute-sql-query-verbatim-method4.html)
               <em />
             </td>
             <td>Executes a SQL
@@ -54,7 +54,7 @@ Overloaded method to execute a SQL query with the SQL statement exactly as conta
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_QueryVerbatim ( *DbConnection, string, DBParm[ ]* )](amfProgramClassExecuteSQL_QueryVerbatimMethod2.html)
+            ExecuteSQL_QueryVerbatim ( *DbConnection, string, DBParm[ ]* )](program-class-execute-sql-query-verbatim-method2.html)
             </td>
             <td>Executes a SQL
           query specifying the database connection, SQL
@@ -72,7 +72,7 @@ Overloaded method to execute a SQL query with the SQL statement exactly as conta
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -87,4 +87,4 @@ Overloaded method to execute a SQL query with the SQL statement exactly as conta
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html)<br />[Program Class Members](amfProgramClassMembers.html)<br />[Program.DBParm Class](amfProgramDBParmClass.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)<br />[Embedded SQL Overview](amfconSQLStatementExamples.html)
+[Program Class](program-class.html)<br />[Program Class Members](program-class-members.html)<br />[Program.DBParm Class](program-db-parm-class.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)<br />[Embedded SQL Overview](amfconSQLStatementExamples.html)

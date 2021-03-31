@@ -13,10 +13,10 @@ keywords: activation manager, CallerActivationGroupAttribute
 
 The <code> **CallerActivationGroupAttribute** </code> is provided to support the job activation manager when a program is to be allocated in the same activation group as the program by which it is called.
 
-For a list of all members of this class, see [Class Members](amfCallerActivationGroupAttributeClassMembers.html).
+For a list of all members of this class, see [Class Members](caller-activation-group-attribute-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.CallerActivationGroupAttribute**   </pre>
 
 #### Syntax
@@ -33,7 +33,7 @@ The **Job** maintains an ***activation manager*** responsible for handling the a
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -43,10 +43,10 @@ The **Job** maintains an ***activation manager*** responsible for handling the a
 #### See Also
 <dl><dt>
         [ASNA.Monarch
-      Namespace](amfMonarchNamespace.html)</dt><dt>
+      Namespace](monarch-namespace.html)</dt><dt>
         [
-      CallerActivationGroupAttribute Class Members](amfCallerActivationGroupAttributeClassMembers.html) 
+      CallerActivationGroupAttribute Class Members](caller-activation-group-attribute-class-members.html) 
      </dt><dt>[
-      ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html)</dt><dt>[
-      NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html)</dt></dl>
+      ActivationGroupAttribute Class](activation-group-attribute-class.html)</dt><dt>[
+      NewActivationGroupAttribute Class](new-activation-group-attribute-class.html)</dt></dl>
 

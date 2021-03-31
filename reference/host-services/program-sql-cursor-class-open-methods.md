@@ -24,14 +24,14 @@ This overloaded methods executes the select statement and populates the SQL curs
           </tr>
           <tr>
             <td>[
-            SqlCursor.Open ()](amfProgramSqlCursorClassOpenMethod1.html)
+            SqlCursor.Open ()](program-sql-cursor-class-open-method1.html)
             </td>
             <td>Opens a SQL cursor.</td>
           </tr>
           <tr>
             <td>[
             SqlCursor.Open (
- *DBParms[ ]* )](amfProgramSqlCursorClassOpenMethod2.html)
+ *DBParms[ ]* )](program-sql-cursor-class-open-method2.html)
             </td>
             <td>Opens a SQL cursor with
           parameters.</td>
@@ -46,7 +46,7 @@ This overloaded methods executes the select statement and populates the SQL curs
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -61,10 +61,10 @@ This overloaded methods executes the select statement and populates the SQL curs
 #### See Also
 <dl>
         <dd>[
-        Program.SqlCursor Class](amfProgramSqlCursorClass.html)</dd>
+        Program.SqlCursor Class](program-sql-cursor-class.html)</dd>
         <dd>[
-        Program.SqlCursor Class Members](amfProgramSqlCursorClassMembers.html)</dd>
+        Program.SqlCursor Class Members](program-sql-cursor-class-members.html)</dd>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
 </dl>
 

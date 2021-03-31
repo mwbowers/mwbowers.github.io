@@ -25,7 +25,7 @@ Returns a string of 8 characters with values '0' and '1', each character represe
 A string of 8 characters with values '0' and '1'. Each character represents one of the switches. '0' if the switch is 'off' or a '1' if the switch is 'on'.
 
 #### Remarks
-RPG programs have access to these switches via the *INUx indicators. In order to support applications using these switches, the **Job** class provides a set of methods to access the 8 values. Additional methods to return or set a specific switch are [ GetSwitch](amfJobClassGetSwitchMethod.html) and [ SetSwitch](amfJobClassSetSwitchMethod.html) respectively. The [ CLProgram](amfCLProgramClass.html) class also provides the method [ RTVJOBA_SWS](amfCLProgramClassRTVJOBA_SWSMethod.html) to facilitate the translation of the RTVJOBA CL command SWS attribute.
+RPG programs have access to these switches via the *INUx indicators. In order to support applications using these switches, the **Job** class provides a set of methods to access the 8 values. Additional methods to return or set a specific switch are [ GetSwitch](job-class-get-switch-method.html) and [ SetSwitch](job-class-set-switch-method.html) respectively. The [ CLProgram](clprogram-class.html) class also provides the method [ RTVJOBA_SWS](clprogram-class-rtv-joba-sws-method.html) to facilitate the translation of the RTVJOBA CL command SWS attribute.
 <!-- start -->
 
 #### Requirements
@@ -36,7 +36,7 @@ RPG programs have access to these switches via the *INUx indicators. In order to
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -51,4 +51,4 @@ RPG programs have access to these switches via the *INUx indicators. In order to
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br clear="none" /> [Job Class Members](amfJobMembers.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br clear="none" /> [Job Class Members](job-members.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -10,7 +10,7 @@ keywords: members [ASNA.Monarch], WebJob class
 
 ---
 
-[WebJob Class Overview](amfWebJobClass.html) 
+[WebJob Class Overview](web-job-class.html) 
 
 #### Constructors
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: members [ASNA.Monarch], WebJob class
           <tr valign="top">
             <td><img  id="IMG1" alt="public property" src="images/constructor.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               [
-              WebJob](amfWebJobClassWebJobConstructors.html)
+              WebJob](web-job-class-web-job-constructors.html)
             </td>
             <td>Constructs a new instance
             of 
@@ -49,7 +49,7 @@ keywords: members [ASNA.Monarch], WebJob class
           <tr valign="top">
             <td><img class="hcp4" alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               <code>[
-              CurrentWebJob](amfWebJobClassCurrentWebJobProperty.html)</code>
+              CurrentWebJob](web-job-class-current-web-job-property.html)</code>
             </td>
             <td>Gets a reference to
             the currently running 
@@ -58,11 +58,11 @@ keywords: members [ASNA.Monarch], WebJob class
             <td><img  id="Img8" alt="public property" src="images/
 property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
               <code>[
-              Device](amfWebJobClassDeviceProperty.html)</code>
+              Device](web-job-class-device-property.html)</code>
             </td>
             <td>The name of the 
             [
-            ASNA.Monarch.WebDevice](amfWebDeviceClass.html) used by the 
+            ASNA.Monarch.WebDevice](web-device-class.html) used by the 
  **WebJob** .</td>
           </tr>
 
@@ -83,7 +83,7 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
           <tr>
             <td><img  id="Img5" alt="public property" src="images/methods.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               [
-              AcceptCommands](amfWebJobClassAcceptCommandsMethod.html)
+              AcceptCommands](web-job-class-accept-commands-method.html)
             </td>
             <td>Prepares a job to accept
             commands.</td>
@@ -91,7 +91,7 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
           <tr>
             <td><img  id="IMG2" alt="public property" src="images/methods.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               [
-              EndProgram](amfWebJobClassEndProgramsMethod.html)
+              EndProgram](web-job-class-end-programs-method.html)
             </td>
             <td>Terminates the current 
  **WebJob**  program.</td>
@@ -99,14 +99,14 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
           <tr>
             <td><img  id="Img7" alt="public property" src="images/methods.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               [
-              RequestShutDown](amfWebJobClassRequestShutDownMethod.html)
+              RequestShutDown](web-job-class-request-shutdown-method.html)
             </td>
             <td>Initiates a timed shut down
             request for the web job.</td>
           </tr>
           <tr>
             <td><img  id="Img6" alt="public property" src="images/methods.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
-              [ShowPage](amfWebJobClassShowPageMethod.html)
+              [ShowPage](web-job-class-show-page-method.html)
             </td>
             <td>Prepares a job to accept
             commands by presenting an ASPX page to initiate the
@@ -114,7 +114,7 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
           </tr>
           <tr>
             <td><img  id="Img3" alt="public property" src="images/methods.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
-              [ShutDown](amfWebJobClassShutDownMethod.html)
+              [ShutDown](web-job-class-shutdown-method.html)
             </td>
             <td>Ends all active programs,
             closes the database connections for disk and printer
@@ -124,7 +124,7 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
           <tr>
             <td><img  id="Img4" alt="public method" src="images/methods.bmp" x-maintain-ratio="TRUE" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" />
               [
-              Start](amfWebJobClassStartMethod.html)
+              Start](web-job-class-start-method.html)
             </td>
             <td>Creates an instance of an 
  **ASNA.Monarch.WebDevice**  object and
@@ -141,7 +141,7 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
           <tr>
             <td style="width: 173px"><img alt="public property" src="images/promethod.bmp" x-maintain-ratio="TRUE" border="0" />
               [
-              ExecuteStartupProgram](amfWebJobClassExecuteStartupProgramMethod.html)
+              ExecuteStartupProgram](web-job-class-execute-startup-program-method.html)
             </td>
             <td>Executes the startup
             command processing program.</td>
@@ -149,4 +149,4 @@ property.bmp" x-maintain-ratio="TRUE" width="16" height="16" border="0" />
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [WebJob Class](amfWebJobClass.html) <br /> [ ASNA.Monarch.WebDevice Class](amfWebDeviceClass.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [WebJob Class](web-job-class.html) <br /> [ ASNA.Monarch.WebDevice Class](web-device-class.html)

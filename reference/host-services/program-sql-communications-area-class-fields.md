@@ -11,7 +11,7 @@ keywords: SQL_CommunicationsArea class, fields
 
 ---
 
-[ Program.SQL_CommunicationsArea Class Overview](amfProgramSQL_CommunicationsAreaClass.html) 
+[ Program.SQL_CommunicationsArea Class Overview](program-sql-communications-area-class.html) 
 
 #### Public Fields
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: SQL_CommunicationsArea class, fields
           </tr>          <tr valign="top">
             <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SQL_Exception](amfProgramSQL_CommunicationsAreaClassSQL_ExceptionField.html)
+              SQL_Exception](program-sql-communications-area-class-sql-exception-field.html)
             </td>
             <td>[
               SQLCOD](http://msdn2.microsoft.com/en-us/library/system.data.sqlclient.sqlexception_members(VS.71).aspx">
@@ -42,7 +42,7 @@ keywords: SQL_CommunicationsArea class, fields
           <tr valign="top">
             <td><img id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SqlCommandText](amfProgramSQL_CommunicationsAreaClassSqlCommandTextField.html)
+              SqlCommandText](program-sql-communications-area-class-sql-command-text-field.html)
             </td>
             <td>Read-only actual SQL
             command text executed.</td>
@@ -50,7 +50,7 @@ keywords: SQL_CommunicationsArea class, fields
           <tr valign="top">
             <td><img id="Img3" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SQLSTT](amfProgramSQL_CommunicationsAreaClassSQLSTTField.html)
+              SQLSTT](program-sql-communications-area-class-sqlsst-field.html)
             </td>
             <td>An additional common
             return code of the last SQL statement
@@ -60,8 +60,8 @@ keywords: SQL_CommunicationsArea class, fields
 
 #### See Also
 [ASNA.Monarch
-      Namespace](amfMonarchNamespace.html)
+      Namespace](monarch-namespace.html)
       <br />
       [
-      Program.SQL_CommunicationsArea Class](amfProgramSQL_CommunicationsAreaClass.html)
+      Program.SQL_CommunicationsArea Class](program-sql-communications-area-class.html)
 

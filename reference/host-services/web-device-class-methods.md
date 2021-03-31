@@ -10,7 +10,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
 
 ---
 
-[WebDevice Class Overview](amfWebDeviceClass.html) 
+[WebDevice Class Overview](web-device-class.html) 
 <!--mine -->
 
 #### Public Methods
@@ -25,7 +25,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="IMG2" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Attach](amfWebDeviceClassAttachMethods.html)
+              [Attach](web-device-classAttach-methods.html)
             </td>
             <td>Overloaded. Attaches a
 
@@ -35,7 +35,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="Img1" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Detach](amfWebDeviceClassDetachMethods.html)
+              [Detach](web-device-classDetach-methods.html)
             </td>
             <td>Overloaded. Detaches a
             shared file or 
@@ -45,7 +45,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="Img3" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Dispose](amfWebDeviceClassDisposeMethod.html)
+              [Dispose](web-device-class-dispose-method.html)
             </td>
             <td
 
@@ -56,7 +56,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img8" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            GetRecordIndex](amfWebDeviceClassGetRecordIndexMethod.html)</td>
+            GetRecordIndex](web-device-class-get-record-index-method.html)</td>
             <td>Gets an integer
             containing the index for the record
             format specified.</td>
@@ -64,7 +64,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img8" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            GetRecordIndicators](amfWebDeviceClassGetRecordIndicatorsMethod.html)</td>
+            GetRecordIndicators](web-device-class-get-record-indicators-method.html)</td>
             <td>pending Gets an array
             of boolean values representing the evaluation (true or
             false) for each of the indicators of the record
@@ -73,7 +73,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img4" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              GetSharedFile](amfWebDeviceClassGetSharedFileMethod.html)
+              GetSharedFile](web-device-class-get-shared-file-method.html)
             </td>
             <td>Returns an instance of the 
  **WebDisplayFile**  object for the file name
@@ -82,7 +82,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img6" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              GetThreadDevice](amfWebDeviceClassGetThreadDeviceMethod.html)
+              GetThreadDevice](web-device-class-get-thread-device-method.html)
             </td>
             <td
 
@@ -91,7 +91,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           </tr>
           <tr>
             <td>              <img  id="Img7" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
-              [Read](amfWebDeviceClassReadMethod2.html)
+              [Read](web-device-class-read-method2.html)
             </td>
             <td
 
@@ -102,7 +102,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img8" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            SetRecordIndex](amfWebDeviceClassSetRecordIndexMethod.html)</td>
+            SetRecordIndex](web-device-class-set-record-index-method.html)</td>
             <td
 
 >Sets the
@@ -114,7 +114,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
  height="23">
               <img  id="Img8" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" /> 
             [
-            SetRecordIndicators](amfWebDeviceClassSetRecordIndicatorsMethod.html)</td>
+            SetRecordIndicators](web-device-class-set-record-indicators-method.html)</td>
             <td
 
  height="23">Sets an
@@ -125,7 +125,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img8" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SetRecordState](amfWebDeviceClassSetRecordStateMethod.html)
+              SetRecordState](web-device-class-set-record-state-method.html)
             </td>
             <td
 
@@ -137,7 +137,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img9" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SignalDataReadyForProgram](amfWebDeviceClassSignalDataReadyForProgramMethod.html)
+              SignalDataReadyForProgram](web-device-class-signal-dat-a-ready-for-program-method.html)
             </td>
             <td
 
@@ -148,7 +148,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img10" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SignalDataReadyForUser](amfWebDeviceClassSignalDataReadyForUserMethod.html)
+              SignalDataReadyForUser](web-device-class-signal-dat-a-ready-for-user-method.html)
             </td>
             <td
 
@@ -159,7 +159,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img11" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              WaitForDataForProgram](amfWebDeviceClassWaitForDataForProgramMethod.html)
+              WaitForDataForProgram](web-device-class-wait-for-data-for-program-method.html)
             </td>
             <td
 
@@ -170,7 +170,7 @@ keywords: methods [ASNA.Monarch], WebDevice class
           <tr>
             <td>              <img  id="Img12" height="16" alt="public property" src="images/methods.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              WaitForDataForUser](amfWebDeviceClassWaitForDataForUserMethod.html)
+              WaitForDataForUser](web-device-class-wait-for-data-for-user-method.html)
             </td>
             <td
 
@@ -181,4 +181,4 @@ keywords: methods [ASNA.Monarch], WebDevice class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [WebDevice Class](amfWebDeviceClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [WebDevice Class](web-device-class.html) 

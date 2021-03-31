@@ -10,7 +10,7 @@ keywords: members [ASNA.Monarch], Program.DBStrParm class
 
 ---
 
-[ Program.DBStrParm Class Overview](amfProgramDBStrParmClass.html) 
+[ Program.DBStrParm Class Overview](program-db-str-parm-class.html) 
 
 #### Constructor
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: members [ASNA.Monarch], Program.DBStrParm class
           <tr valign="top">
             <td><img id="IMG1" style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/constructor.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              Program.DBStrParm](amfProgramDBStrParmClassConstructors.html)
+              Program.DBStrParm](program-db-str-parm-class-constructors.html)
             </td>
             <td>Overloaded. Creates a
             new instance of a 
@@ -34,4 +34,4 @@ keywords: members [ASNA.Monarch], Program.DBStrParm class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.DBStrParm Class](amfProgramDBStrParmClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.DBStrParm Class](program-db-str-parm-class.html) 

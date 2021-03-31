@@ -16,10 +16,10 @@ keywords: LDC
 
 The **LocalDataCollection** is a derived class that is a container for a collection of name/value pairs for the job. It inherits the properties and methods of and uses the shown in the hierarchy list.
 
-For a list of all members of this type, see [ LocalDataCollection Members](amfLocalDataCollectionMembers.html).
+For a list of all members of this type, see [ LocalDataCollection Members](local-data-collection-members.html).
 
 #### Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
    System.Collections 
    System.Collections.IEnumerable 
    System.Collections.ICollection 
@@ -43,36 +43,36 @@ Any public static (Shared) members of this type are safe for multithreaded opera
         LDA, unless it is mapped to a data structure). 
         Using 
         [
-        this](amfLocalDataCollectionClassthisProperty.html) property, if the specific name already exists in
+        this](local-data-collection-classthis-property.html) property, if the specific name already exists in
         the dictionary, the value is replaced; otherwise, a new
         element is created. In contrast, the 
         [
-        Add](amfLocalDataCollectionClassAddMethod.html) method adds a name/value pair but does not modify
+        Add](local-data-collection-class-add-method.html) method adds a name/value pair but does not modify
         existing elements.
 3. The syntax to access the values is much simpler with 
         [
-        Job.LDC](amfJobClassLDCField.html)
+        Job.LDC](job-class-ldc-field.html)
 4. The LocalDataCollection is more flexible, one can
         easily: 
 <li>determine how many named objects are stored (
           [Count
-          property](amfLocalDataCollectionClassCountProperty.html))
+          property](local-data-collection-class-count-property.html))
 5. query whether a particular name has already been
           stored (
           [
-          Contains method](amfLocalDataCollectionClassContainsMethod.html))
+          Contains method](local-data-collection-class-contains-method.html))
 6. remove all names values (
           [
-          Clear](amfLocalDataCollectionClassClearMethod.html) or 
+          Clear](local-data-collection-class-clear-method.html) or 
           [
-          RemoveAll](amfLocalDataCollectionClassRemoveAllMethod.html) methods) or a single value (
+          RemoveAll](local-data-collection-class-remove-all-method.html) methods) or a single value (
           [
-          Remove](amfLocalDataCollectionClassRemoveMethod.html))
+          Remove](local-data-collection-class-remove-method.html))
 7. access the 
           [
-          Values](amfLocalDataCollectionClassValuesProperty.html) or 
+          Values](local-data-collection-class-values-property.html) or 
           [
-          Names](amfLocalDataCollectionClassNamesProperty.html) ICollection
+          Names](local-data-collection-class-names-property.html) ICollection
 
 </li>
 
@@ -86,7 +86,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -101,4 +101,4 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ LocalDataCollection Members](amfLocalDataCollectionMembers.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ LocalDataCollection Members](local-data-collection-members.html) 

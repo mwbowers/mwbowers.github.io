@@ -10,7 +10,7 @@ keywords: methods [ASNA.Monarch], MessageFormatter class
 
 ---
 
-[ MessageFormatter Class Overview](amfMessageFormatterClass.html) 
+[ MessageFormatter Class Overview](message-formatter-class.html) 
 <!--mine -->
 
 #### Public Methods
@@ -26,14 +26,14 @@ keywords: methods [ASNA.Monarch], MessageFormatter class
           <tr>
             <td>  <img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              FormatMessage](amfMessageFormatterClassFormatMessageMethod.html)
+              FormatMessage](message-formatter-class-format-message-method.html)
             </td>
             <td>Returns a formatted message.</td>
           </tr>
           <tr>
             <td>  <img height="16" alt="public method" src="images/methods.bmp" width="16" border="0" />
               [
-              IsPhysicalMsgFilePath](amfMessageFormatterClassIsPhysicalMsgFilePathMethod.html)
+              IsPhysicalMsgFilePath](message-formatter-classIs-physical-msg-file-path-method.html)
             </td>
             <td>Returns boolean true when
             the message formatted is a physical file path and also
@@ -51,8 +51,8 @@ keywords: methods [ASNA.Monarch], MessageFormatter class
 
 #### See Also
 <dl><dd>[ASNA.Monarch
-      Namespace](amfMonarchNamespace.html)</dd>
+      Namespace](monarch-namespace.html)</dd>
       <dd>[
-      MessageFormatter Class](amfMessageFormatterClass.html)</dd>
+      MessageFormatter Class](message-formatter-class.html)</dd>
 </dl>  
 

@@ -38,7 +38,7 @@ A string variable containing the status value of the eight switches used by the 
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -46,4 +46,4 @@ A string variable containing the status value of the eight switches used by the 
 <!-- end -->      
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [ Job.GetSwitch Method](amfJobClassGetSwitchMethod.html) <br clear="none" /> [ Job.GetSwitches Method](amfJobClassGetSwitchesMethod.html) <br clear="none" /> [ Job.SetSwitch Method](amfJobClassSetSwitchMethod.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [ Job.GetSwitch Method](job-class-get-switch-method.html) <br clear="none" /> [ Job.GetSwitches Method](job-class-get-switches-method.html) <br clear="none" /> [ Job.SetSwitch Method](job-class-set-switch-method.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

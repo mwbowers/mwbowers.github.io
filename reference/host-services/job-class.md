@@ -18,11 +18,11 @@ keywords: jobs, about
 
 The **Job** class provides an environment to submit, control, and keep track of program activations.
 
-For a list of all members of this type, see [Job Members](amfJobMembers.html).
+For a list of all members of this type, see [Job Members](job-members.html).
 <!--mine -->
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.Job** </pre>
 
 <!--mine -->
@@ -40,28 +40,28 @@ There is a Monarch Job associated with each user in an ASP.Net application. Actu
 
 - The 
         [
-        EndPrograms](amfJobClassEndProgramsMethod.html) method de-activates any program that is
+        EndPrograms](job-class-end-programs-method.html) method de-activates any program that is
         still active and then the 
         [
-        Dispose](amfJobClassDisposeMethod.html) method is used to release resource. The 
+        Dispose](job-class-dispose-method.html) method is used to release resource. The 
         [
-        ShutDown](amfJobClassShutDownMethod.html) method terminates the entire session.  The
+        ShutDown](job-class-shutdown-method.html) method terminates the entire session.  The
 
  **Job**  also maintains an 
  ***activation manager***  responsible for handling the activations of programs
         according to the 
         [
-        ActivationGroup](amfActivationGroupAttributeClass.html) custom attribute define in the 
+        ActivationGroup](activation-group-attribute-class.html) custom attribute define in the 
  **BegClass**  of the program.
 
 **Database Files, File Overrides, and Message Queues** 
 
 - The 
         [
-        getDatabase](amfJobClassgetDatabaseMethod.html) method establishes the database connection.
+        getDatabase](job-class-get-database-method.html) method establishes the database connection.
         The 
         [
-        Database](amfJobClassDatabaseProperty.html) property is used to get the database associated
+        Database](job-class-database-property.html) property is used to get the database associated
         with the job.
 - You can use an override command to replace the database
         file named in a program or to change certain parameters of
@@ -79,10 +79,10 @@ There is a Monarch Job associated with each user in an ASP.Net application. Actu
         file is the same as in the original file; otherwise, you
         may get unexpected results. 
         [
-        OverrideFile](amfJobClassOverrideFileMethods.html) is an overloaded method that provides file
+        OverrideFile](job-class-override-file-methods.html) is an overloaded method that provides file
         overrides with several parameters options. The 
         [
-        DeleteOverride](amfJobClassDeleteOverrideMethods.html) overloaded method is used to remove
+        DeleteOverride](job-class-delete-override-methods.html) overloaded method is used to remove
         database file overrides previously applied.
 - A message is a communication sent from one user,
         program, or procedure to another. There are two types of
@@ -93,7 +93,7 @@ There is a Monarch Job associated with each user in an ASP.Net application. Actu
         are placed in a 
  **message file** (
         [
-        MesssageFileFolder](amfJobClassMessageFileFolderProperty.html)) when they are created, and
+        MesssageFileFolder](job-class-message-file-folder-property.html)) when they are created, and
         retrieved from that file when they are used. Messages are
         sent to and received from 
  **message queues** , which are separate objects
@@ -106,28 +106,28 @@ There is a Monarch Job associated with each user in an ASP.Net application. Actu
         workstation user. Additional fields in support of message
         files and message queue are 
         [
-        ExternalQueue](amfJobClassExternalQueueField.html) and 
+        ExternalQueue](job-class-external-queue-field.html) and 
         [
-        messageFileFolder](amfJobClassmessageFileFolderField.html).
+        messageFileFolder](job-class-message-file-folder-field.html).
 
 **Job / Program Status** 
 
 - The 
         [
-        CurrentJob](amfJobClassCurrentJobProperty.html) property returns the name of the current
+        CurrentJob](job-class-current-job-property.html) property returns the name of the current
         active job and the 
         [
-        StartupMoment](amfJobClassStartupMomentProperty.html) property returns the 
+        StartupMoment](job-class-startup-moment-property.html) property returns the 
  **System.DateTime**  the job was started.
 - A program status data structure (PSDS) can be defined
         to make program exception/error information available to a
         program. There is only one PSDS per module. 
         [
-        PsdsJobName](amfJobClassPsdsJobNameField.html), 
+        PsdsJobName](job-class-psds-job-name-field.html), 
         [
-        PsdsJobNumber](amfJobClassPsdsJobNumberField.html), and 
+        PsdsJobNumber](job-class-psds-job-number-field.html), and 
         [
-        PsdsJobUser](amfJobClassPsdsJobUserField.html) fields set or return the job name, job
+        PsdsJobUser](job-class-psds-job-user-field.html) fields set or return the job name, job
         number, or user name, respectively.
 
 **Job Attributes and Variables** 
@@ -141,11 +141,11 @@ There is a Monarch Job associated with each user in an ASP.Net application. Actu
         applications using these switches, this class provides a
         set of methods to access the 8 values. These are 
         [
-        GetSwitch](amfJobClassGetSwitchMethod.html), 
+        GetSwitch](job-class-get-switch-method.html), 
         [
-        GetSwitches](amfJobClassGetSwitchesMethod.html), and 
+        GetSwitches](job-class-get-switches-method.html), and 
         [
-        SetSwitch](amfJobClassSetSwitchMethod.html).
+        SetSwitch](job-class-set-switch-method.html).
 
 #### Exceptions
 The following exceptions may be encountered by the *activation manager* .
@@ -189,7 +189,7 @@ The following exceptions may be encountered by the *activation manager* .
               <tr>
                 <td>Namespace:</td>
                 <td>
-                  [ASNA.Monarch](amfMonarchNamespace.html)
+                  [ASNA.Monarch](monarch-namespace.html)
                 </td>
               </tr>
               <tr>

@@ -47,7 +47,7 @@ Constructs a new instance of a **SqlPreparedStatement** object specifying the da
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -62,4 +62,4 @@ Constructs a new instance of a **SqlPreparedStatement** object specifying the da
 <!-- end -->
 
 #### See Also
-[ Program.SqlPreparedStatement Class](amfProgramSqlPreparedStatementClass.html) <br /> [ Program.SqlPreparedStatement Class Members](amfProgramSqlPreparedStatementClassMembers.html) <br /> [ Program.DBParm Class](amfProgramDBParmClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.SqlPreparedStatement Class](program-sql-prepared-statement-class.html) <br /> [ Program.SqlPreparedStatement Class Members](program-sql-prepared-statement-class-members.html) <br /> [ Program.DBParm Class](program-db-parm-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

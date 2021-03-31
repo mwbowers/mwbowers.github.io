@@ -20,7 +20,7 @@ keywords: message types, options
 
 ---
 
-The **MessageTypes** enumerated constant defines values for Monarch messages, when [ constructed](amfMessageClassMessageConstructors.html) and when using the [ SendExternalMessage](amfProgramClassSendExternalMessageMethod.html) method and two of the overloaded [ SendProgramMessage](amfProgramClassSendProgramMessageMethods.html) methods in the [ Program](amfProgramClass.html) class.
+The **MessageTypes** enumerated constant defines values for Monarch messages, when [ constructed](message-class-message-constructors.html) and when using the [ SendExternalMessage](program-class-end-external-message-method.html) method and two of the overloaded [ SendProgramMessage](program-class-end-program-message-methods.html) methods in the [ Program](program-class.html) class.
 
 #### Syntax
 <pre class="syntax"> **BegEnum MessageTypes Access(*Public)**       </pre>
@@ -140,7 +140,7 @@ The **MessageTypes** enumerated constant defines values for Monarch messages, wh
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -153,8 +153,8 @@ The **MessageTypes** enumerated constant defines values for Monarch messages, wh
 </table>
 
 #### See Also
-<dl> <dd>[Program Class](amfProgramClass.html)</dd>
-     <dd>[SendExternalMessage Method](amfProgramClassSendExternalMessageMethod.html)</dd>
-      <dd>[SendProgramMessage Method](amfProgramClassSendProgramMessageMethods.html)</dd>
-      <dd>[ASNA.Monarch Namespace](amfMonarchNamespace.html)</dd></dl>
+<dl> <dd>[Program Class](program-class.html)</dd>
+     <dd>[SendExternalMessage Method](program-class-end-external-message-method.html)</dd>
+      <dd>[SendProgramMessage Method](program-class-end-program-message-methods.html)</dd>
+      <dd>[ASNA.Monarch Namespace](monarch-namespace.html)</dd></dl>
 

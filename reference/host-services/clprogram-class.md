@@ -24,11 +24,11 @@ The **CLProgram** class provides support within existing CL program procedures i
 - CL Processing Commands for the Retrieval and
         Manipulation of Strings and Variables.
 
-For a list of all members of this type, see [CLProgram Members](amfCLProgramClassMembers.html).
+For a list of all members of this type, see [CLProgram Members](clprogram-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)       
-  [ASNA.Monarch.Program](amfProgramClass.html)       
+<pre>[ASNA.Monarch](monarch-namespace.html)       
+  [ASNA.Monarch.Program](program-class.html)       
  **ASNA.Monarch.CLProgram**  </pre>
 
 #### Syntax
@@ -47,10 +47,10 @@ A CLProgram class contains the following:
         directory names associated with each applications database
         connection. The 
         [
-        AddLiblEntry](amfCLProgramClassAddLiblEntryMethods.html) method adds a library name to the user
+        AddLiblEntry](clprogram-class-add-libl-entry-methods.html) method adds a library name to the user
         portion of the library list. The 
         [
-        RmvLiblEntry](amfCLProgramClassRmvLiblEntryMethod.html) method removes a library name from the user
+        RmvLiblEntry](clprogram-class-rmv-libl-entry-method.html) method removes a library name from the user
         portion of the library list.
 - **File Overrides** 
           <br clear="none" />You can use an override command to
@@ -73,16 +73,16 @@ A CLProgram class contains the following:
         file is the same as in the original file, otherwise you may
         get unexpected results. 
         [
-        OverrideFile](amfCLProgramClassOverrideFileMethods.html) is an overloaded method that provides these
+        OverrideFile](clprogram-class-override-file-methods.html) is an overloaded method that provides these
         file overrides with several parameters options. 
         [
-        DeleteOverride](amfCLProgramClassDeleteOverrideMethods.html) is an overloaded method to remove
+        DeleteOverride](clprogram-class-delete-override-methods.html) is an overloaded method to remove
         database file overrides previously applied.
 - **Physical File Members** 
           <br clear="none" />The 
-        [ClearPFM](amfCLProgramClassClearPFMMethod.html) method removes all data from a member of a
+        [ClearPFM](clprogram-class-clear-pfm-method.html) method removes all data from a member of a
         physical file. The 
-        [InitializePFM](amfCLProgramClassInitializePFMMethods.html) 
+        [InitializePFM](clprogram-classInitialize-pfm-methods.html) 
 		overloaded method initializes records in a
         member of a physical file to the specified type of record
         (either default or deleted records). If the initialized
@@ -96,7 +96,7 @@ A CLProgram class contains the following:
 
 **CL Processing Commands for the Retrieval and Manipulation of Strings and Variables** 
 
-- **LDA** <br clear="none" />A local data area is created for each job in the system. The system creates a local data area, which is initially filled with blanks, with a length of 1024 and type *CHAR. When you submit a job, the value of the submitting job's local data area is copied into the submitted job's local data area. You can use this local data area to pass information to a procedure or program without the use of a parameter list. You can use the overloaded [ ChangeDataArea](amfCLProgramClassChangeDataAreaMethods.html) method to change the value of the current Lda associated with the program, or the overloaded [ RetrieveDataArea](amfCLProgramClassRetrieveDataAreaMethods.html) to retrieve all or a part of the Lda.
+- **LDA** <br clear="none" />A local data area is created for each job in the system. The system creates a local data area, which is initially filled with blanks, with a length of 1024 and type *CHAR. When you submit a job, the value of the submitting job's local data area is copied into the submitted job's local data area. You can use this local data area to pass information to a procedure or program without the use of a parameter list. You can use the overloaded [ ChangeDataArea](clprogram-class-change-data-area-methods.html) method to change the value of the current Lda associated with the program, or the overloaded [ RetrieveDataArea](clprogram-class-retrieve-data-area-methods.html) to retrieve all or a part of the Lda.
 - **Job Switches and Attributes
         <br clear="none" />**  Associated with each job on
         the IBM i there is a set of properties or
@@ -107,38 +107,38 @@ A CLProgram class contains the following:
         switches via the *INUx indicators. The 
  **CLProgram**  class provides the method 
         [
-        RTVJOBA_SWS](amfCLProgramClassRTVJOBA_SWSMethod.html) to facilitate the translation of the RTVJOBA
+        RTVJOBA_SWS](clprogram-class-rtv-joba-sws-method.html) to facilitate the translation of the RTVJOBA
         CL command 
  *SWS*  attribute. The 
         [
-        Percent_Switch](amfCLProgramClassPercent_SwitchMethod.html) method can be used to compare a bit-mask
+        Percent_Switch](clprogram-class-percent-switch-method.html) method can be used to compare a bit-mask
         against the current job switches for equality.
         <br clear="none" /><br clear="none" />Additionally, several methods are
         available to retrieve the job attributes for the job
         in which a CLProgram is used. These are 
         [
-        RTVJOBA_DATE](amfCLProgramClassRTVJOBA_DATEMethod.html), 
+        RTVJOBA_DATE](clprogram-class-rtv-joba-date-method.html), 
         [
-        RTVJOBA_JOB](amfCLProgramClassRTVJOBA_JOBMethod.html), 
+        RTVJOBA_JOB](clprogram-class-rtv-joba-job-method.html), 
         [
-        RTVJOBA_NBR](amfCLProgramClassRTVJOBA_NBRMethod.html), 
+        RTVJOBA_NBR](clprogram-class-rtv-joba-nbr-method.html), 
         [
-        RTVJOBA_TYPE](amfCLProgramClassRTVJOBA_TYPEMethod.html), and 
+        RTVJOBA_TYPE](clprogram-class-rtv-joba-type-method.html), and 
         [
-        RTVJOBA_USER](amfCLProgramClassRTVJOBA_USERMethod.html) representing the current job date, job
+        RTVJOBA_USER](clprogram-class-rtv-joba-user-method.html) representing the current job date, job
         name, job number, job type, and current
         user respectively.
 - **String Manipulation** 
           <br clear="none" />The 
         [
-        Asterisk_BCat](amfCLProgramClassAsterisk_BCatMethod.html) method concatenates a prefix, variable,
+        Asterisk_BCat](clprogram-class-asterisk-bcat-method.html) method concatenates a prefix, variable,
         and suffix, with a blank between each parameter. The 
         [
-        Asterisk_TCat](amfCLProgramClassAsterisk_TCatMethod.html) method concatenates a prefix, variable,
+        Asterisk_TCat](clprogram-class-asterisk-tcat-method.html) method concatenates a prefix, variable,
         and suffix, with the variable trimmed of leading and
         trailing blanks. The 
         [
-        Percent_SST](amfCLProgramClassPercent_SSTMethod.html) method returns a string containing a
+        Percent_SST](clprogram-class-percent-sst-method.html) method returns a string containing a
         substring from the contents of the specified CL character
         variable or the local data area. This can only be used
         within a CL procedure.
@@ -146,7 +146,7 @@ A CLProgram class contains the following:
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -156,9 +156,9 @@ A CLProgram class contains the following:
 #### See Also
 <dl><dt>
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)
+        Namespace](monarch-namespace.html)
         <br clear="none" />
         [
-        CLProgram Class Members](amfCLProgramClassMembers.html)
+        CLProgram Class Members](clprogram-class-members.html)
       </dt></dl>
 

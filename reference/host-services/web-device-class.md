@@ -14,11 +14,11 @@ keywords: device control
 
 The **WebDevice** class is responsible for coordinating the job's thread with the one assigned by ASP.NET to produce the response to the browser's request by providing for device control for web display files.
 
-For a list of all members of this type, see [WebDevice Members](amfWebDeviceClassMembers.html).
+For a list of all members of this type, see [WebDevice Members](web-device-class-members.html).
 <!--mine -->
 
 #### Inheritance Hierarchy
-<pre> [ASNA.Monarch](amfMonarchNamespace.html)
+<pre> [ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.WebDevice**       </pre>
 
 <!--mine -->
@@ -32,13 +32,13 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 #### Remarks
 The **WebDevice** class provides the device controls.
 
-- [ WebDevice](amfWebDeviceClassWebDeviceConstructors.html) creates an instance of a **WebDevice** object for a **WebJob** object.
-- <code>[ Attach](amfWebDeviceClassAttachMethod.html)</code> attaches a **WebDisplayFile** file to a device.
-- <code>[ Detach](amfWebDeviceClassDetachMethod.html)</code> is used to remove the device from a file.
-- <code>[ SignalDataReadyForProgram](amfWebDeviceClassSignalDataReadyForProgramMethod.html)</code> is used to indicate the device is ready for data from a program event.
-- <code>[ SignalDataReadyForUser](amfWebDeviceClassSignalDataReadyForUserMethod.html)</code> is used to indicate the device is ready for data from a user event.
-- <code>[ WaitForDataForProgram](amfWebDeviceClassWaitForDataForProgramMethod.html)</code> is used to indicate the device is to wait for data from a program event.
-- <code>[ WaitForDataForUser](amfWebDeviceClassWaitForDataForUserMethod.html)</code> is used to indicate the device is to wait for data from a user event.
+- [ WebDevice](web-device-class-web-device-constructors.html) creates an instance of a **WebDevice** object for a **WebJob** object.
+- <code>[ Attach](web-device-classAttach-method.html)</code> attaches a **WebDisplayFile** file to a device.
+- <code>[ Detach](web-device-classDetach-method.html)</code> is used to remove the device from a file.
+- <code>[ SignalDataReadyForProgram](web-device-class-signal-dat-a-ready-for-program-method.html)</code> is used to indicate the device is ready for data from a program event.
+- <code>[ SignalDataReadyForUser](web-device-class-signal-dat-a-ready-for-user-method.html)</code> is used to indicate the device is ready for data from a user event.
+- <code>[ WaitForDataForProgram](web-device-class-wait-for-data-for-program-method.html)</code> is used to indicate the device is to wait for data from a program event.
+- <code>[ WaitForDataForUser](web-device-class-wait-for-data-for-user-method.html)</code> is used to indicate the device is to wait for data from a user event.
 
 <!-- -->
 
@@ -50,7 +50,7 @@ The **WebDevice** class provides the device controls.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -65,4 +65,4 @@ The **WebDevice** class provides the device controls.
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ WebDevice Class Members](web-device-class-members.html) 

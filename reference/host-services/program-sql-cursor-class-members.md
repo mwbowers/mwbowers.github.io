@@ -11,7 +11,7 @@ keywords: SqlCursor class, members
 
 ---
 
-[ Program.SqlCursor Class Overview](amfProgramSqlCursorClass.html) 
+[ Program.SqlCursor Class Overview](program-sql-cursor-class.html) 
 <!--mine -->
 
 #### Constructor
@@ -27,7 +27,7 @@ keywords: SqlCursor class, members
          <tr>
             <td><img id="IMG1" style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/constructor.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            SqlCursor](amfProgramSqlCursorClassConstructors.html)</td>
+            SqlCursor](program-sql-cursor-class-constructors.html)</td>
             <td>Overloaded. Creates a
             new instance of a Program.SqlCursor object.</td>
           </tr>
@@ -48,24 +48,24 @@ keywords: SqlCursor class, members
           <tr>
             <td><img id="Img6" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            Close](amfProgramSqlCursorClassCloseMethod.html)</td>
+            Close](program-sql-cursor-class-close-method.html)</td>
             <td>Closes a
             Program.SqlCursor.</td>
           </tr>
           <tr>
             <td><img id="Img7" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            Fetch](amfProgramSqlCursorClassFetchMethod.html)</td>
+            Fetch](program-sql-cursor-class-fetch-method.html)</td>
             <td>Determines if results
             are available and conditions the lines that
             retrieve the query results by the 
             [
-            SqlCursor.FetchOrientations](amfProgramSqlCursorFetchOrientationsEnumeration.html) value.</td>
+            SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html) value.</td>
           </tr>
           <tr>
             <td><img id="Img8" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            Open](amfProgramSqlCursorClassOpenMethods.html)</td>
+            Open](program-sql-cursor-class-open-methods.html)</td>
             <td>Overloaded. Executes the
             select statement and populates the SQL cursor with
             or without select statement variables</td>
@@ -73,7 +73,7 @@ keywords: SqlCursor class, members
           <tr>
             <td><img id="Img9" style="WIDTH: 16px; HEIGHT: 16px" alt="public method" src="images/methods.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            SqlQueryResultsByIndex](amfProgramSqlCursorClassSqlQueryResultsByIndexMethod.html)</td>
+            SqlQueryResultsByIndex](program-sql-cursor-class-sql-query-results-by-index-method.html)</td>
             <td>Returns an object from the
             SqlCursor result set by index.</td>
           </tr>
@@ -91,17 +91,17 @@ keywords: SqlCursor class, members
           </tr>          <tr>
             <td><img id="Img2" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              ScrollType](amfProgramSqlCursorClassScrollTypeField.html)
+              ScrollType](program-sql-cursor-class-scroll-type-field.html)
             </td>
             <td>A 
             [
-            SqlCursor.ScrollTypes](amfProgramSqlCursorScrollTypesEnumeration.html) enumeration value
+            SqlCursor.ScrollTypes](program-sql-cursor-scroll-types-enumeration.html) enumeration value
             defining the type of scrolling for the cursor.</td>
           </tr>
           <tr>
             <td><img id="Img3" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="16" border="0" x-maintain-ratio="TRUE" />
               [
-              SelectStatement](amfProgramSqlCursorClassSelectStatementField.html)
+              SelectStatement](program-sql-cursor-class-select-statement-field.html)
             </td>
             <td>The select
             statement with which the result set was
@@ -110,16 +110,16 @@ keywords: SqlCursor class, members
           <tr>
             <td><img id="Img5" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" border="0" x-maintain-ratio="TRUE" />
               [
-              SQLCA](amfProgramSqlCursorClassSQLCAField.html)
+              SQLCA](program-sql-cursor-class-sqlca-field.html)
             </td>
             <td>[
-            SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html) object to trap and report
+            SQL_CommunicationsArea](program-sql-communications-area-class.html) object to trap and report
             run-time errors for the SqlCursor.</td>
           </tr>
           <tr>
             <td><img id="Img4" style="WIDTH: 16px; HEIGHT: 16px" alt="fields" src="images/field.bmp" width="15" border="0" x-maintain-ratio="TRUE" />
               [
-              SqlQueryResults](amfProgramSqlCursorClassSqlQueryResultsField.html)
+              SqlQueryResults](program-sql-cursor-class-sql-query-results-field.html)
             </td>
             <td>A collection
             representing the query results (string and object)
@@ -129,4 +129,4 @@ keywords: SqlCursor class, members
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [Program.SqlCursor Class](amfProgramDBParmClass.html) <br /> [ Program.SQL_CommunicationsArea Class](amfProgramSQL_CommunicationsAreaClass.html) <br /> [ SqlCursor.ScrollTypes Enumeration](amfProgramSqlCursorScrollTypesEnumeration.html) <br /> [ SqlCursor.FetchOrientations Enumeration](amfProgramSqlCursorFetchOrientationsEnumeration.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [Program.SqlCursor Class](program-db-parm-class.html) <br /> [ Program.SQL_CommunicationsArea Class](program-sql-communications-area-class.html) <br /> [ SqlCursor.ScrollTypes Enumeration](program-sql-cursor-scroll-types-enumeration.html) <br /> [ SqlCursor.FetchOrientations Enumeration](program-sql-cursor-fetch-orientations-enumeration.html) 

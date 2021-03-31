@@ -23,11 +23,11 @@ Gets a string value containing the name of the activation group to use for the p
 String. The name for the activation group to use for the program.
 
 #### Remarks
-When a **GroupName** is used, the [ IsDefault](amfActivationGroupAttributeClassIsDefaultProperty.html), [ IsNew](amfActivationGroupAttributeClassIsNewProperty.html), and [ IsCaller](amfActivationGroupAttributeClassIsCallerProperty.html) properties will all be **False** .
+When a **GroupName** is used, the [ IsDefault](activation-group-attribute-classIs-default-property.html), [ IsNew](activation-group-attribute-classIs-new-property.html), and [ IsCaller](activation-group-attribute-classIs-caller-property.html) properties will all be **False** .
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -35,4 +35,4 @@ When a **GroupName** is used, the [ IsDefault](amfActivationGroupAttributeClassI
 <!-- end -->
 
 #### See Also
-[ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html) <br clear="none" /> [ ActivationGroupAttribute Members](amfActivationGroupAttributeClassMembers.html) <br clear="none" /> [ CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html) <br clear="none" /> [ NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html) <br clear="none" />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ ActivationGroupAttribute Class](activation-group-attribute-class.html) <br clear="none" /> [ ActivationGroupAttribute Members](activation-group-attribute-class-members.html) <br clear="none" /> [ CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html) <br clear="none" /> [ NewActivationGroupAttribute Class](new-activation-group-attribute-class.html) <br clear="none" />[ASNA.Monarch Namespace](monarch-namespace.html)

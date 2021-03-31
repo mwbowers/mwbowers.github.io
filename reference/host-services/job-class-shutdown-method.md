@@ -30,7 +30,7 @@ This method terminates the Job program when an abnormal condition occurs.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -45,4 +45,4 @@ This method terminates the Job program when an abnormal condition occurs.
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

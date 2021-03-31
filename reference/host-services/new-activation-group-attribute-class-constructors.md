@@ -23,7 +23,7 @@ Using **NewActivationGroupAttribute** defines an instance when the activation gr
 <pre class="example"> BegClass Custcalc Extends (ASNA.Monarch.Program Access ( *Public ) +
  Attributes ( NewActivationGroup ())</pre>
 
-Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html) and [ CallerActivationGroupAttribute Class](amfCallerActivationGroupAttributeClass.html) for more information.
+Refer to [ ActivationGroupAttribute Class](activation-group-attribute-class.html) and [ CallerActivationGroupAttribute Class](caller-activation-group-attribute-class.html) for more information.
 <!-- start -->
 
 #### Requirements
@@ -34,7 +34,7 @@ Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -49,4 +49,4 @@ Refer to [ ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html
 <!-- end -->
 
 #### See Also
-[ NewActivationGroupAttribute Class](amfNewActivationGroupAttributeClass.html)<br />[ NewActivationGroupAttribute Class Members](amfNewActivationGroupAttributeClassMembers.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ NewActivationGroupAttribute Class](new-activation-group-attribute-class.html)<br />[ NewActivationGroupAttribute Class Members](new-activation-group-attribute-class-members.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)

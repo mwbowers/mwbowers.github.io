@@ -26,7 +26,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              ActivationGroupAttribute](amfActivationGroupAttributeClass.html)
+              ActivationGroupAttribute](activation-group-attribute-class.html)
             </td>
             <td>The 
  **ActivationGroupAttribute**  class
@@ -35,7 +35,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              CallerActivationGroupAttribute](amfCallerActivationGroupAttributeClass.html)
+              CallerActivationGroupAttribute](caller-activation-group-attribute-class.html)
             </td>
             <td>The 
  **CallerActivationGroupAttribute**  class
@@ -46,7 +46,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              CLProgram](amfCLProgramClass.html)
+              CLProgram](clprogram-class.html)
             </td>
             <td>The 
  **CLProgram**  class provides support for:
@@ -55,7 +55,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
             operators.</td>
           </tr>
           <tr>
-            <td>[Job](amfJobClass.html)
+            <td>[Job](job-class.html)
             </td>
             <td>The 
  **Job**  class provides an environment for
@@ -65,7 +65,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              LocalDataCollection](amfLocalDataCollectionClass.html)
+              LocalDataCollection](local-data-collection-class.html)
             </td>
             <td>The **LocalDataCollection**  is a derived
             class that is a container for a collection of
@@ -73,28 +73,28 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Message](amfMessageClass.html)
+              Message](message-class.html)
             </td>
             <td>The **Message**  class is a container class
             for Message File data.</td>
           </tr>
           <tr>
             <td>[
-              MessageFormatter](amfMessageFormatterClass.html)
+              MessageFormatter](message-formatter-class.html)
             </td>
             <td>The **MessageFormatter**  class is used to
             format messages for Message File data.</td>
           </tr>
           <tr>
             <td>[
-              MessageQueue](amfMessageQueueClass.html)
+              MessageQueue](message-queue-class.html)
             </td>
             <td>The **MessageQueue**  class provides for support
             for messages in the message queue.</td>
           </tr>
           <tr>
             <td>[
-              NewActivationGroupAttribute](amfNewActivationGroupAttributeClass.html)
+              NewActivationGroupAttribute](new-activation-group-attribute-class.html)
             </td>
             <td>The **NewActivationGroupAttribute**  class
             provides support for the job activation
@@ -104,7 +104,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program](amfProgramClass.html)
+              Program](program-class.html)
             </td>
             <td>The **Program**  class provides
             activation/invocation semantics. It conforms to certain
@@ -113,7 +113,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.DBParm](amfProgramDBParmClass.html)
+              Program.DBParm](program-db-parm-class.html)
             </td>
             <td>The **Program.DBParm** (nested)
             class defines an object that represents a
@@ -122,7 +122,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.DBScaledParm](amfProgramDBScaledParmClass.html)
+              Program.DBScaledParm](program-db-scaled-parm-class.html)
             </td>
             <td>The **Program.DBScaledParm**  is a derived
             class the further defines an object representing a
@@ -131,7 +131,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.DBStrParm](amfProgramDBStrParmClass.html)
+              Program.DBStrParm](program-db-str-parm-class.html)
             </td>
             <td>The **Program.DBStrParm**  is a derived
             class that further defines an object representing
@@ -140,7 +140,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html)
+              Program.SQL_CommunicationsArea](program-sql-communications-area-class.html)
             </td>
             <td>The **Program.SQL_CommunicationsArea**  is
             a nested class that defines an object
@@ -149,7 +149,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.SqlCursor](amfProgramSqlCursorClass.html)
+              Program.SqlCursor](program-sql-cursor-class.html)
             </td>
             <td>The **Program.SqlCursor**  is a nested
             class representing a SQL cursor for a
@@ -158,7 +158,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.SqlPreparedStatement](amfProgramSqlPreparedStatementClass.html)
+              Program.SqlPreparedStatement](program-sql-prepared-statement-class.html)
             </td>
             <td>The **Program.SqlPreparedStatement**  is a
             nested class representing a prepared version
@@ -166,13 +166,13 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
 		            <tr>
             <td>
-             [SystemValue](amfSystemValueClass.html)
+             [SystemValue](system-value-class.html)
             </td>
             <td>The **SystemValue**  constant class contains system values.</td>
           </tr>
           <tr>
             <td>[
-              WebDevice](amfWebDeviceClass.html)
+              WebDevice](web-device-class.html)
             </td>
             <td>The **WebDevice**  class provides for device
             control for web display for 
@@ -181,7 +181,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              WebDisplayFile](amfWebDisplayFileClass.html)
+              WebDisplayFile](web-display-file-class.html)
             </td>
             <td>The **WebDisplayFile**  class provides for form
             control for 
@@ -190,7 +190,7 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
  **Job**  objects.</td>
           </tr>
           <tr>
-            <td>[WebJob](amfWebJobClass.html)
+            <td>[WebJob](web-job-class.html)
             </td>
             <td>The **WebJob**  class provides an environment
             for programs to run under. Its main functions are
@@ -200,4 +200,4 @@ keywords: classes ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
 </table>
 
 #### See Also
-[ ASNA Monarch Enumerations](amfMonarchNamespaceEnumerations.html)
+[ ASNA Monarch Enumerations](monarch-namespace-enumerations.html)

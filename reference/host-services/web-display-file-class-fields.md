@@ -10,7 +10,7 @@ keywords: fields [ASNA.Monarch], WebDisplayFile class
 
 ---
 
-[ WebDisplayFile Class Overview](amfWebDisplayFileClass.html) 
+[ WebDisplayFile Class Overview](web-display-file-class.html) 
 <!--mine -->
 
 #### Public Fields
@@ -26,19 +26,19 @@ keywords: fields [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td>              <img alt="public fields" src="images/field.bmp" x-maintain-ratio="TRUE" border="0" />
               [
-              Device](amfWebDisplayFileClassDeviceField.html)
+              Device](web-display-file-class-device-field.html)
             </td>
             <td
 
 >The 
             [
-            WebDevice](amfWebDeviceClass.html) attached to the 
+            WebDevice](web-device-class.html) attached to the 
  **WebDisplayFile**  object.</td>
           </tr>
           <tr>
             <td>              <img alt="public fields" src="images/field.bmp" x-maintain-ratio="TRUE" border="0" />
               [
-              FileName](amfWebDisplayFileClassFileNameField.html)
+              FileName](web-display-file-class-file-name-field.html)
             </td>
             <td
 
@@ -48,7 +48,7 @@ keywords: fields [ASNA.Monarch], WebDisplayFile class
           <tr>
             <td>              <img alt="public fields" src="images/field.bmp" x-maintain-ratio="TRUE" border="0" />
               [
-              PageName](amfWebDisplayFileClassPageNameField.html)
+              PageName](web-display-file-class-page-name-field.html)
             </td>
             <td
 
@@ -58,4 +58,4 @@ keywords: fields [ASNA.Monarch], WebDisplayFile class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html)
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ WebDisplayFile Class](web-display-file-class.html)

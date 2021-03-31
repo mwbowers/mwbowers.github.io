@@ -16,12 +16,12 @@ keywords: SQLCA
 
 The **Program.SQL_CommunicationsArea** (nested) class defines an object that represents the SQLCA to trap and report run-time errors for a SQL statement.
 
-For a list of all members of this type, see [ Program.SQL_CommunicationsArea Class Members](amfProgramSQL_CommunicationsAreaClassMembers.html).
+For a list of all members of this type, see [ Program.SQL_CommunicationsArea Class Members](program-sql-communications-area-class-members.html).
 <!--mine -->
 
 #### Inheritance Hierarchy
-<pre style="height: 47px">[ASNA.Monarch](amfMonarchNamespace.html)
-    [ASNA.Monarch.Program](amfProgramClass.html)
+<pre style="height: 47px">[ASNA.Monarch](monarch-namespace.html)
+    [ASNA.Monarch.Program](program-class.html)
  **ASNA.Monarch.Program.SQL_CommunicationsArea** </pre>
 
 #### Syntax
@@ -33,7 +33,7 @@ For a list of all members of this type, see [ Program.SQL_CommunicationsArea Cla
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
 #### Remarks
-The instance of this object will have a value of *nothing before executing any SQL command. After execution of any SQL command, this object can be accessed to determine the success or failure of the SQL statement. The most common use is to test [ SQLCOD](amfProgramSQL_CommunicationsAreaClassSQLCODField.html) to find if the operation was successful or not. [ SQLSTT](amfProgramSQL_CommunicationsAreaClassSQLSTTField.html) contains an additional return code for more detail; while [ SQL_Exception](amfProgramSQL_CommunicationsAreaClassSQL_ExceptionField.html) contains a reference to an instance of a [ SqlCommandText](http://msdn2.microsoft.com/en-us/library/system.exception_members(VS.71).aspx"> System.Exception</a> with complete detail information on an exception. As part of the debugging process, <a href="amfProgramSQL_CommunicationsAreaClassSqlCommandTextField.html) is provided to contain the actual command statement.
+The instance of this object will have a value of *nothing before executing any SQL command. After execution of any SQL command, this object can be accessed to determine the success or failure of the SQL statement. The most common use is to test [ SQLCOD](program-sql-communications-area-class-sqlcod-field.html) to find if the operation was successful or not. [ SQLSTT](program-sql-communications-area-class-sqlsst-field.html) contains an additional return code for more detail; while [ SQL_Exception](program-sql-communications-area-class-sql-exception-field.html) contains a reference to an instance of a [ SqlCommandText](http://msdn2.microsoft.com/en-us/library/system.exception_members(VS.71).aspx"> System.Exception</a> with complete detail information on an exception. As part of the debugging process, <a href="amfProgramSQL_CommunicationsAreaClassSqlCommandTextField.html) is provided to contain the actual command statement.
 
 #### Requirements
 <table class="dttable" cellspacing="0" cellpadding="4" width="60%">
@@ -43,7 +43,7 @@ The instance of this object will have a value of *nothing before executing any S
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -58,11 +58,11 @@ The instance of this object will have a value of *nothing before executing any S
 #### See Also
 <dl>
         <dd>[ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)</dd>
+        Namespace](monarch-namespace.html)</dd>
         <dd>[
-        Program.SQL_CommunicationsArea Class Members](amfProgramSQL_CommunicationsAreaClassMembers.html)</dd>
+        Program.SQL_CommunicationsArea Class Members](program-sql-communications-area-class-members.html)</dd>
         <dd>[Program
-        Class](amfProgramClass.html)</dd>
+        Class](program-class.html)</dd>
         <dd>[
         Embedded SQL Overview](amfconSQLStatementExamples.html)</dd></dl>
 

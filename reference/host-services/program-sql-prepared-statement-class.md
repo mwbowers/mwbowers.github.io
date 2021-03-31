@@ -15,11 +15,11 @@ keywords: SQL, prepared statement
 
 The **Program.SqlPreparedStatement** is a nested class representing a prepared executable version of a SQL command statement.
 
-For a list of all members of this type, see [ Program.SqlPreparedStatement Class Members](amfProgramSqlPreparedStatementClassMembers.html).
+For a list of all members of this type, see [ Program.SqlPreparedStatement Class Members](program-sql-prepared-statement-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
-    [ASNA.Monarch.Program](amfProgramClass.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
+    [ASNA.Monarch.Program](program-class.html)
  **ASNA.Monarch.Program.SqlPreparedStatement**       </pre>
 
 #### Syntax
@@ -39,7 +39,7 @@ When a PREPARE statement is executed, the statement string is parsed and checked
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -54,4 +54,4 @@ When a PREPARE statement is executed, the statement string is parsed and checked
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.SqlPreparedStatement Class Members](amfProgramSqlPreparedStatementClassMembers.html) <br /> [Program Class](amfProgramClass.html) <br /> [ Program.SqlQueryResults Field](amfProgramClassSqlQueryResultsField.html) <br /> [ Program.DBParm Class](amfProgramDBParmClass.html) <br /> [ Embedded SQL Overview](amfconSQLStatementExamples.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.SqlPreparedStatement Class Members](program-sql-prepared-statement-class-members.html) <br /> [Program Class](program-class.html) <br /> [ Program.SqlQueryResults Field](program-class-sql-query-results-field.html) <br /> [ Program.DBParm Class](program-db-parm-class.html) <br /> [ Embedded SQL Overview](amfconSQLStatementExamples.html) 

@@ -15,12 +15,12 @@ keywords: SQL parameters, decimal
 
 The **Program.DBScaledParm** is a derived class that inherits **Program.DBParm** . It further defines an object representing a decimal parameter to a SQL statement where the length and decimal positions are specified.
 
-For a list of all members of this type, see [ Program.DBScaledParm Class Members](amfProgramDBScaledParmClassMembers.html).
+For a list of all members of this type, see [ Program.DBScaledParm Class Members](program-db-scaled-parm-class-members.html).
 
 #### Inheritance Hierarchy
-<pre>[ASNA.Monarch](amfMonarchNamespace.html)
-    [ASNA.Monarch.Program](amfProgramClass.html)
-        [ASNA.Monarch.Program.DBParm](amfProgramDBParmClass.html)
+<pre>[ASNA.Monarch](monarch-namespace.html)
+    [ASNA.Monarch.Program](program-class.html)
+        [ASNA.Monarch.Program.DBParm](program-db-parm-class.html)
  **ASNA.Monarch.Program.DBScaledParm**       </pre>
 
 #### Syntax
@@ -30,7 +30,7 @@ For a list of all members of this type, see [ Program.DBScaledParm Class Members
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
 #### Remarks
-See the [ DBParm](amfProgramDBParmClass.html) class for parameters where the length can be determined by its type and the [ DBStrParm](amfProgramDBStrParmClass.html) class for string parameters.
+See the [ DBParm](program-db-parm-class.html) class for parameters where the length can be determined by its type and the [ DBStrParm](program-db-str-parm-class.html) class for string parameters.
 <!-- start -->
 
 #### Requirements
@@ -41,7 +41,7 @@ See the [ DBParm](amfProgramDBParmClass.html) class for parameters where the len
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -56,4 +56,4 @@ See the [ DBParm](amfProgramDBParmClass.html) class for parameters where the len
 <!-- end -->  
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.DBScaledParm Class Members](amfProgramDBScaledParmClassMembers.html) <br /> [Program Class](amfProgramClass.html) <br /> [ Program.DBParm Class](amfProgramDBParmClass.html) <br /> [ Program.SqlQueryResults Field](amfProgramClassSqlQueryResultsField.html) <br /> [ Embedded SQL Overview](amfconSQLStatementExamples.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.DBScaledParm Class Members](program-db-scaled-parm-class-members.html) <br /> [Program Class](program-class.html) <br /> [ Program.DBParm Class](program-db-parm-class.html) <br /> [ Program.SqlQueryResults Field](program-class-sql-query-results-field.html) <br /> [ Embedded SQL Overview](amfconSQLStatementExamples.html) 

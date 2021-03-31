@@ -26,7 +26,7 @@ keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              MessageTypes](amfMessageTypesEnumeration.html)
+              MessageTypes](messa-ge-types-enumeration.html)
             </td>
             <td>The 
  **MessageTypes**  enumeration constant
@@ -35,7 +35,7 @@ keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              OverrideOptions](amfOverrideOptionsEnumeration.html)
+              OverrideOptions](override-options-enumeration.html)
             </td>
             <td>The 
  **OverrideOptions**  enumeration constant
@@ -43,7 +43,7 @@ keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              OverrideScope](amfOverrideScopeEnumeration.html)
+              OverrideScope](overrideScope-enumeration.html)
             </td>
             <td>The 
  **OverrideScope**  enumeration provides
@@ -52,18 +52,18 @@ keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
           </tr>
           <tr>
             <td>[
-              Program.SqlCursor.FetchOrientations](amfProgramSqlCursorFetchOrientationsEnumeration.html)
+              Program.SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html)
             </td>
             <td>The 
  **Program.SqlCursor.FetchOrientations**  enumeration
             constant provides values for the fetch
             orientation of 
             [
-            Program.SqlCursor](amfProgramSqlCursorClass.html).</td>
+            Program.SqlCursor](program-sql-cursor-class.html).</td>
           </tr>
           <tr>
             <td>[
-              Program.SqlCursor.ScrollTypes](amfProgramSqlCursorScrollTypesEnumeration.html)
+              Program.SqlCursor.ScrollTypes](program-sql-cursor-scroll-types-enumeration.html)
             </td>
             <td>The 
  **Program.SqlCursor.ScrollTypes**  enumeration
@@ -72,10 +72,10 @@ keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
  **Program.SqlCursor** .</td>
           </tr>
           <tr>
-            <td>[Command.AidKey](amfCommandAidKeyEnumeration.html)</td>
+            <td>[Command.AidKey](command-aid-key-enumeration.html)</td>
             <td>The **Command.AidKey** enumerated constant defines the function and attention keys for the [ Command.PushKeyFocus](amfCommandClassPushKeyFocusMethod.html) method.</td>
           </tr>          
 </table>
 
 #### See Also
-[ASNA Monarch Classes](amfMonarchNamespaceClasses.html)
+[ASNA Monarch Classes](monarch-namespace-classes.html)

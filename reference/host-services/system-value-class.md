@@ -18,7 +18,7 @@ For a list of all members of this type, see [SystemValue Members](amfSystemValue
 <!--mine -->
 
 #### Inheritance Hierarchy
-<pre> [ASNA.Monarch](amfMonarchNamespace.html)
+<pre> [ASNA.Monarch](monarch-namespace.html)
  **ASNA.Monarch.SystemValue**       </pre>
 
 <!--mine -->
@@ -59,7 +59,7 @@ The **SystemValue** class takes the following values.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -74,4 +74,4 @@ The **SystemValue** class takes the following values.
 <!-- end -->
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [SystemValue Class Members](amfSystemValueClassMembers.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [SystemValue Class Members](amfSystemValueClassMembers.html) 

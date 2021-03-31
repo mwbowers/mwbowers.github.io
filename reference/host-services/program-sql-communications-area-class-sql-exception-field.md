@@ -36,7 +36,7 @@ Type(System.Exception)**
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -51,4 +51,4 @@ Type(System.Exception)**
 <!-- end -->
 
 #### See Also
-[ Program.SQL_CommunicationsArea Class](amfProgramSQL_CommunicationsAreaClass.html) <br /> [ Program.SQL_CommunicationsArea Class Members](amfProgramSQL_CommunicationsAreaClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.SQL_CommunicationsArea Class](program-sql-communications-area-class.html) <br /> [ Program.SQL_CommunicationsArea Class Members](program-sql-communications-area-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

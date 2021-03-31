@@ -30,7 +30,7 @@ This overloaded method constructs a new instance of an **ActivationGroupAttribut
             <tr>
               <td>
                 [
-                ActivationGroupAttribute ( )](amfActivationGroupAttributeClassActivationGroupAttributeConstructor1.html)
+                ActivationGroupAttribute ( )](activation-group-attribute-class-activation-group-attribute-constructor1.html)
               </td>
               <td>Constructs a new instance
               of an ActivationGroupAttribute with default
@@ -39,7 +39,7 @@ This overloaded method constructs a new instance of an **ActivationGroupAttribut
             <tr>
               <td>              [
                 ActivationGroupAttribute (
- *string* )](amfActivationGroupAttributeClassActivationGroupAttributeConstructor2.html)
+ *string* )](activation-group-attribute-class-activation-group-attribute-constructor2.html)
               </td>
               <td>Constructs a new instance
               of an ActivationGroupAttribute with the group
@@ -50,7 +50,7 @@ This overloaded method constructs a new instance of an **ActivationGroupAttribut
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -60,12 +60,12 @@ This overloaded method constructs a new instance of an **ActivationGroupAttribut
 #### See Also
 <dl><dt>
           [
-          ActivationGroupAttribute Class](amfActivationGroupAttributeClass.html)
+          ActivationGroupAttribute Class](activation-group-attribute-class.html)
          </dt><dt>
           [
-          ActivationGroupAttribute Class Members](amfActivationGroupAttributeClassMembers.html)
+          ActivationGroupAttribute Class Members](activation-group-attribute-class-members.html)
          </dt><dt>
           [
-          ASNA.Monarch Namespace](amfMonarchNamespace.html)</dt>
+          ASNA.Monarch Namespace](monarch-namespace.html)</dt>
 </dl>
 

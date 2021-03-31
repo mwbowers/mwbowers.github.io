@@ -10,7 +10,7 @@ keywords: properties [ASNA.Monarch], LocalDataCollection class
 
 ---
 
-[ LocalDataCollection Class Overview](amfLocalDataCollectionClass.html) 
+[ LocalDataCollection Class Overview](local-data-collection-class.html) 
 <!-- start public properties table -->	
 
 #### Public Properties
@@ -27,7 +27,7 @@ keywords: properties [ASNA.Monarch], LocalDataCollection class
           <tr valign="top">
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              Count](amfLocalDataCollectionClassCountProperty.html)
+              Count](local-data-collection-class-count-property.html)
             </td>
             <td>Gets the number of elements
             in 
@@ -36,7 +36,7 @@ keywords: properties [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              this](amfLocalDataCollectionClassthisProperty.html)
+              this](local-data-collection-classthis-property.html)
             </td>
             <td>Gets or sets the collection
             element with the specified name.</td>
@@ -44,7 +44,7 @@ keywords: properties [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              Names](amfLocalDataCollectionClassNamesProperty.html)
+              Names](local-data-collection-class-names-property.html)
             </td>
             <td>Gets an 
  **ICollection**  containing the names in the
@@ -54,7 +54,7 @@ keywords: properties [ASNA.Monarch], LocalDataCollection class
           <tr>
             <td><img height="16" alt="public property" src="images/property.bmp" width="16" border="0" />
               [
-              Values](amfLocalDataCollectionClassValuesProperty.html)
+              Values](local-data-collection-class-values-property.html)
             </td>
             <td>Gets an 
  **ICollection**  containing the values in
@@ -64,4 +64,4 @@ keywords: properties [ASNA.Monarch], LocalDataCollection class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ LocalDataCollection Class](amfLocalDataCollectionClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ LocalDataCollection Class](local-data-collection-class.html) 

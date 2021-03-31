@@ -30,7 +30,7 @@ The string referencing the message file folder object for the message file used 
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -45,4 +45,4 @@ The string referencing the message file folder object for the message file used 
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br /> [ MessageFileFolder Property](amfJobClassMessageFileFolderProperty.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br /> [ MessageFileFolder Property](job-class-message-file-folder-property.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

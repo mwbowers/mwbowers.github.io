@@ -10,7 +10,7 @@ keywords: members [ASNA.Monarch], Program.DBParm class
 
 ---
 
-[ Program.DBParm Class Overview](amfProgramDBParmClass.html) 
+[ Program.DBParm Class Overview](program-db-parm-class.html) 
 
 #### Constructors
 <table class="mytable" cellspacing="0" cellpadding="4" width="90%">
@@ -25,7 +25,7 @@ keywords: members [ASNA.Monarch], Program.DBParm class
           <tr valign="top">
             <td><img id="IMG1" style="WIDTH: 16px; HEIGHT: 16px" alt="public property" src="images/constructor.bmp" width="15" border="0" x-maintain-ratio="TRUE" />  
             [
-            DBParm](amfProgramDBParmClassConstructors.html)</td>
+            DBParm](program-db-parm-class-constructors.html)</td>
             <td>Overloaded. Creates a
             new instance of a 
  **DBParm**  object.</td>
@@ -33,4 +33,4 @@ keywords: members [ASNA.Monarch], Program.DBParm class
 </table>
 
 #### See Also
-[ASNA.Monarch Namespace](amfMonarchNamespace.html) <br /> [ Program.DBParm Class](amfProgramDBParmClass.html) 
+[ASNA.Monarch Namespace](monarch-namespace.html) <br /> [ Program.DBParm Class](program-db-parm-class.html) 

@@ -68,7 +68,7 @@ Boolean. **True** if the data is to be copied, otherwise **False** to indicate j
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -78,12 +78,12 @@ Boolean. **True** if the data is to be copied, otherwise **False** to indicate j
 #### See Also
 <dl><dt>
         [CLProgram
-        Class](amfCLProgramClass.html)
+        Class](clprogram-class.html)
         <br clear="none" />
         [
-        CLProgram Class Members](amfCLProgramClassMembers.html)
+        CLProgram Class Members](clprogram-class-members.html)
         <br clear="none" />
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)
+        Namespace](monarch-namespace.html)
       </dt></dl>
 

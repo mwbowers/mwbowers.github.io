@@ -16,7 +16,7 @@ This method provides Job file override options within Monarch.
 #### Requirements
 <pre class="prettyprint"> **BegSr OverrideFile Access(*Public) Type(Void)
    DclSrParm *fileName*  Type(*String)
-   DclSrParm *option*    Type([ASNA.Monarch.OverrideOptions](amfOverrideOptionsEnumeration.html))
+   DclSrParm *option*    Type([ASNA.Monarch.OverrideOptions](override-options-enumeration.html))
    DclSrParm *newValue*  Type(*Object)**       </pre>
 
 #### Parameters
@@ -228,7 +228,7 @@ The following table details the **OverrideOptions** , the value type, and the va
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -243,4 +243,4 @@ The following table details the **OverrideOptions** , the value type, and the va
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br />[ Job.ApplyOverrides Methods](amfJobClassApplyOverridesMethods.html)<br />[ Job.DeleteOverride Methods](amfJobClassDeleteOverrideMethods.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br />[ Job.ApplyOverrides Methods](amfJobClassApplyOverridesMethods.html)<br />[ Job.DeleteOverride Methods](job-class-delete-override-methods.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)

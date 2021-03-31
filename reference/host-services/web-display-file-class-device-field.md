@@ -14,10 +14,10 @@ keywords: how to, determine web device for display file
 
 ---
 
-This field contains the [WebDevice](amfWebDeviceClass.html) for the **WebDisplayFile** program.
+This field contains the [WebDevice](web-device-class.html) for the **WebDisplayFile** program.
 
 #### Syntax
-<pre class="prettyprint"> **BegProp Device Access(*Public) Type([ASNA.Monarch.WebDevice](amfWebDeviceClass.html))** </pre>
+<pre class="prettyprint"> **BegProp Device Access(*Public) Type([ASNA.Monarch.WebDevice](web-device-class.html))** </pre>
 
 #### Field Value
 **ASNA.Monarch.WebDevice.** 
@@ -31,7 +31,7 @@ This field contains the [WebDevice](amfWebDeviceClass.html) for the **WebDisplay
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -46,4 +46,4 @@ This field contains the [WebDevice](amfWebDeviceClass.html) for the **WebDisplay
 <!-- end -->
 
 #### See Also
-[ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ WebDisplayFile Class Members](amfWebDisplayFileClassMembers.html) <br /> [WebDevice Class](amfWebDeviceClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ WebDisplayFile Class](web-display-file-class.html) <br /> [ WebDisplayFile Class Members](web-display-file-class-members.html) <br /> [WebDevice Class](web-device-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html)

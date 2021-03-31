@@ -27,7 +27,7 @@ String containing the database file name from which an override is to be removed
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -35,4 +35,4 @@ String containing the database file name from which an override is to be removed
 <!-- end -->      
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [ OverrideFile Method](amfCLProgramClassOverrideFileMethods.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [ OverrideFile Method](clprogram-class-override-file-methods.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

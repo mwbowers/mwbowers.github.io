@@ -27,7 +27,7 @@ This overloaded method adds a library name to the user portion of the library li
           <tr>
             <td>              <code>[
               AddLiblEntry (
- *string* )](amfCLProgramClassAddLiblEntryMethod1.html)</code>
+ *string* )](clprogram-class-add-libl-entry-method1.html)</code>
             </td>
             <td>Adds a 
  *library name*  to the user portion of the library
@@ -37,7 +37,7 @@ This overloaded method adds a library name to the user portion of the library li
           <tr>
             <td>              <code>[
               AddLiblEntry (
- *string, LiblPosition, string* )](amfCLProgramClassAddLiblEntryMethod2.html)</code>
+ *string, LiblPosition, string* )](clprogram-class-add-libl-entry-method2.html)</code>
             </td>
             <td>Adds a 
  *library name*  to the user portion of the library
@@ -51,7 +51,7 @@ This overloaded method adds a library name to the user portion of the library li
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -61,12 +61,12 @@ This overloaded method adds a library name to the user portion of the library li
 #### See Also
 <dl><dt>
         [CLProgram
-        Class](amfCLProgramClass.html)
+        Class](clprogram-class.html)
         <br clear="none" />
         [
-        CLProgram Members](amfCLProgramClassMembers.html)
+        CLProgram Members](clprogram-class-members.html)
         <br clear="none" />
         [ASNA.Monarch
-        Namespace](amfMonarchNamespace.html)
+        Namespace](monarch-namespace.html)
       </dt></dl>
 

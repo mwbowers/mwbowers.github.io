@@ -24,7 +24,7 @@ A boolean value indicating if the **WebDevice** is to be terminated.
 Boolean. **True** if the **WebDevice** is to be abnormally terminated, otherwise **false** .
 
 #### Remarks
-See the [ Detach](amfWebDeviceClassDetachMethod.html) method.
+See the [ Detach](web-device-classDetach-method.html) method.
 <!-- -->
 
 #### Requirements
@@ -35,7 +35,7 @@ See the [ Detach](amfWebDeviceClassDetachMethod.html) method.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -48,4 +48,4 @@ See the [ Detach](amfWebDeviceClassDetachMethod.html) method.
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ Members](amfWebDeviceClassMembers.html) <br /> [ Detach Method](amfWebDeviceClassDetachMethod.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ Members](web-device-class-members.html) <br /> [ Detach Method](web-device-classDetach-method.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

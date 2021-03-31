@@ -51,7 +51,7 @@ The following exceptions may be encountered during the execution of this method.
 </table>
 
 #### Remarks
-**RemoveMessage** may be used to remove one or more messages placed on a program message queue by a prior call to [ SendProgramMessage](amfProgramClassSendProgramMessageMethods.html). Messages are removed from the program message queue corresponding to the calling program of the caller of this method.
+**RemoveMessage** may be used to remove one or more messages placed on a program message queue by a prior call to [ SendProgramMessage](program-class-end-program-message-methods.html). Messages are removed from the program message queue corresponding to the calling program of the caller of this method.
 
 Note that invoking this method is equivalent to calling the two-method overload with the value of "*PRV *" for the program queue parameter; e.g. RemoveMessage("*PRV *", *messageKey* ).
 
@@ -68,7 +68,7 @@ Note that invoking this method is equivalent to calling the two-method overload 
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -83,4 +83,4 @@ Note that invoking this method is equivalent to calling the two-method overload 
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -25,7 +25,7 @@ ASNA.Monarch Framework contains two assemblies &#8211; **ASNA.Monarch.WebDspF** 
           <tr>
             <td>
               [
-              ASNA.Monarch](amfMonarchNamespace.html)
+              ASNA.Monarch](monarch-namespace.html)
             </td>
             <td>ASNA.VisualRPG.Runtime</td>
             <td>This namespace provides the

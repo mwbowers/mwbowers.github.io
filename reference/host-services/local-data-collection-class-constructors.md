@@ -31,7 +31,7 @@ This method constructs a new instance of a **LocalDataCollection** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -46,4 +46,4 @@ This method constructs a new instance of a **LocalDataCollection** object.
 <!-- end -->
 
 #### See Also
-[ LocalDataCollection Class](amfLocalDataCollectionClass.html) <br /> [ LocalDataCollection Members](amfLocalDataCollectionMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ LocalDataCollection Class](local-data-collection-class.html) <br /> [ LocalDataCollection Members](local-data-collection-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -7,7 +7,7 @@ TocOrder: 20
 
 ---
 
-Attaches the [ WebDisplayFile](amfWebDisplayFileClass.html) to a **WebDevice** object.
+Attaches the [ WebDisplayFile](web-display-file-class.html) to a **WebDevice** object.
 
 #### Syntax 
 <pre class="prettyprint"> **BegSr Attach Access(*Public) Type(Void)
@@ -20,7 +20,7 @@ Attaches the [ WebDisplayFile](amfWebDisplayFileClass.html) to a **WebDevice** o
         </dt>
         <dd>
           [
-        ASNA.Monarch.WebDisplayFile](amfWebDisplayFileClass.html). The 
+        ASNA.Monarch.WebDisplayFile](web-display-file-class.html). The 
  **WebDisplayFile**  to be attached to the 
  **WebDevice** .</dd>
 </dl>  
@@ -35,7 +35,7 @@ Attaches the [ WebDisplayFile](amfWebDisplayFileClass.html) to a **WebDevice** o
           </colgroup>
           <tr>
             <td style="height: 29px">Namespace:</td>
-            <td style="height: 29px">[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td style="height: 29px">[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -50,4 +50,4 @@ Attaches the [ WebDisplayFile](amfWebDisplayFileClass.html) to a **WebDevice** o
 <!-- end -->
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Class Members](web-device-class-members.html) <br /> [ WebDisplayFile Class](web-display-file-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -34,7 +34,7 @@ Enumerators only allow reading the data in the collection and cannot be used to 
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html) </td>
+            <td>[ASNA.Monarch](monarch-namespace.html) </td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -49,4 +49,4 @@ Enumerators only allow reading the data in the collection and cannot be used to 
 <!-- end -->
 
 #### See Also
-[ LocalDataCollection Class](amfLocalDataCollectionClass.html) <br /> [ LocalDataCollection Members](amfLocalDataCollectionMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) <br />System.Collections.IDictionaryEnumerator <br />System.Collections.IDictionary 
+[ LocalDataCollection Class](local-data-collection-class.html) <br /> [ LocalDataCollection Members](local-data-collection-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) <br />System.Collections.IDictionaryEnumerator <br />System.Collections.IDictionary 

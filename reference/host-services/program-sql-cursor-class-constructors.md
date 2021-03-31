@@ -28,7 +28,7 @@ This overloaded method constructs a new instance of a **SqlCursor** object.
           </tr>          <tr>
             <td>[
             SqlCursor (
- *SqlPreparedStatement* )](amfProgramSqlCursorClassConstructor1.html)
+ *SqlPreparedStatement* )](program-sql-cursor-class-constructor1.html)
             </td>
             <td>Constructs a new instance of
           a SqlCursor object for a PREPARE statement.</td>
@@ -36,7 +36,7 @@ This overloaded method constructs a new instance of a **SqlCursor** object.
           <tr>
             <td>[
             SqlCursor (
- *DbConnection, string* )](amfProgramSqlCursorClassConstructor2.html)
+ *DbConnection, string* )](program-sql-cursor-class-constructor2.html)
             </td>
             <td>Constructs a new instance of
           a SqlCursor object specifying the database connection and
@@ -45,7 +45,7 @@ This overloaded method constructs a new instance of a **SqlCursor** object.
           <tr>
             <td>[
             SqlCursor (
- *DbConnection, string, Program.DBParm[ ]* )](amfProgramSqlCursorClassConstructor3.html)
+ *DbConnection, string, Program.DBParm[ ]* )](program-sql-cursor-class-constructor3.html)
             </td>
             <td>Constructs a new instance of
           a SqlCursor object specifying the database connection,
@@ -61,7 +61,7 @@ This overloaded method constructs a new instance of a **SqlCursor** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -77,8 +77,8 @@ This overloaded method constructs a new instance of a **SqlCursor** object.
 
 #### See Also
 <dl>
-	<dd>[Program.SqlCursor Class](amfProgramSqlCursorClass.html)</dd>
-    <dd>[Program.SqlCursor Class Members](amfProgramSqlCursorClassMembers.html)</dd>
-    <dd>[ASNA.Monarch Namespace](amfMonarchNamespace.html)</dd>
+	<dd>[Program.SqlCursor Class](program-sql-cursor-class.html)</dd>
+    <dd>[Program.SqlCursor Class Members](program-sql-cursor-class-members.html)</dd>
+    <dd>[ASNA.Monarch Namespace](monarch-namespace.html)</dd>
 </dl>
 

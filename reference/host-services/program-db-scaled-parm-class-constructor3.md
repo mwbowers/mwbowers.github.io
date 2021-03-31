@@ -67,4 +67,4 @@ Constructs a new instance of a **DBScaledParm** object with the data type, value
 <!-- end --> 
 
 #### See Also
-[ Program.DBScaledParm Class](amfProgramDBScaledParmClass.html) <br /> [ Program.DBScaledParm Class Members](amfProgramDBScaledParmClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[ Program.DBScaledParm Class](program-db-scaled-parm-class.html) <br /> [ Program.DBScaledParm Class Members](program-db-scaled-parm-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

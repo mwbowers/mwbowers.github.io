@@ -28,7 +28,7 @@ Overloaded method to execute a SQL query command returning System.Collections.Ge
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_Query ( *string)* ](amfProgramClassExecuteSQL_QueryMethod3.html)
+            ExecuteSQL_Query ( *string)* ](program-class-execute-sql-query-method3.html)
               <em />
             </td>
             <td>Executes a SQL query
@@ -36,7 +36,7 @@ Overloaded method to execute a SQL query command returning System.Collections.Ge
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_Query ( *string, DBParm[ ]* )](amfProgramClassExecuteSQL_QueryMethod1.html)
+            ExecuteSQL_Query ( *string, DBParm[ ]* )](program-class-execute-sql-query-method1.html)
             </td>
             <td>Executes a SQL query
           specifying the SQL statement and statement
@@ -44,7 +44,7 @@ Overloaded method to execute a SQL query command returning System.Collections.Ge
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_Query ( *DbConnection, string)* ](amfProgramClassExecuteSQL_QueryMethod4.html)
+            ExecuteSQL_Query ( *DbConnection, string)* ](program-class-execute-sql-query-method4.html)
               <em />
             </td>
             <td>Executes a SQL
@@ -53,7 +53,7 @@ Overloaded method to execute a SQL query command returning System.Collections.Ge
           </tr>
           <tr>
             <td>[
-            ExecuteSQL_Query ( *DbConnection, string, DBParm[ ]* )](amfProgramClassExecuteSQL_QueryMethod2.html)
+            ExecuteSQL_Query ( *DbConnection, string, DBParm[ ]* )](program-class-execute-sql-query-method2.html)
             </td>
             <td>Executes a SQL
           query specifying the database connection, SQL
@@ -71,7 +71,7 @@ Overloaded method to execute a SQL query command returning System.Collections.Ge
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -86,4 +86,4 @@ Overloaded method to execute a SQL query command returning System.Collections.Ge
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html)<br />[Program Class Members](amfProgramClassMembers.html)<br />[Program.DBParm Class](amfProgramDBParmClass.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)<br />[Embedded SQL Overview](amfconSQLStatementExamples.html)
+[Program Class](program-class.html)<br />[Program Class Members](program-class-members.html)<br />[Program.DBParm Class](program-db-parm-class.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html)<br />[Embedded SQL Overview](amfconSQLStatementExamples.html)

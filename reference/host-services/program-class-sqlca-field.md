@@ -14,14 +14,14 @@ keywords: SQLCA
 
 ---
 
-[ SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html) object that represents the SQLCA to trap and report run-time errors for the **Program** .
+[ SQL_CommunicationsArea](program-sql-communications-area-class.html) object that represents the SQLCA to trap and report run-time errors for the **Program** .
 <!-- start -->
 
 #### Syntax
 <pre class="syntax"> **BegProp SQLCA Access(*Protected) Type(SQL_CommunicationsArea)** </pre>
 
 #### Field Value
-[ SQL_CommunicationsArea](amfProgramSQL_CommunicationsAreaClass.html) object that represents the SQLCA to trap and report run-time errors for the **Program** .
+[ SQL_CommunicationsArea](program-sql-communications-area-class.html) object that represents the SQLCA to trap and report run-time errors for the **Program** .
 <!-- -->
 
  <!-- start -->
@@ -34,7 +34,7 @@ keywords: SQLCA
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -49,4 +49,4 @@ keywords: SQLCA
 <!-- end -->
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -28,7 +28,7 @@ This overloaded method constructs a new instance of a **Program.DBParm** object.
           </tr>
           <tr>
             <td>[DBParm (
- *DbType* )](amfProgramDBParmClassConstructor1.html)
+ *DbType* )](program-db-parm-class-constructor1.html)
             </td>
             <td>Creates a new instance of a
           Program.DBParm object with the data type
@@ -36,7 +36,7 @@ This overloaded method constructs a new instance of a **Program.DBParm** object.
           </tr>
           <tr>
             <td>[DBParm (
- *DbType, Object* )](amfProgramDBParmClassConstructor3.html)
+ *DbType, Object* )](program-db-parm-class-constructor3.html)
             </td>
             <td>Creates a new instance of a
           Program.DBParm object with the data type and value
@@ -44,7 +44,7 @@ This overloaded method constructs a new instance of a **Program.DBParm** object.
           </tr>
           <tr>
             <td>[DBParm (
- *DbType, ParameterDirection, Object* )](amfProgramDBParmClassConstructor2.html)
+ *DbType, ParameterDirection, Object* )](program-db-parm-class-constructor2.html)
             </td>
             <td>Creates a new instance of a
           Program.DBParm object with the data type, direction, and
@@ -62,7 +62,7 @@ This overloaded method constructs a new instance of a **Program.DBParm** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -77,4 +77,4 @@ This overloaded method constructs a new instance of a **Program.DBParm** object.
 <!-- end -->
 
 #### See Also
-[Program.DBParm Class](amfProgramDBParmClass.html)<br />[ Program.DBParm Class Members](amfProgramDBParmClassMembers.html)<br />[ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program.DBParm Class](program-db-parm-class.html)<br />[ Program.DBParm Class Members](program-db-parm-class-members.html)<br />[ASNA.Monarch Namespace](monarch-namespace.html) 

@@ -15,7 +15,7 @@ keywords: SQL cursor, scroll type
 
 ---
 
-The **ScrollTypes** enumerated constant defines values for the type of scrolling allowed for [ SqlCursor](amfProgramSqlCursorClass.html).
+The **ScrollTypes** enumerated constant defines values for the type of scrolling allowed for [ SqlCursor](program-sql-cursor-class.html).
 
 #### Syntax
 <pre class="syntax"> **BegEnum ScrollTypes Access(*Public)**       </pre>
@@ -66,7 +66,7 @@ The **ScrollTypes** enumerated constant defines values for the type of scrolling
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -82,6 +82,6 @@ The **ScrollTypes** enumerated constant defines values for the type of scrolling
 
 #### See Also
 <dl><dd>[
-    Program.SqlCursor Class](amfProgramSqlCursorClass.html)</dd><dd>[ASNA.Monarch
-    Namespace](amfMonarchNamespace.html)</dd></dl>
+    Program.SqlCursor Class](program-sql-cursor-class.html)</dd><dd>[ASNA.Monarch
+    Namespace](monarch-namespace.html)</dd></dl>
 

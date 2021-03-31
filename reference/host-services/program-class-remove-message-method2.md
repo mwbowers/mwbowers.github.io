@@ -61,7 +61,7 @@ The following exceptions may be encountered during the execution of this method.
 </table>
 
 #### Remarks
-**RemoveMessage** may be used to remove one or more messages placed on a program message queue by a call to [ SendProgramMessage](amfProgramClassSendProgramMessageMethods.html). Messages are removed from the program message queue identified by *pgmQ* . The particular messages to remove from the queue are identified by *messageKey* . 
+**RemoveMessage** may be used to remove one or more messages placed on a program message queue by a call to [ SendProgramMessage](program-class-end-program-message-methods.html). Messages are removed from the program message queue identified by *pgmQ* . The particular messages to remove from the queue are identified by *messageKey* . 
 
 *pgmQ* may either be specified as a program name, for direct access to a particular program queue, or as a location string, for indirect or relative access to a program queue associated with a particular invocation on the call stack. For indirect access, the value of *pgmQ* must be a string consisting of two string tokens, separated by one or more space characters. The second token indicates a program invocation, and must be either the name of a particular invocation, or the keyword "*", to indicate the caller's program invocation. The first token must be one of two values, "*SAME" or "*PRV", to indicate, respectively, the program queue of the current invocation, or the program queue of the invocation just prior to the named invocation on the call stack.
 
@@ -76,7 +76,7 @@ The following exceptions may be encountered during the execution of this method.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -89,4 +89,4 @@ The following exceptions may be encountered during the execution of this method.
 </table>
 
 #### See Also
-[Program Class](amfProgramClass.html) <br /> [Program Class Members](amfProgramClassMembers.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Program Class](program-class.html) <br /> [Program Class Members](program-class-members.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

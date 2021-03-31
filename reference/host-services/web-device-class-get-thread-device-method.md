@@ -36,7 +36,7 @@ A thread can execute a part of an application's code, including code that is cur
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -49,4 +49,4 @@ A thread can execute a part of an application's code, including code that is cur
 </table>
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Class Members](amfWebDeviceClassMembers.html) <br /> [WebDevice Class](amfWebDeviceClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Class Members](web-device-class-members.html) <br /> [WebDevice Class](web-device-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

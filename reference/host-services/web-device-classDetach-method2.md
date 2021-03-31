@@ -7,7 +7,7 @@ TocOrder: 20
 
 ---
 
-Detaches a previously attached [ ASNA.Monarch.WebDisplayFile](amfWebDisplayFileClass.html) from a **WebDevice** object.
+Detaches a previously attached [ ASNA.Monarch.WebDisplayFile](web-display-file-class.html) from a **WebDevice** object.
 
 #### Syntax 
 <pre class="prettyprint"> **BegSr Detach Access(*Public) Type(Void)
@@ -20,7 +20,7 @@ Detaches a previously attached [ ASNA.Monarch.WebDisplayFile](amfWebDisplayFileC
         </dt>
         <dd>
           [
-        ASNA.Monarch.WebDisplayFile](amfWebDisplayFileClass.html). The 
+        ASNA.Monarch.WebDisplayFile](web-display-file-class.html). The 
  **WebDisplayFile**  object to be detached from
         the 
  **WebDevice** .</dd>
@@ -36,7 +36,7 @@ Detaches a previously attached [ ASNA.Monarch.WebDisplayFile](amfWebDisplayFileC
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -51,4 +51,4 @@ Detaches a previously attached [ ASNA.Monarch.WebDisplayFile](amfWebDisplayFileC
 <!-- end -->
 
 #### See Also
-[WebDevice Class](amfWebDeviceClass.html) <br /> [ WebDevice Members](amfWebDeviceClassMembers.html) <br /> [ Attach Method](amfWebDeviceClassAttachMethods.html) <br /> [ Detach Method (string)](amfWebDeviceClassDetachMethod.html) <br /> [ WebDisplayFile Class](amfWebDisplayFileClass.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[WebDevice Class](web-device-class.html) <br /> [ WebDevice Members](web-device-class-members.html) <br /> [ Attach Method](web-device-classAttach-methods.html) <br /> [ Detach Method (string)](web-device-classDetach-method.html) <br /> [ WebDisplayFile Class](web-display-file-class.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 

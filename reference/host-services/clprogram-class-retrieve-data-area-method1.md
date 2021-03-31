@@ -25,11 +25,11 @@ Returns the local data area associated with the job.
 String. Variable containing the contents of the local *dataArea* .
 
 #### Remarks
-If you want to retrieve many subfields, use this method and then use <code>[ Percent_SST](amfCLProgramClassPercent_SSTMethod.html)</code> to extract subfields.
+If you want to retrieve many subfields, use this method and then use <code>[ Percent_SST](clprogram-class-percent-sst-method.html)</code> to extract subfields.
 <!-- start -->
 
 #### Requirements
-**Namespace:** [ASNA.Monarch](amfMonarchNamespace.html)
+**Namespace:** [ASNA.Monarch](monarch-namespace.html)
 
 **Assembly:** ASNA.VisualRPG.Runtime.DLL 
 
@@ -37,4 +37,4 @@ If you want to retrieve many subfields, use this method and then use <code>[ Per
 <!-- end -->
 
 #### See Also
-[CLProgram Class](amfCLProgramClass.html) <br clear="none" /> [ CLProgram Class Members](amfCLProgramClassMembers.html) <br clear="none" /> [Percent_SST Method](amfCLProgramClassPercent_SSTMethod.html) <br clear="none" /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[CLProgram Class](clprogram-class.html) <br clear="none" /> [ CLProgram Class Members](clprogram-class-members.html) <br clear="none" /> [Percent_SST Method](clprogram-class-percent-sst-method.html) <br clear="none" /> [ASNA.Monarch Namespace](monarch-namespace.html) 

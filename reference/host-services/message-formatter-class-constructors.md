@@ -27,7 +27,7 @@ Constructs a new instance of a **MessageFormatter** object.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -42,4 +42,4 @@ Constructs a new instance of a **MessageFormatter** object.
 <!-- end -->
 
 #### See Also
-[ MessageFormatter Class](amfMessageFormatterClass.html) <br /> [ MessageFormatter Class Members](amfMessageFormatterMembers.html) <br />[ASNA.Monarch Namespace](amfMonarchNamespace.html)
+[ MessageFormatter Class](message-formatter-class.html) <br /> [ MessageFormatter Class Members](message-formatter-members.html) <br />[ASNA.Monarch Namespace](monarch-namespace.html)

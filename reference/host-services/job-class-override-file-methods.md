@@ -33,7 +33,7 @@ This overloaded method provides Job file override options.
             <td>[
               OverrideFile (
  *string, OverrideOptions, object* 
-)](amfJobClassOverrideFileMethod1.html)
+)](job-class-override-file-method1.html)
             </td>
             <td>Overrides a
             file for the option specified with
@@ -44,7 +44,7 @@ This overloaded method provides Job file override options.
               OverrideFile (
  *string, OverrideOptions, object,
               OverrideScope* 
-)](amfJobClassOverrideFileMethod2.html)
+)](job-class-override-file-method2.html)
             </td>
             <td>Overrides a
             file for the option specified with
@@ -63,7 +63,7 @@ This overloaded method provides Job file override options.
           </colgroup>
           <tr>
             <td>Namespace:</td>
-            <td>[ASNA.Monarch](amfMonarchNamespace.html)</td>
+            <td>[ASNA.Monarch](monarch-namespace.html)</td>
           </tr>
           <tr>
             <td>Assembly:</td>
@@ -78,4 +78,4 @@ This overloaded method provides Job file override options.
 <!-- end -->
 
 #### See Also
-[Job Class](amfJobClass.html) <br /> [Job Class Members](amfJobMembers.html) <br /> [ ASNA.Monarch.OverrideOptions](amfOverrideOptionsEnumeration.html) <br /> [ ASNA.Monarch.OverrideScope](amfOverrideScopeEnumeration.html) <br /> [ASNA.Monarch Namespace](amfMonarchNamespace.html) 
+[Job Class](job-class.html) <br /> [Job Class Members](job-members.html) <br /> [ ASNA.Monarch.OverrideOptions](override-options-enumeration.html) <br /> [ ASNA.Monarch.OverrideScope](overrideScope-enumeration.html) <br /> [ASNA.Monarch Namespace](monarch-namespace.html) 
