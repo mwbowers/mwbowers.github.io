@@ -64,7 +64,7 @@ Typical Terminal data speed was 9600 bauds (bits per second). That is: 1,200 byt
 
 > Today's Internet speed at home may be 100,000 times *faster* than the speed of a fast IBM Terminal[^1]
 
-`RPG` also allows to optimize memory footprint on decimal fields. [See Packed-decimal format.](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzasd/padecfo.htm)
+`RPG` also allows to optimize memory footprint on decimal fields. [See Packed-decimal format.](https://www.ibm.com/docs/en/i/7.3?topic=type-packed-decimal-format)
 
 >All these optimizations are not *natively* supported by .NET, but Legacy `RPG` logic must have a target which produces the exact effect. This is where [ASNA.QSys comes to the rescue](/concepts/architecture/asna-qsys)
 

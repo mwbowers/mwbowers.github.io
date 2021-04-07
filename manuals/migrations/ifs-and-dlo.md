@@ -12,9 +12,9 @@ The property `IFSRoot` of the `Monarch.Job` holds the Window's folder where the 
 
 For more details on the IFS, please see these IBM links:
 
-[https://www.ibm.com/support/knowledgecenter/ssw\_ibm\_i\_73/ifs/rzaaxkickoff.htm](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/ifs/rzaaxkickoff.htm)
+[IFS](https://www.ibm.com/docs/en/i/7.3?topic=systems-integrated-file-system)
 
-[https://www.ibm.com/support/knowledgecenter/ssw\_ibm\_i\_73/ifs/rzaaxfscmp.htm](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/ifs/rzaaxfscmp.htm)
+[File system comparison](https://www.ibm.com/docs/en/i/7.3?topic=systems-file-system-comparison)
 
 ## DLO – Document Library Objects
 
@@ -32,9 +32,9 @@ And also:
 
 For more details on the QDLS, please see these IBM links:
 
-[https://www.ibm.com/support/knowledgecenter/ssw\_ibm\_i\_73/ifs/rzaaxdocfs.htm](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_73/ifs/rzaaxdocfs.htm)
+[QDLS](https://www.ibm.com/docs/en/i/7.3?topic=systems-document-library-services-file-system-qdls)
 
-[http://www-01.ibm.com/support/docview.wss?uid=nas8N1015584](http://www-01.ibm.com/support/docview.wss?uid=nas8N1015584)
+[Comparison of the QDLS and "Root" File Systems for Storing User Documents and Other PC Files](https://www.ibm.com/;www-01.ibm.com/support/docview.wss?uid=nas8N1015584)
 
 # IFS Related Commands
 

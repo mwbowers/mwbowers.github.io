@@ -5,7 +5,7 @@ title: IBM i Program
 IBM i defines a Program as a particular Operating System *Object type*, that can be "Called". (The closest .NET concept is a Console program, but even that is significantly different).
 
 ## IBM i Program Activation
-The process of getting a program object or service program ready to run is called [activation](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzase/activtn.htm). 
+The process of getting a program object or service program ready to run is called [activation](https://www.ibm.com/docs/en/i/7.2?topic=concepts-activation-activation-groups). 
 
 Activation is done by the system when a *Program Object* is called. Because service programs are not called in their entirety, they are activated during the call to a program object that directly or indirectly requires their services. 
 
@@ -31,7 +31,7 @@ IBM i Program independence made the system **very robust**. Changing a few Progr
 > This was so prevalent on Applications running on IBM i, where many thousands of *program objects* remain unchanged throughout the years, that oftentimes the source code was lost or misplaced (without noticeable consequences).
 
 ## CL Programs
-A [CL Program](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rbam6/clpr.htm) is a IBM i Program that is created from Operating System *commands*.
+A [CL Program](https://www.ibm.com/docs/en/i/7.2?topic=procedures-cl-program) is a IBM i Program that is created from Operating System *commands*.
 
 >CL stands for **Control Language**.
 

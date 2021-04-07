@@ -2,7 +2,7 @@
 title: Expo DDS-like TagHelpers
 ---
 
-IBM i *Data Description Specifications for Displayfiles* or [DDS for Displayfiles](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzahg/rzahgdds.htm) defines a *cascading* keyword description language with the following entries [^1]:
+IBM i *Data Description Specifications for Displayfiles* or [DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.2?topic=programming-dds) defines a *cascading* keyword description language with the following entries [^1]:
 
 ~~~
 File-level

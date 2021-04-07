@@ -2,7 +2,7 @@
 title: QSys Program Structure
 ---
 
-IBM i Programs written in [RPG](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzahg/rzahgrpgcode.htm) and [CL](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rbam6/rbam6aboutcl.htm) are Migrated as C# classes derived from `ASNA.QSys.HostServices.Program` (which we will refer in this document as a `QSys Program` - for short -).
+IBM i Programs written in [RPG](https://www.ibm.com/docs/en/i/7.2?topic=languages-rpg) and [CL](https://www.ibm.com/docs/en/i/7.2?topic=language-control-overview) are Migrated as C# classes derived from `ASNA.QSys.HostServices.Program` (which we will refer in this document as a `QSys Program` - for short -).
 
 In order for a QSys Program class to support the [IBM i Developer's model](/concepts/background/ibmi-developer-model), it must rely on other classes such that it may :
 

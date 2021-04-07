@@ -31,4 +31,4 @@ An *Interactive Job* s a job that starts when a user signs on to a display stati
 For the job to run, the subsystem searches for the job description, which can be specified in the workstation entry or the user profile.
 
 ## Related Concepts
-For more on IBM i Jobs, consult [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzaks/rzaksjobtypeoverview.htm)
+For more on IBM i Jobs, consult [IBM Documentation](https://www.ibm.com/docs/en)
