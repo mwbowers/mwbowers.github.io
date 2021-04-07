@@ -2,7 +2,7 @@
 title: ASNA.QSys DatabaseFile
 ---
 
-IBM i RPG [File Description Specifications](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/filedes.htm) are implemented in `ASNA.QSys` by the class `DatabaseFile`.
+IBM i RPG [File Description Specifications](https://www.ibm.com/docs/en/i/7.2?topic=specifications-file-description) are implemented in `ASNA.QSys` by the class `DatabaseFile`.
 
 > Note: **Program Described** files are converted to **Externally Described** files during Migration.
 
@@ -63,7 +63,7 @@ Where,
 * `XXXFormatIDs` where *XXX* is the name of the field (MYLEGACYFILE1 in this case), are [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0) instances with statically computed *Record Format Level Identifier*[^1] for the records defined by file *XXX*.
 
 * `"*LIBL/XXX"` where *XXX* is the name of the field (MYLEGACYFILE1 in this case),
-is the search *path* to locate the external *object*. `"XXX"` in this case represents the Operating System *object* name (Physical or Logical *File* - *Table* or *View* - on the Database). `"*LIBL"` means, use the [Library List](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzarl/rzarlseclibl.htm). For detailed explanation read [ASNA.QSys.DataGate.Client Reference]().
+is the search *path* to locate the external *object*. `"XXX"` in this case represents the Operating System *object* name (Physical or Logical *File* - *Table* or *View* - on the Database). `"*LIBL"` means, use the [Library List](https://www.ibm.com/docs/en/i/7.2?topic=security-library-lists). For detailed explanation read [ASNA.QSys.DataGate.Client Reference]().
 
 >For details on other parameters, read [ASNA.QSys.Runtime Reference]() 
 
@@ -140,7 +140,7 @@ The *MY_PROGRAM.cs* is the class body that we have been discussing in previous s
 
 During Migration, ASNA Nomad Tools query the *Database Schema* to extract detailed file definitions and writes that information into an [XML file](https://en.wikipedia.org/wiki/XML) that is later used to generate the *MY_PROGRAM.Io.cs* partial class.  
 
->In addition to *Database Schema* XFU files contain information about how Data-Structures are mapped into records of the database, according to RPG [Definition Specifications](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/dspec9.htm)
+>In addition to *Database Schema* XFU files contain information about how Data-Structures are mapped into records of the database, according to RPG [Definition Specifications](https://www.ibm.com/docs/en/i/7.2?topic=specifications-definition)
 
 To generate *MY_PROGRAM.Io.cs* partial class ASNA Nomad Tools use *MY_PROGRAM.Io.xfu* to declare using C# syntax, field declaration of the types defined by the [Fixed Types](/concepts/program-structure/qsys-fixedtypes).
 
@@ -248,7 +248,7 @@ private void PopulateBufferMYLEGACYFILE1(string _, AdgDataSet _dataSet)
 ```
 ## File Overriding
 
-IBM i [File Overriding](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/dm/rbal3ovrcmds.htm) is a technique that directs the Operating System to locate different *Objects* that those used to compile a Program. This is *similar* to the concept [URL Redirection](https://en.wikipedia.org/wiki/URL_redirection) more commonly known to Web Developers.
+IBM i [File Overriding](https://www.ibm.com/docs/en/i/7.2?topic=overrides-summary-override-commands) is a technique that directs the Operating System to locate different *Objects* that those used to compile a Program. This is *similar* to the concept [URL Redirection](https://en.wikipedia.org/wiki/URL_redirection) more commonly known to Web Developers.
 
 >Program behavior can be affected without recompiling, by requesting the Operating System to change how external resources are located and used.
 

@@ -17,5 +17,5 @@ CL Program extends `QSys Program` by adding support for:
 8. Server Date Conversion methods.
 
 ## Notes: 
-1. CL Programs do not have an [implicit logic cycle](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasd/rpgcycle.htm).
+1. CL Programs do not have an [implicit logic cycle](https://www.ibm.com/docs/en/i/7.2?topic=cycle-rpg-other-implicit-logic).
 2. CL Programs are de-activated when program completes. [For information about Program Activation read this](/concepts/program-structure/qsys-program). 

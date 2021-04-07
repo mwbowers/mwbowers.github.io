@@ -2,7 +2,7 @@
 title: ASNA.QSys WorkstationFile
 ---
 
-[The IBM i RPG Application development Model](/concepts/background/ibmi-developer-model) includes the concept of a [WORKSTN File](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzasc/hintapp.htm)
+[The IBM i RPG Application development Model](/concepts/background/ibmi-developer-model) includes the concept of a [WORKSTN File](https://www.ibm.com/docs/en/i/7.2?topic=devices-using-workstn-files)
 
 * A `WORKSTN File` *is* a **File**.
 

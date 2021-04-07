@@ -9,7 +9,7 @@ As we have discussed in the topic [IBM i Developer's model](/concepts/background
 3. Message file. 
 
 ## Displayfile
-An IBM i Displayfile object is generated from a [Data Description Specification](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/kickoff.htm) - *or `DDS` for short* -.
+An IBM i Displayfile object is generated from a [Data Description Specification](https://www.ibm.com/docs/en/i/7.2?topic=dds-display-files) - *or `DDS` for short* -.
 
 >&#128161; You can think of `DDS` as the Legacy `HTML`.
 
@@ -47,13 +47,13 @@ Now, focus on positions from `col 19` to `col 28`. You can see names like `FLDA`
 
 >Fields defined in `DDS` are available to the *IBM i Program* that uses the Displayfile.
 
-Generally speaking, `column positions 45 to 80` are used as [DDS Keywords](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/rzakc/rzakcmstkeyent.htm)
+Generally speaking, `column positions 45 to 80` are used as [DDS Keywords](https://www.ibm.com/docs/en/i/7.2?topic=ddf-dds-keyword-entries-display-files-positions-45-through-80)
 
 >&#128161; You can think of `DDS Keywords` as the Legacy `HTML` element's [Attributes](https://en.wikipedia.org/wiki/HTML_attribute#).
 
 
 ## Database file
-[IBM Relational Database Management Systems](https://en.wikipedia.org/wiki/SQL#History) have come a long way since the design of [Db2 for i](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/dbp/rbafodbfcon.htm)
+[IBM Relational Database Management Systems](https://en.wikipedia.org/wiki/SQL#History) have come a long way since the design of [Db2 for i](https://www.ibm.com/docs/en/i/7.3?topic=programming-database-file-concepts)
 
 *Db2 for i* is a *unusual* relational database manager. You can say:
 1. It has been fully integrated on the IBM i operating system, since the inception of IBM i.
@@ -69,7 +69,7 @@ Generally speaking, `column positions 45 to 80` are used as [DDS Keywords](https
 4. Hard for DBMS to optimize (automatically). The performance tunning is a responsibility of the application developer only.
 5. When involving multiple files (*Tables*), the complexity of the source can grow very quickly. May become hard for new developers to take over Legacy code when original designer is no longer available.
 
-Modern Relational DBMS operates on *Sets*. A *Set* is a result of a *Database Query* where you join several *Tables* and describe in detail how the *Set* should be processed by the DBMS to produce a result (typically with many rows). DBMS that operate on *Sets* are better suited to implement [Commitment control](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakj/rzakjcommitkickoff.htm) 
+Modern Relational DBMS operates on *Sets*. A *Set* is a result of a *Database Query* where you join several *Tables* and describe in detail how the *Set* should be processed by the DBMS to produce a result (typically with many rows). DBMS that operate on *Sets* are better suited to implement [Commitment control](https://www.ibm.com/docs/en/i/7.1?topic=database-commitment-control) 
 
 >[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch Nomad](/concepts/architecture/asna-qsys)
 
@@ -104,10 +104,10 @@ Many times, the *Table* presented to a User is a *View* (a subset of records) in
 
 This is not unique to IBM i Applications, Website Applications have the similar User Interfaces (*think of your Bank Account ledger, for example*).
 
-What is *unique* is how IBM i Applications use a *View* into a *Table* (or joined Tables), as if it were a *File*, within a *File*, hence the name [subfile](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakc/rzakcmstdfsfl.htm).
+What is *unique* is how IBM i Applications use a *View* into a *Table* (or joined Tables), as if it were a *File*, within a *File*, hence the name [subfile](https://www.ibm.com/docs/en/i/7.1?topic=80-sfl-subfile-keyword-display-files).
 
 Just like a *File Object*, the Display `subfile` can be *written to*, *read from*, *updated*, etc. 
 
-`Subfile` configuration and usage is **very** flexible, so much that a *special* Displayfile element had to be created to control them, the [Subfile Control Record](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakc/rzakcmstdfsfctl.htm)
+`Subfile` configuration and usage is **very** flexible, so much that a *special* Displayfile element had to be created to control them, the [Subfile Control Record](https://www.ibm.com/docs/en/i/7.1?topic=80-sflctl-subfile-control-keyword-display-files)
 
 >Familiarity to these concepts is essential to understand  [ASNA Nomad Display Page's](/concepts/user-interface/asp-net-websites) markup.

@@ -2,7 +2,7 @@
 title: ASNA.QSys PrintFile
 ---
 
-`ASNA.QSys.Printfile` or `QSys Printfile` (for short), is the ASNA.QSys class that abstracts the concept of a [IBM i Printer file](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/rzalu/rzaluprtfover.htm).
+`ASNA.QSys.Printfile` or `QSys Printfile` (for short), is the ASNA.QSys class that abstracts the concept of a [IBM i Printer file](https://www.ibm.com/docs/en/i/7.3?topic=file-printer-overview).
 
 Similarly to a [QSys DatabaseFile](/concepts/program-structure/qsys-databasefile), a `QSys Printfile` is a class used to instance objects to produce output records, according to external definitions.
 
@@ -56,7 +56,7 @@ The second parameter `dclPrintFileName` is a short name logically representing t
 
 The third parameter `filePath` is s string *library* and *name* path to where the printfile is defined externally in the database. 
 
-The last required parameter is a [.NET Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0) with the [hash](https://en.wikipedia.org/wiki/Hash_function) codes have been loaded to be used while [Detecting File Description changes](https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_73/dm/rbal3detectdesc.htm). This codes are also *generated* by [Nomad Tool](/concepts/enhancements/nomad-tools).
+The last required parameter is a [.NET Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0) with the [hash](https://en.wikipedia.org/wiki/Hash_function) codes have been loaded to be used while [Detecting File Description changes](https://www.ibm.com/docs/en/i/7.3?topic=files-detection-file-description-changes). This codes are also *generated* by [Nomad Tool](/concepts/enhancements/nomad-tools).
 
 >Note the *naming convention* use by Nomad tools, the Printfile member is used while naming the partial I/O names. In this example, `QPRINT` is used in the names: PopulateBufferQPRINT and QPRINTFormatIDs
 
@@ -126,7 +126,7 @@ wORDNBR = EditCode.Apply(pORDNBR, 0, 9, EditCodes.Z, "").Trim();
 QPRINT.Write("PrtNmeLine", _IN.Array);
 ```
 
-Sets the .NET Printfile fields `wCUSTNO` and `wORDNBR` defined in record format `PrtNmeLine`. Notice how fields in .NET Printfiles are also [Fixed Types](/concepts/program-structure/qsys-fixedtypes) as defined by Legacy DDS which may need formatting according to [Edit codes in printer files](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzakd/os400edits.htm).
+Sets the .NET Printfile fields `wCUSTNO` and `wORDNBR` defined in record format `PrtNmeLine`. Notice how fields in .NET Printfiles are also [Fixed Types](/concepts/program-structure/qsys-fixedtypes) as defined by Legacy DDS which may need formatting according to [Edit codes in printer files](https://www.ibm.com/docs/en/i/7.1?topic=files-i-edit-codes-in-printer).
 
 > QSys Fixed Types do automatic conversion from/to C# *string* types.
 
