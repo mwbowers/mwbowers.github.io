@@ -3,10 +3,19 @@ title: Introduction to ASNA Monarch Core Framework
 
 ---
 
-The application you are enhancing, maintaining or trying to understand probably originated on an IBM i and was migrated with ASNA's Monarch technology.
+The application you are enhancing, maintaining or trying to understand probably originated on an IBM i and was migrated with ASNA Monarch technology.
+
+There are several *Roles* involved in the complete Migration process, namely:
+ 
+|**Role**|**Tools**|**Description**
+| *Migrator*   | [ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help160/Main_Monarch.htm) <br> [DataGate](https://docs.asna.com/documentation/Help160/Main_DataGate.htm) (for IBM i, Windows and [DSS](https://docs.asna.com/documentation/Help160/DSS/_HTML/Welcome.htm)) <br> [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) | Project Manager: <br> Oversees the complete Migration process. <br> Trained in all Tools involved.
+|*Remediator* | [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) <br> Nomad <br> DataGate [DSS](https://docs.asna.com/documentation/Help160/DSS/_HTML/Welcome.htm)  | Subject matter expert: <br> Knows the IBM i Application. <br> Understands RPG and Visual RPG.
+|*Developer*  | ASNA Monarch Core Framework <br> DataGate Linear  | C# Developer: <br> Understands ASNA Monarch Core Framework. <br> Can become Subject matter expert.
+ 
+> These documents describe in detail the *ASNA Monarch Core Framework*. The **Developer Role** is the intended audience for the content that follows. For documentation relevant to the other *Roles* please refer to [ASNA Products Documentation](https://docs.asna.com/documentation/)
 
 ## Monarch Migration Output
-The ASNA's Monarch migration solution translates IBM i programs written in RPG and CL into .NET C# classes.  RPG interactive programs make use of Display Files where the layout and data schema for the screens are defined, these Display Files are translated by Monarch into Razor Pages. 
+The ASNA Monarch migration solution translates IBM i programs written in RPG and CL into .NET C# classes.  RPG interactive programs make use of Display Files where the layout and data schema for the screens are defined, these Display Files are translated by Monarch into Razor Pages. 
 
 A Monarch Migrator, aka Monarch Developer, organizes an RPG application into clusters of programs or GamePlans. The output of the migration of an interactive GamePlan is a pair of related projects: A Class Library with the C# source code derived from the GamePlan's programs and a Website with the set of Razor Pages, contained in an Area, representing the programs' screens. For non-interactive GamePlans, i.e. those composed solely of programs that do not interact with the screen, the migration output is the set of C# classes bundled as a Class Library or as an Executable project.  Each Program, or ILE Module, becomes one class and each Display File a Razor Page.
 
