@@ -49,231 +49,27 @@ Remarks
 The [AccessMode](file-adapter-class-access-mode-property.html) property of <span> **FileAdapter** </span> contains a value of AccessMode, which should be set prior to calling <span> **FileAdapter’s** </span>[Open](file-adapter-class-open-method.html), [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html), or [ OpenSimpleQuery](file-adapter-class-open-simple-query-method.html) to provide the requested access restrictions on the opened file. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Arrival
-</td>
-            <td colspan="1" rowspan="1">
 
-Records are read from the file in relative record order (where supported).
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Arrival | Records are read from the file in relative record order (where supported). | 2 |
+| CacheWrites | <p>A file’s data buffers are not written immediately to disk after each Add, Delete or Update operation. The target machine's inherent caching is enabled. | 32 |
+| Change | Records in the file may be updated (changed). | 4 |
+| CommitmentControl | The file is enabled for Commitment Control. | 16 |
+| Delete | Records in the file may be deleted. | 8 |
+| OutPut | Reserved for future use. | 76 |
+| OutPutCache | Reserved for future use. | 108 |
+| PrintPreview | PrinterFile output can be previewed prior to printing. | 256 |
+| Read | Records may be read from the file. | 128 |
+| ReadWrite | Records may be read from the file and new records may be added. (Read + Write). | 192 |
+| ReadWriteCache | Records may be read from the file and new records may be added. The target machine's inherent caching is enabled for added records. (Read + Write + CacheWrites). | 224 |
+| RWCD | Records in the file may be read, updated, deleted and added. (Read + Change + Delete + Write). | 204 |
+| RWCDCache | Records in the file may be read, updated, deleted and added. The target machine's inherent caching is enabled for added, deleted and changed records. (Read + Change + Delete + Write + CacheWrites). | 236 |
+| Write | New records may be added to the file. | 64 |
+| WriteCache | Only new records may be added to a File and they are not written immediately to disk after each Add operation. The target machine's inherent caching is enabled. (Write + CacheWrites). | 96 |
 
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-CacheWrites
-</td>
-            <td colspan="1" rowspan="1">
-
-<p>A file’s data buffers are not written immediately to disk after each Add, Delete or Update operation. The target machine's inherent caching is enabled.
-</td>
-            <td colspan="1" rowspan="1">
-
-32
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Change
-</td>
-            <td colspan="1" rowspan="1">
-
-Records in the file may be updated (changed).
-</td>
-            <td colspan="1" rowspan="1">
-
-4
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-CommitmentControl
-</td>
-            <td colspan="1" rowspan="1">
-
-The file is enabled for Commitment Control.
-</td>
-            <td colspan="1" rowspan="1">
-
-16
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Delete
-</td>
-            <td colspan="1" rowspan="1">
-
-Records in the file may be deleted.
-</td>
-            <td colspan="1" rowspan="1">
-
-8
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-OutPut
-</td>
-            <td colspan="1" rowspan="1">
-
-Reserved for future use.
-</td>
-            <td colspan="1" rowspan="1">
-
-76
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-OutPutCache
-</td>
-            <td colspan="1" rowspan="1">
-
-Reserved for future use.
-</td>
-            <td colspan="1" rowspan="1">
-
-108
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-PrintPreview
-</td>
-            <td colspan="1" rowspan="1">
-
-PrinterFile output can be previewed prior to printing.
-</td>
-            <td colspan="1" rowspan="1">
-
-256
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Read
-</td>
-            <td colspan="1" rowspan="1">
-
-Records may be read from the file.
-</td>
-            <td colspan="1" rowspan="1">
-
-128
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ReadWrite
-</td>
-            <td colspan="1" rowspan="1">
-
-Records may be read from the file and new records may be added. (Read + Write).
-</td>
-            <td colspan="1" rowspan="1">
-
-192
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ReadWriteCache
-</td>
-            <td colspan="1" rowspan="1">
-
-Records may be read from the file and new records may be added. The target machine's inherent caching is enabled for added records. (Read + Write + CacheWrites).
-</td>
-            <td colspan="1" rowspan="1">
-
-224
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-RWCD
-</td>
-            <td colspan="1" rowspan="1">
-
-Records in the file may be read, updated, deleted and added. (Read + Change + Delete + Write).
-</td>
-            <td colspan="1" rowspan="1">
-
-204
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-RWCDCache
-</td>
-            <td colspan="1" rowspan="1">
-
-Records in the file may be read, updated, deleted and added. The target machine's inherent caching is enabled for added, deleted and changed records. (Read + Change + Delete + Write + CacheWrites).
-</td>
-            <td colspan="1" rowspan="1">
-
-236
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Write
-</td>
-            <td colspan="1" rowspan="1">
-
-New records may be added to the file.
-</td>
-            <td colspan="1" rowspan="1">
-
-64
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-WriteCache 
-</td>
-            <td colspan="1" rowspan="1">
-
-Only new records may be added to a File and they are not written immediately to disk after each Add operation. The target machine's inherent caching is enabled. (Write + CacheWrites).
-</td>
-            <td colspan="1" rowspan="1">
-
-96
-</td>
-          </tr>
-</table>
 
 Examples 
 

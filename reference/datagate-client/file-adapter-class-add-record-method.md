@@ -48,51 +48,15 @@ Exceptions
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of<br />
-							dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEaEOF
-</td>
-            <td colspan="1" rowspan="1">
 
-The record access operation resulted in an end-of-file condition. This exception also occurs when the record access operation would place the current file position outside of the boundaries established by a prior [ ReadRange](file-adapter-class-read-range-method.html) or [SeekRange](file-adapter-class-seek-range-method.html) method call.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of<br /> 							dgException.Error | Condition |
+| ---- | ---- |
+| dgEaEOF | The record access operation resulted in an end-of-file condition. This exception also occurs when the record access operation would place the current file position outside of the boundaries established by a prior [ ReadRange](file-adapter-class-read-range-method.html) or [SeekRange](file-adapter-class-seek-range-method.html) method call. |
+| dgEaNOTFND | The record to be accessed was not found. It may have been deleted, it may never have existed, or the key may have been changed. |
+| dgEaBUSYREC | Record is in use or locked by another process. You cannot access the requested record because it is being used by another database process. Certain DataGate providers may provide further details of the conflicting process in the Message and Text members of dgException. |
 
-dgEaNOTFND
-</td>
-            <td colspan="1" rowspan="1">
 
-The record to be accessed was not found. It may have been deleted, it may never have existed, or the key may have been changed.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEaBUSYREC
-</td>
-            <td colspan="1" rowspan="1">
-
-Record is in use or locked by another process. You cannot access the requested record because it is being used by another database process. Certain DataGate providers may provide further details of the conflicting process in the Message and Text members of dgException.
-</td>
-          </tr>
-</table>
 
 <br />
 

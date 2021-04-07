@@ -34,63 +34,15 @@ Remarks
 Note that support for the values of this enumeration is database provider-dependent. Not all database providers support dependent object information and not all values of **DependentTypes** are currently implemented.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="8%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="40%" />
-            <col span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Base
-</td>
-            <td colspan="1" rowspan="1">
 
-The dependent object defines the depended-on object as a logical base. The objects may be members or files.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Base | The dependent object defines the depended-on object as a logical base. The objects may be members or files. | 0 |
+| Reference | This value is reserved for future use. | 1 |
+| Join | The dependent object defines a join including the depended-on object. The dependent is a logical join file and the depended-on object is a physical file. | 2 |
 
-0
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Reference
-</td>
-            <td colspan="1" rowspan="1">
-
-This value is reserved for future use. 
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Join
-</td>
-            <td colspan="1" rowspan="1">
-
-The dependent object defines a join including the depended-on object. The dependent is a logical join file and the depended-on object is a physical file.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-</table>
 
 Requirements
 

@@ -14,22 +14,12 @@ Public Constructors
 
 <br />
 
-<table class="dtTABLE" id="Table3" style="border-spacing: 0px" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <td colspan="1" rowspan="1">
 
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [DatabaseName()](database-name-constructors.html)
-</td>
-            <td colspan="1" rowspan="1">
+|      |      |
+| ---- | ---- |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [DatabaseName()](database-name-constructors.html) | Constructs an instance of a **DatabaseName** object with default values. |
 
-Constructs an instance of a **DatabaseName** object with default values.
-</td>
-          </tr>
-</table>
+
 
 <br />
 
@@ -37,92 +27,19 @@ Public Methods
 
 <br />
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [Deserialize](database-name-class-deserialize-method.html)
-</td>
-            <td colspan="1" rowspan="1">
+|      |      |
+| ---- | ---- |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [Deserialize](database-name-class-deserialize-method.html) | Reads the XML text and generates an **SourceProfile** object from its XML representation. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ FromSourceProfile](database-name-class-from-source-profile-method.html) | Returns a **SourceProfile** object. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ GetNames](database-name-class-get-names-method.html) | Returns the currently registered database names available for use in a program. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ GetSourceProfiles](database-name-class-get-source-profiles-method.html) | Returns an array of **SourceProfile** objects currently registered for the database. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ Register](database-name-class-register-method.html) | Saves the contents of the **SourceProfile** object to the system registry as a database name. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [Serialize](database-name-class-serialize-method.html) | Converts the **SourceProfile** object into its XML representation to store an object's state so that you can retrieve the state later. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ ToSourceProfile](database-name-class-to_source-profile-methods.html) | Overloaded. Converts the named database into a **SourceProfile** object |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ Unregister](database-name-class-unregister-method.html) | Deletes a registered database name from the system registry. |
 
-Reads the XML text and generates an **SourceProfile** object from its XML representation.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ FromSourceProfile](database-name-class-from-source-profile-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Returns a **SourceProfile** object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ GetNames](database-name-class-get-names-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Returns the currently registered database names available for use in a program.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ GetSourceProfiles](database-name-class-get-source-profiles-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Returns an array of **SourceProfile** objects currently registered for the database.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ Register](database-name-class-register-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Saves the contents of the **SourceProfile** object to the system registry as a database name.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [Serialize](database-name-class-serialize-method.html)
-</td>
-            <td colspan="1" rowspan="1">
-
-Converts the **SourceProfile** object into its XML representation to store an object's state so that you can retrieve the state later.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ ToSourceProfile](database-name-class-to_source-profile-methods.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Overloaded. Converts the named database into a **SourceProfile** object
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ Unregister](database-name-class-unregister-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Deletes a registered database name from the system registry.
-</td>
-          </tr>
-</table>
 
 See Also
 

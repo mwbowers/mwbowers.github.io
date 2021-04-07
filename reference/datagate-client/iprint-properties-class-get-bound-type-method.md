@@ -49,59 +49,27 @@ Return Value
 **System.Type** . This object reveals the CLR type of a print control. 
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
+
           <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
           <col span="1" style="WIDTH: 70%" />
-          <tr>
-            <th colspan="1" rowspan="1">
-										Exception Type
-										</th>
-            <th colspan="1" rowspan="1">
-											Condition
-										</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *fieldName* is a null reference. |
+| dgException | See table below. |
 
-*fieldName* is a null reference.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
-
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells"> <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" /> <col span="1" style="WIDTH: 70%" /> <tr> <th colspan="1" rowspan="1"> Value of dgException.Error </th> <th colspan="1" rowspan="1"> Condition </th> </tr> <tr> <td colspan="1" rowspan="1"> <p>dgEcFLDNOTFND
-</td>
-            <td colspan="1" rowspan="1">
+ <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" /> <col span="1" style="WIDTH: 70%" />
 
-No print control object is associated with this **IPrintProperties** instance for *fieldName* .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| <p>dgEcFLDNOTFND | No print control object is associated with this **IPrintProperties** instance for *fieldName* . |
+| dgEpLIBNOTFND | The file is an OLE print file, but the print control for the field could not be found. This may be due to an installation issue with the associated control library. |
 
-dgEpLIBNOTFND
-</td>
-            <td colspan="1" rowspan="1">
 
-The file is an OLE print file, but the print control for the field could not be found. This may be due to an installation issue with the associated control library.
-</td>
-          </tr>
-</table>
 
 Remarks
 

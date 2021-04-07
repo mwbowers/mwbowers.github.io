@@ -31,33 +31,17 @@ Remarks
 <span>ReadEqualMode</span> defines modes for [FileAdapter.ReadSequentialEqual](file-adapter-class-read-sequential-equal-method.html) as listed in the table below.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
+
             <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" />
             <col span="1" width="60%" />
             <col align="middles" span="1" width="10%" />
-            <tr>
-              <th>	Member</th>
-              <th>	Description</th>
-              <th>	Value</th>
-            </tr>
-            <tr>
-              <td>NextEqual
-							</td>
-              <td>Read the next record.
-							</td>
-              <td>17
-							</td>
-            </tr>
-            <tr>
-              <td>PreviousEqual
-							</td>
-              <td>Read the previous record. If the file has just been opened, get the last 
-								record.
-							</td>
-              <td>18
-							</td>
-            </tr>
-</table>
+
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| NextEqual | Read the next record. | 17 |
+| PreviousEqual | Read the previous record. If the file has just been opened, get the last  								record. | 18 |
+
+
 
 Examples
 

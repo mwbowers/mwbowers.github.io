@@ -15,52 +15,15 @@ Public Methods
 
 <br />
 
-<table class="dtTABLE" id="table3" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ GetBoundType](iprint-properties-class-get-bound-type-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
+|      |      |
+| ---- | ---- |
+| <img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ GetBoundType](iprint-properties-class-get-bound-type-method.html) | Returns the CLR type of a print control associated with a field. |
+| <img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ GetTypedObject](iprint-properties-class-get-typed-object-method.html) | Returns a reference to the print control object associated with a field. |
+| <img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ GetValue](iprint-properties-class-get-value-method.html) | Access a print control property value. |
+| <img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ SetValue](iprint-properties-class-set-value-method.html) | Assign a value to a print control property. |
 
-Returns the CLR type of a print control associated with a field.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ GetTypedObject](iprint-properties-class-get-typed-object-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Returns a reference to the print control object associated with a field.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ GetValue](iprint-properties-class-get-value-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Access a print control property value.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ SetValue](iprint-properties-class-set-value-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Assign a value to a print control property.
-</td>
-          </tr>
-</table>
 
 See Also
 

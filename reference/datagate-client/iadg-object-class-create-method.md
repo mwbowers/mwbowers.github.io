@@ -41,211 +41,38 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="Table2" style="border-spacing: 0px; x-cell-content-align: top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" valign="top" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEgNOFDEF
-</td>
-            <td colspan="1" rowspan="1">
 
-Create is invoked to create a file, but there is no file definition. The file definition may be set during **IAdgObject** construction (with [ AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html)) or with the [ IFileObject.ReadDefinition](ifile-object-class-read-definition-method.html) method. See also [ IFileObject.WriteDefinition](ifile-object-class-write-definition-method.html), [ IAdgObject.WriteXml](iadg-object-class-write-xml-methods.html), and Remarks below.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEgNOFDEF | Create is invoked to create a file, but there is no file definition. The file definition may be set during **IAdgObject** construction (with [ AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html)) or with the [ IFileObject.ReadDefinition](ifile-object-class-read-definition-method.html) method. See also [ IFileObject.WriteDefinition](ifile-object-class-write-definition-method.html), [ IAdgObject.WriteXml](iadg-object-class-write-xml-methods.html), and Remarks below. |
+| dgEgNOATTR | Create is invoked to create a file, but there are no creation attributes. Creation attributes may be set during **IAdgObject** construction (with **AdgFactory.ReadXml** ) or with the [ IFileObject.ReadCreationAttributes](ifile-object-class-read-creation-attributes-method.html) method. See also [ IFileObject.WriteCreationAttributes](ifile-object-class-write-creation-attributes-method.html), **IAdgObject.WriteXml** , and Remarks below. |
+| dgErBADSRC | Create is invoked to create a logical file, but no base files have been specified. Base files may be specified at **IAdgObject** construction (with **AdgFactory.ReadXml** ) or with the **IAdgObject.Bases** property. See also **IAdgObject.WriteXml** and Remarks below. |
+| dgEINVARG | The path name of the database object specified when **IAdgObject** was created is invalid. |
+| dgEmDUPOBJ | The path name of the database object specified when **IAdgObject** was created references an existing database object. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEmNODIRADD | <p>Create is invoked to create a library or file, but the session does not have one of the requisite authorities to the parent library:  - For creating files, both "add" and "execute" authority. - For creating libraries, "add" authority. |
+| dgEmBUSYOBJ | The attempt to obtain an exclusive-read lock on the new object's parent failed. |
+| dgEmBASENOTPH | Create is invoked to create a logical file but one or more of the base files is not a physical file. |
+| dgEmNOBASEAUTH | <p>Create is invoked to create a logical file but the current session is lacking one or more of the following authorities:  - "Operational" authority to one or more of the base files. - If the file to be created defines a key, "alter" or "management" authority to  									one or more of the base files. |
+| dgEmNOPERMINTEMP | Create is invoked to create a logical file but one or more of the base files is a temporary object. |
+| dgEmBADFRMTID | Create is invoked to create a logical file but one or more of the base format identifiers of the file definition do not match the base files specified. |
+| dgEmNOMEMADD | <p>Create is invoked to create a member but the current session is lacking one or more of the following authorities:  - "Operational" authority to the parent file. - "Alter" or "management" authority to the parent file. |
+| dgEgBADREL, dgEgBADFARM, dgEgBADGROVE, dgEgBADGROVE, or dgEINTERNAL | Create is invoked to create a file member but an internal database exception was raised. The database should be repaired. |
+| dgENOMEM | The database provider raised an out-of-memory exception. |
 
-dgEgNOATTR
-</td>
-            <td colspan="1" rowspan="1">
 
-Create is invoked to create a file, but there are no creation attributes. Creation attributes may be set during **IAdgObject** construction (with **AdgFactory.ReadXml** ) or with the [ IFileObject.ReadCreationAttributes](ifile-object-class-read-creation-attributes-method.html) method. See also [ IFileObject.WriteCreationAttributes](ifile-object-class-write-creation-attributes-method.html), **IAdgObject.WriteXml** , and Remarks below.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgErBADSRC
-</td>
-            <td colspan="1" rowspan="1">
-
-Create is invoked to create a logical file, but no base files have been specified. Base files may be specified at **IAdgObject** construction (with **AdgFactory.ReadXml** ) or with the **IAdgObject.Bases** property. See also **IAdgObject.WriteXml** and Remarks below.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
-
-The path name of the database object specified when **IAdgObject** was created is invalid.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmDUPOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-The path name of the database object specified when **IAdgObject** was created references an existing database object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNODIRADD
-</td>
-            <td colspan="1" rowspan="1">
-
-<p>Create is invoked to create a library or file, but the session does not have one of the requisite authorities to the parent library:
-
-- For creating files, both "add" and "execute" authority.
-- For creating libraries, "add" authority.
-
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-The attempt to obtain an exclusive-read lock on the new object's parent failed.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBASENOTPH
-</td>
-            <td colspan="1" rowspan="1">
-
-Create is invoked to create a logical file but one or more of the base files is not a physical file.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOBASEAUTH
-</td>
-            <td colspan="1" rowspan="1">
-
-<p>Create is invoked to create a logical file but the current session is lacking one or more of the following authorities:
-
-- "Operational" authority to one or more of the base files.
-- If the file to be created defines a key, "alter" or "management" authority to 
-									one or more of the base files.
-
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOPERMINTEMP
-</td>
-            <td colspan="1" rowspan="1">
-
-Create is invoked to create a logical file but one or more of the base files is a temporary object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBADFRMTID
-</td>
-            <td colspan="1" rowspan="1">
-
-Create is invoked to create a logical file but one or more of the base format identifiers of the file definition do not match the base files specified.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOMEMADD
-</td>
-            <td colspan="1" rowspan="1">
-
-<p>Create is invoked to create a member but the current session is lacking one or more of the following authorities:
-
-- "Operational" authority to the parent file.
-- "Alter" or "management" authority to the parent file.
-
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEgBADREL, dgEgBADFARM, dgEgBADGROVE, dgEgBADGROVE, or dgEINTERNAL
-</td>
-            <td colspan="1" rowspan="1">
-
-Create is invoked to create a file member but an internal database exception was raised. The database should be repaired.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOMEM
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider raised an out-of-memory exception.
-</td>
-          </tr>
-</table>
 
 Remarks
 
@@ -254,82 +81,15 @@ To create a database object, first create an instance of **IAdgObject** using on
 A "bare" **IAdgObject** instance, created with **NewFile** , **NewDirectory** , or **NewMember** , defines the path name and database connection used. But depending on the object type, further embellishment may be required using the methods and properties listed below. The list details whether the property or method should be used before or after **Create** . Note that except for security-related details, using these properties and methods may not be necessary when **AdgFactory.ReadXml** is used to create **IAdgObject** . Also, many of these methods and properties are optional and/or provider-dependent.
 <br />
 
-<table class="dtTABLE" id="Table4" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" valign="top" width="15%" />
-            <col span="1" valign="top" width="15%" />
-            <col span="1" valign="top" width="15%" />
-            <col span="1" valign="top" width="55%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Database object to create
-						</th>
-            <th colspan="1" rowspan="1">
-              <u>AdgFactory</u> method
-						</th>
-            <th colspan="1" rowspan="1">
-              <u>IAdgObject</u> implementation
-						</th>
-            <th colspan="1" rowspan="1">
-							Methods and properties defining the object before and after Create
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Library
-</td>
-            <td colspan="1" rowspan="1">
 
-NewDirectory
-</td>
-            <td colspan="1" rowspan="1">
+| Database object to create | <u>AdgFactory</u> method | <u>IAdgObject</u> implementation | Methods and properties defining the object before and after Create |
+| ---- | ---- | ---- | ---- |
+| Library | NewDirectory | [IDirectory](idirectory-class.html) | [Text](iadg-object-class-text-property.html), [ AuthorityEntries](iadg-object-class-authority-entries-property.html), [GrantAuthority](iadg-object-class-grant-authority-method.html), and [RevokeAuthority](iadg-object-class-revoke-authority-method.html), <u>after</u> **Create** . |
+| File | NewFile | [IFileObject](ifile-object-class.html) <a /> | **ReadDefinition** (required) **, ReadCreationAttributes** (required), and **Bases** (required for logical files only) <u>prior</u> to **Create** .<br /> **Text** , **AuthorityEntries** , **GrantAuthority** , and **RevokeAuthority** , <u>after</u> **Create** . |
+| Member | NewMember | [IMember](imember-class.html) | For logical members, [Bases](iadg-object-class-bases-property.html)<strong />(required) <u>prior</u> to **Create** .<br />[Extension](imember-class-extension-property.html), **AuthorityEntries** , **GrantAuthority** , **RevokeAuthority** and **Text** , <u>after</u> **Create** . |
 
-[IDirectory](idirectory-class.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-[Text](iadg-object-class-text-property.html), [ AuthorityEntries](iadg-object-class-authority-entries-property.html), [GrantAuthority](iadg-object-class-grant-authority-method.html), and [RevokeAuthority](iadg-object-class-revoke-authority-method.html), <u>after</u> **Create** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-File
-</td>
-            <td colspan="1" rowspan="1">
-
-NewFile
-</td>
-            <td colspan="1" rowspan="1">
-
-[IFileObject](ifile-object-class.html) <a /> 
-</td>
-            <td colspan="1" rowspan="1">
-
-**ReadDefinition** (required) **, ReadCreationAttributes** (required), and **Bases** (required for logical files only) <u>prior</u> to **Create** .<br /> **Text** , **AuthorityEntries** , **GrantAuthority** , and **RevokeAuthority** , <u>after</u> **Create** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Member
-</td>
-            <td colspan="1" rowspan="1">
-
-NewMember
-</td>
-            <td colspan="1" rowspan="1">
-
-[IMember](imember-class.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-For logical members, [Bases](iadg-object-class-bases-property.html)<strong />(required) <u>prior</u> to **Create** .<br />[Extension](imember-class-extension-property.html), **AuthorityEntries** , **GrantAuthority** , **RevokeAuthority** and **Text** , <u>after</u> **Create** .
-</td>
-          </tr>
-</table>
 
 Requirements
 

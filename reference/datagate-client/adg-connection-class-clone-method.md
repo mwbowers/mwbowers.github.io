@@ -39,133 +39,23 @@ Exceptions
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of
-							<br />
-							dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
 
-Condition
-</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEsTRLEXP
-</td>
-            <td colspan="1" rowspan="1">
+| Value of 							<br /> 							dgException.Error | Condition |
+| ---- | ---- |
+| dgEsTRLEXP | SourceProfile specifies a connection to a database provider which implements ASNA license enforcement, and the provider’s trial license period has expired. |
+| dgEsPCODE | SourceProfile specifies a connection to a database provider which implements ASNA license enforcement, and the provider’s license evidence is missing or invalid. |
+| dgEsNOLICSRVR, dgEsLMMUTEX, dgEsLMSYNCDQD, dgEsLMSTART, dgEsLMPID | SourceProfile specifies a connection to a database provider which implements ASNA license enforcement, and the license management provider could not be contacted. |
+| dgEiDG8START | SourceProfile specifies a connection to an IBM i database provider, and the provider has encountered difficulty in starting a job for the connection. Refer to job logs for user profile for details. |
+| dgEsAS400ERROR | The database server encountered a system error, which may include a user authentication problem. Details are available via the SystemError and Text fields of dgException. |
+| dgEOLDSERVER | SourceProfile specifies a connection to a release of a database provider that does not support the DataGate client assembly. |
+| dgEmCANCEL | SourceProfile specifies a connection that is to query the user for authentication information, and the user cancelled the query. |
+| dgEINTERNAL | The AdgConnection object is already in the Open state, or an internal system error occurred. |
+| dgEINVPLATFORM | SourceProfile specifies a database provider that is currently not supported by the DataGate client assembly, therefore a connection cannot be opened. |
+| dgEsMTSTRLEXP | The DataGate client assembly’s trial license for web application use has expired. |
+| dgEsMTSPCODE, dgEsMTSPRCCNT | The DataGate client assembly is not currently licensed for use in a web application on this machine. |
 
-SourceProfile specifies a connection to a database provider which implements ASNA license enforcement, and the provider’s trial license period has expired. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEsPCODE
-</td>
-            <td colspan="1" rowspan="1">
-
-SourceProfile specifies a connection to a database provider which implements ASNA license enforcement, and the provider’s license evidence is missing or invalid.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsNOLICSRVR, dgEsLMMUTEX, dgEsLMSYNCDQD, dgEsLMSTART, dgEsLMPID
-</td>
-            <td colspan="1" rowspan="1">
-
-SourceProfile specifies a connection to a database provider which implements ASNA license enforcement, and the license management provider could not be contacted.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEiDG8START
-</td>
-            <td colspan="1" rowspan="1">
-
-SourceProfile specifies a connection to an IBM i database provider, and the provider has encountered difficulty in starting a job for the connection. Refer to job logs for user profile for details.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database server encountered a system error, which may include a user authentication problem. Details are available via the SystemError and Text fields of dgException.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEOLDSERVER
-</td>
-            <td colspan="1" rowspan="1">
-
-SourceProfile specifies a connection to a release of a database provider that does not support the DataGate client assembly. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmCANCEL
-</td>
-            <td colspan="1" rowspan="1">
-
-SourceProfile specifies a connection that is to query the user for authentication information, and the user cancelled the query.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEINTERNAL
-</td>
-            <td colspan="1" rowspan="1">
-
-The AdgConnection object is already in the Open state, or an internal system error occurred.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEINVPLATFORM
-</td>
-            <td colspan="1" rowspan="1">
-
-SourceProfile specifies a database provider that is currently not supported by the DataGate client assembly, therefore a connection cannot be opened.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsMTSTRLEXP
-</td>
-            <td colspan="1" rowspan="1">
-
-The DataGate client assembly’s trial license for web application use has expired.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsMTSPCODE, dgEsMTSPRCCNT
-</td>
-            <td colspan="1" rowspan="1">
-
-The DataGate client assembly is not currently licensed for use in a web application on this machine.
-</td>
-          </tr>
-</table>
 
 Remarks
 

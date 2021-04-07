@@ -56,168 +56,35 @@ Exceptions
 This method raises the exceptions detailed below. However, the particular implementation of the instance of **XmlWriter** passed as *writer* may also raise exceptions, as detailed by its documentation.
 <br />
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-*writer* is a null reference. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *writer* is a null reference. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name referenced by this **IFileObject** instance does not locate a valid database object
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The path name referenced by this **IFileObject** instance does not locate a valid database object |
+| dgEmFNOTFND | The path name referenced by this **IFileObject** instance locates a valid database object but the object is not a file. |
+| dgExMISSING | The database provider's "exit point" security support discovered a registration for an exit point validation routine for the method but the validation routine itself was not found. |
+| dgExINVLIC | The database provider's "exit point" security support encountered an exit point validation routine for the method but the license for this support is invalid or not found. |
+| dgExDENIED | Access to the method was denied by the database provider's "exit point" security support. |
+| dgENOMEM | The database provider encountered an "out of memory" exception. |
+| dgEmNOOBJAUTH | The current session does not have "operational" authority to the file. |
+| dgErADENOTFND, dgEcNEWVERSION, or dgEaBADFRMTID | The database provider has detected an inconsistency in the file. The file should be repaired or restored. |
+| dgEnOpenFileDef | The database provider encountered a system error when attempting to access the file's definition. The file's type may not be supported by DataGate. Please see the provider's event log for further details. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DCS does not currently support this type of file. |
 
-dgEmFNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name referenced by this **IFileObject** instance locates a valid database object but the object is not a file. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExMISSING
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider's "exit point" security support discovered a registration for an exit point validation routine for the method but the validation routine itself was not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExINVLIC
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider's "exit point" security support encountered an exit point validation routine for the method but the license for this support is invalid or not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExDENIED
-</td>
-            <td colspan="1" rowspan="1">
-
-Access to the method was denied by the database provider's "exit point" security support.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOMEM
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered an "out of memory" exception.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOOBJAUTH
-</td>
-            <td colspan="1" rowspan="1">
-
-The current session does not have "operational" authority to the file.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgErADENOTFND, dgEcNEWVERSION, or dgEaBADFRMTID
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider has detected an inconsistency in the file. The file should be repaired or restored.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEnOpenFileDef
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system error when attempting to access the file's definition. The file's type may not be supported by DataGate. Please see the provider's event log for further details.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEcSQL400FILE 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider detected that the file's type is "SQL/400". DCS does not currently support this type of file.
-</td>
-          </tr>
-</table>
 
 Remarks
 

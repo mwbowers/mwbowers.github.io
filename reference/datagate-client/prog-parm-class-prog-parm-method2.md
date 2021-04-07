@@ -48,59 +48,16 @@ Remarks
 *dir* defines the parameter as an "input" or "output" parameter, or both. This optimizes the movement of parameter value data across the client/server link as detailed by the following table:
 <br />
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold;WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Value of *dir* </th>
-            <th colspan="1" rowspan="1">
-							Data Movement
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Input 
-</td>
-            <td colspan="1" rowspan="1">
 
-Value data moves from DCS to data provider prior to iSeries program call only. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of *dir* | Data Movement |
+| ---- | ---- |
+| Input | Value data moves from DCS to data provider prior to iSeries program call only. |
+| Output | Value data moves from data provider to DCS after return from iSeries program call only. |
+| InputOutput | Value data moves from DCS to data provider prior to iSeries program call, and from data provider to DCS after return from iSeries program call. |
+| None | No parameter value data is transferred. |
 
-Output 
-</td>
-            <td colspan="1" rowspan="1">
 
-Value data moves from data provider to DCS after return from iSeries program call only. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-InputOutput 
-</td>
-            <td colspan="1" rowspan="1">
-
-Value data moves from DCS to data provider prior to iSeries program call, and from data provider to DCS after return from iSeries program call. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-None 
-</td>
-            <td colspan="1" rowspan="1">
-
-No parameter value data is transferred. 
-</td>
-          </tr>
-</table>
 
 <br />
 

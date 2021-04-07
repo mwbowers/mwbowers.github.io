@@ -63,67 +63,23 @@ Returns
 An instance of an [IMember](imember-class.html) object.
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-The *cn* and/or *PathName* parameters are null references
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | The *cn* and/or *PathName* parameters are null references |
+| dgException | See table below. |
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
-<table class="dtTABLE" id="Table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
 
-Value of dgException.Error 
-</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmINVSQLOP
-</td>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEmINVSQLOP | The **AdgConnection** specified is a connection to an SQL Server database provider, and DCS currently does not support the **IMember** interface for those providers. |
 
-The **AdgConnection** specified is a connection to an SQL Server database provider, and DCS currently does not support the **IMember** interface for those providers.
-</td>
-          </tr>
-</table>
+
 
 Remarks
 

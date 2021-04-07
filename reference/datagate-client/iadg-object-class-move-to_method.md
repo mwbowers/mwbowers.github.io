@@ -39,186 +39,35 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" style="FONT-WEIGHT: bold" width="30%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-*LibraryPath* is a null reference. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *LibraryPath* is a null reference. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" style="FONT-WEIGHT: bold" width="20%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1">
 
-One or more of the following conditions is true:
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | One or more of the following conditions is true:  - *LibraryPath*  								is not a valid, absolute path to a library object. - The path name specified when the **IAdgObject**  								instance was created does not reference an existing database object. - The method is not available for this object type. |
+| dgEmINV400OP | The IBM i database provider does not support the method on this particular object type. |
+| dgEsAS400ERROR | The IBM i database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEmDNOTFND | The object represented by **IAdgObject** is a library, and the library was not found. |
+| dgEmFNOTFND | The object represented by **IAdgObject** is a file, and the file was not found. |
+| dgEmNOOBJAUTH | The user of the session does not have "management" authority to the existing database object represented by **IAdgObject.** |
+| dgEmNOTONQTEMP | The database object represented by **IAdgObject** is the special library "/QTEMP", and the method is not permitted against "/QTEMP". |
+| dgEmNODIRDEL | The user of the session does not have "delete" authority to the library containing the existing database object represented by **IAdgObject** . |
+| dgEmNOPERMINTEMP | One of the following conditions is true:  - The object represented by **IAdgObject**  								is a permanent object, and the target library is a temporary object. - The object represented by **IAdgObject**  is a temporary object,  									and the target library is a permanent object. |
+| dgEmBADCAT | The database provider has detected a catalog error. The database should be repaired. |
+| dgEmBUSYOBJ | The current session was not granted one of the following lock requests:  - The source library containing the object represented by **IAdgObject** ,  								for "exclusive-read". - The target library, where the object represented by **IAdgObject**  								is to be moved, for "exclusive-read". - The object represented by **IAdgObject** , for "exclusive". |
 
-- *LibraryPath* 
-								is not a valid, absolute path to a library object.
-- The path name specified when the **IAdgObject** 
-								instance was created does not reference an existing database object.
-- The method is not available for this object type.
 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmINV400OP 
-</td>
-            <td colspan="1" rowspan="1">
-
-The IBM i database provider does not support the method on this particular object type. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR 
-</td>
-            <td colspan="1" rowspan="1">
-
-The IBM i database provider encountered a system-level error. Details provided in the **dgException.Message** property. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmDNOTFND
-</td>
-            <td colspan="1" rowspan="1">
-
-The object represented by **IAdgObject** is a library, and the library was not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmFNOTFND
-</td>
-            <td colspan="1" rowspan="1">
-
-The object represented by **IAdgObject** is a file, and the file was not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOOBJAUTH
-</td>
-            <td colspan="1" rowspan="1">
-
-The user of the session does not have "management" authority to the existing database object represented by **IAdgObject.** 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOTONQTEMP
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by **IAdgObject** is the special library "/QTEMP", and the method is not permitted against "/QTEMP".
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNODIRDEL
-</td>
-            <td colspan="1" rowspan="1">
-
-The user of the session does not have "delete" authority to the library containing the existing database object represented by **IAdgObject** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOPERMINTEMP
-</td>
-            <td colspan="1" rowspan="1">
-
-One of the following conditions is true:
-
-- The object represented by **IAdgObject** 
-								is a permanent object, and the target library is a temporary object.
-- The object represented by **IAdgObject**  is a temporary object, 
-									and the target library is a permanent object.
-
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBADCAT 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider has detected a catalog error. The database should be repaired. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-The current session was not granted one of the following lock requests:
-
-- The source library containing the object represented by **IAdgObject** , 
-								for "exclusive-read".
-- The target library, where the object represented by **IAdgObject** 
-								is to be moved, for "exclusive-read".
-- The object represented by **IAdgObject** , for "exclusive".
-
-</td>
-          </tr>
-</table>
 
 Remarks
 

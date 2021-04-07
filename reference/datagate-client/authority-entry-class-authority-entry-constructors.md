@@ -26,59 +26,16 @@ keywords: authorities, user or group indicated for database
 Creates an instance of an **AuthorityEntry** class object with field initialization options given by various overloads.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[AuthorityEntry()](authority-entry-class-authority-entry-constructor1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Creates a new instance of <span> **AuthorityEntry** </span> with all fields initialized to default values.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [AuthorityEntry()](authority-entry-class-authority-entry-constructor1.html) | Creates a new instance of <span> **AuthorityEntry** </span> with all fields initialized to default values. |
+| [AuthorityEntry(string)](authority-entry-class-authority-entry-constructor2.html) | <span>Creates a new instance of <span> **AuthorityEntry** </span> for a single-user profile with all fields initialized to default values except *Username* .</span> |
+| [AuthorityEntry(string, AuthorityTypes)](authority-entry-class-authority-entry-constructor3.html) | <span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a single-user profile and corresponding authorization types.</span> |
+| [AuthorityEntry (string, AuthorityTypes, boolean)](authority-entry-class-authority-entry-constructor4.html) | <span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a profile, its corresponding authorization types, and the profile type (single or group).</span> |
 
-[AuthorityEntry(string)](authority-entry-class-authority-entry-constructor2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-<span>Creates a new instance of <span> **AuthorityEntry** </span> for a single-user profile with all fields initialized to default values except *Username* .</span> 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[AuthorityEntry(string, AuthorityTypes)](authority-entry-class-authority-entry-constructor3.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-<span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a single-user profile and corresponding authorization types.</span> 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[AuthorityEntry (string, AuthorityTypes, boolean)](authority-entry-class-authority-entry-constructor4.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-<span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a profile, its corresponding authorization types, and the profile type (single or group).</span> 
-</td>
-          </tr>
-</table>
 
 See Also
 

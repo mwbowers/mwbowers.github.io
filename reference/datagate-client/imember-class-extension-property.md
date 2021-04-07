@@ -33,96 +33,27 @@ Property Value
 **String** . A well-known character sequence identifying a type of source file data. The string may be empty or no greater than **ASNA.DataGate.Common.Constants.ExtensionSize** in length.
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-The values is being set or is being accessed for the first time, requiring a database provider operation. See table below. 
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | The values is being set or is being accessed for the first time, requiring a database provider operation. See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-One or both of the following conditions exist:
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | One or both of the following conditions exist:  - The value of **Extension** is being set, but the value provided is a null reference. - The path name referenced by this **IMember** instance does not locate a valid database object. |
+| dgEmINV400OP | The value of **Extension** is being set but the database provider does not support the changing of database member object's extension. |
+| dgEmMNOTFND | The path name referenced by this **IMember** instance may locate a valid database object but the object is not a member. |
+| dgEmBUSYOBJ | The value of Extension is being set but the database provider could not obtain the following locks:  - "Shared read" on the member object's parent file. - "Exclusive read" on the member object. |
 
-- The value of **Extension** is being set, but the value provided is a null reference.
-- The path name referenced by this **IMember** instance does not locate a valid database object.
 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmINV400OP 
-</td>
-            <td colspan="1" rowspan="1">
-
-The value of **Extension** is being set but the database provider does not support the changing of database member object's extension. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmMNOTFND
-</td>
-            <td colspan="1" rowspan="1">
-
-The path name referenced by this **IMember** instance may locate a valid database object but the object is not a member.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-The value of Extension is being set but the database provider could not obtain the following locks:
-
-- "Shared read" on the member object's parent file.
-- "Exclusive read" on the member object.
-
-</td>
-          </tr>
-</table>
 
 Remarks
 

@@ -64,79 +64,27 @@ Returns
 XML representing the **IAdgObject** .
 Exceptions
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="30%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-InvalidOperationException 
-</td>
-            <td colspan="1" rowspan="1">
 
-The value of the **WriteState** property of *writer* is **Closed** . 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| InvalidOperationException | The value of the **WriteState** property of *writer* is **Closed** . |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 
-<table class="dtTABLE" id="Table3" cellspacing="0"> <colgroup span="1"> <col align="middles" span="1" width="30%" style="FONT-WEIGHT: bold" /> <col span="1" width="70%" /> </colgroup> <tr> <th colspan="1" rowspan="1"> Value of dgException.Error </th> <th colspan="1" rowspan="1"> Condition </th> </tr> <tr> <td colspan="1" rowspan="1"> <p>dgEmNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
 
-The database object the **IAdgObject** represents does not exist or is unavailable. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmDNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| <p>dgEmNOTFND | The database object the **IAdgObject** represents does not exist or is unavailable. |
+| dgEmDNOTFND | The database library the **IAdgObject** represents does not exist or is unavailable. |
+| dgEmFNOTFND | The database file the **IAdgObject** represents does not exist or is unavailable. |
+| dgEmMNOTFND | The database member the **IAdgObject** represents does not exist or is unavailable. |
 
-The database library the **IAdgObject** represents does not exist or is unavailable.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmFNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database file the **IAdgObject** represents does not exist or is unavailable.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmMNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database member the **IAdgObject** represents does not exist or is unavailable.
-</td>
-          </tr>
-</table>
 
 Remarks
 

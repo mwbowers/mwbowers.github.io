@@ -55,28 +55,13 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="Table4" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="30%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-XmlException
-</td>
-            <td colspan="1" rowspan="1">
 
-An error occurred validating or loading; the supplied XML fragment.
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| XmlException | An error occurred validating or loading; the supplied XML fragment. |
+
+
 
 Remarks
 

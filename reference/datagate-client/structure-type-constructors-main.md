@@ -19,30 +19,13 @@ keywords: how to, create structured data type program parameters
 Constructs an **StructureType** instance assigning an initial value to the [ SourceProfile](dcsStructureTypeClassSourceProfileProperty.html) property or database specified.
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 50%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[StructureType(string, integer, object)](dcsStructureTypeClassStructureTypeMethod1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Constructs an **StructureType** instance that define the data types of a structured iSeries program parameter.
-</td>
-          </tr>
-</table>
+| Overload List | Description |
+| ---- | ---- |
+| [StructureType(string, integer, object)](dcsStructureTypeClassStructureTypeMethod1.html) | Constructs an **StructureType** instance that define the data types of a structured iSeries program parameter. |
+
+
 
 See Also
 

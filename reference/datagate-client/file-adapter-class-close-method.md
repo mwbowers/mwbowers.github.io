@@ -27,60 +27,24 @@ Closes the currently open file (synonymous with [ Dispose Method](file-adapter-c
 
 Exceptions
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-										Exception Type
-									</th>
-            <th colspan="1" rowspan="1">
-										Condition
-									</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-										Value of
-										<br />
-										dgException.Error
-									</th>
-            <th colspan="1" rowspan="1">
-										Condition
-									</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
 
-The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException.
-</td>
-          </tr>
-</table>
+| Value of 										<br /> 										dgException.Error | Condition |
+| ---- | ---- |
+| dgEsAS400ERROR | The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException. |
+
+
 
 Remarks
 

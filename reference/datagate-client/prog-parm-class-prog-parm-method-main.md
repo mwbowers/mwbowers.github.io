@@ -22,32 +22,13 @@ keywords: parameters, data direction specified
 Constructs a representation of a simple or complex iSeries program parameter.
 Overload List
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[ProgParm (ProgParmType, DataDirection)](prog-parm-class-prog-parm-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
+|      |      |
+| ---- | ---- |
+| [ProgParm (ProgParmType, DataDirection)](prog-parm-class-prog-parm-method1.html) | Construct a representation of a simple iSeries program parameter. |
+| [ProgParm (StructureType, DataDirection)](prog-parm-class-prog-parm-method2.html) | Construct a representation of a complex iSeries program parameter. |
 
-Construct a representation of a simple iSeries program parameter.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[ProgParm (StructureType, DataDirection)](prog-parm-class-prog-parm-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Construct a representation of a complex iSeries program parameter.
-</td>
-          </tr>
-</table>
 
 See Also
 

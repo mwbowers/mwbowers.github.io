@@ -57,146 +57,33 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" style="FONT-WEIGHT: bold" width="30%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-The [AdgConnection](adg-connection-class.html) or path name specified when the **IAdgObject** instance was created is null. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | The [AdgConnection](adg-connection-class.html) or path name specified when the **IAdgObject** instance was created is null. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" style="FONT-WEIGHT: bold" width="20%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name specified when the **IAdgObject** instance was created does not reference an existing database object, or *userName* is an empty string. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The path name specified when the **IAdgObject** instance was created does not reference an existing database object, or *userName* is an empty string. |
+| dgENOTIMPL | This method is unavailable from the current database provider. |
+| dgEgNONSECUREDB | The method is unavailable because the database does not have the user security feature. |
+| dgEgNOAUTHLOCK | The method is unavailable because the database provider could not allocate the pertinent security records. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEmINV400OP | The database provider does not support this method for the object type represented by **IAdgObject** . |
+| dgExDENIED | Access to the method was denied by the database provider's "exit point" security support. |
+| dgExINVLIC | The database provider's "exit point" security support encountered an exit point validation routine for the method, but the license for this support is invalid or not found. |
+| dgExMISSING | The database provider's "exit point" security support discovered a registration for an exit point validation routine for the method, but the validation routine itself was not found. |
 
-dgENOTIMPL 
-</td>
-            <td colspan="1" rowspan="1">
 
-This method is unavailable from the current database provider. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEgNONSECUREDB
-</td>
-            <td colspan="1" rowspan="1">
-
-The method is unavailable because the database does not have the user security feature.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEgNOAUTHLOCK
-</td>
-            <td colspan="1" rowspan="1">
-
-The method is unavailable because the database provider could not allocate the pertinent security records.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmINV400OP
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider does not support this method for the object type represented by **IAdgObject** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExDENIED
-</td>
-            <td colspan="1" rowspan="1">
-
-Access to the method was denied by the database provider's "exit point" security support.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExINVLIC
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider's "exit point" security support encountered an exit point validation routine for the method, but the license for this support is invalid or not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExMISSING 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider's "exit point" security support discovered a registration for an exit point validation routine for the method, but the validation routine itself was not found. 
-</td>
-          </tr>
-</table>
 
 Remarks
 

@@ -15,42 +15,14 @@ Public Properties
 
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" /> [ Connection](iadg-transaction-class-connection-property.html) 
-</td>
-            <td colspan="1" rowspan="1">
+|      |      |
+| ---- | ---- |
+| <img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" /> [ Connection](iadg-transaction-class-connection-property.html) | The connection to the database representing the transaction context. |
+| <img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" /> [ Name Property](iadg-transaction-class-name-property.html) | The name of the transaction. |
+| <img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" /> [ TransactionLevel](iadg-transaction-class-transaction-level-property.html) | The locking level for the transaction. |
 
-The connection to the database representing the transaction context.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" /> [ Name Property](iadg-transaction-class-name-property.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-The name of the transaction.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-<img alt="public property" src="images/property.bmp" style="WIDTH:16px; HEIGHT:16px" width="16" height="16" border="0" /> [ TransactionLevel](iadg-transaction-class-transaction-level-property.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-The locking level for the transaction.
-</td>
-          </tr>
-</table>
 
 See Also
 

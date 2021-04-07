@@ -32,49 +32,14 @@ Remarks
 The <span> **AccessResult** </span> enumeration is used as a parameter by the [ BeginTransaction](adg-connection-class-begin-transaction-method-main.html) and [ BeginAutoTransaction](adg-connection-class-begin-auto-transaction-method-main.html) methods of the [AdgConnection](adg-connection-class.html) class.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="center" span="1" width="12%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col align="center" span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-OK
-</td>
-            <td colspan="1" rowspan="1">
 
-Indicates that the next (or prior) sequential record was found to contain the given key (specified by Key and Keycount), and so the record was read.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| OK | Indicates that the next (or prior) sequential record was found to contain the given key (specified by Key and Keycount), and so the record was read. | 0 |
+| NotFound | Indicates that the next (or prior) record did not match the key, and thus no record was read by the method. | 1 |
 
-0
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NotFound
-</td>
-            <td colspan="1" rowspan="1">
-
-Indicates that the next (or prior) record did not match the key, and thus no record was read by the method.
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-</table>
 
 Requirements
 

@@ -19,39 +19,14 @@ keywords: DataRow objects, set active row property
 Establish the specified record as the active row.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[SetActive (integer,integer)](adg-dataset-class-set-active-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Establish the record, specified by format index and relative record number, as the active row.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [SetActive (integer,integer)](adg-dataset-class-set-active-method1.html) | Establish the record, specified by format index and relative record number, as the active row. |
+| [SetActive (string, integer)](adg-dataset-class-set-active-method2.html) | Establish the record, specified by format name and relative record number, as the active row. |
 
-[SetActive (string, integer)](adg-dataset-class-set-active-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Establish the record, specified by format name and relative record number, as the active row.
-</td>
-          </tr>
-</table>
 
 See Also
 

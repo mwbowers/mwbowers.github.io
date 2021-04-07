@@ -34,49 +34,14 @@ Remarks
 The **FileAdapter.AdapterStatus** enumeration is used as a parameter by the [ FileAdapter.Status Property](file-adapter-class-status-property.html) of the [FileAdapter Class](file-adapter-class.html).
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="10%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="40%" />
-            <col span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-									Member</th>
-            <th colspan="1" rowspan="1">
-									Description</th>
-            <th colspan="1" rowspan="1">
-									Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Open
-</td>
-            <td colspan="1" rowspan="1">
 
-The file is open.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Open | The file is open. | 1 |
+| Closed | The file is closed. | 0 |
 
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Closed
-</td>
-            <td colspan="1" rowspan="1">
-
-The file is closed.
-</td>
-            <td colspan="1" rowspan="1">
-
-0
-</td>
-          </tr>
-</table>
 
 Examples
 

@@ -58,104 +58,28 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1" style="height: 23px">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1" style="height: 23px">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name referenced by this **IMember** instance does not locate a valid database object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The path name referenced by this **IMember** instance does not locate a valid database object. |
+| dgEmNOLOCK, or dgEmBUSYOBJ | The database provider could not obtained the requisite lock(s) to perform this function, including an "exclusive" lock on the database member object. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEaINVFTOP | This method is not supported for the type of file containing the member object represented by **IMember** . |
+| dgENOTIMPL | One or more of the following conditions exist:  - *Options* does <u>not</u> specify the **InitMemberOptions.WithDeleted**  								value, but the database provider does not support this method unless the option  								is specified. - The database provider does not support this method. |
 
-dgEmNOLOCK, or dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
 
-The database provider could not obtained the requisite lock(s) to perform this function, including an "exclusive" lock on the database member object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEaINVFTOP
-</td>
-            <td colspan="1" rowspan="1">
-
-This method is not supported for the type of file containing the member object represented by **IMember** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOTIMPL
-</td>
-            <td colspan="1" rowspan="1">
-
-One or more of the following conditions exist:
-
-- *Options* does <u>not</u> specify the **InitMemberOptions.WithDeleted** 
-								value, but the database provider does not support this method unless the option 
-								is specified.
-- The database provider does not support this method.
-
-</td>
-          </tr>
-</table>
 
 Remarks
 

@@ -80,100 +80,20 @@ Parameters
 Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEOLDSERVER
-</td>
-            <td colspan="1" rowspan="1">
 
-The file cannot be opened because the operation is not supported by the version of the database provider of the [AdgConnection](adg-connection-class.html) object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEOLDSERVER | The file cannot be opened because the operation is not supported by the version of the database provider of the [AdgConnection](adg-connection-class.html) object. |
+| dgEINVARG | The [FileName](file-adapter-class-file-name-property.html) or [ MemberName](file-adapter-class-member-name-property.html) properties refer to an invalid database file name. |
+| dgEaINVDMOP | The operation is not allowed because the database is opened for monitor access only. |
+| dgEsAS400ERROR | The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException. |
+| dgEaBADFRMTID | A "level check" operation was requested, and the check discovered a difference between an expected format and the actual format of the file. |
+| dgExDENIED | The database provider called an "exit point" program to validate the operation and the program denied the requested operation. |
+| dgExINVLIC | The database provider has found a registration for an "exit point" program to validate the operation but the database provider is not currently licensed for that capability. |
+| dgExMISSING | The database provider has found a registration for an "exit point" program to validate the operation but no such program could be found. |
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The [FileName](file-adapter-class-file-name-property.html) or [ MemberName](file-adapter-class-member-name-property.html) properties refer to an invalid database file name.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEaINVDMOP
-</td>
-            <td colspan="1" rowspan="1">
-
-The operation is not allowed because the database is opened for monitor access only.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEaBADFRMTID
-</td>
-            <td colspan="1" rowspan="1">
-
-A "level check" operation was requested, and the check discovered a difference between an expected format and the actual format of the file.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExDENIED
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider called an "exit point" program to validate the operation and the program denied the requested operation.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExINVLIC
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider has found a registration for an "exit point" program to validate the operation but the database provider is not currently licensed for that capability.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExMISSING
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider has found a registration for an "exit point" program to validate the operation but no such program could be found.
-</td>
-          </tr>
-</table>
 
 Remarks
 

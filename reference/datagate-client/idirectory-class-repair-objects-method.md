@@ -52,88 +52,27 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmNODIRREAD 
-</td>
-            <td colspan="1" rowspan="1">
 
-The database provider's security model does not permit the current session to access lists of library contents. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEmNODIRREAD | The database provider's security model does not permit the current session to access lists of library contents. |
+| dgEINVARG | The path name given for this **IDirectory** object does not correspond to a database library. |
+| dgENOMEM | The database provider encountered an "out of memory" exception. |
+| dgEmINV400OP | The database provider does not support the automated diagnostic check and repair function. |
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name given for this **IDirectory** object does not correspond to a database library.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOMEM
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered an "out of memory" exception.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmINV400OP
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider does not support the automated diagnostic check and repair function.
-</td>
-          </tr>
-</table>
 
 Remarks
 

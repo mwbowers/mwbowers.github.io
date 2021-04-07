@@ -25,60 +25,16 @@ keywords: how to, set manual database transaction options
 Overloaded method that begins a manual database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) object with combinations of transaction locking level, name, and command options parameters specified.
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[BeginTransaction(TransactionLevel)](adg-connection-class-begin-transaction-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Begins a manual database transaction creating an instance of an **IAdgTransaction** object with lock level specified.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [BeginTransaction(TransactionLevel)](adg-connection-class-begin-transaction-method1.html) | Begins a manual database transaction creating an instance of an **IAdgTransaction** object with lock level specified. |
+| [BeginTransaction(TransactionLevel, string)](adg-connection-class-begin-transaction-method2.html) | Begins a manual database transaction creating an instance of an **IAdgTransaction** object with the name and lock level specified. |
+| [BeginTransaction(TransactionLevel, string, string)](adg-connection-class-begin-transaction-method4.html) | Begins a manual database transaction creating an instance of an **IAdgTransaction** object with the name, lock level, and options specified. |
+| [BeginTransaction(string)](adg-connection-class-begin-transaction-method3.html) | Begins a manual database transaction creating an instance of an **IAdgTransaction** object with the name specified. |
 
-[BeginTransaction(TransactionLevel, string)](adg-connection-class-begin-transaction-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Begins a manual database transaction creating an instance of an **IAdgTransaction** object with the name and lock level specified.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[BeginTransaction(TransactionLevel, string, string)](adg-connection-class-begin-transaction-method4.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Begins a manual database transaction creating an instance of an **IAdgTransaction** object with the name, lock level, and options specified.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[BeginTransaction(string)](adg-connection-class-begin-transaction-method3.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Begins a manual database transaction creating an instance of an **IAdgTransaction** object with the name specified.
-</td>
-          </tr>
-</table>
 
 See Also
 

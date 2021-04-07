@@ -46,59 +46,25 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-The [AdgConnection](adg-connection-class.html) reference or path name string used to create the **IAdgObject** instance were null. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | The [AdgConnection](adg-connection-class.html) reference or path name string used to create the **IAdgObject** instance were null. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 
-<table class="dtTABLE" id="Table3" cellspacing="0"> <colgroup span="1"> <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" /> <col span="1" width="70%" /> </colgroup> <tr> <th colspan="1" rowspan="1"> Value of dgException.Error </th> <th colspan="1" rowspan="1"> Condition </th> </tr> <tr> <td colspan="1" rowspan="1"> <p>dgEmNOLOCK 
-</td>
-            <td colspan="1" rowspan="1">
 
-The lock specified by *ShareType* was not previously granted by the **Lock** method or the lock has been otherwise removed (see Remarks below). 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| <p>dgEmNOLOCK | The lock specified by *ShareType* was not previously granted by the **Lock** method or the lock has been otherwise removed (see Remarks below). |
+| dgEmNOTFND | The database object the **IAdgObject** represents does not exist or is unavailable. |
 
-The database object the **IAdgObject** represents does not exist or is unavailable. 
-</td>
-          </tr>
-</table>
+
 
 Remarks
 

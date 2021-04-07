@@ -45,100 +45,28 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-FileAdapter open method has not been called (file is not open).
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | FileAdapter open method has not been called (file is not open). |
+| dgException | See table below. |
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of
-							<br />
-							dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEaNOTUPD
-</td>
-            <td colspan="1" rowspan="1">
 
-The file was not opened for update. To use **ChangeCurrent** , the [ AccessMode](file-adapter-class-access-mode-property.html) property must be set to a value which includes the [ AccessMode.Change](access-mode-enumeration.html) flag prior to opening the file.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of 							<br /> 							dgException.Error | Condition |
+| ---- | ---- |
+| dgEaNOTUPD | The file was not opened for update. To use **ChangeCurrent** , the [ AccessMode](file-adapter-class-access-mode-property.html) property must be set to a value which includes the [ AccessMode.Change](access-mode-enumeration.html) flag prior to opening the file. |
+| dgEsAS400ERROR | The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException. |
+| dgEaNOCURR | There is not a current record associated with the file. If the file is open for "network blocking", the current record position on the server is unknown. |
+| dgEaBUSYREC | Record is in use or locked by another process. You cannot access the requested record because it is being used by another database process. Certain DataGate providers may provide further details of the conflicting process in the Message and Text members of dgException. |
 
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
 
-The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEaNOCURR
-</td>
-            <td colspan="1" rowspan="1">
-
-There is not a current record associated with the file. If the file is open for "network blocking", the current record position on the server is unknown.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEaBUSYREC
-</td>
-            <td colspan="1" rowspan="1">
-
-Record is in use or locked by another process. You cannot access the requested record because it is being used by another database process. Certain DataGate providers may provide further details of the conflicting process in the Message and Text members of dgException.
-</td>
-          </tr>
-</table>
 
 Remarks
 

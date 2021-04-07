@@ -37,146 +37,33 @@ Parameters
 None.
 Exceptions
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="30%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-								Value of dgException.Error
-							</th>
-            <th colspan="1" rowspan="1">
-								Condition
-							</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name specified when the **IAdgObject** instance was created does not reference an existing database object, or the method is not available for this object type. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The path name specified when the **IAdgObject** instance was created does not reference an existing database object, or the method is not available for this object type. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEmNOOBJAUTH | The user of the session does not have "operational" authority to the existing database object represented by **IAdgObject** . |
+| dgEmNODIRDEL | The database object represented by **IAdgObject** is contained by a parent library object, and the current session is not authorized to remove objects from the parent library. |
+| dgEmNOTEMPTY | The database object represented by IAdgObject is a library, and the library contains other objects. |
+| dgEmNOTONQTEMP | The database object represented by **IAdgObject** is the special library "/QTEMP", and the method is not permitted for QTEMP. |
+| dgEmROOTDIR | The database object represented by **IAdgObject** is the special root library "/", and the method is not permitted for root. |
+| dgEmBUSYOBJ | Some database providers attempt to obtain an exclusive lock on the database object represented by **IAdgObject** , and an exclusive-read lock on the object's parent. This exception indicates that one of these locks could not be obtained. |
+| dgEmHASDEPEND | The database object represented by **IAdgObject** is a physical file or member with object dependencies precluding its removal. |
+| dgEmNOMEMDEL | The database object represented by **IAdgObject** is a member contained by a parent file object, and the current session is not authorized to remove members from the parent file. |
 
-dgEsAS400ERROR 
-</td>
-            <td colspan="1" rowspan="1">
 
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOOBJAUTH 
-</td>
-            <td colspan="1" rowspan="1">
-
-The user of the session does not have "operational" authority to the existing database object represented by **IAdgObject** . 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNODIRDEL
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by **IAdgObject** is contained by a parent library object, and the current session is not authorized to remove objects from the parent library.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOTEMPTY
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by IAdgObject is a library, and the library contains other objects.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOTONQTEMP 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by **IAdgObject** is the special library "/QTEMP", and the method is not permitted for QTEMP. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmROOTDIR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by **IAdgObject** is the special root library "/", and the method is not permitted for root.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBUSYOBJ 
-</td>
-            <td colspan="1" rowspan="1">
-
-Some database providers attempt to obtain an exclusive lock on the database object represented by **IAdgObject** , and an exclusive-read lock on the object's parent. This exception indicates that one of these locks could not be obtained. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmHASDEPEND
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by **IAdgObject** is a physical file or member with object dependencies precluding its removal.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOMEMDEL
-</td>
-            <td colspan="1" rowspan="1">
-
-The database object represented by **IAdgObject** is a member contained by a parent file object, and the current session is not authorized to remove members from the parent file.
-</td>
-          </tr>
-</table>
 
 Remarks
 

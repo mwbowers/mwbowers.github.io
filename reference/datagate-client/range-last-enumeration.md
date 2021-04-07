@@ -38,74 +38,16 @@ Members
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="15%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col align="middles" span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th>	Member</th>
-            <th>	Description</th>
-            <th>	Value</th>
-          </tr>
-          <tr>
-            <td >
 
-Bottom
-</td>
-            <td >
 
-The bottom or last record in the file.
-</td>
-            <td >
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Bottom | The bottom or last record in the file. | 4 |
+| Exclude | Exclude the last record in the range. | 0 |
+| Include | Include the last record in the range. | 1 |
+| SameAsFirst | The same record as specified in the RangeFirst parameter of the DeleteRange or ReadRange methods. | 8 |
 
-4
-</td>
-          </tr>
-          <tr>
-            <td >
 
-Exclude
-</td>
-            <td >
-
-Exclude the last record in the range.
-</td>
-            <td >
-
-0
-</td>
-          </tr>
-          <tr>
-            <td >
-
-Include
-</td>
-            <td >
-
-Include the last record in the range.
-</td>
-            <td >
-
-1
-</td>
-          </tr>
-          <tr>
-            <td >
-
-SameAsFirst
-</td>
-            <td >
-
-The same record as specified in the RangeFirst parameter of the DeleteRange or ReadRange methods.
-</td>
-            <td >
-
-8
-</td>
-          </tr>
-</table>
 
 Examples
 

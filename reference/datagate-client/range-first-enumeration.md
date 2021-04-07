@@ -37,60 +37,15 @@ Members
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="15%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col align="middles" span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th>	Member</th>
-            <th>	Description</th>
-            <th>	Value</th>
-          </tr>
-          <tr>
-            <td >
 
-Exclude
-</td>
-            <td >
 
-Exclude the first record in the range.
-</td>
-            <td >
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Exclude | Exclude the first record in the range. | 0 |
+| Include | Include the first record in the range. | 1 |
+| Top | Start at the top of the file. | 2 |
 
-0
-</td>
-          </tr>
-          <tr>
-            <td >
 
-Include
-</td>
-            <td >
-
-Include the first record in the range.
-</td>
-            <td >
-
-1
-</td>
-          </tr>
-          <tr>
-            <td >
-
-Top
-</td>
-            <td >
-
-Start at the top of the file.
-</td>
-            <td >
-
-2
-</td>
-          </tr>
-</table>
 
 Examples
 

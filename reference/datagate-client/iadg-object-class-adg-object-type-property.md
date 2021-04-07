@@ -32,120 +32,41 @@ keywords: how to, identify type of database object
 Property Value <p> [AdgObjectTypes](adg-object-types-enumeration.html). ReadOnly. The database object type.
 Exceptions
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" valign="top" style="FONT-WEIGHT: bold" width="30%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							ExceptionType</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
+| ExceptionType | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" valign="top" style="FONT-WEIGHT: bold" width="20%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The property is not available for this object type, or the object name does not reference an existing database object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The property is not available for this object type, or the object name does not reference an existing database object. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEmNOTFND | The path name specified when the **IAdgObject** instance was created does not reference an existing database object. |
 
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
 
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOTFND
-</td>
-            <td colspan="1" rowspan="1">
-
-The path name specified when the **IAdgObject** instance was created does not reference an existing database object.
-</td>
-          </tr>
-</table>
 
 Remarks
 
 **IAdgObject** is the base class of the classes representing database objects ( **IDirectory** , **IFileObject** , **IMember** ). The value of **AdgObjectType** determines the implementation type of the **IAdgObject** , according to the following table:
 <br />
 
-<table class="dtTABLE" id="Table4" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" valign="top" style="WIDTH: 9%" />
-            <col span="1" valign="top" style="WIDTH: 20%" />
-            <col span="1" valign="top" style="WIDTH: 10%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of AdgObjectType
-						</th>
-            <th colspan="1" rowspan="1">
-							Implementation interface of **IAdgObject** </th>
-            <th colspan="1" rowspan="1">
-							Database object type</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">Directory
-						</td>
-            <td colspan="1" rowspan="1">
-              [IDirectory](idirectory-class.html)
-            </td>
-            <td colspan="1" rowspan="1">Library
-						</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">File
-						</td>
-            <td colspan="1" rowspan="1">
-              [IFileObject](ifile-object-class.html)
-            </td>
-            <td colspan="1" rowspan="1">File</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">Member</td>
-            <td colspan="1" rowspan="1">
-              [IMember](imember-class.html)
-            </td>
-            <td colspan="1" rowspan="1">Member</td>
-          </tr>
-</table>
+
+
+| Value of AdgObjectType | Implementation interface of **IAdgObject** | Database object type |
+| ---- | ---- | ---- |
+| Directory | [IDirectory](idirectory-class.html) | Library |
+| File | [IFileObject](ifile-object-class.html) | File |
+| Member | [IMember](imember-class.html) | Member |
+
+
 
 <br />
 

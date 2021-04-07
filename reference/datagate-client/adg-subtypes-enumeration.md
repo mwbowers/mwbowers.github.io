@@ -41,231 +41,27 @@ Remarks
 **AdgSubTypes** defines values in which you can select one of the choices. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="10%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="30%" />
-            <col span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Unknown
-</td>
-            <td colspan="1" rowspan="1">
 
-The sub type is unknown.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Unknown | The sub type is unknown. | 0 |
+| DataAreaLgl | This object is of type System.Boolean. | 66 |
+| DataAreaChr | This object is of type System.String or System.Char[]. | 67 |
+| DataAreaDec | This object is of type System.Decimal. | 68 |
+| Join | This is a Join Logical file. | 74 |
+| Local | This is a Local Directory. | 76 |
+| Merge | This is a Merge Logical file. | 77 |
+| NetPrint | This is a .Net print file. | 78 |
+| OlePrint | This is a Ole print file. | 79 |
+| Physical | This is a Physical file. | 80 |
+| SqlLogical | This is a SQL Logical file. | 81 |
+| Remote | This is a Remote Directory. | 82 |
+| Simple | This is a Simple Logical file. | 83 |
+| System | This is a system object. | 89 |
+| Array | This object is an array. | 91 |
 
-0
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-DataAreaLgl
-</td>
-            <td colspan="1" rowspan="1">
-
-This object is of type System.Boolean.
-</td>
-            <td colspan="1" rowspan="1">
-
-66
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-DataAreaChr
-</td>
-            <td colspan="1" rowspan="1">
-
-This object is of type System.String or System.Char[].
-</td>
-            <td colspan="1" rowspan="1">
-
-67
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-DataAreaDec
-</td>
-            <td colspan="1" rowspan="1">
-
-This object is of type System.Decimal.
-</td>
-            <td colspan="1" rowspan="1">
-
-68
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Join
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Join Logical file.
-</td>
-            <td colspan="1" rowspan="1">
-
-74
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Local
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Local Directory.
-</td>
-            <td colspan="1" rowspan="1">
-
-76
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Merge
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Merge Logical file.
-</td>
-            <td colspan="1" rowspan="1">
-
-77
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-NetPrint
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a .Net print file.
-</td>
-            <td colspan="1" rowspan="1">
-
-78
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-OlePrint
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Ole print file. 
-</td>
-            <td colspan="1" rowspan="1">
-
-79
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Physical
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Physical file. 
-</td>
-            <td colspan="1" rowspan="1">
-
-80
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-SqlLogical
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a SQL Logical file. 
-</td>
-            <td colspan="1" rowspan="1">
-
-81
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Remote
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Remote Directory. 
-</td>
-            <td colspan="1" rowspan="1">
-
-82
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Simple
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a Simple Logical file. 
-</td>
-            <td colspan="1" rowspan="1">
-
-83
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-System
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a system object. 
-</td>
-            <td colspan="1" rowspan="1">
-
-89
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Array
-</td>
-            <td colspan="1" rowspan="1">
-
-This object is an array. 
-</td>
-            <td colspan="1" rowspan="1">
-
-91
-</td>
-          </tr>
-</table>
 
 Requirements
 

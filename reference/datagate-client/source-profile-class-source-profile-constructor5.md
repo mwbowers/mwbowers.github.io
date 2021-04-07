@@ -43,32 +43,13 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
 
-Exception Type
-</th>
-            <th colspan="1" rowspan="1">
 
-Condition
-</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *sp* or *NewName* is a null reference. |
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-*sp* or *NewName* is a null reference.
-</td>
-          </tr>
-</table>
 
 Remarks
 

@@ -37,61 +37,18 @@ Members
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
+
           <col align="middles" span="1" width="15%" style="FONT-WEIGHT: bold" />
           <col span="1" width="60%" />
           <col align="middles" span="1" width="10%" />
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Simplex
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Simplex | Print single-sided. | 1 |
+| Vertical | Print duplex with vertical binding. | 2 |
+| Horizontal | Print duplex with horizontal binding. | 3 |
 
-Print single-sided.
-</td>
-            <td colspan="1" rowspan="1">
 
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Vertical
-</td>
-            <td colspan="1" rowspan="1">
-
-Print duplex with vertical binding.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Horizontal
-</td>
-            <td colspan="1" rowspan="1">
-
-Print duplex with horizontal binding.
-</td>
-            <td colspan="1" rowspan="1">
-
-3
-</td>
-          </tr>
-</table>
 
 Requirements
 

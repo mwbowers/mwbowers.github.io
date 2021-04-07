@@ -42,98 +42,28 @@ String. Specifies the full pathname of the directory to be attached to the libra
 
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-*remotePathName* is a null reference. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *remotePathName* is a null reference. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. he following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmINV400OP 
-</td>
-            <td colspan="1" rowspan="1">
 
-This method is not supported by the database provider. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEmINV400OP | This method is not supported by the database provider. |
+| dgEmNODIRADD | The current session does not have "add" authority to the parent of the library represented by **IDirectory** . |
+| dgEmDUPOBJ | A database library already exists in the location referenced by **IDirectory** . |
+| dgEINVARG | *remotePathName* does not name a valid directory. |
 
-dgEmNODIRADD
-</td>
-            <td colspan="1" rowspan="1">
 
-The current session does not have "add" authority to the parent of the library represented by **IDirectory** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmDUPOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-A database library already exists in the location referenced by **IDirectory** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1">
-
-*remotePathName* does not name a valid directory. 
-</td>
-          </tr>
-</table>
 
 Remarks
 

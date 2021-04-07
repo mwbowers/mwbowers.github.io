@@ -20,39 +20,14 @@ keywords: how to, return DataTable objects by file format name
 Returns the **DataTable** object for a particular file format specified by index or name.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[GetFormatTable(integer)](adg-dataset-class-get-format-table-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Returns the DataTable object for a particular file format specified by index.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [GetFormatTable(integer)](adg-dataset-class-get-format-table-method.html) | Returns the DataTable object for a particular file format specified by index. |
+| [GetFormatTable(string)](adg-dataset-class-get-format-table-methodstring.html) | Returns the DataTable object for a particular file format, specified by name. |
 
-[GetFormatTable(string)](adg-dataset-class-get-format-table-methodstring.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Returns the DataTable object for a particular file format, specified by name.
-</td>
-          </tr>
-</table>
 
 See Also
 

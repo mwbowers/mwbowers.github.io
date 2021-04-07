@@ -46,69 +46,16 @@ Members
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-            <tr>
-              <th>			Member</th>
-              <th>			Description</th>
-              <th>			Value</th>
-            </tr>
-            <tr>
-              <td>
 
-None
-</td>
-              <td>
-                No optional functions.  Only the default primary automated 
-											diagnostic/repair facilities are engaged.
-              </td>
-              <td>
 
-0
-</td>
-            </tr>
-            <tr>
-              <td>
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| None | No optional functions.  Only the default primary automated  											diagnostic/repair facilities are engaged. | 0 |
+| Verbose | Generate detailed debugging and tracing messages encountered via the AdgObserver delegate. | 1 |
+| KeepFile | Prior to repair, a copy of the original unrepaired grove file is made. The name of the copy is changed to terminate with the extension .old (instead of .grv). The copy resides in the same directory as the repaired grove file. | 2 |
+| ForceRebuild | The file is subjected to repair procedures regardless of the outcome of the automated diagnostic test. If this is not specified, the file is only "repaired" if diagnostic tests reveal a flaw. | 4 |
 
-Verbose
-</td>
-              <td>
 
-Generate detailed debugging and tracing messages encountered via the AdgObserver delegate.
-</td>
-              <td>
-
-1
-</td>
-            </tr>
-            <tr>
-              <td>
-
-KeepFile
-</td>
-              <td>
-
-Prior to repair, a copy of the original unrepaired grove file is made. The name of the copy is changed to terminate with the extension .old (instead of .grv). The copy resides in the same directory as the repaired grove file.
-</td>
-              <td>
-
-2
-</td>
-            </tr>
-            <tr>
-              <td>
-
-ForceRebuild
-</td>
-              <td>
-
-The file is subjected to repair procedures regardless of the outcome of the automated diagnostic test. If this is not specified, the file is only "repaired" if diagnostic tests reveal a flaw.
-</td>
-              <td>
-
-4
-</td>
-            </tr>
-</table>
 
 Requirements
 

@@ -35,43 +35,15 @@ The ReadRandomMode Enumeration&gt; enumeration is used as a parameter by the [Re
 ReadRandomMode Enumeration defines values in which you can select one of the choices.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-            <colgroup span="1">
-              <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" />
-              <col span="1" width="60%" />
-              <col align="middles" span="1" width="10%" />
-            </colgroup>
-            <tr>
-              <th>		Member</th>
-              <th>		Description</th>
-              <th>		Value</th>
-            </tr>
-            <tr>
-              <td >Equal
-								</td>
-              <td >Find the first record with key (or RRN) equal to the search argument.
-								</td>
-              <td >13
-								</td>
-            </tr>
-            <tr>
-              <td >Greater
-								</td>
-              <td >Find the first record with key (or RRN) greater than the Search argument.
-								</td>
-              <td >14
-								</td>
-            </tr>
-            <tr>
-              <td >GTEQ
-								</td>
-              <td >Find the first record with key (or RRN) greater than or equal to the Search 
-									argument.
-								</td>
-              <td >15
-								</td>
-            </tr>
-</table>
+
+
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Equal | Find the first record with key (or RRN) equal to the search argument. | 13 |
+| Greater | Find the first record with key (or RRN) greater than the Search argument. | 14 |
+| GTEQ | Find the first record with key (or RRN) greater than or equal to the Search  									argument. | 15 |
+
+
 
 Examples
 

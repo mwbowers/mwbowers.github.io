@@ -36,47 +36,17 @@ Members
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
+
           <col align="middles" span="1" width="15%" style="FONT-WEIGHT: bold" />
           <col span="1" width="60%" />
           <col align="middles" span="1" width="10%" />
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Portrait
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Portrait | Portrait orientation, i.e., the height is greater than the width. | 1 |
+| Landscape | Landscape orientation, i.e., the width is greater than the height. | 2 |
 
-Portrait orientation, i.e., the height is greater than the width.
-</td>
-            <td colspan="1" rowspan="1">
 
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Landscape
-</td>
-            <td colspan="1" rowspan="1">
-
-Landscape orientation, i.e., the width is greater than the height.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-</table>
 
 Requirements
 

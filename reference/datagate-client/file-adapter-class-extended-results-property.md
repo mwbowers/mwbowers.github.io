@@ -40,65 +40,15 @@ Properties associated with specialized files will be found in the **ExtendedResu
 DataGate OLE print files, when written to, communicate information about the document being printed through ExtendedResults. The following table summarizes the information available for open OLE print files, after a record has been added to the file.
 <br />
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 15%; font-weight:bold" />
-            <col span="1" style="WIDTH: 85%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Property Key Name
-						</th>
-            <th colspan="1" rowspan="1">
-							Property Value
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-CursorY
-</td>
-            <td colspan="1" rowspan="1">
 
-Integer. The position that the printer is from the top of the page. Print Units are measured in 1/100th of a millimeter.
+| Property Key Name | Property Value |
+| ---- | ---- |
+| CursorY | Integer. The position that the printer is from the top of the page. Print Units are measured in 1/100th of a millimeter.  - To get the measurement in millimeters, divide by 100. - To get the measurement in centimeters, divide by 1,000. - To get the measurement in inches, divide by 2,540. |
+| PageLength | Integer. The total page length based on the page orientation selected. Print Units are measured in 1/100th of a millimeter.  - To get the measurement in millimeters, divide by 100. - To get the measurement in centimeters, divide by 1,000. - To get the measurement in inches, divide by 2,540. |
+| PageWidth | Integer. The total page width based upon the page orientation selected. Print Units are measured in 1/100th of a millimeter.  - To get the measurement in millimeters, divide by 100. - To get the measurement in centimeters, divide by 1,000. - To get the measurement in inches, divide by 2,540. |
 
-- To get the measurement in millimeters, divide by 100.
-- To get the measurement in centimeters, divide by 1,000.
-- To get the measurement in inches, divide by 2,540.
 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-PageLength
-</td>
-            <td colspan="1" rowspan="1">
-
-Integer. The total page length based on the page orientation selected. Print Units are measured in 1/100th of a millimeter.
-
-- To get the measurement in millimeters, divide by 100.
-- To get the measurement in centimeters, divide by 1,000.
-- To get the measurement in inches, divide by 2,540.
-
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-PageWidth
-</td>
-            <td colspan="1" rowspan="1">
-
-Integer. The total page width based upon the page orientation selected. Print Units are measured in 1/100th of a millimeter.
-
-- To get the measurement in millimeters, divide by 100.
-- To get the measurement in centimeters, divide by 1,000.
-- To get the measurement in inches, divide by 2,540.
-
-</td>
-          </tr>
-</table>
 
 Requirements
 

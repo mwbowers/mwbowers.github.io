@@ -35,91 +35,17 @@ Remarks
 <span>Dbcs</span> defines values in which you can select one of the choices. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-            <colgroup span="1">
-              <col align="middles" span="1" width="8%" style="FONT-WEIGHT: bold" />
-              <col span="1" width="40%" />
-              <col span="1" width="5%" />
-            </colgroup>
-            <tr>
-              <th colspan="1" rowspan="1">
-								Member</th>
-              <th colspan="1" rowspan="1">
-								Description</th>
-              <th colspan="1" rowspan="1">
-								Value</th>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
 
-Either
-</td>
-              <td colspan="1" rowspan="1">
 
-Double byte (with shift-control) or single byte.
-</td>
-              <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Either | Double byte (with shift-control) or single byte. | 4 |
+| Graphic | Double byte only (no shift-control). | 5 |
+| None | Shift-control characters do not appear. | 0 |
+| Only | Double byte only (with shift-control). | 3 |
+| Open | Mixed single byte/double byte (with shift-control). | 2 |
 
-4
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
 
-Graphic
-</td>
-              <td colspan="1" rowspan="1">
-
-Double byte only (no shift-control).
-</td>
-              <td colspan="1" rowspan="1">
-
-5
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
-
-None
-</td>
-              <td colspan="1" rowspan="1">
-
-Shift-control characters do not appear.
-</td>
-              <td colspan="1" rowspan="1">
-
-0
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
-
-Only
-</td>
-              <td colspan="1" rowspan="1">
-
-Double byte only (with shift-control).
-</td>
-              <td colspan="1" rowspan="1">
-
-3
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
-
-Open
-</td>
-              <td colspan="1" rowspan="1">
-
-Mixed single byte/double byte (with shift-control).
-</td>
-              <td colspan="1" rowspan="1">
-
-2
-</td>
-            </tr>
-</table>
 
 Requirements
 
