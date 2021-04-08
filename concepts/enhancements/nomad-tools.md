@@ -18,7 +18,8 @@ program.cs
         pragram.io.cs
 ```
 
-| **Program file Extension**   | **Description** 
+| Program file Extension | Description 
+| --------------- | --- 
 | `.cs`           | Application Program C# code.
 | `.io.xfu`       | External files *metadata* in XML format
 | `.io.cs`        | Partial C# class with External file's *Boilerplate* Code
@@ -30,14 +31,16 @@ Visual Studio&reg; 2019 Projects have a collection of files, where each file can
 
 Typically, `.cs` C# source files will have:
 
-| **Property**             | **Value**
+| Property                 | Value
+| ------------------------ | --- 
 | Build Action             | C# Compiler
 | Copy to Output Directory | Do not copy
 | Custom Tool              | (blank)
 
 `.io.xfu` source files are set to have:
 
-| **Property**             | **Value**
+| Property                 | Value
+| ------------------------ | --- 
 | Build Action             | None
 | Copy to Output Directory | AdgFileUsageGenerator
 | Custom Tool              | (blank)

@@ -16,9 +16,10 @@ In general, when a *keyword* **is not** explicitly defined at the lowest level (
 
 The same can be said for Razor Page Markup syntax, but other terminology is used:
 
-| **DDS name** | **Razor Page name**
-| Level   | TagHelper **Tag**
-| Keyword | TagHelper (or HTML) **Attribute**
+| DDS name | Razor Page name
+| -------- | ---
+| Level    | TagHelper **Tag**
+| Keyword  | TagHelper (or HTML) **Attribute**
 
 For TagHelper *Container* Tags QSys Expo defines:
 1. DdsFile
@@ -220,7 +221,8 @@ The DdsDateField TagHelper is used to add fixed DateTime fields to the *Record*.
 
 **Date Formats**
 
-| **Name**   | **Format**
+| Name       | Format
+| ---------- | ---
 | ISO        | `yyyy-mm-dd`
 | USA        | `mm/dd/yyyy`
 | EUR        | `dd.mm.yyyy`

@@ -35,7 +35,8 @@ In order to describe how Expo Client Library was architected, we will first proc
 
 ## Display Canvas Comparison
 
-|                     | **IBM i Displayfile** [^1]           | **Web Browser**
+|                     | IBM i Displayfile [^1]           | Web Browser
+| ------------------- | -------------------------------- | ---
 | *Display surface*   | Fixed Size [^2]                  | Undefined [^3]
 |                     | No scrolling                     | Horizontal and Vertical Scrolling
 | *Positioning*       | Line, char position              | Defaults to flow [^4]

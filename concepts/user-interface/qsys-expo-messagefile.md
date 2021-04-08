@@ -65,7 +65,8 @@ The command would be Migrated as the following C# code:
 
 The call to `SendProgramMessage` would cause to load the `CUSTMSGF.amfx` file into a [.NET Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0) collection and the key `CST0002` would be used to find the entry:
 
-| **Property**  | **Value**
+| Property  | Value
+| --------- | ---
 | SEVERITY  | 0 
 | DATACOUNT | 1
 | TEXT      | "Customer &amp;1 has been updated"

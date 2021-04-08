@@ -45,6 +45,7 @@ void _instanceInit()
 The `PrintFile` class constructor has the following required parameters:
 
 | **Parameter**            | **Description**
+| ------------------------ | ---
 | populateBufferMethod     | method called internally by I/O operations when writing.
 | dclPrintFileName         | *string* logical name (usually short name).
 | filePath                 | *string* library and name path to database location.
