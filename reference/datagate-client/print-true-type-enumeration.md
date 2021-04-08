@@ -37,60 +37,18 @@ Members
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
+
             <col align="middles" span="1" width="10%" style="FONT-WEIGHT: bold" />
             <col span="1" width="59.99%" />
             <col span="1" width="10%" />
-            <tr>
-              <th colspan="1" rowspan="1">
-											Member</th>
-              <th colspan="1" rowspan="1">
-											Description</th>
-              <th colspan="1" rowspan="1">
-											Value</th>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
 
-Bitmap
-</td>
-              <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Bitmap | Print True Type font as graphics. | 1 |
+| Download | Download True Type fonts as soft fonts. | 2 |
+| Subdev | Substitute device fonts for True Type fonts. | 3 |
 
-Print True Type font as graphics.
-</td>
-              <td colspan="1" rowspan="1">
 
-1
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
-
-Download
-</td>
-              <td colspan="1" rowspan="1">
-											Download True Type fonts as soft fonts.
-										</td>
-              <td colspan="1" rowspan="1">
-
-2
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
-
-Subdev
-</td>
-              <td colspan="1" rowspan="1">
-
-Substitute device fonts for True Type fonts.
-</td>
-              <td colspan="1" rowspan="1">
-
-3
-</td>
-            </tr>
-</table>
 
 Requirements
 

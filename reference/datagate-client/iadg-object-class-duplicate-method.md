@@ -60,124 +60,32 @@ Returns
 A new instance of an **IAdgObject** representing the duplicate object.
 Exceptions
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" valign="top" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							ExceptionType</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-*ScopePath* , *TargetPath* , or *NewName* is a null reference.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| ExceptionType | Condition |
+| ---- | ---- |
+| NullReferenceException | *ScopePath* , *TargetPath* , or *NewName* is a null reference. |
+| dgException | See table below. |
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
 
 <br />
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1" style="height: 23px">
-							Value of dgException.Error</th>
-            <th colspan="1" rowspan="1" style="height: 23px">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmINV400OP
-</td>
-            <td colspan="1" rowspan="1">
 
-The IBM i database provider only supports this method when **IAdgObject** represents a file object, and then only when *options* includes the **Members** value.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEmINV400OP | The IBM i database provider only supports this method when **IAdgObject** represents a file object, and then only when *options* includes the **Members** value. |
+| dgEINVARG | One of the following conditions exists:   - The source or destination library specified does not exist. - The **Members**  and/or **Data**  values were specified  										by *options* , but the database provider does not support these  									values. - *ScopePath*  is not a prefix of the path name of the database object  										represented by **IAdgObject** . |
+| dgEsAS400ERROR | The IBM i database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgENOTIMPL | The database provider does not support the method for the object type represented by **IAdgObject** . |
+| dgEmNOOBJAUTH | The user of the session does not have "use" authority to the existing database object represented by **IAdgObject** . |
+| dgEmBUSYOBJ | The current session could not be granted a "share-no-update" lock on the object represented by **IAdgObject** . |
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-One of the following conditions exists: 
-
-- The source or destination library specified does not exist.
-- The **Members**  and/or **Data**  values were specified 
-										by *options* , but the database provider does not support these 
-									values.
-- *ScopePath*  is not a prefix of the path name of the database object 
-										represented by **IAdgObject** .
-
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The IBM i database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOTIMPL
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider does not support the method for the object type represented by **IAdgObject** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOOBJAUTH
-</td>
-            <td colspan="1" rowspan="1">
-
-The user of the session does not have "use" authority to the existing database object represented by **IAdgObject** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-The current session could not be granted a "share-no-update" lock on the object represented by **IAdgObject** .
-</td>
-          </tr>
-</table>
 
 Remarks
 

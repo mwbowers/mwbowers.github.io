@@ -53,88 +53,27 @@ Exceptions
 
 <br />
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-FileAdapter [Open](file-adapter-class-open-method.html) method has not been called (file is not open).
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | FileAdapter [Open](file-adapter-class-open-method.html) method has not been called (file is not open). |
+| dgException | See table below. |
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="table3" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The *RRN* specified is not valid.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The *RRN* specified is not valid. |
+| dgEaNOTUPD | The file was not opened for update. To use **ReuseRRN** , the [ AccessMode](file-adapter-class-access-mode-property.html) property must be set to a value which includes the [ AccessMode.Change](access-mode-enumeration.html) flag, prior to opening the file. |
+| dgEsAS400ERROR | The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException. |
 
-dgEaNOTUPD
-</td>
-            <td colspan="1" rowspan="1">
 
-The file was not opened for update. To use **ReuseRRN** , the [ AccessMode](file-adapter-class-access-mode-property.html) property must be set to a value which includes the [ AccessMode.Change](access-mode-enumeration.html) flag, prior to opening the file.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database server encountered a system error. Details may be available via the SystemError and Text fields of dgException.
-</td>
-          </tr>
-</table>
 
 Remarks
 

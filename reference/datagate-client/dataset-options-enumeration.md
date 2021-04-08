@@ -27,49 +27,14 @@ Remarks
 Currently the symbolic names are reserved for AVR for Visual Studio 2019 use, so you must use the associated numeric value.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="12%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col align="middles" span="1" width="8%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-FieldAsAttributes
-</td>
-            <td colspan="1" rowspan="1">
 
-Use the field as the attributes when creating the dataset object.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| FieldAsAttributes | Use the field as the attributes when creating the dataset object. | 2 |
+| OmitKeys | Omit the keys when creating the dataset object. | 1 |
 
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-OmitKeys
-</td>
-            <td colspan="1" rowspan="1">
-
-Omit the keys when creating the dataset object.
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-</table>
 
 Requirements
 

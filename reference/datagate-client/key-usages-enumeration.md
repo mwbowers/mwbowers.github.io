@@ -36,147 +36,21 @@ Remarks
 These properties are used when defining a key with the parameters of the [ FileAdapter.OpenSimpleQuery](file-adapter-class-open-simple-query-method.html) method. DCS also uses **KeyUsages** for internal file definition methods. Most values of **KeyUsages** can be combined to specify more than one value. *ASCEND* and *DESCEND* cannot be combined in the same **KeyUsages** value. The following table lists each value and the effect on key fields to which it is applied.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="15%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-ASCEND
-</td>
-            <td colspan="1" rowspan="1">
 
-index value is sequence in ascending order.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| ASCEND | index value is sequence in ascending order. | 0 |
+| DESCEND | <p>Index value is sequenced in decending order. | 1 |
+| ABSVALUE | Index value is interpreted as the absolute value of the format field. | 2 |
+| SIGNED | Index value is interpreted as the signed value of the format field. | 4 |
+| UNSIGNED | Index value is interpreted as the unsigned value of the format field. | 8 |
+| DIGIT | Each byte of index value masks the rightmost 4 bits only. | 16 |
+| ZONE | Each byte of index value masks the leftmost 4 bits only. | 32 |
+| ALTSEQ | This is a reserved value for ASNA internal use only. | 64 |
+| SEPARATOR | This is a reserved value for ASNA internal use only. | 128 |
 
-0
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-DESCEND
-</td>
-            <td colspan="1" rowspan="1">
-
-<p>Index value is sequenced in decending order.
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ABSVALUE
-</td>
-            <td colspan="1" rowspan="1">
-
-Index value is interpreted as the absolute value of the format field.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-SIGNED
-</td>
-            <td colspan="1" rowspan="1">
-
-Index value is interpreted as the signed value of the format field.
-</td>
-            <td colspan="1" rowspan="1">
-
-4
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-UNSIGNED
-</td>
-            <td colspan="1" rowspan="1">
-
-Index value is interpreted as the unsigned value of the format field.
-</td>
-            <td colspan="1" rowspan="1">
-
-8
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-DIGIT
-</td>
-            <td colspan="1" rowspan="1">
-
-Each byte of index value masks the rightmost 4 bits only.
-</td>
-            <td colspan="1" rowspan="1">
-
-16
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ZONE
-</td>
-            <td colspan="1" rowspan="1">
-
-Each byte of index value masks the leftmost 4 bits only.
-</td>
-            <td colspan="1" rowspan="1">
-
-32
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ALTSEQ
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a reserved value for ASNA internal use only.
-</td>
-            <td colspan="1" rowspan="1">
-
-64
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-SEPARATOR
-</td>
-            <td colspan="1" rowspan="1">
-
-This is a reserved value for ASNA internal use only.
-</td>
-            <td colspan="1" rowspan="1">
-
-128
-</td>
-          </tr>
-</table>
 
 Requirements
 

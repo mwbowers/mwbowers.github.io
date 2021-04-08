@@ -47,212 +47,22 @@ The *iAdgObject* parameter is an **IAdgObject** reference representing a library
 The following is a list of **IAdgObject** methods and properties that can be invoked on *iAdgObject* from within the delegate code:
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 20%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							IAdgObject<br />
-							Method/Property
-						</th>
-            <th colspan="1" rowspan="1">
-							IDirectory<br />
-							Enumerate
-						</th>
-            <th colspan="1" rowspan="1">
-							ILibraryList<br />
-							EnumerateCurrentSystem
-						</th>
-            <th colspan="1" rowspan="1">
-							ILibraryList<br />
-							EnumerateCurrentUser
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<a href="dcsIAdgObjectClassToStringMethod.html) method (the object path name)
-</td>
-            <td colspan="1" rowspan="1">
 
-Yes
-</td>
-            <td colspan="1" rowspan="1">
+| IAdgObject<br /> 							Method/Property | IDirectory<br /> 							Enumerate | ILibraryList<br /> 							EnumerateCurrentSystem | ILibraryList<br /> 							EnumerateCurrentUser |
+| ---- | ---- | ---- | ---- |
+| <a href="dcsIAdgObjectClassToStringMethod.html) method (the object path name) | Yes | Yes | Yes |
+| [AdgObjectType](iadg-object-class-adg-object-type-property.html) property | Yes | Yes | Yes |
+| [AdgSubType](iadg-object-class-adg-subtype-property.html) property | Yes | Yes | Yes |
+| [ObjectID](iadg-object-class-object-idproperty.html) property | Yes | Yes | Yes |
+| [ParentID](iadg-object-class-parent-idproperty.html) property | Yes | Yes, except root library will be zero. | Yes, except root library will be zero. |
+| [Text](iadg-object-class-text-property.html) property | Yes | Yes | Yes |
+| [IsSystemObject](iadg-object-class-isSystem-object-property.html) property | Yes | Yes | Yes |
+| [DateCreated](iadg-object-class-date-created-property.html) property | Yes | Yes | Yes |
+| [DateModified](iadg-object-class-date-modified-property.html) property | Yes | Yes | Yes |
+| [DateReferenced](iadg-object-class-date-referenced-property.html) property | Yes | Yes | Yes |
 
-Yes
-</td>
-            <td colspan="1" rowspan="1">
 
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[AdgObjectType](iadg-object-class-adg-object-type-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[AdgSubType](iadg-object-class-adg-subtype-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[ObjectID](iadg-object-class-object-idproperty.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[ParentID](iadg-object-class-parent-idproperty.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes, except root library will be zero.
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes, except root library will be zero.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[Text](iadg-object-class-text-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[IsSystemObject](iadg-object-class-isSystem-object-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[DateCreated](iadg-object-class-date-created-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[DateModified](iadg-object-class-date-modified-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[DateReferenced](iadg-object-class-date-referenced-property.html) property
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-            <td colspan="1" rowspan="1">
-
-Yes
-</td>
-          </tr>
-</table>
 
 <br />
 

@@ -50,171 +50,36 @@ Exceptions
 
 <br />
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-*targetDir* or *newName* are null references. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *targetDir* or *newName* are null references. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells"> <colgroup span="1"> <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" /> <col span="1" style="WIDTH: 70%" /> </colgroup> <tr> <th colspan="1" rowspan="1"> Value of dgException.Error </th> <th colspan="1" rowspan="1"> Condition </th> </tr> <tr> <td colspan="1" rowspan="1"> <p>dgEmFNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
 
-The path name of **IFileObject** (copy source path) does not reference a database file. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmNOOBJAUTH
-</td>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| <p>dgEmFNOTFND | The path name of **IFileObject** (copy source path) does not reference a database file. |
+| dgEmNOOBJAUTH | The current session does not have "read" authority to the file represented by **IFileObject** (the copy source). |
+| dgEmBUSYOBJ | The database provider failed to obtain a "share no update" lock for the file represented by **IFileObject** (the copy source). |
+| dgEgNOATTR, dgErBADSRC, dgEaBADFRMTID, or dgErADENOTFND | The internal database file inconsistency was found by the database provider. The file represented by IFileObject (the copy source) should be repaired or restored. |
+| dgENOMEM | The database provider encountered an "out of memory" exception. |
+| dgEmNOTFND | The library specified by *targetDir* does not exist. |
+| dgEmNODIRADD | The current session does not have "add" and/or "execute" authority to the library specified by *targetDir* . |
+| dgEmDUPOBJ | An object in library *targetDir* with the name *newName* already exists. |
+| dgEINVARG | *targetDir* , *newName* , and/or the path name of the file represented by this IFileObject are invalid database object names/paths. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgExMISSING | The database provider's "exit point" security support discovered a registration for an exit point validation routine for the method but the validation routine itself was not found. |
+| dgExINVLIC | The database provider's "exit point" security support encountered an exit point validation routine for the method but the license for this support is invalid or not found. |
+| dgExDENIED | Access to the method was denied by the database provider's "exit point" security support. |
 
-The current session does not have "read" authority to the file represented by **IFileObject** (the copy source).
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider failed to obtain a "share no update" lock for the file represented by **IFileObject** (the copy source).
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEgNOATTR, dgErBADSRC, dgEaBADFRMTID, or dgErADENOTFND 
-</td>
-            <td colspan="1" rowspan="1">
-
-The internal database file inconsistency was found by the database provider. The file represented by IFileObject (the copy source) should be repaired or restored.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOMEM
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered an "out of memory" exception.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOTFND
-</td>
-            <td colspan="1" rowspan="1">
-
-The library specified by *targetDir* does not exist.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNODIRADD
-</td>
-            <td colspan="1" rowspan="1">
-
-The current session does not have "add" and/or "execute" authority to the library specified by *targetDir* .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmDUPOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-An object in library *targetDir* with the name *newName* already exists.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
-
-*targetDir* , *newName* , and/or the path name of the file represented by this IFileObject are invalid database object names/paths.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR 
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExMISSING
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider's "exit point" security support discovered a registration for an exit point validation routine for the method but the validation routine itself was not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExINVLIC
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider's "exit point" security support encountered an exit point validation routine for the method but the license for this support is invalid or not found.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgExDENIED
-</td>
-            <td colspan="1" rowspan="1">
-
-Access to the method was denied by the database provider's "exit point" security support.
-</td>
-          </tr>
-</table>
 
 Remarks
 

@@ -15,49 +15,15 @@ keywords: tables, prepare DataRow objects for
 ---
 
 Creates a DataRow object in preparation for adding it to the **AdgDataSet** .
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 30%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[PrepareRow(integer)](adg-dataset-class-prepare-row-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Create a **DataRow** object (index format) in preparation for adding it to the **AdgDataSet** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [PrepareRow(integer)](adg-dataset-class-prepare-row-method1.html) | Create a **DataRow** object (index format) in preparation for adding it to the **AdgDataSet** . |
+| [PrepareRow(string)](adg-dataset-class-prepare-row-method2.html) | Create a **DataRow** object (string format) in preparation for adding it to the **AdgDataSet** . |
+| [PrepareRow(string, System.Data.DataRow)](adg-dataset-class-prepare-row-method3.html) | Establish an existing **DataRow** object (string format) as the currently prepared row, for subsequently adding it to the **AdgDataSet** . |
 
-[PrepareRow(string)](adg-dataset-class-prepare-row-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Create a **DataRow** object (string format) in preparation for adding it to the **AdgDataSet** .
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[PrepareRow(string, System.Data.DataRow)](adg-dataset-class-prepare-row-method3.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Establish an existing **DataRow** object (string format) as the currently prepared row, for subsequently adding it to the **AdgDataSet** .
-</td>
-          </tr>
-</table>
 
 See Also
 

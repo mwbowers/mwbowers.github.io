@@ -38,118 +38,41 @@ Exceptions
 
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" valign="top" width="30%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							ExceptionType</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
+| ExceptionType | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The property is not available for this object type or the object name does not reference an existing database object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The property is not available for this object type or the object name does not reference an existing database object. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
+| dgEmNOTFND | The path name specified when the **IAdgObject** instance was created does not reference an existing database object. |
 
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
 
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmNOTFND
-</td>
-            <td colspan="1" rowspan="1">
-
-The path name specified when the **IAdgObject** instance was created does not reference an existing database object.
-</td>
-          </tr>
-</table>
 
 Remarks
 
 **AdgSubType** is a secondary type which may be assigned by the database provider to further classify the primary type (see [ AdgObjectType](iadg-object-class-adg-object-type-property.html)) of the database object represented by **IAdgObject** . The following table lists the possible values of **AdgSubType** for the various values of **AdgObjectType** .
 <br />
 
-<table class="dtTABLE" id="Table4" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of AdgObjectType (primary type)
-						</th>
-            <th colspan="1" rowspan="1">
-							Possible values for AdgSubTypes<br />
-							 (secondary type)
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Directory
-</td>
-            <td colspan="1" rowspan="1">
 
-Local
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of AdgObjectType (primary type) | Possible values for AdgSubTypes<br /> 							 (secondary type) |
+| ---- | ---- |
+| Directory | Local |
+| File | Join, Merge, Physical, SqlLogical, Simple (logical), OlePrint, NetPrint, Unknown |
+| Member |
 
-File
-</td>
-            <td colspan="1" rowspan="1">
 
-Join, Merge, Physical, SqlLogical, Simple (logical), OlePrint, NetPrint, Unknown
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Member
-</td>
-          </tr>
-</table>
 
 <table> <tbody> <tr> <td colspan="1" rowspan="1"> <p>Join, Merge, Physical, SqlLogical, Simple (logical), Unknown
 </td>

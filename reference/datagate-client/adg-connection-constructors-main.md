@@ -20,40 +20,14 @@ keywords: database connections, established
 Constructs an <span style="FONT-WEIGHT: bold">AdgConnection</span> instance assigning an initial value to the [ SourceProfile](adg-connection-class-source-profile-property.html) property or database specified.
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[AdgConnection(SourceProfile)](adg-connection-class-adg-connection-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Constructs an **AdgConnection** instance from the initial values of the **SourceProfile** containing the properties of the database connection.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [AdgConnection(SourceProfile)](adg-connection-class-adg-connection-method1.html) | Constructs an **AdgConnection** instance from the initial values of the **SourceProfile** containing the properties of the database connection. |
+| [AdgConnection(string)](adg-connection-class-adg-connection-method2.html) | Constructs an **AdgConnection** instance for the database specified. |
 
-[AdgConnection(string)](adg-connection-class-adg-connection-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Constructs an **AdgConnection** instance for the database specified.
-</td>
-          </tr>
-</table>
 
 See Also
 

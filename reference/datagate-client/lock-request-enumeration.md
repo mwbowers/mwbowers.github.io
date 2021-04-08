@@ -42,105 +42,18 @@ The **LockRequest** enumeration values are used by methods of the [ FileAdapter]
 Note: Some **LockRequest** values are not supported by certain database providers. Most significantly, the AS/400 database provider only supports the 'NoLock' and ' Default' values; thus, the only way to override its normal locking semantics is to request no locking. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="15%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="60%" />
-            <col span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Default 
-</td>
-            <td colspan="1" rowspan="1">
 
-Use the default locking based on the file’s share, access and lock modes. 
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Default | Use the default locking based on the file’s share, access and lock modes. | 0 |
+| NoWait | Don’t retry a lock that cannot be obtained immediately. | 1 |
+| Read | Lock for reading. | 2 |
+| Write | Lock for writing. | 4 |
+| ReadWrite | Lock for reading and writing. | 6 |
+| NoLock | Don’t lock. | 8 |
 
-0 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NoWait
-</td>
-            <td colspan="1" rowspan="1">
-
-Don’t retry a lock that cannot be obtained immediately.
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Read 
-</td>
-            <td colspan="1" rowspan="1">
-
-Lock for reading. 
-</td>
-            <td colspan="1" rowspan="1">
-
-2 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Write 
-</td>
-            <td colspan="1" rowspan="1">
-
-Lock for writing. 
-</td>
-            <td colspan="1" rowspan="1">
-
-4 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ReadWrite 
-</td>
-            <td colspan="1" rowspan="1">
-
-Lock for reading and writing. 
-</td>
-            <td colspan="1" rowspan="1">
-
-6 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-NoLock
-</td>
-            <td colspan="1" rowspan="1">
-
-Don’t lock.
-</td>
-            <td colspan="1" rowspan="1">
-
-8
-</td>
-          </tr>
-</table>
 
 Examples
 

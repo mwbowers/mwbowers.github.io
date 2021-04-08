@@ -15,38 +15,14 @@ keywords: how to, accept database changes within current transaction context
 ---
 
 Accept changes to the database that have been performed within the current transaction context.
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 50%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[Commit ()](iadg-transaction-class-commit-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Accept changes to the database that have been performed within the current transaction context.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [Commit ()](iadg-transaction-class-commit-method1.html) | Accept changes to the database that have been performed within the current transaction context. |
+| [Commit (string)](iadg-transaction-class-commit-method2.html) | Accept changes to the database that have been performed within the current transaction context for the transaction identified. |
 
-[Commit (string)](iadg-transaction-class-commit-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Accept changes to the database that have been performed within the current transaction context for the transaction identified.
-</td>
-          </tr>
-</table>
 
 See Also
 

@@ -40,58 +40,16 @@ A value of this type may be used by **IAdgTransaction** and database providers t
 For the System i database provider, the value of the **TransactionLevel** property translates to the value of the "LCKLVL" parameter of the "STRCMTCTL" command used to begin a transaction context. Please consult the iSeries database documentation for details. The following table summarizes the translation. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0" width="50%">
-          <colgroup span="1">
-            <col align="middles" span="1" width="10%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="25%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-								Member</th>
-            <th colspan="1" rowspan="1">
-								iSeries STRCMTCTL LCKLVL</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Low
-</td>
-            <td colspan="1" rowspan="1">
 
-*CHG
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Member | iSeries STRCMTCTL LCKLVL |
+| ---- | ---- |
+| Low | *CHG |
+| Medium | *CS |
+| High | *ALL |
+| Serial | *ALL |
 
-Medium
-</td>
-            <td colspan="1" rowspan="1">
 
-*CS
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-High
-</td>
-            <td colspan="1" rowspan="1">
-
-*ALL
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Serial
-</td>
-            <td colspan="1" rowspan="1">
-
-*ALL
-</td>
-          </tr>
-</table>
 
 Requirements
 

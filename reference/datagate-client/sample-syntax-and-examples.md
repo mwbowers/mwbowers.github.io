@@ -45,34 +45,14 @@ Exceptions
 
 [ <span>ASNA.DataGate.Common.dgException</span> ](dgexception-class.html) is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the **dgException.Error** property.
 
-<span /> <table class="dtTABLE" id="Table2" style="WIDTH: 97%; border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" width="97%" x-use-null-cells="x-use-null-cells"> <colgroup span="1"> <col span="1" style="WIDTH: 20%" /> <col span="1" style="WIDTH: 70%" /> </colgroup> <tr valign="top"> <td colspan="1" rowspan="1" width="20%" bgcolor="#cfcfcf"> <p >Value of <br /> dgException.Error 
-</td>
-            <td colspan="1" rowspan="1" width="70%" bgcolor="#cfcfcf">
+<span /> 
+|      |      |
+| ---- | ---- |
+| <p >Value of <br /> dgException.Error | Condition |
+| dgEdbNODBNAME | The value specified by the <span>dbName</span> parameter is an empty string, or does not refer to a valid, registered database name. |
+| dgENOTSECURE | A password was not found for a database name registered to use password authentication. |
 
-Condition
-</td>
-          </tr>
-          <tr valign="top">
-            <td colspan="1" rowspan="1" width="20%">
 
-dgEdbNODBNAME
-</td>
-            <td colspan="1" rowspan="1" width="70%">
-
-The value specified by the <span>dbName</span> parameter is an empty string, or does not refer to a valid, registered database name. 
-</td>
-          </tr>
-          <tr valign="top">
-            <td colspan="1" rowspan="1" width="20%">
-
-dgENOTSECURE
-</td>
-            <td colspan="1" rowspan="1" width="70%">
-
-A password was not found for a database name registered to use password authentication. 
-</td>
-          </tr>
-</table>
         <span />
       </p>
 

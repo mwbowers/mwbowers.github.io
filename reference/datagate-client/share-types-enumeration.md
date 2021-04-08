@@ -38,91 +38,17 @@ The **Lock** and **Unlock** methods of I **AdgObject** engage the database objec
 Note that object locking details are database provider dependent. In general, objects may be implicitly locked by database object management and access functions (such as deleting a file, or reading records of a member), or explicitly with **Lock** and **Unlock** . 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold" width="15%" />
-            <col span="1" width="60%" />
-            <col span="1" width="10%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-									Member</th>
-            <th colspan="1" rowspan="1">
-									Description</th>
-            <th colspan="1" rowspan="1">
-									Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Exclusive
-</td>
-            <td colspan="1" rowspan="1">
 
-This lock can be held by exactly one database session. No other sessions are granted any lock type on the object when an Exclusive lock is held, and conversely, the Exclusive lock will not be granted if any other type of lock is held in another session. The granted session has exclusive system access to the object. 
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Exclusive | This lock can be held by exactly one database session. No other sessions are granted any lock type on the object when an Exclusive lock is held, and conversely, the Exclusive lock will not be granted if any other type of lock is held in another session. The granted session has exclusive system access to the object. | 0 |
+| ExclusiveRead | When this lock is granted other database sessions may access the object for read-only access but no other sessions are granted any type of exclusive access. This is appropriate to use when the object should be restricted from any access other than read access | 1 |
+| ShareUpdate | When this lock is granted the object can be accessed for updating or reading by other sessions. When held, other sessions will be granted **ShareRead** or **ShareUpdate** locks for the same object. This lock prevents exclusive access to the object. This lock type is appropriate when the target object is to be modified in the current session and read and change access in other sessions should be allowed. | 2 |
+| ShareNoUpdate | When this lock is granted the object can be accessed only for reading by other sessions. When held, other sessions will be granted **ShareRead** or **ShareNoUpdate** locks for the same object. This lock prevents exclusive access and update access to the object. This lock type is appropriate when the target object should not be modified by any session but all sessions should be allowed to read the object. | 3 |
+| ShareRead | When this lock is granted the object can be accessed non-exclusively by other sessions. When held, other sessions will be granted **ExlusiveRead** , **ShareUpdate** , **ShareRead** , or **ShareNoUpdate** locks for the same object, so long as the lock requested does not conflict with another session's held lock. Alone, this lock prevents only **Exclusive** access. It is appropriate when the target object should not be locked exclusively by any one session. | 4 |
 
-0
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-ExclusiveRead
-</td>
-            <td colspan="1" rowspan="1">
-
-When this lock is granted other database sessions may access the object for read-only access but no other sessions are granted any type of exclusive access. This is appropriate to use when the object should be restricted from any access other than read access
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ShareUpdate
-</td>
-            <td colspan="1" rowspan="1">
-
-When this lock is granted the object can be accessed for updating or reading by other sessions. When held, other sessions will be granted **ShareRead** or **ShareUpdate** locks for the same object. This lock prevents exclusive access to the object. This lock type is appropriate when the target object is to be modified in the current session and read and change access in other sessions should be allowed.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ShareNoUpdate
-</td>
-            <td colspan="1" rowspan="1">
-
-When this lock is granted the object can be accessed only for reading by other sessions. When held, other sessions will be granted **ShareRead** or **ShareNoUpdate** locks for the same object. This lock prevents exclusive access and update access to the object. This lock type is appropriate when the target object should not be modified by any session but all sessions should be allowed to read the object. 
-</td>
-            <td colspan="1" rowspan="1">
-
-3
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ShareRead
-</td>
-            <td colspan="1" rowspan="1">
-
-When this lock is granted the object can be accessed non-exclusively by other sessions. When held, other sessions will be granted **ExlusiveRead** , **ShareUpdate** , **ShareRead** , or **ShareNoUpdate** locks for the same object, so long as the lock requested does not conflict with another session's held lock. Alone, this lock prevents only **Exclusive** access. It is appropriate when the target object should not be locked exclusively by any one session. 
-</td>
-            <td colspan="1" rowspan="1">
-
-4
-</td>
-          </tr>
-</table>
 
 Requirements
 

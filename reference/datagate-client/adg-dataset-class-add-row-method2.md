@@ -43,68 +43,19 @@ Exceptions
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
+
           <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
           <col span="1" style="WIDTH: 70%" />
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-ArgumentNullException 
-</td>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| ArgumentNullException | There is no prepared row to set active. **PrepareRow** should be called first to create a prepared row. |
+| ArgumentException | The prepared row either belongs to another table or already belongs to this table. |
+| ConstraintException | The addition invalidates a constraint. |
+| NullReferenceException | The value for *strFormat* specifies an invalid name. Use [ GetFormatName](adg-dataset-class-get-format-name-method.html) method to obtain the format name. |
+| NoNullAllowedException | The addition tries to put a null in a DataColumn where AllowDBNull is false |
 
-There is no prepared row to set active. **PrepareRow** should be called first to create a prepared row. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-ArgumentException 
-</td>
-            <td colspan="1" rowspan="1">
-
-The prepared row either belongs to another table or already belongs to this table. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ConstraintException 
-</td>
-            <td colspan="1" rowspan="1">
-
-The addition invalidates a constraint. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
-
-The value for *strFormat* specifies an invalid name. Use [ GetFormatName](adg-dataset-class-get-format-name-method.html) method to obtain the format name. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-NoNullAllowedException 
-</td>
-            <td colspan="1" rowspan="1">
-
-The addition tries to put a null in a DataColumn where AllowDBNull is false 
-</td>
-          </tr>
-</table>
 
 Remarks
 

@@ -30,91 +30,17 @@ Remarks
 **AdgObjectTypes** denote values which classify a database object. DCS sets the value of the **IAdgObject.AdgObjectType** property to one of these values. Currently, DCS supports libraries, files, and members only. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="10%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="39.99%" />
-            <col span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Directory
-</td>
-            <td colspan="1" rowspan="1">
 
-The object is a directory.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Directory | The object is a directory. | 68 |
+| File | The object is a file. | 70 |
+| Member | The object is a member. | 77 |
+| DataArea | The object is a data area. | 83 |
+| Catalog | Reserved value for internal DCS use only. | 89 |
 
-68
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-File
-</td>
-            <td colspan="1" rowspan="1">
-
-The object is a file.
-</td>
-            <td colspan="1" rowspan="1">
-
-70
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Member
-</td>
-            <td colspan="1" rowspan="1">
-
-The object is a member.
-</td>
-            <td colspan="1" rowspan="1">
-
-77
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-DataArea
-</td>
-            <td colspan="1" rowspan="1">
-
-The object is a data area.
-</td>
-            <td colspan="1" rowspan="1">
-
-83
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Catalog
-</td>
-            <td colspan="1" rowspan="1">
-
-Reserved value for internal DCS use only. 
-</td>
-            <td colspan="1" rowspan="1">
-
-89
-</td>
-          </tr>
-</table>
 
 Requirements
 

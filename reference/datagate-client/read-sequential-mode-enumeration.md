@@ -37,58 +37,17 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
 **ReadSequentialMode** defines values in which you can select one of the choices.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-            <colgroup span="1">
-              <col span="1" width="20%" style="FONT-WEIGHT: bold" />
-              <col span="1" width="60%" />
-              <col span="1" width="10%" />
-            </colgroup>
-            <tr>
-              <th>	Member</th>
-              <th>	Description</th>
-              <th>	Value</th>
-            </tr>
-            <tr>
-              <td>Current
-							</td>
-              <td>Read the current record.
-							</td>
-              <td>3
-							</td>
-            </tr>
-            <tr>
-              <td>First
-							</td>
-              <td>Read the first record.
-							</td>
-              <td>5
-							</td>
-            </tr>
-            <tr>
-              <td>Last
-							</td>
-              <td>Read the last record.
-							</td>
-              <td>6
-							</td>
-            </tr>
-            <tr>
-              <td>Next
-							</td>
-              <td>Read the next record.
-							</td>
-              <td>1
-							</td>
-            </tr>
-            <tr>
-              <td>Previous
-							</td>
-              <td>Read the previous record.
-							</td>
-              <td>2
-							</td>
-            </tr>
-</table>
+
+
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Current | Read the current record. | 3 |
+| First | Read the first record. | 5 |
+| Last | Read the last record. | 6 |
+| Next | Read the next record. | 1 |
+| Previous | Read the previous record. | 2 |
+
+
 
 Examples
 

@@ -41,41 +41,14 @@ Exceptions
 [ASNA.DataGate.Common.dgException](dgexception-class.html) is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of
-							<br />
-							dgException.Error</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEdbNODBNAME
-</td>
-            <td colspan="1" rowspan="1">
 
-The value specified by the *dbName* parameter is an empty string or does not refer to a valid registered database name.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of 							<br /> 							dgException.Error | Condition |
+| ---- | ---- |
+| dgEdbNODBNAME | The value specified by the *dbName* parameter is an empty string or does not refer to a valid registered database name. |
+| dgENOTSECURE | A password was not found for a database name registered to use password authentication. |
 
-dgENOTSECURE
-</td>
-            <td colspan="1" rowspan="1">
 
-A password was not found for a database name registered to use password authentication.
-</td>
-          </tr>
-</table>
 
 Remarks
 

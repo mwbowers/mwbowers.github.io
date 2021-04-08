@@ -17,59 +17,16 @@ keywords: how to, set program parameter list input values
 Converts an object or value type to a parameter list value.
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 50%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1" style="width: 494px">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="width: 494px">
 
-[ObjectToParm(ASNA.DataGate.DataLink.ProgParm, object)](as400program-class-object-to_parm-method4.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Converts an object or value type to a parameter list value provided with the parameter value to be set and the name or path of the program parameter object.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="width: 494px">
+| Overload List | Description |
+| ---- | ---- |
+| [ObjectToParm(ASNA.DataGate.DataLink.ProgParm, object)](as400program-class-object-to_parm-method4.html) | Converts an object or value type to a parameter list value provided with the parameter value to be set and the name or path of the program parameter object. |
+| [ObjectToParm(ASNA.DataGate.DataLink.ProgParm, object, int)](as400program-class-object-to_parm-method1.html) | Converts an object or value type to a parameter list value provided with the parameter value to be set, the name or path of the program parameter object, and the indices in the path to the parameter. |
+| [ObjectToParm(object, string)](as400program-class-object-to_parm-method3.html) | Converts an object or value type to a parameter list value provided with the name or path of the program parameter object and the indices in the path to the parameter. |
+| [ObjectToParm(object, string, int[])](as400program-class-object-to_parm-method2.html) | Converts an object or value type to a parameter list value provided with the parameter value to be set, the name of the program parameter, and the index of the occurrence to set. |
 
-[ObjectToParm(ASNA.DataGate.DataLink.ProgParm, object, int)](as400program-class-object-to_parm-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Converts an object or value type to a parameter list value provided with the parameter value to be set, the name or path of the program parameter object, and the indices in the path to the parameter.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="width: 494px">
-
-[ObjectToParm(object, string)](as400program-class-object-to_parm-method3.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Converts an object or value type to a parameter list value provided with the name or path of the program parameter object and the indices in the path to the parameter.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="width: 494px">
-
-[ObjectToParm(object, string, int[])](as400program-class-object-to_parm-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Converts an object or value type to a parameter list value provided with the parameter value to be set, the name of the program parameter, and the index of the occurrence to set.
-</td>
-          </tr>
-</table>
 
 See Also
 

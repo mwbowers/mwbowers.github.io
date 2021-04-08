@@ -15,32 +15,13 @@ Public Methods
 
 <br />
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <td colspan="1" rowspan="1">
 
-<img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ Commit](iadg-transaction-class-commit-methods.html) 
-</td>
-            <td colspan="1" rowspan="1">
+|      |      |
+| ---- | ---- |
+| <img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ Commit](iadg-transaction-class-commit-methods.html) | Overloaded. Accepts changes to the database that have been performed within the current transaction context. |
+| <img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ Rollback](iadg-transaction-class-rollback-method.html) | Cancels changes to the database that have been performed within the current transaction context. |
 
-Overloaded. Accepts changes to the database that have been performed within the current transaction context. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-<img alt="public property" src="images/public-method.gif" x-maintain-ratio="TRUE" width="15" height="11" border="0" /> [ Rollback](iadg-transaction-class-rollback-method.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Cancels changes to the database that have been performed within the current transaction context.
-</td>
-          </tr>
-</table>
 
 See Also
 

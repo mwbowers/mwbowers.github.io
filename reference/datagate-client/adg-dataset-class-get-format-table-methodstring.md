@@ -40,30 +40,13 @@ Exceptions
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-										Value of dgException.Error
-									</th>
-            <th colspan="1" rowspan="1">
-										Condition
-									</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The value of *strFormat* is not valid.
-</td>
-          </tr>
-</table>
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The value of *strFormat* is not valid. |
+
+
 
 Remarks
 

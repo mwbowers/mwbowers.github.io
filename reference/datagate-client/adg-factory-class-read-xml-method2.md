@@ -104,151 +104,43 @@ String. The pathname of a pre-existing database object container for the [ IAdgO
 Returns
 
 A new instance of **IAdgObject** . The underlying type of the **IAdgObject** instance is determined by the value of the *docObjectType* parameter, as given in the following table: 
-<table class="dtTABLE" id="Table4" style="border-spacing: 0px; x-cell-content-align: Top" height="0" cellspacing="0" x-use-null-cells="x-use-null-cells">
-            <colgroup span="1">
-              <col span="1" valign="top" style="WIDTH: 30%" />
-              <col span="1" style="WIDTH: 70%" />
-            </colgroup>
-            <tr>
-              <th colspan="1" rowspan="1">
-								Value of *docObjectType* </th>
-              <th colspan="1" rowspan="1">
-								Type of **IAdgObject**  returned by **ReadXml** </th>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
 
-Directory 
-</td>
-              <td colspan="1" rowspan="1">
 
-[IDirectory](idirectory-class.html) 
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
+| Value of *docObjectType* | Type of **IAdgObject**  returned by **ReadXml** |
+| ---- | ---- |
+| Directory | [IDirectory](idirectory-class.html) |
+| File | [IFileObject](ifile-object-class.html) |
+| Member | [IMember](imember-class.html) |
 
-File
-</td>
-              <td colspan="1" rowspan="1">
 
-[IFileObject](ifile-object-class.html) 
-</td>
-            </tr>
-            <tr>
-              <td colspan="1" rowspan="1">
-
-Member
-</td>
-              <td colspan="1" rowspan="1">
-
-[IMember](imember-class.html) 
-</td>
-            </tr>
-</table>
 
 Exceptions
 
 <br />
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" style="FONT-WEIGHT: bold" width="30%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							ExceptionType</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException 
-</td>
-            <td colspan="1" rowspan="1">
 
-The *cn* and/or *containerPath* parameters are null references. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| ExceptionType | Condition |
+| ---- | ---- |
+| NullReferenceException | The *cn* and/or *containerPath* parameters are null references. |
+| XmlSchemaException | An error occurred validating the DataGate XML schema. |
+| XmlException | An error occurred validating or loading the supplied XML document fragment. |
+| dgException | See table below. |
 
-XmlSchemaException
-</td>
-            <td colspan="1" rowspan="1">
 
-An error occurred validating the DataGate XML schema.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-XmlException
-</td>
-            <td colspan="1" rowspan="1">
-
-An error occurred validating or loading the supplied XML document fragment.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
-
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" style="FONT-WEIGHT: bold" width="20%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="height: 46px">
 
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1" style="height: 46px">
 
-**ReadXml** is not supported for the supplied value of *docObjectType* . 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Member | Description |
+| ---- | ---- |
+| dgEINVARG | **ReadXml** is not supported for the supplied value of *docObjectType* . |
+| dgErBADSRC | An attempt to create a logical database file failed because no valid base files were specified in the file definition. |
+| dgEmINVSQLOP | The **AdgConnection** specified is a connection to an SQL Server database provider, and DCS currently does not support the I **AdgObject** interface for the type specified by *docObjectType* for those providers. |
 
-dgErBADSRC 
-</td>
-            <td colspan="1" rowspan="1">
 
-An attempt to create a logical database file failed because no valid base files were specified in the file definition. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmINVSQLOP 
-</td>
-            <td colspan="1" rowspan="1">
-
-The **AdgConnection** specified is a connection to an SQL Server database provider, and DCS currently does not support the I **AdgObject** interface for the type specified by *docObjectType* for those providers. 
-</td>
-          </tr>
-</table>
 
 Remarks
 

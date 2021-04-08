@@ -65,74 +65,26 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" valign="top" style="FONT-WEIGHT: bold" width="20%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							ExceptionType</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-The [AdgConnection](adg-connection-class.html) reference or path name string used to create the **IAdgObject** instance were null.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| ExceptionType | Condition |
+| ---- | ---- |
+| NullReferenceException | The [AdgConnection](adg-connection-class.html) reference or path name string used to create the **IAdgObject** instance were null. |
+| dgException | See table below. |
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" valign="top" style="FONT-WEIGHT: bold" width="20%" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
 
-The lock specified by *ShareType* was not granted due to the lock being held by another session (see Remarks below).
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEmBUSYOBJ | The lock specified by *ShareType* was not granted due to the lock being held by another session (see Remarks below). |
+| dgEmNOTFND | The database object the **IAdgObject** represents does not exist or is unavailable. |
 
-dgEmNOTFND
-</td>
-            <td colspan="1" rowspan="1">
 
-The database object the **IAdgObject** represents does not exist or is unavailable.
-</td>
-          </tr>
-</table>
 
 Remarks
 

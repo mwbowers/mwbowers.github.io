@@ -14,38 +14,14 @@ Classes
 
 <br />
 
-<table class="dtTABLE" id="Table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH:70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Class</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[dgException](dgexception-class.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-The exception that is thrown by DCS to indicate procedural conditions, including errors.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Class | Description |
+| ---- | ---- |
+| [dgException](dgexception-class.html) | The exception that is thrown by DCS to indicate procedural conditions, including errors. |
+| [FieldType](field-type-class.html) | The details of a Field such as its type, length, precision, and scale. |
 
-[FieldType](field-type-class.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-The details of a Field such as its type, length, precision, and scale.
-</td>
-          </tr>
-</table>
 
 See Also
 

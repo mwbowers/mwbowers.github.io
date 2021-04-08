@@ -42,42 +42,14 @@ Exceptions
 [ASNA.DataGate.Common.dgException](dgexception-class.html) is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 10%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Value of
-							<br />
-							dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-The reference being assigned to *Connection* is null, or is an **AdgConnection** object whose [State](adg-connection-class-state-property.html) property is not equal to System.Data.ConnectionState.Open (see Remarks). 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of 							<br /> 							dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | The reference being assigned to *Connection* is null, or is an **AdgConnection** object whose [State](adg-connection-class-state-property.html) property is not equal to System.Data.ConnectionState.Open (see Remarks). |
+| dgEmINVSQLOP | The value of *Connection* is not a valid connection for use with As400Program. |
 
-dgEmINVSQLOP
-</td>
-            <td colspan="1" rowspan="1">
 
-The value of *Connection* is not a valid connection for use with As400Program. 
-</td>
-          </tr>
-</table>
 
 Remarks
 

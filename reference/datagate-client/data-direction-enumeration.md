@@ -34,75 +34,19 @@ Specifies the type of a program parameter.
 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
+
           <col span="1" width="10%" style="FONT-WEIGHT: bold" />
           <col span="1" width="35%" />
           <col span="1" width="8%" />
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Input
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Input | The parameter is an input parameter. | 1 |
+| InputOutput | The parameter is capable of both input and output. | 3 |
+| None | The parameter is capable of neither an input and output parameter. | 0 |
+| Output | The parameter is an output parameter. | 2 |
 
-The parameter is an input parameter.
-</td>
-            <td colspan="1" rowspan="1">
 
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-InputOutput 
-</td>
-            <td colspan="1" rowspan="1">
-
-The parameter is capable of both input and output.
-</td>
-            <td colspan="1" rowspan="1">
-
-3
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-None
-</td>
-            <td colspan="1" rowspan="1">
-
-The parameter is capable of neither an input and output parameter. 
-</td>
-            <td colspan="1" rowspan="1">
-
-0 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Output 
-</td>
-            <td colspan="1" rowspan="1">
-
-The parameter is an output parameter. 
-</td>
-            <td colspan="1" rowspan="1">
-
-2 
-</td>
-          </tr>
-</table>
 
 <br />
 

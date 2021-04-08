@@ -37,89 +37,26 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="table2" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1" style="height: 47px">
 
-Exception Type
-</th>
-            <th colspan="1" rowspan="1" style="height: 47px">
 
-Condition
-</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| NullReferenceException | *dbName* is a null reference. |
+| dgException | See table below. |
 
-NullReferenceException
-</td>
-            <td colspan="1" rowspan="1">
 
-*dbName* is a null reference.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgException
-</td>
-            <td colspan="1" rowspan="1">
-
-See table below.
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
 
-Value of <br /> dgException.Error
-</th>
-            <th colspan="1" rowspan="1">
 
-Condition
-</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of <br /> dgException.Error | Condition |
+| ---- | ---- |
+| dgEdbNODBNAME | *dbName* either:  - is the empty string, or - contains an invalid character, or - is not a registered database name, or - refers to improperly registered or damaged database name information.  Path delimiter characters ('/' and '\') are not permitted in database names, unless used with "*PUBLIC"; for example "*PUBLIC/MyDB" is a valid database name, but "Copyof/MyDB" is not a valid database name. Use the Database Manager tool to verify correct database name information. |
+| dgENOTSECURE | The registered database name was found, but contains insecure information. Use the Database Manager tool to verify correct database name information. |
 
-dgEdbNODBNAME
-</td>
-            <td colspan="1" rowspan="1">
 
-*dbName* either:
-
-- is the empty string, or
-- contains an invalid character, or
-- is not a registered database name, or
-- refers to improperly registered or damaged database name information.
-
-Path delimiter characters ('/' and '\') are not permitted in database names, unless used with "*PUBLIC"; for example "*PUBLIC/MyDB" is a valid database name, but "Copyof/MyDB" is not a valid database name. Use the Database Manager tool to verify correct database name information.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgENOTSECURE
-</td>
-            <td colspan="1" rowspan="1">
-
-The registered database name was found, but contains insecure information. Use the Database Manager tool to verify correct database name information.
-</td>
-          </tr>
-</table>
 
 Remarks
 
@@ -136,38 +73,14 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 <p>On Win32 platforms, database name information is found in the Windows registry under two keys:
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Database name type</th>
-            <th colspan="1" rowspan="1">
-							Windows registry key location</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Public
-</td>
-            <td colspan="1" rowspan="1">
 
-HKEY_LOCAL_MACHINE\SOFTWARE\ASNA\Acceler8-DB\CurrentVersion\Data Sources\*PUBLIC
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Database name type | Windows registry key location |
+| ---- | ---- |
+| Public | HKEY_LOCAL_MACHINE\SOFTWARE\ASNA\Acceler8-DB\CurrentVersion\Data Sources\*PUBLIC |
+| Private | HKEY_CURRENT_USER\Software\ASNA\Acceler8-DB\CurrentVersion\Databases |
 
-Private
-</td>
-            <td colspan="1" rowspan="1">
 
-HKEY_CURRENT_USER\Software\ASNA\Acceler8-DB\CurrentVersion\Databases
-</td>
-          </tr>
-</table>
 
 <br />
 

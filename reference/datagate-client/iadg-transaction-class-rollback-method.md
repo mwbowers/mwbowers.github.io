@@ -30,86 +30,27 @@ Cancel changes to the database that have been performed within the current trans
 
 Exceptions
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="30%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1" style="height: 23px">
-							Value of dgException.Error
-						</th>
-            <th colspan="1" rowspan="1" style="height: 23px">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEccIORECERR
-</td>
-            <td colspan="1" rowspan="1">
 
-Recoverable I/O error occurred in commit/rollback operation. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEccIORECERR | Recoverable I/O error occurred in commit/rollback operation. |
+| dgEccIORECERR | Unrecoverable I/O error occurred in commit/rollback operation. |
+| dgEUNKNOWN | An unknown error (unpublished by the data provider) occurred. |
+| dgEsAS400ERROR | The database server encountered a system error. Details are available via the SystemError and Text fields of [dgException](dgexception-class.html). For IBM i database providers, further details are available in the job log corresponding to the database connection. |
 
-dgEccIORECERR
-</td>
-            <td colspan="1" rowspan="1">
 
-Unrecoverable I/O error occurred in commit/rollback operation. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEUNKNOWN 
-</td>
-            <td colspan="1" rowspan="1">
-
-An unknown error (unpublished by the data provider) occurred. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database server encountered a system error. Details are available via the SystemError and Text fields of [dgException](dgexception-class.html). For IBM i database providers, further details are available in the job log corresponding to the database connection.
-</td>
-          </tr>
-</table>
 
 Remarks
 

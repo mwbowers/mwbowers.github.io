@@ -43,147 +43,21 @@ Used by the [DateTime](field-type-class-date-time-property.html) property of [Fi
 <span> **DateTimeFormat** </span> defines values in which you can select one of the choices. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col align="middles" span="1" width="8%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="40%" />
-            <col span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-DMY
-</td>
-            <td colspan="1" rowspan="1">
 
-Day/Month/Year. For date, dd/mm/yy.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| DMY | Day/Month/Year. For date, dd/mm/yy. | 8 |
+| EUR | IBM European Standard. For date, dd.mm.yyyy. For time, hh:mm:ss. | 4 |
+| HMS | Hours/Minutes/Seconds. For time, hh:mm:ss. | 10 |
+| ISO | International Standards Organization. For date, yyyy-mm-dd. For time, hh:mm:ss. | 2 |
+| JIS | Japanese Industrial Standard Christian Era. For date, yyyy-mm-dd. For time, hh:mm:ss. | 5 |
+| JUL | Julian. For date, yy/ddd. | 9 |
+| MDY | Month/Day/Year. For date, mm/dd/yy. | 7 |
+| USA | IBM USA Standard. For date, mm/dd/yyyy. For time, hh:mm AM. | 3 |
+| YMD | Year/Month/Day. For date, yy/mm/dd. | 6 |
 
-8
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-EUR
-</td>
-            <td colspan="1" rowspan="1">
-
-IBM European Standard. For date, dd.mm.yyyy. For time, hh:mm:ss.
-</td>
-            <td colspan="1" rowspan="1">
-
-4
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="height: 47px">
-
-HMS
-</td>
-            <td colspan="1" rowspan="1" style="height: 47px">
-
-Hours/Minutes/Seconds. For time, hh:mm:ss.
-</td>
-            <td colspan="1" rowspan="1" style="height: 47px">
-
-10
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-ISO
-</td>
-            <td colspan="1" rowspan="1">
-
-International Standards Organization. For date, yyyy-mm-dd. For time, hh:mm:ss.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-JIS
-</td>
-            <td colspan="1" rowspan="1">
-
-Japanese Industrial Standard Christian Era. For date, yyyy-mm-dd. For time, hh:mm:ss.
-</td>
-            <td colspan="1" rowspan="1">
-
-5
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-JUL
-</td>
-            <td colspan="1" rowspan="1">
-
-Julian. For date, yy/ddd.
-</td>
-            <td colspan="1" rowspan="1">
-
-9
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-MDY
-</td>
-            <td colspan="1" rowspan="1">
-
-Month/Day/Year. For date, mm/dd/yy.
-</td>
-            <td colspan="1" rowspan="1">
-
-7
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-USA
-</td>
-            <td colspan="1" rowspan="1">
-
-IBM USA Standard. For date, mm/dd/yyyy. For time, hh:mm AM.
-</td>
-            <td colspan="1" rowspan="1">
-
-3
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-YMD
-</td>
-            <td colspan="1" rowspan="1">
-
-Year/Month/Day. For date, yy/mm/dd.
-</td>
-            <td colspan="1" rowspan="1">
-
-6
-</td>
-          </tr>
-</table>
 
 Requirements
 

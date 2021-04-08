@@ -36,49 +36,14 @@ When set to the <code>Manual</code> value, record locking in the opened file wil
 When set to the <code>Auto</code> value, record locking occurs automatically in <span> **FileAdapter** </span> methods, unless overridden by the [LockRequest](lock-request-enumeration.html) parameter. Also, locked records are automatically unlocked when another record is accessed.
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="10%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="30%" />
-            <col span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1" style="height: 43px">
 
-Auto 
-</td>
-            <td colspan="1" rowspan="1" style="height: 43px">
 
-The file will be locked automatically. 
-</td>
-            <td colspan="1" rowspan="1" style="height: 43px">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Auto | The file will be locked automatically. | 1 |
+| Manual | The file will be locked manually. | 0 |
 
-1 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Manual 
-</td>
-            <td colspan="1" rowspan="1">
-
-The file will be locked manually. 
-</td>
-            <td colspan="1" rowspan="1">
-
-0 
-</td>
-          </tr>
-</table>
 
 Examples
 

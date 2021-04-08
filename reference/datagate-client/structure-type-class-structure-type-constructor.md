@@ -43,30 +43,13 @@ Parameters
 
 Exceptions
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold;WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-ArgumentException
-</td>
-            <td colspan="1" rowspan="1">
 
-*mbrs* contains no valid parameter type objects ( **ProgParmType** or **StructureType** ). The Message property of the exception may provide further details.
-</td>
-          </tr>
-</table>
+| Exception Type | Condition |
+| ---- | ---- |
+| ArgumentException | *mbrs* contains no valid parameter type objects ( **ProgParmType** or **StructureType** ). The Message property of the exception may provide further details. |
+
+
 
 Remarks
 

@@ -25,50 +25,15 @@ keywords: how to, set automatic database transaction options
 Overloaded method that begins an automatic database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) with combinations of transaction locking level, name, and command options parameters specified.
 <br />
 
-<table class="dtTABLE" id="Table5" style="border-spacing: 0px; x-cell-content-align: Top" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 40%" />
-            <col span="1" style="WIDTH: 50%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Overload List
-						</th>
-            <th colspan="1" rowspan="1">
-							Description
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[BeginAutoTransaction(TransactionLevel, string)](adg-connection-class-begin-auto-transaction-method1.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Begins an automatic database transaction creating an instance of an **IAdgTransaction** object with the options and lock levels specified.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Overload List | Description |
+| ---- | ---- |
+| [BeginAutoTransaction(TransactionLevel, string)](adg-connection-class-begin-auto-transaction-method1.html) | Begins an automatic database transaction creating an instance of an **IAdgTransaction** object with the options and lock levels specified. |
+| [BeginAutoTransaction(TransactionLevel, string, string)](adg-connection-class-begin-auto-transaction-method2.html) | Begins an automatic database transaction creating an instance of an **IAdgTransaction** object with the name, options, and lock level specified. |
+| [BeginAutoTransaction(string, string)](adg-connection-class-begin-auto-transaction-method3.html) | Begins an automatic database transaction creating an instance of an **IAdgTransaction** object with the name and options specified |
 
-[BeginAutoTransaction(TransactionLevel, string, string)](adg-connection-class-begin-auto-transaction-method2.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-Begins an automatic database transaction creating an instance of an **IAdgTransaction** object with the name, options, and lock level specified.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[BeginAutoTransaction(string, string)](adg-connection-class-begin-auto-transaction-method3.html) 
-</td>
-            <td colspan="1" rowspan="1">
-
-Begins an automatic database transaction creating an instance of an **IAdgTransaction** object with the name and options specified
-</td>
-          </tr>
-</table>
 
 See Also
 

@@ -26,53 +26,15 @@ Many common database application functions are facilitated by DCS for Visual Stu
 All of these tasks and more can be accomplished with the help of a few DCS objects.
 <br />
 
-<table class="dtTABLE" id="table3" style="border-spacing: 0px" cellspacing="0" x-use-null-cells="x-use-null-cells">
-          <colgroup span="1">
-            <col span="1" style="WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Task
-						</th>
-            <th colspan="1" rowspan="1">
-							Object
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-[File/data access](usingthe-file-adapter-class.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-[ASNA.DataGate.Client.FileAdapter](file-adapter-class.html) and [ASNA.DataGate.Client.AdgDataSet](adg-dataset-class.html) classes provide the core functionality. [AdgDataSet](adg-dataset-class.html) inherits <span>System.Data.DataSet</span> and its rich ADO.NET utility.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Task | Object |
+| ---- | ---- |
+| [File/data access](usingthe-file-adapter-class.html) | [ASNA.DataGate.Client.FileAdapter](file-adapter-class.html) and [ASNA.DataGate.Client.AdgDataSet](adg-dataset-class.html) classes provide the core functionality. [AdgDataSet](adg-dataset-class.html) inherits <span>System.Data.DataSet</span> and its rich ADO.NET utility. |
+| [Manage database connections ](dcsManagingDatabaseConnectionsMain.html) | The [ASNA.DataGate.Client.AdgConnection](adg-connection-class.html) and [ASNA.DataGate.Providers.SourceProfile](source-profile-class.html) classes manage database connections and connection parameters including DataGate database names and transaction processing. |
+| [Stored procedure call ](calling-stored-procedures.html) | Functionality provided by: - [ASNA.DataGate.Client.As400Program](as400program-class.html) - [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) - [ASNA.DataGate.DataLink.ProgParmType](prog-parm-type-class.html) |
 
-[Manage database connections ](dcsManagingDatabaseConnectionsMain.html) 
-</td>
-            <td colspan="1" rowspan="1">
 
-The [ASNA.DataGate.Client.AdgConnection](adg-connection-class.html) and [ASNA.DataGate.Providers.SourceProfile](source-profile-class.html) classes manage database connections and connection parameters including DataGate database names and transaction processing.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-[Stored procedure call ](calling-stored-procedures.html) 
-</td>
-            <td colspan="1" rowspan="1">
-							Functionality provided by:
-- [ASNA.DataGate.Client.As400Program](as400program-class.html)
-- [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)
-- [ASNA.DataGate.DataLink.ProgParmType](prog-parm-type-class.html)
-
-</td>
-          </tr>
-</table>
 
 <br />
 

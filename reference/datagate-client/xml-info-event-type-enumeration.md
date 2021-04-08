@@ -32,63 +32,15 @@ Remarks
 The [XmlInfoEventHandler](xml-info-event-handler-delegate.html) delegate is passed a value of this type, as a field of the [ XmlInfoEventArgs](xml-info-event-args-class.html) object. A program can use this value to discriminate the information provided by **IAdgObject.WriteXml** and **AdgFactory.ReadXml** . 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="10%" style="FONT-WEIGHT: bold; TEXT-ALIGN: left" />
-            <col span="1" width="60%" />
-            <col span="1" width="10%" style="TEXT-ALIGN: center" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-InfoL1 
-</td>
-            <td colspan="1" rowspan="1">
 
-The information provided is of the most critical level. Events in this class include the verification of XML elements describing the object, database object creation, and skipped duplicate object exceptions. 
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| InfoL1 | The information provided is of the most critical level. Events in this class include the verification of XML elements describing the object, database object creation, and skipped duplicate object exceptions. | 1 |
+| InfoL2 | The information provided is non-critical. Events such as completion of element processing and enumeration of container contents are given at this level. | 2 |
+| InfoDebug | The information provided is for system debugging only. This value denotes information useful for development debugging sessions. | 4 |
 
-1 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-InfoL2 
-</td>
-            <td colspan="1" rowspan="1">
-
-The information provided is non-critical. Events such as completion of element processing and enumeration of container contents are given at this level. 
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-InfoDebug 
-</td>
-            <td colspan="1" rowspan="1">
-
-The information provided is for system debugging only. This value denotes information useful for development debugging sessions. 
-</td>
-            <td colspan="1" rowspan="1">
-
-4
-</td>
-          </tr>
-</table>
 
 ### Requirements
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

@@ -52,273 +52,30 @@ Packed, zoned and binary types are numeric fields containing decimal numbers whi
 <span> **DataTypes** </span> defines values in which you can select one of the choices. 
 Members
 
-<table class="dtTABLE" id="Table3" cellspacing="0" width="85%">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold" width="10%" />
-            <col span="1" width="40%" />
-            <col align="middles" span="1" width="5%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Member</th>
-            <th colspan="1" rowspan="1">
-							Description</th>
-            <th colspan="1" rowspan="1">
-							Value</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Binary
-</td>
-            <td colspan="1" rowspan="1">
 
-Field is binary.
-</td>
-            <td colspan="1" rowspan="1">
+| Member | Description | Value |
+| ---- | ---- | ---- |
+| Binary | Field is binary. | 4 |
+| Boolean | Field is a Boolean, true/false. | 15 |
+| Char | Field is character. | 1 |
+| Date | Field is a date. | 7 |
+| DBCS | Field is a double byte character field. | 12 |
+| DontCare | Field is of any type. | 14 |
+| Float | Field is float. | 5 |
+| Hex | Field is hexadecimal. | 10 |
+| Integer | Field is an integer. | 6 |
+| MaxType | The total number of valid values for the Type property. | 17 |
+| NoType | Field has no type. | 0 |
+| Packed | Field is packed. | 2 |
+| Print | Field is a print field. | 11 |
+| Structured | Field is structured. | 13 |
+| Time | Field is time. | 8 |
+| Timestamp | Field is a timestamp. | 9 |
+| Unicode | Field is a Unicode data type. | 16 |
+| Zoned | Field is packed. | 3 |
 
-4
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-Boolean
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is a Boolean, true/false.
-</td>
-            <td colspan="1" rowspan="1">
-
-15
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Char
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is character.
-</td>
-            <td colspan="1" rowspan="1">
-
-1
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Date
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is a date. 
-</td>
-            <td colspan="1" rowspan="1">
-
-7
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-DBCS 
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is a double byte character field. 
-</td>
-            <td colspan="1" rowspan="1">
-
-12
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-DontCare
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is of any type.
-</td>
-            <td colspan="1" rowspan="1">
-
-14
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Float 
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is float.
-</td>
-            <td colspan="1" rowspan="1">
-
-5
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Hex 
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is hexadecimal.
-</td>
-            <td colspan="1" rowspan="1">
-
-10
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Integer
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is an integer. 
-</td>
-            <td colspan="1" rowspan="1">
-
-6
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-MaxType
-</td>
-            <td colspan="1" rowspan="1">
-
-The total number of valid values for the Type property. 
-</td>
-            <td colspan="1" rowspan="1">
-
-17
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-NoType
-</td>
-            <td colspan="1" rowspan="1">
-
-Field has no type.
-</td>
-            <td colspan="1" rowspan="1">
-
-0
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Packed
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is packed.
-</td>
-            <td colspan="1" rowspan="1">
-
-2
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Print
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is a print field. 
-</td>
-            <td colspan="1" rowspan="1">
-
-11
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Structured
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is structured.
-</td>
-            <td colspan="1" rowspan="1">
-
-13
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Time
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is time.
-</td>
-            <td colspan="1" rowspan="1">
-
-8
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Timestamp
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is a timestamp.
-</td>
-            <td colspan="1" rowspan="1">
-
-9
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Unicode
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is a Unicode data type. 
-</td>
-            <td colspan="1" rowspan="1">
-
-16
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-Zoned
-</td>
-            <td colspan="1" rowspan="1">
-
-Field is packed.
-</td>
-            <td colspan="1" rowspan="1">
-
-3
-</td>
-          </tr>
-</table>
 
 Requirements
 

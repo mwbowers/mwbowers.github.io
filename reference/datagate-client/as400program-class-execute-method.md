@@ -32,110 +32,29 @@ Exceptions
 
 <br />
 
-<table class="dtTABLE" id="table2" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Exception Type
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-InvalidOperationException 
-</td>
-            <td colspan="1" rowspan="1">
 
-The [ProgramPath](as400program-class-program-path-property.html) property has not been set or contains a zero-length string. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Exception Type | Condition |
+| ---- | ---- |
+| InvalidOperationException | The [ProgramPath](as400program-class-program-path-property.html) property has not been set or contains a zero-length string. |
+| dgException | See table below. |
 
-dgException 
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below. 
-</td>
-          </tr>
-</table>
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
 
-<table class="dtTABLE" id="Table5" x-use-null-cells="x-use-null-cells" style="border-spacing: 0px;     x-cell-content-align: Top" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" style="FONT-WEIGHT: bold; WIDTH: 20%" />
-            <col span="1" style="WIDTH: 70%" />
-          </colgroup>
-          <tr valign="top">
-            <th colspan="1" rowspan="1">
-							Value of
-							<br />
-							dgException.Error
-						</th>
-            <th colspan="1" rowspan="1">
-							Condition
-						</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEpMEMEXCEPTION 
-</td>
-            <td colspan="1" rowspan="1">
 
-An IBM i memory exception occurred (an exception in the MCH36xx series). Generally this indicates a bad pointer in the called program. Examine the job log for details. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of 							<br /> 							dgException.Error | Condition |
+| ---- | ---- |
+| dgEpMEMEXCEPTION | An IBM i memory exception occurred (an exception in the MCH36xx series). Generally this indicates a bad pointer in the called program. Examine the job log for details. |
+| dgEpPGMNOTFND | The value specified for the **ProgramPath** property does not refer to a valid program object. |
+| dgEINVARG | The value specified for the **ProgramPath** property is not a valid database object path (did you forget a library name or *LIBL?). |
+| dgEpPGMERR | The number of parameters in the parameter list exceeds the maximum allowed by DataGate. Currently the maximum is 36. |
+| dgEsAS400ERROR | The IBM i server encountered a system error. Details may be available via the [ SystemError](dgexception-class-system-error-field.html) and [Text](disconnectingfroma-database.html) fields of dgException. |
 
-dgEpPGMNOTFND 
-</td>
-            <td colspan="1" rowspan="1">
 
-The value specified for the **ProgramPath** property does not refer to a valid program object. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEINVARG 
-</td>
-            <td colspan="1" rowspan="1">
-
-The value specified for the **ProgramPath** property is not a valid database object path (did you forget a library name or *LIBL?). 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEpPGMERR 
-</td>
-            <td colspan="1" rowspan="1">
-
-The number of parameters in the parameter list exceeds the maximum allowed by DataGate. Currently the maximum is 36. 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR 
-</td>
-            <td colspan="1" rowspan="1">
-
-The IBM i server encountered a system error. Details may be available via the [ SystemError](dgexception-class-system-error-field.html) and [Text](disconnectingfroma-database.html) fields of dgException. 
-</td>
-          </tr>
-</table>
 
 Remarks
 

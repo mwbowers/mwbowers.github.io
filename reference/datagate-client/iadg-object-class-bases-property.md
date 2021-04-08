@@ -33,84 +33,27 @@ Property Value
 **String** array. The **Length** of the array is equal to the number of base objects and may be no greater than **ASNA.DataGate.Common.MaxBaseFiles** . 
 Exceptions
 
-<table class="dtTABLE" id="Table3" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="30%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							ExceptionType</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgException
-</td>
-            <td colspan="1" rowspan="1">
 
-See table below.
-</td>
-          </tr>
-</table>
+| ExceptionType | Condition |
+| ---- | ---- |
+| dgException | See table below. |
+
+
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the <span>dgException.Error</span> property.
 <br />
 
-<table class="dtTABLE" id="Table2" cellspacing="0">
-          <colgroup span="1">
-            <col span="1" width="20%" style="FONT-WEIGHT: bold" />
-            <col span="1" width="70%" />
-          </colgroup>
-          <tr>
-            <th colspan="1" rowspan="1">
-							Value of dgException.Error</th>
-            <th colspan="1" rowspan="1">
-							Condition</th>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
 
-dgEINVARG
-</td>
-            <td colspan="1" rowspan="1">
 
-Reading the value of **Bases** caused a database query for base path names but the path name of the database object represented by **IAdgObject** (specified when **IAdgObject** was created) does not name a valid database object or names an object type that cannot have base objects.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
+| Value of dgException.Error | Condition |
+| ---- | ---- |
+| dgEINVARG | Reading the value of **Bases** caused a database query for base path names but the path name of the database object represented by **IAdgObject** (specified when **IAdgObject** was created) does not name a valid database object or names an object type that cannot have base objects. |
+| dgEmNOOBJAUTH | Reading the value of **Bases** caused a database query for base path names but the current session does not have "operational" authority to the object represented by **IAdgObject.** |
+| dgEmBUSYOBJ | Reading the value of **Bases** caused a database query for base path names but the database provider could not obtain a shared-read lock for the object represented by **IAdgObject** in the current session. |
+| dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
 
-dgEmNOOBJAUTH
-</td>
-            <td colspan="1" rowspan="1">
 
-Reading the value of **Bases** caused a database query for base path names but the current session does not have "operational" authority to the object represented by **IAdgObject.** 
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEmBUSYOBJ
-</td>
-            <td colspan="1" rowspan="1">
-
-Reading the value of **Bases** caused a database query for base path names but the database provider could not obtain a shared-read lock for the object represented by **IAdgObject** in the current session.
-</td>
-          </tr>
-          <tr>
-            <td colspan="1" rowspan="1">
-
-dgEsAS400ERROR
-</td>
-            <td colspan="1" rowspan="1">
-
-The database provider encountered a system-level error. Details provided in the **dgException.Message** property.
-</td>
-          </tr>
-</table>
 
 Remarks
 
