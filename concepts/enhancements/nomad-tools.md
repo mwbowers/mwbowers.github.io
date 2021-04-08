@@ -42,8 +42,8 @@ Typically, `.cs` C# source files will have:
 | Property                 | Value
 | ------------------------ | --- 
 | Build Action             | None
-| Copy to Output Directory | AdgFileUsageGenerator
-| Custom Tool              | (blank)
+| Copy to Output Directory | Do not copy
+| Custom Tool              | AdgFileUsageGenerator
 
 When a C# Project is built, the different source files are checked for changes. When source file changes, the actions and/or Custom Tools associated with each file run.
 
