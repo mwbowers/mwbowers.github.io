@@ -45,10 +45,10 @@ Note that the lowest print quality (Draft) results in the fast print mode, while
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />
-      [PrintDevAttr Class Members](print-dev-attr-members.html)
+[PrintDevAttr Class Members](print-dev-attr-members.html)
       <br />System.Drawing.Printing.PrinterResolutionKind 
 Enumeration
       <br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)

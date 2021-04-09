@@ -69,10 +69,10 @@ Note that the text area may not be supported by all database providers and strin
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

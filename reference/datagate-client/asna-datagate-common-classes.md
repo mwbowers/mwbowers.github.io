@@ -25,6 +25,6 @@ keywords: classes [DCS 16.0 ASNA.DataGate.Common
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
 

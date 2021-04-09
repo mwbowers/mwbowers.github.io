@@ -31,8 +31,8 @@ keywords: properties [DCS 16.0 FileOpenAttr class
 
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [AdgDataSet.FormatIDs Property](adg-dataset-class-formatids-property.html)
+[AdgDataSet.FormatIDs Property](adg-dataset-class-formatids-property.html)
 

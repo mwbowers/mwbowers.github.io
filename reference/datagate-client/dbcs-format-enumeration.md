@@ -56,12 +56,12 @@ The <span> **DbcsFormat** </span> enumerated constant defines values on whether 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-        [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
         <br />
-        [Dbcs Property](field-type-class-dbcs-property.html)
+[Dbcs Property](field-type-class-dbcs-property.html)
         <br />
-        [FieldType Class](field-type-class.html)
+[FieldType Class](field-type-class.html)
         <br />
-        [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

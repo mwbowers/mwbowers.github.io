@@ -94,12 +94,12 @@ The <span>sp</span> parameter is used to construct a new SourceProfile instance,
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
 ## See Also
 
-<dl />
+
       <span>
-        [AdgAutoTransaction Class](dcsAdgAutoTransactionClass.html)
+[AdgAutoTransaction Class](dcsAdgAutoTransactionClass.html)
         <br />
-        [AdgAutoTransaction Members](dcsAdgAutoTransactionMembers.html)
+[AdgAutoTransaction Members](dcsAdgAutoTransactionMembers.html)
         <br />
-        [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       </span>
 

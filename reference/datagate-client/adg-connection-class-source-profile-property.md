@@ -75,16 +75,16 @@ Note that changing the value of this property, or changing the object referenced
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [State Method](adg-connection-class-state-property.html)
+[State Method](adg-connection-class-state-property.html)
       <br />
-      [SourceProfile Class](source-profile-class.html)
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

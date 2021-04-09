@@ -11,7 +11,7 @@ Returns an object of a specific type from the program parameter list provided wi
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **Public object ParmToObject(
-   [ASNA.DataGate.Client](DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a> Parameter,
+[ASNA.DataGate.Client](DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a> Parameter,
    System.Type ReturnType
 );** 
       </pre>
@@ -53,10 +53,10 @@ Returns an object of a specific type from the program parameter list provided wi
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDataArea Class](idataarea-class.html)
+
+[IDataArea Class](idataarea-class.html)
       <br />
-      [IDataArea Class Members](dcsIDataAreaMembers.html)
+[IDataArea Class Members](dcsIDataAreaMembers.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

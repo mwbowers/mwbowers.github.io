@@ -23,15 +23,15 @@ After database connection and access are complete, applications *must* disconnec
 
 Whether you use <span> **AdgConnection.Close** </span> or <span> **AdgConnection.Dispose** </span> is a matter of preference since they perform the same task of disconnecting the database and releasing unmanaged resources. Note that <span> **AdgConnection.Dispose** </span> implements the conventional <span> **System.IDisposable** </span> interface for **AdgConnection** . 
 ## See Also
-<dl />
+
       <span>
-        [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       </span>
       <br />
-      [AdgConnection.Close Method](adg-connection-class-close-method.html)
+[AdgConnection.Close Method](adg-connection-class-close-method.html)
       <br />
-      [AdgConnection.Dispose Method](adg-connection-class-dispose-method.html)
+[AdgConnection.Dispose Method](adg-connection-class-dispose-method.html)
       <br />
-      [Connecting to a Database](connectingtoa-database.html)
+[Connecting to a Database](connectingtoa-database.html)
       <br />
 

@@ -77,12 +77,12 @@ The database object's authorization set can be changed by assigning a value to *
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AuthorityEntry Class](authority-entry-class.html)
+[AuthorityEntry Class](authority-entry-class.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

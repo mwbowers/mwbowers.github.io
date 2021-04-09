@@ -64,6 +64,6 @@ keywords: IAdgObject class, all members
 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
 

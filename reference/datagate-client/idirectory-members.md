@@ -39,12 +39,12 @@ keywords: IDirectory class, all members
 
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgEnumerator Delegate](adg-enumerator-delegate.html)
+[AdgEnumerator Delegate](adg-enumerator-delegate.html)
       <br />
-      [RepairOptions Enumeration](repair-options-enumeration.html)
+[RepairOptions Enumeration](repair-options-enumeration.html)
 

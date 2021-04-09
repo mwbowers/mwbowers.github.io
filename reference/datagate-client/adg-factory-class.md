@@ -56,20 +56,20 @@ The **AdgFactory** class provides only static methods and is not intended to be 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgFactory Members](adg-factory-members.html)
+
+[AdgFactory Members](adg-factory-members.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [ILibraryList Class](ilibrary-list-class.html)
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

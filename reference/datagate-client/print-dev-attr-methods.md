@@ -23,6 +23,6 @@ For additional information see [PrintDevAttr Overview](print-dev-attr-class.html
 
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
 

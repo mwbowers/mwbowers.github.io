@@ -55,14 +55,14 @@ Returns<span> false</span> if <span> *obj* </span> refers to a null instance. Ot
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
       <br />
-      [SourceProfile Property](adg-connection-class-source-profile-property.html)
+[SourceProfile Property](adg-connection-class-source-profile-property.html)
       <br />
-      [op_Equality Method](source-profile-classop-equality-method.html)
+[op_Equality Method](source-profile-classop-equality-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

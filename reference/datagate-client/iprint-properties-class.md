@@ -50,10 +50,10 @@ Print files in DCS may have fields with an associated print control object. Thes
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IPrintProperties Members](iprint-properties-members.html) <br />
-	  [FileAdapter Class](file-adapter-class.html)<br />
-	  [GetPrintProperties Method](file-adapter-class-get-print-properties-method.html)<br />
-	  [Open Method](file-adapter-class-open-method.html) <br />
-	  [ASNA.DataGate.Providers.Namespace](datagate-providers-namespace.html)
+
+[IPrintProperties Members](iprint-properties-members.html) <br />
+[FileAdapter Class](file-adapter-class.html)<br />
+[GetPrintProperties Method](file-adapter-class-get-print-properties-method.html)<br />
+[Open Method](file-adapter-class-open-method.html) <br />
+[ASNA.DataGate.Providers.Namespace](datagate-providers-namespace.html)
 

@@ -26,10 +26,10 @@ Accept changes to the database that have been performed within the current trans
 
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [IAdgTransaction Class Members](iadg-transaction-members.html)
+[IAdgTransaction Class Members](iadg-transaction-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

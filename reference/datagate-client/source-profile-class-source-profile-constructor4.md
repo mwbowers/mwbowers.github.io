@@ -28,7 +28,7 @@ Constructs an instance of [SourceProfile](source-profile-class.html) that is an 
  *sp* 
         </dt>
         <dd>
-          [SourceProfile](source-profile-class.html). The **SourceProfile** 
+[SourceProfile](source-profile-class.html). The **SourceProfile** 
 						to be copied by the constructed object.
 					</dd>
 </dl>
@@ -56,9 +56,9 @@ All public properties of the constructed object have the same value as the copie
 ## See Also
 
 [SourceProfile Class](source-profile-class.html) <br />
-        [SourceProfile Class Members](source-profile-members.html)<br />
-		[Clone Method](source-profile-class-clone-method.html)<br />
-		[DatabaseName Property](source-profile-class-database-name-property.html)<br />
-		[Equals Method](source-profile-class-equals-method.html)<br />
-		[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[SourceProfile Class Members](source-profile-members.html)<br />
+[Clone Method](source-profile-class-clone-method.html)<br />
+[DatabaseName Property](source-profile-class-database-name-property.html)<br />
+[Equals Method](source-profile-class-equals-method.html)<br />
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

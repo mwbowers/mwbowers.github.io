@@ -25,8 +25,8 @@ keywords: classes [DCS 16.0 ASNA.DataGate.Providers
 
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [Class Library](class-library-main.html)
+[Class Library](class-library-main.html)
 

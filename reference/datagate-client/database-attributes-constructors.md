@@ -24,6 +24,6 @@ keywords: constructors [DCS 16.0 DatabaseAttributes class
 
 ## See Also
 
-<dl />
-      [DatabaseAttributes Class](dcsDatabaseAttributesClass.html)
+
+[DatabaseAttributes Class](dcsDatabaseAttributesClass.html)
 

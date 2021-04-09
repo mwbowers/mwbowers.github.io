@@ -56,7 +56,7 @@ keywords: enumerations [DCS 16.0 WaitOptions
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IAdgObject.Lock Method](iadg-object-class-lock-method.html) <br />
-	  [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[IAdgObject.Lock Method](iadg-object-class-lock-method.html) <br />
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

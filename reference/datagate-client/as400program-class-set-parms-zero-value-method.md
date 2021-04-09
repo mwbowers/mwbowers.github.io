@@ -41,8 +41,8 @@ Use **SetParmsZeroValue** when a program has a large number of input parameters 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
       [
 					As400Program Class Members](as400program-members.html)

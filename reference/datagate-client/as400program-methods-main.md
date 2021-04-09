@@ -40,12 +40,12 @@ keywords: As400Program class, methods
 
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
 

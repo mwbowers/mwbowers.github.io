@@ -54,8 +54,8 @@ Xml representing the **PrintDevAttr** class.
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

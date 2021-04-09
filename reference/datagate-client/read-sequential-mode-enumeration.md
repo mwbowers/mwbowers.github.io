@@ -167,14 +167,14 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
       <span>
-        [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
         <br />
       </span>
       <span>
-        [ReadSequential Method](file-adapter-class-read-sequential-method.html)
+[ReadSequential Method](file-adapter-class-read-sequential-method.html)
       </span>
 

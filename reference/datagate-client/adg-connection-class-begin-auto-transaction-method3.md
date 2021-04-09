@@ -78,21 +78,21 @@ Automatic transactions can be used when an application expects the behavior of *
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
       <br />
       [BeginTransaction 
 					Method](adg-connection-class-begin-transaction-method-main.html)
       <br />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [Commit Method](iadg-transaction-class-commit-methods.html)
+[Commit Method](iadg-transaction-class-commit-methods.html)
       <br />
-      [Name Property](iadg-transaction-class-name-property.html)
+[Name Property](iadg-transaction-class-name-property.html)
       <br />
-      [Rollback Method](iadg-transaction-class-rollback-method.html)
+[Rollback Method](iadg-transaction-class-rollback-method.html)
       <br />
       [TransactionLevel 
 					Property](iadg-transaction-class-transaction-level-property.html)
@@ -100,5 +100,5 @@ Automatic transactions can be used when an application expects the behavior of *
       [ASNA.DataGate.Common.TransactionLevel 
 					Enumeration](transaction-level-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

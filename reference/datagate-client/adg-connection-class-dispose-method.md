@@ -46,15 +46,15 @@ Note that you must explicitly call either the [ Close](adg-connection-class-clos
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
       <br />
-      [Close Method](adg-connection-class-close-method.html)
+[Close Method](adg-connection-class-close-method.html)
       <br />
-      [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
 

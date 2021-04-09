@@ -28,10 +28,10 @@ keywords: ASNA.DataGate.Client namespace, enumerations
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
       <br />
-      [Client Namespace Classes](asna-datagate-client-classes.html)
+[Client Namespace Classes](asna-datagate-client-classes.html)
       <br />
-      [Client Namespace](datagate-client-namespace.html)
+[Client Namespace](datagate-client-namespace.html)
 

@@ -61,10 +61,10 @@ These properties are used when defining a key with the parameters of the [ FileA
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [File Adapter Class](file-adapter-class.html)
+
+[File Adapter Class](file-adapter-class.html)
       <br />
-      [OpenSimpleQuery Method](file-adapter-class-open-simple-query-method.html)
+[OpenSimpleQuery Method](file-adapter-class-open-simple-query-method.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

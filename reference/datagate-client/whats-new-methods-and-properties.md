@@ -73,11 +73,11 @@ This document contains a list and brief description of the new methods and prope
 
 ## See Also
 
-<dl />
-      [Client Namespace](datagate-client-namespace.html) <br />
-      [Common Namespace](datagate-common-namespace.html) <br />
-      [What's New](whats-new-main.html)<br />
-      [New Classes](whats-new-classes.html)<br />
-      [New Delegates](whats-new-delegates.html)<br />
-      [New Enumerations](whats-new-enumerations.html)
+
+[Client Namespace](datagate-client-namespace.html) <br />
+[Common Namespace](datagate-common-namespace.html) <br />
+[What's New](whats-new-main.html)<br />
+[New Classes](whats-new-classes.html)<br />
+[New Delegates](whats-new-delegates.html)<br />
+[New Enumerations](whats-new-enumerations.html)
 

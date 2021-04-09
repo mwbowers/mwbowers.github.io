@@ -45,12 +45,12 @@ Boolean. **True** if [ UserName](authority-entry-class-username-field.html) is a
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AuthorityEntry Class](authority-entry-class.html)
+
+[AuthorityEntry Class](authority-entry-class.html)
       <br />
-      [AuthorityEntry Class Members](authority-entry-members.html)
+[AuthorityEntry Class Members](authority-entry-members.html)
       <br />
-      [UserName Field](authority-entry-class-username-field.html)
+[UserName Field](authority-entry-class-username-field.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

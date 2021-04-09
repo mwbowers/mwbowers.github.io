@@ -66,10 +66,10 @@ The following table details each value and its corresponding repair function.
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-        [IDirectory.RepairObjects Method](idirectory-class-repair-objects-method.html)
+
+[IDirectory.RepairObjects Method](idirectory-class-repair-objects-method.html)
         <br />
-        [IFileObject.RepairFile Method](ifile-object-class-repair-file-method.html)
+[IFileObject.RepairFile Method](ifile-object-class-repair-file-method.html)
         <br />
-        [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

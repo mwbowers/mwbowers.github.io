@@ -95,12 +95,12 @@ String. Returns or sets the path name of the database file.
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [MemberName Property](file-adapter-class-member-name-property.html)
+[MemberName Property](file-adapter-class-member-name-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

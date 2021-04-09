@@ -84,18 +84,18 @@ So for example, any **IAdgObject** instance whose **AdgObjectType** property is 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [Enumerate Method](idirectory-class-enumerate-method.html)
+[Enumerate Method](idirectory-class-enumerate-method.html)
       <br />
-      [AdgObjectTypes Enumeration](adg-object-types-enumeration.html)
+[AdgObjectTypes Enumeration](adg-object-types-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

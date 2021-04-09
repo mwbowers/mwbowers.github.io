@@ -47,14 +47,14 @@ When the user program invokes **ResetFormat** , the value of **FormatRequested**
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [SetFormat Method](file-adapter-class-set-format-method.html)
+[SetFormat Method](file-adapter-class-set-format-method.html)
       <br />
-      [ResetFormat Method](file-adapter-class-reset-format-method.html)
+[ResetFormat Method](file-adapter-class-reset-format-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

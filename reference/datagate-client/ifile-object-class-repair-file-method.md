@@ -22,7 +22,7 @@ keywords: how to, invoke automatic diagnostic and repair function for a file
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public void RepairFile(<br />[RepairOptions](repair-options-enumeration.html) repairOptions,
-   [AdgObserver](adg-observer-delegate.html) observer
+[AdgObserver](adg-observer-delegate.html) observer
 );** 
       </pre>
       <pre class="prettyprint">
@@ -97,16 +97,16 @@ This method invokes the database provider's automated diagnostic check and repai
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [RepairObjects Method](idirectory-class-repair-objects-method.html)
+[RepairObjects Method](idirectory-class-repair-objects-method.html)
       <br />
-      [RepairOptions Enumeration](repair-options-enumeration.html)
+[RepairOptions Enumeration](repair-options-enumeration.html)
       <br />
-      [AdgObserver Delegate](adg-observer-delegate.html)
+[AdgObserver Delegate](adg-observer-delegate.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

@@ -48,18 +48,18 @@ Upon construction, no properties are set in **FileOpenAttr** . Properties do not
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileOpenAttr Members](file-open-attr-class-members.html)
+
+[FileOpenAttr Members](file-open-attr-class-members.html)
       <br />
-      [BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
+[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [OpenSimpleQuery Method](file-adapter-class-open-simple-query-method.html)
+[OpenSimpleQuery Method](file-adapter-class-open-simple-query-method.html)
       <br />
-      [ASNA DataGate Providers Namespace](datagate-providers-namespace.html)
+[ASNA DataGate Providers Namespace](datagate-providers-namespace.html)
 

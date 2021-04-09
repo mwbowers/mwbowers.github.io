@@ -160,18 +160,18 @@ When set to the <code>Auto</code> value, record locking occurs automatically in 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [FileLocks Property](file-open-attr-class-file-locks-property.html)
+[FileLocks Property](file-open-attr-class-file-locks-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [ReleaseCurrent Method ](file-adapter-class-release-current-method.html)
+[ReleaseCurrent Method ](file-adapter-class-release-current-method.html)
       <br />
-      [ReleaseRRN](file-adapter-class-release-rrn-method.html)
+[ReleaseRRN](file-adapter-class-release-rrn-method.html)
       <br />
-      [LockRequest Enumeration](lock-request-enumeration.html)
+[LockRequest Enumeration](lock-request-enumeration.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

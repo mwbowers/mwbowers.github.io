@@ -440,7 +440,7 @@ Note that not all traditional "feedback" information regarding the last access p
 For a general introduction to .NET exception handling, please see the <span>.NET Framework referenc</span>e. 
 ## See Also
 
-<dl />[AdgDataSet Class](adg-dataset-class.html)<br />[Database File Records and 
+[AdgDataSet Class](adg-dataset-class.html)<br />[Database File Records and 
 						AdgDataSet](database-file-recordsand-adg-dataset.html)<br />[Efficient File Access](efficient-file-access.html)<br />[FileAdapter Class](file-adapter-class.html)<br />[Reading and Writing to Database 
 						Files](readingand-writingto-database-files.html)<br />[Using the FileAdapter Class](usingthe-file-adapter-class.html)   
 

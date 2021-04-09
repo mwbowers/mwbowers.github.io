@@ -47,12 +47,12 @@ Each printer has a default top margin in which output will not be printed, as we
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />
-      [PrintDevAttr Class Members](print-dev-attr-members.html)
+[PrintDevAttr Class Members](print-dev-attr-members.html)
       <br />
-      [LeftMargin Property](print-dev-attr-class-left-margin-property.html)
+[LeftMargin Property](print-dev-attr-class-left-margin-property.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

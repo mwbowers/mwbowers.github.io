@@ -75,8 +75,8 @@ The <span>ASNA.DataGate.Client</span> namespace is the primary namespace used by
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
       <br />
 
 ---

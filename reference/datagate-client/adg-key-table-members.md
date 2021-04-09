@@ -35,11 +35,11 @@ keywords: members [DCS 16.0 AdgKeyTable class
 
 ## See Also
 
-<dl />
-      [AdgKeyTable Class](adg-key-table-class.html)
+
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [AdgTable Class](adg-table-class.html)
-<dl />
+[AdgTable Class](adg-table-class.html)
+
 
 ---
 

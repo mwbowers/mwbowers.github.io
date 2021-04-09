@@ -26,6 +26,6 @@ keywords: Dependent class, all members
 
 ## See Also
 
-<dl />
-      [Dependent Class](dependent-class.html)
+
+[Dependent Class](dependent-class.html)
 

@@ -13,7 +13,7 @@ The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public IDataArea NewDataArea(
-   [AdgConnection](adg-connection-class.html) cn
+[AdgConnection](adg-connection-class.html) cn
    string PathName
 );** 
       </pre>
@@ -90,12 +90,12 @@ This method creates a new [IDataArea](idataarea-class.html) based upon a new or 
 ## See 
 Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [IDataArea Class](idataarea-class.html)
+[IDataArea Class](idataarea-class.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

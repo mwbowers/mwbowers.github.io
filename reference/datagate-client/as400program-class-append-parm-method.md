@@ -18,7 +18,7 @@ keywords: how to, append parameter to program parameter list
 Appends a parameter to the parameter list for the program.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void AppendParm(
-   [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
+[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
 );** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
@@ -126,26 +126,26 @@ The **ProgParm** appended to the list may optionally be named via the <span>name
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [AppendParms Method](as400program-class-append-parms-method.html)
+[AppendParms Method](as400program-class-append-parms-method.html)
       <br />
-      [Connection Property](as400program-class-connection-property.html)
+[Connection Property](as400program-class-connection-property.html)
       <br />
-      [ObjectToParm Methods](as400program-class-object-to_parm-method-main.html)
+[ObjectToParm Methods](as400program-class-object-to_parm-method-main.html)
       <br />
-      [ParmToObject Methods](as400program-class-parm-to_object-method-main.html)
+[ParmToObject Methods](as400program-class-parm-to_object-method-main.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
+[ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink.StructuredType Class](structure-type-class.html)
+[ASNA.DataGate.DataLink.StructuredType Class](structure-type-class.html)
       <br />
       [StructuredType Class 
 					Constructors](structure-type-class.html)

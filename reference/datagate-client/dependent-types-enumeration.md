@@ -53,9 +53,9 @@ Note that support for the values of this enumeration is database provider-depend
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [Dependent Class](dependent-class.html)
+
+[Dependent Class](dependent-class.html)
       <br />
-      [DependentType Property](dependent-class-dependent-type-property.html) <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[DependentType Property](dependent-class-dependent-type-property.html) <br />
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

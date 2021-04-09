@@ -98,15 +98,15 @@ If the [State](adg-connection-class-state-property.html) property of the *cn* pa
 ## See 
 Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Method](adg-factory-class-read-xml-methods.html) <br />
-	  [IMember Class](imember-class.html)<br />
-	  [IAdgObject Class](iadg-object-class.html)<br />
-	  [Create Method](iadg-object-class-create-method.html) <br />
-	  [AdgConnection Class](adg-connection-class.html)<br />
-	  [State Property](adg-connection-class-state-property.html)<br />
-	  [Open Method](adg-connection-class-open-method.html) <br />
-	  [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ReadXml Method](adg-factory-class-read-xml-methods.html) <br />
+[IMember Class](imember-class.html)<br />
+[IAdgObject Class](iadg-object-class.html)<br />
+[Create Method](iadg-object-class-create-method.html) <br />
+[AdgConnection Class](adg-connection-class.html)<br />
+[State Property](adg-connection-class-state-property.html)<br />
+[Open Method](adg-connection-class-open-method.html) <br />
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

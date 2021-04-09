@@ -118,20 +118,20 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [SourceProfile Class Members](source-profile-members.html)
+[SourceProfile Class Members](source-profile-members.html)
       <br />
-      [DatabaseName Property](source-profile-class-database-name-property.html)
+[DatabaseName Property](source-profile-class-database-name-property.html)
       <br />
-      [Register Method](source-profile-class-register-method.html)
+[Register Method](source-profile-class-register-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [AdgConnection Constructors](adg-connection-constructors-main.html)
+[AdgConnection Constructors](adg-connection-constructors-main.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

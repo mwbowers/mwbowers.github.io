@@ -46,12 +46,12 @@ An **AdgDataSet** object is a reflection of a DataGate file, including its recor
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [GetFormatName Method](adg-dataset-class-get-format-name-method.html)
+[GetFormatName Method](adg-dataset-class-get-format-name-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

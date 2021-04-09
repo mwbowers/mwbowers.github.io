@@ -50,14 +50,14 @@ The [XmlInfoEventHandler](xml-info-event-handler-delegate.html) delegate is pass
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [AdgFactory.ReadXml Method](adg-factory-class-read-xml-method2.html)
+
+[AdgFactory.ReadXml Method](adg-factory-class-read-xml-method2.html)
       <br />
-      [IAdgObject.WriteXml Method](dcsIAdgObjectClassWriteXmlMethod2.html)
+[IAdgObject.WriteXml Method](dcsIAdgObjectClassWriteXmlMethod2.html)
       <br />
-      [XmlInfoEventHandler Delegate](xml-info-event-handler-delegate.html)
+[XmlInfoEventHandler Delegate](xml-info-event-handler-delegate.html)
       <br />
-      [XmlInfoEventArgs Class](xml-info-event-args-class.html)
+[XmlInfoEventArgs Class](xml-info-event-args-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

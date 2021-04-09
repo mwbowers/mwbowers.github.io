@@ -60,8 +60,8 @@ For the System i database provider, the value of the **TransactionLevel** proper
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
       [BeginTransaction 
 					Method](adg-connection-class-begin-transaction-method-main.html)
@@ -69,10 +69,10 @@ For the System i database provider, the value of the **TransactionLevel** proper
       [BeginAutoTransaction 
 					Method](adg-connection-class-begin-auto-transaction-method-main.html)
       <br />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
       [TransactionLevel 
 					Property](iadg-transaction-class-transaction-level-property.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

@@ -48,20 +48,20 @@ The constructors of **ProgParm** allow you to specify the metadata and input/out
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ProgParm Members](prog-parm-members.html)
+
+[ProgParm Members](prog-parm-members.html)
       <br />
-      [As400Program Class](as400program-class.html)
+[As400Program Class](as400program-class.html)
       <br />
-      [ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
+[ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
       <br />
-      [ParmToObject Method](as400program-class-parm-to_object-method-main.html)
+[ParmToObject Method](as400program-class-parm-to_object-method-main.html)
       <br />
-      [ProgParmType Class](prog-parm-type-class.html)
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [StructureType Class](structure-type-class.html)
+[StructureType Class](structure-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
+[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

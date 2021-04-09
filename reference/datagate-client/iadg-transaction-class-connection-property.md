@@ -45,21 +45,21 @@ The context of a database transaction is limited to this connection. The [ Commi
 ## See 
 Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [IAdgTransaction Class Members](iadg-transaction-members.html)
+[IAdgTransaction Class Members](iadg-transaction-members.html)
       <br />
-      [Commit Method](iadg-transaction-class-commit-methods.html)
+[Commit Method](iadg-transaction-class-commit-methods.html)
       <br />
-      [Rollback Method](iadg-transaction-class-rollback-method.html)
+[Rollback Method](iadg-transaction-class-rollback-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [BeginTransaction](adg-connection-class-begin-transaction-method-main.html)
+[BeginTransaction](adg-connection-class-begin-transaction-method-main.html)
       <br />
       [BeginAutoTransaction 
 					Method](adg-connection-class-begin-auto-transaction-method-main.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

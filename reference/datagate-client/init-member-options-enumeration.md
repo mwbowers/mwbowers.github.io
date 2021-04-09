@@ -55,6 +55,6 @@ keywords: ASNA.DataGate.Client.InitMemberOptions
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

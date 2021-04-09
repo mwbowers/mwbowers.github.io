@@ -38,12 +38,12 @@ Creates an instance of [IAdgObject](iadg-object-class.html) from an XML document
 
 ## See Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [AdgFactory Members](adg-factory-members.html)
+[AdgFactory Members](adg-factory-members.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

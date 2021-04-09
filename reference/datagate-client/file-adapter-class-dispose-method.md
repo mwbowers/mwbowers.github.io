@@ -64,16 +64,16 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [Close Method](file-adapter-class-close-method.html)
+[Close Method](file-adapter-class-close-method.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

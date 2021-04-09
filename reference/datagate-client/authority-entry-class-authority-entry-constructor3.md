@@ -15,7 +15,7 @@ keywords: enumerations [DCS 16.0 AuthorityTypes, used by
         <span class="lang">[C#]</span>
  **public AuthorityEntry(
    string username
-   [AuthorityTypes](authority-types-enumeration.html) authorityType
+[AuthorityTypes](authority-types-enumeration.html) authorityType
 );** 
       </pre>
       <pre class="prettyprint">
@@ -66,18 +66,18 @@ Only use this constructor when *username* is a single-user profile (rather than 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AuthorityEntry Class](authority-entry-class.html)
+
+[AuthorityEntry Class](authority-entry-class.html)
       <br />
-      [AuthorityEntry Class Members](authority-entry-members.html)
+[AuthorityEntry Class Members](authority-entry-members.html)
       <br />
-      [AuthorityType Field](authority-entry-class-authority-type-field.html)
+[AuthorityType Field](authority-entry-class-authority-type-field.html)
       <br />
-      [UserName Property](authority-entry-class-username-field.html)
+[UserName Property](authority-entry-class-username-field.html)
       <br />
-      [IsGroupAccount Field](authority-entry-class-username-field.html)
+[IsGroupAccount Field](authority-entry-class-username-field.html)
       <br />
-      [AuthorityTypes Enumeration](authority-types-enumeration.html)
+[AuthorityTypes Enumeration](authority-types-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

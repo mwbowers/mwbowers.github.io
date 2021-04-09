@@ -22,8 +22,8 @@ keywords: accessing a file, contents of
 [Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html) 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
 

@@ -24,12 +24,12 @@ keywords: FileOpenAttr class, fields
 
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
+[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
 

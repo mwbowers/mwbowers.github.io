@@ -89,12 +89,12 @@ Since print controls may be implemented as COM-based unmanaged objects, this met
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
 ## See Also
 
-<dl />
+
       <span>
-        [IPrintProperties Class](iprint-properties-class.html)
+[IPrintProperties Class](iprint-properties-class.html)
         <br />
-        [GetBoundType Method](iprint-properties-class-get-bound-type-method.html)
+[GetBoundType Method](iprint-properties-class-get-bound-type-method.html)
         <br />
-        [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
       </span>
 

@@ -78,12 +78,12 @@ Note that following completion of **enumerate** , no restrictions are placed on 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDirectory.Enumerate](idirectory-class-enumerate-method.html)
+
+[IDirectory.Enumerate](idirectory-class-enumerate-method.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [ILibraryList Class](ilibrary-list-class.html)
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
       [EnumerateCurrentSystem 
 					Method](ilibrary-list-class-enumerate-current-system-method.html)
@@ -91,5 +91,5 @@ Note that following completion of **enumerate** , no restrictions are placed on 
       [EnumerateCurrentUser 
 					Method](ilibrary-list-class-enumerate-current-user-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

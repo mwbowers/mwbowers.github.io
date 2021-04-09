@@ -108,17 +108,17 @@ Further note that for **IFileObject** instances, [ IAdgObject.WriteXml](iadg-obj
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [Class Members](ifile-object-members.html)
+[Class Members](ifile-object-members.html)
       <br />
       [ReadCreationAttributes 
 					Method](ifile-object-class-read-creation-attributes-method.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [WriteXml Methods](iadg-object-class-write-xml-methods.html)
+[WriteXml Methods](iadg-object-class-write-xml-methods.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

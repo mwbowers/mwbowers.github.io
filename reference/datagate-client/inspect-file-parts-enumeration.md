@@ -36,6 +36,6 @@ keywords: enumerations [DCS 16.0 InspectFileParts
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

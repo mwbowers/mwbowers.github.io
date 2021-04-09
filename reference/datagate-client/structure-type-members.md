@@ -22,8 +22,8 @@ keywords: StructureType class, all members
 
 ## See Also
 
-<dl />
-      [StructureType Class](structure-type-class.html)
+
+[StructureType Class](structure-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html) 
+[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html) 
 

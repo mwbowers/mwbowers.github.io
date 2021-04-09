@@ -18,7 +18,7 @@ keywords: how to, append parameter array to program parameter list
 Appends an array of parameters to the parameter list for the program. 
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void AppendParms(
-   [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)[] Parameters
+[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)[] Parameters
 );** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
@@ -151,25 +151,25 @@ To create a program parameter list, <span> **ProgParm** </span> objects should b
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [AppendParm Method](as400program-class-append-parm-method.html)
+[AppendParm Method](as400program-class-append-parm-method.html)
       <br />
-      [Connection Property](as400program-class-connection-property.html)
+[Connection Property](as400program-class-connection-property.html)
       <br />
-      [ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
+[ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
       <br />
-      [ParmToObject Method](as400program-class-parm-to_object-method-main.html)
+[ParmToObject Method](as400program-class-parm-to_object-method-main.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
+[ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink.StructuredType Class](structure-type-class.html)
+[ASNA.DataGate.DataLink.StructuredType Class](structure-type-class.html)
       <br />
 

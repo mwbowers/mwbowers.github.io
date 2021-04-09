@@ -22,6 +22,6 @@ keywords: ProgParmType class, all members
 
 ## See Also
 
-<dl />
-      [ProgParmType Class](prog-parm-type-class.html)
+
+[ProgParmType Class](prog-parm-type-class.html)
 

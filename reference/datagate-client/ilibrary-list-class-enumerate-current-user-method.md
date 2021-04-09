@@ -87,19 +87,19 @@ Note that the [IDirectory.ItemList](idirectory-class-item-list-property.html) pr
 <span><strong class="hcp2">Platforms:</strong> Windows Server 2003, Windows XP Professional SP2, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [ILibraryList Class](ilibrary-list-class.html)
+
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
-      [ILibraryList Members](ilibrary-list-members.html)
+[ILibraryList Members](ilibrary-list-members.html)
       <br />
       [EnumerateCurrentSystem 
 					Method](ilibrary-list-class-enumerate-current-system-method.html)
       <br />
-      [AdgEnumerator Delegate](adg-enumerator-delegate.html)
+[AdgEnumerator Delegate](adg-enumerator-delegate.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IDirectory.ItemList Property](idirectory-class-item-list-property.html)
+[IDirectory.ItemList Property](idirectory-class-item-list-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

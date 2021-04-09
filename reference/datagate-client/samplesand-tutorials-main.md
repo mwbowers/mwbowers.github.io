@@ -12,11 +12,11 @@ This section of the ASNA DataGate Component Suite documentation contains the cur
 
 <dl>
         <dt>
-          [Samples](samples-main.html)
+[Samples](samples-main.html)
         </dt>
         <dd>Contains the Samples that are available with DataGate Component Suite. </dd>
         <dt>
-          [Tutorials](tutorials-main.html)
+[Tutorials](tutorials-main.html)
         </dt>
         <dd>Contains the Tutorials that are available with DataGate Component Suite.</dd>
 </dl>

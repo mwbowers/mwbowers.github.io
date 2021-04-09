@@ -36,6 +36,6 @@ keywords: AdgDataSet class, methods
 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
 

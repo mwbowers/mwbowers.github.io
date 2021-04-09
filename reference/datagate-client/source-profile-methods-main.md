@@ -30,14 +30,14 @@ keywords: SourceProfile class, methods
 
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [SourceProfile Class Members](source-profile-members.html)
+[SourceProfile Class Members](source-profile-members.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [SourceProfile Property](adg-connection-class-source-profile-property.html)
+[SourceProfile Property](adg-connection-class-source-profile-property.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

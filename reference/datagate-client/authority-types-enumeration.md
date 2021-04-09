@@ -71,11 +71,11 @@ The <span> **AuthorityTypes** </span> enumerated constant defines values that sp
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [GrantAuthority Method](iadg-object-class-grant-authority-method.html)
+[GrantAuthority Method](iadg-object-class-grant-authority-method.html)
       <br />
-      [RevokeAuthority Method](iadg-object-class-revoke-authority-method.html) <br />
-	  [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[RevokeAuthority Method](iadg-object-class-revoke-authority-method.html) <br />
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

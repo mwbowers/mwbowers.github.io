@@ -24,7 +24,7 @@ Constructs a DatabaseName instance assigning default values.
 
 ## See Also
 
-<dl />
 
-      [DatabaseName Class](database-name-class.html)
+
+[DatabaseName Class](database-name-class.html)
 

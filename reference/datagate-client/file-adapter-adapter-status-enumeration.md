@@ -82,8 +82,8 @@ Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter.Status Property](file-adapter-class-status-property.html) <br />[FileAdapter Members](file-adapter-members.html) <br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)  
+[FileAdapter.Status Property](file-adapter-class-status-property.html) <br />[FileAdapter Members](file-adapter-members.html) <br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)  
 

@@ -64,12 +64,12 @@ To use the file format index, use [ GetFormatTable(index)](adg-dataset-class-get
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [GetFormatTable(index) Method](adg-dataset-class-get-format-table-method.html)
+[GetFormatTable(index) Method](adg-dataset-class-get-format-table-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

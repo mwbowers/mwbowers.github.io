@@ -18,6 +18,6 @@ This section of the ASNA DataGate Component Suite documentation contains an over
 
 ## See Also
 
-<dl />
-      [Programmers Guide](programmers-guide-main.html)
+
+[Programmers Guide](programmers-guide-main.html)
 

@@ -29,12 +29,12 @@ Constructs an **StructureType** instance assigning an initial value to the [ Sou
 
 ## See Also
 
-<dl />
-      [StructureType Class](structure-type-class.html)
+
+[StructureType Class](structure-type-class.html)
       <br />
-      [StructureType Class Members](structure-type-members.html)
+[StructureType Class Members](structure-type-members.html)
       <br />
-      [SourceProfile Property](dcsStructureTypeClassSourceProfileProperty.html)
+[SourceProfile Property](dcsStructureTypeClassSourceProfileProperty.html)
       <br />
-      [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
 

@@ -107,14 +107,14 @@ In these cases, <span> **SystemError** </span> will contain an integer code asso
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [dgException Class](dgexception-class.html)
+
+[dgException Class](dgexception-class.html)
       <br />
-      [dgException Members](dgexception-class-members.html)
+[dgException Members](dgexception-class-members.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
-      [Error Field](dgexception-class-error-field.html)
+[Error Field](dgexception-class-error-field.html)
       <br />
-      [ErrorClass Field](dgexception-class-error-class-field.html)
+[ErrorClass Field](dgexception-class-error-class-field.html)
 

@@ -83,10 +83,10 @@ A special value, "*PROMPT", may be used to require an interactive user to supply
 <span> **Platforms:** Windows Server 2012, Windows Server 2012, Windows Server 2016, Windows 7, Windows 8.x, Windows 10</span>
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [SourceProfile Class Members](source-profile-members.html)
+[SourceProfile Class Members](source-profile-members.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

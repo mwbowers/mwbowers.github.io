@@ -18,7 +18,7 @@ keywords: FileAdapter.AddRecord method
 Adds a record to a file.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void AddRecord(
-   [AdgDataSet](adg-dataset-class.html) ds
+[AdgDataSet](adg-dataset-class.html) ds
 )** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
@@ -195,12 +195,12 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
       <br />
-      [SeekRange Method](file-adapter-class-seek-range-method.html) <br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)<br />[AdgDataSet Class](adg-dataset-class.html)
+[SeekRange Method](file-adapter-class-seek-range-method.html) <br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)<br />[AdgDataSet Class](adg-dataset-class.html)
 

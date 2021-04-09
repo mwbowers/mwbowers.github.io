@@ -57,8 +57,8 @@ An <span>Open</span> **AdgConnection** object may enter the <span>Closed</span> 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgConnection Members](adg-connection-members.html)
+
+[AdgConnection Members](adg-connection-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

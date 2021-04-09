@@ -80,19 +80,19 @@ The usual pattern of use involves first staging the prepared DataRow object via 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [AddRow Method](adg-dataset-class-add-row-methods.html)
+[AddRow Method](adg-dataset-class-add-row-methods.html)
       <br />
-      [PrepareRow Method](adg-dataset-class-prepare-row-method-main.html)
+[PrepareRow Method](adg-dataset-class-prepare-row-method-main.html)
       <br />
       [AddPreparedRowAndSetActive 
 					Method](adg-dataset-class-add-prepared-row-and-set-active-method.html)
       <br />
-      [GetFormatName Method](adg-dataset-class-get-format-name-method.html)
+[GetFormatName Method](adg-dataset-class-get-format-name-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

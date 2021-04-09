@@ -582,10 +582,10 @@ The <span>dgErrorNumber</span> enumeration is used as a parameter by the [ Error
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [Error Field](dgexception-class-error-field.html)
+
+[Error Field](dgexception-class-error-field.html)
       <br />
-      [dgException Class](dgexception-class.html)
+[dgException Class](dgexception-class.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

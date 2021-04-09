@@ -215,17 +215,17 @@ EndClass</pre>
 
 ## See Also
 
-<dl />
-      [dgException Class](dgexception-class.html)
+
+[dgException Class](dgexception-class.html)
       <br />
-      [dgException.ErrorClass Field](dgexception-class-error-class-field.html)
+[dgException.ErrorClass Field](dgexception-class-error-class-field.html)
       <br />
-      [dgException.Text Field](disconnectingfroma-database.html)
+[dgException.Text Field](disconnectingfroma-database.html)
       <br />
       [dgException.Message 
 					Property](dgexception-class-message-property.html)
       <br />
-      [dgErrorClass Enumeration](dgerror-class-enumeration.html)
+[dgErrorClass Enumeration](dgerror-class-enumeration.html)
       <br />
-      [dgErrorNumber Enumeration](dgerror-number-enumeration.html)
+[dgErrorNumber Enumeration](dgerror-number-enumeration.html)
 

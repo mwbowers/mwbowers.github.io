@@ -88,14 +88,14 @@ Note that a granted lock is not automatically removed when the **IAdgObject** is
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Lock Method](iadg-object-class-lock-method.html)
+[Lock Method](iadg-object-class-lock-method.html)
       <br />
-      [ShareTypes Enumeration](share-types-enumeration.html)
+[ShareTypes Enumeration](share-types-enumeration.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

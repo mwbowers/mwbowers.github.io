@@ -50,10 +50,10 @@ The <span> **AccessResult** </span> enumeration is used as a parameter by the [ 
 <strong >Platforms:</strong> Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
+
       <span>
-        [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       </span>
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

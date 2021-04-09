@@ -77,6 +77,6 @@ This method is provided for compatibility with legacy Acceler8DB database system
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html) <br />[IDirectory Members](idirectory-members.html)<br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+
+[IDirectory Class](idirectory-class.html) <br />[IDirectory Members](idirectory-members.html)<br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

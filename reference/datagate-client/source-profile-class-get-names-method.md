@@ -88,9 +88,9 @@ String. The currently registered database names available for use in a program.
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
 ## See Also
 
-<dl />
+
       <span>
-        [SourceProfile Class](source-profile-class.html) <br />[
+[SourceProfile Class](source-profile-class.html) <br />[
 						SourceProfile Class Members](source-profile-members.html)<br />[
 						Register Method](source-profile-class-register-method.html)<br />[Unregister 
 						Method](source-profile-class-unregister-method.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)</span>  

@@ -27,6 +27,6 @@ keywords: IPrintProperties class, all members
 
 ## See Also
 
-<dl />
-      [IPrintProperties Class](iprint-properties-class.html)
+
+[IPrintProperties Class](iprint-properties-class.html)
 

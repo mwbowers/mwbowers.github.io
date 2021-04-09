@@ -87,12 +87,12 @@ keywords: members [DCS 16.0 FileAdapter class
 
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [IPrintProperties Class](iprint-properties-class.html)
+[IPrintProperties Class](iprint-properties-class.html)
 

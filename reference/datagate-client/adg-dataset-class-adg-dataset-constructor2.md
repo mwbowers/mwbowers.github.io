@@ -51,8 +51,8 @@ This member supports the .NET Framework infrastructure and is not intended to be
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
       [
 					AdgDataSet Members](adg-dataset-members.html)

@@ -199,12 +199,12 @@ For <span> **SeekRange** </span>, **RangeMode** determines whether to locate the
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [SeekRange Method](file-adapter-class-seek-range-method.html)
+[SeekRange Method](file-adapter-class-seek-range-method.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
 

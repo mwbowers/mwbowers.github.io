@@ -49,12 +49,12 @@ This member supports DCS infrastructure and is not intended to be used directly 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet.NewKeyTable Method](adg-dataset-class-new-key-table-methods.html)
+
+[AdgDataSet.NewKeyTable Method](adg-dataset-class-new-key-table-methods.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [AdgKeyTable Class Members](adg-key-table-members.html)
+[AdgKeyTable Class Members](adg-key-table-members.html)
       <br />System.Data.DataTable
       <br />[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

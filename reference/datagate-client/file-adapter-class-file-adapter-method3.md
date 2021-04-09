@@ -78,24 +78,24 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [AccessMode Property](file-adapter-class-access-mode-property.html)
+[AccessMode Property](file-adapter-class-access-mode-property.html)
       <br />
-      [Connection Property](file-adapter-class-connection-property.html)
+[Connection Property](file-adapter-class-connection-property.html)
       <br />
-      [FileName Property](file-adapter-class-file-name-property.html)
+[FileName Property](file-adapter-class-file-name-property.html)
       <br />
-      [MemberName Property](file-adapter-class-member-name-property.html)
+[MemberName Property](file-adapter-class-member-name-property.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [AccessMode Enumeration](access-mode-enumeration.html)
+[AccessMode Enumeration](access-mode-enumeration.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

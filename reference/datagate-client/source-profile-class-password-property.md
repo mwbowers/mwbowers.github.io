@@ -71,12 +71,12 @@ This property should only be set if the user profile has an associated password,
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 </span> 
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [SourceProfile Class Members](source-profile-members.html)
+[SourceProfile Class Members](source-profile-members.html)
       <br />
-      [User Property](source-profile-class-user-property.html)
+[User Property](source-profile-class-user-property.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

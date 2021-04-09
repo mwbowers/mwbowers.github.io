@@ -37,12 +37,12 @@ Overloaded method that begins an automatic database transaction creating an inst
 
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
       <br />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

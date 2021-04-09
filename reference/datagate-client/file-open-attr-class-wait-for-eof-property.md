@@ -45,8 +45,8 @@ Implementation on the IBM i: The [ ShareType](file-open-attr-class-share-types-p
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
       [
 					FileOpenAttr Class Members](file-open-attr-class-members.html)
@@ -57,7 +57,7 @@ Implementation on the IBM i: The [ ShareType](file-open-attr-class-share-types-p
       [WaitForFile 
 					Property](file-open-attr-class-wait-for-file-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
       [
 					ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)

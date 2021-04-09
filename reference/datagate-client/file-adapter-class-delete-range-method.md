@@ -23,10 +23,10 @@ keywords: RangeLast enumeration, used by
 Delete a set of database file records which contain key values in a given range.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void DeleteRange(
-   [AdgKeyTable](adg-key-table-class.html) firstKey,
-   [RangeFirst](range-first-enumeration.html) rangeFirst,
-   [AdgKeyTable](adg-key-table-class.html) lastKey,
-   [RangeLast](range-last-enumeration.html) rangeLast
+[AdgKeyTable](adg-key-table-class.html) firstKey,
+[RangeFirst](range-first-enumeration.html) rangeFirst,
+[AdgKeyTable](adg-key-table-class.html) lastKey,
+[RangeLast](range-last-enumeration.html) rangeLast
 );** 
       </pre>
       <pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
@@ -57,7 +57,7 @@ Delete a set of database file records which contain key values in a given range.
  *rangeFirst* 
         </dt>
         <dd>
-          [RangeFirst](range-first-enumeration.html). Specifies how the method 
+[RangeFirst](range-first-enumeration.html). Specifies how the method 
 			should process records with key values equal to the limit value given by *firstKey* .
 								</dd>
         <dt>
@@ -69,7 +69,7 @@ Delete a set of database file records which contain key values in a given range.
  *rangelast* 
         </dt>
         <dd>
-          [RangeLast](range-last-enumeration.html). Specifies how the method 
+[RangeLast](range-last-enumeration.html). Specifies how the method 
 			should process records with key values equal to the limit value given by *lastKey* .</dd>
 </dl>
 
@@ -192,20 +192,20 @@ Use the **DeleteRange** method in conjunction with the [ ReadRange](file-adapter
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [AccessMode Property](file-adapter-class-access-mode-property.html)
+[AccessMode Property](file-adapter-class-access-mode-property.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
       <br />
-      [RangeFirst Enumeration](range-first-enumeration.html)
+[RangeFirst Enumeration](range-first-enumeration.html)
       <br />
-      [RangeLast Enumeration](range-last-enumeration.html)
+[RangeLast Enumeration](range-last-enumeration.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

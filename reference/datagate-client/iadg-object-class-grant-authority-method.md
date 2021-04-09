@@ -20,7 +20,7 @@ keywords: authorities, set database access for a specific user
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject GrantAuthority(
    string userName ,
-   [AuthorityTypes](authority-types-enumeration.html) authorityType
+[AuthorityTypes](authority-types-enumeration.html) authorityType
 );** 
       </pre>
       <pre>        <span class="lang">[Visual Basic] </span>
@@ -98,16 +98,16 @@ Some database providers may not support all authorization types.
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IAdgObject Class Members](iadg-object-members.html)
+[IAdgObject Class Members](iadg-object-members.html)
       <br />
-      [RevokeAuthority Method](iadg-object-class-revoke-authority-method.html)
+[RevokeAuthority Method](iadg-object-class-revoke-authority-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AuthorityTypes Enumeration](authority-types-enumeration.html)
+[AuthorityTypes Enumeration](authority-types-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

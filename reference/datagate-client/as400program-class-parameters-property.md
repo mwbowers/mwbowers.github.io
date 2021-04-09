@@ -48,14 +48,14 @@ The array returned by this property is a copy of the array used by **As400Progra
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [AppendParm Method](as400program-class-append-parm-method.html)
+[AppendParm Method](as400program-class-append-parm-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
 

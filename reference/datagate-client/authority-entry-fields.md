@@ -26,6 +26,6 @@ keywords: AuthorityEntry class, fields
 
 ## See Also
 
-<dl />
-      [AuthorityEntry Class](authority-entry-class.html)
+
+[AuthorityEntry Class](authority-entry-class.html)
 

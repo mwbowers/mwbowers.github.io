@@ -85,16 +85,16 @@ Note that the [ItemList](idirectory-class-item-list-property.html) property prov
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IDirectory Class Members](idirectory-members.html)
+[IDirectory Class Members](idirectory-members.html)
       <br />
-      [ItemList Property](idirectory-class-item-list-property.html)
+[ItemList Property](idirectory-class-item-list-property.html)
       <br />
-      [AdgEnumerator Delegate](adg-enumerator-delegate.html)
+[AdgEnumerator Delegate](adg-enumerator-delegate.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

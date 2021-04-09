@@ -68,10 +68,10 @@ Used by the [DateTime](field-type-class-date-time-property.html) property of [Fi
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
-      [DateTime Property](field-type-class-date-time-property.html)
+[DateTime Property](field-type-class-date-time-property.html)
       <br />
-      [FieldType Class](field-type-class.html)
+[FieldType Class](field-type-class.html)
 

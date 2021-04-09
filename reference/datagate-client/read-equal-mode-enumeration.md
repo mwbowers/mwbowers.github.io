@@ -219,8 +219,8 @@ Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapt
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
       [FileAdapter.ReadSequentialEqual 
 					Method](file-adapter-class-read-sequential-equal-method.html) <br />[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

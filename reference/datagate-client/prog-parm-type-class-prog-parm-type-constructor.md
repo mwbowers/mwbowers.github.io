@@ -36,7 +36,7 @@ Defines the data type of a simple iSeries program parameter.
  *type*  
 									</dt>
         <dd>
-          [ASNA.DataGate.Common.FieldType](field-type-class.html).  The 
+[ASNA.DataGate.Common.FieldType](field-type-class.html).  The 
 										database provider-specific object type of the parameter.
 									</dd>
 </dl>
@@ -63,17 +63,17 @@ To construct a parameter list procedurally using the parameter classes, construc
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
 ## See Also
 
-<dl />
-      [ProgParmType Class](prog-parm-type-class.html)
+
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ProgParm Class](prog-parm-class.html) 
+[ProgParm Class](prog-parm-class.html) 
 				<br />[StructureType Class](structure-type-class.html)<br />
-				[As400Program Class](as400program-class.html)<br />
-				[AppendParm Method](as400program-class-append-parm-method.html)<br />
-				[AppendParms Method](as400program-class-append-parms-method.html)<br />
-				[ParmToObject Method](as400program-class-parm-to_object-method-main.html)<br />
-				[FieldType Class](field-type-class.html)<br />
-				[NewPacked Method](field-type-class-new-packed-method.html)<br />
-				[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)<br />
-				[Calling Stored Procedures](calling-stored-procedures.html)
+[As400Program Class](as400program-class.html)<br />
+[AppendParm Method](as400program-class-append-parm-method.html)<br />
+[AppendParms Method](as400program-class-append-parms-method.html)<br />
+[ParmToObject Method](as400program-class-parm-to_object-method-main.html)<br />
+[FieldType Class](field-type-class.html)<br />
+[NewPacked Method](field-type-class-new-packed-method.html)<br />
+[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)<br />
+[Calling Stored Procedures](calling-stored-procedures.html)
 

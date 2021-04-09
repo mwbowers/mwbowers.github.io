@@ -27,12 +27,12 @@ Creates an instance of a [IDataArea](idataarea-class.html) object representing a
 
 ## See Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [AdgFactory Members](adg-factory-members.html)
+[AdgFactory Members](adg-factory-members.html)
       <br />
-      [IDataArea Class](idataarea-class.html)
+[IDataArea Class](idataarea-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

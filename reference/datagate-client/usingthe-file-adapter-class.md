@@ -59,20 +59,20 @@ The following AVR code opens a database connection and then creates a **FileAdap
 **FileAdapter** models an open database file’s "pointer", or the current position of the virtual record cursor on the database server. For example, **FileAdapter’s** [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method sets the record cursor to just prior to the first record in the file. **FileAdapter** also includes "<span>seek</span>" methods, used to place the record cursor to positions of particular interest. The [CurrentFormatIndex](file-adapter-class-current-format-index-property.html), [FormatRequested](file-adapter-class-format-requested-property.html), [ RRN](file-adapter-class-rrn-property.html), and [ExactSeek](file-adapter-class-exact-seek-property.html) properties of **FileAdapter** provide indicators of the current position of the record cursor.
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)
+[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)
       <br />
-      [Efficient File Access](efficient-file-access.html)
+[Efficient File Access](efficient-file-access.html)
       <br />
-      [Reading and Writing to Database Files](readingand-writingto-database-files.html)
+[Reading and Writing to Database Files](readingand-writingto-database-files.html)
       <br />
-      [Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html)
+[Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html)
 

@@ -76,10 +76,10 @@ keywords: SourceProfile class, all members
 
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

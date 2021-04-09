@@ -88,9 +88,9 @@ Then DCS uses .NET framework classes to convert the value to the **System.Drawin
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
 ## See Also
 
-<dl />
-      [IPrintProperties Class](iprint-properties-class.html)
+
+[IPrintProperties Class](iprint-properties-class.html)
       <br />
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

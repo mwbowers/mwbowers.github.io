@@ -55,10 +55,10 @@ keywords: enumerations [DCS 16.0 ASNA.DataGate.Common
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
       <br />
-      [DataGate Common Classes](asna-datagate-common-classes.html)
+[DataGate Common Classes](asna-datagate-common-classes.html)
 
 ---
 

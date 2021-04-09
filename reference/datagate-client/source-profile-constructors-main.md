@@ -34,10 +34,10 @@ Constructs an instance of a **SourceProfile** object.
 
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [SourceProfile Class Members](source-profile-members.html)
+[SourceProfile Class Members](source-profile-members.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

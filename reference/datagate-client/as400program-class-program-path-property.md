@@ -69,12 +69,12 @@ Set the <span> **ProgramPath** </span> property to name the program on the datab
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](dcsAs400ProgramClassExecuteMethod.htm ">Execute Method</a>
+[ASNA.DataGate.Client Namespace](dcsAs400ProgramClassExecuteMethod.htm ">Execute Method</a>
       <br />
       <a href="dcsDataGateClientNamespace.html)
 

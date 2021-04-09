@@ -39,12 +39,12 @@ The date and time format of the field.
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FieldType Class](field-type-class.html)
+
+[FieldType Class](field-type-class.html)
       <br />
-      [FieldType Class Members](field-type-members.html)
+[FieldType Class Members](field-type-members.html)
       <br />
-      [DateTimeFormat Enumeration](date-time-format-enumeration.html)
+[DateTimeFormat Enumeration](date-time-format-enumeration.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

@@ -204,12 +204,12 @@ The following example illustrates an appropriate sequence for **adding a databas
       [Database File Records and 
 				AdgDataSet](database-file-recordsand-adg-dataset.html)
       <br />
-      [Efficient File Access](efficient-file-access.html)
+[Efficient File Access](efficient-file-access.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
       [Verifying Results with 
 				Exception Handling](verifying-resultswith-exception-handling.html)
       <br />
-      [Using the FileAdapter Class](usingthe-file-adapter-class.html)
+[Using the FileAdapter Class](usingthe-file-adapter-class.html)
 

@@ -49,21 +49,21 @@ Upon construction of **AdgDataSet** , the **ActiveRow** property has no value. I
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [SetActiveRecord Method](adg-dataset-class-set-active-methods.html)
+[SetActiveRecord Method](adg-dataset-class-set-active-methods.html)
       <br />
-      [DeleteRow Method](adg-dataset-class-delete-row-method.html)
+[DeleteRow Method](adg-dataset-class-delete-row-method.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [AddRecord Method](file-adapter-class-add-record-method.html)
+[AddRecord Method](file-adapter-class-add-record-method.html)
       <br />
-      [ChangeCurrent Method](file-adapter-class-change-current-method.html)
+[ChangeCurrent Method](file-adapter-class-change-current-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
 

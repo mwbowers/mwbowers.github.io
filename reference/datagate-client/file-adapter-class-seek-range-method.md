@@ -228,33 +228,33 @@ Note that if **FileAdapter** was already in range mode, this method will cancel 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [ReadSequential Method](file-adapter-class-read-sequential-method.html)
+[ReadSequential Method](file-adapter-class-read-sequential-method.html)
       <br />
       [ReadSequentialEqual 
 					Method](file-adapter-class-read-sequential-equal-method.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [FileOpenAttr Class](file-open-attr-class.html)
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
+[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [RangeMode Enumeration](range-mode-enumeration.html)
+[RangeMode Enumeration](range-mode-enumeration.html)
       <br />
-      [RangeFirst Enumeration](range-first-enumeration.html)
+[RangeFirst Enumeration](range-first-enumeration.html)
       <br />
-      [RangeLast Enumeration](range-last-enumeration.html)
+[RangeLast Enumeration](range-last-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

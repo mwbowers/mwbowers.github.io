@@ -36,8 +36,8 @@ keywords: IAdgObject class, methods
 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IAdgObject Properties](iadg-object-properties.html)
+[IAdgObject Properties](iadg-object-properties.html)
 

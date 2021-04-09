@@ -42,13 +42,13 @@ This property is provided for compatibility with legacy Acceler8DB database syst
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IDirectory Class Members](idirectory-members.html)
+[IDirectory Class Members](idirectory-members.html)
       <br />
       [AttachRemoteDirectory 
 					Method](idirectory-class-attach-remote-directory-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

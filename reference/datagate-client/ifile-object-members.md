@@ -42,8 +42,8 @@ keywords: IFileObject class, all members
 
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
 

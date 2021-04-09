@@ -95,19 +95,19 @@ Note that a database connection cannot be shared between two instances of **AdgC
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
+
       <span>
-        [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
         <br />
-        [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
         <br />
-        [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
         <br />
-        [SourceProfile Property](adg-connection-class-source-profile-property.html)
+[SourceProfile Property](adg-connection-class-source-profile-property.html)
         <br />
-        [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
         <br />
-        [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       </span>
 
 <br />

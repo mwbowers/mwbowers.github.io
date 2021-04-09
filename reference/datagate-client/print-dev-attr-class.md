@@ -47,10 +47,10 @@ The **PrintDevAttr** class is a representation of the device parameters ([PrintD
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [PrintDevAttr Members](print-dev-attr-members.html)
+
+[PrintDevAttr Members](print-dev-attr-members.html)
       <br />
-      [IPrintProperties Class](iprint-properties-class.html)
+[IPrintProperties Class](iprint-properties-class.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

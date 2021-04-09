@@ -37,8 +37,8 @@ keywords: AuthorityEntry class, all members
 
 ## See Also
 
-<dl />
-      [AuthorityEntry Class](authority-entry-class.html)
+
+[AuthorityEntry Class](authority-entry-class.html)
       <br />
-      [AuthorityTypes Enumeration](authority-types-enumeration.html)
+[AuthorityTypes Enumeration](authority-types-enumeration.html)
 

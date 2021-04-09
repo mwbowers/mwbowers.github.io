@@ -26,7 +26,7 @@ Initializes the **AdgDataSet** base class.<br />
 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html) <br />[AdgDataSet Members](adg-dataset-members.html)<br />
-      [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+
+[AdgDataSet Class](adg-dataset-class.html) <br />[AdgDataSet Members](adg-dataset-members.html)<br />
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
 

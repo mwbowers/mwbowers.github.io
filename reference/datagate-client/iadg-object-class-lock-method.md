@@ -20,8 +20,8 @@ keywords: lock restrictions, set for database objects
 **Lock** engages the database provider's object locking facility to set a lock restricting access to the database object corresponding to **IAdgObject** .
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject Lock(
-   [ShareTypes](share-types-enumeration.html) ShareType ,
-   [WaitOptions](wait-options-enumeration.html) WaitOption ,
+[ShareTypes](share-types-enumeration.html) ShareType ,
+[WaitOptions](wait-options-enumeration.html) WaitOption ,
    Short WaitTime
 );** 
       </pre>
@@ -112,16 +112,16 @@ Ultimately, if a lock cannot be granted, **Lock** throws **dgException** with th
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Unlock Method](iadg-object-class-unlock-method.html)
+[Unlock Method](iadg-object-class-unlock-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [WaitOptions Enumeration](wait-options-enumeration.html)
+[WaitOptions Enumeration](wait-options-enumeration.html)
       <br />
-      [ShareTypes Enumeration](share-types-enumeration.html)
+[ShareTypes Enumeration](share-types-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

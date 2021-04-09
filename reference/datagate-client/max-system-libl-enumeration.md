@@ -20,11 +20,11 @@ A constant containing the maximum number of library list entries used by all pro
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
+
       <span>
-        [SourceProfile Clas](source-profile-class.html)
-        [s](adg-connection-class.html)
+[SourceProfile Clas](source-profile-class.html)
+[s](adg-connection-class.html)
       </span>
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

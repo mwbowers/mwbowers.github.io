@@ -59,9 +59,9 @@ Note that object locking details are database provider dependent. In general, ob
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IAdgObject.Lock Method](iadg-object-class-lock-method.html) <br />
-      [IAdgObject.Unlock Method](iadg-object-class-unlock-method.html)<br />
-      [AdgObject Class](iadg-object-class.html)<br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[IAdgObject.Lock Method](iadg-object-class-lock-method.html) <br />
+[IAdgObject.Unlock Method](iadg-object-class-unlock-method.html)<br />
+[AdgObject Class](iadg-object-class.html)<br />
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

@@ -88,14 +88,14 @@ Several options are available with *repairOptions* (see **RepairOptions** ). The
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> Pro
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [RepairOptions Enumeration](repair-options-enumeration.html)
+[RepairOptions Enumeration](repair-options-enumeration.html)
       <br />
-      [AdgObserver Delegate](adg-observer-delegate.html)
+[AdgObserver Delegate](adg-observer-delegate.html)
       <br />
-      [IFileObject.RepairFile Method](ifile-object-class-repair-file-method.html)
+[IFileObject.RepairFile Method](ifile-object-class-repair-file-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

@@ -28,6 +28,6 @@ keywords: AdgDataSet class, properties
 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
 

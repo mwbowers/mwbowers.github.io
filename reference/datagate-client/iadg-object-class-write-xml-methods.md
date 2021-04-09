@@ -27,12 +27,12 @@ keywords: XML [DCS 16.0 database objects, create fragment for
 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IAdgObject Class Members](iadg-object-members.html)
+[IAdgObject Class Members](iadg-object-members.html)
       <br />
-      [AdgFactory.ReadXml Method](adg-factory-class-read-xml-methods.html)
+[AdgFactory.ReadXml Method](adg-factory-class-read-xml-methods.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

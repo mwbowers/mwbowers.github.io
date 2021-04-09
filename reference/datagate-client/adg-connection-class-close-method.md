@@ -68,17 +68,17 @@ Note that you must explicitly call either the <span> **Close** </span> or [Dispo
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
+
       <span>
-        [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
         <br />
-        [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
         <br />
-        [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
         <br />
-        [Dispose Method](adg-connection-class-dispose-method.html)
+[Dispose Method](adg-connection-class-dispose-method.html)
         <br />
-        [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
         <br />
       </span>
 

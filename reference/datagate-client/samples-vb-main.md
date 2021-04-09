@@ -23,28 +23,28 @@ keywords: Windows applications, VB samples [DCS 16.0]
 **VB:** 
 <dl>
         <dt>
-          [AddSourceProfile Property](samples-vb-add-source-profile.html)
+[AddSourceProfile Property](samples-vb-add-source-profile.html)
         </dt>
         <dd>
 
 This Windows program explains how to create a new source profile and add it to the registry as well as manipulate the properties of an existing source profile. 
 </dd>
         <dt>
-          [Call400Pgm](samples-vb-call400-pgm.html)
+[Call400Pgm](samples-vb-call400-pgm.html)
         </dt>
         <dd>
 
 This Windows program uses the .NET Framework and ASNA DCS for Visual Studio 2019 to call a program on an IBM i machine. 
 </dd>
         <dt>
-          [Customer Maintenance](samples-vb-customer-maintenance.html)
+[Customer Maintenance](samples-vb-customer-maintenance.html)
         </dt>
         <dd>
 
 This Windows program uses ASNA DCS for Visual Studio 2019 to Read, position, Update, Delete Records from an IBM i type database. It illustrates how you can readily gain access to record level information on an IBM i computer. 
 </dd>
         <dt>
-          [Simple DataGrid](samples-vb-simple-datagrid.html)
+[Simple DataGrid](samples-vb-simple-datagrid.html)
         </dt>
         <dd>
 

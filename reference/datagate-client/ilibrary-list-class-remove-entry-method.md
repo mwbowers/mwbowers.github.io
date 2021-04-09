@@ -55,10 +55,10 @@ A library list entry can not be removed if it's on an active user's library list
 ## See 
 Also
 
-<dl />
-      [ILibraryList Class](ilibrary-list-class.html)
+
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
-      [ILibraryList Members](ilibrary-list-members.html)
+[ILibraryList Members](ilibrary-list-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

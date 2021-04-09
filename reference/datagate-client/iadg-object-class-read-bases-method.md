@@ -77,12 +77,12 @@ The state of *reader* should be such that the next XML content node to be read d
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [AdgFactory.ReadXml Method](adg-factory-class-read-xml-methods.html)
+[AdgFactory.ReadXml Method](adg-factory-class-read-xml-methods.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

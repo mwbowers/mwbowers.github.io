@@ -67,12 +67,12 @@ Saves the contents of the **SourceProfile** object to the system registry as a d
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro 
 ## See Also
 
-<dl />
-      [DatabaseName Class](database-name-class.html)
+
+[DatabaseName Class](database-name-class.html)
       <br />
-      [DatabaseName Class Members](database-name-members.html)
+[DatabaseName Class Members](database-name-members.html)
       <br />
-      [Unregister Method](database-name-class-unregister-method.html)
+[Unregister Method](database-name-class-unregister-method.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

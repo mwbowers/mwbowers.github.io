@@ -59,6 +59,6 @@ The <span> **PrintTrueType** </span> enumerated constant defines values whether 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-        [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

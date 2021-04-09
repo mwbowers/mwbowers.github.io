@@ -23,8 +23,8 @@ keywords: IDirectory class, properties
 
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
 

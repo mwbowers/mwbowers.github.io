@@ -53,6 +53,6 @@ Returns<span> true</span> if the references being compared refer to the same obj
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html) <br />[SourceProfile Class Members](source-profile-members.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+
+[SourceProfile Class](source-profile-class.html) <br />[SourceProfile Class Members](source-profile-members.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

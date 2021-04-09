@@ -45,14 +45,14 @@ The database object relationship between the dependent and the the database obje
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [Dependent Class](dependent-class.html)
+[Dependent Class](dependent-class.html)
       <br />
-      [Dependent Members](dependent-members.html)
+[Dependent Members](dependent-members.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgObjectTypes Enumeration](adg-object-types-enumeration.html)
+[AdgObjectTypes Enumeration](adg-object-types-enumeration.html)
 

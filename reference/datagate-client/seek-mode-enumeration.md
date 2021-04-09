@@ -59,11 +59,11 @@ The **SeekMode** enumeration is used as a parameter by the [ SeekKey](file-adapt
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [SeekKey Method](file-adapter-class-seek-key-method.html)
+[SeekKey Method](file-adapter-class-seek-key-method.html)
       <br />
-      [SeekRRN Method](file-adapter-class-seek-rrn-method.html) <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[SeekRRN Method](file-adapter-class-seek-rrn-method.html) <br />
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

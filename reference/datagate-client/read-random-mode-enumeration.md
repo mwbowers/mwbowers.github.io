@@ -117,18 +117,18 @@ ReadRandomMode Enumeration defines values in which you can select one of the cho
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
       <span>
-        [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
         <br />
       </span>
       <span>
-        [ReadRandomKey Method](file-adapter-class-read-random-key-method.html)
+[ReadRandomKey Method](file-adapter-class-read-random-key-method.html)
         <br />
       </span>
       <span>
-        [ReadRandomRRN Method](file-adapter-class-read-random-rrn-method.html)
+[ReadRandomRRN Method](file-adapter-class-read-random-rrn-method.html)
       </span>
 

@@ -67,6 +67,6 @@ This constructor sets **SourceProfile** properties to default values as follows:
 ## See 
 Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html) <br />[SourceProfile Class Members](source-profile-members.html)<br />[AdgConnection Class](adg-connection-class.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+
+[SourceProfile Class](source-profile-class.html) <br />[SourceProfile Class Members](source-profile-members.html)<br />[AdgConnection Class](adg-connection-class.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

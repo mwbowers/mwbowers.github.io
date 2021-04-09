@@ -15,7 +15,7 @@ keywords: Language Reference
 
 <dl>
         <dt>
-          [Class Library](class-library-main.html)
+[Class Library](class-library-main.html)
         </dt>
         <dd>Documents each of the public classes that constitute the ASNA DataGate Client 
 						for Visual Studio 2019 </dd>

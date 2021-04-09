@@ -25,8 +25,8 @@ keywords: XmlInfoEventArgs class, all members
 
 ## See Also
 
-<dl />
-      [XmlInfoEventArgs Class](xml-info-event-args-class.html)
+
+[XmlInfoEventArgs Class](xml-info-event-args-class.html)
       <br />
-      [XmlInfoEventType Enumeration](xml-info-event-type-enumeration.html)
+[XmlInfoEventType Enumeration](xml-info-event-type-enumeration.html)
 

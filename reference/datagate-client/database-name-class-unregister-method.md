@@ -52,12 +52,12 @@ Deletes a registered database name from the system registry.
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [DatabaseName Class](database-name-class.html)
+
+[DatabaseName Class](database-name-class.html)
       <br />
-      [DatabaseName Class Members](database-name-members.html)
+[DatabaseName Class Members](database-name-members.html)
       <br />
-      [UnUnregister Method](dcsDatabaseNameClassUnUnregisterMethod.html)
+[UnUnregister Method](dcsDatabaseNameClassUnUnregisterMethod.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

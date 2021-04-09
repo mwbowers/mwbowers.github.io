@@ -156,14 +156,14 @@ keywords: how to, return file properties when opening a file
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [FileOpenAttr Class](file-open-attr-class.html)
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [FileOpenAttr Class Members](file-open-attr-class-members.html)
+[FileOpenAttr Class Members](file-open-attr-class-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

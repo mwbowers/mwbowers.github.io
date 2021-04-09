@@ -25,6 +25,6 @@ keywords: IMember class, methods
 
 ## See Also
 
-<dl />
-      [IMember Class](imember-class.html)
+
+[IMember Class](imember-class.html)
 

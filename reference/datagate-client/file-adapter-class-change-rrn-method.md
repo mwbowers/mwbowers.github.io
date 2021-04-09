@@ -21,7 +21,7 @@ keywords: FileAdapter.ChangeRRN method
 Updates the database file record specified by relative record number with the contents of the specified [AdgDataSet.ActiveRow ](adg-dataset-class-active-row-property.html)property.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void ChangeRRN(
-   [AdgDataSet](adg-dataset-class.html) ds,
+[AdgDataSet](adg-dataset-class.html) ds,
    long RRN
 );** 
       </pre>
@@ -90,10 +90,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
       <span>
-        [FileAdapter Class](file-adapter-class.html) <br />[
+[FileAdapter Class](file-adapter-class.html) <br />[
 						FileAdapter Members](file-adapter-members.html)<br />[FileAdapter.ChangeCurrent Method](file-adapter-class-change-current-method.html)</span>
 

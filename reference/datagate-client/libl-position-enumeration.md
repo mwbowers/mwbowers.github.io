@@ -60,8 +60,8 @@ keywords: Replace enumeration member
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ILibraryList.AddEntry Method](ilibrary-list-class-add-entry-method.html)
+
+[ILibraryList.AddEntry Method](ilibrary-list-class-add-entry-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

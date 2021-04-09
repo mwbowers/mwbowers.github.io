@@ -43,14 +43,14 @@ The value of this property is used by the database provider to prioritize the tr
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [IAdgTransaction Class Members](iadg-transaction-members.html)
+[IAdgTransaction Class Members](iadg-transaction-members.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [TransactionLevel Enumeration](transaction-level-enumeration.html)
+[TransactionLevel Enumeration](transaction-level-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

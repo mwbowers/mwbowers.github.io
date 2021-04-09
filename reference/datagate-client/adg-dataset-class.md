@@ -45,14 +45,14 @@ It is generally not recommended to compose your own class to inherit **AdgDataSe
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-							  [AdgDataSet Members](adg-dataset-members.html)
+
+[AdgDataSet Members](adg-dataset-members.html)
 							  <br />
-							  [FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html)
+[FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html)
 							  <br />
-							  [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
 							  <br />
-							  [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
 							  <br /><br />
 							  <br />
 

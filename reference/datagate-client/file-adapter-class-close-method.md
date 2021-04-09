@@ -129,8 +129,8 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
       [
 					FileAdapter Class Members](file-adapter-members.html)
@@ -138,7 +138,7 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
       [Dispose 
 					Method](file-adapter-class-dispose-method.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
       [
 					OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)

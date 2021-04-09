@@ -80,16 +80,16 @@ The default value, **SecurePassphrase** , should be used in most cases for the b
 ## See 
 Also
 
-<dl />
-      [SourceProfile Class](source-profile-class.html)
+
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [SourceProfile Class Members](source-profile-members.html)
+[SourceProfile Class Members](source-profile-members.html)
       <br />
-      [User Property](source-profile-class-user-property.html)
+[User Property](source-profile-class-user-property.html)
       <br />
-      [Password Property](source-profile-class-password-property.html)
+[Password Property](source-profile-class-password-property.html)
       <br />
-      [PasswordType Enumeration](password-type-enumeration.html)
+[PasswordType Enumeration](password-type-enumeration.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

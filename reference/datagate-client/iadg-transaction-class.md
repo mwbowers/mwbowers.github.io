@@ -54,10 +54,10 @@ At the time of this writing, only the IBM i database provider supports transacti
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgTransaction Members](iadg-transaction-members.html)
+
+[IAdgTransaction Members](iadg-transaction-members.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
       [BeginTransaction 
 					Method](adg-connection-class-begin-transaction-method-main.html)
@@ -65,5 +65,5 @@ At the time of this writing, only the IBM i database provider supports transacti
       [BeginAutoTransaction 
 					Method](adg-connection-class-begin-auto-transaction-method-main.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

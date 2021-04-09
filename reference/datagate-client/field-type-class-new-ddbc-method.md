@@ -39,7 +39,7 @@ Creates a new fixed-width double-byte character [FieldType](field-type-class.htm
  *fmt* 
         </dt>
         <dd>
-          [DbcsFormat](dbcs-format-enumeration.html).  The format of the 
+[DbcsFormat](dbcs-format-enumeration.html).  The format of the 
 								double-byte character **FieldType** .
 							</dd>
 </dl>
@@ -59,12 +59,12 @@ System.ArgumentException. Thrown if *fmt* is **DbcsFormat.None** .
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FieldType Class](field-type-class.html)
+
+[FieldType Class](field-type-class.html)
       <br />
-      [FieldType Class Members](field-type-members.html)
+[FieldType Class Members](field-type-members.html)
       <br />
-      [DbcsFormat Enumeration](dbcs-format-enumeration.html)
+[DbcsFormat Enumeration](dbcs-format-enumeration.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

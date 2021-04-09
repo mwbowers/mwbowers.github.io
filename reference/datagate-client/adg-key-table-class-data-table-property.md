@@ -45,17 +45,17 @@ Unexpected result can occur if the value of **DataTable** is altered by the user
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgKeyTable Class](adg-key-table-class.html)
+
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [AdgKeyTable Class Members](adg-key-table-members.html)
+[AdgKeyTable Class Members](adg-key-table-members.html)
       <br />
-      [Row Property](adg-key-table-class-row-property.html)
+[Row Property](adg-key-table-class-row-property.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [Efficient File Access](efficient-file-access.html)
+[Efficient File Access](efficient-file-access.html)
       <br />System.Data.DataTable
 

@@ -27,8 +27,8 @@ keywords: ILibraryList class, methods
 
 ## See Also
 
-<dl />
-      [ILibraryList Class](ilibrary-list-class.html)
+
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
-      [AdgEnumerator Delegate](adg-enumerator-delegate.html)
+[AdgEnumerator Delegate](adg-enumerator-delegate.html)
 

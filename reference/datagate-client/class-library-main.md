@@ -41,6 +41,6 @@ All public static members (methods, properties, fields, and events) within the D
 For all classes and structures in DCS, check the Thread Safety section in the Reference documentation to determine whether it is thread safe. If you want to use a class that is not thread-safe in a multithreaded environment you must wrap an instance of the class with code that supplies the necessary synchronization constructs. 
 ## See Also
 
-<dl />
-      [DataGate Component Suite Reference](reference-main.html)
+
+[DataGate Component Suite Reference](reference-main.html)
 

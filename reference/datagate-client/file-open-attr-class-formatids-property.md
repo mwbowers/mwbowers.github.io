@@ -48,20 +48,20 @@ Format identifiers for use in format verification are available from the [AdgDat
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [FileOpenAttr Class Members](file-open-attr-class-members.html)
+[FileOpenAttr Class Members](file-open-attr-class-members.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [FormatIDs Property](adg-dataset-class-formatids-property.html)
+[FormatIDs Property](adg-dataset-class-formatids-property.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

@@ -295,29 +295,29 @@ A successful read operation optionally locks the record read as directed by the 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
       <br />
-      [SeekRange Method](file-adapter-class-seek-range-method.html)
+[SeekRange Method](file-adapter-class-seek-range-method.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [KeyPartCount Property](adg-key-table-class-key-part-count-property.html)
+[KeyPartCount Property](adg-key-table-class-key-part-count-property.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [ReadEqualMode Enumeration](read-equal-mode-enumeration.html)
+[ReadEqualMode Enumeration](read-equal-mode-enumeration.html)
       <br />
-      [LockRequest Enumeration](lock-request-enumeration.html)
+[LockRequest Enumeration](lock-request-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
 

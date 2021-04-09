@@ -60,20 +60,20 @@ This document contains a list and brief description of the **new and updated** e
 
 ## See Also
 
-<dl />
-        [Client Enumerations](datagate-client-enumerations.html)
+
+[Client Enumerations](datagate-client-enumerations.html)
         <br />
-        [Common Enumerations](datagate-common-enumerations.html)
+[Common Enumerations](datagate-common-enumerations.html)
         <br />
-        [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
         <br />
-        [AdgSubType Property](iadg-object-class-adg-subtype-property.html)
+[AdgSubType Property](iadg-object-class-adg-subtype-property.html)
         <br />
-        [IAdgTransaction Class](iadg-transaction-class.html)
+[IAdgTransaction Class](iadg-transaction-class.html)
         <br />
         [TransactionLevel 
 					Property](iadg-transaction-class-transaction-level-property.html)
         <br />
-        [ILibraryList.AddEntry](ilibrary-list-class-add-entry-method.html)
+[ILibraryList.AddEntry](ilibrary-list-class-add-entry-method.html)
 
 </keyword>

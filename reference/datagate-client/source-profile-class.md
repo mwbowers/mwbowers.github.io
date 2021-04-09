@@ -77,14 +77,14 @@ The [Qualifier](source-profile-class-qualifier-property.html) property is reserv
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [SourceProfile Members](source-profile-members.html)
+
+[SourceProfile Members](source-profile-members.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [SourceProfile Property](adg-connection-class-source-profile-property.html)
+[SourceProfile Property](adg-connection-class-source-profile-property.html)
       <br />
-      [AdgConnection Class Constructors](adg-connection-constructors-main.html)
+[AdgConnection Class Constructors](adg-connection-constructors-main.html)
       <br />
-      [ASNA DataGate Providers Namespace](datagate-providers-namespace.html)
+[ASNA DataGate Providers Namespace](datagate-providers-namespace.html)
 

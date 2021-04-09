@@ -40,8 +40,8 @@ keywords: properties [DCS 16.0 IAdgObject class
 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IAdgObject Members](iadg-object-members.html)
+[IAdgObject Members](iadg-object-members.html)
 

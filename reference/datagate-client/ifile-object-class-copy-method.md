@@ -95,10 +95,10 @@ The new database file will reside in the *targetDir* library with the name *newN
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IFileObject Class Members](ifile-object-members.html)
+[IFileObject Class Members](ifile-object-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

@@ -24,8 +24,8 @@ keywords: properties [DCS 16.0 AdgKeyTable class
 
 ## See Also
 
-<dl />
-      [AdgKeyTable Class](adg-key-table-class.html)
+
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [AdgTable Class](adg-table-class.html)
+[AdgTable Class](adg-table-class.html)
 

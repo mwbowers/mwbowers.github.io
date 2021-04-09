@@ -47,12 +47,12 @@ The value of **DependentType** determines what type of dependency is represented
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
-      [Dependent Class](dependent-class.html)
+[Dependent Class](dependent-class.html)
       <br />
-      [DependentTypes Enumeration](dependent-types-enumeration.html)
+[DependentTypes Enumeration](dependent-types-enumeration.html)
       <br />
-      [IAdgObject.Bases Property](iadg-object-class-bases-property.html)
+[IAdgObject.Bases Property](iadg-object-class-bases-property.html)
 

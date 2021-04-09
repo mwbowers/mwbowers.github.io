@@ -81,19 +81,19 @@ Note that prior to calling this method, you must call **PrepareRow** to stage a 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [AddRow Methods](adg-dataset-class-add-row-methods.html)
+[AddRow Methods](adg-dataset-class-add-row-methods.html)
       <br />
-      [PrepareRow Methods](adg-dataset-class-prepare-row-method-main.html)
+[PrepareRow Methods](adg-dataset-class-prepare-row-method-main.html)
       <br />
       [AddPreparedRowAndSetActive 
 					Method](adg-dataset-class-add-prepared-row-and-set-active-method.html)
       <br />
-      [GetFormatName Method](adg-dataset-class-get-format-name-method.html)
+[GetFormatName Method](adg-dataset-class-get-format-name-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

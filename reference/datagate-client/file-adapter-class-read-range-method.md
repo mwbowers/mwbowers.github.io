@@ -27,13 +27,13 @@ keywords: files, record locking override
 Read a database file record containing a key within a given range of values.
 <pre>        <span class="lang">[C#]</span>
  **Public void ReadRange(
-   [AdgDataSet](adg-dataset-class.html) ds,
-   [RangeMode](range-mode-enumeration.html) mode,
-   [LockRequest](lock-request-enumeration.html) lr,
-   [AdgKeyTable](adg-key-table-class.html) firstKey,
-   [RangeFirst](range-first-enumeration.html) rangeFirst,
-   [AdgKeyTable](adg-key-table-class.html) lastKey,
-   [RangeLast](range-last-enumeration.html) rangeLast
+[AdgDataSet](adg-dataset-class.html) ds,
+[RangeMode](range-mode-enumeration.html) mode,
+[LockRequest](lock-request-enumeration.html) lr,
+[AdgKeyTable](adg-key-table-class.html) firstKey,
+[RangeFirst](range-first-enumeration.html) rangeFirst,
+[AdgKeyTable](adg-key-table-class.html) lastKey,
+[RangeLast](range-last-enumeration.html) rangeLast
 );** 
       </pre>
       <pre>        <span class="lang">[Visual Basic] </span>
@@ -302,42 +302,42 @@ Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [ReadSequential Method](file-adapter-class-read-sequential-method.html)
+[ReadSequential Method](file-adapter-class-read-sequential-method.html)
       <br />
       [ReadSequentialEqual 
 					Method](file-adapter-class-read-sequential-equal-method.html)
       <br />
-      [DeleteRange Method](file-adapter-class-delete-range-method.html)
+[DeleteRange Method](file-adapter-class-delete-range-method.html)
       <br />
-      [SeekRange Method](file-adapter-class-seek-range-method.html)
+[SeekRange Method](file-adapter-class-seek-range-method.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [FileOpenAttr Class](file-open-attr-class.html)
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
+[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [RangeMode Enumeration](range-mode-enumeration.html)
+[RangeMode Enumeration](range-mode-enumeration.html)
       <br />
-      [RangeFirst Enumeration](range-first-enumeration.html)
+[RangeFirst Enumeration](range-first-enumeration.html)
       <br />
-      [RangeLast Enumeration](range-last-enumeration.html)
+[RangeLast Enumeration](range-last-enumeration.html)
       <br />
-      [LockRequest Enumeration](lock-request-enumeration.html)
+[LockRequest Enumeration](lock-request-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
 

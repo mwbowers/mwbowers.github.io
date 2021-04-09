@@ -129,20 +129,20 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
+
       <span>
-        [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
         <br />
-        [DeleteRange Method](file-adapter-class-delete-range-method.html)
+[DeleteRange Method](file-adapter-class-delete-range-method.html)
         <br />
-        [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       </span>
       <br />
       <span>
-        [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
         <br />
       </span>
       <span>
-        [SeekRange Method](file-adapter-class-seek-range-method.html)
+[SeekRange Method](file-adapter-class-seek-range-method.html)
       </span>
 

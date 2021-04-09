@@ -33,7 +33,7 @@ Creates a new date [ FieldType](field-type-class.html).
  *fmt* 
         </dt>
         <dd>
-          [DateTimeFormat](date-time-format-enumeration.html).  The format 
+[DateTimeFormat](date-time-format-enumeration.html).  The format 
 						of the date field.</dd>
 </dl>
 
@@ -127,6 +127,6 @@ Note that internally, DCS manipulates date, time, and timestamp fields as **Syst
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />[FieldType Class](field-type-class.html)<br />[FieldType Class Members](field-type-members.html)<br />[DateTimeFormat Enumeration](date-time-format-enumeration.html)<br />[As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)
+[FieldType Class](field-type-class.html)<br />[FieldType Class Members](field-type-members.html)<br />[DateTimeFormat Enumeration](date-time-format-enumeration.html)<br />[As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)
  <br />[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

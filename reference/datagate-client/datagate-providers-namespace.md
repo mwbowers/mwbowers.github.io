@@ -27,10 +27,10 @@ The ASNA.DataGate.Providers namespace contains essential classes for supplying a
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
 

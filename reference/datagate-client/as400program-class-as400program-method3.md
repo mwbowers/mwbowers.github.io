@@ -92,20 +92,20 @@ If *Connection* is set with a null value or is an **AdgConnection** instance tha
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [Connection Property](as400program-class-connection-property.html)
+[Connection Property](as400program-class-connection-property.html)
       <br />
-      [ProgramPath Property](as400program-class-program-path-property.html)
+[ProgramPath Property](as400program-class-program-path-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

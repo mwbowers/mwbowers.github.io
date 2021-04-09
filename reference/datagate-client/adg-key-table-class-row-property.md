@@ -135,10 +135,10 @@ Note that DCS never adds the **DataRow** referenced by the **Row** property to t
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgKeyTable Class](adg-key-table-class.html)
+
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [AdgKeyTable Class Members](adg-key-table-members.html)
+[AdgKeyTable Class Members](adg-key-table-members.html)
       <br />
       [DataTable 
 		  Property](adg-key-table-class-data-table-property.html)
@@ -149,7 +149,7 @@ Note that DCS never adds the **DataRow** referenced by the **Row** property to t
       [ASNA.DataGate.Client 
 		  Namespace](datagate-client-namespace.html)
       <br />
-      [Efficient File Access](efficient-file-access.html)
+[Efficient File Access](efficient-file-access.html)
       <br />
       	System.Data.DataRow Members<br />
       	System.Data.DataTable Members

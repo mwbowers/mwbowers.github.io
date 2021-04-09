@@ -32,6 +32,6 @@ keywords: fields [DCS 16.0 DatabaseAttributes class
 
 ## See Also
 
-<dl />
-      [DatabaseAttributes Class](database-attribute-class.html)
+
+[DatabaseAttributes Class](database-attribute-class.html)
 

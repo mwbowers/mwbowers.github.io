@@ -25,6 +25,6 @@ keywords: methods [DCS 16.0 IAdgTransaction class
 
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
 

@@ -26,8 +26,8 @@ The **ASNA.DataGate.DataLink** namespace contains the fundamental classes for ac
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
       <br />
-      [As400Program Class](as400program-class.html)
+[As400Program Class](as400program-class.html)
 

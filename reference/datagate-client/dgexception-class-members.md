@@ -58,6 +58,6 @@ keywords: dgException class, all members
 
 ## See Also
 
-<dl />
-      [dgException Class](dgexception-class.html)
+
+[dgException Class](dgexception-class.html)
 

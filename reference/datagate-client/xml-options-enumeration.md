@@ -78,24 +78,24 @@ The **XmlOptions** enumeration defines bit-flag values directing the [ AdgFactor
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [WriteXml Methods](iadg-object-class-write-xml-methods.html)
+[WriteXml Methods](iadg-object-class-write-xml-methods.html)
       <br />
-      [Schema Property](iadg-object-class-schema-property.html)
+[Schema Property](iadg-object-class-schema-property.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

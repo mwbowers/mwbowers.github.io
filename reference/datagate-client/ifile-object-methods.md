@@ -29,10 +29,10 @@ keywords: IFileObject class, methods
 
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [RepairOptions Enumeration](repair-options-enumeration.html)
+[RepairOptions Enumeration](repair-options-enumeration.html)
 

@@ -60,10 +60,10 @@ Converts an object to a data area value provided with the parameter type, value,
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDataArea Class](idataarea-class.html)
+
+[IDataArea Class](idataarea-class.html)
       <br />
-      [IDataArea Class Members](dcsIDataAreaMembers.html)
+[IDataArea Class Members](dcsIDataAreaMembers.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

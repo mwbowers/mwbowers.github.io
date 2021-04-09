@@ -45,10 +45,10 @@ DCS only calls the delegate during the operation of one of the above methods. DC
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDirectory.RepairObjects Method](idirectory-class-repair-objects-method.html)
+
+[IDirectory.RepairObjects Method](idirectory-class-repair-objects-method.html)
       <br />
-      [IFileObject.RepairFile Method](ifile-object-class-repair-file-method.html)
+[IFileObject.RepairFile Method](ifile-object-class-repair-file-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

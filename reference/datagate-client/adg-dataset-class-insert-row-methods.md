@@ -29,10 +29,10 @@ Inserts a row into the dataset table for a specified format and relative record.
 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Members](adg-dataset-members.html)
+[AdgDataSet Members](adg-dataset-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

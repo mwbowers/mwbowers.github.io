@@ -26,22 +26,22 @@ As records are read from a file or added via **InsertRow** they accumulate in th
 Note that accessing **DataRow** objects in **AdgDataSet** is not the same as accessing records in a database file. Database records can only be read, added, updated, and removed via [ FileAdapter](file-adapter-class.html) methods. **AdgDataSet** methods only access the in-memory representation of a database file's formats, not the underlying database file. **FileAdapter** methods use the **AdgDataSet** as a repository for database records read, added, and updated.
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [AddRow Methods](adg-dataset-class-add-row-methods.html)
+[AddRow Methods](adg-dataset-class-add-row-methods.html)
       <br />
-      [DeleteRow Method](adg-dataset-class-delete-row-method.html)
+[DeleteRow Method](adg-dataset-class-delete-row-method.html)
       <br />
-      [InsertRow Methods](adg-dataset-class-insert-row-methods.html)
+[InsertRow Methods](adg-dataset-class-insert-row-methods.html)
       <br />
-      [PrepareRow Methods](adg-dataset-class-prepare-row-method-main.html)
+[PrepareRow Methods](adg-dataset-class-prepare-row-method-main.html)
       <br />
-      [SetActive Methods](adg-dataset-class-set-active-methods.html)
+[SetActive Methods](adg-dataset-class-set-active-methods.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
       <br />
       [Reading and Writing to Database 
@@ -50,7 +50,7 @@ Note that accessing **DataRow** objects in **AdgDataSet** is not the same as acc
       [Verifying Results with 
 					Exception Handling](verifying-resultswith-exception-handling.html)
       <br />
-      [Using the FileAdapter Class](usingthe-file-adapter-class.html)
+[Using the FileAdapter Class](usingthe-file-adapter-class.html)
       <br />
-      [Efficient File Access](efficient-file-access.html)
+[Efficient File Access](efficient-file-access.html)
 

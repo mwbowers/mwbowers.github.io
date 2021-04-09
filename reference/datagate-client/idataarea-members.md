@@ -35,6 +35,6 @@ TocOrder: 0
 
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
 

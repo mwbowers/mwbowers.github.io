@@ -34,10 +34,10 @@ The name of the operating system on which the database resides.
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [DatabaseAttributes Class](dcsDatabaseAttributesClass.html)
+
+[DatabaseAttributes Class](dcsDatabaseAttributesClass.html)
       <br />
-      [DatabaseAttributes Class Members](database-attributes-members.html)
+[DatabaseAttributes Class Members](database-attributes-members.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

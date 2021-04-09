@@ -64,15 +64,15 @@ To use the file format name, use [ GetFormatTable(string)](adg-dataset-class-get
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [Formats Property](adg-dataset-class-formats-property.html)
+[Formats Property](adg-dataset-class-formats-property.html)
       <br />
       [GetFormatTable Method 
 					(string)](adg-dataset-class-get-format-table-methodstring.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

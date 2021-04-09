@@ -14,16 +14,16 @@ keywords: databases, managing connections
 Prior to calling <span> **Open** </span>, you can use the [ SourceProfile](adg-connection-class-source-profile-property.html) property to modify connection parameters. Changes to <span> **SourceProfile** </span> affect subsequent <span> **Open** </span> method calls. The characteristics of the database connection cannot be changed when in the Open state. See the next topic [ Database Name Handling](database-name-handling.html) for a further introduction to <span> **SourceProfile** </span>.
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [SourceProfile Property](adg-connection-class-source-profile-property.html)
+[SourceProfile Property](adg-connection-class-source-profile-property.html)
       <br />
-      [AdgConnection.State Property](adg-connection-class-state-property.html)
+[AdgConnection.State Property](adg-connection-class-state-property.html)
       <br />
-      [Database Name Handling](database-name-handling.html)
+[Database Name Handling](database-name-handling.html)
       <br />
-      [Connecting to a Database](connectingtoa-database-main.html)
+[Connecting to a Database](connectingtoa-database-main.html)
 

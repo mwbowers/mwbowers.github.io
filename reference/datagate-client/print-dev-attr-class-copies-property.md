@@ -42,12 +42,12 @@ The default number of copies is 1. When you are printing multiple copies, you ma
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />
-      [PrintDevAttr Class Members](print-dev-attr-members.html)
+[PrintDevAttr Class Members](print-dev-attr-members.html)
       <br />
-      [Collate Property](print-dev-attr-class-collate-property.html)
+[Collate Property](print-dev-attr-class-collate-property.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

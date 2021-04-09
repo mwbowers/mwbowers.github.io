@@ -155,22 +155,22 @@ When set to the Auto value, record locking occurs automatically in **FileAdapter
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [FileOpenAttr Class Members](file-open-attr-class-members.html)
+[FileOpenAttr Class Members](file-open-attr-class-members.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Members](file-adapter-members.html)
+[FileAdapter Members](file-adapter-members.html)
       <br />
-      [ReleaseCurrent Method](file-adapter-class-release-current-method.html)
+[ReleaseCurrent Method](file-adapter-class-release-current-method.html)
       <br />
-      [ReleaseRRN Method](file-adapter-class-release-rrn-method.html)
+[ReleaseRRN Method](file-adapter-class-release-rrn-method.html)
       <br />
-      [LockRequest Enumeration](lock-request-enumeration.html)
+[LockRequest Enumeration](lock-request-enumeration.html)
       <br />
-      [FileLocks Enumeration](file-locks-enumeration.html)
+[FileLocks Enumeration](file-locks-enumeration.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

@@ -30,14 +30,14 @@ Converts an object or value type to a parameter list value.
 
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

@@ -26,14 +26,14 @@ keywords: AdgConnection class, properties
 
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Members](adg-connection-members.html)
+[AdgConnection Members](adg-connection-members.html)
       <br />
-      [SourceProfile Class](source-profile-class.html)
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
 

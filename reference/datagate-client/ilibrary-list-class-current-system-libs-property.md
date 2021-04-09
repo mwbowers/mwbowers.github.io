@@ -52,14 +52,14 @@ Use [CurrentUserLibs](ilibrary-list-class-current-user-libs-property.html) prope
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ILibraryList Class](ilibrary-list-class.html)
+
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
-      [ILibraryList Class Members](ilibrary-list-members.html)
+[ILibraryList Class Members](ilibrary-list-members.html)
       <br />
-      [CurrentUserLibs Property](ilibrary-list-class-current-user-libs-property.html)
+[CurrentUserLibs Property](ilibrary-list-class-current-user-libs-property.html)
       <br />
-      [AdgConnection.CurrentUserLibl](adg-connection-current-user-libl-property.html)
+[AdgConnection.CurrentUserLibl](adg-connection-current-user-libl-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

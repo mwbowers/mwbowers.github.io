@@ -11,7 +11,7 @@ Returns an object of a specific type from the program parameter list.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public object ParmToObject(
-   [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
+[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
    Type ReturnType
 );** 
       </pre>
@@ -36,7 +36,7 @@ DclSrParm ReturnType Type(Type)**
  *Parameter* 
         </dt>
         <dd>
-          [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  The 
+[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  The 
 						program parameter object in the parameter list to get the value of. </dd>
         <dt>
  *ReturnType*  
@@ -144,18 +144,18 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [Connection Property](as400program-class-connection-property.html)
+[Connection Property](as400program-class-connection-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
       <br />
-      [ASNA.DataGate.DataLink.StructureType Class](structure-type-class.html)
+[ASNA.DataGate.DataLink.StructureType Class](structure-type-class.html)
 

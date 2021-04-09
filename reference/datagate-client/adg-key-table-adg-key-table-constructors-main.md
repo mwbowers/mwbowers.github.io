@@ -24,8 +24,8 @@ This member supports DCS infrastructure and is not intended to be used directly 
 
 ## See Also
 
-<dl />
-      [AdgKeyTable Class](adg-key-table-class.html) <br />
-      [AdgKeyTable Members](adg-key-table-members.html)<br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)  
+
+[AdgKeyTable Class](adg-key-table-class.html) <br />
+[AdgKeyTable Members](adg-key-table-members.html)<br />
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)  
 

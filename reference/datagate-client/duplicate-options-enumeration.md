@@ -49,10 +49,10 @@ The **Duplicate** method is used to copy an existing database object. One or mor
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Duplicate Method](iadg-object-class-duplicate-method.html)
+[Duplicate Method](iadg-object-class-duplicate-method.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

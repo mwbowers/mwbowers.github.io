@@ -51,6 +51,6 @@ keywords: FieldType class, all members
 
 ## See Also
 
-<dl />
-      [FieldType Class](field-type-class.html)
+
+[FieldType Class](field-type-class.html)
 

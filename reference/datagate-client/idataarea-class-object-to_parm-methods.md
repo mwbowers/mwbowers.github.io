@@ -25,12 +25,12 @@ keywords: IDataArea.ObjectToParm methods
 
 ## See Also
 
-<dl />
-      [IDataArea Class](idataarea-class.html)
+
+[IDataArea Class](idataarea-class.html)
       <br />
-      [IDataArea Class Members](dcsIDataAreaMembers.html)
+[IDataArea Class Members](dcsIDataAreaMembers.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
       <a href="DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm Class</a>
 

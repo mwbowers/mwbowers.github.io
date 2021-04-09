@@ -31,13 +31,13 @@ Construct a representation of a complex iSeries program parameter.
  *st* 
         </dt>
         <dd>
-          [StructureType](structure-type-class.html). The data type 
+[StructureType](structure-type-class.html). The data type 
 						description of the structured program parameter. </dd>
         <dt>
  *dir* 
         </dt>
         <dd>
-          [ASNA.DataGate.Common.DataDirection](data-direction-enumeration.html). 
+[ASNA.DataGate.Common.DataDirection](data-direction-enumeration.html). 
 								The declared input/output orientation of the parameter.</dd>
 </dl>
 
@@ -73,22 +73,22 @@ Careful use of the *dir* parameter can improve the performance of iSeries progra
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ProgParm Class](prog-parm-class.html)
+
+[ProgParm Class](prog-parm-class.html)
       <br />
-      [ProgParm Class Members](prog-parm-members.html)
+[ProgParm Class Members](prog-parm-members.html)
       <br />
-      [As400Program Class](as400program-class.html)
+[As400Program Class](as400program-class.html)
       <br />
-      [AppendParm Method](as400program-class-append-parm-method.html)
+[AppendParm Method](as400program-class-append-parm-method.html)
       <br />
-      [AppendParms Method](as400program-class-append-parms-method.html)
+[AppendParms Method](as400program-class-append-parms-method.html)
       <br />
-      [ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
+[ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
       <br />
-      [DataDirection Enumeration](data-direction-enumeration.html)
+[DataDirection Enumeration](data-direction-enumeration.html)
       <br />
-      [ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
+[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

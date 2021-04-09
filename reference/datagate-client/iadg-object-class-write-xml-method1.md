@@ -89,24 +89,24 @@ For some database object hierarchies, **WriteXml** may produce a large XML strea
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [WriteXml Method](dcsIAdgObjectClassWriteXmlMethod2.html)
+[WriteXml Method](dcsIAdgObjectClassWriteXmlMethod2.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
-      [NewFile Method](adg-factory-class-new-file-method.html)
+[NewFile Method](adg-factory-class-new-file-method.html)
       <br />
-      [NewDirectory Method](adg-factory-class-new-directory-method.html)
+[NewDirectory Method](adg-factory-class-new-directory-method.html)
       <br />
-      [NewMember Method](adg-factory-class-new-member-method.html)
+[NewMember Method](adg-factory-class-new-member-method.html)
       <br />
-      [XmlOptions Enumeration](xml-options-enumeration.html)
+[XmlOptions Enumeration](xml-options-enumeration.html)
       <br />
-      [XmlInfoEventHandler Delegate](xml-info-event-handler-delegate.html)
+[XmlInfoEventHandler Delegate](xml-info-event-handler-delegate.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

@@ -195,19 +195,19 @@ Under construction.
 -- <a href="#return">Return to contents</a> --
 ## See Also
 
-<dl />
+
       <a href="dcsDataGateClientNamespace.html)
       <br />
-      [AdgFactory Class Members](adg-factory-members.html) 
+[AdgFactory Class Members](adg-factory-members.html) 
 				<br />[AuthorityEntry Class Members](authority-entry-members.html) 
 				<br />[Dependent Class Members](dependent-members.html)<br />
-				[IAdgObject Class Members](iadg-object-members.html) 
+[IAdgObject Class Members](iadg-object-members.html) 
 				<br />[IAdgTransaction Class Members](iadg-transaction-members.html)<br />
-				[IDirectory Class Members](idirectory-members.html)<br />
-				[IFileObject Class Members](ifile-object-members.html)<br />
-				[ILibraryList Class Members](ilibrary-list-members.html)<br />
-				[IMember Class Members](imember-members.html) 
+[IDirectory Class Members](idirectory-members.html)<br />
+[IFileObject Class Members](ifile-object-members.html)<br />
+[ILibraryList Class Members](ilibrary-list-members.html)<br />
+[IMember Class Members](imember-members.html) 
 				<br />[XmlInfoEventArgs Class Members](xml-info-event-args-members.html)<br />
-				[Providers Namespace](datagate-providers-namespace.html) 
+[Providers Namespace](datagate-providers-namespace.html) 
 				<br />[IPrintProperties Class Members](iprint-properties-members.html)
 

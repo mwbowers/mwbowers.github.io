@@ -61,16 +61,16 @@ A valid **ILibraryList** reference may be obtained from DCS with:
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ILibraryList Members](ilibrary-list-members.html)
+
+[ILibraryList Members](ilibrary-list-members.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgFactory.NewLibraryList](adg-factory-class-new-library-list-method.html)
+[AdgFactory.NewLibraryList](adg-factory-class-new-library-list-method.html)
       <br />
-      [LiblPosition Enumeration](libl-position-enumeration.html)
+[LiblPosition Enumeration](libl-position-enumeration.html)
       <br />
-      [AdgEnumerator Delegate](adg-enumerator-delegate.html)
+[AdgEnumerator Delegate](adg-enumerator-delegate.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

@@ -154,25 +154,25 @@ For the method to succeed, the *Value* parameter must have a valid conversion to
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [Connection](as400program-class-connection-property.html)
+[Connection](as400program-class-connection-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
+[ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ProgParmType Constructor](prog-parm-type-class-prog-parm-type-constructor.html)
+[ProgParmType Constructor](prog-parm-type-class-prog-parm-type-constructor.html)
       <br />
-      [ASNA.DataGate.DataLink.StructureType Class](structure-type-class.html)
+[ASNA.DataGate.DataLink.StructureType Class](structure-type-class.html)
       <br />
       [StructureType 
 					Constructor](structure-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
 

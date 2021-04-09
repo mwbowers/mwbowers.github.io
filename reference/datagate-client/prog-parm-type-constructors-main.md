@@ -29,12 +29,12 @@ Constructs an instance of a **ProgParmType** object.
 
 ## See Also
 
-<dl />
-      [ProgParmType Class](prog-parm-type-class.html)
+
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ProgParmType Class Members](prog-parm-type-members.html)
+[ProgParmType Class Members](prog-parm-type-members.html)
       <br />
-      [ASNA DataGate DataLink Namespace](datagate-data-link-namespace.html)
+[ASNA DataGate DataLink Namespace](datagate-data-link-namespace.html)
       <br />
       <br />
 

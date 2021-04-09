@@ -74,10 +74,10 @@ Here we want to use a fileAdapter object named "dbFile" but are unsure as to whe
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Members](file-adapter-members.html)
+[FileAdapter Members](file-adapter-members.html)
       <br />
       [FileAdapter.AdapterStatus 
 					Enumeration](file-adapter-adapter-status-enumeration.html)

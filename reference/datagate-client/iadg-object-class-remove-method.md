@@ -83,18 +83,18 @@ To remove all records of a member, use the [ Clear](imember-class-clear-method.h
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IAdgObject Class Members](iadg-object-members.html)
+[IAdgObject Class Members](iadg-object-members.html)
       <br />
-      [Clear Method](imember-class-clear-method.html)
+[Clear Method](imember-class-clear-method.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

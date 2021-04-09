@@ -45,10 +45,10 @@ Currently the symbolic names are reserved for AVR for Visual Studio 2019 use, so
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [GetAdgDataSet Method](ifile-object-class-get-adg-dataset-method.html)
+[GetAdgDataSet Method](ifile-object-class-get-adg-dataset-method.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

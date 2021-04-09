@@ -42,9 +42,9 @@ The [Message](xml-info-event-args-class-message-field.html) field contains a str
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [XmlInfoEventArgs Members](xml-info-event-args-members.html)
+
+[XmlInfoEventArgs Members](xml-info-event-args-members.html)
       <br />
-      [XmlInfoEventType Enumeration](xml-info-event-type-enumeration.html) <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[XmlInfoEventType Enumeration](xml-info-event-type-enumeration.html) <br />
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

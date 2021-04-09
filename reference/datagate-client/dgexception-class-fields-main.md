@@ -25,8 +25,8 @@ keywords: dgException class, fields
 
 ## See Also
 
-<dl />
-      [dgException Class](dgexception-class.html)
+
+[dgException Class](dgexception-class.html)
       <br />
-      [ASNA DataGate Common Namespace](datagate-common-namespace.html)
+[ASNA DataGate Common Namespace](datagate-common-namespace.html)
 

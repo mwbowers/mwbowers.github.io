@@ -40,8 +40,8 @@ For additional methods see [PrintDevAttr Overview](print-dev-attr-class.html).
 
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />System.Drawing.Printing.PaperSourceKind 
 Enumeration
       <br />System.Drawing.Printing.Duplex 

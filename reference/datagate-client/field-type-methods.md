@@ -35,6 +35,6 @@ keywords: FieldType class, methods
 
 ## See Also
 
-<dl />
-      [FieldType Class](field-type-class.html)
+
+[FieldType Class](field-type-class.html)
 

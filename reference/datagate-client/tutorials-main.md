@@ -15,7 +15,7 @@ keywords: tutorials, DCS for Visual Studio 2019
 
 <dl>
         <dt>
-          [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
         </dt>
         <dd>
 

@@ -67,12 +67,12 @@ The **XmlInforEventHandler** delegate is defined strictly for use as an optional
 ## See 
 Also
 
-<dl />
-      [XmlInfoEventArgs Class](xml-info-event-args-class.html)
+
+[XmlInfoEventArgs Class](xml-info-event-args-class.html)
       <br />
-      [AdgFactory.ReadXml Method](adg-factory-class-read-xml-method2.html)
+[AdgFactory.ReadXml Method](adg-factory-class-read-xml-method2.html)
       <br />
-      [IAdgObject.WriteXml Method](dcsIAdgObjectClassWriteXmlMethod2.html)
+[IAdgObject.WriteXml Method](dcsIAdgObjectClassWriteXmlMethod2.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

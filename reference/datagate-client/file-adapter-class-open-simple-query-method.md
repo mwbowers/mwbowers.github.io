@@ -167,20 +167,20 @@ Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </sp
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [FileName Property](file-adapter-class-file-name-property.html)
+[FileName Property](file-adapter-class-file-name-property.html)
       <br />
-      [MemberName Property](file-adapter-class-member-name-property.html)
+[MemberName Property](file-adapter-class-member-name-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ASNA.DataGate.Common.KeyUsages Enumeration](key-usages-enumeration.html)
+[ASNA.DataGate.Common.KeyUsages Enumeration](key-usages-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

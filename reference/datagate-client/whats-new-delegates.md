@@ -27,10 +27,10 @@ This delegate provides a feedback channel and is defined strictly for use as an 
 
 ## See Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html) 
+[IAdgObject Class](iadg-object-class.html) 
 				<br />[IDirectory Class](idirectory-class.html)
 				<br />[IFileObject Class](ifile-object-class.html) 
 				<br />[ILibraryList Class](ilibrary-list-class.html)

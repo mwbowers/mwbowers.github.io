@@ -80,16 +80,16 @@ On entry, the **WriteState** property of *writer* must not be **Closed** . On su
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [WriteXml Method](iadg-object-class-write-xml-methods.html)
+[WriteXml Method](iadg-object-class-write-xml-methods.html)
       <br />
-      [ReadBases Method](iadg-object-class-read-bases-method.html)
+[ReadBases Method](iadg-object-class-read-bases-method.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Method](adg-factory-class-read-xml-methods.html)
+[ReadXml Method](adg-factory-class-read-xml-methods.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

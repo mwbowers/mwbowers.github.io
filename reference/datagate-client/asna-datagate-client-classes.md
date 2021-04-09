@@ -39,6 +39,6 @@ keywords: classes [DCS 16.0 ASNA.DataGate.Client
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
 

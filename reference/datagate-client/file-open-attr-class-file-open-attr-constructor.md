@@ -34,16 +34,16 @@ Most applications should create **FileOpenAttr** instances via the [ FileAdapter
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](adg-dataset-class.html)
+
+[FileOpenAttr Class](adg-dataset-class.html)
       <br />
-      [FileOpenAttr Class Members](adg-dataset-members.html)
+[FileOpenAttr Class Members](adg-dataset-members.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

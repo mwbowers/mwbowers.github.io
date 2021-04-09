@@ -156,15 +156,15 @@ Two special values are recognized for the **BlockingFactor** property. **Optimal
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileOpenAttr Class](file-open-attr-class.html)
+
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [FileOpenAttr Class Members](file-open-attr-class-members.html)
+[FileOpenAttr Class Members](file-open-attr-class-members.html)
       <br />
-      [OmitBlocking Field](file-open-attr-class-omit-blocking-field.html)
+[OmitBlocking Field](file-open-attr-class-omit-blocking-field.html)
       <br />
       [OptimalBlockingFactor 
 					Field](file-open-attr-class-optimal-blocking-factor-field.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

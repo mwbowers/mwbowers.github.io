@@ -78,14 +78,14 @@ The *rrn* parameter is a zero-relative index referring to a DataRow object conta
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [GetFormatTable Method](adg-dataset-class-get-format-table-method.html)
+[GetFormatTable Method](adg-dataset-class-get-format-table-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

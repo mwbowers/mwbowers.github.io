@@ -18,7 +18,7 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
 <pre>
         <span class="lang">[C#]</span>
  **Public void Open(
-   [AdgDataSet](adg-dataset-class.html) ds
+[AdgDataSet](adg-dataset-class.html) ds
 );** 
       </pre>
       <pre>
@@ -143,32 +143,32 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter ClassMembers](file-adapter-members.html)
+[FileAdapter ClassMembers](file-adapter-members.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [OpenSimpleQuery Method](file-adapter-class-open-simple-query-method.html)
+[OpenSimpleQuery Method](file-adapter-class-open-simple-query-method.html)
       <br />
-      [FileName Property](file-adapter-class-file-name-property.html)
+[FileName Property](file-adapter-class-file-name-property.html)
       <br />
-      [MemberName Property](file-adapter-class-member-name-property.html)
+[MemberName Property](file-adapter-class-member-name-property.html)
       <br />
-      [AccessMode Property](file-adapter-class-access-mode-property.html)
+[AccessMode Property](file-adapter-class-access-mode-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [FileOpenAttr Class](file-open-attr-class.html)
+[FileOpenAttr Class](file-open-attr-class.html)
       <br />
-      [BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
+[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)
       <br />
-      [FormatIDs Property](file-open-attr-class-formatids-property.html)
+[FormatIDs Property](file-open-attr-class-formatids-property.html)
       <br />
-      [AccessMode Enumeration](access-mode-enumeration.html)
+[AccessMode Enumeration](access-mode-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

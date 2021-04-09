@@ -42,12 +42,12 @@ The only public method of **StructureType** is its [ constructor](structure-type
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [StructureType Members](structure-type-members.html)
+
+[StructureType Members](structure-type-members.html)
       <br />
-      [ProgParmType Class](prog-parm-type-class.html)
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
+[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

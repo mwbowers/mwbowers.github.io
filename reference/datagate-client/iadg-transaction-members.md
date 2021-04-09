@@ -37,6 +37,6 @@ keywords: IAdgTransaction class, all members
 
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
 

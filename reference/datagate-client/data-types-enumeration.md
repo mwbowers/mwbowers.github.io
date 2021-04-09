@@ -86,10 +86,10 @@ Packed, zoned and binary types are numeric fields containing decimal numbers whi
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [FieldType Class](field-type-class.html)
+
+[FieldType Class](field-type-class.html)
       <br />
-      [DataType Property](field-type-class-data-type-property.html)
+[DataType Property](field-type-class-data-type-property.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

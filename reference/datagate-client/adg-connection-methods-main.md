@@ -33,10 +33,10 @@ keywords: AdgConnection class, methods
 
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [SourceProfile Class](source-profile-class.html)
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+[IAdgTransaction Class](iadg-transaction-class.html)
 

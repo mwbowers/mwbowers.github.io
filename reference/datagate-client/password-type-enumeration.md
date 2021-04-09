@@ -46,10 +46,10 @@ Database providers may define special authentication schemes for initiating sess
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
-      [SourceProfile Class](source-profile-class.html)
+[SourceProfile Class](source-profile-class.html)
       <br />
-      [Password Property](source-profile-class-password-property.html)
+[Password Property](source-profile-class-password-property.html)
 

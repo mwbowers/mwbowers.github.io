@@ -77,12 +77,12 @@ Currently, DCS retrieves the value of **Members** from the database provider onl
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [MemberCount Property](ifile-object-class-member-count-property.html)
+[MemberCount Property](ifile-object-class-member-count-property.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

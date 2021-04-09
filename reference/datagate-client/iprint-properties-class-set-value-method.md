@@ -88,11 +88,11 @@ As a convenience, **SetValue** performs a simple conversion for certain OLE clas
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> Pro
 ## See Also
 
-<dl />
-      [IPrintProperties Class](iprint-properties-class.html)
+
+[IPrintProperties Class](iprint-properties-class.html)
       <br />
       [
 					MissingFieldException Class Topic](ms-help://MS.VSCC.2003/MS.MSDNQTR.2003FEB.1033/cpref/html/frlrfSystemMissingfieldexceptionClassTopic.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

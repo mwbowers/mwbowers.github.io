@@ -32,8 +32,8 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgKeyTable Members](adg-key-table-members.html)
+
+[AdgKeyTable Members](adg-key-table-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

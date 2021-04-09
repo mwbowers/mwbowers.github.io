@@ -29,8 +29,8 @@ Constructs an instance of the **FileAdapter** object.
 
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html) <br />
-	  [FileAdapter Members](file-adapter-members.html)<br />
-	  [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+
+[FileAdapter Class](file-adapter-class.html) <br />
+[FileAdapter Members](file-adapter-members.html)<br />
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

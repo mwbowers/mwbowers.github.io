@@ -52,22 +52,22 @@ Note that if the [FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [Formats Property](adg-dataset-class-formats-property.html)
+[Formats Property](adg-dataset-class-formats-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [OpenAttributes Property](file-adapter-class-open-attributes-property.html)
+[OpenAttributes Property](file-adapter-class-open-attributes-property.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [FileOpenAttr.FormatIDs Property](file-open-attr-class-formatids-property.html)
+[FileOpenAttr.FormatIDs Property](file-open-attr-class-formatids-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

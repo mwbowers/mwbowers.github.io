@@ -16,8 +16,8 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public static IAdgObject ReadXml(
-   [AdgConnection](adg-connection-class.html) cn ,<br />   string containerPath ,
-   [AdgObjectTypes](adg-object-types-enumeration.html) docObjectType ,    
+[AdgConnection](adg-connection-class.html) cn ,<br />   string containerPath ,
+[AdgObjectTypes](adg-object-types-enumeration.html) docObjectType ,    
    System.Xml.XmlReader reader ,<br />[XmlOptions](xml-options-enumeration.html) options
 );** 
       </pre>
@@ -137,32 +137,32 @@ For large XML documents, **ReadXml** may create many objects. In this case, cons
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> Pro
 ## See Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Method](adg-factory-class-read-xml-method2.html)
+[ReadXml Method](adg-factory-class-read-xml-method2.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [WriteXml Method](iadg-object-class-write-xml-methods.html)
+[WriteXml Method](iadg-object-class-write-xml-methods.html)
       <br />
-      [ToString Method](iadg-object-class-toString-method.html)
+[ToString Method](iadg-object-class-toString-method.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [Enumerate Method](idirectory-class-enumerate-method.html)
+[Enumerate Method](idirectory-class-enumerate-method.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgObjectTypes Enumeration](adg-object-types-enumeration.html)
+[AdgObjectTypes Enumeration](adg-object-types-enumeration.html)
       <br />
-      [XmlOptions Enumeration](xml-options-enumeration.html)
+[XmlOptions Enumeration](xml-options-enumeration.html)
       <br />
-      [XmlInfoEventHandler Delegate](xml-info-event-handler-delegate.html)
+[XmlInfoEventHandler Delegate](xml-info-event-handler-delegate.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

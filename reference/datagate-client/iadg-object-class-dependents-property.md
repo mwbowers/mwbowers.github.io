@@ -46,8 +46,8 @@ Depending upon the database provider, **IAdgObject** queries for some properties
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
       [Dependent 
 					Class](dependent-class.html)

@@ -60,26 +60,26 @@ If no parameter with the given *name* exists in the parameter list, <span> **Get
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [AppendParm Method](as400program-class-append-parm-method.html)
+[AppendParm Method](as400program-class-append-parm-method.html)
       <br />
-      [AppendParms Method](as400program-class-append-parms-method.html)
+[AppendParms Method](as400program-class-append-parms-method.html)
       <br />
-      [ProgParm Class](prog-parm-class.html)
+[ProgParm Class](prog-parm-class.html)
       <br />
-      [ProgParmType Class](prog-parm-type-class.html)
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
       [ProgParmType Class 
 					Constructor](prog-parm-type-class-prog-parm-type-constructor.html)
       <br />
-      [StructureType Class](structure-type-class.html)
+[StructureType Class](structure-type-class.html)
       <br />
       [StructureType Class 
 					Constructor](structure-type-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

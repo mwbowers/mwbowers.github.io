@@ -71,18 +71,18 @@ To construct a parameter list procedurally using the parameter classes, construc
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [StructureType Class](structure-type-class.html)
+
+[StructureType Class](structure-type-class.html)
       <br />
-      [StructureType Class Members](structure-type-members.html)
+[StructureType Class Members](structure-type-members.html)
       <br />
-      [As400Program Class](as400program-class.html)
+[As400Program Class](as400program-class.html)
       <br />
-      [ProgParmType Class](prog-parm-type-class.html)
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ProgParm Class](prog-parm-class.html)
+[ProgParm Class](prog-parm-class.html)
       <br />
-      [ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
+[ASNA.DataGate.DataLink Namespace](datagate-data-link-namespace.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

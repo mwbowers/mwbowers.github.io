@@ -67,35 +67,35 @@ The [Row](adg-key-table-class-row-property.html) property of **AdgKeyTable** ref
 In the above example, we access a file using the **ReadRandomKey** method. This particular file has one key field named "CMCustNo". The **NewKeyTable** method is called on the **AdgDataSet** returned from **OpenNewAdgDataSet.** **NewKeyTable** is passed the format name of the only format of the file. Note that we use the [GetFormatName](adg-dataset-class-get-format-name-method.html) method of **AdgDataSet** to avoid hard-coding the format name. The returned **AdgKeyTable** object contains one **DataRow** object consisting of only one database field value for the CMCustNo field. This key field is initialized with the integer value 500 in this example. Next, **ReadRandomKey** is called passing the key value in the **AdgKeyTable** object. Also note that the [ ReadRandomMode.GTEQ](read-random-mode-enumeration.html) is passed to **ReadRandomKey** . This specifies that we would like to read the next record containing the given key, or otherwise the next record containing a key greater than the given key.
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [GetFormatName Method](adg-dataset-class-get-format-name-method.html)
+[GetFormatName Method](adg-dataset-class-get-format-name-method.html)
       <br />
-      [PrepareRow Methods](adg-dataset-class-prepare-row-method-main.html)
+[PrepareRow Methods](adg-dataset-class-prepare-row-method-main.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [ReadSequential Method](file-adapter-class-read-sequential-method.html)
+[ReadSequential Method](file-adapter-class-read-sequential-method.html)
       <br />
-      [ReadRandomRRN Method](file-adapter-class-read-random-rrn-method.html)
+[ReadRandomRRN Method](file-adapter-class-read-random-rrn-method.html)
       <br />
-      [ReadRandomKey Method](file-adapter-class-read-random-key-method.html)
+[ReadRandomKey Method](file-adapter-class-read-random-key-method.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
       <br />
       [ReadSequentialEqual 
 					Method](file-adapter-class-read-sequential-equal-method.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [Row Property](adg-key-table-class-row-property.html)
+[Row Property](adg-key-table-class-row-property.html)
       <br />
-      [ReadRandomMode Enumeration](read-random-mode-enumeration.html)
+[ReadRandomMode Enumeration](read-random-mode-enumeration.html)
       <br />
       [Reading and Writing to Database 
 					Files](readingand-writingto-database-files.html)
@@ -103,7 +103,7 @@ In the above example, we access a file using the **ReadRandomKey** method. This 
       [Verifying Results with 
 					Exception Handling](verifying-resultswith-exception-handling.html)
       <br />
-      [Using the FileAdapter Class](usingthe-file-adapter-class.html)
+[Using the FileAdapter Class](usingthe-file-adapter-class.html)
       <br />
       [Database File Records and 
 					AdgDataSet](database-file-recordsand-adg-dataset.html)

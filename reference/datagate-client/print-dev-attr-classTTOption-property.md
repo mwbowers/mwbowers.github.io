@@ -49,12 +49,12 @@ True Type fonts can either be printed as graphics, downloaded as soft fonts, or 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />
-      [PrintDevAttr Class Members](print-dev-attr-members.html)
+[PrintDevAttr Class Members](print-dev-attr-members.html)
       <br />
-      [PrintTrueType Enumeration](print-true-type-enumeration.html)
+[PrintTrueType Enumeration](print-true-type-enumeration.html)
       <br />
-      [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
+[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)
 

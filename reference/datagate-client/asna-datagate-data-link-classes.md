@@ -24,6 +24,6 @@ keywords: ASNA.DataGate.DataLink namespace, classes
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
 

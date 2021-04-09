@@ -30,6 +30,6 @@ This model depicts an overview of the DCS classes that are used for each functio
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
 

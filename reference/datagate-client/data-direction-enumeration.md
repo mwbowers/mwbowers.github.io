@@ -137,12 +137,12 @@ TimeOfDay = Convert.ToDecimal(prog.ParmToObject(System.Type.GetType("System.Deci
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [ProgParm Class](prog-parm-class.html)
+
+[ProgParm Class](prog-parm-class.html)
       <br />
-      [ProgParm Class Constructors](prog-parm-class-prog-parm-method-main.html)
+[ProgParm Class Constructors](prog-parm-class-prog-parm-method-main.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

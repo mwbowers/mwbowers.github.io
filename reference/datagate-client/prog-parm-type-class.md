@@ -43,20 +43,20 @@ The optional name associated with a **ProgParmType** object may be used by param
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ProgParmType Members](prog-parm-type-members.html)
+
+[ProgParmType Members](prog-parm-type-members.html)
       <br />
-      [As400Program Class](as400program-class.html)
+[As400Program Class](as400program-class.html)
       <br />
-      [ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
+[ObjectToParm Method](as400program-class-object-to_parm-method-main.html)
       <br />
-      [FieldType Class](field-type-class.html)
+[FieldType Class](field-type-class.html)
       <br />
-      [ProgParm Class](prog-parm-class.html)
+[ProgParm Class](prog-parm-class.html)
       <br />
-      [StructureType Class](structure-type-class.html)
+[StructureType Class](structure-type-class.html)
       <br />
-      [ASNA DataGate DataLink Namespace](datagate-data-link-namespace.html)
+[ASNA DataGate DataLink Namespace](datagate-data-link-namespace.html)
       <br />
-      [Calling Stored Procedures](calling-stored-procedures.html)
+[Calling Stored Procedures](calling-stored-procedures.html)
 

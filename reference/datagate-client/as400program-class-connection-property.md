@@ -82,18 +82,18 @@ To run the program on a particular database server, set the **Connection** prope
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [AdgConnection Class](dcsAs400ProgramClassExecuteMethod.htm ">Execute Method</a>
+[AdgConnection Class](dcsAs400ProgramClassExecuteMethod.htm ">Execute Method</a>
       <br />
       <a href="dcsAdgConnectionClass.html)
       <br />
-      [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

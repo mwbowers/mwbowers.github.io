@@ -19,7 +19,7 @@ keywords: FileAdapter.DeleteKey method
 Deletes a database file record containing the specified key, if any.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void DeleteKey(
-   [AdgKeyTable](adg-key-table-class.html) keyTable
+[AdgKeyTable](adg-key-table-class.html) keyTable
 );** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
@@ -39,7 +39,7 @@ Deletes a database file record containing the specified key, if any.
  *keyTable* 
         </dt>
         <dd>
-          [AdgKeyTable](adg-key-table-class.html). The key of the record to 
+[AdgKeyTable](adg-key-table-class.html). The key of the record to 
 						delete.
 					</dd>
 </dl>
@@ -135,16 +135,16 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [AccessMode Property](file-adapter-class-access-mode-property.html)
+[AccessMode Property](file-adapter-class-access-mode-property.html)
       <br />
-      [AccessMode Enumeration](access-mode-enumeration.html)
+[AccessMode Enumeration](access-mode-enumeration.html)
       <br />
-      [AdgKeyTable Class](adg-key-table-class.html)
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

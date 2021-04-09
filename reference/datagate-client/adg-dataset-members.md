@@ -62,6 +62,6 @@ keywords: AdgDataSet class, all members
 
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
 

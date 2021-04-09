@@ -266,8 +266,8 @@ In this case, TestDS is an array of 5 elements. Thus, we provide ObjectToParm wi
 To access the particular member of the TestDS element we have chosen, we use the second parameter of ObjectToParm. This string names all members in the path to the data, separated by a dot (‘.’). The first name, TestDS, is the name of the structure in the parameter list. The second name is the name of the member, Test2, to be accessed. Finally, the value for the parameter data is passed as "2Fld2", which is what the called program expects as valid input.
 
 ### See Also
-<dl />
-        [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
         <br />
-        [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
 

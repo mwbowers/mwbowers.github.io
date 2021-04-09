@@ -18,7 +18,7 @@ The **NewDirectory** method creates a new instance of [IDirectory](idirectory-cl
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public IDirectory NewDirectory(
-   [AdgConnection](adg-connection-class.html) cn
+[AdgConnection](adg-connection-class.html) cn
    string PathName
 );** 
       </pre>
@@ -99,22 +99,22 @@ If the [State ](adg-connection-class-state-property.html) property of the *cn* p
 ## See 
 Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Method](adg-factory-class-read-xml-methods.html)
+[ReadXml Method](adg-factory-class-read-xml-methods.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

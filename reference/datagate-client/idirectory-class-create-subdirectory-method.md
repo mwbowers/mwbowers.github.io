@@ -86,14 +86,14 @@ Use this method to create a library whose parent library is represented by **IDi
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IDirectory Members](idirectory-members.html)
+[IDirectory Members](idirectory-members.html)
       <br />
-      [AdgFactory.NewDirectory Method](adg-factory-class-new-directory-method.html)
+[AdgFactory.NewDirectory Method](adg-factory-class-new-directory-method.html)
       <br />
-      [IAdgObject.Create Method](iadg-object-class-create-method.html)
+[IAdgObject.Create Method](iadg-object-class-create-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

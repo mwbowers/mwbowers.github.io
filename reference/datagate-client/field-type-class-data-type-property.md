@@ -42,12 +42,12 @@ Valid field data types are defined by the <span> **DataTypes** </span> enumerati
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FieldType Class](field-type-class.html)
+
+[FieldType Class](field-type-class.html)
       <br />
-      [FieldType Class Members](field-type-members.html)
+[FieldType Class Members](field-type-members.html)
       <br />
-      [DataTypes Enumeration](data-types-enumeration.html)
+[DataTypes Enumeration](data-types-enumeration.html)
       <br />
-      [ASNA.DataGate.Common Namespaces](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespaces](datagate-common-namespace.html)
 

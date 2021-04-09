@@ -76,18 +76,18 @@ Also, the list returned by **ItemList** is not a copy and hence, any changes to 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDirectory Class](idirectory-class.html)
+
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IDirectory Class Members](idirectory-members.html)
+[IDirectory Class Members](idirectory-members.html)
       <br />
-      [Enumerate Method](idirectory-class-enumerate-method.html)
+[Enumerate Method](idirectory-class-enumerate-method.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

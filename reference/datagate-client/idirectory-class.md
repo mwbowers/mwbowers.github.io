@@ -55,30 +55,30 @@ The [AttachRemoteDirectory](idirectory-class-attach-remote-directory-method.html
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IDirectory Members](idirectory-members.html)
+
+[IDirectory Members](idirectory-members.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgSubType Property](iadg-object-class-adg-subtype-property.html)
+[AdgSubType Property](iadg-object-class-adg-subtype-property.html)
       <br />
-      [Bases Property](iadg-object-class-bases-property.html)
+[Bases Property](iadg-object-class-bases-property.html)
       <br />
-      [Dependents Property](iadg-object-class-dependents-property.html)
+[Dependents Property](iadg-object-class-dependents-property.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [NewDirectory Method](adg-factory-class-new-directory-method.html)
+[NewDirectory Method](adg-factory-class-new-directory-method.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [RepairOptions Enumeration](repair-options-enumeration.html)
+[RepairOptions Enumeration](repair-options-enumeration.html)
       <br />
-      [AdgEnumerator Delegate](adg-enumerator-delegate.html)
+[AdgEnumerator Delegate](adg-enumerator-delegate.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

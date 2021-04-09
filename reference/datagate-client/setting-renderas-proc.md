@@ -36,11 +36,11 @@ To resolve this issue, DataGate can be instructed to Render-in-Proc, rather than
 <span style="color: rgb(0, 0, 0); font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); display: inline !important; float: none; "> To disable render-in-process, either remove the above, or change the content of the &lt;setting name="RenderInProc"&gt; element to "&lt;value&gt;False&lt;/value&gt;".</span>
 ## See Also
 
-<dl />
-		[AdgDataSet Class](adg-dataset-class.html)<br />
-		[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)<br />
-		[Efficient File Access](efficient-file-access.html)<br />
-		[FileAdapter Class](file-adapter-class.html)<br />
-		[Reading and Writing to Database Files](readingand-writingto-database-files.html)<br />
-		[Using the FileAdapter Class](usingthe-file-adapter-class.html)   
+
+[AdgDataSet Class](adg-dataset-class.html)<br />
+[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)<br />
+[Efficient File Access](efficient-file-access.html)<br />
+[FileAdapter Class](file-adapter-class.html)<br />
+[Reading and Writing to Database Files](readingand-writingto-database-files.html)<br />
+[Using the FileAdapter Class](usingthe-file-adapter-class.html)   
 

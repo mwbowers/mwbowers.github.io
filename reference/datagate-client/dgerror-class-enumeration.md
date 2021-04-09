@@ -173,10 +173,10 @@ The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorCl
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-								  [ErrorClass Field](dgexception-class-error-class-field.html)
+
+[ErrorClass Field](dgexception-class-error-class-field.html)
 								  <br />
-								  [dgException Class](dgexception-class.html)
+[dgException Class](dgexception-class.html)
 								  <br />
-								  [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

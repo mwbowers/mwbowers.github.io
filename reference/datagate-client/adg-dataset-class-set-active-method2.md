@@ -79,23 +79,23 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgDataSet Class](adg-dataset-class.html)
+
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [AdgDataSet Class Members](adg-dataset-members.html)
+[AdgDataSet Class Members](adg-dataset-members.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
       [CurrentFormatName 
 					Property](adg-dataset-class-current-format-name-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Methods](file-adapter-methods.html)
+[FileAdapter Class Methods](file-adapter-methods.html)
       <br />
-      [AddRecord Method](file-adapter-class-add-record-method.html)
+[AddRecord Method](file-adapter-class-add-record-method.html)
       <br />
-      [ChangeCurrent Method](file-adapter-class-change-current-method.html)
+[ChangeCurrent Method](file-adapter-class-change-current-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

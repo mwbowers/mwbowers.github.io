@@ -35,7 +35,7 @@ Begins a manual database transaction creating an instance of an [IAdgTransaction
         <dt>tl
 					</dt>
         <dd>
-          [ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html). 
+[ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html). 
 						The initial locking level of the transaction.
 					</dd>
 </dl>

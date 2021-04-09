@@ -24,6 +24,6 @@ The first step to accessing and using the ASNA DataGate Component Suite for Visu
 To view the details of a specific object in the left pane, click on it in the right pane. <br />
 ## See Also
 
-<dl />
-      [Overview of DCS ](datagate-component-suite-overview.html)
+
+[Overview of DCS ](datagate-component-suite-overview.html)
 

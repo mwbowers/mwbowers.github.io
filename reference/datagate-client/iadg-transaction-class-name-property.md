@@ -44,14 +44,14 @@ The value of **Name** is constant during the lifetime of **IAdgTransaction** wit
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [IAdgTransaction Class Members](iadg-transaction-members.html)
+[IAdgTransaction Class Members](iadg-transaction-members.html)
       <br />
-      [Commit(String) Method](iadg-transaction-class-commit-method2.html)
+[Commit(String) Method](iadg-transaction-class-commit-method2.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
       [BeginTransaction 
 					Method](adg-connection-class-begin-transaction-method-main.html)
@@ -59,5 +59,5 @@ The value of **Name** is constant during the lifetime of **IAdgTransaction** wit
       [BeginAutoTransaction 
 					Method](adg-connection-class-begin-auto-transaction-method-main.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

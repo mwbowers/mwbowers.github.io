@@ -57,19 +57,19 @@ When invoked on the automatic transaction implementation of **IAdgTransaction** 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgTransaction Class](iadg-transaction-class.html)
+
+[IAdgTransaction Class](iadg-transaction-class.html)
       <br />
-      [IAdgTransaction Class Members](iadg-transaction-members.html)
+[IAdgTransaction Class Members](iadg-transaction-members.html)
       <br />
-      [Connection Property](iadg-transaction-class-connection-property.html)
+[Connection Property](iadg-transaction-class-connection-property.html)
       <br />
-      [Rollback Method](iadg-transaction-class-rollback-method.html)
+[Rollback Method](iadg-transaction-class-rollback-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
       [BeginAutoTransaction 
 					Method](adg-connection-class-begin-auto-transaction-method-main.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

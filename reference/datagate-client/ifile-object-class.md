@@ -55,36 +55,36 @@ The value of [AdgObjectType](iadg-object-class-adg-object-type-property.html) fo
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IFileObject Members](ifile-object-members.html)
+
+[IFileObject Members](ifile-object-members.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [NewFile Method](adg-factory-class-new-file-method.html)
+[NewFile Method](adg-factory-class-new-file-method.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [Enumerate Method](idirectory-class-enumerate-method.html)
+[Enumerate Method](idirectory-class-enumerate-method.html)
       <br />
-      [ItemList Property](idirectory-class-item-list-property.html)
+[ItemList Property](idirectory-class-item-list-property.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [Dependents Property](iadg-object-class-dependents-property.html)
+[Dependents Property](iadg-object-class-dependents-property.html)
       <br />
-      [Bases Property](iadg-object-class-bases-property.html)
+[Bases Property](iadg-object-class-bases-property.html)
       <br />
-      [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
       <br />
-      [AdgSubType Property](iadg-object-class-adg-subtype-property.html)
+[AdgSubType Property](iadg-object-class-adg-subtype-property.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

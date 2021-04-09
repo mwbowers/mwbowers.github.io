@@ -24,6 +24,6 @@ keywords: dgException class, methods
 
 ## See Also
 
-<dl />
-      [dgException Class](dgexception-class.html)
+
+[dgException Class](dgexception-class.html)
 

@@ -46,14 +46,14 @@ Create the parameter list for the program with the [ AppendParms](as400program-c
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Members](as400program-members.html)
+
+[As400Program Members](as400program-members.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
+[ASNA.DataGate.DataLink.ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
+[ASNA.DataGate.DataLink.ProgParm Class](prog-parm-class.html)
 

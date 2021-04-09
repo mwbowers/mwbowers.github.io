@@ -19,28 +19,28 @@ keywords: Windows applications, C# samples [DCS 16.0]
 **C#:** 
 <dl>
         <dt>
-          [AddSourceProfile Property](samples-csharp-add-source-profile.html)
+[AddSourceProfile Property](samples-csharp-add-source-profile.html)
         </dt>
         <dd>
 
 This Windows program explains how to create a new source profile and add it to the registry as well as manipulate the properties of an existing source profile. 
 </dd>
         <dt>
-          [Call_400_Pgm](samples-csharp-call-400-pgm.html)
+[Call_400_Pgm](samples-csharp-call-400-pgm.html)
         </dt>
         <dd>
 
 This Windows program uses the .NET Framework and ASNA DCS for Visual Studio 2019 to call a program on an AS/400 or iSeries machine. 
 </dd>
         <dt>
-          [Call400Pgm](samples-csharp-call400-pgm.html)
+[Call400Pgm](samples-csharp-call400-pgm.html)
         </dt>
         <dd>
 
 This Windows program uses the .NET Framework and ASNA DCS for Visual Studio 2019 to show another example on calling a program on an AS/400 or iSeries machine. 
 </dd>
         <dt>
-          [Customer Maintenance](samples-csharp-customer-maintenance.html)
+[Customer Maintenance](samples-csharp-customer-maintenance.html)
         </dt>
         <dd>
 
@@ -49,21 +49,21 @@ This Windows program uses ASNA DCS for Visual Studio 2019 to Read, position, Upd
 </dl>
 <dl>
         <dt>
-          [MultiFormatFiles](samples-csharp-multi-format-files.html)
+[MultiFormatFiles](samples-csharp-multi-format-files.html)
         </dt>
         <dd>
 
 This Windows program uses the .NET Framework and ASNA DCS for Visual Studio 2019 to show how to access and work with multiformat files. 
 </dd>
         <dt>
-          [MultiUser Simulator](samples-csharp-multi-user-simulator.html)
+[MultiUser Simulator](samples-csharp-multi-user-simulator.html)
         </dt>
         <dd>
 
 This Windows program uses ASNA DCS for Visual Studio 2019 to simulate multiple users accessing a file. 
 </dd>
         <dt>
-          [SeekRange](samples-csharp-seek-range.html)
+[SeekRange](samples-csharp-seek-range.html)
         </dt>
         <dd>
 
@@ -72,14 +72,14 @@ This Windows program uses the .NET Framework and ASNA's Datagate Component Suite
 </dl>
 <dl>
         <dt>
-          [SeekRange2](samples-csharp-seek-range2.html)
+[SeekRange2](samples-csharp-seek-range2.html)
         </dt>
         <dd>
 
 This Windows program uses the .NET Framework and ASNA DCS for Visual Studio 2019 to seek a range of records. 
 </dd>
         <dt>
-          [Simple DataGrid](samples-csharp-simple-datagrid.html)
+[Simple DataGrid](samples-csharp-simple-datagrid.html)
         </dt>
         <dd>
 

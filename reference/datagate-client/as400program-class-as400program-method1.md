@@ -61,14 +61,14 @@ Before adding parameters or calling programs with an instance created with this 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [As400Program Class](as400program-class.html)
+
+[As400Program Class](as400program-class.html)
       <br />
-      [As400Program Class Members](as400program-members.html)
+[As400Program Class Members](as400program-members.html)
       <br />
-      [Connection Property](as400program-class-connection-property.html)
+[Connection Property](as400program-class-connection-property.html)
       <br />
-      [ProgramPath Property](as400program-class-program-path-property.html)
+[ProgramPath Property](as400program-class-program-path-property.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

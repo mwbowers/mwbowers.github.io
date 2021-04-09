@@ -16,7 +16,7 @@ keywords: enumerations [DCS 16.0 DataSetOptions, used by
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public AdgDataSet GetAdgDataSet(
-    [DataSetOptions](dataset-options-enumeration.html) opts
+[DataSetOptions](dataset-options-enumeration.html) opts
 );** 
       </pre>
       <pre class="prettyprint">
@@ -90,20 +90,20 @@ This method, and [FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [IFileObject Class Members](ifile-object-members.html)
+[IFileObject Class Members](ifile-object-members.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [File Adapter Class](file-adapter-class.html)
+[File Adapter Class](file-adapter-class.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
+[OpenNewAdgDataSet Method](file-adapter-class-open-new-adg-dataset-method.html)
       <br />
-      [DataSetOptions Enumeration](dataset-options-enumeration.html)
+[DataSetOptions Enumeration](dataset-options-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

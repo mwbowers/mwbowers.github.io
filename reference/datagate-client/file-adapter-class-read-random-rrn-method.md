@@ -25,9 +25,9 @@ keywords: files, record locking override
 Read the database file record specified.
 <pre>        <span class="lang">[C#]</span>
  **Public void ReadRandomRRN(
-   [AdgDataSet](adg-dataset-class.html) ds,
-   [ReadRandomMode](read-random-mode-enumeration.html) mode,
-   [LockRequest](lock-request-enumeration.html) lr,
+[AdgDataSet](adg-dataset-class.html) ds,
+[ReadRandomMode](read-random-mode-enumeration.html) mode,
+[LockRequest](lock-request-enumeration.html) lr,
    long RRN
 );** 
       </pre>
@@ -118,25 +118,25 @@ Calling this method cancels "range mode". A prior successful call to [ReadRange]
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [Open Method](file-adapter-class-open-method.html)
+[Open Method](file-adapter-class-open-method.html)
       <br />
-      [ReadRange Method](file-adapter-class-read-range-method.html)
+[ReadRange Method](file-adapter-class-read-range-method.html)
       <br />
-      [SeekRange Method](file-adapter-class-seek-range-method.html)
+[SeekRange Method](file-adapter-class-seek-range-method.html)
       <br />
-      [AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](adg-dataset-class.html)
       <br />
-      [ActiveRow Property](adg-dataset-class-active-row-property.html)
+[ActiveRow Property](adg-dataset-class-active-row-property.html)
       <br />
-      [LockRequest Enumeration](lock-request-enumeration.html)
+[LockRequest Enumeration](lock-request-enumeration.html)
       <br />
-      [ReadRandomMode Enumeration](read-random-mode-enumeration.html)
+[ReadRandomMode Enumeration](read-random-mode-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
       <br />
 

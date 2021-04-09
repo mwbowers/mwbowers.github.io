@@ -53,10 +53,10 @@ Returns **false** if *obj* refers to a null instance. Otherwise returns the valu
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
 ## See Also
 
-<dl />
+
       <span>
-        [SourceProfile Class](source-profile-class.html)
+[SourceProfile Class](source-profile-class.html)
         <br />
-        [SourceProfile Class Members](source-profile-members.html) <br />[
+[SourceProfile Class Members](source-profile-members.html) <br />[
 						op_Equality Method](source-profile-classop-equality-method.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)</span>
 

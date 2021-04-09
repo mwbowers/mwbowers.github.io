@@ -83,21 +83,21 @@ Note that [AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html) calls an
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
 ## See Also
 
-<dl />
-      [IFileObject Class](ifile-object-class.html)
+
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [Class Members](ifile-object-members.html)
+[Class Members](ifile-object-members.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
       [
 					XmlException Class Topic](ms-help://MS.VSCC.2003/MS.MSDNQTR.2003FEB.1033/cpref/html/frlrfSystemXmlXmlExceptionClassTopic.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

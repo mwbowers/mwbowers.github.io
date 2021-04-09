@@ -29,8 +29,8 @@ The **ASNA DataGate <span>assembly</span>** contains 4 Namespaces that support t
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
 

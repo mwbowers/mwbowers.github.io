@@ -133,14 +133,14 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
 <strong class="hcp2">Platforms:</strong> Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Class](file-adapter-class.html)
+
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [FileAdapter Class Members](file-adapter-members.html)
+[FileAdapter Class Members](file-adapter-members.html)
       <br />
-      [AccessMode Property](file-adapter-class-access-mode-property.html)
+[AccessMode Property](file-adapter-class-access-mode-property.html)
       <br />
-      [AccessMode Enumeration](access-mode-enumeration.html)
+[AccessMode Enumeration](access-mode-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

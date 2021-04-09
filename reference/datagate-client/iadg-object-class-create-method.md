@@ -101,28 +101,28 @@ A "bare" **IAdgObject** instance, created with **NewFile** , **NewDirectory** , 
 ## See 
 Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [IAdgObject Class Members](iadg-object-members.html)
+[IAdgObject Class Members](iadg-object-members.html)
       <br />
-      [WriteXml Methods](iadg-object-class-write-xml-methods.html)
+[WriteXml Methods](iadg-object-class-write-xml-methods.html)
       <br />
-      [Text Property](iadg-object-class-text-property.html)
+[Text Property](iadg-object-class-text-property.html)
       <br />
-      [AuthorityEntries Property](iadg-object-class-authority-entries-property.html)
+[AuthorityEntries Property](iadg-object-class-authority-entries-property.html)
       <br />
-      [GrantAuthority Method](iadg-object-class-grant-authority-method.html)
+[GrantAuthority Method](iadg-object-class-grant-authority-method.html)
       <br />
-      [RevokeAuthority Method](iadg-object-class-revoke-authority-method.html)
+[RevokeAuthority Method](iadg-object-class-revoke-authority-method.html)
       <br />
-      [Bases Property](iadg-object-class-bases-property.html)
+[Bases Property](iadg-object-class-bases-property.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [ReadDefinition Method](ifile-object-class-read-definition-method.html)
+[ReadDefinition Method](ifile-object-class-read-definition-method.html)
       <br />
-      [WriteDefinition Method](ifile-object-class-write-definition-method.html)
+[WriteDefinition Method](ifile-object-class-write-definition-method.html)
       <br />
       [ReadCreationAttributes 
 					Method](ifile-object-class-read-creation-attributes-method.html)
@@ -130,23 +130,23 @@ Also
       [WriteCreationAttributes 
 					Method](ifile-object-class-write-creation-attributes-method.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [NewFile Method](adg-factory-class-new-file-method.html)
+[NewFile Method](adg-factory-class-new-file-method.html)
       <br />
-      [NewDirectory Method](adg-factory-class-new-directory-method.html)
+[NewDirectory Method](adg-factory-class-new-directory-method.html)
       <br />
-      [NewMember Method](adg-factory-class-new-member-method.html)
+[NewMember Method](adg-factory-class-new-member-method.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [Extension Property](imember-class-extension-property.html)
+[Extension Property](imember-class-extension-property.html)
       <br />
-      [XmlOptions Enumeration](xml-options-enumeration.html)
+[XmlOptions Enumeration](xml-options-enumeration.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

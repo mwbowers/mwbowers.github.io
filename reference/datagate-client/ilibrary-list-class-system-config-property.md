@@ -52,10 +52,10 @@ Use [UserConfig](ilibrary-list-class-user-config-property.html) property to set 
 <strong class="hcp2">Platforms:</strong> Windows Server 2008, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [ILibraryList Class](ilibrary-list-class.html)
+
+[ILibraryList Class](ilibrary-list-class.html)
       <br />
-      [ILibraryList Members](ilibrary-list-members.html)
+[ILibraryList Members](ilibrary-list-members.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

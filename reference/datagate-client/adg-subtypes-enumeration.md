@@ -72,8 +72,8 @@ The **AdgSubTypes** enumerated constant defines values for the [IAdgObject.AdgSu
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IAdgObject.AdgSubType Property](iadg-object-class-adg-subtype-property.html)
+
+[IAdgObject.AdgSubType Property](iadg-object-class-adg-subtype-property.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

@@ -94,18 +94,18 @@ When the database provider does not support, or cannot readily determine the sec
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Class](iadg-object-class.html)
+
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
       <br />
-      [AdgSubType Enumeration](adg-subtypes-enumeration.html)
+[AdgSubType Enumeration](adg-subtypes-enumeration.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [WriteDefinition Method](ifile-object-class-write-definition-method.html)
+[WriteDefinition Method](ifile-object-class-write-definition-method.html)
       <br />
-      [WriteXml Methods](ifile-object-class-write-definition-method.html)
+[WriteXml Methods](ifile-object-class-write-definition-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

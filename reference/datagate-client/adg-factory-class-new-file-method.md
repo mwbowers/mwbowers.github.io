@@ -18,7 +18,7 @@ The **NewFile** method creates a new instance of [IFileObject](ifile-object-clas
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public IFileObject NewFile(
-   [AdgConnection](adg-connection-class.html) cn
+[AdgConnection](adg-connection-class.html) cn
    string PathName
 );** 
       </pre>
@@ -97,27 +97,27 @@ To create a new database file, first call **NewFile** with the desired name for 
 ## See 
 Also
 
-<dl />
-      [AdgFactory Class](adg-factory-class.html)
+
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [ReadXml Methods](adg-factory-class-read-xml-methods.html)
+[ReadXml Methods](adg-factory-class-read-xml-methods.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [ReadDefinition Method](ifile-object-class-read-definition-method.html)
+[ReadDefinition Method](ifile-object-class-read-definition-method.html)
       <br />
       [ReadCreationAttributes 
 					Method](ifile-object-class-read-creation-attributes-method.html)
       <br />
-      [IAdgObject Class](iadg-object-class.html)
+[IAdgObject Class](iadg-object-class.html)
       <br />
-      [Create Method](iadg-object-class-create-method.html)
+[Create Method](iadg-object-class-create-method.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [State Property](adg-connection-class-state-property.html)
+[State Property](adg-connection-class-state-property.html)
       <br />
-      [Open Method](adg-connection-class-open-method.html)
+[Open Method](adg-connection-class-open-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

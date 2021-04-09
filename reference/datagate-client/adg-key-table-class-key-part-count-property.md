@@ -46,16 +46,16 @@ Note that setting this property to a value less than zero or greater than the nu
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgKeyTable Class](adg-key-table-class.html)
+
+[AdgKeyTable Class](adg-key-table-class.html)
       <br />
-      [AdgKeyTable Class Members](adg-key-table-members.html)
+[AdgKeyTable Class Members](adg-key-table-members.html)
       <br />
-      [Row Property](adg-key-table-class-row-property.html)
+[Row Property](adg-key-table-class-row-property.html)
       <br />
-      [FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](file-adapter-class.html)
       <br />
-      [ReadRandomKey Method](file-adapter-class-read-random-key-method.html)  <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)<br />
-      [Efficient File Access](efficient-file-access.html)
+[ReadRandomKey Method](file-adapter-class-read-random-key-method.html)  <br />
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)<br />
+[Efficient File Access](efficient-file-access.html)
 

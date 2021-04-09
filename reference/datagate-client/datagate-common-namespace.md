@@ -73,6 +73,6 @@ The <span style="FONT-WEIGHT: bold">ASNA.DataGate.Common </span>namespace contai
 
 ## See Also
 
-<dl />
-      [Class Library](class-library-main.html)
+
+[Class Library](class-library-main.html)
 

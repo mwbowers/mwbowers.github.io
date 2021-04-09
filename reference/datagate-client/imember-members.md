@@ -38,6 +38,6 @@ keywords: IMember class, all members
 
 ## See Also
 
-<dl />
-      [IMember Class](imember-class.html)
+
+[IMember Class](imember-class.html)
 

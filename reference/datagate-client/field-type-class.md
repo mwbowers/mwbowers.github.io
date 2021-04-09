@@ -41,18 +41,18 @@ Most **FieldType** property values are dependent upon the value of the [DataType
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FieldType Class Members](field-type-members.html)
+
+[FieldType Class Members](field-type-members.html)
       <br />
-      [DataType Property](field-type-class-data-type-property.html)
+[DataType Property](field-type-class-data-type-property.html)
       <br />
-      [DateTime Property](field-type-class-date-time-property.html)
+[DateTime Property](field-type-class-date-time-property.html)
       <br />
-      [NewPacked Method](field-type-class-new-packed-method.html)
+[NewPacked Method](field-type-class-new-packed-method.html)
       <br />
-      [ProgParmType Class](prog-parm-type-class.html)
+[ProgParmType Class](prog-parm-type-class.html)
       <br />
-      [DataTypes Enumeration](data-types-enumeration.html)
+[DataTypes Enumeration](data-types-enumeration.html)
       <br />
-      [ASNA DataGate Common Namespace](datagate-client-namespace.html)
+[ASNA DataGate Common Namespace](datagate-client-namespace.html)
 

@@ -51,14 +51,14 @@ Returns **false** if the references being compared refer to the same object. Oth
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [AdgConnection Class](adg-connection-class.html)
+
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)
+[AdgConnection Class Members](adg-connection-members.html)
       <br />
-      [Equals Method](adg-connection-class-equals-method.html)
+[Equals Method](adg-connection-class-equals-method.html)
       <br />
-      [Op_Equality Method](adg-connectionclassop-equality-method.html)
+[Op_Equality Method](adg-connectionclassop-equality-method.html)
       <br />
-      [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
+[ASNA.DataGate.Client Namespace](datagate-client-namespace.html)
 

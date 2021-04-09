@@ -51,9 +51,9 @@ The <span> **AdgObjectTypes** </span> enumerated constant defines values for the
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 ## See Also
 
-<dl />
-      [IAdgObject Class<br />](iadg-object-class.html)
-      [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+
+[IAdgObject Class<br />](iadg-object-class.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
       <br />
-      [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
+[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)
 

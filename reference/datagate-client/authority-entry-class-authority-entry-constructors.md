@@ -39,10 +39,10 @@ Creates an instance of an **AuthorityEntry** class object with field initializat
 
 ## See Also
 
-<dl />
-      [AuthorityEntry Class](authority-entry-class.html)
+
+[AuthorityEntry Class](authority-entry-class.html)
       <br />
-      [AuthorityEntry Class Members](authority-entry-members.html)
+[AuthorityEntry Class Members](authority-entry-members.html)
       <br />
-      [ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
 

@@ -54,10 +54,10 @@ To improve the efficiency of sequential access to files residing on network data
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [FileAdapter Members](file-adapter-members.html)
+
+[FileAdapter Members](file-adapter-members.html)
       <br />
-      [AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](adg-connection-class.html)
       <br />
-      [AdgConnection Class Members](adg-connection-members.html)  <br />[AdgDataSet Class](adg-dataset-class.html)<br />[AdgDataSet Class Members](adg-dataset-members.html)<br />[FileOpenAttr Class](file-open-attr-class.html)<br />[FileOpenAttr Class Members](file-open-attr-class-members.html)<br />[FormatIDs Property](file-open-attr-class-formatids-property.html)<br />[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)<br />[ASNA DataGate Client Namespace](datagate-client-namespace.html) 
+[AdgConnection Class Members](adg-connection-members.html)  <br />[AdgDataSet Class](adg-dataset-class.html)<br />[AdgDataSet Class Members](adg-dataset-members.html)<br />[FileOpenAttr Class](file-open-attr-class.html)<br />[FileOpenAttr Class Members](file-open-attr-class-members.html)<br />[FormatIDs Property](file-open-attr-class-formatids-property.html)<br />[BlockingFactor Property](file-open-attr-class-blocking-factor-property.html)<br />[ASNA DataGate Client Namespace](datagate-client-namespace.html) 
 

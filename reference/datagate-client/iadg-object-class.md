@@ -52,28 +52,28 @@ Generally, property values representing the metadata of an existing database obj
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 ## See Also
 
-<dl />
-      [IAdgObject Members](iadg-object-members.html)
+
+[IAdgObject Members](iadg-object-members.html)
       <br />
-      [AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
+[AdgObjectType Property](iadg-object-class-adg-object-type-property.html)
       <br />
-      [IDirectory Class](idirectory-class.html)
+[IDirectory Class](idirectory-class.html)
       <br />
-      [Enumerate Method ](idirectory-class-enumerate-method.html)
+[Enumerate Method ](idirectory-class-enumerate-method.html)
       <br />
-      [IFileObject Class](ifile-object-class.html)
+[IFileObject Class](ifile-object-class.html)
       <br />
-      [Members Property](ifile-object-class-members-property.html)
+[Members Property](ifile-object-class-members-property.html)
       <br />
-      [IMember Class](imember-class.html)
+[IMember Class](imember-class.html)
       <br />
-      [AdgFactory Class](adg-factory-class.html)
+[AdgFactory Class](adg-factory-class.html)
       <br />
-      [NewFile Method](adg-factory-class-new-file-method.html)
+[NewFile Method](adg-factory-class-new-file-method.html)
       <br />
-      [NewDirectory Method](adg-factory-class-new-directory-method.html)
+[NewDirectory Method](adg-factory-class-new-directory-method.html)
       <br />
-      [NewMember Method](adg-factory-class-new-member-method.html) 
+[NewMember Method](adg-factory-class-new-member-method.html) 
 				<br />[ReadXml Method](adg-factory-class-read-xml-methods.html)<br />
-				[ASNA DataGate Client Namespace](datagate-client-namespace.html)
+[ASNA DataGate Client Namespace](datagate-client-namespace.html)
 

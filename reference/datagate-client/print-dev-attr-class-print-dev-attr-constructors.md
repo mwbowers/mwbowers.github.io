@@ -24,10 +24,10 @@ Constructs an instance of a **PrintDevAttr** object.
 
 ## See Also
 
-<dl />
-      [PrintDevAttr Class](print-dev-attr-class.html)
+
+[PrintDevAttr Class](print-dev-attr-class.html)
       <br />
-      [PrintDevAttr Class Members](print-dev-attr-members.html)
+[PrintDevAttr Class Members](print-dev-attr-members.html)
       <br />
-      [ASNA DataGate Providers Namespace](datagate-providers-namespace.html)
+[ASNA DataGate Providers Namespace](datagate-providers-namespace.html)
 
