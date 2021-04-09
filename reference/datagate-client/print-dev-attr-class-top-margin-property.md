@@ -22,11 +22,11 @@ The **TopMargin** specifies the size of top margin in output produced by the pri
         <span class="lang">[C#]</span>
  **public int TopMargin { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property TopMargin As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp TopMargin Access(*Public) Type(*Integer) Len(4)
    BegGet,    BegSet** 

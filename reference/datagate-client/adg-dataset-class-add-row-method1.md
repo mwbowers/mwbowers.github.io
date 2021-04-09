@@ -14,13 +14,13 @@ Add a prepared row to the table for a particular format.
    int iFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub AddRow(
    ByVal iFormat As Integer
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr AddRow Access(*Public)
    DclSrParm iFormat Type(*Integer) Len(4)** 

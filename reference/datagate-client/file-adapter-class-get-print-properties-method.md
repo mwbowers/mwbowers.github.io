@@ -24,7 +24,7 @@ Gets the [IPrintProperties](iprint-properties-class.html) of the currently open 
    ByVal format As String _
 ) As [IPrintProperties](iprint-properties-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetPrintProperties Type( [IPrintProperties](iprint-properties-class.html) ) Access(*Public)
    DclSrParm format Type(*String)** 

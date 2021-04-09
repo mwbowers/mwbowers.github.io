@@ -39,7 +39,7 @@ Read the database file record specified.
    ByVal RRN As Long
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReadRandomKey Access(*Public)
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))
    DclSrParm mode Type([ReadRandomMode](read-random-mode-enumeration.html))

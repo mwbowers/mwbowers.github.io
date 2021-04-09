@@ -41,10 +41,10 @@ Specifies the class, or category of the DCS run-time error.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum dgErrorClass;** 
       </pre>
-		  <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Enum dgErrorClass** 
       </pre>
-		  <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegEnum dgErrorClass Access(*Public)** 
       </pre>
 
@@ -128,7 +128,7 @@ The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorCl
       throw dgEx;
   }
 </pre>
-					  <pre class="prettyprint">        <span class="lang">
+<pre class="prettyprint">        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' This code attempts to open a file exclusively. 

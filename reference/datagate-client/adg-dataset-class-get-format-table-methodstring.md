@@ -14,13 +14,13 @@ Returns the DataTable object for a particular file format specified by string.
    string strFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub GetFormatTable( _
    ByVal strFormat As String _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr GetFormatTable Access(*Public)
    DclSrParm strFormat Type(*String)** 

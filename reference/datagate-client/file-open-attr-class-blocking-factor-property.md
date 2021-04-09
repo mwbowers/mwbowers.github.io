@@ -19,9 +19,9 @@ Specify network blocking feature in the open file.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public int BlockingFactor { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property BlockingFactor As Integer**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp BlockingFactor Type(*Integer) Len(4) Access(*Public)
    BegGet, BegSet** 
       </pre>

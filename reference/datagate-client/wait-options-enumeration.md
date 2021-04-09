@@ -19,11 +19,11 @@ keywords: enumerations [DCS 16.0 WaitOptions
         <span class="lang">[C#]</span>
  **public enum WaitOptions;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum WaitOptions** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum WaitOptions Access(*Public)** 
       </pre>

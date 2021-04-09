@@ -24,7 +24,7 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 [XmlOptions](xml-options-enumeration.html) options
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub ReadXml( _
    ByVal cn As [AdgConnection](adg-connection-class.html) _<br />   ByVal containerPath As string _
@@ -34,7 +34,7 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
    ByVal options As [XmlOptions](xml-options-enumeration.html)
    ) As IAdgObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ReadXml Access(*Public) Type(IAdgObject)
    DclSrParm cn Type([AdgConnection](adg-connection-class.html))

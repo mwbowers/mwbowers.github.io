@@ -22,12 +22,12 @@ Updates the current database file record with the contents of the specified [ Ad
 [AdgDataSet](adg-dataset-class.html) ds
 };** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub ChangeCurrent( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSub ChangeCurrent Access(*Public)
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
       </pre>
@@ -112,7 +112,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

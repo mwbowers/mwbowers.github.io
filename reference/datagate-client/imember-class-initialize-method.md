@@ -24,12 +24,12 @@ Initialize a specific number of records in the database file member represented 
    long Records
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Sub Initialize(_
    ByVal Options As [InitMemberOptions](init-member-options-enumeration.html)_<br />   ByVal Records As System.Int64<br /> ) As Void** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc Initialize Access(*Public) Type(Void)<br />   DclSrParm Options Type([InitMemberOptions](init-member-options-enumeration.html))<br />   DclSrParm Records Type(System.Int64)** 
       </pre>

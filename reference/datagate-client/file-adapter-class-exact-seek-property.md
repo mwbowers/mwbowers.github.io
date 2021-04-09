@@ -22,11 +22,11 @@ This property is **True** if the seek operation resulted in an exact match.
         <span class="lang">[C#]</span>
  **public bool ExactSeek { get; }** 
       </pre>
-      <pre class="syntax">
+<pre class="syntax">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ExactSeek As Boolean** 
       </pre>
-      <pre class="syntax">
+<pre class="syntax">
         <span class="lang">[Visual RPG]</span>
  **BegProp ExactSeek Type(*Boolean) Access(*Public)
    BegGet** 
@@ -66,7 +66,7 @@ Read-only. Boolean. Returns **True** when a seek operation resulted in an exact 
           MessageBox.Show("Record 1125 not found.");
   }//Using statement automatically closes dbFile.
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

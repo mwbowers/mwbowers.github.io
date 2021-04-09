@@ -20,7 +20,7 @@ Sets the InitialValue in the data area.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public WriteOnly Property InitialValue As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp InitialValue Access(*Public) Type(*String) 
    BegSet** 

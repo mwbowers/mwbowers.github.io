@@ -21,10 +21,10 @@ The **Length** specifies the length of paper in the printer.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int Length { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **public Property Length As Integer** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp Length Access(*Public) Type(*Integer) Len(4)
    BegGet,    BegSet** 
       </pre>

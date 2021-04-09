@@ -14,13 +14,13 @@ Create a key buffer for keyed access operations for the specified format string.
    string strFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function NewKeyTable(
    ByVal strFormat As String
 ) As [AdgKeyTable](adg-key-table-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewKeyTable Access(*Public) Type([AdgKeyTable](adg-key-table-class.html))
    DclSrParm strFormat Type(*String)** 
@@ -57,7 +57,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
         <span class="lang">
  **[C#]** 
         </span></pre>
-      <pre class="prettyprint">  /* This example will open a file and find the record for
+<pre class="prettyprint">  /* This example will open a file and find the record for
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clearity's sake. */
 
@@ -81,12 +81,12 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
   //customer name "Thilmany Of Bread Co Resources" and store it
   //in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>
 </pre>
-      <pre class="prettyprint">  ' This example will open a file and find the record for
+<pre class="prettyprint">  ' This example will open a file and find the record for
   ' the customer "Thilmany of Bread Co Resources".
   ' It omits error trapping for clearity's sake.
   Dim db As New AdgConnection("*Public/DG NET Local")
@@ -111,7 +111,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
   ' in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key)
  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

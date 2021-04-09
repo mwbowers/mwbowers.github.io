@@ -29,7 +29,7 @@ Complete the current printer job, change device-related parameters associated wi
 )
 
       </pre>
-      <pre class="prettyprint"> **[Visual RPG]** 
+<pre class="prettyprint"> **[Visual RPG]** 
 BegSr ResetPrintAttr Access(*Public)
   DclSrParm docName Type(string)
   DclSrParm attr Type(ASNA.DataGate.Providers.PrintDevAttr)

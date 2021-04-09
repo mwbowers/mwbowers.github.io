@@ -22,11 +22,11 @@ The **PrinterName** specifies the name of an accessible printer device.
         <span class="lang">[C#]</span>
  **public String PrinterName { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property PrinterName As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp PrinterName Access(*Public) Type(*String) Len(45)
    BegGet,    BegSet** 

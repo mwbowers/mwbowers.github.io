@@ -16,7 +16,7 @@ Converts an object or value type to a parameter list value.
    int[] ElementIndices
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub ObjectToParm( _
    ByVal Value As Object _
@@ -24,7 +24,7 @@ Converts an object or value type to a parameter list value.
    ByVal ElementIndices() As Integer _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ObjectToParm Acess(*Public)
    DclSrParm Value Type(*Object)
@@ -125,7 +125,7 @@ The *ElementIndices* parameter is ignored unless *ParameterName* refers to a "mu
      "TimeOfDay", _
      New Integer(){}))
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

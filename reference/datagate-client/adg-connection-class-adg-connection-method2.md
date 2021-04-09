@@ -14,13 +14,13 @@ Constructs an [AdgConnection](adg-connection-class.html) instance for the databa
    string dbName
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
  **Public Sub New( _
    ByVal dbName As String _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)
    DclSrParm dbName Type(*String)** 
@@ -70,7 +70,7 @@ The *dbName* parameter is used to construct a new **SourceProfile** instance, us
       //At this point, dataBase will be set to null.  Do error handling here.
       System.Windows.Forms.MessageBox.Show(e.Message, "Unable to create connection.");
   }</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>
@@ -80,7 +80,7 @@ The *dbName* parameter is used to construct a new **SourceProfile** instance, us
       'At this point, dataBase will be set to nothing.  Do error handling here.
       MsgBox(e.Message, MsgBoxStyle.Exclamation, "Unable to create connection.")
   End Try</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

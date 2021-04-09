@@ -21,7 +21,7 @@ keywords: database files, number of non-deleted records in
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property RecordCount As Long** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp RecordCount Type(*Integer) Len(8) Access(*Public)
    BegGet** 
       </pre>

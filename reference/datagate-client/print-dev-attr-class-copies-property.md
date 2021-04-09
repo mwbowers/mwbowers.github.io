@@ -19,10 +19,10 @@ The **Copies** property indicates the number of copies to be printed.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int Copies { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **public Property Copies As Integer** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp Copies Access(*Public) Type(*Integer) Len(4)
    BegGet,   BegSet** 
       </pre>

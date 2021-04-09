@@ -11,10 +11,10 @@ Defines the data type of a simple iSeries program parameter.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public ProgParmType(<br />   string name,<br />   int cElems,<br />   FieldType type<br />)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Sub New( _<br />   ByVal name As String, _<br />   ByVal cElems As Integer, _<br />   ByVal type As [ASNA.DataGate.Common.FieldType](field-type-class.html)<br />)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)<br />   DclSrParm name Type(*String)<br />   DclSrParm cElems Type(*Integer) Len(4)<br />   DclSrParm type Type(FieldType)** 
       </pre>

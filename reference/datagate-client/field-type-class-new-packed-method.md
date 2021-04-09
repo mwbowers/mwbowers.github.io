@@ -17,9 +17,9 @@ keywords: how to, define packed field
 Creates a new packed decimal [ FieldType](field-type-class.html).
 <pre class="prettyprint">       <span class="lang">[C#]</span>
  **public static FieldType NewPacked(<br />   int prec,<br />   int scale<br />);**  </pre>
-      <pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewPacked( _<br />   ByVal prec As Integer, _<br />   ByVal scale As Integer _<br />) As [FieldType](field-type-class.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewPacked Type(FieldType) Access(*Public) Shared(*Yes)<br />   DclSrParm prec Type(*Integer) Len(4)<br />   DclSrParm scale Type(*Integer) Len(4)** 
       </pre>

@@ -17,10 +17,10 @@ Returns a copy of the <span> **SourceProfile** </span> object.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public virtual new object Clone();**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Overridable NotOverridable Clone() As Object**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc Clone Type(*Object) Access(*Public) Modifier(*NotOverridable)** 
       </pre>

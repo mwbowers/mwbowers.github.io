@@ -22,12 +22,12 @@ Deletes a database file record containing the specified key, if any.
 [AdgKeyTable](adg-key-table-class.html) keyTable
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub DeleteKey( _
    ByVal keyTable As [AdgKeyTable](adg-key-table-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr DeleteKey Access(*Public)
    DclSrParm keyTable Type([AdgKeyTable](adg-key-table-class.html))** 
       </pre>
@@ -101,7 +101,7 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

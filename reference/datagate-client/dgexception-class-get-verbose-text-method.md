@@ -21,7 +21,7 @@ Returns a multi-line description of the <span>dgException</span>.
         <span class="lang">[Visual Basic] </span>
  **Public Overridable NotOveriddable Function GetVerboseText() As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetVerboseText Type(*String) Access(*Public) Modifier(*NotOverridable)** 
       </pre>
@@ -62,7 +62,7 @@ For development and debugging purposes, <span> **GetVerboseText** </span> is an 
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="prettyprint">        <span class="lang">
+<pre class="prettyprint">        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Verbose text generates a large String which is a concatanation 

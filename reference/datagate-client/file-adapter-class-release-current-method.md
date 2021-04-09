@@ -22,7 +22,7 @@ Release the currently locked record.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReleaseCurrent()** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReleaseCurrent Access(*Public)** 
       </pre>
       <br />

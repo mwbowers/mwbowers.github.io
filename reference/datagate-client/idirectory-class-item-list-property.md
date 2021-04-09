@@ -18,11 +18,11 @@ keywords: itemlist of files and libraries in a database library
         <span class="lang">[C#]</span>
  **public ArrayList ItemList { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ItemList() As ArrayList** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp ItemList Access(*Public) Type(ArrayList) Len(4)
    BegGet** 

@@ -17,11 +17,11 @@ Specifies the type of DCS run-time error.
         <span class="lang">[C#]</span>
  **public enum dgErrorNumber;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum dgErrorNumber** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum dgErrorNumber Access(*Public)** 
       </pre>
@@ -544,7 +544,7 @@ The <span>dgErrorNumber</span> enumeration is used as a parameter by the [ Error
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

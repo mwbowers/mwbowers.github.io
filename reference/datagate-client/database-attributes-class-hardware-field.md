@@ -14,10 +14,10 @@ The name of the hardware on which the database file resides.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public string Hardware** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property Hardware As String** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(Hardware) Type(*String) Access(*Public)** 
       </pre>
 

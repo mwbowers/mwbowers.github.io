@@ -27,11 +27,11 @@ The <span> **DateTimeFormat** </span> enumerated constant defines values on the 
         <span class="lang">[C#]</span>
  **public enum DataTimeFormat;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum DataTimeFormat** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum DataTimeFormat Access(*Public)** 
       </pre>

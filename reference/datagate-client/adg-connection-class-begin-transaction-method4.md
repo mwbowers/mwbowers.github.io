@@ -19,7 +19,7 @@ Begins a manual database transaction creating an instance of an [ IAdgTransactio
    string Options
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function BeginAutoTransaction( _
    ByVal tl As [ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html) _
@@ -27,7 +27,7 @@ Begins a manual database transaction creating an instance of an [ IAdgTransactio
    ByVal Options As String
 ) As [IAdgTransaction](iadg-transaction-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc BeginAutoTransaction Access(*Public) Type(IAdgTransaction)
    DclSrParm tl Type(TransactionLevel)

@@ -22,7 +22,7 @@ keywords: database libraries, about ILibraryList class
 ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>ILibraryList</span>** 
 <pre class="prettyprint">
   [Prototype in C#] public interface ILibraryList</pre>
-      <pre class="prettyprint"> [Prototype in
+<pre class="prettyprint"> [Prototype in
   Visual RPG] BegInterface ILibraryList access (*public)</pre>
 
 ## Thread Safety

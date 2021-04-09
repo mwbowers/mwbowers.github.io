@@ -37,7 +37,7 @@ Read a database file record adjacent to the current position with a key equal to
    ByVal keyTable As [AdgKeyTable](adg-key-table-class.html)
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReadSequentialEqual Access(*Public)
    DclSrParm ds Type(AdgDataSet)
    DclSrParm mode Type(ReadEqualMode)

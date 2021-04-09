@@ -15,11 +15,11 @@ Construct a representation of a complex iSeries program parameter.
         <span class="lang">[C#]</span>
  **public ProgParm(<br />   StructureType st,<br />   DataDirection dir<br />)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Sub New( _<br />   ByVal st As [StructureType](structure-type-class.html) _<br />   ByVal dir As [DataDirection](data-direction-enumeration.html) _<br />)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)<br />   DclSrParm st Type(StructureType)<br />   DclSrParm dir Type(DataDirection)** 
       </pre>

@@ -17,11 +17,11 @@ For [FileAdapter](file-adapter-class.html) range methods, defines how to access 
         <span class="lang">[C#]</span>
  **public enum RangeMode;** 
       </pre>
-      <pre class="syntax">
+<pre class="syntax">
         <span class="lang">[Visual Basic] </span>
  **public Enum RangeMode** 
       </pre>
-      <pre class="syntax">
+<pre class="syntax">
         <span class="lang">[Visual RPG]</span>
  **BegEnum RangeMode Access(*Public)** 
       </pre>
@@ -124,7 +124,7 @@ For <span> **SeekRange** </span>, **RangeMode** determines whether to locate the
       MessageBox.Show("Unable to access any customers!");
   dbFile.Close();
   db.Close(); </pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

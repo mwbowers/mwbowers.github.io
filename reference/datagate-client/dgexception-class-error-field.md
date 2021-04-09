@@ -18,10 +18,10 @@ The condition identifier for this dgException.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public dgErrorNumber Error}** 
       </pre>
-		  <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property Error As dgErrorNumber** 
       </pre>
-		  <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(Error) Type(dgErrorNumber)** 
       </pre>
 
@@ -62,7 +62,7 @@ DCS sets the **Error** field to identify the condition giving rise to the dgExce
 
   dbFile.Close();
   db.Close();</pre>
-					  <pre class="prettyprint">        <span class="lang">
+<pre class="prettyprint">        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim db As New AdgConnection("*Public/DG NET Local")

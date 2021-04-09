@@ -21,13 +21,13 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
    System.Xml.XmlReader reader ,<br />[XmlOptions](xml-options-enumeration.html) options
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub ReadXml( _
    ByVal cn As [AdgConnection](adg-connection-class.html) _<br />   ByVal containerPath As string _
    ByVal docObjectType As [AdgObjectTypes](adg-object-types-enumeration.html) _<br />   ByVal reader As System.Xml.XmlReader _<br />   ByVal options As [XmlOptions](xml-options-enumeration.html)<br /> ) As IAdgObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ReadXml Access(*Public) Type(IAdgObject)<br />   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
    DclSrParm containerPath Type(*string)<br />   DclSrParm docObjectType Type([AdgObjectTypes](adg-object-types-enumeration.html))<br />   DclSrParm reader Type(System.Xml.XmlReader)

@@ -20,7 +20,7 @@ Converts the named database into a SourceProfile object.
 ) As SourceProfile** 
       </pre>
 
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ToSourceProfile Access(*Public) Type(SourceProfile)
    DclSrParm dbName Type (*String)** 

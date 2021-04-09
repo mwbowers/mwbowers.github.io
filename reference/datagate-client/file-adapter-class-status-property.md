@@ -23,7 +23,7 @@ keywords: open state of file
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Status As [FileAdapter.AdapterStatus](file-adapter-adapter-status-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Status Type(FileAdapter.AdapterStatus) Access(*Public)
    BegGet** 

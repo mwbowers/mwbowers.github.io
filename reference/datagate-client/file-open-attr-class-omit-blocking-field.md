@@ -19,10 +19,10 @@ This constant, when assigned to the [ BlockingFactor](file-open-attr-class-block
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public static int OmitBlocking** 
       </pre>
-      <pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
  **Public Property OmitBlocking As Integer** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(OmitBlocking) Type(*Integer) Access(*Public)** 
       </pre>
 

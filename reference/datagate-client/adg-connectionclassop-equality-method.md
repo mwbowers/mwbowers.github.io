@@ -18,7 +18,7 @@ Compares two instances of <span> **AdgConnection** </span> for equality.
         <span class="lang">[Visual RPG]</span>
  **AdgConnection.op_Equality(x, y)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
  **returnValue = AdgConnection.op_Equality(x, y)** 
       </pre>

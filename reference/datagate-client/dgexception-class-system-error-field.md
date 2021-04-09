@@ -18,7 +18,7 @@ A system-level classification of the <span>dgException</span>.
 <pre><span class="lang">[Visual Basic] </span>
  **Public Property SystemError As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **DclFld Name(SystemError) Type(*Integer) Access(*Public)** 
       </pre>
@@ -71,7 +71,7 @@ In these cases, <span> **SystemError** </span> will contain an integer code asso
           throw dgEx;
       }
   }</pre>
-      <pre class="prettyprint">        <span class="lang">
+<pre class="prettyprint">        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' This code attempts to open a file exclusively. 

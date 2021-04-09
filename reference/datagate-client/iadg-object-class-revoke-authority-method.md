@@ -29,7 +29,7 @@ keywords: revoke authorities previously granted or denied to a database object
  **Public Sub RevokeAuthority( _
    ByVal userName As string _<br />   ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)**  **) As IAdgObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr RevokeAuthority Access(*Public) Type(IAdgObject)** 
  **DclSrParm userName Type (*string)

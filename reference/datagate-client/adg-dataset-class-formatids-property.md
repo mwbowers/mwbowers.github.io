@@ -19,11 +19,11 @@ The set of binary format identifiers associated with the set of formats containe
         <span class="lang">[C#]</span>
  **public byte[][] FormatIDs { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property FormatIDs As Byte()()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp FormatIDs Access(*Public) Type(*Byte) Rank(2)
    BegGet** 

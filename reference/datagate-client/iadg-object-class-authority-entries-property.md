@@ -22,7 +22,7 @@ keywords: authorities, obtaining currently set for a database object
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property AuthorityEntries As [AuthorityEntry](authority-entry-class.html)()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp AuthorityEntries Type(AuthorityEntry) Rank(1) Access(*Public) 
    BegGet,    BegSet** 

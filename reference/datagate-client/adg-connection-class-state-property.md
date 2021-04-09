@@ -20,11 +20,11 @@ Gets the current state of the connection.
         <span class="lang">[C#]</span>
  **public ConnectionState State { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property State As ConnectionState** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp State Access(*Public) Type(ConnectionState)
    BegGet** 
@@ -78,7 +78,7 @@ The value of **State** will be set to Open by a successful call to the [Open](ad
      'If the AdgConnection was not ready, you cannot immediately
      'open the file, so take alternative action here.
   End If</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

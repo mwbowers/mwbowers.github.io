@@ -9,14 +9,14 @@ TocOrder: 1
 Constructs an instance of AdgAutoTransaction.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
 AdgAutoTransaction.AdgAutoTransaction[connection, transactionLevel, name, Options]</pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
 Public Sub New( _
    ByVal connection As ASNA.DataGate.Client.AdgConnection, _
    ByVal transactionLevel As ASNA.DataGate.Common.TransactionLevel, _
    ByVal name As String, _
    ByVal Options As String _
 )</pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
 AdgAutoTransaction.AdgAutoTransaction(connection, transactionLevel, name, Options)</pre>
 
 ## Parameters
@@ -70,14 +70,14 @@ The <span>sp</span> parameter is used to construct a new SourceProfile instance,
   AdgConnection Cx;
   Cx = new AdgConnection("ASNA Local DB");
   Cx.Open();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim Cx As AdgConnection
   Cx = New AdgConnection("ASNA Local DB")
   Cx.Open()</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

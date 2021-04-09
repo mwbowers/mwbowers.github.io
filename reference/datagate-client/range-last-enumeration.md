@@ -19,11 +19,11 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
         <span class="lang">[C#]</span>
  **public enum RangeLast;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum RangeLast** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum RangeLast Access(*Public)**  </pre>
 
@@ -119,7 +119,7 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
       "% of the customers sampled are active.");
   dbFile.Close();
   db.Close(); </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

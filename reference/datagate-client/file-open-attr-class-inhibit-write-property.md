@@ -21,9 +21,9 @@ keywords: FileOpenAttr.InhibitWrites property
 Specify write-access enabling on the open file.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public bool InhibitWrite { get; set; }**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property InhibitWrite As Boolean**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp InhibitWrites Type(*Boolean) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 

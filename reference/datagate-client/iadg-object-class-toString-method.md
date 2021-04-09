@@ -19,7 +19,7 @@ keywords: database objects, return path names for
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Function ToString() As string** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ToString Access(*Public) Type(*String)** 
       </pre>

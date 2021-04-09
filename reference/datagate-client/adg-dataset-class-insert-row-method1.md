@@ -14,14 +14,14 @@ Insert a row into the Dataset table for a particular format and relative record 
    int iFormat,<br />   int rrn
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub InsertRow(_
    ByVal iFormat As Integer_
    ByVal rrn as Integer
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr InsertRow Access(*Public)
    DclSrParm iFormat Type(*Integer) Len(4)

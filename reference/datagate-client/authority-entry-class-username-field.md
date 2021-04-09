@@ -19,11 +19,11 @@ keywords: authorities, profile name established for database
         <span class="lang">[C#]</span>
  **public string Username** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Property Username As string** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **DclFld Name(Username) Type(*string) Access(*Public) Shared(*Yes)** 
       </pre>

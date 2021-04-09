@@ -18,14 +18,14 @@ keywords: enumerations [DCS 16.0 AuthorityTypes, used by
 [AuthorityTypes](authority-types-enumeration.html) authorityType
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub AuthorityEntry( _
    ByVal username As string _
    ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)** 
  **)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc AuthorityEntry Access(*Public)
    DclSrParm username Type (*string)

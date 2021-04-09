@@ -21,13 +21,13 @@ Opens a database file for access and returns a new [ AdgDataset](adg-dataset-cla
    AdgDataSet ds
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub OpenNewAdgDataSet( _
    ByRef ds As [AdgDataSet](adg-dataset-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr OpenNewAdgDataSet Access(*Public)
    DclSrParm ds Type(AdgDataSet) By(*Reference)** 

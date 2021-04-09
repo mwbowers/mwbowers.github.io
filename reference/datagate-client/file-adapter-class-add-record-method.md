@@ -21,12 +21,12 @@ Adds a record to a file.
 [AdgDataSet](adg-dataset-class.html) ds
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub AddRecord( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr AddRecord Access(*Public)
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
@@ -145,7 +145,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
             "Error!")
      'Exit procedure or end application here.
   End Try</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

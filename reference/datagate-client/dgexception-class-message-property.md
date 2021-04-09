@@ -21,7 +21,7 @@ String associated with the dgException.
         <span class="lang">[Visual Basic] </span>
  **Public Overrides ReadOnly Property Message As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Message Type(*String) Access(*Public) Modifier(*Overrides)
    BegGet** 
@@ -57,7 +57,7 @@ The <span> **Message** </span> property overrides the property defined by <span>
       //Exit procedure here.
   }
 </pre>
-      <pre class="prettyprint">        <span class="lang">
+<pre class="prettyprint">        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim db As New AdgConnection("*Public/DG NET Local")

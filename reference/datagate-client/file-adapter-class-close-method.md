@@ -18,10 +18,10 @@ Closes the currently open file (synonymous with [ Dispose Method](file-adapter-c
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void Close();** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub Close()** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr Close Access(*Public)** 
       </pre>
 
@@ -85,7 +85,7 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

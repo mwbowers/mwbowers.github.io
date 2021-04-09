@@ -23,11 +23,11 @@ Specifies the type of a program parameter.
         <span class="lang">[C#]</span>
  **public enum DataDirection;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum DataDirection** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum DataDirection Access(*Public)** 
       </pre>
@@ -94,7 +94,7 @@ decimal TimeOfDay;
         <span class="lang">
  **[Visual Basic]** 
         </span>
-      <pre class="prettyprint"><code class="language-vbnet">
+<pre class="prettyprint"><code class="language-vbnet">
 Dim ProdDB As New AdgConnection("*Public/DG NET IBM i")
 Dim Quit400App As Char = "1"
 Dim CustName As String

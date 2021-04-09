@@ -21,11 +21,11 @@ The <span> **DbcsFormat** </span> enumerated constant defines values on whether 
         <span class="lang">[C#]</span>
  **public enum DbcsFormat;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum DbcsFormat** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum DbcsFormat Access(*Public)** 
       </pre>

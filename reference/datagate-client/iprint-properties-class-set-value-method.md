@@ -22,7 +22,7 @@ Assign a value to a print control property.
    object val
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public sub SetValue( _
   ByVal fieldName As string _
@@ -30,7 +30,7 @@ Assign a value to a print control property.
   ByVal val as object _
 ) As Void** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr SetValue Type(Void) Access(*Public)
    DclSrParm fieldName Type(*string)

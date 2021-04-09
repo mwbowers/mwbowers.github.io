@@ -14,13 +14,13 @@ Returns the DataTable object for a particular file format specified by index.
    int iFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub GetFormatTable( _
    ByVal iFormat As Integer _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr GetFormatTable Access(*Public)
    DclSrParm iFormat Type(*Integer) Len(4)** 

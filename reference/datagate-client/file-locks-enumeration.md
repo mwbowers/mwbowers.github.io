@@ -22,7 +22,7 @@ Defines modes on how a file will be locked; either automatically or manually.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Enum FileLocks** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum FileLocks Access(*Public)** 
       </pre>

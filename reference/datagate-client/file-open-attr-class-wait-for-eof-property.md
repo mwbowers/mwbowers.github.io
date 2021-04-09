@@ -19,9 +19,9 @@ keywords: files, wait time for more records at EOF
 Time, in seconds, that a process will wait for more records at end of file. 
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public int WaitForEOF { get; set; }**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property WaitForEOF As Integer**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp WaitForEOF Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 

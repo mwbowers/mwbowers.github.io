@@ -20,7 +20,7 @@ Construct an instance of the **As400Program** object and set the [ Connection](a
    ByVal Connection As [AdgConnection](adg-connection-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Acess(*Public)
    DclSrParm Connection Type(AdgConnection)** 
@@ -65,14 +65,14 @@ If *Connection* is set with a null value, or is an **AdgConnection** instance wh
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program(ProdDB);
   prog.ProgramPath = "*Libl/Call400";</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Here, "ProdDB" is an initialized AdgConnection.
   Dim prog As New As400Program(ProdDB)
   prog.ProgramPath = "*Libl/Call400"</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

@@ -21,11 +21,11 @@ Contains the description and value of parameters as required by the called progr
         <span class="lang">[C#]</span>
  **public [ProgParm](prog-parm-class.html)[] Parameters { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Parameters As [ProgParm](prog-parm-class.html) ()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Parameters Access(*Public) Type([ProgParm](prog-parm-class.html)) Rank(1)
    BegGet** 

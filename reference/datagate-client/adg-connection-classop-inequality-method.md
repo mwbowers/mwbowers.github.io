@@ -18,7 +18,7 @@ Returns the opposite value returned by [op_Equality](adg-connectionclassop-equal
         <span class="lang">[Visual RPG]</span>
  **AdgConnection.op_Inequality(x, y)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
  **returnValue = AdgConnection.op_Inequality(x, y)** 
       </pre>

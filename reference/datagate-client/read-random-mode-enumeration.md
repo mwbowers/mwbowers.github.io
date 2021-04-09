@@ -19,11 +19,11 @@ Defines modes of operation for the [ FileAdapter.ReadRandomKey](file-adapter-cla
         <span class="lang">[C#]</span>
  **public enum ReadRandomMode;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum ReadRandomMode** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum ReadRandomMode Access(*Public)** 
       </pre>
@@ -80,7 +80,7 @@ ReadRandomMode Enumeration defines values in which you can select one of the cho
       MessageBox.Show("Error deleting the record: " + dgEx.Message,
       dgEx.Error.ToString());
   }</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

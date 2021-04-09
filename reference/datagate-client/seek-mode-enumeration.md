@@ -22,11 +22,11 @@ Defines modes of operation for the [FileAdapter.SeekKey](file-adapter-class-seek
         <span class="lang">[C#]</span>
  **public enum SeekMode;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum SeekMode** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum SeekMode Access(*Public)** 
       </pre>

@@ -21,7 +21,7 @@ The connection to the database representing the transaction context.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Overridable ReadOnly Property Connection<br />   As [AdgConnection](adg-connection-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Connection Type(AdgConnection) Modifier(*Overridable)
    BegGet** 

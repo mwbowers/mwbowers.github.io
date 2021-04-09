@@ -15,14 +15,14 @@ Returns an object of a specific type from the program parameter list provided wi
    System.Type ReturnType
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function ParmToObject(_ 
    ByVal Parameter As <a href="DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a> _
    ByVal ReturnType As System.Type
 ) As Object** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ParmToObject Access(*Public) Type(Object)
    DclSrParm Parameter Type(<a href="DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a>)

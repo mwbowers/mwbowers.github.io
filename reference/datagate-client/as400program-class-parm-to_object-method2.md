@@ -16,7 +16,7 @@ Returns an object of a specific type from the program parameter list.
    int[] ElementIndices
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function ParmToObject( _
    ByVal ReturnType As Type, _
@@ -24,7 +24,7 @@ Returns an object of a specific type from the program parameter list.
    ByVal ElementIndices[] As Integer _
 ) As Object** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ParmToObject Access(*Public) Type(Object)
    DclSrParm ReturnType Type(Type)
@@ -129,7 +129,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
         Prog.ParmToObject(System.Type.GetType("System.Decimal"), _
         "TimeOfDay", _
         0))</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

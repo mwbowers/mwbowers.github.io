@@ -19,12 +19,12 @@ keywords: enumerations [DCS 16.0 DataSetOptions, used by
 [DataSetOptions](dataset-options-enumeration.html) opts
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub GetAdgDataSet(_
    ByVal opts As [DataSetOptions](dataset-options-enumeration.html)<br /> ) As AdgDataSet** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetAdgDataSet Access(*Public) Type(AdgDataSet)<br />     DclSrParm opts Type([DataSetOptions](dataset-options-enumeration.html))** 
       </pre>

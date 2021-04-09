@@ -47,7 +47,7 @@ Read a database file record containing a key within a given range of values.
    ByVal rangeLast As [RangeLast](range-last-enumeration.html)
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReadRange Access(*Public)
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))
    DclSrParm mode Type([RangeMode](range-mode-enumeration.html))

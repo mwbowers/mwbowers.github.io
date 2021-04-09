@@ -11,10 +11,10 @@ The default constructor creates an instance of the **As400Program** object.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public As400Program();** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub New()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Acess(*Public)** 
       </pre>
@@ -42,7 +42,7 @@ Before adding parameters or calling programs with an instance created with this 
   Dim prog As New As400Program()
   prog.Connection = ProdDB
   prog.ProgramPath = "*Libl/Call400"</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

@@ -21,11 +21,11 @@ The **PrintDuplex** enumerated constant defines values on duplex (double-sided) 
         <span class="lang">[C#]</span>
  **public enum PrintDuplex;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum PrintDuplex** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum PrintDuplex Access(*Public)** 
       </pre>

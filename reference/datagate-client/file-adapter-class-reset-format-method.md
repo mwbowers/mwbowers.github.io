@@ -21,7 +21,7 @@ For multi-format file access, reset the file to access a record of any format in
  **public void ResetFormat();** </pre>
 <pre>[Visual Basic]
  **Public Sub ResetFormat()** </pre>
-      <pre class="prettyprint">[Visual RPG]
+<pre class="prettyprint">[Visual RPG]
  **BegSr ResetFormat Access(*Public)** </pre>
       <br />
 

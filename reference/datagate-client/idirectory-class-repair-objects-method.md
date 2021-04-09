@@ -24,11 +24,11 @@ keywords: how to, invoke automatic diagnostic and repair function for library fi
         <span class="lang">[C#]</span>
  **public void IDirectory RepairObjects(<br />   [RepairOptions](repair-options-enumeration.html) repairOptions ,<br />   [AdgObserver](adg-observer-delegate.html) observer<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub RepairObjects(<br />   ByVal repairOptions As [RepairOptions](repair-options-enumeration.html) _<br />   ByVal observer As [AdgObserver](adg-observer-delegate.html)<br />) As IDirectory** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr RepairObjects Access(*Public) Type (IDirectory)<br />   DclSrParm repairOptions Type([RepairOptions](repair-options-enumeration.html))<br />   DclSrParm observer Type([AdgObserver](adg-observer-delegate.html))** 
       </pre>

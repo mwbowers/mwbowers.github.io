@@ -21,11 +21,11 @@ The TCP port number used by the database server for TCP/IP-based transport (defa
         <span class="lang">[C#]</span>
  **public int Port { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Property Port As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Port Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
@@ -56,7 +56,7 @@ The default TCP port number is 5042.
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

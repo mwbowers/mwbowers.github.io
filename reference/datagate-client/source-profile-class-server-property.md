@@ -21,11 +21,11 @@ The database server host machine name or address.
         <span class="lang">[C#]</span>
  **public string Server { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Property Server As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Server Type(*String) Access(*Public)** 
       </pre>
@@ -47,7 +47,7 @@ The <span> **Server** </span> property may either be: 1) a Domain Name System (D
   sp.Server = "555.93.279.303";
   sp.Register(); /* Save changes. */
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -20,13 +20,13 @@ Returns a string identifying a DataGate file format.
    int iFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function GetFormatNew( _
    ByVal iFormat As Integer _
 ) As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetFormatNew Access(*Public) Type(*String)
    DclSrParm iFormat Type(*Integer) Len(4)** 

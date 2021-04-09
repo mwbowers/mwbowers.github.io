@@ -18,9 +18,9 @@ keywords: number of, maximum digits to right of decimal point
 The maximum number of digits to the right of the decimal point (for decimal fields only).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int Scale { get; }**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Scale**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Scale Type(*Integer) Len(4) Access(*Public)<br />   BegGet** 
       </pre>

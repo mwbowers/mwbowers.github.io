@@ -23,7 +23,7 @@ keywords: how to, validate XML document against schema
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Schema As System.Xml.Schema.XmlSchemaCollection** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Schema Access(*Public) Type(System.Xml.Schema.XmlSchemaCollection)
    BegGet** 

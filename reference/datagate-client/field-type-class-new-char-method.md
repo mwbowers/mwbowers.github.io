@@ -17,9 +17,9 @@ Creates a new fixed-width character [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewChar(<br />  int length<br />);** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewChar( _<br />  ByVal length As Integer _<br /><br />) As [FieldType](field-type-class.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewChar Type(FieldType) Access(*Public) Shared(*Yes)<br />   DclSrParm length Type(*Integer) Len(4)** 
       </pre>

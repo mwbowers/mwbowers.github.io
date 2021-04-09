@@ -20,7 +20,7 @@ keywords: owner names, identify single or group user profile
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property OwnerIsGroup As boolean** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp OwnerIsGroup Access(*Public) Type(*boolean) Len(45)
    BegGet** 

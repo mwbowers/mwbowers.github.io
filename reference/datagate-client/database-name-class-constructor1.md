@@ -12,11 +12,11 @@ Constructs an instance of a [DatabaseName](database-name-class.html) object with
         <span class="lang">[C#]</span>
  **public DatabaseName();** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub New()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)** 
       </pre>

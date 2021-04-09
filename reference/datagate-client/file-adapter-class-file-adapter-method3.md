@@ -14,13 +14,13 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object with
    string FileName
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub New( _
    ByVal cn As AdgConnection _
    ByVal FileName As String _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)
    DclSrParm cn Type(AdgConnection)
    DclSrParm FileName Type(*String)** 
@@ -60,7 +60,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
   Dim dataBase As New AdgConnection("*Public/DG NET IBM i")
   Dim dbFile As New FileAdapter(dataBase, "*Libl/CMASTNEWL1")
   dbFile.MemberName = "CMMASTERL1"</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

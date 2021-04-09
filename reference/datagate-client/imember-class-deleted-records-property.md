@@ -19,11 +19,11 @@ The number of deleted records in the database file member object represented by 
         <span class="lang">[C#]</span>
  **public long DeletedRecord { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public ReadOnly Property DeletedRecord As Long** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp DeletedRecord Type(*long) Len(8) Access(*Public)
    BegGet** 

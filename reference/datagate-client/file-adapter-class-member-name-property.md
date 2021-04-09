@@ -20,7 +20,7 @@ keywords: how to, set/return the member name of database file
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property MemberName As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp MemberName Type(*String) Access(*Public)** 
       </pre>

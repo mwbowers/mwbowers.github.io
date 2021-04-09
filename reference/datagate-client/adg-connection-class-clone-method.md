@@ -20,11 +20,11 @@ Returns a copy of the **AdgConnection** object.
         <span class="lang">[C#]</span>
  **public virtual new object Clone();** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Overridable NotOverridable Clone() As Object** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc Clone Access(*Public) Type(*Object) Modifier(*Overridable)** 
       </pre>
@@ -78,7 +78,7 @@ Note that a database connection cannot be shared between two instances of **AdgC
   Dim Cx As AdgConnection
   Cx = New AdgConnection("ASNA Local DB")
   Cx.Open()</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

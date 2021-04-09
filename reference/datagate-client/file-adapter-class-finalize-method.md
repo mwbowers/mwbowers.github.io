@@ -18,10 +18,10 @@ Releases managed resources and performs other cleanup operations.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **protected override void Finalize();** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Overrides Sub Finalize()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Finalize Access(*Public) Modifier(*Overrides)**    </pre>
 

@@ -17,13 +17,13 @@ Returns an array of [SourceProfile](source-profile-class.html) objects currently
    bool publicDbs
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Shared GetSourceProfiles( _
    ByVal publicDbs As Boolean _
 ) As [SourceProfile](source-profile-class.html)[]** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetSourceProfiles Type(SourceProfile) Rank(1) Access(*Public) Shared(*Yes)
    DclSrParm publicDbs Type(*Boolean)** 

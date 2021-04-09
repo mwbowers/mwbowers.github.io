@@ -22,12 +22,12 @@ The **Size** property specifies the standard sheet size of paper in the printer.
         <span class="lang">[C#]</span>
  **public System.Drawing.Printing.PaperKind Size { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property Size As 
 System.Drawing.Printing.PaperKind** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Size Type(System.Drawing.Printing.PaperKind) Access(*Public) <br />    BegGet,    BegSet** 
       </pre>

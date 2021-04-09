@@ -19,7 +19,7 @@ A delegate provided to the [IDirectory.Enumerate](idirectory-class-enumerate-met
 [ASNA.DataGate.Client](datagate-client-namespace.html) 
 <pre class="prettyprint">
 [ C# ] **Public delegate void AdgEnumerator (IAdgObject iAdgObject);** </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
 [ AVR.NET ] **DclDelegate AdgEnumerator Access(*public)
   DclSrParm iAdgObject Type(IAdgObject)** </pre>
 

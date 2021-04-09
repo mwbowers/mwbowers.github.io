@@ -22,10 +22,10 @@ The **Duplex** property specifies the standard duplex (double-sided) setting for
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public System.Drawing.Printing.Duplex Duplex { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **public Property Duplex As System.Drawing.Printing.Duplex** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp Duplex Type(System.Drawing.Printing.Duplex) Access(*Public) <br /> BegGet,    BegSet** 
       </pre>
 

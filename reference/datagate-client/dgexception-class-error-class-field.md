@@ -19,11 +19,11 @@ A category of the condition raising the exception.
         <span class="lang">[C#]</span>
  **public dgErrorClass ErrorClass { get; set }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Property ErrorClass As dgErrorClass** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp ErrorClass As dgErrorClass<br /> BegGet, BegSet** 
       </pre>
@@ -78,7 +78,7 @@ The condition raising the <span>dgException</span> belongs to a particular categ
       /* Throw exception otherwise. */
       throw dgEx;
   }</pre>
-      <pre class="prettyprint">        <span class="lang">
+<pre class="prettyprint">        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' This code attempts to open a file exclusively. 

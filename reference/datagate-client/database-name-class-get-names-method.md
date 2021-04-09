@@ -15,13 +15,13 @@ Returns the currently registered database names available for use in a program.
         <span class="lang">[C#]</span>
  **public static string[] GetNames(<br />   bool publicDbs<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Shared GetName( _
    ByVal publicDbs As Boolean _
  ) As String()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetNames Type(*String) Rank(1) Access(*Public) Shared(*Yes)
    DclSrParm publicDbs Type(*Boolean)** 

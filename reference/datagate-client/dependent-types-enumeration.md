@@ -18,11 +18,11 @@ keywords: Join enumeration member
         <span class="lang">[C#]</span>
  **public enum DependentTypes;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum DependentTypes** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum DependentTypes Access(*Public)** 
       </pre>

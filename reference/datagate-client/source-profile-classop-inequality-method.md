@@ -19,7 +19,7 @@ SourceProfile.op_Inequality</span>
         <span>(x, y)</span>
         <span>  </span>
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span>[Visual Basic]
 returnValue = SourceProfile.op_Inequality</span>
         <span>(x, y)</span>

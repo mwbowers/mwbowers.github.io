@@ -27,11 +27,11 @@ keywords: how to, get system portion of available directories in the library lis
         <span class="lang">[C#]</span>
  **public string[] SystemConfig { get;  set}** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Property SystemConfig As String()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp SystemConfig Type(*string) Access(*Public) Rank(1)
      BegGet;  BegSet** 

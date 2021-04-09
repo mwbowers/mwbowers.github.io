@@ -15,11 +15,11 @@ Constructs an instance of [SourceProfile](source-profile-class.html) that is an 
         <span class="lang">[C#]</span>
  **public SourceProfile(<br />   string NewName,<br />   SourceProfile sp<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub New( _<br />   ByVal NewName As String, _<br />   ByVal sp As [SourceProfile](source-profile-class.html)<br />)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)<br />   DclSrParm NewName Type(*String)<br />   DclSrParm sp Type(SourceProfile)** 
       </pre>
@@ -65,7 +65,7 @@ This constructor is useful for creating an object capable of registering databas
   /* This creates a brand new database name using the
    * old source profile.*/
   SourceProfile newDbProfile2 = new SourceProfile("Brand New DB Name", sp);</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

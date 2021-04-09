@@ -14,13 +14,13 @@ Converts the named database into a SourceProfile object.
    bool bFromRegistry
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub ToSourceProfile(_ 
    ByVal dbName As String_
    ByVal bFromRegistry As Boolean
 ) As SourceProfile** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ToSourceProfile Access(*Public) Type(SourceProfile)
    DclSrParm dbName Type (*String)

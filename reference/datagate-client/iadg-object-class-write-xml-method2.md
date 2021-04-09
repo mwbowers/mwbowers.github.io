@@ -29,7 +29,7 @@ Public Sub WriteXml(_<br />   ByVal writer As System.Xml.XmlWriter_<br />   ByVa
 ) As IAdgObject** 
       </pre>
 
-      <pre class="prettyprint">
+<pre class="prettyprint">
  **<span class="lang">[Visual RPG]</span>
  BegSr WriteXml Access(*Public) Type(IAdgObject)<br />   DclSrParm writer Type(System.Xml.XmlWriter)
    DclSrParm options Type([XmlOptions](xml-options-enumeration.html))

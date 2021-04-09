@@ -25,12 +25,12 @@ keywords: how to, create XML file definition for database file
    System.Xml.XmlWriter writer
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub WriteDefinition(_
    ByVal writer As System.Xml.XmlWriter<br /> ) As Void** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc WriteDefinition Access(*Public) Type(Void)<br />   DclSrParm writer Type(System.Xml.XmlWriter)** 
       </pre>

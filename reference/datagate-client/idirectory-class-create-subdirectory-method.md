@@ -18,11 +18,11 @@ keywords: how to, create library sub-directories
         <span class="lang">[C#]</span>
  **Public void IDirectory CreateSubDirectory(_<br />   string name_<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub CreateSubDirectory(<br />   ByVal name As string,<br />) As IDirectory** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc CreateSubDirectory Access(*Public) Type(IDirectory)
   DclSrParm name Type(*string) Len(45)** 

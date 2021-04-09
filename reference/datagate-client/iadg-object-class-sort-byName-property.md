@@ -19,7 +19,7 @@ keywords: how to, return IComparer instances for case sensitive database object 
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public interface ReadOnly Property SortByName As IComparer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp SortByName Access(*Public) Type(IComparer)
    BegGet** 

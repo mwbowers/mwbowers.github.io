@@ -23,14 +23,14 @@ Mark a DataRow in the **AdgDataSet** as deleted.
    int rrn
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub DeleteRow( _
    ByVal strFormat As String _
    ByVal rrn As Integer
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr DeleteRow Access(*Public)
    DclSrParm strFormat Type(*String)

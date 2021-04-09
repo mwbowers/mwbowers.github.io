@@ -36,10 +36,10 @@ The **XmlOptions** enumeration defines bit-flag values directing the [ AdgFactor
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **[Flags]public enum XmlOptions;** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **&lt;Flags&gt; Public Enum XmlOptions** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegEnum XmlOptions Access(*Public) Attributes(Flags)** 
       </pre>
 

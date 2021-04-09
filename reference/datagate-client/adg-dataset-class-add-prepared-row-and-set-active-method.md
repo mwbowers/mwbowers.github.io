@@ -24,13 +24,13 @@ An integer containing the index value of the file.
    int iFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function AddPreparedRowAndSetActive( _
    ByVal iFormat As Integer _
 ) As Boolean** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc AddPreparedRowAndSetActive Access(*Public) Type(*Boolean)
    DclSrParm iFormat Type(*Integer) Len(4)** 

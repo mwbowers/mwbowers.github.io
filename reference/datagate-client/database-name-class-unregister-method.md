@@ -23,12 +23,12 @@ Deletes a registered database name from the system registry.
    String dbName
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Unregister( _
    ByVal dbName As String _
 ) As void** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Unregister Type(*Void) Access(*Public)
    DclSrParm dbName Type (String)** 

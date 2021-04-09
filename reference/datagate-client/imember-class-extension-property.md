@@ -18,11 +18,11 @@ A string typically identifying the type of data contained in database source fil
         <span class="lang">[C#]</span>
  **public string Extension { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property Extension As String ()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Extension Access(*Public) Type(*String)
    BegGet** 

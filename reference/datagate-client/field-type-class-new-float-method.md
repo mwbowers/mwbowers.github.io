@@ -16,9 +16,9 @@ keywords: how to, define floating-point field
 Creates a new floating-point [ FieldType](field-type-class.html).
 <pre class="prettyprint">      <span class="lang">[C#]</span>
  **public static FieldType NewFloat(<br />   int length<br />);**  </pre>
-      <pre class="prettyprint">      <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">      <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewFloat( _<br />   ByVal length As Integer _<br />) As FieldType**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewFloat Type(FieldType) Access(*Public) Shared(*Yes)
    DclSrParm length Type(*Integer) Len(4)** 

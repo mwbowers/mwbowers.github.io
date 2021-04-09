@@ -70,10 +70,10 @@ To name the path of a program you use the As400Program class, as in the followin
 <pre class="prettyprint">[C#]
   As400Program prog;
   Prog = new As400Program(cn, "*libl/myprog");</pre>
-        <pre class="prettyprint">[Visual Basic]
+<pre class="prettyprint">[Visual Basic]
   Dim prog as As400Program
   prog = New As400Program(cn, "*libl/myprog")</pre>
-        <pre class="prettyprint">[Visual RPG]
+<pre class="prettyprint">[Visual RPG]
   Dclfld Name(Prog) Type(As400Program)			
   Prog = *New As400Program(cn, "*libl/myprog")</pre>
 
@@ -130,9 +130,9 @@ The [AppendParm](as400program-class-append-parm-method.html) method of As400Prog
 For input parameters, you will want to set the data value of the parameter before calling the program. You may only do this after appending the parameter to the As400Program object as follows.
 <pre class="prettyprint">[C#]
   prog.ObjectToParm(countParm, 7.73, 0 );</pre>
-        <pre class="prettyprint">[Visual Basic]
+<pre class="prettyprint">[Visual Basic]
   prog.ObjectToParm(countParm, 7.73, 0);</pre>
-        <pre class="prettyprint">[Visual RPG]
+<pre class="prettyprint">[Visual RPG]
   prog.ObjectToParm(countParm, 7.73, 0)</pre>
 
 The ObjectToParm method of As400Program is used to convert an object or value type to a parameter list value.
@@ -144,9 +144,9 @@ The ObjectToParm method of As400Program is used to convert an object or value ty
 After setting the input parameter values, the IBM i program may be invoked with the Execute method of As400Program, as below.
 <pre class="prettyprint">[C#]
   prog.Execute();</pre>
-        <pre class="prettyprint">[Visual Basic]
+<pre class="prettyprint">[Visual Basic]
   prog.Execute()</pre>
-        <pre class="prettyprint">[Visual RPG]
+<pre class="prettyprint">[Visual RPG]
   prog.Execute()</pre>
 
 Execute sends all DataDirection.Input and DataDirection.InputOutput parameter values to the database server, and tells the server to invoke the program. Execute blocks, waiting for the result of the program call. When control returns to the database server from the called program, the server sends all DataDirection.Output and DataDirection.InputOutput parameter values to DCS.
@@ -156,10 +156,10 @@ Upon return from Execute, your DCS program will want to extract the output param
   decimal retVal;
   retVal = (decimal) prog.ParmToObject(countParm,);
   typeof(decimal), 0);</pre>
-        <pre class="prettyprint">[Visual Basic]
+<pre class="prettyprint">[Visual Basic]
   Dim retVal As Decimal
   retVal = prog.ParmToObject(countParm, Type.GetType("System.Decimal"), 0)</pre>
-        <pre class="prettyprint">[Visual RPG]
+<pre class="prettyprint">[Visual RPG]
   Dclfld Name(retVal) Type(*Decimal)
   retVal = prog.ParmToObject(countParm,
   Type.GetType("System.Decimal"),0)</pre>
@@ -220,7 +220,7 @@ You can construct a parameter list for calling this program using the previously
   Dim structType As StructureType
   structType = New StructureType("TestDS", 5, structMbrs)
   parmList(0) = New ProgParm(structType, DataDirection.Input)</pre>
-        <pre class="prettyprint">[Visual RPG] 
+<pre class="prettyprint">[Visual RPG] 
   //Create "TestDS" structure definition (3 members) 
   DCLFLD Name (structMbrs(2)) Type (*Object) 
   structMbrs(0) = New ProgParmType("Test1", 0, FieldType.NewZoned(5, 1)) 
@@ -246,7 +246,7 @@ After constructing the parameter list the ProgramCallComplex program initializes
   Dim secondElemRef(1) As Integer
   secondElemRef(0) = 1
   prog.ObjectToParm("2Fld2", "TestDS.Test2", secondElemRef)</pre>
-        <pre class="prettyprint">[Visual RPG] 
+<pre class="prettyprint">[Visual RPG] 
   Dclfld Name(secondElemRef(1) Type(*Integer) 
   secondElemRef(0) = 1 
   prog.ObjectToParm("2Fld2", "TestDS.Test2",  

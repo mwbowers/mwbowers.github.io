@@ -20,7 +20,7 @@ Converts an object to a data area value provided with the parameter type and val
    ByVal ParameterName As String, _
 ) As Object** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ObjectToParm Access(*Public) Type(Object)
    DclSrParm Value Type(Object)

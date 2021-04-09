@@ -18,11 +18,11 @@ Gets and sets the current database’s initial library list.
         <span class="lang">[C#]</span>
  **public string[] InitialLibl { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property InitialLibl As String()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp InitialLibl Type(*String) Rank(1) Access(*Public)** 
       </pre>
@@ -51,7 +51,7 @@ Gets or sets the initial library list for this database.
   newList[i] = "IMPORTS";
   sp.InitialLibl = newList;
   sp.Register();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

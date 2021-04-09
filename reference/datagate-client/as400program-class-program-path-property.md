@@ -18,11 +18,11 @@ A string describing the path to the called program on the database server.
         <span class="lang">[C#]</span>
  **public string ProgramPath { set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public WriteOnly Property ProgramPath As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp ProgramPath Access(*Public) Type(*String)
    BegSet** 
@@ -52,7 +52,7 @@ Set the <span> **ProgramPath** </span> property to name the program on the datab
   Dim prog As New As400Program()
   prog.Connection = New AdgConnection("*Public/DG NET IBM i")
   prog.ProgramPath = "*Libl/Call400"</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

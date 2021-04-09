@@ -26,7 +26,7 @@ Returns the [ProgParm](prog-parm-class.html) object in the parameter list named 
    ByVal name As String _
 ) As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc GetParmByName Access(*Protected) Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))
    DclSrParm name Type(*String)** 

@@ -29,7 +29,7 @@ The following AVR code opens a database connection and then creates a **FileAdap
   DbFile = new FileAdapter(Cx,"/cmmaster","*first");
   DbFile.AccessMode = AccessMode.Read;
   DbFile.OpenNewAdgDataSet(ref Ds);</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
   Imports ASNA.DataGate.Client
   Imports ASNA.DataGate.Common
@@ -42,7 +42,7 @@ The following AVR code opens a database connection and then creates a **FileAdap
   DbFile = New FileAdapter(Cx,"/cmmaster","*first")
   DbFile.AccessMode = AccessMode.Read
   DbFile.OpenNewAdgDataSet(ByRef Ds)</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
   Using ASNA.DataGate.Client
   Using ASNA.DataGate.Common

@@ -17,9 +17,9 @@ keywords: how to, define zoned decimal field
 Creates a new zoned decimal [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewZoned(<br />   int prec,<br />   int scale<br />)**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewZoned( _<br />   ByVal prec As Integer, _<br />   ByVal scale As Integer<br />) As [FieldType](field-type-class.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewZoned Type(FieldType) Access(*Public) Shared(*Yes)<br />   DclSrParm prec Type(*Integer) Len(4)<br />   DclSrParm scale Type(*Integer) Len(4)** 
       </pre>

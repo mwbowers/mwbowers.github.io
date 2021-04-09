@@ -32,7 +32,7 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 );** 
 </pre>
 
-      <pre class="prettyprint">
+<pre class="prettyprint">
  **<span class="lang">[Visual Basic] </span>
  Public Sub ReadXml( _
    ByVal cn As [AdgConnection](adg-connection-class.html) _
@@ -45,7 +45,7 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
  ) As IAdgObject** 
       </pre>
 
-      <pre class="prettyprint">
+<pre class="prettyprint">
  **<span class="lang">[Visual RPG]</span>
 BegFunc ReadXml Access(*Public) Type(IAdgObject)
    DclSrParm cn Type([AdgConnection](adg-connection-class.html))

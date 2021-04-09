@@ -19,11 +19,11 @@ Runs the database program.
         <span class="lang">[C#]</span>
  **public void Execute();** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub Execute()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Execute Acess(*Public)** 
       </pre>
@@ -119,7 +119,7 @@ Upon successful return from **Execute** , the values of any "output" parameters 
      "TimeOfDay", _
      New Integer(){}))
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

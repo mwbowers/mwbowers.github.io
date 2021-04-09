@@ -28,11 +28,11 @@ keywords: how to, invoke automatic diagnostic and repair function for a file, op
         <span class="lang">[C#]</span>
  **[Flags]<br /> public enum RepairOptions;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **&lt;FlagsAttribute&gt;<br />Public Enum RepairOptions** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum RepairOptions Access(*Public) Attributes(Flags)** 
       </pre>

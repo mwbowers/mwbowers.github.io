@@ -21,10 +21,10 @@ The **DefaultSource** property specifies the printer tray to be used when printi
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public System.Drawing.Printing.PaperSourceKind DefaultSource { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **public Property DefaultSource As System.Drawing.Printing.PaperSourceKind** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp DefaultSource Type(System.Drawing.Printing.PaperSourceKind) Access(*Public) <br />      BegGet,    BegSet** 
       </pre>
 

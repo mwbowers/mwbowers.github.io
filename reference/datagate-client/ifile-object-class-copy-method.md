@@ -18,11 +18,11 @@ keywords: how to, copy a database file
         <span class="lang">[C#]</span>
  **public IFileObject Copy(<br />   string targetDir ,<br />   string newName ,<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function Copy(_<br />    ByVal targetDir As string _<br />    ByVal newName As string _<br />) As IFileObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc Copy Access(*Public) Type(IFileObject)<br />   DclSrParm targetDir Type (*string)<br />   DclSrParm newName Type(*string)** 
       </pre>

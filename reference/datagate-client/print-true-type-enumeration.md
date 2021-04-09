@@ -21,11 +21,11 @@ The <span> **PrintTrueType** </span> enumerated constant defines values whether 
         <span class="lang">[C#]</span>
  **public enum PrintTrueType;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum PrintTrueType** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum PrintTrueType Access(*Public)** 
       </pre>

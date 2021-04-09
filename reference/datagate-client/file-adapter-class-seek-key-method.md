@@ -32,7 +32,7 @@ Moves the record pointer associated with the currently open file without reading
    ByVal keyTable As [AdgKeyTable](adg-key-table-class.html)
 .)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr SeekKey Access(*Public)
    DclSrParm mode Type(SeekMode)

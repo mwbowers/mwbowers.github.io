@@ -18,9 +18,9 @@ keywords: how to, define date field
 Creates a new date [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewDate(<br />   DateTimeFormat fmt<br />);**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewDate( _<br />   ByVal fmt As [DateTimeFormat](date-time-format-enumeration.html)       _<br />) As [FieldType](field-type-class.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewDate Type(FieldType) Access(*Public) Shared(*Yes)
    DclSrParm fmt Type(DateTimeFormat) Len(4)** 

@@ -14,11 +14,11 @@ Construct a representation of a simple iSeries program parameter.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public ProgParm(<br />   ProgParmType ppt,<br />   DataDirection dir<br />)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Sub New( _<br />   ByVal ppt As [ProgParmType](prog-parm-type-class.html) _<br />   ByVal dir As [DataDirection](data-direction-enumeration.html)<br />)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)<br />   DclSrParm ppt Type(ProgParmType)<br />   DclSrParm dir Type(DataDirection)** 
       </pre>
@@ -87,7 +87,7 @@ Careful use of the *dir* parameter can improve the performance of iSeries progra
   prog.ObjectToParm(Quit400App, "Quit400App", new int[]{});
   //Now we execute the call to the As400Program, "Call400".
   prog.Execute();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

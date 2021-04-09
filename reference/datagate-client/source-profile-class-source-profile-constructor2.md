@@ -15,11 +15,11 @@ Constructs an instance of [ SourceProfile](source-profile-class.html) setting co
         <span class="lang">[C#]</span>
  **public SourceProfile(<br />   string dbName<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub New( _<br />    ByVal dbName As String<br />)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)<br />   DclSrParm dbName Type(*String)** 
       </pre>
@@ -97,7 +97,7 @@ Assuming the registered database name information is valid, a **SourceProfile** 
   sp.Password = "NewPassword";
   sp.Register(); /* Updates the information. */
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -14,13 +14,13 @@ Create a **DataRow** object in preparation for adding it to the **AdgDataSet** .
    string strFormat
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function PrepareRow( _
    ByVal strFormat As String _
 ) As** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc PrepareRow Access(*Public) Type()
    DclSrParm strFormat Type(*String)** 

@@ -31,7 +31,7 @@ Release the specified record.
    ByVal RRN As Long
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReleaseRRN Access(*Public)
    DclSrParm lr Type(LockRequest)
    DclSrParm RRN Type(*Integer) Len(8)** 

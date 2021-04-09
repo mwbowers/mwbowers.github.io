@@ -14,10 +14,10 @@ The name of the server that services the requests of its clients by forwarding r
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public string ProxyName** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property ProxyName As String** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(ProxyName) Type(*String) Access(*Public)** 
       </pre>
 

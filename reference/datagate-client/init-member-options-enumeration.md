@@ -23,11 +23,11 @@ keywords: ASNA.DataGate.Client.InitMemberOptions
         <span class="lang">[C#]</span>
  **public enum InitMemberOptions;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum InitMemberOptions** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum InitMemberOptions Access(*Public)** 
       </pre>

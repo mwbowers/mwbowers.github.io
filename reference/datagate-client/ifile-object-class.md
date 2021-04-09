@@ -22,7 +22,7 @@ For a list of all members of this type, see [IFileObject Members](ifile-object-m
 ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IFileObject</span>** 
 <pre class="prettyprint">
 [Prototype in C#] public interface IFileObject | Inherits IAdgObject</pre>
-      <pre class="prettyprint"> [Prototype in AVR] BegInterface IFileObject access(public) implements(IAdgObject)</pre>
+<pre class="prettyprint"> [Prototype in AVR] BegInterface IFileObject access(public) implements(IAdgObject)</pre>
 
 ## Thread Safety
 

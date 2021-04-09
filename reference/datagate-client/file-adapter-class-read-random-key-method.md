@@ -39,7 +39,7 @@ Read a database file record using the specified key.
    ByVal keyTable As [AdgKeyTable](adg-key-table-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReadRandomKey Access(*Public)
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))
    DclSrParm mode Type([ReadRandomMode](read-random-mode-enumeration.html))

@@ -19,7 +19,7 @@ keywords: database objects, return parent identifier
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ParentID As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp ParentID Access(*Public) Type(*Integer)
    BegGet** 

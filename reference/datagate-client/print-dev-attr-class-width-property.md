@@ -22,11 +22,11 @@ The **Width** specifies the width of paper in the printer.
         <span class="lang">[C#]</span>
  **public int Width { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property Width As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Width Access(*Public) Type(*Integer) Len(4)
    BegGet,    BegSet** 

@@ -21,11 +21,11 @@ Defines modes of operation for the [ FileAdapter.ReadSequential](file-adapter-cl
         <span class="lang">[C#]</span>
  **public enum ReadSequentialMode;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum ReadSequentialMode** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum ReadSequentialMode Access(*Public)** 
       </pre>
@@ -103,7 +103,7 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
   dbFile.SeekKey(SeekMode.SetGT, keyTbl);
   dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Read);
   </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

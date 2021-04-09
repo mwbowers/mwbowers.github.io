@@ -19,11 +19,11 @@ An array of [IMember](imember-class.html) objects representing all of the databa
         <span class="lang">[C#]</span>
  **public int IMember[] IFileObject Members { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property IMember Members As IFileObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp IMember Members Access(*Public) Type(IFileObject)
    BegGet** 

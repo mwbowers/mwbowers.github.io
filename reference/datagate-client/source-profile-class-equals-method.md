@@ -15,11 +15,11 @@ Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-sour
         <span class="lang">[C#]</span>
  **public override bool Equals(<br />   object obj<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Overrides Function Equals( _<br />   ByVal obj As Object _<br />) As Boolean** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc Equals Type(*Boolean) Access(*Public) Modifier(*Overrides)<br />   DclSrParm obj Type(*Object)** 
       </pre>

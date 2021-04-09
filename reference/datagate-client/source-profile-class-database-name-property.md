@@ -20,10 +20,10 @@ The database name (or identifier) of this set of connection parameters.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public string DatabaseName { get; }**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DatabaseName As String**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp DatabaseName Type(*String) Access(*Public)<br />   BegGet** 
       </pre>
@@ -49,7 +49,7 @@ String. Read-only. Returns the parameter passed to the **SourceProfile** [constr
       newItem.SubItems.Add(currentProfile.Text);
       lvDbNames.Items.Add(newItem);
   }</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

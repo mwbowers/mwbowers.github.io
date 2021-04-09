@@ -21,12 +21,12 @@ Appends an array of parameters to the parameter list for the program.
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)[] Parameters
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub AppendParms( _
    ByVal Parameters() As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr AppendParms Acess(*Public)
    DclSrParm Parameters Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)) Rank(1)** 
@@ -114,7 +114,7 @@ To create a program parameter list, <span> **ProgParm** </span> objects should b
      "TimeOfDay", _
      New Integer(){}))
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

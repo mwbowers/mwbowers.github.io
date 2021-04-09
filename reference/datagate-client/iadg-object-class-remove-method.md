@@ -27,7 +27,7 @@ The **Remove** method removes an existing database object from the database.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Remove() As IAdgObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Remove Access(*Public) Type(IAdgObject)** 
       </pre>

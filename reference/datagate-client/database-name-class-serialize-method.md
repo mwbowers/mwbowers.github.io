@@ -18,13 +18,13 @@ keywords: DatabaseName.Serialize method
    SourceProfile sp
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub Serialize(_ 
    ByVal tag As String_ 
    ByVal sp As [SourceProfile](source-profile-class.html)_
 ) As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc Serialize Access(*Public) Type(*String)
    DclSrParm tag Type(*String)

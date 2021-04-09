@@ -42,7 +42,7 @@ Moves the record pointer associated with the currently open file without reading
    ByVal rangeLast As [RangeLast](range-last-enumeration.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr SeekRange Access(*Public)
    DclSrParm mode Type(RangeMode)

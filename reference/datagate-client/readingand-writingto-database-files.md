@@ -28,7 +28,7 @@ The following example in AVR <span>opens a database file</span> for "read" acces
   DbFile.OpenNewAdgDataSet( ref Ds );
   DbFile.ReadSequential (Ds, ReadSequentialMode.Next, LockRequest.Default);
   Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"]);</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
   Imports ASNA.DataGate.Client
   Imports ASNA.DataGate.Common
@@ -42,7 +42,7 @@ The following example in AVR <span>opens a database file</span> for "read" acces
   DbFile.OpenNewAdgDataSet( ByRef Ds )
   DbFile.ReadSequential(Ds, ReadSequentialMode.Next, LockRequest.Default)
   Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"])</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
   Using ASNA.DataGate.Client
   Using ASNA.DataGate.Common
@@ -79,7 +79,7 @@ The following example illustrates one procedure for **updating a file** .
   dbFile.ChangeCurrent(ds);
   dbFile.Close();
   cx.Close();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
   Dim cx As AdgConnection
   Dim dbFile As FileAdapter
@@ -94,7 +94,7 @@ The following example illustrates one procedure for **updating a file** .
   dbFile.ChangeCurrent(ds)
   dbFile.Close()
   cx.Close()</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
   Dclfld Name(Cx) Type(AdgConnection)
   Dclfld Name(DbFile) Type(FileAdapter)
@@ -142,7 +142,7 @@ The following example illustrates an appropriate sequence for **adding a databas
   dbFile.AddRecord(ds);
   dbFile.Close();
   cx.Close();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
   Imports ASNA.DataGate.Client
   Imports ASNA.DataGate.Common
@@ -169,7 +169,7 @@ The following example illustrates an appropriate sequence for **adding a databas
   dbFile.AddRecord(ds)
   dbFile.Close()
   cx.Close()</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
   Using ASNA.DataGate.Client
   Using ASNA.DataGate.Common

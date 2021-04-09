@@ -21,12 +21,12 @@ Appends a parameter to the parameter list for the program.
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub AppendParm( _
    ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr AppendParm Acess(*Public)
    DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))** 
@@ -96,7 +96,7 @@ The **ProgParm** appended to the list may optionally be named via the <span>name
   CustName = Convert.ToString( _
         prog.ParmToObject(System.Type.GetType("System.String"), "CustName", _
         New Integer(){}))</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

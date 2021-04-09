@@ -20,11 +20,11 @@ The <span> **PaperOrientation** </span> enumerated constant defines values on th
         <span class="lang">[C#]</span>
  **public enum PaperOrientation;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum PaperOrientation** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum PaperOrientation Access(*Public)** 
       </pre>

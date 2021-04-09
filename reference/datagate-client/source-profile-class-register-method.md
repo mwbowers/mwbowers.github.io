@@ -22,15 +22,15 @@ Replaced by [DatabaseName.Register](database-name-class-register-method.html)
 
 Saves the contents of the **SourceProfile** object to the system registry as a database name.
 <span style="MARGIN-BOTTOM: 0.8em" />
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public void Register();** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub Register()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSub Register Access(*Public)** 
       </pre>
@@ -84,7 +84,7 @@ Example <p>The following example retrieves a database name called "Asna 400 db" 
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

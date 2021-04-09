@@ -20,9 +20,9 @@ Creates a new fixed-width double-byte character [FieldType](field-type-class.htm
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewDBCS(<br />   int length,<br />   DbcsFormat fmt<br />);** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewDBCS( _<br />   ByVal length As Integer _<br />   ByVal fmt As [DbcsFormat](dbcs-format-enumeration.html)<br />) As [FieldType](field-type-class.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewDBCS Type(FieldType) Access(*Public) Shared(*Yes)<br />   DclSrParm length Type(*Integer) Len(4)
    DclSrParm fmt Type(DbcsFormat)** 

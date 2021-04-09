@@ -17,10 +17,10 @@ The path name of the database file, excluding the member name (see [ MemberName 
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public string FileName { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property FileName As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp FileName Type(*String) Access(*Public)
    BegGet, BegSet** 

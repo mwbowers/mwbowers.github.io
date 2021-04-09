@@ -11,10 +11,10 @@ Constructs an instance of a [DatabaseAttributes](dcsDatabaseAttributesClass.html
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public DatabaseAttributes();** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub New()** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)** 
       </pre>
 

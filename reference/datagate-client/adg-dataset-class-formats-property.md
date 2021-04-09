@@ -20,11 +20,11 @@ The number of formats in this **AdgDataSet** .
         <span class="lang">[C#]</span>
  **public int Formats { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Formats As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Formats Access(*Public) Type(*Integer) Len(4)
    BegGet** 

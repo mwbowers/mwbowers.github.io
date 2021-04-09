@@ -21,10 +21,10 @@ Indicates the status of the file: open or closed.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public FileAdapter.AdapterStatus Status { get: }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Status As FileAdapter.AdapterStatus** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Status Type(FileAdapter.AdapterStatus) Access(*Public)** 
       </pre>

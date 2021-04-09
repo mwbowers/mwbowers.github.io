@@ -20,11 +20,11 @@ For server platforms that support multiple databases, the label of the database 
         <span class="lang">[C#]</span>
  **public string Label { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property Label As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Label Type(*String) Access(*Public)** 
       </pre>
@@ -57,7 +57,7 @@ For single-instance platforms, such as the iSeries, the **Label** property is ig
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

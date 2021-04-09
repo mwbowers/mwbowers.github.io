@@ -15,14 +15,14 @@ Converts an object or value type to a parameter list value.
    string ParameterName,
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub ObjectToParm( _
    ByVal Value As Object _
    ByVal ParameterName As String _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ObjectToParm Acess(*Public)
    DclSrParm Value Type(*Object)
@@ -117,7 +117,7 @@ For the method to succeed, the *Value* parameter must have a valid conversion to
      "TimeOfDay", _
      New Integer(){}))
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

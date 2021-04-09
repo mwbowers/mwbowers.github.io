@@ -19,10 +19,10 @@ The length of the field in bytes.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public DbcsFormat Dbcs { get; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Dbcs As [DbcsFormat](dbcs-format-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Dbcs Type(DbcsFormat) Access(*Public)<br />   BegGet** 
       </pre>

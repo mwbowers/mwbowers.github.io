@@ -14,10 +14,10 @@ The name of the operating system on which the database resides.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public string OperatingSystem** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property OperatingSystem As String** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(OperatingSystem) Type(*String) Access(*Public)** 
       </pre>
 

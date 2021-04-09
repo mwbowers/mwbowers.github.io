@@ -22,11 +22,11 @@ The **Scale** specifies the percentage factor by which the printed output is to 
         <span class="lang">[C#]</span>
  **public int Scale { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property Scale As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Scale Access(*Public) Type(*Integer4)
    BegGet,    BegSet** 

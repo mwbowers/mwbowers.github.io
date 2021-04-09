@@ -25,7 +25,7 @@ keywords: how to, identify type of database object
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property AdgObjectType As [AdgObjectTypes](adg-object-types-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp AdgObjectType Type([AdgObjectTypes](adg-object-types-enumeration.html)) Access(*Public) <br />    BegGet** 
       </pre>
 

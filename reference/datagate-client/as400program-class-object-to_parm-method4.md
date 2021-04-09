@@ -15,14 +15,14 @@ Converts an object or value type to a parameter list value.
    object Value
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub ObjectToParm( _
    ByVal Parameter As ProgParm _
    ByVal Value As Object _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ObjectToParm Acess(*Public)
    DclSrParm Parameter Type(ProgParm)
@@ -92,7 +92,7 @@ This method of **ObjectToParm** should not be used if *Parameter* is a "multiple
   ' This next line assigns the .NET value, CustName, to the
   ' IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0)</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
   </span>/* Here, "prog" is an initialized As400Program object.

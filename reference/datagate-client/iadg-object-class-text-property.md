@@ -21,7 +21,7 @@ keywords: how to, set text description/comments of database objects
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property Text As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Text Access(*Public) Type(*String) Len(45)
    BegGet** 

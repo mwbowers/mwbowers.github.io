@@ -20,7 +20,7 @@ keywords: database objects, return database providers last referenced timestamp
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DateReferenced As System.DateTime** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp DateReferenced Access(*Public) Type(System.DateTime)
    BegGet** 

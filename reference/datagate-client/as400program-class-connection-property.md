@@ -18,10 +18,10 @@ The **AdgConnection** object of the database server hosting the program to be ca
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public [AdgConnection](adg-connection-class.html) Connection { set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public WriteOnly Property Connection As [AdgConnection](adg-connection-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Connection Access(*Public) Type([AdgConnection](adg-connection-class.html))
    BegSet** 
@@ -65,7 +65,7 @@ To run the program on a particular database server, set the **Connection** prope
   Dim prog As New As400Program()
   prog.Connection = New AdgConnection("*Public/DG NET IBM i")
   prog.ProgramPath = "*Libl/Call400"</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

@@ -49,7 +49,7 @@ The [Row](adg-key-table-class-row-property.html) property of **AdgKeyTable** ref
   KeyTbl.Row["CMCustNo"] = 500
   DbFile.ReadRandomKey( Ds, ReadRandomMode.GTEQ, LockRequest.Default, KeyTbl )
   Console.WriteLine( "CMCustNo = " + Ds.ActiveRow["CMCustNo"] )</pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
   Dclfld Name(Cx) Type(AdgConnection)
   Dclfld Name(DbFile) Type(FileAdapter)
   Dclfld Name(Ds) Type (AdgDataSet)

@@ -22,7 +22,7 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IDirectory</s
 <pre class="prettyprint">
         <span class="lang">[Prototype in C#]<br /></span>                                <span> public interface IDirectory | Inherits IAdgObject</span>
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Prototype in Visual RPG for VS 2008]<br /></span>                                <span> BegInterface IDirectory access (*public) implements (IAdgObject)</span>
       </pre>
 

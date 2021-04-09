@@ -15,11 +15,11 @@ Release unmanaged resources associated with **As400Program** .
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public virtual new void Dispose** ();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Overridable NotOverridable Sub Dispose()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Dispose Access(*Public) Modifier(*Overridable)** 
       </pre>

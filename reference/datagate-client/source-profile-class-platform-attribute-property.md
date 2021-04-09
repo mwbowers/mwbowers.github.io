@@ -21,11 +21,11 @@ The platform-specific attribute of the database (e.g. "*SQLOLEB" for SqlServer).
         <span class="lang">[C#]</span>
  **public string PlatformAttribute { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property PlatformAttribute As String** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp PlatformAttribute Type(*String) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
@@ -55,7 +55,7 @@ The **PlatformAttribute** property is used to distinguish between different data
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

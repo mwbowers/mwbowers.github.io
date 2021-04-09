@@ -16,7 +16,7 @@ Returns an object of a specific type from the program parameter list.
    int Element
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function ParmToObject( _
    ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
@@ -24,7 +24,7 @@ Returns an object of a specific type from the program parameter list.
    ByVal Element As Integer _
   ) As Object** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ParmToObject Access(*Public) Type(Object)
    DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))
@@ -127,7 +127,7 @@ The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occu
         Parms[1], _
         Prog.ParmToObject(System.Type.GetType("System.Decimal"), _
         New Integer() {}))</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

@@ -27,7 +27,7 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Open Access(*Public)
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 

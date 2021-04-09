@@ -21,10 +21,10 @@ The set of binary format identifiers associated with the set of formats availabl
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public byte[][] FormatIDs { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
  **Public Property FormatIDs As Byte()()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp FormatIDs Type(*Byte) Rank(2) Access(*Public)<br />   BegGet, BegSet** 
       </pre>

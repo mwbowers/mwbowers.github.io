@@ -15,11 +15,11 @@ keywords: enumerations [DCS 16.0 InspectFileParts
         <span class="lang">[C#]</span>
  **public enum InspectFileParts;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum InspectFileParts** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum InspectFileParts Access(*Public)** 
       </pre>

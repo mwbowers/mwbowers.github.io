@@ -20,7 +20,7 @@ keywords: None enumeration member
 <pre>        <span class="lang">[Visual Basic] </span>
  **&lt;Flags&gt; Public Enum DuplicateOptions** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum DuplicateOptions Access(*Public) Attributes(Flags)** 
       </pre>

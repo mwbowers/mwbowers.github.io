@@ -14,10 +14,10 @@ The total number of 'busy seats' for the database. All application running from 
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int BusySeats** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
  **Public Property BusySeats As Integer** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(BusySeats) Type(*Integer) Access(*Public)** 
       </pre>
 

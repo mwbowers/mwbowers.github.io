@@ -16,7 +16,7 @@ Converts an object or value type to a parameter list value.
    int Element
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub ObjectToParm( _
    ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
@@ -24,7 +24,7 @@ Converts an object or value type to a parameter list value.
    ByVal Element As Integer _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr ObjectToParm Access(*Public)
    DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))

@@ -22,11 +22,11 @@ The **TransactionLevel** enumerated constant defines values for the [ Transactio
         <span class="lang">[C#]</span>
  **public enum TransactionLevel;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum TransactionLevel** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum TransactionLevel Access(*Public)** 
       </pre>

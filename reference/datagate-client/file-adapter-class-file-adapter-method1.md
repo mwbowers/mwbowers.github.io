@@ -12,11 +12,11 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object with
         <span class="lang">[C#]</span>
  **public FileAdapter();** 
       </pre>
-      <pre class="syntax">
+<pre class="syntax">
         <span class="lang">[Visual Basic] </span>
  **Public Sub New()** 
       </pre>
-      <pre class="syntax">
+<pre class="syntax">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)** 
       </pre>
@@ -37,7 +37,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
   dbFile.Connection = dataBase;
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>
@@ -46,7 +46,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
   dbFile.Connection = dataBase
   dbFile.FileName = "*Libl/CMASTNEWL1"
   dbFile.MemberName = "CMMASTERL1"</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual RPG]** 
         </span>

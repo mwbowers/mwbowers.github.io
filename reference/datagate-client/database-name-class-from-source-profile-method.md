@@ -17,13 +17,13 @@ Returns a SourceProfile object.
    SourceProfile sourceProfile
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub FromSourceProfile(_ 
    ByVal sourceProfile As SourceProfile_ 
 ) As SourceProfile** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc FromSourceProfile Access(*Public) Type(SourceProfile)
    DclSrParm sourceProfile Type (SourceProfile)** 

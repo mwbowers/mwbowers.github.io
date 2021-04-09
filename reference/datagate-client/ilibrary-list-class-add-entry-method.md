@@ -23,14 +23,14 @@ keywords: how to, add entries to database library list
    ASNA.DataGate.Client.LiblPosition pos _
    string refLib<br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Function AddEntry(
    ByVal path As string,
    ByVal pos As [ASNA.DataGate.Client.LiblPosition](libl-position-enumeration.html) 
    ByVal refLib As string<br />) As Void** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr AddEntry Access(*Public) Type(Void)
    DclSrParm path Type(*string) 

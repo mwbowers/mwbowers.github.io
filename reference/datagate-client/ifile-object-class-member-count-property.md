@@ -19,11 +19,11 @@ keywords: database file members, number of in database file
         <span class="lang">[C#]</span>
  **public int MemberCount { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property MemberCount As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp MemberCount Access(*Public) Type(*Integer) Len(4)
    BegGet** 

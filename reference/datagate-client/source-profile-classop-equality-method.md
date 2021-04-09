@@ -18,7 +18,7 @@ Compares two instances of <span>SourceProfile</span> for equality.
 SourceProfile.op_Equality</span>
         <span>(x, y)</span>
       </pre>
-      <pre class="prettyprint">[Visual Basic]<span>
+<pre class="prettyprint">[Visual Basic]<span>
 returnValue = SourceProfile.op_Equality</span>(x, y)</pre>
 
 ## Parameters

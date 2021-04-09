@@ -21,10 +21,10 @@ The **FormName** specifies the name of the print format to use.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public String FormName { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **public Property FormName As String** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp FormName Access(*Public) Type(*String) Len(4)
    BegGet,    BegSet** 
       </pre>

@@ -20,12 +20,12 @@ This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgF
 );** 
       </pre>
 
-      <pre class="prettyprint"> **<span class="lang">[Visual Basic] </span>
+<pre class="prettyprint"> **<span class="lang">[Visual Basic] </span>
  Public Delegate Sub XmlInfoEventHandler(_
    ByVal object As Object _<br />   ByVal   args As [XmlInfoEventArgs](xml-info-event-args-class.html)<br /> ) As Object** 
 </pre>
 
-      <pre class="prettyprint"> **<span class="lang">[Visual RPG]</span>
+<pre class="prettyprint"> **<span class="lang">[Visual RPG]</span>
  BegSr XmlInfoEventHandler Access(*Public) Type(Delegate)<br />   DclSrParm object Type(Object)<br />   DclSrParm   args Type([XmlInfoEventArgs](xml-info-event-args-class.html))<br />** </pre>
 
 ## Parameters

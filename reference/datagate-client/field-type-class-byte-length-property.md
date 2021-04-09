@@ -17,10 +17,10 @@ The length of the field in bytes.<span />
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int ByteLength { get; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ByteLength As Integer** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp ByteLength Type(*Integer) Len(4) Access(*Public)<br />   BegGet** 
       </pre>
 

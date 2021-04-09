@@ -21,11 +21,11 @@ keywords: how to, get user portion of directories in the current library list
         <span class="lang">[C#]</span>
  **public string[] CurrentUserLibs { get; set }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property CurrentUserLibs As String()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp CurrentUserLibs Type(*string) Access(*public) Rank(1)
    BegGet;  BegSet** 

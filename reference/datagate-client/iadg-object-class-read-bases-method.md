@@ -34,7 +34,7 @@ keywords: XML [DCS 16.0 set base objects description from XML document
    ByVal reader As System.Xml.XmlReader<br /> ) As IAdgObject** 
       </pre>
 
-      <pre class="prettyprint">
+<pre class="prettyprint">
  **<span class="lang">[Visual RPG]</span>
  BegSr ReadBases Access(*Public) Type(IAdgObject
    DclSrParm reader Type(System.Xml.XmlReader)** 

@@ -23,7 +23,7 @@ keywords: database objects, return base object(s) path names
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property Bases As string()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Bases Access(*Public) Type(*String) Rank(1)<br />  BegGet   BegSet** 
       </pre>

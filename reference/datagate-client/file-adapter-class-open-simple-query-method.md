@@ -35,7 +35,7 @@ Open a database file for access using the specified query and the specified [Adg
    ByVal KeyFlags As [ASNA.DataGate.Common.KeyUsages](key-usages-enumeration.html)() _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr OpenSimpleQuery Access(*Public)
    DclSrParm Ds Type(AdgDataSet) By(*reference)
    DclSrParm QueryFile Type(*String)

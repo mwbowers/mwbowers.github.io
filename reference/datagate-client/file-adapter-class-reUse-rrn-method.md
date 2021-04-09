@@ -28,7 +28,7 @@ Change the status of a deleted record to undeleted and update its contents.
    ByVal RRN As Long _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReuseRRN Access(*Public)
    DclSrParm ds Type(AdgDataSet)
    DclSrParm RRN Type(*Integer) Len(8)** 

@@ -32,7 +32,7 @@ keywords: lock restrictions, set for database objects
    ByVal WaitTime As short
 ) As IAdgObject** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Lock Access(*Public) Type (IAdgObject)
    DclSrParm ShareType Type([ShareTypes](share-types-enumeration.html))

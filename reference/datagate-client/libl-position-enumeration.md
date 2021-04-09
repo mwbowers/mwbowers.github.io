@@ -21,11 +21,11 @@ keywords: Replace enumeration member
         <span class="lang">[C#]</span>
  **public enum LiblPosition;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum LiblPosition** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum LiblPosition Access(*Public)** 
       </pre>

@@ -21,11 +21,11 @@ Sets the [ State](adg-connection-class-state-property.html) property to <span>Cl
         <span class="lang">[C#]</span>
  **public void Close();** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub Close()** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr Close Access(*Public)** 
       </pre>
@@ -46,13 +46,13 @@ Note that you must explicitly call either the <span> **Close** </span> or [Dispo
         </span>
   //Disconnects from the dataBase by closing the connection.
   adg.Close();</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>
   'Disonnects from the dataBase by closing the connection.
   adg.Close()</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

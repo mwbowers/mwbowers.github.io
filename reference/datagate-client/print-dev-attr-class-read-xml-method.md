@@ -19,11 +19,11 @@ This **ReadXml** method creates an instance of a **PrintDevAttr** XML object.
         </span> **public void ReadXml(
    System.Xml.XmlReader reader
 );**      </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
  **<span class="lang">[Visual Basic] </span>
  Public Sub ReadXml(_
    ByVal reader As System.Xml.XmlReader<br /> ) As PrintDevAttr**      </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
  **<span class="lang">[Visual RPG]</span>
  BegSr ReadXml Access(*Public) Type(PrintDevAttr)<br />   DclSrParm reader Type(System.Xml.XmlReader)**      </pre>
 

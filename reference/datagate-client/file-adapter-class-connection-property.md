@@ -19,10 +19,10 @@ The current **AdgConnection** associated with this **FileAdapter** .
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public AdgConnection Connection{ get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property Connection As [AdgConnection](adg-connection-class.html)** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp Connection Access(*Public) Type(AdgConnection)** 
       </pre>
 
@@ -57,7 +57,7 @@ Integer. Returns or sets an instance of [AdgConnection](adg-connection-class.htm
 
   dbFile.Close(); /* Close file. */
   dbFile.Connection.Close(); /* Close database. */</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

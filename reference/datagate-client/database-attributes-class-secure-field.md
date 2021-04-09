@@ -14,10 +14,10 @@ Indicates if security is used on the database.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public bool Secure** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property Secure As Boolean** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **DclFld Name(Secure) Type(*Boolean) Access(*Public)** 
       </pre>
 

@@ -21,12 +21,12 @@ keywords: print files, return print control object for format field
    fieldName string
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public sub GetTypedObject(_<br />   ByVal   fieldName As string _
 ) As Object** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr GetTypedObject Type(Object) Access(*Public)
    DclSrParm fieldName Type(*string)** 

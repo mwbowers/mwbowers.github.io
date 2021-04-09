@@ -31,7 +31,7 @@ For multiformat read access, calling this method causes the read methods to fetc
    ByVal Format As String _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr SetFormat Access(*Public)
    DclSrParm Format Type(*String)** 

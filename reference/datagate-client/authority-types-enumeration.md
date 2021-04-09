@@ -28,11 +28,11 @@ The <span> **AuthorityTypes** </span> enumerated constant defines values that sp
         <span class="lang">[C#]</span>
  **public enum AuthorityTypes;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Enum AuthorityTypes** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum AuthorityTypes Access(*Public)** 
       </pre>

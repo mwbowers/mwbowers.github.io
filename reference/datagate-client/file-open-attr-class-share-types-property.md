@@ -22,10 +22,10 @@ Specify concurrent access on the open file.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public ShareTypes ShareTypes { get; set; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property ShareTypes As [ShareTypes](share-types-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegProp ShareTypes Type(ShareTypes) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 

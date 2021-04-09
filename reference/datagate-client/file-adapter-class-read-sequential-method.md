@@ -35,7 +35,7 @@ Read a single record from the file in sequential order.
    ByVal lr As [LockRequest](lock-request-enumeration.html)
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr ReadSequential Access(*Public)
    DclSrParm ds Type(AdgDataSet)
    DclSrParm mode Type(ReadSequentialMode)

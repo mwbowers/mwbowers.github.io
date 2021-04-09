@@ -22,11 +22,11 @@ The **PrintQuality** enumerated constant defines values on the print quality.
         <span class="lang">[C#]</span>
  **public enum PrintQuality;** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Enum PrintQuality** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegEnum PrintQuality Access(*Public)** 
       </pre>

@@ -21,11 +21,11 @@ The [SourceProfile](source-profile-class.html) object describing the currently o
         <span class="lang">[C#]</span>
  **public [SourceProfile](source-profile-class.html) SourceProfile { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property SourceProfile As [SourceProfile](source-profile-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp SourceProfile Access(*Public) Type([SourceProfile](source-profile-class.html))
    BegGet** 
@@ -57,7 +57,7 @@ Note that changing the value of this property, or changing the object referenced
   Cx = New AdgConnection("*Public/DG NET IBM i")
   MsgBox ("The database name ""*Public/DG NET IBM i"" refers to a connection to " _
            + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString())</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

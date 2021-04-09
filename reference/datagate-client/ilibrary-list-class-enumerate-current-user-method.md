@@ -20,13 +20,13 @@ keywords: library lists, enumerate object contents of
         <span class="lang">[C#]</span>
  **public void EnumerateCurrentUser(_<br />[AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Function EnumerateCurrentUser(
    ByVal enumerator As [AdgEnumerator](adg-enumerator-delegate.html)
 ) As Void** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr EnumerateCurrentUser Access(*Public) Type(Void)
    DclSrParm enumerator Type([AdgEnumerator](adg-enumerator-delegate.html))** 

@@ -23,11 +23,11 @@ Specifies the authentication method for initiating database sessions with the [P
         <span class="lang">[C#]</span>
  **public PasswordType PasswordType { get; set; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **public Property PasswordType As [PasswordType](password-type-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp PasswordType Type(PasswordType) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
@@ -56,7 +56,7 @@ The default value, **SecurePassphrase** , should be used in most cases for the b
   sp.PasswordType = "Legacy";
   AdgConnection database = new AdgConnection(sp);
 </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual Basic]** 
         </span>

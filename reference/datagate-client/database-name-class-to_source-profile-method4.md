@@ -16,7 +16,7 @@ Named SourceProfile optionally constructed from a registered database name. If c
    bool bClassic
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub ToSourceProfile(_ 
    ByVal dbName As String_
    ByVal bFromSecStorage As Boolean
@@ -24,7 +24,7 @@ Named SourceProfile optionally constructed from a registered database name. If c
    ByVal bClassic
 ) As SourceProfile** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc ToSourceProfile Access(*Public) Type(SourceProfile)
    DclSrParm dbName Type (*String)

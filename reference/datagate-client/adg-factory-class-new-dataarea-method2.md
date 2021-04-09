@@ -18,7 +18,7 @@ The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class
 [AdgSubTypes](adg-subtypes-enumeration.html) DataAreaType
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub NewDataArea(_ 
    ByVal cn As [AdgConnection](adg-connection-class.html)_
@@ -26,7 +26,7 @@ The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class
    ByVal DataAreaType As [AdgSubTypes](adg-subtypes-enumeration.html)
 ) As IDataArea** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewDataArea Access(*Public) Type(IDataArea)
    DclSrParm cn Type([AdgConnection](adg-connection-class.html))

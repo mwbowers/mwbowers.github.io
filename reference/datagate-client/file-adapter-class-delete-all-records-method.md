@@ -21,12 +21,12 @@ Deletes all records in the currently open file.
    string dbName
 );** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub New( _
    ByVal dbName As String _
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)
    DclSrParm dbName Type(*String)**       </pre>
 
@@ -92,9 +92,9 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
   }
   dbFile.DeleteAllRecords();
   </pre>
-      <pre class="OH_CodeSnippetContainerCode">  dbFile.Close();
+<pre class="OH_CodeSnippetContainerCode">  dbFile.Close();
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

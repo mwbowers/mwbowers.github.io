@@ -19,10 +19,10 @@ The date and time format of the field.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public DateTimeFormat DateTime { get; }** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DateTime As [DateTimeFormat](date-time-format-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp DateTime Type(DateTimeFormat) Access(*Public)<br />   BegGet** 
       </pre>

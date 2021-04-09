@@ -22,10 +22,10 @@ Releases unmanaged resources and closes the currently open file (synonymous with
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public virtual new Dispose();** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Overridable NotOverridable Dispose()** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr Dispose Modifier(*Overrides) Access(*Public)** 
       </pre>
 

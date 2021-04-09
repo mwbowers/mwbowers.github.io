@@ -20,7 +20,7 @@ This member supports DCS infrastructure and is not intended to be used directly 
    ByVal keyTable As System.Data.DataTable _
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor Access(*Public)
    DclSrParm keyTable Type(System.Data.DataTable)** 

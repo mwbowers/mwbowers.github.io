@@ -29,7 +29,7 @@ Delete a set of database file records which contain key values in a given range.
 [RangeLast](range-last-enumeration.html) rangeLast
 );** 
       </pre>
-      <pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
  **Public Sub DeleteRange( _
     ByVal firstKey As [AdgKeyTable](adg-key-table-class.html) _
     ByVal rangeFirst As [RangeFirst](range-first-enumeration.html) _
@@ -37,7 +37,7 @@ Delete a set of database file records which contain key values in a given range.
     ByVal rangeLast As [RangeLast](range-last-enumeration.html)
 )** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
    B **egSr DeleteRange Access(*Public)
    DclSrParm firstKey Type([AdgKeyTable](adg-key-table-class.html))
    DclSrParm rangeFirst Type([RangeFirst](range-first-enumeration.html))
@@ -150,7 +150,7 @@ Use the **DeleteRange** method in conjunction with the [ ReadRange](file-adapter
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

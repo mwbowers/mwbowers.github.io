@@ -19,7 +19,7 @@ keywords: system objects, identify
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property IsSystemObject As boolean** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp IsSystemObject Access(*Public) Type(*Boolean)
    BegGet** 

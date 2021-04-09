@@ -12,12 +12,12 @@ Creates a new instance of <span> **AuthorityEntry** </span> with all fields init
         <span class="lang">[C#]</span>
  **public AuthorityEntry( );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub AuthorityEntry ( 
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegConstructor AuthorityEntry Access(*Public)<br />**     </pre>
       <span/>

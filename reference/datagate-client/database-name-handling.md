@@ -36,7 +36,7 @@ The following example retrieves a database name called "Asna 400 db" (in the pro
   AsnaDbName.User = "NewUser"
   AsnaDbName.Password	= "NewPasswd"
   AsnaDbName.Register()</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>
@@ -77,7 +77,7 @@ To discover the currently registered database names available for use in a progr
 				Type(*String)
   Console.WriteLine( "  " + DbName )
   End for</pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>

@@ -18,10 +18,10 @@ keywords: how to, delete current record in a file
 Deletes the current record associated with an open file.
 <pre class="prettyprint">         <span class="lang">[C#]</span>
  **public void DeleteCurrent()** ;</pre>
-      <pre class="prettyprint">         <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">         <span class="lang">[Visual Basic] </span>
  **Public Sub DeleteCurrent()** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr DeleteCurrent Access(*Public)** 
       </pre>
 
@@ -91,7 +91,7 @@ The current record of an open file is marked as deleted by **DeleteCurrent** . A
 
   dbFile.Close();
   db.Close();</pre>
-      <pre class="OH_CodeSnippetContainerCode">
+<pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
  **[Visual Basic]** 
         </span>

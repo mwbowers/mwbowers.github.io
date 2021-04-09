@@ -15,14 +15,14 @@ Insert a record into the DataSet table for a particular format and relative reco
    integer rrn
 );** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public Sub InsertRow( _
    ByVal strFormat As String _
    ByVal rrn As Integer
 )** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegSr InsertRow Access(*Public)
    DclSrParm strFormat Type(*string) Len(45)

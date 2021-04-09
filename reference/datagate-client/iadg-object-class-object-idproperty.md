@@ -21,7 +21,7 @@ keywords: how to, return object identifier for database objects
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ObjectID As Integer** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp ObjectID Access(*Public) Type(*Integer)
    BegGet** 

@@ -17,11 +17,11 @@ A row object containing key data.
         <span class="lang">[C#]</span>
  **public System.Data.DataRow Row { get; }** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Row As System.Data.DataRow** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp Row Access(*Public) Type(System.Data.DataRow)
    BegGet** 
@@ -96,7 +96,7 @@ Note that DCS never adds the **DataRow** referenced by the **Row** property to t
   ' in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key)
  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 
         </span>
@@ -110,7 +110,7 @@ Note that DCS never adds the **DataRow** referenced by the **Row** property to t
   DclFld dataSet Type(AdgDataSet)
   file.OpenNewAdgDataSet(*ByRef dataSet)
 </pre>
-      <pre class="prettyprint">  // This next line creates a key based on record format RCMMastL2
+<pre class="prettyprint">  // This next line creates a key based on record format RCMMastL2
   DclFld key Type(AdgKeyTable)
   key = dataSet.NewKeyTable("RCMMastL2")
 

@@ -23,7 +23,7 @@ The locking level for the transaction.
 <pre>        <span class="lang">[Visual Basic] </span>
  **public ReadOnly Function TransactionLevel As [ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp TransactionLevel Type(TransactionLevel) Access(*Public) Modifier(*NotOverridable)** 
       </pre>

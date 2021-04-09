@@ -22,9 +22,9 @@ keywords: FileLocks enumeration, used by
 Specify record locking mechanisms in opened files. 
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public FileLocks FileLocks { get; set; }**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property FileLocks As [Filelocks](file-locks-enumeration.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegProp FileLocks Type(FileLocks) Access(*Public)<br />   BegGet, BegSet** 
       </pre>

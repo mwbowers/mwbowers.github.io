@@ -17,10 +17,10 @@ Creates a new binary decimal [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewBinary(<br />  int prec,<br />  int scale<br />);** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewBinary( _<br />  ByVal prec As Integer, _<br />  ByVal scale As Integer _<br />) As [FieldType](field-type-class.html)** 
       </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewBinary Type(FieldType) Access(*Public) Shared(*Yes)
    DclSrParm prec Type(*Integer) Len(4)

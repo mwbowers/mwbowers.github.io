@@ -16,9 +16,9 @@ keywords: how to, define timestamp field
 Creates a new timestamp [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewTimeStamp();**  </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewTimeStamp() As [FieldType](field-type-class.html)**  </pre>
-      <pre class="prettyprint">
+<pre class="prettyprint">
         <span class="lang">[Visual RPG]</span>
  **BegFunc NewTimeStamp Type(FieldType) Access(*Public) Shared(*Yes)** 
       </pre>

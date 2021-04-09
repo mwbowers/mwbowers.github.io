@@ -20,10 +20,10 @@ keywords: event handlers, feedback type constants
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum XmlInfoEventType;** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
+<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Enum XmlInfoEventType** 
       </pre>
-      <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
+<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegEnum XmlInfoEventType Access(*Public)** 
       </pre>
 
