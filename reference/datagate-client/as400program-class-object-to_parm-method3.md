@@ -89,7 +89,7 @@ For the method to succeed, the *Value* parameter must have a valid conversion to
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
      new int[]{}));              </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

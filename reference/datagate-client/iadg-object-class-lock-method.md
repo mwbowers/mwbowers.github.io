@@ -25,7 +25,7 @@ keywords: lock restrictions, set for database objects
    Short WaitTime
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Lock(
    ByVal ShareType As [ShareTypes](share-types-enumeration.html) _
    ByVal WaitOption As [WaitOptions](wait-options-enumeration.html) _

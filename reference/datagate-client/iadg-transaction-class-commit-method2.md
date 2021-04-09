@@ -11,7 +11,7 @@ Accept changes to the database that have been performed within the current trans
 <pre>        <span class="lang">[C#]</span>
  **Public virtual void Commit(<br />   TransactionName string<br />);** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **public Overridable Sub Commit(<br />   ByVal string AS TransactionName<br />)** 
       </pre>
       <pre class="prettyprint">

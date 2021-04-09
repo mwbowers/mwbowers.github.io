@@ -16,7 +16,7 @@ keywords: database objects, return parent identifier
 <pre>        <span class="lang">[C#]</span>
  **Public int ParentID { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ParentID As Integer** 
       </pre>
       <pre class="prettyprint">

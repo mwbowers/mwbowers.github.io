@@ -20,7 +20,7 @@ The locking level for the transaction.
 <pre>        <span class="lang">[C#]</span>
  **public TransactionLevel TransactionLevel { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **public ReadOnly Function TransactionLevel As [ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html)** 
       </pre>
       <pre class="prettyprint">

@@ -105,7 +105,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
         + dgEx.Message, "Error!");
      //Exit procedure or end application here.
   }</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim db As New AdgConnection("*Public/DG NET Local")

@@ -31,7 +31,7 @@ Read the database file record specified.
    long RRN
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReadRandomRRN( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html)  _
    ByVal mode As [ReadRandomMode](read-random-mode-enumeration.html) _

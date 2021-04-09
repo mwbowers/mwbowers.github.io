@@ -18,7 +18,7 @@ The relative record number of the member of the currently-opened file.
 <pre>        <span class="lang">[C#]</span>
  **Public long RRN { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property RRN As Long** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>

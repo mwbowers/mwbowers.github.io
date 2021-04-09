@@ -86,7 +86,7 @@ To create a program parameter list, <span> **ProgParm** </span> objects should b
      "TimeOfDay",
      new int[]{}));
               </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

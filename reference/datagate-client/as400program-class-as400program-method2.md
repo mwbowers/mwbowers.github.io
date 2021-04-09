@@ -14,7 +14,7 @@ Construct an instance of the **As400Program** object and set the [ Connection](a
    AdgConnection Connection
 );** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public Sub New( _
    ByVal Connection As [AdgConnection](adg-connection-class.html) _

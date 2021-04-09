@@ -17,7 +17,7 @@ keywords: database objects, return database providers last referenced timestamp
 <pre>        <span class="lang">[C#]</span>
  **Public System.DateTime DateReferenced { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DateReferenced As System.DateTime** 
       </pre>
       <pre class="prettyprint">

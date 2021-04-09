@@ -28,7 +28,7 @@ Read a single record from the file in sequential order.
    LockRequest lr
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReadSequential( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html)  _
    ByVal mode As [ReadSequentialMode](read-sequential-mode-enumeration.html) _
@@ -124,7 +124,7 @@ A successful read operation optionally locks the record read as directed by the 
    dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default);
    string OneThousandFiveHundrethCustomerName =
            myDS.ActiveRow["CMName"].ToString();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

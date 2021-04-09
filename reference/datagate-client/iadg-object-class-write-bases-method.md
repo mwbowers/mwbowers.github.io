@@ -20,7 +20,7 @@ keywords: database objects, XML documents, create from base objects description
         </span> **Public void WriteBases(
    System.Xml.XmlWriter writer
 );**   </pre>
-      <pre> **<span class="lang">[Visual Basic] </span>
+<pre> **<span class="lang">[Visual Basic] </span>
  public Sub WriteBases(_
    ByVal writer As System.Xml.XmlWriter<br /> ) As IAdgObject**      </pre>
       <pre class="prettyprint">

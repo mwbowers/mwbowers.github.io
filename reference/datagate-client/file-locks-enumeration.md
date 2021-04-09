@@ -19,7 +19,7 @@ Defines modes on how a file will be locked; either automatically or manually.
 <pre>        <span class="lang">[C#]</span>
  **public enum FileLocks;** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Enum FileLocks** 
       </pre>
       <pre class="prettyprint">
@@ -100,7 +100,7 @@ When set to the <code>Auto</code> value, record locking occurs automatically in 
 
   dbFile.Close(); /* Release all locks. */
   db.Close();</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Using the FileLocks property of a FileAdapter's OpenAttributes,

@@ -25,7 +25,7 @@ Use **Create** to create a new database object reflecting the current state of *
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject Create();** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Create() As System.Void** 
       </pre>
       <pre class="prettyprint">

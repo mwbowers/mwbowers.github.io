@@ -15,7 +15,7 @@ Provider-dependent text information association with the dgException.
 <pre><span class="lang">[C#]</span>
  **public String Text** 
       </pre>
-      <pre><span class="lang">[Visual Basic] </span>
+<pre><span class="lang">[Visual Basic] </span>
  **Public Property Text As String** 
       </pre>
       <pre class="prettyprint">

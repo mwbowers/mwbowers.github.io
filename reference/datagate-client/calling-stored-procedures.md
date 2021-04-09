@@ -54,11 +54,11 @@ The database server is identified and connected with an object of the AdgConnect
   AdgConnection cn;
   Cn = new AdgConnection();
   cn.Open("MyAs400");</pre>
-        <pre>[Visual Basic]
+<pre>[Visual Basic]
   Dim cn as AdgConnection
   cn = New AdgConnection
   cn.Open("MyAs400")</pre>
-        <pre>[Visual RPG]
+<pre>[Visual RPG]
   Dclfld Name(Cn)Type(AdgConnection)
   Cn =*New AdgConnection
   Cx.Open("MyAs400")</pre>
@@ -101,14 +101,14 @@ This program expects to receive an input parameter of type packed decimal (preci
   countParm = new ProgParm( parmType, DataDirection.InputOutput );
   ...
   prog.AppendParm(countParm);</pre>
-        <pre>[Visual Basic]
+<pre>[Visual Basic]
   Dim parmType As	ProgParmType
   parmType = New ProgParmType("Parm1", 0, FieldType.NewPacked(7, 2))
   Dim countParm As ProgParm
   countParm = New ProgParm(parmType, DataDirection.InputOutput)
   ...
   prog.AppendParm(countParm)</pre>
-        <pre>[Visual RPG]
+<pre>[Visual RPG]
   DCLFLD Name (parmType) Type (ProgParmType)
   parmType = New ProgParmType("Parm1", 0, FieldType.NewPacked(7, 2))
   DCLFLD Name (countParm) Type (ProgParm)
@@ -210,7 +210,7 @@ You can construct a parameter list for calling this program using the previously
   // Add multiple-occurrence (array) definition "TestDS" to parameter list
   StructureType structType = new StructureType("TestDS", 5, structMbrs);
   parmList[0] = new ProgParm(structType, DataDirection.Input);</pre>
-        <pre>[Visual Basic]
+<pre>[Visual Basic]
   ' Create "TestDS" structure definition (3 members)
   Dim structMbrs(2) As Object
   structMbrs(0) = New ProgParmType("Test1", 0, FieldType.NewZoned(5, 1))
@@ -242,7 +242,7 @@ After constructing the parameter list the ProgramCallComplex program initializes
   int[] secondElemRef = new int[]{1};
   prog.ObjectToParm( "2Fld2", "TestDS.Test2",
     secondElemRef );</pre>
-        <pre>[Visual Basic]
+<pre>[Visual Basic]
   Dim secondElemRef(1) As Integer
   secondElemRef(0) = 1
   prog.ObjectToParm("2Fld2", "TestDS.Test2", secondElemRef)</pre>

@@ -71,7 +71,7 @@ Note that a database connection cannot be shared between two instances of **AdgC
   AdgConnection Cx;
   Cx = new AdgConnection("ASNA Local DB");
   Cx.Open();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -34,7 +34,7 @@ Before adding parameters or calling programs with an instance created with this 
   As400Program prog = new As400Program();
   prog.Connection = ProdDB;
   prog.ProgramPath = "*Libl/Call400";</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

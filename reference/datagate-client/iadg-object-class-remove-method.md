@@ -24,7 +24,7 @@ The **Remove** method removes an existing database object from the database.
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject Remove();** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Remove() As IAdgObject** 
       </pre>
       <pre class="prettyprint">

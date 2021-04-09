@@ -17,7 +17,7 @@ Returns a multi-line description of the <span>dgException</span>.
         <span class="lang">[C#]</span>
  **public virtual new String GetVerboseText();** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public Overridable NotOveriddable Function GetVerboseText() As String** 
       </pre>

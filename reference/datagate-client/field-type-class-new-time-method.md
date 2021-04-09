@@ -77,7 +77,7 @@ Note that internally, DCS manipulates date, time, and timestamp fields as **Syst
    * will zero out the seconds as well. The same will happen to the 
             time portion of a
    * variable if its IBM i parm was set to be a NewDate. */</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

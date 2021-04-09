@@ -94,7 +94,7 @@ When set to the Auto value, record locking occurs automatically in **FileAdapter
 
   dbFile.Close(); /* Release all locks. */
   db.Close();</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Using the FileLocks property of a FileAdapter's OpenAttributes,

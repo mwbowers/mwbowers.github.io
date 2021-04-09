@@ -24,7 +24,7 @@ keywords: lock facitities, re-set restrictions for database objects
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject Unlock(<br />    [ShareTypes](share-types-enumeration.html) ShareType ,<br />);** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Unlock(_<br />   ByVal ShareType As [ShareTypes](share-types-enumeration.html) _<br />) As IAdgObject** 
       </pre>
       <pre class="prettyprint">

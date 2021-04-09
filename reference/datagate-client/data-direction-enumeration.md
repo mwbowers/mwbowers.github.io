@@ -58,7 +58,7 @@ Careful use of the [ProgParm constructor's](prog-parm-class-prog-parm-method-mai
 <span class="lang">
  **[C#]** 
         </span>
-      <pre>
+<pre>
 AdgConnection ProdDB = new AdgConnection("*Public/DG NET IBM i");
 char Quit400App = '1';
 string CustName;

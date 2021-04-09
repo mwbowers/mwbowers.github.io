@@ -20,7 +20,7 @@ Reflects the most recent format specified in a [ SetFormat](file-adapter-class-s
         <span class="lang">[C#]</span>
  **Public int FormatRequested { get; }** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property FormatRequested As Integer** 
       </pre>

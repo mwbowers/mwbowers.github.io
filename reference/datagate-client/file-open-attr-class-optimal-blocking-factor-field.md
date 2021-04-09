@@ -42,7 +42,7 @@ This constant, when assigned to the **BlockingFactor** property, requests that D
   dbFile.OpenAttributes.BlockingFactor = FileOpenAttr.OptimalBlockingFactor;
   AdgDataSet ds = null;
   dbFile.OpenNewAdgDataSet(out ds);</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim db As New AdgConnection("*Public/DG NET Local")

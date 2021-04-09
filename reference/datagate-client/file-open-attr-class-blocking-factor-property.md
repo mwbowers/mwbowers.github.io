@@ -96,7 +96,7 @@ Two special values are recognized for the **BlockingFactor** property. **Optimal
   }
   dbFile.Close();
   db.Close()</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim db As New AdgConnection("*Public/DG NET Local")

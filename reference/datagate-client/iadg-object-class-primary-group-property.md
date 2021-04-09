@@ -18,7 +18,7 @@ keywords: database objects, primary group owner name
 <pre>        <span class="lang">[C#]</span>
  **Public String PrimaryGroup { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property PrimaryGroup As String** 
       </pre>
       <pre class="prettyprint">

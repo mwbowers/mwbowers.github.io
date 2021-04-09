@@ -26,7 +26,7 @@ The following example retrieves a database name called "Asna 400 db" (in the pro
   AsnaDbName.User = "NewUser";
   AsnaDbName.Password = "NewPasswd";
   AsnaDbName.Register()</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>
@@ -63,7 +63,7 @@ To discover the currently registered database names available for use in a progr
 				Type(*String);
   Console.WriteLine( "  " + DbName );
   Endfor;</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

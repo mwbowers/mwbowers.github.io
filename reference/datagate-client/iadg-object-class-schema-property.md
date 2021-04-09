@@ -20,7 +20,7 @@ keywords: how to, validate XML document against schema
 <pre>        <span class="lang">[C#]</span>
  **Public System.Xml.Schema.XmlSchemaCollection Schema { get }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Schema As System.Xml.Schema.XmlSchemaCollection** 
       </pre>
       <pre class="prettyprint">

@@ -68,7 +68,7 @@ If *Connection* is set with a null value or is an **AdgConnection** instance tha
   /* Here, "ProdDB" is an initialized AdgConnection and
    * Call400 is a valid IBM i program file. */
   As400Program prog = new As400Program(ProdDB, "*Libl/Call400");</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Here, "ProdDB" is an initialized AdgConnection and

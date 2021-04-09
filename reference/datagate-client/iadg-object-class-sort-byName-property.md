@@ -16,7 +16,7 @@ keywords: how to, return IComparer instances for case sensitive database object 
 <pre>        <span class="lang">[C#]</span>
  **Public interface IComparer SortByName { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public interface ReadOnly Property SortByName As IComparer** 
       </pre>
       <pre class="prettyprint">

@@ -31,7 +31,7 @@ Read a database file record using the specified key.
 [AdgKeyTable](adg-key-table-class.html) keyTable
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReadRandomKey( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
    ByVal mode As [ReadRandomMode](read-random-mode-enumeration.html) _
@@ -136,7 +136,7 @@ Calling this method cancels "range mode". A prior successful call to [ReadRange]
 
   dbFile.Close();
   db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

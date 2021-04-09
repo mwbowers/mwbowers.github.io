@@ -17,7 +17,7 @@ keywords: database objects, return database providers last modified timestamp
 <pre>        <span class="lang">[C#]</span>
  **Public System.DateTime DateModified { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DateModified As System.DateTime** 
       </pre>
       <pre class="prettyprint">

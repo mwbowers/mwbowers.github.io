@@ -76,7 +76,7 @@ This method of **ObjectToParm** should not be used if *Parameter* is a "multiple
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0);
 </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

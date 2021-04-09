@@ -60,7 +60,7 @@ String. Returns or sets the path name of the database file.
       cbFmtNames.Items.Add(myDS.GetFormatName(i));
   }
 </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' In this simple routine we wish to write the format names 

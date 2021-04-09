@@ -96,7 +96,7 @@ namespace NetworkRecovery
           }
       }</pre>
       <br />
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
 Imports ASNA.DataGate.Client

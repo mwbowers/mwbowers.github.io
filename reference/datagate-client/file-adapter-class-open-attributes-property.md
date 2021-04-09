@@ -19,7 +19,7 @@ keywords: how to, return file properties when opening a file
 <pre>        <span class="lang">[C#]</span>
  **Public FileOpenAttr OpenAttributes { get; set; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Property OpenAttributes As [FileOpenAttr](file-open-attr-class.html)** 
       </pre>
       <pre class="prettyprint">
@@ -92,7 +92,7 @@ keywords: how to, return file properties when opening a file
   }
   dbFile.Close();
   db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -72,7 +72,7 @@ Set the value of **ShareTypes** to request the type of sharing required by your 
 
   dbFile.Close();
   db.Close();</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' We open the file in order to delete all of its records. 

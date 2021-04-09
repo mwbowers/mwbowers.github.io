@@ -20,7 +20,7 @@ keywords: database objects, return base object(s) path names
 <pre>        <span class="lang">[C#]</span>
  **public string[] Bases { get; set; }** 
  **** </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Property Bases As string()** 
       </pre>
       <pre class="prettyprint">

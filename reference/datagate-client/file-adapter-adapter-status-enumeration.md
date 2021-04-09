@@ -59,7 +59,7 @@ Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to
       dbFile.OpenNewAdgDataSet(out myDataSet);
   }
   </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   If dbFile Is Nothing Then

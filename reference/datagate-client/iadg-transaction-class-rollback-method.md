@@ -19,11 +19,11 @@ Cancel changes to the database that have been performed within the current trans
         <span class="lang">[C#]</span>
  **Public virtual void Rollback();** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public NotOverridable Sub Rollback()** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual RPG]</span>
  **BegSub Rollback Access(*Public) Modifier(*NotOverridable)** 
       </pre>

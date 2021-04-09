@@ -18,7 +18,7 @@ keywords: how to, duplicate database objects
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject Duplicate(<br />   string ScopePath ,<br />   string TargetPath ,<br />   string NewName ,<br />[DuplicateOptions](duplicate-options-enumeration.html) options<br />);** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Function Duplicate(_<br />     ByVal ScopePath As string_<br />     ByVal TargetPath As string_<br />     ByVal NewName As string_<br />     ByVal options As [DuplicateOptions](duplicate-options-enumeration.html)<br />) As IAdgObject** 
       </pre>
       <pre class="prettyprint">

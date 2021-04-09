@@ -99,7 +99,7 @@ The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occu
         Parms[1],
         prog.ParmToObject(System.Type.GetType("System.Decimal"),
         new int[]{}));</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

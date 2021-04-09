@@ -14,7 +14,7 @@ After database connection and access are complete, applications *must* disconnec
 <pre><span class="lang">[C#]</span>
   Cx.Close();
   Cx = null;</pre>
-      <pre><span class="lang">[Visual Basic]</span>
+<pre><span class="lang">[Visual Basic]</span>
   Cx.Close()
   Cx = Nothing</pre>
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>

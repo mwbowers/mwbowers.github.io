@@ -84,7 +84,7 @@ Note that internally, DCS manipulates date, time, and timestamp fields as **Syst
    * the data portion of the returned DateTime will be set to MinValue. The same will
    * happen to the time portion of a variable if its IBM i parm was set to be a NewDate. */</pre>
 
-  <pre><span class="lang"> **[Visual Basic]** </span>
+<pre><span class="lang"> **[Visual Basic]** </span>
   ' Create a parms list to pass to a pre-initialized As400Program object.
   ' We want to pass one date with time format *USA and another with time
   ' format *ISO. Other time formats are available in the DateTimeFormat

@@ -17,7 +17,7 @@ keywords: database objects, return database providers creation timestamp
 <pre>        <span class="lang">[C#]</span>
  **Public System.DateTime DateCreated { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DateCreated As System.DateTime** 
       </pre>
       <pre class="prettyprint">

@@ -18,7 +18,7 @@ keywords: how to, return object identifier for database objects
 <pre>        <span class="lang">[C#]</span>
  **Public int ObjectID { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ObjectID As Integer** 
       </pre>
       <pre class="prettyprint">

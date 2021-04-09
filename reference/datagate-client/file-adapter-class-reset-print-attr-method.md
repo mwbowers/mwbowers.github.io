@@ -22,7 +22,7 @@ Complete the current printer job, change device-related parameters associated wi
 )
 
       </pre>
-      <pre> **[Visual Basic]** 
+<pre> **[Visual Basic]** 
  Overloads Public Sub ResetPrintAttr ( _
    ByVal docName As String _
    ByVal attr As [ASNA.DataGate.Providers.PrintDevAttr](print-dev-attr-class.html)

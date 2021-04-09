@@ -15,7 +15,7 @@ Converts an object to a parameter list value provided with the parameter value, 
    int Element
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Function ObjectToParm(_ 
    ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
    ByVal Value As Object_

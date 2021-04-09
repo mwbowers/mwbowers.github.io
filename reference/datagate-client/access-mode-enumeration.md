@@ -110,7 +110,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property of <span
   }
   dbFile.Close();
   db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -18,7 +18,7 @@ keywords: database objects, owner name of group or user profile
 <pre>        <span class="lang">[C#]</span>
  **Public string Owner { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Owner As String** 
       </pre>
       <pre class="prettyprint">

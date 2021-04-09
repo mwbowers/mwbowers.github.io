@@ -62,7 +62,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
         </span>
   AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
   FileAdapter dbFile = new FileAdapter(dataBase, "*Libl/CMASTNEWL1", "CMMASTERL1");</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim dataBase As New AdgConnection("*Public/DG NET IBM i")

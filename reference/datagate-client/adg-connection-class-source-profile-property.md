@@ -49,7 +49,7 @@ Note that changing the value of this property, or changing the object referenced
   Cx = new AdgConnection("*Public/DG NET IBM i");
   MessageBox.Show("The database name \"*Public/DG NET IBM i\" refers to a connection to "
            + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString());</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

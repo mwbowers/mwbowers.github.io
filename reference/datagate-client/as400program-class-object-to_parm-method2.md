@@ -97,7 +97,7 @@ The *ElementIndices* parameter is ignored unless *ParameterName* refers to a "mu
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
      new int[]{}));              </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

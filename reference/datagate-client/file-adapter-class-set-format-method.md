@@ -26,7 +26,7 @@ For multiformat read access, calling this method causes the read methods to fetc
    string Format
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub SetFormat( _
    ByVal Format As String _
 )** 
@@ -159,7 +159,7 @@ The default behavior of **FileAdapter** is to read all formats. Use this method 
 
   dbFile.Close();
   db.Close();</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   'Read only records from format one.

@@ -26,7 +26,7 @@ Open a database file for access using the specified query and the specified [Adg
    KeyUsages[] KeyFlags
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub OpenSimpleQuery( _
    ByRef Ds As [AdgDataSet](adg-dataset-class.html) _
    ByVal QueryFile As String _
@@ -132,7 +132,7 @@ Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </sp
   dbFile.Close();
   db.Close();
 </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

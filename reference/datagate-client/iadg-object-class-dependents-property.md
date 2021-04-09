@@ -17,7 +17,7 @@ keywords: how to, return dependent object(s) array for a base object
 <pre>        <span class="lang">[C#]</span>
  **Public [Dependent](dependent-class.html)[] Dependents { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Dependents As [Dependent](dependent-class.html)** 
       </pre>
       <pre class="prettyprint">

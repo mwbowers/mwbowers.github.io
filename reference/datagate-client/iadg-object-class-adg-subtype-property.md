@@ -23,7 +23,7 @@ keywords: how to, identify sub-type of database object
 <pre>        <span class="lang">[C#]</span>
  **Public [AdgSubTypes](adg-subtypes-enumeration.html) AdgSubType { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property AdgSubType As [AdgSubTypes](adg-subtypes-enumeration.html)** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>

@@ -17,7 +17,7 @@ keywords: None enumeration member
 <pre>        <span class="lang">[C#]</span>
  **[Flags] public enum DuplicateOptions;** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **&lt;Flags&gt; Public Enum DuplicateOptions** 
       </pre>
       <pre class="prettyprint">

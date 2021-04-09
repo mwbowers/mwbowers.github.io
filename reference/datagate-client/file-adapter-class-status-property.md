@@ -20,7 +20,7 @@ keywords: open state of file
 <pre>        <span class="lang">[C#]</span>
  **public FileAdapter.AdapterStatus Status { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Status As [FileAdapter.AdapterStatus](file-adapter-adapter-status-enumeration.html)** 
       </pre>
       <pre class="prettyprint">
@@ -51,7 +51,7 @@ Here we want to use a fileAdapter object named "dbFile" but are unsure as to whe
       dbFile.OpenNewAdgDataSet(out myDataSet);
   }
   </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   If dbFile Is Nothing Then

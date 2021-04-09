@@ -23,7 +23,7 @@ keywords: authorities, set database access for a specific user
 [AuthorityTypes](authority-types-enumeration.html) authorityType
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub GrantAuthority( _
    ByVal userName As string _<br />   ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)** 
  **) As IAdgObject** 

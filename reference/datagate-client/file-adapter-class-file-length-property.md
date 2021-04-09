@@ -50,7 +50,7 @@ Integer. Returns the number of deleted and non-deleted records in the file.
       + dbFile.FileName + "\" is " + deletedRecords.ToString());
   dbFile.Close();
   dbFile.Connection.Close();</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim dbFile As New FileAdapter

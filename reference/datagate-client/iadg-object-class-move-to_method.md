@@ -17,7 +17,7 @@ keywords: how to, move database objects to new library
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject MoveTo(<br />   string LibraryPath<br />);** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic]</span>
+<pre>        <span class="lang">[Visual Basic]</span>
  **Public Sub MoveTo(_<br />   ByVal LibraryPath As string<br />) As IAdgObject** 
       </pre>
       <pre class="prettyprint">

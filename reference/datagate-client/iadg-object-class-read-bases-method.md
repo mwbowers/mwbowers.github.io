@@ -29,7 +29,7 @@ keywords: XML [DCS 16.0 set base objects description from XML document
 );** 
       </pre>
 
-      <pre> **<span class="lang">[Visual Basic] </span>
+<pre> **<span class="lang">[Visual Basic] </span>
  public Sub ReadBases(_
    ByVal reader As System.Xml.XmlReader<br /> ) As IAdgObject** 
       </pre>

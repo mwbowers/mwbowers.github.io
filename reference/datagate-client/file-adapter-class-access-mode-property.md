@@ -68,7 +68,8 @@ The valid values are defined by the **ASNA.DataGate.Common AccessMode** enumerat
   }
   dbFile.Close();
   dbFile.Connection.Close();</pre>
-      <pre>        <span class="lang">
+  
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim dbFile As New FileAdapter

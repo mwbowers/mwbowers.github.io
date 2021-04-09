@@ -48,7 +48,7 @@ Creates a new timestamp [ FieldType](field-type-class.html).
   currentTime = Convert.ToDateTime(timeProg.ParmToObject(timeParm, Type.GetType("System.DateTime"), 0));
   /* Unlike the IBM i FieldType NewTime or NewDate, NewTimeStamp contains both date and time
    * values. */</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Use the already initialized As400OProgram "timeProg" to set the

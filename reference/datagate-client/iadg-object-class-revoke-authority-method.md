@@ -25,7 +25,7 @@ keywords: revoke authorities previously granted or denied to a database object
 [AuthorityTypes](authority-types-enumeration.html) authorityType
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub RevokeAuthority( _
    ByVal userName As string _<br />   ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)**  **) As IAdgObject** 
       </pre>

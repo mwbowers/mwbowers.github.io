@@ -23,7 +23,7 @@ keywords: event handlers, writing XML
 [XmlInfoEventHandler](xml-info-event-handler-delegate.html) hndlr
 );** 
             </pre>
-      <pre> **<span class="lang">[Visual Basic] </span>
+<pre> **<span class="lang">[Visual Basic] </span>
 Public Sub WriteXml(_<br />   ByVal writer As System.Xml.XmlWriter_<br />   ByVal options As [XmlOptions](xml-options-enumeration.html)_
    ByVal hndlr As [XmlInfoEventHandler](xml-info-event-handler-delegate.html)
 ) As IAdgObject** 

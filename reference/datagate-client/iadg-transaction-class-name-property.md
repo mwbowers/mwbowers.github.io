@@ -17,7 +17,7 @@ The name of the transaction.
 <pre>        <span class="lang">[C#]</span>
  **Public virtual new string Name { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public NotOverridable ReadOnly Property Name As String** 
       </pre>
       <pre class="prettyprint">

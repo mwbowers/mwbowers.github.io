@@ -32,7 +32,7 @@ Moves the record pointer associated with the currently open file without reading
    RangeLast rangeLast
 );** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public Sub SeekRange( _
    ByVal mode As [RangeMode](range-mode-enumeration.html) _
@@ -171,7 +171,7 @@ Note that if **FileAdapter** was already in range mode, this method will cancel 
 
   dbFile.Close();
   db.Clone();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

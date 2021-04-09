@@ -68,7 +68,7 @@ This method is used to transition an **AdgConnection** object to the Open state.
   {
       System.Windows.Forms.MessageBox.Show(e.Message, "Error establishing connection to database.");
   }</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

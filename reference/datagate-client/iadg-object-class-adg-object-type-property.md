@@ -22,7 +22,7 @@ keywords: how to, identify type of database object
 <pre>        <span class="lang">[C#]</span>
  **Public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property AdgObjectType As [AdgObjectTypes](adg-object-types-enumeration.html)** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>

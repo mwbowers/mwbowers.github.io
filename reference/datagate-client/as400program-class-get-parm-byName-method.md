@@ -21,7 +21,7 @@ Returns the [ProgParm](prog-parm-class.html) object in the parameter list named 
    string name
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Protected Function GetParmByName( _
    ByVal name As String _
 ) As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)** 

@@ -50,7 +50,7 @@ Implementation on the IBM i: The [ShareType](file-open-attr-class-share-types-pr
   AdgDataSet myDS = null;
   dbFile.OpenNewAdgDataSet(out myDS);
 </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Opens a record which will spend no time waiting For a record

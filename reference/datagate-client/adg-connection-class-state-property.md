@@ -62,7 +62,7 @@ The value of **State** will be set to Open by a successful call to the [Open](ad
      //If the AdgConnection was not ready, you cannot immediately
      //open the file, so take alternative action here.
   }</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
   </span>' Here we need to use an AdgConnection "dataBase" to open

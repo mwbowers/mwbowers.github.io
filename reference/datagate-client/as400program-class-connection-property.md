@@ -58,7 +58,7 @@ To run the program on a particular database server, set the **Connection** prope
   As400Program prog = new As400Program();
   prog.Connection = new AdgConnection("*Public/DG NET IBM i");
   prog.ProgramPath = "*Libl/Call400";</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -17,7 +17,7 @@ keywords: how to, set/return the member name of database file
 <pre>        <span class="lang">[C#]</span>
  **Public string MemberName { get; set; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Property MemberName As String** 
       </pre>
       <pre class="prettyprint">
@@ -64,7 +64,7 @@ String. Returns or sets the name of the member of the currently-opened file.
       }
   }
  </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' We attempt to open the class variable FileAdapter "dbFile" 

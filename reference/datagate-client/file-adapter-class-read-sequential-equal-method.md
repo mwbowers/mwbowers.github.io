@@ -29,7 +29,7 @@ Read a database file record adjacent to the current position with a key equal to
    AdgKeyTable keyTable
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReadSequentialEqual( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
    ByVal mode As [ReadEqualMode](read-equal-mode-enumeration.html) _
@@ -201,7 +201,7 @@ A successful read operation optionally locks the record read as directed by the 
   dbFile.Close();
   db.Close();
 </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim db As AdgConnection = New AdgConnection("*Public/DG NET Local")

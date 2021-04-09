@@ -19,7 +19,7 @@ Release the currently locked record.
 <pre>        <span class="lang">[C#]</span>
  **Public void ReleaseCurrent();** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReleaseCurrent()** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
@@ -82,7 +82,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
      dbFile.ReleaseCurrent();
  }
 </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

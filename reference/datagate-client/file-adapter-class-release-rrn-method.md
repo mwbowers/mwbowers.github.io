@@ -25,7 +25,7 @@ Release the specified record.
    long RRN
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReleaseRRN( _
    ByVal lr As [LockRequest](lock-request-enumeration.html) _
    ByVal RRN As Long

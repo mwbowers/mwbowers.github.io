@@ -21,7 +21,7 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
 [AdgDataSet](adg-dataset-class.html) ds
 );** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public Sub Open( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
@@ -106,7 +106,7 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
   dbFile.Close();
   dbFile.Connection.Close();
 </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Unlike OpenNewAdgDataSet, the Open method does not create

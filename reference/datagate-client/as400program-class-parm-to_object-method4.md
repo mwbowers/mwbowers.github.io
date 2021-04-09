@@ -88,7 +88,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
   TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),
       "TimeOfDay",
        0));</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

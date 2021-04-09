@@ -79,7 +79,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
    * variables to the returned values in the parameters list. */
   CustName = Convert.ToString(<br />      prog.ParmToObject(System.Type.GetType("System.String"),<br />      "CustName",<br />       0));
   TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),<br />      "TimeOfDay",<br />      0));</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Here, Prog is an initialized As400Program object, 

@@ -163,7 +163,7 @@ Revising a previous example, the following code will check for certain condition
 <pre class="prettyprint">
         <span class="lang">[Visual Basic]</span>
       </pre>
-      <pre>
+<pre>
         <span style="FONT-SIZE: 8pt; FONT-FAMILY: 'Courier New'">Imports ASNA.DataGate.Client
 </span>
         <span style="FONT-SIZE: 8pt; FONT-FAMILY: 'Courier New'">Imports ASNA.DataGate.Common

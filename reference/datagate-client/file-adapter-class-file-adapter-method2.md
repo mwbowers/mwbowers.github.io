@@ -49,7 +49,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
   FileAdapter dbFile = new FileAdapter(dataBase);
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   Dim dataBase As New AdgConnection("*Public/DG NET IBM i")

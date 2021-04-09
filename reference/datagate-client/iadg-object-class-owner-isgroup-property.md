@@ -17,7 +17,7 @@ keywords: owner names, identify single or group user profile
 <pre>        <span class="lang">[C#]</span>
  **Public bool OwnerIsGroup { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property OwnerIsGroup As boolean** 
       </pre>
       <pre class="prettyprint">

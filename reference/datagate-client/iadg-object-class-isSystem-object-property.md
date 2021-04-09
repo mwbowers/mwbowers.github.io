@@ -16,7 +16,7 @@ keywords: system objects, identify
 <pre>        <span>[C#]</span>
  **Public bool IsSystemObject { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property IsSystemObject As boolean** 
       </pre>
       <pre class="prettyprint">

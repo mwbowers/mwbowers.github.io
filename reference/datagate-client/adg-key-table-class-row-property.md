@@ -43,7 +43,7 @@ Note that DCS never adds the **DataRow** referenced by the **Row** property to t
         <span class="lang"> **[C#]** 
         </span>
 </pre>
-      <pre>  /* This example will open a file and find the record for
+<pre>  /* This example will open a file and find the record for
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clarity's sake. */
 
@@ -67,11 +67,11 @@ Note that DCS never adds the **DataRow** referenced by the **Row** property to t
   //customer name "Thilmany Of Bread Co Resources" and store it
   //in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span></pre>
-      <pre>  ' This example will open a file and find the record for
+<pre>  ' This example will open a file and find the record for
   ' the customer "Thilmany of Bread Co Resources".
   ' It omits error trapping for clarity's sake.
   Dim db As New AdgConnection("*Public/DG NET Local")

@@ -101,7 +101,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
         prog.ParmToObject(System.Type.GetType("System.Decimal"),
         "TimeOfDay",
         0));</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

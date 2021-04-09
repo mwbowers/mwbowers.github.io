@@ -25,7 +25,7 @@ Moves the record pointer associated with the currently open file without reading
    AdgKeyTable keyTable
 );** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **public Sub SeekKey( _
    ByVal mode As [SeekMode](seek-mode-enumeration.html) _
@@ -131,7 +131,7 @@ Calling this method cancels "range mode". A prior successful call to **ReadRange
 
   dbFile.Close();
   db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

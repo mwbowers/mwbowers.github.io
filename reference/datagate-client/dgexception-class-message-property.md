@@ -17,7 +17,7 @@ String associated with the dgException.
         <span class="lang">[C#]</span>
  **public override string Message { get; }** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public Overrides ReadOnly Property Message As String** 
       </pre>

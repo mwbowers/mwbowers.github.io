@@ -19,7 +19,7 @@ Gets the [IPrintProperties](iprint-properties-class.html) of the currently open 
    string format
 );** 
       </pre>
-      <pre>       <span class="lang">[Visual Basic] </span>
+<pre>       <span class="lang">[Visual Basic] </span>
  **Public Function GetPrintProperties( _
    ByVal format As String _
 ) As [IPrintProperties](iprint-properties-class.html)** 
@@ -96,7 +96,7 @@ The **IPrintProperties** object returned by this method can be used to get and s
   printFile.Close(); /* Shows print preview - can also accomplish this with
                       * ForceEOD, which doesn't close the file. */
   dataBase.Close();</pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Will open up "CustReport" and will write a single detail, and

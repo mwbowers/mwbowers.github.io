@@ -36,7 +36,7 @@ Read a database file record containing a key within a given range of values.
 [RangeLast](range-last-enumeration.html) rangeLast
 );** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub ReadRange( _
    ByVal ds As [AdgDataSet](adg-dataset-class.html)  _
    ByVal mode As [RangeMode](range-mode-enumeration.html) _
@@ -222,7 +222,7 @@ Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter
       "% of the customers sampled are active.");
   dbFile.Close();
   db.Close(); </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

@@ -14,7 +14,7 @@ This member supports DCS infrastructure and is not intended to be used directly 
    System.Data.DataTable keyTable
 );** 
       </pre>
-      <pre>
+<pre>
         <span class="lang">[Visual Basic] </span>
  **Public Sub New( _
    ByVal keyTable As System.Data.DataTable _

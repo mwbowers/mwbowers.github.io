@@ -95,7 +95,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0);
 </pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>
@@ -111,7 +111,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
   ' This next line assigns the .NET value, CustName, to the
   ' IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0)</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual RPG]** 
   </span>/* Here, "prog" is an initialized As400Program object.

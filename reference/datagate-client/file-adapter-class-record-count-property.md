@@ -18,7 +18,7 @@ keywords: database files, number of non-deleted records in
 <pre>        <span class="lang">[C#]</span>
  **Public long RecordCount { get; }** 
       </pre>
-      <pre>        <span class="lang">[Visual Basic] </span>
+<pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property RecordCount As Long** 
       </pre>
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
@@ -93,7 +93,7 @@ Use the <span> **RecordCount** </span> property to examine the total number of r
   }
   dbFile.Close();
   db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

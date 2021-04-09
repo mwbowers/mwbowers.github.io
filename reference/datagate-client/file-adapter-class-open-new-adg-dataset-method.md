@@ -122,7 +122,7 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
 
   dbFile.Close();
   db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>

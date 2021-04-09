@@ -92,7 +92,7 @@ Upon successful return from **Execute** , the values of any "output" parameters 
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
      new int[]{}));              </pre>
-      <pre>        <span class="lang">
+<pre>        <span class="lang">
  **[Visual Basic]** 
         </span>
   ' Here, Prog is an initialized As400Program object,

@@ -19,7 +19,7 @@ keywords: reset record format restrictions on multiformat files
 For multi-format file access, reset the file to access a record of any format in subsequent operations (see [SetFormat](file-adapter-class-set-format-method.html)).
 <pre>[C#]
  **public void ResetFormat();** </pre>
-      <pre>[Visual Basic]
+<pre>[Visual Basic]
  **Public Sub ResetFormat()** </pre>
       <pre class="prettyprint">[Visual RPG]
  **BegSr ResetFormat Access(*Public)** </pre>
@@ -97,7 +97,7 @@ MessageBox.Show("The cusomter with the highest average sales in " +
      "Result");
 dbFile.Close();
 db.Close();</pre>
-      <pre>
+<pre>
         <span class="lang">
  **[Visual Basic]** 
         </span>
