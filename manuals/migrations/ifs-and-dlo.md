@@ -12,7 +12,7 @@ The property `IFSRoot` of the `Monarch.Job` holds the Window's folder where the 
 
 For more details on the IFS, please see these IBM links:
 
-[IFS](https://www.ibm.com/docs/en/i/7.3?topic=systems-integrated-file-system)
+[Integrated File System](https://www.ibm.com/docs/en/i/7.3?topic=systems-integrated-file-system)
 
 [File system comparison](https://www.ibm.com/docs/en/i/7.3?topic=systems-file-system-comparison)
 
