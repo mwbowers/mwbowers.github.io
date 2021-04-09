@@ -24,17 +24,17 @@ The length of the field in bytes.<span />
  **BegProp ByteLength Type(*Integer) Len(4) Access(*Public)<br />   BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns the number of bytes in this field. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Providers</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

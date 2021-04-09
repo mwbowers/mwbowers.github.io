@@ -11,7 +11,7 @@ keywords: IMember class, all members
 ---
 
 [IMember Overview](imember-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -24,7 +24,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -36,7 +36,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IMember Class](imember-class.html)

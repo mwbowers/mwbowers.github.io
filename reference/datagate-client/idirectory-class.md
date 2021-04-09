@@ -26,10 +26,10 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IDirectory</s
         <span class="lang">[Prototype in Visual RPG for VS 2008]<br /></span>                                <span> BegInterface IDirectory access (*public) implements (IAdgObject)</span>
       </pre>
 
-Thread Safety
+## Thread Safety
 
 In DCS implementations of **IDirectory** , instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 The **IDirectory** class models the library object of the database server. In addition to the generic object management methods and properties of [IAdgObject](iadg-object-class.html) the **IDirectory** class provides additional functions specific to library objects.
 
@@ -46,14 +46,14 @@ A valid **IDirectory** reference may be obtained from DCS in one of the followin
 The [AttachRemoteDirectory](idirectory-class-attach-remote-directory-method.html) method with the [RemotePathName](idirectory-class-remote-path-name-property.html) property is used to attach an existing directory to an object. The [ RepairObjects](idirectory-class-repair-objects-method.html) method is used to repair objects as specified using [RepairOptions](repair-options-enumeration.html) enumeration for the valid options.
 
 [IAdgObject.AdgSubType](iadg-object-class-adg-subtype-property.html) property always has a value of **Unknown** for **IDirectory** instances. Additionally, the values of the [ IAdgObject.Bases](iadg-object-class-bases-property.html) and [IAdgObject.Dependents](iadg-object-class-dependents-property.html) properties are always empty arrays.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDirectory Members](idirectory-members.html)

@@ -31,7 +31,7 @@ keywords: database libraries, enumerate object contents of
  **BegSr Enumerate Access(*Public) Type(Void)<br />	DclSrParm enumerator Type([AdgEnumerator](adg-enumerator-delegate.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -42,7 +42,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -69,21 +69,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **Enumerate** provides a call-back interface for enumerating the database object contents of an existing library. This is useful in visual applications, for example, when a library contains a large amount of objects and a separate thread is used to display a view of objects as they are supplied by the database provider. The delegate *enumerator* is called by **Enumerate** as each object is returned by the provider. Each object in the library is rendered to the delegate as an instance of [IAdgObject](iadg-object-class.html) through which the program can immediately obtain static details, such as path name and object type. However, not all methods of **IAdgObject** are available from the delegate's code (see **AdgEnumerator** for details).
 
 DCS and current database providers only support the enumeration of files and libraries as the contents of libraries. Exceptions raised by the delegate cause **Enumeration** to halt the database provider's stream of objects (safely interrupting the operation) just prior to rethrowing the exception.
 
 Note that the [ItemList](idirectory-class-item-list-property.html) property provides similar information but "all at once" in a cached list format.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

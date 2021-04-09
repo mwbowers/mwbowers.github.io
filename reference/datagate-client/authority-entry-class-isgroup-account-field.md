@@ -29,21 +29,21 @@ keywords: authorities, user or group indicated for database
  **DclFld Name(IsGroupAccount) Type(*boolean) Access(*Public)** 
       </pre>
 
-Field
+## Field
  Value
 
 Boolean. **True** if [ UserName](authority-entry-class-username-field.html) is a group profile or **False** if **Username** is a user profile.
-Remarks
+## Remarks
 
 **IsGroupAccount** is **True** when the profile name specified by **Username** is a group profile or database provider-defined class of profiles. If **False** , **Username** specifies a single-user profile.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

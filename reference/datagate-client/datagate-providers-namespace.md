@@ -12,7 +12,7 @@ keywords: ASNA.DataGate.Providers namespace
 ---
 
 The ASNA.DataGate.Providers namespace contains essential classes for supplying additional parameters for the **FileAdapter** and **AdgConnection** Classes. 
-Classes
+## Classes
 
 
 
@@ -25,7 +25,7 @@ Classes
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

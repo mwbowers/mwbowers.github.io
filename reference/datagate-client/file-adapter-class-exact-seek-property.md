@@ -32,10 +32,10 @@ This property is **True** if the seek operation resulted in an exact match.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Read-only. Boolean. Returns **True** when a seek operation resulted in an exact match. 
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -97,17 +97,17 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Remarks
+## Remarks
 
 The <span> **ExactSeek** </span> property is set to **true** if a seek operation results in placing the file pointer on a record containing a specified key or RRN. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

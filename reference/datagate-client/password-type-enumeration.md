@@ -23,10 +23,10 @@ The <span> **PasswordType** </span> enumerated constant defines values indicatin
  **BegEnum PasswordType Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 Database providers may define special authentication schemes for initiating sessions. The values of this enumeration are assigned to the [ SourceProfile.PasswordType](source-profile-class-password-type-property.html) property to provide a way to specify that a [ SourceProfile](source-profile-class.html) object uses a particular authentication scheme or password security mode. 
-Members
+## Members
 
 
 
@@ -37,14 +37,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

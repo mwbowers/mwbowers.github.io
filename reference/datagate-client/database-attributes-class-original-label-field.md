@@ -21,17 +21,17 @@ The original database label name.
  **DclFld Name(OriginalLabel) Type(*String) Access(*Public)** 
       </pre>
 
-Field Value
+## Field Value
 
 **String** . The original database label name.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseAttributes Class](dcsDatabaseAttributesClass.html)

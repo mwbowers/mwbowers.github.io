@@ -37,7 +37,7 @@ Updates the database file record specified by relative record number with the co
    DclSrParm RRN Type(*Integer) Len(8)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -56,7 +56,7 @@ Parameters
         </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -78,17 +78,17 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 <span> **ChangeRRN** </span> is similar to [ChangeCurrent](file-adapter-class-change-current-method.html) , which updates database file records. Whereas <span> **ChangeCurrent** </span> allows the current record to be updated, <span> **ChangeRRN** </span> permits update to a record with a specified relative record number.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)

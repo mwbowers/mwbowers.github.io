@@ -58,7 +58,7 @@ Read a database file record containing a key within a given range of values.
    DclSrParm rangeLast Type([RangeLast](range-last-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -101,7 +101,7 @@ Parameters
 																	</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -126,7 +126,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The **ReadRange** and [ SeekRange](file-adapter-class-seek-range-method.html) methods initiate a "range mode" for accessing records from an open file. Under this mode, subsequent **FileAdapter** sequential read methods ([ReadSequential](file-adapter-class-read-sequential-method.html) and [ReadSequentialEqual](file-adapter-class-read-sequential-equal-method.html)) restrict access to only records with keys that fall in the range specified by the key parameters. This mode allows DCS programs to more efficiently access a certain set records, especially when combined with the network record blocking feature (see [FileOpenAttr.BlockingFactor](file-open-attr-class-blocking-factor-property.html)). 
 
@@ -141,7 +141,7 @@ A successful read operation optionally locks the record read as directed by the 
 Note that if **FileAdapter** was already in range mode, this method will cancel it and initiate a new range mode as specified.
 
 Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter-class-delete-range-method.html) method to optimize processing and to enhance client/server performance with all supported database engines with dynamic Network Blocking.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -293,14 +293,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

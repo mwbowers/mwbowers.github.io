@@ -27,7 +27,7 @@ keywords: database objects, XML documents, create from base objects description
  **<span class="lang">[Visual RPG]</span>
   BegSr WriteBases Access(*Public) Type(IAdgObject)<br />   DclSrParm writer Type(System.Xml.XmlWriter)**     </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -40,7 +40,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -64,21 +64,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **WriteBases** is called by the [ WriteXml](iadg-object-class-write-xml-methods.html) method to generate the description of the base objects of an existing database file or member. This method may be used by user programs when only this portion of the object description is of interest. The description of base objects includes the path names of the base objects. The XML document fragment produced by **WriteBases** consists of exactly one element node at the current level of *writer* . Note that **WriteBases** produces a valid document fragment even when the database object does not define any base objects. 
 
 If the base object description of **IAdgObject** has been previously set with the [ReadBases](iadg-object-class-read-bases-method.html) or the instance was created with [AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html), the information in the document fragment produced by **WriteBases** is equivalent to that provided to **ReadBases** or **ReadXml** . Otherwise, the description is obtained from the existing database object represented by **IAdgObject** the first time **WriteBases** is called.
 
 On entry, the **WriteState** property of *writer* must not be **Closed** . On successful return from **WriteBases** , the value of **WriteState** will be the same as before the call.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -28,20 +28,20 @@ The **Collate** property indicates the output produced by capable printers shoul
    BegGet,   BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Boolean. Returns or sets a value indicating whether the printed output should be collated when printing multiple copies. 
-Remarks
+## Remarks
 
 Setting this property to True will allow multiple copies to be collated. However, this property is applicable only when printing multiple copies or when the [Copies](print-dev-attr-class-copies-property.html) property is &gt;1.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

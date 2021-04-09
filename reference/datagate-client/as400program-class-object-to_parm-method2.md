@@ -32,7 +32,7 @@ Converts an object or value type to a parameter list value.
    DclSrParm ElementIndices Type(*Integer4) Rank(1)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -56,19 +56,19 @@ Parameters
 									</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 **ArgumentException** . Indicates that *ParameterName* , and if necessary *ElementIndices* , do not reference a valid parameter in the parameter list.
 
 **InvalidOperationException** . Indicates that the [ Connection](as400program-class-connection-property.html) property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ObjectToParm** may be used to set the value of simple parameters (non-structured) with a reference to the [ ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) object. The object should be a member of the [As400Program's](as400program-class.html) parameter list. The **Connection** property must be set (or the **As400Program** constructed with an [ AdgConnection](adg-connection-class.html) object) prior to calling **ObjectToParm** .
 
 For the method to succeed, the *value* object must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be set with an arbitrary object (such as a string), only if the object implements **System.IConvertible** and the **ToDecimal** method yields a valid conversion.<span style="mso-spacerun: yes"> </span>Most fundamental types in the System namespace implement **IConvertible** .
 
 The *ElementIndices* parameter is ignored unless *ParameterName* refers to a "multiple-occurrence" parameter type. Multiple-occurrence parameters consist of single-dimension arrays of the parameter type. *ElementIndices* is a zero-relative index identifying the element of the array **ObjectToParm** is setting the value for.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -153,14 +153,14 @@ Examples
      "TimeOfDay", +
      *Nothing *As *Integer4[]))</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

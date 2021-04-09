@@ -30,7 +30,7 @@ Deletes all records in the currently open file.
  **BegConstructor Access(*Public)
    DclSrParm dbName Type(*String)**       </pre>
 
-Exceptions
+## Exceptions
 
 
 
@@ -54,12 +54,12 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 <br />
 
-Remarks
+## Remarks
 
 **DeleteAllRecords** marks all undeleted records in the file as being deleted.
 
 The file should be opened with the [ AccessMode](file-adapter-class-access-mode-property.html) property set to a value including the [ AccessMode.Delete](access-mode-enumeration.html) flag in order to permit delete access to the file.
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -124,14 +124,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 <strong class="hcp2">Platforms:</strong> Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -32,7 +32,7 @@ keywords: enumerations [DCS 16.0 AuthorityTypes, used by
    DclSrParm authorityType Type([AuthorityTypes](authority-types-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -51,20 +51,20 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Only use this constructor when *username* is a single-user profile (rather than a group profile) since [ IsGroupAccount](authority-entry-class-username-field.html) is initialized **False** . The [ UserName](authority-entry-class-username-field.html) property is initialized with *username* . The [ AuthorityType](authority-entry-class-authority-type-field.html) field is initialized with *authorityType.* 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

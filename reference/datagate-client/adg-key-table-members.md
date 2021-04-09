@@ -11,7 +11,7 @@ keywords: members [DCS 16.0 AdgKeyTable class
 ---
 
 [AdgKeyTable Overview](adg-key-table-class.html) 
-Public Constructors
+## Public Constructors
 
 
 |      |      |
@@ -20,7 +20,7 @@ Public Constructors
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -33,7 +33,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgKeyTable Class](adg-key-table-class.html)

@@ -28,7 +28,7 @@ Returns an object of a specific type from the program parameter list.
    DclSrParm ReturnType Type(Type)<br /> DclSrParm ParameterName Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -41,12 +41,12 @@ Parameters
         <dd>The name or path of the program parameter object in the parameter list.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 ArgumentException. Indicates that *ParameterName* , and if necessary indices, do not reference a valid parameter in the parameter list. 
 
 InvalidOperationException. Indicates that the **Connection** property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 <span>This form of **ParmToObject** may be used to get the value of both simple and structured parameters, using the optional parameter naming scheme allowed by [ProgParmType](prog-parm-type-class.html) and [StructureType](structure-type-class.html). This form should not be used if the target of the assignment is a multiple-occurrence type.</span> 
 
@@ -59,7 +59,7 @@ For complex parameters (constructed with [ StructureType's constructor](structur
 The outermost **ProgParm** object identified by *ParameterName* should be a member of the **As400Program’s** parameter list. The [Connection](as400program-class-connection-property.html) property must be set (or the **As400Program** constructed with an [AdgConnection](adg-connection-class.html) object) prior to calling **ParmToObject** . 
 
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion from the underlying parameter type. For example, a parameter for a decimal number can be returned as an arbitrary object (such as a string), only if the object implements **System.IConvertible** , and the **ChangeType** method yields a valid conversion. Most fundamental types in the System namespace implement **IConvertible** .
-Examples
+## Examples
 
 <pre>
       <span class="lang">
@@ -145,14 +145,14 @@ Examples
         "TimeOfDay", +
         0)) </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

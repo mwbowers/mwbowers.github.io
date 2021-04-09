@@ -11,7 +11,7 @@ keywords: fields [DCS 16.0 DatabaseAttributes class
 ---
 
 [DatabaseAttributes Overview](dcsDatabaseAttributesClass.html) 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -30,7 +30,7 @@ Public Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [DatabaseAttributes Class](database-attribute-class.html)

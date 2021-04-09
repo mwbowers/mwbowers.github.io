@@ -32,7 +32,7 @@ keywords: print files, return CLR type of print control object for format field
    DclSrParm fieldName Type(*string)** 
  </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -44,10 +44,10 @@ Parameters
 					</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **System.Type** . This object reveals the CLR type of a print control. 
-Exceptions
+## Exceptions
 
 
           <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
@@ -71,21 +71,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Print controls associated with format fields are rendered by **IPrintProperties** as common language runtime (CLR) objects. **GetBoundType** provides a way of determining the CLR type of print control objects, without obtaining an object reference to the control. To obtain a reference to the control object itself, use [ GetTypedObject](iprint-properties-class-get-typed-object-method.html).
 
 If no print control object is associated with *fieldName* , an exception is raised. Otherwise, an instance of **System.Type** is returned, which represents the metadata of the control object.
 
 Since print controls may be implemented as COM-based unmanaged objects, this method may invoke .NET interoperability functions to obtain a so-called "runtime callable wrapper" for such controls. The user should be aware of the constraints of .NET interoperability in terms of performance and security when using this method. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See 
+## See 
 Also
 
 <span>[IPrintProperties Class](iprint-properties-class.html) <br /> [GetTypedObject Method](iprint-properties-class-get-typed-object-method.html) <br /> [ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html) </span> 

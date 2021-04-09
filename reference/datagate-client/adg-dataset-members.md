@@ -11,7 +11,7 @@ keywords: AdgDataSet class, all members
 ---
 
 [AdgDataSet Overview](adg-dataset-class.html) 
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -22,7 +22,7 @@ Public Constructors
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -37,7 +37,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -60,7 +60,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

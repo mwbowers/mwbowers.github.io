@@ -26,13 +26,13 @@ keywords: database files, number of non-deleted records in
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Read-only. Returns a long integer containing the count of records in a member.
-Remarks
+## Remarks
 
 Use the <span> **RecordCount** </span> property to examine the total number of records contained in the member. 
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -148,14 +148,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -22,10 +22,10 @@ For a list of all members of this type, see [PrintDevAttr Members](print-dev-att
 <pre class="prettyprint">[Prototype in C#]
   public class PrintDevAttr | System.Collections.Hashtable</pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 The **PrintDevAttr** class is a representation of the device parameters ([PrintDevAttr](print-dev-attr-class-print-dev-attr-constructor.html)) constructor used by [IPrintProperties](iprint-properties-class.html) object files, for the properties listed below.
 
@@ -38,14 +38,14 @@ The **PrintDevAttr** class is a representation of the device parameters ([PrintD
 [PrinterName](print-dev-attr-class-printer-name-property.html) sets the name of an accessible printer device. [ Quality](print-dev-attr-class-quality-property.html) controls the standard quality rating for output produced by the printer. [Scale](print-dev-attr-class-scale-property.html) sets the percentage factor by which the printed output is to be scaled. [ Size](print-dev-attr-class-size-property.html) controls the standard sheet size of paper in the printer.
 
 [TopMargin](print-dev-attr-class-top-margin-property.html) sets the size of top margin in output produced by the printer. [ TTOption](print-dev-attr-classTTOption-property.html) controls the options for using TrueType fonts in documents output by capable printers. [ Width](print-dev-attr-class-width-property.html) sets the width of paper in the printer. [ YResolution](print-dev-attr-class-yresolution-property.html) sets the y-axis resolution (in dots-per-inch) when printing graphics. 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Members](print-dev-attr-members.html)

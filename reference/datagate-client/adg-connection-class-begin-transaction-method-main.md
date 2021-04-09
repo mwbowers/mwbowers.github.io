@@ -36,6 +36,6 @@ Overloaded method that begins a manual database transaction creating an instance
 
 
 
-See Also
+## See Also
 
 [AdgConnection Class](adg-connection-class.html) <br /> [AdgConnection Class Members](adg-connection-members.html) <br /> [IAdgTransaction Class](iadg-transaction-class.html) <br /> [ASNA.DataGate.Client Namespace](datagate-client-namespace.html) 

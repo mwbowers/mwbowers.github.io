@@ -27,7 +27,7 @@ This **ReadXml** method creates an instance of a **PrintDevAttr** XML object.
  **<span class="lang">[Visual RPG]</span>
  BegSr ReadXml Access(*Public) Type(PrintDevAttr)<br />   DclSrParm reader Type(System.Xml.XmlReader)**      </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -41,17 +41,17 @@ Parameters
 </dd>
 </dl>
 
-Returns
+## Returns
 
 A new instance of a **PrintDevAttr** object.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

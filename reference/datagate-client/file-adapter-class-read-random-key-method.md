@@ -47,7 +47,7 @@ Read a database file record using the specified key.
    DclSrParm keyTable Type([AdgKeyTable](adg-key-table-class.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -74,7 +74,7 @@ Parameters
 											</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -101,7 +101,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 <br />
 
-Remarks
+## Remarks
 
 **ReadRandomKey** reads a database file record using the specified key and mode as a point of reference. A record is read which contains a key value equal to, greater than or equal to, or greater than the specified *keyTable* parameter, dependent on the value of the *mode* parameter – Equal, GTEQ, or Greater, respectively. If no such record exists in the file, the method throws dgException with an Error property value of dgEaNOTFND.
 
@@ -110,7 +110,7 @@ If the operation is successful, the record read is placed in the specified **Adg
 A successful read operation optionally locks the record read as directed by the *lr* parameter and the locking properties of the file.
 
 Calling this method cancels "range mode". A prior successful call to [ReadRange](file-adapter-class-read-range-method.html) or [ SeekRange](file-adapter-class-seek-range-method.html) places the **FileAdapter** in range mode, in which only records with keys in a specified range are accessed. This method cancels the restriction.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -157,14 +157,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

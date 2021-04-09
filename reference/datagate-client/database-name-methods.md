@@ -10,7 +10,7 @@ keywords: DatabaseName class, methods
 
 ---
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -28,7 +28,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

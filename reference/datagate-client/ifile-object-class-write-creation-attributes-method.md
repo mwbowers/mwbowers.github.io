@@ -35,7 +35,7 @@ keywords: how to, create XML creation-time attributes for database file
  **BegFunc WriteCreationAttributes Access(*Public) Type(Void)<br />   DclSrParm writer Type(System.Xml.XmlWriter)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -49,7 +49,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -86,7 +86,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The creation-time attributes of a file are metadata apart from the file definition, describing certain operational characteristics the database provider enforces on the file object, such as the maximum number of members, and busy-wait times. This information is collectively expressed in DCS as a single XML content node (or element), named <code>&lt;fileCreateAttr&gt;</code> (see the XML schema). **WriteCreationAttributes** writes this content node to an XML stream, provided by *writer* . DCS obtains the creation-time attributes information for **IFileObject** from one of two sources:
 
@@ -99,14 +99,14 @@ If the user program sets the creation-time attributes with **ReadCreationAttribu
 Note that if the creation-time attribute information of **IFileObject** was set with **ReadCreationAttributes** , any default attribute nodes not specified in the stream to **ReadCreationAttributes** will be explicitly defined in the stream written by **WriteCreationAttributes** , due to the schema validation function of **ReadCreationAttributes** . Thus the data written by **WriteCreationAttributes** may not be identical to the data read by **ReadCreationAttributes** , although both streams are semantically equivalent.
 
 Further note that for **IFileObject** instances, [ IAdgObject.WriteXml](iadg-object-class-write-xml-methods.html) calls an internal version of **WriteCreationAttributes** to dump the creation-time attributes portion of the comprehensive XML description it generates. The internal version obtains the creation-time attributes information as previously described for this method.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

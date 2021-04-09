@@ -25,10 +25,10 @@ For a list of all members of this type, see [IAdgTransaction Members](iadg-trans
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.<span>IAdgTransaction</span>** 
 <pre class="prettyprint">&lt;Serializable&gt; **Public Class IAdgTransaction** </pre>
 
-Thread Safety
+## Thread Safety
 
 Instance members of this type are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 **IAdgTransaction** provides properties and methods for managing database transaction processing. An instance of **IAdgTransaction** is associated with a single database connection (as referenced by the [ Connection](iadg-transaction-class-connection-property.html) property), which defines the operational context of a transaction. A [TransactionLevel](iadg-transaction-class-transaction-level-property.html) is assigned that the database provider may use to prioritize a transaction. The transaction is given an application-specific identifier ([Name](iadg-transaction-class-name-property.html) ) that the database provider may use to identify transaction resources. 
 
@@ -45,14 +45,14 @@ With some database providers, calling the **Dispose** method to end the transact
 Nested database transaction are allowed with transaction processing but this requires you to control the transaction flow from object to object while maintaining the security, recovery, concurrency, and integrity within the transaction boundary. DCS does not restrict nested transactions but the database provider may have mechanisms that prevent or limit such usage. Please consult the database provider's documentation for details.
 
 At the time of this writing, only the IBM i database provider supports transaction processing.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgTransaction Members](iadg-transaction-members.html)

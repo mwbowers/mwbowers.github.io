@@ -30,20 +30,20 @@ Set-only property used to change the current library list of an open database co
    BegSet** 
       </pre>
 
-				Property Value
+## Property Value
 
 String array. Set-only.
-Remarks
+## Remarks
 
 This property may be used to change the user library list for the current database connection.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

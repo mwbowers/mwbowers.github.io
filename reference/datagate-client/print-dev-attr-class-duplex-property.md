@@ -29,20 +29,20 @@ The **Duplex** property specifies the standard duplex (double-sided) setting for
  **BegProp Duplex Type(System.Drawing.Printing.Duplex) Access(*Public) <br /> BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 System.Drawing.Printing.Duplex. Returns or sets an integer duplex setting that defines whether the file will be printed duplex and whether the duplex output will have horizontal or vertical binding. 
-Remarks
+## Remarks
 
 The printer must be capable of printing duplex to use this property.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

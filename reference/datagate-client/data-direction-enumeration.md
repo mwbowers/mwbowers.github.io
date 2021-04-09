@@ -32,7 +32,7 @@ Specifies the type of a program parameter.
  **BegEnum DataDirection Access(*Public)** 
       </pre>
 
-Members
+## Members
 
 
           <col span="1" width="10%" style="FONT-WEIGHT: bold" />
@@ -50,10 +50,10 @@ Members
 
 <br />
 
-Remarks
+## Remarks
 
 Careful use of the [ProgParm constructor's](prog-parm-class-prog-parm-method-main.html) *dir* parameter can improve the performance of iSeries program calls in DCS. For example, by specifying **DataDirection.None** (for a parameter not used by your program, nor by your use of the IBM i program), the network bandwidth required for passing that parameter across the client/server link is decreased thus optimizing the movement of parameter value data. 
-Examples
+## Examples
 
 <span class="lang">
  **[C#]** 
@@ -128,14 +128,14 @@ TimeOfDay = Convert.ToDecimal(prog.ParmToObject(System.Type.GetType("System.Deci
     "TimeOfDay", New Integer() {}))</code>
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ProgParm Class](prog-parm-class.html)

@@ -42,12 +42,12 @@ Options for restricting access to open files.<span style="MARGIN-BOTTOM: 0.8em" 
  **BegEnum AccessMode Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 **AccessMode** defines flag values which can be used alone or combined to create a custom value to suit an application’s requirements for accessing a particular file. Many common combinations, such as ReadWrite and <span>RWCD</span>, are predefined by the enumeration.
 
 The [AccessMode](file-adapter-class-access-mode-property.html) property of <span> **FileAdapter** </span> contains a value of AccessMode, which should be set prior to calling <span> **FileAdapter’s** </span>[Open](file-adapter-class-open-method.html), [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html), or [ OpenSimpleQuery](file-adapter-class-open-simple-query-method.html) to provide the requested access restrictions on the opened file. 
-Members
+## Members
 
 
 
@@ -71,7 +71,7 @@ Members
 
 
 
-Examples 
+## Examples 
 
 <pre>
         <span class="lang">
@@ -144,7 +144,7 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) <span style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana"> <p /></span> 
 
@@ -152,7 +152,7 @@ Requirements
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

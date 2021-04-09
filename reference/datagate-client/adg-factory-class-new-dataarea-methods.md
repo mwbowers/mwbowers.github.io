@@ -25,7 +25,7 @@ Creates an instance of a [IDataArea](idataarea-class.html) object representing a
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgFactory Class](adg-factory-class.html)

@@ -32,7 +32,7 @@ Updates the current database file record with the contents of the specified [ Ad
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -43,7 +43,7 @@ Parameters
 					</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -68,10 +68,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 <span> **ChangeCurrent** </span> updates the contents of the current record of an open file. The current record is usually the record most recently accessed (by <code>read</code> or <code>seek</code> method). On database providers such as the IBM i, the record must be locked for update and upon completion of <span> **ChangeCurrent** </span>, the record is unlocked. Locking the record for update is performed by reading or seeking to the record without specifying a "no lock" option.
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -144,14 +144,14 @@ Examples
   End Try
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

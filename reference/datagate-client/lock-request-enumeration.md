@@ -33,14 +33,14 @@ Options for record locking in [FileAdapter](file-adapter-class.html) access meth
  **BegEnum LockRequest Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 The **LockRequest** enumeration values are used by methods of the [ FileAdapter](file-adapter-class.html) class that access database records. Database providers provide default mechanisms for locking records when they are accessed. These mechanisms can be overridden by use of **LockRequest** flags passed to the access method.
 
 **LockRequest** is a "flags" enumeration where values can be combined to create a custom value as required by the application. The enumeration defines one common combination, ' ReadWrite'. Note that the ' Default' flag cannot be usefully combined with other flags.
 
 Note: Some **LockRequest** values are not supported by certain database providers. Most significantly, the AS/400 database provider only supports the 'NoLock' and ' Default' values; thus, the only way to override its normal locking semantics is to request no locking. 
-Members
+## Members
 
 
 
@@ -55,7 +55,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -168,14 +168,14 @@ Examples
   End If
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

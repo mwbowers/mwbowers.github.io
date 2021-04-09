@@ -35,7 +35,7 @@ keywords: how to, invoke automatic diagnostic and repair function for a file
  **BegFunc RepairFile Access(*Public) Type(Void)<br />   DclSrParm repairOptions Type([RepairOptions](repair-options-enumeration.html))<br />   DclSrParm observer Type([AdgObserver](adg-observer-delegate.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -58,7 +58,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -83,19 +83,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method invokes the database provider's automated diagnostic check and repair function on a multiformat logical or physical file represented by **IFileObject** . A similar method, [IDirectory.RepairObjects](idirectory-class-repair-objects-method.html) can be invoked for all files in a given library. Certain database providers recommend use of these methods as periodic maintenence, while others do not support them.
 
 <p>Several options are available with *repairOptions* (see **RepairOptions** ). The optional delegate *observer* is called from **RepairFile** to report progress; if no such report is desired, specify a null reference.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

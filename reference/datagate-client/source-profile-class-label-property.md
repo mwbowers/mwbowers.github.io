@@ -29,15 +29,15 @@ For server platforms that support multiple databases, the label of the database 
  **BegProp Label Type(*String) Access(*Public)** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Returns or sets a string containing the label of the database to connect to.
-Remarks
+## Remarks
 
 The **Label** property specifies a particular database instance on the server platform for database engines that allow more than one server instance, such as DataGate Windows Server and SQL Server.
 
 For single-instance platforms, such as the iSeries, the **Label** property is ignored.
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -77,14 +77,14 @@ Examples
   newDbProfile.Register()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Providers](datagate-providers-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

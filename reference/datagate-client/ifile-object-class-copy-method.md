@@ -27,7 +27,7 @@ keywords: how to, copy a database file
  **BegFunc Copy Access(*Public) Type(IFileObject)<br />   DclSrParm targetDir Type (*string)<br />   DclSrParm newName Type(*string)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -46,7 +46,7 @@ String. The name for the new copy of the file. This must not be a path name.
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -81,19 +81,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **Copy** creates a new database file using the formats of the file represented by **IFileObject** (the copy source). Member objects of the copy source are duplicated in the new file but physical file member data is not. This method provides functionality similar to the CRTDUPOBJ command of the iSeries. The "basing" rules for copying logical files are provider-dependent but in general, physical base files are not automatically copied to the target library when the copy source is a logical file.
 
 The new database file will reside in the *targetDir* library with the name *newName* . The current session must have "read" authority to the copy source file and "add" authority to *targetDir* . The copy source is locked for "share no update" access for the duration of the method. Upon successful completion, **Copy** returns an instance of **IFileObject** , which represents the new file. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

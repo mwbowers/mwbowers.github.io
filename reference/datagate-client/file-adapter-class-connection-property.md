@@ -26,10 +26,10 @@ The current **AdgConnection** associated with this **FileAdapter** .
  **BegProp Connection Access(*Public) Type(AdgConnection)** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns or sets an instance of [AdgConnection](adg-connection-class.html) which represents a connection to a database server.
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -84,14 +84,14 @@ Examples
   dbFile.Close() ' Close file. 
   dbFile.Connection.Close() ' Close database. </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

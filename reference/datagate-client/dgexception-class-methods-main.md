@@ -11,7 +11,7 @@ keywords: dgException class, methods
 ---
 
 [dgException Overview](dgexception-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -22,7 +22,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

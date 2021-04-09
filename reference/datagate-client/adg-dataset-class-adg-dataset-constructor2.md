@@ -29,7 +29,7 @@ This member supports the .NET Framework infrastructure and is not intended to be
    DclSrParm context Type(StreamingContext)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -42,14 +42,14 @@ Parameters
         <dd>The source and destination of a given serialized stream.</dd>
 </dl>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

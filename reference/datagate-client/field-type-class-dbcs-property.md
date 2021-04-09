@@ -27,17 +27,17 @@ The length of the field in bytes.
  **BegProp Dbcs Type(DbcsFormat) Access(*Public)<br />   BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns the number of bytes in this field given as one of the values of [ DbcsFormat](dbcs-format-enumeration.html). 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Providers</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

@@ -26,7 +26,7 @@ Construct an instance of the **As400Program** object and set the [ Connection](a
    DclSrParm Connection Type(AdgConnection)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -37,7 +37,7 @@ Parameters
 			set the value of the **Connection**  Property.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 [ASNA.DataGate.Common.dgException](dgexception-class.html) is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -51,12 +51,12 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 This constructor invokes the [default constructor](as400program-class-as400program-method1.html) then sets the value of the [ Connection](as400program-class-connection-property.html) property with the *Connection* parameter. The **As400Program** object is created without a program path. The parameter list is initialized to length zero. The [ ProgramPath](as400program-class-program-path-property.html) property will be set to a zero-length string.
 
 If *Connection* is set with a null value, or is an **AdgConnection** instance which is unconnected or incompatible with **As400Program** , an exception is raised. Use [ AdgConnection.Open](adg-connection-class-open-method.html) to open a connection to an IBM i database provider prior to setting **Connection** . Before adding parameters or calling programs with an instance created with this constructor, the **ProgramPath** property must be set.
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -81,14 +81,14 @@ Examples
   prog = *New As400Program(ProdDB)
   prog.ProgramPath = "*Libl/Call400"</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

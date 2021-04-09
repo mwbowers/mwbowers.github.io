@@ -23,7 +23,7 @@ Construct a representation of a simple iSeries program parameter.
  **BegConstructor Access(*Public)<br />   DclSrParm ppt Type(ProgParmType)<br />   DclSrParm dir Type(DataDirection)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -40,7 +40,7 @@ Parameters
 								The declared input/output orientation of the parameter.</dd>
 </dl>
 
-Remarks
+## Remarks
 
 **ProgParm** constructors define the metadata and input/output orientation of a single iSeries program parameter. In this form, *ppt* contains the type description for the simple (non-structured) parameter.
 
@@ -63,7 +63,7 @@ Remarks
 Careful use of the *dir* parameter can improve the performance of iSeries program calls in DCS. For example, by specifying **DataDirection.None** (for a parameter not used by your program nor the iSeries program), the network bandwidth required for passing that parameter across the client/server link is decreased.
 
 **ProgParm** constructors do not allow the initialization of the parameter value data. Values may only be set in the **ProgParm** object after it has been added to the [As400Program](as400program-class.html) parameter list (via [AppendParm](as400program-class-append-parm-method.html) or [AppendParms](as400program-class-append-parms-method.html)). Use the [ObjectToParm](as400program-class-object-to_parm-method-main.html) method to set the value *data* of the **ProgParm** .
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -110,14 +110,14 @@ Examples
   'Now we execute the call to the As400Program, "Call400".
   prog.Execute() </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.DataLink](datagate-data-link-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [ProgParm Class](prog-parm-class.html)

@@ -28,10 +28,10 @@ keywords: how to, return file properties when opening a file
    BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 [FileOpenAttr](file-open-attr-class.html). Returns or sets the file properties when opening a file.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -147,14 +147,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

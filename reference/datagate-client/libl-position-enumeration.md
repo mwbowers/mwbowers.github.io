@@ -30,10 +30,10 @@ keywords: Replace enumeration member
  **BegEnum LiblPosition Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 **LiblPosition** is a parameter of the **ILibraryList.AddEntry** method. It specifies the position in the library list to add the new library list entry. 
-Members
+## Members
 
 
           <col span="1" width="15%" style="FONT-WEIGHT: bold" />
@@ -51,14 +51,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ILibraryList.AddEntry Method](ilibrary-list-class-add-entry-method.html)

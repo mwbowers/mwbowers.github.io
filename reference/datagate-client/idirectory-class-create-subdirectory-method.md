@@ -28,7 +28,7 @@ keywords: how to, create library sub-directories
   DclSrParm name Type(*string) Len(45)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -39,10 +39,10 @@ String. Specifies the base name of the new library. This must not be a full or r
 </dd>
 </dl>
 
-Returns
+## Returns
 
 **IDirectory** . The returned instance represents the newly created library.
-Exceptions
+## Exceptions
 
 
 
@@ -70,21 +70,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Use this method to create a library whose parent library is represented by **IDirectory** . Note that creating such a "sub-library" is a database provider-dependent function. For example, on System i databases, only the root library "/" (also known as QSYS) can contain other libraries. 
 
 **CreateSubDirectory** returns a new instance of **IDirectory** , which represents the newly-created library. 
 
 **CreateSubDirectory** creates libraries that are direct descendants of the library represented by **IDirectory** and therefore *name* must not contain a path name (i.e., no file separator characters such as "/"). Alternatively, to create a library in a random location in the database, use the [ AdgFactory.NewDirectory](adg-factory-class-new-directory-method.html) method, naming the location for the new library. Then call [IAdgObject.Create](iadg-object-class-create-method.html) on the returned **IDirectory** instance.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

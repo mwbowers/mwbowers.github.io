@@ -35,7 +35,7 @@ The **Customer Maintenance** C# Windows program uses ASNA DCS for Visual Studio 
 					the solution by selecting Build - Build Solution (Ctrl+Shift+B).
 5. Press **F5**  to run the program. 
 
-Remarks
+## Remarks
 
 <dl><dt>This example uses DCS to:
 			</dt><dt /></dl>
@@ -79,6 +79,6 @@ b) File Not Found
 
 c) Customer Not Found
 
-See Also
+## See Also
 
 [Samples](samples-main.html) 

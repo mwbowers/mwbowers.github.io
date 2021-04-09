@@ -31,22 +31,22 @@ Contains the description and value of parameters as required by the called progr
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **ASNA.DataGate.DataLink.ProgParm** array. Read-Only copy of the array of **ProgParm** object references composing the parameter list of the program.
-Remarks
+## Remarks
 
 The **Parameters** property allows access to the parameter list created with the [AppendParm](as400program-class-append-parm-method.html) method. The list is in the form of an array of **ProgParm** objects where the first element in the array corresponds to the first element in the parameter list. 
 
 The array returned by this property is a copy of the array used by **As400Program** . However, the objects referenced by the array elements are the actual **ProgParm** objects used. The **Parameters** property is read-only; parameters may be added to the parameter list with the <span> **AppendParm** </span> method only.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

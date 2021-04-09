@@ -18,17 +18,17 @@ TocOrder: 0
  **BegConstructor Access(*Public)** 
       </pre>
 
-Property Value
+## Property Value
 
 Returns or sets the **override** device attributes to be associated with this open file.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

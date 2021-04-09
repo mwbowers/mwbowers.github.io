@@ -24,7 +24,7 @@ Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-sour
  **BegFunc Equals Type(*Boolean) Access(*Public) Modifier(*Overrides)<br />   DclSrParm obj Type(*Object)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -35,23 +35,23 @@ Parameters
 					</dd>
 </dl>
 
-Returns
+## Returns
 
 Boolean. **True** if the [SourceProfile](adg-connection-class-source-profile-property.html) objects being compared refer to the same object; otherwise **False** .
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Returns **false** if *obj* refers to a null instance. Otherwise returns the value of the [ op_Equality](source-profile-classop-equality-method.html) method invoked on the **SourceProfile** of this object against the **SourceProfile** of the object being compared.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       <span>

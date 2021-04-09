@@ -32,7 +32,7 @@ Returns an object of a specific type from the program parameter list.
    DclSrParm ElementIndices Type(*Integer) Len(4) Rank(1)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -50,12 +50,12 @@ Parameters
 										path to the parameter.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <span> **ArgumentException** .</span> Indicates that *ParameterName* , and if necessary *ElementIndices* , do not reference a valid parameter in the parameter list.
 
 <span> **InvalidOperationException** .</span> Indicates that the **Connection** property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ParmToObject** may be used to get the value of both simple and structured parameters, using the optional parameter naming scheme allowed by [ProgParmType](prog-parm-type-class.html) and [StructureType](structure-type-class.html). The constructor for these classes allows the program parameters they represent to be given a string identifier. This identifier may have significance to the application, but it also may be used by this **ParmToObject** method to identify and retrieve the parameter after it has been added to the [As400Program](as400program-class.html) parameter list.
 
@@ -70,7 +70,7 @@ If no multiple occurrence types are included in the path given by *ParameterName
 The outermost <span> **ProgParm** </span> object identified by *ParameterName* and *ElementIndices* should be a member of the **As400Program’s** parameter list. The [Connection](as400program-class-connection-property.html) property must be set (or the **As400Program** constructed with an [AdgConnection](adg-connection-class.html) object) prior to calling <span> **ParmToObject** </span>.
 
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be returned as an arbitrary object (such as a string), only if the object implements <span> **System.IConvertible** </span>, and the <span> **ChangeType** </span> method yields a valid conversion. Most fundamental types in the System namespace implement <span>IConvertible</span>.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -158,14 +158,14 @@ Examples
         "TimeOfDay", +
         0)) </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

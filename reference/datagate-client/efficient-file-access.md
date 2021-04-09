@@ -65,7 +65,7 @@ The [Row](adg-key-table-class-row-property.html) property of **AdgKeyTable** ref
   Console.WriteLine( "CMCustNo = " + Ds.ActiveRow["CMCustNo"] )</pre>
 
 In the above example, we access a file using the **ReadRandomKey** method. This particular file has one key field named "CMCustNo". The **NewKeyTable** method is called on the **AdgDataSet** returned from **OpenNewAdgDataSet.** **NewKeyTable** is passed the format name of the only format of the file. Note that we use the [GetFormatName](adg-dataset-class-get-format-name-method.html) method of **AdgDataSet** to avoid hard-coding the format name. The returned **AdgKeyTable** object contains one **DataRow** object consisting of only one database field value for the CMCustNo field. This key field is initialized with the integer value 500 in this example. Next, **ReadRandomKey** is called passing the key value in the **AdgKeyTable** object. Also note that the [ ReadRandomMode.GTEQ](read-random-mode-enumeration.html) is passed to **ReadRandomKey** . This specifies that we would like to read the next record containing the given key, or otherwise the next record containing a key greater than the given key.
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

@@ -11,7 +11,7 @@ keywords: FieldType class, properties
 ---
 
 [FieldType Overview](field-type-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -27,7 +27,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

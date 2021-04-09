@@ -40,7 +40,7 @@ keywords: lock restrictions, set for database objects
    DclSrParm WaitTime Type(short)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -63,7 +63,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -86,7 +86,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The **Lock** and [ Unlock](iadg-object-class-unlock-method.html) methods engage the database's object locking facilities allowing programs to enforce some degree of data coherency in a multiprocessing system. The target of these methods is the pre-existing database object corresponding to **IAdgObject** . The details of object locking are dependent upon the database provider, but **Lock** and **Unlock** allow selective control of one of a set of "share types", as given by *ShareType* . 
 
@@ -103,14 +103,14 @@ When the database cannot immediately grant a requested lock, **Lock** responds a
 Ultimately, if a lock cannot be granted, **Lock** throws **dgException** with the **Error** property set to **dgEmBUSYOBJ.** 
 
 *WaitTime* is ignored if *WaitOption* has any value other than **Definite** . 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

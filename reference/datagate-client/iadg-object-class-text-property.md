@@ -27,10 +27,10 @@ keywords: how to, set text description/comments of database objects
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **String** . Returns or sets the textural description or comments associated with the database object. 
-Exceptions
+## Exceptions
 
 
 
@@ -53,21 +53,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Database objects may be decorated with a "text area" - a single string of the user's choice associated with the object - ostensibly describing the object. For existing database objects, **Text** is the value of the text area of the object. Setting the value of **Text** will change the text area of an existing object with the supplied value.
 
 For new database objects, the text area of the new object will be set with the value of **Text** at the time [ Create](iadg-object-class-create-method.html) is called (initially, an empty string).
 
 Note that the text area may not be supported by all database providers and string length may be limited.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

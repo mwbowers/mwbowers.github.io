@@ -11,7 +11,7 @@ keywords: IMember class, methods
 ---
 
 [IMember Overview](imember-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -23,7 +23,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IMember Class](imember-class.html)

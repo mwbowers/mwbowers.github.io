@@ -26,7 +26,7 @@ keywords: how to, duplicate database objects
  **BegFunc Duplicate Access(*Public) Type(IAdgObject)<br />   DclSrParm ScopePath Type(*string)<br />   DclSrParm TargetPath Type (*string)<br />   DclSrParm NewName Type(*string)<br />   DclSrParm options Type([DuplicateOptions](duplicate-options-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -55,10 +55,10 @@ Parameters
 </dd>
 </dl>
 
-Returns
+## Returns
 
 A new instance of an **IAdgObject** representing the duplicate object.
-Exceptions
+## Exceptions
 
 
 
@@ -87,21 +87,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Use **Duplicate** to copy an existing database object represented by **IAdgObject** . *TargetPath* and *NewName* specify the location and name respectively, of the new copy. *options* specifies various options for creating the copy.
 
 *ScopePath* must specify a prefix of the path name of the **IAdgObject** (that is, *ScopePath* names a library that directly or indirectly contains the object to copy). This prefix is replaced with *TargetPath* in the base object paths specified by DCS when the duplicate object is created. This provides some flexibility when copying logical files and their base files.
 
 Current database providers only support the **Duplicate** method on **IAdgObject** instances representing database file objects, and not all options are supported by all providers.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -33,7 +33,7 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
 **RangeFirst** is specified as a parameter for the [ DeleteRange](file-adapter-class-delete-range-method.html), [ReadRange](file-adapter-class-read-range-method.html), and [SeekRange](file-adapter-class-seek-range-method.html) methods of [ FileAdapter](file-adapter-class.html).
 
 **RangeFirst** defines values in which you can select one of the choices.
-Members
+## Members
 
 <br />
 
@@ -47,7 +47,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -120,14 +120,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       <span>

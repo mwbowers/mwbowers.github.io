@@ -10,7 +10,7 @@ keywords: members [DCS 16.0 FileAdapter class
 ---
 
 [FileAdapter Overview](file-adapter-class.html) 
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -21,7 +21,7 @@ Public Constructors
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -46,7 +46,7 @@ Public Properties
 
 <br />
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -85,7 +85,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

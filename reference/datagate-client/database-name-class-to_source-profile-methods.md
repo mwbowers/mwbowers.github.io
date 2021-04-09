@@ -24,7 +24,7 @@ Converts the named database into a SourceProfile object.
 
       </p>
 
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

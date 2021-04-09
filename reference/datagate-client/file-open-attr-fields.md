@@ -10,7 +10,7 @@ keywords: FileOpenAttr class, fields
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -22,7 +22,7 @@ Public Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

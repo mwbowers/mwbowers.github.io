@@ -28,10 +28,10 @@ keywords: database objects, return base object(s) path names
  **BegProp Bases Access(*Public) Type(*String) Rank(1)<br />  BegGet   BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 **String** array. The **Length** of the array is equal to the number of base objects and may be no greater than **ASNA.DataGate.Common.MaxBaseFiles** . 
-Exceptions
+## Exceptions
 
 
 
@@ -55,21 +55,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Logical files and members have one or more base objects upon which their definitions are based. **Bases** names these base objects by their absolute path names. The value of **Bases** for **IAdgObject** instances representing libraries, physical files, and physical members is an empty array.
 
 When **IAdgObject** represents an existing database object, reading the value of **Bases** results in a query to the database provider to fetch the base paths, if **Bases** has not been set previously or has been set to a null reference.
 
 When **IAdgObject** represents a database object to be created with the [Create](iadg-object-class-create-method.html) method, **Bases** must be set to the paths of the base objects prior to calling **Create** . When creating a logical file, **Bases** must name physical files with format identifiers matching the base format identifiers of the file definition or an exception will occur in **Create** . The **Length** of the string array must be no greater than **ASNA.DataGate.Common.MaxBaseFiles** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

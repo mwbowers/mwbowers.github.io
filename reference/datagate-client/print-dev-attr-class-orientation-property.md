@@ -33,24 +33,24 @@ The **Orientation** property specifies the landscape/portrait orientation of pap
  **BegProp Orientation Type(PaperOrientation) Access(*Public) <br />    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 [ASNA.DataGate.Common.PaperOrientation](paper-orientation-enumeration.html). Returns or sets an integer value indicating the orientation of the paper in the printer. 
-Remarks
+## Remarks
 
 The paper orientation can be set to either <span style="FONT-WEIGHT: bold">Portrait</span> or <span style="FONT-WEIGHT: bold">Landscape</span> orientation.
 
 <span style="FONT-WEIGHT: bold">Portrait</span> - The paper height is greater than the width.
 
 <span style="FONT-WEIGHT: bold">Landscape - </span>The paper width is greater than the height. 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

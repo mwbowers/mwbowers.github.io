@@ -26,10 +26,10 @@ Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapt
  **BegEnum RangeEqualMode Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 <span>ReadEqualMode</span> defines modes for [FileAdapter.ReadSequentialEqual](file-adapter-class-read-sequential-equal-method.html) as listed in the table below.
-Members
+## Members
 
 
             <col align="middles" span="1" width="20%" style="FONT-WEIGHT: bold" />
@@ -43,7 +43,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -210,14 +210,14 @@ Examples
       averageReturnsPerYear = 0
   End If</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -27,10 +27,10 @@ keywords: how to, return object identifier for database objects
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **Integer** . ReadOnly. The object identifier. 
-Exceptions
+## Exceptions
 
 
 
@@ -53,21 +53,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Certain database providers assign a unique integer identifier to each object in the database. **ObjectID** is the identifier of the existing database object represented by **IAdgObject** , for database providers which support object identifiers.
 
 If the database provider does not support object identifiers, the value of **ObjectID** is zero.
 
 **IAdgObject** queries the database provider for certain object attributes, such as **ObjectID** only once in the lifetime of the **IAdgObject** instance. If attributes change after the query, the change will not be reflected in the property values the **IAdgObject** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

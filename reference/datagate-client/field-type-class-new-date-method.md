@@ -26,7 +26,7 @@ Creates a new date [ FieldType](field-type-class.html).
    DclSrParm fmt Type(DateTimeFormat) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -37,18 +37,18 @@ Parameters
 						of the date field.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 System.ArgumentException.  Thrown if *fmt*  is **DateTimeFormat.HMS** .
 
-Remarks
+## Remarks
 
 **NewDate** constructs a **FieldType** that represents a DataGate date field. Date fields contain calendar date data in a variety of formats, as specified by *fmt* . The storage size of a date field is 6 to 10 bytes, dependent upon the format (see [ DateTimeFormat](date-time-format-enumeration.html) for details).
 
 The value of *fmt* may be any value of **DateTimeFormat** , except for **HMS** .
 
 Note that internally, DCS manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DCS as the value of a date, time, or timestamp field (in methods such as [ As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of **DateTime** . Likewise, DCS will only accept values which can be accurately converted to **DateTime** values, for setting the value of date, time, or timestamp fields.
-Examples
+## Examples
 
 <pre> <span class="lang"> **[C#]** </span>
   /* Create a parms list to pass to a pre-initialized As400Program object.
@@ -118,14 +118,14 @@ Examples
   ' the data portion of the returned DateTime will be set to MinValue. The same will
   ' happen to the time portion of a variable if its IBM i parm was set to be a NewDate. </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span>
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />[FieldType Class](field-type-class.html)<br />[FieldType Class Members](field-type-members.html)<br />[DateTimeFormat Enumeration](date-time-format-enumeration.html)<br />[As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)
  <br />[ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

@@ -29,21 +29,21 @@ keywords: authorities, access and limitations established for database
  **DclFld Name(AuthorityType) Type([AuthorityTypes](authority-types-enumeration.html)) Access(*Public) Shared(*Yes)** 
       </pre>
 
-Field
+## Field
  Value
 
 [AuthorityTypes](authority-types-enumeration.html). A value denoting access capabilities and limitation. This value may be a bit-combination of **AuthorityTypes** enumeration.
-Remarks
+## Remarks
 
 **AuthorityType** is a combination of the bit values of the **AuthorityTypes** enumeration, describing the "access capabilities" portion of the AuthorityEntry. For example, if **AuthorityType** is equal to the **Exclude** value, AuthorityEntry indicates that [ UserName](authority-entry-class-username-field.html) has no access capability to the database object **AuthorityEntry** is associated with. 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Client](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

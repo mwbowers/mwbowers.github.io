@@ -11,7 +11,7 @@ keywords: AuthorityEntry class, all members
 ---
 
 [AuthorityEntry Overview](authority-entry-class.html) 
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -22,7 +22,7 @@ Public Constructors
 
 
 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -35,7 +35,7 @@ Public Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

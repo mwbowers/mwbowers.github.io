@@ -30,7 +30,7 @@ keywords: library lists, enumerate object contents of
 
  </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -42,7 +42,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
           <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
@@ -71,20 +71,20 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **EnumerateCurrentSystem** provides a call-back interface for enumerating the database object contents of the system and user portion of an existing library list. This is useful in visual applications, for example, when a library contains a large amount of objects and a separate thread is used to display a view of objects as they are supplied by the database provider. The delegate *enumerator* is called by **EnumerateCurrentSystem** as each object is returned by the provider. Each object in the library list is rendered to the delegate as an instance of [IAdgObject](iadg-object-class.html) through which the program can immediately obtain static details, such as path name and object type. Not all methods of **IAdgObject** are available from the delegate's code however (see **AdgEnumerator** for details).
 
 DCS and current database providers only support the enumeration of files and libraries as the contents of libraries. Exceptions raised by the delegate cause **Enumeration** to halt the database provider's stream of objects (safely interrupting the operation) just prior to rethrowing the exception.
 
 Note that the [IDirectory.ItemList](idirectory-class-item-list-property.html) property provides similar information, but "all at once" in a cached list format for a specific directory.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 [ILibraryList Class](ilibrary-list-class.html) <br /> [ ILibraryList Members](ilibrary-list-members.html) <br /> [ EnumerateCurrentUser Method](ilibrary-list-class-enumerate-current-user-method.html) <br /> [AdgEnumerator Delegate](adg-enumerator-delegate.html) <br /> [IAdgObject Class](iadg-object-class.html) <br /> [ IDirectory.ItemList Property](idirectory-class-item-list-property.html) <br /> [ASNA.DataGate.Client Namespace](datagate-client-namespace.html) 

@@ -31,7 +31,7 @@ Establish the record, specified by format name and relative record number, as th
    DclSrParm rrn Type(*Integer) Len(4)** 
         </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -49,10 +49,10 @@ Parameters
 								position within the row collection of the **DataTable** .</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **SetActive** returns **True** if the **DataRow** is found and successfully made the active row, and **False** otherwise.
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -65,19 +65,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **SetActive** causes the specified DataRow object to be the current value of the [ActiveRow ](adg-dataset-class-active-row-property.html) property. This is helpful when using [FileAdapter](file-adapter-methods.html) methods which act upon the "active row" of the **AdgDataSet** , such as [AddRecord](file-adapter-class-add-record-method.html), [ ChangeCurrent](file-adapter-class-change-current-method.html), and others. Whereas many read-access methods of **FileAdapter** implicitly set the active row, **SetActive** allows the program to directly influence the active row.
 
 **SetActive** returns a value of **False** if the DataRow specified by *rrn* is not found. No validation of the *strFormat* parameter is performed. If *strFormat* does not refer to a valid format name, an exception will occur.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

@@ -35,7 +35,7 @@ Returns the currently registered database names available for use in a program.
    DclSrParm publicDbs Type(*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -45,10 +45,10 @@ Parameters
 					</dd>
 </dl>
 
-Returns
+## Returns
 
 String. The currently registered database names available for use in a program.
-Examples 
+## Examples 
 
 <pre class="prettyprint">
         <span class="lang">
@@ -79,14 +79,14 @@ Examples
       cbDbName.Items.Add(name)
   Next</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       <span>

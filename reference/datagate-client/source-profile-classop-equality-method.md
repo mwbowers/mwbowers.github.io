@@ -21,7 +21,7 @@ SourceProfile.op_Equality</span>
       <pre class="prettyprint">[Visual Basic]<span>
 returnValue = SourceProfile.op_Equality</span>(x, y)</pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -35,23 +35,23 @@ Parameters
 							</dd>
 </dl>
 
-Return Value
+## Return Value
 
 <span>True</span> if <span>x</span> and <span>y</span> have the same invocation lists; otherwise false.
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Returns<span> true</span> if the references being compared refer to the same object. Otherwise, returns the value of the [Equals](source-profile-class-equals-method.html) method invoked on left, and passed right as a parameter. 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html) <br />[SourceProfile Class Members](source-profile-members.html)<br />[ASNA.DataGate.Providers Namespace](datagate-providers-namespace.html)

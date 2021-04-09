@@ -35,7 +35,7 @@ BegSr ResetPrintAttr Access(*Public)
   DclSrParm attr Type(ASNA.DataGate.Providers.PrintDevAttr)
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -50,7 +50,7 @@ Parameters
 </dl>
       <br />
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -75,21 +75,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **ResetPrintAttr** completes the printer job associated with the open print file and begins a new printer job with new printer job properties as specified by the ***docName*** and ***attr*** parameters. The [ForceEOD](file-adapter-class-force-eod-method.html) method provides similar printer job functionality for print files but does not change the job name or device attributes. 
 
 The ** *attr* ** parameter refers to an instance of [ ASNA.DataGate.Providers.PrintDevAttr](print-dev-attr-class.html) object specified when the file is opened. For example, the program’s print operation can print several documents using one setting for margins (set via the **PrintFileOpenAttr.DevAttr** property), then change the margins before printing the next set of documents (via the **ResetPrintAttr** method).
 
 The ** *docName* ** parameter allows you to associate a new name with the new printer job. This name can be used by the operating system to identify a job in a printer queue. If ** *docName* ** is null (Nothing in VB, *Nothing in AVR), the next printer job will have the same name as the current printer job.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

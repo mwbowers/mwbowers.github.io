@@ -22,10 +22,10 @@ The <span> **DataSetOptions** </span> enumeration names are reserved for AVR for
  **BegEnum DataSetOptions Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 Currently the symbolic names are reserved for AVR for Visual Studio 2019 use, so you must use the associated numeric value.
-Members
+## Members
 
 
 
@@ -36,14 +36,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

@@ -24,7 +24,7 @@ Creates a new fixed-width character [ FieldType](field-type-class.html).
  **BegFunc NewChar Type(FieldType) Access(*Public) Shared(*Yes)<br />   DclSrParm length Type(*Integer) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -33,20 +33,20 @@ Parameters
         <dd>Integer.  The length of the field in single-byte characters.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 **NewChar** constructs a **FieldType** that represents a traditional DataGate character field. Character fields contain single-byte character data in a fixed-width format. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

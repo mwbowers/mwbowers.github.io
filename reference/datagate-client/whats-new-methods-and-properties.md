@@ -71,7 +71,7 @@ This document contains a list and brief description of the new methods and prope
 
 <br />
 
-See Also
+## See Also
 
 <dl />
       [Client Namespace](datagate-client-namespace.html) <br />

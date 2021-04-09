@@ -11,7 +11,7 @@ keywords: ILibraryList class, methods
 ---
 
 [ILibraryList Overview](ilibrary-list-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -25,7 +25,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [ILibraryList Class](ilibrary-list-class.html)

@@ -24,7 +24,7 @@ Constructs an instance of [ SourceProfile](source-profile-class.html) setting co
  **BegConstructor Access(*Public)<br />   DclSrParm dbName Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -35,7 +35,7 @@ Parameters
 					</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -58,7 +58,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This constructor sets the property values of **SourceProfile** with the database connection information registered with the operating system under the given *dbName* . Registered *database names* are commonly created and managed with the DataGate Database Manager tool to provide a centralized identification for a set of connection parameters. 
 
@@ -84,7 +84,7 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 
 <br />
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -109,14 +109,14 @@ Examples
   sp.Register() ' ' Updates the inFormation. 
 </pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

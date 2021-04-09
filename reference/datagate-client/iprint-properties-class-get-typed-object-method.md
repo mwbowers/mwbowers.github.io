@@ -33,7 +33,7 @@ keywords: print files, return print control object for format field
         <br />
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -45,10 +45,10 @@ Parameters
 					</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **System.Object** . A reference to the print control object. 
-Exceptions
+## Exceptions
 
 
           <col span="1" style="FONT-WEIGHT: bold; WIDTH: 30%" />
@@ -71,7 +71,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Print controls associated with format fields are rendered by **IPrintProperties** as common language runtime (CLR) objects. **GetTypedObject** returns a reference to a print control object associated with a field. The reference returned is of type **Object** . To determine the underlying type of a print control without obtaining a reference to the control, use the [GetBoundType](iprint-properties-class-get-bound-type-method.html) method.
 
@@ -80,14 +80,14 @@ If no print control object is associated with *fieldName* , an exception is rais
 Note that not all print controls may be instantiated at file open-time. In this case, **GetTypedObject** will return a null value. 
 
 Since print controls may be implemented as COM-based unmanaged objects, this method may invoke .NET interoperability functions to obtain a so-called "runtime callable wrapper" for such controls. The user should be aware of the constraints of .NET interoperability in terms of performance and security when using this method.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
-See Also
+## See Also
 
 <dl />
       <span>

@@ -32,20 +32,20 @@ System.Drawing.Printing.PaperKind**
  **BegProp Size Type(System.Drawing.Printing.PaperKind) Access(*Public) <br />    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 System.Drawing.Printing.PaperKind. The type of paper to use. 
-Remarks
+## Remarks
 
 This property must be set prior to opening the printer file. If **Size** is not set, the paper size specified for the print file will be used. Please note that the printer must be capable of printing the size of paper 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

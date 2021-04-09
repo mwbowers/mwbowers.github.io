@@ -25,10 +25,10 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>ILibraryList<
       <pre class="prettyprint"> [Prototype in
   Visual RPG] BegInterface ILibraryList access (*public)</pre>
 
-Thread Safety
+## Thread Safety
 
 In DCS implementations of **ILibraryList** , instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 The **ILibraryList** class models the library list object of the database server containing an ordered set of directory names associated with each applications database connection.
 
@@ -52,14 +52,14 @@ A valid **ILibraryList** reference may be obtained from DCS with:
 [SystemConfig](ilibrary-list-class-system-config-property.html) property sets or returns a string array containing a list of the system and user portion of the available directories in the library list.
 
 [UserConfig](ilibrary-list-class-user-config-property.html) property sets or returns a string array containing a list of the user portion of the available directories in the library list.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [ILibraryList Members](ilibrary-list-members.html)

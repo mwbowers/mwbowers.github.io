@@ -25,20 +25,20 @@ The maximum number of digits for decimal fields.
  **BegProp Precision Type(*Integer) Len(4) Access(*Public)<br />   BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns the maximum number of digits for decimal fields.
-Remarks
+## Remarks
 
 Use the **Precision** property to determine the maximum number of digits used to represent values for a numeric **FieldType** object. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

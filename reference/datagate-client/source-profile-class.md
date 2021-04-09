@@ -24,10 +24,10 @@ For a list of all members of this type, see [SourceProfile Members](source-profi
  **Public Class SourceProfile** 
       </pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 <p>An instance of **SourceProfile** is an in-memory representation of the information stored in the Windows registry for a DataGate "database name", as used by the DataGate Database Manager tool. **SourceProfile** provides methods to read and write registered database names from and to the registry on Windows platforms. [AdgConnection](adg-connection-class.html) objects require the information provided by **SourceProfile** to open database connections to the data provider. Through the **SourceProfile** object, **AdgConnection** is not dependent upon the Windows registry for connecting to a database provider.
 
@@ -68,14 +68,14 @@ The [PlatformAttribute](source-profile-class-platform-attribute-property.html) p
 The [Text](source-profile-class-text-property.html) property may hold application-specific comments about the database connection parameters. **Text** is not used to established database connections, but it is saved to the Windows registry by the **Register** method. For example, the value of **Text** may represent a longhand name for the **SourceProfile** .
 
 The [Qualifier](source-profile-class-qualifier-property.html) property is reserved for future use, and should not be set by the application. 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [SourceProfile Members](source-profile-members.html)

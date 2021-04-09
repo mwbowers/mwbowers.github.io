@@ -25,7 +25,7 @@ Deletes the current record associated with an open file.
  **BegSr DeleteCurrent Access(*Public)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 
 
@@ -48,10 +48,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The current record of an open file is marked as deleted by **DeleteCurrent** . After the delete, any lock on the record is released. The file should be opened with the [AccessMode](file-adapter-class-access-mode-property.html) property set to a value including the [AccessMode.Delete](access-mode-enumeration.html) flag in order to permit delete access to the file.
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -123,14 +123,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

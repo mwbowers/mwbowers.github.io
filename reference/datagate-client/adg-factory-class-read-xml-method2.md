@@ -54,7 +54,7 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
    DclSrParm observer Type [(XmlInfoEventHandler](xml-info-event-handler-delegate.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -101,7 +101,7 @@ String. The pathname of a pre-existing database object container for the [ IAdgO
 </dd>
 </dl>
 
-Returns
+## Returns
 
 A new instance of **IAdgObject** . The underlying type of the **IAdgObject** instance is determined by the value of the *docObjectType* parameter, as given in the following table: 
 
@@ -114,7 +114,7 @@ A new instance of **IAdgObject** . The underlying type of the **IAdgObject** ins
 
 
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -142,7 +142,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **IAdgObject** instances can be persisted to and from XML documents (see also [IAdgObject.WriteXml](iadg-object-class-write-xml-methods.html)). **ReadXml** interprets such an XML document, and if valid, returns a new **IAdgObject** instance. 
 
@@ -155,14 +155,14 @@ The value of *docObjectType* must match the object type given in the document, o
 The state of *reader* should be such that the next content node to be read describes the **IAdgObject** instance to be created. Intervening non-content nodes, if any, are ignored. *reader* may reference a document containing multiple, top-level elements describing **IAdgObjects** , but only the first occurrence will be used to create the returned **IAdgObject** . Note however that the top-level element read may define an object container (such as a library or file), and embed elements describing objects it contains. **ReadXml** can also process and create **IAdgObject** instances for these contained objects (see **XmlOptions** ).
 
 To monitor the progress of **ReadXml** , a delegate may be specified as *observer* . **ReadXml** will call this delegate periodically as it reads, validates, and creates **IAdgObjects** . This can be useful for producing a tracking log when creating a large object hierarchy, such as a database library. If monitoring is not required, specify a null reference for *observer* , or use an overload of [ ReadXml](adg-factory-class-read-xml-method1.html) that does not define the *observer* parameter.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> Pro
-See Also
+## See Also
 
 <dl />
       [AdgFactory Class](adg-factory-class.html)

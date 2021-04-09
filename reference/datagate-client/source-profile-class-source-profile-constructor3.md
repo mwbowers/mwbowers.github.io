@@ -24,7 +24,7 @@ Constructs an instance of [SourceProfile](source-profile-class.html) optionally 
  **BegConstructor Access(*Public)<br />   DclSrParm dbName Type(*String)<br />   DclSrParm readRegistry Type(*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -42,7 +42,7 @@ Parameters
 								to registered database name information queried to set property values.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -65,7 +65,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This constructor sets the **DatabaseName** property to the value specified by *dbName* . If *readRegistry* is **False** , the other properties of **SourceProfile** are set to default values as if by the [default constructor](source-profile-class-source-profile-constructor1.html) of **SourceProfile** .
 
@@ -93,7 +93,7 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 
 <br />
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -133,14 +133,14 @@ Examples
   ' Register the database name. 
   newDbProfile.Register() '</pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

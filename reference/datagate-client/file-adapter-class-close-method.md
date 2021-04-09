@@ -25,7 +25,7 @@ Closes the currently open file (synonymous with [ Dispose Method](file-adapter-c
  **BegSr Close Access(*Public)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 
 
@@ -46,12 +46,12 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Use the **Close** or **Dispose** methods to close a file opened by a previous call to one of the open methods ([Open](file-adapter-class-open-method.html), [OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html)). After a successful **Close** or **Dispose** call, the file may be subsequently reopened using the same **FileAdapter** object’s open methods.
 
 **Close** releases unmanaged resources associated with the **FileAdapter** , via the **Dispose** method.
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -120,14 +120,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

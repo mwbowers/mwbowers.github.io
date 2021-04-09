@@ -25,7 +25,7 @@ returnValue = SourceProfile.op_Inequality</span>
         <span>(x, y)</span>
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -39,20 +39,20 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Returns false if the references being compared refer to the same object. Otherwise, returns the negated value of the [Equals](source-profile-class-equals-method.html) method invoked on left, and passed right as a parameter. 
-Requirements
+## Requirements
 
 <strong style="FONT-WEIGHT: bold">Namespace:</strong> [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       <span>

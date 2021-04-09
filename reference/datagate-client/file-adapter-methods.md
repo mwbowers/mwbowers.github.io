@@ -11,7 +11,7 @@ keywords: FileAdapter class, methods
 ---
 
 [FileAdapter Overview](file-adapter-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -52,7 +52,7 @@ Public Methods
 
 <br />
 
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -26,10 +26,10 @@ The path name of the database file, excluding the member name (see [ MemberName 
    BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Returns or sets the path name of the database file. 
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -86,14 +86,14 @@ Examples
   Next i
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

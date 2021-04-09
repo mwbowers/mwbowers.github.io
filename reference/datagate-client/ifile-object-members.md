@@ -11,7 +11,7 @@ keywords: IFileObject class, all members
 ---
 
 [IFileObject Overview](ifile-object-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -23,7 +23,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -40,7 +40,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

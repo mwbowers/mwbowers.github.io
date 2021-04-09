@@ -11,7 +11,7 @@ keywords: PrintDevAttr class, all members
 ---
 
 For additional methods see [PrintDevAttr Overview](print-dev-attr-class.html).
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -22,7 +22,7 @@ Public Constructors
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -34,7 +34,7 @@ Public Methods
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -61,7 +61,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

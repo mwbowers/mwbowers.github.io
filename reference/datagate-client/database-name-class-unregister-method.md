@@ -34,7 +34,7 @@ Deletes a registered database name from the system registry.
    DclSrParm dbName Type (String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -50,7 +50,7 @@ Parameters
 **Assembly:** ASNA DataGate Client 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

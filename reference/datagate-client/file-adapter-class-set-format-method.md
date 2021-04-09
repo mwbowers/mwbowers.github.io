@@ -37,7 +37,7 @@ For multiformat read access, calling this method causes the read methods to fetc
    DclSrParm Format Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -47,7 +47,7 @@ Parameters
 					</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -69,10 +69,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The default behavior of **FileAdapter** is to read all formats. Use this method to change an open file to read only records of the given format. To switch back to "read all records" mode, use the [ ResetFormat](file-adapter-class-reset-format-method.html) method. This method has no effect if the file is not a multiformat file.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -244,14 +244,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

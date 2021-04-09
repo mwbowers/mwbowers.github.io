@@ -23,7 +23,7 @@ Returns the opposite value returned by [op_Equality](adg-connectionclassop-equal
  **returnValue = AdgConnection.op_Inequality(x, y)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -36,20 +36,20 @@ Parameters
         <dd>An **AdgConnection**  object to compared.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Returns **false** if the references being compared refer to the same object. Otherwise, returns the negated value of the [Equals](adg-connection-class-equals-method.html) method invoked on left, and passed right as a parameter. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

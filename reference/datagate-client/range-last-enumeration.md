@@ -27,14 +27,14 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
         <span class="lang">[Visual RPG]</span>
  **BegEnum RangeLast Access(*Public)**  </pre>
 
-Remarks
+## Remarks
 
 **RangeLast** enumeration values modify the usage of key value parameters describing the upper limit of a range in **FileAdapter** range access methods. For example, specifying *Include* for the **RangeLast** parameter indicates that the upper limit of the range should include records whose key value is equal to the "last key" parameter. Note that the *Bottom* value indicates that the upper limit should always include the last record of the file (and thus the "last key" parameter can be ignored).
 
 **RangeLast** is specified as a parameter for the [ DeleteRange](file-adapter-class-delete-range-method.html), [ReadRange](file-adapter-class-read-range-method.html), and [SeekRange](file-adapter-class-seek-range-method.html) methods of FileAdapter. 
 
 **RangeLast** defines values in which you can select one of the choices.
-Members
+## Members
 
 <br />
 
@@ -49,7 +49,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -178,14 +178,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       <span>

@@ -10,7 +10,7 @@ keywords: ASNA.DataGate.Client namespace, enumerations
 
 ---
 
-Enumerations
+## Enumerations
 
 <br />
 
@@ -26,7 +26,7 @@ Enumerations
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

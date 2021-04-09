@@ -11,7 +11,7 @@ keywords: dgException class, all members
 ---
 
 [dgException Overview](dgexception-class.html) 
-Constructors
+## Constructors
 
 <br />
 
@@ -22,7 +22,7 @@ Constructors
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -33,7 +33,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -44,7 +44,7 @@ Public Methods
 
 
 
-Fields
+## Fields
 
 
 |      |      |
@@ -56,7 +56,7 @@ Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

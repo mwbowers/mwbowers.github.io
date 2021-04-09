@@ -29,7 +29,7 @@ DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)
 DclSrParm ReturnType Type(Type)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -45,20 +45,20 @@ Parameters
 							</dd>
 </dl>
 
-Returns
+## Returns
 
 System.Object whose actual type is *ReturnType* .
-Exceptions
+## Exceptions
 
 **ArgumentException** . Thrown if *Parameter* is a complex parameter (constructed with an instance of [ StructureType](structure-type-class.html)).
 
 **InvalidOperationException** . Indicates that the **Connection** property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ParmToObject** may be used to get the value of simple parameters (non-structured) with a reference to the **ProgParm** object. *Parameter* should be a member of the **As400Program’s** parameter list. The value being referenced by this method should not belong to a multiple-occurrence type source, since there is no provision for specifying the index. The [ Connection](as400program-class-connection-property.html) property must be set (or the **As400Program** constructed with an [AdgConnection](adg-connection-class.html) object) prior to calling **ParmToObject** .
 
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion from the underlying parameter type. For example, a parameter for a decimal number can be converted to an arbitrary object type (such as a string), only if the object implements **System.IConvertible** and the **ChangeType** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -135,14 +135,14 @@ Examples
         "TimeOfDay", +
         0)) </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

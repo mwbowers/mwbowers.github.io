@@ -30,10 +30,10 @@ Specialized collection of status information associated with the file.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Read-only. System.Collections.Hashtable. A set of properties' values, keyed by name, associated with specialized DataGate files. 
-Remarks
+## Remarks
 
 Properties associated with specialized files will be found in the **ExtendedResults** collection. Items in the collection are keyed by string values identifying them.
 
@@ -50,14 +50,14 @@ DataGate OLE print files, when written to, communicate information about the doc
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

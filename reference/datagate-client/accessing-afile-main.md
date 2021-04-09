@@ -9,7 +9,7 @@ keywords: accessing a file, contents of
 
 ---
 
-Contents
+## Contents
 
 [Using the FileAdapter Class](usingthe-file-adapter-class.html) 
 
@@ -20,7 +20,7 @@ Contents
 [Efficient File Access](efficient-file-access.html) 
 
 [Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html) 
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

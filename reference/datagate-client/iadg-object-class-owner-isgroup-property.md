@@ -27,7 +27,7 @@ keywords: owner names, identify single or group user profile
       </pre>
 
 Property Value <p> **Boolean** . ReadOnly. **True** if [ Owner](iadg-object-class-owner-property.html) names a group profile, otherwise **False** . 
-Exceptions
+## Exceptions
 
 
 
@@ -51,19 +51,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Database object may be owned by a user or group profile. **OwnerIsGroup** , when **True** , indicates that **Owner** is a group profile.
 
 Depending upon the database provider, **IAdgObject** queries for security attributes, such as **OwnerIsGroup** , only once in the lifetime of the **IAdgObject** instance. If attributes change after the query, the change will not be reflected in the property values of the **IAdgObject** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

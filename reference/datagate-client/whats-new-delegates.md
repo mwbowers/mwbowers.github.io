@@ -25,7 +25,7 @@ This delegate is a simple diagnostic and progress information processor, used by
 This delegate provides a feedback channel and is defined strictly for use as an optional parameter with the [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) methods. If desired, the user can define an implementation for this delegate to monitor the operation of these methods. The methods will periodically call the delegate to report a milestone of a certain detail level (see [XmlInfoEventArgs](xml-info-event-args-class.html)).
 <br />
 
-See Also
+## See Also
 
 <dl />
       [AdgFactory Class](adg-factory-class.html)

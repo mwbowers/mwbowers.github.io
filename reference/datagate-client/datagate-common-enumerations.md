@@ -10,7 +10,7 @@ keywords: enumerations [DCS 16.0 ASNA.DataGate.Common
 
 ---
 
-Enumerations
+## Enumerations
 
 <br />
 
@@ -53,7 +53,7 @@ Enumerations
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

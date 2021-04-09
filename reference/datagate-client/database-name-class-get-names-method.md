@@ -27,7 +27,7 @@ Returns the currently registered database names available for use in a program.
    DclSrParm publicDbs Type(*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -38,17 +38,17 @@ Parameters
 					</dd>
 </dl>
 
-Returns
+## Returns
 
 String. An aray of the currently registered database names available for use in a program.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

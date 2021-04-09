@@ -28,10 +28,10 @@ The database name (or identifier) of this set of connection parameters.
  **BegProp DatabaseName Type(*String) Access(*Public)<br />   BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Read-only. Returns the parameter passed to the **SourceProfile** [constructor](source-profile-constructors-main.html) which created this object. If this **SourceProfile** was instantiated by other means, the value is an empty string.
-Examples 
+## Examples 
 
 <pre class="prettyprint">
         <span class="lang">
@@ -66,14 +66,14 @@ Examples
   Next
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html) <br />

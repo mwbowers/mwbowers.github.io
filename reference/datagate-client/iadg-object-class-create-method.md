@@ -33,13 +33,13 @@ Use **Create** to create a new database object reflecting the current state of *
  **BegSr Create Access(*Public) Type(System.Void)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>None. </dt>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -74,7 +74,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 To create a database object, first create an instance of **IAdgObject** using one of the methods of [AdgFactory](adg-factory-class.html) ([NewFile](adg-factory-class-new-file-method.html), [NewDirectory](adg-factory-class-new-directory-method.html), [ NewMember](adg-factory-class-new-member-method.html), or [ReadXml](adg-factory-class-read-xml-methods.html)). The **IAdgObject** created this way must not refer to an existing database object, or **Create** will raise an exception. If **IAdgObject** was created via **ReadXml** , then no further definition of the object may be necessary since the provided XML description contains all non-security details (see **WriteXml** ). Also note that **ReadXml** provides the option of invoking **Create** automatically as the XML description is read and validated from the stream (see [ XmlOptions.CreateObjects](xml-options-enumeration.html) enumeration). Instantiating **IAdgObject** in any other way may require the use of appropriate **IAdgObject** properties and methods to fully define the object.
 
@@ -91,14 +91,14 @@ A "bare" **IAdgObject** instance, created with **NewFile** , **NewDirectory** , 
 
 
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See 
+## See 
 Also
 
 <dl />

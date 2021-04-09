@@ -24,20 +24,20 @@ This property is reserved for future expansion.
  **BegProp Qualifier Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. This value is reserved and should not be set by the user.
-Remarks
+## Remarks
 
 This property is a reserved property and should not be set by the user. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Providers](datagate-providers-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

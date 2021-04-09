@@ -26,7 +26,7 @@ Creates a new time [ FieldType](field-type-class.html).
       </pre>
       <pre />
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -37,17 +37,17 @@ Parameters
 						the time field.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 **System.ArgumentException** . Thrown if *fmt* is **YMD** , **MDY** , **DMY** , or **JUL** .
-Remarks
+## Remarks
 
 **NewTime** constructs a **FieldType** that represents a DataGate time field. Time fields contain 24-hour clock time data in a variety of formats, as specified by fmt (see [ DateTimeFormat](date-time-format-enumeration.html) for details). The storage size of a time field is 8 bytes. 
 
 The value of *fmt* may not be **YMD** , **MDY** , **DMY** , or **JUL** .
 
 Note that internally, DCS manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DCS as the value of a date, time, or timestamp field (in methods such as [ As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of DateTime. Likewise, DCS will only accept values that can be accurately converted to DateTime values, for setting the value of date, time, or timestamp fields.
-Examples
+## Examples
 
 <pre>
    <span class="lang"> **[C#]** 
@@ -106,14 +106,14 @@ Examples
             portion of a
   ' variable If its IBM i parm was set to be a NewDate. </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

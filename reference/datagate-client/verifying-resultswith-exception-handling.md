@@ -438,7 +438,7 @@ The code in this simple example opens a keyed-access file, then enters a "<span>
 Note that not all traditional "feedback" information regarding the last access performed is transmitted through dgException. Other properties of FileAdapter, such as [ ExactSeek](file-adapter-class-exact-seek-property.html), [RRN](file-adapter-class-rrn-property.html) and [ CurrentFormatIndex](file-adapter-class-current-format-index-property.html) are provided for this purpose. 
 
 For a general introduction to .NET exception handling, please see the <span>.NET Framework referenc</span>e. 
-See Also
+## See Also
 
 <dl />[AdgDataSet Class](adg-dataset-class.html)<br />[Database File Records and 
 						AdgDataSet](database-file-recordsand-adg-dataset.html)<br />[Efficient File Access](efficient-file-access.html)<br />[FileAdapter Class](file-adapter-class.html)<br />[Reading and Writing to Database 

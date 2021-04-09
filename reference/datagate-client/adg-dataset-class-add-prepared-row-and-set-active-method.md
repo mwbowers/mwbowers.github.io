@@ -36,7 +36,7 @@ An integer containing the index value of the file.
    DclSrParm iFormat Type(*Integer) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -52,11 +52,11 @@ Parameters
         </dd>
 </dl>
 
-Return 
+## Return 
 Value
 
 <span><span> **True** </span> if the specified row is set as active and ready for data.</span> 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -73,21 +73,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **AddPreparedRowAndSetActive** combines the operations performed by the [AddRow](adg-dataset-class-add-row-methods.html) and [SetActive](adg-dataset-class-set-active-methods.html) methods into a single method call. First, a prepared row is added to the specified format table, just as if **AddRow** ( *iFormat* ) had been called. Then the row just added to the table is set to be the [ ActiveRow](adg-dataset-class-active-row-property.html) for the **AdgDataSet** , like using **SetActive** . This is useful when adding a record format that is to be immediately used in a [ FileAdapter](file-adapter-class.html) method which operates upon the **ActiveRow** , such as [AddRecord](file-adapter-class-add-record-method.html).
 
 The usual pattern of use involves first staging the prepared DataRow object via [PrepareRow](adg-dataset-class-prepare-row-method-main.html) setting the field values in the DataRow as necessary, then calling <span> **AddRow** </span> or <span> **AddPreparedRowAndSetActive** </span> to append the row to the table.
 
 <span>Note</span> that prior to calling this method, you must call <span> **PrepareRow** </span> to stage a prepared row for insertion to the table. Also, upon return from this method, the prepared row of the table remains the row added to the table. Calling <span> **AddRow** </span> or <span> **AddPreparedRowAndSetActive** </span> again before calling <span> **PrepareRow** </span> will cause an exception.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

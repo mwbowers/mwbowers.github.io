@@ -36,7 +36,7 @@ keywords: revoke authorities previously granted or denied to a database object
    DclSrParm authorityType Type([AuthorityTypes](authority-types-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -55,7 +55,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -85,21 +85,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 A user's authority to the database object represented by **IAdgObject** can be manipulated with **RevokeAuthority** and [ GrantAuthority](iadg-object-class-grant-authority-method.html). The methods' *authorityType* parameters describe the authorization being granted or revoked. **AuthorityTypes** includes a broad range of authorizations which enable or disable various kinds of database object access.
 
 The revoked authorization applies only to the specified user, *userName* .
 
 Some database providers may not support all authorization types. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -29,13 +29,13 @@ keywords: open state of file
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 [FileAdapter.AdapterStatus](file-adapter-adapter-status-enumeration.html). Returns a value indicating whether the file is Open(1) or Closed(0).
-Remarks
+## Remarks
 
 The value of **Status** is one of the **FileAdapter.AdapterStatus** values.
-Examples
+## Examples
 
 Here we want to use a fileAdapter object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure its opened and open it if it isn't.
 <pre>        <span class="lang">
@@ -65,14 +65,14 @@ Here we want to use a fileAdapter object named "dbFile" but are unsure as to whe
   End If
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

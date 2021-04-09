@@ -38,7 +38,7 @@ Release the specified record.
       </pre>
       <br />
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -53,7 +53,7 @@ Parameters
         <dd>		The relative record number of the record to release.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -78,19 +78,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **FileAdapter** methods which read, update, and add records may also optionally lock the current record associated with those operations, in compliance with the rules of the database provider. <span> **ReleaseRRN** </span> allows DCS programs to release portions of the lock held, if any, on the specified record.
 
 The *lr* parameter specifies the record locks to release. DCS supports the **LockRequest.Write** and **LockRequest.Read** flags as valid components of the *lr* parameter value.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

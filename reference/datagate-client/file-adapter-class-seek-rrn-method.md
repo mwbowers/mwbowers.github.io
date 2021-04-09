@@ -35,7 +35,7 @@ Moves the record pointer associated with the currently open file without reading
       </pre>
       <pre />
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -51,7 +51,7 @@ Parameters
         <dd>		The relative record number of the record to seek.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -75,21 +75,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **SeekRRN** positions the file pointer to a particular record using the specified relative record number ( *RRN* ) and *mode* as a point of reference. The record pointed to by this method will be either relative to the *RRN* parameter ( *mode* **Equal** , **Greater** , **SetGT** , **SetGE** , or **SetLL** ); or, relative to the absolute position in the file ( *mode* **First** or **Last** ). If the record sought does not exist in the file, the method throws dgException with an Error property value of dgEaNOTFND.
 
 When **SeekMode.SetLL** or **SeekMode.SetGT** values for *mode* are specified and the record sought is not found, the file pointer is placed at the end of the file and then dgException is thrown.
 
 Calling this method cancels "range mode". A prior successful call to [ReadRange](file-adapter-class-read-range-method.html) or [SeekRange](file-adapter-class-seek-range-method.html) places the **FileAdapter** in range mode, in which only records with keys in a specified range are accessed. This method cancels the restriction. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

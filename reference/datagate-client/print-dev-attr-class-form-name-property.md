@@ -29,20 +29,20 @@ The **FormName** specifies the name of the print format to use.
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Returns or sets the name of the print format to use, such as "A4", "Letter", "Tabloid", "Ledger", "Envelope", etc. 
-Remarks
+## Remarks
 
 Refer to System.Drawing.Printing.PaperKind Enumeration for available print form names.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

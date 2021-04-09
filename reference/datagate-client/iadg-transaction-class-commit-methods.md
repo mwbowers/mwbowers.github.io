@@ -24,7 +24,7 @@ Accept changes to the database that have been performed within the current trans
 
 
 
-See Also
+## See Also
 
 <dl />
       [IAdgTransaction Class](iadg-transaction-class.html)

@@ -24,7 +24,7 @@ Although DCS uses the facilities of a **DataSet** to represent record formats as
 As records are read from a file or added via **InsertRow** they accumulate in the **DataTable** for the format. The **ActiveRow** property only references the last record read - previously read/inserted records remain in the **DataTable** until they are explicitly removed, via **DataSet.Clear** or **DataTable.Clear.** To access or specify accumulated **DataRow** objects, the **DeleteRow** , **InsertRow** , and [SetActive](adg-dataset-class-set-active-methods.html) methods provide a *RRN* parameter. 
 
 Note that accessing **DataRow** objects in **AdgDataSet** is not the same as accessing records in a database file. Database records can only be read, added, updated, and removed via [ FileAdapter](file-adapter-class.html) methods. **AdgDataSet** methods only access the in-memory representation of a database file's formats, not the underlying database file. **FileAdapter** methods use the **AdgDataSet** as a repository for database records read, added, and updated.
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

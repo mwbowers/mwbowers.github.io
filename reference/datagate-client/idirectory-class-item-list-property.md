@@ -28,10 +28,10 @@ keywords: itemlist of files and libraries in a database library
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **System.Collections.ArrayList** . The list of database objects given as **IAdgObject** references. 
-Exceptions
+## Exceptions
 
 
 
@@ -58,7 +58,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This read-only property provides a set of **IAdgObject** references corresponding to the files and libraries contained in the database library represented by **IDirectory** . Each element of the **ArrayList** value of the property is an instance of **IAdgObject** . The underlying type of the **IAdgObject** reference (either **IDirectory** or [IFileObject](ifile-object-class.html)) is determined by the value of the [IAdgObject.AdgObjectType](iadg-object-class-adg-object-type-property.html) property. A library containing no libraries or files is denoted by an **ArrayList** of zero elements. 
 
@@ -67,14 +67,14 @@ DCS establishes the value of **ItemList** only once in the lifetime of the **IDi
 Also, the list returned by **ItemList** is not a copy and hence, any changes to the list by the user program will be reflected in subsequent accesses of **ItemList** . Note that user program changes to the **ArrayList** value of **ItemList** have no effect on the contents of the database library.
 
 **Enumerate** provides similar information but uses a delegate-based interface and **Enumerate** does not return cached results. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

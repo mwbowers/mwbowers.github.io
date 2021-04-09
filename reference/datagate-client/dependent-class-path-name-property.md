@@ -27,20 +27,20 @@ keywords: how to, return full path name of dependent objects
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **String** . Read-Only. The full path name of the dependent database object. 
-Remarks
+## Remarks
 
 The path name of the dependent database object specifies its location in the database.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)

@@ -31,7 +31,7 @@ keywords: how to, compare two AdgConnection objects
  **BegFunc Equals Type( *Boolean ) Access( *Public ) Modifier( *Overrides )** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>obj
@@ -40,20 +40,20 @@ Parameters
 					</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Returns<span> false</span> if <span> *obj* </span> refers to a null instance. Otherwise returns the value of the [ op_Equality](adg-connectionclassop-equality-method.html) method invoked on the <span> **SourceProfile** </span> of this <span> **AdgConnection** </span> object against the **SourceProfile** of the **AdgConnection** object being compared. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

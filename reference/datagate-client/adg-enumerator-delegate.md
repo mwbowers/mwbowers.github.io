@@ -23,7 +23,7 @@ A delegate provided to the [IDirectory.Enumerate](idirectory-class-enumerate-met
 [ AVR.NET ] **DclDelegate AdgEnumerator Access(*public)
   DclSrParm iAdgObject Type(IAdgObject)** </pre>
 
-Remarks
+## Remarks
 
 The **IDirectory.Enumerate** and **ILibraryList** enumerate methods are similar in that they reference an **IAdgObject** . **IDirectory.Enumerate** process each file and library object within a single library represented by **IDirectory** , while the **ILibraryList** enumerate methods process each file and library object with the entire library list represented by **ILibraryList** (directory names associated with each applications database connection). 
 
@@ -69,14 +69,14 @@ The following is a list of **IAdgObject** methods and properties that can be inv
 Invoking any method or property on *iAdgObject* other than those listed above from within the delegate code produces unpredictable results or abnormal termination of the **enumerate** call.
 
 Note that following completion of **enumerate** , no restrictions are placed on the **IAdgObject** references given by *iAdgObject* . Thus if the user program must invoke a method or property other than those listed above, it may save the references given by *iAdgObject* and invoke the restricted method or property upon completion of **enumerate** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDirectory.Enumerate](idirectory-class-enumerate-method.html)

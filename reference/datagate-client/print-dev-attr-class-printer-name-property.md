@@ -32,22 +32,22 @@ The **PrinterName** specifies the name of an accessible printer device.
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Returns or sets the name of an accessible printer to print to. 
-Remarks
+## Remarks
 
 To specify a Printer, enter the complete path and name of the Printer. For example, if the Printer is on a network, you must specify the network then the Printer name. For example, " **\\Network\HP LaserJet 5M** ".
 
 If you are unsure about the correct printer name used by the operating system, simply select **Print** in Word or other Microsoft product and the printer names displayed will be in the correct format.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

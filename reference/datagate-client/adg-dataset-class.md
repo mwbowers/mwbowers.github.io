@@ -20,10 +20,10 @@ For a list of all members of this type, see [AdgDataSet Members](adg-dataset-mem
 <pre class="syntax" />
 
 [Visual Basic] **Public MustInherit Class AdgDataSet Inherits System.Data.DataSet** 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 <span> **AdgDataSet** </span> is a subclass of the class. <span>System.Data.DataSet</span> is used widely throughout the .NET Framework. When used in tandem with [FileAdapter](file-adapter-class.html) **AdgDataSet** features methods to facilitate record-oriented access, while maintaining all of the integration and set-oriented features of System.Data.DataSet. 
 
@@ -36,14 +36,14 @@ Other methods and properties, such as [Formats](adg-dataset-class-formats-proper
 **AdgDataSet** is an "abstract" base class, not intended for direct instantiation (<span>MustInherit in VB). **AdgDataSet** instances are returned by [FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) or by instantiating another class that inherits **AdgDataSet.** For most applications, it is sufficient to use **<code>OpenNewAdgDataSet</code>** to create the **AdgDataSet** instance, since this method creates table structures in the **AdgDataSet** to match the formats of the file to be accessed.</span>
 
 It is generally not recommended to compose your own class to inherit **AdgDataSet** . Such a class could be directly instantiated, however. Alternately, an **AdgDataSet** sub-class created with a DCS-aware development tool, such as Visual RPG, can be directly instantiated for use with access functions like [FileAdapter.Open](file-adapter-class-open-method.html).
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
 							  [AdgDataSet Members](adg-dataset-members.html)

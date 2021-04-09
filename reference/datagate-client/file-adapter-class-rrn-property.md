@@ -26,17 +26,17 @@ The relative record number of the member of the currently-opened file.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns a long integer containing the relative record number of the member of the currently-opened file.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

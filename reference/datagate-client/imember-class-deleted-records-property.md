@@ -29,10 +29,10 @@ The number of deleted records in the database file member object represented by 
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **Integer** . Read-only. A non-negative value.
-Exceptions
+## Exceptions
 
 
 
@@ -57,19 +57,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Use the **DeletedRecords** to examine the number of deleted records contained in an existing member object. For a count of active records use the [ActiveRecords](imember-class-active-records-property.html) property. 
 
 The value of this read-only property is established only once in the lifetime of the **IMember** instance. Accesses of the property value after the first return a cached value that may not reflect intervening changes to the member object. To obtain a refreshed count, access the property value of a new instance of **IMember** . 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IMember Class](imember-class.html)

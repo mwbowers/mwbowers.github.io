@@ -30,22 +30,22 @@ Reflects the most recent format specified in a [ SetFormat](file-adapter-class-s
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **Int32** . A zero-relative format index of a format in the file represented by **FileAdapter** or the value -1. 
-Remarks
+## Remarks
 
 When a format is specified as a "requested" format in **FileAdapter** (via the **SetFormat** method), DCS uses this property to make note of that information. 
 
 When the user program invokes **ResetFormat** , the value of **FormatRequested** is set to -1. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

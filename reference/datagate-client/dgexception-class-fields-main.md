@@ -11,7 +11,7 @@ keywords: dgException class, fields
 ---
 
 [dgException Overview](dgexception-class.html) 
-Fields
+## Fields
 
 
 |      |      |
@@ -23,7 +23,7 @@ Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

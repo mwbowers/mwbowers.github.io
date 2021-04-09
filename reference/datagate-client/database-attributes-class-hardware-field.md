@@ -21,18 +21,18 @@ The name of the hardware on which the database file resides.
  **DclFld Name(Hardware) Type(*String) Access(*Public)** 
       </pre>
 
-Field
+## Field
  Value
 
 **String** . The name of the hardware on which the database resides.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseAttributes Class](dcsDatabaseAttributesClass.html)

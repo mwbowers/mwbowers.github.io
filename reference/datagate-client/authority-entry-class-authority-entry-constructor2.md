@@ -26,7 +26,7 @@ TocOrder: 1
    DclSrParm username Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -38,22 +38,22 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Only use this constructor when *username* is a single user profile (rather than a group profile) since [ IsGroupAccount](authority-entry-class-username-field.html) is initialized **False** . The **Username** field is initialized with *username* .
 
 This constructor initializes the [ AuthorityType](authority-entry-class-authority-type-field.html) field to **Use** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

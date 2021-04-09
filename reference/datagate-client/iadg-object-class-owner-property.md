@@ -27,10 +27,10 @@ keywords: database objects, owner name of group or user profile
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **String** . Read only. The name of the user or group account that owns the object. 
-Exceptions
+## Exceptions
 
 
 
@@ -53,19 +53,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This read-only property is the name of the group or user profile assigned ownership of the database object represented by **IAdgObject** . If [OwnerIsGroup](iadg-object-class-owner-isgroup-property.html) is **True** , then **Owner** names a group profile. If **OwnerIsGroup** is **False** , **Owner** names a user profile.
 
 Depending upon the database provider, **IAdgObject** queries for security attributes, such as **Owner** , only once in the lifetime of the **IAdgObject** instance. If attributes change after the query, the change will not be reflected in the property values of the **IAdgObject** . 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

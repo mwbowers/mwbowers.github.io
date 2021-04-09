@@ -29,17 +29,17 @@ Sets all parameters in the parameter list to default 'zero' values.
  **BegFunc SetParmsZeroValue Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 Use **SetParmsZeroValue** when a program has a large number of input parameters but only a few must be set explicitly for the server program to run effectively. **SetParmsZeroValue** does not remove parameters from the parameter list.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

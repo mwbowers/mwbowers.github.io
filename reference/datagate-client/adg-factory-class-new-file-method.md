@@ -34,7 +34,7 @@ The **NewFile** method creates a new instance of [IFileObject](ifile-object-clas
    DclSrParm PathName Type(*string)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -57,10 +57,10 @@ String. The path name of a new or exiting database file object.
 </dd>
 </dl>
 
-Returns
+## Returns
 
 An instance of an [IFileObject](ifile-object-class.html) object.
-Exceptions
+## Exceptions
 
 
 
@@ -80,21 +80,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method creates a new [IFileObject](ifile-object-class.html) based upon a new or existing database file (whose path is specified by *PathName* ). The database containing the file is specified as *cn* , an [ AdgConnection](adg-connection-class-state-property.html) object. Note that this method does not throw an exception if *PathName* and *cn* do not reference a valid, pre-existing database file. Subseqent usage of the returned **IFileObject** object's methods may raise such exceptions, however. 
 
 To create a new database file, first call **NewFile** with the desired name for the new file in *PathName* . Next, use properties and methods of the **IFileObject** reference returned to set the new file's attributes (minimally, the [ IFileObject.ReadDefinition](ifile-object-class-read-definition-method.html) and [ IFileObject.ReadCreationAttributes](ifile-object-class-read-creation-attributes-method.html) methods must be called). Finally, call the [Create](iadg-object-class-create-method.html) method. A database file may also be created via [ AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html).
 
 <p class="normal">If the [State](adg-connection-class-state-property.html) property of the *cn* parameter is not **ConnectionState.Open** , **NewFile** may temporarily open the database provider connection, via [AdgConnection.Open](adg-connection-class-open-method.html). In this case only, upon successful return from **NewFile** , the **State** property of *cn* will be **ConnectionState.Closed** .
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** , Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8</span> Pro
-See 
+## See 
 Also
 
 <dl />

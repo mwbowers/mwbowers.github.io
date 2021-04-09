@@ -11,7 +11,7 @@ keywords: StructureType class, all members
 ---
 
 [StructureType Overview](structure-type-class.html) 
-Public Constructors
+## Public Constructors
 
 
 |      |      |
@@ -20,7 +20,7 @@ Public Constructors
 
 
 
-See Also
+## See Also
 
 <dl />
       [StructureType Class](structure-type-class.html)

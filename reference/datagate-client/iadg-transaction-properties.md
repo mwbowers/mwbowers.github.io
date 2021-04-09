@@ -11,7 +11,7 @@ keywords: properties [DCS 16.0 IAdgTransaction class
 ---
 
 [IAdgTransaction Overview](iadg-transaction-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -24,7 +24,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [IAdgTransaction Class](iadg-transaction-class.html)

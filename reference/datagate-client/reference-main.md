@@ -11,7 +11,7 @@ keywords: Language Reference
 ---
 
 ####  This section contains reference documentation of the public classes that constitute the DataGate Component Suite. 
-In This Section
+## In This Section
 
 <dl>
         <dt>

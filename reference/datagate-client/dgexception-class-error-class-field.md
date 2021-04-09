@@ -28,13 +28,13 @@ A category of the condition raising the exception.
  **BegProp ErrorClass As dgErrorClass<br /> BegGet, BegSet** 
       </pre>
 
-Field Value
+## Field Value
 
 [ASNA.DataGate.Common.dgErrorClass](dgerror-class-enumeration.html). The category of the condition raising the exception. 
-Remarks
+## Remarks
 
 The condition raising the <span>dgException</span> belongs to a particular category of conditions identified by DCS. The <span> **ErrorClass** </span> field contains this category value.
-Examples 
+## Examples 
 
 <pre class="prettyprint">        <span class="lang">
  **[C#]** 
@@ -114,14 +114,14 @@ Examples
   End Try
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

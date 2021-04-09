@@ -8,7 +8,7 @@ title: IDataAreaClass
 ---
 
 This interface is used for the creation and manipulation of DataAreas.
-Inheritance Hierarchy
+## Inheritance Hierarchy
 
 ---
 
@@ -27,7 +27,7 @@ Inheritance Hierarchy
  **Assembly:** &#160;
           <span sdata="assembly">ASNA.DataGate.Client</span>
 
-Syntax
+## Syntax
 
 ---
 
@@ -76,7 +76,7 @@ public ref class IDataArea
             <!---->
           </a>
 
-See Also
+## See Also
 
 ---
 

@@ -11,7 +11,7 @@ keywords: AdgDataSet class, methods
 ---
 
 [AdgDataSet Overview](adg-dataset-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -34,7 +34,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

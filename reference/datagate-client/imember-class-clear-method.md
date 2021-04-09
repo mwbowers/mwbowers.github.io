@@ -30,10 +30,10 @@ keywords: how to, remove all active and deleted records in database file member
  **BegSr Clear Access(*Public) Type(Void)** 
       </pre>
 
-Parameters
+## Parameters
 
 None.
-Exceptions
+## Exceptions
 
 
 
@@ -56,17 +56,17 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 **Clear** removes all data records, active and deleted, from the database file member object represented by **IMember** . DCS does not implement this function but rather invokes the database provider's function to perform the task.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
-See Also
+## See Also
 
 <dl />
       [IMember Class](imember-class.html)

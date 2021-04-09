@@ -24,10 +24,10 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IFileObject</
 [Prototype in C#] public interface IFileObject | Inherits IAdgObject</pre>
       <pre class="prettyprint"> [Prototype in AVR] BegInterface IFileObject access(public) implements(IAdgObject)</pre>
 
-Thread Safety
+## Thread Safety
 
 In DCS implementations of **IFileObject** , instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 The **IFileObject** class models the file object of the database server. In addition to the generic methods and properties of [ IAdgObject](iadg-object-class.html) the **IFileObject** class provides methods specific to file objects. 
 
@@ -46,14 +46,14 @@ A valid **IFileObject** reference may be obtained from DCS in one of the followi
 The diagnostic test and repair facilities of certain database providers are accessible with the [RepairFile](ifile-object-class-repair-file-method.html) method.
 
 The value of [AdgObjectType](iadg-object-class-adg-object-type-property.html) for **IFileObject** instances is always **File** . The value of [AdgSubType](iadg-object-class-adg-subtype-property.html) can be used to determine the classification of the file, e.g. logical, physical, etc. [Bases](iadg-object-class-bases-property.html) is always an empty collection for physical files. [Dependents](iadg-object-class-dependents-property.html) may be non-empty only for physical files.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IFileObject Members](ifile-object-members.html)

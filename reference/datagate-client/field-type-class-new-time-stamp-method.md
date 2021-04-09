@@ -23,12 +23,12 @@ Creates a new timestamp [ FieldType](field-type-class.html).
  **BegFunc NewTimeStamp Type(FieldType) Access(*Public) Shared(*Yes)** 
       </pre>
 
-Remarks
+## Remarks
 
 **NewTimeStamp** constructs a **FieldType** which represents a DataGate timestamp field. Timestamp fields contain calendar date and 24-hour clock time data denoting a specific instant in time. The storage size of a timestamp field is 26 bytes.
 
 **Note** : Internally, DCS manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DCS as the value of a date, time, or timestamp field (in methods such as [As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of DateTime. Likewise, DCS will only accept values which can be accurately converted to DateTime values, for setting the value of date, time, or timestamp fields.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -67,14 +67,14 @@ Examples
   ' Unlike the IBM i FieldType NewTime or NewDate, NewTimeStamp contains both date and time
   ' values. </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

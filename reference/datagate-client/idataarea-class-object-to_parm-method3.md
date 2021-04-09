@@ -27,7 +27,7 @@ Converts an object to a data area value provided with the parameter type and val
    DclSrParm ParameterName Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -40,14 +40,14 @@ Parameters
         <dd>		The name or path of the program data area.</dd>
 </dl>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDataArea Class](idataarea-class.html)

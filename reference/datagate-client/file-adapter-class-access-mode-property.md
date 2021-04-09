@@ -31,13 +31,13 @@ The declared mode of access enforced by the database when the file is open.
    BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns or sets an integer value for how a file will be accessed when it is opened. The valid values are defined by the [ ASNA.DataGate.Common AccessMode](access-mode-enumeration.html) enumeration. 
-Remarks
+## Remarks
 
 The valid values are defined by the **ASNA.DataGate.Common AccessMode** enumeration.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -94,14 +94,14 @@ Examples
   dbFile.Close()
   dbFile.Connection.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

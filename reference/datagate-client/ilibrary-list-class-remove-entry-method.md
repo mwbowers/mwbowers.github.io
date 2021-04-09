@@ -30,7 +30,7 @@ keywords: how to, remove entries from database library list
    DclSrParm path Type(*string)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -42,17 +42,17 @@ String. Specifies the path name of the database library to remove from the libra
 </dd>
 </dl>
 
-Remarks
+## Remarks
 
 A library list entry can not be removed if it's on an active user's library list. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See 
+## See 
 Also
 
 <dl />

@@ -26,10 +26,10 @@ Returns a multi-line description of the <span>dgException</span>.
  **BegFunc GetVerboseText Type(*String) Access(*Public) Modifier(*NotOverridable)** 
       </pre>
 
-Remarks
+## Remarks
 
 For development and debugging purposes, <span> **GetVerboseText** </span> is an easy method to use to "dump" most of the available information associated with the <span>dgException</span>.
-Examples
+## Examples
 
 <pre class="prettyprint">        <span class="lang">
  **[C#]** 
@@ -92,14 +92,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

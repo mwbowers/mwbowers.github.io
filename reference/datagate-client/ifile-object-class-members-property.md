@@ -30,7 +30,7 @@ An array of [IMember](imember-class.html) objects representing all of the databa
       </pre>
 
 Property Value <p>Single-dimension **IMember** array. Read-only. The array may contain zero or more elements 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -63,19 +63,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **Members** allows the enumeration of the member objects of the database file represented by **IFileObject** . Each element of **Members** is an instance of [IMember](imember-class.html). The number of elements in **Members** is equal to the value of [ IFileObject.MemberCount](ifile-object-class-member-count-property.html). Modifying the **IMember** reference values of the elements of **Members** has no effect on the database file or its members. 
 
 Currently, DCS retrieves the value of **Members** from the database provider only once in the lifetime of **IFileObject** , and this value is returned each time the property value is accessed. Thus, the listed exceptions are never raised after the first successful access of the property value. To obtain a refreshed value for **Members** , use a newly instantiated **IFileObject** instance referencing the same database file object.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

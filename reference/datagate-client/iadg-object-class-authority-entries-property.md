@@ -28,10 +28,10 @@ keywords: authorities, obtaining currently set for a database object
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Single-dimension [AuthorityEntry](authority-entry-class.html) array. Elements in the array are not ordered. The maximum **Length** of the array is **System.Int32.MaxValue** .
-Exceptions
+## Exceptions
 
 
 
@@ -61,21 +61,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Database providers may assign user authorizations to individual database objects. These authorizations are defined, per user or group profile, with the elements of the array value of **AuthorityEntries** . Each element of the array defines a single user or group profile, and its authority to the database object represented by **IAdgObject** (see **AuthorityEntry** ).
 
 Reading the value of **AuthorityEntries** results in a database query to obtain the current authorization set for the object. The value of **AuthorityEntries** is cached in **IAdgObject** , such that reading the value after the first read returns the same value as the first. Any intervening changes to the database object's authorization set are not reflected by **AuthorityEntries** .
 
 The database object's authorization set can be changed by assigning a value to **AuthorityEntries** . Changing the value of the array reference returned by **AuthorityEntries** has no effect on the database object, until the value is explicitly assigned back to **AuthorityEntries** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

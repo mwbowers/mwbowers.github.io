@@ -11,7 +11,7 @@ keywords: XmlInfoEventArgs class, all members
 ---
 
 [XmlInfoEventArgs Overview](xml-info-event-args-class.html) 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -23,7 +23,7 @@ Public Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [XmlInfoEventArgs Class](xml-info-event-args-class.html)

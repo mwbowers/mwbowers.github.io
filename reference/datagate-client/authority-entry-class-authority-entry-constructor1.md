@@ -22,21 +22,21 @@ Creates a new instance of <span> **AuthorityEntry** </span> with all fields init
  **BegConstructor AuthorityEntry Access(*Public)<br />**     </pre>
       <span/>
 
-Parameters
+## Parameters
 
 <span>None</span>
 
-Remarks
+## Remarks
 
 The Authority entry is constructed with default values. The value of [UserName](authority-entry-class-username-field.html) is set to "*Current", [AuthorityType](authority-entry-class-authority-type-field.html) is set to **Use** , and [IsGroupAccount](authority-entry-class-username-field.html) is set to **False** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** , Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

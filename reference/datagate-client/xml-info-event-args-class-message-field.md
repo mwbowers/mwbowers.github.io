@@ -25,21 +25,21 @@ The **Message** field contains the text of a status report of an XML operation.
 
          </pre>
 
-Field 
+## Field
 Value
 
 String. The message text of the event.
-Remarks
+## Remarks
 
 English-language text messages of **Message** provide feedback to users of [AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html). See also [XmlInfoEventHandler](xml-info-event-handler-delegate.html).
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [XmlInfoEventArgs Class](xml-info-event-args-class.html)

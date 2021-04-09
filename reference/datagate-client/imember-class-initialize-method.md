@@ -34,7 +34,7 @@ Initialize a specific number of records in the database file member represented 
  **BegFunc Initialize Access(*Public) Type(Void)<br />   DclSrParm Options Type([InitMemberOptions](init-member-options-enumeration.html))<br />   DclSrParm Records Type(System.Int64)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -56,7 +56,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -81,17 +81,17 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **Initialize** adds records of a certain type to the database member represented by **IMember** . The number of records initialized is specified by *Records* . *Options* specifies the type of records added to the member (see **InitMemberOptions** ).
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IMember Class](imember-class.html)

@@ -26,7 +26,7 @@ Create a **DataRow** object in preparation for adding it to the **AdgDataSet** .
    DclSrParm iFormat Type(*Integer) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -36,10 +36,10 @@ Parameters
 			to which the created **DataRow**  can be added.</dd>
 </dl>
 
-Return Value
+## Return Value
 
 <p>A new **System.Data.DataRow** object corresponding to *iFormat* , with column data initialized to default values.
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -52,7 +52,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Adding **DataRow** objects to **AdgDataSet** is generally a three step process. In the first step a **DataRow** object is established as the "prepared row". Secondly, fields represented in the **DataRow** columns are set to appropriate values. Finally, the **DataRow** is added to the **DataTable** . **PrepareRow** performs the first step by creating the **DataRow** object.
 
@@ -82,14 +82,14 @@ Column data of the **DataRow** object returned by this method is initialized wit
 
 
 Note that **PrepareRow** performs no validation of the *iFormat* parameter. The number of formats defined in the **AdgDataSet** is given by the [Formats](adg-dataset-class-formats-property.html) property. Valid values for *iFormat* are in the range 0 ≤ *iFormat* &lt; **AdgDataSet.Formats** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

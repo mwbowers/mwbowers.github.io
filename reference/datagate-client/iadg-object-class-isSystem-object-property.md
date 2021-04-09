@@ -26,20 +26,20 @@ keywords: system objects, identify
       </pre>
 
 Property Value <p> **Boolean** . ReadOnly. **True** if the database provider designates the object as a system object. 
-Exceptions
+## Exceptions
 
 None
-Remarks
+## Remarks
 
 A database provider may designate some objects as "system" objects. In the current version of DCS, this designation is only reflected by **IsSystemObject** when the **IAdgObject** reference is obtained through the **IDirectory.Enumerate** method. The value of **IsSystemObject** in **IAdgObject** instances constructed in any other way is always **False** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

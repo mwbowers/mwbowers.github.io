@@ -31,7 +31,7 @@ The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class
    DclSrParm PathName Type(*string)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -54,10 +54,10 @@ String. The path name of a new or existing data area object.
 </dd>
 </dl>
 
-Returns
+## Returns
 
 An instance of an **IDataArea** object.
-Exceptions
+## Exceptions
 
 
 
@@ -77,17 +77,17 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method creates a new [IDataArea](idataarea-class.html) based upon a new or existing data area (whose path is specified by *PathName* ). The database containing the library is specified as *cn* , an [ AdgConnection](adg-connection-class-state-property.html) object. Note that this method does not throw an exception if *PathName* and *cn* do not reference a valid, pre-existing database library. Subseqent usage of the returned **IDataArea** object's methods may raise such exceptions, however. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8</span> Pro
-See 
+## See 
 Also
 
 <dl />

@@ -11,7 +11,7 @@ keywords: FieldType class, methods
 ---
 
 [FieldType Overview](field-type-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -33,7 +33,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

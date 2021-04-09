@@ -31,20 +31,20 @@ keywords: how to, get user portion of directories in the current library list
    BegGet;  BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 **String array** . A string array containing a list of the user portion of the directories in the current library list represented by **ILibraryList** .
-Remarks
+## Remarks
 
 Use [CurrentSystemLibs](ilibrary-list-class-current-system-libs-property.html) property to return the sytem and user portion of the library list.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [ILibraryList Class](ilibrary-list-class.html)

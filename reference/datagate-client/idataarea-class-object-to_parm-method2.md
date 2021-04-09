@@ -30,7 +30,7 @@ Converts an object to a parameter list value provided with the parameter value, 
    DclSrParm Element Type(*Integer)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -49,14 +49,14 @@ Parameters
 											index identifying the element of the array to get the value of. </dd>
 </dl>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDataArea Class](idataarea-class.html)

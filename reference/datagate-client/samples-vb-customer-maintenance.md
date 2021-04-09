@@ -38,7 +38,7 @@ The **Customer Maintenance** Windows program uses ASNA DCS for Visual Studio 201
 - You are encouraged to add your own files, functions, properties, methods and 
 						events. 
 
-Remarks
+## Remarks
 
 <dl><dt>This example uses DCS to:
 			</dt><dt /></dl>
@@ -83,6 +83,6 @@ b) File Not Found
 
 c) Customer Not Found
 
-See Also
+## See Also
 
 [Samples](samples-main.html) 

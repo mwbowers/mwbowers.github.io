@@ -11,7 +11,7 @@ keywords: As400Program class, properties
 ---
 
 [As400Program Overview](as400program-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -24,7 +24,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

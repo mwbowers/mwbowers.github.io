@@ -30,7 +30,7 @@ Gets the [IPrintProperties](iprint-properties-class.html) of the currently open 
    DclSrParm format Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -40,10 +40,10 @@ Parameters
 					</dd>
 </dl>
 
-Return Value
+## Return Value
 
 The **IPrintProperties** object associated with the open print file.
-Exceptions
+## Exceptions
 
 
 
@@ -66,10 +66,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The **IPrintProperties** object returned by this method can be used to get and set print file control property values of an open file. These control properties include fonts, images, and other display characteristics.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -122,14 +122,14 @@ Examples
   printFile.Close()
   dataBase.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

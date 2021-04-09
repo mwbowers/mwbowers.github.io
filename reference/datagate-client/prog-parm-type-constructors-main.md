@@ -27,7 +27,7 @@ Constructs an instance of a **ProgParmType** object.
 
 
 
-See Also
+## See Also
 
 <dl />
       [ProgParmType Class](prog-parm-type-class.html)

@@ -28,17 +28,17 @@ Gets or sets the length in the data area.
    BegGet;  BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. The length of the data area. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDataArea Class](idataarea-class.html)

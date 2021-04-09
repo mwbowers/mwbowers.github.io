@@ -32,6 +32,6 @@ The **Simple_Datagrid** Windows program uses the .NET Framework and ASNA's Datag
 				the solution by selecting Build - Build Solution (Ctrl+Shift+B).
 5. Press **F5**  to run the program.
 
-See Also
+## See Also
 
 [Samples](samples-main.html)

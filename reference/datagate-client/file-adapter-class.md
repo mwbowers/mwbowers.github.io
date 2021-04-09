@@ -23,10 +23,10 @@ For a list of all members of this type, see [FileAdapter Members](file-adapter-m
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> ASNA.DataGate.Client.<span>FileAdapter</span>
 <pre class="prettyprint">&lt;Serializable&gt; **Public Class FileAdapter** </pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 <span> **FileAdapter** </span> models an open database file, and when used in conjunction with the [ AdgConnection](adg-connection-class.html) class, can be used to read, write, update, and delete database records. The **FileAdapter** class maintains a "file pointer" or a server-side indicator of the current position for record operations on the file.
 
@@ -45,14 +45,14 @@ Several indicator properties may be used to determine the side effects of a prec
 The [SetFormat](file-adapter-class-set-format-method.html) method is available for multiformat read access. Calling this method causes the read methods to fetch only those records with the given format. To read all record formats, specify a null or empty string. [ FormatRequested](file-adapter-class-format-requested-property.html) is the record format for reading multiformat file records.
 
 To improve the efficiency of sequential access to files residing on network database servers, specify the [ FileOpenAttr.BlockingFactor](file-open-attr-class-blocking-factor-property.html) property of the **OpenAttributes** property. Even more efficiency can be achieved with the proper use of the "range" methods, [SeekRange](file-adapter-class-seek-range-method.html), [ReadRange](file-adapter-class-read-range-method.html), and [ DeleteRange](file-adapter-class-delete-range-method.html).
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Members](file-adapter-members.html)

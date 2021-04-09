@@ -34,7 +34,7 @@ Returns an integer identifying a DataGate file format.
    DclSrParm strFormat Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -43,10 +43,10 @@ Parameters
         <dd>String identifying a file format in the **AdgDataSet** .</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 In **AdgDataSet,** DataTables corresponding to DataGate file formats are identified in two ways:
 
@@ -55,14 +55,14 @@ In **AdgDataSet,** DataTables corresponding to DataGate file formats are identif
 2. by integer index.
 
 <p> **GetFormatIndex** provides a way to obtain the integer index, given a format name. **GetFormatIndex** does not validate the *strFormat* parameter. If *strFormat* names a format that does not exist in the **AdgDataSet** , the method returns an invalid format index value equal to the current value of the [ Formats](adg-dataset-class-formats-property.html) property.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

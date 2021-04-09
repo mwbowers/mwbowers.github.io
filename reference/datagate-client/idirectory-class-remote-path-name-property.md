@@ -30,17 +30,17 @@ keywords: how to, return full path name of directory for database library
       </pre>
 
 Property Value <p> **String** . Returns the full path of a directory associated with the library, or an empty string. 
-Remarks
+## Remarks
 
 This property is provided for compatibility with legacy Acceler8DB database systems. Only Windows-based "datalink" database providers support this property. See also [ AttachRemoteDirectory](idirectory-class-attach-remote-directory-method.html).
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

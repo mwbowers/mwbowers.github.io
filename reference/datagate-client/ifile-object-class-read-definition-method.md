@@ -35,7 +35,7 @@ keywords: how to, validate XML file definition for database file
  **BegFunc ReadDefinition Access(*Public) Type(Void)<br />   DclSrParm reader Type(System.Xml.XmlReader)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -49,7 +49,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -63,7 +63,7 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 The definition of a file is metadata describing the formats, fields, keys, bases, and text, among other characteristics, of the database file object (See the XML schema). This method effects the **IFileObject** instance for the purpose of creating a file with these characteristics. Using **ReadDefinition** to change the definition data of an **IFileObject** representing an existing database file has no effect on the file. The definition set with **ReadDefinition** only effects database file creation, via a subsequent call to [IAdgObject.Create](iadg-object-class-create-method.html).
 
@@ -74,14 +74,14 @@ Unless *reader* is an instance of **XmlValidatingReader** , DCS validates the XM
 When DCS validates the stream by wrapping *reader* with **XmlValidatingReader** , XML attributes defined by the schema to have default values are assigned those default values, if they are not provided in the XML stream. Also, data in the stream not adhering to the schema will result in **XmlSchemaException** being raised, terminating the method.
 
 Note that [AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html) calls an internal, non-validating version of **ReadDefinition** for the definition of files described in the XML it reads.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See 
+## See 
 Also
 
 <dl />

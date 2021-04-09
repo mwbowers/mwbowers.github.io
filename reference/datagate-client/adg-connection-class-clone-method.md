@@ -29,10 +29,10 @@ Returns a copy of the **AdgConnection** object.
  **BegFunc Clone Access(*Public) Type(*Object) Modifier(*Overridable)** 
       </pre>
 
-Returns
+## Returns
 
 An instance of [AdgConnection](adg-connection-class.html).
-Exceptions
+## Exceptions
 
 [DgException](dgexception-class.html) may be thrown by this method, but only if the copied object is in the Open [ state](adg-connection-class-state-property.html) (thus causing the [Open ](adg-connection-class-open-method.html) method to be called on the copy).
 
@@ -57,12 +57,12 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method returns a copy of the **AdgConnection** object. If successful, the copy’s [ SourceProfile](adg-connection-class-source-profile-property.html) property will reference the same **SourceProfile** object contained in the **SourceProfile** property of the copied object. If the copied object is in the Open **state** , the [ Open](adg-connection-class-open-method.html) method is invoked on the copy, providing a new database connection.
 
 Note that a database connection cannot be shared between two instances of **AdgConnection** .
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -86,14 +86,14 @@ Examples
   Cx = *New AdgConnection("ASNA Local DB")
   Cx.Open()</pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       <span>

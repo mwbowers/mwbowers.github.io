@@ -29,20 +29,20 @@ keywords: how to, validate XML document against schema
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **System.Xml.Schema.XmlSchemaCollection** . The DataGate XML object description schema. 
-Remarks
+## Remarks
 
 **IAdgObject** instances can be persisted to and from XML documents (see also [AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html) and [IAdgObject.WriteXml](iadg-object-class-write-xml-methods.html)). The **Schema** property references the static collection of XML schema to which these XML documents must adhere. User programs, such as utilities or development tools, may use **Schema** to pre-validate such documents. Note that **AdgFactory.ReadXml** uses **Schema** to validate its XML stream input unless [ XmlOptions.DontValidate](xml-options-enumeration.html) is specified.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -40,7 +40,7 @@ keywords: XML [DCS 16.0 set base objects description from XML document
    DclSrParm reader Type(System.Xml.XmlReader)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -53,7 +53,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -63,19 +63,19 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 **ReadBases** is called by the [ AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html) method to set the base objects description of a new **IAdgObject** instance. This method may be called by user programs to change the base objects description of the **IAdgObject** . Any previously set base objects information is discarded and replaced with the new information. The description includes the path names of the base objects. Note that changing the description of the base objects of an **IAdgObject** instance has no effect on the existing database object it represents, if any. To create a new database object with the new base objects information, use the [Create](iadg-object-class-create-method.html) method.
 
 The state of *reader* should be such that the next XML content node to be read describes the base objects. Intervening non-content nodes, if any, are ignored. *reader* may reference a stream containing multiple current-level elements, but only the first element will be read and interpreted to set the base object description. The XML fragment read by **ReadBases** is assumed to be valid. An invalid XML fragment or invalid base object description changes the **IAdgObject** instance such that it contains no base object information.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

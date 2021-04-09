@@ -11,7 +11,7 @@ keywords: properties [DCS 16.0 FileOpenAttr class
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -29,7 +29,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

@@ -32,10 +32,10 @@ The **Remove** method removes an existing database object from the database.
  **BegSr Remove Access(*Public) Type(IAdgObject)** 
       </pre>
 
-Parameters
+## Parameters
 
 None.
-Exceptions
+## Exceptions
 
 
 
@@ -65,7 +65,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 If **IAdgObject** is an instance of [IDirectory](idirectory-class.html), this method removes the library object it represents. The library cannot be removed if it is the root library or "/QTEMP", or if the library is not empty.
 
@@ -74,14 +74,14 @@ If **IAdgObject** is an instance of [ IFileObject](ifile-object-class.html), thi
 If **IAdgObject** is an instance of [ IMember](imember-class.html), this method removes the member object it represents. The member cannot be removed if object dependencies exist for the member.
 
 To remove all records of a member, use the [ Clear](imember-class-clear-method.html) method.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

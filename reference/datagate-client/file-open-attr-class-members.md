@@ -11,7 +11,7 @@ keywords: members [DCS 16.0 FileOpenAttr class
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -22,7 +22,7 @@ Public Constructors
 
 
 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -34,7 +34,7 @@ Public Fields
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -52,7 +52,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

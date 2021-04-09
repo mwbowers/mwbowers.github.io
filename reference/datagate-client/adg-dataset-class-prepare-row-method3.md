@@ -32,7 +32,7 @@ Establish an existing **DataRow** object as the currently prepared row, for subs
    DclSrParm row Type(DataRow)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -46,7 +46,7 @@ Parameters
         <dd>A **DataRow**  object to be set as the currently prepared row.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -59,7 +59,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Adding **DataRow** objects to **AdgDataSet** is generally a three step process. In the first step a **DataRow** object is established as the "prepared row". Secondly, fields represented in the **DataRow** columns are set to appropriate values. Finally, the **DataRow** is added to the **DataTable** .
 
@@ -68,14 +68,14 @@ This version of **PrepareRow** stages a pre-existing **DataRow** object, rather 
 The **DataRow** object returned by this method is not a member of the **DataTable** corresponding to the format specified, until it has been explicitly inserted via [ AddPreparedRowAndSetActive](adg-dataset-class-add-prepared-row-and-set-active-method.html), [ FileAdapter.AddRecord](file-adapter-class-add-record-method.html), or a method of **DataTable** .
 
 Note that **PrepareRow** performs no validation of the *strFormat* parameter.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

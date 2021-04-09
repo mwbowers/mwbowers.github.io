@@ -29,10 +29,10 @@ Indicates the status of the file: open or closed.
  **BegProp Status Type(FileAdapter.AdapterStatus) Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 The **FileAdapter.AdapterStatus** enumeration is used as a parameter by the [ FileAdapter.Status Property](file-adapter-class-status-property.html) of the [FileAdapter Class](file-adapter-class.html).
-Members
+## Members
 
 
 
@@ -43,7 +43,7 @@ Members
 
 
 
-Examples
+## Examples
 
 Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure it's opened and open it if it isn't.
 <pre>        <span class="lang">
@@ -73,14 +73,14 @@ Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to
   End If
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -11,7 +11,7 @@ keywords: ILibraryList class, all members
 ---
 
 [ILibraryList Overview](ilibrary-list-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -25,7 +25,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -39,7 +39,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [ILibraryList Class](ilibrary-list-class.html)

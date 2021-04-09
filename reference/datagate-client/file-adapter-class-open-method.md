@@ -33,7 +33,7 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -44,7 +44,7 @@ Parameters
 					</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -64,7 +64,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **Open** , [OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html), and [OpenSimpleQuery](file-adapter-class-open-simple-query-method.html) are the three methods available for opening database files with [ FileAdapter](file-adapter-class.html)<a>. </a>
 
@@ -77,7 +77,7 @@ Remarks
 Record blocking can significantly improve sequential access efficiency, especially when utilized against a network database. If the value of [ FileOpenAttr.BlockingFactor](file-open-attr-class-blocking-factor-property.html) is set in the object referenced by **OpenAttributes** , then read-access record blocking will be used to access the opened file.
 
 If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-class-formatids-property.html) property of the object referenced by **OpenAttributes** , then the given format identifier(s) will be used to "level check" the format(s) of the file. If the file is not at the same level when the open operation occurs, the database will return an error.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -134,14 +134,14 @@ Examples
   dbFile.Connection.Close()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

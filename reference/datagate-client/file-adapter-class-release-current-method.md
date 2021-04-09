@@ -28,7 +28,7 @@ Release the currently locked record.
       <br />
       <br />
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -53,10 +53,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **FileAdapter** methods which read, update, and add records may also optionally lock the current record associated with those operations, in compliance with the rules of the database provider. **ReleaseCurrent** allows DCS programs to release the lock held, if any, on the current record.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -104,14 +104,14 @@ Examples
      dbFile.ReleaseCurrent()
  End If</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

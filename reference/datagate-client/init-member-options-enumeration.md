@@ -32,10 +32,10 @@ keywords: ASNA.DataGate.Client.InitMemberOptions
  **BegEnum InitMemberOptions Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 **InitMemberOptions** is a parameter of the **IMember.Initialize** method. It specifies the type of records added to an existing database member by the method. 
-Members
+## Members
 
 
 
@@ -46,14 +46,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Client Namespace](datagate-client-namespace.html)

@@ -35,7 +35,7 @@ Overloaded method that begins an automatic database transaction creating an inst
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

@@ -10,7 +10,7 @@ keywords: ASNA.DataGate.DataLink namespace, classes
 
 ---
 
-Classes
+## Classes
 
 
 
@@ -22,7 +22,7 @@ Classes
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

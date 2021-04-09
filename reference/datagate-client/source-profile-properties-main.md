@@ -11,7 +11,7 @@ keywords: SourceProfile class, properties
 ---
 
 [SourceProfile Overview](source-profile-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -33,7 +33,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

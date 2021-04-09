@@ -48,10 +48,10 @@ Specifies the class, or category of the DCS run-time error.
  **BegEnum dgErrorClass Access(*Public)** 
       </pre>
 
-				  Remarks
+## Remarks
 
 The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorClass](dgexception-class-error-class-field.html) field of the [dgException](dgexception-class.html) class.
-Members
+## Members
 
 
 
@@ -83,7 +83,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="prettyprint">        <span class="lang">
  **[C#]** 
@@ -164,14 +164,14 @@ Examples
   End Try
 </pre>
 
-							  Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
 								  [ErrorClass Field](dgexception-class-error-class-field.html)

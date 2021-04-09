@@ -11,7 +11,7 @@ keywords: IAdgObject class, all members
 ---
 
 [IAdgObject Overview](iadg-object-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -39,7 +39,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -62,7 +62,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -26,7 +26,7 @@ This member supports DCS infrastructure and is not intended to be used directly 
    DclSrParm keyTable Type(System.Data.DataTable)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -37,17 +37,17 @@ Parameters
 					</dd>
 </dl>
 
-Remarks
+## Remarks
 
 **NOTE:** It is <u>not</u> recommended to use this constructor to construct valid **AdgKeyTable** objects. New **AdgKeyTable** instances are available to the application via the [ AdgDataSet.NewKeyTable](adg-dataset-class-new-key-table-methods.html) method. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet.NewKeyTable Method](adg-dataset-class-new-key-table-methods.html)

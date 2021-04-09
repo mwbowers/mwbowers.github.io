@@ -28,7 +28,7 @@ This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgF
       <pre class="prettyprint"> **<span class="lang">[Visual RPG]</span>
  BegSr XmlInfoEventHandler Access(*Public) Type(Delegate)<br />   DclSrParm object Type(Object)<br />   DclSrParm   args Type([XmlInfoEventArgs](xml-info-event-args-class.html))<br />** </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -51,20 +51,20 @@ The **System.Object** instance invoking the delegate. This parameter is reserved
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 DCS will ignore any exceptions raised by the delegate. That is, a raised exception will not be handled, and will thus terminate the **ReadXml** or **WriteXml** method. The caller of these methods should be prepared to handle any exceptions raised by the delegate. 
-Remarks
+## Remarks
 
 The **XmlInforEventHandler** delegate is defined strictly for use as an optional parameter with the **IAdgObject.WriteXml** and **AdgFactory.ReadXml** methods. If desired, the user can define an implementation for this delegate to monitor the operation of these methods. The methods will periodically call the delegate to report a milestone of a certain detail level (see **XmlInfoEventArgs** ). 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See 
+## See 
 Also
 
 <dl />

@@ -10,7 +10,7 @@ keywords: DatabaseName class, all members
 
 ---
 
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -23,7 +23,7 @@ Public Constructors
 
 <br />
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -41,7 +41,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

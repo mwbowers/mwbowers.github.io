@@ -26,14 +26,14 @@ This constant, when assigned to the [ BlockingFactor](file-open-attr-class-block
  **DclFld Name(OmitBlocking) Type(*Integer) Access(*Public)** 
       </pre>
 
-Field
+## Field
  Value
 
 Integer. A constant value to set the **BlockingFactor** property.
-Remarks
+## Remarks
 
 Two special values are recognized for the **BlockingFactor** property. [OptimalBlockingFactor](file-open-attr-class-optimal-blocking-factor-field.html) tells DataGate to calculate the best-fit size of the record buffer, using factors such as record length and network packet size. In most cases, **OptimalBlockingFactor** will yield the best network blocking performance. **OmitBlocking** is the default value of **BlockingFactor** signifying that all record blocking features will be omitted.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -55,14 +55,14 @@ Examples
   dbFile.OpenNewAdgDataSet(ds)
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

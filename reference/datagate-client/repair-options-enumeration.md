@@ -37,12 +37,12 @@ keywords: how to, invoke automatic diagnostic and repair function for a file, op
  **BegEnum RepairOptions Access(*Public) Attributes(Flags)** 
       </pre>
 
-Remarks
+## Remarks
 
 The values of this enumeration can be combined to specify more than one option. Please see **IDirectory.RepairObjects** and **IFileObject.RepairFile** for more information regarding file repair functions. 
 
 The following table details each value and its corresponding repair function. 
-Members
+## Members
 
 <br />
 
@@ -57,14 +57,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
         [IDirectory.RepairObjects Method](idirectory-class-repair-objects-method.html)

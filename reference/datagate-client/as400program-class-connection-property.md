@@ -27,10 +27,10 @@ The **AdgConnection** object of the database server hosting the program to be ca
    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 [AdgConnection](adg-connection-class.html). Set-Only. Represents the connection to the database server hosting the program.
-Exceptions
+## Exceptions
 
 [ASNA.DataGate.Common.dgException](dgexception-class.html) is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -44,12 +44,12 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 To run the program on a particular database server, set the **Connection** property with an [AdgConnection](adg-connection-class.html) object containing an open connection to the machine. If **As400Program** was instantiated with the [default constructor](as400program-class-as400program-method1.html) (no parameters), this property must be set before adding program parameters or calling the [AdgConnection.Open](dcsAs400ProgramClassExecuteMethod.htm ">Execute</a> method.
 
 **Connection** is a set-only property. If **Connection** is set with a null value or is an **AdgConnection** instance that is unconnected or incompatible with **As400Program** , an exception is raised. Use <a href="dcsAdgConnectionClassOpenMethod.html) to open a connection to an IBM i database provider prior to setting **Connection.** 
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -73,14 +73,14 @@ Examples
   prog.Connection = *New AdgConnection("*Public/DG NET IBM i")
   prog.ProgramPath = "*Libl/Call400"</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

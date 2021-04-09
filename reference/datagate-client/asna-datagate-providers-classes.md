@@ -10,7 +10,7 @@ keywords: classes [DCS 16.0 ASNA.DataGate.Providers
 
 ---
 
-Classes
+## Classes
 
 
 
@@ -23,7 +23,7 @@ Classes
 
 
 
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

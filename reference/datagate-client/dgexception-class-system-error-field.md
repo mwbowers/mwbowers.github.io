@@ -23,10 +23,10 @@ A system-level classification of the <span>dgException</span>.
  **DclFld Name(SystemError) Type(*Integer) Access(*Public)** 
       </pre>
 
-Field Value
+## Field Value
 
 Integer. A system-level exception condition identifier.
-Remarks
+## Remarks
 
 **SystemError** is an integer code which may be returned by DataGate providers for certain conditions. Its use is provider dependent.
 
@@ -38,7 +38,7 @@ If the DataGate provider is an IBM i database, <span> **SystemError** </span> wi
 - dgEC_AS400DG8
 
 In these cases, <span> **SystemError** </span> will contain an integer code associated with a system error. For example, if the <span>dgException</span> was raised due to the IBM i exception identified as "CPF501C", then <span> **ErrorClass** </span> will be set to dgEC_AS400CPF and <span> **SystemError** </span> will be set to 20508 (or 501C in hexadecimal). Also in these cases, [ Error](dgexception-class-error-field.html) will be set to dgEsAS400ERROR.
-Examples
+## Examples
 
 <pre class="prettyprint">        <span class="lang">
  **[C#]** 
@@ -98,14 +98,14 @@ Examples
   End Try
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

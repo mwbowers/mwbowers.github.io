@@ -26,7 +26,7 @@ Add a prepared row to the table for a particular format.
    DclSrParm strFormat Type(*string) Len(45)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -38,7 +38,7 @@ The name of the format corresponding to the table to which the prepared row will
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -57,21 +57,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **AddRow** appends a prepared row to the table specified by *strFormat* . A prepared row can be created, or an existing DataRow can be set as a prepared row, using one of the [PrepareRow ](adg-dataset-class-prepare-row-method-main.html)methods of [AdgDataSet](adg-dataset-class.html).
 
 The usual pattern of use involves first staging the prepared DataRow object via **PrepareRow** , setting the field values in the DataRow as necessary, then calling **AddRow** or [ AddPreparedRowAndSetActive](adg-dataset-class-add-prepared-row-and-set-active-method.html) to append the row to the table.
 
 Note that prior to calling this method, you must call **PrepareRow** to stage a prepared row for insertion to the table. Also, upon return from this method, the prepared row of the table remains the row added to the table. Calling **AddRow** or **AddPreparedRowAndSetActive** again before calling **PrepareRow** will cause an exception.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

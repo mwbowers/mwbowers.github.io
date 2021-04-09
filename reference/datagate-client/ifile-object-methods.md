@@ -10,7 +10,7 @@ keywords: IFileObject class, methods
 
 ---
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -27,7 +27,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

@@ -11,7 +11,7 @@ keywords: ProgParm class, all members
 ---
 
 [ProgParm Overview](prog-parm-class.html) 
-Public Constructors
+## Public Constructors
 
 
 |      |      |
@@ -20,7 +20,7 @@ Public Constructors
 
 
 
-See Also
+## See Also
 
 <dl />
       [ProgParm Class](prog-parm-class.html)

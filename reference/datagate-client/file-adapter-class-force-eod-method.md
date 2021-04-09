@@ -34,7 +34,7 @@ Synchronizes the state of the <span> **FileAdapter** </span> object with the ope
       </pre>
       <br />
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -60,19 +60,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 For OLE print files, **ForceEOD** causes a document to start printing by first flushing the current page, then the document starts printing immediately without closing.
 
 For database files, **ForceEOD** flushes any provider-specific buffers associated with the open file, releases locks, and seeks to the last record in the file.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

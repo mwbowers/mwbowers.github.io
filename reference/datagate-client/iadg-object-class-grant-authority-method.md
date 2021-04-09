@@ -35,7 +35,7 @@ keywords: authorities, set database access for a specific user
    DclSrParm authorityType Type([AuthorityTypes](authority-types-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -52,7 +52,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -82,21 +82,21 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 A user's authority to the database object represented by **IAdgObject** can be manipulated with [RevokeAuthority](iadg-object-class-revoke-authority-method.html) and **GrantAuthority** . The methods *authorityType* parameters describe the authorization being granted or revoked. **AuthorityTypes** includes a broad range of authorizations that enable or disable various kinds of database object access.
 
 The granted authorization applies only to the specified user, *userName* .
 
 Some database providers may not support all authorization types.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

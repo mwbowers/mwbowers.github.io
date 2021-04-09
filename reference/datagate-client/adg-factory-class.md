@@ -23,10 +23,10 @@ For a list of all members of this type, see [AdgFactory Members](adg-factory-mem
         </span>
       </pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 The **AdgFactory** methods create new [ IAdgObject](iadg-object-class.html) instances based on a given [AdgConnection](adg-connection-class.html) database source. **IAdgObject** is the base interface for the [ IFileObject](ifile-object-class.html), [IDirectory](idirectory-class.html), and [ IMember](imember-class.html) interfaces (representing database files, libraries, and members, respectively) for database object management functions.
 
@@ -47,14 +47,14 @@ The **AdgFactory** methods create new [ IAdgObject](iadg-object-class.html) inst
 The **AdgFactory** methods create new [IDataArea](idataarea-class.html) instances based on a given [AdgConnection](adg-connection-class.html) database source. **IDataArea** is the interface representing data area processing functions. **AdgFactory** uses the [NewDataArea](adg-factory-class-new-dataarea-methods.html) methods to create a new data area.
 
 The **AdgFactory** class provides only static methods and is not intended to be instantiated as an object.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgFactory Members](adg-factory-members.html)

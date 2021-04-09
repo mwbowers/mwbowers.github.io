@@ -28,7 +28,7 @@ Cancel changes to the database that have been performed within the current trans
  **BegSub Rollback Access(*Public) Modifier(*NotOverridable)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 
 
@@ -52,19 +52,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **Rollback** is used to cancel any changes that have occurred, via [Connection](iadg-transaction-class-connection-property.html), within the current transaction. Database providers may implement other related platform-dependent side effects, such as repositioning file pointers and releasing record locks. Also, database providers may have restrictions on the number of times [ Commit](iadg-transaction-class-commit-methods.html) and/or **Rollback** may be invoked within a single transaction context. Please consult the database provider's documentation for details.
 
 When invoked on the automatic transaction implementation of **IAdgTransaction** (see [AdgConnection.BeginAutoTransaction Method](adg-connection-class-begin-auto-transaction-method-main.html)), **Rollback** also ends the current transaction context and automatically begins a new transaction context using the parameters of the preceding transaction. The new transaction is under the control of **IAdgTransaction** .
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
-See Also
+## See Also
 
 <dl />
       [IAdgTransaction Class](iadg-transaction-class.html)

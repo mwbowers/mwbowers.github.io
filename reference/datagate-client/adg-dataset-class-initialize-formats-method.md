@@ -28,17 +28,17 @@ Initialize an instance of **AdgDataSet** .
  **BegSr InitializeFormats Modifier(*NotOverridable) Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 This method is implemented by classes that inherit **AdgDataSet** . The method is called from the [ AdgDataSet Constructors](adg-dataset-class-constructors-main.html) to initialize the object.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

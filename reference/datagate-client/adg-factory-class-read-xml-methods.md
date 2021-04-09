@@ -36,7 +36,7 @@ Creates an instance of [IAdgObject](iadg-object-class.html) from an XML document
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgFactory Class](adg-factory-class.html)

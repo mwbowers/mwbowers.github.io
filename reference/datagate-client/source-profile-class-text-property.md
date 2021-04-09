@@ -31,14 +31,14 @@ Any text or comments to be associated with the connection profile.
  **BegProp Text Type(*String) Access(*Public)<br />   BegGet, SetGet** 
       </pre>
 
-Property
+## Property
  Value
 
 String. Returns or sets a string containing text or comments to be associated with the connection profile.
-Remarks
+## Remarks
 
 The **Text** property may be used to hold any comments about the database connection parameters. **Text** is not used to established database connections but it is saved to the Windows registry by the [ Register](source-profile-class-register-method.html) method. It can be used, for example, as a longhand name for the <span> **SourceProfile** </span>.
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -72,14 +72,14 @@ Examples
       lvDbNames.Items.Add(newItem)
   Next</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Providers](datagate-providers-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

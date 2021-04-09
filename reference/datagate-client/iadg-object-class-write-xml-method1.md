@@ -23,7 +23,7 @@ keywords: XmlOptions enumeration, used by
  **<span class="lang">[Visual RPG]</span>
  BegSr WriteXml Access(*Public) Type(IAdgObject)<br />   DclSrParm writer Type(System.Xml.XmlWriter)<br />   DclSrParm options Type([XmlOptions](xml-options-enumeration.html))**   </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -40,10 +40,10 @@ Parameters
 </dd>
 </dl>
 
-Returns
+## Returns
 
 XML representing the **IAdgObject** .
-Exceptions
+## Exceptions
 
 
 
@@ -67,7 +67,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **IAdgObject** instances can be persisted to and from XML documents (see [AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html)). **WriteXml** helps to create such an XML document from the **IAdgObject** instance. The XML description is based upon the characteristics of a pre-existing database object (see [AdgFactory.NewFile](adg-factory-class-new-file-method.html), [AdgFactory.NewDirectory](adg-factory-class-new-directory-method.html), and [AdgFactory.NewMember](adg-factory-class-new-member-method.html)). **WriteXml** thus provides a limited database archive function. **WriteXml** produces a document fragment consisting of exactly one element node at the current level of *writer* . This fragment is therefore suitable for either embedding in another XML document or creating a standalone XML document. 
 
@@ -80,14 +80,14 @@ Another function of *options* is to specify how object base paths are described 
 On entry, the **WriteState** property of *writer* must not be **Closed** . On successful return from **WriteXml** , the value of **WriteState** will be the same as before the call.
 
 For some database object hierarchies, **WriteXml** may produce a large XML stream. In this case, consider using the overloaded version of [ WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) which defines the [XmlInfoEventHandler](xml-info-event-handler-delegate.html) parameter to monitor the method's progress.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

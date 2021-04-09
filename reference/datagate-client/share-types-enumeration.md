@@ -31,12 +31,12 @@ keywords: sharing files
  **BegEnum ShareTypes Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 The **Lock** and **Unlock** methods of I **AdgObject** engage the database object locking facilities allowing programs to enforce data coherency in a multiprocessing system. The target of these methods is the pre-existing database object corresponding to an instance of **IAdgObject** . The details of object locking are dependent upon the database provider, but **Lock** and **Unlock** allow selective control over object locking using one of the values of ShareTypes. The table below lists each lock type with its description. 
 
 Note that object locking details are database provider dependent. In general, objects may be implicitly locked by database object management and access functions (such as deleting a file, or reading records of a member), or explicitly with **Lock** and **Unlock** . 
-Members
+## Members
 
 
 
@@ -50,14 +50,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [IAdgObject.Lock Method](iadg-object-class-lock-method.html) <br />

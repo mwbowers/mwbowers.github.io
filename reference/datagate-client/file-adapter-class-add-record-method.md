@@ -32,7 +32,7 @@ Adds a record to a file.
    DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -43,7 +43,7 @@ Parameters
 					</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -60,7 +60,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 <br />
 
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -186,14 +186,14 @@ Examples
      //Exit procedure or end application here.
   EndTry</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -23,10 +23,10 @@ For a list of all members of this type, see [ProgParm Members](prog-parm-members
  **Public Class ProgParm** 
       </pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 DCS provides **ProgParm** to represent iSeries program parameters in your .NET program. Program parameters have three distinct components: 
 
@@ -39,14 +39,14 @@ DCS provides **ProgParm** to represent iSeries program parameters in your .NET p
 To construct a parameter list procedurally using the parameter classes, construct instances of **ProgParmType** and/or **StructureType** ; then append instances of **ProgParm** (referencing the corresponding **ProgParmType** or **StructureType** ) to the **As400Program** object. 
 
 The constructors of **ProgParm** allow you to specify the metadata and input/output orientation of the parameter. The [ ObjectToParm](as400program-class-object-to_parm-method-main.html) and [ParmToObject ](as400program-class-parm-to_object-method-main.html)methods of **As400Program** allow you to specify and retrieve, respectively, the values of parameters represented by **ProgParm** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.DataLink](datagate-data-link-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [ProgParm Members](prog-parm-members.html)

@@ -11,7 +11,7 @@ keywords: methods [DCS 16.0 IDirectory class
 ---
 
 [IDirectory Overview](idirectory-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -25,7 +25,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

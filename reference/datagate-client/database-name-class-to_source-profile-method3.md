@@ -30,7 +30,7 @@ Named SourceProfile optionally constructed from a registered database name. If c
    DclSrParm bDetectDuplicates (*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -58,7 +58,7 @@ Parameters
 </dd>
 </dl>
 
-Returns
+## Returns
 If <code>bFromSecStorage</code> is true, a SourceProfile instance read from the
         DataGate configuration file is read, if it exists there.  If not, a SourceProfile
         instance read from from the Windows Registry is returned, if it is found. 
@@ -67,14 +67,14 @@ If <code>bFromSecStorage</code> is true, a SourceProfile instance read from the
         parameter.
 
 [ASNA.DataGate.Providers.SourceProfile](source-profile-class.html) <br /> 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

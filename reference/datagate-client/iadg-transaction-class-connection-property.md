@@ -27,22 +27,22 @@ The connection to the database representing the transaction context.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 [AdgConnection](adg-connection-class.html). The connection to the database associated with the transaction.
-Remarks
+## Remarks
 
 The value of this property is a reference to the **AdgConnection** object whose [AdgConnection.BeginAutoTransaction](adg-connection-class-begin-auto-transaction-method-main.html) or [AdgConnection.BeginTransaction](adg-connection-class-begin-transaction-method-main.html) method was used to create the **IAdgTransaction** .
 
 The context of a database transaction is limited to this connection. The [ Commit](iadg-transaction-class-commit-methods.html) and [Rollback ](iadg-transaction-class-rollback-method.html) methods effect only those database modifications performed by this connection, within the transaction's boundaries. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See 
+## See 
 Also
 
 <dl />

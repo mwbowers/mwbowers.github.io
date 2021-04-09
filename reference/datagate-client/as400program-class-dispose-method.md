@@ -24,22 +24,22 @@ Release unmanaged resources associated with **As400Program** .
  **BegSr Dispose Access(*Public) Modifier(*Overridable)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 The **As400Program** class implements the <span>IDisposable</span> interface. Currently **As400Program** does not directly use unmanaged resources therefore this implementation of <span> **Dispose** </span> has no effect.
 
 This method is provided for future enhancements. To maintain compatibility with future DCS releases, it is recommended that you call the **Dispose** method when your program’s use of **As400Program** is complete (prior to finalization).
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

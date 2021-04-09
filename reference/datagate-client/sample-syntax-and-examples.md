@@ -19,7 +19,7 @@ Public Sub New( _
       <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
 AdgAutoTransaction.AdgAutoTransaction(connection, transactionLevel, name, Options)</pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -41,7 +41,7 @@ Parameters
 											</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 [ <span>ASNA.DataGate.Common.dgException</span> ](dgexception-class.html) is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the **dgException.Error** property.
 
@@ -56,12 +56,12 @@ Exceptions
         <span />
       </p>
 
-Remarks
+## Remarks
 
 An AdgAutoTransaction object is constructed by specifying an initial value for the [ SourceProfile](adg-connection-class-source-profile-property.html) property, which is subsequently used by the [ Open](adg-connection-class-open-method.html) method to connect to a particular database server. The properties of <span>SourceProfile</span> specify the database connection parameters. 
 
 The <span>sp</span> parameter is used to construct a new SourceProfile instance, using the <span>SourceProfile(string)</span> constructor. This <span>SourceProfile</span> object is then assigned to the <span>AdgAutoTransaction</span> object’s <span>SourceProfile</span> property. 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -85,14 +85,14 @@ Examples
   Cx = *New AdgConnection("ASNA Local DB")
   Cx.Open() <span /></pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       <span>

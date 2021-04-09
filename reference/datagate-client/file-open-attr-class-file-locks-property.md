@@ -29,17 +29,17 @@ Specify record locking mechanisms in opened files.
  **BegProp FileLocks Type(FileLocks) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 [ASNA.DataGate.Common.FileLocks](file-locks-enumeration.html). The record locking mechanism to use.
-Remarks
+## Remarks
 
 This property allows some control over the record locking behavior of [ FileAdapter](file-adapter-class.html) access methods. This control is dependent upon the database provider being accessed. For example, the IBM i database does not support "manual" locking.
 
 When set to the Manual value, record locking in the opened file will only occur if explicitly specified in the **FileAdapter** access method. Also, records locked in access methods can only be unlocked explicitly with the [ReleaseCurrent](file-adapter-class-release-current-method.html) or [ReleaseRRN](file-adapter-class-release-rrn-method.html) methods.
 
 When set to the Auto value, record locking occurs automatically in **FileAdapter** access methods unless overridden by the [LockRequest](lock-request-enumeration.html) parameter. Also, locked records are automatically unlocked when another record is accessed.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -146,14 +146,14 @@ Examples
   db.Close()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

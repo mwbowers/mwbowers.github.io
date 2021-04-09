@@ -29,15 +29,15 @@ Specify concurrent access on the open file.
  **BegProp ShareTypes Type(ShareTypes) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 [ASNA.DataGate.Common.ShareTypes](share-types-enumeration.html). Specifies concurrent access locking on the open file.
-Remarks
+## Remarks
 
 Applications may need to open a file for access exclusively to prevent access by other processes as data is being updated. Other applications may need to place no restrictions on concurrent access so that updates are immediately available in the open file. These requirements and others for sharing open file resources can be controlled with the <span> **ShareTypes** </span> property.
 
 Set the value of **ShareTypes** to request the type of sharing required by your application. The access restrictions requested will be enforced by the database when the file is opened and until the file is closed. If the file cannot be opened with the level of sharing specified by <span> **ShareTypes** </span>, then the [ FileAdapter.Open](file-adapter-class-open-method.html) method will throw an exception.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -101,14 +101,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

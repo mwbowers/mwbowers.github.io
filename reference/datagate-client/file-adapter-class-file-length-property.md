@@ -25,10 +25,10 @@ The number of deleted and non-deleted records in the open database file.
  **BegProp FileLength Type(*Integer) Len(8) Access(*Public)** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns the number of deleted and non-deleted records in the file. 
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -73,14 +73,14 @@ Examples
   dbFile.Connection.Close()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

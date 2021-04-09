@@ -11,7 +11,7 @@ keywords: AdgDataSet class, properties
 ---
 
 [AdgDataSet Overview](adg-dataset-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -26,7 +26,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

@@ -27,10 +27,10 @@ For a list of all members of this type, see [ IPrintProperties Members](iprint-p
  <span>public interface IPrintProperties :</span>
       </pre>
 
-Thread Safety
+## Thread Safety
 
 In DCS implementations of **IPrintProperties** , instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 Print files in DCS may have fields with an associated print control object. These print controls may have ambient properties that characterize document attributes such as "font" or "color". Access to these properties permits adjustments to report documents as they are being generated. **IPrintProperties** is the interface to run-time print control properties. Instances of **IPrintProperties** are allocated per print format via the [ FileAdapter.GetPrintProperties](file-adapter-class-get-print-properties-method.html) method.
 
@@ -41,14 +41,14 @@ Print files in DCS may have fields with an associated print control object. Thes
 [GetTypedObject](iprint-properties-class-get-typed-object-method.html) returns a reference to the print control object associated with the field. The type of the object may be determined with **GetBoundType** .
 
 [GetValue](iprint-properties-class-get-value-method.html) returns the value of a print control property, while [SetValue](iprint-properties-class-set-value-method.html) assigns the value of a print control property.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IPrintProperties Members](iprint-properties-members.html) <br />

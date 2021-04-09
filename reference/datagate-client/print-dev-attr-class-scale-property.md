@@ -32,20 +32,20 @@ The **Scale** specifies the percentage factor by which the printed output is to 
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns or sets the percentage in which the printed output is to be scaled. 
-Remarks
+## Remarks
 
 The specified printer must support the output to be scaled or resized.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

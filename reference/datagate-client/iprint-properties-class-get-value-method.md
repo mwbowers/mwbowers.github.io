@@ -34,7 +34,7 @@ Access a print control property value.
    DclSrParm propName Type(*string)** 
         </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -52,10 +52,10 @@ Parameters
 							</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **Object** . The value of the specified property.
-Exceptions
+## Exceptions
 
 
 
@@ -66,7 +66,7 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 Print controls associated with format fields have run-time properties that can be accessed with **GetValue** . **IPrintProperties** refers to the format containing the field with associated print control, *fieldName* refers to the field, and *propName* is the name of a property of the control. The value returned is a generic object reference.
 
@@ -79,14 +79,14 @@ As a convenience, **GetValue** performs a simple conversion for certain OLE clas
 - **IPicture**
 
 Then DCS uses .NET framework classes to convert the value to the **System.Drawing.Image** type. The **Image** class is somewhat more useful for .NET programs and objects of the type are readily convertible to one of the OLE interop types if necessary. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See Also
+## See Also
 
 <dl />
       [IPrintProperties Class](iprint-properties-class.html)

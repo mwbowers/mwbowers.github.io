@@ -32,20 +32,20 @@ The **Width** specifies the width of paper in the printer.
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns or sets the width of the paper in the printer. 
-Remarks
+## Remarks
 
 The default paper width will be based upon the [ orientation](print-dev-attr-class-orientation-property.html) property of the paper in the printer. These values are in tenths of a millimeter.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

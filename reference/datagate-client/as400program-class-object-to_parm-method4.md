@@ -29,7 +29,7 @@ Converts an object or value type to a parameter list value.
    DclSrParm Value Type(*Object)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -46,19 +46,19 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 **ArgumentException** . Thrown if *parameter* is a complex parameter (constructed with an instance of [StructureType](structure-type-class.html)).
 
 **InvalidOperationException** . Indicates that the [ Connection](as400program-class-connection-property.html) property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ObjectToParm** may be used to set the value of simple parameters (non-structured) with a reference to the **ProgParm** object. The object should be a member of the [ As400Program's](as400program-class.html) parameter list. The **Connection** property must be set (or the **As400Program** constructed with an [AdgConnection](adg-connection-class.html) object) prior to calling **ObjectToParm** .
 
 For the method to succeed, the *Value* object must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be set with an arbitrary object (such as a string), only if the object implements **System.IConvertible** and the **ToDecimal** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
 
 This method of **ObjectToParm** should not be used if *Parameter* is a "multiple-occurrence" parameter type. Instead, use a method that allows the index of the multiple-occurrence parameter to be specified.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -108,14 +108,14 @@ Examples
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0)</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

@@ -29,7 +29,7 @@ Returns an array of [SourceProfile](source-profile-class.html) objects currently
    DclSrParm publicDbs Type(*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -41,17 +41,17 @@ Parameters
 					</dd>
 </dl>
 
-Returns
+## Returns
 
 [SourceProfile](source-profile-class.html) array of objects.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

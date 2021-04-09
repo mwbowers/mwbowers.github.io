@@ -21,10 +21,10 @@ For a list of all members of this type, see [ dgException Members](dgexception-c
 &lt;Serializable&gt;
 Public Class <span>dgException</span></pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 Exceptions specific to the DataGate provider being accessed by DCS are communicated through <span> **dgException** </span>. Most often, these exceptions are in the form of a condition identifier (provided by the [ Error](dgexception-class-error-field.html) field) and a text message (provided by the [ Message](dgexception-class-message-property.html) property).
 
@@ -33,14 +33,14 @@ The [ErrorClass](dgexception-class-error-class-field.html) field classifies the 
 DCS throws other exceptions besides <span> **dgException** </span>. Please see the documentation for the particular DCS object or method call for a description of the exceptions thrown.
 
 **dgException** inherits from <span>System.Exception</span>, which provides many useful functions for diagnosing and reporting bugs in your code and DCS.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [dgException Members](dgexception-class-members.html)

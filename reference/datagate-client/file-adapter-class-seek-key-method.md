@@ -39,7 +39,7 @@ Moves the record pointer associated with the currently open file without reading
    DclSrParm keyTable Type(AdgKeyTable)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -55,7 +55,7 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -79,14 +79,14 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **SeekKey** positions the file pointer to a particular record using the specified *keyTable* and *mode* as a point of reference. The record pointed to by **SeekKey** will contain a key value equal to, greater than or equal to, or greater than the specified *keyTable* parameter, dependent on the value of the *mode* parameter. Optionally, the file pointer may be placed on the first or last record of the file, by specifying a *mode* value of **SeekMode.First** or **SeekMode.Last** , respectively. If the record sought does not exist in the file, the method throws dgException with an Error property value of dgEaNOTFND.
 
 When **SeekMode.SetLL** or **SeekMode.SetGT** values for *mode* are specified and the record sought is not found, the file pointer is placed at the end of the file, and then dgException is thrown.
 
 Calling this method cancels "range mode". A prior successful call to **ReadRange** or **SeekRange** places the **FileAdapter** in range mode, in which only records with keys in a specified range are accessed. This method cancels the restriction.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -180,14 +180,14 @@ Examples
   db.Close()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

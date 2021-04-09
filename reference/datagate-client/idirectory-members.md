@@ -12,7 +12,7 @@ keywords: IDirectory class, all members
 
 [IDirectory Overview](idirectory-class.html) 
 
-Public Properties
+## Public Properties
 <br />
 
 
@@ -23,7 +23,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -37,7 +37,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

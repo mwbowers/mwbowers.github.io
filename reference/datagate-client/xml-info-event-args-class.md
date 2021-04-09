@@ -25,22 +25,22 @@ For a list of all members of this type, see [ XmlInfoEventArgs Members](xml-info
 public class XmlInfoEventArgs | inherits System.EventArgs</span>
       </pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 **XmlInfoEventArgs** is defined for use as a parameter of the XmlInfoEventHandler delegate. The parameter reports a single event status in a DCS XML method.
 
 The [Message](xml-info-event-args-class-message-field.html) field contains a string message providing some detail of the event. The [ Type](xml-info-event-args-class-type-field.html) field classifies the event (see [ XmlInfoEventType](xml-info-event-type-enumeration.html)).
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [XmlInfoEventArgs Members](xml-info-event-args-members.html)

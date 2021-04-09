@@ -25,13 +25,13 @@ For multi-format file access, reset the file to access a record of any format in
  **BegSr ResetFormat Access(*Public)** </pre>
       <br />
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 By default, when accessing multi-format files, records of all formats are accessible. The **SetFormat** method of **FileAdapter** can be used to restrict access to only records of a certain format. The **ResetFormat** method is used to return the access mode to the default, non-format specific behavior.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -160,14 +160,14 @@ dbFile.Close()
 db.Close()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

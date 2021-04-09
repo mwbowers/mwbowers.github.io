@@ -27,7 +27,7 @@ Converts the named database into a SourceProfile object.
    DclSrParm bFromRegistry Type (*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -43,17 +43,17 @@ Parameters
 								registered database name.</dd>
 </dl>
 
-Returns
+## Returns
 
 [ASNA.DataGate.Providers.SourceProfile](source-profile-class.html) <br /> 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

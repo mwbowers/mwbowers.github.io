@@ -28,7 +28,7 @@ Creates a new fixed-width double-byte character [FieldType](field-type-class.htm
    DclSrParm fmt Type(DbcsFormat)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -44,20 +44,20 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 System.ArgumentException. Thrown if *fmt* is **DbcsFormat.None** .
-Remarks
+## Remarks
 
 **NewDBCS** constructs a **FieldType** that represents a DataGate character field composed of double-byte characters. DBCS fields contain double-byte character data in a fixed-width format. The storage size of a DBCS field is dependent upon the format but each double-byte character stored occupies 2 bytes of storage. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

@@ -32,7 +32,7 @@ Returns an object of a specific type from the program parameter list.
    DclSrParm Element Type(*Integer) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -53,15 +53,15 @@ Parameters
 										of.</dd>
 </dl>
 
-Returns
+## Returns
 
 System.Object whose actual type is *ReturnType* .
-Exceptions
+## Exceptions
 
 **ArgumentException** . Thrown if *Parameter* is a complex parameter (constructed with an instance of [StructureType](structure-type-class.html)).
 
 **InvalidOperationException** . Indicates that the **Connection** property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ParmToObject** may be used to get the value of simple parameters (non-structured) with a reference to the **ProgParm** object. The object should be a member of the **As400Program’s** parameter list. The [Connection](as400program-class-connection-property.html) property must be set (or the **As400Program** constructed with an [ AdgConnection](adg-connection-class.html) object) prior to calling **ParmToObject** .
 
@@ -156,14 +156,14 @@ The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occu
         prog.ParmToObject(System.Type.GetType("System.Decimal"), +
         *Nothing *As *Integer4[])) </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

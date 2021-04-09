@@ -41,7 +41,7 @@ A valid **IMember** reference may be obtained from DCS in one of the following w
 
 ------------------------------------
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](dcsDataGateClientNamespace.htm)
 
@@ -49,7 +49,7 @@ Requirements
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
-See Also
+## See Also
 
 [IMember Members](dcsIMemberMembers.htm)  
 [IAdgObject Class](dcsIAdgObjectClass.htm)  

@@ -11,7 +11,7 @@ keywords: AdgFactory class, methods
 ---
 
 [AdgFactory Overview](adg-factory-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -26,7 +26,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgFactory Class](adg-factory-class.html)

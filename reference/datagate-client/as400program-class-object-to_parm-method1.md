@@ -32,7 +32,7 @@ Converts an object or value type to a parameter list value.
    DclSrParm Element Type(*Integer) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -57,12 +57,12 @@ Parameters
 									</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 **ArgumentException** . Indicates that name, and if necessary indices, do not reference a valid parameter in the parameter list. 
 
 **InvalidOperationException** . Indicates that the **Connection** property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ObjectToParm** may be used to set the value of both simple and structured parameters using the optional parameter naming scheme allowed by [ProgParmType](prog-parm-type-class.html) and [StructureType](structure-type-class.html). The constructor for these classes allows the program parameters they represent to be given a string identifier. This identifier may have significance to the application, but it also may be used by this method to identify and retrieve the parameter after it has been added to the [As400Program](as400program-class.html) parameter list.
 
@@ -77,7 +77,7 @@ If no multiple occurrence types are included in the path given by name, indices 
 The outermost **ProgParm** object identified by name and indices should be a member of the **As400Program’s** parameter list. The [Connection](as400program-class-connection-property.html) property must be set (or the **As400Program** constructed with an [ AdgConnection](adg-connection-class.html) object) prior to calling **ObjectToParm** .
 
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be set with an arbitrary object (such as a string), only if the object implements **System.IConvertible** , and the **ToDecimal** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -127,14 +127,14 @@ Examples
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0)</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

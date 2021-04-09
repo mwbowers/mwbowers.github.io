@@ -47,7 +47,7 @@ Read the database file record specified.
    DclSrParm RRN Type(*Integer) Len(8)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -73,7 +73,7 @@ Parameters
 											</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -98,7 +98,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method reads a file record specified by relative-record number ( *RRN* ), or an arrival-oriented location in the file. If no such *RRN* exists in the file the method throws dgException, with the Error property set to dgEaNOTFND.
 
@@ -109,14 +109,14 @@ A successful read operation optionally locks the record read as directed by the 
 The *mode* parameter is currently ignored. To maintain your code’s compatibility with future DCS enhancements, please use the value **ReadRandomMode.Equal** for this parameter.
 
 Calling this method cancels "range mode". A prior successful call to [ReadRange](file-adapter-class-read-range-method.html) or [SeekRange](file-adapter-class-seek-range-method.html) places the **FileAdapter** in range mode, in which only records with keys in a specified range are accessed. This method cancels the restriction.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

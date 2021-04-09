@@ -34,7 +34,7 @@ Change the status of a deleted record to undeleted and update its contents.
    DclSrParm RRN Type(*Integer) Len(8)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -49,7 +49,7 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -75,17 +75,17 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 <span> **ReuseRRN** </span> updates the contents of the specified record of an open file and marks the record as undeleted.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

@@ -30,13 +30,13 @@ The TCP port number used by the database server for TCP/IP-based transport (defa
  **BegProp Port Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns or sets the TCP port number that is to be used for TCP/IP-based transport. 
-Remarks
+## Remarks
 
 The default TCP port number is 5042. 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -75,14 +75,14 @@ Examples
   ' Register the database name.
   newDbProfile.Register()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Providers](datagate-providers-namespace.html)
 
 <span> **Assembly:** ASNA DataGate Client </span> 
 
 <span /> <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

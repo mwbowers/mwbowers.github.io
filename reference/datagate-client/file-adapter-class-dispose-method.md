@@ -29,7 +29,7 @@ Releases unmanaged resources and closes the currently open file (synonymous with
  **BegSr Dispose Modifier(*Overrides) Access(*Public)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 
 
@@ -50,19 +50,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Use the **Close** or **Dispose** methods to close a file opened by a previous call to one of the 'open' methods ([Open](file-adapter-class-open-method.html) and [OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html)). After a successful **Close** or **Dispose** call, the file may be subsequently reopened using the same **FileAdapter** object’s open methods.
 
 **Dispose** and **Close** also release unmanaged resources associated with the **FileAdapter** , which allow the object to be safely finalized.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

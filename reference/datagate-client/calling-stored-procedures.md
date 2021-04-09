@@ -34,7 +34,7 @@ Unlike IBM i file access where files are "externally described" and programs are
 IBM i called programs may define parameters as complex data structures and arrays of simple or complex types. DCS supports these parameters. Following the sections outlining parameter list construction is a section detailing the use of arrays and data structures.
 
 Note: There are some VB examples located in the C:\Program Files\ASNA\Examples\DCS for VS 2017\VB folder. Each example is contained within a separate folder and there is a file called z_Readme.mht file in each folder containing information about the example and how to access it. Double-clicking on the solution file (.sln) will automatically open the example in Visual Studio 2019.
-Contents
+## Contents
 
 - Database Connections and Program Paths
 - Procedural Construction of Parameter Lists

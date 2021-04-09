@@ -30,7 +30,7 @@ keywords: how to, identify type of database object
       </pre>
 
 Property Value <p> [AdgObjectTypes](adg-object-types-enumeration.html). ReadOnly. The database object type.
-Exceptions
+## Exceptions
 
 
 
@@ -53,7 +53,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **IAdgObject** is the base class of the classes representing database objects ( **IDirectory** , **IFileObject** , **IMember** ). The value of **AdgObjectType** determines the implementation type of the **IAdgObject** , according to the following table:
 <br />
@@ -75,14 +75,14 @@ So for example, any **IAdgObject** instance whose **AdgObjectType** property is 
 **IAdgObject** and DCS do not support the **DataArea** value of **AdgObjectTypes** at this time.
 
 **IAdgObject** queries the database provider for certain object attributes, such as **AdgObjectType** , only once in the lifetime of the **IAdgObject** instance. If attributes change after the query, the change will not be reflected in the property values of **IAdgObject** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

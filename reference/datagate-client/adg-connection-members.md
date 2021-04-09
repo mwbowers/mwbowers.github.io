@@ -11,7 +11,7 @@ keywords: AdgConnection class, all members
 ---
 
 [AdgConnection Overview](adg-connection-class.html) 
-Public Constructors
+## Public Constructors
 
 <br />
 
@@ -22,7 +22,7 @@ Public Constructors
 
 
 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -35,7 +35,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -55,6 +55,6 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 [AdgConnection Class](adg-connection-class.html) <br /> [SourceProfile Class](source-profile-class.html) <br /> [IAdgTransaction Class](iadg-transaction-class.html) 

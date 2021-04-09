@@ -14,7 +14,7 @@ keywords: DCS, accessing the assembly
 ---
 
 The first step to accessing and using the ASNA DataGate Component Suite for Visual Studio 2019 after it has been installed is to reference the assembly so you can "see" the objects it contains. 
-To Access the DCS Assembly
+## To Access the DCS Assembly
 
 1. Set a reference to the DCS Assembly by using Visual Studio’s <span >Add References</span> dialog box. To open the Add References dialog box, select the "<span >Add References</span>…" on the <span >Project</span> menu of the idE.
 2. On the <span >.NET</span> tab, select the component titled "<span >ASNA DataGate Client</span>", press <span >Select</span>, and finally press <span >OK.</span>
@@ -22,7 +22,7 @@ To Access the DCS Assembly
 4. In the left-hand pane of the object browser is a list of assemblies referenced by your project. Near the top you will find "<span >ASNA.DataGate.Client</span>" to the right of a tree-view button. Click the tree-view button to display the DCS namespaces. Then click the tree-view buttons next to the namespaces to view the objects contained in those namespaces.
 
 To view the details of a specific object in the left pane, click on it in the right pane. <br />
-See Also
+## See Also
 
 <dl />
       [Overview of DCS ](datagate-component-suite-overview.html)

@@ -27,15 +27,15 @@ String associated with the dgException.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Read-only. A canned message associated with the value of the [ Error](dgexception-class-error-field.html) field. 
-Remarks
+## Remarks
 
 Most values of the <span> **Message** </span> property have a unique standard message describing the particular condition raising the exception. Only when the value of [ Error](dgexception-class-error-field.html) is dgEsAS400ERROR will <span> **Message** </span> return a string that is not a direct mapping of the **Error** identifier. In that case **Message** returns the value of the [ Text](disconnectingfroma-database.html) field.
 
 The <span> **Message** </span> property overrides the property defined by <span> **System.Exception** </span>. This allows **dgException** to participate in standard conversions, such as provided by the <span> **ToString** </span> method of <span>System.Exception</span>.
-Examples
+## Examples
 
 <pre class="prettyprint">        <span class="lang">
  **[C#]** 
@@ -74,14 +74,14 @@ Examples
       'Exit procedure here.
   End Try</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

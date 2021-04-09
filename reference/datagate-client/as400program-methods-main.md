@@ -10,7 +10,7 @@ keywords: As400Program class, methods
 
 ---
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -27,7 +27,7 @@ Public Methods
 
 
 
-Protected Methods
+## Protected Methods
 
 <br />
 
@@ -38,7 +38,7 @@ Protected Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

@@ -27,10 +27,10 @@ keywords: event handlers, feedback type constants
  **BegEnum XmlInfoEventType Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 The [XmlInfoEventHandler](xml-info-event-handler-delegate.html) delegate is passed a value of this type, as a field of the [ XmlInfoEventArgs](xml-info-event-args-class.html) object. A program can use this value to discriminate the information provided by **IAdgObject.WriteXml** and **AdgFactory.ReadXml** . 
-Members
+## Members
 
 
 
@@ -48,7 +48,7 @@ Members
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro Pro
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [AdgFactory.ReadXml Method](adg-factory-class-read-xml-method2.html)

@@ -42,7 +42,7 @@ Read a single record from the file in sequential order.
    DclSrParm lr Type(LockRequest)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -65,7 +65,7 @@ Parameters
 									</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -89,7 +89,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 Reads a single record based on the file's access path, current position, and a read *mode* indicator. The *mode* parameter determines whether a record adjacent to the current record is read (Current, Next, Previous), or the first or last record in the file is read (First, Last). 
 
@@ -98,7 +98,7 @@ Reads a single record based on the file's access path, current position, and a r
 If the operation is successful, the record read is placed in the specified **AdgDataSet** object. The record is appended to a DataTable in the **AdgDataSet** corresponding to the record format. The record is appended as a DataRow object in the DataTable, and the [AdgDataSet.ActiveRow](adg-dataset-class-active-row-property.html) property will reference this DataRow on return. If the operation is unsuccessful, no record is appended to the table, and an exception is thrown.
 
 A successful read operation optionally locks the record read as directed by the *lr* parameter and the locking properties of the file. 
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -150,14 +150,14 @@ Examples
    Dim OneThousandFiveHundrethCustomerName As String _
        = myDS.ActiveRow.Item("CMName").ToString()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

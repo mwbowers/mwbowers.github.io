@@ -197,7 +197,7 @@ The following example illustrates an appropriate sequence for **adding a databas
   dbFile.Close()
   cx.Close()</pre>
 
-See Also
+## See Also
 
 [AdgDataSet Class](adg-dataset-class.html)
       <br />

@@ -32,7 +32,7 @@ The **NewLibraryList** method creates a new instance of [ ILibraryList](ilibrary
    DclSrParm cn Type([AdgConnection](adg-connection-class.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -46,12 +46,12 @@ An instance of [AdgConnection](adg-connection-class.html) representing a databas
 </dd>
 </dl>
 
-Returns
+## Returns
 
 An instance of an **ILibraryList** object.
 <br />
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -77,21 +77,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method creates a new [ILibraryList](ilibrary-list-class.html) based on the database containing the library list, which is specified as *cn* , an [AdgConnection](adg-connection-class-state-property.html) object. Note that this method does not throw an exception if *cn* do not reference a valid, pre-existing database library. Subseqent usage of the returned **ILibraryList** object's methods may raise such exceptions, however. 
 
 To create a new library list, first call **NewLibraryList** with the desired **AdgConnection** object. Then, with the **ILibraryList** reference returned, call the [Create](iadg-object-class-create-method.html) method. A database library list may also be created via [ AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html).
 
 If the [State](adg-connection-class-state-property.html) property of the *cn* parameter is not **ConnectionState.Open** , **NewLibraryList** may temporarily open the database provider connection via [AdgConnection.Open](adg-connection-class-open-method.html). In this case only, upon successful return from **NewLibraryList** , the **State** property of *cn* will be **ConnectionState.Closed** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See 
+## See 
 Also
 
 <dl />

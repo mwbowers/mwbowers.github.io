@@ -25,13 +25,13 @@ The condition identifier for this dgException.
  **DclFld Name(Error) Type(dgErrorNumber)** 
       </pre>
 
-				  Field Value
+## Field Value
 
 [ASNA.DataGate.Common.dgErrorNumber](dgerror-number-enumeration.html). The condition identifier for the exception.
-Remarks
+## Remarks
 
 DCS sets the **Error** field to identify the condition giving rise to the dgException. The **Error** field uniquely identifies the condition, as detected by DCS and the DataGate provider. However, further details of the exception may be gleaned from other fields, such as [SystemError](dgexception-class-system-error-field.html) and [Text](disconnectingfroma-database.html), dependent upon provider support.
-Examples
+## Examples
 
 <pre class="prettyprint">        <span class="lang">
  **[C#]** 
@@ -90,14 +90,14 @@ Examples
   db.Close()
 </pre>
 
-							  Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
 								  [dgException Class](dgexception-class.html)

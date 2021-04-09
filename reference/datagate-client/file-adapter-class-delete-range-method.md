@@ -45,7 +45,7 @@ Delete a set of database file records which contain key values in a given range.
    DclSrParm rangeLast Type([RangeLast](range-last-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -73,7 +73,7 @@ Parameters
 			should process records with key values equal to the limit value given by *lastKey* .</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -96,7 +96,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **DeleteRange** positions the file to the range of records specified and deletes those records. This operation is equivalent to a client-side program implemented as follows:
 
@@ -110,7 +110,7 @@ Remarks
 The value added by **DeleteRange** to the above program is that all processing is performed by the database provider on the server side of the connection, to increase performance.
 
 Use the **DeleteRange** method in conjunction with the [ ReadRange](file-adapter-class-read-range-method.html) method to optimize processing and to enhance client/server performance with all supported database engines with dynamic Network Blocking.
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -183,14 +183,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

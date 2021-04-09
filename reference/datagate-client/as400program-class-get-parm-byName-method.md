@@ -32,7 +32,7 @@ Returns the [ProgParm](prog-parm-class.html) object in the parameter list named 
    DclSrParm name Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -43,22 +43,22 @@ Parameters
 					</dd>
 </dl>
 
-Return Value
+## Return Value
 
 A **ProgParm** object in the **As400Program** parameter list with *name* or null if no object is found.
-Remarks
+## Remarks
 
 <span> **ProgParm** </span> objects can optionally be identified with a string in the constructor of [ StructureType](structure-type-class.html) and [ ProgParmType](prog-parm-type-class-prog-parm-type-constructor.html). When added to **As400Program** with [ AppendParm](as400program-class-append-parm-method.html) or [AppendParms](as400program-class-append-parms-method.html), the *name* uniquely identifies the parameter in the list. <span> **GetParmByName** </span> allows retrieval of a parameter in the **As400Program** parameter list by its *name* . 
 
 If no parameter with the given *name* exists in the parameter list, <span> **GetParmByName** </span> returns a null value. <span> **GetParmByName** </span> does not remove the parameter from the parameter list.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

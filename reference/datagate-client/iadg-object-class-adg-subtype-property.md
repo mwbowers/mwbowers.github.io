@@ -34,7 +34,7 @@ keywords: how to, identify sub-type of database object
 Property Value <p> [AdgSubTypes](adg-subtypes-enumeration.html). ReadOnly. A sub-classification of the database object, such as Join, Physical, etc. 
 <br />
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -59,7 +59,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **AdgSubType** is a secondary type which may be assigned by the database provider to further classify the primary type (see [ AdgObjectType](iadg-object-class-adg-object-type-property.html)) of the database object represented by **IAdgObject** . The following table lists the possible values of **AdgSubType** for the various values of **AdgObjectType** .
 <br />
@@ -85,14 +85,14 @@ Remarks
 When the database provider does not support, or cannot readily determine the secondary type for a particular object, the **Unknown** value is assigned to **AdgSubType** . If **AdgSubType** is **Unknown** for a file object, the secondary type information can be obtained via the file definition regardless of the database provider (see [ IFileObject.WriteDefinition](ifile-object-class-write-definition-method.html) or [ IFileObject.WriteXml](ifile-object-class-write-definition-method.html)).
 
 **IAdgObject** queries the database provider for certain object attributes such as **AdgSubType** only once in the lifetime of the **IAdgObject** instance. If attributes change after the query, the change will not be reflected in the property values of **IAdgObject** .
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

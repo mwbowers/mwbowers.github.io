@@ -30,14 +30,14 @@ The platform-specific attribute of the database (e.g. "*SQLOLEB" for SqlServer).
  **BegProp PlatformAttribute Type(*String) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 
-Property
+## Property
  Value
 
 String. Returns or sets a platform-specific attribute of the database engine.
-Remarks
+## Remarks
 
 The **PlatformAttribute** property is used to distinguish between different database engines that can reside on the same machine. For instance, both DataGate for Windows and SQL Server can reside on the same machine. When accessing SQL Server databases, **PlatformAttribute** must be set to "*SQLOLEB". The setting of assumed "*DATALINK" is used for DataGate for Windows and DataGate for iSeries. Any value other than "*SQLOLEB" is presumed to be "*DATALINK". 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -72,14 +72,14 @@ Examples
   ' Register the database name. 
   newDbProfile.Register()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Providers](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro </span> 
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

@@ -16,7 +16,7 @@ keywords: Windows applications, samples [DCS 16.0]
 
 ---
 
-In This Section
+## In This Section
 
 **C#:** 
 <dl>

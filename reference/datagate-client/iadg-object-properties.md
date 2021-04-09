@@ -10,7 +10,7 @@ keywords: properties [DCS 16.0 IAdgObject class
 ---
 
 [IAdgObject Overview](iadg-object-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -38,7 +38,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

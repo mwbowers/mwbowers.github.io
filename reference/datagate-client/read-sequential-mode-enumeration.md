@@ -30,12 +30,12 @@ Defines modes of operation for the [ FileAdapter.ReadSequential](file-adapter-cl
  **BegEnum ReadSequentialMode Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequential](file-adapter-class-read-sequential-method.html) method of the [FileAdapter](file-adapter-class.html) class. It defines operational modes for this method, as listed in the table below.
 
 **ReadSequentialMode** defines values in which you can select one of the choices.
-Members
+## Members
 
 
 
@@ -49,7 +49,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -158,14 +158,14 @@ Examples
   dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Read)
  </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

@@ -16,12 +16,12 @@ Database access with DCS follows the traditional client/server pattern:
 3. Perform desired operations against that connection.
 4. Disconnect from the database.
 
-Contents
+## Contents
 
 [Connecting to a Database Using a Database Name Property](connectingtoa-database.html) 
 
 [Disconnecting From a Database](disconnectingfroma-database.html) 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

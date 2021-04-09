@@ -44,7 +44,7 @@ Open a database file for access using the specified query and the specified [Adg
    DclSrParm KeyFlags Type(KeyUsages) Rank(1)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -77,7 +77,7 @@ Parameters
 													</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 
@@ -95,7 +95,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **OpenSimpleQuery** opens the file and creates an **AdgDataSet** instance. This **AdgDataSet** is suitable for passing to **FileAdapter** access methods where file record data is processed. The **AdgDataSet** returned by **OpenSimpleQuery** is guaranteed to reflect record formats of the query file.
 
@@ -104,7 +104,7 @@ Selection expressions are evaluated during file open time. Therefore, a runtime 
 The selection criteria is specified as a single expression describing the values used to determine which records are selected. Any logical expression formed using relational operators can be specified (such as equal and/or not equal). The syntax of this expression is identical to that used for defining select/omit expressions when creating a logical file. 
 
 Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </span> array parameters should be equal.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -158,14 +158,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

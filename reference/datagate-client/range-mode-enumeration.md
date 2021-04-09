@@ -26,7 +26,7 @@ For [FileAdapter](file-adapter-class.html) range methods, defines how to access 
  **BegEnum RangeMode Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 <span> **RangeMode** </span> is used as a parameter for the **FileAdapter** methods which establish a range: [ReadRange](file-adapter-class-read-range-method.html) and [SeekRange](file-adapter-class-seek-range-method.html). In addition to establishing the range, these methods position the file to one end of the range based on the value of <span> **RangeMode** </span>.
 
@@ -35,7 +35,7 @@ For <span> **ReadRange** </span>, **RangeMode** determines whether to read the f
 For <span> **SeekRange** </span>, **RangeMode** determines whether to locate the file cursor on the first or last record in the range.
 
 <span> **RangeMode** </span> defines values in which you can select one of the choices.
-Members
+## Members
 
 <br />
 
@@ -48,7 +48,7 @@ Members
 
 
 
-Examples
+## Examples
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
@@ -190,14 +190,14 @@ Examples
   dbFile.Close()
   db.Close()</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

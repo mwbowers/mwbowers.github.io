@@ -31,10 +31,10 @@ The **PrintQuality** enumerated constant defines values on the print quality.
  **BegEnum PrintQuality Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 **PrintQuality** defines values in which you can select one of the choices. 
-Members
+## Members
 
 <br />
 
@@ -52,14 +52,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

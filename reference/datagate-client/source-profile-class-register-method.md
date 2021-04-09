@@ -35,7 +35,7 @@ Saves the contents of the **SourceProfile** object to the system registry as a d
  **BegSub Register Access(*Public)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 
 
@@ -64,7 +64,7 @@ Example <p>The following example retrieves a database name called "Asna 400 db" 
   AsnaDbName.Password = "NewPasswd"
   AsnaDbName. Register()			</pre>
 
-Examples 
+## Examples 
 
 <pre class="prettyprint">
         <span class="lang">
@@ -104,14 +104,14 @@ Examples
   newDbProfile.Register()
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace: [ ASNA.DataGate.Providers](datagate-providers-namespace.html)** 
 
 **Assembly:** ASNA DataGate Client 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

@@ -25,10 +25,10 @@ keywords: None enumeration member
  **BegEnum DuplicateOptions Access(*Public) Attributes(Flags)** 
       </pre>
 
-Remarks
+## Remarks
 
 The **Duplicate** method is used to copy an existing database object. One or more of the values of **DuplicateOptions** may be specified in the *options* parameter of **Duplicate** to engage provider-dependent features of the method as listed in the table below. 
-Members
+## Members
 
 
 
@@ -40,14 +40,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

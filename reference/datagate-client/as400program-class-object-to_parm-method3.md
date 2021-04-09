@@ -29,7 +29,7 @@ Converts an object or value type to a parameter list value.
    DclSrParm ParameterName Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -42,12 +42,12 @@ Parameters
         <dd>The program parameter object in the parameter list to set the value of.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 *ArgumentException.* Indicates that *ParameterName* does not reference a valid parameter in the parameter list, or *ParameterName* refers to a multiple-occurrence parameter.
 
 I *nvalidOperationException.* Indicates that the **Connection** property of **As400Program** has not been set.
-Remarks
+## Remarks
 
 This form of **ObjectToParm** may be used to set the value of both simple and structured parameters, using the optional parameter naming scheme allowed by [ ASNA.DataGate.DataLink.ProgParmType](prog-parm-type-class.html) and [ ASNA.DataGate.DataLink.StructureType](structure-type-class.html). This form should not be used if the target of the assignment is a multiple-occurrence type.
 
@@ -60,7 +60,7 @@ For **complex** parameters (constructed with **StructureType** ), *ParameterName
 The outermost **ProgParm** object identified by *ParameterName* should be a member of the **As400Program’s** parameter list. The [ Connection](as400program-class-connection-property.html) property must be set (or the **As400Program** constructed with an [AdgConnection](adg-connection-class.html) object) prior to calling **ObjectToParm** .
 
 For the method to succeed, the *Value* parameter must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be set with an arbitrary object (such as a string), only if the object implements **System.IConvertible** and the **ToDecimal** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
-Examples
+## Examples
 
 <pre>
       <span class="lang">
@@ -145,14 +145,14 @@ Examples
      "TimeOfDay", +
      *Nothing *As *Integer4[]))</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

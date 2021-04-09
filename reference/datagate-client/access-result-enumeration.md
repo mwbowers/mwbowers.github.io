@@ -27,10 +27,10 @@ Defines modes on whether a record was found.
  **BegEnum AccessResult Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 The <span> **AccessResult** </span> enumeration is used as a parameter by the [ BeginTransaction](adg-connection-class-begin-transaction-method-main.html) and [ BeginAutoTransaction](adg-connection-class-begin-auto-transaction-method-main.html) methods of the [AdgConnection](adg-connection-class.html) class.
-Members
+## Members
 
 
 
@@ -41,14 +41,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
 
 <strong >Platforms:</strong> Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       <span>

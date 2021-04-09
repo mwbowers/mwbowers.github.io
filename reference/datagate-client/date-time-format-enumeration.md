@@ -36,12 +36,12 @@ The <span> **DateTimeFormat** </span> enumerated constant defines values on the 
  **BegEnum DataTimeFormat Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 Used by the [DateTime](field-type-class-date-time-property.html) property of [FieldType](field-type-class.html) objects.
 
 <span> **DateTimeFormat** </span> defines values in which you can select one of the choices. 
-Members
+## Members
 
 
 
@@ -59,14 +59,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [ASNA.DataGate.Common Namespace](datagate-common-namespace.html)

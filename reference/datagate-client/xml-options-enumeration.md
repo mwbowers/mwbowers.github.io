@@ -43,10 +43,10 @@ The **XmlOptions** enumeration defines bit-flag values directing the [ AdgFactor
  **BegEnum XmlOptions Access(*Public) Attributes(Flags)** 
       </pre>
 
-Remarks
+## Remarks
 
 **XmlOptions** defines verbs directing the operation of the **AdgFactory.ReadXml** and **IAdgObject.WriteXml** methods. The table below lists each value, and its effect on the methods. The enumeration is defined with the **System.FlagsAttribute** , so its values can be combined to create a composite value. See **ReadXml** and **WriteXml** for more information. 
-Members
+## Members
 
 
 
@@ -76,7 +76,7 @@ Members
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [AdgFactory Class](adg-factory-class.html)

@@ -11,7 +11,7 @@ keywords: IPrintProperties class, methods
 ---
 
 [IPrintProperties Overview](iprint-properties-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -25,7 +25,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IPrintProperties Class](iprint-properties-class.html)

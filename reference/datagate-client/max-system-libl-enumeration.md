@@ -8,17 +8,17 @@ TocOrder: 0
 ---
 
 A constant containing the maximum number of library list entries used by all processes, which open this database as the system portion of their library list. A maximum of 15 entries can be given.
-Remarks
+## Remarks
 
 <span>The maximum number of library list entries used by all processes is 15. This field is read-only.</span> 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       <span>

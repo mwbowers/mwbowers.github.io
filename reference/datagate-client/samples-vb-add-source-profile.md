@@ -31,6 +31,6 @@ The **AddSourceProfile** VB Windows program explains how to create a new source 
 				(Ctrl+Shift+B).
 5. Press **F5**  to run the program.
 
-See Also
+## See Also
 
 [DCS for Visual Studio 2019 Samples](samples-main.html)

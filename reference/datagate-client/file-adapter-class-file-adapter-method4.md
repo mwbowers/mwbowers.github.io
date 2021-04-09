@@ -29,7 +29,7 @@ Constructs an instance of the [ FileAdapter](file-adapter-class.html) object wit
    DclSrParm MemberName Type(*String)** 
      </code> </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -50,12 +50,12 @@ Parameters
 									</dd>
 </dl>
 
-Remarks
+## Remarks
 
 This constructor creates an instance of **FileAdapter** with the given database connection, file path, and member name (which are used to initialize the **Connection** , **FileName** , and **MemberName** properties respectively). If the value of the given member name is null or an empty string, and the **MemberName** property is not otherwise set prior to a call to the [ Open](file-adapter-class-open-method.html) method, DCS assigns this property the value "*FIRST".
 
 The [AccessMode](file-adapter-class-access-mode-property.html) property is initialized with the value Read.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -74,14 +74,14 @@ Examples
   DclFld dbFile Type(FileAdapter)
   dbFile = *New FileAdapter(dataBase, "*Libl/CMASTNEWL1", "CMMASTERL1");</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

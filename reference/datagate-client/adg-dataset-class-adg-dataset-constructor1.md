@@ -27,7 +27,7 @@ Initialize the <span> **AdgDataSet** </span> base class.
       </pre>
       <span/>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -37,22 +37,22 @@ Parameters
 							 property.</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 The constructor of **AdgDataSet** should not be called directly, since the class is abstract. Rather it must be called by a class that inherits and implements the abstract methods of the class.
 
 Most applications should create **AdgDataSet** instances via the [ FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method. The **AdgDataSet** object returned by this method is properly initialized for accessing a particular file. Alternately, DCS-aware development tools, such as Visual RPG, can create **AdgDataSet** classes. These classes can be instantiated directly and used with access functions, such as [FileAdapter.Open.](file-adapter-class-open-method.html)
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

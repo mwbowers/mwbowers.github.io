@@ -21,13 +21,13 @@ Constructs an anonymous instance of [ SourceProfile](source-profile-class.html) 
  **BegConstructor Access(*Public)** 
       </pre>
 
-Parameters
+## Parameters
 
 None.
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 The [DatabaseName](source-profile-class-database-name-property.html) property of the **SourceProfile** created with this constructor is set to the empty string (""). Thus, the registry-related instance methods of **SourceProfile** ([Register](source-profile-class-register-method.html) and [Unregister](source-profile-class-unregister-method.html)) are not available with such an object. 
 
@@ -57,14 +57,14 @@ This constructor sets **SourceProfile** properties to default values as follows:
 
 <br />
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See 
+## See 
 Also
 
 <dl />

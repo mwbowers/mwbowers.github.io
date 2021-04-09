@@ -19,7 +19,7 @@ Define the data types of a structured iSeries program parameter.
  **BegConstructor Access(*Public)<br />   DclSrParm name Type(*String)<br />   DclSrParm cElems Type(*Integer) Len(4)<br />   DclSrParm mbrs Type(*Object) Rank(1)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -41,7 +41,7 @@ Parameters
 									</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -51,7 +51,7 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 **StructureType** constructs complex or structured parameter type representations. 
 
@@ -62,14 +62,14 @@ Remarks
 Note that **ProgParmType** objects to be added to structured types should be given a name in the constructor so that they can be identified in the **As400Program** parameter list. Embedded structures are supported and are represented by **StructureType** instances in *mbrs* . *mbrs* should only contain instances of **StructureType** or **ProgParmType** objects; the constructor ignores any other object types.
 
 To construct a parameter list procedurally using the parameter classes, construct instances of **ProgParmType** and/or **StructureType** ; then, append instances of [ProgParm](prog-parm-class.html) (referencing the corresponding **ProgParmType** or **StructureType** ) to the **As400Program** object.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.DataLink](datagate-data-link-namespace.html) 
 
 **Assembly:** ASNA DataGate DataLink
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [StructureType Class](structure-type-class.html)

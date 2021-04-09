@@ -29,7 +29,7 @@ Begins an automatic database transaction creating an instance of an [IAdgTransac
    DclSrParm Options Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -44,10 +44,10 @@ Parameters
 							</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **IAdgTransaction** . An automatic transaction object associated with the database connection.
-Exceptions
+## Exceptions
 
 **ASNA.DataGate.Common.dgException** is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 
@@ -58,7 +58,7 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 This method begins an *automatic transaction* for those database providers that support transaction processing. The returned **IAdgTransaction** object representing the transaction is associated with the database connection of [AdgConnection](adg-connection-class.html). This version of **BeginAutoTransaction** produces a transaction where the [ TransactionLevel](iadg-transaction-class-transaction-level-property.html) property of the returned **IAdgTransaction** object has the value [TransactionLevel.Medium](transaction-level-enumeration.html).
 
@@ -69,14 +69,14 @@ Automatic transactions can be used when an application expects the behavior of *
 *Name* may be used by the database provider to identify transaction resources. *Name* initializes the [ Name](iadg-transaction-class-name-property.html) property of the **IAdgTransaction** object returned. Specifying the empty string or a null reference for *Name* results in an anonymous transaction.
 
 *Options* specifies command options for initiating the new **IAdgTransaction** object specific to the database provider. For example, transactions on IBM i database providers are initiated via the "STRCMTCTL" CL command, with the "LCKLVL", "TEXT", and "CMTSCOPE(*JOB)" parameters. Other parameters not specified by DCS, such as "NFYOBJ" and "DFTJRN", may be specified via *Options* (e.g. "NFYOBJ(MYLIB/MYOBJ *MSGQ) DFTJRN(MYLIB/MYJRN)" ). If other command options are not required, specify the empty string or null reference for *Options* . Note that non-empty string values for *Options* may defeat the multi-platform compatibility provided by automatic transactions. In an automatic transaction, the value of *Options* is used for each new transaction created by **Commit** and **Rollback** .
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

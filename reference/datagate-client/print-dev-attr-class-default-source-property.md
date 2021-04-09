@@ -28,10 +28,10 @@ The **DefaultSource** property specifies the printer tray to be used when printi
  **BegProp DefaultSource Type(System.Drawing.Printing.PaperSourceKind) Access(*Public) <br />      BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 System.Drawing.Printing.PaperSourceKind. Returns or sets an interger value that determines the paper tray to use in the printer. 
-Remarks
+## Remarks
 
 Common printer tray options include upper tray, lower tray, middle tray, manual feed, envelopes, etc. Please note that each printer will contain the paper tray options that are available for that printer.
 
@@ -40,7 +40,7 @@ Common printer tray options include upper tray, lower tray, middle tray, manual 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

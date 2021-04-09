@@ -30,17 +30,17 @@ Gets the current state of the connection.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **System.Data.ConnectionState** . (set-only)
-Remarks
+## Remarks
 
 This property provides the ability to query the current state of **AdgConnection** objects.
 
 Currently, **AdgConnection** supports two values of the **System.Data.ConnectionState** enumeration, Open and Closed. Open implies that a database connection currently exists under the control of the object. Closed signifies the absence of such a connection. **AdgConnection** objects are constructed in the Closed state.
 
 The value of **State** will be set to Open by a successful call to the [Open](adg-connection-class-open-method.html) method. Likewise, the value will be set to Closed by [ Close Method](adg-connection-class-close-method.html) or [Dispose Method](adg-connection-class-dispose-method.html) calls. 
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -96,14 +96,14 @@ Examples
      // open the file, so take alternative action here.
   EndIf </pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> Pro
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

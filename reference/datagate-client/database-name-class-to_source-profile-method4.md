@@ -33,7 +33,7 @@ Named SourceProfile optionally constructed from a registered database name. If c
    DclSrParm bClassic Type (*Boolean)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -70,19 +70,19 @@ Parameters
 </dd>
 </dl>
 
-Returns
+## Returns
 
 If <code>bFromSecStorage</code> is true, a SourceProfile instance read from the DataGate configuration file is returned, if it exists there, unless <code>bClassic</code> is true. Otherwise, a SourceProfile instance read from from the Windows Registry is returned, if it is found. If the value of <code>bFromSecStorage</code> is false, a default instance of SourceProfile is returned, with its DatabaseName property set to the value of the <code>dbName</code> parameter. 
 
 [ASNA.DataGate.Providers.SourceProfile](source-profile-class.html) <br /> 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

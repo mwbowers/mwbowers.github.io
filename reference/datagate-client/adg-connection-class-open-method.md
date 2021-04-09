@@ -28,7 +28,7 @@ Opens a database connection with the settings specified by the provider-specific
  **BegSr Open Access(*Public)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 ASNA.DataGate.Common.dgException is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -50,10 +50,10 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method is used to transition an **AdgConnection** object to the Open state. If successful, a new database connection is established. The characteristics of the new connection may be specified by prior assignment of the [ SourceProfile](adg-connection-class-source-profile-property.html) property, or by specifying a registered database name or **SourceProfile** object in the [ AdgConnection constructor](adg-connection-constructors-main.html).
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -90,14 +90,14 @@ Examples
       MsgBox e.Message "Error establishing connection to database."); 
   EndTry</pre>
 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

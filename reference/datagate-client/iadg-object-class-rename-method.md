@@ -27,7 +27,7 @@ The **Rename** method renames an object without changing its location in the dat
    DclSrParm NewName Type(*string) Len(45)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -38,7 +38,7 @@ String. The new name for the [IAdgObject](iadg-object-class.html).
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -67,19 +67,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method permits the renaming of an existing database object represented by **IAdgObject** . *NewName* must conform to the database provider's conventions for object names and the user of the session must have requisite authority to the object.
 
 **Rename** only changes the base name of the object. To change the path name of the object, consider using [MoveTo](iadg-object-class-move-to_method.html), [Duplicate](iadg-object-class-duplicate-method.html), or another method capable of creating an equivalent object in a different location.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -37,20 +37,20 @@ keywords: how to, get system portion of available directories in the library lis
      BegGet;  BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 **String array** . A string array containing a list of the system and user portion of the available directories in the library list represented by **ILibraryList** .
-Remarks
+## Remarks
 
 Use [UserConfig](ilibrary-list-class-user-config-property.html) property to set and return just the user portion of the available library list.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 <strong class="hcp2">Platforms:</strong> Windows Server 2008, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [ILibraryList Class](ilibrary-list-class.html)

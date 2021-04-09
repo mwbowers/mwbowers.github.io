@@ -39,7 +39,7 @@ The way to connect to a database is through the [ AdgConnection](adg-connection-
   Cx.Open()</pre>
 
 The first line declares a variable reference to an **AdgConnection** object. The second line uses the New clause to create an instance of the DCS AdgConnection class, which is assigned to the *Cx variable.* The constructor of the class accepts a string parameter which refers to a registered database name. The third line creates a connection to the database named in the constructor. 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

@@ -32,11 +32,11 @@ Specifies the authentication method for initiating database sessions with the [P
  **BegProp PasswordType Type(PasswordType) Access(*Public)<br />   BegGet, BegSet** 
       </pre>
 
-Property 
+## Property
 Value
 
 [PasswordType](password-type-enumeration.html). The authentication type used with **Password** .
-Remarks
+## Remarks
 
 **PasswordType** specifies how the database provider should use the [ User](source-profile-class-user-property.html) and **Password** properties to authenticate a session when the **SourceProfile** object is used to open a new session (see also [AdgConnection](adg-connection-class.html) and [ AdgConnection.Open](adg-connection-class-open-method.html)). Some database providers place limits on the length and other attributes of password strings (see the **PasswordType** enumeration for specific values). 
 
@@ -70,14 +70,14 @@ The default value, **SecurePassphrase** , should be used in most cases for the b
   Dim database As New AdgConnection(sp)
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span> 
-See 
+## See 
 Also
 
 <dl />

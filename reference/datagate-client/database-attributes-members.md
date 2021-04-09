@@ -11,7 +11,7 @@ keywords: members [DCS 16.0 DatabaseAttributes class
 ---
 
 [DatabaseAttributes Overview](dcsDatabaseAttributesClass.html) 
-Constructors
+## Constructors
 
 <br />
 
@@ -24,7 +24,7 @@ Constructors
 
 <br />
 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -43,7 +43,7 @@ Public Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [DatabaseAttributes Class](database-attribute-class.html)

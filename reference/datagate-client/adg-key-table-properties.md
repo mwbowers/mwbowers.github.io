@@ -11,7 +11,7 @@ keywords: properties [DCS 16.0 AdgKeyTable class
 ---
 
 [AdgKeyTable Overview](adg-key-table-class.html) 
-Public Properties
+## Public Properties
 
 
 |      |      |
@@ -22,7 +22,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgKeyTable Class](adg-key-table-class.html)

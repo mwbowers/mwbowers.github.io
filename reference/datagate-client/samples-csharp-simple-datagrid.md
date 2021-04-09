@@ -33,6 +33,6 @@ The **Simple_Datagrid C#** Windows program uses the .NET Framework and ASNA's Da
 				the solution by selecting Build - Build Solution (Ctrl+Shift+B).
 5. Press **F5**  to run the program.
 
-See Also
+## See Also
 
 [Samples](samples-main.html)

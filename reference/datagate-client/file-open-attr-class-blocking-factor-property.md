@@ -26,17 +26,17 @@ Specify network blocking feature in the open file.
    BegGet, BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. A number (greater than zero) of records to block, or the special value, [OptimalBlockingFactor](file-open-attr-class-optimal-blocking-factor-field.html).
-Remarks
+## Remarks
 
 Set this property to a number of records (greater than zero) to engage "network blocking" features of DataGate. Network blocking dramatically improves the performance of access operations by caching sets of records on the client side of DataGate’s client/server link. With network blocking, DataGate is able to compress certain operations, such as reading a large set of sequential records, into just a few client/server calls.
 
 This property may be set to any positive number of records. When used this way, DataGate will create an in-memory record buffer to contain exactly the number of records specified.
 
 Two special values are recognized for the **BlockingFactor** property. **OptimalBlockingFactor** tells DataGate to calculate the best-fit size of the record buffer, using factors such as record length and network packet size. In most cases, **OptimalBlockingFactor** will yield the best network blocking performance. [ OmitBlocking](file-open-attr-class-omit-blocking-field.html) is the default value of **BlockingFactor** , signifying that all record blocking features will be omitted.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -154,7 +154,7 @@ Examples
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

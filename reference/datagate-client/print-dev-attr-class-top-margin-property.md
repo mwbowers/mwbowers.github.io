@@ -32,20 +32,20 @@ The **TopMargin** specifies the size of top margin in output produced by the pri
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Integer. Returns or sets the size of the top margin of the output by the specified printer. 
-Remarks
+## Remarks
 
 Each printer has a default top margin in which output will not be printed, as well as a default [Left Margin](print-dev-attr-class-left-margin-property.html).
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

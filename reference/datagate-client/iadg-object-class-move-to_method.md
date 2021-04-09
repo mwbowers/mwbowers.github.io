@@ -26,7 +26,7 @@ keywords: how to, move database objects to new library
    DclSrParm LibraryPath Type(*string) Len(45)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -37,7 +37,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -69,19 +69,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The **MoveTo** method moves a database object from one library to another. The source library is specified as the library containing the object represented by **IAdgObject** (named by the object path specified when the **IAdgObject** instance was created). The target library is specified by *LibraryPath* . Note that a member object cannot be moved from the file containing it.
 
 Upon successful completion of the method, **IAdgObject** represents the object in its new location and the string returned by [ ToString](iadg-object-class-toString-method.html) method will reflect the new object path. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

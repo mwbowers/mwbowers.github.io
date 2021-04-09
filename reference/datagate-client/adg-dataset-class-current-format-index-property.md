@@ -32,20 +32,20 @@ The current format index of the **AdgDataSet** .
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 **Integer** . The format index of the record contained by the [ ActiveRow](adg-dataset-class-active-row-property.html) property.
-Remarks
+## Remarks
 
 **CurrentFormatIndex** is related to **ActiveRow** , in that the format of the record contained by **ActiveRow** is identified by the value of **CurrentFormatIndex.** Upon construction, **ActiveRow** has no value and the value of **CurrentFormatIndex** is -1.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

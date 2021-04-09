@@ -11,7 +11,7 @@ keywords: AuthorityEntry class, fields
 ---
 
 [AuthorityEntry Overview](authority-entry-class.html) 
-Public Fields
+## Public Fields
 
 <br />
 
@@ -24,7 +24,7 @@ Public Fields
 
 
 
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

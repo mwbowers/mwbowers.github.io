@@ -33,7 +33,7 @@ Deletes a registered database name from the system registry.
  **BegSr Unregister Access(*Public) Shared(*Yes)<br />   DclSrParm dbName Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dd />
@@ -44,10 +44,10 @@ Parameters
 						</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 None.
-Examples 
+## Examples 
 
 <pre class="prettyprint">
         <span class="lang">
@@ -79,14 +79,14 @@ Examples
       Return
   End Try</pre>
 
-Requirements
+## Requirements
 
 **Namespace: [ ASNA.DataGate.Providers](datagate-providers-namespace.html)** 
 
 **Assembly:** ASNA DataGate Client 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html) <br />

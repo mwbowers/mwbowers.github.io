@@ -21,18 +21,18 @@ The version number of the server that services the requests of its clients by fo
  **DclFld Name(ProxyVersion Type(*String) Access(*Public)** 
       </pre>
 
-Field
+## Field
  Value
 
 **String** . The version number of the proxy server.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [DatabaseAttributes Class](dcsDatabaseAttributesClass.html)

@@ -27,7 +27,7 @@ Constructs an **StructureType** instance assigning an initial value to the [ Sou
 
 
 
-See Also
+## See Also
 
 <dl />
       [StructureType Class](structure-type-class.html)

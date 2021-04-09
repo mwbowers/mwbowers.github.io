@@ -32,7 +32,7 @@ keywords: library lists, enumerate object contents of
    DclSrParm enumerator Type([AdgEnumerator](adg-enumerator-delegate.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -44,7 +44,7 @@ Parameters
 </dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -71,21 +71,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 **EnumerateCurrentUser** provides a call-back interface for enumerating the database object contents of the user portion of an existing library list. This is useful in visual applications, for example, when a library contains a large amount of objects and a separate thread is used to display a view of objects as they are supplied by the database provider. The delegate *enumerator* is called by **EnumerateCurrentUser** as each object is returned by the provider. Each object in the library list is rendered to the delegate as an instance of [ IAdgObject](iadg-object-class.html) through which the program can immediately obtain static details, such as path name and object type. However, not all methods of **IAdgObject** are available from the delegate's code (see **AdgEnumerator** for details).
 
 DCS and current database providers only support the enumeration of files and libraries as the contents of libraries. Exceptions raised by the delegate cause **Enumeration** to halt the database provider's stream of objects (safely interrupting the operation) just prior to rethrowing the exception.
 
 Note that the [IDirectory.ItemList](idirectory-class-item-list-property.html) property provides similar information, but "all at once" in a cached list format for a specific directory.
-Requirements
+## Requirements
 
 <span><strong class="hcp2">Namespace:</strong> [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span><strong class="hcp2">Assembly:</strong> ASNA DataGate Client</span> 
 
 <span><strong class="hcp2">Platforms:</strong> Windows Server 2003, Windows XP Professional SP2, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [ILibraryList Class](ilibrary-list-class.html)

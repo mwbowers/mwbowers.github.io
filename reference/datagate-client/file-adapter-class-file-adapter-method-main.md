@@ -27,7 +27,7 @@ Constructs an instance of the **FileAdapter** object.
 
 <br />
 
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html) <br />

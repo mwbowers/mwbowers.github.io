@@ -12,7 +12,7 @@ keywords: FileOpenAttr.FileOpenAttr constructors
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 
-Public Constructors
+## Public Constructors
 
 
 |      |      |
@@ -21,7 +21,7 @@ Public Constructors
 
 
 
-See Also
+## See Also
 
 [FileOpenAttr Class](file-open-attr-class.html) 
 <p />

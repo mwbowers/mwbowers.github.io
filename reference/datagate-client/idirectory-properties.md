@@ -12,7 +12,7 @@ keywords: IDirectory class, properties
 
 [IDirectory Overview](idirectory-class.html) 
 
-Public Properties
+## Public Properties
 
 |      |      |
 | ---- | ---- |
@@ -21,7 +21,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [IDirectory Class](idirectory-class.html)

@@ -29,25 +29,25 @@ The **DataRow** object currently established as the active row.
    BegGet** 
       </pre>
 
-Property
+## Property
  Value
 
 **System.Data.DataRow** . The active row of the **AdgDataSet** . 
-Remarks
+## Remarks
 
 The active row is used in several [FileAdapter](file-adapter-class.html) access methods as the record upon which an access operation is performed. **FileAdapter** read methods create a new **DataRow** to contain the record read, append the row to the **AdgDataSet** , and set it as the value of **ActiveRow** . Other **FileAdapter** methods, such as [AddRecord](file-adapter-class-add-record-method.html) and [ChangeCurrent](file-adapter-class-change-current-method.html) use the record contained in ActiveRow to update the database file.
 
 Though <span> **ActiveRow** </span> is a read-only property, [SetActiveRecord](adg-dataset-class-set-active-methods.html) can be used to explicitly set a particular DataRow in the **AdgDataSet** as the value of <span> **ActiveRow** </span>. The [DeleteRow](adg-dataset-class-delete-row-method.html) method sets the value of **ActiveRow** to null.
 
 Upon construction of **AdgDataSet** , the **ActiveRow** property has no value. Its value is set by <span> **FileAdapter** </span> and **AdgDataSet** methods, as explained above. An exception is thrown if <span> **ActiveRow** </span> is accessed before it has a value.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

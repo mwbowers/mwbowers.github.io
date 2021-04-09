@@ -26,7 +26,7 @@ Begins a manual database transaction creating an instance of an [ IAdgTransactio
    DclSrParm Name Type(*String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -36,10 +36,10 @@ Parameters
 					</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **IAdgTransaction** . A manual transaction object associated with the database connection.
-Exceptions
+## Exceptions
 
 **ASNA.DataGate.Common.dgException** is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 
@@ -50,7 +50,7 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 This method begins a *manual transaction* for those database providers that support transaction processing. The returned **IAdgTransaction** object representing the transaction is associated with the database connection of [AdgConnection](adg-connection-class.html).
 
@@ -61,13 +61,13 @@ Manual transactions should be used when an application requires a high degree of
 *Name* may be used by the database provider to identify transaction resources. *Name* initializes the [ Name](iadg-transaction-class-name-property.html) property of the **IAdgTransaction** object returned. Specifying the empty string or a null reference for *Name* results in an anonymous transaction.
 
 The value of the [ TransactionLevel](iadg-transaction-class-transaction-level-property.html) property of the **IAdgTransaction** object returned is [TransactionLevel.Medium](transaction-level-enumeration.html).
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 [AdgConnection Class](adg-connection-class.html) <br /> [AdgConnection Class Members](adg-connection-members.html) <br /> [BeginAutoTransaction Method](adg-connection-class-begin-auto-transaction-method-main.html) <br /> [IAdgTransaction Class](iadg-transaction-class.html) <br /> [IAdgTransaction Class Commit Method](iadg-transaction-class-commit-methods.html) <br /> [IAdgTransaction Class Name Property](iadg-transaction-class-name-property.html) <br /> [IAdgTransaction Class Rollback Method](iadg-transaction-class-rollback-method.html) <br /> [IAdgTransaction Class TransactionLevel Property](iadg-transaction-class-transaction-level-property.html) <br /> [ASNA.DataGate.Common.TransactionLevel Enumeration](transaction-level-enumeration.html) <br /> [ASNA.DataGate.Client Namespace](datagate-client-namespace.html) 

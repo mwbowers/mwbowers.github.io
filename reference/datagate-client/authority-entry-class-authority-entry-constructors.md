@@ -37,7 +37,7 @@ Creates an instance of an **AuthorityEntry** class object with field initializat
 
 
 
-See Also
+## See Also
 
 <dl />
       [AuthorityEntry Class](authority-entry-class.html)

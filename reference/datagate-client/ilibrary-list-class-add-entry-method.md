@@ -38,7 +38,7 @@ keywords: how to, add entries to database library list
    DclSrParm refLib Type(*string)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -64,17 +64,17 @@ String. Specifies the reference library. If **LiblPosition** is **Before** , **A
 </dd>
 </dl>
 
-Remarks
+## Remarks
 
 Use this method to create a library entry whose parent library is represented by **ILibraryList** . Note that creating such a "sub-library" is a database provider-dependent function. For example, on System i databases, only the root library "/" (also known as QSYS) can contain other libraries. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span>
-See Also
+## See Also
 
 <dl />
       [ILibraryList Class](ilibrary-list-class.html)

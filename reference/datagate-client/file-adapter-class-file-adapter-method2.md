@@ -24,7 +24,7 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object usin
    DclSrParm cn Type(AdgConnection)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -35,12 +35,12 @@ Parameters
 					</dd>
 </dl>
 
-Remarks
+## Remarks
 
 This constructor creates an instance of **FileAdapter** with the given database connection but without a file path or member name. The [Open](file-adapter-class-open-method.html) method of such an instance cannot be used until its [ FileName](file-adapter-class-file-name-property.html) property is set (the constructor initializes its value to null). The [MemberName](file-adapter-class-member-name-property.html) property is initialized to null. If **MemberName** is not explicitly set prior to a call to the **Open** method, DCS assigns the value "*FIRST" to this property.
 
 The [AccessMode](file-adapter-class-access-mode-property.html) property is initialized with the value [Read](access-mode-enumeration.html).
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -66,14 +66,14 @@ Examples
   dbFile.FileName = "*Libl/CMASTNEWL1"
   dbFile.MemberName = "CMMASTERL1"</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileAdapter Class](file-adapter-class.html)

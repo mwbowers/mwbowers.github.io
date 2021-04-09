@@ -21,7 +21,7 @@ References to new methods, properties, or fields for these new classes are noted
 Reference to other classes, methods, properties, or fields are noted in ** <u>green</u> ** within the document. 
 
 ###  <a name="return">Contents</a> 
-Client 
+## Client 
 						Namespace
 
 <a href="#AdgFactoryClass">AdgFactory Class</a> 
@@ -45,7 +45,7 @@ Client
 <a href="#IMemberClass">IMember Class</a> 
 
 <a href="#XmlInfoEventArgsClass">XmlInfoEventArgs Class</a> 
-Providers Namespace
+## Providers Namespace
 
 <a href="#IPrintPropertiesClass">IPrintProperties Class</a> 
 
@@ -76,7 +76,7 @@ The <a href="dcsAuthorityEntryClass.html) describes a user or group authorizatio
 AuthorityEntry ***constructors*** create a single authority descriptor. ***AuthorityType*** establishes the access capabilitities and limitations (add, change, exclude, management, etc.). ***Username*** establishes the user or group profile name associated with the access authority. The ***IsGroupAccount*** field indicates if the Username is a user or group profile.
 
 -- [ ** Dependent Class ** ](#return">Return to contents</a> --
-Dependent Class
+## Dependent Class
 
 Instances of <a href="dcsDependentClass.html) are returned by the ** *Dependents* ** property of [ **AdgObjectTypes** ](#IAdgObjectClass"> IAdgObject</a>. These instances enumerate logical database objects which are defined in terms of a relationship to the base physical database object, represented by IAdgObject. Database providers may place constraints on database objects that have dependents, such as not allowing the object's deletion.
 
@@ -115,7 +115,7 @@ At the time of this writing, only the System i database provider supports transa
 -- [ **IDirectory Class** ](#return">Return to contents</a> --
 <br />
 
-IDirectory Class
+## IDirectory Class
 
 The <a href="dcsIDirectoryClass.html) models the library object of the database server. In addition to the generic object management methods and properties of IAdgObject, the IDirectory class provides additional functions specific to library objects.
 
@@ -130,7 +130,7 @@ A valid IDirectory reference may be obtained from DCS in one of the following wa
 -- [ ** IFileObject Class ** ](#return">Return to contents</a> --
 <br />
 
-IFileObject Class
+## IFileObject Class
 
 The <a href="dcsIFileObjectClass.html) models the file object of the database server. In addition to the generic methods and properties of [ ** AdgConnection ** ](#IAdgObjectClass">IAdgObject</a> the IFileObject class provides methods specific to file objects. 
 
@@ -145,7 +145,7 @@ A valid IFileObject reference may be obtained from DCS in one of the following w
 -- [ ** ILibraryList Class ** ](#return">Return to contents</a> --
 <br />
 
-ILibraryList Class
+## ILibraryList Class
 
 The <a href="dcsILibraryListClass.html) models an object management interface to the databases' library list. A library list is an ordered set of directory names associated with each applications database connection. In addition to the generic methods and properties of [ **AdgConnection** ](#IAdgObjectClass">IAdgObject</a>, ILibraryList provides properties and methods specific to library list objects.
 
@@ -158,7 +158,7 @@ A valid **ILibraryList** reference may be obtained from DCS in one of the follow
 -- [ ** IMember Class ** ](#return">Return to contents</a> --
 <br />
 
-IMember Class
+## IMember Class
 
 The <a href="dcsIMemberClass.html) models the file member object of the database server. In addition to the generic methods and properties of [ **AdgConnection** ](#IAdgObjectClass">IAdgObject</a>, IMember provides properties and methods specific to member objects.
 
@@ -169,7 +169,7 @@ A valid **IMember** reference may be obtained from DCS in one of the following w
 - An IMember instance may be returned from the ***AdgFactory.ReadXml*** method (as an IAdgObject reference), when the XML definition describes a database file member.
 
 -- [ ** XmlInfoEventArgs ** ](#return">Return to contents</a> --
-XmlInfoEventArgs Class
+## XmlInfoEventArgs Class
 
 An <a href="dcsXmlInfoEventArgsClass.html) object contains the details of events reported by the ** *AdgFactory.ReadXml* ** and ** *IAdgObject.WriteXml* ** methods, through the [ **XmlInfoEventHandler** ](xml-info-event-handler-delegate.html) delegate.
 
@@ -179,7 +179,7 @@ XmlInfoEventArgs is defined for use as a parameter of the XmlInfoEventHandler de
 <br />
 
 ### PROVIDERS NAMESPACE
-IPrintProperties Class
+## IPrintProperties Class
 
 Print files in DCS may have fields with an associated print control object. These print controls may have ambient properties that characterize document attributes such as "font" or "color". Access to these properties permits adjustments to report documents as they are being generated. <a href="dcsIPrintPropertiesClass.html) is the interface to run-time print control properties. Instances of IPrintProperties are allocated per print format, via the [ **FileAdapter.GetPrintProperties** ](file-adapter-class-get-print-properties-method.html) method.
 
@@ -188,12 +188,12 @@ IPrintProperties methods must only be used when the print file is in the open st
 <p>-- [Client Namespace](#return">Return to contents</a> --
 <br />
 
-PrintDevAttr Class
+## PrintDevAttr Class
 
 Under construction.
 
 -- <a href="#return">Return to contents</a> --
-See Also
+## See Also
 
 <dl />
       <a href="dcsDataGateClientNamespace.html)

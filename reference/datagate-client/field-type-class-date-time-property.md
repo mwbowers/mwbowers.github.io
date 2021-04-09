@@ -27,17 +27,17 @@ The date and time format of the field.
  **BegProp DateTime Type(DateTimeFormat) Access(*Public)<br />   BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 [DateTimeFormat](date-time-format-enumeration.html). Returns the number of bytes in this field given as one of the values of **DateTimeFormat** . 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html)
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

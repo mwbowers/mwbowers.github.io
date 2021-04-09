@@ -11,7 +11,7 @@ keywords: methods [DCS 16.0 IAdgTransaction class
 ---
 
 [IAdgTransaction Overview](iadg-transaction-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -23,7 +23,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IAdgTransaction Class](iadg-transaction-class.html)

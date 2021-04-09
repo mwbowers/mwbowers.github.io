@@ -31,10 +31,10 @@ Key definition properties which apply to a key field.<span style="MARGIN-BOTTOM:
  **BegEnum KeyUsages Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 These properties are used when defining a key with the parameters of the [ FileAdapter.OpenSimpleQuery](file-adapter-class-open-simple-query-method.html) method. DCS also uses **KeyUsages** for internal file definition methods. Most values of **KeyUsages** can be combined to specify more than one value. *ASCEND* and *DESCEND* cannot be combined in the same **KeyUsages** value. The following table lists each value and the effect on key fields to which it is applied.
-Members
+## Members
 
 
 
@@ -52,14 +52,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016,Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [File Adapter Class](file-adapter-class.html)

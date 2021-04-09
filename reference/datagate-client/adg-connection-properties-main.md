@@ -11,7 +11,7 @@ keywords: AdgConnection class, properties
 ---
 
 [AdgConnection Overview](adg-connection-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -24,7 +24,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

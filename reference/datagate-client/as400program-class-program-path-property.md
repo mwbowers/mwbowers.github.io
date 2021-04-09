@@ -28,15 +28,15 @@ A string describing the path to the called program on the database server.
    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 String. Set Only. The path to the program called on the database server. 
-Remarks
+## Remarks
 
 Set the <span> **ProgramPath** </span> property to name the program on the database server to be called by **As400Program** . Unless <span> **As400Program** </span> was created using the constructor defining a string parameter, this property <span>must</span> be set before adding program parameters or calling the [ASNA.DataGate.Client](dcsAs400ProgramClassExecuteMethod.htm "> Execute</a> method. 
 
 <span> **ProgramPath** </span> is a set-only property. The value of the string assigned to the property is not validated by DCS.
-Examples
+## Examples
 
 <pre>
         <span class="lang">
@@ -60,14 +60,14 @@ Examples
   prog.Connection = *New AdgConnection("*Public/DG NET IBM i")
   prog.ProgramPath = "*Libl/Call400"</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** <a href="dcsDataGateClientNamespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

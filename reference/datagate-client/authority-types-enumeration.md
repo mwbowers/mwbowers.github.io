@@ -37,10 +37,10 @@ The <span> **AuthorityTypes** </span> enumerated constant defines values that sp
  **BegEnum AuthorityTypes Access(*Public)** 
       </pre>
 
-Remarks
+## Remarks
 
 **AuthorityTypes** is defined as a parameter of the [ GrantAuthority](iadg-object-class-grant-authority-method.html) and [RevokeAuthority](iadg-object-class-revoke-authority-method.html) methods of [IAdgObject](iadg-object-class.html). The parameter's value denotes the authorization that a user is being granted or denied, in regard to the the database object represented by **IAdgObject** . **AuthorityTypes** is defined with the **System.FlagsAttribute** so its values can be combined to form specialized authority values. Some of combinations are pre-defined, such as **Change** and **All** . The following table summarizes the values of **AuthorityTypes** . 
-Members
+## Members
 
 
 
@@ -62,14 +62,14 @@ Members
 
 
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
 
 **Assembly:** ASNA DataGate Client (in ASNA.DataGate.Client.dll)
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

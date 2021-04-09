@@ -29,7 +29,7 @@ keywords: enumerations [DCS 16.0 DataSetOptions, used by
  **BegFunc GetAdgDataSet Access(*Public) Type(AdgDataSet)<br />     DclSrParm opts Type([DataSetOptions](dataset-options-enumeration.html))** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -43,7 +43,7 @@ Parameters
 
 #### Returns
 **AdgDataSet** . **GetAdgDataSet** creates a new instance of **AdgDataSet** and customizes it to reflect the formats of the file.
-Exceptions
+## Exceptions
 
 <br />
 
@@ -76,19 +76,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method, and [FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) return an instance of [AdgDataSet](adg-dataset-class.html) with **System.Data.DataSet** structures matching the formats of a database file. **GetAdgDataSet** , unlike **OpenNewAdgDataSet,** does not open the file for record access. The **AdgDataSet** returned by this method is suitable for subsequently opening for record access of the file represented by **IFileObject** , with the [FileAdapter.Open](file-adapter-class-open-method.html) method.
 
 *opts* controls the construction of the **AdgDataSet** instance including whether or not to create **DataTable** objects representing file keys.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

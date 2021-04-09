@@ -37,7 +37,7 @@ Mark a DataRow in the **AdgDataSet** as deleted.
    DclSrParm rrn Type(*Integer) Len(4)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -51,7 +51,7 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 **ASNA.DataGate.Common.dgException** is thrown to signal normal procedural conditions, in addition to error conditions. The following table summarizes these conditions, and the corresponding value of the dgException.Error property.
 <br />
@@ -64,19 +64,19 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 **DeleteRow** marks the DataRow object specified by *rrn* as deleted in the format table specified by *strFormat* . Upon return, the [ActiveRow Property](adg-dataset-class-active-row-property.html) of the **AdgDataSet** is set to null and the RowState of the DataRow is RowDeleted.
 
 The *rrn* parameter is a zero-relative index referring to a DataRow object contained in the Rows collection of the DataTable corresponding to the *strFormat* parameter. The Rows collection and its containing DataTable object is accessible via the [ GetFormatTable](adg-dataset-class-get-format-table-method.html) method.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgDataSet Class](adg-dataset-class.html)

@@ -29,22 +29,22 @@ Sets the [ State](adg-connection-class-state-property.html) property to <span>Cl
  **BegSr Dispose Access( *Public ) Modifier( *NotOverridable )** 
       </pre>
 
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 This method sets the [ State](adg-connection-class-state-property.html) property of the <span> **AdgConnection** </span> object to <span>Closed</span>. Additionally, if the current value of State is <span>Open</span>, the connection to the database provider is released, along with any unmanaged resources associated with that connection. 
 
 Note that you must explicitly call either the [ Close](adg-connection-class-close-method.html) or <span> **Dispose** </span> methods on <span> **AdgConnection** </span> objects in the Open state before the objects are finalized. This releases unmanaged resources associated with their database connections. If unmanaged resources are not released prior to object finalization, unexpected results can occur, including program termination and loss of data.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

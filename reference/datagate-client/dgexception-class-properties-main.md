@@ -11,7 +11,7 @@ keywords: dgException class, properties
 ---
 
 [dgException Overview](dgexception-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -22,7 +22,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [dgException Class](dgexception-class.html)

@@ -12,7 +12,7 @@ keywords: ASNA.DataGate.Common namespace
 ---
 
 The <span style="FONT-WEIGHT: bold">ASNA.DataGate.Common </span>namespace contains classes shared by ASNA DataGate Client providers.
-Classes
+## Classes
 
 <br />
 
@@ -27,7 +27,7 @@ Classes
 
 <br />
 
-Enumerations
+## Enumerations
 
 <br />
 
@@ -71,7 +71,7 @@ Enumerations
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

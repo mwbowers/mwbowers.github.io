@@ -25,10 +25,10 @@ For a list of all members of this type, see [As400Program Members](as400program-
  **Public Class As400Program** 
       </pre>
 
-Thread Safety
+## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
-Remarks
+## Remarks
 
 The **As400Program** class provides the [ Parameters](dcsAs400ProgramClassExecuteMethod.htm "> Execute</a> method for calling programs or stored procedures on i Series database servers. Data may be passed into and returned from the stored procedure by way of the <a href="dcsAs400ProgramClassParametersProperty.html) collection. The stored procedure is specified as the path string in the [ProgramPath](as400program-class-program-path-property.html) property. The set-only [Connection](as400program-class-connection-property.html) property of **As400Program** specifies the database connection upon which to call the program.
 
@@ -37,14 +37,14 @@ When calling an IBM i program, the program name should include the library name 
 Create the parameter list for the program with the [ AppendParms](as400program-class-append-parms-method.html) method. Before and after the call, parameter values may be accessed with the [ObjectToParm](as400program-class-object-to_parm-method-main.html) and [ParmToObject](as400program-class-parm-to_object-method-main.html) methods. Parameter types and data are defined with the [ ASNA.DataGate.DataLink.ProgParmType](prog-parm-type-class.html) and [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) classes.
 
 **As400Program** implements the System.IDisposable interface.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Members](as400program-members.html)

@@ -12,7 +12,7 @@ keywords: assembly
 ---
 
 The **ASNA DataGate <span>assembly</span>** contains 4 Namespaces that support the ability for client-side database access. 
-Namespaces
+## Namespaces
 
 <br />
 
@@ -27,7 +27,7 @@ Namespaces
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

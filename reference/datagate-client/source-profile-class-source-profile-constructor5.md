@@ -24,7 +24,7 @@ Constructs an instance of [SourceProfile](source-profile-class.html) that is an 
  **BegConstructor Access(*Public)<br />   DclSrParm NewName Type(*String)<br />   DclSrParm sp Type(SourceProfile)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -41,7 +41,7 @@ Parameters
 							</dd>
 </dl>
 
-Exceptions
+## Exceptions
 
 
 
@@ -51,12 +51,12 @@ Exceptions
 
 
 
-Remarks
+## Remarks
 
 All public properties of the constructed object have the same value as the copied **SourceProfile** *sp* , except for **DatabaseName** , which is assigned the value of *NewName* .
 
 This constructor is useful for creating an object capable of registering database name information under a different name, via the [ Register](source-profile-class-register-method.html) method. 
-Examples
+## Examples
 
 <pre class="prettyprint">
         <span class="lang">
@@ -74,14 +74,14 @@ Examples
   Dim newDbProfile2 As New SourceProfile("Brand New DB Name", sp)
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [SourceProfile Class](source-profile-class.html)

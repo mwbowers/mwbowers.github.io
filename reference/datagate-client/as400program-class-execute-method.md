@@ -28,7 +28,7 @@ Runs the database program.
  **BegSr Execute Acess(*Public)** 
       </pre>
 
-Exceptions
+## Exceptions
 
 <br />
 
@@ -56,7 +56,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The **Execute** method invokes the program on the database server. If the program requires parameters, they should be added to the parameter list (with [AppendParm Method](as400program-class-append-parm-method.html) and [AppendParms](as400program-class-append-parms-method.html)) prior to calling **Execute** . If any parameters are "input" parameters, their value should be set (with [ ObjectToParm](as400program-class-object-to_parm-method-main.html)) first. The [ Connection](as400program-class-connection-property.html) and [ProgramPath](as400program-class-program-path-property.html) properties must be set (directly or by [ As400Program constructor](as400program-class-as400program-method-main.html)) prior to calling **Execute** .
 
@@ -147,14 +147,14 @@ Upon successful return from **Execute** , the values of any "output" parameters 
      "TimeOfDay", +
      *Nothing *As *Integer4[]))</pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [As400Program Class](as400program-class.html)

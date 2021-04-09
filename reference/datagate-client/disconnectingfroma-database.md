@@ -22,7 +22,7 @@ After database connection and access are complete, applications *must* disconnec
   Cx = *Nothing</pre>
 
 Whether you use <span> **AdgConnection.Close** </span> or <span> **AdgConnection.Dispose** </span> is a matter of preference since they perform the same task of disconnecting the database and releasing unmanaged resources. Note that <span> **AdgConnection.Dispose** </span> implements the conventional <span> **System.IDisposable** </span> interface for **AdgConnection** . 
-See Also
+## See Also
 <dl />
       <span>
         [AdgConnection Class](adg-connection-class.html)

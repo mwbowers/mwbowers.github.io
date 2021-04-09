@@ -19,7 +19,7 @@ Defines the data type of a simple iSeries program parameter.
  **BegConstructor Access(*Public)<br />   DclSrParm name Type(*String)<br />   DclSrParm cElems Type(*Integer) Len(4)<br />   DclSrParm type Type(FieldType)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -41,7 +41,7 @@ Parameters
 									</dd>
 </dl>
 
-Remarks
+## Remarks
 
 **ProgParmType** constructs simple parameter types. 
 
@@ -54,14 +54,14 @@ In terms of the internal definition of parameters in DCS, a multiple-occurrence 
 The database object type of the parameter is given by *type* . Generally, the value of *type* is obtained using one of the"New" static methods of the [FieldType](field-type-class.html) class, such as [FieldType.NewPacked](field-type-class-new-packed-method.html) for packed decimal types. **ProgParmType** treats *type* as a read-only object; thus a single instance of **FieldType** may be referenced by multiple instances of **ProgParmType** .
 
 To construct a parameter list procedurally using the parameter classes, construct instances of **ProgParmType** and/or [ StructureType](structure-type-class.html); then, append instances of [ ProgParm](prog-parm-class.html) (referencing the corresponding **ProgParmType** or **StructureType** ) to the **As400Program** object.
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.DataLink](datagate-data-link-namespace.html) 
 
 <span> **Assembly:** ASNA DataGate DataLink</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
-See Also
+## See Also
 
 <dl />
       [ProgParmType Class](prog-parm-type-class.html)

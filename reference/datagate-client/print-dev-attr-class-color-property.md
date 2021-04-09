@@ -27,20 +27,20 @@ The **Color** property indicates that non-monochrome output is to be produced by
    BegGet,    BegSet** 
       </pre>
 
-Property Value
+## Property Value
 
 Boolean. Returns or sets a value indicating whether the printed output will be printed in color. 
-Remarks
+## Remarks
 
 Setting this property to **True** will allow the print out to be printed in color, as long as a color printer is specified.
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Providers
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

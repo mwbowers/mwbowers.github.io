@@ -35,7 +35,7 @@ keywords: how to, create XML file definition for database file
  **BegFunc WriteDefinition Access(*Public) Type(Void)<br />   DclSrParm writer Type(System.Xml.XmlWriter)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -49,10 +49,10 @@ Parameters
 </dd>
 </dl>
 
-Returns
+## Returns
 
 Returns the object that contains the DOM object for the definition object referenced.
-Exceptions
+## Exceptions
 
 This method raises the exceptions detailed below. However, the particular implementation of the instance of **XmlWriter** passed as *writer* may also raise exceptions, as detailed by its documentation.
 
@@ -85,7 +85,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 The definition of a file is metadata describing the formats, fields, keys, bases, and text, among other characteristics, of the database file object. This information is collectively expressed in DCS as a single XML content node (or element), named <code>&lt;fileDef&gt;</code> (see the XML schema). **WriteDefinition** writes this content node to an XML stream, provided by *writer* . DCS obtains the definition information for **IFileObject** from one of two sources:
 
@@ -97,14 +97,14 @@ If the user program sets the definition with **ReadDefinition** , then **WriteDe
 Note that if the definition information of **IFileObject** was set with **ReadDefinition** , any default attribute nodes not specified in the stream to **ReadDefinition** will be explicitly defined in the stream written by **WriteDefinition** , due to the schema validation function of **ReadDefinition** . Thus the data written by **WriteDefinition** may not be identical to the data read by **ReadDefinition** , although both streams are semantically equivalent.
 
 Further note that for **IFileObject** instances, [ IAdgObject.WriteXml](iadg-object-class-write-xml-methods.html) calls an internal version of **WriteDefinition** to dump the definition portion of the comprehensive XML description it generates. The internal version obtains the definition information as previously described for this method. 
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro</span> 
-See Also
+## See Also
 
 <dl />
       [IFileObject Class](ifile-object-class.html)

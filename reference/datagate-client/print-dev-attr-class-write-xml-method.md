@@ -32,7 +32,7 @@ This **WriteXml** method creates XML representing the **PrintDevAttr** object, u
   BegSr WriteXml Access(*Public) Type(PrintDevAttr)<br />   DclSrParm writer Type(System.Xml.Xmlwriter)** 
       </pre>
 
-Parameters
+## Parameters
 
 *writer* 
 <dl>
@@ -42,17 +42,17 @@ An instance of **System.Xml.XmlWriter.**
 </dd>
 </dl>
 
-Returns
+## Returns
 
 Xml representing the **PrintDevAttr** class.
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 <span> **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10</span>
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

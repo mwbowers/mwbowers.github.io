@@ -23,7 +23,7 @@ Compares two instances of <span> **AdgConnection** </span> for equality.
  **returnValue = AdgConnection.op_Equality(x, y)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -36,23 +36,23 @@ Parameters
         <dd>An **AdgConnection**  object to compare.</dd>
 </dl>
 
-Return Value
+## Return Value
 
 **True** if <span> *x* </span> and <span> *y* </span> have the same invocation lists; otherwise **false** .
-Exceptions
+## Exceptions
 
 None.
-Remarks
+## Remarks
 
 Returns **true** if the references being compared refer to the same object. Otherwise, returns the value of the [Equals ](adg-connection-class-equals-method.html) method invoked on left, and passed right as a parameter. 
-Requirements
+## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgConnection Class](adg-connection-class.html)

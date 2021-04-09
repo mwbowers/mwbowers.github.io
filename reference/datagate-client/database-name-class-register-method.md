@@ -39,7 +39,7 @@ Saves the contents of the **SourceProfile** object to the system registry as a d
    DclSrParm dbName Type (String)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt>
@@ -55,7 +55,7 @@ Parameters
 									delete. </dd>
 </dl>
 
-Returns
+## Returns
 
 [SourceProfile](source-profile-class.html).
 
@@ -65,7 +65,7 @@ Returns
 **Assembly:** ASNA DataGate Client 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro 
-See Also
+## See Also
 
 <dl />
       [DatabaseName Class](database-name-class.html)

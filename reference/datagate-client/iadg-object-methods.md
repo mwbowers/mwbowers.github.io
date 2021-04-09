@@ -11,7 +11,7 @@ keywords: IAdgObject class, methods
 ---
 
 [IAdgObject Overview](iadg-object-class.html) 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -34,7 +34,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [IAdgObject Class](iadg-object-class.html)

@@ -27,17 +27,17 @@ A row object containing key data.
    BegGet** 
       </pre>
 
-Property Value
+## Property Value
 
 System.Data.DataRow **.** The row object containing key data.
-Remarks
+## Remarks
 
 <span> **AdgKeyTable** </span> objects are used in DCS to represent database keys. The **Row** property refers to a **DataRow** object containing the data for a key. DCS uses this data and the value of [ KeyPartCount](adg-key-table-class-key-part-count-property.html) property to transmit key information to the database provider for [FileAdapter](file-adapter-class.html) keyed access methods.
 
 Each column value in the **DataRow** corresponds to a field or "key part" value. Upon construction of the **AdgKeyTable** all values are set to the null value. To set key part values, use the **Item** property of **DataRow** .
 
 Note that DCS never adds the **DataRow** referenced by the **Row** property to the System.Data.DataTable object referenced by the [ DataTable](adg-key-table-class-data-table-property.html) property. To determine the composition of the columns in the row, use the **DataTable** property. 
-Examples 
+## Examples 
 
 <pre>
         <span class="lang"> **[C#]** 
@@ -126,14 +126,14 @@ Examples
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key)
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [AdgKeyTable Class](adg-key-table-class.html)

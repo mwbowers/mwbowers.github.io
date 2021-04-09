@@ -23,14 +23,14 @@ This constant, when assigned to the **BlockingFactor** property, requests that D
  **BegProp OptimalBlockingFactor Type(*Integer) Access(*Public)** 
       </pre>
 
-Field
+## Field
  Value
 
 Integer. A constant value to set the [ BlockingFactor](file-open-attr-class-blocking-factor-property.html) property.
-Remarks
+## Remarks
 
 This constant, when assigned to the **BlockingFactor** property, requests that DataGate calculate the best-fit size of the network blocking record buffer, using factors such as record length and network packet size. In most cases, this yields the best network blocking performance.
-Examples
+## Examples
 
 <pre>        <span class="lang">
  **[C#]** 
@@ -54,14 +54,14 @@ Examples
   dbFile.OpenNewAdgDataSet(ds)
 </pre>
 
-Requirements
+## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See Also
+## See Also
 
 <dl />
       [FileOpenAttr Class](file-open-attr-class.html)

@@ -11,7 +11,7 @@ keywords: FieldType class, all members
 ---
 
 [FieldType Overview](field-type-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -27,7 +27,7 @@ Public Properties
 
 
 
-Public Methods
+## Public Methods
 
 <br />
 
@@ -49,7 +49,7 @@ Public Methods
 
 
 
-See Also
+## See Also
 
 <dl />
       [FieldType Class](field-type-class.html)

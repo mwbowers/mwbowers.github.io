@@ -12,7 +12,7 @@ keywords: ASNA.DataGate.DataLink namespace, about
 ---
 
 The **ASNA.DataGate.DataLink** namespace contains the fundamental classes for accessing data. 
-Classes
+## Classes
 
 
 
@@ -24,7 +24,7 @@ Classes
 
 
 
-See Also
+## See Also
 
 <dl />
       [Class Library](class-library-main.html)

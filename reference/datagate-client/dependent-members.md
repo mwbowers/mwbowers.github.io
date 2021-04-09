@@ -11,7 +11,7 @@ keywords: Dependent class, all members
 ---
 
 [Dependent Overview](dependent-class.html) 
-Public Properties
+## Public Properties
 
 <br />
 
@@ -24,7 +24,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [Dependent Class](dependent-class.html)

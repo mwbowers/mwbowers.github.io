@@ -11,7 +11,7 @@ keywords: PrintDevAttr class, properties
 ---
 
 For additional methods see [PrintDevAttr Overview](print-dev-attr-class.html).
-Public Properties
+## Public Properties
 
 <br />
 
@@ -38,7 +38,7 @@ Public Properties
 
 
 
-See Also
+## See Also
 
 <dl />
       [PrintDevAttr Class](print-dev-attr-class.html)

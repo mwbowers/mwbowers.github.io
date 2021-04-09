@@ -35,7 +35,7 @@ The **NewMember** method creates a new instance of [IMember](imember-class.html)
    DclSrParm PathName Type(*string)** 
       </pre>
 
-Parameters
+## Parameters
 
 <dl>
         <dt />
@@ -58,10 +58,10 @@ String. The path name of a new or existing database member object, including the
 </dd>
 </dl>
 
-Returns
+## Returns
 
 An instance of an [IMember](imember-class.html) object.
-Exceptions
+## Exceptions
 
 
 
@@ -81,21 +81,21 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 
-Remarks
+## Remarks
 
 This method creates a new [IMember](imember-class.html) based upon a new or existing database member (whose path is specified by *PathName* ). The database containing the member is specified as *cn* , an [ AdgConnection](adg-connection-class-state-property.html) object. Note that this method does not throw an exception if *PathName* and *cn* do not reference a valid, pre-existing database member. Subseqent usage of the returned **IMember** object's methods may raise such exceptions, however.
 
 To create a new database member, first call **NewMember** with the desired name for the new member in *PathName* . Then, with the **IMember** reference returned, call the [Create](iadg-object-class-create-method.html) method. A database member may also be created via [ AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html).
 
 If the [State](adg-connection-class-state-property.html) property of the *cn* parameter is not **ConnectionState.Open** , **NewMember** may temporarily open the database provider connection, via [AdgConnection.Open](adg-connection-class-open-method.html). In this case only, upon successful return from **NewMember** , the **State** property of *cn* will be **ConnectionState.Closed** .
-Requirements
+## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 
 
 <span> **Assembly:** ASNA DataGate Client</span> 
 
 **Platforms:** Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-See 
+## See 
 Also
 
 <dl />
