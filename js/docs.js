@@ -1,10 +1,9 @@
 
-function navClicked(sourceLink) {
+function navClicked(topic,sourceLink) {
     let el = document.getElementById("#item"+sourceLink)
     if (el) {
         el.classList.toggle("in");
-        if (el) {
-            el.classList.toggle("in");
+        if (el.classList.contains("in")){
             changeLocationToOverview(el);
         }
     }
@@ -53,7 +52,7 @@ function walkTree(tree) {
         totalTopics++;
         if (page.section) {
             let sectionHasPath = pageIsInSection(page.section);
-            outputLetNav.push('<li><a onclick="navClicked(' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu"')
+            outputLetNav.push('<li><a onclick="navClicked(this,' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu"')
             if (sectionHasPath) {
                 outputLetNav.push('aria-expanded="true"')
             } else {
