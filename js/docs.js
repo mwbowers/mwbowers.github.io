@@ -19,7 +19,7 @@ function changeLocationToOverview(navEl) {
         {
             const href = firstAnchor.getAttribute('href');
 
-            if ( href ) {
+            if ( href && document.location !== href ) {
                 document.location = href;
             }
         }
