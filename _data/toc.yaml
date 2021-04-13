@@ -18,20 +18,16 @@ horizontalnav:
 
 home: {}
 
-Reference:
-
 ##
 Concepts:
 - sectiontitle: Framework Concepts
+  sectionpath: /concepts/concepts-overview.html
   section:
-  - title: Overview
-    path: /concepts/concepts-overview.html
   - title: Introduction
     path: /concepts/introduction.html
   - sectiontitle: Legacy Application Background
+    sectionpath: /concepts/background/background-overview.html
     section:
-    - title: Overview
-      path: /concepts/background/background-overview.html
     - title: IBM i Developer's model
       path: /concepts/background/ibmi-developer-model.html
     - title: IBM i Fixed Types
@@ -41,9 +37,8 @@ Concepts:
     - title: IBM i Program
       path: /concepts/background/ibmi-program.html
   - sectiontitle: Monarch Core Architecture
+    sectionpath: /concepts/architecture/architecture-overview.html
     section:
-    - title: Overview
-      path: /concepts/architecture/architecture-overview.html
     - title: ASNA.QSys
       path: /concepts/architecture/asna-qsys.html
     - title: QSys Job

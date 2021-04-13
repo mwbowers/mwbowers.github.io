@@ -1,28 +1,14 @@
 
-function navClicked(topic,sourceLink) {
+function navClicked(sectionPath, sourceLink) {
     let el = document.getElementById("#item"+sourceLink)
     if (el) {
-        el.classList.toggle("in");
-        if (el.classList.contains("in")){
-            changeLocationToOverview(el);
-        }
-    }
-}
-
-function changeLocationToOverview(navEl) {
-    const allLi = navEl.querySelectorAll('ul > li'); // 'ul > li:not("ul > li > ul > li")');
-    let firstLi;
-    if ( allLi && allLi.length>0 && (firstLi=allLi[0]) ) {
-        const aA = firstLi.querySelectorAll('a');
-        let firstAnchor;
-        if ( aA  && aA.length>0 && (firstAnchor=aA[0]))
-        {
-            const href = firstAnchor.getAttribute('href');
-
-            if ( href && document.location !== href ) {
-                document.location = href;
+        if (sectionPath){
+            if (document.location.pathname !== sectionPath){
+                document.location = sectionPath;
+                return;
             }
         }
+        el.classList.toggle("in");
     }
 }
 
@@ -32,6 +18,10 @@ function pageIsInSection(tree) {
     function processBranch(branch) {
         for (let k = 0; k < branch.length; k++) {
             if (branch[k].section) {
+                if (branch[k].sectionpath === pageURL && !branch[k].nosync) {
+                    found = true;
+                    break;
+                }
                 processBranch(branch[k].section);
             } else {
                 if (branch[k].path === pageURL && !branch[k].nosync) {
@@ -51,13 +41,25 @@ function walkTree(tree) {
     for (const page of tree) {
         totalTopics++;
         if (page.section) {
+            // this is a branch with an optional branch description page
             let sectionHasPath = pageIsInSection(page.section);
-            outputLetNav.push('<li><a onclick="navClicked(this,' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu"')
+            let pagePath = page.sectionpath ? `'${page.sectionpath}'` : "''" ;
+            outputLetNav.push('<li><a onclick="navClicked(' + pagePath +',' + totalTopics + ')" data-target="#item' + totalTopics + '" data-toggle="collapse" data-parent="#stacked-menu"')
+            let classes = ""
             if (sectionHasPath) {
                 outputLetNav.push('aria-expanded="true"')
             } else {
-                outputLetNav.push('class="collapsed" aria-expanded="false"')
+                outputLetNav.push('aria-expanded="false"')
+                classes = 'collapsed '
             }
+            // highlight the branch if we are on its page
+            if (page.sectionpath === pageURL && !page.nosync) {
+                classes += 'active currentPage';
+            }
+            if (classes){
+                outputLetNav.push(`class="${classes}"`);
+            }
+
             outputLetNav.push(">" + page.sectiontitle + '<span class="caret arrow"></span></a>');
             outputLetNav.push('<ul class="nav collapse');
             if (sectionHasPath) outputLetNav.push(" in");
@@ -73,6 +75,7 @@ function walkTree(tree) {
         } else {
             // just a regular old topic; this is a leaf, not a branch; render a link!
             outputLetNav.push('<li><a href="' + page.path + '"')
+            // highlight the leaf if we are on its page
             if (page.path === pageURL && !page.nosync) {
                 outputLetNav.push('class="active currentPage"')
             }
