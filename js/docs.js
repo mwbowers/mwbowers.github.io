@@ -2,7 +2,28 @@
 function navClicked(sourceLink) {
     let el = document.getElementById("#item"+sourceLink)
     if (el) {
-        el.classList.toggle("in")
+        el.classList.toggle("in");
+        if (el) {
+            el.classList.toggle("in");
+            changeLocationToOverview(el);
+        }
+    }
+}
+
+function changeLocationToOverview(navEl) {
+    const allLi = navEl.querySelectorAll('ul > li'); // 'ul > li:not("ul > li > ul > li")');
+    let firstLi;
+    if ( allLi && allLi.length>0 && (firstLi=allLi[0]) ) {
+        const aA = firstLi.querySelectorAll('a');
+        let firstAnchor;
+        if ( aA  && aA.length>0 && (firstAnchor=aA[0]))
+        {
+            const href = firstAnchor.getAttribute('href');
+
+            if ( href ) {
+                document.location = href;
+            }
+        }
     }
 }
 
