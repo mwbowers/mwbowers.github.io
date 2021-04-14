@@ -61,7 +61,9 @@ function walkTree(tree) {
                 outputLetNav.push(`class="${classes}"`);
             }
 
-            outputLetNav.push(">" + page.sectiontitle + '<span class="caret arrow"></span></a>');
+            outputLetNav.push(">" + page.sectiontitle);
+            outputLetNav.push('</a>');
+            outputLetNav.push('<span><a onclick="navClicked(' + "'', " + totalTopics +')"><span class="caret arrow"></span></a></span>');
             outputLetNav.push('<ul class="nav collapse');
             if (sectionHasPath) outputLetNav.push(" in");
             outputLetNav.push('" id="#item' + totalTopics + '" aria-expanded="');
