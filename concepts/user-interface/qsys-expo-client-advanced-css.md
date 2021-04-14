@@ -45,10 +45,13 @@ Instead of using a [CSS preprocessor](https://developer.mozilla.org/en-US/docs/G
 
 > For naming convention, to reduce possible collision with user-defined global variables, Expo Client Library reserves the following name prefixes:
 
-1. `--activekey-` - For Display Page's "Active Key"/Menu system styles.
-2. `--body` - For specifications describing the Font styles used by the `body` element. 
-3. `--msg-panel` - For styles used on the "Message Panel"/
-4. `--dds-grid` - For basic measurements to be used along with the Row grid layout.
+| Prefix            | Usage 
+| ----------------- | ---
+| `--activekey-bar` | Display Page's "Active Key"/Menu system styles.
+| `--body`          | Specifications describing the Font styles used by the `body` element. 
+| `--msg-panel`     | Styles used on the "Message Panel".
+| `--dds-grid`      | Basic measurements to be used along with the Row grid layout.
+| `--popup`         | Window record styles.
 
 Let's look at how these [Global variables](https://developer.mozilla.org/en-US/docs/web/css/:root) are used. In the same `expo.css` stylesheet file, the following selectors are defined:
 
@@ -72,11 +75,11 @@ Let's look at how these [Global variables](https://developer.mozilla.org/en-US/d
 }
 ```
 
-But, if we wanted other selectors to use the same color `#333` for any other attribute, which may define a *theme*, then if we later want to vay the *theme*, we would have to search/replace all instances of the constant `#333` in the while stylesheet to get the job done. This process is error-prone.
+But, if we wanted other selectors to use the same color `#333` for any other attribute, which may define a *theme*, then if we later want to vary the *theme*, we would have to search/replace all instances of the constant `#333` in the whole stylesheet to get the job done. This process is error-prone.
 
 Instead, we can define:
 
-```
+```css
 :root {
     --activekey-bar-background: #333;
       .
@@ -121,7 +124,7 @@ For example, the following calculation is valid:
 
 ## --dds-grid- Row Grid Layout calculations
 
-The following image intends to indicate the four values used in the global Variables to define the *Grid* for any of the *Rows*:
+The following image shows the four values used in the global Variables to define the *Grid* for any of the *Rows* in a Display Page record:
 
 ![Grid var calculations](images/expo-grid-rows-vars-calc.png/)
 

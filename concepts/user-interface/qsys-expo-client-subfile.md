@@ -4,7 +4,7 @@ title: Expo Client Subfile
 
 DdsSubfileControl record is a bit more complex than a regular DdsRecord as explained in topic [Expo Client Library](/concepts/user-interface//qsys-expo-client-library).
 
-Let's review the page [Customer Inquiry](https://github.com/ASNA/SunFarm/blob/master/CustomerAppSite/Areas/CustomerAppViews/Pages/CUSTDSPF.cshtml) and focus out attention on the Subfile Control Record named `"SFLC"`, as follows:
+Let's review the page [Customer Inquiry](https://github.com/ASNA/SunFarm/blob/master/CustomerAppSite/Areas/CustomerAppViews/Pages/CUSTDSPF.cshtml) and focus our attention on the Subfile Control Record named `"SFLC"`, as follows:
 
 ```html
 @{
@@ -92,7 +92,7 @@ The first variable comes from DDS keyword `SFLPAG`
 0030.00     A                                      SFLPAG(0014)  
 ```
 
-The second variable comes from the definition of the fields in the subfile. In this case all of the fields in the subfile definition are specifies in the same *line* (or Row). It is possible specify subfiles with more than one *line* (to be presented *folded* on the page). Think of this value as the *height* in *Rows*
+The second variable comes from the definition of the fields in the subfile. In this case all of the fields in the subfile definition are specified in the same *line* (or Row). It is possible specify subfiles with more than one *line* (to be presented *folded* on the page). Think of this value as the *height* in *Rows*
 
 ```html
 <div Row="4" RowSpan="@SFLC_SubfilePage * @SFLC_SubfileRowsPerRecord">
@@ -102,16 +102,17 @@ The second variable comes from the definition of the fields in the subfile. In t
 </div>
 ```
 
+Applying the values and computing:
+
 ```cs
-   // applying the values and computing
-   data-asna-row-from=4
-   data-asna-row-to= (4 + (20 *1)) - 1 = 23
-   
-   // short for 
-   data-asna-row="4-23"
+data-asna-row-from=4
+data-asna-row-to= (4 + (20 *1)) - 1 = 23
+
+// short for 
+data-asna-row="4-23"
 ```
 
-> Changing the value of `SFLC_SubfilePage` requires the re-compilation of the Logic program. Record written to the Subfile need to march records indicated in the Markup.
+> Changing the value of `SFLC_SubfilePage` requires re-compilation of the Logic program. Records written to the Subfile need to march records indicated in the Markup.
 
 Inside the `div` with Row RowSpan in the SubfileControl record comes the `for` loop, defined as follows:
 
@@ -128,7 +129,7 @@ Inside the `div` with Row RowSpan in the SubfileControl record comes the `for` l
 
 This loop will generate *SFL1.Count* number of `DdsSubfileRecord` instances. `rrn` goes from *zero* to `SFL1.Count-1`, where *SFL1.Count* is the number of records *written* to the subfile when the Display Page renders.
 
-`row` may be seem odd. It starts with the *line* number defined in the DDS specifications as follows:
+The `row` variable used in the for loop, may be seem odd. It starts with the *line* number defined in the DDS specifications as follows:
 
 ```
 0007.00     A          R SFL1                      SFL
@@ -160,7 +161,7 @@ Lastly, for each round in the loop, the following Markup generates a record in t
 
 > Note: Field SFCOLOR is a *no-display* ("ND" code in DSPATR keyword). Hidden or *no-display* fields **are not** included in the markup (only in the Model).
 
-Four fields (some decimal and others alpha) are included in the HTML generation for a *GridRow*. If `SFLC_SubfileRowsPerRecord` was greater than one, then there would be more `div` containers withe the *IsGridRow* TagHelper, one per row-in-the-record.
+Four fields (some decimal and others alpha) are included in the HTML generation for a *GridRow*. If `SFLC_SubfileRowsPerRecord` was greater than one, then there would be more `div` containers with the *IsGridRow* TagHelper, one per row-in-the-record.
 
 Let's examine the HTML produced for the *first* record in the subfile (`rrn=0`):
 
@@ -187,11 +188,12 @@ Let's examine the HTML produced for the *first* record in the subfile (`rrn=0`):
 </div>
 ```
 
-Each subfile record is rendered as HTML as `div` element that contains:
-1. One or more `div` container(s) that represents one or more *Row*(s): one-line CSS Grid Layout, just like any Row in non-subfile Rows did. Identified by the class="dds-grid-row".
-2. Some *hidden* QSys.Expo-internal elements used for paging. &#128161; Do not remove these elements when  executing custom JavaScript code on the client.
+Each subfile record is rendered as an HTML `div` element that contains:
+1. One or more `div` container(s) that represents one or more *Row*(s): one-line CSS Grid Layout, just like any Row in non-subfile Rows did, identified by the class="dds-grid-row".
+2. Some *hidden* QSys.Expo-internal elements used for paging. 
+(Please &#128161; Do not remove these elements when executing user-defined JavaScript code on the page).
 
-> There is an extra CSS `dds-row-no-gap` used to render subfile records very close together vertically (to improve look).
+> Note the use of an extra CSS `dds-row-no-gap` style in the **class** attribute. It is used to render subfile records very close together vertically (to improve look).
 
 One last consideration. The markup `VirtualRowCol` became the [data attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) `data-asna-rowcol`, with values, like:
 
