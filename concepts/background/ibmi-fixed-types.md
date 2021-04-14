@@ -11,7 +11,7 @@ The Data handling aspect of the `RPG` Developer's Model, assumed a *conscious* m
 ## Limited resources
 [At the time `RPG` language was invented](https://www.nicklitten.com/a-brief-history-of-the-ibm-rpg-programming-language) - around 60 years ago - computers had very limited resources. 
 
-Saving even a few bytes of memory was crucial, Developers looked for opportunities to shave bytes from data types, for example, if the year of all dates would be on the range:
+Saving even a few bytes of memory was crucial. Developers looked for opportunities to shave bytes from data types, for example, if the year of all dates would be on the range:
 
 >`1940 < date < 1999`
 
@@ -22,7 +22,7 @@ That is, a *sixty-year* span, why waste the `19` year-date numeric prefix. Stori
 The same is true for decimal values, if the *universe* of values allowed for a field was known in advance to be small, Developers knew that indicating to the compiler to *pack* this values, would significantly reduce memory space.
 
 ## Memory Mapping
-Input records entered into the Terminal was transmitted to the IBM i using a *serial* protocol. This is *similar* how Today's Browser request is sent to the *Web Server* using TCP/IP.
+Input records entered into the Terminal were transmitted to the IBM i using a *serial* protocol. This is *similar* how today's Browser request is sent to the *Web Server* using TCP/IP.
 The IBM i Developer would constantly *think* of data-blocks as data serialized into a *packet* or *Memory Buffer*.
 
 If the Developer was *conscious* of how data was laid out into *Memory Buffer*, some very interesting techniques were used, among them:
