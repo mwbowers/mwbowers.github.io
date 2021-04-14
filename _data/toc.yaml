@@ -4,16 +4,16 @@ horizontalnav:
   path: /
   node: home
 - title: Concepts
-  path: /concepts/concepts-overview
+  path: /concepts/concepts-overview.html
   node: Concepts
 - title: Manuals
-  path: /manuals/manuals-overview
+  path: /manuals/manuals-overview.html
   node: Manuals
 - title: Reference
-  path: /reference/reference-overview
+  path: /reference/reference-overview.html
   node: Reference
 - title: Mobile Support
-  path: /mobile/mobile-overview
+  path: /mobile/mobile-overview.html
   node: Mobile
 
 home: {}
@@ -2189,7 +2189,7 @@ Reference:
 ##
 Mobile:
 - sectiontitle: ASNA Mobile Support
-  sectionpath: /reference/monarch-fx/amfASNAMobileSupport.html
+  sectionpath: /mobile/mobile-overview.html
   section:
   - title: The Native Phone App
     path: /reference/monarch-fx/amfNativeMobileApp.html
