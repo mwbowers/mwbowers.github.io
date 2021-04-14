@@ -12,7 +12,7 @@ function navClicked(sectionPath, sourceLink) {
     }
 }
 
-let outputLetNav = [], totalTopics = 0;
+let outputLetNav = [], totalTopics = 0, foundBranchTopic = 0;
 
 function pageIsInSection(tree) {
     function processBranch(branch) {
@@ -55,6 +55,7 @@ function walkTree(tree) {
             // highlight the branch if we are on its page
             if (page.sectionpath === pageURL && !page.nosync) {
                 classes += 'active currentPage';
+                foundBranchTopic = totalTopics;
             }
             if (classes){
                 outputLetNav.push(`class="${classes}"`);
@@ -97,7 +98,14 @@ function renderNav() {
         }
         // Scroll the current menu item into view. We actually pick the item *above*
         // the current item to give some headroom above
-        scrollMenuItem("#jsTOCLeftNav a.currentPage")
+        scrollMenuItem("#jsTOCLeftNav a.currentPage");
+        if (foundBranchTopic > 0){
+            let el = document.getElementById("#item"+foundBranchTopic)
+            if (el) {
+                el.classList.toggle("in");
+            }
+        }
+
     });
 }
 
