@@ -44,9 +44,8 @@ Concepts:
     - title: QSys Job
       path: /concepts/architecture/qsys-job.html
   - sectiontitle: QSys Program Structure
+    sectionpath: /concepts/program-structure/program-structure-overview.html
     section:
-    - title: Overview
-      path: /concepts/program-structure/program-structure-overview.html
     - title: RPG Language Support
       path: /concepts/program-structure/rpg-language-support.html
     - title: ASNA.QSys Program
@@ -62,9 +61,8 @@ Concepts:
     - title: ASNA.QSys Fixed Types
       path: /concepts/program-structure/qsys-fixedtypes.html
   - sectiontitle: QSys User Interface
+    sectionpath: /concepts/user-interface/ui-overview.html
     section:
-    - title: Overview
-      path: /concepts/user-interface/ui-overview.html
     - title: ASP.NET 5 Websites
       path: /concepts/user-interface/asp-net-websites.html
     - title: QSys Expo Display Pages
@@ -84,23 +82,20 @@ Concepts:
     - title: Expo Client Subfile
       path: /concepts/user-interface/qsys-expo-client-subfile.html
   - sectiontitle: Printing
+    sectionpath: /concepts/printing/printing-introduction.html
     section:
-    - title: Printing Overview
-      path: /concepts/printing/printing-introduction.html
     - title: Equivalent CL Print Commands
       path: /concepts/printing/equivalent-cl-print-commands.html
   - sectiontitle: Enhancing Migrated Applications
+    sectionpath: /concepts/enhancements/enhancements-overview.html
     section:
-    - title: Overview
-      path: /concepts/enhancements/enhancements-overview.html
     - title: Adding New Functionality
       path: /concepts/enhancements/new-application-features.html
     - title: Nomad Tools
       path: /concepts/enhancements/nomad-tools.html
   - sectiontitle: Classic Monarch Framework Concepts
+    sectionpath: /reference/monarch-fx/amfASNAMonarchFrameworkConceptsMain.html
     section:
-    - title: Overview
-      path: /reference/monarch-fx/amfASNAMonarchFrameworkConceptsMain.html
     - title: Monarch Framework Introduction
       path: /reference/monarch-fx/amfconIntroductionMain.html
     - title: Execution Context Overview
@@ -110,13 +105,11 @@ Concepts:
     - title: Monarch Job and Program classes
       path: /reference/monarch-fx/amfconMonarchJobandProgramClasses.html
     - sectiontitle: Display File Concepts Overview
+      sectionpath: /reference/monarch-fx/amfconDisplayFiles.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconDisplayFiles.html
       - sectiontitle: ASNA Monarch Theme Components
+        sectionpath: /reference/monarch-fx/amfconDisplayFilesThemeComponents.html
         section:
-        - title: Overview
-          path: /reference/monarch-fx/amfconDisplayFilesThemeComponents.html
         - title: ASNA Monarch Templates
           path: /reference/monarch-fx/amfconDisplayFilesTemplates.html
         - title: ASNA Monarch Master Pages
@@ -124,25 +117,21 @@ Concepts:
         - title: ASNA Monarch Cascading Style Sheets
           path: /reference/monarch-fx/amfconDisplayFilesStyleSheets.html
     - sectiontitle: Web.Config Considerations
+      sectionpath: /reference/monarch-fx/amfconWebConfigConsiderations.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconWebConfigConsiderations.html
       - title: Instructions to Add Web.config Manually
         path: /reference/monarch-fx/amfconWebConfigMissingInstructions.html
     - sectiontitle: Widget Support
+      sectionpath: /reference/monarch-fx/amfconWidgetSupport.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconWidgetSupport.html
       - title: DdsSelection Field Choice Collection Editor
         path: /reference/monarch-fx/amfUnderChoicesList.html
     - sectiontitle: ASNA Monarch Web Server Controls Overview
+      sectionpath: /reference/monarch-fx/amfWebServerControlsOverview.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfWebServerControlsOverview.html
       - sectiontitle: Supported Display File DDS Keywords
+        sectionpath: /reference/monarch-fx/SupportedDspDDS.html
         section:
-        - title: Overview
-          path: /reference/monarch-fx/SupportedDspDDS.html
         - title: Supported Display File Attributes
           path: /reference/monarch-fx/SupportedDSPATR.html
         - title: Check Keyword Support
@@ -150,33 +139,28 @@ Concepts:
     - title: Overview of Aid Keys
       path: /reference/monarch-fx/amfconOverviewofAidKeys.html
     - sectiontitle: Conditional Properties Overview
+      sectionpath: /reference/monarch-fx/amfconConditionalPropertiesOverview.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconConditionalPropertiesOverview.html
       - title: Monarch Web Control Indicator Expression Tester
         path: /reference/monarch-fx/amfMonarchWebControlIndicatorExpressionTester.html
     - sectiontitle: Monarch Framework ASPX Session Overview
+      sectionpath: /reference/monarch-fx/amfconFrameworkASPXSessionOverview.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconFrameworkASPXSessionOverview.html
       - sectiontitle: Enhancing Applications using Non-Display File ASPX Pages
+        sectionpath: /reference/monarch-fx/amfconEnhancingWithNonDisplayFileASPX.html
         section:
-        - title: Overview
-          path: /reference/monarch-fx/amfconEnhancingWithNonDisplayFileASPX.html
         - title: Absolute Positioning in Wings/Monarch
           path: /reference/monarch-fx/amfconAbsolutePositioning.html
     - sectiontitle: Moving Data between Workstation File and Display File
+      sectionpath: /reference/monarch-fx/amfconFrameworkASPXSessionMovingData.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconFrameworkASPXSessionMovingData.html
       - title: Data Flow Overview
         path: /reference/monarch-fx/amfDataFlow.html
     - title: Message Files
       path: /reference/monarch-fx/amfMessageFiles.html
     - sectiontitle: SQL Migration Overview
+      sectionpath: /reference/monarch-fx/amfconSQLStatementExamples.html
       section:
-      - title: Overview
-        path: /reference/monarch-fx/amfconSQLStatementExamples.html
       - title: Multimember File Migration
         path: /reference/monarch-fx/amfconMultiMemberSupport.html
       - title: Multimember File Migration
@@ -185,44 +169,37 @@ Concepts:
 ##
 Manuals:
 - sectiontitle: Framework Manuals
+  sectionpath: /manuals/manuals-overview.html
   section:
-  - title: Manuals Overview
-    path: /manuals/manuals-overview.html
   - sectiontitle: Monarch Operations Management
+    sectionpath: /manuals/mom/management-overview
     section:
-    - title: Operations Management Overview
-      path: /manuals/mom/management-overview
     - title: Printing
       path: /manuals/mom/printing
     - title: Batch Processor
       path: /manuals/mom/batch-processor
   - sectiontitle: Migrations
+    sectionpath: /manuals/migrations/migrations-overview.html
     section:
-    - title: Migrations Overview
-      path: /manuals/migrations/migrations-overview.html
     - title: Considerations for Migrations
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
   - sectiontitle: DataGate
+    sectionpath: /manuals/datagate/datagate-overview.html
     section:
-    - title: DataGate Overview
-      path: /manuals/datagate/datagate-overview.html
         
 ##
 Reference:
 - sectiontitle: Framework Reference
+  sectionpath: /reference/reference-overview.html
   section:
-  - title: Overview
-    path: /reference/reference-overview.html
   - sectiontitle: Runtime - Host Services
+    sectionpath: /reference/host-services/welcome.html
     section:
-    - title: Overview
-      path: /reference/host-services/welcome.html
     - sectiontitle: \!Pages
+      sectionpath: /reference/host-services/exclam-pages-main.html
       section:
-      - title: Overview
-        path: /reference/host-services/exclam-pages-main.html
       - title: \!Diagnose
         path: /reference/host-services/exclam-diagnose.html
       - title: \!EoJ
@@ -230,35 +207,29 @@ Reference:
       - title: \!ExpiredSession
         path: /reference/host-services/exclam-session-expired.html
     - sectiontitle: Class Library
+      sectionpath: /reference/host-services/class-library-main.html
       section:
-      - title: Overview
-        path: /reference/host-services/class-library-main.html
       - sectiontitle: ASNA.Monarch Namespace (ASNA.QSys.HostServices)
+        sectionpath: /reference/host-services/monarch-namespace.html
         section:
-        - title: Overview
-          path: /reference/host-services/monarch-namespace.html
         - sectiontitle: ASNA.Monarch Classes
+          sectionpath: /reference/host-services/monarch-namespace-classes.html
           section:
-          - title: Overview
-            path: /reference/host-services/monarch-namespace-classes.html
           - sectiontitle: ActivationGroupAttribute Class
+            sectionpath: /reference/host-services/activation-group-attribute-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/activation-group-attribute-class.html
             - title: ActivationGroupAttribute Members
               path: /reference/host-services/activation-group-attribute-class-members.html
             - sectiontitle: ActivationGroupAttribute Constructors
+              sectionpath: /reference/host-services/activation-group-attribute-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/activation-group-attribute-class-constructors.html
               - title: ActivationGroupAttribute Constructor()
                 path: /reference/host-services/activation-group-attribute-class-activation-group-attribute-constructor1.html
               - title: ActivationGroupAttribute Constructor (String)
                 path: /reference/host-services/activation-group-attribute-class-activation-group-attribute-constructor2.html
             - sectiontitle: ActivationGroupAttribute Properties
+              sectionpath: /reference/host-services/activation-group-attribute-class-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/activation-group-attribute-class-properties.html
               - title: ActivationGroupAttribute.GroupName Property
                 path: /reference/host-services/activation-group-attribute-class-group-name-property.html
               - title: ActivationGroupAttribute.IsCaller Property
@@ -268,25 +239,22 @@ Reference:
               - title: ActivationGroupAttribute.IsNew Property
                 path: /reference/host-services/activation-group-attribute-classIs-new-property.html
           - sectiontitle: Program Class
+            sectionpath: /reference/host-services/program-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-class.html
             - title: Program Class Members
               path: /reference/host-services/program-class-members.html
             - title: Program Constructor()
               path: /reference/host-services/program-class-program-constructors.html
             - sectiontitle: Program Class Methods
+              sectionpath: /reference/host-services/program-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-class-methods.html
               - title: Program.Dispose Method
                 path: /reference/host-services/program-class-dispose-method.html
               - title: Program.ExecCommand Method
                 path: /reference/host-services/program-class-exec-command-method.html
               - sectiontitle: Program.ExecuteSQL_Query Methods
+                sectionpath: /reference/host-services/program-class-execute-sql-query-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-class-execute-sql-query-methods.html
                 - title: Program.ExecuteSQL_Query Method (string)
                   path: /reference/host-services/program-class-execute-sql-query-method3.html
                 - title: Program.ExecuteSQL_Query Method (string, DBParm)
@@ -296,9 +264,8 @@ Reference:
                 - title: Program.ExecuteSQL_Query Method (DbConnection, string, DBParm[])
                   path: /reference/host-services/program-class-execute-sql-query-method2.html
               - sectiontitle: Program.ExecuteSQL_QueryVerbatim Methods
+                sectionpath: /reference/host-services/program-class-execute-sql-query-verbatim-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-class-execute-sql-query-verbatim-methods.html
                 - title: Program.ExecuteSQL_QueryVerbatim Method (string)
                   path: /reference/host-services/program-class-execute-sql-query-verbatim-method3.html
                 - title: Program.ExecuteSQL_QueryVerbatim Method (string,DBParm[])
@@ -308,9 +275,8 @@ Reference:
                 - title: Program.ExecuteSQL_QueryVerbatim Method (DbConnection,string,DBParm[])
                   path: /reference/host-services/program-class-execute-sql-query-verbatim-method2.html
               - sectiontitle: Program.ExecuteSQL_Statement Methods
+                sectionpath: /reference/host-services/program-class-execute-sql-statement-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-class-execute-sql-statement-methods.html
                 - title: Program.ExecuteSQL_Statement Method (string)
                   path: /reference/host-services/program-class-execute-sql-statement-method3.html
                 - title: Program.ExecuteSQL_Statement Method (string,DBParm[])
@@ -320,9 +286,8 @@ Reference:
                 - title: Program.ExecuteSQL_Statement Method (DbConnection,string, DBParm[])
                   path: /reference/host-services/program-class-execute-sql-statement-method2.html
               - sectiontitle: Program.ExecuteSQL_StatementVerbatim Methods
+                sectionpath: /reference/host-services/program-class-execute-sql-statement-verbatim-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-class-execute-sql-statement-verbatim-methods.html
                 - title: Program.ExecuteSQL_StatementVerbatim Method (string)
                   path: /reference/host-services/program-class-execute-sql-statement-verbatim-method3.html
                 - title: Program.ExecuteSQL_StatementVerbatim Method (string,DBParm[])
@@ -332,9 +297,8 @@ Reference:
                 - title: Program.ExecuteSQL_StatementVerbatim Method (DbConnection, string, DBParm[])
                   path: /reference/host-services/program-class-execute-sql-statement-verbatim-method2.html
               - sectiontitle: Program.RemoveMessage Methods
+                sectionpath: /reference/host-services/program-class-remove-message-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-class-remove-message-methods.html
                 - title: Program.RemoveMessage Method (string)
                   path: /reference/host-services/program-class-remove-message-method1.html
                 - title: Program.RemoveMessage Method (string, string)
@@ -342,9 +306,8 @@ Reference:
               - title: Program.SendExternalMessage Method (string, string, string, ASNA.Monarch.MessageTypes)
                 path: /reference/host-services/program-class-end-external-message-method.html
               - sectiontitle: Program.SendProgramMessage Methods
+                sectionpath: /reference/host-services/program-class-end-program-message-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-class-end-program-message-methods.html
                 - title: Program.SendProgramMessage Method (string)
                   path: /reference/host-services/program-class-end-program-message-method1.html
                 - title: Program.SendProgramMessage Method (string, string, MessageTypes)
@@ -356,15 +319,13 @@ Reference:
                 - title: Program.SendProgramMessage Method (string,string,string,string,MessageTypes)
                   path: /reference/host-services/program-class-end-program-message-method5.html
             - sectiontitle: Program Class Properties
+              sectionpath: /reference/host-services/program-class-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-class-properties.html
               - title: Program.MonarchJob Property
                 path: /reference/host-services/program-class-monarch-job-property.html
             - sectiontitle: Program Class Fields
+              sectionpath: /reference/host-services/program-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-class-fields.html
               - title: Program.SqlQueryResults Field
                 path: /reference/host-services/program-class-sql-query-results-field.html
               - title: Program.SQLCA Field
@@ -372,29 +333,25 @@ Reference:
               - title: Program.StartupMoment Field
                 path: /reference/host-services/program-class-startup-moment-field.html
           - sectiontitle: CallerActivationGroupAttribute Class
+            sectionpath: /reference/host-services/caller-activation-group-attribute-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/caller-activation-group-attribute-class.html
             - title: CallerActivationGroupAttribute Members
               path: /reference/host-services/caller-activation-group-attribute-class-members.html
             - title: CallerActivationGroupAttribute Constructor()
               path: /reference/host-services/caller-activation-group-attribute-class-constructors.html
           - sectiontitle: CLProgram Class
+            sectionpath: /reference/host-services/clprogram-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/clprogram-class.html
             - title: CLProgram Class Members
               path: /reference/host-services/clprogram-class-members.html
             - title: CLProgram Constructor()
               path: /reference/host-services/clprogram-class-constructors.html
             - sectiontitle: CLProgram Class Methods
+              sectionpath: /reference/host-services/clprogram-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/clprogram-class-methods.html
               - sectiontitle: CLProgram.AddLiblEntry Methods
+                sectionpath: /reference/host-services/clprogram-class-add-libl-entry-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/clprogram-class-add-libl-entry-methods.html
                 - title: CLProgram.AddLiblEntry(String)
                   path: /reference/host-services/clprogram-class-add-libl-entry-method1.html
                 - title: CLProgram.AddLiblEntry(string,LiblPosition,string)
@@ -406,9 +363,8 @@ Reference:
               - title: CLProgram.Asterisk_TCat Method
                 path: /reference/host-services/clprogram-class-asterisk-tcat-method.html
               - sectiontitle: CLProgram.ChangeDataArea Methods
+                sectionpath: /reference/host-services/clprogram-class-change-data-area-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/clprogram-class-change-data-area-methods.html
                 - title: CLProgram.ChangeDataArea(string,integer,integer,string)
                   path: /reference/host-services/clprogram-class-change-data-area-method1.html
                 - title: CLProgram.ChangeDataArea(string, string)
@@ -424,17 +380,15 @@ Reference:
               - title: CLProgram.DeleteFile Method
                 path: /reference/host-services/clprogram-class-delete-file-method.html
               - sectiontitle: CLProgram.DeleteOverride Methods
+                sectionpath: /reference/host-services/clprogram-class-delete-override-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/clprogram-class-delete-override-methods.html
                 - title: CLProgram.DeleteOverride(String)
                   path: /reference/host-services/clprogram-class-delete-override-method1.html
                 - title: CLProgram.DeleteOverride(string, OverrideScope)
                   path: /reference/host-services/clprogram-class-delete-override-method2.html
               - sectiontitle: CLProgram.RetrieveDataArea Methods
+                sectionpath: /reference/host-services/clprogram-class-retrieve-data-area-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/clprogram-class-retrieve-data-area-methods.html
                 - title: CLProgram.RetrieveDataArea(string)
                   path: /reference/host-services/clprogram-class-retrieve-data-area-method1.html
                 - title: CLProgram.RetrieveDataArea(string, integer, integer)
@@ -442,17 +396,15 @@ Reference:
               - title: CLProgram.FileExists Method
                 path: /reference/host-services/clprogram-class-fileExists-method.html
               - sectiontitle: CLProgram.InitializePFM Methods
+                sectionpath: /reference/host-services/clprogram-classInitialize-pfm-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/clprogram-classInitialize-pfm-methods.html
                 - title: CLProgram.InitializePFM (string, string, InitializePFMOptions, integer)
                   path: /reference/host-services/clprogram-classInitialize-pfm-method1.html
                 - title: CLProgram.InitializePFM(string, string, integer)
                   path: /reference/host-services/clprogram-classInitialize-pfm-method2.html
               - sectiontitle: CLProgram.OverrideFile Methods
+                sectionpath: /reference/host-services/clprogram-class-override-file-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/clprogram-class-override-file-methods.html
                 - title: CLProgram.OverrideFile(string, OverrideOptions, object)
                   path: /reference/host-services/clprogram-class-override-file-method1.html
                 - title: CLProgram.OverrideFile(string, OverrideOptions, object, OverrideScope)
@@ -476,21 +428,18 @@ Reference:
               - title: CLProgram.RTVJOBA_USER Method
                 path: /reference/host-services/clprogram-class-rtv-joba-user-method.html
           - sectiontitle: Job Class
+            sectionpath: /reference/host-services/job-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/job-class.html
             - title: Job Class Members
               path: /reference/host-services/job-members.html
             - title: Job Constructor()
               path: /reference/host-services/job-class-job-constructors.html
             - sectiontitle: Job Class Methods
+              sectionpath: /reference/host-services/job-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/job-methods.html
               - sectiontitle: Job.DeleteOverride Methods
+                sectionpath: /reference/host-services/job-class-delete-override-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/job-class-delete-override-methods.html
                 - title: Job.DeleteOverride Method(string)
                   path: /reference/host-services/job-class-delete-override-method1.html
                 - title: Job.DeleteOverride Method(string, OverrideScope)
@@ -512,9 +461,8 @@ Reference:
               - title: Job.GetSwitches Method
                 path: /reference/host-services/job-class-get-switches-method.html
               - sectiontitle: Job.OverrideFile Methods
+                sectionpath: /reference/host-services/job-class-override-file-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/job-class-override-file-methods.html
                 - title: Job.OverrideFile Method(string,OverrideOptions,object)
                   path: /reference/host-services/job-class-override-file-method1.html
                 - title: Job.OverrideFile Method(string,OverrideOptions,object,OverrideScope)
@@ -526,9 +474,8 @@ Reference:
               - title: Job.ShutDown Method
                 path: /reference/host-services/job-class-shutdown-method.html
             - sectiontitle: Job Class Properties
+              sectionpath: /reference/host-services/job-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/job-properties.html
               - title: Job.ADO_Connection Property
                 path: /reference/host-services/job-class-ado-connection-property.html
               - title: Job.CurrentJob Property
@@ -542,9 +489,8 @@ Reference:
               - title: Job.StartupMoment Property
                 path: /reference/host-services/job-class-startup-moment-property.html
             - sectiontitle: Job Class Fields
+              sectionpath: /reference/host-services/job-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/job-fields.html
               - title: Job.ExternalQueue Field
                 path: /reference/host-services/job-class-external-queue-field.html
               - title: Job.FileOverrideTable Field
@@ -560,17 +506,15 @@ Reference:
               - title: Job.PsdsJobUser Field
                 path: /reference/host-services/job-class-psds-job-user-field.html
           - sectiontitle: LocalDataCollection Class
+            sectionpath: /reference/host-services/local-data-collection-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/local-data-collection-class.html
             - title: LocalDataCollection Class Members
               path: /reference/host-services/local-data-collection-members.html
             - title: LocalDataCollection Constructor()
               path: /reference/host-services/local-data-collection-class-constructors.html
             - sectiontitle: LocalDataCollection Class Methods
+              sectionpath: /reference/host-services/local-data-collection-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/local-data-collection-methods.html
               - title: LocalDataCollection.Add Method
                 path: /reference/host-services/local-data-collection-class-add-method.html
               - title: LocalDataCollection.Clear Method
@@ -584,9 +528,8 @@ Reference:
               - title: LocalDataCollection.RemoveAll Method
                 path: /reference/host-services/local-data-collection-class-remove-all-method.html
             - sectiontitle: LocalDataCollection Class Properties
+              sectionpath: /reference/host-services/local-data-collection-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/local-data-collection-properties.html
               - title: LocalDataCollection.Count Property
                 path: /reference/host-services/local-data-collection-class-count-property.html
               - title: LocalDataCollection.Names Property
@@ -596,23 +539,20 @@ Reference:
               - title: LocalDataCollection.this Property
                 path: /reference/host-services/local-data-collection-classthis-property.html
           - sectiontitle: Message Class
+            sectionpath: /reference/host-services/message-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/message-class.html
             - title: Message Class Members
               path: /reference/host-services/message-class-members.html
             - sectiontitle: Message Constructors
+              sectionpath: /reference/host-services/message-class-message-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/message-class-message-constructors.html
               - title: Message Constructor (String, MessageTypes)
                 path: /reference/host-services/message-class-message-constructor1.html
               - title: Message Constructor (String,String,String,MessageTypes)
                 path: /reference/host-services/message-class-message-constructor2.html
             - sectiontitle: Message Class Fields
+              sectionpath: /reference/host-services/message-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/message-class-fields.html
               - title: Message.Id Field
                 path: /reference/host-services/message-classId-field.html
               - title: Message.Key Field
@@ -626,17 +566,15 @@ Reference:
               - title: Message.Text Field
                 path: /reference/host-services/message-class-text-field.html
           - sectiontitle: MessageFormatter Class
+            sectionpath: /reference/host-services/message-formatter-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/message-formatter-class.html
             - title: MessageFormatter Class Members
               path: /reference/host-services/message-formatter-members.html
             - title: MessageFormatter Constructor()
               path: /reference/host-services/message-formatter-class-constructors.html
             - sectiontitle: MessageFormatter Class Methods
+              sectionpath: /reference/host-services/message-formatter-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/message-formatter-methods.html
               - title: MessageFormatter.FormatMessage Method
                 path: /reference/host-services/message-formatter-class-format-message-method.html
               - title: MessageFormatter.FormatMessageText Method
@@ -644,43 +582,37 @@ Reference:
               - title: MessageFormatter.IsPhysicalMsgFilePath Method
                 path: /reference/host-services/message-formatter-classIs-physical-msg-file-path-method.html
           - sectiontitle: MessageQueue Class
+            sectionpath: /reference/host-services/message-queue-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/message-queue-class.html
             - title: MessageQueue Class Members
               path: /reference/host-services/message-queue-class-members.html
             - title: MessageQueue Constructor()
               path: /reference/host-services/message-queue-class-constructors.html
             - sectiontitle: MessageQueue Class Methods
+              sectionpath: /reference/host-services/message-queue-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/message-queue-class-methods.html
               - title: MessageQueue.Queue Method
                 path: /reference/host-services/message-queue-class-queue-method.html
             - sectiontitle: MessageQueue Class Fields
+              sectionpath: /reference/host-services/message-queue-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/message-queue-class-fields.html
               - title: MessageQueue.Messages Field
                 path: /reference/host-services/message-queue-class-messages-field.html
           - sectiontitle: NewActivationGroupAttribute Class
+            sectionpath: /reference/host-services/new-activation-group-attribute-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/new-activation-group-attribute-class.html
             - title: NewActivationGroupAttribute Members
               path: /reference/host-services/new-activation-group-attribute-class-members.html
             - title: NewActivationGroupAttribute.NewActivationGroupAttribute Constructor()
               path: /reference/host-services/new-activation-group-attribute-class-constructors.html
           - sectiontitle: Program.DBParm Class
+            sectionpath: /reference/host-services/program-db-parm-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-db-parm-class.html
             - title: Program.DBParm Class Members
               path: /reference/host-services/program-db-parm-class-members.html
             - sectiontitle: Program.DBParm Constructors
+              sectionpath: /reference/host-services/program-db-parm-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-db-parm-class-constructors.html
               - title: Program.DBParm Constructor (DbType)
                 path: /reference/host-services/program-db-parm-class-constructor1.html
               - title: Program.DBParm Constructor (DbType, Object)
@@ -688,15 +620,13 @@ Reference:
               - title: Program.DBParm Constructor (DbType,ParameterDirection, Object)
                 path: /reference/host-services/program-db-parm-class-constructor2.html
           - sectiontitle: Program.DBScaledParm Class
+            sectionpath: /reference/host-services/program-db-scaled-parm-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-db-scaled-parm-class.html
             - title: Program.DBScaledParm Class Members
               path: /reference/host-services/program-db-scaled-parm-class-members.html
             - sectiontitle: Program.DBScaledParm Constructors
+              sectionpath: /reference/host-services/program-db-scaled-parm-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-db-scaled-parm-class-constructors.html
               - title: Program.DBScaledParm Constructor (DbType,int,int)
                 path: /reference/host-services/program-db-scaled-parm-class-constructor1.html
               - title: Program.DBScaledParm Constructor (DbType,Object,int,int)
@@ -704,15 +634,13 @@ Reference:
               - title: Program.DBScaledParm Constructor (DbType,ParameterDirection,Object,int,int)
                 path: /reference/host-services/program-db-scaled-parm-class-constructor2.html
           - sectiontitle: Program.DBStrParm Class
+            sectionpath: /reference/host-services/program-db-str-parm-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-db-str-parm-class.html
             - title: Program.DBStrParm Class Members
               path: /reference/host-services/program-db-str-parm-class-members.html
             - sectiontitle: Program.DBStrParm Constructors
+              sectionpath: /reference/host-services/program-db-str-parm-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-db-str-parm-class-constructors.html
               - title: Program.DBStrParm Constructor (DbType, int)
                 path: /reference/host-services/program-db-str-parm-class-constructor1.html
               - title: Program.DBStrParm Constructor (DbType,Object,int)
@@ -720,15 +648,13 @@ Reference:
               - title: Program.DBStrParm Constructor (DbType,ParameterDirection,Object,int)
                 path: /reference/host-services/program-db-str-parm-class-constructor2.html
           - sectiontitle: Program.SQL_CommunicationsArea Class
+            sectionpath: /reference/host-services/program-sql-communications-area-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-sql-communications-area-class.html
             - title: Program.SQL_CommunicationsArea Class Members
               path: /reference/host-services/program-sql-communications-area-class-members.html
             - sectiontitle: Program.SQL_CommunicationsArea Constructors
+              sectionpath: /reference/host-services/program-sql-communications-area-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-communications-area-class-constructors.html
               - title: Program.SQL_CommunicationsArea Constructor (string)
                 path: /reference/host-services/program-sql-communications-area-class-constructor1.html
               - title: Program.SQL_CommunicationsArea Constructor (string, int, int)
@@ -738,9 +664,8 @@ Reference:
               - title: Program.SQL_CommunicationsArea Constructor (string, SqlException)
                 path: /reference/host-services/program-sql-communications-area-class-constructor4.html
             - sectiontitle: Program.SQL_CommunicationsArea Class Fields
+              sectionpath: /reference/host-services/program-sql-communications-area-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-communications-area-class-fields.html
               - title: Program.SQL_CommunicationsArea.SQL_Exception Field
                 path: /reference/host-services/program-sql-communications-area-class-sql-exception-field.html
               - title: Program.SQL_CommunicationsArea.SQLCOD Field
@@ -750,15 +675,13 @@ Reference:
               - title: Program.SQL_CommunicationsArea.SQLSTT Field
                 path: /reference/host-services/program-sql-communications-area-class-sqlsst-field.html
           - sectiontitle: Program.SqlCursor Class
+            sectionpath: /reference/host-services/program-sql-cursor-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-sql-cursor-class.html
             - title: Program.SqlCursor Class Members
               path: /reference/host-services/program-sql-cursor-class-members.html
             - sectiontitle: Program.SqlCursor Constructors
+              sectionpath: /reference/host-services/program-sql-cursor-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-cursor-class-constructors.html
               - title: Program.SqlCursor Constructor (Program.SqlPreparedStatement)
                 path: /reference/host-services/program-sql-cursor-class-constructor1.html
               - title: Program.SqlCursor Constructor (DbConnection,string)
@@ -766,17 +689,15 @@ Reference:
               - title: Program.SqlCursor Constructor (DbConnection, string, DBParm[])
                 path: /reference/host-services/program-sql-cursor-class-constructor3.html
             - sectiontitle: Program.SqlCursor Class Methods
+              sectionpath: /reference/host-services/program-sql-cursor-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-cursor-class-methods.html
               - title: Program.SqlCursor.Close Method
                 path: /reference/host-services/program-sql-cursor-class-close-method.html
               - title: Program.SqlCursor.Fetch Method
                 path: /reference/host-services/program-sql-cursor-class-fetch-method.html
               - sectiontitle: Program.SqlCursor.Open Methods
+                sectionpath: /reference/host-services/program-sql-cursor-class-open-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/program-sql-cursor-class-open-methods.html
                 - title: Program.SqlCursor.Open Method
                   path: /reference/host-services/program-sql-cursor-class-open-method1.html
                 - title: Program.SqlCursor.Open Method
@@ -784,9 +705,8 @@ Reference:
               - title: Program.SqlCursor.SqlQueryResultsByIndex Method
                 path: /reference/host-services/program-sql-cursor-class-sql-query-results-by-index-method.html
             - sectiontitle: Program.SqlCursor Class Fields
+              sectionpath: /reference/host-services/program-sql-cursor-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-cursor-class-fields.html
               - title: Program.SqlCursor.ScrollType Field
                 path: /reference/host-services/program-sql-cursor-class-scroll-type-field.html
               - title: Program.SqlCursor.SelectStatement Field
@@ -796,51 +716,44 @@ Reference:
               - title: Program.SqlCursor.SqlQueryResults Field
                 path: /reference/host-services/program-sql-cursor-class-sql-query-results-field.html
           - sectiontitle: Program.SqlPreparedStatement Class
+            sectionpath: /reference/host-services/program-sql-prepared-statement-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/program-sql-prepared-statement-class.html
             - title: Program.SqlPreparedStatement Class Members
               path: /reference/host-services/program-sql-prepared-statement-class-members.html
             - sectiontitle: Program.SqlPreparedStatement Constructors
+              sectionpath: /reference/host-services/program-sql-prepared-statement-class-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-prepared-statement-class-constructors.html
               - title: Program.SqlPreparedStatement Constructor (DbConnection, string)
                 path: /reference/host-services/program-sql-prepared-statement-class-constructor1.html
               - title: Program.SqlPreparedStatement Constructor (DbConnection,string,DBParm[])
                 path: /reference/host-services/program-sql-prepared-statement-class-constructor2.html
             - sectiontitle: Program.SqlPreparedStatement Class Fields
+              sectionpath: /reference/host-services/program-sql-prepared-statement-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/program-sql-prepared-statement-class-fields.html
               - title: Program.SqlPreparedStatement.cmd Field
                 path: /reference/host-services/program-sql-prepared-statement-classcmd-field.html
               - title: Program.SqlPreparedStatement.SQLCA Field
                 path: /reference/host-services/program-sql-prepared-statement-class-sqlca-field.html
           - sectiontitle: WebDevice Class
+            sectionpath: /reference/host-services/web-device-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/web-device-class.html
             - title: WebDevice Class Members
               path: /reference/host-services/web-device-class-members.html
             - title: WebDevice Constructor (WebJob)
               path: /reference/host-services/web-device-class-web-device-constructors.html
             - sectiontitle: WebDevice Class Methods
+              sectionpath: /reference/host-services/web-device-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-device-class-methods.html
               - sectiontitle: WebDevice.Attach Methods
+                sectionpath: /reference/host-services/web-device-classAttach-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/web-device-classAttach-methods.html
                 - title: WebDevice.Attach Method(string, WebDisplayFile)
                   path: /reference/host-services/web-device-classAttach-method.html
                 - title: WebDevice.Attach Method(WebDisplayFile)
                   path: /reference/host-services/web-device-classAttach-method2.html
               - sectiontitle: WebDevice.Detach Methods
+                sectionpath: /reference/host-services/web-device-classDetach-methods.html
                 section:
-                - title: Overview
-                  path: /reference/host-services/web-device-classDetach-methods.html
                 - title: WebDevice.Detach Method(string)
                   path: /reference/host-services/web-device-classDetach-method.html
                 - title: WebDevice.Detach Method(WebDisplayFile)
@@ -872,15 +785,13 @@ Reference:
               - title: WebDevice.WaitForDataForUser Method
                 path: /reference/host-services/web-device-class-wait-for-data-for-user-method.html
             - sectiontitle: WebDevice Class Properties
+              sectionpath: /reference/host-services/web-device-class-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-device-class-properties.html
               - title: WebDevice.ActiveDisplayFile Property
                 path: /reference/host-services/web-device-class-active-display-file-property.html
             - sectiontitle: WebDevice Class Fields
+              sectionpath: /reference/host-services/web-device-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-device-class-fields.html
               - title: WebDevice.AbEnd Field
                 path: /reference/host-services/web-device-class-abend-field.html
               - title: WebDevice.AbEndMessage Field
@@ -894,23 +805,20 @@ Reference:
           - title: SystemValue Class
             path: /reference/host-services/system-value-class.html
           - sectiontitle: WebDisplayFile Class
+            sectionpath: /reference/host-services/web-display-file-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/web-display-file-class.html
             - title: WebDisplayFile Class Members
               path: /reference/host-services/web-display-file-class-members.html
             - sectiontitle: WebDisplayFile.WebDisplayFile Constructors
+              sectionpath: /reference/host-services/web-display-file-class-web-display-file-constructors.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-display-file-class-web-display-file-constructors.html
               - title: WebDisplayFile Constructor(String, String, AdgDataSet, Boolean)
                 path: /reference/host-services/web-display-file-class-web-display-file-constructor1.html
               - title: WebDisplayFile Constructor (String, String, AdgDataSet)
                 path: /reference/host-services/web-display-file-class-web-display-file-constructor2.html
             - sectiontitle: WebDisplayFile Class Methods
+              sectionpath: /reference/host-services/web-display-file-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-display-file-class-methods.html
               - title: WebDisplayFile.Attach Method
                 path: /reference/host-services/web-display-file-class-attach-method.html
               - title: WebDisplayFile.ClearSubfile Method
@@ -942,9 +850,8 @@ Reference:
               - title: WebDisplayFile.Write Method
                 path: /reference/host-services/web-display-file-classWrite-method.html
             - sectiontitle: WebDisplayFile Class Properties
+              sectionpath: /reference/host-services/web-display-file-class-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-display-file-class-properties.html
               - title: WebDisplayFile.AttnID Property
                 path: /reference/host-services/web-display-file-class-attnid-property.html
               - title: WebDisplayFile.DataSet Property
@@ -970,9 +877,8 @@ Reference:
               - title: WebDisplayFile.FeedBackSubfileCursorRRN Property
                 path: /reference/host-services/web-display-file-class-feedback-subfile-cursor-rrn-property.html
             - sectiontitle: WebDisplayFile Class Fields
+              sectionpath: /reference/host-services/web-display-file-class-fields.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-display-file-class-fields.html
               - title: WebDisplayFile.Device Field
                 path: /reference/host-services/web-display-file-class-device-field.html
               - title: WebDisplayFile.FileName Field
@@ -980,17 +886,15 @@ Reference:
               - title: WebDisplayFile.PageName Field
                 path: /reference/host-services/web-display-file-class-page-name-field.html
           - sectiontitle: WebJob Class
+            sectionpath: /reference/host-services/web-job-class.html
             section:
-            - title: Overview
-              path: /reference/host-services/web-job-class.html
             - title: WebJob Class Members
               path: /reference/host-services/web-job-class-members.html
             - title: WebJob Constructor()
               path: /reference/host-services/web-job-class-web-job-constructors.html
             - sectiontitle: WebJob Class Methods
+              sectionpath: /reference/host-services/web-job-class-methods.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-job-class-methods.html
               - title: WebJob.AcceptCommands Method
                 path: /reference/host-services/web-job-class-accept-commands-method.html
               - title: WebJob.EndPrograms Method
@@ -1006,17 +910,15 @@ Reference:
               - title: WebJob.Start Method
                 path: /reference/host-services/web-job-class-start-method.html
             - sectiontitle: WebJob Class Properties
+              sectionpath: /reference/host-services/web-job-class-properties.html
               section:
-              - title: Overview
-                path: /reference/host-services/web-job-class-properties.html
               - title: WebJob.CurrentWebJob Property
                 path: /reference/host-services/web-job-class-current-web-job-property.html
               - title: WebJob.Device Property
                 path: /reference/host-services/web-job-class-device-property.html
         - sectiontitle: ASNA.Monarch Enumerations
+          sectionpath: /reference/host-services/monarch-namespace-enumerations.html
           section:
-          - title: Overview
-            path: /reference/host-services/monarch-namespace-enumerations.html
           - title: Command.AidKey Enumeration
             path: /reference/host-services/command-aid-key-enumeration.html
           - title: MessageTypes Enumeration
@@ -1030,25 +932,21 @@ Reference:
           - title: Program.SqlCursor.ScrollTypes Enumeration
             path: /reference/host-services/program-sql-cursor-scroll-types-enumeration.html
   - sectiontitle: DataGate Client
+    sectionpath: /reference/datagate-client/welcome.html
     section:
-    - title: Overview
-      path: /reference/datagate-client/welcome.html
     - sectiontitle: Programmers Guide
+      sectionpath: /reference/datagate-client/programmers-guide-main.html
       section:
-      - title: Overview
-        path: /reference/datagate-client/programmers-guide-main.html
       - sectiontitle: Introduction
+        sectionpath: /reference/datagate-client/introduction-main.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/introduction-main.html
         - title: ASNA DataGate Component Suite for Visual Studio .NET
           path: /reference/datagate-client/datagate-component-suite-overview.html
         - title: Accessing the DCS Assembly
           path: /reference/datagate-client/accessing_the-dcs-assembly.html
       - sectiontitle: Connecting To/From a Database
+        sectionpath: /reference/datagate-client/connectingtoa-database-main.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/connectingtoa-database-main.html
         - title: Connecting to a Database Using a Database Name
           path: /reference/datagate-client/connectingtoa-database.html
         - title: Managing Database Connections
@@ -1058,9 +956,8 @@ Reference:
         - title: Disconnecting From a Database
           path: /reference/datagate-client/disconnectingfroma-database.html
       - sectiontitle: Accessing a File
+        sectionpath: /reference/datagate-client/accessing-afile-main.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/accessing-afile-main.html
         - title: Accessing a File Using the FileAdapter Class
           path: /reference/datagate-client/usingthe-file-adapter-class.html
         - title: Database File Records and AdgDataSet
@@ -1074,57 +971,47 @@ Reference:
         - title: Render-in-Process Options
           path: /reference/datagate-client/setting-renderas-proc.html
       - sectiontitle: DCS for Visual Studio 2019 Tutorials
+        sectionpath: /reference/datagate-client/tutorials-main.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/tutorials-main.html
         - title: Calling Stored Procedures
           path: /reference/datagate-client/calling-stored-procedures.html
       - title: Error Handling
         path: /reference/datagate-client/error-handling.html
     - sectiontitle: Reference
+      sectionpath: /reference/datagate-client/reference-main.html
       section:
-      - title: Overview
-        path: /reference/datagate-client/reference-main.html
       - title: ASNA DataGate Component Suite Model Overview
         path: /reference/datagate-client/asna-datagate-assembly-overview.html
       - sectiontitle: Class Library
+        sectionpath: /reference/datagate-client/class-library-main.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/class-library-main.html
         - sectiontitle: ASNA DataGate Assembly
+          sectionpath: /reference/datagate-client/datagate-assembly.html
           section:
-          - title: Overview
-            path: /reference/datagate-client/datagate-assembly.html
           - sectiontitle: ASNA.DataGate.Client Namespace
+            sectionpath: /reference/datagate-client/datagate-client-namespace.html
             section:
-            - title: Overview
-              path: /reference/datagate-client/datagate-client-namespace.html
             - sectiontitle: ASNA.DataGate.Client Classes
+              sectionpath: /reference/datagate-client/asna-datagate-client-classes.html
               section:
-              - title: Overview
-                path: /reference/datagate-client/asna-datagate-client-classes.html
               - sectiontitle: AdgConnection Class
+                sectionpath: /reference/datagate-client/adg-connection-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/adg-connection-class.html
                 - title: AdgConnection Members
                   path: /reference/datagate-client/adg-connection-members.html
                 - sectiontitle: AdgConnection Constructors
+                  sectionpath: /reference/datagate-client/adg-connection-constructors-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-connection-constructors-main.html
                   - title: AdgConnection(SourceProfile)
                     path: /reference/datagate-client/adg-connection-class-adg-connection-method1.html
                   - title: AdgConnection(string)
                     path: /reference/datagate-client/adg-connection-class-adg-connection-method2.html
                 - sectiontitle: AdgConnection Methods
+                  sectionpath: /reference/datagate-client/adg-connection-methods-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-connection-methods-main.html
                   - sectiontitle: AdgConnection.BeginAutoTransaction Methods
+                    sectionpath: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method-main.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method-main.html
                     - title: AdgConnection.BeginAutoTransaction(String, String)
                       path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method3.html
                     - title: AdgConnection.BeginAutoTransaction(TransactionLevel, String)
@@ -1132,9 +1019,8 @@ Reference:
                     - title: AdgConnection.BeginAutoTransaction(TransactionLevel, String, String)
                       path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method2.html
                   - sectiontitle: AdgConnection.BeginTransaction Methods
+                    sectionpath: /reference/datagate-client/adg-connection-class-begin-transaction-method-main.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-connection-class-begin-transaction-method-main.html
                     - title: AdgConnection.BeginTransaction(String)
                       path: /reference/datagate-client/adg-connection-class-begin-transaction-method3.html
                     - title: AdgConnection.BeginTransaction(TransactionLevel)
@@ -1160,9 +1046,8 @@ Reference:
                   - title: AdgConnection.Open Method
                     path: /reference/datagate-client/adg-connection-class-open-method.html
                 - sectiontitle: AdgConnection Properties
+                  sectionpath: /reference/datagate-client/adg-connection-properties-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-connection-properties-main.html
                   - title: AdgConnection.CurrentUserLibl Property
                     path: /reference/datagate-client/adg-connection-current-user-libl-property.html
                   - title: AdgConnection.SourceProfile Property
@@ -1170,13 +1055,11 @@ Reference:
                   - title: AdgConnection.State Property
                     path: /reference/datagate-client/adg-connection-class-state-property.html
               - sectiontitle: IDataAreaClass
+                sectionpath: /reference/datagate-client/idataarea-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/idataarea-class.html
                 - sectiontitle: IDataarea Members
+                  sectionpath: /reference/datagate-client/idataarea-members.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/idataarea-members.html
                   - title: IDataArea.Length Method
                     path: /reference/datagate-client/idataarea-class-length-property.html
                   - title: IDataArea.InitialValue Method
@@ -1186,9 +1069,8 @@ Reference:
                   - title: IDataArea.Decimals Method
                     path: /reference/datagate-client/idataarea-class-decimals-property.html
                   - sectiontitle: IDataArea Change Methods
+                    sectionpath: /reference/datagate-client/idataarea-class-change-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/idataarea-class-change-methods.html
                     - title: IDataArea Change Method 1
                       path: /reference/datagate-client/idataarea-class-change-method1.html
                     - title: IDataArea Change Method 2
@@ -1202,9 +1084,8 @@ Reference:
                     - title: IDataArea Change Method 6
                       path: /reference/datagate-client/idataarea-class-change-method6.html
                   - sectiontitle: IDataArea.ObjectToParm Methods
+                    sectionpath: /reference/datagate-client/idataarea-class-object-to_parm-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/idataarea-class-object-to_parm-methods.html
                     - title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type)
                       path: /reference/datagate-client/idataarea-class-object-to_parm-method1.html
                     - title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
@@ -1214,9 +1095,8 @@ Reference:
                     - title: IDataArea.ObjectToParm(System.Type, string, integer[])
                       path: /reference/datagate-client/idataarea-class-object-to_parm-method4.html
                   - sectiontitle: IDataArea.ParmToObject Methods
+                    sectionpath: /reference/datagate-client/idataarea-class-parm-to_object-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/idataarea-class-parm-to_object-methods.html
                     - title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type)
                       path: /reference/datagate-client/idataarea-class-parm-to_object-method1.html
                     - title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
@@ -1226,31 +1106,27 @@ Reference:
                     - title: IDataArea.ParmToObject(System.Type, string, integer[])
                       path: /reference/datagate-client/idataarea-class-parm-to_object-method4.html
               - sectiontitle: AdgDataSet Class
+                sectionpath: /reference/datagate-client/adg-dataset-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/adg-dataset-class.html
                 - title: AdgDataSet Members
                   path: /reference/datagate-client/adg-dataset-members.html
                 - sectiontitle: AdgDataSet Constructors
+                  sectionpath: /reference/datagate-client/adg-dataset-class-constructors-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-dataset-class-constructors-main.html
                   - title: AdgDataSet(serialization info, streaming context)
                     path: /reference/datagate-client/adg-dataset-class-adg-dataset-constructor2.html
                   - title: AdgDataSet(String)
                     path: /reference/datagate-client/adg-dataset-class-adg-dataset-constructor1.html
                 - sectiontitle: AdgDataSet Methods
+                  sectionpath: /reference/datagate-client/adg-dataset-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-dataset-methods.html
                   - title: AddPreparedRowAndSetActive
                     path: /reference/datagate-client/adg-dataset-class-add-prepared-row-and-set-active-method.html
                   - title: AdgDataSet.DeleteRow Method
                     path: /reference/datagate-client/adg-dataset-class-delete-row-method.html
                   - sectiontitle: AAdgDataSet.ddRow Methods
+                    sectionpath: /reference/datagate-client/adg-dataset-class-add-row-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-dataset-class-add-row-methods.html
                     - title: AdgDataSet.AddRow(integer)
                       path: /reference/datagate-client/adg-dataset-class-add-row-method1.html
                     - title: AdgDataSet.AddRow(string)
@@ -1260,9 +1136,8 @@ Reference:
                   - title: AdgDataSet.GetFormatName Method
                     path: /reference/datagate-client/adg-dataset-class-get-format-name-method.html
                   - sectiontitle: AdgDataSet.GetFormatTable Methods
+                    sectionpath: /reference/datagate-client/adg-dataset-class-get-format-table-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-dataset-class-get-format-table-methods.html
                     - title: AdgDataSet.GetFormatTable(integer)
                       path: /reference/datagate-client/adg-dataset-class-get-format-table-method.html
                     - title: AdgDataSet.GetFormatTable(String)
@@ -1272,25 +1147,22 @@ Reference:
                   - title: AdgDataSet.InitializeFormats Method
                     path: /reference/datagate-client/adg-dataset-class-initialize-formats-method.html
                   - sectiontitle: AdgDataSet.InsertRow Methods
+                    sectionpath: /reference/datagate-client/adg-dataset-class-insert-row-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-dataset-class-insert-row-methods.html
                     - title: AdgDataSet.InsertRow(integer, integer)
                       path: /reference/datagate-client/adg-dataset-class-insert-row-method1.html
                     - title: AdgDataSet.InsertRow(string, integer)
                       path: /reference/datagate-client/adg-dataset-class-insert-row-method2.html
                   - sectiontitle: AdgDataSet.NewKeyTable Methods
+                    sectionpath: /reference/datagate-client/adg-dataset-class-new-key-table-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-dataset-class-new-key-table-methods.html
                     - title: AdgDataSet.NewKeyTable(string)
                       path: /reference/datagate-client/adg-dataset-class-new-key-table-method1.html
                     - title: AdgDataSet.NewKeyTable(integer)
                       path: /reference/datagate-client/adg-dataset-class-new-key-table-method2.html
                   - sectiontitle: AdgDataSet.PrepareRow Methods
+                    sectionpath: /reference/datagate-client/adg-dataset-class-prepare-row-method-main.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-dataset-class-prepare-row-method-main.html
                     - title: AdgDataSet.PrepareRow(integer)
                       path: /reference/datagate-client/adg-dataset-class-prepare-row-method1.html
                     - title: AdgDataSet.PrepareRow(string)
@@ -1298,17 +1170,15 @@ Reference:
                     - title: AdgDataSet.PrepareRow(string, System.Data.DataRow)
                       path: /reference/datagate-client/adg-dataset-class-prepare-row-method3.html
                   - sectiontitle: AdgDataSet.SetActive Methods
+                    sectionpath: /reference/datagate-client/adg-dataset-class-set-active-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-dataset-class-set-active-methods.html
                     - title: AdgDataSet.SetActive(integer,integer)
                       path: /reference/datagate-client/adg-dataset-class-set-active-method1.html
                     - title: SetActive(string,integer)
                       path: /reference/datagate-client/adg-dataset-class-set-active-method2.html
                 - sectiontitle: AdgDataSet Properties
+                  sectionpath: /reference/datagate-client/adg-dataset-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-dataset-properties.html
                   - title: AdgDataSet.ActiveRow Property
                     path: /reference/datagate-client/adg-dataset-class-active-row-property.html
                   - title: AdgDataSet.CurrentFormatIndex Property
@@ -1320,15 +1190,13 @@ Reference:
                   - title: AdgDataSet.Formats Property
                     path: /reference/datagate-client/adg-dataset-class-formats-property.html
               - sectiontitle: AdgFactory Class
+                sectionpath: /reference/datagate-client/adg-factory-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/adg-factory-class.html
                 - title: AdgFactory Members
                   path: /reference/datagate-client/adg-factory-members.html
                 - sectiontitle: AdgFactory Methods
+                  sectionpath: /reference/datagate-client/adg-factory-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-factory-methods.html
                   - title: AdgFactory.NewDirectory Method
                     path: /reference/datagate-client/adg-factory-class-new-directory-method.html
                   - title: AdgFactory.NewFile Method
@@ -1336,9 +1204,8 @@ Reference:
                   - title: AdgFactory.NewMember Method
                     path: /reference/datagate-client/adg-factory-class-new-member-method.html
                   - sectiontitle: AdgFactory.ReadXml Methods
+                    sectionpath: /reference/datagate-client/adg-factory-class-read-xml-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-factory-class-read-xml-methods.html
                     - title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions)
                       path: /reference/datagate-client/adg-factory-class-read-xml-method1.html
                     - title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
@@ -1348,9 +1215,8 @@ Reference:
                     - title: ReadXml(AdgConnection, string, AdgObjectTypes, string, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
                       path: /reference/datagate-client/adg-factory-class-read-xml-method4.html
                   - sectiontitle: AdgFactory.NewDataArea Methods
+                    sectionpath: /reference/datagate-client/adg-factory-class-new-dataarea-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/adg-factory-class-new-dataarea-methods.html
                     - title: AdgFactory.NewDataArea Method
                       path: /reference/datagate-client/adg-factory-class-new-dataarea-method1.html
                     - title: AdgFactory.NewDataArea Method
@@ -1358,21 +1224,18 @@ Reference:
                   - title: AdgFactory.NewLibraryList Method
                     path: /reference/datagate-client/adg-factory-class-new-library-list-method.html
               - sectiontitle: AdgKeyTable Class
+                sectionpath: /reference/datagate-client/adg-key-table-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/adg-key-table-class.html
                 - title: AdgKeyTable Members
                   path: /reference/datagate-client/adg-key-table-members.html
                 - sectiontitle: AdgKeyTable Constructors
+                  sectionpath: /reference/datagate-client/adg-key-table-adg-key-table-constructors-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-key-table-adg-key-table-constructors-main.html
                   - title: AdgKeyTable(System.Data.DataTable)
                     path: /reference/datagate-client/adg-key-table-class-adg-key-table-constructor.html
                 - sectiontitle: AdgKeyTable Properties
+                  sectionpath: /reference/datagate-client/adg-key-table-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/adg-key-table-properties.html
                   - title: AdgKeyTable.DataTable Property
                     path: /reference/datagate-client/adg-key-table-class-data-table-property.html
                   - title: AdgKeyTable.KeyPartCount Property
@@ -1382,15 +1245,13 @@ Reference:
               - title: AdgTable Class
                 path: /reference/datagate-client/adg-table-class.html
               - sectiontitle: As400Program Class
+                sectionpath: /reference/datagate-client/as400program-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/as400program-class.html
                 - title: As400Program Members
                   path: /reference/datagate-client/as400program-members.html
                 - sectiontitle: As400Program Constructors
+                  sectionpath: /reference/datagate-client/as400program-class-as400program-method-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/as400program-class-as400program-method-main.html
                   - title: As400Program()
                     path: /reference/datagate-client/as400program-class-as400program-method1.html
                   - title: As400Program(AdgConnection)
@@ -1398,9 +1259,8 @@ Reference:
                   - title: As400Program(AdgConnection, string)
                     path: /reference/datagate-client/as400program-class-as400program-method3.html
                 - sectiontitle: As400Program Methods
+                  sectionpath: /reference/datagate-client/as400program-methods-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/as400program-methods-main.html
                   - title: As400Program.AppendParm Method
                     path: /reference/datagate-client/as400program-class-append-parm-method.html
                   - title: As400Program.AppendParms Method
@@ -1412,9 +1272,8 @@ Reference:
                   - title: As400Program.GetParmByName Method
                     path: /reference/datagate-client/as400program-class-get-parm-byName-method.html
                   - sectiontitle: As400Program.ObjectToParm Methods
+                    sectionpath: /reference/datagate-client/as400program-class-object-to_parm-method-main.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/as400program-class-object-to_parm-method-main.html
                     - title: As400Program.ObjectToParm(ProgParm, object)
                       path: /reference/datagate-client/as400program-class-object-to_parm-method4.html
                     - title: As400Program.ObjectToParm(ProgParm, object, int)
@@ -1424,9 +1283,8 @@ Reference:
                     - title: As400Program.ObjectToParm(object, string, int[])
                       path: /reference/datagate-client/as400program-class-object-to_parm-method2.html
                   - sectiontitle: As400Program.ParmToObject Methods
+                    sectionpath: /reference/datagate-client/as400program-class-parm-to_object-method-main.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/as400program-class-parm-to_object-method-main.html
                     - title: As400Program.ParmToObject(ProgParm, System.Type)
                       path: /reference/datagate-client/as400program-class-parm-to_object-method3.html
                     - title: As400Program.ParmToObject(ProgParm, System.Type, integer)
@@ -1438,9 +1296,8 @@ Reference:
                   - title: As400Program.SetParmsZeroValue Method
                     path: /reference/datagate-client/as400program-class-set-parms-zero-value-method.html
                 - sectiontitle: As400Program Properties
+                  sectionpath: /reference/datagate-client/as400program-properties-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/as400program-properties-main.html
                   - title: As400Program.Connection Property
                     path: /reference/datagate-client/as400program-class-connection-property.html
                   - title: As400Program.Parameters Property
@@ -1448,15 +1305,13 @@ Reference:
                   - title: As400Program.ProgramPath Method
                     path: /reference/datagate-client/as400program-class-program-path-property.html
               - sectiontitle: AuthorityEntry Class
+                sectionpath: /reference/datagate-client/authority-entry-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/authority-entry-class.html
                 - title: AuthorityEntry Members
                   path: /reference/datagate-client/authority-entry-members.html
                 - sectiontitle: AuthorityEntry.Constructors
+                  sectionpath: /reference/datagate-client/authority-entry-class-authority-entry-constructors.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/authority-entry-class-authority-entry-constructors.html
                   - title: AuthorityEntry()
                     path: /reference/datagate-client/authority-entry-class-authority-entry-constructor1.html
                   - title: AuthorityEntry(string)
@@ -1466,9 +1321,8 @@ Reference:
                   - title: AuthorityEntry(string, AuthorityTypes, boolean)
                     path: /reference/datagate-client/authority-entry-class-authority-entry-constructor4.html
                 - sectiontitle: AuthorityEntry Fields
+                  sectionpath: /reference/datagate-client/authority-entry-fields.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/authority-entry-fields.html
                   - title: AuthorityEntry.AuthorityType Field
                     path: /reference/datagate-client/authority-entry-class-authority-type-field.html
                   - title: AuthorityEntry.IsGroupAccount Field
@@ -1476,15 +1330,13 @@ Reference:
                   - title: AuthorityEntry.Username Field
                     path: /reference/datagate-client/authority-entry-class-username-field.html
               - sectiontitle: Dependent Class
+                sectionpath: /reference/datagate-client/dependent-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/dependent-class.html
                 - title: Dependent Members
                   path: /reference/datagate-client/dependent-members.html
                 - sectiontitle: Dependent Properties
+                  sectionpath: /reference/datagate-client/dependent-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/dependent-properties.html
                   - title: Dependent.AdgObjectType Property
                     path: /reference/datagate-client/dependent-class-adg-object-type-property.html
                   - title: Dependent.DependentType Property
@@ -1492,15 +1344,13 @@ Reference:
                   - title: Dependent.PathName Property
                     path: /reference/datagate-client/dependent-class-path-name-property.html
               - sectiontitle: FileAdapter Class
+                sectionpath: /reference/datagate-client/file-adapter-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/file-adapter-class.html
                 - title: FileAdapter Members
                   path: /reference/datagate-client/file-adapter-members.html
                 - sectiontitle: FileAdapter Constructors
+                  sectionpath: /reference/datagate-client/file-adapter-class-file-adapter-method-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/file-adapter-class-file-adapter-method-main.html
                   - title: FileAdapter.FileAdapter Constructor ()
                     path: /reference/datagate-client/file-adapter-class-file-adapter-method1.html
                   - title: FileAdapter(AdgConnection)
@@ -1510,9 +1360,8 @@ Reference:
                   - title: FileAdapter(AdgConnection, string, string)
                     path: /reference/datagate-client/file-adapter-class-file-adapter-method4.html
                 - sectiontitle: FileAdapter Methods
+                  sectionpath: /reference/datagate-client/file-adapter-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/file-adapter-methods.html
                   - title: FileAdapter.AddRecord Method
                     path: /reference/datagate-client/file-adapter-class-add-record-method.html
                   - title: FileAdapter.ChangeCurrent Method
@@ -1574,9 +1423,8 @@ Reference:
                   - title: FileAdapter.SetFormat Method
                     path: /reference/datagate-client/file-adapter-class-set-format-method.html
                 - sectiontitle: FileAdapter Properties
+                  sectionpath: /reference/datagate-client/file-adapter-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/file-adapter-properties.html
                   - title: FileAdapter.AccessMode Property
                     path: /reference/datagate-client/file-adapter-class-access-mode-property.html
                   - title: FileAdapter.Connection Property
@@ -1604,15 +1452,13 @@ Reference:
                   - title: FileAdapter.Status Property
                     path: /reference/datagate-client/file-adapter-class-status-property.html
               - sectiontitle: IAdgObject Class
+                sectionpath: /reference/datagate-client/iadg-object-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/iadg-object-class.html
                 - title: IAdgObject Members
                   path: /reference/datagate-client/iadg-object-members.html
                 - sectiontitle: IAdgObject Methods
+                  sectionpath: /reference/datagate-client/iadg-object-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/iadg-object-methods.html
                   - title: IAdgObject.Create Method
                     path: /reference/datagate-client/iadg-object-class-create-method.html
                   - title: IAdgObject.Duplicate Method
@@ -1638,17 +1484,15 @@ Reference:
                   - title: IAdgObject.WriteBases Method
                     path: /reference/datagate-client/iadg-object-class-write-bases-method.html
                   - sectiontitle: IAdgObject.WriteXml Methods
+                    sectionpath: /reference/datagate-client/iadg-object-class-write-xml-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/iadg-object-class-write-xml-methods.html
                     - title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
                       path: /reference/datagate-client/iadg-object-class-write-xml-method1.html
                     - title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler)
                       path: /reference/datagate-client/iadg-object-class-write-xml-method2.html
                 - sectiontitle: IAdgObject Properties
+                  sectionpath: /reference/datagate-client/iadg-object-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/iadg-object-properties.html
                   - title: IAdgObject.AdgObjectType Property
                     path: /reference/datagate-client/iadg-object-class-adg-object-type-property.html
                   - title: IAdgObject.AdgSubType Property
@@ -1686,19 +1530,16 @@ Reference:
                   - title: IAdgObject.Text Property
                     path: /reference/datagate-client/iadg-object-class-text-property.html
               - sectiontitle: IAdgTransaction Interface
+                sectionpath: /reference/datagate-client/iadg-transaction-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/iadg-transaction-class.html
                 - title: IAdgTransaction Members
                   path: /reference/datagate-client/iadg-transaction-members.html
                 - sectiontitle: IAdgTransaction Methods
+                  sectionpath: /reference/datagate-client/iadg-transaction-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/iadg-transaction-methods.html
                   - sectiontitle: IAdgTransaction.Commit Methods
+                    sectionpath: /reference/datagate-client/iadg-transaction-class-commit-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/iadg-transaction-class-commit-methods.html
                     - title: IAdgTransaction.Commit Method()
                       path: /reference/datagate-client/iadg-transaction-class-commit-method1.html
                     - title: IAdgTransaction.Commit(string)
@@ -1706,9 +1547,8 @@ Reference:
                   - title: IAdgTransaction.Rollback Method
                     path: /reference/datagate-client/iadg-transaction-class-rollback-method.html
                 - sectiontitle: IAdgTransaction Properties
+                  sectionpath: /reference/datagate-client/iadg-transaction-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/iadg-transaction-properties.html
                   - title: IAdgTransaction.Connection Property
                     path: /reference/datagate-client/iadg-transaction-class-connection-property.html
                   - title: IAdgTransaction.Name Property
@@ -1716,15 +1556,13 @@ Reference:
                   - title: IAdgTransaction.TransactionLevel Property
                     path: /reference/datagate-client/iadg-transaction-class-transaction-level-property.html
               - sectiontitle: IDirectory Interface
+                sectionpath: /reference/datagate-client/idirectory-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/idirectory-class.html
                 - title: IDirectory Members
                   path: /reference/datagate-client/idirectory-members.html
                 - sectiontitle: IDirectory Methods
+                  sectionpath: /reference/datagate-client/idirectory-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/idirectory-methods.html
                   - title: IDirectory.AttachRemoteDirectory Method
                     path: /reference/datagate-client/idirectory-class-attach-remote-directory-method.html
                   - title: IDirectory.CreateSubDirectory Method
@@ -1734,23 +1572,20 @@ Reference:
                   - title: IDirectory.RepairObjects Method
                     path: /reference/datagate-client/idirectory-class-repair-objects-method.html
                 - sectiontitle: IDirectory Properties
+                  sectionpath: /reference/datagate-client/idirectory-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/idirectory-properties.html
                   - title: IDirectory.ItemList Property
                     path: /reference/datagate-client/idirectory-class-item-list-property.html
                   - title: IDirectory.RemotePathName Property
                     path: /reference/datagate-client/idirectory-class-remote-path-name-property.html
               - sectiontitle: IFileObject Interface
+                sectionpath: /reference/datagate-client/ifile-object-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/ifile-object-class.html
                 - title: IFileObject Members
                   path: /reference/datagate-client/ifile-object-members.html
                 - sectiontitle: IFileObject Methods
+                  sectionpath: /reference/datagate-client/ifile-object-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/ifile-object-methods.html
                   - title: IFileObject.Copy Method
                     path: /reference/datagate-client/ifile-object-class-copy-method.html
                   - title: IFileObject.GetAdgDataSet Method
@@ -1768,23 +1603,20 @@ Reference:
                   - title: IFileObject.WriteDefinition Method
                     path: /reference/datagate-client/ifile-object-class-write-definition-method.html
                 - sectiontitle: IFileObject Properties
+                  sectionpath: /reference/datagate-client/ifile-object-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/ifile-object-properties.html
                   - title: IFileObject.MemberCount Property
                     path: /reference/datagate-client/ifile-object-class-member-count-property.html
                   - title: IFileObject.Members Property
                     path: /reference/datagate-client/ifile-object-class-members-property.html
               - sectiontitle: ILibraryList Interface
+                sectionpath: /reference/datagate-client/ilibrary-list-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/ilibrary-list-class.html
                 - title: ILibraryList Members
                   path: /reference/datagate-client/ilibrary-list-members.html
                 - sectiontitle: ILibraryList Methods
+                  sectionpath: /reference/datagate-client/ilibrary-list-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/ilibrary-list-methods.html
                   - title: ILibraryList.AddEntry Method
                     path: /reference/datagate-client/ilibrary-list-class-add-entry-method.html
                   - title: ILibraryList.EnumerateCurrentSystem Method
@@ -1794,9 +1626,8 @@ Reference:
                   - title: ILibraryList.RemoveEntry Method
                     path: /reference/datagate-client/ilibrary-list-class-remove-entry-method.html
                 - sectiontitle: ILibraryList Members
+                  sectionpath: /reference/datagate-client/ilibrary-list-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/ilibrary-list-properties.html
                   - title: ILibraryList.CurrentSystemLibs Property
                     path: /reference/datagate-client/ilibrary-list-class-current-system-libs-property.html
                   - title: ILibraryList.CurrentUserLibs Property
@@ -1806,23 +1637,20 @@ Reference:
                   - title: ILibraryList.UserConfig Property
                     path: /reference/datagate-client/ilibrary-list-class-user-config-property.html
               - sectiontitle: IMember Interface
+                sectionpath: /reference/datagate-client/imember-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/imember-class.html
                 - title: IMember Members
                   path: /reference/datagate-client/imember-members.html
                 - sectiontitle: IMember Methods
+                  sectionpath: /reference/datagate-client/imember-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/imember-methods.html
                   - title: IMember.Clear Method
                     path: /reference/datagate-client/imember-class-clear-method.html
                   - title: IMember.Initialize Method
                     path: /reference/datagate-client/imember-class-initialize-method.html
                 - sectiontitle: IMember Properties
+                  sectionpath: /reference/datagate-client/imember-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/imember-properties.html
                   - title: IMember.ActiveRecords Property
                     path: /reference/datagate-client/imember-class-active-records-property.html
                   - title: IMember.DeletedRecords Property
@@ -1830,23 +1658,20 @@ Reference:
                   - title: IMember.Extension Property
                     path: /reference/datagate-client/imember-class-extension-property.html
               - sectiontitle: XmlInfoEventArgs Class
+                sectionpath: /reference/datagate-client/xml-info-event-args-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/xml-info-event-args-class.html
                 - title: XmlInfoEventArgs Members
                   path: /reference/datagate-client/xml-info-event-args-members.html
                 - sectiontitle: XmlInfoEventArgs Fields
+                  sectionpath: /reference/datagate-client/xml-info-event-args-fields.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/xml-info-event-args-fields.html
                   - title: XmlInfoEventArgs.Message Field
                     path: /reference/datagate-client/xml-info-event-args-class-message-field.html
                   - title: XmlInfoEventArgs.Type Field
                     path: /reference/datagate-client/xml-info-event-args-class-type-field.html
             - sectiontitle: ASNA.DataGate.Client Enumerations
+              sectionpath: /reference/datagate-client/datagate-client-enumerations.html
               section:
-              - title: Overview
-                path: /reference/datagate-client/datagate-client-enumerations.html
               - title: FileAdapter.AdapterStatus Enumeration
                 path: /reference/datagate-client/file-adapter-adapter-status-enumeration.html
               - title: InitMemberOptions Enumeration
@@ -1858,23 +1683,19 @@ Reference:
               - title: XmlOptions Enumeration
                 path: /reference/datagate-client/xml-options-enumeration.html
           - sectiontitle: ASNA.DataGate.Common Namespace
+            sectionpath: /reference/datagate-client/datagate-common-namespace.html
             section:
-            - title: Overview
-              path: /reference/datagate-client/datagate-common-namespace.html
             - sectiontitle: ASNA.DataGate.Common Classes
+              sectionpath: /reference/datagate-client/asna-datagate-common-classes.html
               section:
-              - title: Overview
-                path: /reference/datagate-client/asna-datagate-common-classes.html
               - sectiontitle: dgException Class
+                sectionpath: /reference/datagate-client/dgexception-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/dgexception-class.html
                 - title: dgException Members
                   path: /reference/datagate-client/dgexception-class-members.html
                 - sectiontitle: dgException Fields
+                  sectionpath: /reference/datagate-client/dgexception-class-fields-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/dgexception-class-fields-main.html
                   - title: dgException.Error Field
                     path: /reference/datagate-client/dgexception-class-error-field.html
                   - title: dgException.ErrorClass Field
@@ -1884,27 +1705,23 @@ Reference:
                   - title: dgException.Text Field
                     path: /reference/datagate-client/dgexception-class-text-field.html
                 - sectiontitle: dgException Methods
+                  sectionpath: /reference/datagate-client/dgexception-class-methods-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/dgexception-class-methods-main.html
                   - title: dgException.GetVerboseText Method
                     path: /reference/datagate-client/dgexception-class-get-verbose-text-method.html
                 - sectiontitle: dgException Properties
+                  sectionpath: /reference/datagate-client/dgexception-class-properties-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/dgexception-class-properties-main.html
                   - title: dgException.Message Property
                     path: /reference/datagate-client/dgexception-class-message-property.html
               - sectiontitle: FieldType Class
+                sectionpath: /reference/datagate-client/field-type-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/field-type-class.html
                 - title: FieldType Members
                   path: /reference/datagate-client/field-type-members.html
                 - sectiontitle: FieldType Methods
+                  sectionpath: /reference/datagate-client/field-type-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/field-type-methods.html
                   - title: FieldType.NewBinary Method
                     path: /reference/datagate-client/field-type-class-new-binary-method.html
                   - title: FieldType.NewChar Method
@@ -1930,9 +1747,8 @@ Reference:
                   - title: FieldType.NewZoned Method
                     path: /reference/datagate-client/field-type-class-new-zoned-method.html
                 - sectiontitle: FieldType Properties
+                  sectionpath: /reference/datagate-client/field-type-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/field-type-properties.html
                   - title: FieldType.ByteLength Property
                     path: /reference/datagate-client/field-type-class-byte-length-property.html
                   - title: FieldType.DataType Property
@@ -1946,9 +1762,8 @@ Reference:
                   - title: FieldType.Scale Property
                     path: /reference/datagate-client/field-type-class-scale-property.html
             - sectiontitle: ASNA.DataGate.Common Enumerations
+              sectionpath: /reference/datagate-client/datagate-common-enumerations.html
               section:
-              - title: Overview
-                path: /reference/datagate-client/datagate-common-enumerations.html
               - title: AccessMode Enumeration
                 path: /reference/datagate-client/access-mode-enumeration.html
               - title: AccessResult Enumeration
@@ -2020,75 +1835,62 @@ Reference:
               - title: WaitOptions Enumeration
                 path: /reference/datagate-client/wait-options-enumeration.html
           - sectiontitle: ASNA.DataGate.DataLink Namespace
+            sectionpath: /reference/datagate-client/datagate-data-link-namespace.html
             section:
-            - title: Overview
-              path: /reference/datagate-client/datagate-data-link-namespace.html
             - sectiontitle: ASNA.DataGate.DataLink Classes
+              sectionpath: /reference/datagate-client/asna-datagate-data-link-classes.html
               section:
-              - title: Overview
-                path: /reference/datagate-client/asna-datagate-data-link-classes.html
               - sectiontitle: ProgParmClass
+                sectionpath: /reference/datagate-client/prog-parm-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/prog-parm-class.html
                 - title: ProgParm Members
                   path: /reference/datagate-client/prog-parm-members.html
                 - sectiontitle: ProgParm.ProgParm Constructors
+                  sectionpath: /reference/datagate-client/prog-parm-class-prog-parm-method-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/prog-parm-class-prog-parm-method-main.html
                   - title: ProgParm(ProgParmType, DataDirection)
                     path: /reference/datagate-client/prog-parm-class-prog-parm-method1.html
                   - title: ProgParm(StructureType, DataDirection)
                     path: /reference/datagate-client/prog-parm-class-prog-parm-method2.html
               - sectiontitle: ProgParmType Class
+                sectionpath: /reference/datagate-client/prog-parm-type-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/prog-parm-type-class.html
                 - title: ProgParmType Members
                   path: /reference/datagate-client/prog-parm-type-members.html
                 - sectiontitle: ProgParmType Constructors
+                  sectionpath: /reference/datagate-client/prog-parm-type-constructors-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/prog-parm-type-constructors-main.html
                   - title: ProgParmType(string, integer, FieldType)
                     path: /reference/datagate-client/prog-parm-type-class-prog-parm-type-constructor.html
               - sectiontitle: StructureType Class
+                sectionpath: /reference/datagate-client/structure-type-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/structure-type-class.html
                 - title: StructureType Members
                   path: /reference/datagate-client/structure-type-members.html
                 - sectiontitle: StructureType Constructors
+                  sectionpath: /reference/datagate-client/structure-type-constructors-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/structure-type-constructors-main.html
                   - title: StructureType.StructureType(string, integer, object)
                     path: /reference/datagate-client/structure-type-class-structure-type-constructor.html
           - sectiontitle: ASNA.DataGate.Providers Namespace
+            sectionpath: /reference/datagate-client/datagate-providers-namespace.html
             section:
-            - title: Overview
-              path: /reference/datagate-client/datagate-providers-namespace.html
             - sectiontitle: ASNA.DataGate.Providers Classes
+              sectionpath: /reference/datagate-client/asna-datagate-providers-classes.html
               section:
-              - title: Overview
-                path: /reference/datagate-client/asna-datagate-providers-classes.html
               - sectiontitle: DatabaseAttributes Class
+                sectionpath: /reference/datagate-client/database-attribute-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/database-attribute-class.html
                 - title: DatabaseAttributes Members
                   path: /reference/datagate-client/database-attributes-members.html
                 - sectiontitle: DatabaseAttributes Constructors
+                  sectionpath: /reference/datagate-client/database-attributes-constructors.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/database-attributes-constructors.html
                   - title: DatabaseAttributes.DatabaseAttributes()
                     path: /reference/datagate-client/database-attributes-class-constructor1.html
                 - sectiontitle: DatabaseAttributes Fields
+                  sectionpath: /reference/datagate-client/database-attributes-fields.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/database-attributes-fields.html
                   - title: DatabaseAttributes.BusySeats Field
                     path: /reference/datagate-client/database-attributes-class-busy-seats-field.html
                   - title: DatabaseAttributes.Database Field
@@ -2108,21 +1910,18 @@ Reference:
                   - title: DatabaseAttributes.TotalSeats Field
                     path: /reference/datagate-client/database-attributes-class-total-seats-field.html
               - sectiontitle: DatabaseName Class
+                sectionpath: /reference/datagate-client/database-name-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/database-name-class.html
                 - title: DatabaseName Members
                   path: /reference/datagate-client/database-name-members.html
                 - sectiontitle: DatabaseName Constructors
+                  sectionpath: /reference/datagate-client/database-name-constructors.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/database-name-constructors.html
                   - title: DatabaseName.DatabaseName()
                     path: /reference/datagate-client/database-name-class-constructor1.html
                 - sectiontitle: DatabaseName Methods
+                  sectionpath: /reference/datagate-client/database-name-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/database-name-methods.html
                   - title: DatabaseName.Deserialize Method
                     path: /reference/datagate-client/database-name-class-deserialize-method.html
                   - title: DatabaseName.FromSourceProfile Method
@@ -2136,9 +1935,8 @@ Reference:
                   - title: DatabaseName.Serialize Method
                     path: /reference/datagate-client/database-name-class-serialize-method.html
                   - sectiontitle: DatabaseName.ToSourceProfile Methods
+                    sectionpath: /reference/datagate-client/database-name-class-to_source-profile-methods.html
                     section:
-                    - title: Overview
-                      path: /reference/datagate-client/database-name-class-to_source-profile-methods.html
                     - title: DatabaseName.ToSourceProfile(String)
                       path: /reference/datagate-client/database-name-class-to_source-profile-method1.html
                     - title: DatabaseName.ToSourceProfile(string, boolean)
@@ -2150,29 +1948,25 @@ Reference:
                   - title: DatabaseName.Unregister Method
                     path: /reference/datagate-client/database-name-class-unregister-method.html
               - sectiontitle: FileOpenAttr Class
+                sectionpath: /reference/datagate-client/file-open-attr-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/file-open-attr-class.html
                 - title: FileOpenAttr Members
                   path: /reference/datagate-client/file-open-attr-class-members.html
                 - sectiontitle: FileOpenAttr Constructors
+                  sectionpath: /reference/datagate-client/file-open-attr-constructors.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/file-open-attr-constructors.html
                   - title: FileOpenAttr(string)
                     path: /reference/datagate-client/file-open-attr-class-file-open-attr-constructor.html
                 - sectiontitle: FileOpenAttr Fields
+                  sectionpath: /reference/datagate-client/file-open-attr-fields.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/file-open-attr-fields.html
                   - title: FileOpenAttr.OmitBlocking Field
                     path: /reference/datagate-client/file-open-attr-class-omit-blocking-field.html
                   - title: FileOpenAttr.OptimalBlockingFactor Field
                     path: /reference/datagate-client/file-open-attr-class-optimal-blocking-factor-field.html
                 - sectiontitle: FileOpenAttr Properties
+                  sectionpath: /reference/datagate-client/file-open-attr-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/file-open-attr-properties.html
                   - title: FileOpenAttr.BlockingFactor Property
                     path: /reference/datagate-client/file-open-attr-class-blocking-factor-property.html
                   - title: FileOpenAttr.FileLocks Property
@@ -2190,15 +1984,13 @@ Reference:
                   - title: FileOpenAttr.WaitForRecord Property
                     path: /reference/datagate-client/file-open-attr-class-wait-for-record-property.html
               - sectiontitle: IPrintProperties Interface
+                sectionpath: /reference/datagate-client/iprint-properties-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/iprint-properties-class.html
                 - title: IPrintProperties Members
                   path: /reference/datagate-client/iprint-properties-members.html
                 - sectiontitle: IPrintProperties Methods
+                  sectionpath: /reference/datagate-client/iprint-properties-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/iprint-properties-methods.html
                   - title: IPrintProperties.GetBoundType Method
                     path: /reference/datagate-client/iprint-properties-class-get-bound-type-method.html
                   - title: IPrintProperties.GetTypedObject Method
@@ -2208,29 +2000,25 @@ Reference:
                   - title: IPrintProperties.SetValue Method
                     path: /reference/datagate-client/iprint-properties-class-set-value-method.html
               - sectiontitle: PrintDevAttr Class
+                sectionpath: /reference/datagate-client/print-dev-attr-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/print-dev-attr-class.html
                 - title: PrintDevAttr Members
                   path: /reference/datagate-client/print-dev-attr-members.html
                 - sectiontitle: PrintDevAttr Constructors
+                  sectionpath: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructors.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructors.html
                   - title: PrintDevAttr()
                     path: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructor.html
                 - sectiontitle: PrintDevAttr Methods
+                  sectionpath: /reference/datagate-client/print-dev-attr-methods.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/print-dev-attr-methods.html
                   - title: PrintDevAttr.ReadXml Method
                     path: /reference/datagate-client/print-dev-attr-class-read-xml-method.html
                   - title: PrintDevAttr.WriteXml Method
                     path: /reference/datagate-client/print-dev-attr-class-write-xml-method.html
                 - sectiontitle: PrintDevAttr Properties
+                  sectionpath: /reference/datagate-client/print-dev-attr-properties.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/print-dev-attr-properties.html
                   - title: PrintDevAttr.Collate Property
                     path: /reference/datagate-client/print-dev-attr-class-collate-property.html
                   - title: PrintDevAttr.Color Property
@@ -2266,15 +2054,13 @@ Reference:
                   - title: PrintDevAttr.YResolution Property
                     path: /reference/datagate-client/print-dev-attr-class-yresolution-property.html
               - sectiontitle: SourceProfile Class
+                sectionpath: /reference/datagate-client/source-profile-class.html
                 section:
-                - title: Overview
-                  path: /reference/datagate-client/source-profile-class.html
                 - title: SourceProfile Members
                   path: /reference/datagate-client/source-profile-members.html
                 - sectiontitle: SourceProfile Constructors
+                  sectionpath: /reference/datagate-client/source-profile-constructors-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/source-profile-constructors-main.html
                   - title: SourceProfile()
                     path: /reference/datagate-client/source-profile-class-source-profile-constructor1.html
                   - title: SourceProfile.SourceProfile Constructor(string)
@@ -2286,9 +2072,8 @@ Reference:
                   - title: SourceProfile(string, SourceProfile)
                     path: /reference/datagate-client/source-profile-class-source-profile-constructor5.html
                 - sectiontitle: SourceProfile Methods
+                  sectionpath: /reference/datagate-client/source-profile-methods-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/source-profile-methods-main.html
                   - title: SourceProfile.Clone Method
                     path: /reference/datagate-client/source-profile-class-clone-method.html
                   - title: SourceProfile.Equals Method
@@ -2306,9 +2091,8 @@ Reference:
                   - title: SourceProfile.Unregister Method
                     path: /reference/datagate-client/source-profile-class-unregister-method.html
                 - sectiontitle: SourceProfile Properties
+                  sectionpath: /reference/datagate-client/source-profile-properties-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/source-profile-properties-main.html
                   - title: SourceProfile.DatabaseName Property
                     path: /reference/datagate-client/source-profile-class-database-name-property.html
                   - title: SourceProfile.InitialLibl Property
@@ -2334,27 +2118,23 @@ Reference:
                   - title: SourceProfile.User Property
                     path: /reference/datagate-client/source-profile-class-user-property.html
                 - sectiontitle: SourceProfile Fields
+                  sectionpath: /reference/datagate-client/source-profile-fields-main.html
                   section:
-                  - title: Overview
-                    path: /reference/datagate-client/source-profile-fields-main.html
                   - title: MaxSystemLibl Field
                     path: /reference/datagate-client/max-system-libl-enumeration.html
                   - title: MaxUserLibl Field
                     path: /reference/datagate-client/max-user-libl-enumeration.html
     - sectiontitle: Samples and Tutorials
+      sectionpath: /reference/datagate-client/samplesand-tutorials-main.html
       section:
-      - title: Overview
-        path: /reference/datagate-client/samplesand-tutorials-main.html
       - sectiontitle: DCS for Visual Studio 2019 Samples
+        sectionpath: /reference/datagate-client/samples-main.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/samples-main.html
         - title: AdgAutoTransaction.AdgAutoTransaction Constructor(ASNA.DataGate.Providers.AdgAutoTransactionProfile)
           path: /reference/datagate-client/sample-syntax-and-examples.html
         - sectiontitle: DCS for Visual Studio 2019 Samples
+          sectionpath: /reference/datagate-client/samples-csharp-main.html
           section:
-          - title: Overview
-            path: /reference/datagate-client/samples-csharp-main.html
           - title: C# AddSourceProfile Sample
             path: /reference/datagate-client/samples-csharp-add-source-profile.html
           - title: C# Call_400_Pgm Sample
@@ -2374,9 +2154,8 @@ Reference:
           - title: C# Simple Datagrid Sample
             path: /reference/datagate-client/samples-csharp-simple-datagrid.html
         - sectiontitle: DCS for Visual Studio 2019 Samples
+          sectionpath: /reference/datagate-client/samples-vb-main.html
           section:
-          - title: Overview
-            path: /reference/datagate-client/samples-vb-main.html
           - title: VB AddSourceProfile Sample
             path: /reference/datagate-client/samples-vb-add-source-profile.html
           - title: VB Call_400_Pgm Sample
@@ -2386,15 +2165,13 @@ Reference:
           - title: VB Simple Datagrid Sample
             path: /reference/datagate-client/samples-vb-simple-datagrid.html
     - sectiontitle: Whats New in ASNA DataGate Component Suite for Visual Studio
+      sectionpath: /reference/datagate-client/whats-new-main.html
       section:
-      - title: Overview
-        path: /reference/datagate-client/whats-new-main.html
       - title: New Classes
         path: /reference/datagate-client/whats-new-classes.html
       - sectiontitle: New Delegates
+        sectionpath: /reference/datagate-client/whats-new-delegates.html
         section:
-        - title: Overview
-          path: /reference/datagate-client/whats-new-delegates.html
         - title: AdgEnumerator Delegate
           path: /reference/datagate-client/adg-enumerator-delegate.html
         - title: AdgObserver Delegate
@@ -2412,17 +2189,15 @@ Reference:
 ##
 Mobile:
 - sectiontitle: ASNA Mobile Support
+  sectionpath: /reference/monarch-fx/amfASNAMobileSupport.html
   section:
-  - title: Overview
-    path: /reference/monarch-fx/amfASNAMobileSupport.html
   - title: The Native Phone App
     path: /reference/monarch-fx/amfNativeMobileApp.html
   - title: The ReadAlternatePagesConfig Method
     path: /reference/monarch-fx/amfReadAlternatePagesMethod.html
   - sectiontitle: Bar Controls
+    sectionpath: /reference/monarch-fx/amfUnderstandingBarControls.html
     section:
-    - title: Overview
-      path: /reference/monarch-fx/amfUnderstandingBarControls.html
     - title: DdsBarSegment Collection Editor
       path: /reference/monarch-fx/amfUnderSegmentsList.html
   - title: Barcode Reader Controls
@@ -2432,9 +2207,8 @@ Mobile:
   - title: Button Controls
     path: /reference/monarch-fx/amfUnderstandingButtons.html
   - sectiontitle: Chart Controls
+    sectionpath: /reference/monarch-fx/amfUnderstandingCharts.html
     section:
-    - title: Overview
-      path: /reference/monarch-fx/amfUnderstandingCharts.html
     - title: Laying Out a Chart
       path: /reference/monarch-fx/amfChartLayout.html
     - title: DdsChart Series List Editor
@@ -2456,9 +2230,8 @@ Mobile:
   - title: Panel Controls
     path: /reference/monarch-fx/amfUnderstandingPanels.html
   - sectiontitle: Signature Controls
+    sectionpath: /reference/monarch-fx/amfUnderstandingSignatures.html
     section:
-    - title: Overview
-      path: /reference/monarch-fx/amfUnderstandingSignatures.html
     - title: DdsSignature Data Storage Considerations
       path: /reference/monarch-fx/amfUnderSignatureDataStorage.html
   - title: DdsDecRange Controls
@@ -2466,9 +2239,8 @@ Mobile:
   - title: Switch Controls
     path: /reference/monarch-fx/amfUnderstandingSwitches.html
   - sectiontitle: Table Controls
+    sectionpath: /reference/monarch-fx/amfUnderstandingTables.html
     section:
-    - title: Overview
-      path: /reference/monarch-fx/amfUnderstandingTables.html
     - title: DdsTable Column Collection Editor
       path: /reference/monarch-fx/amfUnderColumnList.html
     - title: Editing DdsTable Cells
