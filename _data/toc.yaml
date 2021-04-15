@@ -25,17 +25,6 @@ Concepts:
   section:
   - title: Introduction
     path: /concepts/introduction.html
-  - sectiontitle: Legacy Application Background
-    sectionpath: /concepts/background/background-overview.html
-    section:
-    - title: IBM i Developer's model
-      path: /concepts/background/ibmi-developer-model.html
-    - title: IBM i Fixed Types
-      path: /concepts/background/ibmi-fixed-types.html
-    - title: IBM i Job
-      path: /concepts/background/ibmi-job.html
-    - title: IBM i Program
-      path: /concepts/background/ibmi-program.html
   - sectiontitle: Monarch Core Architecture
     sectionpath: /concepts/architecture/architecture-overview.html
     section:
@@ -43,7 +32,7 @@ Concepts:
       path: /concepts/architecture/asna-qsys.html
     - title: QSys Job
       path: /concepts/architecture/qsys-job.html
-  - sectiontitle: QSys Program Structure
+  - sectiontitle: Program Structure
     sectionpath: /concepts/program-structure/program-structure-overview.html
     section:
     - title: RPG Language Support
@@ -60,7 +49,7 @@ Concepts:
       path: /concepts/program-structure/qsys-workstationfile.html
     - title: ASNA.QSys Fixed Types
       path: /concepts/program-structure/qsys-fixedtypes.html
-  - sectiontitle: QSys User Interface
+  - sectiontitle: User Interface
     sectionpath: /concepts/user-interface/ui-overview.html
     section:
     - title: ASP.NET 5 Websites
@@ -81,11 +70,13 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html
     - title: Expo Client Subfile
       path: /concepts/user-interface/qsys-expo-client-subfile.html
-  - sectiontitle: Printing
+  - sectiontitle: Reports
     sectionpath: /concepts/printing/printing-introduction.html
     section:
-    - title: Equivalent CL Print Commands
+    - title: Facilites Based on CL Print Commands
       path: /concepts/printing/equivalent-cl-print-commands.html
+  - title: Database
+    path: /concepts/database/database-overview.html
   - sectiontitle: Enhancing Migrated Applications
     sectionpath: /concepts/enhancements/enhancements-overview.html
     section:
@@ -93,6 +84,17 @@ Concepts:
       path: /concepts/enhancements/new-application-features.html
     - title: Nomad Tools
       path: /concepts/enhancements/nomad-tools.html
+  - sectiontitle: Legacy Application Background
+    sectionpath: /concepts/background/background-overview.html
+    section:
+    - title: IBM i Developer's model
+      path: /concepts/background/ibmi-developer-model.html
+    - title: IBM i Fixed Types
+      path: /concepts/background/ibmi-fixed-types.html
+    - title: IBM i Job
+      path: /concepts/background/ibmi-job.html
+    - title: IBM i Program
+      path: /concepts/background/ibmi-program.html
   - sectiontitle: Classic Monarch Framework Concepts
     sectionpath: /reference/monarch-fx/amfASNAMonarchFrameworkConceptsMain.html
     section:
