@@ -12,6 +12,16 @@ function navClicked(sectionPath, sourceLink) {
     }
 }
 
+function navCaretToggle(event,sourceLink) {
+    let el = document.getElementById("#item"+sourceLink)
+    if (el) {
+        el.classList.toggle("in");
+        if (event.stopPropagation){
+            event.stopPropagation();
+        }
+    }
+}
+
 let outputLetNav = [], totalTopics = 0, foundBranchTopic = 0;
 
 function pageIsInSection(tree) {
@@ -61,9 +71,7 @@ function walkTree(tree) {
                 outputLetNav.push(`class="${classes}"`);
             }
 
-            outputLetNav.push(">" + page.sectiontitle);
-            outputLetNav.push('</a>');
-            outputLetNav.push('<span><a onclick="navClicked(' + "'', " + totalTopics +')"><span class="caret arrow"></span></a></span>');
+            outputLetNav.push( `>${page.sectiontitle}<span onclick="navCaretToggle(event,${totalTopics})" class="caret arrow"></span></a>` );
             outputLetNav.push('<ul class="nav collapse');
             if (sectionHasPath) outputLetNav.push(" in");
             outputLetNav.push('" id="#item' + totalTopics + '" aria-expanded="');
