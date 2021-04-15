@@ -1,5 +1,5 @@
 ---
-title: Printing in a Monarch Application
+title: Reporting in a Monarch Application
 ---
 
 This document discusses the general concepts and some implementation details of the facilities provided by the Framework meant to replace the IBM i artifacts used to generate printed output.

@@ -1,5 +1,5 @@
 ---
-title: QSys User Interface
+title: User Interface of a Monarch Application
 ---
 
 The QSys Application architecture has a Layer that deals with the *Presentation*.
