@@ -87,7 +87,11 @@
 
 .nav-sidebar .caret {
     float: right;
-    margin-top: 10px;
+    margin-top: 9px;
+    border-top: 6px dashed;
+    border-top: 6px solid\9;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
 }
 
 /* pointer for collapsed sidebar list items */
