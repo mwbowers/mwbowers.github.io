@@ -18,16 +18,18 @@ program.cs
         pragram.io.cs
 ```
 
-| Program file Extension | Description 
-| --------------- | --- 
-| `.cs`           | Application Program C# code.
-| `.io.xfu`       | External files *metadata* in XML format
-| `.io.cs`        | Partial C# class with External file's *Boilerplate* Code
+| Source file Extension | Description                         | Usage
+| --------------------- | ----------------------------------- | ------ 
+| `.cs`           | Application Program C# code.              | User code.
+| `.io.xfu`       | External file(s) *metadata* in XML format | Initially generated. User maintained as changes are made.
+| `.io.cs`        | Partial C# class with External file's *Boilerplate* Code. | Tool-generated (from cache and xfu file).
 
+
+> ASNA QSys Nomad also produces a **cache** folder that contains *External Database file Definitions* for all the database files used by all the programs in a particular Project. This folder has *hidden* attributes to keep the folder structure simple for the Application developer.
 
 ## Integration with Visual Studio&reg; 2019
 
-Visual Studio&reg; 2019 Projects have a collection of files, where each file can have properties associated.
+Visual Studio&reg; 2019 Projects have a collection of files, where each file can have associated properties.
 
 Typically, `.cs` C# source files will have:
 
@@ -47,35 +49,47 @@ Typically, `.cs` C# source files will have:
 
 When a C# Project is built, the different source files are checked for changes. When source file changes, the actions and/or Custom Tools associated with each file run.
 
-For files with associated **Custom Tool**, the user may force the tool to re-run, using the context menu option (right-click menu): "Run Custom Tool".
+Additionally, Visual Studio is tracking changes for files with a *Custom Tool*. As soon as the changes are **saved**, the *Custom Tool* runs.
 
-### AdgFileUsageGenerator
+Sometimes it is desirable to *force* run the **Custom Tool** on files that have such association. For example, when user-interface fields are added to a Model (controlling a Display Page), the developer should make sure that the new fields are part of the communication *DataSet*, such that the program using a *Workstation* file for the Display Page can read and write the new fields. After making changes to the Model's properties (for those decorated with *DataSet* field attributes), the application developer should force run the **Custom Tool** on any Program using the Display Page, by selecting the **xfu** file, invoking the context Menu (right-click menu) and run the option : "Run Custom Tool". Doing so, will generate a new implementation for the *I/O* partial class with the proper C# field/type definitions.
 
-The `AdgFileUsageGenerator` custom tool will load the XFU Xml file which contains detailed schema for all  the objects of the ASNA.QSys types:
+<br>
 
-- DatabaseFile
-- WorkstationFile
-- PrintFile
+### AdgFileUsageGenerator (ASNA.DataGate.FileUsageGenerator.dll)
 
-For every file schema found in XFu, the `AdgFileUsageGenerator` custom tool will re-generate the following partial-class code (in `.io.cs`):
+The `AdgFileUsageGenerator` custom tool takes as **input**:
 
-- Explicitly create [FixedType](/concepts/program-structure/qsys-fixedtypes.html) declaration for all fields used by records in the file Objects.
-- For every file object, generate implementation for I/O methods:
-    - PopulateBuffer*filename*
-    - PopulateField*filename*
+1. The `.io.xfu` XML specification - Program file references (workstation, database and printfile), Data Structures (based on file fields) and their field declaration directives.
+2. External Database Definition *cache* (for any files referred to by `.io.xfu`).
+3. Display Page **Model** field definitions expressed as C# properties - with particular field decoration attributes - (for all the workstation files referred to by `.io.xfu`).
 
-> Avoid adding user-code to the partial class and/or alter XFU directly. You may loose your changes.
+> To parse the Display Page C# Model classes, ASNA *AdgFileUsageGenerator* uses another internal Tool named *ModelToWrf* (described below).
 
-## Refresh XFU Visual Studio context menu option.
+The `AdgFileUsageGenerator` custom tool produces as **output**: The `.io.cs` C# partial class, containing:
+
+1. External field declarations as C# [Fixed Types](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes).
+2. An explicit copy of the bytes representing the *Record format ID* for all files to be used by the *Open* method to implement *run-time* [Level checking](https://www.ibm.com/docs/en/i/7.2?topic=files-level-checking).
+3. Implementation of methods for every file to populate fields in/out of the shared *DataSet*.
+
+<br>
+
+> Please abstain from adding user-code to the partial class directly. You may loose your changes.
+
+## "Refresh XFU" Visual Studio context menu option.
 
 The `.io.xfu` file associated with the QSys Program Application source, is initially generated when the Nomad Migration was converted from [AVR](https://asna.com/us/products/visual-rpg) programming language to C#.
 
-There are times when you would want to **force** to re-generate (or *Refresh*) the XFU Xml metadata.
+The purpose of `.io.xfu` is to:
 
-- When you change the Workstation file definition: by adding or changing the Razor Page Model classes.
-- When changing file definitions of DataGate Physical or Logical files. This includes adding, deleting or changing any field definitions on any of the record formats.
-- When changing .NET Printfile definitions. This includes adding, deleting or changing any field definitions on any of the record formats.
+1. List all references to all externally described files use by the program (workstation, database and printfiles).
+2. Provide a means to the Developer to specify *Directives* on all records for all the files, to drive the generation of QSys Program partial class.
 
-As a general rule, every time that you *Refresh XFU* on any of the QSys Application Programs, run the "Custom Tool" on the XFU file to synchronize the code with the latest external file definitions.
+This XML file is also the selection node for Visual Studio 2019 to show the *context menu*, that will give the Developer access to the two Nomad Tools.
 
 > ASNA.QSys runtime support will throw an exception when attempting to open files that had their schema out-of-sync with respect to the current partial class I/O implementation.
+
+## ModelToWrf Tool (ASNA.ModelToWrf.dll)
+
+Although an internal tool (used by `AdgFileUsageGenerator`), it may be useful to understand that when a Model is compiled into an .NET assembly, it can be loaded and its public declarations can be discovered using *reflection*.
+
+> The importance of this fact is to understand that Model field definitions need to be complete and the C# compiler can be used as verifier. Do not attempt to run `.io.xfu` Custom Tool on programs using workstation files, whose Page Model is incomplete or produces syntax errors.
