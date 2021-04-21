@@ -84,3 +84,44 @@ For a complete description of the `DynamicCaller_.CallD`, read [Sun Farm Guide](
 
 ## Calling *Bound* Procedures
 
+Calling Bound Procedures has some advantages:
+1. The compiler makes sure the Program exists in the compiled unit (Project assembly).
+2. The compiler can perform type checking on all parameters passed.
+3. More than one Procedure can be coded (and properly named) in a Program (or Service Program).
+4. When the *caller* is in the same Program, the procedure (class method) can be found very fast.
+5. Upon returning from a Procedure (method), the Program **always** remain Active.
+
+Similarities between CallD and Bound Method calls:
+1. Both use the QSys `ActivationManager` object.
+2. Even when the Bound call looks like a regular C# call to a method, in fact is a call to a **static** method on a class, that may (*or not*) allocate a new instance of the Program class.
+
+The implementation of *Bound* Procedure calls on the QSys Program class, requires more than one C# class method, and the naming of such related names gets tricky:
+
+1. A C# **static** with the **exact** legacy procedure name is implemented (i.e. `public static MessageSubfileWrite`), in the example above.
+2. The first parameter of such **static** method is a reference to the caller *self* (or **this**).
+3. A **non-static** method with prefix `_` is produced.
+4. A **non-static** method with prefix `entry` is produced.
+
+For example, the class `XamService` would have implementations for:
+
+```cs
+public static void MessageSubfileWrite(AVRRuntime.ProcedureSupport.ICaller _caller, out Indicator __inLR, FixedString<_10> MsgFile, FixedString<_7> MsgId, FixedString<Len<_1, _0, _0>> MsgDta, int MsgLen, int Level)
+{
+    // This method is the first reached, and uses ActivationManager to find activation.
+}
+
+public void _MessageSubfileWrite(out Indicator __inLR, FixedString<_10> MsgFile, FixedString<_7> MsgId, FixedString<Len<_1, _0, _0>> MsgDta, int MsgLen, int Level)
+{
+    // This method "guards" the execution of the final procedure, in case call terminates "abruptly".
+}
+
+public void entryMessageSubfileWrite(FixedString<_10> MsgFile, FixedString<_7> MsgId, FixedString<Len<_1, _0, _0>> MsgDta, int MsgLen, int Level)
+{
+    // This is the method where the original legacy code is migrated.
+}
+```
+
+> Note: The first and second parameters used by the caller are eliminated as it reaches its final **entry** destination.
+
+> Note: When the call to the *Procedure* is done from within the class that defines it, the **static** implementation can short-circuit for performance reasons.
+
