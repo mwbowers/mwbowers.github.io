@@ -5,9 +5,9 @@ title: DataGate on SQL Server Overview
 
 DataGate (DG) connects .NET clients with MS SQL Server.  The concepts surfaced by the DG API are based on the IBM i database ISAM style record level access. The DG client is delivered in the ASNA.QSys.DataGate.Client .NET assembly. 
 
-There are two protocols used by the DG client:
-1. The DG client communicates directly with SQL Server via ADO.NET.
-2. The DG client communicates with a DataGate server via TCP/IP using its own proprietary protocol. [^1]
+There are two implementations, both available on the ASNA.QSys.DataGate.Client .NET assembly, of the DG client:
+1. _DataGate Linear_ communicates directly with SQL Server via ADO.NET. 
+2. _DataLink_ communicates with a DataGate Server via TCP/IP using its own proprietary protocol. The server is implemented as _DataGate for SQL Server_ (DSS) [^1]
 
 Most .NET 5.0 utilize the ADO.NET based protocol.
 
@@ -42,7 +42,15 @@ DSS 'decorates' the Tables and Views with the following custom properties
 | **ASNA_Wait for Record** | File's table or view | Seconds to wait for a record if it is locked by some other application |
 | **ASNA_MaxMembers** | File's table or view | Maximum number of members allowed on the file |
 
-## QTEMP
+## QTEMP on DataGate Linear
+To implement the IBM i concept of QTEMP (a private library for each Job), DG uses the following technique:
+- Designate an installation defined SQL Server database (e.g. QTempDB) as the repository of objects stored in the QTEMP libraries for ALL the 'Jobs' or connections.
+- A DG Linear connection consists of exactly one, unique SqlClient session.  A SqlClient session, and thus the connection, is assigned a unique ID.
+- Whenever a DataGate client refers to an object in the 'QTEMP' library, DG Linear appends the unique session ID to the name and attempts to locate it on the QTempDB database.
+- When the connection gets closed (the DG Client goes away), DG Linear deletes all objects in QTempDB with the SqlClient's session ID.
+- Users accessing QTEMP programmatically must have read write access to the SQL Server designated database (e.g. QTempDB)
+
+## QTEMP on DataGate for SQL Server
 
 To implement the IBM i concept of QTEMP (a private library for each Job), DG uses the following technique:
 
@@ -93,4 +101,4 @@ When an installation of these versions has been configured to support files with
 
 ![System Value Supportsmultimember](images/system-value-supportsmultimember.jpg)
 
-[^1]: The DataGate Server implementation for MS SQL Server runs as a multi-threaded Windows system service (dgServer.exe); this service executes on the same machine where the SQL Server instance is running.  dgServer.exe is an unmanaged C++ program that uses SqlOleDB to access SQL Server data and schema. Each DataGate Client connection results in two OLEDB session connections from the DataGate Server to SQL Server. These connections can stay open throughout the day doing select, update, delete and insert operations. The OLEDB connections close when the application closes the DataGate connection.
+[^1]: The DataGate server implementation for MS SQL Server, DataGate for SQL Server, runs as a multi-threaded Windows system service (dgServer.exe); this service executes on the same machine where the SQL Server instance is running.  dgServer.exe is an unmanaged C++ program that uses SqlOleDB to access SQL Server data and schema. Each DataGate Client connection results in two OLEDB session connections from the DataGate Server to SQL Server. These connections can stay open throughout the day doing select, update, delete and insert operations. The OLEDB connections close when the application closes the DataGate connection.
