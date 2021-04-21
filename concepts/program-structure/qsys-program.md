@@ -63,3 +63,24 @@ There are two ways to *Invoke* a Program on RPG:
 
 > The concept of a [Prototype or Procedure Interface](https://www.ibm.com/docs/en/i/7.4?topic=parameters-procedure-interface) is ignored on Migrated code, since C# compiler will type check **all** bound method calls.
 
+The implementation of Dynamic and Bound calls are similar, and the C# code you get for a Migration is:
+
+**Migrated CALL example**
+
+```cs
+DynamicCaller_.CallD("SunFarm.Customers.ORDHINQ", out _LR, ref ORDCUST);
+```
+
+**Migrated CALLB example**
+```cs
+XamService.MessageSubfileWrite(this, out _, (string)MsgFile, MsgId, MsgDta, MsgLen, 3);
+```
+
+For Dynamic calls the **name of the program is passed by name as a string**, and the *Helper* object instanced on each QSys Program class named DynamicCaller_ will start the *Activation* and *Invocation* process to find and execute the StarEntry method passing the expected parameters.
+
+> Note that the *Activation* rules are defined in the implementation of the **Program**, not in the **CallD**.
+
+For a complete description of the `DynamicCaller_.CallD`, read [Sun Farm Guide](https://asna.github.io/SunFarm/program-bootstrap/)
+
+## Calling *Bound* Procedures
+
