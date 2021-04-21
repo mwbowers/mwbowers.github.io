@@ -4,7 +4,7 @@ title: ASNA.QSys
 ## ASNA.QSys.Runtime Assembly
 Support for:
 1. [Job](/concepts/architecture/qsys-job).
-2. [Program and Program Call](/concepts/program-structure/qsys-program).
+2. [Programs and Procedures](/concepts/program-structure/qsys-program).
 3. [Workstation file](/concepts/program-structure/qsys-workstationfile).
 4. [Database file](/concepts/program-structure/qsys-databasefile).
 5. [Fixed Types](/concepts/program-structure/qsys-fixedtypes).

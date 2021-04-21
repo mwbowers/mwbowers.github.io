@@ -37,7 +37,7 @@ Concepts:
     section:
     - title: RPG Language Support
       path: /concepts/program-structure/rpg-language-support.html
-    - title: ASNA.QSys Program
+    - title: ASNA.QSys Programs and Procedures
       path: /concepts/program-structure/qsys-program.html
     - title: ASNA.QSys CL Program
       path: /concepts/program-structure/qsys-cl-program.html
