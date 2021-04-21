@@ -50,7 +50,7 @@ When the *Indicator LR* is **not** set, the activation remains in memory.
 ASNA QSys uses an `ActivationManager` object to *manage* activations, with methods to:
 
 1. **Get** and instance of a particular Program class. When no instance exists, the `ActivationManager` will create a new one.
-2. **Dispose** of an instanced when the Program should remain active.
+2. **Dispose** of an instance when the Program should **not** remain active.
 
 For a detailed step-by-step example of how Activations and Invocations are implemented, please consult [Program Bootstrapping](https://asna.github.io/SunFarm/program-bootstrap/).
 
@@ -61,7 +61,7 @@ There are two ways to *Invoke* a Program on RPG:
 1. CALL (dynamic). The resolution of the Program is delayed until runtime.
 2. CALLB (bound).  The resolution of the Program is resolved at compile time.
 
-> The concept of a [Prototype or Procedure Interface](https://www.ibm.com/docs/en/i/7.4?topic=parameters-procedure-interface) is ignored on Migrated code, since C# compiler will type check **all** bound method calls.
+> The concept of a [Prototype or Procedure Interface](https://www.ibm.com/docs/en/i/7.4?topic=parameters-procedure-interface) is ignored on Migrated code, since C# compiler will type check **all** bound method parameters.
 
 The implementation of Dynamic and Bound calls are similar, and the C# code you get for a Migration is:
 
