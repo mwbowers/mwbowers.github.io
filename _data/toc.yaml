@@ -190,8 +190,11 @@ Manuals:
   - sectiontitle: DataGate
     sectionpath: /manuals/datagate/datagate-overview.html
     section:
-    - title: TBD
-        
+    - sectiontitle: DataGate on SQL Server
+      sectionpath: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
+      section:
+      - title: TBD        
+
 ##
 Reference:
 - sectiontitle: Framework Reference
@@ -200,14 +203,14 @@ Reference:
   - sectiontitle: Runtime - Host Services
     sectionpath: /reference/host-services/welcome.html
     section:
-    - sectiontitle: \!Pages
+    - sectiontitle: '!Pages'
       sectionpath: /reference/host-services/exclam-pages-main.html
       section:
-      - title: \!Diagnose
+      - title: '!Diagnose'
         path: /reference/host-services/exclam-diagnose.html
-      - title: \!EoJ
+      - title: '!EoJ'
         path: /reference/host-services/exclam-eoj.html
-      - title: \!ExpiredSession
+      - title: '!ExpiredSession'
         path: /reference/host-services/exclam-session-expired.html
     - sectiontitle: Class Library
       sectionpath: /reference/host-services/class-library-main.html
