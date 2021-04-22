@@ -92,7 +92,7 @@ The first variable comes from DDS keyword `SFLPAG`
 0030.00     A                                      SFLPAG(0014)  
 ```
 
-The second variable comes from the definition of the fields in the subfile. In this case all of the fields in the subfile definition are specified in the same *line* (or Row). It is possible specify subfiles with more than one *line* (to be presented *folded* on the page). Think of this value as the *height* in *Rows*
+The second variable comes from the definition of the fields in the subfile. In this case all of the fields in the subfile definition are specified in the same *line* (or Row). It is possible to specify subfiles with more than one *line* (to be presented *folded* on the page). Think of this value as the *height* in *Rows*
 
 ```html
 <div Row="4" RowSpan="@SFLC_SubfilePage * @SFLC_SubfileRowsPerRecord">
@@ -215,7 +215,7 @@ data-asna-rowcol="9,14"
 data-asna-rowcol="9,55"
 ```
 
-To `rrn` = 19:
+To `rrn` = 19
 
 ```cs
 data-asna-rowcol="27,4"
