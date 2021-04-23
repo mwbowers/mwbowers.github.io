@@ -112,7 +112,7 @@ data-asna-row-to= (4 + (20 *1)) - 1 = 23
 data-asna-row="4-23"
 ```
 
-> Changing the value of `SFLC_SubfilePage` requires re-compilation of the Logic program. Records written to the Subfile need to march records indicated in the Markup.
+> Changing the value of `SFLC_SubfilePage` may require re-compilation of the Logic program. Records written to the Subfile need to match or exceed records indicated in the Markup.
 
 Inside the `div` with Row RowSpan in the SubfileControl record comes the `for` loop, defined as follows:
 
