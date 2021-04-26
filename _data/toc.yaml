@@ -20,12 +20,12 @@ home: {}
 
 ##
 Concepts:
-- sectiontitle: Framework Concepts
+- sectiontitle: Monarch Base Concepts
   sectionpath: /concepts/concepts-overview.html
   section:
   - title: Introduction
     path: /concepts/introduction.html
-  - sectiontitle: Monarch Core Architecture
+  - sectiontitle: Monarch Base Architecture
     sectionpath: /concepts/architecture/architecture-overview.html
     section:
     - title: ASNA.QSys
