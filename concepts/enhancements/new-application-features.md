@@ -43,12 +43,12 @@ Many Applications provide rich [API](https://en.wikipedia.org/wiki/API) interfac
 <br>
 
 ### Client-side development
-As a Web Application, Monarch Core Applications can take advantage of the many third-party or open-source JavaScript based libraries. One example would be to use Advanced Charting libraries to improve the presentation of tabular data. Please consult [Adding a Chart to Page](https://asna.github.io/SunFarm/adding-chart-to-page/).
+As a Web Application, Monarch Applications can take advantage of the many third-party or open-source JavaScript based libraries. One example would be to use Advanced Charting libraries to improve the presentation of tabular data. Please consult [Adding a Chart to Page](https://asna.github.io/SunFarm/adding-chart-to-page/).
 
 <br>
 
 ## Improving Existing User Interface.
-If the Legacy Application had all the features your Business needs, but needs to be enhanced to provide a better User Interface, the best is to stay in the QSys Architecture and apply techniques such as the ones described in [Enhancing ASNA Monarch Nomad Migration Guide](https://asna.github.io/SunFarm/).
+If the Legacy Application had all the features your Business needs, but needs to be enhanced to provide a better User Interface, the best is to stay in the QSys Architecture and apply techniques such as the ones described in [Enhancing ASNA Monarch Migration Guide](https://asna.github.io/SunFarm/).
 
 <br>
 

@@ -1,12 +1,12 @@
 ---
-title: Nomad Tools
+title: Monarch Base Dev Tools
 ---
 
 There are processes in Application development where trivial repetitive segments of code are need to be produced or maintained in sync with external resources. For the purposes of the contents of this chapter, we will call these segments `boilerplate` code.
 
 *Boilerplate code* is often [hidden from the view](/concepts/program-structure/rpg-language-support.html) and made part of the syntax in *Special Purpose* programming languages such as RPG.
 
-ASNA Monarch Base targets C# which is a [General Purpose Programming Language](https://en.wikipedia.org/wiki/General-purpose_programming_language), therefore these *Boilerplate code* segments need to be explicit and visible.
+When a migration results in classes written in C#, which is a [General Purpose Programming Language](https://en.wikipedia.org/wiki/General-purpose_programming_language),  these *Boilerplate code* segments become explicit and visible.
 
 One technique to *Encapsulate Boilerplate code* in General Purpose Object-Oriented Programming Languages is to allow a class definition to be split into multiple files, separating the Application code from *Boilerplate code*. C# allows such technique with the language support for [Partial classes](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods). Other terms given to this technique are: "*Code behind*" and "*Code besides*".
 
@@ -18,14 +18,14 @@ program.cs
         pragram.io.cs
 ```
 
-| Source file Extension | Description                         | Usage
-| --------------------- | ----------------------------------- | ------ 
-| `.cs`           | Application Program C# code.              | User code.
-| `.io.xfu`       | External file(s) *metadata* in XML format | Initially generated. User maintained as changes are made.
-| `.io.cs`        | Partial C# class with External file's *Boilerplate* Code. | Tool-generated (from cache and xfu file).
+| Source file Extension | Description                                               | Usage                |
+| --------------------- | --------------------------------------------------------- | -------------------- |
+| `.cs`                 | Application Program C# code.                              | User code.           |
+| `.io.xfu`             | External File Usage *metadata* in XML format                 | Initially generated. User maintained as changes are made. |
+| `.io.cs`              | Partial C# class with External File's *Boilerplate* Code. | Tool-generated (from cache and xfu file). |
 
 
-> ASNA QSys Nomad also produces a **cache** folder that contains *External Database file Definitions* for all the database files used by all the programs in a particular Project. This folder has *hidden* attributes to keep the folder structure simple for the Application developer.
+> The Monarch Base Dev Tool also produces a **cache** folder that contains *External File Definitions* for all the database, printer and display page files used by all the programs in a particular Project. This folder has *hidden* attributes to keep the folder structure simple for the Application developer.
 
 ## Integration with Visual Studio&reg; 2019
 
@@ -33,19 +33,19 @@ Visual Studio&reg; 2019 Projects have a collection of files, where each file can
 
 Typically, `.cs` C# source files will have:
 
-| Property                 | Value
-| ------------------------ | --- 
-| Build Action             | C# Compiler
-| Copy to Output Directory | Do not copy
-| Custom Tool              | (blank)
+| Property                 | Value         |
+| ------------------------ | ------------- | 
+| Build Action             | C# Compiler   |
+| Copy to Output Directory | Do not copy   |
+| Custom Tool              | (blank)       |
 
 `.io.xfu` source files are set to have:
 
-| Property                 | Value
-| ------------------------ | --- 
-| Build Action             | None
-| Copy to Output Directory | Do not copy
-| Custom Tool              | AdgFileUsageGenerator
+| Property                 | Value                    |
+| ------------------------ | ------------------------ |  
+| Build Action             | None                     |
+| Copy to Output Directory | Do not copy              |
+| Custom Tool              | AdgFileUsageGenerator    |
 
 When a C# Project is built, the different source files are checked for changes. When source file changes, the actions and/or Custom Tools associated with each file run.
 
@@ -77,14 +77,14 @@ The `AdgFileUsageGenerator` custom tool produces as **output**: The `.io.cs` C# 
 
 ## "Refresh XFU" Visual Studio context menu option.
 
-The `.io.xfu` file associated with the QSys Program Application source, is initially generated when the Nomad Migration was converted from [AVR](https://asna.com/us/products/visual-rpg) programming language to C#.
+The `.io.xfu` file associated with the QSys Program Application source, is initially generated when the Migration process that generated the C# code.
 
 The purpose of `.io.xfu` is to:
 
 1. List all references to all externally described files use by the program (workstation, database and printfiles).
 2. Provide a means to the Developer to specify *Directives* on all records for all the files, to drive the generation of QSys Program partial class.
 
-This XML file is also the selection node for Visual Studio 2019 to show the *context menu*, that will give the Developer access to the two Nomad Tools.
+This XML file is also the selection node for Visual Studio 2019 to show the *context menu*, that will give the Developer access to the two Tools.
 
 > ASNA.QSys runtime support will throw an exception when attempting to open files that had their schema out-of-sync with respect to the current partial class I/O implementation.
 

@@ -2,7 +2,7 @@
 title: Expo Display Page Model
 ---
 
-For every Nomad Display Page, there is an associated C# source file that defines the *Model* class.
+For every Display Page, there is an associated C# source file that defines the *Model* class.
 
 The *Model* class is a class derived from `ASNA.QSys.Expo.Model.DisplayPageModel` which we will refer in this page to `QSys DisplayPageModel` (for short).
 
@@ -135,4 +135,4 @@ All the fields declarations in the Record (model) that are *decorated* with QSys
 
 The *Order* in which the fields are declared is **important**. The same order is used to [serialize](https://en.wikipedia.org/wiki/Serialization) them to/from the DataSet.
 
-> [Nomad Tools](enhancements/nomad-tools) also rely on the *order* of fields to generate the partial class needed at the Program Logic to complete the `QSys Program`. 
+> [Dev Tools](enhancements/dev-tools) also rely on the *order* of fields to generate the partial class needed at the Program Logic to complete the `QSys Program`. 

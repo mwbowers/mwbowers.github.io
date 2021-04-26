@@ -12,7 +12,7 @@ The Expo Client Library consists of the following Web resources:
 
 There are two CSS files in the library:
 * 5250.css - defines types to be used while rendering 5250 streams.
-* expo.css - defines types to be used for Nomad Migrated Display Pages.
+* expo.css - defines types to be used for Migrated Display Pages.
 
 Web Technology:
 * Javascript is implemented using [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
@@ -58,7 +58,7 @@ In order to describe how Expo Client Library was architected, we will first proc
 
 The terms **Line** and **Char Position** have a [Punched Card](https://en.wikipedia.org/wiki/Computer_programming_in_the_punched_card_era) origin. It became more common to call these positioning terms as *Row* and *Col*, and for the total Size: *Rows* and *Cols*.
 
-> Since the Display **Size** on the Web Browser is undefined (practically *limitless*), Nomad assumes that our *target* canvas is the largest possible: 27 rows x 132 columns. [^6]
+> Since the Display **Size** on the Web Browser is undefined (practically *limitless*), Monarch assumes that our *target* canvas is the largest possible: 27 rows x 132 columns. [^6]
 
 The fact that the font family used on IBM i Displayfile is **Monospace** has **several** important implications when computing the *implicit* "Length" of elements.
 
@@ -98,7 +98,7 @@ But, as you can see in the image, the the **Web Browser** would render:
 ending_col = 207px
 ```
 
-> Instead of `Length` in Nomad we use the term **Column Span** (or *ColSpan*) to describe the number of columns an element occupies. In the image, the `ColSpan` is equal to `14` units. 
+> Instead of `Length` in Monarch we use the term **Column Span** (or *ColSpan*) to describe the number of columns an element occupies. In the image, the `ColSpan` is equal to `14` units. 
 
 **Second implication** : Headings formed by multiple elements.
 
@@ -118,13 +118,13 @@ Now consider the challenge to render numeric values for fields, which are presen
 
 The alignment happens by an **Edit code** applied to the number, where a *comma* is added and three blanks are pre-pended to the text representation for the number `1234.11`. On a Terminal Display, the field is specified as starting on col `10`, and due to the formatting, the ending col is `20`.
 
-Let's assume that Nomad knows how to apply the same edit code and send the text value:
+Let's assume that Monarch knows how to apply the same edit code and send the text value:
 
 ~~~
    1,234.11 // Note: there are exactly three blanks before the numeric value.
 ~~~
 
-Assuming Nomad has the right CSS, and the value is rendered at *Col* `10` - just as the Terminal did - the resulting rendering has two problems:
+Assuming Monarch has the right CSS, and the value is rendered at *Col* `10` - just as the Terminal did - the resulting rendering has two problems:
 
 1. Only one blank is rendered, instead of three. [^9]
 2. The ending *col* is around `16.2` instead of `20`.
@@ -289,7 +289,7 @@ Let's peek at the definition for the style `dds-grid-empty-row`, on file [^13]:
 }
 ```
 
-Don't worry if you are not familiar with how CSS style definition works in detail, it is sufficient to understand that the `div` where this class is used in the Nomad Display Page, will appear as vertical space with a height selected based on the height of the font used in the `body` to support the Legacy DDS full Terminal definition.
+Don't worry if you are not familiar with how CSS style definition works in detail, it is sufficient to understand that the `div` where this class is used in the Display Page, will appear as vertical space with a height selected based on the height of the font used in the `body` to support the Legacy DDS full Terminal definition.
 
 > Note: standard HTML may be added later between these div Rows. The intent is to start with the vertical space a Terminal would use.
 
@@ -407,7 +407,7 @@ The following shows the Markup for a Subfile Controller and the Subfile record c
 [^3]: Browser vendor dependent, but we can consider *very large*.
 [^4]: HTML5 allows several element positioning systems.
 [^5]: Several "units of measure" provided with automatic conversion to pixels.
-[^6]: Migration logic may compute columns beyond 132. Nomad Page initialization will compute the *real* maximum.
+[^6]: Migration logic may compute columns beyond 132. Display Page initialization will compute the *real* maximum.
 [^7]: Monospace Web font do not warrantee that all characters, symbols and blank take the exact width in pixels.
 [^8]: The image shows the *next* pixel, one to the right of the cell.
 [^9]: Pre-formatted tag element to be used, but this implies Monospace font which does would not look as consistent and pleasing as the rest of the text.

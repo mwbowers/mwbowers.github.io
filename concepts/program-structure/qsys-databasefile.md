@@ -25,7 +25,7 @@ Topics that deserve further explanation in the use of DatabaseFile classes are:
 6. How does *File Override* work ?
 
 ## DatabaseFile Object Allocation
-Every Program Migrated by ASNA Monarch Cocoon Nomad takes the form of a subclass derived from `ASNA.QSys Program` (or `ASNA.QSys CLProgram`), with a *constructor* method similar to this:
+Every migrated Program takes the form of a subclass derived from `ASNA.QSys Program` (or `ASNA.QSys CLProgram`), with a *constructor* method similar to this:
 
 ```cs
 public myLegacyProgramName()
@@ -124,7 +124,7 @@ The C# Language does not provide the same integrated database file support as IB
 
 Initially - *during migration* - the generated class derived from `ASNA.QSys Program` is completed with the database file support - available in RPG - by means of C# [partial class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
-As the Application is maintained - if [database schema](https://en.wikipedia.org/wiki/Database_schema) changes -, the **partial** generated classes need to be **re-generated**. The later is done by manually running *Nomad Tools* (explained later in this page).
+As the Application is maintained - if [database schema](https://en.wikipedia.org/wiki/Database_schema) changes -, the **partial** generated classes need to be **re-generated**. The later is done by manually running *Monarch Dev Tools* (explained later in this page).
 
 **EXTRACTION OF FILE SCHEMA**
 
@@ -138,11 +138,11 @@ The *MY_PROGRAM.cs* is the class body that we have been discussing in previous s
 
 **XFU STATIC RECORD USAGE**
 
-During Migration, ASNA Nomad Tools query the *Database Schema* to extract detailed file definitions and writes that information into an [XML file](https://en.wikipedia.org/wiki/XML) that is later used to generate the *MY_PROGRAM.Io.cs* partial class.  
+During Migration, the set of 'externally described' files used by a program and the usage of each file are written into an XML file that is later used to generate the *MY_PROGRAM.Io.cs* partial class.  
 
->In addition to *Database Schema* XFU files contain information about how Data-Structures are mapped into records of the database, according to RPG [Definition Specifications](https://www.ibm.com/docs/en/i/7.2?topic=specifications-definition)
+>In addition to *Database Schema* XFU files contain information about how externally described Data-Structures are mapped into records of the database, according to RPG [Definition Specifications](https://www.ibm.com/docs/en/i/7.2?topic=specifications-definition)
 
-To generate *MY_PROGRAM.Io.cs* partial class ASNA Nomad Tools use *MY_PROGRAM.Io.xfu* to declare using C# syntax, field declaration of the types defined by the [Fixed Types](/concepts/program-structure/qsys-fixedtypes).
+To generate the *MY_PROGRAM.Io.cs* partial class the ASNA Tools use *MY_PROGRAM.Io.xfu* to declare using C# syntax, field declaration of the types defined by the [Fixed Types](/concepts/program-structure/qsys-fixedtypes).
 
 > It is assumed that field names - across records - do not collide, RPG had ways to rename fields to avoid collisions.
 
@@ -281,16 +281,16 @@ The line `MYLEGACYFILE1.Overrider = Job;` and `MYLEGACYFILE2.Overrider = Job;` i
 
 > When changing code during maintenance, make sure to leave the `Overrider` setter code before **ANY** call to any I/O methods.
 
-## Nomad Tools to assist in File maintenance
+## Monarch Dev Tools to assist in File maintenance
 
-There are two external Nomad tools that are available when changing **file** schema[^3]:
+There are two external tools provided by ASNA that are available when changing **file** schema[^3]:
 
 1. Refresh XFU
 2. Run Custom Tool (for a Program source file).
 
 * Refresh XFU - For **every** file field in the Program (database, workstation and printfiles), *get* the current schema(s) from the external physical devices and write the XML file.
 
-* Nomad Custom Tool - The tool that is configured to run for `.cs` source files that have classes derived from `ASNA.QSys Program`, is a tool that takes the XML definition of the schema and data structure mapping information - *XFU* file - and **re-generates** the `partial` class in the `.Io.cs` related source file. (Recall that the partial class defines Program fields according to file schema records and *PopulateXXX* I/O methods).
+* Custom Tool - The tool that is configured to run for `.cs` source files that have classes derived from `ASNA.QSys Program`, is a tool that takes the XML definition of the schema and data structure mapping information - *XFU* file - and **re-generates** the `partial` class in the `.Io.cs` related source file. (Recall that the partial class defines Program fields according to file schema records and *PopulateXXX* I/O methods).
 
 > If possible, avoid changing *manually* the contents of the `.Io.cs` partial classes, letting the Custom Tool freely replace the proper source.
 

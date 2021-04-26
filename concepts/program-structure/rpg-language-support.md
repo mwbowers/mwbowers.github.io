@@ -71,7 +71,7 @@ Generally speaking, `column positions 45 to 80` are used as [DDS Keywords](https
 
 Modern Relational DBMS operates on *Sets*. A *Set* is a result of a *Database Query* where you join several *Tables* and describe in detail how the *Set* should be processed by the DBMS to produce a result (typically with many rows). DBMS that operate on *Sets* are better suited to implement [Commitment control](https://www.ibm.com/docs/en/i/7.1?topic=database-commitment-control) 
 
->[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch Nomad](/concepts/architecture/asna-qsys)
+>[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch](/concepts/architecture/asna-qsys)
 
 ## Message Files
 The management of User messages when working with Programs for the IBM i, is also an area that is very well integrated into the IBM i Operating System.
@@ -110,4 +110,4 @@ Just like a *File Object*, the Display `subfile` can be *written to*, *read from
 
 `Subfile` configuration and usage is **very** flexible, so much that a *special* Displayfile element had to be created to control them, the [Subfile Control Record](https://www.ibm.com/docs/en/i/7.1?topic=80-sflctl-subfile-control-keyword-display-files)
 
->Familiarity to these concepts is essential to understand  [ASNA Nomad Display Page's](/concepts/user-interface/asp-net-websites) markup.
+>Familiarity to these concepts is essential to understand  [ASNA Display Page's](/concepts/user-interface/asp-net-websites) markup.

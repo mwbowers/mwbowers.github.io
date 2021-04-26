@@ -68,5 +68,3 @@ When discussing the ASNA.QSys DataSet, we often refer as to the **green** compon
 
 The **green** *DataSet* component can travel across *ALL* the different layers in the Application architecture. It is not accessed directly or in the same manner by the different layers - most frequently accessed in pieces - but the component as a *unit* is: built, transferred and re-constituted frequently - as the application executes -.
 
-
-Even external Nomad Tools deal with the **green** *DataSet* component, to build static representations: (like XFU files) or even to re-generate C# code (Program partial I/O classes).

@@ -82,8 +82,8 @@ Concepts:
     section:
     - title: Adding New Functionality
       path: /concepts/enhancements/new-application-features.html
-    - title: Nomad Tools
-      path: /concepts/enhancements/nomad-tools.html
+    - title: Base Dev Tools
+      path: /concepts/enhancements/dev-tools.html
   - sectiontitle: Legacy Application Background
     sectionpath: /concepts/background/background-overview.html
     section:

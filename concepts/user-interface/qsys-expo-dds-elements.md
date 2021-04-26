@@ -44,13 +44,13 @@ Other QSys Expo TagHelpers:
 
 ## DdsFile
 
-The **DdsFile** defines the top of the *Nomad Display Page*. It usually comes as the first node right after HTML `<form>` tag. It defines attributes that are *global* to the Display Page. The only attribute that is required is:
+The **DdsFile** defines the top of the *Display Page*. It usually comes as the first node right after HTML `<form>` tag. It defines attributes that are *global* to the Display Page. The only attribute that is required is:
 
 * `DisplayPageModel` - name to be used by the contained elements in expressions, which refers to the C# class derived from Microsoft.AspNetCore.Mvc.RazorPages (more on this in the example that follows).
 
 Other typical attribute used is `KeyNames`, which defines the Active *Aid* keys, with an optional user-friendly name, used by the Page *Menu Bar* option clickable buttons. 
 
-The following is the bare-bones Nomad Display Page definition:
+The following is the bare-bones Display Page definition:
 
 ```html
 @page
@@ -110,9 +110,9 @@ Just like in DDS, *Record*s may contain Constants or Field specifications.
 
 As we have mentioned in [Expo Client Library](/concepts/user-interface/qsys-expo-client-library) Constants and Field specifications are *positioned* using *Row* and *Column*.
 
-A Nomad Display Page conveniently uses the standard `<div>` tag as a container to group all elements in a particular *Row*.
+A Display Page conveniently uses the standard `<div>` tag as a container to group all elements in a particular *Row*.
 
-Within that *Row* div *container*, a Nomad Display Page defines hte possible fields and constants that are visible at the present *state* according to Application Logic.
+Within that *Row* div *container*, a Display Page defines hte possible fields and constants that are visible at the present *state* according to Application Logic.
 
 The best way to describe the syntax, is by an example:
 

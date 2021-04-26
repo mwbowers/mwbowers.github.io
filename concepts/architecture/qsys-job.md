@@ -17,7 +17,7 @@ ASNA.QSys `Job` provides the following support:
 
 ## ASNA.QSys Interactive Job
 
-**ASNA Monarch Nomad** is a framework to allow RPG-like Applications to run on ASP.NET 5, which is based on Web technology.
+**ASNA Monarch Base** is a framework to allow RPG-like Applications to run on ASP.NET 5, which is based on Web technology.
 
 The ASNA.QSys Interactive Job specialized for Web, is conveniently named `WebJob`, or fully qualified:
 

@@ -10,13 +10,13 @@ Typically a Website shares a folder called the *root* or *wwwroot* where Website
 
 [HTML](https://en.wikipedia.org/wiki/HTML) syntax on Web Pages describes to the *Web Browser*, specifically **where** to locate *pieces* of the Page to be rendered. These *pieces* is what we are referring to as the **Content**.
 
-ASNA QSys Expo Web Content are the *shared* resources any Nomad contains:
+ASNA QSys Expo Web Content are the *shared* resources any migrated application contains:
 
 1. [CSS](https://en.wikipedia.org/wiki/CSS)
 2. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 3. Audio files
 
-These resources are copied to the `wwwroot` folder of the Interactive Nomad Application. This is done during the Migration of the Application, but can be [restored](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore) to pick-up the most current files for a particular released version.
+These resources are copied to the `wwwroot` folder of the Interactive Application. This is done during the Migration of the Application, but can be [restored](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore) to pick-up the most current files for a particular released version.
 
 More specifically, the *shared* ASNA QSys Expo Web Content resources are kept in the folder: `wwwroot/lib/asna-expo` as indicated by the settings file:
 
@@ -35,7 +35,7 @@ Setting file: *CustomerApp*`Site\libman.json`:
 }
 ```
 
-> "jsdelivr" is the service ASNA Nomad applications use during Development, to [restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore) files from the public [ASNA github public location](https://github.com/asnaqsys/asna-qsys-expo-web-content) to the local Application's `wwwroot` folder.
+> "jsdelivr" is the service ASNA migrated applications use during Development, to [restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore) files from the public [ASNA github public location](https://github.com/asnaqsys/asna-qsys-expo-web-content) to the local Application's `wwwroot` folder.
 
 Executing Visual Studio 2019[^1]'s "Restore Client-Side Libraries" command, will refresh the QSys Expo Web Content to the released version-level as indicated (in this case to Version 2.0.0 according to the configuration in the [JSON](https://en.wikipedia.org/wiki/JSON) file).
 
@@ -61,7 +61,7 @@ Any resource that is specific to the Application should go into `wwwroot` at the
 
 ## Razor Page Layout Pages
 
-ASP.NET Razor Pages build HTML using a templated approach. Application *Views*, the markup of Nomad Display Pages, define the **Body** of the markup, and use a *Master* Layout to consistently build all Display Pages for the Application[^3].  
+ASP.NET Razor Pages build HTML using a templated approach. Application *Views*, the markup of Display Pages, define the **Body** of the markup, and use a *Master* Layout to consistently build all Display Pages for the Application[^3].  
 
 The *Master* Layout Template is stored in file: `Site\Pages\Shared\_Layout.cshtml`
 
@@ -170,7 +170,7 @@ The `module` Script loads and starts the [QSys Expo Client Library](/concepts/us
 
 It first *imports* the object `Page` from the QSys Expo Client Library and immediately calls the method `init` passing the name of the main HTML `form` element[^7].
 
-> For detail description of the Client side architecture used by Nomad [Read this](/concepts/user-interface/qsys-expo-client-library)
+> For detail description of the Client side architecture used by Monarch [Read this](/concepts/user-interface/qsys-expo-client-library)
 
 The last C# code `@RenderSection("Scripts", required: false)` calls a method to generate the script in case a particular page has a "Script" section defined. By default there will not be any Display Page with *user-defined* scripting.
 
@@ -179,9 +179,9 @@ The last C# code `@RenderSection("Scripts", required: false)` calls a method to 
 <br>
 
 [^1]: At the time of the writing of this documentation "2019" was the version that supported "Client-Side" Library management feature.
-[^2]: At the time of the writing of this documentation. There is no guarantee that they will appear in the future. Nor are they essential for the execution of Monarch Nomad Applications.
+[^2]: At the time of the writing of this documentation. There is no guarantee that they will appear in the future. Nor are they essential for the execution of Monarch migrated Applications.
 [^3]: On large Websites, partitioned into *Areas*, it is possible to have different Layouts for each Area.
-[^4]: The content may be a little different, depending of the Nomad Release.
-[^5]: On IBMi Displayfiles usually included a constant field on each page to show the *Program Name*. Frequently the Displayfile name - by convention - had a name similar to the consuming program. All this to assist Tech Support while reporting errors.
+[^4]: The content may be a little different, depending of the Release.
+[^5]: On IBM i Display files usually included a constant field on each page to show the *Program Name*. Frequently the Display file name - by convention - had a name similar to the consuming program. All this to assist Tech Support while reporting errors.
 [^6]: This is similar to the concept *INCLUDE* in several languages or *Copy-book* in RPG.
 [^7]: A HTML Page may have more than one "form" element, only one will be used by QSys Expo Client Library.
