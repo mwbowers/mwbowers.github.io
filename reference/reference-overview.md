@@ -1,10 +1,10 @@
 ---
-title: ASNA Monarch Core Framework Reference
+title: ASNA Monarch Base Reference
 Id: Welcome
 TocParent: -1
 ---
 
-The ASNA Monarch Core Framework consists of the following assemblies:
+The ASNA Monarch Base consists of the following assemblies:
 - ASNA.DataGate.Client.dll
 - ASNA.QSys.Runtime.dll
 - ASNA.QSys.Expo.Model.dll

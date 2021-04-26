@@ -23,7 +23,7 @@ Every company has unique requirements and Application needs, the following are v
 
 If there is the need of a completely new area of your business and your developers are mostly C# developers unfamiliar with [Legacy Developer model](/concepts/background/ibmi-developer-model), perhaps the best option is to write the new features using other Application frameworks such as [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0).
 
-> ASNA Monarch Core Framework extends ASP.NET Core and can be combined seamlessly with any other ASP.NET Core Framework.
+> ASNA Monarch Base extends ASP.NET Core and can be combined seamlessly with any other ASP.NET Base.
 
 <br>
 
@@ -56,5 +56,5 @@ If the Legacy Application had all the features your Business needs, but needs to
 
 There may be some Areas of your Legacy Application where Mobile users are the most common users, or Display Pages that need more advanced input devices (economically offered by Smart Phones such as GPS, cameras, finger signature, etc.).
 
-If this meets your needs, please refer to [ASNA Monarch Core Framework Mobile Support](/mobile/mobile-overview).
+If this meets your needs, please refer to [ASNA Monarch Base Mobile Support](/mobile/mobile-overview).
 

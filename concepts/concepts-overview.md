@@ -1,5 +1,5 @@
 ---
-title: ASNA Monarch Core Framework Concepts
+title: ASNA Monarch Base Concepts
 Id: Welcome
 TocParent: -1
 ---
@@ -26,13 +26,7 @@ This topic presents *Concepts* that are important in the understanding to effici
 [Enhancing Migrated Applications](/concepts/enhancements/enhancements-overview.html)
 
 
-<br>
-
 ## Related documentation
-For more in-depth API documentation, consult [QSys Reference](/reference/reference-overview.html)
+For more in-depth API documentation, consult the [Monarch Base Reference](/reference/reference-overview.html)
 
-For Classic Monarch Framework, consult [Legacy Monarch Concepts](/concepts/MonarchFX/Welcome.html)
-
-<br>
-<br>
 

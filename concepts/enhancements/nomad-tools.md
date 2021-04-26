@@ -6,7 +6,7 @@ There are processes in Application development where trivial repetitive segments
 
 *Boilerplate code* is often [hidden from the view](/concepts/program-structure/rpg-language-support.html) and made part of the syntax in *Special Purpose* programming languages such as RPG.
 
-ASNA Monarch Core Framework targets C# which is a [General Purpose Programming Language](https://en.wikipedia.org/wiki/General-purpose_programming_language), therefore these *Boilerplate code* segments need to be explicit and visible.
+ASNA Monarch Base targets C# which is a [General Purpose Programming Language](https://en.wikipedia.org/wiki/General-purpose_programming_language), therefore these *Boilerplate code* segments need to be explicit and visible.
 
 One technique to *Encapsulate Boilerplate code* in General Purpose Object-Oriented Programming Languages is to allow a class definition to be split into multiple files, separating the Application code from *Boilerplate code*. C# allows such technique with the language support for [Partial classes](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods). Other terms given to this technique are: "*Code behind*" and "*Code besides*".
 

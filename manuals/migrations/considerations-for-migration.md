@@ -124,7 +124,7 @@ On its other personality, CL is used to set up the environment for RPG programs 
 - Allocate objects
 - Control the Program Message Queue
 
-These actions affect the OS/400 Job where programs are running and have an effect on all programs on the same job. Monarch Framework provides these facilities through a set of classes that supplement the .NET Framework.
+These actions affect the OS/400 Job where programs are running and have an effect on all programs on the same job. Monarch Base provides these facilities through a set of classes that supplement the .NET Framework.
 
 ### Commands Supported
 

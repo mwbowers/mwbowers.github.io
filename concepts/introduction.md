@@ -1,5 +1,5 @@
 ---
-title: Introduction to ASNA Monarch Core Framework
+title: Introduction to ASNA Monarch Base
 
 ---
 
@@ -12,9 +12,9 @@ There are several *Roles* involved in the complete Migration process, namely:
 | --- | --- | --- |
 | *Migrator*   | [ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help160/Main_Monarch.htm) <br/> [DataGate](https://docs.asna.com/documentation/Help160/Main_DataGate.htm) (for IBM i, Windows and [DSS](https://docs.asna.com/documentation/Help160/DSS/_HTML/Welcome.htm)) <br/> [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) | Oversees the complete Migration process. <br/> Trained in all Tools involved.
 |*Remediator* | [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) <br/> Nomad <br/> DataGate [DSS](https://docs.asna.com/documentation/Help160/DSS/_HTML/Welcome.htm)  | Knows the IBM i Application. <br/> Understands RPG and Visual RPG.
-|*Developer*  | ASNA Monarch Core Framework <br/> DataGate Linear  | Understands ASNA Monarch Core Framework. <br/> Can become Subject matter expert.
+|*Developer*  | ASNA Monarch Base <br/> DataGate Linear  | Understands ASNA Monarch Base. <br/> Can become Subject matter expert.
 
-> These documents describe in detail the *ASNA Monarch Core Framework*. The **Developer Role** is the intended audience for the content that follows. For documentation relevant to the other *Roles* please refer to [ASNA Products Documentation](https://docs.asna.com/documentation/)
+> These documents describe in detail the *ASNA Monarch Base*. The **Developer Role** is the intended audience for the content that follows. For documentation relevant to the other *Roles* please refer to [ASNA Products Documentation](https://docs.asna.com/documentation/)
 
 
 ## Monarch Migration Output
@@ -109,12 +109,12 @@ Finally, the application can be run on one or more servers, separating the Busin
 
 _MAS running on its own Application Server_
 
-## Framework Assemblies
-Migrated Class Libraries and Executables as well as the Websites containing the Migrated Razor Pages Areas have a dependency on class libraries known as the ASNA Monarch Core Framework (Framework).
+## Base Assemblies
+Migrated Class Libraries and Executables as well as the Websites containing the Migrated Razor Pages Areas have a dependency on class libraries known as the ASNA Monarch Base (Base).
 
-Here is the [Reference](/reference/reference-overview.html) documentation on the Framework Classes and their members.
+Here is the [Reference](/reference/reference-overview.html) documentation on the Base classes and their members.
 
-The ASNA Monarch Core Framework consists of the following assemblies:
+The ASNA Monarch Base consists of the following assemblies:
 - ASNA.DataGate.Client.dll
 - ASNA.QSys.Runtime.dll
 - ASNA.QSys.Expo.Model.dll
@@ -122,7 +122,7 @@ The ASNA Monarch Core Framework consists of the following assemblies:
 - ASNA.QSys.MonaServer.dll
 - ASNA.QSys.MonaLisa.exe
 
-### Dependencies on the Framework
+### Dependencies on the Base
 Assemblies migrated from Programs, regardless of being Interactive or Batch, depend on:
 - ASNA.DataGate.Client.dll
 - ASNA.QSys.Runtime.dll
@@ -142,7 +142,7 @@ The Out-Of-Process host ASNA.QSys.MonaLisa.exe also depends on:
 - ASNA.QSys.MonaServer.dll
 
 ## NuGet Packages
-To facilitate the building of migrated applications, the Framework is made available via the following NuGet packages:
+To facilitate the building of migrated applications, the Base is made available via the following NuGet packages:
 
 - **ASNA.DataGate.Client package**
   - ASNA.DataGate.Client.dll

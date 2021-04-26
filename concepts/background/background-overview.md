@@ -2,7 +2,7 @@
 title: Legacy Application Background
 ---
 
-In the context of ASNA Monarch Core Framework, **Legacy Applications**  are those that:
+In the context of ASNA Monarch Base, **Legacy Applications**  are those that:
 
 1. Are *existing* Applications that Withstood the test of time.
 2. Are *crucial* to existing Business processes.
@@ -11,4 +11,4 @@ In the context of ASNA Monarch Core Framework, **Legacy Applications**  are thos
 
 In order to work with Legacy Migrated Applications, it is very important to understand how Applications were designed and deployed in the original platform.
 
-There are important concepts and peculiarities about how IBM i Applications execute, which **do not have** an equivalent on Microsoft ASP.NET Core, motivation for [ASNA](https://asna.com) to write [ASNA Monarch Core Framework](https://asnaqsys.github.io/), making it possible for Legacy Applications to efficiently run in the new environment.
+There are important concepts and peculiarities about how IBM i Applications execute, which **do not have** an equivalent on Microsoft ASP.NET Core, motivation for [ASNA](https://asna.com) to write the [ASNA Monarch Base framework](https://asnaqsys.github.io/), making it possible for Legacy Applications to efficiently run in the new environment.

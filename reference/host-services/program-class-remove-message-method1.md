@@ -44,7 +44,7 @@ The following exceptions may be encountered during the execution of this method.
           <tr>
             <td>            UnsupportedOperationException</td>
             <td>Currently, the Monarch
-            Framework only supports the keyword "*ALL"
+            Base only supports the keyword "*ALL"
             for the value of 
  *messageKey* .</td>
           </tr>
@@ -55,7 +55,7 @@ The following exceptions may be encountered during the execution of this method.
 
 Note that invoking this method is equivalent to calling the two-method overload with the value of "*PRV *" for the program queue parameter; e.g. RemoveMessage("*PRV *", *messageKey* ).
 
-*messageKey* may be a value returned by a preceding call to **SendProgramMessage** . In this case, the message in the **SendProgramMessage** call is removed. Alternately, the value of *messageKey* may be the keyword "*ALL", indicating that all messages on the program message queue should be removed. NOTE: currently, the Monarch Framework only supports the keyword "*ALL" for the value of *messageKey* .
+*messageKey* may be a value returned by a preceding call to **SendProgramMessage** . In this case, the message in the **SendProgramMessage** call is removed. Alternately, the value of *messageKey* may be the keyword "*ALL", indicating that all messages on the program message queue should be removed. NOTE: currently, the Monarch Base only supports the keyword "*ALL" for the value of *messageKey* .
 <!-- -->
 
  <!-- start -->

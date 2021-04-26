@@ -1,8 +1,8 @@
 ---
-description: Home page for ASNA Monarch Core Framework's documentation
+description: Home page for ASNA Monarch Base's documentation
 keywords: documentation, reference, concepts, manuals
 layout: landing
-title: ASNA Monarch Core Framework Docs
+title: ASNA Monarch Base Docs
 notoc: true
 notags: true
 skip_read_time: true
@@ -47,7 +47,7 @@ skip_read_time: true
         <a class="card download-asna" href="/get-asna/">
           <h5 class="title">Download and install</h5>
           <p>
-            Download and install Monarch Core Framework on your machine.
+            Download and install Monarch Base on your machine.
           </p>
         </a>
       </div>
@@ -55,7 +55,7 @@ skip_read_time: true
         <a class="card concepts" href="/concepts/concepts-overview">
           <h5 class="title">Concepts</h5>
           <p>
-            Learn the concepts behind the Framework.
+            Learn the concepts behind Base.
           </p>
         </a>
       </div>

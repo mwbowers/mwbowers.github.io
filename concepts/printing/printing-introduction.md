@@ -2,10 +2,10 @@
 title: Reporting in a Monarch Application
 ---
 
-This document discusses the general concepts and some implementation details of the facilities provided by the Framework meant to replace the IBM i artifacts used to generate printed output.
-The IBM i artifacts and their equivalents in the Framework are:
+This document discusses the general concepts and some implementation details of the facilities provided by the Monarch Base meant to replace the IBM i artifacts used to generate printed output.
+The IBM i artifacts and their equivalents in the Monarch Base are:
 
-| IBM i Artifact  | Framework Replacement     |
+| IBM i Artifact  | Base Replacement          |
 | --------------- | ------------------------- |
 | Printer File    | DataGate Printer File     |
 | Spooled File    | Manuscript                |

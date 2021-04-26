@@ -5,7 +5,7 @@ TocParent: -1
 TocOrder: 44
 ---
 
-This section contains information on future ASNA Monarch Core Framework support for Mobile devices
+This section contains information on future ASNA Monarch Base support for Mobile devices
 
 
 The Framework will have a number of options, primarily in the form of Tag Helpers, that will be  specially targeted to developing pages for mobile environments. Most of these Tag Helpers will be  available to all members of the Monarch Family of products (ASNA Monarch, ASNA Wings, and ASNA Mobile RPG). 

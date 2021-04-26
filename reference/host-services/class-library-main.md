@@ -61,9 +61,7 @@ For all classes and structures in ASNA.Monarch, check the Thread Safety section 
 
 #### See Also
 <dl>
-      <dd>[ASNA.Monarch Language
-        Reference](amfReferenceMain.html)</dd>
-        <dd>[Monarch
-        Framework Concepts](amfASNA.narchFrameworkConceptsMain.html)</dd>
+      <dd>[ASNA.Monarch Language Reference](amfReferenceMain.html)</dd>
+        <dd>[Monarch Framework Concepts](amfASNA.narchFrameworkConceptsMain.html)</dd>
 </dl>
 

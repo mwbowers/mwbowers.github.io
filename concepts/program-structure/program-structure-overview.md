@@ -13,4 +13,4 @@ In order for a QSys Program class to support the [IBM i Developer's model](/conc
 - *Deal* with operations involving [Fixed types](/concepts/program-structure/qsys-fixedtypes.html).
 - *Belong* to a stateful *work* environment or [Job](/concepts/architecture/qsys-job.html). Including [Local Data Area](/concepts/architecture/qsys-job.html).
 
-In this section the Concepts behind the implementation of such Framework will be presented.
+In this section the Concepts behind the implementation of such framework will be presented.

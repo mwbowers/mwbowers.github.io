@@ -54,7 +54,7 @@ The following exceptions may be encountered during the execution of this method.
           <tr>
             <td>            UnsupportedOperationException</td>
             <td>Currently, the Monarch
-            Framework only supports the keyword "*ALL"
+            Base only supports the keyword "*ALL"
             for the value of 
  *messageKey* .</td>
           </tr>
