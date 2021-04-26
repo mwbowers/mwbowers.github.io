@@ -9,7 +9,6 @@ Let's review the page [Customer Inquiry](https://github.com/ASNA/SunFarm/blob/ma
 ```html
 @{
     int SFLC_SubfilePage = 20;
-    int SFLC_SubfileRowsPerRecord = 1;
 }
 <DdsSubfileControl For="SFLC" StretchConstantText=false KeyNames="ENTER 'Submit'; F3 'Exit'; PageUp '◀ Page'; PageDown 'Next ▶';" SubfilePage="@SFLC_SubfilePage" CueCurrentRecord=true ClickSetsCurrentRecord=true>
     <div id="page-title">Customer Inquiry</div>
@@ -23,9 +22,10 @@ Let's review the page [Customer Inquiry](https://github.com/ASNA/SunFarm/blob/ma
         <DdsConstant Col="4+12+14+1" Text="Customer Name" Color="DarkBlue" Underline="*True" />
         <DdsConstant Col="4+12-8+45+1" Text="City / State / Zip" Color="DarkBlue" Underline="*True" />
     </div>
-    <div Row="4" RowSpan="@SFLC_SubfilePage * @SFLC_SubfileRowsPerRecord">
-        @for (int rrn = 0, row = 8; rrn < Model.SFLC.SFL1.Count; rrn++, row += @SFLC_SubfileRowsPerRecord)
+    <div Row="4" RowSpan="@SFLC_SubfilePage">
+        @for (int rrn = 0; rrn < Model.SFLC.SFL1.Count; rrn++)
         {
+            int row = 8 + rrn;
             <DdsSubfileRecord RecordNumber="rrn" For="SFLC.SFL1">
                 <div IsGridRow>
                     <DdsDecField Col="4+4" For="SFLC.SFL1[rrn].SFSEL" VirtualRowCol="@row,4" EditCode="Z" ValuesText="' ','Update','Display sales','Delivery Addresses','Create sales record','Printsales (Online)','Print sales (Batch)','Orders'" tabIndex=2 />
@@ -80,7 +80,6 @@ Right before the declaration of `DdsSubfileControl`, we have a block of C# with 
 ```cs
 @{
     int SFLC_SubfilePage = 20; // Note: legacy had 14, was later increased
-    int SFLC_SubfileRowsPerRecord = 1;
 }
 ```
 
@@ -95,7 +94,7 @@ The first variable comes from DDS keyword `SFLPAG`
 The second variable comes from the definition of the fields in the subfile. In this case all of the fields in the subfile definition are specified in the same *line* (or Row). It is possible to specify subfiles with more than one *line* (to be presented *folded* on the page). Think of this value as the *height* in *Rows*
 
 ```html
-<div Row="4" RowSpan="@SFLC_SubfilePage * @SFLC_SubfileRowsPerRecord">
+<div Row="4" RowSpan="@SFLC_SubfilePage">
     .
     .
     .
@@ -117,8 +116,9 @@ data-asna-row="4-23"
 Inside the `div` with Row RowSpan in the SubfileControl record comes the `for` loop, defined as follows:
 
 ```html
-@for (int rrn = 0, row = 8; rrn < Model.SFLC.SFL1.Count; rrn++, row += @SFLC_SubfileRowsPerRecord)
+@for (int rrn = 0; rrn < Model.SFLC.SFL1.Count; rrn++)
 {
+    int row = 8 + rrn;
     <DdsSubfileRecord RecordNumber="rrn" For="SFLC.SFL1">
         .
         .
@@ -161,7 +161,7 @@ Lastly, for each round in the loop, the following Markup generates a record in t
 
 > Note: Field SFCOLOR is a *no-display* ("ND" code in DSPATR keyword). Hidden or *no-display* fields **are not** included in the markup (only in the Model).
 
-Four fields (some decimal and others alpha) are included in the HTML generation for a *GridRow*. If `SFLC_SubfileRowsPerRecord` was greater than one, then there would be more `div` containers with the *IsGridRow* TagHelper, one per row-in-the-record.
+Four fields (some decimal and others alpha) are included in the HTML generation for a *GridRow*. If more than one rows per records exists (possibly to implement drop/fold feature), the migration produces a new C# variable `SFLC_SubfileRowsPerRecord`. If this is the case, then there would be more `div` containers with the *IsGridRow* TagHelper, one per row-in-the-record.
 
 Let's examine the HTML produced for the *first* record in the subfile (`rrn=0`):
 
