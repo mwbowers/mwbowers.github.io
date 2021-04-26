@@ -15,7 +15,7 @@ This topic presents *Concepts* that are important in the understanding to effici
 
 [Legacy Application Background](/concepts/background/background-overview.html)
 
-[Monarch Core Application Architecture](/concepts/architecture/architecture-overview.html)
+[Monarch Application Architecture](/concepts/architecture/architecture-overview.html)
 
 [QSys Program Structure](/concepts/program-structure/program-structure-overview.html)
 

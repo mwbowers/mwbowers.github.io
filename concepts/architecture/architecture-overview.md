@@ -1,10 +1,10 @@
 ---
-title: Monarch Core Architecture
+title: Monarch Base Architecture
 ---
 
-ASNA Monarch Core Architecture uses a layered architecture, where each of the layers is packaged into a [.NET Assembly](https://docs.microsoft.com/en-us/dotnet/standard/assembly/).
+The ASNA Monarch Base Architecture uses a layered architecture, where each of the layers is packaged into a [.NET Assembly](https://docs.microsoft.com/en-us/dotnet/standard/assembly/).
 
-All Monarch Core .NET Assemblies start with the prefix `ASNA.QSys`. 
+All Monarch Base .NET Assemblies start with the prefix `ASNA.QSys`. 
 
 The conceptual Layers are:
 

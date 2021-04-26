@@ -10,9 +10,9 @@ There are several *Roles* involved in the complete Migration process, namely:
 
 |**Role**|**Tools**|**Description**
 | --- | --- | --- |
-| *Migrator*   | [ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help160/Main_Monarch.htm) <br/> [DataGate](https://docs.asna.com/documentation/Help160/Main_DataGate.htm) (for IBM i, Windows and [DSS](https://docs.asna.com/documentation/Help160/DSS/_HTML/Welcome.htm)) <br/> [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) | Oversees the complete Migration process. <br/> Trained in all Tools involved.
-|*Remediator* | [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) <br/> Nomad <br/> DataGate [DSS](https://docs.asna.com/documentation/Help160/DSS/_HTML/Welcome.htm)  | Knows the IBM i Application. <br/> Understands RPG and Visual RPG.
-|*Developer*  | ASNA Monarch Base <br/> DataGate Linear  | Understands ASNA Monarch Base. <br/> Can become Subject matter expert.
+| *Migrator*   | [ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help160/Main_Monarch.htm) <br/> [DataGate](https://docs.asna.com/documentation/Help160/Main_DataGate.htm) (for IBM i, Windows and SQL Server) <br/> [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) | Oversees the complete Migration process. <br/> Trained in all Tools involved. |
+|*Remediator* | Visual RPG <br/> Nomad <br/> DataGate | Knows the IBM i Application. <br/> Understands RPG and Visual RPG. |
+|*Developer*  | ASNA Monarch Base <br/> DataGate | Understands ASNA Monarch Base. <br/> Can become Subject matter expert.
 
 > These documents describe in detail the *ASNA Monarch Base*. The **Developer Role** is the intended audience for the content that follows. For documentation relevant to the other *Roles* please refer to [ASNA Products Documentation](https://docs.asna.com/documentation/)
 

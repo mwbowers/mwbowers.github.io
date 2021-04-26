@@ -19,7 +19,7 @@ Message files are loaded on *demand* as the Application executes and are availab
 1. A CL Program Sends a Message to a Program, or
 2. A field uses DDS Keyword `MSGCON`. 
 
-Perhaps the easiest way to understand how Messagefiles works on a Monarch Core Application, is by providing examples.
+Perhaps the easiest way to understand how Messagefiles works on a Monarch Application, is by providing examples.
 
 Let's assume that the following is the contents of Messagefile `CUSTMSGF.amfx` migrated from a Legacy Application. 
 
