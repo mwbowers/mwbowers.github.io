@@ -129,6 +129,8 @@ Inside the `div` with Row RowSpan in the SubfileControl record comes the `for` l
 
 This loop will generate *SFL1.Count* number of `DdsSubfileRecord` instances. `rrn` goes from *zero* to `SFL1.Count-1`, where *SFL1.Count* is the number of records *written* to the subfile when the Display Page renders.
 
+> Note: Even when the `for loop` for the subfile records wants to render **all** the records in the subfile, those that are **not** in the `SFLC_SubfilePage` range (current page displayed) are *cached* in the session, such that when user paginates the subfile, the client will submit an [AJAX](https://en.wikipedia.org/wiki/Ajax_%28programming%29) request to have the server respond with the current page's records by consulting the session cache. 
+
 The `row` variable used in the for loop, may be seem odd. It starts with the *line* number defined in the DDS specifications as follows:
 
 ```
