@@ -19,7 +19,7 @@ This topic presents *Concepts* that are important in the understanding to effici
 
 [QSys Program Structure](/concepts/program-structure/program-structure-overview.html)
 
-[QSys User Interface](/concepts/user-interface/ui_overview.html)
+[QSys User Interface](/concepts/user-interface/ui-overview)
 
 [QSys Printing](/concepts/printing/printing_overview.html)
 
