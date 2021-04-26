@@ -1,5 +1,5 @@
 ---
-title: ASNA Monarch Base Manuals
+title: ASNA Monarch® Base Manuals
 
 Id: Welcome
 TocParent: -1

@@ -1,5 +1,5 @@
 ---
-title: ASNA Monarch Base Reference
+title: ASNA Monarch® Base Reference
 Id: Welcome
 TocParent: -1
 ---
