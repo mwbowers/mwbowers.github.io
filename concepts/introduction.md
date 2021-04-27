@@ -3,20 +3,6 @@ title: Introduction to ASNA Monarch Base
 
 ---
 
-The application you are enhancing, maintaining or trying to understand probably originated on an IBM i and was migrated with ASNA Monarch technology.
-
-## Migration Roles
-There are several *Roles* involved in the complete Migration process, namely:
-
-|**Role**|**Tools**|**Description**
-| --- | --- | --- |
-| *Migrator*   | [ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help160/Main_Monarch.htm) <br/> [DataGate](https://docs.asna.com/documentation/Help160/Main_DataGate.htm) (for IBM i, Windows and SQL Server) <br/> [Visual RPG](https://docs.asna.com/documentation/Help160/Main_AVRNET.htm) | Oversees the complete Migration process. <br/> Trained in all Tools involved. |
-|*Remediator* | Visual RPG <br/> Nomad <br/> DataGate | Knows the IBM i Application. <br/> Understands RPG and Visual RPG. |
-|*Developer*  | ASNA Monarch Base <br/> DataGate | Understands ASNA Monarch Base. <br/> Can become Subject matter expert.
-
-> These documents describe in detail the *ASNA Monarch Base*. The **Developer Role** is the intended audience for the content that follows. For documentation relevant to the other *Roles* please refer to [ASNA Products Documentation](https://docs.asna.com/documentation/)
-
-
 ## Monarch Migration Output
 The ASNA Monarch migration solution translates IBM i programs written in RPG and CL into .NET C# classes.  RPG interactive programs make use of Display Files where the layout and data schema for the screens are defined, these Display Files are translated by Monarch into Razor Pages. 
 
