@@ -25,38 +25,40 @@ Concepts:
   section:
   - title: Introduction
     path: /concepts/introduction.html
-  - sectiontitle: Monarch Base Architecture
+  - sectiontitle: Architecture
     sectionpath: /concepts/architecture/architecture-overview.html
     section:
-    - title: ASNA.QSys
-      path: /concepts/architecture/asna-qsys.html
-    - title: QSys Job
+    - title: Application Architecture
+      path: /concepts/architecture/application-architecture.html
+    - title: The Job
       path: /concepts/architecture/qsys-job.html
+    - title: Monarch Base Architecture
+      path: /concepts/architecture/asna-qsys.html
   - sectiontitle: Program Structure
     sectionpath: /concepts/program-structure/program-structure-overview.html
     section:
     - title: RPG Language Support
       path: /concepts/program-structure/rpg-language-support.html
-    - title: ASNA.QSys Programs and Procedures
+    - title: Programs and Procedures
       path: /concepts/program-structure/qsys-program.html
-    - title: ASNA.QSys CL Program
+    - title: CL Programs
       path: /concepts/program-structure/qsys-cl-program.html
-    - title: ASNA.QSys DatabaseFile
+    - title: Database Files
       path: /concepts/program-structure/qsys-databasefile.html
-    - title: ASNA.QSys PrintFile
+    - title: Print Files
       path: /concepts/program-structure/qsys-printfile.html
-    - title: ASNA.QSys WorkstationFile
+    - title: Workstation Files
       path: /concepts/program-structure/qsys-workstationfile.html
-    - title: ASNA.QSys Fixed Types
+    - title: Fixed Data Types
       path: /concepts/program-structure/qsys-fixedtypes.html
   - sectiontitle: User Interface
     sectionpath: /concepts/user-interface/ui-overview.html
     section:
-    - title: ASP.NET 5 Websites
+    - title: Websites
       path: /concepts/user-interface/asp-net-websites.html
-    - title: QSys Expo Display Pages
+    - title: Expo Display Pages
       path: /concepts/user-interface/qsys-expo-display-pages.html
-    - title: QSys Expo Web Content
+    - title: Expo Web Content
       path: /concepts/user-interface/qsys-expo-web-content.html
     - title: Expo Client Library
       path: /concepts/user-interface/qsys-expo-client-library.html
@@ -64,7 +66,7 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-dds-elements.html
     - title: Expo Display Page Model
       path: /concepts/user-interface/qsys-expo-display-page-model.html
-    - title: QSys Expo Messagefile
+    - title: Messagefile
       path: /concepts/user-interface/qsys-expo-messagefile.html
     - title: Expo Client Library Advanced CSS
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html

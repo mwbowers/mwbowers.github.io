@@ -2,18 +2,11 @@
 title: Monarch Base Architecture
 ---
 
-The ASNA Monarch Base Architecture uses a layered architecture, where each of the layers is packaged into a [.NET Assembly](https://docs.microsoft.com/en-us/dotnet/standard/assembly/).
+The following sections describe the architecture of the ecosystem of a migrated application.
 
-All Monarch Base .NET Assemblies start with the prefix `ASNA.QSys`. 
+[Application Architecture](application-architecture.html)
 
-The conceptual Layers are:
+[Monarch Base Framework Libraries Architecture](asna-qsys.html)
 
-- Business Application Logic Support: `ASNA.QSys.Runtime`
+[DataGate Architecture](../database/database-overview.html)
 
-- User Interface: `ASNA.QSys.Expo`
-
-- Database Access: `ASNA.QSys.DataGate.Client`
-
-Each of these .NET Assemblies are distributed as [NuGet](https://docs.microsoft.com/en-us/nuget/what-is-nuget) packages available to licensed developers.
-
-The following sections will go in detail, describing the concepts behind the design of each of these components.
