@@ -84,7 +84,7 @@ _MAS running on its own Application Server_
 ## Base Assemblies
 Migrated Class Libraries and Executables as well as the Websites containing the Migrated Razor Pages Areas have a dependency on class libraries known as the ASNA Monarch Base (Base).
 
-Here is the [Reference](/reference/reference-overview.html) documentation on the Base classes and their members.
+Here is the [Reference](/reference/reference-overview.html) documentation on the Base framework classes and their members.
 
 The ASNA Monarch Base consists of the following assemblies:
 - ASNA.DataGate.Client.dll
