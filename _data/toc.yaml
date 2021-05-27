@@ -34,21 +34,26 @@ Concepts:
       path: /concepts/architecture/qsys-job.html
     - title: Monarch Base Architecture
       path: /concepts/architecture/asna-qsys.html
+    - title: Monarch Programs
+      path: /concepts/architecture/monarch-programs.html  
+    - title: Activation Groups
+      path: /concepts/architecture/activation-groups.html  
   - sectiontitle: Program Structure
     sectionpath: /concepts/program-structure/program-structure-overview.html
     section:
-    - title: RPG Language Support
-      path: /concepts/program-structure/rpg-language-support.html
     - title: Programs and Procedures
       path: /concepts/program-structure/qsys-program.html
     - title: CL Programs
       path: /concepts/program-structure/qsys-cl-program.html
-    - title: Database Files
-      path: /concepts/program-structure/qsys-databasefile.html
-    - title: Print Files
-      path: /concepts/program-structure/qsys-printfile.html
-    - title: Workstation Files
-      path: /concepts/program-structure/qsys-workstationfile.html
+    - sectiontitle: RPG Language - Files
+      sectionpath: /concepts/program-structure/rpg-language-files.html
+      section:
+      - title: Database Files
+        path: /concepts/program-structure/qsys-databasefile.html
+      - title: Print Files
+        path: /concepts/program-structure/qsys-printfile.html
+      - title: Workstation Files
+        path: /concepts/program-structure/qsys-workstationfile.html
     - title: Fixed Data Types
       path: /concepts/program-structure/qsys-fixedtypes.html
   - sectiontitle: User Interface
@@ -89,6 +94,8 @@ Concepts:
   - sectiontitle: Legacy Application Background
     sectionpath: /concepts/background/background-overview.html
     section:
+    - title: Programs, Modules and Procedures
+      path: /concepts/background/programs-modules-procedures.html
     - title: IBM i Developer's model
       path: /concepts/background/ibmi-developer-model.html
     - title: IBM i Fixed Types
