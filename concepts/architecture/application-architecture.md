@@ -10,9 +10,12 @@ IBM i programs rely on a runtime environment provided in the form of a Job. Jobs
 Some of the facilities provided to programs by the Job are:
 - Program Call Stack (Invocations)
 - Program Instantiation in Activation Groups (Activations)
+- A permanent connection to the database
 - Library Lists
 - File Overrides
 - Local Data Area
+
+After the Job has been established, control is passed to the initial program which in turn get the application going.
 
 IBM i Jobs can generally be classified as being either batch or interactive, where interactive jobs are associated with a workstation. Typical RPG application jobs are started in one of three ways on the IBM i:
 1.	A batch job is submitted (created) by a program running in an existing job or from a command line.

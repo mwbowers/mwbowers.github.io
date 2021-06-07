@@ -1,6 +1,8 @@
 ---
-title: QSys Job
+title: The Job
 ---
+
+
 ASP.NET 5 does not implement the concept of a *Job* like [IBM i does](/concepts/background/ibmi-job). The closest is [Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state), but it is not what the [IBM i Developer Model](/concepts/background/ibmi-developer-model) expects.
 
 ASNA.QSys.Runtime assembly provides a more suitable class in the namespace ASNA.QSys.HostServices called `Job`.

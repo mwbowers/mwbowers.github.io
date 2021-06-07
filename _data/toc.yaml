@@ -30,14 +30,14 @@ Concepts:
     section:
     - title: Application Architecture
       path: /concepts/architecture/application-architecture.html
-    - title: The Job
-      path: /concepts/architecture/qsys-job.html
-    - title: Monarch Base Architecture
-      path: /concepts/architecture/asna-qsys.html
     - title: Monarch Programs
       path: /concepts/architecture/monarch-programs.html  
     - title: Activation Groups
       path: /concepts/architecture/activation-groups.html  
+    - title: Program User Interface
+      path: /concepts/architecture/program-user-interface.html  
+    - title: Monarch Base Architecture
+      path: /concepts/architecture/asna-qsys.html
   - sectiontitle: Program Structure
     sectionpath: /concepts/program-structure/program-structure-overview.html
     section:
@@ -104,6 +104,10 @@ Concepts:
       path: /concepts/background/ibmi-job.html
     - title: IBM i Program
       path: /concepts/background/ibmi-program.html
+  - sectiontitle: Archive
+    section:
+    - title: The Job
+      path: /concepts/architecture/qsys-job.html
   - sectiontitle: Classic Monarch Framework Concepts
     sectionpath: /reference/monarch-fx/amfASNAMonarchFrameworkConceptsMain.html
     section:
@@ -2199,6 +2203,18 @@ Reference:
         path: /reference/datagate-client/whats-new-methods-and-properties.html
     - title: Copyright
       path: /reference/datagate-client/copyright.html
+  - sectiontitle: ASNA.QSys.Expo
+    section:      
+    - sectiontitle: ASNA.QSys.Expo.Model
+      sectionpath: /reference/asna-qsys-expo/expo-model/expo-model-intro.html
+      section:
+      - title: Model.DisplayPageModel
+        path: /reference/asna-qsys-expo/expo-model/display-page-model.html
+    - sectiontitle: ASNA.QSys.Expo.Tags
+      sectionpath: /reference/asna-qsys-expo/expo-tags/expo-tags-intro.html
+      section:
+      - title: Tags.DdsFile
+        path: /reference/asna-qsys-expo/expo-tags/dds-file.html
 
 
 ##
