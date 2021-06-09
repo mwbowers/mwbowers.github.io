@@ -34,7 +34,6 @@ A Spooled File has several other attributes but one of the most important ones i
 One or more Printer Writer jobs can be associated with an Output Queue, each Printer Writer is uniquely assigned a printer device.  It is the task of the Printer Writer to take Spooled Files and print them on an actual printer. 
 
 ![Printing to Paper on IBM i](images/printing-paper-ibmi.png)
-
 _Figure 2: Printing to Paper on IBM i_
 
 A Spooled File can remain in an Output Queue indefinitely but it is usually deleted after being printed by the Printer Writer, it can also be deleted programmatically by the job that produced it or by a user. 
@@ -52,7 +51,6 @@ DataGate does not implement the concept of an Output Queue.  Instead it leaves i
 2.	The program can open the Printer File without setting the manuscript path property, in which case DataGate will use a temporary file location and name and will call the Renderer as soon as the Printer File is closed instructing the Renderer to delete the Manuscript file when it finishes printing it.
 
 ![Producing a Report in Windows](images/producing-report-windows.png)
-
 _Figure 3: Producing a Report in Windows_
 
 Monarch will utilize the first approach to implement Output Queues.
@@ -70,6 +68,7 @@ In the next diagram, a user called Charles has a Manuscript file under path:
    `~\QPRINT\Charles\MYJOB-000123\REPORT\REPORT.4.apm`
 
 ![Manuscript in Output Queue](images/manuscript-in-output-queue.png)
+_Manuscript in Output Queue_
 
 The path to the manuscript intrinsically holds some attributes of the ‘spool file’, namely: 
 1.	Spooled file name
@@ -134,5 +133,7 @@ C:\MyPrograms\PrinterWriter /q=\\BACKSERVER\Shares\Spool\SHIPFAX /p=FaxPrinter /
 Each instance of PrinterWriter can only process manuscripts from a single folder and its descendants. If a printer name is given (/p=) all of the manuscripts are sent to the printer specified, if there is no /p= parameter, then each manuscript is sent to the printer given when the printer file was opened.
 
 After PrinterWriter starts, it waits until a 'q' is entered on the console to signal it to end.
+
+---
 
 [^1]: DataGate printer file has a different attribute called FormName which determines the Windows PaperSize.Kind property used to establish the type of paper to be used when printing. FormName is stored in the manuscript at XML <Document papersizekind \> and is immutable.

@@ -9,7 +9,7 @@ Handling the user interface of an interactive application is a cooperative effor
 The procedural program uses a workstation file to issue read and write instructions against the record formats to provide or request user data. A [DataSet](//docs.microsoft.com/en-us/dotnet/api/system.data.dataset) serves as the repository for the program and the user's data. The program's data is transferred to the Razor Page model and further processed by Helper Tags to produce the HTML presented to the user. Similarly, the user data is transferred back from the Razor Page model, via the DataSet, to the program's workstation file.
 
 ![yellow-blue-transitions](images/yellow-blue-transitions.png)
-**User Interface : Program - Transitions**
+_User Interface : Program - Transitions_
 
 ## Workstation File
 The Workstation File is the mechanism by which a program handles the user interface to communicate with the user. Each workstation file has an associated DataSet.
@@ -27,7 +27,7 @@ After a user enters data on the browser page representing a program's screen, th
 
 The [ASNA.QSys.Expo.Model.DisplayPageModel](../user-interface/qsys-expo-display-page-model.html) serves as the base class for the Razor Pages Models and encapsulates the behavior just described.
 ![Razor Page Model](images/razor-page-model.png)
-**Razor Page Model**
+_Razor Page Model_
 
 As the Job continues execution, the same program, or potentially a different one called by it, will eventually issue a new Read operation to prompt the user for some new data.  As described in the previous section, the data to create that new user screen will be sent as a DataSet by the *blue* thread to the *yellow* thread which will then continue its execution to respond to the browser.
 
@@ -37,7 +37,7 @@ There are two options at this point, either the same program will respond using 
 As part of a GET or POST request, the Razor Page View is responsible to turn the values of the page's Model into a response for the browser.  A View acts as a template for generating the HTML. The typical view includes static HTML, TagHelpers that emit HTML dynamically, and C# code.
 
 ![Razor Page View](images/razor-page-view.png)
-**Razor Page View**
+_Razor Page View_
 
 #### Expo TagHelpers
 The Monarch Base provides a set of [TagHelpers](../user-interface/qsys-expo-dds-elements.html) to assist in the generation of HTML out of the data produced by the Program and stored in the Razor Page Model.  

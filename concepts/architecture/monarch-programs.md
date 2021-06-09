@@ -68,7 +68,7 @@ The class ```JobSupport.CommonProgram``` extend the class ```JobSupport.Module``
 The following diagram shows the relationship of a Monarch Program with its Modules and Service Programs. 
 
 ![Programs, Modules and Service Programs](images/monarch-programs-modules.png)
-**Programs, Modules and Service Programs**
+_Programs, Modules and Service Programs_
 
 Notice that when program *Program1* was generated, a single class was created to serve both as the Program and the entry Module. In addition, Program1 has a collection of references to its **other** modules.  The main entry module was not named with the same name as the program, Module1 vs Program1, so the name that survives in the combined object is that of the program, Program1.
 

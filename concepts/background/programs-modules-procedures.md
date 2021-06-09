@@ -19,7 +19,7 @@ A program has a single entry-point.
 An OPM program is produced by the compilation of a source file and any other optional *included* source files.
 
 ![OPM Program Creation](images/opm-program-creation.png)
-**OPM Program Creation**
+_OPM Program Creation_
 
  
 The CRTRPGPGM and CRTCLPGM were used to create OPM programs.
@@ -39,13 +39,13 @@ Procedures are the target of a CALLB RPG op-code, a CALLPRC CL command or are in
 A module cannot be invoked directly by a program, instead one or more modules are bound together into an ILE program using the CRTPGM command or an ILE service-program via de CRTSRVPGM command.
 
 ![ILE Program Creation](images/ile-program-creation.png)
-**ILE Program Creation**
+_ILE Program Creation_
 
 #### ILE Program
 ILE programs have one of their modules designated as the Entry Program Module, the module should have one of its procedures marked as the main procedure and is this procedure the one who receives controls when the ILE program is CALLed.
 
 ![ILE Program](images/ile-program.png)
-**ILE Program with 3 Modules**
+_ILE Program with 3 Modules_
 
 #### ILE Service-Programs
 A service-program is also a first level object of the operating system, its type is ```*SRVPGM```.
@@ -54,13 +54,13 @@ Similar to an ILE program, a service-program is produced by binding one or more 
 A service-program cannot be called directly by another program, instead, the service-programs surfaces a set of public procedures which can be bound to and then invoked. A program that uses a service-program will have its name, and potentially its library name, annotated within it so that when the program is activated, the service-program can be also located and activated too.
 
 ![ILE Service-Program](images/ile-service-program.png)
-**ILE Service-Program with 4 Modules**
+_ILE Service-Program with 4 Modules_
 
 ### Single-Module Programs
 The vast majority of ILE programs are composed of a single module.  User written Service-Programs are not common, they are considered and 'advanced' technology in many shops.
 
 ![ILE Single Module Program](images/ile-single-module-program.png)
-**ILE Single Module Program**
+__ILE Single Module Program_
 
 In many ways this common single-module ILE program is very similar to an OPM program.
 
