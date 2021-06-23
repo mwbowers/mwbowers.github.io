@@ -15,6 +15,7 @@ Defines an input element where characters can be typed using a keyboard. The cap
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | LimitMaxLength | Gets or sets a value that indicates whether to set a limit on the maximum characteres allowed to be typed on the field. When true, the maximum allowed characters will be set to the Length of the field. | 
@@ -26,6 +27,7 @@ Defines an input element where characters can be typed using a keyboard. The cap
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | getFieldValue | Gets the value of the field from the Model. | the field value as string

@@ -15,6 +15,7 @@ Defines Base Record Attributes on a type
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
@@ -25,6 +26,7 @@ Defines Base Record Attributes on a type
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a BaseRecordAttribute from the Custom attributes associated with a type. | the attribute

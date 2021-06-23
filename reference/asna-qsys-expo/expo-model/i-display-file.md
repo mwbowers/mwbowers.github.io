@@ -1,5 +1,5 @@
 ---
-title: IDisplayFile class
+title: IDisplayFile interface
 ---
 
 Exposes DisplayFile properties and methods
@@ -15,6 +15,7 @@ Exposes DisplayFile properties and methods
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | DataSet | Gets the DisplayFile DataSet | 
@@ -34,6 +35,7 @@ Exposes DisplayFile properties and methods
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record number at the top

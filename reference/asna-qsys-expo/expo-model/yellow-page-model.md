@@ -15,6 +15,7 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | InputDataAvailable | Derived class defines is there will be data available on input | 
@@ -27,6 +28,7 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | ClearModelProperties | Derived class implements method to Clear all model properties | 

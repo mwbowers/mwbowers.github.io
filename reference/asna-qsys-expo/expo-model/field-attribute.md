@@ -15,6 +15,7 @@ Provides Displayfile field attributes
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | BlanksIndicator | Blanks indicator | 
@@ -28,6 +29,7 @@ Provides Displayfile field attributes
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a FieldAttribute from the given MemberInfo | the field attribute

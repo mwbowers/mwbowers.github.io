@@ -15,6 +15,7 @@ Defines the RecordModel class
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | IsActive | Gets a bollean value indicating that the Record is active | 
@@ -25,6 +26,7 @@ Defines the RecordModel class
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | IsTrue | Gets the resulting value of the evaluation of the condition using the optionIndicators. | false only if there is no doubt about it. If anything goes wrong, return true

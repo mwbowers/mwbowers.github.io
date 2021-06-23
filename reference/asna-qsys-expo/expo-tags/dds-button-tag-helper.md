@@ -15,6 +15,7 @@ Defines a clickable element that can be configured as a replacement of a DdsFiel
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | AidKey | Attention or Function key to be posted when Button is clicked (as if the user had pressed than keyboard key). | 
@@ -35,6 +36,7 @@ Defines a clickable element that can be configured as a replacement of a DdsFiel
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | IsVisible | Gets a value that indicates if button should be rendered. | True when conditional indicator expression evaluates to true, false otherwise.

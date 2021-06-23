@@ -15,6 +15,7 @@ Provides configuration for Display Pages.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | UseFakeData | Controls the generation and/or use of Fake data in lieu of running the program's logic. Defaults to false.  When set to true, the value of "FakeDataDirectory" is used to locate the Fake data.. | 

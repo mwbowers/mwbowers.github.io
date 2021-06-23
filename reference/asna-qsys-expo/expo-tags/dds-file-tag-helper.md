@@ -15,6 +15,7 @@ Renders the Monarch Base Application's Active records along with Active Aid Keys
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | DisplayPageModel | Gets the Active Page Model. | 

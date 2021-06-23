@@ -15,6 +15,7 @@ Provides helper class to assist server configuration
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | ConfigureDisplayPagesOptions | Gets | the service collection

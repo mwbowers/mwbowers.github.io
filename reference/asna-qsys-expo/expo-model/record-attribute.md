@@ -15,6 +15,7 @@ Defines  the Record Attribute on a type
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Alias | Gets or sets the Alias (alternative) name of a Record | 
@@ -28,6 +29,7 @@ Defines  the Record Attribute on a type
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets the RecordAttribute from the custom attributes of a Type | the record attribute

@@ -15,6 +15,7 @@ Provides common properties for DdsRecords
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | CursorLocation | Gets or sets a conditional expression indicating where the Cursor should be located when presenting the Page | 

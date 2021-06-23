@@ -31,6 +31,7 @@ Provides Decimal Attributes (for Properties)
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Digits | Max Digits | 
@@ -40,6 +41,7 @@ Provides Decimal Attributes (for Properties)
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a DecAttribute from a field member | the dec attribute

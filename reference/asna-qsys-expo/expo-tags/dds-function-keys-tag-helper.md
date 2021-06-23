@@ -15,6 +15,7 @@ Defines Application Aid Key banner
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 

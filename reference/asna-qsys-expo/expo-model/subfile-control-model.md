@@ -15,6 +15,7 @@ Defines the SubfileControlModel class
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | CursorRecordNumber | Gets or sets the CursorRecordNumber | 

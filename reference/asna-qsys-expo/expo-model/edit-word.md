@@ -15,6 +15,7 @@ Provides Displayfile field level keyword formatting for output-capable numeric f
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | Apply | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted value as string

@@ -15,6 +15,7 @@ Defines an input element to capture Dates for fields defined as decimal values.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | DateFormat | Gets the DateFormat from the Model. | 
@@ -25,6 +26,7 @@ Defines an input element to capture Dates for fields defined as decimal values.
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetDateFormat | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat

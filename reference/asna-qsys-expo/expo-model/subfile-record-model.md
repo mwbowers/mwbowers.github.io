@@ -30,6 +30,7 @@ Defines the SubfileRecordModel class
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | _RecordNumber | Gets or sets the Record Number | 

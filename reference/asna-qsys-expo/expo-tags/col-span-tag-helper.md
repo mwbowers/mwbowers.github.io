@@ -15,6 +15,7 @@ Provides a ColSpan tag helper to Razor elements.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | ColSpan | Gets or sets a value that indicates the width positions within a Row, to calculate Column end. | 

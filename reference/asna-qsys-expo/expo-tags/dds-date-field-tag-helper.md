@@ -15,6 +15,7 @@ Defines an input element to capture Dates.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | FirstDayOfWeek | Gets or sets the countries first day of the week. | 
@@ -26,6 +27,7 @@ Defines an input element to capture Dates.
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetDateFormat | Gets the DateFormat from the Model. | 

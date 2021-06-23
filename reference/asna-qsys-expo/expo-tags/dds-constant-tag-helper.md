@@ -15,6 +15,7 @@ Defines an constant label.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Text | Gets or sets the text of the constant. | 
@@ -24,6 +25,7 @@ Defines an constant label.
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | getConstantText | Gets a string value resolving any system symbol, such as: *DATE, *TIME, *SYSNAME and *USER. | A string value

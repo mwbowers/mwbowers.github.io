@@ -15,6 +15,7 @@ Defines a Display record
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | StretchConstantText | Gets or sets a value indicating if text for constants in the record are to be stretched-out to fill column positions | 

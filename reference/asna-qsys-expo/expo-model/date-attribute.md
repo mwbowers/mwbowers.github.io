@@ -15,6 +15,7 @@ Provides Date Attribute (for Properties)
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
@@ -24,6 +25,7 @@ Provides Date Attribute (for Properties)
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a DateAttribute from a field member | the data attribute

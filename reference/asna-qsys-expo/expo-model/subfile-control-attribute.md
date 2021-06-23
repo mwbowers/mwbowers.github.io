@@ -30,6 +30,7 @@ Defines Subfile Control Attribute on a type
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | DisplayFields | Gets the conditional indicator expression that determines if the Fields in the Subfile Controller should display | 
@@ -45,6 +46,7 @@ Defines Subfile Control Attribute on a type
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a SubfileControlAttribute from the Custom attributes on a type | the subfile control attribute

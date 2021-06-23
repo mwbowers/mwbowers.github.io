@@ -15,6 +15,7 @@ Defines a group of radio-button elements.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Text | Gets or sets the label describing the element group | 

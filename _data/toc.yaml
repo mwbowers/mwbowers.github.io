@@ -2252,8 +2252,6 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/edited-value-provider-factory.html
       - title: EditedValueProvider
         path: /reference/asna-qsys-expo/expo-model/edited-value-provider.html
-      - title: ExpoCssClassName
-        path: /reference/asna-qsys-expo/expo-model/expo-css-class-name.html
       - title: ExpoModelAssemblyAttribute
         path: /reference/asna-qsys-expo/expo-model/expo-model-assembly-attribute.html
       - title: ExportSourceAttribute

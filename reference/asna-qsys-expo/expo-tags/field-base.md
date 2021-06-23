@@ -15,6 +15,7 @@ Provides common methods for DdsFields and DdsConstants.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Col | Gets or sets a value that indicates horizontal position for field/constant within the page. Valid values start at 1 typically up to 132. | 
@@ -36,6 +37,7 @@ Provides common methods for DdsFields and DdsConstants.
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | IsVisible | Gets a value that indicates if element should be rendered. | True when conditional indicator expression evaluates to true, false otherwise.

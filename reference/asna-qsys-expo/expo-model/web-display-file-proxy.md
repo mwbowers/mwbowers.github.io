@@ -31,6 +31,7 @@ Defines a Proxy implementation for the WebDisplayFile
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | DataSet | Gets the current DataSet | 
@@ -50,6 +51,7 @@ Defines a Proxy implementation for the WebDisplayFile
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | AddCallHostSpecs | Will throw NonImplemented exception | throws exception

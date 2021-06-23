@@ -30,6 +30,7 @@ Provides Char Attributes (for Properties)
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Length | Length attribute | 
@@ -39,6 +40,7 @@ Provides Char Attributes (for Properties)
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a CharAttribute from a field member | the char attribute

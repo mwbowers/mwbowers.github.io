@@ -32,6 +32,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Culture | Gets a value with Culture specific information | 
@@ -40,6 +41,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix

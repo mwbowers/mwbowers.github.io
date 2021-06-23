@@ -25,6 +25,9 @@ Defines ValuesAttribute class
 | --- | --- | ---
 | validValues | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | initial values string array 
 
+<br>
+<br>
+
 | Name |  | Description |
 | --- | --- | --- |
 **ValuesAttribute** | ( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
@@ -33,6 +36,9 @@ Defines ValuesAttribute class
 | Parameter | Type | Description
 | --- | --- | ---
 | validValues | [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | initial values integer array 
+
+<br>
+<br>
 
 | Name |  | Description |
 | --- | --- | --- |
@@ -49,6 +55,7 @@ Defines ValuesAttribute class
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | ObjectType | Gets the Object Type | 
@@ -60,6 +67,7 @@ Defines ValuesAttribute class
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid

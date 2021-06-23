@@ -30,6 +30,7 @@ Defines the SessionStorage class
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | JobNumber | Gets or sets the Job Number from/to the Session | 
@@ -46,6 +47,7 @@ Defines the SessionStorage class
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | SetCmdParm | Sets a Command Parameter to the Monarch Session key | 

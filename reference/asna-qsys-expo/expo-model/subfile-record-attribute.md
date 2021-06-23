@@ -15,6 +15,7 @@ Defines Subfile Record Attribute on a type
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | NextChanged | Sets or gets a conditional indicator expression that determines if the record should be set as changed, to force the get-next-changed operation to succeed (SFLNXTCHG). Defaults to null | 
@@ -24,6 +25,7 @@ Defines Subfile Record Attribute on a type
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets the SubfileRecordAttribute from the Custom attributes on a type. | the subfile record attribute

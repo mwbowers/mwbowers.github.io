@@ -15,6 +15,7 @@ Defines a toggle two-state input element.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Text | Gets or sets a value to provide a description for the checkbox. | 
@@ -26,6 +27,7 @@ Defines a toggle two-state input element.
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | getFieldValueAsString | Gets the current value of the field as a string. | Value as string

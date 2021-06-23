@@ -26,6 +26,7 @@ Provides Byte Attributes (for Properties)
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets a ByteAttribute from a field member | the byte attribute

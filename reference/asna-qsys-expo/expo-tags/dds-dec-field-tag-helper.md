@@ -15,6 +15,7 @@ Defines an input element where numbers can be typed using a keyboard. The captur
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | FieldAttribute | Gets the FieldAttribute from the Model. | 

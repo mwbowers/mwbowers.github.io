@@ -15,6 +15,7 @@ Defines a Sunbfile record element
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | RecordNumber | Gets or sets a value indicating the subfile record number (starts at 1) | 

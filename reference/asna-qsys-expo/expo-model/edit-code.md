@@ -15,6 +15,7 @@ Provides methods to format numeric values according to Edit Code
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | Apply | Gets a string value representing the given numeric value after formatting it according to an Edit Code | the formatted value as string

@@ -26,6 +26,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | ValidationErrorList | Gets a collection of validation error messages | 
@@ -43,6 +44,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled

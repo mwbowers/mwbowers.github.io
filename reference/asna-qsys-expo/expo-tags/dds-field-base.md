@@ -15,6 +15,7 @@ Provides common methods for DdsFields.
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | For | Gets or sets a value that indicates the Model associated with the Mvc tag helper. | 
@@ -31,6 +32,7 @@ Provides common methods for DdsFields.
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | ProcessDdsField | When overriden in a derived class, method is called by rendering engine to write the HTML output. | 

@@ -21,6 +21,9 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 **AidProperty** | (  ) | Initializes a new AidProperty instance
 
 
+<br>
+<br>
+
 | Name |  | Description |
 | --- | --- | --- |
 **AidProperty** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
@@ -35,6 +38,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | Item(ASNA.QSys.Expo.Model.AidKey) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
@@ -44,6 +48,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | Reset | Resets the ConditionalProperty Array to its initial values | 

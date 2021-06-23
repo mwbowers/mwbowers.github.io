@@ -15,6 +15,7 @@ Defines the element where the 5250 Terminal will be rendered
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | For | Gets or sets the Model reference to the Record class. Mostly to simplify markup syntax. | 

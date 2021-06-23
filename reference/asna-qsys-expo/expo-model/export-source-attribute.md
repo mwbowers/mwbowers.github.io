@@ -15,6 +15,7 @@ Defines Export Source Attribute on a type
 <br>
 
 ## Properties
+
 | Name | Description | Accesor
 | --- | --- | ---
 | CCSID | Gets or sets the Coded Character Set Identifier (CCSID). Defaults to 37 | 
@@ -23,6 +24,7 @@ Defines Export Source Attribute on a type
 <br>
 
 ## Methods
+
 | Name | Description | Returns
 | --- | --- | ---
 | GetFrom | Gets the ExportSourceAttribute from custome attributes in the indicated type | The attribute
