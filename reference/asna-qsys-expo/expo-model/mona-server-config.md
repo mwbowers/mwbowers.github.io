@@ -25,9 +25,6 @@ Provides Mona-Server Configuration functionality
 | --- | --- | ---
 | i | [Expo.Model.IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) | initial configuration 
 
-<br>
-<br>
-
 | Name |  | Description |
 | --- | --- | --- |
 **MonaServerConfig** | (  ) | Initializes new instance of MonaServerConfig class
@@ -39,10 +36,10 @@ Provides Mona-Server Configuration functionality
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| HostName | Gets or sets a value that indicates the Name of the Host | 
-| Port | Gets or sets a value that indicates the IP Port to use | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | HostName | Gets or sets a value that indicates the Name of the Host | 
+| void | Port | Gets or sets a value that indicates the IP Port to use | 
 
 <br>
 <br>

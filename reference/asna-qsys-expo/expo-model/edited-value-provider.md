@@ -33,21 +33,21 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Culture | Gets a value with Culture specific information | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Culture | Gets a value with Culture specific information | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
-| GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
-| GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
-| CleanEditedValue | Gets a string value from an attempted string value after removing the Edit Code or Edit Word formatting characters | the value without formatting symbols
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| void | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
+| void | GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
+| void | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
+| void | CleanEditedValue | Gets a string value from an attempted string value after removing the Edit Code or Edit Word formatting characters | the value without formatting symbols
 
 <br>
 <br>

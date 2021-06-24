@@ -16,21 +16,21 @@ Defines an input element to capture Dates for fields defined as decimal values.
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| DateFormat | Gets the DateFormat from the Model. | 
-| DateSeparator | Gets the Date Separator from the Model. | 
-| DecFieldAttribute | Gets the DecAttribute from the Model. | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | DateFormat | Gets the DateFormat from the Model. | 
+| void | DateSeparator | Gets the Date Separator from the Model. | 
+| void | DecFieldAttribute | Gets the DecAttribute from the Model. | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetDateFormat | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat
-| GetDateSeparator | Gets the Data Separator from de Model. | A string
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| void | GetDateFormat | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat
+| void | GetDateSeparator | Gets the Data Separator from de Model. | A string
 
 <br>
 <br>

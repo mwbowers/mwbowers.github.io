@@ -25,9 +25,6 @@ Defines ValuesAttribute class
 | --- | --- | ---
 | validValues | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | initial values string array 
 
-<br>
-<br>
-
 | Name |  | Description |
 | --- | --- | --- |
 **ValuesAttribute** | ( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
@@ -36,9 +33,6 @@ Defines ValuesAttribute class
 | Parameter | Type | Description
 | --- | --- | ---
 | validValues | [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | initial values integer array 
-
-<br>
-<br>
 
 | Name |  | Description |
 | --- | --- | --- |
@@ -56,22 +50,22 @@ Defines ValuesAttribute class
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| ObjectType | Gets the Object Type | 
-| ValidValues | Gets the array of valid values | 
-| TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
-| Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | ObjectType | Gets the Object Type | 
+| void | ValidValues | Gets the array of valid values | 
+| void | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
+| void | Conversion | Gets ir sets the collection of functions used for the values conversion | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
-| GetFrom | Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes) | the ValuesAttribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
+| [Expo.Model.ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | GetFrom | Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes) | the ValuesAttribute
 
 <br>
 <br>

@@ -31,19 +31,19 @@ Provides Char Attributes (for Properties)
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Length | Length attribute | 
-| InputOnlyValue | Input-only attribute | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Length | Length attribute | 
+| void | InputOnlyValue | Input-only attribute | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetFrom | Gets a CharAttribute from a field member | the char attribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | GetFrom | Gets a CharAttribute from a field member | the char attribute
 
 <br>
 <br>

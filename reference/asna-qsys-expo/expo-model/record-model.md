@@ -16,32 +16,32 @@ Defines the RecordModel class
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| IsActive | Gets a bollean value indicating that the Record is active | 
-| CursorLocationFormatName | Gets or sets the Cursor Location Format Name | 
-| CursorLocationFieldName | Gets or sets the Cursor Location Field Name | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | IsActive | Gets a bollean value indicating that the Record is active | 
+| void | CursorLocationFormatName | Gets or sets the Cursor Location Format Name | 
+| void | CursorLocationFieldName | Gets or sets the Cursor Location Field Name | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| IsTrue | Gets the resulting value of the evaluation of the condition using the optionIndicators. | false only if there is no doubt about it. If anything goes wrong, return true
-| IsNotFalse | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
-| IsFalse | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
-| WasRecordPosted | Gets a boolean value that indicates if the Record was posted | true is the Record was posted
-| AddErrorMessage | Adds an Error Message to the list of Validation errors | 
-| GetMessageText | Gets a string value with the text corresponding to the message requested. | The Message text
-| ProcessErrorMessages | Process Error Message for a field in a record if the condition succeeds | true if error condition and error message was added to the validation error collection
-| IsNotTrue | Gets a boolean value indicating the result of evaluation of the condition using the optionIndicators. | Return false only if there is no doubt about it. If anything goes wrong, return true
-| ResolveConditionalProperty | Gets a string value that indicates the result of the condition in the property given as a string | The value corresponding to the condition
-| ResolveConditionalProperty | Gets a string value that indicates the result of the condition in the property given | The value corresponding to the condition
-| IsAidKeyInEffect | Gets a boolean value indicating if the Aid Key is in effect | true if the Aid key is in effect
-| IsAidKeyInEffect | Gets a boolean value indicating if the Aid Key is in effect given a conditional property | true if the Aid key is in effect
-| GetResultIndicator | Gets the result indicator numeric value | if result less than 100, the value is the result indicator, otherwise no response indicator was requested
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | IsTrue | Gets the resulting value of the evaluation of the condition using the optionIndicators. | false only if there is no doubt about it. If anything goes wrong, return true
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | IsNotFalse | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | IsFalse | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | WasRecordPosted | Gets a boolean value that indicates if the Record was posted | true is the Record was posted
+| void | AddErrorMessage | Adds an Error Message to the list of Validation errors | 
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | GetMessageText | Gets a string value with the text corresponding to the message requested. | The Message text
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | ProcessErrorMessages | Process Error Message for a field in a record if the condition succeeds | true if error condition and error message was added to the validation error collection
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | IsNotTrue | Gets a boolean value indicating the result of evaluation of the condition using the optionIndicators. | Return false only if there is no doubt about it. If anything goes wrong, return true
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | ResolveConditionalProperty | Gets a string value that indicates the result of the condition in the property given as a string | The value corresponding to the condition
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | ResolveConditionalProperty | Gets a string value that indicates the result of the condition in the property given | The value corresponding to the condition
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | IsAidKeyInEffect | Gets a boolean value indicating if the Aid Key is in effect | true if the Aid key is in effect
+| [Expo.Model.SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) | IsAidKeyInEffect | Gets a boolean value indicating if the Aid Key is in effect given a conditional property | true if the Aid key is in effect
+| [Expo.Model.RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | GetResultIndicator | Gets the result indicator numeric value | if result less than 100, the value is the result indicator, otherwise no response indicator was requested
 
 <br>
 <br>

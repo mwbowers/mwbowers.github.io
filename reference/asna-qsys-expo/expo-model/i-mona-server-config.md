@@ -1,5 +1,5 @@
 ---
-title: IMonaServerConfig interface
+title: IMonaServerConfig class
 ---
 
 Exposes MonaServerConfig properties
@@ -16,10 +16,10 @@ Exposes MonaServerConfig properties
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| HostName | Gets or sets HostName as a string | 
-| Port | Gets or sets IP Port number | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | HostName | Gets or sets HostName as a string | 
+| void | Port | Gets or sets IP Port number | 
 
 <br>
 <br>

@@ -16,20 +16,20 @@ Defines Base Record Attributes on a type
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| ChangeIndicator | Gets or sets the value that represents the Change indicator | 
-| SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
-| FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
+| void | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
+| void | FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetFrom | Gets a BaseRecordAttribute from the Custom attributes associated with a type. | the attribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html) | GetFrom | Gets a BaseRecordAttribute from the Custom attributes associated with a type. | the attribute
 
 <br>
 <br>

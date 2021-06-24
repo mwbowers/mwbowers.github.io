@@ -27,9 +27,9 @@ Provides Byte Attributes (for Properties)
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetFrom | Gets a ByteAttribute from a field member | the byte attribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.ByteAttribute](/reference/asna-qsys-expo/expo-model/byte-attribute.html) | GetFrom | Gets a ByteAttribute from a field member | the byte attribute
 
 <br>
 <br>

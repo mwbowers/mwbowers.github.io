@@ -16,9 +16,9 @@ Provides a Col tag helper to Razor elements.
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Col | Gets or sets a value that indicates the horizontal position within a Row. | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Col | Gets or sets a value that indicates the horizontal position within a Row. | 
 
 <br>
 <br>

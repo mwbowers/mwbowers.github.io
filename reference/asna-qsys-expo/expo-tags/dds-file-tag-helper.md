@@ -16,10 +16,10 @@ Renders the Monarch Base Application's Active records along with Active Aid Keys
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| DisplayPageModel | Gets the Active Page Model. | 
-| KeyNames | Gets or sets the display key name collection for the File. Key names are separated by semicolon. | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | DisplayPageModel | Gets the Active Page Model. | 
+| void | KeyNames | Gets or sets the display key name collection for the File. Key names are separated by semicolon. | 
 
 <br>
 <br>

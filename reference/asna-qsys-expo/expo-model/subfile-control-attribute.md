@@ -31,25 +31,25 @@ Defines Subfile Control Attribute on a type
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| DisplayFields | Gets the conditional indicator expression that determines if the Fields in the Subfile Controller should display | 
-| DisplayRecords | Gets the conditional indicator expression that determines if the Subfile Records should display | 
-| InitializeRecords | Gets the conditional indicator expression that determines if Subfile Records should be initialized | 
-| InitNotActive | Gets or sets a boolean that, when set to "true", when initializing the subfile records (because expression for InitializeRecords evaluates to true), the added records to the subfile will be non-active - meaning that they are not part of the subfile yet until the records are written to, or the user enters values into them -. | 
-| FoldDropIndicator | Gets or Sets the Fold/Drop toggle indicator numeric value. Defaults to zero (Fold/Drop does not apply) | 
-| Size | Gets or sets the Subfile Size. Defauls to zero records. | 
-| IsExpandable | Gets or sets a boolean value indicating if the Subfile can expand | 
-| ProgramQ | Gets or sets the value of the PGMQ on a Message subfile | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | DisplayFields | Gets the conditional indicator expression that determines if the Fields in the Subfile Controller should display | 
+| void | DisplayRecords | Gets the conditional indicator expression that determines if the Subfile Records should display | 
+| void | InitializeRecords | Gets the conditional indicator expression that determines if Subfile Records should be initialized | 
+| void | InitNotActive | Gets or sets a boolean that, when set to "true", when initializing the subfile records (because expression for InitializeRecords evaluates to true), the added records to the subfile will be non-active - meaning that they are not part of the subfile yet until the records are written to, or the user enters values into them -. | 
+| void | FoldDropIndicator | Gets or Sets the Fold/Drop toggle indicator numeric value. Defaults to zero (Fold/Drop does not apply) | 
+| void | Size | Gets or sets the Subfile Size. Defauls to zero records. | 
+| void | IsExpandable | Gets or sets a boolean value indicating if the Subfile can expand | 
+| void | ProgramQ | Gets or sets the value of the PGMQ on a Message subfile | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetFrom | Gets a SubfileControlAttribute from the Custom attributes on a type | the subfile control attribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.SubfileControlAttribute](/reference/asna-qsys-expo/expo-model/subfile-control-attribute.html) | GetFrom | Gets a SubfileControlAttribute from the Custom attributes on a type | the subfile control attribute
 
 <br>
 <br>

@@ -16,10 +16,10 @@ Provides Displayfile field level keyword formatting for output-capable numeric f
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| Apply | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted value as string
-| ApplyEditWord | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted string
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.EditWord](/reference/asna-qsys-expo/expo-model/edit-word.html) | Apply | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted value as string
+| [Expo.Model.EditWord](/reference/asna-qsys-expo/expo-model/edit-word.html) | ApplyEditWord | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted string
 
 <br>
 <br>

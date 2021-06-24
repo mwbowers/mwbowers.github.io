@@ -16,10 +16,10 @@ Defines a Page Row where elements are positioned
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Row | Gets or Sets the line nnumber where Row will be rendered. | 
-| RowSpan | Gets or sets the number of Rows this element specifies (defaults to 1) | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Row | Gets or Sets the line nnumber where Row will be rendered. | 
+| void | RowSpan | Gets or sets the number of Rows this element specifies (defaults to 1) | 
 
 <br>
 <br>

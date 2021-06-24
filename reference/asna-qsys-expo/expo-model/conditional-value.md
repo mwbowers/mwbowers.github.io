@@ -21,9 +21,6 @@ Defines ConditionalValue class
 **ConditionalValue** | (  ) | Initializes a new instance of the class ConditionalValue
 
 
-<br>
-<br>
-
 | Name |  | Description |
 | --- | --- | --- |
 **ConditionalValue** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
@@ -40,19 +37,19 @@ Defines ConditionalValue class
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Condition | Gets or sets the option-indicator-condition. Use & and | for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
-| Value | Gets or sets the result-indicator to turn On. Une indicator expected. Example: "51" meaning set result *In51=*On | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Condition | Gets or sets the option-indicator-condition. Use & and | for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
+| void | Value | Gets or sets the result-indicator to turn On. Une indicator expected. Example: "51" meaning set result *In51=*On | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| ToString | Serializes the instance into a string. | A string representation of the Conditional Value
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.ConditionalValue](/reference/asna-qsys-expo/expo-model/conditional-value.html) | ToString | Serializes the instance into a string. | A string representation of the Conditional Value
 
 <br>
 <br>

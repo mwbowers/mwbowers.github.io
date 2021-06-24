@@ -16,10 +16,10 @@ Provides helper class to assist server configuration
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| ConfigureDisplayPagesOptions | Gets | the service collection
-| ConfigureDisplayPagesOptions | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.DisplayOptionsServiceCollectionExtensions](/reference/asna-qsys-expo/expo-model/display-options-service-collection-extensions.html) | ConfigureDisplayPagesOptions | Gets | the service collection
+| [Expo.Model.DisplayOptionsServiceCollectionExtensions](/reference/asna-qsys-expo/expo-model/display-options-service-collection-extensions.html) | ConfigureDisplayPagesOptions | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
 
 <br>
 <br>

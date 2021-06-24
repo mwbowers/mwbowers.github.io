@@ -16,23 +16,23 @@ Provides Displayfile field attributes
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| BlanksIndicator | Blanks indicator | 
-| ChangeIndicator | Change indicator | 
-| Protect | Protect indicator | 
-| Alias | Field Alias name | 
-| OutputData | Output Data | 
-| ProtectCodeFieldName | Protect Code field name | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | BlanksIndicator | Blanks indicator | 
+| void | ChangeIndicator | Change indicator | 
+| void | Protect | Protect indicator | 
+| void | Alias | Field Alias name | 
+| void | OutputData | Output Data | 
+| void | ProtectCodeFieldName | Protect Code field name | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetFrom | Gets a FieldAttribute from the given MemberInfo | the field attribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | GetFrom | Gets a FieldAttribute from the given MemberInfo | the field attribute
 
 <br>
 <br>

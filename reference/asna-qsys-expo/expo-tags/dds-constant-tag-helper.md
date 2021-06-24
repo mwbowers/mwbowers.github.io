@@ -16,19 +16,19 @@ Defines an constant label.
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Text | Gets or sets the text of the constant. | 
-| StretchConstantText | Gets or sets a value that indicates if letter-spacing should be computed to make text rendeing use the full width of the field definition. | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Text | Gets or sets the text of the constant. | 
+| void | StretchConstantText | Gets or sets a value that indicates if letter-spacing should be computed to make text rendeing use the full width of the field definition. | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| getConstantText | Gets a string value resolving any system symbol, such as: *DATE, *TIME, *SYSNAME and *USER. | A string value
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| void | getConstantText | Gets a string value resolving any system symbol, such as: *DATE, *TIME, *SYSNAME and *USER. | A string value
 
 <br>
 <br>

@@ -21,9 +21,6 @@ Defines a ConditionalProperty
 **ConditionalProperty** | (  ) | Initializes a new instance of ConditionalProperty class
 
 
-<br>
-<br>
-
 | Name |  | Description |
 | --- | --- | --- |
 **ConditionalProperty** | ( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
@@ -32,9 +29,6 @@ Defines a ConditionalProperty
 | Parameter | Type | Description
 | --- | --- | ---
 | Property | [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Initial ConditionalValue collection 
-
-<br>
-<br>
 
 | Name |  | Description |
 | --- | --- | --- |
@@ -51,20 +45,20 @@ Defines a ConditionalProperty
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
-| IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
+| void | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| ToString | Serializes the ConditionalValue collection into a string. | the serialize string
-| Reset | Clears the encapsulated ConditionalValue collection | 
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ToString | Serializes the ConditionalValue collection into a string. | the serialize string
+| void | Reset | Clears the encapsulated ConditionalValue collection | 
 
 <br>
 <br>

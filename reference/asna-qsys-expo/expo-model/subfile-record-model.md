@@ -31,9 +31,9 @@ Defines the SubfileRecordModel class
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| _RecordNumber | Gets or sets the Record Number | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | _RecordNumber | Gets or sets the Record Number | 
 
 <br>
 <br>

@@ -32,19 +32,19 @@ Provides Decimal Attributes (for Properties)
 
 ## Properties
 
-| Name | Description | Accesor
-| --- | --- | ---
-| Digits | Max Digits | 
-| Decimals | Decimal positions | 
+| Type | Name | Description | Accesor
+| --- | --- | --- | --- 
+| void | Digits | Max Digits | 
+| void | Decimals | Decimal positions | 
 
 <br>
 <br>
 
 ## Methods
 
-| Name | Description | Returns
-| --- | --- | ---
-| GetFrom | Gets a DecAttribute from a field member | the dec attribute
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Expo.Model.DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | GetFrom | Gets a DecAttribute from a field member | the dec attribute
 
 <br>
 <br>
