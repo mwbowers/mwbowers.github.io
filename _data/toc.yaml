@@ -2290,13 +2290,10 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/web-display-file-proxy.html
       - title: YellowPageModel
         path: /reference/asna-qsys-expo/expo-model/yellow-page-model.html
-      - sectiontitle: DataConversions
       - title: Limits
         path: /reference/asna-qsys-expo/expo-model/data-conversions/limits.html
-      - sectiontitle: DateAttribute
       - title: DdsDateFormat
         path: /reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html
-      - sectiontitle: DisplayPageModel
       - title: RowColException
         path: /reference/asna-qsys-expo/expo-model/display-page-model/row-col-exception.html
     - sectiontitle: ASNA.QSys.Expo.Tags
@@ -2346,19 +2343,14 @@ Reference:
         path: /reference/asna-qsys-expo/expo-tags/record-base-tag-helper.html
       - title: Terminal5250TagHelper
         path: /reference/asna-qsys-expo/expo-tags/terminal5250-tag-helper.html
-      - sectiontitle: DdsButtonTagHelper
       - title: ButtonStyles
         path: /reference/asna-qsys-expo/expo-tags/dds-button-tag-helper/button-styles.html
-      - sectiontitle: DdsDateFieldTagHelper
       - title: DdsDayNames
         path: /reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper/dds-day-names.html
-      - sectiontitle: DdsFunctionKeysTagHelper
       - title: ActiveKeyBarLocation
         path: /reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper/active-key-bar-location.html
-      - sectiontitle: FieldBase
       - title: LeftPadOption
         path: /reference/asna-qsys-expo/expo-tags/field-base/left-pad-option.html
-      - sectiontitle: expo-model
       - title: AidKeyIBM
         path: /reference/asna-qsys-expo/expo-model/aid-key-ibm.html
       - title: AidKey
@@ -2443,16 +2435,12 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/web-display-file-proxy.html
       - title: YellowPageModel
         path: /reference/asna-qsys-expo/expo-model/yellow-page-model.html
-      - sectiontitle: DataConversions
       - title: Limits
         path: /reference/asna-qsys-expo/expo-model/data-conversions/limits.html
-      - sectiontitle: DateAttribute
       - title: DdsDateFormat
         path: /reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html
-      - sectiontitle: DisplayPageModel
       - title: RowColException
         path: /reference/asna-qsys-expo/expo-model/display-page-model/row-col-exception.html
-      - sectiontitle: expo-tags
       - title: ColSpanTagHelper
         path: /reference/asna-qsys-expo/expo-tags/col-span-tag-helper.html
       - title: ColTagHelper
@@ -2497,16 +2485,12 @@ Reference:
         path: /reference/asna-qsys-expo/expo-tags/record-base-tag-helper.html
       - title: Terminal5250TagHelper
         path: /reference/asna-qsys-expo/expo-tags/terminal5250-tag-helper.html
-      - sectiontitle: DdsButtonTagHelper
       - title: ButtonStyles
         path: /reference/asna-qsys-expo/expo-tags/dds-button-tag-helper/button-styles.html
-      - sectiontitle: DdsDateFieldTagHelper
       - title: DdsDayNames
         path: /reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper/dds-day-names.html
-      - sectiontitle: DdsFunctionKeysTagHelper
       - title: ActiveKeyBarLocation
         path: /reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper/active-key-bar-location.html
-      - sectiontitle: FieldBase
       - title: LeftPadOption
         path: /reference/asna-qsys-expo/expo-tags/field-base/left-pad-option.html
 ##
