@@ -1,5 +1,5 @@
 ---
-title: ButtonStyles enumeration
+title: DdsButtonTagHelper.ButtonStyles enumeration
 ---
 
 
@@ -18,10 +18,10 @@ title: ButtonStyles enumeration
 
 | Name | Description
 | --- | --- 
-| Button | Renders an HTML button element.
-| Link | Renders an HTML anchor element.
-| Image | Renders an HTML img element.
-| Icon | Renders an HTML svg element, with a pre-defined drawing from a library.
+| ButtonStyles.Button | Renders an HTML button element.
+| ButtonStyles.Link | Renders an HTML anchor element.
+| ButtonStyles.Image | Renders an HTML img element.
+| ButtonStyles.Icon | Renders an HTML svg element, with a pre-defined drawing from a library.
 
 <br>
 <br>

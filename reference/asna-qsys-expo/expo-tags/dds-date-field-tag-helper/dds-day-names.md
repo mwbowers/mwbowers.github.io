@@ -1,5 +1,5 @@
 ---
-title: DdsDayNames enumeration
+title: DdsDateFieldTagHelper.DdsDayNames enumeration
 ---
 
 
@@ -18,14 +18,14 @@ title: DdsDayNames enumeration
 
 | Name | Description
 | --- | --- 
-| Undefined | No day defined.
-| Sunday | First day of the week (in most countries)
-| Monday | Second day of the week (in most countries)
-| Tuesday | Third day of the week (in most countries)
-| Wednesday | Fourth day of the week (in most countries)
-| Thursday | Fifth day of the week (in most countries)
-| Friday | Sixth day of the week (in most countries)
-| Saturday | Seventh day of the week (in most countries)
+| DdsDayNames.Undefined | No day defined.
+| DdsDayNames.Sunday | First day of the week (in most countries)
+| DdsDayNames.Monday | Second day of the week (in most countries)
+| DdsDayNames.Tuesday | Third day of the week (in most countries)
+| DdsDayNames.Wednesday | Fourth day of the week (in most countries)
+| DdsDayNames.Thursday | Fifth day of the week (in most countries)
+| DdsDayNames.Friday | Sixth day of the week (in most countries)
+| DdsDayNames.Saturday | Seventh day of the week (in most countries)
 
 <br>
 <br>

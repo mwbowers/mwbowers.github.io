@@ -1,5 +1,5 @@
 ---
-title: LeftPadOption enumeration
+title: FieldBase.LeftPadOption enumeration
 ---
 
 
@@ -18,9 +18,9 @@ title: LeftPadOption enumeration
 
 | Name | Description
 | --- | --- 
-| None | No Left padding. Default
-| Blanks | Pad by adding blank characters to the left.
-| Zeroes | Pad by adding zero character to the left.
+| LeftPadOption.None | No Left padding. Default
+| LeftPadOption.Blanks | Pad by adding blank characters to the left.
+| LeftPadOption.Zeroes | Pad by adding zero character to the left.
 
 <br>
 <br>

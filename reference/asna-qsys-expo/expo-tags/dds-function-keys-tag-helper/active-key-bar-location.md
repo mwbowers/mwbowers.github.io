@@ -1,5 +1,5 @@
 ---
-title: ActiveKeyBarLocation enumeration
+title: DdsFunctionKeysTagHelper.ActiveKeyBarLocation enumeration
 ---
 
 
@@ -18,11 +18,11 @@ title: ActiveKeyBarLocation enumeration
 
 | Name | Description
 | --- | --- 
-| VerticalLeft | Keys are rendered in a vertical direction on the left of the page.
-| VerticalRight | Keys are rendered in a vertical direction on the right of the page.
-| HorizontalTop | Keys are rendered in a horizontal direction on the top of the page.
-| HorizontalBottom | Keys are rendered in a horizontal direction on the bottom of the page.
-| Hidden | Keys are not rendered .
+| ActiveKeyBarLocation.VerticalLeft | Keys are rendered in a vertical direction on the left of the page.
+| ActiveKeyBarLocation.VerticalRight | Keys are rendered in a vertical direction on the right of the page.
+| ActiveKeyBarLocation.HorizontalTop | Keys are rendered in a horizontal direction on the top of the page.
+| ActiveKeyBarLocation.HorizontalBottom | Keys are rendered in a horizontal direction on the bottom of the page.
+| ActiveKeyBarLocation.Hidden | Keys are not rendered .
 
 <br>
 <br>

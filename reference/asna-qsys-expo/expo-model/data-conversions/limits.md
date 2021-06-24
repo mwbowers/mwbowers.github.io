@@ -1,5 +1,5 @@
 ---
-title: Limits enumeration
+title: DataConversions.Limits enumeration
 ---
 
 
@@ -18,9 +18,9 @@ title: Limits enumeration
 
 | Name | Description
 | --- | --- 
-| MaxDigits | Maximum number of digits
-| MaxIntegralDigits | Maximum integral digits
-| MaxDecimalDigits | Maximum decimal digits
+| Limits.MaxDigits | Maximum number of digits
+| Limits.MaxIntegralDigits | Maximum integral digits
+| Limits.MaxDecimalDigits | Maximum decimal digits
 
 <br>
 <br>
