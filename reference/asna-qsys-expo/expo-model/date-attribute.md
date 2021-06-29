@@ -35,9 +35,9 @@ Provides Date Attribute (for Properties)
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| STD_FORMAT | Standard Date Format
+| Type | Name | Description
+| --- | --- | --- 
+| void | STD_FORMAT | Standard Date Format
 
 <br>
 <br>

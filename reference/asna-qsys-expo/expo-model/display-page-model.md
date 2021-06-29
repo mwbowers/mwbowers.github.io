@@ -67,10 +67,10 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| AttnKeys | Gets an array of AidProperty Attention values, as defined in the Page Model. Attention Aid keys do not post data.
-| FuncKeys | Gets an array of AidProperty Function values, as defined in the Page Model.
+| Type | Name | Description
+| --- | --- | --- 
+| void | AttnKeys | Gets an array of AidProperty Attention values, as defined in the Page Model. Attention Aid keys do not post data.
+| void | FuncKeys | Gets an array of AidProperty Function values, as defined in the Page Model.
 
 <br>
 <br>

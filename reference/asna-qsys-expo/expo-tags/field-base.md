@@ -47,9 +47,9 @@ Provides common methods for DdsFields and DdsConstants.
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| ddsFile | Gets or sets a value indicating the associated DdsFile tag helper for the field/constant.
+| Type | Name | Description
+| --- | --- | --- 
+| void | ddsFile | Gets or sets a value indicating the associated DdsFile tag helper for the field/constant.
 
 <br>
 <br>

@@ -56,9 +56,9 @@ Defines Subfile Control Attribute on a type
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| ClearRecords | Gets the conditional indicator expression that determines if the records of the Subfile should be cleared
+| Type | Name | Description
+| --- | --- | --- 
+| void | ClearRecords | Gets the conditional indicator expression that determines if the records of the Subfile should be cleared
 
 <br>
 <br>

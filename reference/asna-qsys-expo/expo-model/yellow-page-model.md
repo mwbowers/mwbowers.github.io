@@ -60,9 +60,9 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| ajaxReq | Gets or sets a value indicating wether the request context type was application AJAX
+| Type | Name | Description
+| --- | --- | --- 
+| void | ajaxReq | Gets or sets a value indicating wether the request context type was application AJAX
 
 <br>
 <br>

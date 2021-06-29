@@ -48,10 +48,10 @@ Defines the RecordModel class
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| AttnKeys | Gets or sets the Attention Keys AID Property
-| FuncKeys | Gets or sets the Fuinction Keys AID Property
+| Type | Name | Description
+| --- | --- | --- 
+| void | AttnKeys | Gets or sets the Attention Keys AID Property
+| void | FuncKeys | Gets or sets the Fuinction Keys AID Property
 
 <br>
 <br>

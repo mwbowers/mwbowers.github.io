@@ -44,9 +44,9 @@ Provides common methods for DdsFields.
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| Usage | Gets or sets a value that indicates the Field Usage.
+| Type | Name | Description
+| --- | --- | --- 
+| void | Usage | Gets or sets a value that indicates the Field Usage.
 
 <br>
 <br>

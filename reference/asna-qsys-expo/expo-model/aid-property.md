@@ -56,9 +56,9 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| condAid | Gets or sets the Array of ConditionalProperty items
+| Type | Name | Description
+| --- | --- | --- 
+| void | condAid | Gets or sets the Array of ConditionalProperty items
 
 <br>
 <br>
