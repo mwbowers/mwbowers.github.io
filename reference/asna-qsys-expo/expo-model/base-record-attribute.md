@@ -18,9 +18,9 @@ Defines Base Record Attributes on a type
 
 | Type | Name | Description | Accesor
 | --- | --- | --- | --- 
-| void | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
-| void | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
-| void | FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
 
 <br>
 <br>
