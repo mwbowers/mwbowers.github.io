@@ -19,7 +19,7 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | Type | Name | Description | Accesor
 | --- | --- | --- | --- 
 | void | InputDataAvailable | When true, derived class defines that data is available on input | 
-| void | UserDataIsInvalid | Derived class implements to determine if the user input data is valid | 
+| Boolean | UserDataIsInvalid | Derived class implements to determine if the user input data is valid | 
 | void | ActiveDataSet | Gets the Active DataSet for the Active Displayfile | 
 | void | ActiveDisplayFile | Gets the Active Web Displayfile | 
 | void | SessionStore | Gets the SessionStorage instance (creates a new one if it does not exist) | 
