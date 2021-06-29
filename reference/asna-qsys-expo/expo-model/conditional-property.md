@@ -47,7 +47,7 @@ Defines a ConditionalProperty
 
 | Type | Name | Description | Accesor
 | --- | --- | --- | --- 
-| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
+| [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
 | Boolean | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
 
 <br>

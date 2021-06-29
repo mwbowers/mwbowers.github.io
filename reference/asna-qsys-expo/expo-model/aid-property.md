@@ -38,8 +38,8 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 | Type | Name | Description | Accesor
 | --- | --- | --- | --- 
-| [Expo.Model.AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | Item([Expo.Model.AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
-| void | ConditionalAid | Gets the Conditional Property collection | 
+| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([Expo.Model.AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
+| [Expo.Model.ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
 
 <br>
 <br>
