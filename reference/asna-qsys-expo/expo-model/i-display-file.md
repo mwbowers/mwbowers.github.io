@@ -38,10 +38,10 @@ Exposes DisplayFile properties and methods
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.IDisplayFile](/reference/asna-qsys-expo/expo-model/i-display-file.html) | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record number at the top
+| System.Int32 | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record number at the top
 | void | SetTopRecordOnInput | Sets the Subfile Top Relative Record Number for the last input operation | 
-| [Expo.Model.IDisplayFile](/reference/asna-qsys-expo/expo-model/i-display-file.html) | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
-| [Expo.Model.IDisplayFile](/reference/asna-qsys-expo/expo-model/i-display-file.html) | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
+| System.Boolean | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
+| System.Int32 | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
 
 <br>
 <br>

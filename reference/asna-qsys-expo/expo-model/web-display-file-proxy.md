@@ -54,10 +54,10 @@ Defines a Proxy implementation for the WebDisplayFile
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
-| [Expo.Model.WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record rumber
+| System.Int32 | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
+| System.Int32 | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record rumber
 | void | SetTopRecordOnInput | Sets the Subfile Top Relative Record Number for the last input operation | 
-| [Expo.Model.WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
+| System.Boolean | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
 
 <br>
 <br>

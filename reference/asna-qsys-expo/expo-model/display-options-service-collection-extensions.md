@@ -18,8 +18,8 @@ Provides helper class to assist server configuration
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.DisplayOptionsServiceCollectionExtensions](/reference/asna-qsys-expo/expo-model/display-options-service-collection-extensions.html) | ConfigureDisplayPagesOptions | Gets | the service collection
-| [Expo.Model.DisplayOptionsServiceCollectionExtensions](/reference/asna-qsys-expo/expo-model/display-options-service-collection-extensions.html) | ConfigureDisplayPagesOptions | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
+| void | ConfigureDisplayPagesOptions | Gets | the service collection
+| void | ConfigureDisplayPagesOptions | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
 
 <br>
 <br>

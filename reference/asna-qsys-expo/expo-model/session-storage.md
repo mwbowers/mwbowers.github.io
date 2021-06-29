@@ -52,11 +52,11 @@ Defines the SessionStorage class
 | --- | --- | --- | --- 
 | void | SetCmdParm | Sets a Command Parameter to the Monarch Session key | 
 | void | SetSessionInt32 | Set a general 32-bit integer value to a key in the Session | 
-| [Expo.Model.SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) | GetSessionInt32 | Get a general 32-bit integer value to a key in the Session | the stored value
+| System.Int32 | GetSessionInt32 | Get a general 32-bit integer value to a key in the Session | the stored value
 | void | SetSessionBytes | Set general byte array to a key in the Session | 
-| [Expo.Model.SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
+| System.Byte[] | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
 | void | SetSessionString | Sets a string value to a key in the Session | 
-| [Expo.Model.SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) | GetSessionString | Gets a string from a key on the Session | stored string value
+| System.String | GetSessionString | Gets a string from a key on the Session | stored string value
 | void | ClearAllSubfiles | Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." prefix at the time this document was written) | 
 
 <br>

@@ -49,7 +49,7 @@ Defines ConditionalValue class
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.ConditionalValue](/reference/asna-qsys-expo/expo-model/conditional-value.html) | ToString | Serializes the instance into a string. | A string representation of the Conditional Value
+| System.String | ToString | Serializes the instance into a string. | A string representation of the Conditional Value
 
 <br>
 <br>

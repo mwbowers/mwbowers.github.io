@@ -64,7 +64,7 @@ Defines ValuesAttribute class
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
+| System.Boolean | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
 | [Expo.Model.ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | GetFrom | Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes) | the ValuesAttribute
 
 <br>

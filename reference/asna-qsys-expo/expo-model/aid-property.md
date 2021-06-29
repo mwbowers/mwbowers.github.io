@@ -49,7 +49,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | void | Reset | Resets the ConditionalProperty Array to its initial values | 
-| [Expo.Model.AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | GetValidValues | Gets the valid values collection (string array) | the array of valid values
+| System.String[] | GetValidValues | Gets the valid values collection (string array) | the array of valid values
 
 <br>
 <br>

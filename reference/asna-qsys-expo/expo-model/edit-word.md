@@ -18,8 +18,8 @@ Provides Displayfile field level keyword formatting for output-capable numeric f
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.EditWord](/reference/asna-qsys-expo/expo-model/edit-word.html) | Apply | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted value as string
-| [Expo.Model.EditWord](/reference/asna-qsys-expo/expo-model/edit-word.html) | ApplyEditWord | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted string
+| System.String | Apply | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted value as string
+| System.String | ApplyEditWord | Gets a string value representing the given numeric value after formatting it according to an Edit Word | the formatted string
 
 <br>
 <br>

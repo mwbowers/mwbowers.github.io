@@ -57,7 +57,7 @@ Defines a ConditionalProperty
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ToString | Serializes the ConditionalValue collection into a string. | the serialize string
+| System.String | ToString | Serializes the ConditionalValue collection into a string. | the serialize string
 | void | Reset | Clears the encapsulated ConditionalValue collection | 
 
 <br>
