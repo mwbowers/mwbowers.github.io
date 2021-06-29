@@ -54,10 +54,10 @@ Defines a Proxy implementation for the WebDisplayFile
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| System.Int32 | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
-| System.Int32 | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record rumber
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record rumber
 | void | SetTopRecordOnInput | Sets the Subfile Top Relative Record Number for the last input operation | 
-| System.Boolean | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
+| Boolean | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
 
 <br>
 <br>

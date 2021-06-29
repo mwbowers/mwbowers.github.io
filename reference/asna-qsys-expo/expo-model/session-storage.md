@@ -52,11 +52,11 @@ Defines the SessionStorage class
 | --- | --- | --- | --- 
 | void | SetCmdParm | Sets a Command Parameter to the Monarch Session key | 
 | void | SetSessionInt32 | Set a general 32-bit integer value to a key in the Session | 
-| System.Int32 | GetSessionInt32 | Get a general 32-bit integer value to a key in the Session | the stored value
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | GetSessionInt32 | Get a general 32-bit integer value to a key in the Session | the stored value
 | void | SetSessionBytes | Set general byte array to a key in the Session | 
-| System.Byte[] | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
+| Byte[] | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
 | void | SetSessionString | Sets a string value to a key in the Session | 
-| System.String | GetSessionString | Gets a string from a key on the Session | stored string value
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSessionString | Gets a string from a key on the Session | stored string value
 | void | ClearAllSubfiles | Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." prefix at the time this document was written) | 
 
 <br>

@@ -18,7 +18,7 @@ Provides a Edited Value Provider factory
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| System.Threading.Tasks.Task | CreateValueProviderAsync | Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form | The asynchronous operation
+| Threading.Tasks.Task | CreateValueProviderAsync | Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form | The asynchronous operation
 
 <br>
 <br>

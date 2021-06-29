@@ -49,7 +49,7 @@ Defines ConditionalValue class
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| System.String | ToString | Serializes the instance into a string. | A string representation of the Conditional Value
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ToString | Serializes the instance into a string. | A string representation of the Conditional Value
 
 <br>
 <br>
