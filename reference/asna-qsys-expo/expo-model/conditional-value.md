@@ -39,8 +39,8 @@ Defines ConditionalValue class
 
 | Type | Name | Description | Accesor
 | --- | --- | --- | --- 
-| void | Condition | Gets or sets the option-indicator-condition. Use & and | for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
-| void | Value | Gets or sets the result-indicator to turn On. Une indicator expected. Example: "51" meaning set result *In51=*On | 
+| [Expo.Model.ConditionalValue](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Condition | Gets or sets the option-indicator-condition. Use & and | for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
+| [Expo.Model.ConditionalValue](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Value | Gets or sets the result-indicator to turn On. Une indicator expected. Example: "51" meaning set result *In51=*On | 
 
 <br>
 <br>
