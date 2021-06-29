@@ -47,20 +47,20 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled
-| void | GetMessageText | Gets the message text from the external message file. Message files are external XML resources. | the text as string
-| void | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | GetMessageText | Gets the message text from the external message file. Message files are external XML resources. | the text as string
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
 | void | LoadModelStateErrors | Populates the collection of validation errors. | 
-| void | GetLastRecordModelWritten | Gets a value that indicates the last RecordModel written by the application logic. | RecordModel or null
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | GetLastRecordModelWritten | Gets a value that indicates the last RecordModel written by the application logic. | RecordModel or null
 | void | SelectMyAction | Selects the appropriate action to format a response Page. | Action method result
 | void | ClearModelProperties | Resets all records properties to their default values. | 
 | void | LoadModelPropertiesFromDataSet | Refreshes the Model properties by loading values from the active Dataset | 
 | void | DumpModelPropertiesToDataSet | Updates the Dataset byc copying the field values from the Model properties | 
 | void | SetResponseIndicators | Sets the response indicators in the Dataset from the Display page attributes. | 
 | void | LoadFeedbackValues | Populates the Feedback values on the Active DisplayFile from posted data. | true if the values were loaded
-| void | ApplyEditWord | Formats value according to the provided EditWord | the formatted value as string
-| void | ApplyEditCode | Formats value according to the provided EditCode | the formatted value as string
-| void | GetHasBeenRead | Gets value that indicates Worstation Dataset status | true if Dataset has been read
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | ApplyEditWord | Formats value according to the provided EditWord | the formatted value as string
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | ApplyEditCode | Formats value according to the provided EditCode | the formatted value as string
+| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | GetHasBeenRead | Gets value that indicates Worstation Dataset status | true if Dataset has been read
 
 <br>
 <br>

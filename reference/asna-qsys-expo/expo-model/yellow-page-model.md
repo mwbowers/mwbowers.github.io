@@ -41,19 +41,19 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | void | MyAjaxActionResult | Gets the JsonResult with a un-successful response code | the JsonResult
 | void | MyAjaxActionResult | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
 | void | SelectMyAction | Gets the IActionResult as a Page render | the Action result
-| void | OnGetFake | Gets the Fake (prototyping) Page request's response | the action result
-| void | OnGet | Gets the User's Page's request response | the action result
-| void | OnPostFake | Gets the Fake (prototyping) Post Request's Response | the Action result
-| void | OnPost | Gets the Post Request's Response | the Action result
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | OnGetFake | Gets the Fake (prototyping) Page request's response | the action result
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | OnGet | Gets the User's Page's request response | the action result
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | OnPostFake | Gets the Fake (prototyping) Post Request's Response | the Action result
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | OnPost | Gets the Post Request's Response | the Action result
 | void | RedirectToResult | Gets ActionResult reference from a request to redirect to a different URL | the Action result
-| void | GetSessionTransactionID | Gets a string value that represents the Transaction ID from the Session storage | the transaction ID string
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | GetSessionTransactionID | Gets a string value that represents the Transaction ID from the Session storage | the transaction ID string
 | void | ClearSubfilesInSession | Clears cached Session storage entries related to All Subfiles | 
-| void | GetSubfileRecord | Gets a cached (in the Session storage) record data for a particular record format, identified by RRN | the HTML text for the subfile record cached
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | GetSubfileRecord | Gets a cached (in the Session storage) record data for a particular record format, identified by RRN | the HTML text for the subfile record cached
 | void | SetSubfileRecord | Sets the HTML for a record that needs to be cached in the Session Storage | 
 | void | OnCopyDspFileToBrowser | Callback method right before the workstation data is sent from the Web Server to the Client (browser) | 
 | void | OnCopyBrowserToDspFile | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server. | 
 | void | OnJobEnding | Callback method notifying the server that a Job is ending | 
-| void | GetFirstSubfileRow | For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest | the HTML with only fields showing in the first row
+| [Expo.Model.YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html) | GetFirstSubfileRow | For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest | the HTML with only fields showing in the first row
 
 <br>
 <br>

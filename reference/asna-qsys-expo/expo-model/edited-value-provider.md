@@ -44,9 +44,9 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
-| void | GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
-| void | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
+| [Expo.Model.EditedValueProvider](/reference/asna-qsys-expo/expo-model/edited-value-provider.html) | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
+| [Expo.Model.EditedValueProvider](/reference/asna-qsys-expo/expo-model/edited-value-provider.html) | GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
+| [Expo.Model.EditedValueProvider](/reference/asna-qsys-expo/expo-model/edited-value-provider.html) | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
 | void | CleanEditedValue | Gets a string value from an attempted string value after removing the Edit Code or Edit Word formatting characters | the value without formatting symbols
 
 <br>
