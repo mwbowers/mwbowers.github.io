@@ -16,13 +16,13 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | InputDataAvailable | When true, derived class defines that data is available on input | 
+| Boolean | InputDataAvailable | When true, derived class defines that data is available on input | 
 | Boolean | UserDataIsInvalid | Derived class implements to determine if the user input data is valid | 
-| void | ActiveDataSet | Gets the Active DataSet for the Active Displayfile | 
-| void | ActiveDisplayFile | Gets the Active Web Displayfile | 
-| void | SessionStore | Gets the SessionStorage instance (creates a new one if it does not exist) | 
+| Data.DataSet | ActiveDataSet | Gets the Active DataSet for the Active Displayfile | 
+| [Expo.Model.WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | ActiveDisplayFile | Gets the Active Web Displayfile | 
+| [Expo.Model.SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) | SessionStore | Gets the SessionStorage instance (creates a new one if it does not exist) | 
 
 <br>
 <br>
@@ -47,9 +47,9 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | Microsoft.AspNetCore.Mvc.IActionResult | OnPost | Gets the Post Request's Response | the Action result
 | void | RedirectToResult | Gets ActionResult reference from a request to redirect to a different URL | the Action result
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSessionTransactionID | Gets a string value that represents the Transaction ID from the Session storage | the transaction ID string
-| void | ClearSubfilesInSession | Clears cached Session storage entries related to All Subfiles | 
+| Void | ClearSubfilesInSession | Clears cached Session storage entries related to All Subfiles | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSubfileRecord | Gets a cached (in the Session storage) record data for a particular record format, identified by RRN | the HTML text for the subfile record cached
-| void | SetSubfileRecord | Sets the HTML for a record that needs to be cached in the Session Storage | 
+| Void | SetSubfileRecord | Sets the HTML for a record that needs to be cached in the Session Storage | 
 | void | OnCopyDspFileToBrowser | Callback method right before the workstation data is sent from the Web Server to the Client (browser) | 
 | void | OnCopyBrowserToDspFile | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server. | 
 | void | OnJobEnding | Callback method notifying the server that a Job is ending | 

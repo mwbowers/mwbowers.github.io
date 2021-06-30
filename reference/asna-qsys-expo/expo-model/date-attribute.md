@@ -16,10 +16,10 @@ Provides Date Attribute (for Properties)
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
-| void | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") | 
+| ASNA.QSys.Expo.Model.DateAttribute+DdsDateFormat | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") | 
 
 <br>
 <br>
@@ -37,7 +37,7 @@ Provides Date Attribute (for Properties)
 
 | Type | Name | Description
 | --- | --- | --- 
-| void | STD_FORMAT | Standard Date Format
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | STD_FORMAT | Standard Date Format
 
 <br>
 <br>

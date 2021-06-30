@@ -26,9 +26,9 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 **AidProperty** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| aidString | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | the string initializer 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | aidString | the string initializer 
 
 
 <br>
@@ -36,7 +36,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([Expo.Model.AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
 | [Expo.Model.ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
@@ -48,7 +48,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | Reset | Resets the ConditionalProperty Array to its initial values | 
+| Void | Reset | Resets the ConditionalProperty Array to its initial values | 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetValidValues | Gets the valid values collection (string array) | the array of valid values
 
 <br>

@@ -16,9 +16,9 @@ Defines the SubfileControlModel class
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | CursorRecordNumber | Gets or sets the CursorRecordNumber | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | CursorRecordNumber | Gets or sets the CursorRecordNumber | 
 
 <br>
 <br>

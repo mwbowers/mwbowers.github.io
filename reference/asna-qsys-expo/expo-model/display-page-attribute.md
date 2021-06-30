@@ -16,11 +16,11 @@ Defines a Display Page Attribute
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
-| void | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
-| void | CommandKeyIndicator | Gets or sets the Command Key indicator number | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | CommandKeyIndicator | Gets or sets the Command Key indicator number | 
 
 <br>
 <br>

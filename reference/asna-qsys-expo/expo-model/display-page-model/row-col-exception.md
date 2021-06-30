@@ -21,9 +21,9 @@ Provides an Exception derived class with the detailed invalid row, col string fo
 **DisplayPageModel.RowColException** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) rowCol ) | Initializes an instance of RowColException class
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| rowCol | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Row and Colum string specification. Comma separated values 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | rowCol | Row and Colum string specification. Comma separated values 
 
 
 <br>

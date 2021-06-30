@@ -16,10 +16,10 @@ Defines Subfile Record Attribute on a type
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | NextChanged | Sets or gets a conditional indicator expression that determines if the record should be set as changed, to force the get-next-changed operation to succeed (SFLNXTCHG). Defaults to null | 
-| void | IsMessageSubfile | Sets or gets a boolean value to indicate that the Subfile record is the Message Subfile. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | NextChanged | Sets or gets a conditional indicator expression that determines if the record should be set as changed, to force the get-next-changed operation to succeed (SFLNXTCHG). Defaults to null | 
+| Boolean | IsMessageSubfile | Sets or gets a boolean value to indicate that the Subfile record is the Message Subfile. | 
 
 <br>
 <br>

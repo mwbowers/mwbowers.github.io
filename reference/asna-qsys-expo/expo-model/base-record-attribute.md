@@ -16,7 +16,7 @@ Defines Base Record Attributes on a type
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 

@@ -21,11 +21,11 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 **EditedValueProvider** | ( Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource bindingSource, Microsoft.AspNetCore.Http.IFormCollection values, Globalization.CultureInfo culture ) | Initializes a new instance of EditedValueProvider
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| bindingSource | Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource | BindingSource for model binding 
-| values | Microsoft.AspNetCore.Http.IFormCollection | Parsed form request 
-| culture | Globalization.CultureInfo | Information about specific Culture 
+| Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource | bindingSource | BindingSource for model binding 
+| Microsoft.AspNetCore.Http.IFormCollection | values | Parsed form request 
+| Globalization.CultureInfo | culture | Information about specific Culture 
 
 
 <br>
@@ -33,9 +33,9 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Culture | Gets a value with Culture specific information | 
+| Globalization.CultureInfo | Culture | Gets a value with Culture specific information | 
 
 <br>
 <br>

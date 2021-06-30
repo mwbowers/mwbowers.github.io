@@ -16,12 +16,12 @@ Provides common properties for DdsRecords
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | CursorLocation | Gets or sets a conditional expression indicating where the Cursor should be located when presenting the Page | 
-| void | For | Gets or sets the Model reference to the Record class. Mostly to simplify markup syntax. | 
-| void | RecordModel | Gets or sets RecordModel associated with the Record tag helper | 
-| void | FormatName | Gets the value indicating the name of the Record format. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CursorLocation | Gets or sets a conditional expression indicating where the Cursor should be located when presenting the Page | 
+| Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression | For | Gets or sets the Model reference to the Record class. Mostly to simplify markup syntax. | 
+| [Expo.Model.RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | RecordModel | Gets or sets RecordModel associated with the Record tag helper | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | FormatName | Gets the value indicating the name of the Record format. | 
 
 <br>
 <br>

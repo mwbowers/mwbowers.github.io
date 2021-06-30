@@ -21,28 +21,28 @@ Defines ValuesAttribute class
 **ValuesAttribute** | ( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| validValues | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | initial values string array 
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | validValues | initial values string array 
 
 | Name |  | Description |
 | --- | --- | --- |
 **ValuesAttribute** | ( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| validValues | [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | initial values integer array 
+| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | validValues | initial values integer array 
 
 | Name |  | Description |
 | --- | --- | --- |
 **ValuesAttribute** | ( Type type, Object[] validValues ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| type | Type | type of valid values 
-| validValues | Object[] | valid values object array 
+| Type | type | type of valid values 
+| Object[] | validValues | valid values object array 
 
 
 <br>
@@ -50,12 +50,12 @@ Defines ValuesAttribute class
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | ObjectType | Gets the Object Type | 
-| void | ValidValues | Gets the array of valid values | 
-| void | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
-| void | Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| Type | ObjectType | Gets the Object Type | 
+| Object[] | ValidValues | Gets the array of valid values | 
+| Boolean | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
+| Func`2[[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] | Conversion | Gets ir sets the collection of functions used for the values conversion | 
 
 <br>
 <br>

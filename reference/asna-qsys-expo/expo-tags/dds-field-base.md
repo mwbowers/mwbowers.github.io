@@ -16,17 +16,17 @@ Provides common methods for DdsFields.
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | For | Gets or sets a value that indicates the Model associated with the Mvc tag helper. | 
-| void | ErrorMessage | Gets or sets a value that indicates conditional property describing the Error Message. | 
-| void | ErrorMessageId | Gets or sets a value that indicates conditional property describing the Error Message ID. | 
-| void | PositionCursor | Gets or sets a value that indicates the conditional expression determining if the cursor should be positioned to this input-capable field. | 
-| void | VirtualRowCol | Gets or sets a value that indicates the legacy row, col position that the logic may be expecting to identify. May not represent the current position of the tag helper. | 
-| void | ValuesText | Gets or sets a value that describes valid display values. Each text description is single-quoted. List is comma separated. | 
-| void | FieldName | Gets the name of the Field. | 
-| void | ValuesAttribute | Gets the ValueAttribute from the Model. | 
-| void | FieldAttribute | When overriden in a derived class, gets a value that indicates the Field Attribute. | 
+| Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression | For | Gets or sets a value that indicates the Model associated with the Mvc tag helper. | 
+| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ErrorMessage | Gets or sets a value that indicates conditional property describing the Error Message. | 
+| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ErrorMessageId | Gets or sets a value that indicates conditional property describing the Error Message ID. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | PositionCursor | Gets or sets a value that indicates the conditional expression determining if the cursor should be positioned to this input-capable field. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | VirtualRowCol | Gets or sets a value that indicates the legacy row, col position that the logic may be expecting to identify. May not represent the current position of the tag helper. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ValuesText | Gets or sets a value that describes valid display values. Each text description is single-quoted. List is comma separated. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | FieldName | Gets the name of the Field. | 
+| [Expo.Model.ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | ValuesAttribute | Gets the ValueAttribute from the Model. | 
+| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | When overriden in a derived class, gets a value that indicates the Field Attribute. | 
 
 <br>
 <br>

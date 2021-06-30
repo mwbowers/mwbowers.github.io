@@ -16,12 +16,12 @@ Defines a toggle two-state input element.
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Text | Gets or sets a value to provide a description for the checkbox. | 
-| void | FieldAttribute | Gets a FieldAttribute defined by the field, from the Model. | 
-| void | CharAttribute | Gets a CharAttribute defined by the field, from the Model. | 
-| void | DecAttribute | Gets a DecAttribute defined by the field, from the Model. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Text | Gets or sets a value to provide a description for the checkbox. | 
+| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets a FieldAttribute defined by the field, from the Model. | 
+| [Expo.Model.CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | CharAttribute | Gets a CharAttribute defined by the field, from the Model. | 
+| [Expo.Model.DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | DecAttribute | Gets a DecAttribute defined by the field, from the Model. | 
 
 <br>
 <br>

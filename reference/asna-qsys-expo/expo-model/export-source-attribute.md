@@ -16,9 +16,9 @@ Defines Export Source Attribute on a type
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | CCSID | Gets or sets the Coded Character Set Identifier (CCSID). Defaults to 37 | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | CCSID | Gets or sets the Coded Character Set Identifier (CCSID). Defaults to 37 | 
 
 <br>
 <br>

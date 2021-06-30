@@ -21,15 +21,15 @@ Defines CallHostSpecs class
 **CallHostSpecs** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) agentContainer, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) agentName, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) parmsConstants, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) parmsControlsCount, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) formatName, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) parmsFormatFields, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) maxOutputLength ) | Initializes new instance of CallHostSpecs class given the parameter initializers
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| agentContainer | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | agent container 
-| agentName | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | agent name 
-| parmsConstants | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | parameter constants 
-| parmsControlsCount | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | parameters control's count 
-| formatName | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | format name 
-| parmsFormatFields | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | paramater format fields 
-| maxOutputLength | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | maximum output length 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | agentContainer | agent container 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | agentName | agent name 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | parmsConstants | parameter constants 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | parmsControlsCount | parameters control's count 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | formatName | format name 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | parmsFormatFields | paramater format fields 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | maxOutputLength | maximum output length 
 
 
 <br>

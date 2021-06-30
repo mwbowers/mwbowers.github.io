@@ -16,10 +16,10 @@ Defines a Page Row where elements are positioned
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Row | Gets or Sets the line nnumber where Row will be rendered. | 
-| void | RowSpan | Gets or sets the number of Rows this element specifies (defaults to 1) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Row | Gets or Sets the line nnumber where Row will be rendered. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | RowSpan | Gets or sets the number of Rows this element specifies (defaults to 1) | 
 
 <br>
 <br>

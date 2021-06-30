@@ -21,9 +21,9 @@ Defines the SubfileRecordModel class
 **SubfileRecordModel** | ( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) rowNumber ) | Initializes a new instance of the class SubfileRecordModel to the row-number initial value
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| rowNumber | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Initial row-number 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | rowNumber | Initial row-number 
 
 
 <br>
@@ -31,9 +31,9 @@ Defines the SubfileRecordModel class
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | _RecordNumber | Gets or sets the Record Number | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | _RecordNumber | Gets or sets the Record Number | 
 
 <br>
 <br>

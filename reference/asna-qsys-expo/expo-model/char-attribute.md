@@ -21,9 +21,9 @@ Provides Char Attributes (for Properties)
 **CharAttribute** | ( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length ) | Char attribute
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| length | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | field length 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | length | field length 
 
 
 <br>
@@ -31,10 +31,10 @@ Provides Char Attributes (for Properties)
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Length | Length attribute | 
-| void | InputOnlyValue | Input-only attribute | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Length | Length attribute | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | InputOnlyValue | Input-only attribute | 
 
 <br>
 <br>

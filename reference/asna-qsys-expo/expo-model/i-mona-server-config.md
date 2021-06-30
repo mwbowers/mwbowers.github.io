@@ -16,10 +16,10 @@ Exposes MonaServerConfig properties
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | HostName | Gets or sets HostName as a string | 
-| void | Port | Gets or sets IP Port number | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | HostName | Gets or sets HostName as a string | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Port | Gets or sets IP Port number | 
 
 <br>
 <br>

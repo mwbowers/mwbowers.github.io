@@ -16,10 +16,10 @@ Defines an constant label.
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Text | Gets or sets the text of the constant. | 
-| void | StretchConstantText | Gets or sets a value that indicates if letter-spacing should be computed to make text rendeing use the full width of the field definition. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Text | Gets or sets the text of the constant. | 
+| Boolean | StretchConstantText | Gets or sets a value that indicates if letter-spacing should be computed to make text rendeing use the full width of the field definition. | 
 
 <br>
 <br>

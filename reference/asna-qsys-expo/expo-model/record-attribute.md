@@ -16,14 +16,14 @@ Defines  the Record Attribute on a type
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Alias | Gets or sets the Alias (alternative) name of a Record | 
-| void | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
-| void | CommandKeyIndicator | Gets or sets the Command Key Indicator number | 
-| void | EraseFormats | Gets or sets a colecction of Record Formats to Erase. The string is a space-separated list of format names. | 
-| void | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
-| void | ReturnSameData | Gets or sets if the posted Form's data should be not be changed. Defaults to false | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Alias | Gets or sets the Alias (alternative) name of a Record | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | CommandKeyIndicator | Gets or sets the Command Key Indicator number | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | EraseFormats | Gets or sets a colecction of Record Formats to Erase. The string is a space-separated list of format names. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
+| Boolean | ReturnSameData | Gets or sets if the posted Form's data should be not be changed. Defaults to false | 
 
 <br>
 <br>

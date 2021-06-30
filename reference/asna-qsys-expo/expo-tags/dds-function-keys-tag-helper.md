@@ -16,9 +16,9 @@ Defines Application Aid Key banner
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 
+| ASNA.QSys.Expo.Tags.DdsFunctionKeysTagHelper+ActiveKeyBarLocation | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 
 
 <br>
 <br>

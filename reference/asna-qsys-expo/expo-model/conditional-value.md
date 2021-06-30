@@ -26,10 +26,10 @@ Defines ConditionalValue class
 **ConditionalValue** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| condition | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | conditional expression 
-| val | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | result indicator to turn on 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | condition | conditional expression 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | val | result indicator to turn on 
 
 
 <br>
@@ -37,7 +37,7 @@ Defines ConditionalValue class
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Condition | Gets or sets the option-indicator-condition. Use & and | for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Value | Gets or sets the result-indicator to turn On. One indicator expected. Example: "51" meaning set result *In51=*On | 

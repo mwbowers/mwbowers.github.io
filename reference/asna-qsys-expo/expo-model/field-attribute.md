@@ -16,14 +16,14 @@ Provides Displayfile field attributes
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | BlanksIndicator | Blanks indicator | 
-| void | ChangeIndicator | Change indicator | 
-| void | Protect | Protect indicator | 
-| void | Alias | Field Alias name | 
-| void | OutputData | Output Data | 
-| void | ProtectCodeFieldName | Protect Code field name | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | BlanksIndicator | Blanks indicator | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | ChangeIndicator | Change indicator | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Protect | Protect indicator | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Alias | Field Alias name | 
+| Boolean | OutputData | Output Data | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ProtectCodeFieldName | Protect Code field name | 
 
 <br>
 <br>

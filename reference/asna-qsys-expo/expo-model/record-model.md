@@ -16,11 +16,11 @@ Defines the RecordModel class
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | IsActive | Gets a bollean value indicating that the Record is active | 
-| void | CursorLocationFormatName | Gets or sets the Cursor Location Format Name | 
-| void | CursorLocationFieldName | Gets or sets the Cursor Location Field Name | 
+| Boolean | IsActive | Gets a bollean value indicating that the Record is active | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CursorLocationFormatName | Gets or sets the Cursor Location Format Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CursorLocationFieldName | Gets or sets the Cursor Location Field Name | 
 
 <br>
 <br>
@@ -33,7 +33,7 @@ Defines the RecordModel class
 | Boolean | IsNotFalse | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
 | Boolean | IsFalse | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
 | Boolean | WasRecordPosted | Gets a boolean value that indicates if the Record was posted | true is the Record was posted
-| void | AddErrorMessage | Adds an Error Message to the list of Validation errors | 
+| Void | AddErrorMessage | Adds an Error Message to the list of Validation errors | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetMessageText | Gets a string value with the text corresponding to the message requested. | The Message text
 | Boolean | ProcessErrorMessages | Process Error Message for a field in a record if the condition succeeds | true if error condition and error message was added to the validation error collection
 | Boolean | IsNotTrue | Gets a boolean value indicating the result of evaluation of the condition using the optionIndicators. | Return false only if there is no doubt about it. If anything goes wrong, return true
@@ -50,8 +50,8 @@ Defines the RecordModel class
 
 | Type | Name | Description
 | --- | --- | --- 
-| void | AttnKeys | Gets or sets the Attention Keys AID Property
-| void | FuncKeys | Gets or sets the Fuinction Keys AID Property
+| [Expo.Model.AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | AttnKeys | Gets or sets the Attention Keys AID Property
+| [Expo.Model.AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | FuncKeys | Gets or sets the Fuinction Keys AID Property
 
 <br>
 <br>

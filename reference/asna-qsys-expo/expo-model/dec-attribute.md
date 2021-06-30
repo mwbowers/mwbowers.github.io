@@ -21,10 +21,10 @@ Provides Decimal Attributes (for Properties)
 **DecAttribute** | ( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) decimals ) | Initializes a new DecAttribute instance
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| length | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Field length 
-| decimals | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | number of decimals (defaults to zero) 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | length | Field length 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | decimals | number of decimals (defaults to zero) 
 
 
 <br>
@@ -32,10 +32,10 @@ Provides Decimal Attributes (for Properties)
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | Digits | Max Digits | 
-| void | Decimals | Decimal positions | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Digits | Max Digits | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Decimals | Decimal positions | 
 
 <br>
 <br>

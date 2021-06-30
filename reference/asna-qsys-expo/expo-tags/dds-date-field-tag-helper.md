@@ -16,12 +16,12 @@ Defines an input element to capture Dates.
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | FirstDayOfWeek | Gets or sets the countries first day of the week. | 
-| void | UseNativePicker | Gets or sets a value that indicates if the Browser's date picker should be used when capturing a date. | 
-| void | FieldAttribute | Gets the Date FieldAttribute from the Model. | 
-| void | DateFieldAttribute | Gets the DateAttribute from the Model. | 
+| ASNA.QSys.Expo.Tags.DdsDateFieldTagHelper+DdsDayNames | FirstDayOfWeek | Gets or sets the countries first day of the week. | 
+| Boolean | UseNativePicker | Gets or sets a value that indicates if the Browser's date picker should be used when capturing a date. | 
+| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets the Date FieldAttribute from the Model. | 
+| [Expo.Model.DateAttribute](/reference/asna-qsys-expo/expo-model/date-attribute.html) | DateFieldAttribute | Gets the DateAttribute from the Model. | 
 
 <br>
 <br>

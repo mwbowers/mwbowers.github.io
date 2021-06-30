@@ -26,18 +26,18 @@ Defines a ConditionalProperty
 **ConditionalProperty** | ( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| Property | [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Initial ConditionalValue collection 
+| [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Initial ConditionalValue collection 
 
 | Name |  | Description |
 | --- | --- | --- |
 **ConditionalProperty** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) propString ) | Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string
 
 
-| Parameter | Type | Description
+| Type | Parameter name | Description
 | --- | --- | ---
-| propString | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Serializes initial ConditionalValue collection 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | propString | Serializes initial ConditionalValue collection 
 
 
 <br>
@@ -45,7 +45,7 @@ Defines a ConditionalProperty
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
 | Boolean | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
@@ -58,7 +58,7 @@ Defines a ConditionalProperty
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ToString | Serializes the ConditionalValue collection into a string. | the serialize string
-| void | Reset | Clears the encapsulated ConditionalValue collection | 
+| Void | Reset | Clears the encapsulated ConditionalValue collection | 
 
 <br>
 <br>

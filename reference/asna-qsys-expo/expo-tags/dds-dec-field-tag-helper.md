@@ -16,12 +16,12 @@ Defines an input element where numbers can be typed using a keyboard. The captur
 
 ## Properties
 
-| Type | Name | Description | Accesor
+| Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| void | FieldAttribute | Gets the FieldAttribute from the Model. | 
-| void | DecAttribute | Gets the DecAttribute from the Model. | 
-| void | EditCode | Gets or sets the EditCodes keyword from the Model. | 
-| void | EditWord | Gets or sets the value that indicates the EditWord from the Model. | 
+| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets the FieldAttribute from the Model. | 
+| [Expo.Model.DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | DecAttribute | Gets the DecAttribute from the Model. | 
+| [Expo.Model.EditCodes](/reference/asna-qsys-expo/expo-model/edit-codes.html) | EditCode | Gets or sets the EditCodes keyword from the Model. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | EditWord | Gets or sets the value that indicates the EditWord from the Model. | 
 
 <br>
 <br>
