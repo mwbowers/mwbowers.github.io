@@ -2,7 +2,7 @@
 title: AidKeyIBM enumeration
 ---
 
-Specifies the IBM i Attention Key (AID)hex code
+Specifies the IBM i Attention Key (AID) hex code
 
 **Assembly:** ASNA.QSys.Expo.Model
 
