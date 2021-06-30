@@ -45,7 +45,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | Boolean | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
-| Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] | GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
+| Collections.Generic.IDictionary | GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
 | void | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
 | void | CleanEditedValue | Gets a string value from an attempted string value after removing the Edit Code or Edit Word formatting characters | the value without formatting symbols
 

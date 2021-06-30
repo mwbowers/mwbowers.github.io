@@ -29,7 +29,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| List&lt;string&gt; | ValidationErrorList | Gets a collection of validation error messages | 
+| Collections.Generic.List | ValidationErrorList | Gets a collection of validation error messages | 
 | Boolean | ValidationErrorsFound | Gets a value indicating the existence of validation errors. | 
 | Boolean | UserDataIsInvalid | Gets a value indicating if the data entered by user is valid. | 
 | Boolean | InputDataAvailable | Provides a mechanism to override the input data available state. | 
