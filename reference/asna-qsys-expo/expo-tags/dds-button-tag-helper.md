@@ -19,7 +19,7 @@ Defines a clickable element that can be configured as a replacement of a DdsFiel
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Expo.Model.AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) | AidKey | Attention or Function key to be posted when Button is clicked (as if the user had pressed than keyboard key). | 
-| ASNA.QSys.Expo.Tags.DdsButtonTagHelper+ButtonStyles | ButtonStyle | Gets ot sets a ButtonStyle to define the rendering shape. | 
+| ButtonStyles | ButtonStyle | Gets ot sets a ButtonStyle to define the rendering shape. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Color | Gets ot sets the name of a web color to be used to draw the element. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Col | Gets or sets a value that indicates the horizontal position within a Row. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | FocusField | Gets or sets the name of the field where the cursor will be set prior to submitting the page. This allows compatibility with logic expecting to detect cursor position on a particular field. | 

@@ -18,7 +18,7 @@ Defines an input element to capture Dates for fields defined as decimal values.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| ASNA.QSys.Expo.Model.DateAttribute+DdsDateFormat | DateFormat | Gets the DateFormat from the Model. | 
+| DdsDateFormat | DateFormat | Gets the DateFormat from the Model. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DateSeparator | Gets the Date Separator from the Model. | 
 | [Expo.Model.DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | DecFieldAttribute | Gets the DecAttribute from the Model. | 
 
