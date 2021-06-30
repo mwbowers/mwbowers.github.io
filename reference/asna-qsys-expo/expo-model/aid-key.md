@@ -2,7 +2,7 @@
 title: AidKey enumeration
 ---
 
-
+Specifies the Attention indicator index
 
 **Assembly:** ASNA.QSys.Expo.Model
 

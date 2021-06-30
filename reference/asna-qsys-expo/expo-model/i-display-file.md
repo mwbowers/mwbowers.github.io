@@ -1,5 +1,5 @@
 ---
-title: IDisplayFile class
+title: IDisplayFile interface
 ---
 
 Exposes DisplayFile properties and methods

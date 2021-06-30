@@ -2,7 +2,7 @@
 title: FieldUsages enumeration
 ---
 
-
+Provides Displayfile field usage: input, output, both, etc.
 
 **Assembly:** ASNA.QSys.Expo.Model
 

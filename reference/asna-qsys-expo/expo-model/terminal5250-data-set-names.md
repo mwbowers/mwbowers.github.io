@@ -1,8 +1,8 @@
 ---
-title: Terminal5250_DataSetNames enumeration
+title: Terminal5250_DataSetNames class
 ---
 
-
+Provides constants to name 5250 Terminal related DataSet tables and columns
 
 **Assembly:** ASNA.QSys.Expo.Model
 

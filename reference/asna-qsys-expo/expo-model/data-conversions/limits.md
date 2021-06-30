@@ -1,8 +1,8 @@
 ---
-title: DataConversions.Limits enumeration
+title: DataConversions.Limits class
 ---
 
-
+Specifies numeric limits
 
 **Assembly:** ASNA.QSys.Expo.Model
 
@@ -16,11 +16,11 @@ title: DataConversions.Limits enumeration
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| Limits.MaxDigits | Maximum number of digits
-| Limits.MaxIntegralDigits | Maximum integral digits
-| Limits.MaxDecimalDigits | Maximum decimal digits
+| Type | Name | Description
+| --- | --- | --- 
+| void | Limits.MaxDigits | Maximum number of digits
+| void | Limits.MaxIntegralDigits | Maximum integral digits
+| void | Limits.MaxDecimalDigits | Maximum decimal digits
 
 <br>
 <br>

@@ -1,8 +1,8 @@
 ---
-title: DdsDateFieldTagHelper.DdsDayNames enumeration
+title: DdsDateFieldTagHelper.DdsDayNames class
 ---
 
-
+Specifies the names of the calendar days.
 
 **Assembly:** ASNA.QSys.Expo.Tags
 
@@ -16,16 +16,16 @@ title: DdsDateFieldTagHelper.DdsDayNames enumeration
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| DdsDayNames.Undefined | No day defined.
-| DdsDayNames.Sunday | First day of the week (in most countries)
-| DdsDayNames.Monday | Second day of the week (in most countries)
-| DdsDayNames.Tuesday | Third day of the week (in most countries)
-| DdsDayNames.Wednesday | Fourth day of the week (in most countries)
-| DdsDayNames.Thursday | Fifth day of the week (in most countries)
-| DdsDayNames.Friday | Sixth day of the week (in most countries)
-| DdsDayNames.Saturday | Seventh day of the week (in most countries)
+| Type | Name | Description
+| --- | --- | --- 
+| void | DdsDayNames.Undefined | No day defined.
+| void | DdsDayNames.Sunday | First day of the week (in most countries)
+| void | DdsDayNames.Monday | Second day of the week (in most countries)
+| void | DdsDayNames.Tuesday | Third day of the week (in most countries)
+| void | DdsDayNames.Wednesday | Fourth day of the week (in most countries)
+| void | DdsDayNames.Thursday | Fifth day of the week (in most countries)
+| void | DdsDayNames.Friday | Sixth day of the week (in most countries)
+| void | DdsDayNames.Saturday | Seventh day of the week (in most countries)
 
 <br>
 <br>

@@ -2,7 +2,7 @@
 title: EditCodes enumeration
 ---
 
-
+Provides Displayfile field level keyword formatting for output-capable numeric fields.
 
 **Assembly:** ASNA.QSys.Expo.Model
 

@@ -1,5 +1,5 @@
 ---
-title: IMonaServerConfig class
+title: IMonaServerConfig interface
 ---
 
 Exposes MonaServerConfig properties
