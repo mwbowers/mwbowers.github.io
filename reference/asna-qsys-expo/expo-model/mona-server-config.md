@@ -1,5 +1,5 @@
 ---
-title: MonaServerConfig class
+title: MonaServerConfig interface
 ---
 
 Provides Mona-Server Configuration functionality
