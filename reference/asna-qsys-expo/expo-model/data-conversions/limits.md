@@ -1,5 +1,5 @@
 ---
-title: DataConversions.Limits class
+title: Limits enumeration
 ---
 
 Specifies numeric limits
@@ -16,11 +16,11 @@ Specifies numeric limits
 
 ## Fields
 
-| Type | Name | Description
-| --- | --- | --- 
-| void | Limits.MaxDigits | Maximum number of digits
-| void | Limits.MaxIntegralDigits | Maximum integral digits
-| void | Limits.MaxDecimalDigits | Maximum decimal digits
+| Name | Description
+| --- | --- 
+| MaxDigits | Maximum number of digits
+| MaxIntegralDigits | Maximum integral digits
+| MaxDecimalDigits | Maximum decimal digits
 
 <br>
 <br>

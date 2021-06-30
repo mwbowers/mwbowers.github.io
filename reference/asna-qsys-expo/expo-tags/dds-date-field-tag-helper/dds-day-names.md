@@ -1,5 +1,5 @@
 ---
-title: DdsDateFieldTagHelper.DdsDayNames class
+title: DdsDayNames enumeration
 ---
 
 Specifies the names of the calendar days.
@@ -16,16 +16,16 @@ Specifies the names of the calendar days.
 
 ## Fields
 
-| Type | Name | Description
-| --- | --- | --- 
-| void | DdsDayNames.Undefined | No day defined.
-| void | DdsDayNames.Sunday | First day of the week (in most countries)
-| void | DdsDayNames.Monday | Second day of the week (in most countries)
-| void | DdsDayNames.Tuesday | Third day of the week (in most countries)
-| void | DdsDayNames.Wednesday | Fourth day of the week (in most countries)
-| void | DdsDayNames.Thursday | Fifth day of the week (in most countries)
-| void | DdsDayNames.Friday | Sixth day of the week (in most countries)
-| void | DdsDayNames.Saturday | Seventh day of the week (in most countries)
+| Name | Description
+| --- | --- 
+| Undefined | No day defined.
+| Sunday | First day of the week (in most countries)
+| Monday | Second day of the week (in most countries)
+| Tuesday | Third day of the week (in most countries)
+| Wednesday | Fourth day of the week (in most countries)
+| Thursday | Fifth day of the week (in most countries)
+| Friday | Sixth day of the week (in most countries)
+| Saturday | Seventh day of the week (in most countries)
 
 <br>
 <br>

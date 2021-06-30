@@ -1,5 +1,5 @@
 ---
-title: DdsButtonTagHelper.ButtonStyles class
+title: ButtonStyles enumeration
 ---
 
 Specifies the rendering shape.
@@ -16,12 +16,12 @@ Specifies the rendering shape.
 
 ## Fields
 
-| Type | Name | Description
-| --- | --- | --- 
-| void | ButtonStyles.Button | Renders an HTML button element.
-| void | ButtonStyles.Link | Renders an HTML anchor element.
-| void | ButtonStyles.Image | Renders an HTML img element.
-| void | ButtonStyles.Icon | Renders an HTML svg element, with a pre-defined drawing from a library.
+| Name | Description
+| --- | --- 
+| Button | Renders an HTML button element.
+| Link | Renders an HTML anchor element.
+| Image | Renders an HTML img element.
+| Icon | Renders an HTML svg element, with a pre-defined drawing from a library.
 
 <br>
 <br>

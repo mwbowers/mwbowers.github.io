@@ -1,5 +1,5 @@
 ---
-title: DisplayPageModel.RowColException class
+title: RowColException class
 ---
 
 Provides an Exception derived class with the detailed invalid row, col string format (typically from VirtualRowCol field property)
@@ -18,7 +18,7 @@ Provides an Exception derived class with the detailed invalid row, col string fo
 
 | Name |  | Description |
 | --- | --- | --- |
-**DisplayPageModel.RowColException** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) rowCol ) | Initializes an instance of RowColException class
+**RowColException** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) rowCol ) | Initializes an instance of RowColException class
 
 
 | Type | Parameter name | Description

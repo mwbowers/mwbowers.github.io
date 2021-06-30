@@ -1,5 +1,5 @@
 ---
-title: FieldBase.LeftPadOption class
+title: LeftPadOption enumeration
 ---
 
 Describes the Left padding option.
@@ -16,11 +16,11 @@ Describes the Left padding option.
 
 ## Fields
 
-| Type | Name | Description
-| --- | --- | --- 
-| void | LeftPadOption.None | No Left padding. Default
-| void | LeftPadOption.Blanks | Pad by adding blank characters to the left.
-| void | LeftPadOption.Zeroes | Pad by adding zero character to the left.
+| Name | Description
+| --- | --- 
+| None | No Left padding. Default
+| Blanks | Pad by adding blank characters to the left.
+| Zeroes | Pad by adding zero character to the left.
 
 <br>
 <br>
