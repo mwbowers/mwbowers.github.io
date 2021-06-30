@@ -1,5 +1,5 @@
 ---
-title: EditCode class
+title: EditCode enumeration
 ---
 
 Provides methods to format numeric values according to Edit Code
