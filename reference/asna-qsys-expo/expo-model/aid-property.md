@@ -58,7 +58,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 | Type | Name | Description
 | --- | --- | --- 
-| void | condAid | Gets or sets the Array of ConditionalProperty items
+| [Expo.Model.ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | condAid | Gets or sets the Array of ConditionalProperty items
 
 <br>
 <br>

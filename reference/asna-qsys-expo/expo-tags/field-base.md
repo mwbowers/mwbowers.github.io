@@ -49,7 +49,7 @@ Provides common methods for DdsFields and DdsConstants.
 
 | Type | Name | Description
 | --- | --- | --- 
-| void | ddsFile | Gets or sets a value indicating the associated DdsFile tag helper for the field/constant.
+| [Expo.Tags.DdsFileTagHelper](/reference/asna-qsys-expo/expo-tags/dds-file-tag-helper.html) | ddsFile | Gets or sets a value indicating the associated DdsFile tag helper for the field/constant.
 
 <br>
 <br>

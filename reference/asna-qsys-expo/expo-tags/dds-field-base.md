@@ -46,7 +46,7 @@ Provides common methods for DdsFields.
 
 | Type | Name | Description
 | --- | --- | --- 
-| void | Usage | Gets or sets a value that indicates the Field Usage.
+| [Expo.Model.FieldUsages](/reference/asna-qsys-expo/expo-model/field-usages.html) | Usage | Gets or sets a value that indicates the Field Usage.
 
 <br>
 <br>
