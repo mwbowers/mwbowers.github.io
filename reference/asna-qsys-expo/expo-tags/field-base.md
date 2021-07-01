@@ -40,7 +40,7 @@ Provides common methods for DdsFields and DdsConstants.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | IsVisible | Gets a value that indicates if element should be rendered. | True when conditional indicator expression evaluates to true, false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsVisible | Gets a value that indicates if element should be rendered. | True when conditional indicator expression evaluates to true, false otherwise.
 
 <br>
 <br>

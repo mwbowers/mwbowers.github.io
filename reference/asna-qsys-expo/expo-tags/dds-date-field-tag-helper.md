@@ -30,9 +30,9 @@ Defines an input element to capture Dates.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | GetDateFormat | Gets the DateFormat from the Model. | 
-| void | GetDateSeparator | Gets the Date Separator from the Model. | 
-| void | getFieldValue | Gets the Date field's value as a string. Date format and separator are applied when formatting string. | A string value
+| DdsDateFormat | GetDateFormat | Gets the DateFormat from the Model. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetDateSeparator | Gets the Date Separator from the Model. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | getFieldValue | Gets the Date field's value as a string. Date format and separator are applied when formatting string. | A string value
 
 <br>
 <br>

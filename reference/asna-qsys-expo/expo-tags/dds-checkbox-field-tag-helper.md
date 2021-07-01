@@ -30,7 +30,7 @@ Defines a toggle two-state input element.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | getFieldValueAsString | Gets the current value of the field as a string. | Value as string
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | getFieldValueAsString | Gets the current value of the field as a string. | Value as string
 
 <br>
 <br>

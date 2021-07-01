@@ -48,7 +48,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| Void | Reset | Resets the ConditionalProperty Array to its initial values | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | Reset | Resets the ConditionalProperty Array to its initial values | 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetValidValues | Gets the valid values collection (string array) | the array of valid values
 
 <br>

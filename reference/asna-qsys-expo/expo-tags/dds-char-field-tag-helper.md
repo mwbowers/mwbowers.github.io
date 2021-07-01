@@ -30,7 +30,7 @@ Defines an input element where characters can be typed using a keyboard. The cap
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | getFieldValue | Gets the value of the field from the Model. | the field value as string
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | getFieldValue | Gets the value of the field from the Model. | the field value as string
 
 <br>
 <br>

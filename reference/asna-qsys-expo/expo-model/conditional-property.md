@@ -58,7 +58,7 @@ Defines a ConditionalProperty
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ToString | Serializes the ConditionalValue collection into a string. | the serialize string
-| Void | Reset | Clears the encapsulated ConditionalValue collection | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | Reset | Clears the encapsulated ConditionalValue collection | 
 
 <br>
 <br>

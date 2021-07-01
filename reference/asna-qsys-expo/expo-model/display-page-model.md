@@ -50,14 +50,14 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetMessageText | Gets the message text from the external message file. Message files are external XML resources. | the text as string
 | Char | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
-| Void | LoadModelStateErrors | Populates the collection of validation errors. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelStateErrors | Populates the collection of validation errors. | 
 | [Expo.Model.RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | GetLastRecordModelWritten | Gets a value that indicates the last RecordModel written by the application logic. | RecordModel or null
-| void | SelectMyAction | Selects the appropriate action to format a response Page. | Action method result
-| void | ClearModelProperties | Resets all records properties to their default values. | 
-| void | LoadModelPropertiesFromDataSet | Refreshes the Model properties by loading values from the active Dataset | 
-| void | DumpModelPropertiesToDataSet | Updates the Dataset byc copying the field values from the Model properties | 
-| void | SetResponseIndicators | Sets the response indicators in the Dataset from the Display page attributes. | 
-| void | LoadFeedbackValues | Populates the Feedback values on the Active DisplayFile from posted data. | true if the values were loaded
+| Microsoft.AspNetCore.Mvc.IActionResult | SelectMyAction | Selects the appropriate action to format a response Page. | Action method result
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ClearModelProperties | Resets all records properties to their default values. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelPropertiesFromDataSet | Refreshes the Model properties by loading values from the active Dataset | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | DumpModelPropertiesToDataSet | Updates the Dataset byc copying the field values from the Model properties | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetResponseIndicators | Sets the response indicators in the Dataset from the Display page attributes. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | LoadFeedbackValues | Populates the Feedback values on the Active DisplayFile from posted data. | true if the values were loaded
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ApplyEditWord | Formats value according to the provided EditWord | the formatted value as string
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ApplyEditCode | Formats value according to the provided EditCode | the formatted value as string
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | GetHasBeenRead | Gets value that indicates Worstation Dataset status | true if Dataset has been read

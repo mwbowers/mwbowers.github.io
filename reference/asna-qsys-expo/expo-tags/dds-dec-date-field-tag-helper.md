@@ -29,8 +29,8 @@ Defines an input element to capture Dates for fields defined as decimal values.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | GetDateFormat | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat
-| void | GetDateSeparator | Gets the Data Separator from de Model. | A string
+| DdsDateFormat | GetDateFormat | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetDateSeparator | Gets the Data Separator from de Model. | A string
 
 <br>
 <br>

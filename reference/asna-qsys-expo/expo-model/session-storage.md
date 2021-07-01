@@ -50,14 +50,14 @@ Defines the SessionStorage class
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | SetCmdParm | Sets a Command Parameter to the Monarch Session key | 
-| Void | SetSessionInt32 | Set a general 32-bit integer value to a key in the Session | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetCmdParm | Sets a Command Parameter to the Monarch Session key | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSessionInt32 | Set a general 32-bit integer value to a key in the Session | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | GetSessionInt32 | Get a general 32-bit integer value to a key in the Session | the stored value
-| Void | SetSessionBytes | Set general byte array to a key in the Session | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSessionBytes | Set general byte array to a key in the Session | 
 | Byte[] | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
-| Void | SetSessionString | Sets a string value to a key in the Session | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSessionString | Sets a string value to a key in the Session | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSessionString | Gets a string from a key on the Session | stored string value
-| Void | ClearAllSubfiles | Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." prefix at the time this document was written) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ClearAllSubfiles | Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." prefix at the time this document was written) | 
 
 <br>
 <br>

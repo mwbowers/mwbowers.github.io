@@ -28,7 +28,7 @@ Defines an constant label.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | getConstantText | Gets a string value resolving any system symbol, such as: *DATE, *TIME, *SYSNAME and *USER. | A string value
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | getConstantText | Gets a string value resolving any system symbol, such as: *DATE, *TIME, *SYSNAME and *USER. | A string value
 
 <br>
 <br>

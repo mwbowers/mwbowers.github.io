@@ -18,8 +18,8 @@ Provides helper class to assist server configuration
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | ConfigureDisplayPagesOptions | Gets | the service collection
-| void | ConfigureDisplayPagesOptions | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ConfigureDisplayPagesOptions | Gets | the service collection
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ConfigureDisplayPagesOptions | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
 
 <br>
 <br>

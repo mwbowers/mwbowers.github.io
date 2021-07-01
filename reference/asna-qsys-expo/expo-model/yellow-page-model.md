@@ -31,28 +31,28 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | ClearModelProperties | Derived class implements method to Clear all model properties | 
-| void | DumpModelPropertiesToDataSet | Derived class implements method to Dump Model properties into the DataSet | 
-| void | LoadModelPropertiesFromDataSet | Derived class implements method to load properties from the DataSet, and which properties | 
-| void | SetResponseIndicators | Derived class implements method to set the Response Indicators | 
-| void | LoadFeedbackValues | Derived class implements method to load the Displayfile Feedback Area values. | true if the values were loaded
-| void | AjaxGetRecordsActionResult | Gets the JsonResult for a "getRecords" AJAX request | the JsonResult
-| void | AjaxGetIconCollectionActionResult | Gets the JsonResult for a "getIconCollection" AJAX request | the Json result object
-| void | MyAjaxActionResult | Gets the JsonResult with a un-successful response code | the JsonResult
-| void | MyAjaxActionResult | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
-| void | SelectMyAction | Gets the IActionResult as a Page render | the Action result
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ClearModelProperties | Derived class implements method to Clear all model properties | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | DumpModelPropertiesToDataSet | Derived class implements method to Dump Model properties into the DataSet | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelPropertiesFromDataSet | Derived class implements method to load properties from the DataSet, and which properties | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetResponseIndicators | Derived class implements method to set the Response Indicators | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | LoadFeedbackValues | Derived class implements method to load the Displayfile Feedback Area values. | true if the values were loaded
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | AjaxGetRecordsActionResult | Gets the JsonResult for a "getRecords" AJAX request | the JsonResult
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | AjaxGetIconCollectionActionResult | Gets the JsonResult for a "getIconCollection" AJAX request | the Json result object
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | MyAjaxActionResult | Gets the JsonResult with a un-successful response code | the JsonResult
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | MyAjaxActionResult | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
+| Microsoft.AspNetCore.Mvc.IActionResult | SelectMyAction | Gets the IActionResult as a Page render | the Action result
 | Microsoft.AspNetCore.Mvc.IActionResult | OnGetFake | Gets the Fake (prototyping) Page request's response | the action result
 | Microsoft.AspNetCore.Mvc.IActionResult | OnGet | Gets the User's Page's request response | the action result
 | Microsoft.AspNetCore.Mvc.IActionResult | OnPostFake | Gets the Fake (prototyping) Post Request's Response | the Action result
 | Microsoft.AspNetCore.Mvc.IActionResult | OnPost | Gets the Post Request's Response | the Action result
-| void | RedirectToResult | Gets ActionResult reference from a request to redirect to a different URL | the Action result
+| Microsoft.AspNetCore.Mvc.IActionResult | RedirectToResult | Gets ActionResult reference from a request to redirect to a different URL | the Action result
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSessionTransactionID | Gets a string value that represents the Transaction ID from the Session storage | the transaction ID string
-| Void | ClearSubfilesInSession | Clears cached Session storage entries related to All Subfiles | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ClearSubfilesInSession | Clears cached Session storage entries related to All Subfiles | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSubfileRecord | Gets a cached (in the Session storage) record data for a particular record format, identified by RRN | the HTML text for the subfile record cached
-| Void | SetSubfileRecord | Sets the HTML for a record that needs to be cached in the Session Storage | 
-| void | OnCopyDspFileToBrowser | Callback method right before the workstation data is sent from the Web Server to the Client (browser) | 
-| void | OnCopyBrowserToDspFile | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server. | 
-| void | OnJobEnding | Callback method notifying the server that a Job is ending | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSubfileRecord | Sets the HTML for a record that needs to be cached in the Session Storage | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | OnCopyDspFileToBrowser | Callback method right before the workstation data is sent from the Web Server to the Client (browser) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | OnCopyBrowserToDspFile | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | OnJobEnding | Callback method notifying the server that a Job is ending | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetFirstSubfileRow | For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest | the HTML with only fields showing in the first row
 
 <br>

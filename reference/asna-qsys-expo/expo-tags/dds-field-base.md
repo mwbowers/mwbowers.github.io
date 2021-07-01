@@ -35,9 +35,9 @@ Provides common methods for DdsFields.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| void | ProcessDdsField | When overriden in a derived class, method is called by rendering engine to write the HTML output. | 
-| void | ProcessValues | Process Display Values. | 
-| void | EvalFieldUsageAndValue | Determine the Usage property value according to the property's get/set access specification as declared in the Model. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ProcessDdsField | When overriden in a derived class, method is called by rendering engine to write the HTML output. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ProcessValues | Process Display Values. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | EvalFieldUsageAndValue | Determine the Usage property value according to the property's get/set access specification as declared in the Model. | 
 
 <br>
 <br>
