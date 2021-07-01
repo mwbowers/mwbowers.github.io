@@ -36,10 +36,10 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelPropertiesFromDataSet | Derived class implements method to load properties from the DataSet, and which properties | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetResponseIndicators | Derived class implements method to set the Response Indicators | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | LoadFeedbackValues | Derived class implements method to load the Displayfile Feedback Area values. | true if the values were loaded
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | AjaxGetRecordsActionResult | Gets the JsonResult for a "getRecords" AJAX request | the JsonResult
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | AjaxGetIconCollectionActionResult | Gets the JsonResult for a "getIconCollection" AJAX request | the Json result object
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | MyAjaxActionResult | Gets the JsonResult with a un-successful response code | the JsonResult
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | MyAjaxActionResult | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
+| Microsoft.AspNetCore.Mvc.JsonResult | AjaxGetRecordsActionResult | Gets the JsonResult for a "getRecords" AJAX request | the JsonResult
+| Microsoft.AspNetCore.Mvc.JsonResult | AjaxGetIconCollectionActionResult | Gets the JsonResult for a "getIconCollection" AJAX request | the Json result object
+| Microsoft.AspNetCore.Mvc.JsonResult | MyAjaxActionResult | Gets the JsonResult with a un-successful response code | the JsonResult
+| Microsoft.AspNetCore.Mvc.JsonResult | MyAjaxActionResult | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
 | Microsoft.AspNetCore.Mvc.IActionResult | SelectMyAction | Gets the IActionResult as a Page render | the Action result
 | Microsoft.AspNetCore.Mvc.IActionResult | OnGetFake | Gets the Fake (prototyping) Page request's response | the action result
 | Microsoft.AspNetCore.Mvc.IActionResult | OnGet | Gets the User's Page's request response | the action result
