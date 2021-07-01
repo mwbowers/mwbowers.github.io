@@ -19,8 +19,8 @@ Defines a Subfile Controller element
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | SubfilePage | Gets or sets the Page value | 
-| Boolean | CueCurrentRecord | Gets or sets a value that indicates if the current record in the Subfile should be highlighted as the pointer hovers over the subfile. | 
-| Boolean | ClickSetsCurrentRecord | Gets or sets a value that indicates if the current record should be set by a mouse click (or finger tap) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | CueCurrentRecord | Gets or sets a value that indicates if the current record in the Subfile should be highlighted as the pointer hovers over the subfile. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ClickSetsCurrentRecord | Gets or sets a value that indicates if the current record should be set by a mouse click (or finger tap) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DblClickTargetField | Gets or sets a value that indicates the name of a record field where the cursor will be positioned prior to submitting the page, if user double-clicks at the record. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DblClickTargetValue | Gets or sets a value that indicates the value to be set to of a record field prior to submitting the page, if user double-clicks at the record. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DblClickKey | Gets or sets a value that indicates the name of the Aid Key to be "pressed" prior to submitting the page, if user double-clicks at the record. | 
@@ -34,8 +34,8 @@ Defines a Subfile Controller element
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SubfileEndTextOn | Gets or sets a value of the label displayed by subfile when there are no records (last page) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SubfileEndTextOff | Gets or sets a value of the label displayed by subfile when there are more ore records (not in last page) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | ShowRecordNumber | Gets or sets a value that indicates the page that should be visible to guarantee that the "rrn" indicated is displayed (when the subfile has more than one page's worth of records). | 
-| Boolean | ShowRecordAtTop | Gets or sets a value that indicates that record with indicated "rrn" should be displayed as the first record on the subfile . | 
-| Boolean | ShowRecordWithCursor | Gets or sets a value that indicates the page that should be visible to guarantee that record with the cursor is displayed (when the subfile has more than one page's worth of records). | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ShowRecordAtTop | Gets or sets a value that indicates that record with indicated "rrn" should be displayed as the first record on the subfile . | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ShowRecordWithCursor | Gets or sets a value that indicates the page that should be visible to guarantee that record with the cursor is displayed (when the subfile has more than one page's worth of records). | 
 
 <br>
 <br>

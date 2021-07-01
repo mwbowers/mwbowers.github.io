@@ -30,9 +30,9 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | Collections.Generic.List | ValidationErrorList | Gets a collection of validation error messages | 
-| Boolean | ValidationErrorsFound | Gets a value indicating the existence of validation errors. | 
-| Boolean | UserDataIsInvalid | Gets a value indicating if the data entered by user is valid. | 
-| Boolean | InputDataAvailable | Provides a mechanism to override the input data available state. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ValidationErrorsFound | Gets a value indicating the existence of validation errors. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | UserDataIsInvalid | Gets a value indicating if the data entered by user is valid. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | InputDataAvailable | Provides a mechanism to override the input data available state. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CursorLocationFormatName | Gets a value that indicating the name of the format where the Cursor was last located on the Page. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CursorLocationFieldName | Gets a value that indicating the name of field where the Cursor was last located on the Page. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | StarDate | Gets the current day formatted as *DATE | 
@@ -47,7 +47,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| Boolean | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetMessageText | Gets the message text from the external message file. Message files are external XML resources. | the text as string
 | Char | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
 | Void | LoadModelStateErrors | Populates the collection of validation errors. | 
@@ -60,7 +60,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 | void | LoadFeedbackValues | Populates the Feedback values on the Active DisplayFile from posted data. | true if the values were loaded
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ApplyEditWord | Formats value according to the provided EditWord | the formatted value as string
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ApplyEditCode | Formats value according to the provided EditCode | the formatted value as string
-| Boolean | GetHasBeenRead | Gets value that indicates Worstation Dataset status | true if Dataset has been read
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | GetHasBeenRead | Gets value that indicates Worstation Dataset status | true if Dataset has been read
 
 <br>
 <br>

@@ -26,7 +26,7 @@ Defines an element where a signature can be captured
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SignEditorCancelButtonText | Gets or sets the stroke editor's Cancel button text | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SignEditorDoneButtonText | Gets or sets the stroke editor's Done button text | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SignEditorEraseButtonText | Gets or sets the stroke editor's Erase button text | 
-| Boolean | DateStampWhenSigning | Gets or sets value indicating if the date should be stamped at the time the signature was captured | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | DateStampWhenSigning | Gets or sets value indicating if the date should be stamped at the time the signature was captured | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | InvalidEmptySignatureErrorText | Gets or sets value indicating that the user did not draw enough strokes to make a valid signature | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | ValueFieldLength | Gets or sets value defining the maximum length of the field which holds the image encoded | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SignatureIsTooElaborateWarningText | Gets or sets a value that displays as a warning when the image is too commplex to be stored in an encoded string (exceeds max. field length) | 

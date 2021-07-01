@@ -22,7 +22,7 @@ Provides Displayfile field attributes
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | ChangeIndicator | Change indicator | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Protect | Protect indicator | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Alias | Field Alias name | 
-| Boolean | OutputData | Output Data | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | OutputData | Output Data | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ProtectCodeFieldName | Protect Code field name | 
 
 <br>

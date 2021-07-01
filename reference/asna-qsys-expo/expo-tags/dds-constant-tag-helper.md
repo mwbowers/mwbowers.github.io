@@ -19,7 +19,7 @@ Defines an constant label.
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Text | Gets or sets the text of the constant. | 
-| Boolean | StretchConstantText | Gets or sets a value that indicates if letter-spacing should be computed to make text rendeing use the full width of the field definition. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | StretchConstantText | Gets or sets a value that indicates if letter-spacing should be computed to make text rendering use the full width of the field definition. | 
 
 <br>
 <br>

@@ -48,7 +48,7 @@ Defines a ConditionalProperty
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
-| Boolean | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
 
 <br>
 <br>

@@ -44,7 +44,7 @@ Defines a Proxy implementation for the WebDisplayFile
 | Int16 | FeedbackActiveWindowCursor | If a Window Record is active, this property gets or sets a value that indicates Cursor (row, column) corresponding to the last location last user input (Hi byte is the row, Lo-byte is the column) | 
 | Int16 | FeedbackSubfileCursorRRN | Gets or sets a value that indicates Relative Record Number of a subfile record.  For input operations, updated only if data is returned to the program. If multiple subfiles are on the display, this offset will contain the relative record number for the last subfile updated. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | LastFormatNameWritten | Gets a value that indicates the name of the last Record Format written | 
-| Boolean | DisplayErrorMessages | Gets a boolean value that indicates if the Error Messages should be displayed | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | DisplayErrorMessages | Gets a boolean value that indicates if the Error Messages should be displayed | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | InstanceId | Gets a value that indicates the Unique Page instance ID | 
 
 <br>
@@ -57,7 +57,7 @@ Defines a Proxy implementation for the WebDisplayFile
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | AddCallHostSpecs | Will throw NonImplemented exception | throws exception
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | GetTopRecordOnInput | Gets the Subfile Top Relative Record Number in the last input operation | the relative record rumber
 | Void | SetTopRecordOnInput | Sets the Subfile Top Relative Record Number for the last input operation | 
-| Boolean | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | SetOneTimeDefaultValue | Marks a field as one that has had a Default value (internal use) | true the field was not marked as having a Default value
 
 <br>
 <br>

@@ -54,7 +54,7 @@ Defines ValuesAttribute class
 | --- | --- | --- | --- 
 | Type | ObjectType | Gets the Object Type | 
 | Object[] | ValidValues | Gets the array of valid values | 
-| Boolean | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
 | Func`2[[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] | Conversion | Gets ir sets the collection of functions used for the values conversion | 
 
 <br>
@@ -64,7 +64,7 @@ Defines ValuesAttribute class
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| Boolean | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
 | [Expo.Model.ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | GetFrom | Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes) | the ValuesAttribute
 
 <br>
