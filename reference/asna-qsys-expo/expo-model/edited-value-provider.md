@@ -46,7 +46,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
 | [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2?view=net-5.0) | GetKeysFromPrefix | Gets a Dictionary withe the keys from a given prefix | A Dictionary with a string key with string elements
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
+| [ValueProviderResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderresult?view=aspnetcore-5.0) | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CleanEditedValue | Gets a string value from an attempted string value after removing the Edit Code or Edit Word formatting characters | the value without formatting symbols
 
 <br>
