@@ -18,14 +18,14 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 
 | Name |  | Description |
 | --- | --- | --- |
-**EditedValueProvider** | ( Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource bindingSource, Microsoft.AspNetCore.Http.IFormCollection values, Globalization.CultureInfo culture ) | Initializes a new instance of EditedValueProvider
+**EditedValueProvider** | ( [BindingSource](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.bindingsource?view=aspnetcore-5.0) bindingSource, [IFormCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.iformcollection?view=aspnetcore-5.0) values, [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-5.0) culture ) | Initializes a new instance of EditedValueProvider
 
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource | bindingSource | BindingSource for model binding 
-| Microsoft.AspNetCore.Http.IFormCollection | values | Parsed form request 
-| Globalization.CultureInfo | culture | Information about specific Culture 
+| [BindingSource](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.bindingsource?view=aspnetcore-5.0) | bindingSource | BindingSource for model binding 
+| [IFormCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.iformcollection?view=aspnetcore-5.0) | values | Parsed form request 
+| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-5.0) | culture | Information about specific Culture 
 
 
 <br>
@@ -35,7 +35,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| Globalization.CultureInfo | Culture | Gets a value with Culture specific information | 
+| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=net-5.0) | Culture | Gets a value with Culture specific information | 
 
 <br>
 <br>
@@ -45,7 +45,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ContainsPrefix | Overrides ContainsPrefix from the base | true if string contains the given prefix
-| Collections.Generic.IDictionary | GetKeysFromPrefix | Gets a Dictionay withe the keys from a given prefix | A Dictionary with a string key with string elements
+| [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2?view=net-5.0) | GetKeysFromPrefix | Gets a Dictionary withe the keys from a given prefix | A Dictionary with a string key with string elements
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | GetValue | Gets a ValueProviderResult given a dictionary key | the value provider result
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | CleanEditedValue | Gets a string value from an attempted string value after removing the Edit Code or Edit Word formatting characters | the value without formatting symbols
 

@@ -18,7 +18,7 @@ Defines the element where the 5250 Terminal will be rendered
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression | For | Gets or sets the Model reference to the Record class. Mostly to simplify markup syntax. | 
+| [ModelExpression](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression?view=aspnetcore-5.0) | For | Gets or sets the Model reference to the Record class. Mostly to simplify markup syntax. | 
 | ASNA.QSys.Expo.Model.Terminal5250_PageModel | The5250RecordModel | Gets the Terminal5250_PageModel Model reference | 
 
 <br>

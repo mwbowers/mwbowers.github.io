@@ -18,12 +18,12 @@ Defines the SessionStorage class
 
 | Name |  | Description |
 | --- | --- | --- |
-**SessionStorage** | ( Microsoft.AspNetCore.Http.ISession session ) | Initializes a new instance of SessionStorage class
+**SessionStorage** | ( [ISession](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.isession?view=aspnetcore-5.0) session ) | Initializes a new instance of SessionStorage class
 
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| Microsoft.AspNetCore.Http.ISession | session | a reference to a session 
+| [ISession](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.isession?view=aspnetcore-5.0) | session | a reference to a session 
 
 
 <br>

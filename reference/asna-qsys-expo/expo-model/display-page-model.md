@@ -29,7 +29,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| Collections.Generic.List | ValidationErrorList | Gets a collection of validation error messages | 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0) | ValidationErrorList | Gets a collection of validation error messages | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | ValidationErrorsFound | Gets a value indicating the existence of validation errors. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | UserDataIsInvalid | Gets a value indicating if the data entered by user is valid. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | InputDataAvailable | Provides a mechanism to override the input data available state. | 
@@ -52,7 +52,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 | Char | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelStateErrors | Populates the collection of validation errors. | 
 | [Expo.Model.RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | GetLastRecordModelWritten | Gets a value that indicates the last RecordModel written by the application logic. | RecordModel or null
-| Microsoft.AspNetCore.Mvc.IActionResult | SelectMyAction | Selects the appropriate action to format a response Page. | Action method result
+| [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult?view=aspnetcore-5.0) | SelectMyAction | Selects the appropriate action to format a response Page. | Action method result
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ClearModelProperties | Resets all records properties to their default values. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelPropertiesFromDataSet | Refreshes the Model properties by loading values from the active Dataset | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | DumpModelPropertiesToDataSet | Updates the Dataset byc copying the field values from the Model properties | 
@@ -60,7 +60,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | LoadFeedbackValues | Populates the Feedback values on the Active DisplayFile from posted data. | true if the values were loaded
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ApplyEditWord | Formats value according to the provided EditWord | the formatted value as string
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ApplyEditCode | Formats value according to the provided EditCode | the formatted value as string
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | GetHasBeenRead | Gets value that indicates Worstation Dataset status | true if Dataset has been read
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | GetHasBeenRead | Gets value that indicates Worsktation Dataset status | true if Dataset has been read
 
 <br>
 <br>
