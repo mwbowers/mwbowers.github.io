@@ -55,7 +55,7 @@ Defines ValuesAttribute class
 | Type | ObjectType | Gets the Object Type | 
 | Object[] | ValidValues | Gets the array of valid values | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
-| Func`2[[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] | Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| Func<object,object> | Conversion | Gets ir sets the collection of functions used for the values conversion | 
 
 <br>
 <br>
