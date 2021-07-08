@@ -16,29 +16,31 @@ Defines a ConditionalProperty
 
 ## Constructors
 
-| Name |  | Description 
-| --- | --- | --- 
-| **ConditionalProperty** | (  ) | Initializes a new instance of ConditionalProperty class
+| Name |  Description 
+| --- | --- 
+| **ConditionalProperty**(  ) | Initializes a new instance of ConditionalProperty class
+| **ConditionalProperty**( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
+| **ConditionalProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) propString ) | Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string
 
+<br>
+### ConditionalProperty( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property )
 
-| Name |  | Description 
-| --- | --- | --- 
-| **ConditionalProperty** | ( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
-
+Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Initial ConditionalValue collection 
 
-| Name |  | Description 
-| --- | --- | --- 
-| **ConditionalProperty** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) propString ) | Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string
+<br>
+### ConditionalProperty( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) propString )
 
+Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | propString | Serializes initial ConditionalValue collection 
 
+<br>
 
 <br>
 <br>

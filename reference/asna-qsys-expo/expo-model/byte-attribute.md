@@ -16,11 +16,11 @@ Provides Byte Attributes (for Properties)
 
 ## Constructor
 
-| Name |  | Description 
-| --- | --- | --- 
-| **ByteAttribute** | (  ) | Initializes a new ByteAttribute instance
+| Name |  Description 
+| --- | --- 
+| **ByteAttribute**(  ) | Initializes a new ByteAttribute instance
 
-
+<br>
 
 <br>
 <br>

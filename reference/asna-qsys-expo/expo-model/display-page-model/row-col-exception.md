@@ -16,15 +16,20 @@ Provides an Exception derived class with the detailed invalid row, col string fo
 
 ## Constructor
 
-| Name |  | Description 
-| --- | --- | --- 
-| **RowColException** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) rowCol ) | Initializes an instance of RowColException class
+| Name |  Description 
+| --- | --- 
+| **RowColException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) rowCol ) | Initializes an instance of RowColException class
 
+<br>
+### RowColException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) rowCol )
+
+Initializes an instance of RowColException class
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | rowCol | Row and Colum string specification. Comma separated values 
 
+<br>
 
 <br>
 <br>

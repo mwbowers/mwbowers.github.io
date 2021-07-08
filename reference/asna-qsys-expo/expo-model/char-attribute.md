@@ -16,15 +16,20 @@ Provides Char Attributes (for Properties)
 
 ## Constructor
 
-| Name |  | Description 
-| --- | --- | --- 
-| **CharAttribute** | ( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length ) | Char attribute
+| Name |  Description 
+| --- | --- 
+| **CharAttribute**( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length ) | Char attribute
 
+<br>
+### CharAttribute( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length )
+
+Char attribute
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | length | field length 
 
+<br>
 
 <br>
 <br>

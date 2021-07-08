@@ -16,21 +16,22 @@ Defines ConditionalValue class
 
 ## Constructors
 
-| Name |  | Description 
-| --- | --- | --- 
-| **ConditionalValue** | (  ) | Initializes a new instance of the class ConditionalValue
+| Name |  Description 
+| --- | --- 
+| **ConditionalValue**(  ) | Initializes a new instance of the class ConditionalValue
+| **ConditionalValue**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
 
+<br>
+### ConditionalValue( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val )
 
-| Name |  | Description 
-| --- | --- | --- 
-| **ConditionalValue** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
-
+Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | condition | conditional expression 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | val | result indicator to turn on 
 
+<br>
 
 <br>
 <br>

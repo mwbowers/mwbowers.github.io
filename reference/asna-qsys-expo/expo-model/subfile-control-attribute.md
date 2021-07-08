@@ -16,15 +16,20 @@ Defines Subfile Control Attribute on a type
 
 ## Constructor
 
-| Name |  | Description 
-| --- | --- | --- 
-| **SubfileControlAttribute** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) ClearRecords ) | Initializes a new SubfileControlAttribute instance.
+| Name |  Description 
+| --- | --- 
+| **SubfileControlAttribute**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) ClearRecords ) | Initializes a new SubfileControlAttribute instance.
 
+<br>
+### SubfileControlAttribute( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) ClearRecords )
+
+Initializes a new SubfileControlAttribute instance.
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ClearRecords | Conditional Indicator expression that when true indicates that the Records in the Subfile should be cleared 
 
+<br>
 
 <br>
 <br>

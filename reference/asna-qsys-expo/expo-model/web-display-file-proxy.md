@@ -16,16 +16,21 @@ Defines a Proxy implementation for the WebDisplayFile
 
 ## Constructor
 
-| Name |  | Description 
-| --- | --- | --- 
-| **WebDisplayFileProxy** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) pageName, Data.DataSet dataSet ) | Initializes a new instance of WebDisplayFileProxy class using passed initializers
+| Name |  Description 
+| --- | --- 
+| **WebDisplayFileProxy**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) pageName, Data.DataSet dataSet ) | Initializes a new instance of WebDisplayFileProxy class using passed initializers
 
+<br>
+### WebDisplayFileProxy( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) pageName, Data.DataSet dataSet )
+
+Initializes a new instance of WebDisplayFileProxy class using passed initializers
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | pageName | Name of the Page 
 | Data.DataSet | dataSet | Displayfile data-set 
 
+<br>
 
 <br>
 <br>

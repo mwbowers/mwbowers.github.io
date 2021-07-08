@@ -16,20 +16,21 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 
 ## Constructors
 
-| Name |  | Description 
-| --- | --- | --- 
-| **AidProperty** | (  ) | Initializes a new AidProperty instance
+| Name |  Description 
+| --- | --- 
+| **AidProperty**(  ) | Initializes a new AidProperty instance
+| **AidProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
 
+<br>
+### AidProperty( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString )
 
-| Name |  | Description 
-| --- | --- | --- 
-| **AidProperty** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
-
+Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | aidString | the string initializer 
 
+<br>
 
 <br>
 <br>
