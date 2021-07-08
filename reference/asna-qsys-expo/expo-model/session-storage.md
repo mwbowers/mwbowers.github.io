@@ -41,7 +41,7 @@ Initializes a new instance of SessionStorage class
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | JobNumber | Gets or sets the Job Number from/to the Session | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | MonaLisaHost | Gets or sets the Monalisa Host Name from/to the Session | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | MonaLisaPort | Gets or sets the Monalisa IP Port number from/to the Session | 
-| Byte[] | EnabledKeys | Gets or sets an array of bytes representing the cached enabled keys | 
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte?view=net-5.0)[] | EnabledKeys | Gets or sets an array of bytes representing the cached enabled keys | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | MessageFilesFolder | Gets or sets the name of the MessageFiles folder from/to the Session | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | OutsidePages | Gets or sets the Outsite Pages name from/to the Session | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | AreaList | Gets or sets the names of the Areas from/to the Session | 
@@ -59,7 +59,7 @@ Initializes a new instance of SessionStorage class
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSessionInt32 | Set a general 32-bit integer value to a key in the Session | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | GetSessionInt32 | Get a general 32-bit integer value to a key in the Session | the stored value
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSessionBytes | Set general byte array to a key in the Session | 
-| Byte[] | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte?view=net-5.0)[] | GetSessionBytes | Gets a general byte array from a key in the Session | the stored array
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | SetSessionString | Sets a string value to a key in the Session | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetSessionString | Gets a string from a key on the Session | stored string value
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | ClearAllSubfiles | Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." prefix at the time this document was written) | 

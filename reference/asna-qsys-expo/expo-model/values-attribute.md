@@ -26,7 +26,7 @@ Defines ValuesAttribute class
 | --- | --- 
 | **ValuesAttribute**( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 | **ValuesAttribute**( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
-| **ValuesAttribute**( Type type, Object[] validValues ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
+| **ValuesAttribute**( [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) type, [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0)[] validValues ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
 
 <br>
 ### ValuesAttribute( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues )
@@ -54,7 +54,7 @@ Initializes a new instance of the class ValuesAttribute with the initial type an
 | Type | Parameter name | Description
 | --- | --- | ---
 | Type | type | type of valid values 
-| Object[] | validValues | valid values object array 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0)[] | validValues | valid values object array 
 
 <br>
 
@@ -66,7 +66,7 @@ Initializes a new instance of the class ValuesAttribute with the initial type an
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | Type | ObjectType | Gets the Object Type | 
-| Object[] | ValidValues | Gets the array of valid values | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0)[] | ValidValues | Gets the array of valid values | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
 | Func<object,object> | Conversion | Gets ir sets the collection of functions used for the values conversion | 
 

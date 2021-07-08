@@ -18,7 +18,7 @@ Provides Date Attribute (for Properties)
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| DdsDateFormat | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
+| [DdsDateFormat](/reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") | 
 
 <br>

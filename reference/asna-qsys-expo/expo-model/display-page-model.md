@@ -49,7 +49,7 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsKeyEnabled | Gets the state of the requested AidKey. | true if the AidKey is enabled
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetMessageText | Gets the message text from the external message file. Message files are external XML resources. | the text as string
-| Char | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char?view=net-5.0) | GetAidKeyType | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | LoadModelStateErrors | Populates the collection of validation errors. | 
 | [Expo.Model.RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | GetLastRecordModelWritten | Gets a value that indicates the last RecordModel written by the application logic. | RecordModel or null
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult?view=aspnetcore-5.0) | SelectMyAction | Selects the appropriate action to format a response Page. | Action method result
