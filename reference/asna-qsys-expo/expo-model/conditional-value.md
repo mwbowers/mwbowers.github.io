@@ -16,14 +16,14 @@ Defines ConditionalValue class
 
 ## Constructors
 
-| Name |  | Description |
-| --- | --- | --- |
-**ConditionalValue** | (  ) | Initializes a new instance of the class ConditionalValue
+| Name |  | Description 
+| --- | --- | --- 
+| **ConditionalValue** | (  ) | Initializes a new instance of the class ConditionalValue
 
 
-| Name |  | Description |
-| --- | --- | --- |
-**ConditionalValue** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
+| Name |  | Description 
+| --- | --- | --- 
+| **ConditionalValue** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
 
 
 | Type | Parameter name | Description

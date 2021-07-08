@@ -16,27 +16,27 @@ Defines ValuesAttribute class
 
 ## Constructors
 
-| Name |  | Description |
-| --- | --- | --- |
-**ValuesAttribute** | ( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
+| Name |  | Description 
+| --- | --- | --- 
+| **ValuesAttribute** | ( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | validValues | initial values string array 
 
-| Name |  | Description |
-| --- | --- | --- |
-**ValuesAttribute** | ( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
+| Name |  | Description 
+| --- | --- | --- 
+| **ValuesAttribute** | ( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | validValues | initial values integer array 
 
-| Name |  | Description |
-| --- | --- | --- |
-**ValuesAttribute** | ( Type type, Object[] validValues ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
+| Name |  | Description 
+| --- | --- | --- 
+| **ValuesAttribute** | ( Type type, Object[] validValues ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
 
 
 | Type | Parameter name | Description

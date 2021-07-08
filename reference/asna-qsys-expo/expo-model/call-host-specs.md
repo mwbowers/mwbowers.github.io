@@ -16,9 +16,9 @@ Defines CallHostSpecs class
 
 ## Constructor
 
-| Name |  | Description |
-| --- | --- | --- |
-**CallHostSpecs** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) agentContainer, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) agentName, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) parmsConstants, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) parmsControlsCount, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) formatName, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) parmsFormatFields, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) maxOutputLength ) | Initializes new instance of CallHostSpecs class given the parameter initializers
+| Name |  | Description 
+| --- | --- | --- 
+| **CallHostSpecs** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) agentContainer, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) agentName, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) parmsConstants, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) parmsControlsCount, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) formatName, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) parmsFormatFields, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) maxOutputLength ) | Initializes new instance of CallHostSpecs class given the parameter initializers
 
 
 | Type | Parameter name | Description

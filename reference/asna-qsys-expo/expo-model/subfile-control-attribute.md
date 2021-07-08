@@ -16,9 +16,9 @@ Defines Subfile Control Attribute on a type
 
 ## Constructor
 
-| Name |  | Description |
-| --- | --- | --- |
-**SubfileControlAttribute** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) ClearRecords ) | Initializes a new SubfileControlAttribute instance.
+| Name |  | Description 
+| --- | --- | --- 
+| **SubfileControlAttribute** | ( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) ClearRecords ) | Initializes a new SubfileControlAttribute instance.
 
 
 | Type | Parameter name | Description

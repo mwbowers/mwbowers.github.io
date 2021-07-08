@@ -16,9 +16,9 @@ Defines the SessionStorage class
 
 ## Constructor
 
-| Name |  | Description |
-| --- | --- | --- |
-**SessionStorage** | ( [ISession](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.isession?view=aspnetcore-5.0) session ) | Initializes a new instance of SessionStorage class
+| Name |  | Description 
+| --- | --- | --- 
+| **SessionStorage** | ( [ISession](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.isession?view=aspnetcore-5.0) session ) | Initializes a new instance of SessionStorage class
 
 
 | Type | Parameter name | Description

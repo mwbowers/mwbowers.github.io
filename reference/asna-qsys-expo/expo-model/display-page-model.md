@@ -16,9 +16,9 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 ## Constructor
 
-| Name |  | Description |
-| --- | --- | --- |
-**DisplayPageModel** | (  ) | Initializes a new instance of the DisplayPageModel class
+| Name |  | Description 
+| --- | --- | --- 
+| **DisplayPageModel** | (  ) | Initializes a new instance of the DisplayPageModel class
 
 
 

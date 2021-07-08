@@ -16,9 +16,9 @@ Provides Decimal Attributes (for Properties)
 
 ## Constructor
 
-| Name |  | Description |
-| --- | --- | --- |
-**DecAttribute** | ( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) decimals ) | Initializes a new DecAttribute instance
+| Name |  | Description 
+| --- | --- | --- 
+| **DecAttribute** | ( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length, [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) decimals ) | Initializes a new DecAttribute instance
 
 
 | Type | Parameter name | Description
