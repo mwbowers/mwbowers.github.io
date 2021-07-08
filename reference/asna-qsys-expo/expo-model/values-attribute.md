@@ -2,6 +2,12 @@
 title: ValuesAttribute class
 ---
 
+<style>
+tr td:first-child {
+    white-space: nowrap;
+}
+</style>
+
 Defines ValuesAttribute class
 
 **Assembly:** ASNA.QSys.Expo.Model

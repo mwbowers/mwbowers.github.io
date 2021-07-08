@@ -20,7 +20,7 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | InputDataAvailable | When true, derived class defines that data is available on input | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | UserDataIsInvalid | Derived class implements to determine if the user input data is valid | 
-| Data.DataSet | ActiveDataSet | Gets the Active DataSet for the Active Displayfile | 
+| [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) | ActiveDataSet | Gets the Active DataSet for the Active Displayfile | 
 | [Expo.Model.WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | ActiveDisplayFile | Gets the Active Web Displayfile | 
 | [Expo.Model.SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) | SessionStore | Gets the SessionStorage instance (creates a new one if it does not exist) | 
 

@@ -2,6 +2,12 @@
 title: AidProperty class
 ---
 
+<style>
+tr td:first-child {
+    white-space: nowrap;
+}
+</style>
+
 Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an boolean expression.
 
 **Assembly:** ASNA.QSys.Expo.Model

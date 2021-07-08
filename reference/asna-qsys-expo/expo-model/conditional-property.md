@@ -2,6 +2,12 @@
 title: ConditionalProperty class
 ---
 
+<style>
+tr td:first-child {
+    white-space: nowrap;
+}
+</style>
+
 Defines a ConditionalProperty
 
 **Assembly:** ASNA.QSys.Expo.Model

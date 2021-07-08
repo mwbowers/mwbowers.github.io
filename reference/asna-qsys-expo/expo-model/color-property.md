@@ -2,6 +2,12 @@
 title: ColorProperty class
 ---
 
+<style>
+tr td:first-child {
+    white-space: nowrap;
+}
+</style>
+
 Defines ColorProperty
 
 **Assembly:** ASNA.QSys.Expo.Model

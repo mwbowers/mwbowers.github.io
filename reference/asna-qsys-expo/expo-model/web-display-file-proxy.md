@@ -2,6 +2,12 @@
 title: WebDisplayFileProxy class
 ---
 
+<style>
+tr td:first-child {
+    white-space: nowrap;
+}
+</style>
+
 Defines a Proxy implementation for the WebDisplayFile
 
 **Assembly:** ASNA.QSys.Expo.Model
@@ -18,7 +24,7 @@ Defines a Proxy implementation for the WebDisplayFile
 
 | Name |  Description 
 | --- | --- 
-| **WebDisplayFileProxy**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) pageName, Data.DataSet dataSet ) | Initializes a new instance of WebDisplayFileProxy class using passed initializers
+| **WebDisplayFileProxy**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) pageName, [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) dataSet ) | Initializes a new instance of WebDisplayFileProxy class using passed initializers
 
 <br>
 ### WebDisplayFileProxy( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) pageName, Data.DataSet dataSet )
@@ -28,7 +34,7 @@ Initializes a new instance of WebDisplayFileProxy class using passed initializer
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | pageName | Name of the Page 
-| Data.DataSet | dataSet | Displayfile data-set 
+| [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) | dataSet | Displayfile data-set 
 
 <br>
 

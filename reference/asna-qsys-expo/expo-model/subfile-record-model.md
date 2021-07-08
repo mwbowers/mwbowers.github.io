@@ -2,6 +2,12 @@
 title: SubfileRecordModel class
 ---
 
+<style>
+tr td:first-child {
+    white-space: nowrap;
+}
+</style>
+
 Defines the SubfileRecordModel class
 
 **Assembly:** ASNA.QSys.Expo.Model
