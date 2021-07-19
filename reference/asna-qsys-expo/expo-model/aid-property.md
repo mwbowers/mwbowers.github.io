@@ -45,8 +45,8 @@ Initializes a new AidProperty instance to the values found in aidString collecti
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Expo.Model.ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([Expo.Model.AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
-| [Expo.Model.ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
+| [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey 
+| [ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
 
 <br>
 <br>
@@ -65,7 +65,7 @@ Initializes a new AidProperty instance to the values found in aidString collecti
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Expo.Model.ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | condAid | Gets or sets the Array of ConditionalProperty items
+| [ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | condAid | Gets or sets the Array of ConditionalProperty items
 
 <br>
 <br>
