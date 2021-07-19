@@ -20,8 +20,8 @@ Defines an input element to capture Dates.
 | --- | --- | --- | --- 
 | [DdsDayNames](/reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper/dds-day-names.html) | FirstDayOfWeek | Gets or sets the countries first day of the week. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | UseNativePicker | Gets or sets a value that indicates if the Browser's date picker should be used when capturing a date. | 
-| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets the Date FieldAttribute from the Model. | 
-| [Expo.Model.DateAttribute](/reference/asna-qsys-expo/expo-model/date-attribute.html) | DateFieldAttribute | Gets the DateAttribute from the Model. | 
+| [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets the Date FieldAttribute from the Model. | 
+| [DateAttribute](/reference/asna-qsys-expo/expo-model/date-attribute.html) | DateFieldAttribute | Gets the DateAttribute from the Model. | 
 
 <br>
 <br>

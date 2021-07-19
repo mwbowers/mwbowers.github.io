@@ -25,7 +25,7 @@ When the program issues a Read operation to a non-subfile record, the correspond
 ### The Model
 After a user enters data on the browser page representing a program's screen, the data is posted to the website. When the data arrives at the web server it is routed the the Razor Page corresponding to to the request. A working thread is made available by ASP.NET Core to handle the request, Monarch calls this thread the *Yellow* thread. ASP.NET Core and the Monarch Base framework take the submitted data and populate the Razor Page's Model, from there a DataSet is populated with the data and sent across to Monarch Application Server (MAS).  MAS locates the Job corresponding to the user request and copies the DataSet values to the DataSet of the Workstation File that prompted the user for the screen data. MAS then signals that **data is ready for the program** to the Job which in turn wakes up the program and execution continues on the *blue* thread. Meanwhile the Yellow enters a wait state until the next screen is ready for the user.
 
-The [ASNA.QSys.Expo.Model.DisplayPageModel](../user-interface/qsys-expo-display-page-model.html) serves as the base class for the Razor Pages Models and encapsulates the behavior just described.
+The [DisplayPageModel](../user-interface/qsys-expo-display-page-model.html) serves as the base class for the Razor Pages Models and encapsulates the behavior just described.
 ![Razor Page Model](images/razor-page-model.png)
 _Razor Page Model_
 

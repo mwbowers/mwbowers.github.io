@@ -48,7 +48,7 @@ Char attribute
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | GetFrom | Gets a CharAttribute from a field member | the char attribute
+| [CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | GetFrom | Gets a CharAttribute from a field member | the char attribute
 
 <br>
 <br>

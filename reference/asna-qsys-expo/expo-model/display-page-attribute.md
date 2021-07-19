@@ -29,7 +29,7 @@ Defines a Display Page Attribute
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.DisplayPageAttribute](/reference/asna-qsys-expo/expo-model/display-page-attribute.html) | GetFrom | Gets a DisplayPageAttribute of a particular type from the custom attributes. | The attribute
+| [DisplayPageAttribute](/reference/asna-qsys-expo/expo-model/display-page-attribute.html) | GetFrom | Gets a DisplayPageAttribute of a particular type from the custom attributes. | The attribute
 
 <br>
 <br>

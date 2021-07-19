@@ -54,7 +54,7 @@ Initializes a new SubfileControlAttribute instance.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.SubfileControlAttribute](/reference/asna-qsys-expo/expo-model/subfile-control-attribute.html) | GetFrom | Gets a SubfileControlAttribute from the Custom attributes on a type | the subfile control attribute
+| [SubfileControlAttribute](/reference/asna-qsys-expo/expo-model/subfile-control-attribute.html) | GetFrom | Gets a SubfileControlAttribute from the Custom attributes on a type | the subfile control attribute
 
 <br>
 <br>

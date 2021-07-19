@@ -18,17 +18,17 @@ Provides Mona-Server Configuration functionality
 
 | Name |  Description 
 | --- | --- 
-| **MonaServerConfig**( [Expo.Model.IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) i ) | Initializes new instance of MonaServerConfig class
+| **MonaServerConfig**( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) i ) | Initializes new instance of MonaServerConfig class
 | **MonaServerConfig**(  ) | Initializes new instance of MonaServerConfig class
 
 <br>
-### MonaServerConfig( [Expo.Model.IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) i )
+### MonaServerConfig( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) i )
 
 Initializes new instance of MonaServerConfig class
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Expo.Model.IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) | i | initial configuration 
+| [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) | i | initial configuration 
 
 <br>
 

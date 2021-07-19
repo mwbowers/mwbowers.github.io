@@ -18,7 +18,7 @@ Renders the Monarch Base Application's Active records along with Active Aid Keys
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Expo.Model.DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | DisplayPageModel | Gets the Active Page Model. | 
+| [DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | DisplayPageModel | Gets the Active Page Model. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | KeyNames | Gets or sets the display key name collection for the File. Key names are separated by semicolon. | 
 
 <br>

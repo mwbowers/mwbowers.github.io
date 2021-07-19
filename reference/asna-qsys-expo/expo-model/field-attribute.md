@@ -32,7 +32,7 @@ Provides Displayfile field attributes
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | GetFrom | Gets a FieldAttribute from the given MemberInfo | the field attribute
+| [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | GetFrom | Gets a FieldAttribute from the given MemberInfo | the field attribute
 
 <br>
 <br>

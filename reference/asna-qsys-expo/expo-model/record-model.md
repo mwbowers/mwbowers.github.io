@@ -50,8 +50,8 @@ Defines the RecordModel class
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Expo.Model.AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | AttnKeys | Gets or sets the Attention Keys AID Property
-| [Expo.Model.AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | FuncKeys | Gets or sets the Fuinction Keys AID Property
+| [AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | AttnKeys | Gets or sets the Attention Keys AID Property
+| [AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | FuncKeys | Gets or sets the Function Keys AID Property
 
 <br>
 <br>

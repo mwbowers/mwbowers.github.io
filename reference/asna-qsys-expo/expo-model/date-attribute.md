@@ -28,7 +28,7 @@ Provides Date Attribute (for Properties)
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.DateAttribute](/reference/asna-qsys-expo/expo-model/date-attribute.html) | GetFrom | Gets a DateAttribute from a field member | the data attribute
+| [DateAttribute](/reference/asna-qsys-expo/expo-model/date-attribute.html) | GetFrom | Gets a DateAttribute from a field member | the data attribute
 
 <br>
 <br>

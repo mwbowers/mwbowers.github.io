@@ -25,17 +25,18 @@ Defines a ConditionalProperty
 | Name |  Description 
 | --- | --- 
 | **ConditionalProperty**(  ) | Initializes a new instance of ConditionalProperty class
-| **ConditionalProperty**( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
+| **ConditionalProperty**( [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
 | **ConditionalProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) propString ) | Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string
 
 <br>
-### ConditionalProperty( [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property )
+
+### ConditionalProperty( [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) Property )
 
 Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Initial ConditionalValue collection 
+| [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Initial ConditionalValue collection 
 
 <br>
 ### ConditionalProperty( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) propString )
@@ -55,7 +56,7 @@ Initializes a new instance of ConditionalProperty class by de-serializing the gi
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Expo.Model.ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
+| [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
 
 <br>
@@ -65,7 +66,7 @@ Initializes a new instance of ConditionalProperty class by de-serializing the gi
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ToString | Serializes the ConditionalValue collection into a string. | the serialize string
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ToString | Serializes the ConditionalValue collection into a string. | the serialized string
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | Reset | Clears the encapsulated ConditionalValue collection | 
 
 <br>

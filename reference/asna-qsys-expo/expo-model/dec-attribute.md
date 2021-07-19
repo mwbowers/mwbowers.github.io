@@ -49,7 +49,7 @@ Initializes a new DecAttribute instance
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | GetFrom | Gets a DecAttribute from a field member | the dec attribute
+| [DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | GetFrom | Gets a DecAttribute from a field member | the dec attribute
 
 <br>
 <br>

@@ -28,7 +28,7 @@ Defines Subfile Record Attribute on a type
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.SubfileRecordAttribute](/reference/asna-qsys-expo/expo-model/subfile-record-attribute.html) | GetFrom | Gets the SubfileRecordAttribute from the Custom attributes on a type. | the subfile record attribute
+| [SubfileRecordAttribute](/reference/asna-qsys-expo/expo-model/subfile-record-attribute.html) | GetFrom | Gets the SubfileRecordAttribute from the Custom attributes on a type. | the subfile record attribute
 
 <br>
 <br>

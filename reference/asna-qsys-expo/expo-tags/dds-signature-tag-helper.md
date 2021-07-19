@@ -18,8 +18,8 @@ Defines an element where a signature can be captured
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Expo.Model.FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets the FieldAttribute from the Model | 
-| [Expo.Model.CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | CharAttribute | Gets the CharAttribute attribute from the Model | 
+| [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html) | FieldAttribute | Gets the FieldAttribute from the Model | 
+| [CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | CharAttribute | Gets the CharAttribute attribute from the Model | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SignLinkText | Gets or sets the value of the label used as a link to the image stroke editor | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | AspectRatio | Gets or sets the aspect-ratio of the image used to paint or capture the signature. Format is width:height (in dimension proportion units). Defaults to 3:1 | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | SignEditorTitleText | Gets or sets the stroke editor's Title text | 

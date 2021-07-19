@@ -29,7 +29,7 @@ Defines Base Record Attributes on a type
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html) | GetFrom | Gets a BaseRecordAttribute from the Custom attributes associated with a type. | the attribute
+| [BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html) | GetFrom | Gets a BaseRecordAttribute from the Custom attributes associated with a type. | the attribute
 
 <br>
 <br>

@@ -27,7 +27,7 @@ Defines Export Source Attribute on a type
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Expo.Model.ExportSourceAttribute](/reference/asna-qsys-expo/expo-model/export-source-attribute.html) | GetFrom | Gets the ExportSourceAttribute from custome attributes in the indicated type | The attribute
+| [ExportSourceAttribute](/reference/asna-qsys-expo/expo-model/export-source-attribute.html) | GetFrom | Gets the ExportSourceAttribute from custome attributes in the indicated type | The attribute
 
 <br>
 <br>
