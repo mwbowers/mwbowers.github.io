@@ -2294,6 +2294,8 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html
       - title: RowColException
         path: /reference/asna-qsys-expo/expo-model/display-page-model/row-col-exception.html
+      - title: ExpoAjaxRequest
+        path: /reference/asna-qsys-expo/expo-model/yellow-page-model/expo-ajax-request.html
     - sectiontitle: ASNA.QSys.Expo.Tags
       sectionpath: /reference/asna-qsys-expo/expo-tags/expo-tags-intro.html
       section:
