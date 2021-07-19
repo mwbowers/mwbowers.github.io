@@ -27,7 +27,7 @@ Defines the ExpoAjaxRequest class (used for JSON serialization)
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | encodedRequest | If action == "get5250", gets or sets the encoded user input data | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | telnetFlags | If action == "get5250", gets or sets the input telnet flags | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | dupFields | If action == "get5250", gets or sets the collection of user input dup fields | 
-| [IconShapeRequest[]]() | iconForElement | If action == "getIconCollection", gets or sets the collection of requested icon SVG shapes | 
+| IconShapeRequest[] | iconForElement | If action == "getIconCollection", gets or sets the collection of requested icon SVG shapes. *Note*: **IconShapeRequest** is internal to ASNA.QSys.Expo.Model assembly. | 
 
 <br>
 <br>
