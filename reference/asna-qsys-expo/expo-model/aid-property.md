@@ -19,7 +19,7 @@ IBM i Display file definition (DDS) has two record-level keywords that specify w
 1. [CA (Command Attention)](https://www.ibm.com/docs/en/i/7.1?topic=80-cann-command-attention-keyword-display-files)
 2. [CF (Command Function)](https://www.ibm.com/docs/en/i/7.1?topic=80-cfnn-command-function-keyword-display-files) 
 
-Both are used to specify that a particular command-key is available (other not listed are not allowed). Availability may be conditioned to an expression based on values of [Indicators](https://www.ibm.com/docs/en/i/7.2?topic=concepts-rpg-iv-indicators) set by the Application Logic.
+Both are used to specify that a particular command-key is available (other not listed are not allowed). Availability may be conditioned to an expression based on values of Option [Indicators](https://www.ibm.com/docs/en/i/7.2?topic=concepts-rpg-iv-indicators) set by the Application Logic.
 
 Available commands are described by a number from 1 to 24 (corresponding to keyboard keys F1 to F12, and Shift F1 to Shift F12). Browser Pages may assign commands to clickable buttons.
 
@@ -31,8 +31,8 @@ A Record may define more than one CA and/or more than one CF.
 
 Expo Display Page's Record Model class allows for the definition of Attention and Function commands using the following two attributes:
 
-1. [AttentionKeys](https://asnaqsys.github.io/reference/asna-qsys-expo/expo-model/record-attribute.html)
-2. [FunctionKeys](https://asnaqsys.github.io/reference/asna-qsys-expo/expo-model/record-attribute.html)
+1. [AttentionKeys](/reference/asna-qsys-expo/expo-model/record-attribute.html)
+2. [FunctionKeys](/reference/asna-qsys-expo/expo-model/record-attribute.html)
 
 To specify a collection of command keys, a string is used in the C# declaration, like in the following example:
 
@@ -54,7 +54,7 @@ In the example above, if we break the string at the semi-colon, we get:
 Four Available Function Commands `F4, F6, F11 and F12`.
 
 `F4` and `F12` are always available (not conditioned).
-`F6` and `F11` are *only* available if `*IN30` (Indicator 30) is **not** *ON*. 
+`F6` and `F11` are *only* available if `*IN30` (Option Indicator 30) is **not** *ON*. 
 
 >Notice the use of `!` in the condition expression syntax, to negate the condition. 
 
@@ -71,7 +71,7 @@ Note:
 1. All *other* indicators are reset.
 2. The response indicator can be any indicator (in the example they match - which may be common practice technique - but is not required).
 
-The class `AidProperty` allows for processing such string attributes. It parses the collection and provides access to individual [Conditional Properties](https://asnaqsys.github.io/reference/asna-qsys-expo/expo-model/conditional-property.html)
+The class `AidProperty` allows for processing such string attributes. It parses the collection and provides access to individual [Conditional Properties](/reference/asna-qsys-expo/expo-model/conditional-property.html)
 
 <br>
 <br>
