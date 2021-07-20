@@ -12,10 +12,11 @@ Defines a ConditionalProperty
 
 **Assembly:** ASNA.QSys.Expo.Model
 
-<br>
-<br>
-
 ## Remarks
+
+A ConditionalProperty represents a collection of [Conditional Values](/reference/asna-qsys-expo/expo-model/conditional-value.html)
+
+The ConditionalProperty class instance may be instantiated with an array of [Conditional Values](/reference/asna-qsys-expo/expo-model/conditional-value.html), or from a string representation.  
 
 <br>
 <br>
