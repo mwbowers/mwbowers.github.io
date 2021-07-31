@@ -36,7 +36,7 @@ Defines the core behavior of a program and provides a base for migrated derived 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BeginCall\`\`1](#begincall\`\`1icaller)([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html)) | Prepares a program for execution by getting an instance of the program and pushing it in the invocation stack. | The prepared program instance.
-| [Indicator]($$TODO-ASNA.QSys.Runtime.Indicator.html) | [EndCall](#endcall)() | Marks the end of a program execution by poping it from the invocation stack and potentially deactivating it when the program's LR indicator is on. | The value of LR indicator.
+| [Indicator]($$TODO-ASNA.QSys.Runtime.Indicator.html) | [EndCall](#endcall)() | Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on. | The value of LR indicator.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RunProgram\`\`1](#runprogram\`\`1icaller-action{``0})([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html), [Action{\`\`0}]($$TODO-Action{``0}.html)) | Obtains an instance of a program and calls it. | The value of the LR Indicator on program return.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RunProgram\`\`2](#runprogram\`\`2icaller-func{``0-``1}-``1)([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html), [Func{\`\`0,\`\`1}]($$TODO-Func{``0,``1}.html), [\`\`1]($$TODO-``1@.html)) | Obtains an instance of a program and calls it. | The value of the LR Indicator on program return.
 
@@ -63,7 +63,7 @@ BeginCall``1(ASNA.QSys.Runtime.ICaller caller);
 
 ### EndCall()
 
-Marks the end of a program execution by poping it from the invocation stack and potentially deactivating it when the program's LR indicator is on.
+Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on.
 
 ```cs
 EndCall();

@@ -23,9 +23,9 @@ Provides facilities to probe an IBM i file's code page.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetFileCCSIDAttr](getfileccsidattradgconnection-string)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the coded character set identifier of an IBM i physical file. | The file's coded character set identifier.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetFileCCSIDAttr*0](getfileccsidattr*0adgconnection-string-string)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the coded character set identifier of an IBM i physical file. | The file's coded character set identifier.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [IbmCodepageToWinCodepage](ibmcodepagetowincodepageint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert an encoded character set identifier to a Windows code page. | The corresponding Windows code page.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetFileCCSIDAttr](#getfileccsidattradgconnection-string)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the coded character set identifier of an IBM i physical file. | The file's coded character set identifier.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetFileCCSIDAttr*0](#getfileccsidattr*0adgconnection-string-string)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the coded character set identifier of an IBM i physical file. | The file's coded character set identifier.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [IbmCodepageToWinCodepage](#ibmcodepagetowincodepageint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert an encoded character set identifier to a Windows code page. | The corresponding Windows code page.
 
 <br>
 <br>

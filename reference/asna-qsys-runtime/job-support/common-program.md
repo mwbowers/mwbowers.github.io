@@ -32,7 +32,7 @@ Defines the core behavior of programs and service programs
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Called to release the managed and unmanaged resources used by the current instance of the CommonProgram class. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Called to release the managed and unmanaged resources used by the current instance of the CommonProgram class. | 
 
 <br>
 <br>

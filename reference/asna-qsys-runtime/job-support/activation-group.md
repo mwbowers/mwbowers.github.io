@@ -64,11 +64,11 @@ ActivationGroup( String name, Boolean isDynamic );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ContainsProgram](containsprogramcommonprogram)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html)) | Determines if a program is belongs to the activation group. | true if the program belongs to the activation group. otherwise false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndPrograms](endprograms)() | Disposes of all the programs belonging to the activation group. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FindProgram\`\`1](findprogram\`\`1)() | Locates a program on the activation group. | If found, the program seeked; otherwiser null.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RegisterProgram](registerprogramcommonprogram-boolean)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Registers a program as belonging to the activation group. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UnregisterProgram](unregisterprogramcommonprogram)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html)) | Removes a program from the activation group. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ContainsProgram](#containsprogramcommonprogram)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html)) | Determines if a program is belongs to the activation group. | true if the program belongs to the activation group. otherwise false.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndPrograms](#endprograms)() | Disposes of all the programs belonging to the activation group. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FindProgram\`\`1](#findprogram\`\`1)() | Locates a program on the activation group. | If found, the program seeked; otherwiser null.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RegisterProgram](#registerprogramcommonprogram-boolean)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Registers a program as belonging to the activation group. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UnregisterProgram](#unregisterprogramcommonprogram)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html)) | Removes a program from the activation group. | 
 
 <br>
 <br>
