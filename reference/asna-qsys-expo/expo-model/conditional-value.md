@@ -1,5 +1,5 @@
 ---
-title: ConditionalValue class
+title: ConditionalValue Class
 ---
 
 <style>
@@ -10,7 +10,11 @@ tr td:first-child {
 
 Defines ConditionalValue class
 
+**Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
+
+<br>
+<br>
 
 ## Remarks
 
@@ -33,6 +37,7 @@ The ConditionalValue for such Function Key specification would read:
 
 *Function Key is Valid when Option Indicator 30 is `Off`. If the Command is issued, the Response Indicator 11 will be set to `On`*
 
+
 <br>
 <br>
 
@@ -41,19 +46,27 @@ The ConditionalValue for such Function Key specification would read:
 | Name |  Description 
 | --- | --- 
 | **ConditionalValue**(  ) | Initializes a new instance of the class ConditionalValue
-| **ConditionalValue**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
+| **ConditionalValue**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
 
 <br>
-### ConditionalValue( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) condition, [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) val )
+
+### ConditionalValue( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
 Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
 
+```cs
+ConditionalValue( String condition, String val );
+```
+
+#### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | condition | conditional expression 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | val | result indicator to turn on 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | condition | conditional expression 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | val | result indicator to turn on 
 
 <br>
+
 
 <br>
 <br>
@@ -62,8 +75,8 @@ Initializes a new instance of the class ConditionalValue, using the condition an
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Condition | Gets or sets the option-indicator-condition. Use & and \| for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | Value | Gets or sets the result-indicator to turn On. One indicator expected. Example: "51" meaning set result *In51=*On | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Condition | Gets or sets the option-indicator-condition. Use & and | for (AND OR). Use ! to negate. Example "!76 & 50" meaning: If Not(*Ind76) AND *Ind50 | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Value | Gets or sets the result-indicator to turn On. One indicator expected. Example: "51" meaning set result *In51=*On | 
 
 <br>
 <br>
@@ -72,7 +85,25 @@ Initializes a new instance of the class ConditionalValue, using the condition an
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | ToString | Serializes the instance into a string. | A string representation of the Conditional Value
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Serializes the instance into a string. | A string representation of the Conditional Value
+
+<br>
+<br>
+
+### ToString()
+
+Serializes the instance into a string.
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+A string representation of the Conditional Value
+
 
 <br>
 <br>

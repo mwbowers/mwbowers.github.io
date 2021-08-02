@@ -1,15 +1,20 @@
 ---
-title: DdsDecDateFieldTagHelper class
+title: DdsDecDateFieldTagHelper Class
 ---
 
 Defines an input element to capture Dates for fields defined as decimal values.
 
+**Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
 
 <br>
 <br>
 
 ## Remarks
+
+Defines an input element to capture Dates for fields defined as decimal values.
+
+[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>
@@ -18,8 +23,8 @@ Defines an input element to capture Dates for fields defined as decimal values.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DdsDateFormat](/reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html) | DateFormat | Gets the DateFormat from the Model. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | DateSeparator | Gets the Date Separator from the Model. | 
+| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets the DateFormat from the Model. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets the Date Separator from the Model. | 
 | [DecAttribute](/reference/asna-qsys-expo/expo-model/dec-attribute.html) | DecFieldAttribute | Gets the DecAttribute from the Model. | 
 
 <br>
@@ -29,8 +34,44 @@ Defines an input element to capture Dates for fields defined as decimal values.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [DdsDateFormat](/reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html) | GetDateFormat | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetDateSeparator | Gets the Data Separator from de Model. | A string
+| [DdsDateFormat]($$TODO-DdsDateFormat.html) | [GetDateFormat](#getdateformat)() | Get the DdsDateFormat attribute from the Model. | A DdsDateFormat
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetDateSeparator](#getdateseparator)() | Gets the Data Separator from de Model. | A string
+
+<br>
+<br>
+
+### GetDateFormat()
+
+Get the DdsDateFormat attribute from the Model.
+
+```cs
+GetDateFormat();
+```
+
+#### Returns
+
+[DdsDateFormat]($$TODO-DdsDateFormat.html)
+
+A DdsDateFormat
+
+
+<br>
+<br>
+
+### GetDateSeparator()
+
+Gets the Data Separator from de Model.
+
+```cs
+GetDateSeparator();
+```
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+A string
+
 
 <br>
 <br>

@@ -1,15 +1,20 @@
 ---
-title: Limits enumeration
+title: Limits Enumeration
 ---
 
 Specifies numeric limits
 
+**Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
 <br>
 <br>
 
 ## Remarks
+
+Specifies numeric limits
+
+[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>
@@ -18,9 +23,9 @@ Specifies numeric limits
 
 | Name | Description
 | --- | --- 
+| MaxDecimalDigits | Maximum decimal digits
 | MaxDigits | Maximum number of digits
 | MaxIntegralDigits | Maximum integral digits
-| MaxDecimalDigits | Maximum decimal digits
 
 <br>
 <br>
