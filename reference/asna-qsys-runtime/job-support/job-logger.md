@@ -27,6 +27,17 @@ Defines the core behavior of a job message logger and provides a base for derive
 
 <br>
 
+### JobLogger(  )
+
+Called from constructors in derived classes to initialize the JobLogger class.
+
+```cs
+JobLogger(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

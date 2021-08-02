@@ -27,6 +27,17 @@ A dictionary of the service programs used by this program.
 
 <br>
 
+### ServiceProgramCollection(  )
+
+Called from constructors in derived classes to initializes the common program class.
+
+```cs
+ServiceProgramCollection(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

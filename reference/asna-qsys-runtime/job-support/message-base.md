@@ -23,11 +23,11 @@ Defines a message
 
 | Name |  Description 
 | --- | --- 
-| **MessageBase**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [TraceEventType](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.traceeventtype), [MessageSource](/reference/asna-qsys-runtime/job-support/message-source.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object}]($$TODO-Collections.Generic.IDictionary{System.String,System.Object}.html) ) | Initializes a new instance of the MessageBase class.
+| **MessageBase**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [TraceEventType](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.traceeventtype), [MessageSource](/reference/asna-qsys-runtime/job-support/message-source.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) ) | Initializes a new instance of the MessageBase class.
 
 <br>
 
-### MessageBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [TraceEventType](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.traceeventtype), [MessageSource](/reference/asna-qsys-runtime/job-support/message-source.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object}]($$TODO-Collections.Generic.IDictionary{System.String,System.Object}.html) )
+### MessageBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [TraceEventType](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.traceeventtype), [MessageSource](/reference/asna-qsys-runtime/job-support/message-source.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) )
 
 Initializes a new instance of the MessageBase class.
 
@@ -47,7 +47,7 @@ MessageBase( String msgClass, Int32 id, Diagnostics.TraceEventType type, ASNA.QS
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | msg | The message's text description. Defaults to null. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | causeMsg | The cause for the generation of the message.  Defaults to null. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | recoveryMsg | A suggestion on how to recover from the situation that caused the message to be issued. Defaults to null. 
-| [Object}]($$TODO-Collections.Generic.IDictionary{System.String,System.Object}.html) | otherProperties | Additional items related to the message. 
+| [IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) | otherProperties | Additional items related to the message. 
 
 <br>
 

@@ -55,7 +55,7 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [ActivationManager](/reference/asna-qsys-runtime/job-support/activation-manager.html) | ActivationManager | Gets the Job's activation manager | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | ADO_Connection | Gets the ADO connection used for 'embedded SQL' | 
 | [Job](/reference/asna-qsys-runtime/job-support/job.html) | CurrentJob | Gets the Job associated with the calling thread. | 
-| [Database]($$TODO-ASNA.QSys.Runtime.Database.html) | Database | Gets the main DataGate Database associated with the Job | 
+| [Database](/reference/asna-qsys-runtime/database.html) | Database | Gets the main DataGate Database associated with the Job | 
 | [DocumentLibraryObject](/reference/asna-qsys-runtime/job-support/document-library-object.html) | DLO | Gets the Job's document library object facility | 
 | [ExecuteState](/reference/asna-qsys-runtime/job-support/execute-state.html) | ExecuteState | Always returns the State 'Running'. | 
 | [IntergratedFileSystem](/reference/asna-qsys-runtime/job-support/intergrated-file-system.html) | IFS | Gets the Job's integrated file system facility | 
@@ -63,7 +63,7 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueEntryExtension | Gets or set the file extension used for job queue entries. Defaults to "jqe". | 
 | [LocalDataCollection](/reference/asna-qsys-runtime/job-support/local-data-collection.html) | LDC | Gets the Job's Local Data Collection | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MessageFileFolder | Gets or sets the Folder path to the directory where the Message Files are located. | 
-| [Database]($$TODO-ASNA.QSys.Runtime.Database.html) | PrinterDB | Gets the DataGate Database for Printer Files associated with the Job. | 
+| [Database](/reference/asna-qsys-runtime/database.html) | PrinterDB | Gets the DataGate Database for Printer Files associated with the Job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PsdsJobName | Gets or Sets the Job's Name portion of the full job name | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | PsdsJobNumber | Gets the Job's Number portion of the full job name. Job's Number is unique within a Monarch Application Server. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PsdsJobUser | Gets the Job's User name portion of the full job name. | 
@@ -82,9 +82,9 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Job class. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndPrograms](#endprograms)() | Deactivates all programs in the job and calls Dispose(). | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | [getADO_Connection](#getado_connection)() | Gets the ADO connection used for 'embedded SQL' | Always returns NULL
-| [Database]($$TODO-ASNA.QSys.Runtime.Database.html) | [getDatabase](#getdatabase)() | When overriden in a derived class, gets the main DataGate Database associated with the Job | Returns de Database instance for the Job
+| [Database](/reference/asna-qsys-runtime/database.html) | [getDatabase](#getdatabase)() | When overriden in a derived class, gets the main DataGate Database associated with the Job | Returns de Database instance for the Job
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA. | The requested field value.
-| [Database]($$TODO-ASNA.QSys.Runtime.Database.html) | [getPrinterDB](#getprinterdb)() | Gets the DataGate Database for Printer Files associated with the Job. | Returns the main Database
+| [Database](/reference/asna-qsys-runtime/database.html) | [getPrinterDB](#getprinterdb)() | Gets the DataGate Database for Printer Files associated with the Job. | Returns the main Database
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetSwitch](#getswitchint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the vaule of one of the 8 job switchs. | The switch value of '0' or '1' for the requested switch, otherwise '0'
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSwitches](#getswitches)() | Gets a string representing the values of all 8 job's switches. | A '1' or '0' for each switch. The value of switch 1 is the leftmost postition of the string, switch 8 is in the last position.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Log](#logstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Log a message to diagnostic debugger listners | 
@@ -158,7 +158,7 @@ getDatabase();
 
 #### Returns
 
-[Database]($$TODO-ASNA.QSys.Runtime.Database.html)
+[Database](/reference/asna-qsys-runtime/database.html)
 
 Returns de Database instance for the Job
 
@@ -201,7 +201,7 @@ getPrinterDB();
 
 #### Returns
 
-[Database]($$TODO-ASNA.QSys.Runtime.Database.html)
+[Database](/reference/asna-qsys-runtime/database.html)
 
 Returns the main Database
 

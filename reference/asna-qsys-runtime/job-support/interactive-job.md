@@ -70,7 +70,7 @@ InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetProgram](#setprogramstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Records the name of the program that is currently running in the job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ShowPage](#showpagestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Display an arbitrary page to the user. | The string set when the shown page returned.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ShutDown](#shutdown)() | Forcibly shuts down the job. | 
-| [WebDevice](/reference/asna-qsys-runtime/job-support/web-device.html) | [Start](#startstring-socket-semaphoreslim-int32})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [Int32}]($$TODO-Collections.Concurrent.ConcurrentQueue{System.Int32}.html)) | Starts the execution of the InteractiveJob on a newly created thread. | The device assigned to the job.
+| [WebDevice](/reference/asna-qsys-runtime/job-support/web-device.html) | [Start](#startstring-socket-semaphoreslim-concurrentqueue{system.int32})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [ConcurrentQueue{System.Int32}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1)) | Starts the execution of the InteractiveJob on a newly created thread. | The device assigned to the job.
 
 <br>
 <br>
@@ -218,7 +218,7 @@ ShutDown();
 <br>
 <br>
 
-### Start([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [Int32}]($$TODO-Collections.Concurrent.ConcurrentQueue{System.Int32}.html))
+### Start([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [ConcurrentQueue{System.Int32}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1))
 
 Starts the execution of the InteractiveJob on a newly created thread.
 
@@ -233,7 +233,7 @@ Start(String jobName, Net.Sockets.Socket socket, Threading.SemaphoreSlim jobEnde
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobName | The job name to be associated with this running job. 
 | [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets) | socket | The socket used to communicate with the website providing the user interface display pages. 
 | [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim) | jobEndedSemaphore | The semaphore to signal that the job has ended. 
-| [Int32}]($$TODO-Collections.Concurrent.ConcurrentQueue{System.Int32}.html) | endedJobsQueue | The queue to register the ended job. 
+| [ConcurrentQueue{System.Int32}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1) | endedJobsQueue | The queue to register the ended job. 
 
 #### Returns
 

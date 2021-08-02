@@ -27,6 +27,17 @@ Represents the status of a job.
 
 <br>
 
+### JobStatus(  )
+
+Initializes a new instance of the JobStatus class.
+
+```cs
+JobStatus(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

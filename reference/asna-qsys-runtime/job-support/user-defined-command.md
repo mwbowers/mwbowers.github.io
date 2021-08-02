@@ -23,11 +23,11 @@ Defines the core behavior of user defined commands and provide a base for derive
 
 | Name |  Description 
 | --- | --- 
-| **UserDefinedCommand**( [ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html) ) | Called from constructors in derived classes to initialize the command class.
+| **UserDefinedCommand**( [ICaller](/reference/asna-qsys-runtime/i-caller.html) ) | Called from constructors in derived classes to initialize the command class.
 
 <br>
 
-### UserDefinedCommand( [ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html) )
+### UserDefinedCommand( [ICaller](/reference/asna-qsys-runtime/i-caller.html) )
 
 Called from constructors in derived classes to initialize the command class.
 
@@ -39,7 +39,7 @@ UserDefinedCommand( ASNA.QSys.Runtime.ICaller caller );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html) | caller | The caller of the command. The caller is typically a program. 
+| [ICaller](/reference/asna-qsys-runtime/i-caller.html) | caller | The caller of the command. The caller is typically a program. 
 
 <br>
 

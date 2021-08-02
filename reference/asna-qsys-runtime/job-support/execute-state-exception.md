@@ -27,6 +27,17 @@ The exception that is thrown when a job is artifically being set to a state of '
 
 <br>
 
+### ExecuteStateException(  )
+
+Initializes a new instance of the ExecuteState exception class.
+
+```cs
+ExecuteStateException(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

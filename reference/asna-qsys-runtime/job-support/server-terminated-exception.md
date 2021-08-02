@@ -27,6 +27,17 @@ The exception that is thrown to signal the host server is being shut down.
 
 <br>
 
+### ServerTerminatedException(  )
+
+Initializes a new instance of the ServerTerminated exception class.
+
+```cs
+ServerTerminatedException(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

@@ -27,6 +27,17 @@ Defines the special Attribute used to mark a program or service program class fo
 
 <br>
 
+### CallerActivationGroupAttribute(  )
+
+Initializes a new instance of the CallerActivationGroupAttribute class.
+
+```cs
+CallerActivationGroupAttribute(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

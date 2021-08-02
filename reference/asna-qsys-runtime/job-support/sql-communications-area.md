@@ -23,10 +23,10 @@ Implements SQLCA (SQL communications area)
 
 | Name |  Description 
 | --- | --- 
-| **SQL_CommunicationsArea**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new SQL_CommunicationsArea class instance
-| **SQL_CommunicationsArea**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SqlException](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlexception) ) | Initializes a new SQL_CommunicationsArea class instance for the last SQL operation that caused Error condition
-| **SQL_CommunicationsArea**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new SQL_CommunicationsArea class instance for the last SQL operation
-| **SQL_CommunicationsArea**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new SQL_CommunicationsArea class instance for the last SQL operation that caused an Error condition
+| [SQL_CommunicationsArea](#sql_communicationsareastring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new SQL_CommunicationsArea class instance 
+| [SQL_CommunicationsArea](#sql_communicationsareastring-sqlexception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SqlException](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlexception)) | Initializes a new SQL_CommunicationsArea class instance for the last SQL operation that caused Error condition 
+| [SQL_CommunicationsArea](#sql_communicationsareastring-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new SQL_CommunicationsArea class instance for the last SQL operation 
+| [SQL_CommunicationsArea](#sql_communicationsareastring-int32-string-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new SQL_CommunicationsArea class instance for the last SQL operation that caused an Error condition 
 
 <br>
 

@@ -53,8 +53,8 @@ ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeactivatePrograms](#deactivateprograms)() | Deactivate all program in all activation groups held by the manager. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DischargeProgram](#dischargeprogramprogram-char)([Program](/reference/asna-qsys-runtime/job-support/program.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Removes a program from its activation group and may also dispose the program. | 
-| [IActivationGroup](/reference/asna-qsys-runtime/job-support/i-activation-group.html) | [FindActivationGroup](#findactivationgroupicaller)([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html)) | Finds the activation group associated with a caller. Will create a *New group for CommandExec callers. | The activation group of programs and service programs, a *New group for CommandExec callers, the default activation group for any other caller.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInstance\`\`1](#getinstance\`\`1icaller)([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html)) | Gets the instance of a program or service program of type T to be called by a caller. The instance may be a newly created program or may be one found in an activation group. | The instance of the common program.
+| [IActivationGroup](/reference/asna-qsys-runtime/job-support/i-activation-group.html) | [FindActivationGroup](#findactivationgroupicaller)([ICaller](/reference/asna-qsys-runtime/i-caller.html)) | Finds the activation group associated with a caller. Will create a *New group for CommandExec callers. | The activation group of programs and service programs, a *New group for CommandExec callers, the default activation group for any other caller.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInstance\`\`1](#getinstance\`\`1icaller)([ICaller](/reference/asna-qsys-runtime/i-caller.html)) | Gets the instance of a program or service program of type T to be called by a caller. The instance may be a newly created program or may be one found in an activation group. | The instance of the common program.
 | [IActivationGroup](/reference/asna-qsys-runtime/job-support/i-activation-group.html) | [NewActivationGroup](#newactivationgroup)() | Creates a *NEW dynamic Activation Group. | The newly created activation group.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveActivationGroup](#removeactivationgroupiactivationgroup)([IActivationGroup](/reference/asna-qsys-runtime/job-support/i-activation-group.html)) | Remove an activation group from the activation manager ending any programs left in the group. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ResetAttentionProgram](#resetattentionprogram)() | Resets the Attention IProgram Invoker to the previous invocation level settings | 
@@ -93,7 +93,7 @@ DischargeProgram(ASNA.QSys.Runtime.JobSupport.Program program, Char inLR);
 <br>
 <br>
 
-### FindActivationGroup([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html))
+### FindActivationGroup([ICaller](/reference/asna-qsys-runtime/i-caller.html))
 
 Finds the activation group associated with a caller. Will create a *New group for CommandExec callers.
 
@@ -105,7 +105,7 @@ FindActivationGroup(ASNA.QSys.Runtime.ICaller caller);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html) | caller | The caller associated with the sought group. 
+| [ICaller](/reference/asna-qsys-runtime/i-caller.html) | caller | The caller associated with the sought group. 
 
 #### Returns
 
@@ -117,7 +117,7 @@ The activation group of programs and service programs, a *New group for CommandE
 <br>
 <br>
 
-### GetInstance\`\`1([ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html))
+### GetInstance\`\`1([ICaller](/reference/asna-qsys-runtime/i-caller.html))
 
 Gets the instance of a program or service program of type T to be called by a caller. The instance may be a newly created program or may be one found in an activation group.
 
@@ -129,7 +129,7 @@ GetInstance``1(ASNA.QSys.Runtime.ICaller caller);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ICaller]($$TODO-ASNA.QSys.Runtime.ICaller.html) | caller | The caller needing the instance. 
+| [ICaller](/reference/asna-qsys-runtime/i-caller.html) | caller | The caller needing the instance. 
 
 
 <br>

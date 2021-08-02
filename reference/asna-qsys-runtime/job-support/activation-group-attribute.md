@@ -23,8 +23,8 @@ Defines the Activation Group Attribute used to mark a program or service program
 
 | Name |  Description 
 | --- | --- 
-| **ActivationGroupAttribute**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of the ActivationGroupAttribute class using the supplied group name.
-| **ActivationGroupAttribute**(  ) | Initialize a new instance of the ActivationGroupAttribute class using the default activation group.
+| [ActivationGroupAttribute](#activationgroupattributestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the ActivationGroupAttribute class using the supplied group name. 
+| [ActivationGroupAttribute](#activationgroupattribute)() | Initialize a new instance of the ActivationGroupAttribute class using the default activation group. 
 
 <br>
 
@@ -41,6 +41,17 @@ ActivationGroupAttribute( String groupName );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | groupName | The user provided name of the activation group or one of the special values: "*CALLER", "*DFTACTGRP" or "*NEW".   
+
+<br>
+
+### ActivationGroupAttribute(  )
+
+Initialize a new instance of the ActivationGroupAttribute class using the default activation group.
+
+```cs
+ActivationGroupAttribute(  );
+```
+
 
 <br>
 

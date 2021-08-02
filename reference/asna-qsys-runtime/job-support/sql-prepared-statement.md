@@ -23,8 +23,8 @@ Used to implement SQL PREPARE statements
 
 | Name |  Description 
 | --- | --- 
-| **SqlPreparedStatement**( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime/job-support/db-parm.html) ) | Initializes a new instance of SqlPreparedStatement
-| **SqlPreparedStatement**( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of SqlPreparedStatement
+| [SqlPreparedStatement](#sqlpreparedstatementdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime/job-support/db-parm.html)) | Initializes a new instance of SqlPreparedStatement 
+| [SqlPreparedStatement](#sqlpreparedstatementdbconnection-string)([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of SqlPreparedStatement 
 
 <br>
 
