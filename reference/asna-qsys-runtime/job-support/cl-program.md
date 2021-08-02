@@ -27,6 +27,17 @@ Defines the core behavior of programs migrated from CL program .
 
 <br>
 
+### CLProgram(  )
+
+Initializes a new instance of the CLProgram class
+
+```cs
+CLProgram(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

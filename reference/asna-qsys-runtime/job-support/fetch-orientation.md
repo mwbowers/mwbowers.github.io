@@ -23,9 +23,9 @@ Defines Fetch Orientation types
 
 | Name |  Description 
 | --- | --- 
-| **FetchOrientation**( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of QueryCursor class
-| **FetchOrientation**( [SqlPreparedStatement](/reference/asna-qsys-runtime/job-support/sql-prepared-statement.html) ) | Initializes a new instance of QueryCursor class
-| **FetchOrientation**( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime/job-support/db-parm.html) ) | Initializes a new instance of QueryCursor class
+| [FetchOrientation](#fetchorientationdbconnection-string)([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of QueryCursor class 
+| [FetchOrientation](#fetchorientationsqlpreparedstatement)([SqlPreparedStatement](/reference/asna-qsys-runtime/job-support/sql-prepared-statement.html)) | Initializes a new instance of QueryCursor class 
+| [FetchOrientation](#fetchorientationdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime/job-support/db-parm.html)) | Initializes a new instance of QueryCursor class 
 
 <br>
 
@@ -101,7 +101,7 @@ FetchOrientation( Data.Common.DbConnection sqlConnection, String selectStatement
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes the Cursor. Does not throw error if the cursor had not been opened. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Fetch](#fetchint32-fetchorientation)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation]($$TODO-ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrientation.html)) | Fetches rows according to the orientation requested. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Fetch](#fetchint32-fetchorientation)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html)) | Fetches rows according to the orientation requested. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FetchAbsolute](#fetchabsoluteint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows until it gets to the indicated absolute row | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FetchRelative](#fetchrelativeint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows in a relative way. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Opens the Cursor. Throws exception if cursor already opened. | 
@@ -123,7 +123,7 @@ Close();
 <br>
 <br>
 
-### Fetch([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation]($$TODO-ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrientation.html))
+### Fetch([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html))
 
 Fetches rows according to the orientation requested.
 
@@ -136,7 +136,7 @@ Fetch(Int32 expectedResults, ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrien
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | Expected number of rows read after operation 
-| [FetchOrientation]($$TODO-ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrientation.html) | orientation | Orientation specification 
+| [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html) | orientation | Orientation specification 
 
 
 <br>

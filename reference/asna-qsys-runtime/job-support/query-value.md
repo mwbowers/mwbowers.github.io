@@ -62,7 +62,7 @@ QueryValue( Object value );
 | --- | --- | --- | --- 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDateTime](#todatetime)() | Gets the underlying value by converting it to a DateTime object | The value converted to a DateTime object
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToDecimal](#todecimal)() | Gets the underlying value by converting it to a Decimal object | The value converted to a Decimal object
-| [Int64]($$TODO-Int64.html) | [ToInt64](#toint64)() | Gets the underlying value by converting it to a Int64 object | The value converted to an Int64 object
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [ToInt64](#toint64)() | Gets the underlying value by converting it to a Int64 object | The value converted to an Int64 object
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Gets the underlying value by converting it to a String object | The value converted to a String object
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToTime](#totime)() | Gets the underlying value by converting it to a DateTime object | The value converted to a DateTime object
 
@@ -115,7 +115,7 @@ ToInt64();
 
 #### Returns
 
-[Int64]($$TODO-Int64.html)
+[Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)
 
 The value converted to an Int64 object
 

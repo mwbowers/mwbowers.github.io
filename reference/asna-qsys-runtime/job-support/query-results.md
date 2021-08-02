@@ -23,10 +23,21 @@ Dictionary with Query result items
 
 | Name |  Description 
 | --- | --- 
-| **QueryResults**(  ) | Initalizes a new instance of QueryResults class
-| **QueryResults**( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initalizes a new instance of QueryResults class pre-allocating the especified initial capacity
-| **QueryResults**( [Object}]($$TODO-Collections.Generic.IDictionary{System.String,System.Object}.html) ) | Initalizes a new instance of QueryResults class by duplicating the provided dictionary
-| **QueryResults**( [SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo), [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext) ) | Initalizes a new instance of QueryResults class
+| [QueryResults](#queryresults)() | Initalizes a new instance of QueryResults class 
+| [QueryResults](#queryresultsint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initalizes a new instance of QueryResults class pre-allocating the especified initial capacity 
+| [QueryResults](#queryresultsidictionary{system.string-system.object})([IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)) | Initalizes a new instance of QueryResults class by duplicating the provided dictionary 
+| [QueryResults](#queryresultsserializationinfo-streamingcontext)([SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo), [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext)) | Initalizes a new instance of QueryResults class 
+
+<br>
+
+### QueryResults(  )
+
+Initalizes a new instance of QueryResults class
+
+```cs
+QueryResults(  );
+```
+
 
 <br>
 
@@ -46,7 +57,7 @@ QueryResults( Int32 capacity );
 
 <br>
 
-### QueryResults( [Object}]($$TODO-Collections.Generic.IDictionary{System.String,System.Object}.html) )
+### QueryResults( [IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) )
 
 Initalizes a new instance of QueryResults class by duplicating the provided dictionary
 
@@ -58,7 +69,7 @@ QueryResults( Collections.Generic.IDictionary{System.String,System.Object} dicti
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object}]($$TODO-Collections.Generic.IDictionary{System.String,System.Object}.html) | dictionary | The dictionary to duplicate. 
+| [IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) | dictionary | The dictionary to duplicate. 
 
 <br>
 

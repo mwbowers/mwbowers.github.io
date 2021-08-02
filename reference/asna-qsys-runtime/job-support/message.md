@@ -23,8 +23,8 @@ Represent a message sent by a program.
 
 | Name |  Description 
 | --- | --- 
-| **Message**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime/job-support/message-type.html) ) | Initializes a new instance of the Message class using the specified message id and data from a message file and type.
-| **Message**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime/job-support/message-type.html) ) | Initializes a new instance of the Message class using a text string and type.
+| [Message](#messagestring-string-string-messagetype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime/job-support/message-type.html)) | Initializes a new instance of the Message class using the specified message id and data from a message file and type. 
+| [Message](#messagestring-messagetype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime/job-support/message-type.html)) | Initializes a new instance of the Message class using a text string and type. 
 
 <br>
 

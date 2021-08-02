@@ -27,6 +27,17 @@ Represents a versioned collection of name/value pairs.
 
 <br>
 
+### LocalDataCollection(  )
+
+Initializes a new, empty instance of the LocalDataCollection class.
+
+```cs
+LocalDataCollection(  );
+```
+
+
+<br>
+
 
 <br>
 <br>
@@ -39,7 +50,7 @@ Represents a versioned collection of name/value pairs.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Item([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets or sets the value associated with the specified name. Setting a value increments the LocalDataCollection version. | name /* The name whose value to get or set. */
 | [ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection) | Names | Gets an ICollection containing the names in the LocalDataCollection | 
 | [ICollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection) | Values | Gets an ICollection containing the values in the LocalDataCollection | 
-| [Int64]($$TODO-Int64.html) | Version | Gets the version of the LocalDataCollection | 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | Version | Gets the version of the LocalDataCollection | 
 
 <br>
 <br>

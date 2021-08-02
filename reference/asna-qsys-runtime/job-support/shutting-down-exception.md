@@ -27,6 +27,17 @@ The exception that is thrown to signal the Job is being shut down.
 
 <br>
 
+### ShuttingDownException(  )
+
+Initializes a new instance of the ShuttingDown exception class.
+
+```cs
+ShuttingDownException(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

@@ -27,6 +27,17 @@ Defines the special Attribute used to mark a program or service program class fo
 
 <br>
 
+### NewActivationGroupAttribute(  )
+
+Initializes a new instance of the NewActivationGroupAttribute class.
+
+```cs
+NewActivationGroupAttribute(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

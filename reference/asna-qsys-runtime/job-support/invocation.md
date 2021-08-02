@@ -23,12 +23,12 @@ Defines a entry in the program/procedure invocation stack.
 
 | Name |  Description 
 | --- | --- 
-| **Invocation**( [CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64]($$TODO-Int64.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of the Invocation class.
-| **Invocation**( [Job](/reference/asna-qsys-runtime/job-support/job.html) ) | Initializes a new instance of the InvocationManager class for a job.
+| [Invocation](#invocationcommonprogram-string-int64-string-string)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the Invocation class. 
+| [Invocation](#invocationjob)([Job](/reference/asna-qsys-runtime/job-support/job.html)) | Initializes a new instance of the InvocationManager class for a job. 
 
 <br>
 
-### Invocation( [CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64]($$TODO-Int64.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
+### Invocation( [CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
 Initializes a new instance of the Invocation class.
 
@@ -42,7 +42,7 @@ Invocation( ASNA.QSys.Runtime.JobSupport.CommonProgram program, String activatio
 | --- | --- | ---
 | [CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html) | program | The program being invoked. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | activationGroupName | The name of the program's activation group. 
-| [Int64]($$TODO-Int64.html) | invocationMark | The current invocation mark. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | invocationMark | The current invocation mark. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | moduleName | The module's name of the procedure being invoked. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | procedureName | The name of the procedure being invoked. 
 
@@ -74,7 +74,7 @@ Invocation( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ActivationGroupName | The activation group name of the invoked program. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | FileOverrideTable | The file overrides associated with this Invocation entry. | 
-| [Int64]($$TODO-Int64.html) | InvocationMark | The invoication mark when the invocation was created. | 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | InvocationMark | The invoication mark when the invocation was created. | 
 | [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | MessageQueue | The queue for messages sent to the invoked program/procedure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ModuleName | The name of the module where the procedure is defined. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProcedureName | The name of the invoked procedure. | 

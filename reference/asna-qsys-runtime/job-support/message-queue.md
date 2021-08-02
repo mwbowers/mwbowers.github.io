@@ -27,6 +27,17 @@ Holds a group of messages in a queue.
 
 <br>
 
+### MessageQueue(  )
+
+Initializes a new, empty instance of the MessageQueue class.
+
+```cs
+MessageQueue(  );
+```
+
+
+<br>
+
 
 <br>
 <br>
@@ -36,7 +47,7 @@ Holds a group of messages in a queue.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Removes all elements from the MessageList. | 
-| [IEnumerator]($$TODO-Collections.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Returns an IEnumerator that iterates through the MessageQueue. | The IEnumerator for the MessageQueue.
+| [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an IEnumerator that iterates through the MessageQueue. | The IEnumerator for the MessageQueue.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Queue](#queuemessage)([Message](/reference/asna-qsys-runtime/job-support/message.html)) | Enqueues a message at the end of the queue | 
 
 <br>
@@ -64,7 +75,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator]($$TODO-Collections.IEnumerator.html)
+[IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator)
 
 The IEnumerator for the MessageQueue.
 

@@ -23,9 +23,9 @@ Represents a String SQL Parameter
 
 | Name |  Description 
 | --- | --- 
-| **DBStrParm**( [DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initializes a new instance of DBStrParm class
-| **DBStrParm**( [DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initializes a new instance of DBStrParm class
-| **DBStrParm**( [DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype), [ParameterDirection](https://docs.microsoft.com/en-us/dotnet/api/system.data.parameterdirection), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initializes a new instance of DBStrParm class
+| [DBStrParm](#dbstrparmdbtype-int32)([DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of DBStrParm class 
+| [DBStrParm](#dbstrparmdbtype-object-int32)([DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of DBStrParm class 
+| [DBStrParm](#dbstrparmdbtype-parameterdirection-object-int32)([DbType](https://docs.microsoft.com/en-us/dotnet/api/system.data.dbtype), [ParameterDirection](https://docs.microsoft.com/en-us/dotnet/api/system.data.parameterdirection), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of DBStrParm class 
 
 <br>
 

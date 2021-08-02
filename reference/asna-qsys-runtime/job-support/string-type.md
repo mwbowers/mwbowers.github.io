@@ -23,10 +23,21 @@ Specifies the kind of message included in an exception message
 
 | Name |  Description 
 | --- | --- 
-| **StringType**(  ) | Initializes a new instance of the JobFrameworkException class.
-| **StringType**( [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) ) | Initializes a new instance of the JobFrameworkException class with values for placeholders in the error message.
-| **StringType**( [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) ) | Initializes a new instance of the JobFrameworkException class with values for placeholders in the error and cause messages.
-| **StringType**( [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initializes a new instance of the JobFrameworkException class with values for placeholders in the error, cause and recovery messages.
+| [StringType](#stringtype)() | Initializes a new instance of the JobFrameworkException class. 
+| [StringType](#stringtypeobject[])([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the JobFrameworkException class with values for placeholders in the error message. 
+| [StringType](#stringtypeobject[]-object[])([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the JobFrameworkException class with values for placeholders in the error and cause messages. 
+| [StringType](#stringtypeobject[]-object[]-object[]-int32)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the JobFrameworkException class with values for placeholders in the error, cause and recovery messages. 
+
+<br>
+
+### StringType(  )
+
+Initializes a new instance of the JobFrameworkException class.
+
+```cs
+StringType(  );
+```
+
 
 <br>
 
