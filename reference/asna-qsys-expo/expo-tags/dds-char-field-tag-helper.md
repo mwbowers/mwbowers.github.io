@@ -2,7 +2,7 @@
 title: DdsCharFieldTagHelper Class
 ---
 
-Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value enetered into a field.
+Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value entered into a field.
 
 **Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
@@ -12,7 +12,7 @@ Defines an input element where characters can be typed using a keyboard. The cap
 
 ## Remarks
 
-Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value enetered into a field.
+Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value entered into a field.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

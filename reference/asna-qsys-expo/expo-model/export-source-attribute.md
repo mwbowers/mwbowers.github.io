@@ -53,7 +53,9 @@ GetFrom(Type type);
 
 #### Returns
 
-[ExportSourceAttribute](/reference/asna-qsys-expo/expo-model/export-source-attribute.html) The attribute
+[ExportSourceAttribute](/reference/asna-qsys-expo/expo-model/export-source-attribute.html)
+
+The attribute
 
 
 <br>

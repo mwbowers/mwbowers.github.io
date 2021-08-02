@@ -44,7 +44,9 @@ CreateValueProviderAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFact
 
 #### Returns
 
-[Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) The asynchronous operation
+[Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler)
+
+The asynchronous operation
 
 
 <br>

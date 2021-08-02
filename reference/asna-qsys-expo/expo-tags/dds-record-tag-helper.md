@@ -28,7 +28,7 @@ Defines a Display record
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowHeightRows | Gets or sets the window height. | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowLeftCol | Gets or sets the left horizontal position of the window. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | WindowTitle | Gets or sets the label for the Window record's Title | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowTopRow | Gets or sets the top vertical postion of the window. | 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowTopRow | Gets or sets the top vertical position of the window. | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowWidthCols | Gets or sets the window width. | 
 
 <br>

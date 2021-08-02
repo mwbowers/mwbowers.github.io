@@ -159,7 +159,9 @@ GetValue(String key);
 
 #### Returns
 
-[ValueProviderResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderresult) the value provider result
+[ValueProviderResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderresult)
+
+the value provider result
 
 
 <br>

@@ -42,7 +42,7 @@ Apply(Decimal numeric, Int32 decimals, Int32 length, String editwordString);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | numeric | input numeric value 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decmal positions 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decimal positions 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | field length 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | editwordString | Edit Word 
 
@@ -77,7 +77,9 @@ ApplyEditWord(String editwordString, String valueString, Char decimalPoint, Char
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string) the formatted string
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+the formatted string
 
 
 <br>
