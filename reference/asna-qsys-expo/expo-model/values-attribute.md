@@ -1,5 +1,5 @@
 ---
-title: ValuesAttribute class
+title: ValuesAttribute Class
 ---
 
 <style>
@@ -10,12 +10,17 @@ tr td:first-child {
 
 Defines ValuesAttribute class
 
+**Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
 <br>
 <br>
 
 ## Remarks
+
+Defines ValuesAttribute class
+
+[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>
@@ -24,39 +29,61 @@ Defines ValuesAttribute class
 
 | Name |  Description 
 | --- | --- 
-| **ValuesAttribute**( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
-| **ValuesAttribute**( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
-| **ValuesAttribute**( [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type?view=net-5.0) type, [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0)[] validValues ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
+| **ValuesAttribute**( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
+| **ValuesAttribute**( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
+| **ValuesAttribute**( [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
 
 <br>
-### ValuesAttribute( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) validValues )
+
+### ValuesAttribute( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
 Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 
+```cs
+ValuesAttribute( String[] validValues );
+```
+
+#### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | validValues | initial values string array 
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | validValues | initial values string array 
 
 <br>
-### ValuesAttribute( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) validValues )
+
+### ValuesAttribute( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
 Initializes a new instance of the class ValuesAttribute with the initial valid values provided
 
+```cs
+ValuesAttribute( Int32[] validValues );
+```
+
+#### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | validValues | initial values integer array 
+| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | validValues | initial values integer array 
 
 <br>
-### ValuesAttribute( Type type, Object[] validValues )
+
+### ValuesAttribute( [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
 
 Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
 
+```cs
+ValuesAttribute( Type type, Object[] validValues );
+```
+
+#### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
-| Type | type | type of valid values 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0)[] | validValues | valid values object array 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | type | type of valid values 
+| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | validValues | valid values object array 
 
 <br>
+
 
 <br>
 <br>
@@ -65,10 +92,10 @@ Initializes a new instance of the class ValuesAttribute with the initial type an
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| Type | ObjectType | Gets the Object Type | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0)[] | ValidValues | Gets the array of valid values | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
-| Func<object,object> | Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| [Func<object,object>]($$TODO-Func<object,object>.html) | Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ObjectType | Gets the Object Type | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
+| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValidValues | Gets the array of valid values | 
 
 <br>
 <br>
@@ -77,8 +104,56 @@ Initializes a new instance of the class ValuesAttribute with the initial type an
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=net-5.0) | IsValid | Gets a boolean valid indicating that the passed in value is valid | true if valid
-| [ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | GetFrom | Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes) | the ValuesAttribute
+| [ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html) | [GetFrom](#getfrommemberinfo)([MemberInfo]($$TODO-Reflection.MemberInfo.html)) | Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes) | the ValuesAttribute
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsValid](#isvalidobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets a boolean valid indicating that the passed in value is valid | true if valid
+
+<br>
+<br>
+
+### GetFrom([MemberInfo]($$TODO-Reflection.MemberInfo.html))
+
+Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes)
+
+```cs
+GetFrom(Reflection.MemberInfo member);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [MemberInfo]($$TODO-Reflection.MemberInfo.html) | member | member information 
+
+#### Returns
+
+[ValuesAttribute](/reference/asna-qsys-expo/expo-model/values-attribute.html)
+
+the ValuesAttribute
+
+
+<br>
+<br>
+
+### IsValid([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Gets a boolean valid indicating that the passed in value is valid
+
+```cs
+IsValid(Object value);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | input value 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if valid
+
 
 <br>
 <br>

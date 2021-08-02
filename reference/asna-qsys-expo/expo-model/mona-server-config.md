@@ -1,15 +1,20 @@
 ---
-title: MonaServerConfig interface
+title: MonaServerConfig Class
 ---
 
 Provides Mona-Server Configuration functionality
 
+**Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
 <br>
 <br>
 
 ## Remarks
+
+Provides Mona-Server Configuration functionality
+
+[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>
@@ -18,19 +23,27 @@ Provides Mona-Server Configuration functionality
 
 | Name |  Description 
 | --- | --- 
-| **MonaServerConfig**( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) i ) | Initializes new instance of MonaServerConfig class
+| **MonaServerConfig**( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) ) | Initializes new instance of MonaServerConfig class
 | **MonaServerConfig**(  ) | Initializes new instance of MonaServerConfig class
 
 <br>
-### MonaServerConfig( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) i )
+
+### MonaServerConfig( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) )
 
 Initializes new instance of MonaServerConfig class
+
+```cs
+MonaServerConfig( ASNA.QSys.Expo.Model.IMonaServerConfig i );
+```
+
+#### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) | i | initial configuration 
 
 <br>
+
 
 <br>
 <br>
@@ -39,8 +52,8 @@ Initializes new instance of MonaServerConfig class
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | HostName | Gets or sets a value that indicates the Name of the Host | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Port | Gets or sets a value that indicates the IP Port to use | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | HostName | Gets or sets a value that indicates the Name of the Host | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Port | Gets or sets a value that indicates the IP Port to use | 
 
 <br>
 <br>

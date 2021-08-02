@@ -1,15 +1,20 @@
 ---
-title: CharAttribute class
+title: CharAttribute Class
 ---
 
 Provides Char Attributes (for Properties)
 
+**Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
 <br>
 <br>
 
 ## Remarks
+
+Provides Char Attributes (for Properties)
+
+[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>
@@ -18,18 +23,26 @@ Provides Char Attributes (for Properties)
 
 | Name |  Description 
 | --- | --- 
-| **CharAttribute**( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length ) | Char attribute
+| **CharAttribute**( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Char attribute
 
 <br>
-### CharAttribute( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) length )
+
+### CharAttribute( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
 Char attribute
 
+```cs
+CharAttribute( Int32 length );
+```
+
+#### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | length | field length 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | field length 
 
 <br>
+
 
 <br>
 <br>
@@ -38,8 +51,8 @@ Char attribute
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=net-5.0) | Length | Length attribute | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | InputOnlyValue | Input-only attribute | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InputOnlyValue | Input-only attribute | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length attribute | 
 
 <br>
 <br>
@@ -48,7 +61,31 @@ Char attribute
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | GetFrom | Gets a CharAttribute from a field member | the char attribute
+| [CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html) | [GetFrom](#getfrommemberinfo)([MemberInfo]($$TODO-Reflection.MemberInfo.html)) | Gets a CharAttribute from a field member | the char attribute
+
+<br>
+<br>
+
+### GetFrom([MemberInfo]($$TODO-Reflection.MemberInfo.html))
+
+Gets a CharAttribute from a field member
+
+```cs
+GetFrom(Reflection.MemberInfo fieldMember);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [MemberInfo]($$TODO-Reflection.MemberInfo.html) | fieldMember | field member information 
+
+#### Returns
+
+[CharAttribute](/reference/asna-qsys-expo/expo-model/char-attribute.html)
+
+the char attribute
+
 
 <br>
 <br>

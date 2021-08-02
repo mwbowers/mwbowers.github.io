@@ -1,18 +1,18 @@
 ---
-title: AidProperty class
+title: AidProperty Class
 ---
-
-<style>
-tr td:first-child {
-    white-space: nowrap;
-}
-</style>
 
 Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an boolean expression.
 
+**Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
+<br>
+<br>
+
 ## Remarks
+
+Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an boolean expression.
 
 IBM i Display file definition (DDS) has two record-level keywords that specify what to do when Command keys are issued by user input on a Browser:
 
@@ -73,6 +73,7 @@ Note:
 
 The class `AidProperty` allows for processing such string attributes. It parses the collection and provides access to individual [Conditional Properties](/reference/asna-qsys-expo/expo-model/conditional-property.html)
 
+
 <br>
 <br>
 
@@ -81,18 +82,26 @@ The class `AidProperty` allows for processing such string attributes. It parses 
 | Name |  Description 
 | --- | --- 
 | **AidProperty**(  ) | Initializes a new AidProperty instance
-| **AidProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
+| **AidProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
 
 <br>
-### AidProperty( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) aidString )
+
+### AidProperty( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
 Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
 
+```cs
+AidProperty( String aidString );
+```
+
+#### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | aidString | the string initializer 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | aidString | the string initializer 
 
 <br>
+
 
 <br>
 <br>
@@ -101,8 +110,8 @@ Initializes a new AidProperty instance to the values found in aidString collecti
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey 
 | [ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
+| [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
 
 <br>
 <br>
@@ -111,8 +120,38 @@ Initializes a new AidProperty instance to the values found in aidString collecti
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void?view=net-5.0) | Reset | Resets the ConditionalProperty Array to its initial values | 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0) | GetValidValues | Gets the valid values collection (string array) | the array of valid values
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetValidValues](#getvalidvalues)() | Gets the valid values collection (string array) | the array of valid values
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Reset](#reset)() | Resets the ConditionalProperty Array to its initial values | 
+
+<br>
+<br>
+
+### GetValidValues()
+
+Gets the valid values collection (string array)
+
+```cs
+GetValidValues();
+```
+
+#### Returns
+
+[String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+the array of valid values
+
+
+<br>
+<br>
+
+### Reset()
+
+Resets the ConditionalProperty Array to its initial values
+
+```cs
+Reset();
+```
+
 
 <br>
 <br>
