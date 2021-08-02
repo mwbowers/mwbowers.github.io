@@ -32,7 +32,7 @@ Defines Export Source Attribute on a type
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [ExportSourceAttribute](/reference/asna-qsys-expo/expo-model/export-source-attribute.html) | [GetFrom](#getfromtype)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Gets the ExportSourceAttribute from custome attributes in the indicated type | The attribute
+| [ExportSourceAttribute](/reference/asna-qsys-expo/expo-model/export-source-attribute.html) | [GetFrom](#getfromtype)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Gets the ExportSourceAttribute from custom attributes in the indicated type | The attribute
 
 <br>
 <br>
