@@ -12,9 +12,16 @@ Provides Char Attributes (for Properties)
 
 ## Remarks
 
-Provides Char Attributes (for Properties)
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) as `Char`, Model properties can use this attribute.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example,
+
+```cs
+[Char(25)]
+public string SFCSZ { get; private set; } // CITY-STATE-ZIP
+```
+
+Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Char`, with length of 25 chars, named `SFCSZ` on a particular Model Record.
 
 <br>
 <br>
@@ -49,10 +56,10 @@ CharAttribute( Int32 length );
 
 ## Properties
 
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InputOnlyValue | Input-only attribute | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length attribute | 
+| Type | Name | Description 
+| --- | --- | --- 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InputOnlyValue | Input-only attribute 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length attribute 
 
 <br>
 <br>
