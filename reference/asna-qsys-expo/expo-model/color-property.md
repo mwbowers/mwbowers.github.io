@@ -18,9 +18,22 @@ Defines ColorProperty
 
 ## Remarks
 
-Defines ColorProperty
+The class `ColorProperty` is used the evaluate a conditional "Color" expression, like the one given to Displayfile fields in the markup.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, the following [RazorPage](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/) element described for a `Char` field that is to be displayed with a color attribute depending on the value of Option Indicator 61: 
+
+```html
+<DdsCharField Col="71 For="SFLC.SFL1[rrn].SFFILESTAT" Upper=true Color="Green : !61 , DarkBlue : 61" />
+```
+
+The expression is:
+```
+"Green : !61 , DarkBlue : 61"
+```
+
+Which means: Color `Green` if Indicator 61 is *Off, Color `DarkBlue` is Indicator 61 is *On
+
+Note: at Runtime, an instance of the class `ColorProperty` is used to evaluate the Color based on the current value of the Indicator 61 (in this example).
 
 <br>
 <br>
