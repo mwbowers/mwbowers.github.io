@@ -12,20 +12,32 @@ Defines Base Record Attributes on a type
 
 ## Remarks
 
-Defines Base Record Attributes on a type
+Model record classes may be declared with attributes to indicate runtime behavior. For example, `ChangeIndicator = 44` declares that when this record is changed by user interaction, the [Indicator](/reference/asna-qsys-runtime/indicator.html) 44 should be set, such that logic can test this value and react to the change.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+As any [C# Attributes](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/), the syntax uses brackets right before the declaration of the class, for example:
+
+```cs
+[
+    Record( ChangeIndicator = 44 )
+]
+public class MyRecord_Model : RecordModel
+{
+```
+
+Defines the attribute `ChangeIndicator` for `MyRecord_Model` class.
+
+The `BaseRecordAttribute` provides common attributes to all `RecordModel`s. Specialized (derived) Record classes, provide more attributes valid only to that class.
 
 <br>
 <br>
 
 ## Properties
 
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
+| Type | Name | Description 
+| --- | --- | --- 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Gets or sets the value that represents the Change indicator  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormatLevel | Gets or sets the Record Format Level Check hash code as a string  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string  
 
 <br>
 <br>
