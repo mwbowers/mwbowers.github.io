@@ -29,8 +29,19 @@ Defines ColorProperty
 
 | Name |  Description 
 | --- | --- 
-| **ColorProperty**(  ) | Initializes a new instance of ColorProperty class
-| **ColorProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of ColorProperty class with the Conditional Property collection in a string.
+| [ColorProperty](#colorproperty)() | Initializes a new instance of ColorProperty class 
+| [ColorProperty](#colorpropertystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of ColorProperty class with the Conditional Property collection in a string. 
+
+<br>
+
+### ColorProperty(  )
+
+Initializes a new instance of ColorProperty class
+
+```cs
+ColorProperty(  );
+```
+
 
 <br>
 

@@ -32,9 +32,20 @@ The ConditionalProperty class instance may be instantiated with an array of [Con
 
 | Name |  Description 
 | --- | --- 
-| **ConditionalProperty**(  ) | Initializes a new instance of ConditionalProperty class
-| **ConditionalProperty**( [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) ) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given.
-| **ConditionalProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string
+| [ConditionalProperty](#conditionalproperty)() | Initializes a new instance of ConditionalProperty class 
+| [ConditionalProperty](#conditionalpropertyconditionalvalue[])([ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html)) | Initializes a new instance of ConditionalProperty class to the ConditionalValue collection given. 
+| [ConditionalProperty](#conditionalpropertystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of ConditionalProperty class by de-serializing the given collection in the form of a string 
+
+<br>
+
+### ConditionalProperty(  )
+
+Initializes a new instance of ConditionalProperty class
+
+```cs
+ConditionalProperty(  );
+```
+
 
 <br>
 

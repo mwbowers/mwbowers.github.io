@@ -27,6 +27,17 @@ Provides Byte Attributes (for Properties)
 
 <br>
 
+### ByteAttribute(  )
+
+Initializes a new ByteAttribute instance
+
+```cs
+ByteAttribute(  );
+```
+
+
+<br>
+
 
 <br>
 <br>
