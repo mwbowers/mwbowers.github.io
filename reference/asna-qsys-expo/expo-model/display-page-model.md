@@ -34,9 +34,9 @@ public class CUSTREC_Model : RecordModel
     }
 ```
 
-This is the implementation for the Legacy DDS [RTNCSRLOC](https://www.ibm.com/docs/en/i/7.2?topic=80-rtncsrloc-return-cursor-location-keyword-display-files). 
+Is the implementation for the Legacy DDS [RTNCSRLOC](https://www.ibm.com/docs/en/i/7.2?topic=80-rtncsrloc-return-cursor-location-keyword-display-files). 
 
-For example, the following Record specification lines:
+With the following Legacy DDS Record specification lines:
 
 ```
 0076.00     A          R CUSTREC                                                       080401
@@ -46,7 +46,7 @@ For example, the following Record specification lines:
 0083.00     A                                      RTNCSRLOC(&CSRREC &CSRFLD)          080401
 ```
 
-Specify that the location of the Cursor (*record-name* and *row-and-column* values) should be copied to hidden fields in `CUSTREC` Model class, named `CSRREC` and `CSRFLD`.
+Which specify that the location of the Cursor (*record-name* and *row-and-column* values) should be copied to hidden fields in `CUSTREC` Model class, named `CSRREC` and `CSRFLD`.
 
 When a Page is posted, the DataSet is loaded with feedback information (from posted data) and the instance of DisplayPageModel is updated, such that when the Logic Project's fields (such as `CSRREC` and `CSRFLD`) get populated, they will have the updated values from the recent user interaction.
 
