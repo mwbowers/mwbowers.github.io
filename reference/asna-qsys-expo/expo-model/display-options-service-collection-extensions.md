@@ -12,9 +12,22 @@ Provides helper class to assist server configuration
 
 ## Remarks
 
-Provides helper class to assist server configuration
+ASP.NET [RazorPage](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/) Websites normally has a configuration source C# file named `Startup.cs` which is called by the ASP.NET runtime. It looks something like the following code:
 
-[//]: # ($$TODO: Complete the Remarks section.)
+```cs
+public void ConfigureServices(IServiceCollection services)
+{
+    .
+    .
+    .
+
+    services.ConfigureDisplayPagesOptions(Configuration);
+
+```
+
+This bootstrap [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection) mechanism, glues (injects) the settings of the Website file `appsettings.json`, in particular the Section `DisplayPages` to the Website configuration.
+
+>See related class [DisplayPagesOptions Class](/reference/asna-qsys-expo/expo-model/display-pages-options.html)
 
 <br>
 <br>
