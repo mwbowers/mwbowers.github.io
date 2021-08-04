@@ -12,20 +12,33 @@ Defines a Display Page Attribute
 
 ## Remarks
 
-Defines a Display Page Attribute
+Model Record classes may be annotated with attributes to specify meta-data to control the Display page.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example,
+
+
+```cs
+[
+    SubfileControl(
+        FunctionKeys = "F9 09;PageUp 51:!76;PageDown 50:!77"
+    )
+]
+public class SFLC_Model : SubfileControlModel
+{
+```
+
+Specifies that the `SubfileControl` named **SFLC** enables `F9`, `PageUp` and `PageDown` keys (`F9` always, `PageUp` conditioned to Option Indicator *not* 76 and `PageDown` conditioned to Option Indicator *not* 77), with the Response indicators 09, 51 and 50 to turn on (when such key is pressed). Since this attribute is for "Function Keys" (as opposed to "AttentionKeys") then, `Input Data` is transmitted from the browser to the server.
 
 <br>
 <br>
 
 ## Properties
 
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CommandKeyIndicator | Gets or sets the Command Key indicator number | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
+| Type | Name | Description 
+| --- | --- | --- 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CommandKeyIndicator | Gets or sets the response indicator to set 'on' when the user presses any command key other than "enter".
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! 
 
 <br>
 <br>
