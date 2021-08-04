@@ -44,7 +44,7 @@ skip_read_time: true
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 card-holder">
-        <a class="card download-asna" href="/get-asna/">
+        <a class="card download-asna-qsys" href="/manuals/get-asna-qsys/get-asna-qsys-overview.html">
           <h5 class="title">Download and install</h5>
           <p>
             Download and install Monarch Base on your machine.

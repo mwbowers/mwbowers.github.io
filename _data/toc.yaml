@@ -183,9 +183,13 @@ Concepts:
 
 ##
 Manuals:
-- sectiontitle: Framework Manuals
+- sectiontitle: ASNA Manuals
   sectionpath: /manuals/manuals-overview.html
   section:
+  - sectiontitle: Monarch Base
+    section:
+    - title: Getting AsnaQSys Packages
+      path: /manuals/get-asna-qsys/get-asna-qsys-overview.html
   - sectiontitle: Monarch Operations Management
     sectionpath: /manuals/mom/management-overview
     section:
