@@ -117,7 +117,7 @@ The Out-Of-Process host ASNA.QSys.MonaLisa.exe also depends on:
 - ASNA.QSys.MonaServer.dll
 
 ## NuGet Packages
-To facilitate the building of migrated applications, the Base is made available via the following NuGet packages:
+To facilitate the building of migrated applications, Monarch Base is made available via the following NuGet packages:
 
 - **ASNA.DataGate.Client package**
   - ASNA.DataGate.Client.dll
