@@ -46,7 +46,7 @@ Apply(Decimal numeric, Int32 decimals, Int32 length, ASNA.QSys.Expo.Model.EditCo
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | numeric | input numeric value 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decmal positions 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decimal positions 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | field length 
 | [EditCodes](/reference/asna-qsys-expo/expo-model/edit-codes.html) | editCode | Edit Code 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isAsteriskFill | true if value should be filled with * 
@@ -74,7 +74,7 @@ Apply(Decimal numeric, Int32 decimals, Int32 length, ASNA.QSys.Expo.Model.EditCo
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | numeric | input numeric value 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decmal positions 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decimal positions 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | field length 
 | [EditCodes](/reference/asna-qsys-expo/expo-model/edit-codes.html) | editCode | Edit Code 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | currencySymbol | currency symbol 
@@ -102,7 +102,7 @@ ApplyEditCode(ASNA.QSys.Expo.Model.EditCodes editCode, Int32 decimals, Int32 len
 | Type | Parameter name | Description
 | --- | --- | ---
 | [EditCodes](/reference/asna-qsys-expo/expo-model/edit-codes.html) | editCode | Edit Code 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decmal positions 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | field decimal positions 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | field length 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | inputString | input numeric value in a string 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | decimal point symbol 

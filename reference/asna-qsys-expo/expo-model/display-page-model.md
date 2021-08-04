@@ -27,6 +27,17 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 <br>
 
+### DisplayPageModel(  )
+
+Initializes a new instance of the DisplayPageModel class
+
+```cs
+DisplayPageModel(  );
+```
+
+
+<br>
+
 
 <br>
 <br>

@@ -24,7 +24,7 @@ Provides helper class to assist server configuration
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | [ConfigureDisplayPagesOptions](#configuredisplaypagesoptionsiservicecollection-iconfiguration)([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [IConfiguration]($$TODO-Microsoft.Extensions.Configuration.IConfiguration.html)) | Gets | the service collection
-| [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | [ConfigureDisplayPagesOptions](#configuredisplaypagesoptions*0iservicecollection-displaypagesoptions})([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html)) | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
+| [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | [ConfigureDisplayPagesOptions](#configuredisplaypagesoptionsiservicecollection-action{asna.qsys.expo.model.displaypagesoptions})([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html)) | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
 
 <br>
 <br>
@@ -54,7 +54,7 @@ the service collection
 <br>
 <br>
 
-### ConfigureDisplayPagesOptions([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html))
+### ConfigureDisplayPagesOptions([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html))
 
 Gets a ServiceCollection after registering DisplayPagesOptions
 
@@ -67,7 +67,7 @@ ConfigureDisplayPagesOptions(IServiceCollection services, Action{ASNA.QSys.Expo.
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | services | contract for collection of services description 
-| [DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html) | configure | DisplayPagesOptions action method 
+| [Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html) | configure | DisplayPagesOptions action method 
 
 #### Returns
 

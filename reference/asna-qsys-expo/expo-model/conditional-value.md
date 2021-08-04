@@ -45,8 +45,19 @@ The ConditionalValue for such Function Key specification would read:
 
 | Name |  Description 
 | --- | --- 
-| **ConditionalValue**(  ) | Initializes a new instance of the class ConditionalValue
-| **ConditionalValue**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values.
+| [ConditionalValue](#conditionalvalue)() | Initializes a new instance of the class ConditionalValue 
+| [ConditionalValue](#conditionalvaluestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the class ConditionalValue, using the condition and value given as initial values. 
+
+<br>
+
+### ConditionalValue(  )
+
+Initializes a new instance of the class ConditionalValue
+
+```cs
+ConditionalValue(  );
+```
+
 
 <br>
 

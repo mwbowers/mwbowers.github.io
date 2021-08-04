@@ -29,9 +29,9 @@ Defines ValuesAttribute class
 
 | Name |  Description 
 | --- | --- 
-| **ValuesAttribute**( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
-| **ValuesAttribute**( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided
-| **ValuesAttribute**( [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) ) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided
+| [ValuesAttribute](#valuesattributestring[])([String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided 
+| [ValuesAttribute](#valuesattributeint32[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the class ValuesAttribute with the initial valid values provided 
+| [ValuesAttribute](#valuesattributetype-object[])([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the class ValuesAttribute with the initial type and valid object values provided 
 
 <br>
 

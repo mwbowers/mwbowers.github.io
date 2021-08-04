@@ -12,10 +12,8 @@ Provides Data Conversion support
 
 ## Remarks
 
-Provides Data Conversion support
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
+Provides Field Data Conversion to and from [String](https://docs.microsoft.com/en-us/dotnet/api/system.string).
+Frequently used by the runtime to convert [Fixed types](/concepts/program-structure/qsys-fixedtypes.html) into .NET types.   
 <br>
 <br>
 

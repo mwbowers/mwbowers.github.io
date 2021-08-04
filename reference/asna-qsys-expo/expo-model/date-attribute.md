@@ -12,19 +12,26 @@ Provides Date Attribute (for Properties)
 
 ## Remarks
 
-Provides Date Attribute (for Properties)
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) as `Date`, Model properties can use this attribute.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example,
+
+```cs
+[Date(DateFormat = DateAttribute.DdsDateFormat.USA)]
+public DateTime SORDDATE { get; private set; } // ORDER DATE
+```
+
+Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Date`, with `"USA"` presentation `Date Format`, named `SORDDATE` on a particular Model Record.
 
 <br>
 <br>
 
 ## Properties
 
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
+| Type | Name | Description 
+| --- | --- | ---  
 | [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-")
 
 <br>
 <br>

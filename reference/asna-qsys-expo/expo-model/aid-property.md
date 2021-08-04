@@ -81,8 +81,19 @@ The class `AidProperty` allows for processing such string attributes. It parses 
 
 | Name |  Description 
 | --- | --- 
-| **AidProperty**(  ) | Initializes a new AidProperty instance
-| **AidProperty**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions)
+| [AidProperty](#aidproperty)() | Initializes a new AidProperty instance 
+| [AidProperty](#aidpropertystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new AidProperty instance to the values found in aidString collection (semi-colon separated conditional key expressions) 
+
+<br>
+
+### AidProperty(  )
+
+Initializes a new AidProperty instance
+
+```cs
+AidProperty(  );
+```
+
 
 <br>
 

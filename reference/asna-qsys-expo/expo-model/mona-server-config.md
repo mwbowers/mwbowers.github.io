@@ -23,8 +23,8 @@ Provides Mona-Server Configuration functionality
 
 | Name |  Description 
 | --- | --- 
-| **MonaServerConfig**( [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) ) | Initializes new instance of MonaServerConfig class
-| **MonaServerConfig**(  ) | Initializes new instance of MonaServerConfig class
+| [MonaServerConfig](#monaserverconfigimonaserverconfig)([IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html)) | Initializes new instance of MonaServerConfig class 
+| [MonaServerConfig](#monaserverconfig)() | Initializes new instance of MonaServerConfig class 
 
 <br>
 
@@ -41,6 +41,17 @@ MonaServerConfig( ASNA.QSys.Expo.Model.IMonaServerConfig i );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMonaServerConfig](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html) | i | initial configuration 
+
+<br>
+
+### MonaServerConfig(  )
+
+Initializes new instance of MonaServerConfig class
+
+```cs
+MonaServerConfig(  );
+```
+
 
 <br>
 
