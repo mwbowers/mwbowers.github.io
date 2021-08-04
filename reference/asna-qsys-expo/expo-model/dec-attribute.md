@@ -12,9 +12,16 @@ Provides Decimal Attributes (for Properties)
 
 ## Remarks
 
-Provides Decimal Attributes (for Properties)
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixed-types) as `Dec`, Model properties can use this attribute.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example,
+
+```cs
+[Dec(9, 0)]
+public decimal SORDNUM { get; private set; } // ORDER NUMBER
+```
+
+Declares a read-only field of [Decimal Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Dec`, with length nine and zero decimal positions, named `SORDNUM` on a particular Model Record.
 
 <br>
 <br>
@@ -50,10 +57,10 @@ DecAttribute( Int32 length, Int32 decimals );
 
 ## Properties
 
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Decimals | Decimal positions | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Digits | Max Digits | 
+| Type | Name | Description 
+| --- | --- | ---  
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Decimals | Decimal positions
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Digits | Max Digits
 
 <br>
 <br>
