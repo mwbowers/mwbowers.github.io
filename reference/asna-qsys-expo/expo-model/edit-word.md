@@ -2,7 +2,8 @@
 title: EditWord Class
 ---
 
-Provides Displayfile field level keyword formatting for output-capable numeric fields.
+Provides methods to format numeric values according to [IBM i Edit Word](https://www.ibm.com/docs/en/i/7.2?topic=fields-edit-words)
+
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -12,9 +13,7 @@ Provides Displayfile field level keyword formatting for output-capable numeric f
 
 ## Remarks
 
-Provides Displayfile field level keyword formatting for output-capable numeric fields.
-
-[//]: # ($$TODO: Complete the Remarks section.)
+Provides support to give presentation to numeric fields according to [IBM i Edit Word](https://www.ibm.com/docs/en/i/7.2?topic=words-summary-coding-rules-edit) formatting rules. 
 
 <br>
 <br>

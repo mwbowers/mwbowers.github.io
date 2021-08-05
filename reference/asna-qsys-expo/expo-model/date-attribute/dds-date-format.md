@@ -2,7 +2,7 @@
 title: DdsDateFormat Enumeration
 ---
 
-Specifies the type of Date format
+Define code names for the supported presentation Date Formattings.
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -12,9 +12,7 @@ Specifies the type of Date format
 
 ## Remarks
 
-Specifies the type of Date format
-
-[//]: # ($$TODO: Complete the Remarks section.)
+The `DdsDateFormat Enumeration` provides equivalent codes to [IBM i date formats](https://www.ibm.com/docs/en/i/7.2?topic=values-date) that govern how a Date should be presented to the user.
 
 <br>
 <br>

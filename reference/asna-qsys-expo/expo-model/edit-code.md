@@ -2,7 +2,7 @@
 title: EditCode Class
 ---
 
-Provides methods to format numeric values according to Edit Code
+Provides methods to format numeric values according to [Edit Codes](/reference/asna-qsys-expo/expo-model/edit-codes.html)
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -11,10 +11,7 @@ Provides methods to format numeric values according to Edit Code
 <br>
 
 ## Remarks
-
-Provides methods to format numeric values according to Edit Code
-
-[//]: # ($$TODO: Complete the Remarks section.)
+The formatting rules are equivalent to those supported by [IBM i Edit Codes](https://www.ibm.com/docs/en/i/7.2?topic=codes-summary-edit)
 
 <br>
 <br>

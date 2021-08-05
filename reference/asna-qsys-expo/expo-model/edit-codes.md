@@ -2,7 +2,7 @@
 title: EditCodes Enumeration
 ---
 
-Provides Displayfile field level keyword formatting for output-capable numeric fields.
+Defines the equivalent code-names for the supported [IBM i Edit Codes](https://www.ibm.com/docs/en/i/7.2?topic=codes-summary-edit)
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -12,9 +12,16 @@ Provides Displayfile field level keyword formatting for output-capable numeric f
 
 ## Remarks
 
-Provides Displayfile field level keyword formatting for output-capable numeric fields.
+C# Syntax for Enumerations provides a descriptive naming, such that when referencing a member, the name of the enumeration is included in the syntax.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, to refer to Edit Code "D", you would enter:
+
+```cs
+EditCodes.D
+```
+Notes: 
+1. The `enum` member does not need the word `EditCode`, that is, to avoid duplication, like EditCodes.EditCode_D (or something like it).
+2. C# names do not allow the first letter to be a numeric value, then for Edit Code '3', the named is spelled out as EditCodes.Three.
 
 <br>
 <br>

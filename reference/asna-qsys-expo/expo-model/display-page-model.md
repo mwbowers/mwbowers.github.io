@@ -2,7 +2,7 @@
 title: DisplayPageModel Class
 ---
 
-Defines a specialized PageModel class to control the DdsFile tag helper and all its Display record formats.
+Defines a specialized YellowPageModel class to provide support for fields in Records with data from the DataSet
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -12,9 +12,43 @@ Defines a specialized PageModel class to control the DdsFile tag helper and all 
 
 ## Remarks
 
-Defines a specialized PageModel class to control the DdsFile tag helper and all its Display record formats.
+Record Model classes have a member instance of DisplayPageModel to provide support for data in the DataSet.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, the following `CUSTREC` Record Model definition:
+
+```cs
+public class CUSTREC_Model : RecordModel
+{
+    [Char(10)]
+    private string CSRREC
+    {
+        get => CursorLocationFormatName;
+        set { }
+    }
+
+    [Char(10)]
+    private string CSRFLD
+    {
+        get => CursorLocationFieldName;
+        set { }
+    }
+```
+
+Is the implementation for the Legacy DDS [RTNCSRLOC](https://www.ibm.com/docs/en/i/7.2?topic=80-rtncsrloc-return-cursor-location-keyword-display-files). 
+
+With the following Legacy DDS Record specification lines:
+
+```
+0076.00     A          R CUSTREC                                                       080401
+.
+.
+.
+0083.00     A                                      RTNCSRLOC(&CSRREC &CSRFLD)          080401
+```
+
+Which specify that the location of the Cursor (*record-name* and *row-and-column* values) should be copied to hidden fields in `CUSTREC` Model class, named `CSRREC` and `CSRFLD`.
+
+When a Page is posted, the DataSet is loaded with feedback information (from posted data) and the instance of DisplayPageModel is updated, such that when the Logic Project's fields (such as `CSRREC` and `CSRFLD`) get populated, they will have the updated values from the recent user interaction.
 
 <br>
 <br>
@@ -44,18 +78,18 @@ DisplayPageModel(  );
 
 ## Properties
 
-| Type | Name | Description | Indexer
+| Type | Name | Description 
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFieldName | Gets a value that indicating the name of field where the Cursor was last located on the Page. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFormatName | Gets a value that indicating the name of the format where the Cursor was last located on the Page. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InputDataAvailable | Provides a mechanism to override the input data available state. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarDate | Gets the current day formatted as *DATE | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarSystemName | Gets the System Name formatted as *SYSTEMDATE | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarTime | Gets the current time formatted as *TIME | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarUserName | Gets thg=e User Name formatted as *USER | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UserDataIsInvalid | Gets a value indicating if the data entered by user is valid. | 
-| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | ValidationErrorList | Gets a collection of validation error messages | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ValidationErrorsFound | Gets a value indicating the existence of validation errors. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFieldName | Gets a value that indicating the name of field where the Cursor was last located on the Page. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFormatName | Gets a value that indicating the name of the format where the Cursor was last located on the Page.  
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InputDataAvailable | Provides a mechanism to override the input data available state.  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarDate | Gets the current day formatted as *DATE  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarSystemName | Gets the System Name formatted as *SYSTEMDATE  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarTime | Gets the current time formatted as *TIME  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StarUserName | Gets thg=e User Name formatted as *USER  
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UserDataIsInvalid | Gets a value indicating if the data entered by user is valid.  
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | ValidationErrorList | Gets a collection of validation error messages.  
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ValidationErrorsFound | Gets a value indicating the existence of validation errors.  
 
 <br>
 <br>
