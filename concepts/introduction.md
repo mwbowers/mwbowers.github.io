@@ -64,4 +64,4 @@ To facilitate the building of migrated applications, Monarch Base is made availa
   - ASNA.QSys.Expo.Model.dll
   - ASNA.QSys.Expo.Tags.dll
 
-The NuGet packages are available at [GitHub](https://github.com/orgs/asnaqsys/packages)
+[Here](/manuals/get-asna-qsys/get-asna-qsys-overview.html) is the information on getting the NuGet packages.
