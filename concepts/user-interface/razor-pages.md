@@ -1,5 +1,5 @@
 ---
-title: ASP.NET 5 Websites
+title: Razor Pages
 ---
 
 ## Razor Pages

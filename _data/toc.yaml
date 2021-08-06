@@ -59,8 +59,8 @@ Concepts:
   - sectiontitle: User Interface
     sectionpath: /concepts/user-interface/ui-overview.html
     section:
-    - title: Websites
-      path: /concepts/user-interface/asp-net-websites.html
+    - title: Razor Pages
+      path: /concepts/user-interface/razor-pages.html
     - title: Expo Display Pages
       path: /concepts/user-interface/qsys-expo-display-pages.html
     - title: Expo Web Content
