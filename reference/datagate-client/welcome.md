@@ -1,25 +1,38 @@
 ---
-title: ASNA DataGate Component Suite 16.0 Help
-
-Id: welcome
-TocParent: -1
-TocOrder: 0
-
+title: ASNA DataGate Client
 ---
 
-The ASNA DataGate Component Suite 16.0 provides managed-code access to data and objects residing in DataGate for IBM i and DataGate for Windows (formerly, Acceler8DB) databases. Leveraging the strength of the .NET Framework, DCS for Visual Studio 2019 programs can be created using any .NET development language, including ASNA Visual RPG, Visual Basic, C#, and others. Data access mechanisms in DCS for Visual Studio 2019 support and enhance the System.Data namespace, including the DataSet model, while maintaining traditional DataGate record-level characteristics.
 
-DCS for Visual Studio 2019 provides all of the same interfaces used by the Visual RPG compiler. The same powerful database engine used by Visual RPG is fully under your control, for use in any .NET language. Visual RPG for Visual Studio 2019 remains the language of choice for creating programs which access DataGate databases. However, with DCS for Visual Studio 2019, Visual Basic programmers and others can access data with nearly the same efficiency. Likewise, Visual RPG programmers will appreciate DCS for its object management capabilities.
-## In the DataGate Component Suite Documentation
+The DataGate Client class library is a set of classes, interfaces, and value types that provides access to DataGate functionality and is designed to be the foundation on which DataGate Database applications, components, and controls are built.
 
-[Programmer's Guide](reference-main.html) 
+## Namespaces
+The **ASNA DataGate <span>assembly</span>** contains 4 Namespaces that support the ability for client-side database access.
 
-An introduction to using DataGate Component Suite as well as the basic topics for getting started; such as connecting to/from a database, managing database connections, and accessing a file. 
+| Namespace | Description |
+| ---- | ---- |
+| [ASNA.DataGate.Client](datagate-client-namespace.html) | The primary Namespace used by client applications. Contains the most fundamental classes for accessing database server resources. |
+| [ASNA.DataGate.Common](datagate-common-namespace.html) | Contains the common classes for accessing database server resources. |
+| [ASNA.DataGate.DataLink](datagate-data-link-namespace.html) | Contains the fundamental classes for accessing data. |
+| [ASNA.DataGate.Providers](datagate-providers-namespace.html) | Contains essential classes for supplying additional parameters for the **AdgConnection** Class. |
 
-[Reference](reference-main.html) 
 
-An introduction to the classes, interfaces, and value types that are included in the ASNA DataGate Component Suite. This library provides access to DataGate Client functionality and is designed to be the foundation on which DataGate Database applications, components, and controls are built.
+## Exceptions
+The class library documentation lists the exceptions that each member throws along with a description of the condition under which it is thrown. 
 
-[Samples and Tutorials](samplesand-tutorials-main.html) 
+## Thread Safety
+All public static members (methods, properties, fields, and events) within the DataGate Client support concurrent access within a multithreaded environment. Therefore, any DataGate Client static member can be simultaneously invoked from two threads without encountering race conditions, deadlocks, or crashes.
 
-Contains the current Samples and Tutorials to assist you with using DataGate Component Suite.
+For all classes and structures in DataGate Client, check the Thread Safety section in the Reference documentation to determine whether it is thread safe. If you want to use a class that is not thread-safe in a multithreaded environment you must wrap an instance of the class with code that supplies the necessary synchronization constructs. 
+
+## Functionality
+This model depicts an overview of the DataGate Client classes that are used for each function displayed below. 
+
+[Database Access](adg-connection-class.html)
+![](images/database-access.bmp) 
+
+[Stored Procedure Call](as400program-class.html)
+![](images/stored_procedure_call.bmp) 
+
+[File Access](file-adapter-class.html)
+![](images/file-access.bmp)
+

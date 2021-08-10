@@ -39,7 +39,7 @@ ASNA.QSys Application Life-Cycle logic uses the `Session ID` to find the WebJob 
 > Job start: Initially, there will not be any `Session ID` and when the first Request comes into the Web Server, the Web Server will start a Session, instance a new Job, remember the Job in the newly created Session, instances the Entry Point Program (according to MyJob class) and starts executing the Program.
 
 ## Monarch Display Page Application Architecture
-Just as we have discussed how **ASP.NET 5 Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/asp-net-websites), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
+Just as we have discussed how **ASP.NET 5 Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/razor-pages), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
 
 ![Monarch Display Page Architecture](images/qsys-display-page-architecture.png)
 

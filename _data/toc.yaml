@@ -59,8 +59,8 @@ Concepts:
   - sectiontitle: User Interface
     sectionpath: /concepts/user-interface/ui-overview.html
     section:
-    - title: Websites
-      path: /concepts/user-interface/asp-net-websites.html
+    - title: Razor Pages
+      path: /concepts/user-interface/razor-pages.html
     - title: Expo Display Pages
       path: /concepts/user-interface/qsys-expo-display-pages.html
     - title: Expo Web Content
@@ -186,6 +186,54 @@ Manuals:
 - sectiontitle: ASNA Manuals
   sectionpath: /manuals/manuals-overview.html
   section:
+  - sectiontitle: DataGate
+    sectionpath: /manuals/datagate/datagate-overview.html
+    section:
+    - sectiontitle: Programmers Guide
+      sectionpath: /manuals/datagate/programmers-guide/programmers-guide-main.html
+      section:
+      - sectiontitle: Introduction
+        sectionpath: /manuals/datagate/programmers-guide/introduction-main.html
+        section:
+        - title: ASNA DataGate Component Suite for Visual Studio .NET
+          path: /manuals/datagate/programmers-guide/datagate-component-suite-overview.html
+        - title: Accessing the DCS Assembly
+          path: /manuals/datagate/programmers-guide/accessing_the-dcs-assembly.html
+      - sectiontitle: Connecting To/From a Database
+        sectionpath: /manuals/datagate/programmers-guide/connectingtoa-database-main.html
+        section:
+        - title: Connecting to a Database Using a Database Name
+          path: /manuals/datagate/programmers-guide/connectingtoa-database.html
+        - title: Managing Database Connections
+          path: /manuals/datagate/programmers-guide/managing-database-connections.html
+        - title: Database Name Handling
+          path: /manuals/datagate/programmers-guide/database-name-handling.html
+        - title: Disconnecting From a Database
+          path: /manuals/datagate/programmers-guide/disconnectingfroma-database.html
+      - sectiontitle: Accessing a File
+        sectionpath: /manuals/datagate/programmers-guide/accessing-afile-main.html
+        section:
+        - title: Accessing a File Using the FileAdapter Class
+          path: /manuals/datagate/programmers-guide/usingthe-file-adapter-class.html
+        - title: Database File Records and AdgDataSet
+          path: /manuals/datagate/programmers-guide/database-file-recordsand-adg-dataset.html
+        - title: Reading and Writing to Database Files
+          path: /manuals/datagate/programmers-guide/readingand-writingto-database-files.html
+        - title: Efficient File Access
+          path: /manuals/datagate/programmers-guide/efficient-file-access.html
+        - title: Verifying Results with Exception Handling
+          path: /manuals/datagate/programmers-guide/verifying-resultswith-exception-handling.html
+        - title: Render-in-Process Options
+          path: /manuals/datagate/programmers-guide/setting-renderas-proc.html
+      - sectiontitle: DCS for Visual Studio 2019 Tutorials
+        sectionpath: /manuals/datagate/programmers-guide/tutorials-main.html
+        section:
+        - title: Calling Stored Procedures
+          path: /manuals/datagate/programmers-guide/calling-stored-procedures.html
+      - title: Error Handling
+        path: /manuals/datagate/programmers-guide/error-handling.html
+    - title: DataGate on SQL Server
+      path: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
   - sectiontitle: Monarch Base
     section:
     - title: Getting AsnaQSys Packages
@@ -204,1272 +252,1151 @@ Manuals:
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
-  - sectiontitle: DataGate
-    sectionpath: /manuals/datagate/datagate-overview.html
-    section:
-    - sectiontitle: DataGate on SQL Server
-      sectionpath: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
-      section:
-      - title: TBD        
 
 ##
 Reference:
 - sectiontitle: Framework Reference
   sectionpath: /reference/reference-overview.html
   section:
-  - sectiontitle: DataGate Client
+  - sectiontitle: Asna.Qsys.DataGate.Client
     sectionpath: /reference/datagate-client/welcome.html
     section:
-    - sectiontitle: Programmers Guide
-      sectionpath: /reference/datagate-client/programmers-guide-main.html
+    - sectiontitle: ASNA.DataGate.Client Namespace
+      sectionpath: /reference/datagate-client/datagate-client-namespace.html
       section:
-      - sectiontitle: Introduction
-        sectionpath: /reference/datagate-client/introduction-main.html
+      - sectiontitle: ASNA.DataGate.Client Classes
+        sectionpath: /reference/datagate-client/asna-datagate-client-classes.html
         section:
-        - title: ASNA DataGate Component Suite for Visual Studio .NET
-          path: /reference/datagate-client/datagate-component-suite-overview.html
-        - title: Accessing the DCS Assembly
-          path: /reference/datagate-client/accessing_the-dcs-assembly.html
-      - sectiontitle: Connecting To/From a Database
-        sectionpath: /reference/datagate-client/connectingtoa-database-main.html
-        section:
-        - title: Connecting to a Database Using a Database Name
-          path: /reference/datagate-client/connectingtoa-database.html
-        - title: Managing Database Connections
-          path: /reference/datagate-client/managing-database-connections.html
-        - title: Database Name Handling
-          path: /reference/datagate-client/database-name-handling.html
-        - title: Disconnecting From a Database
-          path: /reference/datagate-client/disconnectingfroma-database.html
-      - sectiontitle: Accessing a File
-        sectionpath: /reference/datagate-client/accessing-afile-main.html
-        section:
-        - title: Accessing a File Using the FileAdapter Class
-          path: /reference/datagate-client/usingthe-file-adapter-class.html
-        - title: Database File Records and AdgDataSet
-          path: /reference/datagate-client/database-file-recordsand-adg-dataset.html
-        - title: Reading and Writing to Database Files
-          path: /reference/datagate-client/readingand-writingto-database-files.html
-        - title: Efficient File Access
-          path: /reference/datagate-client/efficient-file-access.html
-        - title: Verifying Results with Exception Handling
-          path: /reference/datagate-client/verifying-resultswith-exception-handling.html
-        - title: Render-in-Process Options
-          path: /reference/datagate-client/setting-renderas-proc.html
-      - sectiontitle: DCS for Visual Studio 2019 Tutorials
-        sectionpath: /reference/datagate-client/tutorials-main.html
-        section:
-        - title: Calling Stored Procedures
-          path: /reference/datagate-client/calling-stored-procedures.html
-      - title: Error Handling
-        path: /reference/datagate-client/error-handling.html
-    - sectiontitle: Reference
-      sectionpath: /reference/datagate-client/reference-main.html
-      section:
-      - title: ASNA DataGate Component Suite Model Overview
-        path: /reference/datagate-client/asna-datagate-assembly-overview.html
-      - sectiontitle: Class Library
-        sectionpath: /reference/datagate-client/class-library-main.html
-        section:
-        - sectiontitle: ASNA DataGate Assembly
-          sectionpath: /reference/datagate-client/datagate-assembly.html
+        - sectiontitle: AdgConnection Class
+          sectionpath: /reference/datagate-client/adg-connection-class.html
           section:
-          - sectiontitle: ASNA.DataGate.Client Namespace
-            sectionpath: /reference/datagate-client/datagate-client-namespace.html
+          - title: AdgConnection Members
+            path: /reference/datagate-client/adg-connection-members.html
+          - sectiontitle: AdgConnection Constructors
+            sectionpath: /reference/datagate-client/adg-connection-constructors-main.html
             section:
-            - sectiontitle: ASNA.DataGate.Client Classes
-              sectionpath: /reference/datagate-client/asna-datagate-client-classes.html
-              section:
-              - sectiontitle: AdgConnection Class
-                sectionpath: /reference/datagate-client/adg-connection-class.html
-                section:
-                - title: AdgConnection Members
-                  path: /reference/datagate-client/adg-connection-members.html
-                - sectiontitle: AdgConnection Constructors
-                  sectionpath: /reference/datagate-client/adg-connection-constructors-main.html
-                  section:
-                  - title: AdgConnection(SourceProfile)
-                    path: /reference/datagate-client/adg-connection-class-adg-connection-method1.html
-                  - title: AdgConnection(string)
-                    path: /reference/datagate-client/adg-connection-class-adg-connection-method2.html
-                - sectiontitle: AdgConnection Methods
-                  sectionpath: /reference/datagate-client/adg-connection-methods-main.html
-                  section:
-                  - sectiontitle: AdgConnection.BeginAutoTransaction Methods
-                    sectionpath: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method-main.html
-                    section:
-                    - title: AdgConnection.BeginAutoTransaction(String, String)
-                      path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method3.html
-                    - title: AdgConnection.BeginAutoTransaction(TransactionLevel, String)
-                      path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method1.html
-                    - title: AdgConnection.BeginAutoTransaction(TransactionLevel, String, String)
-                      path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method2.html
-                  - sectiontitle: AdgConnection.BeginTransaction Methods
-                    sectionpath: /reference/datagate-client/adg-connection-class-begin-transaction-method-main.html
-                    section:
-                    - title: AdgConnection.BeginTransaction(String)
-                      path: /reference/datagate-client/adg-connection-class-begin-transaction-method3.html
-                    - title: AdgConnection.BeginTransaction(TransactionLevel)
-                      path: /reference/datagate-client/adg-connection-class-begin-transaction-method1.html
-                    - title: AdgConnection.BeginTransaction(TransactionLevel, String)
-                      path: /reference/datagate-client/adg-connection-class-begin-transaction-method2.html
-                    - title: AdgConnection.BeginTransaction(TransactionLevel, String, String)
-                      path: /reference/datagate-client/adg-connection-class-begin-transaction-method4.html
-                  - title: AdgConnection.Clone Method
-                    path: /reference/datagate-client/adg-connection-class-clone-method.html
-                  - title: AdgConnection.Close Method
-                    path: /reference/datagate-client/adg-connection-class-close-method.html
-                  - title: AdgConnection.Dispose Method
-                    path: /reference/datagate-client/adg-connection-class-dispose-method.html
-                  - title: AdgConnection.Equals Method
-                    path: /reference/datagate-client/adg-connection-class-equals-method.html
-                  - title: AdgConnection.GetHashCode Metod
-                    path: /reference/datagate-client/adg-connection-class-get-hash-code-method.html
-                  - title: AdgConnection.op_Equality Method
-                    path: /reference/datagate-client/adg-connectionclassop-equality-method.html
-                  - title: AdgConnection.op_InEquality Method
-                    path: /reference/datagate-client/adg-connection-classop-inequality-method.html
-                  - title: AdgConnection.Open Method
-                    path: /reference/datagate-client/adg-connection-class-open-method.html
-                - sectiontitle: AdgConnection Properties
-                  sectionpath: /reference/datagate-client/adg-connection-properties-main.html
-                  section:
-                  - title: AdgConnection.CurrentUserLibl Property
-                    path: /reference/datagate-client/adg-connection-current-user-libl-property.html
-                  - title: AdgConnection.SourceProfile Property
-                    path: /reference/datagate-client/adg-connection-class-source-profile-property.html
-                  - title: AdgConnection.State Property
-                    path: /reference/datagate-client/adg-connection-class-state-property.html
-              - sectiontitle: IDataAreaClass
-                sectionpath: /reference/datagate-client/idataarea-class.html
-                section:
-                - sectiontitle: IDataarea Members
-                  sectionpath: /reference/datagate-client/idataarea-members.html
-                  section:
-                  - title: IDataArea.Length Method
-                    path: /reference/datagate-client/idataarea-class-length-property.html
-                  - title: IDataArea.InitialValue Method
-                    path: /reference/datagate-client/idataarea-class-initial-value-property.html
-                  - title: IDataArea.AppendParm Method
-                    path: /reference/datagate-client/idataarea-class-append-parm-method.html
-                  - title: IDataArea.Decimals Method
-                    path: /reference/datagate-client/idataarea-class-decimals-property.html
-                  - sectiontitle: IDataArea Change Methods
-                    sectionpath: /reference/datagate-client/idataarea-class-change-methods.html
-                    section:
-                    - title: IDataArea Change Method 1
-                      path: /reference/datagate-client/idataarea-class-change-method1.html
-                    - title: IDataArea Change Method 2
-                      path: /reference/datagate-client/idataarea-class-change-method2.html
-                    - title: IDataArea Change Method 3
-                      path: /reference/datagate-client/idataarea-class-change-method3.html
-                    - title: IDataArea Change Method 4
-                      path: /reference/datagate-client/idataarea-class-change-method4.html
-                    - title: IDataArea Change Method 5
-                      path: /reference/datagate-client/idataarea-class-change-method5.html
-                    - title: IDataArea Change Method 6
-                      path: /reference/datagate-client/idataarea-class-change-method6.html
-                  - sectiontitle: IDataArea.ObjectToParm Methods
-                    sectionpath: /reference/datagate-client/idataarea-class-object-to_parm-methods.html
-                    section:
-                    - title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type)
-                      path: /reference/datagate-client/idataarea-class-object-to_parm-method1.html
-                    - title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
-                      path: /reference/datagate-client/idataarea-class-object-to_parm-method2.html
-                    - title: IDataArea.ObjectToParm(System.Type, string)
-                      path: /reference/datagate-client/idataarea-class-object-to_parm-method3.html
-                    - title: IDataArea.ObjectToParm(System.Type, string, integer[])
-                      path: /reference/datagate-client/idataarea-class-object-to_parm-method4.html
-                  - sectiontitle: IDataArea.ParmToObject Methods
-                    sectionpath: /reference/datagate-client/idataarea-class-parm-to_object-methods.html
-                    section:
-                    - title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type)
-                      path: /reference/datagate-client/idataarea-class-parm-to_object-method1.html
-                    - title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
-                      path: /reference/datagate-client/idataarea-class-parm-to_object-method2.html
-                    - title: IDataArea.ParmToObject(System.Type, string)
-                      path: /reference/datagate-client/idataarea-class-parm-to_object-method3.html
-                    - title: IDataArea.ParmToObject(System.Type, string, integer[])
-                      path: /reference/datagate-client/idataarea-class-parm-to_object-method4.html
-              - sectiontitle: AdgDataSet Class
-                sectionpath: /reference/datagate-client/adg-dataset-class.html
-                section:
-                - title: AdgDataSet Members
-                  path: /reference/datagate-client/adg-dataset-members.html
-                - sectiontitle: AdgDataSet Constructors
-                  sectionpath: /reference/datagate-client/adg-dataset-class-constructors-main.html
-                  section:
-                  - title: AdgDataSet(serialization info, streaming context)
-                    path: /reference/datagate-client/adg-dataset-class-adg-dataset-constructor2.html
-                  - title: AdgDataSet(String)
-                    path: /reference/datagate-client/adg-dataset-class-adg-dataset-constructor1.html
-                - sectiontitle: AdgDataSet Methods
-                  sectionpath: /reference/datagate-client/adg-dataset-methods.html
-                  section:
-                  - title: AddPreparedRowAndSetActive
-                    path: /reference/datagate-client/adg-dataset-class-add-prepared-row-and-set-active-method.html
-                  - title: AdgDataSet.DeleteRow Method
-                    path: /reference/datagate-client/adg-dataset-class-delete-row-method.html
-                  - sectiontitle: AAdgDataSet.ddRow Methods
-                    sectionpath: /reference/datagate-client/adg-dataset-class-add-row-methods.html
-                    section:
-                    - title: AdgDataSet.AddRow(integer)
-                      path: /reference/datagate-client/adg-dataset-class-add-row-method1.html
-                    - title: AdgDataSet.AddRow(string)
-                      path: /reference/datagate-client/adg-dataset-class-add-row-method2.html
-                  - title: AdgDataSet.GetFormatIndex Method
-                    path: /reference/datagate-client/adg-dataset-class-get-format-index-method.html
-                  - title: AdgDataSet.GetFormatName Method
-                    path: /reference/datagate-client/adg-dataset-class-get-format-name-method.html
-                  - sectiontitle: AdgDataSet.GetFormatTable Methods
-                    sectionpath: /reference/datagate-client/adg-dataset-class-get-format-table-methods.html
-                    section:
-                    - title: AdgDataSet.GetFormatTable(integer)
-                      path: /reference/datagate-client/adg-dataset-class-get-format-table-method.html
-                    - title: AdgDataSet.GetFormatTable(String)
-                      path: /reference/datagate-client/adg-dataset-class-get-format-table-methodstring.html
-                  - title: AdgDataSet.Initialize Method
-                    path: /reference/datagate-client/adg-dataset-class-initialize-method.html
-                  - title: AdgDataSet.InitializeFormats Method
-                    path: /reference/datagate-client/adg-dataset-class-initialize-formats-method.html
-                  - sectiontitle: AdgDataSet.InsertRow Methods
-                    sectionpath: /reference/datagate-client/adg-dataset-class-insert-row-methods.html
-                    section:
-                    - title: AdgDataSet.InsertRow(integer, integer)
-                      path: /reference/datagate-client/adg-dataset-class-insert-row-method1.html
-                    - title: AdgDataSet.InsertRow(string, integer)
-                      path: /reference/datagate-client/adg-dataset-class-insert-row-method2.html
-                  - sectiontitle: AdgDataSet.NewKeyTable Methods
-                    sectionpath: /reference/datagate-client/adg-dataset-class-new-key-table-methods.html
-                    section:
-                    - title: AdgDataSet.NewKeyTable(string)
-                      path: /reference/datagate-client/adg-dataset-class-new-key-table-method1.html
-                    - title: AdgDataSet.NewKeyTable(integer)
-                      path: /reference/datagate-client/adg-dataset-class-new-key-table-method2.html
-                  - sectiontitle: AdgDataSet.PrepareRow Methods
-                    sectionpath: /reference/datagate-client/adg-dataset-class-prepare-row-method-main.html
-                    section:
-                    - title: AdgDataSet.PrepareRow(integer)
-                      path: /reference/datagate-client/adg-dataset-class-prepare-row-method1.html
-                    - title: AdgDataSet.PrepareRow(string)
-                      path: /reference/datagate-client/adg-dataset-class-prepare-row-method2.html
-                    - title: AdgDataSet.PrepareRow(string, System.Data.DataRow)
-                      path: /reference/datagate-client/adg-dataset-class-prepare-row-method3.html
-                  - sectiontitle: AdgDataSet.SetActive Methods
-                    sectionpath: /reference/datagate-client/adg-dataset-class-set-active-methods.html
-                    section:
-                    - title: AdgDataSet.SetActive(integer,integer)
-                      path: /reference/datagate-client/adg-dataset-class-set-active-method1.html
-                    - title: SetActive(string,integer)
-                      path: /reference/datagate-client/adg-dataset-class-set-active-method2.html
-                - sectiontitle: AdgDataSet Properties
-                  sectionpath: /reference/datagate-client/adg-dataset-properties.html
-                  section:
-                  - title: AdgDataSet.ActiveRow Property
-                    path: /reference/datagate-client/adg-dataset-class-active-row-property.html
-                  - title: AdgDataSet.CurrentFormatIndex Property
-                    path: /reference/datagate-client/adg-dataset-class-current-format-index-property.html
-                  - title: AdgDataSet.CurrentFormatName Property
-                    path: /reference/datagate-client/adg-dataset-class-current-format-name-property.html
-                  - title: AdgDataSet.FormatIDs Property
-                    path: /reference/datagate-client/adg-dataset-class-formatids-property.html
-                  - title: AdgDataSet.Formats Property
-                    path: /reference/datagate-client/adg-dataset-class-formats-property.html
-              - sectiontitle: AdgFactory Class
-                sectionpath: /reference/datagate-client/adg-factory-class.html
-                section:
-                - title: AdgFactory Members
-                  path: /reference/datagate-client/adg-factory-members.html
-                - sectiontitle: AdgFactory Methods
-                  sectionpath: /reference/datagate-client/adg-factory-methods.html
-                  section:
-                  - title: AdgFactory.NewDirectory Method
-                    path: /reference/datagate-client/adg-factory-class-new-directory-method.html
-                  - title: AdgFactory.NewFile Method
-                    path: /reference/datagate-client/adg-factory-class-new-file-method.html
-                  - title: AdgFactory.NewMember Method
-                    path: /reference/datagate-client/adg-factory-class-new-member-method.html
-                  - sectiontitle: AdgFactory.ReadXml Methods
-                    sectionpath: /reference/datagate-client/adg-factory-class-read-xml-methods.html
-                    section:
-                    - title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions)
-                      path: /reference/datagate-client/adg-factory-class-read-xml-method1.html
-                    - title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
-                      path: /reference/datagate-client/adg-factory-class-read-xml-method2.html
-                    - title: ReadXml(AdgConnection, string, AdgObjectTypes, string, System.Xml.XmlReader, XmlOptions)
-                      path: /reference/datagate-client/adg-factory-class-read-xml-method3.html
-                    - title: ReadXml(AdgConnection, string, AdgObjectTypes, string, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
-                      path: /reference/datagate-client/adg-factory-class-read-xml-method4.html
-                  - sectiontitle: AdgFactory.NewDataArea Methods
-                    sectionpath: /reference/datagate-client/adg-factory-class-new-dataarea-methods.html
-                    section:
-                    - title: AdgFactory.NewDataArea Method
-                      path: /reference/datagate-client/adg-factory-class-new-dataarea-method1.html
-                    - title: AdgFactory.NewDataArea Method
-                      path: /reference/datagate-client/adg-factory-class-new-dataarea-method2.html
-                  - title: AdgFactory.NewLibraryList Method
-                    path: /reference/datagate-client/adg-factory-class-new-library-list-method.html
-              - sectiontitle: AdgKeyTable Class
-                sectionpath: /reference/datagate-client/adg-key-table-class.html
-                section:
-                - title: AdgKeyTable Members
-                  path: /reference/datagate-client/adg-key-table-members.html
-                - sectiontitle: AdgKeyTable Constructors
-                  sectionpath: /reference/datagate-client/adg-key-table-adg-key-table-constructors-main.html
-                  section:
-                  - title: AdgKeyTable(System.Data.DataTable)
-                    path: /reference/datagate-client/adg-key-table-class-adg-key-table-constructor.html
-                - sectiontitle: AdgKeyTable Properties
-                  sectionpath: /reference/datagate-client/adg-key-table-properties.html
-                  section:
-                  - title: AdgKeyTable.DataTable Property
-                    path: /reference/datagate-client/adg-key-table-class-data-table-property.html
-                  - title: AdgKeyTable.KeyPartCount Property
-                    path: /reference/datagate-client/adg-key-table-class-key-part-count-property.html
-                  - title: AdgKeyTable.Row Property
-                    path: /reference/datagate-client/adg-key-table-class-row-property.html
-              - title: AdgTable Class
-                path: /reference/datagate-client/adg-table-class.html
-              - sectiontitle: As400Program Class
-                sectionpath: /reference/datagate-client/as400program-class.html
-                section:
-                - title: As400Program Members
-                  path: /reference/datagate-client/as400program-members.html
-                - sectiontitle: As400Program Constructors
-                  sectionpath: /reference/datagate-client/as400program-class-as400program-method-main.html
-                  section:
-                  - title: As400Program()
-                    path: /reference/datagate-client/as400program-class-as400program-method1.html
-                  - title: As400Program(AdgConnection)
-                    path: /reference/datagate-client/as400program-class-as400program-method2.html
-                  - title: As400Program(AdgConnection, string)
-                    path: /reference/datagate-client/as400program-class-as400program-method3.html
-                - sectiontitle: As400Program Methods
-                  sectionpath: /reference/datagate-client/as400program-methods-main.html
-                  section:
-                  - title: As400Program.AppendParm Method
-                    path: /reference/datagate-client/as400program-class-append-parm-method.html
-                  - title: As400Program.AppendParms Method
-                    path: /reference/datagate-client/as400program-class-append-parms-method.html
-                  - title: As400Program.Dispose Method
-                    path: /reference/datagate-client/as400program-class-dispose-method.html
-                  - title: As400Program.Execute Method
-                    path: /reference/datagate-client/as400program-class-execute-method.html
-                  - title: As400Program.GetParmByName Method
-                    path: /reference/datagate-client/as400program-class-get-parm-byName-method.html
-                  - sectiontitle: As400Program.ObjectToParm Methods
-                    sectionpath: /reference/datagate-client/as400program-class-object-to_parm-method-main.html
-                    section:
-                    - title: As400Program.ObjectToParm(ProgParm, object)
-                      path: /reference/datagate-client/as400program-class-object-to_parm-method4.html
-                    - title: As400Program.ObjectToParm(ProgParm, object, int)
-                      path: /reference/datagate-client/as400program-class-object-to_parm-method1.html
-                    - title: As400Program.ObjectToParm(object, string)
-                      path: /reference/datagate-client/as400program-class-object-to_parm-method3.html
-                    - title: As400Program.ObjectToParm(object, string, int[])
-                      path: /reference/datagate-client/as400program-class-object-to_parm-method2.html
-                  - sectiontitle: As400Program.ParmToObject Methods
-                    sectionpath: /reference/datagate-client/as400program-class-parm-to_object-method-main.html
-                    section:
-                    - title: As400Program.ParmToObject(ProgParm, System.Type)
-                      path: /reference/datagate-client/as400program-class-parm-to_object-method3.html
-                    - title: As400Program.ParmToObject(ProgParm, System.Type, integer)
-                      path: /reference/datagate-client/as400program-class-parm-to_object-method1.html
-                    - title: As400Program.ParmToObject(System.Type, string)
-                      path: /reference/datagate-client/as400program-class-parm-to_object-method4.html
-                    - title: As400Program.ParmToObject(System.Type, string, integer[])
-                      path: /reference/datagate-client/as400program-class-parm-to_object-method2.html
-                  - title: As400Program.SetParmsZeroValue Method
-                    path: /reference/datagate-client/as400program-class-set-parms-zero-value-method.html
-                - sectiontitle: As400Program Properties
-                  sectionpath: /reference/datagate-client/as400program-properties-main.html
-                  section:
-                  - title: As400Program.Connection Property
-                    path: /reference/datagate-client/as400program-class-connection-property.html
-                  - title: As400Program.Parameters Property
-                    path: /reference/datagate-client/as400program-class-parameters-property.html
-                  - title: As400Program.ProgramPath Method
-                    path: /reference/datagate-client/as400program-class-program-path-property.html
-              - sectiontitle: AuthorityEntry Class
-                sectionpath: /reference/datagate-client/authority-entry-class.html
-                section:
-                - title: AuthorityEntry Members
-                  path: /reference/datagate-client/authority-entry-members.html
-                - sectiontitle: AuthorityEntry.Constructors
-                  sectionpath: /reference/datagate-client/authority-entry-class-authority-entry-constructors.html
-                  section:
-                  - title: AuthorityEntry()
-                    path: /reference/datagate-client/authority-entry-class-authority-entry-constructor1.html
-                  - title: AuthorityEntry(string)
-                    path: /reference/datagate-client/authority-entry-class-authority-entry-constructor2.html
-                  - title: AuthorityEntry(string,AuthorityTypes)
-                    path: /reference/datagate-client/authority-entry-class-authority-entry-constructor3.html
-                  - title: AuthorityEntry(string, AuthorityTypes, boolean)
-                    path: /reference/datagate-client/authority-entry-class-authority-entry-constructor4.html
-                - sectiontitle: AuthorityEntry Fields
-                  sectionpath: /reference/datagate-client/authority-entry-fields.html
-                  section:
-                  - title: AuthorityEntry.AuthorityType Field
-                    path: /reference/datagate-client/authority-entry-class-authority-type-field.html
-                  - title: AuthorityEntry.IsGroupAccount Field
-                    path: /reference/datagate-client/authority-entry-class-isgroup-account-field.html
-                  - title: AuthorityEntry.Username Field
-                    path: /reference/datagate-client/authority-entry-class-username-field.html
-              - sectiontitle: Dependent Class
-                sectionpath: /reference/datagate-client/dependent-class.html
-                section:
-                - title: Dependent Members
-                  path: /reference/datagate-client/dependent-members.html
-                - sectiontitle: Dependent Properties
-                  sectionpath: /reference/datagate-client/dependent-properties.html
-                  section:
-                  - title: Dependent.AdgObjectType Property
-                    path: /reference/datagate-client/dependent-class-adg-object-type-property.html
-                  - title: Dependent.DependentType Property
-                    path: /reference/datagate-client/dependent-class-dependent-type-property.html
-                  - title: Dependent.PathName Property
-                    path: /reference/datagate-client/dependent-class-path-name-property.html
-              - sectiontitle: FileAdapter Class
-                sectionpath: /reference/datagate-client/file-adapter-class.html
-                section:
-                - title: FileAdapter Members
-                  path: /reference/datagate-client/file-adapter-members.html
-                - sectiontitle: FileAdapter Constructors
-                  sectionpath: /reference/datagate-client/file-adapter-class-file-adapter-method-main.html
-                  section:
-                  - title: FileAdapter.FileAdapter Constructor ()
-                    path: /reference/datagate-client/file-adapter-class-file-adapter-method1.html
-                  - title: FileAdapter(AdgConnection)
-                    path: /reference/datagate-client/file-adapter-class-file-adapter-method2.html
-                  - title: FileAdapter(AdgConnection, string)
-                    path: /reference/datagate-client/file-adapter-class-file-adapter-method3.html
-                  - title: FileAdapter(AdgConnection, string, string)
-                    path: /reference/datagate-client/file-adapter-class-file-adapter-method4.html
-                - sectiontitle: FileAdapter Methods
-                  sectionpath: /reference/datagate-client/file-adapter-methods.html
-                  section:
-                  - title: FileAdapter.AddRecord Method
-                    path: /reference/datagate-client/file-adapter-class-add-record-method.html
-                  - title: FileAdapter.ChangeCurrent Method
-                    path: /reference/datagate-client/file-adapter-class-change-current-method.html
-                  - title: FileAdapter.ChangeRRN Method
-                    path: /reference/datagate-client/file-adapter-class-change-rrn-method.html
-                  - title: FileAdapter.Close Method
-                    path: /reference/datagate-client/file-adapter-class-close-method.html
-                  - title: FileAdapter.DeleteAllRecords Method
-                    path: /reference/datagate-client/file-adapter-class-delete-all-records-method.html
-                  - title: FileAdapter.DeleteCurrent Method
-                    path: /reference/datagate-client/file-adapter-class-delete-current-method.html
-                  - title: FileAdapter.DeleteKey Method
-                    path: /reference/datagate-client/file-adapter-class-delete-key-method.html
-                  - title: FileAdapter.DeleteRange Method
-                    path: /reference/datagate-client/file-adapter-class-delete-range-method.html
-                  - title: FileAdapter.DeleteRRN Method
-                    path: /reference/datagate-client/file-adapter-class-delete-rrn-method.html
-                  - title: FileAdapter.Dispose Method
-                    path: /reference/datagate-client/file-adapter-class-dispose-method.html
-                  - title: FileAdapter.Finalize Method
-                    path: /reference/datagate-client/file-adapter-class-finalize-method.html
-                  - title: FileAdapter.ForceEOD Method
-                    path: /reference/datagate-client/file-adapter-class-force-eod-method.html
-                  - title: FileAdapter.GetPrintProperties Method
-                    path: /reference/datagate-client/file-adapter-class-get-print-properties-method.html
-                  - title: FileAdapter.Open Method
-                    path: /reference/datagate-client/file-adapter-class-open-method.html
-                  - title: FileAdapter.OpenNewAdgDataSet Method
-                    path: /reference/datagate-client/file-adapter-class-open-new-adg-dataset-method.html
-                  - title: FileAdapter.OpenSimpleQuery Method
-                    path: /reference/datagate-client/file-adapter-class-open-simple-query-method.html
-                  - title: FileAdapter.ReadRandomKey Method
-                    path: /reference/datagate-client/file-adapter-class-read-random-key-method.html
-                  - title: FileAdapter.ReadRandomRRN Method
-                    path: /reference/datagate-client/file-adapter-class-read-random-rrn-method.html
-                  - title: FileAdapter.ReadRange Method
-                    path: /reference/datagate-client/file-adapter-class-read-range-method.html
-                  - title: FileAdapter.ReadSequential Method
-                    path: /reference/datagate-client/file-adapter-class-read-sequential-method.html
-                  - title: FileAdapter.ReadSequentialEqual Method
-                    path: /reference/datagate-client/file-adapter-class-read-sequential-equal-method.html
-                  - title: FileAdapter.ReleaseCurrent Method
-                    path: /reference/datagate-client/file-adapter-class-release-current-method.html
-                  - title: FileAdapter.ReleaseRRN Method
-                    path: /reference/datagate-client/file-adapter-class-release-rrn-method.html
-                  - title: FileAdapter.ResetFormat Method
-                    path: /reference/datagate-client/file-adapter-class-reset-format-method.html
-                  - title: FileAdapter.ResetPrintAttr Method
-                    path: /reference/datagate-client/file-adapter-class-reset-print-attr-method.html
-                  - title: FileAdapter.ReuseRRN Method
-                    path: /reference/datagate-client/file-adapter-class-reUse-rrn-method.html
-                  - title: FileAdapter.SeekKey Method
-                    path: /reference/datagate-client/file-adapter-class-seek-key-method.html
-                  - title: FileAdapter.SeekRange Method
-                    path: /reference/datagate-client/file-adapter-class-seek-range-method.html
-                  - title: FileAdapter.SeekRRN Method
-                    path: /reference/datagate-client/file-adapter-class-seek-rrn-method.html
-                  - title: FileAdapter.SetFormat Method
-                    path: /reference/datagate-client/file-adapter-class-set-format-method.html
-                - sectiontitle: FileAdapter Properties
-                  sectionpath: /reference/datagate-client/file-adapter-properties.html
-                  section:
-                  - title: FileAdapter.AccessMode Property
-                    path: /reference/datagate-client/file-adapter-class-access-mode-property.html
-                  - title: FileAdapter.Connection Property
-                    path: /reference/datagate-client/file-adapter-class-connection-property.html
-                  - title: FileAdapter.CurrentFormatIndex Property
-                    path: /reference/datagate-client/file-adapter-class-current-format-index-property.html
-                  - title: FileAdapter.ExactSeek Property
-                    path: /reference/datagate-client/file-adapter-class-exact-seek-property.html
-                  - title: FileAdapter.ExtendedResults Property
-                    path: /reference/datagate-client/file-adapter-class-extended-results-property.html
-                  - title: FileAdapter.FileLength Property
-                    path: /reference/datagate-client/file-adapter-class-file-length-property.html
-                  - title: FileAdapter.FileName Property
-                    path: /reference/datagate-client/file-adapter-class-file-name-property.html
-                  - title: FileAdapter.FormatRequested Property
-                    path: /reference/datagate-client/file-adapter-class-format-requested-property.html
-                  - title: FileAdapter.MemberName Property
-                    path: /reference/datagate-client/file-adapter-class-member-name-property.html
-                  - title: FileAdapter.OpenAttributes Property
-                    path: /reference/datagate-client/file-adapter-class-open-attributes-property.html
-                  - title: FileAdapter.RecordCount Property
-                    path: /reference/datagate-client/file-adapter-class-record-count-property.html
-                  - title: FileAdapter.RRN Property
-                    path: /reference/datagate-client/file-adapter-class-rrn-property.html
-                  - title: FileAdapter.Status Property
-                    path: /reference/datagate-client/file-adapter-class-status-property.html
-              - sectiontitle: IAdgObject Class
-                sectionpath: /reference/datagate-client/iadg-object-class.html
-                section:
-                - title: IAdgObject Members
-                  path: /reference/datagate-client/iadg-object-members.html
-                - sectiontitle: IAdgObject Methods
-                  sectionpath: /reference/datagate-client/iadg-object-methods.html
-                  section:
-                  - title: IAdgObject.Create Method
-                    path: /reference/datagate-client/iadg-object-class-create-method.html
-                  - title: IAdgObject.Duplicate Method
-                    path: /reference/datagate-client/iadg-object-class-duplicate-method.html
-                  - title: IAdgObject.GrantAuthority Method
-                    path: /reference/datagate-client/iadg-object-class-grant-authority-method.html
-                  - title: IAdgObject.Lock Method
-                    path: /reference/datagate-client/iadg-object-class-lock-method.html
-                  - title: IAdgObject.MoveTo Method
-                    path: /reference/datagate-client/iadg-object-class-move-to_method.html
-                  - title: IAdgObject.ReadBases Method
-                    path: /reference/datagate-client/iadg-object-class-read-bases-method.html
-                  - title: IAdgObject.Remove Method
-                    path: /reference/datagate-client/iadg-object-class-remove-method.html
-                  - title: IAdgObject.Rename Method
-                    path: /reference/datagate-client/iadg-object-class-rename-method.html
-                  - title: IAdgObject.RevokeAuthority Method
-                    path: /reference/datagate-client/iadg-object-class-revoke-authority-method.html
-                  - title: IAdgObject.ToString Method
-                    path: /reference/datagate-client/iadg-object-class-toString-method.html
-                  - title: IAdgObject.Unlock Method
-                    path: /reference/datagate-client/iadg-object-class-unlock-method.html
-                  - title: IAdgObject.WriteBases Method
-                    path: /reference/datagate-client/iadg-object-class-write-bases-method.html
-                  - sectiontitle: IAdgObject.WriteXml Methods
-                    sectionpath: /reference/datagate-client/iadg-object-class-write-xml-methods.html
-                    section:
-                    - title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
-                      path: /reference/datagate-client/iadg-object-class-write-xml-method1.html
-                    - title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler)
-                      path: /reference/datagate-client/iadg-object-class-write-xml-method2.html
-                - sectiontitle: IAdgObject Properties
-                  sectionpath: /reference/datagate-client/iadg-object-properties.html
-                  section:
-                  - title: IAdgObject.AdgObjectType Property
-                    path: /reference/datagate-client/iadg-object-class-adg-object-type-property.html
-                  - title: IAdgObject.AdgSubType Property
-                    path: /reference/datagate-client/iadg-object-class-adg-subtype-property.html
-                  - title: IAdgObject.AuthorityEntries Property
-                    path: /reference/datagate-client/iadg-object-class-authority-entries-property.html
-                  - title: IAdgObject.Bases Property
-                    path: /reference/datagate-client/iadg-object-class-bases-property.html
-                  - title: IAdgObject.DateCreated Property
-                    path: /reference/datagate-client/iadg-object-class-date-created-property.html
-                  - title: IAdgObject.DateModified Property
-                    path: /reference/datagate-client/iadg-object-class-date-modified-property.html
-                  - title: IAdgObject.DateReferenced Property
-                    path: /reference/datagate-client/iadg-object-class-date-referenced-property.html
-                  - title: IAdgObject.Dependents Property
-                    path: /reference/datagate-client/iadg-object-class-dependents-property.html
-                  - title: IAdgObject.IsSystemObject Property
-                    path: /reference/datagate-client/iadg-object-class-isSystem-object-property.html
-                  - title: IAdgObject.ObjectID Property
-                    path: /reference/datagate-client/iadg-object-class-object-idproperty.html
-                  - title: IAdgObject.Owner Property
-                    path: /reference/datagate-client/iadg-object-class-owner-property.html
-                  - title: IAdgObject.OwnerIsGroup Property
-                    path: /reference/datagate-client/iadg-object-class-owner-isgroup-property.html
-                  - title: IAdgObject.ParentID Property
-                    path: /reference/datagate-client/iadg-object-class-parent-idproperty.html
-                  - title: IAdgObject.PrimaryGroup Property
-                    path: /reference/datagate-client/iadg-object-class-primary-group-property.html
-                  - title: IAdgObject.Schema Property
-                    path: /reference/datagate-client/iadg-object-class-schema-property.html
-                  - title: IAdgObject.SortByName Property
-                    path: /reference/datagate-client/iadg-object-class-sort-byName-property.html
-                  - title: IAdgObject.SortByNameCaseInsensitive Property
-                    path: /reference/datagate-client/iadg-object-class-sort-byName-case-insensitive-property.html
-                  - title: IAdgObject.Text Property
-                    path: /reference/datagate-client/iadg-object-class-text-property.html
-              - sectiontitle: IAdgTransaction Interface
-                sectionpath: /reference/datagate-client/iadg-transaction-class.html
-                section:
-                - title: IAdgTransaction Members
-                  path: /reference/datagate-client/iadg-transaction-members.html
-                - sectiontitle: IAdgTransaction Methods
-                  sectionpath: /reference/datagate-client/iadg-transaction-methods.html
-                  section:
-                  - sectiontitle: IAdgTransaction.Commit Methods
-                    sectionpath: /reference/datagate-client/iadg-transaction-class-commit-methods.html
-                    section:
-                    - title: IAdgTransaction.Commit Method()
-                      path: /reference/datagate-client/iadg-transaction-class-commit-method1.html
-                    - title: IAdgTransaction.Commit(string)
-                      path: /reference/datagate-client/iadg-transaction-class-commit-method2.html
-                  - title: IAdgTransaction.Rollback Method
-                    path: /reference/datagate-client/iadg-transaction-class-rollback-method.html
-                - sectiontitle: IAdgTransaction Properties
-                  sectionpath: /reference/datagate-client/iadg-transaction-properties.html
-                  section:
-                  - title: IAdgTransaction.Connection Property
-                    path: /reference/datagate-client/iadg-transaction-class-connection-property.html
-                  - title: IAdgTransaction.Name Property
-                    path: /reference/datagate-client/iadg-transaction-class-name-property.html
-                  - title: IAdgTransaction.TransactionLevel Property
-                    path: /reference/datagate-client/iadg-transaction-class-transaction-level-property.html
-              - sectiontitle: IDirectory Interface
-                sectionpath: /reference/datagate-client/idirectory-class.html
-                section:
-                - title: IDirectory Members
-                  path: /reference/datagate-client/idirectory-members.html
-                - sectiontitle: IDirectory Methods
-                  sectionpath: /reference/datagate-client/idirectory-methods.html
-                  section:
-                  - title: IDirectory.AttachRemoteDirectory Method
-                    path: /reference/datagate-client/idirectory-class-attach-remote-directory-method.html
-                  - title: IDirectory.CreateSubDirectory Method
-                    path: /reference/datagate-client/idirectory-class-create-subdirectory-method.html
-                  - title: IDirectory.Enumerate Method
-                    path: /reference/datagate-client/idirectory-class-enumerate-method.html
-                  - title: IDirectory.RepairObjects Method
-                    path: /reference/datagate-client/idirectory-class-repair-objects-method.html
-                - sectiontitle: IDirectory Properties
-                  sectionpath: /reference/datagate-client/idirectory-properties.html
-                  section:
-                  - title: IDirectory.ItemList Property
-                    path: /reference/datagate-client/idirectory-class-item-list-property.html
-                  - title: IDirectory.RemotePathName Property
-                    path: /reference/datagate-client/idirectory-class-remote-path-name-property.html
-              - sectiontitle: IFileObject Interface
-                sectionpath: /reference/datagate-client/ifile-object-class.html
-                section:
-                - title: IFileObject Members
-                  path: /reference/datagate-client/ifile-object-members.html
-                - sectiontitle: IFileObject Methods
-                  sectionpath: /reference/datagate-client/ifile-object-methods.html
-                  section:
-                  - title: IFileObject.Copy Method
-                    path: /reference/datagate-client/ifile-object-class-copy-method.html
-                  - title: IFileObject.GetAdgDataSet Method
-                    path: /reference/datagate-client/ifile-object-class-get-adg-dataset-method.html
-                  - title: IFileObject.InspectFile Method
-                    path: /reference/datagate-client/ifile-object-class-inspect-file-method.html
-                  - title: IFileObject.ReadCreationAttributes Method
-                    path: /reference/datagate-client/ifile-object-class-read-creation-attributes-method.html
-                  - title: IFileObject.ReadDefinition Method
-                    path: /reference/datagate-client/ifile-object-class-read-definition-method.html
-                  - title: IFileObject.RepairFile Method
-                    path: /reference/datagate-client/ifile-object-class-repair-file-method.html
-                  - title: IFileObject.WriteCreationAttributes Method
-                    path: /reference/datagate-client/ifile-object-class-write-creation-attributes-method.html
-                  - title: IFileObject.WriteDefinition Method
-                    path: /reference/datagate-client/ifile-object-class-write-definition-method.html
-                - sectiontitle: IFileObject Properties
-                  sectionpath: /reference/datagate-client/ifile-object-properties.html
-                  section:
-                  - title: IFileObject.MemberCount Property
-                    path: /reference/datagate-client/ifile-object-class-member-count-property.html
-                  - title: IFileObject.Members Property
-                    path: /reference/datagate-client/ifile-object-class-members-property.html
-              - sectiontitle: ILibraryList Interface
-                sectionpath: /reference/datagate-client/ilibrary-list-class.html
-                section:
-                - title: ILibraryList Members
-                  path: /reference/datagate-client/ilibrary-list-members.html
-                - sectiontitle: ILibraryList Methods
-                  sectionpath: /reference/datagate-client/ilibrary-list-methods.html
-                  section:
-                  - title: ILibraryList.AddEntry Method
-                    path: /reference/datagate-client/ilibrary-list-class-add-entry-method.html
-                  - title: ILibraryList.EnumerateCurrentSystem Method
-                    path: /reference/datagate-client/ilibrary-list-class-enumerate-current-system-method.html
-                  - title: ILibraryList.EnumerateCurrentUser Method
-                    path: /reference/datagate-client/ilibrary-list-class-enumerate-current-user-method.html
-                  - title: ILibraryList.RemoveEntry Method
-                    path: /reference/datagate-client/ilibrary-list-class-remove-entry-method.html
-                - sectiontitle: ILibraryList Members
-                  sectionpath: /reference/datagate-client/ilibrary-list-properties.html
-                  section:
-                  - title: ILibraryList.CurrentSystemLibs Property
-                    path: /reference/datagate-client/ilibrary-list-class-current-system-libs-property.html
-                  - title: ILibraryList.CurrentUserLibs Property
-                    path: /reference/datagate-client/ilibrary-list-class-current-user-libs-property.html
-                  - title: ILibraryList.SystemConfig Property
-                    path: /reference/datagate-client/ilibrary-list-class-system-config-property.html
-                  - title: ILibraryList.UserConfig Property
-                    path: /reference/datagate-client/ilibrary-list-class-user-config-property.html
-              - sectiontitle: IMember Interface
-                sectionpath: /reference/datagate-client/imember-class.html
-                section:
-                - title: IMember Members
-                  path: /reference/datagate-client/imember-members.html
-                - sectiontitle: IMember Methods
-                  sectionpath: /reference/datagate-client/imember-methods.html
-                  section:
-                  - title: IMember.Clear Method
-                    path: /reference/datagate-client/imember-class-clear-method.html
-                  - title: IMember.Initialize Method
-                    path: /reference/datagate-client/imember-class-initialize-method.html
-                - sectiontitle: IMember Properties
-                  sectionpath: /reference/datagate-client/imember-properties.html
-                  section:
-                  - title: IMember.ActiveRecords Property
-                    path: /reference/datagate-client/imember-class-active-records-property.html
-                  - title: IMember.DeletedRecords Property
-                    path: /reference/datagate-client/imember-class-deleted-records-property.html
-                  - title: IMember.Extension Property
-                    path: /reference/datagate-client/imember-class-extension-property.html
-              - sectiontitle: XmlInfoEventArgs Class
-                sectionpath: /reference/datagate-client/xml-info-event-args-class.html
-                section:
-                - title: XmlInfoEventArgs Members
-                  path: /reference/datagate-client/xml-info-event-args-members.html
-                - sectiontitle: XmlInfoEventArgs Fields
-                  sectionpath: /reference/datagate-client/xml-info-event-args-fields.html
-                  section:
-                  - title: XmlInfoEventArgs.Message Field
-                    path: /reference/datagate-client/xml-info-event-args-class-message-field.html
-                  - title: XmlInfoEventArgs.Type Field
-                    path: /reference/datagate-client/xml-info-event-args-class-type-field.html
-            - sectiontitle: ASNA.DataGate.Client Enumerations
-              sectionpath: /reference/datagate-client/datagate-client-enumerations.html
-              section:
-              - title: FileAdapter.AdapterStatus Enumeration
-                path: /reference/datagate-client/file-adapter-adapter-status-enumeration.html
-              - title: InitMemberOptions Enumeration
-                path: /reference/datagate-client/init-member-options-enumeration.html
-              - title: LiblPosition Enumeration
-                path: /reference/datagate-client/libl-position-enumeration.html
-              - title: XmlInfoEventType Enumeration
-                path: /reference/datagate-client/xml-info-event-type-enumeration.html
-              - title: XmlOptions Enumeration
-                path: /reference/datagate-client/xml-options-enumeration.html
-          - sectiontitle: ASNA.DataGate.Common Namespace
-            sectionpath: /reference/datagate-client/datagate-common-namespace.html
+            - title: AdgConnection(SourceProfile)
+              path: /reference/datagate-client/adg-connection-class-adg-connection-method1.html
+            - title: AdgConnection(string)
+              path: /reference/datagate-client/adg-connection-class-adg-connection-method2.html
+          - sectiontitle: AdgConnection Methods
+            sectionpath: /reference/datagate-client/adg-connection-methods-main.html
             section:
-            - sectiontitle: ASNA.DataGate.Common Classes
-              sectionpath: /reference/datagate-client/asna-datagate-common-classes.html
+            - sectiontitle: AdgConnection.BeginAutoTransaction Methods
+              sectionpath: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method-main.html
               section:
-              - sectiontitle: dgException Class
-                sectionpath: /reference/datagate-client/dgexception-class.html
-                section:
-                - title: dgException Members
-                  path: /reference/datagate-client/dgexception-class-members.html
-                - sectiontitle: dgException Fields
-                  sectionpath: /reference/datagate-client/dgexception-class-fields-main.html
-                  section:
-                  - title: dgException.Error Field
-                    path: /reference/datagate-client/dgexception-class-error-field.html
-                  - title: dgException.ErrorClass Field
-                    path: /reference/datagate-client/dgexception-class-error-class-field.html
-                  - title: dgException.SystemError Field
-                    path: /reference/datagate-client/dgexception-class-system-error-field.html
-                  - title: dgException.Text Field
-                    path: /reference/datagate-client/dgexception-class-text-field.html
-                - sectiontitle: dgException Methods
-                  sectionpath: /reference/datagate-client/dgexception-class-methods-main.html
-                  section:
-                  - title: dgException.GetVerboseText Method
-                    path: /reference/datagate-client/dgexception-class-get-verbose-text-method.html
-                - sectiontitle: dgException Properties
-                  sectionpath: /reference/datagate-client/dgexception-class-properties-main.html
-                  section:
-                  - title: dgException.Message Property
-                    path: /reference/datagate-client/dgexception-class-message-property.html
-              - sectiontitle: FieldType Class
-                sectionpath: /reference/datagate-client/field-type-class.html
-                section:
-                - title: FieldType Members
-                  path: /reference/datagate-client/field-type-members.html
-                - sectiontitle: FieldType Methods
-                  sectionpath: /reference/datagate-client/field-type-methods.html
-                  section:
-                  - title: FieldType.NewBinary Method
-                    path: /reference/datagate-client/field-type-class-new-binary-method.html
-                  - title: FieldType.NewChar Method
-                    path: /reference/datagate-client/field-type-class-new-char-method.html
-                  - title: FieldType.NewDate Method
-                    path: /reference/datagate-client/field-type-class-new-date-method.html
-                  - title: FieldType.NewDBCS Method
-                    path: /reference/datagate-client/field-type-class-new-ddbc-method.html
-                  - title: FieldType.NewDontCare Method
-                    path: /reference/datagate-client/field-type-class-new-dont-care-method.html
-                  - title: FieldType.NewFloat Method
-                    path: /reference/datagate-client/field-type-class-new-float-method.html
-                  - title: FieldType.NewHex Method
-                    path: /reference/datagate-client/field-type-class-new-hex-method.html
-                  - title: FieldType.NewInteger Method
-                    path: /reference/datagate-client/field-type-class-new-integer-method.html
-                  - title: FieldType.NewPacked Method
-                    path: /reference/datagate-client/field-type-class-new-packed-method.html
-                  - title: FieldType.NewTime Method
-                    path: /reference/datagate-client/field-type-class-new-time-method.html
-                  - title: FieldType.NewTimeStamp Method
-                    path: /reference/datagate-client/field-type-class-new-time-stamp-method.html
-                  - title: FieldType.NewZoned Method
-                    path: /reference/datagate-client/field-type-class-new-zoned-method.html
-                - sectiontitle: FieldType Properties
-                  sectionpath: /reference/datagate-client/field-type-properties.html
-                  section:
-                  - title: FieldType.ByteLength Property
-                    path: /reference/datagate-client/field-type-class-byte-length-property.html
-                  - title: FieldType.DataType Property
-                    path: /reference/datagate-client/field-type-class-data-type-property.html
-                  - title: FieldType.DateTime Property
-                    path: /reference/datagate-client/field-type-class-date-time-property.html
-                  - title: FieldType.Dbcs Property
-                    path: /reference/datagate-client/field-type-class-dbcs-property.html
-                  - title: FieldType.Precision Property
-                    path: /reference/datagate-client/field-type-class-precision-property.html
-                  - title: FieldType.Scale Property
-                    path: /reference/datagate-client/field-type-class-scale-property.html
-            - sectiontitle: ASNA.DataGate.Common Enumerations
-              sectionpath: /reference/datagate-client/datagate-common-enumerations.html
+              - title: AdgConnection.BeginAutoTransaction(String, String)
+                path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method3.html
+              - title: AdgConnection.BeginAutoTransaction(TransactionLevel, String)
+                path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method1.html
+              - title: AdgConnection.BeginAutoTransaction(TransactionLevel, String, String)
+                path: /reference/datagate-client/adg-connection-class-begin-auto-transaction-method2.html
+            - sectiontitle: AdgConnection.BeginTransaction Methods
+              sectionpath: /reference/datagate-client/adg-connection-class-begin-transaction-method-main.html
               section:
-              - title: AccessMode Enumeration
-                path: /reference/datagate-client/access-mode-enumeration.html
-              - title: AccessResult Enumeration
-                path: /reference/datagate-client/access-result-enumeration.html
-              - title: AdgObjectTypes Enumeration
-                path: /reference/datagate-client/adg-object-types-enumeration.html
-              - title: AdgSubTypes Enumeration
-                path: /reference/datagate-client/adg-subtypes-enumeration.html
-              - title: AuthorityTypes Enumeration
-                path: /reference/datagate-client/authority-types-enumeration.html
-              - title: DataDirection Enumeration
-                path: /reference/datagate-client/data-direction-enumeration.html
-              - title: DataSetOptions Enumeration
-                path: /reference/datagate-client/dataset-options-enumeration.html
-              - title: DataTypes Enumeration
-                path: /reference/datagate-client/data-types-enumeration.html
-              - title: DateTimeFormat Enumeration
-                path: /reference/datagate-client/date-time-format-enumeration.html
-              - title: DbcsFormat Enumeration
-                path: /reference/datagate-client/dbcs-format-enumeration.html
-              - title: DependentTypes Enumeration
-                path: /reference/datagate-client/dependent-types-enumeration.html
-              - title: dgErrorClass Enumeration
-                path: /reference/datagate-client/dgerror-class-enumeration.html
-              - title: dgErrorNumber Enumeration
-                path: /reference/datagate-client/dgerror-number-enumeration.html
-              - title: DuplicateOptions Enumeration
-                path: /reference/datagate-client/duplicate-options-enumeration.html
-              - title: FileLocks Enumeration
-                path: /reference/datagate-client/file-locks-enumeration.html
-              - title: InspectFileOutput Enumeration
-                path: /reference/datagate-client/inspect-file-output-enumeration.html
-              - title: InspectFileParts Enumeration
-                path: /reference/datagate-client/inspect-file-parts-enumeration.html
-              - title: LockRequest Enumeration
-                path: /reference/datagate-client/lock-request-enumeration.html
-              - title: KeyUsages Enumeration
-                path: /reference/datagate-client/key-usages-enumeration.html
-              - title: PaperOrientation Enumeration
-                path: /reference/datagate-client/paper-orientation-enumeration.html
-              - title: PasswordType Enumeration
-                path: /reference/datagate-client/password-type-enumeration.html
-              - title: PrintDuplex Enumeration
-                path: /reference/datagate-client/print-duplex-enumeration.html
-              - title: PrintQuality Enumeration
-                path: /reference/datagate-client/print-quality-enumeration.html
-              - title: RangeFirst Enumeration
-                path: /reference/datagate-client/range-first-enumeration.html
-              - title: PrintTrueType Enumeration
-                path: /reference/datagate-client/print-true-type-enumeration.html
-              - title: RangeLast Enumeration
-                path: /reference/datagate-client/range-last-enumeration.html
-              - title: RangeMode Enumeration
-                path: /reference/datagate-client/range-mode-enumeration.html
-              - title: ReadEqualMode Enumeration
-                path: /reference/datagate-client/read-equal-mode-enumeration.html
-              - title: ReadRandomMode Enumeration
-                path: /reference/datagate-client/read-random-mode-enumeration.html
-              - title: ReadSequentialMode Enumeration
-                path: /reference/datagate-client/read-sequential-mode-enumeration.html
-              - title: RepairOptions Enumeration
-                path: /reference/datagate-client/repair-options-enumeration.html
-              - title: SeekMode Enumeration
-                path: /reference/datagate-client/seek-mode-enumeration.html
-              - title: ShareTypes Enumeration
-                path: /reference/datagate-client/share-types-enumeration.html
-              - title: TransactionLevel Enumeration
-                path: /reference/datagate-client/transaction-level-enumeration.html
-              - title: WaitOptions Enumeration
-                path: /reference/datagate-client/wait-options-enumeration.html
-          - sectiontitle: ASNA.DataGate.DataLink Namespace
-            sectionpath: /reference/datagate-client/datagate-data-link-namespace.html
+              - title: AdgConnection.BeginTransaction(String)
+                path: /reference/datagate-client/adg-connection-class-begin-transaction-method3.html
+              - title: AdgConnection.BeginTransaction(TransactionLevel)
+                path: /reference/datagate-client/adg-connection-class-begin-transaction-method1.html
+              - title: AdgConnection.BeginTransaction(TransactionLevel, String)
+                path: /reference/datagate-client/adg-connection-class-begin-transaction-method2.html
+              - title: AdgConnection.BeginTransaction(TransactionLevel, String, String)
+                path: /reference/datagate-client/adg-connection-class-begin-transaction-method4.html
+            - title: AdgConnection.Clone Method
+              path: /reference/datagate-client/adg-connection-class-clone-method.html
+            - title: AdgConnection.Close Method
+              path: /reference/datagate-client/adg-connection-class-close-method.html
+            - title: AdgConnection.Dispose Method
+              path: /reference/datagate-client/adg-connection-class-dispose-method.html
+            - title: AdgConnection.Equals Method
+              path: /reference/datagate-client/adg-connection-class-equals-method.html
+            - title: AdgConnection.GetHashCode Metod
+              path: /reference/datagate-client/adg-connection-class-get-hash-code-method.html
+            - title: AdgConnection.op_Equality Method
+              path: /reference/datagate-client/adg-connectionclassop-equality-method.html
+            - title: AdgConnection.op_InEquality Method
+              path: /reference/datagate-client/adg-connection-classop-inequality-method.html
+            - title: AdgConnection.Open Method
+              path: /reference/datagate-client/adg-connection-class-open-method.html
+          - sectiontitle: AdgConnection Properties
+            sectionpath: /reference/datagate-client/adg-connection-properties-main.html
             section:
-            - sectiontitle: ASNA.DataGate.DataLink Classes
-              sectionpath: /reference/datagate-client/asna-datagate-data-link-classes.html
-              section:
-              - sectiontitle: ProgParmClass
-                sectionpath: /reference/datagate-client/prog-parm-class.html
-                section:
-                - title: ProgParm Members
-                  path: /reference/datagate-client/prog-parm-members.html
-                - sectiontitle: ProgParm.ProgParm Constructors
-                  sectionpath: /reference/datagate-client/prog-parm-class-prog-parm-method-main.html
-                  section:
-                  - title: ProgParm(ProgParmType, DataDirection)
-                    path: /reference/datagate-client/prog-parm-class-prog-parm-method1.html
-                  - title: ProgParm(StructureType, DataDirection)
-                    path: /reference/datagate-client/prog-parm-class-prog-parm-method2.html
-              - sectiontitle: ProgParmType Class
-                sectionpath: /reference/datagate-client/prog-parm-type-class.html
-                section:
-                - title: ProgParmType Members
-                  path: /reference/datagate-client/prog-parm-type-members.html
-                - sectiontitle: ProgParmType Constructors
-                  sectionpath: /reference/datagate-client/prog-parm-type-constructors-main.html
-                  section:
-                  - title: ProgParmType(string, integer, FieldType)
-                    path: /reference/datagate-client/prog-parm-type-class-prog-parm-type-constructor.html
-              - sectiontitle: StructureType Class
-                sectionpath: /reference/datagate-client/structure-type-class.html
-                section:
-                - title: StructureType Members
-                  path: /reference/datagate-client/structure-type-members.html
-                - sectiontitle: StructureType Constructors
-                  sectionpath: /reference/datagate-client/structure-type-constructors-main.html
-                  section:
-                  - title: StructureType.StructureType(string, integer, object)
-                    path: /reference/datagate-client/structure-type-class-structure-type-constructor.html
-          - sectiontitle: ASNA.DataGate.Providers Namespace
-            sectionpath: /reference/datagate-client/datagate-providers-namespace.html
-            section:
-            - sectiontitle: ASNA.DataGate.Providers Classes
-              sectionpath: /reference/datagate-client/asna-datagate-providers-classes.html
-              section:
-              - sectiontitle: DatabaseAttributes Class
-                sectionpath: /reference/datagate-client/database-attribute-class.html
-                section:
-                - title: DatabaseAttributes Members
-                  path: /reference/datagate-client/database-attributes-members.html
-                - sectiontitle: DatabaseAttributes Constructors
-                  sectionpath: /reference/datagate-client/database-attributes-constructors.html
-                  section:
-                  - title: DatabaseAttributes.DatabaseAttributes()
-                    path: /reference/datagate-client/database-attributes-class-constructor1.html
-                - sectiontitle: DatabaseAttributes Fields
-                  sectionpath: /reference/datagate-client/database-attributes-fields.html
-                  section:
-                  - title: DatabaseAttributes.BusySeats Field
-                    path: /reference/datagate-client/database-attributes-class-busy-seats-field.html
-                  - title: DatabaseAttributes.Database Field
-                    path: /reference/datagate-client/database-attributes-class-database-field.html
-                  - title: DatabaseAttributes.Hardware Field
-                    path: /reference/datagate-client/database-attributes-class-hardware-field.html
-                  - title: DatabaseAttributes.OperatingSystem Field
-                    path: /reference/datagate-client/database-attributes-class-operating-system-field.html
-                  - title: DatabaseAttributes.OriginalLabel Field
-                    path: /reference/datagate-client/database-attributes-class-original-label-field.html
-                  - title: DatabaseAttributes.ProxyName Field
-                    path: /reference/datagate-client/database-attributes-class-proxy-name-field.html
-                  - title: DatabaseAttributes.ProxyVersion Field
-                    path: /reference/datagate-client/database-attributes-class-proxy-version-field.html
-                  - title: DatabaseAttributes.Secure Field
-                    path: /reference/datagate-client/database-attributes-class-secure-field.html
-                  - title: DatabaseAttributes.TotalSeats Field
-                    path: /reference/datagate-client/database-attributes-class-total-seats-field.html
-              - sectiontitle: DatabaseName Class
-                sectionpath: /reference/datagate-client/database-name-class.html
-                section:
-                - title: DatabaseName Members
-                  path: /reference/datagate-client/database-name-members.html
-                - sectiontitle: DatabaseName Constructors
-                  sectionpath: /reference/datagate-client/database-name-constructors.html
-                  section:
-                  - title: DatabaseName.DatabaseName()
-                    path: /reference/datagate-client/database-name-class-constructor1.html
-                - sectiontitle: DatabaseName Methods
-                  sectionpath: /reference/datagate-client/database-name-methods.html
-                  section:
-                  - title: DatabaseName.Deserialize Method
-                    path: /reference/datagate-client/database-name-class-deserialize-method.html
-                  - title: DatabaseName.FromSourceProfile Method
-                    path: /reference/datagate-client/database-name-class-from-source-profile-method.html
-                  - title: DatabaseName.GetNames Method
-                    path: /reference/datagate-client/database-name-class-get-names-method.html
-                  - title: DatabaseName.GetSourceProfiles Method
-                    path: /reference/datagate-client/database-name-class-get-source-profiles-method.html
-                  - title: DatabaseName.Register Method
-                    path: /reference/datagate-client/database-name-class-register-method.html
-                  - title: DatabaseName.Serialize Method
-                    path: /reference/datagate-client/database-name-class-serialize-method.html
-                  - sectiontitle: DatabaseName.ToSourceProfile Methods
-                    sectionpath: /reference/datagate-client/database-name-class-to_source-profile-methods.html
-                    section:
-                    - title: DatabaseName.ToSourceProfile(String)
-                      path: /reference/datagate-client/database-name-class-to_source-profile-method1.html
-                    - title: DatabaseName.ToSourceProfile(string, boolean)
-                      path: /reference/datagate-client/database-name-class-to_source-profile-method2.html
-                    - title: DatabaseName.ToSourceProfile(string, bool, bool)
-                      path: /reference/datagate-client/database-name-class-to_source-profile-method3.html
-                    - title: DatabaseName.ToSourceProfile(string, bool, bool, bool)
-                      path: /reference/datagate-client/database-name-class-to_source-profile-method4.html
-                  - title: DatabaseName.Unregister Method
-                    path: /reference/datagate-client/database-name-class-unregister-method.html
-              - sectiontitle: FileOpenAttr Class
-                sectionpath: /reference/datagate-client/file-open-attr-class.html
-                section:
-                - title: FileOpenAttr Members
-                  path: /reference/datagate-client/file-open-attr-class-members.html
-                - sectiontitle: FileOpenAttr Constructors
-                  sectionpath: /reference/datagate-client/file-open-attr-constructors.html
-                  section:
-                  - title: FileOpenAttr(string)
-                    path: /reference/datagate-client/file-open-attr-class-file-open-attr-constructor.html
-                - sectiontitle: FileOpenAttr Fields
-                  sectionpath: /reference/datagate-client/file-open-attr-fields.html
-                  section:
-                  - title: FileOpenAttr.OmitBlocking Field
-                    path: /reference/datagate-client/file-open-attr-class-omit-blocking-field.html
-                  - title: FileOpenAttr.OptimalBlockingFactor Field
-                    path: /reference/datagate-client/file-open-attr-class-optimal-blocking-factor-field.html
-                - sectiontitle: FileOpenAttr Properties
-                  sectionpath: /reference/datagate-client/file-open-attr-properties.html
-                  section:
-                  - title: FileOpenAttr.BlockingFactor Property
-                    path: /reference/datagate-client/file-open-attr-class-blocking-factor-property.html
-                  - title: FileOpenAttr.FileLocks Property
-                    path: /reference/datagate-client/file-open-attr-class-file-locks-property.html
-                  - title: FileOpenAttr.FormatIDs Property
-                    path: /reference/datagate-client/file-open-attr-class-formatids-property.html
-                  - title: FileOpenAttr.InhibitWrites Property
-                    path: /reference/datagate-client/file-open-attr-class-inhibit-write-property.html
-                  - title: FileOpenAttr.ShareTypes Property
-                    path: /reference/datagate-client/file-open-attr-class-share-types-property.html
-                  - title: FileOpenAttr.WaitForEOF Property
-                    path: /reference/datagate-client/file-open-attr-class-wait-for-eof-property.html
-                  - title: FileOpenAttr.WaitForFile Property
-                    path: /reference/datagate-client/file-open-attr-class-wait-for-file-property.html
-                  - title: FileOpenAttr.WaitForRecord Property
-                    path: /reference/datagate-client/file-open-attr-class-wait-for-record-property.html
-              - sectiontitle: IPrintProperties Interface
-                sectionpath: /reference/datagate-client/iprint-properties-class.html
-                section:
-                - title: IPrintProperties Members
-                  path: /reference/datagate-client/iprint-properties-members.html
-                - sectiontitle: IPrintProperties Methods
-                  sectionpath: /reference/datagate-client/iprint-properties-methods.html
-                  section:
-                  - title: IPrintProperties.GetBoundType Method
-                    path: /reference/datagate-client/iprint-properties-class-get-bound-type-method.html
-                  - title: IPrintProperties.GetTypedObject Method
-                    path: /reference/datagate-client/iprint-properties-class-get-typed-object-method.html
-                  - title: IPrintProperties.GetValue Method
-                    path: /reference/datagate-client/iprint-properties-class-get-value-method.html
-                  - title: IPrintProperties.SetValue Method
-                    path: /reference/datagate-client/iprint-properties-class-set-value-method.html
-              - sectiontitle: PrintDevAttr Class
-                sectionpath: /reference/datagate-client/print-dev-attr-class.html
-                section:
-                - title: PrintDevAttr Members
-                  path: /reference/datagate-client/print-dev-attr-members.html
-                - sectiontitle: PrintDevAttr Constructors
-                  sectionpath: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructors.html
-                  section:
-                  - title: PrintDevAttr()
-                    path: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructor.html
-                - sectiontitle: PrintDevAttr Methods
-                  sectionpath: /reference/datagate-client/print-dev-attr-methods.html
-                  section:
-                  - title: PrintDevAttr.ReadXml Method
-                    path: /reference/datagate-client/print-dev-attr-class-read-xml-method.html
-                  - title: PrintDevAttr.WriteXml Method
-                    path: /reference/datagate-client/print-dev-attr-class-write-xml-method.html
-                - sectiontitle: PrintDevAttr Properties
-                  sectionpath: /reference/datagate-client/print-dev-attr-properties.html
-                  section:
-                  - title: PrintDevAttr.Collate Property
-                    path: /reference/datagate-client/print-dev-attr-class-collate-property.html
-                  - title: PrintDevAttr.Color Property
-                    path: /reference/datagate-client/print-dev-attr-class-color-property.html
-                  - title: PrintDevAttr.Copies Property
-                    path: /reference/datagate-client/print-dev-attr-class-copies-property.html
-                  - title: PrintDevAttr.DefaultSource Property
-                    path: /reference/datagate-client/print-dev-attr-class-default-source-property.html
-                  - title: PrintDevAttr.Duplex Property
-                    path: /reference/datagate-client/print-dev-attr-class-duplex-property.html
-                  - title: PrintDevAttr.FormName Property
-                    path: /reference/datagate-client/print-dev-attr-class-form-name-property.html
-                  - title: PrintDevAttr.LeftMargin Property
-                    path: /reference/datagate-client/print-dev-attr-class-left-margin-property.html
-                  - title: PrintDevAttr.Length Property
-                    path: /reference/datagate-client/print-dev-attr-class-length-property.html
-                  - title: PrintDevAttr.Orientation Property
-                    path: /reference/datagate-client/print-dev-attr-class-orientation-property.html
-                  - title: PrintDevAttr.PrinterName Property
-                    path: /reference/datagate-client/print-dev-attr-class-printer-name-property.html
-                  - title: PrintDevAttr.Quality Property
-                    path: /reference/datagate-client/print-dev-attr-class-quality-property.html
-                  - title: PrintDevAttr.Scale Property
-                    path: /reference/datagate-client/print-dev-attr-class-scale-property.html
-                  - title: PrintDevAttr.Size Property
-                    path: /reference/datagate-client/print-dev-attr-class-size-property.html
-                  - title: PrintDevAttr.TopMargin Property
-                    path: /reference/datagate-client/print-dev-attr-class-top-margin-property.html
-                  - title: PrintDevAttr.TTOption Property
-                    path: /reference/datagate-client/print-dev-attr-classTTOption-property.html
-                  - title: PrintDevAttr.Width Property
-                    path: /reference/datagate-client/print-dev-attr-class-width-property.html
-                  - title: PrintDevAttr.YResolution Property
-                    path: /reference/datagate-client/print-dev-attr-class-yresolution-property.html
-              - sectiontitle: SourceProfile Class
-                sectionpath: /reference/datagate-client/source-profile-class.html
-                section:
-                - title: SourceProfile Members
-                  path: /reference/datagate-client/source-profile-members.html
-                - sectiontitle: SourceProfile Constructors
-                  sectionpath: /reference/datagate-client/source-profile-constructors-main.html
-                  section:
-                  - title: SourceProfile()
-                    path: /reference/datagate-client/source-profile-class-source-profile-constructor1.html
-                  - title: SourceProfile.SourceProfile Constructor(string)
-                    path: /reference/datagate-client/source-profile-class-source-profile-constructor2.html
-                  - title: SourceProfile(string, boolean)
-                    path: /reference/datagate-client/source-profile-class-source-profile-constructor3.html
-                  - title: SourceProfile(SourceProfile)
-                    path: /reference/datagate-client/source-profile-class-source-profile-constructor4.html
-                  - title: SourceProfile(string, SourceProfile)
-                    path: /reference/datagate-client/source-profile-class-source-profile-constructor5.html
-                - sectiontitle: SourceProfile Methods
-                  sectionpath: /reference/datagate-client/source-profile-methods-main.html
-                  section:
-                  - title: SourceProfile.Clone Method
-                    path: /reference/datagate-client/source-profile-class-clone-method.html
-                  - title: SourceProfile.Equals Method
-                    path: /reference/datagate-client/source-profile-class-equals-method.html
-                  - title: SourceProfile.GetHashCode Method
-                    path: /reference/datagate-client/source-profile-class-get-hash-code-method.html
-                  - title: SourceProfile.GetNames Method
-                    path: /reference/datagate-client/source-profile-class-get-names-method.html
-                  - title: SourceProfile.op_Equality Method
-                    path: /reference/datagate-client/source-profile-classop-equality-method.html
-                  - title: SourceProfile.op_InEquality Method
-                    path: /reference/datagate-client/source-profile-classop-inequality-method.html
-                  - title: SourceProfile.Register Method
-                    path: /reference/datagate-client/source-profile-class-register-method.html
-                  - title: SourceProfile.Unregister Method
-                    path: /reference/datagate-client/source-profile-class-unregister-method.html
-                - sectiontitle: SourceProfile Properties
-                  sectionpath: /reference/datagate-client/source-profile-properties-main.html
-                  section:
-                  - title: SourceProfile.DatabaseName Property
-                    path: /reference/datagate-client/source-profile-class-database-name-property.html
-                  - title: SourceProfile.InitialLibl Property
-                    path: /reference/datagate-client/source-profile-class-initial-libl-property.html
-                  - title: SourceProfile.Label Property
-                    path: /reference/datagate-client/source-profile-class-label-property.html
-                  - title: SourceProfile.Password Property
-                    path: /reference/datagate-client/source-profile-class-password-property.html
-                  - title: SourceProfile.PasswordType Property
-                    path: /reference/datagate-client/source-profile-class-password-type-property.html
-                  - title: SourceProfile.PlatformAttribute Property
-                    path: /reference/datagate-client/source-profile-class-platform-attribute-property.html
-                  - title: SourceProfile.PoolingTimeout Property
-                    path: /reference/datagate-client/source-profile-class-pooling-timeout-property.html
-                  - title: SourceProfile.Port Property
-                    path: /reference/datagate-client/source-profile-class-port-property.html
-                  - title: SourceProfile.Qualifier Property
-                    path: /reference/datagate-client/source-profile-class-qualifier-property.html
-                  - title: SourceProfile.Server Property
-                    path: /reference/datagate-client/source-profile-class-server-property.html
-                  - title: SourceProfile.Text Property
-                    path: /reference/datagate-client/source-profile-class-text-property.html
-                  - title: SourceProfile.User Property
-                    path: /reference/datagate-client/source-profile-class-user-property.html
-                - sectiontitle: SourceProfile Fields
-                  sectionpath: /reference/datagate-client/source-profile-fields-main.html
-                  section:
-                  - title: MaxSystemLibl Field
-                    path: /reference/datagate-client/max-system-libl-enumeration.html
-                  - title: MaxUserLibl Field
-                    path: /reference/datagate-client/max-user-libl-enumeration.html
-    - sectiontitle: Samples and Tutorials
-      sectionpath: /reference/datagate-client/samplesand-tutorials-main.html
-      section:
-      - sectiontitle: DCS for Visual Studio 2019 Samples
-        sectionpath: /reference/datagate-client/samples-main.html
-        section:
-        - title: AdgAutoTransaction.AdgAutoTransaction Constructor(ASNA.DataGate.Providers.AdgAutoTransactionProfile)
-          path: /reference/datagate-client/sample-syntax-and-examples.html
-        - sectiontitle: DCS for Visual Studio 2019 Samples
-          sectionpath: /reference/datagate-client/samples-csharp-main.html
+            - title: AdgConnection.CurrentUserLibl Property
+              path: /reference/datagate-client/adg-connection-current-user-libl-property.html
+            - title: AdgConnection.SourceProfile Property
+              path: /reference/datagate-client/adg-connection-class-source-profile-property.html
+            - title: AdgConnection.State Property
+              path: /reference/datagate-client/adg-connection-class-state-property.html
+        - sectiontitle: IDataAreaClass
+          sectionpath: /reference/datagate-client/idataarea-class.html
           section:
-          - title: C# AddSourceProfile Sample
-            path: /reference/datagate-client/samples-csharp-add-source-profile.html
-          - title: C# Call_400_Pgm Sample
-            path: /reference/datagate-client/samples-csharp-call-400-pgm.html
-          - title: C# AddSourceProfile Sample
-            path: /reference/datagate-client/samples-csharp-call400-pgm.html
-          - title: C# Customer Maintenance Sample
-            path: /reference/datagate-client/samples-csharp-customer-maintenance.html
-          - title: C# MultiFormatFiles Sample
-            path: /reference/datagate-client/samples-csharp-multi-format-files.html
-          - title: C# MultiUserSimulator Sample
-            path: /reference/datagate-client/samples-csharp-multi-user-simulator.html
-          - title: C# SeekRange Sample
-            path: /reference/datagate-client/samples-csharp-seek-range.html
-          - title: C# SeekRange2 Sample
-            path: /reference/datagate-client/samples-csharp-seek-range2.html
-          - title: C# Simple Datagrid Sample
-            path: /reference/datagate-client/samples-csharp-simple-datagrid.html
-        - sectiontitle: DCS for Visual Studio 2019 Samples
-          sectionpath: /reference/datagate-client/samples-vb-main.html
+          - sectiontitle: IDataarea Members
+            sectionpath: /reference/datagate-client/idataarea-members.html
+            section:
+            - title: IDataArea.Length Method
+              path: /reference/datagate-client/idataarea-class-length-property.html
+            - title: IDataArea.InitialValue Method
+              path: /reference/datagate-client/idataarea-class-initial-value-property.html
+            - title: IDataArea.AppendParm Method
+              path: /reference/datagate-client/idataarea-class-append-parm-method.html
+            - title: IDataArea.Decimals Method
+              path: /reference/datagate-client/idataarea-class-decimals-property.html
+            - sectiontitle: IDataArea Change Methods
+              sectionpath: /reference/datagate-client/idataarea-class-change-methods.html
+              section:
+              - title: IDataArea Change Method 1
+                path: /reference/datagate-client/idataarea-class-change-method1.html
+              - title: IDataArea Change Method 2
+                path: /reference/datagate-client/idataarea-class-change-method2.html
+              - title: IDataArea Change Method 3
+                path: /reference/datagate-client/idataarea-class-change-method3.html
+              - title: IDataArea Change Method 4
+                path: /reference/datagate-client/idataarea-class-change-method4.html
+              - title: IDataArea Change Method 5
+                path: /reference/datagate-client/idataarea-class-change-method5.html
+              - title: IDataArea Change Method 6
+                path: /reference/datagate-client/idataarea-class-change-method6.html
+            - sectiontitle: IDataArea.ObjectToParm Methods
+              sectionpath: /reference/datagate-client/idataarea-class-object-to_parm-methods.html
+              section:
+              - title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type)
+                path: /reference/datagate-client/idataarea-class-object-to_parm-method1.html
+              - title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
+                path: /reference/datagate-client/idataarea-class-object-to_parm-method2.html
+              - title: IDataArea.ObjectToParm(System.Type, string)
+                path: /reference/datagate-client/idataarea-class-object-to_parm-method3.html
+              - title: IDataArea.ObjectToParm(System.Type, string, integer[])
+                path: /reference/datagate-client/idataarea-class-object-to_parm-method4.html
+            - sectiontitle: IDataArea.ParmToObject Methods
+              sectionpath: /reference/datagate-client/idataarea-class-parm-to_object-methods.html
+              section:
+              - title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type)
+                path: /reference/datagate-client/idataarea-class-parm-to_object-method1.html
+              - title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
+                path: /reference/datagate-client/idataarea-class-parm-to_object-method2.html
+              - title: IDataArea.ParmToObject(System.Type, string)
+                path: /reference/datagate-client/idataarea-class-parm-to_object-method3.html
+              - title: IDataArea.ParmToObject(System.Type, string, integer[])
+                path: /reference/datagate-client/idataarea-class-parm-to_object-method4.html
+        - sectiontitle: AdgDataSet Class
+          sectionpath: /reference/datagate-client/adg-dataset-class.html
           section:
-          - title: VB AddSourceProfile Sample
-            path: /reference/datagate-client/samples-vb-add-source-profile.html
-          - title: VB Call_400_Pgm Sample
-            path: /reference/datagate-client/samples-vb-call400-pgm.html
-          - title: VB Customer Maintenance Sample
-            path: /reference/datagate-client/samples-vb-customer-maintenance.html
-          - title: VB Simple Datagrid Sample
-            path: /reference/datagate-client/samples-vb-simple-datagrid.html
-    - sectiontitle: Whats New in ASNA DataGate Component Suite for Visual Studio
-      sectionpath: /reference/datagate-client/whats-new-main.html
-      section:
-      - title: New Classes
-        path: /reference/datagate-client/whats-new-classes.html
-      - sectiontitle: New Delegates
-        sectionpath: /reference/datagate-client/whats-new-delegates.html
+          - title: AdgDataSet Members
+            path: /reference/datagate-client/adg-dataset-members.html
+          - sectiontitle: AdgDataSet Constructors
+            sectionpath: /reference/datagate-client/adg-dataset-class-constructors-main.html
+            section:
+            - title: AdgDataSet(serialization info, streaming context)
+              path: /reference/datagate-client/adg-dataset-class-adg-dataset-constructor2.html
+            - title: AdgDataSet(String)
+              path: /reference/datagate-client/adg-dataset-class-adg-dataset-constructor1.html
+          - sectiontitle: AdgDataSet Methods
+            sectionpath: /reference/datagate-client/adg-dataset-methods.html
+            section:
+            - title: AddPreparedRowAndSetActive
+              path: /reference/datagate-client/adg-dataset-class-add-prepared-row-and-set-active-method.html
+            - title: AdgDataSet.DeleteRow Method
+              path: /reference/datagate-client/adg-dataset-class-delete-row-method.html
+            - sectiontitle: AAdgDataSet.ddRow Methods
+              sectionpath: /reference/datagate-client/adg-dataset-class-add-row-methods.html
+              section:
+              - title: AdgDataSet.AddRow(integer)
+                path: /reference/datagate-client/adg-dataset-class-add-row-method1.html
+              - title: AdgDataSet.AddRow(string)
+                path: /reference/datagate-client/adg-dataset-class-add-row-method2.html
+            - title: AdgDataSet.GetFormatIndex Method
+              path: /reference/datagate-client/adg-dataset-class-get-format-index-method.html
+            - title: AdgDataSet.GetFormatName Method
+              path: /reference/datagate-client/adg-dataset-class-get-format-name-method.html
+            - sectiontitle: AdgDataSet.GetFormatTable Methods
+              sectionpath: /reference/datagate-client/adg-dataset-class-get-format-table-methods.html
+              section:
+              - title: AdgDataSet.GetFormatTable(integer)
+                path: /reference/datagate-client/adg-dataset-class-get-format-table-method.html
+              - title: AdgDataSet.GetFormatTable(String)
+                path: /reference/datagate-client/adg-dataset-class-get-format-table-methodstring.html
+            - title: AdgDataSet.Initialize Method
+              path: /reference/datagate-client/adg-dataset-class-initialize-method.html
+            - title: AdgDataSet.InitializeFormats Method
+              path: /reference/datagate-client/adg-dataset-class-initialize-formats-method.html
+            - sectiontitle: AdgDataSet.InsertRow Methods
+              sectionpath: /reference/datagate-client/adg-dataset-class-insert-row-methods.html
+              section:
+              - title: AdgDataSet.InsertRow(integer, integer)
+                path: /reference/datagate-client/adg-dataset-class-insert-row-method1.html
+              - title: AdgDataSet.InsertRow(string, integer)
+                path: /reference/datagate-client/adg-dataset-class-insert-row-method2.html
+            - sectiontitle: AdgDataSet.NewKeyTable Methods
+              sectionpath: /reference/datagate-client/adg-dataset-class-new-key-table-methods.html
+              section:
+              - title: AdgDataSet.NewKeyTable(string)
+                path: /reference/datagate-client/adg-dataset-class-new-key-table-method1.html
+              - title: AdgDataSet.NewKeyTable(integer)
+                path: /reference/datagate-client/adg-dataset-class-new-key-table-method2.html
+            - sectiontitle: AdgDataSet.PrepareRow Methods
+              sectionpath: /reference/datagate-client/adg-dataset-class-prepare-row-method-main.html
+              section:
+              - title: AdgDataSet.PrepareRow(integer)
+                path: /reference/datagate-client/adg-dataset-class-prepare-row-method1.html
+              - title: AdgDataSet.PrepareRow(string)
+                path: /reference/datagate-client/adg-dataset-class-prepare-row-method2.html
+              - title: AdgDataSet.PrepareRow(string, System.Data.DataRow)
+                path: /reference/datagate-client/adg-dataset-class-prepare-row-method3.html
+            - sectiontitle: AdgDataSet.SetActive Methods
+              sectionpath: /reference/datagate-client/adg-dataset-class-set-active-methods.html
+              section:
+              - title: AdgDataSet.SetActive(integer,integer)
+                path: /reference/datagate-client/adg-dataset-class-set-active-method1.html
+              - title: SetActive(string,integer)
+                path: /reference/datagate-client/adg-dataset-class-set-active-method2.html
+          - sectiontitle: AdgDataSet Properties
+            sectionpath: /reference/datagate-client/adg-dataset-properties.html
+            section:
+            - title: AdgDataSet.ActiveRow Property
+              path: /reference/datagate-client/adg-dataset-class-active-row-property.html
+            - title: AdgDataSet.CurrentFormatIndex Property
+              path: /reference/datagate-client/adg-dataset-class-current-format-index-property.html
+            - title: AdgDataSet.CurrentFormatName Property
+              path: /reference/datagate-client/adg-dataset-class-current-format-name-property.html
+            - title: AdgDataSet.FormatIDs Property
+              path: /reference/datagate-client/adg-dataset-class-formatids-property.html
+            - title: AdgDataSet.Formats Property
+              path: /reference/datagate-client/adg-dataset-class-formats-property.html
+        - sectiontitle: AdgFactory Class
+          sectionpath: /reference/datagate-client/adg-factory-class.html
+          section:
+          - title: AdgFactory Members
+            path: /reference/datagate-client/adg-factory-members.html
+          - sectiontitle: AdgFactory Methods
+            sectionpath: /reference/datagate-client/adg-factory-methods.html
+            section:
+            - title: AdgFactory.NewDirectory Method
+              path: /reference/datagate-client/adg-factory-class-new-directory-method.html
+            - title: AdgFactory.NewFile Method
+              path: /reference/datagate-client/adg-factory-class-new-file-method.html
+            - title: AdgFactory.NewMember Method
+              path: /reference/datagate-client/adg-factory-class-new-member-method.html
+            - sectiontitle: AdgFactory.ReadXml Methods
+              sectionpath: /reference/datagate-client/adg-factory-class-read-xml-methods.html
+              section:
+              - title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions)
+                path: /reference/datagate-client/adg-factory-class-read-xml-method1.html
+              - title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
+                path: /reference/datagate-client/adg-factory-class-read-xml-method2.html
+              - title: ReadXml(AdgConnection, string, AdgObjectTypes, string, System.Xml.XmlReader, XmlOptions)
+                path: /reference/datagate-client/adg-factory-class-read-xml-method3.html
+              - title: ReadXml(AdgConnection, string, AdgObjectTypes, string, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
+                path: /reference/datagate-client/adg-factory-class-read-xml-method4.html
+            - sectiontitle: AdgFactory.NewDataArea Methods
+              sectionpath: /reference/datagate-client/adg-factory-class-new-dataarea-methods.html
+              section:
+              - title: AdgFactory.NewDataArea Method
+                path: /reference/datagate-client/adg-factory-class-new-dataarea-method1.html
+              - title: AdgFactory.NewDataArea Method
+                path: /reference/datagate-client/adg-factory-class-new-dataarea-method2.html
+            - title: AdgFactory.NewLibraryList Method
+              path: /reference/datagate-client/adg-factory-class-new-library-list-method.html
+        - sectiontitle: AdgKeyTable Class
+          sectionpath: /reference/datagate-client/adg-key-table-class.html
+          section:
+          - title: AdgKeyTable Members
+            path: /reference/datagate-client/adg-key-table-members.html
+          - sectiontitle: AdgKeyTable Constructors
+            sectionpath: /reference/datagate-client/adg-key-table-adg-key-table-constructors-main.html
+            section:
+            - title: AdgKeyTable(System.Data.DataTable)
+              path: /reference/datagate-client/adg-key-table-class-adg-key-table-constructor.html
+          - sectiontitle: AdgKeyTable Properties
+            sectionpath: /reference/datagate-client/adg-key-table-properties.html
+            section:
+            - title: AdgKeyTable.DataTable Property
+              path: /reference/datagate-client/adg-key-table-class-data-table-property.html
+            - title: AdgKeyTable.KeyPartCount Property
+              path: /reference/datagate-client/adg-key-table-class-key-part-count-property.html
+            - title: AdgKeyTable.Row Property
+              path: /reference/datagate-client/adg-key-table-class-row-property.html
+        - title: AdgTable Class
+          path: /reference/datagate-client/adg-table-class.html
+        - sectiontitle: As400Program Class
+          sectionpath: /reference/datagate-client/as400program-class.html
+          section:
+          - title: As400Program Members
+            path: /reference/datagate-client/as400program-members.html
+          - sectiontitle: As400Program Constructors
+            sectionpath: /reference/datagate-client/as400program-class-as400program-method-main.html
+            section:
+            - title: As400Program()
+              path: /reference/datagate-client/as400program-class-as400program-method1.html
+            - title: As400Program(AdgConnection)
+              path: /reference/datagate-client/as400program-class-as400program-method2.html
+            - title: As400Program(AdgConnection, string)
+              path: /reference/datagate-client/as400program-class-as400program-method3.html
+          - sectiontitle: As400Program Methods
+            sectionpath: /reference/datagate-client/as400program-methods-main.html
+            section:
+            - title: As400Program.AppendParm Method
+              path: /reference/datagate-client/as400program-class-append-parm-method.html
+            - title: As400Program.AppendParms Method
+              path: /reference/datagate-client/as400program-class-append-parms-method.html
+            - title: As400Program.Dispose Method
+              path: /reference/datagate-client/as400program-class-dispose-method.html
+            - title: As400Program.Execute Method
+              path: /reference/datagate-client/as400program-class-execute-method.html
+            - title: As400Program.GetParmByName Method
+              path: /reference/datagate-client/as400program-class-get-parm-byName-method.html
+            - sectiontitle: As400Program.ObjectToParm Methods
+              sectionpath: /reference/datagate-client/as400program-class-object-to_parm-method-main.html
+              section:
+              - title: As400Program.ObjectToParm(ProgParm, object)
+                path: /reference/datagate-client/as400program-class-object-to_parm-method4.html
+              - title: As400Program.ObjectToParm(ProgParm, object, int)
+                path: /reference/datagate-client/as400program-class-object-to_parm-method1.html
+              - title: As400Program.ObjectToParm(object, string)
+                path: /reference/datagate-client/as400program-class-object-to_parm-method3.html
+              - title: As400Program.ObjectToParm(object, string, int[])
+                path: /reference/datagate-client/as400program-class-object-to_parm-method2.html
+            - sectiontitle: As400Program.ParmToObject Methods
+              sectionpath: /reference/datagate-client/as400program-class-parm-to_object-method-main.html
+              section:
+              - title: As400Program.ParmToObject(ProgParm, System.Type)
+                path: /reference/datagate-client/as400program-class-parm-to_object-method3.html
+              - title: As400Program.ParmToObject(ProgParm, System.Type, integer)
+                path: /reference/datagate-client/as400program-class-parm-to_object-method1.html
+              - title: As400Program.ParmToObject(System.Type, string)
+                path: /reference/datagate-client/as400program-class-parm-to_object-method4.html
+              - title: As400Program.ParmToObject(System.Type, string, integer[])
+                path: /reference/datagate-client/as400program-class-parm-to_object-method2.html
+            - title: As400Program.SetParmsZeroValue Method
+              path: /reference/datagate-client/as400program-class-set-parms-zero-value-method.html
+          - sectiontitle: As400Program Properties
+            sectionpath: /reference/datagate-client/as400program-properties-main.html
+            section:
+            - title: As400Program.Connection Property
+              path: /reference/datagate-client/as400program-class-connection-property.html
+            - title: As400Program.Parameters Property
+              path: /reference/datagate-client/as400program-class-parameters-property.html
+            - title: As400Program.ProgramPath Method
+              path: /reference/datagate-client/as400program-class-program-path-property.html
+        - sectiontitle: AuthorityEntry Class
+          sectionpath: /reference/datagate-client/authority-entry-class.html
+          section:
+          - title: AuthorityEntry Members
+            path: /reference/datagate-client/authority-entry-members.html
+          - sectiontitle: AuthorityEntry.Constructors
+            sectionpath: /reference/datagate-client/authority-entry-class-authority-entry-constructors.html
+            section:
+            - title: AuthorityEntry()
+              path: /reference/datagate-client/authority-entry-class-authority-entry-constructor1.html
+            - title: AuthorityEntry(string)
+              path: /reference/datagate-client/authority-entry-class-authority-entry-constructor2.html
+            - title: AuthorityEntry(string,AuthorityTypes)
+              path: /reference/datagate-client/authority-entry-class-authority-entry-constructor3.html
+            - title: AuthorityEntry(string, AuthorityTypes, boolean)
+              path: /reference/datagate-client/authority-entry-class-authority-entry-constructor4.html
+          - sectiontitle: AuthorityEntry Fields
+            sectionpath: /reference/datagate-client/authority-entry-fields.html
+            section:
+            - title: AuthorityEntry.AuthorityType Field
+              path: /reference/datagate-client/authority-entry-class-authority-type-field.html
+            - title: AuthorityEntry.IsGroupAccount Field
+              path: /reference/datagate-client/authority-entry-class-isgroup-account-field.html
+            - title: AuthorityEntry.Username Field
+              path: /reference/datagate-client/authority-entry-class-username-field.html
+        - sectiontitle: Dependent Class
+          sectionpath: /reference/datagate-client/dependent-class.html
+          section:
+          - title: Dependent Members
+            path: /reference/datagate-client/dependent-members.html
+          - sectiontitle: Dependent Properties
+            sectionpath: /reference/datagate-client/dependent-properties.html
+            section:
+            - title: Dependent.AdgObjectType Property
+              path: /reference/datagate-client/dependent-class-adg-object-type-property.html
+            - title: Dependent.DependentType Property
+              path: /reference/datagate-client/dependent-class-dependent-type-property.html
+            - title: Dependent.PathName Property
+              path: /reference/datagate-client/dependent-class-path-name-property.html
+        - sectiontitle: FileAdapter Class
+          sectionpath: /reference/datagate-client/file-adapter-class.html
+          section:
+          - title: FileAdapter Members
+            path: /reference/datagate-client/file-adapter-members.html
+          - sectiontitle: FileAdapter Constructors
+            sectionpath: /reference/datagate-client/file-adapter-class-file-adapter-method-main.html
+            section:
+            - title: FileAdapter.FileAdapter Constructor ()
+              path: /reference/datagate-client/file-adapter-class-file-adapter-method1.html
+            - title: FileAdapter(AdgConnection)
+              path: /reference/datagate-client/file-adapter-class-file-adapter-method2.html
+            - title: FileAdapter(AdgConnection, string)
+              path: /reference/datagate-client/file-adapter-class-file-adapter-method3.html
+            - title: FileAdapter(AdgConnection, string, string)
+              path: /reference/datagate-client/file-adapter-class-file-adapter-method4.html
+          - sectiontitle: FileAdapter Methods
+            sectionpath: /reference/datagate-client/file-adapter-methods.html
+            section:
+            - title: FileAdapter.AddRecord Method
+              path: /reference/datagate-client/file-adapter-class-add-record-method.html
+            - title: FileAdapter.ChangeCurrent Method
+              path: /reference/datagate-client/file-adapter-class-change-current-method.html
+            - title: FileAdapter.ChangeRRN Method
+              path: /reference/datagate-client/file-adapter-class-change-rrn-method.html
+            - title: FileAdapter.Close Method
+              path: /reference/datagate-client/file-adapter-class-close-method.html
+            - title: FileAdapter.DeleteAllRecords Method
+              path: /reference/datagate-client/file-adapter-class-delete-all-records-method.html
+            - title: FileAdapter.DeleteCurrent Method
+              path: /reference/datagate-client/file-adapter-class-delete-current-method.html
+            - title: FileAdapter.DeleteKey Method
+              path: /reference/datagate-client/file-adapter-class-delete-key-method.html
+            - title: FileAdapter.DeleteRange Method
+              path: /reference/datagate-client/file-adapter-class-delete-range-method.html
+            - title: FileAdapter.DeleteRRN Method
+              path: /reference/datagate-client/file-adapter-class-delete-rrn-method.html
+            - title: FileAdapter.Dispose Method
+              path: /reference/datagate-client/file-adapter-class-dispose-method.html
+            - title: FileAdapter.Finalize Method
+              path: /reference/datagate-client/file-adapter-class-finalize-method.html
+            - title: FileAdapter.ForceEOD Method
+              path: /reference/datagate-client/file-adapter-class-force-eod-method.html
+            - title: FileAdapter.GetPrintProperties Method
+              path: /reference/datagate-client/file-adapter-class-get-print-properties-method.html
+            - title: FileAdapter.Open Method
+              path: /reference/datagate-client/file-adapter-class-open-method.html
+            - title: FileAdapter.OpenNewAdgDataSet Method
+              path: /reference/datagate-client/file-adapter-class-open-new-adg-dataset-method.html
+            - title: FileAdapter.OpenSimpleQuery Method
+              path: /reference/datagate-client/file-adapter-class-open-simple-query-method.html
+            - title: FileAdapter.ReadRandomKey Method
+              path: /reference/datagate-client/file-adapter-class-read-random-key-method.html
+            - title: FileAdapter.ReadRandomRRN Method
+              path: /reference/datagate-client/file-adapter-class-read-random-rrn-method.html
+            - title: FileAdapter.ReadRange Method
+              path: /reference/datagate-client/file-adapter-class-read-range-method.html
+            - title: FileAdapter.ReadSequential Method
+              path: /reference/datagate-client/file-adapter-class-read-sequential-method.html
+            - title: FileAdapter.ReadSequentialEqual Method
+              path: /reference/datagate-client/file-adapter-class-read-sequential-equal-method.html
+            - title: FileAdapter.ReleaseCurrent Method
+              path: /reference/datagate-client/file-adapter-class-release-current-method.html
+            - title: FileAdapter.ReleaseRRN Method
+              path: /reference/datagate-client/file-adapter-class-release-rrn-method.html
+            - title: FileAdapter.ResetFormat Method
+              path: /reference/datagate-client/file-adapter-class-reset-format-method.html
+            - title: FileAdapter.ResetPrintAttr Method
+              path: /reference/datagate-client/file-adapter-class-reset-print-attr-method.html
+            - title: FileAdapter.ReuseRRN Method
+              path: /reference/datagate-client/file-adapter-class-reUse-rrn-method.html
+            - title: FileAdapter.SeekKey Method
+              path: /reference/datagate-client/file-adapter-class-seek-key-method.html
+            - title: FileAdapter.SeekRange Method
+              path: /reference/datagate-client/file-adapter-class-seek-range-method.html
+            - title: FileAdapter.SeekRRN Method
+              path: /reference/datagate-client/file-adapter-class-seek-rrn-method.html
+            - title: FileAdapter.SetFormat Method
+              path: /reference/datagate-client/file-adapter-class-set-format-method.html
+          - sectiontitle: FileAdapter Properties
+            sectionpath: /reference/datagate-client/file-adapter-properties.html
+            section:
+            - title: FileAdapter.AccessMode Property
+              path: /reference/datagate-client/file-adapter-class-access-mode-property.html
+            - title: FileAdapter.Connection Property
+              path: /reference/datagate-client/file-adapter-class-connection-property.html
+            - title: FileAdapter.CurrentFormatIndex Property
+              path: /reference/datagate-client/file-adapter-class-current-format-index-property.html
+            - title: FileAdapter.ExactSeek Property
+              path: /reference/datagate-client/file-adapter-class-exact-seek-property.html
+            - title: FileAdapter.ExtendedResults Property
+              path: /reference/datagate-client/file-adapter-class-extended-results-property.html
+            - title: FileAdapter.FileLength Property
+              path: /reference/datagate-client/file-adapter-class-file-length-property.html
+            - title: FileAdapter.FileName Property
+              path: /reference/datagate-client/file-adapter-class-file-name-property.html
+            - title: FileAdapter.FormatRequested Property
+              path: /reference/datagate-client/file-adapter-class-format-requested-property.html
+            - title: FileAdapter.MemberName Property
+              path: /reference/datagate-client/file-adapter-class-member-name-property.html
+            - title: FileAdapter.OpenAttributes Property
+              path: /reference/datagate-client/file-adapter-class-open-attributes-property.html
+            - title: FileAdapter.RecordCount Property
+              path: /reference/datagate-client/file-adapter-class-record-count-property.html
+            - title: FileAdapter.RRN Property
+              path: /reference/datagate-client/file-adapter-class-rrn-property.html
+            - title: FileAdapter.Status Property
+              path: /reference/datagate-client/file-adapter-class-status-property.html
+        - sectiontitle: IAdgObject Class
+          sectionpath: /reference/datagate-client/iadg-object-class.html
+          section:
+          - title: IAdgObject Members
+            path: /reference/datagate-client/iadg-object-members.html
+          - sectiontitle: IAdgObject Methods
+            sectionpath: /reference/datagate-client/iadg-object-methods.html
+            section:
+            - title: IAdgObject.Create Method
+              path: /reference/datagate-client/iadg-object-class-create-method.html
+            - title: IAdgObject.Duplicate Method
+              path: /reference/datagate-client/iadg-object-class-duplicate-method.html
+            - title: IAdgObject.GrantAuthority Method
+              path: /reference/datagate-client/iadg-object-class-grant-authority-method.html
+            - title: IAdgObject.Lock Method
+              path: /reference/datagate-client/iadg-object-class-lock-method.html
+            - title: IAdgObject.MoveTo Method
+              path: /reference/datagate-client/iadg-object-class-move-to_method.html
+            - title: IAdgObject.ReadBases Method
+              path: /reference/datagate-client/iadg-object-class-read-bases-method.html
+            - title: IAdgObject.Remove Method
+              path: /reference/datagate-client/iadg-object-class-remove-method.html
+            - title: IAdgObject.Rename Method
+              path: /reference/datagate-client/iadg-object-class-rename-method.html
+            - title: IAdgObject.RevokeAuthority Method
+              path: /reference/datagate-client/iadg-object-class-revoke-authority-method.html
+            - title: IAdgObject.ToString Method
+              path: /reference/datagate-client/iadg-object-class-toString-method.html
+            - title: IAdgObject.Unlock Method
+              path: /reference/datagate-client/iadg-object-class-unlock-method.html
+            - title: IAdgObject.WriteBases Method
+              path: /reference/datagate-client/iadg-object-class-write-bases-method.html
+            - sectiontitle: IAdgObject.WriteXml Methods
+              sectionpath: /reference/datagate-client/iadg-object-class-write-xml-methods.html
+              section:
+              - title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
+                path: /reference/datagate-client/iadg-object-class-write-xml-method1.html
+              - title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler)
+                path: /reference/datagate-client/iadg-object-class-write-xml-method2.html
+          - sectiontitle: IAdgObject Properties
+            sectionpath: /reference/datagate-client/iadg-object-properties.html
+            section:
+            - title: IAdgObject.AdgObjectType Property
+              path: /reference/datagate-client/iadg-object-class-adg-object-type-property.html
+            - title: IAdgObject.AdgSubType Property
+              path: /reference/datagate-client/iadg-object-class-adg-subtype-property.html
+            - title: IAdgObject.AuthorityEntries Property
+              path: /reference/datagate-client/iadg-object-class-authority-entries-property.html
+            - title: IAdgObject.Bases Property
+              path: /reference/datagate-client/iadg-object-class-bases-property.html
+            - title: IAdgObject.DateCreated Property
+              path: /reference/datagate-client/iadg-object-class-date-created-property.html
+            - title: IAdgObject.DateModified Property
+              path: /reference/datagate-client/iadg-object-class-date-modified-property.html
+            - title: IAdgObject.DateReferenced Property
+              path: /reference/datagate-client/iadg-object-class-date-referenced-property.html
+            - title: IAdgObject.Dependents Property
+              path: /reference/datagate-client/iadg-object-class-dependents-property.html
+            - title: IAdgObject.IsSystemObject Property
+              path: /reference/datagate-client/iadg-object-class-isSystem-object-property.html
+            - title: IAdgObject.ObjectID Property
+              path: /reference/datagate-client/iadg-object-class-object-idproperty.html
+            - title: IAdgObject.Owner Property
+              path: /reference/datagate-client/iadg-object-class-owner-property.html
+            - title: IAdgObject.OwnerIsGroup Property
+              path: /reference/datagate-client/iadg-object-class-owner-isgroup-property.html
+            - title: IAdgObject.ParentID Property
+              path: /reference/datagate-client/iadg-object-class-parent-idproperty.html
+            - title: IAdgObject.PrimaryGroup Property
+              path: /reference/datagate-client/iadg-object-class-primary-group-property.html
+            - title: IAdgObject.Schema Property
+              path: /reference/datagate-client/iadg-object-class-schema-property.html
+            - title: IAdgObject.SortByName Property
+              path: /reference/datagate-client/iadg-object-class-sort-byName-property.html
+            - title: IAdgObject.SortByNameCaseInsensitive Property
+              path: /reference/datagate-client/iadg-object-class-sort-byName-case-insensitive-property.html
+            - title: IAdgObject.Text Property
+              path: /reference/datagate-client/iadg-object-class-text-property.html
+        - sectiontitle: IAdgTransaction Interface
+          sectionpath: /reference/datagate-client/iadg-transaction-class.html
+          section:
+          - title: IAdgTransaction Members
+            path: /reference/datagate-client/iadg-transaction-members.html
+          - sectiontitle: IAdgTransaction Methods
+            sectionpath: /reference/datagate-client/iadg-transaction-methods.html
+            section:
+            - sectiontitle: IAdgTransaction.Commit Methods
+              sectionpath: /reference/datagate-client/iadg-transaction-class-commit-methods.html
+              section:
+              - title: IAdgTransaction.Commit Method()
+                path: /reference/datagate-client/iadg-transaction-class-commit-method1.html
+              - title: IAdgTransaction.Commit(string)
+                path: /reference/datagate-client/iadg-transaction-class-commit-method2.html
+            - title: IAdgTransaction.Rollback Method
+              path: /reference/datagate-client/iadg-transaction-class-rollback-method.html
+          - sectiontitle: IAdgTransaction Properties
+            sectionpath: /reference/datagate-client/iadg-transaction-properties.html
+            section:
+            - title: IAdgTransaction.Connection Property
+              path: /reference/datagate-client/iadg-transaction-class-connection-property.html
+            - title: IAdgTransaction.Name Property
+              path: /reference/datagate-client/iadg-transaction-class-name-property.html
+            - title: IAdgTransaction.TransactionLevel Property
+              path: /reference/datagate-client/iadg-transaction-class-transaction-level-property.html
+        - sectiontitle: IDirectory Interface
+          sectionpath: /reference/datagate-client/idirectory-class.html
+          section:
+          - title: IDirectory Members
+            path: /reference/datagate-client/idirectory-members.html
+          - sectiontitle: IDirectory Methods
+            sectionpath: /reference/datagate-client/idirectory-methods.html
+            section:
+            - title: IDirectory.AttachRemoteDirectory Method
+              path: /reference/datagate-client/idirectory-class-attach-remote-directory-method.html
+            - title: IDirectory.CreateSubDirectory Method
+              path: /reference/datagate-client/idirectory-class-create-subdirectory-method.html
+            - title: IDirectory.Enumerate Method
+              path: /reference/datagate-client/idirectory-class-enumerate-method.html
+            - title: IDirectory.RepairObjects Method
+              path: /reference/datagate-client/idirectory-class-repair-objects-method.html
+          - sectiontitle: IDirectory Properties
+            sectionpath: /reference/datagate-client/idirectory-properties.html
+            section:
+            - title: IDirectory.ItemList Property
+              path: /reference/datagate-client/idirectory-class-item-list-property.html
+            - title: IDirectory.RemotePathName Property
+              path: /reference/datagate-client/idirectory-class-remote-path-name-property.html
+        - sectiontitle: IFileObject Interface
+          sectionpath: /reference/datagate-client/ifile-object-class.html
+          section:
+          - title: IFileObject Members
+            path: /reference/datagate-client/ifile-object-members.html
+          - sectiontitle: IFileObject Methods
+            sectionpath: /reference/datagate-client/ifile-object-methods.html
+            section:
+            - title: IFileObject.Copy Method
+              path: /reference/datagate-client/ifile-object-class-copy-method.html
+            - title: IFileObject.GetAdgDataSet Method
+              path: /reference/datagate-client/ifile-object-class-get-adg-dataset-method.html
+            - title: IFileObject.InspectFile Method
+              path: /reference/datagate-client/ifile-object-class-inspect-file-method.html
+            - title: IFileObject.ReadCreationAttributes Method
+              path: /reference/datagate-client/ifile-object-class-read-creation-attributes-method.html
+            - title: IFileObject.ReadDefinition Method
+              path: /reference/datagate-client/ifile-object-class-read-definition-method.html
+            - title: IFileObject.RepairFile Method
+              path: /reference/datagate-client/ifile-object-class-repair-file-method.html
+            - title: IFileObject.WriteCreationAttributes Method
+              path: /reference/datagate-client/ifile-object-class-write-creation-attributes-method.html
+            - title: IFileObject.WriteDefinition Method
+              path: /reference/datagate-client/ifile-object-class-write-definition-method.html
+          - sectiontitle: IFileObject Properties
+            sectionpath: /reference/datagate-client/ifile-object-properties.html
+            section:
+            - title: IFileObject.MemberCount Property
+              path: /reference/datagate-client/ifile-object-class-member-count-property.html
+            - title: IFileObject.Members Property
+              path: /reference/datagate-client/ifile-object-class-members-property.html
+        - sectiontitle: ILibraryList Interface
+          sectionpath: /reference/datagate-client/ilibrary-list-class.html
+          section:
+          - title: ILibraryList Members
+            path: /reference/datagate-client/ilibrary-list-members.html
+          - sectiontitle: ILibraryList Methods
+            sectionpath: /reference/datagate-client/ilibrary-list-methods.html
+            section:
+            - title: ILibraryList.AddEntry Method
+              path: /reference/datagate-client/ilibrary-list-class-add-entry-method.html
+            - title: ILibraryList.EnumerateCurrentSystem Method
+              path: /reference/datagate-client/ilibrary-list-class-enumerate-current-system-method.html
+            - title: ILibraryList.EnumerateCurrentUser Method
+              path: /reference/datagate-client/ilibrary-list-class-enumerate-current-user-method.html
+            - title: ILibraryList.RemoveEntry Method
+              path: /reference/datagate-client/ilibrary-list-class-remove-entry-method.html
+          - sectiontitle: ILibraryList Members
+            sectionpath: /reference/datagate-client/ilibrary-list-properties.html
+            section:
+            - title: ILibraryList.CurrentSystemLibs Property
+              path: /reference/datagate-client/ilibrary-list-class-current-system-libs-property.html
+            - title: ILibraryList.CurrentUserLibs Property
+              path: /reference/datagate-client/ilibrary-list-class-current-user-libs-property.html
+            - title: ILibraryList.SystemConfig Property
+              path: /reference/datagate-client/ilibrary-list-class-system-config-property.html
+            - title: ILibraryList.UserConfig Property
+              path: /reference/datagate-client/ilibrary-list-class-user-config-property.html
+        - sectiontitle: IMember Interface
+          sectionpath: /reference/datagate-client/imember-class.html
+          section:
+          - title: IMember Members
+            path: /reference/datagate-client/imember-members.html
+          - sectiontitle: IMember Methods
+            sectionpath: /reference/datagate-client/imember-methods.html
+            section:
+            - title: IMember.Clear Method
+              path: /reference/datagate-client/imember-class-clear-method.html
+            - title: IMember.Initialize Method
+              path: /reference/datagate-client/imember-class-initialize-method.html
+          - sectiontitle: IMember Properties
+            sectionpath: /reference/datagate-client/imember-properties.html
+            section:
+            - title: IMember.ActiveRecords Property
+              path: /reference/datagate-client/imember-class-active-records-property.html
+            - title: IMember.DeletedRecords Property
+              path: /reference/datagate-client/imember-class-deleted-records-property.html
+            - title: IMember.Extension Property
+              path: /reference/datagate-client/imember-class-extension-property.html
+        - sectiontitle: XmlInfoEventArgs Class
+          sectionpath: /reference/datagate-client/xml-info-event-args-class.html
+          section:
+          - title: XmlInfoEventArgs Members
+            path: /reference/datagate-client/xml-info-event-args-members.html
+          - sectiontitle: XmlInfoEventArgs Fields
+            sectionpath: /reference/datagate-client/xml-info-event-args-fields.html
+            section:
+            - title: XmlInfoEventArgs.Message Field
+              path: /reference/datagate-client/xml-info-event-args-class-message-field.html
+            - title: XmlInfoEventArgs.Type Field
+              path: /reference/datagate-client/xml-info-event-args-class-type-field.html
+      - sectiontitle: ASNA.DataGate.Client Enumerations
+        sectionpath: /reference/datagate-client/datagate-client-enumerations.html
         section:
-        - title: AdgEnumerator Delegate
-          path: /reference/datagate-client/adg-enumerator-delegate.html
-        - title: AdgObserver Delegate
-          path: /reference/datagate-client/adg-observer-delegate.html
-        - title: XmlInfoEventHandler Delegate
-          path: /reference/datagate-client/xml-info-event-handler-delegate.html
-      - title: New / Changed Enumerations
-        path: /reference/datagate-client/whats-new-enumerations.html
-      - title: New / Changed Methods and Properties
-        path: /reference/datagate-client/whats-new-methods-and-properties.html
-    - title: Copyright
-      path: /reference/datagate-client/copyright.html
+        - title: FileAdapter.AdapterStatus Enumeration
+          path: /reference/datagate-client/file-adapter-adapter-status-enumeration.html
+        - title: InitMemberOptions Enumeration
+          path: /reference/datagate-client/init-member-options-enumeration.html
+        - title: LiblPosition Enumeration
+          path: /reference/datagate-client/libl-position-enumeration.html
+        - title: XmlInfoEventType Enumeration
+          path: /reference/datagate-client/xml-info-event-type-enumeration.html
+        - title: XmlOptions Enumeration
+          path: /reference/datagate-client/xml-options-enumeration.html
+    - sectiontitle: ASNA.DataGate.Common Namespace
+      sectionpath: /reference/datagate-client/datagate-common-namespace.html
+      section:
+      - sectiontitle: ASNA.DataGate.Common Classes
+        sectionpath: /reference/datagate-client/asna-datagate-common-classes.html
+        section:
+        - sectiontitle: dgException Class
+          sectionpath: /reference/datagate-client/dgexception-class.html
+          section:
+          - title: dgException Members
+            path: /reference/datagate-client/dgexception-class-members.html
+          - sectiontitle: dgException Fields
+            sectionpath: /reference/datagate-client/dgexception-class-fields-main.html
+            section:
+            - title: dgException.Error Field
+              path: /reference/datagate-client/dgexception-class-error-field.html
+            - title: dgException.ErrorClass Field
+              path: /reference/datagate-client/dgexception-class-error-class-field.html
+            - title: dgException.SystemError Field
+              path: /reference/datagate-client/dgexception-class-system-error-field.html
+            - title: dgException.Text Field
+              path: /reference/datagate-client/dgexception-class-text-field.html
+          - sectiontitle: dgException Methods
+            sectionpath: /reference/datagate-client/dgexception-class-methods-main.html
+            section:
+            - title: dgException.GetVerboseText Method
+              path: /reference/datagate-client/dgexception-class-get-verbose-text-method.html
+          - sectiontitle: dgException Properties
+            sectionpath: /reference/datagate-client/dgexception-class-properties-main.html
+            section:
+            - title: dgException.Message Property
+              path: /reference/datagate-client/dgexception-class-message-property.html
+        - sectiontitle: FieldType Class
+          sectionpath: /reference/datagate-client/field-type-class.html
+          section:
+          - title: FieldType Members
+            path: /reference/datagate-client/field-type-members.html
+          - sectiontitle: FieldType Methods
+            sectionpath: /reference/datagate-client/field-type-methods.html
+            section:
+            - title: FieldType.NewBinary Method
+              path: /reference/datagate-client/field-type-class-new-binary-method.html
+            - title: FieldType.NewChar Method
+              path: /reference/datagate-client/field-type-class-new-char-method.html
+            - title: FieldType.NewDate Method
+              path: /reference/datagate-client/field-type-class-new-date-method.html
+            - title: FieldType.NewDBCS Method
+              path: /reference/datagate-client/field-type-class-new-ddbc-method.html
+            - title: FieldType.NewDontCare Method
+              path: /reference/datagate-client/field-type-class-new-dont-care-method.html
+            - title: FieldType.NewFloat Method
+              path: /reference/datagate-client/field-type-class-new-float-method.html
+            - title: FieldType.NewHex Method
+              path: /reference/datagate-client/field-type-class-new-hex-method.html
+            - title: FieldType.NewInteger Method
+              path: /reference/datagate-client/field-type-class-new-integer-method.html
+            - title: FieldType.NewPacked Method
+              path: /reference/datagate-client/field-type-class-new-packed-method.html
+            - title: FieldType.NewTime Method
+              path: /reference/datagate-client/field-type-class-new-time-method.html
+            - title: FieldType.NewTimeStamp Method
+              path: /reference/datagate-client/field-type-class-new-time-stamp-method.html
+            - title: FieldType.NewZoned Method
+              path: /reference/datagate-client/field-type-class-new-zoned-method.html
+          - sectiontitle: FieldType Properties
+            sectionpath: /reference/datagate-client/field-type-properties.html
+            section:
+            - title: FieldType.ByteLength Property
+              path: /reference/datagate-client/field-type-class-byte-length-property.html
+            - title: FieldType.DataType Property
+              path: /reference/datagate-client/field-type-class-data-type-property.html
+            - title: FieldType.DateTime Property
+              path: /reference/datagate-client/field-type-class-date-time-property.html
+            - title: FieldType.Dbcs Property
+              path: /reference/datagate-client/field-type-class-dbcs-property.html
+            - title: FieldType.Precision Property
+              path: /reference/datagate-client/field-type-class-precision-property.html
+            - title: FieldType.Scale Property
+              path: /reference/datagate-client/field-type-class-scale-property.html
+      - sectiontitle: ASNA.DataGate.Common Enumerations
+        sectionpath: /reference/datagate-client/datagate-common-enumerations.html
+        section:
+        - title: AccessMode Enumeration
+          path: /reference/datagate-client/access-mode-enumeration.html
+        - title: AccessResult Enumeration
+          path: /reference/datagate-client/access-result-enumeration.html
+        - title: AdgObjectTypes Enumeration
+          path: /reference/datagate-client/adg-object-types-enumeration.html
+        - title: AdgSubTypes Enumeration
+          path: /reference/datagate-client/adg-subtypes-enumeration.html
+        - title: AuthorityTypes Enumeration
+          path: /reference/datagate-client/authority-types-enumeration.html
+        - title: DataDirection Enumeration
+          path: /reference/datagate-client/data-direction-enumeration.html
+        - title: DataSetOptions Enumeration
+          path: /reference/datagate-client/dataset-options-enumeration.html
+        - title: DataTypes Enumeration
+          path: /reference/datagate-client/data-types-enumeration.html
+        - title: DateTimeFormat Enumeration
+          path: /reference/datagate-client/date-time-format-enumeration.html
+        - title: DbcsFormat Enumeration
+          path: /reference/datagate-client/dbcs-format-enumeration.html
+        - title: DependentTypes Enumeration
+          path: /reference/datagate-client/dependent-types-enumeration.html
+        - title: dgErrorClass Enumeration
+          path: /reference/datagate-client/dgerror-class-enumeration.html
+        - title: dgErrorNumber Enumeration
+          path: /reference/datagate-client/dgerror-number-enumeration.html
+        - title: DuplicateOptions Enumeration
+          path: /reference/datagate-client/duplicate-options-enumeration.html
+        - title: FileLocks Enumeration
+          path: /reference/datagate-client/file-locks-enumeration.html
+        - title: InspectFileOutput Enumeration
+          path: /reference/datagate-client/inspect-file-output-enumeration.html
+        - title: InspectFileParts Enumeration
+          path: /reference/datagate-client/inspect-file-parts-enumeration.html
+        - title: LockRequest Enumeration
+          path: /reference/datagate-client/lock-request-enumeration.html
+        - title: KeyUsages Enumeration
+          path: /reference/datagate-client/key-usages-enumeration.html
+        - title: PaperOrientation Enumeration
+          path: /reference/datagate-client/paper-orientation-enumeration.html
+        - title: PasswordType Enumeration
+          path: /reference/datagate-client/password-type-enumeration.html
+        - title: PrintDuplex Enumeration
+          path: /reference/datagate-client/print-duplex-enumeration.html
+        - title: PrintQuality Enumeration
+          path: /reference/datagate-client/print-quality-enumeration.html
+        - title: RangeFirst Enumeration
+          path: /reference/datagate-client/range-first-enumeration.html
+        - title: PrintTrueType Enumeration
+          path: /reference/datagate-client/print-true-type-enumeration.html
+        - title: RangeLast Enumeration
+          path: /reference/datagate-client/range-last-enumeration.html
+        - title: RangeMode Enumeration
+          path: /reference/datagate-client/range-mode-enumeration.html
+        - title: ReadEqualMode Enumeration
+          path: /reference/datagate-client/read-equal-mode-enumeration.html
+        - title: ReadRandomMode Enumeration
+          path: /reference/datagate-client/read-random-mode-enumeration.html
+        - title: ReadSequentialMode Enumeration
+          path: /reference/datagate-client/read-sequential-mode-enumeration.html
+        - title: RepairOptions Enumeration
+          path: /reference/datagate-client/repair-options-enumeration.html
+        - title: SeekMode Enumeration
+          path: /reference/datagate-client/seek-mode-enumeration.html
+        - title: ShareTypes Enumeration
+          path: /reference/datagate-client/share-types-enumeration.html
+        - title: TransactionLevel Enumeration
+          path: /reference/datagate-client/transaction-level-enumeration.html
+        - title: WaitOptions Enumeration
+          path: /reference/datagate-client/wait-options-enumeration.html
+    - sectiontitle: ASNA.DataGate.DataLink Namespace
+      sectionpath: /reference/datagate-client/datagate-data-link-namespace.html
+      section:
+      - sectiontitle: ASNA.DataGate.DataLink Classes
+        sectionpath: /reference/datagate-client/asna-datagate-data-link-classes.html
+        section:
+        - sectiontitle: ProgParmClass
+          sectionpath: /reference/datagate-client/prog-parm-class.html
+          section:
+          - title: ProgParm Members
+            path: /reference/datagate-client/prog-parm-members.html
+          - sectiontitle: ProgParm.ProgParm Constructors
+            sectionpath: /reference/datagate-client/prog-parm-class-prog-parm-method-main.html
+            section:
+            - title: ProgParm(ProgParmType, DataDirection)
+              path: /reference/datagate-client/prog-parm-class-prog-parm-method1.html
+            - title: ProgParm(StructureType, DataDirection)
+              path: /reference/datagate-client/prog-parm-class-prog-parm-method2.html
+        - sectiontitle: ProgParmType Class
+          sectionpath: /reference/datagate-client/prog-parm-type-class.html
+          section:
+          - title: ProgParmType Members
+            path: /reference/datagate-client/prog-parm-type-members.html
+          - sectiontitle: ProgParmType Constructors
+            sectionpath: /reference/datagate-client/prog-parm-type-constructors-main.html
+            section:
+            - title: ProgParmType(string, integer, FieldType)
+              path: /reference/datagate-client/prog-parm-type-class-prog-parm-type-constructor.html
+        - sectiontitle: StructureType Class
+          sectionpath: /reference/datagate-client/structure-type-class.html
+          section:
+          - title: StructureType Members
+            path: /reference/datagate-client/structure-type-members.html
+          - sectiontitle: StructureType Constructors
+            sectionpath: /reference/datagate-client/structure-type-constructors-main.html
+            section:
+            - title: StructureType.StructureType(string, integer, object)
+              path: /reference/datagate-client/structure-type-class-structure-type-constructor.html
+    - sectiontitle: ASNA.DataGate.Providers Namespace
+      sectionpath: /reference/datagate-client/datagate-providers-namespace.html
+      section:
+      - sectiontitle: ASNA.DataGate.Providers Classes
+        sectionpath: /reference/datagate-client/asna-datagate-providers-classes.html
+        section:
+        - sectiontitle: DatabaseAttributes Class
+          sectionpath: /reference/datagate-client/database-attribute-class.html
+          section:
+          - title: DatabaseAttributes Members
+            path: /reference/datagate-client/database-attributes-members.html
+          - sectiontitle: DatabaseAttributes Constructors
+            sectionpath: /reference/datagate-client/database-attributes-constructors.html
+            section:
+            - title: DatabaseAttributes.DatabaseAttributes()
+              path: /reference/datagate-client/database-attributes-class-constructor1.html
+          - sectiontitle: DatabaseAttributes Fields
+            sectionpath: /reference/datagate-client/database-attributes-fields.html
+            section:
+            - title: DatabaseAttributes.BusySeats Field
+              path: /reference/datagate-client/database-attributes-class-busy-seats-field.html
+            - title: DatabaseAttributes.Database Field
+              path: /reference/datagate-client/database-attributes-class-database-field.html
+            - title: DatabaseAttributes.Hardware Field
+              path: /reference/datagate-client/database-attributes-class-hardware-field.html
+            - title: DatabaseAttributes.OperatingSystem Field
+              path: /reference/datagate-client/database-attributes-class-operating-system-field.html
+            - title: DatabaseAttributes.OriginalLabel Field
+              path: /reference/datagate-client/database-attributes-class-original-label-field.html
+            - title: DatabaseAttributes.ProxyName Field
+              path: /reference/datagate-client/database-attributes-class-proxy-name-field.html
+            - title: DatabaseAttributes.ProxyVersion Field
+              path: /reference/datagate-client/database-attributes-class-proxy-version-field.html
+            - title: DatabaseAttributes.Secure Field
+              path: /reference/datagate-client/database-attributes-class-secure-field.html
+            - title: DatabaseAttributes.TotalSeats Field
+              path: /reference/datagate-client/database-attributes-class-total-seats-field.html
+        - sectiontitle: DatabaseName Class
+          sectionpath: /reference/datagate-client/database-name-class.html
+          section:
+          - title: DatabaseName Members
+            path: /reference/datagate-client/database-name-members.html
+          - sectiontitle: DatabaseName Constructors
+            sectionpath: /reference/datagate-client/database-name-constructors.html
+            section:
+            - title: DatabaseName.DatabaseName()
+              path: /reference/datagate-client/database-name-class-constructor1.html
+          - sectiontitle: DatabaseName Methods
+            sectionpath: /reference/datagate-client/database-name-methods.html
+            section:
+            - title: DatabaseName.Deserialize Method
+              path: /reference/datagate-client/database-name-class-deserialize-method.html
+            - title: DatabaseName.FromSourceProfile Method
+              path: /reference/datagate-client/database-name-class-from-source-profile-method.html
+            - title: DatabaseName.GetNames Method
+              path: /reference/datagate-client/database-name-class-get-names-method.html
+            - title: DatabaseName.GetSourceProfiles Method
+              path: /reference/datagate-client/database-name-class-get-source-profiles-method.html
+            - title: DatabaseName.Register Method
+              path: /reference/datagate-client/database-name-class-register-method.html
+            - title: DatabaseName.Serialize Method
+              path: /reference/datagate-client/database-name-class-serialize-method.html
+            - sectiontitle: DatabaseName.ToSourceProfile Methods
+              sectionpath: /reference/datagate-client/database-name-class-to_source-profile-methods.html
+              section:
+              - title: DatabaseName.ToSourceProfile(String)
+                path: /reference/datagate-client/database-name-class-to_source-profile-method1.html
+              - title: DatabaseName.ToSourceProfile(string, boolean)
+                path: /reference/datagate-client/database-name-class-to_source-profile-method2.html
+              - title: DatabaseName.ToSourceProfile(string, bool, bool)
+                path: /reference/datagate-client/database-name-class-to_source-profile-method3.html
+              - title: DatabaseName.ToSourceProfile(string, bool, bool, bool)
+                path: /reference/datagate-client/database-name-class-to_source-profile-method4.html
+            - title: DatabaseName.Unregister Method
+              path: /reference/datagate-client/database-name-class-unregister-method.html
+        - sectiontitle: FileOpenAttr Class
+          sectionpath: /reference/datagate-client/file-open-attr-class.html
+          section:
+          - title: FileOpenAttr Members
+            path: /reference/datagate-client/file-open-attr-class-members.html
+          - sectiontitle: FileOpenAttr Constructors
+            sectionpath: /reference/datagate-client/file-open-attr-constructors.html
+            section:
+            - title: FileOpenAttr(string)
+              path: /reference/datagate-client/file-open-attr-class-file-open-attr-constructor.html
+          - sectiontitle: FileOpenAttr Fields
+            sectionpath: /reference/datagate-client/file-open-attr-fields.html
+            section:
+            - title: FileOpenAttr.OmitBlocking Field
+              path: /reference/datagate-client/file-open-attr-class-omit-blocking-field.html
+            - title: FileOpenAttr.OptimalBlockingFactor Field
+              path: /reference/datagate-client/file-open-attr-class-optimal-blocking-factor-field.html
+          - sectiontitle: FileOpenAttr Properties
+            sectionpath: /reference/datagate-client/file-open-attr-properties.html
+            section:
+            - title: FileOpenAttr.BlockingFactor Property
+              path: /reference/datagate-client/file-open-attr-class-blocking-factor-property.html
+            - title: FileOpenAttr.FileLocks Property
+              path: /reference/datagate-client/file-open-attr-class-file-locks-property.html
+            - title: FileOpenAttr.FormatIDs Property
+              path: /reference/datagate-client/file-open-attr-class-formatids-property.html
+            - title: FileOpenAttr.InhibitWrites Property
+              path: /reference/datagate-client/file-open-attr-class-inhibit-write-property.html
+            - title: FileOpenAttr.ShareTypes Property
+              path: /reference/datagate-client/file-open-attr-class-share-types-property.html
+            - title: FileOpenAttr.WaitForEOF Property
+              path: /reference/datagate-client/file-open-attr-class-wait-for-eof-property.html
+            - title: FileOpenAttr.WaitForFile Property
+              path: /reference/datagate-client/file-open-attr-class-wait-for-file-property.html
+            - title: FileOpenAttr.WaitForRecord Property
+              path: /reference/datagate-client/file-open-attr-class-wait-for-record-property.html
+        - sectiontitle: IPrintProperties Interface
+          sectionpath: /reference/datagate-client/iprint-properties-class.html
+          section:
+          - title: IPrintProperties Members
+            path: /reference/datagate-client/iprint-properties-members.html
+          - sectiontitle: IPrintProperties Methods
+            sectionpath: /reference/datagate-client/iprint-properties-methods.html
+            section:
+            - title: IPrintProperties.GetBoundType Method
+              path: /reference/datagate-client/iprint-properties-class-get-bound-type-method.html
+            - title: IPrintProperties.GetTypedObject Method
+              path: /reference/datagate-client/iprint-properties-class-get-typed-object-method.html
+            - title: IPrintProperties.GetValue Method
+              path: /reference/datagate-client/iprint-properties-class-get-value-method.html
+            - title: IPrintProperties.SetValue Method
+              path: /reference/datagate-client/iprint-properties-class-set-value-method.html
+        - sectiontitle: PrintDevAttr Class
+          sectionpath: /reference/datagate-client/print-dev-attr-class.html
+          section:
+          - title: PrintDevAttr Members
+            path: /reference/datagate-client/print-dev-attr-members.html
+          - sectiontitle: PrintDevAttr Constructors
+            sectionpath: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructors.html
+            section:
+            - title: PrintDevAttr()
+              path: /reference/datagate-client/print-dev-attr-class-print-dev-attr-constructor.html
+          - sectiontitle: PrintDevAttr Methods
+            sectionpath: /reference/datagate-client/print-dev-attr-methods.html
+            section:
+            - title: PrintDevAttr.ReadXml Method
+              path: /reference/datagate-client/print-dev-attr-class-read-xml-method.html
+            - title: PrintDevAttr.WriteXml Method
+              path: /reference/datagate-client/print-dev-attr-class-write-xml-method.html
+          - sectiontitle: PrintDevAttr Properties
+            sectionpath: /reference/datagate-client/print-dev-attr-properties.html
+            section:
+            - title: PrintDevAttr.Collate Property
+              path: /reference/datagate-client/print-dev-attr-class-collate-property.html
+            - title: PrintDevAttr.Color Property
+              path: /reference/datagate-client/print-dev-attr-class-color-property.html
+            - title: PrintDevAttr.Copies Property
+              path: /reference/datagate-client/print-dev-attr-class-copies-property.html
+            - title: PrintDevAttr.DefaultSource Property
+              path: /reference/datagate-client/print-dev-attr-class-default-source-property.html
+            - title: PrintDevAttr.Duplex Property
+              path: /reference/datagate-client/print-dev-attr-class-duplex-property.html
+            - title: PrintDevAttr.FormName Property
+              path: /reference/datagate-client/print-dev-attr-class-form-name-property.html
+            - title: PrintDevAttr.LeftMargin Property
+              path: /reference/datagate-client/print-dev-attr-class-left-margin-property.html
+            - title: PrintDevAttr.Length Property
+              path: /reference/datagate-client/print-dev-attr-class-length-property.html
+            - title: PrintDevAttr.Orientation Property
+              path: /reference/datagate-client/print-dev-attr-class-orientation-property.html
+            - title: PrintDevAttr.PrinterName Property
+              path: /reference/datagate-client/print-dev-attr-class-printer-name-property.html
+            - title: PrintDevAttr.Quality Property
+              path: /reference/datagate-client/print-dev-attr-class-quality-property.html
+            - title: PrintDevAttr.Scale Property
+              path: /reference/datagate-client/print-dev-attr-class-scale-property.html
+            - title: PrintDevAttr.Size Property
+              path: /reference/datagate-client/print-dev-attr-class-size-property.html
+            - title: PrintDevAttr.TopMargin Property
+              path: /reference/datagate-client/print-dev-attr-class-top-margin-property.html
+            - title: PrintDevAttr.TTOption Property
+              path: /reference/datagate-client/print-dev-attr-classTTOption-property.html
+            - title: PrintDevAttr.Width Property
+              path: /reference/datagate-client/print-dev-attr-class-width-property.html
+            - title: PrintDevAttr.YResolution Property
+              path: /reference/datagate-client/print-dev-attr-class-yresolution-property.html
+        - sectiontitle: SourceProfile Class
+          sectionpath: /reference/datagate-client/source-profile-class.html
+          section:
+          - title: SourceProfile Members
+            path: /reference/datagate-client/source-profile-members.html
+          - sectiontitle: SourceProfile Constructors
+            sectionpath: /reference/datagate-client/source-profile-constructors-main.html
+            section:
+            - title: SourceProfile()
+              path: /reference/datagate-client/source-profile-class-source-profile-constructor1.html
+            - title: SourceProfile.SourceProfile Constructor(string)
+              path: /reference/datagate-client/source-profile-class-source-profile-constructor2.html
+            - title: SourceProfile(string, boolean)
+              path: /reference/datagate-client/source-profile-class-source-profile-constructor3.html
+            - title: SourceProfile(SourceProfile)
+              path: /reference/datagate-client/source-profile-class-source-profile-constructor4.html
+            - title: SourceProfile(string, SourceProfile)
+              path: /reference/datagate-client/source-profile-class-source-profile-constructor5.html
+          - sectiontitle: SourceProfile Methods
+            sectionpath: /reference/datagate-client/source-profile-methods-main.html
+            section:
+            - title: SourceProfile.Clone Method
+              path: /reference/datagate-client/source-profile-class-clone-method.html
+            - title: SourceProfile.Equals Method
+              path: /reference/datagate-client/source-profile-class-equals-method.html
+            - title: SourceProfile.GetHashCode Method
+              path: /reference/datagate-client/source-profile-class-get-hash-code-method.html
+            - title: SourceProfile.GetNames Method
+              path: /reference/datagate-client/source-profile-class-get-names-method.html
+            - title: SourceProfile.op_Equality Method
+              path: /reference/datagate-client/source-profile-classop-equality-method.html
+            - title: SourceProfile.op_InEquality Method
+              path: /reference/datagate-client/source-profile-classop-inequality-method.html
+            - title: SourceProfile.Register Method
+              path: /reference/datagate-client/source-profile-class-register-method.html
+            - title: SourceProfile.Unregister Method
+              path: /reference/datagate-client/source-profile-class-unregister-method.html
+          - sectiontitle: SourceProfile Properties
+            sectionpath: /reference/datagate-client/source-profile-properties-main.html
+            section:
+            - title: SourceProfile.DatabaseName Property
+              path: /reference/datagate-client/source-profile-class-database-name-property.html
+            - title: SourceProfile.InitialLibl Property
+              path: /reference/datagate-client/source-profile-class-initial-libl-property.html
+            - title: SourceProfile.Label Property
+              path: /reference/datagate-client/source-profile-class-label-property.html
+            - title: SourceProfile.Password Property
+              path: /reference/datagate-client/source-profile-class-password-property.html
+            - title: SourceProfile.PasswordType Property
+              path: /reference/datagate-client/source-profile-class-password-type-property.html
+            - title: SourceProfile.PlatformAttribute Property
+              path: /reference/datagate-client/source-profile-class-platform-attribute-property.html
+            - title: SourceProfile.PoolingTimeout Property
+              path: /reference/datagate-client/source-profile-class-pooling-timeout-property.html
+            - title: SourceProfile.Port Property
+              path: /reference/datagate-client/source-profile-class-port-property.html
+            - title: SourceProfile.Qualifier Property
+              path: /reference/datagate-client/source-profile-class-qualifier-property.html
+            - title: SourceProfile.Server Property
+              path: /reference/datagate-client/source-profile-class-server-property.html
+            - title: SourceProfile.Text Property
+              path: /reference/datagate-client/source-profile-class-text-property.html
+            - title: SourceProfile.User Property
+              path: /reference/datagate-client/source-profile-class-user-property.html
+          - sectiontitle: SourceProfile Fields
+            sectionpath: /reference/datagate-client/source-profile-fields-main.html
+            section:
+            - title: MaxSystemLibl Field
+              path: /reference/datagate-client/max-system-libl-enumeration.html
+            - title: MaxUserLibl Field
+              path: /reference/datagate-client/max-user-libl-enumeration.html
   - sectiontitle: ASNA.QSys.Runtime
     section:
       - sectiontitle: Job Support
@@ -2116,5 +2043,4 @@ Mobile:
     path: /reference/monarch-fx/WingsLayoutAid.html
   - title: Uploader Controls
     path: /reference/monarch-fx/amfUnderstandingUploaders.html
-
 
