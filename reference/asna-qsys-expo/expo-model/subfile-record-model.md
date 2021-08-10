@@ -13,6 +13,8 @@ Defines the SubfileRecordModel class
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html)
+
 <br>
 <br>
 

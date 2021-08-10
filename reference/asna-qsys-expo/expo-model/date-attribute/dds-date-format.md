@@ -12,7 +12,9 @@ Define code names for the supported presentation Date Formattings.
 
 ## Remarks
 
-The `DdsDateFormat Enumeration` provides equivalent codes to [IBM i date formats](https://www.ibm.com/docs/en/i/7.2?topic=values-date) that govern how a Date should be presented to the user.
+Define code names for the supported presentation Date Formattings.
+
+[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>

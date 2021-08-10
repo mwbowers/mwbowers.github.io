@@ -7,6 +7,8 @@ Defines a specialized YellowPageModel class to provide support for fields in Rec
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [PageModel]($$TODO-Microsoft.AspNetCore.Mvc.RazorPages.PageModel.html) --> [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)
+
 <br>
 <br>
 

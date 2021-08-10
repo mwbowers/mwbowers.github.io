@@ -7,6 +7,8 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [BindingSourceValueProvider]($$TODO-Microsoft.AspNetCore.Mvc.ModelBinding.BindingSourceValueProvider.html)
+
 <br>
 <br>
 

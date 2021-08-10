@@ -7,6 +7,8 @@ Defines an input element to capture Dates for fields defined as decimal values.
 **Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
 
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper) --> [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html) --> [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html) --> [DdsDateFieldTagHelper](/reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper.html)
+
 <br>
 <br>
 
