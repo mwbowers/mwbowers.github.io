@@ -27,6 +27,7 @@ Renders the Monarch Base Application's Active records along with Active Aid Keys
 | --- | --- | --- | --- 
 | [DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) | DisplayPageModel | Gets the Active Page Model. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | KeyNames | Gets or sets the display key name collection for the File. Key names are separated by semicolon. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Order | When a set of ITagHelpers are executed, their Init(TagHelperContext)'s are first invoked in the specified Order; then their ProcessAsync(TagHelperContext, TagHelperOutput)'s are invoked in the specified Order. Lower values are executed first | 
 
 <br>
 <br>

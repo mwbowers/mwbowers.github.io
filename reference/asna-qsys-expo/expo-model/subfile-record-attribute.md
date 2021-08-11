@@ -25,8 +25,11 @@ Defines Subfile Record Attribute on a type
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsMessageSubfile | Sets or gets a boolean value to indicate that the Subfile record is the Message Subfile. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NextChanged | Sets or gets a conditional indicator expression that determines if the record should be set as changed, to force the get-next-changed operation to succeed (SFLNXTCHG). Defaults to null | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
 
 <br>
 <br>

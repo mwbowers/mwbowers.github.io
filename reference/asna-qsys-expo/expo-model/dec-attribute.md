@@ -60,9 +60,15 @@ DecAttribute( Int32 length, Int32 decimals );
 ## Properties
 
 | Type | Name | Description 
-| --- | --- | ---  
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Decimals | Decimal positions
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Digits | Max Digits
+| --- | --- | --- 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Decimals | Decimal positions 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Digits | Max Digits 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name 
 
 <br>
 <br>

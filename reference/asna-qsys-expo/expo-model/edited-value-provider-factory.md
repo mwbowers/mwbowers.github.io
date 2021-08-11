@@ -25,12 +25,12 @@ Provides a Edited Value Provider factory
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | [CreateValueProviderAsync](#createvalueproviderasyncvalueproviderfactorycontext)([ValueProviderFactoryContext]($$TODO-Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFactoryContext.html)) | Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form | The asynchronous operation
+| [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | [CreateValueProviderAsync](#createvalueproviderasyncvalueproviderfactorycontext)([ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext)) | Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form | The asynchronous operation
 
 <br>
 <br>
 
-### CreateValueProviderAsync([ValueProviderFactoryContext]($$TODO-Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFactoryContext.html))
+### CreateValueProviderAsync([ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext))
 
 Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form
 
@@ -42,7 +42,7 @@ CreateValueProviderAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFact
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ValueProviderFactoryContext]($$TODO-Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFactoryContext.html) | context | Input Value Provider Factory conetxt 
+| [ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext) | context | Input Value Provider Factory conetxt 
 
 #### Returns
 

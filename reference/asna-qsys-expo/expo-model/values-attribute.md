@@ -13,7 +13,7 @@ Defines ValuesAttribute class
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) --> [ValidationAttribute]($$TODO-ComponentModel.DataAnnotations.ValidationAttribute.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) --> [ValidationAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute)
 
 <br>
 <br>
@@ -95,8 +95,13 @@ ValuesAttribute( Type type, Object[] validValues );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Func<object,object>]($$TODO-Func<object,object>.html) | Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| [ErrorMessage](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessage) | ErrorMessage | Gets or sets an error message to associate with a validation control if validation fails. | 
+| [ErrorMessageResourceName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcename) | ErrorMessageResourceName | Gets or sets the error message resource name to use in order to look up the ErrorMessageResourceType property value if validation fails. | 
+| [ErrorMessageResourceType](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype) | ErrorMessageResourceType | Gets or sets the resource type to use for error-message lookup if validation fails. | 
+| [ErrorMessageString](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessagestring) | ErrorMessageString | Gets the localized validation error message. | 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ObjectType | Gets the Object Type | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | TrimStringValue | Gets or sets a boolean value indicating if the value in the sring needs te trimmed | 
+| [RequiresValidationContext](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.requiresvalidationcontext) | RequiresValidationContext | Gets a value that indicates whether the attribute requires validation context. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | TrimStringValue | Gets or sets a boolean value indicating if the value in the string needs te trimmed | 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValidValues | Gets the array of valid values | 
 
 <br>
@@ -112,7 +117,7 @@ ValuesAttribute( Type type, Object[] validValues );
 <br>
 <br>
 
-### GetFrom([MemberInfo]($$TODO-Reflection.MemberInfo.html))
+### GetFrom([MemberInfo](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.memberinfo?view=net-5.0))
 
 Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes)
 
@@ -124,7 +129,7 @@ GetFrom(Reflection.MemberInfo member);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MemberInfo]($$TODO-Reflection.MemberInfo.html) | member | member information 
+| [MemberInfo](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.memberinfo?view=net-5.0) | member | member information 
 
 #### Returns
 

@@ -26,6 +26,7 @@ Defines Application Aid Key banner
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [ActiveKeyBarLocation]($$TODO-ActiveKeyBarLocation.html) | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Order | When a set of ITagHelpers are executed, their Init(TagHelperContext)'s are first invoked in the specified Order; then their ProcessAsync(TagHelperContext, TagHelperOutput)'s are invoked in the specified Order. Lower values are executed first | 
 
 <br>
 <br>

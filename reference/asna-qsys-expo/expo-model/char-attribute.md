@@ -58,10 +58,19 @@ CharAttribute( Int32 length );
 
 ## Properties
 
+## Properties
+
 | Type | Name | Description 
 | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InputOnlyValue | Input-only attribute 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length attribute 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator  
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator  
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name  
+
+<br>
+<br>
 
 <br>
 <br>

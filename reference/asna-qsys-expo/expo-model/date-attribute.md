@@ -31,9 +31,15 @@ Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/p
 ## Properties
 
 | Type | Name | Description 
-| --- | --- | ---  
-| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-")
+| --- | --- | --- 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator 
+| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name 
 
 <br>
 <br>
