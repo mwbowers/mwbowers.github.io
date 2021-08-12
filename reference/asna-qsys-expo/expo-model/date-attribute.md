@@ -35,7 +35,7 @@ Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/p
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
-| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
+| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO)
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
