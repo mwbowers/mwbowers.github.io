@@ -60,9 +60,9 @@ SubfileRecordModel( Int32 rowNumber );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | _RecordNumber | Gets or sets the Record Number | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFieldName | Gets or sets the Cursor Location Field Name | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFormatName | Gets or sets the Cursor Location Format Name | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsActive | Gets a boolean value indicating that the Record is active | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFieldName | Gets or sets the Cursor Location Field Name<br>(Inherited from [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFormatName | Gets or sets the Cursor Location Format Name<br>(Inherited from [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html)) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsActive | Gets a boolean value indicating that the Record is active<br>(Inherited from [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html)) | 
 
 <br>
 <br>

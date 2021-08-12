@@ -79,12 +79,10 @@ ColorProperty( String propString );
 
 ## Properties
 
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty | 
-| [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property | 
+| Type | Name | Description 
+| --- | --- | --- 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGiven | Gets a boolean value indicating if the ConditionalValue collection is NOT empty<br>(Inherited from [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html)) 
+| [ConditionalValue[]](/reference/asna-qsys-expo/expo-model/conditional-value.html) | Property | Gets or sets the ConditionalValue collection encapsulated by the Property<br>(Inherited from [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html)) 
 
 <br>
 <br>
-
-

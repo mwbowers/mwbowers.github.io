@@ -2,12 +2,6 @@
 title: ValuesAttribute Class
 ---
 
-<style>
-tr td:first-child {
-    white-space: nowrap;
-}
-</style>
-
 Defines ValuesAttribute class
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
@@ -117,7 +111,7 @@ ValuesAttribute( Type type, Object[] validValues );
 <br>
 <br>
 
-### GetFrom([MemberInfo](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.memberinfo?view=net-5.0))
+### GetFrom([MemberInfo]($$TODO-Reflection.MemberInfo.html))
 
 Gets a ValuesAttribute from the MemberInfo instance provided as input (from object's custom attributes)
 
@@ -129,7 +123,7 @@ GetFrom(Reflection.MemberInfo member);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MemberInfo](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.memberinfo?view=net-5.0) | member | member information 
+| [MemberInfo]($$TODO-Reflection.MemberInfo.html) | member | member information 
 
 #### Returns
 

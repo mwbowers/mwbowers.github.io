@@ -2,12 +2,6 @@
 title: WebDisplayFileProxy Class
 ---
 
-<style>
-tr td:first-child {
-    white-space: nowrap;
-}
-</style>
-
 Defines a Proxy implementation for the WebDisplayFile
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>

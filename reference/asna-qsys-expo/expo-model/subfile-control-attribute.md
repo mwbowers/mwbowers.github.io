@@ -53,23 +53,23 @@ SubfileControlAttribute( String ClearRecords );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Gets or sets the Alias (alternative) name of a Record | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Gets or sets the value that represents the Change indicator | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CommandKeyIndicator | Gets or sets the Command Key Indicator number | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Gets or sets the Alias (alternative) name of a Record<br>(Inherited from [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with !<br>(Inherited from [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Gets or sets the value that represents the Change indicator<br>(Inherited from [BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CommandKeyIndicator | Gets or sets the Command Key Indicator number<br>(Inherited from [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DisplayFields | Gets the conditional indicator expression that determines if the Fields in the Subfile Controller should display | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DisplayRecords | Gets the conditional indicator expression that determines if the Subfile Records should display | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | EraseFormats | Gets or sets a collection of Record Formats to Erase. The string is a space-separated list of format names. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | EraseFormats | Gets or sets a collection of Record Formats to Erase. The string is a space-separated list of format names.<br>(Inherited from [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | FoldDropIndicator | Gets or Sets the Fold/Drop toggle indicator numeric value. Defaults to zero (Fold/Drop does not apply) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormatLevel | Gets or sets the Record Format Level Check hash code as a string | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormatLevel | Gets or sets the Record Format Level Check hash code as a string<br>(Inherited from [BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with !<br>(Inherited from [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InitializeRecords | Gets the conditional indicator expression that determines if Subfile Records should be initialized | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InitNotActive | Gets or sets a boolean that, when set to "true", when initializing the subfile records (because expression for InitializeRecords evaluates to true), the added records to the subfile will be non-active - meaning that they are not part of the subfile yet until the records are written to, or the user enters values into them -. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsExpandable | Gets or sets a boolean value indicating if the Subfile can expand | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProgramQ | Gets or sets the value of the PGMQ on a Message subfile | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReturnSameData | Gets or sets if the posted Form's data should be not be changed. Defaults to false | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Size | Gets or sets the Subfile Size. Defauls to zero records. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReturnSameData | Gets or sets if the posted Form's data should be not be changed. Defaults to false<br>(Inherited from [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SetOffIndicators | Gets or sets a collection of Indicators to Set Off. The collection is a comma separated string<br>(Inherited from [BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Size | Gets or sets the Subfile Size. Defaults to zero records. | 
 
 <br>
 <br>

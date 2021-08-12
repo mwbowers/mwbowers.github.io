@@ -32,14 +32,14 @@ Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/p
 
 | Type | Name | Description 
 | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator 
-| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
+| [DdsDateFormat]($$TODO-DdsDateFormat.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) 
 
 <br>
 <br>

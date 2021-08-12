@@ -38,7 +38,7 @@ This bootstrap [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/mv
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | [ConfigureDisplayPagesOptions](#configuredisplaypagesoptionsiservicecollection-iconfiguration)([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [IConfiguration]($$TODO-Microsoft.Extensions.Configuration.IConfiguration.html)) | Gets | the service collection
+| [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | [ConfigureDisplayPagesOptions](#configuredisplaypagesoptionsiservicecollection-iconfiguration)([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration)) | Gets | the service collection
 | [IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection) | [ConfigureDisplayPagesOptions](#configuredisplaypagesoptionsiservicecollection-action{asna.qsys.expo.model.displaypagesoptions})([IServiceCollection](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection), [Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}]($$TODO-Action{ASNA.QSys.Expo.Model.DisplayPagesOptions}.html)) | Gets a ServiceCollection after registering DisplayPagesOptions | the service collection
 
 <br>
