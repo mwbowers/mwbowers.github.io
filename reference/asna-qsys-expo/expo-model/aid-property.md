@@ -7,7 +7,7 @@ Specifies which resulting indicator to turn on for each possible AID key. Each K
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> AidProperty
 
 <br>
 <br>

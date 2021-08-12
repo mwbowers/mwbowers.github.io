@@ -7,7 +7,7 @@ Defines Subfile Control Attribute on a type
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) --> [BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html) --> [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) --> [BaseRecordAttribute](/reference/asna-qsys-expo/expo-model/base-record-attribute.html) --> [RecordAttribute](/reference/asna-qsys-expo/expo-model/record-attribute.html) --> SubfileControlAttribute
 
 <br>
 <br>

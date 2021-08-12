@@ -7,7 +7,7 @@ Provides constants to name 5250 Terminal related DataSet tables and columns
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> Terminal5250_DataSetNames
 
 <br>
 <br>

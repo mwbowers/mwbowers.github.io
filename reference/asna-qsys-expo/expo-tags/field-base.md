@@ -7,7 +7,7 @@ Provides common methods for DdsFields and DdsConstants.
 **Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper) --> FieldBase
 
 <br>
 <br>
