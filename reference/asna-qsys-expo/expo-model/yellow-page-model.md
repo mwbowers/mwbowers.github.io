@@ -55,13 +55,19 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearModelProperties](#clearmodelproperties)() | Derived class implements method to Clear all model properties | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearSubfilesInSession](#clearsubfilesinsession)() | Clears cached Session storage entries related to All Subfiles | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DumpModelPropertiesToDataSet](#dumpmodelpropertiestodataset)() | Derived class implements method to Dump Model properties into the DataSet | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFirstSubfileRow](#getfirstsubfilerowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest | the HTML with only fields showing in the first row
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSessionTransactionID](#getsessiontransactionid)() | Gets a string value that represents the Transaction ID from the Session storage | the transaction ID string
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSubfileRecord](#getsubfilerecordstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a cached (in the Session storage) record data for a particular record format, identified by RRN | the HTML text for the subfile record cached
+| [Type]($$TODO-System.Type.html) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | The exact runtime type of the current instance.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [LoadFeedbackValues](#loadfeedbackvalues)() | Derived class implements method to load the Displayfile Feedback Area values. | true if the values were loaded
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadModelPropertiesFromDataSet](#loadmodelpropertiesfromdatasetboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Derived class implements method to load properties from the DataSet, and which properties | 
+| [Object]($$TODO-System.Object.html) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MyAjaxActionResult](#myajaxactionresult)() | Gets the JsonResult with a un-successful response code | the JsonResult
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MyAjaxActionResult*0](#myajaxactionresult*0)() | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MyAjaxActionResult](#myajaxactionresult)() | Gets the JsonResult with a un-successful response code (redirect parameter ignored) | the JsonResult
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [OnCopyBrowserToDspFile](#oncopybrowsertodspfile)() | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [OnCopyDspFileToBrowser](#oncopydspfiletobrowser)() | Callback method right before the workstation data is sent from the Web Server to the Client (browser) | 
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnGet](#onget)() | Gets the User's Page's request response | the action result
@@ -70,9 +76,11 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnPost](#onpost)() | Gets the Post Request's Response | the Action result
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnPostFake](#onpostfake)() | Gets the Fake (prototyping) Post Request's Response | the Action result
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [RedirectToResult](#redirecttoresultredirectedexception)([RedirectedException]($$TODO-ASNA.QSys.Expo.Model.RedirectedException.html)) | Gets ActionResult reference from a request to redirect to a different URL | the Action result
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [SelectMyAction](#selectmyactionboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the IActionResult as a Page render | the Action result
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetResponseIndicators](#setresponseindicators)() | Derived class implements method to set the Response Indicators | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSubfileRecord](#setsubfilerecordstring-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the HTML for a record that needs to be cached in the Session Storage | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A string that represents the current object.
 
 <br>
 <br>
@@ -137,6 +145,67 @@ DumpModelPropertiesToDataSet();
 <br>
 <br>
 
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object obj);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the specified object is equal to the current object; otherwise, false.
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+
+
+<br>
+<br>
+
+### Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Finalize();
+```
+
+
+<br>
+<br>
+
 ### GetFirstSubfileRow([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest
@@ -156,6 +225,24 @@ GetFirstSubfileRow(String recordHTML);
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 the HTML with only fields showing in the first row
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+A hash code for the current object.
 
 
 <br>
@@ -204,6 +291,24 @@ the HTML text for the subfile record cached
 <br>
 <br>
 
+### GetType()
+
+Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetType();
+```
+
+#### Returns
+
+[Type]($$TODO-System.Type.html)
+
+The exact runtime type of the current instance.
+
+
+<br>
+<br>
+
 ### LoadFeedbackValues()
 
 Derived class implements method to load the Displayfile Feedback Area values.
@@ -240,6 +345,24 @@ LoadModelPropertiesFromDataSet(Boolean onlyNonPostedFields);
 <br>
 <br>
 
+### MemberwiseClone()
+
+Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+MemberwiseClone();
+```
+
+#### Returns
+
+[Object]($$TODO-System.Object.html)
+
+A shallow copy of the current Object.
+
+
+<br>
+<br>
+
 ### MyAjaxActionResult()
 
 Gets the JsonResult with a un-successful response code
@@ -252,12 +375,12 @@ MyAjaxActionResult();
 <br>
 <br>
 
-### MyAjaxActionResult*0()
+### MyAjaxActionResult()
 
 Gets the JsonResult with a un-successful response code (redirect parameter ignored)
 
 ```cs
-MyAjaxActionResult*0();
+MyAjaxActionResult();
 ```
 
 
@@ -396,6 +519,31 @@ the Action result
 <br>
 <br>
 
+### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ReferenceEquals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if objA is the same instance as objB or if both are null; otherwise, false.
+
+
+<br>
+<br>
+
 ### SelectMyAction([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Gets the IActionResult as a Page render
@@ -447,6 +595,24 @@ SetSubfileRecord(String formatName, Int32 rrn, String recordHtml);
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | record format name 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | relative record number 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | recordHtml | HTML text 
+
+
+<br>
+<br>
+
+### ToString()
+
+Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+A string that represents the current object.
 
 
 <br>

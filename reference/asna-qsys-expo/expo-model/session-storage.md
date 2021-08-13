@@ -71,13 +71,21 @@ SessionStorage( ISession session );
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearAllSubfiles](#clearallsubfiles)() | Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." prefix at the time this document was written) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A hash code for the current object.
 | [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [GetSessionBytes](#getsessionbytesstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a general byte array from a key in the Session | the stored array
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetSessionInt32](#getsessionint32string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get a general 32-bit integer value to a key in the Session | the stored value
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSessionString](#getsessionstringstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a string from a key on the Session | stored string value
+| [Type]($$TODO-System.Type.html) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | The exact runtime type of the current instance.
+| [Object]($$TODO-System.Object.html) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A shallow copy of the current Object.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetCmdParm](#setcmdparmstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets a Command Parameter to the Monarch Session key | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSessionBytes](#setsessionbytesstring-byte[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Set general byte array to a key in the Session | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSessionInt32](#setsessionint32string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Set a general 32-bit integer value to a key in the Session | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSessionString](#setsessionstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets a string value to a key in the Session | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A string that represents the current object.
 
 <br>
 <br>
@@ -89,6 +97,85 @@ Clears all the Session keys with the name reserved for Subfiles ("ASNA_Sbf." pre
 ```cs
 ClearAllSubfiles();
 ```
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object obj);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the specified object is equal to the current object; otherwise, false.
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+
+
+<br>
+<br>
+
+### Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Finalize();
+```
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+A hash code for the current object.
 
 
 <br>
@@ -166,6 +253,67 @@ stored string value
 <br>
 <br>
 
+### GetType()
+
+Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetType();
+```
+
+#### Returns
+
+[Type]($$TODO-System.Type.html)
+
+The exact runtime type of the current instance.
+
+
+<br>
+<br>
+
+### MemberwiseClone()
+
+Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+MemberwiseClone();
+```
+
+#### Returns
+
+[Object]($$TODO-System.Object.html)
+
+A shallow copy of the current Object.
+
+
+<br>
+<br>
+
+### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ReferenceEquals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if objA is the same instance as objB or if both are null; otherwise, false.
+
+
+<br>
+<br>
+
 ### SetCmdParm([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Sets a Command Parameter to the Monarch Session key
@@ -236,6 +384,24 @@ SetSessionString(String key, String value);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | session key 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | string value 
+
+
+<br>
+<br>
+
+### ToString()
+
+Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+A string that represents the current object.
 
 
 <br>

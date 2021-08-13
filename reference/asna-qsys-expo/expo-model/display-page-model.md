@@ -115,20 +115,69 @@ DisplayPageModel(  );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AjaxGetIconCollectionActionResult](#ajaxgeticoncollectionactionresult)() | Gets the JsonResult for a "getIconCollection" AJAX request<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the Json result object
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AjaxGetRecordsActionResult](#ajaxgetrecordsactionresult)() | Gets the JsonResult for a "getRecords" AJAX request<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the JsonResult
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ApplyEditCode](#applyeditcodedecimal-int32-int32-editcodes)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [EditCodes](/reference/asna-qsys-expo/expo-model/edit-codes.html)) | Formats value according to the provided EditCode | the formatted value as string
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ApplyEditWord](#applyeditworddecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats value according to the provided EditWord | the formatted value as string
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearModelProperties](#clearmodelproperties)() | Resets all records properties to their default values. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearSubfilesInSession](#clearsubfilesinsession)() | Clears cached Session storage entries related to All Subfiles<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DumpModelPropertiesToDataSet](#dumpmodelpropertiestodataset)() | Updates the Dataset byc copying the field values from the Model properties | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html)) | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetAidKeyType](#getaidkeytypeaidkey)([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function. | character 'A' for attention, 'F' for function
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFirstSubfileRow](#getfirstsubfilerowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the HTML with only fields showing in the first row
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [GetHasBeenRead](#gethasbeenread)() | Gets value that indicates Workstation Dataset status | true if Dataset has been read
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A hash code for the current object.
 | [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | [GetLastRecordModelWritten](#getlastrecordmodelwritten)() | Gets a value that indicates the last RecordModel written by the application logic. | RecordModel or null
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetMessageText](#getmessagetextstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the message text from the external message file. Message files are external XML resources. | the text as string
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSessionTransactionID](#getsessiontransactionid)() | Gets a string value that represents the Transaction ID from the Session storage<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the transaction ID string
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSubfileRecord](#getsubfilerecordstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a cached (in the Session storage) record data for a particular record format, identified by RRN<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the HTML text for the subfile record cached
+| [Type]($$TODO-System.Type.html) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | The exact runtime type of the current instance.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsKeyEnabled](#iskeyenabledaidkey)([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the state of the requested AidKey. | true if the AidKey is enabled
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [LoadFeedbackValues](#loadfeedbackvalues)() | Populates the Feedback values on the Active DisplayFile from posted data. | true if the values were loaded
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadModelPropertiesFromDataSet](#loadmodelpropertiesfromdatasetboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Refreshes the Model properties by loading values from the active Dataset | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadModelStateErrors](#loadmodelstateerrors)() | Populates the collection of validation errors. | 
+| [Object]($$TODO-System.Object.html) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A shallow copy of the current Object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MyAjaxActionResult](#myajaxactionresult)() | Gets the JsonResult with a un-successful response code<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the JsonResult
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MyAjaxActionResult](#myajaxactionresult)() | Gets the JsonResult with a un-successful response code (redirect parameter ignored)<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the JsonResult
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [OnCopyBrowserToDspFile](#oncopybrowsertodspfile)() | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server.<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [OnCopyDspFileToBrowser](#oncopydspfiletobrowser)() | Callback method right before the workstation data is sent from the Web Server to the Client (browser)<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
+| [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnGet](#onget)() | Gets the User's Page's request response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the action result
+| [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnGetFake](#ongetfake)() | Gets the Fake (prototyping) Page request's response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the action result
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [OnJobEnding](#onjobending)() | Callback method notifying the server that a Job is ending<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
+| [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnPost](#onpost)() | Gets the Post Request's Response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the Action result
+| [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [OnPostFake](#onpostfake)() | Gets the Fake (prototyping) Post Request's Response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the Action result
+| [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [RedirectToResult](#redirecttoresultredirectedexception)([RedirectedException]($$TODO-ASNA.QSys.Expo.Model.RedirectedException.html)) | Gets ActionResult reference from a request to redirect to a different URL<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | the Action result
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult) | [SelectMyAction](#selectmyactionboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Selects the appropriate action to format a response Page. | Action method result
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetResponseIndicators](#setresponseindicators)() | Sets the response indicators in the Dataset from the Display page attributes. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSubfileRecord](#setsubfilerecordstring-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the HTML for a record that needs to be cached in the Session Storage<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A string that represents the current object.
+
+<br>
+<br>
+
+### AjaxGetIconCollectionActionResult()
+
+Gets the JsonResult for a "getIconCollection" AJAX request<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+AjaxGetIconCollectionActionResult();
+```
+
+
+<br>
+<br>
+
+### AjaxGetRecordsActionResult()
+
+Gets the JsonResult for a "getRecords" AJAX request<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+AjaxGetRecordsActionResult();
+```
+
 
 <br>
 <br>
@@ -199,12 +248,85 @@ ClearModelProperties();
 <br>
 <br>
 
+### ClearSubfilesInSession()
+
+Clears cached Session storage entries related to All Subfiles<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+ClearSubfilesInSession();
+```
+
+
+<br>
+<br>
+
 ### DumpModelPropertiesToDataSet()
 
 Updates the Dataset byc copying the field values from the Model properties
 
 ```cs
 DumpModelPropertiesToDataSet();
+```
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object obj);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the specified object is equal to the current object; otherwise, false.
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+
+
+<br>
+<br>
+
+### Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Finalize();
 ```
 
 
@@ -235,6 +357,30 @@ character 'A' for attention, 'F' for function
 <br>
 <br>
 
+### GetFirstSubfileRow([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+For multiple-row subfile records, gets a string that contains only the fields that will show in the top row, dropping the rest<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+GetFirstSubfileRow(String recordHTML);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | recordHTML | full record in HTML 
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+the HTML with only fields showing in the first row
+
+
+<br>
+<br>
+
 ### GetHasBeenRead()
 
 Gets value that indicates Workstation Dataset status
@@ -248,6 +394,24 @@ GetHasBeenRead();
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 true if Dataset has been read
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+A hash code for the current object.
 
 
 <br>
@@ -292,6 +456,67 @@ GetMessageText(String messageFileName, String messageId, Int32 maxLength);
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 the text as string
+
+
+<br>
+<br>
+
+### GetSessionTransactionID()
+
+Gets a string value that represents the Transaction ID from the Session storage<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+GetSessionTransactionID();
+```
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+the transaction ID string
+
+
+<br>
+<br>
+
+### GetSubfileRecord([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Gets a cached (in the Session storage) record data for a particular record format, identified by RRN<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+GetSubfileRecord(String formatName, Int32 rrn);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | record format name 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | relative record number 
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+the HTML text for the subfile record cached
+
+
+<br>
+<br>
+
+### GetType()
+
+Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetType();
+```
+
+#### Returns
+
+[Type]($$TODO-System.Type.html)
+
+The exact runtime type of the current instance.
 
 
 <br>
@@ -369,6 +594,205 @@ LoadModelStateErrors();
 <br>
 <br>
 
+### MemberwiseClone()
+
+Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+MemberwiseClone();
+```
+
+#### Returns
+
+[Object]($$TODO-System.Object.html)
+
+A shallow copy of the current Object.
+
+
+<br>
+<br>
+
+### MyAjaxActionResult()
+
+Gets the JsonResult with a un-successful response code<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+MyAjaxActionResult();
+```
+
+
+<br>
+<br>
+
+### MyAjaxActionResult()
+
+Gets the JsonResult with a un-successful response code (redirect parameter ignored)<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+MyAjaxActionResult();
+```
+
+
+<br>
+<br>
+
+### OnCopyBrowserToDspFile()
+
+Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server.<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnCopyBrowserToDspFile();
+```
+
+
+<br>
+<br>
+
+### OnCopyDspFileToBrowser()
+
+Callback method right before the workstation data is sent from the Web Server to the Client (browser)<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnCopyDspFileToBrowser();
+```
+
+
+<br>
+<br>
+
+### OnGet()
+
+Gets the User's Page's request response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnGet();
+```
+
+#### Returns
+
+[IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult)
+
+the action result
+
+
+<br>
+<br>
+
+### OnGetFake()
+
+Gets the Fake (prototyping) Page request's response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnGetFake();
+```
+
+#### Returns
+
+[IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult)
+
+the action result
+
+
+<br>
+<br>
+
+### OnJobEnding()
+
+Callback method notifying the server that a Job is ending<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnJobEnding();
+```
+
+
+<br>
+<br>
+
+### OnPost()
+
+Gets the Post Request's Response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnPost();
+```
+
+#### Returns
+
+[IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult)
+
+the Action result
+
+
+<br>
+<br>
+
+### OnPostFake()
+
+Gets the Fake (prototyping) Post Request's Response<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+OnPostFake();
+```
+
+#### Returns
+
+[IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult)
+
+the Action result
+
+
+<br>
+<br>
+
+### RedirectToResult([RedirectedException]($$TODO-ASNA.QSys.Expo.Model.RedirectedException.html))
+
+Gets ActionResult reference from a request to redirect to a different URL<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+RedirectToResult(ASNA.QSys.Expo.Model.RedirectedException WhereTo);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [RedirectedException]($$TODO-ASNA.QSys.Expo.Model.RedirectedException.html) | WhereTo | redirected exception instance 
+
+#### Returns
+
+[IActionResult](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.actionresult)
+
+the Action result
+
+
+<br>
+<br>
+
+### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ReferenceEquals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if objA is the same instance as objB or if both are null; otherwise, false.
+
+
+<br>
+<br>
+
 ### SelectMyAction([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Selects the appropriate action to format a response Page.
@@ -401,6 +825,43 @@ Sets the response indicators in the Dataset from the Display page attributes.
 SetResponseIndicators();
 ```
 
+
+<br>
+<br>
+
+### SetSubfileRecord([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Sets the HTML for a record that needs to be cached in the Session Storage<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html))
+
+```cs
+SetSubfileRecord(String formatName, Int32 rrn, String recordHtml);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | record format name 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | relative record number 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | recordHtml | HTML text 
+
+
+<br>
+<br>
+
+### ToString()
+
+Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+A string that represents the current object.
 
 <br>
 <br>

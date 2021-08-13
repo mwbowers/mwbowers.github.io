@@ -37,17 +37,25 @@ Defines the RecordModel class
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddErrorMessage](#adderrormessagestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds an Error Message to the list of Validation errors | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetMessageText](#getmessagetextstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a string value with the text corresponding to the message requested. | The Message text
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetResultIndicator](#getresultindicatorstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the result indicator numeric value | if result less than 100, the value is the result indicator, otherwise no response indicator was requested
+| [Type]($$TODO-System.Type.html) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | The exact runtime type of the current instance.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsAidKeyInEffect](#isaidkeyineffectaidkey-int32)([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a boolean value indicating if the Aid Key is in effect | true if the Aid key is in effect
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsAidKeyInEffect*0](#isaidkeyineffect*0conditionalproperty-int32)([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a boolean value indicating if the Aid Key is in effect given a conditional property | true if the Aid key is in effect
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsAidKeyInEffect](#isaidkeyineffectconditionalproperty-int32)([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a boolean value indicating if the Aid Key is in effect given a conditional property | true if the Aid key is in effect
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsFalse](#isfalsestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsNotFalse](#isnotfalsestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the resulting value of the evaluation of condition using the optionIndicators. | Return true only if there is no doubt about it. If anything goes wrong, return false
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsNotTrue](#isnottruestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a boolean value indicating the result of evaluation of the condition using the optionIndicators. | Return false only if there is no doubt about it. If anything goes wrong, return true
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsTrue](#istruestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the resulting value of the evaluation of the condition using the optionIndicators. | false only if there is no doubt about it. If anything goes wrong, return true
+| [Object]($$TODO-System.Object.html) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ProcessErrorMessages](#processerrormessagesstring-string-conditionalproperty-conditionalproperty)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html)) | Process Error Message for a field in a record if the condition succeeds | true if error condition and error message was added to the validation error collection
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ResolveConditionalProperty](#resolveconditionalpropertystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a string value that indicates the result of the condition in the property given as a string | The value corresponding to the condition
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ResolveConditionalProperty*0](#resolveconditionalproperty*0conditionalproperty)([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html)) | Gets a string value that indicates the result of the condition in the property given | The value corresponding to the condition
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ResolveConditionalProperty](#resolveconditionalpropertyconditionalproperty)([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html)) | Gets a string value that indicates the result of the condition in the property given | The value corresponding to the condition
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A string that represents the current object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [WasRecordPosted](#wasrecordpostedstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a boolean value that indicates if the Record was posted | true is the Record was posted
 
 <br>
@@ -67,6 +75,85 @@ AddErrorMessage(String errorMessageInfo, String fieldNameID);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | errorMessageInfo | error information 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNameID | field name ID 
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object obj);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the specified object is equal to the current object; otherwise, false.
+
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Equals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+
+
+<br>
+<br>
+
+### Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+Finalize();
+```
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+A hash code for the current object.
 
 
 <br>
@@ -122,6 +209,24 @@ if result less than 100, the value is the result indicator, otherwise no respons
 <br>
 <br>
 
+### GetType()
+
+Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+GetType();
+```
+
+#### Returns
+
+[Type]($$TODO-System.Type.html)
+
+The exact runtime type of the current instance.
+
+
+<br>
+<br>
+
 ### IsAidKeyInEffect([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Gets a boolean value indicating if the Aid Key is in effect
@@ -147,12 +252,12 @@ true if the Aid key is in effect
 <br>
 <br>
 
-### IsAidKeyInEffect*0([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### IsAidKeyInEffect([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Gets a boolean value indicating if the Aid Key is in effect given a conditional property
 
 ```cs
-IsAidKeyInEffect*0(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty, ref Int32 resultingIndicator);
+IsAidKeyInEffect(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty, ref Int32 resultingIndicator);
 ```
 
 #### Parameters
@@ -268,6 +373,24 @@ false only if there is no doubt about it. If anything goes wrong, return true
 <br>
 <br>
 
+### MemberwiseClone()
+
+Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+MemberwiseClone();
+```
+
+#### Returns
+
+[Object]($$TODO-System.Object.html)
+
+A shallow copy of the current Object.
+
+
+<br>
+<br>
+
 ### ProcessErrorMessages([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html))
 
 Process Error Message for a field in a record if the condition succeeds
@@ -290,6 +413,31 @@ ProcessErrorMessages(String recordName, String fieldNameID, ASNA.QSys.Expo.Model
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 true if error condition and error message was added to the validation error collection
+
+
+<br>
+<br>
+
+### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ReferenceEquals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if objA is the same instance as objB or if both are null; otherwise, false.
 
 
 <br>
@@ -319,12 +467,12 @@ The value corresponding to the condition
 <br>
 <br>
 
-### ResolveConditionalProperty*0([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html))
+### ResolveConditionalProperty([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html))
 
 Gets a string value that indicates the result of the condition in the property given
 
 ```cs
-ResolveConditionalProperty*0(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty);
+ResolveConditionalProperty(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty);
 ```
 
 #### Parameters
@@ -338,6 +486,24 @@ ResolveConditionalProperty*0(ASNA.QSys.Expo.Model.ConditionalProperty conditiona
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The value corresponding to the condition
+
+
+<br>
+<br>
+
+### ToString()
+
+Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+A string that represents the current object.
 
 
 <br>
