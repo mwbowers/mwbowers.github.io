@@ -2,7 +2,7 @@
 title: ScrollTypes Enumeration
 ---
 
-Defines the SQL Cursor Scroll types
+Defines the SQL Cursor Scroll types.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -12,7 +12,7 @@ Defines the SQL Cursor Scroll types
 
 ## Remarks
 
-Defines the SQL Cursor Scroll types
+Defines the SQL Cursor Scroll types.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -23,9 +23,9 @@ Defines the SQL Cursor Scroll types
 
 | Name | Description
 | --- | --- 
-| Dynamic | Dynamic cursor
-| NonScrollable | Non-scrollable cursor
-| Scrollable | Scrollable cursor
+| Dynamic | Dynamic cursor.
+| NonScrollable | Non-scrollable cursor.
+| Scrollable | Scrollable cursor.
 
 <br>
 <br>

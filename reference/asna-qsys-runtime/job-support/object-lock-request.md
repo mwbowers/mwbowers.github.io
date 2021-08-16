@@ -7,6 +7,8 @@ Provides facilities to Allocate and De-Allocate object related.
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> ObjectLockRequest
+
 <br>
 <br>
 
@@ -23,13 +25,13 @@ Provides facilities to Allocate and De-Allocate object related.
 
 | Name |  Description 
 | --- | --- 
-| **ObjectLockRequest**( [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) ) | Initializes a new instance of the ObjectLockRequest
+| **ObjectLockRequest**( [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) ) | Initializes a new instance of the ObjectLockRequest.
 
 <br>
 
 ### ObjectLockRequest( [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) )
 
-Initializes a new instance of the ObjectLockRequest
+Initializes a new instance of the ObjectLockRequest.
 
 ```cs
 ObjectLockRequest( ASNA.DataGate.Client.AdgConnection connection );
@@ -56,16 +58,23 @@ ObjectLockRequest( ASNA.DataGate.Client.AdgConnection connection );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddLibrary](#addlibrarystring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Adds a library to the list of objects to allocate. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddMember](#addmemberstring-string-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Adds a file member to the list of objects to allocate. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateDataArea](#allocatedataareaadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Data Area. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateFile](#allocatefileadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual File | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateLibrary](#allocatelibraryadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Library | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateFile](#allocatefileadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual File. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateLibrary](#allocatelibraryadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Library. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateMember](#allocatememberadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual file Member. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateObjects](#allocateobjectswaitoptions-int16)([WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocate the objects in the list. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateDataArea](#deallocatedataareaadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual Data Area | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateFile](#deallocatefileadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual File | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateLibrary](#deallocatelibraryadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual Library | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateMember](#deallocatememberadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual file Member | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateDataArea](#deallocatedataareaadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual Data Area. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateFile](#deallocatefileadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual File. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateLibrary](#deallocatelibraryadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual Library. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateMember](#deallocatememberadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual file Member. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateObjects](#deallocateobjects)() | Deallocate all objects held in the list. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScheduleBatchJob](#schedulebatchjobstring-string-string-string-namevaluecollection)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection)) | Adds a program and its paramenters to a job queue for execution. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
 <br>
@@ -171,7 +180,7 @@ AllocateDataArea(ASNA.DataGate.Client.AdgConnection connection, String pathName,
 
 ### AllocateFile([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-Allocates an individual File
+Allocates an individual File.
 
 ```cs
 AllocateFile(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASNA.DataGate.Common.ShareTypes shareType, ASNA.DataGate.Common.WaitOptions waitOption, Int16 waitTime);
@@ -193,7 +202,7 @@ AllocateFile(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASN
 
 ### AllocateLibrary([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-Allocates an individual Library
+Allocates an individual Library.
 
 ```cs
 AllocateLibrary(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASNA.DataGate.Common.ShareTypes shareType, ASNA.DataGate.Common.WaitOptions waitOption, Int16 waitTime);
@@ -256,7 +265,7 @@ AllocateObjects(ASNA.DataGate.Common.WaitOptions waitOption, Int16 waitTime);
 
 ### DeallocateDataArea([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
 
-Deallocates an individual Data Area
+Deallocates an individual Data Area.
 
 ```cs
 DeallocateDataArea(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASNA.DataGate.Common.ShareTypes shareType);
@@ -276,7 +285,7 @@ DeallocateDataArea(ASNA.DataGate.Client.AdgConnection connection, String pathNam
 
 ### DeallocateFile([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
 
-Deallocates an individual File
+Deallocates an individual File.
 
 ```cs
 DeallocateFile(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASNA.DataGate.Common.ShareTypes shareType);
@@ -296,7 +305,7 @@ DeallocateFile(ASNA.DataGate.Client.AdgConnection connection, String pathName, A
 
 ### DeallocateLibrary([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
 
-Deallocates an individual Library
+Deallocates an individual Library.
 
 ```cs
 DeallocateLibrary(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASNA.DataGate.Common.ShareTypes shareType);
@@ -316,7 +325,7 @@ DeallocateLibrary(ASNA.DataGate.Client.AdgConnection connection, String pathName
 
 ### DeallocateMember([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
 
-Deallocates an individual file Member
+Deallocates an individual file Member.
 
 ```cs
 DeallocateMember(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASNA.DataGate.Common.ShareTypes shareType);
@@ -346,6 +355,121 @@ DeallocateObjects();
 <br>
 <br>
 
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+Equals(Object obj);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the specified object is equal to the current object; otherwise, false.
+
+
+<br>
+<br>
+
+### Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+Finalize();
+```
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+A hash code for the current object.
+
+
+<br>
+<br>
+
+### GetType()
+
+Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+GetType();
+```
+
+#### Returns
+
+[Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)
+
+The exact runtime type of the current instance.
+
+
+<br>
+<br>
+
+### MemberwiseClone()
+
+Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+MemberwiseClone();
+```
+
+#### Returns
+
+[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+
+A shallow copy of the current Object.
+
+
+<br>
+<br>
+
+### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+ReferenceEquals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if objA is the same instance as objB or if both are null; otherwise, false.
+
+
+<br>
+<br>
+
 ### ScheduleBatchJob([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection))
 
 Adds a program and its paramenters to a job queue for execution.
@@ -363,6 +487,24 @@ ScheduleBatchJob(String programPath, String programParameters, String jobName, S
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobName | The name to be given to the new job. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobQueueName | The name of the job queue where the program will be scheduled. 
 | [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | options | A collection of name-values pairs with the scheduling options. 
+
+
+<br>
+<br>
+
+### ToString()
+
+Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+A string that represents the current object.
 
 
 <br>
