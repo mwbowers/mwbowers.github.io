@@ -62,29 +62,28 @@ Defines an input element where characters can be typed using a keyboard. The cap
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the specified object is equal to the current object; otherwise, false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EvalFieldUsageAndValue](#evalfieldusageandvalue)() | Determine the Usage property value according to the property's get/set access specification as declared in the Model.<br>(Inherited from [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [getFieldValue](#getfieldvalue)() | Gets the value of the field from the Model. | the field value as string
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A hash code for the current object.
-| [Type]($$TODO-System.Type.html) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | The exact runtime type of the current instance.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Init](#inittaghelpercontext)([TagHelperContext]($$TODO-TagHelperContext.html)) | Initializes the ITagHelper with the given context.Additions to Items should be done within this method to ensure they're added prior to executing the children.<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsVisible](#isvisible)() | Gets a value that indicates if element should be rendered.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | True when conditional indicator expression evaluates to true, false otherwise.
-| [Object]($$TODO-System.Object.html) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A shallow copy of the current Object.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Process](#processtaghelpercontext-taghelperoutput)([TagHelperContext]($$TODO-TagHelperContext.html), [TagHelperOutput]($$TODO-TagHelperOutput.html)) | Synchronously executes the TagHelper with the given context and output.<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | A stateful HTML element used to generate an HTML tag.
 | [Task]($$TODO-System.Threading.Task.html) | [ProcessAsync](#processasynctaghelpercontext-taghelperoutput)([TagHelperContext]($$TODO-TagHelperContext.html), [TagHelperOutput]($$TODO-TagHelperOutput.html)) | Asynchronously executes the TagHelper with the given context and output.<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | A Task that on completion updates the output.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ProcessDdsField](#processddsfield)() | When overriden in a derived class, method is called by rendering engine to write the HTML output.<br>(Inherited from [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ProcessValues](#processvaluestaghelperoutput-string)([TagHelperOutput](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput?view=aspnetcore-5.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Process Display Values.<br>(Inherited from [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html)) | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A string that represents the current object.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
 <br>
 
 ### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 Equals(Object obj);
@@ -106,31 +105,6 @@ true if the specified object is equal to the current object; otherwise, false.
 <br>
 <br>
 
-### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html))
-
-```cs
-Equals(Object objA, Object objB);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
-
-
-<br>
-<br>
-
 ### EvalFieldUsageAndValue()
 
 Determine the Usage property value according to the property's get/set access specification as declared in the Model.<br>(Inherited from [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html))
@@ -145,7 +119,7 @@ EvalFieldUsageAndValue();
 
 ### Finalize()
 
-Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 Finalize();
@@ -175,7 +149,7 @@ the field value as string
 
 ### GetHashCode()
 
-Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 GetHashCode();
@@ -193,7 +167,7 @@ A hash code for the current object.
 
 ### GetType()
 
-Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 GetType();
@@ -201,7 +175,7 @@ GetType();
 
 #### Returns
 
-[Type]($$TODO-System.Type.html)
+[Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)
 
 The exact runtime type of the current instance.
 
@@ -247,7 +221,7 @@ True when conditional indicator expression evaluates to true, false otherwise.
 
 ### MemberwiseClone()
 
-Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 MemberwiseClone();
@@ -255,7 +229,7 @@ MemberwiseClone();
 
 #### Returns
 
-[Object]($$TODO-System.Object.html)
+[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 
 A shallow copy of the current Object.
 
@@ -340,7 +314,7 @@ ProcessValues(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput output, ref 
 
 ### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 ReferenceEquals(Object objA, Object objB);
@@ -365,7 +339,7 @@ true if objA is the same instance as objB or if both are null; otherwise, false.
 
 ### ToString()
 
-Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
+Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
 ToString();
