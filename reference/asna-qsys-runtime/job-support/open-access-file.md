@@ -7,6 +7,8 @@ Provides the facilities to use a display file without prior infrastructure.
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> OpenAccessFile
+
 <br>
 <br>
 
@@ -58,7 +60,7 @@ OpenAccessFile( String displayFilePath );
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackLowestSubfile | Gets or sets the subfile record number on first record displayed on the screen when the AID key was pressed. | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackSubfileCursorRRN | Gets or sets the subfile record number where the cursor was position when the AID key was pressed. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | LibraryNameFound | Gets the library where file was found. | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | OpenAccessFileID | Unique file identifier | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | OpenAccessFileID | Unique file identifier. | 
 
 <br>
 <br>
@@ -70,10 +72,17 @@ OpenAccessFile( String displayFilePath );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearRecords](#clearrecordsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Clears all the data from a record format's buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes the dispaly file disposing of its resources. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Closes the file and releases the resources used by the current instance of the OpenAccessFile class. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose*0](#dispose*0)() | Closes the file and releases the resources used by the current instance of the OpenAccessFile class. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Extend](#extendstring-char[]-action{system.string-system.data.datarow-system.object}-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#dispose)() | Closes the file and releases the resources used by the current instance of the OpenAccessFile class. | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [Open](#open)() | Opens the display file for IO operations, allocating the dataset buffer for the file's records. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#read)() | Presents the current data on the device and waits for the user to enter new data. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-action{system.string-system.data.datarow-system.object}-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer. | 
 
 <br>
@@ -127,13 +136,25 @@ Dispose(Boolean disposing);
 <br>
 <br>
 
-### Dispose*0()
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
+Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 ```cs
-Dispose*0();
+Equals(Object obj);
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if the specified object is equal to the current object; otherwise, false.
 
 
 <br>
@@ -155,6 +176,84 @@ Extend(String formatName, Char[] optionIndicators, Action{System.String,System.D
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | An array with the values of the indicators to associate with this record. 
 | [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html) | populateBuffer | The action that will populate individual fields of the new record. 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | popCookie | A user defined object passed thru to the action. 
+
+
+<br>
+<br>
+
+### Finalize()
+
+Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+Finalize();
+```
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+A hash code for the current object.
+
+
+<br>
+<br>
+
+### GetType()
+
+Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+GetType();
+```
+
+#### Returns
+
+[Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)
+
+The exact runtime type of the current instance.
+
+
+<br>
+<br>
+
+### Dispose()
+
+Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
+
+```cs
+Dispose();
+```
+
+
+<br>
+<br>
+
+### MemberwiseClone()
+
+Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+MemberwiseClone();
+```
+
+#### Returns
+
+[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+
+A shallow copy of the current Object.
 
 
 <br>
@@ -185,6 +284,49 @@ Presents the current data on the device and waits for the user to enter new data
 ```cs
 Read();
 ```
+
+
+<br>
+<br>
+
+### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+ReferenceEquals(Object objA, Object objB);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if objA is the same instance as objB or if both are null; otherwise, false.
+
+
+<br>
+<br>
+
+### ToString()
+
+Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+```cs
+ToString();
+```
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+A string that represents the current object.
 
 
 <br>

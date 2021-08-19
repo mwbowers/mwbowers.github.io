@@ -26,8 +26,8 @@ Indicates the execution state of a job.
 | AbnormalTermination | The job terminated due to an unhandled exception.
 | Ended | The job has ended.
 | Ending | The job is ending.
-| ForcefullyTerminated | the job was terminated before it could attempt to shutdown on its own
-| PrematurellyTerminated | The job was terminated before it could shutdown on its own on time
+| ForcefullyTerminated | the job was terminated before it could attempt to shutdown on its own.
+| PrematurellyTerminated | The job was terminated before it could shutdown on its own on time.
 | Running | Job is running.
 | ShutdownRequested | The job has been requested to be shut down.
 

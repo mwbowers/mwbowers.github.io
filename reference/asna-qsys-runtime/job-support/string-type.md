@@ -2,7 +2,7 @@
 title: StringType Enumeration
 ---
 
-Specifies the kind of message included in an exception message
+Specifies the kind of message included in an exception message.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -12,7 +12,7 @@ Specifies the kind of message included in an exception message
 
 ## Remarks
 
-Specifies the kind of message included in an exception message
+Specifies the kind of message included in an exception message.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -110,9 +110,9 @@ StringType( Object[] errorRepl, Object[] causeRepl, Object[] recoveryRepl, Int32
 
 | Name | Description
 | --- | --- 
-| Cause | A message describing the cause of the error
-| Error | The primary error message
-| Recovery | A description of a possible recovery for the error
+| Cause | A message describing the cause of the error.
+| Error | The primary error message.
+| Recovery | A description of a possible recovery for the error.
 
 <br>
 <br>
