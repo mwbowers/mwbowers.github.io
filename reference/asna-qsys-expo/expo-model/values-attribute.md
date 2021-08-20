@@ -88,7 +88,7 @@ ValuesAttribute( Type type, Object[] validValues );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Func<object,object>]($$TODO-Func<object,object>.html) | Conversion | Gets ir sets the collection of functions used for the values conversion | 
+| [Func&lt;object,object&gt;]($$TODO-Func<object,object>.html) | Conversion | Gets ir sets the collection of functions used for the values conversion | 
 | [ErrorMessage](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessage) | ErrorMessage | Gets or sets an error message to associate with a validation control if validation fails.<br>(Inherited from [ValidationAttribute]($$TODO-System.ComponentModel.DataAnnotations.ValidationAttribute.html)) | 
 | [ErrorMessageResourceName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcename) | ErrorMessageResourceName | Gets or sets the error message resource name to use in order to look up the ErrorMessageResourceType property value if validation fails.<br>(Inherited from [ValidationAttribute]($$TODO-System.ComponentModel.DataAnnotations.ValidationAttribute.html)) | 
 | [ErrorMessageResourceType](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype) | ErrorMessageResourceType | Gets or sets the resource type to use for error-message lookup if validation fails.<br>(Inherited from [ValidationAttribute]($$TODO-System.ComponentModel.DataAnnotations.ValidationAttribute.html)) | 

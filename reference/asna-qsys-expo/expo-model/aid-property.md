@@ -123,42 +123,6 @@ AidProperty( String aidString );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
-| [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
-
-<br>
-<br>
-
-## Methods
-
-| Type | Name | Description | Return Description 
-| --- | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the specified object is equal to the current object; otherwise, false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object instances are considered equal<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if the objects are considered equal; otherwise, false. If both objA and objB are null, the method returns true.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object]($$TODO-System.Object.html)) | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A hash code for the current object.
-| [Type]($$TODO-System.Type.html) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | The exact runtime type of the current instance.
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetValidValues](#getvalidvalues)() | Gets the valid values collection (string array) | the array of valid values
-| [Object]($$TODO-System.Object.html) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A shallow copy of the current Object.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object]($$TODO-System.Object.html)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Reset](#reset)() | Resets the ConditionalProperty Array to its initial values | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object]($$TODO-System.Object.html)) | A string that represents the current object.
-
-<br>
-<br>
-
-### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified object is equal to the current object.<br>(Inherited from [Object]($$TODO-System.Object.html))
-
-```cs
-Equals(Object obj);
-```
-
-## Properties
-
-| Type | Name | Description | Indexer
-| --- | --- | --- | --- 
 | [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | Item([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)) | Gets the element indexed by aidKey from the Conditional Property collection. | aidKey /* input index */
 | [ConditionalProperty[]](/reference/asna-qsys-expo/expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection | 
 
