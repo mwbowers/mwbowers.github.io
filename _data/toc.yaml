@@ -252,6 +252,10 @@ Manuals:
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
+  - sectiontitle: Enhancing your Migrated Application
+    section:
+    - title: Using Non-Display File Pages
+      path: /manuals/migrations/enhancing-with-non-display-file.html
 
 ##
 Reference:

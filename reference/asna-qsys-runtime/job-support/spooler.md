@@ -30,18 +30,18 @@ Provides the ifrastucture to manage spooled output from print files.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateQueue](#createqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new output queue. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteFile](#deletefilestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a spool file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteQueue](#deletequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete an output queue. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ExistsQueue](#existsqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Check for the existance of an output queue. | true if the output queue exists; otherwise false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNewFilePath](#getnewfilepathstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the file path for a new spool file to be produced by proviced the printer file name. | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [HoldFile](#holdfilestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Mark a spool file to be held. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [HoldQueue](#holdqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Hold an output queue. No spool file will be printed. | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveFile](#movefilestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Move a spool file to a new output queue. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PrintQueue](#printqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produce a new spool file with the information about the spool files in an output queue. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReleaseFile](#releasefilestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Mark a spool file as Released so that it can be sent to a printer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReleaseQueue](#releasequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Release an output queue so that printing can continue. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RenameQueue](#renamequeuestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Rename an output queue. | 
@@ -49,7 +49,7 @@ Provides the ifrastucture to manage spooled output from print files.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetFileFormType](#setfileformtypestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Set a spool file's form type. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetFileSaveAfter](#setfilesaveafterstring-string-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Mark a spooled file to be saved, or not, after being printed. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetFileUserData](#setfileuserdatastring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Set the value of the user data for a spool file. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](#tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
 <br>
@@ -153,30 +153,6 @@ DeleteQueue(String queueName);
 <br>
 <br>
 
-### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-Equals(Object obj);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-true if the specified object is equal to the current object; otherwise, false.
-
-
-<br>
-<br>
-
 ### ExistsQueue([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Check for the existance of an output queue.
@@ -201,36 +177,6 @@ true if the output queue exists; otherwise false.
 <br>
 <br>
 
-### Finalize()
-
-Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-Finalize();
-```
-
-
-<br>
-<br>
-
-### GetHashCode()
-
-Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-GetHashCode();
-```
-
-#### Returns
-
-[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
-
-A hash code for the current object.
-
-
-<br>
-<br>
-
 ### GetNewFilePath([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Gets the file path for a new spool file to be produced by proviced the printer file name.
@@ -250,24 +196,6 @@ GetNewFilePath(String printerFile);
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 
-
-
-<br>
-<br>
-
-### GetType()
-
-Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-GetType();
-```
-
-#### Returns
-
-[Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)
-
-The exact runtime type of the current instance.
 
 
 <br>
@@ -311,24 +239,6 @@ HoldQueue(String queueName);
 <br>
 <br>
 
-### MemberwiseClone()
-
-Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-MemberwiseClone();
-```
-
-#### Returns
-
-[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
-
-A shallow copy of the current Object.
-
-
-<br>
-<br>
-
 ### MoveFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Move a spool file to a new output queue.
@@ -363,31 +273,6 @@ PrintQueue(String queueName);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | queueName | The name of the output queue to be printed. 
-
-
-<br>
-<br>
-
-### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-ReferenceEquals(Object objA, Object objB);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-true if objA is the same instance as objB or if both are null; otherwise, false.
 
 
 <br>
@@ -528,24 +413,6 @@ SetFileUserData(String spoolFileName, String jobId, String spoolNumber, String n
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newUserData | The new value of the user data. 
-
-
-<br>
-<br>
-
-### ToString()
-
-Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-ToString();
-```
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-A string that represents the current object.
 
 
 <br>
