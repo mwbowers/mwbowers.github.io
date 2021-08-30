@@ -92,24 +92,24 @@ Invocation( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Removes all invocation entries from the stack. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Invocation[]](/reference/asna-qsys-runtime/job-support/invocation.html) | [GetInvocationArrayCopy](#getinvocationarraycopy)() | Gets a copy of the invocation stack. | An array of invocation entries.
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetInvocationStrings](#getinvocationstrings)() | Gets an array of formatted strings for the invocation stack. | An array of formatted strings for the invocation stack entries.
 | [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeueint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the message queue associated with an invocation. | The mssage queue of the invocation etnry.
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](#gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [isActivationGroupActive](#isactivationgroupactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a value indicating whether there are any programs in the invocation stack instanced in an specific activation group. | 
 | [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the message queue associated with the program; otherwise null.
 | [Invocation](/reference/asna-qsys-runtime/job-support/invocation.html) | [PeekInvocation](#peekinvocationstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the invocation entry associated with the program; otherwise null.
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](#memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Invocation](/reference/asna-qsys-runtime/job-support/invocation.html) | [PeekInvocation](#peekinvocationint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an Invocation entry on the invocation stack. | The invocation on the stack; if not found, null.
 | [Invocation](/reference/asna-qsys-runtime/job-support/invocation.html) | [popInvocation](#popinvocation)() | Pops the newest entry from the invocation stack. | The popped invocation. May return null if job is ending.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PopInvocation](#popinvocation)() | Pops the newest entry from the current job's invocation stack. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [preventRecursion](#preventrecursioncommonprogram)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html)) | Throw a RecursiveCallException exception if a program is in the invocation stack. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [pushInvocation](#pushinvocationcommonprogram-string-string-string)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create an invocation entry at the top of stack. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PushInvocation](#pushinvocationcommonprogram-string-string-string)([CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create an invocation entry at the top of stack for the current job. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](#referenceequalsobject-object)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Produce a readable version of the Invocation entry. | A formatted string with the program, module, procedure and activation group names..
 
 <br>
@@ -122,60 +122,6 @@ Removes all invocation entries from the stack.
 ```cs
 Clear();
 ```
-
-
-<br>
-<br>
-
-### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-Equals(Object obj);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-true if the specified object is equal to the current object; otherwise, false.
-
-
-<br>
-<br>
-
-### Finalize()
-
-Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-Finalize();
-```
-
-
-<br>
-<br>
-
-### GetHashCode()
-
-Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-GetHashCode();
-```
-
-#### Returns
-
-[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
-
-A hash code for the current object.
 
 
 <br>
@@ -236,24 +182,6 @@ GetInvokedMessageQueue(Int32 invocationOffset);
 [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html)
 
 The mssage queue of the invocation etnry.
-
-
-<br>
-<br>
-
-### GetType()
-
-Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-GetType();
-```
-
-#### Returns
-
-[Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)
-
-The exact runtime type of the current instance.
 
 
 <br>
@@ -326,24 +254,6 @@ PeekInvocation(String programQueueId);
 [Invocation](/reference/asna-qsys-runtime/job-support/invocation.html)
 
 If found, the invocation entry associated with the program; otherwise null.
-
-
-<br>
-<br>
-
-### MemberwiseClone()
-
-Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-MemberwiseClone();
-```
-
-#### Returns
-
-[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
-
-A shallow copy of the current Object.
 
 
 <br>
@@ -458,31 +368,6 @@ PushInvocation(ASNA.QSys.Runtime.JobSupport.CommonProgram program, String activa
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | activationGroupName | The activation group where the program is instanced. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | moduleName | The name of the module where the procedure is defined. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | procedureName | The name of the invoked procedure. 
-
-
-<br>
-<br>
-
-### ReferenceEquals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-```cs
-ReferenceEquals(Object objA, Object objB);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objA | The first object to compare. 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | objB | The second object to compare. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-true if objA is the same instance as objB or if both are null; otherwise, false.
 
 
 <br>
