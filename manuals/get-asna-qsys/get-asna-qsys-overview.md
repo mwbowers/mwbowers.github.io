@@ -54,9 +54,9 @@ a.	Go to **Tools -> Options -> NuGet Package Manager -> Package Sources**
 b.	Click the **+** button in the upper right corner to add a new source
 ![VS Package Source](images/vs-package-sources.jpg)
 
-c.	Change the name to something useful such as “GitHub-AsnaQSys”
+c.	Change the name to something useful such as **GitHub-AsnaQSys**
 
-d.	Change the Source to https://nuget.pkg.github.com/asnaqsys/index.json
+d.	Change the Source to **https://nuget.pkg.github.com/asnaqsys/index.json**
 
 e.	Click **Update**
 
@@ -74,8 +74,8 @@ d.	Click **Browse**
 ![VS Package Browse](images/vs-package-browse.jpg)
 
 e.	You should be prompted to enter credentials (if not, hit the refresh button)
-  1.	Enter your GitHub user name (not email address).
-  2.	Enter the Personal Access Token generated previously.
+  1.	Enter your **GitHub user name* (not email address).
+  2.	Enter the **Personal Access Token** generated previously (not your GitHub password).
   3.	Check **Remember my password**
   4.	Click **OK**
 
