@@ -93,3 +93,13 @@ SubfileRecordModel( Int32 rowNumber );
 <br>
 <br>
 
+## Fields
+
+| Type | Name | Description
+| --- | --- | --- 
+| [AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | AttnKeys | Gets or sets the Attention Keys AID Property<br>(Inherited from [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html))
+| [AidProperty](/reference/asna-qsys-expo/expo-model/aid-property.html) | FuncKeys | Gets or sets the Function Keys AID Property<br>(Inherited from [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html))
+
+<br>
+<br>
+

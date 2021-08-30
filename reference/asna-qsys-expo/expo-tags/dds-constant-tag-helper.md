@@ -84,3 +84,12 @@ A string value
 <br>
 <br>
 
+## Fields
+
+| Type | Name | Description
+| --- | --- | --- 
+| [DdsFileTagHelper](/reference/asna-qsys-expo/expo-tags/dds-file-tag-helper.html) | ddsFile | Gets or sets a value indicating the associated DdsFile tag helper for the field/constant.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html))
+
+<br>
+<br>
+

@@ -32,11 +32,11 @@ Defines a Display record
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Order | When a set of ITagHelpers are executed, their Init(TagHelperContext)'s are first invoked in the specified Order; then their ProcessAsync(TagHelperContext, TagHelperOutput)'s are invoked in the specified Order. Lower values are executed first<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | 
 | [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) | RecordModel | Gets or sets RecordModel associated with the Record tag helper<br>(Inherited from [RecordBaseTagHelper](/reference/asna-qsys-expo/expo-tags/record-base-tag-helper.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | StretchConstantText | Gets or sets a value indicating if text for constants in the record are to be stretched-out to fill column positions | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowHeightRows | Gets or sets the window height. | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowLeftCol | Gets or sets the left horizontal position of the window. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowHeightRows | Gets or sets the window height. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowLeftCol | Gets or sets the left horizontal position of the window. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | WindowTitle | Gets or sets the label for the Window record's Title | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowTopRow | Gets or sets the top vertical position of the window. | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowWidthCols | Gets or sets the window width. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowTopRow | Gets or sets the top vertical position of the window. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowWidthCols | Gets or sets the window width. | 
 
 <br>
 <br>

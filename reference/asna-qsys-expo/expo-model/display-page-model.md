@@ -84,7 +84,7 @@ DisplayPageModel(  );
 | --- | --- | --- | --- 
 | [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) | ActiveDataSet | Gets the Active DataSet for the Active Displayfile<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
 | [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | ActiveDisplayFile | Gets the Active Web Displayfile<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ajaxReq | Gets or sets a value indicating wether the request context type was application AJAX<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
+| [ExpoAjaxRequest]($$TODO-ExpoAjaxRequest.html) | ajaxReq | Gets or sets a value indicating wether the request context type was application AJAX<br>(Inherited from [YellowPageModel](/reference/asna-qsys-expo/expo-model/yellow-page-model.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFieldName | Gets a value that indicating the name of field where the Cursor was last located on the Page. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocationFormatName | Gets a value that indicating the name of the format where the Cursor was last located on the Page. | 
 | [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext) | HttpContext | Gets the HttpContext.<br>(Inherited from [PageModel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.razorpages.pagemodel)) | 

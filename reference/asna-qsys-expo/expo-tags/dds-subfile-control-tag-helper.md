@@ -50,11 +50,11 @@ Defines a Subfile Controller element
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileEndTextOn | Gets or sets a value of the label displayed by subfile when there are no records (last page) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileFold | Gets or sets a value of the label on Active Key banner associated with subfile-fold action | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubfilePage | Gets or sets the Page value | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowHeightRows | Gets or sets the window height.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowLeftCol | Gets or sets the left horizontal position of the window.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowHeightRows | Gets or sets the window height.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowLeftCol | Gets or sets the left horizontal position of the window.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | WindowTitle | Gets or sets the label for the Window record's Title<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowTopRow | Gets or sets the top vertical position of the window.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | WindowWidthCols | Gets or sets the window width.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowTopRow | Gets or sets the top vertical position of the window.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowWidthCols | Gets or sets the window width.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
 
 <br>
 <br>
