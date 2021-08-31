@@ -254,8 +254,13 @@ Manuals:
       path: /manuals/migrations/ifs-and-dlo.html
   - sectiontitle: Enhancing your Migrated Application
     section:
-    - title: Using Non-Display File Pages
-      path: /manuals/migrations/enhancing-with-non-display-file.html
+    - sectiontitle: Using Non-Display File Pages
+      sectionpath: /manuals/migrations/enhancing-with-non-display-file.html
+      section:
+      - title: Showing a Non-DisplayFile Page
+        path: /manuals/migrations/showing-non-displayfile-page.html
+      - title: Calling a Program from a Non-DisplayFile Page
+        path: /manuals/migrations/calling-program-from-non-displayfile-page.html
 
 ##
 Reference:
@@ -1858,6 +1863,8 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/char-attribute.html
       - title: ColorProperty
         path: /reference/asna-qsys-expo/expo-model/color-property.html
+      - title: Command
+        path: /reference/asna-qsys-expo/expo-model/command.html
       - title: ConditionalProperty
         path: /reference/asna-qsys-expo/expo-model/conditional-property.html
       - title: ConditionalValue
