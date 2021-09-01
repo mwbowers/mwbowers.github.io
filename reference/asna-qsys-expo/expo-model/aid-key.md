@@ -2,7 +2,7 @@
 title: AidKey Enumeration
 ---
 
-Specifies the Attention indicator index
+Specifies the Attention Indicator index
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -12,9 +12,7 @@ Specifies the Attention indicator index
 
 ## Remarks
 
-Specifies the Attention indicator index
-
-[//]: # ($$TODO: Complete the Remarks section.)
+A convenient simple encoding for the Attention Indicators. Compare with [AidKeyIBM Enumeration](/reference/asna-qsys-expo/expo-model/aid-key-ibm.html) which is used to report Attention Indicator Feedback hex codes as expected by Legacy Application Logic.
 
 <br>
 <br>
