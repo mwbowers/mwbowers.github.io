@@ -12,9 +12,9 @@ Exposes DisplayFile properties and methods
 
 ## Remarks
 
-Exposes DisplayFile properties and methods
+Encapsulates the portion if the class that implements this interface with properties and methods that are common between the Application logic and the Interactive Website.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The interface is used by ASNA.QSys.Runtime's [Workstation file concept](http://localhost:4000/concepts/user-interface/qsys-expo-display-pages.html) maintaining the two assemblies (ASNA.QSys.Expo and ASNA.QSys.Runtime) [Loosely coupled](https://en.wikipedia.org/wiki/Loose_coupling).      
 
 <br>
 <br>

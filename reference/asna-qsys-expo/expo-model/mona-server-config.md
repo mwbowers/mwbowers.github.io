@@ -14,10 +14,7 @@ Provides Mona-Server Configuration functionality
 
 ## Remarks
 
-Provides Mona-Server Configuration functionality
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
+Implements the [IMonaServerConfig Interface](/reference/asna-qsys-expo/expo-model/i-mona-server-config.html), allowing the Website to add [MonaServer](The application server) as a service during the Website Startup [Dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection).
 <br>
 <br>
 
