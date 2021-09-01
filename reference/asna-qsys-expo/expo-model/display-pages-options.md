@@ -14,9 +14,11 @@ Provides configuration for Display Pages.
 
 ## Remarks
 
-Provides configuration for Display Pages.
+Website Applications using `ASNA.QSys.Expo` assembly, typically have a configuration file at the root folder of the site named: `appsettings.json`.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The configuration file `appsettings.json` uses [JSON](https://www.json.org/json-en.html) file format.
+
+There is a `"DisplayPages"` object defined in the schema for `appsettings.json`, where the Properties described by this class can be set to configure the Website. 
 
 <br>
 <br>
