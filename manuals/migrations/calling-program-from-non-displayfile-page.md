@@ -25,7 +25,8 @@ On the website we'll be making calls to programs on the Job.  Assume a menu is t
     ...
 ```
 
-The Minutus Razor Page would be responsible for starting the Job and presenting the menu to the user, this could be achieved by adding an OnGet() method to Minutus as follows:
+### Starting the Job
+The website is responsible for starting the Job, we will do it in the Minutus Razor Page prior to presenting the menu to the user, this could be achieved by adding an OnGet() method to Minutus as follows:
 
 ```cs
 public void OnGet()
@@ -40,6 +41,7 @@ public void OnGet()
 }
 ```
 
+### Calling a Program
 The menu could present various options, we could add this to the OnPost() method of the Minutus page to handle the user selection:
 
 ```cs
@@ -143,8 +145,7 @@ Once the program returns, Monarch will redirect the browser back to /Minutes as 
 
 ```
 
-### Calling a Non-Interactive program call
-
+### Calling a Non-Interactive program
 Calling non-interactive programs is simpler as it is not necessary to deal with the browser redirecting to display file pages and back to some other landing page.
 
 In the following example we have added an option to call a program, which requires an character input parameter with a customer number, and to process the two values returned by the program.
@@ -162,6 +163,38 @@ In the following example we have added an option to call a program, which requir
                         break;
                     }
 ```
+
+
+### Driving an Interactive Program
+It is possible to call an interactive program, but instead of letting it display its screen, capture the data in the display file and then feed it arbitrary data and function keys.  This process is achieved by the use of the `CallSilent` and `PushKeyFocus` methods as shown below.
+
+```cs
+                case 4:
+                    {
+                        WebDisplayFileProxy df = command.CallSilent(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>());
+                        var recordRow = df.DataSet.Tables["SFLC"].Rows[0];
+                        recordRow["SETNAME"] = "Interna";
+                        recordRow["*Direction"] = "I";
+                        df = command.PushKeyFocus(AidKeyIBM.Enter, 17, "SETNAME");
+                        if (df.DataSet.Tables["SFL1"].Rows.Count > 0)
+                        {
+                            var subfileRecordRow = df.DataSet.Tables["SFL1"].Rows[0];
+                            SimilarCustomer = subfileRecordRow["SFNAME1"].ToString();
+                        }
+                        // End CUSTINQ execution and take Job back to Accepting Commands.
+                        df = command.PushKeyFocus(AidKeyIBM.F3, 0, "");
+                        break;
+                    }
+```
+
+There are a few things to consider when driving a program this way.  It is the responsibility of the website to directly populate the display file's dataset tables with the whatever data is desired to be delivered to the program. Each record format in the display file has a corresponding data table in the dataset. In the example above we are setting the value of the SETNAME field of the SFLC record format.
+
+Another consideration is the need to mark the record's row as being available to the program with input data.  This is effected by this line:
+```cs
+        recordRow["*Direction"] = "I";
+```
+
+ It is very important that the program must ends execution so that the Job goes back to the [**D**. Accepting Commands](enhancing-with-non-display-file.html#accepting-commands) state. In the example above this is effected by 'pushing' key F3 which is how the CUSTINQ program ends.  
 
 
 ## Minutus
@@ -183,26 +216,31 @@ Here is the complete code for Minutus.
         <input asp-for="CustomerNumber" />
 
         <p><em>2 - Orders for Customer </em></p>
-        <p>
-            <em>3 - Sales & Returns for Customer </em>
-            @if (@Model.Sales >= 0)
-            {
-                <p>
-                    <span>Sales = @Model.Sales Returns=@Model.Returns</span>
-                </p>
-            }
-            <p />
 
-            <p> <em>0 - Exit.</em></p>
-            <label asp-for="Option"></label>
-            <input asp-for="Option" />
-
-            <p class="actions">
-                <button class="btn">Execute</button>
+        <p><em>3 - Sales & Returns for Customer </em> </p>
+        @if (@Model.Sales >= 0)
+        {
+            <p>
+                <span>Sales = @Model.Sales Returns=@Model.Returns</span>
             </p>
-        </form>
-</div>
+        }
 
+        <p> <em>4 - Harvest Screen.</em> </p>
+        @if (@Model.SimilarCustomer != null)
+        {
+            <p>
+                <span>Customer similar to 'Interna' is '@Model.SimilarCustomer'</span>
+            </p>
+        }
+        <p> <em>0 - Exit.</em></p>
+        <label asp-for="Option"></label>
+        <input asp-for="Option" />
+
+        <p class="actions">
+            <button class="btn">Execute</button>
+        </p>
+    </form>
+</div>
 ```
 
 ### Minutus.cshtml.cs
@@ -218,19 +256,20 @@ using Microsoft.Extensions.Configuration;
 
 namespace CustAppSite.Pages
 {
+    [BindProperties]
     public class MinutusModel : PageModel
     {
-        [BindProperty, Range(0, 3), Display(Name = "Option")]
-        public int Option { get; set; } = 3;
+        [Range(0, 4)]
+        public int Option { get; set; } = 2;
 
-        [BindProperty, Range(10000, 99999), Display(Name = "CustomerNumber")]
+        [Range(10000, 99999)]
         public decimal CustomerNumber { get; set; } = 64000;
 
-        [BindProperty, Display(Name = "Sales")]
         public decimal Sales { get; private set; } = -1;
 
-        [BindProperty, Display(Name = "Returns")]
         public decimal Returns { get; private set; } = -1;
+
+        public string SimilarCustomer { get; private set; }
 
         public void OnGet()
         {
@@ -286,6 +325,22 @@ namespace CustAppSite.Pages
                                 command.Call(AssemblyPath, "Acme.ERCAP.CUSTCALC", parms);
                                 Sales = decimal.Parse(parms[1]);
                                 Returns = decimal.Parse(parms[2]);
+                                break;
+                            }
+                        case 4:
+                            {
+                                WebDisplayFileProxy df = command.CallSilent(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>());
+                                var recordRow = df.DataSet.Tables["SFLC"].Rows[0];
+                                recordRow["SETNAME"] = "Interna";
+                                recordRow["*Direction"] = "I";
+                                df = command.PushKeyFocus(AidKeyIBM.Enter, 17, "SETNAME");
+                                if (df.DataSet.Tables["SFL1"].Rows.Count > 0)
+                                {
+                                    var subfileRecordRow = df.DataSet.Tables["SFL1"].Rows[0];
+                                    SimilarCustomer = subfileRecordRow["SFNAME1"].ToString();
+                                }
+                                // End CUSTINQ execution and take Job back to Accepting Commands.
+                                df = command.PushKeyFocus(AidKeyIBM.F3, 0, "");
                                 break;
                             }
                         case 0:
