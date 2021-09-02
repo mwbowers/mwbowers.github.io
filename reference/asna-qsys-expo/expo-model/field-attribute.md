@@ -14,9 +14,34 @@ Provides Displayfile field attributes
 
 ## Remarks
 
-Provides Displayfile field attributes
+IBM i Displayfiles allows the designer to specify metadata (via keywords) on fields that describe how fields should interact with user. For example, [DDS](https://www.ibm.com/docs/en/i/7.1?topic=ddf-dds-keyword-entries-display-files-positions-45-through-80) allows th indicate that a particular field on a records should be [protected](https://www.ibm.com/docs/en/i/7.1?topic=80-dspatr-display-attribute-keyword-display-files) from input, conditioned to a particular option indicator. 
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, the following DDS specifications define field `SITMNBR` (in Record format `ORDLINE`), where not only does it describe the type and length of the display field, but the fact that when Indicator 88 is `On`, the field should be protected from input (aka read-only).
+
+```
+0076.00     A            SITMNBR        9Y 0B  3 15                                    000000
+0078.00     A  88                                  DSPATR(PR)                          000000
+```
+
+Razor syntax nor HTML syntax use the concept of Indicators. Fields in Expo may include attributes, such as `Protect` (indicated below), that complete the specification.
+
+```cs
+public class ORDLINE_Model : RecordModel
+{
+    .
+    .
+    .
+
+    [Dec(9, 0, Protect = "88")]
+    public decimal SITMNBR { get; set; }
+
+   .
+   .
+   .
+}
+```
+
+The name indicated in C# syntax for the Field Attributes maps to the Properties listed on this class.
 
 <br>
 <br>

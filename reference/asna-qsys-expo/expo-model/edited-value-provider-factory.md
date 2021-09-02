@@ -2,7 +2,7 @@
 title: EditedValueProviderFactory Class
 ---
 
-Provides a Edited Value Provider factory
+Provides an Edited Value Provider factory
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -14,9 +14,7 @@ Provides a Edited Value Provider factory
 
 ## Remarks
 
-Provides a Edited Value Provider factory
-
-[//]: # ($$TODO: Complete the Remarks section.)
+Used internally by Website Runtime to instance [EditedValueProvider](/reference/asna-qsys-expo/expo-model/edited-value-provider.html).
 
 <br>
 <br>
@@ -25,7 +23,7 @@ Provides a Edited Value Provider factory
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | [CreateValueProviderAsync](#createvalueproviderasyncvalueproviderfactorycontext)([ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext)) | Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form | The asynchronous operation
+| [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | [CreateValueProviderAsync](#createvalueproviderasyncvalueproviderfactorycontext)([ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext)) | Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form. | The asynchronous operation.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -39,7 +37,7 @@ Provides a Edited Value Provider factory
 
 ### CreateValueProviderAsync([ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext))
 
-Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form
+Gets an asynchronous operation to add an Edited Value Provider to bind the model to a requested http form.
 
 ```cs
 CreateValueProviderAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFactoryContext context);
@@ -49,7 +47,7 @@ CreateValueProviderAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFact
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext) | context | Input Value Provider Factory conetxt 
+| [ValueProviderFactoryContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.valueproviderfactorycontext) | context | Input Value Provider Factory context. 
 
 #### Returns
 

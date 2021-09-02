@@ -2,7 +2,7 @@
 title: EditWord Class
 ---
 
-Provides methods to format numeric values according to Edit Word
+Provides methods to format numeric values according to [IBM i Edit Word](https://www.ibm.com/docs/en/i/7.2?topic=fields-edit-words)
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -14,9 +14,7 @@ Provides methods to format numeric values according to Edit Word
 
 ## Remarks
 
-Provides methods to format numeric values according to Edit Word
-
-[//]: # ($$TODO: Complete the Remarks section.)
+Provides support to give presentation to numeric fields according to [IBM i Edit Word](https://www.ibm.com/docs/en/i/7.2?topic=words-summary-coding-rules-edit) formatting rules. 
 
 <br>
 <br>

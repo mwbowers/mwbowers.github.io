@@ -14,9 +14,39 @@ Defines  the Record Attribute on a type
 
 ## Remarks
 
-Defines  the Record Attribute on a type
+IBM i Displayfiles allows the designer to specify metadata (via keywords) on records that describe how records should interact with user. [DDS](https://www.ibm.com/docs/en/i/7.1?topic=80-sflctl-subfile-control-keyword-display-files) allows to indicate on a particular Subfile control record specification how the Subfile that it controls should behave. 
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, the following DDS specifications defines Subfile Control `SFLC` controlling Subfile `SFL1` with a particular size, activating `PgUp` and `PgDn` keys when certain indicators are `on`, when to clear the subfile records, when to display them etc.
+
+```
+0028.00     A          R SFLC                      SFLCTL(SFL1)                        000000
+0030.00     A                                      SFLSIZ(0014)                        000000
+0031.00     A                                      SFLPAG(0014)                        000000
+0033.00     A N77                                  ROLLUP(50)                          000000
+0034.00     A N76                                  ROLLDOWN(51)                        000000
+0037.00     A N90                                  SFLDSP                              000000
+0038.00     A N90                                  SFLDSPCTL                           000000
+0039.00     A  90                                  SFLCLR                              000000
+```
+
+Razor syntax nor HTML syntax use the concept of Indicators. Records in Expo may include attributes, such as `FunctionKeys`, `DisplayFields`, `DisplayRecords` (indicated below), that complete the specification.
+
+```cs
+[
+    SubfileControl(ClearRecords : "90",
+        FunctionKeys = "F9 09;PageUp 51:!76;PageDown 50:!77",
+        DisplayFields = "!90",
+        DisplayRecords = "!90",
+        Size = 14,
+        IsExpandable = false,
+        EraseFormats = "CUSTREC SALESREC"
+    )
+]
+public class SFLC_Model : SubfileControlModel
+{
+```
+
+The name indicated in C# syntax for the Record Attributes maps to the Properties listed on this class.
 
 <br>
 <br>

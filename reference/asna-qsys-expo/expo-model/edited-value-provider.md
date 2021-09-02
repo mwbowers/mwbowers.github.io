@@ -2,7 +2,7 @@
 title: EditedValueProvider Class
 ---
 
-Provides support for Posted form validation for fields with Edit Code or Edit Word. (This value provider is registered in Startup.ConfigureServices)
+Provides support for Posted form validation for fields with Edit Code or Edit Word.
 
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
@@ -14,9 +14,7 @@ Provides support for Posted form validation for fields with Edit Code or Edit Wo
 
 ## Remarks
 
-Provides support for Posted form validation for fields with Edit Code or Edit Word. (This value provider is registered in Startup.ConfigureServices)
-
-[//]: # ($$TODO: Complete the Remarks section.)
+This value provider is registered in [Startup.ConfigureServices](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/startup).
 
 <br>
 <br>

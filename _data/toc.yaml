@@ -1895,8 +1895,6 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/edited-value-provider-factory.html
       - title: EditedValueProvider
         path: /reference/asna-qsys-expo/expo-model/edited-value-provider.html
-      - title: ExpoAjaxRequest
-        path: /reference/asna-qsys-expo/expo-model/yellow-page-model/expo-ajax-request.html
       - title: ExportSourceAttribute
         path: /reference/asna-qsys-expo/expo-model/export-source-attribute.html
       - title: FieldAttribute
