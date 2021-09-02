@@ -187,7 +187,7 @@ It is possible to call an interactive program, but instead of letting it display
                     }
 ```
 
-There are a few things to consider when driving a program this way.  It is the responsibility of the website to directly populate the display file's dataset tables with the whatever data is desired to be delivered to the program. Each record format in the display file has a corresponding data table in the dataset. In the example above we are setting the value of the SETNAME field of the SFLC record format.
+There are a few things to consider when driving a program this way.  It is the responsibility of the website to directly populate the display file's dataset tables with whatever data is desired to be delivered to the program. Each record format in the display file has a corresponding data table in the dataset. In the example above we are setting the value of the SETNAME field of the SFLC record format.
 
 Another consideration is the need to mark the record's row as being available to the program with input data.  This is effected by this line:
 ```cs
@@ -232,6 +232,7 @@ Here is the complete code for Minutus.
                 <span>Customer similar to 'Interna' is '@Model.SimilarCustomer'</span>
             </p>
         }
+        <p> <em>5 - Proceed with normal job execution.</em> </p>
         <p> <em>0 - Exit.</em></p>
         <label asp-for="Option"></label>
         <input asp-for="Option" />
@@ -259,7 +260,7 @@ namespace CustAppSite.Pages
     [BindProperties]
     public class MinutusModel : PageModel
     {
-        [Range(0, 4)]
+        [Range(0, 5)]
         public int Option { get; set; } = 2;
 
         [Range(10000, 99999)]
@@ -341,6 +342,11 @@ namespace CustAppSite.Pages
                                 }
                                 // End CUSTINQ execution and take Job back to Accepting Commands.
                                 df = command.PushKeyFocus(AidKeyIBM.F3, 0, "");
+                                break;
+                            }
+                        case 5:
+                            {
+                                command.Return("proceed");
                                 break;
                             }
                         case 0:
