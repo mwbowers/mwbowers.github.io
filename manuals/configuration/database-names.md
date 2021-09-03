@@ -127,7 +127,7 @@ Here is a common pattern used:
 
 Here is an alternative example:
 ```cs
-    public partial class MyJob : InteractiveJob
+    public partial class MyJob : Job
     {
         . . .
 
