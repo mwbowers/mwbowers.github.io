@@ -29,9 +29,13 @@ For a list of all members of this type, see [SourceProfile Members](source-profi
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 ## Remarks
 
-<p>An instance of **SourceProfile** is an in-memory representation of the information stored in the Windows registry for a DataGate "database name", as used by the DataGate Database Manager tool. **SourceProfile** provides methods to read and write registered database names from and to the registry on Windows platforms. [AdgConnection](adg-connection-class.html) objects require the information provided by **SourceProfile** to open database connections to the data provider. Through the **SourceProfile** object, **AdgConnection** is not dependent upon the Windows registry for connecting to a database provider.
+An instance of **SourceProfile** is an in-memory representation of the information stored in the Windows registry for a DataGate "database name", as used by the DataGate Database Manager tool. **SourceProfile** provides methods to read and write registered database names from and to the registry on Windows platforms. [AdgConnection](adg-connection-class.html) objects require the information provided by **SourceProfile** to open database connections to the data provider. Through the **SourceProfile** object, **AdgConnection** is not dependent upon the Windows registry for connecting to a database provider.
 
-**AdgConnection's** [ SourceProfile](adg-connection-class-source-profile-property.html) property is set by it's constructor in one of two ways. A valid **SourceProfile** object can be passed as a reference in the **AdgConnection** [constructor](adg-connection-constructors-main.html). Alternately, **AdgConnection** can be constructed with a valid database name string, in which case a **SourceProfile** object is created to import the registered database name information. Thus, the application programmer can use **SourceProfile** to directly manipulate database connection information or to interface with registered database names.
+
+**AdgConnection's** 
+
+[ SourceProfile](adg-connection-class-source-profile-property.html) property is set by it's constructor in one of two ways. A valid **SourceProfile** object can be passed as a reference in the **AdgConnection** [constructor](adg-connection-constructors-main.html). Alternately, **AdgConnection** can be constructed with a valid database name string, in which case a **SourceProfile** object is created to import the registered database name information. Thus, the application programmer can use **SourceProfile** to directly manipulate database connection information or to interface with registered database names.
+
 
 **SourceProfile** can be constructed in one of the following three ways:
 
@@ -75,8 +79,8 @@ The [Qualifier](source-profile-class-qualifier-property.html) property is reserv
 **Assembly:** ASNA DataGate Client
 
 **Platforms:** Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8 Pro, Windows 8.1 Pro, Windows 10
-## See Also
 
+## See Also
 
 [SourceProfile Members](source-profile-members.html)
       <br />

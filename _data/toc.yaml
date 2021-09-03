@@ -238,13 +238,6 @@ Manuals:
     section:
     - title: Getting AsnaQSys Packages
       path: /manuals/get-asna-qsys/get-asna-qsys-overview.html
-  - sectiontitle: Monarch Operations Management
-    sectionpath: /manuals/mom/management-overview
-    section:
-    - title: Printing
-      path: /manuals/mom/printing
-    - title: Batch Processor
-      path: /manuals/mom/batch-processor
   - sectiontitle: Migrations
     sectionpath: /manuals/migrations/migrations-overview.html
     section:
@@ -252,6 +245,10 @@ Manuals:
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
+  - sectiontitle: Configuration
+    section:
+    - title: Database Names
+      path: /manuals/configuration/database-names.html
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Using Non-Display File Pages
@@ -261,6 +258,13 @@ Manuals:
         path: /manuals/migrations/showing-non-displayfile-page.html
       - title: Calling a Program from a Non-DisplayFile Page
         path: /manuals/migrations/calling-program-from-non-displayfile-page.html
+  - sectiontitle: Monarch Operations Management
+    sectionpath: /manuals/mom/management-overview
+    section:
+    - title: Printing
+      path: /manuals/mom/printing
+    - title: Batch Processor
+      path: /manuals/mom/batch-processor
 
 ##
 Reference:
