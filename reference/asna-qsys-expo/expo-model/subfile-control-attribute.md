@@ -14,9 +14,30 @@ Defines Subfile Control Attribute on a type
 
 ## Remarks
 
-Defines Subfile Control Attribute on a type
+The `SubfileControlAttribute` class is a specialized class derived from [RecordAttribute class](/reference/asna-qsys-expo/expo-model/record-attribute.html) that provides meta-data to express in the Model [Subfile Control Displayfile Record](https://www.ibm.com/docs/en/i/7.4?topic=80-sflctl-subfile-control-keyword-display-files) [DDS](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) keywords.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The following excerpt of code describes to the Subfile Control model, several properties such as when to Clear the controlled Subfile, when to Display the records and fields.
+
+```cs
+[
+    SubfileControl(ClearRecords : "90",
+        FunctionKeys = "PageUp 51:!76;PageDown 50:!77",
+        DisplayFields = "!90",
+        DisplayRecords = "!90",
+        Size = 20,
+        IsExpandable = false,
+        EraseFormats = "CUSTREC SALESREC"
+    )
+]
+public class SFLC_Model : SubfileControlModel
+{
+    .
+    .
+    .
+}
+```
+>Note how the first attribute is passed as a parameter to the constructor (using colon syntax), while the rest as attributes to the class (using assignment syntax). 
+
 
 <br>
 <br>
