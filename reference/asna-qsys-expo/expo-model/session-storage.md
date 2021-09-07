@@ -14,9 +14,11 @@ Defines the SessionStorage class
 
 ## Remarks
 
-Defines the SessionStorage class
+The `SessionStorage` is a class that is used to provide `state` to a [stateless environment](https://en.wikipedia.org/wiki/Stateless_protocol) such as the Internet Web.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+IBM i Applications were designed with the [Traditional Three-Tier client-server Application Architecture](https://www.ibm.com/cloud/learn/three-tier-architecture). This architecture is stateful.
+
+The `SessionStorage` is the class that provides the runtime functionality to bridge the traditional Application architecture into the modern Web model. 
 
 <br>
 <br>
