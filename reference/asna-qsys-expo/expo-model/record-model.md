@@ -14,9 +14,81 @@ Defines the RecordModel class
 
 ## Remarks
 
-Defines the RecordModel class
+The class `RecordModel Class` encapsulates methods, property fields to implement the concept of [Record-Level entries for IBM i Display File](https://www.ibm.com/docs/en/i/7.4?topic=files-defining-display-file-dds).
 
-[//]: # ($$TODO: Complete the Remarks section.)
+[SubfileControlModel](/reference/asna-qsys-expo/expo-model/subfile-control-model.html) and [SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) are specialized classes based on `RecordModel Class`.
+
+The following is a typical use of a class derived from `RecordModel Class`, which describes - *among other things* - the Display fields in the record.
+
+```cs
+[
+    Record(FunctionKeys = "F4 04;F6 06:!30;F11 11:!30;F12 12",
+        EraseFormats = "SFLC KEYS SALESREC"
+    )
+]
+public class CUSTREC_Model : RecordModel
+{
+    [Char(10)]
+    private string CSRREC
+    {
+        get => CursorLocationFormatName;
+        set { }
+    }
+
+    [Char(10)]
+    private string CSRFLD
+    {
+        get => CursorLocationFieldName;
+        set { }
+    }
+
+    [Char(10)]
+    public string SCPGM { get; private set; }
+
+    [Dec(6, 0)]
+    public decimal SFCUSTNO { get; private set; } // CUSTOMER NUMBER
+
+    [Char(40)]
+    public string SFOLDNAME { get; private set; }
+
+    [Char(40)]
+    public string SFNAME { get; set; }
+
+    [Char(35)]
+    public string SFADDR1 { get; set; }
+
+    [Char(35)]
+    public string SFADDR2 { get; set; }
+
+    [Char(30)]
+    public string SFCITY { get; set; }
+
+    [Char(2)]
+    public string SFSTATE { get; set; }
+
+    [Char(10)]
+    public string SFPOSTCODE { get; set; }
+
+    [Dec(10, 0)]
+    public decimal SFFAX { get; set; }
+
+    [Char(20)]
+    public string SFPHONE { get; set; }
+
+    [Char(1)]
+    public string SFSTATUS { get; set; }
+
+    [Char(40)]
+    public string SFCONTACT { get; set; }
+
+    [Char(40)]
+    public string SFCONEMAL { get; set; }
+
+    [Char(1)]
+    public string SFYN01 { get; set; }
+}
+
+```
 
 <br>
 <br>
