@@ -7,16 +7,44 @@ Defines ValuesAttribute class
 **Namespace:** ASNA.QSys.Expo.Model <br/>
 **Assembly:** ASNA.QSys.Expo.Model
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) --> [ValidationAttribute]($$TODO-ComponentModel.DataAnnotations.ValidationAttribute.html) --> ValuesAttribute
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) --> [ValidationAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute) --> ValuesAttribute
 
 <br>
 <br>
 
 ## Remarks
 
-Defines ValuesAttribute class
+The `ValuesAttribute` class is a specialized class derived from [ValidationAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute) that provides meta-data to express [VALUES](https://www.ibm.com/docs/en/i/7.4?topic=80-values-values-keyword-display-files) field-level keyword.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The following excerpt of code describes the Subfile field `SFSEL`, with the possible input values: 2, 3, 5, 7, 9, 10 and 11
+
+```cs
+public class SFL1_Model : SubfileRecordModel
+{
+    [Values(typeof(Decimal),"00","02","03","05","07","09","10","11")]
+    [Dec(2, 0)]
+    public decimal SFSEL { get; set; }
+    .
+    .
+    .
+}
+```
+
+This corresponds to the legacy DDS:
+
+```
+0007.00     A          R SFL1                      SFL
+   .
+   .
+   .
+0010.00     A            SFSEL          2Y 0B  8  4VALUES(0 2 3 5 7 9 10 11)
+```
+
+>Notes: 
+
+1. The `Values` attribute requires indication of the type of value it should be used during validation. In this case `Decimal`.
+2. The list of possible Values is indicated using string format. Each value will be converted to the indicated type before validation logic runs.
+3. The first value added during Migration corresponds to the *Blanks* value (which is the value that represents **no input** to this field). For *character* fields a white space is used, for decimal fields the zero (as a string) is used.
 
 <br>
 <br>
