@@ -14,9 +14,27 @@ Defines Subfile Record Attribute on a type
 
 ## Remarks
 
-Defines Subfile Record Attribute on a type
+The `SubfileRecordAttribute` class is a specialized class derived from [RecordAttribute class](/reference/asna-qsys-expo/expo-model/record-attribute.html) that provides meta-data to express in the Model [Subfile Displayfile Record](https://www.ibm.com/docs/en/i/7.4?topic=80-sfl-subfile-keyword-display-files) [DDS](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) keywords.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The following excerpt of code describes to the `SFL1` Subfile model, the attribute `NextChanged` corresponding to the [legacy SFLNXTCHG DDS keyword](https://www.ibm.com/docs/en/i/7.4?topic=80-sflnxtchg-subfile-next-changed-keyword-display-files).
+
+```cs
+[
+    SubfileRecord(NextChanged = "14")
+]
+public class SFL1_Model : SubfileRecordModel
+{
+    [Char(1, Protect = "*True")]
+    public string SFCOLOR { get; set; }
+
+    [Values(typeof(Decimal),"00","02","03","05","07","09","10","11")]
+    [Dec(2, 0)]
+    public decimal SFSEL { get; set; }
+    .
+    .
+    .
+}
+```
 
 <br>
 <br>
