@@ -14,9 +14,7 @@ Defines a Proxy implementation for the WebDisplayFile
 
 ## Remarks
 
-Defines a Proxy implementation for the WebDisplayFile
-
-[//]: # ($$TODO: Complete the Remarks section.)
+In order to implement [OUT-OF-PROCESS](/concepts/architecture/application-architecture.html#interactive-job-architecture) Application Architecture, `WebDisplayFileProxy` class extracts the Display file elements (or [User Interface](https://en.wikipedia.org/wiki/User_interface) ) with their state to make a copy that can represent the state of the (remote) Application Server.
 
 <br>
 <br>

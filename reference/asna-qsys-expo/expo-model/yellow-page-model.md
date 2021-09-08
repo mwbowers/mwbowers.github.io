@@ -14,9 +14,9 @@ Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
 
 ## Remarks
 
-Defines YellowPageModel class and provides a base for the 'Yellow' Page Model
+The [Web & Application Server](/concepts/architecture/application-architecture.html#interactive-job-architecture) components of the Application Architecture have two sub-components that are conveniently identified by the designers with colors: yellow-component and blue-component (basic color theory shows how combining *yellow* and *blue* colors renders *green*). Green *Web & Application Server* are defined by the *Yellow* component plus the *Blue* component.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The `YellowPageModel` is the class that provides the *Yellow* component services in the Web & Application Server](/concepts/architecture/application-architecture.html#interactive-job-architecture).
 
 <br>
 <br>
