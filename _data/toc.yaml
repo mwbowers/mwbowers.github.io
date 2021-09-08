@@ -1927,10 +1927,6 @@ Reference:
         path: /reference/asna-qsys-expo/expo-model/subfile-record-attribute.html
       - title: SubfileRecordModel
         path: /reference/asna-qsys-expo/expo-model/subfile-record-model.html
-      - title: Terminal5250_DataSetNames
-        path: /reference/asna-qsys-expo/expo-model/terminal5250-data-set-names.html
-      - title: Terminal5250_HiddenFields
-        path: /reference/asna-qsys-expo/expo-model/terminal5250-hidden-fields.html
       - title: ValuesAttribute
         path: /reference/asna-qsys-expo/expo-model/values-attribute.html
       - title: WebDisplayFileProxy
