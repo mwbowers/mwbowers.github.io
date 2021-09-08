@@ -20,9 +20,33 @@ Defines the SubfileRecordModel class
 
 ## Remarks
 
-Defines the SubfileRecordModel class
+[SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) is a specialized class based on [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html).
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The following excerpt shows the `MSGSF` `SubfileRecordModel class`, which describes the fact that this Subfile Record is the [Message Subfile](https://www.ibm.com/docs/en/i/7.4?topic=type-example-message-subfile-using-dds), which contains three fields: `@MSGKY, @PGMQ and MessageText`.
+
+```cs
+[
+    SubfileRecord(IsMessageSubfile = true)
+]
+public class MSGSF_Model : SubfileRecordModel
+{
+    [Char(4, Alias = "@MSGKY")]
+    public string aMSGKY { get; private set; }
+
+    [Char(10, Alias = "@PGMQ")]
+    public string aPGMQ { get; private set; }
+
+    [Char(128)]
+    public string MessageText { get; private set; }
+
+}
+```
+
+>Notes: 
+
+1. SubfileRecordModel classes are expressed in the Model as [nested C# classes](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/nested-types) inside their corresponding [SubfileControl records](/reference/asna-qsys-expo/expo-model/subfile-control-model.html).
+
+2. The field `MessageText` is added to the Subfile by the Migration process, to implement the assumed place (by IBM i design) where messages are displayed.
 
 <br>
 <br>
