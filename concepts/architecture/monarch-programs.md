@@ -94,3 +94,21 @@ Notice that when program *Program1* was generated, a single class was created to
 Service Program *Gadget6* contains a module also called Gadget6, so a single class was generated to serve as both the program Gadget6 and the module Gadget6. Service program Gadget6 also has references to an additional three modules.
 
 Service Program *Service45* shows a different style because there is no module called Service45 so the generated service program class has no user code, only the reference to its modules: Module4 and Module5.
+
+## Binding via Class Attributes
+After modules are created on the IBM they are assembled together via the binder (CRTPGM command). The binder takes the collection of modules and service programs to create the requested program.
+
+Under the migration process, the responsibility of binding is given to Monarch Cocoon.  Monarch effects the binding by adding Class Attributes when it generates the code. For the example above, the generated class for Program1 would looked like this:
+
+```cs
+    [
+        ProgramEntry("_ENTRY"),
+        ModuleImport(typeof(Module2_Class), typeof(Module3_Class)),
+        ServiceProgramUse(typeof(Service45_Class), typeof(Gadget6_Class))
+    ]
+    public partial class Program1 : Program
+    {
+        . . . 
+    }
+```
+Regular Programs keep their names intact, however Modules and Service Programs get the suffix '_Class' attached to their names to avoid name collisions between the module and any of its procedures. 
