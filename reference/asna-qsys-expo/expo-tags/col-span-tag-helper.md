@@ -14,9 +14,22 @@ Provides a ColSpan tag helper to Razor elements.
 
 ## Remarks
 
-Provides a ColSpan tag helper to Razor elements.
+Legacy [DDS for display files](https://www.ibm.com/docs/en/i/7.1?topic=dds-display-files) described field and constant Display positions using a grid-like row and column coordinate system. Typically a field was described with a `start-position` spanning to an `end-position` according to its width (or field length).
 
-[//]: # ($$TODO: Complete the Remarks section.)
+Sometimes it is desirable the override the `end-position` by providing a `Column Span` value that extends the `bounding-box` of the field or constant beyond the *natural* calculation of the `end-position` (as in `start_position + length`).
+
+For example, the constant "Selection" in the markup below, has a *character* length of `9`. Without the `ColSpan` property, the `end-position` would be calculated as: `4+4+9 = 17`. Instead we want the constant's bounding box to extend to position `23` (that is `4+4+15`).
+
+>Extending a [DdsField's](/reference/asna-qsys-expo/expo-tags/dds-field-base.html) or [DdsConstant's](/reference/asna-qsys-expo/expo-tags/dds-constant-tag-helper.html) width may be desirable when a [CSS](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) style wants to be applied (such as [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)).  
+
+```html
+    <div Row="3">
+        <DdsConstant Col="4+4" ColSpan="15" Text="Selection" Color="DarkBlue" />
+        .
+        .
+        .
+    </div>
+```
 
 <br>
 <br>
