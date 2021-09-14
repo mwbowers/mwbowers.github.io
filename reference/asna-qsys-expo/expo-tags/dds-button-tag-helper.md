@@ -14,9 +14,40 @@ Defines a clickable element that can be configured as a replacement of a DdsFiel
 
 ## Remarks
 
-Defines a clickable element that can be configured as a replacement of a DdsField.
+Interactive [IBM i Legacy Applications](https://www.ibm.com/docs/en/i/7.2?topic=dds-concepts) used a technique where the user was able to position the `cursor` on an input-capable field and press one of the available `Function Keys` to submit the Page. Application logic would identify the pressed `Function Key` combined with the location of the cursor (next to a named field), and determine the action to take.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+Modernized Applications may want to provide additional [HTML Button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button) elements in strategic places on the Page, to improve usability.
+
+To maintain the Legacy Application logic intact, `DdsButton` Tag Helper can simulate the action of navigating to the desired input element and *pressing* a specified [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html).
+
+For example, assuming that a Display Page has a *Prompt* feature, indicated with `F4` valid for fields `SFSTATE` and `SFSTATUS` (record `CUSTREC`), the following two `DdsButtons` may be added to improve usability:
+
+```html
+<DdsRecord For="CUSTREC" KeyNames="ENTER 'Submit'; F3 'Exit'; F4 'Prompt'; F6 'New Customer'; F11 'Remove Customer'; F12 'Back';">
+    <div Row="2">
+        .
+        .
+        .
+        <DdsButton Col="91" IconId="search" ButtonStyle="Icon" AidKey="F4" FocusField="CUSTREC.SFSTATUS" IconTitle="Prompt for Status Codes" />
+    </div>
+
+    <div Row="7">
+        .
+        .
+        .
+        <DdsButton Col="40" IconId="search" ButtonStyle="Icon" AidKey="F4" FocusField="CUSTREC.SFSTATE" IconTitle="Prompt for State Codes" />
+    </div>
+
+<DdsRecord/>
+```
+
+The first `DdsButton` will appear on `Row 2`, `Col 91` and when user clicks (or Taps with finger) on this button, it simulates that the `cursor` was located on field "CUSTREC.SFSTATUS" and the press of the `F4`[AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)
+
+The second `DdsButton` will appear on `Row 7`, `Col 40` and when user clicks (or Taps with finger) on this button, it simulates that the `cursor` was located on field "CUSTREC.SFSTATE" and the press of the `F4`[AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)
+
+Both `DdsButton` appear as icons with the shape of a magnifying glass (typically used by *search*).
+
+>Note: The Application Logic remains intact. 
 
 <br>
 <br>
@@ -26,7 +57,7 @@ Defines a clickable element that can be configured as a replacement of a DdsFiel
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) | AidKey | Attention or Function key to be posted when Button is clicked (as if the user had pressed than keyboard key). | 
-| [ButtonStyles]($$TODO-ButtonStyles.html) | ButtonStyle | Gets ot sets a ButtonStyle to define the rendering shape. | 
+| [ButtonStyles](/reference/asna-qsys-expo/expo-tags/dds-button-tag-helper/button-styles.html) | ButtonStyle | Gets ot sets a ButtonStyle to define the rendering shape. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Col | Gets or sets a value that indicates the horizontal position within a Row. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Color | Gets ot sets the name of a web color to be used to draw the element. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FieldValue | When used along with FocusField, gets or sets the value to be copied to the field prior to submitting the page. This allows compatibility with logic expecting to detect a particular value of a field at a particular cursor position. | 
