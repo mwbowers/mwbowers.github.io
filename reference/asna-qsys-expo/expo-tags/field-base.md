@@ -14,10 +14,6 @@ Provides common methods for DdsFields and DdsConstants.
 
 ## Remarks
 
-Provides common methods for DdsFields and DdsConstants.
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

@@ -1966,8 +1966,6 @@ Reference:
         path: /reference/asna-qsys-expo/expo-tags/dds-file-tag-helper.html
       - title: DdsFunctionKeysTagHelper
         path: /reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper.html
-      - title: DdsGridRowTagHelper
-        path: /reference/asna-qsys-expo/expo-tags/dds-grid-row-tag-helper.html
       - title: DdsMessagePanelTagHelper
         path: /reference/asna-qsys-expo/expo-tags/dds-message-panel-tag-helper.html
       - title: DdsRadioButtonGroupFieldTagHelper

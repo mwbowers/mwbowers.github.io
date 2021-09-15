@@ -14,10 +14,6 @@ Defines a Subfile record element
 
 ## Remarks
 
-Defines a Subfile record element
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

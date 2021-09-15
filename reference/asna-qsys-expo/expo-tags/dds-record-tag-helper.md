@@ -14,9 +14,6 @@ Defines a Display record
 
 ## Remarks
 
-Defines a Display record
-
-[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>

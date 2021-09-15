@@ -14,10 +14,6 @@ Provides common properties for DdsRecords
 
 ## Remarks
 
-Provides common properties for DdsRecords
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

@@ -14,10 +14,6 @@ Defines a group of radio-button elements.
 
 ## Remarks
 
-Defines a group of radio-button elements.
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

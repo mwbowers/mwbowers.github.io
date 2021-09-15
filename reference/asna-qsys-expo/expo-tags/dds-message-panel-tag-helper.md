@@ -14,10 +14,6 @@ Provides a placeholder for Page messages.
 
 ## Remarks
 
-Provides a placeholder for Page messages.
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

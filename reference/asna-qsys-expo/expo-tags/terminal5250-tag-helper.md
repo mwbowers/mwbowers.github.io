@@ -14,10 +14,6 @@ Defines the element where the 5250 Terminal will be rendered
 
 ## Remarks
 
-Defines the element where the 5250 Terminal will be rendered
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

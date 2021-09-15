@@ -12,10 +12,6 @@ Describes the Left padding option.
 
 ## Remarks
 
-Describes the Left padding option.
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

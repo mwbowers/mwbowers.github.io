@@ -14,10 +14,6 @@ Defines a Subfile Controller element
 
 ## Remarks
 
-Defines a Subfile Controller element
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 

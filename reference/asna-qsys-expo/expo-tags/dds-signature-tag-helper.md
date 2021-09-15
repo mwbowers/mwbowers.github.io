@@ -14,10 +14,6 @@ Defines an element where a signature can be captured
 
 ## Remarks
 
-Defines an element where a signature can be captured
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
 <br>
 <br>
 
