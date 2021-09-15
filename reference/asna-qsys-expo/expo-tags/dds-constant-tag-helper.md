@@ -67,7 +67,7 @@ This calculation **does not work well** on a Browser with *open* page width and 
 
 * Finally, Row "7" is the column headings for the subfile (table), which present several challenges to appeared aligned, starting with the fact that the input element for `Sel` (selection) was transformed into a wider drop-down list. ([See a screenshot here](https://asna.github.io/SunFarm/avoid-constant-stretching/)).
 
->Forcing ALL fonts to [Monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font) attempting to solve the mis-alignment, quickly proves to be a *oversimplification* with unwanted detriment in the Application look (old Legacy) which most consider **unacceptable**.
+>Forcing ALL fonts to [Monospaced fonts](https://en.wikipedia.org/wiki/Monospaced_font) attempting to solve the mis-alignment challenge, quickly proves to be a *oversimplification* with unwanted detriment in the Application look (old Legacy) which most consider **unacceptable**.
 
 A better solution (enabled by default) is implemented by means of the property `StretchConstantText` below.
 
