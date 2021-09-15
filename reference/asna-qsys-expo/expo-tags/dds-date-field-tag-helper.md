@@ -46,9 +46,6 @@ public class SFLC_Model : SubfileControlModel
 
 Notice how the [DateFormat attribute](/reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html) is defined using the IBM i definition. (The default date-separator is `-`, it can be changed using `DateSeparator` attribute).
 
->More commonly, Legacy Applications used Dates as numeric values (with a particular [EditWord](/reference/asna-qsys-expo/expo-model/edit-word.html)), more than the proper [DDS 'L' field type](https://www.ibm.com/docs/en/i/7.3?topic=fields-example-date-time-timestamp-dds), but during Migration patterns are observed to identify such dates and convert them to proper `DdsDateField` to make the Calendar available on the Page.
-
-
 <br>
 <br>
 
