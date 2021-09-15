@@ -14,9 +14,39 @@ Defines an input element where numbers can be typed using a keyboard. The captur
 
 ## Remarks
 
-Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field.
+To define a [Fixed Decimal](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixeddecimal) field, use the `DdsDecField` Tag Helper.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, the following markup defines a decimal element for the field `SFCUSTNO` in the `CUSTREC` record (defined in the Model).
+
+```html
+<div Row="5">
+    <DdsDecField Col="27" For="CUSTREC.SFCUSTNO" Color="DarkBlue" EditCode="Z" Comment="CUSTOMER NUMBER" />
+</div>
+```
+
+```cs
+public class SFLC_Model : SubfileControlModel
+{
+    public List<SFL1_Model> SFL1 { get; set; } = new List<SFL1_Model>();
+
+    public class SFL1_Model : SubfileRecordModel
+    {
+        .
+        .
+        .
+        [Dec(6, 0)]
+        public decimal SFCUSTNO { get; private set; } // CUSTOMER NUMBER
+
+        .
+        .
+        .
+    }
+}
+```
+
+Note that field `SFCUSTNO` has a fixed length of six with zero decimal positions.
+
+>The `Z` edit code removes the sign (plus or minus) from a numeric field and suppresses leading zeros.
 
 <br>
 <br>

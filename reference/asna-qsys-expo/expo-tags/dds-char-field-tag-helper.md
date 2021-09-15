@@ -14,7 +14,7 @@ Defines an input element where characters can be typed using a keyboard. The cap
 
 ## Remarks
 
-To define an input-capable [Fixed String](concepts/program-structure/qsys-fixedtypes.hmtl), use the `DdsCharField` Tag Helper.
+To define an input-capable [Fixed String](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixedstring), use the `DdsCharField` Tag Helper.
 
 For example, the following markup defines an input text element for the field `SFNAME` in the `CUSTREC` record (defined in the Model).
 
