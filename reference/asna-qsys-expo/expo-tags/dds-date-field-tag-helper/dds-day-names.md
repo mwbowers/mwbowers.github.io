@@ -12,10 +12,9 @@ Specifies the names of the calendar days.
 
 ## Remarks
 
-Specifies the names of the calendar days.
+Used as valid values for property `FirstDayOfWeek` for [DdsDateField Tag Helper](/reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper.html)
 
-[//]: # ($$TODO: Complete the Remarks section.)
-
+These are just a symbolic names. The Calendar labels are taken from Website Localized resources.
 <br>
 <br>
 
@@ -23,14 +22,14 @@ Specifies the names of the calendar days.
 
 | Name | Description
 | --- | --- 
-| Friday | Sixth day of the week (in most countries)
-| Monday | Second day of the week (in most countries)
-| Saturday | Seventh day of the week (in most countries)
 | Sunday | First day of the week (in most countries)
-| Thursday | Fifth day of the week (in most countries)
+| Monday | Second day of the week (in most countries)
 | Tuesday | Third day of the week (in most countries)
-| Undefined | No day defined.
 | Wednesday | Fourth day of the week (in most countries)
+| Thursday | Fifth day of the week (in most countries)
+| Friday | Sixth day of the week (in most countries)
+| Saturday | Seventh day of the week (in most countries)
+| Undefined | No day defined.
 
 <br>
 <br>
