@@ -14,6 +14,52 @@ Defines a group of radio-button elements.
 
 ## Remarks
 
+Legacy `IBM i` Applications commonly used input fields designed to accept only `Y` or `N` values. The Display Page would include something like the following markup:
+
+```html
+<div Row="18">
+    <DdsConstant Col="7" Text="Send Confirmation:" />
+    <DdsCharField Col="27" For="CUSTREC.SFYN01" Upper=true />
+    <DdsConstant Col="29+5" Text="(Y/N)" />
+</div>
+```
+
+With the field definition in the Model, like:
+
+```cs
+[Char(1)]
+public string SFYN01 { get; set; }
+```
+
+This would display a Text line with `Send Confirmation:` followed by an input text box (accepting one character) and the text `(Y/N)` at the end of same line (to hint user that the two values expected where: `Y` or `N`).
+
+A better implementation (compatible with the Program Logic), is to replace the markup with:
+
+```html
+<div Row="18">
+    <DdsRadioButtonGroupField Col="7" Text="Send Confirmation" ValuesText="'Yes','No'" For="CUSTREC.SFYN01" />
+</div>
+
+```
+
+And the Model definition with:
+
+```cs
+[Char(1)]
+[Values(typeof(string), "Y", "N")]
+public string SFYN01 { get; set; }
+```
+
+Notice how the Markup is reduced in significant ways:
+
+1. Three Tag Helpers are reduced to one.
+2. There is only one `Col` property (the radio button group components will be layout out automatically with best alignment possible).
+3. Instead of having the User type a `Y` or `N`, the active radio graphic representation can be selected with the mouse, finger or arrow keys.
+4. There is no need to be concerned about input text casing (with legacy interface, the Program logic may need to allow `Y` or `y` as equivalent responses).
+
+
+>There are more uses for `DdsRadioButtonGroupField` other than `Yes/No` fields.
+
 <br>
 <br>
 
