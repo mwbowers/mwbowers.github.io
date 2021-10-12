@@ -63,7 +63,7 @@ LocalDataCollection(  );
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Add](#addstring-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds an element with the specified key and value into the LocalDataCollection. Adding an element increments the LocalDataCollection version. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Removes all elements from the LocalDataCollection. Clearing the LocalDataCollection increments its version. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Contains](#containsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the LocalDataCollection contains a specific name. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Contains](#containsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the LocalDataCollection contains a specific name. | True if the LocalDataCollection contains
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [IDictionaryEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.idictionaryenumerator) | [GetEnumerator](#getenumerator)() | Returns an IDictionaryEnumerator that iterates through the LocalDataCollection. | The IDictionaryEnumerator for the LocalDataCollection.
@@ -127,7 +127,7 @@ Contains(String name);
 
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
-
+True if the LocalDataCollection contains
 
 
 <br>

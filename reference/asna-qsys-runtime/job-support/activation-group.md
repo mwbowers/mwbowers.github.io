@@ -55,8 +55,8 @@ ActivationGroup( String name, Boolean isDynamic );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Count | Gets the number of programs active in the activation group. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DynamicCreator | Gets the program that cause the *NEW dynamic creation of the activation group. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsDynamic | Gets a value that indicates whether the activation group was created *NEW for a program and will be dynamically deleted when the program ends. | 
+| [CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html) | DynamicCreator | Gets the program that cause the *NEW dynamic creation of the activation group. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsDynamic | Gets a value that indicates whether the activation group was created *NEW for a program and will be dynamically deleted when the program ends. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Gets the name of the activation group. | 
 
 <br>

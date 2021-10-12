@@ -49,14 +49,14 @@ ServiceProgram(  );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [ActivationGroup](/reference/asna-qsys-runtime/job-support/activation-group.html) | ActivationGroup | Gets the program's activation group.<br>(Inherited from [CommonProgram](/reference/asna-qsys-runtime/job-support/common-program.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CurrentJob | Gets the module's Job.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DLO | Gets the Job's DLO.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IFS | Gets the Job's IFS.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
+| [Job](/reference/asna-qsys-runtime/job-support/job.html) | CurrentJob | Gets the module's Job.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
+| [DocumentLibraryObject](/reference/asna-qsys-runtime/job-support/document-library-object.html) | DLO | Gets the Job's DLO.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
+| [IntergratedFileSystem](/reference/asna-qsys-runtime/job-support/intergrated-file-system.html) | IFS | Gets the Job's IFS.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
 | [QueryResults](/reference/asna-qsys-runtime/job-support/query-results.html) | QueryResults | Used to retrieve host variables in EmbeddedSQL<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Spooler | Gets the Job's spooler.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | SQLCA | Gets the SQL commuication area. It is populated AFTER (embedded) SQL command executes.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
+| [Spooler](/reference/asna-qsys-runtime/job-support/spooler.html) | Spooler | Gets the Job's spooler.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
+| [SQL_CommunicationsArea](/reference/asna-qsys-runtime/job-support/sql-communications-area.html) | SQLCA | Gets the SQL commuication area. It is populated AFTER (embedded) SQL command executes.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
 | [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) | SqlQueryResults | Gets the result dictionary used to retrieve host variables in EmbeddedSQL<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | StartupMoment | Gets the timestamp when the module was created.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | StartupMoment | Gets the timestamp when the module was created.<br>(Inherited from [Module](/reference/asna-qsys-runtime/job-support/module.html)) | 
 
 <br>
 <br>

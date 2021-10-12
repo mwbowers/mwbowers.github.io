@@ -2,7 +2,7 @@
 title: CPFA000Exception Class
 ---
 
-Defines the core behavior of CPFA0xx exceptons.
+Defines the core behavior of CPFA0xx exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Defines the core behavior of CPFA0xx exceptons.
 
 ## Remarks
 
-Defines the core behavior of CPFA0xx exceptons.
+Defines the core behavior of CPFA0xx exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

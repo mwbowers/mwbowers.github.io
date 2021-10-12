@@ -34,7 +34,7 @@ Provides the ifrastucture to manage spooled output from print files.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ExistsQueue](#existsqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Check for the existance of an output queue. | true if the output queue exists; otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNewFilePath](#getnewfilepathstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the file path for a new spool file to be produced by proviced the printer file name. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNewFilePath](#getnewfilepathstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the file path for a new spool file to be produced by the printer file name. | The file path of the spool file for the given
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [HoldFile](#holdfilestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Mark a spool file to be held. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [HoldQueue](#holdqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Hold an output queue. No spool file will be printed. | 
@@ -86,10 +86,10 @@ CopyFileToDatabaseFile(String spoolFileName, String toDatabaseFile, String job, 
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Name of the Spooled File. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toDatabaseFile | Possibly qualified database file name [Library/]File. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | job | Job ID. Use "*" for current Job otherwise "JobNumber/JobUser/JobName" 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | job | Job ID. Use "*" for current Job otherwise "JobNumber/JobUser/JobName". 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | Use "*LAST" otherwise an integer number. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | createdDate | Only valid value is "*ONLY" 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toMember | Name of database file Member, you can also use "*FIRST" 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | createdDate | Only valid value is "*ONLY". 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toMember | Name of database file Member, you can also use "*FIRST". 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceRecords | Delete any records in the database file member prior to copying. 
 | [SpoolerControlCharacter](/reference/asna-qsys-runtime/job-support/spooler-control-character.html) | controlCharacter | Maner in which control characters will be represented in the database. 
 
@@ -179,7 +179,7 @@ true if the output queue exists; otherwise false.
 
 ### GetNewFilePath([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Gets the file path for a new spool file to be produced by proviced the printer file name.
+Gets the file path for a new spool file to be produced by the printer file name.
 
 ```cs
 GetNewFilePath(String printerFile);
@@ -195,7 +195,7 @@ GetNewFilePath(String printerFile);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-
+The file path of the spool file for the given
 
 
 <br>

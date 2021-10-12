@@ -59,7 +59,7 @@ JobStatus(  );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [JobStatus](/reference/asna-qsys-runtime/job-support/job-status.html) | [Clone](#clone)() | Creates and returns an identical copy of the current job status. | 
+| [JobStatus](/reference/asna-qsys-runtime/job-support/job-status.html) | [Clone](#clone)() | Creates and returns an identical copy of the current job status. | A copy of the current job status.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFormattedString](#getformattedstring)() | Gets a string with the status of the job. | A string with the job's Function, Status and (E)state.
@@ -85,7 +85,7 @@ Clone();
 
 [JobStatus](/reference/asna-qsys-runtime/job-support/job-status.html)
 
-
+A copy of the current job status.
 
 
 <br>

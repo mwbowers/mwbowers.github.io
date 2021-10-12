@@ -2,7 +2,7 @@
 title: CPF2200Exception Class
 ---
 
-Defines the core behavior of CPF22xx exceptons.
+Defines the core behavior of CPF22xx exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Defines the core behavior of CPF22xx exceptons.
 
 ## Remarks
 
-Defines the core behavior of CPF22xx exceptons.
+Defines the core behavior of CPF22xx exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

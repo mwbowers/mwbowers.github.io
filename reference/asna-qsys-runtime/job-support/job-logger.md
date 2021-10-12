@@ -48,8 +48,8 @@ JobLogger(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | LogLevel | Gets the logger's level setting. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | MinPriority | Gets the minimum priority needed on a message for it to get logged. | 
+| [MessageLoggingLevel](/reference/asna-qsys-runtime/job-support/message-logging-level.html) | LogLevel | Gets the logger's level setting. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | MinPriority | Gets the minimum priority needed on a message for it to get logged. | 
 
 <br>
 <br>

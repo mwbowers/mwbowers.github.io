@@ -49,6 +49,15 @@ UserDefinedCommand( ASNA.QSys.Runtime.ICaller caller );
 <br>
 <br>
 
+## Properties
+
+| Type | Name | Description | Indexer
+| --- | --- | --- | --- 
+| [ActivationGroup](/reference/asna-qsys-runtime/job-support/activation-group.html) | ActivationGroup | Gets the command's activation group. | 
+
+<br>
+<br>
+
 ## Methods
 
 | Type | Name | Description | Return Description 

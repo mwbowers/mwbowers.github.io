@@ -54,6 +54,7 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | AccountingCode | Gets or sets a user defined string. | 
+| [ActivationGroup](/reference/asna-qsys-runtime/job-support/activation-group.html) | ActivationGroup | Gets the Job's activation group. | 
 | [ActivationManager](/reference/asna-qsys-runtime/job-support/activation-manager.html) | ActivationManager | Gets the Job's activation manager. | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | ADO_Connection | Gets the ADO connection used for 'embedded SQL' | 
 | [Job](/reference/asna-qsys-runtime/job-support/job.html) | CurrentJob | Gets the Job associated with the calling thread. | 
@@ -88,9 +89,10 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | [getADO_Connection](#getado_connection)() | Gets the ADO connection used for 'embedded SQL' | Always returns NULL.
 | [Database](/reference/asna-qsys-runtime/database.html) | [getDatabase](#getdatabase)() | When overriden in a derived class, gets the main DataGate Database associated with the Job. | Returns de Database instance for the Job.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the message queue associated with the program; otherwise null.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA. | The requested field value.
 | [Database](/reference/asna-qsys-runtime/database.html) | [getPrinterDB](#getprinterdb)() | Gets the DataGate Database for Printer Files associated with the Job. | Returns the main Database.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetSwitch](#getswitchint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the vaule of one of the 8 job switchs. | The switch value of '0' or '1' for the requested switch, otherwise '0'
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetSwitch](#getswitchint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the vaule of one of the 8 job switchs. | The switch value of '0' or '1' for the requested switch, otherwise '0'.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSwitches](#getswitches)() | Gets a string representing the values of all 8 job's switches. | A '1' or '0' for each switch. The value of switch 1 is the leftmost postition of the string, switch 8 is in the last position.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Log](#logstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Log a message to diagnostic debugger listners. | 
@@ -175,6 +177,30 @@ Returns de Database instance for the Job.
 <br>
 <br>
 
+### GetInvokedMessageQueue([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Gets the message queue associated with the newest invocation of a program.
+
+```cs
+GetInvokedMessageQueue(String programQueueId);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
+
+#### Returns
+
+[MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html)
+
+If found, the message queue associated with the program; otherwise null.
+
+
+<br>
+<br>
+
 ### GetLdaField([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Gets a value stored in the LDA.
@@ -236,7 +262,7 @@ GetSwitch(Int32 iSwitch);
 
 [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
-The switch value of '0' or '1' for the requested switch, otherwise '0'
+The switch value of '0' or '1' for the requested switch, otherwise '0'.
 
 
 <br>
@@ -314,7 +340,7 @@ RetrieveUserProfile(String keyName, String userProfileName);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | keyName | A string with the value "RTNUSRPRF" 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | keyName | A string with the value "RTNUSRPRF". 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | userProfileName | The name of a user or the special value "*CURRENT" to get the current user. 
 
 #### Returns

@@ -76,7 +76,7 @@ Invocation( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ActivationGroupName | The activation group name of the invoked program. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExternalQueue | The queue for messages meant for external use. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | FileOverrideTable | The file overrides associated with this Invocation entry. | 
+| [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) | FileOverrideTable | The file overrides associated with this Invocation entry. | 
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | InvocationMark | The invoication mark when the invocation was created. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | invocationWaterMark | The current invocation mark. It gets increased every time a new program/procedure gets invoked. | 
 | [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | MessageQueue | The queue for messages sent to the invoked program/procedure. | 
@@ -99,7 +99,7 @@ Invocation( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetInvocationStrings](#getinvocationstrings)() | Gets an array of formatted strings for the invocation stack. | An array of formatted strings for the invocation stack entries.
 | [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeueint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the message queue associated with an invocation. | The mssage queue of the invocation etnry.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [isActivationGroupActive](#isactivationgroupactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a value indicating whether there are any programs in the invocation stack instanced in an specific activation group. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsActivationGroupActive](#isactivationgroupactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a value indicating whether there are any programs in the invocation stack instanced in an specific activation group. | True if there are programs in the invocation stack for the given activation group. False if there are none.
 | [MessageQueue](/reference/asna-qsys-runtime/job-support/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the message queue associated with the program; otherwise null.
 | [Invocation](/reference/asna-qsys-runtime/job-support/invocation.html) | [PeekInvocation](#peekinvocationstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the invocation entry associated with the program; otherwise null.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
@@ -187,12 +187,12 @@ The mssage queue of the invocation etnry.
 <br>
 <br>
 
-### isActivationGroupActive([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### IsActivationGroupActive([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Gets a value indicating whether there are any programs in the invocation stack instanced in an specific activation group.
 
 ```cs
-isActivationGroupActive(String activationGroupName);
+IsActivationGroupActive(String activationGroupName);
 ```
 
 #### Parameters
@@ -205,7 +205,7 @@ isActivationGroupActive(String activationGroupName);
 
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
-
+True if there are programs in the invocation stack for the given activation group. False if there are none.
 
 
 <br>
@@ -223,7 +223,7 @@ GetInvokedMessageQueue(String programQueueId);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'ProgramName Relation'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
 
 #### Returns
 
@@ -247,7 +247,7 @@ PeekInvocation(String programQueueId);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'ProgramName Relation'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
 
 #### Returns
 

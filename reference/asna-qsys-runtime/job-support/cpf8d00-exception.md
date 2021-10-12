@@ -2,7 +2,7 @@
 title: CPF8D00Exception Class
 ---
 
-Defines the core behavior of CPF8Dxx exceptons.
+Defines the core behavior of CPF8Dxx exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Defines the core behavior of CPF8Dxx exceptons.
 
 ## Remarks
 
-Defines the core behavior of CPF8Dxx exceptons.
+Defines the core behavior of CPF8Dxx exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

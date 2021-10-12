@@ -2,7 +2,7 @@
 title: CPF3200Exception Class
 ---
 
-Defines the core behavior of CPF32xx exceptons.
+Defines the core behavior of CPF32xx exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Defines the core behavior of CPF32xx exceptons.
 
 ## Remarks
 
-Defines the core behavior of CPF32xx exceptons.
+Defines the core behavior of CPF32xx exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

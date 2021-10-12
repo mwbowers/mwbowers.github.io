@@ -53,7 +53,7 @@ DocumentLibraryObject( String dlsRootName );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IFSRoot | Gets the Current Job IFS root path. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | IFSRoot | Gets the Current Job IFS root path. | 
 
 <br>
 <br>
