@@ -7,7 +7,7 @@ Record Format contains fields with types not compatible for this operation excep
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/asnaq-sys-runtime/exceptions/runtime-exception.html) --> InvalidRecordFieldsException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) --> InvalidRecordFieldsException
 
 <br>
 <br>

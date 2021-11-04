@@ -82,7 +82,7 @@ Extension methods for FixedTimestamp.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RoundUp](#roundupsingle-int32)([Single]($$TODO-Single.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RoundUp summary. | RoundUp returns.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDuration\\`\\`1](#subtractduration\`\`1fixedtimestamp{``0}-double-durationcode)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a date or a timestamp value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime](#testtimestring-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Tests whether a string containing a number represents a valid date/time/timestamp value. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime](#testtimestring-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Tests whether a string containing a number represents a valid date/time/timestamp value. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TimestampToDate\\`\\`1](#timestamptodate\`\`1fixedtimestamp{``0})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | Returns the Date portion of a timestamp. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TimestampToTime\\`\\`1](#timestamptotime\`\`1fixedtimestamp{``0})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | Returns the hours, minutes, and seconds of a timestamp. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TimestampToUSATime\\`\\`1](#timestamptousatime\`\`1fixedtimestamp{``0})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | Returns the hours and minutes of a timestamp. | .
@@ -1173,7 +1173,7 @@ SubtractDuration``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, Double dura
 <br>
 <br>
 
-### TestTime([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### TestTime([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Tests whether a string containing a number represents a valid date/time/timestamp value.
 
@@ -1188,7 +1188,7 @@ TestTime(String num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Comm
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | num | the string to test. 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | kind | whether the string represents a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | the date/time/timestamp format in which the string is. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | the date/time separator. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | the date/time separator. 
 
 
 <br>

@@ -23,7 +23,7 @@ Identifies a class that participates in the ActivationGroup logic. A class that 
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ActivationGroup](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Returns the ActivationGroup to which this object belongs. | 
+| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Returns the ActivationGroup to which this object belongs. | 
 
 <br>
 <br>

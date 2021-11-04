@@ -23,7 +23,7 @@ Describes the common operations over a field in a Data Structure.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | Layout | Gets the field Layout. | 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | Layout | Gets the field Layout. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the field length. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Gets the name of the field. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Start | Gets the starting position in the Data Structure buffer. | 

@@ -7,7 +7,7 @@ The exception that is thrown when a field being get or set on the LDA is beyond 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobFrameworkException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-framework-exception.html) --> LDACapacityException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobFrameworkException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-framework-exception.html) --> LDACapacityException
 
 <br>
 <br>

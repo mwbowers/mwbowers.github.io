@@ -23,11 +23,11 @@ Describes a fixed size array of short numbers contained in a DataStructure.
 
 | Name |  Description 
 | --- | --- 
-| **ShortArrayInDS**( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Constructs a fixed size array of short numbers in a Data Structure.
+| **ShortArrayInDS**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Constructs a fixed size array of short numbers in a Data Structure.
 
 <br>
 
-### ShortArrayInDS( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
+### ShortArrayInDS( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
 Constructs a fixed size array of short numbers in a Data Structure.
 
@@ -39,7 +39,7 @@ ShortArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 sk
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | parent | The DataStructure containing this array of short numbers. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | parent | The DataStructure containing this array of short numbers. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements. 
 
@@ -55,7 +55,7 @@ ShortArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 sk
 | --- | --- | --- | --- 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the short element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the total number of elements in the array. | 
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. | 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SkipPositions | For non-contiguous arrays, gets the number of buffer positions between consecutive array elements. 0 otherwise. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartPosition | Gets the Data Structure buffer position where this array starts. | 
 

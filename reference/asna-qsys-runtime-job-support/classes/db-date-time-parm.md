@@ -7,7 +7,7 @@ Represents a paramater for a date-time type.
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DBParm](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-parm.html) --> DBDateTimeParm
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) --> DBDateTimeParm
 
 <br>
 <br>

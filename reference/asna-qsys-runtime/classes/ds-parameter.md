@@ -7,7 +7,7 @@ Describes the datastructure parameters sent into an IBMi program call.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Parameter](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/parameter.html) --> DSParameter
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Parameter](/reference/asna-qsys-runtime/classes/parameter.html) --> DSParameter
 
 <br>
 <br>
@@ -25,12 +25,12 @@ Describes the datastructure parameters sent into an IBMi program call.
 
 | Name |  Description 
 | --- | --- 
-| [DSParameter](#dsparameterstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi datastructure parameter. 
-| [DSParameter](#dsparameterstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html)) | /// Create a DSParm object to represent an IBMi datastructure array parameter. 
+| [DSParameter](#dsparameterstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi datastructure parameter. 
+| [DSParameter](#dsparameterstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | /// Create a DSParm object to represent an IBMi datastructure array parameter. 
 
 <br>
 
-### DSParameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) )
+### DSParameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html) )
 
 Create a DSParm object to represent an IBMi datastructure parameter.
 
@@ -44,11 +44,11 @@ DSParameter( String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSy
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the parameter. 
 | [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | The DataDirection of the parameter. 
-| [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) | dsCallParm | The IDSFlds object containing full descriptions of each ds field. 
+| [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html) | dsCallParm | The IDSFlds object containing full descriptions of each ds field. 
 
 <br>
 
-### DSParameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) )
+### DSParameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html) )
 
 /// Create a DSParm object to represent an IBMi datastructure array parameter.
 
@@ -62,7 +62,7 @@ DSParameter( String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSy
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the parameter. 
 | [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | The DataDirection of the parameter. 
-| [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) | dsCallParmArray | The IDSFlds object array containing full descriptions of each ds field. 
+| [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html) | dsCallParmArray | The IDSFlds object array containing full descriptions of each ds field. 
 
 <br>
 
@@ -74,13 +74,13 @@ DSParameter( String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSy
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | Direction | Specifies if the parameter will be input, output, or update (both).<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/parameter.html)) | 
-| [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) | DSCallParm | The IDSFlds object containing full descriptions of each ds field. | 
-| [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) | DSCallParmArray | The IDSFlds object array containing full descriptions of each ds field. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Name of the parameter.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/parameter.html)) | 
-| [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html) | Type | Describes the type and size of the parameter.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/parameter.html)) | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The value of the parameter.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/parameter.html)) | 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueArray | The value of the parameter array.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/parameter.html)) | 
+| [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | Direction | Specifies if the parameter will be input, output, or update (both).<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/classes/parameter.html)) | 
+| [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html) | DSCallParm | The IDSFlds object containing full descriptions of each ds field. | 
+| [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html) | DSCallParmArray | The IDSFlds object array containing full descriptions of each ds field. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Name of the parameter.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/classes/parameter.html)) | 
+| [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html) | Type | Describes the type and size of the parameter.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/classes/parameter.html)) | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The value of the parameter.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/classes/parameter.html)) | 
+| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueArray | The value of the parameter array.<br>(Inherited from [Parameter](/reference/asna-qsys-runtime/classes/parameter.html)) | 
 
 <br>
 <br>

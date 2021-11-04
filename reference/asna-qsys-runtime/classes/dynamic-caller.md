@@ -25,11 +25,11 @@ Support for CALLD as a dynamic call.
 
 | Name |  Description 
 | --- | --- 
-| **DynamicCaller**( [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) ) | Dynamic caller contructor.
+| **DynamicCaller**( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) ) | Dynamic caller contructor.
 
 <br>
 
-### DynamicCaller( [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) )
+### DynamicCaller( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) )
 
 Dynamic caller contructor.
 
@@ -41,7 +41,7 @@ DynamicCaller( ASNA.QSys.Runtime.ICaller caller );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) | caller | The caller object in the dynamic call. 
+| [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) | caller | The caller object in the dynamic call. 
 
 <br>
 
@@ -53,7 +53,7 @@ DynamicCaller( ASNA.QSys.Runtime.ICaller caller );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) | Caller | The caller object in the dynamic call. | 
+| [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) | Caller | The caller object in the dynamic call. | 
 
 <br>
 <br>

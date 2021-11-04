@@ -7,7 +7,7 @@ Key part -name- is invalid exception.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/asnaq-sys-runtime/exceptions/runtime-exception.html) --> [FieldNotFoundException](/reference/asna-qsys-runtime/asnaq-sys-runtime/exceptions/field-not-found-exception.html) --> InvalidKeySpecException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) --> [FieldNotFoundException](/reference/asna-qsys-runtime/exceptions/field-not-found-exception.html) --> InvalidKeySpecException
 
 <br>
 <br>

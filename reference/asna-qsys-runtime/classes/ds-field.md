@@ -25,11 +25,11 @@ Use this class when defining a field-base layout for a Data Structure.
 
 | Name |  Description 
 | --- | --- 
-| **DSField**( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) ) | Construct a DSField as part of a Data Structure using a specific layout.
+| **DSField**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) ) | Construct a DSField as part of a Data Structure using a specific layout.
 
 <br>
 
-### DSField( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) )
+### DSField( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Construct a DSField as part of a Data Structure using a specific layout.
 
@@ -41,8 +41,8 @@ DSField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.ILayou
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | dataStructure | The Data Structure that contains the field. 
-| [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | layout | The layout of the field. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | dataStructure | The Data Structure that contains the field. 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | layout | The layout of the field. 
 
 <br>
 
@@ -54,7 +54,7 @@ DSField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.ILayou
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | Layout | Gets the Layout of this field. | 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | Layout | Gets the Layout of this field. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the field. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Gets the name of the field. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Start | Gets the position of the field in the Data Structure buffer. | 

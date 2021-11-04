@@ -7,7 +7,7 @@ Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filen
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/asnaq-sys-runtime/exceptions/runtime-exception.html) --> NetworkBlockingOutputException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) --> NetworkBlockingOutputException
 
 <br>
 <br>

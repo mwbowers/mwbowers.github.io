@@ -7,7 +7,7 @@ Exception thrown when trying to use a multidimensional multi data structure in a
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/asnaq-sys-runtime/exceptions/runtime-exception.html) --> CannotCallException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) --> CannotCallException
 
 <br>
 <br>

@@ -23,7 +23,7 @@ This interface should be implemented by any DataStructure class if an object of 
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | IDS | Gets the Data Structure | 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | IDS | Gets the Data Structure | 
 
 <br>
 <br>

@@ -7,7 +7,7 @@ Represents a paramater for an integer type.
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DBParm](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-parm.html) --> DBIntegerParm
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) --> DBIntegerParm
 
 <br>
 <br>

@@ -25,12 +25,12 @@ Used to implement SQL PREPARE statements.
 
 | Name |  Description 
 | --- | --- 
-| [SqlPreparedStatement](#sqlpreparedstatementdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-parm.html)) | Initializes a new instance of SqlPreparedStatement. 
+| [SqlPreparedStatement](#sqlpreparedstatementdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Initializes a new instance of SqlPreparedStatement. 
 | [SqlPreparedStatement](#sqlpreparedstatementdbconnection-string)([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of SqlPreparedStatement. 
 
 <br>
 
-### SqlPreparedStatement( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-parm.html) )
+### SqlPreparedStatement( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) )
 
 Initializes a new instance of SqlPreparedStatement.
 
@@ -44,7 +44,7 @@ SqlPreparedStatement( Data.Common.DbConnection sqlConnection, String sqlText, AS
 | --- | --- | ---
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | sqlConnection | Database Connection. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sqlText | SQL command text. 
-| [DBParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-parm.html) | parameters | Values corresponding to the variables used in the SQL command  
+| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | Values corresponding to the variables used in the SQL command  
 
 <br>
 
@@ -74,7 +74,7 @@ SqlPreparedStatement( Data.Common.DbConnection sqlConnection, String sqlText );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [IDbCommand](https://docs.microsoft.com/en-us/dotnet/api/system.data.idbcommand) | cmd | Gets the IDbCommand command representing the Prepared Statement. | 
-| [SQL_CommunicationsArea](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/sql-communications-area.html) | SQLCA | Gets the SQL Communications Area instance. | 
+| [SQL_CommunicationsArea](/reference/asna-qsys-runtime-job-support/classes/sql-communications-area.html) | SQLCA | Gets the SQL Communications Area instance. | 
 
 <br>
 <br>

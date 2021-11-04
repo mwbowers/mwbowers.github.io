@@ -23,12 +23,12 @@ Defines a generalized way to to add messages to a log.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Add](#addmessagebase)([MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html)) | Adds a message to the log. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Add](#addmessagebase)([MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html)) | Adds a message to the log. | 
 
 <br>
 <br>
 
-### Add([MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html))
+### Add([MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html))
 
 Adds a message to the log.
 
@@ -40,7 +40,7 @@ Add(ASNA.QSys.Runtime.JobSupport.MessageBase entry);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html) | entry | The message to be logged. 
+| [MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html) | entry | The message to be logged. 
 
 
 <br>

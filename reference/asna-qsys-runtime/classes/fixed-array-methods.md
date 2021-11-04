@@ -31,17 +31,17 @@ Contains extension methods for handling FixedArrays according to RPG semantics.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Initialize\\`\\`2](#initialize\`\`2ifixedarraybase{``0-``1}-``1)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html)) | Initializes the elements of an arbitrary array to the same value. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-indicator-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-int32-int32-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-int32-int32-indicator-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-int32-decimal-char-char)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-indicator-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-int32-int32-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-int32-int32-indicator-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-searchtype-int32-decimal-char-char)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-int32-int32)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1-int32)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`2](#lookup\`\`2ifixedarraybase{``0-``1}-``1)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`4](#lookup\`\`4ifixedarraybase{``0-``1}-``1-searchtype-int32-fixeddecimal{``2-``3}-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`4](#lookup\`\`4ifixedarraybase{``0-``1}-``1-searchtype-int32-decimal-char)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`4](#lookup\`\`4ifixedarraybase{``0-``1}-``1-searchtype-int32-fixeddecimal{``2-``3}-indicator-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`4](#lookup\`\`4ifixedarraybase{``0-``1}-``1-searchtype-int32-fixeddecimal{``2-``3}-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`4](#lookup\`\`4ifixedarraybase{``0-``1}-``1-searchtype-int32-decimal-char)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`4](#lookup\`\`4ifixedarraybase{``0-``1}-``1-searchtype-int32-fixeddecimal{``2-``3}-indicator-indicator)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE\\`\\`2](#lookupge\`\`2ifixedarraybase{``0-``1}-``1-int32-int32)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE\\`\\`2](#lookupge\`\`2ifixedarraybase{``0-``1}-``1-int32)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE\\`\\`2](#lookupge\`\`2ifixedarraybase{``0-``1}-``1)([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
@@ -126,7 +126,7 @@ Initialize``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} targetArr, ``1 val);
 <br>
 <br>
 
-### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
 
 Searches an array for the specified element value.
 
@@ -140,14 +140,14 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
 <br>
 
-### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
 
 Searches an array for the specified element value.
 
@@ -161,7 +161,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | eqInd | Indicator which will be set on ('1') if Lookup finds an exact match within the array. 
 
@@ -169,7 +169,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 <br>
 <br>
 
-### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
 
 Searches an array for the specified element value.
 
@@ -183,7 +183,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
@@ -192,7 +192,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 <br>
 <br>
 
-### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
 
 Searches an array for the specified element value.
 
@@ -206,7 +206,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
@@ -216,7 +216,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 <br>
 <br>
 
-### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Lookup\`\`2([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Searches an array for the specified element value.
 
@@ -230,7 +230,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
@@ -300,7 +300,7 @@ Lookup``2(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} argArray, ``1 searchArgumen
 <br>
 <br>
 
-### Lookup\`\`4([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Lookup\`\`4([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
 
 Searches an array for the specified element value.
 
@@ -314,7 +314,7 @@ Lookup``4(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
 | [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
@@ -323,7 +323,7 @@ Lookup``4(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 <br>
 <br>
 
-### Lookup\`\`4([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Lookup\`\`4([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Searches an array for the specified element value.
 
@@ -337,7 +337,7 @@ Lookup``4(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
@@ -346,7 +346,7 @@ Lookup``4(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 <br>
 <br>
 
-### Lookup\`\`4([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Lookup\`\`4([IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [\\`\\`1]($$TODO-``1.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
 
 Searches an array for the specified element value.
 
@@ -360,7 +360,7 @@ Lookup``4(ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} array, ``1 searchArgument, 
 | --- | --- | ---
 | [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | array | The array to search. 
 | [\\`\\`1]($$TODO-``1.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
 | [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
 | [Indicator](/reference/asna-qsys-runtime/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 

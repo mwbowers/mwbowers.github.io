@@ -26,7 +26,7 @@ Contains the functionality to support the semantics of a RPG Data Structure with
 | Name |  Description 
 | --- | --- 
 | [DataStructure](#datastructureint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a Data Structure object with a buffer of the given size. 
-| [DataStructure](#datastructureilayout[])([ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html)) | Constructs a Data Structure object given an array of layout-described fields. The Data Structure size is computed out of the sizes of the individual fields. 
+| [DataStructure](#datastructureilayout[])([ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a Data Structure object given an array of layout-described fields. The Data Structure size is computed out of the sizes of the individual fields. 
 
 <br>
 
@@ -46,7 +46,7 @@ DataStructure( Int32 size );
 
 <br>
 
-### DataStructure( [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) )
+### DataStructure( [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Constructs a Data Structure object given an array of layout-described fields. The Data Structure size is computed out of the sizes of the individual fields.
 
@@ -58,7 +58,7 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] fields );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
+| [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
 
 <br>
 
@@ -89,7 +89,7 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] fields );
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetBinary](#getbinaryint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Binary decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Binary decimal number.
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [GetByte](#getbyteint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte value from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetChar](#getcharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetDate](#getdateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetDate](#getdateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [GetHex](#gethexint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte array from the Data Structure buffer, at the given start position for the given length. | A byte array with the buffer contents at the specified start position and for the given length.
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetIndicator](#getindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwsie.
@@ -98,8 +98,8 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] fields );
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetPacked](#getpackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [GetShort](#getshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetString](#getstringint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a segment of the Data Structure buffer as a string. | The string of the given length that starts at the given position.
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetTime](#gettimeint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetTimestamp](#gettimestampint32-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer. | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetTime](#gettimeint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetTimestamp](#gettimestampint32-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer. | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetValue\\`\\`1](#getvalue\`\`1int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value of the field at the requested starting position in the buffer. | The value of the field that starts at the requested buffer position.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetZoned](#getzonedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Zoned decimal number.
@@ -111,7 +111,7 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] fields );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetBinary](#setbinarydecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Binary decimal number starting at the specified position in the Data Structure buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetByte](#setbytebyte-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a byte value in the specified position in the Data Structure buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetChar](#setcharchar-int32)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a character value in the specified position in the Data Structure buffer. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDate](#setdatedatetime-int32-datetimeformat-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDate](#setdatedatetime-int32-datetimeformat-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHex](#sethexbyte[]-int32-int32)([Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a byte array in the Data Structure buffer, at the given start position for the given length. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetIndicator](#setindicatorchar-int32)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an indicator value specified as a character in the specified position in the Data Structure buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetInteger](#setintegerint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an integer (Int32) value starting at the specified position in the Data Structure buffer. | 
@@ -122,8 +122,8 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] fields );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetString](#setstringreadonlyspan{system.char}-int32-int32-char-boolean)([ReadOnlySpan{System.Char}]($$TODO-ReadOnlySpan{System.Char}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a ReadOnlySpan of characters into a segment of the Data Structure buffer, left adjusted. Pads on the right if necessary. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetStringR](#setstringrstring-int32-int32-char-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a string into a segment the Data Structure buffer, right adjusted. Pads on the left if necessary. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetStringR](#setstringrreadonlyspan{system.char}-int32-int32-char-boolean)([ReadOnlySpan{System.Char}]($$TODO-ReadOnlySpan{System.Char}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a ReadOnlySpan of characters into a segment of the Data Structure buffer, right adjusted. Pads on the left if necessary. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetTime](#settimedatetime-int32-datetimeformat-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetTimestamp](#settimestampdatetime-int32-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetTime](#settimedatetime-int32-datetimeformat-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetTimestamp](#settimestampdatetime-int32-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetValue\\`\\`1](#setvalue\`\`1``0-int32)([\\`\\`0]($$TODO-``0.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the field at the requested starting position in the buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetZoned](#setzoneddecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Zoned decimal number starting at the specified position in the Data Structure buffer. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
@@ -235,7 +235,7 @@ The character at the given position in the buffer.
 <br>
 <br>
 
-### GetDate([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### GetDate([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer.
 
@@ -249,7 +249,7 @@ GetDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runti
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value that represents the date format to use. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the date separator used. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the date separator used. 
 
 #### Returns
 
@@ -433,7 +433,7 @@ The string of the given length that starts at the given position.
 <br>
 <br>
 
-### GetTime([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### GetTime([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer.
 
@@ -447,7 +447,7 @@ GetTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runti
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value that represents the time format to use. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the time separator used. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the time separator used. 
 
 #### Returns
 
@@ -459,7 +459,7 @@ A DateTime value where the Time part is the value retrieved from the Data Struct
 <br>
 <br>
 
-### GetTimestamp([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### GetTimestamp([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer.
 
@@ -472,7 +472,7 @@ GetTimestamp(Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the timestamp separator used. Only None or Default are allowed. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the timestamp separator used. Only None or Default are allowed. 
 
 #### Returns
 
@@ -645,7 +645,7 @@ SetChar(Char val, Int32 position);
 <br>
 <br>
 
-### SetDate([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### SetDate([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer.
 
@@ -660,7 +660,7 @@ SetDate(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format,
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | value | The DateTime value to store. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value that represents the date format to use. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the date separator used. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the date separator used. 
 
 
 <br>
@@ -871,7 +871,7 @@ SetStringR(ReadOnlySpan{System.Char} val, Int32 start, Int32 len, Char padChar, 
 <br>
 <br>
 
-### SetTime([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### SetTime([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer.
 
@@ -886,13 +886,13 @@ SetTime(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format,
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | value | The DateTime value to store. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value that represents the time format to use. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the time separator used. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the time separator used. 
 
 
 <br>
 <br>
 
-### SetTimestamp([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### SetTimestamp([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer.
 
@@ -906,7 +906,7 @@ SetTimestamp(DateTime value, Int32 start, ASNA.QSys.Runtime.DateTimeSeparator se
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | value | The DateTime value to store. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the timestamp separator used. Only None or Default are allowed. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator value that represents the timestamp separator used. Only None or Default are allowed. 
 
 
 <br>

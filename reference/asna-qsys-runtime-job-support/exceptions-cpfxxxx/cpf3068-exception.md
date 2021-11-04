@@ -7,7 +7,7 @@ The exception that is thrown when Error while writing to file {0} in {1}
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF3000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf3000-exception.html) --> CPF3068Exception
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF3000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf3000-exception.html) --> CPF3068Exception
 
 <br>
 <br>

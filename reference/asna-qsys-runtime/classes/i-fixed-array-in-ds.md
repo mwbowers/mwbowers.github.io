@@ -23,7 +23,7 @@ Describes minimum operations for a fixed size array contained in a DataStructure
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | ParentDS | The container DataStructure. | 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | ParentDS | The container DataStructure. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SkipPositions | If the array is non-contiguous in the DataStructure buffer, the number of positions between two consecutive elements of the array. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartPosition | The starting position of the array within the DataStructure buffer. | 
 

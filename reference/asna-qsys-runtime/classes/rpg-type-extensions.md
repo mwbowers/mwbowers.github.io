@@ -41,7 +41,7 @@ RpgTypeExtensions class.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compare To object. | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Convert to String. | The converted string result.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Convert to string. | The converted string result.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to string. | The converted string result.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetEnumerator](#getenumerator)() | Get enumerator. | The enumerator.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compare to object. | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Convert](#convertdecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Convert to IFixedSizeType. | The resulting IFixedSizeType.
@@ -65,13 +65,13 @@ RpgTypeExtensions class.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert to FixedSize DateTime. | A new FixedTime converted value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToNumericString](#tonumericstring)() | Convert to numeric string. | A new string with the time value converted according to Format.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to string. | A new string with the value converted.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Convert to string. | A new string with the coverte value.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to string. | A new string with the coverte value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetEnumerator](#getenumerator)() | Get enumerator. | The FixedTime array enumerator.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compares this instance to a specified DateTime or FixedSize type and returns an indication of their relative values. | A signed number indicating the relative values of this instance and input value. If object cannot be compared, it throws exception.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert DateTime value to FixedTimestamp type. | A new FixedTimestamp of the separator indicated with the input value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToNumericString](#tonumericstring)() | Converts FixedTimestamp to numeric string. | A new string with the FixedTimestamp value converted.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to string. | A new string with the Timestamp value converted.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeseparator)([DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Convert to string. | A new string with the FixedTimestamp converted using ISO format.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeseparator)([DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to string. | A new string with the FixedTimestamp converted using ISO format.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetEnumerator](#getenumerator)() | Get array enumerator. | The array enumerator.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetEnumerator](#getenumerator)() | T Get Enumerator. | IEnumerator result.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Returns the hash code for this instance. | A hash code for the current FixedDecimal.
@@ -217,7 +217,7 @@ The converted string result.
 <br>
 <br>
 
-### ToString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### ToString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Convert to string.
 
@@ -230,7 +230,7 @@ ToString(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | Input format. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | Input separator. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | Input separator. 
 
 #### Returns
 
@@ -656,7 +656,7 @@ A new string with the value converted.
 <br>
 <br>
 
-### ToString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### ToString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Convert to string.
 
@@ -669,7 +669,7 @@ ToString(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | Input DateTimeFormat. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | Input DateTimeSeparator. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | Input DateTimeSeparator. 
 
 #### Returns
 
@@ -759,7 +759,7 @@ A new string with the Timestamp value converted.
 <br>
 <br>
 
-### ToString([DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### ToString([DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Convert to string.
 
@@ -771,7 +771,7 @@ ToString(ASNA.QSys.Runtime.DateTimeSeparator separator);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | separator | Input DateTimeSeparator. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | Input DateTimeSeparator. 
 
 #### Returns
 

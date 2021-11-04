@@ -25,11 +25,11 @@ Describes a Data Structure (either single or Multi) as a parameter for a CALL to
 
 | Name |  Description 
 | --- | --- 
-| **DSCallParm**( [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) ) | Constructs a DSCallParm for the given Data Structure.
+| **DSCallParm**( [IDS](/reference/asna-qsys-runtime/classes/ids.html) ) | Constructs a DSCallParm for the given Data Structure.
 
 <br>
 
-### DSCallParm( [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) )
+### DSCallParm( [IDS](/reference/asna-qsys-runtime/classes/ids.html) )
 
 Constructs a DSCallParm for the given Data Structure.
 
@@ -41,7 +41,7 @@ DSCallParm( ASNA.QSys.Runtime.IDS dataStructure );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | dataStructure | The Data Structure (single or Multi) to use as parameter. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | dataStructure | The Data Structure (single or Multi) to use as parameter. 
 
 <br>
 
@@ -54,7 +54,7 @@ DSCallParm( ASNA.QSys.Runtime.IDS dataStructure );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of this Data Structure object. | 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | IDS | Gets the Data Structure | 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | IDS | Gets the Data Structure | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Layout | Gets the Data Structure Layout as a list of IDSFields. | 
 
 <br>
@@ -72,7 +72,7 @@ DSCallParm( ASNA.QSys.Runtime.IDS dataStructure );
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | [ToDataStructure](#todatastructure)() | Convert to a DataStructure type. | The IDS member as a DataStructure type.
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | [ToDataStructure](#todatastructure)() | Convert to a DataStructure type. | The IDS member as a DataStructure type.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
@@ -137,7 +137,7 @@ ToDataStructure();
 
 #### Returns
 
-[DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html)
+[DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html)
 
 The IDS member as a DataStructure type.
 

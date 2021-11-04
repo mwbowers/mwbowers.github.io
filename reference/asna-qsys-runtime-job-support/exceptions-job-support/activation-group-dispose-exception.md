@@ -7,7 +7,7 @@ The exception that is thrown when an program has a null activation group at disp
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobFrameworkException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-framework-exception.html) --> ActivationGroupDisposeException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobFrameworkException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-framework-exception.html) --> ActivationGroupDisposeException
 
 <br>
 <br>

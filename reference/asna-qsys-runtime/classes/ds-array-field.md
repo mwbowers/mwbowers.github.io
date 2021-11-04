@@ -25,11 +25,11 @@ Describes a Data Structure field that is an array.
 
 | Name |  Description 
 | --- | --- 
-| **DSArrayField**( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) ) | Cosntructs an array field object.
+| **DSArrayField**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) ) | Cosntructs an array field object.
 
 <br>
 
-### DSArrayField( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) )
+### DSArrayField( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Cosntructs an array field object.
 
@@ -41,8 +41,8 @@ DSArrayField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.I
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | dataStructure | Data Structure that contains this field. 
-| [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | layout | Layout description of the array elements. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | dataStructure | Data Structure that contains this field. 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | layout | Layout description of the array elements. 
 
 <br>
 
@@ -55,7 +55,7 @@ DSArrayField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.I
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ElementLength | Length of the individual array elements. | 
-| [ILayout](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | Layout | Gets the ILayout of the array elements. | 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | Layout | Gets the ILayout of the array elements. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length of the array. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Name of this array field. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Start | Gets the starting position of this array field in the Data Structure buffer. | 

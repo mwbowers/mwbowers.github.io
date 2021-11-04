@@ -7,7 +7,7 @@ The exception that is thrown to signal the host server is being shut down.
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobFrameworkException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-framework-exception.html) --> ServerTerminatedException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobFrameworkException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-framework-exception.html) --> ServerTerminatedException
 
 <br>
 <br>

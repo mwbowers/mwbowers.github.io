@@ -25,11 +25,11 @@ Defines the core behavior of user defined commands and provide a base for derive
 
 | Name |  Description 
 | --- | --- 
-| **UserDefinedCommand**( [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) ) | Called from constructors in derived classes to initialize the command class.
+| **UserDefinedCommand**( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) ) | Called from constructors in derived classes to initialize the command class.
 
 <br>
 
-### UserDefinedCommand( [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) )
+### UserDefinedCommand( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) )
 
 Called from constructors in derived classes to initialize the command class.
 
@@ -41,7 +41,7 @@ UserDefinedCommand( ASNA.QSys.Runtime.ICaller caller );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ICaller](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-caller.html) | caller | The caller of the command. The caller is typically a program. 
+| [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) | caller | The caller of the command. The caller is typically a program. 
 
 <br>
 
@@ -53,7 +53,7 @@ UserDefinedCommand( ASNA.QSys.Runtime.ICaller caller );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ActivationGroup](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the command's activation group. | 
+| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the command's activation group. | 
 
 <br>
 <br>

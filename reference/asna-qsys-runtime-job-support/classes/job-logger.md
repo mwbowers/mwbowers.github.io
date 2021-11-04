@@ -48,7 +48,7 @@ JobLogger(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [MessageLoggingLevel](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-logging-level.html) | LogLevel | Gets the logger's level setting. | 
+| [MessageLoggingLevel](/reference/asna-qsys-runtime-job-support/classes/message-logging-level.html) | LogLevel | Gets the logger's level setting. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | MinPriority | Gets the minimum priority needed on a message for it to get logged. | 
 
 <br>
@@ -58,23 +58,23 @@ JobLogger(  );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Add](#addmessagebase)([MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html)) | Adds a message to the log. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Add](#addmessagebase)([MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html)) | Adds a message to the log. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BeginLogging](#beginlogging)() | When overridden in a derived class, logging of messages gets started for the log. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndLogging](#endlogging)() | When overridden in a derived class, logging of messages is stopped. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [IJobLogger](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/i-job-logger.html) | [Get](#get)() | Gets the logger. | The logger.
+| [IJobLogger](/reference/asna-qsys-runtime-job-support/classes/i-job-logger.html) | [Get](#get)() | Gets the logger. | The logger.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ShouldLog](#shouldlogmessagebase)([MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html)) | Determines if a message should be added to the log. | true if the message should be logged; otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ShouldLog](#shouldlogmessagebase)([MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html)) | Determines if a message should be added to the log. | true if the message should be logged; otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
 <br>
 
-### Add([MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html))
+### Add([MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html))
 
 Adds a message to the log.
 
@@ -86,7 +86,7 @@ Add(ASNA.QSys.Runtime.JobSupport.MessageBase entry);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html) | entry | The message to be logged. 
+| [MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html) | entry | The message to be logged. 
 
 
 <br>
@@ -126,7 +126,7 @@ Get();
 
 #### Returns
 
-[IJobLogger](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/i-job-logger.html)
+[IJobLogger](/reference/asna-qsys-runtime-job-support/classes/i-job-logger.html)
 
 The logger.
 
@@ -134,7 +134,7 @@ The logger.
 <br>
 <br>
 
-### ShouldLog([MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html))
+### ShouldLog([MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html))
 
 Determines if a message should be added to the log.
 
@@ -146,7 +146,7 @@ ShouldLog(ASNA.QSys.Runtime.JobSupport.MessageBase msg);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MessageBase](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-base.html) | msg | Message in question. 
+| [MessageBase](/reference/asna-qsys-runtime-job-support/classes/message-base.html) | msg | Message in question. 
 
 #### Returns
 

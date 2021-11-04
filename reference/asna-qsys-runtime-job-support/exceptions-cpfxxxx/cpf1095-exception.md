@@ -7,7 +7,7 @@ The exception that is thrown when CL variable length not valid for parameter -sy
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF1000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf1000-exception.html) --> CPF1095Exception
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF1000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf1000-exception.html) --> CPF1095Exception
 
 <br>
 <br>

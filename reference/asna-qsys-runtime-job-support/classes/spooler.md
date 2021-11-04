@@ -26,7 +26,7 @@ Provides the ifrastucture to manage spooled output from print files.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearQueue](#clearqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove all the spool files from an output queue. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFileToDatabaseFile](#copyfiletodatabasefilestring-string-string-string-string-string-boolean-spoolercontrolcharacter)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/spooler-control-character.html)) | When overriden in a derived class, copies a Spooled File to a Database File. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFileToDatabaseFile](#copyfiletodatabasefilestring-string-string-string-string-string-boolean-spoolercontrolcharacter)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter](/reference/asna-qsys-runtime-job-support/classes/spooler-control-character.html)) | When overriden in a derived class, copies a Spooled File to a Database File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateQueue](#createqueuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new output queue. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteFile](#deletefilestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a spool file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteQueue](#deletequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete an output queue. | 
@@ -72,7 +72,7 @@ ClearQueue(String queueName);
 <br>
 <br>
 
-### CopyFileToDatabaseFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/spooler-control-character.html))
+### CopyFileToDatabaseFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter](/reference/asna-qsys-runtime-job-support/classes/spooler-control-character.html))
 
 When overriden in a derived class, copies a Spooled File to a Database File.
 
@@ -91,7 +91,7 @@ CopyFileToDatabaseFile(String spoolFileName, String toDatabaseFile, String job, 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | createdDate | Only valid value is "*ONLY". 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toMember | Name of database file Member, you can also use "*FIRST". 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceRecords | Delete any records in the database file member prior to copying. 
-| [SpoolerControlCharacter](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/spooler-control-character.html) | controlCharacter | Maner in which control characters will be represented in the database. 
+| [SpoolerControlCharacter](/reference/asna-qsys-runtime-job-support/classes/spooler-control-character.html) | controlCharacter | Maner in which control characters will be represented in the database. 
 
 
 <br>

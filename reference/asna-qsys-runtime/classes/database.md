@@ -141,8 +141,8 @@ Database( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateBuffer, 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Commit](#commitstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commit summary. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Commit](#commitstring-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Commit summary. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Connect](#connect)() | Connect summary. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFileToDb](#copyfiletodbstring-database-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a file with all its members and data, if they exist, from the current Database to another Database. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyLogicalFileToDb](#copylogicalfiletodbstring-database-string-boolean-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a logical file and its base physical files from the current Database to another Database. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFileToDb](#copyfiletodbstring-database-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a file with all its members and data, if they exist, from the current Database to another Database. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyLogicalFileToDb](#copylogicalfiletodbstring-database-string-boolean-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a logical file and its base physical files from the current Database to another Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateDirectory](#createdirectorystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new directory in the Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteFile](#deletefilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Deletes a file from the Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Dispose summary. | 
@@ -294,7 +294,7 @@ Connect();
 <br>
 <br>
 
-### CopyFileToDb([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### CopyFileToDb([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Copies a file with all its members and data, if they exist, from the current Database to another Database.
 
@@ -307,7 +307,7 @@ CopyFileToDb(String filePath, ASNA.QSys.Runtime.Database toDb, String toDirector
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path of the file to be copied, as "directory/fileName". 
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | toDb | Database onto which the file will be copied. 
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | toDb | Database onto which the file will be copied. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toDirectory | Destination directory. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | copyData | True to copy also the file data. 
 
@@ -315,7 +315,7 @@ CopyFileToDb(String filePath, ASNA.QSys.Runtime.Database toDb, String toDirector
 <br>
 <br>
 
-### CopyLogicalFileToDb([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### CopyLogicalFileToDb([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Copies a logical file and its base physical files from the current Database to another Database.
 
@@ -328,7 +328,7 @@ CopyLogicalFileToDb(String filePath, ASNA.QSys.Runtime.Database toDb, String toD
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path of the file to be copied, as "directory/fileName". 
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | toDb | Database onto which the file will be copied. 
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | toDb | Database onto which the file will be copied. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toDirectory | Destination directory. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceBaseFiles | If true, if a base file already exists in the target DB it will be replaced.
             If false, if a base file already exists it will not be replaced. 

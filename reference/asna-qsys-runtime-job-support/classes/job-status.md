@@ -48,9 +48,9 @@ JobStatus(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ExecuteState](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/execute-state.html) | ExecuteState | Gets or sets teh ExecutionState for the job. | 
+| [ExecuteState](/reference/asna-qsys-runtime-job-support/classes/execute-state.html) | ExecuteState | Gets or sets teh ExecutionState for the job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Function | Gets the function, or additional information of the job's status. | 
-| [ExecStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/exec-status.html) | Status | Gets the execution status of the job. | 
+| [ExecStatus](/reference/asna-qsys-runtime-job-support/classes/exec-status.html) | Status | Gets the execution status of the job. | 
 
 <br>
 <br>
@@ -59,7 +59,7 @@ JobStatus(  );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [JobStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-status.html) | [Clone](#clone)() | Creates and returns an identical copy of the current job status. | A copy of the current job status.
+| [JobStatus](/reference/asna-qsys-runtime-job-support/classes/job-status.html) | [Clone](#clone)() | Creates and returns an identical copy of the current job status. | A copy of the current job status.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFormattedString](#getformattedstring)() | Gets a string with the status of the job. | A string with the job's Function, Status and (E)state.
@@ -67,7 +67,7 @@ JobStatus(  );
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetStatus](#setstatusexecstatus-string)([ExecStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/exec-status.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the new status of the Job. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetStatus](#setstatusexecstatus-string)([ExecStatus](/reference/asna-qsys-runtime-job-support/classes/exec-status.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the new status of the Job. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
@@ -83,7 +83,7 @@ Clone();
 
 #### Returns
 
-[JobStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-status.html)
+[JobStatus](/reference/asna-qsys-runtime-job-support/classes/job-status.html)
 
 A copy of the current job status.
 
@@ -109,7 +109,7 @@ A string with the job's Function, Status and (E)state.
 <br>
 <br>
 
-### SetStatus([ExecStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/exec-status.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### SetStatus([ExecStatus](/reference/asna-qsys-runtime-job-support/classes/exec-status.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Sets the new status of the Job.
 
@@ -121,7 +121,7 @@ SetStatus(ASNA.QSys.Runtime.JobSupport.ExecStatus newExecStatus, String newFunct
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ExecStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/exec-status.html) | newExecStatus | The execution status of the job. 
+| [ExecStatus](/reference/asna-qsys-runtime-job-support/classes/exec-status.html) | newExecStatus | The execution status of the job. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newFunction | The function, or additional information, of the job'status. 
 
 

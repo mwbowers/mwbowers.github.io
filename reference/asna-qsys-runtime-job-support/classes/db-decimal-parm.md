@@ -7,7 +7,7 @@ Represents a paramater for a decimal type.
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DBParm](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-parm.html) --> [DBScaledParm](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/db-scaled-parm.html) --> DBDecimalParm
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) --> [DBScaledParm](/reference/asna-qsys-runtime-job-support/classes/db-scaled-parm.html) --> DBDecimalParm
 
 <br>
 <br>

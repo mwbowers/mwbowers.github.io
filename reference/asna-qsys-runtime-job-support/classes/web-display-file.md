@@ -103,7 +103,7 @@ WebDisplayFile( String fileName, String pageName, Data.DataSet dataSet );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetCurrentRow](#getcurrentrowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the current, or active, row number for a record format. | The current row number.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a sharable display file. | The sharable display file. Null if one is not found.
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a sharable display file. | The sharable display file. Null if one is not found.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitMessageSubfile](#initmessagesubfilestring-string-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initialized the records of a subfile with the messages on a program's message queue. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsActive](#isactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a value indicating whether a record format is active or not. | True if the record format is active.
@@ -245,7 +245,7 @@ GetSharedFile(String DclFileName);
 
 #### Returns
 
-[WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html)
+[WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)
 
 The sharable display file. Null if one is not found.
 

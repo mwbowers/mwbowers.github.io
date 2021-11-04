@@ -7,7 +7,7 @@ The exception that is thrown when File '{0}' not found in job '{1}/{2}/{3}'
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF3300Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf3300-exception.html) --> CPF3303Exception
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF3300Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf3300-exception.html) --> CPF3303Exception
 
 <br>
 <br>

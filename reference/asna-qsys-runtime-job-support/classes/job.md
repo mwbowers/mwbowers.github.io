@@ -25,11 +25,11 @@ Defines the core behavior of a Job that provides an environment to submit, contr
 
 | Name |  Description 
 | --- | --- 
-| **Job**( [JobConfig](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-config.html) ) | Called from constructors in derived classes to initializes the Job class with a Job Configuration.
+| **Job**( [JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html) ) | Called from constructors in derived classes to initializes the Job class with a Job Configuration.
 
 <br>
 
-### Job( [JobConfig](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-config.html) )
+### Job( [JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html) )
 
 Called from constructors in derived classes to initializes the Job class with a Job Configuration.
 
@@ -41,7 +41,7 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [JobConfig](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-config.html) | jobConfig | The configuration values for the job. 
+| [JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html) | jobConfig | The configuration values for the job. 
 
 <br>
 
@@ -54,26 +54,26 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | AccountingCode | Gets or sets a user defined string. | 
-| [ActivationGroup](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the Job's activation group. | 
-| [ActivationManager](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/activation-manager.html) | ActivationManager | Gets the Job's activation manager. | 
+| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the Job's activation group. | 
+| [ActivationManager](/reference/asna-qsys-runtime-job-support/classes/activation-manager.html) | ActivationManager | Gets the Job's activation manager. | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | ADO_Connection | Gets the ADO connection used for 'embedded SQL' | 
-| [Job](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job.html) | CurrentJob | Gets the Job associated with the calling thread. | 
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | Database | Gets the main DataGate Database associated with the Job. | 
-| [DocumentLibraryObject](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/document-library-object.html) | DLO | Gets the Job's document library object facility. | 
-| [ExecuteState](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/execute-state.html) | ExecuteState | Always returns the State 'Running'. | 
-| [IntergratedFileSystem](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/intergrated-file-system.html) | IFS | Gets the Job's integrated file system facility. | 
+| [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) | CurrentJob | Gets the Job associated with the calling thread. | 
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | Database | Gets the main DataGate Database associated with the Job. | 
+| [DocumentLibraryObject](/reference/asna-qsys-runtime-job-support/classes/document-library-object.html) | DLO | Gets the Job's document library object facility. | 
+| [ExecuteState](/reference/asna-qsys-runtime-job-support/classes/execute-state.html) | ExecuteState | Always returns the State 'Running'. | 
+| [IntergratedFileSystem](/reference/asna-qsys-runtime-job-support/classes/intergrated-file-system.html) | IFS | Gets the Job's integrated file system facility. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueBaseQueuesPath | Gets or sets the folder path root locating the job queues directory. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueEntryExtension | Gets or set the file extension used for job queue entries. Defaults to "jqe". | 
-| [LocalDataCollection](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/local-data-collection.html) | LDC | Gets the Job's Local Data Collection. | 
+| [LocalDataCollection](/reference/asna-qsys-runtime-job-support/classes/local-data-collection.html) | LDC | Gets the Job's Local Data Collection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MessageFileFolder | Gets or sets the Folder path to the directory where the Message Files are located. | 
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | PrinterDB | Gets the DataGate Database for Printer Files associated with the Job. | 
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | PrinterDB | Gets the DataGate Database for Printer Files associated with the Job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PsdsJobName | Gets or sets the Job's Name portion of the full job name. | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | PsdsJobNumber | Gets or sets the Job's Number portion of the full job name. Job's Number is unique within a Monarch Application Server. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PsdsJobUser | Gets or sets the Job's User name portion of the full job name. | 
-| [Spooler](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/spooler.html) | Spooler | Gets the Job's print output spooler. | 
+| [Spooler](/reference/asna-qsys-runtime-job-support/classes/spooler.html) | Spooler | Gets the Job's print output spooler. | 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | StartupMoment | Gets the timestamp of when the Job was started. Precision up to microseconds. | 
-| [JobStats](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-stats.html) | Stats | Gets the Job' Statistics. May return NULL if job has no Job Services. | 
-| [JobStatus](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-status.html) | Status | Gets a copy of the Job's Status. | 
+| [JobStats](/reference/asna-qsys-runtime-job-support/classes/job-stats.html) | Stats | Gets the Job' Statistics. May return NULL if job has no Job Services. | 
+| [JobStatus](/reference/asna-qsys-runtime-job-support/classes/job-status.html) | Status | Gets a copy of the Job's Status. | 
 
 <br>
 <br>
@@ -87,11 +87,11 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | [getADO_Connection](#getado_connection)() | Gets the ADO connection used for 'embedded SQL' | Always returns NULL.
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | [getDatabase](#getdatabase)() | When overriden in a derived class, gets the main DataGate Database associated with the Job. | Returns de Database instance for the Job.
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | [getDatabase](#getdatabase)() | When overriden in a derived class, gets the main DataGate Database associated with the Job. | Returns de Database instance for the Job.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [MessageQueue](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the message queue associated with the program; otherwise null.
+| [MessageQueue](/reference/asna-qsys-runtime-job-support/classes/message-queue.html) | [GetInvokedMessageQueue](#getinvokedmessagequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the message queue associated with the program; otherwise null.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA. | The requested field value.
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | [getPrinterDB](#getprinterdb)() | Gets the DataGate Database for Printer Files associated with the Job. | Returns the main Database.
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | [getPrinterDB](#getprinterdb)() | Gets the DataGate Database for Printer Files associated with the Job. | Returns the main Database.
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetSwitch](#getswitchint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the vaule of one of the 8 job switchs. | The switch value of '0' or '1' for the requested switch, otherwise '0'.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSwitches](#getswitches)() | Gets a string representing the values of all 8 job's switches. | A '1' or '0' for each switch. The value of switch 1 is the leftmost postition of the string, switch 8 is in the last position.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
@@ -168,7 +168,7 @@ getDatabase();
 
 #### Returns
 
-[Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html)
+[Database](/reference/asna-qsys-runtime/classes/database.html)
 
 Returns de Database instance for the Job.
 
@@ -192,7 +192,7 @@ GetInvokedMessageQueue(String programQueueId);
 
 #### Returns
 
-[MessageQueue](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/message-queue.html)
+[MessageQueue](/reference/asna-qsys-runtime-job-support/classes/message-queue.html)
 
 If found, the message queue associated with the program; otherwise null.
 
@@ -235,7 +235,7 @@ getPrinterDB();
 
 #### Returns
 
-[Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html)
+[Database](/reference/asna-qsys-runtime/classes/database.html)
 
 Returns the main Database.
 

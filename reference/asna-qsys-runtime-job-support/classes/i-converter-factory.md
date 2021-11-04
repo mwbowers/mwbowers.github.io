@@ -23,7 +23,7 @@ Defines the functionality to create an object that implements the IConverter int
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [IConverter](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/i-converter.html) | [GetConverter](#getconverterint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a converter for the specified CCSID. | The converted for the requested CCSID.
+| [IConverter](/reference/asna-qsys-runtime-job-support/classes/i-converter.html) | [GetConverter](#getconverterint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a converter for the specified CCSID. | The converted for the requested CCSID.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SupportsCcsid](#supportsccsidint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Determines if the ICoverter object supports a particular EBCDIC CCSID. | true if the ccsid is supported.
 
 <br>
@@ -45,7 +45,7 @@ GetConverter(Int32 ccsid);
 
 #### Returns
 
-[IConverter](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/i-converter.html)
+[IConverter](/reference/asna-qsys-runtime-job-support/classes/i-converter.html)
 
 The converted for the requested CCSID.
 

@@ -65,53 +65,53 @@ Display File Interface.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes CHAIN by Relative Record Number. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainRRN](#chainrrnstring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes CHAIN by Relative Record Number. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainRRN](#chainrrnstring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearSubfile](#clearsubfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Clear Subfile. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [close](#close)() | Closes Workstation file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Close Display File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeactivateFormats](#deactivateformatsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | De-activate Display File record formats. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [deleteByRRN](#deletebyrrnstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes DELETE by Relative Record Number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DisplaySubfileRecords](#displaysubfilerecordsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Display subfile records. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [exFmt](#exfmtstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes EXFMT operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes EXFMT operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [exFmt](#exfmtstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes EXFMT operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes EXFMT operation. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetCurrentRow](#getcurrentrowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get current row. | Relative Record Number.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetEnumerator](#getenumerator)() | Get Enumerator. | Enumerator.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitMessageSubfile](#initmessagesubfilestring-string-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Inititializes Message subfile. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsActive](#isactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines if Record format is Active. | True if active, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [open](#open)() | Opens Workstation File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Open Display File. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [read](#readstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes READ operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [read](#readstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes READ operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#read)() | Read Display File. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [readNextChanged](#readnextchangedstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise original RRN.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextChanged](#readnextchangedstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise exception is thrown.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [readNextChanged](#readnextchangedstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise original RRN.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextChanged](#readnextchangedstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise exception is thrown.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetActive](#setactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Set the record format as Active. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetCurrentRow](#setcurrentrowstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Set current row. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [update](#updatestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute UPDATE subfile record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#update)() | Update Display File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [updateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Execute UPDATE FIELDS operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainRRN](#chainrrnstring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | For backwards compatibility with programs compiled prior to v12.0 | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainRRN](#chainrrnstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes CHAIN by Relative Record Number. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainRRN](#chainrrnstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes CHAIN by Relative Record Number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainRRN](#chainrrnstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [exFmt](#exfmtstring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Opens Workstation File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#openchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Opens Workstation File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [read](#readstring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes READ operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes READ operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [readNextChanged](#readnextchangedstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise original RRN.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextChanged](#readnextchangedstring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise original RRN.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextChanged](#readnextchangedstring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise original RRN.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextChanged](#readnextchangedstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise throws exception.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextChanged](#readnextchangedstring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation. | If record exists Relative Record Number for record that changed, otherwise original RRN.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html)) | Executes WRITE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes WRITE record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#write)() | Write Display File. | 
 
@@ -138,7 +138,7 @@ chainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 <br>
 <br>
 
-### chainRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### chainRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes CHAIN by Relative Record Number.
 
@@ -152,13 +152,13 @@ chainRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Structure 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure 
 
 
 <br>
 <br>
 
-### ChainRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ChainRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Executes CHAIN by Relative Record Number.
 
@@ -172,7 +172,7 @@ ChainRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS, ref Char err
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Structure 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Output error code. 
 
 
@@ -277,7 +277,7 @@ DisplaySubfileRecords(String subfileName);
 <br>
 <br>
 
-### exFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### exFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes EXFMT operation.
 
@@ -290,13 +290,13 @@ exFmt(String formatName, ASNA.QSys.Runtime.IDS indDS);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Output Indicator Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Output Indicator Data Structure. 
 
 
 <br>
 <br>
 
-### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes EXFMT operation.
 
@@ -309,7 +309,7 @@ ExFmt(String formatName, ASNA.QSys.Runtime.IDS indDS);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
 
 
 <br>
@@ -419,7 +419,7 @@ Open();
 <br>
 <br>
 
-### read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes READ operation.
 
@@ -432,7 +432,7 @@ read(String formatName, ASNA.QSys.Runtime.IDS indDS);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
 
 
 <br>
@@ -450,7 +450,7 @@ Read();
 <br>
 <br>
 
-### readNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### readNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes Workstationfile READ NEXT record CHANGED operation.
 
@@ -464,13 +464,13 @@ readNextChanged(String formatName, Int32 originalRRN, ASNA.QSys.Runtime.IDS indD
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | originalRRN | Input original Relative Record Number. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure reference. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure reference. 
 
 
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes Workstationfile READ NEXT record CHANGED operation.
 
@@ -484,7 +484,7 @@ ReadNextChanged(String formatName, Int32 originalRRN, ASNA.QSys.Runtime.IDS indD
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | originalRRN | Input original Relative Record Number. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure reference. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure reference. 
 
 
 <br>
@@ -577,7 +577,7 @@ updateFlds(String formatName, String[] fieldNames);
 <br>
 <br>
 
-### chainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### chainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception.
 
@@ -592,7 +592,7 @@ chainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Not used. 
 | [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | Not used. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | Not used. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | ds | Not used. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | ds | Not used. 
 
 
 <br>
@@ -659,7 +659,7 @@ chainRRN(String formatName, Int32 rrn, Boolean noLock);
 <br>
 <br>
 
-### ChainRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### ChainRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes CHAIN by Relative Record Number.
 
@@ -673,7 +673,7 @@ ChainRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Stucture. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Stucture. 
 
 
 <br>
@@ -737,7 +737,7 @@ ExFmt(String formatName, Char[] optionIndicators);
 <br>
 <br>
 
-### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Executes EXFMT operation.
 
@@ -750,7 +750,7 @@ ExFmt(String formatName, ASNA.QSys.Runtime.IDS indDS, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Output error code. 
 
 
@@ -826,7 +826,7 @@ read(String formatName, Char[] indicators);
 <br>
 <br>
 
-### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes READ operation.
 
@@ -839,7 +839,7 @@ Read(String formatName, ASNA.QSys.Runtime.IDS indDS);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure. 
 
 
 <br>
@@ -864,7 +864,7 @@ Read(String formatName, Char[] indicators);
 <br>
 <br>
 
-### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Executes READ operation.
 
@@ -877,7 +877,7 @@ Read(String formatName, ASNA.QSys.Runtime.IDS indDS, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Option indicator Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Option indicator Data Structure. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Output error code. 
 
 
@@ -924,7 +924,7 @@ readNextChanged(String formatName, Int32 originalRRN, Char[] indicators);
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Executes Workstationfile READ NEXT record CHANGED operation.
 
@@ -938,7 +938,7 @@ ReadNextChanged(String formatName, Int32 originalRRN, ASNA.QSys.Runtime.IDS indD
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | originalRRN | Input original Relative Record Number. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure reference. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure reference. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Output error code. 
 
 
@@ -986,7 +986,7 @@ ReadNextChanged(String formatName, Int32 originalRRN, Char[] indicators, ref Cha
 <br>
 <br>
 
-### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html))
+### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes WRITE record operation.
 
@@ -1000,7 +1000,7 @@ write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name/ 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Option indicator collection. 
-| [IDS](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids.html) | fromDS | Input data from Data Structure. 
+| [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | Input data from Data Structure. 
 
 
 <br>

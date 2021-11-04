@@ -25,11 +25,11 @@ Defines the core behavior of the device handling the user interface for an inter
 
 | Name |  Description 
 | --- | --- 
-| **WebDevice**( [InteractiveJob](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/interactive-job.html) ) | Called from constructors in derived classes to initialize the WebDevice class.
+| **WebDevice**( [InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html) ) | Called from constructors in derived classes to initialize the WebDevice class.
 
 <br>
 
-### WebDevice( [InteractiveJob](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/interactive-job.html) )
+### WebDevice( [InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html) )
 
 Called from constructors in derived classes to initialize the WebDevice class.
 
@@ -41,7 +41,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [InteractiveJob](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/interactive-job.html) | job | The job owning the device. 
+| [InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html) | job | The job owning the device. 
 
 <br>
 
@@ -53,7 +53,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | ActiveDisplayFile | Gets the active display file performing the current operation on the device. | 
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | ActiveDisplayFile | Gets the active display file performing the current operation on the device. | 
 
 <br>
 <br>
@@ -62,18 +62,18 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Attach](#attachstring-webdisplayfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html)) | Associates a named display file to this device for future shareing.  Remembers the display file name for potential future sharing. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Attach](#attachstring-webdisplayfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Associates a named display file to this device for future shareing.  Remembers the display file name for potential future sharing. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Detach](#detachstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the association of a named display file with the device. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#dispose)() | Calls the close method on the device. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a display file attached to the device. | The attached display file. Null if there is no display file with the name seeked.
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a display file attached to the device. | The attached display file. Null if there is no display file with the name seeked.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Attach](#attachwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html)) | Associates a display file to this device. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Detach](#detachwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html)) | Removes the association of a display file with the device. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Attach](#attachwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Associates a display file to this device. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Detach](#detachwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Removes the association of a display file with the device. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html)) | Present a screen waiting for data to be ready and reads it. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Present a screen waiting for data to be ready and reads it. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RiseAbnormalEnd](#riseabnormalendstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks the device as being in a job that is ending abnormally. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SignalDataReadyForProgram](#signaldatareadyforprogram)() | Signals the fact that data is now available to the program so it can continue execution. | 
@@ -85,7 +85,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 <br>
 <br>
 
-### Attach([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html))
+### Attach([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html))
 
 Associates a named display file to this device for future shareing.  Remembers the display file name for potential future sharing.
 
@@ -98,7 +98,7 @@ Attach(String shareFileName, ASNA.QSys.Runtime.JobSupport.WebDisplayFile display
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | shareFileName | Shared file name to remember along with the display file. 
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | displayFile | The display file being associated to this device. 
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | displayFile | The display file being associated to this device. 
 
 
 <br>
@@ -150,7 +150,7 @@ GetSharedFile(String shareFileName);
 
 #### Returns
 
-[WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html)
+[WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)
 
 The attached display file. Null if there is no display file with the name seeked.
 
@@ -158,7 +158,7 @@ The attached display file. Null if there is no display file with the name seeked
 <br>
 <br>
 
-### Attach([WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html))
+### Attach([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html))
 
 Associates a display file to this device.
 
@@ -170,13 +170,13 @@ Attach(ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | displayFile | The display file being associated to this device. 
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | displayFile | The display file being associated to this device. 
 
 
 <br>
 <br>
 
-### Detach([WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html))
+### Detach([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html))
 
 Removes the association of a display file with the device.
 
@@ -188,13 +188,13 @@ Detach(ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | displayFile | The display file to be dissociated  from the device. 
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | displayFile | The display file to be dissociated  from the device. 
 
 
 <br>
 <br>
 
-### Read([WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html))
+### Read([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html))
 
 Present a screen waiting for data to be ready and reads it.
 
@@ -206,7 +206,7 @@ Read(ASNA.QSys.Runtime.JobSupport.WebDisplayFile dspFile);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [WebDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/web-display-file.html) | dspFile | The display file to present to the user. It becomes the active display file on the device. 
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | dspFile | The display file to present to the user. It becomes the active display file on the device. 
 
 
 <br>

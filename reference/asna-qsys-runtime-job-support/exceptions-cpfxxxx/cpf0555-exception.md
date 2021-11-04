@@ -7,7 +7,7 @@ The exception that is thrown when Date not in specified format or date not valid
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF0500Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf0500-exception.html) --> CPF0555Exception
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF0500Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0500-exception.html) --> CPF0555Exception
 
 <br>
 <br>

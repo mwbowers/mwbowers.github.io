@@ -26,9 +26,9 @@ Multiple occurrence data structures encapsulate a collection of data structure o
 | Name |  Description 
 | --- | --- 
 | [MultiDataStructure](#multidatastructureint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a unidimensional MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html)) | Constructs a unidimensional MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a unidimensional MultiDataStructure object. 
 | [MultiDataStructure](#multidatastructureint32[]-int32)([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-ilayout[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html)) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32[]-ilayout[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a MultiDataStructure object. 
 
 <br>
 
@@ -49,7 +49,7 @@ MultiDataStructure( Int32 arrayLength, Int32 size );
 
 <br>
 
-### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Constructs a unidimensional MultiDataStructure object.
 
@@ -62,7 +62,7 @@ MultiDataStructure( Int32 arrayLength, ASNA.QSys.Runtime.ILayout[] fields );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in the multi data structure. 
-| [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
+| [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
 
 <br>
 
@@ -83,7 +83,7 @@ MultiDataStructure( Int32[] arrayLength, Int32 size );
 
 <br>
 
-### MultiDataStructure( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) )
+### MultiDataStructure( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Constructs a MultiDataStructure object.
 
@@ -96,7 +96,7 @@ MultiDataStructure( Int32[] arrayLength, ASNA.QSys.Runtime.ILayout[] fields );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
-| [ILayout[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
+| [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
 
 <br>
 
@@ -108,9 +108,9 @@ MultiDataStructure( Int32[] arrayLength, ASNA.QSys.Runtime.ILayout[] fields );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | Current | Gets the current ocurrence of this multiple occurrence data structure. | 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Current | Gets the current ocurrence of this multiple occurrence data structure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of this multi data structure. | 
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | Item([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataStructure object at the given index. | i /* Desired index. */
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Item([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataStructure object at the given index. | i /* Desired index. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | Gets the length of the individual data structures in this MODS. | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Layout | Layout of the individual data structures, if it exists. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the multi occurrence data structure. | 

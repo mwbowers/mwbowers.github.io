@@ -38,7 +38,7 @@ Tracks lifetime metrics for the job.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [JobStats](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-stats.html) | [Clone](#clone)() | Gets a copy of the job metrics. | The copy of the job statistics.
+| [JobStats](/reference/asna-qsys-runtime-job-support/classes/job-stats.html) | [Clone](#clone)() | Gets a copy of the job metrics. | The copy of the job statistics.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -65,7 +65,7 @@ Clone();
 
 #### Returns
 
-[JobStats](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job-stats.html)
+[JobStats](/reference/asna-qsys-runtime-job-support/classes/job-stats.html)
 
 The copy of the job statistics.
 

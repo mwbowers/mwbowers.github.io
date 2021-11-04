@@ -26,7 +26,7 @@ Locally scoped data structures are defined as a class extending LocalScopeDS. Th
 | Name |  Description 
 | --- | --- 
 | [LocalScopeDS](#localscopedsint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a LocalScopeDS object with a buffer of the given size. 
-| [LocalScopeDS](#localscopedsdatastructure)([DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html)) | Constructs a LocalScopeDS object given a DataStructure to use. 
+| [LocalScopeDS](#localscopedsdatastructure)([DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html)) | Constructs a LocalScopeDS object given a DataStructure to use. 
 
 <br>
 
@@ -46,7 +46,7 @@ LocalScopeDS( Int32 size );
 
 <br>
 
-### LocalScopeDS( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) )
+### LocalScopeDS( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) )
 
 Constructs a LocalScopeDS object given a DataStructure to use.
 
@@ -58,7 +58,7 @@ LocalScopeDS( ASNA.QSys.Runtime.DataStructure ds );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | ds | The DataStructure object to use to hold the field values. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | ds | The DataStructure object to use to hold the field values. 
 
 <br>
 
@@ -70,7 +70,7 @@ LocalScopeDS( ASNA.QSys.Runtime.DataStructure ds );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | DS | Gets or sets the DataStructure object to support the buffer where data is stored. | 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | DS | Gets or sets the DataStructure object to support the buffer where data is stored. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of this Data Structure object. | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Layout | Gets the Layout of this Data Structure. A null return means the DataStructure was defined via buffer length. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length of the Data Structure buffer. | 

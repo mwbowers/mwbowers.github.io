@@ -25,13 +25,13 @@ Provides functionality to handle calling a program residing in an IBMi server.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDSParm](#adddsparmstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html)) | Adds a datastructure parameter to the program call. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDSParm](#adddsparmstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html)) | Adds a datastructure array parameter to the program call. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDSParm](#adddsparmstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Adds a datastructure parameter to the program call. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDSParm](#adddsparmstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Adds a datastructure array parameter to the program call. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddParm](#addparmstring-fieldtype-datadirection-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a parameter to the program call with an initial value (use for input and input/output parameters). | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddParm](#addparmstring-fieldtype-datadirection-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a parameter array to the program call with an initial value (use for input and input/output parameters). | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddParm](#addparmstring-fieldtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html)) | Adds a parameter to the program call with no initial value (use only for output parameters). | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddParm](#addparmstring-fieldtype-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a parameter or parameter array to the program call with no initial value (use only for output parameters). | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CallProgram](#callprogramstring-database)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html)) | Calls an IBMi Program with the parameters added to the call object. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CallProgram](#callprogramstring-database)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html)) | Calls an IBMi Program with the parameters added to the call object. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -44,7 +44,7 @@ Provides functionality to handle calling a program residing in an IBMi server.
 <br>
 <br>
 
-### AddDSParm([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html))
+### AddDSParm([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html))
 
 Adds a datastructure parameter to the program call.
 
@@ -58,13 +58,13 @@ AddDSParm(String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSys.R
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the parameter. 
 | [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | Specifies if the parameter is input, output, or input/output. 
-| [IDSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) | dsCallParm | The IDSCallParm object representing the datastructure to add to the program call. 
+| [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html) | dsCallParm | The IDSCallParm object representing the datastructure to add to the program call. 
 
 
 <br>
 <br>
 
-### AddDSParm([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html))
+### AddDSParm([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html))
 
 Adds a datastructure array parameter to the program call.
 
@@ -78,7 +78,7 @@ AddDSParm(String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSys.R
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the parameter. 
 | [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | Specifies if the parameter is input, output, or input/output. 
-| [IDSCallParm[]](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ids-call-parm.html) | dsCallParmArray | The IDSCallParm[] object representing the datastructure array to add to the program call. 
+| [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html) | dsCallParmArray | The IDSCallParm[] object representing the datastructure array to add to the program call. 
 
 
 <br>
@@ -165,7 +165,7 @@ AddParm(String name, ASNA.DataGate.Common.FieldType type, Int32 arrayLength);
 <br>
 <br>
 
-### CallProgram([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html))
+### CallProgram([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html))
 
 Calls an IBMi Program with the parameters added to the call object.
 
@@ -178,7 +178,7 @@ CallProgram(String name, ASNA.QSys.Runtime.Database database);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the IBMi program to call. 
-| [Database](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/database.html) | database | The database to connect with in order to call the program. 
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | database | The database to connect with in order to call the program. 
 
 
 <br>

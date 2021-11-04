@@ -62,7 +62,7 @@ DocumentLibraryObject( String dlsRootName );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Check](#checkstring-string-dlotype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DLOType](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/dlo-type.html)) | Checks that an object exists in the DLO Root, if the object does not exists it throws a CPF exception. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Check](#checkstring-string-dlotype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DLOType](/reference/asna-qsys-runtime-job-support/classes/dlo-type.html)) | Checks that an object exists in the DLO Root, if the object does not exists it throws a CPF exception. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateFolder](#createfolderstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a Folder in another folder within the DLO Root. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
@@ -78,7 +78,7 @@ DocumentLibraryObject( String dlsRootName );
 <br>
 <br>
 
-### Check([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DLOType](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/dlo-type.html))
+### Check([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DLOType](/reference/asna-qsys-runtime-job-support/classes/dlo-type.html))
 
 Checks that an object exists in the DLO Root, if the object does not exists it throws a CPF exception.
 
@@ -92,7 +92,7 @@ Check(String dloName, String parentFolder, ASNA.QSys.Runtime.JobSupport.DLOType 
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dloName | Object Name to look for. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parentFolder | Containing object's parent folder. 
-| [DLOType](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/dlo-type.html) | objectType | Type of object to look for. 
+| [DLOType](/reference/asna-qsys-runtime-job-support/classes/dlo-type.html) | objectType | Type of object to look for. 
 
 
 <br>

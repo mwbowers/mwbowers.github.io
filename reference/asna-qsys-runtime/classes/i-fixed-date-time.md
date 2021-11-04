@@ -25,7 +25,7 @@ FixedDateTime interface.
 | --- | --- | --- | --- 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | Gets the DateTimeFormat format. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | Kind | Gets the DateTimeDataKind kind. | 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | Separator | Gets the DateTimeSeparator separator. | 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | Separator | Gets the DateTimeSeparator separator. | 
 
 <br>
 <br>

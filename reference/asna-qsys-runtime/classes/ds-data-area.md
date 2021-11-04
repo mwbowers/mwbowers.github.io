@@ -25,11 +25,11 @@ Describes and manages the use of a Data Structure as a Data Area value.
 
 | Name |  Description 
 | --- | --- 
-| **DSDataArea**( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) ) | Constructs a DSDataArea object for the given Data Structure.
+| **DSDataArea**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) ) | Constructs a DSDataArea object for the given Data Structure.
 
 <br>
 
-### DSDataArea( [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) )
+### DSDataArea( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) )
 
 Constructs a DSDataArea object for the given Data Structure.
 
@@ -41,7 +41,7 @@ DSDataArea( ASNA.QSys.Runtime.DataStructure dataStructure );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/data-structure.html) | dataStructure | The Data Structure. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | dataStructure | The Data Structure. 
 
 <br>
 
@@ -53,7 +53,7 @@ DSDataArea( ASNA.QSys.Runtime.DataStructure dataStructure );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DSCallParm](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/ds-call-parm.html) | DSCallParm | A DSCallParm used in the In and Out Data Area operations. | 
+| [DSCallParm](/reference/asna-qsys-runtime/classes/ds-call-parm.html) | DSCallParm | A DSCallParm used in the In and Out Data Area operations. | 
 
 <br>
 <br>

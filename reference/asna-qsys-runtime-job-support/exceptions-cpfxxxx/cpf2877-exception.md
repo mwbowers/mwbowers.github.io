@@ -7,7 +7,7 @@ The exception that is thrown when *LIBL not allowed on TOFILE parameter with CRT
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF2800Exception](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/exceptions-cpfxxxx/cpf2800-exception.html) --> CPF2877Exception
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF2800Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2800-exception.html) --> CPF2877Exception
 
 <br>
 <br>

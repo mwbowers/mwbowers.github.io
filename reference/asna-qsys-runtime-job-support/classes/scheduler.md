@@ -25,11 +25,11 @@ Provides functionality to add jobs to a job scheduler.
 
 | Name |  Description 
 | --- | --- 
-| **Scheduler**( [Job](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job.html) ) | Initializes a new instance of the Scheduler class.
+| **Scheduler**( [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) ) | Initializes a new instance of the Scheduler class.
 
 <br>
 
-### Scheduler( [Job](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job.html) )
+### Scheduler( [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) )
 
 Initializes a new instance of the Scheduler class.
 
@@ -41,7 +41,7 @@ Scheduler( ASNA.QSys.Runtime.JobSupport.Job job );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Job](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job.html) | job | Associated Job instance. 
+| [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) | job | Associated Job instance. 
 
 <br>
 
@@ -53,7 +53,7 @@ Scheduler( ASNA.QSys.Runtime.JobSupport.Job job );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Job](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/job.html) | Job | Gets the Job that started the scheduler. | 
+| [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) | Job | Gets the Job that started the scheduler. | 
 
 <br>
 <br>

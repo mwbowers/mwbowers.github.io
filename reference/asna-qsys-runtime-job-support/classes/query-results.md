@@ -102,10 +102,10 @@ QueryResults( Runtime.Serialization.SerializationInfo serializationInfo, Runtime
 | --- | --- | --- | --- 
 | [IEqualityComparer&lt;TKey&gt;]($$TODO-IEqualityComparer<TKey>.html) | Comparer | Gets the IEqualityComparer<T> that is used to determine equality of keys for the dictionary.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Count | The number of key/value pairs contained in the Dictionary<TKey,TValue>.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | 
-| [QueryValue](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/query-value.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a Query Value at the specified index. | index /* The zero-based index of the element to get. */
+| [QueryValue](/reference/asna-qsys-runtime-job-support/classes/query-value.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a Query Value at the specified index. | index /* The zero-based index of the element to get. */
 | [TKey]($$TODO-TKey.html) | Item | Gets or sets the value associated with the specified key.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | key /* TKey */
 | [KeyCollection]($$TODO-Dictionary<TKey,TValue>.KeyCollection.html) | Keys | Gets a collection containing the keys in the Dictionary<TKey,TValue>.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | 
-| [QueryValue](/reference/asna-qsys-runtime/asnaq-sys-runtime-job-support/classes/query-value.html) | Item([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a Query given from the named entry in the Dictionary. | name /* The key name of the entry to get. */
+| [QueryValue](/reference/asna-qsys-runtime-job-support/classes/query-value.html) | Item([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a Query given from the named entry in the Dictionary. | name /* The key name of the entry to get. */
 | [ValueCollection]($$TODO-Dictionary<TKey,TValue>.ValueCollection.html) | Values | Gets a collection containing the values in the Dictionary<TKey,TValue><br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | 
 
 <br>

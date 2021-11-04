@@ -23,15 +23,15 @@ Web Display File Provider Interface.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [Attach](#attachidisplayfile)([IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html)) | Attach to DataSet. | The DataSet.
-| [IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html) | [GetNewWebDisplayFile](#getnewwebdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance. | The Displayfil instance.
-| [IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get shared file. | Display file instance.
+| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [Attach](#attachidisplayfile)([IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)) | Attach to DataSet. | The DataSet.
+| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetNewWebDisplayFile](#getnewwebdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance. | The Displayfil instance.
+| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get shared file. | Display file instance.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetWRF](#getwrfstring-int32-int32-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Wings Record Format ID. | The Get Wings Record Format ID.
 
 <br>
 <br>
 
-### Attach([IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html))
+### Attach([IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html))
 
 Attach to DataSet.
 
@@ -43,7 +43,7 @@ Attach(ASNA.QSys.Runtime.IDisplayFile webDisplayFile);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html) | webDisplayFile | Input Web Displayfile instance. 
+| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | webDisplayFile | Input Web Displayfile instance. 
 
 #### Returns
 
@@ -74,7 +74,7 @@ GetNewWebDisplayFile(String DclFileName, String FilePath, ASNA.DataGate.Client.A
 
 #### Returns
 
-[IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html)
+[IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)
 
 The Displayfil instance.
 
@@ -98,7 +98,7 @@ GetSharedFile(String DclFileName);
 
 #### Returns
 
-[IDisplayFile](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-display-file.html)
+[IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)
 
 Display file instance.
 

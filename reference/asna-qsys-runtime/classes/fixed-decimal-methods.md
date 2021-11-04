@@ -55,14 +55,14 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[])([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPosition\\`\\`1](#checkposition\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPositionReverse\\`\\`1](#checkpositionreverse\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a numeric string into an int8 (long). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short) with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int) with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long). | returns the value of the move.
@@ -81,7 +81,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStr\\`\\`1](#substr\`\`1fixedstring{``0}-int32-int32-string-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixed\\`\\`1](#substrfixed\`\`1fixedstring{``0}-int32-int32-string-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value of the result of the SubStr.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixedWithPad\\`\\`1](#substrfixedwithpad\`\`1fixedstring{``0}-int32-int32-string-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDateTime\\`\\`1](#todatetime\`\`1fixedstring{``0}-datetimedatakind-datetimeformat-datetimeseparator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDateTime\\`\\`1](#todatetime\`\`1fixedstring{``0}-datetimedatakind-datetimeformat-datetimeseparator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos. | The string value result of the translate.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length. | The string value of the result of the Xlate.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-string-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length. | The string value of the result of the Xlate.
@@ -101,7 +101,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with or without pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short). | returns a short value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int). | returns a int value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long). | returns a long value target of the move.
@@ -111,7 +111,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftToChar\\`\\`2](#movelefttochar\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVEL. Moves right a decimal to a char. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string, with pad. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime with pad. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime with pad. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short) with pad. | returns a short value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int) with pad. | returns a int value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long) with pad. | returns a long value target of the move.
@@ -119,7 +119,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`4](#moveleftwithpad\`\`4fixeddecimal{``0-``1}-fixeddecimal{``2-``3})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVEL. Moves left a decimal to a decimal with pad. | The result of moving left the source value to the target value as a decimal number, padding with zeros if necessary.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string to string, without pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short). | returns a short value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int). | returns a int value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long). | returns a long value target of the move.
@@ -129,7 +129,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightToChar\\`\\`2](#moverighttochar\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a decimal to a char. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string to string, with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string, with pad. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime with pad. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime with pad. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short) with pad. | returns a short value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int) with pad. | returns a int value target of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long) with pad. | returns a long value target of the move.
@@ -156,7 +156,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixedWithPad\\`\\`1](#substrfixedwithpad\`\`1fixedstring{``0}-int32-int32-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime\\`\\`2](#testtime\`\`2fixeddecimal{``0-``1}-datetimedatakind-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate\\`\\`2](#todate\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | ToDate summary. | ToDate returns.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDateTime\\`\\`1](#todatetime\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDateTime\\`\\`1](#todatetime\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDecimal\\`\\`1](#todecimal\`\`1``0)([\\`\\`0]($$TODO-``0.html)) | Converts a value of type TDigits to decimal. | The conversion of the value to decimal.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`1](#tofixeddecimal\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a numeric string into a RPG decimal. | decimal representation of given string.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`2](#tofixeddecimal\`\`2fixeddecimal{``0-``1}-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a FixedDecimal number. | The FixedDecimal as a decimal number in the desired size.
@@ -749,7 +749,7 @@ CheckPositionReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String co
 <br>
 <br>
 
-### MoveLeft\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### MoveLeft\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 RPG's MOVEL. Moves left a string expressed in the given format into a date time type.
 
@@ -762,7 +762,7 @@ MoveLeft``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.IFixed
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | Source FixedString. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | Destination FixedDate, FixedTime, or FixedTimestamp. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Destination FixedDate, FixedTime, or FixedTimestamp. 
 
 
 <br>
@@ -882,7 +882,7 @@ MoveLeftWithPad``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int64 target);
 <br>
 <br>
 
-### MoveRight\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### MoveRight\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 RPG's MOVE. Moves right a string expressed in the given format into a date time type.
 
@@ -895,7 +895,7 @@ MoveRight``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.IFixe
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | Source FixedString. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | Destination FixedDate, FixedTime, or FixedTimestamp. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Destination FixedDate, FixedTime, or FixedTimestamp. 
 
 
 <br>
@@ -1276,7 +1276,7 @@ SubStrFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 start
 <br>
 <br>
 
-### ToDateTime\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html))
+### ToDateTime\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Converts a string representation of a date/time/timestamp into a DateTime.
 
@@ -1291,7 +1291,7 @@ ToDateTime``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.Date
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | string representing a date/time/timestamp. 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | Date, Time, Timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime format. 
-| [DateTimeSeparator](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/date-time-separator.html) | dateTimeSeparator | string separator. 
+| [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | dateTimeSeparator | string separator. 
 
 
 <br>
@@ -1626,7 +1626,7 @@ MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target);
 <br>
 <br>
 
-### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 RPG's MOVEL. Moves left a decimal into a DateTime.
 
@@ -1639,7 +1639,7 @@ MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.IF
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
@@ -1814,7 +1814,7 @@ MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 RPG's MOVEL. Moves left a decimal into a DateTime with pad.
 
@@ -1827,7 +1827,7 @@ MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Run
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
@@ -1966,7 +1966,7 @@ MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target);
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 RPG's MOVE. Moves right a decimal into a DateTime.
 
@@ -1979,7 +1979,7 @@ MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.I
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
@@ -2154,7 +2154,7 @@ MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String targe
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 RPG's MOVE. Moves right a decimal into a DateTime with pad.
 
@@ -2167,7 +2167,7 @@ MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Ru
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
@@ -2683,7 +2683,7 @@ ToDate``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.D
 <br>
 <br>
 
-### ToDateTime\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html))
+### ToDateTime\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
 Converts a string representation of a date/time/timestamp into a DateTime.
 
@@ -2696,7 +2696,7 @@ ToDateTime``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.IFix
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | FixedString representing a date/time/timestamp. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/asnaq-sys-runtime/classes/i-fixed-date-time.html) | dateTime | FixedDate, FixedTime, FixedTimestamp that determines the format. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | FixedDate, FixedTime, FixedTimestamp that determines the format. 
 
 
 <br>
