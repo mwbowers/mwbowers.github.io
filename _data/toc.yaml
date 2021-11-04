@@ -271,12 +271,10 @@ Reference:
 - sectiontitle: Framework Reference
   sectionpath: /reference/reference-overview.html
   section:
-  - title: Asna.QSys.DataGate.Client
-    path: /reference/datagate-client/welcome.html
   - sectiontitle: ASNA.DataGate.Client 
     sectionpath: /reference/datagate-client/datagate-client-namespace.html
     section:
-    - sectiontitle: ASNA.DataGate.Client Classes
+    - sectiontitle: Classes
       sectionpath: /reference/datagate-client/asna-datagate-client-classes.html
       section:
       - sectiontitle: AdgConnection Class
@@ -954,7 +952,7 @@ Reference:
             path: /reference/datagate-client/xml-info-event-args-class-message-field.html
           - title: XmlInfoEventArgs.Type Field
             path: /reference/datagate-client/xml-info-event-args-class-type-field.html
-    - sectiontitle: ASNA.DataGate.Client Enumerations
+    - sectiontitle: Enumerations
       sectionpath: /reference/datagate-client/datagate-client-enumerations.html
       section:
       - title: FileAdapter.AdapterStatus Enumeration
@@ -970,7 +968,7 @@ Reference:
   - sectiontitle: ASNA.DataGate.Common 
     sectionpath: /reference/datagate-client/datagate-common-namespace.html
     section:
-    - sectiontitle: ASNA.DataGate.Common Classes
+    - sectiontitle: Classes
       sectionpath: /reference/datagate-client/asna-datagate-common-classes.html
       section:
       - sectiontitle: dgException Class
@@ -1046,7 +1044,7 @@ Reference:
             path: /reference/datagate-client/field-type-class-precision-property.html
           - title: FieldType.Scale Property
             path: /reference/datagate-client/field-type-class-scale-property.html
-    - sectiontitle: ASNA.DataGate.Common Enumerations
+    - sectiontitle: Enumerations
       sectionpath: /reference/datagate-client/datagate-common-enumerations.html
       section:
       - title: AccessMode Enumeration
@@ -1122,7 +1120,7 @@ Reference:
   - sectiontitle: ASNA.DataGate.DataLink 
     sectionpath: /reference/datagate-client/datagate-data-link-namespace.html
     section:
-    - sectiontitle: ASNA.DataGate.DataLink Classes
+    - sectiontitle: Classes
       sectionpath: /reference/datagate-client/asna-datagate-data-link-classes.html
       section:
       - sectiontitle: ProgParmClass
@@ -1160,7 +1158,7 @@ Reference:
   - sectiontitle: ASNA.DataGate.Providers 
     sectionpath: /reference/datagate-client/datagate-providers-namespace.html
     section:
-    - sectiontitle: ASNA.DataGate.Providers Classes
+    - sectiontitle: Classes
       sectionpath: /reference/datagate-client/asna-datagate-providers-classes.html
       section:
       - sectiontitle: DatabaseAttributes Class
