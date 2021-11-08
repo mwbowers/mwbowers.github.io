@@ -1729,6 +1729,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/i-len.html
           - title: IMODS
             path: /reference/asna-qsys-runtime/classes/imods.html
+          - title: Indicator
+            path: /reference/asna-qsys-runtime/classes/indicator.html
           - title: IndicatorArrayInDS
             path: /reference/asna-qsys-runtime/classes/indicator-array-in-ds.html
           - title: IntArrayInDS
