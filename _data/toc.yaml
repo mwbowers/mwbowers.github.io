@@ -1416,6 +1416,8 @@ Reference:
         section:
           - title: ArrayMethods
             path: /reference/asna-qsys-runtime/classes/array-methods.html
+          - title: BuiltInMethods
+            path: /reference/asna-qsys-runtime/classes/built-in-methods.html
           - title: BuiltInSupport
             path: /reference/asna-qsys-runtime/classes/built-in-support.html
           - title: Call
