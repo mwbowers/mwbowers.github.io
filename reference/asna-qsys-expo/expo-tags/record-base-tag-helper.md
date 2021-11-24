@@ -14,10 +14,9 @@ Provides common properties for DdsRecords
 
 ## Remarks
 
-Provides common properties for DdsRecords
+There are three Display Records in QSys.Expo, namely: [DdsRecord](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html), [DdsSubfileControl](/reference/asna-qsys-expo/expo-tags/dds-subfile-control-tag-helper.html) and [DdsSubfileRecord](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html) Tag Helpers. These three Tag Helpers derive directly (or indirectly) from the `RecordBaseTagHelper` [abstract class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members).
 
-[//]: # ($$TODO: Complete the Remarks section.)
-
+Common properties and methods for the Display Records are defined in class `RecordBaseTagHelper`.
 <br>
 <br>
 

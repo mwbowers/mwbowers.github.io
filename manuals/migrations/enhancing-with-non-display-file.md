@@ -42,8 +42,8 @@ While the job is in state **D (Accepting Commands)**, a website page can use the
 |  | Enter Command Mode <br/> Blue Thread | Exit Command Mode <br/> Yellow Thread | Execute Commands <br/> Yellow Thread |
 | -------- | ------------------ | ----------------- | -------------------|
 | **Description** | Prepares a job to accept commands | Returns a Job to procedural processing | Allows code in website to invoke a function within a Job, particularly program calls.
-| **Class** | [Runtime.InteractiveJob](/reference/asna-qsys-runtime/job-support/interactive-job.html) | [Expo.Model.Command](/reference/asna-qsys-expo/expo-model/command.html) | [Expo.Model.Command](/reference/asna-qsys-expo/expo-model/command.html)
-| **Methods** | [ShowPage](/reference/asna-qsys-runtime/job-support/interactive-job.html#showpagestring-string) <br/> [AcceptCommands](/reference/asna-qsys-runtime/job-support/interactive-job.html#acceptcommands) | [Return](amfCommandClassReturnMethod.htm) |  [Call](amfCommandClassCallMethods.htm) <br/> [CallSilent](amfCommandClassCallSilentMethod.htm) <br/> [SetLdaField](amfCommandClassSetLdaFieldMethod.htm) <br/> [GetLdaField](amfCommandClassGetLdaFieldMethod.htm) <br/> [SetLdcObject](amfCommandClassSetLdcObjectMethod.htm) <br/> [GetLdcObject](amfCommandClassPushKeyFocusMethod.htm) <br/> [RemoveLdcObject](amfCommandClassGetLdcObjectMethod.htm) <br/> [PushKeyFocus](amfCommandClassRemoveLdcObjectMethod.htm) <br/> [RequestShutdown](amfCommandClassRequestShutdownMethod.htm)
+| **Class** | [Runtime.InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html) | [Expo.Model.Command](/reference/asna-qsys-expo/expo-model/command.html) | [Expo.Model.Command](/reference/asna-qsys-expo/expo-model/command.html)
+| **Methods** | [ShowPage](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#showpagestring-string) <br/> [AcceptCommands](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands) | [Return](amfCommandClassReturnMethod.htm) |  [Call](amfCommandClassCallMethods.htm) <br/> [CallSilent](amfCommandClassCallSilentMethod.htm) <br/> [SetLdaField](amfCommandClassSetLdaFieldMethod.htm) <br/> [GetLdaField](amfCommandClassGetLdaFieldMethod.htm) <br/> [SetLdcObject](amfCommandClassSetLdcObjectMethod.htm) <br/> [GetLdcObject](amfCommandClassPushKeyFocusMethod.htm) <br/> [RemoveLdcObject](amfCommandClassGetLdcObjectMethod.htm) <br/> [PushKeyFocus](amfCommandClassRemoveLdcObjectMethod.htm) <br/> [RequestShutdown](amfCommandClassRequestShutdownMethod.htm)
 
 
 ## Enter Command Mode (Blue thread)
@@ -126,7 +126,7 @@ When an Razor Page wants to return the Job to the **B (Executing a Program)** st
 * [Calling a Program from a Non-DisplayFile Page](calling-program-from-non-displayfile-page.html)
 * [Showing a Non-DisplayFile Page](showing-non-displayfile-page.html)
 * [Command Class](/reference/asna-qsys-expo/expo-model/command.html)
-* [Interactive Job Class](/reference/asna-qsys-runtime/job-support/interactive-job.html)
+* [Interactive Job Class](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html)
 * [LocalDataCollection Class](/reference/asna-qsys-runtime/job-support/local-data-collection.html)
 
 

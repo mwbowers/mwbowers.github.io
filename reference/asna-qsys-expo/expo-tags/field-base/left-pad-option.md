@@ -2,7 +2,7 @@
 title: LeftPadOption Enumeration
 ---
 
-Describes the Left padding option.
+Names the available Left Padding options (used by [LeftPad](/reference/asna-qsys-expo/expo-tags/field-base.html#properties)) FieldBase Property.
 
 **Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
@@ -12,9 +12,7 @@ Describes the Left padding option.
 
 ## Remarks
 
-Describes the Left padding option.
-
-[//]: # ($$TODO: Complete the Remarks section.)
+Left-Padding guarantees the position of the significant characters of a [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) field value, when not all the length is used. Application Logic may depend on those filled positions. 
 
 <br>
 <br>

@@ -14,9 +14,76 @@ Defines a Subfile Controller element
 
 ## Remarks
 
-Defines a Subfile Controller element
+A `DdsSubfileControl` Tag Helper is a specialized [DdsRecord](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html) that may contain a [Subfile Record](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html). A `Subfile Record` is defined as a collection of [DdsSubfileRecord](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html) Tag Helpers, nested `DdsSubfileControl` using a specified range of `DIV` rows, in as shown in the example code bellow).
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The following markup shows the specification of DdsSubfileControl named "SFLC". As any other [DdsRecord](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html) Tag Helper, `DdsSubfileControl` Tag Helper may contain [DdsConstants](/reference/asna-qsys-expo/expo-tags/dds-constant-tag-helper.html) and [DdsFields](/reference/asna-qsys-expo/expo-tags/dds-field-base.html) and up to one Subfile (collection of [DdsSubfileRecords](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html)).
+
+```html
+@{
+    int SFLC_SubfilePage = 10;
+}
+<DdsSubfileControl For="SFLC" KeyNames="ENTER 'Enter'; F6 'Add'; PageUp; PageDown;" SubfilePage="@SFLC_SubfilePage" CueCurrentRecord=true ClickSetsCurrentRecord=true>
+    <div Row="1">
+        <DdsConstant Col="2" Text=@System.Environment.UserName />
+        <DdsConstant Col="33+1" Text="M5 Order Inquiry" Color="DarkBlue" />
+        <DdsConstant Col="64+1" Text=@DateTime.Today.ToString(@"MM\/ dd\/ yy") />
+        <DdsConstant Col="73+1" Text=@DateTime.Now.ToString("HH: mm: ss") />
+    </div>
+    <div Row="3">
+        <DdsConstant Col="2" Text="Customer:" />
+        <DdsCharField Col="12+1" For="SFLC.SCRCUST" Upper=true Comment="CUSTOMER NBR AND NAME" />
+    </div>
+    <div Row="4">
+        <DdsConstant Col="2" Text="Phone...:" />
+        <DdsCharField Col="12+1" For="SFLC.SCRPHONE" Upper=true />
+        <DdsConstant Col="36+1" Text="Address:" />
+        <DdsCharField Col="45+1" For="SFLC.CMADDR1" Upper=true />
+    </div>
+    <div Row="5">
+        <DdsConstant Col="2" Text="Fax.....:" />
+        <DdsCharField Col="12+1" For="SFLC.SCRFAX" Upper=true Comment="FAX NUMBER" />
+        <DdsCharField Col="45+1" For="SFLC.CMADDR2" Upper=true />
+    </div>
+    <div Row="6">
+        <DdsConstant Col="2" Text="Status..:" />
+        <DdsCharField Col="12+1" For="SFLC.CMACTIVE" Upper=true />
+        <DdsCharField Col="45+1" For="SFLC.CMCITY" Upper=true />
+    </div>
+    <div Row="7">
+        <DdsCharField Col="45+1" For="SFLC.CMSTATE" Upper=true />
+        <DdsCharField Col="48+1" For="SFLC.CMPOSTCODE" Upper=true />
+    </div>
+    <div Row="8">
+        <DdsConstant Col="2" Text="Options:" Color="Blue" />
+    </div>
+    <div Row="9">
+        <DdsConstant Col="3+1" Text="2=Update hdr  3=Update line items  6=Print" Color="Blue" />
+        <DdsConstant Col="50+1" Text="Position to order:" />
+        <DdsDecField Col="69+1" For="SFLC.SETORDNUM" VirtualRowCol="9,69" EditCode="Z" tabIndex=5 />
+    </div>
+    <div Row="11">
+        <DdsConstant Col="2" Text="Sel" Color="DarkBlue"  />
+        <DdsConstant Col="7+1" Text="Order Nbr" Color="DarkBlue"  />
+        <DdsConstant Col="19+1" Text="Order Date" Color="DarkBlue"  />
+        <DdsConstant Col="30+1" Text="Ship Date" Color="DarkBlue"  />
+        <DdsConstant Col="41+1" Text="Delv. Date" Color="DarkBlue"  />
+        <DdsConstant Col="52+1" Text="Order Total" Color="DarkBlue"  />
+        <DdsConstant Col="71+1" Text="Stat" Color="DarkBlue"  />
+        <DdsConstant Col="76+1" Text="Via" Color="DarkBlue"  />
+    </div>
+    <div Row="12" RowSpan="@SFLC_SubfilePage">
+        @for (int rrn=0; rrn < Model.SFLC.SFL1.Count; rrn++)
+        {
+            int row = 12 + rrn;
+            <DdsSubfileRecord RecordNumber="rrn" For="SFLC.SFL1">
+                .
+                .
+                .
+            </DdsSubfileRecord>
+        }
+    </div>
+</DdsSubfileControl>
+```
 
 <br>
 <br>

@@ -14,7 +14,7 @@ Defines Base Record Attributes on a type
 
 ## Remarks
 
-Model record classes may be declared with attributes to indicate runtime behavior. For example, `ChangeIndicator = 44` declares that when this record is changed by user interaction, the [Indicator](/reference/asna-qsys-runtime/indicator.html) 44 should be set, such that logic can test this value and react to the change.
+Model record classes may be declared with attributes to indicate runtime behavior. For example, `ChangeIndicator = 44` declares that when this record is changed by user interaction, the [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) 44 should be set, such that logic can test this value and react to the change.
 
 As any [C# Attributes](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/attributes/), the syntax uses brackets right before the declaration of the class, for example:
 

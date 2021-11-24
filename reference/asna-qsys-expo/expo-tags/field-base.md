@@ -14,9 +14,8 @@ Provides common methods for DdsFields and DdsConstants.
 
 ## Remarks
 
-Provides common methods for DdsFields and DdsConstants.
+A `FieldBase` is used by tag Helpers that may be bound to a Model field. As an [abstract class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members) it cannot be used directly. The `FieldBase` is the class that implements all the common behavior for the rest of the DdsXXXFields: [DdsConstant](/reference/asna-qsys-expo/expo-tags/dds-constant-tag-helper.html), [DdsCharField](/reference/asna-qsys-expo/expo-tags/dds-char-field-tag-helper.html), [DdsDecField](/reference/asna-qsys-expo/expo-tags/dds-dec-field-tag-helper.html), [DdsDateField](/reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper.html), [DdsDecDateField](/reference/asna-qsys-expo/expo-tags/dds-dec-date-field-tag-helper.html), etc.
 
-[//]: # ($$TODO: Complete the Remarks section.)
 
 <br>
 <br>
@@ -32,7 +31,7 @@ Provides common methods for DdsFields and DdsConstants.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ColSpan | Gets or sets a value that indicates the amount of positions used by field/constant. Default is zero, meaning: compute element length. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Comment | Gets or sets the text used to document the Field/Constant. Used as comment, does not render as HTML. | 
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | DisplayAttrCode | Gets or sets hex Display attribute code indicating the legacy P-field Display Attribute code. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InvertFontColors | Gets or sets conditional expression that determines if background and forground colors should be switched. Render equivalent to legacy Reverse-Image display attribute. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InvertFontColors | Gets or sets conditional expression that determines if background and foreground colors should be switched. Render equivalent to legacy Reverse-Image display attribute. | 
 | [LeftPadOption]($$TODO-LeftPadOption.html) | LeftPad | Gets or sets a LeftPadOption value indicating how to pad values after changing the value of an input-capable field. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MandatoryEnter | Gets or sets conditional expression that determines if field input is mandatory. Mandatory Enter fields without value change will avoid the form submission. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | MandatoryFill | Gets or sets conditional expression that determines if filling up a field is mandatory. Mandatory Fill fields need to use the whole field length. The form will not be submitted until all fields are filled. | 

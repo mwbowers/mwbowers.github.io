@@ -14,9 +14,25 @@ Defines Application Aid Key banner
 
 ## Remarks
 
-Defines Application Aid Key banner
+All Display Pages have a `bar` that displays buttons to activate [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) codes to submit the Page to the server.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The `DdsFunctionKeys` defines where this `bar` will be rendered, effectively defining the remaining area on the Page where the rest of the `DdsXXX` will render.
+
+Typically, the `DdsFunctionKeys` is defined as the first element inside `DdsFile`
+
+```html
+<form id="MonarchForm" method="post">
+    <DdsFile DisplayPageModel="Model">
+
+        <DdsFunctionKeys Location="HorizontalBottom" />
+        .
+        .
+        .
+    </DdsFile>
+<form>
+```
+
+>If you prefer not to display the `DdsFunctionKeys` bar (i.e. your Application has other navigation menus), include the `DdsFunctionKeys` instance on your Display Page with the `Location` property set to [Hidden](/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper/active-key-bar-location.html). 
 
 <br>
 <br>
@@ -25,7 +41,7 @@ Defines Application Aid Key banner
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ActiveKeyBarLocation]($$TODO-ActiveKeyBarLocation.html) | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 
+| [ActiveKeyBarLocation](/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper/active-key-bar-location.html) | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Order | When a set of ITagHelpers are executed, their Init(TagHelperContext)'s are first invoked in the specified Order; then their ProcessAsync(TagHelperContext, TagHelperOutput)'s are invoked in the specified Order. Lower values are executed first<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | 
 
 <br>

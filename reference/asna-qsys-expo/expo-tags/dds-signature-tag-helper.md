@@ -14,9 +14,14 @@ Defines an element where a signature can be captured
 
 ## Remarks
 
-Defines an element where a signature can be captured
+`DdsSignature` Tag Helper provides a Display element that shows a depiction of a hand written [signature](https://en.wikipedia.org/wiki/Signature).
+When bound to an input-capable field in the Model, it allows to capture the [signature](https://en.wikipedia.org/wiki/Signature) by recording a series of line and curve sketches using an input device (such as mouse, or finger movements on a touch device).
 
-[//]: # ($$TODO: Complete the Remarks section.)
+The `DdsSignature` Tag Helper can be configured to add a date stamp (in the form of a watermark), to set a reference for the signature creation.
+
+The field bound to the Model is a [FixedString](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixedstring) that holds the depiction of the signature as an [Base64-encoded](https://en.wikipedia.org/wiki/Base64) [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) image. SVG images provide a compact lossless image format that can be converted to any other [Raster image](https://en.wikipedia.org/wiki/Raster_graphics) format (png, jpeg, etc.)
+
+When the sketches of the signature being captured should exceeds the length of the field bound to it, the `DdsSignature` Tag Helper will `simplify` the [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) (lowering its quality) to make it fit into the allocated length.
 
 <br>
 <br>
@@ -41,7 +46,7 @@ Defines an element where a signature can be captured
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FieldName | Gets the name of the Field.<br>(Inherited from [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html)) | 
 | [ModelExpression](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression) | For | Gets or sets a value that indicates the Model associated with the Mvc tag helper.<br>(Inherited from [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InvalidEmptySignatureErrorText | Gets or sets value indicating that the user did not draw enough strokes to make a valid signature | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InvertFontColors | Gets or sets conditional expression that determines if background and forground colors should be switched. Render equivalent to legacy Reverse-Image display attribute.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InvertFontColors | Gets or sets conditional expression that determines if background and foreground colors should be switched. Render equivalent to legacy Reverse-Image display attribute.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
 | [LeftPadOption]($$TODO-LeftPadOption.html) | LeftPad | Gets or sets a LeftPadOption value indicating how to pad values after changing the value of an input-capable field.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MandatoryEnter | Gets or sets conditional expression that determines if field input is mandatory. Mandatory Enter fields without value change will avoid the form submission.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | MandatoryFill | Gets or sets conditional expression that determines if filling up a field is mandatory. Mandatory Fill fields need to use the whole field length. The form will not be submitted until all fields are filled.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 

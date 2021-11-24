@@ -14,9 +14,7 @@ Provides common methods for DdsFields.
 
 ## Remarks
 
-Provides common methods for DdsFields.
-
-[//]: # ($$TODO: Complete the Remarks section.)
+All of the `DdsXXX` Tag Helpers which may be input-capable are derived from `DdsFieldBase` class.
 
 <br>
 <br>

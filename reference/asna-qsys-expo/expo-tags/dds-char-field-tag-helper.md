@@ -14,9 +14,33 @@ Defines an input element where characters can be typed using a keyboard. The cap
 
 ## Remarks
 
-Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value entered into a field.
+To define an input-capable [Fixed String](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixedstring), use the `DdsCharField` Tag Helper.
 
-[//]: # ($$TODO: Complete the Remarks section.)
+For example, the following markup defines an input text element for the field `SFNAME` in the `CUSTREC` record (defined in the Model).
+
+```html
+<div Row="4">
+    .
+    .
+    .
+    <DdsCharField Col="27" For="CUSTREC.SFNAME" PositionCursor="40"/>
+</div>
+```
+
+The field `SFNAME` is defined in the Model file, like so:
+
+```cs
+public class CUSTREC_Model : RecordModel
+{
+    .
+    .
+    .
+    [Char(40)]
+    public string SFNAME { get; set; }
+
+```
+
+Note how the `Char` attribute defines the fixed length of 40 characters. The property accessors define the field `Usage`. In this example, the field is public get and public set, defining it as `BOTH` readable as well as writable.
 
 <br>
 <br>
