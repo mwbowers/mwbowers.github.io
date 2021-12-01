@@ -3,7 +3,7 @@ title: dgErrorClass Enumeration
 
 ---
 
-Specifies the class, or category of the DCS run-time error.
+Specifies the class, or category of the DG run-time error.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum dgErrorClass;** 
       </pre>

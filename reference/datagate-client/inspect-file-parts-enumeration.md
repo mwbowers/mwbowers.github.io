@@ -3,7 +3,7 @@ title: InspectFileParts Enumeration
 
 ---
 
-<span> **InspectFileParts** </span> defines values used internally by DCS . 
+<span> **InspectFileParts** </span> defines values used internally by DG . 
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public enum InspectFileParts;** 

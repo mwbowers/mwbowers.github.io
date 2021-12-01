@@ -15,10 +15,10 @@ For a list of all members of this type, see [ IPrintProperties Members](iprint-p
 
 ## Thread Safety
 
-In DCS implementations of **IPrintProperties** , instance members are not guaranteed to be thread safe.
+In DG implementations of **IPrintProperties** , instance members are not guaranteed to be thread safe.
 ## Remarks
 
-Print files in DCS may have fields with an associated print control object. These print controls may have ambient properties that characterize document attributes such as "font" or "color". Access to these properties permits adjustments to report documents as they are being generated. **IPrintProperties** is the interface to run-time print control properties. Instances of **IPrintProperties** are allocated per print format via the [ FileAdapter.GetPrintProperties](file-adapter-class-get-print-properties-method.html) method.
+Print files in DG may have fields with an associated print control object. These print controls may have ambient properties that characterize document attributes such as "font" or "color". Access to these properties permits adjustments to report documents as they are being generated. **IPrintProperties** is the interface to run-time print control properties. Instances of **IPrintProperties** are allocated per print format via the [ FileAdapter.GetPrintProperties](file-adapter-class-get-print-properties-method.html) method.
 
 **IPrintProperties** methods must only be used when the print file is in the open state (see [FileAdapter.Open](file-adapter-class-open-method.html)). Because print controls can exist as unmanaged objects, unexpected results may occur if **IPrintProperties** is used after the file has been closed. 
 

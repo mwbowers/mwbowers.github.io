@@ -3,7 +3,7 @@ title: AdgKeyTable(System.Data.DataTable)
 
 ---
 
-This member supports DCS infrastructure and is not intended to be used directly from your code .
+This member supports DG infrastructure and is not intended to be used directly from your code .
 <pre>
         <span class="lang">[C#]
 </span> **public AdgKeyTable(

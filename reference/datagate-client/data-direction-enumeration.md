@@ -37,7 +37,7 @@ Specifies the type of a program parameter.
 
 ## Remarks
 
-Careful use of the [ProgParm constructor's](prog-parm-class-prog-parm-method-main.html) *dir* parameter can improve the performance of iSeries program calls in DCS. For example, by specifying **DataDirection.None** (for a parameter not used by your program, nor by your use of the IBM i program), the network bandwidth required for passing that parameter across the client/server link is decreased thus optimizing the movement of parameter value data. 
+Careful use of the [ProgParm constructor's](prog-parm-class-prog-parm-method-main.html) *dir* parameter can improve the performance of iSeries program calls in DG. For example, by specifying **DataDirection.None** (for a parameter not used by your program, nor by your use of the IBM i program), the network bandwidth required for passing that parameter across the client/server link is decreased thus optimizing the movement of parameter value data. 
 ## Examples
 
 <span class="lang">

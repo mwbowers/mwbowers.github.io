@@ -17,7 +17,7 @@ The <span> **AdgObjectTypes** </span> enumerated constant defines values for the
 
 ## Remarks
 
-**AdgObjectTypes** denote values which classify a database object. DCS sets the value of the **IAdgObject.AdgObjectType** property to one of these values. Currently, DCS supports libraries, files, and members only. 
+**AdgObjectTypes** denote values which classify a database object. DG sets the value of the **IAdgObject.AdgObjectType** property to one of these values. Currently, DG supports libraries, files, and members only. 
 ## Members
 
 
@@ -28,7 +28,7 @@ The <span> **AdgObjectTypes** </span> enumerated constant defines values for the
 | File | The object is a file. | 70 |
 | Member | The object is a member. | 77 |
 | DataArea | The object is a data area. | 83 |
-| Catalog | Reserved value for internal DCS use only. | 89 |
+| Catalog | Reserved value for internal DG use only. | 89 |
 
 
 

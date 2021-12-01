@@ -79,7 +79,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 | Value of 								<br /> 								dgException.Error | Condition |
 | ---- | ---- |
-| dgEmINVSQLOP | The **AdgConnection** specified is a connection to an SQL Server database provider, and DCS currently does not support the **IDataArea** interface for those providers. |
+| dgEmINVSQLOP | The **AdgConnection** specified is a connection to an SQL Server database provider, and DG currently does not support the **IDataArea** interface for those providers. |
 
 
 

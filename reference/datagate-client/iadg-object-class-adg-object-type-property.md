@@ -57,7 +57,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 So for example, any **IAdgObject** instance whose **AdgObjectType** property is **File** is an **IFileObject** instance. This can be useful when using methods such as [ IDirectory.Enumerate](idirectory-class-enumerate-method.html), which enumerates a set of generic **IAdgObject** instances.
 
-**IAdgObject** and DCS do not support the **DataArea** value of **AdgObjectTypes** at this time.
+**IAdgObject** and DG do not support the **DataArea** value of **AdgObjectTypes** at this time.
 
 **IAdgObject** queries the database provider for certain object attributes, such as **AdgObjectType** , only once in the lifetime of the **IAdgObject** instance. If attributes change after the query, the change will not be reflected in the property values of **IAdgObject** .
 ## Requirements

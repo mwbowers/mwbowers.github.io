@@ -25,7 +25,7 @@ String. Set Only. The path to the program called on the database server.
 
 Set the <span> **ProgramPath** </span> property to name the program on the database server to be called by **As400Program** . Unless <span> **As400Program** </span> was created using the constructor defining a string parameter, this property <span>must</span> be set before adding program parameters or calling the [ASNA.DataGate.Client](dcsAs400ProgramClassExecuteMethod.htm "> Execute</a> method. 
 
-<span> **ProgramPath** </span> is a set-only property. The value of the string assigned to the property is not validated by DCS.
+<span> **ProgramPath** </span> is a set-only property. The value of the string assigned to the property is not validated by DG.
 ## Examples
 
 <pre>

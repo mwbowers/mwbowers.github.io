@@ -3,7 +3,7 @@ title: dgException Class
 
 ---
 
-The exception that is thrown by DCS to indicate procedural conditions, including errors.
+The exception that is thrown by DG to indicate procedural conditions, including errors.
 
 For a list of all members of this type, see [ dgException Members](dgexception-class-members.html).
 
@@ -18,13 +18,13 @@ Public Class <span>dgException</span></pre>
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 ## Remarks
 
-Exceptions specific to the DataGate provider being accessed by DCS are communicated through <span> **dgException** </span>. Most often, these exceptions are in the form of a condition identifier (provided by the [ Error](dgexception-class-error-field.html) field) and a text message (provided by the [ Message](dgexception-class-message-property.html) property).
+Exceptions specific to the DataGate provider being accessed by DG are communicated through <span> **dgException** </span>. Most often, these exceptions are in the form of a condition identifier (provided by the [ Error](dgexception-class-error-field.html) field) and a text message (provided by the [ Message](dgexception-class-message-property.html) property).
 
 The [ErrorClass](dgexception-class-error-class-field.html) field classifies the condition identifier as one of the categories given by the <span>dgErrorClass</span> enumeration. The [SystemError](dgexception-class-system-error-field.html) field contains a provider-dependent exception identifier for certain exceptions. Likewise, the [Text](disconnectingfroma-database.html) field may contain text messages given by the underlying database for the exception.
 
-DCS throws other exceptions besides <span> **dgException** </span>. Please see the documentation for the particular DCS object or method call for a description of the exceptions thrown.
+DG throws other exceptions besides <span> **dgException** </span>. Please see the documentation for the particular DG object or method call for a description of the exceptions thrown.
 
-**dgException** inherits from <span>System.Exception</span>, which provides many useful functions for diagnosing and reporting bugs in your code and DCS.
+**dgException** inherits from <span>System.Exception</span>, which provides many useful functions for diagnosing and reporting bugs in your code and DG.
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Common](datagate-common-namespace.html) 

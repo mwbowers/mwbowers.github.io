@@ -23,7 +23,7 @@ The <span> **DataTable** </span> object describing the fields of a key.
 System.Data.DataTable. This object contains columns defining the data types of key parts. 
 ## Remarks
 
-The **DataTable** property provides access to the underlying **System.Data.DataTable** object used to model a database file key. Note that DCS does not add the **DataRow** object referenced by the [ AdgKeyTable.Row](adg-key-table-class-row-property.html) property to this **DataTable** .
+The **DataTable** property provides access to the underlying **System.Data.DataTable** object used to model a database file key. Note that DG does not add the **DataRow** object referenced by the [ AdgKeyTable.Row](adg-key-table-class-row-property.html) property to this **DataTable** .
 
 The **DataTable** property is intended to be a reference to the metadata of the key, rather than as a container of rows. Each column in the **DataTable** corresponds to a field, or "key part", in the key, in exactly the same way that columns in **DataTable** objects for record formats (in [AdgDataSet](adg-dataset-class.html)) correspond to fields in the format.
 

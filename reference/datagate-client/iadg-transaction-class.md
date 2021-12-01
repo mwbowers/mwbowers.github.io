@@ -19,7 +19,7 @@ Instance members of this type are not guaranteed to be thread safe.
 
 Methods are provided to accept and cancel database modifications occuring within the boundaries of the transaction ([Commit](iadg-transaction-class-commit-methods.html) and [Rollback](iadg-transaction-class-rollback-method.html) respectively). 
 
-DCS provides two types of transaction objects - automatic and manual transactions, both of which implement **IAdgTransaction** . 
+DG provides two types of transaction objects - automatic and manual transactions, both of which implement **IAdgTransaction** . 
 
 Manual transactions objects are constructed by the **AdgConnection.BeginTransaction** method. The database provider begins a transaction context upon successful construction of the manual transaction object. The behavior of the manual transaction with regard to the **Commit** and **Rollback** methods is database provider platform-dependent. Some providers may end the transaction context after a call to **Commit** or **Rollback** , while others may continue the transaction context after these method calls.
 
@@ -27,7 +27,7 @@ Automatic transactions are constructed by the **AdgConnection.BeginAutoTransacti
 
 With some database providers, calling the **Dispose** method to end the transaction context is critical to proper transaction processing. With both types of transaction objects, it is recommended that applications explicitly call **Dispose** to end the current transaction context rather than relying on the behavior of a specific database provider in ending the transaction.
 
-Nested database transaction are allowed with transaction processing but this requires you to control the transaction flow from object to object while maintaining the security, recovery, concurrency, and integrity within the transaction boundary. DCS does not restrict nested transactions but the database provider may have mechanisms that prevent or limit such usage. Please consult the database provider's documentation for details.
+Nested database transaction are allowed with transaction processing but this requires you to control the transaction flow from object to object while maintaining the security, recovery, concurrency, and integrity within the transaction boundary. DG does not restrict nested transactions but the database provider may have mechanisms that prevent or limit such usage. Please consult the database provider's documentation for details.
 
 At the time of this writing, only the IBM i database provider supports transaction processing.
 ## Requirements

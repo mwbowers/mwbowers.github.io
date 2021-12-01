@@ -3,7 +3,7 @@ title: IFileObject.InspectFile Method
 
 ---
 
-InspectFile is reserved for internal use by DCS and should not be invoked by user programs .
+InspectFile is reserved for internal use by DG and should not be invoked by user programs .
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public void InspectFile(<br />[InspectFileParts](inspect-file-parts-enumeration.html) parts,<br />[InspectFileOutput](inspect-file-output-enumeration.html) output, <br />   out int ErrorCount,

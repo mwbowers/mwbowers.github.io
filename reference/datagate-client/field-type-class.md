@@ -18,7 +18,7 @@ For a list of all members of this type, see [FieldType Members](field-type-membe
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 ## Remarks
 
-A **FieldType** object describes the most fundamental unit of data in DataGate databases. Fields describe record formats, keys, structured parameter members, and simple parameters. Currently, DCS provides public access to **FieldType** for the purpose of creating program parameters (see [ProgParmType](prog-parm-type-class.html)). 
+A **FieldType** object describes the most fundamental unit of data in DataGate databases. Fields describe record formats, keys, structured parameter members, and simple parameters. Currently, DG provides public access to **FieldType** for the purpose of creating program parameters (see [ProgParmType](prog-parm-type-class.html)). 
 
 **FieldType** objects have a set of read-only properties describing a field. You create instances of **FieldType** using one of the static methods provided by the class. Each of the static methods (prefixed with "New…", as in [ NewPacked](field-type-class-new-packed-method.html), creates a **FieldType** object compatible with DataGate and **ProgParmType** .
 

@@ -50,9 +50,9 @@ title: FileAdapter.OpenAttributes Property
       try
       {
           /* Though it seems like we have to read each record one at a time,
-           * in reality DCS stores the first 10 records the first time we read
+           * in reality DG stores the first 10 records the first time we read
            * and then afterwards we simply read from the cache. When those run out, 
-           * DCS will automatically grab another ten records from the database.
+           * DG will automatically grab another ten records from the database.
            * Note that 10 is our refresh interval, meaning that this I/O operation
            * occurs at the same time that we update our progress bar. If the blocking
            * factor was higher than our refresh interval, not only would we have to 
@@ -108,9 +108,9 @@ title: FileAdapter.OpenAttributes Property
   While Not EOF
       Try
           ' Though it seems like we have to read each record one at a time,
-          ' in reality DCS stores the first 10 records the first time we read
+          ' in reality DG stores the first 10 records the first time we read
           ' and then afterwards we simply read from the cache. When those run out, 
-          ' DCS will automatically grab another ten records from the database.
+          ' DG will automatically grab another ten records from the database.
           ' Note that 10 is our resh interval, meaning that this I/O operation
           ' occurs at the same time that we update our progress bar. If the blocking
           ' factor was higher than our resh interval, not only would we have to 

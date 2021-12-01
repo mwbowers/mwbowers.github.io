@@ -12,7 +12,7 @@ The <span style="FONT-WEIGHT: bold">ASNA.DataGate.Common </span>namespace contai
 
 | Class | Description |
 | ---- | ---- |
-| [dgException](dgexception-class.html) | The exception that is thrown by DCS to indicate procedural conditions, including errors. |
+| [dgException](dgexception-class.html) | The exception that is thrown by DG to indicate procedural conditions, including errors. |
 | [FieldType](field-type-class.html) | The details of a Field, such as its type, length, precision, and scale. |
 
 
@@ -38,12 +38,12 @@ The <span style="FONT-WEIGHT: bold">ASNA.DataGate.Common </span>namespace contai
 | [DataTypes](data-types-enumeration.html) | Defines values on the types of fields available. |
 | [DbcsFormat](dbcs-format-enumeration.html) | Defines values on whether shift-control characters appear internally on the IBM i. |
 | [DependentTypes](dependent-types-enumeration.html) | Defines values specifying a dependent object's relationship to a base file. |
-| [dgErrorClass](dgerror-class-enumeration.html) | Specifies the class, or category of the DCS run-time error. |
-| [dgErrorNumber](dgerror-number-enumeration.html) | Specifies the type of DCS run-time error. |
+| [dgErrorClass](dgerror-class-enumeration.html) | Specifies the class, or category of the DG run-time error. |
+| [dgErrorNumber](dgerror-number-enumeration.html) | Specifies the type of DG run-time error. |
 | [DuplicateOptions](duplicate-options-enumeration.html) | Defines values directing the operation of the [ Duplicate](iadg-object-class-duplicate-method.html) method of **IAdgObject** . |
 | [FileLocks](file-locks-enumeration.html) | Defines modes on how a file will be locked; either automatically or manually. |
-| [InspectFileOutput](inspect-file-output-enumeration.html) | Defines values used internally by DCS . |
-| [InspectFileParts](inspect-file-parts-enumeration.html) | Defines values used internally by DCS . |
+| [InspectFileOutput](inspect-file-output-enumeration.html) | Defines values used internally by DG . |
+| [InspectFileParts](inspect-file-parts-enumeration.html) | Defines values used internally by DG . |
 | [KeyUsages](key-usages-enumeration.html) | Defines key definition properties which apply to a key field. |
 | [LockRequest](lock-request-enumeration.html) | Options for record locking in [FileAdapter](file-adapter-class.html) access methods. |
 | [PaperOrientation](paper-orientation-enumeration.html) | Defines values on the orientation of the paper. |

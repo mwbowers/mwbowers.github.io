@@ -3,7 +3,7 @@ title: IAdgObject.Schema Property
 
 ---
 
-**Schema** is the XML schema collection DCS uses to validate XML document fragments describing **IAdgObject** instances and the database objects they represent.
+**Schema** is the XML schema collection DG uses to validate XML document fragments describing **IAdgObject** instances and the database objects they represent.
 <pre>        <span class="lang">[C#]</span>
  **Public System.Xml.Schema.XmlSchemaCollection Schema { get }** 
       </pre>

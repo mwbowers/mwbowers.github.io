@@ -49,9 +49,9 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 Use the **Extension** property to determine the type of data contained by the existing database source file member represented by **IMember** . The string denoting a member's type is generally an application - and/or user-defined keyword (e.g., "PRTF" stands for "print file source" on the iSeries). A member without a data type is denoted by an empty string value for **Extension** . 
 
-When a value is assigned to **Extension** , DCS updates the database member to use the given value as its new extension. Likewise, if the user program has not assigned a value to the property, DCS queries the database provider to obtain the value from the existing database member. The value obtained from the database provider is cached and returned on each successive access of **Extension** , until either the user program assigns a new value to **Extension** or the **IMember** instance is disposed.
+When a value is assigned to **Extension** , DG updates the database member to use the given value as its new extension. Likewise, if the user program has not assigned a value to the property, DG queries the database provider to obtain the value from the existing database member. The value obtained from the database provider is cached and returned on each successive access of **Extension** , until either the user program assigns a new value to **Extension** or the **IMember** instance is disposed.
 
-Note that when assigning a value to **Extension** , DCS does not permit the value to be greater than **ASNA.DataGate.Common.Constants.ExtensionSize** in length and silently truncates the provided value to that length. 
+Note that when assigning a value to **Extension** , DG does not permit the value to be greater than **ASNA.DataGate.Common.Constants.ExtensionSize** in length and silently truncates the provided value to that length. 
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

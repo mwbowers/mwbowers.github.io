@@ -68,7 +68,7 @@ Print controls associated with format fields have run-time properties that can b
 
 Since print controls may be implemented as COM-based unmanaged objects, this method may invoke .NET interoperability functions to obtain a so-called "runtime callable wrapper" for such controls. The user should be aware of the constraints of .NET interoperability in terms of performance and security when using this method.
 
-As a convenience, **SetValue** performs a simple conversion for certain OLE class types representing image data. If *val* is of type **System.Drawing.Image** , then DCS uses .NET framework classes to convert the value to the **stdole.IPicture** type. The **Image** class is somewhat more useful for .NET programs and objects of the type are readily convertible to one of the OLE interop types if necessary. 
+As a convenience, **SetValue** performs a simple conversion for certain OLE class types representing image data. If *val* is of type **System.Drawing.Image** , then DG uses .NET framework classes to convert the value to the **stdole.IPicture** type. The **Image** class is somewhat more useful for .NET programs and objects of the type are readily convertible to one of the OLE interop types if necessary. 
 ## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 

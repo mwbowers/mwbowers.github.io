@@ -55,7 +55,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 | dgExDENIED | Access to the method was denied by the database provider's "exit point" security support. |
 | dgEINTERNAL | A database provider internal error occurred. Review the provider's event logs for more information. |
 | dgENOMEM | The database provider encountered an "out of memory" exception. |
-| dgECHANBUSY | The delegate *enumerator* has attempted to call a restricted method or access a restricted property. See AdgEnumerator for details on what DCS methods the delegate may invoke.. |
+| dgECHANBUSY | The delegate *enumerator* has attempted to call a restricted method or access a restricted property. See AdgEnumerator for details on what DG methods the delegate may invoke.. |
 
 
 
@@ -63,7 +63,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 **EnumerateCurrentSystem** provides a call-back interface for enumerating the database object contents of the system and user portion of an existing library list. This is useful in visual applications, for example, when a library contains a large amount of objects and a separate thread is used to display a view of objects as they are supplied by the database provider. The delegate *enumerator* is called by **EnumerateCurrentSystem** as each object is returned by the provider. Each object in the library list is rendered to the delegate as an instance of [IAdgObject](iadg-object-class.html) through which the program can immediately obtain static details, such as path name and object type. Not all methods of **IAdgObject** are available from the delegate's code however (see **AdgEnumerator** for details).
 
-DCS and current database providers only support the enumeration of files and libraries as the contents of libraries. Exceptions raised by the delegate cause **Enumeration** to halt the database provider's stream of objects (safely interrupting the operation) just prior to rethrowing the exception.
+DG and current database providers only support the enumeration of files and libraries as the contents of libraries. Exceptions raised by the delegate cause **Enumeration** to halt the database provider's stream of objects (safely interrupting the operation) just prior to rethrowing the exception.
 
 Note that the [IDirectory.ItemList](idirectory-class-item-list-property.html) property provides similar information, but "all at once" in a cached list format for a specific directory.
 ## Requirements

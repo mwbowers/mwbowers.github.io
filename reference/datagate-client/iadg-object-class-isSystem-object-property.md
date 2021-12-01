@@ -22,7 +22,7 @@ Property Value <p> **Boolean** . ReadOnly. **True** if the database provider des
 None
 ## Remarks
 
-A database provider may designate some objects as "system" objects. In the current version of DCS, this designation is only reflected by **IsSystemObject** when the **IAdgObject** reference is obtained through the **IDirectory.Enumerate** method. The value of **IsSystemObject** in **IAdgObject** instances constructed in any other way is always **False** .
+A database provider may designate some objects as "system" objects. In the current version of DG, this designation is only reflected by **IsSystemObject** when the **IAdgObject** reference is obtained through the **IDirectory.Enumerate** method. The value of **IsSystemObject** in **IAdgObject** instances constructed in any other way is always **False** .
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

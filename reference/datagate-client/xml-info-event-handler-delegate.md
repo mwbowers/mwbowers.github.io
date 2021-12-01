@@ -29,7 +29,7 @@ This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgF
 <dl>
         <dd>
 
-The **System.Object** instance invoking the delegate. This parameter is reserved for the internal use of DCS and should not be manipulated by the user.
+The **System.Object** instance invoking the delegate. This parameter is reserved for the internal use of DG and should not be manipulated by the user.
 </dd>
         <dt />
 </dl>
@@ -44,7 +44,7 @@ The **System.Object** instance invoking the delegate. This parameter is reserved
 
 ## Exceptions
 
-DCS will ignore any exceptions raised by the delegate. That is, a raised exception will not be handled, and will thus terminate the **ReadXml** or **WriteXml** method. The caller of these methods should be prepared to handle any exceptions raised by the delegate. 
+DG will ignore any exceptions raised by the delegate. That is, a raised exception will not be handled, and will thus terminate the **ReadXml** or **WriteXml** method. The caller of these methods should be prepared to handle any exceptions raised by the delegate. 
 ## Remarks
 
 The **XmlInforEventHandler** delegate is defined strictly for use as an optional parameter with the **IAdgObject.WriteXml** and **AdgFactory.ReadXml** methods. If desired, the user can define an implementation for this delegate to monitor the operation of these methods. The methods will periodically call the delegate to report a milestone of a certain detail level (see **XmlInfoEventArgs** ). 

@@ -21,11 +21,11 @@ For a list of all members of this type, see <a href="dcsIMemberMembers.htm">IMem
 
 ### Thread Safety
 
-In DCS implementations of <strong>IMember</strong>, instance members are not guaranteed to be thread safe.
+In DG implementations of <strong>IMember</strong>, instance members are not guaranteed to be thread safe.
 
 The IMember class models the file member object of the database server. In addition to the generic methods and properties of [IAdgObject](dcsIAdgObjectClass.htm), **IMember** provides properties and methods specific to member objects.
 
-A valid **IMember** reference may be obtained from DCS in one of the following ways:
+A valid **IMember** reference may be obtained from DG in one of the following ways:
 
 *   The [AdgFactory.NewMember](dcsAdgFactoryClassNewMemberMethod.htm) method instantiates a new instance of **IMember**, given a path name and [AdgConnection](dcsAdgConnectionClass.htm) reference. Such an instance is suitable for creating a new file member object (via [IAdgObject.Create](dcsIAdgObjectClassCreateMethod.htm)), or for access to the attributes of an existing file member.
     

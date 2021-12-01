@@ -68,7 +68,7 @@ As a convenience, **GetValue** performs a simple conversion for certain OLE clas
 - **Picture**
 - **IPicture**
 
-Then DCS uses .NET framework classes to convert the value to the **System.Drawing.Image** type. The **Image** class is somewhat more useful for .NET programs and objects of the type are readily convertible to one of the OLE interop types if necessary. 
+Then DG uses .NET framework classes to convert the value to the **System.Drawing.Image** type. The **Image** class is somewhat more useful for .NET programs and objects of the type are readily convertible to one of the OLE interop types if necessary. 
 ## Requirements
 
 <span> **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) </span> 

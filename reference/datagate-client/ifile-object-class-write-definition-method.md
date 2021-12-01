@@ -66,18 +66,18 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 | dgErADENOTFND, dgEcNEWVERSION, or dgEaBADFRMTID | The database provider has detected an inconsistency in the file. The file should be repaired or restored. |
 | dgEnOpenFileDef | The database provider encountered a system error when attempting to access the file's definition. The file's type may not be supported by DataGate. Please see the provider's event log for further details. |
 | dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
-| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DCS does not currently support this type of file. |
+| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DG does not currently support this type of file. |
 
 
 
 ## Remarks
 
-The definition of a file is metadata describing the formats, fields, keys, bases, and text, among other characteristics, of the database file object. This information is collectively expressed in DCS as a single XML content node (or element), named <code>&lt;fileDef&gt;</code> (see the XML schema). **WriteDefinition** writes this content node to an XML stream, provided by *writer* . DCS obtains the definition information for **IFileObject** from one of two sources:
+The definition of a file is metadata describing the formats, fields, keys, bases, and text, among other characteristics, of the database file object. This information is collectively expressed in DG as a single XML content node (or element), named <code>&lt;fileDef&gt;</code> (see the XML schema). **WriteDefinition** writes this content node to an XML stream, provided by *writer* . DG obtains the definition information for **IFileObject** from one of two sources:
 
 - An existing database file, represented by **IFileObject** .
 - The user program, via [ReadDefinition](ifile-object-class-read-definition-method.html).
 
-If the user program sets the definition with **ReadDefinition** , then **WriteDefinition** dumps that information. If no definition information has yet been obtained when **WriteDefinition** is called, then **IFileObject** is assumed to reference an existing database file, and DCS attempts to query the database provider for the information. The only way to obtain the definition information for an existing file is to call **WriteDefinition** after constructing **IFileObject** , but before any call to **ReadDefinition** on that **IFileObject** .
+If the user program sets the definition with **ReadDefinition** , then **WriteDefinition** dumps that information. If no definition information has yet been obtained when **WriteDefinition** is called, then **IFileObject** is assumed to reference an existing database file, and DG attempts to query the database provider for the information. The only way to obtain the definition information for an existing file is to call **WriteDefinition** after constructing **IFileObject** , but before any call to **ReadDefinition** on that **IFileObject** .
 
 Note that if the definition information of **IFileObject** was set with **ReadDefinition** , any default attribute nodes not specified in the stream to **ReadDefinition** will be explicitly defined in the stream written by **WriteDefinition** , due to the schema validation function of **ReadDefinition** . Thus the data written by **WriteDefinition** may not be identical to the data read by **ReadDefinition** , although both streams are semantically equivalent.
 

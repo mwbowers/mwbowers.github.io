@@ -48,7 +48,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 | dgEmBUSYOBJ | The database provider could not obtain a "shared read" lock on the file object. |
 | dgEnOpenFileDef | The database provider encountered a system error when attempting to access the file's definition. The file's type may not be supported by DataGate. Please see the provider's event log for further details. |
 | dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
-| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DCS does not currently support this type of file. |
+| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DG does not currently support this type of file. |
 
 
 
@@ -56,7 +56,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 **Members** allows the enumeration of the member objects of the database file represented by **IFileObject** . Each element of **Members** is an instance of [IMember](imember-class.html). The number of elements in **Members** is equal to the value of [ IFileObject.MemberCount](ifile-object-class-member-count-property.html). Modifying the **IMember** reference values of the elements of **Members** has no effect on the database file or its members. 
 
-Currently, DCS retrieves the value of **Members** from the database provider only once in the lifetime of **IFileObject** , and this value is returned each time the property value is accessed. Thus, the listed exceptions are never raised after the first successful access of the property value. To obtain a refreshed value for **Members** , use a newly instantiated **IFileObject** instance referencing the same database file object.
+Currently, DG retrieves the value of **Members** from the database provider only once in the lifetime of **IFileObject** , and this value is returned each time the property value is accessed. Thus, the listed exceptions are never raised after the first successful access of the property value. To obtain a refreshed value for **Members** , use a newly instantiated **IFileObject** instance referencing the same database file object.
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

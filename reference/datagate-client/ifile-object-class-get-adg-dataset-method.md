@@ -63,7 +63,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 | dgErADENOTFND, dgEcNEWVERSION, or dgEaBADFRMTID | The database provider has detected an inconsistency in the file. The file should be repaired or restored. |
 | dgEnOpenFileDef | The database provider encountered a system error when attempting to access the file's definition. The file's type may not be supported by DataGate. Please see the provider's event log for further details. |
 | dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
-| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DCS does not currently support this type of file. |
+| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DG does not currently support this type of file. |
 
 
 

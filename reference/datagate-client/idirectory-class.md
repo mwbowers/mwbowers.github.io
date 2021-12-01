@@ -17,12 +17,12 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IDirectory</s
 
 ## Thread Safety
 
-In DCS implementations of **IDirectory** , instance members are not guaranteed to be thread safe.
+In DG implementations of **IDirectory** , instance members are not guaranteed to be thread safe.
 ## Remarks
 
 The **IDirectory** class models the library object of the database server. In addition to the generic object management methods and properties of [IAdgObject](iadg-object-class.html) the **IDirectory** class provides additional functions specific to library objects.
 
-A valid **IDirectory** reference may be obtained from DCS in one of the following ways:
+A valid **IDirectory** reference may be obtained from DG in one of the following ways:
 
 - The [AdgFactory.NewDirectory](adg-factory-class-new-directory-method.html) method instantiates a new instance of **IDirectory** given a path name and [AdgConnection](adg-connection-class.html) reference. Such an instance is suitable for creating a new library object (via [ IAdgObject.Create](iadg-object-class-create-method.html)) or for managing the attributes of an existing library.
 - An instance of **IDirectory** representing an existing database library may be returned when using the [ IDirectory.Enumerate](idirectory-class-enumerate-method.html) method.

@@ -16,12 +16,12 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IFileObject</
 
 ## Thread Safety
 
-In DCS implementations of **IFileObject** , instance members are not guaranteed to be thread safe.
+In DG implementations of **IFileObject** , instance members are not guaranteed to be thread safe.
 ## Remarks
 
 The **IFileObject** class models the file object of the database server. In addition to the generic methods and properties of [ IAdgObject](iadg-object-class.html) the **IFileObject** class provides methods specific to file objects. 
 
-A valid **IFileObject** reference may be obtained from DCS in one of the following ways:
+A valid **IFileObject** reference may be obtained from DG in one of the following ways:
 
 - The [AdgFactory.NewFile](adg-factory-class-new-file-method.html) method instantiates a new instance of **IFileObject** given a path name and [AdgConnection](adg-connection-class.html) reference. Such an instance is suitable for creating a new file object (via [ IAdgObject.Create](iadg-object-class-create-method.html)), or for access to the attributes of an existing file.
 - An instance of **IFileObject** representing an existing database file may be returned when using the [ IDirectory.Enumerate](idirectory-class-enumerate-method.html) method.

@@ -4,13 +4,13 @@ title: Calling Stored Procedures
 ---
 
 #### Program Call Example Tutorial
-DCS for Visual Studio 2019 offers an interface for calling traditional RPG programs. These called programs typically are designed to be passed parameter variable values by reference. Thus the caller can pass a variable of a certain type to the program and the program, which defines the type of the parameter variable, can read and change the value of the variable before control is returned to the caller.
+DG for Visual Studio 2019 offers an interface for calling traditional RPG programs. These called programs typically are designed to be passed parameter variable values by reference. Thus the caller can pass a variable of a certain type to the program and the program, which defines the type of the parameter variable, can read and change the value of the variable before control is returned to the caller.
 
-Unlike IBM i file access where files are "externally described" and programs are compiled against those descriptions, the descriptions of IBM i program parameters are not readily available from the database, and thus cannot be directly compiled against. The description of called program parameters must be known and described by the DCS programmer in order for a program call to be successful. DCS allows parameters of called programs to be described procedurally. The following sections describe the objects and methods for calling programs.
+Unlike IBM i file access where files are "externally described" and programs are compiled against those descriptions, the descriptions of IBM i program parameters are not readily available from the database, and thus cannot be directly compiled against. The description of called program parameters must be known and described by the DG programmer in order for a program call to be successful. DG allows parameters of called programs to be described procedurally. The following sections describe the objects and methods for calling programs.
 
-IBM i called programs may define parameters as complex data structures and arrays of simple or complex types. DCS supports these parameters. Following the sections outlining parameter list construction is a section detailing the use of arrays and data structures.
+IBM i called programs may define parameters as complex data structures and arrays of simple or complex types. DG supports these parameters. Following the sections outlining parameter list construction is a section detailing the use of arrays and data structures.
 
-Note: There are some VB examples located in the C:\Program Files\ASNA\Examples\DCS for VS 2017\VB folder. Each example is contained within a separate folder and there is a file called z_Readme.mht file in each folder containing information about the example and how to access it. Double-clicking on the solution file (.sln) will automatically open the example in Visual Studio 2019.
+Note: There are some VB examples located in the C:\Program Files\ASNA\Examples\DG for VS 2017\VB folder. Each example is contained within a separate folder and there is a file called z_Readme.mht file in each folder containing information about the example and how to access it. Double-clicking on the solution file (.sln) will automatically open the example in Visual Studio 2019.
 ## Contents
 
 - Database Connections and Program Paths
@@ -19,7 +19,7 @@ Note: There are some VB examples located in the C:\Program Files\ASNA\Examples\D
 - Structured Types and Arrays as Parameters
 
 ### Database Connections and Program Paths
-Before calling a program with DCS you must provide the following information: 
+Before calling a program with DG you must provide the following information: 
 
 - The database server to connect to.
 - The path of the program on the database server.
@@ -99,7 +99,7 @@ ProgParmType object parmType is constructed with three parameters.
 2. The second parameter supports the use of this type as an array – setting the value to zero marks this parameter type as a non-array.
 3. The third parameter specifies the data type of the parameter; in this case the required packed decimal type. Use the ASNA.DataGate.Common.FieldType.New* methods to specify the data type.
 
-The ProgParm object countParm is constructed by passing a reference to the previously constructed ProgParmType object and a marshalling directive. In this case, DataDirection.InputOutput tells DCS that the value of the parameter will be copied across the client/server link both prior to calling the program and then again upon return. InputOutput effectively emulates the "pass by reference" semantics of the traditional IBM i CALL command. If you know that your parameter is either an input-only or an output-only parameter (or unused), then you may specify another directive (Input, Output, or None) to improve performance by reducing the amount of data transferred on the client/server link. In this case however, the packed decimal parameter described by parmType will be used as both an input and output parameter.
+The ProgParm object countParm is constructed by passing a reference to the previously constructed ProgParmType object and a marshalling directive. In this case, DataDirection.InputOutput tells DG that the value of the parameter will be copied across the client/server link both prior to calling the program and then again upon return. InputOutput effectively emulates the "pass by reference" semantics of the traditional IBM i CALL command. If you know that your parameter is either an input-only or an output-only parameter (or unused), then you may specify another directive (Input, Output, or None) to improve performance by reducing the amount of data transferred on the client/server link. In this case however, the packed decimal parameter described by parmType will be used as both an input and output parameter.
 
 The [AppendParm](as400program-class-append-parm-method.html) method of As400Program associates the ProgParm object with the program as the first parameter in the stack to be passed. In this case, countParm is the only parameter to be passed. If there were more than one, you would use successive calls to AppendParm to list the parameters in the order they would be passed to the program.
 
@@ -126,9 +126,9 @@ After setting the input parameter values, the IBM i program may be invoked with 
 <pre class="prettyprint">[Visual RPG]
   prog.Execute()</pre>
 
-Execute sends all DataDirection.Input and DataDirection.InputOutput parameter values to the database server, and tells the server to invoke the program. Execute blocks, waiting for the result of the program call. When control returns to the database server from the called program, the server sends all DataDirection.Output and DataDirection.InputOutput parameter values to DCS.
+Execute sends all DataDirection.Input and DataDirection.InputOutput parameter values to the database server, and tells the server to invoke the program. Execute blocks, waiting for the result of the program call. When control returns to the database server from the called program, the server sends all DataDirection.Output and DataDirection.InputOutput parameter values to DG.
 
-Upon return from Execute, your DCS program will want to extract the output parameter values from the parameter list. In the ProgramCallSimple example, there is only one output parameter that we are interested in and it is accessed with the As400Program class’ ParmToObject method as follows:
+Upon return from Execute, your DG program will want to extract the output parameter values from the parameter list. In the ProgramCallSimple example, there is only one output parameter that we are interested in and it is accessed with the As400Program class’ ParmToObject method as follows:
 <pre class="prettyprint">[C#]
   decimal retVal;
   retVal = (decimal) prog.ParmToObject(countParm,);
@@ -150,7 +150,7 @@ ParmToObject returns an object or value type of a specific type. As with the val
 Note that in C#, an explicit cast is required to instruct the compiler that the object type returned by ParmToObject is a boxed value type (decimal).
 
 ### Structured Types and Arrays as Parameters
-IBM i programs and, in particular, ILE-RPG programs, are allowed to define parameters as complex types, or "structured" types. Also, parameters may be defined as "multiple-occurrence" parameters or single-dimension arrays. A combination of structured types and arrays is allowed by defining a parameter as a "multiple occurrence data structure." DCS provides the capability to call programs defining parameters in any of these ways. The ProgramCallComplex project illustrates one example of calling an RPG program which defines its input parameter as a multiple-occurrence data structure. The program being called is given by the following ILE-RPG source code.
+IBM i programs and, in particular, ILE-RPG programs, are allowed to define parameters as complex types, or "structured" types. Also, parameters may be defined as "multiple-occurrence" parameters or single-dimension arrays. A combination of structured types and arrays is allowed by defining a parameter as a "multiple occurrence data structure." DG provides the capability to call programs defining parameters in any of these ways. The ProgramCallComplex project illustrates one example of calling an RPG program which defines its input parameter as a multiple-occurrence data structure. The program being called is given by the following ILE-RPG source code.
 
 ILE-RPG source code:
 <pre class="prettyprint">
@@ -229,9 +229,9 @@ After constructing the parameter list the ProgramCallComplex program initializes
   prog.ObjectToParm("2Fld2", "TestDS.Test2",  
   secondElemRef)</pre>
 
-Since the called program is only interested in a particular member of a data structure (Test2) and that data structure is in a particular element of the array (second element), the above code only sets the data for that element. Note that DCS chooses reasonable default "zero" values for parameter values that are not set explicitly. However, the programmer should not rely on default values to supply data used by a called program. 
+Since the called program is only interested in a particular member of a data structure (Test2) and that data structure is in a particular element of the array (second element), the above code only sets the data for that element. Note that DG chooses reasonable default "zero" values for parameter values that are not set explicitly. However, the programmer should not rely on default values to supply data used by a called program. 
 
-In referencing the data of any parameter, DCS uses two distinguishing characteristics: 
+In referencing the data of any parameter, DG uses two distinguishing characteristics: 
 
 4. the name of each member in the path to the data
 5. a set of integers,representing array indices selecting array elements along the path to the data

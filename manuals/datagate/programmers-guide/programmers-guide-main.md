@@ -3,12 +3,12 @@ title: Programmers Guide
 
 ---
 
-This section of the ASNA DataGate Component Suite documentation contains the basics to assist you in using DCS.
+This section of the ASNA DataGate Component Suite documentation contains the basics to assist you in using DG.
 
 ## In This Section
 
 [Introduction](introduction-main.html)
-: Describes an overview of DataGate Component Suite and how to access the DCS Assembly. 
+: Describes an overview of DataGate Component Suite and how to access the DG Assembly. 
 
 
 [Connecting To/From a Database](connectingtoa-database-main.html)        
@@ -24,4 +24,4 @@ This section of the ASNA DataGate Component Suite documentation contains the bas
 
 
 [Error Handling](error-handling.html)
-: Describes how exceptions are handled by DCS. Most often, these exceptions are in the form of a condition identifier (provided by the Error field), and a text message (provided by the Message property). 
+: Describes how exceptions are handled by DG. Most often, these exceptions are in the form of a condition identifier (provided by the Error field), and a text message (provided by the Message property). 

@@ -3,7 +3,7 @@ title: dgErrorNumber Enumeration
 
 ---
 
-Specifies the type of DCS run-time error.
+Specifies the type of DG run-time error.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public enum dgErrorNumber;** 

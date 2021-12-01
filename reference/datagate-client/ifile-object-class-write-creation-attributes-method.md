@@ -67,19 +67,19 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 | dgErADENOTFND, dgEcNEWVERSION, or dgEaBADFRMTID | The database provider has detected an inconsistency in the file. The file should be repaired or restored. |
 | dgEnOpenFileDef | The database provider encountered a system error when attempting to access the file's definition. The file's type may not be supported by DataGate. Please see the provider's event log for further details. |
 | dgEsAS400ERROR | The database provider encountered a system-level error. Details provided in the **dgException.Message** property. |
-| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DCS does not currently support this type of file. |
+| dgEcSQL400FILE | The database provider detected that the file's type is "SQL/400". DG does not currently support this type of file. |
 
 
 
 ## Remarks
 
-The creation-time attributes of a file are metadata apart from the file definition, describing certain operational characteristics the database provider enforces on the file object, such as the maximum number of members, and busy-wait times. This information is collectively expressed in DCS as a single XML content node (or element), named <code>&lt;fileCreateAttr&gt;</code> (see the XML schema). **WriteCreationAttributes** writes this content node to an XML stream, provided by *writer* . DCS obtains the creation-time attributes information for **IFileObject** from one of two sources:
+The creation-time attributes of a file are metadata apart from the file definition, describing certain operational characteristics the database provider enforces on the file object, such as the maximum number of members, and busy-wait times. This information is collectively expressed in DG as a single XML content node (or element), named <code>&lt;fileCreateAttr&gt;</code> (see the XML schema). **WriteCreationAttributes** writes this content node to an XML stream, provided by *writer* . DG obtains the creation-time attributes information for **IFileObject** from one of two sources:
 
 - An existing database file, represented by **IFileObject** .
 - The user program, via [
 							ReadCreationAttributes](ifile-object-class-read-creation-attributes-method.html).
 
-If the user program sets the creation-time attributes with **ReadCreationAttributes** , then **WriteCreationAttributes** dumps that information. If no creation-time attributes information has yet been obtained when **WriteCreationAttributes** is called, then **IFileObject** is assumed to reference an existing database file, and DCS attempts to query the database provider for the information. The only way to obtain the creation-time attribute information for an existing file is to call **WriteCreationAttributes** after constructing **IFileObject** , but before any call to **ReadCreationAttributes** on that **IFileObject** .
+If the user program sets the creation-time attributes with **ReadCreationAttributes** , then **WriteCreationAttributes** dumps that information. If no creation-time attributes information has yet been obtained when **WriteCreationAttributes** is called, then **IFileObject** is assumed to reference an existing database file, and DG attempts to query the database provider for the information. The only way to obtain the creation-time attribute information for an existing file is to call **WriteCreationAttributes** after constructing **IFileObject** , but before any call to **ReadCreationAttributes** on that **IFileObject** .
 
 Note that if the creation-time attribute information of **IFileObject** was set with **ReadCreationAttributes** , any default attribute nodes not specified in the stream to **ReadCreationAttributes** will be explicitly defined in the stream written by **WriteCreationAttributes** , due to the schema validation function of **ReadCreationAttributes** . Thus the data written by **WriteCreationAttributes** may not be identical to the data read by **ReadCreationAttributes** , although both streams are semantically equivalent.
 

@@ -35,7 +35,7 @@ System.ArgumentException.  Thrown if *fmt*  is **DateTimeFormat.HMS** .
 
 The value of *fmt* may be any value of **DateTimeFormat** , except for **HMS** .
 
-Note that internally, DCS manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DCS as the value of a date, time, or timestamp field (in methods such as [ As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of **DateTime** . Likewise, DCS will only accept values which can be accurately converted to **DateTime** values, for setting the value of date, time, or timestamp fields.
+Note that internally, DG manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DG as the value of a date, time, or timestamp field (in methods such as [ As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of **DateTime** . Likewise, DG will only accept values which can be accurately converted to **DateTime** values, for setting the value of date, time, or timestamp fields.
 ## Examples
 
 <pre> <span class="lang"> **[C#]** </span>

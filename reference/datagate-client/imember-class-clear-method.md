@@ -45,7 +45,7 @@ None.
 
 ## Remarks
 
-**Clear** removes all data records, active and deleted, from the database file member object represented by **IMember** . DCS does not implement this function but rather invokes the database provider's function to perform the task.
+**Clear** removes all data records, active and deleted, from the database file member object represented by **IMember** . DG does not implement this function but rather invokes the database provider's function to perform the task.
 ## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 

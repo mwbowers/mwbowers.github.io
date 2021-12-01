@@ -65,9 +65,9 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 ## Remarks
 
-**FileAdapter** methods which read, update, and add records may also optionally lock the current record associated with those operations, in compliance with the rules of the database provider. <span> **ReleaseRRN** </span> allows DCS programs to release portions of the lock held, if any, on the specified record.
+**FileAdapter** methods which read, update, and add records may also optionally lock the current record associated with those operations, in compliance with the rules of the database provider. <span> **ReleaseRRN** </span> allows DG programs to release portions of the lock held, if any, on the specified record.
 
-The *lr* parameter specifies the record locks to release. DCS supports the **LockRequest.Write** and **LockRequest.Read** flags as valid components of the *lr* parameter value.
+The *lr* parameter specifies the record locks to release. DG supports the **LockRequest.Write** and **LockRequest.Read** flags as valid components of the *lr* parameter value.
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

@@ -20,7 +20,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 **ProgParmType** wraps a [ASNA.DataGate.Common.FieldType](field-type-class.html) object to describe the data type of an iSeries program parameter. The data type may be described to be a scalar or vector. Additionally, you may associate a string identifier with the program parameter. For complex parameter types composed of combinations of scalars, arrays, and embedded complex types, define program parameters with [StructureType](structure-type-class.html) objects.
 
-The only public method of **ProgParmType** is its [ constructor](prog-parm-type-constructors-main.html). The **FieldType** object contained by **ProgParmType** provides most of the information for the parameter type description. **FieldType** is used internally by DCS to manipulate many database objects, including program parameters and file fields.
+The only public method of **ProgParmType** is its [ constructor](prog-parm-type-constructors-main.html). The **FieldType** object contained by **ProgParmType** provides most of the information for the parameter type description. **FieldType** is used internally by DG to manipulate many database objects, including program parameters and file fields.
 
 The optional name associated with a **ProgParmType** object may be used by parameter manipulation methods such as [ As400Program.ObjectToParm](as400program-class-object-to_parm-method-main.html).
 ## Requirements

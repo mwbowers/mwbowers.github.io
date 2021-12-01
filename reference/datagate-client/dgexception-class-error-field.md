@@ -19,7 +19,7 @@ The condition identifier for this dgException.
 [ASNA.DataGate.Common.dgErrorNumber](dgerror-number-enumeration.html). The condition identifier for the exception.
 ## Remarks
 
-DCS sets the **Error** field to identify the condition giving rise to the dgException. The **Error** field uniquely identifies the condition, as detected by DCS and the DataGate provider. However, further details of the exception may be gleaned from other fields, such as [SystemError](dgexception-class-system-error-field.html) and [Text](disconnectingfroma-database.html), dependent upon provider support.
+DG sets the **Error** field to identify the condition giving rise to the dgException. The **Error** field uniquely identifies the condition, as detected by DG and the DataGate provider. However, further details of the exception may be gleaned from other fields, such as [SystemError](dgexception-class-system-error-field.html) and [Text](disconnectingfroma-database.html), dependent upon provider support.
 ## Examples
 
 <pre class="prettyprint">        <span class="lang">

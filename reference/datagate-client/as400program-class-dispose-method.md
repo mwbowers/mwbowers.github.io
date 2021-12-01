@@ -23,7 +23,7 @@ None.
 
 The **As400Program** class implements the <span>IDisposable</span> interface. Currently **As400Program** does not directly use unmanaged resources therefore this implementation of <span> **Dispose** </span> has no effect.
 
-This method is provided for future enhancements. To maintain compatibility with future DCS releases, it is recommended that you call the **Dispose** method when your program’s use of **As400Program** is complete (prior to finalization).
+This method is provided for future enhancements. To maintain compatibility with future DG releases, it is recommended that you call the **Dispose** method when your program’s use of **As400Program** is complete (prior to finalization).
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

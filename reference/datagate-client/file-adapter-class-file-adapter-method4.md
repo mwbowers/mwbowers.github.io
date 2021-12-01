@@ -48,7 +48,7 @@ Constructs an instance of the [ FileAdapter](file-adapter-class.html) object wit
 
 ## Remarks
 
-This constructor creates an instance of **FileAdapter** with the given database connection, file path, and member name (which are used to initialize the **Connection** , **FileName** , and **MemberName** properties respectively). If the value of the given member name is null or an empty string, and the **MemberName** property is not otherwise set prior to a call to the [ Open](file-adapter-class-open-method.html) method, DCS assigns this property the value "*FIRST".
+This constructor creates an instance of **FileAdapter** with the given database connection, file path, and member name (which are used to initialize the **Connection** , **FileName** , and **MemberName** properties respectively). If the value of the given member name is null or an empty string, and the **MemberName** property is not otherwise set prior to a call to the [ Open](file-adapter-class-open-method.html) method, DG assigns this property the value "*FIRST".
 
 The [AccessMode](file-adapter-class-access-mode-property.html) property is initialized with the value Read.
 ## Examples

@@ -135,7 +135,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 | ---- | ---- |
 | dgEINVARG | **ReadXml** is not supported for the supplied value of *docObjectType* . |
 | dgErBADSRC | An attempt to create a logical database file failed because no valid base files were specified in the file definition. |
-| dgEmINVSQLOP | The **AdgConnection** specified is a connection to an SQL Server database provider, and DCS currently does not support the I **AdgObject** interface for the type specified by *docObjectType* for those providers. |
+| dgEmINVSQLOP | The **AdgConnection** specified is a connection to an SQL Server database provider, and DG currently does not support the I **AdgObject** interface for the type specified by *docObjectType* for those providers. |
 
 
 

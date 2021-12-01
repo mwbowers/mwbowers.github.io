@@ -3,19 +3,19 @@ title: Error Handling
 
 ---
 
-In client/server environments such as the ASNA DataGate Component suite (DCS) runtime, certain exceptions can occur that the programmer may wish to allow the program to recover from. For example, suppose that the network between your program (the client) and the database (the server) is disrupted. Instead of crashing or reporting the error and exiting, you could allow the user to try the procedure again when the network has been restored.
+In client/server environments such as the ASNA DataGate Component suite (DG) runtime, certain exceptions can occur that the programmer may wish to allow the program to recover from. For example, suppose that the network between your program (the client) and the database (the server) is disrupted. Instead of crashing or reporting the error and exiting, you could allow the user to try the procedure again when the network has been restored.
 
-Exceptions specific to the DataGate provider being accessed by DCS are communicated through [dgException](dgexception-class.html). Most often, these exceptions are in the form of a condition identifier and a text message provided by [Error](dgexception-class-error-field.html) field and [Message](dgexception-class-message-property.html) property respectively.
+Exceptions specific to the DataGate provider being accessed by DG are communicated through [dgException](dgexception-class.html). Most often, these exceptions are in the form of a condition identifier and a text message provided by [Error](dgexception-class-error-field.html) field and [Message](dgexception-class-message-property.html) property respectively.
 
 The [ErrorClass](dgexception-class-error-class-field.html) field classifies the condition identifier as one of the categories given by the [dgErrorClass](dgerror-class-enumeration.html) enumeration. The [SystemError](dgexception-class-system-error-field.html) field contains a provider-dependent exception identifier for certain exceptions. Likewise, the [Text](disconnectingfroma-database.html) field may contain text messages given by the underlying database for the exception.
 
-DCS throws other exceptions besides dgException. Please see the documentation for the particular DCS object or method call for a description of the exceptions thrown.
+DG throws other exceptions besides dgException. Please see the documentation for the particular DG object or method call for a description of the exceptions thrown.
 
-dgException inherits from System.Exception. System.Exception provides many useful functions for diagnosing and reporting bugs in your code and DCS.
+dgException inherits from System.Exception. System.Exception provides many useful functions for diagnosing and reporting bugs in your code and DG.
 
-A reference to all DCS error codes is provided in the documentation. Note that DCS may report its own error codes as specified by the type library’s [ dgErrorNumber](dgerror-number-enumeration.html) enumeration.
+A reference to all DG error codes is provided in the documentation. Note that DG may report its own error codes as specified by the type library’s [ dgErrorNumber](dgerror-number-enumeration.html) enumeration.
 
-Visual Basic also provides special constructs for handling class object errors. In particular, the "On Error" statement is highly effective for handling DCS object errors. Like Visual RPG, Visual Basic provides a global Err object, providing error number, description, and other error details. Again, most ActiveX development environments do provide options for handling DCS’s standard COM exceptions.
+Visual Basic also provides special constructs for handling class object errors. In particular, the "On Error" statement is highly effective for handling DG object errors. Like Visual RPG, Visual Basic provides a global Err object, providing error number, description, and other error details. Again, most ActiveX development environments do provide options for handling DG’s standard COM exceptions.
 <pre>        <span class="lang">
  **[C#]** 
         </span>

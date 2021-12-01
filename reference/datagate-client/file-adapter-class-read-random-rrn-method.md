@@ -87,7 +87,7 @@ If the operation is successful, the record read is placed in the specified **Adg
 
 A successful read operation optionally locks the record read as directed by the *lr* parameter and the locking properties of the file.
 
-The *mode* parameter is currently ignored. To maintain your code’s compatibility with future DCS enhancements, please use the value **ReadRandomMode.Equal** for this parameter.
+The *mode* parameter is currently ignored. To maintain your code’s compatibility with future DG enhancements, please use the value **ReadRandomMode.Equal** for this parameter.
 
 Calling this method cancels "range mode". A prior successful call to [ReadRange](file-adapter-class-read-range-method.html) or [SeekRange](file-adapter-class-seek-range-method.html) places the **FileAdapter** in range mode, in which only records with keys in a specified range are accessed. This method cancels the restriction.
 ## Requirements

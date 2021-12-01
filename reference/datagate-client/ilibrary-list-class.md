@@ -15,12 +15,12 @@ ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>ILibraryList<
 
 ## Thread Safety
 
-In DCS implementations of **ILibraryList** , instance members are not guaranteed to be thread safe.
+In DG implementations of **ILibraryList** , instance members are not guaranteed to be thread safe.
 ## Remarks
 
 The **ILibraryList** class models the library list object of the database server containing an ordered set of directory names associated with each applications database connection.
 
-A valid **ILibraryList** reference may be obtained from DCS with:
+A valid **ILibraryList** reference may be obtained from DG with:
 
 - The [AdgFactory.NewLibraryList](adg-factory-class-new-library-list-method.html)
 					method that instantiates a new instance of **ILibraryList** , given 

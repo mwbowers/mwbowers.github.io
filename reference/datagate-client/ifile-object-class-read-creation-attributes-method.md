@@ -43,7 +43,7 @@ title: IFileObject.ReadCreationAttributes Method
 | Exception Type | Condition |
 | ---- | ---- |
 | NullReferenceException | *reader* is a null reference. |
-| XmlSchemaException | *reader* is not an instance of **XmlValidatingReader** , and the data of the XML stream is invalid according to the embedded DCS schema for file creation attributes. Use the **Message** , **LineNumber** , and **LinePosition** properties of **XmlSchemaException** to determine the cause of the error. |
+| XmlSchemaException | *reader* is not an instance of **XmlValidatingReader** , and the data of the XML stream is invalid according to the embedded DG schema for file creation attributes. Use the **Message** , **LineNumber** , and **LinePosition** properties of **XmlSchemaException** to determine the cause of the error. |
 |  | <p> *reader* determined that the XML stream is not well-formed. Use the **Message** , **LineNumber** , and **LinePosition** properties of **XmlSchemaException** to determine the cause of the error. |
 
 
@@ -54,9 +54,9 @@ The creation-time attributes of a file are metadata apart from the file definiti
 
 The XML stream provided to **ReadCreationAttributes** may reference an XML document, or a document fragment. The first content node available for reading from the stream must be <code>&lt;fileCreateAttr&gt;</code>, and the method consumes only this content node. Any preceding non-content nodes are consumed and ignored.
 
-Unless *reader* is an instance of **XmlValidatingReader** , DCS validates the XML stream provided to **ReadCreationAttributes** by wrapping *reader* in an instance of **XmlValidatingReader** , and referencing an embedded schema. DCS will not wrap *reader* if it is already an instance of **XmlValidatingReader** . 
+Unless *reader* is an instance of **XmlValidatingReader** , DG validates the XML stream provided to **ReadCreationAttributes** by wrapping *reader* in an instance of **XmlValidatingReader** , and referencing an embedded schema. DG will not wrap *reader* if it is already an instance of **XmlValidatingReader** . 
 
-When DCS validates the stream by wrapping *reader* with **XmlValidatingReader** , XML attributes defined by the schema to have default values are assigned those default values, if they are not provided in the XML stream. Also, data in the stream not adhering to the schema will result in **XmlSchemaException** being raised, terminating the method.
+When DG validates the stream by wrapping *reader* with **XmlValidatingReader** , XML attributes defined by the schema to have default values are assigned those default values, if they are not provided in the XML stream. Also, data in the stream not adhering to the schema will result in **XmlSchemaException** being raised, terminating the method.
 
 Note that [AdgFactory.ReadXml](adg-factory-class-read-xml-methods.html) calls an internal, non-validating version of **ReadCreationAttributes** to set creation-time attributes of files described in the XML it reads.
 ## Requirements

@@ -18,7 +18,7 @@ For a list of all members of this type, see [ProgParm Members](prog-parm-members
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 ## Remarks
 
-DCS provides **ProgParm** to represent iSeries program parameters in your .NET program. Program parameters have three distinct components: 
+DG provides **ProgParm** to represent iSeries program parameters in your .NET program. Program parameters have three distinct components: 
 
 1. a description of the data (metadata)
 2. the data itself; the parameter value

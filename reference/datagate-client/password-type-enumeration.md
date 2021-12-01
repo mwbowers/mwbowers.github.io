@@ -23,7 +23,7 @@ Database providers may define special authentication schemes for initiating sess
 
 | Member | Description | Value |
 | ---- | ---- | ---- |
-| SecurePassPhrase | The password has no special properties and can be specified as a string of any characters (of any length). Note that although DCS permits the password to be an arbitrary string, the database provider may enforce restrictions when the session is authenticated. | 1 |
+| SecurePassPhrase | The password has no special properties and can be specified as a string of any characters (of any length). Note that although DG permits the password to be an arbitrary string, the database provider may enforce restrictions when the session is authenticated. | 1 |
 | Legacy | The password can be no longer than 31 characters in length. Further, the password supports the iSeries V4R5 authentication scheme (and V5R1 or later with the QPWDLVL system value set to 0 or 1), and Acceler8DB/DataGate database names created with legacy clients. When using this value to authenticate iSeries sessions, passwords are converted to uppercase and truncated to a length of exactly 10 characters. | 0 |
 
 

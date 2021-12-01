@@ -45,7 +45,7 @@ Defines the data type of a simple iSeries program parameter.
 - *cElems* specifies the length of a multiple-occurrence (single-dimension array) parameter.
 - If the type is a non-array parameter, specify 0 for *cElems* .
 
-In terms of the internal definition of parameters in DCS, a multiple-occurrence parameter of one element is indistinguishable from a non-array parameter.
+In terms of the internal definition of parameters in DG, a multiple-occurrence parameter of one element is indistinguishable from a non-array parameter.
 
 The database object type of the parameter is given by *type* . Generally, the value of *type* is obtained using one of the"New" static methods of the [FieldType](field-type-class.html) class, such as [FieldType.NewPacked](field-type-class-new-packed-method.html) for packed decimal types. **ProgParmType** treats *type* as a read-only object; thus a single instance of **FieldType** may be referenced by multiple instances of **ProgParmType** .
 

@@ -20,7 +20,7 @@ None.
 
 The constructor of **FileOpenAttr** should not be called directly, since the class is abstract. Rather it must be called by a class that inherits and implements the abstract methods of the class.
 
-Most applications should create **FileOpenAttr** instances via the [ FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method. The **FileOpenAttr** object returned by this method is properly initialized for accessing a particular file. Alternately, DCS-aware development tools, such as Visual RPG, can create **FileOpenAttr** classes. These classes can be instantiated directly and used with access functions, such as [ FileAdapter.Open](file-adapter-class-open-method.html).
+Most applications should create **FileOpenAttr** instances via the [ FileAdapter.OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method. The **FileOpenAttr** object returned by this method is properly initialized for accessing a particular file. Alternately, DG-aware development tools, such as Visual RPG, can create **FileOpenAttr** classes. These classes can be instantiated directly and used with access functions, such as [ FileAdapter.Open](file-adapter-class-open-method.html).
 ## Requirements
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 

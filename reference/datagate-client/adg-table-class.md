@@ -3,7 +3,7 @@ title: AdgTable Class
 
 ---
 
-The **AdgTable** class supports DCS infrastructure and is not intended to be used directly from your code.
+The **AdgTable** class supports DG infrastructure and is not intended to be used directly from your code.
 ## Remarks
 
 The [constructors](adg-key-table-adg-key-table-constructors-main.html) and properties ([DataTable](adg-key-table-class-data-table-property.html) and [Row](adg-key-table-class-row-property.html)) of this class are contained within [AdgKeyTable Class](adg-key-table-class.html) which inherits **AdgTable** . See [AdgKeyTable Members](adg-key-table-members.html) for a complete list of properties and methods.

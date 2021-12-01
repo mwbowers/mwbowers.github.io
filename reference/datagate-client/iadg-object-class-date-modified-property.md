@@ -19,7 +19,7 @@ title: IAdgObject.DateModified Property
 Property Value <p> **System.DateTime** . Read only. If **IAdgObject** was obtained via [IDirectory.Enumerate](idirectory-class-enumerate-method.html), the time the object was most recently modified. 
 ## Remarks
 
-Database providers record a timestamp of when a database object was most recently modified by any session. In the current version of DCS, this timestamp is only reflected by **DateModified** when **IAdgObject** is obtained through the **IDirectory.Enumerate** method. The value of **DateModified** in instances constructed in any other way is **DateTime.Min** .
+Database providers record a timestamp of when a database object was most recently modified by any session. In the current version of DG, this timestamp is only reflected by **DateModified** when **IAdgObject** is obtained through the **IDirectory.Enumerate** method. The value of **DateModified** in instances constructed in any other way is **DateTime.Min** .
 ## Requirements
 
 **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) 

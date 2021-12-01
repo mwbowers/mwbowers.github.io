@@ -22,7 +22,7 @@ A category of the condition raising the exception.
 [ASNA.DataGate.Common.dgErrorClass](dgerror-class-enumeration.html). The category of the condition raising the exception. 
 ## Remarks
 
-The condition raising the <span>dgException</span> belongs to a particular category of conditions identified by DCS. The <span> **ErrorClass** </span> field contains this category value.
+The condition raising the <span>dgException</span> belongs to a particular category of conditions identified by DG. The <span> **ErrorClass** </span> field contains this category value.
 ## Examples 
 
 <pre class="prettyprint">        <span class="lang">

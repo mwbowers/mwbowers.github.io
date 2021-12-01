@@ -9,7 +9,7 @@ title: AdgKeyTable Members
 
 |      |      |
 | ---- | ---- |
-| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ AdgKeyTable](adg-key-table-class-adg-key-table-constructor.html) | Supports DCS infrastructure and is not intended to be used directly from your code. |
+| <img height="11" alt="public property" src="images/public-method.gif" width="15" border="0" x-maintain-ratio="TRUE" /> [ AdgKeyTable](adg-key-table-class-adg-key-table-constructor.html) | Supports DG infrastructure and is not intended to be used directly from your code. |
 
 
 

@@ -80,7 +80,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 Use **Duplicate** to copy an existing database object represented by **IAdgObject** . *TargetPath* and *NewName* specify the location and name respectively, of the new copy. *options* specifies various options for creating the copy.
 
-*ScopePath* must specify a prefix of the path name of the **IAdgObject** (that is, *ScopePath* names a library that directly or indirectly contains the object to copy). This prefix is replaced with *TargetPath* in the base object paths specified by DCS when the duplicate object is created. This provides some flexibility when copying logical files and their base files.
+*ScopePath* must specify a prefix of the path name of the **IAdgObject** (that is, *ScopePath* names a library that directly or indirectly contains the object to copy). This prefix is replaced with *TargetPath* in the base object paths specified by DG when the duplicate object is created. This provides some flexibility when copying logical files and their base files.
 
 Current database providers only support the **Duplicate** method on **IAdgObject** instances representing database file objects, and not all options are supported by all providers.
 ## Requirements

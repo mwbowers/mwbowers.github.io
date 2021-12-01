@@ -3,7 +3,7 @@ title: Connecting To/From a Database
 
 ---
 
-Database access with DCS follows the traditional client/server pattern: 
+Database access with DG follows the traditional client/server pattern: 
 
 1. Identify the database you wish to access.
 2. Connect to the database.
