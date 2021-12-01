@@ -1,16 +1,6 @@
 ---
 title: IDataArea.InitialValue Method
 
-Id: dcsIDataAreaClassInitialValueProperty
-TocParent: dcsIDataAreaClassMembers
-TocOrder: 6
-
-keywords: InitialValue property
-keywords: IDataArea.InitialValue property
-
-keywords: data areas, initial value
-keywords: data areas, setting initial value
-
 ---
 
 Sets the InitialValue in the data area.

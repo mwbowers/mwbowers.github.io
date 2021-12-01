@@ -1,18 +1,6 @@
 ---
 title: IDataArea.Length Method
 
-Id: dcsIDataAreaClassLengthProperty
-TocParent: dcsIDataAreaClassMembers
-TocOrder: 5
-
-keywords: Length property
-keywords: IDataArea.Length property
-
-keywords: data areas, length
-keywords: data areas, setting length
-keywords: data areas, getting length
-keywords: how to, set length in data area
-
 ---
 
 Gets or sets the length in the data area.

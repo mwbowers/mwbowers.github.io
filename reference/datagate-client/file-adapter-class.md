@@ -1,19 +1,6 @@
 ---
 title: FileAdapter Class
 
-Id: dcsFileAdapterClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 8
-
-keywords: classes [DCS 16.0 FileAdapter class
-keywords: FileAdapter class
-keywords: FileAdapter class, about FileAdapter class
-keywords: accessing a file, about FileAdapter
-keywords: database files, about FileAdapter class
-keywords: files, about FileAdapter class
-
-keywords: records, about FileAdapter class
-
 ---
 
 The **FileAdapter** class provides record-level database access methods and open file status information. 

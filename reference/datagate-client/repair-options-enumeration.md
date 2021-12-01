@@ -1,26 +1,6 @@
 ---
 title: RepairOptions Enumeration
 
-Id: dcsRepairOptionsEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 28
-
-keywords: None enumeration member
-keywords: Verbose enumeration member
-keywords: KeepFile enumeration member
-keywords: ForceRebuild enumeration member
-keywords: RepairOptions enumeration
-keywords: enumerations [DCS 16.0 RepairOptions
-keywords: repair database files in library, options
-keywords: database libraries, repair database files, options
-keywords: database files, repair files in library, options
-keywords: how to, repair database files in library, options
-keywords: how to, invoke automatic diagnostic and repair function for library files, options
-keywords: database files, repairing single file, options
-keywords: repair single database file, options
-keywords: how to, repair database file, options
-keywords: how to, invoke automatic diagnostic and repair function for a file, options
-
 ---
 
 <span> **RepairOptions** </span> specifies optional ancillary functions for the [ IDirectory.RepairObjects](idirectory-class-repair-objects-method.html) and [ IFileObject.RepairFile](ifile-object-class-repair-file-method.html) methods. 

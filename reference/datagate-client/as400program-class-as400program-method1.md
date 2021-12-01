@@ -1,10 +1,6 @@
 ---
 title: As400Program()
 
-Id: dcsAs400ProgramClassAs400ProgramMethod1
-TocParent: dcsAs400ProgramClassAs400ProgramMethodMain
-TocOrder: 0
-
 ---
 
 The default constructor creates an instance of the **As400Program** object. 

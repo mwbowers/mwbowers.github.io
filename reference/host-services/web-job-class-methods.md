@@ -1,13 +1,6 @@
 ---
 title: WebJob Class Methods
 
-Id: amfWebJobClassMethods
-TocParent: amfWebJobClass
-TocOrder: 20
-
-keywords: WebJob class, methods
-keywords: methods [ASNA.Monarch], WebJob class
-
 ---
 
 <!--mine -->

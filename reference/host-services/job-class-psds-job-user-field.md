@@ -1,18 +1,6 @@
 ---
 title: Job.PsdsJobUser Field
 
-Id: amfJobClassPsdsJobUserField
-TocParent: amfJobFields
-TocOrder: 70
-
-keywords: PsdsJobUser field
-keywords: Job.PsdsJobUser field
-keywords: jobs, user
-keywords: PSDS, user name
-keywords: program status data structures, user name
-keywords: data structures, program status user name
-keywords: how to, determine user name
-
 ---
 
 The 10-character user name field in the program status data structure.

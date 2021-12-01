@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes Members
 
-Id: dcsDatabaseAttributesMembers
-TocParent: dcsDatabaseAttributeClass
-TocOrder: 0
-
-keywords: DatabaseAttributes class, all members
-keywords: members [DCS 16.0 DatabaseAttributes class
-
 ---
 
 [DatabaseAttributes Overview](dcsDatabaseAttributesClass.html) 

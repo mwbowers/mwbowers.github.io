@@ -1,17 +1,6 @@
 ---
 title: Program.StartupMoment Field
 
-Id: amfProgramClassStartupMomentField
-TocParent: amfProgramClassFields
-TocOrder: 40
-
-keywords: StartupMoment property
-keywords: Program.StartupMoment field
-keywords: startup time
-keywords: programs, startup time
-keywords: program controls, startup
-keywords: how to, determine program startup time
-
 ---
 
 Read-only field containing the System.DateTime of when the Program was started.

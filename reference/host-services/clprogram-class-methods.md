@@ -1,13 +1,6 @@
 ---
 title: CLProgram Class Methods
 
-Id: amfCLProgramClassMethods
-TocParent: amfCLProgramClass
-TocOrder: 20
-
-keywords: CLProgram class, methods
-keywords: methods [ASNA.Monarch], CLProgram class
-
 ---
 
 This document lists the methods for the class.

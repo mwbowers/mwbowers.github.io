@@ -1,18 +1,6 @@
 ---
 title: WebDevice.SignalDataReadyForProgram Method
 
-Id: amfWebDeviceClassSignalDataReadyForProgramMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 120
-
-keywords: SignalDataReadyForProgram method
-keywords: WebDevice.SignalDataReadyForProgram method
-keywords: run state
-keywords: ready state
-keywords: web device, ready for data from program event
-keywords: display files, signal the webdevice thread ready for data from program event
-keywords: how to, signals the webdevice thread ready for data from program event
-
 ---
 
 Signals the **WebDevice** object thread that the device is ready for data from a program event.

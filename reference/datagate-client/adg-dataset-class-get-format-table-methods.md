@@ -1,20 +1,6 @@
 ---
 title: AdgDataSet.GetFormatTable Methods
 
-Id: dcsAdgDataSetClassGetFormatTableMethods
-TocParent: dcsAdgDataSetMethods
-TocOrder: 5
-
-keywords: GetFormatTable methods
-keywords: AdgDataSet.GetFormatTable methods
-
-keywords: DataTable objects, return by file format index
-keywords: file formats, return DataTable objects by index
-keywords: how to, return DataTable objects by file format index
-keywords: DataTable objects, return by file format name
-keywords: file formats, return DataTable objects by name
-keywords: how to, return DataTable objects by file format name
-
 ---
 
 Returns the **DataTable** object for a particular file format specified by index or name.

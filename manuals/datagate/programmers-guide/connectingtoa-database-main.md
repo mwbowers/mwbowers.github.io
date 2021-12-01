@@ -1,12 +1,6 @@
 ---
 title: Connecting To/From a Database
 
-Id: dcsConnectingtoaDatabaseMain
-TocParent: dcsProgrammersGuideMain
-TocOrder: 1
-
-keywords: databases, connecting to
-
 ---
 
 Database access with DCS follows the traditional client/server pattern: 

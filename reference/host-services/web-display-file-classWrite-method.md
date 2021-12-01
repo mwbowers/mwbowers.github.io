@@ -1,20 +1,6 @@
 ---
 title: WebDisplayFile.Write Method
 
-Id: amfWebDisplayFileClassWriteMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 150
-
-keywords: writing files
-keywords: how to, write to display files
-keywords: how to, write to printer files
-keywords: how to, write to database files
-keywords: display files, writing to
-keywords: printer files, writing to
-keywords: database files, writing to
-keywords: Write method
-keywords: WebDisplayFile.Write method
-
 ---
 
 Writes a record to a Monarch workstation file, database file, or printer file.

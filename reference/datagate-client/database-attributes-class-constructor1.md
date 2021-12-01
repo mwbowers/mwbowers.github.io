@@ -1,10 +1,6 @@
 ---
 title: DatabaseAttributes.DatabaseAttributes()
 
-Id: dcsDatabaseAttributesClassConstructor1
-TocParent: dcsDatabaseAttributesConstructors
-TocOrder: 0
-
 ---
 
 Constructs an instance of a [DatabaseAttributes](dcsDatabaseAttributesClass.html) object with default values.

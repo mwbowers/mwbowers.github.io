@@ -1,25 +1,6 @@
 ---
 title: DateTimeFormat Enumeration
 
-Id: dcsDateTimeFormatEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 8
-
-keywords: enumerations [DCS 16.0 DateTimeFormat
-keywords: DateTimeFormat enumeration
-keywords: fields, date/time format constants
-keywords: date/time format of field constants
-keywords: how to, determine date/time format of field constants
-keywords: DMY enumeration member
-keywords: EUR enumeration member
-keywords: HMS enumeration member
-keywords: ISO enumeration member
-keywords: JIS enumeration member
-keywords: JUL enumeration member
-keywords: MDY enumeration member
-keywords: USA enumeration member
-keywords: YMD enumeration member
-
 ---
 
 The <span> **DateTimeFormat** </span> enumerated constant defines values on the type of date and time being accessed. 

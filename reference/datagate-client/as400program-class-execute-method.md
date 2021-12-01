@@ -2,15 +2,6 @@
 title: As400Program.Execute Method
 
 TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 3
-
-keywords: Execute method
-keywords: As400Program.Execute method
-keywords: iSeries computers, execute programs
-keywords: IBM i programs, execute
-keywords: how to, execute IBM i programs
-keywords: execute programs, IBM i
-keywords: database servers, execute IBM i programs
 
 ---
 

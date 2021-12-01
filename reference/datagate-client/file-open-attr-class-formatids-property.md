@@ -1,20 +1,6 @@
 ---
 title: FileOpenAttr.FormatIDs Property
 
-Id: dcsFileOpenAttrClassFormatIDsProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 2
-
-keywords: FormatIDs property
-keywords: FileOpenAttr.FormatIDs property
-keywords: database files, level check record formats
-keywords: files, level check record formats
-keywords: record formats, level checking engaged
-keywords: record formats, format verification engaged
-keywords: how to, level check record formats
-keywords: format identifiers, for level checking
-keywords: level checking format identifiers
-
 ---
 
 The set of binary format identifiers associated with the set of formats available from the [AdgDataSet.FormatIDs](adg-dataset-class-formatids-property.html) property.

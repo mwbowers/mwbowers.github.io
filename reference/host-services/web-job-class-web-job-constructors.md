@@ -1,17 +1,6 @@
 ---
 title: WebJob Constructor()
 
-Id: amfWebJobClassWebJobConstructors
-TocParent: amfWebJobClass
-TocOrder: 10
-
-keywords: WebJob.WebJob constructors
-keywords: WebJob class, constructors
-keywords: constructors [ASNA.Monarch], WebJob class
-keywords: how to, construct new web job
-keywords: web job
-keywords: new web job
-
 ---
 
 Constructs a new instance of a **WebJob** object.

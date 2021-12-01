@@ -1,19 +1,6 @@
 ---
 title: SourceProfile.Server Property
 
-Id: dcsSourceProfileClassServerProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 9
-
-keywords: Server property
-keywords: SourceProfile.Server property
-keywords: database servers, DNS host machine name set/return
-keywords: database servers, TCP/IP address set/return
-keywords: DNS host machine name for database server
-keywords: how to, establish DNS host machine name for database server
-keywords: TCP/IP address of a database server
-keywords: how to, establish TCP/IP address of a database server
-
 ---
 
 The database server host machine name or address.

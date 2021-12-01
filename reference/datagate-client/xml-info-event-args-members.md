@@ -1,13 +1,6 @@
 ---
 title: XmlInfoEventArgs Members
 
-Id: dcsXmlInfoEventArgsMembers
-TocParent: dcsXmlInfoEventArgsClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 XmlInfoEventArgs class
-keywords: XmlInfoEventArgs class, all members
-
 ---
 
 [XmlInfoEventArgs Overview](xml-info-event-args-class.html) 

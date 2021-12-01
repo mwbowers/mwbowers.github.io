@@ -1,17 +1,6 @@
 ---
 title: WebDevice.SetRecordIndex Method
 
-Id: amfWebDeviceClassSetRecordIndexMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 90
-
-keywords: SetRecordIndex method
-keywords: WebDevice.SetRecordIndex method
-keywords: device control, setting Record index
-keywords: display files, setting Record index
-keywords: Record index, setting
-keywords: how to, set Record index
-
 ---
 
 Sets the index for the format name specified.

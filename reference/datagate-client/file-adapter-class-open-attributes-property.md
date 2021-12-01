@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.OpenAttributes Property
 
-Id: dcsFileAdapterClassOpenAttributesProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 9
-
-keywords: FileAdapter.OpenAttributes property
-keywords: OpenAttributes property
-keywords: database files, properties when opening a file
-keywords: files, properties when opening a file
-keywords: file properties when opening
-keywords: how to, set file properties when opening a file
-keywords: how to, return file properties when opening a file
-
 ---
 
 <span>Contains a set of file properties which influence the way a file is opened. </span> 

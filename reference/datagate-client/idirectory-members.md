@@ -1,13 +1,6 @@
 ---
 title: IDirectory Members
 
-Id: dcsIDirectoryMembers
-TocParent: dcsIDirectoryClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 IDirectory class
-keywords: IDirectory class, all members
-
 ---
 
 [IDirectory Overview](idirectory-class.html) 

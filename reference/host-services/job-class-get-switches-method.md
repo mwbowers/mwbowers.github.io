@@ -1,17 +1,6 @@
 ---
 title: Job.GetSwitches Method
 
-Id: amfJobClassGetSwitchesMethod
-TocParent: amfJobMethods
-TocOrder: 130
-
-keywords: GetSwitches method
-keywords: Job.GetSwitches method
-keywords: jobs, attribute switches
-keywords: job attribute switches
-keywords: sws, job attribute switches
-keywords: how to, determine job attribute switch settings
-
 ---
 
 Returns a string of 8 characters with values '0' and '1', each character represents one of the job attribute switches.

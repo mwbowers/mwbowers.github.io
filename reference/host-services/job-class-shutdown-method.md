@@ -1,18 +1,6 @@
 ---
 title: Job.ShutDown Method
 
-Id: amfJobClassShutDownMethod
-TocParent: amfJobMethods
-TocOrder: 170
-
-keywords: ShutDown method
-keywords: Job.ShutDown method
-keywords: jobs, abnormal termination
-keywords: jobs, shutting down
-keywords: how to, shut down job
-keywords: how to, adnormally terminate job
-keywords: shut down jobs
-
 ---
 
 This method terminates the Job program when an abnormal condition occurs.

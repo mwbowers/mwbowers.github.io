@@ -1,13 +1,6 @@
 ---
 title: DatabaseName.ToSourceProfile Methods
 
-Id: dcsDatabaseNameClassToSourceProfileMethods
-TocParent: dcsDatabaseNameMethods
-TocOrder: 6
-
-keywords: DatabaseName.ToSourceProfile Methods
-keywords: ToSourceProfile Methods
-
 ---
 
 Converts the named database into a SourceProfile object.

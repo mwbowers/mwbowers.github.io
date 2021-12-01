@@ -1,10 +1,6 @@
 ---
 title: CLProgram.AddLiblEntry(String)
 
-Id: amfCLProgramClassAddLiblEntryMethod1
-TocParent: amfCLProgramClassAddLiblEntryMethods
-TocOrder: 10
-
 ---
 
 This method adds a library name to the user portion of the library list.

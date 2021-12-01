@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.SetActive Method
 
-Id: amfWebDisplayFileClassSetActiveMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 120
-
-keywords: SetActive method
-keywords: WebDisplayFile.SetActive method
-keywords: display files, setting current active format
-keywords: current format of display file
-keywords: active format of display file
-keywords: how to, set current active format of display file
-
 ---
 
 Sets the active format to the format name specified.

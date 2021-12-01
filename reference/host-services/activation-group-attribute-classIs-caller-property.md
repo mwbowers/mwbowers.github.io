@@ -1,15 +1,6 @@
 ---
 title: ActivationGroupAttribute.IsCaller Property
 
-Id: amfActivationGroupAttributeClassIsCallerProperty
-TocParent: amfActivationGroupAttributeClassProperties
-TocOrder: 20
-
-keywords: IsCaller property
-keywords: ActivationGroupAttribute.IsCaller property
-keywords: activation group, _Star_caller
-keywords: activation group attributes, _Star_caller
-
 ---
 
 Gets a boolean value indicating whether the program will be allocated in the same activation group as the program calling this program. The default is **False** .

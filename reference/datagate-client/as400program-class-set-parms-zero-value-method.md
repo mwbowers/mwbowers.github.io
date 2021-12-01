@@ -1,17 +1,6 @@
 ---
 title: As400Program.SetParmsZeroValue Method
 
-Id: dcsAs400ProgramClassSetParmsZeroValueMethod
-TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 7
-
-keywords: SetParmsZeroValue method
-keywords: As400Program.SetParmsZeroValue method
-keywords: parameter lists, set program parameter list to zeroes
-keywords: program parameters, set parameter list to zeroes
-keywords: parameters, set program parameter list to zeroes
-keywords: how to, set program parameter list to zeroes
-
 ---
 
 Sets all parameters in the parameter list to default 'zero' values.

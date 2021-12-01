@@ -1,17 +1,6 @@
 ---
 title: CLProgram.RTVJOBA_NBR Method
 
-Id: amfCLProgramClassRTVJOBA_NBRMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 210
-
-keywords: RTVJOBA_NBR method
-keywords: CLProgram.RTVJOBA_NBR method
-keywords: job number
-keywords: job attributes, job number
-keywords: CLProgram, get job number from job attributes
-keywords: how to, get job number from CLProgram job attributes
-
 ---
 
 Reference to the job number from the job attributes for the job in which this CLProgram is used.

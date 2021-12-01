@@ -1,17 +1,6 @@
 ---
 title: AdgDataSet.FormatIDs Property
 
-Id: dcsAdgDataSetClassFormatIDsProperty
-TocParent: dcsAdgDataSetProperties
-TocOrder: 3
-
-keywords: AdgDataSet.FormatIDs property
-keywords: FormatIDs property
-keywords: record formats, binary identifiers associated with an AdgDataSet
-keywords: binary format identifiers associated with an AdgDataSet
-keywords: how to, determine format identifiers for record formats in an AdgDataSet
-keywords: format identifiers, for record formats in an AdgDataSet
-
 ---
 
 The set of binary format identifiers associated with the set of formats contained by **AdgDataSet** .

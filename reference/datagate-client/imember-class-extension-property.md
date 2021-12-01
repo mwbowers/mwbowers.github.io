@@ -1,16 +1,6 @@
 ---
 title: IMember.Extension Property
 
-Id: dcsIMemberClassExtensionProperty
-TocParent: dcsIMemberProperties
-TocOrder: 2
-
-keywords: Extension property
-keywords: IMember.Extension property
-keywords: data types, identify type contained in database source file members
-keywords: database file members, source data type set or returned
-keywords: how to, set/return source data type for database file member
-
 ---
 
 A string typically identifying the type of data contained in database source file members.

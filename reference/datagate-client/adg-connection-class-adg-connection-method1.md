@@ -1,10 +1,6 @@
 ---
 title: AdgConnection(SourceProfile)
 
-Id: dcsAdgConnectionClassAdgConnectionMethod1
-TocParent: dcsAdgConnectionConstructorsMain
-TocOrder: 0
-
 ---
 
 Constructs an [AdgConnection](adg-connection-class.html) instance from the initial values of the [ SourceProfile](adg-connection-class-source-profile-property.html) containing the properties of the database connection.

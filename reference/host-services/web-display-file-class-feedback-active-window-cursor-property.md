@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.FeedBackActiveWindowCursor Property
 
-Id: amfWebDisplayFileClassFeedBackActiveWindowCursorProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 40
-
-keywords: FeedBackActiveWindowCursor property
-keywords: WebDisplayFile.FeedBackActiveWindowCursor property
-keywords: active window cursor location, to provide feedback for field in display file
-keywords: feedback,  cursor location in active window
-keywords: cursor location feedback for field in display file
-keywords: active window cursor provide feedback for field in display file
-
 ---
 
 When a Window (popup) is active, this property reports the Cursor location within active window corresponding to the last non-subfile input operation (returning data to the program). It is a single two-byte value, where the MSB (most significant byte) contains the legacy row and the LSB (least significant byte) contains the legacy column. The location in this property represents the relative location with respect to the Active Window.

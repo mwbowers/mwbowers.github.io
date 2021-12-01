@@ -1,19 +1,6 @@
 ---
 title: FileAdapter.ChangeCurrent Method
 
-Id: dcsFileAdapterClassChangeCurrentMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 1
-
-keywords: records, update current
-keywords: update, current record
-keywords: update current record
-keywords: how to, update current record
-keywords: database files, update current record
-keywords: files, update current record
-keywords: ChangeCurrent method
-keywords: FileAdapter.ChangeCurrent method
-
 ---
 
 Updates the current database file record with the contents of the specified [ AdgDataSet.ActiveRow ](adg-dataset-class-active-row-property.html)property.

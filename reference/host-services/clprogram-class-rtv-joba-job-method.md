@@ -1,17 +1,6 @@
 ---
 title: CLProgram.RTVJOBA_JOB Method
 
-Id: amfCLProgramClassRTVJOBA_JOBMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 200
-
-keywords: RTVJOBA_JOB method
-keywords: CLProgram.RTVJOBA_JOB method
-keywords: job name
-keywords: job attributes, job name
-keywords: CLProgram, get job name from job attributes
-keywords: how to, get job name from CLProgram job attributes
-
 ---
 
 Reference to the job name from the job attributes for the job in which this CLProgram is used.

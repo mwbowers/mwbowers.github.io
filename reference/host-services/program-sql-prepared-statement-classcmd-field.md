@@ -1,18 +1,6 @@
 ---
 title: Program.SqlPreparedStatement.cmd Field
 
-Id: amfProgramSqlPreparedStatementClasscmdField
-TocParent: amfProgramSqlPreparedStatementClassFields
-TocOrder: 10
-
-keywords: cmd field
-keywords: SqlPreparedStatement.cmd field
-keywords: Program.SqlPreparedStatement.cmd field
-keywords: SQL prepared statement, command
-keywords: SQL, prepared statement, command
-keywords: cmd
-keywords: how to, determine SQL command for prepared statement
-
 ---
 
 **System.Data.IDbCommand** object representing an SQL statement that is executed against the data source.

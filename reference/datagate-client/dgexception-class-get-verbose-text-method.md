@@ -1,15 +1,6 @@
 ---
 title: dgException.GetVerboseText Method
 
-Id: dcsdgExceptionClassGetVerboseTextMethod
-TocParent: dcsdgExceptionClassMethodsMain
-TocOrder: 0
-
-keywords: GetVerboseText method
-keywords: dgException.GetVerboseText method
-keywords: dgException, return a multi-line description of
-keywords: how to, return a multi-line description of dgException
-
 ---
 
 Returns a multi-line description of the <span>dgException</span>.

@@ -1,17 +1,6 @@
 ---
 title: WebDevice Constructor (WebJob)
 
-Id: amfWebDeviceClassWebDeviceConstructors
-TocParent: amfWebDeviceClass
-TocOrder: 10
-
-keywords: WebDevice.WebDevice constructors
-keywords: WebDevice class, constructors
-keywords: constructors [ASNA.Monarch], WebDevice class
-keywords: how to, construct new web device
-keywords: web device
-keywords: new web device
-
 ---
 
 Constructs a new instance of a **WebDevice** object for a [WebJob](web-job-class.html).

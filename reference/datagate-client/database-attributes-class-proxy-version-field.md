@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.ProxyVersion Field
 
-Id: dcsDatabaseAttributesClassProxyVersionField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 6
-
-keywords: ProxyVersion field
-keywords: DatabaseAttributes.ProxyVersion field
-
 ---
 
 The version number of the server that services the requests of its clients by forwarding requests to other servers.

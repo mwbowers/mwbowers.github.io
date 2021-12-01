@@ -1,17 +1,6 @@
 ---
 title: IAdgTransaction.Commit Methods
 
-Id: dcsIAdgTransactionClassCommitMethods
-TocParent: dcsIAdgTransactionMethods
-TocOrder: 0
-
-keywords: Commit methods
-keywords: IAdgTransaction.Commit methods
-keywords: database transactions, accept database changes within current context
-keywords: manual transactions, accept database changes within current context
-keywords: automatic transactions, accept database changes within current context and begin new
-keywords: how to, accept database changes within current transaction context
-
 ---
 
 Accept changes to the database that have been performed within the current transaction context.

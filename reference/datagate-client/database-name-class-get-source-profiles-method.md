@@ -1,13 +1,6 @@
 ---
 title: DatabaseName.GetSourceProfiles Method
 
-Id: dcsDatabaseNameClassGetSourceProfilesMethod
-TocParent: dcsDatabaseNameMethods
-TocOrder: 3
-
-keywords: GetSourceProfiles method
-keywords: DatabaseName.GetSourceProfiles method
-
 ---
 
 Returns an array of [SourceProfile](source-profile-class.html) objects currently registered for the database.

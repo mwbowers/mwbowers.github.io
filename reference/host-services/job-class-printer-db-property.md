@@ -1,17 +1,6 @@
 ---
 title: Job.PrinterDB Property
 
-Id: amfJobClassPrinterDBProperty
-TocParent: amfJobProperties
-TocOrder: 50
-
-keywords: PrinterDB property
-keywords: Job.PrinterDB property
-keywords: how to, get printer database connection for job
-keywords: jobs, getting printer database connection
-keywords: printers, assigning database connection for job
-keywords: printer files, assigning database connection for job
-
 ---
 
 Gets the ASNA.VisualRPG.Runtime.Database connection object for the printer corresponding to this Job.

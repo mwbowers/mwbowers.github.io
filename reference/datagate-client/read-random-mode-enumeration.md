@@ -1,17 +1,6 @@
 ---
 title: ReadRandomMode Enumeration
 
-Id: dcsReadRandomModeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 26
-
-keywords: read random mode
-keywords: Equal enumeration member
-keywords: Greater enumeration member
-keywords: GTEQ enumeration member
-keywords: ReadRandomMode enumeration
-keywords: enumerations [DCS 16.0 ReadRandomMode
-
 ---
 
 Defines modes of operation for the [ FileAdapter.ReadRandomKey](file-adapter-class-read-random-key-method.html) and [ FileAdapter.ReadRandomRRN](file-adapter-class-read-random-rrn-method.html) methods.

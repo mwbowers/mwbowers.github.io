@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.Add Method
 
-Id: amfLocalDataCollectionClassAddMethod
-TocParent: amfLocalDataCollectionMethods
-TocOrder: 10
-
-keywords: Add method
-keywords: LocalDataCollection.Add method
-keywords: how to, add element to local data collection
-keywords: ldc, adding element
-keywords: LDC, adding element
-keywords: local data collection, adding element
-
 ---
 
 Adds an element to the collection with the provided name and value.

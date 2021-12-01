@@ -1,18 +1,6 @@
 ---
 title: MessageFormatter.IsPhysicalMsgFilePath Method
 
-Id: amfMessageFormatterClassIsPhysicalMsgFilePathMethod
-TocParent: amfMessageFormatterMethods
-TocOrder: 50
-
-keywords: IsPhysicalMsgFilePath method
-keywords: MessageFormatter.IsPhysicalMsgFilePath method
-keywords: message files, physical message file path
-keywords: how to, get physical message file path
-keywords: how to, get database name of physical message file path
-keywords: how to, get library of physical message file path
-keywords: how to, get file name of physical message file path
-
 ---
 
 Returns a formatted message.

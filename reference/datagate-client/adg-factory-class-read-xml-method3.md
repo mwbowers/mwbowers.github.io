@@ -1,15 +1,6 @@
 ---
 title: ReadXml(AdgConnection, string, AdgObjectTypes, string, System.Xml.XmlReader, XmlOptions)
 
-Id: dcsAdgFactoryClassReadXmlMethod3
-TocParent: dcsAdgFactoryClassReadXmlMethods
-TocOrder: 2
-
-keywords: AdgObjectTypes enumeration, used by
-keywords: XmlOptions enumeration, used by
-keywords: enumerations [DCS for VS 2005], AdgObjectTypes, used by
-keywords: enumerations [DCS for VS 2005], XmlOptions, used by
-
 ---
 
 This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class.html) (representing a file, library, or member) from an XML document stream. Optionally, **ReadXml** creates a new database object or a hierarchy of database objects.

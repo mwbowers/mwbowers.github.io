@@ -1,13 +1,6 @@
 ---
 title: MessageQueue Class Methods
 
-Id: amfMessageQueueClassMethods
-TocParent: amfMessageQueueClass
-TocOrder: 20
-
-keywords: MessageQueue class, methods
-keywords: methods [ASNA.Monarch], MessageQueue class
-
 ---
 
 [MessageQueue Class Overview](message-queue-class.html) 

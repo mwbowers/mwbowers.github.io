@@ -1,13 +1,6 @@
 ---
 title: AdgConnection.BeginAutoTransaction(TransactionLevel, String)
 
-Id: dcsAdgConnectionClassBeginAutoTransactionMethod1
-TocParent: dcsAdgConnectionClassBeginAutoTransactionMethodMain
-TocOrder: 1
-
-keywords: enumerations [DCS 16.0 TransactionLevel, used by
-keywords: TransactionLevel enumeration, used by
-
 ---
 
 Begins an automatic database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) object with the options and lock levels specified.

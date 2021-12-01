@@ -1,17 +1,6 @@
 ---
 title: Job.ADO_Connection Property
 
-Id: amfJobClassADO_ConnectionProperty
-TocParent: amfJobProperties
-TocOrder: 10
-
-keywords: ADO_Connection property
-keywords: Job.ADO_Connection property
-keywords: how to, get ADO database connection
-keywords: jobs, ADO database connection
-keywords: SQL, getting database connection
-keywords: database connection, getting for SQL
-
 ---
 
 Gets the [ASNA.Monarch](http://msdn2.microsoft.com/en-us/library/system.data.common.dbconnection.aspx"> System.Data.Common.DbConnection</a> object representing an ADO connection to a database.

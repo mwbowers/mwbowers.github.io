@@ -1,19 +1,6 @@
 ---
 title: FieldType.NewDBCS Method
 
-Id: dcsFieldTypeClassNewDBCSMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 3
-
-keywords: double byte fields
-keywords: NewDBCS method
-keywords: FieldType.NewDBCS method
-keywords: fields, double byte
-keywords: double byte field defined
-keywords: how to, define double byte field type
-keywords: enumerations [DCS 16.0 DbcsFormat, used by
-keywords: DbcsFormat enumeration, used by
-
 ---
 
 Creates a new fixed-width double-byte character [FieldType](field-type-class.html).

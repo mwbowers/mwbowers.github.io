@@ -1,17 +1,6 @@
 ---
 title: Job.getADO_Connection Method
 
-Id: amfJobClassgetADO_ConnectionMethod
-TocParent: amfJobMethods
-TocOrder: 60
-
-keywords: getADO_Connection method
-keywords: Job.getADO_Connection method
-keywords: how to, assign ADO database connection for job
-keywords: jobs, assigning ADO database connection
-keywords: SQL, assigning database connection
-keywords: database connection, assigning for job
-
 ---
 
 The **getADO_Connection** method returns a new instance of a [ASNA.Monarch](http://msdn2.microsoft.com/en-us/library/system.data.common.dbconnection.aspx"> System.Data.Common.DbConnection</a> object representing an ADO connection to a database.

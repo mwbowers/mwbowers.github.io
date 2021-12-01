@@ -1,19 +1,6 @@
 ---
 title: FileAdapter.ResetFormat Method
 
-Id: dcsFileAdapterClassResetFormatMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 23
-
-keywords: ResetFormat method
-keywords: FileAdapter.ResetFormat method
-
-keywords: records, reset format restrictions
-keywords: formats, reset record restrictions
-keywords: how to, reset record format restrictions
-keywords: multiformat files, reset record format restrictions
-keywords: reset record format restrictions on multiformat files
-
 ---
 
 For multi-format file access, reset the file to access a record of any format in subsequent operations (see [SetFormat](file-adapter-class-set-format-method.html)).

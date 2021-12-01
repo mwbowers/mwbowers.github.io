@@ -1,17 +1,6 @@
 ---
 title: CLProgram.Percent_Switch Method
 
-Id: amfCLProgramClassPercent_SwitchMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 160
-
-keywords: Percent_Switch method
-keywords: CLProgram.Percent_Switch method
-keywords: sws
-keywords: sws, checking settings
-keywords: job switches, checking settings
-keywords: how to, determine job switch settings
-
 ---
 
 This method compares a bit-mask against the current job switch ( *sws* ) settings and returns a value of '1' if the comparison is equal, otherwise, '0'.

@@ -1,24 +1,6 @@
 ---
 title: IAdgObject.ReadBases Method
 
-Id: dcsIAdgObjectClassReadBasesMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 5
-
-keywords: ReadBases method
-keywords: IAdgObject.ReadBases method
-keywords: database objects, XML documents, set base objects path name
-keywords: database objects, XML documents, set base objects description
-keywords: base objects description from XML document
-keywords: base objects path name from XML document
-keywords: how to, set base objects description from XML document
-keywords: how to, set base objects path names from XML document
-keywords: XML [DCS 16.0 documents, set base objects path names from
-keywords: XML [DCS 16.0 documents, set base objects description from
-keywords: XML [DCS 16.0 database objects, set base objects path names
-keywords: XML [DCS 16.0 database objects, set base objects description
-keywords: XML [DCS 16.0 set base objects description from XML document
-
 ---
 
 **ReadBases** sets base object information for the **IAdgObject** by reading an XML document fragment.

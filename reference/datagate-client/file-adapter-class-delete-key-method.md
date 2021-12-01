@@ -1,19 +1,6 @@
 ---
 title: FileAdapter.DeleteKey Method
 
-Id: dcsFileAdapterClassDeleteKeyMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 6
-
-keywords: database files, delete record by key
-keywords: files, delete record by key
-keywords: record keys, delete records by
-keywords: records, delete by key
-keywords: delete records in a file by key
-keywords: how to, delete record by key
-keywords: DeleteKey method
-keywords: FileAdapter.DeleteKey method
-
 ---
 
 Deletes a database file record containing the specified key, if any.

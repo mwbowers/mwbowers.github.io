@@ -1,22 +1,6 @@
 ---
 title: FileOpenAttr.FileLocks Property
 
-Id: dcsFileOpenAttrClassFileLocksProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 1
-
-keywords: record locking mode
-keywords: database files, record locking mode
-keywords: files, record locking mode
-keywords: manual record locking mode
-keywords: automatic record locking mode
-keywords: how to, set manual record locking mode
-keywords: how to, set automatic record locking mode
-keywords: FileLocks property
-keywords: FileOpenAttr.FileLocks property
-keywords: enumerations [DCS 16.0 FileLocks, used by
-keywords: FileLocks enumeration, used by
-
 ---
 
 Specify record locking mechanisms in opened files. 

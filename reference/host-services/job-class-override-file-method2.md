@@ -1,16 +1,6 @@
 ---
 title: Job.OverrideFile Method(string,OverrideOptions,object,OverrideScope)
 
-Id: amfJobClassOverrideFileMethod2
-TocParent: amfJobClassOverrideFileMethods
-TocOrder: 20
-
-keywords: FileOverrideOptionMismatch
-keywords: enumerations [ASNA.Monarch], OverrideOptions, used by
-keywords: OverrideOptions enumeration, used by
-keywords: enumerations [ASNA.Monarch], OverrideScope, used by
-keywords: OverrideScope enumeration, used by
-
 ---
 
 This method provides Job file override options within Monarch for the specified level of scope.

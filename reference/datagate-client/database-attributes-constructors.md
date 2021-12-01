@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes Constructors
 
-Id: dcsDatabaseAttributesConstructors
-TocParent: dcsDatabaseAttributeClass
-TocOrder: 1
-
-keywords: DatabaseAttributes class, constructors
-keywords: constructors [DCS 16.0 DatabaseAttributes class
-
 ---
 
 [DatabaseAttributes Overview](dcsDatabaseAttributesClass.html) 

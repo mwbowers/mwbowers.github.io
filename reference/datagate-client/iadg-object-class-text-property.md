@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.Text Property
 
-Id: dcsIAdgObjectClassTextProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 17
-
-keywords: Text property
-keywords: IAdgObject.Text property
-keywords: text description/comments of database objects
-keywords: database objects, set text description/comments of
-keywords: database objects, return text description/comments of
-keywords: how to, set text description/comments of database objects
-
 ---
 
 **Text** is the textual description or comments associated with a database object.

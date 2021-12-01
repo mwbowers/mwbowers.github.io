@@ -1,15 +1,6 @@
 ---
 title: IAdgObject.ParentID Property
 
-Id: dcsIAdgObjectClassParentIDProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 12
-
-keywords: ParentID property
-keywords: IAdgObject.ParentID property
-keywords: parent identifiers, for database objects
-keywords: database objects, return parent identifier
-
 ---
 
 **ParentID** identifies a parent database object of the object represented by **IAdgObject** .

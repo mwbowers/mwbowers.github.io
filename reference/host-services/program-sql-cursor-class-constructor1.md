@@ -1,10 +1,6 @@
 ---
 title: Program.SqlCursor Constructor (Program.SqlPreparedStatement)
 
-Id: amfProgramSqlCursorClassConstructor1
-TocParent: amfProgramSqlCursorClassConstructors
-TocOrder: 10
-
 ---
 
 Constructs a new instance of a **SqlCursor** object for a prepared version of a SQL command.

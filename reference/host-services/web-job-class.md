@@ -1,14 +1,6 @@
 ---
 title: WebJob Class
 
-Id: amfWebJobClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 250
-
-keywords: WebJob class, about WebJob class
-keywords: WebJob class
-keywords: classes [ASNA.Monarch], WebJob class
-
 ---
 
 The **WebJob** class, which extends [ASNA.Monarch.Job](job-class.html), provides specialized support for interactive applications. This includes creating a new thread every time a Job is started and executing the startup program in it.

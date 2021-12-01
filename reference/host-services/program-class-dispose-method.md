@@ -1,19 +1,6 @@
 ---
 title: Program.Dispose Method
 
-Id: amfProgramClassDisposeMethod
-TocParent: amfProgramClassMethods
-TocOrder: 10
-
-keywords: Dispose method
-keywords: Program.Dispose method
-keywords: managed resources, releasing
-keywords: unmanaged resources, releasing
-keywords: program control, releasing resources
-keywords: how to, release program resources
-keywords: how to, release managed program resources
-keywords: how to, release unmanaged program resources
-
 ---
 
 Releases resources used by the **Program** object.

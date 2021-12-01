@@ -1,17 +1,6 @@
 ---
 title: IAdgTransaction.Connection Property
 
-Id: dcsIAdgTransactionClassConnectionProperty
-TocParent: dcsIAdgTransactionProperties
-TocOrder: 0
-
-keywords: Connection property
-keywords: IAdgTransaction.Connection property
-keywords: database transactions, connection context
-keywords: database connections, transaction context
-keywords: transaction context of database transaction
-keywords: transaction context, about database connection
-
 ---
 
 The connection to the database representing the transaction context.

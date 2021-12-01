@@ -1,10 +1,6 @@
 ---
 title: PrintDevAttr()
 
-Id: dcsPrintDevAttrClassPrintDevAttrConstructor
-TocParent: dcsPrintDevAttrClassPrintDevAttrConstructors
-TocOrder: 0
-
 ---
 
 <span> **PrintDevAttr** </span> initializes a new instance of the **PrintDevAttr** object.

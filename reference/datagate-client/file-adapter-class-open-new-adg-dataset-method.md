@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.OpenNewAdgDataSet Method
 
-Id: dcsFileAdapterClassOpenNewAdgDataSetMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 14
-
-keywords: FileAdapter.OpenNewAdgDataSet method
-keywords: OpenNewAdgDataSet method
-keywords: open a new file
-keywords: files, open new
-keywords: database files, open new
-keywords: how to, open new database files
-
 ---
 
 Opens a database file for access and returns a new [ AdgDataset](adg-dataset-class.html).

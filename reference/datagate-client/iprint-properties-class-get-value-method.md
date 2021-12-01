@@ -1,16 +1,6 @@
 ---
 title: IPrintProperties.GetValue Method
 
-Id: dcsIPrintPropertiesClassGetValueMethod
-TocParent: dcsIPrintPropertiesMethods
-TocOrder: 2
-
-keywords: GetValue method
-keywords: IPrintProperties.GetValue method
-keywords: print controls, format fields, property value returned
-keywords: print controls, run time properties accessed
-keywords: print files, accessing print control property values
-
 ---
 
 Access a print control property value.

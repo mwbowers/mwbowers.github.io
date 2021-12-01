@@ -1,20 +1,6 @@
 ---
 title: FileAdapter.ExactSeek Property
 
-Id: dcsFileAdapterClassExactSeekProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 3
-
-keywords: ExactSeek property
-keywords: FileAdapter.ExactSeek property
-keywords: how to, determine record seek status
-keywords: records, seek status
-keywords: database files, seek records status
-keywords: files, seek records status
-keywords: seek status
-keywords: status of record seek
-keywords: exact match status
-
 ---
 
 This property is **True** if the seek operation resulted in an exact match.

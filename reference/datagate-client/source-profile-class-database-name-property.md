@@ -1,19 +1,6 @@
 ---
 title: SourceProfile.DatabaseName Property
 
-Id: dcsSourceProfileClassDatabaseNameProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 0
-
-keywords: DatabaseName property
-keywords: SourceProfile.DatabaseName property
-keywords: database names, for set of connection parameters
-keywords: Windows registry, database name for connection retrieved
-keywords: registered database names, retrieved for connection
-keywords: database connections, registry names retrieved for connection
-keywords: connections, database name currently registered
-keywords: how to, retrieve database name of connection
-
 ---
 
 The database name (or identifier) of this set of connection parameters.

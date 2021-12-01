@@ -1,27 +1,6 @@
 ---
 title: FileAdapter.ReadRange Method
 
-Id: dcsFileAdapterClassReadRangeMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 18
-
-keywords: FileAdapter.ReadRange method
-keywords: ReadRange method
-keywords: enumerations [DCS 16.0 LockRequest, used by
-keywords: enumerations [DCS 16.0 RangeFirst, used by
-keywords: enumerations [DCS 16.0 RangeLast, used by
-keywords: enumerations [DCS 16.0 RangeMode, used by
-keywords: LockRequest enumeration, used by
-keywords: RangeFirst enumeration, used by
-keywords: RangeLast enumeration, used by
-keywords: RangeMode enumeration, used by
-keywords: database files, read records by range
-keywords: files, read records by range
-keywords: how to, read records by range
-keywords: read records by range
-keywords: records, read by range
-keywords: files, record locking override
-
 ---
 
 Read a database file record containing a key within a given range of values.

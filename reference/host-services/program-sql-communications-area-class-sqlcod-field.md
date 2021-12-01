@@ -1,23 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea.SQLCOD Field
 
-Id: amfProgramSQL_CommunicationsAreaClassSQLCODField
-TocParent: amfProgramSQL_CommunicationsAreaClassFields
-TocOrder: 20
-
-keywords: SQLCOD property
-keywords: SQL_CommunicationsArea.SQLCOD field
-keywords: Program.SQL_CommunicationsArea.SQLCOD field
-keywords: SQL, communications area status code
-keywords: SQL, status code
-keywords: SQLCOD
-keywords: how to, determine SQL exception status
-keywords: SQL, exception status
-keywords: SQL_Exception, status
-keywords: SQL, communications area, status
-keywords: SQL communications area, status
-keywords: SQLCA, exception status
-
 ---
 
 Read-only status code of the last SQL statement executed.

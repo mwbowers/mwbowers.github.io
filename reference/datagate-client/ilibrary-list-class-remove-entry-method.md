@@ -1,16 +1,6 @@
 ---
 title: ILibraryList.RemoveEntry Method
 
-Id: dcsILibraryListClassRemoveEntryMethod
-TocParent: dcsILibraryListMethods
-TocOrder: 3
-
-keywords: RemoveEntry method
-keywords: ILibraryList.RemoveEntry method
-keywords: library lists, remove entry from a database
-keywords: database library lists, remove entries
-keywords: how to, remove entries from database library list
-
 ---
 
 **RemoveEntry** removes a library list entry from a database in the library represented by [ILibraryList](ilibrary-list-class.html).

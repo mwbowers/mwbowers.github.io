@@ -1,17 +1,6 @@
 ---
 title: FileOpenAttr.OptimalBlockingFactor Field
 
-Id: dcsFileOpenAttrClassOptimalBlockingFactorField
-TocParent: dcsFileOpenAttrFields
-TocOrder: 1
-
-keywords: OptimalBlockingFactor field
-keywords: FileOpenAttr.OptimalBlockingFactor field
-keywords: network blocking factor, calculate
-keywords: how to, calculate network blocking factor
-keywords: database files, network blocking factor calculated
-keywords: files, network blocking factor calculated
-
 ---
 
 This constant, when assigned to the **BlockingFactor** property, requests that DataGate calculate the best-fit size of the network blocking record buffer.

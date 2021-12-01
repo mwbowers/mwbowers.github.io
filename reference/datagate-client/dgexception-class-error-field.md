@@ -1,17 +1,6 @@
 ---
 title: dgException.Error Field
 
-Id: dcsdgExceptionClassErrorField
-TocParent: dcsdgExceptionClassFieldsMain
-TocOrder: 0
-
-keywords: Error field
-keywords: dgException.Error field
-keywords: dgErrorNumber enumeration, used by
-keywords: enumerations [DCS 16.0 dgErrorNumber, used by
-keywords: dgException, error field
-keywords: how to, determine dgException error
-
 ---
 
 The condition identifier for this dgException.

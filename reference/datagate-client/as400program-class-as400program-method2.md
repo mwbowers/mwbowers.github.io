@@ -1,10 +1,6 @@
 ---
 title: As400Program(AdgConnection)
 
-Id: dcsAs400ProgramClassAs400ProgramMethod2
-TocParent: dcsAs400ProgramClassAs400ProgramMethodMain
-TocOrder: 1
-
 ---
 
 Construct an instance of the **As400Program** object and set the [ Connection](as400program-class-connection-property.html) property.

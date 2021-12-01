@@ -1,12 +1,6 @@
 ---
 title: !Pages
 
-Id: exclam-PagesMain
-TocParent: amfReferenceMain
-TocOrder: 10
-
-keywords: !Pages
-
 ---
 
 **!Pages** is a set of pages providing support to the web application execution cycle.

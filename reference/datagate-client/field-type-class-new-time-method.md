@@ -1,18 +1,6 @@
 ---
 title: FieldType.NewTime Method
 
-Id: dcsFieldTypeClassNewTimeMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 9
-
-keywords: NewTime method
-keywords: FieldType.NewTime method
-keywords: enumerations [DCS 16.0 DateTimeFormat, used by
-keywords: DateTimeFormat enumeration, used by
-keywords: fields, time
-keywords: time field defined
-keywords: how to, define time field
-
 ---
 
 Creates a new time [ FieldType](field-type-class.html).

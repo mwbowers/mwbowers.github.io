@@ -1,17 +1,6 @@
 ---
 title: AdgConnection.Open Method
 
-Id: dcsAdgConnectionClassOpenMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 9
-
-keywords: Open method
-keywords: AdgConnection.Open method
-
-keywords: open database connection
-keywords: database connections, open
-keywords: how to, open database connection
-
 ---
 
 Opens a database connection with the settings specified by the provider-specific [SourceProfile](source-profile-class.html) class. 

@@ -1,10 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Constructor (string)
 
-Id: amfProgramSQL_CommunicationsAreaClassConstructor1
-TocParent: amfProgramSQL_CommunicationsAreaClassConstructors
-TocOrder: 10
-
 ---
 
 Constructs a new instance of a **SQL_CommunicationsArea** object with command text.

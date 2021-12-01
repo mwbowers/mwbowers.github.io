@@ -1,21 +1,6 @@
 ---
 title: FileAdapter.ChangeRRN Method
 
-Id: dcsFileAdapterClassChangeRRNMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 2
-
-keywords: RRN, updating records by
-keywords: relative record numbers, update records by
-keywords: records, update by RRN
-keywords: update, record by RRN
-keywords: update record by RRN
-keywords: how to, update record by RRN
-keywords: database files, update record by RRN
-keywords: files, update record by RRN
-keywords: ChangeRRN method
-keywords: FileAdapter.ChangeRRN method
-
 ---
 
 Updates the database file record specified by relative record number with the contents of the specified [AdgDataSet.ActiveRow ](adg-dataset-class-active-row-property.html)property.

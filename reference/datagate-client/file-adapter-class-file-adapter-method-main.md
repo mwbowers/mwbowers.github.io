@@ -1,14 +1,6 @@
 ---
 title: FileAdapter Constructors
 
-Id: dcsFileAdapterClassFileAdapterMethodMain
-TocParent: dcsFileAdapterClass
-TocOrder: 1
-
-keywords: FileAdapter class, constructors
-keywords: constructors [DCS 16.0 FileAdapter class
-keywords: FileAdapter.FileAdapter constructors
-
 ---
 
 Constructs an instance of the **FileAdapter** object.

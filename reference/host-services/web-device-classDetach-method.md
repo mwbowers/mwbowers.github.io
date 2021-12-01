@@ -1,10 +1,6 @@
 ---
 title: WebDevice.Detach Method(string)
 
-Id: amfWebDeviceClassDetachMethod
-TocParent: amfWebDeviceClassDetachMethods
-TocOrder: 10
-
 ---
 
 Detaches a previously attached shared file from the <code> **WebDevice** </code>.

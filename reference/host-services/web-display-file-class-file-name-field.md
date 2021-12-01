@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.FileName Field
 
-Id: amfWebDisplayFileClassFileNameField
-TocParent: amfWebDisplayFileClassFields
-TocOrder: 20
-
-keywords: FileName field
-keywords: WebDisplayFile.FileName field
-keywords: display files, aspx file name
-keywords: aspx files, file name
-keywords: how to, determine aspx file name
-
 ---
 
 This readonly field contains the name of the '.aspx' file containing the web form.

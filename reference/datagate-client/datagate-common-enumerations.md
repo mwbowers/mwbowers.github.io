@@ -1,13 +1,6 @@
 ---
 title: ASNA.DataGate.Common Enumerations
 
-Id: dcsDataGateCommonEnumerations
-TocParent: dcsDataGateCommonNamespace
-TocOrder: 1
-
-keywords: ASNA.DataGate.Common namespace, enumerations
-keywords: enumerations [DCS 16.0 ASNA.DataGate.Common
-
 ---
 
 ## Enumerations

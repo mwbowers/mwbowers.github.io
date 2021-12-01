@@ -1,16 +1,6 @@
 ---
 title: Job.ExternalQueue Field
 
-Id: amfJobClassExternalQueueField
-TocParent: amfJobFields
-TocOrder: 10
-
-keywords: ExternalQueue field
-keywords: Job.ExternalQueue field
-keywords: message queues, job
-keywords: jobs, message queues
-keywords: job message queues
-
 ---
 
 A reference to an instance of an **ASNA.Monarch.MessageQueue** object for the external message job queue.

@@ -1,21 +1,6 @@
 ---
 title: InitMemberOptions Enumeration
 
-Id: dcsInitMemberOptionsEnumeration
-TocParent: dcsDataGateClientEnumerations
-TocOrder: 1
-
-keywords: enumerations [DCS 16.0 InitMemberOptions
-keywords: InitMemberOptions enumeration
-keywords: WithDefaults enumeration member
-keywords: WithDeleted enumeration member
-keywords: database file members, initialize record types
-keywords: database files, initialize records in database file member
-keywords: records, initialize database file member
-keywords: record types, initialize database file member
-keywords: how to, initialize records in database file member
-keywords: ASNA.DataGate.Client.InitMemberOptions
-
 ---
 
 <span> **InitMemberOptions** </span> contains the values used by [ IMember.Initialize](imember-class-initialize-method.html) to specify the type of records to initialize a database member with. 

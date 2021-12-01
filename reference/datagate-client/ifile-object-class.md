@@ -1,16 +1,6 @@
 ---
 title: IFileObject Interface
 
-Id: dcsIFileObjectClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 12
-
-keywords: classes [DCS 16.0 IFileObject class
-keywords: interfaces [DCS 16.0 IFileObject interface
-keywords: IFileObject class
-keywords: IFileObject class, about IFileObject class
-keywords: database files, about file objects
-
 ---
 
 <span> **IFileObject** </span> models an object management interface to the database file object. 

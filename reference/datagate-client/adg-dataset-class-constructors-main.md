@@ -1,15 +1,6 @@
 ---
 title: AdgDataSet Constructors
 
-Id: dcsAdgDataSetClassConstructorsMain
-TocParent: dcsAdgDataSetClass
-TocOrder: 1
-
-keywords: AdgDataSet class, constructors
-keywords: AdgDataSet.AdgDataSet constructors
-keywords: constructors [DCS 16.0 AdgDataSet class
-keywords: initialize, AdgDataSet class
-
 ---
 
 Initializes the **AdgDataSet** base class.<br />

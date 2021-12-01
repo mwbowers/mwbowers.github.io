@@ -1,16 +1,6 @@
 ---
 title: IAdgObject.Dependents Property
 
-Id: dcsIAdgObjectClassDependentsProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 7
-
-keywords: Dependents property
-keywords: IAdgObject.Dependents property
-keywords: dependent objects, return an array for a base object
-keywords: base objects, return dependent object(s) array
-keywords: how to, return dependent object(s) array for a base object
-
 ---
 
 **Dependents** is an array of [Dependent](dependent-class.html) objects denoting the set of objects that depend upon the database object represented by **IAdgObject** .

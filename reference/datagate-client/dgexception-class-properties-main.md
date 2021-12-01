@@ -1,13 +1,6 @@
 ---
 title: dgException Properties
 
-Id: dcsdgExceptionClassPropertiesMain
-TocParent: dcsdgExceptionClass
-TocOrder: 3
-
-keywords: properties [DCS 16.0 dgException class
-keywords: dgException class, properties
-
 ---
 
 [dgException Overview](dgexception-class.html) 

@@ -1,13 +1,6 @@
 ---
 title: DatabaseName Methods
 
-Id: dcsDatabaseNameMethods
-TocParent: dcsDatabaseNameClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 DatabaseName class
-keywords: DatabaseName class, methods
-
 ---
 
 ## Public Methods

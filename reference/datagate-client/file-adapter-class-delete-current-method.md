@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.DeleteCurrent Method
 
-Id: dcsFileAdapterClassDeleteCurrentMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 5
-
-keywords: DeleteCurrent method
-keywords: FileAdapter.DeleteCurrent method
-keywords: database files, delete current record in
-keywords: files, delete current record in
-keywords: records, delete current
-keywords: delete current records in a file
-keywords: how to, delete current record in a file
-
 ---
 
 Deletes the current record associated with an open file.

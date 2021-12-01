@@ -1,21 +1,6 @@
 ---
 title: IFileObject.WriteCreationAttributes Method
 
-Id: dcsIFileObjectClassWriteCreationAttributesMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 6
-
-keywords: WriteCreationAttributes method
-keywords: IFileObject.WriteCreationAttributes method
-keywords: XML [DCS 16.0 <fileCreateAttr>, create file's creation-time attributes
-keywords: XML [DCS 16.0 documents, create creation-time attributes
-keywords: XML [DCS 16.0 database files, create creation-time attributes
-keywords: <fileCreateAttr>, create database file creation-time attributes from XML document
-keywords: database files, <fileCreateAttr>, create XML content node
-keywords: creation-time attributes, create XML document content node
-keywords: database files, XML documents, create creation-time attributes
-keywords: how to, create XML creation-time attributes for database file
-
 ---
 
 **WriteCreationAttributes** dumps a database file's creation-time attributes to an XML content node.

@@ -1,18 +1,6 @@
 ---
 title: Job.PsdsJobNumber Field
 
-Id: amfJobClassPsdsJobNumberField
-TocParent: amfJobFields
-TocOrder: 60
-
-keywords: PsdsJobNumber field
-keywords: Job.PsdsJobNumber field
-keywords: jobs, number
-keywords: PSDS, job number
-keywords: program status data structures, job number
-keywords: data structures, program status job number
-keywords: how to, determine job number
-
 ---
 
 The 6-digits job number field in the program status data structure.

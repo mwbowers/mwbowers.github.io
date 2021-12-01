@@ -1,12 +1,6 @@
 ---
 title: Program.SendProgramMessage Method (string,string,string,string)
 
-Id: amfProgramClassSendProgramMessageMethod4
-TocParent: amfProgramClassSendProgramMessageMethods
-TocOrder: 40
-
-keywords: MessageQueueNotFoundException
-
 ---
 
 Appends an informational message to the specified program message queue.

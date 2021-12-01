@@ -1,15 +1,6 @@
 ---
 title: WebDevice Class
 
-Id: amfWebDeviceClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 230
-
-keywords: WebDevice class
-keywords: WebDevice class, about WebDevice class
-keywords: classes [ASNA.Monarch], WebDevice class
-keywords: device control
-
 ---
 
 The **WebDevice** class is responsible for coordinating the job's thread with the one assigned by ASP.NET to produce the response to the browser's request by providing for device control for web display files.

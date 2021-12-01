@@ -1,21 +1,6 @@
 ---
 title: PrintDevAttr.Duplex Property
 
-Id: dcsPrintDevAttrClassDuplexProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 4
-
-keywords: Duplex property
-keywords: PrintDevAttr.Duplex property
-keywords: printing, duplex, about this property
-keywords: printer device parameters, duplex
-keywords: printers, device parameters, duplex
-keywords: how to, print duplex
-keywords: how to, print double-sided
-keywords: double-sided printing
-keywords: duplex, set/return print values
-keywords: duplex, about
-
 ---
 
 The **Duplex** property specifies the standard duplex (double-sided) setting for use by capable printers. 

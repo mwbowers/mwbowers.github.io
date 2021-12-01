@@ -1,16 +1,6 @@
 ---
 title: FieldType.NewTimeStamp Method
 
-Id: dcsFieldTypeClassNewTimeStampMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 10
-
-keywords: NewTimeStamp method
-keywords: FieldType.NewTimeStamp method
-keywords: fields, timestamp
-keywords: timestamp field defined
-keywords: how to, define timestamp field
-
 ---
 
 Creates a new timestamp [ FieldType](field-type-class.html).

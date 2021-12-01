@@ -1,14 +1,6 @@
 ---
 title: MessageQueue Class Members
 
-Id: amfMessageQueueClassMembers
-TocParent: amfMessageQueueClass
-TocOrder: 5
-
-keywords: MessageQueue class
-keywords: MessageQueue class, all members
-keywords: members [ASNA.Monarch], MessageQueue class
-
 ---
 
 [MessageQueue Class Overview](message-queue-class.html) 

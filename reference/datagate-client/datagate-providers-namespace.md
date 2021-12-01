@@ -1,14 +1,6 @@
 ---
 title: ASNA.DataGate.Providers Namespace
 
-Id: dcsDataGateProvidersNamespace
-TocParent: dcsDataGateAssembly
-TocOrder: 3
-
-keywords: namespaces, ASNA.DataGate.Providers
-keywords: ASNA.DataGate.Providers namespace, about
-keywords: ASNA.DataGate.Providers namespace
-
 ---
 
 The ASNA.DataGate.Providers namespace contains essential classes for supplying additional parameters for the **FileAdapter** and **AdgConnection** Classes. 

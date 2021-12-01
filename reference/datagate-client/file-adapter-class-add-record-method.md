@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.AddRecord Method
 
-Id: dcsFileAdapterClassAddRecordMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 0
-
-keywords: add a record
-keywords: records, add
-keywords: database files, add a record
-keywords: files, add a record
-keywords: how to, add records to file
-keywords: AddRecord method
-keywords: FileAdapter.AddRecord method
-
 ---
 
 Adds a record to a file.

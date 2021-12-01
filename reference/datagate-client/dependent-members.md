@@ -1,13 +1,6 @@
 ---
 title: Dependent Members
 
-Id: dcsDependentMembers
-TocParent: dcsDependentClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 Dependent class
-keywords: Dependent class, all members
-
 ---
 
 [Dependent Overview](dependent-class.html) 

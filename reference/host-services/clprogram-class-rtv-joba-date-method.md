@@ -1,18 +1,6 @@
 ---
 title: CLProgram.RTVJOBA_DATE Method
 
-Id: amfCLProgramClassRTVJOBA_DATEMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 190
-
-keywords: RTVJOBA_DATE method
-keywords: CLProgram.RTVJOBA_DATE method
-keywords: CLProgram.RTVJOBA_DATE method
-keywords: job date
-keywords: job attributes, job date
-keywords: CLProgram, get date from job attributes
-keywords: how to, get date from CLProgram job attributes
-
 ---
 
 Reference to the date from the job attributes for the job in which this CLProgram is used.

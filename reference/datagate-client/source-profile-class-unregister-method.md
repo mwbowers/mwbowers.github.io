@@ -1,19 +1,6 @@
 ---
 title: SourceProfile.Unregister Method
 
-Id: dcsSourceProfileClassUnregisterMethod
-TocParent: dcsSourceProfileMethodsMain
-TocOrder: 7
-
-keywords: Unregister method
-keywords: SourceProfile.Unregister method
-keywords: Windows registry, delete database names from
-keywords: database names, delete from registry
-keywords: registered database names, delete
-keywords: database connections, registry database name deleted
-keywords: connections, database name registry delete
-keywords: how to, delete database name from registry
-
 ---
 
 ## <span style="font-color:red">Deprecated</span>

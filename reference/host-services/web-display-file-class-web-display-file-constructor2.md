@@ -1,10 +1,6 @@
 ---
 title: WebDisplayFile Constructor (String, String, AdgDataSet)
 
-Id: amfWebDisplayFileClassWebDisplayFileConstructor2
-TocParent: amfWebDisplayFileClassWebDisplayFileConstructors
-TocOrder: 20
-
 ---
 
 Constructs a new instance of a WebDisplayFile object.

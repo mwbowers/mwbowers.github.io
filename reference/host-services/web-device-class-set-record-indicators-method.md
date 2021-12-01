@@ -1,17 +1,6 @@
 ---
 title: WebDevice.SetRecordIndicators Method
 
-Id: amfWebDeviceClassSetRecordIndicatorsMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 100
-
-keywords: SetRecordIndicators method
-keywords: WebDevice.SetRecordIndicators method
-keywords: device control, setting record indicators
-keywords: display files, setting record indicators
-keywords: record indicators, setting
-keywords: how to, set record indicators
-
 ---
 
 Sets an array of boolean values representing the evaluation (true or false) for each of the indicators for the record format specified.

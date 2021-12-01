@@ -1,13 +1,6 @@
 ---
 title: ASNA.DataGate.Client Classes
 
-Id: dcsASNADataGateClientClasses
-TocParent: dcsDataGateClientNamespace
-TocOrder: 0
-
-keywords: ASNA.DataGate.Client namespace, classes
-keywords: classes [DCS 16.0 ASNA.DataGate.Client
-
 ---
 
 ## Classes

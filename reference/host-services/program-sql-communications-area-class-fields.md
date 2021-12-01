@@ -1,14 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Class Fields
 
-Id: amfProgramSQL_CommunicationsAreaClassFields
-TocParent: amfProgramSQL_CommunicationsAreaClass
-TocOrder: 40
-
-keywords: Program.SQL_CommunicationsArea class, fields
-keywords: fields [ASNA.Monarch], Program.SQL_CommunicationsArea class
-keywords: SQL_CommunicationsArea class, fields
-
 ---
 
 [ Program.SQL_CommunicationsArea Class Overview](program-sql-communications-area-class.html) 

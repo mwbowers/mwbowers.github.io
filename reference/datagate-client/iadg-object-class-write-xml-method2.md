@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler)
 
-Id: dcslAdgObjectClassWriteXMlMethod2
-TocParent: dcsIAdgObjectClassWriteXmlMethods
-TocOrder: 1
-
-keywords: XmlOptions enumeration, used by
-keywords: enumerations [DCS 16.0 XmlOptions, used by
-keywords: XmlInfoEventHandler delegate, used by
-keywords: delegates [DCS 16.0 XmlInfoEventHandler, used by
-keywords: XML [DCS 16.0 event handler, writing XML
-keywords: event handlers, writing XML
-
 ---
 
 **WriteXml** produces an XML document fragment representing the [IAdgObject](iadg-object-class.html). Optionally, the document may describe a hierarchy of database objects. This form of **WriteXml** provides a delegate parameter for monitoring the method's progress.

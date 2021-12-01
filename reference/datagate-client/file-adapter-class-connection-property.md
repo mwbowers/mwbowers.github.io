@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.Connection Property
 
-Id: dcsFileAdapterClassConnectionProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 1
-
-keywords: Connection property
-keywords: FileAdapter.Connection property
-keywords: how to, connect files to a database server
-keywords: database files, connection to a database server
-keywords: files, connection to a database server
-keywords: connection to a database server
-keywords: database servers, connection to
-
 ---
 
 The current **AdgConnection** associated with this **FileAdapter** .

@@ -1,16 +1,6 @@
 ---
 title: AdgConnection.op_Equality Method
 
-Id: dcsAdgConnectionclassopEqualityMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 7
-
-keywords: op_Equality method
-keywords: AdgConnection.op_Equality method
-
-keywords: comparing two AdgConnection objects
-keywords: how to, compare two AdgConnection objects
-
 ---
 
 Compares two instances of <span> **AdgConnection** </span> for equality.

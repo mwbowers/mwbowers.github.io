@@ -1,10 +1,6 @@
 ---
 title: Program.SqlCursor.Open Method
 
-Id: amfProgramSqlCursorClassOpenMethod1
-TocParent: amfProgramSqlCursorClassOpenMethods
-TocOrder: 10
-
 ---
 
 Opens a **SqlCursor** object positioned before the first row of the result set.

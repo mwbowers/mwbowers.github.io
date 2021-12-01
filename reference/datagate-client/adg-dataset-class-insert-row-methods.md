@@ -1,18 +1,6 @@
 ---
 title: AdgDataSet.InsertRow Methods
 
-Id: dcsAdgDataSetClassInsertRowMethods
-TocParent: dcsAdgDataSetMethods
-TocOrder: 8
-
-keywords: InsertRow methods
-keywords: AdgDataSet.InsertRow methods
-
-keywords: rows, insert into a table
-keywords: insert rows to a table
-keywords: how to, insert rows into a table
-keywords: tables, insert rows into
-
 ---
 
 Inserts a row into the dataset table for a specified format and relative record.

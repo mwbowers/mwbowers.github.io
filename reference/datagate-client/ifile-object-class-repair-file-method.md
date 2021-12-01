@@ -1,21 +1,6 @@
 ---
 title: IFileObject.RepairFile Method
 
-Id: dcsIFileObjectClassRepairFileMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 5
-
-keywords: RepairFile method
-keywords: IFileObject.RepairFile method
-keywords: RepairOptions enumeration, used by
-keywords: enumerations [DCS 16.0 RepairOptions, used by
-keywords: AdgObserver delegate, used by
-keywords: delegates [DCS 16.0 AdgObserver, used by
-keywords: database files, repair single file
-keywords: repair single database file
-keywords: how to, repair database file
-keywords: how to, invoke automatic diagnostic and repair function for a file
-
 ---
 
 **RepairFile** repairs the database file represented by **IFileObject** as specified by [RepairOptions](repair-options-enumeration.html).

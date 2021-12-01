@@ -1,15 +1,6 @@
 ---
 title: IAdgObject.SortByName Property
 
-Id: dcsIAdgObjectClassSortByNameProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 15
-
-keywords: SortByName property
-keywords: IAdgObject.SortByName property
-keywords: IComparer, return instances for database object case sensitive string comparision
-keywords: how to, return IComparer instances for case sensitive database object string comparision
-
 ---
 
 **SortByName** returns an **IComparer** instance suitable for comparing instances of [IAdgObject](iadg-object-class.html) based on the value returned by their [ToString](iadg-object-class-toString-method.html) method. String comparison is conducted using **System.Collections.Comparer.Default** .

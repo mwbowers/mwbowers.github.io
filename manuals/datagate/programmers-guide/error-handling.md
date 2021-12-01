@@ -1,13 +1,6 @@
 ---
 title: Error Handling
 
-Id: dcsErrorHandling
-TocParent: dcsProgrammersGuideMain
-TocOrder: 5
-
-keywords: errors, handling
-keywords: handling errors
-
 ---
 
 In client/server environments such as the ASNA DataGate Component suite (DCS) runtime, certain exceptions can occur that the programmer may wish to allow the program to recover from. For example, suppose that the network between your program (the client) and the database (the server) is disrupted. Instead of crashing or reporting the error and exiting, you could allow the user to try the procedure again when the network has been restored.

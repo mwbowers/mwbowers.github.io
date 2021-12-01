@@ -1,13 +1,6 @@
 ---
 title: AdgFactory Methods
 
-Id: dcsAdgFactoryMethods
-TocParent: dcsAdgFactoryClass
-TocOrder: 1
-
-keywords: methods [DCS 16.0 AdgFactory class
-keywords: AdgFactory class, methods
-
 ---
 
 [AdgFactory Overview](adg-factory-class.html) 

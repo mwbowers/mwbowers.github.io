@@ -1,15 +1,6 @@
 ---
 title: ReadEqualMode Enumeration
 
-Id: dcsReadEqualModeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 25
-
-keywords: NextEqual enumeration member
-keywords: PreviousEqual enumeration member
-keywords: ReadEqualMode enumeration
-keywords: enumerations [DCS 16.0 ReadEqualMode
-
 ---
 
 Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapter-class-read-sequential-equal-method.html) method.

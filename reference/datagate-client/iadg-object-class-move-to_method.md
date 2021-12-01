@@ -1,16 +1,6 @@
 ---
 title: IAdgObject.MoveTo Method
 
-Id: dcsIAdgObjectClassMoveToMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 4
-
-keywords: MoveTo method
-keywords: IAdgObject.MoveTo method
-keywords: database objects, move to new library
-keywords: move database objects to new library
-keywords: how to, move database objects to new library
-
 ---
 
 **MoveTo** moves a database library or file represented by **IAdgObject** to a specified library.

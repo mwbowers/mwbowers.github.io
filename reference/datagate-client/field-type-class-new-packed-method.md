@@ -1,17 +1,6 @@
 ---
 title: FieldType.NewPacked Method
 
-Id: dcsFieldTypeClassNewPackedMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 8
-
-keywords: NewPacked method
-keywords: FieldType.NewPacked method
-keywords: fields, packed
-keywords: fields, packed size limit
-keywords: packed field defined
-keywords: how to, define packed field
-
 ---
 
 Creates a new packed decimal [ FieldType](field-type-class.html).

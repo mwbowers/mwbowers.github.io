@@ -1,13 +1,6 @@
 ---
 title: DatabaseName Members
 
-Id: dcsDatabaseNameMembers
-TocParent: dcsDatabaseNameClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 DatabaseName class
-keywords: DatabaseName class, all members
-
 ---
 
 ## Public Constructors

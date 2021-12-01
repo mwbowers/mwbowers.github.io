@@ -1,13 +1,6 @@
 ---
 title: Job Class Properties
 
-Id: amfJobProperties
-TocParent: amfJobClass
-TocOrder: 30
-
-keywords: Job class, properties
-keywords: properties [ASNA.Monarch], Job class
-
 ---
 
 [Job Class Overview](job-class.html) 

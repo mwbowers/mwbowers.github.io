@@ -1,19 +1,6 @@
 ---
 title: Job.Dispose Method
 
-Id: amfJobClassDisposeMethod
-TocParent: amfJobMethods
-TocOrder: 40
-
-keywords: Dispose method
-keywords: Job.Dispose method
-keywords: managed resources, releasing
-keywords: unmanaged resources, releasing
-keywords: jobs, releasing resources
-keywords: how to, release job resources
-keywords: how to, release managed job resources
-keywords: how to, release unmanaged job resources
-
 ---
 
 Releases resources used by the **Job** object.

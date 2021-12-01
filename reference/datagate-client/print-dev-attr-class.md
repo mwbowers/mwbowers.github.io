@@ -1,17 +1,6 @@
 ---
 title: PrintDevAttr Class
 
-Id: dcsPrintDevAttrClass
-TocParent: dcsASNADataGateProvidersClasses
-TocOrder: 4
-
-keywords: classes [DCS 16.0 PrintDevAttr class
-keywords: PrintDevAttr class
-keywords: PrintDevAttr class, about PrintDevAttr class
-keywords: printers, about device parameters
-keywords: printer device parameters, about
-keywords: printing, about device parameters
-
 ---
 
 The <span> **PrintDevAttr** </span> class is a representation of the device parameters. 

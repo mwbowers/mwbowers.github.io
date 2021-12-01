@@ -1,15 +1,6 @@
 ---
 title: MessageQueue Constructor()
 
-Id: amfMessageQueueClassConstructors
-TocParent: amfMessageQueueClass
-TocOrder: 10
-
-keywords: MessageQueue.MessageQueue constructors
-keywords: MessageQueue class, constructors
-keywords: constructors [ASNA.Monarch], MessageQueue class
-keywords: message files, new message queue
-
 ---
 
 Constructs a new instance of a **MessageQueue** object.

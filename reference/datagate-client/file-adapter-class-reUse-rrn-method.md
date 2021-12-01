@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.ReuseRRN Method
 
-Id: dcsFileAdapterClassReUseRRNMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 25
-
-keywords: ReuseRRN method
-keywords: FileAdapter.ReuseRRN method
-keywords: database files, change deleted record status to undeleted and update by RRN
-keywords: files, change deleted record status to undeleted and update by RRN
-keywords: records, change deleted status to undeleted and update by RRN
-keywords: relative record numbers, change record status and update by
-keywords: how to, change deleted record status to undeleted and update by RRN
-
 ---
 
 Change the status of a deleted record to undeleted and update its contents. 

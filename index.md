@@ -1,6 +1,5 @@
 ---
 description: Home page for ASNA Monarch Base's documentation
-keywords: documentation, reference, concepts, manuals
 layout: landing
 title: ASNA Monarch® Base - Docs
 notoc: true

@@ -1,15 +1,6 @@
 ---
 title: AdgConnection.GetHashCode Metod
 
-Id: dcsAdgConnectionClassGetHashCodeMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 6
-
-keywords: GetHashCode method
-keywords: AdgConnection.GetHashCode method
-keywords: invoke GetHashCode on SourceProfile property
-keywords: SourceProfile property, invoke GetHashCode on
-
 ---
 
 Invokes the <span> **GetHashCode** </span> method of the <span> **SourceProfile** </span> property.

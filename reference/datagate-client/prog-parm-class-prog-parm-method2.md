@@ -1,13 +1,6 @@
 ---
 title: ProgParm(StructureType, DataDirection)
 
-Id: dcsProgParmClassProgParmMethod2
-TocParent: dcsProgParmClassProgParmMethodMain
-TocOrder: 1
-
-keywords: enumerations [DCS 16.0 DataDirection, used by
-keywords: DataDirection enumeration, used by
-
 ---
 
 Construct a representation of a complex iSeries program parameter.

@@ -1,16 +1,6 @@
 ---
 title: FieldType.NewFloat Method
 
-Id: dcsFieldTypeClassNewFloatMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 5
-
-keywords: NewFloat method
-keywords: FieldType.NewFloat method
-keywords: fields, floating-point
-keywords: floating-point field defined
-keywords: how to, define floating-point field
-
 ---
 
 Creates a new floating-point [ FieldType](field-type-class.html).

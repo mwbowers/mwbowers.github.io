@@ -1,12 +1,6 @@
 ---
 title: !EoJ
 
-Id: exclam-Eoj
-TocParent: exclam-PagesMain
-TocOrder: 20
-
-keywords: EoJ, end of job, redirecting user to main menu, session
-
 ---
 
 **!EoJ** is an application "End of Job" page. Use !Eoj to redirect the user to the main menu or home page. This file is replaceable by the Migrator and is delivered as "!EoJ.aspx", "!EoJ.aspx.vr" (AVR), "!EoJ.aspx.vb" (Visual Basic), and "!EoJ.aspx.cs" (C#).

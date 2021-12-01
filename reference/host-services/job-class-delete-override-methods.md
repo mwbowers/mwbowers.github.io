@@ -1,18 +1,6 @@
 ---
 title: Job.DeleteOverride Methods
 
-Id: amfJobClassDeleteOverrideMethods
-TocParent: amfJobMethods
-TocOrder: 30
-
-keywords: DeleteOverride methods
-keywords: Job.DeleteOverride methods
-keywords: removing job file overrides
-keywords: how to, remove job file overrides
-keywords: job file overrides, removing
-keywords: overrides, removing job files
-keywords: jobs, removing job file overrides
-
 ---
 
 This overloaded method removes file overrides previously applied to the job.

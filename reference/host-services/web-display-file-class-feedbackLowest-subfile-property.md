@@ -1,18 +1,6 @@
 ---
 title: WebDisplayFile.FeedBackLowestSubfile Property
 
-Id: amfWebDisplayFileClassFeedBackLowestSubfileProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 90
-
-keywords: FeedBackLowestSubfile property
-keywords: WebDisplayFile.FeedBackLowestSubfile property
-keywords: feedback, lowest subfile in display file
-keywords: feedback lowest subfile in display file
-keywords: display files, feedback lowest subfile
-keywords: how to, set feedback lowest subfile in display file
-keywords: how to, return lowest feedback subfile in display file
-
 ---
 
 Gets the lowest subfile for which the feedback is to be provided.

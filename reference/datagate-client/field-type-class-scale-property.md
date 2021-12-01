@@ -1,18 +1,6 @@
 ---
 title: FieldType.Scale Property
 
-Id: dcsFieldTypeClassScaleProperty
-TocParent: dcsFieldTypeProperties
-TocOrder: 5
-
-keywords: Scale property
-keywords: FieldType.Scale property
-keywords: decimal fields, maximum number of digits to right of decimal point
-keywords: fields, maximum number of digits to right of decimal point
-keywords: maximum number of digits to right of decimal point
-keywords: how to, define maximum number of digits to right of decimal point
-keywords: number of, maximum digits to right of decimal point
-
 ---
 
 The maximum number of digits to the right of the decimal point (for decimal fields only).

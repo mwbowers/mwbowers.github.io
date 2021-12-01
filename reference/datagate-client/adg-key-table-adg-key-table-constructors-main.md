@@ -1,14 +1,6 @@
 ---
 title: AdgKeyTable Constructors
 
-Id: dcsAdgKeyTableAdgKeyTableConstructorsMain
-TocParent: dcsAdgKeyTableClass
-TocOrder: 1
-
-keywords: AdgKeyTable class, constructors
-keywords: constructors [DCS 16.0 AdgKeyTable class
-keywords: AdgKeyTable.AdgKeyTable constructors
-
 ---
 
 This member supports DCS infrastructure and is not intended to be used directly from your code.

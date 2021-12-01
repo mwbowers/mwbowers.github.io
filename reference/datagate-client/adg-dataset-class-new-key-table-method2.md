@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.NewKeyTable(integer)
 
-Id: dcsAdgDataSetClassNewKeyTableMethod2
-TocParent: dcsAdgDataSetClassNewKeyTableMethods
-TocOrder: 1
-
 ---
 
 y

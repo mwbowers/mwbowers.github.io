@@ -1,13 +1,6 @@
 ---
 title: IFileObject Members
 
-Id: dcsIFileObjectMembers
-TocParent: dcsIFileObjectClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 IFileObject class
-keywords: IFileObject class, all members
-
 ---
 
 [IFileObject Overview](ifile-object-class.html) 

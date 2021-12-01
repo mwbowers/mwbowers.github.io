@@ -1,18 +1,6 @@
 ---
 title: Dependent.DependentType Property
 
-Id: dcsDependentClassDependentTypeProperty
-TocParent: dcsDependentProperties
-TocOrder: 1
-
-keywords: DependentType property
-keywords: Dependent.DependentType property
-keywords: DependentTypes enumeration, used by
-keywords: enumerations [DCS 16.0 DependentTypes, used by
-keywords: dependent objects, type of relationship with its' bases
-keywords: database relationships, dependent and base objects
-keywords: how to, determine dependent objects' relationship with its bases
-
 ---
 
 **DependentType** determines the relationship between a dependent database object and its' [ bases](iadg-object-class-bases-property.html). 

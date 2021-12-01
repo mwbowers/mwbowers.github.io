@@ -1,25 +1,6 @@
 ---
 title: ILibraryList.CurrentSystemLibs Property
 
-Id: dcsILibraryListClassCurrentSystemLibsProperty
-TocParent: dcsILibraryListProperties
-TocOrder: 0
-
-keywords: CurrentSystemLibs property
-keywords: ILibraryList.CurrentSystemLibs property
-keywords: directories, setting user portion of directories in current library list
-keywords: directories, getting user portion of directories in current library list
-keywords: library lists, setting user portion of directories in
-keywords: library lists, getting user portion of directories in
-keywords: how to, set user portion of directories in the current library list
-keywords: how to, get user portion of directories in the current library list
-keywords: directories, setting system portion of directories in current library list
-keywords: directories, getting system portion of directories in current library list
-keywords: library lists, setting system portion of directories in
-keywords: library lists, getting system portion of directories in
-keywords: how to, set system portion of directories in the current library list
-keywords: how to, get system portion of directories in the current library list
-
 ---
 
 **CurrentSystemLibs** returns a string array containing a list of the current system and user portion of the directories in the library list represented by **ILibraryList** . 

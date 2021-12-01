@@ -1,14 +1,6 @@
 ---
 title: SourceProfile.op_Equality Method
 
-Id: dcsSourceProfileClassop_EqualityMethod
-TocParent: dcsSourceProfileMethodsMain
-TocOrder: 4
-
-keywords: how to, compare two SourceProfile instances for equality
-keywords: op_Equality method
-keywords: SourceProfile.op_Equality method
-
 ---
 
 Compares two instances of <span>SourceProfile</span> for equality.

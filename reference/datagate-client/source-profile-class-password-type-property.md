@@ -1,21 +1,6 @@
 ---
 title: SourceProfile.PasswordType Property
 
-Id: dcsSourceProfileClassPasswordTypeProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 4
-
-keywords: PasswordType property
-keywords: SourceProfile.PasswordType property
-keywords: PasswordType enumeration, used by
-keywords: enumerations [DCS 16.0 PasswordType, used by
-keywords: authentication, specifing method for initiating database sessions
-keywords: database session, authentication
-keywords: password, authentication
-keywords: how to, authenticate a database session
-keywords: how to, specify method to authenticate a database session
-keywords: initiating database sessions, specifying authentication method
-
 ---
 
 Specifies the authentication method for initiating database sessions with the [Password](source-profile-class-password-property.html) property.

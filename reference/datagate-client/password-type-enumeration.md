@@ -1,15 +1,6 @@
 ---
 title: PasswordType Enumeration
 
-Id: dcsPasswordTypeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 20
-
-keywords: enumerations [DCS 16.0 PasswordType
-keywords: PasswordType enumeration
-keywords: Legacy enumeration member
-keywords: SecurePassPhrase enumeration member
-
 ---
 
 The <span> **PasswordType** </span> enumerated constant defines values indicating a particular authentication scheme or password security mode. 

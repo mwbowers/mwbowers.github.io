@@ -1,13 +1,6 @@
 ---
 title: FileOpenAttr Members
 
-Id: dcsFileOpenAttrClassMembers
-TocParent: dcsFileOpenAttrClass
-TocOrder: 0
-
-keywords: FileOpenAttr class, all members
-keywords: members [DCS 16.0 FileOpenAttr class
-
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 

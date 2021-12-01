@@ -1,16 +1,6 @@
 ---
 title: DependentTypes Enumeration
 
-Id: dcsDependentTypesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 10
-
-keywords: enumerations [DCS 16.0 DependentTypes
-keywords: DependentTypes enumeration
-keywords: Base enumeration member
-keywords: Reference enumeration member
-keywords: Join enumeration member
-
 ---
 
 <span> **DependentTypes** </span> defines values specifying a dependent object's relationship to a base file. 

@@ -1,15 +1,6 @@
 ---
 title: Program.DBParm Class
 
-Id: amfProgramDBParmClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 150
-
-keywords: Program.DBParm class, about Program.DBParm class
-keywords: Program.DBParm class
-keywords: classes [ASNA.Monarch], Program.DBParm class
-keywords: SQL parameters
-
 ---
 
 The **Program.DBParm** (nested) class defines an object that represents a parameter to a SQL statement where the length can be determined by its type.

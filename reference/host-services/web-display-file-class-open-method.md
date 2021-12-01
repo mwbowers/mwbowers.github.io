@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.Open Method
 
-Id: amfWebDisplayFileClassOpenMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 100
-
-keywords: Open method
-keywords: WebDisplayFile.Open method
-keywords: display files, opening aspx web form program
-keywords: opening aspx web form program
-keywords: display files, opening aspx web form program
-keywords: how to, open aspx web form program
-
 ---
 
 Opens the '.aspx.' web form program and dataSet for the **WebDisplayFile** .

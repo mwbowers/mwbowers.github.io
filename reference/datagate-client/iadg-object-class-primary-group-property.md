@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.PrimaryGroup Property
 
-Id: dcsIAdgObjectClassPrimaryGroupProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 13
-
-keywords: PrimaryGroup property
-keywords: IAdgObject.PrimaryGroup property
-keywords: owner names, return primary group name for database object
-keywords: group owner names, return for database object
-keywords: primary group owner
-keywords: database objects, primary group owner name
-
 ---
 
 **PrimaryGroup** is the primary group assigned to a database object.

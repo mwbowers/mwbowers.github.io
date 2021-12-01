@@ -1,10 +1,6 @@
 ---
 title: FileAdapter(AdgConnection)
 
-Id: dcsFileAdapterClassFileAdapterMethod2
-TocParent: dcsFileAdapterClassFileAdapterMethodMain
-TocOrder: 1
-
 ---
 
 Constructs an instance of the [FileAdapter](file-adapter-class.html) object using the given [AdgConnection](adg-connection-class.html) object.

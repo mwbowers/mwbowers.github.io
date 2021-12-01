@@ -1,19 +1,6 @@
 ---
 title: IMember.Clear Method
 
-Id: dcsIMemberClassClearMethod
-TocParent: dcsIMemberMethods
-TocOrder: 0
-
-keywords: Clear method
-keywords: IMember.Clear method
-keywords: database file members, remove all active and deleted records
-keywords: records, remove all active and deleted from database file member
-keywords: records, active, remove from database file member
-keywords: records, deleted, remove from database file member
-keywords: database files, remove all active and deleted records in database file member
-keywords: how to, remove all active and deleted records in database file member
-
 ---
 
 **Clear** deletes all records in the member.

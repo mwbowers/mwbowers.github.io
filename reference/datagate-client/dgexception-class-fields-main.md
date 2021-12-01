@@ -1,13 +1,6 @@
 ---
 title: dgException Fields
 
-Id: dcsdgExceptionClassFieldsMain
-TocParent: dcsdgExceptionClass
-TocOrder: 1
-
-keywords: fields [DCS 16.0 dgException class
-keywords: dgException class, fields
-
 ---
 
 [dgException Overview](dgexception-class.html) 

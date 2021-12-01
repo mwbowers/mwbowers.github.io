@@ -1,16 +1,6 @@
 ---
 title: OverrideScope Enumeration
 
-Id: amfOverrideScopeEnumeration
-TocParent: amfMonarchNamespaceEnumerations
-TocOrder: 50
-
-keywords: enumerations [ASNA.Monarch], OverrideScope
-keywords: OverrideScope enumeration
-keywords: CallLvl enumeration member
-keywords: Job enumeration member
-keywords: file overrides, levels
-
 ---
 
 The **OverrideScope** enumerated constant defines values for the level of override. Used by [ Job.OverrideFile](job-class-override-file-method2.html), [ Job.DeleteOverride](job-class-delete-override-method2.html), [ CLProgram.OverrideFile](clprogram-class-override-file-method2.html), and [ CLProgram.DeleteOverride](clprogram-class-delete-override-method2.html) methods. 

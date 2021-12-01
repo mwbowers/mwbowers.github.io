@@ -1,13 +1,6 @@
 ---
 title: Job Class Members
 
-Id: amfJobMembers
-TocParent: amfJobClass
-TocOrder: 5
-
-keywords: Job class, all members
-keywords: members [ASNA.Monarch], Job class
-
 ---
 
 [Job Class Overview](job-class.html) 

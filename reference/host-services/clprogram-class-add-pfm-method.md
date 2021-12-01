@@ -1,15 +1,6 @@
 ---
 title: CLProgram.AddPFM Method
 
-Id: amfCLProgramClassAddPFMMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 20
-
-keywords: AddPFM method
-keywords: CLProgram.AddPFM method
-keywords: how to, add physical file member
-keywords: physical files, adding members
-
 ---
 
 This method add the specified member of a physical file.

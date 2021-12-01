@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_QueryVerbatim Method (DbConnection,string,DBParm[])
 
-Id: amfProgramClassExecuteSQL_QueryVerbatimMethod2
-TocParent: amfProgramClassExecuteSQL_QueryVerbatimMethods
-TocOrder: 40
-
 ---
 
 Executes a SQL query specifying the database connection, SQL statement (exactly as stated in the RPG code), and statement parameters.

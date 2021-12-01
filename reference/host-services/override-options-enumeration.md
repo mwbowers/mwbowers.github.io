@@ -1,31 +1,6 @@
 ---
 title: OverrideOptions Enumeration
 
-Id: amfOverrideOptionsEnumeration
-TocParent: amfMonarchNamespaceEnumerations
-TocOrder: 40
-
-keywords: enumerations [ASNA.Monarch], OverrideOptions
-keywords: OverrideOptions enumeration
-keywords: file overrides, options
-keywords: Collate enumeration member
-keywords: Copies enumeration member
-keywords: Duplex enumeration member
-keywords: FormName enumeration member
-keywords: Mbr enumeration member
-keywords: Orientation enumeration member
-keywords: PaperLength enumeration member
-keywords: PaperSize enumeration member
-keywords: PaperSource enumeration member
-keywords: PaperWidth enumeration member
-keywords: Printer enumeration member
-keywords: Quality enumeration member
-keywords: ReportName enumeration member
-keywords: Scale enumeration member
-keywords: ShareOpenDataPath enumeration member
-keywords: ToFile enumeration member
-keywords: WaitRcd enumeration member
-
 ---
 
 The **OverrideOptions** enumerated constant defines file override options within Monarch. Used by the [ CLProgram.OverrideFile](clprogram-class-override-file-methods.html) and [ Job.OverrideFile](job-class-override-file-methods.html) methods.

@@ -1,16 +1,6 @@
 ---
 title: IAdgObject.DateCreated Property
 
-Id: dcsIAdgObjectClassDateCreatedProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 4
-
-keywords: DateCreated property
-keywords: IAdgObject.DateCreated property
-keywords: how to, return object creation timestamp recorded by database provider
-keywords: timestamps, recorded by database provider when object was created
-keywords: database objects, return database providers creation timestamp
-
 ---
 
 **DateCreated** is a timestamp recorded by the database provider when the database object is created.

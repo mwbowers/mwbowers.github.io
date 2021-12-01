@@ -1,10 +1,6 @@
 ---
 title: SourceProfile(SourceProfile)
 
-Id: dcsSourceProfileClassSourceProfileConstructor4
-TocParent: dcsSourceProfileConstructorsMain
-TocOrder: 3
-
 ---
 
 Constructs an instance of [SourceProfile](source-profile-class.html) that is an exact copy of the given **SourceProfile** .

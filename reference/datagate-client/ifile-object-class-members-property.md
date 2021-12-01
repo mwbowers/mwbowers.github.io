@@ -1,17 +1,6 @@
 ---
 title: IFileObject.Members Property
 
-Id: dcsIFileObjectClassMembersProperty
-TocParent: dcsIFileObjectProperties
-TocOrder: 1
-
-keywords: Members property
-keywords: IFileObject.Members property
-keywords: enumerate database file members of database file
-keywords: database files, enumerate database file members
-keywords: database file members, enumerated for database file
-keywords: how to, enumerate database file members of database file
-
 ---
 
 An array of [IMember](imember-class.html) objects representing all of the database members contained by a database file.

@@ -1,16 +1,6 @@
 ---
 title: WebJob.Start Method
 
-Id: amfWebJobClassStartMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 80
-
-keywords: Start method
-keywords: WebJob.Start method
-keywords: web job, starting
-keywords: how to, start a web job
-keywords: starting a web job
-
 ---
 
 Creates an instance of an **ASNA.Monarch.WebDevice** object and starts the job name specified.

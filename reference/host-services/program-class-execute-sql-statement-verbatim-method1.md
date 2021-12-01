@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_StatementVerbatim Method (string,DBParm[])
 
-Id: amfProgramClassExecuteSQL_StatementVerbatimMethod1
-TocParent: amfProgramClassExecuteSQL_StatementVerbatimMethods
-TocOrder: 20
-
 ---
 
 Executes a SQL command statement specifying the SQL statement (exactly as stated in the RPG code) and statement parameters.

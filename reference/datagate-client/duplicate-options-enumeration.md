@@ -1,16 +1,6 @@
 ---
 title: DuplicateOptions Enumeration
 
-Id: dcsDuplicateOptionsEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 13
-
-keywords: DuplicateOptions enumeration
-keywords: enumerations [DCS 16.0 DuplicateOptions
-keywords: Members enumeration member
-keywords: Data enumeration member
-keywords: None enumeration member
-
 ---
 
 <span> **DuplicateOptions** </span> defines values directing the operation of the [ Duplicate](iadg-object-class-duplicate-method.html) method of [IAdgObject](iadg-object-class.html). 

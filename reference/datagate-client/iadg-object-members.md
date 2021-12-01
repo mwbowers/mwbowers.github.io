@@ -1,13 +1,6 @@
 ---
 title: IAdgObject Members
 
-Id: dcsIAdgObjectMembers
-TocParent: dcsIAdgObjectClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 IAdgObject class
-keywords: IAdgObject class, all members
-
 ---
 
 [IAdgObject Overview](iadg-object-class.html) 

@@ -1,28 +1,6 @@
 ---
 title: Program.SendExternalMessage Method (string, string, string, ASNA.Monarch.MessageTypes)
 
-Id: amfProgramClassSendExternalMessageMethod
-TocParent: amfProgramClassMethods
-TocOrder: 80
-
-keywords: SendExternalMessage method
-keywords: Program.SendExternalMessage method
-keywords: MessageTypes enumeration, used by
-keywords: enumerations [ASNA.Monarch], MessageTypes, used by
-keywords: message queues, sending external program messages
-keywords: external messages, sending to program
-keywords: messages, sending external program
-keywords: predefined external messages, sending to program
-keywords: immediate external messages, sending to program
-keywords: sending external program messages
-keywords: sending immediate external program messages
-keywords: sending predefined external program messages
-keywords: program messages, sending external predefined
-keywords: program messages, sending external immediate
-keywords: how to, send external program messages
-keywords: how to, send predefined external program messages
-keywords: how to, send immediate external program messages
-
 ---
 
 Append a message to the external message queue.

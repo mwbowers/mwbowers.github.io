@@ -1,21 +1,6 @@
 ---
 title: IFileObject.ReadCreationAttributes Method
 
-Id: dcsIFileObjectClassReadCreationAttributesMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 3
-
-keywords: ReadCreationAttributes method
-keywords: IFileObject.ReadCreationAttributes method
-keywords: XML [DCS 16.0 <fileCreateAttr>, validate file's creation-time attributes
-keywords: XML [DCS 16.0 documents, validate creation-time attributes
-keywords: XML [DCS 16.0 database files, validate creation-time attributes
-keywords: <fileCreateAttr>, validate database file creation-time attributes from XML document
-keywords: database files, <fileCreateAttr>, validate from XML document
-keywords: creation-time attributes, validating from XML document
-keywords: database files, XML documents, validate creation-time attributes
-keywords: how to, validate XML creation-time attributes for database file
-
 ---
 
 **ReadCreationAttributes** reads and validates an XML document fragment describing a database file's creation-time attributes.

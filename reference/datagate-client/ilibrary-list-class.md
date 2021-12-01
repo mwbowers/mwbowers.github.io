@@ -1,18 +1,6 @@
 ---
 title: ILibraryList Interface
 
-Id: dcsILibraryListClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 13
-
-keywords: classes [DCS 16.0 ILibraryList class
-keywords: interfaces [DCS 16.0 ILibraryList class
-keywords: ILibraryList class
-keywords: ILibraryList class, about ILibraryList class
-keywords: library lists, about
-keywords: database files, about libraries
-keywords: database libraries, about ILibraryList class
-
 ---
 
 **ILibraryLists** models an object management interface to the databases' library list. A library list is an ordered set of directory names associated with each applications database connection.

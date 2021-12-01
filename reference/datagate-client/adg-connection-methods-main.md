@@ -1,13 +1,6 @@
 ---
 title: AdgConnection Methods
 
-Id: dcsAdgConnectionMethodsMain
-TocParent: dcsAdgConnectionClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 AdgConnection class
-keywords: AdgConnection class, methods
-
 ---
 
 [AdgConnection Overview](adg-connection-class.html) 

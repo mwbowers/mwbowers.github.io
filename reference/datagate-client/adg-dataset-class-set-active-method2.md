@@ -1,10 +1,6 @@
 ---
 title: SetActive(string,integer)
 
-Id: dcsAdgDataSetClassSetActiveMethod2
-TocParent: dcsAdgDataSetClassSetActiveMethods
-TocOrder: 1
-
 ---
 
 Establish the record, specified by format name and relative record number, as the active row.

@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.WriteBases Method
 
-Id: dcsIAdgObjectClassWriteBasesMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 11
-
-keywords: WriteBases method
-keywords: IAdgObject.WriteBases method
-keywords: how to, create XML document fragment for base object of single database object
-keywords: XML [DCS 16.0 documents, create fragment from base objects description
-keywords: XML [DCS 16.0 database objects, create fragment from base objects description
-keywords: database objects, XML documents, create from base objects description
-
 ---
 
 **WriteBases** creates an XML document fragment describing the base objects of a single database object.

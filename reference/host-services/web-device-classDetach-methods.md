@@ -1,19 +1,6 @@
 ---
 title: WebDevice.Detach Methods
 
-Id: amfWebDeviceClassDetachMethods
-TocParent: amfWebDeviceClassMethods
-TocOrder: 20
-
-keywords: WebDevice.Detach methods
-keywords: Detach methods
-keywords: device control, detaching display file
-keywords: device control, detaching shared file
-keywords: display files, detaching from device
-keywords: shared files, detaching from device
-keywords: how to, detach display file from device
-keywords: how to, detach shared file from device
-
 ---
 
 Detaches a previously attached shared file or <code>WebDisplayFile</code> from the <code> **WebDevice** </code>.

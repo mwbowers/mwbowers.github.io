@@ -1,15 +1,6 @@
 ---
 title: Render-in-Process Options
 
-Id: dcsSettingRenderasProc
-TocParent: dcsAccessingaFileMain
-TocOrder: 20
-
-keywords: Render In Process
-keywords: Render in Proc
-keywords: ASP.NET Impersonation bug
-keywords: Rendering
-
 ---
 
 Occasionally the requirement to run the application with asp.net "impersonation" may arise, and in this case the IIS7 worker process starts a thread which runs under the credentials of the impersonated user. This is similar too, but slightly different than, logging onto the Windows workstation with the same credentials. In particular, when the worker process is running as the "Network Service" identity (as per default IIS7 configuration), the impersonation thread is not allowed to create new processes with the same authority as a logged-on user with its credentials. 

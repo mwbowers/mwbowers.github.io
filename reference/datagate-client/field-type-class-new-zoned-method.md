@@ -1,17 +1,6 @@
 ---
 title: FieldType.NewZoned Method
 
-Id: dcsFieldTypeClassNewZonedMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 11
-
-keywords: NewZoned method
-keywords: FieldType.NewZoned method
-keywords: fields, zoned decimal
-keywords: fields, zoned decimal size limit
-keywords: zoned decimal field defined
-keywords: how to, define zoned decimal field
-
 ---
 
 Creates a new zoned decimal [ FieldType](field-type-class.html).

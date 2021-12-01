@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.PrepareRow(string)
 
-Id: dcsAdgDataSetClassPrepareRowMethod2
-TocParent: dcsAdgDataSetClassPrepareRowMethodMain
-TocOrder: 1
-
 ---
 
 Create a **DataRow** object in preparation for adding it to the **AdgDataSet** .

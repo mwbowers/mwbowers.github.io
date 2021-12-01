@@ -1,13 +1,6 @@
 ---
 title: Program Class Methods
 
-Id: amfProgramClassMethods
-TocParent: amfProgramClass
-TocOrder: 20
-
-keywords: Program class, methods
-keywords: methods [ASNA.Monarch], Program class
-
 ---
 
 [Program Class Overview](program-class.html) 

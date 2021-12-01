@@ -1,20 +1,6 @@
 ---
 title: IDirectory.Enumerate Method
 
-Id: dcsIDirectoryClassEnumerateMethod
-TocParent: dcsIDirectoryMethods
-TocOrder: 2
-
-keywords: Enumerate method
-keywords: IDirectory.Enumerate method
-keywords: AdgEnumerator delegate, used by
-keywords: delegates [DCS 16.0 AdgEnumerator, used by
-keywords: enumerate database contents of library
-keywords: how to, enumerate database contents of library
-keywords: database files, enumerate object contents of
-keywords: database file members, enumerate object contents of
-keywords: database libraries, enumerate object contents of
-
 ---
 
 **Enumerate** the object contents of the library represented by **IDirectory** , with the supplied [ AdgEnumerator](adg-enumerator-delegate.html) delegate.

@@ -1,21 +1,6 @@
 ---
 title: FileOpenAttr.InhibitWrites Property
 
-Id: dcsFileOpenAttrClassInhibitWriteProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 3
-
-keywords: how to, enable write access to database files
-keywords: how to, disable write access to database files during testing
-keywords: database files, write-access enabled
-keywords: database files, write-access disabled
-keywords: files, write-access enabled
-keywords: files, write-access disabled
-keywords: write-access enabled
-keywords: write-access disabled
-keywords: InhibitWrites property
-keywords: FileOpenAttr.InhibitWrites property
-
 ---
 
 Specify write-access enabling on the open file.

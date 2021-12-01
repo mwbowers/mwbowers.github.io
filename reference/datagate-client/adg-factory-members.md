@@ -1,13 +1,6 @@
 ---
 title: AdgFactory Members
 
-Id: dcsAdgFactoryMembers
-TocParent: dcsAdgFactoryClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 AdgFactory class
-keywords: AdgFactory class, all members
-
 ---
 
 [AdgFactory Overview](adg-factory-class.html) 

@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.RecordCount Property
 
-Id: dcsFileAdapterClassRecordCountProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 10
-
-keywords: FileAdapter.RecordCount property
-keywords: RecordCount property
-keywords: how to, determine the number of non-deleted records in database file
-keywords: records, number of non-deleted in database file
-keywords: number of, non-deleted records in database file
-keywords: database files, number of non-deleted records in
-
 ---
 
 <span>The number of non-deleted records in the open database file. </span> 

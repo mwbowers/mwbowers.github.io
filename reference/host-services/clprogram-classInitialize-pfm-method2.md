@@ -1,10 +1,6 @@
 ---
 title: CLProgram.InitializePFM(string, string, integer)
 
-Id: amfCLProgramClassInitializePFMMethod2
-TocParent: amfCLProgramClassInitializePFMMethods
-TocOrder: 20
-
 ---
 
 Initializes records in a member of a physical file with default record values, to the total number of records specified.

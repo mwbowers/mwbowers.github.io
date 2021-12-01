@@ -1,17 +1,6 @@
 ---
 title: XmlInfoEventArgs Class
 
-Id: dcsXmlInfoEventArgsClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 15
-
-keywords: classes [DCS 16.0 XmlInfoEventArgs class
-keywords: XmlInfoEventArgs class
-keywords: XmlInfoEventArgs class, about XmlInfoEventArgs class
-keywords: XML [DCS 16.0 events, about reporting feedback
-keywords: XML [DCS 16.0 event handler, object
-keywords: event handlers, about using
-
 ---
 
 An **XmlInfoEventArgs** object contains the details of events reported by the [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) methods, through the **** [XmlInfoEventHandler](xml-info-event-handler-delegate.html) delegate. 

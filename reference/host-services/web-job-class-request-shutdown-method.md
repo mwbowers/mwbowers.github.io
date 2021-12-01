@@ -1,16 +1,6 @@
 ---
 title: WebJob.RequestShutDown Method
 
-Id: amfWebJobClassRequestShutDownMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 40
-
-keywords: how to, request web job shutdown
-keywords: requesting web job shutdown
-keywords: web job, requesting shutdown
-keywords: RequestShutDown method
-keywords: WebJob.RequestShutDown method
-
 ---
 
 Initiates a timed shut down request for the web job.

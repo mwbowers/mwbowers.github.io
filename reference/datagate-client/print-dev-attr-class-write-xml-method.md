@@ -1,13 +1,6 @@
 ---
 title: PrintDevAttr.WriteXml Method
 
-Id: dcsPrintDevAttrClassWriteXmlMethod
-TocParent: dcsPrintDevAttrMethods
-TocOrder: 1
-
-keywords: WriteXml method
-keywords: PrintDevAttr.WriteXml method
-
 ---
 
 This is preliminary and subject to change. 

@@ -1,15 +1,6 @@
 ---
 title: IFileObject.GetAdgDataSet Method
 
-Id: dcsIFileObjectClassGetAdgDataSetMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 1
-
-keywords: GetAdgDataSet method
-keywords: IFileObject.GetAdgDataSet method
-keywords: DataSetOptions enumeration, used by
-keywords: enumerations [DCS 16.0 DataSetOptions, used by
-
 ---
 
 **GetAdgDataSet** method returns an instance of an [AdgDataSet](adg-dataset-class.html) modeling the formats of the database file represented by **IFileObject** .

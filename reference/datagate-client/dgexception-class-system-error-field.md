@@ -1,14 +1,6 @@
 ---
 title: dgException.SystemError Field
 
-Id: dcsdgExceptionClassSystemErrorField
-TocParent: dcsdgExceptionClassFieldsMain
-TocOrder: 2
-
-keywords: SystemError field
-keywords: dgException.SystemError field
-keywords: dgException, system-level classification
-
 ---
 
 A system-level classification of the <span>dgException</span>. 

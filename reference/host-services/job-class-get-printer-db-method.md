@@ -1,17 +1,6 @@
 ---
 title: Job.getPrinterDB Method
 
-Id: amfJobClassgetPrinterDBMethod
-TocParent: amfJobMethods
-TocOrder: 100
-
-keywords: getPrinterDB method
-keywords: Job.getPrinterDB method
-keywords: how to, assign printer database connection for job
-keywords: jobs, assigning printer database connection
-keywords: printers, assigning database connection for job
-keywords: printer files, assigning database connection for job
-
 ---
 
 The getPrinterDB method returns a new instance of ASNA.VisualRPG.Runtime.Database connection object for the printer used by the job.

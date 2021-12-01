@@ -1,14 +1,6 @@
 ---
 title: AdgKeyTable.DataTable Property
 
-Id: dcsAdgKeyTableClassDataTableProperty
-TocParent: dcsAdgKeyTableProperties
-TocOrder: 0
-
-keywords: DataTable property
-keywords: AdgKeyTable.DataTable property
-keywords: AdgTable.DataTable property  see AdgKeyTable.DataTable
-
 ---
 
 The <span> **DataTable** </span> object describing the fields of a key.

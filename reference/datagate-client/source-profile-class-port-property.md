@@ -1,19 +1,6 @@
 ---
 title: SourceProfile.Port Property
 
-Id: dcsSourceProfileClassPortProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 7
-
-keywords: Port property
-keywords: SourceProfile.Port property
-keywords: database servers, port number
-keywords: port number, default
-keywords: port number, set/return TCP port number
-keywords: TCP port number, TCP/IP based transport, default
-keywords: TCP port number, TCP/IP based transport
-keywords: how to, TCP port number used for TCP/IP based transport
-
 ---
 
 The TCP port number used by the database server for TCP/IP-based transport (default 5042). 

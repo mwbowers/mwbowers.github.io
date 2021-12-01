@@ -1,18 +1,6 @@
 ---
 title: As400Program Class
 
-Id: dcsAs400ProgramClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 5
-
-keywords: classes [DCS 16.0 As400Program class
-keywords: As400Program class
-keywords: As400Program class, about As400Program class
-keywords: calling programs, about As400Program class
-keywords: IBM i programs, about executing
-keywords: database servers, about executing IBM i programs
-keywords: iSeries computers, about executing programs
-
 ---
 
 The **As400Program** class provides a means to call programs on IBM i computers. 

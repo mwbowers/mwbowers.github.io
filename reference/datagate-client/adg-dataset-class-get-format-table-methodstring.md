@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.GetFormatTable(String)
 
-Id: dcsAdgDataSetClassGetFormatTableMethodstring
-TocParent: dcsAdgDataSetClassGetFormatTableMethods
-TocOrder: 1
-
 ---
 
 Returns the DataTable object for a particular file format specified by string.

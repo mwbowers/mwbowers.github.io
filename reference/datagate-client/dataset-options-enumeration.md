@@ -1,13 +1,6 @@
 ---
 title: DataSetOptions Enumeration
 
-Id: dcsDataSetOptionsEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 6
-
-keywords: enumerations [DCS 16.0 DataSetOptions
-keywords: DataSetOptions enumeration
-
 ---
 
 The <span> **DataSetOptions** </span> enumeration names are reserved for AVR for Visual Studio 2019 use so you must use the associated numeric value. 

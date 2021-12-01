@@ -1,19 +1,6 @@
 ---
 title: WebDevice.Attach Methods
 
-Id: amfWebDeviceClassAttachMethods
-TocParent: amfWebDeviceClassMethods
-TocOrder: 10
-
-keywords: WebDevice.Attach methods
-keywords: Attach methods
-keywords: device control, attaching display file
-keywords: display files, attaching to device
-keywords: how to, attach display file to device
-keywords: device control, attaching shared file
-keywords: shared files, attaching to device
-keywords: how to, attach shared file to device
-
 ---
 
 Attaches a <code>WebDisplayFile</code> to a <code> **WebDevice** </code> and optionally attaches a shared file.

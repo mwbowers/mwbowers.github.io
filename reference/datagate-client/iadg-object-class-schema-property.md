@@ -1,19 +1,6 @@
 ---
 title: IAdgObject.Schema Property
 
-Id: dcsIAdgObjectClassSchemaProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 14
-
-keywords: Schema property
-keywords: IAdgObject.Schema property
-keywords: XML schema, validate fragments for database objects
-keywords: database objects, XML documents, validate against schema fragments
-keywords: XML [DCS 16.0 documents, validate fragments against schema
-keywords: XML [DCS 16.0 documents, establish adherence to schema
-keywords: XML [DCS 16.0 schema, validate XML document to
-keywords: how to, validate XML document against schema
-
 ---
 
 **Schema** is the XML schema collection DCS uses to validate XML document fragments describing **IAdgObject** instances and the database objects they represent.

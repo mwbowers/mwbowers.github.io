@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.TotalSeats Field
 
-Id: dcsDatabaseAttributesClassTotalSeatsField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 8
-
-keywords: TotalSeats field
-keywords: DatabaseAttributes.TotalSeats field
-
 ---
 
 The total number of 'seats' for the database. Licensing counts all application running from a single PC to a database as 'one' seat.

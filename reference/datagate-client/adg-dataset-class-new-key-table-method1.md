@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.NewKeyTable(string)
 
-Id: dcsAdgDataSetClassNewKeyTableMethod1
-TocParent: dcsAdgDataSetClassNewKeyTableMethods
-TocOrder: 0
-
 ---
 
 Create a key buffer for keyed access operations for the specified format string.

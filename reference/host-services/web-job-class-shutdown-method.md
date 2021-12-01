@@ -1,16 +1,6 @@
 ---
 title: WebJob.ShutDown Method
 
-Id: amfWebJobClassShutDownMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 70
-
-keywords: ShutDown method
-keywords: WebJob.ShutDown method
-keywords: how to, shut down a web job
-keywords: shutting down a web job
-keywords: web job, shutting down
-
 ---
 
 This method ends all active programs, closes the database connections for disk and printer files, and then aborts the thread assigned to the job.

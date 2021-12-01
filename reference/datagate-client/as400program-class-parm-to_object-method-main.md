@@ -1,16 +1,6 @@
 ---
 title: As400Program.ParmToObject Methods
 
-Id: dcsAs400ProgramClassParmToObjectMethodMain
-TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 6
-
-keywords: ParmToObject methods
-keywords: As400Program.ParmToObject methods
-keywords: program parameters, parameter list output values retrieved
-keywords: parameter lists, program parameter output values returned
-keywords: how to, retrieve program parameter list output values
-
 ---
 
 Returns an object of a specific type from the program parameter list.

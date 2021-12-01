@@ -1,17 +1,6 @@
 ---
 title: WebDevice.WaitForDataForProgram Method
 
-Id: amfWebDeviceClassWaitForDataForProgramMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 140
-
-keywords: WaitForDataForProgram method
-keywords: WebDevice.WaitForDataForProgram method
-keywords: wait state
-keywords: web device, wait for data from program event
-keywords: display files, signal the webdevice thread to wait for data from program event
-keywords: how to, signal the webdevice thread to wait for data from program event
-
 ---
 
 Signals the **WebDevice** object thread the device is to wait for data from a program event.

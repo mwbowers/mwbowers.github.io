@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.DefaultSource Property
 
-Id: dcsPrintDevAttrClassDefaultSourceProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 3
-
-keywords: DefaultSource property
-keywords: PrintDevAttr.DefaultSource property
-keywords: printing, paper source, about this property
-keywords: printer device parameters, paper source
-keywords: printers, device parameters, paper source
-keywords: how to, set paper source to be used
-keywords: how to, return paper source to be used
-keywords: paper source, set/return values
-keywords: paper source, about
-
 ---
 
 The **DefaultSource** property specifies the printer tray to be used when printing. 

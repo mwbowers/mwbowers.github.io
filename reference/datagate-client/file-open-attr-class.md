@@ -1,14 +1,6 @@
 ---
 title: FileOpenAttr Class
 
-Id: dcsFileOpenAttrClass
-TocParent: dcsASNADataGateProvidersClasses
-TocOrder: 2
-
-keywords: FileOpenAttr class
-keywords: FileOpenAttr class, about FileOpenAttr class
-keywords: classes [DCS 16.0 FileOpenAttr class
-
 ---
 
 A set of properties representing attributes of an open file.

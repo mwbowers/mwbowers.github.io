@@ -1,18 +1,6 @@
 ---
 title: LocalDataCollection.RemoveAll Method
 
-Id: amfLocalDataCollectionClassRemoveAllMethod
-TocParent: amfLocalDataCollectionMethods
-TocOrder: 60
-
-keywords: RemoveAll Method
-keywords: LocalDataCollection.RemoveAll Method
-
-keywords: LDC, remove elements
-keywords: ldc, remove elements
-keywords: local data collection, remove elements
-keywords: how to, remove local data collection elements
-
 ---
 
 Removes all elements from **IDictionary** .

@@ -1,19 +1,6 @@
 ---
 title: CLProgram.RTVJOBA_TYPE Method
 
-Id: amfCLProgramClassRTVJOBA_TYPEMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 230
-
-keywords: RTVJOBA_TYPE method
-keywords: CLProgram.RTVJOBA_TYPE method
-keywords: batch job environment
-keywords: interactive job environment
-keywords: job attributes, batch job environment
-keywords: job attributes, interactive job environment
-keywords: CLProgram, get job type environment from job attributes
-keywords: how to, get job type environment from CLProgram job attributes
-
 ---
 
 Reference to the environment type from the job attributes for the job in which this CLProgram is used.

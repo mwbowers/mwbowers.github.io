@@ -1,16 +1,6 @@
 ---
 title: WebDevice.OutsidePages Field
 
-Id: amfWebDeviceClassOutsidePagesField
-TocParent: amfWebDeviceClassFields
-TocOrder: 50
-
-keywords: OutsidePages field
-keywords: WebDevice.OutsidePages field
-keywords: device control, getting pages
-keywords: display files, getting pages
-keywords: how to, getting pages
-
 ---
 
 representing a simple last-in first-out non-generic collection of objects.

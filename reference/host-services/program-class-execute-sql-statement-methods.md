@@ -1,19 +1,6 @@
 ---
 title: Program.ExecuteSQL_Statement Methods
 
-Id: amfProgramClassExecuteSQL_StatementMethods
-TocParent: amfProgramClassMethods
-TocOrder: 50
-
-keywords: ExecuteSQL_Statement method
-keywords: Program.ExecuteSQL_Statement method
-keywords: how to, execute SQL statement
-keywords: SQL nonquery
-keywords: SQL nonquery, executing
-keywords: SQL, executing nonquery
-keywords: SQL, nonquery
-keywords: programs, embedded SQL
-
 ---
 
 Overloaded method to execute a SQL command statement.

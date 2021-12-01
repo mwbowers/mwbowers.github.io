@@ -1,26 +1,6 @@
 ---
 title: Message Constructors
 
-Id: amfMessageClassMessageConstructors
-TocParent: amfMessageClass
-TocOrder: 10
-
-keywords: Message.Message constructors
-keywords: Message class, constructors
-keywords: constructors [ASNA.Monarch], Message class
-keywords: message files, constructing immediate messages
-keywords: messages, constructing immediate messages
-keywords: messages, constructing predefined messages
-keywords: messages files, constructing predefined messages
-keywords: how to, construct immediate messages
-keywords: how to, construct predefined messages
-keywords: how to, use message files for predefined messages
-keywords: how to, use message files for immediate messages
-keywords: immediate messages
-keywords: predefined messages
-keywords: messages, immediate
-keywords: messages, predefined
-
 ---
 
 The overloaded method constructs a new instance of a **Message** object for an immediate or predefined message.

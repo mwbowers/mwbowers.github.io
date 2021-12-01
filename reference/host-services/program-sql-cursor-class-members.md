@@ -1,14 +1,6 @@
 ---
 title: Program.SqlCursor Class Members
 
-Id: amfProgramSqlCursorClassMembers
-TocParent: amfProgramSqlCursorClass
-TocOrder: 5
-
-keywords: Program.SqlCursor class, all members
-keywords: members [ASNA.Monarch], Program.SqlCursor class
-keywords: SqlCursor class, members
-
 ---
 
 [ Program.SqlCursor Class Overview](program-sql-cursor-class.html) 

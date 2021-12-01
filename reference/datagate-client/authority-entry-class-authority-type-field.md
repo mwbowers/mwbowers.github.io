@@ -1,18 +1,6 @@
 ---
 title: AuthorityEntry.AuthorityType Field
 
-Id: dcsAuthorityEntryClassAuthorityTypeField
-TocParent: dcsAuthorityEntryFields
-TocOrder: 0
-
-keywords: AuthorityType field
-keywords: AuthorityEntry.AuthorityType field
-keywords: AuthorityTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AuthorityTypes, used by
-keywords: how to, establish database access and limitations
-keywords: database objects, authorities access and limitations established
-keywords: authorities, access and limitations established for database
-
 ---
 
 **AuthorityType** defines the access capabilities and limitations for this authorization entry.

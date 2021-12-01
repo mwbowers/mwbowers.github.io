@@ -1,17 +1,6 @@
 ---
 title: As400Program.Connection Property
 
-Id: dcsAs400ProgramClassConnectionProperty
-TocParent: dcsAs400ProgramPropertiesMain
-TocOrder: 0
-
-keywords: Connection property
-keywords: As400Program.Connection property
-
-keywords: database connections, hosting AdgConnection specified
-keywords: database servers, hosting connection specified
-keywords: how to, specify database host connection for program
-
 ---
 
 The **AdgConnection** object of the database server hosting the program to be called. 

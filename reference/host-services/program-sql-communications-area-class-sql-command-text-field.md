@@ -1,21 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea.SqlCommandText Field
 
-Id: amfProgramSQL_CommunicationsAreaClassSqlCommandTextField
-TocParent: amfProgramSQL_CommunicationsAreaClassFields
-TocOrder: 30
-
-keywords: SqlCommandText property
-keywords: SQL_CommunicationsArea.SqlCommandText field
-keywords: Program.SQL_CommunicationsArea.SqlCommandText field
-keywords: SQL, command text
-keywords: SqlCommandText
-keywords: how to, determine SQL command text
-keywords: SQL, SQLCA command text
-keywords: SQL, communications area, command text
-keywords: SQL communications area, text
-keywords: SQLCA, command text
-
 ---
 
 Read-only actual SQL command text.

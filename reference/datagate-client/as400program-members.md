@@ -1,13 +1,6 @@
 ---
 title: As400Program Members
 
-Id: dcsAs400ProgramMembers
-TocParent: dcsAs400ProgramClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 As400Program class
-keywords: As400Program class, all members
-
 ---
 
 [As400Program Overview](as400program-class.html) 

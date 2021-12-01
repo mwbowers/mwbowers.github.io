@@ -1,22 +1,6 @@
 ---
 title: WebJob.AcceptCommands Method
 
-Id: amfWebJobClassAcceptCommandsMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 10
-
-keywords: accepting commands
-keywords: command mode
-keywords: web job, entering command mode
-keywords: web job, prepare to accept command
-keywords: how to, prepare web job to accept command
-keywords: AcceptCommands method
-keywords: WebJob.AcceptCommands method
-keywords: non-display file aspx.vr, enter command mode
-keywords: aspx.vr, non-display file, enter command mode
-keywords: Web server controls, enter command mode
-keywords: Web server controls [ASNA Monarch], enter command mode
-
 ---
 
 Prepares a job to accept commands.

@@ -1,19 +1,6 @@
 ---
 title: ReadSequentialMode Enumeration
 
-Id: dcsReadSequentialModeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 27
-
-keywords: read sequential mode
-keywords: Current enumeration member
-keywords: First enumeration member
-keywords: Last enumeration member
-keywords: Next enumeration member
-keywords: Previous enumeration member
-keywords: ReadSequentialMode enumeration
-keywords: enumerations [DCS 16.0 ReadSequentialMode
-
 ---
 
 Defines modes of operation for the [ FileAdapter.ReadSequential](file-adapter-class-read-sequential-method.html) method.

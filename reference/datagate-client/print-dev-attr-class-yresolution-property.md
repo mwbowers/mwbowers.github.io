@@ -1,23 +1,6 @@
 ---
 title: PrintDevAttr.YResolution Property
 
-Id: dcsPrintDevAttrClassYResolutionProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 16
-
-keywords: YResolution property
-keywords: PrintDevAttr.YResolution property
-keywords: printing, y-resolution, about this property
-keywords: printing, graphics, y-resolution
-keywords: how to, set/return y-resolution
-keywords: how to, print graphics faster
-keywords: y-resolution, set/return values
-keywords: printers, y-resolution
-keywords: printers, dots-per-inch
-keywords: y-resolution, about
-keywords: printer device parameters, y-resolution
-keywords: printers, device parameters, y-resolution
-
 ---
 
 The **YResolution** specifies the y-axis resolution (in dots-per-inch) when printing graphics.

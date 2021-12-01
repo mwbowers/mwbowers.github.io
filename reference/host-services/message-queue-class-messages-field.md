@@ -1,17 +1,6 @@
 ---
 title: MessageQueue.Messages Field
 
-Id: amfMessageQueueClassMessagesField
-TocParent: amfMessageQueueClassFields
-TocOrder: 10
-
-keywords: Messages field
-keywords: MessageQueue.Messages field
-keywords: messages, queue
-keywords: message queues, messages
-keywords: message files, messages
-keywords: how to, get message queue messages
-
 ---
 
 A readonly **System.Collections.ArrayList** of the messages in the message queue.

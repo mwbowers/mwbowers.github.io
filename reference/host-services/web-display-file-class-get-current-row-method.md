@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.GetCurrentRow Method
 
-Id: amfWebDisplayFileClassGetCurrentRowMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 60
-
-keywords: GetCurrentRow method
-keywords: WebDisplayFile.GetCurrentRow method
-keywords: display files, returning current row
-keywords: current row of display file
-keywords: how to, return current row of display file
-
 ---
 
 Returns the current row number for the format name specified.

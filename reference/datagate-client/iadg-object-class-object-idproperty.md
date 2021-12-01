@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.ObjectID Property
 
-Id: dcsIAdgObjectClassObjectIDProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 9
-
-keywords: ObjectID property
-keywords: IAdgObject.ObjectID property
-keywords: object identifiers, for database objects
-keywords: object identifiers
-keywords: database objects, return object identifier
-keywords: how to, return object identifier for database objects
-
 ---
 
 **ObjectID** identifies the object represented by **IAdgObject** .

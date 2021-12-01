@@ -1,10 +1,6 @@
 ---
 title: ProgParmType(string, integer, FieldType)
 
-Id: dcsProgParmTypeClassProgParmTypeConstructor
-TocParent: dcsProgParmTypeConstructorsMain
-TocOrder: 0
-
 ---
 
 Defines the data type of a simple iSeries program parameter.

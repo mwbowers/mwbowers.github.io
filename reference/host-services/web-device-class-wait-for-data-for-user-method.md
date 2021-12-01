@@ -1,17 +1,6 @@
 ---
 title: WebDevice.WaitForDataForUser Method
 
-Id: amfWebDeviceClassWaitForDataForUserMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 150
-
-keywords: WaitForDataForUser method
-keywords: WebDevice.WaitForDataForUser method
-keywords: wait state
-keywords: web device, wait for data from user event
-keywords: display files, signal the webdevice thread to wait for data from user event
-keywords: how to, signals the webdevice thread to wait for data from user event
-
 ---
 
 Signals the **WebDevice** object thread the device is to wait for data from a user event.

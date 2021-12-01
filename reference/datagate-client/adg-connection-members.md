@@ -1,13 +1,6 @@
 ---
 title: AdgConnection Members
 
-Id: dcsAdgConnectionMembers
-TocParent: dcsAdgConnectionClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 AdgConnection class
-keywords: AdgConnection class, all members
-
 ---
 
 [AdgConnection Overview](adg-connection-class.html) 

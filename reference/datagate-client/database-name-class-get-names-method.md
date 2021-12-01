@@ -1,13 +1,6 @@
 ---
 title: DatabaseName.GetNames Method
 
-Id: dcsDatabaseNameClassGetNamesMethod
-TocParent: dcsDatabaseNameMethods
-TocOrder: 2
-
-keywords: GetNames method
-keywords: DatabaseName.GetNames method
-
 ---
 
 Returns the currently registered database names available for use in a program.

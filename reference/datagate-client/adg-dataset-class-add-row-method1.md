@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.AddRow(integer)
 
-Id: dcsAdgDataSetClassAddRowMethod1
-TocParent: dcsAdgDataSetClassAddRowMethods
-TocOrder: 0
-
 ---
 
 Add a prepared row to the table for a particular format.

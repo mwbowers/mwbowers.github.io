@@ -1,14 +1,6 @@
 ---
 title: WebDisplayFile Class
 
-Id: amfWebDisplayFileClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 240
-
-keywords: WebDisplayFile class
-keywords: WebDisplayFile class, about WebDisplayFile class
-keywords: classes [ASNA.Monarch], WebDisplayFile class
-
 ---
 
 The **WebDisplayFile** class provides for form control for program web device, program, and job.

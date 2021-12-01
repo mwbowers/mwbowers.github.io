@@ -1,18 +1,6 @@
 ---
 title: ILibraryList.EnumerateCurrentUser Method
 
-Id: dcsILibraryListClassEnumerateCurrentUserMethod
-TocParent: dcsILibraryListMethods
-TocOrder: 2
-
-keywords: EnumerateCurrentUser method
-keywords: ILibraryList.EnumerateCurrentUser method
-keywords: AdgEnumerator delegate, used by
-keywords: delegates [DCS 16.0 AdgEnumerator, used by
-keywords: enumerate contents of library list
-keywords: how to, enumerate contents of library list
-keywords: library lists, enumerate object contents of
-
 ---
 
 **EnumerateCurrentUser** enumerates the object contents of the user portion of the library list represented by **ILibraryList** , with the supplied [AdgEnumerator](adg-enumerator-delegate.html) delegate.

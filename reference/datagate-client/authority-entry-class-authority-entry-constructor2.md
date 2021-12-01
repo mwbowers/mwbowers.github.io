@@ -1,10 +1,6 @@
 ---
 title: AuthorityEntry(string)
 
-Id: dcsAuthorityEntryClassAuthorityEntryConstructor2
-TocParent: dcsAuthorityEntryClassAuthorityEntryConstructors
-TocOrder: 1
-
 ---
 
 <span>Creates a new instance of <span> **AuthorityEntry** </span> with all fields except **Username** initialized to default values</span>. 

@@ -1,16 +1,6 @@
 ---
 title: Program.ExecCommand Method
 
-Id: amfProgramClassExecCommandMethod
-TocParent: amfProgramClassMethods
-TocOrder: 20
-
-keywords: Program.ExecCommand method
-keywords: ExecCommand method
-keywords: program control, executing commands
-keywords: how to, execute commands
-keywords: commands, how to execute
-
 ---
 
 Executes a program command.

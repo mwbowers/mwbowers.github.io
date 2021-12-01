@@ -1,18 +1,6 @@
 ---
 title: WebDisplayFile.IsActive Method
 
-Id: amfWebDisplayFileClassIsActiveMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 90
-
-keywords: IsActive method
-keywords: WebDisplayFile.IsActive method
-keywords: format names
-keywords: format names, active format in display file
-keywords: display file, format name active
-keywords: how to, determine if format name in display file is active
-keywords: display files, determine if format name is active
-
 ---
 
 Returns **True** if the format name specified is the active format; otherwise **False** .

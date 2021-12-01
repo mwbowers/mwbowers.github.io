@@ -1,10 +1,6 @@
 ---
 title: MaxSystemLibl Field
 
-Id: dcsMaxSystemLiblEnumeration
-TocParent: dcsSourceProfileFieldsMain
-TocOrder: 0
-
 ---
 
 A constant containing the maximum number of library list entries used by all processes, which open this database as the system portion of their library list. A maximum of 15 entries can be given.

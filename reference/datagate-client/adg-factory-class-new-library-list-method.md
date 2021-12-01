@@ -1,17 +1,6 @@
 ---
 title: AdgFactory.NewLibraryList Method
 
-Id: dcsAdgFactoryClassNewLibraryListMethod
-TocParent: dcsAdgFactoryMethods
-TocOrder: 40
-
-keywords: NewLibraryList method
-keywords: AdgFactory.NewLibraryList method
-keywords: path names, create for database library list
-keywords: create database library list
-keywords: database library lists, create
-keywords: how to, create database library lists
-
 ---
 
 The **NewLibraryList** method creates a new instance of [ ILibraryList](ilibrary-list-class.html) representing a library list for object management functions.

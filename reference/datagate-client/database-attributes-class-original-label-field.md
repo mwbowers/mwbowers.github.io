@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.OriginalLabel Field
 
-Id: dcsDatabaseAttributesClassOriginalLabelField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 4
-
-keywords: OriginalLabel field
-keywords: DatabaseAttributes.OriginalLabel field
-
 ---
 
 The original database label name.

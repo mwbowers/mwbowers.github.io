@@ -1,19 +1,6 @@
 ---
 title: ILibraryList.CurrentUserLibs Property
 
-Id: dcsILibraryListClassCurrentUserLibsProperty
-TocParent: dcsILibraryListProperties
-TocOrder: 1
-
-keywords: CurrentUserLibs property
-keywords: ILibraryList.CurrentUserLibs property
-keywords: directories, setting user portion of directories in current library list
-keywords: directories, getting user portion of directories in current library list
-keywords: library lists, setting user portion of directories in
-keywords: library lists, getting user portion of directories in
-keywords: how to, set user portion of directories in the current library list
-keywords: how to, get user portion of directories in the current library list
-
 ---
 
 **CurrentUserLibs** sets or returns a string array containing a list of the user portion of the directories in the current library list represented by **ILibraryList** . 

@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.FormatRequested Property
 
-Id: dcsFileAdapterClassFormatRequestedProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 7
-
-keywords: FormatRequested property
-keywords: FileAdapter.FormatRequested property
-keywords: multiformat files, format index of most recent
-keywords: file formats, index of most recent
-keywords: file format index of most recent
-keywords: files, format index of most recent
-keywords: database files, format index of most recent
-
 ---
 
 Reflects the most recent format specified in a [ SetFormat](file-adapter-class-set-format-method.html) or [ResetFormat](file-adapter-class-reset-format-method.html) method call.

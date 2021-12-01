@@ -1,10 +1,6 @@
 ---
 title: Introduction
 
-Id: dcsIntroductionMain
-TocParent: dcsProgrammersGuideMain
-TocOrder: 0
-
 ---
 
 This section of the ASNA DataGate Component Suite documentation contains an overview of the DataGate Component Suite.

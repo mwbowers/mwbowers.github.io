@@ -1,34 +1,6 @@
 ---
 title: DataTypes Enumeration
 
-Id: dcsDataTypesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 7
-
-keywords: DataTypes enumeration
-keywords: enumerations [DCS 16.0 DataTypes
-keywords: types of data fields
-keywords: fields, types of data
-keywords: data types, constants
-keywords: Binary enumeration member
-keywords: Boolean enumeration member
-keywords: Char enumeration member
-keywords: Date enumeration member
-keywords: DBCS enumeration member
-keywords: DontCare enumeration member
-keywords: Float enumeration member
-keywords: Hex enumeration member
-keywords: Integer enumeration member
-keywords: MaxType enumeration member
-keywords: NoType enumeration member
-keywords: Packed enumeration member
-keywords: Print enumeration member
-keywords: Structured enumeration member
-keywords: Time enumeration member
-keywords: Timestamp enumeration member
-keywords: Unicode enumeration member
-keywords: Zoned enumeration member
-
 ---
 
 The <span> **DataTypes** </span> enumerated constant defines values on the types of fields available. This enumeration is used by the [DataType](field-type-class-data-type-property.html) property for [FieldType](field-type-class.html) objects.

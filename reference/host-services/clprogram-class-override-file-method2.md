@@ -1,15 +1,6 @@
 ---
 title: CLProgram.OverrideFile(string, OverrideOptions, object, OverrideScope)
 
-Id: amfCLProgramClassOverrideFileMethod2
-TocParent: amfCLProgramClassOverrideFileMethods
-TocOrder: 20
-
-keywords: enumerations [ASNA.Monarch], OverrideOptions, used by
-keywords: OverrideOptions enumeration, used by
-keywords: enumerations [ASNA.Monarch], OverrideScope, used by
-keywords: OverrideScope enumeration, used by
-
 ---
 
 This method provides CLProgram file override options within Monarch for the specified level of scope.

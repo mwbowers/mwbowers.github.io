@@ -1,18 +1,6 @@
 ---
 title: SourceProfile.GetNames Method
 
-Id: dcsSourceProfileClassGetNamesMethod
-TocParent: dcsSourceProfileMethodsMain
-TocOrder: 3
-
-keywords: GetNames method
-keywords: SourceProfile.GetNames method
-keywords: Windows registry, database names retrieved from
-keywords: registered database names, retrieved
-keywords: database connections, registry names retrieved
-keywords: connections, database names currently registered retrieved
-keywords: how to, retrieve current registered database names
-
 ---
 
 ## <span style="font-color:red">Deprecated</span>

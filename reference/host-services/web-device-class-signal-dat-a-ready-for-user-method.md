@@ -1,18 +1,6 @@
 ---
 title: WebDevice.SignalDataReadyForUser Method
 
-Id: amfWebDeviceClassSignalDataReadyForUserMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 130
-
-keywords: SignalDataReadyForUser method
-keywords: WebDevice.SignalDataReadyForUser method
-keywords: run state
-keywords: ready state
-keywords: web device, ready for data from user event
-keywords: display files, signal the webdevice thread ready for data from user event
-keywords: how to, signals the webdevice thread ready for data from user event
-
 ---
 
 Signals the **WebDevice** object thread indicate the device is ready for data from a user event.

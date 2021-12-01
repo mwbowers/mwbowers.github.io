@@ -1,21 +1,6 @@
 ---
 title: LocalDataCollection.this Property
 
-Id: amfLocalDataCollectionClassthisProperty
-TocParent: amfLocalDataCollectionProperties
-TocOrder: 30
-
-keywords: this property
-keywords: LocalDataCollection.this property
-keywords: how to, add element to local data collection
-keywords: how to, change element in local data collection
-keywords: ldc, adding element
-keywords: ldc, changing element
-keywords: LDC, adding element
-keywords: LDC, changing element
-keywords: local data collection, adding element
-keywords: local data collection, changing element
-
 ---
 
 Gets or sets the collection element with the specified name.

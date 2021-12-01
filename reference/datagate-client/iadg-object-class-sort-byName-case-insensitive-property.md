@@ -1,15 +1,6 @@
 ---
 title: IAdgObject.SortByNameCaseInsensitive Property
 
-Id: dcsIAdgObjectClassSortByNameCaseInsensitiveProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 16
-
-keywords: SortByNameCaseInsensitive property
-keywords: IAdgObject.SortByNameCaseInsensitive property
-keywords: IComparer, returne instances for database object case insensitive string comparision
-keywords: how to, return IComparer instances for case insensitive database object string comparision
-
 ---
 
 **SortByNameCaseInsensitive** returns an **IComparer** instance suitable for comparing instances of [ IAdgObject](iadg-object-class.html) based on the value returned by their [ ToString](iadg-object-class-toString-method.html) method. String comparison is conducted using **System.Collections.CaseInsensitiveComparer** .

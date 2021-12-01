@@ -1,10 +1,6 @@
 ---
 title: SourceProfile.SourceProfile Constructor(string)
 
-Id: dcsSourceProfileClassSourceProfileConstructor2
-TocParent: dcsSourceProfileConstructorsMain
-TocOrder: 1
-
 ---
 
 ## <span style="font-color:red">Deprecated</span>

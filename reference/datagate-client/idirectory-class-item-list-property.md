@@ -1,16 +1,6 @@
 ---
 title: IDirectory.ItemList Property
 
-Id: dcsIDirectoryClassItemListProperty
-TocParent: dcsIDirectoryProperties
-TocOrder: 0
-
-keywords: ItemList property
-keywords: IDirectory.ItemList property
-keywords: database libraries, return list of files and libraries
-keywords: how to, list files and libraries in a database library
-keywords: itemlist of files and libraries in a database library
-
 ---
 
 **ItemList** is a list of [IAdgObject](iadg-object-class.html) references corresponding to the database object contents of an existing library.

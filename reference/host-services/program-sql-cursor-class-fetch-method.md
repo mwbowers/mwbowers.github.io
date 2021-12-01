@@ -1,19 +1,6 @@
 ---
 title: Program.SqlCursor.Fetch Method
 
-Id: amfProgramSqlCursorClassFetchMethod
-TocParent: amfProgramSqlCursorClassMethods
-TocOrder: 20
-
-keywords: Fetch method
-keywords: SqlCursor.Fetch method
-keywords: Program.SqlCursor.Fetch method
-keywords: SQL, fetching cursor
-keywords: SQL cursor, fetching
-keywords: how to, fetch SQL cursor
-keywords: enumerations [ASNA.Monarch], Program.SqlCursor.FetchOrientations, used by
-keywords: Program.SqlCursor.FetchOrientations enumeration, used by
-
 ---
 
 Determines if results are available and conditions the lines that retrieve the query results by the [ SqlCursor.FetchOrientations](program-sql-cursor-fetch-orientations-enumeration.html) value.

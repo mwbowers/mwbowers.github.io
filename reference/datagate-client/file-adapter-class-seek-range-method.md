@@ -1,24 +1,6 @@
 ---
 title: FileAdapter.SeekRange Method
 
-Id: dcsFileAdapterClassSeekRangeMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 27
-
-keywords: SeekRange method
-keywords: FileAdapter.SeekRange method
-keywords: RangeFirst enumeration, used by
-keywords: RangeLast enumeration, used by
-keywords: RangeMode enumeration, used by
-keywords: enumerations [DCS 16.0 RangeFirst, used by
-keywords: enumerations [DCS 16.0 RangeLast, used by
-keywords: enumerations [DCS 16.0 RangeMode, used by
-keywords: database files, set record pointer by key range
-keywords: files, set record pointer by key range
-keywords: records, set file pointer by key range
-keywords: set file record pointer by key range
-keywords: how to, set file record pointer by key range
-
 ---
 
 Moves the record pointer associated with the currently open file without reading records to within a range of key values. 

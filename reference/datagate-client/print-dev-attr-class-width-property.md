@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.Width Property
 
-Id: dcsPrintDevAttrClassWidthProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 15
-
-keywords: Width property
-keywords: PrintDevAttr.Width property
-keywords: printing, width, about this property
-keywords: how to, set/return width of paper
-keywords: width, set/return values
-keywords: printers, width of paper
-keywords: paper width, specifying
-keywords: printer device parameters, width
-keywords: printers, device parameters, width
-
 ---
 
 The **Width** specifies the width of paper in the printer.

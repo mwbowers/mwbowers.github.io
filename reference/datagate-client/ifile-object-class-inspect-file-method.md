@@ -1,14 +1,6 @@
 ---
 title: IFileObject.InspectFile Method
 
-Id: dcsIFileObjectClassInspectFileMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 2
-
-keywords: InspectFile method, IFileObject class
-keywords: InspectFile method
-keywords: IFileObject.InspectFile method
-
 ---
 
 InspectFile is reserved for internal use by DCS and should not be invoked by user programs .

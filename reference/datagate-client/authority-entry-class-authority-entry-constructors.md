@@ -1,26 +1,6 @@
 ---
 title: AuthorityEntry.Constructors
 
-Id: dcsAuthorityEntryClassAuthorityEntryConstructors
-TocParent: dcsAuthorityEntryClass
-TocOrder: 1
-
-keywords: AuthorityEntry class, constructors
-keywords: constructors [DCS 16.0 AuthorityEntry class
-keywords: AuthorityEntry.AuthorityEntry constructors
-keywords: how to, establish database user or group profile name
-keywords: authorities, profile name established for database
-keywords: user profile names, established for database
-keywords: group profile names, established for database
-keywords: how to, establish database access and limitations
-keywords: database objects, authorization access and limitations established
-keywords: authorities, access and limitations established for database
-keywords: how to, indicate authority profile name as single user
-keywords: how to, indicate authority profile name as group user
-keywords: user profile names, indicate authority for
-keywords: group profile names, indicate authority for
-keywords: authorities, user or group indicated for database
-
 ---
 
 Creates an instance of an **AuthorityEntry** class object with field initialization options given by various overloads.

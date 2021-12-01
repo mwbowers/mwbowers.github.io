@@ -1,13 +1,6 @@
 ---
 title: Job.OverrideFile Method(string,OverrideOptions,object)
 
-Id: amfJobClassOverrideFileMethod1
-TocParent: amfJobClassOverrideFileMethods
-TocOrder: 10
-
-keywords: enumerations [ASNA.Monarch], OverrideOptions, used by
-keywords: OverrideOptions enumeration, used by
-
 ---
 
 This method provides Job file override options within Monarch.

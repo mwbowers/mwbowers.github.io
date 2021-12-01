@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.Count Property
 
-Id: amfLocalDataCollectionClassCountProperty
-TocParent: amfLocalDataCollectionProperties
-TocOrder: 10
-
-keywords: Count property
-keywords: LocalDataCollection.Count property
-keywords: ldc, counting elements
-keywords: LDC, counting elements
-keywords: local data collection, counting contents
-keywords: how to, count local data collection elements
-
 ---
 
 Gets the number of elements in **ICollection** .

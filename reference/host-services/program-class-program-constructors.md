@@ -1,18 +1,6 @@
 ---
 title: Program Constructor()
 
-Id: amfProgramClassProgramConstructors
-TocParent: amfProgramClass
-TocOrder: 10
-
-keywords: Program.Program constructors
-keywords: Program class, constructors
-keywords: constructors [ASNA.Monarch], Program class
-keywords: how to, construct new program object
-keywords: program controls, new
-keywords: programs, new
-keywords: new program
-
 ---
 
 Construct a new instance of a Program object.

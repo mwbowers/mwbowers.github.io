@@ -1,15 +1,6 @@
 ---
 title: FieldType Class
 
-Id: dcsFieldTypeClass
-TocParent: dcsASNADataGateCommonClasses
-TocOrder: 1
-
-keywords: classes [DCS 16.0 FieldType class
-keywords: FieldType class
-keywords: FieldType class, about FieldType class
-keywords: fields, about field types
-
 ---
 
 The **FieldType** class contains data type details of a database field, such as its type, length, precision, and scale.

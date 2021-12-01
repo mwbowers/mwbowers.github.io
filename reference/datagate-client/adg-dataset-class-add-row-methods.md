@@ -1,18 +1,6 @@
 ---
 title: AAdgDataSet.ddRow Methods
 
-Id: dcsAdgDataSetClassAddRowMethods
-TocParent: dcsAdgDataSetMethods
-TocOrder: 2
-
-keywords: AddRow methods
-keywords: AdgDataSet.AddRow methods
-
-keywords: rows, add to a table
-keywords: add rows to a table
-keywords: how to, add rows to a table
-keywords: tables, add rows to
-
 ---
 
 Creates a DataRow object in preparation for adding it to the **AdgDataSet** .

@@ -1,13 +1,6 @@
 ---
 title: ASNA.DataGate.Common Classes
 
-Id: dcsASNADataGateCommonClasses
-TocParent: dcsDataGateCommonNamespace
-TocOrder: 0
-
-keywords: ASNA.DataGate.Common namespace, classes
-keywords: classes [DCS 16.0 ASNA.DataGate.Common
-
 ---
 
 ## Classes

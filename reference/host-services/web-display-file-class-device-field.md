@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.Device Field
 
-Id: amfWebDisplayFileClassDeviceField
-TocParent: amfWebDisplayFileClassFields
-TocOrder: 10
-
-keywords: Device field
-keywords: WebDisplayFile.Device field
-keywords: device, display file
-keywords: web device, display file
-keywords: display files, web device
-keywords: how to, determine web device for display file
-
 ---
 
 This field contains the [WebDevice](web-device-class.html) for the **WebDisplayFile** program.

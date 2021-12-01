@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.Contains Method
 
-Id: amfLocalDataCollectionClassContainsMethod
-TocParent: amfLocalDataCollectionMethods
-TocOrder: 30
-
-keywords: Contains Method
-keywords: LocalDataCollection.Contains Method
-keywords: ldc, checking contents
-keywords: LDC, checking contents
-keywords: local data collection, checking contents
-keywords: how to, check local data collection contents
-
 ---
 
 This method returns a boolean value indicating if the **IDictionary** contains an element with the name specified.

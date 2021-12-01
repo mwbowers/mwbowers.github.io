@@ -1,18 +1,6 @@
 ---
 title: XmlInfoEventArgs.Type Field
 
-Id: dcsXmlInfoEventArgsClassTypeField
-TocParent: dcsXmlInfoEventArgsFields
-TocOrder: 1
-
-keywords: Type field
-keywords: XmlInfoEventArgs.Type field
-keywords: XmlInfoEventType enumeration, used by
-keywords: enumerations [DCS 16.0 XmlInfoEventType, used by
-keywords: XML [DCS 16.0 events, feedback type
-keywords: XML [DCS 16.0 event handler, feedback type
-keywords: event handlers, feedback type
-
 ---
 
 The **Type** field denotes the type of event being reported.

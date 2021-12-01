@@ -1,12 +1,6 @@
 ---
 title: Command.AidKey Enumeration
 
-Id: amfCommandAidKeyEnumeration
-TocParent: amfMonarchNamespaceEnumerations
-TocOrder: 10
-
-keywords: function keys, enumeration values, attention keys
-
 ---
 
 The **Command.AidKey** enumerated constant defines the function and attention keys for the [ Command.PushKeyFocus](amfCommandClassPushKeyFocusMethod.html) method. Please note that this Value must be converted from/to type *Byte for the **FeedBackAid** property. The hexadecimal values for the enumeration values are noted below.

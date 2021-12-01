@@ -1,18 +1,6 @@
 ---
 title: FileOpenAttr.BlockingFactor Property
 
-Id: dcsFileOpenAttrClassBlockingFactorProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 0
-
-keywords: BlockingFactor property
-keywords: FileOpenAttr.BlockingFactor property
-keywords: network blocking factor
-keywords: network blocking factor, number of records specified
-keywords: how to, network blocking factor established
-keywords: database files, network blocking factor specified
-keywords: files, network blocking factor specified
-
 ---
 
 Specify network blocking feature in the open file.

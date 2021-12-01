@@ -1,13 +1,6 @@
 ---
 title: SourceProfile Members
 
-Id: dcsSourceProfileMembers
-TocParent: dcsSourceProfileClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 SourceProfile class
-keywords: SourceProfile class, all members
-
 ---
 
 [SourceProfile Overview](source-profile-class.html) 

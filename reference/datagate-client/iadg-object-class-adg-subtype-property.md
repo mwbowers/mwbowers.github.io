@@ -1,22 +1,6 @@
 ---
 title: IAdgObject.AdgSubType Property
 
-Id: dcsIAdgObjectClassAdgSubTypeProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 1
-
-keywords: AdgSubType property
-keywords: IAdgObject.AdgSubType property
-keywords: AdgSubTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AdgSubTypes, used by
-keywords: types, database object sub-types
-keywords: database types, identifying sub-types
-keywords: database sub-types, identifying
-keywords: database files, identifying sub-type
-keywords: database file members, identifying sub-type
-keywords: database libraries, identifying sub-type
-keywords: how to, identify sub-type of database object
-
 ---
 
 **AdgSubType** identifies the secondary type of the database object represented by **IAdgObject** . 

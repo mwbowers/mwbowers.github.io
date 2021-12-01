@@ -1,15 +1,6 @@
 ---
 title: ActivationGroupAttribute.IsNew Property
 
-Id: amfActivationGroupAttributeClassIsNewProperty
-TocParent: amfActivationGroupAttributeClassProperties
-TocOrder: 40
-
-keywords: IsNew property
-keywords: ActivationGroupAttribute.IsNew property
-keywords: activation group, _Star_new
-keywords: activation group attributes, _Star_new
-
 ---
 
 Gets a boolean value indicating whether the program is to be run in a new activation group. The default is **False** .

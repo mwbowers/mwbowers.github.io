@@ -1,15 +1,6 @@
 ---
 title: dgErrorNumber Enumeration
 
-Id: dcsdgErrorNumberEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 12
-
-keywords: dgErrorNumber enumeration
-keywords: enumerations [DCS 16.0 dgErrorNumber
-keywords: run-time errors, type of
-keywords: type of run-time error
-
 ---
 
 Specifies the type of DCS run-time error.

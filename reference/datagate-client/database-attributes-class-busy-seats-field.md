@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.BusySeats Field
 
-Id: dcsDatabaseAttributesClassBusySeatsField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 0
-
-keywords: BusySeats field
-keywords: DatabaseAttributes.BusySeats field
-
 ---
 
 The total number of 'busy seats' for the database. All application running from a single PC to a database counts as 'one' seat.

@@ -1,17 +1,6 @@
 ---
 title: WebDevice.GetSharedFile Method
 
-Id: amfWebDeviceClassGetSharedFileMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 60
-
-keywords: GetSharedFile method
-keywords: WebDevice.GetSharedFile method
-keywords: device control, getting shared file
-keywords: display files, getting shared file
-keywords: shared files, getting for device
-keywords: how to, getting shared file for device
-
 ---
 
 Returns an instance of the [ WebDisplayFile](web-display-file-class.html) object for the file name specified.

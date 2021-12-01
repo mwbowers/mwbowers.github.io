@@ -1,27 +1,6 @@
 ---
 title: Program.SendProgramMessage Methods
 
-Id: amfProgramClassSendProgramMessageMethods
-TocParent: amfProgramClassMethods
-TocOrder: 90
-
-keywords: Program.SendProgramMessage methods
-keywords: SendProgramMessage methods
-keywords: message queues, sending
-keywords: messages, sending to program
-keywords: messages, sending to program queue
-keywords: predefined messages, sending to program
-keywords: immediate messages, sending to program
-keywords: sending program messages
-keywords: sending immediate program messages
-keywords: sending predefined program messages
-keywords: program messages, sending predefined
-keywords: program messages, sending immediate
-keywords: how to, send program messages
-keywords: how to, send predefined program messages
-keywords: how to, send immediate program messages
-keywords: how to, send program messages to program queue
-
 ---
 
 Appends different message types to the program message queue associated with the caller's caller or to the specified program message queue.

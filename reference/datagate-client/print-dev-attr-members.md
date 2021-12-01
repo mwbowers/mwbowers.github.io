@@ -1,13 +1,6 @@
 ---
 title: PrintDevAttr Members
 
-Id: dcsPrintDevAttrMembers
-TocParent: dcsPrintDevAttrClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 PrintDevAttr class
-keywords: PrintDevAttr class, all members
-
 ---
 
 For additional methods see [PrintDevAttr Overview](print-dev-attr-class.html).

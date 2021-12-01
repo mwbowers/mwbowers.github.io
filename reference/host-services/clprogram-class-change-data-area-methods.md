@@ -1,19 +1,6 @@
 ---
 title: CLProgram.ChangeDataArea Methods
 
-Id: amfCLProgramClassChangeDataAreaMethods
-TocParent: amfCLProgramClassMethods
-TocOrder: 50
-
-keywords: CLProgram.ChangeDataArea methods
-keywords: ChangeDataArea methods
-
-keywords: changing program data area values
-keywords: how to, change program data area values
-keywords: program data areas, changing values
-keywords: data areas, changing program values
-keywords: local data areas, changing program values
-
 ---
 
 Changes the path to the data area associated with the CLProgram object.

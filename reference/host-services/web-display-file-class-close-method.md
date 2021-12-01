@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.Close Method
 
-Id: amfWebDisplayFileClassCloseMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 30
-
-keywords: Close method
-keywords: WebDisplayFile.Close method
-keywords: closing aspx web form program
-keywords: display files, closing aspx web form program
-keywords: how to, close aspx web form program
-
 ---
 
 Closes the '.aspx.' web form program and dataSet for the **WebDisplayFile** .

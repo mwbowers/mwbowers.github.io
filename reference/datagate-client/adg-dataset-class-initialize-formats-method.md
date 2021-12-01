@@ -1,17 +1,6 @@
 ---
 title: AdgDataSet.InitializeFormats Method
 
-Id: dcsAdgDataSetClassInitializeFormatsMethod
-TocParent: dcsAdgDataSetMethods
-TocOrder: 7
-
-keywords: AdgDataSet.InitializeFormats method
-keywords: InitializeFormats method
-keywords: initialize, AdgDataSet class
-keywords: initialize formats, AdgDataSet class
-keywords: file formats, initializing
-keywords: format names, initializing
-
 ---
 
 Initialize an instance of **AdgDataSet** .

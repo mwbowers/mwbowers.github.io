@@ -1,18 +1,6 @@
 ---
 title: IDataArea.Decimals Method
 
-Id: dcsIDataAreaClassDecimalsProperty
-TocParent: dcsIDataAreaClassMembers
-TocOrder: 7
-
-keywords: Decimals property
-keywords: IDataArea.Decimals property
-
-keywords: data areas, decimals
-keywords: data areas, setting decimals
-keywords: data areas, getting decimals
-keywords: how to, set number of decimals in data area
-
 ---
 
 Gets or sets the number of decimals in the data area.

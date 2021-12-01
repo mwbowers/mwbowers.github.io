@@ -1,16 +1,6 @@
 ---
 title: SourceProfile.InitialLibl Property
 
-Id: dcsSourceProfileClassInitialLiblProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 1
-
-keywords: InitialLibl property
-keywords: SourceProfile.InitialLibl property
-keywords: initial library list, getting
-keywords: get initial library list
-keywords: database files, get initial library list
-
 ---
 
 Gets and sets the current database’s initial library list. 

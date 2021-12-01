@@ -1,20 +1,6 @@
 ---
 title: DatabaseName.Register Method
 
-Id: dcsDatabaseNameClassRegisterMethod
-TocParent: dcsDatabaseNameMethods
-TocOrder: 4
-
-keywords: Register method
-keywords: DatabaseName.Register method
-keywords: Windows registry, register database names
-keywords: database names, create and update registry
-keywords: registered database names, create and update
-keywords: connections, database named registered
-keywords: database connections, registry database name created or updated
-keywords: how to, update registered name of database
-keywords: how to, create registered name of database
-
 ---
 
 Saves the contents of the **SourceProfile** object to the system registry as a database name. 

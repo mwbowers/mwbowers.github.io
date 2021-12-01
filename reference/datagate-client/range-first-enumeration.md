@@ -1,16 +1,6 @@
 ---
 title: RangeFirst Enumeration
 
-Id: dcsRangeFirstEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 22
-
-keywords: Exclude enumeration member
-keywords: Include enumeration member
-keywords: Top enumeration member
-keywords: RangeFirst enumeration
-keywords: enumerations [DCS 16.0 RangeFirst
-
 ---
 
 Defines parameter values for [FileAdapter](file-adapter-class.html) range access methods.

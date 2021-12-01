@@ -1,18 +1,6 @@
 ---
 title: WebDisplayFile.Read Method
 
-Id: amfWebDisplayFileClassReadMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 110
-
-keywords: NoDeviceAvailableException
-keywords: Read method
-keywords: WebDisplayFile.Read method
-keywords: display files, reading array
-keywords: reading array in display file
-keywords: how to, read array in display file
-keywords: display files, reading
-
 ---
 
 Reads an array of characters in the **WebDisplayFile** object by the specified indicators.

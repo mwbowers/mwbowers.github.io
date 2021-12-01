@@ -1,13 +1,6 @@
 ---
 title: FileAdapter Methods
 
-Id: dcsFileAdapterMethods
-TocParent: dcsFileAdapterClass
-TocOrder: 2
-
-keywords: methods DCS 16.0 FileAdapter class
-keywords: FileAdapter class, methods
-
 ---
 
 [FileAdapter Overview](file-adapter-class.html) 

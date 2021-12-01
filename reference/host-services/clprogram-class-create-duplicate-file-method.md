@@ -1,19 +1,6 @@
 ---
 title: CLProgram.CreateDuplicateFile Method
 
-Id: amfCLProgramClassCreateDuplicateFileMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 80
-
-keywords: CreateDuplicateFile method
-keywords: CLProgram.CreateDuplicateFile method
-keywords: how to, create duplicate file
-keywords: how to, create duplicate file definition only
-keywords: files, creating duplicate
-keywords: files, creating definition only
-keywords: physical files, creating duplicate
-keywords: physical files, creating definition only
-
 ---
 
 Creates a duplicate file.

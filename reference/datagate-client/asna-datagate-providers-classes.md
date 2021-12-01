@@ -1,13 +1,6 @@
 ---
 title: ASNA.DataGate.Providers Classes
 
-Id: dcsASNADataGateProvidersClasses
-TocParent: dcsDataGateProvidersNamespace
-TocOrder: 0
-
-keywords: ASNA.DataGate.Providers namespace, classes
-keywords: classes [DCS 16.0 ASNA.DataGate.Providers
-
 ---
 
 ## Classes

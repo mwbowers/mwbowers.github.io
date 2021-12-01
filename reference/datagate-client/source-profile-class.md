@@ -1,17 +1,6 @@
 ---
 title: SourceProfile Class
 
-Id: dcsSourceProfileClass
-TocParent: dcsASNADataGateProvidersClasses
-TocOrder: 5
-
-keywords: classes [DCS 16.0 SourceProfile class
-keywords: SourceProfile class
-keywords: SourceProfile class, about SourceProfile class
-keywords: database connections, about SourceProfile
-keywords: database connections, manipulating
-keywords: database connections, register name interface
-
 ---
 
 The <span>SourceProfile</span> class objects encapsulate the information required to create a database connection.

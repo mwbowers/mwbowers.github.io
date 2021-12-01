@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.DataSet Property
 
-Id: amfWebDisplayFileClassdataSetProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 20
-
-keywords: DataSet property
-keywords: WebDisplayFile.DataSet property
-keywords: display files, dataset
-keywords: how to, return dataset for display file
-keywords: DataSet, returning for display file
-
 ---
 
 Gets the in-memory containing the collection of objects for the **WebDisplayFile** .

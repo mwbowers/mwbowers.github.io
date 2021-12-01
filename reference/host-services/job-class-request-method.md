@@ -1,16 +1,6 @@
 ---
 title: Job.Request Method
 
-Id: amfJobClassRequestMethod
-TocParent: amfJobMethods
-TocOrder: 150
-
-keywords: Request method
-keywords: Job.Request method
-keywords: jobs, closing elegantly switches
-keywords: job request
-keywords: how to, change force-close delay
-
 ---
 
 Sets a value (in seconds) to wait for Monarch (or Wings-related) programs to dispose or shut down elegantly. It has a default value of 20.

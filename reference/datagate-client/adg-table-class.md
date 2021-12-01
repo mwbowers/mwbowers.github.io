@@ -1,14 +1,6 @@
 ---
 title: AdgTable Class
 
-Id: dcsAdgTableClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 4
-
-keywords: classes [DCS 16.0 AdgTable class
-keywords: AdgTable class
-keywords: AdgTable class, about AdgTable class
-
 ---
 
 The **AdgTable** class supports DCS infrastructure and is not intended to be used directly from your code.

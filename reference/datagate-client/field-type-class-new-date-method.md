@@ -1,18 +1,6 @@
 ---
 title: FieldType.NewDate Method
 
-Id: dcsFieldTypeClassNewDateMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 2
-
-keywords: NewDate method
-keywords: FieldType.NewDate method
-keywords: enumerations [DCS 16.0 DateTimeFormat, used by
-keywords: DateTimeFormat enumeration, used by
-keywords: fields, date
-keywords: date field defined
-keywords: how to, define date field
-
 ---
 
 Creates a new date [ FieldType](field-type-class.html).

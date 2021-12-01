@@ -1,18 +1,6 @@
 ---
 title: PrintDevAttr.Color Property
 
-Id: dcsPrintDevAttrClassColorProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 1
-
-keywords: Color property
-keywords: PrintDevAttr.Color property
-keywords: printing, color
-keywords: printer device parameters, color
-keywords: printers, device parameters, color
-keywords: how to, print in color
-keywords: colors, printing in
-
 ---
 
 The **Color** property indicates that non-monochrome output is to be produced by color-capable printers when this property is set to **True** .

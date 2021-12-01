@@ -1,17 +1,6 @@
 ---
 title: Message.Text Field
 
-Id: amfMessageClassTextField
-TocParent: amfMessageClassFields
-TocOrder: 60
-
-keywords: Text field
-keywords: Message.Text field
-keywords: immediate messages, text
-keywords: messages, immediate message text
-keywords: message files, immediate message text
-keywords: how to, access immediate message text
-
 ---
 
 The readonly text of an immediate message.

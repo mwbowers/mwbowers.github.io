@@ -1,13 +1,6 @@
 ---
 title: Program.DBParm Class Members
 
-Id: amfProgramDBParmClassMembers
-TocParent: amfProgramDBParmClass
-TocOrder: 5
-
-keywords: Program.DBParm class, all members
-keywords: members [ASNA.Monarch], Program.DBParm class
-
 ---
 
 [ Program.DBParm Class Overview](program-db-parm-class.html) 

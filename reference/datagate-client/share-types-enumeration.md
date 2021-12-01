@@ -1,20 +1,6 @@
 ---
 title: ShareTypes Enumeration
 
-Id: dcsShareTypesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 30
-
-keywords: cShareTypes enumeration member
-keywords: Exclusive enumeration member
-keywords: ExclusiveRead enumeration member
-keywords: ShareNoUpdate enumeration member
-keywords: ShareRead enumeration member
-keywords: ShareUpdate enumeration member
-keywords: ShareTypes enumeration
-keywords: enumerations [DCS 16.0 ShareTypes
-keywords: sharing files
-
 ---
 
 <span> **ShareTypes** </span> defines the types of locks used with the [ Lock](iadg-object-class-lock-method.html) and [Unlock](iadg-object-class-unlock-method.html) methods of [IAdgObject](iadg-object-class.html).

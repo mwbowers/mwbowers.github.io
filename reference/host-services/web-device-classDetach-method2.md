@@ -1,10 +1,6 @@
 ---
 title: WebDevice.Detach Method(WebDisplayFile)
 
-Id: amfWebDeviceClassDetachMethod2
-TocParent: amfWebDeviceClassDetachMethods
-TocOrder: 20
-
 ---
 
 Detaches a previously attached [ ASNA.Monarch.WebDisplayFile](web-display-file-class.html) from a **WebDevice** object.

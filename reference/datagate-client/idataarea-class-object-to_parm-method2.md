@@ -1,10 +1,6 @@
 ---
 title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type, integer)
 
-Id: dcsIDataAreaClassObjectToParmMethod2
-TocParent: dcsIDataAreaClassObjectToParmMethods
-TocOrder: 42
-
 ---
 
 Converts an object to a parameter list value provided with the parameter value, type, and the indices in the path to the parameter.

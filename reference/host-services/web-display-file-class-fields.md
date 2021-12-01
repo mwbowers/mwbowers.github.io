@@ -1,13 +1,6 @@
 ---
 title: WebDisplayFile Class Fields
 
-Id: amfWebDisplayFileClassFields
-TocParent: amfWebDisplayFileClass
-TocOrder: 40
-
-keywords: WebDisplayFile class, fields
-keywords: fields [ASNA.Monarch], WebDisplayFile class
-
 ---
 
 [ WebDisplayFile Class Overview](web-display-file-class.html) 

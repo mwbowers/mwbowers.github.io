@@ -1,14 +1,6 @@
 ---
 title: SourceProfile.op_InEquality Method
 
-Id: dcsSourceProfileClassop_InequalityMethod
-TocParent: dcsSourceProfileMethodsMain
-TocOrder: 5
-
-keywords: op_InEquality method
-keywords: SourceProfile.op_InEquality method
-keywords: how to, compare two SourceProfile instances for inequality
-
 ---
 
 Returns the opposite value returned by op_Equality.

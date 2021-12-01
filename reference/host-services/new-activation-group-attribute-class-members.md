@@ -1,15 +1,6 @@
 ---
 title: NewActivationGroupAttribute Members
 
-Id: amfNewActivationGroupAttributeClassMembers
-TocParent: amfNewActivationGroupAttributeClass
-TocOrder: 5
-
-keywords: NewActivationGroupAttribute class
-keywords: NewActivationGroupAttribute class, all members
-keywords: members [ASNA.Monarch], NewActivationGroupAttribute class
-keywords: ASNA.Monarch.NewActivationGroupAttribute class
-
 ---
 
 [ NewActivationGroupAttribute Overview](new-activation-group-attribute-class.html) 

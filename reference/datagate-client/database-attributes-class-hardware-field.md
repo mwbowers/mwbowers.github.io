@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.Hardware Field
 
-Id: dcsDatabaseAttributesClassHardwareField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 2
-
-keywords: Hardware field
-keywords: DatabaseAttributes.Hardware field
-
 ---
 
 The name of the hardware on which the database file resides.

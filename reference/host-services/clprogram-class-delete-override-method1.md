@@ -1,10 +1,6 @@
 ---
 title: CLProgram.DeleteOverride(String)
 
-Id: amfCLProgramClassDeleteOverrideMethod1
-TocParent: amfCLProgramClassDeleteOverrideMethods
-TocOrder: 10
-
 ---
 
 Removes the database file override previously applied to the CLProgram.

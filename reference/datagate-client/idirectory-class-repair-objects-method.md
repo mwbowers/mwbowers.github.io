@@ -1,22 +1,6 @@
 ---
 title: IDirectory.RepairObjects Method
 
-Id: dcsIDirectoryClassRepairObjectsMethod
-TocParent: dcsIDirectoryMethods
-TocOrder: 3
-
-keywords: RepairObjects method
-keywords: IDirectory.RepairObjects method
-keywords: AdgObserver delegate, used by
-keywords: delegates [DCS 16.0 AdgObserver, used by
-keywords: RepairOptions enumeration, used by
-keywords: enumerations [DCS 16.0 RepairOptions, used by
-keywords: repair database files in library
-keywords: database libraries, repair database files
-keywords: database files, repair files in library
-keywords: how to, repair database files in library
-keywords: how to, invoke automatic diagnostic and repair function for library files
-
 ---
 
 **RepairObjects** method repairs database files contained by the library, as specified by [ RepairOptions](repair-options-enumeration.html).

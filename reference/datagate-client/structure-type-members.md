@@ -1,13 +1,6 @@
 ---
 title: StructureType Members
 
-Id: dcsStructureTypeMembers
-TocParent: dcsStructureTypeClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 StructureType class
-keywords: StructureType class, all members
-
 ---
 
 [StructureType Overview](structure-type-class.html) 

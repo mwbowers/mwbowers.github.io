@@ -1,10 +1,6 @@
 ---
 title: As400Program.ObjectToParm(object, string)
 
-Id: dcsAs400ProgramClassObjectToParmMethod3
-TocParent: dcsAs400ProgramClassObjectToParmMethodMain
-TocOrder: 2
-
 ---
 
 Converts an object or value type to a parameter list value. 

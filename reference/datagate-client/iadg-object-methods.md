@@ -1,13 +1,6 @@
 ---
 title: IAdgObject Methods
 
-Id: dcsIAdgObjectMethods
-TocParent: dcsIAdgObjectClass
-TocOrder: 1
-
-keywords: methods [DCS 16.0 IAdgObject class
-keywords: IAdgObject class, methods
-
 ---
 
 [IAdgObject Overview](iadg-object-class.html) 

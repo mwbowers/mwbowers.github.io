@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.Secure Field
 
-Id: dcsDatabaseAttributesClassSecureField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 7
-
-keywords: Secure field
-keywords: DatabaseAttributes.Secure field
-
 ---
 
 Indicates if security is used on the database.

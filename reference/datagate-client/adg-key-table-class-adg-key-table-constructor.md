@@ -1,10 +1,6 @@
 ---
 title: AdgKeyTable(System.Data.DataTable)
 
-Id: dcsAdgKeyTableClassAdgKeyTableConstructor
-TocParent: dcsAdgKeyTableAdgKeyTableConstructorsMain
-TocOrder: 0
-
 ---
 
 This member supports DCS infrastructure and is not intended to be used directly from your code .

@@ -1,18 +1,6 @@
 ---
 title: FileOpenAttr.WaitForRecord Property
 
-Id: dscFileOpenAttrClassWaitForRecordProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 7
-
-keywords: WaitForRecord property
-keywords: FileOpenAttr.WaitForRecord property
-keywords: records, wait time to access
-keywords: database files, wait time for record access
-keywords: files, wait time for access to record
-keywords: time, wait for record access
-keywords: how to, wait for record access
-
 ---
 
 Time, in seconds, that a process will wait for access to a record.

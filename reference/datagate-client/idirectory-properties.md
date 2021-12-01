@@ -1,13 +1,6 @@
 ---
 title: IDirectory Properties
 
-Id: dcsIDirectoryProperties
-TocParent: dcsIDirectoryClass
-TocOrder: 2
-
-keywords: properties [DCS 16.0 IDirectory class
-keywords: IDirectory class, properties
-
 ---
 
 [IDirectory Overview](idirectory-class.html) 

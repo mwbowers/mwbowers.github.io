@@ -1,13 +1,6 @@
 ---
 title: Message Constructor (String,String,String,MessageTypes)
 
-Id: amfMessageClassMessageConstructor2
-TocParent: amfMessageClassMessageConstructors
-TocOrder: 20
-
-keywords: MessageTypes enumeration, used by
-keywords: enumerations [ASNA.Monarch], MessageTypes, used by
-
 ---
 
 Constructs a new instance of a predefined message.

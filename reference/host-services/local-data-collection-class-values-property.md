@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.Values Property
 
-Id: amfLocalDataCollectionClassValuesProperty
-TocParent: amfLocalDataCollectionProperties
-TocOrder: 30
-
-keywords: Values property
-keywords: LocalDataCollection.Values property
-keywords: ldc, values dictionary
-keywords: LDC, values dictionary
-keywords: local data collection, values dictionary
-keywords: how to, retrieve local data collection values dictionary
-
 ---
 
 Gets an **ICollection** containing the values in the .

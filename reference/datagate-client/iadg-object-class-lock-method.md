@@ -1,20 +1,6 @@
 ---
 title: IAdgObject.Lock Method
 
-Id: dcsIAdgObjectClassLockMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 3
-
-keywords: Lock method
-keywords: IAdgObject.Lock method
-keywords: WaitOptions enumeration, used by
-keywords: ShareTypes enumeration, used by
-keywords: enumerations [DCS 16.0 WaitOptions, used by
-keywords: enumerations [DCS 16.0 ShareTypes, used by
-keywords: how to, set database object lock restrictions
-keywords: database objects, set lock restrictions
-keywords: lock restrictions, set for database objects
-
 ---
 
 **Lock** engages the database provider's object locking facility to set a lock restricting access to the database object corresponding to **IAdgObject** .

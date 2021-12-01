@@ -1,13 +1,6 @@
 ---
 title: LocalDataCollection Class Properties
 
-Id: amfLocalDataCollectionProperties
-TocParent: amfLocalDataCollectionClass
-TocOrder: 30
-
-keywords: LocalDataCollection class, properties
-keywords: properties [ASNA.Monarch], LocalDataCollection class
-
 ---
 
 [ LocalDataCollection Class Overview](local-data-collection-class.html) 

@@ -1,18 +1,6 @@
 ---
 title: FileLocks Enumeration
 
-Id: dcsFileLocksEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 14
-
-keywords: FileLocks enumeration
-keywords: enumerations DCS 16.0 FileLocks
-keywords: Auto enumeration member
-keywords: Manual enumeration member
-keywords: record locking mode constants
-keywords: database files, record locking mode constants
-keywords: files, record locking mode constants
-
 ---
 
 Defines modes on how a file will be locked; either automatically or manually. 

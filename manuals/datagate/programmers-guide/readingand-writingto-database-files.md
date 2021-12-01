@@ -1,16 +1,6 @@
 ---
 title: Reading and Writing to Database Files
 
-Id: dcsReadingandWritingtoDatabaseFiles
-TocParent: dcsAccessingaFileMain
-TocOrder: 2
-
-keywords: accessing a file, reading and writing to database files
-keywords: database files, reading to
-keywords: database files, writing to
-keywords: writing to database files
-keywords: reading to database files
-
 ---
 
 The following example in AVR <span>opens a database file</span> for "read" access as before and then reads the first record in the file.

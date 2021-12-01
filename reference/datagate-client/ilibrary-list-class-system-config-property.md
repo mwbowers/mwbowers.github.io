@@ -1,25 +1,6 @@
 ---
 title: ILibraryList.SystemConfig Property
 
-Id: dcsILibraryListClassSystemConfigProperty
-TocParent: dcsILibraryListProperties
-TocOrder: 2
-
-keywords: SystemConfig property
-keywords: ILibraryList.SystemConfig property
-keywords: directories, setting user portion of available directories in the library list
-keywords: directories, getting user portion of available directories in the library list
-keywords: library lists, setting user portion of available directories in
-keywords: library lists, getting user portion of available directories in
-keywords: how to, set user portion of available directories in the library list
-keywords: how to, get user portion of available directories in the library list
-keywords: directories, setting system portion of available directories in the library list
-keywords: directories, getting system portion of available directories in the library list
-keywords: library lists, setting system portion of available directories in
-keywords: library lists, getting system portion of available directories in
-keywords: how to, set system portion of available directories in the library list
-keywords: how to, get system portion of available directories in the library list
-
 ---
 
 **SystemConfig** sets or returns a string array containing a list of the system and user portion of the available directories in the library list represented by **ILibraryList** . 

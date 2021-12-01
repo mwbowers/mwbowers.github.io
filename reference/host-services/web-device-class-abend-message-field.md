@@ -1,16 +1,6 @@
 ---
 title: WebDevice.AbEndMessage Field
 
-Id: amfWebDeviceClassAbEndMessageField
-TocParent: amfWebDeviceClassFields
-TocOrder: 20
-
-keywords: AbEndMessage field
-keywords: WebDevice.AbEndMessage field
-keywords: device control, abnormal termination message
-keywords: abnormal termination message
-keywords: how to, abnormal termination message
-
 ---
 
 The abnormal device terminate message.

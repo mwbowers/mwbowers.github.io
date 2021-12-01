@@ -1,19 +1,6 @@
 ---
 title: LiblPosition Enumeration
 
-Id: dcsLiblPositionEnumeration
-TocParent: dcsDataGateClientEnumerations
-TocOrder: 2
-
-keywords: enumerations [DCS 16.0 LiblPosition
-keywords: LiblPosition enumeration
-keywords: System enumeration member
-keywords: First enumeration member
-keywords: Last enumeration member
-keywords: Before enumeration member
-keywords: After enumeration member
-keywords: Replace enumeration member
-
 ---
 
 <span> **LiblPosition** </span> contains the values used by [ ILibraryList.AddEntry](ilibrary-list-class-add-entry-method.html) to specify the position in the library list to add the new library list entry. 

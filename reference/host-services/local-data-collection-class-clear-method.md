@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.Clear Method
 
-Id: amfLocalDataCollectionClassClearMethod
-TocParent: amfLocalDataCollectionMethods
-TocOrder: 20
-
-keywords: Clear method
-keywords: LocalDataCollection.Clear method
-keywords: how to, clear local data collection
-keywords: ldc, clearing
-keywords: LDC, clearing
-keywords: local data collection, clearing
-
 ---
 
 Clears the collection.

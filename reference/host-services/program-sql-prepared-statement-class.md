@@ -1,16 +1,6 @@
 ---
 title: Program.SqlPreparedStatement Class
 
-Id: amfProgramSqlPreparedStatementClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 210
-
-keywords: Program.SqlPreparedStatement class, about Program.SqlPreparedStatement class
-keywords: Program.SqlPreparedStatement class
-keywords: classes [ASNA.Monarch], Program.SqlPreparedStatement class
-keywords: SQL prepared statement
-keywords: SQL, prepared statement
-
 ---
 
 The **Program.SqlPreparedStatement** is a nested class representing a prepared executable version of a SQL command statement.

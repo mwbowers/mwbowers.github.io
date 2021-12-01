@@ -1,18 +1,6 @@
 ---
 title: AdgConnection.State Property
 
-Id: dcsAdgConnectionClassStateProperty
-TocParent: dcsAdgConnectionPropertiesMain
-TocOrder: 2
-
-keywords: State property
-keywords: AdgConnection.State property
-
-keywords: open state of database connection
-keywords: state of database connection
-keywords: database connections, state of
-keywords: connections, state of
-
 ---
 
 Gets the current state of the connection. 

@@ -1,16 +1,6 @@
 ---
 title: AdgConnection.Equals Method
 
-Id: dcsAdgConnectionClassEqualsMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 5
-
-keywords: Equals method
-keywords: AdgConnection.Equals method
-
-keywords: comparing two AdgConnection objects
-keywords: how to, compare two AdgConnection objects
-
 ---
 
 #### Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-source-profile-property.html) properties of the objects being compared refer to the same object. 

@@ -1,17 +1,6 @@
 ---
 title: CLProgram.DeleteFile Method
 
-Id: amfCLProgramClassDeleteFileMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 100
-
-keywords: DeleteFile method
-keywords: CLProgram.DeleteFile method
-keywords: delete file
-keywords: how to, delete a file
-keywords: files, deleting
-keywords: physical files, deleting
-
 ---
 
 Deletes a file.

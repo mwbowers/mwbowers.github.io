@@ -1,12 +1,6 @@
 ---
 title: !Diagnose
 
-Id: exclam-Diagnose
-TocParent: exclam-PagesMain
-TocOrder: 10
-
-keywords: session, abnormal termination, crashed session
-
 ---
 
 The **!Diagnose** page is an end-point for crashed sessions. It displays the exception and call stack when Page_Load abandons the session. !Diagnose is delivered as "!Diagnose.aspx", "!Diagnose.aspx.vr" (AVR), "!Diagnose.aspx.vb" (Visual Basic), and "!Diagnose.aspx.cs" (C#).

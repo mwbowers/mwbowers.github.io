@@ -1,16 +1,6 @@
 ---
 title: AdgConnection.op_InEquality Method
 
-Id: dcsAdgConnectionClassopInequalityMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 8
-
-keywords: op_InEquality method
-keywords: AdgConnection.op_InEquality method
-
-keywords: comparing two AdgConnection objects
-keywords: how to, compare two AdgConnection objects
-
 ---
 
 Returns the opposite value returned by [op_Equality](adg-connectionclassop-equality-method.html).

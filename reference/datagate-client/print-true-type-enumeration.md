@@ -1,19 +1,6 @@
 ---
 title: PrintTrueType Enumeration
 
-Id: dcsPrintTrueTypeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 23
-
-keywords: Bitmap enumeration member
-keywords: Download enumeration member
-keywords: Subdev enumeration member
-keywords: PrintTrueType enumeration
-keywords: enumerations [DCS 16.0 PrintTrueType
-keywords: printing, true type fonts, constants
-keywords: true type fonts, constants
-keywords: printer device parameters, true type font constants
-
 ---
 
 The <span> **PrintTrueType** </span> enumerated constant defines values whether the **True Type font** will be used. 

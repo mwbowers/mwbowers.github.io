@@ -1,14 +1,6 @@
 ---
 title: Accessing a File Using the FileAdapter Class
 
-Id: dcsUsingtheFileAdapterClass
-TocParent: dcsAccessingaFileMain
-TocOrder: 0
-
-keywords: using the FileAdapter class
-keywords: FileAdapter class, using
-keywords: accessing a file, using the FileAdapter class
-
 ---
 
 The [ASNA.DataGate.Client.FileAdapter](file-adapter-class.html) class is the entry point for data access in DCS. **FileAdapter** consists of a reference to an [AdgConnection](adg-connection-class.html) object and a set of path strings naming the database file being accessed. **FileAdapter** methods allow the standard set of access functions including reading, writing, updating, and deleting file records. It also contains several properties defining constraints on the access to be performed on the file. These properties, such as the [ AccessMode](file-adapter-class-access-mode-property.html) property, should be set prior to opening the file.

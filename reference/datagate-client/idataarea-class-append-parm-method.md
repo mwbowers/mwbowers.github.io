@@ -1,18 +1,6 @@
 ---
 title: IDataArea.AppendParm Method
 
-Id: dcsIDataAreaClassAppendParmMethod
-TocParent: dcsIDataAreaClassMembers
-TocOrder: 7
-
-keywords: AppendParm method
-keywords: IDataArea.AppendParm method
-keywords: program parameters, append parameter to
-keywords: parameter lists, append parameter to
-keywords: append parameter to program parameter list
-keywords: parameters, append program parameter list
-keywords: how to, append parameter to program parameter list
-
 ---
 
 Appends a parameter to the parameter list for the program.

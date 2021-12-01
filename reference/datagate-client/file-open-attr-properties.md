@@ -1,13 +1,6 @@
 ---
 title: FileOpenAttr Properties
 
-Id: dcsFileOpenAttrProperties
-TocParent: dcsFileOpenAttrClass
-TocOrder: 3
-
-keywords: FileOpenAttr class, properties
-keywords: properties [DCS 16.0 FileOpenAttr class
-
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 

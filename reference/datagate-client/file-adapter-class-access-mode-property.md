@@ -1,21 +1,6 @@
 ---
 title: FileAdapter.AccessMode Property
 
-Id: dcsFileAdapterClassAccessModeProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 0
-
-keywords: access mode when opening file
-keywords: how to, set/return access mode for opening file
-keywords: database files, access mode when opening
-keywords: files, access mode when opening
-keywords: database files, restrict access
-keywords: files, restrict access
-keywords: AccessMode property
-keywords: FileAdapter.AccessMode property
-keywords: enumerations [DCS 16.0 AccessMode, used by
-keywords: AccessMode enumeration, used by
-
 ---
 
 The declared mode of access enforced by the database when the file is open. 

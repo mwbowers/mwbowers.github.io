@@ -1,20 +1,6 @@
 ---
 title: AdgDataSet.CurrentFormatIndex Property
 
-Id: dcsAdgDataSetClassCurrentFormatIndexProperty
-TocParent: dcsAdgDataSetProperties
-TocOrder: 1
-
-keywords: AdgDataSet.CurrentFormatIndex property
-keywords: CurrentFormatIndex property
-keywords: records, index of active record format
-keywords: index for active record format
-keywords: active records, format index of AdgDataSet
-keywords: rows, format index currently active
-keywords: format index of AdgDataSet active record
-keywords: how to, return format index for active record
-keywords: tables, format index currently active
-
 ---
 
 The current format index of the **AdgDataSet** .

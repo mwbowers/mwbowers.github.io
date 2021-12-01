@@ -1,10 +1,6 @@
 ---
 title: SourceProfile()
 
-Id: dcsSourceProfileClassSourceProfileConstructor1
-TocParent: dcsSourceProfileConstructorsMain
-TocOrder: 0
-
 ---
 
 Constructs an anonymous instance of [ SourceProfile](source-profile-class.html) with default values.

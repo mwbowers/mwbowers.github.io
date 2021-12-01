@@ -1,15 +1,6 @@
 ---
 title: WebJob.Device Property
 
-Id: amfWebJobClassDeviceProperty
-TocParent: amfWebJobClassProperties
-TocOrder: 20
-
-keywords: Device field
-keywords: WebJob.Device field
-keywords: web job, device
-keywords: how to, set web job device
-
 ---
 
 This field contains the name of the [ ASNA.Monarch.WebDevice](web-device-class.html) used by the WebJob.

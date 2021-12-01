@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.ClearSubfile Method
 
-Id: amfWebDisplayFileClassClearSubfileMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 20
-
-keywords: ClearSubfile method
-keywords: WebDisplayFile.ClearSubfile method
-keywords: record formats, clearing from subfile
-keywords: how to, clear format records in display file
-keywords: display files, clearing format records
-
 ---
 
 Clears the format records for the subfile named.

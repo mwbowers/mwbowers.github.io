@@ -1,17 +1,6 @@
 ---
 title: FileOpenAttr.WaitForFile Property
 
-Id: dcsFileOpenAttrClassWaitForFileProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 6
-
-keywords: WaitForFile property
-keywords: FileOpenAttr.WaitForFile property
-keywords: database files, wait time for access to
-keywords: files, wait time for access to
-keywords: time, wait for file access
-keywords: how to, wait for file access
-
 ---
 
 Time, in seconds, that a process will wait to access a file.

@@ -1,18 +1,6 @@
 ---
 title: PrintDevAttr.Copies Property
 
-Id: dcsPrintDevAttrClassCopiesProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 2
-
-keywords: Copies property
-keywords: PrintDevAttr.Copies property
-keywords: printing, copies
-keywords: printer device parameters, copies
-keywords: printers, device parameters, copies
-keywords: how to, print multiple copies
-keywords: copies, specifying number of
-
 ---
 
 The **Copies** property indicates the number of copies to be printed.

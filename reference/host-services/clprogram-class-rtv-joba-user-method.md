@@ -1,17 +1,6 @@
 ---
 title: CLProgram.RTVJOBA_USER Method
 
-Id: amfCLProgramClassRTVJOBA_USERMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 240
-
-keywords: RTVJOBA_USER method
-keywords: CLProgram.RTVJOBA_USER method
-keywords: user profile
-keywords: job attributes, user profile
-keywords: CLProgram, user profile from job attributes
-keywords: how to, get user profile from CLProgram job attributes
-
 ---
 
 Reference to the user profile name from the job attributes for the job in which this CLProgram is used.

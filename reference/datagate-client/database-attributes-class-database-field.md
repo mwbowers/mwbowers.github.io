@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.Database Field
 
-Id: dcsDatabaseAttributesClassDatabaseField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 1
-
-keywords: Database field
-keywords: DatabaseAttributes.Database field
-
 ---
 
 The database name.

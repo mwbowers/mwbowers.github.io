@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.Length Property
 
-Id: dcsPrintDevAttrClassLengthProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 7
-
-keywords: Length property
-keywords: PrintDevAttr.Length property
-keywords: printing, paper length, about this property
-keywords: printer device parameters, length of paper
-keywords: printers, device parameters, length of paper
-keywords: how to, set/return length of paper
-keywords: length of paper, set size of
-keywords: length of paper, return size of
-keywords: length of paper, about property
-
 ---
 
 The **Length** specifies the length of paper in the printer.

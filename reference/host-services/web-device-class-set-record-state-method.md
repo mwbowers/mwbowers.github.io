@@ -1,28 +1,6 @@
 ---
 title: WebDevice.SetRecordState Method
 
-Id: amfWebDeviceClassSetRecordStateMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 110
-
-keywords: SetRecordState method
-keywords: WebDevice.SetRecordState method
-keywords: device control, setting record format
-keywords: device control, setting record index
-keywords: device control, setting record indicators
-keywords: display files, setting record format
-keywords: display files, setting record index
-keywords: display files, setting record indicators
-keywords: record states, setting index
-keywords: record states, setting format
-keywords: record states, setting indicators
-keywords: record indexes, setting
-keywords: record formats, setting
-keywords: record indicators, setting
-keywords: how to, set record index
-keywords: how to, set record format
-keywords: how to, set record indicators
-
 ---
 
 Sets the index and an array of boolean values representing the evaluation (true or false) for each of the indicators for the record format specified.

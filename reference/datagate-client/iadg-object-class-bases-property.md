@@ -1,19 +1,6 @@
 ---
 title: IAdgObject.Bases Property
 
-Id: dcsIAdgObjectClassBasesProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 3
-
-keywords: Bases property
-keywords: IAdgObject.Bases property
-keywords: base objects path name for a database object
-keywords: path names, return the base object(s) path name for a database object
-keywords: path names, set the base object(s) path name for a database object
-keywords: how to, return path names of base objects for a database object
-keywords: how to, set path names of base objects for a database object
-keywords: database objects, return base object(s) path names
-
 ---
 
 **Bases** is a single-dimension array of strings containing path names denoting the set of objects upon which the database object represented by **IAdgObject** is based.

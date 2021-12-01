@@ -1,23 +1,6 @@
 ---
 title: FileAdapter.ReadSequential Method
 
-Id: dcsFileAdapterClassReadSequentialMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 19
-
-keywords: ReadSequential method
-keywords: FileAdapter.ReadSequential method
-keywords: enumerations [DCS 16.0 LockRequest, used by
-keywords: enumerations [DCS 16.0 ReadSequentialMode, used by
-keywords: LockRequest enumeration, used by
-keywords: ReadSequentialMode enumeration, used by
-keywords: database files, read records sequentially
-keywords: files, read records sequentially
-keywords: how to, read records sequentially
-keywords: read records sequentially
-keywords: files, record locking override
-keywords: records, read sequentially
-
 ---
 
 Read a single record from the file in sequential order.

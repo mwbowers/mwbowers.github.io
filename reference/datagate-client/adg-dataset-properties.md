@@ -1,13 +1,6 @@
 ---
 title: AdgDataSet Properties
 
-Id: dcsAdgDataSetProperties
-TocParent: dcsAdgDataSetClass
-TocOrder: 3
-
-keywords: properties [DCS 16.0 AdgDataSet class
-keywords: AdgDataSet class, properties
-
 ---
 
 [AdgDataSet Overview](adg-dataset-class.html) 

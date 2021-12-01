@@ -1,13 +1,6 @@
 ---
 title: Program Class Fields
 
-Id: amfProgramClassFields
-TocParent: amfProgramClass
-TocOrder: 40
-
-keywords: Program class, fields
-keywords: fields [ASNA.Monarch], Program class
-
 ---
 
 [Program Class Overview](program-class.html) 

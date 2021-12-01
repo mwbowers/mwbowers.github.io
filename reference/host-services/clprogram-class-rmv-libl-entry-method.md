@@ -1,15 +1,6 @@
 ---
 title: CLProgram.RmvLiblEntry Method
 
-Id: amfCLProgramClassRmvLiblEntryMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 180
-
-keywords: RmvLiblEntry method
-keywords: CLProgram.RmvLiblEntry method
-keywords: library lists, remove entry in CLProgram
-keywords: how to, remove library list entries in CLProgram
-
 ---
 
 This method removes a library name from the user portion of the library list.

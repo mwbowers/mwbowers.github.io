@@ -1,13 +1,6 @@
 ---
 title: ASNA.DataGate.DataLink Classes
 
-Id: dcsASNADataGateDataLinkClasses
-TocParent: dcsDataGateDataLinkNamespace
-TocOrder: 0
-
-keywords: classes [DCS 16.0 ASNA.DataGate.DataLink
-keywords: ASNA.DataGate.DataLink namespace, classes
-
 ---
 
 ## Classes

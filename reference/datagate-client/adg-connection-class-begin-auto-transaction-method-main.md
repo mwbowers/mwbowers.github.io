@@ -1,25 +1,6 @@
 ---
 title: AdgConnection.BeginAutoTransaction Methods
 
-Id: dcsAdgConnectionClassBeginAutoTransactionMethodMain
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 0
-
-keywords: BeginAutoTransaction methods
-keywords: AdgConnection.BeginAutoTransaction methods
-keywords: database transactions, begin automatic
-keywords: database transactions, lock level set for automatic
-keywords: database transactions, name set for automatic
-keywords: database transactions, options set for automatic
-keywords: automatic transactions, beginning
-keywords: automatic transactions, lock level set
-keywords: automatic transactions, name set
-keywords: automatic transactions, options set
-keywords: how to, begin automatic database transactions
-keywords: how to, set automatic database transaction lock level
-keywords: how to, set automatic database transaction name
-keywords: how to, set automatic database transaction options
-
 ---
 
 Overloaded method that begins an automatic database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) with combinations of transaction locking level, name, and command options parameters specified.

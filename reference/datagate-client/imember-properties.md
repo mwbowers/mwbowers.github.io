@@ -1,13 +1,6 @@
 ---
 title: IMember Properties
 
-Id: dcsIMemberProperties
-TocParent: dcsIMemberClass
-TocOrder: 2
-
-keywords: properties [DCS 16.0 IMember class
-keywords: IMember class, properties
-
 ---
 
 [IMember Overview](imember-class.html) 

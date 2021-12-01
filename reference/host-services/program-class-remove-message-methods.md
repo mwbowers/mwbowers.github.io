@@ -1,18 +1,6 @@
 ---
 title: Program.RemoveMessage Methods
 
-Id: amfProgramClassRemoveMessageMethods
-TocParent: amfProgramClassMethods
-TocOrder: 70
-
-keywords: Program.RemoveMessage methods
-keywords: RemoveMessage methods
-keywords: message queues, removing messages from
-keywords: messages, removing
-keywords: removing program messages
-keywords: program messages, removing
-keywords: how to, remove program messages
-
 ---
 
 Removes program messages.

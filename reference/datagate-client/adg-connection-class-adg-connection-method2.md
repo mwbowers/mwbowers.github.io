@@ -1,10 +1,6 @@
 ---
 title: AdgConnection(string)
 
-Id: dcsAdgConnectionClassAdgConnectionMethod2
-TocParent: dcsAdgConnectionConstructorsMain
-TocOrder: 1
-
 ---
 
 Constructs an [AdgConnection](adg-connection-class.html) instance for the database.

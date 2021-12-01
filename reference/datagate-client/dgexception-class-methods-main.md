@@ -1,13 +1,6 @@
 ---
 title: dgException Methods
 
-Id: dcsdgExceptionClassMethodsMain
-TocParent: dcsdgExceptionClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 dgException class
-keywords: dgException class, methods
-
 ---
 
 [dgException Overview](dgexception-class.html) 

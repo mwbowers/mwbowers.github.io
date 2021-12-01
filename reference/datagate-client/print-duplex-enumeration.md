@@ -1,19 +1,6 @@
 ---
 title: PrintDuplex Enumeration
 
-Id: dcsPrintDuplexEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 21
-
-keywords: Simplex enumeration member
-keywords: Vertical enumeration member
-keywords: Horizontal enumeration member
-keywords: PrintDuplex enumeration
-keywords: enumerations [DCS 16.0 PrintDuplex
-keywords: printing, duplex, constants
-keywords: duplex, constants
-keywords: printer device parameters, duplex constants
-
 ---
 
 The **PrintDuplex** enumerated constant defines values on duplex (double-sided) printing. 

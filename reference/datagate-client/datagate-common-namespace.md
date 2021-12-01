@@ -1,14 +1,6 @@
 ---
 title: ASNA.DataGate.Common Namespace
 
-Id: dcsDataGateCommonNamespace
-TocParent: dcsDataGateAssembly
-TocOrder: 1
-
-keywords: namespaces, ASNA.DataGate.Common
-keywords: ASNA.DataGate.Common namespace, about namespace
-keywords: ASNA.DataGate.Common namespace
-
 ---
 
 The <span style="FONT-WEIGHT: bold">ASNA.DataGate.Common </span>namespace contains classes shared by ASNA DataGate Client providers.

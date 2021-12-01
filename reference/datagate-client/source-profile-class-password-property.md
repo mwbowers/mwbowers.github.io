@@ -1,17 +1,6 @@
 ---
 title: SourceProfile.Password Property
 
-Id: dcsSourceProfileClassPasswordProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 3
-
-keywords: Password property
-keywords: SourceProfile.Password property
-keywords: password to connect to a database
-keywords: password, user profile
-keywords: how to, specify password to connect to a database
-keywords: how to, specify password for user profile
-
 ---
 
 The password to be used in conjunction with [ User](source-profile-class-user-property.html) for connection authentication.

@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.RRN Property
 
-Id: dcsFileAdapterClassRRNProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 11
-
-keywords: RRN property
-keywords: FileAdapter.RRN property
-keywords: database files, RRN of open file member
-keywords: files, RRN of open file member
-keywords: RRN, of current opened file member
-keywords: relative record numbers, of current opened file member
-
 ---
 
 The relative record number of the member of the currently-opened file. 

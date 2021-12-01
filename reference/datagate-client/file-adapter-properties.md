@@ -1,13 +1,6 @@
 ---
 title: FileAdapter Properties
 
-Id: dcsFileAdapterProperties
-TocParent: dcsFileAdapterClass
-TocOrder: 3
-
-keywords: properties DCS 16.0 FileAdapter class
-keywords: FileAdapter class, properties
-
 ---
 
 [FileAdapter Overview](file-adapter-class.html) 

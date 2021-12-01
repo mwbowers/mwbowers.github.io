@@ -1,13 +1,6 @@
 ---
 title: CLProgram Class Members
 
-Id: amfCLProgramClassMembers
-TocParent: amfCLProgramClass
-TocOrder: 5
-
-keywords: CLProgram class, all members
-keywords: members [ASNA.Monarch], CLProgram class
-
 ---
 
 This document contains the entire list of members for the class. 

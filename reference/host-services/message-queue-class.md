@@ -1,14 +1,6 @@
 ---
 title: MessageQueue Class
 
-Id: amfMessageQueueClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 110
-
-keywords: MessageQueue class, about MessageQueue
-keywords: classes [ASNA.Monarch], MessageQueue class
-keywords: message queues
-
 ---
 
 The **MessageQueue** is a class used for messages in the message queue.

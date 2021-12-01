@@ -1,10 +1,6 @@
 ---
 title: DatabaseName.ToSourceProfile(string, bool, bool)
 
-Id: dcsDatabaseNameClassToSourceProfileMethod3
-TocParent: dcsDatabaseNameClassToSourceProfileMethods
-TocOrder: 1
-
 ---
 
 Named SourceProfile optionally constructed from a registered database name. If constructing from a registered database name, optionally throw exception if duplicate IDs are discovered in the registry and DataGate.config. 

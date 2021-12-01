@@ -1,13 +1,6 @@
 ---
 title: ILibraryList Members
 
-Id: dcsILibraryListMembers
-TocParent: dcsILibraryListClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 ILibraryList class
-keywords: ILibraryList class, all members
-
 ---
 
 [ILibraryList Overview](ilibrary-list-class.html) 

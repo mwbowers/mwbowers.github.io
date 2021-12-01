@@ -1,13 +1,6 @@
 ---
 title: Program Class Members
 
-Id: amfProgramClassMembers
-TocParent: amfProgramClass
-TocOrder: 5
-
-keywords: Program class, all members
-keywords: members [ASNA.Monarch], Program class
-
 ---
 
 [Program Class Overview](program-class.html) 

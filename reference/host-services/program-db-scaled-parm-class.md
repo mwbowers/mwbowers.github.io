@@ -1,16 +1,6 @@
 ---
 title: Program.DBScaledParm Class
 
-Id: amfProgramDBScaledParmClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 160
-
-keywords: Program.DBScaledParm class, about Program.DBScaledParm class
-keywords: Program.DBScaledParm class
-keywords: classes [ASNA.Monarch], Program.DBScaledParm class
-keywords: SQL parameters
-keywords: SQL parameters, decimal
-
 ---
 
 The **Program.DBScaledParm** is a derived class that inherits **Program.DBParm** . It further defines an object representing a decimal parameter to a SQL statement where the length and decimal positions are specified.

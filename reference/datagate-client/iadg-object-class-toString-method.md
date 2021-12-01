@@ -1,15 +1,6 @@
 ---
 title: IAdgObject.ToString Method
 
-Id: dcsIAdgObjectClassToStringMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 9
-
-keywords: ToString method
-keywords: IAdgObject.ToString method
-keywords: path names, return for database objects
-keywords: database objects, return path names for
-
 ---
 
 **ToString** returns the path name of the database object represented by [IAdgObject Class](iadg-object-class.html).

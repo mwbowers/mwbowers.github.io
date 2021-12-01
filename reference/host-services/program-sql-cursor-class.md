@@ -1,16 +1,6 @@
 ---
 title: Program.SqlCursor Class
 
-Id: amfProgramSqlCursorClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 200
-
-keywords: Program.SqlCursor class, about Program.SqlCursor class
-keywords: Program.SqlCursor class
-keywords: classes [ASNA.Monarch], Program.SqlCursor class
-keywords: SQL cursor
-keywords: SQL, cursor
-
 ---
 
 The **Program.SqlCursor** is a nested class representing a SQL cursor for a multi-row dataset on which the cursor methods operate.

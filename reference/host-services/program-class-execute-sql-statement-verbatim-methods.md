@@ -1,19 +1,6 @@
 ---
 title: Program.ExecuteSQL_StatementVerbatim Methods
 
-Id: amfProgramClassExecuteSQL_StatementVerbatimMethods
-TocParent: amfProgramClassMethods
-TocOrder: 60
-
-keywords: ExecuteSQL_StatementVerbatim method
-keywords: Program.ExecuteSQL_StatementVerbatim method
-keywords: how to, execute SQL statement
-keywords: SQL nonquery
-keywords: SQL statement, executing
-keywords: SQL, executing statement
-keywords: SQL, nonquery
-keywords: programs, embedded SQL
-
 ---
 
 Overloaded method to execute a SQL command statement with the SQL statement exactly as contained in the original legacy source code.

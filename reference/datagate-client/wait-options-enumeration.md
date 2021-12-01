@@ -1,17 +1,6 @@
 ---
 title: WaitOptions Enumeration
 
-Id: dcsWaitOptionsEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 32
-
-keywords: Default enumeration member
-keywords: Definite enumeration member
-keywords: Immediate enumeration member
-keywords: Indefinite enumeration member
-keywords: WaitOptions enumeration
-keywords: enumerations [DCS 16.0 WaitOptions
-
 ---
 
 <span> **WaitOptions** </span> defines values for directing the [Lock](iadg-object-class-lock-method.html) method when the requested lock cannot be immediately granted.

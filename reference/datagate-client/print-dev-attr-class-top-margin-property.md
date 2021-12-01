@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.TopMargin Property
 
-Id: dcsPrintDevAttrClassTopMarginProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 13
-
-keywords: TopMargin property
-keywords: PrintDevAttr.TopMargin property
-keywords: printing, top margin, about this property
-keywords: how to, set/return top margin
-keywords: top margin, set/return values
-keywords: printers, top margin
-keywords: top margin, about
-keywords: printer device parameters, top margin
-keywords: printers, device parameters, top margin
-
 ---
 
 The **TopMargin** specifies the size of top margin in output produced by the printer.

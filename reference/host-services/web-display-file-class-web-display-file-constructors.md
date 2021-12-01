@@ -1,18 +1,6 @@
 ---
 title: WebDisplayFile.WebDisplayFile Constructors
 
-Id: amfWebDisplayFileClassWebDisplayFileConstructors
-TocParent: amfWebDisplayFileClass
-TocOrder: 10
-
-keywords: WebDisplayFile.WebDisplayFile constructors
-keywords: WebDisplayFile class, constructors
-keywords: constructors [ASNA.Monarch], WebDisplayFile class
-keywords: how to, construct new web display file
-keywords: web display file
-keywords: display files, new
-keywords: new web display file
-
 ---
 
 The overloaded method constructs a new instance of a WebDisplayFile object.

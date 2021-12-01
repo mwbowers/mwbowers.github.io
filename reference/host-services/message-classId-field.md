@@ -1,18 +1,6 @@
 ---
 title: Message.Id Field
 
-Id: amfMessageClassIdField
-TocParent: amfMessageClassFields
-TocOrder: 20
-
-keywords: Id field
-keywords: Message.Id field
-keywords: message files, predefined message id
-keywords: predefined messages, id
-keywords: messages, predefined id
-keywords: message predefined message id
-keywords: how to, access predefined message id
-
 ---
 
 The readonly message identifier for a predefined message.

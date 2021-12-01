@@ -1,16 +1,6 @@
 ---
 title: FieldType.NewDontCare Method
 
-Id: dcsFieldTypeClassNewDontCareMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 4
-
-keywords: NewDontCare method
-keywords: FieldType.NewDontCare method
-keywords: fields, unreferenced type
-keywords: unreferenced field defined
-keywords: how to, define type for unreferenced field
-
 ---
 
 Creates a new [FieldType](field-type-class.html) described only in terms of length.

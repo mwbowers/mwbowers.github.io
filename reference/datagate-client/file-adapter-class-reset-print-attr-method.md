@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.ResetPrintAttr Method
 
-Id: dcsFileAdapterClassResetPrintAttrMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 24
-
-keywords: ResetPrintAttr method
-keywords: FileAdapter.ResetPrintAttr method
-keywords: printer jobs, starting
-keywords: printer jobs, stopping
-keywords: printer jobs, reset device attributes
-keywords: how to, reset print job device attributes
-
 ---
 
 Complete the current printer job, change device-related parameters associated with the open print file, then start a new printer job.

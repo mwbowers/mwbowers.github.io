@@ -1,16 +1,6 @@
 ---
 title: IAdgObject.DateReferenced Property
 
-Id: dcsIAdgObjectClassDateReferencedProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 6
-
-keywords: DateReferenced property
-keywords: IAdgObject.DateReferenced property
-keywords: how to, return object last referenced timestamp recorded by database provider
-keywords: timestamps, recorded by database provider when object was last referenced
-keywords: database objects, return database providers last referenced timestamp
-
 ---
 
 **DateReferenced** is a timestamp recorded by the database provider when the database object is referenced.

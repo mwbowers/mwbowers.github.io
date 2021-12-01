@@ -1,19 +1,6 @@
 ---
 title: As400Program.Parameters Property
 
-Id: dcsAs400ProgramClassParametersProperty
-TocParent: dcsAs400ProgramPropertiesMain
-TocOrder: 1
-
-keywords: Parameters property
-keywords: As400Program.Parameters property
-
-keywords: program parameters, access to parameter list
-keywords: parameter lists, access to program parameters
-keywords: access parameter list of program parameters
-keywords: parameters, program parameter list access
-keywords: how to, access program parameter list
-
 ---
 
 Contains the description and value of parameters as required by the called program.

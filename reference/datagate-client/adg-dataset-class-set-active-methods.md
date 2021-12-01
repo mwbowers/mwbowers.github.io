@@ -1,19 +1,6 @@
 ---
 title: AdgDataSet.SetActive Methods
 
-Id: dcsAdgDataSetClassSetActiveMethods
-TocParent: dcsAdgDataSetMethods
-TocOrder: 11
-
-keywords: SetActive methods
-keywords: AdgDataSet.SetActive methods
-
-keywords: active row, specify current record as
-keywords: rows, specify the current record active row property
-keywords: how to, specify current record as active row
-keywords: tables, active row from DataRow object
-keywords: DataRow objects, set active row property
-
 ---
 
 Establish the specified record as the active row.

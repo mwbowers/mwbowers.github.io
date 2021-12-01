@@ -1,20 +1,6 @@
 ---
 title: FileAdapter.AdapterStatus Enumeration
 
-Id: dcsFileAdapterAdapterStatusEnumeration
-TocParent: dcsDataGateClientEnumerations
-TocOrder: 0
-
-keywords: enumerations [DCS 16.0 FileAdapter.AdapterStatus
-keywords: FileAdapter.AdapterStatus enumeration
-keywords: database files, determine if open or closed
-keywords: files, determine if open or closed
-keywords: Open enumeration member
-keywords: Closed enumeration member
-keywords: database files, status of open 
-keywords: files, status of open
-keywords: status of a file
-
 ---
 
 Indicates the status of the file: open or closed. 

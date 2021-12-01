@@ -1,17 +1,6 @@
 ---
 title: MessageFormatter Class
 
-Id: amfMessageFormatterClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 100
-
-keywords: MessageFormatter class, about MessageFormatter
-keywords: classes [ASNA.Monarch], MessageFormatter class
-keywords: DBCONN constant
-keywords: DBNAME constant
-keywords: FILE constant
-keywords: LIBRARY constant
-
 ---
 
 The **MessageFormatter** is a class used to format messages for Message File data.

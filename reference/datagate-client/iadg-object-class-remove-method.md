@@ -1,23 +1,6 @@
 ---
 title: IAdgObject.Remove Method
 
-Id: dcsIAdgObjectClassRemoveMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 6
-
-keywords: Remove method
-keywords: IAdgObject.Remove method
-keywords: database files, remove library objects from
-keywords: database files, remove file member objects from
-keywords: database files, remove from database
-keywords: database libraries, remove from database
-keywords: database file members, remove from database
-keywords: how to, remove database library objects
-keywords: how to, remove database file member objects
-keywords: how to, remove database file objects
-keywords: remove file objects from database
-keywords: remove library objects from database
-
 ---
 
 The **Remove** method removes an existing database object from the database.

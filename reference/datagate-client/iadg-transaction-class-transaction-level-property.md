@@ -1,19 +1,6 @@
 ---
 title: IAdgTransaction.TransactionLevel Property
 
-Id: dcsIAdgTransactionClassTransactionLevelProperty
-TocParent: dcsIAdgTransactionProperties
-TocOrder: 2
-
-keywords: TransactionLevel property
-keywords: IAdgTransaction.TransactionLevel property
-keywords: enumerations [DCS 16.0 TransactionLevel, used by
-keywords: TransactionLevel enumeration, used by
-
-keywords: transactions, connection lock level returned
-keywords: transaction connection lock level returned
-keywords: database transactions, connection lock level returned
-
 ---
 
 The locking level for the transaction.

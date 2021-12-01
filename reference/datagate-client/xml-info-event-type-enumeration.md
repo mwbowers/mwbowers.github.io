@@ -1,19 +1,6 @@
 ---
 title: XmlInfoEventType Enumeration
 
-Id: dcsXmlInfoEventTypeEnumeration
-TocParent: dcsDataGateClientEnumerations
-TocOrder: 3
-
-keywords: InfoL1 enumeration member
-keywords: InfoL2 enumeration member
-keywords: InfoDebug enumeration member
-keywords: XmlInfoEventType enumeration
-keywords: enumerations [DCS 16.0 XmlInfoEventType
-keywords: XML [DCS 16.0 events, feedback type constants
-keywords: XML [DCS 16.0 event handler, feedback type constants
-keywords: event handlers, feedback type constants
-
 ---
 
 <span> **XmlInfoEventType** </span> defines values for the level of information provided when using [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [ IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html). 

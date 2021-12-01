@@ -1,14 +1,6 @@
 ---
 title: Program.SendProgramMessage Method (string,string,string,string,MessageTypes)
 
-Id: amfProgramClassSendProgramMessageMethod5
-TocParent: amfProgramClassSendProgramMessageMethods
-TocOrder: 50
-
-keywords: MessageQueueNotFoundException
-keywords: MessageTypes enumeration, used by
-keywords: enumerations [ASNA.Monarch], MessageTypes, used by
-
 ---
 
 Appends a message to the specified program message queue.

@@ -1,10 +1,6 @@
 ---
 title: CLProgram.RetrieveDataArea(string, integer, integer)
 
-Id: amfCLProgramClassRetrieveDataAreaMethod2
-TocParent: amfCLProgramClassRetrieveDataAreaMethods
-TocOrder: 20
-
 ---
 
 Retrieves selected portion of the local data area associated with the job.

@@ -1,16 +1,6 @@
 ---
 title: SourceProfile.Clone Method
 
-Id: dcsSourceProfileClassCloneMethod
-TocParent: dcsSourceProfileMethodsMain
-TocOrder: 0
-
-keywords: SourceProfile.Clone method
-keywords: Clone method
-keywords: database connections, create new source profile copy
-keywords: connections, database source profile copied
-keywords: how to, copy database source profile
-
 ---
 
 Returns a copy of the <span> **SourceProfile** </span> object.

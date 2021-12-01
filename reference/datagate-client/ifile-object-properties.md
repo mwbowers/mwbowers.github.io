@@ -1,13 +1,6 @@
 ---
 title: IFileObject Properties
 
-Id: dcsIFileObjectProperties
-TocParent: dcsIFileObjectClass
-TocOrder: 2
-
-keywords: properties [DCS 16.0 IFileObject class
-keywords: IFileObject class, properties
-
 ---
 
 [IFileObject Overview](ifile-object-class.html) 

@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.PrinterName Property
 
-Id: dcsPrintDevAttrClassPrinterNameProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 9
-
-keywords: PrinterName property
-keywords: PrintDevAttr.PrinterName property
-keywords: printing, printer name, about this property
-keywords: how to, set/return printer name
-keywords: printer name, set/return values
-keywords: printers, name of
-keywords: printer name, about
-keywords: printer device parameters, printer name
-keywords: printers, device parameters, printer name
-
 ---
 
 The **PrinterName** specifies the name of an accessible printer device.

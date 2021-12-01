@@ -1,17 +1,6 @@
 ---
 title: WebDevice.GetRecordIndicators Method
 
-Id: amfWebDeviceClassGetRecordIndicatorsMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 50
-
-keywords: GetRecordIndicators method
-keywords: WebDevice.GetRecordIndicators method
-keywords: device control, getting record indicators
-keywords: display files, getting record indicators
-keywords: record indicators, getting
-keywords: how to, get record indicators
-
 ---
 
 Gets an array of boolean values representing the evaluation (true or false) for each of the indicators of the record format specified.

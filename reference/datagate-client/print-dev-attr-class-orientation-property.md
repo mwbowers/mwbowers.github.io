@@ -1,25 +1,6 @@
 ---
 title: PrintDevAttr.Orientation Property
 
-Id: dcsPrintDevAttrClassOrientationProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 8
-
-keywords: Orientation property
-keywords: PrintDevAttr.Orientation property
-keywords: PaperOrientation enumeration, used by
-keywords: enumerations [DCS 16.0 PaperOrientation, used by
-keywords: portrait orientation
-keywords: landscape orientation
-keywords: printing, orientation, about this property
-keywords: printing, orientation, portrait
-keywords: printing, orientation, landscape
-keywords: printer device parameters, orientation
-keywords: printers, device parameters, orientation
-keywords: how to, determine printing orientation
-keywords: print orientation, set/return values
-keywords: print orientation, about
-
 ---
 
 The **Orientation** property specifies the landscape/portrait orientation of paper in the printer. 

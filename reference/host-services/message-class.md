@@ -1,14 +1,6 @@
 ---
 title: Message Class
 
-Id: amfMessageClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 90
-
-keywords: Message class, about Message
-keywords: classes [ASNA.Monarch], Message class
-keywords: message files, class
-
 ---
 
 The **Message** is a container class for Message File data.

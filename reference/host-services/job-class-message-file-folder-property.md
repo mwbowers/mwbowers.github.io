@@ -1,19 +1,6 @@
 ---
 title: Job.MessageFileFolder Property
 
-Id: amfJobClassMessageFileFolderProperty
-TocParent: amfJobProperties
-TocOrder: 40
-
-keywords: MessageFileFolder property
-keywords: Job.MessageFileFolder property
-keywords: jobs, setting message file folder
-keywords: jobs, getting message file folder
-keywords: message files, setting folder
-keywords: message files, getting folder
-keywords: how to, get job message file folder
-keywords: how to, set job message file folder
-
 ---
 
 Gets or sets the name of the folder containing the message file for this job.

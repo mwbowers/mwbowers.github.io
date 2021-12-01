@@ -1,18 +1,6 @@
 ---
 title: Message.MessageType Field
 
-Id: amfMessageClassMessageTypeField
-TocParent: amfMessageClassFields
-TocOrder: 50
-
-keywords: enumerations [ASNA.Monarch], MessageTypes, used by
-keywords: MessageTypes enumeration, used
-keywords: MessageType field
-keywords: Message.MessageType field
-keywords: message files, message type
-keywords: messages, type of
-keywords: how to, access message type
-
 ---
 
 Readonly value indicating the type of message.

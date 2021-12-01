@@ -1,10 +1,6 @@
 ---
 title: CLProgram.ChangeDataArea(string, string)
 
-Id: amfCLProgramClassChangeDataAreaMethod2
-TocParent: amfCLProgramClassChangeDataAreaMethods
-TocOrder: 20
-
 ---
 
 Changes the values of the current data area to be associated with the program.

@@ -1,13 +1,6 @@
 ---
 title: SourceProfile.Equals Method
 
-Id: dcsSourceProfileClassEqualsMethod
-TocParent: dcsSourceProfileMethodsMain
-TocOrder: 1
-
-keywords: Equals method
-keywords: SourceProfile.Equals method
-
 ---
 
 Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-source-profile-property.html) objects being compared refer to the same object. 

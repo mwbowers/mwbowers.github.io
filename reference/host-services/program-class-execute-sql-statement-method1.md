@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_Statement Method (string,DBParm[])
 
-Id: amfProgramClassExecuteSQL_StatementMethod1
-TocParent: amfProgramClassExecuteSQL_StatementMethods
-TocOrder: 20
-
 ---
 
 Executes a SQL command statement specifying the SQL statement and statement parameters.

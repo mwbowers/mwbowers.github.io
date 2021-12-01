@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.Owner Property
 
-Id: dcsIAdgObjectClassOwnerProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 10
-
-keywords: Owner property
-keywords: IAdgObject.Owner property
-keywords: owner names, return group or user profile for database object
-keywords: owner name for database objects
-keywords: how to, determine owner name for database object
-keywords: database objects, owner name of group or user profile
-
 ---
 
 **Owner** is the user or group account that owns the database object represented by **IAdgObject** .

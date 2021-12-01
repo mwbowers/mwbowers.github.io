@@ -1,14 +1,6 @@
 ---
 title: PrintDevAttr Constructors
 
-Id: dcsPrintDevAttrClassPrintDevAttrConstructors
-TocParent: dcsPrintDevAttrClass
-TocOrder: 1
-
-keywords: constructors [DCS 16.0 PrintDevAttr class
-keywords: PrintDevAttr class, constructors
-keywords: PrintDevAttr.PrintDevAttr constructors
-
 ---
 
 Constructs an instance of a **PrintDevAttr** object.

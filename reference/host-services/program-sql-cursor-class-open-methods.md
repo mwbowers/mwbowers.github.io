@@ -1,16 +1,6 @@
 ---
 title: Program.SqlCursor.Open Methods
 
-Id: amfProgramSqlCursorClassOpenMethods
-TocParent: amfProgramSqlCursorClassMethods
-TocOrder: 30
-
-keywords: Program.SqlCursor.Open methods
-keywords: SqlCursor.Open methods
-keywords: SQL, opening cursor
-keywords: SQL cursor, opening
-keywords: how to, open SQL cursor
-
 ---
 
 This overloaded methods executes the select statement and populates the SQL cursor with or without select statement variables.

@@ -1,17 +1,6 @@
 ---
 title: NewActivationGroupAttribute Class
 
-Id: amfNewActivationGroupAttributeClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 110
-
-keywords: NewActivationGroupAttribute class, about NewActivationGroupAttribute class
-keywords: classes [ASNA.Monarch], NewActivationGroupAttribute class
-keywords: activation manager, NewActivationGroupAttribute
-keywords: activation manager, new activation group
-keywords: activation group
-keywords: activation group attributes, _Star_new
-
 ---
 
 The **NewActivationGroupAttribute** is provided to support the job activation manager when a program is to run in a new activation group. Monarch will create a new unique name for the group.

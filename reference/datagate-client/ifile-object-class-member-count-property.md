@@ -1,17 +1,6 @@
 ---
 title: IFileObject.MemberCount Property
 
-Id: dcsIFileObjectClassMemberCountProperty
-TocParent: dcsIFileObjectProperties
-TocOrder: 0
-
-keywords: MemberCount property
-keywords: IFileObject.MemberCount property
-keywords: number of, database file members in database file
-keywords: database files, number of database file members
-keywords: how to, determine number of database file members in database file
-keywords: database file members, number of in database file
-
 ---
 
 **MemberCount** is the number of database member objects in the file represented by **IFileObject** .

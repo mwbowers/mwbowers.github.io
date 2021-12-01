@@ -1,23 +1,6 @@
 ---
 title: FileAdapter.DeleteRange Method
 
-Id: dcsFileAdapterClassDeleteRangeMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 7
-
-keywords: range, delete records by
-keywords: database files, delete records by range
-keywords: files, delete records by range
-keywords: records, delete by range
-keywords: delete records in a file by range
-keywords: how to, delete records by range
-keywords: DeleteRange method
-keywords: FileAdapter.DeleteRange method
-keywords: enumerations [DCS 16.0 RangeFirst, used by
-keywords: enumerations [DCS 16.0 RangeLast, used by
-keywords: RangeFirst enumeration, used by
-keywords: RangeLast enumeration, used by
-
 ---
 
 Delete a set of database file records which contain key values in a given range.

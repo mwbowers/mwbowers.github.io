@@ -1,14 +1,6 @@
 ---
 title: Program.SqlPreparedStatement Class Fields
 
-Id: amfProgramSqlPreparedStatementClassFields
-TocParent: amfProgramSqlPreparedStatementClass
-TocOrder: 40
-
-keywords: Program.SqlPreparedStatement class, fields
-keywords: fields [ASNA.Monarch], Program.SqlPreparedStatement class
-keywords: SqlPreparedStatement class, fields
-
 ---
 
 [ Program.SqlPreparedStatement Class Overview](program-sql-prepared-statement-class.html) 

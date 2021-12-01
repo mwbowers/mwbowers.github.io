@@ -1,13 +1,6 @@
 ---
 title: InspectFileOutput Enumeration
 
-Id: dcsInspectFileOutputEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 15
-
-keywords: InspectFileOutput enumeration
-keywords: enumerations [DCS 16.0 InspectFileOutput
-
 ---
 
 <span> **InspectFileOutput** </span> defines values used internally by DCS . 

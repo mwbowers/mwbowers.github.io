@@ -1,16 +1,6 @@
 ---
 title: StructureType Class
 
-Id: dcsStructureTypeClass
-TocParent: dcsASNADataGateDataLinkClasses
-TocOrder: 2
-
-keywords: StructureType class
-keywords: StructureType class, about StructureType class
-keywords: classes [DCS 16.0 StructureType class
-keywords: parameters, structured data types class
-keywords: program parameters, structured data types class
-
 ---
 
 Define the data types of members of a structured iSeries program parameter. 

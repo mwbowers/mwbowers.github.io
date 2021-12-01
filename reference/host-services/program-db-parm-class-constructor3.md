@@ -1,10 +1,6 @@
 ---
 title: Program.DBParm Constructor (DbType, Object)
 
-Id: amfProgramDBParmClassConstructor3
-TocParent: amfProgramDBParmClassConstructors
-TocOrder: 20
-
 ---
 
 Constructs a new instance of a DBParm object with the data type and value indicated.

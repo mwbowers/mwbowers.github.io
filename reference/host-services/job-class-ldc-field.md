@@ -1,19 +1,6 @@
 ---
 title: Job.LDC Field
 
-Id: amfJobClassLDCField
-TocParent: amfJobFields
-TocOrder: 40
-
-keywords: LDC field
-keywords: Job.LDC field
-keywords: LDC
-keywords: LDC, for job
-keywords: ldc
-keywords: ldc, for job
-keywords: local data collection, job instance
-keywords: how to, access job local data collection
-
 ---
 
 The **LDC** Field contains a reference to an instance of a [ LocalDataCollection](local-data-collection-class.html) object containing a collection of name/value pairs.

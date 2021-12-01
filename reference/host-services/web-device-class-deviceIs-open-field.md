@@ -1,17 +1,6 @@
 ---
 title: WebDevice.DeviceIsOpen Field
 
-Id: amfWebDeviceClassDeviceIsOpenField
-TocParent: amfWebDeviceClassFields
-TocOrder: 40
-
-keywords: DeviceIsOpen field
-keywords: WebDevice.DeviceIsOpen field
-keywords: device control, determine if open
-keywords: device control, determine if closed
-keywords: display files, determine if device open
-keywords: how to, determine display file device open status
-
 ---
 
 The open or closed status of the <code> **WebDevice** </code>.

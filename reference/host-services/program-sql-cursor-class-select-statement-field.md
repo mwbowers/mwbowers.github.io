@@ -1,19 +1,6 @@
 ---
 title: Program.SqlCursor.SelectStatement Field
 
-Id: amfProgramSqlCursorClassSelectStatementField
-TocParent: amfProgramSqlCursorClassFields
-TocOrder: 20
-
-keywords: SelectStatement property
-keywords: SqlCursor.SelectStatement field
-keywords: Program.SqlCursor.SelectStatement field
-keywords: cursor, select statement
-keywords: SQL, cursor select statement
-keywords: SQL cursor, select statement
-keywords: select statement
-keywords: how to, determine SQL cursor select statement
-
 ---
 
 The select statement with which the result set was created.

@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.Close Method
 
-Id: dcsFileAdapterClassCloseMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 3
-
-keywords: database files, close
-keywords: files, close
-keywords: close files
-keywords: how to, close files
-keywords: Close method
-keywords: FileAdapter.Close method
-
 ---
 
 Closes the currently open file (synonymous with [ Dispose Method](file-adapter-class-dispose-method.html)).

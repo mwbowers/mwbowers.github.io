@@ -1,18 +1,6 @@
 ---
 title: CLProgram.DeleteOverride Methods
 
-Id: amfCLProgramClassDeleteOverrideMethods
-TocParent: amfCLProgramClassMethods
-TocOrder: 110
-
-keywords: DeleteOverride methods
-keywords: CLProgram.DeleteOverride methods
-keywords: removing program file overrides
-keywords: how to, remove program file overrides
-keywords: program file overrides, removing
-keywords: overrides, removing program files
-keywords: physical files, removing program file overrides
-
 ---
 
 Removes database file overrides previously applied to the CLProgram.

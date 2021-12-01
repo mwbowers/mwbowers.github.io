@@ -1,17 +1,6 @@
 ---
 title: SourceProfile.PoolingTimeout Property
 
-Id: dcsSourceProfileClassPoolingTimeoutProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 6
-
-keywords: PoolingTimeout property
-keywords: SourceProfile.PoolingTimeout property
-keywords: database connections, pooling timeout
-keywords: pooling, enabling timeout for database connection
-keywords: pooling, timeout database connection
-keywords: how to, enable connection pooling for database connection
-
 ---
 
 The amount of time (in minutes) in which a connection will remain idle in the pool until it is closed and removed from the pool.

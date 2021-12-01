@@ -1,16 +1,6 @@
 ---
 title: WebJob.EndPrograms Method
 
-Id: amfWebJobClassEndProgramsMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 20
-
-keywords: EndPrograms method
-keywords: WebJob.EndPrograms method
-keywords: web job, ending
-keywords: ending web job
-keywords: how to, end web job
-
 ---
 
 This method terminates the **WebJob** program.

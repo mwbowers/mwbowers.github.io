@@ -1,17 +1,6 @@
 ---
 title: Program.SqlCursor.Close Method
 
-Id: amfProgramSqlCursorClassCloseMethod
-TocParent: amfProgramSqlCursorClassMethods
-TocOrder: 10
-
-keywords: Close method
-keywords: SqlCursor.Close method
-keywords: Program.SqlCursor.Close method
-keywords: SQL, closing cursor
-keywords: SQL cursor, closing
-keywords: how to, close SQL cursor
-
 ---
 
 Closes a **SqlCursor** object.

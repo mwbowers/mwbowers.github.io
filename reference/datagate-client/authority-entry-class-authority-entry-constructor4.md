@@ -1,13 +1,6 @@
 ---
 title: AuthorityEntry(string, AuthorityTypes, boolean)
 
-Id: dcsAuthorityEntryClassAuthorityEntryConstructor4
-TocParent: dcsAuthorityEntryClassAuthorityEntryConstructors
-TocOrder: 3
-
-keywords: AuthorityTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AuthorityTypes, used by
-
 ---
 
 <span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a profile, its corresponding authorization types, and the profile type</span>.

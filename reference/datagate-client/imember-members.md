@@ -1,13 +1,6 @@
 ---
 title: IMember Members
 
-Id: dcsIMemberMembers
-TocParent: dcsIMemberClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 IMember class
-keywords: IMember class, all members
-
 ---
 
 [IMember Overview](imember-class.html) 

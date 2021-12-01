@@ -1,13 +1,6 @@
 ---
 title: As400Program Methods
 
-Id: dcsAs400ProgramMethodsMain
-TocParent: dcsAs400ProgramClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 As400Program class
-keywords: As400Program class, methods
-
 ---
 
 ## Public Methods

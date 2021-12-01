@@ -1,10 +1,6 @@
 ---
 title: Program.DBScaledParm Constructor (DbType,Object,int,int)
 
-Id: amfProgramDBScaledParmClassConstructor3
-TocParent: amfProgramDBScaledParmClassConstructors
-TocOrder: 20
-
 ---
 
 Constructs a new instance of a **DBScaledParm** object with the data type, value, length, and scale indicated.

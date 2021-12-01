@@ -1,18 +1,6 @@
 ---
 title: AdgDataSet.Formats Property
 
-Id: dcsAdgDataSetClassFormatsProperty
-TocParent: dcsAdgDataSetProperties
-TocOrder: 4
-
-keywords: AdgDataSet.Formats property
-keywords: Formats property
-keywords: record formats, number of in an AdgDataSet
-keywords: number of, record formats in an AdgDataSet
-keywords: how to, determine number of record formats in an AdgDataSet
-keywords: format identifiers, number of record formats in an AdgDataSet
-keywords: binary format identifiers associated with an AdgDataSet, number of
-
 ---
 
 The number of formats in this **AdgDataSet** .

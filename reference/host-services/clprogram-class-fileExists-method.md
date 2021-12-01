@@ -1,16 +1,6 @@
 ---
 title: CLProgram.FileExists Method
 
-Id: amfCLProgramClassFileExistsMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 120
-
-keywords: FileExists method
-keywords: CLProgram.FileExists method
-keywords: how to, determine if file exists
-keywords: files, existing
-keywords: existing files
-
 ---
 
 Returns **True** if a file exists, otherwise it returns **False** .

@@ -1,24 +1,6 @@
 ---
 title: AdgObserver Delegate
 
-Id: dcsAdgObserverDelegate
-TocParent: dcsWhatsNewDelegates
-TocOrder: 1
-
-keywords: delegates [DCS 16.0 AdgObserver
-keywords: AdgObserver delegate
-
-keywords: repair database files in library, feedback
-keywords: database library lists, repair database files, feedback
-keywords: database libraries, repair database files, feedback
-keywords: database files, repair files in library, feedback
-keywords: how to, repair database files in library, feedback
-keywords: how to, invoke automatic diagnostic and repair function for library files, feedback
-keywords: database files, repair single file, feedback
-keywords: repair single database file, feedback
-keywords: how to, repair database file, feedback
-keywords: how to, invoke automatic diagnostic and repair function for a file, feedback
-
 ---
 
 Defines a "call-back" method to report progress information to the user program as certain DCS methods operate.

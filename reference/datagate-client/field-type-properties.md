@@ -1,13 +1,6 @@
 ---
 title: FieldType Properties
 
-Id: dcsFieldTypeProperties
-TocParent: dcsFieldTypeClass
-TocOrder: 2
-
-keywords: properties [DCS 16.0 FieldType class
-keywords: FieldType class, properties
-
 ---
 
 [FieldType Overview](field-type-class.html) 

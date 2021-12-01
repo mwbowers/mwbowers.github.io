@@ -1,14 +1,6 @@
 ---
 title: As400Program.Dispose Method
 
-Id: dcsAs400ProgramClassDisposeMethod
-TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 2
-
-keywords: releasing IBM i program system resources
-keywords: Dispose method
-keywords: As400Program.Dispose method
-
 ---
 
 Release unmanaged resources associated with **As400Program** . 

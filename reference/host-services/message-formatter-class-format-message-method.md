@@ -1,17 +1,6 @@
 ---
 title: MessageFormatter.FormatMessage Method
 
-Id: amfMessageFormatterClassFormatMessageMethod
-TocParent: amfMessageFormatterMethods
-TocOrder: 20
-
-keywords: InvalidMessageFormatException
-
-keywords: FormatMessage method
-keywords: MessageFormatter.FormatMessage method
-keywords: message files, newly formatted message
-keywords: how to, format new message
-
 ---
 
 Returns a formatted message.

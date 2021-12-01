@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.Scale Property
 
-Id: dcsPrintDevAttrClassScaleProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 11
-
-keywords: printing, scale, about this property
-keywords: how to, set/return print scale
-keywords: scale, set/return values
-keywords: printers, scale
-keywords: scale, about
-keywords: printer device parameters, scale
-keywords: printers, device parameters, scale
-keywords: Scale property
-keywords: PrintDevAttr.Scale property
-
 ---
 
 The **Scale** specifies the percentage factor by which the printed output is to be scaled.

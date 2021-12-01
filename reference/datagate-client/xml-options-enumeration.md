@@ -1,35 +1,6 @@
 ---
 title: XmlOptions Enumeration
 
-Id: dcsXmlOptionsEnumeration
-TocParent: dcsDataGateClientEnumerations
-TocOrder: 4
-
-keywords: Default enumeration member
-keywords: WithData enumeration member
-keywords: WithMembers enumeration member
-keywords: WithPhysicalFiles enumeration member
-keywords: WithLogicalFile enumeration member
-keywords: WithOlePrintFiles enumeration member
-keywords: WithFiles enumeration member
-keywords: WithDirectories enumeration member
-keywords: WithSubObjects enumeration member
-keywords: CreateObject enumeration member
-keywords: RetainObjectTree enumeration member
-keywords: IgnoreDuplicates enumeration member
-keywords: DontValidate enumeration member
-keywords: RelativeBasePaths enumeration member
-keywords: XmlOptions enumeration
-keywords: enumerations [DCS 16.0 XmlOptions
-keywords: XML [DCS 16.0 database files, create options
-keywords: XML [DCS 16.0 database libraries, create options
-keywords: XML [DCS 16.0 database objects, create options
-keywords: XML [DCS 16.0 database file members, create options
-keywords: XML [DCS 16.0 XML options constants
-keywords: database files, create from XML document, create options
-keywords: database file members, create from XML document, create options
-keywords: database libraries, create from XML document, create options
-
 ---
 
 The **XmlOptions** enumeration defines bit-flag values directing the [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) methods. 

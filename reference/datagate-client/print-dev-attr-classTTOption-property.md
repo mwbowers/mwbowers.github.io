@@ -1,23 +1,6 @@
 ---
 title: PrintDevAttr.TTOption Property
 
-Id: dcsPrintDevAttrClassTTOptionProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 14
-
-keywords: TTOption property
-keywords: PrintDevAttr.TTOption property
-keywords: PrintTrueType enumeration, used by
-keywords: enumerations [DCS 16.0 PrintTrueType, used by
-keywords: printing, true type fonts, about this property
-keywords: printing, graphics, true type fonts
-keywords: how to, specify true type font
-keywords: true type fonts, set/return option
-keywords: printers, true type font indicated
-keywords: true type fonts, about
-keywords: printer device parameters, true type font
-keywords: printers, device parameters, true type font
-
 ---
 
 The **TTOption** property specifies the option for using TrueType Fonts in documents output by capable printers. 

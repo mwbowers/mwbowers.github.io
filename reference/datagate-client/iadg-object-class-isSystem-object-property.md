@@ -1,15 +1,6 @@
 ---
 title: IAdgObject.IsSystemObject Property
 
-Id: dcsIAdgObjectClassIsSystemObjectProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 8
-
-keywords: IsSystemObject property
-keywords: IAdgObject.IsSystemObject property
-keywords: how to, identify system objects
-keywords: system objects, identify
-
 ---
 
 **IsSystemObject** indicates if the existing database object represented by **IAdgObject** is a "system" object, when **IAdgObject** is obtained through [ IDirectory.Enumerate](idirectory-class-enumerate-method.html).

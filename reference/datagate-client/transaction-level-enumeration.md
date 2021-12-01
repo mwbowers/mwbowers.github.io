@@ -1,20 +1,6 @@
 ---
 title: TransactionLevel Enumeration
 
-Id: dcsTransactionLevelEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 31
-
-keywords: High enumeration member
-keywords: Low enumeration member
-keywords: Medium enumeration member
-keywords: Serial enumeration member
-keywords: TransactionLevel enumeration
-keywords: enumerations [DCS 16.0 TransactionLevel
-keywords: transactions, lock level constants
-keywords: transaction lock level constants
-keywords: database transactions, lock level constants
-
 ---
 
 The **TransactionLevel** enumerated constant defines values for the [ TransactionLevel](iadg-transaction-class-transaction-level-property.html) property of [IAdgTransaction](iadg-transaction-class.html).

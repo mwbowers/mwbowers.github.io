@@ -1,17 +1,6 @@
 ---
 title: CLProgram.Asterisk_TCat Method
 
-Id: amfCLProgramClassAsterisk_TCatMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 40
-
-keywords: Asterisk_TCat method
-keywords: CLProgram.Asterisk_TCat method
-keywords: how to, concatenate variables
-keywords: concatenate variables
-keywords: variables, concatenate
-keywords: string manipulation, concatenate variables
-
 ---
 
 Returns a concatenated string.

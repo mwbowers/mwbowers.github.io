@@ -1,18 +1,6 @@
 ---
 title: PaperOrientation Enumeration
 
-Id: dcsPaperOrientationEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 19
-
-keywords: Portrait enumeration member
-keywords: Landscape enumeration member
-keywords: enumerations [DCS 16.0 PaperOrientation
-keywords: PaperOrientation enumeration
-keywords: printing, orientation, constants
-keywords: print orientation, constants
-keywords: printer device parameters, orientation constants
-
 ---
 
 The <span> **PaperOrientation** </span> enumerated constant defines values on the orientation of the paper. 

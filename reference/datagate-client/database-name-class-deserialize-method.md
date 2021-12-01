@@ -1,17 +1,6 @@
 ---
 title: DatabaseName.Deserialize Method
 
-Id: dcsDatabaseNameClassDeserializeMethod
-TocParent: dcsDatabaseNameMethods
-TocOrder: 0
-
-keywords: Deserialize method
-keywords: DatabaseName.Deserialize method
-keywords: database files, deserialize library objects from
-keywords: database file members, deserialize from database
-keywords: how to, deserialize database file objects
-keywords: deserialize database
-
 ---
 
 **Deserialize** reads the XML text and generates a SourceProfile object from its XML representation.

@@ -1,13 +1,6 @@
 ---
 title: Program Class Properties
 
-Id: amfProgramClassProperties
-TocParent: amfProgramClass
-TocOrder: 30
-
-keywords: Program class, properties
-keywords: properties [ASNA.Monarch], Program class
-
 ---
 
 [Program Class Overview](program-class.html) 

@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.Size Property
 
-Id: dcsPrintDevAttrClassSizeProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 12
-
-keywords: Size property
-keywords: PrintDevAttr.Size property
-keywords: printing, paper size, about this property
-keywords: printer device parameters, paper size
-keywords: printers, device parameters, paper size
-keywords: how to, determine printing orientation
-keywords: paper, specifying size
-keywords: paper size, set/return values
-keywords: paper size, about
-
 ---
 
 The **Size** property specifies the standard sheet size of paper in the printer. 

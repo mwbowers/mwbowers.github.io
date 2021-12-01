@@ -1,23 +1,6 @@
 ---
 title: IAdgObject.Unlock Method
 
-Id: dcsIAdgObjectClassUnlockMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 10
-
-keywords: Unlock method
-keywords: IAdgObject.Unlock method
-keywords: ShareTypes enumeration, used by
-keywords: enumerations [DCS 16.0 ShareTypes, used by
-keywords: database connections, unlock when closing
-keywords: connection resources, unlock when disposing
-keywords: how to, remove database object lock restrictions
-keywords: how to, unlock database object lock restrictions
-keywords: database objects, unlock restrictions
-keywords: lock restrictions, re-set for database objects
-keywords: unlock restrictions, re-set for database objects
-keywords: lock facitities, re-set restrictions for database objects
-
 ---
 
 **Unlock** reverses the effects of a previously successful [Lock](iadg-object-class-lock-method.html) method call.

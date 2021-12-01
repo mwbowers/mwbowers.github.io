@@ -1,16 +1,6 @@
 ---
 title: Accessing the DCS Assembly
 
-Id: dcsAccessingtheDCSAssembly
-TocParent: dcsIntroductionMain
-TocOrder: 1
-
-keywords: DataGate Component Suite, accessing the assembly
-keywords: access, DCS assembly
-keywords: accessing the DCS assembly
-keywords: referencing the DCS assembly
-keywords: DCS, accessing the assembly
-
 ---
 
 The first step to accessing and using the ASNA DataGate Component Suite for Visual Studio 2019 after it has been installed is to reference the assembly so you can "see" the objects it contains. 

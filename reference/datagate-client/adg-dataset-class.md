@@ -1,15 +1,6 @@
 ---
 title: AdgDataSet Class
 
-Id: dcsAdgDataSetClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 1
-
-keywords: classes [DCS 16.0 AdgDataSet class
-keywords: AdgDataSet class
-keywords: accessing a file, about AdgDataSet
-keywords: AdgDataSet class, about AdgDataSet class
-
 ---
 
 A DataGate-compatible DataSet class for record-oriented database access.

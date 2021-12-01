@@ -1,18 +1,6 @@
 ---
 title: SourceProfile.Label Property
 
-Id: dcsSourceProfileClassLabelProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 2
-
-keywords: Label property
-keywords: SourceProfile.Label property
-keywords: how to, set label of a database connection
-keywords: how to, return label for a database connection
-keywords: label of a database connection
-keywords: database connections, label returned
-keywords: connections, database label returned
-
 ---
 
 For server platforms that support multiple databases, the label of the database to connect to. 

@@ -1,14 +1,6 @@
 ---
 title: LocalDataCollection Class Members
 
-Id: amfLocalDataCollectionMembers
-TocParent: amfLocalDataCollectionClass
-TocOrder: 5
-
-keywords: LocalDataCollection class
-keywords: LocalDataCollection class, all members
-keywords: members [ASNA.Monarch], LocalDataCollection class
-
 ---
 
 [ LocalDataCollection Class Overview](local-data-collection-class.html) 

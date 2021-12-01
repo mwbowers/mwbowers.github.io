@@ -1,23 +1,6 @@
 ---
 title: MessageTypes Enumeration
 
-Id: amfMessageTypesEnumeration
-TocParent: amfMonarchNamespaceEnumerations
-TocOrder: 30
-
-keywords: enumerations [ASNA.Monarch], MessageTypes
-keywords: MessageTypes enumeration
-keywords: Informational enumeration member
-keywords: Inquiry enumeration member
-keywords: Request enumeration member
-keywords: Completion enumeration member
-keywords: Diagnostic enumeration member
-keywords: Notify enumeration member
-keywords: Escape enumeration member
-keywords: Status enumeration member
-keywords: message files, type options
-keywords: message types, options
-
 ---
 
 The **MessageTypes** enumerated constant defines values for Monarch messages, when [ constructed](message-class-message-constructors.html) and when using the [ SendExternalMessage](program-class-end-external-message-method.html) method and two of the overloaded [ SendProgramMessage](program-class-end-program-message-methods.html) methods in the [ Program](program-class.html) class.

@@ -1,21 +1,6 @@
 ---
 title: IFileObject.ReadDefinition Method
 
-Id: dcsIFileObjectClassReadDefinitionMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 4
-
-keywords: ReadDefinition method
-keywords: IFileObject.ReadDefinition method
-keywords: XML [DCS 16.0 <fileDef>, validate file's definition
-keywords: XML [DCS 16.0 documents, validate database file's definition
-keywords: XML [DCS 16.0 database files, validate file's definition
-keywords: <fileDef>, validate database file definition from XML document
-keywords: database files, <fileDef>, validate from XML document
-keywords: file definitions, validate from XML document
-keywords: database files, XML documents, validate file definition
-keywords: how to, validate XML file definition for database file
-
 ---
 
 **ReadDefinition** reads and validates an XML document fragment describing a database file's definition.

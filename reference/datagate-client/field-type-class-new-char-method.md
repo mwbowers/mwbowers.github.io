@@ -1,16 +1,6 @@
 ---
 title: FieldType.NewChar Method
 
-Id: dcsFieldTypeClassNewCharMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 1
-
-keywords: NewChar method
-keywords: FieldType.NewChar method
-keywords: fields, character
-keywords: character field type defined
-keywords: how to, define character field
-
 ---
 
 Creates a new fixed-width character [ FieldType](field-type-class.html).

@@ -1,14 +1,6 @@
 ---
 title: Program.SqlCursor Class Fields
 
-Id: amfProgramSqlCursorClassFields
-TocParent: amfProgramSqlCursorClass
-TocOrder: 40
-
-keywords: Program.SqlCursor class, fields
-keywords: fields [ASNA.Monarch], Program.SqlCursor class
-keywords: SqlCursor class, fields
-
 ---
 
 [ Program.SqlCursor Class Overview](program-sql-cursor-class.html) 

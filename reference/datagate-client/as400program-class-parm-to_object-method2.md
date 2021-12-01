@@ -1,10 +1,6 @@
 ---
 title: As400Program.ParmToObject(System.Type, string, integer[])
 
-Id: dcsAs400ProgramClassParmToObjectMethod2
-TocParent: dcsAs400ProgramClassParmToObjectMethodMain
-TocOrder: 3
-
 ---
 
 Returns an object of a specific type from the program parameter list.

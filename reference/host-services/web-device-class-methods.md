@@ -1,13 +1,6 @@
 ---
 title: WebDevice Class Methods
 
-Id: amfWebDeviceClassMethods
-TocParent: amfWebDeviceClass
-TocOrder: 20
-
-keywords: WebDevice class, methods
-keywords: methods [ASNA.Monarch], WebDevice class
-
 ---
 
 [WebDevice Class Overview](web-device-class.html) 

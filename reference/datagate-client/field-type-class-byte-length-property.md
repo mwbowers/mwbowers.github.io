@@ -1,16 +1,6 @@
 ---
 title: FieldType.ByteLength Property
 
-Id: dcsFieldTypeClassByteLengthProperty
-TocParent: dcsFieldTypeProperties
-TocOrder: 0
-
-keywords: ByteLength property
-keywords: FieldType.ByteLength property
-keywords: fields, length of in bytes
-keywords: field length in bytes
-keywords: how to, return field length
-
 ---
 
 The length of the field in bytes.<span />

@@ -1,16 +1,6 @@
 ---
 title: FileAdapter.GetPrintProperties Method
 
-Id: dcsFileAdapterClassGetPrintPropertiesMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 12
-
-keywords: GetPrintProperties method
-keywords: FileAdapter.GetPrintProperties method
-keywords: how to, get control properties of open print file
-keywords: print files, get control properties of open file
-keywords: printing, about control properties of open file
-
 ---
 
 Gets the [IPrintProperties](iprint-properties-class.html) of the currently open file.

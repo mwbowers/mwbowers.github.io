@@ -1,10 +1,6 @@
 ---
 title: IAdgTransaction.Commit(string)
 
-Id: dcsIAdgTransactionClassCommitMethod2
-TocParent: dcsIAdgTransactionClassCommitMethods
-TocOrder: 1
-
 ---
 
 Accept changes to the database that have been performed within the current transaction context.

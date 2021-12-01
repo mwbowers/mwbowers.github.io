@@ -1,18 +1,6 @@
 ---
 title: FieldType.Precision Property
 
-Id: dcsFieldTypeClassPrecisionProperty
-TocParent: dcsFieldTypeProperties
-TocOrder: 4
-
-keywords: Precision property
-keywords: FieldType.Precision property
-keywords: decimal fields, maximum number of digits
-keywords: fields, maximum number of digits for decimals
-keywords: maximum number of digits in decimal field
-keywords: how to, define maximum number of digits in decimal field
-keywords: number of, maximum digits in decimal field
-
 ---
 
 The maximum number of digits for decimal fields. 

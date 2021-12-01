@@ -1,17 +1,6 @@
 ---
 title: AdgFactory.NewMember Method
 
-Id: dcsAdgFactoryClassNewMemberMethod
-TocParent: dcsAdgFactoryMethods
-TocOrder: 2
-
-keywords: NewMember method
-keywords: AdgFactory.NewMember method
-keywords: path names, create for database file members
-keywords: create database file members
-keywords: database file members, create
-keywords: how to, create database file members
-
 ---
 
 The **NewMember** method creates a new instance of [IMember](imember-class.html) representing a database member for object management functions.

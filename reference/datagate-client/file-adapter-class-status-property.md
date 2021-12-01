@@ -1,19 +1,6 @@
 ---
 title: FileAdapter.Status Property
 
-Id: dcsFileAdapterClassStatusProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 12
-
-keywords: enumerations [DCS 16.0 FileAdapter.AdapterStatus, used by
-keywords: FileAdapter.AdapterStatus enumeration, used by
-keywords: Status property
-keywords: FileAdapter.Status property
-keywords: database files, state of
-keywords: files, open state of
-keywords: how to, determine open state of database file
-keywords: open state of file
-
 ---
 
 <span>Indicates the status of the file; whether it is open or closed. </span> 

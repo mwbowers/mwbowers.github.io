@@ -1,20 +1,6 @@
 ---
 title: SourceProfile Constructors
 
-Id: dcsSourceProfileConstructorsMain
-TocParent: dcsSourceProfileClass
-TocOrder: 1
-
-keywords: constructors [DCS 16.0 SourceProfile class
-keywords: SourceProfile.SourceProfile constructors
-keywords: SourceProfile class, constructors
-keywords: Windows registry, create database names for connection
-keywords: database names, create for connection
-keywords: registered database names, create for connection
-keywords: database connections, registry names created for connection
-keywords: connections, database name created
-keywords: how to, create database name for connection
-
 ---
 
 Constructs an instance of a **SourceProfile** object.

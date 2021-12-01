@@ -1,19 +1,6 @@
 ---
 title: Job.FileOverrideTable Field
 
-Id: amfJobClassFileOverrideTableField
-TocParent: amfJobFields
-TocOrder: 20
-
-keywords: FileOverrideTable field
-keywords: Job.FileOverrideTable field
-keywords: getting job file override table
-keywords: how to, get job file overrides
-keywords: jobs, getting file overrides
-keywords: job file overrides, getting
-keywords: job overrides, getting
-keywords: overrides, getting for job files
-
 ---
 
 The **FileOverrideTable** contains a readonly reference to an instance of a **System.Collection.Hashtable** representing the file overrides for the job.

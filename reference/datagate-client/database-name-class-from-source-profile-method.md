@@ -1,13 +1,6 @@
 ---
 title: DatabaseName.FromSourceProfile Method
 
-Id: dcsDatabaseNameClassFromSourceProfileMethod
-TocParent: dcsDatabaseNameMethods
-TocOrder: 1
-
-keywords: FromSourceProfile method
-keywords: DatabaseName.FromSourceProfile method
-
 ---
 
 Returns a SourceProfile object.

@@ -1,17 +1,6 @@
 ---
 title: IAdgObject Class
 
-Id: dcsIAdgObjectClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 9
-
-keywords: IAdgObject class
-keywords: interfaces [DCS 16.0 base IAdgObject class
-keywords: classes [DCS 16.0 IAdgObject class
-keywords: IAdgObject class, about IAdgObject class
-keywords: database objects, about database files
-keywords: database files, about database objects
-
 ---
 
 **IAdgObject** is the base interface implemented by all DataGate Component Suite (DCS) class objects modeling database objects. The leaf interfaces of these classes are [IDirectory](idirectory-class.html), [IFileObject](ifile-object-class.html), and [ IMember](imember-class.html). Each of these inherits the methods and properties of **IAdgObject** , so that an instance of **IDirectory** , **IFileObject** , or **IMember** is also an instance of **IAdgObject** .

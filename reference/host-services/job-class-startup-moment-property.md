@@ -1,18 +1,6 @@
 ---
 title: Job.StartupMoment Property
 
-Id: amfJobClassStartupMomentProperty
-TocParent: amfJobProperties
-TocOrder: 60
-
-keywords: StartupMoment property
-keywords: Job.StartupMoment property
-keywords: jobs, startup time
-keywords: startup, job startup time
-keywords: datetime, job startup
-keywords: date time, job startup
-keywords: how to, determine job startup time
-
 ---
 
 Gets the System.DateTime when the job was started.

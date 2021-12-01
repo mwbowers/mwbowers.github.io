@@ -1,16 +1,6 @@
 ---
 title: IAdgObject.DateModified Property
 
-Id: dcsIAdgObjectClassDateModifiedProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 5
-
-keywords: DateModified property
-keywords: IAdgObject.DateModified property
-keywords: how to, return object last modified timestamp recorded by database provider
-keywords: timestamps, recorded by database provider when object was last modified
-keywords: database objects, return database providers last modified timestamp
-
 ---
 
 **DateModified** is a timestamp recorded by the database provider when the database object is modified.

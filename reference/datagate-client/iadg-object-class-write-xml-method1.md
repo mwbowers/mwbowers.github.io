@@ -1,12 +1,6 @@
 ---
 title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
 
-Id: dcslAdgObjectClassWriteXMlMethod1
-TocParent: dcsIAdgObjectClassWriteXmlMethods
-TocOrder: 0
-
-keywords: XmlOptions enumeration, used by
-
 ---
 
 **WriteXml** produces an XML document fragment representing the [IAdgObject](iadg-object-class.html). Optionally, the document may describe a hierarchy of database objects.

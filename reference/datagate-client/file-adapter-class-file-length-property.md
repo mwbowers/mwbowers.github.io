@@ -1,16 +1,6 @@
 ---
 title: FileAdapter.FileLength Property
 
-Id: dcsFileAdapterClassFileLengthProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 5
-
-keywords: FileLength property,
-keywords: FileAdapter.FileLength property
-
-keywords: number of, records in open database file
-keywords: database files, number of deleted and non-deleted records in open file
-
 ---
 
 The number of deleted and non-deleted records in the open database file. 

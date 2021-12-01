@@ -1,13 +1,6 @@
 ---
 title: CLProgram.DeleteOverride(string, OverrideScope)
 
-Id: amfCLProgramClassDeleteOverrideMethod2
-TocParent: amfCLProgramClassDeleteOverrideMethods
-TocOrder: 20
-
-keywords: enumerations [ASNA.Monarch], OverrideScope, used by
-keywords: OverrideScope enumeration, used by
-
 ---
 
 Removes the database file override previously applied to the CLProgram.

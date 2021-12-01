@@ -1,13 +1,6 @@
 ---
 title: IDataArea.ParmToObject Methods
 
-Id: dcsIDataAreaClassParmToObjectMethods
-TocParent: dcsIDataAreaClassMembers
-TocOrder: 50
-
-keywords: ParmToObject methods
-keywords: IDataArea.ParmToObject methods
-
 ---
 
 	<br />

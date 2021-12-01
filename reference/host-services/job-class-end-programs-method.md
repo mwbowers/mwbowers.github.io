@@ -1,17 +1,6 @@
 ---
 title: Job.EndPrograms Method
 
-Id: amfJobClassEndProgramsMethod
-TocParent: amfJobMethods
-TocOrder: 50
-
-keywords: EndPrograms method
-keywords: Job.EndPrograms method
-keywords: ending job programs
-keywords: how to, end all job programs
-keywords: jobs, ending all programs
-keywords: programs, ending all active in job
-
 ---
 
 This method de-activates any program that is still active.

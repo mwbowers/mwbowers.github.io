@@ -1,16 +1,6 @@
 ---
 title: Job.messageFileFolder Field
 
-Id: amfJobClassmessageFileFolderField
-TocParent: amfJobFields
-TocOrder: 40
-
-keywords: messageFileFolder field
-keywords: Job.messageFileFolder field
-keywords: jobs, message file folder
-keywords: message files, folder
-keywords: how to, determine message file folder
-
 ---
 
 A reference to the message file folder object containing the message file for this job.

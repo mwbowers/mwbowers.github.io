@@ -1,15 +1,6 @@
 ---
 title: RangeMode Enumeration
 
-Id: dcsRangeModeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 24
-
-keywords: First enumeration member
-keywords: Last enumeration member
-keywords: RangeMode enumeration
-keywords: enumerations [DCS 16.0 RangeMode
-
 ---
 
 For [FileAdapter](file-adapter-class.html) range methods, defines how to access the first record in the range.

@@ -1,13 +1,6 @@
 ---
 title: IPrintProperties Methods
 
-Id: dcsIPrintPropertiesMethods
-TocParent: dcsIPrintPropertiesClass
-TocOrder: 1
-
-keywords: methods [DCS 16.0 IPrintProperties class
-keywords: IPrintProperties class, methods
-
 ---
 
 [IPrintProperties Overview](iprint-properties-class.html) 

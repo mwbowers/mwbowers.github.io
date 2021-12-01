@@ -1,13 +1,6 @@
 ---
 title: LocalDataCollection Class Methods
 
-Id: amfLocalDataCollectionMethods
-TocParent: amfLocalDataCollectionClass
-TocOrder: 20
-
-keywords: LocalDataCollection class, methods
-keywords: methods [ASNA.Monarch], LocalDataCollection class
-
 ---
 
 [ LocalDataCollection Class Overview](local-data-collection-class.html) 

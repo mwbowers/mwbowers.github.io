@@ -1,15 +1,6 @@
 ---
 title: CLProgram.ClearPFM Method
 
-Id: amfCLProgramClassClearPFMMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 60
-
-keywords: ClearPFM method
-keywords: CLProgram.ClearPFM method
-keywords: how to, remove data from file member
-keywords: physical files, removing data
-
 ---
 
 This method removes all data from the specified member of a physical file.

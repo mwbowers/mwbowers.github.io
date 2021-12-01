@@ -1,18 +1,6 @@
 ---
 title: WebDisplayFile.FeedbackField Property
 
-Id: amfWebDisplayFileClassFeedbackFieldProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 60
-
-keywords: FeedbackField property
-keywords: WebDisplayFile.FeedbackField property
-keywords: feedback, field in display file
-keywords: feedback field in display file
-keywords: display files, feedback field
-keywords: how to, set feedback field in display file
-keywords: how to, return feedback field in display file
-
 ---
 
 Gets or sets the specific field for which the feedback is to be provided.

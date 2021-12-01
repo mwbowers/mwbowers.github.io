@@ -1,17 +1,6 @@
 ---
 title: Program Class
 
-Id: amfProgramClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 15
-
-keywords: Program class, about Program class
-keywords: Program class
-keywords: classes [ASNA.Monarch], Program class
-keywords: program data areas
-keywords: message queues
-keywords: program control
-
 ---
 
 The **Program** class provides activation/invocation semantics. It conforms to certain conventions allowing it to be the Target of a Call operation.

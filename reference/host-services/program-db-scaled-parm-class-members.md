@@ -1,13 +1,6 @@
 ---
 title: Program.DBScaledParm Class Members
 
-Id: amfProgramDBScaledParmClassMembers
-TocParent: amfProgramDBScaledParmClass
-TocOrder: 5
-
-keywords: Program.DBScaledParm class, all members
-keywords: members [ASNA.Monarch], Program.DBScaledParm class
-
 ---
 
 [ Program.DBScaledParm Class Overview](program-db-scaled-parm-class.html) 

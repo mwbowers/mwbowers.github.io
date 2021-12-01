@@ -1,7 +1,5 @@
 ---
 title: ASNA Monarch® Base - Concepts
-Id: Welcome
-TocParent: -1
 ---
 
 The application you are enhancing, maintaining or trying to understand probably originated on an IBM i and was migrated with ASNA Monarch technology.

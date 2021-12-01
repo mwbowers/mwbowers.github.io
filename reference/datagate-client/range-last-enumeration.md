@@ -1,17 +1,6 @@
 ---
 title: RangeLast Enumeration
 
-Id: dcsRangeLastEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 23
-
-keywords: Bottom enumeration member
-keywords: Exclude enumeration member
-keywords: Include enumeration member
-keywords: SameAsFirst enumeration member
-keywords: RangeLast enumeration
-keywords: enumerations [DCS 16.0 RangeLast
-
 ---
 
 Defines parameter values for [FileAdapter](file-adapter-class.html) range access methods.

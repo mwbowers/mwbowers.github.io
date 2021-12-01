@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.GetEnumerator Method
 
-Id: amfLocalDataCollectionClassGetEnumeratorMethod
-TocParent: amfLocalDataCollectionMethods
-TocOrder: 40
-
-keywords: GetEnumerator method
-keywords: LocalDataCollection.GetEnumerator method
-keywords: ldc, get enumerator
-keywords: LDC, get enumerator
-keywords: local data collection, enumerator
-keywords: how to, set local data collection enumerator
-
 ---
 
 Returns an enumerator that can iterate through the elements in a dictionary.

@@ -1,17 +1,6 @@
 ---
 title: Program.MonarchJob Property
 
-Id: amfProgramClassMonarchJobProperty
-TocParent: amfProgramClassProperties
-TocOrder: 10
-
-keywords: MonarchJob property
-keywords: Program.MonarchJob property
-keywords: jobs, name
-keywords: job name
-keywords: program control, job name
-keywords: how to, get program job name
-
 ---
 
 Gets the name of the [ ASNA.Monarch.Job](job-class.html) under which the **Program** is running.

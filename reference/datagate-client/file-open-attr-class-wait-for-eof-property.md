@@ -1,19 +1,6 @@
 ---
 title: FileOpenAttr.WaitForEOF Property
 
-Id: dcsFileOpenAttrClassWaitForEOFProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 5
-
-keywords: WaitForEOF property
-keywords: FileOpenAttr.WaitForEOF property
-keywords: wait for more records at EOF
-keywords: time, wait for more records at EOF
-keywords: end of file, time to wait for more records
-keywords: how to, wait for more records at EOF
-keywords: database files, wait time for more records at EOF
-keywords: files, wait time for more records at EOF
-
 ---
 
 Time, in seconds, that a process will wait for more records at end of file. 

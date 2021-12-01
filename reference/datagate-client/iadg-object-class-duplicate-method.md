@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.Duplicate Method
 
-Id: dcsIAdgObjectClassDuplicateMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 1
-
-keywords: Duplicate method
-keywords: IAdgObject.Duplicate method
-keywords: DuplicateOptions enumeration, used by
-keywords: enumerations [DCS 16.0 DuplicateOptions, used by
-keywords: database objects, duplicate with new location and name
-keywords: how to, duplicate database objects
-
 ---
 
 **Duplicate** creates a duplicate of the database object represented by **IAdgObject** with parameters for specifying the location and name of the duplicated object.

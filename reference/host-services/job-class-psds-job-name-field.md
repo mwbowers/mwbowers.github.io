@@ -1,18 +1,6 @@
 ---
 title: Job.PsdsJobName Field
 
-Id: amfJobClassPsdsJobNameField
-TocParent: amfJobFields
-TocOrder: 50
-
-keywords: PsdsJobName field
-keywords: Job.PsdsJobName field
-keywords: jobs, name
-keywords: PSDS, job name
-keywords: program status data structures, job name
-keywords: data structures, program status job name
-keywords: how to, determine job name
-
 ---
 
 The 10-character job name field in the program status data structure.

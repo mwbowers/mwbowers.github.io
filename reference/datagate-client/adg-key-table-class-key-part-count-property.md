@@ -1,15 +1,6 @@
 ---
 title: AdgKeyTable.KeyPartCount Property
 
-Id: dcsAdgKeyTableClassKeyPartCountProperty
-TocParent: dcsAdgKeyTableProperties
-TocOrder: 1
-
-keywords: AdgKeyTable.KeyPartCount property
-keywords: KeyPartCount property
-keywords: fields, getting the number composing the key
-keywords: number of, fields composing the key
-
 ---
 
 Gets or sets the number of key fields composing the key value.

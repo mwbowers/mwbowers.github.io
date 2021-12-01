@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.CurrentFormatIndex Property
 
-Id: dcsFileAdapterClassCurrentFormatIndexProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 2
-
-keywords: CurrentFormatIndex property
-keywords: FileAdapter.CurrentFormatIndex property
-keywords: database files, index for current record format
-keywords: files, index for current record format
-keywords: records, index for record format
-keywords: index for record format
-keywords: how to, get index for record format
-
 ---
 
 An integer containing the index for the record format of the record most recently accessed by the **FileAdapter** . 

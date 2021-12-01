@@ -1,17 +1,6 @@
 ---
 title: ProgParmType Class
 
-Id: dcsProgParmTypeClass
-TocParent: dcsASNADataGateDataLinkClasses
-TocOrder: 1
-
-keywords: classes [DCS 16.0 ProgParmType class
-keywords: ProgParmType class
-keywords: ProgParmType class, about ProgParmType class
-keywords: fields, about fields as program parameters
-keywords: program parameters, simple data types class
-keywords: parameters, simple data types class
-
 ---
 
 Defines the data type of a simple iSeries program parameter.

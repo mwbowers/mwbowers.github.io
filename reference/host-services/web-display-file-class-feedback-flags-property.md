@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.FeedbackFlags Property
 
-Id: amfWebDisplayFileClassFeedbackFlagsProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 70
-
-keywords: FeedbackFlags property
-keywords: WebDisplayFile.FeedbackFlags property
-keywords: feedback, flags for field in display file
-keywords: feedback flags for field in display file
-keywords: display files, feedback flags for field
-keywords: how to, determine feedback flags for field in display file
-
 ---
 
 Gets the flags used to provide feedback for specific field on the web form.

@@ -1,12 +1,6 @@
 ---
 title: Accessing a File
 
-Id: dcsAccessingaFileMain
-TocParent: dcsProgrammersGuideMain
-TocOrder: 3
-
-keywords: accessing a file, contents of
-
 ---
 
 ## Contents

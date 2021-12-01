@@ -1,17 +1,6 @@
 ---
 title: Program.DBParm Constructors
 
-Id: amfProgramDBParmClassConstructors
-TocParent: amfProgramDBParmClass
-TocOrder: 101
-
-keywords: Program.DBParm.Program.DBParm constructors
-keywords: Program.DBParm class, constructors
-keywords: constructors [ASNA.Monarch], Program.DBParm class
-keywords: how to, construct new SQL parameters
-keywords: SQL parameters, new
-keywords: SQL parameters, constructing
-
 ---
 
 This overloaded method constructs a new instance of a **Program.DBParm** object.

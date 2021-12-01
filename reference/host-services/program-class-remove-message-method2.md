@@ -1,13 +1,6 @@
 ---
 title: Program.RemoveMessage Method (string, string)
 
-Id: amfProgramClassRemoveMessageMethod2
-TocParent: amfProgramClassRemoveMessageMethods
-TocOrder: 20
-
-keywords: MessageQueueNotFoundException
-keywords: UnsupportedOperationException
-
 ---
 
 Removes messages from the program queue.

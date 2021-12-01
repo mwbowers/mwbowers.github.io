@@ -1,25 +1,6 @@
 ---
 title: SourceProfile.User Property
 
-Id: dcsSourceProfileClassUserProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 11
-
-keywords: User property
-keywords: SourceProfile.User property
-keywords: host platform, authenticating user or profile name, 
-keywords: profile name, authenticating host platform access
-keywords: user name, authenticating host platform access
-keywords: database files, authenticating user or profile name host platform access
-keywords: _Star_PROMPT authentication usage
-keywords: database files, _Star_PROMPT authentication usage
-keywords: database files, _Star_DOMAIN authentication usage
-keywords: _Star_DOMAIN authentication usage
-keywords: authenticating user or profile name host platform access
-keywords: authentication, user or profile name host platform access
-keywords: how to, use user or profile name for host platform access
-keywords: how to, prompt user for user name and password
-
 ---
 
 A user or profile name for authenticating access to the host platform.

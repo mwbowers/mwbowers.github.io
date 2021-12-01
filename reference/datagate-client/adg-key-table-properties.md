@@ -1,13 +1,6 @@
 ---
 title: AdgKeyTable Properties
 
-Id: dcsAdgKeyTableProperties
-TocParent: dcsAdgKeyTableClass
-TocOrder: 2
-
-keywords: AdgKeyTable class, properties
-keywords: properties [DCS 16.0 AdgKeyTable class
-
 ---
 
 [AdgKeyTable Overview](adg-key-table-class.html) 

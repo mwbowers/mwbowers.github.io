@@ -1,13 +1,6 @@
 ---
 title: WebJob Class Members
 
-Id: amfWebJobClassMembers
-TocParent: amfWebJobClass
-TocOrder: 5
-
-keywords: WebJob class, all members
-keywords: members [ASNA.Monarch], WebJob class
-
 ---
 
 [WebJob Class Overview](web-job-class.html) 

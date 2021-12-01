@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_Query Method (DbConnection,string)
 
-Id: amfProgramClassExecuteSQL_QueryMethod4
-TocParent: amfProgramClassExecuteSQL_QueryMethods
-TocOrder: 30
-
 ---
 
 Executes a SQL query specifying the database connection and SQL statement without parameters.

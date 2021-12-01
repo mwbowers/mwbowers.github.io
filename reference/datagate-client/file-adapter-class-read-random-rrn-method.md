@@ -1,25 +1,6 @@
 ---
 title: FileAdapter.ReadRandomRRN Method
 
-Id: dcsFileAdapterClassReadRandomRRNMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 17
-
-keywords: ReadRandomRRN method
-keywords: FileAdapter.ReadRandomRRN method
-keywords: enumerations [DCS 16.0 LockRequest, used by
-keywords: enumerations [DCS 16.0 ReadRandomMode, used by
-keywords: LockRequest enumeration, used by
-keywords: ReadRandomMode enumeration, used by
-keywords: database files, read records by RRN
-keywords: files, read records by RRN
-keywords: how to, read records by RRN
-keywords: read records randomly by RRN
-keywords: records, read randomly by RRN
-keywords: RRN, read a database file with
-keywords: relative record numbers, read a database file with
-keywords: files, record locking override
-
 ---
 
 Read the database file record specified.

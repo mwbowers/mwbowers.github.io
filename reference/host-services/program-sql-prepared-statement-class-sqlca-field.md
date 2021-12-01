@@ -1,20 +1,6 @@
 ---
 title: Program.SqlPreparedStatement.SQLCA Field
 
-Id: amfProgramSqlPreparedStatementClassSQLCAField
-TocParent: amfProgramSqlPreparedStatementClassFields
-TocOrder: 20
-
-keywords: SQLCA field
-keywords: SqlPreparedStatement.SQLCA field
-keywords: Program.SqlPreparedStatement.SQLCA field
-keywords: SQL, SQLCA
-keywords: SQL PREPARE, SQLCA
-keywords: prepare, SQLCA
-keywords: SQLCA
-keywords: SQL prepared statement, SQLCA
-keywords: SQL, prepared statement, SQLCA
-
 ---
 
 <code>[ SQL_CommunicationsArea](program-sql-communications-area-class.html)</code> object representing the SQLCA to trap and report run-time errors for the <code> **SqlPreparedStatement** </code>.

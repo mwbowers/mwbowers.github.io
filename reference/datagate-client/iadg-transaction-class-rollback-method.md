@@ -1,17 +1,6 @@
 ---
 title: IAdgTransaction.Rollback Method
 
-Id: dcsIAdgTransactionClassRollbackMethod
-TocParent: dcsIAdgTransactionMethods
-TocOrder: 1
-
-keywords: Rollback method
-keywords: IAdgTransaction.Rollback method
-
-keywords: database transactions, cancel database changes within current context
-keywords: manual transactions, cancel database changes within current context
-keywords: automatic transactions, cancel database changes within current context and begin new
-
 ---
 
 Cancel changes to the database that have been performed within the current transaction context.

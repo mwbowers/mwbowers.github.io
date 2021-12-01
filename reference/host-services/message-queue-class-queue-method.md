@@ -1,18 +1,6 @@
 ---
 title: MessageQueue.Queue Method
 
-Id: amfMessageQueueClassQueueMethod
-TocParent: amfMessageQueueClassMethods
-TocOrder: 100
-
-keywords: queuing messages
-keywords: messages, adding to queue
-keywords: how to, add messages to queue
-keywords: message queues, adding to queue
-keywords: message files, queuing messages
-keywords: Queue method
-keywords: MessageQueue.Queue method
-
 ---
 
 Places an **ASNA.Monarch.Message** object in the message queue.

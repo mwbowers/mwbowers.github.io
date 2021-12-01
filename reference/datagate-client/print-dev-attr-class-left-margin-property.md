@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.LeftMargin Property
 
-Id: dcsPrintDevAttrClassLeftMarginProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 6
-
-keywords: LeftMargin property
-keywords: PrintDevAttr.LeftMargin property
-keywords: printing, left margin, about this property
-keywords: printer device parameters, left margin
-keywords: printers, device parameters, left margin
-keywords: how to, set/return left margin size
-keywords: left margins, set size of
-keywords: left margins, return size of
-keywords: left margins, about
-
 ---
 
 The **LeftMargin** returns or sets the left margin of the output by the specified printer.

@@ -1,10 +1,6 @@
 ---
 title: Programmers Guide
 
-Id: dcsProgrammersGuideMain
-TocParent: welcome
-TocOrder: 0
-
 ---
 
 This section of the ASNA DataGate Component Suite documentation contains the basics to assist you in using DCS.

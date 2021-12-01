@@ -1,21 +1,6 @@
 ---
 title: FileOpenAttr.ShareTypes Property
 
-Id: dcsFileOpenAttrClassShareTypesProperty
-TocParent: dcsFileOpenAttrProperties
-TocOrder: 4
-
-keywords: ShareTypes property
-keywords: FileOpenAttr.ShareTypes property
-keywords: database files, concurrent access specified
-keywords: files, concurrent access specified
-keywords: share an open file
-keywords: concurrent access of an open file
-keywords: open file, concurrent access
-keywords: open file, sharing
-keywords: ShareTypes enumeration, used by
-keywords: enumerations [DCS 16.0 ShareTypes, used by
-
 ---
 
 Specify concurrent access on the open file.

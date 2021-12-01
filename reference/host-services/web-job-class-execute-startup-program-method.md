@@ -1,16 +1,6 @@
 ---
 title: WebJob.ExecuteStartupProgram Method
 
-Id: amfWebJobClassExecuteStartupProgramMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 30
-
-keywords: how to, startup web job program
-keywords: startup web job program
-keywords: web job, startup program
-keywords: ExecuteStartupProgram method
-keywords: WebJob.ExecuteStartupProgram method
-
 ---
 
 Executes the startup command-processing program.

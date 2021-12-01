@@ -1,17 +1,6 @@
 ---
 title: AdgDataSet.PrepareRow Methods
 
-Id: dcsAdgDataSetClassPrepareRowMethodMain
-TocParent: dcsAdgDataSetMethods
-TocOrder: 10
-
-keywords: PrepareRow methods
-keywords: AdgDataSet.PrepareRow methods
-keywords: rows, create DataRow objects
-keywords: DataRow objects, prepare to be inserted into DataTable
-keywords: how to, prepare DataRow object for insertion into DataTable
-keywords: tables, prepare DataRow objects for
-
 ---
 
 Creates a DataRow object in preparation for adding it to the **AdgDataSet** .

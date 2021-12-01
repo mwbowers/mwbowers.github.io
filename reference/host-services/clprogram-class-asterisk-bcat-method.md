@@ -1,17 +1,6 @@
 ---
 title: CLProgram.Asterisk_BCat Method
 
-Id: amfCLProgramClassAsterisk_BCatMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 30
-
-keywords: Asterisk_BCat method
-keywords: CLProgram.Asterisk_BCat method
-keywords: how to, concatenate variables
-keywords: concatenate variables
-keywords: variables, concatenate
-keywords: string manipulation, concatenate variables
-
 ---
 
 Returns a concatenated string.

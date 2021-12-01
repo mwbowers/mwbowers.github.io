@@ -1,18 +1,6 @@
 ---
 title: ILibraryList.AddEntry Method
 
-Id: dcsILibraryListClassAddEntryMethod
-TocParent: dcsILibraryListMethods
-TocOrder: 0
-
-keywords: AddEntry method
-keywords: ILibraryList.AddEntry method
-keywords: LiblPosition enumeration, used by
-keywords: enumerations [DCS 16.0 LiblPosition, used by
-keywords: library lists, add entries to a database
-keywords: database library lists, add entries
-keywords: how to, add entries to database library list
-
 ---
 
 **AddEntry** adds a library list entry to a database in the library represented by [ILibraryList](ilibrary-list-class.html).

@@ -1,10 +1,6 @@
 ---
 title: Job.DeleteOverride Method(string, integer)
 
-Id: amfJobClassDeleteOverrideMethod3
-TocParent: amfJobClassDeleteOverrideMethods
-TocOrder: 30
-
 ---
 
 This method removes the file override previously applied to the job for the number of call levels indicated.

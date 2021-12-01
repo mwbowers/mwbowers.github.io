@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.GetSharedFile Method
 
-Id: amfWebDisplayFileClassGetSharedFileMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 70
-
-keywords: GetSharedFile method
-keywords: WebDisplayFile.GetSharedFile method
-keywords: how to, return shared display file for declared file
-keywords: display files, returning shared for declared file
-keywords: shared files
-keywords: shared files, returning for declared file
-
 ---
 
 Returns the **WebDisplayFile** for the declared file.

@@ -1,17 +1,6 @@
 ---
 title: IAdgObject.Rename Method
 
-Id: dcsIAdgObjectClassRenameMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 7
-
-keywords: Rename method
-keywords: IAdgObject.Rename method
-keywords: database objects, rename bases
-keywords: rename database objects bases
-keywords: base objects, rename
-keywords: how to, rename database base objects
-
 ---
 
 The **Rename** method renames an object without changing its location in the database.

@@ -1,13 +1,6 @@
 ---
 title: AuthorityEntry Fields
 
-Id: dcsAuthorityEntryFields
-TocParent: dcsAuthorityEntryClass
-TocOrder: 2
-
-keywords: fields [DCS 16.0 AuthorityEntry class
-keywords: AuthorityEntry class, fields
-
 ---
 
 [AuthorityEntry Overview](authority-entry-class.html) 

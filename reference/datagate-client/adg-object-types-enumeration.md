@@ -1,16 +1,6 @@
 ---
 title: AdgObjectTypes Enumeration
 
-Id: dcsAdgObjectTypesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 2
-
-keywords: enumerations [DCS 16.0 AdgObjectTypes
-keywords: AdgObjectTypes enumeration
-keywords: File enumeration member
-keywords: Member enumeration member
-keywords: Directory enumeration member
-
 ---
 
 The <span> **AdgObjectTypes** </span> enumerated constant defines values for the [ AdgObjectType](iadg-object-class-adg-object-type-property.html) property of [IAdgObject](iadg-object-class.html). 

@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.AttnID Property
 
-Id: amfWebDisplayFileClassAttnIDProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 10
-
-keywords: AttnID property
-keywords: WebDisplayFile.AttnID property
-keywords: record formats, setting ids for message subfile
-keywords: how to, set ids for display file message subfile
-keywords: display files, setting ids for message subfile
-
 ---
 
 **WebDisplayFile** sets the unique identification for each format record in the message subfile table.

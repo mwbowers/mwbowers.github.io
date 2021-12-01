@@ -1,15 +1,6 @@
 ---
 title: Job.CurrentJob Property
 
-Id: amfJobClassCurrentJobProperty
-TocParent: amfJobProperties
-TocOrder: 20
-
-keywords: CurrentJob property
-keywords: Job.CurrentJob property
-keywords: jobs, current
-keywords: current job
-
 ---
 
 Gets the Job object corresponding to this job.

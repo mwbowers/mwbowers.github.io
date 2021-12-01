@@ -1,16 +1,6 @@
 ---
 title: IAdgTransaction.Name Property
 
-Id: dcsIAdgTransactionClassNameProperty
-TocParent: dcsIAdgTransactionProperties
-TocOrder: 1
-
-keywords: Name property
-keywords: IAdgTransaction.Name property
-keywords: database transactions, name of
-keywords: name of database transaction
-keywords: how to, get name of database transaction
-
 ---
 
 The name of the transaction.

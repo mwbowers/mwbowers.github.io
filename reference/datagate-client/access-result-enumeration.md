@@ -1,16 +1,6 @@
 ---
 title: AccessResult Enumeration
 
-Id: dcsAccessResultEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 1
-
-keywords: AccessResult enumeration
-keywords: enumerations [DCS 16.0 AccessResult
-keywords: finding records
-keywords: OK enumeration member
-keywords: NotFound enumeration member
-
 ---
 
 Defines modes on whether a record was found.

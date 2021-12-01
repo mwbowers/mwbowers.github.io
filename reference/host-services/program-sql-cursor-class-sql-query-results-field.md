@@ -1,18 +1,6 @@
 ---
 title: Program.SqlCursor.SqlQueryResults Field
 
-Id: amfProgramSqlCursorClassSqlQueryResultsField
-TocParent: amfProgramSqlCursorClassFields
-TocOrder: 40
-
-keywords: SqlQueryResults field
-keywords: Program.SqlQueryResults field
-keywords: SQL query result set
-keywords: SQL, query results
-keywords: SQL query, results
-keywords: SQL statement, results
-keywords: how to, SQL results
-
 ---
 
 A collection representing the query results (string and object) allowing values for a particular column to be accessed by name.

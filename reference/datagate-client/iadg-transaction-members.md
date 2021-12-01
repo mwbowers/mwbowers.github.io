@@ -1,12 +1,6 @@
 ---
 title: IAdgTransaction Members
 
-Id: dcsIAdgTransactionMembers
-TocParent: dcsIAdgTransactionClass
-TocOrder: 0
-
-keywords: IAdgTransaction class, all members
-
 ---
 
 [IAdgTransaction Overview](iadg-transaction-class.html) 

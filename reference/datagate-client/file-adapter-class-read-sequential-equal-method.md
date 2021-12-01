@@ -1,23 +1,6 @@
 ---
 title: FileAdapter.ReadSequentialEqual Method
 
-Id: dcsFileAdapterClassReadSequentialEqualMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 20
-
-keywords: FileAdapter.ReadSequentialEqual method
-keywords: ReadSequentialEqual method
-keywords: enumerations [DCS 16.0 LockRequest, used by
-keywords: enumerations [DCS 16.0 ReadEqualMode, used by
-keywords: LockRequest enumeration, used by
-keywords: ReadEqualMode enumeration, used by
-keywords: database files, read records sequentially
-keywords: files, read records sequentially
-keywords: how to, read records sequentially
-keywords: read records sequentially
-keywords: records, read sequentially
-keywords: files, record locking override
-
 ---
 
 Read a database file record adjacent to the current position with a key equal to the key of the current record, or optionally, a key equal to the specified key.

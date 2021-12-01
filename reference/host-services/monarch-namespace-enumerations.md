@@ -1,15 +1,6 @@
 ---
 title: ASNA.Monarch Enumerations
 
-Id: amfMonarchNamespaceEnumerations
-TocParent: amfMonarchNamespace
-TocOrder: 20
-
-keywords: ASNA.Monarch namespace, enumerations
-keywords: ASNA.Monarch enumerations
-keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll]
-keywords: enumerations ASNA.Monarch [ASNA.Monarch.Framework.Dll], about
-
 ---
 
 <!--mine -->

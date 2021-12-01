@@ -1,21 +1,6 @@
 ---
 title: FileAdapter.ReleaseRRN Method
 
-Id: dcsFileAdapterClassReleaseRRNMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 22
-
-keywords: FileAdapter.ReleaseRRN method
-keywords: ReleaseRRN method
-keywords: enumerations [DCS 16.0 LockRequest, used by
-keywords: records, release locked by RRN
-keywords: database files, release locked record by RRN
-keywords: release, locked record by RRN
-keywords: how to, release locked record by RRN
-keywords: locked records, release by RRN
-keywords: relative record numbers, release locked record by
-keywords: RRN, release locked record by
-
 ---
 
 Release the specified record.

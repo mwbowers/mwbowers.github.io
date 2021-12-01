@@ -1,18 +1,6 @@
 ---
 title: As400Program Constructors
 
-Id: dcsAs400ProgramClassAs400ProgramMethodMain
-TocParent: dcsAs400ProgramClass
-TocOrder: 1
-
-keywords: As400Program class, constructors
-keywords: constructors [DCS 16.0 As400Program class
-keywords: As400Program.As400Program constructors
-keywords: database connections, program AdgConnection specified
-keywords: database connections, program path specified
-keywords: how to, set database connection for program
-keywords: how to, set program path
-
 ---
 
 Specifies a database connection to an IBM i Program call.

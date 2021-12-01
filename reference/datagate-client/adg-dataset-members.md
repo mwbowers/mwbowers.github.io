@@ -1,13 +1,6 @@
 ---
 title: AdgDataSet Members
 
-Id: dcsAdgDataSetMembers
-TocParent: dcsAdgDataSetClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 AdgDataSet class
-keywords: AdgDataSet class, all members
-
 ---
 
 [AdgDataSet Overview](adg-dataset-class.html) 

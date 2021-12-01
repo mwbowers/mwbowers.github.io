@@ -1,13 +1,6 @@
 ---
 title: InspectFileParts Enumeration
 
-Id: dcsInspectFilePartsEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 16
-
-keywords: InspectFileParts enumeration
-keywords: enumerations [DCS 16.0 InspectFileParts
-
 ---
 
 <span> **InspectFileParts** </span> defines values used internally by DCS . 

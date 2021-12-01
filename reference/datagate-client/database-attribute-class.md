@@ -1,14 +1,6 @@
 ---
 title: DatabaseAttributes Class
 
-Id: dcsDatabaseAttributeClass
-TocParent: dcsASNADataGateProvidersClasses
-TocOrder: 0
-
-keywords: DatabaseAttributes class
-keywords: DatabaseAttributes class, about DatabaseAttributes class
-keywords: classes [DCS 16.0 DatabaseAttributes class
-
 ---
 
 A set of properties representing attributes of a database file.

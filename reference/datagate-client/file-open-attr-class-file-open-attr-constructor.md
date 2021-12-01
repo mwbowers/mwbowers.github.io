@@ -1,10 +1,6 @@
 ---
 title: FileOpenAttr(string)
 
-Id: dcsFileOpenAttrClassFileOpenAttrConstructor
-TocParent: dcsFileOpenAttrConstructors
-TocOrder: 0
-
 ---
 
 Initialize the **FileOpenAttr** base class.

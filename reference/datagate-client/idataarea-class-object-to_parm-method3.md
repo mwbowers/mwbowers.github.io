@@ -1,10 +1,6 @@
 ---
 title: IDataArea.ObjectToParm(System.Type, string)
 
-Id: dcsIDataAreaClassObjectToParmMethod3
-TocParent: dcsIDataAreaClassObjectToParmMethods
-TocOrder: 43
-
 ---
 
 Converts an object to a data area value provided with the parameter type and value.

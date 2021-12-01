@@ -1,19 +1,6 @@
 ---
 title: AdgDataSet.CurrentFormatName Property
 
-Id: dcsAdgDataSetClassCurrentFormatNameProperty
-TocParent: dcsAdgDataSetProperties
-TocOrder: 2
-
-keywords: AdgDataSet.CurrentFormatName property
-keywords: CurrentFormatName property
-keywords: records, format name of active
-keywords: format names, AdgDataSet active record
-keywords: active records, format name of AdgDataSet
-keywords: rows, format name currently active
-keywords: how to, return format name for active record
-keywords: tables, format name currently active
-
 ---
 
 The current format name of the **AdgDataSet** .

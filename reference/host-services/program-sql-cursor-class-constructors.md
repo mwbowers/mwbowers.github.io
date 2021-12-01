@@ -1,17 +1,6 @@
 ---
 title: Program.SqlCursor Constructors
 
-Id: amfProgramSqlCursorClassConstructors
-TocParent: amfProgramSqlCursorClass
-TocOrder: 10
-
-keywords: Program.SqlCursor.Program.SqlCursor constructors
-keywords: Program.SqlCursor class, constructors
-keywords: constructors [ASNA.Monarch], Program.SqlCursor class
-keywords: SQL, constructing cursor
-keywords: SQL cursor, constructing
-keywords: how to, construct SQL cursor
-
 ---
 
 This overloaded method constructs a new instance of a **SqlCursor** object.

@@ -1,20 +1,6 @@
 ---
 title: KeyUsages Enumeration
 
-Id: dcsKeyUsagesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 18
-
-keywords: KeyUsages enumeration
-keywords: enumerations [DCS 16.0 KeyUsages
-keywords: ASCEND enumeration member
-keywords: DESCEND enumeration member
-keywords: ABSVALUE enumeration member
-keywords: SIGNED enumeration member
-keywords: UNSIGNED enumeration member
-keywords: DIGIT enumeration member
-keywords: ZONE enumeration member
-
 ---
 
 Key definition properties which apply to a key field.<span style="MARGIN-BOTTOM: 0.8em" />

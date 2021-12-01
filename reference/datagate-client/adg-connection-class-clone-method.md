@@ -1,18 +1,6 @@
 ---
 title: AdgConnection.Clone Method
 
-Id: dcsAdgConnectionClassCloneMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 2
-
-keywords: Clone method
-keywords: AdgConnection.Clone method
-keywords: database files, connection copied 
-keywords: files, database connection established
-keywords: copy database connection
-keywords: how to, copy database connection
-keywords: database connections, copied
-
 ---
 
 Returns a copy of the **AdgConnection** object. 

@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.SetActive(integer,integer)
 
-Id: dcsAdgDataSetClassSetActiveMethod1
-TocParent: dcsAdgDataSetClassSetActiveMethods
-TocOrder: 0
-
 ---
 
 Establish the record, specified by format index and relative record number, as the active row.

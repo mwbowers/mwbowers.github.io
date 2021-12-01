@@ -1,13 +1,6 @@
 ---
 title: As400Program Properties
 
-Id: dcsAs400ProgramPropertiesMain
-TocParent: dcsAs400ProgramClass
-TocOrder: 3
-
-keywords: properties [DCS 16.0 As400Program class
-keywords: As400Program class, properties
-
 ---
 
 [As400Program Overview](as400program-class.html) 

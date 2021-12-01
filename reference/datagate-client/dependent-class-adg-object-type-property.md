@@ -1,18 +1,6 @@
 ---
 title: Dependent.AdgObjectType Property
 
-Id: dcsDependentClassAdgObjectTypeProperty
-TocParent: dcsDependentProperties
-TocOrder: 0
-
-keywords: AdgObjectType property
-keywords: Dependent.AdgObjectType property
-keywords: AdgObjectTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AdgObjectTypes, used by
-keywords: database objects, return for a dependent object
-keywords: dependent objects, return database object for
-keywords: how to, return database object for a dependent object
-
 ---
 
 Gets a database object ([IAdgObject](iadg-object-class.html)) corresponding to this dependent object.

@@ -1,15 +1,6 @@
 ---
 title: ActivationGroupAttribute.IsDefault Property
 
-Id: amfActivationGroupAttributeClassIsDefaultProperty
-TocParent: amfActivationGroupAttributeClassProperties
-TocOrder: 30
-
-keywords: IsDefault property
-keywords: ActivationGroupAttribute.IsDefault property
-keywords: activation group, _Star_default
-keywords: activation group attributes, _Star_default
-
 ---
 
 Gets a boolean value indicating whether the program falls into the *Default activation group. Those without an **ActivationGroup** attribute are allocated to this group. The default is **True** .

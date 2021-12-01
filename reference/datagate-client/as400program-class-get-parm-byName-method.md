@@ -1,18 +1,6 @@
 ---
 title: As400Program.GetParmByName Method
 
-Id: dcsAs400ProgramClassGetParmByNameMethod
-TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 4
-
-keywords: GetParmByName method
-keywords: As400Program.GetParmByName method
-keywords: parameter lists, retrieve parameter named
-keywords: program parameters, retrieve parameter named
-keywords: retrieve parameter from program parameter list by name
-keywords: parameters, retrieve from parameter list by name
-keywords: how to, retrieve parameters from program parameter list by name
-
 ---
 
 Returns the [ProgParm](prog-parm-class.html) object in the parameter list named by string.

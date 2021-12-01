@@ -1,16 +1,6 @@
 ---
 title: Database Name Handling
 
-Id: dcsDatabaseNameHandling
-TocParent: dcsConnectingtoaDatabaseMain
-TocOrder: 1
-
-keywords: database names
-keywords: database names, handling
-keywords: database files, handling database names
-keywords: handling database names
-keywords: managing database connections, database name handling
-
 ---
 
 DCS for Visual Studio 2019 is adept at handling the standard "database name" conventions familiar to AVR programmers and users of tools such as DataGate Database Manager. A database name is simply a shorthand notation, redirecting the client-side engine to a set of client/server database connection parameters stored in the system registry. These registry entries can be accessed and manipulated with the [ SourceProfile](source-profile-class.html) object. **SourceProfile** provides the programmer with some of the functionality of DataGate Database Manager’s "Work with Database Names" option. The object constructor and methods [ Register](source-profile-class-register-method.html) and [Unregister](source-profile-class-unregister-method.html) are used to retrieve, persist, and delete respectively, database name registry entries.

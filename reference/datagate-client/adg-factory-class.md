@@ -1,14 +1,6 @@
 ---
 title: AdgFactory Class
 
-Id: dcsAdgFactoryClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 2
-
-keywords: classes [DCS 16.0 AdgFactory class
-keywords: AdgFactory class
-keywords: AdgFactory class, about AdgFactory class
-
 ---
 
 The **AdgFactory** class static methods construct instances of [ IAdgObject](iadg-object-class.html) representing database files, libraries, and members along with [IDataArea](idataarea-class.html) for data areas. 

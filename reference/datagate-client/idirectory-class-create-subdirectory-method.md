@@ -1,16 +1,6 @@
 ---
 title: IDirectory.CreateSubDirectory Method
 
-Id: dcsIDirectoryClassCreateSubDirectoryMethod
-TocParent: dcsIDirectoryMethods
-TocOrder: 1
-
-keywords: CreateSubDirectory method
-keywords: IDirectory.CreateSubDirectory method
-keywords: database libraries, create sub-directories for
-keywords: sub-directories, create
-keywords: how to, create library sub-directories
-
 ---
 
 **CreateSubDirectory** creates a new library contained by the library represented by [IDirectory](idirectory-class.html).

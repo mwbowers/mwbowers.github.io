@@ -1,13 +1,6 @@
 ---
 title: ProgParmType Members
 
-Id: dcsProgParmTypeMembers
-TocParent: dcsProgParmTypeClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 ProgParmType class 
-keywords: ProgParmType class, all members
-
 ---
 
 [ProgParmType Overview](prog-parm-type-class.html) 

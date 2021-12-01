@@ -1,13 +1,6 @@
 ---
 title: IAdgTransaction Properties
 
-Id: dcsIAdgTransactionProperties
-TocParent: dcsIAdgTransactionClass
-TocOrder: 2
-
-keywords: IAdgTransaction class, properties
-keywords: properties [DCS 16.0 IAdgTransaction class
-
 ---
 
 [IAdgTransaction Overview](iadg-transaction-class.html) 

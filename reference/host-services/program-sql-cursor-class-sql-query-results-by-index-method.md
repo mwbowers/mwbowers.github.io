@@ -1,17 +1,6 @@
 ---
 title: Program.SqlCursor.SqlQueryResultsByIndex Method
 
-Id: amfProgramSqlCursorClassSqlQueryResultsByIndexMethod
-TocParent: amfProgramSqlCursorClassMethods
-TocOrder: 40
-
-keywords: SqlQueryResultsByIndex method
-keywords: SqlCursor.SqlQueryResultsByIndex method
-keywords: Program.SqlCursor.SqlQueryResultsByIndex method
-keywords: SQL, query results by cursor index
-keywords: SQL cursor, query results by cursor index
-keywords: how to, SQL query results by cursor index
-
 ---
 
 Returns an object from the SqlCursor result set by index.

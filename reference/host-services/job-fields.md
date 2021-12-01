@@ -1,13 +1,6 @@
 ---
 title: Job Class Fields
 
-Id: amfJobFields
-TocParent: amfJobClass
-TocOrder: 40
-
-keywords: Job class, fields
-keywords: fields [ASNA.Monarch], Job class
-
 ---
 
 [Job Class Overview](job-class.html) 

@@ -1,15 +1,6 @@
 ---
 title: dgException.Message Property
 
-Id: dcsdgExceptionClassMessageProperty
-TocParent: dcsdgExceptionClassPropertiesMain
-TocOrder: 0
-
-keywords: Message property
-keywords: dgException.Message property
-keywords: string associated with dgException
-keywords: dgException, string associated with dgException
-
 ---
 
 String associated with the dgException. 

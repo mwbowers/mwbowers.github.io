@@ -1,13 +1,6 @@
 ---
 title: PrintDevAttr Methods
 
-Id: dcsPrintDevAttrMethods
-TocParent: dcsPrintDevAttrClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 PrintDevAttr class
-keywords: PrintDevAttr class, methods
-
 ---
 
 For additional information see [PrintDevAttr Overview](print-dev-attr-class.html).

@@ -1,18 +1,6 @@
 ---
 title: Program.SqlCursor.ScrollTypes Enumeration
 
-Id: amfProgramSqlCursorScrollTypesEnumeration
-TocParent: amfMonarchNamespaceEnumerations
-TocOrder: 70
-
-keywords: enumerations [ASNA.Monarch], Program.SqlCursor.ScrollTypes
-keywords: Program.SqlCursor.ScrollTypes enumeration
-keywords: Dynamic enumeration member
-keywords: NonScrollable enumeration member
-keywords: Scrollable enumeration member
-keywords: SQL, cursor scroll type
-keywords: SQL cursor, scroll type
-
 ---
 
 The **ScrollTypes** enumerated constant defines values for the type of scrolling allowed for [ SqlCursor](program-sql-cursor-class.html).

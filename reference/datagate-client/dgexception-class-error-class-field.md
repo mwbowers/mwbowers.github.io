@@ -1,17 +1,6 @@
 ---
 title: dgException.ErrorClass Field
 
-Id: dcsdgExceptionClassErrorClassField
-TocParent: dcsdgExceptionClassFieldsMain
-TocOrder: 1
-
-keywords: ErrorClass field
-keywords: dgException.ErrorClass field
-keywords: dgErrorClass enumeration, used by
-keywords: enumerations [DCS 16.0 dgErrorClass, used by
-keywords: dgException, category
-keywords: how to, determine dgException category
-
 ---
 
 A category of the condition raising the exception.

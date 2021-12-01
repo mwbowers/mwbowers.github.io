@@ -1,18 +1,6 @@
 ---
 title: AuthorityEntry.IsGroupAccount Field
 
-Id: dcsAuthorityEntryClassUsernameField
-TocParent: dcsAuthorityEntryFields
-TocOrder: 1
-
-keywords: AuthorityEntry.IsGroupAccount field
-keywords: IsGroupAccount field
-keywords: how to, indicate authority profile name as single user
-keywords: how to, indicate authority profile name as group user
-keywords: user profile names, indicate for authorities
-keywords: group profile names, indicate for authorities
-keywords: authorities, user or group indicated for database
-
 ---
 
 **IsGroupAccount** indicates whether [ UserName](authority-entry-class-username-field.html) field denotes a user or group profile.

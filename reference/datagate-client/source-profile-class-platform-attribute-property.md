@@ -1,19 +1,6 @@
 ---
 title: SourceProfile.PlatformAttribute Property
 
-Id: dcsSourceProfileClassPlatformAttributeProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 5
-
-keywords: PlatformAttribute property
-keywords: SourceProfile.PlatformAttribute property
-keywords: platform attributes, _Star_SQLOLEB
-keywords: platform attributes, _Star_DATALINK
-keywords: how to, set platform attribute of database engine
-keywords: how to, return platform attribute of database engine
-keywords: platform attributes, set/return for database engine
-keywords: database engines, platform attribute for
-
 ---
 
 The platform-specific attribute of the database (e.g. "*SQLOLEB" for SqlServer). 

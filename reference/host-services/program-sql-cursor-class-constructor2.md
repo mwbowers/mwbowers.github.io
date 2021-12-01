@@ -1,10 +1,6 @@
 ---
 title: Program.SqlCursor Constructor (DbConnection,string)
 
-Id: amfProgramSqlCursorClassConstructor2
-TocParent: amfProgramSqlCursorClassConstructors
-TocOrder: 20
-
 ---
 
 Constructs a new instance of a **SqlCursor** object specifying the database connection and select statement without parameters.

@@ -1,15 +1,6 @@
 ---
 title: XmlInfoEventHandler Delegate
 
-Id: dcsXmlInfoEventHandlerDelegate
-TocParent: dcsWhatsNewDelegates
-TocOrder: 2
-
-keywords: XmlInfoEventHandler delegate
-keywords: delegates [DCS 16.0 XmlInfoEventHandler
-keywords: XML [DCS 16.0 event handler, about feedback
-keywords: event handlers, using delegates
-
 ---
 
 This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) methods.

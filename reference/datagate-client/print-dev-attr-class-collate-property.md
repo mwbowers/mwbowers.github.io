@@ -1,19 +1,6 @@
 ---
 title: PrintDevAttr.Collate Property
 
-Id: dcsPrintDevAttrClassCollateProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 0
-
-keywords: Collate property
-keywords: PrintDevAttr.Collate property
-keywords: printing, collate multiple copies
-keywords: printer device parameters, collate multiple copies
-keywords: printers, device parameters, collate
-keywords: collate copies, about
-keywords: copies, collate
-keywords: how to, collate multiple copies
-
 ---
 
 The **Collate** property indicates the output produced by capable printers should be collated when this property is set to **True** .

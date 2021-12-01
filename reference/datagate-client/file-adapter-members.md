@@ -1,12 +1,6 @@
 ---
 title: FileAdapter Members
 
-Id: dcsFileAdapterMembers
-TocParent: dcsFileAdapterClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 FileAdapter class
-
 ---
 
 [FileAdapter Overview](file-adapter-class.html) 

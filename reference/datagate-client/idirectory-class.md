@@ -1,17 +1,6 @@
 ---
 title: IDirectory Interface
 
-Id: dcsIDirectoryClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 11
-
-keywords: classes [DCS 16.0 IDirectory class
-keywords: interfaces [DCS 16.0 IDirectory class
-keywords: IDirectory class
-keywords: IDirectory class, about IDirectory class
-keywords: database files, about libraries
-keywords: database libraries, about IDirectory class
-
 ---
 
 **IDirectory** models an object management interface to the database library object. 

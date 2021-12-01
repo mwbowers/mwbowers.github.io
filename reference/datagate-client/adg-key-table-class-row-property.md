@@ -1,15 +1,6 @@
 ---
 title: AdgKeyTable.Row Property
 
-Id: dcsAdgKeyTableClassRowProperty
-TocParent: dcsAdgKeyTableProperties
-TocOrder: 2
-
-keywords: Row property
-keywords: AdgKeyTable.Row property
-keywords: AdgTable.Row property  see AdgKeyTable.Row
-keywords: row object containing key data
-
 ---
 
 A row object containing key data. 

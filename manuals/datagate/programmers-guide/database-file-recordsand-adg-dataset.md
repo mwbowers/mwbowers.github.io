@@ -1,16 +1,6 @@
 ---
 title: Database File Records and AdgDataSet
 
-Id: dcsDatabaseFileRecordsandAdgDataSet
-TocParent: dcsAccessingaFileMain
-TocOrder: 1
-
-keywords: access a file
-keywords: access a file, database file records and AdgDataSet
-keywords: databases, access records and AdgDataSet
-keywords: database files, access records and AdgDataSet
-keywords: database file records and AdgDataSet
-
 ---
 
 The .NET Framework provides the ( **DataSet** ) class as a general-purpose container for relational database data. **DataSet** objects offer many useful functions and are used throughout the framework and in data-centric components for access, update, and display. For example, **DataSet** objects can be bound to certain Windows forms controls at design-time. DCS builds on this foundation by sub-classing **DataSet** in its own [ AdgDataSet](adg-dataset-class.html) class. **AdgDataSet** effectively provides a bridge between the record-oriented access world of DataGate and AVR and set-oriented access methods. For a complete introduction to **DataSet** , please consult the .NET Framework documentation.

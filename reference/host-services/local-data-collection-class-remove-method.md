@@ -1,18 +1,6 @@
 ---
 title: LocalDataCollection.Remove Method
 
-Id: amfLocalDataCollectionClassRemoveMethod
-TocParent: amfLocalDataCollectionMethods
-TocOrder: 50
-
-keywords: Remove Method
-keywords: LocalDataCollection.Remove Method
-
-keywords: ldc, remove single element
-keywords: LDC, remove single element
-keywords: local data collection, remove single element
-keywords: how to, remove single local data collection element
-
 ---
 
 Removes an element from **IDictionary** for the name specified.

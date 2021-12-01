@@ -1,21 +1,6 @@
 ---
 title: IAdgObject.RevokeAuthority Method
 
-Id: dcsIAdgObjectClassRevokeAuthorityMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 8
-
-keywords: RevokeAuthority method
-keywords: IAdgObject.RevokeAuthority method
-keywords: AuthorityTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AuthorityTypes, used by
-keywords: how to, re-set user authorities to a database object
-keywords: user authorities, re-set access to a database object
-keywords: database objects, re-set user authorities
-keywords: authorities, re-set database access for a specific user
-keywords: how to, revoke previously granted or denied authority to a database object
-keywords: revoke authorities previously granted or denied to a database object
-
 ---
 
 **RevokeAuthority** removes a previously granted or denied user authorization to a database object.

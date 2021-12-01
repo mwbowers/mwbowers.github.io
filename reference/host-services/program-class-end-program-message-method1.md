@@ -1,12 +1,6 @@
 ---
 title: Program.SendProgramMessage Method (string)
 
-Id: amfProgramClassSendProgramMessageMethod1
-TocParent: amfProgramClassSendProgramMessageMethods
-TocOrder: 10
-
-keywords: MessageQueueNotFoundException
-
 ---
 
 Appends an immediate message to the program message queue associated with the caller's caller.

@@ -1,15 +1,6 @@
 ---
 title: CLProgram.AddLiblEntry Methods
 
-Id: amfCLProgramClassAddLiblEntryMethods
-TocParent: amfCLProgramClassMethods
-TocOrder: 10
-
-keywords: AddLiblEntry methods
-keywords: CLProgram.AddLiblEntry methods
-keywords: library lists, add entry in CLProgram
-keywords: how to, add library list entries in CLProgram
-
 ---
 
 This overloaded method adds a library name to the user portion of the library list for the process in which the command was entered.

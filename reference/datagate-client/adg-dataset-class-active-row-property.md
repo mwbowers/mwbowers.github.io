@@ -1,17 +1,6 @@
 ---
 title: AdgDataSet.ActiveRow Property
 
-Id: dcsAdgDataSetClassActiveRowProperty
-TocParent: dcsAdgDataSetProperties
-TocOrder: 0
-
-keywords: AdgDataSet.ActiveRow property
-keywords: ActiveRow property
-keywords: active row, of AdgDataSet
-keywords: rows, currently active
-keywords: how to, establish active row
-keywords: tables, active row
-
 ---
 
 The **DataRow** object currently established as the active row.

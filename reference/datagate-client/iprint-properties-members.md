@@ -1,13 +1,6 @@
 ---
 title: IPrintProperties Members
 
-Id: dcsIPrintPropertiesMembers
-TocParent: dcsIPrintPropertiesClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 IPrintProperties class
-keywords: IPrintProperties class, all members
-
 ---
 
 [IPrintProperties Overview](iprint-properties-class.html) 

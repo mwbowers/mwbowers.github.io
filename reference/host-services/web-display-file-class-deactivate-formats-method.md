@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.DeactivateFormats Method
 
-Id: amfWebDisplayFileClassDeactivateFormatsMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 40
-
-keywords: DeactivateFormats method
-keywords: WebDisplayFile.DeactivateFormats method
-keywords: format names, deactive in display file
-keywords: how to, deactivate format names in display file
-keywords: display files, deactivate format names
-
 ---
 
 Deactivates the formats named.

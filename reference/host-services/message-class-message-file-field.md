@@ -1,16 +1,6 @@
 ---
 title: Message.MessageFile Field
 
-Id: amfMessageClassMessageFileField
-TocParent: amfMessageClassFields
-TocOrder: 40
-
-keywords: MessageFile field
-keywords: Message.MessageFile field
-keywords: messages, file name
-keywords: message files, file name
-keywords: how to, access message file name
-
 ---
 
 The readonly name of the Message File in which the message is contained.

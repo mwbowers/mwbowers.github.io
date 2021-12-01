@@ -1,21 +1,6 @@
 ---
 title: WebJob.ShowPage Method
 
-Id: amfWebJobClassShowPageMethod
-TocParent: amfWebJobClassMethods
-TocOrder: 60
-
-keywords: how to, initiating web conversation
-keywords: web job, initiating conversation
-keywords: web job, using non-display files
-keywords: ShowPage method
-keywords: WebJob.ShowPage method
-keywords: non-display file aspx.vr, show page
-keywords: aspx.vr, non-display file, show page
-keywords: Web server controls, non-display file aspx.vr showing page
-keywords: Web server controls [ASNA Monarch], non-display file aspx.vr showing page
-keywords: MONARCH_CMDPARM
-
 ---
 
 Prepares a job to accept commands by presenting an ASPX page to initiate the conversation with the user.

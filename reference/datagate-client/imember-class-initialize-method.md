@@ -1,20 +1,6 @@
 ---
 title: IMember.Initialize Method
 
-Id: dcsIMemberClassInitializeMethod
-TocParent: dcsIMemberMethods
-TocOrder: 1
-
-keywords: Initialize method
-keywords: IMember.Initialize method
-keywords: InitMemberOptions enumeration, used by
-keywords: enumerations [DCS 16.0 InitMemberOptions, used by
-keywords: database file members, initialize records
-keywords: database files, initialize records in database file member
-keywords: records, initialize database file member
-keywords: record types, initialize database file member
-keywords: how to, initialize records in database file member
-
 ---
 
 Initialize a specific number of records in the database file member represented by **IMember** .

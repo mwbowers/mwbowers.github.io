@@ -1,14 +1,6 @@
 ---
 title: Program.SqlCursor Class Methods
 
-Id: amfProgramSqlCursorClassMethods
-TocParent: amfProgramSqlCursorClass
-TocOrder: 20
-
-keywords: Program.SqlCursor class, methods
-keywords: methods [ASNA.Monarch], Program.SqlCursor class
-keywords: SqlCursor class, methods
-
 ---
 
 [ Program.SqlCursor Class Overview](program-sql-cursor-class.html) 

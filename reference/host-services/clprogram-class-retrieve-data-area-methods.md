@@ -1,18 +1,6 @@
 ---
 title: CLProgram.RetrieveDataArea Methods
 
-Id: amfCLProgramClassRetrieveDataAreaMethods
-TocParent: amfCLProgramClassMethods
-TocOrder: 110
-
-keywords: CLProgram.RetrieveDataArea methods
-keywords: RetrieveDataArea methods
-keywords: how to, retrieve local data area
-keywords: how to, retrieve part of local data area
-keywords: local data areas, retrieving
-keywords: lda, retrieving
-keywords: LDA, retrieving
-
 ---
 
 A local data area is created for each job in the system. The system creates a local data area, which is initially filled with blanks, with a length of 1024 and type <code>*CHAR</code>. When you submit a job, the value of the submitting job's local data area is copied into the submitted job's local data area. You can use this local data area to pass information to a procedure or program without the use of a parameter list. <code> **RetrieveDataArea** </code> allows for the retrieval of all or a portion of a local data area.

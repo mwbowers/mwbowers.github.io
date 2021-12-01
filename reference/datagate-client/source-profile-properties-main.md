@@ -1,13 +1,6 @@
 ---
 title: SourceProfile Properties
 
-Id: dcsSourceProfilePropertiesMain
-TocParent: dcsSourceProfileClass
-TocOrder: 3
-
-keywords: properties [DCS 16.0 SourceProfile class
-keywords: SourceProfile class, properties
-
 ---
 
 [SourceProfile Overview](source-profile-class.html) 

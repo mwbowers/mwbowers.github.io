@@ -1,19 +1,6 @@
 ---
 title: PrintDevAttr.Quality Property
 
-Id: dcsPrintDevAttrClassQualityProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 10
-
-keywords: Quality property
-keywords: PrintDevAttr.Quality property
-keywords: printing, quality, about this property
-keywords: printer device parameters, quality
-keywords: printers, device parameters, quality
-keywords: how to, set/return quality
-keywords: quality, set/return values for printing
-keywords: quality, about printing
-
 ---
 
 The **Quality** property specifies the quality rating for output produced by the printer. 

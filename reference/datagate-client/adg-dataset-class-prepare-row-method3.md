@@ -1,13 +1,6 @@
 ---
 title: AdgDataSet.PrepareRow(string, System.Data.DataRow)
 
-Id: dcsAdgDataSetClassPrepareRowMethod3
-TocParent: dcsAdgDataSetClassPrepareRowMethodMain
-TocOrder: 2
-
-keywords: DataRow objects, prepare existing object to be inserted into DataTable
-keywords: how to, prepare existing DataRow object for insertion into DataTable
-
 ---
 
 Establish an existing **DataRow** object as the currently prepared row, for subsequently adding it to the **AdgDataSet** .

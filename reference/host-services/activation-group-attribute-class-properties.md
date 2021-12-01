@@ -1,13 +1,6 @@
 ---
 title: ActivationGroupAttribute Properties
 
-Id: amfActivationGroupAttributeClassProperties
-TocParent: amfActivationGroupAttributeClass
-TocOrder: 20
-
-keywords: ActivationGroupAttribute class, properties
-keywords: properties [ASNA.Monarch], ActivationGroupAttribute class
-
 ---
 
 [ ActivationGroupAttribute Overview](activation-group-attribute-class.html) 

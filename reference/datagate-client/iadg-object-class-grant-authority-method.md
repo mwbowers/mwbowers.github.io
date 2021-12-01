@@ -1,19 +1,6 @@
 ---
 title: IAdgObject.GrantAuthority Method
 
-Id: dcsIAdgObjectClassGrantAuthorityMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 2
-
-keywords: GrantAuthority method
-keywords: IAdgObject.GrantAuthority method
-keywords: AuthorityTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AuthorityTypes, used by
-keywords: how to, set user authorization to a database object
-keywords: user authorities, set access to a database object
-keywords: database objects, grant user authorities
-keywords: authorities, set database access for a specific user
-
 ---
 
 **GrantAuthority** adds a user authorization to a database object.

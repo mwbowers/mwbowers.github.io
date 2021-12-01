@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection.Names Property
 
-Id: amfLocalDataCollectionClassNamesProperty
-TocParent: amfLocalDataCollectionProperties
-TocOrder: 20
-
-keywords: Names property
-keywords: LocalDataCollection.Names property
-keywords: ldc, names dictionary
-keywords: LDC, names dictionary
-keywords: local data collection, names dictionary
-keywords: how to, retrieve local data collection names dictionary
-
 ---
 
 Gets an **ICollection** containing the names in the **IDictionary** .

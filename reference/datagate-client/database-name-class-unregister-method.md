@@ -1,20 +1,6 @@
 ---
 title: DatabaseName.Unregister Method
 
-Id: dcsDatabaseNameClassUnregisterMethod
-TocParent: dcsDatabaseNameMethods
-TocOrder: 7
-
-keywords: Unregister method
-keywords: DatabaseName.Unregister method
-keywords: Windows registry, Unregister database names
-keywords: database names, create and update registry
-keywords: Unregistered database names, create and update
-keywords: connections, database named Unregistered
-keywords: database connections, registry database name created or updated
-keywords: how to, update Unregistered name of database
-keywords: how to, create Unregistered name of database
-
 ---
 
 Deletes a registered database name from the system registry. 

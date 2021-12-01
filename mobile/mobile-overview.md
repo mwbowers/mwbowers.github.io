@@ -1,8 +1,5 @@
 ---
 title: ASNA Mobile Support
-Id: amfASNAMobileSupport
-TocParent: -1
-TocOrder: 44
 ---
 
 This section contains information on future ASNA Monarch Base support for Mobile devices

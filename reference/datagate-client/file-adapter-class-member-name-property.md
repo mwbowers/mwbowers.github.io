@@ -1,16 +1,6 @@
 ---
 title: FileAdapter.MemberName Property
 
-Id: dcsFileAdapterClassMemberNameProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 8
-
-keywords: FileAdapter.MemberName property
-keywords: MemberName property
-keywords: files, member name
-keywords: database files, member name
-keywords: how to, set/return the member name of database file
-
 ---
 
 <span>The name of the member of the currently-opened file. </span> 

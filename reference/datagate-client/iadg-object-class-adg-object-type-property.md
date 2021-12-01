@@ -1,21 +1,6 @@
 ---
 title: IAdgObject.AdgObjectType Property
 
-Id: dcsIAdgObjectClassAdgObjectTypeProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 0
-
-keywords: AdgObjectType property
-keywords: IAdgObject.AdgObjectType property
-keywords: AdgObjectTypes enumeration, used by
-keywords: enumerations [DCS 16.0 AdgObjectTypes, used by
-keywords: types, database object types
-keywords: database types, identifying
-keywords: database files, identifying type
-keywords: database file members, identifying type
-keywords: database libraries, identifying type
-keywords: how to, identify type of database object
-
 ---
 
 **AdgObjectType** identifies the type (file, library, member) of the database object represented by **IAdgObject** . 

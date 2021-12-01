@@ -1,14 +1,6 @@
 ---
 title: DatabaseName Constructors
 
-Id: dcsDatabaseNameConstructors
-TocParent: dcsDatabaseNameClass
-TocOrder: 1
-
-keywords: constructors [DCS 16.0 DatabaseName class
-keywords: DatabaseName class, constructors
-keywords: DatabaseName.DatabaseName constructors
-
 ---
 
 Constructs a DatabaseName instance assigning default values.

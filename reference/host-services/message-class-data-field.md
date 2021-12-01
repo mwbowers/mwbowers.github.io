@@ -1,19 +1,6 @@
 ---
 title: Message.Data Field
 
-Id: amfMessageClassDataField
-TocParent: amfMessageClassFields
-TocOrder: 40
-
-keywords: Data field
-keywords: Message.Data field
-keywords: substition message variables
-keywords: messages, substition variable length
-keywords: messages, substition variables
-keywords: message files, substition variables
-keywords: how to, access substition variable for messages
-keywords: how to, use substition variable specifying length
-
 ---
 
 The readonly substitution variables or name of the field containing the substitution variables for the message.

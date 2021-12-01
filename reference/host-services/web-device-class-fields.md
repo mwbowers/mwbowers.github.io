@@ -1,13 +1,6 @@
 ---
 title: WebDevice Class Fields
 
-Id: amfWebDeviceClassFields
-TocParent: amfWebDeviceClass
-TocOrder: 40
-
-keywords: WebDevice class, fields
-keywords: fields [ASNA.Monarch], WebDevice class
-
 ---
 
 [WebDevice Class Overview](web-device-class.html) 

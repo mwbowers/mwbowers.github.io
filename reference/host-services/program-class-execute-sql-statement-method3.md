@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_Statement Method (string)
 
-Id: amfProgramClassExecuteSQL_StatementMethod3
-TocParent: amfProgramClassExecuteSQL_StatementMethods
-TocOrder: 10
-
 ---
 
 Executes the SQL command statement specified

@@ -1,15 +1,6 @@
 ---
 title: WebDisplayFile.Attach Method
 
-Id: amfWebDisplayFileClassAttachMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 10
-
-keywords: Attach method
-keywords: WebDisplayFile.Attach method
-keywords: display files, attaching data set
-keywords: how to, attach data set to display file
-
 ---
 
 Returns an **ASNA.DataGate.Client.AdgDataSet** object attached to the **WebDisplayFile** .

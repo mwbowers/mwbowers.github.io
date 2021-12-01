@@ -1,10 +1,6 @@
 ---
 title: DatabaseName.DatabaseName()
 
-Id: dcsDatabaseNameClassConstructor1
-TocParent: dcsDatabaseNameConstructors
-TocOrder: 0
-
 ---
 
 Constructs an instance of a [DatabaseName](database-name-class.html) object with default values.

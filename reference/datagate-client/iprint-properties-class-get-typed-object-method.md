@@ -1,17 +1,6 @@
 ---
 title: IPrintProperties.GetTypedObject Method
 
-Id: dcsIPrintPropertiesClassGetTypedObjectMethod
-TocParent: dcsIPrintPropertiesMethods
-TocOrder: 1
-
-keywords: GetTypedObject method
-keywords: IPrintProperties.GetTypedObject method
-keywords: how to, return print control object for print format field
-keywords: print controls, format fields, returning object for
-keywords: print controls, return object for format field
-keywords: print files, return print control object for format field
-
 ---
 
 **GetTypedObject** returns a reference to the print control object associated with a field.

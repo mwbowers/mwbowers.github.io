@@ -1,17 +1,6 @@
 ---
 title: WebDevice.GetRecordIndex Method
 
-Id: amfWebDeviceClassGetRecordIndexMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 40
-
-keywords: GetRecordIndex method
-keywords: WebDevice.GetRecordIndex method
-keywords: device control, getting record index
-keywords: display files, getting record index
-keywords: record index, getting
-keywords: how to, get record index
-
 ---
 
 Gets an integer containing the index for the record format specified.

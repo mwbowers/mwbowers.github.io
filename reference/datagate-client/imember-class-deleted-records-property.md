@@ -1,17 +1,6 @@
 ---
 title: IMember.DeletedRecords Property
 
-Id: dcsIMemberClassDeletedRecordsProperty
-TocParent: dcsIMemberProperties
-TocOrder: 1
-
-keywords: DeletedRecords property
-keywords: IMember.DeleteRecords property
-keywords: number of, deleted records in database file member
-keywords: database file members, number of deleted records in
-keywords: database files, number of deleted records in database file member
-keywords: how to, determine number of deleted records in database file member
-
 ---
 
 The number of deleted records in the database file member object represented by **IMember** . 

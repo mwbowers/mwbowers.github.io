@@ -1,17 +1,6 @@
 ---
 title: Program.SQLCA Field
 
-Id: amfProgramClassSQLCAField
-TocParent: amfProgramClassFields
-TocOrder: 20
-
-keywords: SQLCA field
-keywords: SQLCA field
-keywords: Program.SQLCA field
-keywords: SQL, SQLCA
-keywords: Program, SQLCA
-keywords: SQLCA
-
 ---
 
 [ SQL_CommunicationsArea](program-sql-communications-area-class.html) object that represents the SQLCA to trap and report run-time errors for the **Program** .

@@ -1,13 +1,6 @@
 ---
 title: IMember Methods
 
-Id: dcsIMemberMethods
-TocParent: dcsIMemberClass
-TocOrder: 1
-
-keywords: methods [DCS 16.0 IMember class
-keywords: IMember class, methods
-
 ---
 
 [IMember Overview](imember-class.html) 

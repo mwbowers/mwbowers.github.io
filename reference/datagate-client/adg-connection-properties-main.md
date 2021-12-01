@@ -1,13 +1,6 @@
 ---
 title: AdgConnection Properties
 
-Id: dcsAdgConnectionPropertiesMain
-TocParent: dcsAdgConnectionClass
-TocOrder: 3
-
-keywords: properties [DCS 16.0 AdgConnection class
-keywords: AdgConnection class, properties
-
 ---
 
 [AdgConnection Overview](adg-connection-class.html) 

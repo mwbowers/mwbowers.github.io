@@ -1,18 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Constructors
 
-Id: amfProgramSQL_CommunicationsAreaClassConstructors
-TocParent: amfProgramSQL_CommunicationsAreaClass
-TocOrder: 10
-
-keywords: Program.SQL_CommunicationsArea.Program.SQL_CommunicationsArea constructors
-keywords: Program.SQL_CommunicationsArea class, constructors
-keywords: constructors [ASNA.Monarch], Program.SQL_CommunicationsArea class
-keywords: SQL, communications area, new
-keywords: SQL communications area, new
-keywords: SQLCA, new
-keywords: how to, construct new SQLCA
-
 ---
 
 This overloaded method constructs a new instance of a **SQL_CommunicationsArea** object.

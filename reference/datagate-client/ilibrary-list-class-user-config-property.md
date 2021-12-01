@@ -1,19 +1,6 @@
 ---
 title: ILibraryList.UserConfig Property
 
-Id: dcsILibraryListClassUserConfigProperty
-TocParent: dcsILibraryListProperties
-TocOrder: 3
-
-keywords: UserConfig property
-keywords: ILibraryList.UserConfig property
-keywords: directories, setting user portion of available directories in the library list
-keywords: directories, getting user portion of available directories in the library list
-keywords: library lists, setting user portion of available directories in
-keywords: library lists, getting user portion of available directories in
-keywords: how to, set user portion of available directories in the library list
-keywords: how to, get user portion of available directories in the library list
-
 ---
 
 **UserConfig** sets or returns a string array containing a list of the user portion of the available directories in the library list represented by **ILibraryList** . 

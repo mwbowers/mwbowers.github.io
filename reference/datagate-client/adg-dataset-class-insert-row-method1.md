@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet.InsertRow(integer, integer)
 
-Id: dcsAdgDataSetClassInsertRowMethod1
-TocParent: dcsAdgDataSetClassInsertRowMethods
-TocOrder: 0
-
 ---
 
 Insert a row into the Dataset table for a particular format and relative record position.

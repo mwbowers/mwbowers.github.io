@@ -1,13 +1,6 @@
 ---
 title: Message Class Fields
 
-Id: amfMessageClassFields
-TocParent: amfMessageClass
-TocOrder: 40
-
-keywords: Message class, fields
-keywords: fields [ASNA.Monarch], Message class
-
 ---
 
 [Message Class Overview](message-class.html) 

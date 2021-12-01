@@ -1,13 +1,6 @@
 ---
 title: Disconnecting From a Database
 
-Id: dcsDisconnectingfromaDatabase
-TocParent: dcsConnectingtoaDatabaseMain
-TocOrder: 1
-
-keywords: disconnecting from a database
-keywords: databases, disconnecting from
-
 ---
 
 After database connection and access are complete, applications *must* disconnect from the database to properly release unmanaged resources. These unmanaged resources are provided to DCS by the <span>Common Language Runtime (CLR)</span> for network access. In general, DCS and the CLR will not release these unmanaged resources for you, and if not released, unexpected results, including loss of data, can occur. You must explicitly release unmanaged resources associated with **AdgConnection** objects using the [ AdgConnection.Close](adg-connection-class-close-method.html) or [AdgConnection.Dispose](adg-connection-class-dispose-method.html) methods. You should call one of these methods before the **AdgConnection** variable loses scope or is reassigned.

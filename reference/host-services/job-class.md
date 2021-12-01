@@ -1,19 +1,6 @@
 ---
 title: Job Class
 
-Id: amfJobClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 60
-
-keywords: ActivationGroupCallException
-keywords: ActivationGroupCreateException
-keywords: ActivationGroupDisposeException
-keywords: RecursiveCallException
-keywords: Job class, about Job class
-keywords: classes [ASNA.Monarch], Job class
-keywords: ASNA.Monarch.Job class
-keywords: jobs, about
-
 ---
 
 The **Job** class provides an environment to submit, control, and keep track of program activations.

@@ -1,13 +1,6 @@
 ---
 title: ILibraryList Methods
 
-Id: dcsILibraryListMethods
-TocParent: dcsILibraryListClass
-TocOrder: 1
-
-keywords: method [DCS 16.0 ILibraryList class
-keywords: ILibraryList class, methods
-
 ---
 
 [ILibraryList Overview](ilibrary-list-class.html) 

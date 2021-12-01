@@ -1,16 +1,6 @@
 ---
 title: XmlInfoEventArgs.Message Field
 
-Id: dcsXmlInfoEventArgsClassMessageField
-TocParent: dcsXmlInfoEventArgsFields
-TocOrder: 0
-
-keywords: Message field
-keywords: XmlInfoEventArgs.Message field
-keywords: XML [DCS 16.0 events, feedback message
-keywords: XML [DCS 16.0 event handler, feedback message
-keywords: event handlers, feedback message
-
 ---
 
 The **Message** field contains the text of a status report of an XML operation.

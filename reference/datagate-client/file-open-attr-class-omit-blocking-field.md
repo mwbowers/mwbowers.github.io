@@ -1,18 +1,6 @@
 ---
 title: FileOpenAttr.OmitBlocking Field
 
-Id: dcsFileOpenAttrClassOmitBlockingField
-TocParent: dcsFileOpenAttrFields
-TocOrder: 0
-
-keywords: OmitBlocking field
-keywords: FileOpenAttr.OmitBlocking field
-
-keywords: network blocking factor, default
-keywords: how to, network blocking factor default
-keywords: database files, network blocking factor default
-keywords: files, network blocking factor default
-
 ---
 
 This constant, when assigned to the [ BlockingFactor](file-open-attr-class-blocking-factor-property.html) property, causes DataGate to omit the record blocking feature in the [FileAdapter.Open](file-adapter-class-open-method.html) method. This is the default value of the **BlockingFactor** property.

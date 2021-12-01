@@ -1,10 +1,6 @@
 ---
 title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type)
 
-Id: dcsIDataAreaClassParmToObjectMethod1
-TocParent: dcsIDataAreaClassParmToObjectMethods
-TocOrder: 51
-
 ---
 
 Returns an object of a specific type from the program parameter list provided with the program parameter object in the parameter list to get the value of and the type of the object returned by the method.

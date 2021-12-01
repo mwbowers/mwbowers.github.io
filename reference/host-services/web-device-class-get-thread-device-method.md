@@ -1,17 +1,6 @@
 ---
 title: WebDevice.GetThreadDevice Method
 
-Id: amfWebDeviceClassGetThreadDeviceMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 70
-
-keywords: GetThreadDevice method
-keywords: WebDevice.GetThreadDevice method
-keywords: device control, getting
-keywords: display files, getting device for thread
-keywords: shared files, getting for device
-keywords: how to, getting shared file for device
-
 ---
 
 Returns an instance of a **WebDevice** thread object.

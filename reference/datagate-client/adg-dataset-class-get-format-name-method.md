@@ -1,16 +1,6 @@
 ---
 title: AdgDataSet.GetFormatName Method
 
-Id: dcsAdgDataSetClassGetFormatNameMethod
-TocParent: dcsAdgDataSetMethods
-TocOrder: 4
-
-keywords: GetFormatName method
-keywords: AdgDataSet.GetFormatName method
-keywords: file formats, obtaining format name from index
-keywords: format names, obtaining for file from format index
-keywords: file format names from format index
-
 ---
 
 Returns a string identifying a DataGate file format.

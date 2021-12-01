@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet(String)
 
-Id: dcsAdgDataSetClassAdgDataSetConstructor1
-TocParent: dcsAdgDataSetClassConstructorsMain
-TocOrder: 1
-
 ---
 
 Initialize the <span> **AdgDataSet** </span> base class.

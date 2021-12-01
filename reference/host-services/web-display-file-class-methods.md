@@ -1,13 +1,6 @@
 ---
 title: WebDisplayFile Class Methods
 
-Id: amfWebDisplayFileClassMethods
-TocParent: amfWebDisplayFileClass
-TocOrder: 20
-
-keywords: WebDisplayFile class, methods
-keywords: methods [ASNA.Monarch], WebDisplayFile class
-
 ---
 
 [ WebDisplayFile Class Overview](web-display-file-class.html) 

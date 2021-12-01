@@ -1,13 +1,6 @@
 ---
 title: WebDevice Class Members
 
-Id: amfWebDeviceClassMembers
-TocParent: amfWebDeviceClass
-TocOrder: 5
-
-keywords: WebDevice class, all members
-keywords: members [ASNA.Monarch], WebDevice class
-
 ---
 
 [WebDevice Class Overview](web-device-class.html) 

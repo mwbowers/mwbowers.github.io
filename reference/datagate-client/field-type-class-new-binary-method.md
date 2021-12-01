@@ -1,16 +1,6 @@
 ---
 title: FieldType.NewBinary Method
 
-Id: dcsFieldTypeClassNewBinaryMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 0
-
-keywords: NewBinary method
-keywords: FieldType.NewBinary method
-keywords: fields, binary
-keywords: binary field defined
-keywords: how to, define binary fields
-
 ---
 
 Creates a new binary decimal [ FieldType](field-type-class.html).

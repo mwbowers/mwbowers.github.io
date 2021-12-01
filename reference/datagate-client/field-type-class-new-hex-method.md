@@ -1,16 +1,6 @@
 ---
 title: FieldType.NewHex Method
 
-Id: dcsFieldTypeClassNewHexMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 6
-
-keywords: NewHex method
-keywords: FieldType.NewHex method
-keywords: fields, hexadecimal
-keywords: hexadecimal field defined
-keywords: how to, define hexadecimal field
-
 ---
 
 Creates a new hexadecimal data [ FieldType](field-type-class.html).

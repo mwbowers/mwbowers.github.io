@@ -1,13 +1,6 @@
 ---
 title: IAdgTransaction Methods
 
-Id: dcsIAdgTransactionMethods
-TocParent: dcsIAdgTransactionClass
-TocOrder: 1
-
-keywords: IAdgTransaction class, methods
-keywords: methods [DCS 16.0 IAdgTransaction class
-
 ---
 
 [IAdgTransaction Overview](iadg-transaction-class.html) 

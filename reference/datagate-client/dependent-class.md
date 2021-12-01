@@ -1,15 +1,6 @@
 ---
 title: Dependent Class
 
-Id: dcsDependentClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 7
-
-keywords: classes [DCS 16.0 Dependent class
-keywords: Dependent class
-keywords: Dependent class, about Dependent class
-keywords: dependent objects, about Dependent class
-
 ---
 
 <span> **Dependent** </span> names a database object, its type, and characterizes its dependent relationship to another database object. 

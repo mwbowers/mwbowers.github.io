@@ -1,12 +1,6 @@
 ---
 title: Class Library
 
-Id: amfClassLibraryMain
-TocParent: amfReferenceMain
-TocOrder: 20
-
-keywords: class libraries, ASNA.Monarch
-
 ---
 
 ASNA.Monarch Framework contains two assemblies &#8211; **ASNA.Monarch.WebDspF** and **ASNA.VisualRPG.Runtime** . ASNA.Monarch.WebDspF supports the Web Server Controls to facilitate the implementation of the semantics of DDS elements and support of Non-ASPX Display files ASNA.VisualRPG.Runtime supports the language capabilities of migrated applications.

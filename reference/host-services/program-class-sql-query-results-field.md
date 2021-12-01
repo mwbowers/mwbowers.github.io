@@ -1,19 +1,6 @@
 ---
 title: Program.SqlQueryResults Field
 
-Id: amfProgramClassSqlQueryResultsField
-TocParent: amfProgramClassFields
-TocOrder: 20
-
-keywords: SqlQueryResults field
-keywords: Program.SqlQueryResults field
-keywords: SQL, nonquery results
-keywords: SQL nonquery, results
-keywords: SQL statement, results
-keywords: SQL, statement results
-keywords: how to, SQL results
-keywords: programs, embedded SQL
-
 ---
 
 This field contains a collection representing the query results.

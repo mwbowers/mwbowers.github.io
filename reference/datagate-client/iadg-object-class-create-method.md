@@ -1,24 +1,6 @@
 ---
 title: IAdgObject.Create Method
 
-Id: dcsIAdgObjectClassCreateMethod
-TocParent: dcsIAdgObjectMethods
-TocOrder: 0
-
-keywords: Create method
-keywords: IAdgObject.Create method
-keywords: create database objects
-keywords: how to, create database objects
-keywords: database objects, create in current state
-keywords: create database libraries
-keywords: database libraries, create
-keywords: how to, create database libraries
-keywords: create database files
-keywords: database files, create
-keywords: how to, create database files
-keywords: create database file members
-keywords: database file members, create
-
 ---
 
 Use **Create** to create a new database object reflecting the current state of **IAdgObject** .

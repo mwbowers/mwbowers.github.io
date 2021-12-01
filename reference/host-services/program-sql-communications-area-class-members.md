@@ -1,14 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Class Members
 
-Id: amfProgramSQL_CommunicationsAreaClassMembers
-TocParent: amfProgramSQL_CommunicationsAreaClass
-TocOrder: 5
-
-keywords: Program.SQL_CommunicationsArea class, all members
-keywords: members [ASNA.Monarch], Program.SQL_CommunicationsArea class
-keywords: SQL_CommunicationsArea class, members
-
 ---
 
 [ Program.SQL_CommunicationsArea Class Overview](program-sql-communications-area-class.html) 

@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.SeekRRN Method
 
-Id: dcsFileAdapterClassSeekRRNMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 28
-
-keywords: SeekRRN method
-keywords: FileAdapter.SeekRRN method
-keywords: SeekMode enumeration, used by
-keywords: enumerations [DCS 16.0 SeekMode, used by
-keywords: records, seeking by RRN
-keywords: seeking, records randomly by RRN
-
 ---
 
 Moves the record pointer associated with the currently open file without reading records by RRN.

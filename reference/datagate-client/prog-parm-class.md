@@ -1,16 +1,6 @@
 ---
 title: ProgParmClass
 
-Id: dcsProgParmClass
-TocParent: dcsASNADataGateDataLinkClasses
-TocOrder: 0
-
-keywords: classes [DCS 16.0 ProgParm class
-keywords: ProgParm class
-keywords: ProgParm class, about ProgParm class
-keywords: program parameters, about ProgParm
-keywords: parameters, about ProgParm
-
 ---
 
 A representation of an iSeries program parameter for use with [ As400Program](as400program-class.html).

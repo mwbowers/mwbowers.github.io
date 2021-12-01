@@ -1,18 +1,6 @@
 ---
 title: FieldType.Dbcs Property
 
-Id: dcsFieldTypeClassDbcsProperty
-TocParent: dcsFieldTypeProperties
-TocOrder: 3
-
-keywords: Dbcs property
-keywords: FieldType.Dbcs property
-keywords: enumerations [DCS 16.0 DbcsFormat, used by
-keywords: DbcsFormat enumeration, used by
-keywords: fields, double byte length
-keywords: double byte field length
-keywords: how to, return double byte field length
-
 ---
 
 The length of the field in bytes. 

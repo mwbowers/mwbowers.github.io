@@ -1,20 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea.SQL_Exception Field
 
-Id: amfProgramSQL_CommunicationsAreaClassSQL_ExceptionField
-TocParent: amfProgramSQL_CommunicationsAreaClassFields
-TocOrder: 10
-
-keywords: SQL_Exception property
-keywords: SQL_CommunicationsArea.SQL_Exception field
-keywords: Program.SQL_CommunicationsArea.SQL_Exception field
-keywords: SQL, exception
-keywords: SQL_Exception
-keywords: how to, determine SQL exception
-keywords: SQL, communications area, exception
-keywords: SQL communications area, exception
-keywords: SQLCA, exception
-
 ---
 
 Read-only reference to an instance of a **System.Exception** for the last SQL statement executed.

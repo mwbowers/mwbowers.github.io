@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.DeleteAllRecords Method
 
-Id: dcsFileAdapterClassDeleteAllRecordsMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 4
-
-keywords: database files, delete all records in
-keywords: files, delete all records in
-keywords: records, delete all
-keywords: delete all records in a file
-keywords: how to, delete all records in a file
-keywords: DeleteAllRecords method
-keywords: FileAdapter.DeleteAllRecords method
-
 ---
 
 Deletes all records in the currently open file.

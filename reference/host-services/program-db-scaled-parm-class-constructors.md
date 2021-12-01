@@ -1,18 +1,6 @@
 ---
 title: Program.DBScaledParm Constructors
 
-Id: amfProgramDBScaledParmClassConstructors
-TocParent: amfProgramDBScaledParmClass
-TocOrder: 10
-
-keywords: Program.DBScaledParm.Program.DBScaledParm constructors
-keywords: Program.DBScaledParm class, constructors
-keywords: constructors [ASNA.Monarch], Program.DBScaledParm class
-keywords: how to, construct new SQL parameters
-keywords: SQL parameters decimal, new
-keywords: SQL parameters, new decimal
-keywords: SQL parameters, constructing decimal
-
 ---
 
 This overloaded method constructs a new instance of a **DBScaledParm** object.

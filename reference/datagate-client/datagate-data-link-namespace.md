@@ -1,14 +1,6 @@
 ---
 title: ASNA.DataGate.DataLink Namespace
 
-Id: dcsDataGateDataLinkNamespace
-TocParent: dcsDataGateAssembly
-TocOrder: 2
-
-keywords: namespaces, ASNA.DataGate.DataLink
-keywords: ASNA.DataGate.DataLink namespace
-keywords: ASNA.DataGate.DataLink namespace, about
-
 ---
 
 The **ASNA.DataGate.DataLink** namespace contains the fundamental classes for accessing data. 

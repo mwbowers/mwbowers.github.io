@@ -1,13 +1,6 @@
 ---
 title: Dependent Properties
 
-Id: dcsDependentProperties
-TocParent: dcsDependentClass
-TocOrder: 1
-
-keywords: properties [DCS 16.0 Dependent class
-keywords: Dependent class, properties
-
 ---
 
 [Dependent Overview](dependent-class.html) 

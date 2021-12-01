@@ -1,14 +1,6 @@
 ---
 title: ASNA DataGate Component Suite for Visual Studio .NET
 
-Id: dcsDataGateComponentSuiteOverview
-TocParent: dcsIntroductionMain
-TocOrder: 0
-
-keywords: overview, DataGate Component Suite
-keywords: DataGate Component Suite
-keywords: DataGate Component Suite, overview
-
 ---
 
 The ASNA DataGate Component Suite for Visual Studio .NET assembly provides managed-code access to data and objects residing in DataGate for IBM i and DataGate for Windows (formerly, Acceler8DB) databases. Leveraging the strength of the .NET Framework, DCS for Visual Studio 2019 programs can be created using any .NET development language, including ASNA Visual RPG, Visual Basic, C#, and others. Data access mechanisms in DCS for Visual Studio 2019 support and enhance the System.Data namespace, including the DataSet model, while maintaining traditional DataGate record-level characteristics.

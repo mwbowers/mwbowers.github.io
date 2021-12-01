@@ -1,15 +1,6 @@
 ---
 title: AuthorityEntry Class
 
-Id: dcsAuthorityEntryClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 6
-
-keywords: classes [DCS 16.0 AuthorityEntry class
-keywords: AuthorityEntry class
-keywords: AuthorityEntry class, about AuthorityEntry class
-keywords: authorities, about AuthorityEntry class
-
 ---
 
 The <span> **AuthorityEntry** </span> class describes a user or group authorization to a database object. For a list of all members, see [AuthorityEntry Members](authority-entry-members.html). 

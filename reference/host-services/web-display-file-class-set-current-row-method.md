@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.SetCurrentRow Method
 
-Id: amfWebDisplayFileClassSetCurrentRowMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 130
-
-keywords: SetCurrentRow method
-keywords: WebDisplayFile.SetCurrentRow method
-keywords: display files, setting current row
-keywords: setting current row of display file
-keywords: current row of display file
-keywords: how to, set current row of display file
-
 ---
 
 Sets the current row to the row and format name specified.

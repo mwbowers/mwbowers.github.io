@@ -1,13 +1,6 @@
 ---
 title: SourceProfile Fields
 
-Id: dcsSourceProfileFieldsMain
-TocParent: dcsSourceProfileClass
-TocOrder: 4
-
-keywords: fields [DCS 16.0 SourceProfile class
-keywords: SourceProfile class, fields
-
 ---
 
 [SourceProfile Overview](source-profile-class.html) 

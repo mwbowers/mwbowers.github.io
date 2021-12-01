@@ -1,16 +1,6 @@
 ---
 title: Program.DBStrParm Class
 
-Id: amfProgramDBStrParmClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 170
-
-keywords: Program.DBStrParm class, about Program.DBStrParm class
-keywords: Program.DBStrParm class
-keywords: classes [ASNA.Monarch], Program.DBStrParm class
-keywords: SQL parameters
-keywords: SQL parameters, string
-
 ---
 
 The **Program.DBStrParm** is a derived class that inherits **Program.DBParm** . It further defines an object representing a string parameter to a SQL statement where the length is specified.

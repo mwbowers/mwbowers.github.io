@@ -1,15 +1,6 @@
 ---
 title: Job Constructor()
 
-Id: amfJobClassJobConstructors
-TocParent: amfJobClass
-TocOrder: 10
-
-keywords: FileOverrideOptionMismatchException
-keywords: Job.Job constructors
-keywords: Job class, constructors
-keywords: constructors [ASNA.Monarch], Job class
-
 ---
 
 Constructs a new instance of an ASNA.Monarch.Job object.

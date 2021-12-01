@@ -1,26 +1,6 @@
 ---
 title: AdgConnection Class
 
-Id: dcsAdgConnectionClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 0
-
-keywords: classes [DCS 16.0 AdgConnection class
-keywords: AdgConnection class
-keywords: AdgConnection class, about AdgConnection class
-keywords: connections, about AdgConnection 
-keywords: database connections
-keywords: database connections, about AdgConnection
-keywords: database connections, sharing
-keywords: thread safety, warning when sharing single thread
-keywords: database connections, thread safety
-keywords: database connections, thread safety
-keywords: databases, connecting to
-keywords: databases, sharing connections to
-keywords: sharing, database connections
-keywords: databases, note on sharing and thread safety
-keywords: accessing a database, about AdgConnection
-
 ---
 
 The <span> **AdgConnection** </span> class controls database connection resources and allows them to be shared among DataGate objects in your program. 

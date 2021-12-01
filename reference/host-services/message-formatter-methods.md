@@ -1,13 +1,6 @@
 ---
 title: MessageFormatter Class Methods
 
-Id: amfMessageFormatterMethods
-TocParent: amfMessageFormatterClass
-TocOrder: 20
-
-keywords: MessageFormatter class, methods
-keywords: methods [ASNA.Monarch], MessageFormatter class
-
 ---
 
 [ MessageFormatter Class Overview](message-formatter-class.html) 

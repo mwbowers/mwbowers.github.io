@@ -1,13 +1,6 @@
 ---
 title: Job.DeleteOverride Method(string, OverrideScope)
 
-Id: amfJobClassDeleteOverrideMethod2
-TocParent: amfJobClassDeleteOverrideMethods
-TocOrder: 20
-
-keywords: enumerations [ASNA.Monarch], OverrideScope, used by
-keywords: OverrideScope enumeration, used by
-
 ---
 
 This method removes the file override previously applied to the job on either a call or job level.

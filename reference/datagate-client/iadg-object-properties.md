@@ -1,12 +1,6 @@
 ---
 title: IAdgObject Properties
 
-Id: dcsIAdgObjectProperties
-TocParent: dcsIAdgObjectClass
-TocOrder: 2
-
-keywords: properties [DCS 16.0 IAdgObject class
-
 ---
 
 [IAdgObject Overview](iadg-object-class.html) 

@@ -1,10 +1,6 @@
 ---
 title: AdgDataSet(serialization info, streaming context)
 
-Id: dcsAdgDataSetClassAdgDataSetConstructor2
-TocParent: dcsAdgDataSetClassConstructorsMain
-TocOrder: 0
-
 ---
 
 This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.

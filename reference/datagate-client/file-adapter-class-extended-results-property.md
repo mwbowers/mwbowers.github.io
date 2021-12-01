@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.ExtendedResults Property
 
-Id: dcsFileAdapterClassExtendedResultsProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 4
-
-keywords: FileAdapter.ExtendedResults property
-keywords: ExtendedResults property
-keywords: how to, access extended information associated a files
-keywords: database files, extended status of
-keywords: files, extended status of
-keywords: OLE print files, extended status of
-keywords: status, extended information associated with a file
-
 ---
 
 Specialized collection of status information associated with the file.

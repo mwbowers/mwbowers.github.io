@@ -1,21 +1,6 @@
 ---
 title: FileAdapter.Dispose Method
 
-Id: dcsFileAdapterClassDisposeMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 9
-
-keywords: database files, close and release unmanaged resources
-keywords: files, close and release unmanaged resources
-keywords: close files and release unmanaged resources
-keywords: how to, close files and release unmanaged resources
-keywords: resources, release unmanaged
-keywords: release unmanaged resources
-keywords: unmanaged resources, release
-keywords: release, unmanaged resources
-keywords: Dispose method
-keywords: FileAdapter.Dispose method
-
 ---
 
 Releases unmanaged resources and closes the currently open file (synonymous with [Close](file-adapter-class-close-method.html)).

@@ -1,18 +1,6 @@
 ---
 title: As400Program.AppendParms Method
 
-Id: dcsAs400ProgramClassAppendParmsMethod
-TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 1
-
-keywords: AppendParms method
-keywords: As400Program.AppendParms method
-keywords: program parameters, append parameter array to
-keywords: parameter lists, append parameter array to
-keywords: append parameter array to program parameter list
-keywords: parameters, append array to program parameter list
-keywords: how to, append parameter array to program parameter list
-
 ---
 
 Appends an array of parameters to the parameter list for the program. 

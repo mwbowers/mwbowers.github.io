@@ -1,18 +1,6 @@
 ---
 title: FileAdapter.ReleaseCurrent Method
 
-Id: dcsFileAdapterClassReleaseCurrentMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 21
-
-keywords: ReleaseCurrent method
-keywords: FileAdapter.ReleaseCurrent method
-keywords: records, release locked
-keywords: database files, release locked record
-keywords: release, locked record
-keywords: how to, release locked record
-keywords: locked records, release
-
 ---
 
 Release the currently locked record.

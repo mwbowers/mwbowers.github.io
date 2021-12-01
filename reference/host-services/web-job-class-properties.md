@@ -1,13 +1,6 @@
 ---
 title: WebJob Class Properties
 
-Id: amfWebJobClassProperties
-TocParent: amfWebJobClass
-TocOrder: 30
-
-keywords: WebJob class, properties
-keywords: properties [ASNA.Monarch], WebJob class
-
 ---
 
 <!-- start public properties table -->	

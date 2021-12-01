@@ -1,29 +1,6 @@
 ---
 title: Calling Stored Procedures
 
-Id: dcsCallingStoredProcedures
-TocParent: dcsTutorialsMain
-TocOrder: 0
-
-keywords: VB examples
-keywords: samples programs
-keywords: program call turtorial
-keywords: calling stored procedures, tutorial
-keywords: calling stored procedures, database connections and program paths
-keywords: calling stored procedures, procedural construction of parameter lists
-keywords: calling stored procedures, accessing parameter data
-keywords: calling stored procedures, structured types and arrays as parameters
-keywords: program call example
-keywords: example programs
-keywords: example programs, program call tutorial
-keywords: example programs, location of installed examples
-keywords: example programs, location of installed examples
-keywords: turorial, program call example
-keywords: turorial, database connections and program paths
-keywords: turorial, procedural construction of parameter lists
-keywords: turorial, accessing parameter data
-keywords: turorial, structures types and arrays as parameters
-
 ---
 
 #### Program Call Example Tutorial

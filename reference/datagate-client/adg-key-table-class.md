@@ -1,15 +1,6 @@
 ---
 title: AdgKeyTable Class
 
-Id: dcsAdgKeyTableClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 3
-
-keywords: classes [DCS 16.0 AdgKeyTable class
-keywords: AdgKeyTable class
-keywords: AdgKeyTable class, about AdgKeyTable class
-keywords: AdgTable class, see AdgKeyTable
-
 ---
 
 The **AdgKeyTable** class contains a <span>DataTable</span> object for manipulating key values.

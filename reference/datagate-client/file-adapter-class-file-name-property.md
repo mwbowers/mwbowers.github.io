@@ -1,16 +1,6 @@
 ---
 title: FileAdapter.FileName Property
 
-Id: dcsFileAdapterClassFileNameProperty
-TocParent: dcsFileAdapterProperties
-TocOrder: 6
-
-keywords: FileAdapter.FileName property
-keywords: FileName property
-keywords: files, database path name
-keywords: database files, file path name
-keywords: how to, set/return the file path name of database file
-
 ---
 
 The path name of the database file, excluding the member name (see [ MemberName Property](file-adapter-class-member-name-property.html)). 

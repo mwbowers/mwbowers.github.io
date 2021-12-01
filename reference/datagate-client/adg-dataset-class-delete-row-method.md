@@ -1,18 +1,6 @@
 ---
 title: AdgDataSet.DeleteRow Method
 
-Id: dcsAdgDataSetClassDeleteRowMethod
-TocParent: dcsAdgDataSetMethods
-TocOrder: 1
-
-keywords: DeleteRow method
-keywords: AdgDataSet.DeleteRow method
-
-keywords: mark rows as deleted
-keywords: rows, mark as deleted
-keywords: how to, mark rows as deleted
-keywords: tables, mark rows as deleted
-
 ---
 
 Mark a DataRow in the **AdgDataSet** as deleted.

@@ -1,13 +1,6 @@
 ---
 title: FieldType Methods
 
-Id: dcsFieldTypeMethods
-TocParent: dcsFieldTypeClass
-TocOrder: 1
-
-keywords: methods [DCS 16.0 FieldType class
-keywords: FieldType class, methods
-
 ---
 
 [FieldType Overview](field-type-class.html) 

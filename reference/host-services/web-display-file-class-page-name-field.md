@@ -1,19 +1,6 @@
 ---
 title: WebDisplayFile.PageName Field
 
-Id: amfWebDisplayFileClassPageNameField
-TocParent: amfWebDisplayFileClassFields
-TocOrder: 30
-
-keywords: PageName field
-keywords: WebDisplayFile.PageName field
-keywords: aspx files, page name
-keywords: display files, setting page within aspx for web form
-keywords: setting page name within aspx file
-keywords: page within aspx file containing the web form
-keywords: how to, set page within aspx file containing the web form
-keywords: display files, page name
-
 ---
 
 The name of the page within the '.aspx' file containing the web form for the **WebDisplayFile** .

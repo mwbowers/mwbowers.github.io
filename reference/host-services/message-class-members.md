@@ -1,14 +1,6 @@
 ---
 title: Message Class Members
 
-Id: amfMessageClassMembers
-TocParent: amfMessageClass
-TocOrder: 5
-
-keywords: Message class
-keywords: Message class, all members
-keywords: members [ASNA.Monarch], Message class
-
 ---
 
 [Message Class Overview](message-class.html) 

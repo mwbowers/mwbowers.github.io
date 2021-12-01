@@ -1,14 +1,6 @@
 ---
 title: CallerActivationGroupAttribute Class
 
-Id: amfCallerActivationGroupAttributeClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 20
-
-keywords: CallerActivationGroupAttribute class, about CallerActivationGroupAttribute class
-keywords: classes [ASNA.Monarch], CallerActivationGroupAttribute class
-keywords: activation manager, CallerActivationGroupAttribute
-
 ---
 
 The <code> **CallerActivationGroupAttribute** </code> is provided to support the job activation manager when a program is to be allocated in the same activation group as the program by which it is called.

@@ -1,13 +1,6 @@
 ---
 title: ASNA.DataGate.Client Enumerations
 
-Id: dcsDataGateClientEnumerations
-TocParent: dcsDataGateClientNamespace
-TocOrder: 1
-
-keywords: enumerations [DCS 16.0 ASNA.DataGate.Client
-keywords: ASNA.DataGate.Client namespace, enumerations
-
 ---
 
 ## Enumerations

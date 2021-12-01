@@ -1,18 +1,6 @@
 ---
 title: FieldType.DateTime Property
 
-Id: dcsFieldTypeClassDateTimeProperty
-TocParent: dcsFieldTypeProperties
-TocOrder: 2
-
-keywords: DateTime property
-keywords: FieldType.DateTime property
-keywords: enumerations [DCS 16.0 DateTimeFormat, used by
-keywords: DateTimeFormat enumeration, used by
-keywords: fields, date/time format length
-keywords: date/time format of field
-keywords: how to, determine date/time format of field
-
 ---
 
 The date and time format of the field. 

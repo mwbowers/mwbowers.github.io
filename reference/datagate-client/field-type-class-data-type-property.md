@@ -1,18 +1,6 @@
 ---
 title: FieldType.DataType Property
 
-Id: dcsFieldTypeClassDataTypeProperty
-TocParent: dcsFieldTypeProperties
-TocOrder: 1
-
-keywords: DataType property
-keywords: FieldType.DataType property
-keywords: enumerations [DCS 16.0 DataTypes, used by
-keywords: DataTypes enumeration, used by
-keywords: fields, data type returned for
-keywords: data types, return for field
-keywords: how to, return data type of field
-
 ---
 
 The data type for this field. 

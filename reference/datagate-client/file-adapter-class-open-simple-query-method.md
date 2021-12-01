@@ -1,19 +1,6 @@
 ---
 title: FileAdapter.OpenSimpleQuery Method
 
-Id: dcsFileAdapterClassOpenSimpleQueryMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 15
-
-keywords: FileAdapter.OpenSimpleQuery method
-keywords: OpenSimpleQuery method
-keywords: KeyUsages enumeration, used by
-keywords: enumerations [DCS 16.0 KeyUsages, used by
-
-keywords: database files, open a file for query
-keywords: open a file for query
-keywords: files, open for query
-
 ---
 
 Open a database file for access using the specified query and the specified [AdgDataSet](adg-dataset-class.html).

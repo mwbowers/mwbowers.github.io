@@ -1,17 +1,6 @@
 ---
 title: LocalDataCollection Class
 
-Id: amfLocalDataCollectionClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 80
-
-keywords: LocalDataCollection class, about LocalDataCollection
-keywords: classes [ASNA.Monarch], LocalDataCollection class
-keywords: ErrorMessage Property Editor, container
-keywords: local data collection
-keywords: ldc
-keywords: LDC
-
 ---
 
 The **LocalDataCollection** is a derived class that is a container for a collection of name/value pairs for the job. It inherits the properties and methods of and uses the shown in the hierarchy list.

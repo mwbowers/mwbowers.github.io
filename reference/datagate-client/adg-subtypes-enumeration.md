@@ -1,28 +1,6 @@
 ---
 title: AdgSubTypes Enumeration
 
-Id: dcsAdgSubTypesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 3
-
-keywords: enumerations [DCS 16.0 AdgSubTypes
-keywords: AdgSubTypes enumeration
-keywords: Unknown enumeration member
-keywords: DataAreaLgl enumeration member
-keywords: DataAreaChr enumeration member
-keywords: DataAreaDec enumeration member
-keywords: Join enumeration member
-keywords: Local enumeration member
-keywords: Merge enumeration member
-keywords: NetPrint enumeration member
-keywords: OlePrint enumeration member
-keywords: Physical enumeration member
-keywords: SqlLogical enumeration member
-keywords: Remote enumeration member
-keywords: Simple enumeration member
-keywords: System enumeration member
-keywords: Array enumeration member
-
 ---
 
 The **AdgSubTypes** enumerated constant defines values for the [IAdgObject.AdgSubType](iadg-object-class-adg-subtype-property.html) property of an object. 

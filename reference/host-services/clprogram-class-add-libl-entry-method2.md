@@ -1,12 +1,6 @@
 ---
 title: CLProgram.AddLiblEntry(string,LiblPosition,string)
 
-Id: amfCLProgramClassAddLiblEntryMethod2
-TocParent: amfCLProgramClassAddLiblEntryMethods
-TocOrder: 20
-
-keywords: LiblPosition enumeration, used by
-
 ---
 
 This method adds a library name to the user portion of the library list (as specified by *position* and *referenceLibraryName* ) for the process in which the command was entered.

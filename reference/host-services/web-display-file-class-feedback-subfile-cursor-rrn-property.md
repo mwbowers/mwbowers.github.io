@@ -1,20 +1,6 @@
 ---
 title: WebDisplayFile.FeedBackSubfileCursorRRN Property
 
-Id: amfWebDisplayFileClassFeedBackSubfileCursorRRNProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 135
-
-keywords: FeedBackSubfileCursorRRN property
-keywords: WebDisplayFile.FeedBackSubfileCursorRRN property
-keywords: enumerations [ASNA.Monarch.WebDspF], AidKeyIBM, used by
-keywords: Reccord row number where cursor is, to provide feedback for field in display file
-keywords: feedback, RRN feedback for field in display file
-keywords: Subfile RRN to provide feedback for field in display file
-keywords: display files, Cursor RRN to provide feedback for field
-keywords: how to, get subfile cursor RRN to provide feedback for field in display file
-keywords: how to, return subfile cursor RRN to provide feedback for field in display file
-
 ---
 
 Gets the Subfile RRN value of the cursor relative to the Active Window/Popup.

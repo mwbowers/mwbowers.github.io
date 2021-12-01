@@ -1,17 +1,6 @@
 ---
 title: IMember.ActiveRecords Property
 
-Id: dcsIMemberClassActiveRecordsProperty
-TocParent: dcsIMemberProperties
-TocOrder: 0
-
-keywords: ActiveRecords property
-keywords: IMember.ActiveRecords property
-keywords: number of, active records in database file member
-keywords: database file members, number of active records in
-keywords: database files, number of active records in database file member
-keywords: how to, determine number of active records in database file member
-
 ---
 
 The number of active records in the database file member object represented by **IMember** 

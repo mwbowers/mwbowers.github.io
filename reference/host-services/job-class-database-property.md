@@ -1,16 +1,6 @@
 ---
 title: Job.Database Property
 
-Id: amfJobClassDatabaseProperty
-TocParent: amfJobProperties
-TocOrder: 30
-
-keywords: Database property
-keywords: Job.Database property
-keywords: jobs, database connection
-keywords: database files, connection
-keywords: database connection
-
 ---
 
 Gets the ASNA.VisualRPG.Runtime.Database connection object corresponding to this Job.

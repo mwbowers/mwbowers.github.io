@@ -1,13 +1,6 @@
 ---
 title: SourceProfile.Qualifier Property
 
-Id: dcsSourceProfileClassQualifierProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 8
-
-keywords: Qualifier property
-keywords: SourceProfile.Qualifier property
-
 ---
 
 This property is reserved for future expansion. 

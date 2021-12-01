@@ -1,14 +1,6 @@
 ---
 title: dgException Class
 
-Id: dcsdgExceptionClass
-TocParent: dcsASNADataGateCommonClasses
-TocOrder: 0
-
-keywords: classes [DCS 16.0 dgException class
-keywords: dgException class
-keywords: dgException class, about dgException class
-
 ---
 
 The exception that is thrown by DCS to indicate procedural conditions, including errors.

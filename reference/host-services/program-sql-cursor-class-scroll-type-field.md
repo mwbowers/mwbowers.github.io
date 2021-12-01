@@ -1,21 +1,6 @@
 ---
 title: Program.SqlCursor.ScrollType Field
 
-Id: amfProgramSqlCursorClassScrollTypeField
-TocParent: amfProgramSqlCursorClassFields
-TocOrder: 10
-
-keywords: ScrollType field
-keywords: SqlCursor.ScrollType field
-keywords: Program.SqlCursor.ScrollType field
-keywords: cursor, scroll type
-keywords: SQL, cursor scroll type
-keywords: SQL cursor, scroll type
-keywords: scroll type
-keywords: how to, determine SQL cursor scroll type
-keywords: enumerations [ASNA.Monarch], Program.SqlCursor.ScrollTypes, used by
-keywords: Program.SqlCursor.ScrollTypes enumeration, used by
-
 ---
 
 An enumeration value defining the type of scrolling for the cursor.

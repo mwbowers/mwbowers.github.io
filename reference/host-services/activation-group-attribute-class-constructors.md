@@ -1,18 +1,6 @@
 ---
 title: ActivationGroupAttribute Constructors
 
-Id: amfActivationGroupAttributeClassConstructors
-TocParent: amfActivationGroupAttributeClass
-TocOrder: 10
-
-keywords: ActivationGroupAttribute class, constructors
-keywords: ActivationGroupAttribute.ActivationGroupAttribute constructors
-keywords: constructors [ASNA.Monarch], ActivationGroupAttribute class
-keywords: activation group, creating instance
-keywords: activation group attributes
-keywords: activation group attributes, group name
-keywords: activation group attributes, setting default
-
 ---
 
 This overloaded method constructs a new instance of an **ActivationGroupAttribute** object.

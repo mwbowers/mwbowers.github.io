@@ -1,24 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea.SQLSTT Field
 
-Id: amfProgramSQL_CommunicationsAreaClassSQLSTTField
-TocParent: amfProgramSQL_CommunicationsAreaClassFields
-TocOrder: 40
-
-keywords: SQLSTT property
-keywords: SQL_CommunicationsArea.SQLSTT field
-keywords: Program.SQL_CommunicationsArea.SQLSTT field
-keywords: SQL, communications area state
-keywords: SQL, state
-keywords: SQLSTT
-keywords: SQLSTATE
-keywords: how to, determine SQL state
-keywords: SQL, exception state
-keywords: SQL_Exception, state
-keywords: SQL, communications area, state
-keywords: SQL communications area, state
-keywords: SQLCA, exception state
-
 ---
 
 Read-only common return code of the last SQL statement executed.

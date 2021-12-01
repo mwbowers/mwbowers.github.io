@@ -1,17 +1,6 @@
 ---
 title: AdgFactory.NewDirectory Method
 
-Id: dcsAdgFactoryClassNewDirectoryMethod
-TocParent: dcsAdgFactoryMethods
-TocOrder: 0
-
-keywords: NewDirectory method
-keywords: AdgFactory.NewDirectory method
-keywords: path names, create for database libraries
-keywords: create database libraries
-keywords: database libraries, create
-keywords: how to, create database libraries
-
 ---
 
 The **NewDirectory** method creates a new instance of [IDirectory](idirectory-class.html) representing a database library for object management functions.

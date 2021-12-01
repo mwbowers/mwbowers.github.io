@@ -1,10 +1,6 @@
 ---
 title: Program.SqlPreparedStatement Constructor (DbConnection,string,DBParm[])
 
-Id: amfProgramSqlPreparedStatementClassConstructor2
-TocParent: amfProgramSqlPreparedStatementClassConstructors
-TocOrder: 20
-
 ---
 
 Constructs a new instance of a **SqlPreparedStatement** object specifying the database connection, SQL statement, and parameters.

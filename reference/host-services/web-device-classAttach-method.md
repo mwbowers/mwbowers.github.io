@@ -1,10 +1,6 @@
 ---
 title: WebDevice.Attach Method(string, WebDisplayFile)
 
-Id: amfWebDeviceClassAttachMethod
-TocParent: amfWebDeviceClassAttachMethods
-TocOrder: 10
-
 ---
 
 Attaches the [ WebDisplayFile](web-display-file-class.html) and a shared file to a **WebDevice** .

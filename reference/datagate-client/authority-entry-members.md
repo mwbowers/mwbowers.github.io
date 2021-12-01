@@ -1,13 +1,6 @@
 ---
 title: AuthorityEntry Members
 
-Id: dcsAuthorityEntryMembers
-TocParent: dcsAuthorityEntryClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 AuthorityEntry class
-keywords: AuthorityEntry class, all members
-
 ---
 
 [AuthorityEntry Overview](authority-entry-class.html) 

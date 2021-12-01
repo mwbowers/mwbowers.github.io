@@ -1,18 +1,6 @@
 ---
 title: IAdgObject.AuthorityEntries Property
 
-Id: dcsIAdgObjectClassAuthorityEntriesProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 2
-
-keywords: AuthorityEntries property
-keywords: IAdgObject.AuthorityEntries property
-keywords: how to, determine database object's authorities
-keywords: how to, return authorities objects for a database object
-keywords: database objects, obtaining authorities currently set
-keywords: database authorities, obtaining currently set for a database object
-keywords: authorities, obtaining currently set for a database object
-
 ---
 
 **AuthorityEntries** is an array of [ AuthorityEntry](authority-entry-class.html) objects collectively describing the user authorities the database provider has assigned to the database object represented by **IAdgObject** . 

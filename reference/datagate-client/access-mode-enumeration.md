@@ -1,31 +1,6 @@
 ---
 title: AccessMode Enumeration
 
-Id: dcsAccessModeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 0
-
-keywords: AccessMode enumeration
-keywords: enumerations [DCS 16.0 AccessMode
-keywords: access mode constants
-keywords: database files, access mode constants
-keywords: files, access mode constants
-keywords: database files, restrict access constants
-keywords: files, restrict access constants
-keywords: Arrival enumeration member
-keywords: CacheWrites enumeration member
-keywords: Change enumeration member
-keywords: CommitmentControl enumeration member
-keywords: Delete enumeration member
-keywords: PrintPreview enumeration member
-keywords: Read enumeration member
-keywords: ReadWrite enumeration member
-keywords: ReadWriteCache enumeration member
-keywords: RWCD enumeration member
-keywords: RWCDCache enumeration member
-keywords: Write enumeration member
-keywords: WriteCache enumeration member
-
 ---
 
 Options for restricting access to open files.<span style="MARGIN-BOTTOM: 0.8em" />

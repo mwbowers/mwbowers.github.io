@@ -1,17 +1,6 @@
 ---
 title: MessageFormatter.FormatMessageText Method
 
-Id: amfMessageFormatterClassFormatMessageTextMethod
-TocParent: amfMessageFormatterMethods
-TocOrder: 30
-
-keywords: InvalidMessageFormatException
-
-keywords: FormatMessage method
-keywords: MessageFormatter.FormatMessage method
-keywords: message files, newly formatted message
-keywords: how to, format new message
-
 ---
 
 The FormatMessageText method retrieves the message's first- and second-level texts and inserts the replacement data provided in the message parameter. The FormatMessage method affects the first level texts.

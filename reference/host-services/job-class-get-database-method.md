@@ -1,16 +1,6 @@
 ---
 title: Job.getDatabase Method
 
-Id: amfJobClassgetDatabaseMethod
-TocParent: amfJobMethods
-TocOrder: 70
-
-keywords: getDatabase method
-keywords: Job.getDatabase method
-keywords: how to, get job database connection
-keywords: jobs, returning database connection
-keywords: database connections, job
-
 ---
 
 The getDatabase method returns a new instance of ASNA.VisualRPG.Runtime.Database connection object for the job.

@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.ProxyName Field
 
-Id: dcsDatabaseAttributesClassProxyNameField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 5
-
-keywords: ProxyName field
-keywords: DatabaseAttributes.ProxyName field
-
 ---
 
 The name of the server that services the requests of its clients by forwarding requests to other servers.

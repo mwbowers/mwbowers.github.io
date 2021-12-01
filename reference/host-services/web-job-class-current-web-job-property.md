@@ -1,16 +1,6 @@
 ---
 title: WebJob.CurrentWebJob Property
 
-Id: amfWebJobClassCurrentWebJobProperty
-TocParent: amfWebJobClassProperties
-TocOrder: 10
-
-keywords: CurrentWebJob property
-keywords: WebJob.CurrentWebJob property
-keywords: current web job reference
-keywords: web job, current job reference
-keywords: hot to, get current web job reference
-
 ---
 
 Gets a reference to the currently running **WebJob** object.

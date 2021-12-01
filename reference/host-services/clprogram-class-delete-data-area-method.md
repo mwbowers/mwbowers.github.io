@@ -1,19 +1,6 @@
 ---
 title: CLProgram.DeleteDataArea Method
 
-Id: amfCLProgramClassDeleteDataAreaMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 90
-
-keywords: CLProgram.DeleteDataArea methods
-keywords: DeleteDataArea methods
-
-keywords: delete program data area
-keywords: how to, delete program data area values
-keywords: program data areas, deleting
-keywords: data areas, deleting
-keywords: local data areas, deleting
-
 ---
 
 Deletes a data area.

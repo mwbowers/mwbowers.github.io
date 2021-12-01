@@ -1,17 +1,6 @@
 ---
 title: CLProgram.InitializePFM Methods
 
-Id: amfCLProgramClassInitializePFMMethods
-TocParent: amfCLProgramClassMethods
-TocOrder: 130
-
-keywords: CLProgram.InitializePFM methods
-keywords: InitializePFM methods
-keywords: how to, initialize records in physical file
-keywords: physical files, initializing records in
-keywords: records, initializing in physical file
-keywords: initializing records
-
 ---
 
 Initializes records in a member of a physical file. As many records are added as is necessary to make the total record count specified.

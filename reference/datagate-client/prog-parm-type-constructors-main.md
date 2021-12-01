@@ -1,19 +1,6 @@
 ---
 title: ProgParmType Constructors
 
-Id: dcsProgParmTypeConstructorsMain
-TocParent: dcsProgParmTypeClass
-TocOrder: 1
-
-keywords: constructors [DCS 16.0 ProgParmType class
-keywords: ProgParmType.ProgParmType constructors
-keywords: ProgParmType class, constructors
-keywords: fields, program parameters defined
-keywords: program parameters, simple data types
-keywords: parameter lists, simple data types
-keywords: parameters, simple data types
-keywords: how to, create simple data type program parameters
-
 ---
 
 Constructs an instance of a **ProgParmType** object.

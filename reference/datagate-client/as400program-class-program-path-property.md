@@ -1,16 +1,6 @@
 ---
 title: As400Program.ProgramPath Method
 
-Id: dcsAs400ProgramClassProgramPathProperty
-TocParent: dcsAs400ProgramPropertiesMain
-TocOrder: 2
-
-keywords: ProgramPath property
-keywords: As400Program.ProgramPath property
-
-keywords: database connections, program path specified
-keywords: how to, set program path
-
 ---
 
 A string describing the path to the called program on the database server.

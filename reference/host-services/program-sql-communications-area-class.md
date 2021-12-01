@@ -1,17 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Class
 
-Id: amfProgramSQL_CommunicationsAreaClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 190
-
-keywords: Program.SQL_CommunicationsArea class, about Program.SQL_CommunicationsArea class
-keywords: Program.SQL_CommunicationsArea class
-keywords: classes [ASNA.Monarch], Program.SQL_CommunicationsArea class
-keywords: SQL_CommunicationsArea class
-keywords: SQL, communications area
-keywords: SQLCA
-
 ---
 
 The **Program.SQL_CommunicationsArea** (nested) class defines an object that represents the SQLCA to trap and report run-time errors for a SQL statement.

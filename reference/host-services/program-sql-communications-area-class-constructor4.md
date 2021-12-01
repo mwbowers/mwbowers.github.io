@@ -1,10 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Constructor (string, SqlException)
 
-Id: amfProgramSQL_CommunicationsAreaClassConstructor4
-TocParent: amfProgramSQL_CommunicationsAreaClassConstructors
-TocOrder: 40
-
 ---
 
 Constructs a new instance of a **SQL_CommunicationsArea** object with command text and SQL client data exception.

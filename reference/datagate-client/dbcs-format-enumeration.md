@@ -1,19 +1,6 @@
 ---
 title: DbcsFormat Enumeration
 
-Id: dcsDbcsFormatEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 9
-
-keywords: enumerations [DCS 16.0 DbcsFormat
-keywords: DbcsFormat enumeration
-keywords: shift control characters
-keywords: Either enumeration member
-keywords: Graphic enumeration member
-keywords: None enumeration member
-keywords: Only enumeration member
-keywords: Open enumeration member
-
 ---
 
 The <span> **DbcsFormat** </span> enumerated constant defines values on whether shift-control characters appear internally on the IBM i. This enumeration is used by the [ Dbcs](field-type-class-dbcs-property.html) property for [FieldType](field-type-class.html) objects.

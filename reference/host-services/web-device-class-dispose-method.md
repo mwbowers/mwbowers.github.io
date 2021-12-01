@@ -1,19 +1,6 @@
 ---
 title: WebDevice.Dispose Method
 
-Id: amfWebDeviceClassDisposeMethod
-TocParent: amfWebDeviceClassMethods
-TocOrder: 30
-
-keywords: Dispose method
-keywords: WebDevice.Dispose method
-keywords: managed resources, releasing
-keywords: unmanaged resources, releasing
-keywords: device control, releasing resources
-keywords: how to, release device resources
-keywords: how to, release managed device resources
-keywords: how to, release unmanaged device resources
-
 ---
 
 Releases resources used by the <code> **WebDevice** </code> object.

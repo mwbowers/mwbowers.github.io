@@ -1,17 +1,6 @@
 ---
 title: AdgEnumerator Delegate
 
-Id: dcsAdgEnumeratorDelegate
-TocParent: dcsWhatsNewDelegates
-TocOrder: 0
-
-keywords: delegates [DCS 16.0 AdgEnumerator
-keywords: AdgEnumerator delegate
-keywords: how to, enumerate database contents of library, delegate
-keywords: database files, enumerate object contents of, delegate
-keywords: database file members, enumerate object contents of, delegate
-keywords: database libraries, enumerate object contents of, delegate
-
 ---
 
 A delegate provided to the [IDirectory.Enumerate](idirectory-class-enumerate-method.html) method for processing [IAdgObject](iadg-object-class.html) references corresponding to the contents of a database library. This delegate is also used in the [ILibraryList.EnumerateCurrentSystem](ilibrary-list-class-enumerate-current-system-method.html) and [ILibraryList.EnumerateCurrentUser](ilibrary-list-class-enumerate-current-user-method.html) methods for processing [ILibraryList](ilibrary-list-class.html) references corresponding to the contents of a library list.

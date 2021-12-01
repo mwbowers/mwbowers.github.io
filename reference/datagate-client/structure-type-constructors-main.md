@@ -1,19 +1,6 @@
 ---
 title: StructureType Constructors
 
-Id: dcsStructureTypeConstructorsMain
-TocParent: dcsStructureTypeClass
-TocOrder: 1
-
-keywords: constructors [DCS 16.0 StructureType class
-keywords: StructureType class, constructors
-keywords: StructureType.StructureType constructors
-
-keywords: parameter lists, structured data types
-keywords: program parameters, structured data types
-keywords: parameters, structured data types
-keywords: how to, create structured data type program parameters
-
 ---
 
 Constructs an **StructureType** instance assigning an initial value to the [ SourceProfile](dcsStructureTypeClassSourceProfileProperty.html) property or database specified.

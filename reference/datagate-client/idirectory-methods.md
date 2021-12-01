@@ -1,13 +1,6 @@
 ---
 title: IDirectory Methods
 
-Id: dcsIDirectoryMethods
-TocParent: dcsIDirectoryClass
-TocOrder: 1
-
-keywords: IDirectory class, methods
-keywords: methods [DCS 16.0 IDirectory class
-
 ---
 
 [IDirectory Overview](idirectory-class.html) 

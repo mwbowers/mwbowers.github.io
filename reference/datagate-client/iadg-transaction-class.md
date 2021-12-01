@@ -1,21 +1,6 @@
 ---
 title: IAdgTransaction Interface
 
-Id: dcsIAdgTransactionClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 10
-
-keywords: classes [DCS 16.0 IAdgTransaction class
-keywords: interfaces [DCS 16.0 IAdgTransaction class
-keywords: IAdgTransaction class
-keywords: IAdgTransaction class, about IAdgTransaction class
-keywords: database transactions, modeling management objects
-keywords: database transactions, about managing
-keywords: manual transactions
-keywords: manual transactions, about managing
-keywords: automatic transactions
-keywords: automatic transactions, about managing
-
 ---
 
 **IAdgTransaction** models database transaction management objects for database providers that support transaction processing. Instances of **IAdgTransaction** are manufactured by the [AdgConnection.BeginTransaction](adg-connection-class-begin-transaction-method-main.html) and [AdgConnection.BeginAutoTransaction](adg-connection-class-begin-auto-transaction-method-main.html) methods.

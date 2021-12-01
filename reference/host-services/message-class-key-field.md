@@ -1,17 +1,6 @@
 ---
 title: Message.Key Field
 
-Id: amfMessageClassKeyField
-TocParent: amfMessageClassFields
-TocOrder: 30
-
-keywords: Key field
-keywords: Message.Key field
-keywords: message identification key
-keywords: message files, identification key
-keywords: messages, identification key
-keywords: how to, access message identification key
-
 ---
 
 The readonly unique message identification key.

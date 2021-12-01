@@ -1,16 +1,6 @@
 ---
 title: WebDisplayFile.DisplaySubfileRecords Method
 
-Id: amfWebDisplayFileClassDisplaySubfileRecordsMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 50
-
-keywords: DisplaySubfileRecords method
-keywords: WebDisplayFile.DisplaySubfileRecords method
-keywords: subfile usage, displaying records
-keywords: display files, displaying subfile records
-keywords: how to, display records in display file
-
 ---
 
 Displays the format records for the subfile named.

@@ -1,22 +1,6 @@
 ---
 title: LockRequest Enumeration
 
-Id: dcsLockRequestEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 17
-
-keywords: LockRequest enumeration
-keywords: enumerations [DCS 16.0 LockRequest
-keywords: Default enumeration member
-keywords: NoLock enumeration member
-keywords: NoWait enumeration member
-keywords: Read enumeration member
-keywords: ReadWrite enumeration member
-keywords: Write enumeration member
-keywords: record locking constants
-keywords: database files, record locking constants
-keywords: files, record locking constants
-
 ---
 
 Options for record locking in [FileAdapter](file-adapter-class.html) access methods. 

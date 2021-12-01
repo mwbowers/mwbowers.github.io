@@ -1,19 +1,6 @@
 ---
 title: WebDisplayFile.ResetKeyIndicators Property
 
-Id: amfWebDisplayFileClassResetKeyIndicatorsProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 90
-
-keywords: ResetKeyIndicators property
-keywords: WebDisplayFile.ResetKeyIndicators property
-keywords: display files, setting feedback indicators for message handler
-keywords: setting feedback indicators for message handler
-keywords: feedback indicators for message handler
-keywords: message handler
-keywords: message handler, feedback indicators
-keywords: how to, set feedback indicators for message handler
-
 ---
 
 Gets or sets the string containing the indicator expressions reset for subsequent processing.

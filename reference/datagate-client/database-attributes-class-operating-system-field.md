@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes.OperatingSystem Field
 
-Id: dcsDatabaseAttributesClassOperatingSystemField
-TocParent: dcsDatabaseAttributesFields
-TocOrder: 3
-
-keywords: OperatingSystem field
-keywords: DatabaseAttributes.OperatingSystem field
-
 ---
 
 The name of the operating system on which the database resides.

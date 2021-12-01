@@ -1,10 +1,5 @@
 ---
 
-Id: dcsIDataAreaClassMembers
-TocParent: dcsIDataAreaClass
-TocOrder: 0
-
-
 ---
 
 [IDataArea Overview](iadg-transaction-class.html) 

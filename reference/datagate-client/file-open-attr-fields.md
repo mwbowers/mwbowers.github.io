@@ -1,12 +1,6 @@
 ---
 title: FileOpenAttr Fields
 
-Id: dcsFileOpenAttrFields
-TocParent: dcsFileOpenAttrClass
-TocOrder: 2
-
-keywords: FileOpenAttr class, fields
-
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 

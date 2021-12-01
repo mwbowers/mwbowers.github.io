@@ -1,17 +1,6 @@
 ---
 title: CLProgram.RTVJOBA_SWS Method
 
-Id: amfCLProgramClassRTVJOBA_SWSMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 220
-
-keywords: RTVJOBA_SWS method
-keywords: CLProgram.RTVJOBA_SWS method
-keywords: job switches
-keywords: job attributes, job switches
-keywords: CLProgram, get job switches from job attributes
-keywords: how to, get job switches from CLProgram job attributes
-
 ---
 
 Reference to the eight switches from the job attributes for the job in which this CLProgram is used.

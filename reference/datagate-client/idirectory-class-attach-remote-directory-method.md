@@ -1,17 +1,6 @@
 ---
 title: IDirectory.AttachRemoteDirectory Method
 
-Id: dcsIDirectoryClassAttachRemoteDirectoryMethod
-TocParent: dcsIDirectoryMethods
-TocOrder: 0
-
-keywords: AttachRemoteDirectory method
-keywords: IDirectory.AttachRemoteDirectory method
-keywords: remote directories, attach to database library
-keywords: remote directories, Acceler8DB compatibility
-keywords: database libraries, attach remote directories to
-keywords: how to, attach remote directories to database library
-
 ---
 
 **AttachRemoteDirectory** attaches a remote directory to an database library object.

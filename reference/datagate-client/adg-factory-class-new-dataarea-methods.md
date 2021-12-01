@@ -1,16 +1,6 @@
 ---
 title: AdgFactory.NewDataArea Methods
 
-Id: dcsAdgFactoryClassNewDataAreaMethods
-TocParent: dcsAdgFactoryMethods
-TocOrder: 30
-
-keywords: AdgFactory.NewDataArea methods
-keywords: NewDataArea methods
-keywords: create data area
-keywords: data areas, create
-keywords: how to, create data areas
-
 ---
 
 Creates an instance of a [IDataArea](idataarea-class.html) object representing a data area.

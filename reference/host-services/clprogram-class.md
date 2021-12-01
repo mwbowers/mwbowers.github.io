@@ -1,21 +1,6 @@
 ---
 title: CLProgram Class
 
-Id: amfCLProgramClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 30
-
-keywords: CLProgram class, about CLProgram class
-keywords: CLProgram class
-keywords: classes [ASNA.Monarch], CLProgram class
-keywords: string manipulation, about
-keywords: job switches, about
-keywords: job attributes, about
-keywords: local data areas, about
-keywords: physical files, about
-keywords: file overrides, about
-keywords: library lists, about
-
 ---
 
 The **CLProgram** class provides support within existing CL program procedures in the areas of:

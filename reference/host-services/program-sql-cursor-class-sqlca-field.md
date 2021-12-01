@@ -1,17 +1,6 @@
 ---
 title: Program.SqlCursor.SQLCA Field
 
-Id: amfProgramSqlCursorClassSQLCAField
-TocParent: amfProgramSqlCursorClassFields
-TocOrder: 30
-
-keywords: SQLCA field
-keywords: SqlCursor.SQLCA field
-keywords: Program.SqlCursor.SQLCA field
-keywords: SQL, SQLCA
-keywords: SQL cursor, SQLCA
-keywords: SQLCA
-
 ---
 
 [ SQL_CommunicationsArea](program-sql-communications-area-class.html) object that represents the SQLCA to trap and report run-time errors for the **SqlCursor** .

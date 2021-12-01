@@ -1,16 +1,6 @@
 ---
 title: Dependent.PathName Property
 
-Id: dcsDependentClassPathNameProperty
-TocParent: dcsDependentProperties
-TocOrder: 2
-
-keywords: Dependent.PathName property
-keywords: PathName property
-keywords: dependent objects, return full path name
-keywords: path names, return location of dependent objects
-keywords: how to, return full path name of dependent objects
-
 ---
 
 **PathName** is the full path name of the dependent database object. 

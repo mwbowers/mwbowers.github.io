@@ -1,17 +1,6 @@
 ---
 title: Program.ExecuteSQL_Query Methods
 
-Id: amfProgramClassExecuteSQL_QueryMethods
-TocParent: amfProgramClassMethods
-TocOrder: 30
-
-keywords: ExecuteSQL_Query method
-keywords: Program.ExecuteSQL_Query method
-keywords: how to, execute SQL query
-keywords: SQL query, executing
-keywords: SQL, executing query
-keywords: programs, embedded SQL
-
 ---
 
 Overloaded method to execute a SQL query command returning System.Collections.Generic.Dictionary representing the results where you can access columns by name.

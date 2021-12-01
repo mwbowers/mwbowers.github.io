@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_Statement Method (DbConnection,string)
 
-Id: amfProgramClassExecuteSQL_StatementMethod4
-TocParent: amfProgramClassExecuteSQL_StatementMethods
-TocOrder: 30
-
 ---
 
 Executes a SQL command statement specifying the database connection and SQL statement.

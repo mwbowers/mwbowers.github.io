@@ -1,18 +1,6 @@
 ---
 title: Job.SetSwitch Method
 
-Id: amfJobClassSetSwitchMethod
-TocParent: amfJobMethods
-TocOrder: 160
-
-keywords: SetSwitch method
-keywords: Job.SetSwitch method
-keywords: jobs, setting attribute switches
-keywords: job attribute switches
-keywords: sws, setting job attribute switches
-keywords: how to, set job attribute switch settings
-keywords: CHGJOB SWS()
-
 ---
 
 Set a value indicating the 'on'/'off' status of a specific job attribute switch.

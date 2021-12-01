@@ -1,18 +1,6 @@
 ---
 title: ILibraryList.EnumerateCurrentSystem Method
 
-Id: dcsILibraryListClassEnumerateCurrentSystemMethod
-TocParent: dcsILibraryListMethods
-TocOrder: 1
-
-keywords: EnumerateCurrentSystem method
-keywords: ILibraryList.EnumerateCurrentSystem method
-keywords: AdgEnumerator delegate, used by
-keywords: delegates [DCS 16.0 AdgEnumerator, used by
-keywords: enumerate contents of library list
-keywords: how to, enumerate contents of library list
-keywords: library lists, enumerate object contents of
-
 ---
 
 **EnumerateCurrentSystem** enumerates the object contents of the system and user portion of the library list represented by **ILibraryList** , with the supplied [AdgEnumerator](adg-enumerator-delegate.html) delegate.

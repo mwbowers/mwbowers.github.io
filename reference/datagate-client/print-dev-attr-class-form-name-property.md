@@ -1,20 +1,6 @@
 ---
 title: PrintDevAttr.FormName Property
 
-Id: dcsPrintDevAttrClassFormNameProperty
-TocParent: dcsPrintDevAttrProperties
-TocOrder: 5
-
-keywords: FormName property
-keywords: PrintDevAttr.FormName property
-keywords: printing, format name, about this property
-keywords: printer device parameters, format name
-keywords: printers, device parameters, format name
-keywords: how to, return form names for printer
-keywords: how to, set form names for printer
-keywords: form names, set/return print values
-keywords: form names, about print
-
 ---
 
 The **FormName** specifies the name of the print format to use.

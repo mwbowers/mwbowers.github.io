@@ -1,13 +1,6 @@
 ---
 title: PrintDevAttr Properties
 
-Id: dcsPrintDevAttrProperties
-TocParent: dcsPrintDevAttrClass
-TocOrder: 3
-
-keywords: properties [DCS 16.0 PrintDevAttr class
-keywords: PrintDevAttr class, properties
-
 ---
 
 For additional methods see [PrintDevAttr Overview](print-dev-attr-class.html).

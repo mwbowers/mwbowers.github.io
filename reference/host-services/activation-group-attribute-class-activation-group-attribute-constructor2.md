@@ -1,10 +1,6 @@
 ---
 title: ActivationGroupAttribute Constructor (String)
 
-Id: amfActivationGroupAttributeClassActivationGroupAttributeConstructor2
-TocParent: amfActivationGroupAttributeClassConstructors
-TocOrder: 20
-
 ---
 
 This method constructs a new instance of an **ActivationGroupAttribute** with a group name.

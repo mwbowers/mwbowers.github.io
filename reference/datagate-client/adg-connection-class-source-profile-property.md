@@ -1,19 +1,6 @@
 ---
 title: AdgConnection.SourceProfile Property
 
-Id: dcsAdgConnectionClassSourceProfileProperty
-TocParent: dcsAdgConnectionPropertiesMain
-TocOrder: 1
-
-keywords: SourceProfile property
-keywords: AdgConnection.SourceProfile property
-
-keywords: database files, establish a connection
-keywords: files, establish a database connection
-keywords: establish database connection
-keywords: how to, establish database connection
-keywords: database connections, established
-
 ---
 
 The [SourceProfile](source-profile-class.html) object describing the currently open database connection, or if the **AdgConnection** object is in the <span>Closed</span> state, the database connection to be opened when the [ Open](adg-connection-class-open-method.html) method is called.

@@ -1,17 +1,6 @@
 ---
 title: IDirectory.RemotePathName Property
 
-Id: dcsIDirectoryClassRemotePathNameProperty
-TocParent: dcsIDirectoryProperties
-TocOrder: 1
-
-keywords: RemotePathName property
-keywords: IDirectory.RemotePathName property 
-keywords: remote path names, return for database library directory
-keywords: remote path names, Acceler8DB compatibility
-keywords: database libraries, return full path name of directory
-keywords: how to, return full path name of directory for database library
-
 ---
 
 **RemotePathName** is the full path name of a directory associated with the library represented by **IDirectory** , if any.

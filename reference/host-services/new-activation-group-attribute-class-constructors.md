@@ -1,18 +1,6 @@
 ---
 title: NewActivationGroupAttribute.NewActivationGroupAttribute Constructor()
 
-Id: amfNewActivationGroupAttributeClassConstructors
-TocParent: amfNewActivationGroupAttributeClass
-TocOrder: 10
-
-keywords: NewActivationGroupAttribute class, constructors
-keywords: NewActivationGroupAttribute.NewActivationGroupAttribute constructors
-keywords: constructors [ASNA.Monarch], NewActivationGroupAttribute class
-keywords: activation group, _Star_new
-keywords: activation group, creating _Star_new instance
-keywords: activation group attributes, _Star_new
-keywords: activation manager, new activation group
-
 ---
 
 This method constructs a new instance of a **NewActivationGroupAttribute** object.

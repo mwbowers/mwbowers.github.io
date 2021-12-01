@@ -1,19 +1,6 @@
 ---
 title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlOptions, XmlInfoEventHandler)
 
-Id: dcsAdgFactoryClassReadXmlMethod2
-TocParent: dcsAdgFactoryClassReadXmlMethods
-TocOrder: 1
-
-keywords: XmlInfoEventHandler delegate, used by
-keywords: delegates [DCS 16.0 XmlInfoEventHandler, used by
-keywords: AdgObjectTypes enumeration, used by
-keywords: XmlOptions enumeration, used by
-keywords: enumerations [DCS 16.0 AdgObjectTypes, used by
-keywords: enumerations [DCS 16.0 XmlOptions, used by
-keywords: XML [DCS 16.0 event handler, reading XML
-keywords: event handlers, reading XML
-
 ---
 
 This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class.html) (representing a file, library, or member) from an XML document stream. Optionally, **ReadXml** creates a new database object or a hierarchy of database objects.

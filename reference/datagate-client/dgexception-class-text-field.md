@@ -1,14 +1,6 @@
 ---
 title: dgException.Text Field
 
-Id: dcsdgExceptionClassTextField
-TocParent: dcsdgExceptionClassFieldsMain
-TocOrder: 3
-
-keywords: dgException.Text field
-keywords: Text field
-keywords: dgException, provider-dependent text information
-
 ---
 
 Provider-dependent text information association with the dgException.

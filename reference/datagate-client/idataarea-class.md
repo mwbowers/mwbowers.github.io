@@ -1,7 +1,5 @@
 ---
 
-Id: dcsIDataAreaClass
-TocParent: dcsASNADataGateClientClasses
 
 title: IDataAreaClass
 

@@ -1,19 +1,6 @@
 ---
 title: CLProgram.CreateDataArea Method
 
-Id: amfCLProgramClassCreateDataAreaMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 70
-
-keywords: CLProgram.CreateDataArea methods
-keywords: CreateDataArea methods
-
-keywords: creating program data area values
-keywords: how to, create program data area values
-keywords: program data areas, creating
-keywords: data areas, creating
-keywords: local data areas, creating
-
 ---
 
 Creates a data area.

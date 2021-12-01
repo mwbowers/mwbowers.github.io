@@ -1,16 +1,6 @@
 ---
 title: WebDevice.Read Method
 
-Id: amfWebDeviceClassReadMethod2
-TocParent: amfWebDeviceClassMethods
-TocOrder: 80
-
-keywords: WebDevice.Read method
-keywords: Read method
-keywords: web device, reading display file
-keywords: display files, reading
-keywords: how to, read display file for device
-
 ---
 
 Reads the specified WebDisplayFile object for the WebDevice.

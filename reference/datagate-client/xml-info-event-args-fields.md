@@ -1,13 +1,6 @@
 ---
 title: XmlInfoEventArgs Fields
 
-Id: dcsXmlInfoEventArgsFields
-TocParent: dcsXmlInfoEventArgsClass
-TocOrder: 1
-
-keywords: fields [DCS 16.0 XmlInfoEventArgs class
-keywords: XmlInfoEventArgs class, fields
-
 ---
 
 [XmlInfoEventArgs Overview](xml-info-event-args-class.html) 

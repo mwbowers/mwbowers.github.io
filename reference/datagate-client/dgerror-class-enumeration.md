@@ -1,40 +1,6 @@
 ---
 title: dgErrorClass Enumeration
 
-Id: dcsdgErrorClassEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 11
-
-keywords: dgErrorClass enumeration
-keywords: enumerations [DCS 16.0 dgErrorClass
-keywords: classes of errors
-keywords: run time errors, category of
-keywords: category of run-time errors
-keywords: errors, classes of
-keywords: dgEC_Access enumeration member
-keywords: dgEC_APPC enumeration member
-keywords: dgEC_AS400CPF enumeration member
-keywords: dgEC_AS400CPI enumeration member
-keywords: dgEC_AS400DG8 enumeration member
-keywords: dgEC_AS400MCH enumeration member
-keywords: dgEC_Base enumeration member
-keywords: dgEC_CallParm enumeration member
-keywords: dgEC_Catalog enumeration member
-keywords: dgEC_Command enumeration member
-keywords: dgEC_CommitCtrl enumeration member
-keywords: dgEC_Compiler enumeration member
-keywords: dgEC_ExitPoints enumeration member
-keywords: dgEC_License enumeration member
-keywords: dgEC_Object enumeration member
-keywords: dgEC_Print enumeration member
-keywords: dgEC_Repository enumeration member
-keywords: dgEC_SqlServer enumeration member
-keywords: dgEC_Stream enumeration member
-keywords: dgEC_Supervisor enumeration member
-keywords: dgEC_System enumeration member
-keywords: dgEC_TCPIP enumeration member
-keywords: dgEC_Unknown enumeration member
-
 ---
 
 Specifies the class, or category of the DCS run-time error.

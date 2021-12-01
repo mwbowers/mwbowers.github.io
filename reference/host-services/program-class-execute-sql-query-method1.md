@@ -1,10 +1,6 @@
 ---
 title: Program.ExecuteSQL_Query Method (string, DBParm)
 
-Id: amfProgramClassExecuteSQL_QueryMethod1
-TocParent: amfProgramClassExecuteSQL_QueryMethods
-TocOrder: 20
-
 ---
 
 Executes a SQL query specifying the SQL statement and statement parameters.

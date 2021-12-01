@@ -1,17 +1,6 @@
 ---
 title: WebDisplayFile.InitMessageSubfile Method
 
-Id: amfWebDisplayFileClassInitMessageSubfileMethod2
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 80
-
-keywords: InitMessageSubfile method
-keywords: WebDisplayFile.InitMessageSubfile method
-keywords: messages
-keywords: messages, initializing subfiles for display file
-keywords: how to, initialize display file for message subfiles
-keywords: display files, initializing for message subfiles
-
 ---
 
 Constructs a new instance of a **WebDisplayFile** object for the message subfile and program queue with option indicators specified.

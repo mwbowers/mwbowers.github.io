@@ -1,20 +1,6 @@
 ---
 title: SeekMode Enumeration
 
-Id: dcsSeekModeEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 29
-
-keywords: Equal enumeration member
-keywords: First enumeration member
-keywords: Greater enumeration member
-keywords: Last enumeration member
-keywords: SetGE enumeration member
-keywords: SetGT enumeration member
-keywords: SetLL enumeration member
-keywords: SeekMode enumeration
-keywords: enumerations [DCS 16.0 SeekMode
-
 ---
 
 Defines modes of operation for the [FileAdapter.SeekKey](file-adapter-class-seek-key-method.html) and [FileAdapter.SeekRRN](file-adapter-class-seek-rrn-method.html) methods.

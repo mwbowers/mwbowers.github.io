@@ -1,10 +1,6 @@
 ---
 title: IMember Interface
 
-Id: dcsIMemberClass
-TocParent: dcsASNADataGateClientClasses
-TocOrder: 14
-
 ---
 
 **IMember** models an object management interface to the				database file member object 

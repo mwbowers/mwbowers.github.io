@@ -1,26 +1,6 @@
 ---
 title: AuthorityTypes Enumeration
 
-Id: dcsAuthorityTypesEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 4
-
-keywords: enumerations [DCS 16.0 AuthorityTypes
-keywords: AuthorityTypes enumeration
-keywords: Exclude enumeration member
-keywords: Read enumeration member
-keywords: Add enumeration member
-keywords: Update enumeration member
-keywords: Delete enumeration member
-keywords: Execute enumeration member
-keywords: Operational enumeration member
-keywords: Change enumeration member
-keywords: Use enumeration member
-keywords: Existence enumeration member
-keywords: Alter enumeration member
-keywords: Management enumeration member
-keywords: All enumeration member
-
 ---
 
 The <span> **AuthorityTypes** </span> enumerated constant defines values that specify the types of object access authority users may be assigned. 

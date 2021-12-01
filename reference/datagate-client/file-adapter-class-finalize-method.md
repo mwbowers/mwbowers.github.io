@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.Finalize Method
 
-Id: dcsFileAdapterClassFinalizeMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 10
-
-keywords: how to, release managed resources
-keywords: release managed resources
-keywords: resources, release managed
-keywords: managed resources, release
-keywords: FileAdapter.Finalize method
-keywords: Finalize method,
-
 ---
 
 Releases managed resources and performs other cleanup operations.

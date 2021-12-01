@@ -1,23 +1,6 @@
 ---
 title: FileAdapter.SetFormat Method
 
-Id: dcsFileAdapterClassSetFormatMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 29
-
-keywords: SetFormat method
-keywords: FileAdapter.SetFormat method
-keywords: records, specify format
-keywords: records, restrict by specific format
-keywords: formats, restrict records by
-keywords: formats, specific
-keywords: specify record by format
-keywords: restrict record by format
-keywords: how to, specify record by format
-keywords: how to, restrict record by format
-keywords: multiformat files, specify records by format
-keywords: multiformat files, restrict records by specific format
-
 ---
 
 For multiformat read access, calling this method causes the read methods to fetch only those records with the given format.

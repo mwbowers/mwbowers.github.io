@@ -1,21 +1,6 @@
 ---
 title: IFileObject.WriteDefinition Method
 
-Id: dcsIFileObjectClassWriteDefinitionMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 7
-
-keywords: WriteDefinition method
-keywords: IFileObject.WriteDefinition method
-keywords: XML [DCS 16.0 <fileDef>, create database file's definition
-keywords: XML [DCS 16.0 documents, create file's definition
-keywords: XML [DCS 16.0 database files, create file's definition
-keywords: <fileDef>, create database file definition from XML document
-keywords: file definitions, create XML document content node
-keywords: database files, <fileDef>, create XML content node
-keywords: database files, XML documents, create file definition
-keywords: how to, create XML file definition for database file
-
 ---
 
 **WriteDefinition** dumps a database file's definition to an XML content node.

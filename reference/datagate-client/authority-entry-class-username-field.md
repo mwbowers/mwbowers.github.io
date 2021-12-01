@@ -1,17 +1,6 @@
 ---
 title: AuthorityEntry.Username Field
 
-Id: dcsAuthorityEntryClassUsernameField
-TocParent: dcsAuthorityEntryFields
-TocOrder: 2
-
-keywords: AuthorityEntry.Username field
-keywords: Username field
-keywords: how to, establish database authority user or group profile name
-keywords: user profile names, establish for database authorities
-keywords: group profile names, establish for database authorities
-keywords: authorities, profile name established for database
-
 ---
 
 **UserName** is the name of the group or user profile whose access capabilities are defined by this [AuthorityEntry](authority-entry-class.html).

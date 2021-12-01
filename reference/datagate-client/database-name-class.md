@@ -1,14 +1,6 @@
 ---
 title: DatabaseName Class
 
-Id: dcsDatabaseNameClass
-TocParent: dcsASNADataGateProvidersClasses
-TocOrder: 1
-
-keywords: DatabaseName class
-keywords: DatabaseName class, about DatabaseName class
-keywords: classes [DCS 16.0 DatabaseName class
-
 ---
 
 Represents additional methods when dealing with database files.

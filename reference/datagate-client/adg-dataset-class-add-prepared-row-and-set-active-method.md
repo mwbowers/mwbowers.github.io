@@ -1,20 +1,6 @@
 ---
 title: AddPreparedRowAndSetActive
 
-Id: dcsAdgDataSetClassAddPreparedRowAndSetActiveMethod
-TocParent: dcsAdgDataSetMethods
-TocOrder: 0
-
-keywords: database files, index value of
-keywords: files, index value of
-keywords: index value of database file
-keywords: rows, set current record active and add to a table
-keywords: set current record active and add row to a table
-keywords: how to, set current record active and add row to a table
-keywords: tables, set current record active and add row to
-keywords: AddPreparedRowandSetActive method
-keywords: AdgDataSet.AddPreparedRowandSetActive method
-
 ---
 
 An integer containing the index value of the file.

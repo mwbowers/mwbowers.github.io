@@ -1,18 +1,6 @@
 ---
 title: AdgConnection.CurrentUserLibl Property
 
-Id: dcsAdgConnectionCurrentUserLiblProperty
-TocParent: dcsAdgConnectionPropertiesMain
-TocOrder: 0
-
-keywords: CurrentUserLibl property
-keywords: AdgConnection.CurrentUserLibl property
-
-keywords: how to, change library list for open database connection
-keywords: library list changed for open database connection
-keywords: database connections, library list changed
-keywords: connections, database library list changed
-
 ---
 
 Set-only property used to change the current library list of an open database connection.

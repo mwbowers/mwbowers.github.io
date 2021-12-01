@@ -1,17 +1,6 @@
 ---
 title: Program.SqlPreparedStatement Constructors
 
-Id: amfProgramSqlPreparedStatementClassConstructors
-TocParent: amfProgramSqlPreparedStatementClass
-TocOrder: 10
-
-keywords: Program.SqlPreparedStatement.Program.SqlPreparedStatement constructors
-keywords: Program.SqlPreparedStatement class, constructors
-keywords: constructors [ASNA.Monarch], Program.SqlPreparedStatement class
-keywords: SQL prepared statement, constructing
-keywords: SQL, prepared statement, constructing
-keywords: how to, construct prepared statement
-
 ---
 
 This overloaded method constructs a new instance of a **SqlPreparedStatement** object.

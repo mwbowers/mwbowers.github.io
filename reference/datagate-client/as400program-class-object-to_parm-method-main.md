@@ -1,17 +1,6 @@
 ---
 title: As400Program.ObjectToParm Methods
 
-Id: dcsAs400ProgramClassObjectToParmMethodMain
-TocParent: dcsAs400ProgramMethodsMain
-TocOrder: 5
-
-keywords: ObjectToParm methods
-keywords: As400Program.ObjectToParm methods
-
-keywords: program parameters, parameter list input values set
-keywords: parameter lists, program parameter input values set 
-keywords: how to, set program parameter list input values
-
 ---
 
 Converts an object or value type to a parameter list value.

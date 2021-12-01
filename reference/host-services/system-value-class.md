@@ -1,15 +1,6 @@
 ---
 title: SystemValue Class
 
-Id: amfSystemValueClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 232
-
-keywords: SystemValue class
-keywords: SystemValue class, about SystemValue class
-keywords: classes [ASNA.Monarch], SystemValue class
-keywords: device control
-
 ---
 
 The **SystemValue** class is a constant class that records date and time data.

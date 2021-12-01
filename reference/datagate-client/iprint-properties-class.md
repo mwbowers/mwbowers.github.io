@@ -1,20 +1,6 @@
 ---
 title: IPrintProperties Interface
 
-Id: dcsIPrintPropertiesClass
-TocParent: dcsASNADataGateProvidersClasses
-TocOrder: 3
-
-keywords: classes [DCS 16.0 IPrintProperties class
-keywords: interfaces [DCS 16.0 IPrintProperties interface
-keywords: IPrintProperties class
-keywords: IPrintProperties class, about IPrintProperties class
-keywords: print controls, about open print files
-keywords: print files, about properties of open files
-keywords: printers, about device parameter construction
-keywords: printer device parameters, about construction of
-keywords: printing, about device parameter construction
-
 ---
 
 **IPrintProperties** provides access to the the run-time properties of an open database print file. 

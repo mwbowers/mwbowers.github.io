@@ -1,16 +1,6 @@
 ---
 title: ActivationGroupAttribute.GroupName Property
 
-Id: amfActivationGroupAttributeClassGroupNameProperty
-TocParent: amfActivationGroupAttributeClassProperties
-TocOrder: 10
-
-keywords: GroupName property
-keywords: ActivationGroupAttribute.GroupName property
-keywords: activation group name
-keywords: activation group attributes, group name
-keywords: activation group attributes, getting group name
-
 ---
 
 Gets a string value containing the name of the activation group to use for the program.

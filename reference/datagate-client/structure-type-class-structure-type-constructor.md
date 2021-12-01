@@ -1,10 +1,6 @@
 ---
 title: StructureType.StructureType(string, integer, object)
 
-Id: dcsStructureTypeClassStructureTypeConstructor
-TocParent: dcsStructureTypeConstructorsMain
-TocOrder: 0
-
 ---
 
 Define the data types of a structured iSeries program parameter. 

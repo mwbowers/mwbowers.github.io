@@ -1,17 +1,6 @@
 ---
 title: FieldType.NewInteger Method
 
-Id: dcsFieldTypeClassNewIntegerMethod
-TocParent: dcsFieldTypeMethods
-TocOrder: 7
-
-keywords: NewInteger method
-keywords: FieldType.NewInteger method
-keywords: fields, value limit for integer
-keywords: fields, integer
-keywords: integer field defined
-keywords: how to, define integer field
-
 ---
 
 Creates a new integer [ FieldType](field-type-class.html).

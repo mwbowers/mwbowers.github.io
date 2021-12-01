@@ -1,17 +1,6 @@
 ---
 title: AdgFactory.NewFile Method
 
-Id: dcsAdgFactoryClassNewFileMethod
-TocParent: dcsAdgFactoryMethods
-TocOrder: 1
-
-keywords: NewFile method
-keywords: AdgFactory.NewFile method
-keywords: path names, create for database files
-keywords: create database files
-keywords: database files, create
-keywords: how to, create database files
-
 ---
 
 The **NewFile** method creates a new instance of [IFileObject](ifile-object-class.html) representing a database file for object management functions.

@@ -1,17 +1,6 @@
 ---
 title: IPrintProperties.GetBoundType Method
 
-Id: dcsIPrintPropertiesClassGetBoundTypeMethod
-TocParent: dcsIPrintPropertiesMethods
-TocOrder: 0
-
-keywords: GetBoundType method
-keywords: IPrintProperties.GetBoundType method
-keywords: how to, determine CLR type of print control object for print format field
-keywords: print controls, format fields, return CLR type of control object
-keywords: print controls, return CLR type of for format field
-keywords: print files, return CLR type of print control object for format field
-
 ---
 
 <span> **GetBoundType** </span> returns the CLR type of a print control associated with a field.

@@ -1,20 +1,6 @@
 ---
 title: FileAdapter.DeleteRRN Method
 
-Id: dcsFileAdapterClassDeleteRRNMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 8
-
-keywords: database files, delete record by RRN
-keywords: files, delete record by RRN
-keywords: relative record numbers, delete records by
-keywords: RRN, delete records by
-keywords: records, delete by RRN
-keywords: delete records in a file by RRN
-keywords: how to, delete record by RRN
-keywords: DeleteRRN method
-keywords: FileAdapter.DeleteRRN method
-
 ---
 
 Deletes the current record specified by relative record number.

@@ -1,16 +1,6 @@
 ---
 title: IFileObject.Copy Method
 
-Id: dcsIFileObjectClassCopyMethod
-TocParent: dcsIFileObjectMethods
-TocOrder: 0
-
-keywords: Copy method
-keywords: IFileObject.Copy method
-keywords: copy a database file
-keywords: database files, copy
-keywords: how to, copy a database file
-
 ---
 
 **Copy** creates a copy of the database file represented by **IFileObject** with the name and location specified.

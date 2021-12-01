@@ -1,10 +1,6 @@
 ---
 title: MaxUserLibl Field
 
-Id: dcsMaxUserLiblEnumeration
-TocParent: dcsSourceProfileFieldsMain
-TocOrder: 1
-
 ---
 
 A constant containing the maximum number of new processes allowed in the user portion of the library list for a database. A maximum of 25 entries can be given.

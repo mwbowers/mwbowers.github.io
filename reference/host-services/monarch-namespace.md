@@ -1,14 +1,6 @@
 ---
 title: ASNA.Monarch Namespace [ASNA.VisualRPG.Runtime]
 
-Id: amfMonarchNamespace
-TocParent: amfClassLibraryMain
-TocOrder: 10
-
-keywords: namespaces, ASNA.Monarch [ASNA.VisualRPG.Runtime.Dll]
-keywords: ASNA.Monarch namespace [ASNA.VisualRPG.Runtime.Dll]
-keywords: ASNA.Monarch namespace [ASNA.VisualRPG.Runtime.Dll], about
-
 ---
 
 This document contains a listing of the classes and enumerations contained with this namespace.

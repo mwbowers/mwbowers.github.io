@@ -1,14 +1,6 @@
 ---
 title: AdgDataSet.Initialize Method
 
-Id: dcsAdgDataSetClassInitializeMethod
-TocParent: dcsAdgDataSetMethods
-TocOrder: 6
-
-keywords: Initialize method
-keywords: AdgDataSet.Initialize method
-keywords: initialize, AdgDataSet class
-
 ---
 
 Initialize an instance of **AdgDataSet** .

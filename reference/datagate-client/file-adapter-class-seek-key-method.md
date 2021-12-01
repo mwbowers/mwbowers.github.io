@@ -1,20 +1,6 @@
 ---
 title: FileAdapter.SeekKey Method
 
-Id: dcsFileAdapterClassSeekKeyMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 26
-
-keywords: SeekKey method
-keywords: FileAdapter.SeekKey method
-keywords: SeekMode enumeration, used by
-keywords: enumerations [DCS 16.0 SeekMode, used by
-keywords: database files, set record pointer by key
-keywords: files, set record pointer by key
-keywords: records, set file pointer by key
-keywords: set file record pointer by key
-keywords: how to, set file record pointer by key
-
 ---
 
 Moves the record pointer associated with the currently open file without reading records to within a range of key values.

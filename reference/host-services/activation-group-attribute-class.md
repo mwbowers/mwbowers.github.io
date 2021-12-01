@@ -1,17 +1,6 @@
 ---
 title: ActivationGroupAttribute Class
 
-Id: amfActivationGroupAttributeClass
-TocParent: amfMonarchNamespaceClasses
-TocOrder: 10
-
-keywords: ActivationGroupAttribute class, about ActivationGroupAttribute class
-keywords: classes [ASNA.Monarch], ActivationGroupAttribute class
-keywords: activation manager, ActivationGroupAttribute
-keywords: CALLER constant
-keywords: DEFAULT constant
-keywords: NEW constant
-
 ---
 
 The **ActivationGroupAttribute** is provided to support the job activation manager to set an activation group attribute.

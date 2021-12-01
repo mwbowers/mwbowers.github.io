@@ -1,17 +1,6 @@
 ---
 title: FileAdapter.Open Method
 
-Id: dcsFileAdapterClassOpenMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 13
-
-keywords: FileAdapter.Open method
-keywords: Open method
-keywords: open existing file
-keywords: files, open existing
-keywords: database files, open existing
-keywords: how to, open existing database files
-
 ---
 
 Open a database file for access with the specified [AdgDataSet](adg-dataset-class.html).

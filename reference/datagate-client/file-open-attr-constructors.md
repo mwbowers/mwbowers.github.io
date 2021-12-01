@@ -1,14 +1,6 @@
 ---
 title: FileOpenAttr Constructors
 
-Id: dcsFileOpenAttrConstructors
-TocParent: dcsFileOpenAttrClass
-TocOrder: 1
-
-keywords: FileOpenAttr class, constructors
-keywords: constructors [DCS 16.0 FileOpenAttr class
-keywords: FileOpenAttr.FileOpenAttr constructors
-
 ---
 
 [FileOpenAttr Overview](file-open-attr-class.html) 

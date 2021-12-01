@@ -1,13 +1,6 @@
 ---
 title: dgException Members
 
-Id: dcsdgExceptionClassMembers
-TocParent: dcsdgExceptionClass
-TocOrder: 0
-
-keywords: members [DCS 16.0 dgException class
-keywords: dgException class, all members
-
 ---
 
 [dgException Overview](dgexception-class.html) 

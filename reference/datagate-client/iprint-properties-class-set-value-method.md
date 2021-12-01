@@ -1,16 +1,6 @@
 ---
 title: IPrintProperties.SetValue Method
 
-Id: dcsIPrintPropertiesClassSetValueMethod
-TocParent: dcsIPrintPropertiesMethods
-TocOrder: 3
-
-keywords: SetValue method
-keywords: IPrintProperties.SetValue method
-keywords: print controls, format fields, property value set
-keywords: print controls, run time properties set
-keywords: print files, set print control property values
-
 ---
 
 Assign a value to a print control property.

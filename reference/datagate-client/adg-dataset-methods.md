@@ -1,13 +1,6 @@
 ---
 title: AdgDataSet Methods
 
-Id: dcsAdgDataSetMethods
-TocParent: dcsAdgDataSetClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 AdgDataSet class
-keywords: AdgDataSet class, methods
-
 ---
 
 [AdgDataSet Overview](adg-dataset-class.html) 

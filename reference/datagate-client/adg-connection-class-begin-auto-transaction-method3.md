@@ -1,10 +1,6 @@
 ---
 title: AdgConnection.BeginAutoTransaction(String, String)
 
-Id: dcsAdgConnectionClassBeginAutoTransactionMethod3
-TocParent: dcsAdgConnectionClassBeginAutoTransactionMethodMain
-TocOrder: 0
-
 ---
 
 Begins an automatic database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) object with the name and options specified.

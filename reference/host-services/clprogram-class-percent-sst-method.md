@@ -1,18 +1,6 @@
 ---
 title: CLProgram.Percent_SST Method
 
-Id: amfCLProgramClassPercent_SSTMethod
-TocParent: amfCLProgramClassMethods
-TocOrder: 150
-
-keywords: Percent_SST method
-keywords: CLProgram.Percent_SST method
-keywords: variables, changing content value
-keywords: string manipulation, changing content value
-keywords: local data areas, changing content value
-keywords: how to, change variable content value
-keywords: how to, change local data area content value
-
 ---
 
 Changes the contents of the specified character variable or the local data area with a new value at a start position for a length specified. This can only be used within a CL procedure.

@@ -1,25 +1,6 @@
 ---
 title: FileAdapter.ReadRandomKey Method
 
-Id: dcsFileAdapterClassReadRandomKeyMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 16
-
-keywords: ReadRandomKey method
-keywords: FileAdapter.ReadRandomKey method
-keywords: enumerations [DCS 16.0 LockRequest, used by
-keywords: LockRequest enumeration, used by
-keywords: enumerations [DCS 16.0 ReadRandomMode, used by
-keywords: ReadRandomMode enumeration, used by
-keywords: database files, read records randomly by key
-keywords: files, read records randomly by key
-keywords: how to, read records randomly by key
-keywords: read records randomly by key
-keywords: records, read randomly by key
-keywords: record locking mode
-keywords: database files, record locking mode
-keywords: files, record locking override
-
 ---
 
 Read a database file record using the specified key.

@@ -1,16 +1,6 @@
 ---
 title: IAdgObject.OwnerIsGroup Property
 
-Id: dcsIAdgObjectClassOwnerIsGroupProperty
-TocParent: dcsIAdgObjectProperties
-TocOrder: 11
-
-keywords: OwnerIsGroup property
-keywords: IAdgObject.OwnerIsGroup property
-keywords: how to, determine if database object owner is single or group profile
-keywords: database objects, identify single or group profile owner
-keywords: owner names, identify single or group user profile
-
 ---
 
 **OwnerIsGroup** specifies [ Owner](iadg-object-class-owner-property.html) is a group account when **True** .

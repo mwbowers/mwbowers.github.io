@@ -1,20 +1,6 @@
 ---
 title: WebDisplayFile.Update Method
 
-Id: amfWebDisplayFileClassUpdateMethod
-TocParent: amfWebDisplayFileClassMethods
-TocOrder: 140
-
-keywords: updating files
-keywords: how to, update display files
-keywords: how to, update printer files
-keywords: how to, updateo database files
-keywords: display files, updating
-keywords: printer files, updating
-keywords: database files, updating
-keywords: Update method
-keywords: WebDisplayFile.Update method
-
 ---
 
 Updates a record in a Monarch workstation file, database file, or printer file.

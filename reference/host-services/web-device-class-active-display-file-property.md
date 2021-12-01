@@ -1,16 +1,6 @@
 ---
 title: WebDevice.ActiveDisplayFile Property
 
-Id: amfWebDeviceClassActiveDisplayFileProperty
-TocParent: amfWebDeviceClassProperties
-TocOrder: 10
-
-keywords: ActiveDisplayFile property
-keywords: WebDevice.ActiveDisplayFile property
-keywords: device control, active display file
-keywords: display files, active
-keywords: how to, get active display file
-
 ---
 
 Gets an instance of the [ WebDisplayFile](web-display-file-class.html) object for the **WebDevice** .

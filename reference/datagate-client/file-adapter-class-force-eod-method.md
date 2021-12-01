@@ -1,24 +1,6 @@
 ---
 title: FileAdapter.ForceEOD Method
 
-Id: dcsFileAdapterClassForceEODMethod
-TocParent: dcsFileAdapterMethods
-TocOrder: 11
-
-keywords: FileAdapter.ForceEOD method
-keywords: ForceEOD method
-keywords: OLE print files, printing
-keywords: OLE print files, flush current page and start printing
-keywords: how to, flush current page and start printing OLE print files
-keywords: printing, OLE print files
-keywords: database files, flush buffers of open file
-keywords: files, flush buffers of open file
-keywords: database files, release locks of open file
-keywords: how to, flush buffer, release lock, and seek last record of open file
-keywords: files, release locks of open file
-keywords: database files, seek last record of open file
-keywords: files, seek last record of open file
-
 ---
 
 Synchronizes the state of the <span> **FileAdapter** </span> object with the open database file.

@@ -1,17 +1,6 @@
 ---
 title: Job.GetSwitch Method
 
-Id: amfJobClassGetSwitchMethod
-TocParent: amfJobMethods
-TocOrder: 120
-
-keywords: GetSwitch method
-keywords: Job.GetSwitch method
-keywords: jobs, getting attribute switches
-keywords: job attribute switches
-keywords: sws, getting job attribute switches
-keywords: how to, set job attribute switch settings
-
 ---
 
 Returns a value indicating the 'on'/'off' status of a specific job attribute switch.

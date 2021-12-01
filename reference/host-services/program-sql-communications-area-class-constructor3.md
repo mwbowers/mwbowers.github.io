@@ -1,10 +1,6 @@
 ---
 title: Program.SQL_CommunicationsArea Constructor (string,int,int,System.Exception)
 
-Id: amfProgramSQL_CommunicationsAreaClassConstructor3
-TocParent: amfProgramSQL_CommunicationsAreaClassConstructors
-TocOrder: 30
-
 ---
 
 Constructs a new instance of a **SQL_CommunicationsArea** object with command text, execution status code and state, and systems exception.

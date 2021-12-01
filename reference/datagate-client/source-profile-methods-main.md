@@ -1,13 +1,6 @@
 ---
 title: SourceProfile Methods
 
-Id: dcsSourceProfileMethodsMain
-TocParent: dcsSourceProfileClass
-TocOrder: 2
-
-keywords: methods [DCS 16.0 SourceProfile class
-keywords: SourceProfile class, methods
-
 ---
 
 ## Public Methods

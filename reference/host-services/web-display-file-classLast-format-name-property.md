@@ -1,18 +1,6 @@
 ---
 title: WebDisplayFile.LastFormatName Property
 
-Id: amfWebDisplayFileClassLastFormatNameProperty
-TocParent: amfWebDisplayFileClassProperties
-TocOrder: 80
-
-keywords: LastFormatName property
-keywords: WebDisplayFile.LastFormatName property
-keywords: display files, setting last format name
-keywords: display files, getting last format name
-keywords: last format of display file
-keywords: how to, set last format name of display file
-keywords: how to, get last format name of display file
-
 ---
 
 Gets or set the last format name for the Display File.

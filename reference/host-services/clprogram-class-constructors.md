@@ -1,14 +1,6 @@
 ---
 title: CLProgram Constructor()
 
-Id: amfCLProgramClassConstructors
-TocParent: amfCLProgramClass
-TocOrder: 10
-
-keywords: CLProgram class, constructors
-keywords: constructors [ASNA.Monarch], CLProgram class
-keywords: CLProgram.CLProgram constructors
-
 ---
 
 Constructs a new instance of a CLProgram object.

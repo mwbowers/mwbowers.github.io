@@ -1,14 +1,6 @@
 ---
 title: DCS for Visual Studio 2019 Tutorials
 
-Id: dcsTutorialsMain
-TocParent: dcsProgrammersGuideMain
-TocOrder: 4
-
-keywords: DCS for Visual Studio 2019, Tutorials
-keywords: DCS for Visual Studio 2019 Tutorials, listing of
-keywords: tutorials, DCS for Visual Studio 2019
-
 ---
 
 ## In This Section

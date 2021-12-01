@@ -1,13 +1,6 @@
 ---
 title: MessageQueue Class Fields
 
-Id: amfMessageQueueClassFields
-TocParent: amfMessageQueueClass
-TocOrder: 40
-
-keywords: MessageQueue class, fields
-keywords: fields [ASNA.Monarch], MessageQueue class
-
 ---
 
 [ MessageQueue Class Overview](message-queue-class.html) 

@@ -1,25 +1,6 @@
 ---
 title: AdgConnection.BeginTransaction Methods
 
-Id: dcsAdgConnectionClassBeginTransactionMethodMain
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 1
-
-keywords: BeginTransaction methods
-keywords: AdgConnection.BeginTransaction methods
-keywords: database transactions, begin manual
-keywords: database transactions, lock level set for manual
-keywords: database transactions, name set for manual
-keywords: database transactions, options set for manual
-keywords: manual transactions, beginning
-keywords: manual transactions, lock level set
-keywords: manual transactions, name set
-keywords: manual transactions, options set
-keywords: how to, begin manual database transactions
-keywords: how to, set manual database transaction lock level
-keywords: how to, set manual database transaction name
-keywords: how to, set manual database transaction options
-
 ---
 
 Overloaded method that begins a manual database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) object with combinations of transaction locking level, name, and command options parameters specified.

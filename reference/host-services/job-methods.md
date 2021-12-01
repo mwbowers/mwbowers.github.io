@@ -1,13 +1,6 @@
 ---
 title: Job Class Methods
 
-Id: amfJobMethods
-TocParent: amfJobClass
-TocOrder: 20
-
-keywords: Job class, methods
-keywords: methods [ASNA.Monarch], Job class
-
 ---
 
 [Job Class Overview](job-class.html) 

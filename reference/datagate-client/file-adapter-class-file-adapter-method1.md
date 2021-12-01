@@ -1,10 +1,6 @@
 ---
 title: FileAdapter.FileAdapter Constructor ()
 
-Id: dcsFileAdapterClassFileAdapterMethod1
-TocParent: dcsFileAdapterClassFileAdapterMethodMain
-TocOrder: 0
-
 ---
 
 Constructs an instance of the [FileAdapter](file-adapter-class.html) object with default values.

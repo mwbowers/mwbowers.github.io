@@ -1,13 +1,6 @@
 ---
 title: IFileObject Methods
 
-Id: dcsIFileObjectMethods
-TocParent: dcsIFileObjectClass
-TocOrder: 1
-
-keywords: methods [DCS 16.0 IFileObject class
-keywords: IFileObject class, methods
-
 ---
 
 ## Public Methods

@@ -1,19 +1,6 @@
 ---
 title: AdgConnection.Close Method
 
-Id: dcsAdgConnectionClassCloseMethod
-TocParent: dcsAdgConnectionMethodsMain
-TocOrder: 3
-
-keywords: Close method
-keywords: AdgConnection.Close method
-
-keywords: how to, close database connection
-keywords: how to, release database connection
-keywords: release connection resources
-keywords: database connections, release resources
-keywords: close database connection
-
 ---
 
 Sets the [ State](adg-connection-class-state-property.html) property to <span>Closed</span>, and releases connections to the database provider.

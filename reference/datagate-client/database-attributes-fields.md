@@ -1,13 +1,6 @@
 ---
 title: DatabaseAttributes Fields
 
-Id: dcsDatabaseAttributesFields
-TocParent: dcsDatabaseAttributeClass
-TocOrder: 2
-
-keywords: DatabaseAttributes class, fields
-keywords: fields [DCS 16.0 DatabaseAttributes class
-
 ---
 
 [DatabaseAttributes Overview](dcsDatabaseAttributesClass.html) 

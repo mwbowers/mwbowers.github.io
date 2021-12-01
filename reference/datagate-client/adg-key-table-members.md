@@ -1,13 +1,6 @@
 ---
 title: AdgKeyTable Members
 
-Id: dcsAdgKeyTableMembers
-TocParent: dcsAdgKeyTableClass
-TocOrder: 0
-
-keywords: AdgKeyTable class, all members
-keywords: members [DCS 16.0 AdgKeyTable class
-
 ---
 
 [AdgKeyTable Overview](adg-key-table-class.html) 
@@ -39,7 +32,6 @@ keywords: members [DCS 16.0 AdgKeyTable class
 [AdgKeyTable Class](adg-key-table-class.html)
       <br />
 [AdgTable Class](adg-table-class.html)
-
 
 ---
 

@@ -1,14 +1,6 @@
 ---
 title: ASNA.DataGate.Client Namespace
 
-Id: dcsDataGateClientNamespace
-TocParent: dcsDataGateAssembly
-TocOrder: 0
-
-keywords: ASNA.DataGate.Client namespace, about
-keywords: ASNA.DataGate.Client namespace
-keywords: namespaces, ASNA.DataGate.Client
-
 ---
 
 The <span>ASNA.DataGate.Client</span> namespace is the primary namespace used by client applications. It contains the most fundamental classes for accessing database server resources, as listed below. Almost all DataGate applications will require something contained in the ASNA.DataGate.Client namespace. 

@@ -1,20 +1,6 @@
 ---
 title: SourceProfile.Text Property
 
-Id: dcsSourceProfileClassTextProperty
-TocParent: dcsSourceProfilePropertiesMain
-TocOrder: 10
-
-keywords: Text property
-keywords: SourceProfile.Text property
-keywords: how to, use connection profile text or comments
-keywords: text or comments, associated with connection profile
-keywords: connection profile, text or comments
-keywords: database names, associate text or comment with
-keywords: registered database names, associate text or comment with
-keywords: database connections, associate text or comment with database name
-keywords: how to, associate text or comment with registered name of database
-
 ---
 
 Any text or comments to be associated with the connection profile.

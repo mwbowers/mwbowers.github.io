@@ -1,16 +1,6 @@
 ---
 title: Connecting to a Database Using a Database Name
 
-Id: dcsConnectingtoaDatabase
-TocParent: dcsConnectingtoaDatabaseMain
-TocOrder: 0
-
-keywords: connecting to a database, using a database name
-keywords: database names
-keywords: database label
-keywords: databases, connecting to
-keywords: database names, using to connect to a database
-
 ---
 
 The DataGate notions of "database name" (a registered client-side reference to a set of database connection parameters) and "database label" (the server-side identifier for database servers) are provided to help you identify and connect to a database.

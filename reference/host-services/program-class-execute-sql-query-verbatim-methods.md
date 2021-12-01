@@ -1,17 +1,6 @@
 ---
 title: Program.ExecuteSQL_QueryVerbatim Methods
 
-Id: amfProgramClassExecuteSQL_QueryVerbatimMethods
-TocParent: amfProgramClassMethods
-TocOrder: 40
-
-keywords: ExecuteSQL_QueryVerbatim method
-keywords: Program.ExecuteSQL_QueryVerbatim method
-keywords: how to, execute SQL query
-keywords: SQL query, executing
-keywords: SQL, executing query
-keywords: programs, embedded SQL
-
 ---
 
 Overloaded method to execute a SQL query with the SQL statement exactly as contained in the original legacy source code. A System.Collections.Generic.Dictionary is returned representing the results where you can access columns by name.

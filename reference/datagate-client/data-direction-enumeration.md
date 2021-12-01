@@ -1,21 +1,6 @@
 ---
 title: DataDirection Enumeration
 
-Id: dcsDataDirectionEnumeration
-TocParent: dcsDataGateCommonEnumerations
-TocOrder: 5
-
-keywords: DataDirection enumeration
-keywords: enumerations [DCS 16.0 DataDirection
-keywords: Input enumeration member
-keywords: InputOutput enumeration member
-keywords: Output enumeration member
-keywords: None enumeration member
-
-keywords: parameter lists, data direction constants
-keywords: program parameters, data direction constants
-keywords: parameters, data direction constants
-
 ---
 
 Specifies the type of a program parameter.
