@@ -21,7 +21,7 @@ The <span>ASNA.DataGate.Client</span> namespace is the primary namespace used by
 | [AuthorityEntry](authority-entry-class.html) | The AuthorityEntry class describes a user or group authorization to a database object. |
 | [Dependent](dependent-class.html) | The Dependent class names a database object, its type, and characterizes its dependent relationship to another database object. |
 | [FileAdapter](file-adapter-class.html) | The FileAdapter class provides record-level database access methods and open file status information. |
-| [IAdgObject](iadg-object-class.html) | IAdgObject is the base interface implemented by all DataGate Component Suite (DG) class objects modelling database objects. The leaf interfaces of these classes are IDirectory, IFileObject, and IMember. Each of these inherits the methods and properties of IAdgObject, so that an instance of IDirectory, IFileObject, or IMember is also an instance of IAdgObject. |
+| [IAdgObject](iadg-object-class.html) | IAdgObject is the base interface implemented by all DataGate class objects modeling database objects. The leaf interfaces of these classes are IDirectory, IFileObject, and IMember. Each of these inherits the methods and properties of IAdgObject, so that an instance of IDirectory, IFileObject, or IMember is also an instance of IAdgObject. |
 | [IAdgTransaction](iadg-transaction-class.html) | IAdgTransaction models database transaction management objects, for database providers which support transaction processing. |
 | [IDirectory](idirectory-class.html) | IDirectory models an object management interface to the database library object. |
 | [IFileObject](ifile-object-class.html) | IFileObject models an object management interface to the database file object. |

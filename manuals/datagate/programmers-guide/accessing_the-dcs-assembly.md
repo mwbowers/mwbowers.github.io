@@ -3,7 +3,7 @@ title: Accessing the DG Assembly
 
 ---
 
-The first step to accessing and using the ASNA DataGate Component Suite for Visual Studio 2019 after it has been installed is to reference the assembly so you can "see" the objects it contains. 
+The first step to accessing and using DataGate in your project after it has been installed is to reference the assembly so you can "see" the objects it contains. 
 ## To Access the DG Assembly
 
 1. Set a reference to the DG Assembly by using Visual Studio’s <span >Add References</span> dialog box. To open the Add References dialog box, select the "<span >Add References</span>…" on the <span >Project</span> menu of the idE.

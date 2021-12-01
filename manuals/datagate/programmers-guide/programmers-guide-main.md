@@ -3,12 +3,12 @@ title: Programmers Guide
 
 ---
 
-This section of the ASNA DataGate Component Suite documentation contains the basics to assist you in using DG.
+This section of the documentation contains the basics to assist you in using DG.
 
 ## In This Section
 
 [Introduction](introduction-main.html)
-: Describes an overview of DataGate Component Suite and how to access the DG Assembly. 
+: Describes an overview of DataGate and how to access the DG Assembly. 
 
 
 [Connecting To/From a Database](connectingtoa-database-main.html)        

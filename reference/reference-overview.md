@@ -11,7 +11,7 @@ The ASNA Monarch Base consists of the following assemblies:
 - ASNA.QSys.MonaLisa.exe
 
 ## ASNA.DataGate.Client.dll Assembly
-The DataGate Component Suite class library is a library of classes, interfaces, and value types that are included in the ASNA DataGate Component Suite. This library provides access to DataGate Client functionality and is designed to be the foundation on which DataGate Database applications, components, and controls are built.
+The DataGate class library is a library of classes, interfaces, and value types that implement the client side of the ASNA DataGate facilities. This library provides access to DataGate Client functionality and is designed to be the foundation on which DataGate Database applications, components, and controls are built.
 
 Here is the (old) [Class Library Documentation](https://docs.asna.com/documentation/Help160/DG/_HTML/Welcome.htm).
 

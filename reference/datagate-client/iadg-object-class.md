@@ -3,7 +3,7 @@ title: IAdgObject Class
 
 ---
 
-**IAdgObject** is the base interface implemented by all DataGate Component Suite (DG) class objects modeling database objects. The leaf interfaces of these classes are [IDirectory](idirectory-class.html), [IFileObject](ifile-object-class.html), and [ IMember](imember-class.html). Each of these inherits the methods and properties of **IAdgObject** , so that an instance of **IDirectory** , **IFileObject** , or **IMember** is also an instance of **IAdgObject** .
+**IAdgObject** is the base interface implemented by all DataGate class objects modeling database objects. The leaf interfaces of these classes are [IDirectory](idirectory-class.html), [IFileObject](ifile-object-class.html), and [ IMember](imember-class.html). Each of these inherits the methods and properties of **IAdgObject** , so that an instance of **IDirectory** , **IFileObject** , or **IMember** is also an instance of **IAdgObject** .
 
 Note that methods which iterate **IAdgObject** instances (such as [ IDirectory.Enumerate](idirectory-class-enumerate-method.html)), are actually returning references to objects that implement **IDirectory** , **IFileObject** , or **IMember** . The underlying type of an **IAdgObject** instance can be determined with the [ AdgObjectType](iadg-object-class-adg-object-type-property.html) property. 
 
