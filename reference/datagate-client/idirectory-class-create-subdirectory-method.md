@@ -6,7 +6,7 @@ title: IDirectory.CreateSubDirectory Method
 **CreateSubDirectory** creates a new library contained by the library represented by [IDirectory](idirectory-class.html).
 
 ```cs
- Public void IDirectory CreateSubDirectory(_<br />   string name_<br />);
+ public void IDirectory CreateSubDirectory(_<br />   string name_<br />);
 ```
 
 

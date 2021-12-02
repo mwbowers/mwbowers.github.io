@@ -6,7 +6,7 @@ title: IAdgObject.Create Method
 Use **Create** to create a new database object reflecting the current state of **IAdgObject** .
 
 ```cs
- Public void IAdgObject Create();
+ public void IAdgObject Create();
 ```
 
 ## Parameters

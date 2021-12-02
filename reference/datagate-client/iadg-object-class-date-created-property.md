@@ -6,7 +6,7 @@ title: IAdgObject.DateCreated Property
 **DateCreated** is a timestamp recorded by the database provider when the database object is created.
 
 ```cs
- Public System.DateTime DateCreated { get; }
+ public System.DateTime DateCreated { get; }
 ```
 
 ## Property Value

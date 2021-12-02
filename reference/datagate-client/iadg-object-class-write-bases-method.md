@@ -6,7 +6,7 @@ title: IAdgObject.WriteBases Method
 **WriteBases** creates an XML document fragment describing the base objects of a single database object.
 
 ```cs
- Public void WriteBases(
+ public void WriteBases(
    System.Xml.XmlWriter writer
 );
 ```

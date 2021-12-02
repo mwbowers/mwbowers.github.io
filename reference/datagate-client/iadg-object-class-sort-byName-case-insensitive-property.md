@@ -6,7 +6,7 @@ title: IAdgObject.SortByNameCaseInsensitive Property
 **SortByNameCaseInsensitive** returns an **IComparer** instance suitable for comparing instances of [ IAdgObject](iadg-object-class.html) based on the value returned by their [ ToString](iadg-object-class-toString-method.html) method. String comparison is conducted using **System.Collections.CaseInsensitiveComparer** .
 
 ```cs
- Public interface IComparer SortByNameCaseInsensitive { get; }
+ public interface IComparer SortByNameCaseInsensitive { get; }
 ```
 
 ## Property Value

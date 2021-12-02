@@ -6,7 +6,7 @@ title: FileOpenAttr.WaitForRecord Property
 Time, in seconds, that a process will wait for access to a record.
 
 ```cs
- Public int WaitForRecord { get; set; }
+ public int WaitForRecord { get; set; }
 ```
 
 ## Property Value

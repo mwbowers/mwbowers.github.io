@@ -6,7 +6,7 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
 **WriteXml** produces an XML document fragment representing the [IAdgObject](iadg-object-class.html). Optionally, the document may describe a hierarchy of database objects.
 
 ```cs
- Public static IAdgObject WriteXml(
+ public static IAdgObject WriteXml(
    System.Xml.XmlWriter writer ,<br />    [XmlOptions](xml-options-enumeration.html) options
 );
 ```

@@ -6,7 +6,7 @@ title: FileAdapter.RecordCount Property
 <span>The number of non-deleted records in the open database file. </span> 
 
 ```cs
- Public long RecordCount { get; }
+ public long RecordCount { get; }
 ```
 
 ## Property Value

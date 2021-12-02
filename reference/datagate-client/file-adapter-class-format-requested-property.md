@@ -6,7 +6,7 @@ title: FileAdapter.FormatRequested Property
 Reflects the most recent format specified in a [ SetFormat](file-adapter-class-set-format-method.html) or [ResetFormat](file-adapter-class-reset-format-method.html) method call.
 
 ```cs
- Public int FormatRequested { get; }
+ public int FormatRequested { get; }
 ```
 
 

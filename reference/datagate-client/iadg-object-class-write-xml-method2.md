@@ -6,7 +6,7 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler
 **WriteXml** produces an XML document fragment representing the [IAdgObject](iadg-object-class.html). Optionally, the document may describe a hierarchy of database objects. This form of **WriteXml** provides a delegate parameter for monitoring the method's progress.
 
 ```cs
- Public static IAdgObject WriteXml(    
+ public static IAdgObject WriteXml(    
    System.Xml.XmlWriter writer,<br />   [XmlOptions](xml-options-enumeration.html) options,
 [XmlInfoEventHandler](xml-info-event-handler-delegate.html) hndlr
 );

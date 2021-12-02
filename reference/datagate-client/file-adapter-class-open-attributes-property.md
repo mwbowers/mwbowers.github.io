@@ -6,7 +6,7 @@ title: FileAdapter.OpenAttributes Property
 <span>Contains a set of file properties which influence the way a file is opened. </span> 
 
 ```cs
- Public FileOpenAttr OpenAttributes { get; set; }
+ public FileOpenAttr OpenAttributes { get; set; }
 ```
 
 ## Property Value

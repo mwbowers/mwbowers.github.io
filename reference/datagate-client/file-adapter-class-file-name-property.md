@@ -6,7 +6,7 @@ title: FileAdapter.FileName Property
 The path name of the database file, excluding the member name (see [ MemberName Property](file-adapter-class-member-name-property.html)). 
 
 ```cs
- Public string FileName { get; set; }
+ public string FileName { get; set; }
 ```
 
 ## Property Value

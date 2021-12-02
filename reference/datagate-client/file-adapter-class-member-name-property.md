@@ -6,7 +6,7 @@ title: FileAdapter.MemberName Property
 <span>The name of the member of the currently-opened file. </span> 
 
 ```cs
- Public string MemberName { get; set; }
+ public string MemberName { get; set; }
 ```
 
 ## Property Value

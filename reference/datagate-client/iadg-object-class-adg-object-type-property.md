@@ -6,7 +6,7 @@ title: IAdgObject.AdgObjectType Property
 **AdgObjectType** identifies the type (file, library, member) of the database object represented by **IAdgObject** . 
 
 ```cs
- Public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }
+ public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }
 ```
 
 Property Value <p> [AdgObjectTypes](adg-object-types-enumeration.html). ReadOnly. The database object type.

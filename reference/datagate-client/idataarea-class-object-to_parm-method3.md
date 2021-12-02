@@ -6,7 +6,7 @@ title: IDataArea.ObjectToParm(System.Type, string)
 Converts an object to a data area value provided with the parameter type and value.
 
 ```cs
- Public object ObjectToParm(
+ public object ObjectToParm(
    Object Value,
    string ParameterName,
 );

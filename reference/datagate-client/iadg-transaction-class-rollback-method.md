@@ -6,7 +6,7 @@ title: IAdgTransaction.Rollback Method
 Cancel changes to the database that have been performed within the current transaction context.
 
 ```cs
- Public virtual void Rollback();
+ public virtual void Rollback();
 ```
 
 

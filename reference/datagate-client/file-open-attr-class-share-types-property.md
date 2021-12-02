@@ -6,7 +6,7 @@ title: FileOpenAttr.ShareTypes Property
 Specify concurrent access on the open file.
 
 ```cs
- Public ShareTypes ShareTypes { get; set; }
+ public ShareTypes ShareTypes { get; set; }
 ```
 
 ## Property Value

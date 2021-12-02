@@ -6,7 +6,7 @@ title: IAdgObject.RevokeAuthority Method
 **RevokeAuthority** removes a previously granted or denied user authorization to a database object.
 
 ```cs
- Public void IAdgObject RevokeAuthority(
+ public void IAdgObject RevokeAuthority(
    string userName
 [AuthorityTypes](authority-types-enumeration.html) authorityType
 );

@@ -6,7 +6,7 @@ title: IDataArea.ParmToObject(System.Type, string)
 Returns an object of a specific type from the program parameter list provided with the type of the object returned by the method and the name or path of the program parameter object in the parameter list.
 
 ```cs
- Public object ParmToObject(
+ public object ParmToObject(
    System.Type ReturnType,
    string ParameterName,
 );

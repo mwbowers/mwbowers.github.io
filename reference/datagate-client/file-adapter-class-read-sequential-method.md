@@ -6,7 +6,7 @@ title: FileAdapter.ReadSequential Method
 Read a single record from the file in sequential order.
 
 ```cs
- Public void ReadSequential(
+ public void ReadSequential(
    AdgDataSet ds,
    ReadSequentialMode mode,
    LockRequest lr

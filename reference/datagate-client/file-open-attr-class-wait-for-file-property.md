@@ -6,7 +6,7 @@ title: FileOpenAttr.WaitForFile Property
 Time, in seconds, that a process will wait to access a file.
 
 ```cs
- Public int WaitForFile { get; set; }
+ public int WaitForFile { get; set; }
 ```
 
 ## Property Value

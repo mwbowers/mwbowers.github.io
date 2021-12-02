@@ -6,7 +6,7 @@ title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type)
 Converts an object to a parameter list value provided with the parameter value and type.
 
 ```cs
- Public object ObjectToParm(
+ public object ObjectToParm(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter,
    object Value
 );

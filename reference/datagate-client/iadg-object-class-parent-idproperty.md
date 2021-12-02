@@ -6,7 +6,7 @@ title: IAdgObject.ParentID Property
 **ParentID** identifies a parent database object of the object represented by **IAdgObject** .
 
 ```cs
- Public int ParentID { get; }
+ public int ParentID { get; }
 ```
 
 ## Property Value

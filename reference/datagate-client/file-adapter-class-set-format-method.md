@@ -6,7 +6,7 @@ title: FileAdapter.SetFormat Method
 For multiformat read access, calling this method causes the read methods to fetch only those records with the given format.
 
 ```cs
- Public void SetFormat(
+ public void SetFormat(
    string Format
 );
 ```

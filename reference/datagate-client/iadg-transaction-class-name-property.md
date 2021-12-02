@@ -6,7 +6,7 @@ title: IAdgTransaction.Name Property
 The name of the transaction.
 
 ```cs
- Public virtual new string Name { get; }
+ public virtual new string Name { get; }
 ```
 
 ## Returns

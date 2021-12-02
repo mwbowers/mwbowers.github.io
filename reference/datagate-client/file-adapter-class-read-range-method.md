@@ -6,7 +6,7 @@ title: FileAdapter.ReadRange Method
 Read a database file record containing a key within a given range of values.
 
 ```cs
- Public void ReadRange(
+ public void ReadRange(
 [AdgDataSet](adg-dataset-class.html) ds,
 [RangeMode](range-mode-enumeration.html) mode,
 [LockRequest](lock-request-enumeration.html) lr,

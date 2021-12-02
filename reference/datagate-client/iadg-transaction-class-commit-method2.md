@@ -6,7 +6,7 @@ title: IAdgTransaction.Commit(string)
 Accept changes to the database that have been performed within the current transaction context.
 
 ```cs
- Public virtual void Commit(<br />   TransactionName string<br />);
+ public virtual void Commit(<br />   TransactionName string<br />);
 ```
 
 ## Parameter

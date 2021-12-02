@@ -6,7 +6,7 @@ title: IAdgObject.DateReferenced Property
 **DateReferenced** is a timestamp recorded by the database provider when the database object is referenced.
 
 ```cs
- Public System.DateTime DateReferenced { get; }
+ public System.DateTime DateReferenced { get; }
 ```
 
 Property Value <p> **System.DateTime** . Read only. If **IAdgObject** was obtained via [IDirectory.Enumerate](idirectory-class-enumerate-method.html), the time the object was most recently referenced. 

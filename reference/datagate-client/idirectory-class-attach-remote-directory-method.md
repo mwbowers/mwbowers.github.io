@@ -6,7 +6,7 @@ title: IDirectory.AttachRemoteDirectory Method
 **AttachRemoteDirectory** attaches a remote directory to an database library object.
 
 ```cs
- Public void IDirectory AttachRemoteDirectory(_<br />   string remotePathName <br />);
+ public void IDirectory AttachRemoteDirectory(_<br />   string remotePathName <br />);
 ```
 
 

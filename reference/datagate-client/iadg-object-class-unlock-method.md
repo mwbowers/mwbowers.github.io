@@ -6,7 +6,7 @@ title: IAdgObject.Unlock Method
 **Unlock** reverses the effects of a previously successful [Lock](iadg-object-class-lock-method.html) method call.
 
 ```cs
- Public void IAdgObject Unlock(<br />    [ShareTypes](share-types-enumeration.html) ShareType ,<br />);
+ public void IAdgObject Unlock(<br />    [ShareTypes](share-types-enumeration.html) ShareType ,<br />);
 ```
 
 ## Parameters

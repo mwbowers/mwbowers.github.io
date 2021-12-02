@@ -6,7 +6,7 @@ title: FileOpenAttr(string)
 Initialize the **FileOpenAttr** base class.
 
 ```cs
- Public FileOpenAttr();
+ public FileOpenAttr();
 ```
 
 ## Exceptions

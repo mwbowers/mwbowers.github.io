@@ -6,7 +6,7 @@ title: FileAdapter.SeekRange Method
 Moves the record pointer associated with the currently open file without reading records to within a range of key values. 
 
 ```cs
- Public void SeekRange(
+ public void SeekRange(
    RangeMode mode,
    AdgKeyTable firstKey,
    RangeFirst rangeFirst,

@@ -6,7 +6,7 @@ title: IDataArea.AppendParm Method
 Appends a parameter to the parameter list for the program.
 
 ```cs
- Public void AppendParm(
+ public void AppendParm(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
 );
 ```

@@ -6,7 +6,7 @@ title: IAdgTransaction.Connection Property
 The connection to the database representing the transaction context.
 
 ```cs
- Public virtual AdgConnection Connection { get; }
+ public virtual AdgConnection Connection { get; }
 ```
 
 ## Property Value

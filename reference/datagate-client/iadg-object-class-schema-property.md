@@ -6,7 +6,7 @@ title: IAdgObject.Schema Property
 **Schema** is the XML schema collection DG uses to validate XML document fragments describing **IAdgObject** instances and the database objects they represent.
 
 ```cs
- Public System.Xml.Schema.XmlSchemaCollection Schema { get }
+ public System.Xml.Schema.XmlSchemaCollection Schema { get }
 ```
 
 ## Property Value

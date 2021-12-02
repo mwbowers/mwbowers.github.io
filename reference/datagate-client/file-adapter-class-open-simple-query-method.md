@@ -6,7 +6,7 @@ title: FileAdapter.OpenSimpleQuery Method
 Open a database file for access using the specified query and the specified [AdgDataSet](adg-dataset-class.html).
 
 ```cs
- Public void OpenSimpleQuery(
+ public void OpenSimpleQuery(
    ref AdgDataSet Ds,
    string QueryFile,
    string Query,

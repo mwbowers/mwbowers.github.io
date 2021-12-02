@@ -6,7 +6,7 @@ title: FileAdapter.OpenNewAdgDataSet Method
 Opens a database file for access and returns a new [ AdgDataset](adg-dataset-class.html).
 
 ```cs
- Public void OpenNewAdgDataSet(
+ public void OpenNewAdgDataSet(
    AdgDataSet ds
 );
 ```

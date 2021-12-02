@@ -6,7 +6,7 @@ title: IAdgObject.Text Property
 **Text** is the textual description or comments associated with a database object.
 
 ```cs
- Public string Text { get; set; }
+ public string Text { get; set; }
 ```
 
 ## Property Value

@@ -6,7 +6,7 @@ title: FileAdapter.SeekKey Method
 Moves the record pointer associated with the currently open file without reading records to within a range of key values.
 
 ```cs
- Public void SeekKey(
+ public void SeekKey(
    SeekMode mode,
    AdgKeyTable keyTable
 );

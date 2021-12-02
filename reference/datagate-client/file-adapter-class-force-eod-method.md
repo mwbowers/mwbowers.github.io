@@ -6,7 +6,7 @@ title: FileAdapter.ForceEOD Method
 Synchronizes the state of the <span> **FileAdapter** </span> object with the open database file.
 
 ```cs
- Public void ForceEOD();
+ public void ForceEOD();
 ```
       <br />
 

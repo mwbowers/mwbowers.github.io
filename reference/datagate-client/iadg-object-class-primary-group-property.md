@@ -6,7 +6,7 @@ title: IAdgObject.PrimaryGroup Property
 **PrimaryGroup** is the primary group assigned to a database object.
 
 ```cs
- Public String PrimaryGroup { get; }
+ public String PrimaryGroup { get; }
 ```
 
 ## Property Value

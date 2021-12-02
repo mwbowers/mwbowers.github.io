@@ -6,7 +6,7 @@ title: FileAdapter.Open Method
 Open a database file for access with the specified [AdgDataSet](adg-dataset-class.html).
 
 ```cs
- Public void Open(
+ public void Open(
 [AdgDataSet](adg-dataset-class.html) ds
 );
 ```

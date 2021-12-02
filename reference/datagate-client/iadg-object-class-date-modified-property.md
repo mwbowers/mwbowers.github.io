@@ -6,7 +6,7 @@ title: IAdgObject.DateModified Property
 **DateModified** is a timestamp recorded by the database provider when the database object is modified.
 
 ```cs
- Public System.DateTime DateModified { get; }
+ public System.DateTime DateModified { get; }
 ```
 
 Property Value <p> **System.DateTime** . Read only. If **IAdgObject** was obtained via [IDirectory.Enumerate](idirectory-class-enumerate-method.html), the time the object was most recently modified. 

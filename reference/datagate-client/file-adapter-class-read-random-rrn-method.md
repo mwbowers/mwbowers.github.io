@@ -6,7 +6,7 @@ title: FileAdapter.ReadRandomRRN Method
 Read the database file record specified.
 
 ```cs
- Public void ReadRandomRRN(
+ public void ReadRandomRRN(
 [AdgDataSet](adg-dataset-class.html) ds,
 [ReadRandomMode](read-random-mode-enumeration.html) mode,
 [LockRequest](lock-request-enumeration.html) lr,

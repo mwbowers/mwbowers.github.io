@@ -6,7 +6,7 @@ title: IAdgObject.ReadBases Method
 **ReadBases** sets base object information for the **IAdgObject** by reading an XML document fragment.
 
 ```cs
- Public void ReadBases(
+ public void ReadBases(
    System.Xml.XmlReader reader
 );
 ```

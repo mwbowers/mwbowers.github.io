@@ -6,7 +6,7 @@ title: IDataArea.InitialValue Method
 Sets the InitialValue in the data area.
 
 ```cs
- Public string InitialValue { set }
+ public string InitialValue { set }
 ```
 
 ## Property Value

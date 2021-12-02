@@ -6,7 +6,7 @@ title: IAdgObject.ObjectID Property
 **ObjectID** identifies the object represented by **IAdgObject** .
 
 ```cs
- Public int ObjectID { get; }
+ public int ObjectID { get; }
 ```
 
 ## Property Value

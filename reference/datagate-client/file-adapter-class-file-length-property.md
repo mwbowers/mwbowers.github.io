@@ -6,7 +6,7 @@ title: FileAdapter.FileLength Property
 The number of deleted and non-deleted records in the open database file. 
 
 ```cs
- Public long FileLength { get; }
+ public long FileLength { get; }
 ```
 
 ## Property Value

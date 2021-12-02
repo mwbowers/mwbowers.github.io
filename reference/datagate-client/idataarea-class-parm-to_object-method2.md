@@ -6,7 +6,7 @@ title: IDataArea.ParmToObject(ASNA.DataGate.DataLink.ProgParm, System.Type, inte
 Returns an object of a specific type from the program parameter list provided with the program parameter object in the parameter list to get the value of, the type of the object returned by the method, and a zero-relative index identifying the element of the array to get the value of.
 
 ```cs
- Public object ParmToObject(
+ public object ParmToObject(
 [ASNA.DataGate.Client](DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a> Parameter,
    System.Type ReturnType,
    int Element

@@ -6,7 +6,7 @@ title: FileAdapter.RRN Property
 The relative record number of the member of the currently-opened file. 
 
 ```cs
- Public long RRN { get; }
+ public long RRN { get; }
 ```
 
 ## Property Value

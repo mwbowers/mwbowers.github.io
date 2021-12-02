@@ -6,7 +6,7 @@ title: FileAdapter.ReadSequentialEqual Method
 Read a database file record adjacent to the current position with a key equal to the key of the current record, or optionally, a key equal to the specified key.
 
 ```cs
- Public void ReadSequentialEqual(
+ public void ReadSequentialEqual(
    AdgDataSet ds,
    ReadEqualMode mode,
    LockRequest lr,

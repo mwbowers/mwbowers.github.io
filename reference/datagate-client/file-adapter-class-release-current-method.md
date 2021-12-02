@@ -6,7 +6,7 @@ title: FileAdapter.ReleaseCurrent Method
 Release the currently locked record.
 
 ```cs
- Public void ReleaseCurrent();
+ public void ReleaseCurrent();
 ```
       <br />
       <br />

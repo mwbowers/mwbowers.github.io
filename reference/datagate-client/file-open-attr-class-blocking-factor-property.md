@@ -6,7 +6,7 @@ title: FileOpenAttr.BlockingFactor Property
 Specify network blocking feature in the open file.
 
 ```cs
- Public int BlockingFactor { get; set; }
+ public int BlockingFactor { get; set; }
 ```
 
 ## Property Value

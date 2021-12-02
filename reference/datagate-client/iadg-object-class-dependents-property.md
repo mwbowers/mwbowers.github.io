@@ -6,7 +6,7 @@ title: IAdgObject.Dependents Property
 **Dependents** is an array of [Dependent](dependent-class.html) objects denoting the set of objects that depend upon the database object represented by **IAdgObject** .
 
 ```cs
- Public [Dependent](dependent-class.html)[] Dependents { get; }
+ public [Dependent](dependent-class.html)[] Dependents { get; }
 ```
 
 Property Value <p> [Dependent](dependent-class.html) array. Read-only. The **Length** of the array is equal to the number of dependent objects. 

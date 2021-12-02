@@ -6,7 +6,7 @@ title: FileAdapter.SeekRRN Method
 Moves the record pointer associated with the currently open file without reading records by RRN.
 
 ```cs
- Public void SeekRRN(
+ public void SeekRRN(
    SeekMode mode,
    Long RRN
 );

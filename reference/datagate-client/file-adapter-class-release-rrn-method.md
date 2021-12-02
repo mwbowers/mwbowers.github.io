@@ -6,7 +6,7 @@ title: FileAdapter.ReleaseRRN Method
 Release the specified record.
 
 ```cs
- Public void ReleaseRRN(
+ public void ReleaseRRN(
    LockRequest lr,
    long RRN
 );

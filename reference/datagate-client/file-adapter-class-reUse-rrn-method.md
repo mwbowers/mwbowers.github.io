@@ -6,7 +6,7 @@ title: FileAdapter.ReuseRRN Method
 Change the status of a deleted record to undeleted and update its contents. 
 
 ```cs
- Public void ReuseRRN(
+ public void ReuseRRN(
    AdgDataSet ds,
    long RRN
 );

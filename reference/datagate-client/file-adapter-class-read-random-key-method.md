@@ -6,7 +6,7 @@ title: FileAdapter.ReadRandomKey Method
 Read a database file record using the specified key.
 
 ```cs
- Public void ReadRandomKey(
+ public void ReadRandomKey(
 [AdgDataSet](adg-dataset-class.html) ds,
 [ReadRandomMode](read-random-mode-enumeration.html) mode,
 [LockRequest](lock-request-enumeration.html) lr,
