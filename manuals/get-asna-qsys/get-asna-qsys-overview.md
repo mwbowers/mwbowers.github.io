@@ -39,7 +39,7 @@ e.	Click **Generate new token** at the top of the page, below the header
 
 f.	Add a note to identify what the token is for (e.g. “Package Reader”)
 
-g.	Set the Expiration for the token. Note: For these, we recommend **No expiration** because Visual Studio does not have a user-friendly way of updating the tokens.
+g.	Set the Expiration for the token.
 
 h.	Check the box for **read:packages**
 ![GitHub Token Read Packages](images/github-token-read-packages.jpg)
@@ -65,7 +65,7 @@ f.	Click **OK**
 
 ### Set the Credentials for the Package Source.
 There are two mechanisms you can use to set the credentials for your package source:
-  1. Enter the credentials in the *NuGet.Config* file.
+  1. Enter the credentials in a *NuGet.Config* file.
   2. Let Windows manage the credentials
 
 #### Set Credentials in NuGet.Config
@@ -87,8 +87,8 @@ The *packageSources* should contain the name of the source you added in the step
   </packageSources>
   <packageSourceCredentials>
     <GitHub-AsnaQSys>
-  	  <add key="username" value="MyGitHubName" />
-	    <add key="cleartextpassword" value="MyGitHubToken" />
+      <add key="username" value="MyGitHubName" />
+      <add key="cleartextpassword" value="MyGitHubToken" />
     <GitHub-AsnaQSys>
   </packageSourceCredentials>
 ```
