@@ -10,7 +10,6 @@ This interface is used for the creation and manipulation of DataAreas.
 
 ---
 
-![Online" title="Online](images/online_icon.gif" class="OH_offlineIcon)
           <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System
           <span id="ID0EBEMAAAAA">&#160;</span>
           Object</a>

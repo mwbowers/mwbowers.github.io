@@ -195,9 +195,9 @@ Manuals:
       - sectiontitle: Introduction
         sectionpath: /manuals/datagate/programmers-guide/introduction-main.html
         section:
-        - title: ASNA DataGate Component Suite for Visual Studio .NET
+        - title: ASNA DataGate in Visual Studio
           path: /manuals/datagate/programmers-guide/datagate-component-suite-overview.html
-        - title: Accessing the DCS Assembly
+        - title: Accessing the DG Assembly
           path: /manuals/datagate/programmers-guide/accessing_the-dcs-assembly.html
       - sectiontitle: Connecting To/From a Database
         sectionpath: /manuals/datagate/programmers-guide/connectingtoa-database-main.html
@@ -225,7 +225,7 @@ Manuals:
           path: /manuals/datagate/programmers-guide/verifying-resultswith-exception-handling.html
         - title: Render-in-Process Options
           path: /manuals/datagate/programmers-guide/setting-renderas-proc.html
-      - sectiontitle: DCS for Visual Studio 2019 Tutorials
+      - sectiontitle: DG Tutorials
         sectionpath: /manuals/datagate/programmers-guide/tutorials-main.html
         section:
         - title: Calling Stored Procedures
