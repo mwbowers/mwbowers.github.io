@@ -10,11 +10,6 @@ Gets or sets the number of decimals in the data area.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property Decimals As Integer** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Decimals Access(*Public) Type(*Integer) 
-   BegGet;  BegSet** 
-      </pre>
 
 ## Property Value
 

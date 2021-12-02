@@ -8,14 +8,7 @@ title: Dependent.PathName Property
         <span class="lang">[C#]</span>
  **public string PathName{ get;}** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property PathName As String<br />** </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp PathName Access(*Public) Type(*String)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

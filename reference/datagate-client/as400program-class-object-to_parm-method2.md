@@ -12,21 +12,7 @@ Converts an object or value type to a parameter list value.
    int[] ElementIndices
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub ObjectToParm( _
-   ByVal Value As Object _
-   ByVal ParameterName As String _
-   ByVal ElementIndices() As Integer _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr ObjectToParm Acess(*Public)
-   DclSrParm Value Type(*Object)
-   DclSrParm ParameterName Type(*String)
-   DclSrParm ElementIndices Type(*Integer4) Rank(1)** 
-      </pre>
+
 
 ## Parameters
 

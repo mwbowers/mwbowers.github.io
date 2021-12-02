@@ -10,14 +10,7 @@ Runs the database program.
         <span class="lang">[C#]</span>
  **public void Execute();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Execute()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Execute Acess(*Public)** 
-      </pre>
+
 
 ## Exceptions
 
@@ -83,33 +76,7 @@ Upon successful return from **Execute** , the values of any "output" parameters 
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
      new int[]{}));              </pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Here, Prog is an initialized As400Program object,
-  ' and CustName, TimeOfDay, and Quit400App are valid
-  ' string, decimal, and char types respectively.
-  Dim Parms As ProgParm()
-  Parms = New ProgParm(){ _
-     New ProgParm(New ProgParmType("CustName", 0, FieldType.NewChar(40)), _
-     DataDirection.Output), _
-     New ProgParm(New ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), _
-     DataDirection.Output), _
-     New ProgParm(New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), _
-     DataDirection.Input) _
-  }
-  prog.AppendParms(Parms)
-  prog.ObjectToParm(Quit400App, "Quit400App", New Integer(){})
-  prog.Execute()
-  CustName = Convert.ToString( _
-     prog.ParmToObject(System.Type.GetType("System.String"), _
-     "TimeOfDay", _
-     New Integer(){}))
-  TimeOfDay = Convert.ToDecimal( _
-     prog.ParmToObject(System.Type.GetType("System.Decimal"), _
-     "TimeOfDay", _
-     New Integer(){}))
-</pre>
+
 <pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 

@@ -4,14 +4,7 @@ title: AdgConnection.op_InEquality Method
 ---
 
 Returns the opposite value returned by [op_Equality](adg-connectionclassop-equality-method.html).
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **AdgConnection.op_Inequality(x, y)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic]</span>
- **returnValue = AdgConnection.op_Inequality(x, y)** 
-      </pre>
+
 
 ## Parameters
 

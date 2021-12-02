@@ -10,15 +10,7 @@ title: IFileObject.GetAdgDataSet Method
 [DataSetOptions](dataset-options-enumeration.html) opts
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub GetAdgDataSet(_
-   ByVal opts As [DataSetOptions](dataset-options-enumeration.html)<br /> ) As AdgDataSet** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc GetAdgDataSet Access(*Public) Type(AdgDataSet)<br />     DclSrParm opts Type([DataSetOptions](dataset-options-enumeration.html))** 
-      </pre>
+
 
 ## Parameters
 

@@ -8,14 +8,7 @@ The database server host machine name or address.
         <span class="lang">[C#]</span>
  **public string Server { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property Server As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Server Type(*String) Access(*Public)** 
-      </pre>
+
 
 ## Property Value
 

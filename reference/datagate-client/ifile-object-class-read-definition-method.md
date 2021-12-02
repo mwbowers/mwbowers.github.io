@@ -10,15 +10,7 @@ title: IFileObject.ReadDefinition Method
    System.Xml.XmlReader reader
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub ReadDefinition(_
-   ByVal reader As System.Xml.XmlReader<br /> ) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ReadDefinition Access(*Public) Type(Void)<br />   DclSrParm reader Type(System.Xml.XmlReader)** 
-      </pre>
+
 
 ## Parameters
 

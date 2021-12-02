@@ -10,19 +10,7 @@ The **NewMember** method creates a new instance of [IMember](imember-class.html)
    string PathName
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub NewMember(_ 
-   ByVal cn As [AdgConnection](adg-connection-class.html)_
-   ByVal PathName As string_      
- ) As IMember** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr NewMember Access(*Public) Type(IMember)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
-   DclSrParm PathName Type(*string)** 
-      </pre>
+
 
 ## Parameters
 

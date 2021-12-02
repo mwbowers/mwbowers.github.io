@@ -12,14 +12,7 @@ Saves the contents of the **SourceProfile** object to the system registry as a d
         <span class="lang">[C#]</span>
  **public void Register();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Register()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSub Register Access(*Public)** 
-      </pre>
+
 
 ## Exceptions
 

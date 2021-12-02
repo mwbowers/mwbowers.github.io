@@ -8,15 +8,7 @@ The **DataRow** object currently established as the active row.
         <span class="lang">[C#]</span>
  **public  ActiveRow{ get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property ActiveRow() As** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp ActiveRow Access(*Public) Type()
-   BegGet** 
-      </pre>
+
 
 ## Property
  Value

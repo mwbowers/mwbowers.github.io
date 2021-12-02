@@ -10,11 +10,6 @@ title: IAdgObject.ParentID Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property ParentID As Integer** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp ParentID Access(*Public) Type(*Integer)
-   BegGet** 
-      </pre>
 
 ## Property Value
 

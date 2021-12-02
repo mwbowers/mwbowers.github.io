@@ -8,14 +8,7 @@ Initialize an instance of **AdgDataSet** .
         <span class="lang">[C#]</span>
  **public abstract void Initialize();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public MustOverride Sub Initialize()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Initialize Access(*Public) Modifier(*MustOverride)** 
-      </pre>
+
 
 ## Remarks
 

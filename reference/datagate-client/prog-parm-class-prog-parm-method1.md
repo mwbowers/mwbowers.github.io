@@ -7,14 +7,7 @@ Construct a representation of a simple iSeries program parameter.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public ProgParm(<br />   ProgParmType ppt,<br />   DataDirection dir<br />)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Sub New( _<br />   ByVal ppt As [ProgParmType](prog-parm-type-class.html) _<br />   ByVal dir As [DataDirection](data-direction-enumeration.html)<br />)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)<br />   DclSrParm ppt Type(ProgParmType)<br />   DclSrParm dir Type(DataDirection)** 
-      </pre>
+
 
 ## Parameters
 

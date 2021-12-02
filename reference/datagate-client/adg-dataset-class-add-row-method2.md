@@ -10,17 +10,7 @@ Add a prepared row to the table for a particular format.
    string strFormat
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub AddRow(
-   ByVal strFormat As String
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr AddRow Access(*Public)
-   DclSrParm strFormat Type(*string) Len(45)** 
-      </pre>
+
 
 ## Parameters
 

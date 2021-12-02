@@ -11,19 +11,7 @@ Converts an object or value type to a parameter list value.
    object Value
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub ObjectToParm( _
-   ByVal Parameter As ProgParm _
-   ByVal Value As Object _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr ObjectToParm Acess(*Public)
-   DclSrParm Parameter Type(ProgParm)
-   DclSrParm Value Type(*Object)** 
-      </pre>
+
 
 ## Parameters
 

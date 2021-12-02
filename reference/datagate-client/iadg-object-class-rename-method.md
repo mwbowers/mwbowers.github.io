@@ -10,11 +10,6 @@ The **Rename** method renames an object without changing its location in the dat
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Rename(_<br />   ByVal NewName As string<br />) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Rename Access(*Public) Type(IAdgObject)
-   DclSrParm NewName Type(*string) Len(45)** 
-      </pre>
 
 ## Parameters
 

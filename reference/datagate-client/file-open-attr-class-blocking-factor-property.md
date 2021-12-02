@@ -84,58 +84,7 @@ Two special values are recognized for the **BlockingFactor** property. **Optimal
   }
   dbFile.Close();
   db.Close()</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
 
-  Dim refreshInterval As Integer = 10 'Used so we don't slow down refreshing too much...
-  dbFile.OpenAttributes.BlockingFactor = refreshInterval
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' Here, we read every record until end of file is reached.
-  ' Because this is an fairly long process, we set up a progress bar
-  ' to keep the user from being discouraged. We set its Maximum
-  ' value to the number of records in the file, which is found
-  ' using FileAdapter's RecordCount property, divided by
-  ' our refreshInterval. 
-  Dim recordsReadSinceLastRefresh As Integer = 0
-  prgBar.Minimum = 0
-  prgBar.Maximum = Convert.ToInt32(dbFile.RecordCount) / refreshInterval
-
-  Dim EOF As Boolean = False
-  While Not EOF
-      Try
-          ' Though it seems like we have to read each record one at a time,
-          ' in reality DG stores the first 10 records the first time we read
-          ' and then afterwards we simply read from the cache. When those run out, 
-          ' DG will automatically grab another ten records from the database.
-          ' Note that 10 is our refresh interval, meaning that this I/O operation
-          ' occurs at the same time that we update our progress bar. If the blocking
-          ' factor was higher than our refresh interval, not only would we have to 
-          ' wait longer to read the first record but the progress bar would go longer
-          ' without being updated. 
-          dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.NoWait)
-          ' PerForm some action on each record here... 
-          recordsReadSinceLastRefresh = recordsReadSinceLastRefresh + 1
-          If recordsReadSinceLastRefresh = refreshInterval Then
-              recordsReadSinceLastRefresh = 0
-              prgBar.PerFormStep()
-              Me.Refresh() 'Refreshes the Form.
-          End If
-      Catch dgEx As dgException
-          If dgEx.Error = dgErrorNumber.dgEaEOF Then
-              EOF = True
-          Else
-              'Exit procedure or end application here.
-          End If
-      End Try
-  End While
-  dbFile.Close()
-  db.Close()Requirements</pre>
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 
 

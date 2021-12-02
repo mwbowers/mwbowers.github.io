@@ -8,14 +8,7 @@ Options for restricting access to open files.<span style="MARGIN-BOTTOM: 0.8em" 
         <span class="lang">[C#]</span>
  **public enum AccessMode;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Enum AccessMode** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum AccessMode Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

@@ -8,14 +8,7 @@ The **Quality** property specifies the quality rating for output produced by the
         <span class="lang">[C#]</span>
  **public System.Drawing.Printing.PrinterResolutionKind Quality { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Property Quality As System.Drawing.Printing.PrinterResolutionKind** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Quality Type(System.Drawing.Print.PrinterResolutionKind) Access(*Public) <br />      BegGet,    BegSet** 
-      </pre>
+
 
 ## Property Value
 

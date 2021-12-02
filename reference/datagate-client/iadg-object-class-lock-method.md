@@ -18,13 +18,6 @@ title: IAdgObject.Lock Method
    ByVal WaitTime As short
 ) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Lock Access(*Public) Type (IAdgObject)
-   DclSrParm ShareType Type([ShareTypes](share-types-enumeration.html))
-   DclSrParm WaitOption Type([WaitOptions](wait-options-enumeration.html))
-   DclSrParm WaitTime Type(short)** 
-      </pre>
 
 ## Parameters
 

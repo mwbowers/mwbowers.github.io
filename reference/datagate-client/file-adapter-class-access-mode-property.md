@@ -10,11 +10,6 @@ The declared mode of access enforced by the database when the file is open.
 <pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
  **Public Property AccessMode As [AccessMode](access-mode-enumeration.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp AccessMode Type([AccessMode](access-mode-enumeration.html))
-   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 
@@ -54,31 +49,7 @@ The valid values are defined by the **ASNA.DataGate.Common AccessMode** enumerat
   dbFile.Close();
   dbFile.Connection.Close();</pre>
   
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim dbFile As New FileAdapter
-  dbFile.Connection = New AdgConnection("*Public/DG NET Local")
-  dbFile.FileName = "*Libl/CMASTNEWL1"
-  dbFile.MemberName = "CMMASTERL1"
 
-  ' Open a file for reading and deleting- this allows us to delete a record by its key value. 
-  dbFile.AccessMode = AccessMode.Read Or AccessMode.Delete
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' We retrieve the record for customer number 82900 and delete it! 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-  keyTbl.Row.Item("CMCustNo") = 82900
-  Try
-      dbFile.DeleteKey(keyTbl)
-  Catch dgEx As dgException
-      If (dgEx.Error = dgErrorNumber.dgEaNOTFND) Then
-          MsgBox("Record not found. ")
-      End If
-  End Try
-  dbFile.Close()
-  dbFile.Connection.Close()</pre>
 
 ## Requirements
 

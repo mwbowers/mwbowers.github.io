@@ -8,14 +8,7 @@ title: ShareTypes Enumeration
         <span class="lang">[C#]</span>
  **public enum ShareTypes;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Enum ShareTypes** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum ShareTypes Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

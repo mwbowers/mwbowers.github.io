@@ -51,33 +51,7 @@ DG sets the **Error** field to identify the condition giving rise to the dgExcep
 
   dbFile.Close();
   db.Close();</pre>
-<pre class="prettyprint">        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMMASTERL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
 
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      ' There are many reasons why opening a file can fail. Here, we
-      ' catch some of the more general ones. 
-      If (dgEx.Error = dgErrorNumber.dgEmMNOTFND) Then
-         MsgBox("Member " &amp; dbFile.MemberName &amp; " not found.", MsgBoxStyle.Critical, "Error opening file")
-      ElseIf (dgEx.Error = dgErrorNumber.dgEmFNOTFND) Then
-         MsgBox("File " &amp; dbFile.FileName &amp; " not found.", MsgBoxStyle.Critical, "Error opening file")
-      Else
-         MsgBox(dgEx.Message, MsgBoxStyle.Critical, "Error opening file")
-         'Exit procedure here.
-      End If
-  End Try
-  ' Do some action here. 
-
-  dbFile.Close()
-  db.Close()
-</pre>
 
 ## Requirements
 

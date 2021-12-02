@@ -8,15 +8,7 @@ title: IFileObject.MemberCount Property
         <span class="lang">[C#]</span>
  **public int MemberCount { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property MemberCount As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp MemberCount Access(*Public) Type(*Integer) Len(4)
-   BegGet** 
-      </pre>
+
 
 Property Value <p> **System.Int32** . Read-only. A non-negative value reflecting the number of database member objects contained by the file. 
 ## Exceptions

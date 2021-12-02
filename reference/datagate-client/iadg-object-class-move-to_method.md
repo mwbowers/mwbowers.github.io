@@ -10,11 +10,6 @@ title: IAdgObject.MoveTo Method
 <pre>        <span class="lang">[Visual Basic]</span>
  **Public Sub MoveTo(_<br />   ByVal LibraryPath As string<br />) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr MoveTo Access(*Public) Type(IAdgObject
-   DclSrParm LibraryPath Type(*string) Len(45)** 
-      </pre>
 
 ## Parameters
 

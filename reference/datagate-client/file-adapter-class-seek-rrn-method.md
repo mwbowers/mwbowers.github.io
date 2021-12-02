@@ -16,12 +16,6 @@ Moves the record pointer associated with the currently open file without reading
    ByVal RRN As Long _
 )** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr SeekRRN Access(*Public)
-   DclSrParm mode Type(SeekMode)
-   DclSrParm RRN Type(*Integer) Len(8)** 
-      </pre>
 <pre />
 
 ## Parameters

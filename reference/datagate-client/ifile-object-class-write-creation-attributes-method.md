@@ -10,15 +10,7 @@ title: IFileObject.WriteCreationAttributes Method
    System.Xml.XmlWriter writer
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub WriteCreationAttributes(_
-   ByVal writer As System.Xml.XmlWriter<br /> ) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc WriteCreationAttributes Access(*Public) Type(Void)<br />   DclSrParm writer Type(System.Xml.XmlWriter)** 
-      </pre>
+
 
 ## Parameters
 

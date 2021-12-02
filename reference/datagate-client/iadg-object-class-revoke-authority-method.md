@@ -14,12 +14,6 @@ title: IAdgObject.RevokeAuthority Method
  **Public Sub RevokeAuthority( _
    ByVal userName As string _<br />   ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)**  **) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr RevokeAuthority Access(*Public) Type(IAdgObject)** 
- **DclSrParm userName Type (*string)
-   DclSrParm authorityType Type([AuthorityTypes](authority-types-enumeration.html))** 
-      </pre>
 
 ## Parameters
 

@@ -10,15 +10,7 @@ title: IFileObject.RepairFile Method
 [AdgObserver](adg-observer-delegate.html) observer
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub RepairFile(_
-   ByVal repairOptions As [RepairOptions](repair-options-enumeration.html)_<br />   ByVal observer As [AdgObserver](adg-observer-delegate.html)<br /> ) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc RepairFile Access(*Public) Type(Void)<br />   DclSrParm repairOptions Type([RepairOptions](repair-options-enumeration.html))<br />   DclSrParm observer Type([AdgObserver](adg-observer-delegate.html))** 
-      </pre>
+
 
 ## Parameters
 

@@ -11,19 +11,7 @@ Moves the record pointer associated with the currently open file without reading
    AdgKeyTable keyTable
 );** 
       </pre>
-<pre>
-        <span class="lang">[Visual Basic] </span>
- **public Sub SeekKey( _
-   ByVal mode As [SeekMode](seek-mode-enumeration.html) _
-   ByVal keyTable As [AdgKeyTable](adg-key-table-class.html)
-.)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr SeekKey Access(*Public)
-   DclSrParm mode Type(SeekMode)
-   DclSrParm keyTable Type(AdgKeyTable)** 
-      </pre>
+
 
 ## Parameters
 

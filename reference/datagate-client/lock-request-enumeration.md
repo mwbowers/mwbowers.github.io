@@ -8,14 +8,7 @@ Options for record locking in [FileAdapter](file-adapter-class.html) access meth
         <span class="lang">[C#]</span>
  **public enum LockRequest;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum LockRequest** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum LockRequest Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

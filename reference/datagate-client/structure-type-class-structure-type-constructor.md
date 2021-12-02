@@ -7,13 +7,7 @@ Define the data types of a structured iSeries program parameter.
 <pre class="prettyprint">
         <span class="lang">[C#]</span>
  **public StructureType(<br />   string name,<br />   int cElems,<br />   object[] mbrs<br />)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _<br />   ByVal name As String _<br />   ByVal cElems As Integer _<br />   ByVal mbrs As Object() _<br />)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)<br />   DclSrParm name Type(*String)<br />   DclSrParm cElems Type(*Integer) Len(4)<br />   DclSrParm mbrs Type(*Object) Rank(1)** 
-      </pre>
+
 
 ## Parameters
 

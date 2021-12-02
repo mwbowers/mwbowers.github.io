@@ -8,14 +8,7 @@ Defines modes of operation for the [ FileAdapter.ReadSequential](file-adapter-cl
         <span class="lang">[C#]</span>
  **public enum ReadSequentialMode;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum ReadSequentialMode** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum ReadSequentialMode Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

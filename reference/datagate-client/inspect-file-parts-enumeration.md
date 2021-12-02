@@ -8,14 +8,7 @@ title: InspectFileParts Enumeration
         <span class="lang">[C#]</span>
  **public enum InspectFileParts;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum InspectFileParts** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum InspectFileParts Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

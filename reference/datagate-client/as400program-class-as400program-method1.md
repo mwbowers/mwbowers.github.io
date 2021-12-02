@@ -10,10 +10,6 @@ The default constructor creates an instance of the **As400Program** object.
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub New()** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Acess(*Public)** 
-      </pre>
 
 ## Remarks
 

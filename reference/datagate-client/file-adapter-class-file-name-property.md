@@ -10,11 +10,6 @@ The path name of the database file, excluding the member name (see [ MemberName 
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property FileName As String** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp FileName Type(*String) Access(*Public)
-   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 
@@ -50,31 +45,7 @@ String. Returns or sets the path name of the database file.
       cbFmtNames.Items.Add(myDS.GetFormatName(i));
   }
 </pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' In this simple routine we wish to write the format names 
-  ' of a file to a combo box using the FileAdapter "dbFile" 
-  ' and its accompanying AdgDataSet "myDS", which may or 
-  ' may not have been initialized and opened elsewhere. 
-  If dbFile Is Nothing Then
-      MsgBox("Error- FileAdapter not initialized.")
-      Return
-  End If
-  If (dbFile.Status &lt;&gt; FileAdapter.AdapterStatus.Open) Then
-      MsgBox("Error- " + dbFile.FileName + " not open.")
-      Return
-  End If
-  If myDS Is Nothing Then
-      MsgBox("DataSet not initialized!")
-      Return
-  End If
 
-  For i As Integer = 0 To myDS.Formats - 1
-      ' List the format names in the combo box "cbFmtNames". 
-      cbFmtNames.Items.Add(myDS.GetFormatName(i))
-  Next i
-</pre>
 
 ## Requirements
 

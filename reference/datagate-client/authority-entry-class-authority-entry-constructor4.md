@@ -12,18 +12,7 @@ title: AuthorityEntry(string, AuthorityTypes, boolean)
    bool isGroupAccount
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub AuthorityEntry ( _
-   ByVal username As string _<br />   ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)
-   ByVal isGroupAccount As boolean** 
-   )</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor AuthorityEntry Access(*Public)
-   DclSrParm username Type (*string)
-   DclSrParm authorityType Type([AuthorityTypes](authority-types-enumeration.html))<br />   DclSrParm isGroupAccount Type(*boolean)** 
-      </pre>
+
 
 ## Parameters
 

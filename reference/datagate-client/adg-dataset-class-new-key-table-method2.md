@@ -12,17 +12,7 @@ Create a key buffer for keyed access operations for the specified format index.
    integer iFormat
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function NewKeyTable(
-    ByVal iFormat As Integer
-) As [AdgKeyTable](adg-key-table-class.html)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewKeyTable Access(*Public) Type([AdgKeyTable](adg-key-table-class.html))
-   DclSrParm iFormat Type(*Integer)** 
-      </pre>
+
 
 ## Parameters
 

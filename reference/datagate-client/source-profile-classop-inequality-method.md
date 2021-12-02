@@ -4,18 +4,7 @@ title: SourceProfile.op_InEquality Method
 ---
 
 Returns the opposite value returned by op_Equality.
-<pre class="prettyprint">
-        <span>[Visual RPG]</span>
-        <span>
-SourceProfile.op_Inequality</span>
-        <span>(x, y)</span>
-        <span>  </span>
-      </pre>
-<pre class="prettyprint">
-        <span>[Visual Basic]
-returnValue = SourceProfile.op_Inequality</span>
-        <span>(x, y)</span>
-      </pre>
+
 
 ## Parameters
 

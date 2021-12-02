@@ -10,10 +10,6 @@ The set of binary format identifiers associated with the set of formats availabl
 <pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
  **Public Property FormatIDs As Byte()()** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp FormatIDs Type(*Byte) Rank(2) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 

@@ -18,13 +18,6 @@ Converts an object to a parameter list value provided with the parameter value, 
    ByVal Element As Integer
 ) As Object** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ObjectToParm Access(*Public) Type(Object)
-   DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))
-   DclSrParm Value Type(Object)
-   DclSrParm Element Type(*Integer)** 
-      </pre>
 
 ## Parameters
 

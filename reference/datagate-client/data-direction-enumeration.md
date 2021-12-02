@@ -8,14 +8,7 @@ Specifies the type of a program parameter.
         <span class="lang">[C#]</span>
  **public enum DataDirection;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Enum DataDirection** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum DataDirection Access(*Public)** 
-      </pre>
+
 
 ## Members
 

@@ -8,15 +8,7 @@ title: ILibraryList.EnumerateCurrentSystem Method
         <span class="lang">[C#]</span>
  **public void EnumerateCurrentSystem(_<br />[AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Function EnumerateCurrentSystem(<br />   ByVal enumerator As [AdgEnumerator](adg-enumerator-delegate.html)<br /><br />) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr EnumerateCurrentSystem Access(*Public) Type(Void)<br /><br /><br />DclSrParm enumerator Type([AdgEnumerator](adg-enumerator-delegate.html))<br />** 
 
- </pre>
 
 ## Parameters
 

@@ -10,17 +10,7 @@ title: AuthorityEntry(string)
    string username
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub AuthorityEntry( _
-   ByVal username As String
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor AuthorityEntry Access(*Public)
-   DclSrParm username Type(*String)** 
-      </pre>
+
 
 ## Parameters
 

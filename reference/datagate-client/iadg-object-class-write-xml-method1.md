@@ -13,9 +13,6 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
 <pre> **<span class="lang">[Visual Basic] </span>
  Public Sub WriteXml(_<br />   ByVal writer As System.Xml.XmlWriter_<br />   ByVal options As [XmlOptions](xml-options-enumeration.html)<br /> ) As IAdgObject**     </pre>
 
-<pre class="prettyprint">
- **<span class="lang">[Visual RPG]</span>
- BegSr WriteXml Access(*Public) Type(IAdgObject)<br />   DclSrParm writer Type(System.Xml.XmlWriter)<br />   DclSrParm options Type([XmlOptions](xml-options-enumeration.html))**   </pre>
 
 ## Parameters
 

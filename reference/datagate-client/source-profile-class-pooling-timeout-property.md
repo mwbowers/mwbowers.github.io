@@ -8,14 +8,7 @@ The amount of time (in minutes) in which a connection will remain idle in the po
         <span class="lang">[C#]</span>
  **public byte PoolingTimeout { get; set; )** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property PoolingTimeout As Byte** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp PoolingTimeout Type(*Byte) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
+
 
 ## Property
  Value

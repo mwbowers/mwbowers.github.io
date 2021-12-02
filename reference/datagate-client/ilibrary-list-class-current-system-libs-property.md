@@ -8,15 +8,7 @@ title: ILibraryList.CurrentSystemLibs Property
         <span class="lang">[C#]</span>
  **protected string[] CurrentSystemLibs { get;}** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Protected Property CurrentSystemLibs As String()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp CurrentSystemLibs Type(*string) Access(*Protected) Rank(1)
-     BegGet;** 
-      </pre>
+
 
 ## Return Value
 

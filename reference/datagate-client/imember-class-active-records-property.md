@@ -8,15 +8,7 @@ The number of active records in the database file member object represented by *
         <span class="lang">[C#]</span>
  **public long ActiveRecord { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public ReadOnly Property ActiveRecord As Long** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp ActiveRecord Type(*long) Len(8) Access(*Public)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

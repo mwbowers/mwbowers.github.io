@@ -10,10 +10,6 @@ The <span> **AdgObjectTypes** </span> enumerated constant defines values for the
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Enum AdgObjectTypes** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum AdgObjectTypes Access(*Public)** 
-      </pre>
 
 ## Remarks
 

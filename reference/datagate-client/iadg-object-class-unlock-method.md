@@ -10,11 +10,6 @@ title: IAdgObject.Unlock Method
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Unlock(_<br />   ByVal ShareType As [ShareTypes](share-types-enumeration.html) _<br />) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Unlock Access(*Public) Type (IAdgObject)
-   DclSrParm ShareType Type([ShareTypes](share-types-enumeration.html))** 
-      </pre>
 
 ## Parameters
 

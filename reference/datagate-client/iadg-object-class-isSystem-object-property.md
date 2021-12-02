@@ -10,11 +10,6 @@ title: IAdgObject.IsSystemObject Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property IsSystemObject As boolean** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp IsSystemObject Access(*Public) Type(*Boolean)
-   BegGet** 
-      </pre>
 
 Property Value <p> **Boolean** . ReadOnly. **True** if the database provider designates the object as a system object. 
 ## Exceptions

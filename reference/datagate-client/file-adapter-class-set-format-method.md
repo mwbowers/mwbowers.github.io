@@ -14,11 +14,6 @@ For multiformat read access, calling this method causes the read methods to fetc
    ByVal Format As String _
 )** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr SetFormat Access(*Public)
-   DclSrParm Format Type(*String)** 
-      </pre>
 
 ## Parameters
 
@@ -142,90 +137,7 @@ The default behavior of **FileAdapter** is to read all formats. Use this method 
 
   dbFile.Close();
   db.Close();</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  'Read only records from format one.
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/SalesMem", "SalesMem")
-  dbFile.AccessMode = AccessMode.Read Or AccessMode.Write
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
 
-  ' Add a record to format 0, "RCustMast".
-  ' Get new customer number to avoid adding a duplicate key.
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Last, LockRequest.Read)
-  Dim newCustNo As Decimal
-  newCustNo = Convert.ToDecimal(myDS.ActiveRow.Item("CMCustNo")) + 100
-
-  Dim newRecord As DataRow = myDS.PrepareRow("RCustMast")
-  ' Create a customer record.
-
-  newRecord.Item("CMCustNo") = newCustNo
-  newRecord.Item("CMName") = "Amalgamated Software of North America"
-  newRecord.Item("CMAddr1") = "9901 IH-10 West, Suite 1000"
-  newRecord.Item("CMCity") = "San Antonio"
-  newRecord.Item("CMState") = "TX"
-  newRecord.Item("CMCntry") = "US"
-  newRecord.Item("CMPostCode") = "78230"
-  newRecord.Item("CMActive") = "1"
-  newRecord.Item("CMPhone") = "2104080212"
-
-  myDS.AddPreparedRowAndSetActive(0)
-  dbFile.SetFormat("RCustMast")
-  Try
-      dbFile.AddRecord(myDS)
-  Catch dgEx As dgException
-      If (dgEx.Error &lt;&gt; dgErrorNumber.dgEaDUPKEY) Then
-          Throw dgEx ' If the 
-            exception wasn't thrown due to a duplicate key, throw it again.
-      End If
-      MsgBox("Key value """ + 
-            newRecord.Item("CMName").ToString() &amp; _
-          """ already in this 
-            file.")
-      dbFile.Close()
-      db.Clone()
-      'Exit procedure or take other action here to 
-            avoid adding next record.
-  End Try
-  ' Now add a record to format 1, "RSalesMast".
-  Dim newRecord2 As DataRow = myDS.PrepareRow("RSalesMast")
-
-  ' Create a record of sales for 2004.
-  newRecord2.Item("CSCustNo") = newRecord.Item("CMCustNo")
-  newRecord2.Item("CSYear") = 2004
-  newRecord2.Item("CSType") = 1
-  newRecord2.Item("CSSales01") = 100
-  newRecord2.Item("CSSales02") = 200
-  newRecord2.Item("CSSales03") = 300
-  newRecord2.Item("CSSales04") = 400
-  newRecord2.Item("CSSales05") = 500
-  newRecord2.Item("CSSales06") = 600
-  newRecord2.Item("CSSales07") = 500
-  newRecord2.Item("CSSales08") = 400
-  newRecord2.Item("CSSales09") = 200
-  newRecord2.Item("CSSales10") = 100
-  newRecord2.Item("CSSales11") = 1
-  newRecord2.Item("CSSales12") = 0
-
-  myDS.AddPreparedRowAndSetActive(1)
-  dbFile.SetFormat("RSalesMast")
-  Try
-      dbFile.AddRecord(myDS)
-  Catch dgEx As dgException
-      If (dgEx.Error &lt;&gt; dgErrorNumber.dgEaDUPKEY) Then
-          Throw dgEx ' If the 
-            exception wasn't thrown due to a duplicate key, throw it again.
-      End If
-      MsgBox("Key " &amp; newRecord.Item("CSName").ToString() 
-            &amp; _
-          " already in this file.", 
-            MsgBoxStyle.OKOnly, "Error")
-  End Try
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

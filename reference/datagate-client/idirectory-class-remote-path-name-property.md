@@ -8,15 +8,7 @@ title: IDirectory.RemotePathName Property
         <span class="lang">[C#]</span>
  **public string RemotePathName{ get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property RemotePathName As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp RemotePathName Access(*Public)Type (IDirectory)<br />       DclSrParm remotePathName Type(*String) Len(45)
-    BegGet** 
-      </pre>
+
 
 Property Value <p> **String** . Returns the full path of a directory associated with the library, or an empty string. 
 ## Remarks

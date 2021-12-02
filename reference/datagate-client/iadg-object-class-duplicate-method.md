@@ -10,10 +10,6 @@ title: IAdgObject.Duplicate Method
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Function Duplicate(_<br />     ByVal ScopePath As string_<br />     ByVal TargetPath As string_<br />     ByVal NewName As string_<br />     ByVal options As [DuplicateOptions](duplicate-options-enumeration.html)<br />) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc Duplicate Access(*Public) Type(IAdgObject)<br />   DclSrParm ScopePath Type(*string)<br />   DclSrParm TargetPath Type (*string)<br />   DclSrParm NewName Type(*string)<br />   DclSrParm options Type([DuplicateOptions](duplicate-options-enumeration.html))** 
-      </pre>
 
 ## Parameters
 

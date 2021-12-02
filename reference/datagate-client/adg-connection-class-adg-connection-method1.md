@@ -10,17 +10,7 @@ Constructs an [AdgConnection](adg-connection-class.html) instance from the initi
 [SourceProfile](source-profile-class.html) sp
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal sp As [SourceProfile](source-profile-class.html)
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-      DclSrParm sp Type([SourceProfile](source-profile-class.html))** 
-      </pre>
+
       <br />
 
 ## Parameters

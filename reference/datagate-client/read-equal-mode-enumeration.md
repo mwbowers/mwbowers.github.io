@@ -8,14 +8,7 @@ Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapt
         <span class="lang">[C#]</span>
  **public enum RangeEqualMode;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum RangeEqualMode** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum RangeEqualMode Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

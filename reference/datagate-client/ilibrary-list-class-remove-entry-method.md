@@ -9,16 +9,7 @@ title: ILibraryList.RemoveEntry Method
  **public void RemoveEntry(_
    string path<br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Function RemoveEntry(
-   ByVal path As string<br />) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr RemoveEntry Access(*Public) Type(Void)
-   DclSrParm path Type(*string)** 
-      </pre>
+
 
 ## Parameters
 

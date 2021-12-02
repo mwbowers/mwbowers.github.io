@@ -10,10 +10,6 @@ Provider-dependent text information association with the dgException.
 <pre><span class="lang">[Visual Basic] </span>
  **Public Property Text As String** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **DclFld Name(Text) Type(*String) Access(*Public)** 
-      </pre>
 
 ## Field Value
 

@@ -8,10 +8,6 @@ The maximum number of digits to the right of the decimal point (for decimal fiel
  **public int Scale { get; }**  </pre>
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Scale**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Scale Type(*Integer) Len(4) Access(*Public)<br />   BegGet** 
-      </pre>
 
 ## Property Value
 

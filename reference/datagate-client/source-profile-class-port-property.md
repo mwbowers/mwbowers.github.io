@@ -8,14 +8,7 @@ The TCP port number used by the database server for TCP/IP-based transport (defa
         <span class="lang">[C#]</span>
  **public int Port { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property Port As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Port Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
+
 
 ## Property Value
 

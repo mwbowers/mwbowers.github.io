@@ -19,30 +19,8 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 );** 
 </pre>
 
-<pre class="prettyprint">
- **<span class="lang">[Visual Basic] </span>
- Public Sub ReadXml( _
-   ByVal cn As [AdgConnection](adg-connection-class.html) _
-   ByVal containerPath As string _
-   ByVal docObjectType As [AdgObjectTypes](adg-object-types-enumeration.html) _
-   ByVal docObjectNewName As string _
-   ByVal reader As System.Xml.XmlReader _
-   ByVal options As [XmlOptions](xml-options-enumeration.html) _
-   ByVal observer As [XmlInfoEventHandler](xml-info-event-handler-delegate.html)
- ) As IAdgObject** 
-      </pre>
 
-<pre class="prettyprint">
- **<span class="lang">[Visual RPG]</span>
-BegFunc ReadXml Access(*Public) Type(IAdgObject)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
-   DclSrParm containerPath Type(*string)
-   DclSrParm docObjectType Type([AdgObjectTypes](adg-object-types-enumeration.html))
-   DclSrParm soxObjectNewName Type(*string)
-   DclSrParm reader Type(System.Xml.XmlReader)
-   DclSrParm options Type([XmlOptions](xml-options-enumeration.html)
-   DclSrParm observer Type [(XmlInfoEventHandler](xml-info-event-handler-delegate.html))** 
-      </pre>
+
 
 ## Parameters
 

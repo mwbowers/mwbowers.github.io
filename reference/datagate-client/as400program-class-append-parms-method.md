@@ -14,11 +14,6 @@ Appends an array of parameters to the parameter list for the program.
    ByVal Parameters() As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
 )** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr AppendParms Acess(*Public)
-   DclSrParm Parameters Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)) Rank(1)** 
-      </pre>
 
 ## Parameters
 

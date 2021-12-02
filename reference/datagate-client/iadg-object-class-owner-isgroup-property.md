@@ -10,11 +10,6 @@ title: IAdgObject.OwnerIsGroup Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property OwnerIsGroup As boolean** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp OwnerIsGroup Access(*Public) Type(*boolean) Len(45)
-   BegGet** 
-      </pre>
 
 Property Value <p> **Boolean** . ReadOnly. **True** if [ Owner](iadg-object-class-owner-property.html) names a group profile, otherwise **False** . 
 ## Exceptions

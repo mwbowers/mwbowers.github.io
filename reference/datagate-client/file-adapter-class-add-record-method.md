@@ -14,11 +14,6 @@ Adds a record to a file.
    ByVal ds As [AdgDataSet](adg-dataset-class.html) _
 )** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr AddRecord Access(*Public)
-   DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
-      </pre>
 
 ## Parameters
 
@@ -93,46 +88,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
         + dgEx.Message, "Error!");
      //Exit procedure or end application here.
   }</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.RWCD
 
-  Dim myDS As AdgDataSet
-  myDS = Nothing
-  Try
-     db.Open()
-     dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-     MessageBox.Show("Error opening file! " + dgEx.Message, 
-            "Error")
-     'Exit procedure or end application here.
-  End Try
-
-  Dim newRow As DataRow
-  newRow = myDS.PrepareRow(0)
-  newRow.Item("CMCustNo") = 50
-  newRow.Item("CMName") = "Amalgamated Software of North America"
-  newRow.Item("CMAddr1") = "IH-10 West"
-  newRow.Item("CMCity") = "San Antonio"
-  newRow.Item("CMState") = "TX"
-  newRow.Item("CMCntry") = "US"
-  newRow.Item("CMPostCode") = "78230"
-  newRow.Item("CMActive") = "1"
-  newRow.Item("CMFax") = "2105554679"
-  newRow.Item("CMPhone") = "555-4678"
-  myDS.AddPreparedRowAndSetActive(0)
-  Try
-     dbFile.AddRecord(myDS)
-  Catch dgEx As dgException
-     MessageBox.Show("Adding new record was unsuccessful! " 
-            _
-           + dgEx.Message, 
-            "Error!")
-     'Exit procedure or end application here.
-  End Try</pre>
 <pre class="prettyprint">
         <span class="lang">
  **[Visual RPG]** 

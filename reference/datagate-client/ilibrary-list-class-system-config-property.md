@@ -8,15 +8,7 @@ title: ILibraryList.SystemConfig Property
         <span class="lang">[C#]</span>
  **public string[] SystemConfig { get;  set}** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property SystemConfig As String()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp SystemConfig Type(*string) Access(*Public) Rank(1)
-     BegGet;  BegSet** 
-      </pre>
+
 
 ## Property Value
 

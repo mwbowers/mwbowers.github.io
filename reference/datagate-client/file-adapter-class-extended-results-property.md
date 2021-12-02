@@ -8,15 +8,7 @@ Specialized collection of status information associated with the file.
         <span class="lang">[C#]</span>
  **public Hashtable ExtendedResults { get; }** 
       </pre>
-<pre class="syntax">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property ExtendedResults As Hashtable** 
-      </pre>
-<pre class="syntax">
-        <span class="lang">[Visual RPG]</span>
- **BegProp ExtendedResults Type(Hashtable) Access(*Public)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

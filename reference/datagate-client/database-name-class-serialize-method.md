@@ -17,12 +17,6 @@ title: DatabaseName.Serialize Method
    ByVal sp As [SourceProfile](source-profile-class.html)_
 ) As String** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc Serialize Access(*Public) Type(*String)
-   DclSrParm tag Type(*String)
-   DclSrParm sp Type (*String)** 
-      </pre>
 
 ## Parameters
 

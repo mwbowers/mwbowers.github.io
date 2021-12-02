@@ -8,15 +8,7 @@ String associated with the dgException.
         <span class="lang">[C#]</span>
  **public override string Message { get; }** 
       </pre>
-<pre>
-        <span class="lang">[Visual Basic] </span>
- **Public Overrides ReadOnly Property Message As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Message Type(*String) Access(*Public) Modifier(*Overrides)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 
@@ -48,22 +40,7 @@ The <span> **Message** </span> property overrides the property defined by <span>
       //Exit procedure here.
   }
 </pre>
-<pre class="prettyprint">        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
 
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      ' This will show a somewhat specIfic message as to what 
-      ' went wrong opening the file. 
-      MsgBox(dgEx.Message, MsgBoxStyle.Critical, "Error opening file")
-      'Exit procedure here.
-  End Try</pre>
 
 ## Requirements
 

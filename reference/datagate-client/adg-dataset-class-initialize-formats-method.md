@@ -8,14 +8,7 @@ Initialize an instance of **AdgDataSet** .
         <span class="lang">[C#]</span>
  **public new void InitializeFormats();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public NotOverridable Sub InitializeFormats()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr InitializeFormats Modifier(*NotOverridable) Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

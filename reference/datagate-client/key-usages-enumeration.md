@@ -8,14 +8,7 @@ Key definition properties which apply to a key field.<span style="MARGIN-BOTTOM:
         <span class="lang">[C#]</span>
  **public enum KeyUsages;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum KeyUsages** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum KeyUsages Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

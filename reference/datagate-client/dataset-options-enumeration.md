@@ -10,10 +10,6 @@ The <span> **DataSetOptions** </span> enumeration names are reserved for AVR for
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Enum DataSetOptions** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum DataSetOptions Access(*Public)** 
-      </pre>
 
 ## Remarks
 

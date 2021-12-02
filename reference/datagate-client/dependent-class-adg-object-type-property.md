@@ -8,15 +8,7 @@ Gets a database object ([IAdgObject](iadg-object-class.html)) corresponding to t
         <span class="lang">[C#]</span>
  **public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property AdgObjectType As [AdgObjectTypes](adg-object-types-enumeration.html)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp AdgObjectType Type([AdgObjectTypes](adg-object-types-enumeration.html)) Access(*Public)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

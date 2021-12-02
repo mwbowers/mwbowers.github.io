@@ -8,10 +8,6 @@ The maximum number of digits for decimal fields.
  **public int Precision { get; }**  </pre>
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Precision As Integer**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Precision Type(*Integer) Len(4) Access(*Public)<br />   BegGet** 
-      </pre>
 
 ## Property Value
 

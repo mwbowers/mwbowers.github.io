@@ -8,15 +8,7 @@ Set-only property used to change the current library list of an open database co
         <span class="lang">[C#]</span>
  **public string[] CurrentUserLibl { set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public WriteOnly Property CurrentUserLibl As String ()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp CurrentUserLibl Access(*Public) Type(*String) Rank(1)
-   BegSet** 
-      </pre>
+
 
 ## Property Value
 

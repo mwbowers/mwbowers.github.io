@@ -10,10 +10,6 @@ The number of deleted and non-deleted records in the open database file.
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property FileLength As Long** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp FileLength Type(*Integer) Len(8) Access(*Public)** 
-      </pre>
 
 ## Property Value
 
@@ -40,28 +36,7 @@ Integer. Returns the number of deleted and non-deleted records in the file.
       + dbFile.FileName + "\" is " + deletedRecords.ToString());
   dbFile.Close();
   dbFile.Connection.Close();</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim dbFile As New FileAdapter
-  dbFile.Connection = New AdgConnection("*Public/DG NET Local")
-  dbFile.FileName = "*Libl/CMASTNEW"
-  dbFile.MemberName = "CMMASTER"
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.Open(myDS) ' Will not initialize the data set. 
 
-  ' Figure the number of records which were logically 
-  ' deleted but are still taking up space on the physical file.
-  ' FileLength returns the number of deleted and non-deleted 
-  ' records stored on a physical file, while RecordCount returns
-  ' the number of non-deleted records only. 
-  Dim deletedRecords As Long
-  deletedRecords = dbFile.FileLength - dbFile.RecordCount
-  MsgBox("Number of deleted records still taking up space in file """ &amp; _
-      dbFile.FileName &amp; """ is " &amp; deletedRecords.ToString())
-  dbFile.Close()
-  dbFile.Connection.Close()
-</pre>
 
 ## Requirements
 

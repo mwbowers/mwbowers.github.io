@@ -10,10 +10,6 @@ The name of the transaction.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public NotOverridable ReadOnly Property Name As String** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Name Access(*Public) Type(*String) Modifier(*NotOverridable)** 
-      </pre>
 
 ## Returns
 

@@ -8,14 +8,7 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
         <span class="lang">[C#]</span>
  **public enum RangeFirst;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum RangeFirst** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum RangeFirst Access(*Public)** 
-      </pre>
+
 
 #### Remarks
 **RangeFirst** enumeration values modify the usage of key value parameters describing the lower limit of a range in **FileAdapter** range access methods. For example, specifying *Exclude* for the **RangeFirst** parameter indicates that the lower limit of the range should not include records whose key value is equal to the "first key" parameter. Note that the *Top* value indicates that the lower limit should always include the first record of the file (and thus the "first key" parameter can be ignored).

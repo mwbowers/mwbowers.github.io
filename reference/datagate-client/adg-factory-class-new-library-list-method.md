@@ -9,17 +9,7 @@ The **NewLibraryList** method creates a new instance of [ ILibraryList](ilibrary
  **public ILibraryList NewLibraryList(
 [AdgConnection](adg-connection-class.html) cn** 
 );</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub NewLibraryList(_ 
-   ByVal cn As [AdgConnection](adg-connection-class.html) _
-) As ILibraryList** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewLibraryList Access(*Public) Type(ILibraryList)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))** 
-      </pre>
+
 
 ## Parameters
 

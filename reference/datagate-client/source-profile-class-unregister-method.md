@@ -11,14 +11,7 @@ Deletes a registered database name from the system registry.
         <span class="lang">[C#]</span>
  **public static void Unregister(<br />   string dbName<br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Shared Sub Unregister( _<br />   ByVal dbName As String _<br />)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Unregister Access(*Public) Shared(*Yes)<br />   DclSrParm dbName Type(*String)** 
-      </pre>
+
 
 ## Parameters
 

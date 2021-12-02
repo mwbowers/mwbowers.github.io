@@ -11,19 +11,7 @@ Establish an existing **DataRow** object as the currently prepared row, for subs
    DataRow row
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub PrepareRow( _
-   ByVal strFormat As String, _
-   ByVal row As DataRow
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr PrepareRow Access(*Public)
-   DclSrParm strFormat Type(*String)
-   DclSrParm row Type(DataRow)** 
-      </pre>
+
 
 ## Parameters
 

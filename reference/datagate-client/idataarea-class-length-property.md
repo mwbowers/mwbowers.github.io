@@ -10,11 +10,6 @@ Gets or sets the length in the data area.
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property Length As Integer** 
       </pre>      
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Length Access(*Public) Type(*Integer) 
-   BegGet;  BegSet** 
-      </pre>
 
 ## Property Value
 

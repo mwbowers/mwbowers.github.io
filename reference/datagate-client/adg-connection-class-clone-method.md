@@ -8,14 +8,7 @@ Returns a copy of the **AdgConnection** object.
         <span class="lang">[C#]</span>
  **public virtual new object Clone();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Overridable NotOverridable Clone() As Object** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc Clone Access(*Public) Type(*Object) Modifier(*Overridable)** 
-      </pre>
+
 
 ## Returns
 

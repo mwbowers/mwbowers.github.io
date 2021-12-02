@@ -8,14 +8,7 @@ Constructs an instance of [SourceProfile](source-profile-class.html) that is an 
         <span class="lang">[C#]</span>
  **public SourceProfile(<br />   SourceProfile sp<br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _<br />   ByVal sp As [SourceProfile](source-profile-class.html)<br />)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)<br />   DclSrParm sp Type(SourceProfile)** 
-      </pre>
+
 
 ## Parameters
 

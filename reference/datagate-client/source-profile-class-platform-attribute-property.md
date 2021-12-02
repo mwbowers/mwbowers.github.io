@@ -8,14 +8,7 @@ The platform-specific attribute of the database (e.g. "*SQLOLEB" for SqlServer).
         <span class="lang">[C#]</span>
  **public string PlatformAttribute { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Property PlatformAttribute As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp PlatformAttribute Type(*String) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
+
 
 ## Property
  Value

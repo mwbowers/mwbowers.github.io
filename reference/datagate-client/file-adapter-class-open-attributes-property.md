@@ -10,11 +10,6 @@ title: FileAdapter.OpenAttributes Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property OpenAttributes As [FileOpenAttr](file-open-attr-class.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp OpenAttributes Type(FileOpenAttr) Access(*Public)
-   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 

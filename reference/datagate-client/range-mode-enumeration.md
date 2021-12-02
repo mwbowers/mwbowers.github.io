@@ -8,14 +8,7 @@ For [FileAdapter](file-adapter-class.html) range methods, defines how to access 
         <span class="lang">[C#]</span>
  **public enum RangeMode;** 
       </pre>
-<pre class="syntax">
-        <span class="lang">[Visual Basic] </span>
- **public Enum RangeMode** 
-      </pre>
-<pre class="syntax">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum RangeMode Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

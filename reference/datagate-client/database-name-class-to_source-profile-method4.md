@@ -20,14 +20,6 @@ Named SourceProfile optionally constructed from a registered database name. If c
    ByVal bClassic
 ) As SourceProfile** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ToSourceProfile Access(*Public) Type(SourceProfile)
-   DclSrParm dbName Type (*String)
-   DclSrParm bFromSecStorage Type (*Boolean)
-   DclSrParm bDetectDuplicates Type (*Boolean)
-   DclSrParm bClassic Type (*Boolean)** 
-      </pre>
 
 ## Parameters
 

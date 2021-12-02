@@ -12,9 +12,6 @@ title: IAdgObject.WriteBases Method
 <pre> **<span class="lang">[Visual Basic] </span>
  public Sub WriteBases(_
    ByVal writer As System.Xml.XmlWriter<br /> ) As IAdgObject**      </pre>
-<pre class="prettyprint">
- **<span class="lang">[Visual RPG]</span>
-  BegSr WriteBases Access(*Public) Type(IAdgObject)<br />   DclSrParm writer Type(System.Xml.XmlWriter)**     </pre>
 
 ## Parameters
 

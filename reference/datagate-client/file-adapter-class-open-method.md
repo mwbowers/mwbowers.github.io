@@ -10,17 +10,7 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
 [AdgDataSet](adg-dataset-class.html) ds
 );** 
       </pre>
-<pre>
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Open( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html) _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Open Access(*Public)
-   DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
-      </pre>
+
 
 ## Parameters
 
@@ -95,33 +85,7 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
   dbFile.Close();
   dbFile.Connection.Close();
 </pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Unlike OpenNewAdgDataSet, the Open method does not create
-  ' a new AdgDataSet to meet the requirements of the file being
-  ' opened. However, it is slightly faster because of this, so
-  ' Open is a perrable way to open a file If a suitable.
-  ' AdgDataSet already exists or you don't need one. 
-  ' Note, however, that opening a file is a relatively slow
-  ' operation and the need to reopen a file rarely occurs. 
 
-  Dim dbFile As New FileAdapter
-  dbFile.Connection = New AdgConnection("*Public/DG NET Local")
-  dbFile.FileName = "*Libl/CMASTNEW"
-  dbFile.MemberName = "CMMASTER"
-  Dim myDS As AdgDataSet = Nothing
-
-  ' Only need to open the file to show the number of records,
-  ' then we're through with it. 
-  dbFile.Open(myDS) ' Will not initialize the data set. 
-
-  MsgBox("Number of deleted and non-deleted records still " &amp; _
-      "taking up space in file """ &amp; dbFile.FileName &amp; _
-      """ is " &amp; dbFile.FileLength.ToString())
-  dbFile.Close()
-  dbFile.Connection.Close()
-</pre>
 
 ## Requirements
 

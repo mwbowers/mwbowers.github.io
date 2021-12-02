@@ -8,15 +8,7 @@ The current format name of the **AdgDataSet** .
         <span class="lang">[C#]</span>
  **public string CurrentFormatName { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property CurrentFormatName As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp CurrentFormatName Access(*Public) Type(*String)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

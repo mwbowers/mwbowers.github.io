@@ -8,10 +8,6 @@ Creates a new timestamp [ FieldType](field-type-class.html).
  **public static FieldType NewTimeStamp();**  </pre>
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewTimeStamp() As [FieldType](field-type-class.html)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewTimeStamp Type(FieldType) Access(*Public) Shared(*Yes)** 
-      </pre>
 
 ## Remarks
 
@@ -38,24 +34,7 @@ Creates a new timestamp [ FieldType](field-type-class.html).
   currentTime = Convert.ToDateTime(timeProg.ParmToObject(timeParm, Type.GetType("System.DateTime"), 0));
   /* Unlike the IBM i FieldType NewTime or NewDate, NewTimeStamp contains both date and time
    * values. */</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Use the already initialized As400OProgram "timeProg" to set the
-  ' value of a DateTime variable. This program accepts a timestamp data type
-  ' whose time format is ISO as its sole parameter, which it does not
-  ' read but uses to return data. 
 
-  Dim as400Time As New ProgParmType("TimeISO", 0, FieldType.NewTimestamp())
-  Dim timeParm As New ProgParm(as400Time, DataDirection.Output)
-  timeProg.AppendParm(timeParm)
-
-  timeProg.Execute()
-
-  Dim currentTime As DateTime
-  currentTime = Convert.ToDateTime(timeProg.ParmToObject(timeParm, Type.GetType("System.DateTime"), 0))
-  ' Unlike the IBM i FieldType NewTime or NewDate, NewTimeStamp contains both date and time
-  ' values. </pre>
 
 ## Requirements
 

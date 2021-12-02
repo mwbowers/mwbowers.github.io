@@ -8,14 +8,7 @@ Sets the [ State](adg-connection-class-state-property.html) property to <span>Cl
         <span class="lang">[C#]</span>
  **public virtual new void Dispose();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Overridable NotOverridable Sub Dispose()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Dispose Access( *Public ) Modifier( *NotOverridable )** 
-      </pre>
+
 
 ## Exceptions
 

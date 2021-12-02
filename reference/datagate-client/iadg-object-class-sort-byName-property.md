@@ -10,11 +10,6 @@ title: IAdgObject.SortByName Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public interface ReadOnly Property SortByName As IComparer** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp SortByName Access(*Public) Type(IComparer)
-   BegGet** 
-      </pre>
 
 ## Property Value
 

@@ -14,25 +14,7 @@ Moves the record pointer associated with the currently open file without reading
    RangeLast rangeLast
 );** 
       </pre>
-<pre>
-        <span class="lang">[Visual Basic] </span>
- **Public Sub SeekRange( _
-   ByVal mode As [RangeMode](range-mode-enumeration.html) _
-   ByVal firstKey As [AdgKeyTable](adg-key-table-class.html) _
-   ByVal rangeFirst As [RangeFirst](range-first-enumeration.html) _
-   ByVal lastKey As [AdgKeyTable](adg-key-table-class.html) _
-   ByVal rangeLast As [RangeLast](range-last-enumeration.html) _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr SeekRange Access(*Public)
-   DclSrParm mode Type(RangeMode)
-   DclSrParm firstKey Type(AdgKeyTable)
-   DclSrParm rangeFirst Type(RangeFirst)
-   DclSrParm lastKey Type(AdgKeyTable)
-   DclSrParm rangeLast Type(RangeLast)** 
-      </pre>
+
 
 ## Parameters
 

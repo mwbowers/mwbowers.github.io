@@ -10,11 +10,6 @@ The **AdgConnection** object of the database server hosting the program to be ca
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public WriteOnly Property Connection As [AdgConnection](adg-connection-class.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Connection Access(*Public) Type([AdgConnection](adg-connection-class.html))
-   BegSet** 
-      </pre>
 
 ## Property Value
 

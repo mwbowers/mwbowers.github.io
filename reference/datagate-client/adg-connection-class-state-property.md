@@ -8,15 +8,7 @@ Gets the current state of the connection.
         <span class="lang">[C#]</span>
  **public ConnectionState State { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property State As ConnectionState** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp State Access(*Public) Type(ConnectionState)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

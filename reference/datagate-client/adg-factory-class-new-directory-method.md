@@ -11,19 +11,7 @@ The **NewDirectory** method creates a new instance of [IDirectory](idirectory-cl
    string PathName
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub NewDirectory(_ 
-   ByVal cn As [AdgConnection](adg-connection-class.html)_
-   ByVal PathName As string_ 
-) As IDirectory** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewDirectory Access(*Public) Type(IDirectory)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
-   DclSrParm PathName Type(*string)** 
-      </pre>
+
 
 ## Parameters
 

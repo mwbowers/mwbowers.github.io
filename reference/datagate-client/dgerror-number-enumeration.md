@@ -8,14 +8,7 @@ Specifies the type of DG run-time error.
         <span class="lang">[C#]</span>
  **public enum dgErrorNumber;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Enum dgErrorNumber** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum dgErrorNumber Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

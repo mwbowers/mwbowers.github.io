@@ -8,14 +8,7 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object with
         <span class="lang">[C#]</span>
  **public FileAdapter();** 
       </pre>
-<pre class="syntax">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New()** 
-      </pre>
-<pre class="syntax">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

@@ -94,41 +94,7 @@ The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorCl
       throw dgEx;
   }
 </pre>
-<pre class="prettyprint">        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This code attempts to open a file exclusively. 
-  ' If it fails, we print the IBM i exception responsible.
-  ' "dbFile" is of type FileAdapter. 
-  dbFile.AccessMode = AccessMode.Write
-  dbFile.OpenAttributes.ShareTypes = ShareTypes.Exclusive
 
-  Dim dataSet As AdgDataSet = Nothing
-  Try
-      dbFile.Open(dataSet)
-  Catch dgEx As dgException
-      Dim msg As String
-      Select Case dgEx.ErrorClass
-          Case dgErrorClass.dgEC_AS400CPF
-              msg = "CPF"
-          Case dgErrorClass.dgEC_AS400CPI
-              msg = "CPI"
-          Case dgErrorClass.dgEC_AS400DG8
-              msg = "DG8"
-          Case dgErrorClass.dgEC_AS400MCH
-              msg = "MCH"
-          Case Else
-              Throw dgEx ' Throw exception otherwise. 
-      End Select
-      ' Append the hexaDecimal value of the SystemError to
-      ' Form the classic name of the IBM i exception. 
-      msg = msg + dgEx.SystemError.ToString("X")
-      MsgBox("iSeries threw exception " &amp; msg &amp; _
-          " While opening file.", "iSeries exception.")
-      ' Throw exception otherwise. 
-      Throw dgEx
-  End Try
-</pre>
 
 ## Requirements
 

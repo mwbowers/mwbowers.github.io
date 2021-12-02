@@ -10,17 +10,7 @@ title: IPrintProperties.GetTypedObject Method
    fieldName string
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public sub GetTypedObject(_<br />   ByVal   fieldName As string _
-) As Object** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr GetTypedObject Type(Object) Access(*Public)
-   DclSrParm fieldName Type(*string)** 
-        <br />
-      </pre>
+
 
 ## Parameters
 

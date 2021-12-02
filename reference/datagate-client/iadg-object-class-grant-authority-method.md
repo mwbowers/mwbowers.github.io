@@ -15,12 +15,6 @@ title: IAdgObject.GrantAuthority Method
    ByVal userName As string _<br />   ByVal authorityType As [AuthorityTypes](authority-types-enumeration.html)** 
  **) As IAdgObject** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr GrantAuthority Access(*Public) Type(IAdgObject)
-   DclSrParm userName Type (*string)
-   DclSrParm authorityType Type([AuthorityTypes](authority-types-enumeration.html))** 
-      </pre>
 
 ## Parameters
 

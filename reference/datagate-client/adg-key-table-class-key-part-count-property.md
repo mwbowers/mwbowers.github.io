@@ -10,11 +10,6 @@ Gets or sets the number of key fields composing the key value.
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property KeyPartCount As Integer** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp KeyPartCount Access(*Public) Type(*Integer)
-   BegGet    BegSet** 
-      </pre>
 
 ## Property Value
 

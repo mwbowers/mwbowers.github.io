@@ -8,8 +8,7 @@ The **AdgKeyTable** class contains a <span>DataTable</span> object for manipulat
 For a list of all members of this type, see [AdgKeyTable Members](adg-key-table-members.html).
 
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> ASNA.DataGate.Client.AdgTable<br /> ASNA.DataGate.Client.AdgKeyTable
-<pre>
-&lt;Visual Basic&gt; **Public Class AdgKeyTable Inherits AdgTable** </pre>
+
 
 ## Thread Safety
 

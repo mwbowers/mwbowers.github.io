@@ -16,11 +16,6 @@ title: IAdgObject.ReadBases Method
    ByVal reader As System.Xml.XmlReader<br /> ) As IAdgObject** 
       </pre>
 
-<pre class="prettyprint">
- **<span class="lang">[Visual RPG]</span>
- BegSr ReadBases Access(*Public) Type(IAdgObject
-   DclSrParm reader Type(System.Xml.XmlReader)** 
-      </pre>
 
 ## Parameters
 

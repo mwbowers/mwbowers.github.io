@@ -11,19 +11,7 @@ This member supports the .NET Framework infrastructure and is not intended to be
    StreamingContext context
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal info As Serialization, _
-   ByVal context As StreamingContext
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-   DclSrParm info Type(Serialization)
-   DclSrParm context Type(StreamingContext)** 
-      </pre>
+
 
 ## Parameters
 

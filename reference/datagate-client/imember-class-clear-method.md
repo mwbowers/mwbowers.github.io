@@ -8,14 +8,7 @@ title: IMember.Clear Method
         <span class="lang">[C#]</span>
  **public void Clear();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Sub Clear() As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Clear Access(*Public) Type(Void)** 
-      </pre>
+
 
 ## Parameters
 

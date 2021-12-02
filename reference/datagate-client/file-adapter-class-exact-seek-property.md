@@ -8,15 +8,7 @@ This property is **True** if the seek operation resulted in an exact match.
         <span class="lang">[C#]</span>
  **public bool ExactSeek { get; }** 
       </pre>
-<pre class="syntax">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property ExactSeek As Boolean** 
-      </pre>
-<pre class="syntax">
-        <span class="lang">[Visual RPG]</span>
- **BegProp ExactSeek Type(*Boolean) Access(*Public)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

@@ -8,15 +8,7 @@ title: IDirectory.AttachRemoteDirectory Method
         <span class="lang">[C#]</span>
  **Public void IDirectory AttachRemoteDirectory(_<br />   string remotePathName <br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub AttachRemoteDirectory(<br />   ByVal remotePathName As string,<br />) As IDirectory** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr AttachRemoteDirectory Access(*Public) Type(IDirectory)
-   DclSrParm remotePathName Type(*string)** 
-      </pre>
+
 
 ## Parameters
 

@@ -12,21 +12,7 @@ Converts an object or value type to a parameter list value.
    int Element
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub ObjectToParm( _
-   ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
-   ByVal Value As Object _
-   ByVal Element As Integer _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr ObjectToParm Access(*Public)
-   DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))
-   DclSrParm Value Type(*Object)
-   DclSrParm Element Type(*Integer) Len(4)** 
-      </pre>
+
 
 ## Parameters
 

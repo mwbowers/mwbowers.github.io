@@ -10,17 +10,7 @@ Constructs an [AdgConnection](adg-connection-class.html) instance for the databa
    string dbName
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic]</span>
- **Public Sub New( _
-   ByVal dbName As String _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-   DclSrParm dbName Type(*String)** 
-      </pre>
+
 
 ## Parameters
 

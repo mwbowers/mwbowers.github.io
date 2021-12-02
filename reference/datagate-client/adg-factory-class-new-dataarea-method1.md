@@ -11,19 +11,7 @@ The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class
    string PathName
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub NewDataArea(_ 
-   ByVal cn As [AdgConnection](adg-connection-class.html)_
-   ByVal PathName As string_ 
-) As IDataArea** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewDataArea Access(*Public) Type(IDataArea)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
-   DclSrParm PathName Type(*string)** 
-      </pre>
+
 
 ## Parameters
 

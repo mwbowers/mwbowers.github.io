@@ -10,10 +10,6 @@ The data type for this field.
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DataType As [DataTypes](data-types-enumeration.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp DataType Type(DataTypes) Access(*Public)<br />   BegGet** 
-      </pre>
 
 ## Property Value
 

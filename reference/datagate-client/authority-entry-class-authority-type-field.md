@@ -8,14 +8,7 @@ title: AuthorityEntry.AuthorityType Field
         <span class="lang">[C#]</span>
  **public [AuthorityTypes](authority-types-enumeration.html) AuthorityType** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Shared Property AuthorityType As [AuthorityTypes](authority-types-enumeration.html)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **DclFld Name(AuthorityType) Type([AuthorityTypes](authority-types-enumeration.html)) Access(*Public) Shared(*Yes)** 
-      </pre>
+
 
 ## Field
  Value

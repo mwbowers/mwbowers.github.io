@@ -32,16 +32,7 @@ Two special values are recognized for the **BlockingFactor** property. [OptimalB
   dbFile.OpenAttributes.BlockingFactor = FileOpenAttr.OmitBlocking;
   AdgDataSet ds = null;
   dbFile.OpenNewAdgDataSet(out ds);</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span> Dim db As New AdgConnection("*Public/DG NET
-  Local") Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1",
-  "CMMASTERL1") dbFile.AccessMode =
-  AccessMode.Read ' Automatically omits record blocking feature. 
-  dbFile.OpenAttributes.BlockingFactor = FileOpenAttr.OmitBlocking
-  Dim ds As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(ds)
-</pre>
+
 
 ## Requirements
 

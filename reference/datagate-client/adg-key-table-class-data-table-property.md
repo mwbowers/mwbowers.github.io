@@ -8,15 +8,7 @@ The <span> **DataTable** </span> object describing the fields of a key.
         <span class="lang">[C#]</span>
  **public DataTable DataTable{ get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property DataTable As DataTable** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp DataTable Access(*Public) Type(DataTable)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

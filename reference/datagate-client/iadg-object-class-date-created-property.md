@@ -10,11 +10,6 @@ title: IAdgObject.DateCreated Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property DateCreated As System.DateTime** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp DateCreated Access(*Public) Type(System.DateTime)
-   BegGet** 
-      </pre>
 
 ## Property Value
 

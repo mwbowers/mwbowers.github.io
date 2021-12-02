@@ -10,10 +10,6 @@ title: FileAdapter.MemberName Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Property MemberName As String** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp MemberName Type(*String) Access(*Public)** 
-      </pre>
 
 ## Property Value
 
@@ -54,30 +50,7 @@ String. Returns or sets the name of the member of the currently-opened file.
       }
   }
  </pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' We attempt to open the class variable FileAdapter "dbFile" 
-  ' which may or may not have been initialized another routine. 
-  Public Sub OpenFile()
-      Dim myDS As AdgDataSet = Nothing
-      If dbFile Is Nothing Then
-          MsgBox("FileAdapter not initialized.")
-          Return
-      End If
-      Try
-          dbFile.OpenNewAdgDataSet(myDS)
-      Catch dgEx As dgException
-          If (dgEx.Error = dgErrorNumber.dgEmMNOTFND) Then
-              MsgBox("Member " + dbFile.MemberName &amp; " not found!")
-          ElseIf (dgEx.Error = dgErrorNumber.dgEmFNOTFND) Then
-              MsgBox("File " + dbFile.FileName &amp; " not found!")
-          Else
-              MsgBox("Couldn't open file!" &amp; dgEx.Message)
-          End If
-          ' Exit routine or end application here.
-      End Try
-  End Sub</pre>
+
 
 ## Requirements
 

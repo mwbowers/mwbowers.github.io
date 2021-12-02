@@ -8,14 +8,7 @@ Invokes the <span> **GetHashCode** </span> method of the <span> **SourceProfile*
         <span class="lang">[C#]</span>
  **public override int GetHashCode();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Overrides GetHashCode() As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc GetHashCode Access(*Public) Type(*Integer) Len(4) Modifier(*Overrides)** 
-      </pre>
+
 
 ## Exceptions
 

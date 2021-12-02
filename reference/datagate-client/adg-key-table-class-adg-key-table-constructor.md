@@ -10,17 +10,7 @@ This member supports DG infrastructure and is not intended to be used directly f
    System.Data.DataTable keyTable
 );** 
       </pre>
-<pre>
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal keyTable As System.Data.DataTable _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-   DclSrParm keyTable Type(System.Data.DataTable)** 
-      </pre>
+
 
 ## Parameters
 

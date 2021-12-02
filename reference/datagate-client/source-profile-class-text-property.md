@@ -8,14 +8,7 @@ Any text or comments to be associated with the connection profile.
         <span class="lang">[C#]</span>
  **public string Text { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property Text As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Text Type(*String) Access(*Public)<br />   BegGet, SetGet** 
-      </pre>
+
 
 ## Property
  Value

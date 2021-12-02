@@ -10,11 +10,6 @@ title: IAdgObject.Owner Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Owner As String** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Owner Access(*Public) Type(*String) Len(45)
-   BegGet** 
-      </pre>
 
 ## Property Value
 

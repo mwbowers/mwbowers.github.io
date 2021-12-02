@@ -8,14 +8,7 @@ Opens a database connection with the settings specified by the provider-specific
         <span class="lang">[C#]</span>
  **public void Open();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Open()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Open Access(*Public)** 
-      </pre>
+
 
 ## Exceptions
 

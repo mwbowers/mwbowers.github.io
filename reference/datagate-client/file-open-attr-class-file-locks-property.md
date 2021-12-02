@@ -8,10 +8,6 @@ Specify record locking mechanisms in opened files.
  **Public FileLocks FileLocks { get; set; }**  </pre>
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Property FileLocks As [Filelocks](file-locks-enumeration.html)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp FileLocks Type(FileLocks) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 
@@ -78,57 +74,7 @@ When set to the Auto value, record locking occurs automatically in **FileAdapter
 
   dbFile.Close(); /* Release all locks. */
   db.Close();</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Using the FileLocks property of a FileAdapter's OpenAttributes,
-  ' you can set file locking to manual, which allows you to lock more
-  ' than one record at a time. Note that manual file locking
-  ' is database dependent- For instance, it will work with a Acceler8
-  ' database but not with an IBM i. 
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.OpenAttributes.FileLocks = FileLocks.Manual
-  dbFile.AccessMode = AccessMode.RWCD
 
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-
-  ' In the code below, we read records For customer numbers
-  ' 400 - 800. When it ends, we will still have locks on customer numbers
-  ' 500 and 700. 
-  Try
-      ' Read customer number 400 but don't lock it. 
-      keyTbl.Row.Item("CMCUSTNO") = 400
-      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.NoLock, keyTbl)
-
-      ' Read customer number 500 and lock it. 
-      keyTbl.Row.Item("CMCUSTNO") = 500
-      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.Read, keyTbl)
-
-      ' Read customer number 600 and lock it. 
-      dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-
-      ' Read customer number 700 and lock it. 
-      dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-
-      ' Read customer number 800 without locking it. 
-      dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.NoLock)
-
-      ' Unlock customer number 600. 
-      keyTbl.Row.Item("CMCUSTNO") = 600
-      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.NoLock, keyTbl)
-      dbFile.ReleaseCurrent()
-
-  Catch dgEx As dgException
-      MsgBox("Couldn't find one or more records. " + dgEx.Message, _
-          MsgBoxStyle.Critical, dgEx.Error.ToString())
-  End Try
-
-  dbFile.Close() ' Release all locks. 
-  db.Close()
-</pre>
 
 ## Requirements
 

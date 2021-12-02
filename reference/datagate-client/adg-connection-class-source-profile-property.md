@@ -8,15 +8,7 @@ The [SourceProfile](source-profile-class.html) object describing the currently o
         <span class="lang">[C#]</span>
  **public [SourceProfile](source-profile-class.html) SourceProfile { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property SourceProfile As [SourceProfile](source-profile-class.html)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp SourceProfile Access(*Public) Type([SourceProfile](source-profile-class.html))
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

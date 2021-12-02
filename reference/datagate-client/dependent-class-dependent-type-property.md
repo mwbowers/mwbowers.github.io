@@ -10,15 +10,7 @@ title: Dependent.DependentType Property
         </span>
  **public [DependentTypes](dependent-types-enumeration.html) DependentType { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property DependentType As [DependentTypes](dependent-types-enumeration.html)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp DependentType Type([DependentTypes](dependent-types-enumeration.html)) Access(*Public)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

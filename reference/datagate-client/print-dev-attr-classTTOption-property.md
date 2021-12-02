@@ -8,14 +8,7 @@ The **TTOption** property specifies the option for using TrueType Fonts in docum
         <span class="lang">[C#]</span>
  **public PrintTrueType TTOption { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Property TTOption As [PrintTrueType](print-true-type-enumeration.html)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp TTOption Type(PrintTrueType) Access(*Public) <br />    BegGet,    BegSet** 
-      </pre>
+
 
 ## Property Value
 

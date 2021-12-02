@@ -11,18 +11,7 @@ Returns an object of a specific type from the program parameter list provided wi
    string ParameterName,
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function ParmToObject( _
-   ByVal ReturnType As System.Type, _
-   ByVal ParameterName As String, _
-) As Object** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ParmToObject Access(*Public) Type(Object)
-   DclSrParm ReturnType Type(System.Type)<br />  DclSrParm ParameterName Type(*String)** 
-      </pre>
+
 
 ## Parameters
 

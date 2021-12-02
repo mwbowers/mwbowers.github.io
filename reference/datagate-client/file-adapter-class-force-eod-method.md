@@ -10,10 +10,6 @@ Synchronizes the state of the <span> **FileAdapter** </span> object with the ope
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Sub ForceEOD()** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr ForceEOD Access(*Public)** 
-      </pre>
       <br />
 
 ## Exceptions

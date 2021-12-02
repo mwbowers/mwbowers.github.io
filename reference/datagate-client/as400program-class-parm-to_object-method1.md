@@ -12,21 +12,7 @@ Returns an object of a specific type from the program parameter list.
    int Element
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function ParmToObject( _
-   ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
-   ByVal ReturnType As Type _ 
-   ByVal Element As Integer _
-  ) As Object** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ParmToObject Access(*Public) Type(Object)
-   DclSrParm Parameter Type([ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html))
-   DclSrParm ReturnType Type(Type)
-   DclSrParm Element Type(*Integer) Len(4)** 
-      </pre>
+
 
 ## Parameters
 

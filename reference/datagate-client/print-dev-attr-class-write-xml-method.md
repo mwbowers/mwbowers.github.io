@@ -14,16 +14,8 @@ This **WriteXml** method creates XML representing the **PrintDevAttr** object, u
 );** 
       </pre>
 
-<pre class="prettyprint">
-          <span class="lang">[Visual Basic] </span>
- **Public Sub WriteXml(_
-   ByVal writer As System.Xml.Xmlwriter<br /> ) As PrintDevAttr** 
-      </pre>
 
-<pre class="prettyprint">
- **<span class="lang">[Visual RPG]</span>
-  BegSr WriteXml Access(*Public) Type(PrintDevAttr)<br />   DclSrParm writer Type(System.Xml.Xmlwriter)** 
-      </pre>
+
 
 ## Parameters
 

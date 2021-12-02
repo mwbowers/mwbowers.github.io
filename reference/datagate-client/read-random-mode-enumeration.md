@@ -8,14 +8,7 @@ Defines modes of operation for the [ FileAdapter.ReadRandomKey](file-adapter-cla
         <span class="lang">[C#]</span>
  **public enum ReadRandomMode;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Enum ReadRandomMode** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum ReadRandomMode Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

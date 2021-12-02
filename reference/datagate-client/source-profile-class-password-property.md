@@ -8,14 +8,7 @@ The password to be used in conjunction with [ User](source-profile-class-user-pr
         <span class="lang">[C#]</span>
  **public string Password { set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public ReadOnly Property Password As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Password Type(*String) Access(*Public)<br />   BegSet** 
-      </pre>
+
 
 ## Property
  Value

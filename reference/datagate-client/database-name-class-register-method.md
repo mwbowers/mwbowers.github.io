@@ -11,19 +11,7 @@ Saves the contents of the **SourceProfile** object to the system registry as a d
    String dbName
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Shared Register( _
-   ByVal sp As [SourceProfile](source-profile-class.html) _
-   ByVal dbName As String _
-) As SourceProfile** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc Register Type(SourceProfile) Access(*Public)
-   DclSrParm sp Type(SourceProfile)
-   DclSrParm dbName Type (String)** 
-      </pre>
+
 
 ## Parameters
 

@@ -10,12 +10,6 @@ Creates a new binary decimal [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewBinary( _<br />  ByVal prec As Integer, _<br />  ByVal scale As Integer _<br />) As [FieldType](field-type-class.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewBinary Type(FieldType) Access(*Public) Shared(*Yes)
-   DclSrParm prec Type(*Integer) Len(4)
-   DclSrParm scale Type(*Integer) Len(4)** 
-      </pre>
 
 ## Parameters
 

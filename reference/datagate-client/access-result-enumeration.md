@@ -8,14 +8,7 @@ Defines modes on whether a record was found.
         <span class="lang">[C#]</span>
  **public enum AccessResult;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Enum AccessResult** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum AccessResult Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

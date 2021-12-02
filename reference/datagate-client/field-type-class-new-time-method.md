@@ -8,10 +8,6 @@ Creates a new time [ FieldType](field-type-class.html).
  **public static FieldType NewTime(<br />   DateTimeFormat fmt<br />);**  </pre>
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewTime( _<br />   ByVal fmt As [DateTimeFormat](date-time-format-enumeration.html)       _<br />) As [FieldType](field-type-class.html)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewTime Type(FieldType) Access(*Public) Shared(*Yes)<br />   DclSrParm fmt Type(DateTimeFormat) Len(4)** 
-      </pre>
 <pre />
 
 ## Parameters

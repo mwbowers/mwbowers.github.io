@@ -8,15 +8,7 @@ A row object containing key data.
         <span class="lang">[C#]</span>
  **public System.Data.DataRow Row { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property Row As System.Data.DataRow** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Row Access(*Public) Type(System.Data.DataRow)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

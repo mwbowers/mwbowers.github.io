@@ -8,14 +8,7 @@ Sets the [ State](adg-connection-class-state-property.html) property to <span>Cl
         <span class="lang">[C#]</span>
  **public void Close();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Close()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Close Access(*Public)** 
-      </pre>
+
 
 ## Exceptions
 

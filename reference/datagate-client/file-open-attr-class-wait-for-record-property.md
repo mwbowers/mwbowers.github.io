@@ -38,17 +38,7 @@ Implementation on the IBM i: The [ShareType](file-open-attr-class-share-types-pr
   AdgDataSet myDS = null;
   dbFile.OpenNewAdgDataSet(out myDS);
 </pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Opens a record which will spend no time waiting For a record
-  ' If that record is locked. 
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER")
-  dbFile.AccessMode = AccessMode.Delete
-  dbFile.OpenAttributes.WaitForRecord = 0
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)</pre>
+
 
 ## Requirements
 

@@ -14,11 +14,6 @@ Gets the [IPrintProperties](iprint-properties-class.html) of the currently open 
    ByVal format As String _
 ) As [IPrintProperties](iprint-properties-class.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc GetPrintProperties Type( [IPrintProperties](iprint-properties-class.html) ) Access(*Public)
-   DclSrParm format Type(*String)** 
-      </pre>
 
 ## Parameters
 
@@ -86,31 +81,7 @@ The **IPrintProperties** object returned by this method can be used to get and s
   printFile.Close(); /* Shows print preview - can also accomplish this with
                       * ForceEOD, which doesn't close the file. */
   dataBase.Close();</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Will open up "CustReport" and will write a single detail, and
-  ' change its background color. 
-  Dim dataBase As New AdgConnection("DG NET Local")
-  Dim printFile As New FileAdapter(dataBase, "*Libl/CustReport", "*First")
-  printFile.AccessMode = AccessMode.PrintPreview
-  Dim dataSet As AdgDataSet = Nothing
-  printFile.OpenNewAdgDataSet(dataSet)
 
-  Dim dr As DataRow = dataSet.PrepareRow("rptDetail")
-  dr.Item("prtCMName") = "This line is light blue."
-
-  Dim ip As IPrintProperties = printFile.GetPrintProperties("rptDetail")
-  Dim oleColor As Integer = ColorTranslator.ToOle(Color.LightBlue)
-  ip.SetValue("lblRowColor", "BackColor", oleColor)
-
-  dataSet.AddRow("rptDetail")
-  printFile.SetFormat("rptDetail")
-  printFile.AddRecord(dataSet)
-  ' Shows print preview - can also accomplish this with
-  ' ForceEOD, which doesn't close the file. 
-  printFile.Close()
-  dataBase.Close()</pre>
 
 ## Requirements
 

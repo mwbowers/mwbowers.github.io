@@ -11,17 +11,7 @@ The **NewFile** method creates a new instance of [IFileObject](ifile-object-clas
    string PathName
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub NewFile(_ 
-   ByVal cn As [AdgConnection](adg-connection-class.html)_<br />   ByVal PathName As string_      <br /> ) As IFileObject** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr NewFile Access(*Public) Type(IFileObject)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
-   DclSrParm PathName Type(*string)** 
-      </pre>
+
 
 ## Parameters
 

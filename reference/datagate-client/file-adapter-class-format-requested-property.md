@@ -8,15 +8,7 @@ Reflects the most recent format specified in a [ SetFormat](file-adapter-class-s
         <span class="lang">[C#]</span>
  **Public int FormatRequested { get; }** 
       </pre>
-<pre>
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property FormatRequested As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp FormatRequested Access(*Public) Type(*Integer4)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 

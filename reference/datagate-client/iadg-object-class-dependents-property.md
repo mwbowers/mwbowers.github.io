@@ -10,11 +10,6 @@ title: IAdgObject.Dependents Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Property Dependents As [Dependent](dependent-class.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Dependents Access(*Public) Type([Dependent](dependent-class.html))
-   BegGet** 
-      </pre>
 
 Property Value <p> [Dependent](dependent-class.html) array. Read-only. The **Length** of the array is equal to the number of dependent objects. 
 ## Exceptions

@@ -12,20 +12,8 @@ Establish the record, specified by format name and relative record number, as th
 );** 
         </pre>
 
-<pre class="prettyprint">
-          <span class="lang">[Visual Basic] </span>
- **Public Function SetActive( _
-   ByVal strFormat As String _
-   ByVal rrn As Integer
-) As Boolean** 
-        </pre>
 
-<pre class="prettyprint">
-          <span class="lang">[Visual RPG]</span>
- **BegFunc SetActive Type(*Boolean) Access(*Public)
-   DclSrParm strFormat Type(*String) Len(45)
-   DclSrParm rrn Type(*Integer) Len(4)** 
-        </pre>
+
 
 ## Parameters
 

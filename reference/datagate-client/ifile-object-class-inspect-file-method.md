@@ -10,16 +10,7 @@ InspectFile is reserved for internal use by DG and should not be invoked by user
 [AdgObserver](adg-observer-delegate.html) observer
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub InspectFile(_
-   ByVal parts As [InspectFileParts](inspect-file-parts-enumeration.html)_      
-   ByVal output As [InspectFileOutput](inspect-file-output-enumeration.html)_<br />   ByVal ErrorCount As Integer_<br />   ByVal observer As [AdgObserver](adg-observer-delegate.html)<br /> ) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc InspectFile Access(*Public) Type(Void)<br />   DclSrParm parts Type([InspectFileParts](inspect-file-parts-enumeration.html))<br />   DclSrParm output Type([InspectFileOutput](inspect-file-output-enumeration.html))<br />   DclSrParm ErrorCount Type(*Integer)<br />   DclSrParm observer Type([AdgObserver](adg-observer-delegate.html))** 
-      </pre>
+
 
 ## Requirements
 

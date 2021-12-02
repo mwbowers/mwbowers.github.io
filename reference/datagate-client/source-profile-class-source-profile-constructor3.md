@@ -11,14 +11,7 @@ Constructs an instance of [SourceProfile](source-profile-class.html) optionally 
         <span class="lang">[C#]</span>
  **public SourceProfile(<br />   string dbName<br />   bool readRegistry<br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _<br />   ByVal dbName As String, _<br />   ByVal readRegistry As Boolean _<br />)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)<br />   DclSrParm dbName Type(*String)<br />   DclSrParm readRegistry Type(*Boolean)** 
-      </pre>
+
 
 ## Parameters
 

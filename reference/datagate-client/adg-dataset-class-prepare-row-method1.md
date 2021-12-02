@@ -10,17 +10,7 @@ Create a **DataRow** object in preparation for adding it to the **AdgDataSet** .
    int iFormat
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function PrepareRow( _
-   ByVal iFormat As int _
-) As** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc PrepareRow Access(*Public) Type()
-   DclSrParm iFormat Type(*Integer) Len(4)** 
-      </pre>
+
 
 ## Parameters
 

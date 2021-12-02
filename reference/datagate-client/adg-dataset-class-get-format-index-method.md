@@ -10,17 +10,7 @@ Returns an integer identifying a DataGate file format.
    string strFormat
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function GetFormatIndex( _
-   ByVal strFormat As String _
-) As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc GetFormatIndex Access(*Public) Type(*Integer) Len(4)
-   DclSrParm strFormat Type(*String)** 
-      </pre>
+
 
 ## Parameters
 

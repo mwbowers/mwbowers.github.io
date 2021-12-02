@@ -11,19 +11,7 @@ title: DatabaseName.Deserialize Method
    string serSp
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Deserialize(_ 
-   ByVal tag As String_ 
-   ByVal serSp As String_
-) As SourceProfile** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc Deserialize Access(*Public) Type(SourceProfile)
-   DclSrParm tag   Type(*String)
-   DclSrParm serSp Type (*String)** 
-      </pre>
+
 
 ## Parameters
 

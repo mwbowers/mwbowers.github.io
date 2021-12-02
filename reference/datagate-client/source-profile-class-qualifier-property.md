@@ -8,14 +8,7 @@ This property is reserved for future expansion.
         <span class="lang">[C#]</span>
  **public int Qualifier { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property Qualifier As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Qualifier Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
+
 
 ## Property Value
 

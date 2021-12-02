@@ -14,11 +14,6 @@ Deletes a registered database name from the system registry.
    ByVal dbName As String _
 ) As void** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Unregister Type(*Void) Access(*Public)
-   DclSrParm dbName Type (String)** 
-      </pre>
 
 ## Parameters
 

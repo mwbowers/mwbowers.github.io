@@ -8,14 +8,7 @@ Constructs an anonymous instance of [ SourceProfile](source-profile-class.html) 
         <span class="lang">[C#]</span>
  **public SourceProfile();** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)** 
-      </pre>
+
 
 ## Parameters
 

@@ -8,14 +8,7 @@ title: IDirectory.Enumerate Method
         <span class="lang">[C#]</span>
  **public void Enumerate(_<br />    [AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub Enumerate(<br />   ByVal enumerator As [AdgEnumerator](adg-enumerator-delegate.html)<br /> ) As Void** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Enumerate Access(*Public) Type(Void)<br />	DclSrParm enumerator Type([AdgEnumerator](adg-enumerator-delegate.html))** 
-      </pre>
+
 
 ## Parameters
 

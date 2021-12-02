@@ -8,14 +8,7 @@ The <span> **DataTypes** </span> enumerated constant defines values on the types
         <span class="lang">[C#]</span>
  **public enum DataTypes;** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Enum DataTypes** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegEnum DataTypes Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

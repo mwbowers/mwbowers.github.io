@@ -10,10 +10,6 @@ A system-level classification of the <span>dgException</span>.
 <pre><span class="lang">[Visual Basic] </span>
  **Public Property SystemError As Integer** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **DclFld Name(SystemError) Type(*Integer) Access(*Public)** 
-      </pre>
 
 ## Field Value
 
@@ -63,32 +59,7 @@ In these cases, <span> **SystemError** </span> will contain an integer code asso
           throw dgEx;
       }
   }</pre>
-<pre class="prettyprint">        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This code attempts to open a file exclusively. 
-  ' If it fails, we print out the IBM i exception responsible.
-  ' "dbFile" is of type FileAdapter. 
-  dbFile.AccessMode = AccessMode.Write
-  dbFile.OpenAttributes.ShareTypes = ShareTypes.Exclusive
-  dbFile.OpenAttributes.WaitForFile = 0
 
-  Dim dataSet As AdgDataSet = Nothing
-  Try
-      dbFile.Open(DataSet)
-  Catch dgEx As dgException
-      ' Take special action If error is due to the IBM i exception
-      ' "CPF1002". 
-      If (dgEx.ErrorClass = dgErrorClass.dgEC_AS400CPF And _
-          dgEx.SystemError.ToString("X") = "1002") Then
-          MsgBox("iSeries threw exception CPF1002.")
-          ' Take alternative action here.
-      Else
-          ' Throw exception otherwise.
-          Throw dgEx
-      End If
-  End Try
-</pre>
 
 ## Requirements
 

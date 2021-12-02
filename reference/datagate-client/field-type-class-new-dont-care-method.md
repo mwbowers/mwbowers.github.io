@@ -8,10 +8,6 @@ Creates a new [FieldType](field-type-class.html) described only in terms of leng
  **public static FieldType NewDontCare(<br />	int length<br />);**   </pre>
 <pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
  **Public Shared Function NewDontCare( _<br />	ByVal length As Integer _<br />) As [FieldType](field-type-class.html)**  </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc NewDontCare Type(FieldType) Access(*Public) Shared(*Yes)<br />     DclSrParm length Type(*Integer) Len(4)** 
-      </pre>
 
 ## Parameters
 

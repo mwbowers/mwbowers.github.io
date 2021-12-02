@@ -11,18 +11,7 @@ Access a print control property value.
    propName string,
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public sub GetValue(_
-  ByVal fieldName As string _<br />  ByVal  propName As string _
-) As Object** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr GetValue Type(Object) Access(*Public)
-   DclSrParm fieldName Type(*string)
-   DclSrParm propName Type(*string)** 
-        </pre>
+
 
 ## Parameters
 

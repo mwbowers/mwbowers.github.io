@@ -10,16 +10,7 @@ title: IPrintProperties.GetBoundType Method
    fieldName string,
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public sub GetBoundType(_<br />   ByVal fieldName As string_
-) As System.Type** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr GetBoundType Type(System.Type) Access(*Public)
-   DclSrParm fieldName Type(*string)** 
- </pre>
+
 
 ## Parameters
 

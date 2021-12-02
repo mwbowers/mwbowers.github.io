@@ -10,17 +10,7 @@ Initialize the <span> **AdgDataSet** </span> base class.
    string name
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal name As String _
-)** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-   DclSrParm name Type(*String)** 
-      </pre>
+
       <span/>
 
 ## Parameters

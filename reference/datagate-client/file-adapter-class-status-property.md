@@ -10,11 +10,6 @@ title: FileAdapter.Status Property
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public ReadOnly Status As [FileAdapter.AdapterStatus](file-adapter-adapter-status-enumeration.html)** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp Status Type(FileAdapter.AdapterStatus) Access(*Public)
-   BegGet** 
-      </pre>
 
 ## Property Value
 
@@ -38,19 +33,7 @@ Here we want to use a fileAdapter object named "dbFile" but are unsure as to whe
       dbFile.OpenNewAdgDataSet(out myDataSet);
   }
   </pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  If dbFile Is Nothing Then
-      dbFile = New FileAdapter
-  End If
-  If dbFile.Status = FileAdapter.AdapterStatus.Closed Then
-      dbFile.Connection = myAdgConnection
-      dbFile.FileName = fileName
-      dbFile.MemberName = memberName
-      dbFile.OpenNewAdgDataSet(myDataSet)
-  End If
-</pre>
+
 
 ## Requirements
 

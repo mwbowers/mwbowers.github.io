@@ -9,14 +9,7 @@ Sets all parameters in the parameter list to default 'zero' values.
  **public SetParmsZeroValue(
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function SetParmsZeroValue( )** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc SetParmsZeroValue Access(*Public)** 
-      </pre>
+
 
 ## Remarks
 

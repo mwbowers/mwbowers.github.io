@@ -8,14 +8,7 @@ title: AuthorityEntry.IsGroupAccount Field
         <span class="lang">[C#]</span>
  **public bool IsGroupAccount** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public IsGroupAccount As boolean** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **DclFld Name(IsGroupAccount) Type(*boolean) Access(*Public)** 
-      </pre>
+
 
 ## Field
  Value

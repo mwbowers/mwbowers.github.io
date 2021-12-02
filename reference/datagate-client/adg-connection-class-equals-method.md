@@ -10,16 +10,7 @@ title: AdgConnection.Equals Method
    object obj
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Overrides Function Equals(_
- ByVal obj As Object
-) As Boolean** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc Equals Type( *Boolean ) Access( *Public ) Modifier( *Overrides )** 
-      </pre>
+
 
 ## Parameters
 

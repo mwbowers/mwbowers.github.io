@@ -8,14 +8,7 @@ Gets and sets the current database’s initial library list.
         <span class="lang">[C#]</span>
  **public string[] InitialLibl { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Property InitialLibl As String()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp InitialLibl Type(*String) Rank(1) Access(*Public)** 
-      </pre>
+
 
 ## Property Value
 

@@ -12,21 +12,7 @@ Returns an object of a specific type from the program parameter list.
    int[] ElementIndices
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Function ParmToObject( _
-   ByVal ReturnType As Type, _
-   ByVal ParameterName As String, _
-   ByVal ElementIndices[] As Integer _
-) As Object** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ParmToObject Access(*Public) Type(Object)
-   DclSrParm ReturnType Type(Type)
-   DclSrParm ParameterName Type(*String)
-   DclSrParm ElementIndices Type(*Integer) Len(4) Rank(1)** 
-      </pre>
+
 
 ## Parameters
 

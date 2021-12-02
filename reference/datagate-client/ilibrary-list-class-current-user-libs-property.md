@@ -8,15 +8,7 @@ title: ILibraryList.CurrentUserLibs Property
         <span class="lang">[C#]</span>
  **public string[] CurrentUserLibs { get; set }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Property CurrentUserLibs As String()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp CurrentUserLibs Type(*string) Access(*public) Rank(1)
-   BegGet;  BegSet** 
-      </pre>
+
 
 ## Property Value
 

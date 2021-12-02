@@ -15,26 +15,7 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 [XmlOptions](xml-options-enumeration.html) options
 );** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Sub ReadXml( _
-   ByVal cn As [AdgConnection](adg-connection-class.html) _<br />   ByVal containerPath As string _
-   ByVal docObjectType As <a ref="dcsAdgObjectTypesEnumeration.htm">AdgObjectTypes</a> _
-   ByVal docObjectNewName As string _
-   ByVal reader As System.Xml.XmlReader _
-   ByVal options As [XmlOptions](xml-options-enumeration.html)
-   ) As IAdgObject** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr ReadXml Access(*Public) Type(IAdgObject)
-   DclSrParm cn Type([AdgConnection](adg-connection-class.html))
-   DclSrParm containerPath Type(*string)
-   DclSrParm docObjectType Type([AdgObjectTypes](adg-object-types-enumeration.html))
-   DclSrParm docObjectNewName Type(*string)
-   DclSrParm reader Type(System.Xml.XmlReader)
-   DclSrParm options Type([XmlOptions](xml-options-enumeration.html))** 
-      </pre>
+
 
 ## Parameters
 

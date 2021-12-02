@@ -8,15 +8,7 @@ title: ILibraryList.UserConfig Property
         <span class="lang">[C#]</span>
  **public string[] UserConfig { get;  set}** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **public Property UserConfig As String()** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp UserConfig Type(*string) Access(*Public) Rank(1)
-     BegGet;  BegSet** 
-      </pre>
+
 
 ## Property Value
 

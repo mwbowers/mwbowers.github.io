@@ -8,14 +8,7 @@ A user or profile name for authenticating access to the host platform.
         <span class="lang">[C#]</span>
  **public string User { get; set; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public Property User As String** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp User Type(*String) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
+
 
 ## Property
  Value

@@ -10,10 +10,6 @@ Use **Create** to create a new database object reflecting the current state of *
 <pre>        <span class="lang">[Visual Basic] </span>
  **Public Sub Create() As System.Void** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegSr Create Access(*Public) Type(System.Void)** 
-      </pre>
 
 ## Parameters
 

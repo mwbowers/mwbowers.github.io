@@ -57,34 +57,7 @@ Set the value of **ShareTypes** to request the type of sharing required by your 
 
   dbFile.Close();
   db.Close();</pre>
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' We open the file in order to delete all of its records. 
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER")
-  dbFile.AccessMode = AccessMode.Delete
-  ' Its generally good practice to make sure you have an exclusive lock
-  ' on a file that you are deleting all of the records from, but some
-  ' databases do not require it. 
-  dbFile.OpenAttributes.ShareTypes = ShareTypes.Exclusive
-  Dim myDS As AdgDataSet = Nothing
 
-  Try
-      dbFile.Open(myDS)
-      dbFile.DeleteAllRecords()
-  Catch dgEx As dgException
-      db.Close()
-      If dgEx.Error = dgErrorNumber.dgEmBUSYOBJ Then
-          MsgBox("Couldn't open the file For exclusive access.", MsgBoxStyle.Critical, "Error opening file.")
-          'Exit routine or procedure here to avoid preceding file operations.
-      Else
-          Throw dgEx
-      End If
-  End Try
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

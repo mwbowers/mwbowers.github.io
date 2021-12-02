@@ -16,12 +16,6 @@ Converts the named database into a SourceProfile object.
    ByVal bFromRegistry As Boolean
 ) As SourceProfile** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegFunc ToSourceProfile Access(*Public) Type(SourceProfile)
-   DclSrParm dbName Type (*String)
-   DclSrParm bFromRegistry Type (*Boolean)** 
-      </pre>
 
 ## Parameters
 

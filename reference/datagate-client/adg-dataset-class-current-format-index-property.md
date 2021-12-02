@@ -8,15 +8,7 @@ The current format index of the **AdgDataSet** .
         <span class="lang">[C#]</span>
  **public int CurrentFormatIndex { get; }** 
       </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property CurrentFormatIndex As Integer** 
-      </pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
- **BegProp CurrentFormatIndex Access(*Public) Type(*Integer) Len(4)
-   BegGet** 
-      </pre>
+
 
 ## Property Value
 
