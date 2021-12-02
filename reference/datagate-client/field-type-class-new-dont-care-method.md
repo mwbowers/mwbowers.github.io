@@ -4,10 +4,6 @@ title: FieldType.NewDontCare Method
 ---
 
 Creates a new [FieldType](field-type-class.html) described only in terms of length.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewDontCare(<br />	int length<br />);**   </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewDontCare( _<br />	ByVal length As Integer _<br />) As [FieldType](field-type-class.html)**  </pre>
 
 ## Parameters
 

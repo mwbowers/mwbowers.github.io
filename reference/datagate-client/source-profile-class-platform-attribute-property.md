@@ -35,22 +35,6 @@ The **PlatformAttribute** property is used to distinguish between different data
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Register the database name "My Local" to specIfy the local database. 
-  Dim newDbProfile As New SourceProfile("My Local", False)
-  newDbProfile.Server = "*LOCAL"
-  newDbProfile.User = "User1"
-  newDbProfile.Password = "password" ' Note- not very secure. 
-  newDbProfile.Label = "DG 7 Database"
-  newDbProfile.PoolingTimeout = 0
-  ' SpecIfy *DATALINK since we're connecting to the datagate engine. 
-  newDbProfile.PlatFormAttribute = "*DATALINK"
-  newDbProfile.Text = "New database at valid ip address, on port 5047."
-  ' Register the database name. 
-  newDbProfile.Register()</pre>
 
 ## Requirements
 

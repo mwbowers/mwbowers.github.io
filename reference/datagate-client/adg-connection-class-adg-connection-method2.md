@@ -56,27 +56,6 @@ The *dbName* parameter is used to construct a new **SourceProfile** instance, us
       //At this point, dataBase will be set to null.  Do error handling here.
       System.Windows.Forms.MessageBox.Show(e.Message, "Unable to create connection.");
   }</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Try
-      Dim dataBase As New AdgConnection("*Public/DG NET IBM i")
-  Catch e As dgException
-      'At this point, dataBase will be set to nothing.  Do error handling here.
-      MsgBox(e.Message, MsgBoxStyle.Exclamation, "Unable to create connection.")
-  End Try</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  Try
-      DclFld dataBase Type(AdgConnection)
-      dataBase = *New AdgConnection("*Public/DG NET IBM i")
-  Catch e Type(dgException)
-      //At this point, dataBase will be set to *NOTHING. Do error handling here.
-      MsgBox e.Message "Unable to create connection."); 
-  EndTry</pre>
 
 ## Requirements
 

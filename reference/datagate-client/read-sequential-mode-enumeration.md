@@ -83,60 +83,6 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
   dbFile.SeekKey(SeekMode.SetGT, keyTbl);
   dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Read);
   </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET iSeries")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.ReadWrite
-  Dim myDS As AdgDataSet = Nothing
-
-  ' Note that exception trapping is omitted here for clearity.
-  dbFile.OpenNewAdgDataSet(myDS)
-  ' We read the first customer For this file (customer number 100)-
-  'the record is represented in myDS's active row property. 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.First, LockRequest.Read)
-
-  ' We read the next customer For this file (customer number 200). 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-
-  ' We read the last record in the file (should be customer number 100000). 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Last, LockRequest.Read)
-
-  ' We read the previous record (which gives us customer number 99900).
-  'We also lock the record. 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Write)
-
-  ' We unlock the record so that other users can view or update it. 
-  dbFile.ReleaseCurrent()
-
-  ' ... Some time passes... 
-
-  ' We lock the current record by reading it again. 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Current, LockRequest.Write)
-
-  ' Close this file and open a dIfferent one. 
-  dbFile.Close()
-  dbFile.FileName = "*Libl/CSMASTERL1"
-  dbFile.MemberName = "CSMASTERL1"
-
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' We read randomly to find the record For customer number 500.
-  'In this file, several records may have that customer number. 
-  'New file, so reinstantiate key table.
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCSMastL1")
-  keyTbl.Row.Item("CSCustNo") = 500
-  keyTbl.KeyPartCount = 1
-  dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.Read, keyTbl)
-
-  ' Now we get customer number 80000 by setting the file pointer to
-  ' just past it and then reading backwards once.
-  keyTbl.Row.Item("CSCUSTNO") = 80000
-  dbFile.SeekKey(SeekMode.SetGT, keyTbl)
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Read)
- </pre>
 
 ## Requirements
 

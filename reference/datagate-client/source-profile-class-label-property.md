@@ -38,25 +38,6 @@ For single-instance platforms, such as the iSeries, the **Label** property is ig
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Register the database name "My Local" to specIfy the local database.
-  ' Because the local database is a Windows DataGate server, 
-  ' you need to include a valid label as well. 
-  Dim newDbProfile As New SourceProfile("My Local", False)
-  newDbProfile.Server = "*LOCAL"
-  newDbProfile.User = "User1"
-  newDbProfile.Password = "password" ' ' Note- not very secure. 
-  newDbProfile.Label = "DG 7 Database"
-  newDbProfile.PoolingTimeout = 0
-  ' SpecIfy *DATALINK since we're connecting to the datagate engine. 
-  newDbProfile.PlatformAttribute = "*DATALINK"
-  newDbProfile.Text = "New database at valid ip address, on port 5047."
-  ' Register the database name. 
-  newDbProfile.Register()
-</pre>
 
 ## Requirements
 

@@ -70,27 +70,6 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
      dbFile.ReleaseCurrent();
  }
 </pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
- ' Here, we are using a pre-initialized FileAdapter (named "dbFile")
- ' which was opened using AccessMode.RWCD, which automatically locks
- ' each read record read, so it will remain unchanged until we
- ' update it or read a new record. Here we don't want to
- ' update the record If the customer is not from Texas, and If
- ' this code is being called by unknown client code it could be awhile
- ' before the next read. In order to remove the lock without
- ' performing some additional action, we use the ReleaseCurrent method .
- dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default)
- If (myDS.ActiveRow.Item("CMState").ToString() = "TX" And _
-     myDS.ActiveRow.Item("CMActive").ToString() = "0") 
-
-     myDS.ActiveRow.Item("CMActive") = "1"
-     dbFile.ChangeCurrent(myDS)
- Else
-     dbFile.ReleaseCurrent()
- End If</pre>
 
 ## Requirements
 

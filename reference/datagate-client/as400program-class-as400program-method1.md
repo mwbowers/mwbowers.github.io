@@ -26,23 +26,6 @@ Before adding parameters or calling programs with an instance created with this 
   As400Program prog = new As400Program();
   prog.Connection = ProdDB;
   prog.ProgramPath = "*Libl/Call400";</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Here, "ProdDB" is an initialized AdgConnection.
-  Dim prog As New As400Program()
-  prog.Connection = ProdDB
-  prog.ProgramPath = "*Libl/Call400"</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  // Here, "ProdDB" is an initialized AdgConnection.
-  DclFld prog Type(As400Program)
-  prog = *New As400Program()
-  prog.Connection = ProdDB
-  prog.ProgramPath = "*Libl/Call400"</pre>
 
 ## Requirements
 

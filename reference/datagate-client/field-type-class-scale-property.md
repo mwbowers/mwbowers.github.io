@@ -4,10 +4,6 @@ title: FieldType.Scale Property
 ---
 
 The maximum number of digits to the right of the decimal point (for decimal fields only).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int Scale { get; }**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property Scale**  </pre>
 
 ## Property Value
 

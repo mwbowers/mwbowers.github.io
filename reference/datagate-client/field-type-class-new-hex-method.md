@@ -4,10 +4,6 @@ title: FieldType.NewHex Method
 ---
 
 Creates a new hexadecimal data [ FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewHex(<br />   int length<br />);**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewHex( _<br />   ByVal length As Integer _<br />) As [FieldType](field-type-class.html)**  </pre>
 
 ## Parameters
 

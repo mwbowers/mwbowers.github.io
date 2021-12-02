@@ -63,25 +63,6 @@ Example <p>The following example retrieves a database name called "Asna 400 db" 
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' When we specIfy false with this constructor, we're
-  ' telling Datagate not to get inFormation from the
-  ' registry. Thus we can use it to create an entirely
-  ' new database name. 
-  Dim newDbProfile As New SourceProfile("New database", False)
-  newDbProfile.Server = "valid ip address"
-  newDbProfile.User = "User1"
-  newDbProfile.Password = "password" ' ' Note- not very secure.
-  newDbProfile.Port = 5047
-  newDbProfile.PoolingTimeout = 0
-  newDbProfile.PlatformAttribute = "*DATALINK"
-  newDbProfile.Text = "New database at valid ip address, on port 5047."
-  ' Register the database name.
-  newDbProfile.Register()
-</pre>
 
 ## Requirements
 

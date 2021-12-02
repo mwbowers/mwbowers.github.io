@@ -82,60 +82,6 @@ Use the <span> **RecordCount** </span> property to examine the total number of r
   }
   dbFile.Close();
   db.Close();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
-
-  'Used so we don't slow down reshing too much...
-  Dim reshInterval As Integer = 10
-  dbFile.OpenAttributes.BlockingFactor = reshInterval
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' Here, we read every record until end of file is reached.
-  ' Because this is an fairly long process, we set up a progress bar
-  ' to keep the user from being discouraged. We set its Maximum
-  ' value to the number of records in the file, which is found
-  ' using FileAdapter's RecordCount property, divided by
-  ' our reshInterval. 
-  Dim recordsReadSinceLastresh As Integer = 0
-  prgBar.Minimum = 0
-  prgBar.Maximum = Convert.ToInt32(dbFile.RecordCount) / reshInterval
-
-  Dim EOF As Boolean = False
-  While Not EOF
-      Try
-          ' Though it seems like we have to read each record one at a time,
-          ' in reality DG stores the first 10 records the first time we read
-          ' and then afterwards we simply read from the cache. When those run out, 
-          ' DG will automatically grab another ten records from the database.
-          ' Note that 10 is our resh interval, meaning that this I/O operation
-          ' occurs at the same time that we update our progress bar. If the blocking
-          ' factor was higher than our resh interval, not only would we have to 
-          ' wait longer to read the first record but the progress bar would go longer
-          ' withbeing updated. 
-          dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.NoWait)
-          ' Perform some action on each record here... 
-          recordsReadSinceLastresh = recordsReadSinceLastresh + 1
-          If recordsReadSinceLastresh = reshInterval Then
-              recordsReadSinceLastresh = 0
-              prgBar.PerformStep()
-              Me.Refresh() 'reshes the form.
-          End If
-      Catch dgEx As dgException
-          If dgEx.Error = dgErrorNumber.dgEaEOF Then
-              EOF = True
-          Else
-              'Exit procedure or end application here.
-          End If
-      End Try
-  End While
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

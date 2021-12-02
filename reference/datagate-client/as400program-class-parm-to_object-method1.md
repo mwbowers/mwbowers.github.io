@@ -81,62 +81,6 @@ The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occu
         Parms[1],
         prog.ParmToObject(System.Type.GetType("System.Decimal"),
         new int[]{}));</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Here, Prog is an initialized As400Program object, 
-  ' and CustName, TimeOfDay, and Quit400App are valid
-  ' string, decimal, and char types respectively.
-  Dim Parms(2) As ProgParm
-  Parms(0) = New ProgParm( _
-        New ProgParmType("CustName", 0, FieldType.NewChar(40)), DataDirection.Output)
-  Parms(1) = New ProgParm( _
-        New ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), DataDirection.Output)
-  Parms(2) = New ProgParm( _
-        New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), DataDirection.Input)
-  Prog.AppendParms(Parms)
-  Prog.ObjectToParm(Parms(2), Quit400App, 0)
-  Prog.Execute()
-  ' After calling the last two values in the parameter list
-  ' will have new values in it.  To read them, we set our local 
-  ' variables to the returned values in the parameters list.
-  CustName = Convert.ToString( _
-        Parms[0], _
-        Prog.ParmToObject(System.Type.GetType("System.String"), _
-        New Integer() {}))
-  TimeOfDay = Convert.ToDecimal( _
-        Parms[1], _
-        Prog.ParmToObject(System.Type.GetType("System.Decimal"), _
-        New Integer() {}))</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* Here, Prog is an initialized As400Program object, 
-   * and CustName, TimeOfDay, and Quit400App are valid
-   * string, decimal, and char types respectively. */
-  DclArray Parms Type(ProgParm) Dim(3)
-  Parms[0] = *New ProgParm( +
-        *New ProgParmType("CustName", 0, FieldType.NewChar(40)), DataDirection.Output)
-  Parms[1] = *New ProgParm( +
-        *New ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), DataDirection.Output)
-  Parms[2] = *New ProgParm( +
-        *New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), DataDirection.Input)
-  prog.AppendParms(Parms)
-  prog.ObjectToParm(Parms[2], Quit400App, 0)
-  prog.Execute()
-  /* After calling the last two values in the parameter list
-   * will have new values in it.  To read them, we set our local 
-   * variables to the returned values in the parameters list. */
-  CustName = Convert.ToString( +
-        Parms[0], +
-        prog.ParmToObject(System.Type.GetType("System.String"), +
-        *Nothing *As *Integer4[]))
-  TimeOfDay = Convert.ToDecimal( +
-        Parms[1], +
-        prog.ParmToObject(System.Type.GetType("System.Decimal"), +
-        *Nothing *As *Integer4[])) </pre>
 
 ## Requirements
 

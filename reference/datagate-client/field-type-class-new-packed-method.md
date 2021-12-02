@@ -4,10 +4,6 @@ title: FieldType.NewPacked Method
 ---
 
 Creates a new packed decimal [ FieldType](field-type-class.html).
-<pre class="prettyprint">       <span class="lang">[C#]</span>
- **public static FieldType NewPacked(<br />   int prec,<br />   int scale<br />);**  </pre>
-<pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewPacked( _<br />   ByVal prec As Integer, _<br />   ByVal scale As Integer _<br />) As [FieldType](field-type-class.html)**  </pre>
 
 ## Parameters
 

@@ -50,10 +50,6 @@ Note that DG never adds the **DataRow** referenced by the **Row** property to th
   //customer name "Thilmany Of Bread Co Resources" and store it
   //in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span></pre>
 <pre>  ' This example will open a file and find the record for
   ' the customer "Thilmany of Bread Co Resources".
   ' It omits error trapping for clarity's sake.
@@ -79,20 +75,6 @@ Note that DG never adds the **DataRow** referenced by the **Row** property to th
   ' in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key)
  </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* This example will open a file and find the record for
-     the customer "Thilmany of Bread Co Resources".
-     It omits error trapping for clearity's sake. */
-  DclFld db Type(AdgConnection) New("*Public/DG NET Local")
-  db.Open()
-  DclFld file Type(FileAdapter) New(db)
-  file.FileName = "Examples//CMastNewL2"
-  DclFld dataSet Type(AdgDataSet)
-  file.OpenNewAdgDataSet(*ByRef dataSet)
-</pre>
 <pre class="prettyprint">  // This next line creates a key based on record format RCMMastL2
   DclFld key Type(AdgKeyTable)
   key = dataSet.NewKeyTable("RCMMastL2")

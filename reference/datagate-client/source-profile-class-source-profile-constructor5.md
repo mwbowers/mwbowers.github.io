@@ -54,14 +54,6 @@ This constructor is useful for creating an object capable of registering databas
   /* This creates a brand new database name using the
    * old source profile.*/
   SourceProfile newDbProfile2 = new SourceProfile("Brand New DB Name", sp);</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This creates a brand new database name using the
-  ' old source profile.
-  Dim newDbProfile2 As New SourceProfile("Brand New DB Name", sp)
-</pre>
 
 ## Requirements
 

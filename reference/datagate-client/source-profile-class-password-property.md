@@ -32,17 +32,6 @@ This property should only be set if the user profile has an associated password,
   sp.User = "NewUser";
   sp.Password = "NewPassword";
   AdgConnection database = new AdgConnection(sp);</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Connect using the already established database name 
-  ' "*PUBLIC/DG NET iSeries" but use a dIfferent
-  ' username and password. 
-  Dim sp As New SourceProfile("*PUBLIC/DG NET iSeries")
-  sp.User = "NewUser"
-  sp.Password = "NewPassword"
-  Dim database As New AdgConnection(sp)</pre>
 
 ## Requirements
 

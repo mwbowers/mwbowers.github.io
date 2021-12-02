@@ -34,21 +34,6 @@ Gets or sets the initial library list for this database.
   newList[i] = "IMPORTS";
   sp.InitialLibl = newList;
   sp.Register();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This code will update the database name "SalesDB" to include
-  ' "IMPORTS" in its library list. 
-  Dim sp As New SourceProfile("SalesDB")
-  Dim newList(sp.InitialLibl.Length) As String
-  Dim i As Integer
-  For i = 0 To sp.InitialLibl.Length - 1
-      newList(i) = sp.InitialLibl(i)
-  Next i
-  newList(i) = "IMPORTS"
-  sp.InitialLibl = newList
-  sp.Register()</pre>
 
 ## Requirements
 

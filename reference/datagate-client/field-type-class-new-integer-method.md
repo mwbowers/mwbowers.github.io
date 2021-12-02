@@ -4,10 +4,6 @@ title: FieldType.NewInteger Method
 ---
 
 Creates a new integer [ FieldType](field-type-class.html).
-<pre class="prettyprint">       <span class="lang">[C#]</span>
- **public static FieldType NewInteger(<br />   int length<br />);**  </pre>
-<pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewInteger( _<br />   ByVal length As Integer _<br />) As [FieldType](field-type-class.html)**  </pre>
 
 ## Parameters
 

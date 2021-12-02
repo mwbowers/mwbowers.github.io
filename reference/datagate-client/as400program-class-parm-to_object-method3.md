@@ -64,34 +64,6 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
   CustName = Convert.ToString(<br />      prog.ParmToObject(System.Type.GetType("System.String"),<br />      "CustName",<br />       0));
   TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),<br />      "TimeOfDay",<br />      0));</pre>
 
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* Here, Prog is an initialized As400Program object, 
-   * and CustName, TimeOfDay, and Quit400App are valid
-   * string, decimal, and char types respectively. */
-  DclArray Parms Type(ProgParm) Dim(3)
-  Parms[0] = *New ProgParm( +
-        *New ProgParmType("CustName", 0, FieldType.NewChar(40)), DataDirection.Output)
-  Parms[1] = *New ProgParm( +
-        *New ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), DataDirection.Output)
-  Parms[2] = *New ProgParm( +
-        *New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), DataDirection.Input)
-  prog.AppendParms(Parms)
-  prog.ObjectToParm(Parms[2], Quit400App, 0)
-  prog.Execute()
-  /* After calling the last two values in the parameter list
-   * will have new values in it.  To read them, we set our local 
-   * variables to the returned values in the parameters list. */
-  CustName = Convert.ToString( +
-        prog.ParmToObject(System.Type.GetType("System.String"), +
-        "CustName", +
-        0))
-  TimeOfDay = Convert.ToDecimal( +
-        prog.ParmToObject(System.Type.GetType("System.Decimal"), +
-        "TimeOfDay", +
-        0)) </pre>
 
 ## Requirements
 

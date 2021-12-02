@@ -77,37 +77,6 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0);
 </pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Here, "prog" is an initialized As400Program object.
-  ' The first two lines creates a IBM i character data type whose
-  ' length is one, and then appends it to "prog"'s parameter list. */
-  Dim QuitParm As New ProgParm( _
-        New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), _
-        DataDirection.InputOutput )
-  prog.AppendParm(QuitParm)
-  Dim QuitChar As Char
-  QuitChar = "1"
-  ' This next line assigns the .NET value, CustName, to the
-  ' IBM i data type of the same name in the parameter list. */
-  prog.ObjectToParm(QuitParm, QuitChar, 0)</pre>
-<pre>
-        <span class="lang">
- **[Visual RPG]** 
-  </span>/* Here, "prog" is an initialized As400Program object.
-   * The first two lines creates a IBM i character data type whose
-   * length is one, and then appends it to "prog"'s parameter list. */
-  DclFld QuitParm Type(ProgParm)
-  QuitParm = *New ProgParm( +
-        *New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), +
-        DataDirection.InputOutput )
-  prog.AppendParm(QuitParm)
-  DclFld QuitChar Type(*OneChar) Inz('1')
-  /* This next line assigns the .NET value, CustName, to the
-   * IBM i data type of the same name in the parameter list. */
-  prog.ObjectToParm(QuitParm, QuitChar, 0)</pre>
 
 ## Requirements
 

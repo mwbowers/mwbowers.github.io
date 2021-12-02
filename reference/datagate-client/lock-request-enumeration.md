@@ -94,56 +94,6 @@ Note: Some **LockRequest** values are not supported by certain database provider
           "\", met the search requirements.", "Customer found.");
   }
 </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.RWCD
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " &amp; dgEx.Message, MsgBoxStyle.Critical, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  ' We're only checking these records and don't want to waste time by
-  ' locking every one, so we use LockRequest.NoLock. 
-  ' Note that a quicker way to find a record with such a specIfic 
-  ' criteria is to use the OpenSimpleQuery method of FileAdapter. 
-  ' This is merely an example. 
-  Dim EOF As Boolean = False
-  While Not EOF
-      Try
-          dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.NoLock)
-          If (Convert.ToDecimal(myDS.ActiveRow.Item("CMCUSTNO")) &gt; 30000 And Convert.ToString(myDS.ActiveRow.Item("CMNAME")).StartsWith("A")) Then
-              ' We read once backwards to get the record again, and this
-              ' time we lock it. 
-              dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Default)
-              Exit While
-          End If
-      Catch dgEx As dgException
-          If (dgEx.Error = dgErrorNumber.dgEaEOF) Then
-              EOF = True
-          Else
-              Throw dgEx
-          End If
-      End Try
-  End While
-  If EOF Then
-      MsgBox("End of file was reached- record not found.", "Record not found.")
-  Else
-      ' We now make the name all lower case beFore updating the file. 
-      myDS.ActiveRow.Item("CMName") = myDS.ActiveRow.Item("CMName").ToString().ToLower()
-      MsgBox("Customer number " &amp; _
-      Convert.ToDecimal(myDS.ActiveRow.Item("CMCUSTNO")).ToString() &amp; _
-          ", """ + Convert.ToString(myDS.ActiveRow.Item("CMName")) &amp; _
-          """, met the search requirements.", "Customer found.")
-  End If
-</pre>
 
 ## Requirements
 

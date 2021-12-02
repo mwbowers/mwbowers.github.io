@@ -50,27 +50,6 @@ This method is used to transition an **AdgConnection** object to the Open state.
   {
       System.Windows.Forms.MessageBox.Show(e.Message, "Error establishing connection to database.");
   }</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Try
-      Dim dataBase As New AdgConnection("*Public/DG NET IBM i")
-      dataBase.Open()
-  Catch e As dgException
-      MsgBox(e.Message, MsgBoxStyle.Exclamation, "Error establishing connection to database.")
-  End Try</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  Try
-      DclFld dataBase Type(AdgConnection)
-      dataBase = *New AdgConnection("*Public/DG NET IBM i")
-      dataBase.Open()
-  Catch e Type(dgException)
-      MsgBox e.Message "Error establishing connection to database."); 
-  EndTry</pre>
 
 ## Requirements
 

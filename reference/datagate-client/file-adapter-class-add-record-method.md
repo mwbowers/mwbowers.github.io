@@ -89,46 +89,6 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
      //Exit procedure or end application here.
   }</pre>
 
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  DclFld db Type(AdgConnection) New("*Public/DG NET Local")
-  DclFld dbFile Type(FileAdapter)
-  dbFile = *New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.RWCD
-
-  DclFld myDS Type(AdgDataSet) Inz(*Nothing)
-  Try
-     db.Open()
-     dbFile.OpenNewAdgDataSet(*ByRef myDS)
-  Catch dgEx Type(dgException)
-     MessageBox.Show("Error opening file! " + dgEx.Message, 
-            "Error")
-     //Exit procedure or end application here.
-  EndTry
-
-  DclFld newRow Type(DataRow)
-  newRow = myDS.PrepareRow(0)
-  newRow.Item("CMCustNo") = 50
-  newRow.Item("CMName") = "Amalgamated Software of North America"
-  newRow.Item("CMAddr1") = "IH-10 West"
-  newRow.Item("CMCity") = "San Antonio"
-  newRow.Item("CMState") = "TX"
-  newRow.Item("CMCntry") = "US"
-  newRow.Item("CMPostCode") = "78230"
-  newRow.Item("CMActive") = "1"
-  newRow.Item("CMFax") = "2105554679"
-  newRow.Item("CMPhone") = "555-4678"
-  myDS.AddPreparedRowAndSetActive(0)
-  Try
-     dbFile.AddRecord(myDS)
-  Catch dgEx Type(dgException)
-     MessageBox.Show("Adding new record was unsuccessful! " 
-            +
-        + dgEx.Message, "Error!")
-     //Exit procedure or end application here.
-  EndTry</pre>
 
 ## Requirements
 

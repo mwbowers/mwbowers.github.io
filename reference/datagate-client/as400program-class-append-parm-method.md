@@ -59,46 +59,6 @@ The **ProgParm** appended to the list may optionally be named via the <span>name
   CustName = Convert.ToString(
         prog.ParmToObject(System.Type.GetType("System.String"), "CustName", 
         new int[]{}));  </pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Here, prog is an initialized As400Program.
-  ' We add the field "CustName" to the parm list, and a local
-  ' string variable by the same name into it.  After calling the
-  ' program, we then set the local variable to the returned
-  ' value in the parms list.
-  prog.AppendParm( New ProgParm( _
-        New ProgParmType("CustName", 0, FieldType.NewChar(40)), _
-        DataDirection.InputOutput _
-  ))
-  ' Store the value to pass in.
-  prog.ObjectToParm( CustName, "CustName", New Integer(){} )
-  prog.Execute()
-  ' Fetch the returned value.
-  CustName = Convert.ToString( _
-        prog.ParmToObject(System.Type.GetType("System.String"), "CustName", _
-        New Integer(){}))</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* Here, prog is an initialized As400Program.
-   * We add the field "CustName" to the parm list, and a local
-   * string variable by the same name into it.  After calling the
-   * program, we then set the local variable to the returned
-   * value in the parms list. */
-  prog.AppendParm( *New ProgParm( +
-        *New ProgParmType("CustName", 0, FieldType.NewChar(40)), +
-        DataDirection.InputOutput + 
-  ))
-  //Store the value to pass in.
-  prog.ObjectToParm( CustName, "CustName", *Nothing *As *Integer4[] )
-  prog.Execute()
-  //Fetch the returned value.
-  CustName = Convert.ToString( +
-        prog.ParmToObject(System.Type.GetType("System.String"), "CustName", +
-        *Nothing *As *Integer4[]))</pre>
 
 ## Requirements
 

@@ -27,14 +27,6 @@ The <span> **Server** </span> property may either be: 1) a Domain Name System (D
   sp.Server = "555.93.279.303";
   sp.Register(); /* Save changes. */
 </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' The code below updates a database profile to use a different IP address. 
-  Dim sp As New SourceProfile("CustomerDB")
-  sp.Server = "555.93.279.303"
-  sp.Register() ' Save changes. </pre>
 
 ## Requirements
 

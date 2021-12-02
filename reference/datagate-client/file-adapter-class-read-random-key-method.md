@@ -117,26 +117,6 @@ Calling this method cancels "range mode". A prior successful call to [ReadRange]
 
   dbFile.Close();
   db.Close();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-  ' We retrieve the record for customer number 92300. 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-  keyTbl.Row.Item("CMCUSTNO") = 92300
-  Try
-      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.Default, keyTbl)
-  Catch dgEx As dgException
-      MsgBox("Error finding the record: " &amp; dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-  End Try
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

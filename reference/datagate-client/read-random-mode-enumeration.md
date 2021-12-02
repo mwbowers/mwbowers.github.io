@@ -62,33 +62,6 @@ ReadRandomMode Enumeration defines values in which you can select one of the cho
       MessageBox.Show("Error deleting the record: " + dgEx.Message,
       dgEx.Error.ToString());
   }</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL2", "CMMASTERL2")
-  dbFile.AccessMode = AccessMode.RWCD
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  ' We retrieve the record For customer "Rand Of Distribix Fl Varnish"... 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL2")
-  keyTbl.Row.Item("CMNAME") = "Rand Of Distribix Fl Varnish"
-  Try
-      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.Default, keyTbl)
-      '... and delete it! 
-      dbFile.DeleteCurrent()
-  Catch dgEx As dgException
-      MsgBox("Error deleting the record: " &amp; dgEx.Message, _
-      MsgBoxStyle.Critical, dgEx.Error.ToString())
-  End Try</pre>
 
 ## Requirements
 

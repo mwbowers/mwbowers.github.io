@@ -148,12 +148,6 @@ Const srcStr As String = "asna network database"
         Close()
     End Sub
 End Class</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>					
-Using ASNA.DataGate.Client
-Using ASNA.DataGate.Common</pre>
 <pre class="prettyprint">BegClass Form1 Extends (System.Windows.Forms.Form) Access(*Public)
 DclFld Name (srcStr)Type (*String = "asna network database")
 DclFld Name (cx) Type (AdgConnection = New AdgConnection(srcStr)

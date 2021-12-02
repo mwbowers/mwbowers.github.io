@@ -7,11 +7,6 @@ Initialize the **FileOpenAttr** base class.
 <pre class="prettyprint">       <span class="lang">[C#]</span>
  **Public FileOpenAttr();** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub New()**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)** 
-      </pre>
 
 ## Exceptions
 

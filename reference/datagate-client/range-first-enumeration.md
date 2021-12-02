@@ -70,38 +70,6 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
 
   dbFile.Close();
   db.Close();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.RWCD
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  ' We erase all records with a customer number equal to
-  ' or greater than 5000 and less than, but not
-  ' equal to, 6000. 
-  Dim OneKey As AdgKeyTable = myDS.NewKeyTable("RCMMastL1")
-  OneKey.Row.Item("CMCustNo") = 5000
-  Dim TwoKey As AdgKeyTable = myDS.NewKeyTable("RCMMastL1")
-  TwoKey.Row.Item("CMCustNo") = 6000
-  Try
-      dbFile.DeleteRange(OneKey, RangeFirst.Include, TwoKey, RangeLast.Exclude)
-  Catch dgEx As dgException
-      MsgBox("Error deleting records 5000-6000 :" &amp; _
-          dgEx.Message, MsgBoxStyle.Critical, "Error")
-  End Try
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

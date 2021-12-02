@@ -4,10 +4,6 @@ title: FieldType.NewZoned Method
 ---
 
 Creates a new zoned decimal [ FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewZoned(<br />   int prec,<br />   int scale<br />)**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewZoned( _<br />   ByVal prec As Integer, _<br />   ByVal scale As Integer<br />) As [FieldType](field-type-class.html)**  </pre>
 
 ## Parameters
 

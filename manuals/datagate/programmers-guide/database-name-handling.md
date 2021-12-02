@@ -16,27 +16,6 @@ The following example retrieves a database name called "Asna 400 db" (in the pro
   AsnaDbName.User = "NewUser";
   AsnaDbName.Password = "NewPasswd";
   AsnaDbName.Register()</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Imports ASNA.DataGate.Providers
-  Dim AsnaDbName As SourceProfile
-  AsnaDbName = New SourceProfile("Asna 400 db")
-  AsnaDbName.User = "NewUser"
-  AsnaDbName.Password	= "NewPasswd"
-  AsnaDbName.Register()</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  Using ASNA.DataGate.Providers
-  Dclfld Name(AsnaDbName) Type(SourceProfile
-  AsnaDbName = *New ("Asna 400 db")
-  AsnaDbName.User = "NewUser" 
-  AsnaDbName.Password = "NewPasswd" 
-  AsnaDbName.Register()
-			</pre>
 
 To discover the currently registered database names available for use in a program, use the [SourceProfile.GetNames](source-profile-class-get-names-method.html) static method. This method returns an array of strings as shown in the following example. This snippet of AVR code will print "*PUBLIC" and "User" database names registered on the machine where the code runs. 
 <pre>
@@ -53,31 +32,6 @@ To discover the currently registered database names available for use in a progr
 				Type(*String);
   Console.WriteLine( "  " + DbName );
   Endfor;</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Console.WriteLine( "*Public Database Names:" )
-  For each Name(DbName) Collection([SourceProfile.GetNames](source-profile-class-get-names-method.html)(*True)) 
-				Type(*String)
-     Console.WriteLine( "  *Public\" + DbName )
-  End for
-     Console.WriteLine( "User Database Names:" )
-  For each Name(DbName) Collection(SourceProfile.GetNames(*False)) 
-				Type(*String)
-  Console.WriteLine( "  " + DbName )
-  End for</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-     Console.WriteLine( "*Public Database Names:" )
-  Foreach Name(DbName) Collection([SourceProfile.GetNames](source-profile-class-get-names-method.html)(*True)) 
-				Type(*String)
-     Console.WriteLine( "  *Public\" + DbName )
-  Endfor
-     Console.WriteLine( "User Database Names:" )
-  Foreach Name(DbName) Collection(SourceProfile.GetNames(*False)) Type(*String)</pre>
 
 Console.WriteLine( " " + DbName ) Endfor <p> **SourceProfile** objects may be assigned to the [ AdgConnection.SourceProfile](adg-connection-class-source-profile-property.html) property to force a subsequent call to [ AdgConnection.Open](adg-connection-class-open-method.html) to use the SourceProfile’s connection parameters. Changing **AdgConnection.SourceProfile** has no effect on the database connection of an **AdgConnection** object in the *Open* state. Rather, **AdgConnection.SourceProfile** is used by the **AdgConnection.Open** method to initialize the database connection. 
 ## See Also

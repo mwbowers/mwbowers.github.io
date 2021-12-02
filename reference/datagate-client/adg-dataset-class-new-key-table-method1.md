@@ -67,11 +67,6 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
   //customer name "Thilmany Of Bread Co Resources" and store it
   //in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-</pre>
 <pre class="prettyprint">  ' This example will open a file and find the record for
   ' the customer "Thilmany of Bread Co Resources".
   ' It omits error trapping for clearity's sake.
@@ -97,36 +92,6 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
   ' in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key)
  </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* This example will open a file and find the record for
-     the customer "Thilmany of Bread Co Resources".
-     It omits error trapping for clearity's sake. */
-  DclFld db Type(AdgConnection) New("*Public/DG NET Local")
-  db.Open()
-  DclFld file Type(FileAdapter) New(db)
-  file.FileName = "Examples//CMastNewL2"
-  DclFld dataSet Type(AdgDataSet)
-  file.OpenNewAdgDataSet(*ByRef dataSet)
-
-  // This next line creates a key based on record format RCMMastL2
-
-  DclFld key Type(AdgKeyTable) 
-  key = dataSet.NewKeyTable("RCMMastL2") 
-
-  /* We specifiy KeyPartCount to avoid specifiying the second
-     key field. We then set the keyfield "CMName" to our search argument.*/
-
-  key.KeyPartCount = 1 
-  key.Row["CMName"] = "Thilmany Of Bread Co Resources" 
-
-  /* The following read will find the record associated with 
-     the customer name "Thilmany Of Bread Co Resources" and store
-     it in dataSet.*/
-
-  file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key)</pre>
 
 ## Requirements
 

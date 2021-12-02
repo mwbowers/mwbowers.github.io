@@ -119,31 +119,6 @@ Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </sp
   dbFile.Close();
   db.Close();
 </pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
-
-  Dim keys As String() = New String() {"CMCUSTNO"}
-  Dim usages As KeyUsages() = New KeyUsages() {KeyUsages.ASCEND}
-
-  ' Read the first customer name listed for Texas. 
-  dbFile.OpenSimpleQuery(myDS, "*UNIQUE", "CMSTATE=""TX""", keys, usages)
-  dbFile.ReadSequential(myDS, ReadSequentialMode.First, LockRequest.Read)
-  Dim FirstInTexas As String = myDS.ActiveRow.Item("CMName").ToString()
-  ' First close the file to avoid throwing an exception... 
-  dbFile.Close()
-  ' Read the first customer name listed in Tennessee. 
-  dbFile.OpenSimpleQuery(myDS, "*UNIQUE", "CMSTATE=""TN""", keys, usages)
-  dbFile.ReadSequential(myDS, ReadSequentialMode.First, LockRequest.Read)
-  Dim FirstInTennessee As String = myDS.ActiveRow.Item("CMName").ToString()
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

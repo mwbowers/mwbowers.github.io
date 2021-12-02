@@ -44,36 +44,6 @@ Read-only. Boolean. Returns **True** when a seek operation resulted in an exact 
           MessageBox.Show("Record 1125 not found.");
   }//Using statement automatically closes dbFile.
   db.Close();</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As AdgConnection = New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' Seek the file pointer to just before Customer number 3000. 
-  Dim key As AdgKeyTable = myDS.NewKeyTable("RCMMastL1")
-  key.Row.Item("CMCustNo") = Convert.ToDecimal(3000)
-  dbFile.SeekKey(SeekMode.SetGE, key)
-  ' We check to see If we matched 3000 or If we went beyond it. 
-  If (dbFile.ExactSeek) Then
-      MsgBox("Record 3000 exists.")
-  Else
-      MsgBox("Record 3000 not found.")
-  End If
-  ' Now we try to find Customer number 1125. 
-  key.Row.Item("CMCustNo") = Convert.ToDecimal(1125)
-  dbFile.SeekKey(SeekMode.SetGE, key)
-  If (dbFile.ExactSeek) Then
-      MsgBox("Record 1125 exists.")
-  Else
-      MsgBox("Record 1125 not found.")
-  End If
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Remarks
 

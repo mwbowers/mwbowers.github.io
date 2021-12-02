@@ -41,21 +41,6 @@ String. The currently registered database names available for use in a program.
   foreach(string name in SourceProfile.GetNames(false)) /* Get non public 
             databases. */
       cbDbName.Items.Add(name);</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This code will fill a combo box with all of the available database
-  ' names.
-  For Each name As String In SourceProfile.GetNames(True) ' Get *PUBLIC 
-            databases.
-      cbDbName.Items.Add(name) ' ' NOTE: The names 
-            appear without the "*PUBLIC/" prefix.
-  Next
-  For Each name As String In SourceProfile.GetNames(False) ' Get non public 
-            databases.
-      cbDbName.Items.Add(name)
-  Next</pre>
 
 ## Requirements
 

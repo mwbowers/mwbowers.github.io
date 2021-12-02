@@ -34,19 +34,6 @@ The default value, **SecurePassphrase** , should be used in most cases for the b
   sp.PasswordType = "Legacy";
   AdgConnection database = new AdgConnection(sp);
 </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Connect using the already established database name 
-  ' "*PUBLIC/DG NET iSeries" but use a different
-  ' username and password. 
-  Dim sp As New SourceProfile("*PUBLIC/DG NET iSeries")
-  sp.User = "NewUser"
-  sp.Password = "NewPassword"
-  sp.PasswordType = "Legacy"
-  Dim database As New AdgConnection(sp)
-</pre>
 
 ## Requirements
 

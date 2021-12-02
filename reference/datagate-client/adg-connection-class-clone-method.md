@@ -52,20 +52,6 @@ Note that a database connection cannot be shared between two instances of **AdgC
   AdgConnection Cx;
   Cx = new AdgConnection("ASNA Local DB");
   Cx.Open();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim Cx As AdgConnection
-  Cx = New AdgConnection("ASNA Local DB")
-  Cx.Open()</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  Dclfld Name(Cx) Type(AdgConnection)
-  Cx = *New AdgConnection("ASNA Local DB")
-  Cx.Open()</pre>
 
 ## Requirements
 

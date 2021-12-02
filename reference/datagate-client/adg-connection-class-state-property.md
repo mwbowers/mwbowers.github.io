@@ -42,39 +42,6 @@ The value of **State** will be set to Open by a successful call to the [Open](ad
      //If the AdgConnection was not ready, you cannot immediately
      //open the file, so take alternative action here.
   }</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-  </span>' Here we need to use an AdgConnection "dataBase" to open
-  ' a file.  We first check to make sure that the AdgConnection has 
-  ' been initialized and that the connection has been made to
-  ' avoid throwing an exception.
-  Dim dbFile As FileAdapter
-  Dim dataSet As AdgDataSet
-  If Not dataBase Is Nothing And dataBase.State = ConnectionState.Open Then
-     dbFile = New FileAdapter(dataBase)
-     dbFile.OpenNewAdgDataSet(dataSet)
-  Else 
-     'If the AdgConnection was not ready, you cannot immediately
-     'open the file, so take alternative action here.
-  End If</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* Here we need to use an AdgConnection "dataBase" to open
-     a file.  We first check to make sure that the AdgConnection has 
-     been initialized and that the connection has been made to
-     avoid throwing an exception. */
-  DclFld dbFile Type(FileAdapter)
-  DclFld dataSet Type(AdgDataSet)
-  If dataBase &lt;&gt; *Nothing *And dataBase.State = ConnectionState.Open
-     dbFile = *New FileAdapter(dataBase)
-     dbFile.OpenNewAdgDataSet(*ByRef dataSet)
-  Else 
-     // If the AdgConnection was not ready, you cannot immediately
-     // open the file, so take alternative action here.
-  EndIf </pre>
 
 ## Requirements
 

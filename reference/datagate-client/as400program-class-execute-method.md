@@ -77,33 +77,6 @@ Upon successful return from **Execute** , the values of any "output" parameters 
      "TimeOfDay",
      new int[]{}));              </pre>
 
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  /* Here, Prog is an initialized As400Program object, 
-   * and CustName, TimeOfDay, and Quit400App are valid
-   * string, decimal, and char types respectively. */
-  DclArray Parms Type(ProgParm) Rank(1)
-  Parms = *New ProgParm[]{ +
-      *New ProgParm(*New ProgParmType("CustName", 0, FieldType.NewChar(40)), +
-      DataDirection.Output), +
-      *New ProgParm(*New ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), +
-      DataDirection.Output), +
-      *New ProgParm(*New ProgParmType("Quit400App", 0, FieldType.NewChar(1)), +
-      DataDirection.Input) +
-  }
-  prog.AppendParms(Parms)
-  prog.ObjectToParm(Quit400App, "Quit400App", *Nothing *As *Integer4[])
-  prog.Execute()
-  CustName = Convert.ToString( +
-     prog.ParmToObject(System.Type.GetType("System.String"), +
-     "CustName", +
-     *Nothing *As *Integer4[]))
-  TimeOfDay = Convert.ToDecimal( +
-     prog.ParmToObject(System.Type.GetType("System.Decimal"), +
-     "TimeOfDay", +
-     *Nothing *As *Integer4[]))</pre>
 
 ## Requirements
 

@@ -88,30 +88,6 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
 
   dbFile.Close();
   db.Close();</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  ' Open a file for reading and deleting- this allows us to delete a record by its key value.
-  dbFile.AccessMode = AccessMode.Delete Or AccessMode.Read
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  ' We retrieve the record for customer number 82900 and delete it! 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-  keyTbl.Row.Item("CMCustNo") = 82900
-  dbFile.DeleteKey(keyTbl)
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

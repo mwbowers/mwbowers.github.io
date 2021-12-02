@@ -86,17 +86,6 @@ Assuming the registered database name information is valid, a **SourceProfile** 
   sp.Password = "NewPassword";
   sp.Register(); /* Updates the information. */
 </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Opens the database "*PUBLIC/DG NET iSeries" and changes the user
-  ' name and password. 
-  Dim sp As New SourceProfile("*PUBLIC/DG NET iSeries")
-  sp.User = "NewUser"
-  sp.Password = "NewPassword" '
-  sp.Register() ' ' Updates the inFormation. 
-</pre>
 
 ## Requirements
 

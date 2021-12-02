@@ -30,22 +30,6 @@ String. Read-only. Returns the parameter passed to the **SourceProfile** [constr
       newItem.SubItems.Add(currentProfile.Text);
       lvDbNames.Items.Add(newItem);
   }</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This code displays all of the *PUBLIC database
-  ' names, along with their descriptive text, to the listview
-  ' "lvDbNames" whose view is set to "View.Details". 
-  Dim newItem As ListViewItem
-  Dim currentProfile As SourceProfile
-  For Each name As String In SourceProfile.GetNames(True)
-      currentProfile = New SourceProfile(name)
-      newItem = New ListViewItem(currentProfile.DatabaseName)
-      newItem.SubItems.Add(currentProfile.Text)
-      lvDbNames.Items.Add(newItem)
-  Next
-</pre>
 
 ## Requirements
 

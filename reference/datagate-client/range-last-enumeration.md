@@ -102,64 +102,6 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
       "% of the customers sampled are active.");
   dbFile.Close();
   db.Close(); </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  ' We read all records with a customer number greater
-  ' than, but not equal to 6000 and less than or equal
-  ' to, 7000. 
-  Dim OneKey As AdgKeyTable = myDS.NewKeyTable("RCMMastL1")
-  OneKey.Row.Item("CMCustNo") = 10000
-  Dim TwoKey As AdgKeyTable = myDS.NewKeyTable("RCMMastL1")
-  TwoKey.Row.Item("CMCustNo") = 40000
-
-  Try
-      dbFile.ReadRange(myDS, RangeMode.First, _
-          LockRequest.Read, OneKey, _
-          RangeFirst.Exclude, TwoKey, _
-          RangeLast.Include)
-  Catch dgEx As dgException
-      MsgBox("Error getting records 10000-40000 :" &amp; _
-          dgEx.Message, MsgBoxStyle.Critical, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  Dim totalSum As Integer = 0
-  Dim activeSum As Integer = 0
-  Dim EOF As Boolean = False
-  While Not EOF
-      Try
-          dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.NoWait)
-          If (Convert.ToChar(myDS.ActiveRow.Item("CMActive")) = "1") Then
-              activeSum = activeSum + 1
-              totalSum = totalSum + 1
-          End If
-      Catch dgEx As dgException
-          If (dgEx.Error = dgErrorNumber.dgEaEOF) Then
-              EOF = True
-          Else
-              'Exit procedure or end application here.
-          End If
-      End Try
-  End While
-
-  MsgBox(Convert.ToDecimal((activeSum / totalSum) * 100) &amp; _
-      "% of the customers sampled are active.")
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

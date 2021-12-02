@@ -4,10 +4,6 @@ title: FieldType.NewDate Method
 ---
 
 Creates a new date [ FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewDate(<br />   DateTimeFormat fmt<br />);**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewDate( _<br />   ByVal fmt As [DateTimeFormat](date-time-format-enumeration.html)       _<br />) As [FieldType](field-type-class.html)**  </pre>
 
 ## Parameters
 

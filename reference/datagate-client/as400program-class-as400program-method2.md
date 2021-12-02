@@ -51,21 +51,6 @@ If *Connection* is set with a null value, or is an **AdgConnection** instance wh
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program(ProdDB);
   prog.ProgramPath = "*Libl/Call400";</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Here, "ProdDB" is an initialized AdgConnection.
-  Dim prog As New As400Program(ProdDB)
-  prog.ProgramPath = "*Libl/Call400"</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  // Here, "ProdDB" is an initialized AdgConnection.
-  DclFld prog Type(As400Program)
-  prog = *New As400Program(ProdDB)
-  prog.ProgramPath = "*Libl/Call400"</pre>
 
 ## Requirements
 

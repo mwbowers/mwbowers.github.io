@@ -103,24 +103,6 @@ Assuming the registered database name information is valid, a **SourceProfile** 
   /* Register the database name. */
   newDbProfile.Register();
 </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' When we specify false with this constructor, we're
-  ' telling Datagate not to get information from the
-  ' registry. Thus we can use it to create an entirely
-  ' new database name. 
-  Dim newDbProfile As New SourceProfile("New database", False)
-  newDbProfile.Server = "valid ip address" '
-  newDbProfile.User = "User1" '
-  newDbProfile.Password = "password" ' ' Note- not very secure. 
-  newDbProfile.Port = 5047 '
-  newDbProfile.PoolingTimeout = 0 '
-  newDbProfile.PlatFormAttribute = "*DATALINK" '
-  newDbProfile.Text = "New database at valid ip address, on port 5047." '
-  ' Register the database name. 
-  newDbProfile.Register() '</pre>
 
 ## Requirements
 

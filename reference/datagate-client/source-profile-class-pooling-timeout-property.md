@@ -32,16 +32,6 @@ If connection pooling is not enabled, when a database and all its associated fil
   sp.PoolingTimeout = 10;
   AdgConnection database = new AdgConnection(sp);
 </pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Connect using the already established database name 
-  ' "*PUBLIC/DG NET iSeries" but use a dIfferent idle
-  ' timeout time. 
-  Dim sp As New SourceProfile("*PUBLIC/DG NET iSeries")
-  sp.PoolingTimeout = 10
-  Dim dataBase As New AdgConnection(sp)</pre>
 
 ## Requirements
 

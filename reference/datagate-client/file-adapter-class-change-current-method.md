@@ -99,37 +99,6 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
   dbFile.Close();
   db.Close();</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read Or AccessMode.Change
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-      'Exit procedure or end application here.
-  End Try
-  ' We read the first record of the file... 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.First, LockRequest.Default)
-  myDS.SetActive(myDS.GetFormatName(0), 0)
-  ' ...and make the customer name all caps. 
-  Dim CustName As String
-  CustName = System.Convert.ToString(myDS.ActiveRow.Item("CMName"))
-  CustName = CustName.ToUpper()
-  myDS.ActiveRow.Item("CMName") = CustName
-  Try
-      ' Here we update the record. 
-      dbFile.ChangeCurrent(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error updating record: " + dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-      ' Exit routine or take alternative action here.
-  End Try
-</pre>
 
 ## Requirements
 

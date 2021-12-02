@@ -51,14 +51,6 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
   FileAdapter dbFile = new FileAdapter(dataBase, "*Libl/CMASTNEWL1");
   dbFile.MemberName = "CMMASTERL1";</pre>
 
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  DclFld dataBase Type(AdgConnection) New("*Public/DG NET IBM i")
-  DclFld dbFile Type(FileAdapter)
-  dbFile = *New FileAdapter(dataBase, "*Libl/CMASTNEWL1")
-  dbFile.MemberName = "CMMASTERL1"</pre>
 
 ## Requirements
 

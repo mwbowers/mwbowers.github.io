@@ -4,10 +4,6 @@ title: FieldType.Precision Property
 ---
 
 The maximum number of digits for decimal fields. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int Precision { get; }**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property Precision As Integer**  </pre>
 
 ## Property Value
 

@@ -135,53 +135,6 @@ Note that if **FileAdapter** was already in range mode, this method will cancel 
 
   dbFile.Close();
   db.Clone();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' The code below will find all of the sales for all 
-  ' customers with a number from 300 to 1400, 
-  ' and read all the customer numbers from lowest to highest. 
-  Dim key1 As AdgKeyTable = myDS.NewKeyTable("RCSMASTL1")
-  key1.Row.Item("CSCUSTNO") = Convert.ToDecimal(300)
-  key1.KeyPartCount = 1
-  Dim key2 As AdgKeyTable = myDS.NewKeyTable("RCSMASTL1")
-  key2.Row.Item("CSCUSTNO") = Convert.ToDecimal(1400)
-  key2.KeyPartCount = 1
-  dbFile.SeekRange(RangeMode.First, key1, RangeFirst.Include, key2, RangeLast.Include)
-
-  ' Read until we go past record 1421. 
-  Dim EOF As Boolean = False
-  Dim Total As Decimal = 0
-  While Not EOF
-      Try
-          dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.NoWait)
-          For j As Integer = 1 To 12
-              Dim number As String = j.ToString()
-              If number.Length &lt; 2 Then
-                  number = "0" + number
-              End If
-              Total += Convert.ToDecimal(myDS.ActiveRow.Item("CSSALES" + number))
-          Next
-      Catch dgEx As dgException
-          If (dgEx.Error = dgErrorNumber.dgEaEOF) Then
-              EOF = True
-          Else
-              Throw dgEx 'Throw exception If we didn't expect it.
-          End If
-      End Try
-  End While
-  MsgBox("Total sales for customers 300 to 1400 totalled " &amp; _
-  Total.ToString() + ".")
-
-  dbFile.Close()
-  db.Clone()</pre>
 
 ## Requirements
 

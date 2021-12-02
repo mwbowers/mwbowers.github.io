@@ -105,54 +105,6 @@ Calling this method cancels "range mode". A prior successful call to **ReadRange
 
   dbFile.Close();
   db.Close();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' Seek the file pointer to just before Customer number 1500. 
-  Dim key As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-  key.Row.Item("CMCustNo") = Convert.ToDecimal(1500)
-  dbFile.SeekKey(SeekMode.SetLL, key)
-  ' We read the next record to get customer number 1500.
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default)
-  Dim CustomerName1 As String
-  CustomerName1 = myDS.ActiveRow.Item("CMName").ToString()
-
-  ' We set the file pointer to just after customer number 2000. 
-  key.Row.Item("CMCustNo") = Convert.ToDecimal(2000)
-  dbFile.SeekKey(SeekMode.SetGT, key)
-  ' We read backwards one record to get customer number 2000. 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Default)
-  Dim CustomerName2 As String
-  CustomerName2 = myDS.ActiveRow.Item("CMName").ToString()
-
-  ' We set the file pointer to greater than or equal to 2979. 
-  key.Row.Item("CMCustNo") = Convert.ToDecimal(2979)
-  dbFile.SeekKey(SeekMode.SetGE, key)
-  ' Record 2979 usually does not exist, so we should be on record
-  ' 3000, which we read by reading the current record (using
-  ' SeekMode.SetLL would have gotten us record 2900). 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default)
-  Dim CustomerName3 As String
-  CustomerName3 = myDS.ActiveRow.Item("CMName").ToString()
-
-  ' We set the file pointer to greater than or equal to 4000. 
-  key.Row.Item("CMCustNo") = Convert.ToDecimal(4000)
-  dbFile.SeekKey(SeekMode.SetGE, key)
-  ' Record 4000 does exist, and by reading the next record we should access it. 
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default)
-  Dim CustomerName4 As String
-  CustomerName4 = myDS.ActiveRow.Item("CMName").ToString()
-
-  dbFile.Close()
-  db.Close()
-</pre>
 
 ## Requirements
 

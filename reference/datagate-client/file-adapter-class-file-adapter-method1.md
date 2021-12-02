@@ -26,24 +26,6 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
   dbFile.Connection = dataBase;
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim dataBase As New AdgConnection("*Public/DG NET IBM i")
-  Dim dbFile As New FileAdapter()
-  dbFile.Connection = dataBase
-  dbFile.FileName = "*Libl/CMASTNEWL1"
-  dbFile.MemberName = "CMMASTERL1"</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  DclFld dataBase Type(AdgConnection) New("*Public/DG NET IBM i")
-  DclFld dbFile Type(FileAdapter) New()
-  dbFile.Connection = dataBase
-  dbFile.FileName = "*Libl/CMASTNEWL1"
-  dbFile.MemberName = "CMMASTERL1"</pre>
 
 ## Requirements
 

@@ -84,68 +84,6 @@ MessageBox.Show("The cusomter with the highest average sales in " +
      "Result");
 dbFile.Close();
 db.Close();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-Dim db As New AdgConnection("*Public/DG NET Local")
-Dim dbFile As New FileAdapter(db, "Examples/SalesMem", "SalesMem")
-dbFile.AccessMode = AccessMode.Read
-Dim myDS As AdgDataSet = Nothing
-dbFile.OpenNewAdgDataSet(myDS)
-
-' Here we find the name of the customer whose sales (not counting returns) were
-' the best on average in January from 1998 to 2004. This example assumes
-' there are no customer numbers in the second format which are not found in the
-' first format, and that there are no years on record past 1998 to 2004.
-' We use the ResetFormat method to read from both formats, and
-' this gives us the ability to easy see the next customer's name before we
-' read their records.
-
-Dim total As Decimal = 0
-Dim currentAverage As Decimal = 0
-Dim currentName As String = ""
-Dim maxAverage As Decimal = -1
-Dim maxName As String = ""
-dbFile.ResetFormat() ' Read from both formats automatically.
-' Make sure we start off on format 0.
-Do
-    dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-Loop While (dbFile.CurrentFormatIndex &lt;&gt; 0)
-
-Try ' Read until end of file. Throw exception again If it was not due to EOF.
-    While (True) ' Hitting end of file will throw an exception and let us leave.
-        ' Remember, the ActiveRow changes depending on the current format.
-        currentName = myDS.ActiveRow.Item("CMName").ToString()
-        total = 0
-        dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-        While (dbFile.CurrentFormatIndex = 1)
-            total += Convert.ToDecimal(myDS.ActiveRow.Item("CSSales01"))
-            dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-        End While
-        ' there could be as many as seven records from 1998 - 2004.
-        currentAverage = total / 7
-        If (currentAverage &gt; maxAverage) Then
-            maxName = currentName
-            maxAverage = currentAverage
-        End If
-    End While
-Catch dgEx As dgException
-    If (dgEx.Error &lt;&gt; dgErrorNumber.dgEaEOF) Then
-        Throw dgEx
-    End If
-End Try
-
-Dim DecimalResult As String = maxAverage.ToString()
-DecimalResult = DecimalResult.Substring(0, DecimalResult.IndexOf(".") + 3)
-
-MsgBox("The cusomter with the highest average sales in " &amp; _
-     "January from 1998 - 2004 is """ &amp; maxName &amp; _
-     """, with an average of " &amp; DecimalResult &amp; ".", 
-MsgBoxStyle.OKOnly, "Error")
-dbFile.Close()
-db.Close()
-</pre>
 
 ## Requirements
 

@@ -73,28 +73,6 @@ Careful use of the *dir* parameter can improve the performance of iSeries progra
   prog.ObjectToParm(Quit400App, "Quit400App", new int[]{});
   //Now we execute the call to the As400Program, "Call400".
   prog.Execute();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Create paramerter list to send to the program being called. 
-  ' The first two parameters catch return values, the last will tell the
-  ' external program to shut down if the value is '1'. 
-  Dim Quit400App As Char = "1"
-
-  Dim parms As ProgParm()
-  parms = new ProgParm(){ _
-      new ProgParm(new ProgParmType("CustName", 0, FieldType.NewChar(40)), DataDirection.Output), _
-      new ProgParm(new ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), DataDirection.Output), _
-      new ProgParm(new ProgParmType("Quit400App", 0, FieldType.NewChar(1)), DataDirection.Input) _
-  }
-
-  Dim prog As New As400Program(ProdDB, "*Libl/Call400")
-  prog.AppendParms(parms) 'Use our parm list defined above.
-  'Here, we make sure our variables are passed as the parms in ther parm list.
-  prog.ObjectToParm(Quit400App, "Quit400App", New Integer() {})
-  'Now we execute the call to the As400Program, "Call400".
-  prog.Execute() </pre>
 
 ## Requirements
 

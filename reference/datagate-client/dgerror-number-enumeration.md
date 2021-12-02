@@ -528,34 +528,6 @@ The <span>dgErrorNumber</span> enumeration is used as a parameter by the [ Error
 
   dbFile.Close();
   db.Close();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      ' There are many reasons why opening a file can fail. Here, we
-      ' catch some of the more general ones. 
-      If (dgEx.Error = dgErrorNumber.dgEmMNOTFND) Then
-          MsgBox("Member " + dbFile.MemberName + " not found!", "Error opening file")
-      ElseIf (dgEx.Error = dgErrorNumber.dgEmFNOTFND) Then
-          MsgBox("File " + dbFile.FileName + " not found!", "Error opening file")
-      Else
-          MsgBox(dgEx.Message, "Error opening file")
-          'Exit procedure here.
-      End If
-  End Try
-
-  ' Do some action here. 
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

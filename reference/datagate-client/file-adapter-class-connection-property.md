@@ -45,32 +45,6 @@ Integer. Returns or sets an instance of [AdgConnection](adg-connection-class.htm
 
   dbFile.Close(); /* Close file. */
   dbFile.Connection.Close(); /* Close database. */</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Initialize a new fileadapter. Since the AdgConnection is needed
-  ' only for this file adapter, it is created and destroyed using the
-  ' FileAdapter's Connection property. 
-  Dim dbFile As New FileAdapter
-  dbFile.Connection = New AdgConnection("*Public/DG NET Local")
-  dbFile.FileName = "*Libl/CMASTNEWL2"
-  dbFile.MemberName = "CMMASTERL2"
-  dbFile.AccessMode = AccessMode.Read
-
-  Dim myDS As AdgDataSet = Nothing
-  dbFile.OpenNewAdgDataSet(myDS)
-
-  ' Find first record beginning with M. 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL2")
-  keyTbl.Row.Item("CMName") = "M"
-  dbFile.SeekKey(SeekMode.SetLL, keyTbl)
-
-  dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Read)
-  Dim firstMCustomer As String = myDS.ActiveRow.Item("CMName").ToString()
-
-  dbFile.Close() ' Close file. 
-  dbFile.Connection.Close() ' Close database. </pre>
 
 ## Requirements
 

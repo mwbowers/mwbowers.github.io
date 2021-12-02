@@ -4,10 +4,6 @@ title: FieldType.NewTime Method
 ---
 
 Creates a new time [ FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewTime(<br />   DateTimeFormat fmt<br />);**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewTime( _<br />   ByVal fmt As [DateTimeFormat](date-time-format-enumeration.html)       _<br />) As [FieldType](field-type-class.html)**  </pre>
 <pre />
 
 ## Parameters
@@ -61,34 +57,6 @@ Note that internally, DG manipulates date, time, and timestamp fields as **Syste
    * will zero out the seconds as well. The same will happen to the 
             time portion of a
    * variable if its IBM i parm was set to be a NewDate. */</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Use the already initialized As400OProgram "timeProg" to set the
-  ' value of a DateTime variable. This program accepts a time data type
-  ' whose time format is ISO as its sole parameter, which it does not
-  ' read but uses to return data.
-
-  Dim as400Time As New ProgParmType("TimeISO", 0, 
-            FieldType.NewTime(DateTimeFormat.ISO))
-  Dim timeParm As New ProgParm(as400Time, DataDirection.Output)
-  timeProg.AppendParm(timeParm)
-
-  timeProg.Execute()
-
-  Dim currentTime As DateTime
-  currentTime = Convert.ToDateTime(timeProg.ParmToObject(timeParm, 
-            Type.GetType("System.DateTime"), 0))
-  ' IMPORTANT NOTE: The time and date data types do not return all the 
-            information
-  ' which a .NET DateTime can contain. SpecIfically, If you specIfy a parm 
-            as a NewTime,
-  ' the data portion of the returned DateTime will be set to MinValue- time 
-            format *USA
-  ' will zero out the seconds as well. The same will happen to the time 
-            portion of a
-  ' variable If its IBM i parm was set to be a NewDate. </pre>
 
 ## Requirements
 

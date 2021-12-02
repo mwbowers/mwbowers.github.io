@@ -107,31 +107,6 @@ A successful read operation optionally locks the record read as directed by the 
    dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default);
    string OneThousandFiveHundrethCustomerName =
            myDS.ActiveRow["CMName"].ToString();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-   Dim db As AdgConnection = New AdgConnection("*Public/DG NET Local")
-   Dim dbFile As FileAdapter = New FileAdapter(db, "*Libl/CMASTNEWL1",
-           "CMMASTERL1")
-   dbFile.AccessMode = AccessMode.Read
-   Dim myDS As AdgDataSet = Nothing
-   dbFile.OpenNewAdgDataSet(myDS)
-
-   ' Read the first record (in terms of Customer number, which CMASTNEWL1 is
-   ' keyed by.)
-   dbFile.ReadSequential(myDS, ReadSequentialMode.First, LockRequest.Default)
-   Dim FirstCustomerName As String =
-           myDS.ActiveRow.Item("CMCustNo").ToString()
-
-   ' Seek the file pointer to just before Customer number 1500.
-   Dim key As AdgKeyTable = myDS.NewKeyTable("RCMMastL1")
-   key.Row.Item("CMCustNo") = Convert.ToDecimal(1500)
-   dbFile.SeekKey(SeekMode.SetLL, key)
-   ' We read the next record to get customer number 1500.
-   dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default)
-   Dim OneThousandFiveHundrethCustomerName As String _
-       = myDS.ActiveRow.Item("CMName").ToString()</pre>
 
 ## Requirements
 

@@ -4,11 +4,6 @@ title: FileAdapter.DeleteCurrent Method
 ---
 
 Deletes the current record associated with an open file.
-<pre class="prettyprint">         <span class="lang">[C#]</span>
- **public void DeleteCurrent()** ;</pre>
-<pre class="prettyprint">         <span class="lang">[Visual Basic] </span>
- **Public Sub DeleteCurrent()** 
-      </pre>
 <pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
  **BegSr DeleteCurrent Access(*Public)** 
       </pre>
@@ -79,37 +74,6 @@ The current record of an open file is marked as deleted by **DeleteCurrent** . A
 
   dbFile.Close();
   db.Close();</pre>
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read Or AccessMode.Delete
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  dbFile.ReadSequential(myDS, ReadSequentialMode.First, LockRequest.Default)
-
-  ' We retrieve the record for customer number 7800... 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-  keyTbl.Row.Item("CMCUSTNO") = 7800
-  Try
-      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.Default, keyTbl)
-      '... and delete it! 
-      dbFile.DeleteCurrent()
-  Catch dgEx As dgException
-      MsgBox("Error deleting the record: " + dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-  End Try
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

@@ -35,21 +35,6 @@ The **Text** property may be used to hold any comments about the database connec
       newItem.SubItems.Add(currentProfile.Text);
       lvDbNames.Items.Add(newItem);
   }</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' This code displays all of the *PUBLIC database
-  ' names, along with their descriptive text, to the list view
-  ' "lvDbNames" whose view is set to "View.Details". 
-  Dim newItem As ListViewItem
-  Dim currentProfile As SourceProfile
-  For Each name As String In SourceProfile.GetNames(True)
-      currentProfile = New SourceProfile(name)
-      newItem = New ListViewItem(currentProfile.DatabaseName)
-      newItem.SubItems.Add(currentProfile.Text)
-      lvDbNames.Items.Add(newItem)
-  Next</pre>
 
 ## Requirements
 

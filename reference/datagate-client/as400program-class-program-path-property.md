@@ -27,20 +27,6 @@ Set the <span> **ProgramPath** </span> property to name the program on the datab
   As400Program prog = new As400Program();
   prog.Connection = new AdgConnection("*Public/DG NET IBM i");
   prog.ProgramPath = "*Libl/Call400";</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim prog As New As400Program()
-  prog.Connection = New AdgConnection("*Public/DG NET IBM i")
-  prog.ProgramPath = "*Libl/Call400"</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  DclFld prog Type(As400Program) New()
-  prog.Connection = *New AdgConnection("*Public/DG NET IBM i")
-  prog.ProgramPath = "*Libl/Call400"</pre>
 
 ## Requirements
 

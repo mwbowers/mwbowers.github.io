@@ -45,19 +45,6 @@ None.
           "Could not unregister.");
       return;
   }</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  ' Open up and unregistered the database profile "Worthless Db".
-  Try
-      SourceProfile.Unregister("Worthless Db")
-  Catch dgEx As dgException
-      MsgBox("""Worthless DB"" is not a registered 
-            database profile.", _
-      MsgBoxStyle.Critical, "Could not unregister.")
-      Return
-  End Try</pre>
 
 ## Requirements
 

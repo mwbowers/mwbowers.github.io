@@ -101,41 +101,6 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
 
   dbFile.Close();
   db.Close();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  dbFile.AccessMode = AccessMode.Read
-  ' The AdgDataSet consists of data read from the database file
-  ' using the FileAdapter class. It also must be used in most
-  ' of the FileAdapter's operations.
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-  ' There are many reasons why opening a file can fail. Here, we
-  ' catch some of the more general ones.
-      If (dgEx.Error = dgErrorNumber.dgEmMNOTFND) Then
-            MsgBox("Member " + dbFile.MemberName + " not found!", MsgBoxStyle.OKOnly, "Error")
-      ElseIf (dgEx.Error = dgErrorNumber.dgEmFNOTFND) Then
-            MsgBox("File " + dbFile.FileName + " not found!", MsgBoxStyle.OKOnly, "Error")
-      Else
-            MsgBox(dgEx.Message, MsgBoxStyle.OKOnly, "Error")
-           'Exit procedure here.
-      End If
-  End Try<br />
-  ' The code below finds the names of every data field in the
-  ' file "*Libl/CMASTNEWL1" and puts them into an array list.
-  Dim fieldNames As New ArrayList
-  For i As Integer = 0 To myDS.Formats - 1
-  For Each column As DataColumn In myDS.Tables(i).Columns
-      fieldNames.Add(column.ToString())
-  Next
-  Next
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

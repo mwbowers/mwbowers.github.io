@@ -4,10 +4,6 @@ title: FieldType.NewTimeStamp Method
 ---
 
 Creates a new timestamp [ FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewTimeStamp();**  </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewTimeStamp() As [FieldType](field-type-class.html)**  </pre>
 
 ## Remarks
 
