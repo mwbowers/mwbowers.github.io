@@ -64,6 +64,38 @@ f.	Click **OK**
 ![VS Generate Token](images/vs-package-update.jpg)
 
 ### Set the Credentials for the Package Source.
+There are two mechanisms you can use to set the credentials for your package source:
+  1. Enter the credentials in the *NuGet.Config* file.
+  2. Let Windows manage the credentials
+
+#### Set Credentials in NuGet.Config
+NuGet uses configuration files called *NuGet.Config*.  These files can be set and used at the machine level, the user level or even the VS solution or Project level.  For credentials, the most practical file to use is the one stored for the user at:
+
+    C:/Users/{YourUserName}/AppData/Roaming/NuGet/NuGet.Config
+
+You can check the full Microsoft's [documentation here](https://docs.microsoft.com/en-us/nuget/reference/nuget-config-file).
+
+We are interested in these two elements:
+ - *packageSources*
+ - *packageSourceCredentials*
+
+The *packageSources* should contain the name of the source you added in the steps above.  You would enter your credentials in the *packageSourceCredentials* like this:
+```xml
+  <packageSources>
+    . . . 
+    <add key="GitHub-AsnaQSys" value="https://nuget.pkg.github.com/asnaqsys/index.json" />
+  </packageSources>
+  <packageSourceCredentials>
+    <GitHub-AsnaQSys>
+  	  <add key="username" value="MyGitHubName" />
+	    <add key="cleartextpassword" value="MyGitHubToken" />
+    <GitHub-AsnaQSys>
+  </packageSourceCredentials>
+```
+
+#### Use Windows Credential Manager
+If you have not set your credentials in a NuGet.Config, then the first time you attempt to use the new Package Source, Windows will prompt you for the user and password and save it.
+
 a.	Open your Visual Studio solution.
 
 b.	Right click on the project for which you would like to add the NuGet package(s) and select **Manage NuGet Packages…**
