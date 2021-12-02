@@ -498,10 +498,8 @@ The <span>dgErrorNumber</span> enumeration is used as a parameter by the [ Error
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -527,7 +525,8 @@ The <span>dgErrorNumber</span> enumeration is used as a parameter by the [ Error
   /* Do some action here. */
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

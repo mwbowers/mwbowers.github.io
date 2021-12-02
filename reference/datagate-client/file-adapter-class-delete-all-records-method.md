@@ -42,10 +42,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 The file should be opened with the [ AccessMode](file-adapter-class-access-mode-property.html) property set to a value including the [ AccessMode.Delete](access-mode-enumeration.html) flag in order to permit delete access to the file.
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* We open the file in order to delete all of its records. */
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER");
@@ -72,7 +70,8 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
           throw dgEx;
   }
   dbFile.DeleteAllRecords();
-  </pre>
+  
+```
 <pre class="OH_CodeSnippetContainerCode">  dbFile.Close();
   db.Close();</pre>
 

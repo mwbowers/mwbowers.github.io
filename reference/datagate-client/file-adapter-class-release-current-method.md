@@ -41,10 +41,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 **FileAdapter** methods which read, update, and add records may also optionally lock the current record associated with those operations, in compliance with the rules of the database provider. **ReleaseCurrent** allows DG programs to release the lock held, if any, on the current record.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
  /* Here, we are using a pre-initialized FileAdapter (named "dbFile")
   * which was opened using AccessMode.RWCD, which automatically locks
   * each read record read, so it will remain unchanged until we
@@ -64,7 +62,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
  {
      dbFile.ReleaseCurrent();
  }
-</pre>
+
+```
 
 ## Requirements
 

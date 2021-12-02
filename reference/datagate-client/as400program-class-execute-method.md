@@ -49,10 +49,8 @@ The name of the program, as specified by the **ProgramPath** property, is valida
 If an i Series system exception occurs in the called program, dgException is raised with the Error property set to dgEsAS400ERROR. System details of the exception will be available in the **Text** , **SystemError** , and [ErrorClass](dgexception-class-error-class-field.html) fields of dgException.
 
 Upon successful return from **Execute** , the values of any "output" parameters passed to the program will be available with the [ ParmToObject](as400program-class-parm-to_object-method-main.html) method.
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -75,7 +73,8 @@ Upon successful return from **Execute** , the values of any "output" parameters 
   TimeOfDay = Convert.ToDecimal(
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
-     new int[]{}));              </pre>
+     new int[]{}));              
+```
 
 
 ## Requirements

@@ -17,15 +17,14 @@ This constructor creates an instance of **FileAdapter** without a database conne
 The [AccessMode](file-adapter-class-access-mode-property.html) property is initialized with the value [Read](access-mode-enumeration.html). 
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
   FileAdapter dbFile = new FileAdapter();
   dbFile.Connection = dataBase;
   dbFile.FileName = "*Libl/CMASTNEWL1";
-  dbFile.MemberName = "CMMASTERL1";</pre>
+  dbFile.MemberName = "CMMASTERL1";
+```
 
 ## Requirements
 

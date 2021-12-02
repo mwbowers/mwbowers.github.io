@@ -45,13 +45,12 @@ This method returns a copy of the **AdgConnection** object. If successful, the c
 Note that a database connection cannot be shared between two instances of **AdgConnection** .
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection Cx;
   Cx = new AdgConnection("ASNA Local DB");
-  Cx.Open();</pre>
+  Cx.Open();
+```
 
 ## Requirements
 

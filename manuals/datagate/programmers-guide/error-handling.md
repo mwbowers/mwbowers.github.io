@@ -16,9 +16,8 @@ dgException inherits from System.Exception. System.Exception provides many usefu
 A reference to all DG error codes is provided in the documentation. Note that DG may report its own error codes as specified by the type library’s [ dgErrorNumber](dgerror-number-enumeration.html) enumeration.
 
 Visual Basic also provides special constructs for handling class object errors. In particular, the "On Error" statement is highly effective for handling DG object errors. Like Visual RPG, Visual Basic provides a global Err object, providing error number, description, and other error details. Again, most ActiveX development environments do provide options for handling DG’s standard COM exceptions.
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -87,7 +86,8 @@ namespace NetworkRecovery
                     MessageBox.Show( "Connected!" );
                 Close();
           }
-      }</pre>
+      }
+```
       <br />
 <pre class="prettyprint">BegClass Form1 Extends (System.Windows.Forms.Form) Access(*Public)
 DclFld Name (srcStr)Type (*String = "asna network database")

@@ -81,10 +81,8 @@ If the operation is successful, the record read is placed in the specified **Adg
 A successful read operation optionally locks the record read as directed by the *lr* parameter and the locking properties of the file. 
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -169,7 +167,8 @@ A successful read operation optionally locks the record read as directed by the 
       averageReturnsPerYear = 0;
   dbFile.Close();
   db.Close();
-</pre>
+
+```
 
 
 ## Requirements

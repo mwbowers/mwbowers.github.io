@@ -20,14 +20,13 @@ The **Open** method utilizes this property to establish a database connection wi
 Note that changing the value of this property, or changing the object referenced by this property, has no effect on the current database connection (if [ State](adg-connection-class-state-property.html) indicates Open). The database connection is only influenced by this property via the **AdgConnection.Open** method. 
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection Cx;
   Cx = new AdgConnection("*Public/DG NET IBM i");
   MessageBox.Show("The database name \"*Public/DG NET IBM i\" refers to a connection to "
-           + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString());</pre>
+           + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString());
+```
 
 ## Requirements
 

@@ -37,10 +37,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 This method is used to transition an **AdgConnection** object to the Open state. If successful, a new database connection is established. The characteristics of the new connection may be specified by prior assignment of the [ SourceProfile](adg-connection-class-source-profile-property.html) property, or by specifying a registered database name or **SourceProfile** object in the [ AdgConnection constructor](adg-connection-constructors-main.html).
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   try
   {
       AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
@@ -49,7 +47,8 @@ This method is used to transition an **AdgConnection** object to the Open state.
   catch(dgException e)
   {
       System.Windows.Forms.MessageBox.Show(e.Message, "Error establishing connection to database.");
-  }</pre>
+  }
+```
 
 ## Requirements
 

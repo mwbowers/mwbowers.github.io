@@ -33,10 +33,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 The current record of an open file is marked as deleted by **DeleteCurrent** . After the delete, any lock on the record is released. The file should be opened with the [AccessMode](file-adapter-class-access-mode-property.html) property set to a value including the [AccessMode.Delete](access-mode-enumeration.html) flag in order to permit delete access to the file.
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read | AccessMode.Delete;
@@ -70,7 +68,8 @@ The current record of an open file is marked as deleted by **DeleteCurrent** . A
   }
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

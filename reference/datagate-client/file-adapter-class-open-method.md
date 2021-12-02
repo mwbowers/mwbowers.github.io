@@ -58,9 +58,8 @@ Record blocking can significantly improve sequential access efficiency, especial
 If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-class-formatids-property.html) property of the object referenced by **OpenAttributes** , then the given format identifier(s) will be used to "level check" the format(s) of the file. If the file is not at the same level when the open operation occurs, the database will return an error.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Unlike OpenNewAdgDataSet, the Open method does not create
    * a new AdgDataSet to meet the requirements of the file being
    * opened. However, it is slightly faster because of this, so
@@ -84,7 +83,8 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
       "\" is " + dbFile.FileLength.ToString());
   dbFile.Close();
   dbFile.Connection.Close();
-</pre>
+
+```
 
 
 ## Requirements

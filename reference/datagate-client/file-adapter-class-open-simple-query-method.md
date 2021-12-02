@@ -77,10 +77,8 @@ The selection criteria is specified as a single expression describing the values
 Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </span> array parameters should be equal.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read; 
@@ -102,7 +100,8 @@ Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </sp
 
   dbFile.Close();
   db.Close();
-</pre>
+
+```
 
 ## Requirements
 

@@ -18,15 +18,14 @@ String. Returns or sets a string containing either a DNS host name or, a TCP/IP 
 The <span> **Server** </span> property may either be: 1) a Domain Name System (DNS) host name or 2) a TCP/IP address in "dotted decimal" notation (such as 127.0.0.1). 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* The code below updates a database profile to use a different IP address. */
   SourceProfile sp = new SourceProfile("CustomerDB");
   sp.Server = "555.93.279.303";
   sp.Register(); /* Save changes. */
-</pre>
+
+```
 
 ## Requirements
 

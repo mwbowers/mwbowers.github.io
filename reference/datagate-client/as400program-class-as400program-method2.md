@@ -44,13 +44,12 @@ This constructor invokes the [default constructor](as400program-class-as400progr
 If *Connection* is set with a null value, or is an **AdgConnection** instance which is unconnected or incompatible with **As400Program** , an exception is raised. Use [ AdgConnection.Open](adg-connection-class-open-method.html) to open a connection to an IBM i database provider prior to setting **Connection** . Before adding parameters or calling programs with an instance created with this constructor, the **ProgramPath** property must be set.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program(ProdDB);
-  prog.ProgramPath = "*Libl/Call400";</pre>
+  prog.ProgramPath = "*Libl/Call400";
+```
 
 ## Requirements
 

@@ -52,10 +52,8 @@ Careful use of the *dir* parameter can improve the performance of iSeries progra
 **ProgParm** constructors do not allow the initialization of the parameter value data. Values may only be set in the **ProgParm** object after it has been added to the [As400Program](as400program-class.html) parameter list (via [AppendParm](as400program-class-append-parm-method.html) or [AppendParms](as400program-class-append-parms-method.html)). Use the [ObjectToParm](as400program-class-object-to_parm-method-main.html) method to set the value *data* of the **ProgParm** .
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Create paramerter list to send to the program being called.
    * The first two parameters catch return values, the last will tell the
    * external program to shut down if the value is '1'. */
@@ -73,7 +71,8 @@ Careful use of the *dir* parameter can improve the performance of iSeries progra
   //Here, we make sure our variables are passed as the parms in ther parm list.
   prog.ObjectToParm(Quit400App, "Quit400App", new int[]{});
   //Now we execute the call to the As400Program, "Call400".
-  prog.Execute();</pre>
+  prog.Execute();
+```
 
 ## Requirements
 

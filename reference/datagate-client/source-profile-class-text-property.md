@@ -19,10 +19,8 @@ String. Returns or sets a string containing text or comments to be associated wi
 The **Text** property may be used to hold any comments about the database connection parameters. **Text** is not used to established database connections but it is saved to the Windows registry by the [ Register](source-profile-class-register-method.html) method. It can be used, for example, as a longhand name for the <span> **SourceProfile** </span>.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code displays all of the *PUBLIC database
    * names, along with their descriptive text, to the list view
    * "lvDbNames" whose view is set to "View.Details". */
@@ -34,7 +32,8 @@ The **Text** property may be used to hold any comments about the database connec
       newItem = new ListViewItem(currentProfile.DatabaseName);
       newItem.SubItems.Add(currentProfile.Text);
       lvDbNames.Items.Add(newItem);
-  }</pre>
+  }
+```
 
 ## Requirements
 

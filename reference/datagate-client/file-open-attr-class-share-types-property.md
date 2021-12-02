@@ -19,9 +19,8 @@ Applications may need to open a file for access exclusively to prevent access by
 Set the value of **ShareTypes** to request the type of sharing required by your application. The access restrictions requested will be enforced by the database when the file is opened and until the file is closed. If the file cannot be opened with the level of sharing specified by <span> **ShareTypes** </span>, then the [ FileAdapter.Open](file-adapter-class-open-method.html) method will throw an exception.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* We open the file in order to delete all of its records. */
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER");
@@ -51,7 +50,8 @@ Set the value of **ShareTypes** to request the type of sharing required by your 
   dbFile.DeleteAllRecords();
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 
 ## Requirements

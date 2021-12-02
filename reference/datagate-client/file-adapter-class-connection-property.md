@@ -14,10 +14,8 @@ The current **AdgConnection** associated with this **FileAdapter** .
 Integer. Returns or sets an instance of [AdgConnection](adg-connection-class.html) which represents a connection to a database server.
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Initialize a new fileadapter. Since the AdgConnection is needed
    * only for this file adapter, it is created and destroyed using the
    * FileAdapter's Connection property. */
@@ -39,7 +37,8 @@ Integer. Returns or sets an instance of [AdgConnection](adg-connection-class.htm
   string firstMCustomer = myDS.ActiveRow["CMName"].ToString();
 
   dbFile.Close(); /* Close file. */
-  dbFile.Connection.Close(); /* Close database. */</pre>
+  dbFile.Connection.Close(); /* Close database. */
+```
 
 ## Requirements
 

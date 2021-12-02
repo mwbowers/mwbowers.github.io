@@ -17,10 +17,8 @@ Integer. Read-only. Returns a long integer containing the count of records in a 
 Use the <span> **RecordCount** </span> property to examine the total number of records contained in the member. 
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -75,7 +73,8 @@ Use the <span> **RecordCount** </span> property to examine the total number of r
       }
   }
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

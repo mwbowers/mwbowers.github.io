@@ -21,17 +21,16 @@ Authentication is the process of verifying that a user with a unique name is the
 This property should only be set if the user profile has an associated password, and only after setting the <span> **User** </span> property. 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different
    * username and password. */
   SourceProfile sp = new SourceProfile("*PUBLIC/DG NET iSeries");
   sp.User = "NewUser";
   sp.Password = "NewPassword";
-  AdgConnection database = new AdgConnection(sp);</pre>
+  AdgConnection database = new AdgConnection(sp);
+```
 
 ## Requirements
 

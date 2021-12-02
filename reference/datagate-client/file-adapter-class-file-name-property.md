@@ -14,9 +14,8 @@ The path name of the database file, excluding the member name (see [ MemberName 
 String. Returns or sets the path name of the database file. 
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* In this simple routine we wish to write the format names 
    * of a file to a combo box using the FileAdapter "dbFile" 
    * and its accompanying AdgDataSet "myDS", which may or 
@@ -42,7 +41,8 @@ String. Returns or sets the path name of the database file.
       /* List the format names in the combo box "cbFmtNames". */
       cbFmtNames.Items.Add(myDS.GetFormatName(i));
   }
-</pre>
+
+```
 
 
 ## Requirements

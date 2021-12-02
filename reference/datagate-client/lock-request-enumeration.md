@@ -34,10 +34,8 @@ Note: Some **LockRequest** values are not supported by certain database provider
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
@@ -93,7 +91,8 @@ Note: Some **LockRequest** values are not supported by certain database provider
           ", \"" + Convert.ToString(myDS.ActiveRow["CMName"]) + 
           "\", met the search requirements.", "Customer found.");
   }
-</pre>
+
+```
 
 ## Requirements
 

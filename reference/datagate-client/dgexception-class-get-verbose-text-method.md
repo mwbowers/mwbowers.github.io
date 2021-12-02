@@ -15,9 +15,8 @@ Returns a multi-line description of the <span>dgException</span>.
 For development and debugging purposes, <span> **GetVerboseText** </span> is an easy method to use to "dump" most of the available information associated with the <span>dgException</span>.
 ## Examples
 
-<pre class="prettyprint">        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Verbose text generates a large string which is a concatanation 
    * of several of dgException's properties and also shows the
    * stack trace. While not very user friendly, it can come in handy
@@ -45,7 +44,8 @@ For development and debugging purposes, <span> **GetVerboseText** </span> is an 
   }
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 
 ## Requirements

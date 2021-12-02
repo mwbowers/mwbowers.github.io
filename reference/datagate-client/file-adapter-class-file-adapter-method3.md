@@ -34,12 +34,12 @@ This constructor creates an instance of **FileAdapter** with the given database 
 The [AccessMode](file-adapter-class-access-mode-property.html) property is initialized with the value Read.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
   FileAdapter dbFile = new FileAdapter(dataBase, "*Libl/CMASTNEWL1");
-  dbFile.MemberName = "CMMASTERL1";</pre>
+  dbFile.MemberName = "CMMASTERL1";
+```
 
 
 ## Requirements

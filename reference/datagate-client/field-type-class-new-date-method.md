@@ -29,7 +29,8 @@ The value of *fmt* may be any value of **DateTimeFormat** , except for **HMS** .
 Note that internally, DG manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DG as the value of a date, time, or timestamp field (in methods such as [ As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of **DateTime** . Likewise, DG will only accept values which can be accurately converted to **DateTime** values, for setting the value of date, time, or timestamp fields.
 ## Examples
 
-<pre> <span class="lang"> [C#] </span>
+
+```cs 
   /* Create a parms list to pass to a pre-initialized As400Program object.
    * We want to pass one date with time format *USA and another with time
    * format *ISO. Other time formats are available in the DateTimeFormat
@@ -61,7 +62,8 @@ Note that internally, DG manipulates date, time, and timestamp fields as **Syste
   /* IMPORTANT NOTE: The time and date data types do not return all the information
    * which a .NET DateTime can contain. Specifically, if you specify a parm as a NewTime,
    * the data portion of the returned DateTime will be set to MinValue. The same will
-   * happen to the time portion of a variable if its IBM i parm was set to be a NewDate. */</pre>
+   * happen to the time portion of a variable if its IBM i parm was set to be a NewDate. */
+```
 
 
 ## Requirements

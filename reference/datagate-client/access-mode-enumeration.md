@@ -41,10 +41,8 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property of <span
 
 ## Examples 
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   /* We need to open this file for Read as well as as Delete
@@ -77,7 +75,8 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property of <span
           throw dgEx;
   }
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

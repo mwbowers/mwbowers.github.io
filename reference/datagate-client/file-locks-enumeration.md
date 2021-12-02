@@ -29,9 +29,8 @@ When set to the <code>Auto</code> value, record locking occurs automatically in 
 
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Using the FileLocks property of a FileAdapter's OpenAttributes,
    * you can set file locking to manual, which allows you to lock more
    * than one record at a time. Note that manual file locking
@@ -81,7 +80,8 @@ When set to the <code>Auto</code> value, record locking occurs automatically in 
   }
 
   dbFile.Close(); /* Release all locks. */
-  db.Close();</pre>
+  db.Close();
+```
 
 
 ## Requirements

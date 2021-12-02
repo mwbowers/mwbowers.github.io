@@ -36,19 +36,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 
 Example <p>The following example retrieves a database name called "Asna 400 db" (in the process of constructing the SourceProfile object), changes the user and password, and then saves the changes by calling Register. 
-<pre class="prettyprint">  Using ASNA.DataGate.Providers
-  DclfldName(AsnaDbName) Type(SourceProfile)
-  AsnaDbName = *New SourceProfile("Asna 400 db")
-  AsnaDbName.User = "NewUser"
-  AsnaDbName.Password = "NewPasswd"
-  AsnaDbName. Register()			</pre>
 
-## Examples 
-
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+```cs 
   /* When we specify false with this constructor, we're
    * telling Datagate not to get information from the
    * registry. Thus we can use it to create an entirely
@@ -62,7 +51,8 @@ Example <p>The following example retrieves a database name called "Asna 400 db" 
   newDbProfile.PlatformAttribute = "*DATALINK";
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
-  newDbProfile.Register();</pre>
+  newDbProfile.Register();
+```
 
 ## Requirements
 

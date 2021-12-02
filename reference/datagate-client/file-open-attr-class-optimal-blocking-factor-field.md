@@ -14,16 +14,16 @@ Integer. A constant value to set the [ BlockingFactor](file-open-attr-class-bloc
 This constant, when assigned to the **BlockingFactor** property, requests that DataGate calculate the best-fit size of the network blocking record buffer, using factors such as record length and network packet size. In most cases, this yields the best network blocking performance.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   /* Automatically calculates the best blocking factor. */
   dbFile.OpenAttributes.BlockingFactor = FileOpenAttr.OptimalBlockingFactor;
   AdgDataSet ds = null;
-  dbFile.OpenNewAdgDataSet(out ds);</pre>
+  dbFile.OpenNewAdgDataSet(out ds);
+```
 
 
 ## Requirements

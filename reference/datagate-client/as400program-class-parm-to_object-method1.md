@@ -52,10 +52,8 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
 The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occurrence" parameter type. Multiple-occurrence parameters consist of single-dimension arrays of the parameter type. *Element* is a zero-relative index identifying the element of the array **ParmToObject** is getting the value of.
 
 #### Examples
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -80,7 +78,8 @@ The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occu
   TimeOfDay = Convert.ToDecimal(
         Parms[1],
         prog.ParmToObject(System.Type.GetType("System.Decimal"),
-        new int[]{}));</pre>
+        new int[]{}));
+```
 
 ## Requirements
 

@@ -37,10 +37,8 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
 **Close** releases unmanaged resources associated with the **FileAdapter** , via the **Dispose** method.
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -68,7 +66,8 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
   string FirstInTennessee = myDS.ActiveRow["CMName"].ToString();
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

@@ -47,13 +47,12 @@ All public properties of the constructed object have the same value as the copie
 This constructor is useful for creating an object capable of registering database name information under a different name, via the [ Register](source-profile-class-register-method.html) method. 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This creates a brand new database name using the
    * old source profile.*/
-  SourceProfile newDbProfile2 = new SourceProfile("Brand New DB Name", sp);</pre>
+  SourceProfile newDbProfile2 = new SourceProfile("Brand New DB Name", sp);
+```
 
 ## Requirements
 

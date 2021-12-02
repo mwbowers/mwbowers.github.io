@@ -22,10 +22,10 @@ Each column value in the **DataRow** corresponds to a field or "key part" value.
 Note that DG never adds the **DataRow** referenced by the **Row** property to the System.Data.DataTable object referenced by the [ DataTable](adg-key-table-class-data-table-property.html) property. To determine the composition of the columns in the row, use the **DataTable** property. 
 ## Examples 
 
-<pre>
-        <span class="lang"> [C#] 
-        </span>
-</pre>
+
+```cs 
+
+```
 <pre>  /* This example will open a file and find the record for
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clarity's sake. */

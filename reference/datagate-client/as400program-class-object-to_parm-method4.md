@@ -44,10 +44,8 @@ For the method to succeed, the *Value* object must have a valid conversion to th
 This method of **ObjectToParm** should not be used if *Parameter* is a "multiple-occurrence" parameter type. Instead, use a method that allows the index of the multiple-occurrence parameter to be specified.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, "prog" is an initialized As400Program object.
    * The first two lines creates a IBM i character data type whose
    * length is one, and then appends it to "prog"'s parameter list. */
@@ -59,7 +57,8 @@ This method of **ObjectToParm** should not be used if *Parameter* is a "multiple
   /* This next line assigns the .NET value, CustName, to the
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0);
-</pre>
+
+```
 
 ## Requirements
 

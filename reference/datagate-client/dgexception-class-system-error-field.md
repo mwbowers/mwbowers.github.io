@@ -26,9 +26,8 @@ If the DataGate provider is an IBM i database, <span> **SystemError** </span> wi
 In these cases, <span> **SystemError** </span> will contain an integer code associated with a system error. For example, if the <span>dgException</span> was raised due to the IBM i exception identified as "CPF501C", then <span> **ErrorClass** </span> will be set to dgEC_AS400CPF and <span> **SystemError** </span> will be set to 20508 (or 501C in hexadecimal). Also in these cases, [ Error](dgexception-class-error-field.html) will be set to dgEsAS400ERROR.
 ## Examples
 
-<pre class="prettyprint">        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code attempts to open a file exclusively. 
   * If it fails, we print out the IBM i exception responsible.
   * "dbFile" is of type FileAdapter. */ 
@@ -56,7 +55,8 @@ In these cases, <span> **SystemError** </span> will contain an integer code asso
           /* Throw exception otherwise. */
           throw dgEx;
       }
-  }</pre>
+  }
+```
 
 
 ## Requirements

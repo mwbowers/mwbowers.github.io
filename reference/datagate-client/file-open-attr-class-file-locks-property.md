@@ -17,9 +17,8 @@ When set to the Manual value, record locking in the opened file will only occur 
 When set to the Auto value, record locking occurs automatically in **FileAdapter** access methods unless overridden by the [LockRequest](lock-request-enumeration.html) parameter. Also, locked records are automatically unlocked when another record is accessed.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Using the FileLocks property of a FileAdapter's OpenAttributes,
    * you can set file locking to manual, which allows you to lock more
    * than one record at a time. Note that manual file locking
@@ -69,7 +68,8 @@ When set to the Auto value, record locking occurs automatically in **FileAdapter
   }
 
   dbFile.Close(); /* Release all locks. */
-  db.Close();</pre>
+  db.Close();
+```
 
 
 ## Requirements

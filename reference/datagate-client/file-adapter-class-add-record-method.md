@@ -41,9 +41,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", 
             "CMMASTERL1");
@@ -83,7 +82,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
      MessageBox.Show("Adding new record was unsuccessful! "
         + dgEx.Message, "Error!");
      //Exit procedure or end application here.
-  }</pre>
+  }
+```
 
 
 ## Requirements

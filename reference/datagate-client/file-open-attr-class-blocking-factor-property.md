@@ -21,9 +21,8 @@ This property may be set to any positive number of records. When used this way, 
 Two special values are recognized for the **BlockingFactor** property. **OptimalBlockingFactor** tells DataGate to calculate the best-fit size of the record buffer, using factors such as record length and network packet size. In most cases, **OptimalBlockingFactor** will yield the best network blocking performance. [ OmitBlocking](file-open-attr-class-omit-blocking-field.html) is the default value of **BlockingFactor** , signifying that all record blocking features will be omitted.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -78,7 +77,8 @@ Two special values are recognized for the **BlockingFactor** property. **Optimal
       }
   }
   dbFile.Close();
-  db.Close()</pre>
+  db.Close()
+```
 
 
 **Namespace:** [ ASNA.DataGate.Providers](datagate-providers-namespace.html) 

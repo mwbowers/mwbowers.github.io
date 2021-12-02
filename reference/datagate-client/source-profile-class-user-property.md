@@ -23,10 +23,8 @@ The user profile described by the **User** property is the one used to authentic
 A special value, "*PROMPT", may be used to require an interactive user to supply a user name and password (via dialog box) at the moment the database connection is initiated. Another special value, "*DOMAIN", may be used to specify that the authentication of the currently signed on client-side user profile be used to authorize access to the server, if both the client and server are members of the same Windows NT domain. 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different
    * username and password. */
@@ -34,7 +32,8 @@ A special value, "*PROMPT", may be used to require an interactive user to supply
   sp.User = "NewUser";
   sp.Password = "NewPassword";
   AdgConnection database = new AdgConnection(sp);
-</pre>
+
+```
 
 ## Requirements
 

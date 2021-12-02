@@ -14,9 +14,8 @@ The number of deleted and non-deleted records in the open database file.
 Integer. Returns the number of deleted and non-deleted records in the file. 
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   FileAdapter dbFile = new FileAdapter();
   dbFile.Connection = new AdgConnection("*Public/DG NET Local");
   dbFile.FileName = "*Libl/CMASTNEW";
@@ -33,7 +32,8 @@ Integer. Returns the number of deleted and non-deleted records in the file.
   MessageBox.Show("Number of deleted records still taking up space in file \"" 
       + dbFile.FileName + "\" is " + deletedRecords.ToString());
   dbFile.Close();
-  dbFile.Connection.Close();</pre>
+  dbFile.Connection.Close();
+```
 
 
 ## Requirements

@@ -14,8 +14,8 @@ This example simply opens and reads the first record as in the previous example,
 The procedure for adding new records to database files follows a similar pattern, but the <span> **DataRow** </span> object representing the record to be inserted must be initialized according to the file format it represents. New **DataRow** objects to be added to a file are initialized with the [ PrepareRow ](adg-dataset-class-prepare-row-method-main.html)method of **AdgDataSet** . This method is passed an index identifying the format of the record to be added, so that the new **DataRow** can be initialized with field objects of the appropriate name and type. Note that fields are initialized with the value <span>System.DBNull.Value</span>. Unless the corresponding database field supports "null values", the **DataRow** field value must be set explicitly by your program before the record is added to the database or an exception will occur. After setting field values in the new record you must append it to the dataset using a method such as [ AddPreparedRowAndSetActive](adg-dataset-class-add-prepared-row-and-set-active-method.html). Once the prepared row is the active row in the **AdgDataSet** , the [ FileAdapter.AddRecord](file-adapter-class-add-record-method.html) method can be called to add the new record to the database file.
 
 The following example illustrates an appropriate sequence for **adding a database record** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
+
+```cs 
   using ASNA.DataGate.Client;
   using ASNA.DataGate.Common;
   ...
@@ -40,7 +40,8 @@ The following example illustrates an appropriate sequence for **adding a databas
   ds.AddPreparedRowAndSetActive(0);
   dbFile.AddRecord(ds);
   dbFile.Close();
-  cx.Close();</pre>
+  cx.Close();
+```
 
 ## See Also
 

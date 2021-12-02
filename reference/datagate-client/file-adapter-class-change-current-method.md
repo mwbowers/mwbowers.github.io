@@ -52,10 +52,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 <span> **ChangeCurrent** </span> updates the contents of the current record of an open file. The current record is usually the record most recently accessed (by <code>read</code> or <code>seek</code> method). On database providers such as the IBM i, the record must be locked for update and upon completion of <span> **ChangeCurrent** </span>, the record is unlocked. Locking the record for update is performed by reading or seeking to the record without specifying a "no lock" option.
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read | AccessMode.Change;
@@ -90,7 +88,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
   }
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

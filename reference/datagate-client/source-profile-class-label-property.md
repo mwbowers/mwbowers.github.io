@@ -20,10 +20,8 @@ The **Label** property specifies a particular database instance on the server pl
 For single-instance platforms, such as the iSeries, the **Label** property is ignored.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Register the database name "My Local" to specify the local database.
    * Because the local database is a Windows DataGate server, 
    * you need to include a valid label as well. */
@@ -37,7 +35,8 @@ For single-instance platforms, such as the iSeries, the **Label** property is ig
   newDbProfile.PlatformAttribute = "*DATALINK";
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
-  newDbProfile.Register();</pre>
+  newDbProfile.Register();
+```
 
 ## Requirements
 

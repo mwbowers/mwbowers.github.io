@@ -12,9 +12,8 @@ Creates a new timestamp [ FieldType](field-type-class.html).
 **Note** : Internally, DG manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DG as the value of a date, time, or timestamp field (in methods such as [As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of DateTime. Likewise, DG will only accept values which can be accurately converted to DateTime values, for setting the value of date, time, or timestamp fields.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Use the already initialized As400OProgram "timeProg" to set the
    * value of a DateTime variable. This program accepts a timestamp data type
    * whose time format is ISO as its sole parameter, which it does not
@@ -29,7 +28,8 @@ Creates a new timestamp [ FieldType](field-type-class.html).
   DateTime currentTime;
   currentTime = Convert.ToDateTime(timeProg.ParmToObject(timeParm, Type.GetType("System.DateTime"), 0));
   /* Unlike the IBM i FieldType NewTime or NewDate, NewTimeStamp contains both date and time
-   * values. */</pre>
+   * values. */
+```
 
 
 ## Requirements

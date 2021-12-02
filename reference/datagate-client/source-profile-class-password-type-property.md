@@ -21,10 +21,8 @@ Value
 The default value, **SecurePassphrase** , should be used in most cases for the best password performance. Alternative values should only be necessary if the database provider has special authentication requirements.
 
 #### Examples
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different
    * username and password. */
@@ -33,7 +31,8 @@ The default value, **SecurePassphrase** , should be used in most cases for the b
   sp.Password = "NewPassword";
   sp.PasswordType = "Legacy";
   AdgConnection database = new AdgConnection(sp);
-</pre>
+
+```
 
 ## Requirements
 

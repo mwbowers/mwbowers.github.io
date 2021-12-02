@@ -18,10 +18,8 @@ Integer. Returns or sets the TCP port number that is to be used for TCP/IP-based
 The default TCP port number is 5042. 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* When we specify false with this constructor, we're
    * telling Datagate not to get information from the
    * registry. Thus we can use it to create an entirely
@@ -35,7 +33,8 @@ The default TCP port number is 5042.
   newDbProfile.PlatformAttribute = "*DATALINK";
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
-  newDbProfile.Register();</pre>
+  newDbProfile.Register();
+```
 
 ## Requirements
 

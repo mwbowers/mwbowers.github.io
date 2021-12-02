@@ -18,9 +18,8 @@ The value of **Status** is one of the **FileAdapter.AdapterStatus** values.
 ## Examples
 
 Here we want to use a fileAdapter object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure its opened and open it if it isn't.
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   if (dbFile == null)
       dbFile = new FileAdapter();
   if (dbFile.Status == FileAdapter.AdapterStatus.Closed)
@@ -30,7 +29,8 @@ Here we want to use a fileAdapter object named "dbFile" but are unsure as to whe
       dbFile.MemberName = memberName;
       dbFile.OpenNewAdgDataSet(out myDataSet);
   }
-  </pre>
+  
+```
 
 
 ## Requirements

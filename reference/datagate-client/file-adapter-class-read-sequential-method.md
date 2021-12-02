@@ -71,10 +71,8 @@ If the operation is successful, the record read is placed in the specified **Adg
 A successful read operation optionally locks the record read as directed by the *lr* parameter and the locking properties of the file. 
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
    AdgConnection db = new AdgConnection("*Public/DG NET Local");
    FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1",
            "CMMASTERL1");
@@ -94,7 +92,8 @@ A successful read operation optionally locks the record read as directed by the 
    /* We read the next record to get customer number 1500.*/
    dbFile.ReadSequential(myDS, ReadSequentialMode.Next, LockRequest.Default);
    string OneThousandFiveHundrethCustomerName =
-           myDS.ActiveRow["CMName"].ToString();</pre>
+           myDS.ActiveRow["CMName"].ToString();
+```
 
 ## Requirements
 

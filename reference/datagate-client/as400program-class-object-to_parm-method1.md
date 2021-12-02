@@ -61,10 +61,8 @@ The outermost **ProgParm** object identified by name and indices should be a mem
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be set with an arbitrary object (such as a string), only if the object implements **System.IConvertible** , and the **ToDecimal** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, "prog" is an initialized As400Program object.
    * The first two lines creates a IBM i character data type whose
    * length is one, and then appends it to "prog"'s parameter list. */
@@ -76,7 +74,8 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
   /* This next line assigns the .NET value, CustName, to the
    * IBM i data type of the same name in the parameter list. */
   prog.ObjectToParm(QuitParm, QuitChar, 0);
-</pre>
+
+```
 
 ## Requirements
 

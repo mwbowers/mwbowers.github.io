@@ -29,10 +29,8 @@ ReadRandomMode Enumeration defines values in which you can select one of the cho
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL2", "CMMASTERL2");
   dbFile.AccessMode = AccessMode.RWCD;
@@ -61,7 +59,8 @@ ReadRandomMode Enumeration defines values in which you can select one of the cho
   {
       MessageBox.Show("Error deleting the record: " + dgEx.Message,
       dgEx.Error.ToString());
-  }</pre>
+  }
+```
 
 ## Requirements
 

@@ -20,9 +20,8 @@ Most values of the <span> **Message** </span> property have a unique standard me
 The <span> **Message** </span> property overrides the property defined by <span> **System.Exception** </span>. This allows **dgException** to participate in standard conversions, such as provided by the <span> **ToString** </span> method of <span>System.Exception</span>.
 ## Examples
 
-<pre class="prettyprint">        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -39,7 +38,8 @@ The <span> **Message** </span> property overrides the property defined by <span>
       MessageBox.Show(dgEx.Message, "Error opening file");
       //Exit procedure here.
   }
-</pre>
+
+```
 
 
 ## Requirements

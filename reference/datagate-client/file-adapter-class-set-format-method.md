@@ -48,9 +48,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 The default behavior of **FileAdapter** is to read all formats. Use this method to change an open file to read only records of the given format. To switch back to "read all records" mode, use the [ ResetFormat](file-adapter-class-reset-format-method.html) method. This method has no effect if the file is not a multiformat file.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Read only records from format one. */
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/SalesMem", "SalesMem");
@@ -132,7 +131,8 @@ The default behavior of **FileAdapter** is to read all formats. Use this method 
   }
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 
 ## Requirements

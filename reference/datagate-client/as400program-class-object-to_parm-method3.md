@@ -46,10 +46,8 @@ The outermost **ProgParm** object identified by *ParameterName* should be a memb
 For the method to succeed, the *Value* parameter must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be set with an arbitrary object (such as a string), only if the object implements **System.IConvertible** and the **ToDecimal** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
 ## Examples
 
-<pre>
-      <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -72,7 +70,8 @@ For the method to succeed, the *Value* parameter must have a valid conversion to
   TimeOfDay = Convert.ToDecimal(
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
-     new int[]{}));              </pre>
+     new int[]{}));              
+```
 
 ## Requirements
 

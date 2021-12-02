@@ -18,10 +18,8 @@ Gets and sets the current database’s initial library list.
 Gets or sets the initial library list for this database.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code will update the database name "SalesDB" to include
    * "IMPORTS" in its library list. */
   SourceProfile sp = new SourceProfile("SalesDB");
@@ -33,7 +31,8 @@ Gets or sets the initial library list for this database.
   }
   newList[i] = "IMPORTS";
   sp.InitialLibl = newList;
-  sp.Register();</pre>
+  sp.Register();
+```
 
 ## Requirements
 

@@ -34,10 +34,8 @@ For <span> **SeekRange** </span>, **RangeMode** determines whether to locate the
 
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -107,7 +105,8 @@ For <span> **SeekRange** </span>, **RangeMode** determines whether to locate the
   else
       MessageBox.Show("Unable to access any customers!");
   dbFile.Close();
-  db.Close(); </pre>
+  db.Close(); 
+```
 
 ## Requirements
 

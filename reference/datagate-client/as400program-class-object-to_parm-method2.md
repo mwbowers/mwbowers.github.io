@@ -52,10 +52,8 @@ For the method to succeed, the *value* object must have a valid conversion to th
 The *ElementIndices* parameter is ignored unless *ParameterName* refers to a "multiple-occurrence" parameter type. Multiple-occurrence parameters consist of single-dimension arrays of the parameter type. *ElementIndices* is a zero-relative index identifying the element of the array **ObjectToParm** is setting the value for.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -78,7 +76,8 @@ The *ElementIndices* parameter is ignored unless *ParameterName* refers to a "mu
   TimeOfDay = Convert.ToDecimal(
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
-     new int[]{}));              </pre>
+     new int[]{}));              
+```
 
 ## Requirements
 

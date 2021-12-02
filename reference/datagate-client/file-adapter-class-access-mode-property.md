@@ -17,9 +17,8 @@ Integer. Returns or sets an integer value for how a file will be accessed when i
 The valid values are defined by the **ASNA.DataGate.Common AccessMode** enumeration.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   FileAdapter dbFile = new FileAdapter();
   dbFile.Connection = new AdgConnection("*Public/DG NET Local");
   dbFile.FileName = "*Libl/CMASTNEWL1";
@@ -45,7 +44,8 @@ The valid values are defined by the **ASNA.DataGate.Common AccessMode** enumerat
       }
   }
   dbFile.Close();
-  dbFile.Connection.Close();</pre>
+  dbFile.Connection.Close();
+```
   
 
 

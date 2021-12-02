@@ -58,10 +58,8 @@ Record blocking can significantly improve sequential access efficiency especiall
 If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-class-formatids-property.html) property of the object referenced by **OpenAttributes** , then the given format identifier(s) will be used to "level check" the format(s) of the file. If the file is not at the same level when the open operation occurs, the database will return an error.
 ## Examples 
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -100,7 +98,8 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
   } 
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

@@ -46,9 +46,8 @@ The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorCl
 
 ## Examples
 
-<pre class="prettyprint">        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code attempts to open a file exclusively. 
    * If it fails, we print out the IBM i exception responsible.
    * "dbFile" is of type FileAdapter. */ 
@@ -88,7 +87,8 @@ The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorCl
       /* Throw exception otherwise. */
       throw dgEx;
   }
-</pre>
+
+```
 
 
 ## Requirements

@@ -43,10 +43,8 @@ An **AdgConnection** object is constructed by specifying an initial value for th
 The *dbName* parameter is used to construct a new **SourceProfile** instance, using the [SourceProfile(string)](source-profile-class-source-profile-constructor2.html) constructor. This <span> **SourceProfile** </span> object is then assigned to the <span> **AdgConnection** </span> object’s **SourceProfile** property.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   try
   {
       AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
@@ -55,7 +53,8 @@ The *dbName* parameter is used to construct a new **SourceProfile** instance, us
   {
       //At this point, dataBase will be set to null.  Do error handling here.
       System.Windows.Forms.MessageBox.Show(e.Message, "Unable to create connection.");
-  }</pre>
+  }
+```
 
 ## Requirements
 

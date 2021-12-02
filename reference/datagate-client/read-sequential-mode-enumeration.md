@@ -31,10 +31,8 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET iSeries");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.ReadWrite; 
@@ -82,7 +80,8 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
   keyTbl.Row["CSCUSTNO"] = 80000;
   dbFile.SeekKey(SeekMode.SetGT, keyTbl);
   dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Read);
-  </pre>
+  
+```
 
 ## Requirements
 

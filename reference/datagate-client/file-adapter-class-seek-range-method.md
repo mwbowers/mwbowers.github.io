@@ -83,10 +83,8 @@ The *firstKey* and *lastKey* parameters specify the range, along with the *range
 Note that if **FileAdapter** was already in range mode, this method will cancel it and initiate a new range mode as specified.
 ## Examples 
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -134,7 +132,8 @@ Note that if **FileAdapter** was already in range mode, this method will cancel 
       + Total.ToString() + ".", "Result");
 
   dbFile.Close();
-  db.Clone();</pre>
+  db.Clone();
+```
 
 ## Requirements
 

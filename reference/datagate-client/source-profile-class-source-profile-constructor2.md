@@ -75,17 +75,16 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Opens the database "*PUBLIC/DG NET iSeries" and changes the user
    * name and password. */
   SourceProfile sp = new SourceProfile("*PUBLIC/DG NET iSeries");
   sp.User = "NewUser";
   sp.Password = "NewPassword";
   sp.Register(); /* Updates the information. */
-</pre>
+
+```
 
 ## Requirements
 

@@ -15,10 +15,8 @@ The database name (or identifier) of this set of connection parameters.
 String. Read-only. Returns the parameter passed to the **SourceProfile** [constructor](source-profile-constructors-main.html) which created this object. If this **SourceProfile** was instantiated by other means, the value is an empty string.
 ## Examples 
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code displays all of the *PUBLIC database
    * names, along with their descriptive text, to the list view
    * "lvDbNames" whose view is set to "View.Details". */
@@ -30,7 +28,8 @@ String. Read-only. Returns the parameter passed to the **SourceProfile** [constr
       newItem = new ListViewItem(currentProfile.DatabaseName);
       newItem.SubItems.Add(currentProfile.Text);
       lvDbNames.Items.Add(newItem);
-  }</pre>
+  }
+```
 
 ## Requirements
 

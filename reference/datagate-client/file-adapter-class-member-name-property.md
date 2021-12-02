@@ -14,9 +14,8 @@ title: FileAdapter.MemberName Property
 String. Returns or sets the name of the member of the currently-opened file.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* We attempt to open the class variable FileAdapter "dbFile" 
    * which may or may not have been initialized another routine. */
   public void OpenFile(){
@@ -47,7 +46,8 @@ String. Returns or sets the name of the member of the currently-opened file.
           // Exit routine or end application here.
       }
   }
- </pre>
+ 
+```
 
 
 ## Requirements

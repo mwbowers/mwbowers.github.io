@@ -39,10 +39,9 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 [FileAdapter](file-adapter-class.html) provides methods for accessing a file by key value using [AdgKeyTable](adg-key-table-class.html). **AdgKeyTable** is a class for manipulating a DataTable which represents a DataGate file key. **NewKeyTable** generates an instance of **AdgKeyTable** corresponding to a key in a particular file format. Generally, this is the way application programs create key buffers for use in **FileAdapter** keyed access methods.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span></pre>
+
+```cs 
+```
 <pre class="prettyprint">  /* This example will open a file and find the record for
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clearity's sake. */

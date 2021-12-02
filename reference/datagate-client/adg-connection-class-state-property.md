@@ -22,10 +22,8 @@ Currently, **AdgConnection** supports two values of the **System.Data.Connection
 The value of **State** will be set to Open by a successful call to the [Open](adg-connection-class-open-method.html) method. Likewise, the value will be set to Closed by [ Close Method](adg-connection-class-close-method.html) or [Dispose Method](adg-connection-class-dispose-method.html) calls. 
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here we need to use an AdgConnection "dataBase" to open
      a file.  We first check to make sure that the AdgConnection has 
      been initialized and that the connection has been made to
@@ -41,7 +39,8 @@ The value of **State** will be set to Open by a successful call to the [Open](ad
   { 
      //If the AdgConnection was not ready, you cannot immediately
      //open the file, so take alternative action here.
-  }</pre>
+  }
+```
 
 ## Requirements
 

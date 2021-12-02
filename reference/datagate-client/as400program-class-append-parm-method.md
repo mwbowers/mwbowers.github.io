@@ -35,10 +35,8 @@ The **ProgParm** appended to the list may optionally be named via the <span>name
 **Note** that the parameter list may be constructed with this method before the [ Connection](as400program-class-connection-property.html) property has been set, but the values of the parameters may not be accessed with [ObjectToParm](as400program-class-object-to_parm-method-main.html) and [ParmToObject Method](as400program-class-parm-to_object-method-main.html) until <span> **Connection** </span> has a value.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, prog is an initialized As400Program.
    * We add the field "CustName" to the parm list, and a local
    * string variable by the same name into it.  After calling the
@@ -54,7 +52,8 @@ The **ProgParm** appended to the list may optionally be named via the <span>name
   //Fetch the returned value.
   CustName = Convert.ToString(
         prog.ParmToObject(System.Type.GetType("System.String"), "CustName", 
-        new int[]{}));  </pre>
+        new int[]{}));  
+```
 
 ## Requirements
 

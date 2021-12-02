@@ -29,10 +29,8 @@ Deletes a registered database name from the system registry.
 None.
 ## Examples 
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Open up and unregistered the database profile "Worthless Db". */
   try
   {
@@ -44,7 +42,8 @@ None.
             registered database profile.",
           "Could not unregister.");
       return;
-  }</pre>
+  }
+```
 
 ## Requirements
 

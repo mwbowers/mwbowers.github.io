@@ -18,9 +18,8 @@ A category of the condition raising the exception.
 The condition raising the <span>dgException</span> belongs to a particular category of conditions identified by DG. The <span> **ErrorClass** </span> field contains this category value.
 ## Examples 
 
-<pre class="prettyprint">        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code attempts to open a file exclusively. 
    * If it fails, we print out the IBM i exception responsible.
    * "dbFile" is of type FileAdapter. */ 
@@ -59,7 +58,8 @@ The condition raising the <span>dgException</span> belongs to a particular categ
           " while opening file.", "iSeries exception.");
       /* Throw exception otherwise. */
       throw dgEx;
-  }</pre>
+  }
+```
 
 
 ## Requirements

@@ -102,10 +102,8 @@ Note that if **FileAdapter** was already in range mode, this method will cancel 
 Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter-class-delete-range-method.html) method to optimize processing and to enhance client/server performance with all supported database engines with dynamic Network Blocking.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", 
             "CMMASTERL1");
@@ -180,7 +178,8 @@ Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter
   MessageBox.Show(percent.Substring(0, percent.IndexOf('.')) +
       "% of the customers sampled are active.");
   dbFile.Close();
-  db.Close(); </pre>
+  db.Close(); 
+```
 
 ## Requirements
 

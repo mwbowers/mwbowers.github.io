@@ -18,10 +18,8 @@ None.
 By default, when accessing multi-format files, records of all formats are accessible. The **SetFormat** method of **FileAdapter** can be used to restrict access to only records of a certain format. The **ResetFormat** method is used to return the access mode to the default, non-format specific behavior.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
 AdgConnection db = new AdgConnection("*Public/DG NET Local");
 FileAdapter dbFile = new FileAdapter(db, "Examples/SalesMem", "SalesMem");
 dbFile.AccessMode = AccessMode.Read;
@@ -81,7 +79,8 @@ MessageBox.Show("The cusomter with the highest average sales in " +
      "\", with an average of " + decimalResult + ".",
      "Result");
 dbFile.Close();
-db.Close();</pre>
+db.Close();
+```
 
 ## Requirements
 

@@ -32,10 +32,8 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
@@ -69,7 +67,8 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
   }
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

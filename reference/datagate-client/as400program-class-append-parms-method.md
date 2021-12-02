@@ -37,10 +37,8 @@ To create a program parameter list, <span> **ProgParm** </span> objects should b
 <span>Note</span> that the parameter list may be constructed with this method before the [ Connection](as400program-class-connection-property.html) property has been set, but the values of the parameters may not be accessed with [ObjectToParm](as400program-class-object-to_parm-method-main.html) and [ParmToObject Method](as400program-class-parm-to_object-method-main.html) until <span> **Connection** </span> has a value.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -64,7 +62,8 @@ To create a program parameter list, <span> **ProgParm** </span> objects should b
      prog.ParmToObject(System.Type.GetType("System.Decimal"),
      "TimeOfDay",
      new int[]{}));
-              </pre>
+              
+```
 
 ## Requirements
 

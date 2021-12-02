@@ -21,17 +21,16 @@ When database connection pooling is enabled, the communication to the server and
 If connection pooling is not enabled, when a database and all its associated files are closed, the connection and server resources are ended (i.e., in the case of DataGate, the DataGate Job ends). When the same application needs the database services again, a new connection and corresponding job has to be established. This overhead wastes resources and slows down the application.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different idle
    * timeout time. */
   SourceProfile sp = new SourceProfile("*PUBLIC/DG NET iSeries");
   sp.PoolingTimeout = 10;
   AdgConnection database = new AdgConnection(sp);
-</pre>
+
+```
 
 ## Requirements
 

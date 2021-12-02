@@ -15,10 +15,8 @@ This property is **True** if the seek operation resulted in an exact match.
 Read-only. Boolean. Returns **True** when a seek operation resulted in an exact match. 
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   using (FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1"))
   {
@@ -43,7 +41,8 @@ Read-only. Boolean. Returns **True** when a seek operation resulted in an exact 
       else
           MessageBox.Show("Record 1125 not found.");
   }//Using statement automatically closes dbFile.
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Remarks
 

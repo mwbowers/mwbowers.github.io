@@ -20,12 +20,11 @@ This method sets the **State** property of the **AdgConnection** object to Close
 Note that you must explicitly call either the <span> **Close** </span> or [Dispose](adg-connection-class-dispose-method.html) methods on <span> **AdgConnection** </span> objects in the **Open** state before the objects are finalized, to release unmanaged resources associated with their database connections. If unmanaged resources are not released prior to object finalization, unexpected results can occur, including program termination and loss of data.
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   //Disconnects from the dataBase by closing the connection.
-  adg.Close();</pre>
+  adg.Close();
+```
 
 ## Requirements
 

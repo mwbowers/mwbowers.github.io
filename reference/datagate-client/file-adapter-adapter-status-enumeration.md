@@ -26,9 +26,8 @@ The **FileAdapter.AdapterStatus** enumeration is used as a parameter by the [ Fi
 ## Examples
 
 Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure it's opened and open it if it isn't.
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   if (dbFile == null)
       dbFile = new FileAdapter();
   if (dbFile.Status == FileAdapter.AdapterStatus.Closed)
@@ -38,7 +37,8 @@ Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to
       dbFile.MemberName = memberName;
       dbFile.OpenNewAdgDataSet(out myDataSet);
   }
-  </pre>
+  
+```
 
 
 ## Requirements

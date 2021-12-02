@@ -29,10 +29,8 @@ Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapt
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -114,7 +112,8 @@ Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapt
   if (returnRecordsRead &gt; 0)
       averageReturnsPerYear = totalReturns / returnRecordsRead;
   else
-      averageReturnsPerYear = 0; </pre>
+      averageReturnsPerYear = 0; 
+```
 
 ## Requirements
 

@@ -28,10 +28,8 @@ Returns the currently registered database names available for use in a program.
 String. The currently registered database names available for use in a program.
 ## Examples 
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* This code will fill a combo box with all of the available database
    * names. */
   foreach(string name in SourceProfile.GetNames(true)) /* Get *PUBLIC 
@@ -40,7 +38,8 @@ String. The currently registered database names available for use in a program.
             appear without the "*PUBLIC/" prefix. */
   foreach(string name in SourceProfile.GetNames(false)) /* Get non public 
             databases. */
-      cbDbName.Items.Add(name);</pre>
+      cbDbName.Items.Add(name);
+```
 
 ## Requirements
 

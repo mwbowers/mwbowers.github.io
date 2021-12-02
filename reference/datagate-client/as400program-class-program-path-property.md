@@ -20,13 +20,12 @@ Set the <span> **ProgramPath** </span> property to name the program on the datab
 <span> **ProgramPath** </span> is a set-only property. The value of the string assigned to the property is not validated by DG.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   As400Program prog = new As400Program();
   prog.Connection = new AdgConnection("*Public/DG NET IBM i");
-  prog.ProgramPath = "*Libl/Call400";</pre>
+  prog.ProgramPath = "*Libl/Call400";
+```
 
 ## Requirements
 

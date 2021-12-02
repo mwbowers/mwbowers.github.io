@@ -16,14 +16,13 @@ This constructor creates an **As400Program** object without a connection or prog
 Before adding parameters or calling programs with an instance created with this constructor, the **ProgramPath** and [Connection](as400program-class-connection-property.html) properties must be set.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program();
   prog.Connection = ProdDB;
-  prog.ProgramPath = "*Libl/Call400";</pre>
+  prog.ProgramPath = "*Libl/Call400";
+```
 
 ## Requirements
 

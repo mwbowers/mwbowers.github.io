@@ -19,10 +19,8 @@ String. Returns or sets a platform-specific attribute of the database engine.
 The **PlatformAttribute** property is used to distinguish between different database engines that can reside on the same machine. For instance, both DataGate for Windows and SQL Server can reside on the same machine. When accessing SQL Server databases, **PlatformAttribute** must be set to "*SQLOLEB". The setting of assumed "*DATALINK" is used for DataGate for Windows and DataGate for iSeries. Any value other than "*SQLOLEB" is presumed to be "*DATALINK". 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Register the database name "My Local" to specify the local database. */
   SourceProfile newDbProfile = new SourceProfile("My Local", false);
   newDbProfile.Server = "*LOCAL";
@@ -34,7 +32,8 @@ The **PlatformAttribute** property is used to distinguish between different data
   newDbProfile.PlatformAttribute = "*DATALINK";
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
-  newDbProfile.Register();</pre>
+  newDbProfile.Register();
+```
 
 ## Requirements
 

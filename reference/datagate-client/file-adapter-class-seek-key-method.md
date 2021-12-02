@@ -62,10 +62,8 @@ When **SeekMode.SetLL** or **SeekMode.SetGT** values for *mode* are specified an
 Calling this method cancels "range mode". A prior successful call to **ReadRange** or **SeekRange** places the **FileAdapter** in range mode, in which only records with keys in a specified range are accessed. This method cancels the restriction.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -104,7 +102,8 @@ Calling this method cancels "range mode". A prior successful call to **ReadRange
   string CustomerName4 = myDS.ActiveRow["CMName"].ToString();
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

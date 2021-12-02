@@ -52,9 +52,8 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 The **IPrintProperties** object returned by this method can be used to get and set print file control property values of an open file. These control properties include fonts, images, and other display characteristics.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Will open up "CustReport" and will write a single detail, and
    * change its background color. */
   AdgConnection dataBase = new AdgConnection("DG NET Local");
@@ -76,7 +75,8 @@ The **IPrintProperties** object returned by this method can be used to get and s
 
   printFile.Close(); /* Shows print preview - can also accomplish this with
                       * ForceEOD, which doesn't close the file. */
-  dataBase.Close();</pre>
+  dataBase.Close();
+```
 
 
 ## Requirements

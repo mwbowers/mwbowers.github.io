@@ -4,34 +4,8 @@ title: FieldType.NewTime Method
 ---
 
 Creates a new time [ FieldType](field-type-class.html).
-<pre />
 
-## Parameters
-
-<dl>
-        <dt>
- *fmt* 
-        </dt>
-        <dd>
-[DateTimeFormat](date-time-format-enumeration.html). The format of 
-						the time field.</dd>
-</dl>
-
-## Exceptions
-
-**System.ArgumentException** . Thrown if *fmt* is **YMD** , **MDY** , **DMY** , or **JUL** .
-## Remarks
-
-**NewTime** constructs a **FieldType** that represents a DataGate time field. Time fields contain 24-hour clock time data in a variety of formats, as specified by fmt (see [ DateTimeFormat](date-time-format-enumeration.html) for details). The storage size of a time field is 8 bytes. 
-
-The value of *fmt* may not be **YMD** , **MDY** , **DMY** , or **JUL** .
-
-Note that internally, DG manipulates date, time, and timestamp fields as **System.DateTime** value types. The object value returned by DG as the value of a date, time, or timestamp field (in methods such as [ As400Program.ParmToObject](as400program-class-parm-to_object-method-main.html)) will be converted from a value of DateTime. Likewise, DG will only accept values that can be accurately converted to DateTime values, for setting the value of date, time, or timestamp fields.
-## Examples
-
-<pre>
-   <span class="lang"> [C#] 
-        </span>
+```cs 
   /* Use the already initialized As400OProgram "timeProg" to set the
    * value of a DateTime variable. This program accepts a time data 
             type
@@ -56,7 +30,8 @@ Note that internally, DG manipulates date, time, and timestamp fields as **Syste
             time format *USA
    * will zero out the seconds as well. The same will happen to the 
             time portion of a
-   * variable if its IBM i parm was set to be a NewDate. */</pre>
+   * variable if its IBM i parm was set to be a NewDate. */
+```
 
 ## Requirements
 

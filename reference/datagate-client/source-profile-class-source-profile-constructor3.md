@@ -84,10 +84,8 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 
 ## Examples
 
-<pre class="prettyprint">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* When we specify false with this constructor, we're
    * telling Datagate not to get information from the
    * registry. Thus we can use it to create an entirely
@@ -102,7 +100,8 @@ Assuming the registered database name information is valid, a **SourceProfile** 
   newDbProfile.Text = "New database at valid ip address, on port 5047.";
   /* Register the database name. */
   newDbProfile.Register();
-</pre>
+
+```
 
 ## Requirements
 

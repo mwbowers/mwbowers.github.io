@@ -81,10 +81,8 @@ The value added by **DeleteRange** to the above program is that all processing i
 Use the **DeleteRange** method in conjunction with the [ ReadRange](file-adapter-class-read-range-method.html) method to optimize processing and to enhance client/server performance with all supported database engines with dynamic Network Blocking.
 ## Examples
 
-<pre class="OH_CodeSnippetContainerCode">
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Delete | AccessMode.Read;
@@ -118,7 +116,8 @@ Use the **DeleteRange** method in conjunction with the [ ReadRange](file-adapter
   }
 
   dbFile.Close();
-  db.Close();</pre>
+  db.Close();
+```
 
 ## Requirements
 

@@ -44,9 +44,8 @@ This form of **ParmToObject** may be used to get the value of simple parameters 
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion from the underlying parameter type. For example, a parameter for a decimal number can be converted to an arbitrary object type (such as a string), only if the object implements **System.IConvertible** and the **ChangeType** method yields a valid conversion. Most fundamental types in the System namespace implement IConvertible.
 ## Examples
 
-<pre>        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object,
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -62,7 +61,8 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
    * will have new values in it. To read them, we set our local
    * variables to the returned values in the parameters list. */
   CustName = Convert.ToString(<br />      prog.ParmToObject(System.Type.GetType("System.String"),<br />      "CustName",<br />       0));
-  TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),<br />      "TimeOfDay",<br />      0));</pre>
+  TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),<br />      "TimeOfDay",<br />      0));
+```
 
 
 ## Requirements

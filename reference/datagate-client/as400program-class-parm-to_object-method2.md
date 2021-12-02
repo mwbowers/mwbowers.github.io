@@ -54,10 +54,8 @@ The outermost <span> **ProgParm** </span> object identified by *ParameterName* a
 For the method to succeed, the type specified by *ReturnType* must have a valid conversion to the underlying parameter type. For example, a parameter for a decimal number can be returned as an arbitrary object (such as a string), only if the object implements <span> **System.IConvertible** </span>, and the <span> **ChangeType** </span> method yields a valid conversion. Most fundamental types in the System namespace implement <span>IConvertible</span>.
 ## Examples
 
-<pre>
-        <span class="lang">
- [C#] 
-        </span>
+
+```cs 
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
@@ -82,7 +80,8 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
   TimeOfDay = Convert.ToDecimal(
         prog.ParmToObject(System.Type.GetType("System.Decimal"),
         "TimeOfDay",
-        0));</pre>
+        0));
+```
 
 ## Requirements
 
