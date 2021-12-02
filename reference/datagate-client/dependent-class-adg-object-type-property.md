@@ -4,10 +4,10 @@ title: Dependent.AdgObjectType Property
 ---
 
 Gets a database object ([IAdgObject](iadg-object-class.html)) corresponding to this dependent object.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }** 
-      </pre>
+
+```cs
+ public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }
+```
 
 
 ## Property Value

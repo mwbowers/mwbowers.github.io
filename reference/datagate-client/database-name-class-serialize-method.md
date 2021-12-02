@@ -5,12 +5,13 @@ title: DatabaseName.Serialize Method
 
 **Serialize** converts the SourceProfile object into its XML representation to store an object's state so that you can retrieve the state later.
 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static String Serialize( ,
+
+```cs
+ public static String Serialize( ,
    string tag ,
    SourceProfile sp
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

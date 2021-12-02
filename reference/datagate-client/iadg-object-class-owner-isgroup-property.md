@@ -4,9 +4,10 @@ title: IAdgObject.OwnerIsGroup Property
 ---
 
 **OwnerIsGroup** specifies [ Owner](iadg-object-class-owner-property.html) is a group account when **True** .
-<pre>        <span class="lang">[C#]</span>
- **Public bool OwnerIsGroup { get; }** 
-      </pre>
+
+```cs
+ Public bool OwnerIsGroup { get; }
+```
 
 Property Value <p> **Boolean** . ReadOnly. **True** if [ Owner](iadg-object-class-owner-property.html) names a group profile, otherwise **False** . 
 ## Exceptions

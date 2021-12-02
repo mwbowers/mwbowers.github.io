@@ -4,13 +4,13 @@ title: AdgDataSet.InsertRow(string, integer)
 ---
 
 Insert a record into the DataSet table for a particular format and relative record position.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void InsertRow(
+
+```cs
+ public void InsertRow(
    string strFormat,
    integer rrn
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

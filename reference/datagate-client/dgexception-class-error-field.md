@@ -4,9 +4,10 @@ title: dgException.Error Field
 ---
 
 The condition identifier for this dgException.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public dgErrorNumber Error}** 
-      </pre>
+
+```cs
+ public dgErrorNumber Error}
+```
 
 ## Field Value
 
@@ -17,7 +18,7 @@ DG sets the **Error** field to identify the condition giving rise to the dgExcep
 ## Examples
 
 <pre class="prettyprint">        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMMASTERL1", "CMMASTERL1");

@@ -4,10 +4,10 @@ title: AdgDataSet.InitializeFormats Method
 ---
 
 Initialize an instance of **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public new void InitializeFormats();** 
-      </pre>
+
+```cs
+ public new void InitializeFormats();
+```
 
 
 ## Remarks

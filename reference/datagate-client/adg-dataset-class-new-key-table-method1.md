@@ -4,12 +4,12 @@ title: AdgDataSet.NewKeyTable(string)
 ---
 
 Create a key buffer for keyed access operations for the specified format string.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public [AdgKeyTable](adg-key-table-class.html) NewKeyTable(
+
+```cs
+ public [AdgKeyTable](adg-key-table-class.html) NewKeyTable(
    string strFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -41,7 +41,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span></pre>
 <pre class="prettyprint">  /* This example will open a file and find the record for
      the customer "Thilmany of Bread Co Resources".

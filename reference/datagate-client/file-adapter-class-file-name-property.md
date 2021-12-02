@@ -4,9 +4,10 @@ title: FileAdapter.FileName Property
 ---
 
 The path name of the database file, excluding the member name (see [ MemberName Property](file-adapter-class-member-name-property.html)). 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public string FileName { get; set; }** 
-      </pre>
+
+```cs
+ Public string FileName { get; set; }
+```
 
 ## Property Value
 
@@ -14,7 +15,7 @@ String. Returns or sets the path name of the database file.
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* In this simple routine we wish to write the format names 
    * of a file to a combo box using the FileAdapter "dbFile" 

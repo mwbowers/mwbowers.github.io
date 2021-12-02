@@ -4,10 +4,10 @@ title: Dependent.PathName Property
 ---
 
 **PathName** is the full path name of the dependent database object. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string PathName{ get;}** 
-      </pre>
+
+```cs
+ public string PathName{ get;}
+```
 
 
 ## Property Value

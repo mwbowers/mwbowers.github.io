@@ -4,9 +4,10 @@ title: PrintDevAttr.Copies Property
 ---
 
 The **Copies** property indicates the number of copies to be printed.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int Copies { get; set; }** 
-      </pre>
+
+```cs
+ public int Copies { get; set; }
+```
 
 ## Property Value
 

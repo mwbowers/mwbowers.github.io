@@ -4,10 +4,10 @@ title: PrintDevAttr.Quality Property
 ---
 
 The **Quality** property specifies the quality rating for output produced by the printer. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public System.Drawing.Printing.PrinterResolutionKind Quality { get; set; }** 
-      </pre>
+
+```cs
+ public System.Drawing.Printing.PrinterResolutionKind Quality { get; set; }
+```
 
 
 ## Property Value

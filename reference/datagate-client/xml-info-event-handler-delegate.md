@@ -4,12 +4,12 @@ title: XmlInfoEventHandler Delegate
 ---
 
 This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) methods.
-<pre class="prettyprint">        <span class="lang">
- **[C#]**  </span> 
- **public delegate XmlInfoEventHandler(
+
+```cs
+ public delegate XmlInfoEventHandler(
    Object object,<br />[XmlInfoEventArgs](xml-info-event-args-class.html) args
-);** 
-      </pre>
+);
+```
 
 
 

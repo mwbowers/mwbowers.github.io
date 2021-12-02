@@ -4,9 +4,10 @@ title: XmlOptions Enumeration
 ---
 
 The **XmlOptions** enumeration defines bit-flag values directing the [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html) methods. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **[Flags]public enum XmlOptions;** 
-      </pre>
+
+```cs
+ [Flags]public enum XmlOptions;
+```
 
 ## Remarks
 

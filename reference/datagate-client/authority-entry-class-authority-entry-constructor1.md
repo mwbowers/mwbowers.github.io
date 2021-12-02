@@ -4,10 +4,10 @@ title: AuthorityEntry()
 ---
 
 Creates a new instance of <span> **AuthorityEntry** </span> with all fields initialized to default values.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AuthorityEntry( );** 
-      </pre>
+
+```cs
+ public AuthorityEntry( );
+```
 
       <span/>
 

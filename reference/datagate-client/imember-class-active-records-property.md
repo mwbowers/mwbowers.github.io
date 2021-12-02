@@ -4,10 +4,10 @@ title: IMember.ActiveRecords Property
 ---
 
 The number of active records in the database file member object represented by **IMember** 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public long ActiveRecord { get; }** 
-      </pre>
+
+```cs
+ public long ActiveRecord { get; }
+```
 
 
 ## Property Value

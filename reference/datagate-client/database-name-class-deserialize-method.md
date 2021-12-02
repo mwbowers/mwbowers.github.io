@@ -4,13 +4,13 @@ title: DatabaseName.Deserialize Method
 ---
 
 **Deserialize** reads the XML text and generates a SourceProfile object from its XML representation.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static SourceProfile Deserialize( ,
+
+```cs
+ public static SourceProfile Deserialize( ,
    string tag ,
    string serSp
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

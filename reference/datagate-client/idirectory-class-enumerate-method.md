@@ -4,10 +4,10 @@ title: IDirectory.Enumerate Method
 ---
 
 **Enumerate** the object contents of the library represented by **IDirectory** , with the supplied [ AdgEnumerator](adg-enumerator-delegate.html) delegate.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Enumerate(_<br />    [AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);** 
-      </pre>
+
+```cs
+ public void Enumerate(_<br />    [AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);
+```
 
 
 ## Parameters

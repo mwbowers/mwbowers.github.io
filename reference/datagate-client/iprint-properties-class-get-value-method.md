@@ -4,13 +4,13 @@ title: IPrintProperties.GetValue Method
 ---
 
 Access a print control property value.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public object GetValue(
+
+```cs
+ public object GetValue(
    fieldName string,
    propName string,
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

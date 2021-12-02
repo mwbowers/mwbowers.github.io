@@ -4,11 +4,12 @@ title: FileAdapter.DeleteAllRecords Method
 ---
 
 Deletes all records in the currently open file.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public AdgConnection(
+
+```cs
+ public AdgConnection(
    string dbName
-);** 
-      </pre>
+);
+```
 
 ## Exceptions
 
@@ -43,7 +44,7 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* We open the file in order to delete all of its records. */
   AdgConnection db = new AdgConnection("*Public/DG NET Local");

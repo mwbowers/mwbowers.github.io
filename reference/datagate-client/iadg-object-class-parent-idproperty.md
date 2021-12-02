@@ -4,9 +4,10 @@ title: IAdgObject.ParentID Property
 ---
 
 **ParentID** identifies a parent database object of the object represented by **IAdgObject** .
-<pre>        <span class="lang">[C#]</span>
- **Public int ParentID { get; }** 
-      </pre>
+
+```cs
+ Public int ParentID { get; }
+```
 
 ## Property Value
 

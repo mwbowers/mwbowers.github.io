@@ -4,12 +4,12 @@ title: IFileObject.RepairFile Method
 ---
 
 **RepairFile** repairs the database file represented by **IFileObject** as specified by [RepairOptions](repair-options-enumeration.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void RepairFile(<br />[RepairOptions](repair-options-enumeration.html) repairOptions,
+
+```cs
+ public void RepairFile(<br />[RepairOptions](repair-options-enumeration.html) repairOptions,
 [AdgObserver](adg-observer-delegate.html) observer
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,9 +4,10 @@ title: PasswordType Enumeration
 ---
 
 The <span> **PasswordType** </span> enumerated constant defines values indicating a particular authentication scheme or password security mode. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public enum PasswordType;** 
-      </pre>
+
+```cs
+ public enum PasswordType;
+```
 
 ## Remarks
 

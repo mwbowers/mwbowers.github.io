@@ -4,9 +4,10 @@ title: PrintDevAttr.Collate Property
 ---
 
 The **Collate** property indicates the output produced by capable printers should be collated when this property is set to **True** .
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public bool Collate { get; set; }** 
-      </pre>
+
+```cs
+ public bool Collate { get; set; }
+```
 
 ## Property Value
 

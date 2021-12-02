@@ -4,10 +4,10 @@ title: dgErrorNumber Enumeration
 ---
 
 Specifies the type of DG run-time error.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum dgErrorNumber;** 
-      </pre>
+
+```cs
+ public enum dgErrorNumber;
+```
 
 
 ## Remarks
@@ -500,7 +500,7 @@ The <span>dgErrorNumber</span> enumeration is used as a parameter by the [ Error
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

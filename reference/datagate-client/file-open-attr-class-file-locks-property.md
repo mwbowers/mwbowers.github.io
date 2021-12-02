@@ -18,7 +18,7 @@ When set to the Auto value, record locking occurs automatically in **FileAdapter
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Using the FileLocks property of a FileAdapter's OpenAttributes,
    * you can set file locking to manual, which allows you to lock more

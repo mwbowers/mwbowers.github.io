@@ -4,9 +4,10 @@ title: IAdgObject.ObjectID Property
 ---
 
 **ObjectID** identifies the object represented by **IAdgObject** .
-<pre>        <span class="lang">[C#]</span>
- **Public int ObjectID { get; }** 
-      </pre>
+
+```cs
+ Public int ObjectID { get; }
+```
 
 ## Property Value
 

@@ -4,10 +4,10 @@ title: WaitOptions Enumeration
 ---
 
 <span> **WaitOptions** </span> defines values for directing the [Lock](iadg-object-class-lock-method.html) method when the requested lock cannot be immediately granted.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum WaitOptions;** 
-      </pre>
+
+```cs
+ public enum WaitOptions;
+```
 
 
 ## Remarks

@@ -4,9 +4,10 @@ title: FileAdapter.Dispose Method
 ---
 
 Releases unmanaged resources and closes the currently open file (synonymous with [Close](file-adapter-class-close-method.html)).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public virtual new Dispose();** 
-      </pre>
+
+```cs
+ public virtual new Dispose();
+```
 
 ## Exceptions
 

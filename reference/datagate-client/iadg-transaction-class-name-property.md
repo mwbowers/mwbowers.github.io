@@ -4,9 +4,10 @@ title: IAdgTransaction.Name Property
 ---
 
 The name of the transaction.
-<pre>        <span class="lang">[C#]</span>
- **Public virtual new string Name { get; }** 
-      </pre>
+
+```cs
+ Public virtual new string Name { get; }
+```
 
 ## Returns
 

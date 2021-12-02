@@ -4,12 +4,12 @@ title: IPrintProperties.GetTypedObject Method
 ---
 
 **GetTypedObject** returns a reference to the print control object associated with a field.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public object GetTypedObject(
+
+```cs
+ public object GetTypedObject(
    fieldName string
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

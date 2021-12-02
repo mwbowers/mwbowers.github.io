@@ -4,9 +4,10 @@ title: ProgParm(ProgParmType, DataDirection)
 ---
 
 Construct a representation of a simple iSeries program parameter.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public ProgParm(<br />   ProgParmType ppt,<br />   DataDirection dir<br />)**  </pre>
+
+```cs
+ public ProgParm(<br />   ProgParmType ppt,<br />   DataDirection dir<br />)
+```
 
 
 ## Parameters
@@ -53,7 +54,7 @@ Careful use of the *dir* parameter can improve the performance of iSeries progra
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Create paramerter list to send to the program being called.
    * The first two parameters catch return values, the last will tell the

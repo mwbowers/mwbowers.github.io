@@ -4,11 +4,12 @@ title: FileAdapter.AddRecord Method
 ---
 
 Adds a record to a file.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void AddRecord(
+
+```cs
+ public void AddRecord(
 [AdgDataSet](adg-dataset-class.html) ds
-)** 
-      </pre>
+)
+```
 
 ## Parameters
 
@@ -41,7 +42,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", 

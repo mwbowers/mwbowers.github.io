@@ -4,9 +4,10 @@ title: FieldType.DateTime Property
 ---
 
 The date and time format of the field. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public DateTimeFormat DateTime { get; }** 
-      </pre>
+
+```cs
+ public DateTimeFormat DateTime { get; }
+```
 
 ## Property Value
 

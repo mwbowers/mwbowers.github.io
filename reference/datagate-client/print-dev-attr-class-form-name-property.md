@@ -4,9 +4,10 @@ title: PrintDevAttr.FormName Property
 ---
 
 The **FormName** specifies the name of the print format to use.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public String FormName { get; set; }** 
-      </pre>
+
+```cs
+ public String FormName { get; set; }
+```
 
 ## Property Value
 

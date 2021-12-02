@@ -4,9 +4,10 @@ title: FileOpenAttr.WaitForFile Property
 ---
 
 Time, in seconds, that a process will wait to access a file.
-<pre>        <span class="lang">[C#]</span>
- **Public int WaitForFile { get; set; }** 
-      </pre>
+
+```cs
+ Public int WaitForFile { get; set; }
+```
 
 ## Property Value
 

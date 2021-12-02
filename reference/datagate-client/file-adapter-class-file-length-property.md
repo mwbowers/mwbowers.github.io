@@ -4,9 +4,10 @@ title: FileAdapter.FileLength Property
 ---
 
 The number of deleted and non-deleted records in the open database file. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public long FileLength { get; }** 
-      </pre>
+
+```cs
+ Public long FileLength { get; }
+```
 
 ## Property Value
 
@@ -14,7 +15,7 @@ Integer. Returns the number of deleted and non-deleted records in the file.
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   FileAdapter dbFile = new FileAdapter();
   dbFile.Connection = new AdgConnection("*Public/DG NET Local");

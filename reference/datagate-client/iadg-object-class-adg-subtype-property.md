@@ -4,9 +4,10 @@ title: IAdgObject.AdgSubType Property
 ---
 
 **AdgSubType** identifies the secondary type of the database object represented by **IAdgObject** . 
-<pre>        <span class="lang">[C#]</span>
- **Public [AdgSubTypes](adg-subtypes-enumeration.html) AdgSubType { get; }** 
-      </pre>
+
+```cs
+ Public [AdgSubTypes](adg-subtypes-enumeration.html) AdgSubType { get; }
+```
 
 Property Value <p> [AdgSubTypes](adg-subtypes-enumeration.html). ReadOnly. A sub-classification of the database object, such as Join, Physical, etc. 
 <br />

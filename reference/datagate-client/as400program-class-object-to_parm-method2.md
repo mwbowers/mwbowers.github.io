@@ -4,14 +4,14 @@ title: As400Program.ObjectToParm(object, string, int[])
 ---
 
 Converts an object or value type to a parameter list value. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void ObjectToParm(
+
+```cs
+ public void ObjectToParm(
    object Value,
    string ParameterName,
    int[] ElementIndices
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -54,7 +54,7 @@ The *ElementIndices* parameter is ignored unless *ParameterName* refers to a "mu
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid

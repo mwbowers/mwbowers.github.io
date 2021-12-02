@@ -4,10 +4,10 @@ title: ShareTypes Enumeration
 ---
 
 <span> **ShareTypes** </span> defines the types of locks used with the [ Lock](iadg-object-class-lock-method.html) and [Unlock](iadg-object-class-unlock-method.html) methods of [IAdgObject](iadg-object-class.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum ShareTypes;** 
-      </pre>
+
+```cs
+ public enum ShareTypes;
+```
 
 
 ## Remarks

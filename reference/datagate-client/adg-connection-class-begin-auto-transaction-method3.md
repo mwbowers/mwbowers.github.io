@@ -4,13 +4,13 @@ title: AdgConnection.BeginAutoTransaction(String, String)
 ---
 
 Begins an automatic database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) object with the name and options specified.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IAdgTransaction BeginAutoTransaction(
+
+```cs
+ public IAdgTransaction BeginAutoTransaction(
    string Name,
    string Options
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

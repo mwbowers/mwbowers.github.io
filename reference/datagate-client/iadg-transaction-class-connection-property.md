@@ -4,9 +4,10 @@ title: IAdgTransaction.Connection Property
 ---
 
 The connection to the database representing the transaction context.
-<pre>        <span class="lang">[C#]</span>
- **Public virtual AdgConnection Connection { get; }** 
-      </pre>
+
+```cs
+ Public virtual AdgConnection Connection { get; }
+```
 
 ## Property Value
 

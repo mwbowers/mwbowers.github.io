@@ -4,9 +4,10 @@ title: XmlInfoEventArgs.Type Field
 ---
 
 The **Type** field denotes the type of event being reported.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public [XmlInfoEventType](xml-info-event-type-enumeration.html) Type** 
-      </pre>
+
+```cs
+ public [XmlInfoEventType](xml-info-event-type-enumeration.html) Type
+```
 
 ## Field Value
 

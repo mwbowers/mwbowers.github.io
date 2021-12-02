@@ -4,10 +4,10 @@ title: ReadRandomMode Enumeration
 ---
 
 Defines modes of operation for the [ FileAdapter.ReadRandomKey](file-adapter-class-read-random-key-method.html) and [ FileAdapter.ReadRandomRRN](file-adapter-class-read-random-rrn-method.html) methods.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum ReadRandomMode;** 
-      </pre>
+
+```cs
+ public enum ReadRandomMode;
+```
 
 
 ## Remarks
@@ -31,7 +31,7 @@ ReadRandomMode Enumeration defines values in which you can select one of the cho
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL2", "CMMASTERL2");

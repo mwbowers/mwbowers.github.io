@@ -4,10 +4,10 @@ title: FileAdapter.FileAdapter Constructor ()
 ---
 
 Constructs an instance of the [FileAdapter](file-adapter-class.html) object with default values.
-<pre class="syntax">
-        <span class="lang">[C#]</span>
- **public FileAdapter();** 
-      </pre>
+
+```cs
+ public FileAdapter();
+```
 
 
 ## Remarks
@@ -19,7 +19,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
   FileAdapter dbFile = new FileAdapter();

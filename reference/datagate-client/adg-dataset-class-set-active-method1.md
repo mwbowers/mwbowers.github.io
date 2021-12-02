@@ -4,13 +4,13 @@ title: AdgDataSet.SetActive(integer,integer)
 ---
 
 Establish the record, specified by format index and relative record number, as the active row.
-<pre class="prettyprint">
-          <span class="lang">[C#]</span>
- **public bool SetActive(
+
+```cs
+ public bool SetActive(
    int iFormat,
    int rrn
-);** 
-        </pre>
+);
+```
 
 
 

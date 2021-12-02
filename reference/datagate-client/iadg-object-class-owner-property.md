@@ -4,9 +4,10 @@ title: IAdgObject.Owner Property
 ---
 
 **Owner** is the user or group account that owns the database object represented by **IAdgObject** .
-<pre>        <span class="lang">[C#]</span>
- **Public string Owner { get; }** 
-      </pre>
+
+```cs
+ Public string Owner { get; }
+```
 
 ## Property Value
 

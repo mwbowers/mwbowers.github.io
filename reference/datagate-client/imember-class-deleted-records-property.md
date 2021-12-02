@@ -4,10 +4,10 @@ title: IMember.DeletedRecords Property
 ---
 
 The number of deleted records in the database file member object represented by **IMember** . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public long DeletedRecord { get; }** 
-      </pre>
+
+```cs
+ public long DeletedRecord { get; }
+```
 
 
 ## Property Value

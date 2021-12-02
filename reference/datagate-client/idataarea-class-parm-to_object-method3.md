@@ -4,13 +4,13 @@ title: IDataArea.ParmToObject(System.Type, string)
 ---
 
 Returns an object of a specific type from the program parameter list provided with the type of the object returned by the method and the name or path of the program parameter object in the parameter list.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **Public object ParmToObject(
+
+```cs
+ Public object ParmToObject(
    System.Type ReturnType,
    string ParameterName,
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -35,7 +35,7 @@ The current record of an open file is marked as deleted by **DeleteCurrent** . A
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

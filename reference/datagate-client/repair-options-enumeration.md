@@ -4,10 +4,10 @@ title: RepairOptions Enumeration
 ---
 
 <span> **RepairOptions** </span> specifies optional ancillary functions for the [ IDirectory.RepairObjects](idirectory-class-repair-objects-method.html) and [ IFileObject.RepairFile](ifile-object-class-repair-file-method.html) methods. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **[Flags]<br /> public enum RepairOptions;** 
-      </pre>
+
+```cs
+ [Flags]<br /> public enum RepairOptions;
+```
 
 
 ## Remarks

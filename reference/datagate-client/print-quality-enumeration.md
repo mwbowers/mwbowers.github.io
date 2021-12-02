@@ -4,10 +4,10 @@ title: PrintQuality Enumeration
 ---
 
 The **PrintQuality** enumerated constant defines values on the print quality.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum PrintQuality;** 
-      </pre>
+
+```cs
+ public enum PrintQuality;
+```
 
 
 ## Remarks

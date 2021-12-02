@@ -4,10 +4,10 @@ title: SeekMode Enumeration
 ---
 
 Defines modes of operation for the [FileAdapter.SeekKey](file-adapter-class-seek-key-method.html) and [FileAdapter.SeekRRN](file-adapter-class-seek-rrn-method.html) methods.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum SeekMode;** 
-      </pre>
+
+```cs
+ public enum SeekMode;
+```
 
 
 ## Remarks

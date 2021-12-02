@@ -4,10 +4,10 @@ title: PrintDevAttr.TopMargin Property
 ---
 
 The **TopMargin** specifies the size of top margin in output produced by the printer.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int TopMargin { get; set; }** 
-      </pre>
+
+```cs
+ public int TopMargin { get; set; }
+```
 
 
 ## Property Value

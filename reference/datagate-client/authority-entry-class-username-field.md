@@ -4,10 +4,10 @@ title: AuthorityEntry.Username Field
 ---
 
 **UserName** is the name of the group or user profile whose access capabilities are defined by this [AuthorityEntry](authority-entry-class.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string Username** 
-      </pre>
+
+```cs
+ public string Username
+```
 
 
 ## Field

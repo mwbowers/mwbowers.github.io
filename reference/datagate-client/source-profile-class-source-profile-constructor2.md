@@ -7,10 +7,10 @@ title: SourceProfile.SourceProfile Constructor(string)
 Replaced by [DatabaseName.ToSourceProfile(String)](database-name-class-to_source-profile-method1.html)
 
 Constructs an instance of [ SourceProfile](source-profile-class.html) setting connection-related property values with the specified registered database name.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public SourceProfile(<br />   string dbName<br />);** 
-      </pre>
+
+```cs
+ public SourceProfile(<br />   string dbName<br />);
+```
 
 
 ## Parameters
@@ -77,7 +77,7 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Opens the database "*PUBLIC/DG NET iSeries" and changes the user
    * name and password. */

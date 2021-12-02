@@ -4,9 +4,10 @@ title: IDataArea.InitialValue Method
 ---
 
 Sets the InitialValue in the data area.
-<pre>        <span class="lang">[C#]</span>
- **Public string InitialValue { set }** 
-      </pre>
+
+```cs
+ Public string InitialValue { set }
+```
 
 ## Property Value
 

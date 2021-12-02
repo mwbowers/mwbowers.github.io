@@ -4,9 +4,10 @@ title: IAdgObject.ToString Method
 ---
 
 **ToString** returns the path name of the database object represented by [IAdgObject Class](iadg-object-class.html).
-<pre>        <span class="lang">[C#]</span>
- **Public string IAdgObject ToString(<br /> );** 
-      </pre>
+
+```cs
+ Public string IAdgObject ToString(<br /> );
+```
 
 ## Returns
 

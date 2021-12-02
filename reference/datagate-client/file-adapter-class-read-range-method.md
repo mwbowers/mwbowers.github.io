@@ -4,8 +4,9 @@ title: FileAdapter.ReadRange Method
 ---
 
 Read a database file record containing a key within a given range of values.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReadRange(
+
+```cs
+ Public void ReadRange(
 [AdgDataSet](adg-dataset-class.html) ds,
 [RangeMode](range-mode-enumeration.html) mode,
 [LockRequest](lock-request-enumeration.html) lr,
@@ -13,8 +14,8 @@ Read a database file record containing a key within a given range of values.
 [RangeFirst](range-first-enumeration.html) rangeFirst,
 [AdgKeyTable](adg-key-table-class.html) lastKey,
 [RangeLast](range-last-enumeration.html) rangeLast
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -103,7 +104,7 @@ Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", 

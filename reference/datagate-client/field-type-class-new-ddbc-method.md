@@ -4,9 +4,10 @@ title: FieldType.NewDBCS Method
 ---
 
 Creates a new fixed-width double-byte character [FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewDBCS(<br />   int length,<br />   DbcsFormat fmt<br />);** 
-      </pre>
+
+```cs
+ public static FieldType NewDBCS(<br />   int length,<br />   DbcsFormat fmt<br />);
+```
 
 ## Parameters
 

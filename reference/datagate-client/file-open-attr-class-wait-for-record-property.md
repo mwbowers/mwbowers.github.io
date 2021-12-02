@@ -4,9 +4,10 @@ title: FileOpenAttr.WaitForRecord Property
 ---
 
 Time, in seconds, that a process will wait for access to a record.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public int WaitForRecord { get; set; }** 
-      </pre>
+
+```cs
+ Public int WaitForRecord { get; set; }
+```
 
 ## Property Value
 
@@ -21,7 +22,7 @@ Implementation on the IBM i: The [ShareType](file-open-attr-class-share-types-pr
 ## Examples 
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Opens a record which will spend no time waiting for a record
    * if that record is locked. */

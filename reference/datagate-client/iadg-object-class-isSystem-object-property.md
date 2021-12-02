@@ -4,9 +4,10 @@ title: IAdgObject.IsSystemObject Property
 ---
 
 **IsSystemObject** indicates if the existing database object represented by **IAdgObject** is a "system" object, when **IAdgObject** is obtained through [ IDirectory.Enumerate](idirectory-class-enumerate-method.html).
-<pre>        <span>[C#]</span>
- **Public bool IsSystemObject { get; }** 
-      </pre>
+
+```cs
+ Public bool IsSystemObject { get; }
+```
 
 Property Value <p> **Boolean** . ReadOnly. **True** if the database provider designates the object as a system object. 
 ## Exceptions

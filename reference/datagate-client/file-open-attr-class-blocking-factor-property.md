@@ -4,9 +4,10 @@ title: FileOpenAttr.BlockingFactor Property
 ---
 
 Specify network blocking feature in the open file.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public int BlockingFactor { get; set; }** 
-      </pre>
+
+```cs
+ Public int BlockingFactor { get; set; }
+```
 
 ## Property Value
 
@@ -21,7 +22,7 @@ Two special values are recognized for the **BlockingFactor** property. **Optimal
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

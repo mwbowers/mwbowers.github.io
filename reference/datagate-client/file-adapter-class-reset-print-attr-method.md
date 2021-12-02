@@ -4,7 +4,7 @@ title: FileAdapter.ResetPrintAttr Method
 ---
 
 Complete the current printer job, change device-related parameters associated with the open print file, then start a new printer job.
-<pre> **[C#]** 
+<pre> [C#] 
  Public void ResetPrintAttr (
    string docName,
    ASNA.DataGate.Providers.PrintDevAttr attr

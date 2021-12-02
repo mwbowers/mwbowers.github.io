@@ -4,14 +4,14 @@ title: AdgConnection.BeginTransaction(TransactionLevel, String, String)
 ---
 
 Begins a manual database transaction creating an instance of an [ IAdgTransaction](iadg-transaction-class.html) object with the name, lock level, and options specified.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IAdgTransaction BeginTransaction(
+
+```cs
+ public IAdgTransaction BeginTransaction(
    TransactionLevel tl,
    string Name,
    string Options
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

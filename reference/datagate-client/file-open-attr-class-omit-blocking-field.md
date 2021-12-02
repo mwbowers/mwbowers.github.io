@@ -4,9 +4,10 @@ title: FileOpenAttr.OmitBlocking Field
 ---
 
 This constant, when assigned to the [ BlockingFactor](file-open-attr-class-blocking-factor-property.html) property, causes DataGate to omit the record blocking feature in the [FileAdapter.Open](file-adapter-class-open-method.html) method. This is the default value of the **BlockingFactor** property.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public static int OmitBlocking** 
-      </pre>
+
+```cs
+ Public static int OmitBlocking
+```
 
 ## Field
  Value
@@ -18,7 +19,7 @@ Two special values are recognized for the **BlockingFactor** property. [OptimalB
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span> AdgConnection db = new AdgConnection("*Public/DG
   NET Local"); FileAdapter dbFile = new FileAdapter(db,
   "*Libl/CMASTNEWL1", "CMMASTERL1"); dbFile.AccessMode

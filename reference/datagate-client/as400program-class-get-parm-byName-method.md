@@ -4,11 +4,12 @@ title: As400Program.GetParmByName Method
 ---
 
 Returns the [ProgParm](prog-parm-class.html) object in the parameter list named by string.
-<pre>        <span class="lang">[C#]</span>
- **protected [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) GetParmByName(
+
+```cs
+ protected [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) GetParmByName(
    string name
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

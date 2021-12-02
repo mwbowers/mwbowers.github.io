@@ -4,10 +4,10 @@ title: DataDirection Enumeration
 ---
 
 Specifies the type of a program parameter.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum DataDirection;** 
-      </pre>
+
+```cs
+ public enum DataDirection;
+```
 
 
 ## Members
@@ -34,7 +34,7 @@ Careful use of the [ProgParm constructor's](prog-parm-class-prog-parm-method-mai
 ## Examples
 
 <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
 <pre>
 AdgConnection ProdDB = new AdgConnection("*Public/DG NET IBM i");

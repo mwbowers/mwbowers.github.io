@@ -4,10 +4,10 @@ title: DateTimeFormat Enumeration
 ---
 
 The <span> **DateTimeFormat** </span> enumerated constant defines values on the type of date and time being accessed. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum DataTimeFormat;** 
-      </pre>
+
+```cs
+ public enum DataTimeFormat;
+```
 
 
 ## Remarks

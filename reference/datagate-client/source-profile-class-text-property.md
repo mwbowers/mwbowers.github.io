@@ -4,10 +4,10 @@ title: SourceProfile.Text Property
 ---
 
 Any text or comments to be associated with the connection profile.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string Text { get; set; }** 
-      </pre>
+
+```cs
+ public string Text { get; set; }
+```
 
 
 ## Property
@@ -21,7 +21,7 @@ The **Text** property may be used to hold any comments about the database connec
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code displays all of the *PUBLIC database
    * names, along with their descriptive text, to the list view

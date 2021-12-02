@@ -4,10 +4,10 @@ title: AdgDataSet.CurrentFormatName Property
 ---
 
 The current format name of the **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string CurrentFormatName { get; }** 
-      </pre>
+
+```cs
+ public string CurrentFormatName { get; }
+```
 
 
 ## Property Value

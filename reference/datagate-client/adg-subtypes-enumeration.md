@@ -4,9 +4,10 @@ title: AdgSubTypes Enumeration
 ---
 
 The **AdgSubTypes** enumerated constant defines values for the [IAdgObject.AdgSubType](iadg-object-class-adg-subtype-property.html) property of an object. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public enum AdgSubTypes;** 
-      </pre>
+
+```cs
+ public enum AdgSubTypes;
+```
 
 ## Remarks
 

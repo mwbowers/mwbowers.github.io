@@ -4,9 +4,10 @@ title: PrintDevAttr.DefaultSource Property
 ---
 
 The **DefaultSource** property specifies the printer tray to be used when printing. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public System.Drawing.Printing.PaperSourceKind DefaultSource { get; set; }** 
-      </pre>
+
+```cs
+ public System.Drawing.Printing.PaperSourceKind DefaultSource { get; set; }
+```
 
 ## Property Value
 

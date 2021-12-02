@@ -6,12 +6,12 @@ title: PrintDevAttr.ReadXml Method
 This is preliminary documentation and subject to change. 
 
 This **ReadXml** method creates an instance of a **PrintDevAttr** XML object.
-<pre class="prettyprint">
-        <span class="lang">
- **[C#]** 
-        </span> **public void ReadXml(
+
+```cs
+ public void ReadXml(
    System.Xml.XmlReader reader
-);**      </pre>
+);
+```
 
 
 ## Parameters

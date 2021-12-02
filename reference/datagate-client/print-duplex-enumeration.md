@@ -4,10 +4,10 @@ title: PrintDuplex Enumeration
 ---
 
 The **PrintDuplex** enumerated constant defines values on duplex (double-sided) printing. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum PrintDuplex;** 
-      </pre>
+
+```cs
+ public enum PrintDuplex;
+```
 
 
 ## Remarks

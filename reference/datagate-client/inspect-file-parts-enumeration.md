@@ -4,10 +4,10 @@ title: InspectFileParts Enumeration
 ---
 
 <span> **InspectFileParts** </span> defines values used internally by DG . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum InspectFileParts;** 
-      </pre>
+
+```cs
+ public enum InspectFileParts;
+```
 
 
 ## Remarks

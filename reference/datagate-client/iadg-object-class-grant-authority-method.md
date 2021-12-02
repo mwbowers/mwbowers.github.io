@@ -4,12 +4,13 @@ title: IAdgObject.GrantAuthority Method
 ---
 
 **GrantAuthority** adds a user authorization to a database object.
-<pre>        <span class="lang">[C#]</span>
- **Public void IAdgObject GrantAuthority(
+
+```cs
+ Public void IAdgObject GrantAuthority(
    string userName ,
 [AuthorityTypes](authority-types-enumeration.html) authorityType
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

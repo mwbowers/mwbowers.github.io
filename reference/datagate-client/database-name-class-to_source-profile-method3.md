@@ -4,13 +4,14 @@ title: DatabaseName.ToSourceProfile(string, bool, bool)
 ---
 
 Named SourceProfile optionally constructed from a registered database name. If constructing from a registered database name, optionally throw exception if duplicate IDs are discovered in the registry and DataGate.config. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static SourceProfile ToSourceProfile( ,
+
+```cs
+ public static SourceProfile ToSourceProfile( ,
    string dbName
    bool bFromSecStorage
    bool bDetectDuplicates
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

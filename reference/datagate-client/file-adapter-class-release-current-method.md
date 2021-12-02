@@ -4,9 +4,10 @@ title: FileAdapter.ReleaseCurrent Method
 ---
 
 Release the currently locked record.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReleaseCurrent();** 
-      </pre>
+
+```cs
+ Public void ReleaseCurrent();
+```
       <br />
       <br />
 
@@ -42,7 +43,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
  /* Here, we are using a pre-initialized FileAdapter (named "dbFile")
   * which was opened using AccessMode.RWCD, which automatically locks

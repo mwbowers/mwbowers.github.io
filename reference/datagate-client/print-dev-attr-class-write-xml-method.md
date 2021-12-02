@@ -6,13 +6,12 @@ title: PrintDevAttr.WriteXml Method
 This is preliminary and subject to change. 
 
 This **WriteXml** method creates XML representing the **PrintDevAttr** object, using writer as its output channel.
-<pre class="prettyprint">
-        <span class="lang">
- **[C#]** 
-        </span> **public void WriteXml(
+
+```cs
+ public void WriteXml(
    System.Xml.Xmlwriter writer
-);** 
-      </pre>
+);
+```
 
 
 

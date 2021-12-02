@@ -4,10 +4,10 @@ title: AdgConnection.Dispose Method
 ---
 
 Sets the [ State](adg-connection-class-state-property.html) property to <span>Closed</span>, and releases connections to the database provider.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public virtual new void Dispose();** 
-      </pre>
+
+```cs
+ public virtual new void Dispose();
+```
 
 
 ## Exceptions

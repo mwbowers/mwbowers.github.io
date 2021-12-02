@@ -4,9 +4,10 @@ title: PrintDevAttr()
 ---
 
 <span> **PrintDevAttr** </span> initializes a new instance of the **PrintDevAttr** object.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public PrintDevAttr()** 
-      </pre>
+
+```cs
+ public PrintDevAttr()
+```
 
 ## Property Value
 

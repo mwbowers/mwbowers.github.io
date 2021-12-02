@@ -4,11 +4,11 @@ title: As400Program.SetParmsZeroValue Method
 ---
 
 Sets all parameters in the parameter list to default 'zero' values.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public SetParmsZeroValue(
-);** 
-      </pre>
+
+```cs
+ public SetParmsZeroValue(
+);
+```
 
 
 ## Remarks

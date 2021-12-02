@@ -4,12 +4,12 @@ title: DatabaseName.ToSourceProfile(String)
 ---
 
 Converts the named database into a SourceProfile object.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static SourceProfile ToSourceProfile( ,
+
+```cs
+ public static SourceProfile ToSourceProfile( ,
    string dbName
-);** 
-      </pre>
+);
+```
 
 
 

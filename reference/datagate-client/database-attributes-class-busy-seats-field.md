@@ -4,9 +4,10 @@ title: DatabaseAttributes.BusySeats Field
 ---
 
 The total number of 'busy seats' for the database. All application running from a single PC to a database counts as 'one' seat.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int BusySeats** 
-      </pre>
+
+```cs
+ public int BusySeats
+```
 
 ## Field
 Value

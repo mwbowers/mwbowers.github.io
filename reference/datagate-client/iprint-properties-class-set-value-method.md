@@ -4,14 +4,14 @@ title: IPrintProperties.SetValue Method
 ---
 
 Assign a value to a print control property.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void SetValue(
+
+```cs
+ public void SetValue(
    fieldName string,
    propName string,
    object val
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

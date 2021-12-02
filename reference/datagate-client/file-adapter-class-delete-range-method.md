@@ -4,14 +4,15 @@ title: FileAdapter.DeleteRange Method
 ---
 
 Delete a set of database file records which contain key values in a given range.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void DeleteRange(
+
+```cs
+ public void DeleteRange(
 [AdgKeyTable](adg-key-table-class.html) firstKey,
 [RangeFirst](range-first-enumeration.html) rangeFirst,
 [AdgKeyTable](adg-key-table-class.html) lastKey,
 [RangeLast](range-last-enumeration.html) rangeLast
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -82,7 +83,7 @@ Use the **DeleteRange** method in conjunction with the [ ReadRange](file-adapter
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

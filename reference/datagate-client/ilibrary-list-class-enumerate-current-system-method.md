@@ -4,10 +4,10 @@ title: ILibraryList.EnumerateCurrentSystem Method
 ---
 
 **EnumerateCurrentSystem** enumerates the object contents of the system and user portion of the library list represented by **ILibraryList** , with the supplied [AdgEnumerator](adg-enumerator-delegate.html) delegate.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void EnumerateCurrentSystem(_<br />[AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);** 
-      </pre>
+
+```cs
+ public void EnumerateCurrentSystem(_<br />[AdgEnumerator](adg-enumerator-delegate.html) enumerator <br />);
+```
 
 
 ## Parameters

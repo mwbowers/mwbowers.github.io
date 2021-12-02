@@ -4,9 +4,10 @@ title: IAdgObject.PrimaryGroup Property
 ---
 
 **PrimaryGroup** is the primary group assigned to a database object.
-<pre>        <span class="lang">[C#]</span>
- **Public String PrimaryGroup { get; }** 
-      </pre>
+
+```cs
+ Public String PrimaryGroup { get; }
+```
 
 ## Property Value
 

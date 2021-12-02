@@ -4,10 +4,10 @@ title: SourceProfile.Label Property
 ---
 
 For server platforms that support multiple databases, the label of the database to connect to. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string Label { get; set; }** 
-      </pre>
+
+```cs
+ public string Label { get; set; }
+```
 
 
 ## Property Value
@@ -22,7 +22,7 @@ For single-instance platforms, such as the iSeries, the **Label** property is ig
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Register the database name "My Local" to specify the local database.
    * Because the local database is a Windows DataGate server, 

@@ -4,9 +4,10 @@ title: dgException.Text Field
 ---
 
 Provider-dependent text information association with the dgException.
-<pre><span class="lang">[C#]</span>
- **public String Text** 
-      </pre>
+
+```cs
+ public String Text
+```
 
 ## Field Value
 

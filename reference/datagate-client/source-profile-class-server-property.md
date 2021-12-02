@@ -4,10 +4,10 @@ title: SourceProfile.Server Property
 ---
 
 The database server host machine name or address.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string Server { get; set; }** 
-      </pre>
+
+```cs
+ public string Server { get; set; }
+```
 
 
 ## Property Value
@@ -20,7 +20,7 @@ The <span> **Server** </span> property may either be: 1) a Domain Name System (D
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* The code below updates a database profile to use a different IP address. */
   SourceProfile sp = new SourceProfile("CustomerDB");

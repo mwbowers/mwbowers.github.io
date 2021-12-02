@@ -4,19 +4,17 @@ title: ReadXml(AdgConnection, string, AdgObjectTypes, System.Xml.XmlReader, XmlO
 ---
 
 This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class.html) (representing a file, library, or member) from an XML document stream. Optionally, **ReadXml** creates a new database object or a hierarchy of database objects.
-<pre class="prettyprint">
-        <span class="lang">
- **[C#]** 
-        </span>
- **public static IAdgObject ReadXml(
+
+```cs
+ public static IAdgObject ReadXml(
 [AdgConnection](adg-connection-class.html) cn ,
    string containerPath ,
 [AdgObjectTypes](adg-object-types-enumeration.html) docObjectType ,    
    System.Xml.XmlReader reader ,
 [XmlOptions](xml-options-enumeration.html) options ,
 [XmlInfoEventHandler](xml-info-event-handler-delegate.html) observer
-);** 
-      </pre>
+);
+```
 
 
 

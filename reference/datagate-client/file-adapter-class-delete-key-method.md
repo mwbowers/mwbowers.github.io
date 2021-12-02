@@ -4,11 +4,12 @@ title: FileAdapter.DeleteKey Method
 ---
 
 Deletes a database file record containing the specified key, if any.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void DeleteKey(
+
+```cs
+ public void DeleteKey(
 [AdgKeyTable](adg-key-table-class.html) keyTable
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -54,7 +55,7 @@ The file should be opened with the [ AccessMode](file-adapter-class-access-mode-
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

@@ -4,10 +4,10 @@ title: SourceProfile()
 ---
 
 Constructs an anonymous instance of [ SourceProfile](source-profile-class.html) with default values.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public SourceProfile();** 
-      </pre>
+
+```cs
+ public SourceProfile();
+```
 
 
 ## Parameters

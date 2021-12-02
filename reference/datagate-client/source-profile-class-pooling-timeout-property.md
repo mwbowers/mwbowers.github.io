@@ -4,10 +4,10 @@ title: SourceProfile.PoolingTimeout Property
 ---
 
 The amount of time (in minutes) in which a connection will remain idle in the pool until it is closed and removed from the pool.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public byte PoolingTimeout { get; set; )** 
-      </pre>
+
+```cs
+ public byte PoolingTimeout { get; set; )
+```
 
 
 ## Property
@@ -23,7 +23,7 @@ If connection pooling is not enabled, when a database and all its associated fil
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different idle

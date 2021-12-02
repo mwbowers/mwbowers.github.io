@@ -4,10 +4,10 @@ title: AccessMode Enumeration
 ---
 
 Options for restricting access to open files.<span style="MARGIN-BOTTOM: 0.8em" />
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum AccessMode;** 
-      </pre>
+
+```cs
+ public enum AccessMode;
+```
 
 
 ## Remarks
@@ -43,7 +43,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property of <span
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

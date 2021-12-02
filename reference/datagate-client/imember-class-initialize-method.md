@@ -4,12 +4,12 @@ title: IMember.Initialize Method
 ---
 
 Initialize a specific number of records in the database file member represented by **IMember** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Initialize(<br />    [InitMemberOptions](init-member-options-enumeration.html) Options ,
+
+```cs
+ public void Initialize(<br />    [InitMemberOptions](init-member-options-enumeration.html) Options ,
    long Records
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

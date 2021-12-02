@@ -4,12 +4,12 @@ title: IFileObject.WriteDefinition Method
 ---
 
 **WriteDefinition** dumps a database file's definition to an XML content node.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void WriteDefinition(
+
+```cs
+ public void WriteDefinition(
    System.Xml.XmlWriter writer
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

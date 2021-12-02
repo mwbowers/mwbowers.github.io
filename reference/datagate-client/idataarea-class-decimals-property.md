@@ -4,9 +4,10 @@ title: IDataArea.Decimals Method
 ---
 
 Gets or sets the number of decimals in the data area.
-<pre>        <span class="lang">[C#]</span>
- **Public integer Decimals { set; get; }** 
-      </pre>
+
+```cs
+ Public integer Decimals { set; get; }
+```
 
 ## Property Value
 

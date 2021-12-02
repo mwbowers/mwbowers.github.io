@@ -4,10 +4,10 @@ title: DatabaseName.DatabaseName()
 ---
 
 Constructs an instance of a [DatabaseName](database-name-class.html) object with default values.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public DatabaseName();** 
-      </pre>
+
+```cs
+ public DatabaseName();
+```
 
 
 ## Requirements

@@ -4,10 +4,10 @@ title: DatabaseName.GetNames Method
 ---
 
 Returns the currently registered database names available for use in a program.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static string[] GetNames(<br />   bool publicDbs<br />);** 
-      </pre>
+
+```cs
+ public static string[] GetNames(<br />   bool publicDbs<br />);
+```
 
 
 ## Parameters

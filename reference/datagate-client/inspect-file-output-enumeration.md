@@ -4,10 +4,10 @@ title: InspectFileOutput Enumeration
 ---
 
 <span> **InspectFileOutput** </span> defines values used internally by DG . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum InspectFileOutput;** 
-      </pre>
+
+```cs
+ public enum InspectFileOutput;
+```
 
 
 ## Remarks

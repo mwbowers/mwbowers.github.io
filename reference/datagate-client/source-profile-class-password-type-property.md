@@ -4,10 +4,10 @@ title: SourceProfile.PasswordType Property
 ---
 
 Specifies the authentication method for initiating database sessions with the [Password](source-profile-class-password-property.html) property.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public PasswordType PasswordType { get; set; }** 
-      </pre>
+
+```cs
+ public PasswordType PasswordType { get; set; }
+```
 
 
 ## Property
@@ -23,7 +23,7 @@ The default value, **SecurePassphrase** , should be used in most cases for the b
 #### Examples
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different

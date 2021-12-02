@@ -7,10 +7,10 @@ title: SourceProfile(string, boolean)
 Replaced by [DatabaseName.ToSourceProfile(String, Bool)](database-name-class-to_source-profile-method2.html)
 
 Constructs an instance of [SourceProfile](source-profile-class.html) optionally setting connection-related property values with a specified registered database name.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public SourceProfile(<br />   string dbName<br />   bool readRegistry<br />);** 
-      </pre>
+
+```cs
+ public SourceProfile(<br />   string dbName<br />   bool readRegistry<br />);
+```
 
 
 ## Parameters
@@ -86,7 +86,7 @@ Assuming the registered database name information is valid, a **SourceProfile** 
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* When we specify false with this constructor, we're
    * telling Datagate not to get information from the

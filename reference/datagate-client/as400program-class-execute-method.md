@@ -6,10 +6,10 @@ TocParent: dcsAs400ProgramMethodsMain
 ---
 
 Runs the database program.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Execute();** 
-      </pre>
+
+```cs
+ public void Execute();
+```
 
 
 ## Exceptions
@@ -51,7 +51,7 @@ If an i Series system exception occurs in the called program, dgException is rai
 Upon successful return from **Execute** , the values of any "output" parameters passed to the program will be available with the [ ParmToObject](as400program-class-parm-to_object-method-main.html) method.
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid

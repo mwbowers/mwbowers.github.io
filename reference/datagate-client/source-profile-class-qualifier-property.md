@@ -4,10 +4,10 @@ title: SourceProfile.Qualifier Property
 ---
 
 This property is reserved for future expansion. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int Qualifier { get; set; }** 
-      </pre>
+
+```cs
+ public int Qualifier { get; set; }
+```
 
 
 ## Property Value

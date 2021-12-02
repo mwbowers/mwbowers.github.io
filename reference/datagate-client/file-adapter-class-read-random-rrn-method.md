@@ -4,14 +4,15 @@ title: FileAdapter.ReadRandomRRN Method
 ---
 
 Read the database file record specified.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReadRandomRRN(
+
+```cs
+ Public void ReadRandomRRN(
 [AdgDataSet](adg-dataset-class.html) ds,
 [ReadRandomMode](read-random-mode-enumeration.html) mode,
 [LockRequest](lock-request-enumeration.html) lr,
    long RRN
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

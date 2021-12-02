@@ -4,10 +4,10 @@ title: PrintDevAttr.YResolution Property
 ---
 
 The **YResolution** specifies the y-axis resolution (in dots-per-inch) when printing graphics.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int YResolution { get; set; }** 
-      </pre>
+
+```cs
+ public int YResolution { get; set; }
+```
 
 
 ## Property Value

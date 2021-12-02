@@ -4,10 +4,10 @@ title: DbcsFormat Enumeration
 ---
 
 The <span> **DbcsFormat** </span> enumerated constant defines values on whether shift-control characters appear internally on the IBM i. This enumeration is used by the [ Dbcs](field-type-class-dbcs-property.html) property for [FieldType](field-type-class.html) objects.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum DbcsFormat;** 
-      </pre>
+
+```cs
+ public enum DbcsFormat;
+```
 
 
 ## Remarks

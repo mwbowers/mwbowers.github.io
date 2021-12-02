@@ -4,11 +4,12 @@ title: FileAdapter.SetFormat Method
 ---
 
 For multiformat read access, calling this method causes the read methods to fetch only those records with the given format.
-<pre>        <span class="lang">[C#]</span>
- **Public void SetFormat(
+
+```cs
+ Public void SetFormat(
    string Format
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -48,7 +49,7 @@ The default behavior of **FileAdapter** is to read all formats. Use this method 
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Read only records from format one. */
   AdgConnection db = new AdgConnection("*Public/DG NET Local");

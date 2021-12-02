@@ -4,10 +4,10 @@ title: SourceProfile.PlatformAttribute Property
 ---
 
 The platform-specific attribute of the database (e.g. "*SQLOLEB" for SqlServer). 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string PlatformAttribute { get; set; }** 
-      </pre>
+
+```cs
+ public string PlatformAttribute { get; set; }
+```
 
 
 ## Property
@@ -21,7 +21,7 @@ The **PlatformAttribute** property is used to distinguish between different data
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Register the database name "My Local" to specify the local database. */
   SourceProfile newDbProfile = new SourceProfile("My Local", false);

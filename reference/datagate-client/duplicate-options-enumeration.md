@@ -4,9 +4,10 @@ title: DuplicateOptions Enumeration
 ---
 
 <span> **DuplicateOptions** </span> defines values directing the operation of the [ Duplicate](iadg-object-class-duplicate-method.html) method of [IAdgObject](iadg-object-class.html). 
-<pre>        <span class="lang">[C#]</span>
- **[Flags] public enum DuplicateOptions;** 
-      </pre>
+
+```cs
+ [Flags] public enum DuplicateOptions;
+```
 
 ## Remarks
 

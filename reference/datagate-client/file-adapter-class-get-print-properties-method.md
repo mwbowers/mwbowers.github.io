@@ -4,11 +4,12 @@ title: FileAdapter.GetPrintProperties Method
 ---
 
 Gets the [IPrintProperties](iprint-properties-class.html) of the currently open file.
-<pre>       <span class="lang">[C#]</span>
- **Public [IPrintProperties](iprint-properties-class.html) GetPrintProperties(
+
+```cs
+ Public [IPrintProperties](iprint-properties-class.html) GetPrintProperties(
    string format
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -52,7 +53,7 @@ The **IPrintProperties** object returned by this method can be used to get and s
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Will open up "CustReport" and will write a single detail, and
    * change its background color. */

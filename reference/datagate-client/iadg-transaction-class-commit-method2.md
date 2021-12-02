@@ -4,9 +4,10 @@ title: IAdgTransaction.Commit(string)
 ---
 
 Accept changes to the database that have been performed within the current transaction context.
-<pre>        <span class="lang">[C#]</span>
- **Public virtual void Commit(<br />   TransactionName string<br />);** 
-      </pre>
+
+```cs
+ Public virtual void Commit(<br />   TransactionName string<br />);
+```
 
 ## Parameter
 

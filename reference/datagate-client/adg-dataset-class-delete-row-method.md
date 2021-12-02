@@ -4,13 +4,13 @@ title: AdgDataSet.DeleteRow Method
 ---
 
 Mark a DataRow in the **AdgDataSet** as deleted.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void DeleteRow(
+
+```cs
+ public void DeleteRow(
    string strFormat,
    int rrn
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

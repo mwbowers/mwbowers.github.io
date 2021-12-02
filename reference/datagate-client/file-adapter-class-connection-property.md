@@ -4,9 +4,10 @@ title: FileAdapter.Connection Property
 ---
 
 The current **AdgConnection** associated with this **FileAdapter** .
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public AdgConnection Connection{ get; set; }** 
-      </pre>
+
+```cs
+ public AdgConnection Connection{ get; set; }
+```
 
 ## Property Value
 
@@ -15,7 +16,7 @@ Integer. Returns or sets an instance of [AdgConnection](adg-connection-class.htm
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Initialize a new fileadapter. Since the AdgConnection is needed
    * only for this file adapter, it is created and destroyed using the

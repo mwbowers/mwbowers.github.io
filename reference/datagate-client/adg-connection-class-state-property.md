@@ -4,10 +4,10 @@ title: AdgConnection.State Property
 ---
 
 Gets the current state of the connection. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public ConnectionState State { get; }** 
-      </pre>
+
+```cs
+ public ConnectionState State { get; }
+```
 
 
 ## Property Value
@@ -24,7 +24,7 @@ The value of **State** will be set to Open by a successful call to the [Open](ad
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here we need to use an AdgConnection "dataBase" to open
      a file.  We first check to make sure that the AdgConnection has 

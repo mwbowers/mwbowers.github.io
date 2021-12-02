@@ -4,11 +4,11 @@ title: AdgFactory.NewLibraryList Method
 ---
 
 The **NewLibraryList** method creates a new instance of [ ILibraryList](ilibrary-list-class.html) representing a library list for object management functions.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public ILibraryList NewLibraryList(
-[AdgConnection](adg-connection-class.html) cn** 
-);</pre>
+
+```cs
+ public ILibraryList NewLibraryList(
+[AdgConnection](adg-connection-class.html) cn
+```
 
 
 ## Parameters

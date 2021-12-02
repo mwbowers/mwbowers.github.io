@@ -4,12 +4,12 @@ title: FileAdapter.OpenNewAdgDataSet Method
 ---
 
 Opens a database file for access and returns a new [ AdgDataset](adg-dataset-class.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **Public void OpenNewAdgDataSet(
+
+```cs
+ Public void OpenNewAdgDataSet(
    AdgDataSet ds
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -60,7 +60,7 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

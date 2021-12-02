@@ -4,12 +4,12 @@ title: AdgConnection.Equals Method
 ---
 
 #### Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-source-profile-property.html) properties of the objects being compared refer to the same object. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public override bool Equals(
+
+```cs
+ public override bool Equals(
    object obj
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,9 +4,10 @@ title: PrintDevAttr.LeftMargin Property
 ---
 
 The **LeftMargin** returns or sets the left margin of the output by the specified printer.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int LeftMargin { get; set; }** 
-      </pre>
+
+```cs
+ public int LeftMargin { get; set; }
+```
 
 ## Property Value
 

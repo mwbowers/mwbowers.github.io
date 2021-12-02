@@ -4,12 +4,12 @@ title: AdgFactory.NewMember Method
 ---
 
 The **NewMember** method creates a new instance of [IMember](imember-class.html) representing a database member for object management functions.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IMember NewMember([AdgConnection](adg-connection-class.html) cn
+
+```cs
+ public IMember NewMember([AdgConnection](adg-connection-class.html) cn
    string PathName
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

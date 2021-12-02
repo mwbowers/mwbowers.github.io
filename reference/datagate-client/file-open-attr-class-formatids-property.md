@@ -4,9 +4,10 @@ title: FileOpenAttr.FormatIDs Property
 ---
 
 The set of binary format identifiers associated with the set of formats available from the [AdgDataSet.FormatIDs](adg-dataset-class-formatids-property.html) property.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public byte[][] FormatIDs { get; set; }** 
-      </pre>
+
+```cs
+ Public byte[][] FormatIDs { get; set; }
+```
 
 ## Property Value
 

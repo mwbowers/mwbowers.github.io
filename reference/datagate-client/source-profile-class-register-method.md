@@ -8,10 +8,10 @@ Replaced by [DatabaseName.Register](database-name-class-register-method.html)
 
 Saves the contents of the **SourceProfile** object to the system registry as a database name.
 <span style="MARGIN-BOTTOM: 0.8em" />
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Register();** 
-      </pre>
+
+```cs
+ public void Register();
+```
 
 
 ## Exceptions
@@ -47,7 +47,7 @@ Example <p>The following example retrieves a database name called "Asna 400 db" 
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* When we specify false with this constructor, we're
    * telling Datagate not to get information from the

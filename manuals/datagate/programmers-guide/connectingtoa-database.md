@@ -8,7 +8,7 @@ The DataGate notions of "database name" (a registered client-side reference to a
 The way to connect to a database is through the [ AdgConnection](adg-connection-class.html) object. The following code fragment creates an AdgConnection object and connects to a database referred to by the database name "ASNA Local DB".
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection Cx;
   Cx = new AdgConnection("ASNA Local DB");

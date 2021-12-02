@@ -4,10 +4,10 @@ title: ILibraryList.SystemConfig Property
 ---
 
 **SystemConfig** sets or returns a string array containing a list of the system and user portion of the available directories in the library list represented by **ILibraryList** . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string[] SystemConfig { get;  set}** 
-      </pre>
+
+```cs
+ public string[] SystemConfig { get;  set}
+```
 
 
 ## Property Value

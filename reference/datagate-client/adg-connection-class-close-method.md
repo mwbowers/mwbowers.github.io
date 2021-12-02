@@ -4,10 +4,10 @@ title: AdgConnection.Close Method
 ---
 
 Sets the [ State](adg-connection-class-state-property.html) property to <span>Closed</span>, and releases connections to the database provider.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Close();** 
-      </pre>
+
+```cs
+ public void Close();
+```
 
 
 ## Exceptions
@@ -22,7 +22,7 @@ Note that you must explicitly call either the <span> **Close** </span> or [Dispo
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   //Disconnects from the dataBase by closing the connection.
   adg.Close();</pre>

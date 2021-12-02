@@ -4,13 +4,13 @@ title: AuthorityEntry(string,AuthorityTypes)
 ---
 
 <span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a single-user profile and corresponding authorization types</span>.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AuthorityEntry(
+
+```cs
+ public AuthorityEntry(
    string username
 [AuthorityTypes](authority-types-enumeration.html) authorityType
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,13 +4,13 @@ title: SetActive(string,integer)
 ---
 
 Establish the record, specified by format name and relative record number, as the active row.
-<pre class="prettyprint">
-          <span class="lang">[C#]</span>
- **public bool SetActive(
+
+```cs
+ public bool SetActive(
    string strFormat,
    int rrn
-);** 
-        </pre>
+);
+```
 
 
 

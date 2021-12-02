@@ -4,9 +4,10 @@ title: FieldType.NewChar Method
 ---
 
 Creates a new fixed-width character [ FieldType](field-type-class.html).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public static FieldType NewChar(<br />  int length<br />);** 
-      </pre>
+
+```cs
+ public static FieldType NewChar(<br />  int length<br />);
+```
 
 ## Parameters
 

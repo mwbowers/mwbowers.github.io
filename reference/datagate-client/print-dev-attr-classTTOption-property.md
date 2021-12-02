@@ -4,10 +4,10 @@ title: PrintDevAttr.TTOption Property
 ---
 
 The **TTOption** property specifies the option for using TrueType Fonts in documents output by capable printers. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public PrintTrueType TTOption { get; set; }** 
-      </pre>
+
+```cs
+ public PrintTrueType TTOption { get; set; }
+```
 
 
 ## Property Value

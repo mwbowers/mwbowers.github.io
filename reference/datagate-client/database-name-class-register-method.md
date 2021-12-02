@@ -4,13 +4,13 @@ title: DatabaseName.Register Method
 ---
 
 Saves the contents of the **SourceProfile** object to the system registry as a database name. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static SourceProfile Register(
+
+```cs
+ public static SourceProfile Register(
    SourceProfile sp
    String dbName
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

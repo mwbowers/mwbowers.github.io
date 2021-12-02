@@ -4,12 +4,12 @@ title: IFileObject.ReadCreationAttributes Method
 ---
 
 **ReadCreationAttributes** reads and validates an XML document fragment describing a database file's creation-time attributes.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void ReadCreationAttributes(
+
+```cs
+ public void ReadCreationAttributes(
    System.Xml.XmlReader reader
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,9 +4,10 @@ title: DatabaseAttributes.ProxyVersion Field
 ---
 
 The version number of the server that services the requests of its clients by forwarding requests to other servers.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public string ProxyVersion** 
-      </pre>
+
+```cs
+ public string ProxyVersion
+```
 
 ## Field
  Value

@@ -4,9 +4,10 @@ title: ProgParmType(string, integer, FieldType)
 ---
 
 Defines the data type of a simple iSeries program parameter.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public ProgParmType(<br />   string name,<br />   int cElems,<br />   FieldType type<br />)**  </pre>
+
+```cs
+ public ProgParmType(<br />   string name,<br />   int cElems,<br />   FieldType type<br />)
+```
 
 
 ## Parameters

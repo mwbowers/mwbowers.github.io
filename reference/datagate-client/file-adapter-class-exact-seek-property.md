@@ -4,10 +4,10 @@ title: FileAdapter.ExactSeek Property
 ---
 
 This property is **True** if the seek operation resulted in an exact match.
-<pre class="syntax">
-        <span class="lang">[C#]</span>
- **public bool ExactSeek { get; }** 
-      </pre>
+
+```cs
+ public bool ExactSeek { get; }
+```
 
 
 ## Property Value
@@ -17,7 +17,7 @@ Read-only. Boolean. Returns **True** when a seek operation resulted in an exact 
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   using (FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1"))

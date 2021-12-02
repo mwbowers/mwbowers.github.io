@@ -4,9 +4,10 @@ title: SourceProfile.DatabaseName Property
 ---
 
 The database name (or identifier) of this set of connection parameters.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string DatabaseName { get; }**  </pre>
+
+```cs
+ public string DatabaseName { get; }
+```
 
 
 ## Property Value
@@ -16,7 +17,7 @@ String. Read-only. Returns the parameter passed to the **SourceProfile** [constr
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code displays all of the *PUBLIC database
    * names, along with their descriptive text, to the list view

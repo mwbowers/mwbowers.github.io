@@ -4,9 +4,10 @@ title: As400Program.Dispose Method
 ---
 
 Release unmanaged resources associated with **As400Program** . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public virtual new void Dispose** ();</pre>
+
+```cs
+ public virtual new void Dispose
+```
 
 
 ## Exceptions

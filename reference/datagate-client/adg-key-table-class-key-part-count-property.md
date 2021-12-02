@@ -4,9 +4,10 @@ title: AdgKeyTable.KeyPartCount Property
 ---
 
 Gets or sets the number of key fields composing the key value.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public integer KeyPartCount { get:  set  }** 
-      </pre>
+
+```cs
+ public integer KeyPartCount { get:  set  }
+```
 
 ## Property Value
 

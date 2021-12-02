@@ -4,9 +4,10 @@ title: FileAdapter.RecordCount Property
 ---
 
 <span>The number of non-deleted records in the open database file. </span> 
-<pre>        <span class="lang">[C#]</span>
- **Public long RecordCount { get; }** 
-      </pre>
+
+```cs
+ Public long RecordCount { get; }
+```
 
 ## Property Value
 
@@ -18,7 +19,7 @@ Use the <span> **RecordCount** </span> property to examine the total number of r
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

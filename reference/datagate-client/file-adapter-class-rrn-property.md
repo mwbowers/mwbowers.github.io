@@ -4,9 +4,10 @@ title: FileAdapter.RRN Property
 ---
 
 The relative record number of the member of the currently-opened file. 
-<pre>        <span class="lang">[C#]</span>
- **Public long RRN { get; }** 
-      </pre>
+
+```cs
+ Public long RRN { get; }
+```
 
 ## Property Value
 

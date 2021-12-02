@@ -4,9 +4,10 @@ title: DatabaseAttributes.ProxyName Field
 ---
 
 The name of the server that services the requests of its clients by forwarding requests to other servers.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public string ProxyName** 
-      </pre>
+
+```cs
+ public string ProxyName
+```
 
 ## Field
  Value

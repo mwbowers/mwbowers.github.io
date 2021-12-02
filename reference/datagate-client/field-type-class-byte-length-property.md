@@ -4,9 +4,10 @@ title: FieldType.ByteLength Property
 ---
 
 The length of the field in bytes.<span />
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int ByteLength { get; }** 
-      </pre>
+
+```cs
+ public int ByteLength { get; }
+```
 
 ## Property Value
 

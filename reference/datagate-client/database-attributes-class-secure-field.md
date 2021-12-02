@@ -4,9 +4,10 @@ title: DatabaseAttributes.Secure Field
 ---
 
 Indicates if security is used on the database.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public bool Secure** 
-      </pre>
+
+```cs
+ public bool Secure
+```
 
 ## Field
  Value

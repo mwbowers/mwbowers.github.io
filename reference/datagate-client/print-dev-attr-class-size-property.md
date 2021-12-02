@@ -4,10 +4,10 @@ title: PrintDevAttr.Size Property
 ---
 
 The **Size** property specifies the standard sheet size of paper in the printer. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public System.Drawing.Printing.PaperKind Size { get; set; }** 
-      </pre>
+
+```cs
+ public System.Drawing.Printing.PaperKind Size { get; set; }
+```
 
 
 ## Property Value

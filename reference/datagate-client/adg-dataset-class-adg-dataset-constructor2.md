@@ -4,13 +4,13 @@ title: AdgDataSet(serialization info, streaming context)
 ---
 
 This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AdgDataSet(
+
+```cs
+ public AdgDataSet(
    Serialization info,
    StreamingContext context
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,10 +4,10 @@ title: IDirectory.ItemList Property
 ---
 
 **ItemList** is a list of [IAdgObject](iadg-object-class.html) references corresponding to the database object contents of an existing library.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public ArrayList ItemList { get; }** 
-      </pre>
+
+```cs
+ public ArrayList ItemList { get; }
+```
 
 
 ## Property Value

@@ -4,9 +4,10 @@ title: FileAdapter.OpenAttributes Property
 ---
 
 <span>Contains a set of file properties which influence the way a file is opened. </span> 
-<pre>        <span class="lang">[C#]</span>
- **Public FileOpenAttr OpenAttributes { get; set; }** 
-      </pre>
+
+```cs
+ Public FileOpenAttr OpenAttributes { get; set; }
+```
 
 ## Property Value
 
@@ -15,7 +16,7 @@ title: FileAdapter.OpenAttributes Property
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

@@ -4,9 +4,10 @@ title: PrintDevAttr.Color Property
 ---
 
 The **Color** property indicates that non-monochrome output is to be produced by color-capable printers when this property is set to **True** .
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public bool Color { get; set; }** 
-      </pre>
+
+```cs
+ public bool Color { get; set; }
+```
 
 ## Property Value
 

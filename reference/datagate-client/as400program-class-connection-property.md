@@ -4,9 +4,10 @@ title: As400Program.Connection Property
 ---
 
 The **AdgConnection** object of the database server hosting the program to be called. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public [AdgConnection](adg-connection-class.html) Connection { set; }** 
-      </pre>
+
+```cs
+ public [AdgConnection](adg-connection-class.html) Connection { set; }
+```
 
 ## Property Value
 
@@ -34,7 +35,7 @@ To run the program on a particular database server, set the **Connection** prope
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   As400Program prog = new As400Program();
   prog.Connection = new AdgConnection("*Public/DG NET IBM i");

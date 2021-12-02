@@ -4,9 +4,10 @@ title: AdgObjectTypes Enumeration
 ---
 
 The <span> **AdgObjectTypes** </span> enumerated constant defines values for the [ AdgObjectType](iadg-object-class-adg-object-type-property.html) property of [IAdgObject](iadg-object-class.html). 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public enum AdgObjectTypes;** 
-      </pre>
+
+```cs
+ public enum AdgObjectTypes;
+```
 
 ## Remarks
 

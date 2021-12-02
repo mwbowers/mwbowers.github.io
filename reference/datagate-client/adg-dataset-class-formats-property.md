@@ -4,10 +4,10 @@ title: AdgDataSet.Formats Property
 ---
 
 The number of formats in this **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int Formats { get; }** 
-      </pre>
+
+```cs
+ public int Formats { get; }
+```
 
 
 ## Property

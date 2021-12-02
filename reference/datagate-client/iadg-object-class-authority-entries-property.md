@@ -4,9 +4,10 @@ title: IAdgObject.AuthorityEntries Property
 ---
 
 **AuthorityEntries** is an array of [ AuthorityEntry](authority-entry-class.html) objects collectively describing the user authorities the database provider has assigned to the database object represented by **IAdgObject** . 
-<pre>        <span class="lang">[C#]</span>
- **Public AuthorityEntry[] AuthorityEntries { get; set; }** 
-      </pre>
+
+```cs
+ Public AuthorityEntry[] AuthorityEntries { get; set; }
+```
 
 ## Property Value
 

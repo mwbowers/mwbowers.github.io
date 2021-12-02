@@ -4,10 +4,10 @@ title: PrintDevAttr.PrinterName Property
 ---
 
 The **PrinterName** specifies the name of an accessible printer device.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public String PrinterName { get; set; }** 
-      </pre>
+
+```cs
+ public String PrinterName { get; set; }
+```
 
 
 ## Property Value

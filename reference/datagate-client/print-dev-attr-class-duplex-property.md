@@ -4,9 +4,10 @@ title: PrintDevAttr.Duplex Property
 ---
 
 The **Duplex** property specifies the standard duplex (double-sided) setting for use by capable printers. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public System.Drawing.Printing.Duplex Duplex { get; set; }** 
-      </pre>
+
+```cs
+ public System.Drawing.Printing.Duplex Duplex { get; set; }
+```
 
 ## Property Value
 

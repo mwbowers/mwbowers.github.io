@@ -4,14 +4,14 @@ title: As400Program.ParmToObject(ProgParm, System.Type, integer)
 ---
 
 Returns an object of a specific type from the program parameter list.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public object ParmToObject(
+
+```cs
+ public object ParmToObject(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter,
    Type ReturnType,
    int Element
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -54,7 +54,7 @@ The *Element* parameter is ignored unless *Parameter* refers to a "multiple-occu
 #### Examples
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid

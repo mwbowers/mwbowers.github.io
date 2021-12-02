@@ -4,10 +4,10 @@ title: IFileObject.MemberCount Property
 ---
 
 **MemberCount** is the number of database member objects in the file represented by **IFileObject** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int MemberCount { get; }** 
-      </pre>
+
+```cs
+ public int MemberCount { get; }
+```
 
 
 Property Value <p> **System.Int32** . Read-only. A non-negative value reflecting the number of database member objects contained by the file. 

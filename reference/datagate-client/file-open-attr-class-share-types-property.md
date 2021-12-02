@@ -4,9 +4,10 @@ title: FileOpenAttr.ShareTypes Property
 ---
 
 Specify concurrent access on the open file.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **Public ShareTypes ShareTypes { get; set; }** 
-      </pre>
+
+```cs
+ Public ShareTypes ShareTypes { get; set; }
+```
 
 ## Property Value
 
@@ -19,7 +20,7 @@ Set the value of **ShareTypes** to request the type of sharing required by your 
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* We open the file in order to delete all of its records. */
   AdgConnection db = new AdgConnection("*Public/DG NET Local");

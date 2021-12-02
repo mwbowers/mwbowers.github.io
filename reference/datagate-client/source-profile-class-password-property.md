@@ -4,10 +4,10 @@ title: SourceProfile.Password Property
 ---
 
 The password to be used in conjunction with [ User](source-profile-class-user-property.html) for connection authentication.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string Password { set; }** 
-      </pre>
+
+```cs
+ public string Password { set; }
+```
 
 
 ## Property
@@ -23,7 +23,7 @@ This property should only be set if the user profile has an associated password,
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different

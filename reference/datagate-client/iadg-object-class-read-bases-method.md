@@ -4,12 +4,12 @@ title: IAdgObject.ReadBases Method
 ---
 
 **ReadBases** sets base object information for the **IAdgObject** by reading an XML document fragment.
-<pre>        <span class="lang">
- **[C#]** 
-        </span> **Public void ReadBases(
+
+```cs
+ Public void ReadBases(
    System.Xml.XmlReader reader
-);** 
-      </pre>
+);
+```
 
 
 

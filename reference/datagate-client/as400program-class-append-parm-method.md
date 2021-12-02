@@ -4,11 +4,12 @@ title: As400Program.AppendParm Method
 ---
 
 Appends a parameter to the parameter list for the program.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void AppendParm(
+
+```cs
+ public void AppendParm(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -36,7 +37,7 @@ The **ProgParm** appended to the list may optionally be named via the <span>name
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here, prog is an initialized As400Program.
    * We add the field "CustName" to the parm list, and a local

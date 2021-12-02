@@ -4,14 +4,14 @@ title: AuthorityEntry(string, AuthorityTypes, boolean)
 ---
 
 <span>Creates a new instance of <span> **AuthorityEntry** </span> specifying a profile, its corresponding authorization types, and the profile type</span>.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AuthorityEntry(
+
+```cs
+ public AuthorityEntry(
    string username
 [AuthorityTypes](authority-types-enumeration.html) authorityType
    bool isGroupAccount
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

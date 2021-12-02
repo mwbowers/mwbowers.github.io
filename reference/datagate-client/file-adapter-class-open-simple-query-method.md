@@ -4,15 +4,16 @@ title: FileAdapter.OpenSimpleQuery Method
 ---
 
 Open a database file for access using the specified query and the specified [AdgDataSet](adg-dataset-class.html).
-<pre>        <span class="lang">[C#]</span>
- **Public void OpenSimpleQuery(
+
+```cs
+ Public void OpenSimpleQuery(
    ref AdgDataSet Ds,
    string QueryFile,
    string Query,
    string[] KeyNames,
    KeyUsages[] KeyFlags
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -78,7 +79,7 @@ Note that the length of the <span> *KeyNames* </span> and <span> *KeyFlags* </sp
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

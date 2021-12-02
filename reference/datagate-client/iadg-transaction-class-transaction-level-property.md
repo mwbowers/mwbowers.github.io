@@ -4,9 +4,10 @@ title: IAdgTransaction.TransactionLevel Property
 ---
 
 The locking level for the transaction.
-<pre>        <span class="lang">[C#]</span>
- **public TransactionLevel TransactionLevel { get; }** 
-      </pre>
+
+```cs
+ public TransactionLevel TransactionLevel { get; }
+```
 
 ## Property Value
 

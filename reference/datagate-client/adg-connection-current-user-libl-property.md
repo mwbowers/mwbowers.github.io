@@ -4,10 +4,10 @@ title: AdgConnection.CurrentUserLibl Property
 ---
 
 Set-only property used to change the current library list of an open database connection.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string[] CurrentUserLibl { set; }** 
-      </pre>
+
+```cs
+ public string[] CurrentUserLibl { set; }
+```
 
 
 ## Property Value

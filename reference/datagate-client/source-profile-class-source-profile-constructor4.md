@@ -4,10 +4,10 @@ title: SourceProfile(SourceProfile)
 ---
 
 Constructs an instance of [SourceProfile](source-profile-class.html) that is an exact copy of the given **SourceProfile** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public SourceProfile(<br />   SourceProfile sp<br />);** 
-      </pre>
+
+```cs
+ public SourceProfile(<br />   SourceProfile sp<br />);
+```
 
 
 ## Parameters

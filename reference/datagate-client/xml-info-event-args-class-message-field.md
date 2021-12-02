@@ -4,9 +4,10 @@ title: XmlInfoEventArgs.Message Field
 ---
 
 The **Message** field contains the text of a status report of an XML operation.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public string Message** 
-      </pre>
+
+```cs
+ public string Message
+```
 
 ## Field
 Value

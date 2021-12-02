@@ -4,10 +4,10 @@ title: PrintTrueType Enumeration
 ---
 
 The <span> **PrintTrueType** </span> enumerated constant defines values whether the **True Type font** will be used. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum PrintTrueType;** 
-      </pre>
+
+```cs
+ public enum PrintTrueType;
+```
 
 
 ## Remarks

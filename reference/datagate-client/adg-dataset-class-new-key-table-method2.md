@@ -6,12 +6,12 @@ title: AdgDataSet.NewKeyTable(integer)
 y
 
 Create a key buffer for keyed access operations for the specified format index.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public [AdgKeyTable](adg-key-table-class.html) NewKeyTable(
+
+```cs
+ public [AdgKeyTable](adg-key-table-class.html) NewKeyTable(
    integer iFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

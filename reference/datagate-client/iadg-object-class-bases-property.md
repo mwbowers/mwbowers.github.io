@@ -4,9 +4,10 @@ title: IAdgObject.Bases Property
 ---
 
 **Bases** is a single-dimension array of strings containing path names denoting the set of objects upon which the database object represented by **IAdgObject** is based.
-<pre>        <span class="lang">[C#]</span>
- **public string[] Bases { get; set; }** 
- **** </pre>
+
+```cs
+ public string[] Bases { get; set; }
+```
 
 ## Property Value
 

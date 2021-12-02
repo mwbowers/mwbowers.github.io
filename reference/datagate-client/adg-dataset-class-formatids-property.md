@@ -4,10 +4,10 @@ title: AdgDataSet.FormatIDs Property
 ---
 
 The set of binary format identifiers associated with the set of formats contained by **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public byte[][] FormatIDs { get; }** 
-      </pre>
+
+```cs
+ public byte[][] FormatIDs { get; }
+```
 
 
 <br /> 

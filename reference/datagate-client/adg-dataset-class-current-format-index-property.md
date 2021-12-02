@@ -4,10 +4,10 @@ title: AdgDataSet.CurrentFormatIndex Property
 ---
 
 The current format index of the **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int CurrentFormatIndex { get; }** 
-      </pre>
+
+```cs
+ public int CurrentFormatIndex { get; }
+```
 
 
 ## Property Value

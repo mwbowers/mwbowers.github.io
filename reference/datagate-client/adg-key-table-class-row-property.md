@@ -4,10 +4,10 @@ title: AdgKeyTable.Row Property
 ---
 
 A row object containing key data. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public System.Data.DataRow Row { get; }** 
-      </pre>
+
+```cs
+ public System.Data.DataRow Row { get; }
+```
 
 
 ## Property Value
@@ -23,7 +23,7 @@ Note that DG never adds the **DataRow** referenced by the **Row** property to th
 ## Examples 
 
 <pre>
-        <span class="lang"> **[C#]** 
+        <span class="lang"> [C#] 
         </span>
 </pre>
 <pre>  /* This example will open a file and find the record for

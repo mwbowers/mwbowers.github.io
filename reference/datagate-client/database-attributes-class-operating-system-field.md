@@ -4,9 +4,10 @@ title: DatabaseAttributes.OperatingSystem Field
 ---
 
 The name of the operating system on which the database resides.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public string OperatingSystem** 
-      </pre>
+
+```cs
+ public string OperatingSystem
+```
 
 ## Field
  Value

@@ -4,10 +4,10 @@ title: IFileObject.Copy Method
 ---
 
 **Copy** creates a copy of the database file represented by **IFileObject** with the name and location specified.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IFileObject Copy(<br />   string targetDir ,<br />   string newName ,<br />);** 
-      </pre>
+
+```cs
+ public IFileObject Copy(<br />   string targetDir ,<br />   string newName ,<br />);
+```
 
 
 ## Parameters

@@ -4,10 +4,10 @@ title: dgException.Message Property
 ---
 
 String associated with the dgException. 
-<pre>
-        <span class="lang">[C#]</span>
- **public override string Message { get; }** 
-      </pre>
+
+```cs
+ public override string Message { get; }
+```
 
 
 ## Property Value
@@ -21,7 +21,7 @@ The <span> **Message** </span> property overrides the property defined by <span>
 ## Examples
 
 <pre class="prettyprint">        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

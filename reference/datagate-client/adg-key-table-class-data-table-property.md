@@ -4,10 +4,10 @@ title: AdgKeyTable.DataTable Property
 ---
 
 The <span> **DataTable** </span> object describing the fields of a key.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public DataTable DataTable{ get; }** 
-      </pre>
+
+```cs
+ public DataTable DataTable{ get; }
+```
 
 
 ## Property Value

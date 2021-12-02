@@ -4,10 +4,10 @@ title: As400Program.Parameters Property
 ---
 
 Contains the description and value of parameters as required by the called program.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public [ProgParm](prog-parm-class.html)[] Parameters { get; }** 
-      </pre>
+
+```cs
+ public [ProgParm](prog-parm-class.html)[] Parameters { get; }
+```
 
 
 ## Property Value

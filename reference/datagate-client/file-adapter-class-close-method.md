@@ -4,9 +4,10 @@ title: FileAdapter.Close Method
 ---
 
 Closes the currently open file (synonymous with [ Dispose Method](file-adapter-class-dispose-method.html)).
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void Close();** 
-      </pre>
+
+```cs
+ public void Close();
+```
 
 ## Exceptions
 
@@ -38,7 +39,7 @@ Use the **Close** or **Dispose** methods to close a file opened by a previous ca
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

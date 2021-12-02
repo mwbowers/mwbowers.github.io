@@ -30,7 +30,7 @@ Note that internally, DG manipulates date, time, and timestamp fields as **Syste
 ## Examples
 
 <pre>
-   <span class="lang"> **[C#]** 
+   <span class="lang"> [C#] 
         </span>
   /* Use the already initialized As400OProgram "timeProg" to set the
    * value of a DateTime variable. This program accepts a time data 

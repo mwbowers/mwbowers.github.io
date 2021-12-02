@@ -4,11 +4,12 @@ title: FileAdapter.DeleteRRN Method
 ---
 
 Deletes the current record specified by relative record number.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void DeleteRRN(
+
+```cs
+ public void DeleteRRN(
    long RRN
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

@@ -4,10 +4,10 @@ title: DependentTypes Enumeration
 ---
 
 <span> **DependentTypes** </span> defines values specifying a dependent object's relationship to a base file. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum DependentTypes;** 
-      </pre>
+
+```cs
+ public enum DependentTypes;
+```
 
 
 ## Remarks

@@ -4,10 +4,10 @@ title: IDirectory.RepairObjects Method
 ---
 
 **RepairObjects** method repairs database files contained by the library, as specified by [ RepairOptions](repair-options-enumeration.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void IDirectory RepairObjects(<br />   [RepairOptions](repair-options-enumeration.html) repairOptions ,<br />   [AdgObserver](adg-observer-delegate.html) observer<br />);** 
-      </pre>
+
+```cs
+ public void IDirectory RepairObjects(<br />   [RepairOptions](repair-options-enumeration.html) repairOptions ,<br />   [AdgObserver](adg-observer-delegate.html) observer<br />);
+```
 
 
 ## Parameters

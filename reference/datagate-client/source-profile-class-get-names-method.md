@@ -7,10 +7,10 @@ title: SourceProfile.GetNames Method
 Replaced by [DatabaseName.GetNames](database-name-class-get-names-method.html)
 
 Returns the currently registered database names available for use in a program.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static string[] GetNames(<br />   bool publicDbs<br />);** 
-      </pre>
+
+```cs
+ public static string[] GetNames(<br />   bool publicDbs<br />);
+```
 
 
 ## Parameters
@@ -30,7 +30,7 @@ String. The currently registered database names available for use in a program.
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code will fill a combo box with all of the available database
    * names. */

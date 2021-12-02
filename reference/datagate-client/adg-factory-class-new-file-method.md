@@ -4,13 +4,13 @@ title: AdgFactory.NewFile Method
 ---
 
 The **NewFile** method creates a new instance of [IFileObject](ifile-object-class.html) representing a database file for object management functions.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IFileObject NewFile(
+
+```cs
+ public IFileObject NewFile(
 [AdgConnection](adg-connection-class.html) cn
    string PathName
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,10 +4,10 @@ title: FileAdapter.FormatRequested Property
 ---
 
 Reflects the most recent format specified in a [ SetFormat](file-adapter-class-set-format-method.html) or [ResetFormat](file-adapter-class-reset-format-method.html) method call.
-<pre>
-        <span class="lang">[C#]</span>
- **Public int FormatRequested { get; }** 
-      </pre>
+
+```cs
+ Public int FormatRequested { get; }
+```
 
 
 ## Property Value

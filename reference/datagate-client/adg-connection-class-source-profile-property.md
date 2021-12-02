@@ -4,10 +4,10 @@ title: AdgConnection.SourceProfile Property
 ---
 
 The [SourceProfile](source-profile-class.html) object describing the currently open database connection, or if the **AdgConnection** object is in the <span>Closed</span> state, the database connection to be opened when the [ Open](adg-connection-class-open-method.html) method is called.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public [SourceProfile](source-profile-class.html) SourceProfile { get; }** 
-      </pre>
+
+```cs
+ public [SourceProfile](source-profile-class.html) SourceProfile { get; }
+```
 
 
 ## Property Value
@@ -22,7 +22,7 @@ Note that changing the value of this property, or changing the object referenced
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection Cx;
   Cx = new AdgConnection("*Public/DG NET IBM i");

@@ -4,10 +4,10 @@ title: IMember.Extension Property
 ---
 
 A string typically identifying the type of data contained in database source file members.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string Extension { get; set; }** 
-      </pre>
+
+```cs
+ public string Extension { get; set; }
+```
 
 
 ## Property Value

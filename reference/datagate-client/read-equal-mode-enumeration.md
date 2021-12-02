@@ -4,10 +4,10 @@ title: ReadEqualMode Enumeration
 ---
 
 Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapter-class-read-sequential-equal-method.html) method.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum RangeEqualMode;** 
-      </pre>
+
+```cs
+ public enum RangeEqualMode;
+```
 
 
 ## Remarks
@@ -31,7 +31,7 @@ Defines modes of operation for the [ FileAdapter.ReadSequentialEqual](file-adapt
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");

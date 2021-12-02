@@ -4,10 +4,10 @@ title: KeyUsages Enumeration
 ---
 
 Key definition properties which apply to a key field.<span style="MARGIN-BOTTOM: 0.8em" />
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum KeyUsages;** 
-      </pre>
+
+```cs
+ public enum KeyUsages;
+```
 
 
 ## Remarks

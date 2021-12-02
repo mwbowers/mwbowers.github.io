@@ -4,10 +4,10 @@ title: AdgConnection.Open Method
 ---
 
 Opens a database connection with the settings specified by the provider-specific [SourceProfile](source-profile-class.html) class. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Open();** 
-      </pre>
+
+```cs
+ public void Open();
+```
 
 
 ## Exceptions
@@ -39,7 +39,7 @@ This method is used to transition an **AdgConnection** object to the Open state.
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   try
   {

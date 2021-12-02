@@ -4,12 +4,12 @@ title: DatabaseName.FromSourceProfile Method
 ---
 
 Returns a SourceProfile object.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static SourceProfile FromSourceProfile( ,
+
+```cs
+ public static SourceProfile FromSourceProfile( ,
    SourceProfile sourceProfile
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,9 +4,10 @@ title: DatabaseAttributes.DatabaseAttributes()
 ---
 
 Constructs an instance of a [DatabaseAttributes](dcsDatabaseAttributesClass.html) object with default values.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public DatabaseAttributes();** 
-      </pre>
+
+```cs
+ public DatabaseAttributes();
+```
 
 ## Requirements
 

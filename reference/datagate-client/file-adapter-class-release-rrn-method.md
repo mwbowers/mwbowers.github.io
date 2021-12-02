@@ -4,12 +4,13 @@ title: FileAdapter.ReleaseRRN Method
 ---
 
 Release the specified record.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReleaseRRN(
+
+```cs
+ Public void ReleaseRRN(
    LockRequest lr,
    long RRN
-);** 
-      </pre>
+);
+```
       <br />
 
 ## Parameters

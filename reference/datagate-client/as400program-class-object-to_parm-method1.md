@@ -4,14 +4,14 @@ title: As400Program.ObjectToParm(ProgParm, object, int)
 ---
 
 Converts an object or value type to a parameter list value. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void ObjectToParm(
+
+```cs
+ public void ObjectToParm(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter,
    object Value,
    int Element
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -63,7 +63,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here, "prog" is an initialized As400Program object.
    * The first two lines creates a IBM i character data type whose

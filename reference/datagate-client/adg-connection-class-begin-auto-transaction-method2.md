@@ -4,14 +4,14 @@ title: AdgConnection.BeginAutoTransaction(TransactionLevel, String, String)
 ---
 
 Begins an automatic database transaction creating an instance of an [IAdgTransaction](iadg-transaction-class.html) object with the name, options, and lock level specified.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IAdgTransaction BeginAutoTransaction(
+
+```cs
+ public IAdgTransaction BeginAutoTransaction(
    ASNA.DataGate.Common.TransactionLevel tl,
    string Name,
    string Options
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

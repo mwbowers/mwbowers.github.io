@@ -4,10 +4,10 @@ title: PrintDevAttr.Width Property
 ---
 
 The **Width** specifies the width of paper in the printer.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int Width { get; set; }** 
-      </pre>
+
+```cs
+ public int Width { get; set; }
+```
 
 
 ## Property Value

@@ -4,10 +4,10 @@ title: IMember.Clear Method
 ---
 
 **Clear** deletes all records in the member.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void Clear();** 
-      </pre>
+
+```cs
+ public void Clear();
+```
 
 
 ## Parameters

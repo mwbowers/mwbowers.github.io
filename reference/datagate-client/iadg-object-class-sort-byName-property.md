@@ -4,9 +4,10 @@ title: IAdgObject.SortByName Property
 ---
 
 **SortByName** returns an **IComparer** instance suitable for comparing instances of [IAdgObject](iadg-object-class.html) based on the value returned by their [ToString](iadg-object-class-toString-method.html) method. String comparison is conducted using **System.Collections.Comparer.Default** .
-<pre>        <span class="lang">[C#]</span>
- **Public interface IComparer SortByName { get; }** 
-      </pre>
+
+```cs
+ Public interface IComparer SortByName { get; }
+```
 
 ## Property Value
 

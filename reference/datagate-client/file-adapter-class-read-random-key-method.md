@@ -4,14 +4,15 @@ title: FileAdapter.ReadRandomKey Method
 ---
 
 Read a database file record using the specified key.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReadRandomKey(
+
+```cs
+ Public void ReadRandomKey(
 [AdgDataSet](adg-dataset-class.html) ds,
 [ReadRandomMode](read-random-mode-enumeration.html) mode,
 [LockRequest](lock-request-enumeration.html) lr,
 [AdgKeyTable](adg-key-table-class.html) keyTable
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -80,7 +81,7 @@ Calling this method cancels "range mode". A prior successful call to [ReadRange]
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

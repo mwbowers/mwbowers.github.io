@@ -4,10 +4,10 @@ title: RangeLast Enumeration
 ---
 
 Defines parameter values for [FileAdapter](file-adapter-class.html) range access methods.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum RangeLast;** 
-      </pre>
+
+```cs
+ public enum RangeLast;
+```
 
 
 ## Remarks
@@ -36,7 +36,7 @@ Defines parameter values for [FileAdapter](file-adapter-class.html) range access
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

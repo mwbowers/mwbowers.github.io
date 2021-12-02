@@ -4,12 +4,12 @@ title: AdgConnection(string)
 ---
 
 Constructs an [AdgConnection](adg-connection-class.html) instance for the database.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AdgConnection(
+
+```cs
+ public AdgConnection(
    string dbName
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -45,7 +45,7 @@ The *dbName* parameter is used to construct a new **SourceProfile** instance, us
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   try
   {

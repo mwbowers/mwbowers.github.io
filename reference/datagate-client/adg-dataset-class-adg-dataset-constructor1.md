@@ -4,12 +4,12 @@ title: AdgDataSet(String)
 ---
 
 Initialize the <span> **AdgDataSet** </span> base class.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AdgDataSet(
+
+```cs
+ public AdgDataSet(
    string name
-);** 
-      </pre>
+);
+```
 
       <span/>
 

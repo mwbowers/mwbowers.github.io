@@ -4,10 +4,10 @@ title: PaperOrientation Enumeration
 ---
 
 The <span> **PaperOrientation** </span> enumerated constant defines values on the orientation of the paper. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum PaperOrientation;** 
-      </pre>
+
+```cs
+ public enum PaperOrientation;
+```
 
 
 ## Remarks

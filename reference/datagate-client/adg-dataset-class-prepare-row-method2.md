@@ -4,12 +4,12 @@ title: AdgDataSet.PrepareRow(string)
 ---
 
 Create a **DataRow** object in preparation for adding it to the **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public  PrepareRow(
+
+```cs
+ public  PrepareRow(
    string strFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

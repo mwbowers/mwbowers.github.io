@@ -4,11 +4,12 @@ title: DatabaseName.Unregister Method
 ---
 
 Deletes a registered database name from the system registry. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void Unregister(
+
+```cs
+ public void Unregister(
    String dbName
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

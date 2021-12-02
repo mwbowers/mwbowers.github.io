@@ -4,10 +4,10 @@ title: AdgDataSet.Initialize Method
 ---
 
 Initialize an instance of **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public abstract void Initialize();** 
-      </pre>
+
+```cs
+ public abstract void Initialize();
+```
 
 
 ## Remarks

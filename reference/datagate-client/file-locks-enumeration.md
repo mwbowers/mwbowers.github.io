@@ -4,9 +4,10 @@ title: FileLocks Enumeration
 ---
 
 Defines modes on how a file will be locked; either automatically or manually. 
-<pre>        <span class="lang">[C#]</span>
- **public enum FileLocks;** 
-      </pre>
+
+```cs
+ public enum FileLocks;
+```
 
 ## Remarks
 
@@ -29,7 +30,7 @@ When set to the <code>Auto</code> value, record locking occurs automatically in 
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Using the FileLocks property of a FileAdapter's OpenAttributes,
    * you can set file locking to manual, which allows you to lock more

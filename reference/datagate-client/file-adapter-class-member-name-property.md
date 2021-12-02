@@ -4,9 +4,10 @@ title: FileAdapter.MemberName Property
 ---
 
 <span>The name of the member of the currently-opened file. </span> 
-<pre>        <span class="lang">[C#]</span>
- **Public string MemberName { get; set; }** 
-      </pre>
+
+```cs
+ Public string MemberName { get; set; }
+```
 
 ## Property Value
 
@@ -14,7 +15,7 @@ String. Returns or sets the name of the member of the currently-opened file.
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* We attempt to open the class variable FileAdapter "dbFile" 
    * which may or may not have been initialized another routine. */

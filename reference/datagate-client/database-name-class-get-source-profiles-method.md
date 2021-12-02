@@ -4,12 +4,12 @@ title: DatabaseName.GetSourceProfiles Method
 ---
 
 Returns an array of [SourceProfile](source-profile-class.html) objects currently registered for the database.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static SourceProfile[] GetSourceProfiles(
+
+```cs
+ public static SourceProfile[] GetSourceProfiles(
    bool publicDbs
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

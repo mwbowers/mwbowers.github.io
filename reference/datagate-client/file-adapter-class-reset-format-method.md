@@ -20,7 +20,7 @@ By default, when accessing multi-format files, records of all formats are access
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
 AdgConnection db = new AdgConnection("*Public/DG NET Local");
 FileAdapter dbFile = new FileAdapter(db, "Examples/SalesMem", "SalesMem");

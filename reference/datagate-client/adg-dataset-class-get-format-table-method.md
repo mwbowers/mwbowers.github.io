@@ -4,12 +4,12 @@ title: AdgDataSet.GetFormatTable(integer)
 ---
 
 Returns the DataTable object for a particular file format specified by index.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public DataTable GetFormatTable(
+
+```cs
+ public DataTable GetFormatTable(
    int iFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

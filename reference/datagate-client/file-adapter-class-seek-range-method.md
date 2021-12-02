@@ -4,16 +4,16 @@ title: FileAdapter.SeekRange Method
 ---
 
 Moves the record pointer associated with the currently open file without reading records to within a range of key values. 
-<pre>
-        <span class="lang">[C#]</span>
- **Public void SeekRange(
+
+```cs
+ Public void SeekRange(
    RangeMode mode,
    AdgKeyTable firstKey,
    RangeFirst rangeFirst,
    AdgKeyTable lastKey,
    RangeLast rangeLast
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -85,7 +85,7 @@ Note that if **FileAdapter** was already in range mode, this method will cancel 
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");

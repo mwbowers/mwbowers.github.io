@@ -4,10 +4,10 @@ title: SourceProfile.GetHashCode Method
 ---
 
 Invokes the <span>GetHashCode</span> method of the <span>SourceProfile</span> property.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public override int GetHashCode();** 
-      </pre>
+
+```cs
+ public override int GetHashCode();
+```
 
 
 ## Return Value

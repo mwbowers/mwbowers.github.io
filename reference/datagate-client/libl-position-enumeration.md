@@ -4,10 +4,10 @@ title: LiblPosition Enumeration
 ---
 
 <span> **LiblPosition** </span> contains the values used by [ ILibraryList.AddEntry](ilibrary-list-class-add-entry-method.html) to specify the position in the library list to add the new library list entry. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum LiblPosition;** 
-      </pre>
+
+```cs
+ public enum LiblPosition;
+```
 
 
 ## Remarks

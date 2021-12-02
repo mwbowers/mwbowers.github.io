@@ -4,12 +4,12 @@ title: AdgConnection(SourceProfile)
 ---
 
 Constructs an [AdgConnection](adg-connection-class.html) instance from the initial values of the [ SourceProfile](adg-connection-class-source-profile-property.html) containing the properties of the database connection.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AdgConnection(
+
+```cs
+ public AdgConnection(
 [SourceProfile](source-profile-class.html) sp
-);** 
-      </pre>
+);
+```
 
       <br />
 

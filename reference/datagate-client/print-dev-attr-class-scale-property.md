@@ -4,10 +4,10 @@ title: PrintDevAttr.Scale Property
 ---
 
 The **Scale** specifies the percentage factor by which the printed output is to be scaled.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int Scale { get; set; }** 
-      </pre>
+
+```cs
+ public int Scale { get; set; }
+```
 
 
 ## Property Value

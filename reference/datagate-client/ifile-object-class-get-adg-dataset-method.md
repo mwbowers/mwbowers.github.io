@@ -4,12 +4,12 @@ title: IFileObject.GetAdgDataSet Method
 ---
 
 **GetAdgDataSet** method returns an instance of an [AdgDataSet](adg-dataset-class.html) modeling the formats of the database file represented by **IFileObject** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AdgDataSet GetAdgDataSet(
+
+```cs
+ public AdgDataSet GetAdgDataSet(
 [DataSetOptions](dataset-options-enumeration.html) opts
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

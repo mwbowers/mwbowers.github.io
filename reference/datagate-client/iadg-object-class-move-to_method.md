@@ -4,9 +4,10 @@ title: IAdgObject.MoveTo Method
 ---
 
 **MoveTo** moves a database library or file represented by **IAdgObject** to a specified library.
-<pre>        <span class="lang">[C#]</span>
- **Public void IAdgObject MoveTo(<br />   string LibraryPath<br />);** 
-      </pre>
+
+```cs
+ Public void IAdgObject MoveTo(<br />   string LibraryPath<br />);
+```
 
 ## Parameters
 

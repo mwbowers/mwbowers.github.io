@@ -4,10 +4,10 @@ title: ILibraryList.UserConfig Property
 ---
 
 **UserConfig** sets or returns a string array containing a list of the user portion of the available directories in the library list represented by **ILibraryList** . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string[] UserConfig { get;  set}** 
-      </pre>
+
+```cs
+ public string[] UserConfig { get;  set}
+```
 
 
 ## Property Value

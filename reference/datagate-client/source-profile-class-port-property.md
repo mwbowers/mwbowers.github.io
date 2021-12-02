@@ -4,10 +4,10 @@ title: SourceProfile.Port Property
 ---
 
 The TCP port number used by the database server for TCP/IP-based transport (default 5042). 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int Port { get; set; }** 
-      </pre>
+
+```cs
+ public int Port { get; set; }
+```
 
 
 ## Property Value
@@ -20,7 +20,7 @@ The default TCP port number is 5042.
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* When we specify false with this constructor, we're
    * telling Datagate not to get information from the

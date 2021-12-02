@@ -4,10 +4,10 @@ title: InitMemberOptions Enumeration
 ---
 
 <span> **InitMemberOptions** </span> contains the values used by [ IMember.Initialize](imember-class-initialize-method.html) to specify the type of records to initialize a database member with. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum InitMemberOptions;** 
-      </pre>
+
+```cs
+ public enum InitMemberOptions;
+```
 
 
 ## Remarks

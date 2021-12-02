@@ -4,10 +4,10 @@ title: DataTypes Enumeration
 ---
 
 The <span> **DataTypes** </span> enumerated constant defines values on the types of fields available. This enumeration is used by the [DataType](field-type-class-data-type-property.html) property for [FieldType](field-type-class.html) objects.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum DataTypes;** 
-      </pre>
+
+```cs
+ public enum DataTypes;
+```
 
 
 ## Remarks

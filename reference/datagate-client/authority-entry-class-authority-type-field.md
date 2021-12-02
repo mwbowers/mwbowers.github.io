@@ -4,10 +4,10 @@ title: AuthorityEntry.AuthorityType Field
 ---
 
 **AuthorityType** defines the access capabilities and limitations for this authorization entry.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public [AuthorityTypes](authority-types-enumeration.html) AuthorityType** 
-      </pre>
+
+```cs
+ public [AuthorityTypes](authority-types-enumeration.html) AuthorityType
+```
 
 
 ## Field

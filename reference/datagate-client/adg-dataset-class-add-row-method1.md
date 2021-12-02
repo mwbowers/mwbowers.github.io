@@ -4,12 +4,12 @@ title: AdgDataSet.AddRow(integer)
 ---
 
 Add a prepared row to the table for a particular format.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void AddRow(
+
+```cs
+ public void AddRow(
    int iFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -4,13 +4,13 @@ title: AdgFactory.NewDataArea Method
 ---
 
 The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class.html) representing a data area.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IDataArea NewDataArea(
+
+```cs
+ public IDataArea NewDataArea(
 [AdgConnection](adg-connection-class.html) cn
    string PathName
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

@@ -13,7 +13,7 @@ Creates a new timestamp [ FieldType](field-type-class.html).
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Use the already initialized As400OProgram "timeProg" to set the
    * value of a DateTime variable. This program accepts a timestamp data type

@@ -4,9 +4,10 @@ title: DatabaseAttributes.TotalSeats Field
 ---
 
 The total number of 'seats' for the database. Licensing counts all application running from a single PC to a database as 'one' seat.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int TotalSeats** 
-      </pre>
+
+```cs
+ public int TotalSeats
+```
 
 ## Field
  Value

@@ -4,10 +4,10 @@ title: dgException.GetVerboseText Method
 ---
 
 Returns a multi-line description of the <span>dgException</span>.
-<pre>
-        <span class="lang">[C#]</span>
- **public virtual new String GetVerboseText();** 
-      </pre>
+
+```cs
+ public virtual new String GetVerboseText();
+```
 
 
 ## Remarks
@@ -16,7 +16,7 @@ For development and debugging purposes, <span> **GetVerboseText** </span> is an 
 ## Examples
 
 <pre class="prettyprint">        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Verbose text generates a large string which is a concatanation 
    * of several of dgException's properties and also shows the

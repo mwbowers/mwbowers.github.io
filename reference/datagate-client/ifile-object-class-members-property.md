@@ -4,10 +4,10 @@ title: IFileObject.Members Property
 ---
 
 An array of [IMember](imember-class.html) objects representing all of the database members contained by a database file.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int IMember[] IFileObject Members { get; }** 
-      </pre>
+
+```cs
+ public int IMember[] IFileObject Members { get; }
+```
 
 
 Property Value <p>Single-dimension **IMember** array. Read-only. The array may contain zero or more elements 

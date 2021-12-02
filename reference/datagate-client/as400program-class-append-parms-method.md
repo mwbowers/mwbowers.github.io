@@ -4,11 +4,12 @@ title: As400Program.AppendParms Method
 ---
 
 Appends an array of parameters to the parameter list for the program. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void AppendParms(
+
+```cs
+ public void AppendParms(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)[] Parameters
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -38,7 +39,7 @@ To create a program parameter list, <span> **ProgParm** </span> objects should b
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Here, Prog is an initialized As400Program object, 
    * and CustName, TimeOfDay, and Quit400App are valid

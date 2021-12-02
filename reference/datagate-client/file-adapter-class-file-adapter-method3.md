@@ -4,12 +4,13 @@ title: FileAdapter(AdgConnection, string)
 ---
 
 Constructs an instance of the [FileAdapter](file-adapter-class.html) object with an [AdgConnection](adg-connection-class.html) object and file path name.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public FileAdapter(
+
+```cs
+ public FileAdapter(
    AdgConnection cn,
    string FileName
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -34,7 +35,7 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property is initi
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
   FileAdapter dbFile = new FileAdapter(dataBase, "*Libl/CMASTNEWL1");

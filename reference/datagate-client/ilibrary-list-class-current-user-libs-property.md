@@ -4,10 +4,10 @@ title: ILibraryList.CurrentUserLibs Property
 ---
 
 **CurrentUserLibs** sets or returns a string array containing a list of the user portion of the directories in the current library list represented by **ILibraryList** . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string[] CurrentUserLibs { get; set }** 
-      </pre>
+
+```cs
+ public string[] CurrentUserLibs { get; set }
+```
 
 
 ## Property Value

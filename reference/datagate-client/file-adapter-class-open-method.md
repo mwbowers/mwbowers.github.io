@@ -4,12 +4,12 @@ title: FileAdapter.Open Method
 ---
 
 Open a database file for access with the specified [AdgDataSet](adg-dataset-class.html).
-<pre>
-        <span class="lang">[C#]</span>
- **Public void Open(
+
+```cs
+ Public void Open(
 [AdgDataSet](adg-dataset-class.html) ds
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -59,7 +59,7 @@ If the user provides a value to the [ FileOpenAttr.FormatIDs](file-open-attr-cla
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Unlike OpenNewAdgDataSet, the Open method does not create
    * a new AdgDataSet to meet the requirements of the file being

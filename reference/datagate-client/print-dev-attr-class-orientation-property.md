@@ -4,9 +4,10 @@ title: PrintDevAttr.Orientation Property
 ---
 
 The **Orientation** property specifies the landscape/portrait orientation of paper in the printer. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public PaperOrientation Orientation { get; set; }** 
-      </pre>
+
+```cs
+ public PaperOrientation Orientation { get; set; }
+```
 
 ## Property Value
 

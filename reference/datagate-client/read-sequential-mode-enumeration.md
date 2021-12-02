@@ -4,10 +4,10 @@ title: ReadSequentialMode Enumeration
 ---
 
 Defines modes of operation for the [ FileAdapter.ReadSequential](file-adapter-class-read-sequential-method.html) method.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum ReadSequentialMode;** 
-      </pre>
+
+```cs
+ public enum ReadSequentialMode;
+```
 
 
 ## Remarks
@@ -33,7 +33,7 @@ The **ReadSequentialMode** enumeration is used as a parameter by the [ReadSequen
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET iSeries");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

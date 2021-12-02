@@ -4,9 +4,10 @@ title: DatabaseAttributes.Database Field
 ---
 
 The database name.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public str Database** 
-      </pre>
+
+```cs
+ public str Database
+```
 
 ## Field
  Value

@@ -4,12 +4,12 @@ title: AddPreparedRowAndSetActive
 ---
 
 An integer containing the index value of the file.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public bool AddPreparedRowAndSetActive(
+
+```cs
+ public bool AddPreparedRowAndSetActive(
    int iFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

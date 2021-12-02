@@ -4,9 +4,10 @@ title: dgErrorClass Enumeration
 ---
 
 Specifies the class, or category of the DG run-time error.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public enum dgErrorClass;** 
-      </pre>
+
+```cs
+ public enum dgErrorClass;
+```
 
 ## Remarks
 
@@ -46,7 +47,7 @@ The <span>dgErrorClass</span> enumeration is used as a parameter by the [ErrorCl
 ## Examples
 
 <pre class="prettyprint">        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code attempts to open a file exclusively. 
    * If it fails, we print out the IBM i exception responsible.

@@ -4,9 +4,10 @@ title: FileOpenAttr(string)
 ---
 
 Initialize the **FileOpenAttr** base class.
-<pre class="prettyprint">       <span class="lang">[C#]</span>
- **Public FileOpenAttr();** 
-      </pre>
+
+```cs
+ Public FileOpenAttr();
+```
 
 ## Exceptions
 

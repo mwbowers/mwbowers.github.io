@@ -4,12 +4,12 @@ title: IFileObject.ReadDefinition Method
 ---
 
 **ReadDefinition** reads and validates an XML document fragment describing a database file's definition.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void ReadDefinition(
+
+```cs
+ public void ReadDefinition(
    System.Xml.XmlReader reader
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

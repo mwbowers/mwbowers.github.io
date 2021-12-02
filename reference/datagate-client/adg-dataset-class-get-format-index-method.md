@@ -4,12 +4,12 @@ title: AdgDataSet.GetFormatIndex Method
 ---
 
 Returns an integer identifying a DataGate file format.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public int GetFormatIndex(
+
+```cs
+ public int GetFormatIndex(
    string strFormat
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

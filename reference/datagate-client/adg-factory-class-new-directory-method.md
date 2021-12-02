@@ -4,13 +4,13 @@ title: AdgFactory.NewDirectory Method
 ---
 
 The **NewDirectory** method creates a new instance of [IDirectory](idirectory-class.html) representing a database library for object management functions.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IDirectory NewDirectory(
+
+```cs
+ public IDirectory NewDirectory(
 [AdgConnection](adg-connection-class.html) cn
    string PathName
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

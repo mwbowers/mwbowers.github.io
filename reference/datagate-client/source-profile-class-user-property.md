@@ -4,10 +4,10 @@ title: SourceProfile.User Property
 ---
 
 A user or profile name for authenticating access to the host platform.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string User { get; set; }** 
-      </pre>
+
+```cs
+ public string User { get; set; }
+```
 
 
 ## Property
@@ -25,7 +25,7 @@ A special value, "*PROMPT", may be used to require an interactive user to supply
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Connect using the already established database name 
    * "*PUBLIC/DG NET iSeries" but use a different

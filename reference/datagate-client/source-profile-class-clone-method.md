@@ -4,9 +4,10 @@ title: SourceProfile.Clone Method
 ---
 
 Returns a copy of the <span> **SourceProfile** </span> object.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public virtual new object Clone();**  </pre>
+
+```cs
+ public virtual new object Clone();
+```
 
 
 ## Returns

@@ -4,9 +4,10 @@ title: FieldType.Dbcs Property
 ---
 
 The length of the field in bytes. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public DbcsFormat Dbcs { get; }** 
-      </pre>
+
+```cs
+ public DbcsFormat Dbcs { get; }
+```
 
 ## Property Value
 

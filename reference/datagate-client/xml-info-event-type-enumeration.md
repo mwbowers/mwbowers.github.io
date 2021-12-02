@@ -4,9 +4,10 @@ title: XmlInfoEventType Enumeration
 ---
 
 <span> **XmlInfoEventType** </span> defines values for the level of information provided when using [ AdgFactory.ReadXml](adg-factory-class-read-xml-method2.html) and [ IAdgObject.WriteXml](dcsIAdgObjectClassWriteXmlMethod2.html). 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public enum XmlInfoEventType;** 
-      </pre>
+
+```cs
+ public enum XmlInfoEventType;
+```
 
 ## Remarks
 

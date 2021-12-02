@@ -4,12 +4,12 @@ title: AuthorityEntry(string)
 ---
 
 <span>Creates a new instance of <span> **AuthorityEntry** </span> with all fields except **Username** initialized to default values</span>. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public AuthorityEntry(
+
+```cs
+ public AuthorityEntry(
    string username
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

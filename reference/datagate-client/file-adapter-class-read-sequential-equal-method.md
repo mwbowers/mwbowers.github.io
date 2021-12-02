@@ -4,14 +4,15 @@ title: FileAdapter.ReadSequentialEqual Method
 ---
 
 Read a database file record adjacent to the current position with a key equal to the key of the current record, or optionally, a key equal to the specified key.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReadSequentialEqual(
+
+```cs
+ Public void ReadSequentialEqual(
    AdgDataSet ds,
    ReadEqualMode mode,
    LockRequest lr,
    AdgKeyTable keyTable
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -82,7 +83,7 @@ A successful read operation optionally locks the record read as directed by the 
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");

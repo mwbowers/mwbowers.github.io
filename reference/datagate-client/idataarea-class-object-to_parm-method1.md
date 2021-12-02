@@ -4,12 +4,13 @@ title: IDataArea.ObjectToParm(ASNA.DataGate.DataLink.ProgParm, System.Type)
 ---
 
 Converts an object to a parameter list value provided with the parameter value and type.
-<pre>        <span class="lang">[C#]</span>
- **Public object ObjectToParm(
+
+```cs
+ Public object ObjectToParm(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter,
    object Value
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

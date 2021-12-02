@@ -4,12 +4,13 @@ title: FileAdapter.ChangeRRN Method
 ---
 
 Updates the database file record specified by relative record number with the contents of the specified [AdgDataSet.ActiveRow ](adg-dataset-class-active-row-property.html)property.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void ChangeRRN(
+
+```cs
+ public void ChangeRRN(
 [AdgDataSet](adg-dataset-class.html) ds,
    long RRN
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

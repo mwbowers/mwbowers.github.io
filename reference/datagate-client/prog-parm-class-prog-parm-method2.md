@@ -4,10 +4,10 @@ title: ProgParm(StructureType, DataDirection)
 ---
 
 Construct a representation of a complex iSeries program parameter.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public ProgParm(<br />   StructureType st,<br />   DataDirection dir<br />)** 
-      </pre>
+
+```cs
+ public ProgParm(<br />   StructureType st,<br />   DataDirection dir<br />)
+```
 
 
 ## Parameters

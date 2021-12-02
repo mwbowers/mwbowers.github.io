@@ -4,12 +4,12 @@ title: IDataArea.AppendParm Method
 ---
 
 Appends a parameter to the parameter list for the program.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **Public void AppendParm(
+
+```cs
+ Public void AppendParm(
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

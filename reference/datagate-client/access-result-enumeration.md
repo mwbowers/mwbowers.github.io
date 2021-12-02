@@ -4,10 +4,10 @@ title: AccessResult Enumeration
 ---
 
 Defines modes on whether a record was found.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum AccessResult;** 
-      </pre>
+
+```cs
+ public enum AccessResult;
+```
 
 
 ## Remarks

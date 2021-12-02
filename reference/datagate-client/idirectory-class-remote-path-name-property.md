@@ -4,10 +4,10 @@ title: IDirectory.RemotePathName Property
 ---
 
 **RemotePathName** is the full path name of a directory associated with the library represented by **IDirectory** , if any.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string RemotePathName{ get; }** 
-      </pre>
+
+```cs
+ public string RemotePathName{ get; }
+```
 
 
 Property Value <p> **String** . Returns the full path of a directory associated with the library, or an empty string. 

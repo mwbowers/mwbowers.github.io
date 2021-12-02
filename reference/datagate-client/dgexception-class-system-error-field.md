@@ -4,9 +4,10 @@ title: dgException.SystemError Field
 ---
 
 A system-level classification of the <span>dgException</span>. 
-<pre><span class="lang">[C#]</span>
- **public int SystemError** 
-      </pre>
+
+```cs
+ public int SystemError
+```
 
 ## Field Value
 
@@ -26,7 +27,7 @@ In these cases, <span> **SystemError** </span> will contain an integer code asso
 ## Examples
 
 <pre class="prettyprint">        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code attempts to open a file exclusively. 
   * If it fails, we print out the IBM i exception responsible.

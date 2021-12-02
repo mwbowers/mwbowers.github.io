@@ -4,12 +4,12 @@ title: AdgConnection.BeginTransaction(String)
 ---
 
 Begins a manual database transaction creating an instance of an [ IAdgTransaction](iadg-transaction-class.html) object with the name specified. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public IAdgTransaction BeginTransaction(
+
+```cs
+ public IAdgTransaction BeginTransaction(
    string Name
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

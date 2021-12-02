@@ -4,13 +4,14 @@ title: IAdgObject.Lock Method
 ---
 
 **Lock** engages the database provider's object locking facility to set a lock restricting access to the database object corresponding to **IAdgObject** .
-<pre>        <span class="lang">[C#]</span>
- **Public void IAdgObject Lock(
+
+```cs
+ Public void IAdgObject Lock(
 [ShareTypes](share-types-enumeration.html) ShareType ,
 [WaitOptions](wait-options-enumeration.html) WaitOption ,
    Short WaitTime
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 

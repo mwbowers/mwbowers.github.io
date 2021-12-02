@@ -4,9 +4,10 @@ title: As400Program()
 ---
 
 The default constructor creates an instance of the **As400Program** object. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public As400Program();** 
-      </pre>
+
+```cs
+ public As400Program();
+```
 
 ## Remarks
 
@@ -17,7 +18,7 @@ Before adding parameters or calling programs with an instance created with this 
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program();

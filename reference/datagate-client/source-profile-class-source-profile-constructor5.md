@@ -7,10 +7,10 @@ title: SourceProfile(string, SourceProfile)
 Replaced by [DatabaseName.ToSourceProfile(String, Bool)](database-name-class-to_source-profile-method2.html)
 
 Constructs an instance of [SourceProfile](source-profile-class.html) that is an exact copy of the given SourceProfile, with the exception of the [DatabaseName](source-profile-class-database-name-property.html) property.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public SourceProfile(<br />   string NewName,<br />   SourceProfile sp<br />);** 
-      </pre>
+
+```cs
+ public SourceProfile(<br />   string NewName,<br />   SourceProfile sp<br />);
+```
 
 
 ## Parameters
@@ -49,7 +49,7 @@ This constructor is useful for creating an object capable of registering databas
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This creates a brand new database name using the
    * old source profile.*/

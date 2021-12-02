@@ -4,9 +4,10 @@ title: PrintDevAttr.Length Property
 ---
 
 The **Length** specifies the length of paper in the printer.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int Length { get; set; }** 
-      </pre>
+
+```cs
+ public int Length { get; set; }
+```
 
 ## Property Value
 

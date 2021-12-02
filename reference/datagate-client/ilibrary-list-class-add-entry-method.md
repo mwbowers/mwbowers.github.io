@@ -4,13 +4,13 @@ title: ILibraryList.AddEntry Method
 ---
 
 **AddEntry** adds a library list entry to a database in the library represented by [ILibraryList](ilibrary-list-class.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void AddEntry(_
+
+```cs
+ public void AddEntry(_
    string path _
    ASNA.DataGate.Client.LiblPosition pos _
-   string refLib<br />);** 
-      </pre>
+   string refLib<br />);
+```
 
 
 ## Parameters

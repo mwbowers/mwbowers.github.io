@@ -4,9 +4,10 @@ title: IAdgObject.Create Method
 ---
 
 Use **Create** to create a new database object reflecting the current state of **IAdgObject** .
-<pre>        <span class="lang">[C#]</span>
- **Public void IAdgObject Create();** 
-      </pre>
+
+```cs
+ Public void IAdgObject Create();
+```
 
 ## Parameters
 

@@ -4,9 +4,10 @@ title: DataSetOptions Enumeration
 ---
 
 The <span> **DataSetOptions** </span> enumeration names are reserved for AVR for Visual Studio 2019 use so you must use the associated numeric value. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public enum DataSetOptions;** 
-      </pre>
+
+```cs
+ public enum DataSetOptions;
+```
 
 ## Remarks
 

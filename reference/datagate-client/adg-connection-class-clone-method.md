@@ -4,10 +4,10 @@ title: AdgConnection.Clone Method
 ---
 
 Returns a copy of the **AdgConnection** object. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public virtual new object Clone();** 
-      </pre>
+
+```cs
+ public virtual new object Clone();
+```
 
 
 ## Returns
@@ -47,7 +47,7 @@ Note that a database connection cannot be shared between two instances of **AdgC
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection Cx;
   Cx = new AdgConnection("ASNA Local DB");

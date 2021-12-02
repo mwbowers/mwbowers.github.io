@@ -4,10 +4,10 @@ title: LockRequest Enumeration
 ---
 
 Options for record locking in [FileAdapter](file-adapter-class.html) access methods. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum LockRequest;** 
-      </pre>
+
+```cs
+ public enum LockRequest;
+```
 
 
 ## Remarks
@@ -36,7 +36,7 @@ Note: Some **LockRequest** values are not supported by certain database provider
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

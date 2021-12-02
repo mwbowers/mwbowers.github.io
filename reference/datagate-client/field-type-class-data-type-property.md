@@ -4,9 +4,10 @@ title: FieldType.DataType Property
 ---
 
 The data type for this field. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public DataTypes DataType { get; }** 
-      </pre>
+
+```cs
+ public DataTypes DataType { get; }
+```
 
 ## Property Value
 

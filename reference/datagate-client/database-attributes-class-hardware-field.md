@@ -4,9 +4,10 @@ title: DatabaseAttributes.Hardware Field
 ---
 
 The name of the hardware on which the database file resides.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public string Hardware** 
-      </pre>
+
+```cs
+ public string Hardware
+```
 
 ## Field
  Value

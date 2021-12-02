@@ -4,12 +4,12 @@ title: IPrintProperties.GetBoundType Method
 ---
 
 <span> **GetBoundType** </span> returns the CLR type of a print control associated with a field.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public System.Type GetBoundType(
+
+```cs
+ public System.Type GetBoundType(
    fieldName string,
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

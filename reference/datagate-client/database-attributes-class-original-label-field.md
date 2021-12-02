@@ -4,9 +4,10 @@ title: DatabaseAttributes.OriginalLabel Field
 ---
 
 The original database label name.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public string OriginalLabel** 
-      </pre>
+
+```cs
+ public string OriginalLabel
+```
 
 ## Field Value
 

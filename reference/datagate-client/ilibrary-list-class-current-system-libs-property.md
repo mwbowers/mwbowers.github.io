@@ -4,10 +4,10 @@ title: ILibraryList.CurrentSystemLibs Property
 ---
 
 **CurrentSystemLibs** returns a string array containing a list of the current system and user portion of the directories in the library list represented by **ILibraryList** . 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **protected string[] CurrentSystemLibs { get;}** 
-      </pre>
+
+```cs
+ protected string[] CurrentSystemLibs { get;}
+```
 
 
 ## Return Value

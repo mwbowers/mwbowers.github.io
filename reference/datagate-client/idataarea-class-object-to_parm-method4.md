@@ -4,14 +4,14 @@ title: IDataArea.ObjectToParm(System.Type, string, integer[])
 ---
 
 Converts an object to a data area value provided with the parameter type, value, and the indices in the path to the parameter.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **Public object ObjectToParm(
+
+```cs
+ Public object ObjectToParm(
    Object Value,
    string ParameterName,
    int[] ElementIndices
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

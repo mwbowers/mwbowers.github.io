@@ -4,10 +4,10 @@ title: IDirectory.CreateSubDirectory Method
 ---
 
 **CreateSubDirectory** creates a new library contained by the library represented by [IDirectory](idirectory-class.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **Public void IDirectory CreateSubDirectory(_<br />   string name_<br />);** 
-      </pre>
+
+```cs
+ Public void IDirectory CreateSubDirectory(_<br />   string name_<br />);
+```
 
 
 ## Parameters

@@ -8,7 +8,7 @@ DG for Visual Studio 2019 is adept at handling the standard "database name" conv
 The following example retrieves a database name called "Asna 400 db" (in the process of constructing the SourceProfile object), changes the user and password, and then saves the changes by calling Register. 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   using ASNA.DataGate.Providers;
   SourceProfile AsnaDbName;
@@ -20,7 +20,7 @@ The following example retrieves a database name called "Asna 400 db" (in the pro
 To discover the currently registered database names available for use in a program, use the [SourceProfile.GetNames](source-profile-class-get-names-method.html) static method. This method returns an array of strings as shown in the following example. This snippet of AVR code will print "*PUBLIC" and "User" database names registered on the machine where the code runs. 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
      Console.WriteLine( "*Public Database Names:" );
   Foreach Name(DbName) Collection([SourceProfile.GetNames](source-profile-class-get-names-method.html)(*True)) 

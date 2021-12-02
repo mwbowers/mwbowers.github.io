@@ -7,10 +7,10 @@ title: SourceProfile.Unregister Method
 Deprecated by [DatabaseName.Unregister](database-name-class-unregister-method.html)
 
 Deletes a registered database name from the system registry.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public static void Unregister(<br />   string dbName<br />);** 
-      </pre>
+
+```cs
+ public static void Unregister(<br />   string dbName<br />);
+```
 
 
 ## Parameters
@@ -31,7 +31,7 @@ None.
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* Open up and unregistered the database profile "Worthless Db". */
   try

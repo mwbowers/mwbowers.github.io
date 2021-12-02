@@ -4,10 +4,10 @@ title: AuthorityEntry.IsGroupAccount Field
 ---
 
 **IsGroupAccount** indicates whether [ UserName](authority-entry-class-username-field.html) field denotes a user or group profile.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public bool IsGroupAccount** 
-      </pre>
+
+```cs
+ public bool IsGroupAccount
+```
 
 
 ## Field

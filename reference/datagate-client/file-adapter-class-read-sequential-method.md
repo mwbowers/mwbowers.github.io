@@ -4,13 +4,14 @@ title: FileAdapter.ReadSequential Method
 ---
 
 Read a single record from the file in sequential order.
-<pre>        <span class="lang">[C#]</span>
- **Public void ReadSequential(
+
+```cs
+ Public void ReadSequential(
    AdgDataSet ds,
    ReadSequentialMode mode,
    LockRequest lr
-);** 
-      </pre>
+);
+```
 
 ## Parameters
 
@@ -72,7 +73,7 @@ A successful read operation optionally locks the record read as directed by the 
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
    AdgConnection db = new AdgConnection("*Public/DG NET Local");
    FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1",

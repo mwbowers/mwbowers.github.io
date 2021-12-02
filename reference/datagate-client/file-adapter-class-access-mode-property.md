@@ -4,9 +4,10 @@ title: FileAdapter.AccessMode Property
 ---
 
 The declared mode of access enforced by the database when the file is open. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public [AccessMode](access-mode-enumeration.html) AccessMode { get; set; };** 
-      </pre>
+
+```cs
+ public [AccessMode](access-mode-enumeration.html) AccessMode { get; set; };
+```
 
 ## Property Value
 
@@ -17,7 +18,7 @@ The valid values are defined by the **ASNA.DataGate.Common AccessMode** enumerat
 ## Examples
 
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   FileAdapter dbFile = new FileAdapter();
   dbFile.Connection = new AdgConnection("*Public/DG NET Local");

@@ -4,10 +4,10 @@ title: SourceProfile.InitialLibl Property
 ---
 
 Gets and sets the current database’s initial library list. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string[] InitialLibl { get; set; }** 
-      </pre>
+
+```cs
+ public string[] InitialLibl { get; set; }
+```
 
 
 ## Property Value
@@ -20,7 +20,7 @@ Gets or sets the initial library list for this database.
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code will update the database name "SalesDB" to include
    * "IMPORTS" in its library list. */

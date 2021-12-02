@@ -4,9 +4,10 @@ title: FileAdapter.CurrentFormatIndex Property
 ---
 
 An integer containing the index for the record format of the record most recently accessed by the **FileAdapter** . 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public int CurrentFormatIndex { get; }** 
-      </pre>
+
+```cs
+ public int CurrentFormatIndex { get; }
+```
 
 ## Property Value
 

@@ -4,10 +4,10 @@ title: AuthorityTypes Enumeration
 ---
 
 The <span> **AuthorityTypes** </span> enumerated constant defines values that specify the types of object access authority users may be assigned. 
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum AuthorityTypes;** 
-      </pre>
+
+```cs
+ public enum AuthorityTypes;
+```
 
 
 ## Remarks

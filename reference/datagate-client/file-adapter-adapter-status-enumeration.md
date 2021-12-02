@@ -4,9 +4,10 @@ title: FileAdapter.AdapterStatus Enumeration
 ---
 
 Indicates the status of the file: open or closed. 
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public FileAdapter.AdapterStatus Status { get: }** 
-      </pre>
+
+```cs
+ public FileAdapter.AdapterStatus Status { get: }
+```
 
 ## Remarks
 
@@ -26,7 +27,7 @@ The **FileAdapter.AdapterStatus** enumeration is used as a parameter by the [ Fi
 
 Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure it's opened and open it if it isn't.
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   if (dbFile == null)
       dbFile = new FileAdapter();

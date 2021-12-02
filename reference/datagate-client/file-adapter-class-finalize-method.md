@@ -4,9 +4,10 @@ title: FileAdapter.Finalize Method
 ---
 
 Releases managed resources and performs other cleanup operations.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **protected override void Finalize();** 
-      </pre>
+
+```cs
+ protected override void Finalize();
+```
 
 ## Exceptions
 

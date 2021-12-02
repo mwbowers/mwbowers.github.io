@@ -4,9 +4,10 @@ title: IAdgObject.Remove Method
 ---
 
 The **Remove** method removes an existing database object from the database.
-<pre>        <span class="lang">[C#]</span>
- **Public void IAdgObject Remove();** 
-      </pre>
+
+```cs
+ Public void IAdgObject Remove();
+```
 
 ## Parameters
 

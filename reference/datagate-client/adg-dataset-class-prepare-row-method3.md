@@ -4,13 +4,13 @@ title: AdgDataSet.PrepareRow(string, System.Data.DataRow)
 ---
 
 Establish an existing **DataRow** object as the currently prepared row, for subsequently adding it to the **AdgDataSet** .
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public void PrepareRow(
+
+```cs
+ public void PrepareRow(
    string strFormat,
    DataRow row
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters

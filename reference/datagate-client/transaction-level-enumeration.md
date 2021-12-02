@@ -4,10 +4,10 @@ title: TransactionLevel Enumeration
 ---
 
 The **TransactionLevel** enumerated constant defines values for the [ TransactionLevel](iadg-transaction-class-transaction-level-property.html) property of [IAdgTransaction](iadg-transaction-class.html).
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public enum TransactionLevel;** 
-      </pre>
+
+```cs
+ public enum TransactionLevel;
+```
 
 
 ## Remarks

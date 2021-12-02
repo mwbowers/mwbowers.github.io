@@ -4,9 +4,10 @@ title: FileAdapter.Status Property
 ---
 
 <span>Indicates the status of the file; whether it is open or closed. </span> 
-<pre>        <span class="lang">[C#]</span>
- **public FileAdapter.AdapterStatus Status { get; }** 
-      </pre>
+
+```cs
+ public FileAdapter.AdapterStatus Status { get; }
+```
 
 ## Property Value
 
@@ -18,7 +19,7 @@ The value of **Status** is one of the **FileAdapter.AdapterStatus** values.
 
 Here we want to use a fileAdapter object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure its opened and open it if it isn't.
 <pre>        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   if (dbFile == null)
       dbFile = new FileAdapter();

@@ -4,12 +4,12 @@ title: As400Program(AdgConnection)
 ---
 
 Construct an instance of the **As400Program** object and set the [ Connection](as400program-class-connection-property.html) property.
-<pre>
-        <span class="lang">[C#]</span>
- **public As400Program(
+
+```cs
+ public As400Program(
    AdgConnection Connection
-);** 
-      </pre>
+);
+```
 
 
 ## Parameters
@@ -46,7 +46,7 @@ If *Connection* is set with a null value, or is an **AdgConnection** instance wh
 
 <pre class="prettyprint">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program(ProdDB);

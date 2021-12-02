@@ -4,10 +4,10 @@ title: RangeMode Enumeration
 ---
 
 For [FileAdapter](file-adapter-class.html) range methods, defines how to access the first record in the range.
-<pre class="syntax">
-        <span class="lang">[C#]</span>
- **public enum RangeMode;** 
-      </pre>
+
+```cs
+ public enum RangeMode;
+```
 
 
 ## Remarks
@@ -36,7 +36,7 @@ For <span> **SeekRange** </span>, **RangeMode** determines whether to locate the
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

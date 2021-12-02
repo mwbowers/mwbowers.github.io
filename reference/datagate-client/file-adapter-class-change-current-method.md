@@ -4,11 +4,12 @@ title: FileAdapter.ChangeCurrent Method
 ---
 
 Updates the current database file record with the contents of the specified [ AdgDataSet.ActiveRow ](adg-dataset-class-active-row-property.html)property.
-<pre class="prettyprint">        <span class="lang">[C#]</span>
- **public void ChangeCurrent(
+
+```cs
+ public void ChangeCurrent(
 [AdgDataSet](adg-dataset-class.html) ds
-};** 
-      </pre>
+};
+```
 
 ## Parameters
 
@@ -53,7 +54,7 @@ ASNA.DataGate.Common.dgException is thrown to signal normal procedural condition
 
 <pre class="OH_CodeSnippetContainerCode">
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   AdgConnection db = new AdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");

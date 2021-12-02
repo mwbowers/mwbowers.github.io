@@ -4,10 +4,10 @@ title: FileAdapter.ExtendedResults Property
 ---
 
 Specialized collection of status information associated with the file.
-<pre class="syntax">
-        <span class="lang">[C#]</span>
- **public Hashtable ExtendedResults { get; }** 
-      </pre>
+
+```cs
+ public Hashtable ExtendedResults { get; }
+```
 
 
 ## Property Value

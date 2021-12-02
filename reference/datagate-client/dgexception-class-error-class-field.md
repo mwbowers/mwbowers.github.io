@@ -4,10 +4,10 @@ title: dgException.ErrorClass Field
 ---
 
 A category of the condition raising the exception.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public dgErrorClass ErrorClass { get; set }** 
-      </pre>
+
+```cs
+ public dgErrorClass ErrorClass { get; set }
+```
 
 
 ## Field Value
@@ -19,7 +19,7 @@ The condition raising the <span>dgException</span> belongs to a particular categ
 ## Examples 
 
 <pre class="prettyprint">        <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   /* This code attempts to open a file exclusively. 
    * If it fails, we print out the IBM i exception responsible.

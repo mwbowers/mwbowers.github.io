@@ -4,10 +4,10 @@ title: As400Program.ProgramPath Method
 ---
 
 A string describing the path to the called program on the database server.
-<pre class="prettyprint">
-        <span class="lang">[C#]</span>
- **public string ProgramPath { set; }** 
-      </pre>
+
+```cs
+ public string ProgramPath { set; }
+```
 
 
 ## Property Value
@@ -22,7 +22,7 @@ Set the <span> **ProgramPath** </span> property to name the program on the datab
 
 <pre>
         <span class="lang">
- **[C#]** 
+ [C#] 
         </span>
   As400Program prog = new As400Program();
   prog.Connection = new AdgConnection("*Public/DG NET IBM i");
