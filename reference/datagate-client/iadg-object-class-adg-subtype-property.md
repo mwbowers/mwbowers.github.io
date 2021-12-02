@@ -7,13 +7,6 @@ title: IAdgObject.AdgSubType Property
 <pre>        <span class="lang">[C#]</span>
  **Public [AdgSubTypes](adg-subtypes-enumeration.html) AdgSubType { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property AdgSubType As [AdgSubTypes](adg-subtypes-enumeration.html)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp AdgSubType Type([AdgSubTypes](adg-subtypes-enumeration.html)) Access(*Public) 
-     BegGet** 
-      </pre>
 
 Property Value <p> [AdgSubTypes](adg-subtypes-enumeration.html). ReadOnly. A sub-classification of the database object, such as Join, Physical, etc. 
 <br />

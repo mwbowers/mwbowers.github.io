@@ -7,12 +7,6 @@ The original database label name.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public string OriginalLabel** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
- **Public Property OriginalLabel As String** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **DclFld Name(OriginalLabel) Type(*String) Access(*Public)** 
-      </pre>
 
 ## Field Value
 

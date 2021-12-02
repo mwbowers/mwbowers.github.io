@@ -11,18 +11,6 @@ Complete the current printer job, change device-related parameters associated wi
 )
 
       </pre>
-<pre> **[Visual Basic]** 
- Overloads Public Sub ResetPrintAttr ( _
-   ByVal docName As String _
-   ByVal attr As [ASNA.DataGate.Providers.PrintDevAttr](print-dev-attr-class.html)
-)
-
-      </pre>
-<pre class="prettyprint"> **[Visual RPG]** 
-BegSr ResetPrintAttr Access(*Public)
-  DclSrParm docName Type(string)
-  DclSrParm attr Type(ASNA.DataGate.Providers.PrintDevAttr)
-      </pre>
 
 ## Parameters
 

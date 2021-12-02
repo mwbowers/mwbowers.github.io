@@ -7,12 +7,6 @@ After database connection and access are complete, applications *must* disconnec
 <pre><span class="lang">[C#]</span>
   Cx.Close();
   Cx = null;</pre>
-<pre><span class="lang">[Visual Basic]</span>
-  Cx.Close()
-  Cx = Nothing</pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
-  Cx.Close()
-  Cx = *Nothing</pre>
 
 Whether you use <span> **AdgConnection.Close** </span> or <span> **AdgConnection.Dispose** </span> is a matter of preference since they perform the same task of disconnecting the database and releasing unmanaged resources. Note that <span> **AdgConnection.Dispose** </span> implements the conventional <span> **System.IDisposable** </span> interface for **AdgConnection** . 
 ## See Also

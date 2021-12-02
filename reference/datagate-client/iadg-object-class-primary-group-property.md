@@ -7,9 +7,6 @@ title: IAdgObject.PrimaryGroup Property
 <pre>        <span class="lang">[C#]</span>
  **Public String PrimaryGroup { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property PrimaryGroup As String** 
-      </pre>
 
 ## Property Value
 

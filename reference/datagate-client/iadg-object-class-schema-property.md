@@ -7,9 +7,6 @@ title: IAdgObject.Schema Property
 <pre>        <span class="lang">[C#]</span>
  **Public System.Xml.Schema.XmlSchemaCollection Schema { get }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property Schema As System.Xml.Schema.XmlSchemaCollection** 
-      </pre>
 
 ## Property Value
 

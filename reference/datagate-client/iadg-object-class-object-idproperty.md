@@ -7,9 +7,6 @@ title: IAdgObject.ObjectID Property
 <pre>        <span class="lang">[C#]</span>
  **Public int ObjectID { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property ObjectID As Integer** 
-      </pre>
 
 ## Property Value
 

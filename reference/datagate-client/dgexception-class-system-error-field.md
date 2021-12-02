@@ -7,9 +7,6 @@ A system-level classification of the <span>dgException</span>.
 <pre><span class="lang">[C#]</span>
  **public int SystemError** 
       </pre>
-<pre><span class="lang">[Visual Basic] </span>
- **Public Property SystemError As Integer** 
-      </pre>
 
 ## Field Value
 

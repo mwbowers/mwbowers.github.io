@@ -7,9 +7,6 @@ The <span> **DataSetOptions** </span> enumeration names are reserved for AVR for
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum DataSetOptions;** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Enum DataSetOptions** 
-      </pre>
 
 ## Remarks
 

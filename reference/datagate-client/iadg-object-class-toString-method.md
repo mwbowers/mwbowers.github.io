@@ -7,9 +7,6 @@ title: IAdgObject.ToString Method
 <pre>        <span class="lang">[C#]</span>
  **Public string IAdgObject ToString(<br /> );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Function ToString() As string** 
-      </pre>
 
 ## Returns
 

@@ -7,9 +7,6 @@ The declared mode of access enforced by the database when the file is open.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public [AccessMode](access-mode-enumeration.html) AccessMode { get; set; };** 
       </pre>
-<pre class="prettyprint">       <span class="lang">[Visual Basic] </span>
- **Public Property AccessMode As [AccessMode](access-mode-enumeration.html)** 
-      </pre>
 
 ## Property Value
 

@@ -10,17 +10,6 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object with
    string FileName
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal cn As AdgConnection _
-   ByVal FileName As String _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-   DclSrParm cn Type(AdgConnection)
-   DclSrParm FileName Type(*String)** 
-      </pre>
 
 ## Parameters
 

@@ -9,11 +9,6 @@ Appends a parameter to the parameter list for the program.
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub AppendParm( _
-   ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
-)** 
-      </pre>
 
 ## Parameters
 

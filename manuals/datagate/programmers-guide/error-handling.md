@@ -89,65 +89,6 @@ namespace NetworkRecovery
           }
       }</pre>
       <br />
-<pre>        <span class="lang">
- **[Visual Basic]** 
-        </span>
-Imports ASNA.DataGate.Client
-Imports ASNA.DataGate.Common
-Public Class Form1
-    Inherits System.Windows.Forms.Form
-Const srcStr As String = "asna network database"
-#Region " Windows Form Designer generated code "
-      ...Designer code omitted...
-#End Region
-    Private Sub btnConnect_Click(ByVal sender As System.Object, _
-                                 ByVal e As System.EventArgs) _
-                   Handles btnConnect.Click
-        Dim cx As AdgConnection = New AdgConnection(srcStr)
-        Dim retry As Boolean
-        Dim origCursor As Cursor = Cursor.Current
-        ' enter the "retry" loop
-        Do
-            Try
-                retry = False
-                Cursor.Current = Cursors.WaitCursor ' hourglass
-                cx.Open()   ' this will throw dgException if errors occur
-            Catch ex As dgException
-                Dim dr As DialogResult = DialogResult.Abort
-                ' check for error indicating "service not running"
-                If (ex.Error = dgErrorNumber.dgEiNORESPONSE) Then
-                    dr = MessageBox.Show("Cannot connect to " + srcStr + _
-                         ".  Is the service running?", _
-                         "Database Provider Unavailable", _
-                         MessageBoxButtons.RetryCancel, _
-                         MessageBoxIcon.Hand, _
-                         MessageBoxDefaultButton.Button1, _
-                         0)
-                    ' check for error indicating "network down"
-                ElseIf (ex.Error = dgErrorNumber.dgEiCONNLOST Or _
-                        ex.Error = dgErrorNumber.dgEiHOSTNOTFND) Then
-                    dr = MessageBox.Show("Cannot connect to " + srcStr + _
-                         ".  Is the network available?", _
-                         "Database Provider Unavailable", _
-                          MessageBoxButtons.RetryCancel, _
-                          MessageBoxIcon.Hand, _
-                          MessageBoxDefaultButton.Button1, _
-                          0)
-                End If
-                If (dr = DialogResult.Retry) Then
-                    retry = True
-                End If
-            End Try
-            Cursor.Current = origCursor
-        Loop Until (retry = False)
-
-        ' In this simple example, just check the connection state and quit
-        If (cx.State = ConnectionState.Open) Then
-            MessageBox.Show("Connected!")
-        End If
-        Close()
-    End Sub
-End Class</pre>
 <pre class="prettyprint">BegClass Form1 Extends (System.Windows.Forms.Form) Access(*Public)
 DclFld Name (srcStr)Type (*String = "asna network database")
 DclFld Name (cx) Type (AdgConnection = New AdgConnection(srcStr)

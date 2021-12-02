@@ -4,8 +4,6 @@ title: SourceProfile.op_Equality Method
 ---
 
 Compares two instances of <span>SourceProfile</span> for equality.
-<pre class="prettyprint">[Visual Basic]<span>
-returnValue = SourceProfile.op_Equality</span>(x, y)</pre>
 
 ## Parameters
 

@@ -10,12 +10,6 @@ Converts an object to a parameter list value provided with the parameter value a
    object Value
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Function ObjectToParm(_ 
-   ByVal Parameter As [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) _
-   ByVal Value As Object
-) As Object** 
-      </pre>
 
 ## Parameters
 

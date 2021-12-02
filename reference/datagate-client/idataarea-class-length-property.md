@@ -6,10 +6,7 @@ title: IDataArea.Length Method
 Gets or sets the length in the data area.
 <pre>        <span class="lang">[C#]</span>
  **Public integer Length { set; get; }** 
-      </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property Length As Integer** 
-      </pre>      
+      </pre>   
 
 ## Property Value
 

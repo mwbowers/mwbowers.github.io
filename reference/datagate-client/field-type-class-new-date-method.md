@@ -63,39 +63,6 @@ Note that internally, DG manipulates date, time, and timestamp fields as **Syste
    * the data portion of the returned DateTime will be set to MinValue. The same will
    * happen to the time portion of a variable if its IBM i parm was set to be a NewDate. */</pre>
 
-<pre><span class="lang"> **[Visual Basic]** </span>
-  ' Create a parms list to pass to a pre-initialized As400Program object.
-  ' We want to pass one date with time format *USA and another with time
-  ' format *ISO. Other time formats are available in the DateTimeFormat
-  ' enumeration as well. 
-  Dim DateUSA As DateTime = System.DateTime.Now
-  Dim DateISO As DateTime = System.DateTime.Now
-
-  Dim type1 As New ProgParmType("DateUSA", 0, FieldType.NewDate(DateTimeFormat.USA))
-  Dim type2 As New ProgParmType("DateISO", 0, FieldType.NewDate(DateTimeFormat.ISO))
-  Dim parm1 As New ProgParm(type1, DataDirection.InputOutput)
-  Dim parm2 As New ProgParm(type2, DataDirection.InputOutput)
-
-  prog.AppendParm(parm1)
-  prog.AppendParm(parm2)
-
-  ' In the lines below, we assign the IBM i program parameters
-  ' values from our .NET variables. 
-  prog.ObjectToParm(parm1, DateUSA, 0)
-  prog.ObjectToParm(parm1, DateISO, 0)
-
-  ' Call the program. 
-  prog.Execute()
-
-  ' The parameters can be bidirectional and thus return data as well. 
-  ' To use that data, we assign the values of the parameters back to our
-  ' .NET variables. 
-  DateUSA = Convert.ToDateTime(prog.ParmToObject(parm1, DateUSA.GetType(), 0))
-  DateISO = Convert.ToDateTime(prog.ParmToObject(parm2, DateUSA.GetType(), 0))
-  ' IMPORTANT NOTE: The time and date data types do not return all the information
-  ' which a .NET DateTime can contain. Specifically, if you specify a parm as a NewTime,
-  ' the data portion of the returned DateTime will be set to MinValue. The same will
-  ' happen to the time portion of a variable if its IBM i parm was set to be a NewDate. </pre>
 
 ## Requirements
 

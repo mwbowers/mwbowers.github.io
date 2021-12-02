@@ -7,12 +7,6 @@ Closes the currently open file (synonymous with [ Dispose Method](file-adapter-c
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public void Close();** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub Close()** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr Close Access(*Public)** 
-      </pre>
 
 ## Exceptions
 

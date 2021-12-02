@@ -7,13 +7,6 @@ The **Color** property indicates that non-monochrome output is to be produced by
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public bool Color { get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Property Color As Boolean** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp Color Access(*Public) Type(*Boolean)
-   BegGet,    BegSet** 
-      </pre>
 
 ## Property Value
 

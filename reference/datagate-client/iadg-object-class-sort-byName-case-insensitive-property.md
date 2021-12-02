@@ -7,9 +7,6 @@ title: IAdgObject.SortByNameCaseInsensitive Property
 <pre>        <span class="lang">[C#]</span>
  **Public interface IComparer SortByNameCaseInsensitive { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public interface ReadOnly Property SortByNameCaseInsensitive As IComparer** 
-      </pre>
 
 ## Property Value
 

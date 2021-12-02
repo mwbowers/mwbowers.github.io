@@ -7,12 +7,6 @@ The database name.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public str Database** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Property Database As String** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **DclFld Name(Database) Type(*String) Access(*Public)** 
-      </pre>
 
 ## Field
  Value

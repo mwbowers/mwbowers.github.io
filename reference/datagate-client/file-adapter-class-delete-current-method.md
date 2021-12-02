@@ -4,9 +4,6 @@ title: FileAdapter.DeleteCurrent Method
 ---
 
 Deletes the current record associated with an open file.
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr DeleteCurrent Access(*Public)** 
-      </pre>
 
 ## Exceptions
 

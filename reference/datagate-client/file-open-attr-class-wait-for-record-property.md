@@ -7,12 +7,6 @@ Time, in seconds, that a process will wait for access to a record.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public int WaitForRecord { get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Property WaitForRecord As Integer** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp WaitForRecord Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 

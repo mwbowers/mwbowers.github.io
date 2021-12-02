@@ -7,9 +7,6 @@ title: IAdgObject.DateModified Property
 <pre>        <span class="lang">[C#]</span>
  **Public System.DateTime DateModified { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property DateModified As System.DateTime** 
-      </pre>
 
 Property Value <p> **System.DateTime** . Read only. If **IAdgObject** was obtained via [IDirectory.Enumerate](idirectory-class-enumerate-method.html), the time the object was most recently modified. 
 ## Remarks

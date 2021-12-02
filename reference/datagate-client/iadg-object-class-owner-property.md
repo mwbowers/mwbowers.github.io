@@ -7,9 +7,6 @@ title: IAdgObject.Owner Property
 <pre>        <span class="lang">[C#]</span>
  **Public string Owner { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property Owner As String** 
-      </pre>
 
 ## Property Value
 

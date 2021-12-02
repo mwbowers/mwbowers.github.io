@@ -7,9 +7,6 @@ The data type for this field.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public DataTypes DataType { get; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property DataType As [DataTypes](data-types-enumeration.html)** 
-      </pre>
 
 ## Property Value
 

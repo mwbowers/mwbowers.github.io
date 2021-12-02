@@ -4,9 +4,6 @@ title: FileOpenAttr.InhibitWrites Property
 ---
 
 Specify write-access enabling on the open file.
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp InhibitWrites Type(*Boolean) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 

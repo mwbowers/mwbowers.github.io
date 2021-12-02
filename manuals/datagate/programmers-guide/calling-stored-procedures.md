@@ -31,14 +31,6 @@ The database server is identified and connected with an object of the AdgConnect
   AdgConnection cn;
   Cn = new AdgConnection();
   cn.Open("MyAs400");</pre>
-<pre>[Visual Basic]
-  Dim cn as AdgConnection
-  cn = New AdgConnection
-  cn.Open("MyAs400")</pre>
-<pre>[Visual RPG]
-  Dclfld Name(Cn)Type(AdgConnection)
-  Cn =*New AdgConnection
-  Cx.Open("MyAs400")</pre>
 
 The above code will open a database connection to the IBM i server named "MyAs400". See the DataGate Studio documentation for a discussion of database names.
 
@@ -47,12 +39,6 @@ To name the path of a program you use the As400Program class, as in the followin
 <pre class="prettyprint">[C#]
   As400Program prog;
   Prog = new As400Program(cn, "*libl/myprog");</pre>
-<pre class="prettyprint">[Visual Basic]
-  Dim prog as As400Program
-  prog = New As400Program(cn, "*libl/myprog")</pre>
-<pre class="prettyprint">[Visual RPG]
-  Dclfld Name(Prog) Type(As400Program)			
-  Prog = *New As400Program(cn, "*libl/myprog")</pre>
 
 ### Procedural Construction of Parameter Lists
 To procedurally describe the parameters and attach the description to the As400Program object, three classes in the ASNA.DataGate.Client.DataLink namespace are provided:
@@ -78,20 +64,6 @@ This program expects to receive an input parameter of type packed decimal (preci
   countParm = new ProgParm( parmType, DataDirection.InputOutput );
   ...
   prog.AppendParm(countParm);</pre>
-<pre>[Visual Basic]
-  Dim parmType As	ProgParmType
-  parmType = New ProgParmType("Parm1", 0, FieldType.NewPacked(7, 2))
-  Dim countParm As ProgParm
-  countParm = New ProgParm(parmType, DataDirection.InputOutput)
-  ...
-  prog.AppendParm(countParm)</pre>
-<pre>[Visual RPG]
-  DCLFLD Name (parmType) Type (ProgParmType)
-  parmType = New ProgParmType("Parm1", 0, FieldType.NewPacked(7, 2))
-  DCLFLD Name (countParm) Type (ProgParm)
-  countParm = New ProgParm(parmType, DataDirection.InputOutput)
-  ...
-  prog.AppendParm(countParm)</pre>
 
 ProgParmType object parmType is constructed with three parameters.
 
@@ -107,10 +79,6 @@ The [AppendParm](as400program-class-append-parm-method.html) method of As400Prog
 For input parameters, you will want to set the data value of the parameter before calling the program. You may only do this after appending the parameter to the As400Program object as follows.
 <pre class="prettyprint">[C#]
   prog.ObjectToParm(countParm, 7.73, 0 );</pre>
-<pre class="prettyprint">[Visual Basic]
-  prog.ObjectToParm(countParm, 7.73, 0);</pre>
-<pre class="prettyprint">[Visual RPG]
-  prog.ObjectToParm(countParm, 7.73, 0)</pre>
 
 The ObjectToParm method of As400Program is used to convert an object or value type to a parameter list value.
 
@@ -121,10 +89,6 @@ The ObjectToParm method of As400Program is used to convert an object or value ty
 After setting the input parameter values, the IBM i program may be invoked with the Execute method of As400Program, as below.
 <pre class="prettyprint">[C#]
   prog.Execute();</pre>
-<pre class="prettyprint">[Visual Basic]
-  prog.Execute()</pre>
-<pre class="prettyprint">[Visual RPG]
-  prog.Execute()</pre>
 
 Execute sends all DataDirection.Input and DataDirection.InputOutput parameter values to the database server, and tells the server to invoke the program. Execute blocks, waiting for the result of the program call. When control returns to the database server from the called program, the server sends all DataDirection.Output and DataDirection.InputOutput parameter values to DG.
 
@@ -133,13 +97,6 @@ Upon return from Execute, your DG program will want to extract the output parame
   decimal retVal;
   retVal = (decimal) prog.ParmToObject(countParm,);
   typeof(decimal), 0);</pre>
-<pre class="prettyprint">[Visual Basic]
-  Dim retVal As Decimal
-  retVal = prog.ParmToObject(countParm, Type.GetType("System.Decimal"), 0)</pre>
-<pre class="prettyprint">[Visual RPG]
-  Dclfld Name(retVal) Type(*Decimal)
-  retVal = prog.ParmToObject(countParm,
-  Type.GetType("System.Decimal"),0)</pre>
 
 ParmToObject returns an object or value type of a specific type. As with the value parameter of ObjectToParm, this return type may be arbitrary, but there are limits to the possible conversions available. Here, we expect ParmToObject to return a **System.Decimal** value.
 
@@ -187,26 +144,6 @@ You can construct a parameter list for calling this program using the previously
   // Add multiple-occurrence (array) definition "TestDS" to parameter list
   StructureType structType = new StructureType("TestDS", 5, structMbrs);
   parmList[0] = new ProgParm(structType, DataDirection.Input);</pre>
-<pre>[Visual Basic]
-  ' Create "TestDS" structure definition (3 members)
-  Dim structMbrs(2) As Object
-  structMbrs(0) = New ProgParmType("Test1", 0, FieldType.NewZoned(5, 1))
-  structMbrs(1) = New ProgParmType("Test2", 0, FieldType.NewChar(5))
-  structMbrs(2) = New ProgParmType("Test3", 0, FieldType.NewPacked(11, 2))
-  ' Add multiple-occurrence (array) definition "TestDS" to parameter list
-  Dim structType As StructureType
-  structType = New StructureType("TestDS", 5, structMbrs)
-  parmList(0) = New ProgParm(structType, DataDirection.Input)</pre>
-<pre class="prettyprint">[Visual RPG] 
-  //Create "TestDS" structure definition (3 members) 
-  DCLFLD Name (structMbrs(2)) Type (*Object) 
-  structMbrs(0) = New ProgParmType("Test1", 0, FieldType.NewZoned(5, 1)) 
-  structMbrs(1) = New ProgParmType("Test2", 0, FieldType.NewChar(5)) 
-  structMbrs(2) = New ProgParmType("Test3", 0, FieldType.NewPacked(11, 2))
-  ' Add multiple-occurrence (array) definition "TestDS" to parameter list
-  DCLFLD Name (structType) Type (StructureType) 
-  structType = New StructureType("TestDS", 5, structMbrs) 
-  parmList(0) = New ProgParm(structType, DataDirection.Input)</pre>
 
 The first four statements construct the array of objects describing the members of the structure (Test1, Test2, and Test3).
 
@@ -219,15 +156,6 @@ After constructing the parameter list the ProgramCallComplex program initializes
   int[] secondElemRef = new int[]{1};
   prog.ObjectToParm( "2Fld2", "TestDS.Test2",
     secondElemRef );</pre>
-<pre>[Visual Basic]
-  Dim secondElemRef(1) As Integer
-  secondElemRef(0) = 1
-  prog.ObjectToParm("2Fld2", "TestDS.Test2", secondElemRef)</pre>
-<pre class="prettyprint">[Visual RPG] 
-  Dclfld Name(secondElemRef(1) Type(*Integer) 
-  secondElemRef(0) = 1 
-  prog.ObjectToParm("2Fld2", "TestDS.Test2",  
-  secondElemRef)</pre>
 
 Since the called program is only interested in a particular member of a data structure (Test2) and that data structure is in a particular element of the array (second element), the above code only sets the data for that element. Note that DG chooses reasonable default "zero" values for parameter values that are not set explicitly. However, the programmer should not rely on default values to supply data used by a called program. 
 

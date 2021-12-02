@@ -11,10 +11,6 @@ title: IAdgObject.ReadBases Method
 );** 
       </pre>
 
-<pre> **<span class="lang">[Visual Basic] </span>
- public Sub ReadBases(_
-   ByVal reader As System.Xml.XmlReader<br /> ) As IAdgObject** 
-      </pre>
 
 
 ## Parameters

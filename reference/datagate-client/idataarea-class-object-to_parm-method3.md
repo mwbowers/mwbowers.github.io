@@ -10,12 +10,6 @@ Converts an object to a data area value provided with the parameter type and val
    string ParameterName,
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Function ObjectToParm( _
-   ByVal Value As Object, _
-   ByVal ParameterName As String, _
-) As Object** 
-      </pre>
 
 ## Parameters
 

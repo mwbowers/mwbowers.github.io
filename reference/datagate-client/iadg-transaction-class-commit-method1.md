@@ -7,9 +7,6 @@ Accept changes to the database that have been performed within the current trans
 <pre>        <span class="lang">[C#]</span>
  **Public virtual void Commit();** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Overridable Sub Commit()** 
-      </pre>
 
 ## Exceptions
 

@@ -4,9 +4,6 @@ title: FileOpenAttr.OptimalBlockingFactor Field
 ---
 
 This constant, when assigned to the **BlockingFactor** property, requests that DataGate calculate the best-fit size of the network blocking record buffer.
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp OptimalBlockingFactor Type(*Integer) Access(*Public)** 
-      </pre>
 
 ## Field
  Value

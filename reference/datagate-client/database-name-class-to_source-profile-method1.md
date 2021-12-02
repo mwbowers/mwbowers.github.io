@@ -11,10 +11,6 @@ Converts the named database into a SourceProfile object.
 );** 
       </pre>
 
-<pre class="prettyprint">        [Visual Basic] **Public Sub ToSourceProfile(_ 
-   ByVal dbName As String_
-) As SourceProfile** 
-      </pre>
 
 
 ## Parameters

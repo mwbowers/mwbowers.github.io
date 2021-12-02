@@ -10,17 +10,6 @@ Construct an instance of the **As400Program** object and set the [Connection](as
    string ProgramPath
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal Connection As [AdgConnection](adg-connection-class.html) _
-   ByVal ProgramPath As String _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegConstructor Acess(*Public)
-   DclSrParm Connection Type(AdgConnection)
-   DclSrParm ProgramPath Type(*String)** 
-      </pre>
 
 ## Parameters
 

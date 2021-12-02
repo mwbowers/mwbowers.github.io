@@ -7,12 +7,6 @@ The condition identifier for this dgException.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public dgErrorNumber Error}** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Property Error As dgErrorNumber** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **DclFld Name(Error) Type(dgErrorNumber)** 
-      </pre>
 
 ## Field Value
 

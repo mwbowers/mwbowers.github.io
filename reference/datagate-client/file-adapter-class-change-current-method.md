@@ -9,15 +9,6 @@ Updates the current database file record with the contents of the specified [ Ad
 [AdgDataSet](adg-dataset-class.html) ds
 };** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub ChangeCurrent( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html) _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSub ChangeCurrent Access(*Public)
-   DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))** 
-      </pre>
 
 ## Parameters
 

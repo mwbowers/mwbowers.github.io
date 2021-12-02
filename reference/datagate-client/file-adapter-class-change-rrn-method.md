@@ -10,17 +10,6 @@ Updates the database file record specified by relative record number with the co
    long RRN
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub ChangeRRN( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html) _
-   ByVal RRN As Long _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ChangeRRN Access(*Public)
-   DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))
-   DclSrParm RRN Type(*Integer) Len(8)** 
-      </pre>
 
 ## Parameters
 

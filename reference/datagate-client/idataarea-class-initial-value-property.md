@@ -7,9 +7,6 @@ Sets the InitialValue in the data area.
 <pre>        <span class="lang">[C#]</span>
  **Public string InitialValue { set }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public WriteOnly Property InitialValue As String** 
-      </pre>
 
 ## Property Value
 

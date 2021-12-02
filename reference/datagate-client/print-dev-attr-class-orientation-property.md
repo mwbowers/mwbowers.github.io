@@ -7,12 +7,6 @@ The **Orientation** property specifies the landscape/portrait orientation of pap
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public PaperOrientation Orientation { get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Property Orientation As [PaperOrientation](paper-orientation-enumeration.html)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp Orientation Type(PaperOrientation) Access(*Public) <br />    BegGet,    BegSet** 
-      </pre>
 
 ## Property Value
 

@@ -11,19 +11,6 @@ Read a single record from the file in sequential order.
    LockRequest lr
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub ReadSequential( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html)  _
-   ByVal mode As [ReadSequentialMode](read-sequential-mode-enumeration.html) _
-   ByVal lr As [LockRequest](lock-request-enumeration.html)
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ReadSequential Access(*Public)
-   DclSrParm ds Type(AdgDataSet)
-   DclSrParm mode Type(ReadSequentialMode)
-   DclSrParm lr Type(LockRequest)** 
-      </pre>
 
 ## Parameters
 

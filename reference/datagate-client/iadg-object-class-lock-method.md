@@ -11,13 +11,6 @@ title: IAdgObject.Lock Method
    Short WaitTime
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub Lock(
-   ByVal ShareType As [ShareTypes](share-types-enumeration.html) _
-   ByVal WaitOption As [WaitOptions](wait-options-enumeration.html) _
-   ByVal WaitTime As short
-) As IAdgObject** 
-      </pre>
 
 ## Parameters
 

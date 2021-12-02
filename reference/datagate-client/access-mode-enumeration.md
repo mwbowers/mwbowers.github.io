@@ -78,39 +78,6 @@ The [AccessMode](file-adapter-class-access-mode-property.html) property of <span
   }
   dbFile.Close();
   db.Close();</pre>
-<pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  Dim db As New AdgConnection("*Public/DG NET Local")
-  Dim dbFile As New FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1")
-  ' We need to open this file For Read as well as as Delete
-  ' in order search For the key value. 
-  dbFile.AccessMode = AccessMode.Delete Or AccessMode.Read
-
-  Dim myDS As AdgDataSet = Nothing
-  Try
-      dbFile.OpenNewAdgDataSet(myDS)
-  Catch dgEx As dgException
-      MsgBox("Error opening file! " + dgEx.Message, "Error")
-      'Exit procedure or end application here.
-  End Try
-
-  ' We retrieve the record For customer number 82900 and delete it! 
-  Dim keyTbl As AdgKeyTable = myDS.NewKeyTable("RCMMASTL1")
-  keyTbl.Row.Item("CMCUSTNO") = 82900
-  Try
-      dbFile.DeleteKey(keyTbl)
-  Catch dgEx As dgException
-      ' We catch the dgException only if it was caused by
-      ' the key value not being found.
-      If dgEx.Error &lt;&gt; dgErrorNumber.dgEaNOTFND Then
-          Throw dgEx
-      End If
-  End Try
-
-  dbFile.Close()
-  db.Close()</pre>
 
 ## Requirements
 

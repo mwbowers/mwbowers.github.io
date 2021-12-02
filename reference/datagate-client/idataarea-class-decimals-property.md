@@ -7,9 +7,6 @@ Gets or sets the number of decimals in the data area.
 <pre>        <span class="lang">[C#]</span>
  **Public integer Decimals { set; get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property Decimals As Integer** 
-      </pre>
 
 ## Property Value
 

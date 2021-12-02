@@ -7,9 +7,6 @@ title: IAdgObject.Dependents Property
 <pre>        <span class="lang">[C#]</span>
  **Public [Dependent](dependent-class.html)[] Dependents { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property Dependents As [Dependent](dependent-class.html)** 
-      </pre>
 
 Property Value <p> [Dependent](dependent-class.html) array. Read-only. The **Length** of the array is equal to the number of dependent objects. 
 ## Exceptions

@@ -7,9 +7,6 @@ The **Rename** method renames an object without changing its location in the dat
 <pre>        <span class="lang">[C#]</span>
  **Public void IAdgObject Rename(<br />   string NewName<br />);** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub Rename(_<br />   ByVal NewName As string<br />) As IAdgObject** 
-      </pre>
 
 ## Parameters
 

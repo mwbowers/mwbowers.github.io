@@ -7,13 +7,6 @@ The **Collate** property indicates the output produced by capable printers shoul
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public bool Collate { get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Property Collate As Boolean** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp Collate Access(*Public) Type(*Boolean)
-   BegGet,   BegSet** 
-      </pre>
 
 ## Property Value
 

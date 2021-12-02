@@ -11,19 +11,6 @@ Constructs an instance of the [ FileAdapter](file-adapter-class.html) object wit
    string MemberName
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal cn As AdgConnection _
-   ByVal FileName As String _
-   ByVal MemberName As String
-)** 
-      </pre>
-<pre class="prettyprint"><code class="avr">        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)
-   DclSrParm cn Type(AdgConnection)
-   DclSrParm FileName Type(*String)
-   DclSrParm MemberName Type(*String)** 
-     </code> </pre>
 
 ## Parameters
 

@@ -7,12 +7,6 @@ title: XmlInfoEventType Enumeration
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum XmlInfoEventType;** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Enum XmlInfoEventType** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegEnum XmlInfoEventType Access(*Public)** 
-      </pre>
 
 ## Remarks
 

@@ -7,12 +7,6 @@ title: PrintDevAttr()
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public PrintDevAttr()** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Sub New()** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegConstructor Access(*Public)** 
-      </pre>
 
 ## Property Value
 

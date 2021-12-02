@@ -9,15 +9,6 @@ Deletes the current record specified by relative record number.
    long RRN
 );** 
       </pre>
-<pre class="prettyprint">      <span class="lang">[Visual Basic] </span>
- **Public Sub DeleteRRN( _
-   ByVal RRN As Long _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr DeleteRRN Access(*Public)
-   DclSrParm RRN Type(*Integer) Len(4)** 
-      </pre>
 
 ## Parameters
 

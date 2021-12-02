@@ -13,23 +13,6 @@ Open a database file for access using the specified query and the specified [Adg
    KeyUsages[] KeyFlags
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub OpenSimpleQuery( _
-   ByRef Ds As [AdgDataSet](adg-dataset-class.html) _
-   ByVal QueryFile As String _
-   ByVal Query As String _
-   ByVal KeyNames As String() _
-   ByVal KeyFlags As [ASNA.DataGate.Common.KeyUsages](key-usages-enumeration.html)() _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr OpenSimpleQuery Access(*Public)
-   DclSrParm Ds Type(AdgDataSet) By(*reference)
-   DclSrParm QueryFile Type(*String)
-   DclSrParm Query Type(*String)
-   DclSrParm KeyNames Type(*String) Rank(1)
-   DclSrParm KeyFlags Type(KeyUsages) Rank(1)** 
-      </pre>
 
 ## Parameters
 

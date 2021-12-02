@@ -12,21 +12,6 @@ Read the database file record specified.
    long RRN
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub ReadRandomRRN( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html)  _
-   ByVal mode As [ReadRandomMode](read-random-mode-enumeration.html) _
-   ByVal lr As [LockRequest](lock-request-enumeration.html) _
-   ByVal RRN As Long
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ReadRandomKey Access(*Public)
-   DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))
-   DclSrParm mode Type([ReadRandomMode](read-random-mode-enumeration.html))
-   DclSrParm lr Type(L[LockRequest](lock-request-enumeration.html))
-   DclSrParm RRN Type(*Integer) Len(8)** 
-      </pre>
 
 ## Parameters
 

@@ -7,13 +7,6 @@ The **Message** field contains the text of a status report of an XML operation.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public string Message** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Shared Property Message As string** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp Message Type(*string) Access(*Public) Shared(*Yes)<br />**    
-
-         </pre>
 
 ## Field
 Value

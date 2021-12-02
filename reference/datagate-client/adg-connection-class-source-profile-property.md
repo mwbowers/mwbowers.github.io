@@ -28,14 +28,6 @@ Note that changing the value of this property, or changing the object referenced
   Cx = new AdgConnection("*Public/DG NET IBM i");
   MessageBox.Show("The database name \"*Public/DG NET IBM i\" refers to a connection to "
            + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString());</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  Dclfld Name(Cx) Type(AdgConnection)
-  Cx = *New AdgConnection("*Public/DG NET IBM i")
-  MsgBox 'The database name "*Public/DG NET IBM i" refers to a connection to ' +
-           + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString()</pre>
 
 ## Requirements
 

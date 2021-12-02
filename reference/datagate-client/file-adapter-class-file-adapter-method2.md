@@ -9,11 +9,6 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object usin
    AdgConnection cn
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub New( _
-   ByVal cn As AdgConnection _
-)** 
-      </pre>
 
 ## Parameters
 

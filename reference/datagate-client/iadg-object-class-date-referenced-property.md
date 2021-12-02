@@ -7,9 +7,6 @@ title: IAdgObject.DateReferenced Property
 <pre>        <span class="lang">[C#]</span>
  **Public System.DateTime DateReferenced { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property DateReferenced As System.DateTime** 
-      </pre>
 
 Property Value <p> **System.DateTime** . Read only. If **IAdgObject** was obtained via [IDirectory.Enumerate](idirectory-class-enumerate-method.html), the time the object was most recently referenced. 
 ## Remarks

@@ -7,12 +7,6 @@ The **AdgSubTypes** enumerated constant defines values for the [IAdgObject.AdgSu
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum AdgSubTypes;** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Enum AdgSubTypes** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegEnum AdgSubTypes Access(*Public)** 
-      </pre>
 
 ## Remarks
 

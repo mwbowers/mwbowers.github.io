@@ -7,9 +7,6 @@ Releases managed resources and performs other cleanup operations.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **protected override void Finalize();** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Overrides Sub Finalize()** 
-      </pre>
 
 ## Exceptions
 

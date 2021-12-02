@@ -7,9 +7,6 @@ title: IAdgObject.Text Property
 <pre>        <span class="lang">[C#]</span>
  **Public string Text { get; set; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property Text As String** 
-      </pre>
 
 ## Property Value
 

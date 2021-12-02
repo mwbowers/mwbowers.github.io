@@ -18,34 +18,6 @@ The following example in AVR <span>opens a database file</span> for "read" acces
   DbFile.OpenNewAdgDataSet( ref Ds );
   DbFile.ReadSequential (Ds, ReadSequentialMode.Next, LockRequest.Default);
   Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"]);</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic]</span>
-  Imports ASNA.DataGate.Client
-  Imports ASNA.DataGate.Common
-  ...
-  Dim Cx As AdgConnection
-  Dim DbFile As FileAdapter
-  Dim Ds As AdgDataSet
-  Cx = New AdgConnection("ASNA Local DB")
-  Cx.Open() 
-  DbFile = New FileAdapter(Cx,"/cmmaster","*first")
-  DbFile.OpenNewAdgDataSet( ByRef Ds )
-  DbFile.ReadSequential(Ds, ReadSequentialMode.Next, LockRequest.Default)
-  Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"])</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
-  Using ASNA.DataGate.Client
-  Using ASNA.DataGate.Common
-  ...
-  Dclfld Name(Cx) Type(AdgConnection)
-  Dclfld Name(DbFile) Type FileAdapter
-  Dclfld Name(Ds) Type(AdgDataSet)
-  Cx = *New AdgConnection("ASNA Local DB")
-  Cx.Open()
-  DbFile = *New FileAdapter(Cx,"/cmmaster","*first")
-  DbFile.OpenNewAdgDataSet( *ByRef Ds )
-  DbFile.ReadSequential(Ds, ReadSequentialMode.Next, LockRequest.Default)
-  Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"])</pre>
 
 Upon the successful completion of the DbFile.[ReadSequential](file-adapter-class-read-sequential-method.html) method in this example, the database file cursor represented by DbFile will rest on the first record of the file. Also, the data contained in the first record is available via the <span> **AdgDataSet** </span> object referred to by the <span> *Ds* </span> variable. The most recent record read into **AdgDataSet** is accessible via its [ActiveRow ](adg-dataset-class-active-row-property.html) property. In the last line of the example, the value of a field in the record (CMCustNo) is referenced from the <span> **ActiveRow** </span> property and displayed in a message box.
 
@@ -69,36 +41,6 @@ The following example illustrates one procedure for **updating a file** .
   dbFile.ChangeCurrent(ds);
   dbFile.Close();
   cx.Close();</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic]</span>
-  Dim cx As AdgConnection
-  Dim dbFile As FileAdapter
-  Dim ds As AdgDataSet
-  cx = New AdgConnection("ASNA Local DB")
-  cx.Open()
-  dbFile = New FileAdapter(cx, "/cmmaster", "*first")
-  dbFile.AccessMode = AccessMode.Change + AccessMode.Read
-  dbFile.OpenNewAdgDataSet(ds)
-  dbFile.ReadSequential(ds, ReadSequentialMode.Next, LockRequest.Default)
-  ds.ActiveRow.Item("CMCustNo") = 101
-  dbFile.ChangeCurrent(ds)
-  dbFile.Close()
-  cx.Close()</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
-  Dclfld Name(Cx) Type(AdgConnection)
-  Dclfld Name(DbFile) Type(FileAdapter)
-  Dclfld Name(Ds) Type(AdgDataSet)
-  cx = *New AdgConnection("ASNA Local DB")
-  cx.Open()
-  dbFile = *New FileAdapter(cx, "/cmmaster", "*first")
-  dbFile.AccessMode = AccessMode.Change + AccessMode.Read
-  dbFile.OpenNewAdgDataSet(ds)
-  dbFile.ReadSequential(ds, ReadSequentialMode.Next, LockRequest.Default)
-  ds.ActiveRow.Item("CMCustNo") = 101
-  dbFile.ChangeCurrent(ds)
-  dbFile.Close()
-  cx.Close()</pre>
 
 This example simply opens and reads the first record as in the previous example, then sets the value of the CMCustNo field before calling the [ ChangeCurrent](file-adapter-class-change-current-method.html) method to send the change to the server. Note that we have set the [AccessMode](file-adapter-class-access-mode-property.html) property of the **FileAdapter** object prior to calling the [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method. This informs the server that records in the opened file are to be read and updated. If not set explicitly, the <span> **AccessMode** </span> property value is Read, for read-only access.
 
@@ -132,60 +74,6 @@ The following example illustrates an appropriate sequence for **adding a databas
   dbFile.AddRecord(ds);
   dbFile.Close();
   cx.Close();</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual Basic]</span>
-  Imports ASNA.DataGate.Client
-  Imports ASNA.DataGate.Common
-  ...
-  Dim cx As New AdgConnection("ASNA Local DB")
-  Dim dbFile As New FileAdapter(cx, "cmmaster", "*first")
-  Dim ds As AdgDataSet
-  cx.Open()
-  dbFile.AccessMode = AccessMode.RWCD
-  dbFile.OpenNewAdgDataSet(ds)
-  Dim newRow As DataRow
-  newRow = ds.PrepareRow(0)
-  newRow("CMCustNo") = 1
-  newRow("CMName") = "Important Co."
-  newRow("CMAddr1") = "1 Business Way"
-  newRow("CMAddr2") = ""
-  newRow("CMCity") = "Portland"
-  newRow("CMState") = "FL"
-  newRow("CMPostCode") = "21012"
-  newRow("CMActive") = "1"
-  newRow("CMFax") = 1232344567
-  newRow("CMPhone") = "(234) 456-6789"
-  ds.AddPreparedRowAndSetActive(0)
-  dbFile.AddRecord(ds)
-  dbFile.Close()
-  cx.Close()</pre>
-<pre class="prettyprint">
-        <span class="lang">[Visual RPG]</span>
-  Using ASNA.DataGate.Client
-  Using ASNA.DataGate.Common
-  ...
-  Dclfld Name(Cx) Type(AdgConnection&lt;)
-  Dclfld Name(DbFile) Type(FileAdapter)
-  Dclfld Name(Ds) Type(AdgDataSet)
-  Cx = *New AdgConnection("ASNA Local DB")
-  Cx.Open()
-  dbFile.AccessMode = AccessMode.RWCD
-  dbFile.OpenNewAdgDataSet(ds)
-  DCLFLD Name (newRow) Type(DataRow)
-  newRow = ds.PrepareRow(0)
-  newRow("CMCustNo") = 1newRow("CMName") = "Important Co."
-  newRow("CMAddr1") = "1 Business Way"
-  newRow("CMAddr2") = ""
-  newRow("CMCity") = "Portland"
-  newRow("CMState") = "FL";
-  newRow("CMPostCode") = "21012"
-  newRow("CMActive") = "1"
-  newRow("CMFax") = 1232344567
-  newRow("CMPhone") = "(234)456-6789"
-  ds.AddPreparedRowAndSetActive(0)
-  dbFile.AddRecord(ds)
-  dbFile.Close()
-  cx.Close()</pre>
 
 ## See Also
 

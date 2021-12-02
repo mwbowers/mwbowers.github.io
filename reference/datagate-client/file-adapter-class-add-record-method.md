@@ -9,11 +9,6 @@ Adds a record to a file.
 [AdgDataSet](adg-dataset-class.html) ds
 )** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub AddRecord( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html) _
-)** 
-      </pre>
 
 ## Parameters
 

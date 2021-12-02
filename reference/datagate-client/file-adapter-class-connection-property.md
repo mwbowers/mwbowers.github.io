@@ -7,12 +7,6 @@ The current **AdgConnection** associated with this **FileAdapter** .
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public AdgConnection Connection{ get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Property Connection As [AdgConnection](adg-connection-class.html)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp Connection Access(*Public) Type(AdgConnection)** 
-      </pre>
 
 ## Property Value
 

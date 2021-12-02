@@ -7,9 +7,6 @@ title: IAdgObject.AuthorityEntries Property
 <pre>        <span class="lang">[C#]</span>
  **Public AuthorityEntry[] AuthorityEntries { get; set; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property AuthorityEntries As [AuthorityEntry](authority-entry-class.html)()** 
-      </pre>
 
 ## Property Value
 

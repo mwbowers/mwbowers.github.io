@@ -7,9 +7,6 @@ Creates a new binary decimal [ FieldType](field-type-class.html).
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public static FieldType NewBinary(<br />  int prec,<br />  int scale<br />);** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Shared Function NewBinary( _<br />  ByVal prec As Integer, _<br />  ByVal scale As Integer _<br />) As [FieldType](field-type-class.html)** 
-      </pre>
 
 ## Parameters
 

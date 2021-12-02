@@ -10,12 +10,6 @@ Moves the record pointer associated with the currently open file without reading
    Long RRN
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub SeekRRN( _
-   ByVal mode As [SeekMode](seek-mode-enumeration.html) _
-   ByVal RRN As Long _
-)** 
-      </pre>
 <pre />
 
 ## Parameters

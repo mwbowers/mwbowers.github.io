@@ -12,11 +12,6 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler
 [XmlInfoEventHandler](xml-info-event-handler-delegate.html) hndlr
 );** 
             </pre>
-<pre> **<span class="lang">[Visual Basic] </span>
-Public Sub WriteXml(_<br />   ByVal writer As System.Xml.XmlWriter_<br />   ByVal options As [XmlOptions](xml-options-enumeration.html)_
-   ByVal hndlr As [XmlInfoEventHandler](xml-info-event-handler-delegate.html)
-) As IAdgObject** 
-      </pre>
 
 
 ## Parameters

@@ -11,13 +11,6 @@ Named SourceProfile optionally constructed from a registered database name. If c
    bool bDetectDuplicates
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub ToSourceProfile(_ 
-   ByVal dbName As String_
-   ByVal bFromSecStorage As Boolean
-   ByVal bDetectDuplicates
-) As SourceProfile** 
-      </pre>
 
 ## Parameters
 

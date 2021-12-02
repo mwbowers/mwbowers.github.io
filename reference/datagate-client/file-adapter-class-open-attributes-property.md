@@ -7,9 +7,6 @@ title: FileAdapter.OpenAttributes Property
 <pre>        <span class="lang">[C#]</span>
  **Public FileOpenAttr OpenAttributes { get; set; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property OpenAttributes As [FileOpenAttr](file-open-attr-class.html)** 
-      </pre>
 
 ## Property Value
 

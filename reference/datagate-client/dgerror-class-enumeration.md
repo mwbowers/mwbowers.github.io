@@ -7,12 +7,6 @@ Specifies the class, or category of the DG run-time error.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum dgErrorClass;** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Enum dgErrorClass** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegEnum dgErrorClass Access(*Public)** 
-      </pre>
 
 ## Remarks
 

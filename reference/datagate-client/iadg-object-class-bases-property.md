@@ -7,9 +7,6 @@ title: IAdgObject.Bases Property
 <pre>        <span class="lang">[C#]</span>
  **public string[] Bases { get; set; }** 
  **** </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property Bases As string()** 
-      </pre>
 
 ## Property Value
 

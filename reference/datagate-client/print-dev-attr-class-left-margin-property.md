@@ -7,13 +7,6 @@ The **LeftMargin** returns or sets the left margin of the output by the specifie
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int LeftMargin { get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Property LeftMargin As Integer** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp LeftMargin Access(*Public) Type(*Integer) Len(4)
-   BegGet,    BegSet** 
-      </pre>
 
 ## Property Value
 

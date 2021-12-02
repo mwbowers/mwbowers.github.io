@@ -26,18 +26,6 @@ Note that you must explicitly call either the <span> **Close** </span> or [Dispo
         </span>
   //Disconnects from the dataBase by closing the connection.
   adg.Close();</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-  'Disonnects from the dataBase by closing the connection.
-  adg.Close()</pre>
-<pre class="prettyprint">
-        <span class="lang">
- **[Visual RPG]** 
-        </span>
-  //Disconnects from the dataBase by closing the connection.
-  adg.Close()</pre>
 
 ## Requirements
 

@@ -7,9 +7,6 @@ Defines modes on how a file will be locked; either automatically or manually.
 <pre>        <span class="lang">[C#]</span>
  **public enum FileLocks;** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Enum FileLocks** 
-      </pre>
 
 ## Remarks
 

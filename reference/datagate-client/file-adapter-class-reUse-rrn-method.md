@@ -10,17 +10,6 @@ Change the status of a deleted record to undeleted and update its contents.
    long RRN
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub ReuseRRN( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html) _
-   ByVal RRN As Long _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ReuseRRN Access(*Public)
-   DclSrParm ds Type(AdgDataSet)
-   DclSrParm RRN Type(*Integer) Len(8)** 
-      </pre>
 
 ## Parameters
 

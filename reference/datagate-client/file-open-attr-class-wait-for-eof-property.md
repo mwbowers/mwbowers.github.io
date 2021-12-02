@@ -4,9 +4,6 @@ title: FileOpenAttr.WaitForEOF Property
 ---
 
 Time, in seconds, that a process will wait for more records at end of file. 
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp WaitForEOF Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
 
 ## Property
  Value

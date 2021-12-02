@@ -10,8 +10,6 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
    System.Xml.XmlWriter writer ,<br />    [XmlOptions](xml-options-enumeration.html) options
 );** 
 </pre>
-<pre> **<span class="lang">[Visual Basic] </span>
- Public Sub WriteXml(_<br />   ByVal writer As System.Xml.XmlWriter_<br />   ByVal options As [XmlOptions](xml-options-enumeration.html)<br /> ) As IAdgObject**     </pre>
 
 
 ## Parameters

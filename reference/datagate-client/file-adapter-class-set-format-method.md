@@ -9,11 +9,6 @@ For multiformat read access, calling this method causes the read methods to fetc
    string Format
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub SetFormat( _
-   ByVal Format As String _
-)** 
-      </pre>
 
 ## Parameters
 

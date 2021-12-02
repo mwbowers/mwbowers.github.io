@@ -7,9 +7,6 @@ Indicates the status of the file: open or closed.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public FileAdapter.AdapterStatus Status { get: }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Status As FileAdapter.AdapterStatus** 
-      </pre>
 
 ## Remarks
 

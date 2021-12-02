@@ -7,9 +7,6 @@ title: FileAdapter.Status Property
 <pre>        <span class="lang">[C#]</span>
  **public FileAdapter.AdapterStatus Status { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Status As [FileAdapter.AdapterStatus](file-adapter-adapter-status-enumeration.html)** 
-      </pre>
 
 ## Property Value
 

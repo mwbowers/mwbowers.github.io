@@ -7,9 +7,6 @@ The number of deleted and non-deleted records in the open database file.
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public long FileLength { get; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property FileLength As Long** 
-      </pre>
 
 ## Property Value
 

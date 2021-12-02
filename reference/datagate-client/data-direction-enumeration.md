@@ -69,42 +69,7 @@ decimal TimeOfDay;
   TimeOfDay = Convert.ToDecimal(prog.ParmToObject(System.Type.GetType("System.Decimal"), 
       "TimeOfDay", new int[]{}));
 </pre>
-        <span class="lang">
- **[Visual Basic]** 
-        </span>
-<pre class="prettyprint"><code class="language-vbnet">
-Dim ProdDB As New AdgConnection("*Public/DG NET IBM i")
-Dim Quit400App As Char = "1"
-Dim CustName As String
-Dim TimeOfDay As Decimal
 
-  ' We know that the first two parameters will be For
-  ' returning values, so we set their DataDirection
-  ' enumeration types to Output. The third value will
-  ' be sent in to tell the external program whether or not
-  ' to quit running, but will not return a value,
-  ' so we set its DataDirection type to Input. 
-Dim Parms As ProgParm()
-Parms = New ProgParm() { _
-  New ProgParm(New ProgParmType("CustName", 0, _
-      FieldType.NewChar(40)), DataDirection.Output), _
-  New ProgParm(New ProgParmType("TimeOfDay", 0, _
-      FieldType.NewPacked(6, 0)), ASNA.DataGate.Common.DataDirection.Output), _
-  New ProgParm(New ProgParmType("Quit400App", 0, _
-      FieldType.NewChar(1)), DataDirection.Input) _
-  }
-Dim prog As New As400Program(ProdDB, "*Libl/Call400")
-prog.AppendParms(Parms) 'Use our parm list defined above.
-'Here, we make sure our variables are passed as the parms in ther parm list.
-prog.ObjectToParm(Quit400App, "Quit400App", New Integer() {})
-'Now we execute the call to the As400Program, "Call400".
-prog.Execute()
-'Here, we get the values from the parm list and put them back into our variables.
-CustName = Convert.ToString(prog.ParmToObject(System.Type.GetType("System.String"), _
-    "CustName", New Integer() {}))
-TimeOfDay = Convert.ToDecimal(prog.ParmToObject(System.Type.GetType("System.Decimal"), _
-    "TimeOfDay", New Integer() {}))</code>
-</pre>
 
 ## Requirements
 

@@ -7,9 +7,6 @@ The connection to the database representing the transaction context.
 <pre>        <span class="lang">[C#]</span>
  **Public virtual AdgConnection Connection { get; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Overridable ReadOnly Property Connection<br />   As [AdgConnection](adg-connection-class.html)** 
-      </pre>
 
 ## Property Value
 

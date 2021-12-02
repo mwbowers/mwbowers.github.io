@@ -7,13 +7,6 @@ An integer containing the index for the record format of the record most recentl
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int CurrentFormatIndex { get; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public ReadOnly Property CurrentFormatIndex As Integer** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp CurrentFormatIndex Type(*Integer) Len(4)
-   BegGet** 
-      </pre>
 
 ## Property Value
 

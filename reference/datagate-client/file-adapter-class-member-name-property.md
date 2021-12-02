@@ -7,9 +7,6 @@ title: FileAdapter.MemberName Property
 <pre>        <span class="lang">[C#]</span>
  **Public string MemberName { get; set; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property MemberName As String** 
-      </pre>
 
 ## Property Value
 

@@ -7,12 +7,6 @@ The <span> **PasswordType** </span> enumerated constant defines values indicatin
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public enum PasswordType;** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **public Enum PasswordType** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegEnum PasswordType Access(*Public)** 
-      </pre>
 
 ## Remarks
 

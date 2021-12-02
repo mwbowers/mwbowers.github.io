@@ -11,12 +11,6 @@ title: DatabaseName.Serialize Method
    SourceProfile sp
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub Serialize(_ 
-   ByVal tag As String_ 
-   ByVal sp As [SourceProfile](source-profile-class.html)_
-) As String** 
-      </pre>
 
 ## Parameters
 

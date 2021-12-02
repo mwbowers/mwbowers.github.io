@@ -7,12 +7,6 @@ Time, in seconds, that a process will wait to access a file.
 <pre>        <span class="lang">[C#]</span>
  **Public int WaitForFile { get; set; }** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Property WaitForFile As Integer** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegProp WaitForFile Type(*Integer) Len(4) Access(*Public)<br />   BegGet, BegSet** 
-      </pre>
 
 ## Property Value
 

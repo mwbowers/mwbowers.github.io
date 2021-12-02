@@ -9,11 +9,6 @@ Gets the [IPrintProperties](iprint-properties-class.html) of the currently open 
    string format
 );** 
       </pre>
-<pre>       <span class="lang">[Visual Basic] </span>
- **Public Function GetPrintProperties( _
-   ByVal format As String _
-) As [IPrintProperties](iprint-properties-class.html)** 
-      </pre>
 
 ## Parameters
 

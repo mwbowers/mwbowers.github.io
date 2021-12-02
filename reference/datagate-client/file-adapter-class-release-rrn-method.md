@@ -10,17 +10,6 @@ Release the specified record.
    long RRN
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub ReleaseRRN( _
-   ByVal lr As [LockRequest](lock-request-enumeration.html) _
-   ByVal RRN As Long
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ReleaseRRN Access(*Public)
-   DclSrParm lr Type(LockRequest)
-   DclSrParm RRN Type(*Integer) Len(8)** 
-      </pre>
       <br />
 
 ## Parameters

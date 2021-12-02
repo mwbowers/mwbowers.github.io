@@ -7,12 +7,6 @@ The version number of the server that services the requests of its clients by fo
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public string ProxyVersion** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Property ProxyVersion As String** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **DclFld Name(ProxyVersion Type(*String) Access(*Public)** 
-      </pre>
 
 ## Field
  Value

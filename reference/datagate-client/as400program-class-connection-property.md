@@ -7,9 +7,6 @@ The **AdgConnection** object of the database server hosting the program to be ca
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public [AdgConnection](adg-connection-class.html) Connection { set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public WriteOnly Property Connection As [AdgConnection](adg-connection-class.html)** 
-      </pre>
 
 ## Property Value
 

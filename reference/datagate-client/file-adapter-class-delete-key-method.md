@@ -9,15 +9,6 @@ Deletes a database file record containing the specified key, if any.
 [AdgKeyTable](adg-key-table-class.html) keyTable
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub DeleteKey( _
-   ByVal keyTable As [AdgKeyTable](adg-key-table-class.html) _
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr DeleteKey Access(*Public)
-   DclSrParm keyTable Type([AdgKeyTable](adg-key-table-class.html))** 
-      </pre>
 
 ## Parameters
 

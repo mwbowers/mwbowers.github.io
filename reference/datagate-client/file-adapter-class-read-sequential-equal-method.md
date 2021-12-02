@@ -12,21 +12,6 @@ Read a database file record adjacent to the current position with a key equal to
    AdgKeyTable keyTable
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub ReadSequentialEqual( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html) _
-   ByVal mode As [ReadEqualMode](read-equal-mode-enumeration.html) _
-   ByVal lr As [LockRequest](lock-request-enumeration.html) _
-   ByVal keyTable As [AdgKeyTable](adg-key-table-class.html)
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ReadSequentialEqual Access(*Public)
-   DclSrParm ds Type(AdgDataSet)
-   DclSrParm mode Type(ReadEqualMode)
-   DclSrParm lr Type(LockRequest)
-   DclSrParm keyTable Type(AdgKeyTable)** 
-      </pre>
 
 ## Parameters
 

@@ -8,9 +8,10 @@ A DataGate-compatible DataSet class for record-oriented database access.
 For a list of all members of this type, see [AdgDataSet Members](adg-dataset-members.html).
 
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.<span>AdgDataSet</span>** 
-<pre class="syntax" />
 
-[Visual Basic] **Public MustInherit Class AdgDataSet Inherits System.Data.DataSet** 
+```
+public abstract class AdgDataSet : System.Data.DataSet 
+```
 ## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.

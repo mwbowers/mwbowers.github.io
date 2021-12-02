@@ -15,27 +15,6 @@ Read a database file record containing a key within a given range of values.
 [RangeLast](range-last-enumeration.html) rangeLast
 );** 
       </pre>
-<pre>        <span class="lang">[Visual Basic] </span>
- **Public Sub ReadRange( _
-   ByVal ds As [AdgDataSet](adg-dataset-class.html)  _
-   ByVal mode As [RangeMode](range-mode-enumeration.html) _
-   ByVal lr As [LockRequest](lock-request-enumeration.html) _
-   ByVal firstKey As [AdgKeyTable](adg-key-table-class.html) _
-   ByVal rangeFirst As [RangeFirst](range-first-enumeration.html) _
-   ByVal lastKey As [AdgKeyTable](adg-key-table-class.html) _
-   ByVal rangeLast As [RangeLast](range-last-enumeration.html)
-)** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **BegSr ReadRange Access(*Public)
-   DclSrParm ds Type([AdgDataSet](adg-dataset-class.html))
-   DclSrParm mode Type([RangeMode](range-mode-enumeration.html))
-   DclSrParm lr Type([LockRequest](lock-request-enumeration.html))
-   DclSrParm firstKey Type([AdgKeyTable](adg-key-table-class.html))
-   DclSrParm rangeFirst Type([RangeFirst](range-first-enumeration.html))
-   DclSrParm lastKey Type([AdgKeyTable](adg-key-table-class.html))
-   DclSrParm rangeLast Type([RangeLast](range-last-enumeration.html))** 
-      </pre>
 
 ## Parameters
 

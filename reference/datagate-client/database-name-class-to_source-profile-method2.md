@@ -10,12 +10,6 @@ Converts the named database into a SourceProfile object.
    bool bFromRegistry
 );** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Sub ToSourceProfile(_ 
-   ByVal dbName As String_
-   ByVal bFromRegistry As Boolean
-) As SourceProfile** 
-      </pre>
 
 ## Parameters
 

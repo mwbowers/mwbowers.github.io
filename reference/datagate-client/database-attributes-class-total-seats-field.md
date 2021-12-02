@@ -7,12 +7,6 @@ The total number of 'seats' for the database. Licensing counts all application r
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **public int TotalSeats** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic] </span>
- **Public Property TotalSeats As Integer** 
-      </pre>
-<pre class="prettyprint">        <span class="lang">[Visual RPG]</span>
- **DclFld Name(TotalSeats) Type(*Integer) Access(*Public)** 
-      </pre>
 
 ## Field
  Value

@@ -7,9 +7,6 @@ The set of binary format identifiers associated with the set of formats availabl
 <pre class="prettyprint">        <span class="lang">[C#]</span>
  **Public byte[][] FormatIDs { get; set; }** 
       </pre>
-<pre class="prettyprint">        <span class="lang">[Visual Basic]</span>
- **Public Property FormatIDs As Byte()()** 
-      </pre>
 
 ## Property Value
 
