@@ -4,8 +4,10 @@ title: FileAdapter.ResetFormat Method
 ---
 
 For multi-format file access, reset the file to access a record of any format in subsequent operations (see [SetFormat](file-adapter-class-set-format-method.html)).
-<pre>[C#]
- **public void ResetFormat();** </pre>
+```cs
+    public void ResetFormat();
+```
+
       <br />
 
 ## Exceptions

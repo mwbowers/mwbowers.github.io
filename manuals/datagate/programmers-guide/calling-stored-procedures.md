@@ -27,10 +27,12 @@ Before calling a program with DG you must provide the following information:
 
 #### Database Connection:
 The database server is identified and connected with an object of the AdgConnection class. Very often you will use a predefined "database name" in the Open method of AdgConnection to connect to the database.
-<pre>[C#]
+```cs
   AdgConnection cn;
   Cn = new AdgConnection();
-  cn.Open("MyAs400");</pre>
+  cn.Open("MyAs400");
+```
+
 
 The above code will open a database connection to the IBM i server named "MyAs400". See the DataGate Studio documentation for a discussion of database names.
 
@@ -57,13 +59,15 @@ In the ProgramCallSimple example, the IBM i program being called is a one-parame
   ENDPGM</pre>
 
 This program expects to receive an input parameter of type packed decimal (precision 7, scale 2). The program adds the value 1 to the parameter before returning to the caller. In ProgramCallSimple, you will find the following code which accomplishes this.
-<pre>[C#]
+```cs
   ProgParmType parmType;
   parmType = new ProgParmType( "Parm1", 0, FieldType.NewPacked(7,2) );
   ProgParm countParm;
   countParm = new ProgParm( parmType, DataDirection.InputOutput );
   ...
-  prog.AppendParm(countParm);</pre>
+  prog.AppendParm(countParm);
+```
+
 
 ProgParmType object parmType is constructed with three parameters.
 
@@ -135,7 +139,7 @@ This code defines two program parameters, TestDS and OccurRes.
 This very simple test program merely examines the second element of the array, determines if the Test2 member of this element contains an expected value (‘2Fld2’), and returns ‘ok’ or ‘bad’ in OccurRes depending upon the result.
 
 You can construct a parameter list for calling this program using the previously shown procedural method. In the ProgramCallComplex project, the TestDS parameter is formed using the StructureType class. StructureType is similar to ProgParmType, in that it is used to construct a ProgParm instance. StructureType is constructed with an array of objects. The objects must be of type ProgParmType (for simple types) or StructureType (for embedded structures). The following code from ProgramCallComplex illustrates the creation of the TestDS parameter.
-<pre>[C#]
+```cs
   // Create "TestDS" structure definition (3 members)
   object[] structMbrs = new object[3];
   structMbrs[0] = new ProgParmType("Test1", 0, FieldType.NewZoned(5, 1));
@@ -143,7 +147,9 @@ You can construct a parameter list for calling this program using the previously
   structMbrs[2] = new ProgParmType("Test3", 0, FieldType.NewPacked(11, 2));
   // Add multiple-occurrence (array) definition "TestDS" to parameter list
   StructureType structType = new StructureType("TestDS", 5, structMbrs);
-  parmList[0] = new ProgParm(structType, DataDirection.Input);</pre>
+  parmList[0] = new ProgParm(structType, DataDirection.Input);
+```
+
 
 The first four statements construct the array of objects describing the members of the structure (Test1, Test2, and Test3).
 
@@ -152,10 +158,12 @@ In the next section, the structMbrs array is passed to the StructureType constru
 The last statement creates a ProgParm object containing the structure definition and defines it as an "input only" parameter.
 
 After constructing the parameter list the ProgramCallComplex program initializes the TestDS input parameter data as follows.
-<pre>[C#]
+```cs
   int[] secondElemRef = new int[]{1};
   prog.ObjectToParm( "2Fld2", "TestDS.Test2",
-    secondElemRef );</pre>
+    secondElemRef );
+```
+
 
 Since the called program is only interested in a particular member of a data structure (Test2) and that data structure is in a particular element of the array (second element), the above code only sets the data for that element. Note that DG chooses reasonable default "zero" values for parameter values that are not set explicitly. However, the programmer should not rely on default values to supply data used by a called program. 
 
