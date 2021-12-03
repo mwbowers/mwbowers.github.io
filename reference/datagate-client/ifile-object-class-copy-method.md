@@ -6,7 +6,7 @@ title: IFileObject.Copy Method
 **Copy** creates a copy of the database file represented by **IFileObject** with the name and location specified.
 
 ```cs
- public IFileObject Copy(<br />   string targetDir ,<br />   string newName ,<br />);
+ public IFileObject Copy( string targetDir , string newName , );
 ```
 
 

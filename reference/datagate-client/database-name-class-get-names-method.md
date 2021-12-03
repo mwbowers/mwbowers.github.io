@@ -6,7 +6,7 @@ title: DatabaseName.GetNames Method
 Returns the currently registered database names available for use in a program.
 
 ```cs
- public static string[] GetNames(<br />   bool publicDbs<br />);
+ public static string[] GetNames( bool publicDbs );
 ```
 
 

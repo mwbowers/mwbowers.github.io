@@ -9,7 +9,7 @@ Replaced by [DatabaseName.ToSourceProfile(String, Bool)](database-name-class-to_
 Constructs an instance of [SourceProfile](source-profile-class.html) that is an exact copy of the given SourceProfile, with the exception of the [DatabaseName](source-profile-class-database-name-property.html) property.
 
 ```cs
- public SourceProfile(<br />   string NewName,<br />   SourceProfile sp<br />);
+ public SourceProfile( string NewName, SourceProfile sp );
 ```
 
 

@@ -6,7 +6,7 @@ title: ILibraryList.EnumerateCurrentUser Method
 **EnumerateCurrentUser** enumerates the object contents of the user portion of the library list represented by **ILibraryList** , with the supplied [AdgEnumerator](adg-enumerator-delegate.html) delegate.
 
 ```cs
- public void EnumerateCurrentUser(_<br />AdgEnumerator enumerator <br />);
+ public void EnumerateCurrentUser(_ AdgEnumerator enumerator  );
 ```
 
 

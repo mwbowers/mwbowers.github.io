@@ -7,7 +7,7 @@ Insert a row into the Dataset table for a particular format and relative record 
 
 ```cs
  public void InsertRow(
-   int iFormat,<br />   int rrn
+   int iFormat, int rrn
 );
 ```
 

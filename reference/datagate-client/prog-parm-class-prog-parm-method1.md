@@ -6,7 +6,7 @@ title: ProgParm(ProgParmType, DataDirection)
 Construct a representation of a simple iSeries program parameter.
 
 ```cs
- public ProgParm(<br />   ProgParmType ppt,<br />   DataDirection dir<br />)
+ public ProgParm( ProgParmType ppt, DataDirection dir )
 ```
 
 

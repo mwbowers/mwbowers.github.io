@@ -6,7 +6,7 @@ title: StructureType.StructureType(string, integer, object)
 Define the data types of a structured iSeries program parameter. 
 
 ```cs
- public StructureType(<br />   string name,<br />   int cElems,<br />   object[] mbrs<br />)
+ public StructureType( string name, int cElems, object[] mbrs )
 ```
 
 

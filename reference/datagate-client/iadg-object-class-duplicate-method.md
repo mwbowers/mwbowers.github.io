@@ -6,7 +6,7 @@ title: IAdgObject.Duplicate Method
 **Duplicate** creates a duplicate of the database object represented by **IAdgObject** with parameters for specifying the location and name of the duplicated object.
 
 ```cs
- public void IAdgObject Duplicate(<br />   string ScopePath ,<br />   string TargetPath ,<br />   string NewName ,<br />DuplicateOptions options<br />);
+ public void IAdgObject Duplicate( string ScopePath , string TargetPath , string NewName , DuplicateOptions options );
 ```
 
 ## Parameters

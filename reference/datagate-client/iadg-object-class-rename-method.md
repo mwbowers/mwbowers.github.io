@@ -6,7 +6,7 @@ title: IAdgObject.Rename Method
 The **Rename** method renames an object without changing its location in the database.
 
 ```cs
- public void IAdgObject Rename(<br />   string NewName<br />);
+ public void IAdgObject Rename( string NewName );
 ```
 
 ## Parameters

@@ -6,7 +6,7 @@ title: IDirectory.RepairObjects Method
 **RepairObjects** method repairs database files contained by the library, as specified by [ RepairOptions](repair-options-enumeration.html).
 
 ```cs
- public void IDirectory RepairObjects(<br />   RepairOptions repairOptions ,<br />   AdgObserver observer<br />);
+ public void IDirectory RepairObjects( RepairOptions repairOptions , AdgObserver observer );
 ```
 
 

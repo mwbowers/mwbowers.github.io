@@ -6,7 +6,7 @@ title: ProgParm(StructureType, DataDirection)
 Construct a representation of a complex iSeries program parameter.
 
 ```cs
- public ProgParm(<br />   StructureType st,<br />   DataDirection dir<br />)
+ public ProgParm( StructureType st, DataDirection dir )
 ```
 
 

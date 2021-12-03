@@ -6,7 +6,7 @@ title: FieldType.NewChar Method
 Creates a new fixed-width character [ FieldType](field-type-class.html).
 
 ```cs
- public static FieldType NewChar(<br />  int length<br />);
+ public static FieldType NewChar( int length );
 ```
 
 ## Parameters

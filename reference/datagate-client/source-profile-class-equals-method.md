@@ -6,7 +6,7 @@ title: SourceProfile.Equals Method
 Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-source-profile-property.html) objects being compared refer to the same object. 
 
 ```cs
- public override bool Equals(<br />   object obj<br />);
+ public override bool Equals( object obj );
 ```
 
 

@@ -50,9 +50,11 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
    * and CustName, TimeOfDay, and Quit400App are valid
    * string, decimal, and char types respectively. */
   ProgParm[] Parms = new ProgParm[3];
-  Parms[0] = new ProgParm(<br />     new ProgParmType("CustName", 0, FieldType.NewChar(40)),
-  DataDirection.Output);<br />    Parms[1] = new ProgParm(<br />        new ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)),
-  DataDirection.Output);<br />    Parms[2] = new ProgParm(<br />        new ProgParmType("Quit400App", 0, FieldType.NewChar(1)),
+  Parms[0] = new ProgParm( new ProgParmType("CustName", 0, FieldType.NewChar(40)),
+  DataDirection.Output);
+  Parms[1] = new ProgParm( new ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)),
+  DataDirection.Output);
+  Parms[2] = new ProgParm( new ProgParmType("Quit400App", 0, FieldType.NewChar(1)),
   DataDirection.Input);
    prog.AppendParms(Parms);
    prog.ObjectToParm(Parms[2], Quit400App, 0);
@@ -60,8 +62,8 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
   /* After calling the last two values in the parameter list
    * will have new values in it. To read them, we set our local
    * variables to the returned values in the parameters list. */
-  CustName = Convert.ToString(<br />      prog.ParmToObject(System.Type.GetType("System.String"),<br />      "CustName",<br />       0));
-  TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),<br />      "TimeOfDay",<br />      0));
+  CustName = Convert.ToString( prog.ParmToObject(System.Type.GetType("System.String"), "CustName", 0));
+  TimeOfDay = Convert.ToDecimal( prog.ParmToObject(System.Type.GetType("System.Decimal"), "TimeOfDay", 0));
 ```
 
 

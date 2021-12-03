@@ -6,7 +6,7 @@ title: IMember.Initialize Method
 Initialize a specific number of records in the database file member represented by **IMember** .
 
 ```cs
- public void Initialize(<br />    InitMemberOptions Options ,
+ public void Initialize( InitMemberOptions Options ,
    long Records
 );
 ```

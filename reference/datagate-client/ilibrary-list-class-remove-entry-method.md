@@ -6,8 +6,8 @@ title: ILibraryList.RemoveEntry Method
 **RemoveEntry** removes a library list entry from a database in the library represented by [ILibraryList](ilibrary-list-class.html).
 
 ```cs
- public void RemoveEntry(_
-   string path<br />);
+ public void RemoveEntry(
+   string path );
 ```
 
 

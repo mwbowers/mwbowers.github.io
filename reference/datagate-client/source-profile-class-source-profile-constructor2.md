@@ -9,7 +9,7 @@ Replaced by [DatabaseName.ToSourceProfile(String)](database-name-class-to_source
 Constructs an instance of [ SourceProfile](source-profile-class.html) setting connection-related property values with the specified registered database name.
 
 ```cs
- public SourceProfile(<br />   string dbName<br />);
+ public SourceProfile( string dbName );
 ```
 
 

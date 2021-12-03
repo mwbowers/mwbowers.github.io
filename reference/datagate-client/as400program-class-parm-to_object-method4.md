@@ -60,7 +60,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
         new ProgParmType("Quit400App", 0, FieldType.NewChar(1)), DataDirection.Input);
   prog.AppendParms(Parms);
   prog.ObjectToParm(Parms[2], Quit400App, 0);
-  prog.Execute();<br />
+  prog.Execute(); 
   /* After calling the last two values in the parameter list
    * will have new values in it.  To read them, we set our local
    * variables to the returned values in the parameters list. */
@@ -68,7 +68,7 @@ For the method to succeed, the type specified by *ReturnType* must have a valid 
       prog.ParmToObject(System.Type.GetType("System.String"),
       "CustName",
       0));
-  TimeOfDay = Convert.ToDecimal(<br />      prog.ParmToObject(System.Type.GetType("System.Decimal"),
+  TimeOfDay = Convert.ToDecimal( prog.ParmToObject(System.Type.GetType("System.Decimal"),
       "TimeOfDay",
        0));
 ```

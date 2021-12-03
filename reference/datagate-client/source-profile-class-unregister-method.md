@@ -9,7 +9,7 @@ Deprecated by [DatabaseName.Unregister](database-name-class-unregister-method.ht
 Deletes a registered database name from the system registry.
 
 ```cs
- public static void Unregister(<br />   string dbName<br />);
+ public static void Unregister( string dbName );
 ```
 
 

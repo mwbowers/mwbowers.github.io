@@ -6,7 +6,7 @@ title: FieldType.NewBinary Method
 Creates a new binary decimal [ FieldType](field-type-class.html).
 
 ```cs
- public static FieldType NewBinary(<br />  int prec,<br />  int scale<br />);
+ public static FieldType NewBinary( int prec, int scale );
 ```
 
 ## Parameters

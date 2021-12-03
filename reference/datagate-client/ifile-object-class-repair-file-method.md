@@ -6,7 +6,7 @@ title: IFileObject.RepairFile Method
 **RepairFile** repairs the database file represented by **IFileObject** as specified by [RepairOptions](repair-options-enumeration.html).
 
 ```cs
- public void RepairFile(<br />RepairOptions repairOptions,
+ public void RepairFile( RepairOptions repairOptions,
 AdgObserver observer
 );
 ```

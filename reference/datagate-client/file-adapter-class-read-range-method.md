@@ -167,7 +167,7 @@ Use the **ReadRange** method in conjunction with the [ DeleteRange](file-adapter
             EOF = true;
           else
           {
-<br />
+ 
             //Exit procedure or end application here.
           }
       }

@@ -6,7 +6,7 @@ title: SourceProfile(SourceProfile)
 Constructs an instance of [SourceProfile](source-profile-class.html) that is an exact copy of the given **SourceProfile** .
 
 ```cs
- public SourceProfile(<br />   SourceProfile sp<br />);
+ public SourceProfile( SourceProfile sp );
 ```
 
 

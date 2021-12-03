@@ -6,7 +6,7 @@ title: IDirectory.Enumerate Method
 **Enumerate** the object contents of the library represented by **IDirectory** , with the supplied [ AdgEnumerator](adg-enumerator-delegate.html) delegate.
 
 ```cs
- public void Enumerate(_<br />    AdgEnumerator enumerator <br />);
+ public void Enumerate(_ AdgEnumerator enumerator  );
 ```
 
 

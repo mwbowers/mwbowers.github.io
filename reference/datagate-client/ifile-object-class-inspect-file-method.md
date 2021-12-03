@@ -6,7 +6,7 @@ title: IFileObject.InspectFile Method
 InspectFile is reserved for internal use by DG and should not be invoked by user programs .
 
 ```cs
- public void InspectFile(<br />InspectFileParts parts,<br />InspectFileOutput output, <br />   out int ErrorCount,
+ public void InspectFile( InspectFileParts parts, InspectFileOutput output,  out int ErrorCount,
 AdgObserver observer
 );
 ```
