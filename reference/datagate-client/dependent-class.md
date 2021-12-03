@@ -4,10 +4,9 @@ title: Dependent Class
 ---
 
 <span> **Dependent** </span> names a database object, its type, and characterizes its dependent relationship to another database object. 
-<pre class="prettyprint">
-        <span class="lang">[Prototype in C#]</span>
- **<br /> public class DependentClass** 
-      </pre>
+```cs
+public class DependentClass
+```
 
 ## Thread Safety
 

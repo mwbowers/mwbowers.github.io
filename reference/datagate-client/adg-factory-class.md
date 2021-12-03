@@ -8,12 +8,9 @@ The **AdgFactory** class static methods construct instances of [ IAdgObject](iad
 For a list of all members of this type, see [AdgFactory Members](adg-factory-members.html).
 
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.AdgFactory** 
-<pre class="prettyprint">
-        <span class="lang">[Prototype in C#]</span>
-        <span>
- **public class AdgFactory | System.Object** 
-        </span>
-      </pre>
+```cs
+public class AdgFactory | System.Object
+```
 
 ## Thread Safety
 

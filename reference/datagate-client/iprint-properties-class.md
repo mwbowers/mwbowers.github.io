@@ -8,10 +8,9 @@ title: IPrintProperties Interface
 For a list of all members of this type, see [ IPrintProperties Members](iprint-properties-members.html).
 
 [ASNA.DataGate.Providers](datagate-providers-namespace.html) <br /> **ASNA.DataGate.Providers.IPrintProperties** 
-<pre class="syntax" >
-        <span class="lang">[Prototype in C#]</span>
- <span>public interface IPrintProperties :</span>
-      </pre>
+```cs
+public interface IPrintProperties 
+```
 
 ## Thread Safety
 

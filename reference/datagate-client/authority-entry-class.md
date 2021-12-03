@@ -3,12 +3,13 @@ title: AuthorityEntry Class
 
 ---
 
-The <span> **AuthorityEntry** </span> class describes a user or group authorization to a database object. For a list of all members, see [AuthorityEntry Members](authority-entry-members.html). 
+The **AuthorityEntry** class describes a user or group authorization to a database object. For a list of all members, see [AuthorityEntry Members](authority-entry-members.html). 
 
-[ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.<span>AuthorityEntry</span>** 
-<pre class="prettyprint">
-        <span class="lang">[Prototype in C#]</span>
-public class AuthorityEntry :</pre>
+[ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.AuthorityEntry** 
+
+```cs
+public class AuthorityEntry :
+```
 
 ## Thread Safety
 

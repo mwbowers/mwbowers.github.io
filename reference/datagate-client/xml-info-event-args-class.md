@@ -8,11 +8,9 @@ An **XmlInfoEventArgs** object contains the details of events reported by the [ 
 For a list of all members of this type, see [ XmlInfoEventArgs Members](xml-info-event-args-members.html).
 
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.<span>XmlInfoEventArgs</span>** 
-<pre class="syntax">
-        <span class="lang">[Prototype in C#]</span>
-        <span>
-public class XmlInfoEventArgs | inherits System.EventArgs</span>
-      </pre>
+```cs
+public class XmlInfoEventArgs | inherits System.EventArgs
+```
 
 ## Thread Safety
 

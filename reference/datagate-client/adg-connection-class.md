@@ -8,11 +8,10 @@ The <span> **AdgConnection** </span> class controls database connection resource
 For a list of all members of this type, see [AdgConnection Members](adg-connection-members.html).
 
 [ASNA.DataGate.Client](datagate-client-namespace.html) <br /> **ASNA.DataGate.Client.<span>AdgConnection</span>** 
-<pre class="prettyprint">
-        <span class="lang" style="FONT-SIZE: 90%">[Prototype in C#]</span>
-        <span>
-public class AdgConnection | System.ICloneable, System.IDisposable</span>
-      </pre>
+
+```cs
+public class AdgConnection | System.ICloneable, System.IDisposable
+```
 
 ## Thread Safety
 

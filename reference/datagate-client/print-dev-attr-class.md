@@ -8,8 +8,9 @@ The <span> **PrintDevAttr** </span> class is a representation of the device para
 For a list of all members of this type, see [PrintDevAttr Members](print-dev-attr-members.html).
 
 [ASNA.DataGate.Providers](datagate-providers-namespace.html) <br /> **ASNA.DataGate.Providers.<span>PrintDevAttr</span>** 
-<pre class="prettyprint">[Prototype in C#]
-  public class PrintDevAttr | System.Collections.Hashtable</pre>
+```cs
+public class PrintDevAttr | System.Collections.Hashtable
+```
 
 ## Thread Safety
 

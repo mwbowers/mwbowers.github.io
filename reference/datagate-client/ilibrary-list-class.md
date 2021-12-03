@@ -8,10 +8,9 @@ title: ILibraryList Interface
 [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>ILibraryList</span>** 
-<pre class="prettyprint">
-  [Prototype in C#] public interface ILibraryList</pre>
-<pre class="prettyprint"> [Prototype in
-  Visual RPG] BegInterface ILibraryList access (*public)</pre>
+```cs
+public interface ILibraryList
+```
 
 ## Thread Safety
 

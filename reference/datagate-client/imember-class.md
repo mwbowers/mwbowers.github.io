@@ -10,14 +10,11 @@ For a list of all members of this type, see <a href="dcsIMemberMembers.htm">IMem
 
 <a href="dcsDataGateClientNamespace.htm">ASNA.DataGate.Client</a>
         <br />
-<strong>ASNA.DataGate.Client.<span>IMember</span></strong>
+**ASNA.DataGate.Client.IMember**
 
-<pre class="prettyprint">[Prototype in C#]<br /><span>
-         public interface IMember | Inherits IAdgObject</span></pre>
-
-<pre class="prettyprint">[Prototype in AVR.NET]<br />
-            
-      BegInterface IMember access(public) implements(IAdgObject)</span></pre>
+```cs
+public interface IMember | Inherits IAdgObject
+```
 
 ### Thread Safety
 

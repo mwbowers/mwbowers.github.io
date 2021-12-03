@@ -38,14 +38,15 @@ The above code will open a database connection to the IBM i server named "MyAs40
 
 #### Path of Program:
 To name the path of a program you use the As400Program class, as in the following examples.
-<pre class="prettyprint">[C#]
+```cs
   As400Program prog;
-  Prog = new As400Program(cn, "*libl/myprog");</pre>
+  Prog = new As400Program(cn, "*libl/myprog");
+```
 
 ### Procedural Construction of Parameter Lists
 To procedurally describe the parameters and attach the description to the As400Program object, three classes in the ASNA.DataGate.Client.DataLink namespace are provided:
 
-- <a href="dcsProgParmClass.html) is the data instance of a ProgParmType or StructureType description in an As400Program object, and includes a description of how the data of the parameter will be marshalled across the client/server connection.
+- [ProgParmClass](prog-parm-class.html) is the data instance of a ProgParmType or StructureType description in an As400Program object, and includes a description of how the data of the parameter will be marshalled across the client/server connection.
 - [ProgParmType](prog-parm-type-class.html) describes scalar parameters of the traditional IBM i database types, such as "packed", "char", etc.
 - [StructureType](structure-type-class.html) describes complex types composed of combinations of scalars, arrays and embedded complex types.
 
@@ -81,8 +82,9 @@ The [AppendParm](as400program-class-append-parm-method.html) method of As400Prog
 
 ### Accessing Parameter Data
 For input parameters, you will want to set the data value of the parameter before calling the program. You may only do this after appending the parameter to the As400Program object as follows.
-<pre class="prettyprint">[C#]
-  prog.ObjectToParm(countParm, 7.73, 0 );</pre>
+```cs
+  prog.ObjectToParm(countParm, 7.73, 0 );
+```
 
 The ObjectToParm method of As400Program is used to convert an object or value type to a parameter list value.
 
@@ -91,16 +93,18 @@ The ObjectToParm method of As400Program is used to convert an object or value ty
 - The third parameter in the ObjectToParm method is a single-dimension array index. Since countParm is not an array, the index parameter is ignored. If count parm were an array, this index would specify which element of the array should be set to the specified value.
 
 After setting the input parameter values, the IBM i program may be invoked with the Execute method of As400Program, as below.
-<pre class="prettyprint">[C#]
-  prog.Execute();</pre>
+```cs
+  prog.Execute();
+```
 
 Execute sends all DataDirection.Input and DataDirection.InputOutput parameter values to the database server, and tells the server to invoke the program. Execute blocks, waiting for the result of the program call. When control returns to the database server from the called program, the server sends all DataDirection.Output and DataDirection.InputOutput parameter values to DG.
 
 Upon return from Execute, your DG program will want to extract the output parameter values from the parameter list. In the ProgramCallSimple example, there is only one output parameter that we are interested in and it is accessed with the As400Program class’ ParmToObject method as follows:
-<pre class="prettyprint">[C#]
+```cs
   decimal retVal;
   retVal = (decimal) prog.ParmToObject(countParm,);
-  typeof(decimal), 0);</pre>
+  typeof(decimal), 0);
+```
 
 ParmToObject returns an object or value type of a specific type. As with the value parameter of ObjectToParm, this return type may be arbitrary, but there are limits to the possible conversions available. Here, we expect ParmToObject to return a **System.Decimal** value.
 
@@ -123,13 +127,13 @@ ILE-RPG source code:
   C          parm         TestDs
   C          parm         OccurRes
   C    2     Occur   TestDS
-  C    Test2   Ifeq   '2Fld2'
-  C            movel  'ok'   OccurRes
-  C            else
-  C            movel  'bad'  OccurRes 3
-  C            Endif
-                       Return
-   </pre>
+  C  Test2   Ifeq   '2Fld2'
+  C          movel  'ok'   OccurRes
+  C          else
+  C          movel  'bad'  OccurRes 3
+  C          Endif
+  C          Return
+</pre>
 
 This code defines two program parameters, TestDS and OccurRes.
 

@@ -8,9 +8,9 @@ title: IDirectory Interface
 [ASNA.DataGate.Client](datagate-client-namespace.html) 
 
 ASNA.DataGate.Client.IAdgObject<br /> **ASNA.DataGate.Client.<span>IDirectory</span>** 
-<pre class="prettyprint">
-        <span class="lang">[Prototype in C#]<br /></span>                                <span> public interface IDirectory | Inherits IAdgObject</span>
-      </pre>
+```cs
+public interface IDirectory | Inherits IAdgObject
+```
 
 ## Thread Safety
 
