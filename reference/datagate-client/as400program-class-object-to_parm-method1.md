@@ -7,7 +7,7 @@ Converts an object or value type to a parameter list value.
 
 ```cs
  public void ObjectToParm(
-[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter,
+ASNA.DataGate.DataLink.ProgParm Parameter,
    object Value,
    int Element
 );

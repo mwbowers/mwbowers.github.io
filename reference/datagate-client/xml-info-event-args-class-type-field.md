@@ -6,7 +6,7 @@ title: XmlInfoEventArgs.Type Field
 The **Type** field denotes the type of event being reported.
 
 ```cs
- public [XmlInfoEventType](xml-info-event-type-enumeration.html) Type
+ public XmlInfoEventType Type
 ```
 
 ## Field Value

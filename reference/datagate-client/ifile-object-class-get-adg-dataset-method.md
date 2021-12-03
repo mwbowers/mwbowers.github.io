@@ -7,7 +7,7 @@ title: IFileObject.GetAdgDataSet Method
 
 ```cs
  public AdgDataSet GetAdgDataSet(
-[DataSetOptions](dataset-options-enumeration.html) opts
+DataSetOptions opts
 );
 ```
 

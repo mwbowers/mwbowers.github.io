@@ -6,7 +6,7 @@ title: Dependent.DependentType Property
 **DependentType** determines the relationship between a dependent database object and its' [ bases](iadg-object-class-bases-property.html). 
 
 ```cs
- public [DependentTypes](dependent-types-enumeration.html) DependentType { get; }
+ public DependentTypes DependentType { get; }
 ```
 
 

@@ -7,7 +7,7 @@ Deletes a database file record containing the specified key, if any.
 
 ```cs
  public void DeleteKey(
-[AdgKeyTable](adg-key-table-class.html) keyTable
+AdgKeyTable keyTable
 );
 ```
 

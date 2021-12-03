@@ -7,7 +7,7 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
 
 ```cs
  public void Open(
-[AdgDataSet](adg-dataset-class.html) ds
+AdgDataSet ds
 );
 ```
 

@@ -7,13 +7,13 @@ Read a database file record containing a key within a given range of values.
 
 ```cs
  public void ReadRange(
-[AdgDataSet](adg-dataset-class.html) ds,
-[RangeMode](range-mode-enumeration.html) mode,
-[LockRequest](lock-request-enumeration.html) lr,
-[AdgKeyTable](adg-key-table-class.html) firstKey,
-[RangeFirst](range-first-enumeration.html) rangeFirst,
-[AdgKeyTable](adg-key-table-class.html) lastKey,
-[RangeLast](range-last-enumeration.html) rangeLast
+AdgDataSet ds,
+RangeMode mode,
+LockRequest lr,
+AdgKeyTable firstKey,
+RangeFirst rangeFirst,
+AdgKeyTable lastKey,
+RangeLast rangeLast
 );
 ```
 

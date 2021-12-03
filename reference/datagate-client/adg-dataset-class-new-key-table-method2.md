@@ -8,7 +8,7 @@ y
 Create a key buffer for keyed access operations for the specified format index.
 
 ```cs
- public [AdgKeyTable](adg-key-table-class.html) NewKeyTable(
+ public AdgKeyTable NewKeyTable(
    integer iFormat
 );
 ```

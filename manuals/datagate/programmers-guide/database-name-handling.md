@@ -20,7 +20,7 @@ To discover the currently registered database names available for use in a progr
 
 ```cs 
      Console.WriteLine( "*Public Database Names:" );
-  Foreach Name(DbName) Collection([SourceProfile.GetNames](source-profile-class-get-names-method.html)(*True)) 
+  Foreach Name(DbName) Collection(SourceProfile.GetNames(*True)) 
 				Type(*String);
      Console.WriteLine( "  *Public\" + DbName );
   Endfor;

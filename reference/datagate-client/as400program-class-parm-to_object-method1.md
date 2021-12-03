@@ -7,7 +7,7 @@ Returns an object of a specific type from the program parameter list.
 
 ```cs
  public object ParmToObject(
-[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html) Parameter,
+ASNA.DataGate.DataLink.ProgParm Parameter,
    Type ReturnType,
    int Element
 );

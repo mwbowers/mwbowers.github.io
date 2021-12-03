@@ -7,9 +7,9 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 
 ```cs
  public static IAdgObject ReadXml(
-[AdgConnection](adg-connection-class.html) cn ,<br />   string containerPath ,
-[AdgObjectTypes](adg-object-types-enumeration.html) docObjectType ,    
-   System.Xml.XmlReader reader ,<br />[XmlOptions](xml-options-enumeration.html) options
+AdgConnection cn ,<br />   string containerPath ,
+AdgObjectTypes docObjectType ,    
+   System.Xml.XmlReader reader ,<br />XmlOptions options
 );
 ```
 

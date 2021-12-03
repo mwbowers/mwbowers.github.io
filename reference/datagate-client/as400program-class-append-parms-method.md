@@ -7,7 +7,7 @@ Appends an array of parameters to the parameter list for the program.
 
 ```cs
  public void AppendParms(
-[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html)[] Parameters
+ASNA.DataGate.DataLink.ProgParm[] Parameters
 );
 ```
 

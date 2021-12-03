@@ -6,7 +6,7 @@ title: As400Program.Parameters Property
 Contains the description and value of parameters as required by the called program.
 
 ```cs
- public [ProgParm](prog-parm-class.html)[] Parameters { get; }
+ public ProgParm[] Parameters { get; }
 ```
 
 

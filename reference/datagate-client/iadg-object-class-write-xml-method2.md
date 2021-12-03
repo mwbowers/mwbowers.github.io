@@ -7,8 +7,8 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler
 
 ```cs
  public static IAdgObject WriteXml(    
-   System.Xml.XmlWriter writer,<br />   [XmlOptions](xml-options-enumeration.html) options,
-[XmlInfoEventHandler](xml-info-event-handler-delegate.html) hndlr
+   System.Xml.XmlWriter writer,<br />   XmlOptions options,
+XmlInfoEventHandler hndlr
 );
 ```
 

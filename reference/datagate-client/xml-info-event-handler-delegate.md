@@ -7,7 +7,7 @@ This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgF
 
 ```cs
  public delegate XmlInfoEventHandler(
-   Object object,<br />[XmlInfoEventArgs](xml-info-event-args-class.html) args
+   Object object,<br />XmlInfoEventArgs args
 );
 ```
 

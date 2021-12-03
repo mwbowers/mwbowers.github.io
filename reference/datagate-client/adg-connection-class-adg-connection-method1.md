@@ -7,7 +7,7 @@ Constructs an [AdgConnection](adg-connection-class.html) instance from the initi
 
 ```cs
  public AdgConnection(
-[SourceProfile](source-profile-class.html) sp
+SourceProfile sp
 );
 ```
 

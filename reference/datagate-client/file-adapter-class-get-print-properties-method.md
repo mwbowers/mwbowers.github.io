@@ -6,7 +6,7 @@ title: FileAdapter.GetPrintProperties Method
 Gets the [IPrintProperties](iprint-properties-class.html) of the currently open file.
 
 ```cs
- public [IPrintProperties](iprint-properties-class.html) GetPrintProperties(
+ public IPrintProperties GetPrintProperties(
    string format
 );
 ```

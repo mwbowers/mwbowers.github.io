@@ -7,7 +7,7 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
 
 ```cs
  public static IAdgObject WriteXml(
-   System.Xml.XmlWriter writer ,<br />    [XmlOptions](xml-options-enumeration.html) options
+   System.Xml.XmlWriter writer ,<br />    XmlOptions options
 );
 ```
 

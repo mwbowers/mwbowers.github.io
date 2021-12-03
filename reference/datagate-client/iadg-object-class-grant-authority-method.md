@@ -8,7 +8,7 @@ title: IAdgObject.GrantAuthority Method
 ```cs
  public void IAdgObject GrantAuthority(
    string userName ,
-[AuthorityTypes](authority-types-enumeration.html) authorityType
+AuthorityTypes authorityType
 );
 ```
 

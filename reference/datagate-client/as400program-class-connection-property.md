@@ -6,7 +6,7 @@ title: As400Program.Connection Property
 The **AdgConnection** object of the database server hosting the program to be called. 
 
 ```cs
- public [AdgConnection](adg-connection-class.html) Connection { set; }
+ public AdgConnection Connection { set; }
 ```
 
 ## Property Value

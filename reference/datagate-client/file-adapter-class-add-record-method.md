@@ -7,7 +7,7 @@ Adds a record to a file.
 
 ```cs
  public void AddRecord(
-[AdgDataSet](adg-dataset-class.html) ds
+AdgDataSet ds
 )
 ```
 

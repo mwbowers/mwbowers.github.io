@@ -7,12 +7,12 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 
 ```cs
  public static IAdgObject ReadXml(
-[AdgConnection](adg-connection-class.html) cn ,
+AdgConnection cn ,
    string containerPath ,
-[AdgObjectTypes](adg-object-types-enumeration.html) docObjectType ,    
+AdgObjectTypes docObjectType ,    
    System.Xml.XmlReader reader ,
-[XmlOptions](xml-options-enumeration.html) options ,
-[XmlInfoEventHandler](xml-info-event-handler-delegate.html) observer
+XmlOptions options ,
+XmlInfoEventHandler observer
 );
 ```
 

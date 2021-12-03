@@ -7,9 +7,9 @@ The **NewDataArea** method creates a new instance of [IDataArea](idataarea-class
 
 ```cs
  public IDataArea NewDataArea(
-[AdgConnection](adg-connection-class.html) cn,
+AdgConnection cn,
    string PathName,
-[AdgSubTypes](adg-subtypes-enumeration.html) DataAreaType
+AdgSubTypes DataAreaType
 );
 ```
 

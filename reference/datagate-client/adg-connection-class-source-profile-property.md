@@ -6,7 +6,7 @@ title: AdgConnection.SourceProfile Property
 The [SourceProfile](source-profile-class.html) object describing the currently open database connection, or if the **AdgConnection** object is in the <span>Closed</span> state, the database connection to be opened when the [ Open](adg-connection-class-open-method.html) method is called.
 
 ```cs
- public [SourceProfile](source-profile-class.html) SourceProfile { get; }
+ public SourceProfile SourceProfile { get; }
 ```
 
 

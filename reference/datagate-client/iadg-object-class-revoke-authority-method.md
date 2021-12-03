@@ -8,7 +8,7 @@ title: IAdgObject.RevokeAuthority Method
 ```cs
  public void IAdgObject RevokeAuthority(
    string userName
-[AuthorityTypes](authority-types-enumeration.html) authorityType
+AuthorityTypes authorityType
 );
 ```
 

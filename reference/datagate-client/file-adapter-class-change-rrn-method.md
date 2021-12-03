@@ -7,7 +7,7 @@ Updates the database file record specified by relative record number with the co
 
 ```cs
  public void ChangeRRN(
-[AdgDataSet](adg-dataset-class.html) ds,
+AdgDataSet ds,
    long RRN
 );
 ```

@@ -8,7 +8,7 @@ title: AuthorityEntry(string,AuthorityTypes)
 ```cs
  public AuthorityEntry(
    string username
-[AuthorityTypes](authority-types-enumeration.html) authorityType
+AuthorityTypes authorityType
 );
 ```
 

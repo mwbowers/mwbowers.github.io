@@ -6,7 +6,7 @@ title: FileAdapter.AccessMode Property
 The declared mode of access enforced by the database when the file is open. 
 
 ```cs
- public [AccessMode](access-mode-enumeration.html) AccessMode { get; set; };
+ public AccessMode AccessMode { get; set; };
 ```
 
 ## Property Value

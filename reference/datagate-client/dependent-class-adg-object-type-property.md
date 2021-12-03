@@ -6,7 +6,7 @@ title: Dependent.AdgObjectType Property
 Gets a database object ([IAdgObject](iadg-object-class.html)) corresponding to this dependent object.
 
 ```cs
- public [AdgObjectTypes](adg-object-types-enumeration.html) AdgObjectType { get; }
+ public AdgObjectTypes AdgObjectType { get; }
 ```
 
 

@@ -7,7 +7,7 @@ The **NewDirectory** method creates a new instance of [IDirectory](idirectory-cl
 
 ```cs
  public IDirectory NewDirectory(
-[AdgConnection](adg-connection-class.html) cn
+AdgConnection cn
    string PathName
 );
 ```

@@ -7,8 +7,8 @@ title: IAdgObject.Lock Method
 
 ```cs
  public void IAdgObject Lock(
-[ShareTypes](share-types-enumeration.html) ShareType ,
-[WaitOptions](wait-options-enumeration.html) WaitOption ,
+ShareTypes ShareType ,
+WaitOptions WaitOption ,
    Short WaitTime
 );
 ```

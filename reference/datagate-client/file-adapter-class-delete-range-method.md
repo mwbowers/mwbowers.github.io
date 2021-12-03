@@ -7,10 +7,10 @@ Delete a set of database file records which contain key values in a given range.
 
 ```cs
  public void DeleteRange(
-[AdgKeyTable](adg-key-table-class.html) firstKey,
-[RangeFirst](range-first-enumeration.html) rangeFirst,
-[AdgKeyTable](adg-key-table-class.html) lastKey,
-[RangeLast](range-last-enumeration.html) rangeLast
+AdgKeyTable firstKey,
+RangeFirst rangeFirst,
+AdgKeyTable lastKey,
+RangeLast rangeLast
 );
 ```
 

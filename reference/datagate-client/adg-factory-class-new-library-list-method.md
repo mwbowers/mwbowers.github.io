@@ -7,7 +7,7 @@ The **NewLibraryList** method creates a new instance of [ ILibraryList](ilibrary
 
 ```cs
  public ILibraryList NewLibraryList(
-[AdgConnection](adg-connection-class.html) cn
+AdgConnection cn
 ```
 
 

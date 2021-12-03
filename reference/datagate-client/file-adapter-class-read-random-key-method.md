@@ -7,10 +7,10 @@ Read a database file record using the specified key.
 
 ```cs
  public void ReadRandomKey(
-[AdgDataSet](adg-dataset-class.html) ds,
-[ReadRandomMode](read-random-mode-enumeration.html) mode,
-[LockRequest](lock-request-enumeration.html) lr,
-[AdgKeyTable](adg-key-table-class.html) keyTable
+AdgDataSet ds,
+ReadRandomMode mode,
+LockRequest lr,
+AdgKeyTable keyTable
 );
 ```
 

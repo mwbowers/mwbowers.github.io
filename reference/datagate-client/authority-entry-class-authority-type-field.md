@@ -6,7 +6,7 @@ title: AuthorityEntry.AuthorityType Field
 **AuthorityType** defines the access capabilities and limitations for this authorization entry.
 
 ```cs
- public [AuthorityTypes](authority-types-enumeration.html) AuthorityType
+ public AuthorityTypes AuthorityType
 ```
 
 

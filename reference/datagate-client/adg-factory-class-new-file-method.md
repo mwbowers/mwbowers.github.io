@@ -7,7 +7,7 @@ The **NewFile** method creates a new instance of [IFileObject](ifile-object-clas
 
 ```cs
  public IFileObject NewFile(
-[AdgConnection](adg-connection-class.html) cn
+AdgConnection cn
    string PathName
 );
 ```

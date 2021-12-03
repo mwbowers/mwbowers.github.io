@@ -7,9 +7,9 @@ Read the database file record specified.
 
 ```cs
  public void ReadRandomRRN(
-[AdgDataSet](adg-dataset-class.html) ds,
-[ReadRandomMode](read-random-mode-enumeration.html) mode,
-[LockRequest](lock-request-enumeration.html) lr,
+AdgDataSet ds,
+ReadRandomMode mode,
+LockRequest lr,
    long RRN
 );
 ```

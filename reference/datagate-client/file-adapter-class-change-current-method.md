@@ -7,7 +7,7 @@ Updates the current database file record with the contents of the specified [ Ad
 
 ```cs
  public void ChangeCurrent(
-[AdgDataSet](adg-dataset-class.html) ds
+AdgDataSet ds
 };
 ```
 
