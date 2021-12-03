@@ -7,17 +7,17 @@ Compares two instances of <span>SourceProfile</span> for equality.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *x* 
-        </dt>
-        <dd>A SourceProfile object to compare. </dd>
-        <dt>
+
+: A SourceProfile object to compare. 
+
  *y* 
-        </dt>
-        <dd>A SourceProfile object to compare.
-							</dd>
-</dl>
+
+: A SourceProfile object to compare.
+							
+
 
 ## Return Value
 

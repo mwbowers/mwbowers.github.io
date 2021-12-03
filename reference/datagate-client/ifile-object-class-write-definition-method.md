@@ -14,16 +14,16 @@ title: IFileObject.WriteDefinition Method
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *writer* 
 <dl>
-        <dd>
+: 
 
 **System.Xml.XmlWriter** . The XML stream to which the file definition will be written.
-</dd>
+
 </dl>
 
 ## Returns

@@ -15,16 +15,16 @@ Converts an object or value type to a parameter list value.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Value* 
-        </dt>
-        <dd>The value to be set. </dd>
-        <dt>
+
+: The value to be set. 
+
  *ParameterName* 
-        </dt>
-        <dd>The program parameter object in the parameter list to set the value of.</dd>
-</dl>
+
+: The program parameter object in the parameter list to set the value of.
+
 
 ## Exceptions
 

@@ -16,29 +16,29 @@ title: AuthorityEntry(string, AuthorityTypes, boolean)
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *username* 
-        </dt>
-        <dd>
+
+: 
 
 **String** . The user to group profile name. See the [ UserName](authority-entry-class-username-field.html) field.
-</dd>
-        <dt>
+
+
  *authorityType* 
-        </dt>
-        <dd>
+
+: 
 
 [AuthorityTypes](authority-types-enumeration.html). A combination of the bit values of **AuthorityTypes** expresssing authorized capabilities.
-</dd>
-        <dt>
+
+
  *isGroupAccount* 
-        </dt>
-        <dd>
+
+: 
 
 **Boolean** . Set this to **False** if *username* is a single user profile, or **True** if *username* is a group profile. See **Username** .
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

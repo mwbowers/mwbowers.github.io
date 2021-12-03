@@ -12,14 +12,14 @@ title: IDirectory.AttachRemoteDirectory Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *remotePathName* 
-        </dt>
-        <dd>
+
+: 
 String. Specifies the full pathname of the directory to be attached to the library.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

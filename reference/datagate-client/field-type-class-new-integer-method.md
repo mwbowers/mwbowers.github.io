@@ -7,13 +7,13 @@ Creates a new integer [ FieldType](field-type-class.html).
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *length* 
-        </dt>
-        <dd>Integer.  The length of the field in bytes, either 2 or 4.
-					</dd>
-</dl>
+
+: Integer.  The length of the field in bytes, either 2 or 4.
+					
+
 
 ## Exceptions
 

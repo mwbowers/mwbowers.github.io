@@ -15,19 +15,19 @@ Moves the record pointer associated with the currently open file without reading
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *mode* 
-        </dt>
-        <dd>[ASNA.DataGate.Common.SeekMode](seek-mode-enumeration.html). 
+
+: [ASNA.DataGate.Common.SeekMode](seek-mode-enumeration.html). 
 						Specifies the manner in which the record is to be located, relative to the 
 						absolute positions in the file (First, Last) or relative to *RRN*  (Equal, 
-						Greater, SetGT, SetGE, SetLL). </dd>
-        <dt>
+						Greater, SetGT, SetGE, SetLL). 
+
  *RRN* 
-        </dt>
-        <dd>		The relative record number of the record to seek.</dd>
-</dl>
+
+: 		The relative record number of the record to seek.
+
 
 ## Exceptions
 

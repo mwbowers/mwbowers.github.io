@@ -12,25 +12,25 @@ Define the data types of a structured iSeries program parameter.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *name* 
-        </dt>
-        <dd>String.  Required name to identify the **StructureType**  
+
+: String.  Required name to identify the **StructureType**  
 						object in the [As400Program](as400program-class.html) parameter 
-						list. </dd>
-        <dt>
+						list. 
+
  *cElems* 
-        </dt>
-        <dd>Integer.  The number of elements in a single-dimension array.  If the [
-			ProgParmType](prog-parm-type-class.html) describes a scalar parameter type, specify 0. </dd>
-        <dt>
+
+: Integer.  The number of elements in a single-dimension array.  If the [
+			ProgParmType](prog-parm-type-class.html) describes a scalar parameter type, specify 0. 
+
  *mbrs* 
-        </dt>
-        <dd>Array of Objects.  An ordered list of members of the structure.  The 
+
+: Array of Objects.  An ordered list of members of the structure.  The 
 			elements may be instances of **ProgParmType**  and/or **StructureType** .
-									</dd>
-</dl>
+									
+
 
 ## Exceptions
 

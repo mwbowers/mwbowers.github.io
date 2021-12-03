@@ -7,13 +7,13 @@ Creates a new floating-point [ FieldType](field-type-class.html).
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *length* 
-        </dt>
-        <dd>Integer.  The length of the field in bytes, either 4 or 8.
-					</dd>
-</dl>
+
+: Integer.  The length of the field in bytes, either 4 or 8.
+					
+
 
 ## Exceptions
 

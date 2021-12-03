@@ -13,15 +13,15 @@ Appends a parameter to the parameter list for the program.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *Parameter* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span />
-          <span> An instance of **ASNA.DataGate.DataLink.ProgParm**  class that represents the program parameter to append. </span>  </dd>
-</dl>
+          <span> An instance of **ASNA.DataGate.DataLink.ProgParm**  class that represents the program parameter to append. </span>  
+
 
 ## Exceptions
 

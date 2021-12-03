@@ -14,14 +14,14 @@ Open a database file for access with the specified [AdgDataSet](adg-dataset-clas
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object **(AdgDataSet** ) with which a file will be 
+
+: The DataSet object **(AdgDataSet** ) with which a file will be 
 						opened.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

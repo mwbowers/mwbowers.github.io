@@ -19,46 +19,46 @@ Read a database file record containing a key within a given range of values.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>[AdgDataSet](adg-dataset-class.html). The DataSet object to 
-						which a single record will be added. </dd>
-        <dt>
+
+: [AdgDataSet](adg-dataset-class.html). The DataSet object to 
+						which a single record will be added. 
+
  *mode* 
-        </dt>
-        <dd>[RangeMode](range-mode-enumeration.html). Specifies the manner in 
+
+: [RangeMode](range-mode-enumeration.html). Specifies the manner in 
 								which the record is to be located using the specified keys. **RangeMode.First** 
 								reads the record using the *firstKey*  parameter, while **RangeMode.Last** 
-								reads the record using the *lastKey*  parameter. </dd>
-        <dt>
+								reads the record using the *lastKey*  parameter. 
+
  *lr* 
-        </dt>
-        <dd>[LockRequest](lock-request-enumeration.html). Specifies how the 
-										record read is to be locked. </dd>
-        <dt>
+
+: [LockRequest](lock-request-enumeration.html). Specifies how the 
+										record read is to be locked. 
+
  *firstKey* 
-        </dt>
-        <dd>An [AdgKeyTable](adg-key-table-class.html) instance specifying a 
-												key defining the lower limit of the range. </dd>
-        <dt>
+
+: An [AdgKeyTable](adg-key-table-class.html) instance specifying a 
+												key defining the lower limit of the range. 
+
  *rangeFirst* 
-        </dt>
-        <dd>[RangeFirst](range-first-enumeration.html). Specifies how the *firstKey* 
-														parameter is interpreted in determining the lower limit of the range. </dd>
-        <dt>
+
+: [RangeFirst](range-first-enumeration.html). Specifies how the *firstKey* 
+														parameter is interpreted in determining the lower limit of the range. 
+
  *lastKey* 
-        </dt>
-        <dd>An [AdgKeyTable](adg-key-table-class.html) instance specifying a key 
-																defining the upper limit of the range. </dd>
-        <dt>
+
+: An [AdgKeyTable](adg-key-table-class.html) instance specifying a key 
+																defining the upper limit of the range. 
+
  *rangeLast* 
-        </dt>
-        <dd>[RangeLast](range-last-enumeration.html). Specifies how the *lastKey* 
+
+: [RangeLast](range-last-enumeration.html). Specifies how the *lastKey* 
 				parameter is interpreted in determining the upper limit of the range.
-																	</dd>
-</dl>
+																	
+
 
 ## Exceptions
 

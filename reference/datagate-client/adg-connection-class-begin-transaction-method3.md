@@ -14,13 +14,13 @@ Begins a manual database transaction creating an instance of an [ IAdgTransactio
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Name* 
-        </dt>
-        <dd>A string naming the transaction.
-					</dd>
-</dl>
+
+: A string naming the transaction.
+					
+
 
 ## Return Value
 

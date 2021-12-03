@@ -16,29 +16,29 @@ Read the database file record specified.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>[AdgDataSet](adg-dataset-class.html). The DataSet object used 
-						to update the database file record. </dd>
-        <dt>
+
+: [AdgDataSet](adg-dataset-class.html). The DataSet object used 
+						to update the database file record. 
+
  *mode* 
-        </dt>
-        <dd>This parameter is reserved for future use.  It is recommended to use the 
+
+: This parameter is reserved for future use.  It is recommended to use the 
 								value [ReadRandomMode.Equal](read-random-mode-enumeration.html) for 
-								this parameter (see Remarks). </dd>
-        <dt>
+								this parameter (see Remarks). 
+
  *lr* 
-        </dt>
-        <dd>[LockRequest](lock-request-enumeration.html). Specifies how the 
-										record read is to be locked. </dd>
-        <dt>
+
+: [LockRequest](lock-request-enumeration.html). Specifies how the 
+										record read is to be locked. 
+
  *RRN*  
 											</dt>
-        <dd>Integer. The relative-record number.
-											</dd>
-</dl>
+: Integer. The relative-record number.
+											
+
 
 ## Exceptions
 

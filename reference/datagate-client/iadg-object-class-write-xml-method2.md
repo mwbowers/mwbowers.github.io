@@ -15,26 +15,26 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions, XmlInfoEventHandler
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *writer* 
-        </dt>
-        <dd>
+
+: 
 **System.Xml.XmlWriter** . A stream onto which the XML document fragment will be output.
-</dd>
-        <dt>
+
+
  *options* 
-        </dt>
-        <dd>
+
+: 
 [XmlOptions](xml-options-enumeration.html). A value used to specify the output options indicating how the output is to be written. Only certain values of the **XmlOptions** enumeration apply to **WriteXml** .
-</dd>
-        <dt>
+
+
  *hndlr* 
-        </dt>
-        <dd>
+
+: 
 [XmlInfoEventHandler](xml-info-event-handler-delegate.html). Delegate providing feedback in the form of text messges relating the progress of the operation. If no feedback is desired, specify null.
-</dd>
-</dl>
+
+
 
 ## Returns
 

@@ -8,16 +8,16 @@ Compares two instances of <span> **AdgConnection** </span> for equality.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *x* 
-        </dt>
-        <dd>An **AdgConnection**  object to compare. </dd>
-        <dt>
+
+: An **AdgConnection**  object to compare. 
+
  *y* 
-        </dt>
-        <dd>An **AdgConnection**  object to compare.</dd>
-</dl>
+
+: An **AdgConnection**  object to compare.
+
 
 ## Return Value
 

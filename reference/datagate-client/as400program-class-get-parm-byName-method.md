@@ -13,14 +13,14 @@ Returns the [ProgParm](prog-parm-class.html) object in the parameter list named 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span style="FONT-STYLE: italic">name</span>
-        </dt>
-        <dd>String identifying a **ASNA.DataGate.DataLink.ProgParm**  object in 
+
+: String identifying a **ASNA.DataGate.DataLink.ProgParm**  object in 
 						the parameter list.
-					</dd>
-</dl>
+					
+
 
 ## Return Value
 

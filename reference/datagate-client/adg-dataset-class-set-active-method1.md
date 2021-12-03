@@ -17,20 +17,20 @@ Establish the record, specified by format index and relative record number, as t
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *iFormat* 
-        </dt>
-        <dd>An integer identifying the format corresponding to the **DataTable** 
+
+: An integer identifying the format corresponding to the **DataTable** 
 						in which the **DataRow**  resides.  Optionally, 
 						the integer can be null or zero, to indicate that the value of the [
-							CurrentFormatIndex](adg-dataset-class-current-format-index-property.html) property will be used to identify the format. </dd>
-        <dt>
+							CurrentFormatIndex](adg-dataset-class-current-format-index-property.html) property will be used to identify the format. 
+
  *rrn* 
-        </dt>
-        <dd>An integer referring to the **DataRow**  objects position within 
-								the row collection of the **DataTable** .</dd>
-</dl>
+
+: An integer referring to the **DataRow**  objects position within 
+								the row collection of the **DataTable** .
+
 <dl>
         <dt />
 </dl>

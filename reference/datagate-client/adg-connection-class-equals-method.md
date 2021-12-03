@@ -14,12 +14,12 @@ title: AdgConnection.Equals Method
 
 ## Parameters
 
-<dl>
+
         <dt>obj
 					</dt>
-        <dd>The **AdgConnection**  object to compare with this instance.
-					</dd>
-</dl>
+: The **AdgConnection**  object to compare with this instance.
+					
+
 
 ## Exceptions
 

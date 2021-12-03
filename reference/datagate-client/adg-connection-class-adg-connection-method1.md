@@ -15,16 +15,16 @@ Constructs an [AdgConnection](adg-connection-class.html) instance from the initi
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *sp* 
 <dl>
-        <dd>
+: 
 
 The **SourceProfile** object ([SourceProfile](source-profile-class.html)) containing the properties of the database connection.
-</dd>
+
 </dl>
 
 ## Exceptions

@@ -15,22 +15,22 @@ title: AuthorityEntry(string,AuthorityTypes)
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *username* 
-        </dt>
-        <dd>
+
+: 
 
 **String** . A non-group profile name. See the [ UserName](authority-entry-class-username-field.html) property.
-</dd>
-        <dt>
+
+
  *authorityType* 
-        </dt>
-        <dd>
+
+: 
 
 [AuthorityTypes](authority-types-enumeration.html). A combination of the bit values of **AuthorityTypes** expresssing authorized capabilities.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

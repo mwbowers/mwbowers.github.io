@@ -15,17 +15,17 @@ Mark a DataRow in the **AdgDataSet** as deleted.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *strFormat* 
-        </dt>
-        <dd>The name of the format containing the row to delete. </dd>
-        <dt>
+
+: The name of the format containing the row to delete. 
+
  *rrn* 
-        </dt>
-        <dd>The index of the row to delete in the Rows collection of the table.
-							</dd>
-</dl>
+
+: The index of the row to delete in the Rows collection of the table.
+							
+
 
 ## Exceptions
 

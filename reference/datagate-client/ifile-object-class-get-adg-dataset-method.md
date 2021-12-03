@@ -14,15 +14,15 @@ title: IFileObject.GetAdgDataSet Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *opts* 
-        </dt>
-        <dd>
+
+: 
 
 [DataSetOptions](dataset-options-enumeration.html). Optional effects on **DataSet** and **AdgDataSet** creation.
-</dd>
-</dl>
+
+
 
 #### Returns
 **AdgDataSet** . **GetAdgDataSet** creates a new instance of **AdgDataSet** and customizes it to reflect the formats of the file.

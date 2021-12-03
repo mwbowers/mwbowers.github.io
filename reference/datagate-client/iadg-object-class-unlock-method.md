@@ -11,14 +11,14 @@ title: IAdgObject.Unlock Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ShareType* 
-        </dt>
-        <dd>
+
+: 
 [ShareTypes](share-types-enumeration.html). The type of lock to be released.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

@@ -15,17 +15,17 @@ title: DatabaseName.Deserialize Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *tag* 
-        </dt>
-        <dd>Pending. </dd>
-        <dt>
+
+: Pending. 
+
  *serSp* 
-        </dt>
-        <dd>String. The serialized database connection XML text file.
-							</dd>
-</dl>
+
+: String. The serialized database connection XML text file.
+							
+
 
 ## Returns
 

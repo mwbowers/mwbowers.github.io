@@ -14,12 +14,12 @@ Returns the DataTable object for a particular file format specified by string.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *strFormat* 
-        </dt>
-        <dd>String identifying a file format in the **AdgDataSet** .</dd>
-</dl>
+
+: String identifying a file format in the **AdgDataSet** .
+
 
 ## Exceptions
 

@@ -11,32 +11,32 @@ title: IAdgObject.Duplicate Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ScopePath* 
-        </dt>
-        <dd>
+
+: 
 **String** . The path name of an existing library representing the boundary of object path references in the duplicated object. The string value must be equal to a prefix of the path name of the database object represented by **IAdgObject** .
-</dd>
-        <dt>
+
+
  *TargetPath* 
-        </dt>
-        <dd>
+
+: 
 **String** . The absolute path name of the library where the duplicate object should reside.
-</dd>
-        <dt>
+
+
  *NewName* 
-        </dt>
-        <dd>
+
+: 
 **String** . The name of the duplicate object.
-</dd>
-        <dt>
+
+
  *options* 
-        </dt>
-        <dd>
+
+: 
 [DuplicateOptions](duplicate-options-enumeration.html). Options for handling the objects contained by objects to be duplicated.
-</dd>
-</dl>
+
+
 
 ## Returns
 

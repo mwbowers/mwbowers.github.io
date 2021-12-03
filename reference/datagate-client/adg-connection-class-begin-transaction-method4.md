@@ -16,24 +16,24 @@ Begins a manual database transaction creating an instance of an [ IAdgTransactio
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *tl* 
-        </dt>
-        <dd>
+
+: 
 [ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html).  
-						The initial locking level for the transaction. </dd>
-        <dt>
+						The initial locking level for the transaction. 
+
  *Name* 
-        </dt>
-        <dd>A string naming the transaction.</dd>
-        <dt>
+
+: A string naming the transaction.
+
  *Options* 
-        </dt>
-        <dd>A string containing database provider platform-dependent command options for 
+
+: A string containing database provider platform-dependent command options for 
 										initiating the transaction. Otherwise, the empty string or a null reference.
-									</dd>
-</dl>
+									
+
 
 ## Return Value
 

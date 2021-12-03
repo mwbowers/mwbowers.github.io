@@ -17,21 +17,21 @@ Establish the record, specified by format name and relative record number, as th
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *strFormat* 
-        </dt>
-        <dd>
+
+: 
  **String** . A string identifying the format corresponding to the **DataTable** in which the **DataRow**  resides. 
 						Optionally, the string can be null or empty, to indicate that the value of the [
-							CurrentFormatName](adg-dataset-class-current-format-name-property.html) property will be used to identify the format. </dd>
-        <dt>
+							CurrentFormatName](adg-dataset-class-current-format-name-property.html) property will be used to identify the format. 
+
  *rrn* 
-        </dt>
-        <dd>
+
+: 
  **Int32** . A positive integer referring to the **DataRow**  object's 
-								position within the row collection of the **DataTable** .</dd>
-</dl>
+								position within the row collection of the **DataTable** .
+
 
 ## Return Value
 

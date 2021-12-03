@@ -14,17 +14,17 @@ Complete the current printer job, change device-related parameters associated wi
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *docName* 
-        </dt>
-        <dd>Name of the next printer job. </dd>
-        <dt>
+
+: Name of the next printer job. 
+
  *attr* 
-        </dt>
-        <dd>[ASNA.DataGate.Providers.PrintDevAttr](print-dev-attr-class.html). 
-								Sets the device-related attributes for the next printer job.</dd>
-</dl>
+
+: [ASNA.DataGate.Providers.PrintDevAttr](print-dev-attr-class.html). 
+								Sets the device-related attributes for the next printer job.
+
       <br />
 
 ## Exceptions

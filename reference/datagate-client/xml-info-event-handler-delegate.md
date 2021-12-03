@@ -15,25 +15,25 @@ This **XmlInfoEventHandler** delegate provides a feedback channel for the [ AdgF
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *object* 
 <dl>
-        <dd>
+: 
 
 The **System.Object** instance invoking the delegate. This parameter is reserved for the internal use of DG and should not be manipulated by the user.
-</dd>
+
         <dt />
 </dl>
 
 *args* 
 <dl>
-        <dd>
+: 
 
 [XmlInfoEventArgs](xml-info-event-args-class.html). A reference to an object describing the event being reported.
-</dd>
+
 </dl>
 
 ## Exceptions

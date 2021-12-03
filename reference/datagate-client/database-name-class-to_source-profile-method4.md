@@ -16,40 +16,40 @@ Named SourceProfile optionally constructed from a registered database name. If c
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>
- **String** . The name of the database.  </dd>
-        <dt>
+
+: 
+ **String** . The name of the database.  
+
  *bFromSecStorage* 
-        </dt>
-        <dd>
+
+: 
  **Boolean.**  If True to attempt to read a "classic" 
         database name from the Windows Registry, if dbName is not found in the
         DataGate config file.  This is the default behavior of the overloads of this
         method which do not specify this parameter. If "False" ignore the 
         database names in the Windows registry.
-</dd>
+
 		<dt>
  *bDetectDuplicates* 
-        </dt>
-        <dd>
+
+: 
  **Boolean.**   If True, and database names exist for the value given by the dbName 
        parameter in both the registry and in DataGate configuration files, an exception is thrown. 
        Ignored if <code>bFromSecStorage</code> is False.
-</dd>
+
 		<dt>
  *bClassic* 
-        </dt>
-        <dd>
+
+: 
  **Boolean.**   The value of this parameter has no effect unless
         <code>bFromSecStorage</code> is true.  In that case, only attempt to read the database 
 		name specified by <code>dbName</code> from the Windows Registry, and ignore the 
 		database names in the DataGate config file.
-</dd>
-</dl>
+
+
 
 ## Returns
 

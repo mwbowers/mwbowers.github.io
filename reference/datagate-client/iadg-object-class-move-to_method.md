@@ -11,14 +11,14 @@ title: IAdgObject.MoveTo Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *LibraryPath*  
 					</dt>
-        <dd>
+: 
 **String** . he absolute path of the library to which the the database object will be moved.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

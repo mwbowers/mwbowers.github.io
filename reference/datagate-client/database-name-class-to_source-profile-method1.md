@@ -15,13 +15,13 @@ Converts the named database into a SourceProfile object.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>
- **String** . The name of the database. </dd>
-</dl>
+
+: 
+ **String** . The name of the database. 
+
 
 ## Returns
 

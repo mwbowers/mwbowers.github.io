@@ -17,36 +17,36 @@ Open a database file for access using the specified query and the specified [Adg
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Ds* 
-        </dt>
-        <dd>The DataSet object ( **AdgDataSet)**  created to match the opened 
-						file. </dd>
-        <dt>
+
+: The DataSet object ( **AdgDataSet)**  created to match the opened 
+						file. 
+
  *QueryFile* 
-        </dt>
-        <dd>		The name of the query file. </dd>
-        <dt>
+
+: 		The name of the query file. 
+
  *Query* 
-        </dt>
-        <dd>				The selection expression used to determine which records are to be made 
-										available for processing. </dd>
-        <dt>
+
+: 				The selection expression used to determine which records are to be made 
+										available for processing. 
+
  *KeyNames* 
-        </dt>
-        <dd>A string array containing the name(s) of key fields used to sort the query 
+
+: A string array containing the name(s) of key fields used to sort the query 
 												records. Each key field array item must have a corresponding *KeyFlags*  item 
 												which provides the key fields' sorting order (ascending descending, or absolute 
-												value for numeric fields). </dd>
-        <dt>
+												value for numeric fields). 
+
  *KeyFlags* 
-        </dt>
-        <dd>		An array of type [ASNA.DataGate.Common.KeyUsages](key-usages-enumeration.html)
+
+: 		An array of type [ASNA.DataGate.Common.KeyUsages](key-usages-enumeration.html)
 														describing how the keys will be used. **KeyUsage**  enumerations 
 														can be added or ORed together where required (e.g., ABSVALUE and DESCEND). Each *KeyFlags*  array item must have a corresponding *KeyNames*  item.
-													</dd>
-</dl>
+													
+
 
 ## Exceptions
 

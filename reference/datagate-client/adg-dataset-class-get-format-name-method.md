@@ -14,14 +14,14 @@ Returns a string identifying a DataGate file format.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *iFormat* 
           </span>
-        </dt>
-        <dd>
-          <span />Integer identifying a file format in the **AdgDataSet** .</dd>
-</dl>
+
+: 
+          <span />Integer identifying a file format in the **AdgDataSet** .
+
 
 ## Exceptions
 

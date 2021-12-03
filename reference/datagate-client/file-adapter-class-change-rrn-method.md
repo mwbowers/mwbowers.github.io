@@ -14,22 +14,22 @@ Updates the database file record specified by relative record number with the co
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object ( **ASNA.DataGate.Client.AdgDataSet**  ) used to 
-						update the database file record. </dd>
-        <dt>
+
+: The DataSet object ( **ASNA.DataGate.Client.AdgDataSet**  ) used to 
+						update the database file record. 
+
           <span> *RRN* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span />
           <span>The relative
  record number of the record to change.</span>
-        </dd>
-</dl>
+        
+
 
 ## Exceptions
 

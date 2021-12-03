@@ -13,13 +13,13 @@ For multiformat read access, calling this method causes the read methods to fetc
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *format* 
-        </dt>
-        <dd>A string that names the format to which to restrict record reads.
-					</dd>
-</dl>
+
+: A string that names the format to which to restrict record reads.
+					
+
 
 ## Exceptions
 

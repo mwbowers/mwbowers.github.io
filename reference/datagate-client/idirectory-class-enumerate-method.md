@@ -12,14 +12,14 @@ title: IDirectory.Enumerate Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *enumerator* 
-        </dt>
-        <dd>
+
+: 
 [AdgEnumerator](adg-enumerator-delegate.html). The delegate **Enumerate** calls once for database object in the library represented by **IDirectory** .
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

@@ -15,22 +15,16 @@ Insert a record into the DataSet table for a particular format and relative reco
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *strFormat* 
-        </dt>
-        <dd>
+: **String** . The name of the format corresponding to the table to which the prepared row will be added. Use the [ GetFormatName](adg-dataset-class-get-format-name-method.html) method to obtain the format name.
 
-**String** . The name of the format corresponding to the table to which the prepared row will be added. Use the [ GetFormatName](adg-dataset-class-get-format-name-method.html) method to obtain the format name.
-</dd>
-        <dt>
+
  *rrn* 
-        </dt>
-        <dd>
+ : **Int32** . A positive integer value reflecting the position of the record after insertion into the table. Specifying a value greater than the number of records in the table results in the record being appended to the end of the table.
 
-**Int32** . A positive integer value reflecting the position of the record after insertion into the table. Specifying a value greater than the number of records in the table results in the record being appended to the end of the table.
-</dd>
-</dl>
+
 
 ## Exceptions
 

@@ -15,21 +15,21 @@ Access a print control property value.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *fieldName* 
-        </dt>
-        <dd>
+
+: 
  **String** .  The field in the format represented by **IPrintProperties**  associated 
-						with the print control. </dd>
-        <dt>
+						with the print control. 
+
  *propName* 
-        </dt>
-        <dd>
+
+: 
  **String** .  The property name of the print control to obtain 
 								the value of.
-							</dd>
-</dl>
+							
+
 
 ## Return Value
 

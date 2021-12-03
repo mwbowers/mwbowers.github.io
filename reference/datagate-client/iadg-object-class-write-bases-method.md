@@ -13,15 +13,15 @@ title: IAdgObject.WriteBases Method
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *writer* 
 <dl>
-        <dd>
+: 
 **System.Xml.XmlWriter** . A stream onto which the XML document fragment will be output.
-</dd>
+
 </dl>
 
 ## Exceptions

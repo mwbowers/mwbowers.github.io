@@ -14,15 +14,15 @@ title: IPrintProperties.GetTypedObject Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *fieldName* 
-        </dt>
-        <dd>
+
+: 
  **String** .  The field in the format represented by **IPrintProperties** 
 						to obtain the control object for.
-					</dd>
-</dl>
+					
+
 
 ## Return Value
 

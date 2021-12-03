@@ -14,18 +14,18 @@ Construct an instance of the **As400Program** object and set the [Connection](as
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *Connection* 
           </span>
-        </dt>
-        <dd>An [AdgConnection](adg-connection-class.html) object used to set the 
-						value of the **Connection**  property. </dd>
-        <dt>
+
+: An [AdgConnection](adg-connection-class.html) object used to set the 
+						value of the **Connection**  property. 
+
  *ProgramPath* 
-        </dt>
-        <dd>A string used to set the value of the **ProgramPath**  property.</dd>
-</dl>
+
+: A string used to set the value of the **ProgramPath**  property.
+
 
 ## Exceptions
 

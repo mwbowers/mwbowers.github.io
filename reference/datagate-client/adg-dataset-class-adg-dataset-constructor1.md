@@ -15,13 +15,13 @@ Initialize the <span> **AdgDataSet** </span> base class.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *name* 
-        </dt>
-        <dd>	The name of the new DataSet object.  This parameter initializes the
-							 property.</dd>
-</dl>
+
+: 	The name of the new DataSet object.  This parameter initializes the
+							 property.
+
 
 ## Exceptions
 

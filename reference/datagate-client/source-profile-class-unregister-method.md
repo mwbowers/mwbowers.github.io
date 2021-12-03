@@ -15,14 +15,14 @@ Deletes a registered database name from the system registry.
 
 ## Parameters
 
-<dl>
+
         <dd />
-        <dt>
+
  *dbName* 
-        </dt>
-        <dd>	A string identifying the registered database name to delete.
-						</dd>
-</dl>
+
+: 	A string identifying the registered database name to delete.
+						
+
 
 ## Exceptions
 

@@ -15,19 +15,19 @@ Moves the record pointer associated with the currently open file without reading
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *mode* 
-        </dt>
-        <dd>[SeekMode](seek-mode-enumeration.html). Specifies the manner in 
-						which the record is to be located using the specified key. </dd>
-        <dt>
+
+: [SeekMode](seek-mode-enumeration.html). Specifies the manner in 
+						which the record is to be located using the specified key. 
+
  *keyTable* 
-        </dt>
-        <dd>A [AdgKeyTable](adg-key-table-class.html)  object containing the 
+
+: A [AdgKeyTable](adg-key-table-class.html)  object containing the 
 				key used to seek for a record.
-							</dd>
-</dl>
+							
+
 
 ## Exceptions
 

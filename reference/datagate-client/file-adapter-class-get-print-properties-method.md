@@ -13,13 +13,13 @@ Gets the [IPrintProperties](iprint-properties-class.html) of the currently open 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *format* 
-        </dt>
-        <dd>The name of the print file format containing print file controls.
-					</dd>
-</dl>
+
+: The name of the print file format containing print file controls.
+					
+
 
 ## Return Value
 

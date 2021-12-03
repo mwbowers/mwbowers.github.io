@@ -12,20 +12,20 @@ Construct a representation of a simple iSeries program parameter.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ppt* 
-        </dt>
-        <dd>
+
+: 
 [ProgParmType](prog-parm-type-class.html). The data type description 
-						of the simple program parameter. </dd>
-        <dt>
+						of the simple program parameter. 
+
  *dir* 
-        </dt>
-        <dd>
+
+: 
 [ASNA.DataGate.Common.DataDirection](data-direction-enumeration.html). 
-								The declared input/output orientation of the parameter.</dd>
-</dl>
+								The declared input/output orientation of the parameter.
+
 
 ## Remarks
 

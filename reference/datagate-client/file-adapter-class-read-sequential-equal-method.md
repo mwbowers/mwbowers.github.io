@@ -16,31 +16,31 @@ Read a database file record adjacent to the current position with a key equal to
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object ([AdgDataSet](adg-dataset-class.html)) to which a 
-						single record will be added. </dd>
-        <dt>
+
+: The DataSet object ([AdgDataSet](adg-dataset-class.html)) to which a 
+						single record will be added. 
+
  *mode* 
-        </dt>
-        <dd><a style="FONT-STYLE: normal" href="dcsReadEqualModeEnumeration.htm">ReadEqualMode</a>. 
+
+: <a style="FONT-STYLE: normal" href="dcsReadEqualModeEnumeration.htm">ReadEqualMode</a>. 
 								Specifies the manner in which the record is to be located, relative to the 
 								current position in the file (Current, Next, Previous, NextEqual, 
-								PreviousEqual) or at the beginning or end of the file (First, Last). </dd>
-        <dt>
+								PreviousEqual) or at the beginning or end of the file (First, Last). 
+
  *lr* 
-        </dt>
-        <dd>[LockRequest](lock-request-enumeration.html). Specifies how the 
-										record read is to be locked. </dd>
-        <dt>
+
+: [LockRequest](lock-request-enumeration.html). Specifies how the 
+										record read is to be locked. 
+
  *keyTable* 
-        </dt>
-        <dd>[AdgKeyTable](adg-key-table-class.html). An optional key value to 
+
+: [AdgKeyTable](adg-key-table-class.html). An optional key value to 
 												search for the record.
-											</dd>
-</dl>
+											
+
 
 ## Exceptions
 

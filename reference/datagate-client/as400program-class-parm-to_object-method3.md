@@ -15,19 +15,19 @@ Returns an object of a specific type from the program parameter list.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Parameter* 
-        </dt>
-        <dd>
+
+: 
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  The 
-						program parameter object in the parameter list to get the value of. </dd>
-        <dt>
+						program parameter object in the parameter list to get the value of. 
+
  *ReturnType*  
 							</dt>
-        <dd>System.Type.  The requested type of the object returned by the method.
-							</dd>
-</dl>
+: System.Type.  The requested type of the object returned by the method.
+							
+
 
 ## Returns
 

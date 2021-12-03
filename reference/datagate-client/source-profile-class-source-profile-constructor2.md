@@ -15,14 +15,14 @@ Constructs an instance of [ SourceProfile](source-profile-class.html) setting co
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>
+
+: 
  **String** . Identifies registered database name information.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

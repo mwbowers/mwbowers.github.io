@@ -13,16 +13,16 @@ The **NewLibraryList** method creates a new instance of [ ILibraryList](ilibrary
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *cn* 
 <dl>
-        <dd>
+: 
 
 An instance of [AdgConnection](adg-connection-class.html) representing a database connection to the server.
-</dd>
+
 </dl>
 
 ## Returns

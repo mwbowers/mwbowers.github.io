@@ -15,29 +15,28 @@ title: ILibraryList.AddEntry Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *path* 
-        </dt>
-        <dd>
+
+: 
 
 String. Specifies the path name of the database library to add to the library list.
-</dd>
-        <dt>
+
+
  *pos* 
-        </dt>
-        <dd>
+
+: 
 
 [LiblPosition](libl-position-enumeration.html) values indicating the position in the library list to add the new library list entry.
-</dd>
-        <dt>
- *refLib* 
-        </dt>
-        <dd>
 
-String. Specifies the reference library. If **LiblPosition** is **Before** , **After** , or **Replace** , then this library is used for reference. If **LiblPosition** is **System** , **First** , or **Last** , then this parameter is ignored. 
-</dd>
-</dl>
+
+ *refLib* 
+
+: 
+
+String. Specifies the reference library. If **LiblPosition** is **Before** , **After** , or **Replace** , then this library is used for reference. If **LiblPosition** is **System** , **First** , or **Last** , then this parameter is ignored.
+
 
 ## Remarks
 

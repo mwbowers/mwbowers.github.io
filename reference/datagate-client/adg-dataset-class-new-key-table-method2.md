@@ -16,14 +16,14 @@ Create a key buffer for keyed access operations for the specified format index.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *iFormat* 
-        </dt>
-        <dd>
+
+: 
  **Int32** . The zero-relative index of the format in the [
-							AdgDataSet](adg-dataset-class.html).</dd>
-</dl>
+							AdgDataSet](adg-dataset-class.html).
+
 
 ## Exceptions
 

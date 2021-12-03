@@ -16,21 +16,21 @@ Returns an object of a specific type from the program parameter list.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ReturnType* 
-        </dt>
-        <dd>System.Type.  The requested type of the object returned by the method. </dd>
-        <dt>
+
+: System.Type.  The requested type of the object returned by the method. 
+
  *ParameterName* 
-        </dt>
-        <dd>The name or path of the program parameter object in the parameter list. </dd>
-        <dt>
+
+: The name or path of the program parameter object in the parameter list. 
+
  *ElementIndices* 
-        </dt>
-        <dd>For paths including multiple-occurrence parameters only, the indices in the 
-										path to the parameter.</dd>
-</dl>
+
+: For paths including multiple-occurrence parameters only, the indices in the 
+										path to the parameter.
+
 
 ## Exceptions
 

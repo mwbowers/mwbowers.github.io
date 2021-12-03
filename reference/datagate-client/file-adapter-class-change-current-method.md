@@ -13,14 +13,14 @@ Updates the current database file record with the contents of the specified [ Ad
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object ( **ASNA.DataGate.Client.AdgDataSet** ) used to 
+
+: The DataSet object ( **ASNA.DataGate.Client.AdgDataSet** ) used to 
 						update the database file record.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

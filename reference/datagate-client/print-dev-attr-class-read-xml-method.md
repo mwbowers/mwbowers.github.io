@@ -16,16 +16,16 @@ This **ReadXml** method creates an instance of a **PrintDevAttr** XML object.
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *reader* 
 <dl>
-        <dd>
+: 
 
 **System.Xml.XmlReader** . The input stream used by **System.Xml.XmlReader** .
-</dd>
+
 </dl>
 
 ## Returns

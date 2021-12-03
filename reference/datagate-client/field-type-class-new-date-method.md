@@ -7,14 +7,14 @@ Creates a new date [ FieldType](field-type-class.html).
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *fmt* 
-        </dt>
-        <dd>
+
+: 
 [DateTimeFormat](date-time-format-enumeration.html).  The format 
-						of the date field.</dd>
-</dl>
+						of the date field.
+
 
 ## Exceptions
 

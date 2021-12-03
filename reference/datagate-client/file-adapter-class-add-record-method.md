@@ -13,14 +13,14 @@ Adds a record to a file.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object ( **ASNA.DataGate.Client.AdgDataSet)**  to which 
+
+: The DataSet object ( **ASNA.DataGate.Client.AdgDataSet)**  to which 
 						a single record will be added.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

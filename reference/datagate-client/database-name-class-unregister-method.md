@@ -13,13 +13,13 @@ Deletes a registered database name from the system registry.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>
- **String** . The name of the database. </dd>
-</dl>
+
+: 
+ **String** . The name of the database. 
+
 
 #### Requirements
 **Namespace: [ ASNA.DataGate.Providers](datagate-providers-namespace.html)** 

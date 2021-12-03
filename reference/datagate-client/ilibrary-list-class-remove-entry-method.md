@@ -13,15 +13,15 @@ title: ILibraryList.RemoveEntry Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *path* 
-        </dt>
-        <dd>
+
+: 
 
 String. Specifies the path name of the database library to remove from the library list.
-</dd>
-</dl>
+
+
 
 ## Remarks
 

@@ -12,15 +12,15 @@ Constructs an instance of [SourceProfile](source-profile-class.html) that is an 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *sp* 
-        </dt>
-        <dd>
+
+: 
 [SourceProfile](source-profile-class.html). The **SourceProfile** 
 						to be copied by the constructed object.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

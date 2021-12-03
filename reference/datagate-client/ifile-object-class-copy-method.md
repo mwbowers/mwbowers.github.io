@@ -12,22 +12,22 @@ title: IFileObject.Copy Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *targetDir* 
-        </dt>
-        <dd>
+
+: 
 
 String. The target library path name for the new copy of the file.
-</dd>
-        <dt>
+
+
  *newName* 
-        </dt>
-        <dd>
+
+: 
 
 String. The name for the new copy of the file. This must not be a path name.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

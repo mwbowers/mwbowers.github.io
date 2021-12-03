@@ -12,15 +12,15 @@ title: ILibraryList.EnumerateCurrentSystem Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *enumerator* 
-        </dt>
-        <dd>
+
+: 
 
 [AdgEnumerator](adg-enumerator-delegate.html). The delegate **EnumerateCurrentSystem** calls once for database object in the system and user portion of the library list represented by **ILibraryList** .
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

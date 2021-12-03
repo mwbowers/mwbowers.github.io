@@ -15,21 +15,21 @@ Constructs an instance of [SourceProfile](source-profile-class.html) optionally 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>
+
+: 
  **String** .  The value used to set the [
 							DatabaseName](source-profile-class-database-name-property.html) property.  If *readRegistry*  is **True** , 
-						this should also identify registered database name information.</dd>
-        <dt>
+						this should also identify registered database name information.
+
  *readRegistry* 
-        </dt>
-        <dd>
+
+: 
  **Boolean** .  Only if **True** , *dbName*  refers 
-								to registered database name information queried to set property values.</dd>
-</dl>
+								to registered database name information queried to set property values.
+
 
 ## Exceptions
 

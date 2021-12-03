@@ -15,25 +15,25 @@ The **NewFile** method creates a new instance of [IFileObject](ifile-object-clas
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *cn* 
 <dl>
-        <dd>
+: 
 
 An instance of the [AdgConnection](adg-connection-class.html) representing a database connection to the server.
-</dd>
+
         <dt />
 </dl>
 
 *PathName* 
 <dl>
-        <dd>
+: 
 
 String. The path name of a new or exiting database file object.
-</dd>
+
 </dl>
 
 ## Returns

@@ -14,14 +14,14 @@ Construct an instance of the **As400Program** object and set the [ Connection](a
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *Connection* 
           </span>
-        </dt>
-        <dd>An [AdgConnection](adg-connection-class.html) object used to 
-			set the value of the **Connection**  Property.</dd>
-</dl>
+
+: An [AdgConnection](adg-connection-class.html) object used to 
+			set the value of the **Connection**  Property.
+
 
 ## Exceptions
 

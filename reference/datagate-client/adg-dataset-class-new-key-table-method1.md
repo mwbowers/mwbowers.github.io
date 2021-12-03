@@ -14,12 +14,12 @@ Create a key buffer for keyed access operations for the specified format string.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *strFormat* 
-        </dt>
-        <dd>A string naming a format in the **AdgDataSet** .</dd>
-</dl>
+
+: A string naming a format in the **AdgDataSet** .
+
 
 ## Exceptions
 

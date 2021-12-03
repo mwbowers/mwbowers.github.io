@@ -13,15 +13,15 @@ Deletes a database file record containing the specified key, if any.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *keyTable* 
-        </dt>
-        <dd>
+
+: 
 [AdgKeyTable](adg-key-table-class.html). The key of the record to 
 						delete.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

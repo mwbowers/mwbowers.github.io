@@ -15,16 +15,16 @@ This member supports the .NET Framework infrastructure and is not intended to be
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *<span>info</span>* 
-        </dt>
-        <dd>The data needed to serialize or deserialize an object. </dd>
-        <dt>
+
+: The data needed to serialize or deserialize an object. 
+
  *<span>context</span>* 
-        </dt>
-        <dd>The source and destination of a given serialized stream.</dd>
-</dl>
+
+: The source and destination of a given serialized stream.
+
 
 ## Requirements
 

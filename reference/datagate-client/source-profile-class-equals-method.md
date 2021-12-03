@@ -12,14 +12,14 @@ Returns <span> **true** </span> if the [SourceProfile](adg-connection-class-sour
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *obj* 
-        </dt>
-        <dd>The	<span>[SourceProfile](source-profile-class.html)</span>
+
+: The	<span>[SourceProfile](source-profile-class.html)</span>
 						object to compare with this instance.
-					</dd>
-</dl>
+					
+
 
 ## Returns
 

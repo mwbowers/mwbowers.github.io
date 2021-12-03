@@ -12,15 +12,15 @@ title: ILibraryList.EnumerateCurrentUser Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *enumerator* 
-        </dt>
-        <dd>
+
+: 
 
 [AdgEnumerator](adg-enumerator-delegate.html). The delegate **EnumerateCurrentUser** calls once for database object in the user portion of the library list represented by **ILibraryList** .
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

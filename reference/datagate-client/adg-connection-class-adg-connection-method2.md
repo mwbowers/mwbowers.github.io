@@ -14,13 +14,13 @@ Constructs an [AdgConnection](adg-connection-class.html) instance for the databa
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>The name (or identifier) of the database to connect to.
-					</dd>
-</dl>
+
+: The name (or identifier) of the database to connect to.
+					
+
 
 ## Exceptions
 

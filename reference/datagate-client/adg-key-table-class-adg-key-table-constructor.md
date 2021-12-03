@@ -14,14 +14,14 @@ This member supports DG infrastructure and is not intended to be used directly f
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *keyTable* 
-        </dt>
-        <dd>System.Data.DataTable. 
+
+: System.Data.DataTable. 
 						Initializes a key.
-					</dd>
-</dl>
+					
+
 
 ## Remarks
 

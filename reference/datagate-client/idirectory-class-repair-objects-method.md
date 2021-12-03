@@ -12,20 +12,19 @@ title: IDirectory.RepairObjects Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *repairOptions* 
-        </dt>
-        <dd>
-[RepairOptions](repair-options-enumeration.html). How files will be repaired. 
-</dd>
-        <dt>
+
+: 
+[RepairOptions](repair-options-enumeration.html). How files will be repaired.
+
  *observer* 
-        </dt>
-        <dd>
+
+: 
 [AdgObserver](adg-observer-delegate.html). delegate to provide the user with feedback in the form of text messges relating to the progress of the repair operation. Optionally specify a null reference here, if no feedback is desired.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

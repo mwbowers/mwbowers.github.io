@@ -14,16 +14,16 @@ title: IFileObject.ReadCreationAttributes Method
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *reader* 
 <dl>
-        <dd>
+: 
 
 **System.Xml.XmlReader** . The XML stream from which the file attributes will be read.
-</dd>
+
 </dl>
 
 ## Exceptions

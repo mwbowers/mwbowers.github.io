@@ -13,13 +13,13 @@ Deletes the current record specified by relative record number.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *RRN* 
-        </dt>
-        <dd>The relative record number of the record to delete.
-					</dd>
-</dl>
+
+: The relative record number of the record to delete.
+					
+
 
 ## Exceptions
 

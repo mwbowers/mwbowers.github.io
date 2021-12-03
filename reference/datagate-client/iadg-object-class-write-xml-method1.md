@@ -14,20 +14,20 @@ title: IAdgObject.WriteXml(System.Xml.XmlWriter, XmlOptions)
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *writer* 
-        </dt>
-        <dd>
+
+: 
 **System.Xml.XmlWriter** . A stream onto which the XML document fragment will be output.
-</dd>
-        <dt>
+
+
  *options* 
-        </dt>
-        <dd>
+
+: 
 [ *XmlOptions* ](xml-options-enumeration.html). A value used to specify the output options indicating how the output is to be written. Only certain values of the **XmlOptions** enumeration apply to **WriteXml** .
-</dd>
-</dl>
+
+
 
 ## Returns
 

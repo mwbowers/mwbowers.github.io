@@ -7,12 +7,12 @@ Creates a new [FieldType](field-type-class.html) described only in terms of leng
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *length* 
-        </dt>
-        <dd>Integer.  The length in bytes of the field.</dd>
-</dl>
+
+: Integer.  The length in bytes of the field.
+
 
 ## Remarks
 

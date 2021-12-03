@@ -14,20 +14,20 @@ title: IAdgObject.GrantAuthority Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *userName* 
-        </dt>
-        <dd>
+
+: 
 **String** . The name of the user whose authority is being granted.
-</dd>
-        <dt>
+
+
  *authorityType* 
-        </dt>
-        <dd>
+
+: 
 [AuthorityTypes](authority-entry-class-authority-type-field.html). The authority being granted for the user and **IAdgObject** .
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

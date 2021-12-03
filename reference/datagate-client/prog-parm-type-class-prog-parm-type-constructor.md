@@ -12,25 +12,25 @@ Defines the data type of a simple iSeries program parameter.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *name* 
-        </dt>
-        <dd>String.  Optional name to identify the **ProgParmType**  object 
+
+: String.  Optional name to identify the **ProgParmType**  object 
 						in the [As400Program](as400program-class.html) parameter list. 
-						 If not required, specify an empty string or null.  </dd>
-        <dt>
+						 If not required, specify an empty string or null.  
+
  *cElems*  
 							</dt>
-        <dd>Integer.  The number of elements in a single-dimension array.  If the **ProgParmType**  describes a scalar parameter type, specify 0 </dd>
-        <dt>
+: Integer.  The number of elements in a single-dimension array.  If the **ProgParmType**  describes a scalar parameter type, specify 0 
+
  *type*  
 									</dt>
-        <dd>
+: 
 [ASNA.DataGate.Common.FieldType](field-type-class.html).  The 
 										database provider-specific object type of the parameter.
-									</dd>
-</dl>
+									
+
 
 ## Remarks
 

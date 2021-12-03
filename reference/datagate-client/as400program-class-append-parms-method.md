@@ -13,17 +13,17 @@ Appends an array of parameters to the parameter list for the program.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *Parameters* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span />
  <span style="FONT-FAMILY: Verdana">An array of 
  **ASNA.DataGate.DataLink.ProgParm** </span>
-							objects that represents the program parameters to append. </dd>
-</dl>
+							objects that represents the program parameters to append. 
+
 
 ## Exceptions
 

@@ -7,17 +7,17 @@ Creates a new zoned decimal [ FieldType](field-type-class.html).
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *prec* 
-        </dt>
-        <dd>Integer.  The maximum number of digits for decimal fields. </dd>
-        <dt>
+
+: Integer.  The maximum number of digits for decimal fields. 
+
  *scale* 
-        </dt>
-        <dd>Integer.  The maximum number of digits to the right of the decimal point.
-								</dd>
-</dl>
+
+: Integer.  The maximum number of digits to the right of the decimal point.
+								
+
 
 ## Exceptions
 

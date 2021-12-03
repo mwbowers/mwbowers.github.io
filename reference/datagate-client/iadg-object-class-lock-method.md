@@ -15,26 +15,25 @@ title: IAdgObject.Lock Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ShareType* 
-        </dt>
-        <dd>
-[ShareTypes](share-types-enumeration.html). The type of lock to be set. 
-</dd>
-        <dt>
+
+: 
+[ShareTypes](share-types-enumeration.html). The type of lock to be set.
+
  *WaitOption* 
-        </dt>
-        <dd>
+
+: 
 [WaitOptions](wait-options-enumeration.html). Specifies how **Lock** reacts when the requested lock is not immediately available.
-</dd>
-        <dt>
+
+
  *WaitTime* 
-        </dt>
-        <dd>
+
+: 
 **System.Short** . The time in seconds to wait for a held lock to become available, subject to *WaitOption* .
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

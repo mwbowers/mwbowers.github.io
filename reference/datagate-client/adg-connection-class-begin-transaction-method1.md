@@ -14,14 +14,14 @@ Begins a manual database transaction creating an instance of an [IAdgTransaction
 
 ## Parameters
 
-<dl>
+
         <dt>tl
 					</dt>
-        <dd>
+: 
 [ASNA.DataGate.Common.TransactionLevel](transaction-level-enumeration.html). 
 						The initial locking level of the transaction.
-					</dd>
-</dl>
+					
+
 
 ## Return Value
 

@@ -14,19 +14,19 @@ An integer containing the index value of the file.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *iFormat* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span>The zero-relative index of 
   the format corresponding to the table to which the prepared row will be added. 
    A suitable value for<span> *iFormat* </span> could be passed to the [
 								GetFormatName](adg-dataset-class-get-format-name-method.html) 
   method to obtain the format name.</span>
-        </dd>
-</dl>
+        
+
 
 ## Return 
 Value

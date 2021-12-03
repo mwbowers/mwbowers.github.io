@@ -13,14 +13,14 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object usin
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *cn* 
-        </dt>
-        <dd>An instance of **AdgConnection**  used to initialize the [
+
+: An instance of **AdgConnection**  used to initialize the [
 			Connection](file-adapter-class-connection-property.html) property.
-					</dd>
-</dl>
+					
+
 
 ## Remarks
 

@@ -8,16 +8,16 @@ Returns the opposite value returned by [op_Equality](adg-connectionclassop-equal
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *x* 
-        </dt>
-        <dd>An **AdgConnection**  object to compare. </dd>
-        <dt>
+
+: An **AdgConnection**  object to compare. 
+
  *y* 
-        </dt>
-        <dd>An **AdgConnection**  object to compared.</dd>
-</dl>
+
+: An **AdgConnection**  object to compared.
+
 
 ## Exceptions
 

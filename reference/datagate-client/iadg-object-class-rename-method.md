@@ -11,14 +11,14 @@ The **Rename** method renames an object without changing its location in the dat
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *NewName* 
-        </dt>
-        <dd>
+
+: 
 String. The new name for the [IAdgObject](iadg-object-class.html).
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

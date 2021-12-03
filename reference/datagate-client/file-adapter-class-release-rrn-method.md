@@ -15,18 +15,18 @@ Release the specified record.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *lr* 
-        </dt>
-        <dd>[LockRequest](lock-request-enumeration.html).  Specifies how 
+
+: [LockRequest](lock-request-enumeration.html).  Specifies how 
 						the specified record is to be unlocked. Valid values should include the **LockRequest.Read** 
-						and/or **LockRequest.Write**  flags. </dd>
-        <dt>
+						and/or **LockRequest.Write**  flags. 
+
  *RRN* 
-        </dt>
-        <dd>		The relative record number of the record to release.</dd>
-</dl>
+
+: 		The relative record number of the record to release.
+
 
 ## Exceptions
 

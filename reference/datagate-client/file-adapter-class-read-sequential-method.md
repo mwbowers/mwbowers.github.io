@@ -15,26 +15,26 @@ Read a single record from the file in sequential order.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object ([AdgDataSet](adg-dataset-class.html)) to which a 
-						single record will be added. </dd>
-        <dt>
+
+: The DataSet object ([AdgDataSet](adg-dataset-class.html)) to which a 
+						single record will be added. 
+
  *mode* 
-        </dt>
-        <dd>[ReadSequentialMode](read-sequential-mode-enumeration.html).  
+
+: [ReadSequentialMode](read-sequential-mode-enumeration.html).  
 								Specifies the manner in which the record is to be located, relative to the 
 								current position in the file (Current, Next, Previous) or at the beginning or 
-								end of the file (First, Last). </dd>
-        <dt>
+								end of the file (First, Last). 
+
  *lr* 
-        </dt>
-        <dd>[LockRequest](lock-request-enumeration.html).  Specifies how 
+
+: [LockRequest](lock-request-enumeration.html).  Specifies how 
 										the record read is to be locked.
-									</dd>
-</dl>
+									
+
 
 ## Exceptions
 

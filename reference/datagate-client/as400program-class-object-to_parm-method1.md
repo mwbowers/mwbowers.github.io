@@ -16,28 +16,28 @@ Converts an object or value type to a parameter list value.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *Parameter* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span />
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  
-						The value to be set. </dd>
-        <dt>
+						The value to be set. 
+
  *Value* 
-        </dt>
-        <dd>The name or path of the program parameter object in the parameter list. </dd>
-        <dt>
+
+: The name or path of the program parameter object in the parameter list. 
+
           <span>
  *Element* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span />For paths including multiple-occurrence parameters only, the indices in the path to the parameter.
-									</dd>
-</dl>
+									
+
 
 ## Exceptions
 

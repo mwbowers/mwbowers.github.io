@@ -15,19 +15,19 @@ Saves the contents of the **SourceProfile** object to the system registry as a d
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *sp* 
-        </dt>
-        <dd>
- **SourceProfile** object to be registered. </dd>
-        <dt>
+
+: 
+ **SourceProfile** object to be registered. 
+
  *dbName* 
-        </dt>
-        <dd>
+
+: 
  **String** . The name of the database name to 
-									delete. </dd>
-</dl>
+									delete. 
+
 
 ## Returns
 

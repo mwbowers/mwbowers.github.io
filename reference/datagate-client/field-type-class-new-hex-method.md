@@ -7,13 +7,13 @@ Creates a new hexadecimal data [ FieldType](field-type-class.html).
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *length* 
-        </dt>
-        <dd>Integer.  The length of the field in bytes.
-					</dd>
-</dl>
+
+: Integer.  The length of the field in bytes.
+					
+
 
 ## Remarks
 

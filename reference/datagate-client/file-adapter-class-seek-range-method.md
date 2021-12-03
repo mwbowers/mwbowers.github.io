@@ -18,35 +18,35 @@ Moves the record pointer associated with the currently open file without reading
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *mode* 
-        </dt>
-        <dd>[RangeMode](range-mode-enumeration.html). Specifies the manner in 
+
+: [RangeMode](range-mode-enumeration.html). Specifies the manner in 
 						which the file pointer is to be positioned using the specified keys. **RangeMode.First** 
 						places the pointer on the record using the *firstKey*  parameter, while **RangeMode.Last**  places the pointer on the record using the *lastKey* 
-						parameter. </dd>
-        <dt>
+						parameter. 
+
  *firstKey* 
-        </dt>
-        <dd>An [AdgKeyTable](adg-key-table-class.html) instance specifying a 
-								key defining the lower limit of the range. </dd>
-        <dt>
+
+: An [AdgKeyTable](adg-key-table-class.html) instance specifying a 
+								key defining the lower limit of the range. 
+
  *rangeFirst* 
-        </dt>
-        <dd>[RangeFirst](range-first-enumeration.html). Specifies how the *firstKey* 
-										parameter is interpreted in determining the lower limit of the range. </dd>
-        <dt>
+
+: [RangeFirst](range-first-enumeration.html). Specifies how the *firstKey* 
+										parameter is interpreted in determining the lower limit of the range. 
+
  *lastKey* 
-        </dt>
-        <dd>An [AdgKeyTable](adg-key-table-class.html) instance specifying a 
-												key defining the upper limit of the range. </dd>
-        <dt>
+
+: An [AdgKeyTable](adg-key-table-class.html) instance specifying a 
+												key defining the upper limit of the range. 
+
  *rangeLast* 
-        </dt>
-        <dd>[RangeLast](range-last-enumeration.html). Specifies how the *lastKey* 
-			parameter is interpreted in determining the upper limit of the range.</dd>
-</dl>
+
+: [RangeLast](range-last-enumeration.html). Specifies how the *lastKey* 
+			parameter is interpreted in determining the upper limit of the range.
+
 
 ## Exceptions
 

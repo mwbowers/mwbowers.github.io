@@ -16,24 +16,24 @@ Returns an object of a specific type from the program parameter list.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Parameter* 
-        </dt>
-        <dd>
+
+: 
 [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  The 
-						program parameter object in the parameter list to get the value of. </dd>
-        <dt>
+						program parameter object in the parameter list to get the value of. 
+
  *ReturnType* 
-        </dt>
-        <dd>System.Type.  The requested type of the object returned by the method. </dd>
-        <dt>
+
+: System.Type.  The requested type of the object returned by the method. 
+
  *Element* 
-        </dt>
-        <dd>Integer.  For paths including multiple-occurrence parameters only, a 
+
+: Integer.  For paths including multiple-occurrence parameters only, a 
 										zero-relative index identifying the element of the array to get the value 
-										of.</dd>
-</dl>
+										of.
+
 
 ## Returns
 

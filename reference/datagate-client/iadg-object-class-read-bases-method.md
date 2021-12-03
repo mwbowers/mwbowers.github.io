@@ -15,15 +15,15 @@ title: IAdgObject.ReadBases Method
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *reader* 
 <dl>
-        <dd>
+: 
 **System.Xml.XmlReader** . The input stream providing the XML document fragment.
-</dd>
+
 </dl>
 
 ## Exceptions

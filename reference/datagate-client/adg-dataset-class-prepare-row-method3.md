@@ -15,17 +15,17 @@ Establish an existing **DataRow** object as the currently prepared row, for subs
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *strFormat* 
-        </dt>
-        <dd>A string identifying the format corresponding to the **DataTable**  
-						to which the **DataRow**  can be added. </dd>
-        <dt>
+
+: A string identifying the format corresponding to the **DataTable**  
+						to which the **DataRow**  can be added. 
+
  *row* 
-        </dt>
-        <dd>A **DataRow**  object to be set as the currently prepared row.</dd>
-</dl>
+
+: A **DataRow**  object to be set as the currently prepared row.
+
 
 ## Exceptions
 

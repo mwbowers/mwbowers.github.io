@@ -15,22 +15,22 @@ Converts an object to a parameter list value provided with the parameter value, 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Parameter* 
-        </dt>
-        <dd>[ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  
-						The program parameter object in the parameter list to get the value of.</dd>
-        <dt>
+
+: [ASNA.DataGate.DataLink.ProgParm](prog-parm-class.html).  
+						The program parameter object in the parameter list to get the value of.
+
  *Value* 
-        </dt>
-        <dd>			Object.  The object to be converted. </dd>
-        <dt>
+
+: 			Object.  The object to be converted. 
+
  *Element* 
-        </dt>
-        <dd>					Integer. For paths including multiple-occurrence parameters, a zero-relative 
-											index identifying the element of the array to get the value of. </dd>
-</dl>
+
+: 					Integer. For paths including multiple-occurrence parameters, a zero-relative 
+											index identifying the element of the array to get the value of. 
+
 
 ## Requirements
 

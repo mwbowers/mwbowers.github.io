@@ -15,18 +15,18 @@ Begins an automatic database transaction creating an instance of an [IAdgTransac
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Name* 
-        </dt>
-        <dd>An arbitrary string naming the transaction. </dd>
-        <dt>
+
+: An arbitrary string naming the transaction. 
+
  *Options* 
-        </dt>
-        <dd>A string containing database provider platform-dependent command options for 
+
+: A string containing database provider platform-dependent command options for 
 								initiating the transaction. Otherwise, the empty string or a null reference.
-							</dd>
-</dl>
+							
+
 
 ## Return Value
 

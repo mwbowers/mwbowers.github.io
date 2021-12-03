@@ -14,15 +14,15 @@ Returns an array of [SourceProfile](source-profile-class.html) objects currently
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *publicDbs* 
-        </dt>
-        <dd>
+
+: 
  **Boolean** . **True**  if this is a public 
 						database.
-					</dd>
-</dl>
+					
+
 
 ## Returns
 

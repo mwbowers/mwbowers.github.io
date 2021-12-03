@@ -14,15 +14,15 @@ Add a prepared row to the table for a particular format.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *iFormat* 
-        </dt>
-        <dd>
+
+: 
 
 The zero-relative index of the format corresponding to the table to which the prepared row will be added. A suitable value for *iFormat* could be passed to the [GetFormatName](adg-dataset-class-get-format-name-method.html) method to obtain the format name.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

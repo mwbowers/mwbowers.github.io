@@ -14,15 +14,15 @@ title: AuthorityEntry(string)
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *username* 
-        </dt>
-        <dd>
+
+: 
 
 **String** . A non-group profile name. See the [ UserName](authority-entry-class-username-field.html) field.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

@@ -14,25 +14,25 @@ The **NewMember** method creates a new instance of [IMember](imember-class.html)
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *cn* 
 <dl>
-        <dd>
+: 
 
 An instance of the [AdgConnection](adg-connection-class.html) class representing a database connection to the server.
-</dd>
+
         <dt />
 </dl>
 
 *PathName* 
 <dl>
-        <dd>
+: 
 
 String. The path name of a new or existing database member object, including the name of the file containing the member.
-</dd>
+
 </dl>
 
 ## Returns

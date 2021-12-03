@@ -16,26 +16,26 @@ Assign a value to a print control property.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *fieldName* 
-        </dt>
-        <dd>
+
+: 
  **String** .  The field in the format represented by **IPrintProperties** 
-						associated with the print control. </dd>
-        <dt>
+						associated with the print control. 
+
  *propName* 
-        </dt>
-        <dd>
+
+: 
  **String** .  The property name of the print control to obtain 
-								the value of.  </dd>
-        <dt>
+								the value of.  
+
  *val* 
-        </dt>
-        <dd>
+
+: 
  **Object** .  The value to assign to the property.
-									</dd>
-</dl>
+									
+
 
 ## Exceptions
 

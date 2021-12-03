@@ -16,31 +16,31 @@ Delete a set of database file records which contain key values in a given range.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *firstKey* 
-        </dt>
-        <dd>An [AdgKeyTable](adg-key-table-class.html) instance representing 
-						the key value used as the upper limit for the range. </dd>
-        <dt>
+
+: An [AdgKeyTable](adg-key-table-class.html) instance representing 
+						the key value used as the upper limit for the range. 
+
  *rangeFirst* 
-        </dt>
-        <dd>
+
+: 
 [RangeFirst](range-first-enumeration.html). Specifies how the method 
 			should process records with key values equal to the limit value given by *firstKey* .
-								</dd>
-        <dt>
+								
+
  *lastKey* 
-        </dt>
-        <dd>An **AdgKeyTable**  instance representing the key value used as the 
-			lower limit for the range. </dd>
-        <dt>
+
+: An **AdgKeyTable**  instance representing the key value used as the 
+			lower limit for the range. 
+
  *rangelast* 
-        </dt>
-        <dd>
+
+: 
 [RangeLast](range-last-enumeration.html). Specifies how the method 
-			should process records with key values equal to the limit value given by *lastKey* .</dd>
-</dl>
+			should process records with key values equal to the limit value given by *lastKey* .
+
 
 ## Exceptions
 

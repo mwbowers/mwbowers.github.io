@@ -15,16 +15,16 @@ Returns an object of a specific type from the program parameter list provided wi
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ReturnType* 
-        </dt>
-        <dd>System.Type.  The requested type of the object returned by the method. </dd>
-        <dt>
+
+: System.Type.  The requested type of the object returned by the method. 
+
  *ParameterName* 
-        </dt>
-        <dd>		The name or path of the program data area.</dd>
-</dl>
+
+: 		The name or path of the program data area.
+
 
 ## Requirements
 

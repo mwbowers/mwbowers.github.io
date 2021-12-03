@@ -14,14 +14,14 @@ Opens a database file for access and returns a new [ AdgDataset](adg-dataset-cla
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>A reference to a DataSet object ( **AdgDataSet** ) created by this method and 
+
+: A reference to a DataSet object ( **AdgDataSet** ) created by this method and 
 						corresponding to the file to be opened.
-					</dd>
-</dl>
+					
+
 
 ## Exceptions
 

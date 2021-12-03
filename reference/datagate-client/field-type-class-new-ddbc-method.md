@@ -11,19 +11,19 @@ Creates a new fixed-width double-byte character [FieldType](field-type-class.htm
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *length* 
-        </dt>
-        <dd>Integer.  The length of the field in double-byte characters. </dd>
-        <dt>
+
+: Integer.  The length of the field in double-byte characters. 
+
  *fmt* 
-        </dt>
-        <dd>
+
+: 
 [DbcsFormat](dbcs-format-enumeration.html).  The format of the 
 								double-byte character **FieldType** .
-							</dd>
-</dl>
+							
+
 
 ## Exceptions
 

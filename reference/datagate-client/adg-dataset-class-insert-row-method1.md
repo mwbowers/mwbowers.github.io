@@ -14,22 +14,22 @@ Insert a row into the Dataset table for a particular format and relative record 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *iFormat* 
-        </dt>
-        <dd>
+
+: 
 
 **Int32** . The zero-relative index of the format corresponding to the table to which the prepared row will be added. A suitable value for *iFormat* could be passed to the [GetFormatName](adg-dataset-class-get-format-name-method.html) method to obtain the format name.
-</dd>
-        <dt>
+
+
  *rrn* 
-        </dt>
-        <dd>
+
+: 
 
 **Int32** . A positive integer value reflecting the position of the record after insertion into the table. Specifying a value greater than the number of records in the table results in the record being appended to the end of the table.
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

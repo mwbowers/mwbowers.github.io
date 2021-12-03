@@ -21,50 +21,49 @@ This **ReadXml** method returns an instance of an [IAdgObject](iadg-object-class
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *cn* 
-        </dt>
-        <dd>
+
+: 
 
 An instance of the [AdgConnection](adg-connection-class.html) class representing a database connection to the server.
-</dd>
-        <dt>
+
+
  *containerPath* 
-        </dt>
-        <dd>
+
+: 
 
 String. The pathname of a pre-existing database object container for the [ IAdgObject](iadg-object-class.html) to be created by this method.
-</dd>
-        <dt>
+
+
  *docObjectType* 
-        </dt>
-        <dd>
+
+: 
 
 [AdgObjectTypes](adg-object-types-enumeration.html). Used to specify the database object type to be created. This value is used to validate the XML description of the database object.
-</dd>
-        <dt>
- *reader* 
-        </dt>
-        <dd>
 
-**System.Xml.XmlReader** . The input stream positioned at the beginning of the XML description of the database object **.** 
-</dd>
-        <dt>
+
+ *reader* 
+
+: 
+
+**System.Xml.XmlReader** . The input stream positioned at the beginning of the XML description of the database object **.**
+
  *options* 
-        </dt>
-        <dd>
+
+: 
 
 [XmlOptions](xml-options-enumeration.html). Input options for interpreting the XML description, and creating the **IAdgObject** . Valid values are defined by the **XmlOptions** Enumeration.
-</dd>
-        <dt>
+
+
  *observer* 
-        </dt>
-        <dd>
+
+: 
 
 [XmlInfoEventHandler](xml-info-event-handler-delegate.html). Delegate providing feedback in the form of text messges relating the progress of the operation. If no feedback is desired, specify null.
-</dd>
-</dl>
+
+
 
 ## Returns
 

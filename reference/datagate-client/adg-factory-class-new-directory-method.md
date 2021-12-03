@@ -15,25 +15,25 @@ The **NewDirectory** method creates a new instance of [IDirectory](idirectory-cl
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *cn* 
 <dl>
-        <dd>
+: 
 
 An instance of [AdgConnection](adg-connection-class.html) representing a database connection to the server.
-</dd>
+
         <dt />
 </dl>
 
 *PathName* 
 <dl>
-        <dd>
+: 
 
 String. The path name of a new or existing database library object.
-</dd>
+
 </dl>
 
 ## Returns

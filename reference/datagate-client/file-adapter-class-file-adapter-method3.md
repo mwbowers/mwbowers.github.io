@@ -14,18 +14,18 @@ Constructs an instance of the [FileAdapter](file-adapter-class.html) object with
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *cn* 
-        </dt>
-        <dd>An instance of **AdgConnection**  used to initialize the [
-							Connection](file-adapter-class-connection-property.html) property. </dd>
-        <dt>
+
+: An instance of **AdgConnection**  used to initialize the [
+							Connection](file-adapter-class-connection-property.html) property. 
+
  *FileName* 
-        </dt>
-        <dd>A string used to initialize the [FileName](file-adapter-class-file-name-property.html) property.
-							</dd>
-</dl>
+
+: A string used to initialize the [FileName](file-adapter-class-file-name-property.html) property.
+							
+
 
 ## Remarks
 

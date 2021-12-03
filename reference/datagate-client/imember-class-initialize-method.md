@@ -14,24 +14,24 @@ Initialize a specific number of records in the database file member represented 
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *Options* 
 <dl>
-        <dd>
+: 
 
 [InitMemberOptions](init-member-options-enumeration.html). The kind of record initialization to perform.
-</dd>
+
 </dl>
 
 *Records* 
 <dl>
-        <dd>
+: 
 
 **System.Int64** . A non-negative number of records to add to the database object.
-</dd>
+
 </dl>
 
 ## Exceptions

@@ -15,18 +15,18 @@ Returns an object of a specific type from the program parameter list provided wi
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Parameter* 
-        </dt>
-        <dd><a href="DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a>.  
-						The program parameter object in the parameter list to get the value of.</dd>
-        <dt>
+
+: <a href="DCS160-F1071E27-0001DD">ASNA.DataGate.DataLink.ProgParm</a>.  
+						The program parameter object in the parameter list to get the value of.
+
  *ReturnType* 
-        </dt>
+
         <dt />
-        <dd>			System.Type.  The requested type of the object returned by the method.</dd>
-</dl>
+: 			System.Type.  The requested type of the object returned by the method.
+
 
 ## Requirements
 

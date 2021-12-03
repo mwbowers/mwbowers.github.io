@@ -14,19 +14,19 @@ Converts the named database into a SourceProfile object.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *dbName* 
-        </dt>
-        <dd>
- **String** . The name of the database.  </dd>
-        <dt>
+
+: 
+ **String** . The name of the database.  
+
  *bFromRegistry* 
-        </dt>
-        <dd>
+
+: 
  **Boolean.**   Only if True, *dbName*  refers to 
-								registered database name.</dd>
-</dl>
+								registered database name.
+
 
 ## Returns
 

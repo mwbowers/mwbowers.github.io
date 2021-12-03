@@ -14,18 +14,18 @@ Change the status of a deleted record to undeleted and update its contents.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>The DataSet object ([AdgDataSet](adg-dataset-class.html)) containing 
-						the updated record to be reused. </dd>
-        <dt>
+
+: The DataSet object ([AdgDataSet](adg-dataset-class.html)) containing 
+						the updated record to be reused. 
+
  *RRN* 
-        </dt>
-        <dd>		The relative record number of the record to reuse.
-							</dd>
-</dl>
+
+: 		The relative record number of the record to reuse.
+							
+
 
 ## Exceptions
 

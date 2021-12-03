@@ -12,14 +12,14 @@ Returns the currently registered database names available for use in a program.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *publicDbs* 
-        </dt>
-        <dd>
+
+: 
  **True**  if this is a public database.
-					</dd>
-</dl>
+					
+
 
 ## Returns
 

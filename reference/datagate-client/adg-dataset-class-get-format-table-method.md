@@ -14,12 +14,12 @@ Returns the DataTable object for a particular file format specified by index.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *iFormat* 
-        </dt>
-        <dd>Integer identifying a file format in the **AdgDataSet** .</dd>
-</dl>
+
+: Integer identifying a file format in the **AdgDataSet** .
+
 
 ## Exceptions
 

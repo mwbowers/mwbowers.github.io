@@ -12,14 +12,14 @@ title: IDirectory.CreateSubDirectory Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *name* 
-        </dt>
-        <dd>
+
+: 
 String. Specifies the base name of the new library. This must not be a full or relative path name.
-</dd>
-</dl>
+
+
 
 ## Returns
 

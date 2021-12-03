@@ -14,16 +14,16 @@ title: IFileObject.WriteCreationAttributes Method
 
 ## Parameters
 
-<dl>
+
         <dt />
-</dl>
+
 
 *writer* 
 <dl>
-        <dd>
+: 
 
 **System.Xml.XmlWriter** . The XML stream to which the file creation-time attributes will be written.
-</dd>
+
 </dl>
 
 ## Exceptions

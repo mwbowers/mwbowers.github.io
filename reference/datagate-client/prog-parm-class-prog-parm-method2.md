@@ -12,20 +12,20 @@ Construct a representation of a complex iSeries program parameter.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *st* 
-        </dt>
-        <dd>
+
+: 
 [StructureType](structure-type-class.html). The data type 
-						description of the structured program parameter. </dd>
-        <dt>
+						description of the structured program parameter. 
+
  *dir* 
-        </dt>
-        <dd>
+
+: 
 [ASNA.DataGate.Common.DataDirection](data-direction-enumeration.html). 
-								The declared input/output orientation of the parameter.</dd>
-</dl>
+								The declared input/output orientation of the parameter.
+
 
 ## Remarks
 

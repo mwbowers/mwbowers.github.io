@@ -11,12 +11,12 @@ Creates a new fixed-width character [ FieldType](field-type-class.html).
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *length* 
-        </dt>
-        <dd>Integer.  The length of the field in single-byte characters.</dd>
-</dl>
+
+: Integer.  The length of the field in single-byte characters.
+
 
 ## Exceptions
 

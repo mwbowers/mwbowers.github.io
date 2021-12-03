@@ -16,30 +16,30 @@ Read a database file record using the specified key.
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *ds* 
-        </dt>
-        <dd>[AdgDataSet](adg-dataset-class.html). The DataSet object to which a 
-						single record will be added. </dd>
-        <dt>
+
+: [AdgDataSet](adg-dataset-class.html). The DataSet object to which a 
+						single record will be added. 
+
  *mode* 
-        </dt>
-        <dd>[ReadRandomMode](read-random-mode-enumeration.html). Specifies the 
+
+: [ReadRandomMode](read-random-mode-enumeration.html). Specifies the 
 								manner in which a record with the specified key is to be located (Equal, 
-								Greater, GTEQ). </dd>
-        <dt>
+								Greater, GTEQ). 
+
  *lr* 
-        </dt>
-        <dd>[LockRequest](lock-request-enumeration.html). Specifies how the 
-										record read is to be locked. </dd>
-        <dt>
+
+: [LockRequest](lock-request-enumeration.html). Specifies how the 
+										record read is to be locked. 
+
  *keyTable* 
-        </dt>
-        <dd>An [AdgKeyTable](adg-key-table-class.html) instance specifying 
+
+: An [AdgKeyTable](adg-key-table-class.html) instance specifying 
 												the key to search for.
-											</dd>
-</dl>
+											
+
 
 ## Exceptions
 

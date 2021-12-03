@@ -14,16 +14,16 @@ Create a **DataRow** object in preparation for adding it to the **AdgDataSet** .
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
           <span> *strFormat* 
           </span>
-        </dt>
-        <dd>
+
+: 
           <span/>A string identifying the format corresponding to the **DataTable**  to which the created **DataRow**  can be 
 						added.
-					</dd>
-</dl>
+					
+
 
 ## Return Value
 

@@ -14,22 +14,22 @@ title: IAdgObject.RevokeAuthority Method
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *userName* 
-        </dt>
-        <dd>
+
+: 
 
 **String** . The name of the user whose authority is being revoked.
-</dd>
-        <dt>
+
+
  *authorityType* 
-        </dt>
-        <dd>
+
+: 
 
 [AuthorityTypes](authority-types-enumeration.html). The authority being revoked for the user and [IAdgObject](iadg-object-class.html).
-</dd>
-</dl>
+
+
 
 ## Exceptions
 

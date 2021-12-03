@@ -15,20 +15,20 @@ Constructs an instance of [SourceProfile](source-profile-class.html) that is an 
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *NewName* 
-        </dt>
-        <dd>String.  Sets the value of the **DatabaseName**  property. 
-						</dd>
-        <dt>
+
+: String.  Sets the value of the **DatabaseName**  property. 
+						
+
  *sp* 
-        </dt>
-        <dd>
+
+: 
 [SourceProfile](source-profile-class.html). The **SourceProfile** 
 								to be copied by the constructed object.
-							</dd>
-</dl>
+							
+
 
 ## Exceptions
 

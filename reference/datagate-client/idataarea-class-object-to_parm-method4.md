@@ -16,22 +16,22 @@ Converts an object to a data area value provided with the parameter type, value,
 
 ## Parameters
 
-<dl>
-        <dt>
+
+
  *Value* 
-        </dt>
+
         <dt />
-        <dd>	Object.  The object to be converted. </dd>
-        <dt>
+: 	Object.  The object to be converted. 
+
  *ParameterName* 
-        </dt>
-        <dd>			The name or path of the program data area. </dd>
-        <dt>
+
+: 			The name or path of the program data area. 
+
  *ElementIndices* 
-        </dt>
-        <dd>					Integer. For paths including multiple-occurrence parameters, the indices in the 
-											path to the data area. </dd>
-</dl>
+
+: 					Integer. For paths including multiple-occurrence parameters, the indices in the 
+											path to the data area. 
+
 
 ## Requirements
 
