@@ -89,7 +89,7 @@ The *packageSources* should contain the name of the source you added in the step
     <GitHub-AsnaQSys>
       <add key="username" value="MyGitHubName" />
       <add key="cleartextpassword" value="MyGitHubToken" />
-    <GitHub-AsnaQSys>
+    </GitHub-AsnaQSys>
   </packageSourceCredentials>
 ```
 
