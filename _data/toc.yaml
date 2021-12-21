@@ -249,6 +249,8 @@ Manuals:
     section:
     - title: Database Names
       path: /manuals/configuration/database-names.html
+    - title: Expo Website Configuration
+      path: /manuals/configuration/expo-website.html
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Using Non-Display File Pages
