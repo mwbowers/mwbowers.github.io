@@ -267,6 +267,11 @@ Manuals:
       path: /manuals/mom/printing
     - title: Batch Processor
       path: /manuals/mom/batch-processor
+  - sectiontitle: Monarch Cocoon
+    sectionpath: /manuals/cocoon/cocoon-overview.html
+    section:
+    - title: CL User Defined Command Migration
+      path: /manuals/cocoon/cl-user-def-commands.html
 
 ##
 Reference:
