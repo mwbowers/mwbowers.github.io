@@ -77,7 +77,8 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 | constructor_parm[^2] | Indicates if this is a constructor parameter (*True). When used, prop_name is invalid and by must be "reference". |
 
 <br>
-## Example : CL User defined Command calls a Program.
+
+## Example 1: CL User defined Command calls a Program.
 
 A simple use case would be where we have a User defined Command, for example: "SYSM60C" that should call an IBM i command in the system with the same name. That IBM i command may be implemented as a *PGM object (the source could have been RPGLE or CL - not relevant for this discussion - ).
 
@@ -147,6 +148,49 @@ EndClass
 ```
 
 >Note: For simplicity sake, the *using* statements and migration comments at the top of the source have been removed.
+
+<br>
+
+## Example 2: Optional parameters with default value.
+
+Following the same User Defined command "SYSM60C" as in Example 1, let's:
+1. Add line comments before each of the parameters using the legacy text (from IBM i CMD language).
+2. Declare an *Optional* (non-required) parameter with a default value.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ClassTemplate>
+  <command name="SYSM60C" program_name="ACME.MSYS.ERP.SYSM60C" >
+      <!-- PARM KWD(PTYP) TYPE(*CHAR) LEN(001) RSTD(*YES) DFT(F) VALUES(F L X) PROMPT('F=Form, L=Label, X=File Form') -->
+      <parameter keyword="PTYP" data_type = "*Char" data_len="1" by="value" required="No" default_value="'F'"/>
+
+      <!-- PARM KWD(PRET) TYPE(*DEC) LEN(2 0) RTNVAL(*YES) VARY(*NO) PASSATR(*NO) PASSVAL(*DFT) PROMPT('param - return code')  -->                         
+      <parameter keyword="PRET" data_type = "*Dec" data_len="10,2"/>
+
+      <!-- PARM KWD(PRET) TYPE(*DEC) LEN(2 0) RTNVAL(*YES) VARY(*NO) PASSATR(*NO) PASSVAL(*DFT) PROMPT('param - return code')  -->
+      <parameter keyword="PFNM" data_type = "*Char" data_len="10"/>
+  </command>
+</ClassTemplate>
+```
+
+Note:
+
+1. There is no validation when migrating User defined commands. It is assumed that the CL Program compiles successfully on the IBM i. Therefore keywords such as RSTD, RTNVAL, etc. are not specified.
+2. For default values, if the value is of type *Char, include single quotes.
+3. Since the default value for "PTYP" is a value, use the attribute `by="value"`.
+4. There is no prompting. (Commands are executed programmatically - not by a command processing program - ).
+5. Cocoon's **Translation Dictionary** Panel does not colorize XML, comments are more visible if you prepare the XML using an external editor, such as Visual Studio. 
+
+Using the same CL program (from Example 1), the migration for just the User defined command, is:
+
+```cs
+        CALLD ACME.MSYS.ERP.SYSM60C
+            DclParm PTYP_14 CpyFrom('F') Len(1)
+            DclParm _PRET 
+            DclParm _PFNM 
+```
+
+>The field `PTYP_14` created in the DclParm to complete the `CpyFrom` is auto-generated using the name of the keyword and a semi-random numeric value.
 
 <br>
 <br>
