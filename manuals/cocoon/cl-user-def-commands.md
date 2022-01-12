@@ -63,7 +63,7 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 | Attribute | Description | Default value |
 | --- | --- | --- |   
 | keyword         | The name of the keyword in the legacy source code that is being defined. | (Required)
-| data_type       | The type of parameter. (See [Advanced parameter Data Types](https://asnaqsys.github.io/manuals/cocoon/cl-user-def-commands.html#advanced-parameter-data-types])). | (Required)
+| data_type       | The type of parameter. (See [Advanced parameter data-types](https://asnaqsys.github.io/manuals/cocoon/cl-user-def-commands.html#advanced-parameter-data-types)). | (Required)
 | data_len        | The length of parameter. | (Required)
 | prop_name[^1]   | The name of the property to receive the parameter | 
 | element_list    | The name of the property to receive the parameter |
