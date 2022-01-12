@@ -53,6 +53,9 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 | function_name | The name of a specific function to be used to migrate this particular user-defined command. | |
 | ignore        | Whether or not to ignore this command during migration. | false |
 
+>Note: Either **program_name** or **function_name** must be provided.
+
+<br>
 <br>
 
 ## Parameter Element Node
@@ -60,9 +63,9 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 | Attribute | Description | Default value |
 | --- | --- | --- |   
 | keyword         | The name of the keyword in the legacy source code that is being defined. | (Required)
-| data_type       | The type of parameter. | (Required)
+| data_type       | The type of parameter. (See [Advanced parameter Data Types](https://asnaqsys.github.io/manuals/cocoon/cl-user-def-commands.html#advanced-parameter-data-types])). | (Required)
 | data_len        | The length of parameter. | (Required)
-| prop_name       | The name of the property to receive the parameter | 
+| prop_name[^1]   | The name of the property to receive the parameter | 
 | element_list    | The name of the property to receive the parameter |
 | by              | How the parameter is passed, "value" or "reference" |
 | element_list    | Contains a list of elements. |
@@ -71,7 +74,7 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 | required        | Indicates if the parameter is required (*Yes) or not (*No). |
 | position        | Position of the parameter. |
 | default_value   | Default value of the parameter. |
-| constructor_parm | Indicates if this is a constructor parameter (*True). When used, prop_name is invalid and by must be "reference". |
+| constructor_parm[^2] | Indicates if this is a constructor parameter (*True). When used, prop_name is invalid and by must be "reference". |
 
 <br>
 ## Example : CL User defined Command calls a Program.
@@ -96,6 +99,8 @@ The following is a simple **ExampleCL_Program** using the User-defined "SYSM60C"
 0005.00                                                                                040826
 0006.00             ENDPGM                                                             040826
 ```
+
+<br>
 
 >Note: The variables &PRET and &PFNM do not have any value assigned to keep the example simple. In the real world scenario, these variables should have a value populated according to logic in the CL program.
 
@@ -157,3 +162,15 @@ In addition to the basic data-types ( "*Char", "*Dec", "*String", "*Integer", et
 | ListOfFile_Path | is a list of file_path (<library/name>) values.
 | file_path       | is a string in the form of <library/name> where library can be *LIBL or *CURLBL.
 | RangeOfInt      | is two values, 'from' and 'to', where 'from' value is less than the 'to' value.
+
+
+
+<br>
+<br>
+<br>
+
+---
+
+[^1]: Only applies when Command **function_name** is used (not when **program_name** is used.)
+[^2]: Only applies for 'class' types.
+
