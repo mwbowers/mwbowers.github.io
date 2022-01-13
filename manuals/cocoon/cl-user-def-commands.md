@@ -60,13 +60,12 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 
 ## Parameter Element Node
 
-| Attribute | Description | Default value |
+| Attribute | Description | Notes |
 | --- | --- | --- |   
 | keyword         | The name of the keyword in the legacy source code that is being defined. | (Required)
-| data_type       | The type of parameter. (See [Advanced parameter data-types](https://asnaqsys.github.io/manuals/cocoon/cl-user-def-commands.html#advanced-parameter-data-types)). | (Required)
-| data_len        | The length of parameter. | (Required)
+| data_type       | The type of parameter. (See [Advanced parameter data-types](https://asnaqsys.github.io/manuals/cocoon/cl-user-def-commands.html#advanced-parameter-data-types)). |
+| data_len        | The length of parameter. |
 | prop_name[^1]   | The name of the property to receive the parameter | 
-| element_list    | The name of the property to receive the parameter |
 | by              | How the parameter is passed, "value" or "reference" |
 | element_list    | Contains a list of elements. |
 | legacy_values   | The list of possible values that the parameter may contain, which will be replaced by the corresponding migrate_values.
@@ -198,7 +197,7 @@ Using the same CL program (from Example 1), the migration for just the User defi
 
 ## Advanced parameter *data-types*
 
-In addition to the basic data-types ( "*Char", "*Dec", "*String", "*Integer", etc.), the *data-type* parameter attribute may define the following advanced types.
+In addition to the basic data-types ( "\*Char", "\*Dec", etc. ), the *data-type* parameter attribute may define the following advanced types.
 
 | Value | Description | 
 | --- | --- | 
