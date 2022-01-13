@@ -167,7 +167,7 @@ Following the same User Defined command "SYSM60C" as in Example 1, let's:
       <!-- PARM KWD(PRET) TYPE(*DEC) LEN(2 0) RTNVAL(*YES) VARY(*NO) PASSATR(*NO) PASSVAL(*DFT) PROMPT('param - return code')  -->                         
       <parameter keyword="PRET" data_type = "*Dec" data_len="10,2"/>
 
-      <!-- PARM KWD(PRET) TYPE(*DEC) LEN(2 0) RTNVAL(*YES) VARY(*NO) PASSATR(*NO) PASSVAL(*DFT) PROMPT('param - return code')  -->
+      <!-- PARM KWD(PFNM) TYPE(*CHAR) LEN(010) PROMPT('Param print file name')  -->
       <parameter keyword="PFNM" data_type = "*Char" data_len="10"/>
   </command>
 </ClassTemplate>
