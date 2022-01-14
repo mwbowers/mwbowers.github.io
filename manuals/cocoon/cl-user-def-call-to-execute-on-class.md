@@ -18,7 +18,7 @@ A call to an `Execute` method is made.
 | Attribute | Description | Default value |
 | --- | --- | --- |   
 | name          | The name of the user defined command in the legacy source code that is being redefined. | (Required) |
-| class_name    | Name of the class implementing the Command.\n (Should implement an `Execute` function - or method in C# terminology). May be fully qualified. | |
+| class_name    | Name of the class implementing the Command.<br/> (Should implement an `Execute` function - or method in C# terminology).<br/> May be fully qualified. | |
 
 
 <br>
