@@ -268,10 +268,18 @@ Manuals:
     - title: Batch Processor
       path: /manuals/mom/batch-processor
   - sectiontitle: Monarch Cocoon
-    sectionpath: /manuals/cocoon/cocoon-overview.html
     section:
-    - title: CL User Defined Command Migration
-      path: /manuals/cocoon/cl-user-def-commands.html
+    - sectiontitle: CL User Defined Command Migration
+      sectionpath: /manuals/cocoon/cl-user-def-commands.html
+      section:
+      - title: CallD to Program
+        path: /manuals/cocoon/cl-user-def-calld-to-program.html
+      - title: Call to Function
+        path: /manuals/cocoon/cl-user-def-call-to-function.html
+      - title: Instance new class and Call Execute
+        path: /manuals/cocoon/cl-user-def-call-to-execute-on-class.html
+      - title: XML Dictionary Schema
+        path: /manuals/cocoon/cl-user-def-schema.html
 
 ##
 Reference:

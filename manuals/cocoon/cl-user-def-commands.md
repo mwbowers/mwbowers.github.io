@@ -40,180 +40,24 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 </ClassTemplate>
 ```
 
+<br>
+
 >Note: as any XML structure, *Element Node names* are unquoted and use "<" and ">" to define their hierarchy in the structure (with a "/" in the name to designate the end of the definition). *Element Nodes* may define *Attributes*. *Attributes* may have a string value (quoted) indicated with a "=" sign.
 
 <br>
 
-## Command Element Node
+## Migration Targets to handle User Defined CL Commands
 
-| Attribute | Description | Default value |
-| --- | --- | --- |   
-| name          | The name of the user defined command in the legacy source code that is being redefined. | (Required)
-| program_name  | The name of the specific program to be used to migrate this user-defined command. Name may be qualified with namespace. | |
-| function_name | The name of a specific function to be used to migrate this particular user-defined command. | |
-| ignore        | Whether or not to ignore this command during migration. | false |
+1. User Defined Command [translated to a CALLD](/manuals/cocoon/cl-user-def-calld-to-program) (Call to a migrated Program).
+2. User Defined Command [translated to a CALL to a function](/manuals/cocoon/cl-user-def-call-to-function)) (method in C# terms). Alternatively allowing CL Program to specify the extended CL Program class to be overridden to a different base class (where the User Defined functions are implemented).
+3. User Defined Command [translated to instantiation of a new user-defined class and call a to "Execute" method](/manuals/cocoon/cl-user-def-call-to-execute-on-class). The new user-defined class defines properties for each possible parameter. The Migration consists on the instantiation of the class, population of the properties, and then a call to a `Execute` function (method in C# terms).
 
->Note: Either **program_name** or **function_name** must be provided.
+<br>
+
+>Each Migration Target implementation has its advantages and disadvantages. It is really a Migration preference.
 
 <br>
 <br>
 
-## Parameter Element Node
-
-| Attribute | Description | Notes |
-| --- | --- | --- |   
-| keyword         | The name of the keyword in the legacy source code that is being defined. | (Required)
-| data_type       | The type of parameter. (See [Advanced parameter data-types](https://asnaqsys.github.io/manuals/cocoon/cl-user-def-commands.html#advanced-parameter-data-types)). |
-| data_len        | The length of parameter. |
-| prop_name[^1]   | The name of the property to receive the parameter | 
-| by              | How the parameter is passed, "value" or "reference" |
-| element_list    | Contains a list of elements. |
-| legacy_values   | The list of possible values that the parameter may contain, which will be replaced by the corresponding migrate_values.
-| migrate_values  | The list of enumeration or constant values that will replace the corresponding legacy_values. For example, if legacy_values contained "*ADD, *REPL, *DEL" the corresponding values in migrate_values could be "enum.ADD, enum.REPLACE, enum.DELETE" to indicate the enumeration values to replace the legacy_values. |
-| required        | Indicates if the parameter is required (*Yes) or not (*No). |
-| position        | Position of the parameter. |
-| default_value   | Default value of the parameter. |
-| constructor_parm[^2] | Indicates if this is a constructor parameter (*True). When used, prop_name is invalid and by must be "reference". |
-
-<br>
-
-## Example 1: CL User defined Command calls a Program.
-
-A simple use case would be where we have a User defined Command, for example: "SYSM60C" that should call an IBM i command in the system with the same name. That IBM i command may be implemented as a *PGM object (the source could have been RPGLE or CL - not relevant for this discussion - ).
-
-Let's assume that the "SYSM60C" command has been migrated and it now exists in the *namespace* "ACME.ERP".
-
-Let's also assume that "ACME.ERP.SYSM60C" accepts two parameters: **PRET** (Program return Value) and **PFNM** (Printer Filename).
-
-The following is a simple **ExampleCL** using the User-defined "SYSM60C" command:
-
-
-```
-0001.00             PGM                                                                040826
-0002.00                                                                                040826
-0002.01             DCL        VAR(&PRET) TYPE(*DEC) LEN(2 0)                          000000
-0002.01             DCL        &pfnm            *char   10                             000000
-0002.02                                                                                000000
-0003.01             SYSM60C    PRET(&PRET) PFNM(&PFNM)                                 040826
-0004.00             RETURN                                                             040826
-0005.00                                                                                040826
-0006.00             ENDPGM                                                             040826
-```
-
-<br>
-
->Note: The variables &PRET and &PFNM do not have any value assigned to keep the example simple. In the real world scenario, these variables should have a value populated according to logic in the CL program.
-
-The *CL User Defined Commands* Dictionary may be defined as the following:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<ClassTemplate>
-  <command name="SYSM60C" program_name="ACME.ERP.SYSM60C" >
-      <parameter keyword="PRET" data_type = "*Dec" data_len="10,2"/>
-      <parameter keyword="PFNM" data_type = "*Char" data_len="10"/>
-  </command>
-</ClassTemplate>
-```
-
->Note: For clarity, we removed any other command defined in the Dictionary.
-
-When the CL Program listed in this example (which calls "SYSM60C") gets migrated using the *CL User Defined Commands* Dictionary in this example, the following is the Migrated source:
-
-```cs
-BegClass ExampleCL Extends(CLProgram) Access(*Public)
-
-    DclFld _PRET             Type( *Packed  )     Len(2, 0)
-    DclFld _pfnm             Type( *Char    )     Len(10)
-
-//------------------------------------------------------------------------------ 
-//  "*Entry" Mainline Code (Monarch generated)
-//------------------------------------------------------------------------------ 
-    BegProc *Entry Access( *Public )
-
-        *INLR = *ON
-
-
-        CALLD ACME.ERP.SYSM60C
-            DclParm _PRET 
-            DclParm _PFNM 
-        
-        Return
-
-
-    EndProc
-
-EndClass
-```
-
->Note: For simplicity sake, the *using* statements and migration comments at the top of the source have been removed.
-
-<br>
-
-## Example 2: Optional parameters with default value.
-
-Following the same User Defined command "SYSM60C" as in Example 1, let's:
-1. Add line comments before each of the parameters using the legacy text (from IBM i CMD language).
-2. Declare an *Optional* (non-required) parameter with a default value.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<ClassTemplate>
-  <command name="SYSM60C" program_name="ACME.ERP.SYSM60C" >
-      <!-- PARM KWD(PTYP) TYPE(*CHAR) LEN(001) RSTD(*YES) DFT(F) VALUES(F L X) PROMPT('F=Form, L=Label, X=File Form') -->
-      <parameter keyword="PTYP" data_type = "*Char" data_len="1" by="value" required="No" default_value="'F'"/>
-
-      <!-- PARM KWD(PRET) TYPE(*DEC) LEN(2 0) RTNVAL(*YES) VARY(*NO) PASSATR(*NO) PASSVAL(*DFT) PROMPT('param - return code')  -->                         
-      <parameter keyword="PRET" data_type = "*Dec" data_len="10,2"/>
-
-      <!-- PARM KWD(PFNM) TYPE(*CHAR) LEN(010) PROMPT('Param print file name')  -->
-      <parameter keyword="PFNM" data_type = "*Char" data_len="10"/>
-  </command>
-</ClassTemplate>
-```
-
-Note:
-
-1. There is no validation when migrating User defined commands. It is assumed that the CL Program compiles successfully on the IBM i. Therefore keywords such as RSTD, RTNVAL, etc. are not specified.
-2. For default values, if the value is of type *Char, include single quotes.
-3. Since the default value for "PTYP" is a value, use the attribute `by="value"`.
-4. There is no prompting. (Commands are executed programmatically - not by a command processing program - ).
-5. Cocoon's **Translation Dictionary** Panel does not colorize XML, comments are more visible if you prepare the XML using an external editor, such as Visual Studio. 
-
-Using the same CL program (from Example 1), the migration for just the User defined command, is:
-
-```cs
-        CALLD ACME.ERP.SYSM60C
-            DclParm PTYP_14 CpyFrom('F') Len(1)
-            DclParm _PRET 
-            DclParm _PFNM 
-```
-
->The field `PTYP_14` created in the DclParm to complete the `CpyFrom` is auto-generated using the name of the keyword and a semi-random numeric value.
-
-<br>
-<br>
-<br>
-
-## Advanced parameter *data-types*
-
-In addition to the basic data-types ( "\*Char", "\*Dec", etc. ), the *data-type* parameter attribute may define the following advanced types.
-
-| Value | Description | 
-| --- | --- | 
-| ListOfInt       | indicates that the CL Agent should use property indexers and removed quotes from values. 
-| ListOfFile_Path | is a list of file_path (<library/name>) values.
-| file_path       | is a string in the form of <library/name> where library can be *LIBL or *CURLBL.
-| RangeOfInt      | is two values, 'from' and 'to', where 'from' value is less than the 'to' value.
-
-
-
-<br>
-<br>
-<br>
-
----
-
-[^1]: Only applies when Command **function_name** is used (not when **program_name** is used.)
-[^2]: Only applies for 'class' types.
+See also [CL User Defined Commands Dictionary XML Schema](/manuals/cocoon/cl-user-def-schema) 
 
