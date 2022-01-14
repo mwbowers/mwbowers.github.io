@@ -40,10 +40,11 @@ title: CL User Defined Commands Dictionary XML Schema
 
 | Attribute | Description | Default value |
 | --- | --- | --- |   
-| name          | The name of the user defined command in the legacy source code that is being redefined. | (Required)
-| program_name  | The name of the specific program to be used to migrate this user-defined command. Name may be qualified with namespace. | |
-| function_name | The name of a specific function to be used to migrate this particular user-defined command. | |
-| ignore        | Whether or not to ignore this command during migration. | false |
+| name           | The name of the user defined command in the legacy source code that is being redefined. | (Required)
+| program_name   | The name of the specific program to be used to migrate this user-defined command. Name may be qualified with namespace. | |
+| function_name  | The name of a specific function to be used to migrate this particular user-defined command. | |
+| class_name[^1] | Name of the class where function_name is implemented    | |
+| ignore         | Whether or not to ignore this command during migration. | false |
 
 >Note: Either **program_name** or **function_name** must be provided.
 

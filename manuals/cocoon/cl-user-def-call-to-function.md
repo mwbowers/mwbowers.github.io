@@ -24,6 +24,7 @@ It is possible to overload the function implementation to allow for different pa
 | --- | --- | --- |   
 | name          | The name of the user defined command in the legacy source code that is being redefined. | (Required)
 | function_name | The name of a specific function to be used to migrate this particular user-defined command. | |
+| class_name | Name of the class where function_name is implemented. May be fully qualified. | |
 
 
 ## Parameter Element Node

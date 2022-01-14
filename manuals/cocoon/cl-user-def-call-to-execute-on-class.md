@@ -17,9 +17,11 @@ A call to an `Execute` method is made.
 
 | Attribute | Description | Default value |
 | --- | --- | --- |   
-| name          | The name of the user defined command in the legacy source code that is being redefined. | (Required)
-| function_name | The name of a specific function to be used to migrate this particular user-defined command. | |
+| name          | The name of the user defined command in the legacy source code that is being redefined. | (Required) |
+| class_name    | Name of the class implementing the Command.\n (Should implement an `Execute` function - or method in C# terminology). May be fully qualified. | |
 
+
+<br>
 
 ## Parameter Element Node (valid attributes)
 
