@@ -81,11 +81,11 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 
 A simple use case would be where we have a User defined Command, for example: "SYSM60C" that should call an IBM i command in the system with the same name. That IBM i command may be implemented as a *PGM object (the source could have been RPGLE or CL - not relevant for this discussion - ).
 
-Let's assume that the "SYSM60C" command has been migrated and it now exists in the *namespace* "ACME.MSYS.ERP".
+Let's assume that the "SYSM60C" command has been migrated and it now exists in the *namespace* "ACME.ERP".
 
-Let's also assume that "ACME.MSYS.ERP.SYSM60C" accepts two parameters: **PRET** (Program return Value) and **PFNM** (Printer Filename).
+Let's also assume that "ACME.ERP.SYSM60C" accepts two parameters: **PRET** (Program return Value) and **PFNM** (Printer Filename).
 
-The following is a simple **ExampleCL_Program** using the User-defined "SYSM60C" command:
+The following is a simple **ExampleCL** using the User-defined "SYSM60C" command:
 
 
 ```
@@ -109,7 +109,7 @@ The *CL User Defined Commands* Dictionary may be defined as the following:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ClassTemplate>
-  <command name="SYSM60C" program_name="ACME.MSYS.ERP.SYSM60C" >
+  <command name="SYSM60C" program_name="ACME.ERP.SYSM60C" >
       <parameter keyword="PRET" data_type = "*Dec" data_len="10,2"/>
       <parameter keyword="PFNM" data_type = "*Char" data_len="10"/>
   </command>
@@ -121,7 +121,7 @@ The *CL User Defined Commands* Dictionary may be defined as the following:
 When the CL Program listed in this example (which calls "SYSM60C") gets migrated using the *CL User Defined Commands* Dictionary in this example, the following is the Migrated source:
 
 ```cs
-BegClass ExampleCL_Program Extends(CLProgram) Access(*Public)
+BegClass ExampleCL Extends(CLProgram) Access(*Public)
 
     DclFld _PRET             Type( *Packed  )     Len(2, 0)
     DclFld _pfnm             Type( *Char    )     Len(10)
@@ -134,7 +134,7 @@ BegClass ExampleCL_Program Extends(CLProgram) Access(*Public)
         *INLR = *ON
 
 
-        CALLD ACME.MSYS.ERP.SYSM60C
+        CALLD ACME.ERP.SYSM60C
             DclParm _PRET 
             DclParm _PFNM 
         
@@ -159,7 +159,7 @@ Following the same User Defined command "SYSM60C" as in Example 1, let's:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ClassTemplate>
-  <command name="SYSM60C" program_name="ACME.MSYS.ERP.SYSM60C" >
+  <command name="SYSM60C" program_name="ACME.ERP.SYSM60C" >
       <!-- PARM KWD(PTYP) TYPE(*CHAR) LEN(001) RSTD(*YES) DFT(F) VALUES(F L X) PROMPT('F=Form, L=Label, X=File Form') -->
       <parameter keyword="PTYP" data_type = "*Char" data_len="1" by="value" required="No" default_value="'F'"/>
 
@@ -183,7 +183,7 @@ Note:
 Using the same CL program (from Example 1), the migration for just the User defined command, is:
 
 ```cs
-        CALLD ACME.MSYS.ERP.SYSM60C
+        CALLD ACME.ERP.SYSM60C
             DclParm PTYP_14 CpyFrom('F') Len(1)
             DclParm _PRET 
             DclParm _PFNM 
