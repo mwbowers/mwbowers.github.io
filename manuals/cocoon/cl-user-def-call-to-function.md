@@ -48,7 +48,7 @@ We want to provide an implementation for the legacy User defined Command called:
 
 The  legacy command "SYSM60C" accepts two parameters: **PRET** (Program return Value) and **PFNM** (Printer Filename).
 
-We have a CL Program named **ExampleCL** that is using the User-defined "SYSM60C" command:
+We have a CL Program named **ExampleCL** that is using the User-defined command "SYSM60C" :
 
 ```
 0001.00             PGM                                                                040826
