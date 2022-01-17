@@ -12,20 +12,17 @@ It is possible to overload the function implementation to allow for different pa
 
 | Attribute | Description | Notes |
 | --- | --- | --- |   
-| base_cl_program_class         | The name of base class to extend. (Derived from CLProgram class)| (Optional)
+| base_cl_program_class         | The name of base class to extend.<br> (Derived from [CLProgram](/reference/asna-qsys-runtime-job-support/classes/cl-program) class)| (Required) |
 
->If no base class is provided, then define the qualified function name on each command.
 
 <br>
 
 ## Command Element Node (valid attributes)
 
-| Attribute | Description | Default value |
+| Attribute | Description | Notes |
 | --- | --- | --- |   
-| name          | The name of the user defined command in the legacy source code that is being redefined. | (Required)
-| function_name | The name of a specific function to be used to migrate this particular user-defined command. | |
-| class_name | Name of the class where function_name is implemented. May be fully qualified. | |
-
+| name          | The name of the user defined command in the legacy source code that is being redefined. | (Required) |
+| function_name | The name of a specific function to be used to migrate this particular user-defined command. | (Required) |
 
 ## Parameter Element Node
 
@@ -43,8 +40,89 @@ It is possible to overload the function implementation to allow for different pa
 | default_value   | Default value of the parameter. |
 | constructor_parm | Indicates if this is a constructor parameter (*True). When used, prop_name is invalid and by must be "reference". |
 
-## Example 1: CL User defined Command calls a function on the base class.
+<br>
+
+## Example 1: CL User defined Command calls a Function in a Base class.
+
+We want to provide an implementation for the legacy User defined Command called: "SYSM60C".  
+
+The  legacy command "SYSM60C" accepts two parameters: **PRET** (Program return Value) and **PFNM** (Printer Filename).
+
+We have a CL Program named **ExampleCL** that is using the User-defined "SYSM60C" command:
+
+```
+0001.00             PGM                                                                040826
+0002.00                                                                                040826
+0002.01             DCL        VAR(&PRET) TYPE(*DEC) LEN(2 0)                          000000
+0002.01             DCL        &pfnm            *char   10                             000000
+0002.02                                                                                000000
+0003.01             SYSM60C    PRET(&PRET) PFNM(&PFNM)                                 040826
+0004.00             RETURN                                                             040826
+0005.00                                                                                040826
+0006.00             ENDPGM                                                             040826
+```
 
 <br>
 
-*TBD*
+Let's assume that we have an implementation for the legacy command "SYSM60C" in a function named `NewImplementationSystemM60C`.
+
+The following may be the skeleton code for the new function:
+
+```cs
+BegClass MyCLProgram Extends(CLProgram) Access(*Public)
+    BegFunc NewImplementationSystemM60C Type(*String) Access(*Protected)
+        DclSrParm ReturnValue Type( *Packed  ) Len(2, 0) By(*Reference)
+        DclSrParm PrintFilename Type( *Char  ) Len(10)
+
+        ReturnValue = 0 // Clear before processing
+
+            // Here we would process the parameters passed, and populate ReturnValue before leaving the function.
+
+        LeaveSr("Success")
+    EndFunc
+EndClass
+```
+
+The new function lives inside a new class that we will name in this example `MyCLProgram`. We may decide that **ALL** the User defined commands in our Application will have their implementation in this new class (even if these are just placeholders to call complete programs in different classes). All of our CL legacy programs will use the "base" class `MyCLProgram`.
+
+>Note that the class `MyCLProgram` extends (*has for base*) the [CLProgram](/reference/asna-qsys-runtime-job-support/classes/cl-program). We are just *aggregating* functionality to the ASNA Standard CL Program.
+
+The *CL User Defined Commands* Dictionary may be defined as the following:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ClassTemplate base_cl_program_class="MyCL_Program">
+  <command name="SYSM60C" function_name="NewImplementationSystemM60C">
+      <parameter keyword="PRET" data_type = "*Dec" data_len="10,2" by="reference"/>
+      <parameter keyword="PFNM" data_type = "*Char" data_len="10"/>
+  </command>
+</ClassTemplate>
+```
+
+>Note how we are using `base_cl_program_class` to specify our new base class.
+
+The Migration for the legacy **ExampleCL** would then look like the following code:
+
+```cs
+BegClass ExampleCL Extends(MyCL_Program) Access(*Public)
+
+    DclFld _PRET             Type( *Packed  )     Len(2, 0)
+    DclFld _pfnm             Type( *Char    )     Len(10)
+
+//------------------------------------------------------------------------------ 
+//  "*Entry" Mainline Code (Monarch generated)
+//------------------------------------------------------------------------------ 
+    BegProc *Entry Access( *Public )
+
+        *INLR = *ON
+
+
+        NewImplementationSystemM60C(*byref _PRET, _PFNM)
+        
+        Return
+
+
+    EndProc
+
+EndClass
+```
