@@ -92,7 +92,7 @@ The *CL User Defined Commands* Dictionary may be defined as the following:
 ```
 <br>
 
-And when Migrating, the following code would be produced:
+When Migrating, the following code would be produced:
 
 ```cs
 BegClass ExampleCL Extends(CLProgram) Access(*Public)
