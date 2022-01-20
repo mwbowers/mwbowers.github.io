@@ -105,14 +105,57 @@ The following is the typical content of `libman.json`:
   "libraries": [
     {
       "provider": "jsdelivr",
-      "library": "asnaqsys/asna-qsys-expo-web-content@2.1.3",
+      "library": "asnaqsys/asna-qsys-expo-web-content@2.1.4",
       "destination": "wwwroot/lib/asna-expo"
     }
   ]
 }
 ```
 
+The configuration:
 
+* Specifies `"jsDelivr"` as the Library provider.
+* Specifies the source location as: `asnaqsys` organization, `asna-qsys-expo-web-content` as the repository name and `2.1.4` as the release requested.
+* If the content is found, it should be copied to `wwwroot/lib/asna-expo`.
+
+> jsDelivr can discover the available releases in [this page](https://www.jsdelivr.com/package/gh/asnaqsys/asna-qsys-expo-web-content).
+
+[jsDelivr](https://www.jsdelivr.com/) looks in [npm](https://www.npmjs.com), then [GitHub](https://github.com) package manager to look for the library.
+
+## Microsoft Visual Studio Integration
+
+Visual Studio provides:
+
+* Restore Client-side libraries on Build.
+* Output log Window for "Library Manager" related events.
+* Manual Clear and Restore operations.
+
+The Visual Studio [LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0) integration is enabled when the Website Project has the following `nuget` package installed:
+
+```
+Microsoft.Web.Library.Manager.Build.dll
+```
+
+Visual Studio provides context-menu options when the `libman.json` file is selected in Solution Explorer.
+
+Menu options:
+* Restore Client-side Libraries - activate [LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0) and request files using configured [CDN](https://en.wikipedia.org/wiki/Content_delivery_network).
+* Clean Client-side Libraries - delete output library folder structure in `wwwroot`.
+* Enable / Disable Client-side Libraries on Build - Install / Uninstall Microsoft.Web.Library.Manager.Build.dll `nuget` package.
+
+## How often should Client-side Libraries be Restored?
+
+As fast as [jsDelivr](https://www.jsdelivr.com/) is, there is a price to pay in time to complete request and have your system copy the files to the destination (it may take around 3 seconds, depending on your environment).
+
+When the Website is created by Monarch, [LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0) is enabled and EVERY TIME the Website is built, the Expo Web Content will be requested.
+
+During development, it is recommended to `Disable Client-side Libraries on Build` when:
+
+1. The Application has been built at least once since creation.
+2. If the local copy of the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) is suspected to be unintentionally affected (or damaged).
+3. If the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) wants to be upgraded/downgraded to a different version than the originally configured.
+
+>The version number in the `"library"` element in the `libman.json` file can be replaced by the [Git commit hash](https://git-scm.com/docs/gitglossary) corresponding to the Release, or by the word `"latest"`.
 
 
 
