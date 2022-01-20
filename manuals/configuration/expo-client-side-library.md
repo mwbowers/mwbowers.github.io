@@ -120,7 +120,7 @@ The configuration:
 
 > jsDelivr can discover the available releases in [this page](https://www.jsdelivr.com/package/gh/asnaqsys/asna-qsys-expo-web-content).
 
-[LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/?view=aspnetcore-6.0) tells[jsDelivr](https://www.jsdelivr.com/) to look in [npm](https://www.npmjs.com), [GitHub](https://github.com), and [WordaPress](https://wordpress.com/) package managers to search for the library.
+[LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/?view=aspnetcore-6.0) tells [jsDelivr](https://www.jsdelivr.com/) to look in [npm](https://www.npmjs.com), [GitHub](https://github.com), and [WordaPress](https://wordpress.com/) package managers to search for the library.
 
 ## Microsoft Visual Studio Integration
 
