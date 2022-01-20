@@ -149,11 +149,17 @@ As fast as [jsDelivr](https://www.jsdelivr.com/) is, there is a price to pay in 
 
 When the Website is created by Monarch, [LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0) is enabled and EVERY TIME the Website is built, the Expo Web Content will be requested.
 
-During development, it is recommended to `Disable Client-side Libraries on Build` when:
+### During development, it is recommended to:
 
-1. The Application has been built at least once since creation.
-2. If the local copy of the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) is suspected to be unintentionally affected (or damaged).
-3. If the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) wants to be upgraded/downgraded to a different version than the originally configured.
+`Disable Client-side Libraries on Build` when:
+
+   1. The Application has been built at least once since creation.
+
+`Enable Client-side Libraries on Build` when:
+
+   1. If the local copy of the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) is suspected to be unintentionally affected (or damaged).
+   2. If the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) wants to be upgraded/downgraded to a different version than the originally configured.
+
 
 >The version number in the `"library"` element in the `libman.json` file can be replaced by the [Git commit hash](https://git-scm.com/docs/gitglossary) corresponding to the Release, or by the word `"latest"`.
 
