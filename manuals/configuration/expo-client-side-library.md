@@ -86,10 +86,31 @@ ASNA Monarch Base applications use [JavaScript modules](https://developer.mozill
 
 ### How does the [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) get to the `wwwroot` folder structure?
 
+[ASP.NET Core supports LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0). 
 
+[LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/?view=aspnetcore-6.0) is a lightweight, client-side library acquisition tool. LibMan downloads popular libraries and frameworks from the file system or from a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network).
+
+ASNA Monarch Base applications use [jsDelivr](https://www.jsdelivr.com/) as the [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) to populate the Website `Client-Side` folder structure with a copy of [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content).
 
 
 ## libman.json file
+
+The `libman.json` configuration file in the Application Website Project defines how [Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content) is delivered to the Website.
+
+The following is the typical content of `libman.json`:
+
+```json
+{
+  "version": "1.0",
+  "libraries": [
+    {
+      "provider": "jsdelivr",
+      "library": "asnaqsys/asna-qsys-expo-web-content@2.1.3",
+      "destination": "wwwroot/lib/asna-expo"
+    }
+  ]
+}
+```
 
 
 
