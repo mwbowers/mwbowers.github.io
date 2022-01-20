@@ -249,8 +249,11 @@ Manuals:
     section:
     - title: Database Names
       path: /manuals/configuration/database-names.html
-    - title: Expo Website Configuration
-      path: /manuals/configuration/expo-website.html
+    - sectiontitle: Expo Website Configuration
+      sectionpath: /manuals/configuration/expo-website.html
+      section:
+      - title: Expo Client-Side Content
+        path: /manuals/configuration/expo-client-side-library.html
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Using Non-Display File Pages
