@@ -210,4 +210,24 @@ SFCOLOR |SFSEL |SFCUSTNO |SFNAME1 |SFCSZ |*Direction |*Indicators |*ResponseIndi
 13:W|0|50500|Alamo Elias Board Overland              |Greensboro, NC 27407     |O|0000000000000000000000000000000000000000000000000001000000000100000000000001000000000000000000000000|xxx0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx|
 ```
 
+
+## Using Windows PowerShell
+
+An alternative to using a full-editor to watch the Logger messages, is to use [Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview).
+
+If you open a `PS` window, and issue the command `Get-Content` using the `-Wait` option, you can display the Log file as soon as it changes.
+
+```
+Get-Content "Trace.log" -Wait
+```
+
+Furthermore, you can combine with option `-Tail`, to only display the **last** `(n)` lines from the end of the file:
+
+```
+Get-Content "Trace.log" -Tail 10 -Wait
+```
+
+
+
+## Customizing Log output
 `ProgramLogger` is a small class, that can be studied and tailored to your needs. 
