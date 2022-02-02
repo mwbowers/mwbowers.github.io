@@ -12,9 +12,6 @@ horizontalnav:
 - title: Reference
   path: /reference/reference-overview.html
   node: Reference
-- title: Mobile Support
-  path: /mobile/mobile-overview.html
-  node: Mobile
 - title: Articles
   path: /articles/articles-overview.html
   node: Articles
