@@ -23,7 +23,7 @@ using ASNA.QSys.Runtime;
 
 class ProgramLogger
 {
-    static private string LOG_FILENAME = "Trace.log";
+    static private string LOG_PATHNAME = "Trace.log"; // May be a pathname like: @"C:\Projects\TraceOutput\Trace.log";
 
     //
     //  Extract Source filename, method and line number (uses System.Runtime.CompilerServices)
@@ -38,7 +38,7 @@ class ProgramLogger
 
     private static TextWriterTraceListener OpenLogFile(string entryTitle)
     {
-        TextWriterTraceListener trace = new TextWriterTraceListener(LOG_FILENAME, "ASNA.QSys.Listener");
+        TextWriterTraceListener trace = new TextWriterTraceListener(LOG_PATHNAME, "ASNA.QSys.Listener");
 
         trace.WriteLine(string.Empty);
         trace.WriteLine($"{DateTime.Now.ToLongTimeString()} {entryTitle}");
@@ -129,7 +129,7 @@ namespace MyCompany.MyApplication
 }
 ```
 
-When the `Log` static method(s) calls execute, a text file named `Trace.Log` will be created.
+When the `Log` static method(s) calls execute, a text file named `Trace.Log` will be created (in current directory).
 
 >You can open the `Trace.Log` on an editor that may automatically loads the file as it changes, and you can see the logged information.
 
