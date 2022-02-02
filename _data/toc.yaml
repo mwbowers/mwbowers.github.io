@@ -234,10 +234,27 @@ Manuals:
         path: /manuals/datagate/programmers-guide/error-handling.html
     - title: DataGate on SQL Server
       path: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
-  - sectiontitle: Monarch Base
+  - sectiontitle: Programming in Monarch Base
     section:
-    - title: Getting AsnaQSys Packages
-      path: /manuals/get-asna-qsys/get-asna-qsys-overview.html
+    - title: Getting Asna.QSys Packages
+      path: /manuals/programming/get-asna-qsys/get-asna-qsys-overview.html
+    - sectiontitle: Programs
+      sectionpath: /manuals/programming/programs-and-procedures/pp-overview.html
+      section:
+      - title: Program Entry Point
+        path: /manuals/programming/programs-and-procedures/program-entry.html
+      - title: Calling a Program
+        path: /manuals/programming/programs-and-procedures/call-program.html
+      - sectiontitle: Accessing Files
+        sectionpath: /manuals/programming/programs-and-procedures/accessing-files.html
+        section:
+        - title: Workstation Files 
+          path: /manuals/programming/programs-and-procedures/workstation-files.html
+    - sectiontitle: Designing Display Pages
+      sectionpath: /manuals/programming/display-pages/dp-overview.html
+      section:
+      - title: Expo Display Pages
+        path: /manuals/programming/display-pages/display-pages.html
   - sectiontitle: Migrations
     sectionpath: /manuals/migrations/migrations-overview.html
     section:
