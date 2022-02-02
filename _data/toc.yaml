@@ -15,6 +15,9 @@ horizontalnav:
 - title: Mobile Support
   path: /mobile/mobile-overview.html
   node: Mobile
+- title: Articles
+  path: /articles/articles-overview.html
+  node: Articles
 
 home: {}
 
@@ -2518,3 +2521,15 @@ Mobile:
   - title: Uploader Controls
     path: /reference/monarch-fx/amfUnderstandingUploaders.html
 
+##
+Articles:
+- sectiontitle: ASNA Articles
+  sectionpath: /articles/articles-overview.html
+  section:
+  - title: ASNA Site Articles
+    path: https://www.asna.com/us/articles
+  - sectiontitle: How-to Techniques
+    sectionpath: /articles/how-to-techniques.html
+    section:
+    - title: Logic Program Logger
+      path: /articles/how-to-technique-logger.html
