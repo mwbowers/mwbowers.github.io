@@ -73,6 +73,9 @@ NuGet uses configuration files called *NuGet.Config*.  These files can be set an
 
     C:/Users/{YourUserName}/AppData/Roaming/NuGet/NuGet.Config
 
+>On MacOS the file is located at: ~/.nuget/NuGet/NuGet.config
+
+
 You can check the full Microsoft's [documentation here](https://docs.microsoft.com/en-us/nuget/reference/nuget-config-file).
 
 We are interested in these two elements:
