@@ -117,3 +117,10 @@ e.	You should be prompted to enter credentials (if not, hit the refresh button)
 ![VS Package Credentials](images/vs-package-credentials.jpg)
 
 Now you should be able to see the packages in the AsnaQSys organization.
+
+## ASNA.QSys.BatchDispatch.exe Sources
+ASNA.QSys.BatchDispatch.exe (BatchDispatch) is a program that can be used to run programs submitted to a job queue as part of a solution for [Batch Processing](/manuals/programming/jobs/batch-jobs.html). 
+
+The source code for BatchDispatch is in GitHub where customers can fork the repository and customize it to their particular needs.
+
+ > BatchDispatch Repository: [https://github.com/asnaqsys/ASNA.QSys.BatchDispatch](https://github.com/asnaqsys/ASNA.QSys.BatchDispatch)
