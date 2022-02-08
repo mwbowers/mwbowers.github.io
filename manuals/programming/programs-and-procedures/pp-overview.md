@@ -31,9 +31,9 @@ The Main C# source code structure resembles the structure of the original IBM i 
 
 
 ## .io.xfu - Externally Described File Usage
-
+An XML file stating which of the ‘Externally Described Files’ of the original IBM i program are used in the program and how they are used. This XML file describes field renames, excludes ignored records, and other items vital to the correct functioning of the External file in the program.
 
 ## .io.cs - Externally Described Data
-
+C# Code generated automatically out of the MyProgram.io.xfu descriptions. This code contains the declarations for those fields defined in externally described files as well as helper methods to move data between the file buffer and the program fields. It also contains field and method declarations for supporting externally described data structures.
 
 

@@ -250,6 +250,13 @@ Manuals:
         section:
         - title: Workstation Files 
           path: /manuals/programming/programs-and-procedures/workstation-files.html
+    - sectiontitle: Jobs
+      sectionpath: /manuals/programming/jobs/job-overview.html
+      section:
+      - title: Batch Jobs
+        path: /manuals/programming/jobs/batch-jobs.html
+      - title: Interactive Jobs
+        path: /manuals/programming/jobs/interactive-jobs.html
     - sectiontitle: Designing Display Pages
       sectionpath: /manuals/programming/display-pages/dp-overview.html
       section:
@@ -2454,7 +2461,7 @@ Reference:
     - title: Terminal5250TagHelper
       path: /reference/asna-qsys-expo/expo-tags/terminal5250-tag-helper.html
     
-##
+## Dead Branch for now.
 Mobile:
 - sectiontitle: ASNA Mobile Support
   sectionpath: /mobile/mobile-overview.html
