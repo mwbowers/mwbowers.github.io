@@ -269,6 +269,10 @@ Manuals:
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
+    - sectiontitle: Remediations
+      section:
+      - title: Remediation of Procedure Scoped Files
+        path: /manuals/migrations/remediatiate-scoped-files.html
   - sectiontitle: Configuration
     section:
     - title: Database Names
