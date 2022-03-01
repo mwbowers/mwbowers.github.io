@@ -269,6 +269,8 @@ Manuals:
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
+    - title: RPG Cycle Support
+      path: /manuals/migrations/rpg-cycle.html
     - sectiontitle: Remediations
       section:
       - title: Remediation of Procedure Scoped Files
