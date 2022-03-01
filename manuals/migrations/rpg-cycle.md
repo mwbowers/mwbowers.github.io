@@ -92,10 +92,10 @@ During Migration, if there are legacy RPG [Output Specifications](https://www.ib
 
 ```cs
 BegCycleOutput
-   DetailPrintSpec format Cond(expr) FetchOverflow(\*yes/\*no)
-   HeaderPrintSpec format Cond(expr) FetchOverflow(\*yes/\*no)
-   TotalPrintSpec  format Cond(expr) FetchOverflow(\*yes/\*no)
-   DetailPrintSpec format Cond(expr) FetchOverflow(\*yes/\*no)
+   DetailPrintSpec format Cond(expr) FetchOverflow(yes/no)
+   HeaderPrintSpec format Cond(expr) FetchOverflow(yes/no)
+   TotalPrintSpec  format Cond(expr) FetchOverflow(yes/no)
+   DetailPrintSpec format Cond(expr) FetchOverflow(yes/no)
    TotalDiskSpec   file   Op() Flds(expr) M1...M9 L1...L9
 EndCycleOutput
 ```
