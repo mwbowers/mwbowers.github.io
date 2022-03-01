@@ -88,17 +88,54 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 ## AVR `Cycle Output` Specifications
 
-During Migration, if there are [Output Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-output) of type `'H'`, `'D'`, `'T'`, a section of the intermediate [AVR](https://asna.com/us/products/visual-rpg) will be generated as follows:
+During Migration, if there are legacy RPG [Output Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-output) of type `'H'`, `'D'`, `'T'`, a section of the intermediate [AVR](https://asna.com/us/products/visual-rpg) will be generated as follows:
 
 ```cs
 BegCycleOutput
-   DetailPrintSpec format Cond(expr)
-   HeaderPrintSpec format Cond(expr)
-   TotalPrintSpec format Cond(expr)
-   DetailPrintSpec format Cond(expr)
-   TotalDiskSpec file Op() Flds(expr)
+   DetailPrintSpec format Cond(expr) FetchOverflow(\*yes/\*no)
+   HeaderPrintSpec format Cond(expr) FetchOverflow(\*yes/\*no)
+   TotalPrintSpec  format Cond(expr) FetchOverflow(\*yes/\*no)
+   DetailPrintSpec format Cond(expr) FetchOverflow(\*yes/\*no)
+   TotalDiskSpec   file   Op() Flds(expr) M1...M9 L1...L9
 EndCycleOutput
 ```
 
+> Note how some Output Cycle records are `Print` related while others are `Disk` (*Database*) related.
+
 The explicit C# conversion will translate each of these records with its proper *Conditions*, Disk *Operations* and used *Fields* into the body of the methods discussed above (`_DetailCalc`, `_DetailOutput`, `_TotalCalc` etc.).
+
+## Database File Designations
+Certain Database files participate in the Cycle logic. Files with [Designation](https://www.ibm.com/docs/en/i/7.3?topic=statement-position-18-file-designation) `Primary` and `Secondary`, participate in the program `Cycle`.
+
+In the C# conversion, the file designation is indicated by the `isPrimary` parameter in the `DatabaseCycleFile` constructor.
+
+## First Page
+
+Before the first record is read the first time through the loop, the program resolves any parameters passed to it, writes the records conditioned by the `_IN1P` (first page) indicator, and processes any heading or detail output operations having no conditioning indicators.
+
+For example, heading lines printed before the first record is read might consist of constant or page heading information or fields for reserved words, such as `PAGE` and `UDATE`.
+
+The first page indicator is turned on in the class constructor and turned off after the first page headings (if any) are printed. 
+
+## Matching Records
+
+To process matching records in `QSys` programs, the fields defined as the matching record fields are assigned using M1...M9 on the `Cycle Output` record for each file format on which the matching is to occur. For instance, if you have an order master file, an order detail file, and a backorder file matched by their respective order numbers you would specify the order number as the matching field in each file.
+
+## Level Breaks
+
+To define level breaks, the control fields are assigned using L1...L9 on the `Cycle Output` record for each file format on which the level breaks are to occur. For instance, you have an order master file (one record per order), an order detail file (one record per item in the order), and a backorder file (multiple records per order and item). Specify the order number as the level break field in each file and include the item level on the backorder file.
+
+## Last Record
+
+During the last time a program goes through the loop, when no more records are available, the `_INLR` (last record) indicator and all level indicators (`_L1` through `_L9`) are set to *true*. Any total calculation and total output are completed and then control is returned to the caller.
+
+## Overflow
+
+The fetch overflow routine allows you to alter the overflow logic to prevent printing over the perforation and to let you use as much of the page as possible. Fetch overflow in legacy is specified with an `F` in position 16 of the output specifications on any detail, total, or exception lines for a **PRINTER** file.
+
+Fetching for Overflow means that before printing the record format, the `Overflow` condition needs to be checked and if overflow printing would occur, the overflow indicator is set to *true*. When the indicator is set, all lines conditioned on overflow will be printed first. 
+
+## Look-ahead Fields
+
+Lookahead fields are not supported but code can be added to the migrated `_DetailCalc` section to add the look ahead functions.
 
