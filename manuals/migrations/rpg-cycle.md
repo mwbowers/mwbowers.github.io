@@ -7,6 +7,15 @@ title: RPG Cycle support
 
 The [IBM i RPG Program Cycle](https://www.ibm.com/docs/en/i/7.2?topic=logic-program-cycle) is a series of ordered steps that the main procedure goes through for each record read. Depending on the coded specifications, your program may or may not use each step in the cycle.
 
+Primary and secondary files indicate input is controlled by the program cycle. A full procedural file indicates that input is controlled by program-specified calculation operations (for example, `READ` and `CHAIN`).
+
+To control the cycle, you can have:
+
+* One primary file and, optionally, one or more secondary files.
+* Only full procedural files (including external Printfiles).
+* A combination of one primary file, optional secondary files, and one or more full procedural files in which some of the input is controlled by the cycle, and other input is controlled by the program.
+* No files (for example, input can come from a parameter list or a DataArea Data structure).
+
 ## QSys Cycle
 
 The [RPG implicit logic](https://www.ibm.com/docs/en/i/7.2?topic=cycle-detailed-rpg-iv-program) is made explicit during the conversion to C#.
@@ -88,26 +97,48 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 ## AVR `Cycle Output` Specifications
 
-During Migration, if there are legacy RPG [Output Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-output) of type `'H'`, `'D'`, `'T'`, a section of the intermediate [AVR](https://asna.com/us/products/visual-rpg) will be generated as follows:
+During Migration, if there are legacy RPG [Output Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-output) of type `'H'`, `'D'`, `'T'`, a section of the intermediate [AVR](https://asna.com/us/products/visual-rpg) will be generated with a *syntax* as follows:
+
+**BegCycleOutput**
+
+&nbsp;&nbsp;&nbsp;**HeaderDiskSpec**  *file*   Op(*file-operation*) Flds(*list*) L1(*field*) L2(*field*) L3(*field*) ... L9(*field*) M1(*field*) M2(*field*) M3(*field*) ... M9(*field*) 
+
+&nbsp;&nbsp;&nbsp;**DetailDiskSpec**  *file*   Op(*file-operation*) Flds(*list*) L1(*field*) L2(*field*) L3(*field*) ... L9(*field*) M1(*field*) M2(*field*) M3(*field*) ... M9(*field*) 
+
+&nbsp;&nbsp;&nbsp;**TotalDiskSpec**   *file*   Op(*file-operation*) Flds(*list*) L1(*field*) L2(*field*) L3(*field*) ... L9(*field*) M1(*field*) M2(*field*) M3(*field*) ... M9(*field*) 
+
+&nbsp;&nbsp;&nbsp;**HeaderPrintSpec** *format* Cond(*ind-expr*) FetchOverflow(*yes/no*)
+
+&nbsp;&nbsp;&nbsp;**DetailPrintSpec** *format* Cond(*ind-expr*) FetchOverflow(*yes/no*)
+
+&nbsp;&nbsp;&nbsp;**TotalPrintSpec**  *format* Cond(*ind-expr*) FetchOverflow(*yes/no*)
+
+**EndCycleOutput**
+
+Notes:
+1. Some Output Cycle records are `Disk` (*Database*) related while others are `Print` (*Printfile*) related.
+2. Disk Output Specs may use up to 9 Level Breaks (L1 ... L9).
+3. Disk Output Specs may use up to 9 Matching Record fields (M1 ... M9).
+
+For example:
 
 ```cs
 BegCycleOutput
-   DetailPrintSpec format Cond(expr) FetchOverflow(yes/no)
-   HeaderPrintSpec format Cond(expr) FetchOverflow(yes/no)
-   TotalPrintSpec  format Cond(expr) FetchOverflow(yes/no)
-   DetailPrintSpec format Cond(expr) FetchOverflow(yes/no)
-   TotalDiskSpec   file   Op() Flds(expr) M1...M9 L1...L9
+    HeaderPrintSpec QPRINT_DETH1P    Cond(*InOF *Or *In1P )
+    HeaderPrintSpec QPRINT_DETH1L1F  Cond(*InL1 ) FetchOverflow(*Yes)
+    DetailPrintSpec QPRINT_DET01     Cond(*In01 )
+    TotalPrintSpec  QPRINT_TOTAL2LRF Cond(*InLR ) FetchOverflow(*Yes)
 EndCycleOutput
 ```
 
-> Note how some Output Cycle records are `Print` related while others are `Disk` (*Database*) related.
+*Where*  QPRINT_DETH1P, QPRINT_DETH1L1F, QPRINT_DET01 and QPRINT_TOTAL2LRF are record formats. Note that RPG *unnamed* record formats are named by RPG Agent using the name of the file, the record type and the indicator conditions (to make a unique name used by the Printfile Agent). 
 
 The explicit C# conversion will translate each of these records with its proper *Conditions*, Disk *Operations* and used *Fields* into the body of the methods discussed above (`_DetailCalc`, `_DetailOutput`, `_TotalCalc` etc.).
 
 ## Database File Designations
 Certain Database files participate in the Cycle logic. Files with [Designation](https://www.ibm.com/docs/en/i/7.3?topic=statement-position-18-file-designation) `Primary` and `Secondary`, participate in the program `Cycle`.
 
-In the C# conversion, the file designation is indicated by the `isPrimary` parameter in the `DatabaseCycleFile` constructor.
+In the C# conversion, the file designation is indicated by the `isPrimary` parameter in the [DatabaseCycleFile](/reference/asna-qsys-runtime/classes/database-cycle-file.html) constructor ( *true* means Primary, *false* means Secondary ).
 
 ## First Page
 

@@ -1481,6 +1481,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/data-area.html
           - title: Database
             path: /reference/asna-qsys-runtime/classes/database.html
+          - title: DatabaseCycleFile
+            path: /reference/asna-qsys-runtime/classes/database-cycle-file.html
           - title: DatabaseFile
             path: /reference/asna-qsys-runtime/classes/database-file.html
           - title: DataStructure
