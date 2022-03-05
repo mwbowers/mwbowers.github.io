@@ -116,23 +116,13 @@ Once an application has created a report (printer output) in the form of a manus
 
 ## The Printer Writer
 
-Monarch provides an implementation of the Printer Writer in the form of a console program.
+Monarch provides an [implementation of the Printer Writer](/manuals/mom/printer-writer.html) in the form of the executable program: ASNA.QSys.PrinterWriter.exe.
 
-The program receives up to 3 parameters, "/q=" is the only mandatory parameter:
+The program can be configured via the ```appsettings.json``` file, and by command line arguments that override those in the json file.
 
-- /q= &#x2794; The Full Path to the queue's folder
-- /p= &#x2794; Name of Printer to force all output
-- /t &#x2794; Use text only format
+Part of the configuration settings are the output queue's folder and an optional printer name to force all output to it.
 
-Assuming there was a fax machine that could be configured in Windows as a printer (let's call it FaxPrinter), then to start the Writer to process the manuscripts of the SHIPFAX queue in the example above, and print them on the FaxPrinter, use the following parameters.
-
-```
-C:\MyPrograms\PrinterWriter /q=\\BACKSERVER\Shares\Spool\SHIPFAX /p=FaxPrinter /t
-```
-
-Each instance of PrinterWriter can only process manuscripts from a single folder and its descendants. If a printer name is given (/p=) all of the manuscripts are sent to the printer specified, if there is no /p= parameter, then each manuscript is sent to the printer given when the printer file was opened.
-
-After PrinterWriter starts, it waits until a 'q' is entered on the console to signal it to end.
+Each instance of PrinterWriter can only process manuscripts from a single folder and its descendants. If a printer name is then all of the manuscripts are sent to the printer specified, otherwise, each manuscript is sent to the printer given when the printer file was opened.
 
 ---
 
