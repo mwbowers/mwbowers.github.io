@@ -269,6 +269,8 @@ Manuals:
       path: /manuals/migrations/considerations-for-migration.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
+    - title: RPG Cycle Support
+      path: /manuals/migrations/rpg-cycle.html
     - sectiontitle: Remediations
       section:
       - title: Remediation of Procedure Scoped Files
@@ -1479,6 +1481,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/data-area.html
           - title: Database
             path: /reference/asna-qsys-runtime/classes/database.html
+          - title: DatabaseCycleFile
+            path: /reference/asna-qsys-runtime/classes/database-cycle-file.html
           - title: DatabaseFile
             path: /reference/asna-qsys-runtime/classes/database-file.html
           - title: DataStructure
