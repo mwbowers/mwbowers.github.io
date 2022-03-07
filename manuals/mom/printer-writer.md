@@ -10,7 +10,7 @@ You can read the [Concepts behind printing here](/concepts/printing/printing-int
 
 
 ## Configuration Settings
-The PrinterWriter's ```appsettings.json``` file is used to provide the default configuration for the writer. Command line arguments  override those in the json file.
+The PrinterWriter's ```appsettings.json``` file is used to provide the default configuration for the writer. Command line arguments  override those in the JSON file.
 
 The configuration settings are:
 
@@ -77,10 +77,28 @@ The format of the parameters is the standard one for .NET configured application
 
 ## Install PrinterWriter as a Windows Service
 
-Maybe it is not possible to print from a Windows Service:
-https://docs.microsoft.com/en-us/archive/blogs/dsui_team/printing-from-a-windows-service
+### Create EventLog First
+When PrinterWriter runs as a Console program it logs its messages directly to the Console' window but when PrinterWriter runs a Windows Service, its logging facilities are directed to a Windows Event Log. Therefore, it is necessary to create an EventLog before creating the Windows Service.
 
+You can use PowerShell, running as Administrator, to create the EventLog. In PowerShell enter New-EventLog to create the log 'interactively'. Enter ```ASNA QSys PrinterWriter``` for the LogName and enter one Source called ```PrinterWriter``` as follows:
 
+```powershell
+PS> New-EventLog
+```
+```text
+cmdlet New-EventLog at command pipeline position 1
+Supply values for the following parameters:
+LogName: ASNA QSys PrinterWriter
+Source[0]: PrinterWriter
+Source[1]:
+```
+
+If you ever need to delete the EventLog you can issue this command in PowerShell
+```
+PS>  Remove-EventLog -LogName "ASNA Qsys PrinterWriter"
+```
+
+### Create the Service
 To Create and Delete the PrinterWriter as a Windows Service, use the [```sc``` program](https://docs.microsoft.com/en-us/windows/win32/services/controlling-a-service-using-sc) in a  Command Prompt running as Administrator.
 
 Use the ```sc create``` to installing a PrinterWriter 
@@ -96,7 +114,7 @@ To Delete/Uninstall the Writer Service issue this command
 ```
 > sc delete "ASNA PrinterWriter Invoices"
 ```
-
+### Manage the PrinterWriter
 The ```sc``` program allows further control of the Service with commands to Start, Stop and Pause the PrinterWriter.
 
 You can also use the Services plugin on the Management Console to interactively manage the PrinterWriter.
