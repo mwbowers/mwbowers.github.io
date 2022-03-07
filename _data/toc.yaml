@@ -294,12 +294,12 @@ Manuals:
       - title: Calling a Program from a Non-DisplayFile Page
         path: /manuals/migrations/calling-program-from-non-displayfile-page.html
   - sectiontitle: Monarch Operations Management
-    sectionpath: /manuals/mom/management-overview
+    sectionpath: /manuals/mom/mom-overview.html
     section:
-    - title: Printing
-      path: /manuals/mom/printing
+    - title: Printer Writer
+      path: /manuals/mom/printer-writer.html
     - title: Batch Processor
-      path: /manuals/mom/batch-processor
+      path: /manuals/mom/batch-dispatch.html
   - sectiontitle: Monarch Cocoon
     section:
     - sectiontitle: CL User Defined Command Migration
