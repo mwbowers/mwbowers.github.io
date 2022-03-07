@@ -95,17 +95,45 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 22. Return to the caller.
 
-## AVR `Cycle Output` Specifications
+## Cycle `Input` Specifications
+
+During Migration, if there are legacy RPG [Input Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-input) with *Field Description* entries corresponding to [Control Level](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-63-64-control-level#ifd6364) or [Matching Fields](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-65-66-matching-fields), then for each record where these kind of fields are defined, an AVR declaration will be produced.
+
+The syntax is as follows:
+
+&nbsp;&nbsp;&nbsp;**DclFmtCycleAttr** *record-format*  *indicator* **Ln**(*field-name1*, *field-name2*) **Mn**(*field-name*) 
+
+Where,
+
+&nbsp;&nbsp;&nbsp;`Ln` can be `L1`, `L2`, `L3`, `L4`, `L5`, `L6`, `L7`, `L8` or `L9` (up to nine Level Breaks)
+
+and,
+
+&nbsp;&nbsp;&nbsp;`Mn` can be `M1`, `M2`, `M3`, `M4`, `M5`, `M6`, `M7`, `M8` or `M9` (up to nine Matching Fields) 
+
+> The Indicator is optional and comes from the [Record Identification Input Spec](https://www.ibm.com/docs/en/i/7.3?topic=indicator-indicators).
+
+For example:
+
+```
+DclFmtCycleAttr Master *In77 M1(MOrder#) L2(MOrder#)
+DclFmtCycleAttr Detail *In42 M1(DOrder#)
+DclFmtCycleAttr Orders *In43 M1(DOrder#) L1(DOrder#, DItem#)
+```
+
+> There can be more than one field declared as an `L` keyword. Only one field can be declared in the `M` keyword.
+
+## Cycle `Output` Specifications
 
 During Migration, if there are legacy RPG [Output Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-output) of type `'H'`, `'D'`, `'T'`, a section of the intermediate [AVR](https://asna.com/us/products/visual-rpg) will be generated with a *syntax* as follows:
 
 **BegCycleOutput**
 
-&nbsp;&nbsp;&nbsp;**HeaderDiskSpec**  *file*   Op(*file-operation*) Flds(*list*) L1(*field*) L2(*field*) L3(*field*) ... L9(*field*) M1(*field*) M2(*field*) M3(*field*) ... M9(*field*) 
+&nbsp;&nbsp;&nbsp;**HeaderDiskSpec**  *file*   Op(*file-operation*) Flds(*list*) 
 
-&nbsp;&nbsp;&nbsp;**DetailDiskSpec**  *file*   Op(*file-operation*) Flds(*list*) L1(*field*) L2(*field*) L3(*field*) ... L9(*field*) M1(*field*) M2(*field*) M3(*field*) ... M9(*field*) 
+&nbsp;&nbsp;&nbsp;**DetailDiskSpec**  *file*   Op(*file-operation*) Flds(*list*)
 
-&nbsp;&nbsp;&nbsp;**TotalDiskSpec**   *file*   Op(*file-operation*) Flds(*list*) L1(*field*) L2(*field*) L3(*field*) ... L9(*field*) M1(*field*) M2(*field*) M3(*field*) ... M9(*field*) 
+&nbsp;&nbsp;&nbsp;**TotalDiskSpec**   *file*   Op(*file-operation*) Flds(*list*)
 
 &nbsp;&nbsp;&nbsp;**HeaderPrintSpec** *format* Cond(*ind-expr*) FetchOverflow(*yes/no*)
 
@@ -150,11 +178,11 @@ The first page indicator is turned on in the class constructor and turned off af
 
 ## Matching Records
 
-To process matching records in `QSys` programs, the fields defined as the matching record fields are assigned using M1...M9 on the `Cycle Output` record for each file format on which the matching is to occur. For instance, if you have an order master file, an order detail file, and a backorder file matched by their respective order numbers you would specify the order number as the matching field in each file.
+To process matching records in `QSys` programs, the fields defined as the matching record fields are assigned using M1...M9 on the `DclFmtCycleAttr` record for each file format on which the matching is to occur. For instance, if you have an order master file, an order detail file, and a backorder file matched by their respective order numbers you would specify the order number as the matching field in each file.
 
 ## Level Breaks
 
-To define level breaks, the control fields are assigned using L1...L9 on the `Cycle Output` record for each file format on which the level breaks are to occur. For instance, you have an order master file (one record per order), an order detail file (one record per item in the order), and a backorder file (multiple records per order and item). Specify the order number as the level break field in each file and include the item level on the backorder file.
+To define level breaks, the control fields are assigned using L1...L9 on the `DclFmtCycleAttr` record for each file format on which the level breaks are to occur. For instance, you have an order master file (one record per order), an order detail file (one record per item in the order), and a backorder file (multiple records per order and item). Specify the order number as the level break field in each file and include the item level on the backorder file.
 
 ## Last Record
 
