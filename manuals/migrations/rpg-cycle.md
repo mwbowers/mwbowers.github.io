@@ -97,11 +97,11 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 ## Cycle `Input` Specifications
 
-During Migration, if there are legacy RPG [Input Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-input) with Field Description entries corresponding to [Control Level](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-63-64-control-level#ifd6364) or [Matching Fields](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-65-66-matching-fields), then for each record where these kind of fields are defined, an AVR declaration will be produced.
+During Migration, if there are legacy RPG [Input Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-input) with *Field Description* entries corresponding to [Control Level](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-63-64-control-level#ifd6364) or [Matching Fields](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-65-66-matching-fields), then for each record where these kind of fields are defined, an AVR declaration will be produced.
 
 The syntax is as follows:
 
-&nbsp;&nbsp;&nbsp;**DclFmtCycleAttr** *record-format*  *indicator* **Ln**(*<field-name1*, *field-name2*) **Mn**(*field-name*) 
+&nbsp;&nbsp;&nbsp;**DclFmtCycleAttr** *record-format*  *indicator* **Ln**(*field-name1*, *field-name2*) **Mn**(*field-name*) 
 
 Where,
 
