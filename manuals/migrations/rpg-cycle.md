@@ -43,8 +43,6 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 <img src="images/qsys-cycle.svg" alt="Cycle Flow-chart" style="width:60em !important; height:115em !important">
 
-> Note whenever \*INnn is mentioned in the flow-chart steps, the C# _INnn is referred. In the same fashion when the RPG constants *\*On* or *\*Off* are mentioned, the C# `char` constants *'1'* and *'0'* are assumed, where *'1'* means *true* and *'0'* means *false*.
-
 ## Detailed numbered flow-chart building blocks
 
 1. _StartCycle is the name of the method that runs the `Cycle`. This method is *generated* by the C# translation process. It assumes the primary file and all secondary files are already open, which causes the first record from the primary and all secondary files to be read, and all program fields have their correct values including first page indicator (`_IN1P` is initialized to *'1'* in the class constructor).
