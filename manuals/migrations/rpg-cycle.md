@@ -45,9 +45,9 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 * `_TotalOutput`
 * `_FetchOverflow`
 
-![QSys Cycle](images/avr-cycle.png)
+<br>
 
-> Note whenever \*INnn is mentioned in the flow-chart steps, the C# _INnn is referred. In the same fashion when \*On or \*Off are mentioned, the C# values *true* and *false* are assumed.
+<img src="images/qsys-cycle.svg" alt="Cycle Flow-chart" style="width:60em !important; height:115em !important">
 
 ## Detailed numbered flow-chart building blocks
 
