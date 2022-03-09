@@ -41,7 +41,7 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 <br>
 
-<img src="images/qsys-cycle.svg" alt="Cycle Flow-chart" style="width:60em !important; height:115em !important">
+![Flow Chart](images/qsys-cycle.svg)
 
 ## Detailed numbered flow-chart building blocks
 
