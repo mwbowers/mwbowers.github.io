@@ -8,7 +8,7 @@ Handling the user interface of an interactive application is a cooperative effor
 
 The procedural program uses a workstation file to issue read and write instructions against the record formats to provide or request user data. A [DataSet](//docs.microsoft.com/en-us/dotnet/api/system.data.dataset) serves as the repository for the program and the user's data. The program's data is transferred to the Razor Page model and further processed by Helper Tags to produce the HTML presented to the user. Similarly, the user data is transferred back from the Razor Page model, via the DataSet, to the program's workstation file.
 
-![yellow-blue-transitions](images/yellow-blue-transitions.png)
+![yellow-blue-transitions](images/user-interface-two-threads.svg)
 _User Interface : Program - Transitions_
 
 ## Workstation File
