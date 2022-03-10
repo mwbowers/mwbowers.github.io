@@ -36,7 +36,7 @@ For this discussion, the database server is assumed to be running on its own ser
 ### Batch Job Architecture
 Batch jobs execute in their own .NET Process as console programs.
 
-![Batch Job](images/batch_job.png)
+![Batch Job](images/batch-job-architecture.svg)
 
 _Batch Job running on its own process_
 
@@ -64,7 +64,7 @@ The special value *InProcess as a HostName signals the website startup process t
 #### In-Process
 In its simplest configuration, the migrated code along with the website can be run in a single process. 
 
-![Interactive Job in process MAS](images/interactive_job_mas_inprocess.png)
+![Interactive Job in process MAS](images/mas-in-process.svg)
 
 _MAS running in process on the Web Server_
 
@@ -75,12 +75,12 @@ It is possible to separate the Business Logic Program execution into one or more
 
 The MAS can execute directly on the web server as shown next.
 
-![Interactive Job out of process MAS](images/interactive_job_mas_outofprocess.png)
+![Interactive Job out of process MAS](images/mas-out-of-process.svg)
 _MAS running on the Web Server as a separate process_
 
 Finally, the application can be run on one or more servers, separating the Business Logic Programs into one or more application servers as shown next.
 
-![Interactive Job own application server](images/interactive_job_own_app_server.png)
+![Interactive Job own application server](images/mas-application-server.svg)
 
 _MAS running on its own Application Server_
 
