@@ -37,7 +37,7 @@ When facing an Unsupported SQL Task, there are typically two possibilities to re
 1. Rewrite the SQL statement in a different way using a valid syntax which provides the same results, such that the Migration succeeds.
 2. Submit the valid program with the troublesome statement to ASNA for review, wait for a new Monarch Cocoon build with the statement supported.
 
-Both avenues listed may be challenging, particularly when there is no simple way to identify where in the *possibly* long statement had a conflict according to the current SQL Grammar used by Monarch.
+Both avenues listed may be challenging, particularly when there is no simple way to identify where in the *possibly* long statement a conflict was detected, according to the current SQL Grammar defined by Monarch.
 
 In this section we present an Open-source tool that may be used to facilitate this process.
 
@@ -128,7 +128,7 @@ Notice:
 
 >You can double-click on the `Compile Error` line to have the corresponding text highlighted where the error was detected.
 
-If you correct the misspelling, changing `WERE` to `WHERE`, the highlighting correct itself, pressing the "Parse" push button makes the `Parse Tree` to load and the Parser Output window is cleared.
+If you correct the misspelling, changing `WERE` to `WHERE`, the highlighting corrects itself, pressing the "Parse" push button makes the `Parse Tree` to load and the Parser Output window is cleared.
 
 Use this tool to either remediate the SQL statements in your RPG LE source members, or to communicate to the ASNA Tech Support group that the Grammar used by Monarch Cocoon's SQL that needs to be corrected.
 
