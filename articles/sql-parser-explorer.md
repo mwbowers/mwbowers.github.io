@@ -18,9 +18,9 @@ Monarch Cocoon RPG Agent will extract these SQL Statements and migrate to method
     )
 ```
 
->Note: The first parameter is a string, the rest of the parameters are the input host variables that the statement using, indicated by the `@sql_parm_n` placeholders.
+>Note: The first parameter is a string, the rest of the parameters are the input host variables that the statement is using, indicated by the `@sql_parm_n` placeholders.
 
-SQL language is very powerful and the syntax may become large and complex. Some or the statements that SQL offer may not be very applicable to be used as an embedded language in RPG ILE.
+SQL language is very powerful and the syntax may become large and complex. Some or the statements that SQL offers may not be very applicable to be used as an embedded language in RPG ILE.
 
 The [DB2® for IBM® i SQL](https://www.ibm.com/docs/en/i/7.1?topic=programming-introduction-db2-i-structured-query-language) is the implementation that RPG ILE uses and deviates from the [SQL ANSI Standard](https://datacadamia.com/data/type/relation/sql/ansi). Monarch Cocoon RPG Agent uses a Grammar definition according to the [IBM i Reference Books](https://www.ibm.com/docs/en/i/7.1?topic=reference-about-sql).
 
@@ -28,7 +28,7 @@ ASNA has made the best effort to include in the Grammar every possible syntax an
 
 When Monarch RPG Agent does not recognize the syntax of a Embedded SQL Statement, it will task an Error.
 
-ASNA is committed to review any instance of valid IBM i SQL, and review it to allow the Migration to succeed.
+ASNA is committed to review any instance of valid IBM i SQL, and correct it to allow the Migration to succeed.
 
 ## SQL Remediation Common Practices
 
@@ -63,15 +63,15 @@ The process is simple, and can be completed in a few minutes:
 
 The inputs for the *Irony Grammar Explorer* are:
 1. The Language Grammar, in the form of a DLL. In this case, the SQL Grammar included in Monarch Cocoon installation.
-2. Text with to explore. In this case a SQL statement.  
+2. Text with Language syntax to explore. In this case a SQL statement.  
 
-The Irony Grammar Explorer window shows in the top-left of the page the active Grammar loaded into memory. As seen in the image below, there is no active grammar when the tool is launched the first time.
+The Irony Grammar Explorer window shows in the top-left of the page the *active* Grammar loaded into memory. As seen in the image below, there is no active grammar when the tool is launched for the first time.
 
 * Click on the "..." push button to `Add a Grammar` and select Monarch Cocoon defined SLQ Grammar.
 
 ![Load Monarch Cocoon SQL Grammar](images/load-asna-sql-grammar-01.png)
 
-Using file explorer, locate the file `ASNA.Monarch.IronyParser.dll` is likely found in the `Program Files (x86)\ASNA\Monarch` (version) folder. 
+Using file explorer, locate the file `ASNA.Monarch.IronyParser.dll` which is likely found in the `Program Files (x86)\ASNA\Monarch` (version) folder. 
 
 ![Load Monarch Cocoon SQL Grammar](images/load-asna-sql-grammar-02.png)
 
@@ -106,7 +106,7 @@ If the Statement can be parse with the provided Grammar, a Parse syntax Tree wil
 
 >Notice that the statement is highlighted with colors, making it easier to identify the different language clauses.
 
-For the purpose of *Validity* the important fact is that the **Errors** log ends up empty and there is a *Parse Tree* resulting on the result window.
+For the purpose of checking *Validity* the important fact is that the **Errors** log ends up *empty* and there is a *Parse Tree* resulting on the result window.
 
 ## When Parsing fails.
 
@@ -130,7 +130,7 @@ Notice:
 
 If you correct the misspelling, changing `WERE` to `WHERE`, the highlighting correct itself, pressing the "Parse" push button makes the `Parse Tree` to load and the Parser Output window is cleared.
 
-Use this tool to either remediate the SQL statements in your RPG LE source members, or to communicate to the ASNA Tech Support group that the Grammar used by Monarch Cocoon's SQL needs to be corrected.
+Use this tool to either remediate the SQL statements in your RPG LE source members, or to communicate to the ASNA Tech Support group that the Grammar used by Monarch Cocoon's SQL that needs to be corrected.
 
 
 
