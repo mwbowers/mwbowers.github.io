@@ -102,7 +102,7 @@ UPDATE DEPARTMENT
 
 ![Parse pasted test statement](images/parse-pasted-test-statement.png)
 
-If the Statement can be parse with the provided Grammar, a Parse syntax Tree will appear in the window to the right of the Test input edit box. If syntax fails, this window will be empty and there will be details listed at the bottom of the page.
+If the Statement can be parsed with the provided Grammar, a Parse syntax Tree will appear in the window to the right of the Test input edit box. If syntax fails, this window will be empty and there will be details listed at the bottom of the page.
 
 >Notice that the statement is highlighted with colors, making it easier to identify the different language clauses.
 
