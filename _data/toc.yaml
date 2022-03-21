@@ -2545,3 +2545,5 @@ Articles:
     section:
     - title: Logic Program Logger
       path: /articles/how-to-technique-logger.html
+    - title: SQL Parser Explorer
+      path: /articles/sql-parser-explorer.html      
