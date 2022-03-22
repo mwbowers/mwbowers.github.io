@@ -48,7 +48,7 @@ Monarch RPG Agent relies on an open-source *Universal Language* Parser known as 
 The *Kit* provides sources including an excellent interactive tool called **Irony Grammar Explorer**. This tool was used during the development of the IBM i SQL grammar that Monarch uses to Parse and Migrate embedded SQL statements; and may be used to diagnose unsupported statements.
 
 ## Irony Grammar Explorer Installation
-To build the Tool, Visual Studio is required (with .Net Framework 6 or later). Any Monarch user is expected to met this prerequisite. 
+To build the Tool, Visual Studio is required (with .Net Framework 4.6 or later). Any Monarch user is expected to met this prerequisite. 
 
 The process is simple, and can be completed in a few minutes:
 1. Launch Visual Studio and Select *Clone Repository...* from the **File** menu.
@@ -81,7 +81,7 @@ A single `Grammar Assembly` may define more than one Grammars, in this case the 
 
 ## Check validity of SQL Statement
 
-Suppose we want to explore the validity of a SQL statement, taking from a RPG LE source member, like the following (found in Free form):
+Suppose we want to explore the validity of a SQL statement, taking from an RPG LE source member, like the following (found in Free form):
 
 ```sql
 EXEC SQL UPDATE DEPARTMENT
