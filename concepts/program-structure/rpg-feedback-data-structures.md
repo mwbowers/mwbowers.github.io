@@ -9,7 +9,7 @@ This Data Structure defines several members that report runtime status related t
 
 The .NET execution environment is completely different to the IBM i counterpart, but there are several pieces of information that have equivalences and can be reported back to the RPG logic, to allow it to run seamlessly.
 
-`PSDS` fields are defined in RPG by either their position in the buffer or by a reserved *keyword*. Note that the actual name of the member field is up to the programmer, and only those members used are defined in the Data Definition (the Data Structure size is well known by the compiler).
+`PSDS` fields are defined in RPG by either their position in the buffer or by a reserved *keyword*. Note that the actual name of the member field is up to the programmer, and only those members used are defined in the Data Definition (the Data Structure size is well known to the compiler).
 
 As for keywords, instead of *from/to* positions, a predefined name, such as starting with `*` such as `*PROC`, `*STATUS` is used.
 
@@ -48,7 +48,7 @@ D PROC_PGM              334    343                                         * Pgm
 D PROC_MOD              344    353                                         * Mod Proc is in
 ```
 
-Note that `PROC_NAME`, `PGM_STATUS`, `PRV_STATUS`, etc. are used-defined field names.
+Note that `PROC_NAME`, `PGM_STATUS`, `PRV_STATUS`, etc. are user-defined field names.
 
 >Commonly the RPG program defines a only a few PSDS fields. This is important when considering the most appropriate migration target, as discussed later.
 
