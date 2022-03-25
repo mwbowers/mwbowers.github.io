@@ -56,6 +56,8 @@ Concepts:
         path: /concepts/program-structure/qsys-workstationfile.html
     - title: Fixed Data Types
       path: /concepts/program-structure/qsys-fixedtypes.html
+    - title: RPG Feedback Data Structures
+      path: /concepts/program-structure/rpg-feedback-data-structures.html
   - sectiontitle: User Interface
     sectionpath: /concepts/user-interface/ui-overview.html
     section:
