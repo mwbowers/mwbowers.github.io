@@ -201,6 +201,7 @@ public MyProgram()
 #endregion
 }
 ```
+>Note: If `$$JobName` or `$$User` or `$$JobNbr` or `$$JobDate` or `$$SysTime`were not used, then their assignment code in the constructor **would not** have been generated.
 <br>
 
 Example 5: *Program expects `PROC_NAME`, `CRT_DATE` fields to have values of : Current Procedure name and Creation Date.*
@@ -224,11 +225,38 @@ public MyProgram()
 }
 ```
 >Note: The Program *Creation Date* would be the date when the class was compiled. The concept loses meaning for several reasons, first the program is **no longer** an isolated user object (it became now a class within an assembly), secondly, .NET deployment is significantly different than IBM i, the assembly has an associated version metadata record, plus the whole application likely has a build number.
-<br>
-<br>
-<br>
 
+## Unsupported PSDS field migration (Cocoon V10)
+The following are the fields that **will not** be populated (at constructor nor at `StarEntry`):
 
+```
+PGM_STATUS        *STATUS                                                * Status code
+PRV_STATUS             16     20S 0                                      * Previous status
+LINE_NUM               21     28                                         * Src list line num
+ROUTINE           *ROUTINE                                               * Routine name
+EXCP_TYPE              40     42                                         * Exception type
+EXCP_NUM               43     46                                         * Exception number
+PGM_LIB                81     90                                         * Program library
+EXCP_DATA              91    170                                         * Exception data
+EXCP_ID               171    174                                         * Exception Id
+DATE                  191    198                                         * Date (*DATE fmt)
+YEAR                  199    200S 0                                      * Year (*YEAR fmt)
+LAST_FILE             201    208                                         * Last file used
+FILE_INFO             209    243                                         * File error info
+CRT_DATE              288    293                                         * Create date
+CRT_TIME              294    299                                         * Create time
+CPL_LEVEL             300    303                                         * Compiler level
+SRC_FILE              304    313                                         * Source file
+SRC_LIB               314    323                                         * Source file lib
+SRC_MBR               324    333                                         * Source file mbr
+PROC_PGM              334    343                                         * Pgm Proc is in
+PROC_MOD              344    353                                         * Mod Proc is in
+```
+>Note: the field names are suggested names, as discussed earlier, the definition is given by either buffer position or *keyword*.
+
+<br>
+<br>
+<br>
 
 ## File Information Data Structure (INFDS)
 A File Information Data Structure (INFDS) can be defined for each file to make file exception/error and file feedback information available to the program or procedure. (See: [File Information Data Structure](https://www.ibm.com/docs/en/i/7.3?topic=exceptionerrors-file-information-data-structure#filinda) on IBM i docs).
