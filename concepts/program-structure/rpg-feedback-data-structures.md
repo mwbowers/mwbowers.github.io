@@ -259,7 +259,107 @@ PROC_MOD              344    353                                         * Mod P
 <br>
 
 ## File Information Data Structure (INFDS)
-A File Information Data Structure (INFDS) can be defined for each file to make file exception/error and file feedback information available to the program or procedure. (See: [File Information Data Structure](https://www.ibm.com/docs/en/i/7.3?topic=exceptionerrors-file-information-data-structure#filinda) on IBM i docs).
+A File Information Data Structure (`INFDS`) can be defined for each file to make file exception/error and file feedback information available to the program or procedure. (See: [File Information Data Structure](https://www.ibm.com/docs/en/i/7.3?topic=exceptionerrors-file-information-data-structure#filinda) on IBM i docs).
 
+The file association is made using the keyword `INFDS` when declaring the file in `F` Specs or using the free-form DCL-DS command. The name provided in the keyword is the name od the associated Data-structure, following are two examples.
 
+Fixed format:
+```
+FMYFILE    IF   E             DISK    INFDS(FILEFBK)
+```
 
+Free-format:
+```
+DCL-F MYFILE DISK(*EXT) INFDS(FILEFBK);
+```
+
+Just like `PSDS` (above), the `INFDS` data-structure member fields are indicated by either position in the buffer or by the use of *keywords* like `*FILE`, `*SIZE`, `*ROUTINE` etc.
+
+>The name of the data-structure field member is used-defined.
+
+The `INFDS` contains the following feedback information:
+
+* [File Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-file-feedback-information#flfeed) (length is 80)
+* [Open Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-open-feedback-information#opfeed) (length is 160)
+* [Input/Output Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-inputoutput-feedback-information) (length is 126)
+* [Device Specific Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-device-specific-feedback-information#dsfeed) (length is variable)
+* [Get Attributes Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-get-attributes-feedback-information#gafeed) (length is variable)
+
+Example 7: *INFDS for File Feedback*
+
+```
+DFeedBack         DS
+D FILE              *FILE                                                  * File name
+D OPEN_IND                9      9N                                        * File open?
+D EOF_IND                10     10N                                        * File at eof?
+D STATUS            *STATUS                                                * Status code
+D OPCODE            *OPCODE                                                * Last opcode
+D ROUTINE           *ROUTINE                                               * RPG Routine
+```
+
+Example 8: *INFDS for Open Feedback*
+
+```
+DFeedBack         DS
+D ODP_TYPE               81     82                                         * ODP Type
+D FILE_NAME              83     92                                         * File name
+D LIBRARY                93    102                                         * Library name
+D SPOOL_FILE            103    112                                         * Spool file name
+D SPOOL_LIB             113    122                                         * Spool file lib
+D SPOOL_NUM             123    124I 0                                      * Spool file num
+D RCD_LEN               125    126I 0                                      * Max record len
+D KEY_LEN               127    128I 0                                      * Max key len
+D MEMBER                129    138                                         * Member name
+D TYPE                  147    148I 0                                      * File type
+```
+
+Example 9: *INFDS for Input/Output Feedback*
+
+```
+DFeedBack         DS
+D WRITE_CNT             243    246I 0                                      * Write count
+D READ_CNT              247    250I 0                                      * Read count
+D WRTRD_CNT             251    254I 0                                      * Write/read count
+D OTHER_CNT             255    258I 0                                      * Other I/O count
+D OPERATION             260    260                                         * Cuurent operation
+D IO_RCD_FMT            261    270                                         * Rcd format name
+D DEV_CLASS             271    272                                         * Device class
+D IO_PGM_DEV            273    282                                         * Pgm device name
+D IO_RCD_LEN            283    286I 0                                      * Rcd len of I/O 
+```
+
+Example 10: *INFDS for Device Specific Feedback*
+
+```
+DFeedBack         DS
+D DSP_FLAG1             367    368                                         * Display flags
+D DSP_AID               369    369                                         * AID byte
+D CURSOR                370    371                                         * Cursor location
+D DATA_LEN              372    375I 0                                      * Actual data len
+D SF_RRN                376    377I 0                                      * Subfile rrn
+D SF_MINRRN             378    379I 0                                      * Subfile min rrn
+D SF_NUMRCDS            380    381I 0                                      * Subfile num rcds
+D ACT_CURS              382    383                                         * Active window
+D                                                                          *  cursor location
+D DSP_MAJOR             401    402                                         * Major ret code
+D DSP_MINOR             403    404                                         * Minor ret code
+```
+
+Example 11: *INFDS for Get Attributes Feedback*
+
+```
+DCL-DS ICFATRFBK;
+     PGM_DEV       CHAR(10)   POS(241);    // Program device
+     DEV_DSC       CHAR(10)   POS(251);    // Dev description
+     USER_ID       CHAR(10)   POS(261);    // User ID
+     DEV_CLASS     CHAR(1)    POS(271);    // Device class
+     DEV_TYPE      CHAR(1)    POS(272);    // Device type
+     REQ_DEV       CHAR(1)    POS(278);    // Requester?
+     ACQ_STAT      CHAR(1)    POS(279);    // Acquire status
+     INV_STAT      CHAR(1)    POS(280);    // Invite status
+     DATA_AVAIL    CHAR(1)    POS(281);    // Data available
+     SES_STAT      CHAR(1)    POS(291);    // Session status
+     SYNC_LVL      CHAR(1)    POS(292);    // Synch level
+     CONV_TYPE     CHAR(1)    POS(293);    // Conversation typ
+     RMT_LOC       CHAR(10)   POS(294);    // Remote location
+```
