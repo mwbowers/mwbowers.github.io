@@ -253,7 +253,7 @@ SRC_MBR               324    333                                         * Sourc
 PROC_PGM              334    343                                         * Pgm Proc is in
 PROC_MOD              344    353                                         * Mod Proc is in
 ```
->Note: the field names are suggested names, as discussed earlier, the definition is given by either buffer position or *keyword*.
+>Notes: 1. All fields are migrated, but only those supported are pre-populated (the rest will have their reset value initially). 2. Field names are suggested names. As discussed earlier, the definition is given by either buffer position or *keyword*.
 
 <br>
 <br>
@@ -350,84 +350,254 @@ Example 11: *INFDS for Get Attributes Feedback*
 
 ```
 DCL-DS ICFATRFBK;
-     PGM_DEV       CHAR(10)   POS(241);    // Program device
-     DEV_DSC       CHAR(10)   POS(251);    // Dev description
-     USER_ID       CHAR(10)   POS(261);    // User ID
-     DEV_CLASS     CHAR(1)    POS(271);    // Device class
-     DEV_TYPE      CHAR(1)    POS(272);    // Device type
-     REQ_DEV       CHAR(1)    POS(278);    // Requester?
-     ACQ_STAT      CHAR(1)    POS(279);    // Acquire status
-     INV_STAT      CHAR(1)    POS(280);    // Invite status
-     DATA_AVAIL    CHAR(1)    POS(281);    // Data available
-     SES_STAT      CHAR(1)    POS(291);    // Session status
-     SYNC_LVL      CHAR(1)    POS(292);    // Synch level
-     CONV_TYPE     CHAR(1)    POS(293);    // Conversation typ
-     RMT_LOC       CHAR(10)   POS(294);    // Remote location
+   PGM_DEV       CHAR(10)   POS(241);    // Program device
+   DEV_DSC       CHAR(10)   POS(251);    // Dev description
+   USER_ID       CHAR(10)   POS(261);    // User ID
+   DEV_CLASS     CHAR(1)    POS(271);    // Device class
+   DEV_TYPE      CHAR(1)    POS(272);    // Device type
+   REQ_DEV       CHAR(1)    POS(278);    // Requester?
+   ACQ_STAT      CHAR(1)    POS(279);    // Acquire status
+   INV_STAT      CHAR(1)    POS(280);    // Invite status
+   DATA_AVAIL    CHAR(1)    POS(281);    // Data available
+   SES_STAT      CHAR(1)    POS(291);    // Session status
+   SYNC_LVL      CHAR(1)    POS(292);    // Synch level
+   CONV_TYPE     CHAR(1)    POS(293);    // Conversation typ
+   RMT_LOC       CHAR(10)   POS(294);    // Remote location
 ```
 
 ## INFDS Migration
 
-In contrast with how `PSDS` is migrated, `INFDS` does not generate a data-structure, but instead a collection of [class properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties). Depending on the field, some properties are generated as *read-only*, others with *full-access*.
+In contrast to how `PSDS` is migrated, `INFDS` **does not** generate a data-structure, *rather* a collection of [class properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties). Depending on the field, some properties are generated as *read-only*, others with *full-access*.
 
 
-Example 7: *INFDS for File Feedback (assumes associated with file MYFILE, MYFILE2, MYFILE3)*
+Example 7: *INFDS for File Feedback (assumes associated with file MYFILE)*
 
 ```cs
 #region File Information Data Structures
 
-      string FILE => "MYFILE";
+   string FILE => "MYFILE";
 
-      int STATUS
-      {
-         get => MYFILE.StatusCode;
-         set => MYFILE.StatusCode = value;
-      }
+   int STATUS
+   {
+      get => MYFILE.StatusCode;
+      set => MYFILE.StatusCode = value;
+   }
 
-      FixedString<_8> SPCL_STAT => MYFILE.FormatName;
-
-      FixedString<_8> RECORD => MYFILE.FormatName;
-
-      short ROWS => 27;
-
-      short COLUMNS => 132;
-
-      FixedString<_10> IO_RCD_FMT => MYFILE.FormatName;
-
-      string DSP_FLAG1 => MYFILE.FeedbackFlags.ToString();
-
-      byte DSP_AID
-      {
-         get => MYFILE.FeedbackAID;
-         set => MYFILE.FeedbackAID = value;
-      }
-
-      short CURSOR => MYFILE.FeedbackCursor;
-
-      string SF_RRN => MYFILE.SflRRN.ToString();
-
-      short SF_MINRRN => MYFILE.FeedbackLowestSubfile;
-
-      short SF_NUMRCDS => (short)MYFILE.FeedbackSubfileRecords;
-
-      string ACT_CURS => MYFILE.FeedbackActiveWindowCursor.ToString();
-
-      int STS02
-      {
-         get => MYFILE2.StatusCode;
-         set => MYFILE2.StatusCode = value;
-      }
-
-      int REC02 => (int)MYFILE2.RecNum;
-
-      int STS01
-      {
-         get => MYFILE1.StatusCode;
-         set => MYFILE1.StatusCode = value;
-      }
-
-      int REC01 => (int)MYFILE1.RecNum;
+/Error  Unsupported: Field OPEN_IND not supported for WorkStn file Information DS
+/Error  Unsupported: Field EOF_IND not supported for WorkStn file Information DS
+/Error  Unsupported: Field OPCODE not supported for WorkStn file Information DS
+/Error  Unsupported: Field ROUTINE not supported for WorkStn file Information DS
 #endregion
 ```
 
+Example 8: *INFDS for Open Feedback*
 
+```cs
+#region File Information Data Structures
+
+/Error  Unsupported: Field ODP_TYPE not supported for WorkStn file Information DS
+/Error  Unsupported: Field FILE_NAME not supported for WorkStn file Information DS
+/Error  Unsupported: Field LIBRARY not supported for WorkStn file Information DS
+/Error  Unsupported: Field SPOOL_FILE not supported for WorkStn file Information DS
+/Error  Unsupported: Field SPOOL_LIB not supported for WorkStn file Information DS
+/Error  Unsupported: Field SPOOL_NUM not supported for WorkStn file Information DS
+/Error  Unsupported: Field RCD_LEN not supported for WorkStn file Information DS
+/Error  Unsupported: Field KEY_LEN not supported for WorkStn file Information DS
+/Error  Unsupported: Field MEMBER not supported for WorkStn file Information DS
+/Error  Unsupported: Field TYPE not supported for WorkStn file Information DS
+
+#endregion
+```
+
+Example 9: *INFDS for Input/Output Feedback (assumes MYFILE)*
+
+```cs
+#region File Information Data Structures
+   FixedString<_10> IO_RCD_FMT => MYFILE.FormatName;
+
+/Error  Unsupported: Field WRITE_CNT not supported for WorkStn file Information DS
+/Error  Unsupported: Field READ_CNT not supported for WorkStn file Information DS
+/Error  Unsupported: Field WRTRD_CNT not supported for WorkStn file Information DS
+/Error  Unsupported: Field OTHER_CNT not supported for WorkStn file Information DS
+/Error  Unsupported: Field OPERATION not supported for WorkStn file Information DS
+/Error  Unsupported: Field DEV_CLASS not supported for WorkStn file Information DS
+/Error  Unsupported: Field IO_PGM_DEV not supported for WorkStn file Information DS
+/Error  Unsupported: Field IO_RCD_LEN not supported for WorkStn file Information DS
+#endregion
+```
+
+Example 10: *INFDS for Device Specific Feedback (assuming MYFILE)*
+
+```cs
+#region File Information Data Structures
+   string DSP_FLAG1 => MYFILE.FeedbackFlags.ToString();
+
+   byte DSP_AID
+   {
+      get => MYFILE.FeedbackAID;
+      set => MYFILE.FeedbackAID = value;
+   }
+
+   short CURSOR => MYFILE.FeedbackCursor;
+
+   string SF_RRN => MYFILE.SflRRN.ToString();
+
+   short SF_MINRRN => MYFILE.FeedbackLowestSubfile;
+
+   short SF_NUMRCDS => (short)MYFILE.FeedbackSubfileRecords;
+
+   string ACT_CURS => MYFILE.FeedbackActiveWindowCursor.ToString();
+
+/Error  Unsupported: Field DATA_LEN not supported for WorkStn file Information DS
+/Error  Unsupported: Field DSP_MAJOR not supported for WorkStn file Information DS
+/Error  Unsupported: Field DSP_MINOR not supported for WorkStn file Information DS
+
+#endregion
+```
+
+Example 11: *INFDS for Get Attributes Feedback*
+
+```cs
+#region File Information Data Structures
+
+/Error  Unsupported: Field PGM_DEV not supported for WorkStn file Information DS
+/Error  Unsupported: Field DEV_DSC not supported for WorkStn file Information DS
+/Error  Unsupported: Field USER_ID not supported for WorkStn file Information DS
+/Error  Unsupported: Field DEV_CLASS not supported for WorkStn file Information DS
+/Error  Unsupported: Field DEV_TYPE not supported for WorkStn file Information DS
+/Error  Unsupported: Field REQ_DEV not supported for WorkStn file Information DS
+/Error  Unsupported: Field ACQ_STAT not supported for WorkStn file Information DS
+/Error  Unsupported: Field INV_STAT not supported for WorkStn file Information DS
+/Error  Unsupported: Field DATA_AVAIL not supported for WorkStn file Information DS
+/Error  Unsupported: Field SES_STAT not supported for WorkStn file Information DS
+/Error  Unsupported: Field SYNC_LVL not supported for WorkStn file Information DS
+/Error  Unsupported: Field CONV_TYPE not supported for WorkStn file Information DS
+/Error  Unsupported: Field RMT_LOC not supported for WorkStn file Information DS
+
+#endregion
+```
+
+## Unsupported INFDS field migration (Cocoon V10)
+The following free-format INFDS field descriptions lists the *unsupported* fields.
+> In contrast to how `PSDS` is migrated, unsupported `INFDS` fields **will not** produce any properties (only /Error line).
+
+```
+OPEN_IND      IND        POS(9);      // File open?
+EOF_IND       IND        POS(10:      // File at eof?
+OPCODE        *OPCODE;                // Last opcode
+ROUTINE       *ROUTINE;               // RPG Routine
+LIST_NUM      CHAR(8)    POS(30);     // Listing line
+MSGID         CHAR(7)    POS(46);     // Error MSGID
+SCREEN        *SIZE;                  // Screen size
+NLS_IN        *INP;                   // NLS Input?
+NLS_OUT       *OUT;                   // NLS Output?
+NLS_MODE      *MODE;                  // NLS Mode?
+ODP_TYPE      CHAR(2)    POS(81);     // ODP Type
+LIBRARY       CHAR(10)   POS(93);     // Library name
+SPOOL_FILE    CHAR(10)   POS(103);    // Spool file name
+SPOOL_LIB     CHAR(10)   POS(113);    // Spool file lib
+SPOOL_NUM_OLD INT(5)     POS(123);    // Spool file num
+RCD_LEN       INT(5)     POS(125);    // Max record len
+KEY_LEN       INT(5)     POS(127);    // Max key len
+MEMBER        CHAR(10)   POS(129);    // Member name
+TYPE          INT(5)     POS(147);    // File type
+SPOOL_NUM     INT(10)    POS(160);    // 6 digit Spool Nbr
+ACC_TYPE      CHAR(2)    POS(160);    // Access type
+DUP_KEY       CHAR(1)    POS(162);    // Duplicate key?
+SRC_FILE      CHAR(1)    POS(163);    // Source file?
+VOL_OFF       INT(5)     POS(184);    // Vol label offset
+BLK_RCDS      INT(5)     POS(186);    // Max rcds in blk
+OVERFLOW      INT(5)     POS(188);    // Overflow line
+BLK_INCR      INT(5)     POS(190);    // Blk increment
+REQUESTER     CHAR(10)   POS(197);    // Requester name
+OPEN_COUNT    INT(5)     POS(207);    // Open count
+BASED_MBRS    INT(5)     POS(211);    // Num based mbrs
+FLAGS2        CHAR(1)    POS(213);    // Misc flags
+OPEN_ID       CHAR(2)    POS(214);    // Open identifier
+RCDFMT_LEN    INT(5)     POS(216);    // Max rcd fmt len
+CCSID         INT(5)     POS(218);    // Database CCSID
+FLAGS3        CHAR(1)    POS(220);    // Misc flags
+NUM_DEVS      INT(5)     POS(227);    // Num devs defined
+WRITE_CNT     UNS(10)    POS(243);    // Write count
+READ_CNT      UNS(10)    POS(247);    // Read count
+WRTRD_CNT     UNS(10)    POS(251);    // Write/read count
+OTHER_CNT     INT(10)    POS(255);    // Other I/O count
+OPERATION     CHAR(1)    POS(260);    // Current operation
+DEV_CLASS     CHAR(2)    POS(271);    // Device class
+IO_PGM_DEV    CHAR(10)   POS(273);    // Pgm device name
+IO_RCD_LEN    INT(10)    POS(283);    // Rcd len of I/O
+CUR_LINE      INT(5)     POS(367);    // Current line num
+CUR_PAGE      INT(10)    POS(369);    // Current page cnt
+PRT_FLAGS     CHAR(1)    POS(373);    // Print Flags
+PRT_MAJOR     CHAR(2)    POS(401);    // Major ret code
+PRT_MINOR     CHAR(2)    POS(403);    // Minor ret code
+FDBK_SIZE     INT(10)    POS(367);    // Current line num
+JOIN_BITS     INT(10)    POS(371);    // JFILE bits
+LOCK_RCDS     INT(5)     POS(377);    // Nbr locked rcds
+POS_BITS      CHAR(1)    POS(385);    // File pos bits
+DLT_BITS      CHAR(1)    POS(384);    // Rcd deleted bits
+NUM_KEYS      INT(5)     POS(387);    // Num keys (bin)
+KEY_LEN       INT(5)     POS(393);    // Key length
+MBR_NUM       INT(5)     POS(395);    // Member number
+DB_RRN        INT(10)    POS(397);    // Relative-rcd-num
+KEY           CHAR(2000) POS(401);    // Key value (max size 2000)     
+ICF_AID       CHAR(1)    POS(369);    // AID byte
+ICF_LEN       INT(10)    POS(372);    // Actual data len
+ICF_MAJOR     CHAR(2)    POS(401);    // Major ret code
+ICF_MINOR     CHAR(2)    POS(403);    // Minor ret code
+SNA_SENSE     CHAR(8)    POS(405);    // SNA sense rc
+SAFE_IND      CHAR(1)    POS(413);    // Safe indicator
+RQSWRT        CHAR(1)    POS(415);    // Request write
+RMT_FMT       CHAR(10)   POS(416);    // Remote rcd fmt
+ICF_MODE      CHAR(8)    POS(430);    // Mode name     
+DSP_FLAG1     CHAR(2)    POS(367);    // Display flags
+DATA_LEN      INT(10)    POS(372);    // Actual data len
+SF_RRN        INT(5)     POS(376);    // Subfile rrn
+MIN_RRN       INT(5)     POS(378);    // Subfile min rrn
+NUM_RCDS      INT(5)     POS(380);    // Subfile num rcds
+DSP_MAJOR     CHAR(2)    POS(401);    // Major ret code
+DSP_MINOR     CHAR(2)    POS(403);    // Minor ret code   
+PGM_DEV       CHAR(10)   POS(241);    // Program device
+DEV_DSC       CHAR(10)   POS(251);    // Dev description
+USER_ID       CHAR(10)   POS(261);    // User ID
+DEV_CLASS     CHAR(1)    POS(271);    // Device class
+DEV_TYPE      CHAR(6)    POS(272);    // Device type
+REQ_DEV       CHAR(1)    POS(278);    // Requester?
+ACQ_STAT      CHAR(1)    POS(279);    // Acquire status
+INV_STAT      CHAR(1)    POS(280);    // Invite status
+DATA_AVAIL    CHAR(1)    POS(281);    // Data available
+BLINK         CHAR(1)    POS(286);    // Allow blink?
+LINE_STAT     CHAR(1)    POS(287);    // Online/offline?
+DSP_LOC       CHAR(1)    POS(288);    // Display location
+DSP_TYPE      CHAR(1)    POS(289);    // Display type
+KBD_TYPE      CHAR(1)    POS(290);    // Keyboard type
+CTL_INFO      CHAR(1)    POS(342);    // Controller info
+COLOR_DSP     CHAR(1)    POS(343);    // Color capable?
+GRID_DSP      CHAR(1)    POS(344);    // Grid line dsp?
+ISDN_LEN      INT(5)     POS(385);    // Rmt number len
+ISDN_TYPE     CHAR(2)    POS(387);    // Rmt number type
+ISDN_PLAN     CHAR(2)    POS(389);    // Rmt number plan
+ISDN_NUM      CHAR(40)   POS(391);    // Rmt number
+ISDN_SLEN     INT(5)     POS(435);    // Rmt sub-address length
+ISDN_STYPE    CHAR(2)    POS(437);    // Rmt sub-address type
+ISDN_SNUM     CHAR(40)   POS(439);    // Rmt sub-address
+ISDN_CON      CHAR(1)    POS(480);    // Connection
+ISDN_RLEN     INT(5)     POS(481);    // Rmt address len
+ISDN_RNUM     CHAR(32)   POS(483);    // Rmt address
+ISDN_ELEN     INT(5)     POS(519);    // Extension len
+ISDN_ETYPE    CHAR(1)    POS(521);    // Extension type
+ISDN_ENUM     CHAR(40)   POS(522);    // Extension num
+ISDN_XTYPE    CHAR(1)    POS(566);    // X.25 call type
+TRAN_PGM      CHAR(64)   POS(567);    // Trans pgm name
+P_LUWIDLN     CHAR(1)    POS(631);    // LUWID fld len
+P_LUNAMELN    CHAR(1)    POS(632);    // LU-NAME len
+P_LUNAME      CHAR(17)   POS(633);    // LU-NAME
+P_LUWIDIN     CHAR(6)    POS(650);    // LUWID instance
+P_LUWIDSEQ    INT(5)     POS(656);    // LUWID seq num
+U_LUWIDLN     CHAR(1)    POS(658);    // LUWID fld len
+U_LUNAMELN    CHAR(1)    POS(659);    // LU-NAME len
+U_LUNAME      CHAR(17)   POS(660);    // LU-NAME
+U_LUWIDIN     CHAR(6)    POS(677);    // LUWID instance
+U_LUWIDSEQ    INT(5)     POS(683);    // LUWID seq num
+```
 
