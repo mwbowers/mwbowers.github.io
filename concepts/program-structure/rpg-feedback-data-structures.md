@@ -151,6 +151,7 @@ Example 2: *Program expects `NbrOfparms` field to have value of number of parame
 >Note: If `NbrOfparms` was not used, then the assignment code in StarEntry **would not** be generated.
 
 Example 3: *Program expects `wUserId` field to have value of the user associated with the Job*
+
 ```cs
 #region Program Status Data Structure
 DataStructure _DS3 = new (10);
@@ -363,3 +364,70 @@ DCL-DS ICFATRFBK;
      CONV_TYPE     CHAR(1)    POS(293);    // Conversation typ
      RMT_LOC       CHAR(10)   POS(294);    // Remote location
 ```
+
+## INFDS Migration
+
+In contrast with how `PSDS` is migrated, `INFDS` does not generate a data-structure, but instead a collection of [class properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties). Depending on the field, some properties are generated as *read-only*, others with *full-access*.
+
+
+Example 7: *INFDS for File Feedback (assumes associated with file MYFILE, MYFILE2, MYFILE3)*
+
+```cs
+#region File Information Data Structures
+
+      string FILE => "MYFILE";
+
+      int STATUS
+      {
+         get => MYFILE.StatusCode;
+         set => MYFILE.StatusCode = value;
+      }
+
+      FixedString<_8> SPCL_STAT => MYFILE.FormatName;
+
+      FixedString<_8> RECORD => MYFILE.FormatName;
+
+      short ROWS => 27;
+
+      short COLUMNS => 132;
+
+      FixedString<_10> IO_RCD_FMT => MYFILE.FormatName;
+
+      string DSP_FLAG1 => MYFILE.FeedbackFlags.ToString();
+
+      byte DSP_AID
+      {
+         get => MYFILE.FeedbackAID;
+         set => MYFILE.FeedbackAID = value;
+      }
+
+      short CURSOR => MYFILE.FeedbackCursor;
+
+      string SF_RRN => MYFILE.SflRRN.ToString();
+
+      short SF_MINRRN => MYFILE.FeedbackLowestSubfile;
+
+      short SF_NUMRCDS => (short)MYFILE.FeedbackSubfileRecords;
+
+      string ACT_CURS => MYFILE.FeedbackActiveWindowCursor.ToString();
+
+      int STS02
+      {
+         get => MYFILE2.StatusCode;
+         set => MYFILE2.StatusCode = value;
+      }
+
+      int REC02 => (int)MYFILE2.RecNum;
+
+      int STS01
+      {
+         get => MYFILE1.StatusCode;
+         set => MYFILE1.StatusCode = value;
+      }
+
+      int REC01 => (int)MYFILE1.RecNum;
+#endregion
+```
+
+
+
