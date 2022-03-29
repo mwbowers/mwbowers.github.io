@@ -262,7 +262,7 @@ PROC_MOD              344    353                                         * Mod P
 ## File Information Data Structure (INFDS)
 A File Information Data Structure (`INFDS`) can be defined for each file to make file exception/error and file feedback information available to the program or procedure. (See: [File Information Data Structure](https://www.ibm.com/docs/en/i/7.3?topic=exceptionerrors-file-information-data-structure#filinda) on IBM i docs).
 
-The file association is made using the keyword `INFDS` when declaring the file in `F` Specs or using the free-form DCL-DS command. The name provided in the keyword is the name od the associated Data-structure, following are two examples.
+The file association is made using the keyword `INFDS` when declaring the file in `F` Specs or using the free-form DCL-DS command. The name provided in the keyword is the name of the associated Data-structure, following are two examples.
 
 Fixed format:
 ```
