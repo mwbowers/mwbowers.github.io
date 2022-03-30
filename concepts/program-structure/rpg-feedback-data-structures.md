@@ -276,7 +276,7 @@ DCL-F MYFILE DISK(*EXT) INFDS(FILEFBK);
 
 Just like `PSDS` (above), the `INFDS` data-structure member fields are indicated by either position in the buffer or by the use of *keywords* like `*FILE`, `*SIZE`, `*ROUTINE` etc.
 
->The name of the data-structure field member is used-defined.
+>The name of the data-structure field member is user-defined.
 
 The `INFDS` contains the following feedback information:
 
