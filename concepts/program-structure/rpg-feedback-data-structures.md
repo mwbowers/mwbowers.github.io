@@ -188,7 +188,7 @@ Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate`, `$$R
 ```cs
 #region Program Status Data Structure
 DataStructure PSDS = new (429);
-FixedString<_10> ssJobName { get => PSDS.GetString(0, 10); set => PSDS.SetString(((string)value).AsSpan(), 0, 10); } 
+FixedString<_10> ssJobName { get => PSDS.GetString(243, 10); set => PSDS.SetString(((string)value).AsSpan(), 243, 10); } 
 FixedString<_10> ssUser { get => PSDS.GetString(253, 10); set => PSDS.SetString(((string)value).AsSpan(), 253, 10); }
 FixedDecimal<_6, _0> ssJobNbr { get => PSDS.GetZoned(263, 6, 0); set => PSDS.SetZoned(value, 263, 6, 0); }
 FixedDecimal<_6, _0> ssJobDate { get => PSDS.GetZoned(269, 6, 0); set => PSDS.SetZoned(value, 269, 6, 0); }
