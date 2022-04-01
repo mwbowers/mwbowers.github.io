@@ -34,15 +34,16 @@ D wUserId               254    263
 ```
 <br>
 
-Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate` and `$$SysTime` fields to have values of : Job name, User name, Job Number, Job date, System date and System time.*
+Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate`, `$$RunDate` and `$$RunTime` fields to have values of : Job name, User name, Job Number, Job date, Run date and Run time.*
+
 ```
-D PSDS           SDS                                               
+D PSDS           SDS
 D  $$JobName            244    253
 D  $$User               254    263
 D  $$JobNbr             264    269  0
 D  $$JobDate            270    275  0
-D  $$SysDate            276    281  0
-D  $$SysTime            282    287  0
+D  $$RunDate            276    281  0
+D  $$RunTime            282    287
 ```
 <br>
 
@@ -87,6 +88,14 @@ D SRC_LIB               314    323                                         * Sou
 D SRC_MBR               324    333                                         * Source file mbr
 D PROC_PGM              334    343                                         * Pgm Proc is in
 D PROC_MOD              344    353                                         * Mod Proc is in
+D SRC_ID1               354    355S 0                                      * Source Id matching the statement number from positions 21-28.
+D SRC_ID2               356    357S 0                                      * Source Id matching the statement number from positions 228-235.
+D USR_PRF               358    367                                         * Current user profile name.
+D EXT_ERR               368    371S 0                                      * External error code
+D XML_INTO              372    379S 0                                      * Elements set by XML-INTO or DATA-INTO
+D JOB_ID                380    395                                         * Internal job ID.
+D SYS_NAME              396    403                                         * System name.
+D UNUSED                404    429                                         * Unused.
 ```
 
 ## PSDS Migration
@@ -174,18 +183,17 @@ public MyProgram()
 >Note: If `wUserId` was not used, then the assignment code in the constructor **would not** have been generated.
 <br>
 
-Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate` and `$$SysTime` fields to have values of : Job name, User name, Job Number, Job date, System date and System time.*
+Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate`, `$$RunDate` and `$$RunTime` fields to have values of : Job name, User name, Job Number, Job date, Run date and Run time.*
 
 ```cs
 #region Program Status Data Structure
-    DataStructure PSDS = new (38);
-    FixedString<_10> ssJobName { get => PSDS.GetString(0, 10); set => PSDS.SetString(((string)value).AsSpan(), 0, 10); }
-    FixedString<_10> ssUser { get => PSDS.GetString(10, 10); set => PSDS.SetString(((string)value).AsSpan(), 10, 10); }
-    FixedDecimal<_6, _0> ssJobNbr { get => PSDS.GetZoned(20, 6, 0); set => PSDS.SetZoned(value, 20, 6, 0); }
-    FixedDecimal<_6, _0> ssJobDate { get => PSDS.GetZoned(26, 6, 0); set => PSDS.SetZoned(value, 26, 6, 0); }
-    FixedDecimal<_6, _0> MonarchPSDS_PGMDATE { get => PSDS.GetZoned(32, 6, 0); set => PSDS.SetZoned(value, 32, 6, 0); }  // Monarch generated
-    FixedDecimal<_6, _0> ssSysDate { get => PSDS.GetZoned(32, 6, 0); set => PSDS.SetZoned(value, 32, 6, 0); }
-    FixedDecimal<_6, _0> ssSysTime { get => PSDS.GetZoned(26, 6, 0); set => PSDS.SetZoned(value, 26, 6, 0); }
+DataStructure PSDS = new (429);
+FixedString<_10> ssJobName { get => PSDS.GetString(0, 10); set => PSDS.SetString(((string)value).AsSpan(), 0, 10); } 
+FixedString<_10> ssUser { get => PSDS.GetString(253, 10); set => PSDS.SetString(((string)value).AsSpan(), 253, 10); }
+FixedDecimal<_6, _0> ssJobNbr { get => PSDS.GetZoned(263, 6, 0); set => PSDS.SetZoned(value, 263, 6, 0); }
+FixedDecimal<_6, _0> ssJobDate { get => PSDS.GetZoned(269, 6, 0); set => PSDS.SetZoned(value, 269, 6, 0); }
+FixedDecimal<_6, _0> ssRunDate { get => PSDS.GetZoned(275, 6, 0); set => PSDS.SetZoned(value, 275, 6, 0); }
+FixedString<_6> ssRunTime { get => PSDS.GetString(281, 10); set => PSDS.SetString(((string)value).AsSpan(), 281, 10); }
 #endregion
 
 public MyProgram()
@@ -197,8 +205,9 @@ public MyProgram()
    ssJobName = CurrentJob.PsdsJobName.ToUpper();
    ssUser = CurrentJob.PsdsJobUser.ToUpper();
    ssJobNbr = CurrentJob.PsdsJobNumber;
+
    StartupDate = StartupMoment;
-   MonarchPSDS_PGMDATE = StartupDate.MoveRight(MonarchPSDS_PGMDATE);
+   // Pending: ssJobDate, ssRunDate and ssRunTime ... Research Cocoon & Nomad.
 #endregion
 }
 ```
@@ -252,6 +261,14 @@ SRC_LIB               314    323                                         * Sourc
 SRC_MBR               324    333                                         * Source file mbr
 PROC_PGM              334    343                                         * Pgm Proc is in
 PROC_MOD              344    353                                         * Mod Proc is in
+SRC_ID1               354    355S 0                                      * Source Id matching the statement number from positions 21-28.
+SRC_ID2               356    357S 0                                      * Source Id matching the statement number from positions 228-235.
+USR_PRF               358    367                                         * Current user profile name.
+EXT_ERR               368    371S 0                                      * External error code
+XML_INTO              372    379S 0                                      * Elements set by XML-INTO or DATA-INTO
+JOB_ID                380    395                                         * Internal job ID.
+SYS_NAME              396    403                                         * System name.
+UNUSED                404    429                                         * Unused.
 ```
 >Notes: 1. All fields are migrated, but only those supported are pre-populated (the rest will have their reset value initially). 2. Field names are suggested names. As discussed earlier, the definition is given by either buffer position or *keyword*.
 
