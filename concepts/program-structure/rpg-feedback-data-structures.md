@@ -48,6 +48,7 @@ D  $$RunTime            282    287
 <br>
 
 Example 5: *Program expects `PROC_NAME`, `CRT_DATE` fields to have values of : Current Procedure name and Creation Date.*
+
 ```
 DPSDS            SDS
 D PROC_NAME         *PROC
@@ -113,10 +114,12 @@ Then **if field is actually used in the program**, the value is populated on eit
 <br>
 
 Example 1: *Program expects `DSWPGM` field to have value of current procedure name*
+
 ```cs
 #region Program Status Data Structure
-   DataStructure _DS1 = new (10);
-   FixedString<_10> DSWPGM { get => _DS1.GetString(0, 9); set => _DS1.SetString(((string)value).AsSpan(), 0, 9); } 
+   DataStructure _DS3 = new (429);
+   FixedString<_10> DSWPGM { get => _DS3.GetString(0, 10); set => _DS3.SetString(((string)value).AsSpan(), 0, 10); } 
+
 #endregion
 
    public MyProgram()
@@ -128,19 +131,19 @@ Example 1: *Program expects `DSWPGM` field to have value of current procedure na
       .
 
 #region Populate Program Status Data Structure
-      DSWPGM = this.GetType().FullName.Substring(this.GetType().Namespace.Length+1).PadRight(10).ToUpper()
+      DSWPGM = this.GetType().FullName.Substring(this.GetType().Namespace.Length + 1).PadRight(10).ToUpper();
 #endregion
    }
 ```
 <br>
->Note: If `DSWPGM` was not used, then the assignment code in the constructor **would not** have been generated.
+>Notes: The name `_DS3` is a unique random name given to the *Unnamed* PSDS. If `DSWPGM` was not used, then the assignment code in the constructor **would not** have been generated.
 
 Example 2: *Program expects `NbrOfparms` field to have value of number of parameters passed*
 ```cs
 
 #region Program Status Data Structure
-   DataStructure _DS7 = new (3);
-   FixedDecimal<_3, _0> NbrOfparms { get => _DS7.GetZoned(0, 3, 0); set => _DS7.SetZoned(value, 0, 3, 0); } 
+   DataStructure _DS7 = new (429);
+   FixedDecimal<_3, _0> NbrOfparms { get => _DS7.GetZoned(35, 3, 0); set => _DS7.SetZoned(value, 35, 3, 0); } 
 #endregion
 
    void StarEntry(int cparms)
@@ -157,14 +160,14 @@ Example 2: *Program expects `NbrOfparms` field to have value of number of parame
    }
 ```
 <br>
->Note: If `NbrOfparms` was not used, then the assignment code in StarEntry **would not** be generated.
+>Note: The name `_DS3` is a unique random name given to the *Unnamed* PSDS. If `NbrOfparms` was not used, then the assignment code in StarEntry **would not** be generated.
 
 Example 3: *Program expects `wUserId` field to have value of the user associated with the Job*
 
 ```cs
 #region Program Status Data Structure
-DataStructure _DS3 = new (10);
-FixedString<_10> wUserId { get => _DS3.GetString(0, 10); set => _DS3.SetString(((string)value).AsSpan(), 0, 10); } 
+   DataStructure _DS3 = new (429);
+   FixedString<_10> wUserId { get => _DS3.GetString(253, 10); set => _DS3.SetString(((string)value).AsSpan(), 253, 10); } 
 #endregion
 
 public MyProgram()
@@ -187,27 +190,31 @@ Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate`, `$$R
 
 ```cs
 #region Program Status Data Structure
-DataStructure PSDS = new (429);
-FixedString<_10> ssJobName { get => PSDS.GetString(243, 10); set => PSDS.SetString(((string)value).AsSpan(), 243, 10); } 
-FixedString<_10> ssUser { get => PSDS.GetString(253, 10); set => PSDS.SetString(((string)value).AsSpan(), 253, 10); }
-FixedDecimal<_6, _0> ssJobNbr { get => PSDS.GetZoned(263, 6, 0); set => PSDS.SetZoned(value, 263, 6, 0); }
-FixedDecimal<_6, _0> ssJobDate { get => PSDS.GetZoned(269, 6, 0); set => PSDS.SetZoned(value, 269, 6, 0); }
-FixedDecimal<_6, _0> ssRunDate { get => PSDS.GetZoned(275, 6, 0); set => PSDS.SetZoned(value, 275, 6, 0); }
-FixedString<_6> ssRunTime { get => PSDS.GetString(281, 10); set => PSDS.SetString(((string)value).AsSpan(), 281, 10); }
+   DataStructure PSDS = new (429);
+   FixedString<_10> ssJobName { get => PSDS.GetString(243, 10); set => PSDS.SetString(((string)value).AsSpan(), 243, 10); } 
+   FixedString<_10> ssUser { get => PSDS.GetString(253, 10); set => PSDS.SetString(((string)value).AsSpan(), 253, 10); }
+   FixedDecimal<_6, _0> ssJobNbr { get => PSDS.GetZoned(263, 6, 0); set => PSDS.SetZoned(value, 263, 6, 0); }
+   FixedDecimal<_6, _0> ssJobDate { get => PSDS.GetZoned(269, 6, 0); set => PSDS.SetZoned(value, 269, 6, 0); }
+   FixedDecimal<_6, _0> ssRunDate { get => PSDS.GetZoned(275, 6, 0); set => PSDS.SetZoned(value, 275, 6, 0); }
+   FixedString<_6> ssRunTime { get => PSDS.GetString(281, 10); set => PSDS.SetString(((string)value).AsSpan(), 281, 10); }
 #endregion
 
 public MyProgram()
 {
-   FixedDate<_ISO, _Default> StartupDate = DateTime.MinValue;
+   DateTime _Monarch_NOW = DateTime.Now;
+   FixedDate<_MDY, _None> _Monarch_JOB_DATE = CurrentJob.StartupMoment;
+   FixedDate<_MDY, _None> _Monarch_RUN_DATE = _Monarch_NOW;
+   FixedTime<_HMS, _None> _Monarch_RUN_TIME = _Monarch_NOW;
+
    _instanceInit();
 
 #region Populate Program Status Data Structure
    ssJobName = CurrentJob.PsdsJobName.ToUpper();
    ssUser = CurrentJob.PsdsJobUser.ToUpper();
    ssJobNbr = CurrentJob.PsdsJobNumber;
-
-   StartupDate = StartupMoment;
-   // Pending: ssJobDate, ssRunDate and ssRunTime ... Research Cocoon & Nomad.
+   ssJobDate = (FixedDecimal<_6,_0>)(string)_Monarch_JOB_DATE;
+   ssRunDate = (FixedDecimal<_6,_0>)(string)_Monarch_RUN_DATE;
+   ssRunTime = (string)_Monarch_RUN_TIME;
 #endregion
 }
 ```
@@ -218,23 +225,22 @@ Example 5: *Program expects `PROC_NAME`, `CRT_DATE` fields to have values of : C
 
 ```cs
 #region Program Status Data Structure
-   DataStructure PSDS = new (16);
+   DataStructure PSDS = new (429);
    FixedString<_10> PROC_NAME { get => PSDS.GetString(0, 10); set => PSDS.SetString(((string)value).AsSpan(), 0, 10); } 
-   FixedString<_6> CRT_DATE { get => PSDS.GetString(10, 6); set => PSDS.SetString(((string)value).AsSpan(), 10, 6); } 
+   FixedString<_6> CRT_DATE { get => PSDS.GetString(293, 6); set => PSDS.SetString(((string)value).AsSpan(), 293, 6); } 
 
-   /Error Unsupported: Field CRT_DATE not supported for Program Status DS
+   // /Error Unsupported: Field CRT_DATE not supported for Program Status DS
 #endregion
 
 public MyProgram()
 {
-   FixedDate<_ISO, _Default> StartupDate = DateTime.MinValue;
    _instanceInit();
 #region Populate Program Status Data Structure
    PROC_NAME = this.GetType().FullName.Substring(this.GetType().Namespace.Length + 1).PadRight(10).ToUpper();
 #endregion
 }
 ```
->Note: The Program *Creation Date* would be the date when the class was compiled. The concept loses meaning for several reasons, first the program is **no longer** an isolated user object (it became now a class within an assembly), secondly, .NET deployment is significantly different than IBM i, the assembly has an associated version metadata record, plus the whole application likely has a build number.
+>Note: The Program *Creation Date* would be the date when the class was compiled. The concept loses meaning for several reasons, first the program is **no longer** an isolated user object (it became now a class within an assembly), secondly, .NET deployment is significantly different than IBM i, the assembly has an associated version metadata record, plus the whole application likely has a build number. If CRT_DATE must absolutely be remediated, you should consider using the *Migration Date*, which is given as a comment at the top of each source file - proper care should be taken to format the date using the expected `UDATE` format*.
 
 ## Unsupported PSDS field migration (Cocoon V10)
 The following are the fields that **will not** be populated (at constructor nor at `StarEntry`):
