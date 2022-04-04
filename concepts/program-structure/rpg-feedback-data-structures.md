@@ -201,24 +201,31 @@ Example 4: *Program expects `$$JobName`, `$$User`, `$$JobNbr`, `$$JobDate`, `$$R
 
 public MyProgram()
 {
-   DateTime _Monarch_NOW = DateTime.Now;
-   FixedDate<_MDY, _None> _Monarch_JOB_DATE = CurrentJob.StartupMoment;
-   FixedDate<_MDY, _None> _Monarch_RUN_DATE = _Monarch_NOW;
-   FixedTime<_HMS, _None> _Monarch_RUN_TIME = _Monarch_NOW;
+   FixedTimestamp<_None> _Monarch_NOW = DateTime.MinValue;
+   FixedDate<_MDY, _None> _Monarch_JOB_DATE = DateTime.MinValue;
+   FixedDate<_MDY, _None> _Monarch_RUN_DATE = DateTime.MinValue;
+   FixedTime<_ISO, _None> _Monarch_RUN_TIME = DateTime.MinValue;
 
    _instanceInit();
 
 #region Populate Program Status Data Structure
+   _Monarch_NOW = DateTime.Now;
+   _Monarch_JOB_DATE = CurrentJob.StartupMoment;
+   _Monarch_RUN_DATE = (DateTime)_Monarch_NOW;
+   _Monarch_RUN_TIME = (DateTime)_Monarch_NOW;
+
    ssJobName = CurrentJob.PsdsJobName.ToUpper();
    ssUser = CurrentJob.PsdsJobUser.ToUpper();
    ssJobNbr = CurrentJob.PsdsJobNumber;
-   ssJobDate = (FixedDecimal<_6,_0>)(string)_Monarch_JOB_DATE;
-   ssRunDate = (FixedDecimal<_6,_0>)(string)_Monarch_RUN_DATE;
-   ssRunTime = (string)_Monarch_RUN_TIME;
+
+   ssJobDate = _Monarch_JOB_DATE.ToFixedDecimal(6, 0);
+   ssRunDate = _Monarch_RUN_DATE.ToFixedDecimal(6, 0);
+   ssRunTime = _Monarch_RUN_TIME.ToString().AdjustEnd(6);
+        
 #endregion
 }
 ```
->Note: If `$$JobName` or `$$User` or `$$JobNbr` or `$$JobDate` or `$$SysTime`were not used, then their assignment code in the constructor **would not** have been generated.
+>Note: 1. The date `_MDY` format follows the Migration Directives for `UDATE`. 2. If `$$JobName` or `$$User` or `$$JobNbr` or `$$JobDate` or `$$SysTime`were not used, then their assignment code in the constructor **would not** have been generated.
 <br>
 
 Example 5: *Program expects `PROC_NAME`, `CRT_DATE` fields to have values of : Current Procedure name and Creation Date.*
