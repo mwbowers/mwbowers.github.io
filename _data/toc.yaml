@@ -2548,4 +2548,6 @@ Articles:
     - title: Logic Program Logger
       path: /articles/how-to-technique-logger.html
     - title: SQL Parser Explorer
-      path: /articles/sql-parser-explorer.html      
+      path: /articles/sql-parser-explorer.html
+    - title: Zebra Stripe Subfiles
+      path: /articles/zebra-stripe-subfiles.html                  
