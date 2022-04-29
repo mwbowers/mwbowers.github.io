@@ -68,7 +68,7 @@ For example, assume you have a Displayfile `~\Areas\Views\Pages\CUSTDSPF.cshtml`
 
 <br>
 
->Note: You may have more than one subfile on the Page. Adding the same "zebra-stripe-subfile" class to each subfile will every one of the instances. (Or you can have different class names with different CSS rules, if so desired).
+>Note: You may have more than one subfile on the Page. Adding the same "zebra-stripe-subfile" class to each subfile will affect every one of the instances. (Or you can have different class names with different CSS rules, if so desired).
 
 
 
