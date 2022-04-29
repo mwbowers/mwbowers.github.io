@@ -30,7 +30,7 @@ For example, assume you have a Displayfile `~\Areas\Views\Pages\CUSTDSPF.cshtml`
 
 <br>
 
-* Add the attribute `class="zebra-stripe-subfile` to the subfile markup.
+* Add the attribute `class="zebra-stripe-subfile"` to the subfile markup.
 
 
 ```html
@@ -48,7 +48,7 @@ For example, assume you have a Displayfile `~\Areas\Views\Pages\CUSTDSPF.cshtml`
 </div>
 ```
 
-* Define the following `CSS` to the file `~\Site\wwwroot\css\site.css`
+* Define the following `CSS` in the file `~\Site\wwwroot\css\site.css`
 
 ```cs
 .zebra-stripe-subfile > div:nth-child(even) {
