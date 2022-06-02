@@ -16,7 +16,7 @@ There are two CSS files in the library:
 
 Web Technology:
 * Javascript is implemented using [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-* CSS layout styles rely heavily on [advanced CSS features](/concepts/user-interface/qsys-expo-client-advanced-css/) 
+* CSS layout styles rely heavily on [advanced CSS features](/concepts/user-interface/qsys-expo-client-advanced-css) 
 
 
 Every Display Page will loads the Expo Client Library as described by [Expo Web Content](/concepts/user-interface/qsys-expo-web-content)
