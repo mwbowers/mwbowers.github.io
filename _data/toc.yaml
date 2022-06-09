@@ -163,8 +163,8 @@ Concepts:
     - sectiontitle: Monarch Framework ASPX Session Overview
       sectionpath: /reference/monarch-fx/amfconFrameworkASPXSessionOverview.html
       section:
-    - title: Controlling Display Field Color
-      path: /manuals/migrations/controlling-display-field-color.html
+      - title: Controlling Display Field Color
+        path: /manuals/migrations/controlling-display-field-color.html
       - sectiontitle: Enhancing Applications using Non-Display File ASPX Pages
         sectionpath: /reference/monarch-fx/amfconEnhancingWithNonDisplayFileASPX.html
         section:
