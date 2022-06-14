@@ -4,7 +4,7 @@ title: Application Architecture
 ---
 
 
-## Monarch Jobs
+## Jobs
 IBM i programs rely on a runtime environment provided in the form of a Job. Jobs on the IBM i represent a schedulable unit of work, they are similar to a process in Windows, Unix and other operating systems, however, Jobs are typically much 'heavier' than processes.
 
 Some of the facilities provided to programs by the Job are:
@@ -18,23 +18,27 @@ Some of the facilities provided to programs by the Job are:
 After the Job has been established, control is passed to the initial program which in turn get the application going.
 
 IBM i Jobs can generally be classified as being either batch or interactive, where interactive jobs are associated with a workstation. Typical RPG application jobs are started in one of three ways on the IBM i:
-1.	A batch job is submitted (created) by a program running in an existing job or from a command line.
-2.	A batch job is submitted by an automatic job scheduler.
+1.	A batch job request is submitted by a program running in an existing job or by a user from a command line. When the  request is processed, the batch job is created.
+2.	A batch job request is submitted by an automatic job scheduler. When the  request is processed, the batch job is created.
 3.	An interactive job is created when a user signs on to a workstation.
 
-Monarch provides an execution context anchored around the concept of a Job and implemented in its class library. Similar to IBM i Jobs, Monarch Jobs are classified as batch or interactive. Monarch Batch jobs are characterized by having a starting .NET program in the form of an .exe and are executed in their own process. Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process, these Interactive jobs are associated with an ASP.NET Session.
+### Monarch Jobs
+Monarch provides an execution context anchored around the concept of a Job and implemented in its class library. Similar to IBM i Jobs, Monarch Jobs are classified as batch or interactive. 
+Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process; these Interactive jobs are associated with an ASP.NET Session.
+Monarch Batch jobs can be run in their own process or on a dedicated thread alongside the thread of the job that started it. 
+
 Monarch Jobs can be started in one of three ways:
-1.	A new batch job is created by a program running in an existing job.
-2.	A batch job is submitted by an automatic scheduler.
+1.	A new batch immediate job is created by a program running in an existing job.
+2.	A batch job request is submitted to a queue and then the job is created by a job dispatcher.
 3.	An interactive job is created when a new ASP.NET Session is started.
 
 ## Application Architectures
-When looking at a Monarch application's architecture the first thing to note is the type of job that will be needed to run the application. Batch Jobs have a simpler architecture as they run in their own process whereas Interactive Jobs are associated with a web site. 
+When looking at a Monarch application's architecture the first thing to note is the type of job that will be needed to run the application. Batch Jobs have a simpler architecture as they do not need to deal with user input whereas Interactive Jobs are associated with a web site user session.
 
 For this discussion, the database server is assumed to be running on its own server, however, it is entirely possible to run it on any of the application or web servers.
 
 ### Batch Job Architecture
-Batch jobs execute in their own .NET Process as console programs.
+Batch jobs execute in their own .NET Process as console programs or in a dedicated thread alongside the the thread of the job that started it.
 
 ![Batch Job](images/batch-job-architecture.svg)
 
