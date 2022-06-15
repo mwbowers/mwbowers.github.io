@@ -85,12 +85,12 @@ The actual color is govern by bits 1, 3 and 4 as follows:
 | Bit 1 | Bit 3 | Bit 4 | Color
 | ------| ----- | ----- | -----
 | 0     |     0 |     0 | Green
-| 0     |     0 |     1 | White
+| 0     |     0 |     1 | DarkBlue
 | 0     |     1 |     0 | Red
 | 0     |     1 |     1 | Red
-| 1     |     0 |     0 | Turquoise
-| 1     |     0 |     1 | White
-| 1     |     1 |     0 | Pink
+| 1     |     0 |     0 | DarkTurquoise
+| 1     |     0 |     1 | DarkBlue
+| 1     |     1 |     0 | DeepPink
 | 1     |     1 |     1 | Blue
 
 ### Protecting a Field
