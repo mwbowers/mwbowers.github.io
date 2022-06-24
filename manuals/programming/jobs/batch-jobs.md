@@ -17,22 +17,22 @@ In order for jobs on a job queue to be processed, there must be an active subsys
 Subsystems select jobs from job queues in priority order, within limits that can be configured for each priority. Each job has a job queue priority that can be managed when the job is on the job queue.
 
 
-## Job Schedulers
+## Job Scheduling for Monarch Applications
 There are three strategies for executing migrated batch programs:
 1. Add the Batch Job description to a job queue managed by the Monarch’s batch subsystem (MBS).
-2. Start the Batch Job immediately either in a separate .NET process or in the a separate thread of the same process as the Job that is starting the batch job.
+2. Start the Batch Job immediately either in a separate .NET process or in a separate thread of the same process as the Job that is starting the new Batch job.
 3. Use a Third Party Scheduler. 
 
 The first two strategies are supported directly by Monarch Base. The migration tools give preference to the strategy utilizing a job queue, but it is easy to convert the migrated code to bypass the job queue and start the new Batch Job immediately.
 
-It is also possible to submit the jobs to a third-party scheduler if it provides an API and a good functionality set. The work involved in adapting the migrated code to utilizing the third-party scheduler is dependent on the scheduler's capabilities.
+It is also possible to submit the jobs to a third-party scheduler if it provides an API with a good functionality set. The work involved in adapting the migrated code to utilizing the third-party scheduler is dependent on the scheduler's capabilities, this work may include creating a Console program to launch the initial Migrated program.
 
 ## Standard Batch Job Creation
 Monarch Base provides two classes to assist in the execution of Batch Jobs:
 - BatchJobProfile
 - BatchOptions
 
-The Class BatchJobProfile encapsulates the attributes for a Batch Job providing methods Submit or Start the job.  When constructing a BatchJobProfile instance, it is necessary to provide the name of the program that will be called in the new job along with the program parameters.  Additionally, an instance of the Class Batch Options is required.
+The Class BatchJobProfile encapsulates the attributes for a Batch Job providing methods to Submit or Start the job.  When constructing a BatchJobProfile instance, it is necessary to provide the name of the migrated program that will be called in the new job along with the program's parameters.  Additionally, an instance of the Class BatchOptions is required.
 
 The Class BatchOptions provides many of the initial attributes for the new job. When an attribute is not set in the BatchOptions object, its value is taken from the parent Job.
 
@@ -67,7 +67,9 @@ The `Submit` method creates a Job Queue Entry in the proper Job Queue with the a
 ### Start a Batch Job Immediately
 When a Batch Job starts immediately, there is no Queue involved but instead a new process or thread is created and the job starts on it.
 
-The main scenario for starting a Batch Job immediately is to allow a user to continue working in an Interactive Job while a report or some other long running operation is performed in a separate background job.
+The main scenario for starting a Batch Job immediately is to allow a user to continue working in an Interactive Job while a report or some other long running operation is performed in a separate background job for the user.
+
+There are two methods to start a Batch Job immediately as shown below:
 
 ```cs
     if (pType == "I")
@@ -80,19 +82,21 @@ When a Job is started in process, a separate .NET thread is created within the c
 
 ## Monarch Batch Subsystem (MBS)
 
-The `Submit()` method creates a human readable version of the Job Queue Entry that encapsulate a requests to run a program.   MBS employs the OS file system as follows:
- - Each job queue is represented by a folder with the name of the Queue.  It is located under the location specified in the MonarchJob. JobQueueBaseQueuesPath property (assume C:\JobQueues).  For instance the QBATCH queue will reside in **C:\JobQueues\QBATCH**.
+The `BatchJobProfile.Submit()` method creates a human readable version of the Job Queue Entry that encapsulate a requests to run a program.   MBS employs the OS file system as follows:
+ - Each Job Queue is represented by a folder with the name of the Queue.  It is located under the directory specified in the ```MonarchJob.JobQueueBaseQueuesPath``` property; assuming this is set to **C:\JobQueues**, then the QBATCH queue will reside in **C:\JobQueues\QBATCH**.
  - Each request is stored in a file with the extension JQE (for Job Queue Entry). Its name is composed by concatenating the following attributes:
    + Priority on Queue
    + Timestamp
+   + Job Name
 
-For instance, the job submitted on 11/23/2019 at 9:59:05.342 AM would generate a file named: **5_20191123095905342.jqe**
+For instance, the job 'CREATESA' submitted on 11/23/2019 at 9:59:05.342 AM would generate a file named: **5_20191123095905342_CREATESA.jqe**
 
 The advantage of this naming convention is the ease in which the state of a job queue can be inspected.   A Queue folder sorted alphabetically will show the job queue entries in the order they would be executed, with the lowest numbered priorities listed first in the order in which they were submitted.
 
-The JQE file is an JSON document with the job attributes, for example:
- - program – path to .EXE
+The JQE file is a JSON document with the job attributes, for example:
+ - program Name – fully qualified migrated program's name
  - parameters – for the program
+ - AssemblyLocation - path to the DLL containing the migrated program
  - libraryList – initial library list
  - outputQueue – default output Queue
  - switches – the 8 job switches
@@ -128,7 +132,7 @@ Here is a shortened example of a JQE file.
 
 ### BatchDispatch
 
-The MBS program ASNA.QSys.BatchDispatch.exe (BatchDispatch) is a console program that ‘watches’ a job queue’s windows folder processing the entries found in it. The folder works as a Queue for Jobs. As the entries of the queue are being processed, BatchDispatch creates a process for the entry and invokes the executable, it then waits for the process to complete.  BatchDispatch runs one job at a time.
+The MBS program *ASNA.QSys.BatchDispatch.exe* (BatchDispatch) is a console program that ‘watches’ a job queue’s windows folder processing the entries found in it. The folder works as a Queue for Jobs. As the entries of the queue are being processed, BatchDispatch creates a process for the entry and invokes the program, it then waits for the process to complete.  BatchDispatch runs one job at a time.
 
 The source code for BatchDispatch is in GitHub where customers can fork the repository and customize it to their particular needs.
 
