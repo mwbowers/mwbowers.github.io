@@ -152,17 +152,17 @@ Note *: %LocalAppData%/JobQueues
 
 Example:
 ```
->ASNA.QSys.BatchDispatch.exe /q=QBATCH -p="C:/MonarchQueues/JobQueues"
+> ASNA.QSys.BatchDispatch.exe /q=NIGHTLY -p="C:/MonarchQueues/JobQueues"
 BatchDispatch:
-    Queue Name       = QBATCH
-    Base Queues Path = C:/MonarchQueues/JobQueues
-    JQE Extension    = jqe
+    Queue Name           = NIGHTLY
+    Base Queues Path     = C:/MonarchQueues/JobQueues
+    JQE Extension        = jqe
 
-11:34:05 AM => Processing entries of type jqe on job queue folder C:/MonarchQueues/JobQueues\QBATCH
-11:34:05 AM =>   Processing entry C:\MonarchQueues\JobQueues\QBATCH\5_20210803152438642_.jqe
+6/24/2022 5:05:16 PM => Processing entries of type jqe on job queue folder C:/MonarchQueues/JobQueues\NIGHTLY.
+6/24/2022 5:05:16 PM =>   Processing entry C:\MonarchQueues\JobQueues\NIGHTLY\5_20220624120729100_CREATESA.jqe
 
-11:34:05 AM Starting Program: C:/MonarchProjects/Executables\Acme.PrintCustomer.exe
-11:34:12 AM Time Elapsed: 00:00:06.91 Exit Code: 0x0
+6/24/2022 5:05:16 PM Starting Program: 'Acme.CUSTCRTS' in Assembly 'C:\Source\Demos\CAP\CustApp_20220406\MonarchExecutable\CUSTCRTS_CS\bin\Debug\net5.0\Acme.CUSTCRTS.dll'
+6/24/2022 5:07:37 PM Time Elapsed: 00:02:20.69 Exit Code: 0x0
 ```
 
 ----------
