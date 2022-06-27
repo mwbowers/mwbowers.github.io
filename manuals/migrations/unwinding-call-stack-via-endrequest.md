@@ -1,0 +1,190 @@
+---
+title: Unwinding the Call Stack via EndRequest
+
+---
+
+# Introduction
+Monarch Base defines the exception `ASNA.QSys.Runtime.EndRequestException` which can be used to orderly unwind an activation stack of program calls. 
+
+The EndRequest exception is monitored within the CallD (Dynamic Call) infrastructure, when the exception is seen, CallD deactivates the called program and bubbles up the exception through the activation call stack.  
+
+A program can also monitor for the EndRequest exception and handle it in any way it desires.  A program can throw the EndRequest exception to 'return' to a program in the call stack that is monitoring for the exception.  All the programs between the monitoring program and the throwing program will be deactivated when the exception is thrown.
+
+In addition to a program throwing the exception, Monarch Base provides two other mechanisms that can be used to rise the exception from the website of an interactive job:
+ + The JavaScript pushKey method to initiate from the browser.
+ + The PushEndRequest method to initiate it from a page's model.
+
+ These facilities can be employed to allow a user to end a particular process and return to a known point in an application, like a menu screen, or to start a different process.
+
+# Some Code
+For the following discussion, please see first the topics (Enhancing Applications using Non-Display File Pages)[enhancing-with-non-display-file.html] and (Calling a Program from a Non-DisplayFile Page)[calling-program-from-non-displayfile-page.html]. In the latter topic, a 'regular' Razor Page (Minutes) is used as a menu on the website where different programs are called via the (Command.Call)[reference/asna-qsys-expo/expo-model/command.html#callstring-string-string-string] method while the Job awaited for commands via the (AcceptCommands) [/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands] method.
+
+## Returning to a Menu
+
+Assume an application which wants to present a regular Razor Page as its menu.  The menu page will determine what program is to be invoked and will do so via the Command.Call() method.  The application's Job will have to be ready to accept commands so that the program call can take effect.  Furthermore, the application will provide a button on some screens allowing the user to click on it to go back to the menu effectively ending whatever process had been initiating via the last menu option invoked.
+
+### On the Job
+
+The job will call (AcceptCommands)[https://asnaqsys.github.io/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands] in a loop so that it can continue  processing commands even after receiving an EndRequest exception.
+
+```cs
+    ...
+    MyDatabase.Open();
+    bool EndRequestReceived;
+    do
+    {
+        EndRequestReceived = false;
+        try
+        {
+            returnValue = AcceptCommands();
+        }
+        catch (EndRequestException e)
+        {
+            EndRequestReceived = true;
+            ReclaimResources();
+        }
+    } while (EndRequestReceived);
+    ...
+```
+
+### On the Website
+
+Let's start by assuming that all the display file Razor Pages will use a common `_Layout.cshtml` file and that all of them will allow their process to be interrupted via EndRequest.  We could add the following code to `_Layout.cshtml` to show a button for the user to press.
+
+```cs
+<body>
+    <button type="button" onclick="window.asnaExpo.page.pushKey('EndRqs')">Go To Menu</button>
+    @RenderBody()
+    ...
+```
+
+The `pushKey()` JavaScript function simulates a user pressing a function key; The 'EndRqs' is a special key that will be interpreted by the Monarch Base display file handler as a petition to throw the `EndRequest` exception.  When the user presses the button, the exception will be thrown on the Job's blue thread and the program that had presented the current screen will terminate along with all the programs in the call stack until execution reaches back to `AcceptCommands` which will also throw the `EndRequest` exception. The `catch` in the job's loop will process the exception and invoke again `AcceptCommands` to process any future commands from the menu.
+
+#### Allowing only some pages to be ended
+If we only wanted some of the pages to include the button with the `pushKey` code, we could control its presentation with some flag in the `ViewData` collection and have in `_Layout.cshtml` this code:
+```cs
+<body>
+    @if ((string)ViewData["AllowEndRequest"] == "Y")
+    {
+        <button type="button" onclick="window.asnaExpo.page.pushKey('EndRqs')">Go To Menu</button>
+    }
+    @RenderBody()
+    ...
+```
+
+If most of the pages would allow the 'Go to Menu' button, then the _ViewStart.cshtml could default the flag to 'Y' like this:
+```cs
+@{
+    Layout = "_Layout";
+    ViewData["AllowEndRequest"] = "Y";
+}
+```
+
+and then individual pages could disable the button by setting the flag to 'N' like this:
+```cs
+@page
+@model DSPFXYZ
+@{
+    ViewData["Title"] = "DSPFXYZ";
+    ViewData["AllowEndRequest"] = "N";
+}
+...
+```
+
+### Starting EndRequest in the Model
+
+It is also possible to initiate an EndRequest from the code behind in a Page's Model; to do so use the method `PushEndRequest` from the (Command)[/reference/asna-qsys-expo/expo-model/command.html] class.
+
+For this scenario, assume there are some programs that can allow the user to end the processing on their current screen and 'jump' to a different program of the application, for example the employee directory program.
+
+Using the same technique as above, the `_Layout.cshtml` could include code like this:
+```cs
+<body>
+    @if ((string)ViewData["AllowEmployeeDirectory"] == "Y")
+    {
+        <button type="button" onclick="location.href='/Switch?Option=1'">Go To Employee Directory</button>
+    }
+    @RenderBody()
+    ...
+```
+
+Notice how this time the button allows the user to redirect the browser to a `Switch` page with an option of '1'.
+
+The Switch page can PushEndRequest() in the OnGet method and follow it with a call to the Employee Directory program.  The following code assumes the same website structure where programs are called by the menu page 'Minutes' discussed (here)[https://asnaqsys.github.io/manuals/migrations/calling-program-from-non-displayfile-page.html#minutus].
+
+The code only shows the handling of options '1' and '5' as an example of calling a program or having the Job return out of `AcceptCommands`.
+
+```cs
+using System;
+using ASNA.QSys.Expo.Model;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
+
+namespace CustAppSite.Pages
+{
+    [BindProperties]
+    public class SwitchModel : PageModel
+    {
+        public IActionResult OnGet()
+        {
+            var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+            while (!command.JobStarted)
+                System.Threading.Thread.Sleep(100);
+
+            try
+            {
+                command.PushEndRequest();
+            }
+            catch (RedirectedException redirect)
+            {
+                if (string.Compare(redirect.NewUrl, "/Minutes", StringComparison.OrdinalIgnoreCase)==0)
+                {
+                    // we don't need to redirect, this page just got poped from the 'return to pages' stack
+                }
+            }
+
+            try
+            { 
+                IConfiguration config = (IConfiguration)HttpContext.RequestServices.GetService(typeof(IConfiguration));
+                var section = config.GetSection("JobDescriptor");
+                string AssemblyPath = section["AssemblyPath"];
+                int option = 0;
+                int.TryParse(Request.Query["Option"], out option);
+                switch (option)
+                {
+                    case 1:
+                        {
+                            command.Call(AssemblyPath, "Acme.ERCAP.EMPDIR", Array.Empty<string>(), "/Minutus");
+                            break;
+                        }
+                    // . . . 
+                    case 5:
+                        {
+                            command.Return("proceed");
+                            break;
+                        }
+                }
+            }
+            catch (RedirectedException redirect)
+            {
+                return RedirectToResult(redirect);
+            }
+            return Page();
+        }
+
+        IActionResult RedirectToResult(RedirectedException WhereTo)
+        {
+            string newUrl = WhereTo.NewUrl.TrimStart();
+            string area = WhereTo.NewArea ?? "";
+            return RedirectToPage(newUrl, new { area });
+        }
+
+    }
+}
+
+```
+
+
+

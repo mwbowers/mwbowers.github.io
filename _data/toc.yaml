@@ -297,6 +297,8 @@ Manuals:
         path: /manuals/migrations/showing-non-displayfile-page.html
       - title: Calling a Program from a Non-DisplayFile Page
         path: /manuals/migrations/calling-program-from-non-displayfile-page.html
+      - title: Unwinding the Call Stack via EndRequest
+        path: /manuals/migrations/unwinding-call-stack-via-endrequest.html
   - sectiontitle: Monarch Operations Management
     sectionpath: /manuals/mom/mom-overview.html
     section:
