@@ -55,6 +55,26 @@ Even after the BatchJobProfile has been created, additional options can be confi
     jobProfile.BatchOptions.DBNamePrint = "PrintFilesDB";
 ```
 
+#### SBMJOB Migration
+The migration tool supports the following BatchOptions for the SBMJOB command:
+
+| BatchOption Property | Legacy keyword |
+|--------| ---------------|
+| AccountingCode | AGGCDE
+| UserLibraryList | INLLIBL
+| JobName | JOB
+| JobOutputQueue| OUTQ
+| Switches | SWS
+
+These parameters on the Submit method are set by the migration tool from keywords:
+
+| BatchOption Property | Legacy keyword |
+|--------| ---------------|
+| JobQueuePriority | JOBPTY
+| JobQueueName | JOBQ
+| ScheduleDateString | SCDDATE
+| ScheduleTimeString | SCDTIME
+
 ### Submitting the Job to a Queue
 Once a BatchJobProfile has been created and configured, it can be submitted to a Job Queue via the Submit command. For example:
 ```cs
