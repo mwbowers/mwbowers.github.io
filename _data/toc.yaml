@@ -299,6 +299,8 @@ Manuals:
         path: /manuals/migrations/calling-program-from-non-displayfile-page.html
       - title: Unwinding the Call Stack via EndRequest
         path: /manuals/migrations/unwinding-call-stack-via-endrequest.html
+      - title: Accessing Session Values from MyJob Class
+        path: /manuals/migrations/session-values-from-myjob.html
   - sectiontitle: Monarch Operations Management
     sectionpath: /manuals/mom/mom-overview.html
     section:

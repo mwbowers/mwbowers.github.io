@@ -127,7 +127,7 @@ When an Razor Page wants to return the Job to the **B (Executing a Program)** st
 * [Showing a Non-DisplayFile Page](showing-non-displayfile-page.html)
 * [Command Class](/reference/asna-qsys-expo/expo-model/command.html)
 * [Interactive Job Class](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html)
-* [LocalDataCollection Class](/reference/asna-qsys-runtime/job-support/local-data-collection.html)
+* [LocalDataCollection Class](/reference/asna-qsys-runtime-job-support/classes/local-data-collection.html)
 
 
 
