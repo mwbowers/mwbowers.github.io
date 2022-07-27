@@ -275,6 +275,10 @@ Manuals:
       path: /manuals/migrations/ifs-and-dlo.html
     - title: RPG Cycle Support
       path: /manuals/migrations/rpg-cycle.html
+    - sectiontitle: Code Migration
+      section:
+      - title: Field Name Special Characters Translation
+        path: /manuals/migrations/translation-field-special-characters.html
     - sectiontitle: Remediations
       section:
       - title: Remediation of Procedure Scoped Files
