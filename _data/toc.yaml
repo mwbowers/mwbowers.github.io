@@ -279,6 +279,8 @@ Manuals:
       section:
       - title: Field Name Special Characters Translation
         path: /manuals/migrations/translation-field-special-characters.html
+      - title: Decimal Numbers Containing Dates
+        path: /manuals/migrations/decimal-numbers-containing-dates.html
     - sectiontitle: Remediations
       section:
       - title: Remediation of Procedure Scoped Files
