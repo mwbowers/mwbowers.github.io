@@ -1981,8 +1981,13 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/interactive-job.html
           - title: IntergratedFileSystem
             path: /reference/asna-qsys-runtime-job-support/classes/intergrated-file-system.html
-          - title: Job
-            path: /reference/asna-qsys-runtime-job-support/classes/job.html
+          - sectiontitle: Job
+            sectionpath: /reference/asna-qsys-runtime-job-support/classes/job.html
+            section:
+            - sectiontitle: Properties
+              section:
+              - title: LDC
+                path: /reference/asna-qsys-runtime-job-support/classes/job-class-members/ldc-property.html
           - title: JobConfig
             path: /reference/asna-qsys-runtime-job-support/classes/job-config.html
           - title: JobLogger
