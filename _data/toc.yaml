@@ -316,6 +316,8 @@ Manuals:
       path: /manuals/mom/batch-dispatch.html
   - sectiontitle: Monarch Cocoon
     section:
+    - title: Displayfile Function Key Text
+      path: /manuals/cocoon/displayfile-function-key-text.html
     - sectiontitle: CL User Defined Command Migration
       sectionpath: /manuals/cocoon/cl-user-def-commands.html
       section:
