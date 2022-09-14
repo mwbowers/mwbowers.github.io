@@ -4,7 +4,7 @@ title: Displayfile Function Key Text Migration
 
 ## Overview
 
-[DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provided the following keywords to specify the Command Keys available to a Displayfile.
+[DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provides the following keywords to specify the Command Keys available to a Displayfile.
 
 - [CAnn Command Attention](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
 
