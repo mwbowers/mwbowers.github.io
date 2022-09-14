@@ -6,19 +6,21 @@ title: Displayfile Function Key Text Migration
 
 [DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provide the following keywords that specify the Command Keys available to a Displayfile.
 
-- [CFnn Command Function](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
+- [CAnn Command Attention](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
+
 
 ```
 Syntax: CAnn[(response-indicator ['text'])]
 ```
 
-- [CAnn Command Attention](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
+- [CFnn Command Function](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
+
 
 ```
 Syntax: CFnn[(response-indicator ['text'])]
 ```
 
-CFnn and CAnn can be specified at the **File** level or at the **Record Level**.
+CAnn and CFnn can be specified at the **File** level or at the **Record Level**.
 >The difference between `CFnn` and `CAnn` is that the former transmits changed data as a response to the server request, while the later does not.
 
 <br>
@@ -95,7 +97,7 @@ Assuming the example member-name is called `View`,
 
 <br>
 
->The `ENTER` key is assumed to be *always* available and its KeyName is assumed to be 'Enter'. (For language localization, ENTER KeyName may be given its translation, i.e. `'Intro'` in Spanish).
+>The `ENTER` key is assumed to be *always* available and its KeyName is assumed to be 'Enter'. (For language localization, `ENTER` KeyName may be given its text translation, i.e. `'Intro'` in Spanish).
 
 ## Conditional indicators for CAnn and CFnn keywords.
 
@@ -162,7 +164,7 @@ As any other *response-indicator* the indicator-number will be set or reset when
 
 The specification `F6 06:!30` can be read as:
 
-*"Command key F6 is available to Record (and the text visible) if indicator 30 is OFF. If user presses F6 to submit page, the indicator 06 will be turned ON'* (ready for application Logic to check its value).
+*"Command key F6 is available to Record (and the text visible) if indicator 30 is OFF. If user presses F6 to submit page, the indicator 06 will be turned `ON` (ready for application Logic to check its value).*
 
 >Function and Attention keys use the same format. The name of the Record class attribute `FunctionKeys` or `AttentionKeys` differentiates its use.
 
@@ -203,6 +205,10 @@ The `Location` property may have one of these values:
 
 >If not provided, the default location of the FunctionKey panel is `VerticalLeft`.
 
+![Location values](images/function-key-location.svg)
+
+<br>
+
 Being a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex), the position of the **Main** Display panel follows the layout. That is, if `VerticalLeft` is used (default), the **Main** Display panel is rendered as the right panel, if `HorizontalBottom` is used, the **Main** Display panel is rendered as the top panel, etc. 
 
 <br>
@@ -215,4 +221,21 @@ Being a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS
 Syntax: INDTXT(indicator 'indicator-text')
 ```
 
+The INDTXT keyword is only used to document the usage of an indicator, it has no effect on the behavior of the display file.
+
+What we see in the BPCS display files from TVS is that the Function Key keyword (CFxx or CAxx) is being placed in the same source line than the keyword INDTXT.  The example used in this case 
+
+      A                                     CF03 INDTXT(03 'Exit') 
+looks like it wants to say:
+The function key F3 will turn on Indicator 03 and is used to Exit the application.
+ 
+However, what it actually says is:
+The function key F3 is enabled.  If anyone wants to know what Indicator 03 is used for, we use it to Exit the application.
+ 
+Nowhere in the DDS does it actually say that F3 is associated with indicator 03.  We are making 'leap of faith' in this Case assuming that AS/SET generated display files place an INDTXT next to a function key and that the Indicator Text can be associated to with the Function key.  So we steal the text but we can't take the indicator. Incidentally, the program using these display files do not use the indicator 03 but instead looks at *INKC.
+ 
+Monarch already handles the case where the CFxx keyword provides an indicator and potentially some text.  So this DDS:
+      A                                     CF03(03 'Exit') 
+yields this output:
+      FuncKeys="F3 'Exit' *NONE; . . . 
  
