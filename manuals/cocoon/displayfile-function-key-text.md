@@ -4,7 +4,7 @@ title: Displayfile Function Key Text Migration
 
 ## Overview
 
-[DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provide the following keywords that specify the Command Keys available to a Displayfile.
+[DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provided the following keywords to specify the Command Keys available to a Displayfile.
 
 - [CAnn Command Attention](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
 
@@ -20,7 +20,8 @@ Syntax: CAnn[(response-indicator ['text'])]
 Syntax: CFnn[(response-indicator ['text'])]
 ```
 
-CAnn and CFnn can be specified at the **File** level or at the **Record Level**.
+CAnn and CFnn can be specified at the **File** level or at the **Record** Level.
+
 >The difference between `CFnn` and `CAnn` is that the former transmits changed data as a response to the server request, while the later does not.
 
 <br>
@@ -150,7 +151,7 @@ Each specification uses the following syntax:
 KEY response-indicator [: conditions]
 ```
 >*conditions* is optional and specifies an expression that may contain AND, OR and NOT operands. 
-To make expression syntax more *compact*, the operands used for:
+To make expression syntax more *compact*, the following symbols are used instead of operands:
 
 **AND** : `&`
 
@@ -158,25 +159,25 @@ To make expression syntax more *compact*, the operands used for:
 
 **NOT** : `!`
 
-When the *condition* evaluates as *false* the *clickable-button* with the corresponding `KeyName` will not be present on the Function key panel (ignoring the Markup specification).
+When the *condition* evaluates to *false* the *clickable-button* with the corresponding `KeyName` will not be present on the Function key panel (ignoring the Markup specification).
 
-As any other *response-indicator* the indicator-number will be set or reset when used, i.e. `_IN[nn]` will be set to `1` (or `*INnn` to `*On` in RPG syntax).
+As any other *response-indicator*, the indicator-number will be set or reset when used, i.e. `_IN[nn]` will be set to `1` (or `*INnn` to `*On` in RPG syntax).
 
-The specification `F6 06:!30` can be read as:
+The specification `F6 06:!30` can be read as follows:
 
-*"Command key F6 is available to Record (and the text visible) if indicator 30 is OFF. If user presses F6 to submit page, the indicator 06 will be turned `ON` (ready for application Logic to check its value).*
+*"Command key F6 is available to the Record (and the text visible) if indicator 30 is OFF. If the user presses F6 to submit page, the indicator 06 will be turned `ON` (ready for application Logic to check its value in conditional Logic code).*
 
->Function and Attention keys use the same format. The name of the Record class attribute `FunctionKeys` or `AttentionKeys` differentiates its use.
+>`Function` and `Attention` keys use the same format. The name of the Record class attribute `FunctionKeys` or `AttentionKeys` differentiates its purpose.
 
 
 
 ## Display Page Layout and Function key Panel corresponding location. 
 
-Display pages as HTML use a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex), where one of the panels is used to contain the function key clickable elements and the other to contain the `DdsFile` and its active record format renderings.
+Display pages as HTML use a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex), where one of the panels is used to contain the function-key-clickable elements and the other to contain the `DdsFile` and its active record format display elements.
 
-By default the [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) uses CSS to position the panels as two vertical columns where the Function keys are shown on the left and the **Main** Display file elements (file and active records) to the right.
+By default, the [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) uses CSS to position the panels as two vertical columns where the Function keys are shown on the left and the **Main** Display file elements (file and active records) to the right.
 
-There is a placeholder [tagHelper](https://www.learnrazorpages.com/razor-pages/tag-helpers/) element called `DdsFunctionKeys` which is frequently generated durning Migration right after `DdsFile` tagHelper, like so:
+There is a placeholder [tagHelper](https://www.learnrazorpages.com/razor-pages/tag-helpers/) element called `DdsFunctionKeys` which is frequently generated during Migration, right after `DdsFile` tagHelper, like so:
 
 ```html
 <form id="MonarchForm" method="post">
@@ -193,7 +194,7 @@ There is a placeholder [tagHelper](https://www.learnrazorpages.com/razor-pages/t
     </DdsFile>
 ```
 
-`DdsFunctionKeys` is not rendered in the place where it is defined, rather the properties of this placeholder tagHelper are used to construct the two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex). This `DdsFunctionKeys` tagHelper has only one property, namely `Location`.
+`DdsFunctionKeys` is not rendered in the place where it is defined, rather, the properties of this placeholder tagHelper are used to construct the two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex). This `DdsFunctionKeys` tagHelper has only one property, namely `Location`.
 
 The `Location` property may have one of these values:
 
@@ -215,15 +216,15 @@ Being a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS
 
 ### One more DDS Keyword that may define the Indicator Text
 
-There is one more DDS Keyword: [INDTXT Indicator Text](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) which is also used to determine the text used during migration.
+There is one more DDS Keyword relevant to this discussion, [INDTXT Indicator Text](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) which is also used to determine the text used during migration.
 
 ```
 Syntax: INDTXT(indicator 'indicator-text')
 ```
 
-The [INDTXT](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) keyword is only used to document the usage of an indicator, it has no effect on the behavior of the display file.
+The [INDTXT](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) keyword is only used to document the *usage* of an indicator - it has no effect on the behavior of the display file -.
 
-Nevertheless some Display Files use a combination of Command Key keywords (CAnn or CFnn) and `INDTXT` placed in the same source line.  
+Nevertheless, some Display Files use a combination of Command Key keywords (CAnn or CFnn) and `INDTXT` placed *in the same source line*.  
 
 For example, 
 
@@ -231,9 +232,9 @@ For example,
       A                                     CF03 INDTXT(03 'Exit') 
 ```
 
-The indicator `_IN03` (or `*IN03` using RPG syntax) will not be set, since it is not used as an *option-indicator* by the `CFnn` keyword, but the Application Logic code may still check for the associated [Function Key Indicator](https://www.ibm.com/docs/en/i/7.4?topic=indicators-function-key) or `INK` indicator (as opposed to the numbered option indicator) to condition code execution.
+The indicator `_IN03` (or `*IN03` using RPG syntax) will **not** be set, since it is not used as an *option-indicator* by the `CFnn` keyword, but the Application Logic code may still check for the associated [Function Key Indicator](https://www.ibm.com/docs/en/i/7.4?topic=indicators-function-key) or `INK` indicator (as opposed to the numbered option indicator) to condition Logic code execution.
 
-This unique usage serves as source-member documentation, indicating in this case that *The function key F3 is available, and when hit it will turn indicator KP on, in addition, it documents to be associated to the process of Exiting the Application.*
+This unique usage serves as source-member documentation, indicating in this case that *"The function key F3 is available, and - when hit - it will turn indicator KP on. In addition, it documents to be associated to the process of Exiting the Application."*
  
 The Migration of this style of DDS Command Key specification will yield,
 
