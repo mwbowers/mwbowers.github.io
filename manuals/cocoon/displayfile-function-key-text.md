@@ -215,27 +215,42 @@ Being a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS
 
 ### One more DDS Keyword that may define the Indicator Text
 
-[INDTXT Indicator Text](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) 
+There is one more DDS Keyword: [INDTXT Indicator Text](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) which is also used to determine the text used during migration.
 
 ```
 Syntax: INDTXT(indicator 'indicator-text')
 ```
 
-The INDTXT keyword is only used to document the usage of an indicator, it has no effect on the behavior of the display file.
+The [INDTXT](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) keyword is only used to document the usage of an indicator, it has no effect on the behavior of the display file.
 
-What we see in the BPCS display files from TVS is that the Function Key keyword (CFxx or CAxx) is being placed in the same source line than the keyword INDTXT.  The example used in this case 
+Nevertheless some Display Files use a combination of Command Key keywords (CAnn or CFnn) and `INDTXT` placed in the same source line.  
 
+For example, 
+
+```
       A                                     CF03 INDTXT(03 'Exit') 
-looks like it wants to say:
-The function key F3 will turn on Indicator 03 and is used to Exit the application.
+```
+
+The indicator `_IN03` (or `*IN03` using RPG syntax) will not be set, since it is not used as an *option-indicator* by the `CFnn` keyword, but the Application Logic code may still check for the associated [Function Key Indicator](https://www.ibm.com/docs/en/i/7.4?topic=indicators-function-key) or `INK` indicator (as opposed to the numbered option indicator) to condition code execution.
+
+This unique usage serves as source-member documentation, indicating in this case that *The function key F3 is available, and when hit it will turn indicator KP on, in addition, it documents to be associated to the process of Exiting the Application.*
  
-However, what it actually says is:
-The function key F3 is enabled.  If anyone wants to know what Indicator 03 is used for, we use it to Exit the application.
+The Migration of this style of DDS Command Key specification will yield,
+
+```html
+    <DdsRecord For="MYRECORD" KeyNames="F3 'Exit';">
+```
+
+```cs
+        [
+            Record(FunctionKeys = "F3 *None",
+                .
+                .
+                .
+            )
+        ]
+        public class MYRECORD_Model : RecordModel
+        {
+```
  
-Nowhere in the DDS does it actually say that F3 is associated with indicator 03.  We are making 'leap of faith' in this Case assuming that AS/SET generated display files place an INDTXT next to a function key and that the Indicator Text can be associated to with the Function key.  So we steal the text but we can't take the indicator. Incidentally, the program using these display files do not use the indicator 03 but instead looks at *INKC.
- 
-Monarch already handles the case where the CFxx keyword provides an indicator and potentially some text.  So this DDS:
-      A                                     CF03(03 'Exit') 
-yields this output:
-      FuncKeys="F3 'Exit' *NONE; . . . 
- 
+> The DDS line may be conditioned by indicators as usual, producing the File or Record attribute with something like `FunctionKeys = "F3 *None : 88"` assuming the conditional indicator is `88`.
