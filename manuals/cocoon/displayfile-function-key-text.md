@@ -234,7 +234,7 @@ For example,
 
 The indicator `_IN03` (or `*IN03` using RPG syntax) will **not** be set, since it is not used as an *option-indicator* by the `CFnn` keyword, but the Application Logic code may still check for the associated [Function Key Indicator](https://www.ibm.com/docs/en/i/7.4?topic=indicators-function-key) or `INK` indicator (as opposed to the numbered option indicator) to condition Logic code execution.
 
-This unique usage serves as source-member documentation, indicating in this case that *"The function key F3 is available, and - when hit - it will turn indicator KP on. In addition, it documents to be associated to the process of Exiting the Application."*
+This unique usage serves as source-member documentation, indicating in this case that *"The function key F3 is available, and - when hit - it will turn indicator KC on. In addition, it documents to be associated to the process of Exiting the Application."*
  
 The Migration of this style of DDS Command Key specification will yield,
 
