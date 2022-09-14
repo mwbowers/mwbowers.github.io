@@ -224,7 +224,7 @@ Syntax: INDTXT(indicator 'indicator-text')
 
 The [INDTXT](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) keyword is only used to document the *usage* of an indicator - it has no effect on the behavior of the display file -.
 
-Nevertheless, some Display Files use a combination of Command Key keywords (CAnn or CFnn) and `INDTXT` placed *in the same source line*.  
+However, some Display Files use a combination of Command Key keywords (CAnn or CFnn) and `INDTXT` placed *in the same source line*.  
 
 For example, 
 
