@@ -22,7 +22,7 @@ Syntax: CFnn[(response-indicator ['text'])]
 
 CAnn and CFnn can be specified at the **File** level or at the **Record** Level.
 
->The difference between `CAnn` and `CFnn` is that the former transmits changed data as a response to the server request, while the later does not.
+>The difference between `CAnn` and `CFnn` is that the later transmits *changed data* as part of the response to the server request, while the former does not.
 
 <br>
 
