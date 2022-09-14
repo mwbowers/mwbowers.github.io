@@ -2,30 +2,25 @@
 title: Displayfile Function Key Text Migration
 ---
 
-## [DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provide the following keywords that specify the Command Keys available to a Displayfile
+## Overview
 
-[CFnn Command Function](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
+[DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.4?topic=dds-display-files) provide the following keywords that specify the Command Keys available to a Displayfile.
 
-```
-CAnn[(response-indicator ['text'])]
-```
-
-[CAnn Command Attention](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
+- [CFnn Command Function](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
 
 ```
-CFnn[(response-indicator ['text'])]
+Syntax: CAnn[(response-indicator ['text'])]
 ```
 
-[INDTXT Indicator Text](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) 
+- [CAnn Command Attention](https://www.ibm.com/docs/en/i/7.4?topic=80-cann-command-attention-keyword-display-files)
 
 ```
-INDTXT(indicator 'indicator-text')
+Syntax: CFnn[(response-indicator ['text'])]
 ```
 
 CFnn and CAnn can be specified at the **File** level or at the **Record Level**.
 >The difference between `CFnn` and `CAnn` is that the former transmits changed data as a response to the server request, while the later does not.
 
-<br>
 <br>
 
 ## Migration of Displayfile Available Command Keys.
@@ -38,12 +33,14 @@ Each Displayfile gets migrated as a pair of files:
 
 The **View** defines the User Interface *Presentation* while the **ViewModel** controls the communication of the changed data to the Application Logic.
 
-Following these two different *roles*, the DDS keyword specification is broken down into the two files. The text is migrated as [KeyNames]() properties in the **View** file and the response-indicator (if any) associated to the Command Key is specified as attributes to the DisplayPage Model's `File` or `Record` depending on where is defined in DDS.
+Following these two different *roles*, the DDS keyword specification is broken down into the two files. The text is migrated as [KeyNames]() properties in the **View** file and the response-indicator (if any) associated to the Command Key is specified as attributes to the DisplayPage Model's `File` or `Record` depending on where it is defined in DDS.
 
-## Simple DDS Example (assume member-name is called `View`):
+## A simple DDS Migration example.
+
+Assuming the example member-name is called `View`,
 
 ```
-     A                                      CF12(12 'Exit')                   
+     A                                      CF03(03 'Exit')                   
  .
  .
  .
@@ -52,7 +49,7 @@ Following these two different *roles*, the DDS keyword specification is broken d
 
 ```
 
-### Migration:
+### Simple Migration:
 
 `View.cshtml`:
 
@@ -60,11 +57,13 @@ Following these two different *roles*, the DDS keyword specification is broken d
 <form id="MonarchForm" method="post">
     <DdsFile DisplayPageModel="Model" KeyNames="F3 'Exit';" >
 
+        <DdsFunctionKeys />
+
  .
  .
  .
 
-    <DdsSubfileControl For="SFLC" KeyNames="F9 'Spooled Files';" ... >
+        <DdsSubfileControl For="SFLC" KeyNames="F9 'Spooled Files';" ... >
 
 ```
 
@@ -82,7 +81,7 @@ Following these two different *roles*, the DDS keyword specification is broken d
          public SFLC_Model SFLC { get; set; }
 
         [
-            SubfileControl(ClearRecords : "90",
+            SubfileControl(ClearRecords : ... ,
                 FunctionKeys = "F9 09;",
                 .
                 .
@@ -94,8 +93,126 @@ Following these two different *roles*, the DDS keyword specification is broken d
 
 ```
 
-
-<br>
 <br>
 
->The `ENTER` key is assumed to be *always* available and its KeyName is assumed to be 'Enter'.
+>The `ENTER` key is assumed to be *always* available and its KeyName is assumed to be 'Enter'. (For language localization, ENTER KeyName may be given its translation, i.e. `'Intro'` in Spanish).
+
+## Conditional indicators for CAnn and CFnn keywords.
+
+Let's assume we have a DDS record which defines the following available function keys:
+
+```
+     A          R MYRECORD                                                       
+     A                                      CF04(04 'Prompt')                   
+     A N30                                  CF06(06 'New')                      
+     A N30                                  CF11(11 'Delete')                   
+     A                                      CF12(12 'Cancel')                   
+```
+
+### Migration with Conditional CAnn and CFnn keywords.
+
+View Markup:
+
+```html
+    <DdsRecord For="MYRECORD" KeyNames="F4 'Prompt'; F6 'New'; F11 'Delete'; F12 'Cancel';">
+```
+>Note: `KeyNames` text for conditional Keys, is not affected in the Markup definition. 
+
+ViewModel C# code:
+
+```cs
+        [
+            Record(FunctionKeys = "F4 04;F6 06:!30;F11 11:!30;F12 12",
+                .
+                .
+                .
+            )
+        ]
+        public class MYRECORD_Model : RecordModel
+        {
+
+```
+Notice that in the `FuntionKeys` (or `AttentionKeys`) record attribute, the value contains the following specifications:
+
+1. F4 04
+2. F6 06:!30
+3. F11 11:!30
+4. F12 12
+
+
+> `FunctionKeys` and `AttentionKeys` collections are specified as a semi-colon separated string list.
+
+Each specification uses the following syntax:
+
+```
+KEY response-indicator [: conditions]
+```
+>*conditions* is optional and specifies an expression that may contain AND, OR and NOT operands. 
+To make expression syntax more *compact*, the operands used for:
+
+**AND** : `&`
+
+**OR**  &nbsp; &nbsp;: `:`
+
+**NOT** : `!`
+
+When the *condition* evaluates as *false* the *clickable-button* with the corresponding `KeyName` will not be present on the Function key panel (ignoring the Markup specification).
+
+As any other *response-indicator* the indicator-number will be set or reset when used, i.e. `_IN[nn]` will be set to `1` (or `*INnn` to `*On` in RPG syntax).
+
+The specification `F6 06:!30` can be read as:
+
+*"Command key F6 is available to Record (and the text visible) if indicator 30 is OFF. If user presses F6 to submit page, the indicator 06 will be turned ON'* (ready for application Logic to check its value).
+
+>Function and Attention keys use the same format. The name of the Record class attribute `FunctionKeys` or `AttentionKeys` differentiates its use.
+
+
+
+## Display Page Layout and Function key Panel corresponding location. 
+
+Display pages as HTML use a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex), where one of the panels is used to contain the function key clickable elements and the other to contain the `DdsFile` and its active record format renderings.
+
+By default the [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) uses CSS to position the panels as two vertical columns where the Function keys are shown on the left and the **Main** Display file elements (file and active records) to the right.
+
+There is a placeholder [tagHelper](https://www.learnrazorpages.com/razor-pages/tag-helpers/) element called `DdsFunctionKeys` which is frequently generated durning Migration right after `DdsFile` tagHelper, like so:
+
+```html
+<form id="MonarchForm" method="post">
+    <DdsFile DisplayPageModel="Model" ... >
+
+        <DdsFunctionKeys />
+
+ .
+ .
+ .
+
+        @* The rest of the Records go here  *@
+
+    </DdsFile>
+```
+
+`DdsFunctionKeys` is not rendered in the place where it is defined, rather the properties of this placeholder tagHelper are used to construct the two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex). This `DdsFunctionKeys` tagHelper has only one property, namely `Location`.
+
+The `Location` property may have one of these values:
+
+1. `VerticalLeft`  - Keys are rendered in a vertical direction on the left of the page.
+2. `VerticalRight` - Keys are rendered in a vertical direction on the right of the page.
+3. `HorizontalTop` - Keys are rendered in a horizontal direction on the top of the page.
+4. `HorizontalBottom` - Keys are rendered in a horizontal direction on the bottom of the page.
+5. `Hidden` - Keys are not rendered.
+
+>If not provided, the default location of the FunctionKey panel is `VerticalLeft`.
+
+Being a two-panel [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex), the position of the **Main** Display panel follows the layout. That is, if `VerticalLeft` is used (default), the **Main** Display panel is rendered as the right panel, if `HorizontalBottom` is used, the **Main** Display panel is rendered as the top panel, etc. 
+
+<br>
+
+### One more DDS Keyword that may define the Indicator Text
+
+[INDTXT Indicator Text](https://www.ibm.com/docs/en/i/7.4?topic=80-indtxt-indicator-text-keyword-display-files) 
+
+```
+Syntax: INDTXT(indicator 'indicator-text')
+```
+
+ 
