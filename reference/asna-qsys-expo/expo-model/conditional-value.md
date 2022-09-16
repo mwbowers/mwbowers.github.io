@@ -38,6 +38,7 @@ The ConditionalValue for such Function Key specification would read:
 
 *Function Key is Valid when Option Indicator 30 is `Off`. If the Command is issued, the Response Indicator 11 will be set to `On`*
 
+Here is an overview of [Conditional Values concepts](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html).
 
 <br>
 <br>

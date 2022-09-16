@@ -2370,8 +2370,11 @@ Reference:
       path: /reference/asna-qsys-expo/expo-model/color-property.html
     - title: Command
       path: /reference/asna-qsys-expo/expo-model/command.html
-    - title: ConditionalProperty
-      path: /reference/asna-qsys-expo/expo-model/conditional-property.html
+    - sectiontitle: ConditionalProperty
+      sectionpath: /reference/asna-qsys-expo/expo-model/conditional-property.html
+      section:
+      - title: Conditional Property Overview
+        path: /reference/asna-qsys-expo/expo-model/conditional-properties-overview.html
     - title: ConditionalValue
       path: /reference/asna-qsys-expo/expo-model/conditional-value.html
     - title: DataConversions
