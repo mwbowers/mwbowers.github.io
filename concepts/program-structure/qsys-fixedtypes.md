@@ -40,7 +40,7 @@ Both approaches have their [advantages](/concepts/background/ibmi-fixed-types) a
 
 The *fact* is that their are incompatible and a *new* type system is required to make it possible for the *mapping* logic spread-out in the Business Logic, to continue executing providing the same results.
 
-`ASNA QSys` makes available four `Scalar Types` that provide similar *declarative syntax* as RPG, can be used with the *assumed* mapping as RPG, and can be easily converted to the .NET types when appropriate.
+`ASNA QSys` makes available five `Value Types` that provide similar *declarative syntax* as RPG, can be used with the *assumed* mapping as RPG, and can be easily converted to the .NET types when appropriate.
 
 > In the next sections, we will show the practical use of `ASNA.QSys Fixed` Types. We will not get into the internal implementation which may be more confusing than practical. If you have a license to the Reference Source, you are welcome to research how the `ASNA.QSys Fixed` works.
 
@@ -82,19 +82,26 @@ Synopsis
 Declaration Syntax
 : `FixedDecimal<length,precision> myFixedDecimalField`;
 
+## ASNA.QSys.FixedDate
+Synopsis
+: Type for fixed date values.
+
+Declaration Syntax
+: `FixedDate<DateFormat,separator> myFixedDateField`;
+
 ## ASNA.QSys.FixedTime
 Synopsis
 : Type for fixed date/time values.
 
 Declaration Syntax
-: `FixedTime<TimeFormat,separator> myFixedDateField`;
+: `FixedTime<TimeFormat,separator> myFixedTimeField`;
 
 ## ASNA.QSys.FixedTimestamp
 Synopsis
 : Type for fixed date/time stamp values.
 
 Declaration Syntax
-: `FixedTimestamp<separator> myFieldTimeStampField`;
+: `FixedTimestamp<separator> myFixedTimeStampField`;
 
 >For more details on usage, read [ASNA.QSys Reference Documentation]().
    

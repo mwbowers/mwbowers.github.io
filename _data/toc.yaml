@@ -2393,6 +2393,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-model/display-pages-options.html
     - title: DdsDateFormat
       path: /reference/asna-qsys-expo/expo-model/date-attribute/dds-date-format.html
+    - title: DdsTimeFormat
+      path: /reference/asna-qsys-expo/expo-model/time-attribute/dds-time-format.html
     - title: EditCode
       path: /reference/asna-qsys-expo/expo-model/edit-code.html
     - title: EditCodes
@@ -2431,6 +2433,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-model/subfile-record-attribute.html
     - title: SubfileRecordModel
       path: /reference/asna-qsys-expo/expo-model/subfile-record-model.html
+    - title: TimeAttribute
+      path: /reference/asna-qsys-expo/expo-model/time-attribute.html
     - title: ValuesAttribute
       path: /reference/asna-qsys-expo/expo-model/values-attribute.html
     - title: WebDisplayFileProxy
@@ -2484,6 +2488,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/dds-subfile-control-tag-helper.html
     - title: DdsSubfileRecordTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html
+    - title: DdsTimeFieldTagHelper
+      path: /reference/asna-qsys-expo/expo-tags/dds-time-field-tag-helper.html
     - title: FieldBase
       path: /reference/asna-qsys-expo/expo-tags/field-base.html
     - title: LeftPadOption

@@ -43,6 +43,7 @@ Typically, the `DdsFunctionKeys` is defined as the first element inside `DdsFile
 | --- | --- | --- | --- 
 | [ActiveKeyBarLocation](/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper/active-key-bar-location.html) | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Order | When a set of ITagHelpers are executed, their Init(TagHelperContext)'s are first invoked in the specified Order; then their ProcessAsync(TagHelperContext, TagHelperOutput)'s are invoked in the specified Order. Lower values are executed first<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ShowKeyMnemonics | Show the Function Key Mnemonics along with the Key Names, for example: <br/>&nbsp;&nbsp;&nbsp;&nbsp;F3 - Exit | 
 
 <br>
 <br>
