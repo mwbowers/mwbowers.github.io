@@ -4,7 +4,7 @@ title: Conditional Properties Overview
 
 Some of the properties of the Expo Tags and Model can be conditioned with an indicator expression. Monarch migrations preserves the conditional indicators on DDS fields, constants and keywords as conditional elements. 
 
-The general term for these elements are conditional indicator expressions and are given as string in Expo Tag Helpers properties and Expo Model Attribute properties.
+The general term for these elements are conditional indicator expressions and are given as string values in Expo Tag Helpers properties and Expo Model Attribute properties.
 
 These conditional strings are composed of indicator numbers, operators and values. 
 
@@ -12,11 +12,11 @@ These conditional strings are composed of indicator numbers, operators and value
 ### Condition Expression
 The following are the syntax elements used by Condition Expressions:
 
-**nn** Test for Indicator nn
-**!** unary operator NOT
-**&** binary operator AND
-**|** binary operator OR
-**()** to specify operator precedence
+ + **nn** Test for Indicator nn
+ + **!** unary operator NOT
+ + **&** binary operator AND
+ + **\|** binary operator OR
+ + **()** to specify operator precedence
 
 For example, the following string contains an indicator expression:
 ```   
@@ -31,9 +31,9 @@ The indicator expression will be evaluated as being **true** if:
 The special values *True, and *False can be used in place of an indicator.
 
 The natural precedence of the operators are, from highest to lowest:
-**!** unary operator NOT
-**&** binary operator AND
-**|** binary operator OR
+ + **!** unary operator NOT
+ + **&** binary operator AND
+ + **\|** binary operator OR
 
 The use of parenthesis can specify a specific order of precedence in the evaluation of the expression.
 
@@ -50,7 +50,7 @@ A condition is an expression involving indicators and operators as explained abo
 
 | Syntax  | Expression |
 | ------- | ---------- |
-| Example |	03 & !99
+| Example |	03 & !99   |
 | Meaning |	**True** if *IN03 is *ON and *IN99 is *OFF; otherwise **False**.
 
 
@@ -62,17 +62,21 @@ A Conditional Value is a value followed by a colon and then a Conditional expres
 |Example  | Red: 03 & !99
 |Meaning  | The value **Red** is selected if *IN03 is *ON and *IN99 is *OFF
 
+The Conditional Value functionality is implemented in the [ConditionalValue Class](/reference/asna-qsys-expo/expo-model/conditional-value.html)
 
 ### Conditional Property
 A Conditional Property is an array of comma separated Conditional Values.
 
 |Syntax	  | Conditional value, Conditional value, Conditional value...
 | ------- | ---------- |
-|Example  | Red : 03 & !99, Green : 06, Blue : 05 | 03
+|Example  | Red : 03 & !99, Green : 06, Blue : 05 \| 03
 |Meaning  | The value **Red** is selected if *IN03 is *ON and *IN99 is *OFF <br/>otherwise, the value **Green** is selected if *IN06 is *ON <br/>otherwise, the value **Blue** is selected if *IN05 or *IN03 are *ON
 
 
 The list of conditional values is processed from start to finish evaluating the "condition" controlling the "value." As soon as a condition is met, the associated value is used for the property. 
+
+The Conditional Property functionality is implemented in the [ConditionalProperty Class](/reference/asna-qsys-expo/expo-model/conditional-property.html)
+
 
 ### Conditional Property Sets
 Conditional Property Sets are semi-colon separated sets of Conditional Properties. These are use for Attention and Function Keys.

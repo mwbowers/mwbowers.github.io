@@ -94,7 +94,7 @@ The following markup shows the specification of DdsSubfileControl named "SFLC". 
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ClickSetsCurrentRecord | Gets or sets a value that indicates if the current record should be set by a mouse click (or finger tap) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CueCurrentRecord | Gets or sets a value that indicates if the current record in the Subfile should be highlighted as the pointer hovers over the subfile. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocation | Gets or sets a conditional expression indicating where the Cursor should be located when presenting the Page<br>(Inherited from [RecordBaseTagHelper](/reference/asna-qsys-expo/expo-tags/record-base-tag-helper.html)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CursorLocation | Gets or sets a [conditional value](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#conditional-value) string indicating where the Cursor should be located when presenting the Page. Format is 'Row,Col' or 'Row,Col:IndicatorCondition'.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DblClickKey | Gets or sets a value that indicates the name of the Aid Key to be "pressed" prior to submitting the page, if user double-clicks at the record. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DblClickTargetField | Gets or sets a value that indicates the name of a record field where the cursor will be positioned prior to submitting the page, if user double-clicks at the record. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DblClickTargetValue | Gets or sets a value that indicates the value to be set to of a record field prior to submitting the page, if user double-clicks at the record. | 
@@ -112,7 +112,7 @@ The following markup shows the specification of DdsSubfileControl named "SFLC". 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ShowRecordWithCursor | Gets or sets a value that indicates the page that should be visible to guarantee that record with the cursor is displayed (when the subfile has more than one page's worth of records). | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | StretchConstantText | Gets or sets a value indicating if text for constants in the record are to be stretched-out to fill column positions<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileDrop | Gets or sets a value of the label on Active Key banner associated with subfile-drop action | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileEnd | Gets or sets a value of the conditional expression that determines if the subfile contains the records of the last page. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileEnd | Gets or sets a value of the [condition expression](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#condition-expression) string that determines if the subfile contains the records of the last page. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileEndTextOff | Gets or sets a value of the label displayed by subfile when there are more ore records (not in last page) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileEndTextOn | Gets or sets a value of the label displayed by subfile when there are no records (last page) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SubfileFold | Gets or sets a value of the label on Active Key banner associated with subfile-fold action | 
@@ -123,7 +123,6 @@ The following markup shows the specification of DdsSubfileControl named "SFLC". 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowTopRow | Gets or sets the top vertical position of the window.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | WindowWidthCols | Gets or sets the window width.<br>(Inherited from [DdsRecordTagHelper](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html)) | 
 
-<br>
 <br>
 
 ## Methods
