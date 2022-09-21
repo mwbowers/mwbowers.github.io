@@ -67,11 +67,14 @@ Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
 | [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [CallSilent](#callsilentstring-string-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job.  The caller will have to handle any input requested by the program via a display page. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [GetActiveDisplayFile](#getactivedisplayfile)() | Get the active display file. | The active Display File
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value stored in the Job's Local Data Area. | The requested field value.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdcObject](#getldcobjectstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value from the Job's Local Data Collection associated with the specified name. | The value associated with the specified name.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PushEndRequest](#pushendrequest)() | Invokes the EndRequest operation on the waiting blue thread program. | 
+| [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [PushKeyFocus](#pushkeyfocusaidkeyibm-int16-string)([AidKeyIBM](/reference/asna-qsys-expo/expo-model/aid-key-ibm.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Provides input to the blue thread program waiting for input. | The active Display File.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveLdcObject](#removeldcobjectstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the element the Job's Local Data Collection with the specified key. Removing an element increments the version of the LocalDataCollection. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RequestShutdown](#requestshutdown)() | Send a request to the Job to terminate its processing. | 
@@ -147,6 +150,23 @@ CallSilent(String assemblyPath, String programName, String[] parms);
 
 
 
+<br>
+<br>
+
+### GetActiveDisplayFile()
+
+Get the active display file.
+
+```cs
+GetActiveDisplayFile();
+```
+
+#### Returns
+
+[WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html)
+
+
+
 
 <br>
 <br>
@@ -197,6 +217,44 @@ GetLdcObject(String name);
 The value associated with the specified name.
 
 
+<br>
+<br>
+
+### PushEndRequest()
+
+Invokes the EndRequest operation on the waiting blue thread program.
+
+```cs
+PushEndRequest();
+```
+
+<br>
+<br>
+
+### PushKeyFocus([AidKeyIBM](/reference/asna-qsys-expo/expo-model/aid-key-ibm.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Provides input to the blue thread program waiting for input.
+
+```cs
+PushKeyFocus(AidKeyIBM key, short virtualRowCol, string fieldName);
+```
+
+#### Parameters
+
+|  | [PushKeyFocus](#pushkeyfocusaidkeyibm-string-int32)([AidKeyIBM](/reference/asna-qsys-expo/expo-model/aid-key-ibm.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Provides input to the blue thread program waiting for input. | The active Display File.
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AidKeyIBM](/reference/asna-qsys-expo/expo-model/aid-key-ibm.html)  | key | The enumeration value defining the key the program would think was "pressed" by the user.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)   | virtualRowCol | The virtual row and column of the control with focus when the key was "pressed".
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName |The field name of the control with focus when the key was "pressed".
+
+
+#### Returns
+
+[WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html)
+
+The active Display File.
 <br>
 <br>
 

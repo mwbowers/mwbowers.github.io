@@ -2407,6 +2407,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-model/edited-value-provider.html
     - title: ExportSourceAttribute
       path: /reference/asna-qsys-expo/expo-model/export-source-attribute.html
+    - title: FakeDataType
+      path: /reference/asna-qsys-expo/expo-model/fake-data-type.html
     - title: FieldAttribute
       path: /reference/asna-qsys-expo/expo-model/field-attribute.html
     - title: FieldUsages
@@ -2415,6 +2417,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-model/i-display-file.html
     - title: IMonaServerConfig
       path: /reference/asna-qsys-expo/expo-model/i-mona-server-config.html
+    - title: ModulusValidation
+      path: /reference/asna-qsys-expo/expo-model/modulus-validation.html
     - title: MonaServerConfig
       path: /reference/asna-qsys-expo/expo-model/mona-server-config.html
     - title: Limits

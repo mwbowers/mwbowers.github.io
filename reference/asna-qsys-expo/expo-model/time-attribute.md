@@ -19,11 +19,36 @@ Model Fields are declared as Record Properties. To annotate the [Fixed Type](htt
 For example,
 
 ```cs
-[Time(TimeFormat = TimeAttribute.DdsTimeFormat.USA)]
+[Time(TimeAttribute.DdsTimeFormat.USA)]
 public DateTime OPENTIME { get; private set; } // Opening Time
 ```
 
-Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Date`, with `"USA"` presentation `Time Format`, named `OPENTIME` on a particular Model Record.
+Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Time`, with `"USA"` presentation `Time Format`, named `OPENTIME` on a particular Model Record.
+
+<br>
+<br>
+
+## Constructor
+
+| Name |  Description 
+| --- | --- 
+| **TimeAttribute**( [DdsTimeFormat](time-attribute/dds-time-format.html) ) | Initializes a new TimeAttribute instance.
+
+<br>
+
+### TimeAttribute( [DdsTimeFormat](time-attribute/dds-time-format.html) )
+
+Initializes a new TimeAttribute instance
+
+```cs
+TimeAttribute( DdsTimeFormat timeFormat );
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DdsTimeFormat](time-attribute/dds-time-format.html) | timeFormat | Time Format 
 
 <br>
 <br>
@@ -38,7 +63,7 @@ Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/p
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
-| [DdsTimeFormat]($$TODO-DdsTImeFormat.html) | TimeFormat | Gets or sets DDS Time Format (Defaults to ISO) | 
+| [DdsTimeFormat](time-attribute/dds-time-format.html) | TimeFormat | Gets or sets DDS Time Format (Defaults to `DdsTimeFormat.ISO`). | 
 
 <br>
 <br>

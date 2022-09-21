@@ -19,19 +19,21 @@ A convenient simple encoding for the Attention Indicators. Compare with [AidKeyI
 
 ## Fields
 
-| Name | Description
-| --- | --- 
-| Attn | Attention key index
-| Clear | Clear key index
-| Enter | Enter (Submit form) key index
-| F1 | F1 to F24 Key index
-| Help | Help key index
-| Home | Home (Record Backspace) key index
-| PageDown | Page Down (Roll Up) key index
-| PageUp | Page Up (Roll Down) key index
-| Print | Print key index
-| Reset | Reset key index
-| Unknown | Undefined key index
+| Name | Description | Value
+| --- | --- | ---
+| Attn | Attention key index | 31
+| Clear | Clear key index | 24
+| EndRequest | Enter Request key index | 33
+| Enter | Enter (Submit form) key index | 30
+| F1 | F1 to F24 Key index |  0 to 23
+| Help | Help key index | 25
+| Home | Home (Record Backspace) key index | 29
+| None | No key given |  -1
+| PageDown | Page Down (Roll Up) key index | 27
+| PageUp | Page Up (Roll Down) key index | 26
+| Print | Print key index | 28
+| Reset | Reset key index | 32
+| Unknown | Undefined key index |34
 
 <br>
 <br>

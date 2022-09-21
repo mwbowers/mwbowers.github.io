@@ -62,8 +62,10 @@ MonaServerConfig(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | HostName | Gets or sets a value that indicates the Name of the Host | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Port | Gets or sets a value that indicates the IP Port to use | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | HostName | Gets or sets HostName as a string. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | JobIdleTimeout | Gets or sets a value that indicates the number of minutes a **Job** may remain idle before it is shutdown. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Port | Gets or sets IP Port number. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | TraceOption | Gets or sets a value that indicates the type of tracing. | 
 
 <br>
 <br>

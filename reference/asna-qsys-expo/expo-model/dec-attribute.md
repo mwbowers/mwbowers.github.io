@@ -64,8 +64,16 @@ DecAttribute( Int32 length, Int32 decimals );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
+| [ModulusValidation](modulus-validation) | CheckModulus | Modulus validation algorithm (Defaults to``` ModulusValidation.None```). | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CompareAllowZeros | Allow all-blank(or zero) input to satisfy validity checking for an input-capable field when any associated validity check fails. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Decimals | Decimal positions | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Digits | Max Digits | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Equal | Exact value. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | GraterThan | Lower exclusive bound. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | LessThan | Upper exclusive bound. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Max | Maximum acceptable value. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Min | Minimum acceptable value. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NotEqual | Excluded value. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 

@@ -12,6 +12,7 @@ Provides Date Attribute (for Properties)
 <br>
 <br>
 
+
 ## Remarks
 
 Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) as `Date`, Model properties can use this attribute.

@@ -28,7 +28,7 @@ There is a `"DisplayPages"` object defined in the schema for `appsettings.json`,
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FakeDataDirectory | File system absolute path holding test data for testing Display Pages. Defaults to the "/temp/FakeData" directory. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseFakeData | Controls the generation and/or use of Fake data in lieu of running the program's logic. Defaults to false.  When set to true, the value of "FakeDataDirectory" is used to locate the Fake data. | 
+| [FakeDataType](fake-data-type.html) | FakeDataType | Controls the generation and/or use of Fake data in lieu of running the program's logic. Defaults to ```None```.  when set to a different value, the value of "FakeDataDirectory" is used to locate the Fake data. | 
 
 <br>
 <br>

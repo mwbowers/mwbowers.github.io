@@ -38,7 +38,7 @@ Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/p
 
 ### CharAttribute( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
-Char attribute
+CharAttribute constructor.
 
 ```cs
 CharAttribute( Int32 length );
@@ -48,7 +48,7 @@ CharAttribute( Int32 length );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | field length 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Field length 
 
 <br>
 
@@ -63,11 +63,19 @@ CharAttribute( Int32 length );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Alias | Field Alias name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlanksIndicator | Blanks indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ChangeIndicator | Change indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CompareAllowBlanks | Allow all-blank input to satisfy validity checking when any associated validity check fails. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Equal | Exact value. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | GraterThan | Lower exclusive bound. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | InputOnlyValue | Input-only attribute | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Length attribute | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | LessThan | Upper exclusive bound. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Max | Maximum acceptable value. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Min | Minimum acceptable value. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NotEqual | Excluded value. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Upper | Indicates if character input will be converted to uppercase or will be left alone to preserving the letter casing typed (**Defaults to true**). | 
 
 <br>
 <br>

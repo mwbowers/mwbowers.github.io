@@ -67,6 +67,7 @@ EditedValueProvider( BindingSource bindingSource, IFormCollection values, Cultur
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [IValueProvider]($$TODO-IValueProvider.html) | [Filter](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.bindingsourcevalueprovider.filter)([BindingSource](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.bindingsource)) | Filters the value provider based on bindingSource.<br>(Inherited from [BindingSourceValueProvider](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.bindingsourcevalueprovider)) | The filtered value provider, or null if the value provider does not match bindingSource.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFieldTemplateName](#getfieldtemplatenamestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produce a field's name which is either the original name or if a subfile field then without the actual subfile RRN. | Return field's name without an actual subfile RRN.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | [GetKeysFromPrefix](#getkeysfromprefixstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a Dictionary withe the keys from a given prefix | A Dictionary with a string key with string elements
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
@@ -122,6 +123,30 @@ ContainsPrefix(String prefix);
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
 true if string contains the given prefix
+
+
+<br>
+<br>
+
+### GetFieldTemplateName([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Produce a field's name which is either the original name or if a subfile field then without the actual subfile RRN.
+
+```cs
+GetFieldTemplateName(String originalFieldName);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | originalFieldName | Original qualified field name. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+Return field's name without an actual subfile RRN.
 
 
 <br>
