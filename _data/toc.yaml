@@ -1493,8 +1493,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/char-array-in-ds.html
           - title: Convert
             path: /reference/asna-qsys-runtime/classes/convert.html
-          - title: DataArea
-            path: /reference/asna-qsys-runtime/classes/data-area.html
+          - title: DataArea Manager
+            path: /reference/asna-qsys-runtime/classes/data-area-manager.html
           - title: Database
             path: /reference/asna-qsys-runtime/classes/database.html
           - title: DatabaseCycleFile
@@ -1744,6 +1744,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/fixed-decimal-array-in-ds.html
           - title: FixedDecimalMethods
             path: /reference/asna-qsys-runtime/classes/fixed-decimal-methods.html
+          - title: FixedDate
+            path: /reference/asna-qsys-runtime/classes/fixed-date.html
           - title: FixedStringArrayInDS
             path: /reference/asna-qsys-runtime/classes/fixed-string-array-in-ds.html
           - title: FixedStringComparer
@@ -1802,6 +1804,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/indicator-array-in-ds.html
           - title: IntArrayInDS
             path: /reference/asna-qsys-runtime/classes/int-array-in-ds.html
+          - title: IntDigitSize
+            path: /reference/asna-qsys-runtime/classes/int-digit-size.html
           - title: IntegerMethods
             path: /reference/asna-qsys-runtime/classes/integer-methods.html
           - title: INumber
@@ -1810,6 +1814,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/i-web-display-file-provider.html
           - title: Layout
             path: /reference/asna-qsys-runtime/classes/layout.html
+          - title: Limits
+            path: /reference/asna-qsys-runtime/classes/limits.html
           - title: LayoutType
             path: /reference/asna-qsys-runtime/classes/layout-type.html
           - title: LocalScopeDS
@@ -1830,6 +1836,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/return.html
           - title: RpgTypeExtensions
             path: /reference/asna-qsys-runtime/classes/rpg-type-extensions.html
+          - title: Routine
+            path: /reference/asna-qsys-runtime/classes/routine.html
           - title: SearchType
             path: /reference/asna-qsys-runtime/classes/search-type.html
           - title: ShortArrayInDS
@@ -1842,6 +1850,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/table.html
           - title: TableMethods
             path: /reference/asna-qsys-runtime/classes/table-methods.html
+          - title: VxAdjust
+            path: /reference/asna-qsys-runtime/classes/vx-adjust.html
       - sectiontitle: Exceptions
         sectionpath: /reference/asna-qsys-runtime/exceptions/exceptions-section-intro.html
         section:
@@ -1867,8 +1877,16 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/inconsistent-open-attributes-exception.html
           - title: InvalidCodePageForVirtualTerminalException
             path: /reference/asna-qsys-runtime/exceptions/invalid-code-page-for-virtual-terminal-exception.html
+          - title: JobShutDownException
+            path: /reference/asna-qsys-runtime/exceptions/job-shut-down-exception.html
+          - title: EndOperationException
+            path: /reference/asna-qsys-runtime/exceptions/end-operation-exception.html
+          - title: EndRequestException
+            path: /reference/asna-qsys-runtime/exceptions/end-request-exception.html
           - title: InvalidDataAreaTypeException
             path: /reference/asna-qsys-runtime/exceptions/invalid-data-area-type-exception.html
+          - title: JobShutdownException
+            path: /reference/asna-qsys-runtime/exceptions/job-shutdown-exception.html
           - title: InvalidDSFieldsException
             path: /reference/asna-qsys-runtime/exceptions/invalid-ds-fields-exception.html
           - title: InvalidFileOperationException
@@ -1933,6 +1951,14 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/caller-activation-group-attribute.html
           - title: CallHostSpecs
             path: /reference/asna-qsys-runtime-job-support/classes/call-host-specs.html
+          - title: BatchJobProfile
+            path: /reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html
+          - title: BatchJob
+            path: /reference/asna-qsys-runtime-job-support/classes/batch-job.html
+          - title: BatchOptions
+            path: /reference/asna-qsys-runtime-job-support/classes/batch-options.html
+          - title: BatchPoint
+            path: /reference/asna-qsys-runtime-job-support/classes/batch-point.html
           - title: CLProgram
             path: /reference/asna-qsys-runtime-job-support/classes/cl-program.html
           - title: CodePage
@@ -2026,6 +2052,8 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/module-collection.html
           - title: ModuleImportAttribute
             path: /reference/asna-qsys-runtime-job-support/classes/module-import-attribute.html
+          - title: OutOfProcessBatchJob
+            path: /reference/asna-qsys-runtime-job-support/classes/out-of-process-batch-job.html
           - title: NewActivationGroupAttribute
             path: /reference/asna-qsys-runtime-job-support/classes/new-activation-group-attribute.html
           - title: ObjectLockRequest
@@ -2054,6 +2082,8 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/service-program-collection.html
           - title: ServiceProgramUseAttribute
             path: /reference/asna-qsys-runtime-job-support/classes/service-program-use-attribute.html
+          - title: SystemValue
+            path: /reference/asna-qsys-runtime-job-support/classes/system-value.html
           - title: Spooler
             path: /reference/asna-qsys-runtime-job-support/classes/spooler.html
           - title: SpoolerControlCharacter
@@ -2077,6 +2107,8 @@ Reference:
         section:
           - title: CPF0000Exception
             path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html
+          - title: CPF0001Exception
+            path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0001-exception.html
           - title: CPF0500Exception
             path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0500-exception.html
           - title: CPF0555Exception
@@ -2105,8 +2137,12 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2111-exception.html
           - title: CPF2113Exception
             path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2113-exception.html
+          - title: CPF2117Exception
+            path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2117-exception.html
           - title: CPF2123Exception
             path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2123-exception.html
+          - title: CPF2125Exception
+            path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2125-exception.html
           - title: CPF2136Exception
             path: /reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf2136-exception.html
           - title: CPF2138Exception
@@ -2328,8 +2364,6 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html
           - title: JobFrameworkException
             path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/job-framework-exception.html
-          - title: JobShutDownException
-            path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/job-shut-down-exception.html
           - title: LDACapacityException
             path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/lda-capacity-exception.html
           - title: LDALengthException
