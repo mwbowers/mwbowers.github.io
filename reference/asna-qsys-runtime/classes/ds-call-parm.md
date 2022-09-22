@@ -53,9 +53,9 @@ DSCallParm( ASNA.QSys.Runtime.IDS dataStructure );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | BufferDescription | Returns the flat description of the data structure buffer. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of this Data Structure object. | 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | IDS | Gets the Data Structure | 
-| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Layout | Gets the Data Structure Layout as a list of IDSFields. | 
 
 <br>
 <br>

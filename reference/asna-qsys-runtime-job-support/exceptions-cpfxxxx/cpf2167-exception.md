@@ -2,7 +2,7 @@
 title: CPF2167Exception Class
 ---
 
-The exception that is thrown when: Library -library-name- on library list and cannot be deleted.
+The exception that is thrown when Library {0} on library list and cannot be deleted.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Library -library-name- on library list and ca
 
 ## Remarks
 
-The exception that is thrown when: Library -library-name- on library list and cannot be deleted.
+The exception that is thrown when Library {0} on library list and cannot be deleted.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Library -library-name- on library list and ca
 
 | Name |  Description 
 | --- | --- 
-| **CPF2167Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and -inner-exception-. Sets message to: Library -library-name- on library list and cannot be deleted.
+| **CPF2167Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2167Exception class.
 
 <br>
 
 ### CPF2167Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and -inner-exception-. Sets message to: Library -library-name- on library list and cannot be deleted.
+Initializes a new instance of the CPF2167Exception class.
 
 ```cs
 CPF2167Exception( String folder, Exception innerException );

@@ -25,13 +25,13 @@ Defines the core behavior of a program and provides a base for migrated derived 
 
 | Name |  Description 
 | --- | --- 
-| **Program**(  ) | Called from constructors in derived classes to initializes the program class.
+| **Program**(  ) | Called from constructors in derived classes to initialize the program class.
 
 <br>
 
 ### Program(  )
 
-Called from constructors in derived classes to initializes the program class.
+Called from constructors in derived classes to initialize the program class.
 
 ```cs
 Program(  );
@@ -48,7 +48,7 @@ Program(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the program's activation group.<br>(Inherited from [CommonProgram](/reference/asna-qsys-runtime-job-support/classes/common-program.html)) | 
+| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the program's activation group.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) | CurrentJob | Gets the module's Job.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [DocumentLibraryObject](/reference/asna-qsys-runtime-job-support/classes/document-library-object.html) | DLO | Gets the Job's DLO.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [IntergratedFileSystem](/reference/asna-qsys-runtime-job-support/classes/intergrated-file-system.html) | IFS | Gets the Job's IFS.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
@@ -67,7 +67,7 @@ Program(  );
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BeginCall\\`\\`1](#begincall\`\`1icaller)([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html)) | Prepares a program for execution by getting an instance of the program and pushing it in the invocation stack. | The prepared program instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](/reference/asna-qsys-runtime-job-support/classes/module.html#dispose)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Module class. This default implementation does nothing.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | [EndCall](#endcall)() | Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on. | The value of LR indicator.
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | [EndCall](#endcall)() | Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on. | The value of LR indicator.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecOS400Command](/reference/asna-qsys-runtime-job-support/classes/module.html#execos400command)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes a command on the IBM i serving as the database server for the Job.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](/reference/asna-qsys-runtime-job-support/classes/module.html#execsql_query)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an SQL Command producing a QueryResults.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The results produced by the serever.
@@ -84,11 +84,11 @@ Program(  );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReclaimActivationGroup](/reference/asna-qsys-runtime-job-support/classes/module.html#reclaimactivationgroup)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Reclaim the resources on the Job's named activation group.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReclaimResources](/reference/asna-qsys-runtime-job-support/classes/module.html#reclaimresources)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Reclaim the resources on the Job's default activation group.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#removemessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove messages from *PRVious program called.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#removemessage)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove messages from the Program Queue.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RunProgram\\`\\`1](#runprogram\`\`1icaller-action{``0})([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html), [Action{\\`\\`0}]($$TODO-Action{``0}.html)) | Obtains an instance of a program and calls it. | The value of the LR Indicator on program return.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RunProgram\\`\\`2](#runprogram\`\`2icaller-func{``0-``1}-``1)([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html), [Func{\\`\\`0,\\`\\`1}]($$TODO-Func{``0,``1}.html), [\\`\\`1]($$TODO-``1@.html)) | Obtains an instance of a program and calls it. | The value of the LR Indicator on program return.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SendExternalMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#sendexternalmessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html)) | Send text message to *EXTernal message queue.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The message key.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SendProgramMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#sendprogrammessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html)) | Send text message to program message queue in the invocation stack.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The message key.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SendProgramMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#sendprogrammessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html)) | Send message to program message queue in the invocation stack.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The message key.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](/reference/asna-qsys-runtime-job-support/classes/module.html#setldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
@@ -123,7 +123,7 @@ EndCall();
 
 #### Returns
 
-[Indicator](/reference/asna-qsys-runtime/indicator.html)
+[Indicator](/reference/asna-qsys-runtime/classes/indicator.html)
 
 The value of LR indicator.
 

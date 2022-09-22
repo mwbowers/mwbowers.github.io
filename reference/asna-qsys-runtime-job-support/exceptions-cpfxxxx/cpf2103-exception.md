@@ -2,7 +2,7 @@
 title: CPF2103Exception Class
 ---
 
-The exception that is thrown when Library -library-name- already exists in library list.
+The exception that is thrown when Duplicate Library List entry {0}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when Library -library-name- already exists in libra
 
 ## Remarks
 
-The exception that is thrown when Library -library-name- already exists in library list.
+The exception that is thrown when Duplicate Library List entry {0}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when Library -library-name- already exists in libra
 
 | Name |  Description 
 | --- | --- 
-| **CPF2103Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes -library-name- and inner-exception. Sets message to: Library -library-name- already exists in library list.
+| **CPF2103Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2103Exception class.
 
 <br>
 
 ### CPF2103Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes -library-name- and inner-exception. Sets message to: Library -library-name- already exists in library list.
+Initializes a new instance of the CPF2103Exception class.
 
 ```cs
 CPF2103Exception( String libraryName, Exception innerException );

@@ -25,14 +25,14 @@ DataArea Exception issued when requesting a non-existing DataArea.
 
 | Name |  Description 
 | --- | --- 
-| [UnexistentDataAreaException](#unexistentdataareaexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Constructor that takes the DataArea name. Sets the message to: Data area -data-area-name- does not exist. 
-| [UnexistentDataAreaException](#unexistentdataareaexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Constructor that takes the DataArea name and inner exception. Sets the message to: Data area -data-area-name- does not exist. 
+| [UnexistentDataAreaException](#unexistentdataareaexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates an UnexistentDataAreaException object. Sets the message to: Data area -data-area-name- does not exist. 
+| [UnexistentDataAreaException](#unexistentdataareaexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Creates an UnexistentDataAreaException object, with an inner exception. Sets the message to: Data area -data-area-name- does not exist. 
 
 <br>
 
 ### UnexistentDataAreaException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
-Constructor that takes the DataArea name. Sets the message to: Data area -data-area-name- does not exist.
+Creates an UnexistentDataAreaException object. Sets the message to: Data area -data-area-name- does not exist.
 
 ```cs
 UnexistentDataAreaException( String name );
@@ -48,7 +48,7 @@ UnexistentDataAreaException( String name );
 
 ### UnexistentDataAreaException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes the DataArea name and inner exception. Sets the message to: Data area -data-area-name- does not exist.
+Creates an UnexistentDataAreaException object, with an inner exception. Sets the message to: Data area -data-area-name- does not exist.
 
 ```cs
 UnexistentDataAreaException( String name, Exception e );

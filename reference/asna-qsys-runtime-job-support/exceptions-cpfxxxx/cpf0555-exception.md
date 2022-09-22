@@ -2,7 +2,7 @@
 title: CPF0555Exception Class
 ---
 
-The exception that is thrown when Date not in specified format or date not valid.
+The exception that is thrown when Date not in specified format or date not valid: {0}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when Date not in specified format or date not valid
 
 ## Remarks
 
-The exception that is thrown when Date not in specified format or date not valid.
+The exception that is thrown when Date not in specified format or date not valid: {0}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when Date not in specified format or date not valid
 
 | Name |  Description 
 | --- | --- 
-| **CPF0555Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes date and inner-exception. Sets the message to: Date not in specified format or date not valid.
+| **CPF0555Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF0555Exception class.
 
 <br>
 
 ### CPF0555Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes date and inner-exception. Sets the message to: Date not in specified format or date not valid.
+Initializes a new instance of the CPF0555Exception class.
 
 ```cs
 CPF0555Exception( String date, Exception innerException );

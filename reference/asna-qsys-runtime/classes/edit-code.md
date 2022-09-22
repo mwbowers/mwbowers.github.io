@@ -36,7 +36,7 @@ EditCode class.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UsesThousandsSeparator](#usesthousandsseparatoreditcodes)([EditCodes](/reference/asna-qsys-runtime/classes/edit-codes.html)) | Determines if Edit Code uses thousands separator synbol. | true if Edit Code uses thousands separator, false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [UsesThousandsSeparator](#usesthousandsseparatoreditcodes)([EditCodes](/reference/asna-qsys-runtime/classes/edit-codes.html)) | Determines if Edit Code uses thousands separator symbol. | true if Edit Code uses thousands separator, false otherwise.
 
 <br>
 <br>
@@ -165,6 +165,12 @@ UsesThousandsSeparator(ASNA.QSys.Runtime.EditCodes editCode);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [EditCodes](/reference/asna-qsys-runtime/classes/edit-codes.html) | editCode | Edit code input. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if Edit Code uses thousands separator, false otherwise.
 
 
 <br>

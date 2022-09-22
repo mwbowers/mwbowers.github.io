@@ -48,7 +48,7 @@ CLProgram(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the program's activation group.<br>(Inherited from [CommonProgram](/reference/asna-qsys-runtime-job-support/classes/common-program.html)) | 
+| [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the program's activation group.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) | CurrentJob | Gets the module's Job.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [DocumentLibraryObject](/reference/asna-qsys-runtime-job-support/classes/document-library-object.html) | DLO | Gets the Job's DLO.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | exceptionToIgnoreList | List of exceptions to ignore on certain commands. | 
@@ -75,26 +75,26 @@ CLProgram(  );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BeginCall\\`\\`1](/reference/asna-qsys-runtime-job-support/classes/program.html#begincall\`\`1)([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html)) | Prepares a program for execution by getting an instance of the program and pushing it in the invocation stack.<br>(Inherited from [Program](/reference/asna-qsys-runtime-job-support/classes/program.html)) | The prepared program instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChangeDataArea](#changedataareastring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Update the contents of a data area. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearPFM](#clearpfmstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove all records from a file's member. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ConvertDate](#convertdatestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a string representing a date in one format to a string with the date formated in another format. | The date in the desired format.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ConvertDate](#convertdatestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a string representing a date in one format to a string with the date formatted in another format. | The date in the desired format.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateDataArea](#createdataareastring-string-int32-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new character data area. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateDecDataArea](#createdecdataareastring-string-int32-int32-decimal-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new decimal data area. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateDuplicateFile](#createduplicatefilestring-string-string-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Create a copy of an existing file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CreateLglDataArea](#createlgldataareastring-string-char-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a logical data area capable of holding a value of '1' or '0'. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DataAreaExists](#dataareaexistsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Check for existance of a data area. | true if the data area exists; otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DataAreaExists](#dataareaexistsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Check for existence of a data area. | true if the data area exists; otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DelayJob_ResumeTime](#delayjob_resumetimestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Suspends the execution on the job until a specific time in the future. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DelayJob_Seconds](#delayjob_secondsuint64)([UInt64](https://docs.microsoft.com/en-us/dotnet/api/system.uint.64)) | Suspends the execution on the job for the specified time. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteDataArea](#deletedataareastring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete an existing data area. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteFile](#deletefilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a file database or printer file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteOverride](#deleteoverridestring-overridescope)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [OverrideScope](/reference/asna-qsys-runtime-job-support/classes/override-scope.html)) | Removes a previous override for a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](/reference/asna-qsys-runtime-job-support/classes/module.html#dispose)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Module class. This default implementation does nothing.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | [EndCall](/reference/asna-qsys-runtime-job-support/classes/program.html#endcall)() | Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on.<br>(Inherited from [Program](/reference/asna-qsys-runtime-job-support/classes/program.html)) | The value of LR indicator.
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | [EndCall](/reference/asna-qsys-runtime-job-support/classes/program.html#endcall)() | Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on.<br>(Inherited from [Program](/reference/asna-qsys-runtime-job-support/classes/program.html)) | The value of LR indicator.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecOS400Command](/reference/asna-qsys-runtime-job-support/classes/module.html#execos400command)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes a command on the IBM i serving as the database server for the Job.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](/reference/asna-qsys-runtime-job-support/classes/module.html#execsql_query)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an SQL Command producing a QueryResults.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The results produced by the serever.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](/reference/asna-qsys-runtime-job-support/classes/module.html#execsql_statement)([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query SQL Command.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [FileExists](#fileexistsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test for the existance of a database or printer file. | true if the file exists; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [FormatMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#formatmessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaces with values from the messsage data.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The formatted first level text of the message.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [FormatMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#formatmessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaces with values from the message data.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The formatted first level text of the message.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](/reference/asna-qsys-runtime-job-support/classes/module.html#getldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The requested field value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetModule\\`\\`1](/reference/asna-qsys-runtime-job-support/classes/module.html#getmodule\`\`1)() | Gets a module contained in the same program or in one of the service programs.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The module requested. Returns null if there is no module of the type requested.
@@ -105,8 +105,10 @@ CLProgram(  );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitializePFM](#initializepfmstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initialize a physical file member with records containing their field's default values. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RetrieveDataArea](#retrievedataareastring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a portion of a data area. | The value stored on the data area portion.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [RetrieveMemberDescription](#retrievememberdescriptionstring-string-memberstringdescription)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MemberStringDescription](/reference/asna-qsys-runtime-job-support/classes/member-string-description.html)) | Gets a string attribute of a file member. | The value of the attribute requested.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RetrieveMessage](#retrievemessagestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaces with values from the message data. | The formatted first level text of the message.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetAttentionProgram](#setattentionprogramstring-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Sets the attention program to be be called when the Attention Key is 'pressed' | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TryAddLibLEntry](#tryaddliblentrystring-liblposition-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition]($$TODO-ASNA.DataGate.Client.LiblPosition.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attempts to add a library name at a particular position in the user portion of the library list. | true if the library was added successfully; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [MemberExists](#memberexistsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test for the existence of a database file's member. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [OverrideFile](#overridefilestring-overrideoption-object-overridescope)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [OverrideOption](/reference/asna-qsys-runtime-job-support/classes/override-option.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [OverrideScope](/reference/asna-qsys-runtime-job-support/classes/override-scope.html)) | Temporary overrides (replaces) a file name, its location or some other parameter used when a program opens the file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Percent_SST](#percent_sststring-int32-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves a substring. The substring starts at a specified position and has a specified length. | 
@@ -117,23 +119,24 @@ CLProgram(  );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReclaimResources](/reference/asna-qsys-runtime-job-support/classes/module.html#reclaimresources)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Reclaim the resources on the Job's default activation group.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMember](#removememberstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a member from a database file. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#removemessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove messages from *PRVious program called.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#removemessage)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove messages from the Program Queue.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RenameDataArea](#renamedataareastring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Rename a data area. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RenameFile](#renamefilestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Rename a database or printer file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ResetAttentionProgram](#resetattentionprogram)() | Resets the attention program settings to the previous invocation level. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RetrieveDataArea](#retrievedataareastring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of a data area. | The value stored on the data area.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RetrieveJobAttribute](#retrievejobattributejobstringattribute)([JobStringAttribute](/reference/asna-qsys-runtime-job-support/classes/job-string-attribute.html)) | Gets an attribute of the current job. | The requested attributed.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [RetrieveMemberDescription](#retrievememberdescriptionstring-string-memberdecimaldescription)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MemberDecimalDescription](/reference/asna-qsys-runtime-job-support/classes/member-decimal-description.html)) | Gets a numeric attribute of a file member. | The value of the attribute requested.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RetrieveMessage](#retrievemessagestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaces with values from the message data. | The formatted first level text of the message.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RmvLibLEntry](#rmvliblentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a library name from the user portion of the library list. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RunProgram\\`\\`1](/reference/asna-qsys-runtime-job-support/classes/program.html#runprogram\`\`1)([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html), [Action{\\`\\`0}]($$TODO-Action{``0}.html)) | Obtains an instance of a program and calls it.<br>(Inherited from [Program](/reference/asna-qsys-runtime-job-support/classes/program.html)) | The value of the LR Indicator on program return.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RunProgram\\`\\`2](/reference/asna-qsys-runtime-job-support/classes/program.html#runprogram\`\`2)([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html), [Func{\\`\\`0,\\`\\`1}]($$TODO-Func{``0,``1}.html), [\\`\\`1]($$TODO-``1@.html)) | Obtains an instance of a program and calls it.<br>(Inherited from [Program](/reference/asna-qsys-runtime-job-support/classes/program.html)) | The value of the LR Indicator on program return.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScheduleBatchJob](#schedulebatchjobstring-string-string-string-namevaluecollection)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection)) | Adds a program and its paramenters to a job queue for execution. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScheduleBatchJob](#schedulebatchjobstring-string-string-string-namevaluecollection)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection)) | This method does not do anything.  It will be removed soon. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SendExternalMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#sendexternalmessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html)) | Send text message to *EXTernal message queue.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The message key.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SendProgramMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#sendprogrammessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html)) | Send text message to program message queue in the invocation stack.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The message key.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SendProgramMessage](/reference/asna-qsys-runtime-job-support/classes/module.html#sendprogrammessage)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html)) | Send message to program message queue in the invocation stack.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | The message key.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetAttentionProgram](#setattentionprogramboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enables or disables the current Attention Program. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](/reference/asna-qsys-runtime-job-support/classes/module.html#setldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA.<br>(Inherited from [Module](/reference/asna-qsys-runtime-job-support/classes/module.html)) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [splitQualifiedNameForInput](#splitqualifiednameforinputstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Separate the name components of a qualifed name. | The fully qualified name.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [splitQualifiedNameForOutput](#splitqualifiednameforoutputstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Separate the name components of a qualifed name. | The fully qualified name.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [splitQualifiedNameForInput](#splitqualifiednameforinputstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Separate the name components of a qualified name. | The fully qualified name.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [splitQualifiedNameForOutput](#splitqualifiednameforoutputstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Separate the name components of a qualified name. | The fully qualified name.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TryAddLibLEntry](#tryaddliblentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attempts to add a library name to the start of the user portion of library list. | true if the library was added successfully; otherwise, false.
 
@@ -191,7 +194,7 @@ AddMsgToIgnore(Type exceptionType);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | exceptionType | Excption to ignore. 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | exceptionType | Exception to ignore. 
 
 
 <br>
@@ -308,7 +311,7 @@ ClearPFM(String File, String Mbr);
 
 ### ConvertDate([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Converts a string representing a date in one format to a string with the date formated in another format.
+Converts a string representing a date in one format to a string with the date formatted in another format.
 
 ```cs
 ConvertDate(String date, String fromDateFormat, String toDateFmt, String toDateSep);
@@ -423,7 +426,7 @@ CreateLglDataArea(String library, String dataAreaName, Char initValue, String te
 
 ### DataAreaExists([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Check for existance of a data area.
+Check for existence of a data area.
 
 ```cs
 DataAreaExists(String library, String dataArea);
@@ -596,7 +599,7 @@ AddLibLEntry(String libraryName, ASNA.DataGate.Client.LiblPosition position, Str
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | libraryName | The name of the library. 
 | [LiblPosition]($$TODO-ASNA.DataGate.Client.LiblPosition.html) | position | One of the enumeration values that specifies the position where to add the name. May be absolute or relative. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | referenceLibraryName | For relative position values it specifies the refererence point. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | referenceLibraryName | For relative position values it specifies the reference point. 
 
 
 <br>
@@ -695,6 +698,33 @@ The value of the attribute requested.
 <br>
 <br>
 
+### RetrieveMessage([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Produces the strings with the formatted first and second level text for a message. Any placeholders are replaces with values from the message data.
+
+```cs
+RetrieveMessage(String MsgFile, String MsgId, ref String MsgData, String secondLevelText);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFile | The message file name where the message description is to be found. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgId | The message identification. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgData | The replacement text, if any, for the message placeholders. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | secondLevelText | The formatted second level text of the message. 
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+The formatted first level text of the message.
+
+
+<br>
+<br>
+
 ### SetAttentionProgram([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Sets the attention program to be be called when the Attention Key is 'pressed'
@@ -741,6 +771,31 @@ true if the library was added successfully; otherwise, false.
 <br>
 <br>
 
+### MemberExists([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Test for the existence of a database file's member.
+
+```cs
+MemberExists(String FilePath, String MemberName);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FilePath | Qualified file name (library/file). 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MemberName | Member name or *FIRST 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+
+
+
+<br>
+<br>
+
 ### OverrideFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [OverrideOption](/reference/asna-qsys-runtime-job-support/classes/override-option.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [OverrideScope](/reference/asna-qsys-runtime-job-support/classes/override-scope.html))
 
 Temporary overrides (replaces) a file name, its location or some other parameter used when a program opens the file.
@@ -775,7 +830,7 @@ Percent_SST(ref String receiver, Int32 start, Int32 length, String value);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | receiver | The receiver of the substring. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The one-based postion of the substring start. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The one-based position of the substring start. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the substring. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The string containing the substring. 
 
@@ -795,7 +850,7 @@ Percent_Switch(String mask);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mask | A positional list of up to 8 '1'/'0' values corresponding to the job's switches to be tested.  Use any other charcter, like an 'X', for switches to be ignored. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mask | A positional list of up to 8 '1'/'0' values corresponding to the job's switches to be tested.  Use any other character, like an 'X', for switches to be ignored. 
 
 #### Returns
 
@@ -950,6 +1005,32 @@ The value of the attribute requested.
 <br>
 <br>
 
+### RetrieveMessage([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Produces the strings with the formatted first and second level text for a message. Any placeholders are replaces with values from the message data.
+
+```cs
+RetrieveMessage(String MsgFile, String MsgId, String MsgData);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFile | The message file name where the message description is to be found. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgId | The message identification. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgData | The replacement text, if any, for the message placeholders. 
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+The formatted first level text of the message.
+
+
+<br>
+<br>
+
 ### RmvLibLEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Removes a library name from the user portion of the library list.
@@ -970,7 +1051,7 @@ RmvLibLEntry(String libraryName);
 
 ### ScheduleBatchJob([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection))
 
-Adds a program and its paramenters to a job queue for execution.
+This method does not do anything.  It will be removed soon.
 
 ```cs
 ScheduleBatchJob(String programPath, String programParameters, String jobName, String jobQueueName, Collections.Specialized.NameValueCollection options);
@@ -980,11 +1061,11 @@ ScheduleBatchJob(String programPath, String programParameters, String jobName, S
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programPath | The path to the executable file. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programParameters | The parameters to be passed to the program. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobName | The name to be given to the new job. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobQueueName | The name of the job queue where the program will be scheduled. 
-| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | options | A collection of name-values pairs with the scheduling options. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programPath |  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programParameters |  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobName |  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobQueueName |  
+| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | options |  
 
 
 <br>

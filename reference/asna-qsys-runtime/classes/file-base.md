@@ -120,7 +120,7 @@ FileBase( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateBuffer, 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteRange](#deleterangestring-object[]-object[]-rangefirst-rangelast)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html)) | Executes a DELETE record range. | True if found, false otherwise.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [dumpRecord](#dumprecord)() | Dumps the last record into a string. | The record as a string.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes a Format operation (Write followed by Read). | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a Format operation (Write followed by Read). | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [DataColumn]($$TODO-Data.DataColumn.html) | [GetDataColumn](#getdatacolumnstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Data Column from DataSet. | The Data Column referenced by input parameters.
 | [DataTable]($$TODO-Data.DataTable.html) | [GetDataTable](#getdatatablestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Support for RPG's lack of indexed properties. | Data table.
@@ -137,38 +137,38 @@ FileBase( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateBuffer, 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Reads the next changed record. | The RRN of record found or the original RNN if error occured.
 | [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Chain](#chainstring-boolean-char-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a CHAIN operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Chain](#chainstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a CHAIN operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Chain](#chainstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a CHAIN operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-decimal)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-decimal-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-decimal-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-boolean-decimal-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN operation by RRN. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-char-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Delete](#deletestring-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a DELETE current record operation. | True if record was found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a DELETE current record by Relative Record Number operation. | True if record found, otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteRange](#deleterangestring-object[]-object[]-rangefirst-rangelast-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a DELETE record range. | True if found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteRange](#deleterangestring-object[]-object[]-rangefirst-rangelast-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a DELETE record range. | True if found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeleteRange](#deleterangestring-object[]-object[]-rangefirst-rangelast-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a DELETE record range. | True if found, false otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNext](#readnextstring-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ NEXT record operation. | True if NOT End Of File reached, otherwise false.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNext](#readnextstring-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes READ NEXT record operation. | True if NOT End Of File reached, otherwise false.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNext](#readnextstring-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ NEXT record operation. | True if NOT End Of File reached, otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextEqual](#readnextequalstring-boolean-char-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ NEXT EQUAL record operation. | True if NOT Eof of File condition reached, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextEqual](#readnextequalstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ NEXT EQUAL record operation. | True if NOT Eof of File condition reached, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextEqual](#readnextequalstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ NEXT EQUAL record operation. | True if NOT Eof of File condition reached, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadPrevious](#readpreviousstring-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ PREVIOUS record operation. | True if NOT End of File condition is reached, otherwise false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadPrevious](#readpreviousstring-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes READ PREVIOUS record operation. | True if NOT End of File condition is reached, otherwise false.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadPrevious](#readpreviousstring-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ PREVIOUS record operation. | True if NOT End of File condition is reached, otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadPreviousEqual](#readpreviousequalstring-boolean-char-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ PREVIOUS EQUAL record operation. | True if NOT End of File condition is reached, otherwise false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadPreviousEqual](#readpreviousequalstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ PREVIOUS EQUAL record operation. | True if NOT End of File condition is reached, otherwise false.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadPreviousEqual](#readpreviousequalstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ PREVIOUS EQUAL record operation. | True if NOT End of File condition is reached, otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadRange](#readrangestring-object[]-object[]-rangemode-rangefirst-rangelast-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ RANGE operation. | True if record was found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadRange](#readrangestring-object[]-object[]-rangemode-rangefirst-rangelast-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes READ RANGE operation. | True if record was found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadRange](#readrangestring-object[]-object[]-rangemode-rangefirst-rangelast-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ RANGE operation. | True if record was found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Seek](#seekstring-seekmode-char-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Seek](#seekstring-seekmode-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Seek](#seekstring-seekmode-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SeekByRRN](#seekbyrrnstring-seekmode-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SeekByRRN](#seekbyrrnstring-seekmode-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SeekByRRN](#seekbyrrnstring-seekmode-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBuffer](#populatebufferstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields. | 
 | [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes READ record operation. | True if record is found, False otherwise.
@@ -181,74 +181,76 @@ FileBase( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateBuffer, 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Seek](#seekstring-seekmode-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SeekByRRN](#seekbyrrnstring-seekmode-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes a SEEK record operation by Relative Record Number. | True if record was found, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [setStatusCodeFromLastException](#setstatuscodefromlastexception)() | Set and return the Ststus Code from last exception. | Last exception Status Code.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [setStatusCodeFromLastException](#setstatuscodefromlastexception)() | Set and return the Status Code from last exception. | Last exception Status Code.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes UPDATE current record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes UPDATE fields operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes UPDATE current record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [updateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record. | 
 | [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates the DataSet Buffer. | The DataSet.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN by Relative Record number operation. | True if record is found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-decimal-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a CHAIN by Relative Record number operation. | True if record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a Format operation (Write followed by Read). | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a Format operation (Write followed by Read). | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-decimal-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes DELETE record by Relative Record Number. | True if record is found, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a Format operation (Write followed by Read). | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](#exfmtstring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a Format operation (Write followed by Read). | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ record operation. | True if record is found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ record operation. | True if record is found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ record operation. | True if record is found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readstring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes READ record operation. | True if record is found, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-int32-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes UPDATE current record operation. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](#readnextchangedstring-decimal-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a READ NEXT record CHANGED operation. | True if NOT End of File condition is reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes UPDATE current record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes UPDATE fields operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-char-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes UPDATE fields operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes WRITE record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[]-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes WRITE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[]-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-char[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-decimal-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE Subfile record operation. | True if NOT End of File condition reached, False otherwise.
 
 <br>
@@ -451,7 +453,7 @@ The record as a string.
 <br>
 <br>
 
-### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a Format operation (Write followed by Read).
 
@@ -464,7 +466,7 @@ ExFmt(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
 
 
 <br>
@@ -673,7 +675,7 @@ ReadNextChanged(String formatName, Int32 originalRRN, ref Char err);
 
 [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
-The RRN of record found or the original RNN if error occured.
+The RRN of record found or the original RNN if error occurred.
 
 
 <br>
@@ -718,7 +720,7 @@ Chain(String formatName, Boolean lockRecord, ref Char err, Object[] keyParts);
 <br>
 <br>
 
-### Chain([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Chain([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes a CHAIN operation.
 
@@ -732,7 +734,7 @@ Chain(String formatName, Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator err
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Collection of search keys. 
 
 
@@ -760,7 +762,7 @@ ChainByRRN(String formatName, Boolean lockRecord, Int32 rrn, ref Char err);
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN operation by RRN.
 
@@ -775,7 +777,7 @@ ChainByRRN(String formatName, Boolean lockRecord, Int32 rrn, ref ASNA.QSys.Runti
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -822,7 +824,7 @@ ChainByRRN(String formatName, Boolean lockRecord, Decimal rrn, ref Char err);
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN operation by RRN.
 
@@ -837,7 +839,7 @@ ChainByRRN(String formatName, Boolean lockRecord, Decimal rrn, ref ASNA.QSys.Run
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -862,7 +864,7 @@ Delete(String formatName, ref Char err);
 <br>
 <br>
 
-### Delete([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Delete([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a DELETE current record operation.
 
@@ -875,7 +877,7 @@ Delete(String formatName, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -920,7 +922,7 @@ Delete(String formatName, ref Char err, Object[] keyParts);
 <br>
 <br>
 
-### Delete([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Delete([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes a DELETE current record operation.
 
@@ -933,7 +935,7 @@ Delete(String formatName, ref ASNA.QSys.Runtime.Indicator err, Object[] keyParts
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Collection of search keys. 
 
 
@@ -965,7 +967,7 @@ True if record found, otherwise false.
 <br>
 <br>
 
-### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a DELETE current record by Relative Record Number operation.
 
@@ -979,7 +981,7 @@ DeleteByRRN(String formatName, Int32 rrn, ref ASNA.QSys.Runtime.Indicator err);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1042,7 +1044,7 @@ True if record found, otherwise false.
 <br>
 <br>
 
-### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a DELETE current record by Relative Record Number operation.
 
@@ -1056,7 +1058,7 @@ DeleteByRRN(String formatName, Decimal rrn, ref ASNA.QSys.Runtime.Indicator err)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 
 #### Returns
 
@@ -1091,7 +1093,7 @@ DeleteRange(String formatName, Object[] firstKey, Object[] lastKey, ASNA.DataGat
 <br>
 <br>
 
-### DeleteRange([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteRange([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a DELETE record range.
 
@@ -1108,7 +1110,7 @@ DeleteRange(String formatName, Object[] firstKey, Object[] lastKey, ASNA.DataGat
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | lastKey | Collection of keys specifying last record in range. 
 | [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html) | rangeFirstKey | Type of first record inclusion. 
 | [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html) | rangeLastKey | Type of last record inclusion. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -1140,7 +1142,7 @@ True if NOT End Of File reached, otherwise false.
 <br>
 <br>
 
-### ReadNext([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNext([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ NEXT record operation.
 
@@ -1154,7 +1156,7 @@ ReadNext(String formatName, Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator 
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if record lock should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output errir Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output errir Indicator. 
 
 #### Returns
 
@@ -1187,7 +1189,7 @@ ReadNextEqual(String formatName, Boolean lockRecord, ref Char err, Object[] keyP
 <br>
 <br>
 
-### ReadNextEqual([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadNextEqual([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes READ NEXT EQUAL record operation.
 
@@ -1201,7 +1203,7 @@ ReadNextEqual(String formatName, Boolean lockRecord, ref ASNA.QSys.Runtime.Indic
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if record locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Input search key collection. 
 
 
@@ -1228,7 +1230,7 @@ ReadPrevious(String formatName, Boolean lockRecord, ref Char err);
 <br>
 <br>
 
-### ReadPrevious([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadPrevious([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ PREVIOUS record operation.
 
@@ -1242,7 +1244,7 @@ ReadPrevious(String formatName, Boolean lockRecord, ref ASNA.QSys.Runtime.Indica
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if record locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -1269,7 +1271,7 @@ ReadPreviousEqual(String formatName, Boolean lockRecord, ref Char keyParts, Obje
 <br>
 <br>
 
-### ReadPreviousEqual([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadPreviousEqual([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes READ PREVIOUS EQUAL record operation.
 
@@ -1283,7 +1285,7 @@ ReadPreviousEqual(String formatName, Boolean lockRecord, ref ASNA.QSys.Runtime.I
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if record locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Input search key collection. 
 
 
@@ -1315,7 +1317,7 @@ ReadRange(String formatName, Object[] firstKey, Object[] lastKey, ASNA.DataGate.
 <br>
 <br>
 
-### ReadRange([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadRange([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ RANGE operation.
 
@@ -1334,7 +1336,7 @@ ReadRange(String formatName, Object[] firstKey, Object[] lastKey, ASNA.DataGate.
 | [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html) | rangeFirstKey | Type of inclusion for starting range. 
 | [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html) | rangeLastKey | Type of inclusion for ending range. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if record locking is to be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error indicator. 
 
 
 <br>
@@ -1361,7 +1363,7 @@ Seek(String formatName, ASNA.DataGate.Common.SeekMode mode, ref Char err, Object
 <br>
 <br>
 
-### Seek([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Seek([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes a SEEK record operation by Relative Record Number.
 
@@ -1375,7 +1377,7 @@ Seek(String formatName, ASNA.DataGate.Common.SeekMode mode, ref ASNA.QSys.Runtim
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html) | mode | Seek mode. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Input search key collection. 
 
 
@@ -1403,7 +1405,7 @@ SeekByRRN(String formatName, ASNA.DataGate.Common.SeekMode mode, Int32 rrn, ref 
 <br>
 <br>
 
-### SeekByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SeekByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a SEEK record operation by Relative Record Number.
 
@@ -1418,7 +1420,7 @@ SeekByRRN(String formatName, ASNA.DataGate.Common.SeekMode mode, Int32 rrn, ref 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html) | mode | Seek mode. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 
 
 <br>
@@ -1670,7 +1672,7 @@ Last exception Status Code.
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes UPDATE current record operation.
 
@@ -1683,7 +1685,26 @@ Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
+
+
+<br>
+<br>
+
+### updateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default.
+
+```cs
+updateFlds(String formatName, String[] fieldNames);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Format Name. 
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | Field Name Collection. 
 
 
 <br>
@@ -1691,18 +1712,18 @@ Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators);
 
 ### UpdateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Executes UPDATE fields operation.
+When overridden in a derived class, updates the specified fields on the current record.
 
 ```cs
-UpdateFlds(String formatName, String[] fields);
+UpdateFlds(String formatName, String[] fieldNames);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fields | Input field name collection. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Format Name. 
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | Field Name Collection. 
 
 
 <br>
@@ -1746,7 +1767,7 @@ ChainByRRN(String formatName, Int32 rrn, Char[] optionIndicators);
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -1760,7 +1781,7 @@ ChainByRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.Indicator[] optionInd
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relateive Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicators. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicators. 
 
 
 <br>
@@ -1787,7 +1808,7 @@ ChainByRRN(String formatName, Decimal rrn, Char[] optionIndicators, ref Char err
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -1800,15 +1821,15 @@ ChainByRRN(String formatName, Decimal rrn, Char[] optionIndicators, ref ASNA.QSy
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relateive Record Number. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -1821,9 +1842,9 @@ ChainByRRN(String formatName, Decimal rrn, ASNA.QSys.Runtime.Indicator[] optionI
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relateive Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicators. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -1842,7 +1863,7 @@ ChainByRRN(String formatName, Decimal rrn, ASNA.QSys.Runtime.IDS optionIndicator
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relateive Record Number. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input option indicators. 
 
 
@@ -1870,7 +1891,7 @@ ChainByRRN(String formatName, Decimal rrn, ASNA.QSys.Runtime.IDS optionIndicator
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -1883,9 +1904,9 @@ ChainByRRN(String formatName, Decimal rrn, ASNA.QSys.Runtime.IDS optionIndicator
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relateive Record Number. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -1904,7 +1925,7 @@ ChainByRRN(String formatName, Int32 rrn, Char[] optionIndicators, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relateive Record Number. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input option indicators. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Output error code. 
 
@@ -1912,7 +1933,7 @@ ChainByRRN(String formatName, Int32 rrn, Char[] optionIndicators, ref Char err);
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -1927,13 +1948,13 @@ ChainByRRN(String formatName, Int32 rrn, Char[] optionIndicators, ref ASNA.QSys.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relateive Record Number. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -1947,8 +1968,8 @@ ChainByRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.Indicator[] optionInd
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relateive Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicators. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error indicator. 
 
 
 <br>
@@ -1995,7 +2016,7 @@ ChainByRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS optionIndicators,
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -2010,7 +2031,7 @@ ChainByRRN(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS optionIndicators,
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relateive Record Number. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 
 
 <br>
@@ -2036,7 +2057,7 @@ ChainByRRN(String formatName, Decimal rrn, Char[] optionIndicators);
 <br>
 <br>
 
-### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a CHAIN by Relative Record number operation.
 
@@ -2050,7 +2071,7 @@ ChainByRRN(String formatName, Decimal rrn, ASNA.QSys.Runtime.Indicator[] optionI
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relateive Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicators. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicators. 
 
 
 <br>
@@ -2107,7 +2128,7 @@ True if record is found, false otherwise.
 <br>
 <br>
 
-### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes DELETE record by Relative Record Number.
 
@@ -2121,7 +2142,7 @@ DeleteByRRN(String formatName, Int32 rrn, ref ASNA.QSys.Runtime.Indicator err);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2184,7 +2205,7 @@ True if record is found, false otherwise.
 <br>
 <br>
 
-### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteByRRN([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes DELETE record by Relative Record Number.
 
@@ -2198,7 +2219,7 @@ DeleteByRRN(String formatName, Decimal rrn, ref ASNA.QSys.Runtime.Indicator err)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 
 #### Returns
 
@@ -2210,7 +2231,7 @@ True if record is found, false otherwise.
 <br>
 <br>
 
-### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a Format operation (Write followed by Read).
 
@@ -2224,13 +2245,13 @@ ExFmt(String formatName, ASNA.QSys.Runtime.IDS indDS, ref ASNA.QSys.Runtime.Indi
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure instance. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ExFmt([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a Format operation (Write followed by Read).
 
@@ -2243,8 +2264,8 @@ ExFmt(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ref ASN
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -2270,7 +2291,7 @@ Read(String formatName, ASNA.QSys.Runtime.IDS indDS, ref Char err);
 <br>
 <br>
 
-### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ record operation.
 
@@ -2284,7 +2305,7 @@ Read(String formatName, ASNA.QSys.Runtime.IDS indDS, ref ASNA.QSys.Runtime.Indic
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Indicator Data Structure instance. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -2309,7 +2330,7 @@ Read(String formatName, Char[] optionIndicators);
 <br>
 <br>
 
-### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ record operation.
 
@@ -2322,7 +2343,7 @@ Read(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option Indicators. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option Indicators. 
 
 
 <br>
@@ -2348,7 +2369,7 @@ Read(String formatName, Char[] optionIndicators, ref Char err);
 <br>
 <br>
 
-### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ record operation.
 
@@ -2362,13 +2383,13 @@ Read(String formatName, Char[] optionIndicators, ref ASNA.QSys.Runtime.Indicator
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input option Indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Read([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes READ record operation.
 
@@ -2381,8 +2402,8 @@ Read(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ref ASNA
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option Indicator collection. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -2414,7 +2435,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2428,7 +2449,7 @@ ReadNextChanged(String formatName, ref Int32 rrn, ASNA.QSys.Runtime.Indicator[] 
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Reletive Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option Indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option Indicator collection. 
 
 #### Returns
 
@@ -2453,7 +2474,7 @@ ReadNextChanged(String formatName, ref Int32 rrn, ASNA.QSys.Runtime.IDS optionIn
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Reletive Record Number reference. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number reference. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input Option Indicator collection. 
 
 #### Returns
@@ -2505,7 +2526,7 @@ ReadNextChanged(String formatName, ref Int32 rrn, ASNA.QSys.Runtime.IDS optionIn
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Reletive Record Number reference. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Relative Record Number reference. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input Option Indicator collection. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Output error code. 
 
@@ -2519,7 +2540,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2534,7 +2555,7 @@ ReadNextChanged(String formatName, ref Int32 rrn, ASNA.QSys.Runtime.IDS optionIn
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Reletive Record Number reference. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input Option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2573,7 +2594,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2588,7 +2609,7 @@ ReadNextChanged(String formatName, ref Decimal rrn, ASNA.QSys.Runtime.IDS option
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Reletive Record Number reference. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | optionIndicators | Input Option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2626,7 +2647,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2640,7 +2661,7 @@ ReadNextChanged(String formatName, ref Decimal rrn, ASNA.QSys.Runtime.Indicator[
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Reletive Record Number reference. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option Indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option Indicator collection. 
 
 #### Returns
 
@@ -2679,7 +2700,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2694,7 +2715,7 @@ ReadNextChanged(String formatName, ref Int32 rrn, Char[] optionIndicators, ref A
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Reletive Record Number reference. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input Option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 
 #### Returns
 
@@ -2706,7 +2727,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2720,8 +2741,8 @@ ReadNextChanged(String formatName, ref Int32 rrn, ASNA.QSys.Runtime.Indicator[] 
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input Reletive Record Number reference. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option Indicator collection. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 
 #### Returns
 
@@ -2760,7 +2781,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2775,7 +2796,7 @@ ReadNextChanged(String formatName, ref Decimal rrn, Char[] optionIndicators, ref
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Reletive Record Number reference. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input Option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2787,7 +2808,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNextChanged([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes a READ NEXT record CHANGED operation.
 
@@ -2801,8 +2822,8 @@ ReadNextChanged(String formatName, ref Decimal rrn, ASNA.QSys.Runtime.Indicator[
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input Reletive Record Number reference. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option Indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option Indicator collection. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2814,7 +2835,7 @@ True if NOT End of File condition is reached, False otherwise.
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes UPDATE current record operation.
 
@@ -2827,8 +2848,27 @@ Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.Q
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | Input indicator Data Structure. 
+
+
+<br>
+<br>
+
+### UpdateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Executes UPDATE fields operation.
+
+```cs
+UpdateFlds(String formatName, String[] fields);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fields | Input field name collection. 
 
 
 <br>
@@ -2854,7 +2894,7 @@ UpdateFlds(String formatName, ref Char err, String[] fields);
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Executes WRITE record operation.
 
@@ -2867,14 +2907,14 @@ Write(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.QS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | Input Indicator Data Structure. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE record operation.
 
@@ -2887,15 +2927,15 @@ Write(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.QS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | Input Indicator Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE record operation.
 
@@ -2908,14 +2948,14 @@ Write(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ref ASN
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE record operation.
 
@@ -2929,13 +2969,13 @@ Write(String formatName, ASNA.QSys.Runtime.IDS indDS, ref ASNA.QSys.Runtime.Indi
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input format name. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | indDS | Input Indicator Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE Subfile record operation.
 
@@ -2949,7 +2989,7 @@ WriteSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.Indicator[] optionI
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input subfile Relative Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option indicators. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option indicators. 
 
 
 <br>
@@ -2976,7 +3016,7 @@ WriteSubfile(String formatName, Int32 rrn, Char[] optionIndicators, ref Char err
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE Subfile record operation.
 
@@ -2991,13 +3031,13 @@ WriteSubfile(String formatName, Int32 rrn, Char[] optionIndicators, ref ASNA.QSy
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input subfile Relative Record Number. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input Option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE Subfile record operation.
 
@@ -3011,8 +3051,8 @@ WriteSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.Indicator[] optionI
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Input subfile Relative Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option indicators. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -3038,7 +3078,7 @@ WriteSubfile(String formatName, Decimal rrn, Char[] optionIndicators);
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE Subfile record operation.
 
@@ -3052,7 +3092,7 @@ WriteSubfile(String formatName, Decimal rrn, ASNA.QSys.Runtime.Indicator[] optio
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input subfile Relative Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option indicators. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option indicators. 
 
 
 <br>
@@ -3079,7 +3119,7 @@ WriteSubfile(String formatName, Decimal rrn, Char[] optionIndicators, ref Char e
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE Subfile record operation.
 
@@ -3094,13 +3134,13 @@ WriteSubfile(String formatName, Decimal rrn, Char[] optionIndicators, ref ASNA.Q
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input subfile Relative Record Number. 
 | [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input Option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE Subfile record operation.
 
@@ -3114,14 +3154,14 @@ WriteSubfile(String formatName, Decimal rrn, ASNA.QSys.Runtime.Indicator[] optio
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Input subfile Relative Record Number. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input Option indicators. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input Option indicators. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes WRITE record operation.
 
@@ -3134,7 +3174,7 @@ Write(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input format name. 
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | optionIndicators | Input option indicator collection. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Input option indicator collection. 
 
 
 <br>

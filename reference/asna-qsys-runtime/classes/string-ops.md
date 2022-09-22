@@ -55,6 +55,7 @@ StringOps( Int32 rank );
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Cause_ServerTerminatedException | Looks up a localized string similar to A request shutdown has been issued.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Cause_ShuttingDownException | Looks up a localized string similar to Most likely the session timed out.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF0001Exception | Looks up a localized string similar to Error found on {0} command. {1}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF0555Exception | Looks up a localized string similar to Date not in specified format or date not valid: {0}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF1028Exception | Looks up a localized string similar to {0} not valid for parameter SYSVAL.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF1095Exception | Looks up a localized string similar to CL variable length not valid for parameter {0}.. | 
@@ -66,7 +67,9 @@ StringOps( Int32 rank );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2110Exception | Looks up a localized string similar to Library {0} not found.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2111Exception | Looks up a localized string similar to Library {0} already exists.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2113Exception | Looks up a localized string similar to Cannot allocate library {0}.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2117Exception | Looks up a localized string similar to {0} Objects of type {1} were deleted but {2} were not deleted.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2123Exception | Looks up a localized string similar to Description for object {0} not changed.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2125Exception | Looks up a localized string similar to No objects were deleted for object {0}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2136Exception | Looks up a localized string similar to Renaming library {0} failed.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2138Exception | Looks up a localized string similar to Creation of library {0} not allowed.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CPF2139Exception | Looks up a localized string similar to Rename of library {0} failed.. | 
@@ -156,6 +159,8 @@ StringOps( Int32 rank );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DBFileBaseWaitRecError | Looks up a localized string similar to Expecting WaitRec '{0}' but found '{1}'.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DecOpsDecimalsLimitExceeded | Looks up a localized string similar to DecimalCount is greater than {0}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DecOpsDigitLimitExceeded | Looks up a localized string similar to Digits is greater than {0}.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DecOpsDigitsIsZero | Looks up a localized string similar to Digits cannot be zero.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DecOpsDigitsLessThanDecimals | Looks up a localized string similar to Digits cannot be less than decimals.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | DecOpsInvalidDecimalDigit | Looks up a localized string similar to Invalid Fixed Decimal Digit.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_ActivationGroupCallException | Looks up a localized string similar to Program {0} is marked with Activation Group *CALLER but is being called by non program class or badly constructed program {1}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_ActivationGroupCreateException | Looks up a localized string similar to Could not create Activation Group {0} for program {1}.. | 
@@ -165,6 +170,7 @@ StringOps( Int32 rank );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_DataAreaLockException | Looks up a localized string similar to Cannot lock data area '{0}/{1}' using Job '{2}'.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_DataAreaRetrieveException | Looks up a localized string similar to Cannot retrieve data area '{0}/{1}' using Job '{2}'.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_DataAreaUnlockException | Looks up a localized string similar to Cannot unlock data area '{0}/{1}' using Job '{2}'.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_DecimalToUSATime | Looks up a localized string similar to Cannot convert a number to USA time format.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_DefaultString | Looks up a localized string similar to Host Services Exception. View Details, Message property.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_ExecuteStateException | Looks up a localized string similar to Cannot change ExecuteState to Running.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_FileOverrideOptionMismatchException | Looks up a localized string similar to Expecting '{0}' on override for '{1}'.. | 
@@ -179,6 +185,7 @@ StringOps( Int32 rank );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_LicenseExpiredException | Looks up a localized string similar to {5}{1}{27}{0}{24}{2}{18} {25}{24}{0}{11}{9}{19}{1}{24}{17} {20}{8}{2}{9}{27}{23}{9} {18}{0}{23} {9}{7}{13}{8}{24}{9}{10} {0}{27}{10} {21}{16}{12} {22}{28}{4}{15}{22}{14}{4} {20}{8}{2}{9}{27}{23}{9} {8}{23} {27}{1}{3} {26}{0}{20}{8}{10}{15}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_LicenseInvalidException | Looks up a localized string similar to {4}{1}{10}{0}{25}{1}{2} {17}{21}{8}{24}{2}{18}{25} {15}{2}{24}{7}{1}{13}{21}{2}{22} {6}{10}{18}{1}{8}{9}{1} {8}{21}{2} {20}{14}{16} {19}{5}{23}{12}{19}{11}{23} {6}{10}{18}{1}{8}{9}{1} {10}{9} {3}{24}{6}{10}{26}{12}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_MessageQueueNotFoundException | Looks up a localized string similar to Program Message Queue {0} Not found in invocation stack.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_MoreKeyPartsGiven | Looks up a localized string similar to The count of actual key parts given is larger than the size of the key.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_NoDeviceAvailableException | Looks up a localized string similar to There is no DEVICE available for '{0}' operation.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_RecursiveCallException | Looks up a localized string similar to Recursive call attempted when calling program {0}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Error_ServerTerminatedException | Looks up a localized string similar to The Server will terminate.. | 
@@ -206,6 +213,7 @@ StringOps( Int32 rank );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionDuplicateField | Looks up a localized string similar to Field '{0}' was specified more than once in {1}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionEditCodeW | Looks up a localized string similar to Edit code 'W' must have a length no less than 5 and no greater than 8.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionEditCodeY | Looks up a localized string similar to Edit code 'Y' must have a length no less than 3 and no greater than 9.. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionEndRequest | Looks up a localized string similar to EndRequest. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionFieldNotFound | Looks up a localized string similar to {0} was not found in format '{1}' of {2}.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionFileAlreadyOpen | Looks up a localized string similar to File {0} is already open.. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExceptionFileNotOpen | Looks up a localized string similar to File {0} is not open.. | 
@@ -275,6 +283,7 @@ StringOps( Int32 rank );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Adjust](#adjuststring-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Adjusts the length of a string to a given value, by padding or truncating the left of the string. | The string at the desired length.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -285,6 +294,32 @@ StringOps( Int32 rank );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MergeRightString](#mergerightstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | This is like doing an RPG Move(Right) of source into target (returning target) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
+
+<br>
+<br>
+
+### Adjust([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Adjusts the length of a string to a given value, by padding or truncating the left of the string.
+
+```cs
+Adjust(String source, Int32 length, Boolean padLeft);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The string to adjust. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The desired length. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | padLeft | True to pad/truncate on the left, false to pad/truncate on the right. 
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+The string at the desired length.
+
 
 <br>
 <br>

@@ -23,8 +23,9 @@ Defines the basic set of operations for a data structure.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | BufferDescription | Returns the flat description of the data structure buffer. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of the data structure. | 
-| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Layout | Gets the layout of the data structure. | 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Fields | Gets the fields composing the data structure. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the data structure. | 
 
 <br>

@@ -53,7 +53,7 @@ IndicatorArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int3
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the Indicator element at that position. | index /* Index of the desired element. */
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the Indicator element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the total number of elements in the array. | 
 | [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SkipPositions | For non-contiguous arrays, gets the number of buffer positions between consecutive array elements. 0 otherwise. | 
@@ -67,7 +67,7 @@ IndicatorArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int3
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Sets all array elements to '0' (*OFF). | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromindicator[]-int32)([Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from an Indicator[] into this array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromindicator[]-int32)([Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from an Indicator[] into this array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromchar[]-int32)([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a char[] into this array. | 
 | [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
@@ -89,7 +89,7 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([Indicator[]](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copies elements from an Indicator[] into this array.
 
@@ -101,7 +101,7 @@ CopyFrom(ASNA.QSys.Runtime.Indicator[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator[]](/reference/asna-qsys-runtime/indicator.html) | sourceArray | The array to copy from. 
+| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 

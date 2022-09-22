@@ -53,8 +53,9 @@ DecimalOps(  );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixateDecimal](#fixatedecimalint32-int32-decimal-boolean)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixateDecimal](#fixatedecimaldecimal-int32-int32-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixateI4](#fixatei4int32-int32-int32-boolean)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixDecimal](#fixdecimaldecimal-int32-int32-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixDecimalH](#fixdecimalhdecimal-int32-int32-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals using half adjust. | Fixed-length numeric result.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixI4](#fixi4int32-int32-int32-boolean)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetIndicators](#getindicatorsdecimal-boolean-boolean-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the HI-LO-EQ indicator conditions. | 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
@@ -157,12 +158,12 @@ Fixed-length numeric result.
 <br>
 <br>
 
-### FixateDecimal([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### FixDecimal([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Formats a numeric value by fixing the number of digits and decimals.
 
 ```cs
-FixateDecimal(Decimal number, Int32 digits, Int32 decimals, Boolean checkOverflow);
+FixDecimal(Decimal number, Int32 digits, Int32 decimals, Boolean checkOverflow);
 ```
 
 #### Parameters
@@ -184,12 +185,39 @@ Fixed-length numeric result.
 <br>
 <br>
 
-### FixateI4([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### FixDecimalH([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Formats a numeric value by fixing the number of digits and decimals using half adjust.
+
+```cs
+FixDecimalH(Decimal number, Int32 digits, Int32 decimals, Boolean checkOverflow);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | number | Input value. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | Number of digits. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | checkOverflow | True if overflow is to be checked; False otherwise. 
+
+#### Returns
+
+[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+
+Fixed-length numeric result.
+
+
+<br>
+<br>
+
+### FixI4([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Formats a numeric value by fixing the number of digits and decimals.
 
 ```cs
-FixateI4(Int32 digits, Int32 decimals, Int32 number, Boolean checkOverflow);
+FixI4(Int32 digits, Int32 decimals, Int32 number, Boolean checkOverflow);
 ```
 
 #### Parameters

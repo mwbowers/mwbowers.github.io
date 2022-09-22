@@ -2,7 +2,7 @@
 title: CPF210EException Class
 ---
 
-The exception that is thrown when: Library -library-name- not available for reason code -reason-code-.
+The exception that is thrown when Library {0} not available for reason code {1}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Library -library-name- not available for reas
 
 ## Remarks
 
-The exception that is thrown when: Library -library-name- not available for reason code -reason-code-.
+The exception that is thrown when Library {0} not available for reason code {1}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Library -library-name- not available for reas
 
 | Name |  Description 
 | --- | --- 
-| **CPF210EException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name-, reason and inner-exception. Sets message to: Library -library-name- not available for reason code -reason-code-.
+| **CPF210EException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF210EException class.
 
 <br>
 
 ### CPF210EException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name-, reason and inner-exception. Sets message to: Library -library-name- not available for reason code -reason-code-.
+Initializes a new instance of the CPF210EException class.
 
 ```cs
 CPF210EException( String folder, String reason, Exception innerException );

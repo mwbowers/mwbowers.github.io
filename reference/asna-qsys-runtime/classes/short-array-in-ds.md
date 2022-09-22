@@ -74,6 +74,7 @@ ShortArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 sk
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromint16[]-int32)([Int16[]](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a short[] into this array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyTimeToStamp](#copytimetostampdatetime-datetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Copy theTime to the time portion of theStamp. | CopyTimeToStamp returns.
 | [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInitialDate](#getinitialdatedatetimeformat)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Gets the value of *DATE/UDATE depending on the given format. Use the proper format to obtain either a 6 (UDATE) or an 8 (*DATE) digit value. | The decimal number representing *DATE/UDATE for the given format.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [System#Collections#IEnumerable#GetEnumerator](#system#collections#ienumerable#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
@@ -218,6 +219,24 @@ GetEnumerator();
 [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html)
 
 An enumerator that can be used to iterate through the array.
+
+
+<br>
+<br>
+
+### GetInitialDate([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+
+Gets the value of *DATE/UDATE depending on the given format. Use the proper format to obtain either a 6 (UDATE) or an 8 (*DATE) digit value.
+
+```cs
+GetInitialDate(ASNA.DataGate.Common.DateTimeFormat format);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value that represents the *DATE/UDATE value. 
 
 
 <br>

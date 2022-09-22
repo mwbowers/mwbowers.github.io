@@ -2,7 +2,7 @@
 title: CPF2166Exception Class
 ---
 
-The exception that is thrown when: Library name -library-name- not valid.
+The exception that is thrown when Library name {0} not valid.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Library name -library-name- not valid.
 
 ## Remarks
 
-The exception that is thrown when: Library name -library-name- not valid.
+The exception that is thrown when Library name {0} not valid.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Library name -library-name- not valid.
 
 | Name |  Description 
 | --- | --- 
-| **CPF2166Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes -library-name- and -inner-exception-. Sets message to: Library name -library-name- not valid.
+| **CPF2166Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2166Exception class.
 
 <br>
 
 ### CPF2166Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes -library-name- and -inner-exception-. Sets message to: Library name -library-name- not valid.
+Initializes a new instance of the CPF2166Exception class.
 
 ```cs
 CPF2166Exception( String folder, Exception innerException );

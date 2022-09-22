@@ -31,54 +31,53 @@ Extension methods for FixedTimestamp.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RoundUp](#roundupdouble-int32)([Double]($$TODO-Double.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RoundUp summary. | RoundUp returns.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-int16)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a character to a short. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-int32)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a character to an int. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-int64)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a character to a long. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-int16)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a character to a short with pad. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-int32)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a character to an int with pad. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-int64)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long with pad. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-int16)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a character to a short. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-int32)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a character to an int. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-int64)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-int16)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a character to a short with pad. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-int32)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a character to a int with pad. | returns the value of the move.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-int64)([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-int16)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a character to a short. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-int32)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a character to an int. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-int64)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a character to a long. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-int16)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a character to a short with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-int32)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a character to an int with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-int64)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-int16)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a character to a short. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-int32)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a character to an int. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-int64)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-int16)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a character to a short with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-int32)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a character to a int with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-int64)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long with pad. | returns the value of the move.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MergeDate\\`\\`1](#mergedate\`\`1fixedtimestamp{``0}-datetime)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merges a date into the date part of a timeStamp. | .NET DateTime value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MergeTime\\`\\`1](#mergetime\`\`1fixedtimestamp{``0}-datetime)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merges a time into the time part of a timeStamp. | .NET DateTime value.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-string)([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a character to a string with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftindicator-string)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a character to a string with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedtimestamp{``0}-string)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a DateTime to string. | returns a string value of the targetOperand.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedtimestamp{``0}-int16)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a datetime into a int2 (short). | short int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedtimestamp{``0}-int32)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a datetime into a int4 (int). | int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedtimestamp{``0}-int64)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a datetime into a int8 (long). | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVEL. Moves left a character to a decimal. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVEL. Moves left a character to a decimal. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`3](#moveleft\`\`3fixedtimestamp{``0}-fixeddecimal{``1-``2})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's MOVEL. Moves left a DateTime to decimal. | returns a decimal value of the targetOperand.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttocharindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | RPG's MOVEL. Moves left a character to a character. | returns the value of the move.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttocharindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's MOVEL. Moves left a character to a character. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftToChar\\`\\`1](#movelefttochar\`\`1fixedtimestamp{``0})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | RPG's MOVEL. Moves left a date, time, timestamp in the given format to a char value. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-string)([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a character to a string with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadindicator-string)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a character to a string with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedtimestamp{``0}-string)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a DateTime to string with pad. | returns a string value of the targetOperand.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedtimestamp{``0}-int16)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a datetime into a int2 (short) with pad. | short int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedtimestamp{``0}-int32)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a datetime into a int4 (int). | int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedtimestamp{``0}-int64)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a datetime into a int8 (long). | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVEL. Moves left a character to a decimal with pad. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVEL. Moves left a character to a decimal with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`3](#moveleftwithpad\`\`3fixedtimestamp{``0}-fixeddecimal{``1-``2})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's MOVEL. Moves left a DateTime to decimal with pad. | returns a decimal value of the targetOperand.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-string)([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a character to a string. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightindicator-string)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a character to a string. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedtimestamp{``0}-string)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a DateTime to string. | returns a string value of the targetOperand.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedtimestamp{``0}-int16)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a datetime into a int2 (short). | short int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedtimestamp{``0}-int32)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a datetime into a int4 (int). | int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedtimestamp{``0}-int64)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a datetime into a int8 (long). | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a character to a decimal. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a character to a decimal. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`3](#moveright\`\`3fixedtimestamp{``0}-fixeddecimal{``1-``2})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's MOVE. Moves right s DateTime to decimal. | returns a decimal value of the targetOperand.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttocharindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | RPG's MOVE. Moves right a character to a character. | returns the value of the move.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttocharindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's MOVE. Moves right a character to a character. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightToChar\\`\\`1](#moverighttochar\`\`1fixedtimestamp{``0})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | RPG's MOVE. Moves right a date, time, timestamp in the given format to a char value. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-string)([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a character to a string with pad. | returns the value of the move.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadindicator-string)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a character to a string with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedtimestamp{``0}-string)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a DateTime to string with pad. | returns a string value of the targetOperand.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedtimestamp{``0}-int16)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a datetime into a int2 (short) with pad. | short int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedtimestamp{``0}-int32)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a datetime into a int4 (int) with pad. | int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedtimestamp{``0}-int64)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a datetime into a int8 (long) with pad. | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a character to a decimal with pad. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2indicator-fixeddecimal{``0-``1})([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a character to a decimal with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`3](#moverightwithpad\`\`3fixedtimestamp{``0}-fixeddecimal{``1-``2})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's MOVE. Moves right a DateTime to decimal with pad. | returns a decimal value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [NormalizeYear\\`\\`1](#normalizeyear\`\`1fixedtimestamp{``0})([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | Turns a 4 digit year into a 2 digit year between 1940 and 2039 | .NET DateTime value.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RoundUp](#roundupsingle-int32)([Single]($$TODO-Single.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RoundUp summary. | RoundUp returns.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDuration\\`\\`1](#subtractduration\`\`1fixedtimestamp{``0}-double-durationcode)([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a date or a timestamp value. | .
@@ -138,7 +137,7 @@ RoundUp(Double number, Int32 decimals);
 <br>
 <br>
 
-### MoveLeft([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveLeft([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 RPG's MOVEL. Moves left a character to a short.
 
@@ -150,7 +149,7 @@ MoveLeft(ASNA.QSys.Runtime.Indicator character, Int16 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand respresents what is currently in the target of the move. 
 
 #### Returns
@@ -163,7 +162,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveLeft([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveLeft([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEL. Moves left a character to an int.
 
@@ -175,8 +174,8 @@ MoveLeft(ASNA.QSys.Runtime.Indicator character, Int32 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -188,7 +187,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveLeft([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveLeft([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
 RPG's MOVEL. Moves left a character to a long.
 
@@ -200,8 +199,8 @@ MoveLeft(ASNA.QSys.Runtime.Indicator character, Int64 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -213,7 +212,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 RPG's MOVEL. Moves left a character to a short with pad.
 
@@ -225,8 +224,8 @@ MoveLeftWithPad(ASNA.QSys.Runtime.Indicator character, Int16 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -238,7 +237,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEL. Moves left a character to an int with pad.
 
@@ -250,8 +249,8 @@ MoveLeftWithPad(ASNA.QSys.Runtime.Indicator character, Int32 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -263,7 +262,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
 RPG's MOVE. Moves right a character to a long with pad.
 
@@ -275,8 +274,8 @@ MoveLeftWithPad(ASNA.QSys.Runtime.Indicator character, Int64 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -288,7 +287,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRight([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveRight([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 RPG's MOVE. Moves right a character to a short.
 
@@ -300,8 +299,8 @@ MoveRight(ASNA.QSys.Runtime.Indicator character, Int16 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -313,7 +312,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRight([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveRight([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVE. Moves right a character to an int.
 
@@ -325,8 +324,8 @@ MoveRight(ASNA.QSys.Runtime.Indicator character, Int32 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -338,7 +337,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRight([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveRight([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
 RPG's MOVE. Moves right a character to a long.
 
@@ -350,8 +349,8 @@ MoveRight(ASNA.QSys.Runtime.Indicator character, Int64 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -363,7 +362,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 RPG's MOVE. Moves right a character to a short with pad.
 
@@ -375,8 +374,8 @@ MoveRightWithPad(ASNA.QSys.Runtime.Indicator character, Int16 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -388,7 +387,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVE. Moves right a character to a int with pad.
 
@@ -400,8 +399,8 @@ MoveRightWithPad(ASNA.QSys.Runtime.Indicator character, Int32 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -413,7 +412,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
 RPG's MOVE. Moves right a character to a long with pad.
 
@@ -425,8 +424,8 @@ MoveRightWithPad(ASNA.QSys.Runtime.Indicator character, Int64 targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -476,7 +475,7 @@ MergeTime``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, DateTime time);
 <br>
 <br>
 
-### MoveLeft([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveLeft([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 RPG's MOVEL. Moves left a character to a string with pad.
 
@@ -488,8 +487,8 @@ MoveLeft(ASNA.QSys.Runtime.Indicator character, String targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -577,7 +576,7 @@ MoveLeft``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, Int64 targetOperand
 <br>
 <br>
 
-### MoveLeft\`\`2([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveLeft\`\`2([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
 
 RPG's MOVEL. Moves left a character to a decimal.
 
@@ -589,8 +588,8 @@ MoveLeft``2(ASNA.QSys.Runtime.Indicator character, ASNA.QSys.Runtime.FixedDecima
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 
 <br>
@@ -615,7 +614,7 @@ MoveLeft``3(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, ASNA.QSys.Runtime.F
 <br>
 <br>
 
-### MoveLeftToChar([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### MoveLeftToChar([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's MOVEL. Moves left a character to a character.
 
@@ -627,7 +626,7 @@ MoveLeftToChar(ASNA.QSys.Runtime.Indicator character);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
 
 #### Returns
 
@@ -657,7 +656,7 @@ MoveLeftToChar``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
 <br>
 <br>
 
-### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveLeftWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 RPG's MOVEL. Moves left a character to a string with pad.
 
@@ -669,8 +668,8 @@ MoveLeftWithPad(ASNA.QSys.Runtime.Indicator character, String targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -758,7 +757,7 @@ MoveLeftWithPad``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, Int64 target
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveLeftWithPad\`\`2([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
 
 RPG's MOVEL. Moves left a character to a decimal with pad.
 
@@ -770,8 +769,8 @@ MoveLeftWithPad``2(ASNA.QSys.Runtime.Indicator character, ASNA.QSys.Runtime.Fixe
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 
 <br>
@@ -796,7 +795,7 @@ MoveLeftWithPad``3(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, ASNA.QSys.Ru
 <br>
 <br>
 
-### MoveRight([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveRight([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 RPG's MOVE. Moves right a character to a string.
 
@@ -808,8 +807,8 @@ MoveRight(ASNA.QSys.Runtime.Indicator character, String targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -897,7 +896,7 @@ MoveRight``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, Int64 targetOperan
 <br>
 <br>
 
-### MoveRight\`\`2([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveRight\`\`2([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
 
 RPG's MOVE. Moves right a character to a decimal.
 
@@ -909,8 +908,8 @@ MoveRight``2(ASNA.QSys.Runtime.Indicator character, ASNA.QSys.Runtime.FixedDecim
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 
 <br>
@@ -935,7 +934,7 @@ MoveRight``3(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, ASNA.QSys.Runtime.
 <br>
 <br>
 
-### MoveRightToChar([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### MoveRightToChar([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's MOVE. Moves right a character to a character.
 
@@ -947,7 +946,7 @@ MoveRightToChar(ASNA.QSys.Runtime.Indicator character);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
 
 #### Returns
 
@@ -977,7 +976,7 @@ MoveRightToChar``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
 <br>
 <br>
 
-### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveRightWithPad([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 RPG's MOVE. Moves right a character to a string with pad.
 
@@ -989,8 +988,8 @@ MoveRightWithPad(ASNA.QSys.Runtime.Indicator character, String targetOperand);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 #### Returns
 
@@ -1078,7 +1077,7 @@ MoveRightWithPad``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, Int64 targe
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([Indicator](/reference/asna-qsys-runtime/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveRightWithPad\`\`2([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
 
 RPG's MOVE. Moves right a character to a decimal with pad.
 
@@ -1090,8 +1089,8 @@ MoveRightWithPad``2(ASNA.QSys.Runtime.Indicator character, ASNA.QSys.Runtime.Fix
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | character | A char that represents the source of the move. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand respresents what is currently in the target of the move. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | character | A char that represents the source of the move. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | targetOperand represents what is currently in the target of the move. 
 
 
 <br>
@@ -1111,24 +1110,6 @@ MoveRightWithPad``3(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp, ASNA.QSys.R
 | --- | --- | ---
 | [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html) | timeStamp | .NET DateTime type. 
 | [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | targetOperand | The targetOperand decimal. 
-
-
-<br>
-<br>
-
-### NormalizeYear\`\`1([FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html))
-
-Turns a 4 digit year into a 2 digit year between 1940 and 2039
-
-```cs
-NormalizeYear``1(ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html) | timeStamp | .NET DateTime value. 
 
 
 <br>

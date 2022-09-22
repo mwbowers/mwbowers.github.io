@@ -31,7 +31,41 @@ Defines operations for objects describing fields in a data structure.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | For arrays, the length on an array element. For scalars, this is the same as Length. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the field described by the layout. If the layout describes an array, the total length of all elements of the array. | 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | Separator | For date/time/timestamps, the enum value representing the data separator. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Skip | For OVERLAY arrays, the number of positions to skip between array elements. | 
 | [LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html) | Type | Gets an enum value that represents the type of the field. | 
+
+<br>
+<br>
+
+## Methods
+
+| Type | Name | Description | Return Description 
+| --- | --- | --- | --- 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Equality comparer. | True if the ILayouts are equivalent, i.e. if all of their properties correspondingly have the same values.
+
+<br>
+<br>
+
+### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Equality comparer.
+
+```cs
+Equals(Object obj);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object against which to compare. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+True if the ILayouts are equivalent, i.e. if all of their properties correspondingly have the same values.
+
 
 <br>
 <br>

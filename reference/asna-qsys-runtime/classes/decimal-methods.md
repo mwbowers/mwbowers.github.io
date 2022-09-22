@@ -68,10 +68,9 @@ ASNA.QSys.Runtime DecimalMethods class.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetDigits](#setdigitsdecimal-int32-int32-decimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetDigits](#setdigitsdecimal-int32-int32-decimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetDigits](#setdigitsdecimal-int32-int32-decimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdecimal-char-char-char)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdecimal-indicator-indicator-indicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqsingle-char-char-char)([Single]($$TODO-Single.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdouble-char-char-char)([Double]($$TODO-Double.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdecimal-indicator-indicator-indicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqsingle-indicator-indicator-indicator)([Single]($$TODO-Single.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdouble-indicator-indicator-indicator)([Double]($$TODO-Double.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumdecimal[])([Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Returns the added values of each element in the array. | the added value of every element in the array.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumsingle[])([Single[]]($$TODO-Single[].html)) | Returns the added values of each element in the array. | the added value of every element in the array.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumdouble[])([Double[]]($$TODO-Double[].html)) | Returns the added values of each element in the array. | the added value of every element in the array.
@@ -1083,34 +1082,7 @@ The decimal number after replacing digits.
 <br>
 <br>
 
-### SetHiLoEq([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-Sets the HI, LO, and EQ flags passed in, based on the value of num.
-
-```cs
-SetHiLoEq(Decimal num, ref Char hi, ref Char lo, ref Char eq);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | the number to test. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hi | the greater-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | lo | the less-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | eq | the equal flag. 
-
-#### Returns
-
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
-
-the same value that was passed in in num.
-
-
-<br>
-<br>
-
-### SetHiLoEq([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetHiLoEq([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
@@ -1123,9 +1095,9 @@ SetHiLoEq(Decimal num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 #### Returns
 
@@ -1137,12 +1109,12 @@ the same value that was passed in in num.
 <br>
 <br>
 
-### SetHiLoEq([Single]($$TODO-Single.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### SetHiLoEq([Single]($$TODO-Single.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
 ```cs
-SetHiLoEq(Single num, ref Char hi, ref Char lo, ref Char eq);
+SetHiLoEq(Single num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
@@ -1150,9 +1122,9 @@ SetHiLoEq(Single num, ref Char hi, ref Char lo, ref Char eq);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Single]($$TODO-Single.html) | num | the number to test. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hi | the greater-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | lo | the less-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 #### Returns
 
@@ -1164,12 +1136,12 @@ the same value that was passed in in num.
 <br>
 <br>
 
-### SetHiLoEq([Double]($$TODO-Double.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### SetHiLoEq([Double]($$TODO-Double.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
 ```cs
-SetHiLoEq(Double num, ref Char hi, ref Char lo, ref Char eq);
+SetHiLoEq(Double num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
@@ -1177,9 +1149,9 @@ SetHiLoEq(Double num, ref Char hi, ref Char lo, ref Char eq);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Double]($$TODO-Double.html) | num | the number to test. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hi | the greater-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | lo | the less-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 #### Returns
 

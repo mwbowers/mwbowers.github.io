@@ -2,7 +2,7 @@
 title: CPF2110Exception Class
 ---
 
-The exception that is thrown when: Library -library-name- not found.
+The exception that is thrown when Library {0} not found.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Library -library-name- not found.
 
 ## Remarks
 
-The exception that is thrown when: Library -library-name- not found.
+The exception that is thrown when Library {0} not found.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Library -library-name- not found.
 
 | Name |  Description 
 | --- | --- 
-| **CPF2110Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name-. Sets message to: Library -library-name- not found.
+| **CPF2110Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2110Exception class.
 
 <br>
 
 ### CPF2110Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name-. Sets message to: Library -library-name- not found.
+Initializes a new instance of the CPF2110Exception class.
 
 ```cs
 CPF2110Exception( String folder, Exception innerException );

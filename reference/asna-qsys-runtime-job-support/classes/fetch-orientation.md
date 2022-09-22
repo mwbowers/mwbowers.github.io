@@ -101,7 +101,7 @@ FetchOrientation( Data.Common.DbConnection sqlConnection, String selectStatement
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes the Cursor. Does not throw error if the cursor had not been opened. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Fetch](#fetchint32-fetchorientation)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html)) | Fetches rows according to the orientation requested. | True if the fetch was successful.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Fetch](#fetchint32-fetchorientation)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html)) | Fetches a row according to the orientation requested. | True if the fetch was successful.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FetchAbsolute](#fetchabsoluteint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows until it gets to the indicated absolute row. | True if the fetch was successful.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FetchRelative](#fetchrelativeint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows in a relative way. | True if the fetch was successful.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendbparm[])([DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Opens the Cursor using the parameters passed in. | 
@@ -125,7 +125,7 @@ Close();
 
 ### Fetch([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html))
 
-Fetches rows according to the orientation requested.
+Fetches a row according to the orientation requested.
 
 ```cs
 Fetch(Int32 expectedResults, ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrientation orientation);
@@ -135,7 +135,7 @@ Fetch(Int32 expectedResults, ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrien
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | Expected number of rows read after operation. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | Expected field count available after operation. 
 | [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html) | orientation | Orientation specification. 
 
 

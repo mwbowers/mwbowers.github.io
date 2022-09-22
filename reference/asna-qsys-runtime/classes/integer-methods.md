@@ -112,12 +112,9 @@ Contains extension methods for handling Integer conversions.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int2 (short) to a string with pad. | .
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int4 (int) to a string with pad. | .
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint16-char-char-char)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint16-indicator-indicator-indicator)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint32-char-char-char)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint32-indicator-indicator-indicator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint64-char-char-char)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint64-indicator-indicator-indicator)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint16-indicator-indicator-indicator)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint32-indicator-indicator-indicator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint64-indicator-indicator-indicator)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [Sum](#sumint16[])([Int16[]](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Returns the added values of each element in the array. | the added value of every element in the array.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [Sum](#sumint32[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns the added values of each element in the array. | the added value of every element in the array.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [Sum](#sumint64[])([Int64[]](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Returns the added values of each element in the array. | the added value of every element in the array.
@@ -2211,34 +2208,7 @@ MoveRightWithPad(Int32 num, String targetOperand);
 <br>
 <br>
 
-### SetHiLoEq([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-Sets the HI, LO, and EQ flags passed in, based on the value of num.
-
-```cs
-SetHiLoEq(Int16 num, ref Char hi, ref Char lo, ref Char eq);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | the number to test. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hi | the greater-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | lo | the less-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | eq | the equal flag. 
-
-#### Returns
-
-[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
-
-the same value that was passed in in num.
-
-
-<br>
-<br>
-
-### SetHiLoEq([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetHiLoEq([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
@@ -2251,9 +2221,9 @@ SetHiLoEq(Int16 num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.I
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 #### Returns
 
@@ -2265,34 +2235,7 @@ the same value that was passed in in num.
 <br>
 <br>
 
-### SetHiLoEq([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-Sets the HI, LO, and EQ flags passed in, based on the value of num.
-
-```cs
-SetHiLoEq(Int32 num, ref Char hi, ref Char lo, ref Char eq);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | the number to test. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hi | the greater-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | lo | the less-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | eq | the equal flag. 
-
-#### Returns
-
-[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
-
-the same value that was passed in in num.
-
-
-<br>
-<br>
-
-### SetHiLoEq([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetHiLoEq([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
@@ -2305,9 +2248,9 @@ SetHiLoEq(Int32 num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.I
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 #### Returns
 
@@ -2319,34 +2262,7 @@ the same value that was passed in in num.
 <br>
 <br>
 
-### SetHiLoEq([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-Sets the HI, LO, and EQ flags passed in, based on the value of num.
-
-```cs
-SetHiLoEq(Int64 num, ref Char hi, ref Char lo, ref Char eq);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | the number to test. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | hi | the greater-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | lo | the less-than-zero flag. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | eq | the equal flag. 
-
-#### Returns
-
-[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
-
-the same value that was passed in in num.
-
-
-<br>
-<br>
-
-### SetHiLoEq([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetHiLoEq([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
@@ -2359,9 +2275,9 @@ SetHiLoEq(Int64 num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.I
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 #### Returns
 

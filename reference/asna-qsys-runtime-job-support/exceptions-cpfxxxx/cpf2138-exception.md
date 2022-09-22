@@ -2,7 +2,7 @@
 title: CPF2138Exception Class
 ---
 
-The exception that is thrown when: Creation of library -library-name- not allowed.
+The exception that is thrown when Creation of library {0} not allowed.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Creation of library -library-name- not allowe
 
 ## Remarks
 
-The exception that is thrown when: Creation of library -library-name- not allowed.
+The exception that is thrown when Creation of library {0} not allowed.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Creation of library -library-name- not allowe
 
 | Name |  Description 
 | --- | --- 
-| **CPF2138Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and -inner-exception-. Sets message to: Creation of library -library-name- not allowed.
+| **CPF2138Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2138Exception class.
 
 <br>
 
 ### CPF2138Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and -inner-exception-. Sets message to: Creation of library -library-name- not allowed.
+Initializes a new instance of the CPF2138Exception class.
 
 ```cs
 CPF2138Exception( String folder, Exception innerException );

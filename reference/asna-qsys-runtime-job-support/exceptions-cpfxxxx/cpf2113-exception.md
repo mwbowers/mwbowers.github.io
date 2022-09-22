@@ -2,7 +2,7 @@
 title: CPF2113Exception Class
 ---
 
-The exception that is thrown when: Cannot allocate library -library-name-.
+The exception that is thrown when Cannot allocate library {0}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Cannot allocate library -library-name-.
 
 ## Remarks
 
-The exception that is thrown when: Cannot allocate library -library-name-.
+The exception that is thrown when Cannot allocate library {0}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Cannot allocate library -library-name-.
 
 | Name |  Description 
 | --- | --- 
-| **CPF2113Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and -inner-exception-. Sets message to: Cannot allocate library -library-name-.
+| **CPF2113Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2113Exception class.
 
 <br>
 
 ### CPF2113Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and -inner-exception-. Sets message to: Cannot allocate library -library-name-.
+Initializes a new instance of the CPF2113Exception class.
 
 ```cs
 CPF2113Exception( String folder, Exception innerException );

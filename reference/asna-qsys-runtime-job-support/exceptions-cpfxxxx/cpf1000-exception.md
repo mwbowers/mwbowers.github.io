@@ -25,13 +25,13 @@ Defines the core behavior of CPF10xx exceptions.
 
 | Name |  Description 
 | --- | --- 
-| **CPF1000Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Base class for CPF1000 Range exceptions.
+| **CPF1000Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF1000Exception class.
 
 <br>
 
 ### CPF1000Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Base class for CPF1000 Range exceptions.
+Initializes a new instance of the CPF1000Exception class.
 
 ```cs
 CPF1000Exception( String inner, Exception message );

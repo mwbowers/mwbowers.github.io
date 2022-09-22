@@ -2,7 +2,7 @@
 title: CPF2161Exception Class
 ---
 
-The exception that is thrown when: Cannot delete some objects in library -library-name-.
+The exception that is thrown when Cannot delete some objects in library {0}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Cannot delete some objects in library -librar
 
 ## Remarks
 
-The exception that is thrown when: Cannot delete some objects in library -library-name-.
+The exception that is thrown when Cannot delete some objects in library {0}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Cannot delete some objects in library -librar
 
 | Name |  Description 
 | --- | --- 
-| **CPF2161Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and -inner-exception-. Sets the message to: Cannot delete some objects in library -library-name-.
+| **CPF2161Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2161Exception class.
 
 <br>
 
 ### CPF2161Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and -inner-exception-. Sets the message to: Cannot delete some objects in library -library-name-.
+Initializes a new instance of the CPF2161Exception class.
 
 ```cs
 CPF2161Exception( String folder, Exception innerException );

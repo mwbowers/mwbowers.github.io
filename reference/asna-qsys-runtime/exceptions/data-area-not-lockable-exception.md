@@ -25,13 +25,13 @@ DataArea Exception issued when a DataArea fails to Unlock.
 
 | Name |  Description 
 | --- | --- 
-| **DataAreaNotLockableException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes the name of the DataArea and in inner exception. Sets the message to: Data area -data-area-name- could not be locked.
+| **DataAreaNotLockableException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Creates a DataAreaNotLockableException object, with an inner exception. Sets the message to: Data area -data-area-name- could not be locked.
 
 <br>
 
 ### DataAreaNotLockableException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes the name of the DataArea and in inner exception. Sets the message to: Data area -data-area-name- could not be locked.
+Creates a DataAreaNotLockableException object, with an inner exception. Sets the message to: Data area -data-area-name- could not be locked.
 
 ```cs
 DataAreaNotLockableException( String name, Exception e );

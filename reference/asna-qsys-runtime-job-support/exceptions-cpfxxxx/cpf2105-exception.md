@@ -2,7 +2,7 @@
 title: CPF2105Exception Class
 ---
 
-The exception that is thrown when: Object -object-name- in -library-name- type -object-type- not found.
+The exception that is thrown when Object {1} in {0} type {2} not found.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Object -object-name- in -library-name- type -
 
 ## Remarks
 
-The exception that is thrown when: Object -object-name- in -library-name- type -object-type- not found.
+The exception that is thrown when Object {1} in {0} type {2} not found.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Object -object-name- in -library-name- type -
 
 | Name |  Description 
 | --- | --- 
-| **CPF2105Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name-, -object-name-, -object-type- and -inner-exception. Sets messaage to: Object -object-name- in -library-name- type -object-type- not found.
+| **CPF2105Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2105Exception class.
 
 <br>
 
 ### CPF2105Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name-, -object-name-, -object-type- and -inner-exception. Sets messaage to: Object -object-name- in -library-name- type -object-type- not found.
+Initializes a new instance of the CPF2105Exception class.
 
 ```cs
 CPF2105Exception( String folder, String obj, String type, Exception innerException );

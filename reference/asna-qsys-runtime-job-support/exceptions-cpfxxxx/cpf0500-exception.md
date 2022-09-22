@@ -2,7 +2,7 @@
 title: CPF0500Exception Class
 ---
 
-Base class for CPF05xx Range exceptions.
+Defines the core behavior of CPF05xx exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Base class for CPF05xx Range exceptions.
 
 ## Remarks
 
-Base class for CPF05xx Range exceptions.
+Defines the core behavior of CPF05xx exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

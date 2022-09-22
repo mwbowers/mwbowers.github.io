@@ -2,7 +2,7 @@
 title: CPF2100Exception Class
 ---
 
-Base class for CPF2100 range exceptions.
+Defines the core behavior of CPF21xx exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Base class for CPF2100 range exceptions.
 
 ## Remarks
 
-Base class for CPF2100 range exceptions.
+Defines the core behavior of CPF21xx exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ Base class for CPF2100 range exceptions.
 
 | Name |  Description 
 | --- | --- 
-| **CPF2100Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes inner-exception and exception-message.
+| **CPF2100Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2100Exception class.
 
 <br>
 
 ### CPF2100Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes inner-exception and exception-message.
+Initializes a new instance of the CPF2100Exception class.
 
 ```cs
 CPF2100Exception( String inner, Exception message );

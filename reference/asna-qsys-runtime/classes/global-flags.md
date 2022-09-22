@@ -2,7 +2,7 @@
 title: GlobalFlags Class
 ---
 
-Summary description for GlobalFlags.
+Holds the application flags that correspond to RPG's %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,9 +14,21 @@ Summary description for GlobalFlags.
 
 ## Remarks
 
-Summary description for GlobalFlags.
+Holds the application flags that correspond to RPG's %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread.
 
 [//]: # ($$TODO: Complete the Remarks section.)
+
+<br>
+<br>
+
+## Properties
+
+| Type | Name | Description | Indexer
+| --- | --- | --- | --- 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | EOF | Thread local EOF flag (RPG's %EOF) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Equal | Thread local equal flag (RPG's %EQUAL) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Error | Thread local error flag (RPG's %ERROR) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | NotFound | Thread local not found flag (RPG's *not %FOUND) | 
 
 <br>
 <br>
@@ -32,6 +44,15 @@ Summary description for GlobalFlags.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
+
+<br>
+<br>
+
+## Fields
+
+| Type | Name | Description
+| --- | --- | --- 
+| [GlobalFlagProperty](/reference/asna-qsys-runtime/classes/global-flag-property.html) | GlobalFlag | Property to access global flags using case-insensitive names.
 
 <br>
 <br>

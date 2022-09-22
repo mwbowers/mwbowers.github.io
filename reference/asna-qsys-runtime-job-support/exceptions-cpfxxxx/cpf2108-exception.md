@@ -2,7 +2,7 @@
 title: CPF2108Exception Class
 ---
 
-The exception that is thrown when: Object -object-name- type -object-type- not added to library -library-name-.
+The exception that is thrown when Object {1} type {2} not added to library {0}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Object -object-name- type -object-type- not a
 
 ## Remarks
 
-The exception that is thrown when: Object -object-name- type -object-type- not added to library -library-name-.
+The exception that is thrown when Object {1} type {2} not added to library {0}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Object -object-name- type -object-type- not a
 
 | Name |  Description 
 | --- | --- 
-| **CPF2108Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name-, -object-name-, -object-type- and -inner-exception-. Sets message to: Object -object-name- type -object-type- not added to library -library-name-.
+| **CPF2108Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2108Exception class.
 
 <br>
 
 ### CPF2108Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name-, -object-name-, -object-type- and -inner-exception-. Sets message to: Object -object-name- type -object-type- not added to library -library-name-.
+Initializes a new instance of the CPF2108Exception class.
 
 ```cs
 CPF2108Exception( String folder, String obj, String type, Exception innerException );

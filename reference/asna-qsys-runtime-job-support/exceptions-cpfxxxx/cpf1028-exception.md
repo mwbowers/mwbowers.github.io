@@ -2,7 +2,7 @@
 title: CPF1028Exception Class
 ---
 
-The exception that is thrown when -system-value- not valid for parameter SYSVAL.
+The exception that is thrown when {0} not valid for parameter SYSVAL.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when -system-value- not valid for parameter SYSVAL.
 
 ## Remarks
 
-The exception that is thrown when -system-value- not valid for parameter SYSVAL.
+The exception that is thrown when {0} not valid for parameter SYSVAL.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when -system-value- not valid for parameter SYSVAL.
 
 | Name |  Description 
 | --- | --- 
-| **CPF1028Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes system-value and inner exception. Sets the message to: system-value- not valid for parameter SYSVAL.
+| **CPF1028Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF1028Exception class.
 
 <br>
 
 ### CPF1028Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes system-value and inner exception. Sets the message to: system-value- not valid for parameter SYSVAL.
+Initializes a new instance of the CPF1028Exception class.
 
 ```cs
 CPF1028Exception( String systemValue, Exception innerException );

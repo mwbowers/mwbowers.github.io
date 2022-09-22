@@ -2,7 +2,7 @@
 title: CPF210DException Class
 ---
 
-The exception that is thrown when: Library -library-name- in use.
+The exception that is thrown when Library {0} in use.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Library -library-name- in use.
 
 ## Remarks
 
-The exception that is thrown when: Library -library-name- in use.
+The exception that is thrown when Library {0} in use.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Library -library-name- in use.
 
 | Name |  Description 
 | --- | --- 
-| **CPF210DException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and inner-exception. Sets message to: Library -library-name- in use.
+| **CPF210DException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF210DException class.
 
 <br>
 
 ### CPF210DException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and inner-exception. Sets message to: Library -library-name- in use.
+Initializes a new instance of the CPF210DException class.
 
 ```cs
 CPF210DException( String folder, Exception innerException );

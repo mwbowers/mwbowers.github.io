@@ -25,79 +25,72 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AdjustEnd\\`\\`1](#adjustend\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the end of a string. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AdjustStart\\`\\`1](#adjuststart\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the start of a string. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AdjustVaryingLength\\`\\`1](#adjustvaryinglength\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Trims the end of a variable length string if needed so the string is at most as long as limit. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AdjustEnd\\`\\`1](#adjustend\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the length of a string, padding on the right if necessary. | The string at the desired length, after trimming or padding on the right.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AdjustStart\\`\\`1](#adjuststart\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the length of a string, padding on the left if necessary. | The string at the desired length, after trimming or padding on the left.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ApplyEditWord\\`\\`2](#applyeditword\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Applies an edit word to a FixedDecimal number. | The string containing the result of applying the edit work to the FixedDecimal number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIInt\\`\\`1](#biint\`\`1fixedstring{``0}-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Built-in function %INT, converts a string to an int number. | The integer value of the string.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIInt\\`\\`2](#biint\`\`2fixeddecimal{``0-``1}-boolean)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Built-in function %INT, converts a decimal number to an int number. | The integer value of the decimal number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BitOff](#bitoffbyte-string)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's BITOFF. | Returns the result of bitoff mask being applied to the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BitOn](#bitonbyte-string)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's BITON. | Returns the result of biton mask being applied to the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`1](#checkcharacters\`\`1fixedstring{``0}-string-int32-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`3](#checkcharacters\`\`3fixedstring{``0}-string-int32-ifixedarraybase{``1-``2}-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`4](#checkcharacters\`\`4fixedstring{``0}-string-int32-fixeddecimalarray{``1-``2-``3}-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimalArray{\\`\\`1,\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal-array{``1,``2,``3}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`1](#checkcharactersreverse\`\`1fixedstring{``0}-string-int32-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-ifixedarraybase{``1-``2}-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPosition\\`\\`1](#checkposition\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPositionReverse\\`\\`1](#checkpositionreverse\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`1](#checkcharacters\`\`1fixedstring{``0}-string-int32-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`3](#checkcharacters\`\`3fixedstring{``0}-string-int32-ifixedarraybase{``1-``2}-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`1](#checkcharactersreverse\`\`1fixedstring{``0}-string-int32-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-ifixedarraybase{``1-``2}-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPosition\\`\\`1](#checkposition\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPositionReverse\\`\\`1](#checkpositionreverse\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`1](#checkcharacters\`\`1fixedstring{``0}-string-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`1](#checkcharacters\`\`1fixedstring{``0}-string-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`1](#checkcharacters\`\`1fixedstring{``0}-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`1](#checkcharacters\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`3](#checkcharacters\`\`3fixedstring{``0}-string-int32-ifixedarraybase{``1-``2})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`3](#checkcharacters\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[])([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`1](#checkcharactersreverse\`\`1fixedstring{``0}-string-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`3](#checkcharacters\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[]-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharacters\\`\\`3](#checkcharacters\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[])([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`1](#checkcharactersreverse\`\`1fixedstring{``0}-string-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`1](#checkcharactersreverse\`\`1fixedstring{``0}-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`1](#checkcharactersreverse\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-ifixedarraybase{``1-``2})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[]-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[]-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckCharactersReverse\\`\\`3](#checkcharactersreverse\`\`3fixedstring{``0}-string-int32-fixeddecimal{``1-``2}[])([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPosition\\`\\`1](#checkposition\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPositionReverse\\`\\`1](#checkpositionreverse\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPosition\\`\\`1](#checkposition\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CheckPositionReverse\\`\\`1](#checkpositionreverse\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date/time type. | The value that results after the Move operation, as a DateTime value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a numeric string into an int8 (long). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short) with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int) with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`1](#moveleftwithpad\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date/time type. | The value that results after the Move operation, as a DateTime value.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long). | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedstring{``0}-int16)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short) with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int) with pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`1](#moverightwithpad\`\`1fixedstring{``0}-int64)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Replace\\`\\`1](#replace\`\`1fixedstring{``0}-string-int32-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Replace\\`\\`1](#replace\`\`1fixedstring{``0}-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replace T summary. | Replace returns.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found. | Returns the 1 based starting position of a match relative to the baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Replace\\`\\`1](#replace\`\`1fixedstring{``0}-string-int32-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Substitutes characters in a FixedString value based on position and length. | The string after the replacement.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Replace\\`\\`1](#replace\`\`1fixedstring{``0}-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %REPLACE. Replaces a length of characters in a FixedString value with a replacement string. | The string after the replacement.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %SCAN. Attempts to find cmpStr in the baseString. | Returns the 1-based starting position of a match relative to the baseString, or 0 if it was not found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string-int32-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`2](#scanstring\`\`2fixedstring{``1}-string-int32-int32-``0-char)([FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`3](#scanstring\`\`3fixedstring{``0}-string-int32-int32-ifixedarraybase{``1-``2}-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string-int32-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`2](#scanstring\`\`2fixedstring{``1}-string-int32-int32-``0-indicator)([FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`3](#scanstring\`\`3fixedstring{``0}-string-int32-int32-ifixedarraybase{``1-``2}-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`3](#scanstring\`\`3fixedstring{``0}-string-int32-int32-fixeddecimal{``1-``2}[])([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`3](#scanstring\`\`3fixedstring{``0}-string-int32-int32-fixeddecimal{``1-``2}[]-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStr\\`\\`1](#substr\`\`1fixedstring{``0}-int32-int32-string-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixed\\`\\`1](#substrfixed\`\`1fixedstring{``0}-int32-int32-string-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value of the result of the SubStr.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixedWithPad\\`\\`1](#substrfixedwithpad\`\`1fixedstring{``0}-int32-int32-string-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`3](#scanstring\`\`3fixedstring{``0}-string-int32-int32-fixeddecimal{``1-``2}[]-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStr\\`\\`1](#substr\`\`1fixedstring{``0}-int32-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixed\\`\\`1](#substrfixed\`\`1fixedstring{``0}-int32-int32-string-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value of the result of the SubStr.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixedWithPad\\`\\`1](#substrfixedwithpad\`\`1fixedstring{``0}-int32-int32-string-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDateTime\\`\\`1](#todatetime\`\`1fixedstring{``0}-datetimedatakind-datetimeformat-datetimeseparator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos. | The string value result of the translate.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's %Xlate. Translates baseString according to the values of mapFrom, mapTo, and startPos. The parameter errInd will indicate if there was an error in the operation. | The string resulting after the Xlate operation.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length. | The string value of the result of the Xlate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-string-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length. | The string value of the result of the Xlate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixed\\`\\`1](#xlatefixed\`\`1fixedstring{``0}-int32-string-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos. | The string value result of the translate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixed\\`\\`1](#xlatefixed\`\`1fixedstring{``0}-string-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad. | The string value of the result of the Xlate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixed\\`\\`1](#xlatefixed\`\`1fixedstring{``0}-string-string-string-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad. | The string value of the result of the Xlate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixedWithPad\\`\\`1](#xlatefixedwithpad\`\`1fixedstring{``0}-string-string-string-int32-char)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, with padding. | The string value of the result of the Xlate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FromStringBinary\\`\\`1](#fromstringbinary\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (binary) decimal number based on its 'memory' representation. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FromStringPacked\\`\\`1](#fromstringpacked\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (packed) decimal number based on its 'memory' representation. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FromStringZoned\\`\\`1](#fromstringzoned\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (zoned) decimal number based on its 'memory' representation. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-string-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length. | The string value of the result of the Xlate.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixed\\`\\`1](#xlatefixed\`\`1fixedstring{``0}-string-string-string-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad. | The string value of the result of the Xlate.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixedWithPad\\`\\`1](#xlatefixedwithpad\`\`1fixedstring{``0}-string-string-string-int32-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, with padding. | The string value of the result of the Xlate.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FromStringBinary\\`\\`1](#fromstringbinary\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a decimal number based on its binary 'memory' representation. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FromStringPacked\\`\\`1](#fromstringpacked\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a decimal number based on its packed 'memory' representation. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FromStringZoned\\`\\`1](#fromstringzoned\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a decimal number based on its zoned 'memory' representation. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [IsBlanks\\`\\`1](#isblanks\`\`1fixedstring{``0})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html)) | Tests a string to see if it's spaces. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [IsBlanks\\`\\`1](#isblanks\`\`1fixedstring{``0})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html)) | Tests a string to see if it's all blanks (' '). | True if the string contains blanks.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with or without pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | returns a string value of the target.
@@ -137,43 +130,39 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`4](#moverightwithpad\`\`4fixeddecimal{``0-``1}-fixeddecimal{``2-``3})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal with pad. | The result of moving right the source value to the target value as a decimal number, padding with zeros if necessary.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray\\`\\`2](#movetoarray\`\`2fixedstring{``0}-``1[]-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [\\`\\`1[]]($$TODO-``1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray\\`\\`3](#movetoarray\`\`3fixedstring{``0}-ifixedarraybase{``1-``2}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad\\`\\`2](#movetoarraywithpad\`\`2fixedstring{``0}-ifixedsizetype{``1}[]-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedSizeType{\\`\\`1}[]](/reference/asna-qsys-runtime/i-fixed-size-type{``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad\\`\\`2](#movetoarraywithpad\`\`2fixedstring{``0}-``1[]-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [\\`\\`1[]]($$TODO-``1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad\\`\\`3](#movetoarraywithpad\`\`3fixedstring{``0}-ifixedarraybase{``1-``2}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Replace\\`\\`1](#replace\`\`1fixedstring{``0}-string-int32-int32-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReplaceFixed\\`\\`1](#replacefixed\`\`1fixedstring{``0}-int32-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | ReplaceFixed T summary. | ReplaceFixed returns.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found. | Returns the 1 based starting position of a match relative to the baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Replace\\`\\`1](#replace\`\`1fixedstring{``0}-string-int32-int32-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | The string after the replacement.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReplaceFixed\\`\\`1](#replacefixed\`\`1fixedstring{``0}-int32-string-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %REPLACE. Replaces a length of characters in a FixedString value with a replacement string. | The string after the replacement and length adjustment.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1fixedstring{``0}-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SCAN. Attempts to find cmpStr in the baseString. | Returns the 1-based starting position of a match relative to the baseString, or 0 if it was not found.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`2](#scanstring\`\`2fixedstring{``1}-string-int32-int32-``0)([FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`3](#scanstring\`\`3fixedstring{``0}-string-int32-int32-ifixedarraybase{``1-``2})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq\\`\\`1](#sethiloeq\`\`1fixedstring{``0}-indicator-indicator-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Sets the flags according to the value of testString. | The test value.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq\\`\\`2](#sethiloeq\`\`2fixeddecimal{``0-``1}-indicator-indicator-indicator)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of source. | the same value that was passed in in source.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetVaryingLength\\`\\`1](#setvaryinglength\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the variable length string to the indicated length, ensuring that it's no longer than limit. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStr\\`\\`1](#substr\`\`1fixedstring{``0}-int32-int32-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | The string value of the result of the SubStr.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq\\`\\`1](#sethiloeq\`\`1fixedstring{``0}-indicator-indicator-indicator)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the flags according to the value of testString. | The test value.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq\\`\\`2](#sethiloeq\`\`2fixeddecimal{``0-``1}-indicator-indicator-indicator)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of source. | the same value that was passed in in source.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStr\\`\\`1](#substr\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | The string value of the result of the SubStr.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixed\\`\\`1](#substrfixed\`\`1fixedstring{``0}-int32-int32-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value of the result of the SubStr.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubStrFixedWithPad\\`\\`1](#substrfixedwithpad\`\`1fixedstring{``0}-int32-int32-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime\\`\\`2](#testtime\`\`2fixeddecimal{``0-``1}-datetimedatakind-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate\\`\\`2](#todate\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | ToDate summary. | ToDate returns.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate\\`\\`2](#todate\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Converts a fixed decimal number to a date in the specified format. | The date value as a DateTime object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDateTime\\`\\`1](#todatetime\`\`1fixedstring{``0}-ifixeddatetime)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDecimal\\`\\`1](#todecimal\`\`1``0)([\\`\\`0]($$TODO-``0.html)) | Converts a value of type TDigits to decimal. | The conversion of the value to decimal.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`1](#tofixeddecimal\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a numeric string into a RPG decimal. | decimal representation of given string.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`2](#tofixeddecimal\`\`2fixeddecimal{``0-``1}-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a FixedDecimal number. | The FixedDecimal as a decimal number in the desired size.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`2](#tofixeddecimal\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Truncates a FixedDecimal to the specified number of decimal positions. | The FixedDecimal as a decimal number truncated to the desired number of decimal positions.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`1](#tofixeddecimal\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a numeric string into a RPG decimal. | Decimal equivalent of the given string.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimalRounded\\`\\`1](#tofixeddecimalrounded\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a numeric string into a RPG decimal with rounding (half adjust). | decimal representation of given string.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimalRounded\\`\\`2](#tofixeddecimalrounded\`\`2fixeddecimal{``0-``1}-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a FixedDecimal number using Away From Zero rounding. | The FixedDecimal as a decimal number in the desired size, rounding the last digit.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimalRounded\\`\\`2](#tofixeddecimalrounded\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds a FixedDecimal to the specified number of decimal positions using Away From Zero rounding. | The FixedDecimal as a decimal number rounding up to the desired number of decimal positions.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToPackedDecimal\\`\\`1](#topackeddecimal\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a string representing a packed number into a RPG decimal. | decimal packed representation of given string.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToPackedDecimal\\`\\`1](#topackeddecimal\`\`1fixedstring{``0}-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a string representing a packed decimal into a decimal number. | Decimal equivalent of the given string.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringBinary\\`\\`2](#tostringbinary\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a binary decimal number. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringPacked\\`\\`2](#tostringpacked\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a packed decimal number. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringZoned\\`\\`2](#tostringzoned\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a zoned decimal number. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTime\\`\\`2](#totime\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | ToTime TDigits, TDecimals summary. | ToTime returns.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTimestamp\\`\\`2](#totimestamp\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | ToTimestamp summary. | ToTimestamp returns.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToZonedDecimal\\`\\`1](#tozoneddecimal\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a zoned representation string into a RPG decimal. | decimal representation of given string.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %Xlate. Translates baseString according to the values of mapFrom, mapTo, and startPos. | The string value result of the translate.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixed\\`\\`1](#xlatefixed\`\`1fixedstring{``0}-int32-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos. | The string value result of the translate.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringBinary\\`\\`2](#tostringbinary\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a binary decimal number. | The string containing the in-memory representation of the binary decimal number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringPacked\\`\\`2](#tostringpacked\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a packed decimal number. | The string containing the in-memory representation of the packed number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringZoned\\`\\`2](#tostringzoned\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a zoned decimal number. | The string containing the in-memory representation of the zoned number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTime\\`\\`2](#totime\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Converts a fixed decimal number to a time in the specified format. | The time value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTimestamp\\`\\`2](#totimestamp\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Converts a fixed decimal number to a timestamp. | The timestamp value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToZonedDecimal\\`\\`1](#tozoneddecimal\`\`1fixedstring{``0}-int32-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a string representing a zoned decimal into a decimal number. | Decimal equivalent of the given string.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TrimEnd\\`\\`1](#trimend\`\`1fixedstring{``0})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html)) | Removes all the trailing white-space characters from the current string. | The string that remains after all white-space characters are removed from the end of the current string. If no characters can be trimmed from the current instance, the method returns the current instance unchanged.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TrimStart\\`\\`1](#trimstart\`\`1fixedstring{``0})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html)) | Removes all the leading white-space characters from the current string. | The string that remains after all white-space characters are removed from the end of the current string. If no characters can be trimmed from the current instance, the method returns the current instance unchanged.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Xlate\\`\\`1](#xlate\`\`1fixedstring{``0}-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %Xlate. Translates baseString according to the values of mapFrom, mapTo, and startPos. | The string resulting after the Xlate operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixed\\`\\`1](#xlatefixed\`\`1fixedstring{``0}-string-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad. | The string value of the result of the Xlate.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [XlateFixedWithPad\\`\\`1](#xlatefixedwithpad\`\`1fixedstring{``0}-string-string-string-int32)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, with padding. | The string value of the result of the Xlate.
 
 <br>
@@ -181,7 +170,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 
 ### AdjustEnd\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Adjusts the end of a string.
+Adjusts the length of a string, padding on the right if necessary.
 
 ```cs
 AdjustEnd``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 length);
@@ -191,8 +180,8 @@ AdjustEnd``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 length);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | any string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | number to adjust, if greater than length charStr will pad. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | The string to adjust. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The desired length. 
 
 
 <br>
@@ -200,7 +189,7 @@ AdjustEnd``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 length);
 
 ### AdjustStart\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Adjusts the start of a string.
+Adjusts the length of a string, padding on the left if necessary.
 
 ```cs
 AdjustStart``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 length);
@@ -210,27 +199,8 @@ AdjustStart``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 length);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | any string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | number to adjust, if greater than length charStr will pad the begining. 
-
-
-<br>
-<br>
-
-### AdjustVaryingLength\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Trims the end of a variable length string if needed so the string is at most as long as limit.
-
-```cs
-AdjustVaryingLength``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 limit);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | A variable length string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | limit | Maximum length allowed for the string. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | The string to adjust. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The desired length. 
 
 
 <br>
@@ -255,88 +225,12 @@ ApplyEditWord``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, String editwordStr
 <br>
 <br>
 
-### BIInt\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Built-in function %INT, converts a string to an int number.
-
-```cs
-BIInt``1(ASNA.QSys.Runtime.FixedString{``0} source, Boolean halfAdjust);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | source | Numeric string. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | Half adjust if the numeric string represents a decimal number. 
-
-
-<br>
-<br>
-
-### BIInt\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Built-in function %INT, converts a decimal number to an int number.
-
-```cs
-BIInt``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Boolean halfAdjust);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | decimal number. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | Half adjust the fractional part. 
-
-
-<br>
-<br>
-
-### BitOff([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's BITOFF.
-
-```cs
-BitOff(Byte target, String mask);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | target | A one-position character field. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mask | Bit numbers 0-7. Enclose the bit numbers in apostrophes. For example, to set bits 0, 3, 6 on, enter '036'. A valid character expression. 
-
-
-<br>
-<br>
-
-### BitOn([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's BITON.
-
-```cs
-BitOn(Byte target, String mask);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | target | A one-position character field. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mask | Bit numbers 0-7. Enclose the bit numbers in apostrophes. For example, to set bits 0, 3, 6 on, enter '036'. A valid character expression. 
-
-
-<br>
-<br>
-
-### CheckCharacters\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharacters\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref Int32 noMatch, ref Char err);
+CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref Int32 noMatch, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -345,20 +239,20 @@ CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### CheckCharacters\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharacters\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} noMatchArray, ref Char err);
+CheckCharacters``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} noMatchArray, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -367,42 +261,20 @@ CheckCharacters``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns the 1 based position of a non-match. The first index contains the position left most non-match. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### CheckCharacters\`\`4([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimalArray{\\`\\`1,\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal-array{``1,``2,``3}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
-
-```cs
-CheckCharacters``4(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.FixedDecimalArray{``1,``2,``3} noMatchArray, ref Char err);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [FixedDecimalArray{\\`\\`1,\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal-array{``1,``2,``3}.html) | noMatchArray | Returns the 1 based position of a non-match. The first index contains the position left most non-match. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
-
-
-<br>
-<br>
-
-### CheckCharactersReverse\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharactersReverse\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref Int32 noMatch, ref Char err);
+CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref Int32 noMatch, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -411,20 +283,20 @@ CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### CheckCharactersReverse\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharactersReverse\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} noMatchArray, ref Char err);
+CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} noMatchArray, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -433,9 +305,10 @@ CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns the 1 based position of the first non-matched, the first index in NoMatchArray is the rightmost mismatch in the baseString. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+            The first index in NoMatchArray is the rightmost mismatch in the baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -480,12 +353,12 @@ CheckPositionReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String co
 <br>
 <br>
 
-### CheckCharacters\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharacters\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref Char err);
+CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -494,8 +367,8 @@ CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -515,8 +388,8 @@ CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator. 
 
 
 <br>
@@ -536,7 +409,7 @@ CheckCharacters``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
 
 
 <br>
@@ -556,8 +429,30 @@ CheckCharacters``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns the 1 based position of a non-match. The first index contains the position left most non-match. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
+
+
+<br>
+<br>
+
+### CheckCharacters\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+
+RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
+
+```cs
+CheckCharacters``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.FixedDecimal{``1,``2}[] noMatchArray, ref ASNA.QSys.Runtime.Indicator err);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -577,19 +472,19 @@ CheckCharacters``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String compara
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default Position 1, not zero based.  Specifies the start position from the left most position. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns the 1 based position of a non-match. The first index contains the position left most non-match. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
 
 
 <br>
 <br>
 
-### CheckCharactersReverse\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharactersReverse\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref Char err);
+CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -598,8 +493,8 @@ CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -619,8 +514,8 @@ CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | noMatch | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator. 
 
 
 <br>
@@ -640,7 +535,7 @@ CheckCharactersReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
 
 
 <br>
@@ -660,19 +555,20 @@ CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns the 1 based position of the first non-matched, the first index in NoMatchArray is the rightmost mismatch in the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+            The first index in NoMatchArray is the rightmost mismatch in the baseString. 
 
 
 <br>
 <br>
 
-### CheckCharactersReverse\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### CheckCharactersReverse\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.FixedDecimal{``1,``2}[] noMatchArray, ref Char err);
+CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String comparator, Int32 startPos, ASNA.QSys.Runtime.FixedDecimal{``1,``2}[] noMatchArray, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -681,9 +577,10 @@ CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns the 1 based position of the first non-matched, the first index in NoMatchArray is the rightmost mismatch in the baseString. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+            The first index in NoMatchArray is the rightmost mismatch in the baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -703,8 +600,9 @@ CheckCharactersReverse``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String 
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Default is rightmost position, not zero based.  Specifies the start position from the right most position. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns the 1 based position of the first non-matched, the first index in NoMatchArray is the rightmost mismatch in the baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+            The first index in NoMatchArray is the rightmost mismatch in the baseString. 
 
 
 <br>
@@ -751,7 +649,7 @@ CheckPositionReverse``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String co
 
 ### MoveLeft\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
-RPG's MOVEL. Moves left a string expressed in the given format into a date time type.
+RPG's MOVEL. Moves left a string expressed in the given format into a date/time type.
 
 ```cs
 MoveLeft``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.IFixedDateTime dateTime);
@@ -884,7 +782,7 @@ MoveLeftWithPad``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int64 target);
 
 ### MoveRight\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
-RPG's MOVE. Moves right a string expressed in the given format into a date time type.
+RPG's MOVE. Moves right a string expressed in the given format into a date/time type.
 
 ```cs
 MoveRight``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.IFixedDateTime dateTime);
@@ -1017,7 +915,7 @@ MoveRightWithPad``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int64 target);
 
 ### Replace\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-RPG's %SUBST. Replaces characters in a string based on position and length.
+RPG's %SUBST. Substitutes characters in a FixedString value based on position and length.
 
 ```cs
 Replace``1(ASNA.QSys.Runtime.FixedString{``0} target, String from, Int32 startPos, Boolean isRightAdg);
@@ -1027,9 +925,9 @@ Replace``1(ASNA.QSys.Runtime.FixedString{``0} target, String from, Int32 startPo
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | target | The string where replacements will occur. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | from | The replace string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Starting position in target. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | target | Original FixedString value where substitutions will occur. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | from | The substitute string. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Position in the target string where replacement will start. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isRightAdg | true for right adjust, false for left adjust (default). 
 
 
@@ -1038,7 +936,7 @@ Replace``1(ASNA.QSys.Runtime.FixedString{``0} target, String from, Int32 startPo
 
 ### Replace\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Replace T summary.
+RPG's %REPLACE. Replaces a length of characters in a FixedString value with a replacement string.
 
 ```cs
 Replace``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String repString, Int32 startPos, Int32 lengthToReplace);
@@ -1048,10 +946,10 @@ Replace``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String repString, Int3
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | Replace baseString param. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | Replace repString param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Replace startPos param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | Replace lengthToReplace param. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | Original FixedString value where replacement will occur. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | Replacement string. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Position in the original string where replacement will start. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | Number of character in the original string to replace. 
 
 
 <br>
@@ -1059,18 +957,18 @@ Replace``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String repString, Int3
 
 ### ScanString\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found.
+RPG's %SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String CmpStr);
+ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string that scan will search. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CmpStr | A character expression scan will use to search the baseString. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
 
 
 <br>
@@ -1089,20 +987,20 @@ ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
 
 
 <br>
 <br>
 
-### ScanString\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ScanString\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref Char err);
+ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1110,21 +1008,21 @@ ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### ScanString\`\`2([FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ScanString\`\`2([FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``2(ASNA.QSys.Runtime.FixedString{``1} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref ``0 fndPos, ref Char err);
+ScanString``2(ASNA.QSys.Runtime.FixedString{``1} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref ``0 fndPos, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1132,22 +1030,22 @@ ScanString``2(ASNA.QSys.Runtime.FixedString{``1} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [\\`\\`0]($$TODO-``0@.html) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1 based array index position of the begining of the first match from the left. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [\\`\\`0]($$TODO-``0@.html) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1-based position in baseStr where the first match from the left starts. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### ScanString\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ScanString\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} fndPosArray, ref Char err);
+ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} fndPosArray, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1155,11 +1053,11 @@ ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | fndPosArray | . 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | fndPosArray | The array where starting positions are saved, in order. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -1178,21 +1076,21 @@ ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | fndPosArray | . 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | fndPosArray | The array where starting positions are saved, in order. 
 
 
 <br>
 <br>
 
-### ScanString\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ScanString\`\`3([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ASNA.QSys.Runtime.FixedDecimal{``1,``2}[] fndPosArray, ref Char err);
+ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ASNA.QSys.Runtime.FixedDecimal{``1,``2}[] fndPosArray, ref ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1200,22 +1098,22 @@ ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | fndPosArray | . 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Indicator will be set if a runtime error occurs. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | fndPosArray | The array where starting positions are saved, in order. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### SubStr\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### SubStr\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length.
 
 ```cs
-SubStr``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, String target, ref Char errInd);
+SubStr``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1223,21 +1121,20 @@ SubStr``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 s
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string SubStr will operate on. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subLen | The length of the substring. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | Target Operand of the substring. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | errInd | Indicator will be set if a runtime error occurs. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### SubStrFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### SubStrFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding.
 
 ```cs
-SubStrFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, String target, ref Char errInd);
+SubStrFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, String target, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1245,21 +1142,21 @@ SubStrFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, In
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string SubStr will operate on. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subLen | The length of the substring. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | Target Operand of the substring. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | errInd | Indicator will be set if a runtime error occurs. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### SubStrFixedWithPad\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### SubStrFixedWithPad\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result.
 
 ```cs
-SubStrFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, String target, ref Char errInd);
+SubStrFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, String target, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1267,10 +1164,10 @@ SubStrFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 start
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string SubStr will operate on. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subLen | The length of the substring. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | Target Operand of the substring. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | errInd | Indicator will be set if a runtime error occurs. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -1297,12 +1194,12 @@ ToDateTime``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.Date
 <br>
 <br>
 
-### Xlate\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### Xlate\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
-RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos.
+RPG's %Xlate. Translates baseString according to the values of mapFrom, mapTo, and startPos. The parameter errInd will indicate if there was an error in the operation.
 
 ```cs
-Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo);
+Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1312,6 +1209,8 @@ Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String m
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | The string to be translated. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | A string containing a list of characters that should be replaced. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | A string containing a list of characters with replacement values. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based position in the baseString where replacement starts. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -1333,18 +1232,18 @@ Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String m
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 
 
 <br>
 <br>
 
-### Xlate\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Xlate\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length.
 
 ```cs
-Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref Char errInd);
+Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1355,40 +1254,19 @@ Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String m
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | errInd | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### XlateFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos.
-
-```cs
-XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 lengthConst, String mapFrom, String mapTo);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | The string to be translated. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthConst | The length of the fixed length string. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | A string containing a list of characters that should be replaced. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | A string containing a list of characters with replacement values. 
-
-
-<br>
-<br>
-
-### XlateFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### XlateFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad.
 
 ```cs
-XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos);
+XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1399,41 +1277,19 @@ XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, Str
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
 <br>
 
-### XlateFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad.
-
-```cs
-XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref Char errInd);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | errInd | Indicator will be set if a runtime error occurs. 
-
-
-<br>
-<br>
-
-### XlateFixedWithPad\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### XlateFixedWithPad\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, with padding.
 
 ```cs
-XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref Char errInd);
+XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -1444,8 +1300,8 @@ XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | errInd | Indicator will be set if a runtime error occurs. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
 
 <br>
@@ -1453,7 +1309,7 @@ XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFr
 
 ### FromStringBinary\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Returns a (binary) decimal number based on its 'memory' representation.
+Returns a decimal number based on its binary 'memory' representation.
 
 ```cs
 FromStringBinary``1(ASNA.QSys.Runtime.FixedString{``0} num, Int32 digits, Int32 decimals);
@@ -1473,7 +1329,7 @@ FromStringBinary``1(ASNA.QSys.Runtime.FixedString{``0} num, Int32 digits, Int32 
 
 ### FromStringPacked\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Returns a (packed) decimal number based on its 'memory' representation.
+Returns a decimal number based on its packed 'memory' representation.
 
 ```cs
 FromStringPacked``1(ASNA.QSys.Runtime.FixedString{``0} num, Int32 decimals);
@@ -1492,7 +1348,7 @@ FromStringPacked``1(ASNA.QSys.Runtime.FixedString{``0} num, Int32 decimals);
 
 ### FromStringZoned\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Returns a (zoned) decimal number based on its 'memory' representation.
+Returns a decimal number based on its zoned 'memory' representation.
 
 ```cs
 FromStringZoned``1(ASNA.QSys.Runtime.FixedString{``0} num, Int32 digits, Int32 decimals);
@@ -1572,7 +1428,7 @@ GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start, Int32 
 
 ### IsBlanks\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html))
 
-Tests a string to see if it's spaces.
+Tests a string to see if it's all blanks (' ').
 
 ```cs
 IsBlanks``1(ASNA.QSys.Runtime.FixedString{``0} arg);
@@ -1582,7 +1438,7 @@ IsBlanks``1(ASNA.QSys.Runtime.FixedString{``0} arg);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | arg | . 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | arg | The fixed string to test. 
 
 
 <br>
@@ -2273,7 +2129,7 @@ MoveRightWithPad``4(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Ru
 Moves a source string into an array.
 
 ```cs
-MoveToArray``2(ASNA.QSys.Runtime.FixedString{``0} source, ``1[] target, Int32 startPosition);
+MoveToArray``2(ASNA.QSys.Runtime.FixedString{``0} source, ``1[] target, Int32 index);
 ```
 
 #### Parameters
@@ -2282,7 +2138,7 @@ MoveToArray``2(ASNA.QSys.Runtime.FixedString{``0} source, ``1[] target, Int32 st
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | source | Source string. 
 | [\\`\\`1[]]($$TODO-``1[].html) | target | Destination array. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | index | The index of the array element where the copy starts. 
 
 
 <br>
@@ -2293,7 +2149,7 @@ MoveToArray``2(ASNA.QSys.Runtime.FixedString{``0} source, ``1[] target, Int32 st
 Moves a source string into an array.
 
 ```cs
-MoveToArray``3(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} target, Int32 startPosition);
+MoveToArray``3(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} target, Int32 index);
 ```
 
 #### Parameters
@@ -2302,18 +2158,18 @@ MoveToArray``3(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runtime.IFix
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | source | Source string. 
 | [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | target | Destination array. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | index | The index of the array element where the copy starts. 
 
 
 <br>
 <br>
 
-### MoveToArrayWithPad\`\`2([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [IFixedSizeType{\\`\\`1}[]](/reference/asna-qsys-runtime/i-fixed-size-type{``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToArrayWithPad\`\`2([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [\\`\\`1[]]($$TODO-``1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Moves a source string into an array.
 
 ```cs
-MoveToArrayWithPad``2(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runtime.IFixedSizeType{``1}[] target, Int32 startPosition);
+MoveToArrayWithPad``2(ASNA.QSys.Runtime.FixedString{``0} source, ``1[] target, Int32 index);
 ```
 
 #### Parameters
@@ -2321,8 +2177,8 @@ MoveToArrayWithPad``2(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runti
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | source | Source string. 
-| [IFixedSizeType{\\`\\`1}[]](/reference/asna-qsys-runtime/i-fixed-size-type{``1}.html) | target | Destination array. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
+| [\\`\\`1[]]($$TODO-``1[].html) | target | Destination array. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | index | The index of the array element where the copy starts. 
 
 
 <br>
@@ -2333,7 +2189,7 @@ MoveToArrayWithPad``2(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runti
 Moves a source string into an array.
 
 ```cs
-MoveToArrayWithPad``3(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} target, Int32 startPosition);
+MoveToArrayWithPad``3(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runtime.IFixedArrayBase{``1,``2} target, Int32 index);
 ```
 
 #### Parameters
@@ -2342,7 +2198,7 @@ MoveToArrayWithPad``3(ASNA.QSys.Runtime.FixedString{``0} source, ASNA.QSys.Runti
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | source | Source string. 
 | [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | target | Destination array. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | index | The index of the array element where the copy starts. 
 
 
 <br>
@@ -2372,7 +2228,7 @@ Replace``1(ASNA.QSys.Runtime.FixedString{``0} target, String from, Int32 startPo
 
 ### ReplaceFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-ReplaceFixed T summary.
+RPG's %REPLACE. Replaces a length of characters in a FixedString value with a replacement string.
 
 ```cs
 ReplaceFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 baseLenConst, String repString, Int32 startPos, Int32 lengthToReplace);
@@ -2382,11 +2238,11 @@ ReplaceFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 baseLenCons
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | ReplaceFixed baseString param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | baseLenConst | ReplaceFixed baseLenConst param. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | ReplaceFixed repString param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | ReplaceFixed startPos param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | ReplaceFixed lengthToReplace param. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | Original FixedString value where replacement will occur. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | baseLenConst | Length to adjust the resulting string to. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | Replacement string. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Position in the original string where replacement will start. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | Number of character in the original string to replace. 
 
 
 <br>
@@ -2394,19 +2250,19 @@ ReplaceFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 baseLenCons
 
 ### ScanString\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found.
+RPG's %SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String CmpStr, Int32 startPos);
+ScanString``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int32 startPos);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string that scan will search. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CmpStr | A character expression scan will use to search the baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
 
 
 <br>
@@ -2425,10 +2281,10 @@ ScanString``2(ASNA.QSys.Runtime.FixedString{``1} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`1}](/reference/asna-qsys-runtime/fixed-string{``1}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [\\`\\`0]($$TODO-``0@.html) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1 based array index position of the begining of the first match from the left. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [\\`\\`0]($$TODO-``0@.html) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1-based position in baseStr where the first match from the left starts. 
 
 
 <br>
@@ -2447,10 +2303,10 @@ ScanString``3(ASNA.QSys.Runtime.FixedString{``0} baseString, String cmpStr, Int3
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string to compare with cmpStr. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scaned for. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | fndPosArray | . 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Specifies the length of cmpStr that is scanned for in baseString. Use 0 to use the current length of cmpStr. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position in baseString. 
+| [IFixedArrayBase{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/i-fixed-array-base{``1,``2}.html) | fndPosArray | The array where starting positions are saved, in order. 
 
 
 <br>
@@ -2519,7 +2375,7 @@ SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, In
 <br>
 <br>
 
-### SetHiLoEq\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetHiLoEq\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the flags according to the value of testString.
 
@@ -2532,15 +2388,15 @@ SetHiLoEq``1(ASNA.QSys.Runtime.FixedString{``0} testString, ref ASNA.QSys.Runtim
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | testString | The string to test. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | hi | Will be set to '0'. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | lo | Will be set to '0'. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | eq | Will be '1' if testString is all blanks, otherwsie '0'. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | Will be set to '0'. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | Will be set to '0'. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | Will be '1' if testString is all blanks, otherwsie '0'. 
 
 
 <br>
 <br>
 
-### SetHiLoEq\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetHiLoEq\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of source.
 
@@ -2553,40 +2409,20 @@ SetHiLoEq``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ref ASNA.QSys.Runti
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | eq | the equal flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
 
 
 <br>
 <br>
 
-### SetVaryingLength\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Sets the variable length string to the indicated length, ensuring that it's no longer than limit.
-
-```cs
-SetVaryingLength``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 length, Int32 limit);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | A variable length string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The desired length. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | limit | The maximum allowed length. 
-
-
-<br>
-<br>
-
-### SubStr\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### SubStr\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length.
 
 ```cs
-SubStr``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen, String target);
+SubStr``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 subLen);
 ```
 
 #### Parameters
@@ -2594,9 +2430,8 @@ SubStr``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, Int32 s
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string SubStr will operate on. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subLen | The length of the substring. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | Target Operand of the substring. 
 
 
 <br>
@@ -2615,7 +2450,7 @@ SubStrFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 startPos, In
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string SubStr will operate on. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subLen | The length of the substring. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | Target Operand of the substring. 
 
@@ -2636,7 +2471,7 @@ SubStrFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 start
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string SubStr will operate on. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subLen | The length of the substring. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | Target Operand of the substring. 
 
@@ -2666,7 +2501,7 @@ TestTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.Da
 
 ### ToDate\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
-ToDate summary.
+Converts a fixed decimal number to a date in the specified format.
 
 ```cs
 ToDate``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.DateTimeFormat format);
@@ -2676,8 +2511,8 @@ ToDate``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.D
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | ToDate source param. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | ToDate format param. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
+| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The date format of decimal value to convert. 
 
 
 <br>
@@ -2702,24 +2537,6 @@ ToDateTime``1(ASNA.QSys.Runtime.FixedString{``0} charStr, ASNA.QSys.Runtime.IFix
 <br>
 <br>
 
-### ToDecimal\`\`1([\\`\\`0]($$TODO-``0.html))
-
-Converts a value of type TDigits to decimal.
-
-```cs
-ToDecimal``1(``0 val);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [\\`\\`0]($$TODO-``0.html) | val |  The value to convert. 
-
-
-<br>
-<br>
-
 ### ToFixedDecimal\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Converts a numeric string into a RPG decimal.
@@ -2732,48 +2549,9 @@ ToFixedDecimal``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 digits, Int3
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | string representing a decimal number. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | number of digits in the target. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | number of decimals in the target. 
-
-
-<br>
-<br>
-
-### ToFixedDecimal\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Adjusts the digits and decimal positions of a FixedDecimal number.
-
-```cs
-ToFixedDecimal``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Int32 digits, Int32 decimals);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num |  The FixedDecimal number to truncate. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The desired number of digits in the result. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The desired number of decimal positions in the result. 
-
-
-<br>
-<br>
-
-### ToFixedDecimal\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Truncates a FixedDecimal to the specified number of decimal positions.
-
-```cs
-ToFixedDecimal``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Int32 decimals);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num | The FixedDecimal number to truncate. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The desired number of decimal positions. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | String representing a decimal number in the current culture. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | Number of digits in the target. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals in the target. 
 
 
 <br>
@@ -2799,48 +2577,9 @@ ToFixedDecimalRounded``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 digit
 <br>
 <br>
 
-### ToFixedDecimalRounded\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Adjusts the digits and decimal positions of a FixedDecimal number using Away From Zero rounding.
-
-```cs
-ToFixedDecimalRounded``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Int32 digits, Int32 decimals);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num |  The FixedDecimal number to round up. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The desired number of digits. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The desired number of decimal positions. 
-
-
-<br>
-<br>
-
-### ToFixedDecimalRounded\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Rounds a FixedDecimal to the specified number of decimal positions using Away From Zero rounding.
-
-```cs
-ToFixedDecimalRounded``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Int32 decimals);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num | The FixedDecimal number to round up. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The desired number of decimal positions. 
-
-
-<br>
-<br>
-
 ### ToPackedDecimal\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Converts a string representing a packed number into a RPG decimal.
+Converts a string representing a packed decimal into a decimal number.
 
 ```cs
 ToPackedDecimal``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 decimals);
@@ -2850,8 +2589,8 @@ ToPackedDecimal``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 decimals);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | string representing a packed decimal number. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | number of decimal positions in the target. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | String representing a packed decimal. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals in the target. 
 
 
 <br>
@@ -2913,7 +2652,7 @@ ToStringZoned``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
 
 ### ToTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
-ToTime TDigits, TDecimals summary.
+Converts a fixed decimal number to a time in the specified format.
 
 ```cs
 ToTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.DateTimeFormat format);
@@ -2923,8 +2662,8 @@ ToTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.D
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | ToTime source param. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | ToTime format param. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
+| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The time format of decimal value to convert. 
 
 
 <br>
@@ -2932,7 +2671,7 @@ ToTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.D
 
 ### ToTimestamp\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
 
-ToTimestamp summary.
+Converts a fixed decimal number to a timestamp.
 
 ```cs
 ToTimestamp``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
@@ -2942,7 +2681,7 @@ ToTimestamp``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | ToTimestamp param. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
 
 
 <br>
@@ -2950,7 +2689,7 @@ ToTimestamp``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
 
 ### ToZonedDecimal\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Converts a zoned representation string into a RPG decimal.
+Converts a string representing a zoned decimal into a decimal number.
 
 ```cs
 ToZonedDecimal``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 digits, Int32 decimals);
@@ -2960,9 +2699,45 @@ ToZonedDecimal``1(ASNA.QSys.Runtime.FixedString{``0} charStr, Int32 digits, Int3
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | string representing a zoned decimal number. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | number of digits in the target. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | number of decimals in the target. 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | charStr | String representing a zoned decimal. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | Number of digits in the target. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals in the target. 
+
+
+<br>
+<br>
+
+### TrimEnd\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html))
+
+Removes all the trailing white-space characters from the current string.
+
+```cs
+TrimEnd``1(ASNA.QSys.Runtime.FixedString{``0} baseString);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | The FixedString value to trim. 
+
+
+<br>
+<br>
+
+### TrimStart\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html))
+
+Removes all the leading white-space characters from the current string.
+
+```cs
+TrimStart``1(ASNA.QSys.Runtime.FixedString{``0} baseString);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | The FixedString value to trim. 
 
 
 <br>
@@ -2983,29 +2758,29 @@ Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String m
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | The string to be translated. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | A string containing a list of characters that should be replaced. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | A string containing a list of characters with replacement values. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Start position in the target string. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based position in the baseString where replacement starts. Defaults to 1. 
 
 
 <br>
 <br>
 
-### XlateFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### XlateFixed\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-RPG's %XLATE. Translates baseString according to the values of mapFrom, mapTo, and startPos.
+RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad.
 
 ```cs
-XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, Int32 lengthConst, String mapFrom, String mapTo, Int32 startPos);
+XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String mapTo, String targetString, Int32 startPos);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | The string to be translated. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthConst | The length of the fixed length string. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | A string containing a list of characters that should be replaced. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | A string containing a list of characters with replacement values. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | . 
+| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 
 
 <br>
@@ -3027,7 +2802,7 @@ XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position for baseString. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 
 
 <br>

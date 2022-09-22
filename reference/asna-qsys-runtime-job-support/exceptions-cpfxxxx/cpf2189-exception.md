@@ -2,7 +2,7 @@
 title: CPF2189Exception Class
 ---
 
-The exception that is thrown when: Not authorized to object -object-name- in -library-name- type -object-type-.
+The exception that is thrown when Not authorized to object {0} in {1} type {2}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Not authorized to object -object-name- in -li
 
 ## Remarks
 
-The exception that is thrown when: Not authorized to object -object-name- in -library-name- type -object-type-.
+The exception that is thrown when Not authorized to object {0} in {1} type {2}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Not authorized to object -object-name- in -li
 
 | Name |  Description 
 | --- | --- 
-| **CPF2189Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -object-name-, -library-name-, -object-type- and -inner-exception-. Sets message to: Not authorized to object -object-name- in -lilbrary-name- type -object-type-.
+| **CPF2189Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2189Exception class.
 
 <br>
 
 ### CPF2189Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -object-name-, -library-name-, -object-type- and -inner-exception-. Sets message to: Not authorized to object -object-name- in -lilbrary-name- type -object-type-.
+Initializes a new instance of the CPF2189Exception class.
 
 ```cs
 CPF2189Exception( String folder, String obj, String type, Exception innerException );

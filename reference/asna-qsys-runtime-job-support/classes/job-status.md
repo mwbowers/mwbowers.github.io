@@ -48,9 +48,10 @@ JobStatus(  );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [ExecuteState](/reference/asna-qsys-runtime-job-support/classes/execute-state.html) | ExecuteState | Gets or sets teh ExecutionState for the job. | 
+| [ExecuteState](/reference/asna-qsys-runtime-job-support/classes/execute-state.html) | ExecuteState | Gets or sets the ExecutionState for the job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Function | Gets the function, or additional information of the job's status. | 
 | [ExecStatus](/reference/asna-qsys-runtime-job-support/classes/exec-status.html) | Status | Gets the execution status of the job. | 
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | StatusStamp | Gets the execution status of the job. | 
 
 <br>
 <br>

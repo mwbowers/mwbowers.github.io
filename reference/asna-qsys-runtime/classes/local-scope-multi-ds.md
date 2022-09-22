@@ -53,11 +53,12 @@ LocalScopeMultiDS( Int32 arrayLength );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [T]($$TODO-T.html) | Current | Gets the current ocurrence of this multiple occurrence data structure. | 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | BufferDescription | Returns the flat description of the data structure buffer. | 
+| [T]($$TODO-T.html) | Current | Gets the current occurrence of this multiple occurrence data structure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of the current occurrence. | 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Fields | Gets the layout of the current occurrence. | 
 | [T]($$TODO-T.html) | Item([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the LocalScopeDS object at the given index. | i /* Desired index. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | Gets the length of the individual data structures in this MODS. | 
-| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Layout | Gets the layout of the current occurrence. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the multi occurrence data structure. | 
 | [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
 

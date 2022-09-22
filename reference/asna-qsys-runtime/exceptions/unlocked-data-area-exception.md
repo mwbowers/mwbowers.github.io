@@ -25,13 +25,13 @@ DataArea Exception issued when attempting to unlock a DataArea that is not locke
 
 | Name |  Description 
 | --- | --- 
-| **UnlockedDataAreaException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Constructor that takes the DataArea name. Sets the message to: Data area -data-area-name- is not locked.
+| **UnlockedDataAreaException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Creates an UnlockedDataAreaException object. Sets the message to: Data area -data-area-name- is not locked.
 
 <br>
 
 ### UnlockedDataAreaException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
-Constructor that takes the DataArea name. Sets the message to: Data area -data-area-name- is not locked.
+Creates an UnlockedDataAreaException object. Sets the message to: Data area -data-area-name- is not locked.
 
 ```cs
 UnlockedDataAreaException( String name );

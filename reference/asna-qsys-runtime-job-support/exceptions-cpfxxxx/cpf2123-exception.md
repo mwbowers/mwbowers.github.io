@@ -2,7 +2,7 @@
 title: CPF2123Exception Class
 ---
 
-The exception that is thrown when: No objects of specified name or type exist in library -name-of-library-.
+The exception that is thrown when Description for object {0} not changed.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: No objects of specified name or type exist in
 
 ## Remarks
 
-The exception that is thrown when: No objects of specified name or type exist in library -name-of-library-.
+The exception that is thrown when Description for object {0} not changed.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: No objects of specified name or type exist in
 
 | Name |  Description 
 | --- | --- 
-| **CPF2123Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes -object-name- and inner-exception. Sets the message to: No objects of specified name or type exist in library -name-of-library-
+| **CPF2123Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2123Exception class.
 
 <br>
 
 ### CPF2123Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes -object-name- and inner-exception. Sets the message to: No objects of specified name or type exist in library -name-of-library-
+Initializes a new instance of the CPF2123Exception class.
 
 ```cs
 CPF2123Exception( String obj, Exception innerException );

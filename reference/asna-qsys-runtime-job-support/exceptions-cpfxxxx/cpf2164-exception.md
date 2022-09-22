@@ -2,7 +2,7 @@
 title: CPF2164Exception Class
 ---
 
-The exception that is thrown when: Rename of library -library-name- not complete..
+The exception that is thrown when Rename of library {0} not complete.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Rename of library -library-name- not complete
 
 ## Remarks
 
-The exception that is thrown when: Rename of library -library-name- not complete..
+The exception that is thrown when Rename of library {0} not complete.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Rename of library -library-name- not complete
 
 | Name |  Description 
 | --- | --- 
-| **CPF2164Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and -inner-exception-. Sets message to: Rename of library -library-name- not complete..
+| **CPF2164Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2164Exception class.
 
 <br>
 
 ### CPF2164Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and -inner-exception-. Sets message to: Rename of library -library-name- not complete..
+Initializes a new instance of the CPF2164Exception class.
 
 ```cs
 CPF2164Exception( String folder, Exception innerException );

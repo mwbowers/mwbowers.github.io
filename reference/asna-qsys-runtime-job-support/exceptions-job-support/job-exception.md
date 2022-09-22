@@ -2,7 +2,7 @@
 title: JobException Class
 ---
 
-Defines the core behavior of the the base lcass that is thrown when there is a job exception.
+Defines the core behavior of the the base class that is thrown when there is a job exception.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Defines the core behavior of the the base lcass that is thrown when there is a j
 
 ## Remarks
 
-Defines the core behavior of the the base lcass that is thrown when there is a job exception.
+Defines the core behavior of the the base class that is thrown when there is a job exception.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

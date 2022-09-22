@@ -45,11 +45,11 @@ DatabaseFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateBuff
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateBuffer | Populate buffer delegate. 
-| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateFields | Populate fields delegate. 
-| [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html) | populateBufferWithFields | Populate buffer with fields delegate. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | declaredName | Declared filename. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Filepath. 
+| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateBuffer | Delegate that copies program field values into the file buffer (the file Dataset). 
+| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateFields | Delegate that copies the file buffer values into program fields. 
+| [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html) | populateBufferWithFields | Delegate that copies only certain fields into the file buffer (the file Dataset). 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | declaredName | Name of the file. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path to the file in the Database, given as "library/filename". 
 | [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html) | formatIDs | Dictionary of format IDs keyed by format name.  Pass a null value unless level check is required.  Values (the formatID) are given as base64-encoded 20-byte strings. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | memberName | Member name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | blockingFactor | Network blocking factor. 
@@ -182,6 +182,7 @@ DatabaseFile( String dclDiskFileName, String filePath, String memberName, Int32 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | BlockingFactor | An integer that determines if and optionally how many database records will be blocked across the Network for better performance when reading or writing groups of records. Network blocking significantly reduces the network burden of transferring records between server and client machines, and this is demonstrated by the substantial increase of data throughput. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CheckFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Collate | Returns or sets whether collation will be used when printing multiple copies.  This property is of type *Boolean.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Copies | Returns or sets the number of copies to print.  This property is of type *Integer4.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CursorY | Returns the position, in Print Units, that the printer is from the top of the page.  This property is of type *Integer4.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
@@ -194,12 +195,12 @@ DatabaseFile( String dclDiskFileName, String filePath, String memberName, Int32 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | FormType | Returns or sets the type of forms used in the printer for printed output.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | InOverflow | Return whether the printer has entered the overflow area of the page.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsDefaultRFN | A boolean value that specifies if the "default" renamed format is going to be used. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsFormatID | A boolean value that specifies if the format ID of the file is opened. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsKeyed | A boolean value that specifies if the file has been opened for "keyed" access. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Returns the open state of the printer file.  This property is of type *Boolean.  When the value is *True, the file is Open.  (Same as the %Open built-in function)<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsPrimary | Gets a boolean value indicating if the File is a primary file. | 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Key | Gets or sets the search key. | 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Kez | Gets or sets the additional search key used for Database files using simple query. | 
+| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Key | Gets or sets the main search key. | 
+| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Kez | Gets or sets the secondary search key, used as the limit for range operations. | 
 | [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) | LastException | Returns the last exception thrown for this file.  This is a protected public field of type ASNA.QSys.RuntimeException.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | LibraryName | Gets the libary name for an open fileAdapter. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ManuscriptPath | Returns or sets the path and file name for the manuscript.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
@@ -243,33 +244,33 @@ DatabaseFile( String dclDiskFileName, String filePath, String memberName, Int32 
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates internal objects and DataGate DataSet. | The newly created DataGate DataSet.
+| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates internal objects and constructs the file DataSet. | The newly created DataGate DataSet.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-char-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-ids-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-ids-char-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-ids-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainboolean-ids-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHAIN operation on the file. | True if record found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-ids)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-ids-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-int32-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-ids)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnboolean-decimal-ids-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number operation. | True if record was found; false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | chainKey summary. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | chainRRN summary. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Check](#checkobject[])([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHECK validity operation. | True if file and keys are valid; otherwise False.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Check](#checkchar-object[])([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHECK validity operation. | True if file and keys are valid; otherwise False.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Check](#checkindicator-object[])([Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHECK validity operation. | True if file and keys are valid; otherwise False.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Check](#checkindicator-object[])([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes CHECK validity operation. | True if file and keys are valid; otherwise False.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckKey](#checkkeystring-adgkeytable-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | CheckKey summary. | CheckKey returns.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearFileData](/reference/asna-qsys-runtime/classes/file-base.html#clearfiledata)() | Clears the Memory File.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closeindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes CLOSE database file operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closeindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes CLOSE database file operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ComputeSha](/reference/asna-qsys-runtime/classes/file-base.html#computesha)([XElement]($$TODO-Xml.Linq.XElement.html)) | Computes SHA hash value.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The hash value as a string.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | chainKey summary. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | chainRRN summary. | 
@@ -279,25 +280,25 @@ DatabaseFile( String dclDiskFileName, String filePath, String memberName, Int32 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase-accessmode-boolean-boolean-servercursors-char)([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open summary. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#delete)() | Executes DELETE current record operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deletechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes DELETE current record operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deleteindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes DELETE current record operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deleteindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes DELETE current record operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deleteobject[])([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes DELETE current record operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deletechar-object[])([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes DELETE current record operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deleteindicator-object[])([Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes DELETE current record operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Delete](#deleteindicator-object[])([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes DELETE current record operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnint32-char)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnint32-indicator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnint32-indicator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrndecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrndecimal-char)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrndecimal-indicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrndecimal-indicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes DELETE by Relative Record Number operation. | True if record was found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteRange](#deleterangeobject[]-object[]-rangefirst-rangelast)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html)) | Executes DELETE RANGE operation. | True if records were found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteRange](#deleterangeobject[]-object[]-rangefirst-rangelast-char)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes DELETE RANGE operation. | True if records were found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteRange](#deleterangeobject[]-object[]-rangefirst-rangelast-indicator)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Executes DELETE RANGE operation. | True if records were found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteRange](#deleterangeobject[]-object[]-rangefirst-rangelast-indicator)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes DELETE RANGE operation. | True if records were found; false otherwise.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [dumpRecord](/reference/asna-qsys-runtime/classes/file-base.html#dumprecord)() | Dumps the last record into a string.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The record as a string.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](/reference/asna-qsys-runtime/classes/file-base.html#exfmt)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes a Format operation (Write followed by Read).<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExFmt](/reference/asna-qsys-runtime/classes/file-base.html#exfmt)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes a Format operation (Write followed by Read).<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feod)() | Execute Force End Of Data operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feodchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute Force End Of Data operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feodindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute Force End Of Data operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feodindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute Force End Of Data operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | [GetAlternateKeyTable](#getalternatekeytablestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | GetAlternateKeyTable summary. | GetAlternateKeyTable returns.
 | [DataColumn]($$TODO-Data.DataColumn.html) | [GetDataColumn](/reference/asna-qsys-runtime/classes/file-base.html#getdatacolumn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Data Column from DataSet.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The Data Column referenced by input parameters.
@@ -312,84 +313,85 @@ DatabaseFile( String dclDiskFileName, String filePath, String memberName, Int32 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetWrfDoc](/reference/asna-qsys-runtime/classes/file-base.html#getwrfdoc)([DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset), [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the Wings Record Format XML document.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The XML document object.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [open](#opendatabase-accessmode-boolean-boolean-servercursors)([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html)) | open summary. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase-accessmode-boolean-boolean-servercursors-indicator)([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute OPEN operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase-accessmode-boolean-boolean-servercursors-indicator)([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute OPEN operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBuffer](/reference/asna-qsys-runtime/classes/file-base.html#populatebuffer)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](/reference/asna-qsys-runtime/classes/file-base.html#read)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes READ record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if record is found, False otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-ids)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-ids-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](/reference/asna-qsys-runtime/classes/file-base.html#readnextchanged)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Reads the next changed record.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The RRN of record found or the original RNN if error occured.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNext](#readnextboolean-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute READ NEXT record operation. | True if End Of File condition is NOT reached.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](/reference/asna-qsys-runtime/classes/file-base.html#readnextchanged)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Reads the next changed record.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The RRN of record found or the original RNN if error occurred.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-char-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-ids-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-ids-char-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-ids-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqual](#readnextequalboolean-ids-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-char-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-ids-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-ids-char-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-ids-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadNextEqualIncompleteKey](#readnextequalincompletekeyboolean-ids-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ NEXT EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-ids)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-ids-char)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPrevious](#readpreviousboolean-ids-indicator)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute READ PREVIOUS record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-char-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-ids-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-ids-char-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-ids-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqual](#readpreviousequalboolean-ids-indicator-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-char-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-ids-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-ids-char-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-ids-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadPreviousEqualIncompleteKey](#readpreviousequalincompletekeyboolean-ids-indicator-string-object[])([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute READ PREVIOUS EQUAL INCOMPLETE record operation. | True if End Of File condition is NOT reached.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadRange](#readrangeobject[]-object[]-rangemode-rangefirst-rangelast-boolean)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Execute READ RANGE operation. | True if record is found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadRange](#readrangeobject[]-object[]-rangemode-rangefirst-rangelast-boolean-char)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute READ RANGE operation. | True if record is found; false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadRange](#readrangeobject[]-object[]-rangemode-rangefirst-rangelast-boolean-indicator)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute READ RANGE operation. | True if record is found; false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReadRange](#readrangeobject[]-object[]-rangemode-rangefirst-rangelast-boolean-indicator)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute READ RANGE operation. | True if record is found; false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Seek](#seekseekmode-object[])([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute SEEK operation. | True if record is found; otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Seek](#seekseekmode-char-object[])([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute SEEK operation. | True if record is found; otherwise false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Seek](#seekseekmode-indicator-object[])([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute SEEK operation. | True if record is found; otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Seek](#seekseekmode-indicator-object[])([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Execute SEEK operation. | True if record is found; otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SeekByRRN](#seekbyrrnseekmode-int32)([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Execute SEEK by Relative Record Number operation. | True if record is found; otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SeekByRRN](#seekbyrrnseekmode-int32-char)([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute SEEK by Relative Record Number operation. | True if record is found; otherwise false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SeekByRRN](#seekbyrrnseekmode-int32-indicator)([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute SEEK by Relative Record Number operation. | True if record is found; otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SeekByRRN](#seekbyrrnseekmode-int32-indicator)([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute SEEK by Relative Record Number operation. | True if record is found; otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetRange](#setrangeobject[]-object[]-rangemode-rangefirst-rangelast)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html)) | Execute SET RANGE operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetRange](#setrangeobject[]-object[]-rangemode-rangefirst-rangelast-char)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute SET RANGE operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetRange](#setrangeobject[]-object[]-rangemode-rangefirst-rangelast-indicator)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute SET RANGE operation. | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [setStatusCodeFromLastException](/reference/asna-qsys-runtime/classes/file-base.html#setstatuscodefromlastexception)() | Set and return the Ststus Code from last exception.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | Last exception Status Code.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetRange](#setrangeobject[]-object[]-rangemode-rangefirst-rangelast-indicator)([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute SET RANGE operation. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [setStatusCodeFromLastException](/reference/asna-qsys-runtime/classes/file-base.html#setstatuscodefromlastexception)() | Set and return the Status Code from last exception.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | Last exception Status Code.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Unlock](#unlockindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute UNLOCK record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Unlock](#unlockindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute UNLOCK record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#update)() | Execute UPDATE record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute UPDATE record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updateindicator)([Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute UPDATE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updateindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute UPDATE record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updateids)([IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Execute UPDATE record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updateids-char)([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute UPDATE record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updateids-indicator)([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute UPDATE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updateids-indicator)([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute UPDATE record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [updateFlds](/reference/asna-qsys-runtime/classes/file-base.html#updateflds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring[])([String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Execute UPDATE fields record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldschar-string[])([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Execute UPDATE fields record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsindicator-string[])([Indicator](/reference/asna-qsys-runtime/indicator.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Execute UPDATE fields record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsindicator-string[])([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Execute UPDATE fields record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#write)() | Execute WRITE current record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writeids)([IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Execute WRITE current record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute WRITE current record operation. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writeids-char)([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute WRITE current record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writeids-indicator)([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html)) | Execute WRITE current record operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](/reference/asna-qsys-runtime/classes/file-base.html#writesubfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if NOT End of File condition reached, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writeids-indicator)([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute WRITE current record operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](/reference/asna-qsys-runtime/classes/file-base.html#writesubfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if NOT End of File condition reached, False otherwise.
 
 <br>
 <br>
 
 ### allocateBuffer()
 
-Allocates internal objects and DataGate DataSet.
+Allocates internal objects and constructs the file DataSet.
 
 ```cs
 allocateBuffer();
@@ -456,7 +458,7 @@ True if record found, false otherwise.
 <br>
 <br>
 
-### Chain([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Chain([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes CHAIN operation on the file.
 
@@ -469,7 +471,7 @@ Chain(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator err, Object[] keyParts
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Input search key parts. 
 
 #### Returns
@@ -535,7 +537,7 @@ True if record found, false otherwise.
 <br>
 <br>
 
-### Chain([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Chain([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes CHAIN operation on the file.
 
@@ -549,7 +551,7 @@ Chain(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS, ref ASNA.QSys.Runtime.In
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record to data structure (if found). 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Input search key parts. 
 
 #### Returns
@@ -613,7 +615,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes CHAIN by Relative Record Number operation.
 
@@ -627,7 +629,7 @@ ChainByRRN(Boolean lockRecord, Int32 rrn, ref ASNA.QSys.Runtime.Indicator err);
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed; false otherwise. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Target Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error indicator. 
 
 #### Returns
 
@@ -639,7 +641,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes CHAIN by Relative Record Number operation.
 
@@ -654,7 +656,7 @@ ChainByRRN(Boolean lockRecord, Decimal rrn, ASNA.QSys.Runtime.IDS intoDS, ref AS
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed; false otherwise. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Target Relative Record Number. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record to data structure (if found). 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -719,7 +721,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes CHAIN by Relative Record Number operation.
 
@@ -734,7 +736,7 @@ ChainByRRN(Boolean lockRecord, Int32 rrn, ASNA.QSys.Runtime.IDS intoDS, ref ASNA
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed; false otherwise. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Target Relative Record Number. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record to data structure (if found). 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -797,7 +799,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ChainByRRN([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes CHAIN by Relative Record Number operation.
 
@@ -811,7 +813,7 @@ ChainByRRN(Boolean lockRecord, Decimal rrn, ref ASNA.QSys.Runtime.Indicator err)
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed; false otherwise. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Target Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -965,7 +967,7 @@ True if file and keys are valid; otherwise False.
 <br>
 <br>
 
-### Check([Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Check([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes CHECK validity operation.
 
@@ -977,7 +979,7 @@ Check(ref ASNA.QSys.Runtime.Indicator keyParts, Object[] err);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | keyParts | Search key collection. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | keyParts | Search key collection. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | err | Output error indicator. 
 
 #### Returns
@@ -1016,7 +1018,7 @@ CheckKey returns.
 <br>
 <br>
 
-### Close([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Close([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes CLOSE database file operation.
 
@@ -1028,7 +1030,7 @@ Close(ref ASNA.QSys.Runtime.Indicator err);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -1209,7 +1211,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### Delete([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Delete([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes DELETE current record operation.
 
@@ -1221,7 +1223,7 @@ Delete(ref ASNA.QSys.Runtime.Indicator err);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1282,7 +1284,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### Delete([Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Delete([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Executes DELETE current record operation.
 
@@ -1294,7 +1296,7 @@ Delete(ref ASNA.QSys.Runtime.Indicator err, Object[] keyParts);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Input search key collection. 
 
 #### Returns
@@ -1356,7 +1358,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### DeleteByRRN([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteByRRN([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes DELETE by Relative Record Number operation.
 
@@ -1369,7 +1371,7 @@ DeleteByRRN(Int32 rrn, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Target Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1430,7 +1432,7 @@ True if record was found; false otherwise.
 <br>
 <br>
 
-### DeleteByRRN([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteByRRN([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes DELETE by Relative Record Number operation.
 
@@ -1443,7 +1445,7 @@ DeleteByRRN(Decimal rrn, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | rrn | Target Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1510,7 +1512,7 @@ True if records were found; false otherwise.
 <br>
 <br>
 
-### DeleteRange([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### DeleteRange([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Executes DELETE RANGE operation.
 
@@ -1526,7 +1528,7 @@ DeleteRange(Object[] firstKey, Object[] lastKey, ASNA.DataGate.Common.RangeFirst
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | lastKey | Last record search key. 
 | [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html) | rangeFirstKey | Initial include/exclude option. 
 | [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html) | rangeLastKey | Last include/exclude option. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1568,7 +1570,7 @@ Feod(ref Char err);
 <br>
 <br>
 
-### Feod([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Feod([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute Force End Of Data operation.
 
@@ -1580,7 +1582,7 @@ Feod(ref ASNA.QSys.Runtime.Indicator err);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output Indicator. 
 
 
 <br>
@@ -1656,7 +1658,7 @@ open(ASNA.QSys.Runtime.Database database, ASNA.DataGate.Common.AccessMode access
 <br>
 <br>
 
-### Open([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Open([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute OPEN operation.
 
@@ -1673,7 +1675,7 @@ Open(ASNA.QSys.Runtime.Database database, ASNA.DataGate.Common.AccessMode access
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCacheWrite | True if Bulk writing caching is to be used; false otherwise. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCommit | True if file is under commitment control; false otherwise/ 
 | [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html) | serverCursor | Type of server cursor to use. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -1728,7 +1730,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadNext([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNext([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute READ NEXT record operation.
 
@@ -1741,7 +1743,7 @@ ReadNext(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1804,7 +1806,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadNext([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadNext([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute READ NEXT record operation.
 
@@ -1818,7 +1820,7 @@ ReadNext(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS, ref ASNA.QSys.Runtime
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record data to Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -1881,7 +1883,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadNextEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadNextEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ NEXT EQUAL record operation.
 
@@ -1894,7 +1896,7 @@ ReadNextEqual(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator err, Object[] 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
 #### Returns
@@ -1960,7 +1962,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadNextEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadNextEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ NEXT EQUAL record operation.
 
@@ -1974,7 +1976,7 @@ ReadNextEqual(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS, ref ASNA.QSys.Ru
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record data to Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
 #### Returns
@@ -2040,7 +2042,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadNextEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadNextEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ NEXT EQUAL INCOMPLETE record operation.
 
@@ -2053,7 +2055,7 @@ ReadNextEqualIncompleteKey(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator e
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | incompleteKey | Incomplete search key. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
@@ -2122,7 +2124,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadNextEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadNextEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ NEXT EQUAL INCOMPLETE record operation.
 
@@ -2136,7 +2138,7 @@ ReadNextEqualIncompleteKey(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS, ref
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record data to Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | incompleteKey | Incomplete search key. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
@@ -2199,7 +2201,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadPrevious([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadPrevious([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute READ PREVIOUS record operation.
 
@@ -2212,7 +2214,7 @@ ReadPrevious(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2275,7 +2277,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadPrevious([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadPrevious([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute READ PREVIOUS record operation.
 
@@ -2289,7 +2291,7 @@ ReadPrevious(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS, ref ASNA.QSys.Run
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record data to Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2352,7 +2354,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadPreviousEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadPreviousEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ PREVIOUS EQUAL record operation.
 
@@ -2365,7 +2367,7 @@ ReadPreviousEqual(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicator err, Objec
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error code. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error code. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
 #### Returns
@@ -2431,7 +2433,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadPreviousEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadPreviousEqual([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ PREVIOUS EQUAL record operation.
 
@@ -2445,7 +2447,7 @@ ReadPreviousEqual(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS, ref ASNA.QSy
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record data to Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
 #### Returns
@@ -2511,7 +2513,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadPreviousEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadPreviousEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ PREVIOUS EQUAL INCOMPLETE record operation.
 
@@ -2524,7 +2526,7 @@ ReadPreviousEqualIncompleteKey(Boolean lockRecord, ref ASNA.QSys.Runtime.Indicat
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | incompleteKey | Incomplete search key. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
@@ -2593,7 +2595,7 @@ True if End Of File condition is NOT reached.
 <br>
 <br>
 
-### ReadPreviousEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ReadPreviousEqualIncompleteKey([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute READ PREVIOUS EQUAL INCOMPLETE record operation.
 
@@ -2607,7 +2609,7 @@ ReadPreviousEqualIncompleteKey(Boolean lockRecord, ASNA.QSys.Runtime.IDS intoDS,
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | Copy record data to Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | incompleteKey | Incomplete search key. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
@@ -2680,7 +2682,7 @@ True if record is found; false otherwise.
 <br>
 <br>
 
-### ReadRange([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### ReadRange([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute READ RANGE operation.
 
@@ -2698,7 +2700,7 @@ ReadRange(Object[] firstKey, Object[] lastKey, ASNA.DataGate.Common.RangeMode mo
 | [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html) | rangeFirstKey | Initial Exclude/Include option. 
 | [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html) | rangeLastKey | Last Exclude/Include option. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | lockRecord | True if locking should be performed. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2761,7 +2763,7 @@ True if record is found; otherwise false.
 <br>
 <br>
 
-### Seek([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Seek([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Execute SEEK operation.
 
@@ -2774,7 +2776,7 @@ Seek(ASNA.DataGate.Common.SeekMode mode, ref ASNA.QSys.Runtime.Indicator err, Ob
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html) | mode | Seek mode. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | keyParts | Search key collection. 
 
 #### Returns
@@ -2838,7 +2840,7 @@ True if record is found; otherwise false.
 <br>
 <br>
 
-### SeekByRRN([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SeekByRRN([SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute SEEK by Relative Record Number operation.
 
@@ -2852,7 +2854,7 @@ SeekByRRN(ASNA.DataGate.Common.SeekMode mode, Int32 rrn, ref ASNA.QSys.Runtime.I
 | --- | --- | ---
 | [SeekMode]($$TODO-ASNA.DataGate.Common.SeekMode.html) | mode | Seek mode. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 #### Returns
 
@@ -2909,7 +2911,7 @@ SetRange(Object[] firstKey, Object[] lastKey, ASNA.DataGate.Common.RangeMode mod
 <br>
 <br>
 
-### SetRange([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### SetRange([Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html), [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html), [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute SET RANGE operation.
 
@@ -2926,13 +2928,13 @@ SetRange(Object[] firstKey, Object[] lastKey, ASNA.DataGate.Common.RangeMode mod
 | [RangeMode]($$TODO-ASNA.DataGate.Common.RangeMode.html) | mode | Range mode. 
 | [RangeFirst]($$TODO-ASNA.DataGate.Common.RangeFirst.html) | rangeFirstKey | Include/Exclude initial search key option. 
 | [RangeLast]($$TODO-ASNA.DataGate.Common.RangeLast.html) | rangeLastKey | Include/Exclude last search key option. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
 <br>
 
-### Unlock([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Unlock([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute UNLOCK record operation.
 
@@ -2944,7 +2946,7 @@ Unlock(ref ASNA.QSys.Runtime.Indicator err);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -2980,7 +2982,7 @@ Update(ref Char err);
 <br>
 <br>
 
-### Update([Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Update([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute UPDATE record operation.
 
@@ -2992,7 +2994,7 @@ Update(ref ASNA.QSys.Runtime.Indicator err);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -3035,7 +3037,7 @@ Update(ASNA.QSys.Runtime.IDS fromDS, ref Char err);
 <br>
 <br>
 
-### Update([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Update([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute UPDATE record operation.
 
@@ -3048,7 +3050,7 @@ Update(ASNA.QSys.Runtime.IDS fromDS, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | Update record by copying record data from Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>
@@ -3091,7 +3093,7 @@ UpdateFlds(ref Char err, String[] fields);
 <br>
 <br>
 
-### UpdateFlds([Indicator](/reference/asna-qsys-runtime/indicator.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### UpdateFlds([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Execute UPDATE fields record operation.
 
@@ -3103,7 +3105,7 @@ UpdateFlds(ref ASNA.QSys.Runtime.Indicator err, String[] fields);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fields | Collection of record fieds. 
 
 
@@ -3177,7 +3179,7 @@ Write(ASNA.QSys.Runtime.IDS fromDS, ref Char err);
 <br>
 <br>
 
-### Write([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/indicator.html))
+### Write([IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Execute WRITE current record operation.
 
@@ -3190,7 +3192,7 @@ Write(ASNA.QSys.Runtime.IDS fromDS, ref ASNA.QSys.Runtime.Indicator err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | Take record data from Data Structure. 
-| [Indicator](/reference/asna-qsys-runtime/indicator.html) | err | Output error Indicator. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Output error Indicator. 
 
 
 <br>

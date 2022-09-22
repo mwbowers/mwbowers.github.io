@@ -2,7 +2,7 @@
 title: CPF1095Exception Class
 ---
 
-The exception that is thrown when CL variable length not valid for parameter -system-value-.
+The exception that is thrown when CL variable length not valid for parameter {0}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when CL variable length not valid for parameter -sy
 
 ## Remarks
 
-The exception that is thrown when CL variable length not valid for parameter -system-value-.
+The exception that is thrown when CL variable length not valid for parameter {0}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when CL variable length not valid for parameter -sy
 
 | Name |  Description 
 | --- | --- 
-| **CPF1095Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructir that takes -system-value- and inner exception. Sets message to: CL variable length not valid for parameter -system-value-.
+| **CPF1095Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF1095Exception class.
 
 <br>
 
 ### CPF1095Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructir that takes -system-value- and inner exception. Sets message to: CL variable length not valid for parameter -system-value-.
+Initializes a new instance of the CPF1095Exception class.
 
 ```cs
 CPF1095Exception( String systemValue, Exception innerException );

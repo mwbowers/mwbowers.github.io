@@ -2,7 +2,7 @@
 title: CPF2111Exception Class
 ---
 
-The exception that is thrown when: Library -library-name- already exists.
+The exception that is thrown when Library {0} already exists.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Library -library-name- already exists.
 
 ## Remarks
 
-The exception that is thrown when: Library -library-name- already exists.
+The exception that is thrown when Library {0} already exists.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Library -library-name- already exists.
 
 | Name |  Description 
 | --- | --- 
-| **CPF2111Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and inner-exception. Sets message to: Library -library-name- already exists.
+| **CPF2111Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2111Exception class.
 
 <br>
 
 ### CPF2111Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and inner-exception. Sets message to: Library -library-name- already exists.
+Initializes a new instance of the CPF2111Exception class.
 
 ```cs
 CPF2111Exception( String folder, Exception innerException );

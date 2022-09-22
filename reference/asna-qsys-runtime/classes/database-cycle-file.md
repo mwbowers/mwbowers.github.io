@@ -2,7 +2,7 @@
 title: DatabaseCycleFile Class
 ---
 
-Database file that participates in the RPG Cycle.
+Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database, the file buffer values are not immediately copied into the program fields. The RPG cycle explicitly issues a LoadBuffer call at the proper time within the cycle to load the buffer into the program fields.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Database file that participates in the RPG Cycle.
 
 ## Remarks
 
-Database file that participates in the RPG Cycle.
+Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database, the file buffer values are not immediately copied into the program fields. The RPG cycle explicitly issues a LoadBuffer call at the proper time within the cycle to load the buffer into the program fields.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ Database file that participates in the RPG Cycle.
 
 | Name |  Description 
 | --- | --- 
-| **DatabaseCycleFile**( [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html), [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html), [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html) ) | Constructor for Cycle File.
+| **DatabaseCycleFile**( [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html), [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html), [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html) ) | Constructs a Database file that participates in the RPG program Cycle.
 
 <br>
 
 ### DatabaseCycleFile( [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html), [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html), [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html) )
 
-Constructor for Cycle File.
+Constructs a Database file that participates in the RPG program Cycle.
 
 ```cs
 DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateBuffer, Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateFields, Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]} populateBufferWithFields, String declaredName, String filePath, Collections.Generic.Dictionary{System.String,System.String} formatIDs, String memberName, Int32 blockingFactor, ASNA.DataGate.Common.ShareTypes shareType, Int32 waitRec, String qrySelect, String qryKeyFlds, String qryFileName, Boolean isKeyed, Boolean isPrimary, Action infSR );
@@ -41,22 +41,22 @@ DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populat
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateBuffer | Populate Buffer Action. 
-| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateFields | Populate Fields Action. 
-| [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html) | populateBufferWithFields | Populate Buffer with Fields Action. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | declaredName | Declared Name. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | File path. 
-| [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html) | formatIDs | Record format IDs Dictionary. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | memberName | Member Name. 
+| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateBuffer | Delegate that copies program field values into the file buffer (the file Dataset). 
+| [Action{System.String,ASNA.DataGate.Client.AdgDataSet}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet}.html) | populateFields | Delegate that copies the file buffer values into program fields. 
+| [Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}]($$TODO-Action{System.String,ASNA.DataGate.Client.AdgDataSet,System.String[]}.html) | populateBufferWithFields | Delegate that copies only certain fields into the file buffer (the file Dataset). 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | declaredName | Name of the file. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path to the file in the Database, given as "library/filename". 
+| [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html) | formatIDs | Dictionary of format IDs keyed by format name. Pass a null value unless level check is required. Values (the formatID) are given as base64-encoded 20-byte strings. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | memberName | Member name. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | blockingFactor | Network blocking factor. 
 | [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Share Type. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | waitRec | Wait for lock to be released. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qrySelect | Simple Query Select. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qryKeyFlds | Simple Query Key Fields. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qryFileName | Simple Query Key FileName. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isKeyed | True if file is keyed. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | waitRec | An integer specifying the waiting period for a record. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qrySelect | Simple query select expression. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qryKeyFlds | Simple query search keys. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qryFileName | Simple query filename. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isKeyed | True if file has search keys. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isPrimary | True if File Assignation is Primary, otherwise Secondary. 
-| [Action]($$TODO-Action.html) | infSR | File Information Subroutine Action. 
+| [Action]($$TODO-Action.html) | infSR | File Error Subroutine delegate. Pass null if no INFSR not used. 
 
 <br>
 
@@ -69,6 +69,7 @@ DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populat
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | BlockingFactor | An integer that determines if and optionally how many database records will be blocked across the Network for better performance when reading or writing groups of records. Network blocking significantly reduces the network burden of transferring records between server and client machines, and this is demonstrated by the substantial increase of data throughput.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CheckFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Collate | Returns or sets whether collation will be used when printing multiple copies.  This property is of type *Boolean.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Copies | Returns or sets the number of copies to print.  This property is of type *Integer4.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | CursorY | Returns the position, in Print Units, that the printer is from the top of the page.  This property is of type *Integer4.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
@@ -81,12 +82,12 @@ DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populat
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | FormType | Returns or sets the type of forms used in the printer for printed output.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | InOverflow | Return whether the printer has entered the overflow area of the page.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsDefaultRFN | A boolean value that specifies if the "default" renamed format is going to be used.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsFormatID | A boolean value that specifies if the format ID of the file is opened.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | IsKeyed | A boolean value that specifies if the file has been opened for "keyed" access.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Returns the open state of the printer file.  This property is of type *Boolean.  When the value is *True, the file is Open.  (Same as the %Open built-in function)<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsPrimary | Gets value indicating that file is a Primary file, otherwise is Secondary. | 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Key | Gets or sets the search key.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Kez | Gets or sets the additional search key used for Database files using simple query.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
+| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Key | Gets or sets the main search key.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
+| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | Kez | Gets or sets the secondary search key, used as the limit for range operations.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) | LastException | Returns the last exception thrown for this file.  This is a protected public field of type ASNA.QSys.RuntimeException.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | LibraryName | Gets the libary name for an open fileAdapter.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ManuscriptPath | Returns or sets the path and file name for the manuscript.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
@@ -159,12 +160,12 @@ DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populat
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetStatus](/reference/asna-qsys-runtime/classes/file-base.html#getstatus)([DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset)) | Gets the WsDs Status value from the property flags in the DataSet.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The WsDs Status.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetWrfDoc](/reference/asna-qsys-runtime/classes/file-base.html#getwrfdoc)([DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset), [Dictionary{System.String,System.String}]($$TODO-Collections.Generic.Dictionary{System.String,System.String}.html), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the Wings Record Format XML document.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The XML document object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadBuffer](#loadbuffer)() | Loads the internal buffer by populating the file fields. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadBuffer](#loadbuffer)() | Copies data from the cycle file buffer to the program fields. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [open](#opendatabase-accessmode-boolean-boolean-servercursors)([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html)) | Opens the file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](/reference/asna-qsys-runtime/classes/database-file.html#open)([Database](/reference/asna-qsys-runtime/classes/database.html), [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html)) | Open summary.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBuffer](/reference/asna-qsys-runtime/classes/file-base.html#populatebuffer)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](/reference/asna-qsys-runtime/classes/file-base.html#read)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes READ record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if record is found, False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#read)() | Reads the next record into the cycle file buffer. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNext](/reference/asna-qsys-runtime/classes/file-base.html#readnext)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ NEXT record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if NOT End Of File reached, otherwise false.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ReadNextChanged](/reference/asna-qsys-runtime/classes/file-base.html#readnextchanged)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Reads the next changed record.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | The RRN of record found or the original RNN if error occured.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReadNextEqual](/reference/asna-qsys-runtime/classes/file-base.html#readnextequal)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Executes READ NEXT EQUAL record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if NOT Eof of File condition reached, false otherwise.
@@ -181,7 +182,8 @@ DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populat
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Unlock](/reference/asna-qsys-runtime/classes/database-file.html#unlock)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Execute UNLOCK record operation.<br>(Inherited from [DatabaseFile](/reference/asna-qsys-runtime/classes/database-file.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](/reference/asna-qsys-runtime/classes/file-base.html#update)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes UPDATE current record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](/reference/asna-qsys-runtime/classes/file-base.html#updateflds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes UPDATE fields operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [updateFlds](/reference/asna-qsys-runtime/classes/file-base.html#updateflds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](/reference/asna-qsys-runtime/classes/file-base.html#updateflds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](/reference/asna-qsys-runtime/classes/file-base.html#write)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Executes WRITE record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](/reference/asna-qsys-runtime/classes/file-base.html#writesubfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Executes WRITE Subfile record operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | True if NOT End of File condition reached, False otherwise.
 
@@ -190,7 +192,7 @@ DatabaseCycleFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populat
 
 ### LoadBuffer()
 
-Loads the internal buffer by populating the file fields.
+Copies data from the cycle file buffer to the program fields.
 
 ```cs
 LoadBuffer();
@@ -217,6 +219,18 @@ open(ASNA.QSys.Runtime.Database database, ASNA.DataGate.Common.AccessMode access
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCacheWrite | True is writes are to be cached. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCommit | True if file participates in commitment control. 
 | [ServerCursors]($$TODO-ASNA.DataGate.Common.ServerCursors.html) | serverCursor | Server cursor type. 
+
+
+<br>
+<br>
+
+### Read()
+
+Reads the next record into the cycle file buffer.
+
+```cs
+Read();
+```
 
 
 <br>

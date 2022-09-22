@@ -25,16 +25,16 @@ Use this class when defining a field-base layout for a Data Structure.
 
 | Name |  Description 
 | --- | --- 
-| **DSField**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) ) | Construct a DSField as part of a Data Structure using a specific layout.
+| **DSField**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Construct a DSField as part of a Data Structure using a specific layout.
 
 <br>
 
-### DSField( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) )
+### DSField( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
 Construct a DSField as part of a Data Structure using a specific layout.
 
 ```cs
-DSField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.ILayout layout );
+DSField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.ILayout layout, Int32 startingPosition );
 ```
 
 #### Parameters
@@ -43,6 +43,7 @@ DSField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.ILayou
 | --- | --- | ---
 | [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | dataStructure | The Data Structure that contains the field. 
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | layout | The layout of the field. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startingPosition | Position in the Data Structure buffer where this field starts. 
 
 <br>
 
@@ -69,6 +70,7 @@ DSField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.ILayou
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearField](#clearfield)() | Sets the field value to its default according to its type. | 
+| [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html) | [Clone](#clone)() | Creates a copy of this IDSField object | A copy of this DSField.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -88,6 +90,24 @@ Sets the field value to its default according to its type.
 ```cs
 ClearField();
 ```
+
+
+<br>
+<br>
+
+### Clone()
+
+Creates a copy of this IDSField object
+
+```cs
+Clone();
+```
+
+#### Returns
+
+[IDSField](/reference/asna-qsys-runtime/classes/ids-field.html)
+
+A copy of this DSField.
 
 
 <br>

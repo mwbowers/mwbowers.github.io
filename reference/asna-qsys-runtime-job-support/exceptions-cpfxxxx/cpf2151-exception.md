@@ -2,7 +2,7 @@
 title: CPF2151Exception Class
 ---
 
-The exception that is thrown when: Operation failed for -object-name- in -library-name- type -object-type.
+The exception that is thrown when Operation failed for {1} in {0} type{2}
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Operation failed for -object-name- in -librar
 
 ## Remarks
 
-The exception that is thrown when: Operation failed for -object-name- in -library-name- type -object-type.
+The exception that is thrown when Operation failed for {1} in {0} type{2}
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Operation failed for -object-name- in -librar
 
 | Name |  Description 
 | --- | --- 
-| **CPF2151Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -object-name-, -library-name-, -object-type and -inner-exception-. Sets message to: Operation failed for -object-name- in -library-name- type -object-type.
+| **CPF2151Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2151Exception class.
 
 <br>
 
 ### CPF2151Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -object-name-, -library-name-, -object-type and -inner-exception-. Sets message to: Operation failed for -object-name- in -library-name- type -object-type.
+Initializes a new instance of the CPF2151Exception class.
 
 ```cs
 CPF2151Exception( String folder, String obj, String type, Exception innerException );

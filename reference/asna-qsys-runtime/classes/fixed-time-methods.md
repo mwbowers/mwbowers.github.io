@@ -54,7 +54,6 @@ Extension methods for FixedTime.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixedtime{``0-``1}-int32)([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a FixedTime into a int4 (int) with pad. | int targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixedtime{``0-``1}-int64)([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a FixedTime into a int8 (long) with pad. | long targetOperand of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`4](#moverightwithpad\`\`4fixedtime{``0-``1}-fixeddecimal{``2-``3})([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVE. Moves right a DateTime to decimal with pad. | returns a decimal value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [NormalizeYear\\`\\`2](#normalizeyear\`\`2fixedtime{``0-``1})([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html)) | Turns a 4 digit year into a 2 digit year between 1940 and 2039 | .NET FixedTime value.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDuration\\`\\`2](#subtractduration\`\`2fixedtime{``0-``1}-double-durationcode)([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a FixedTime or a timestamp value. | .
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDurationFromTime\\`\\`2](#subtractdurationfromtime\`\`2fixedtime{``0-``1}-double-durationcode)([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a FixedTime value. | .
@@ -520,24 +519,6 @@ MoveRightWithPad``4(ASNA.QSys.Runtime.FixedTime{``0,``1} time, ASNA.QSys.Runtime
 | --- | --- | ---
 | [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html) | time | .NET DateTime type. 
 | [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | targetOperand | The targetOperand decimal. 
-
-
-<br>
-<br>
-
-### NormalizeYear\`\`2([FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html))
-
-Turns a 4 digit year into a 2 digit year between 1940 and 2039
-
-```cs
-NormalizeYear``2(ASNA.QSys.Runtime.FixedTime{``0,``1} time);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html) | time | .NET FixedTime value. 
 
 
 <br>

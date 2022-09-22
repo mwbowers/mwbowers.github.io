@@ -2,7 +2,7 @@
 title: CPF2136Exception Class
 ---
 
-The exception that is thrown when: Renaming library -library-name- failed.
+The exception that is thrown when Renaming library {0} failed.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when: Renaming library -library-name- failed.
 
 ## Remarks
 
-The exception that is thrown when: Renaming library -library-name- failed.
+The exception that is thrown when Renaming library {0} failed.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,13 +25,13 @@ The exception that is thrown when: Renaming library -library-name- failed.
 
 | Name |  Description 
 | --- | --- 
-| **CPF2136Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Constructor that takes: -library-name- and -inner-exception-. Sets message to: Renaming library -library-name- failed.
+| **CPF2136Exception**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF2136Exception class.
 
 <br>
 
 ### CPF2136Exception( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
 
-Constructor that takes: -library-name- and -inner-exception-. Sets message to: Renaming library -library-name- failed.
+Initializes a new instance of the CPF2136Exception class.
 
 ```cs
 CPF2136Exception( String folder, Exception innerException );

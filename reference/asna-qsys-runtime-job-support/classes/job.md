@@ -57,13 +57,16 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [ActivationGroup](/reference/asna-qsys-runtime-job-support/classes/activation-group.html) | ActivationGroup | Gets the Job's activation group. | 
 | [ActivationManager](/reference/asna-qsys-runtime-job-support/classes/activation-manager.html) | ActivationManager | Gets the Job's activation manager. | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | ADO_Connection | Gets the ADO connection used for 'embedded SQL' | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ADO_ConnectionString | Gets or sets the ADO Connection String. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | BatchHostFolder | Gets the Folder path to the directory where the Message Files are located. | 
 | [Job](/reference/asna-qsys-runtime-job-support/classes/job.html) | CurrentJob | Gets the Job associated with the calling thread. | 
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | Database | Gets the main DataGate Database associated with the Job. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DefaultOutputQueue | Gets or Sets the name of the default print Output Queue. | 
 | [DocumentLibraryObject](/reference/asna-qsys-runtime-job-support/classes/document-library-object.html) | DLO | Gets the Job's document library object facility. | 
 | [ExecuteState](/reference/asna-qsys-runtime-job-support/classes/execute-state.html) | ExecuteState | Always returns the State 'Running'. | 
 | [IntergratedFileSystem](/reference/asna-qsys-runtime-job-support/classes/intergrated-file-system.html) | IFS | Gets the Job's integrated file system facility. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueBaseQueuesPath | Gets or sets the folder path root locating the job queues directory. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueEntryExtension | Gets or set the file extension used for job queue entries. Defaults to "jqe". | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueEntryExtension | Gets the file extension used for job queue entries. | 
 | [LocalDataCollection](/reference/asna-qsys-runtime-job-support/classes/local-data-collection.html) | LDC | Gets the Job's Local Data Collection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MessageFileFolder | Gets or sets the Folder path to the directory where the Message Files are located. | 
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | PrinterDB | Gets the DataGate Database for Printer Files associated with the Job. | 
@@ -96,11 +99,12 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSwitches](#getswitches)() | Gets a string representing the values of all 8 job's switches. | A '1' or '0' for each switch. The value of switch 1 is the leftmost postition of the string, switch 8 is in the last position.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReclaimResources](#reclaimresourcesboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Reclaim the resources on the Job's default activation group. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveSystemValue](#retrievesystemvaluestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of an attribute of the current environment. | The value of the attribute requested.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveUserProfile](#retrieveuserprofilestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the name of a user. | The userProfileName value or the nameo of the current user.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SerializeLdaToBase64String](#serializeldatobase64string)() | Converts the value of the LDA to a string representation that is encoded with base-64 digits. | The string representation, in base 64, of the contents of the LDA.
-| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](#setenvironmentfromjobqueueentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Parses the job queue entry attributes into a dictionary and optionaly sets the job's LDA. | A dictionary of the attributes recognized in the job queue entry file.
+| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](#setenvironmentfromjobqueueentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon. | Returns an empty dictionary.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](#setldafieldint32-int32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSwitch](#setswitchint32-char)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the value of one of the 8 job switches to '0' or '1'. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSwitches](#setswitchesstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the first n job switches to the values of the characters passed in a string. | 
@@ -285,6 +289,24 @@ A '1' or '0' for each switch. The value of switch 1 is the leftmost postition of
 <br>
 <br>
 
+### ReclaimResources([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Reclaim the resources on the Job's default activation group.
+
+```cs
+ReclaimResources(Boolean caller);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | caller | true to include the resource of the module's program making this call; otherwise, false. 
+
+
+<br>
+<br>
+
 ### RetrieveSystemValue([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Gets the value of an attribute of the current environment.
@@ -354,7 +376,7 @@ The string representation, in base 64, of the contents of the LDA.
 
 ### SetEnvironmentFromJobQueueEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Parses the job queue entry attributes into a dictionary and optionaly sets the job's LDA.
+This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon.
 
 ```cs
 SetEnvironmentFromJobQueueEntry(String jqeXmlPath);
@@ -364,13 +386,13 @@ SetEnvironmentFromJobQueueEntry(String jqeXmlPath);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jqeXmlPath | The full path to the job queue entry file. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jqeXmlPath |  
 
 #### Returns
 
 [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection)
 
-A dictionary of the attributes recognized in the job queue entry file.
+Returns an empty dictionary.
 
 
 <br>
