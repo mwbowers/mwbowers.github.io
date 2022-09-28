@@ -296,17 +296,24 @@ Manuals:
         path: /manuals/configuration/expo-client-side-library.html
   - sectiontitle: Enhancing your Migrated Application
     section:
-    - sectiontitle: Using Non-Display File Pages
-      sectionpath: /manuals/migrations/enhancing-with-non-display-file.html
+    - sectiontitle: Enhancing the User Interface
       section:
-      - title: Showing a Non-DisplayFile Page
-        path: /manuals/migrations/showing-non-displayfile-page.html
-      - title: Calling a Program from a Non-DisplayFile Page
-        path: /manuals/migrations/calling-program-from-non-displayfile-page.html
-      - title: Unwinding the Call Stack via EndRequest
-        path: /manuals/migrations/unwinding-call-stack-via-endrequest.html
-      - title: Accessing Session Values from MyJob Class
-        path: /manuals/migrations/session-values-from-myjob.html
+      - sectiontitle: Adding View Elements to Display File Page
+        sectionpath: /manuals/enhancements/enhancing-ui/adding-view-elements.html
+        section:
+        - title: Adding DdsButton
+          path: /manuals/enhancements/enhancing-ui/adding-ddsbutton.html
+      - sectiontitle: Using Non-Display File Pages
+        sectionpath: /manuals/enhancements/enhancing-ui/enhancing-with-non-display-file.html
+        section:
+        - title: Showing a Non-DisplayFile Page
+          path: /manuals/enhancements/enhancing-ui/showing-non-displayfile-page.html
+        - title: Calling a Program from a Non-DisplayFile Page
+          path: /manuals/enhancements/enhancing-ui/calling-program-from-non-displayfile-page.html
+        - title: Unwinding the Call Stack via EndRequest
+          path: /manuals/enhancements/enhancing-ui/unwinding-call-stack-via-endrequest.html
+        - title: Accessing Session Values from MyJob Class
+          path: /manuals/enhancements/enhancing-ui/session-values-from-myjob.html
   - sectiontitle: Monarch Operations Management
     sectionpath: /manuals/mom/mom-overview.html
     section:
@@ -2492,6 +2499,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/col-tag-helper.html
     - title: DdsButtonTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-button-tag-helper.html
+    - title: DdsButton Icon Reference
+      path: /reference/asna-qsys-expo/expo-tags/dds-button-icon-reference.html
     - title: DdsCharFieldTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-char-field-tag-helper.html
     - title: DdsCheckboxFieldTagHelper
