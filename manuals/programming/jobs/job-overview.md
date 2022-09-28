@@ -24,12 +24,12 @@ IBM i Jobs can generally be classified as being either batch or interactive, whe
 
 Monarch provides an execution context anchored around the concept of a Job and implemented in its class library. Similar to IBM i Jobs, Monarch Jobs are classified as [Batch](batch-jobs.html) or [Interactive](interactive-jobs.html). 
 
-Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process; these Interactive jobs are associated with an ASP.NET Session.
+Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process; these Interactive jobs are associated with an ASP.NET Core Session.
 Monarch Batch jobs can be run in their own process or on a dedicated thread in the same process of the job that started it. 
 
 Monarch Jobs can be started in one of three ways:
 1.	A new batch immediate job is created by a program running in an existing job using one of these methods:[StartBatchJobInProcess](batch-jobs.html#osexec--start-batch-job-in-process), [StartBatchJobOutOfProcess](batch-jobs.html#osexec--start-batch-job-out-of-process) or [OSExecute](batch-jobs.html#osexec--start-submitted-job-immediately).
 2.	A batch job request is submitted to a queue and then created by a job dispatcher like the [MBS](batch-jobs.html#monarch-batch-subsystem-mbs).
-3.	An interactive job is created when a new ASP.NET Session is started.
+3.	An interactive job is created when a new ASP.NET Core Session is started.
 
 Additional Job concepts can be found [here](/concepts/architecture/application-architecture.html#application-architectures).
