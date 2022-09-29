@@ -10,7 +10,7 @@ For example, the following fragment of [DDS](https://www.ibm.com/docs/en/i/7.2?t
 
 ```
      A          R WINDOW1                   WINDOW(4 20 9 30)
-     A            FIELD1         8A  B  5 10
+     A            FIELD1         8A  B  2 10
      A            FIELD2        10A  B  6 10
 ```
 
@@ -25,4 +25,10 @@ The `FIELD1` field starts 2 rows lower than the upper border and 11 columns (the
 * Actual field column = left border column + column of field + 1
 
 The `FIELD2` field starts 6 rows lower than the upper border and 11 columns to the right of the left border (row 10, column 31 on the display).
+
+![WINDOW1 terminal rendering](images/window1-on-ibmi.svg)
+
+## Overlaying Window records
+
+It is very common to use `WINDOW` records that Overlay on top of other records currently displayed in the Page (See [OVERLAY](https://www.ibm.com/docs/en/i/7.2?topic=80-overlay-overlay-keyword-display-files) ).
 
