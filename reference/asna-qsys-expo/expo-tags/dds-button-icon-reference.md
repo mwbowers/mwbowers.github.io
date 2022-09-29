@@ -9,7 +9,7 @@ The *Icon Shapes* are simple and clean, monochrome (color can be changed to any 
 
 *ASNA Monarch&reg;* Icon library contains 250 named shapes, which should be sufficient for most of the [DdsButtons](dds-button-tag-helper.html) TagHelpers you application may need.
 
-| Name | Icon Shape 
+| Name ID | Icon Shape 
 | --- | --- 
 | adjust | ![](images/dds-button-iconids/adjust.png/)
 | align-center | ![](images/dds-button-iconids/align-center.png/)
