@@ -79,6 +79,8 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-advanced-css.html
     - title: Expo Client Subfile
       path: /concepts/user-interface/qsys-expo-client-subfile.html
+    - title: Expo Window Design
+      path: /concepts/user-interface/qsys-expo-window-design.html
   - sectiontitle: Reports
     sectionpath: /concepts/printing/printing-introduction.html
     section:
