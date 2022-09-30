@@ -300,11 +300,8 @@ Manuals:
     section:
     - sectiontitle: Enhancing the User Interface
       section:
-      - sectiontitle: Adding View Elements to Display File Page
-        sectionpath: /manuals/enhancements/enhancing-ui/adding-view-elements.html
-        section:
-        - title: Adding DdsButton
-          path: /manuals/enhancements/enhancing-ui/adding-ddsbutton.html
+      - title: Adding View Elements to Display File Page
+        path: /manuals/enhancements/enhancing-ui/adding-view-elements.html
       - sectiontitle: Using Non-Display File Pages
         sectionpath: /manuals/enhancements/enhancing-ui/enhancing-with-non-display-file.html
         section:
@@ -2541,6 +2538,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/dds-time-field-tag-helper.html
     - title: FieldBase
       path: /reference/asna-qsys-expo/expo-tags/field-base.html
+    - title: Field as Dropdown Box
+      path: /reference/asna-qsys-expo/expo-tags/field-as-dropdown-box.html
     - title: LeftPadOption
       path: /reference/asna-qsys-expo/expo-tags/field-base/left-pad-option.html
     - title: RecordBaseTagHelper
