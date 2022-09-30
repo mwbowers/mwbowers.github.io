@@ -108,11 +108,11 @@ If you have followed the [Expo DDS-like TagHelpers](concepts/user-interface/qsys
 
 ![HTML window without background](images/page-html-window-no-background.png)
 
->Image has been simplified for clarification. Large attribute data cut and some elements (not relevant to discussion) have been omitted.
+>The screen-shot has been simplified for clarification. Large attribute data cut and some elements (not relevant to discussion) have been omitted.
 
 Focus in the `<main role="main"` branch. You should identify the record `MYWINDOW` that contains subfile-controller record `SFLC` with rows 2 and 4 (which render the constants `1 = Select` and `Sel Value Description` header) and the Subfile records on Rows 5-12.
 
-
+>The private attribute `data-asna-row` on `DIV` elements is not actually used, it is there for documentation (to assist searching for elements while exploring the page using Development tools).
 
 ### How is the WINDOW offset achieved?
 
@@ -122,15 +122,79 @@ As far as the horizontal offset (column), the CSS `grid-column-start` is adjuste
 
 ![Column start offset on Fields](images/page-window-field-col-displacement.png)
 
-
+>Subfile record *highlighting* has more complexity, but the topic is outside the scope of this documentation.
 
 
 ### How is the Window Frame implemented?
+As you may have noticed, each Page *Row* uses [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), futhermore, *Rows* are independent from each other (to facilitate enhancing paging by adding elements that are larger than the size of a grid-cell, and or have different Layout).
 
+HTML does not provide a way to *Group* selected Grid-positioned elements across different elements (each with a separate Grid Layout), such as the architecture used by Expo to render Displayfiles.
 
+The usual techniques to add frames to elements using `CSS` styles is **not possible** given how *Rows* are implemented. 
+
+![Window Popup element](images/page-popup-selected.png)
+
+>Elements that are not strictly part of *main* role are rendered outside of the `<form>` branch. This makes it easier to explore HTML (without distraction). 
+
+We want to focus our attention to the Window Frame implementation, which happens to be in this *outside* area of the HTML.
+
+The image above show the `div.dds-window-popup` element selected and you can see that it uses the following CSS style, plus has an inline style with several important attributes.
+
+```css
+.dds-window-popup {
+    position: absolute;
+    background: var(--popup-background);
+    display: block;
+    border: var(--popup-border-width) solid var(--popup-background);
+    border-radius: 5px;
+    text-align: center;
+}
+```
+
+The most important style of this class is the `position` property. It is set to `absolute`, to allow us to place it in an area that expands multiple Rows, with precision.
+
+An `absolute` positioned element requires explicit specification of the rectangle where this element will take place. That is:
+
+* left
+* top
+* width
+* height
+
+The computation of the values of these four properties is done based on the [Bounding Client Rect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) function provided by the Browser's [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), given strategic cells on the interested area (spanning multiple *Rows*). That is, currently positioned cells at the *upper-left* and *lower-right* corners of the WINDOW on the screen.
+
+>If no elements exist right at those corners, two are created with a blank (just to use them as reference).
+
+Once the `window-popup` element is created in the right place, a [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) is selected, to display the `window-popup` behind the *Rows* (but above the *record formats in background* - from previous overlaid records).
 
 ### Where is the Window Title?
 
+Now that we have a Window `html` element properly positioned in the Page, we can easily create a child `DIV` with the Title as contents, with the following style:
 
+```css
+.dds-window-header {
+    height: var(--popup-header-height);
+    line-height: var(--popup-header-height);
+    color: white;
+    background-color: darkblue;
+}
+```
 
+And the Window with its Tile is rendered as:
+
+```html
+<div class="dds-window-popup" style="z-index: 3; top: 219.179px; width: 466.832px; height: 355.117px; left: 330px;">
+   <div class="dds-window-header">Select a State</div>
+</div>
+
+```
+
+## Preserving Records from Prior Pages
+
+Here comes the toughest part of the Design.
+
+`CSS` provides a simple and straightforward approach to display information in the background of Pages, provided that this information comes in the shape of solid-colors or an *image*.
+
+It would be wonderful if before submitting a request to the server (Enter of Command key), we could take a snapshot of the current contents of the `Main HTML` branch. We could save it in a session storage in the Browser, restore it when a new WINDOW page is about to be presented as part of the Server Response and *Voilà* we have accomplished our goal.
+
+Sadly, the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) does not provide functionality to take pictures of the current Page.
 
