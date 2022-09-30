@@ -2,6 +2,8 @@
 title: Expo Window Design
 ---
 
+## IBM i DDS WINDOWS
+
 IBM i DDS Keyword [WINDOW](https://www.ibm.com/docs/en/i/7.2?topic=80-window-window-keyword-display-files) is a *record-level* keyword to specify that the record format you are defining will be displayed using a window.
 
 A DDS WINDOW defines a rectangular area on the grid screen commonly specified by a starting position (*upper-left* corner of the rectangle), a *height* (vertically occupying rows), and a *width* (horizontal columns).
@@ -32,7 +34,7 @@ The following image shows the *green-screen* (terminal) rendering:
 
 >The WINDOW frame shown in this picture does not appear in the Terminal screen - given the simple `DDS` listed above -. It is presented here for visualization clarity. The number guides for rows and columns are also not part of the screen output. Applications generate frames, title etc. using character screen attributes and other keywords such as: `WDWBORDER`, `WDWTITLE`.
 
-## Overlaying Window records
+### Overlaying Window records
 
 It is very common to use `WINDOW` records that Overlay on top of other records currently displayed in the Page (See [OVERLAY](https://www.ibm.com/docs/en/i/7.2?topic=80-overlay-overlay-keyword-display-files) ).
 
@@ -42,7 +44,7 @@ You use this *record-level* keyword to specify that the record format that you a
 
 To describe how the legacy Displayfile rendering is implemented using RazorPage technology, let's use a real scenario.
 
->This topic assume you have read [Expo DDS-like TagHelpers](concepts/user-interface/qsys-expo-dds-elements.html)
+>This topic assumes you have read [Expo DDS-like TagHelpers](qsys-expo-dds-elements.html)
 
 An application presents a Page with *CUSTOMER MAINTENANCE* records, and enables `F4` command key to present a `WINDOW` that overlaps on the page.
 
