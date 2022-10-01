@@ -120,6 +120,20 @@ Focus in the `<main role="main"` branch. You should identify the record `MYWINDO
 
 The `DdsRecord` has a property `WindowTopRow` with value equals to `9`. According to [WINDOW Keyword on IBMi Manual](https://www.ibm.com/docs/en/i/7.1?topic=80-window-window-keyword-display-files), the fields are displaced-down by the `WINDOW` *start-line* (+1), the [Expo Client JavaScript](qsys-expo-client-library.html) page-initialization code will inject `10` **empty-row** filler `DIV` elements to push the Window record down.
 
+This can be appreciated in the image above, by the elements injected above the `data-asna-record="SFLC"` element, listed here:
+
+```html
+<div data-asna-row="1" class="dds-grid-empty-row"></div>
+<div data-asna-row="2" class="dds-grid-empty-row"></div>
+<div data-asna-row="3" class="dds-grid-empty-row"></div>
+<div data-asna-row="4" class="dds-grid-empty-row"></div>
+<div data-asna-row="5" class="dds-grid-empty-row"></div>
+<div data-asna-row="6" class="dds-grid-empty-row"></div>
+<div data-asna-row="7" class="dds-grid-empty-row"></div>
+<div data-asna-row="8" class="dds-grid-empty-row"></div>
+<div data-asna-row="9" class="dds-grid-empty-row"></div>
+```
+
 As far as the horizontal offset (column), the CSS `grid-column-start` is adjusted by the page JavaScript initialization code. 
 
 ![Column start offset on Fields](images/page-window-field-col-displacement.png)
