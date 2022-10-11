@@ -134,17 +134,14 @@ The new `DIV` has in-line style defining the position and dimensions of the *Pop
     border: var(--popup-border-width) solid var(--popup-background);
     border-radius: 5px;
     text-align: center;
+    border-color: blue;
+    border-width: medium;
 }
 
 .dds-window-popup-record-container {
     background: var(--popup-background);
     width: 100%;
     height:100%;
-}
-
-.dds-window-popup {
-    border-color: blue;
-    border-width: medium;
 }
 
 .dds-window-header {
@@ -252,8 +249,45 @@ To make the Inspection of the Elements a good experience, it is highly recommend
 
 Using this technique, it is possible to move the large image data-value out of the way, and locate the elements inside the *Popup* Window.
 
+We have talked about the image data and how JavaScript in Expo Library will read it from Session Storage and set the contents as variables to affect the "Main" `DIV` background. 
 
+Now let's discuss the [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position).
 
+During Page initialization, depending on the `DdsFunctionKeys Location` property, the variable `--main-window-background-position` will be changed, from the default `left top` to possibly: `right top`, `center bottom` etc. Different locations (which governs the *two-panel* [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layou) ) work better with the different `background-position` styles.
+
+<br>
+
+### Hooks to User-Defined JavaScript
+The process of *Storing* new Background Images can be affected by User-defined JavaScript code. Each time a new "Main" HTML capture process is performed, the following functions (if defined) are called:
+
+* `MonarchPageSavingForPopup()` - Called right before the HTML to image process is requested.
+* `MonarchPageForPopupSaved()` - Called right after the HTML to image process completes.
+
+No parameters are passed (the DOM is accessible to User-defined code).
+
+In addition, there is another callback, namely, `MonarchWindowBackgroundHtmlToImageFilter(node)` which is called for every node in the DOM tree (starting at "Main" `DIV`). If the callback is implemented, User-defined code has a chance to *filter* the node (and its descendants) for inclusion. If the function returns `false`, the node is excluded from the image.
+
+### Images that violate CORS will be excluded
+
+When an image on the Page comes from an external site (or some other type of [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) violation), the image will be excluded and the 'Previous' page (used by subsequent WINDOW displays), will be incomplete.
+
+You will know which images *may* be missing, just by looking at your unit-testing Pages. If this is a required image for the Pages with WINDOWS, then you need to bring the resource first to your site and use that image instead.
+
+<br>
+
+### Overriding WINDOW Styles
+
+We have talked about several important `CSS` styles that affect the look of Pages with WINDOWS. Your application most likely define its own color *Theme* and/or additional *non-Monarch* `HTML` elements around the Display file "Main" area.
+
+The standard [Cascading CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade) rules apply.
+
+[ASNA Expo Web Content](qsys-expo-web-content.html) library defines the *framework* styles in your root page at: `~\wwwroot\lib\asna-expo\css\expo.css`
+
+Your own `CSS` most likely comes from file: `~\wwwroot\css\site.css` you can `Cascade` any of the styles on this file (it is loaded after `ASNA Expo Web Content` own `CSS`)
+
+If you want to override the styles that the *framework* defines as computed from `CSS variables` (as explained in this topic), you can still override the setting with your hard-coded style in `~\wwwroot\css\site.css`
+
+For more advanced customization, the `CSS variables` are accessible from your user-defined JavaScript.
 
 
 
