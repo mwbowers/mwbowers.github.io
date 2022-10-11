@@ -170,9 +170,87 @@ Regardless of the fact that an Application may (or may not) use WINDOW records, 
 
 ### Storing the Background Image
 
+Web Browsers allow private (client) storage of string items. [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)includes [Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), that is *transient* as long as the *Session* exists. [ASNA Expo Web Content](qsys-expo-web-content.html) JavaScript makes use of this facility to store `Previous` record state.
+
+The following Browser Development Tools screen-shot, shows what will appear in the *Application* storage for the example we are presenting here.
+
+![Application Session Storage](images/page-window-session-storage.png)
+
+When *Submitting* (as described before), the "Main" `DIV HTML` is converted to a [png]((https://en.wikipedia.org/wiki/Portable_Network_Graphics)) - using the *string* `data:image` with the [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64) encoding, replacing any item in the *Session* with the name `ASNA.PrevPage.Background`.
+
+
 ### Retrieving the Background Image
 
+When a new page that **contains a WINDOW** is about to be rendered, the Expo initialization logic will look in the *Session* storage items, the image that will be set as the [CSS Background image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) to be used by the "Main" `DIV`.
 
+> For simplicity, lets assume the image we want is the one stored in item named `ASNA.PrevPage.Background`. For more advanced scenarios, where multiple-overlapping WINDOWS are used, a [stack](https://www.techopedia.com/definition/9523/stack) of items is used. 
+
+Once the proper image is found in the [Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), the string data is set to a [CSS Variable](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), as follows:
+
+Let's peek into the `CSS` for the "Main" `DIV':
+
+```css
+.display-element-initialized {
+    background-image: var(--main-window-background);
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-attachment: fixed;
+    background-position: var(--main-window-background-position);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+```
+
+Notice that there are several styles that indicate how this image will be displayed in the background. For the sake of this description, let's focus on two styles:
+
+```css
+    background-image: var(--main-window-background);
+    background-position: var(--main-window-background-position);
+```
+
+`HTML Elements` allow creation of `Custom CSS Properties (variables)` with are named by the use of prefix `--`, like:
+
+```css
+element {
+  --main-bg-color: brown;
+}
+```
+
+These values may be later referred to by the use of `var` keyword in the `CSS` syntax:
+
+```css
+element {
+  --main-bg-color: brown;
+  background-color: var(--main-bg-color);
+}
+```
+
+A more common approach is to collect all these `CSS variables` and set them at the `root` element.
+
+```css
+:root {
+  --main-bg-color: brown;
+}
+```
+
+>The `root` element of a `HTML` page is the `html` tag. (The `:root` CSS syntax adds these properties to the `html` element in a page).
+
+Browser's Developer Tools, show the initial value of the `:root` variables at the bottom pf the Style property panel, but when these variables are changed by JavaScript code, their new *overridden* value appears as *in-line* properties to the `html` element (as shown below):
+
+<br>
+
+![html in-line custom properties](images/page-window-html-attributes.png)
+
+
+
+>When setting large values (as it is the case for image encoded data), it is *unfortunate* that the inspection of elements using Developer Tools is obscured.
+
+To make the Inspection of the Elements a good experience, it is highly recommended that you use the **Search** feature, asking the Inspector to locate the "main" element.
+
+![Main element located](images/page-window-main-inspection.png)
+
+Using this technique, it is possible to move the large image data-value out of the way, and locate the elements inside the *Popup* Window.
 
 
 
