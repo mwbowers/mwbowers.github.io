@@ -170,9 +170,9 @@ Regardless of the fact that an Application may (or may not) use WINDOW records, 
 
 ### Storing the Background Image
 
-Web Browsers allow private (client) storage of string items. [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage)includes [Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), that is *transient* as long as the *Session* exists. [ASNA Expo Web Content](qsys-expo-web-content.html) JavaScript makes use of this facility to store `Previous` record state.
+Web Browsers allow private (client) storage of string items. [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage) includes [Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), that is *transient* as long as the *Session* exists. [ASNA Expo Web Content](qsys-expo-web-content.html) JavaScript makes use of this facility to store `Previous` record state.
 
-The following Browser Development Tools screen-shot, shows what will appear in the *Application* storage for the example we are presenting here.
+The following Browser's Development Tools screen-shot, shows what will appear in the *Application* storage for the example we are presenting here.
 
 ![Application Session Storage](images/page-window-session-storage.png)
 
