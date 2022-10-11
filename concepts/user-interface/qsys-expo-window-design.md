@@ -96,97 +96,57 @@ The Displayfile for the WINDOW record, is described in a file called `AppViews\P
 </form>
 ```
 
-As you can see in this Markup listing, only the record `MYWINDOW` which contains the `Subfile` which is used to populate with the database list that contains the US Zip codes is presented in this Displayfile, the `Previous` pages are not in this Displayfile.
+As you can see in this Markup listing, only the record `MYWINDOW` is described, containing the `Subfile` which will be used to populate with the database records (US Zip codes). Any `Previous` records shown at runtime on the Page **are not** described in this Displayfile.
 
-One way of describing the complex implementation of the Overlapping WINDOW Anatomy, is by removing the different layers and build it up as we go.
+Let's ignore for a moment how the `Previous` records will be recovered, and focus on the WINDOW active records. The following page would be rendered.
 
-Let's assume there are NO prior records (in this Displayfile or from any other Displayfile). 
+![Popup without Prior records](images/page-window-no-background.png)
 
-Displaying (Executing record format `MYWINDOW` from the App Logic), would show the following screen:
+### The Popup Window
 
-![Window without records in background](images/page-window-no-background.png)
+With reference to the previous image, you can notice that *all* records appear now on a *Popup* Window (once we recover the previous records, the Popup nature will be more obvious).
 
-If you have followed the [Expo DDS-like TagHelpers](concepts/user-interface/qsys-expo-dds-elements.html) topic, the following HTML rendering should be familiar:
+Microsoft Razor rendering output will initially have the *Rows* laid out on the "main" `DIV`. The *Expo* JavaScript Library has initialization code that will recognize the need to create a `DIV` that will be used for the *Popup* Window (with its Title and frame), using the meta-data rendered resulting from the `DdsRecord` properties `WindowLeftCol`, `WindowTopRow`, `WindowWidthCols` and `WindowHeightRows`.
 
-![HTML window without background](images/page-html-window-no-background.png)
-
->The screen-shot has been simplified for clarification. Large attribute data cut and some elements (not relevant to discussion) have been omitted.
-
-Focus in the `<main role="main"` branch. You should identify the record `MYWINDOW` that contains subfile-controller record `SFLC` with rows 2 and 4 (which render the constants `1 = Select` and `Sel Value Description` header) and the Subfile records on Rows 5-12.
-
->The private attribute `data-asna-row` on `DIV` elements is not actually used, it is there for documentation (to assist searching for elements while exploring the page using Development tools).
-
-### How is the WINDOW offset achieved?
-
-The `DdsRecord` has a property `WindowTopRow` with value equals to `9`. According to [WINDOW Keyword on IBMi Manual](https://www.ibm.com/docs/en/i/7.1?topic=80-window-window-keyword-display-files), the fields are displaced-down by the `WINDOW` *start-line* (+1), the [Expo Client JavaScript](qsys-expo-client-library.html) page-initialization code will inject `10` **empty-row** filler `DIV` elements to push the Window record down.
-
-This can be appreciated in the image above, by the elements injected above the `data-asna-record="SFLC"` element, listed here:
+Following the example, the following `HTML` will be injected to the `DIV` that defines the "Main" Displayfile area:
 
 ```html
-<div data-asna-row="1" class="dds-grid-empty-row"></div>
-<div data-asna-row="2" class="dds-grid-empty-row"></div>
-<div data-asna-row="3" class="dds-grid-empty-row"></div>
-<div data-asna-row="4" class="dds-grid-empty-row"></div>
-<div data-asna-row="5" class="dds-grid-empty-row"></div>
-<div data-asna-row="6" class="dds-grid-empty-row"></div>
-<div data-asna-row="7" class="dds-grid-empty-row"></div>
-<div data-asna-row="8" class="dds-grid-empty-row"></div>
-<div data-asna-row="9" class="dds-grid-empty-row"></div>
+<div class="dds-window-popup" style="left: 330px; top: 215.75px; width: 477px; height: 367.466px;">
+   <div class="dds-window-header">Select a State      </div>
+      <div class="dds-window-popup-record-container">
+
+   .
+   .
+   .
+
+      </div>
+    </div>
+</div>
 ```
 
-As far as the horizontal offset (column), the CSS `grid-column-start` is adjusted by the page JavaScript initialization code. 
-
-![Column start offset on Fields](images/page-window-field-col-displacement.png)
-
->Subfile record *highlighting* has more complexity, but the topic is outside the scope of this documentation.
-
-
-### How is the Window Frame implemented?
-As you may have noticed, each Page *Row* uses [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), futhermore, *Rows* are independent from each other (to facilitate enhancing paging by adding elements that are larger than the size of a grid-cell, and or have different Layout).
-
-HTML does not provide a way to *Group* selected Grid-positioned elements across different elements (each with a separate Grid Layout), such as the architecture used by Expo to render Displayfiles.
-
-The usual techniques to add frames to elements using `CSS` styles is **not possible** given how *Rows* are implemented. 
-
-![Window Popup element](images/page-popup-selected.png)
-
->Elements that are not strictly part of *main* role are rendered outside of the `<form>` branch. This makes it easier to explore HTML (without distraction). 
-
-We want to focus our attention to the Window Frame implementation, which happens to be in this *outside* area of the HTML.
-
-The image above show the `div.dds-window-popup` element selected and you can see that it uses the following CSS style, plus has an inline style with several important attributes.
+The new `DIV` has in-line style defining the position and dimensions of the *Popup* Window and the associated `CSS` describes the rest of the needed style. Of particular importance is the `position` style, which is indicated as `relative` to its container element.
 
 ```css
 .dds-window-popup {
-    position: absolute;
-    background: var(--popup-background);
+    position: relative;
     display: block;
+    overflow: hidden;
     border: var(--popup-border-width) solid var(--popup-background);
     border-radius: 5px;
     text-align: center;
 }
-```
 
-The most important style of this class is the `position` property. It is set to `absolute`, to allow us to place it in an area that expands multiple Rows, with precision.
+.dds-window-popup-record-container {
+    background: var(--popup-background);
+    width: 100%;
+    height:100%;
+}
 
-An `absolute` positioned element requires explicit specification of the rectangle where this element will take place. That is:
+.dds-window-popup {
+    border-color: blue;
+    border-width: medium;
+}
 
-* left
-* top
-* width
-* height
-
-The computation of the values of these four properties is done based on the [Bounding Client Rect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect) function provided by the Browser's [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model), given strategic cells on the interested area (spanning multiple *Rows*). That is, currently positioned cells at the *upper-left* and *lower-right* corners of the WINDOW on the screen.
-
->If no elements exist right at those corners, two are created with a blank (just to use them as reference).
-
-Once the `window-popup` element is created in the right place, a [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) is selected, to display the `window-popup` behind the *Rows* (but above the *record formats in background* - from previous overlaid records).
-
-### Where is the Window Title?
-
-Now that we have a Window `html` element properly positioned in the Page, we can easily create a child `DIV` with the Title as contents, with the following style:
-
-```css
 .dds-window-header {
     height: var(--popup-header-height);
     line-height: var(--popup-header-height);
@@ -195,22 +155,29 @@ Now that we have a Window `html` element properly positioned in the Page, we can
 }
 ```
 
-And the Window with its Tile is rendered as:
+The next step (of the initialization logic) is to move ALL *Rows* from the the "Main" element to the DIV with class `dds-window-popup-record-container`.
 
-```html
-<div class="dds-window-popup" style="z-index: 3; top: 219.179px; width: 466.832px; height: 355.117px; left: 330px;">
-   <div class="dds-window-header">Select a State</div>
-</div>
 
-```
+> Since records where moved from the "Main" `DIV` to the new *Popup* Window, the "Main" element does not have a *natural* height, JavaScript logic sets the `min-height` in-line style to produce an empty page. (The size comes from `27` multiplied by the computed height of a *Row*)
 
-## Preserving Records from Prior Pages
+### The Previous record's Rendering
 
-Here comes the toughest part of the Design.
+All Pages need to prepare an *image* of what is presently on the Page that *may* become the previous page on a subsequent Window display.
 
-`CSS` provides a simple and straightforward approach to display information in the background of Pages, provided that this information comes in the shape of solid-colors or an *image*.
+Regardless of the fact that an Application may (or may not) use WINDOW records, any Page will *Store* the an image of the *current* contents of the "Main" `DIV` to be used as the *background* of a subsequent Page with Window records.
 
-It would be wonderful if before submitting a request to the server (Enter of Command key), we could take a snapshot of the current contents of the `Main HTML` branch. We could save it in a session storage in the Browser, restore it when a new WINDOW page is about to be presented as part of the Server Response and *Voilà* we have accomplished our goal.
+[ASNA Expo Web Content](qsys-expo-web-content.html) JavaScript includes a third-party module to convert `HTML` to [png image format](https://en.wikipedia.org/wiki/Portable_Network_Graphics). The *trigger* event when the *Capture* of the "Main" `DIV` is converted to an image is just before calling the [Form Submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) function. The [Form Submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) function is called, in response to pushing `Command` action keys (i.e `Enter` and Function keys), of any button associated with that action.
 
-Sadly, the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) does not provide functionality to take pictures of the current Page.
+### Storing the Background Image
+
+### Retrieving the Background Image
+
+
+
+
+
+
+
+
+
 
