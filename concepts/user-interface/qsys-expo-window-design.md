@@ -149,6 +149,8 @@ The new `DIV` has in-line style defining the position and dimensions of the *Pop
     line-height: var(--popup-header-height);
     color: white;
     background-color: darkblue;
+    cursor: grab;
+    user-select: none;
 }
 ```
 
@@ -289,7 +291,15 @@ If you want to override the styles that the *framework* defines as computed from
 
 For more advanced customization, the `CSS variables` are accessible from your user-defined JavaScript.
 
+### Popup WINDOW Drag/Drop
 
+Popup WINDOW Header is draggable, when *hovering* the mouse pointer over the Window Popup header you will notice that the mouse pointer changes to a *Drag* icon hand (checkout `dds-window-header` class above). *Dragging* the Popup Window works as expected: the Window is re-positioned on it's background Page.
+
+When the WINDOW is displayed again (the record is re-executed by the Application logic), the *new* Window position is lost, and the position defined by the Razor Page overrides any Window Dragging performed.
+
+>This is may be particularly confusing when using multiple overlapping windows.
+
+Of minor importance - but worth noticing - the *Window Title* (being part of the draggable element), cannot be selecting for Copy/Paste.
 
 
 
