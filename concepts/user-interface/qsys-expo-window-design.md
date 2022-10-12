@@ -299,7 +299,7 @@ When the WINDOW is displayed again (the record is re-executed by the Application
 
 >This is may be particularly confusing when using multiple overlapping windows.
 
-Of minor importance - but worth noticing - the *Window Title* (being part of the draggable element), cannot be selecting for Copy/Paste.
+Of minor importance - but worth noticing - the *Window Title* (being part of the draggable element), cannot be selected to be used for Copy/Paste.
 
 
 
