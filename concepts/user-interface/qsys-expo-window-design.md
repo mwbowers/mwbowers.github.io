@@ -4,7 +4,7 @@ title: Expo Window Design
 
 ## IBM i DDS WINDOWS
 
-IBM i DDS Keyword [WINDOW](https://www.ibm.com/docs/en/i/7.2?topic=80-window-window-keyword-display-files) is a *record-level* keyword to specify that the record format you are defining will be displayed using a window.
+IBM i DDS Keyword [WINDOW](https://www.ibm.com/docs/en/i/7.2?topic=80-window-window-keyword-display-files) is a *record-level* keyword used to specify that the record format you are defining will be displayed using a window.
 
 A DDS WINDOW defines a rectangular area on the grid screen commonly specified by a starting position (*upper-left* corner of the rectangle), a *height* (vertically occupying rows), and a *width* (horizontal columns).
 
@@ -15,13 +15,12 @@ For example, the following fragment of [DDS](https://www.ibm.com/docs/en/i/7.2?t
      A            FIELD1         8A  B  2 10
      A            FIELD2        10A  B  6 10
 ```
-
-When the `WINDOW1` record is displayed, the *upper-left* corner of the window border is on row 4 column 20 of the display. The *lower-right* corner of the border is located 10 rows lower than the upper border and 33 columns to the right of the left border.
+`WINDOW1` is described as starting in Row 4 Column 20 and ending at Row 9 Column 30.  When the `WINDOW1` record is displayed, the *upper-left* corner of the window border is on row 4 column 20 of the display. The *lower-right* corner of the border is located 10 rows lower than the upper border and 33 columns to the right of the left border.
 
 * *Lower* border row = *upper* border row + *height* (window-rows) + 1
 * *Right* border column = *left* border column + *width* (window-columns) + 3
 
-The `FIELD1` field starts 2 rows lower than the upper border and 11 columns (the ending attribute byte for the border character has been taken into account) to the right of the left border character (row 6, column 31 on the display).
+The `FIELD1` field is described as being located in Row 2 Column 10 relative to the window, so when displayed, it starts 2 rows lower than the upper border and 11 columns (the ending attribute byte for the border character has been taken into account) to the right of the left border character (row 6, column 31 on the display).
 
 * Actual field row = upper border row + row number of field
 * Actual field column = left border column + column of field + 1
@@ -62,11 +61,13 @@ The Displayfile for the WINDOW record, is described in a file called `AppViews\P
         <DdsFunctionKeys Location="HorizontalBottom" />
 
         <main role="main" class="display-element-uninitialized">
-            <DdsRecord For="MYWINDOW" WindowLeftCol=30 WindowTopRow=9 WindowWidthCols=43 WindowHeightRows=14 WindowTitle=@Model.MYWINDOW.WINTITLE>
+            <DdsRecord For="MYWINDOW" WindowTitle=@Model.MYWINDOW.WINTITLE
+                       WindowLeftCol=30 WindowTopRow=9 WindowWidthCols=43 WindowHeightRows=14 >
                 @{
                     int SFLC_SubfilePage = 8;
                 }
-                <DdsSubfileControl For="SFLC"  SubfilePage="@SFLC_SubfilePage" ShowRecordNumber="(int)@Model.SFLC.SFLRRN" CueCurrentRecord=true ClickSetsCurrentRecord=true>
+                <DdsSubfileControl For="SFLC"  SubfilePage="@SFLC_SubfilePage" ShowRecordNumber="(int)@Model.SFLC.SFLRRN" 
+                                   CueCurrentRecord=true ClickSetsCurrentRecord=true>
                     <div Row="2">
                         <DdsConstant Col="2" Text="1=Select" Color="Blue" />
                     </div>
@@ -157,15 +158,15 @@ The new `DIV` has in-line style defining the position and dimensions of the *Pop
 The next step (of the initialization logic) is to move ALL *Rows* from the the "Main" element to the DIV with class `dds-window-popup-record-container`.
 
 
-> Since records where moved from the "Main" `DIV` to the new *Popup* Window, the "Main" element does not have a *natural* height, JavaScript logic sets the `min-height` in-line style to produce an empty page. (The size comes from `27` multiplied by the computed height of a *Row*)
+> Since records were moved from the "Main" `DIV` to the new *Popup* Window, the "Main" element does not have a *natural* height, JavaScript logic sets the `min-height` in-line style to produce an empty page. (The size comes from `27` multiplied by the computed height of a *Row*)
 
 ### The Previous record's Rendering
 
-All Pages need to prepare an *image* of what is presently on the Page that *may* become the previous page on a subsequent Window display.
+When a Page is submitted it needs to prepare an *image* of what is presently on the Page that *may* become the 'previous' page on a subsequent Window display.
 
-Regardless of the fact that an Application may (or may not) use WINDOW records, any Page will *Store* the an image of the *current* contents of the "Main" `DIV` to be used as the *background* of a subsequent Page with Window records.
+Regardless of the fact that an Application may (or may not) use WINDOW records, any Page will *Capture* and *Store* its image of the *current* contents of the "Main" `DIV` to be used as the *background* of a subsequent Page with Window records.
 
-[ASNA Expo Web Content](qsys-expo-web-content.html) JavaScript includes a third-party module to convert `HTML` to [png image format](https://en.wikipedia.org/wiki/Portable_Network_Graphics). The *trigger* event when the *Capture* of the "Main" `DIV` is converted to an image is just before calling the [Form Submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) function. The [Form Submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) function is called, in response to pushing `Command` action keys (i.e `Enter` and Function keys), of any button associated with that action.
+[ASNA Expo Web Content](qsys-expo-web-content.html) JavaScript includes a module to convert `HTML` to [png image format](https://en.wikipedia.org/wiki/Portable_Network_Graphics). The *trigger* event when the *Capture* of the "Main" `DIV` is converted to an image is just before calling the [Form Submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) function. The [Form Submit](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit) function is called, in response to pushing `Command` action keys (i.e `Enter` and Function keys), of any button associated with that action.
 
 ### Storing the Background Image
 
@@ -180,7 +181,7 @@ When *Submitting* (as described before), the "Main" `DIV HTML` is converted to a
 
 ### Retrieving the Background Image
 
-When a new page that **contains a WINDOW** is about to be rendered, the Expo initialization logic will look in the *Session* storage items, the image that will be set as the [CSS Background image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) to be used by the "Main" `DIV`.
+When a new page that **contains a WINDOW** is about to be rendered, the Expo initialization logic will look in the *Session* storage items for the image that will be set as the [CSS Background image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) of the "Main" `DIV`.
 
 > For simplicity, lets assume the image we want is the one stored in item named `ASNA.PrevPage.Background`. For more advanced scenarios, where multiple-overlapping WINDOWS are used, a [stack](https://www.techopedia.com/definition/9523/stack) of items is used. 
 
@@ -208,7 +209,7 @@ Notice that there are several styles that indicate how this image will be displa
     background-position: var(--main-window-background-position);
 ```
 
-`HTML Elements` allow creation of `Custom CSS Properties (variables)` with are named by the use of prefix `--`, like:
+`HTML Elements` allow creation of `Custom CSS Properties (variables)` which are named by the use of prefix `--`, like:
 
 ```css
 element {
