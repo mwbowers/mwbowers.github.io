@@ -256,7 +256,7 @@ We have talked about the image data and how JavaScript in Expo Library will read
 
 Now let's discuss the [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position).
 
-During Page initialization, depending on the `DdsFunctionKeys Location` property, the variable `--main-window-background-position` will be changed, from the default `left top` to possibly: `right top`, `center bottom` etc. Different locations (which governs the *two-panel* [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layou) ) work better with the different `background-position` styles.
+During Page initialization, depending on the `DdsFunctionKeys Location` property, the variable `--main-window-background-position` will be changed. The Background position will be set to match the "Main" `DIV` *upper-left* position in pixels.
 
 <br>
 
