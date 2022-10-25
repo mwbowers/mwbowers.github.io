@@ -16,6 +16,10 @@ In addition to a program throwing the exception, Monarch Base provides two other
 
  These facilities can be employed to allow a user to end a particular process and return to a known point in an application, like a menu screen, or to start a different process.
 
+ > **_NOTE:_** Not every program can be ended abruptly without compromising the work it was performing.  Use the EndRequest facility judiciously.
+
+
+
 # Some Code
 For the following discussion, please see first the topics [Enhancing Applications using Non-Display File Pages](enhancing-with-non-display-file.html) and [Calling a Program from a Non-DisplayFile Page](calling-program-from-non-displayfile-page.html). In the latter topic, a 'regular' Razor Page (Minutes) is used as a menu on the website where different programs are called via the [Command.Call](reference/asna-qsys-expo/expo-model/command.html#callstring-string-string-string) method while the Job awaited for commands via the [AcceptCommands](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands) method.
 
@@ -186,5 +190,113 @@ namespace CustAppSite.Pages
 
 ```
 
+## Calling an Arbitrary Program
+A generic facility can be created to call a program and pass parameters to it by providing a URL to the facility.  This URL would contain the name of the program and the parameters to pass.  
 
+Assume the facility is implemented in a Razor Page called _Restart_.
 
+When _Restart_ is called it ends the current request, something that, as mentioned earlier may not be wholesome to any program. Caution has to be taken to allow the call to _Restart_ only when the user transaction can be interrupted, use judiciously.  After ending the current request, _Restart_ calls the program indicated to it passing the parameters found in the Query string.
+
+The sample facility is called _Restart_ instead of _Call_ or _Invoke_ to stress the fact that _Restart_ ends the current transaction before doing the call to the new program.
+
+### Using _Restart_
+Here is an example of how to call _Restart_ from an arbitrary page, the example uses links but they could be substituted with whatever other element you may need:
+
+```html
+   <a href='/Restart/CUSTINQ?CustNum=10300'>Details of customer 10300</a> <br />
+   <a href='/Restart/ORDHINQ?CustNum=10300'>Orders for customer 10300</a> <br />
+   <a href='/Restart/CUSTPRMPT?mode="SFSTATE"&current="TX"'>Available States and Provinces</a> <br />
+   <a href='/Restart/CUSTPRMPT?field="SFSTATUS"&selector="A"'>Available Status</a> <br />
+```
+In this prototype, parameters are passed positionally, the name used in the query string is irrelevant. Notice for instance that the last two links are calling the same program, `CUSTPRMPT`, but one of them calls the first parameter `mode` while the other one calls it `field`. In either case the first parameter will be passed as parameter number 1 to `CUSTPRMPT`.
+
+The MyJob’s `ExecuteStartupProgram` method (or any other suitable place) has to have a loop similar to the one shown [on the job](#on-the-job).
+
+### Restart.cshtml 
+This is the contents of the Restart.cshtml markup:
+```html
+@page "{programName}"
+@model CustAppSite.Pages.RestartModel
+@{ ViewData["Title"] = "Restart"; }
+
+<div style="padding:1em">
+    <form method="post">
+        <h1>You should not be here!</h1>
+    </form>
+</div>
+```
+
+Don’t miss the first line on the Restart.cshtml markup:
+
+```    @page "{programName}"```
+
+Using this syntax tells ASP.NET to take the URL segment after the page’s name and pass it to Get() as a parameter.
+
+### Restart.cshtml.cs 
+```cs
+using System;
+using ASNA.QSys.Expo.Model;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
+
+namespace CustAppSite.Pages
+{
+    [BindProperties]
+    public class RestartModel : PageModel
+    {
+        public IActionResult OnGet(string programName)
+        {
+            // Ensure Job is up and running
+            var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+            while (!command.JobStarted)
+                System.Threading.Thread.Sleep(100);
+
+            // End any previous request, collapsing the call stack
+            try
+            {
+                command.PushEndRequest();
+            }
+            catch (RedirectedException redirect)
+            {
+                if (string.Compare(redirect.NewUrl, "/Minutes", StringComparison.OrdinalIgnoreCase) == 0)
+                {
+                    // we don't need to redirect, this page just got popped from the 'return to pages' stack
+                }
+            }
+
+            // Get parameters sent on the Query String
+            IConfiguration config = (IConfiguration)HttpContext.RequestServices.GetService(typeof(IConfiguration));
+            var section = config.GetSection("JobDescriptor");
+            string AssemblyPath = section["AssemblyPath"];
+
+            string[] parms = new string[Request.Query.Count];
+            int i = 0;
+            foreach (var p in Request.Query)
+            {
+                string parm = p.Value;
+                parms[i++] = parm.Trim('"');
+            }
+
+            // Call requested program
+            try
+            {
+                command.Call(AssemblyPath, "Acme.ERCAP."+ programName, parms, "/Minutus");
+            }
+            catch (RedirectedException redirect)
+            {
+                return RedirectToResult(redirect);
+            }
+            return Page();
+        }
+
+        IActionResult RedirectToResult(RedirectedException WhereTo)
+        {
+            string newUrl = WhereTo.NewUrl.TrimStart();
+            string area = WhereTo.NewArea ?? "";
+            return RedirectToPage(newUrl, new { area });
+        }
+    }
+}
+```
