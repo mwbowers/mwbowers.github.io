@@ -187,7 +187,7 @@ When a new page that **contains a WINDOW** is about to be rendered, the Expo ini
 
 Once the proper image is found in the [Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), the string data is set to a [CSS Variable](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), as follows:
 
-Let's peek into the `CSS` for the "Main" `DIV':
+Let's peek into the `CSS` for the "Main" `DIV`:
 
 ```css
 .display-element-initialized {
@@ -196,9 +196,6 @@ Let's peek into the `CSS` for the "Main" `DIV':
     background-size: auto, auto;
     background-attachment: fixed;
     background-position: var(--main-window-background-position);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
 ```
 
@@ -254,10 +251,17 @@ Using this technique, it is possible to move the large image data-value out of t
 
 We have talked about the image data and how JavaScript in Expo Library will read it from Session Storage and set the contents as variables to affect the "Main" `DIV` background. 
 
-Now let's discuss the [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position).
+Now let's discuss other calculations that happen when is *WINDOW is active* on a page:
 
-During Page initialization, depending on the `DdsFunctionKeys Location` property, the variable `--main-window-background-position` will be changed, from the default `left top` to possibly: `right top`, `center bottom` etc. Different locations (which governs the *two-panel* [Flex Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layou) ) work better with the different `background-position` styles.
+1. During initialization:
 
+   a. The image [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) is set to match the "Main" `DIV` *upper-left* position in pixels.
+
+   b. The size of the background image is computed and set as the *width* and *height* styles (in pixels) to define "Main" `DIV` dimensions. (Note that the only real element inside "Main" `DIV` is the *Popup* Window, which will not expand the "Main" `DIV` background area automatically).
+
+2. The [DOM's Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) *resize* event is watched, the [document](https://developer.mozilla.org/en-US/docs/web/api/document) *scroll* event is watched as well as the "Main" `DIV` parent-element's *scroll* event is watched. The handling of all of these events is the same: query the new *upper-left* position of the "Main" `DIV` and set it as the [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position). This technique produces the effect that the background image follows the *Popup* Window, as expected. 
+
+>If "Main" `DIV` *width* or *height* are overridden in `site.css`, the *resize* and *scrolling* of the Page will be affected. 
 <br>
 
 ### Hooks to User-Defined JavaScript
