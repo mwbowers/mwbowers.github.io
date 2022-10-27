@@ -302,6 +302,8 @@ Manuals:
       section:
       - title: Adding View Elements to Display File Page
         path: /manuals/enhancements/enhancing-ui/adding-view-elements.html
+      - title: Upgrading Subfiles to HTML Tables
+        path: /manuals/enhancements/enhancing-ui/upgrading-subfiles-to-tables.html
       - sectiontitle: Using Non-Display File Pages
         sectionpath: /manuals/enhancements/enhancing-ui/enhancing-with-non-display-file.html
         section:
