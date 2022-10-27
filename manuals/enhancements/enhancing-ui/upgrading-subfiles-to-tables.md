@@ -50,3 +50,23 @@ The following is a snippet of [RazorPage](https://learn.microsoft.com/en-us/aspn
     }
 </div>
 ```
+
+<br>
+The subfile renders as the following image:
+
+![Raw Subfile Migration](images/raw-subfile-migration.png)
+
+Notice:
+1. Column headings are positioned individually as constants, not referencing the fields of the subfile.
+2. The line to divide the column headings and the data in the subfile uses *Underline* font attribute (which does not extend the full column width).
+3. The text for the Column headings could have been produced by multiple independent DdsConstant (i.e. `Customer` and `Name` may have been defined as two different constants.)
+4. Column headings are not *centered*. (Centering text on IBM i requires manual calculation of positions).
+5. `Col` field positioning is hard-coded. (These cannot be altered externally. I.e. using CSS styles).
+6. The Subfile does not show Borders or field grid-lines.
+
+<br>
+This particular Subfile could be rendered as a HTML Table, as follows:
+
+![Upgraded Subfile Migration](images/subfile-upgraded-to-table.png)
+
+>Note: Not all Subfiles are candidates to be upgraded to Tables. Most Applications use a large percentage of Subfiles that may be upgraded. The rest can remain as they are.
