@@ -84,7 +84,7 @@ We want to transform the [RazorPage](https://learn.microsoft.com/en-us/aspnet/co
     }
 </style>
 
-<div Row="7" RowSpan="14" SpanStyle="GridPanel">
+<div Row="7" RowSpan="@SFLC_SubfilePage+1" SpanStyle="GridPanel">
     <DdsTable Col="5" ColSpan="80" >
         @for (int rrn = 0; rrn < Model.SFLC.SFL1.Count; rrn++)
         {
