@@ -132,8 +132,53 @@ We want to transform the [RazorPage](https://learn.microsoft.com/en-us/aspnet/co
 ## Tables taller than the GridPanel (scrollbar)
 
 For tables that have data rows that exceed the vertical space given to the `GridPanel`, two more features are desirable:
-1. Scrollbar
-2. A way to `freeze` the Heading's title position (to avoid being scrolled out of view).
+1. Scrollbar.
+2. A way to `freeze` the Heading's title position (to avoid being scrolled out-of-view).
+
+### Table Height and Element "Display" value.
+
+The HTML [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) uses by the property [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) equals to `table` (by default) which means:
+
+1. The table `Height` is set by the `table-rows`. The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) css property value is ignored.
+2. When [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) *is-not* `hidden`, scrollbars appear in the container element (as close to the table as possible).
+
+The following shows a subfile upgraded to a HTML table, showing scrollbars:
+
+![Table with display: table](images/table-display-table.png)
+
+>Note: the scrollbar is not touching the right edge of the table.
+
+If the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property value is changed to `block`:
+
+1. The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) css property value is used. Since `DdsTable` uses [Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), we can specify the `Height` using [grid-row](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row) property values.
+2. When [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) *is-not* `hidden`, scrollbars appear inside the Table).
+
+![Table with display: block](images/table-display-block.png)
+
+When using `display:block`, the `DdsTable` needs the *height* properties to be explicit:
+
+```html
+<div Row="3" RowSpan="9" SpanStyle="GridPanel" ColSpan="40" >
+    <DdsTable id="prompt-table" Col="2" ColSpan="40" Row="1" RowSpan="9">
+        @for (int rrn = 0; rrn < Model.SFLC.SFL1.Count; rrn++)
+        {
+            int row = 5 + rrn;
+            <DdsTableRow RecordNumber="rrn" For="SFLC.SFL1">
+                <DdsTableColumn Heading="Selection">
+                    <DdsDecField For="SFLC.SFL1[rrn].SFLSEL" VirtualRowCol="@row,3" EditCode="Z" tabIndex=@pageTabIndex++ />
+                </DdsTableColumn>
+                <DdsTableColumn Heading="Value">
+                    <DdsCharField For="SFLC.SFL1[rrn].SFLVALUE" />
+                </DdsTableColumn>
+                <DdsTableColumn Heading="Description">
+                    <DdsCharField For="SFLC.SFL1[rrn].SFLDESC" />
+                </DdsTableColumn>
+            </DdsTableRow>
+        }
+    </DdsTable>
+</div>
+```
+>Note: Row="1" RowSpan="9" provided on `DdsTable` when `display` is set to `block`.
 
 <br>
 ## CSS Selectors with Specificity rules
