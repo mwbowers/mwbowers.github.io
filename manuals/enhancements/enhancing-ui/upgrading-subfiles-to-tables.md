@@ -113,7 +113,8 @@ We want to transform the [RazorPage](https://learn.microsoft.com/en-us/aspnet/co
 2. Add new `DdsTable` element on the next line. 
 
    a) Indicate the position *upper-left* corner of the Table, by setting a value to `Col` property (`Col="5"` in this example).
-   b) Define the Table `width` setting the value of property `ColSpan` to desired value (`80` columns in this example). 
+   b) Define the Table `width` setting the value of property `ColSpan` to desired value (`80` columns in this example).
+>The Width of a table may not be less than the specified. HTML Table rendering will try to adjust the Table columns (borders, etc.) according to the styles of internal table elements. When you don't get the exact Table with, experiment by adding one more column to get closer to the expected results (this may be particularly more important when vertical scroll bar appear, see next section *Tables taller than the GridPanel*)  
 
 3. Leave the `@for ... { }` construct intact.
 
@@ -135,7 +136,102 @@ For tables that have data rows that exceed the vertical space given to the `Grid
 2. A way to `freeze` the Heading's title position (to avoid being scrolled out of view).
 
 <br>
-## Other considerations
+## CSS Selectors with Specificity rules
+
+HTML Tables are one of the more complex HTML elements and choosing the right CSS styles may be challenging.
+
+Oftentimes, the best approach to experiment with the style combination that will produce the desired output is by using Developer Tools provided by the Browser. Looking at the Table HTML component tree and selecting the different elements, will let you identify where to apply particular styles.
+
+An alternative to specify class selectors (as we did for `DdsTableColumn HeadingClass` property above), is to use [Selector Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) rules.
+
+The topic on the use of [Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) is extensive and we shall not attempt to cover all the details here, or duplicate what other references already document, instead we include some examples that show how powerful this technique may be.
+
+The following appears on the markup of a RazorPage:
+
+```html
+<style>
+    #main-options-table td:nth-child(1) {
+        text-align: center;
+        width: 20%;
+    }
+    #main-options-table td:nth-child(2) {
+        width: 40%;
+        padding-left: 0.5em;
+    }
+    #main-options-table td:nth-child(3) {
+        text-align: center;
+    }
+    #main-options-table td:nth-child(5) {
+        padding-left: 0.5em;
+    }
+</style>
+```
+
+Where there is a `DdsTable` specified with code similar to the following:
+
+```html
+<div Row="9" RowSpan="@ZSFLCTL_SubfilePage" SpanStyle="GridPanel">
+    <DdsTable id="main-options-table" Col="2" ColSpan="82">
+        @for (int rrn = 0; rrn < Model.ZSFLCTL.ZSFLRCD.Count; rrn++)
+        {
+            int row = 11 + rrn;
+            <DdsTableRow RecordNumber="rrn" For="ZSFLCTL.ZSFLRCD">
+                <DdsTableColumn Heading="Option">
+                    <DdsCharField For="ZSFLCTL.ZSFLRCD[rrn].Z1SEL" VirtualRowCol="@row,2" PositionCursor="32" InvertFontColors="32" tabIndex=@pageTabIndex++ />
+                </DdsTableColumn>
+                <DdsTableColumn Heading="Company Name">
+                    <DdsCharField For="ZSFLCTL.ZSFLRCD[rrn].Z1AETX" VirtualRowCol="@row,4" InvertFontColors="79" />
+                </DdsTableColumn>
+                <DdsTableColumn Heading="Customer">
+                    <DdsDecField For="ZSFLCTL.ZSFLRCD[rrn].Z1ABNB" VirtualRowCol="@row,41" InvertFontColors="79" EditCode="Three" />
+                </DdsTableColumn>
+                <DdsTableColumn Heading="Customer Status">
+                    <DdsCharField For="ZSFLCTL.ZSFLRCD[rrn].Z1ACST" VirtualRowCol="@row,51" />
+                    <DdsConstant text=" "/>
+                    <DdsCharField For="ZSFLCTL.ZSFLRCD[rrn].ZRAZTX" VirtualRowCol="@row,56" />
+                </DdsTableColumn>
+                <DdsTableColumn Heading="Creation Date">
+                    <DdsDecField For="ZSFLCTL.ZSFLRCD[rrn].VRADDA" VirtualRowCol="@row,68" EditWord="  /  /  " />
+                </DdsTableColumn>
+            </DdsTableRow>
+        }
+    </DdsTable>
+</div>
+```
+
+Note:
+1. A unique `ID main-options-table` has been given to this Table (in case there are more than one Subfile on this Page).
+2. The table has five columns (there are five `DdsTableColumn` tagHelper instances).  
+
+Identifying the HTML Table with `id=main-options-table` reveal all HTML elements created by the `DdsTable` tagHelper, where we would want to affect by adding CSS styles.
+
+
+![Table Internal Elements](images/html-table-internals.png)
+
+Let's take each of the Selectors listed above and provide some explanation:
+
+```css
+    #main-options-table td:nth-child(1) {
+        text-align: center;
+        width: 20%;
+    }
+```
+
+This selector reads: *Select the first [td](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td) which are descendants of the element with the unique id `main-options-table`; center the elements inside and allocate to this `td` 20% of the table width*. Which means, the first column uses 20% of the width of the `main-options-table` table and its cells will have the (horizontal) center alignment.
+
+
+```css
+    #main-options-table td:nth-child(2) {
+        width: 40%;
+        padding-left: 0.5em;
+    }
+```
+
+This selector reads: *Select the second [td](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td) which are descendants of the element with the unique id `main-options-table`; allocate 40% of the width of the table and set the left-padding attribute to 0.5 [em](https://www.w3.org/Style/Examples/007/units.en.html) units*. Which means, the second column uses 40% of the width of the `main-options-table` table and its cells will have more padding to the left (half the current body font-size).
+
+The other two selectors provide similar styling options.
+
+>Using selectors, particularly when these are defined externally, de-couples the *Style-Design* from the *Development* **roles**. Selectors that fail to *select* elements are ignored (there is no harm of breaking the Application).
 
 
 
