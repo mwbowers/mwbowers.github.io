@@ -132,8 +132,18 @@ We want to transform the [RazorPage](https://learn.microsoft.com/en-us/aspnet/co
 ## Tables taller than the GridPanel (scrollbar)
 
 For tables that have data rows that exceed the vertical space given to the `GridPanel`, two more features are desirable:
-1. Scrollbar.
-2. A way to `freeze` the Heading's title position (to avoid being scrolled out-of-view).
+1. A way to `lock` the Heading's title position (to avoid being scrolled out-of-view).
+2. Scrollbars.
+
+The `locking` of the Heading's title position is a rather new feature of the HTML table (allegedly non-intentional). The following `CSS` accomplishes the `locking` of the table heading at the top of the table.
+
+```css
+.dds-table thead th {
+    position: sticky;
+    top: 0px;
+}
+```
+>This style is the default provided by ASNA Expo. It is described here for Web developers pursuing fine customization.
 
 ### Table Height and Element "Display" value.
 
