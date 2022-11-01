@@ -147,9 +147,9 @@ The `locking` of the Heading's title position is a rather new feature of the HTM
 
 ### Table Height and Element "Display" value.
 
-The HTML [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) uses by the property [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) equals to `table` (by default) which means:
+The HTML [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) uses the property [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) equals to `table` (by default) which means:
 
-1. The table `Height` is set by the `table-rows`. The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) css property value is ignored.
+1. The table `Height` is set by the amount of `table-rows`. The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) css property value is ignored.
 2. When [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) *is-not* `hidden`, scrollbars appear in the container element (as close to the table as possible).
 
 The following shows a subfile upgraded to a HTML table, showing scrollbars:
@@ -160,12 +160,12 @@ The following shows a subfile upgraded to a HTML table, showing scrollbars:
 
 If the [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property value is changed to `block`:
 
-1. The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) css property value is used. Since `DdsTable` uses [Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), we can specify the `Height` using [grid-row](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row) property values.
+1. The [height](https://developer.mozilla.org/en-US/docs/Web/CSS/height) css property value is used. Since `DdsTable` uses [Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), we can specify the `Height` using [grid-row](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row) property value.
 2. When [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) *is-not* `hidden`, scrollbars appear inside the Table).
 
 ![Table with display: block](images/table-display-block.png)
 
-When using `display:block`, the `DdsTable` needs the *height* properties to be explicit:
+When using `display:block`, the `DdsTable` needs the *height* property to be explicit:
 
 ```html
 <div Row="3" RowSpan="9" SpanStyle="GridPanel" ColSpan="40" >
