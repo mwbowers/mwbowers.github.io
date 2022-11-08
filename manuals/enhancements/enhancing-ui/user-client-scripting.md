@@ -210,7 +210,7 @@ By adding the following code to your Script:
 
 >When referring to attributes of `window`, it is not necessary to include the `window.` prefix. JavaScript assumes that *global* symbols should be looked up in the `window` object. `asnaExpo` or `asnaExpo.page` is enough syntax to refer to these objects.
 
-Will produce the following output to the Browser's Developers `Console`:
+Running your Application with any *Expo Display Page* rendered, will produce the following output on the Browser's Developers `Console`:
 
 ```
 ~\Pages\Shared\_Layout.cshtml Script running!
@@ -234,7 +234,7 @@ Array(5)
     [[Prototype]]: Array(0)
 ```
 
-Regarding activeFunctionKeys object, it is defined as an array of:
+Regarding **activeFunctionKeys** object, it is defined as an array of:
 
 ```cs
     {
@@ -251,6 +251,8 @@ Regarding activeFunctionKeys object, it is defined as an array of:
 
 `text` and `title` property values should be straightforward (when designing a Menu). The `pushKeyParms` are the values needed when implementing `click` event handler (or equivalent), to submit the Command `Action` to the Application server.
 
+<br>
+
 ### The *Proper* way to submit a Page "Action" Request
 
 The most important [API](https://en.wikipedia.org/wiki/API) object exposed by ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) is access to the `pushKey` function.
@@ -266,7 +268,7 @@ Using the `pushKeyParms` of one of the elements of the array above, you would wa
 ```html
 <script>
 
-    let action = asnaExpo.page.activeFunctionKeys[2]; // This is for illustration purpose, depends on how you captured the data in your code.
+    let action = asnaExpo.page.activeFunctionKeys[2]; // This is for illustration purposes only. Real code depends on how you captured the data.
 
     asnaExpo.page.pushKey( action.pushKeyParms.key, 
                            action.pushKeyParms.focusElement, 
@@ -293,7 +295,7 @@ Notes:
 
 So far we have described how to *Use* ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) functionality from User-defined Scripting.
 
-There are some events while `Expo Client Library` is executing its code, where it wants to *talk* to User-defined Script code. These are called `hooks` or `Notification callback` functions.
+There are some events while `Expo Client Library` is executing its code, where it wants to *talk* to User-defined Scripting code. These are called `hooks` or `Notification callback` functions.
 
 The following lists `Expo Client Library` callbacks:
 
@@ -305,4 +307,7 @@ The following lists `Expo Client Library` callbacks:
 | MonarchSubfilePageChanged  | Called right after a subfile rows have been changed by AJAX response.| To re-apply event handlers that might have been lost.|
 | MonarchWindowBackgroundHtmlToImageFilter  | A node is passed. Return *true* to include, *false* to exclude.| Filter-out elements when saving Page (as background for next) |
 
+All you need to do is implement any of the `Notification callback` functions in your Script code, and `Expo Client Library` will call it when it needs to.
+
+>All `Notification callback` functions are optional.
 
