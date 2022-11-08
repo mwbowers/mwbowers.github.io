@@ -279,15 +279,11 @@ Using the `pushKeyParms` of one of the elements of the array above, you would wa
 Notes:
 1. The only required parameter is the first one: `key`.
 2. `key` is a string representation of one of these [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html).
-3. There are two exceptions, AidKey.PageUp is represented by `PgUp` and AidKey.PageDown by `PgDn'.
-4. `focusElementName`, `fieldValue`, `virtualRowCol` are optional.
-5. Calling `pushKey` runs code to prepare to submit (to set internal input hidden elements to values expected by the server - i.e. feedback information). `pushKey` saves the Page as an image in [Session storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) entries to be used by `WINDOW` (modal display) on subsequent pages. Lastly, `pushKey` prepares animation to show a *Wait* cursor while the request is serviced.
+3. There are two exceptions, AidKey.PageUp is represented by `PgUp` and AidKey.PageDown by `PgDn`.
+4. The parameters: `focusElementName`, `fieldValue`, `virtualRowCol` are optional.
+5. Calling `pushKey` runs code to prepare submission (setting internal input-hidden elements to values expected by the server - i.e. feedback information). `pushKey` saves the Page as an image in [Session storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) entries to be used by `WINDOW` (modal display background image) on subsequent pages. Lastly, `pushKey` prepares an animation to show a *Wait* cursor while the request is serviced.
 6. `pushKey` can be called at any time (in addition to Menu option's `click` handlers).
 7. `pushKey` call *does not* return. Shortly after the call is made, the Page is removed from the DOM.
-
-
-
-
 
 ### Advanced Expo Client Callbacks to User-defined code.
 
