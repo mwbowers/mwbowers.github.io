@@ -21,7 +21,7 @@ For the sake of this topic, we can also think of these three areas in the timing
 2. During the operation of the Page.
 3. Exit points to submit Actions to the server.
 
-### Enhancing (or replacing) Menu System
+### Enhancing (or replacing) the Menu System
 
 ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) provides basic navigation panel with active Function Keys as defined by the [PageModel](/concepts/user-interface/razor-pages.html#pagemodel). The basic navigation consists of a Bar with named-links to submit the Page, sending the equivalent of keyboard [Command Key](https://www.ibm.com/docs/en/i/7.2?topic=80-cann-command-attention-keyword-display-files), to trigger an Action on the Application logic.
 
@@ -48,7 +48,196 @@ Both choices (2 and 3), need to start running at a particular time in the Render
 
 ### When is the Expo Display Page "Loaded and Initialized"?
 
+Knowing when your *Right after the Page is loaded and **Initialized*** Script should run is a bit tricky, but you can basically copy/paste [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code). 
 
+First you need to decide if the Script you need is to be applied *Globally* (for All pages), or just on a Page per Page basis.
+
+If the Script is *Global*, it should be added to `~\Site\Pages\Shared\_Layout.cshtml`.
+
+If the Script is *Local* to a Page, then it should be added to the `Script` section of a Page (common practice is to add it to the bottom of the page).
+
+`_Layout.cshtml:`
+
+```html
+.
+.
+.
+
+<body>
+    @RenderBody()
+
+    <script type="module">
+        import { Page } from '../lib/asna-expo/js/asna.js';
+
+        Page.init({ formId: 'MonarchForm' });
+    </script>
+
+    <script>
+        // This User-Defined Script runs on ALL Pages.
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('~\\Pages\\Shared\\_Layout.cshtml Script running!');
+        });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+```
+
+<br>
+
+`MYPAGE.cshtml:`
+
+```html
+.
+.
+.
+    </DdsFile>
+</form>
+
+@section Scripts{
+    <script>
+        // This script runs on this Page only.
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Page MYPAGE.cshtml Script Running!');
+        });
+    </script>
+}
+```
+
+>The Best Practice is to add your Script after the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) has completed its own processing.  
+
+In addition to the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html), needs to perform basic Page initialization execution.
+
+>For now on, we will assume you want your Script to be *Global*.
+
+ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) uses a simple technique to indicate that the Page has been initialized: It changes the class for the element:
+
+From:
+
+```html
+    <main role="main" class="display-element-uninitialized">
+```
+
+To:
+
+```html
+    <main role="main" class="display-element-initialized">
+```
+
+We can use Script logic to detect when the `class="display-element-uninitialized"` is no longer present in our `main` element. (Most Browsers on modern PC will run this code in less than one second.)
+
+First, we need to find our [form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) element, then inside the form, we need to find our `main` element.
+
+```html
+    <script>
+.
+.
+.
+    const form = document.querySelector('form[id="MonarchForm"]');
+    if (form) {
+        const main = form.querySelector('main[role=main]');
+        if (main) {
+            // We found our main! (where we want to look for the `uninitialized` class).
+        }
+    }
+
+.
+.
+.
+    </script>
+```
+
+>The `id` needs to match the `ID` given to the `form` element in the Expo Display Page.
+
+
+The last Step is to use a standard [delay](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) mechanism to wait for the `main` element to have its initial class `display-element-uninitialized` *removed*. Signaling the time when our Script can safely run.
+
+Here is the complete [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code):
+
+```html
+    <script>
+        // This User-Defined Script runs on ALL Pages.
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('~\\Pages\\Shared\\_Layout.cshtml Script running!');
+            const form = document.querySelector('form[id="MonarchForm"]');
+            if (form) {
+                const main = form.querySelector('main[role=main]');
+                if (main) {
+                    const wait = setInterval(() => {
+                        if (!main.classList.contains('display-element-uninitialized')) {
+                            console.log('~\\Pages\\Shared\\_Layout.cshtml detected Page initialized!');
+                            clearInterval(wait);
+                        // Add your own script code here!
+
+
+                        }
+                        else {
+                            console.log('~\\Pages\\Shared\\_Layout.cshtml waiting on Page initialization ...');
+                        }
+                    }, 500);
+                }
+            }
+        });
+    </script>
+```html
+
+>The `console.log` may be removed. Added here to enable `Tracing` inside Browser Developer's Tool `Console` output window. 
+
+### When replacing the Menu, how to obtain the Active Function Keys?
+
+If the [DdsFunctionKeys](http://localhost:4000/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper.html) is chosen with its `location` property with the value 'Hidden', there is a simple [API](https://en.wikipedia.org/wiki/API) that can be used to retrieve the Application's *Active Function Keys* for the Page.
+
+The [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) allows *global* definition of symbols accessible to any JavaScript function. Any object may be added as a property to the global [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) object.
+
+ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) creates a *global* object called `asnaExpo` which gives access to essential functions and a few handy data-structures (JavaScript *objects*).
+
+One of this objects, `activeFunctionKeys` provides information to re-build the `Hidden` *Active Function Keys*.
+
+By adding the following code to your Script:
+
+```html
+    <script>
+.
+.
+.
+        if (window.asnaExpo.page && window.asnaExpo.page.activeFunctionKeys) { // For example, list the Active Function Keys (DdsFunctionKeys that was Hidden)
+            console.log(`${window.asnaExpo.page.activeFunctionKeys.length} Active Function Keys:`);
+            console.log(window.asnaExpo.page.activeFunctionKeys);
+        }
+
+    </script>
+```
+
+Will produce the following output to the Browser's Developers `Console`:
+
+```
+~\Pages\Shared\_Layout.cshtml Script running!
+~\Pages\Shared\_Layout.cshtml detected Page initialized!
+5 Active Function Keys:
+
+
+Array(5)
+0: {title: 'Enter', text: 'Enter', pushKeyParms: {…}}
+1: {title: 'F3 - Exit', text: 'Exit', pushKeyParms: {…}}
+2: pushKeyParms: 
+    fieldValue: ""
+    focusElement: ""
+    key: "F9"
+    virtualRowCol: ""
+    [[Prototype]]: 
+    text: "Spooled Files"
+    title: "F9 - Spooled Files"
+    [[Prototype]]: Object
+3: {title: 'PageUp', text: 'PageUp', pushKeyParms: {…}}
+4: {title: 'PageDown', text: 'PageDown', pushKeyParms: {…}}
+
+length: 5
+[[Prototype]]: Array(0)
+```
+
+### Th correct way to submit a Page Request
+
+** TO-DO: explain `window.asnaExpo.page.pushKey`
 
 ### Advanced Expo Client Callbacks to User-defined code.
 
