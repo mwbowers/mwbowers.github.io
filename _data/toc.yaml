@@ -304,6 +304,8 @@ Manuals:
         path: /manuals/enhancements/enhancing-ui/adding-view-elements.html
       - title: Upgrading Subfiles to HTML Tables
         path: /manuals/enhancements/enhancing-ui/upgrading-subfiles-to-tables.html
+      - title: Extending Functionally with Client-side Scripting
+        path: /manuals/enhancements/enhancing-ui/user-client-scripting.html
       - sectiontitle: Using Non-Display File Pages
         sectionpath: /manuals/enhancements/enhancing-ui/enhancing-with-non-display-file.html
         section:
