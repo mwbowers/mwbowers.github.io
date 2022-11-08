@@ -251,7 +251,7 @@ Regarding activeFunctionKeys object, it is defined as an array of:
 
 `text` and `title` property values should be straightforward (when designing a Menu). The `pushKeyParms` are the values needed when implementing `click` event handler (or equivalent), to submit the Command `Action` to the Application server.
 
-### The correct way to submit a Page "Action" Request
+### The *Proper* way to submit a Page "Action" Request
 
 The most important [API](https://en.wikipedia.org/wiki/API) object exposed by ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) is access to the `pushKey` function.
 
@@ -276,21 +276,33 @@ Using the `pushKeyParms` of one of the elements of the array above, you would wa
 </script>
 ```
 
+<br>
+
 Notes:
 1. The only required parameter is the first one: `key`.
 2. `key` is a string representation of one of these [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html).
-3. There are two exceptions, AidKey.PageUp is represented by `PgUp` and AidKey.PageDown by `PgDn`.
+3. There are two exceptions: AidKey.PageUp is represented by `PgUp` and AidKey.PageDown by `PgDn`.
 4. The parameters: `focusElementName`, `fieldValue`, `virtualRowCol` are optional.
 5. Calling `pushKey` runs code to prepare submission (setting internal input-hidden elements to values expected by the server - i.e. feedback information). `pushKey` saves the Page as an image in [Session storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) entries to be used by `WINDOW` (modal display background image) on subsequent pages. Lastly, `pushKey` prepares an animation to show a *Wait* cursor while the request is serviced.
 6. `pushKey` can be called at any time (in addition to Menu option's `click` handlers).
 7. `pushKey` call *does not* return. Shortly after the call is made, the Page is removed from the DOM.
 
+<br>
+
 ### Advanced Expo Client Callbacks to User-defined code.
 
-```
-MonarchPageSavingForPopup
-MonarchPageForPopupSaved
-MonarchSubfilePageChanging
-MonarchSubfilePageChanged
-MonarchWindowBackgroundHtmlToImageFilter
-```
+So far we have described how to *Use* ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) functionality from User-defined Scripting.
+
+There are some events while `Expo Client Library` is executing its code, where it wants to *talk* to User-defined Script code. These are called `hooks` or `Notification callback` functions.
+
+The following lists `Expo Client Library` callbacks:
+
+| Function Name              | Description                                                          | Typical uses                                         |
+|----------------------------|----------------------------------------------------------------------|------------------------------------------------------|
+| MonarchPageSavingForPopup  | Called right before the Page will be saved for future WINDOW Page    | When DOM needs to be changed before saving.          |
+| MonarchPageForPopupSaved   | Called right after the Page has been saved (for future WINDOW Page)  | When DOM needs to be cleaned-up after saving.        |
+| MonarchSubfilePageChanging | Called right before AJAX response will change a subfile.             | Rarely used.                                         |
+| MonarchSubfilePageChanged  | Called right after a subfile rows have been changed by AJAX response.| To re-apply event handlers that might have been lost.|
+| MonarchWindowBackgroundHtmlToImageFilter  | A node is passed. Return *true* to include, *false* to exclude.| Filter-out elements when saving Page (as background for next) |
+
+
