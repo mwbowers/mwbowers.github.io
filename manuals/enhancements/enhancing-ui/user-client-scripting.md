@@ -179,7 +179,7 @@ Here is the complete [boilerplate code](https://en.wikipedia.org/wiki/Boilerplat
             }
         });
     </script>
-```html
+```
 
 >The `console.log` may be removed. Added here to enable `Tracing` inside Browser Developer's Tool `Console` output window. 
 
@@ -235,9 +235,16 @@ length: 5
 [[Prototype]]: Array(0)
 ```
 
-### Th correct way to submit a Page Request
+### The correct way to submit a Page Request
 
 ** TO-DO: explain `window.asnaExpo.page.pushKey`
 
 ### Advanced Expo Client Callbacks to User-defined code.
 
+```
+MonarchPageSavingForPopup
+MonarchPageForPopupSaved
+MonarchSubfilePageChanging
+MonarchSubfilePageChanged
+MonarchWindowBackgroundHtmlToImageFilter
+```
