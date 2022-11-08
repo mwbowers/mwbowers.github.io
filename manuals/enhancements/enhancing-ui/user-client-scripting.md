@@ -208,36 +208,86 @@ By adding the following code to your Script:
     </script>
 ```
 
+>When referring to attributes of `window`, it is not necessary to include the `window.` prefix. JavaScript assumes that *global* symbols should be looked up in the `window` object. `asnaExpo` or `asnaExpo.page` is enough syntax to refer to these objects.
+
 Will produce the following output to the Browser's Developers `Console`:
 
 ```
 ~\Pages\Shared\_Layout.cshtml Script running!
 ~\Pages\Shared\_Layout.cshtml detected Page initialized!
 5 Active Function Keys:
-
-
 Array(5)
-0: {title: 'Enter', text: 'Enter', pushKeyParms: {…}}
-1: {title: 'F3 - Exit', text: 'Exit', pushKeyParms: {…}}
-2: pushKeyParms: 
-    fieldValue: ""
-    focusElement: ""
-    key: "F9"
-    virtualRowCol: ""
-    [[Prototype]]: 
-    text: "Spooled Files"
-    title: "F9 - Spooled Files"
-    [[Prototype]]: Object
-3: {title: 'PageUp', text: 'PageUp', pushKeyParms: {…}}
-4: {title: 'PageDown', text: 'PageDown', pushKeyParms: {…}}
-
-length: 5
-[[Prototype]]: Array(0)
+    0: {title: 'Enter', text: 'Enter', pushKeyParms: {…}}
+    1: {title: 'F3 - Exit', text: 'Exit', pushKeyParms: {…}}
+    2: pushKeyParms: 
+        fieldValue: ""
+        focusElement: ""
+        key: "F9"
+        virtualRowCol: ""
+        [[Prototype]]: Object
+        text: "Spooled Files"
+        title: "F9 - Spooled Files"
+        [[Prototype]]: Object
+    3: {title: 'PageUp', text: 'PageUp', pushKeyParms: {…}}
+    4: {title: 'PageDown', text: 'PageDown', pushKeyParms: {…}}
+    length: 5
+    [[Prototype]]: Array(0)
 ```
 
-### The correct way to submit a Page Request
+Regarding activeFunctionKeys object, it is defined as an array of:
 
-** TO-DO: explain `window.asnaExpo.page.pushKey`
+```cs
+    {
+        "text"  : string,   // Used as button text
+        "title" : string,   // Used as tooltip text
+        pushKeyParms: {
+            "key"           : string,    // IBMi aid key
+            "focusElement"  : string,    // Model's field name.
+            "fieldValue"    : string,    // Field value (as if it had been typed by user)
+            "virtualRowCol" : string     // Legacy row,col screen position (possibly tested by Application logic to identify input)
+        }
+    }
+```
+
+`text` and `title` property values should be straightforward (when designing a Menu). The `pushKeyParms` are the values needed when implementing `click` event handler (or equivalent), to submit the Command `Action` to the Application server.
+
+### The correct way to submit a Page "Action" Request
+
+The most important [API](https://en.wikipedia.org/wiki/API) object exposed by ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) is access to the `pushKey` function.
+
+```cs
+ pushKey(aidKeyToPush, focusElementName, fieldValue, virtualRowCol) {
+
+ }
+```
+
+Using the `pushKeyParms` of one of the elements of the array above, you would want to add the following code to your `click` event handler:
+
+```html
+<script>
+
+    let action = asnaExpo.page.activeFunctionKeys[2]; // This is for illustration purpose, depends on how you captured the data in your code.
+
+    asnaExpo.page.pushKey( action.pushKeyParms.key, 
+                           action.pushKeyParms.focusElement, 
+                           action.pushKeyParms.fieldValue, 
+                           action.pushKeyParms.virtualRowCol );
+
+</script>
+```
+
+Notes:
+1. The only required parameter is the first one: `key`.
+2. `key` is a string representation of one of these [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html).
+3. There are two exceptions, AidKey.PageUp is represented by `PgUp` and AidKey.PageDown by `PgDn'.
+4. `focusElementName`, `fieldValue`, `virtualRowCol` are optional.
+5. Calling `pushKey` runs code to prepare to submit (to set internal input hidden elements to values expected by the server - i.e. feedback information). `pushKey` saves the Page as an image in [Session storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) entries to be used by `WINDOW` (modal display) on subsequent pages. Lastly, `pushKey` prepares animation to show a *Wait* cursor while the request is serviced.
+6. `pushKey` can be called at any time (in addition to Menu option's `click` handlers).
+7. `pushKey` call *does not* return. Shortly after the call is made, the Page is removed from the DOM.
+
+
+
+
 
 ### Advanced Expo Client Callbacks to User-defined code.
 
