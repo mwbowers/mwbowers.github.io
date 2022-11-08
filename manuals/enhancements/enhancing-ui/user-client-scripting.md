@@ -48,9 +48,9 @@ Both choices (2 and 3), need to start running at a particular time in the Render
 
 ### When is the Expo Display Page "Loaded and Initialized"?
 
-Knowing when your *Right after the Page is loaded and **Initialized*** Script should run is a bit tricky, but you can basically copy/paste [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code). 
+Knowing when the *Right after the Page is loaded and **Initialized*** event happens, when your Script should run, is a bit tricky. Thankfully, we are providing here [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code) that you can paste into your code. 
 
-First you need to decide if the Script you need is to be applied *Globally* (for All pages), or just on a Page per Page basis.
+First you need to decide if the Script you need is to be applied *Globally* (for All pages), or just on a Page-per-Page basis.
 
 If the Script is *Global*, it should be added to `~\Site\Pages\Shared\_Layout.cshtml`.
 
