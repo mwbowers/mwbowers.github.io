@@ -11,7 +11,7 @@ Most Applications will require further [User Interface](https://en.wikipedia.org
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) by definition is extensible, and the preferred Scripting Language is [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript).
 
 There are three areas which are typically extended thru the use of `Scripting`:
-1. Menu system.
+1. Function-Key Panel.
 2. Visualization aids during operation of the page.
 3. Quick Action shortcuts.
 
@@ -21,7 +21,7 @@ For the sake of this topic, we can also think of these three areas in the timing
 2. During the operation of the Page.
 3. Exit points to submit Actions to the server.
 
-### Enhancing (or replacing) the Menu System
+### Enhancing (or replacing) the Function-Key Panel
 
 ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) provides basic navigation panel with active Function Keys as defined by the [PageModel](/concepts/user-interface/razor-pages.html#pagemodel). The basic navigation consists of a Bar with named-links to submit the Page, sending the equivalent of keyboard [Command Key](https://www.ibm.com/docs/en/i/7.2?topic=80-cann-command-attention-keyword-display-files), to trigger an Action on the Application logic.
 
@@ -33,12 +33,12 @@ The only customization for the Page Navigation Panel presented by the [DdsFuncti
 4. `HorizontalBottom`.
 5. `Hidden`.
 
-Expo Display Pages use a two panel with [Flex Display Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) where one of the panels (or flex *item*) is used for the Active Function Key menu and the other for the *main* `DIV` where the input Form is rendered.
+Expo Display Pages use a two panel with [Flex Display Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) where one of the panels (or flex *item*) is used for the Active Function-Key Panel and the other for the *main* `DIV` where the input Form is rendered.
 
 If the default layout is adequate for your Application, but needs some refinement, you can do it by:
 1. Changing the CSS styles.
 2. Writing `JavaScript` to add or modify the default HTML architecture.
-3. Replace the Active Function Key Menu with your own.
+3. Replace the Active Function-Key Panel with your own.
 
 The first choice is done *statically*, by adding CSS to the Page (or globally to the file `~\wwwroot\css\site.css`). Standard Cascading style rules allow to override any style provided by default.
 
@@ -48,7 +48,7 @@ Both choices (2 and 3), need to start running at a particular time in the Render
 
 ### When is the Expo Display Page "Loaded and Initialized"?
 
-Knowing when the *Right after the Page is loaded and **Initialized*** event happens, when your Script should run, is a bit tricky. Thankfully, we are providing here [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code) that you can paste into your code. 
+Knowing when the *Right after the Page is loaded and **Initialized*** event happens, when your Script should run, is a bit tricky. Thankfully, we are providing here [boilerplate code](https://en.wikipedia.org/wiki/Boilerplate_code) that you can paste into your Script. 
 
 First you need to decide if the Script you need is to be applied *Globally* (for All pages), or just on a Page-per-Page basis.
 
@@ -183,7 +183,7 @@ Here is the complete [boilerplate code](https://en.wikipedia.org/wiki/Boilerplat
 
 >The `console.log` may be removed. Added here to enable `Tracing` inside Browser Developer's Tool `Console` output window. 
 
-### When replacing the Menu, how to obtain the Active Function Keys?
+### When replacing the Panel, how do you obtain the Active Function-Keys?
 
 If the [DdsFunctionKeys](http://localhost:4000/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper.html) is chosen with its `location` property with the value 'Hidden', there is a simple [API](https://en.wikipedia.org/wiki/API) that can be used to retrieve the Application's *Active Function Keys* for the Page.
 
@@ -249,7 +249,7 @@ Regarding **activeFunctionKeys** object, it is defined as an array of:
     }
 ```
 
-`text` and `title` property values should be straightforward (when designing a Menu). The `pushKeyParms` are the values needed when implementing `click` event handler (or equivalent), to submit the Command `Action` to the Application server.
+`text` and `title` property values should be straightforward (when designing the new Options Panel). The `pushKeyParms` are the values needed when implementing `click` event handler (or equivalent), to submit the Command `Action` to the Application server.
 
 <br>
 
@@ -283,7 +283,7 @@ Using the `pushKeyParms` of one of the elements of the array above, you would wa
 Notes:
 1. The only required parameter is the first one: `key`.
 2. `key` is a string representation of one of these [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html).
-3. There are two exceptions: AidKey.PageUp is represented by `PgUp` and AidKey.PageDown by `PgDn`.
+3. There are two exceptions: AidKey.PageUp is represented by `"PgUp"` and AidKey.PageDown by `"PgDn"`.
 4. The parameters: `focusElementName`, `fieldValue`, `virtualRowCol` are optional.
 5. Calling `pushKey` runs code to prepare submission (setting internal input-hidden elements to values expected by the server - i.e. feedback information). `pushKey` saves the Page as an image in [Session storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) entries to be used by `WINDOW` (modal display background image) on subsequent pages. Lastly, `pushKey` prepares an animation to show a *Wait* cursor while the request is serviced.
 6. `pushKey` can be called at any time (in addition to Menu option's `click` handlers).
