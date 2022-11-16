@@ -296,6 +296,8 @@ Manuals:
       section:
       - title: Expo Client-Side Content
         path: /manuals/configuration/expo-client-side-library.html
+      - title: Using Fake Data
+        path: /manuals/configuration/using-fake-data.html        
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Enhancing the User Interface
