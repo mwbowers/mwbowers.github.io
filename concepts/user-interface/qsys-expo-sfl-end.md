@@ -24,7 +24,7 @@ The *Last Page* state of the *Subfile* is typically indicated by a label at the 
 2. A label with "+" sign.
 3. __The absence__ of the word "Bottom".
 
-(*) It is also possible (but rare) to show a *Scrollbar* for this purpose. It is uncommon because it required special terminals.
+( * ) It is also possible (but rare) to show a *Scrollbar* for this purpose. It is uncommon because it required special terminals.
 
 In particular, the IBM i *Page Description Language*, or in IBM terms ["Data Description Specifications" for Displayfiles](https://www.ibm.com/docs/en/i/7.2?topic=dds-display-files) allows the use of keyword [SFLEND](https://www.ibm.com/docs/en/i/7.1?topic=80-sflend-subfile-end-keyword-display-files) for this purpose.
 
