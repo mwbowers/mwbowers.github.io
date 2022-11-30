@@ -12,7 +12,7 @@ Commonly, a *Subfile* will present only a *partial amount* of the available reco
 
 A common practice is to allow the end-user to change the visible *Page* on the screen to navigate the entire *Subfile*, moving closer to the *beginning of the File* or away towards the *end of the File*.
 
-This navigation to move *Up* or *Down*, one *Page* at at time became so common that physical keyboards are designed to have special keys for that purpose (typically labeled *Page Up* and *Page Down*).
+This navigation to move *Up* or *Down* - one *Page* at at time - also known as *Pagination*, became so common that physical keyboards are designed to have special keys for that purpose (typically labeled *Page Up* and *Page Down*).
 
 ## Subfile indication regarding *Last Page*
 
