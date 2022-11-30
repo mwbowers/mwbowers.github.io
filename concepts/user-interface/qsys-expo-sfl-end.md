@@ -38,7 +38,7 @@ There are three properties that may be generated on the [DdsSubfileControl](/ref
 | SubFileEndTextOn         | Text to show as icon *Tooltip* when **SubFileEnd** evaluates to *True*.      |
 | SubfileEndTextOff        | Text to show as icon *Tooltip* when **SubFileEnd** evaluates to *False*.     |
 
-The User Interface associated with the *Last Page" feature (formerly `SFLEND` keyword) is an icon that shows right-aligned on the bottom of the *Subfile* area on the Display.
+The User Interface associated with the *Last Page* feature (formerly `SFLEND` keyword) is an icon that shows right-aligned on the bottom of the *Subfile* area on the Display.
 
 | Icon shape                                | Condition to show                                         | Tooltip text from Property   |
 | ----------------------------------------- | --------------------------------------------------------- | ---------------------------- | 
