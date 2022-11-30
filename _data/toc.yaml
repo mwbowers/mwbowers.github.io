@@ -63,8 +63,11 @@ Concepts:
     section:
     - title: Razor Pages
       path: /concepts/user-interface/razor-pages.html
-    - title: Expo Display Pages
-      path: /concepts/user-interface/qsys-expo-display-pages.html
+    - sectiontitle: Expo Display Pages
+      sectionpath: /concepts/user-interface/qsys-expo-display-pages.html
+      section:
+      - title: Subfile "More" or "Bottom"
+        path: /concepts/user-interface/qsys-expo-sfl-end.html
     - title: Expo Web Content
       path: /concepts/user-interface/qsys-expo-web-content.html
     - title: Expo Client Library
