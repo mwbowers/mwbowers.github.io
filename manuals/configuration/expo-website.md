@@ -76,14 +76,9 @@ Finally, the Name value provides the initial Job Name.
 
 ### DisplayPages
 
-The Display section of the configuration provides the ability to create and utilize fake data.  Fake data is utilized when particular pages of the website are to be displayed but the user does not wish to navigate the application all the way to the page.  This feature can be utilized by a developer to provide a set of files to another developer working purely in the look and feel of the website.
+The Display section of the configuration provides the ability to create and utilize fake data.  Fake data is utilized when particular pages of the website are to be displayed but the user does not wish to navigate the application all the way to the page.  The feature of [using fake data](using-fake-data.html) can be utilized by a developer to provide a set of files to another developer working purely in the look and feel of the website.
 
 The section has two values:
- - FakeDataType - Valid values: None, Output, Input
- - FakeDataDirectory - Directory when Fake data files are located
+ - `FakeDataType` - Valid values: `None`, `Output`, `Input`
+ - `FakeDataDirectory` - Directory where Fake data files are located.
 
-When FakeDataType is equal to ```None```, then no fake data is involved in the process.
-
-Setting the value to ```Output``` will let Expo know to **not** call the Job's logic but instead to display screens with data coming from the ```FakeDataDirectory```.  The directory should have one ```.fake``` XML file for each Display Page that is to be displayed.  If a .fake file is not found, Expo will create one with default data. The content of the .fake files is the XML version of the Dataset for the page.
-
-Setting the value to ```Input``` will allow the Website to run normally but a button will be added to the function key pad allowing the developer to save the dataset used to produced the page to be saved in the FakeDataDirectory.
