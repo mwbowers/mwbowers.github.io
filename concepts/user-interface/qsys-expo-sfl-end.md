@@ -4,7 +4,7 @@ title: Subfile "More" or "Bottom"
 
 ## IBM i Subfile User Interface
 
-For those unfamiliar with the IBM i *Subfile*, it refers to a portion of the Display that is used to show *output* records. Given than most *output* records are made up of a collection of fields (frequently coming from a database file), the appearance of the Subfile is of *tabular* data, similar to a *Table View*.
+For those unfamiliar with the IBM i *Subfile*, it refers to a portion of the Display that is used to show records. Given than most subfile records are made up of a collection of fields (frequently coming from a database file), the appearance of the Subfile is of *tabular* data, similar to a *Table View*.
 
 ## IBM i Subfile Pagination
 
