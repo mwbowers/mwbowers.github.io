@@ -43,11 +43,23 @@ All of the `DdsXXX` Tag Helpers which may be input-capable are derived from `Dds
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PositionCursor | Gets or sets a [condition expression](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#condition-expression) string determining if the cursor should be positioned to this input-capable field. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | TabIndex | Gets or sets a value indicating that its element can be focused, and where it participates in sequential keyboard navigation (usually with the Tab key, hence the name).<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Underline | Gets or sets [condition expression](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#condition-expression) string that determines if text should be underlined. Underline is rendered as a bottom-border CSS style.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
-VirtualRowCol | Gets or sets a value that indicates the legacy row, col position that the logic may be expecting to identify. Format is 'Row,Col'. May not represent the current position of the tag helper. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [VirtualRowCol](#virtualrowcol) | Gets or sets a value that indicates the legacy row, col position that the logic may be expecting to identify. Format is 'Row,Col'. May not represent the current position of the tag helper. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | VisibleCondition | Gets or sets [condition expression](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#condition-expression) string that determines if field/constant is visible. Non-visible fields/constants are not rendered.<br>(Inherited from [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html)) | 
 
 <br>
 <br>
+
+### VirtualRowCol
+The property `VirtualRowCol` is used to remember the original Row & Column location of a field in the original IBM i screen.  It is necessary to keep this information because as the screen gets enhanced the field may be moved to another location of the screen but the (old RPG) program may still depend on the original location of the field. 
+
+The value of `VirtualRowCol` is what is provided as feedback to the program to report the location of the ‘cursor’ (the field that had focus) when the user press `<Enter>` or any function key. The `Row` and `Col` properties are used to place the field on the browser.
+
+For example, the following code shows that a field should be placed at `Row` 8 `Col` 31, but the original location of the field is shown to be `VirtualRowCol="8,29"`. 
+
+```html
+<div Row="8">
+    <DdsDecField Col="29+2" For="PSSR0001.UJOBN" VirtualRowCol="8,29" />
+```
 
 ## Methods
 
