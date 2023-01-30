@@ -7,9 +7,9 @@ title: Enhancing Applications using Non-Display File Pages
 
 Monarch-based programs execute within the context of a Monarch Job and conform to certain conventions allowing the program to be the target of a *CALL* operation. The Job provides a program with a connection to the database, with a set of _global_ variables shared amongst all the programs in the Job (the LDA and the LDC), and with a mechanism to support instantiation based on activation groups, which is particularly important in supporting the call commands.
 
-A Job also provides an interactive program with the infrastructure supporting the program's Workstation file. Refer to [Program User Interface](/concepts/architecture/program-user-interface.html) for  description of the interaction of the Program and Job during a normal session.
+A Job also provides an interactive program with the infrastructure supporting the program's Workstation file. Refer to [Program User Interface](/concepts/architecture/program-user-interface.html) for a description of the interaction of the website with a Job and its Programs.
 
-The Job and its programs run in a separate thread from where the website executes.  This thread is known in Monarch as the **Blue Thread**, a Razor Page of the website run in a worker threads denominated the **Yellow Thread**.
+Each Job and its programs run in a dedicated thread separate from where the website executes.  This thread is known in Monarch as the **Blue Thread**, and Razor Pages run in a worker thread of the website which Monarch calls the **Yellow Thread**.
 
 ## Job States
 
@@ -46,6 +46,15 @@ While the job is in state **D (Accepting Commands)**, a website page can use the
 | **Methods** | [ShowPage](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#showpagestring-string) <br/> [AcceptCommands](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands) | [Return](amfCommandClassReturnMethod.htm) |  [Call](amfCommandClassCallMethods.htm) <br/> [CallSilent](amfCommandClassCallSilentMethod.htm) <br/> [SetLdaField](amfCommandClassSetLdaFieldMethod.htm) <br/> [GetLdaField](amfCommandClassGetLdaFieldMethod.htm) <br/> [SetLdcObject](amfCommandClassSetLdcObjectMethod.htm) <br/> [GetLdcObject](amfCommandClassPushKeyFocusMethod.htm) <br/> [RemoveLdcObject](amfCommandClassGetLdcObjectMethod.htm) <br/> [PushKeyFocus](amfCommandClassRemoveLdcObjectMethod.htm) <br/> [RequestShutdown](amfCommandClassRequestShutdownMethod.htm)
 
 
+## A Word About Session Values
+Before getting into how to enter command mode and call programs from the yellow thread into the blue thread, we have to discuss the use of the ASP.NET Core [Session](//learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state) object.
+
+ASP.NET Core maintains session state by providing a cookie to the client (the browser) that contains a Session ID. Cookies are not share between different browsers (say Chrome and Edge), but they are share amongst all the Tabs and instances of a particular browser. The effect of the sharing of the Session ID cookie is the sharing of the Session object between all the browser instances and Tabs.
+
+If you have configured your application to [run multiple jobs](/manuals/configuration/multiple-jobs-one-browser.html) from a single browser, you will have to take special care to not use Session values.
+
+If your web pages needs to keep data on a per job basis, use the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) facilities provided via the [Command.JobSession](/reference/asna-qsys-expo/expo-model/command.html#properties) property.
+
 ## Enter Command Mode (Blue thread)
 
 ### ShowPage and AcceptCommands
@@ -59,28 +68,30 @@ The ShowPage and AcceptCommands commands prepare a job to accept commands.
     public string AcceptCommands(string parameter);
 ```            
 
-`ShowPage` receives an URL or one of the websites non-displayfile pages route and sends a request to the webserver to redirect the browser to the passed URL or page.  After that, `ShowPage` enters the same serving cycle used by `AcceptCommands`.
+`ShowPage` receives a URL or one of the websites non-displayfile pages route and sends a request to the webserver to redirect the browser to the passed URL or page.  After that, `ShowPage` enters the same serving cycle used by `AcceptCommands`.
 
 `AcceptCommands` enters a cycle of serving commands sent by the yellow thread, the serving cycle ends when a `Return` command is received and control passes back to the program that invoked `AcceptCommnads`. The `Return` method has a string parameter which is made available to the blue thread as the returned value of `AcceptCommands` and `ShowPage`.
 
-Both of these methods accept a single string parameter; the parameter will be stored in the session object where the website page can retrieve it.  Using the .NET [SessionExtensions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.sessionextensions), the string parameter can be retrieved like this:
+Both of these methods accept a single string parameter; the parameter will be stored in the JobSession object where the website page can retrieve it.  Using the Monarch [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class, the string parameter can be retrieved via the `CommandParm` property like this:
 
 ```cs
-    string parmeters = HttpContext.Session.GetString("ASNA_MonarchCommandParm");
-    HttpContext.Session.SetString("ASNA_MonarchCommandParm", null);
+    var command = Command.GetCommandFromRequest(HttpContext);
+    ...
+    string parmeters = command.JobSession.CommandParm;
+    command.JobSession.CommandParm = string.Empty;
 ```
 ## Execute Commands (Yellow thread)
 
-Once a Job is accepting commands the website can send requests for the job to execute.  The request are manipulations of the LDC and the LDA, calls to programs and finally returning to normal procedural execution of programs.
+Once a Job is accepting commands, the website can send requests for the job to execute.  The request are manipulations of the LDC and the LDA, calls to programs, requesting a shutdown of the job, and finally returning to normal procedural execution of programs.
 
 ### Call Command
-`Call` can invoke both kinds of programs: interactive and non-interactive. Programs receive parameters by reference, i.e. Page models can send and receive data to/from the called programs; the parameters are stored in an array of strings. The called program can define its parameter list using fields of type character and decimal (zoned, packed, binary, and decimal).
+`Call` can invoke both kinds of programs: interactive and non-interactive. Programs receive parameters by reference, i.e. Page models can send and receive data to/from the called programs; the arguments are stored in an array of strings. The called program can define its parameter list only using fields of type character and decimal (zoned, packed, binary, and decimal).
 
 ```cs
-    public void Call(string assemblyName, string programName, string[] parms)
+    public void Call(string assemblyName, string programName, string[] args)
 ```
 
-Interactive calls require a callback Page route where control will be relinquished once the called program finish execution. Calling interactive programs effectively means a transfer of control, first to the interactive program being called, and then to the callback Page. Calls that invoke interactive programs can send data into the program via parameters but the output parameters list will be sent to the callback page by storing the array in the Session under the `["ASNA_MonarchCommandParm"]` key.
+Interactive calls **require** a callback Page route where control will be relinquished once the called program finish execution. Calling interactive programs effectively means a transfer of control, first to the interactive program being called, and then to the callback Page. Calls that invoke interactive programs can send data into the program via parameters but there output parameter list will be sent to the callback page by storing the array in the `Command.JobSession.CommandParm` property in the form of a multiple line string with each parameter in a separate line.
 
 ```cs
     public void Call(string assemblyName, string programName, string[] parms string callbackPage)
@@ -119,7 +130,7 @@ Returns a Job to procedural processing thus exiting command mode.
 public void Return(string result)
 ```
 
-When an Razor Page wants to return the Job to the **B (Executing a Program)** state to continue its procedural processing, it invokes this command, passing a string back to the original code in the blue thread that prepared the job to accept commands. The string parameter is made available to the blue thread as the returned value of `AcceptCommands` and `ShowPage`.
+When a Razor Page wants to return the Job to the **B (Executing a Program)** state to continue its procedural processing, it invokes this command, passing a string back to the original code in the blue thread that prepared the job to accept commands. The string parameter is made available to the blue thread as the returned value of `AcceptCommands` and `ShowPage`.
 
 ## See Also
 

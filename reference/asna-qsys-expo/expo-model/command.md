@@ -31,7 +31,7 @@ Provides functionality to interact directly with a Job.
 
 ### Command( [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext) )
 
-Initializes a new instance of the Command class for the provided HTTP context.
+Initializes a new instance of the Command class for the provided HTTP context and job handle.
 
 ```cs
 Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
@@ -42,7 +42,7 @@ Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext) | HttpContext | The information associated with the HTTP request. 
-
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | jobHandle | The identifier of the jobHandle for this command. 
 <br>
 
 
@@ -53,6 +53,7 @@ Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
+| [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) | JobSession | Gets a reference to the JobSession for the Command. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | JobStarted | Gets a value that indicates whether the Job has been started. | 
 
 <br>
@@ -68,9 +69,11 @@ Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [GetActiveDisplayFile](#getactivedisplayfile)() | Get the active display file. | The active Display File
+| [Command](/reference/asna-qsys-expo/expo-model/command.html) | [GetCommandFromRequest](#getcommandfromrequesthttpcontext)([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext))  |  Initializes a new instance of the Command class for the provided HTTP context which should contain a JobHandle. | A Command instance associated with the JobHandle.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value stored in the Job's Local Data Area. | The requested field value.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdcObject](#getldcobjectstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value from the Job's Local Data Collection associated with the specified name. | The value associated with the specified name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetRequestJobHandle](#getrequesthobhandlehttpcontext-displaypagesoptions)([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext), [DisplayPagesOptions ](/reference/asna-qsys-expo/expo-model/display-pages-options.html))  | Get the JobHandle for the Request in the HttpContext. | The JobHandle found in the HttpContext Request's QueryOption or Form.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PushEndRequest](#pushendrequest)() | Invokes the EndRequest operation on the waiting blue thread program. | 
@@ -165,7 +168,28 @@ GetActiveDisplayFile();
 
 [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html)
 
+The active Display File
 
+<br>
+<br>
+
+### GetCommandFromRequest([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext))  
+
+ Initializes a new instance of the Command class for the provided HTTP context which should contain a JobHandle.
+
+```cs
+static Command GetCommandFromRequest(HttpContext HttpContext)
+```
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+|[HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext)  |  HttpContext | The information associated with the HTTP request. Request should have a JobHandle in the QueryString or the Form.
+
+
+### Returns
+[Command](/reference/asna-qsys-expo/expo-model/command.html)
+A Command instance associated with the JobHandle.
 
 
 <br>
@@ -216,6 +240,31 @@ GetLdcObject(String name);
 
 The value associated with the specified name.
 
+<br>
+<br>
+
+### GetRequestJobHandle([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext),
+[DisplayPagesOptions](/reference/asna-qsys-expo/expo-model/display-pages-options.html)) 
+
+```cs
+static int GetRequestJobHandle(HttpContext httpContext, DisplayPagesOptions dpOptions = null)
+```
+
+
+Get the JobHandle for the Request in the HttpContext. | The JobHandle found in the HttpContext Request's QueryOption or Form.
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+|[HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext) | httpContext | The current HttpContext.
+| [DisplayPagesOptions ](/reference/asna-qsys-expo/expo-model/display-pages-options.html) | dpOptions | The website's DisplayPage options, default's to the configured options. 
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+The JobHandle found in the HttpContext Request's QueryOption or Form.
 
 <br>
 <br>
@@ -240,8 +289,6 @@ PushKeyFocus(AidKeyIBM key, short virtualRowCol, string fieldName);
 ```
 
 #### Parameters
-
-|  | [PushKeyFocus](#pushkeyfocusaidkeyibm-string-int32)([AidKeyIBM](/reference/asna-qsys-expo/expo-model/aid-key-ibm.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Provides input to the blue thread program waiting for input. | The active Display File.
 
 | Type | Parameter name | Description
 | --- | --- | ---

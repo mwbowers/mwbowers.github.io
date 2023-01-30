@@ -29,20 +29,36 @@ On the website we'll be making calls to programs on the Job.  Assume a menu is t
 The website is responsible for starting the Job, we will do it in the Minutus Razor Page prior to presenting the menu to the user, this could be achieved by adding an OnGet() method to Minutus as follows:
 
 ```cs
+public int __ASNA_JobHandle__ { get; set; } = 0;
+
 public void OnGet()
 {
-    var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+    __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
+    var command = new Command(HttpContext, __ASNA_JobHandle__);
     if (!command.JobStarted)
     {
-        command.StartJob();
+        __ASNA_JobHandle__ = command.StartJob();
         return;
     }
     . . .
 }
 ```
+#### Keeping track of the Job Handle
+Notice that by using the `__ASNA_JobHandle__` property, we can use the code above for websites configured to use either one Job per Browser or [multiple Jobs from a single Browser](/manuals/configuration/multiple-jobs-one-browser.html).
+
+To run multiple jobs, we would add the `__ASNA_JobHandle__` as a hidden field of the Minutus.cshtml form.
+
+```html
+    <form>
+        ...
+        @Html.Hidden("__ASNA_JobHandle__")
+    </form>
+```
+
+The first time `OnGet()` is called, `__ASNA_JobHandle__` would be zero and the `command.JobStarted` would return false.  Subsequent calls would return true as the `__ASNA_JobHandle__` would have the value returned by `command.StartJob()`.
 
 ### Calling a Program
-The menu could present various options, we could add this to the OnPost() method of the Minutus page to handle the user selection:
+The menu could present various options, we could add the following code to the OnPost() method of the Minutus page to handle the user selection:
 
 ```cs
 public IActionResult OnPost()
@@ -67,7 +83,7 @@ public IActionResult OnPost()
 
                 case 0:
                     {
-                        return RedirectToPage("/Monarch/EoJ");
+                        command.RequestShutdown();
                     }
             }
 
@@ -87,7 +103,7 @@ Let's digest the line:
     command.Call(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>(), "/Minutus");
 ```    
 
-The `Call` method receives the path to the assembly containing the Program to be called as the first parameter, in this case we are retrieving the path from the configuration's file.  The second parameter is the fully qualified class name of the program.  Any parameters needed by the program are sent in an array of **strings**.  Finally, the last parameter is the Page where control should be passed when the execution of the program is completed; this parameter is only necessary for **interactive programs**.
+The `Call` method receives the path to the assembly containing the Program to be called as the first parameter, in this case we are retrieving elsewhere the path from the configuration's file.  The second parameter is the fully qualified class name of the program to call.  Any parameters needed by the program are sent in an array of **strings**.  Finally, the last parameter is the Page where control should be passed when the execution of the program is completed; this parameter is only necessary for **interactive programs**.
 
 Since the program we are calling, `CUSTINQ` is interactive, the `Call` method will rise an exception with the information needed to redirect the browser to the CUSTINQ's displayfile page.  We will handle this exception on the `RedirectToResult` method:
 
@@ -95,12 +111,8 @@ Since the program we are calling, `CUSTINQ` is interactive, the `Call` method wi
 IActionResult RedirectToResult(RedirectedException WhereTo)
 {
     string newUrl = WhereTo.NewUrl.TrimStart();
-    if (WhereTo.NewArea == null)
-    {
-        return RedirectToPage(newUrl);
-    }
-
-    return RedirectToPage(newUrl, new { area = WhereTo.NewArea });
+    QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
+    return RedirectToPage(newUrl, route);
 }
 ```
 
@@ -110,7 +122,7 @@ After `CUSTINQ` completes execution and has 'used' the browser's screen for its 
     command.Call(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>(), "/Minutus");
 ```    
 ### Passing Parameters
-Let's look at an example of passing parameters to the called program. Say we want to add an option '2' to allow the user to call a program passing it a number, the program will use the parameter and return a new value on the way out.  Furthermore assume the program is interactive.  The OnPost() switch statement would have this new code:
+Let's look at an example of passing parameters to the called program. Say we want to add an option '2' to allow the user to call a program passing it a number, the program will use the parameter and return a new value on the way out.  Furthermore assume the program is interactive.  The Minutus OnPost() switch statement would have this new code:
 
 ```cs
                 case 2:
@@ -124,34 +136,35 @@ Let's look at an example of passing parameters to the called program. Say we wan
 ```
 The `Call` method receives an array of strings to be passed as parameters to the program.  Eventhough the parameters are passed as strings, these are casted to the type of parameter defined by the Program as long as they are: strings, decimals, FixedStrings and FixedDecimals. 
 
-Once the program returns, Monarch will redirect the browser back to /Minutes as requested on the `Call` method.  The values of the parameters returned by the program are concatenated into a single string, separated by newline characters, and stored into the session under a key of `"ASNA_MonarchCommandParm"`. These values can be retrieved as shown here:
+Once the program returns, Monarch will redirect the browser back to /Minutes as requested on the `Call` method.  The values of the parameters returned by the program are concatenated into a single string, separated by newline characters, and stored in the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class property `CommandParm`.  These values can be retrieved as shown here:
 ```cs
         public void OnGet()
         {
-            var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+            __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
+            var command = new Command(HttpContext, __ASNA_JobHandle__);
             if (!command.JobStarted)
             {
                 command.StartJob();
                 return;
             }
 
-            string parameter = HttpContext.Session.GetString("ASNA_MonarchCommandParm");
+            JobSession js = command.JobSession;
+            string parameter = js.CommandParm;
             if (!string.IsNullOrEmpty(parameter))
             {
-                HttpContext.Session.SetString("ASNA_MonarchCommandParm", "");
+                js.CommandParm = string.Empty;
                 CustomerNumber = decimal.Parse(parameter);
             }
         }
-
 ```
 
 ### Calling a Non-Interactive program
 Calling non-interactive programs is simpler as it is not necessary to deal with the browser redirecting to display file pages and back to some other landing page.
 
-In the following example we have added an option to call a program, which requires an character input parameter with a customer number, and to process the two values returned by the program.
+In the following example we have added an option Minutus `OnPost()` to call a program, which requires a character input parameter with a customer number, and to process the two values returned by the program.
 
 ```cs
-                case 3:
+                case 4:
                     {
                         string[] parms = new string[3];
                         parms[0] = CustomerNumber.ToString("000000000");
@@ -169,7 +182,7 @@ In the following example we have added an option to call a program, which requir
 It is possible to call an interactive program, but instead of letting it display its screen, capture the data in the display file and then feed it arbitrary data and function keys.  This process is achieved by the use of the `CallSilent` and `PushKeyFocus` methods as shown below.
 
 ```cs
-                case 4:
+                case 5:
                     {
                         WebDisplayFileProxy df = command.CallSilent(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>());
                         var recordRow = df.DataSet.Tables["SFLC"].Rows[0];
@@ -201,23 +214,25 @@ Another consideration is the need to mark the record's row as being available to
 Here is the complete code for Minutus.
 
 ### Minutus.cshtml
-```cs
+```html
 @page
 @model CustAppSite.Pages.MinutusModel
 @{ ViewData["Title"] = "Minutus"; }
 
 <div style="padding:1em">
     <form method="post">
-        <h1>Select on of the details.</h1>
+        <h1>Select one of the details.</h1>
         <p> <em>1 - Customer Maintenance.</em> </p>
 
-        Provide a customer number for options 2 and 3.
+        Provide a customer number for options 2 and 4.
         <label asp-for="CustomerNumber" />
         <input asp-for="CustomerNumber" />
 
         <p><em>2 - Orders for Customer </em></p>
 
-        <p><em>3 - Sales & Returns for Customer </em> </p>
+        <p><em>3 - Orders for DEFAULT Customer </em></p>
+
+        <p><em>4 - Sales & Returns for Customer </em> </p>
         @if (@Model.Sales >= 0)
         {
             <p>
@@ -225,14 +240,14 @@ Here is the complete code for Minutus.
             </p>
         }
 
-        <p> <em>4 - Harvest Screen.</em> </p>
+        <p> <em>5 - Harvest Screen.</em> </p>
         @if (@Model.SimilarCustomer != null)
         {
             <p>
                 <span>Customer similar to 'Interna' is '@Model.SimilarCustomer'</span>
             </p>
         }
-        <p> <em>5 - Proceed with normal job execution.</em> </p>
+        <p> <em>6 - Proceed with normal job execution.</em> </p>
         <p> <em>0 - Exit.</em></p>
         <label asp-for="Option"></label>
         <input asp-for="Option" />
@@ -240,6 +255,8 @@ Here is the complete code for Minutus.
         <p class="actions">
             <button class="btn">Execute</button>
         </p>
+
+        @Html.Hidden("__ASNA_JobHandle__")
     </form>
 </div>
 ```
@@ -274,19 +291,22 @@ namespace CustAppSite.Pages
 
         public void OnGet()
         {
-            var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+            __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
+            var command = new Command(HttpContext, __ASNA_JobHandle__);
             if (!command.JobStarted)
             {
-                command.StartJob();
+                __ASNA_JobHandle__ = command.StartJob();
                 return;
             }
 
-            string parameter = HttpContext.Session.GetString("ASNA_MonarchCommandParm");
+            JobSession js = command.JobSession;
+            string parameter = js.CommandParm;
             if (!string.IsNullOrEmpty(parameter))
             {
-                HttpContext.Session.SetString("ASNA_MonarchCommandParm", "");
+                js.CommandParm = string.Empty;
                 CustomerNumber = decimal.Parse(parameter);
             }
+            command.CommitJobSession();
         }
 
         public IActionResult OnPost()
@@ -295,7 +315,7 @@ namespace CustAppSite.Pages
             {
                 if (ModelState.IsValid)
                 {
-                    var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+                    var command = Command.GetCommandFromRequest(HttpContext);
                     while (!command.JobStarted)
                         System.Threading.Thread.Sleep(100);
 
@@ -319,6 +339,12 @@ namespace CustAppSite.Pages
                             }
                         case 3:
                             {
+                                string[] parms = new string[0];
+                                command.Call(AssemblyPath, "Acme.ERCAP.ORDHINQ", parms, "/Minutus");
+                                break;
+                            }
+                        case 4:
+                            {
                                 string[] parms = new string[3];
                                 parms[0] = CustomerNumber.ToString("000000000");
                                 parms[1] = "0";
@@ -328,7 +354,7 @@ namespace CustAppSite.Pages
                                 Returns = decimal.Parse(parms[2]);
                                 break;
                             }
-                        case 4:
+                        case 5:
                             {
                                 WebDisplayFileProxy df = command.CallSilent(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>());
                                 var recordRow = df.DataSet.Tables["SFLC"].Rows[0];
@@ -344,14 +370,15 @@ namespace CustAppSite.Pages
                                 df = command.PushKeyFocus(AidKeyIBM.F3, 0, "");
                                 break;
                             }
-                        case 5:
+                        case 6:
                             {
                                 command.Return("proceed");
                                 break;
                             }
                         case 0:
                             {
-                                return RedirectToPage("/Monarch/EoJ");
+                                command.RequestShutdown();
+                                break;
                             }
                     }
 
@@ -367,8 +394,8 @@ namespace CustAppSite.Pages
         IActionResult RedirectToResult(RedirectedException WhereTo)
         {
             string newUrl = WhereTo.NewUrl.TrimStart();
-            string area = WhereTo.NewArea ?? "";
-            return RedirectToPage(newUrl, new { area });
+            QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
+            return RedirectToPage(newUrl, route);
         }
 
     }

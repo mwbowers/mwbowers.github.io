@@ -3,16 +3,16 @@ title: Using Fake Data
 
 ---
 
-The Display section of the [website configuration](expo-website.html) provides the ability to create and utilize fake data.  Fake data is utilized when particular pages of the website are to be displayed but the user does not wish to navigate the application all the way to the page.  This feature can be used by a developer to provide a set of files to another developer working purely in the look and feel of the website.
+The `Display` section of the [website configuration](configure-expo-website.html#displaypages) provides the ability to create and utilize fake data.  Fake data is utilized when particular pages of the website are to be displayed but the user does not wish to navigate the application all the way to the page.  This feature can be used by a developer to provide a set of files to another developer working purely in the look and feel of the website.
 
-The section has two values:
+The section has these two properties:
  - `FakeDataType` - Valid values: `None`, `Output`, `Input`
  - `FakeDataDirectory` - Directory where Fake data files are located. It may be an absolute path or relative to the web site.
 
-When FakeDataType is equal to `None`, then no fake data is involved in the process.
+When `FakeDataType` is equal to `None`, then no fake data is involved in the process.
 
 ## Creating Fake Data
-Setting the value to `Input` will allow the Website to run normally with the addition of a button, named `Save FakeData`, added to the function key pad allowing the developer to save the dataset used to produced the page to the `FakeDataDirectory`.  The `.fake` file is created with the same name as the current page being displayed. If a `.fake` file already exists in the directory then a numeric prefix is appended to the name of the file.
+Setting the `FakeDataType` value to `Input` will allow the Website to run normally with the addition of a button, named `Save FakeData`, added to the function key pad allowing the developer to save the dataset used to produced the page to the `FakeDataDirectory`.  The `.fake` file is created with the same name as the current page being displayed. If a `.fake` file already exists in the directory then a numeric prefix is appended to the name of the file.
 
 
 For this example, assume `appsettings.json` has this entry:
