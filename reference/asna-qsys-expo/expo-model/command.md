@@ -25,16 +25,16 @@ Provides functionality to interact directly with a Job.
 
 | Name |  Description 
 | --- | --- 
-| **Command**( [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext) ) | Initializes a new instance of the Command class for the provided HTTP context.
+| **Command**( [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)  ) | Initializes a new instance of the Command class for the provided HTTP context and job handle.
 
 <br>
 
-### Command( [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext) )
+### Command( [HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
 Initializes a new instance of the Command class for the provided HTTP context and job handle.
 
 ```cs
-Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
+Command( Microsoft.AspNetCore.Http.HttpContext HttpContext, int jobHandle );
 ```
 
 #### Parameters
@@ -63,17 +63,18 @@ Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Call](#callstring-string-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job.  If the program displays a page it will be shown in the browser. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Call](#callstring-string-string[]-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job. | 
-| [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [CallSilent](#callsilentstring-string-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job.  The caller will have to handle any input requested by the program via a display page. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Call](#callstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job.  If the program displays a page it will be shown in the browser. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Call](#callstring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job. | 
+| [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [CallSilent](#callsilentstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Requests that a program be executed in the Job.  The caller will have to handle any input requested by the program via a display page. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CommitJobSession](#commitjobsession)() | Stores the job session in the data store. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [GetActiveDisplayFile](#getactivedisplayfile)() | Get the active display file. | The active Display File
+| [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html) | [GetActiveDisplayFile](#getactivedisplayfile)() | Gets the active display file. | The active Display File
 | [Command](/reference/asna-qsys-expo/expo-model/command.html) | [GetCommandFromRequest](#getcommandfromrequesthttpcontext)([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext))  |  Initializes a new instance of the Command class for the provided HTTP context which should contain a JobHandle. | A Command instance associated with the JobHandle.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value stored in the Job's Local Data Area. | The requested field value.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdcObject](#getldcobjectstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value from the Job's Local Data Collection associated with the specified name. | The value associated with the specified name.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetRequestJobHandle](#getrequesthobhandlehttpcontext-displaypagesoptions)([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext), [DisplayPagesOptions ](/reference/asna-qsys-expo/expo-model/display-pages-options.html))  | Get the JobHandle for the Request in the HttpContext. | The JobHandle found in the HttpContext Request's QueryOption or Form.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetRequestJobHandle](#getrequestjobhandlehttpcontext-displaypagesoptions)([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext), [DisplayPagesOptions ](/reference/asna-qsys-expo/expo-model/display-pages-options.html))  | Get the JobHandle for the Request in the HttpContext. | The JobHandle found in the HttpContext Request's QueryOption or Form.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PushEndRequest](#pushendrequest)() | Invokes the EndRequest operation on the waiting blue thread program. | 
@@ -84,7 +85,7 @@ Command( Microsoft.AspNetCore.Http.HttpContext HttpContext );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Return](#returnstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Informs the Job that it should return to program execution. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](#setldafieldint32-int32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the Job's Local Data Area. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdcObject](#setldcobjectstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds or updates an element of the Job's Local Data Collection with the specified key. Adding an element increments the Local Data Collection version. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [StartJob](#startjob)() | Starts a new Job. | 
+|  [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [StartJob](#startjob)() | Starts a new Job. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
@@ -152,23 +153,31 @@ CallSilent(String assemblyPath, String programName, String[] parms);
 [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html)
 
 
+<br>
+<br>
 
-<br>
-<br>
+### CommitJobSession()
+
+Stores the job session in the data store.
+
+```cs
+void CommitJobSession()
+```
+
 
 ### GetActiveDisplayFile()
 
 Get the active display file.
 
 ```cs
-GetActiveDisplayFile();
+WebDisplayFileProxy  GetActiveDisplayFile();
 ```
 
 #### Returns
 
 [WebDisplayFileProxy](/reference/asna-qsys-expo/expo-model/web-display-file-proxy.html)
 
-The active Display File
+The active Display File which is the one used by the program at the top of the call stack.
 
 <br>
 <br>
@@ -200,7 +209,7 @@ A Command instance associated with the JobHandle.
 Gets the value stored in the Job's Local Data Area.
 
 ```cs
-GetLdaField(Int32 start, Int32 length);
+string GetLdaField(Int32 start, Int32 length);
 ```
 
 #### Parameters
@@ -225,7 +234,7 @@ The requested field value.
 Gets the value from the Job's Local Data Collection associated with the specified name.
 
 ```cs
-GetLdcObject(String name);
+string GetLdcObject(String name);
 ```
 
 #### Parameters
@@ -243,8 +252,7 @@ The value associated with the specified name.
 <br>
 <br>
 
-### GetRequestJobHandle([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext),
-[DisplayPagesOptions](/reference/asna-qsys-expo/expo-model/display-pages-options.html)) 
+### GetRequestJobHandle([HttpContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext), [DisplayPagesOptions](/reference/asna-qsys-expo/expo-model/display-pages-options.html)) 
 
 ```cs
 static int GetRequestJobHandle(HttpContext httpContext, DisplayPagesOptions dpOptions = null)
@@ -397,9 +405,13 @@ SetLdcObject(String name, String value);
 Starts a new Job.
 
 ```cs
-StartJob();
+ int StartJob();
 ```
+#### Returns
 
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+An integer representing the JobHandle for the newly created job.
 
 <br>
 <br>
