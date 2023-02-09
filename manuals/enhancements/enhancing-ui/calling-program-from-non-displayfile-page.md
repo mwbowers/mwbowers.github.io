@@ -43,6 +43,8 @@ public void OnGet()
     . . .
 }
 ```
+
+
 #### Keeping track of the Job Handle
 Notice that by using the `__ASNA_JobHandle__` property, we can use the code above for websites configured to use either one Job per Browser or [multiple Jobs from a single Browser](/manuals/configuration/multiple-jobs-one-browser.html).
 
@@ -209,6 +211,11 @@ Another consideration is the need to mark the record's row as being available to
 
  It is very important that the program must ends execution so that the Job goes back to the [**D**. Accepting Commands](enhancing-with-non-display-file.html#accepting-commands) state. In the example above this is effected by 'pushing' key F3 which is how the CUSTINQ program ends.  
 
+### Committing the Job Session
+
+Note that if you modify the `JobSession`, you may need to call the `Command.CommitJobSession` if you do not `Command.Call` a program as the last operation of your Non-Display File page action. 
+
+`Call` commits the `JobSession` prior to giving control the called program.
 
 ## Minutus
 Here is the complete code for Minutus.
@@ -394,6 +401,9 @@ namespace CustAppSite.Pages
         IActionResult RedirectToResult(RedirectedException WhereTo)
         {
             string newUrl = WhereTo.NewUrl.TrimStart();
+            if (newUrl.StartsWith("/Monarch/"))
+                return Redirect(newUrl);
+
             QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
             return RedirectToPage(newUrl, route);
         }

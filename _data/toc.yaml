@@ -247,6 +247,8 @@ Manuals:
       path: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
   - sectiontitle: Programming in Monarch Base
     section:
+    - title: What's new in 4.0
+      path: /manuals/programming/what-s-new/new-in-4.0.html
     - title: Getting Asna.QSys Packages
       path: /manuals/programming/get-asna-qsys/get-asna-qsys-overview.html
     - sectiontitle: Programs

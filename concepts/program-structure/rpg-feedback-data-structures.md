@@ -316,6 +316,8 @@ The `INFDS` contains the following feedback information:
 * [Device Specific Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-device-specific-feedback-information#dsfeed) (length is variable)
 * [Get Attributes Feedback](https://www.ibm.com/docs/en/i/7.3?topic=structure-get-attributes-feedback-information#gafeed) (length is variable)
 
+Consult the  IBM documentation for the [Open feedback area](https://www.ibm.com/docs/en/i/7.5?topic=layouts-open-feedback-area) contents and the [IO feedback area ](https://www.ibm.com/docs/en/i/7.5?topic=layouts-io-feedback-area).
+
 Example 7: *INFDS for File Feedback*
 
 ```
