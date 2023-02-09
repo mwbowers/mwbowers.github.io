@@ -9,7 +9,7 @@ The major new features on Monarch Base 4.0 are:
 Version 4.0 of ASNA.QSys.Expo is not backwards compatible with versions 3.x.  There are a few modifications for [upgrading websites](#upgrading-websites-from-3x) using Monarch Base 3.x to use version 4.0.
 
 ## Support for .NET 6.0 & 7.0
-Monarch Base 4.0 is packages with multitargeted assemblies for .NET 5.0 and .NET 6.0.  The 6.0 versions can also be used with .NET 7.0.
+Monarch Base 4.0 is packaged with assemblies multitargeted for .NET 5.0 and .NET 6.0.  The 6.0 versions can also be used with .NET 7.0.
 
 This multitargeting support is temporary and the .NET 5.0 assemblies will be eliminated at the end of spring 2023.
 
@@ -27,7 +27,7 @@ Before upgrading the Monarch Base NuGet packages to version 4.0, please read thi
 
 The following classes had some breaking changes:
  * The [Command](/reference/asna-qsys-expo/expo-model/command.html ) class had some method signature changes.
- * The [SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) class lost several methods.
+ * The [SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) class lost several properties and methods.
  * The new class [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) was added to replace or enhance the functionality of the previous two classes.
 
 ### Session Object
@@ -43,9 +43,9 @@ There is a new method to `CommitJobSession`.
 
 ### SessionStorage Class
 
-Some values that version 3.0 used to save in the Session object have been transferred to the JobSession class. 
+Some values that version 3.0 used to save in the Session object have been transferred to the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class. 
 
-The [SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) class provides an ordered way of getting and setting values in the `ASP.NET Core` ISession collection.  Since the session storage is shared by all the Tabs on a user browser, the session is not a convenient place to store job related values. Monarch Base 4.0 provides the new class [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) to facilitate the storage of job related items.  For this reason several properties and methods were lost from the SessionStorage class and 'transferred' to the JobSession class.
+The [SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) class provides an ordered way of getting and setting values in the `ASP.NET Core` ISession collection.  Since the session storage is shared by all the Tabs on a user browser, the session is not a convenient place to store job related values. Monarch Base 4.0 provides the new class [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) to facilitate the storage of job related items.  For this reason several properties and methods were lost from the SessionStorage class and 'transferred' to the `JobSession` class.
 
 SessionStorage lost these properties:
  * `JobNumber` - Use the `Command.GetRequestJobHandle` to find a JobHandle instead.  For sites configured to run with a single job per browser, you can use the new `SingleJobNumber` property.
@@ -62,9 +62,9 @@ The following methods were removed:
  Additionally, the value that used to be saved with the key  `"ASNA_MonarchCommandParm"` has been removed and transferred to the `JobSession.CommandParm` property.
 
 ### Your Non-Display File Pages
-Any usage of the methods or properties mentioned above will required changes to your non-display file pages.  It is useful to go thru the description on [Calling a Program from a Non-DisplayFile Page](/manuals/enhancements/enhancing-ui/calling-program-from-non-displayfile-page.html) where you will see the use JobSession class being used.
+Any usage of the methods or properties mentioned above will required changes to your non-display file pages.  It is useful to go thru the description on [Calling a Program from a Non-DisplayFile Page](/manuals/enhancements/enhancing-ui/calling-program-from-non-displayfile-page.html) where you will see the use `JobSession` class being used.
 
-Note that you may need to call the `Command.CommitJobSession` if you modify the `JobSession` and do not `Command.Call` a program as the last operation of your Non-Display File page action. `Call` commits the `JobSession` prior to giving control the called program.
+Note that you may need to call the `Command.CommitJobSession` if you modify the `JobSession` and do not `Command.Call` a program as the last operation of your Non-Display File page action. `Call` commits the `JobSession` prior to giving control to the called program.
 
 ### ASNA Provided Pages
 
