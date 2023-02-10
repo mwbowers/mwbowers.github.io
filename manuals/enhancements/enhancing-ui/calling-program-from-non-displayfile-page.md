@@ -110,12 +110,15 @@ The `Call` method receives the path to the assembly containing the Program to be
 Since the program we are calling, `CUSTINQ` is interactive, the `Call` method will rise an exception with the information needed to redirect the browser to the CUSTINQ's displayfile page.  We will handle this exception on the `RedirectToResult` method:
 
 ```cs
-IActionResult RedirectToResult(RedirectedException WhereTo)
-{
-    string newUrl = WhereTo.NewUrl.TrimStart();
-    QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
-    return RedirectToPage(newUrl, route);
-}
+    IActionResult RedirectToResult(RedirectedException WhereTo)
+    {
+        string newUrl = WhereTo.NewUrl.TrimStart();
+        if (newUrl.StartsWith("/Monarch/"))
+            return Redirect(newUrl);
+
+        QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
+        return RedirectToPage(newUrl, route);
+    }
 ```
 
 After `CUSTINQ` completes execution and has 'used' the browser's screen for its I/O with the user, Monarch will redirect the browser to the `Minutes` page as requested on the original `Call` request:
