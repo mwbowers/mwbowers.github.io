@@ -296,6 +296,8 @@ namespace CustAppSite.Pages
 
         public string SimilarCustomer { get; private set; }
 
+        public int __ASNA_JobHandle__ { get; set; } = 0;
+
         public void OnGet()
         {
             __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
