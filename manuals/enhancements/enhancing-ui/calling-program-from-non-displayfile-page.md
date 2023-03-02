@@ -78,7 +78,7 @@ public IActionResult OnPost()
             {
                 case 1:
                     {
-                        var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+                         var command = Command.GetCommandFromRequest(HttpContext);
                         command.Call(AssemblyPath, "Acme.ERCAP.CUSTINQ", Array.Empty<string>(), "/Minutus");
                         break;
                     }
@@ -140,7 +140,7 @@ Let's look at an example of passing parameters to the called program. Say we wan
                     {
                         string[] parms = new string[1];
                         parms[0] = CustomerNumber.ToString();
-                        var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+                        var command = Command.GetCommandFromRequest(HttpContext);
                         command.Call(AssemblyPath, "Acme.ERCAP.ORDHINQ", parms, "/Minutus");
                         break;
                     }
@@ -441,4 +441,3 @@ namespace CustAppSite.Pages
     }
 }
 ```
-
