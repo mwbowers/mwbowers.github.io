@@ -4,7 +4,7 @@ title: Calling a Program from a Non-DisplayFile Page
 ---
 
 ## On The Job
-To prepare a Job to receive Call requests from the website it is necessary to have it enter a cycle of accepting commands; this is achieved by invoking the AcceptCommands method on the InteractiveJob. Here is an example on the MyJob class:
+To prepare a Job to receive Call requests from the website it is necessary to have it enter a cycle of [accepting commands](enhancing-with-non-display-file.html#accepting-commands); this is achieved by invoking the AcceptCommands method on the InteractiveJob. Here is an example on the MyJob class:
 
 ```cs
 override protected void ExecuteStartupProgram()
@@ -29,19 +29,21 @@ On the website we'll be making calls to programs on the Job.  Assume a menu is t
 The website is responsible for starting the Job, we will do it in the Minutus Razor Page prior to presenting the menu to the user, this could be achieved by adding an OnGet() method to Minutus as follows:
 
 ```cs
-public int __ASNA_JobHandle__ { get; set; } = 0;
+        public int __ASNA_JobHandle__ { get; set; } = 0;
 
-public void OnGet()
-{
-    __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
-    var command = new Command(HttpContext, __ASNA_JobHandle__);
-    if (!command.JobStarted)
-    {
-        __ASNA_JobHandle__ = command.StartJob();
-        return;
-    }
-    . . .
-}
+        public IActionResult OnGet()
+        {
+            try
+            {
+                __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
+                var command = new Command(HttpContext, __ASNA_JobHandle__);
+                if (!command.JobStarted)
+                {
+                    __ASNA_JobHandle__ = command.StartJob();
+                    return Page();
+                }
+            . . .
+        }
 ```
 
 
@@ -114,7 +116,11 @@ Since the program we are calling, `CUSTINQ` is interactive, the `Call` method wi
     {
         string newUrl = WhereTo.NewUrl.TrimStart();
         if (newUrl.StartsWith("/Monarch/"))
+        {
+            newUrl = newUrl.Replace("\n", "\\n");
+            newUrl = newUrl.Replace("\r", "\\r");
             return Redirect(newUrl);
+        }
 
         QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
         return RedirectToPage(newUrl, route);
@@ -143,30 +149,37 @@ The `Call` method receives an array of strings to be passed as parameters to the
 
 Once the program returns, Monarch will redirect the browser back to /Minutes as requested on the `Call` method.  The values of the parameters returned by the program are concatenated into a single string, separated by newline characters, and stored in the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class property `CommandParm`.  These values can be retrieved as shown here:
 ```cs
-        public void OnGet()
-        {
-            __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
-            var command = new Command(HttpContext, __ASNA_JobHandle__);
-            if (!command.JobStarted)
-            {
-                command.StartJob();
-                return;
-            }
 
-            JobSession js = command.JobSession;
-            string parameter = js.CommandParm;
-            if (!string.IsNullOrEmpty(parameter))
+        public IActionResult OnGet()
+        {
+            try
             {
-                js.CommandParm = string.Empty;
-                CustomerNumber = decimal.Parse(parameter);
+                __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
+                var command = new Command(HttpContext, __ASNA_JobHandle__);
+                if (!command.JobStarted)
+                {
+                    __ASNA_JobHandle__ = command.StartJob();
+                    return Page();
+                }
+
+                JobSession js = command.JobSession;
+                string parameter = js.CommandParm;
+                if (!string.IsNullOrEmpty(parameter))
+                {
+                    js.CommandParm = string.Empty;
+                    if (decimal.TryParse(parameter, out decimal custNum))
+                        CustomerNumber = custNum;
+                }
+                command.CommitJobSession();
             }
+            . . . 
         }
 ```
 
 ### Calling a Non-Interactive program
 Calling non-interactive programs is simpler as it is not necessary to deal with the browser redirecting to display file pages and back to some other landing page.
 
-In the following example we have added an option Minutus `OnPost()` to call a program, which requires a character input parameter with a customer number, and to process the two values returned by the program.
+In the following example we have added an option on Minutus `OnPost()` to call a program, which requires a character input parameter with a customer number, and to process the two values returned by the program.
 
 ```cs
                 case 4:
@@ -193,7 +206,7 @@ It is possible to call an interactive program, but instead of letting it display
                         var recordRow = df.DataSet.Tables["SFLC"].Rows[0];
                         recordRow["SETNAME"] = "Interna";
                         recordRow["*Direction"] = "I";
-                        df = command.PushKeyFocus(AidKeyIBM.Enter, 17, "SETNAME");
+                        df = command.PushKeyFocus(AidKeyIBM.Enter, 0x0246, "SETNAME"); // RowCol = 0x0246  (row=2, col=70)
                         if (df.DataSet.Tables["SFL1"].Rows.Count > 0)
                         {
                             var subfileRecordRow = df.DataSet.Tables["SFL1"].Rows[0];
@@ -212,7 +225,7 @@ Another consideration is the need to mark the record's row as being available to
         recordRow["*Direction"] = "I";
 ```
 
- It is very important that the program must ends execution so that the Job goes back to the [**D**. Accepting Commands](enhancing-with-non-display-file.html#accepting-commands) state. In the example above this is effected by 'pushing' key F3 which is how the CUSTINQ program ends.  
+ It is very important that the program must end execution so that the Job goes back to the [**D**. Accepting Commands](enhancing-with-non-display-file.html#accepting-commands) state. In the example above this is effected by 'pushing' key F3 which is how the CUSTINQ program ends.  
 
 ### Committing the Job Session
 
@@ -287,8 +300,8 @@ namespace CustAppSite.Pages
     [BindProperties]
     public class MinutusModel : PageModel
     {
-        [Range(0, 5)]
-        public int Option { get; set; } = 2;
+        [Range(0, 6)]
+        public int Option { get; set; } = 1;
 
         [Range(10000, 99999)]
         public decimal CustomerNumber { get; set; } = 64000;
@@ -298,27 +311,36 @@ namespace CustAppSite.Pages
         public decimal Returns { get; private set; } = -1;
 
         public string SimilarCustomer { get; private set; }
-
+        
         public int __ASNA_JobHandle__ { get; set; } = 0;
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
-            var command = new Command(HttpContext, __ASNA_JobHandle__);
-            if (!command.JobStarted)
+            try
             {
-                __ASNA_JobHandle__ = command.StartJob();
-                return;
-            }
+                __ASNA_JobHandle__ = Command.GetRequestJobHandle(HttpContext);
+                var command = new Command(HttpContext, __ASNA_JobHandle__);
+                if (!command.JobStarted)
+                {
+                    __ASNA_JobHandle__ = command.StartJob();
+                    return Page();
+                }
 
-            JobSession js = command.JobSession;
-            string parameter = js.CommandParm;
-            if (!string.IsNullOrEmpty(parameter))
-            {
-                js.CommandParm = string.Empty;
-                CustomerNumber = decimal.Parse(parameter);
+                JobSession js = command.JobSession;
+                string parameter = js.CommandParm;
+                if (!string.IsNullOrEmpty(parameter))
+                {
+                    js.CommandParm = string.Empty;
+                    if (decimal.TryParse(parameter, out decimal custNum))
+                        CustomerNumber = custNum;
+                }
+                command.CommitJobSession();
             }
-            command.CommitJobSession();
+            catch (RedirectedException redirect)
+            {
+                return RedirectToResult(redirect);
+            }
+            return Page();
         }
 
         public IActionResult OnPost()
@@ -372,7 +394,7 @@ namespace CustAppSite.Pages
                                 var recordRow = df.DataSet.Tables["SFLC"].Rows[0];
                                 recordRow["SETNAME"] = "Interna";
                                 recordRow["*Direction"] = "I";
-                                df = command.PushKeyFocus(AidKeyIBM.Enter, 17, "SETNAME");
+                                df = command.PushKeyFocus(AidKeyIBM.Enter, 0x0246, "SETNAME"); // RowCol = 0x0246  (row=2, col=70)
                                 if (df.DataSet.Tables["SFL1"].Rows.Count > 0)
                                 {
                                     var subfileRecordRow = df.DataSet.Tables["SFL1"].Rows[0];
@@ -393,7 +415,6 @@ namespace CustAppSite.Pages
                                 break;
                             }
                     }
-
                 }
             }
             catch (RedirectedException redirect)
@@ -407,7 +428,11 @@ namespace CustAppSite.Pages
         {
             string newUrl = WhereTo.NewUrl.TrimStart();
             if (newUrl.StartsWith("/Monarch/"))
+            {
+                newUrl = newUrl.Replace("\n", "\\n");
+                newUrl = newUrl.Replace("\r", "\\r");
                 return Redirect(newUrl);
+            }
 
             QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
             return RedirectToPage(newUrl, route);

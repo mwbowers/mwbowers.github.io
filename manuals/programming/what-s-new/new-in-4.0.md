@@ -79,8 +79,14 @@ The `OnGet()` method of `Diagnose.cshtml.cs` should read like this:
         public void OnGet()
         {
             AbEndMessage = Request.Query.ContainsKey("AbEndMessage") ? Request.Query["AbEndMessage"] : "";
-            AbEndStack = Request.Query.ContainsKey("AbEndStack") ? HttpContext.Session.GetString("AbEndStack") : "";
+            AbEndMessage = AbEndMessage.Replace("\\n", "\n");
+            AbEndMessage = AbEndMessage.Replace("\\r", "\r");
+
+            AbEndStack = Request.Query.ContainsKey("AbEndStack") ? Request.Query["AbEndStack"] : "";
+            AbEndStack = AbEndStack.Replace("\\n", "\n");
+            AbEndStack = AbEndStack.Replace("\\r", "\r");
         }
+
 ```
 #### EoJ Page
 The `OnGet` method of `EoJ.csctml.cs` should read like this:

@@ -131,9 +131,11 @@ namespace CustAppSite.Pages
     [BindProperties]
     public class SwitchModel : PageModel
     {
+        int __ASNA_JobHandle__ = 0;
+
         public IActionResult OnGet()
         {
-            var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+            var command = Command.GetCommandFromRequest(HttpContext);
             while (!command.JobStarted)
                 System.Threading.Thread.Sleep(100);
 
@@ -156,6 +158,7 @@ namespace CustAppSite.Pages
                 string AssemblyPath = section["AssemblyPath"];
                 int option = 0;
                 int.TryParse(Request.Query["Option"], out option);
+                int.TryParse(Request.Query["JobHandle"], out __ASNA_JobHandle__);
                 switch (option)
                 {
                     case 1:
@@ -181,10 +184,16 @@ namespace CustAppSite.Pages
         IActionResult RedirectToResult(RedirectedException WhereTo)
         {
             string newUrl = WhereTo.NewUrl.TrimStart();
-            string area = WhereTo.NewArea ?? "";
-            return RedirectToPage(newUrl, new { area });
-        }
+            if (newUrl.StartsWith("/Monarch/"))
+            {
+                newUrl = newUrl.Replace("\n", "\\n");
+                newUrl = newUrl.Replace("\r", "\\r");
+                return Redirect(newUrl);
+            }
 
+            QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
+            return RedirectToPage(newUrl, route);
+        }
     }
 }
 
@@ -246,10 +255,12 @@ namespace CustAppSite.Pages
     [BindProperties]
     public class RestartModel : PageModel
     {
+        int __ASNA_JobHandle__ = 0;
+
         public IActionResult OnGet(string programName)
         {
             // Ensure Job is up and running
-            var command = new ASNA.QSys.Expo.Model.Command(HttpContext);
+            var command = Command.GetCommandFromRequest(HttpContext);
             while (!command.JobStarted)
                 System.Threading.Thread.Sleep(100);
 
@@ -273,10 +284,24 @@ namespace CustAppSite.Pages
 
             string[] parms = new string[Request.Query.Count];
             int i = 0;
+            bool hasJobHandle = false;
             foreach (var p in Request.Query)
             {
                 string parm = p.Value;
-                parms[i++] = parm.Trim('"');
+                parm = parm.Trim('"');
+                if (p.Key == "JobHandle")
+                {
+                    hasJobHandle = true;
+                    __ASNA_JobHandle__ = int.Parse(parm);
+                }
+                else
+                {
+                    parms[i++] = parm;
+                }
+            }
+            if (hasJobHandle)
+            {
+                Array.Resize<string>(ref parms, parms.Length-1);
             }
 
             // Call requested program
@@ -294,8 +319,15 @@ namespace CustAppSite.Pages
         IActionResult RedirectToResult(RedirectedException WhereTo)
         {
             string newUrl = WhereTo.NewUrl.TrimStart();
-            string area = WhereTo.NewArea ?? "";
-            return RedirectToPage(newUrl, new { area });
+            if (newUrl.StartsWith("/Monarch/"))
+            {
+                newUrl = newUrl.Replace("\n", "\\n");
+                newUrl = newUrl.Replace("\r", "\\r");
+                return Redirect(newUrl);
+            }
+
+            QSysRoute route = new QSysRoute(WhereTo.NewArea, __ASNA_JobHandle__);
+            return RedirectToPage(newUrl, route);
         }
     }
 }
