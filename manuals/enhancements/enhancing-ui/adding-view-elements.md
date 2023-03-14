@@ -29,12 +29,12 @@ The button can be rendered to the user in one of four [styles](/reference/asna-q
 
 A [DdsContextMenu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html) is a convenient way of adding *contextual* menu-option listings (near input-capable fields) to execute **actions**. The *context* menu is presented as a  [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) in its *closed state*. 
 
-To open the menu, the user clicks (using the left-mouse button or a finger *tap*). The list of available actions is presented in a pop-up window. Any action can be selected from the listing using the left-mouse button (or finger *tap*), or, to *collapse* the menu back to the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) the user may click on any record - in an area outside the menu -.
+To open the menu, the user clicks the **☰** button (using the left-mouse button or a finger *tap*). The list of available actions is presented in a pop-up window. Any action can be selected from the listing using the left-mouse button (or finger *tap*), or, to *collapse* the menu back to the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) the user may click on any record - in an area outside the menu -.
 
-### DdsContextMenuOption
+### DdsMenuOption
 
 Each of the available *actions* in a [DdsContextMenu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html), is specified with a 
-[DdsContextMenuOption](/reference/asna-qsys-expo/expo-tags/dds-context-menu-option-tag-helper.html) tagHelper.
+[DdsMenuOption](/reference/asna-qsys-expo/expo-tags/dds-menu-option-tag-helper.html) tagHelper.
 
 An *action* is described by a group of properties, allowing execution to:
 

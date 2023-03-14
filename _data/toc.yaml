@@ -2524,6 +2524,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/dds-checkbox-field-tag-helper.html
     - title: DdsConstantTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-constant-tag-helper.html
+    - title: DdsContextMenuTagHelper
+      path: /reference/asna-qsys-expo/expo-tags/asnaq-sys-expo-tags/classes/dds-context-menu-tag-helper.html
     - title: DdsDayNames
       path: /reference/asna-qsys-expo/expo-tags/dds-date-field-tag-helper/dds-day-names.html
     - title: DdsDateFieldTagHelper
@@ -2540,6 +2542,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper.html
     - title: DdsGridRowTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-grid-row-tag-helper.html
+    - title: DdsMenuOptionTagHelper
+      path: /reference/asna-qsys-expo/expo-tags/asnaq-sys-expo-tags/classes/dds-menu-option-tag-helper.html
     - title: DdsMessagePanelTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-message-panel-tag-helper.html
     - title: DdsRadioButtonGroupFieldTagHelper
