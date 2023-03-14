@@ -25,20 +25,20 @@ The button can be rendered to the user in one of four [styles](/reference/asna-q
  + Image
  + Link
 
-## DdsContextMenu
+## Context Menu
 
 A [DdsContextMenu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html) is a convenient way of adding *contextual* menu-option listings (near input-capable fields) to execute **actions**. The *context* menu is presented as a  [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) in its *closed state*. 
 
 To open the menu, the user clicks the **☰** button (using the left-mouse button or a finger *tap*). The list of available actions is presented in a pop-up window. Any action can be selected from the listing using the left-mouse button (or finger *tap*), or, to *collapse* the menu back to the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) the user may click on any record - in an area outside the menu -.
 
-### DdsMenuOption
+### Context Menu Option
 
 Each of the available *actions* in a [DdsContextMenu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html), is specified with a 
 [DdsMenuOption](/reference/asna-qsys-expo/expo-tags/dds-menu-option-tag-helper.html) tagHelper.
 
 An *action* is described by a group of properties, allowing execution to:
 
-1. *Change* the value of an existing field on the page. Optionally setting the *row,col* values for the virtual legacy application cursor-location, to allow the program that executed this DisplayPage to test the *current* current cursor-location to conditionally execute logic code.
+1. *Change* the value of an existing field on the page. Optionally setting the *row,col* values for the virtual legacy application cursor-location, to allow the program that executed this DisplayPage to test the *current* cursor-location to conditionally execute logic code.
 2. *Push* an [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) to submit the page.
 3. Combination of *(1)* and *(2)* above to *Change* a field and then *Push* an [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) to submit the page.
 
@@ -61,7 +61,7 @@ The following markup enhancement, replaces the `F4` DdsConstant with a `DdsConte
     </DdsContextMenu>
 </div>
 ```
->Note: DdsContextMenuOption allows specifying group separators, by setting the Text property to "--" (two dashes). A separator renders as a horizontal line.
+>Note: DdsContextMenuOption allows specifying group separators, by setting the Text property to `--` (two dashes). A separator renders as a horizontal line.
 
 The context menu is rendered like the following images:
 
