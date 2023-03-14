@@ -25,7 +25,7 @@ When a user *left-clicks* the [☰ Hamburger button](https://en.wikipedia.org/wi
 
 To collapse the Context Menu, the user may *left-click* on an area outside the pop-up menu.
 
-A Context Menu is positioned by indicated the `Col` property as any other `DdsField` or `DdsConstant` tagHelpers. (When used in a `DdsTableColumn` tagHelper, use `Name` property (since `Col` is not relevant in a `DdsTable` design), providing a unique string ID. )
+A Context Menu is positioned by specifying a value to the the `Col` property (as any other `DdsField` or `DdsConstant` tagHelpers). When used inside a `DdsTableColumn` tagHelper, use `Name` instead of `Col` properties.
 
 When defined within a [DdsSubfileRecord](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html), the **☰** Hamburger button moves up and down the subfile records (as the user *hovers* over records using the mouse). The **☰** Hamburger button defines the context to be *the selected record* in the subfile.
 
@@ -35,11 +35,52 @@ More than one Context Menu, may be defined in a *DdsSubfileRecord*.
 <br>
 <br>
 
+For example, legacy Applications frequently use `F4` aid-key to *prompt* a Window with valid values for a field. This was typically done by means of a **(F4)** text constant in front of an input field.
+
+The following markup enhancement, replaces the `F4` DdsConstant with a `DdsContextMenu` describing a few actions: 
+
+
+```html
+<div Row="15">
+    <DdsConstant Col="18" Text="Status:" />
+    <DdsCharField Col="27" For="CUSTREC.STATUS" VirtualRowCol="15,27" PositionCursor="44" tabIndex=@pageTabIndex++ />
+    @*<DdsConstant Col="30+5" Text="(F4)" Color="Blue" />*@
+
+    <DdsContextMenu Col="31">
+        <DdsMenuOption Text="Active" FocusField="CUSTREC.STATUS" FieldValue="A" />
+        <DdsMenuOption Text="Closed" FocusField="CUSTREC.STATUS" FieldValue="C" />
+        <DdsMenuOption Text="--" />
+        <DdsMenuOption Text="Other . . ." FocusField="CUSTREC.STATUS" AidKey="F4" />
+    </DdsContextMenu>
+</div>
+```
+>Note: DdsContextMenuOption allows specifying group separators, by setting the Text property to `--` (two dashes). A separator renders as a horizontal line.
+
+The context menu is rendered like the following images:
+
+* First the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) shows on `Col` 31.
+
+![Prompt for Status ContextMenu](images/prompt-status-menu-collapsed.png)
+
+<br>
+
+* When user clicks on the **☰** button, the menu options: `Active`, `Closed` and `Other` are presented.
+
+![Prompt for Status ContextMenu](images/prompt-status-menu.png)
+
+<br>
+
+* Executing the action `Active` will find the field `"CUSTREC.STATUS"`, and change its value to `"A"`.
+
+* Executing the action `Other ...` will set the cursor to the field `"CUSTREC.STATUS"` and *Push* the `F4` Aid key. The Page will submit to the server to continue application logic.
+
+<br>
+
 ## Properties
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Col | Gets or sets a value that indicates horizontal position for field/constant within the page. Valid values start at 1 typically up to 132. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Col | Gets or sets a value that indicates horizontal position for Menu button, within the page. Valid values start at 1 typically up to 132. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Gets or sets the menu-option unique name (used mostly for DdsTable container, where Col is not used). | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Order | When a set of ITagHelpers are executed, their Init(TagHelperContext)'s are first invoked in the specified Order; then their ProcessAsync(TagHelperContext, TagHelperOutput)'s are invoked in the specified Order. Lower values are executed first<br>(Inherited from [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper)) | 
 
