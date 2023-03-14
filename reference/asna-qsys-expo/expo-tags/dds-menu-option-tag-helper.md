@@ -16,10 +16,17 @@ Defines a Context Menu Option
 
 Defines a Context Menu Option
 
-[//]: # ($$TODO: Complete the Remarks section.)
+Menu Options define *actions* a user may execute. The *action* is labeled with a descriptive `Text`.
 
-<br>
-<br>
+An Action may:
+
+1. *Change* the value of an existing field on the page. Optionally setting the *row,col* values for the virtual legacy application cursor-location, to allow the program that executed this DisplayPage to test the *current* cursor-location to conditionally execute logic code.
+2. *Push* an [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) to submit the page.
+3. Combination of *(1)* and *(2)* above to *Change* a field and then *Push* an [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) to submit the page.
+
+>To define a menu Option separator, enter `--` (two dashes) as the `Text` property.
+
+
 
 ## Properties
 
