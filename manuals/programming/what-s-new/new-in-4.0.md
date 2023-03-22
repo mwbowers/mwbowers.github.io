@@ -3,10 +3,15 @@ title: What's new in Monarch Base 4.0
 ---
 
 The major new features on Monarch Base 4.0 are:
- * Support for .NET 6.0
- * Support for running multiple jobs from a single browser
+ * [Support for .NET 6.0](#support-for-net-60--70)
+ * [Support for running multiple jobs from a single browser](#running-multiple-jobs-from-a-single-browser)
 
-Version 4.0 of ASNA.QSys.Expo is not backwards compatible with versions 3.x.  There are a few modifications for [upgrading websites](#upgrading-websites-from-3x) using Monarch Base 3.x to use version 4.0.
+Other features include:
+ * Change in the way keyboard errors are displayed; instead of a pop-up, they are being sent to the DdsMessagePanel location. The DdsMessagePanel should include a `class="dds-message-panel"`
+ 
+
+Version 4.0 of ASNA.QSys.Expo is **not backwards compatible** with versions 3.x.  There are a few modifications for [upgrading websites](#upgrading-websites-from-3x) using Monarch Base 3.x to use version 4.0.
+
 
 ## Support for .NET 6.0 & 7.0
 Monarch Base 4.0 is packaged with assemblies multitargeted for .NET 5.0 and .NET 6.0.  The 6.0 versions can also be used with .NET 7.0.

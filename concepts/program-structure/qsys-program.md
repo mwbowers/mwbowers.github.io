@@ -8,7 +8,7 @@ The Concept of a `Program` in [.NET 5](https://docs.microsoft.com/en-us/dotnet/c
 
 QSys implements the most important [IBM i Program Semantics](/concepts/background/ibmi-program):
 
-1. Program Activation (an Activation Groups).
+1. Program Activation (and Activation Groups).
 2. Keeping Programs Active.
 3. Calling Programs and Procedures.
 
@@ -18,7 +18,7 @@ The `ASNA.QSys Program` is the class that is used as the *base* class for any `R
 
 > OPM (*Original Program Model*) RPG Programs are converted to ILE during migration. From now on, when talking about *Programs* we are implying *ILE Programs*.
 
-## Program Activation (an Activation Groups)
+## Program Activation (and Activation Groups)
 
 Program Activation refers to the runtime process where the object is located (or instanced) and the *named method* is resolved. When talking about *named methods* we are referring to the *implied* Main C-Specs or the *named* Procedure.
 
