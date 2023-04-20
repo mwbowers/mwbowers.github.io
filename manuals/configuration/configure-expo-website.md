@@ -46,12 +46,16 @@ The following sections describe the Expo related values.
  - DisplayPages
 
 ### MonaServer
-The MonaServer section describes of the location where the Monarch Server can be located.  The Monarch Server is responsible for loading and executing the migrated programs.  
+The Monarch Server is responsible for loading and executing the migrated programs. The MonaServer section describes configuration options for executing
+or locating a running instance of the Monarch Server.
 
-MonaServer contains up to three values:
- - HostName - Monarch Server location.
- - Port - Port where Monarch Server is taking requests.
- - TraceOption - Verbosity of Monarch Server tracing. Valid values 0 or 1.
+`MonaServer` contains:
+ - `HostName` - Monarch Server location. For the different location options, see [Interactive Job Architecture](/concepts/architecture/application-architecture.html#interactive-job-architecture).
+ - `Port` - Port where Monarch Server is taking requests.
+ - `TraceOption` - Verbosity of Monarch Server tracing. Valid values 0 or 1.
+ - `JobIdleTimeout` - The timeout in minutes after which Monarch Server will terminate an idle Job.
+ - `AssemblyList` - A list of all assemblies that compose the application. This assemblies in this list will be searched to
+ locate programs used in [CALLD](/concepts/program-structure/qsys-program.html#calling-programs-and-procedures).
 
 Communication between the Website and the Monarch Server is done via TCP/IP. 
 
@@ -63,11 +67,8 @@ When the Monarch Server runs out of process, it becomes the responsibility of th
 
 ### JobDescriptor
 The JobDescriptor section provides the parameters to the location of the entry point into the application.  It is composed of the valuing values:
- - AssemblyPath
  - Class
  - Name
-
-The AssemblyPath has the absolute or relative path to the entry Assembly.  relative paths begin at the website location.
 
 The Class value names the interactive job class within the Assembly that represents the Job.  This class should extend the [ASNA.QSys.Runtime.JobSupport.InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html). 
 

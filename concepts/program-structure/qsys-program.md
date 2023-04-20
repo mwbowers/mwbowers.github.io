@@ -2,9 +2,9 @@
 title: QSys Programs and Procedures
 ---
 
-The Concept of a `Program` in [.NET 5](https://docs.microsoft.com/en-us/dotnet/core/introduction) is significantly different than that on the IBM i.
+The Concept of a `Program` in [.NET](https://docs.microsoft.com/en-us/dotnet/core/introduction) is significantly different than that on the IBM i.
 
-.NET 5 is a development platform for building **many kinds** of applications and services.
+.NET is a development platform for building **many kinds** of applications and services.
 
 QSys implements the most important [IBM i Program Semantics](/concepts/background/ibmi-program):
 
@@ -61,7 +61,8 @@ There are two ways to *Invoke* a Program on RPG:
 1. CALL (dynamic). The resolution of the Program is delayed until runtime.
 2. CALLB (bound).  The resolution of the Program is resolved at compile time.
 
-> The concept of a [Prototype or Procedure Interface](https://www.ibm.com/docs/en/i/7.4?topic=parameters-procedure-interface) is ignored on Migrated code, since C# compiler will type check **all** bound method parameters.
+> The concept of a [Prototype or Procedure Interface](https://www.ibm.com/docs/en/i/7.4?topic=parameters-procedure-interface) is ignored on Migrated code, since
+C# compiler will type check **all** bound method parameters.
 
 The implementation of Dynamic and Bound calls are similar, and the C# code you get for a Migration is:
 
@@ -76,11 +77,16 @@ DynamicCaller_.CallD("SunFarm.Customers.ORDHINQ", out _LR, ref ORDCUST);
 XamService.MessageSubfileWrite(this, out _, (string)MsgFile, MsgId, MsgDta, MsgLen, 3);
 ```
 
-For Dynamic calls the **name of the program is passed by name as a string**, and the *Helper* object instanced on each QSys Program class named DynamicCaller_ will start the *Activation* and *Invocation* process to find and execute the StarEntry method passing the expected parameters.
+## Calling Programs Dynamically
+
+For Dynamic calls the **name of the program is passed as a parameter**, and the *Helper* object instanced on each QSys Program class named DynamicCaller_
+will start the *Activation* and *Invocation* process to find and execute the StarEntry method passing the expected parameters.
 
 > Note that the *Activation* rules are defined in the implementation of the **Program**, not in the **CallD**.
 
-For a complete description of the `DynamicCaller_.CallD`, read [Sun Farm Guide](https://asna.github.io/SunFarm/program-bootstrap/)
+The mechanics of **CallD**, and how the runtime locates a called program are described in [CallD](manuals/programming/call-program.html#CALLD).
+
+For an example using `DynamicCaller_.CallD`, read [Sun Farm Guide](https://asna.github.io/SunFarm/program-bootstrap/)
 
 ## Calling *Bound* Procedures
 
@@ -89,7 +95,7 @@ Calling Bound Procedures has some advantages:
 2. The compiler can perform type checking on all parameters passed.
 3. More than one Procedure can be coded (and properly named) in a Program (or Service Program).
 4. When the *caller* is in the same Program, the procedure (class method) can be found very fast.
-5. Upon returning from a Procedure (method), the Program **always** remain Active.
+5. Upon returning from a Procedure (method), the Program **always** remains Active.
 
 Similarities between CallD and Bound Method calls:
 1. Both use the QSys `ActivationManager` object.

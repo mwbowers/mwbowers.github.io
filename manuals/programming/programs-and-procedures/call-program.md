@@ -5,12 +5,56 @@ title: Call Program
 Execution interaction between programs is achieved with the operations CALL and RETURN. At any point a program can transfer control to another program by calling it and any point the the called program can return to the calling program yields control back to it.
 
 ## CALLD
-To call a program use the ```CallD``` method of the DynamicCaller class. Monarch defines a global field in each class called ```DynamicCaller_``` that is used throughout the class to make program calls.
+To call a program use the `CallD` method of the DynamicCaller class. Monarch defines a global field in each class called `DynamicCaller_` that is used throughout the class to make program calls.
 
 ```cs
     DynamicCaller_.CallD("Acme.ERCAP.ORDHINQ", out _LR, ref ORDCUST);
 ```
-The ```CallD``` method takes a minimum of two parameters: a string with the name of the program to call and an Indicator out parameter set to '1' indicating whether the called program was deactivated. After these two initial parameters, ```CallD``` can take any additional parameters needed by the called program. These parameters can be passed by reference or by value.
+The `CallD` method takes a minimum of two parameters: a string with the name of the program to call and an Indicator out parameter set to '1' indicating whether the called program was deactivated. After these two initial parameters, ```CallD``` can take any additional parameters needed by the called program. These parameters can be passed by reference or by value.
+
+
+### Namespace List and Assembly List
+
+In the *IBMi*, when a program is called its location gets resolved via the *Library List*. The *Library List* is a list of
+libraries (directories) that the system will use to look sequentially for
+a particular program or file. Each user will have her own version of the library list, and two different users calling
+the same program may end up invoking different versions of the program, residing in different libraries.
+
+In .Net, the Monarch runtime supports a similar mechanism. To differentiate among various versions of a program,
+the Monarch runtime relies on the proper use of **.Net namespaces**. For example, a program named **CUSTINQ** on the *IBMi* may
+become **ACME.Accounting.CUSTINQ**, while a different version of **CUSTINQ** may become
+**ACME.CustSvc.CUSTINQ**. Calling one version or another can be controlled with the use 
+of a ***Namespace List***. The namespace list is a property of the **Job** that's controlling
+a particular execution instance of the application;
+this property is called *NamespaceList*. If an application relies on namespaces,
+this list can be set up during **Job** initialization. In the prior example, the actual `CallD` call
+may have only **CUSTINQ** as parameter, and rely on setting the proper namespace in the **Job**
+via `NamespaceList.Add(...)`. For example, for user *A* it may be set as `NamespaceList.Add("ACME.Accounting")`, while
+for user *C* it may be set as `NamespaceList.Add("ACME.CustSvc")`. You can add as many namespaces as you
+need; the Monarch runtime will try them sequentially to match the fully qualified program name (*i.e. the namespace
+plus the program name*) to a class in an assembly. But which assembly and where to find it? 
+
+The answer is the ***Assembly List***. The assembly list is the list of all assemblies that compose
+the application, and it's part of the configuration settings of the *MonaServer* section of the website's
+*appsettings.json* file. This list can contain paths to individual assemblies, or paths with wildcard
+[patterns](https://learn.microsoft.com/en-us/dotnet/core/extensions/file-globbing#pattern-formats) that match
+mutiple assemblies. For example:
+
+```json
+  "MonaServer": {
+    "HostName": "*InProcess",
+    "Port": 5555,
+    "TraceOption": 0,
+    "JobIdleTimeout": 20,
+    "AssemblyList": [
+      "C:\\Acme\\Accounting\\bin\\CustomerAppLogic.dll",
+      "C:\\Acme\\CustomerService\\bin\\Custom*.dll"
+    ]
+  }
+```
+
+Classes in assemblies can be organized in any way that's convenient as long as **each class in the application
+has a unique fully qualified name**.
 
 ## RETURN
 The return operation is implemented as a long jump using the exception catching C# mechanism.  When a program wants to return it simple throws the exception ```ASNA.QSys.Runtime```.
@@ -30,7 +74,7 @@ Here is an example of a program ```OtherPgm``` that takes four parameters, the l
 
 ```C#
 public static void _ENTRY(ICaller _caller, out Indicator __inLR,
-             FixedString<_7>               MsgId,
+    FixedString<_7>                        MsgId,
     Optional<FixedString<Len<_1, _3, _2>>> Data    = default,
     Optional<FixedString<_10>>             MsgFile = default,
     Optional<FixedString<_10>>             Library = default)

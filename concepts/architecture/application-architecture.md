@@ -27,6 +27,14 @@ Monarch provides an execution context anchored around the concept of a Job and i
 Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process; these Interactive jobs are associated with an ASP.NET Session.
 Monarch Batch jobs can be run in their own process or on a dedicated thread alongside the thread of the job that started it. 
 
+Some of the facilities provided to programs by the Monarch Job are:
+- Program Call Stack (Invocations)
+- Program Instantiation in Activation Groups (Activations)
+- A permanent connection to the database
+- [Namespace Lists](manuals/programming/call-program.html#CALLD)
+- File Overrides
+- Local Data Area
+
 Monarch Jobs can be started in one of three ways:
 1.	A new batch immediate job is created by a program running in an existing job.
 2.	A batch job request is submitted to a queue and then the job is created by a job dispatcher.
@@ -63,7 +71,9 @@ The appsettings.json file contains a section dedicated to the Monarch Applicatio
 - HostName
 - Port
 
-The special value *InProcess as a HostName signals the website startup process to start the MAS inside the website's process. Whenever the website has to communicate with the MAS, the HostName and Port values are used to establish a connection for the transaction, typically in response to a web browser GET or POST request.
+The HostName is the name or IP address of the machine running the MAS.
+The Port indicates where the MAS listens to the website requests.
+Whenever the website has to communicate with the MAS, the HostName and Port values are used to establish a connection for the transaction, typically in response to a web browser GET or POST request.
 
 #### In-Process
 In its simplest configuration, the migrated code along with the website can be run in a single process. 
@@ -72,17 +82,20 @@ In its simplest configuration, the migrated code along with the website can be r
 
 _MAS running in process on the Web Server_
 
-As part of the website startup, an in-process instance of MonaServer is started.
+The special value ***InProcess** as a HostName signals the website startup process to start 
+an in-process instance of MonaServer.
 
 #### Out-of-Process
 It is possible to separate the Business Logic Program execution into one or more process.  Under this configuration, the website will expect the MAS to be already running and will contact it using the configured Port and Server values.
 
-The MAS can execute directly on the web server as shown next.
+The MAS can execute directly on the web server as shown next. Use ***LoopBack** as the HostName value
+to tell the website that the MAS is running in a separate process in the same machine.
 
 ![Interactive Job out of process MAS](images/mas-out-of-process.svg)
 _MAS running on the Web Server as a separate process_
 
-Finally, the application can be run on one or more servers, separating the Business Logic Programs into one or more application servers as shown next.
+Finally, the application can be run on one or more servers, separating the Business Logic Programs into one or more application servers as shown next. HostName must
+be either a name to be resolved via DNS, or directly an IP address.
 
 ![Interactive Job own application server](images/mas-application-server.svg)
 
