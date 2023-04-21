@@ -11,7 +11,6 @@ They are similar to a process in Windows, Unix and other operating systems, howe
 Some of the facilities provided to programs by the Job are:
 - Program Call Stack (Invocations)
 - Program Instantiation in Activation Groups (Activations)
-- A permanent connection to the database
 - Library Lists
 - File Overrides
 - Local Data Area

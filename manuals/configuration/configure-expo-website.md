@@ -58,8 +58,10 @@ or locating a running instance of the Monarch Server.
  - `Port` - Port where Monarch Server is taking requests.
  - `TraceOption` - Verbosity of Monarch Server tracing. Valid values 0 or 1.
  - `JobIdleTimeout` - The timeout in minutes after which Monarch Server will terminate an idle Job.
- - `AssemblyList` - A list of all assemblies that compose the application. This assemblies in this list will be searched to
+ - `AssemblyList` - A list of paths for all the assemblies that compose the application. This assemblies in this list will be searched to
  locate programs used in [CALLD](/concepts/program-structure/qsys-program.html#calling-programs-and-procedures).
+
+ The AssemblyList paths can be given as absolute or relative paths, relative paths begin at the website location (where the website's .exe is located).
 
 Communication between the Website and the Monarch Server is done via TCP/IP. 
 

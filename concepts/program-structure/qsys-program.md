@@ -62,7 +62,7 @@ There are two ways to *Invoke* a Program on RPG:
 2. CALLB (bound).  The resolution of the Program is resolved at compile time.
 
 > The concept of a [Prototype or Procedure Interface](https://www.ibm.com/docs/en/i/7.4?topic=parameters-procedure-interface) is ignored on Migrated code, since
-C# compiler will type check **all** bound method parameters.
+the compiler will type check **all** bound method parameters.
 
 The implementation of Dynamic and Bound calls are similar, and the C# code you get for a Migration is:
 
@@ -86,7 +86,6 @@ will start the *Activation* and *Invocation* process to find and execute the Sta
 
 The mechanics of **CallD**, and how the runtime locates a called program are described in [CallD](/manuals/programming/programs-and-procedures/call-program.html#CALLD).
 
-For an example using `DynamicCaller_.CallD`, read [Sun Farm Guide](https://asna.github.io/SunFarm/program-bootstrap/)
 
 ## Calling *Bound* Procedures
 

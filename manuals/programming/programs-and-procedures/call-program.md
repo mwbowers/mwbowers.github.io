@@ -2,7 +2,7 @@
 title: Call Program
 ---
 
-Execution interaction between programs is achieved with the operations CALL and RETURN. At any point a program can transfer control to another program by calling it and any point the the called program can return to the calling program yields control back to it.
+Execution interaction between programs is achieved with the operations CALL and RETURN. At any point a program can transfer control to another program by calling it and any point the called program can return to the calling program yielding control back to it.
 
 ## CALLD
 To call a program use the `CallD` method of the DynamicCaller class. Monarch defines a global field in each class called `DynamicCaller_` that is used throughout the class to make program calls.
@@ -12,18 +12,21 @@ To call a program use the `CallD` method of the DynamicCaller class. Monarch def
 ```
 The `CallD` method takes a minimum of two parameters: a string with the name of the program to call and an Indicator out parameter set to '1' indicating whether the called program was deactivated. After these two initial parameters, ```CallD``` can take any additional parameters needed by the called program. These parameters can be passed by reference or by value.
 
+### Multiple Versions of a Program
+In the *IBMi*, programs (as well as all other objects) reside in libraries.  Two different versions of a program can have the same name as long as they are kept in different libraries.  When a program is called its location can be provided by the calling program by qualifying the name with the name of the library where it resides, i.e.: MyLibrary/MyProgram.
+
+To differentiate among various versions of a program, the Monarch runtime relies on the proper use of **.NET namespaces** as a qualifier. For example, a program named **CUSTINQ** on the *IBMi* may become **ACME.Accounting.CUSTINQ**, while a different version of **CUSTINQ** may become **ACME.CustSvc.CUSTINQ**.  A specific version of a program can be called by providing its fully qualifed name to the `CallD` method. 
 
 ### Namespace List and Assembly List
 
-In the *IBMi*, when a program is called its location gets resolved via the *Library List*. The *Library List* is a list of
+It is also possible to call a program by providing its unqualified name and employing some form of a list to have the system locate the proper version of the program.
+
+In the *IBMi*, when an unqualified program is called its location gets resolved via the *Library List*. The *Library List* is a list of
 libraries (directories) that the system will use to look sequentially for
 a particular program or file. Each user will have her own version of the library list, and two different users calling
-the same program may end up invoking different versions of the program, residing in different libraries.
+the same unqualifed program may end up invoking different versions of the program, residing in different libraries.
 
-In .Net, the Monarch runtime supports a similar mechanism. To differentiate among various versions of a program,
-the Monarch runtime relies on the proper use of **.Net namespaces**. For example, a program named **CUSTINQ** on the *IBMi* may
-become **ACME.Accounting.CUSTINQ**, while a different version of **CUSTINQ** may become
-**ACME.CustSvc.CUSTINQ**. Calling one version or another can be controlled with the use 
+In .NET, the Monarch runtime supports a similar mechanism. Calling one version or another can be controlled with the use 
 of a ***Namespace List***. The namespace list is a property of the **Job** that's controlling
 a particular execution instance of the application;
 this property is called *NamespaceList*. If an application relies on namespaces,
@@ -57,7 +60,7 @@ Classes in assemblies can be organized in any way that's convenient as long as *
 has a unique fully qualified name**.
 
 ## RETURN
-The return operation is implemented as a long jump using the exception catching C# mechanism.  When a program wants to return it simple throws the exception ```ASNA.QSys.Runtime```.
+The return operation is implemented as a long jump using the exception catching .NET mechanism.  When a program wants to return it simple throws the exception ```ASNA.QSys.Runtime```.
 
 ## Program Entry
 Before passing control to the main user code in a program some housekeeping is required to locate the proper instance of the program in an activation group and to copy the parameters passed to the global fields where the main user code expects them.
@@ -70,7 +73,7 @@ A program may describe some of its parameters as being optional using the Option
 ### Defining Optional Parameters
 The entry point is in the ```public static _ENTRY``` method in the program's C# class. You can see that the optional parameters are given the value of ```default``` if they are not received. ```default``` is a special constant in C# which tells the compiler to insert the proper default value for the type of the field:
 
-Here is an example of a program ```OtherPgm``` that takes four parameters, the last three are optional.
+Here is an example of a C# program ```OtherPgm``` that takes four parameters, the last three are optional.
 
 ```C#
 public static void _ENTRY(ICaller _caller, out Indicator __inLR,

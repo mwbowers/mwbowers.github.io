@@ -5,6 +5,10 @@ title: What's new in Monarch Base 4.0
 The major new features on Monarch Base 4.0 are:
  * [Support for .NET 6.0](#support-for-net-60--70)
  * [Support for running multiple jobs from a single browser](#running-multiple-jobs-from-a-single-browser)
+ * New [Context Menu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html) tag helper
+ * AssemblyList [configurable](/manuals/programming/programs-and-procedures/call-program.html#namespace-list-and-assembly-list) at the Website level
+ * Program Call supports [Namespace List](/manuals/programming/programs-and-procedures/call-program.html#calld) (Similar to Library List)
+
 
 Other features include:
  * Change in the way keyboard errors are displayed; instead of a pop-up, they are being sent to the DdsMessagePanel location. The DdsMessagePanel should include a `class="dds-message-panel"`
