@@ -81,7 +81,13 @@ Once a BatchJobProfile has been created and configured, it can be submitted to a
     jobProfile.Submit("NIGHTQUEUE","7");       
 ```
 
-The `Submit` method creates a Job Queue Entry in the proper Job Queue with the attributes needed to run the new job.  The [Monarch Batch Subsystem](#monarch-batch-subsystem-mbs) is responsible for processing the Job Queue Entries launching the new Job.
+The `Submit` method creates a Job Queue Entry in the proper Job Queue with the attributes needed to run the new job.  
+
+![Submitting the Job to a Queue](images/submitting-job-to-queue.jpg){:width="65%"}
+
+_Submitting the Job to a Queue_
+
+The [Monarch Batch Subsystem](#monarch-batch-subsystem-mbs) is responsible for processing the Job Queue Entries launching the new Job.
 
 
 ### Start a Batch Job Immediately
@@ -97,8 +103,22 @@ There are two methods to start a Batch Job immediately as shown below:
     else
         jobProfile.StartOutOfProcess();
 ```
-When a Job is started in process, a separate .NET thread is created within the current process and the new batch job runs in that separate thread. If the Job is started out of process, a new OS process is created and the Batch Job runs in the new process.
 
+#### In Process
+
+When a Job is started in process, a separate .NET thread is created within the current process and the new batch job runs in that separate thread. 
+
+![Starting Job Immediately in Process](images/starting-job-immediately-in-process.jpg){:width="65%"}
+
+_Starting Job Immediately in Process_
+
+#### Out of Process
+
+If the Job is started out of process, a new OS process is created and the Batch Job runs in the new process.
+
+![Starting Job Immediately out of Process](images/starting-job-immediately-out-of-process.jpg){:width="65%"}
+
+_Starting Job Immediately out of Process_
 
 ## Monarch Batch Subsystem (MBS)
 
@@ -153,6 +173,10 @@ Here is a shortened example of a JQE file.
 ### BatchDispatch
 
 The MBS program *ASNA.QSys.BatchDispatch.exe* (BatchDispatch) is a console program that ‘watches’ a job queue’s windows folder processing the entries found in it. The folder works as a Queue for Jobs. As the entries of the queue are being processed, BatchDispatch creates a process for the entry and invokes the program, it then waits for the process to complete.  BatchDispatch runs one job at a time.
+
+![Dispatching Job from a Queue](images/dispatching-job-from-queue.jpg){:width="75%"}
+
+_Dispatching Job from a Queue_
 
 The source code for BatchDispatch is in GitHub where customers can fork the repository and customize it to their particular needs.
 
