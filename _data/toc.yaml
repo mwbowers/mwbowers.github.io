@@ -1499,6 +1499,40 @@ Reference:
       - sectiontitle: Classes
         sectionpath: /reference/asna-qsys-runtime/classes/classes-section-intro.html
         section:
+          - title: _Blank
+            path: /reference/asna-qsys-runtime/classes/-blank.html
+          - title: _Colon
+            path: /reference/asna-qsys-runtime/classes/-colon.html
+          - title: _Comma
+            path: /reference/asna-qsys-runtime/classes/-comma.html
+          - title: _Default
+            path: /reference/asna-qsys-runtime/classes/-default.html
+          - title: _DMY
+            path: /reference/asna-qsys-runtime/classes/dmy.html
+          - title: _Dot
+            path: /reference/asna-qsys-runtime/classes/-dot.html
+          - title: _EUR
+            path: /reference/asna-qsys-runtime/classes/eur.html
+          - title: _HMS
+            path: /reference/asna-qsys-runtime/classes/hms.html
+          - title: _ISO
+            path: /reference/asna-qsys-runtime/classes/iso.html
+          - title: _JIS
+            path: /reference/asna-qsys-runtime/classes/jis.html
+          - title: _JUL
+            path: /reference/asna-qsys-runtime/classes/jul.html
+          - title: _MDY
+            path: /reference/asna-qsys-runtime/classes/mdy.html
+          - title: _Minus
+            path: /reference/asna-qsys-runtime/classes/-minus.html
+          - title: _None
+            path: /reference/asna-qsys-runtime/classes/-none.html
+          - title: _Slash
+            path: /reference/asna-qsys-runtime/classes/-slash.html
+          - title: _USA
+            path: /reference/asna-qsys-runtime/classes/usa.html
+          - title: _YMD
+            path: /reference/asna-qsys-runtime/classes/ymd.html
           - title: ArrayMethods
             path: /reference/asna-qsys-runtime/classes/array-methods.html
           - title: BuiltInMethods
@@ -1511,8 +1545,12 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/call-d-support.html
           - title: CharacterMethods
             path: /reference/asna-qsys-runtime/classes/character-methods.html
+          - title: CharArray
+            path: /reference/asna-qsys-runtime/classes/char-array.html
           - title: CharArrayInDS
             path: /reference/asna-qsys-runtime/classes/char-array-in-ds.html
+          - title: CharTypeAttribute
+            path: /reference/asna-qsys-runtime/classes/char-type-attribute.html
           - title: Convert
             path: /reference/asna-qsys-runtime/classes/convert.html
           - title: DataArea Manager
@@ -1523,16 +1561,36 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/database-cycle-file.html
           - title: DatabaseFile
             path: /reference/asna-qsys-runtime/classes/database-file.html
+          - title: DatabaseFileBase
+            path: /reference/asna-qsys-runtime/classes/database-file-base.html
+          - title: DatabaseFileExtensions
+            path: /reference/asna-qsys-runtime/classes/database-file-extensions.html
           - title: DataStructure
             path: /reference/asna-qsys-runtime/classes/data-structure.html
+          - title: DateTimeDataKind
+            path: /reference/asna-qsys-runtime/classes/date-time-data-kind.html
           - title: DateTimeMethods
             path: /reference/asna-qsys-runtime/classes/date-time-methods.html
+          - title: DateTimeOps
+            path: /reference/asna-qsys-runtime/classes/date-time-ops.html
           - title: DateTimeSeparator
+          - title: DateTimeTypeAttribute
+            path: /reference/asna-qsys-runtime/classes/date-time-type-attribute.html
+          - title: DbcsType
+            path: /reference/asna-qsys-runtime/classes/dbcs-type.html
             path: /reference/asna-qsys-runtime/classes/date-time-separator.html
           - title: DecimalMethods
             path: /reference/asna-qsys-runtime/classes/decimal-methods.html
+          - title: DecimalKind
+            path: /reference/asna-qsys-runtime/classes/decimal-kind.html
           - title: DecimalOps
             path: /reference/asna-qsys-runtime/classes/decimal-ops.html
+          - title: Dim
+            path: /reference/asna-qsys-runtime/classes/dim.html
+          - title: DimArrayTypeAttribute
+            path: /reference/asna-qsys-runtime/classes/dim-array-type-attribute.html
+          - title: DimensionAttribute
+            path: /reference/asna-qsys-runtime/classes/dimension-attribute.html
           - title: DSArrayField
             path: /reference/asna-qsys-runtime/classes/ds-array-field.html
           - title: DSCallParm
@@ -1541,10 +1599,16 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/ds-data-area.html
           - title: DSField
             path: /reference/asna-qsys-runtime/classes/ds-field.html
+          - title: DSLengthAttribute
+            path: /reference/asna-qsys-runtime/classes/ds-length-attribute.html
           - title: DSParameter
             path: /reference/asna-qsys-runtime/classes/ds-parameter.html
+          - title: DurationCode
+            path: /reference/asna-qsys-runtime/classes/duration-code.html
           - title: DynamicCaller
             path: /reference/asna-qsys-runtime/classes/dynamic-caller.html
+          - title: DynamicReferenceAttribute
+            path: /reference/asna-qsys-runtime/classes/dynamic-reference-attribute.html
           - title: EditCode
             path: /reference/asna-qsys-runtime/classes/edit-code.html
           - title: EditCodes
@@ -1756,18 +1820,32 @@ Reference:
                 path: /reference/asna-qsys-runtime/classes/fixed-types-0-to-99/98.html
               - title: _99
                 path: /reference/asna-qsys-runtime/classes/fixed-types-0-to-99/99.html
+          - title: FixedArray
+            path: /reference/asna-qsys-runtime/classes/fixed-array.html
           - title: FixedArrayMethods
             path: /reference/asna-qsys-runtime/classes/fixed-array-methods.html
+          - title: FixedDate
+            path: /reference/asna-qsys-runtime/classes/fixed-date.html
+          - title: FixedDateArray
+            path: /reference/asna-qsys-runtime/classes/fixed-date-array.html
           - title: FixedDateArrayInDS
             path: /reference/asna-qsys-runtime/classes/fixed-date-array-in-ds.html
           - title: FixedDateMethods
             path: /reference/asna-qsys-runtime/classes/fixed-date-methods.html
+          - title: FixedDecimal
+            path: /reference/asna-qsys-runtime/classes/fixed-decimal.html
+          - title: FixedDecimalArray
+            path: /reference/asna-qsys-runtime/classes/fixed-decimal-array.html
           - title: FixedDecimalArrayInDS
             path: /reference/asna-qsys-runtime/classes/fixed-decimal-array-in-ds.html
           - title: FixedDecimalMethods
             path: /reference/asna-qsys-runtime/classes/fixed-decimal-methods.html
-          - title: FixedDate
-            path: /reference/asna-qsys-runtime/classes/fixed-date.html
+          - title: FixedDecimalTypeAttribute
+            path: /reference/asna-qsys-runtime/classes/fixed-decimal-type-attribute.html
+          - title: FixedString
+            path: /reference/asna-qsys-runtime/classes/fixed-string.html
+          - title: FixedStringArray
+            path: /reference/asna-qsys-runtime/classes/fixed-string-array.html
           - title: FixedStringArrayInDS
             path: /reference/asna-qsys-runtime/classes/fixed-string-array-in-ds.html
           - title: FixedStringComparer
@@ -1776,18 +1854,36 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/fixed-time-array-in-ds.html
           - title: FixedTimeMethods
             path: /reference/asna-qsys-runtime/classes/fixed-time-methods.html
+          - title: FixedStringMethods
+            path: /reference/asna-qsys-runtime/classes/fixed-string-methods.html
+          - title: FixedTime
+            path: /reference/asna-qsys-runtime/classes/fixed-time.html
+          - title: FixedTimeArray
+            path: /reference/asna-qsys-runtime/classes/fixed-time-array.html
+          - title: FixedTimestampArray
+            path: /reference/asna-qsys-runtime/classes/fixed-timestamp-array.html
           - title: FixedTimestampArrayInDS
             path: /reference/asna-qsys-runtime/classes/fixed-timestamp-array-in-ds.html
           - title: FixedTimeStampMethods
             path: /reference/asna-qsys-runtime/classes/fixed-time-stamp-methods.html
+          - title: FloatMethods
+            path: /reference/asna-qsys-runtime/classes/float-methods.html
           - title: GetObject
             path: /reference/asna-qsys-runtime/classes/get-object.html
           - title: GlobalFlagProperty
             path: /reference/asna-qsys-runtime/classes/global-flag-property.html
           - title: GlobalFlags
             path: /reference/asna-qsys-runtime/classes/global-flags.html
+          - title: HexMethods
+            path: /reference/asna-qsys-runtime/classes/hex-methods.html
           - title: ICaller
             path: /reference/asna-qsys-runtime/classes/i-caller.html
+          - title: ICycleFile
+            path: /reference/asna-qsys-runtime/classes/i-cycle-file.html
+          - title: IDateTimeFormat
+            path: /reference/asna-qsys-runtime/classes/i-date-time-format.html
+          - title: IDateTimeSeparator
+            path: /reference/asna-qsys-runtime/classes/i-date-time-separator.html
           - title: IDigit
             path: /reference/asna-qsys-runtime/classes/i-digit.html
           - title: IDim
@@ -1812,6 +1908,8 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/i-fixed-array-in-ds.html
           - title: IFixedDateTime
             path: /reference/asna-qsys-runtime/classes/i-fixed-date-time.html
+          - title: IFixedDateTime
+            path: /reference/asna-qsys-runtime/classes/i-fixed-date-time.html
           - title: IFixedSizeType
             path: /reference/asna-qsys-runtime/classes/i-fixed-size-type.html
           - title: ILayout
@@ -1822,12 +1920,20 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/imods.html
           - title: Indicator
             path: /reference/asna-qsys-runtime/classes/indicator.html
+          - title: IndicatorArray
+            path: /reference/asna-qsys-runtime/classes/indicator-array.html
           - title: IndicatorArrayInDS
             path: /reference/asna-qsys-runtime/classes/indicator-array-in-ds.html
           - title: IntArrayInDS
             path: /reference/asna-qsys-runtime/classes/int-array-in-ds.html
+          - title: IndicatorMethods
+            path: /reference/asna-qsys-runtime/classes/indicator-methods.html
+          - title: IndicatorTypeAttribute
+            path: /reference/asna-qsys-runtime/classes/indicator-type-attribute.html
           - title: IntDigitSize
             path: /reference/asna-qsys-runtime/classes/int-digit-size.html
+          - title: InfSrReturnPoint
+            path: /reference/asna-qsys-runtime/classes/inf-sr-return-point.html
           - title: IntegerMethods
             path: /reference/asna-qsys-runtime/classes/integer-methods.html
           - title: INumber
@@ -1836,10 +1942,12 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/i-web-display-file-provider.html
           - title: Layout
             path: /reference/asna-qsys-runtime/classes/layout.html
-          - title: Limits
-            path: /reference/asna-qsys-runtime/classes/limits.html
           - title: LayoutType
             path: /reference/asna-qsys-runtime/classes/layout-type.html
+          - title: Limits
+            path: /reference/asna-qsys-runtime/classes/limits.html
+          - title: Len
+            path: /reference/asna-qsys-runtime/classes/len.html
           - title: LocalScopeDS
             path: /reference/asna-qsys-runtime/classes/local-scope-ds.html
           - title: LocalScopeMultiDS
@@ -1848,20 +1956,66 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/long-array-in-ds.html
           - title: MessageFileReader
             path: /reference/asna-qsys-runtime/classes/message-file-reader.html
+          - title: MemUnit
+            path: /reference/asna-qsys-runtime/classes/mem-unit.html
+          - title: MODSRankAttribute
+            path: /reference/asna-qsys-runtime/classes/mods-rank-attribute.html
           - title: MultiDataStructure
             path: /reference/asna-qsys-runtime/classes/multi-data-structure.html
+          - title: MultiFormatDatabaseFile
+            path: /reference/asna-qsys-runtime/classes/multi-format-database-file.html
+          - title: NameStoreOptions
+            path: /reference/asna-qsys-runtime/classes/name-store-options.html
+          - title: NoPassOmit
+            path: /reference/asna-qsys-runtime/classes/no-pass-omit.html
+          - title: NullCapableFieldAttribute
+            path: /reference/asna-qsys-runtime/classes/null-capable-field-attribute.html
+          - title: Omissible
+            path: /reference/asna-qsys-runtime/classes/omissible.html
+          - title: OpenAccessDspF
+            path: /reference/asna-qsys-runtime/classes/open-access-dsp-f.html
+          - title: Optional
+            path: /reference/asna-qsys-runtime/classes/optional.html
           - title: OSExecute
             path: /reference/asna-qsys-runtime/classes/os-execute.html
           - title: Parameter
             path: /reference/asna-qsys-runtime/classes/parameter.html
-          - title: Return
-            path: /reference/asna-qsys-runtime/classes/return.html
+          - title: ParameterOptions
+            path: /reference/asna-qsys-runtime/classes/parameter-options.html
+          - title: PrintFile
+            path: /reference/asna-qsys-runtime/classes/print-file.html
+          - title: PrintFileBase
+            path: /reference/asna-qsys-runtime/classes/print-file-base.html
+          - title: ProcedureSupport
+            path: /reference/asna-qsys-runtime/classes/procedure-support.html
+          - title: ProgramEntryAttribute
+            path: /reference/asna-qsys-runtime/classes/program-entry-attribute.html
+          - title: ProgramIndicatorsAttribute
+            path: /reference/asna-qsys-runtime/classes/program-indicators-attribute.html
+          - title: RecordAsBuffer
+            path: /reference/asna-qsys-runtime/classes/record-as-buffer.html
+          - title: RecordFormatAttribute
+            path: /reference/asna-qsys-runtime/classes/record-format-attribute.html
           - title: RpgTypeExtensions
             path: /reference/asna-qsys-runtime/classes/rpg-type-extensions.html
+          - title: Return
+            path: /reference/asna-qsys-runtime/classes/return.html
           - title: Routine
             path: /reference/asna-qsys-runtime/classes/routine.html
+          - title: RowAddedEventArgs
+            path: /reference/asna-qsys-runtime/classes/row-added-event-args.html
+          - title: RowAddedEventHandler
+            path: /reference/asna-qsys-runtime/classes/row-added-event-handler.html
+          - title: RowInsertedEventArgs
+            path: /reference/asna-qsys-runtime/classes/row-inserted-event-args.html
+          - title: RowInsertedEventHandler
+            path: /reference/asna-qsys-runtime/classes/row-inserted-event-handler.html
+          - title: RpgTypeExtensions
+            path: /reference/asna-qsys-runtime/classes/rpg-type-extensions.html
           - title: SearchType
             path: /reference/asna-qsys-runtime/classes/search-type.html
+          - title: ServerSupport
+            path: /reference/asna-qsys-runtime/classes/server-support.html
           - title: ShortArrayInDS
             path: /reference/asna-qsys-runtime/classes/short-array-in-ds.html
           - title: StringMethods
@@ -1872,11 +2026,33 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/table.html
           - title: TableMethods
             path: /reference/asna-qsys-runtime/classes/table-methods.html
+          - title: TestNumericResult
+            path: /reference/asna-qsys-runtime/classes/test-numeric-result.html
+          - title: TypeDigestor
+            path: /reference/asna-qsys-runtime/classes/type-digestor.html
+          - title: VaryingLengthFieldAttribute
+            path: /reference/asna-qsys-runtime/classes/varying-length-field-attribute.html
+          - title: VirtualTerminal
+            path: /reference/asna-qsys-runtime/classes/virtual-terminal.html
           - title: VxAdjust
             path: /reference/asna-qsys-runtime/classes/vx-adjust.html
+          - title: WingsRecordFormat
+            path: /reference/asna-qsys-runtime/classes/wings-record-format.html
+          - title: WorkstationDataSet
+            path: /reference/asna-qsys-runtime/classes/workstation-data-set.html
+          - title: WorkstationFile
+            path: /reference/asna-qsys-runtime/classes/workstation-file.html
+          - title: WorkstationFileBase
+            path: /reference/asna-qsys-runtime/classes/workstation-file-base.html
+          - title: WrfOptions
+            path: /reference/asna-qsys-runtime/classes/wrf-options.html
+          - title: WsDsStatus
+            path: /reference/asna-qsys-runtime/classes/ws-ds-status.html
       - sectiontitle: Exceptions
         sectionpath: /reference/asna-qsys-runtime/exceptions/exceptions-section-intro.html
         section:
+          - title: BadRecordNameException
+            path: /reference/asna-qsys-runtime/exceptions/bad-record-name-exception.html
           - title: CannotCallException
             path: /reference/asna-qsys-runtime/exceptions/cannot-call-exception.html
           - title: ConnectionNotOpenException
@@ -1889,6 +2065,10 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/data-gate-exception.html
           - title: DuplicateFieldException
             path: /reference/asna-qsys-runtime/exceptions/duplicate-field-exception.html
+          - title: EndOperationException
+            path: /reference/asna-qsys-runtime/exceptions/end-operation-exception.html
+          - title: EndRequestException
+            path: /reference/asna-qsys-runtime/exceptions/end-request-exception.html
           - title: FieldNotFoundException
             path: /reference/asna-qsys-runtime/exceptions/field-not-found-exception.html
           - title: FileAlreadyOpenException
@@ -1897,6 +2077,8 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/file-not-open-exception.html
           - title: InconsistentOpenAttributesException
             path: /reference/asna-qsys-runtime/exceptions/inconsistent-open-attributes-exception.html
+          - title: InfSrException
+            path: /reference/asna-qsys-runtime/exceptions/inf-sr-exception.html
           - title: InvalidCodePageForVirtualTerminalException
             path: /reference/asna-qsys-runtime/exceptions/invalid-code-page-for-virtual-terminal-exception.html
           - title: JobShutDownException
