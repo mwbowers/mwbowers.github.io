@@ -2031,13 +2031,8 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/interactive-job.html
           - title: IntergratedFileSystem
             path: /reference/asna-qsys-runtime-job-support/classes/intergrated-file-system.html
-          - sectiontitle: Job
-            sectionpath: /reference/asna-qsys-runtime-job-support/classes/job.html
-            section:
-            - sectiontitle: Properties
-              section:
-              - title: LDC
-                path: /reference/asna-qsys-runtime-job-support/classes/job-class-members/ldc-property.html
+          - title: Job
+            path: /reference/asna-qsys-runtime-job-support/classes/job.html
           - title: JobConfig
             path: /reference/asna-qsys-runtime-job-support/classes/job-config.html
           - title: JobLogger
@@ -2094,8 +2089,6 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/query-results.html
           - title: QueryValue
             path: /reference/asna-qsys-runtime-job-support/classes/query-value.html
-          - title: Scheduler
-            path: /reference/asna-qsys-runtime-job-support/classes/scheduler.html
           - title: ScrollTypes
             path: /reference/asna-qsys-runtime-job-support/classes/scroll-types.html
           - title: ServiceProgram
