@@ -134,8 +134,8 @@ Submit(String JobQueueName, String JobQueuePriority, String ScheduleDateString, 
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueName | The name of the queue to receive the job request. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueuePriority | The priority of the batch job in the job queue.  
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScheduleDateString | The date when the new job becomes elegible to run. Special values include: *CURRENT, *MON->*SUN, *MONTHSTR and *MONTHEND. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScheduleTimeString | The time of day when the new job becomes elegible to run. Special value: *CURRENT. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScheduleDateString | The date when the new job becomes eligible to run. Special values include: *CURRENT, *MON->*SUN, *MONTHSTR and *MONTHEND. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScheduleTimeString | The time of day when the new job becomes eligible to run. Special value: *CURRENT. 
 
 
 <br>

@@ -25,11 +25,11 @@ Virtual Terminal value -mode- is not supported exception.
 
 | Name |  Description 
 | --- | --- 
-| **InvalidVirtualTerminalException**( [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html) ) | Constructor that takes the -mode- that is not supported.
+| **InvalidVirtualTerminalException**( [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html) ) | Constructor that takes the -mode- that is not supported.
 
 <br>
 
-### InvalidVirtualTerminalException( [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html) )
+### InvalidVirtualTerminalException( [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html) )
 
 Constructor that takes the -mode- that is not supported.
 
@@ -41,7 +41,7 @@ InvalidVirtualTerminalException( ASNA.QSys.Runtime.VirtualTerminal mode );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html) | mode | Virtual terminal mode. 
+| [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html) | mode | Virtual terminal mode. 
 
 <br>
 

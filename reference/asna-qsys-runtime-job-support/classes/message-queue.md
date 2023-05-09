@@ -49,6 +49,7 @@ MessageQueue(  );
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Removes all elements from the MessageList. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dequeue](#dequeuemessage)([Message](/reference/asna-qsys-runtime-job-support/classes/message.html)) | Removes the message from the queue. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an IEnumerator that iterates through the MessageQueue. | The IEnumerator for the MessageQueue.
@@ -69,6 +70,24 @@ Removes all elements from the MessageList.
 ```cs
 Clear();
 ```
+
+
+<br>
+<br>
+
+### Dequeue([Message](/reference/asna-qsys-runtime-job-support/classes/message.html))
+
+Removes the message from the queue.
+
+```cs
+Dequeue(ASNA.QSys.Runtime.JobSupport.Message message);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Message](/reference/asna-qsys-runtime-job-support/classes/message.html) | message | The message to be dequeued. 
 
 
 <br>

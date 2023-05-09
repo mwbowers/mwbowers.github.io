@@ -2,7 +2,7 @@
 title: IntegerMethods Class
 ---
 
-Contains extension methods for handling Integer conversions.
+Contains extension methods for handling RPG operations and conversions for Integer (2, 4, and 8-byte long) values.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Contains extension methods for handling Integer conversions.
 
 ## Remarks
 
-Contains extension methods for handling Integer conversions.
+Contains extension methods for handling RPG operations and conversions for Integer (2, 4, and 8-byte long) values.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -33,84 +33,84 @@ Contains extension methods for handling Integer conversions.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int8 (long) to a string. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to an int4 (int). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int2 (short) to an int8 (long). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int4 (int) to an int8 (long). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-int16)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left an int4 (int) to an int2 (short). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-int16)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left an int8 (long) to an int2 (short). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int8 (long) to an int4 (int). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-int16)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left an int2 (short) to an int2 (short), this is actually the same as assignment. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int4 (int) to an int4 (int), this is actually the same as assignment. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-int64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int8 (long) to an int8 (long), this is actually the same as assignment. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to a decimal. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int4 (int) to a decimal. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int8 (long) to a decimal. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int2 (short) to a string. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeft](#moveleftint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int4 (int) to a string. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int8 (long) to a string. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to an int4 (int). | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int2 (short) to an int8 (long). | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int4 (int) to an int8 (long). | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-int16)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left an int4 (int) to an int2 (short). | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-int16)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left an int8 (long) to an int2 (short). | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int8 (long) to an int4 (int). | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-int16)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left an int2 (short) to an int2 (short), this is actually the same as assignment. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int4 (int) to an int4 (int), this is actually the same as assignment. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-int64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int8 (long) to an int8 (long), this is actually the same as assignment. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to a decimal. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int4 (int) to a decimal. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int8 (long) to a decimal. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int2 (short) to a string. | .
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [MoveLeft](#moveleftint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int4 (int) to a string. | .
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttocharint16)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a short into a character. | .
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttocharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a int into a character. | .
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttocharint64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a long into a character. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int8 (long) to a string with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to an int4 (int) with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int2 (short) to an int8 (long) with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int4 (int) to an int8 (long) with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to a decimal with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int4 (int) to a decimal with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int8 (long) to a decimal with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int2 (short) to a string with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveLeftWithPad](#moveleftwithpadint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int4 (int) to a string with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int8 (long) to a string. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to an int4 (int). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int2 (short) to an int8 (long). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int4 (int) to an int8 (long). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-int16)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right an int4 (int) to an int2 (short). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-int16)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right an int8 (long) to an int2 (short). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int8 (long) to an int4 (int). | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-int16)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right an int2 (short) to an int2 (short), this is actually the same as assignment. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int4 (int) to an int4 (int), this is actually the same as assignment. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-int64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int8 (long) to an int8 (long), this is actually the same as assignment. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to a decimal. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int4 (int) to a decimal. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int8 (long) to a decimal. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int2 (short) to a string. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRight](#moverightint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int4 (int) to a string. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int8 (long) to a string with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to an int4 (int) with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int2 (short) to an int8 (long) with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left an int4 (int) to an int8 (long) with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int2 (short) to a decimal with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int4 (int) to a decimal with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left an int8 (long) to a decimal with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int2 (short) to a string with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeftWithPad](#moveleftwithpadint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left int4 (int) to a string with pad. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int8 (long) to a string. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to an int4 (int). | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int2 (short) to an int8 (long). | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int4 (int) to an int8 (long). | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-int16)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right an int4 (int) to an int2 (short). | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-int16)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right an int8 (long) to an int2 (short). | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int8 (long) to an int4 (int). | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-int16)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right an int2 (short) to an int2 (short), this is actually the same as assignment. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int4 (int) to an int4 (int), this is actually the same as assignment. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-int64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int8 (long) to an int8 (long), this is actually the same as assignment. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to a decimal. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int4 (int) to a decimal. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int8 (long) to a decimal. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int2 (short) to a string. | .
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRight](#moverightint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int4 (int) to a string. | .
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttocharint16)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a short into a character. | .
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttocharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a int into a character. | .
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttocharint64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a long into a character. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int8 (long) to a string with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to an int4 (int) with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int2 (short) to an int8 (long) with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int4 (int) to an int8 (long) with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to a decimal with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int4 (int) to a decimal with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int8 (long) to a decimal with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int2 (short) to a string with pad. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveRightWithPad](#moverightwithpadint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int4 (int) to a string with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint16-datetime-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint16-ifixeddatetime)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint32-datetime-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint64-string)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int8 (long) to a string with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint16-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to an int4 (int) with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint16-int64)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int2 (short) to an int8 (long) with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint32-int64)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right an int4 (int) to an int8 (long) with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint32-ifixeddatetime)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint64-datetime-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint64-ifixeddatetime)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint16-decimal-int32-int32)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int2 (short) to a decimal with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint32-decimal-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int4 (int) to a decimal with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint64-decimal-int32-int32)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right an int8 (long) to a decimal with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint16-string)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int2 (short) to a string with pad. | .
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRightWithPad](#moverightwithpadint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right int4 (int) to a string with pad. | .
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint16-indicator-indicator-indicator)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [SetHiLoEq](#sethiloeqint32-indicator-indicator-indicator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
@@ -118,9 +118,9 @@ Contains extension methods for handling Integer conversions.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [Sum](#sumint16[])([Int16[]](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Returns the added values of each element in the array. | the added value of every element in the array.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [Sum](#sumint32[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns the added values of each element in the array. | the added value of every element in the array.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [Sum](#sumint64[])([Int64[]](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimeint16-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a short contains a valid date/time/timestamp value. | .
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimeint32-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether an int number contains a valid date/time/timestamp value. | .
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimeint64-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a long number contains a valid date/time/timestamp value. | .
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimeint16-datetimedatakind-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a short contains a valid date/time/timestamp value. | .
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimeint32-datetimedatakind-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether an int number contains a valid date/time/timestamp value. | .
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimeint64-datetimedatakind-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a long number contains a valid date/time/timestamp value. | .
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDate](#todateint32-datetimeformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | ToDate summary. | ToDate returns.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDate](#todateint16-datetimeformat)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | ToDate summary. | returns param.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDate](#todateint64-datetimeformat)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | ToDate summary. | ToDate returns.
@@ -216,7 +216,7 @@ EditWord returns.
 <br>
 <br>
 
-### MoveLeft([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveLeft([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators.
 
@@ -230,12 +230,12 @@ MoveLeft(Int16 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTi
 | --- | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | short value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -260,7 +260,7 @@ MoveLeft(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -268,7 +268,7 @@ MoveLeft(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveLeft([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveLeft([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators.
 
@@ -282,12 +282,12 @@ MoveLeft(Int32 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTi
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | int value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -312,7 +312,7 @@ MoveLeft(Int64 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -337,7 +337,7 @@ MoveLeft(Int16 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -362,7 +362,7 @@ MoveLeft(Int16 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -387,7 +387,7 @@ MoveLeft(Int32 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -412,7 +412,7 @@ MoveLeft(Int32 num, Int16 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -437,7 +437,7 @@ MoveLeft(Int64 num, Int16 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -462,7 +462,7 @@ MoveLeft(Int64 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -487,7 +487,7 @@ MoveLeft(Int16 num, Int16 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -512,7 +512,7 @@ MoveLeft(Int32 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -537,7 +537,7 @@ MoveLeft(Int64 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -562,7 +562,7 @@ MoveLeft(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -570,7 +570,7 @@ MoveLeft(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveLeft([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveLeft([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators.
 
@@ -584,12 +584,12 @@ MoveLeft(Int64 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTi
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | long value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -614,7 +614,7 @@ MoveLeft(Int64 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -641,7 +641,7 @@ MoveLeft(Int16 num, Decimal targetOperand, Int32 targetOperandDig, Int32 targetO
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -668,7 +668,7 @@ MoveLeft(Int32 num, Decimal targetOperand, Int32 targetOperandDig, Int32 targetO
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -695,7 +695,7 @@ MoveLeft(Int64 num, Decimal targetOperand, Int32 targetOperandDig, Int32 targetO
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -720,7 +720,7 @@ MoveLeft(Int16 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -745,7 +745,7 @@ MoveLeft(Int32 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 .
 
@@ -825,7 +825,7 @@ MoveLeftToChar(Int64 num);
 <br>
 <br>
 
-### MoveLeftWithPad([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveLeftWithPad([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEL. Moves left a int2 (short) to a datetime with given format and separators with pad.
 
@@ -839,12 +839,12 @@ MoveLeftWithPad(Int16 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind
 | --- | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | short value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -869,7 +869,7 @@ MoveLeftWithPad(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -877,7 +877,7 @@ MoveLeftWithPad(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveLeftWithPad([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveLeftWithPad([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEL. Moves left a int4 (int) to a datetime with given format and separators with pad.
 
@@ -891,12 +891,12 @@ MoveLeftWithPad(Int32 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | int value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -921,7 +921,7 @@ MoveLeftWithPad(Int64 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -946,7 +946,7 @@ MoveLeftWithPad(Int16 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -971,7 +971,7 @@ MoveLeftWithPad(Int16 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -996,7 +996,7 @@ MoveLeftWithPad(Int32 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1021,7 +1021,7 @@ MoveLeftWithPad(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1029,7 +1029,7 @@ MoveLeftWithPad(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveLeftWithPad([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveLeftWithPad([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad.
 
@@ -1043,12 +1043,12 @@ MoveLeftWithPad(Int64 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | long value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1073,7 +1073,7 @@ MoveLeftWithPad(Int64 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1100,7 +1100,7 @@ MoveLeftWithPad(Int16 num, Decimal targetOperand, Int32 targetOperandDig, Int32 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1127,7 +1127,7 @@ MoveLeftWithPad(Int32 num, Decimal targetOperand, Int32 targetOperandDig, Int32 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1154,7 +1154,7 @@ MoveLeftWithPad(Int64 num, Decimal targetOperand, Int32 targetOperandDig, Int32 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1179,7 +1179,7 @@ MoveLeftWithPad(Int16 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1204,7 +1204,7 @@ MoveLeftWithPad(Int32 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1212,7 +1212,7 @@ MoveLeftWithPad(Int32 num, String targetOperand);
 <br>
 <br>
 
-### MoveRight([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveRight([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators.
 
@@ -1226,12 +1226,12 @@ MoveRight(Int16 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateT
 | --- | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | short value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1256,7 +1256,7 @@ MoveRight(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1264,7 +1264,7 @@ MoveRight(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveRight([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveRight([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators.
 
@@ -1278,12 +1278,12 @@ MoveRight(Int32 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateT
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | int value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1308,7 +1308,7 @@ MoveRight(Int64 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1333,7 +1333,7 @@ MoveRight(Int16 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1358,7 +1358,7 @@ MoveRight(Int16 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1383,7 +1383,7 @@ MoveRight(Int32 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1408,7 +1408,7 @@ MoveRight(Int32 num, Int16 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1433,7 +1433,7 @@ MoveRight(Int64 num, Int16 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1458,7 +1458,7 @@ MoveRight(Int64 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1483,7 +1483,7 @@ MoveRight(Int16 num, Int16 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1508,7 +1508,7 @@ MoveRight(Int32 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1533,7 +1533,7 @@ MoveRight(Int64 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1558,7 +1558,7 @@ MoveRight(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1566,7 +1566,7 @@ MoveRight(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveRight([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveRight([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators.
 
@@ -1580,12 +1580,12 @@ MoveRight(Int64 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateT
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | long value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1610,7 +1610,7 @@ MoveRight(Int64 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1637,7 +1637,7 @@ MoveRight(Int16 num, Decimal targetOperand, Int32 targetOperandDig, Int32 target
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1664,7 +1664,7 @@ MoveRight(Int32 num, Decimal targetOperand, Int32 targetOperandDig, Int32 target
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1691,7 +1691,7 @@ MoveRight(Int64 num, Decimal targetOperand, Int32 targetOperandDig, Int32 target
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1716,7 +1716,7 @@ MoveRight(Int16 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1741,7 +1741,7 @@ MoveRight(Int32 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 .
 
@@ -1821,7 +1821,7 @@ MoveRightToChar(Int64 num);
 <br>
 <br>
 
-### MoveRightWithPad([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveRightWithPad([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int2 (short) to a datetime with given format and separators with pad.
 
@@ -1835,12 +1835,12 @@ MoveRightWithPad(Int16 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKin
 | --- | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | short value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1865,7 +1865,7 @@ MoveRightWithPad(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1873,7 +1873,7 @@ MoveRightWithPad(Int16 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveRightWithPad([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveRightWithPad([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int4 (int) to a datetime with given format and separators with pad.
 
@@ -1887,12 +1887,12 @@ MoveRightWithPad(Int32 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKin
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | int value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1917,7 +1917,7 @@ MoveRightWithPad(Int64 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1942,7 +1942,7 @@ MoveRightWithPad(Int16 num, Int32 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1967,7 +1967,7 @@ MoveRightWithPad(Int16 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -1992,7 +1992,7 @@ MoveRightWithPad(Int32 num, Int64 targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2017,7 +2017,7 @@ MoveRightWithPad(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2025,7 +2025,7 @@ MoveRightWithPad(Int32 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 <br>
 <br>
 
-### MoveRightWithPad([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveRightWithPad([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVE. Moves right a int8 (long) to a datetime with given format and separators with pad.
 
@@ -2039,12 +2039,12 @@ MoveRightWithPad(Int64 num, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKin
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | long value of the source number. 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | Date, Time, Timestamp. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | DateTime Kind. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | DateTime Format. 
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2069,7 +2069,7 @@ MoveRightWithPad(Int64 num, ASNA.QSys.Runtime.IFixedDateTime dateTime);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2096,7 +2096,7 @@ MoveRightWithPad(Int16 num, Decimal targetOperand, Int32 targetOperandDig, Int32
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2123,7 +2123,7 @@ MoveRightWithPad(Int32 num, Decimal targetOperand, Int32 targetOperandDig, Int32
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2150,7 +2150,7 @@ MoveRightWithPad(Int64 num, Decimal targetOperand, Int32 targetOperandDig, Int32
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2175,7 +2175,7 @@ MoveRightWithPad(Int16 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2200,7 +2200,7 @@ MoveRightWithPad(Int32 num, String targetOperand);
 
 #### Returns
 
-[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 .
 
@@ -2361,7 +2361,7 @@ the added value of every element in the array.
 <br>
 <br>
 
-### TestTime([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### TestTime([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 Tests whether a short contains a valid date/time/timestamp value.
 
@@ -2374,7 +2374,7 @@ TestTime(Int16 num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Commo
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | num | the short number to test. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | the date/time/timestamp format in which the number is. 
 
 #### Returns
@@ -2387,7 +2387,7 @@ TestTime(Int16 num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Commo
 <br>
 <br>
 
-### TestTime([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### TestTime([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 Tests whether an int number contains a valid date/time/timestamp value.
 
@@ -2400,7 +2400,7 @@ TestTime(Int32 num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Commo
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | the int number to test. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | the date/time/timestamp format in which the number is. 
 
 #### Returns
@@ -2413,7 +2413,7 @@ TestTime(Int32 num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Commo
 <br>
 <br>
 
-### TestTime([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### TestTime([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 Tests whether a long number contains a valid date/time/timestamp value.
 
@@ -2426,7 +2426,7 @@ TestTime(Int64 num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Commo
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | num | the long number to test. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | the date/time/timestamp format in which the number is. 
 
 #### Returns

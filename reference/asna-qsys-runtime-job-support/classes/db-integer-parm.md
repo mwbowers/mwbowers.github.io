@@ -2,7 +2,7 @@
 title: DBIntegerParm Class
 ---
 
-Represents a paramater for an integer type.
+Represents a parameter for an integer type.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Represents a paramater for an integer type.
 
 ## Remarks
 
-Represents a paramater for an integer type.
+Represents a parameter for an integer type.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

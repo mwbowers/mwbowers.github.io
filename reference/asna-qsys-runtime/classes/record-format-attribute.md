@@ -54,7 +54,7 @@ RecordFormatAttribute( String[] recordFormatNames, String[][] fieldsInFormats );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [String[][]]($$TODO-String[][].html) | FieldsInFormats | Gets the array of arrays contianing the field names in the record formats. | 
+| [String[][]]($$TODO-String[][].html) | FieldsInFormats | Gets the array of arrays containing the field names in the record formats. | 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | RecordFormatNames | Gets the record format names. | 
 
 <br>

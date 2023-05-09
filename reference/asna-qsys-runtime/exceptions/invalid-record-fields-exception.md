@@ -25,13 +25,13 @@ Record Format contains fields with types not compatible for this operation excep
 
 | Name |  Description 
 | --- | --- 
-| **InvalidRecordFieldsException**(  ) | Empty constuctor that sets the exception message to hard-coded text related to use of invalid field types for an operation.
+| **InvalidRecordFieldsException**(  ) | Empty constructor that sets the exception message to hard-coded text related to use of invalid field types for an operation.
 
 <br>
 
 ### InvalidRecordFieldsException(  )
 
-Empty constuctor that sets the exception message to hard-coded text related to use of invalid field types for an operation.
+Empty constructor that sets the exception message to hard-coded text related to use of invalid field types for an operation.
 
 ```cs
 InvalidRecordFieldsException(  );

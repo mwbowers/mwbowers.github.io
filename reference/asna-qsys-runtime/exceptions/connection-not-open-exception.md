@@ -25,13 +25,13 @@ File -filename- cannot be opened because a connection to database -database- has
 
 | Name |  Description 
 | --- | --- 
-| **ConnectionNotOpenException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Constructor that takes the -filename- with non-estalished connection to -database name-, causeing an exception.
+| **ConnectionNotOpenException**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) ) | Constructor that takes the -filename- with non-established connection to -database name-, causing an exception.
 
 <br>
 
 ### ConnectionNotOpenException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
-Constructor that takes the -filename- with non-estalished connection to -database name-, causeing an exception.
+Constructor that takes the -filename- with non-established connection to -database name-, causing an exception.
 
 ```cs
 ConnectionNotOpenException( String FileName, String DBName );

@@ -2,7 +2,7 @@
 title: FixedDateMethods Class
 ---
 
-Extension methods for FixedDate.
+Contains extension methods for handling RPG operations for FixedDate values.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Extension methods for FixedDate.
 
 ## Remarks
 
-Extension methods for FixedDate.
+Contains extension methods for handling RPG operations for FixedDate values.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

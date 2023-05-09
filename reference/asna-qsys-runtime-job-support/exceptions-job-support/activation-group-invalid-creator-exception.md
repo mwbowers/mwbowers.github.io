@@ -2,7 +2,7 @@
 title: ActivationGroupInvalidCreatorException Class
 ---
 
-The exception that is thrown when an activation group's dynamic creator is being overwriten.
+The exception that is thrown when an activation group's dynamic creator is being overwritten.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when an activation group's dynamic creator is being
 
 ## Remarks
 
-The exception that is thrown when an activation group's dynamic creator is being overwriten.
+The exception that is thrown when an activation group's dynamic creator is being overwritten.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

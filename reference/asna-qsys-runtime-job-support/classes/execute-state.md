@@ -27,7 +27,7 @@ Indicates the execution state of a job.
 | Ended | The job has ended.
 | Ending | The job is ending.
 | ForcefullyTerminated | the job was terminated before it could attempt to shutdown on its own.
-| PrematurellyTerminated | The job was terminated before it could shutdown on its own on time.
+| PrematurelyTerminated | The job was terminated before it could shutdown on its own on time.
 | Running | Job is running.
 | ShutdownRequested | The job has been requested to be shut down.
 

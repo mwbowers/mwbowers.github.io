@@ -25,13 +25,13 @@ Support for CALLD as a dynamic call.
 
 | Name |  Description 
 | --- | --- 
-| **DynamicCaller**( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) ) | Dynamic caller contructor.
+| **DynamicCaller**( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) ) | Dynamic caller constructor.
 
 <br>
 
 ### DynamicCaller( [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) )
 
-Dynamic caller contructor.
+Dynamic caller constructor.
 
 ```cs
 DynamicCaller( ASNA.QSys.Runtime.ICaller caller );
@@ -64,12 +64,39 @@ DynamicCaller( ASNA.QSys.Runtime.ICaller caller );
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [FindTypeInDynamicReferences](#findtypeindynamicreferencesstring-assembly)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly)) | Looks for a program in the list of dynamic references. | The type of the program.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [DynamicMetaObject]($$TODO-Dynamic.DynamicMetaObject.html) | [GetMetaObject](#getmetaobjectexpression)([Expression]($$TODO-Linq.Expressions.Expression.html)) | Defines the object that supports CallD. | The CallDMetaCaller object to use for the dynamic call.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDynamicAssemblyList](#setdynamicassemblyliststring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates the list of assemblies representing dynamic references. CALLD targets will be searched for in this list. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
+
+<br>
+<br>
+
+### FindTypeInDynamicReferences([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly))
+
+Looks for a program in the list of dynamic references.
+
+```cs
+FindTypeInDynamicReferences(String className, Reflection.Assembly callerAssembly);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | className | The class name of the program. 
+| [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly) | callerAssembly | The assembly of the caller. Use null to not search in the caller assembly. 
+
+#### Returns
+
+[Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)
+
+The type of the program.
+
 
 <br>
 <br>
@@ -93,6 +120,24 @@ GetMetaObject(Linq.Expressions.Expression parameter);
 [DynamicMetaObject]($$TODO-Dynamic.DynamicMetaObject.html)
 
 The CallDMetaCaller object to use for the dynamic call.
+
+
+<br>
+<br>
+
+### SetDynamicAssemblyList([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Creates the list of assemblies representing dynamic references. CALLD targets will be searched for in this list.
+
+```cs
+SetDynamicAssemblyList(String assemblies);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | assemblies | Comma separated list of assemblies or patterns. 
 
 
 <br>

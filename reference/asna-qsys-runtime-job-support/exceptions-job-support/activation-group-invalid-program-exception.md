@@ -42,7 +42,7 @@ ActivationGroupInvalidProgramException( String program, String cause );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | program | The class name of the program being called. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cause | The reason the program is invalid  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cause | The reason the program is invalid. 
 
 <br>
 

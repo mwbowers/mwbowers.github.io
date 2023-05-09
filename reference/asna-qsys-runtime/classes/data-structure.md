@@ -111,22 +111,22 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] layouts );
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetDate](#getdateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [GetHex](#gethexint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte array from the Data Structure buffer, at the given start position for the given length. | A byte array with the buffer contents at the specified start position and for the given length.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetIndicator](#getindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwsie.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetIndicator](#getindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetInteger](#getintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an integer (Int32) value starting at the specified position in the Data Structure buffer. | The integer number starting at the given position in the buffer.
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [GetLong](#getlongint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an long (Int64) value starting at the specified position in the Data Structure buffer. | The long number starting at the given position in the buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableBinary](#getnullablebinaryint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Binary decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Binary decimal number.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Byte, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableByte](#getnullablebyteint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte value from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableChar](#getnullablecharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableDate](#getnullabledateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableIndicator](#getnullableindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwsie.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableInteger](#getnullableintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an integer (Int32) value starting at the specified position in the Data Structure buffer. | The integer number starting at the given position in the buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int64, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableLong](#getnullablelongint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an long (Int64) value starting at the specified position in the Data Structure buffer. | The long number starting at the given position in the buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullablePacked](#getnullablepackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int16, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableShort](#getnullableshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableBinary](#getnullablebinaryint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Binary decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Binary decimal number.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableByte](#getnullablebyteint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte value from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableChar](#getnullablecharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableDate](#getnullabledateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableIndicator](#getnullableindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwise.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableInteger](#getnullableintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an integer (Int32) value starting at the specified position in the Data Structure buffer. | The integer number starting at the given position in the buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableLong](#getnullablelongint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an long (Int64) value starting at the specified position in the Data Structure buffer. | The long number starting at the given position in the buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullablePacked](#getnullablepackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int16, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableShort](#getnullableshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNullableString](#getnullablestringint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a segment of the Data Structure buffer as a string. | The string of the given length that starts at the given position.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableTime](#getnullabletimeint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableTimestamp](#getnullabletimestampint32-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer. | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableZoned](#getnullablezonedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Zoned decimal number.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableTime](#getnullabletimeint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableTimestamp](#getnullabletimestampint32-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer. | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
+| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | [GetNullableZoned](#getnullablezonedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Zoned decimal number.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetPacked](#getpackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [GetShort](#getshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetString](#getstringint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a segment of the Data Structure buffer as a string. | The string of the given length that starts at the given position.
@@ -350,7 +350,7 @@ GetIndicator(Int32 position);
 
 [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
-'0' if the character at the given position in the buffer is '0', or '1' otherwsie.
+'0' if the character at the given position in the buffer is '0', or '1' otherwise.
 
 
 <br>
@@ -422,7 +422,7 @@ GetNullableBinary(Int32 start, Int32 digits, Int32 decimals);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The decimal number value of the Binary decimal number.
 
@@ -446,7 +446,7 @@ GetNullableByte(Int32 position);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Byte, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The character at the given position in the buffer.
 
@@ -470,7 +470,7 @@ GetNullableChar(Int32 position);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The character at the given position in the buffer.
 
@@ -496,7 +496,7 @@ GetNullableDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QS
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
 
@@ -520,9 +520,9 @@ GetNullableIndicator(Int32 position);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Char, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
-'0' if the character at the given position in the buffer is '0', or '1' otherwsie.
+'0' if the character at the given position in the buffer is '0', or '1' otherwise.
 
 
 <br>
@@ -544,7 +544,7 @@ GetNullableInteger(Int32 start);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The integer number starting at the given position in the buffer.
 
@@ -568,7 +568,7 @@ GetNullableLong(Int32 start);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int64, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int64, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The long number starting at the given position in the buffer.
 
@@ -594,7 +594,7 @@ GetNullablePacked(Int32 start, Int32 digits, Int32 decimals);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The decimal number value of the Packed decimal number.
 
@@ -618,7 +618,7 @@ GetNullableShort(Int32 start);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int16, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Int16, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The short number starting at the given position in the buffer.
 
@@ -669,7 +669,7 @@ GetNullableTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QS
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
 
@@ -694,7 +694,7 @@ GetNullableTimestamp(Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator)
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
 
@@ -720,7 +720,7 @@ GetNullableZoned(Int32 start, Int32 digits, Int32 decimals);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
+[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Nullable`1[[System.Decimal, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html)
 
 The decimal number value of the Zoned decimal number.
 

@@ -25,13 +25,13 @@ The transaction has not been started exception.
 
 | Name |  Description 
 | --- | --- 
-| **TransactionNotStartedException**(  ) | Empty constuctor that sets the exception message to hard-coded text related to the transaction which has not yet started that caused an exception.
+| **TransactionNotStartedException**(  ) | Empty constructor that sets the exception message to hard-coded text related to the transaction which has not yet started that caused an exception.
 
 <br>
 
 ### TransactionNotStartedException(  )
 
-Empty constuctor that sets the exception message to hard-coded text related to the transaction which has not yet started that caused an exception.
+Empty constructor that sets the exception message to hard-coded text related to the transaction which has not yet started that caused an exception.
 
 ```cs
 TransactionNotStartedException(  );

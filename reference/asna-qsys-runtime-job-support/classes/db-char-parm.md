@@ -2,7 +2,7 @@
 title: DBCharParm Class
 ---
 
-Represents a paramater for a Character type.
+Represents a parameter for a Character type.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Represents a paramater for a Character type.
 
 ## Remarks
 
-Represents a paramater for a Character type.
+Represents a parameter for a Character type.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

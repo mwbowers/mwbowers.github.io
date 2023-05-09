@@ -2,7 +2,7 @@
 title: SpoolerControlCharacter Enumeration
 ---
 
-Indicates the maner in which control characters will be represented in the database.
+Indicates the manner in which control characters will be represented in the database.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -12,7 +12,7 @@ Indicates the maner in which control characters will be represented in the datab
 
 ## Remarks
 
-Indicates the maner in which control characters will be represented in the database.
+Indicates the manner in which control characters will be represented in the database.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

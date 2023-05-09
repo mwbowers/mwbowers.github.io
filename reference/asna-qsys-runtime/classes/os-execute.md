@@ -57,7 +57,7 @@ Run(String commandLine, String directory, String operationString, Diagnostics.Pr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | The command line to launch. It may be the name of a file that the system will open in the corresponding default application,
             or it can be an application with its arguments. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | The working directory for the new process. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application insicated. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application indicated. 
 | [ProcessWindowStyle]($$TODO-Diagnostics.ProcessWindowStyle.html) | windowStyle | The ProcessWindowStyle value that selects the window style of the new process. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Indicates whether to wait for the process to finish. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | returnCode | The HResult value if the process throws an exception. 
@@ -82,7 +82,7 @@ Run(String commandLine, String directory, String operationString, Diagnostics.Pr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | The command line to launch. It may be the name of a file that the system will open in the corresponding default application,
             or it can be an application with its arguments. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | The working directory for the new process. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application insicated. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application indicated. 
 | [ProcessWindowStyle]($$TODO-Diagnostics.ProcessWindowStyle.html) | windowStyle | The ProcessWindowStyle value that selects the window style of the new process. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Indicates whether to wait for the process to finish. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | returnCode | The HResult value if the process throws an exception. 
@@ -106,7 +106,7 @@ Run(String commandLine, String directory, String operationString, Diagnostics.Pr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | The command line to launch. It may be the name of a file that the system will open in the corresponding default application,
             or it can be an application with its arguments. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | The working directory for the new process. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application insicated. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application indicated. 
 | [ProcessWindowStyle]($$TODO-Diagnostics.ProcessWindowStyle.html) | windowStyle | The ProcessWindowStyle value that selects the window style of the new process. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Indicates whether to wait for the process to finish. 
 
@@ -129,7 +129,7 @@ Run(String commandLine, String directory, String operationString, Diagnostics.Pr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | The command line to launch. It may be the name of a file that the system will open in the corresponding default application,
             or it can be an application with its arguments. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | The working directory for the new process. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application insicated. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application indicated. 
 | [ProcessWindowStyle]($$TODO-Diagnostics.ProcessWindowStyle.html) | windowStyle | The ProcessWindowStyle value that selects the window style of the new process. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Indicates whether to wait for the process to finish. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | returnCode | The HResult value if the process throws an exception. 
@@ -155,7 +155,7 @@ Run(String commandLine, String directory, String operationString, Diagnostics.Pr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | The command line to launch. It may be the name of a file that the system will open in the corresponding default application,
             or it can be an application with its arguments. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | The working directory for the new process. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application insicated. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application indicated. 
 | [ProcessWindowStyle]($$TODO-Diagnostics.ProcessWindowStyle.html) | windowStyle | The ProcessWindowStyle value that selects the window style of the new process. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Indicates whether to wait for the process to finish. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | returnCode | The HResult value if the process throws an exception. 
@@ -180,7 +180,7 @@ Run(String commandLine, String directory, String operationString, Diagnostics.Pr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | The command line to launch. It may be the name of a file that the system will open in the corresponding default application,
             or it can be an application with its arguments. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | The working directory for the new process. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application insicated. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | This corresponds to System.Diagnostics.ProcessStartInfo.Verb, which is the action to take when opening the document or application indicated. 
 | [ProcessWindowStyle]($$TODO-Diagnostics.ProcessWindowStyle.html) | windowStyle | The ProcessWindowStyle value that selects the window style of the new process. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Indicates whether to wait for the process to finish. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | ErrorInd | '1' if there was an exception thrown by the launched process, '0' otherwise. 

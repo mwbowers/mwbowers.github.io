@@ -61,7 +61,7 @@ BufferToRecord(Data.DataRow row, String buffer);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DataRow]($$TODO-Data.DataRow.html) | row | The DataRow to load with data. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | buffer | The string buffer contianing the data. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | buffer | The string buffer containing the data. 
 
 #### Returns
 
@@ -87,7 +87,7 @@ BufferToRecord(ASNA.DataGate.Client.AdgDataSet dataSet, String formatName, Strin
 | --- | --- | ---
 | [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | dataSet | The AdgDataSet object that contains the table row to load. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | The name of the table. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | buffer | The string buffer contianing the data. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | buffer | The string buffer containing the data. 
 
 #### Returns
 

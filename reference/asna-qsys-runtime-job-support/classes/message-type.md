@@ -23,6 +23,7 @@ Specifies the type of message.Message Type.
 
 | Name | Description
 | --- | --- 
+| Any | Any kind of message.
 | Completion | A completion message.
 | Diagnostic | A Diagnostic message.
 | Escape | An escape message.

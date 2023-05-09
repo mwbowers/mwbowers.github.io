@@ -15,7 +15,7 @@ The `CallD` method takes a minimum of two parameters: a string with the name of 
 ### Multiple Versions of a Program
 In the *IBMi*, programs (as well as all other objects) reside in libraries.  Two different versions of a program can have the same name as long as they are kept in different libraries.  When a program is called its location can be provided by the calling program by qualifying the name with the name of the library where it resides, i.e.: MyLibrary/MyProgram.
 
-To differentiate among various versions of a program, the Monarch runtime relies on the proper use of **.NET namespaces** as a qualifier. For example, a program named **CUSTINQ** on the *IBMi* may become **ACME.Accounting.CUSTINQ**, while a different version of **CUSTINQ** may become **ACME.CustSvc.CUSTINQ**.  A specific version of a program can be called by providing its fully qualifed name to the `CallD` method. 
+To differentiate among various versions of a program, the Monarch runtime relies on the proper use of **.NET namespaces** as a qualifier. For example, a program named **CUSTINQ** on the *IBMi* may become **ACME.Accounting.CUSTINQ**, while a different version of **CUSTINQ** may become **ACME.CustSvc.CUSTINQ**.  A specific version of a program can be called by providing its fully qualified name to the `CallD` method. 
 
 ### Namespace List and Assembly List
 
@@ -24,7 +24,7 @@ It is also possible to call a program by providing its unqualified name and empl
 In the *IBMi*, when an unqualified program is called its location gets resolved via the *Library List*. The *Library List* is a list of
 libraries (directories) that the system will use to look sequentially for
 a particular program or file. Each user will have her own version of the library list, and two different users calling
-the same unqualifed program may end up invoking different versions of the program, residing in different libraries.
+the same unqualified program may end up invoking different versions of the program, residing in different libraries.
 
 In .NET, the Monarch runtime supports a similar mechanism. Calling one version or another can be controlled with the use 
 of a ***Namespace List***. The namespace list is a property of the **Job** that is controlling

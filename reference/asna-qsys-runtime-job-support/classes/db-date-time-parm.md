@@ -2,7 +2,7 @@
 title: DBDateTimeParm Class
 ---
 
-Represents a paramater for a date-time type.
+Represents a parameter for a date-time type.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Represents a paramater for a date-time type.
 
 ## Remarks
 
-Represents a paramater for a date-time type.
+Represents a parameter for a date-time type.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

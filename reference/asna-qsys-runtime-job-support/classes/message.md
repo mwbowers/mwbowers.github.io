@@ -45,7 +45,7 @@ Message( String MsgId, String MsgDta, String MsgFile, ASNA.QSys.Runtime.JobSuppo
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgId | The message identification. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgDta | The replacement text, if any, for the message placeholders. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFile | The message file name where the message description is to be found. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that spefices the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
 
 <br>
 
@@ -62,7 +62,7 @@ Message( String text, ASNA.QSys.Runtime.JobSupport.MessageType type );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | The user provide text of the message. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | type | One of the enumeration values that spefices the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | type | One of the enumeration values that specify the severity of the message. 
 
 <br>
 
@@ -76,7 +76,7 @@ Message( String text, ASNA.QSys.Runtime.JobSupport.MessageType type );
 | --- | --- | --- | --- 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Data | Gets the replacement data associated with the message. | 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | DateTimeSent | Gets the DateTime when the message was created. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Id | Gets the message identificiation. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Id | Gets the message identification. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Key | Gets the unique identifier of the message. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MessageFile | Gets the name of the file where the message description can be found. | 
 | [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MessageType | Gets the MessageType of the message. | 

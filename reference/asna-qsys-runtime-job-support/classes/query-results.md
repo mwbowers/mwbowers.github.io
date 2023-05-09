@@ -25,16 +25,16 @@ Dictionary with Query result items.
 
 | Name |  Description 
 | --- | --- 
-| [QueryResults](#queryresults)() | Initalizes a new instance of QueryResults class. 
-| [QueryResults](#queryresultsint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initalizes a new instance of QueryResults class pre-allocating the especified initial capacity. 
-| [QueryResults](#queryresultsidictionary{system.string-system.object})([IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)) | Initalizes a new instance of QueryResults class by duplicating the provided dictionary. 
-| [QueryResults](#queryresultsserializationinfo-streamingcontext)([SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo), [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext)) | Initalizes a new instance of QueryResults class 
+| [QueryResults](#queryresults)() | Initializes a new instance of QueryResults class. 
+| [QueryResults](#queryresultsint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of QueryResults class pre-allocating the specified initial capacity. 
+| [QueryResults](#queryresultsidictionary{system.string-system.object})([IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)) | Initializes a new instance of QueryResults class by duplicating the provided dictionary. 
+| [QueryResults](#queryresultsserializationinfo-streamingcontext)([SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo), [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext)) | Initializes a new instance of QueryResults class 
 
 <br>
 
 ### QueryResults(  )
 
-Initalizes a new instance of QueryResults class.
+Initializes a new instance of QueryResults class.
 
 ```cs
 QueryResults(  );
@@ -45,7 +45,7 @@ QueryResults(  );
 
 ### QueryResults( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
-Initalizes a new instance of QueryResults class pre-allocating the especified initial capacity.
+Initializes a new instance of QueryResults class pre-allocating the specified initial capacity.
 
 ```cs
 QueryResults( Int32 capacity );
@@ -61,7 +61,7 @@ QueryResults( Int32 capacity );
 
 ### QueryResults( [IDictionary{System.String,System.Object}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) )
 
-Initalizes a new instance of QueryResults class by duplicating the provided dictionary.
+Initializes a new instance of QueryResults class by duplicating the provided dictionary.
 
 ```cs
 QueryResults( Collections.Generic.IDictionary{System.String,System.Object} dictionary );
@@ -77,7 +77,7 @@ QueryResults( Collections.Generic.IDictionary{System.String,System.Object} dicti
 
 ### QueryResults( [SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo), [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext) )
 
-Initalizes a new instance of QueryResults class
+Initializes a new instance of QueryResults class
 
 ```cs
 QueryResults( Runtime.Serialization.SerializationInfo serializationInfo, Runtime.Serialization.StreamingContext streamingContext );

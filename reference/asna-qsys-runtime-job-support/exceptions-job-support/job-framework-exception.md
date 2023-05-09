@@ -2,7 +2,7 @@
 title: JobFrameworkException Class
 ---
 
-Defined the core behaviour of exceptions thrown by Monarch Base and provides a base for derived exceptions.
+Defined the core behavior of exceptions thrown by Monarch Base and provides a base for derived exceptions.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Defined the core behaviour of exceptions thrown by Monarch Base and provides a b
 
 ## Remarks
 
-Defined the core behaviour of exceptions thrown by Monarch Base and provides a base for derived exceptions.
+Defined the core behavior of exceptions thrown by Monarch Base and provides a base for derived exceptions.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

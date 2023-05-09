@@ -1862,7 +1862,7 @@ Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String m
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target operand of the Xlate operation. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 
 
@@ -1884,7 +1884,7 @@ Xlate``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, String m
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target operand of the Xlate operation. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
@@ -1907,7 +1907,7 @@ XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, Str
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target operand of the Xlate operation. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 
 
@@ -1929,7 +1929,7 @@ XlateFixed``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFrom, Str
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target operand of the Xlate operation. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 
@@ -1952,7 +1952,7 @@ XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFr
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target operand of the Xlate operation. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 
 
@@ -1974,7 +1974,7 @@ XlateFixedWithPad``1(ASNA.QSys.Runtime.FixedString{``0} baseString, String mapFr
 | [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | baseString | A character expression that contains the string Xlate will operate on. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapFrom | From string, if characters are duplicated the first occurrence is used. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mapTo | To string, describes what the characters in mapFrom will become. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target opperand of the Xlate operation. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetString | Target operand of the Xlate operation. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based start position for baseString. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | errInd | Indicator will be set if a runtime error occurs. 
 

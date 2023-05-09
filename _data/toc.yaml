@@ -1908,7 +1908,7 @@ Reference:
           - title: InvalidDataAreaTypeException
             path: /reference/asna-qsys-runtime/exceptions/invalid-data-area-type-exception.html
           - title: JobShutdownException
-            path: /reference/asna-qsys-runtime/exceptions/job-shutdown-exception.html
+            path: /reference/asna-qsys-runtime/exceptions/job-shut-down-exception.html
           - title: InvalidDSFieldsException
             path: /reference/asna-qsys-runtime/exceptions/invalid-ds-fields-exception.html
           - title: InvalidFileOperationException
@@ -1929,6 +1929,8 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/library-list-exception.html
           - title: MissingFormatException
             path: /reference/asna-qsys-runtime/exceptions/missing-format-exception.html
+          - title: NonexistentDataAreaException
+            path: /reference/asna-qsys-runtime/exceptions/nonexistent-data-area-exception.html
           - title: NetworkBlockingOutputException
             path: /reference/asna-qsys-runtime/exceptions/network-blocking-output-exception.html
           - title: NetworkBlockingUpdateException
@@ -1951,8 +1953,6 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/too-many-subfile-records-exception.html
           - title: TransactionNotStartedException
             path: /reference/asna-qsys-runtime/exceptions/transaction-not-started-exception.html
-          - title: UnexistentDataAreaException
-            path: /reference/asna-qsys-runtime/exceptions/unexistent-data-area-exception.html
           - title: UnlockedDataAreaException
             path: /reference/asna-qsys-runtime/exceptions/unlocked-data-area-exception.html
           - title: UpdateWithoutAPriorInputOperationException

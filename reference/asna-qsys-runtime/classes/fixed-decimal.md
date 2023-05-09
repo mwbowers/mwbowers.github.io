@@ -43,7 +43,7 @@ Holds a fixed-decimal value with the specified number of digits and decimal posi
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Returns the hash code for this instance. | A hash code for the current FixedDecimal.
 | [FixedDecimal\\`2](/reference/asna-qsys-runtime/fixed-decimal`2.html) | [MergeLeft](#mergeleftstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge left. | The FixedDecimal result.
 | [FixedDecimal\\`2](/reference/asna-qsys-runtime/fixed-decimal`2.html) | [MergeRight](#mergerightstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge right. | The FixedDecimal result.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToPackedRepresentation](#topackedrepresentation)() | Convert this FixedDecimal to its packed representation. | The string contianing the packed representation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToPackedRepresentation](#topackedrepresentation)() | Convert this FixedDecimal to its packed representation. | The string containing the packed representation.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to string. | The resulting numeric string, formatted in the current culture.
 
 <br>
@@ -225,7 +225,7 @@ ToPackedRepresentation();
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-The string contianing the packed representation.
+The string containing the packed representation.
 
 
 <br>

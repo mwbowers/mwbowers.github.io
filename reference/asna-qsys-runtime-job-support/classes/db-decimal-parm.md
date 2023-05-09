@@ -2,7 +2,7 @@
 title: DBDecimalParm Class
 ---
 
-Represents a paramater for a decimal type.
+Represents a parameter for a decimal type.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Represents a paramater for a decimal type.
 
 ## Remarks
 
-Represents a paramater for a decimal type.
+Represents a parameter for a decimal type.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

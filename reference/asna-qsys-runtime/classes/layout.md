@@ -52,6 +52,7 @@ Defines a layout for a field in a data structure.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Equality comparer. | True if the Layouts are equivalent, i.e. if all of their properties correspondingly have the same values.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [FixedString](#fixedstringint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedString field. | The layout describing a FixedString field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [FixedStringArray](#fixedstringarrayint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedString array field. | The layout describing a FixedString array field.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Get the unique hashcode of this instance. | The hashcode.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Hex](#hexint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a Hex (byte[]) field. | The layout describing a Hex field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Indicator](#indicator)() | Creates a layout for an Indicator field. | The layout describing an Indicator field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [IndicatorArray](#indicatorarrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for an Indicator array field. | The layout describing an Indicator array field.
@@ -335,6 +336,24 @@ FixedStringArray(Int32 arrayLength, Int32 length, Int32 skip);
 [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)
 
 The layout describing a FixedString array field.
+
+
+<br>
+<br>
+
+### GetHashCode()
+
+Get the unique hashcode of this instance.
+
+```cs
+GetHashCode();
+```
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+The hashcode.
 
 
 <br>

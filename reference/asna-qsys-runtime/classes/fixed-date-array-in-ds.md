@@ -39,7 +39,7 @@ FixedDateArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int3
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | parent | The Data Stucture containing this array of FixedDate. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | parent | The Data Structure containing this array of FixedDate. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements. 
 

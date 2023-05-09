@@ -80,8 +80,8 @@ Some of the concepts supported by these classes are:
 |  [QueryValue](classes/query-value.html) | Represents a Value stored in a SQL Query Result.
 |  [ServiceProgram](classes/service-program.html) | Defines the core behavior of a service program and provides a base for migrated derived classes.
 |  [ServiceProgramUseAttribute](classes/service-program-use-attribute.html) | Attribute to indicate the list of service programs to which a program is bound.
-|  [Spooler](classes/spooler.html) | Provides the ifrastucture to manage spooled output from print files. 
-|  [SpoolerControlCharacter](classes/spooler-control-character.html) | Indicates the maner in which control characters will be represented in the database.
+|  [Spooler](classes/spooler.html) | Provides the infrastructure to manage spooled output from print files. 
+|  [SpoolerControlCharacter](classes/spooler-control-character.html) | Indicates the manner in which control characters will be represented in the database.
 |  [SQL_CommunicationsArea](classes/sql-communications-area.html) | Implements SQLCA (SQL communications area)
 |  [SqlPreparedStatement](classes/sql-prepared-statement.html) | Used to implement SQL PREPARE statements.
 |  [SystemValue](classes/system-value.html) | Provides System Value attributes.

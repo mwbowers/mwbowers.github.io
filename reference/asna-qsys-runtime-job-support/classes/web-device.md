@@ -62,7 +62,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Attach](#attachstring-webdisplayfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Associates a named display file to this device for future shareing.  Remembers the display file name for potential future sharing. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Attach](#attachstring-webdisplayfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Associates a named display file to this device for future sharing.  Remembers the display file name for potential future sharing. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Detach](#detachstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the association of a named display file with the device. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#dispose)() | Calls the close method on the device. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
@@ -87,7 +87,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 
 ### Attach([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html))
 
-Associates a named display file to this device for future shareing.  Remembers the display file name for potential future sharing.
+Associates a named display file to this device for future sharing.  Remembers the display file name for potential future sharing.
 
 ```cs
 Attach(String shareFileName, ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);

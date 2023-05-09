@@ -2,7 +2,7 @@
 title: FixedTimeMethods Class
 ---
 
-Extension methods for FixedTime.
+Contains extension methods for handling RPG operations for FixedTime values.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Extension methods for FixedTime.
 
 ## Remarks
 
-Extension methods for FixedTime.
+Contains extension methods for handling RPG operations for FixedTime values.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

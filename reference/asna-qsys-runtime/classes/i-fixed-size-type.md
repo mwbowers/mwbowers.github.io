@@ -2,7 +2,7 @@
 title: IFixedSizeType`1 Interface
 ---
 
-IFixedSizeType type T interface.
+Declares the basic functionality of a fixed-size generic type.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -12,7 +12,7 @@ IFixedSizeType type T interface.
 
 ## Remarks
 
-IFixedSizeType type T interface.
+Declares the basic functionality of a fixed-size generic type.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
