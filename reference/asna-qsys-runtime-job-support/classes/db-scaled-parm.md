@@ -2,7 +2,7 @@
 title: DBScaledParm Class
 ---
 
-Represents a paramater for a Scalar type.
+Represents a parameter for a Scalar type.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Represents a paramater for a Scalar type.
 
 ## Remarks
 
-Represents a paramater for a Scalar type.
+Represents a parameter for a Scalar type.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

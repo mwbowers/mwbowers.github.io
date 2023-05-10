@@ -1,20 +1,20 @@
 ---
-title: UnexistentDataAreaException Class
+title: InfSrException Class
 ---
 
-DataArea Exception issued when requesting a non-existing DataArea.
+Exception that can be thrown from InfSr to return or report an error condition.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> UnexistentDataAreaException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> InfSrException
 
 <br>
 <br>
 
 ## Remarks
 
-DataArea Exception issued when requesting a non-existing DataArea.
+Exception that can be thrown from InfSr to return or report an error condition.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,41 +25,40 @@ DataArea Exception issued when requesting a non-existing DataArea.
 
 | Name |  Description 
 | --- | --- 
-| [UnexistentDataAreaException](#unexistentdataareaexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates an UnexistentDataAreaException object. Sets the message to: Data area -data-area-name- does not exist. 
-| [UnexistentDataAreaException](#unexistentdataareaexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Creates an UnexistentDataAreaException object, with an inner exception. Sets the message to: Data area -data-area-name- does not exist. 
+| [InfSrException](#infsrexceptioninfsrreturnpoint)([InfSrReturnPoint](/reference/asna-qsys-runtime/classes/inf-sr-return-point.html)) | Initializes an InfSrException object. 
+| [InfSrException](#infsrexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes an InfSrException object. 
 
 <br>
 
-### UnexistentDataAreaException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
+### InfSrException( [InfSrReturnPoint](/reference/asna-qsys-runtime/classes/inf-sr-return-point.html) )
 
-Creates an UnexistentDataAreaException object. Sets the message to: Data area -data-area-name- does not exist.
+Initializes an InfSrException object.
 
 ```cs
-UnexistentDataAreaException( String name );
+InfSrException( ASNA.QSys.Runtime.InfSrReturnPoint returnPoint );
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | DataArea name. 
+| [InfSrReturnPoint](/reference/asna-qsys-runtime/classes/inf-sr-return-point.html) | returnPoint | The InfSrReturnPoint value describing from where the exception will be thrown. 
 
 <br>
 
-### UnexistentDataAreaException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
+### InfSrException( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
-Creates an UnexistentDataAreaException object, with an inner exception. Sets the message to: Data area -data-area-name- does not exist.
+Initializes an InfSrException object.
 
 ```cs
-UnexistentDataAreaException( String name, Exception e );
+InfSrException( String returnPointSring );
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | DataArea name. 
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | Inner exception. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | returnPointSring | String value with the name of the return point from where the exception will be thrown. 
 
 <br>
 
@@ -76,6 +75,7 @@ UnexistentDataAreaException( String name, Exception e );
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | HResult | Gets or sets HRESULT, a coded numerical value that is assigned to a specific exception.<br>(Inherited from [Exception]($$TODO-System.Exception.html)) | 
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | InnerException | Gets the Exception instance that caused the current exception.<br>(Inherited from [Exception]($$TODO-System.Exception.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Message | Gets a message that describes the current exception.<br>(Inherited from [Exception]($$TODO-System.Exception.html)) | 
+| [InfSrReturnPoint](/reference/asna-qsys-runtime/classes/inf-sr-return-point.html) | ReturnPoint | The InfSrReturnPoint value describing where this exception happened. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Source | Gets or sets the name of the application or the object that causes the error.<br>(Inherited from [Exception]($$TODO-System.Exception.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | StackTrace | Gets a string representation of the immediate frames on the call stack.<br>(Inherited from [Exception]($$TODO-System.Exception.html)) | 
 | [MethodBase]($$TODO-MethodBase.html) | TargetSite | Gets the method that throws the current exception.<br>(Inherited from [Exception]($$TODO-System.Exception.html)) | 

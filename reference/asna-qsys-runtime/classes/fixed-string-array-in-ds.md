@@ -39,7 +39,7 @@ FixedStringArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, In
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | parent | The Data Stucture containing this array of FixedString. 
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | parent | The Data Structure containing this array of FixedString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements. 
 

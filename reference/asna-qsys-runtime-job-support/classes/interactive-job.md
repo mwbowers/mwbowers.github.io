@@ -71,6 +71,7 @@ InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueEntryExtension | Gets the file extension used for job queue entries.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [LocalDataCollection](/reference/asna-qsys-runtime-job-support/classes/local-data-collection.html) | LDC | Gets the Job's Local Data Collection.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MessageFileFolder | Gets or sets the Folder path to the directory where the Message Files are located.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
+| [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | NamespaceList | Gets the Namespace List for dynamic program calls<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | PrinterDB | Gets the DataGate Database for Printer Files associated with the Job.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PsdsJobName | Gets or sets the Job's Name portion of the full job name.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | PsdsJobNumber | Gets or sets the Job's Number portion of the full job name. Job's Number is unique within a Monarch Application Server.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
@@ -92,18 +93,20 @@ InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](/reference/asna-qsys-runtime-job-support/classes/job.html#dispose)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Job class.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndPrograms](#endprograms)() | Deactivates all programs in the job, closes the device and calls Dispose(). | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecuteStartupProgram](#executestartupprogram)() | When overriden in a derived class, executes the first program in the job. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecuteStartupProgram](#executestartupprogram)() | When overridden in a derived class, executes the first program in the job. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | [getADO_Connection](/reference/asna-qsys-runtime-job-support/classes/job.html#getado_connection)() | Gets the ADO connection used for 'embedded SQL'<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Always returns NULL.
-| [Database](/reference/asna-qsys-runtime/classes/database.html) | [getDatabase](/reference/asna-qsys-runtime-job-support/classes/job.html#getdatabase)() | When overriden in a derived class, gets the main DataGate Database associated with the Job.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns de Database instance for the Job.
+| [Database](/reference/asna-qsys-runtime/classes/database.html) | [getDatabase](/reference/asna-qsys-runtime-job-support/classes/job.html#getdatabase)() | When overridden in a derived class, gets the main DataGate Database associated with the Job.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns de Database instance for the Job.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [MessageQueue](/reference/asna-qsys-runtime-job-support/classes/message-queue.html) | [GetInvokedMessageQueue](/reference/asna-qsys-runtime-job-support/classes/job.html#getinvokedmessagequeue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | If found, the message queue associated with the program; otherwise null.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetJobSessionString](#getjobsessionstringstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a string with the serialized job session. | A string with the serialized job session. May returns de special value *INVALIDSESSIONID.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](/reference/asna-qsys-runtime-job-support/classes/job.html#getldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The requested field value.
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | [getPrinterDB](/reference/asna-qsys-runtime-job-support/classes/job.html#getprinterdb)() | Gets the DataGate Database for Printer Files associated with the Job.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns the main Database.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSessionValue](#getsessionvaluestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get a the value of a string in the website's session. | The value of the string corresponding to the session key. Returns null if the key doesn't exist.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetSwitch](/reference/asna-qsys-runtime-job-support/classes/job.html#getswitch)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the vaule of one of the 8 job switchs.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The switch value of '0' or '1' for the requested switch, otherwise '0'.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSwitches](/reference/asna-qsys-runtime-job-support/classes/job.html#getswitches)() | Gets a string representing the values of all 8 job's switches.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | A '1' or '0' for each switch. The value of switch 1 is the leftmost postilion of the string, switch 8 is in the last position.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetSwitch](/reference/asna-qsys-runtime-job-support/classes/job.html#getswitch)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value of one of the 8 job switches.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The switch value of '0' or '1' for the requested switch, otherwise '0'.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetSwitches](/reference/asna-qsys-runtime-job-support/classes/job.html#getswitches)() | Gets a string representing the values of all 8 job's switches.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | A '1' or '0' for each switch. The value of switch 1 is the leftmost position of the string, switch 8 is in the last position.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitJobSessionStore](#initjobsessionstorestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Associate the JobSessionStore as belonging to the provided sessionId. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RequestShutdown](#requestshutdownint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Requests an orderly shutdown of the job but it forcibly shuts it down if not completed after a time period. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReclaimResources](/reference/asna-qsys-runtime-job-support/classes/job.html#reclaimresources)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Reclaim the resources on the Job's default activation group.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
@@ -113,7 +116,8 @@ InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveSystemValue](/reference/asna-qsys-runtime-job-support/classes/job.html#retrievesystemvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of an attribute of the current environment.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The value of the attribute requested.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveUserProfile](/reference/asna-qsys-runtime-job-support/classes/job.html#retrieveuserprofile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the name of a user.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The userProfileName value or the name of the current user.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SerializeLdaToBase64String](/reference/asna-qsys-runtime-job-support/classes/job.html#serializeldatobase64string)() | Converts the value of the LDA to a string representation that is encoded with base-64 digits.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The string representation, in base 64, of the contents of the LDA.
-| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](/reference/asna-qsys-runtime-job-support/classes/job.html#setenvironmentfromjobqueueentry)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns an empty dictionary.
+| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](/reference/asna-qsys-runtime-job-support/classes/job.html#setenvironmentfromjobqueueentry)() | This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns an empty dictionary.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SetJobSessionString](#setjobsessionstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the job session from a serialized string. | True if the sessionID corresponds to the job session, otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](/reference/asna-qsys-runtime-job-support/classes/job.html#setldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetProgram](#setprogramstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Records the name of the program that is currently running in the job. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSessionValue](#setsessionvaluestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the string value in the website's session.  The value may override an existing one. | 
@@ -160,11 +164,35 @@ EndPrograms();
 
 ### ExecuteStartupProgram()
 
-When overriden in a derived class, executes the first program in the job.
+When overridden in a derived class, executes the first program in the job.
 
 ```cs
 ExecuteStartupProgram();
 ```
+
+
+<br>
+<br>
+
+### GetJobSessionString([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Gets a string with the serialized job session.
+
+```cs
+GetJobSessionString(String sessionID);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sessionID | The job's session id. 
+
+#### Returns
+
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+
+A string with the serialized job session. May returns de special value *INVALIDSESSIONID.
 
 
 <br>
@@ -189,6 +217,24 @@ GetSessionValue(String sessionKey);
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The value of the string corresponding to the session key. Returns null if the key doesn't exist.
+
+
+<br>
+<br>
+
+### InitJobSessionStore([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Associate the JobSessionStore as belonging to the provided sessionId.
+
+```cs
+InitJobSessionStore(String sessionID);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sessionID | The ID of the session serving this job. 
 
 
 <br>
@@ -240,13 +286,38 @@ RequestYellowService(String command, String parm1, String parm2, String parm3, S
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parm1 | If any, the first parameter passed to the service. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parm2 | If any, the second parameter passed to the service. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parm3 | If any, the third parameter passed to the service. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | otherParms | If any, an array of other parametes to be passsed to the service. 
+| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | otherParms | If any, an array of other parameters to be passed to the service. 
 
 #### Returns
 
 [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The result of the command.
+
+
+<br>
+<br>
+
+### SetJobSessionString([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Sets the job session from a serialized string.
+
+```cs
+SetJobSessionString(String sessionID, String jobSessionString);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sessionID | The job's session id. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobSessionString | The serialized version of the contents of the new job session. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+True if the sessionID corresponds to the job session, otherwise false.
 
 
 <br>

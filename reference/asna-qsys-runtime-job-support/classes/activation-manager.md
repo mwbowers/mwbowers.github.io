@@ -94,7 +94,7 @@ ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ActivationGroupName | The activation group name of the invoked program. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ExternalQueue | The queue for messages meant for external use. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | FileOverrideTable | The file overrides associated with this Invocation entry. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | InvocationMark | The invoication mark when the invocation was created. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | InvocationMark | The invocation mark when the invocation was created. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | invocationWaterMark | The current invocation mark. It gets increased every time a new program/procedure gets invoked. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | MessageQueue | The queue for messages sent to the invoked program/procedure. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | ModuleName | The name of the module where the procedure is defined. | 
@@ -115,7 +115,7 @@ ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvocationArrayCopy](#getinvocationarraycopy)() | Gets a copy of the invocation stack. | An array of invocation entries.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvocationStrings](#getinvocationstrings)() | Gets an array of formatted strings for the invocation stack. | An array of formatted strings for the invocation stack entries.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvokedMessageQueue](#getinvokedmessagequeueint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the message queue associated with an invocation. | The mssage queue of the invocation etnry.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvokedMessageQueue](#getinvokedmessagequeueint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the message queue associated with an invocation. | The message queue of the invocation entry.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [IsActivationGroupActive](#isactivationgroupactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a value indicating whether there are any programs in the invocation stack instanced in an specific activation group. | True if there are programs in the invocation stack for the given activation group. False if there are none.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvokedMessageQueue](#getinvokedmessagequeuestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program. | If found, the message queue associated with the program; otherwise null.
@@ -218,7 +218,7 @@ GetInvokedMessageQueue(String programQueueId);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previous entry to Program or '*SAME' for Program. 
 
 
 <br>
@@ -236,7 +236,7 @@ PeekInvocation(String programQueueId);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previos entry to Program or '*SAME' for Program. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQueueId | A string with the format 'Relation ProgramName'. Program is a program name or '*' for the current program. Relation is optional, use '*PRV' for previous entry to Program or '*SAME' for Program. 
 
 
 <br>

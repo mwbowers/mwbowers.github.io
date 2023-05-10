@@ -1,22 +1,50 @@
 ---
-title: JobShutDownException Class
+title: CPF1338Exception Class
 ---
 
-The exception that is thrown when the Job has been terminated.
+The exception that is thrown when Errors occurred on while submitting a job..
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> JobShutDownException
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [JobException](/reference/asna-qsys-runtime-job-support/exceptions-job-support/job-exception.html) --> [CPF0000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf0000-exception.html) --> [CPF1000Exception](/reference/asna-qsys-runtime-job-support/exceptions-cpfxxxx/cpf1000-exception.html) --> CPF1338Exception
 
 <br>
 <br>
 
 ## Remarks
 
-The exception that is thrown when the Job has been terminated.
+The exception that is thrown when Errors occurred on while submitting a job..
 
 [//]: # ($$TODO: Complete the Remarks section.)
+
+<br>
+<br>
+
+## Constructor
+
+| Name |  Description 
+| --- | --- 
+| **CPF1338Exception**( [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) ) | Initializes a new instance of the CPF1338Exception class.
+
+<br>
+
+### CPF1338Exception( [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) )
+
+Initializes a new instance of the CPF1338Exception class.
+
+```cs
+CPF1338Exception( Exception innerException );
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | innerException | The exception that is the cause of the current exception, or a null reference if no inner exception is specified. 
+
+<br>
+
 
 <br>
 <br>

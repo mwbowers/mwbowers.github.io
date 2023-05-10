@@ -2,7 +2,7 @@
 title: OverrideOption Enumeration
 ---
 
-Specifies the option to be overriden on a file.
+Specifies the option to be overridden on a file.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -12,7 +12,7 @@ Specifies the option to be overriden on a file.
 
 ## Remarks
 
-Specifies the option to be overriden on a file.
+Specifies the option to be overridden on a file.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -33,14 +33,14 @@ Specifies the option to be overriden on a file.
 | Mbr | The member name.
 | Orientation | The print paper orientation.
 | OutputQueue | The name of the output queue.
-| PaperLength | The paper lenght.
+| PaperLength | The paper length.
 | PaperSize | The paper size.
 | PaperSource | The paper source.
 | PaperWidth | The paper width.
 | Printer | The printer name.
 | Quality | The printout quality.
 | ReportName | The report name.
-| SaveAfter | The value indicating if the spooold file should be saved after printing.
+| SaveAfter | The value indicating if the spooled file should be saved after printing.
 | Scale | The scaling of the printout.
 | ShareOpenDataPath | The option to share the file handle.
 | SpoolFileName | The name of the spool file.

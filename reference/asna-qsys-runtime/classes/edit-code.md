@@ -154,7 +154,7 @@ Edit Codes enumeration member.
 
 ### UsesThousandsSeparator([EditCodes](/reference/asna-qsys-runtime/classes/edit-codes.html))
 
-Determines if Edit Code uses thousands separator synbol.
+Determines if Edit Code uses thousands separator symbol.
 
 ```cs
 UsesThousandsSeparator(ASNA.QSys.Runtime.EditCodes editCode);

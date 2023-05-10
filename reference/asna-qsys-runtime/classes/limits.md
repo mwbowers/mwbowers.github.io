@@ -23,9 +23,9 @@ Defines decimal limits.
 
 | Name | Description
 | --- | --- 
-| MaxDecimalDigits | Maximum decimal digit's length.
-| MaxDigits | Maximum digits length.
-| MaxIntegralDigits | Maximum integral digit's length.
+| MaxDecimalDigits | Maximum number of decimal positions.
+| MaxDigits | Maximum number of digits.
+| MaxIntegralDigits | Maximum number of integral digits.
 
 <br>
 <br>

@@ -26,7 +26,7 @@ Handles connections to a Database.
 | Name |  Description 
 | --- | --- 
 | [Database](#databasestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Constructs a Database object using a database name. 
-| [Database](#databasestring-virtualterminal-openaccessdspf)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html), [OpenAccessDspF](/reference/asna-qsys-runtime/open-access-dsp-f.html)) | Constructs a Database object using a database name, VirtualTerminal value, and OpenAccessDspF value. 
+| [Database](#databasestring-virtualterminal-openaccessdspf)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html), [OpenAccessDspF](/reference/asna-qsys-runtime/classes/open-access-dsp-f.html)) | Constructs a Database object using a database name, VirtualTerminal value, and OpenAccessDspF value. 
 
 <br>
 
@@ -46,7 +46,7 @@ Database( String databaseName );
 
 <br>
 
-### Database( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html), [OpenAccessDspF](/reference/asna-qsys-runtime/open-access-dsp-f.html) )
+### Database( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html), [OpenAccessDspF](/reference/asna-qsys-runtime/classes/open-access-dsp-f.html) )
 
 Constructs a Database object using a database name, VirtualTerminal value, and OpenAccessDspF value.
 
@@ -59,8 +59,8 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | databaseName | Database name. 
-| [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html) | virtualTerminal | Value that specifies whether this connection will be used for an interactive virtual terminal connection. 
-| [OpenAccessDspF](/reference/asna-qsys-runtime/open-access-dsp-f.html) | openAccessDspF | Value that specifies whether this connection is for use with Open Access RPG programs. 
+| [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html) | virtualTerminal | Value that specifies whether this connection will be used for an interactive virtual terminal connection. 
+| [OpenAccessDspF](/reference/asna-qsys-runtime/classes/open-access-dsp-f.html) | openAccessDspF | Value that specifies whether this connection is for use with Open Access RPG programs. 
 
 <br>
 
@@ -82,20 +82,20 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Returns a True or False indicating if the database is open. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Label | Gets or sets a string containing the label of the database to connect to. | 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NameStoreConfigFiles | Gets the list of the database name store configuration files. | 
-| [NameStoreOptions](/reference/asna-qsys-runtime/name-store-options.html) | NameStoreOptions | Gets the database name store options. | 
+| [NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html) | NameStoreOptions | Gets the database name store options. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | NameStorePrepared | Gets whether the database name store has already been set for the process. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Password | Sets the password to be used in conjunction with User for connection authentication. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PlatformAttribute | Gets or sets a platform-specific attribute of the database engine. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PoolingTimeout | Gets or sets the database PoolingTimeOut (in minutes). | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Port | Gets or sets the TCP port number used by the database server for TCP/IP-based transport (default 5042). | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Server | The database server host machine name. | 
-| [ServerSupport](/reference/asna-qsys-runtime/server-support.html) | ServerSupport | For interactive connections, determines if program can issue server requests like open file or call program. | 
+| [ServerSupport](/reference/asna-qsys-runtime/classes/server-support.html) | ServerSupport | For interactive connections, determines if program can issue server requests like open file or call program. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SslCertificateName | Gets or sets the SSL Certificate name for the database connection. | 
 | [SslOptions]($$TODO-ASNA.DataGate.Common.SslOptions.html) | SslOptions | Gets or sets the SLL Options for the database connection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TerminalDeviceName | For interactive connections, determines the name of the device. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Text | Gets or sets a description of the database connection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | User | Gets or sets the user name that used to authorize the current database connection. | 
-| [VirtualTerminal](/reference/asna-qsys-runtime/virtual-terminal.html) | VirtualTerminal | VirtualTerminal summary. | 
+| [VirtualTerminal](/reference/asna-qsys-runtime/classes/virtual-terminal.html) | VirtualTerminal | VirtualTerminal summary. | 
 
 <br>
 <br>
@@ -130,7 +130,7 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Open a connection to a Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#openindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Open a connection to a Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#openchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open a connection to a Database. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PrepareNameStore\\`\\`1](#preparenamestore\`\`1namestoreoptions-string[])([NameStoreOptions](/reference/asna-qsys-runtime/name-store-options.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Prepares the Database name store. Should be called anly once and before any attempt to use a DataGated database by name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PrepareNameStore\\`\\`1](#preparenamestore\`\`1namestoreoptions-string[])([NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveDirectory](#removedirectorystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a directory (library) in the Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMember](#removememberstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a member from the specified file. | 
@@ -300,8 +300,7 @@ CopyLogicalFileToDb(String filePath, ASNA.QSys.Runtime.Database toDb, String toD
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path of the file to be copied, as "library/fileName". 
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | toDb | Database onto which the file will be copied. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toDirectory | Destination directory. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceBaseFiles | If true, if a base file already exists in the target DB it will be replaced.
-            If false, if a base file already exists it will not be replaced. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceBaseFiles | If true, if a base file already exists in the target DB it will be replaced. If false, if a base file already exists it will not be replaced. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | copyData | True to copy also the physical file data. 
 
 
@@ -523,9 +522,9 @@ Open(ref Char err);
 <br>
 <br>
 
-### PrepareNameStore\`\`1([NameStoreOptions](/reference/asna-qsys-runtime/name-store-options.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### PrepareNameStore\`\`1([NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Prepares the Database name store. Should be called anly once and before any attempt to use a DataGated database by name.
+Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name.
 
 ```cs
 PrepareNameStore``1(ASNA.QSys.Runtime.NameStoreOptions options, String[] configFiles);
@@ -535,7 +534,7 @@ PrepareNameStore``1(ASNA.QSys.Runtime.NameStoreOptions options, String[] configF
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [NameStoreOptions](/reference/asna-qsys-runtime/name-store-options.html) | options | Tells the name store where to look for database connection information, e.g. config files, user secrets, and others. 
+| [NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html) | options | Tells the name store where to look for database connection information, e.g. config files, user secrets, and others. 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | configFiles | Optional collection of configuration files containing database connection information. 
 
 

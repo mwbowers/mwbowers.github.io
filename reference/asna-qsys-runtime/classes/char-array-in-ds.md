@@ -68,15 +68,15 @@ CharArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 ski
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Sets all array elements to blank. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromchar[]-int32)([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a char[] into this array. | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Eauqlity comparer. | True in obj is an array of characters and the corresponding elements are equal.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Equality comparer. | True in obj is an array of characters and the corresponding elements are equal.
 | [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Computes the hashcode. | The hashcode of this object.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Equality](#op_equalitychararrayinds{`0}-chararrayinds{`0})([CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html), [CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html)) | Operator ==, returns true if the operands are equal. | True if the operands are equal, false otherwise.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Inequality](#op_inequalitychararrayinds{`0}-chararrayinds{`0})([CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html), [CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html)) | Operator !=, retuns true if the operands are not equal. | True if the operands are NOT equal, false otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Inequality](#op_inequalitychararrayinds{`0}-chararrayinds{`0})([CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html), [CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html)) | Operator !=, returns true if the operands are not equal. | True if the operands are NOT equal, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [System#Collections#IEnumerable#GetEnumerator](#system#collections#ienumerable#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [To](#to)() | Copies the array to a char[]. | A char[] contining a copy of the elements in this array.
+| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [To](#to)() | Copies the array to a char[]. | A char[] containing a copy of the elements in this array.
 
 <br>
 <br>
@@ -114,7 +114,7 @@ CopyFrom(Char[] sourceArray, Int32 targetStartAt);
 
 ### Equals([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Eauqlity comparer.
+Equality comparer.
 
 ```cs
 Equals(Object obj);
@@ -223,7 +223,7 @@ True if the operands are equal, false otherwise.
 
 ### op_Inequality([CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html), [CharArrayInDS{\\`0}](/reference/asna-qsys-runtime/char-array-in-ds{`0}.html))
 
-Operator !=, retuns true if the operands are not equal.
+Operator !=, returns true if the operands are not equal.
 
 ```cs
 op_Inequality(ASNA.QSys.Runtime.CharArrayInDS{`0} left, ASNA.QSys.Runtime.CharArrayInDS{`0} right);
@@ -290,7 +290,7 @@ To();
 
 [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
-A char[] contining a copy of the elements in this array.
+A char[] containing a copy of the elements in this array.
 
 
 <br>

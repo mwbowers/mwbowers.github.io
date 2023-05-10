@@ -2,7 +2,7 @@
 title: ExecuteStateException Class
 ---
 
-The exception that is thrown when a job is artifically being set to a state of 'Running'.
+The exception that is thrown when a job is artificially being set to a state of 'Running'.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ The exception that is thrown when a job is artifically being set to a state of '
 
 ## Remarks
 
-The exception that is thrown when a job is artifically being set to a state of 'Running'.
+The exception that is thrown when a job is artificially being set to a state of 'Running'.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 

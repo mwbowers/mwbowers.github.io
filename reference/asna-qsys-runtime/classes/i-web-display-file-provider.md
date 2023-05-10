@@ -2,7 +2,7 @@
 title: IWebDisplayFileProvider Interface
 ---
 
-Web Display File Provider Interface.
+Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -12,7 +12,7 @@ Web Display File Provider Interface.
 
 ## Remarks
 
-Web Display File Provider Interface.
+Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -24,7 +24,7 @@ Web Display File Provider Interface.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [Attach](#attachidisplayfile)([IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)) | Attach to DataSet. | The DataSet.
-| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetNewWebDisplayFile](#getnewwebdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance. | The Displayfil instance.
+| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetNewWebDisplayFile](#getnewwebdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance. | The Displayfile instance.
 | [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get shared file. | Display file instance.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetWRF](#getwrfstring-int32-int32-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Wings Record Format ID. | The Get Wings Record Format ID.
 
@@ -76,7 +76,7 @@ GetNewWebDisplayFile(String DclFileName, String FilePath, ASNA.DataGate.Client.A
 
 [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)
 
-The Displayfil instance.
+The Displayfile instance.
 
 
 <br>

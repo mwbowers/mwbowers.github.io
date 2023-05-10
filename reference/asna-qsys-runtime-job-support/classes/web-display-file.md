@@ -75,7 +75,7 @@ WebDisplayFile( String fileName, String pageName, Data.DataSet dataSet );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) | DataSet | Gets the dataset containg the data for the records of the display file. | 
+| [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) | DataSet | Gets the dataset containing the data for the records of the display file. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DisplayErrorMessages | Gets a value that indicates whether to display error messages. | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackActiveWindowCursor | Gets or sets the cursor position on the active window. | 
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | FeedbackAID | Gets or sets the device's attention identifier (AID) key pressed. | 
@@ -97,7 +97,7 @@ WebDisplayFile( String fileName, String pageName, Data.DataSet dataSet );
 | [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [Attach](#attach)() | Attaches a new use of the display file. | The dataset used as buffer for the records of the display file.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearSubfile](#clearsubfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Clears the dataset's table used as the bufer for a subfile. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes the display file disposing of its resources. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeactivateFormats](#deactivateformatsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks a set of record formats as not being availabe for being displayed on the device. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeactivateFormats](#deactivateformatsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks a set of record formats as not being available for being displayed on the device. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DisplaySubfileRecords](#displaysubfilerecordsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks a subfile as being active and available to be displayed at the device. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
@@ -112,10 +112,10 @@ WebDisplayFile( String fileName, String pageName, Data.DataSet dataSet );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#read)() | Presents the current data on the device and waits for the user to enter new data. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetActive](#setactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks a record format as being active. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetCurrentRow](#setcurrentrowstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the current, or acive, row number for a record format. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetCurrentRow](#setcurrentrowstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the current, or active, row number for a record format. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#update)() | Checks to see if the job should shutdow. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#write)() | Checks to see if the job should shutdow. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#update)() | Checks to see if the job should shutdown. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#write)() | Checks to see if the job should shutdown. | 
 
 <br>
 <br>
@@ -170,7 +170,7 @@ Close();
 
 ### DeactivateFormats([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Marks a set of record formats as not being availabe for being displayed on the device.
+Marks a set of record formats as not being available for being displayed on the device.
 
 ```cs
 DeactivateFormats(String formatNames, String excludeFormatChildren);
@@ -360,7 +360,7 @@ SetCurrentRow(String formatName, Int32 row);
 
 ### Update()
 
-Checks to see if the job should shutdow.
+Checks to see if the job should shutdown.
 
 ```cs
 Update();
@@ -372,7 +372,7 @@ Update();
 
 ### Write()
 
-Checks to see if the job should shutdow.
+Checks to see if the job should shutdown.
 
 ```cs
 Write();

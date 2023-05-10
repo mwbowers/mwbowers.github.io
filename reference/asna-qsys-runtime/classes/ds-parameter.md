@@ -2,7 +2,7 @@
 title: DSParameter Class
 ---
 
-Describes the datastructure parameters sent into an IBMi program call.
+Describes the data structure parameters sent into an IBMi program call.
 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Describes the datastructure parameters sent into an IBMi program call.
 
 ## Remarks
 
-Describes the datastructure parameters sent into an IBMi program call.
+Describes the data structure parameters sent into an IBMi program call.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -25,8 +25,8 @@ Describes the datastructure parameters sent into an IBMi program call.
 
 | Name |  Description 
 | --- | --- 
-| [DSParameter](#dsparameterstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi datastructure parameter. 
-| [DSParameter](#dsparameterstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | /// Create a DSParm object to represent an IBMi datastructure array parameter. 
+| [DSParameter](#dsparameterstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi data structure parameter. 
+| [DSParameter](#dsparameterstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi data structure array parameter. 
 
 <br>
 
@@ -50,7 +50,7 @@ DSParameter( String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSy
 
 ### DSParameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html) )
 
-/// Create a DSParm object to represent an IBMi datastructure array parameter.
+Create a DSParm object to represent an IBMi data structure array parameter.
 
 ```cs
 DSParameter( String name, ASNA.DataGate.Common.DataDirection direction, ASNA.QSys.Runtime.IDSCallParm[] dsCallParmArray );

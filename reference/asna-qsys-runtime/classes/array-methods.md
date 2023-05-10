@@ -36,7 +36,7 @@ Contains extension methods for handling Arrays according to RPG semantics.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-indicator-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-int32-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-int32-int32-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-int32-int32-indicator-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-int32-int32-indicator-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | True if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-int32-decimal-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-searchtype-int32-decimal-indicator-indicator)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup\\`\\`1](#lookup\`\`1``0[]-``0-int32-int32)([\\`\\`0[]]($$TODO-``0[].html), [\\`\\`0]($$TODO-``0.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
@@ -61,24 +61,24 @@ Contains extension methods for handling Arrays according to RPG semantics.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayDiffFieldLength](#movetoarraydifffieldlengtharray-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array of different field lengths, no padding. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayDiffFieldLengthWithPad](#movetoarraydifffieldlengthwithpadarray-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array of different field lengths, with padding. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad](#movetoarraywithpadarray-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array, with padding. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArray](#movetodatetimearrayarray-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArray](#movetodatetimearrayarray-int32-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArray](#movetodatetimearrayarray-int32-datetimedatakind-datetimeformat-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source datetime array to destination datetime array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArrayWithPad](#movetodatetimearraywithpadarray-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array, padding the result. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArrayWithPad](#movetodatetimearraywithpadarray-int32-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array, padding the result. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArrayWithPad](#movetodatetimearraywithpadarray-int32-datetimedatakind-datetimeformat-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source datetime array to destination datetime array, padding the result. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArray](#movetodatetimearrayarray-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArray](#movetodatetimearrayarray-int32-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArray](#movetodatetimearrayarray-int32-datetimedatakind-datetimeformat-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source datetime array to destination datetime array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArrayWithPad](#movetodatetimearraywithpadarray-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array, padding the result. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArrayWithPad](#movetodatetimearraywithpadarray-int32-int32-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source array to destination datetime array, padding the result. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToDateTimeArrayWithPad](#movetodatetimearraywithpadarray-int32-datetimedatakind-datetimeformat-array-int32-datetimedatakind-datetimeformat)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | RPG's MOVEA. Moves source datetime array to destination datetime array, padding the result. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination numeric array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination numeric array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination fixed decimal array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-int32-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source fixed decimal array to destination fixed decimal array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-datetimedatakind-datetimeformat-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination numeric array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-datetimedatakind-datetimeformat-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination fixed decimal array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-datetimedatakind-datetimeformat-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination numeric array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArray](#movetonumericarrayarray-int32-datetimedatakind-datetimeformat-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination fixed decimal array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination numeric array, padding the result. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-int32-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination numeric array, padding the result. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination fixed decimal array, padding the result. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-int32-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source fixed decimal array to destination fixed decimal array, padding the result. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-datetimedatakind-datetimeformat-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination numeric array, padding the result. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-datetimedatakind-datetimeformat-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination fixed decimal array, padding the result. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-datetimedatakind-datetimeformat-array-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination numeric array, padding the result. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToNumericArrayWithPad](#movetonumericarraywithpadarray-int32-datetimedatakind-datetimeformat-array-int32-int32-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source datetime array to destination fixed decimal array, padding the result. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveToString](#movetostringarray-int32-string)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEA. Moves source array to destination string. | Returns string value of the move.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveToString](#movetostringarray-int32-string-indicator)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's MOVEA. Moves source array to destination string. | Returns string value of the move.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MoveToStringWithPad](#movetostringwithpadarray-int32-string)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEA. Moves source array to destination string, padding on the left with blanks. | Returns string value of the move.
@@ -171,8 +171,8 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
@@ -192,9 +192,9 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set on ('1') if Lookup finds an exact match within the array. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array. 
 
 
 <br>
@@ -214,9 +214,9 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
@@ -236,10 +236,10 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
@@ -259,11 +259,11 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set on ('1') if Lookup finds an exact match within the array. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array. 
 
 
 <br>
@@ -283,10 +283,10 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
@@ -306,11 +306,11 @@ Lookup``1(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set on ('1') if Lookup finds an exact match within the array. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array. 
 
 
 <br>
@@ -390,10 +390,10 @@ Lookup``3(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed (Only Hi, Lo, and Eq are valid for this method). 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
@@ -413,11 +413,11 @@ Lookup``3(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 | --- | --- | ---
 | [\\`\\`0[]]($$TODO-``0[].html) | array | The array to search. 
 | [\\`\\`0]($$TODO-``0.html) | searchArgument | The element value being searched for in the array. 
-| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of lookup being performed. 
+| [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | foundIndex | The index of the searchArgument found within the array (set to 0 if not found). 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set on ('1') if the specified SearchType type is satisfied by the search. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set on ('1') if Lookup finds an exact match within the array. 
+| [FixedDecimal{\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal{``1,``2}.html) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array. 
 
 
 <br>
@@ -747,7 +747,7 @@ MoveToArrayWithPad(Array source, Int32 srcStartPos, Array destination, Int32 dst
 <br>
 <br>
 
-### MoveToDateTimeArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveToDateTimeArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEA. Moves source array to destination datetime array.
 
@@ -763,14 +763,14 @@ MoveToDateTimeArray(Array source, Int32 target, Array targetKind, Int32 targetFo
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | Destination datetime array. 
 | [Array]($$TODO-Array.html) | targetKind | Datetime kind. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetFormat | Datetime format. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dstStartPos | Starting index of the destination array. 
 
 
 <br>
 <br>
 
-### MoveToDateTimeArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveToDateTimeArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEA. Moves source array to destination datetime array.
 
@@ -787,14 +787,14 @@ MoveToDateTimeArray(Array source, Int32 sourceDec, Int32 target, Array targetKin
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | Destination datetime array. 
 | [Array]($$TODO-Array.html) | targetKind | Datetime kind. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetFormat | Datetime format. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dstStartPos | Starting index of the destination array. 
 
 
 <br>
 <br>
 
-### MoveToDateTimeArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveToDateTimeArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEA. Moves source datetime array to destination datetime array.
 
@@ -808,18 +808,18 @@ MoveToDateTimeArray(Array source, Int32 sourceKind, ASNA.QSys.Runtime.DateTimeDa
 | --- | --- | ---
 | [Array]($$TODO-Array.html) | source | Source datetime array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceKind | Datetime kind. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | sourceFormat | Datetime format. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | sourceFormat | Datetime format. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | target | Destination datetime array. 
 | [Array]($$TODO-Array.html) | targetKind | Datetime kind. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetFormat | Datetime format. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dstStartPos | Starting index of the destination array. 
 
 
 <br>
 <br>
 
-### MoveToDateTimeArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveToDateTimeArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEA. Moves source array to destination datetime array, padding the result.
 
@@ -835,14 +835,14 @@ MoveToDateTimeArrayWithPad(Array source, Int32 target, Array targetKind, Int32 t
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | Destination datetime array. 
 | [Array]($$TODO-Array.html) | targetKind | Datetime kind. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetFormat | Datetime format. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dstStartPos | Starting index of the destination array. 
 
 
 <br>
 <br>
 
-### MoveToDateTimeArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveToDateTimeArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEA. Moves source array to destination datetime array, padding the result.
 
@@ -859,14 +859,14 @@ MoveToDateTimeArrayWithPad(Array source, Int32 sourceDec, Int32 target, Array ta
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | Destination datetime array. 
 | [Array]($$TODO-Array.html) | targetKind | Datetime kind. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetFormat | Datetime format. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dstStartPos | Starting index of the destination array. 
 
 
 <br>
 <br>
 
-### MoveToDateTimeArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### MoveToDateTimeArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
 
 RPG's MOVEA. Moves source datetime array to destination datetime array, padding the result.
 
@@ -880,11 +880,11 @@ MoveToDateTimeArrayWithPad(Array source, Int32 sourceKind, ASNA.QSys.Runtime.Dat
 | --- | --- | ---
 | [Array]($$TODO-Array.html) | source | Source datetime array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceKind | Datetime kind. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | sourceFormat | Datetime format. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | sourceFormat | Datetime format. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | target | Destination datetime array. 
 | [Array]($$TODO-Array.html) | targetKind | Datetime kind. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetFormat | Datetime format. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | srcStartPos | Starting index of the source array. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dstStartPos | Starting index of the destination array. 
 
 
@@ -981,7 +981,7 @@ MoveToNumericArray(Array source, Int32 sourceDec, Int32 target, Array targetDig,
 <br>
 <br>
 
-### MoveToNumericArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToNumericArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEA. Moves source datetime array to destination numeric array.
 
@@ -995,7 +995,7 @@ MoveToNumericArray(Array source, Int32 sourceKind, ASNA.QSys.Runtime.DateTimeDat
 | --- | --- | ---
 | [Array]($$TODO-Array.html) | source | Source datetime array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceKind | Datetime kind. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | sourceFormat | Datetime format. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | sourceFormat | Datetime format. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | target | Destination numeric array. 
 | [Array]($$TODO-Array.html) | srcStartPos | Starting index of the source array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dstStartPos | Starting index of the destination array. 
@@ -1004,7 +1004,7 @@ MoveToNumericArray(Array source, Int32 sourceKind, ASNA.QSys.Runtime.DateTimeDat
 <br>
 <br>
 
-### MoveToNumericArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToNumericArray([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEA. Moves source datetime array to destination fixed decimal array.
 
@@ -1018,7 +1018,7 @@ MoveToNumericArray(Array source, Int32 sourceKind, ASNA.QSys.Runtime.DateTimeDat
 | --- | --- | ---
 | [Array]($$TODO-Array.html) | source | Source datetime array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceKind | Datetime kind. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | sourceFormat | Datetime format. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | sourceFormat | Datetime format. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | target | Destination fixed decimal array. 
 | [Array]($$TODO-Array.html) | targetDig | Number of digits in target. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetDec | Number of decimals in target. 
@@ -1119,7 +1119,7 @@ MoveToNumericArrayWithPad(Array source, Int32 sourceDec, Int32 target, Array tar
 <br>
 <br>
 
-### MoveToNumericArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToNumericArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEA. Moves source datetime array to destination numeric array, padding the result.
 
@@ -1133,7 +1133,7 @@ MoveToNumericArrayWithPad(Array source, Int32 sourceKind, ASNA.QSys.Runtime.Date
 | --- | --- | ---
 | [Array]($$TODO-Array.html) | source | Source datetime array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceKind | Datetime kind. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | sourceFormat | Datetime format. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | sourceFormat | Datetime format. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | target | Destination numeric array. 
 | [Array]($$TODO-Array.html) | srcStartPos | Starting index of the source array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dstStartPos | Starting index of the destination array. 
@@ -1142,7 +1142,7 @@ MoveToNumericArrayWithPad(Array source, Int32 sourceKind, ASNA.QSys.Runtime.Date
 <br>
 <br>
 
-### MoveToNumericArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToNumericArrayWithPad([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEA. Moves source datetime array to destination fixed decimal array, padding the result.
 
@@ -1156,7 +1156,7 @@ MoveToNumericArrayWithPad(Array source, Int32 sourceKind, ASNA.QSys.Runtime.Date
 | --- | --- | ---
 | [Array]($$TODO-Array.html) | source | Source datetime array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceKind | Datetime kind. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | sourceFormat | Datetime format. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | sourceFormat | Datetime format. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | target | Destination fixed decimal array. 
 | [Array]($$TODO-Array.html) | targetDig | Number of digits in target. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetDec | Number of decimals in target. 

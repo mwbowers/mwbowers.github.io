@@ -33,9 +33,9 @@ Defines the options for a batch job.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobOutputQueue | Gets or sets the output queue for the batch job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | LDA | Gets or sets the initial value of the Local Data Area for the batch job. | 
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NameStoreConfigFiles | Gets or sets the configuration files used for the database names store used by the batch job. | 
-| [0, Culture=neutral, PublicKeyToken=ffa75b152e90f4ab]]]($$TODO-Nullable`1[[ASNA.QSys.Runtime.NameStoreOptions, ASNA.QSys.Runtime, Version=3.1.11.0, Culture=neutral, PublicKeyToken=ffa75b152e90f4ab]].html) | NameStoreOptions | Gets or sets the options for the database names store used by the batch job. | 
+| [0, Culture=neutral, PublicKeyToken=ffa75b152e90f4ab]]]($$TODO-Nullable`1[[ASNA.QSys.Runtime.NameStoreOptions, ASNA.QSys.Runtime, Version=4.0.15.0, Culture=neutral, PublicKeyToken=ffa75b152e90f4ab]].html) | NameStoreOptions | Gets or sets the options for the database names store used by the batch job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PsdsJobUser | Gets or sets the initial value of the user name reported in the PSDS for the batch job. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Switches | Gets or sets the initial value for the swithces of the batch job. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Switches | Gets or sets the initial value for the switches of the batch job. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | UserLibraryList | Gets or sets the user portion of the library list. The list is comma separated. | 
 
 <br>

@@ -25,18 +25,23 @@ A dictionary of the service programs used by this program.
 
 | Name |  Description 
 | --- | --- 
-| **ServiceProgramCollection**(  ) | Called from constructors in derived classes to initializes the common program class.
+| **ServiceProgramCollection**( [CommonProgram](/reference/asna-qsys-runtime-job-support/classes/common-program.html) ) | Called from constructors in derived classes to initializes the common program class.
 
 <br>
 
-### ServiceProgramCollection(  )
+### ServiceProgramCollection( [CommonProgram](/reference/asna-qsys-runtime-job-support/classes/common-program.html) )
 
 Called from constructors in derived classes to initializes the common program class.
 
 ```cs
-ServiceProgramCollection(  );
+ServiceProgramCollection( ASNA.QSys.Runtime.JobSupport.CommonProgram containerProgram );
 ```
 
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [CommonProgram](/reference/asna-qsys-runtime-job-support/classes/common-program.html) | containerProgram | If the program is used a module, this parameter is a reference to the program using it. Defaults to null. 
 
 <br>
 
@@ -67,6 +72,7 @@ ServiceProgramCollection(  );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear]($$TODO-System.Collections.Generic.Dictionary.html#clear)() | Removes all keys and values from the Dictionary<TKey,TValue>.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ContainsKey]($$TODO-System.Collections.Generic.Dictionary.html#containskey)([TKey]($$TODO-TKey.html)) | Determines whether the Dictionary<TKey,TValue> contains the specified key.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | true if the Dictionary<TKey,TValue> contains an element with the specified key; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ContainsValue]($$TODO-System.Collections.Generic.Dictionary.html#containsvalue)([TValue]($$TODO-TValue.html)) | Determines whether the Dictionary<TKey,TValue> contains a specific value.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DisposeModule](#disposemoduletype)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Removes a module from the active modules collection. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [EnsureCapacity]($$TODO-System.Collections.Generic.Dictionary.html#ensurecapacity)([TValue]($$TODO-TValue.html)) | Ensures that the dictionary can hold up to a specified number of entries without any further expansion of its backing storage.<br>(Inherited from [Dictionary]($$TODO-System.Collections.Generic.Dictionary.html)) | true if the Dictionary<TKey,TValue> contains an element with the specified value; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
@@ -107,6 +113,24 @@ Collects the service programs listed in the attributes of the class and makes th
 ```cs
 AddServiceProgramsFromAttributes();
 ```
+
+
+<br>
+<br>
+
+### DisposeModule([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type))
+
+Removes a module from the active modules collection.
+
+```cs
+DisposeModule(Type mType);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | mType | Type of the module to remove. 
 
 
 <br>

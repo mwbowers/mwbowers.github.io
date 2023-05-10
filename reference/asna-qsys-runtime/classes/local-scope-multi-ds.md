@@ -84,6 +84,7 @@ LocalScopeMultiDS( Int32 arrayLength );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Gets the contents of all occurrences of the multi data structure as a string. | A copy of the contents of the multi-occurrence data structure as a string.
+| [T]($$TODO-T.html) | [ToT](#tot)() | Get the current occurrence. | The current occurrence.
 
 <br>
 <br>
@@ -237,6 +238,24 @@ ToString();
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 A copy of the contents of the multi-occurrence data structure as a string.
+
+
+<br>
+<br>
+
+### ToT()
+
+Get the current occurrence.
+
+```cs
+ToT();
+```
+
+#### Returns
+
+[T]($$TODO-T.html)
+
+The current occurrence.
 
 
 <br>
