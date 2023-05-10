@@ -1574,11 +1574,11 @@ Reference:
           - title: DateTimeOps
             path: /reference/asna-qsys-runtime/classes/date-time-ops.html
           - title: DateTimeSeparator
+            path: /reference/asna-qsys-runtime/classes/date-time-separator.html
           - title: DateTimeTypeAttribute
             path: /reference/asna-qsys-runtime/classes/date-time-type-attribute.html
           - title: DbcsType
             path: /reference/asna-qsys-runtime/classes/dbcs-type.html
-            path: /reference/asna-qsys-runtime/classes/date-time-separator.html
           - title: DecimalMethods
             path: /reference/asna-qsys-runtime/classes/decimal-methods.html
           - title: DecimalKind
@@ -1908,8 +1908,6 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/i-fixed-array-in-ds.html
           - title: IFixedDateTime
             path: /reference/asna-qsys-runtime/classes/i-fixed-date-time.html
-          - title: IFixedDateTime
-            path: /reference/asna-qsys-runtime/classes/i-fixed-date-time.html
           - title: IFixedSizeType
             path: /reference/asna-qsys-runtime/classes/i-fixed-size-type.html
           - title: ILayout
@@ -1996,8 +1994,6 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/record-as-buffer.html
           - title: RecordFormatAttribute
             path: /reference/asna-qsys-runtime/classes/record-format-attribute.html
-          - title: RpgTypeExtensions
-            path: /reference/asna-qsys-runtime/classes/rpg-type-extensions.html
           - title: Return
             path: /reference/asna-qsys-runtime/classes/return.html
           - title: Routine
@@ -2081,16 +2077,8 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/inf-sr-exception.html
           - title: InvalidCodePageForVirtualTerminalException
             path: /reference/asna-qsys-runtime/exceptions/invalid-code-page-for-virtual-terminal-exception.html
-          - title: JobShutDownException
-            path: /reference/asna-qsys-runtime/exceptions/job-shut-down-exception.html
-          - title: EndOperationException
-            path: /reference/asna-qsys-runtime/exceptions/end-operation-exception.html
-          - title: EndRequestException
-            path: /reference/asna-qsys-runtime/exceptions/end-request-exception.html
           - title: InvalidDataAreaTypeException
             path: /reference/asna-qsys-runtime/exceptions/invalid-data-area-type-exception.html
-          - title: JobShutdownException
-            path: /reference/asna-qsys-runtime/exceptions/job-shut-down-exception.html
           - title: InvalidDSFieldsException
             path: /reference/asna-qsys-runtime/exceptions/invalid-ds-fields-exception.html
           - title: InvalidFileOperationException
@@ -2107,6 +2095,8 @@ Reference:
             path: /reference/asna-qsys-runtime/exceptions/invalid-source-length-exception.html
           - title: InvalidVirtualTerminalException
             path: /reference/asna-qsys-runtime/exceptions/invalid-virtual-terminal-exception.html
+          - title: JobShutDownException
+            path: /reference/asna-qsys-runtime/exceptions/job-shut-down-exception.html
           - title: LibraryListException
             path: /reference/asna-qsys-runtime/exceptions/library-list-exception.html
           - title: MissingFormatException
@@ -2279,8 +2269,6 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/service-program-collection.html
           - title: ServiceProgramUseAttribute
             path: /reference/asna-qsys-runtime-job-support/classes/service-program-use-attribute.html
-          - title: SystemValue
-            path: /reference/asna-qsys-runtime-job-support/classes/system-value.html
           - title: Spooler
             path: /reference/asna-qsys-runtime-job-support/classes/spooler.html
           - title: SpoolerControlCharacter
@@ -2291,6 +2279,8 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html
           - title: StringType
             path: /reference/asna-qsys-runtime-job-support/classes/string-type.html
+          - title: SystemValue
+            path: /reference/asna-qsys-runtime-job-support/classes/system-value.html
           - title: UserDefinedCommand
             path: /reference/asna-qsys-runtime-job-support/classes/user-defined-command.html
           - title: WebDevice
@@ -2545,6 +2535,8 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/activation-group-invalid-creator-exception.html
           - title: ActivationGroupInvalidProgramException
             path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/activation-group-invalid-program-exception.html
+          - title: ActivationGroupProgramConstructorException
+            path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/activation-group-program-constructor-exception.html
           - title: ExecuteStateException
             path: /reference/asna-qsys-runtime-job-support/exceptions-job-support/execute-state-exception.html
           - title: FileOverrideOptionMismatchException

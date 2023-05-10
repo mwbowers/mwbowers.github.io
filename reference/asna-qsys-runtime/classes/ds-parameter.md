@@ -26,7 +26,7 @@ Describes the data structure parameters sent into an IBMi program call.
 | Name |  Description 
 | --- | --- 
 | [DSParameter](#dsparameterstring-datadirection-idscallparm)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi data structure parameter. 
-| [DSParameter](#dsparameterstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | /// Create a DSParm object to represent an IBMi data structure array parameter. 
+| [DSParameter](#dsparameterstring-datadirection-idscallparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [IDSCallParm[]](/reference/asna-qsys-runtime/classes/ids-call-parm.html)) | Create a DSParm object to represent an IBMi data structure array parameter. 
 
 <br>
 
