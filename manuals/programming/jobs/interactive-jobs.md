@@ -9,3 +9,5 @@ Monarch Interactive jobs consist of one or more class libraries and are executed
 An interactive job is created when a new ASP.NET Core Session is started.
 
 Additional Job concepts can be found [here](/concepts/architecture/application-architecture.html#application-architectures).
+
+Read how to [configure the Website](manuals/configuration/configure-expo-website.html).

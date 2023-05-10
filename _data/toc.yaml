@@ -307,6 +307,8 @@ Manuals:
         path: /manuals/configuration/expo-client-side-library.html
       - title: Using Fake Data
         path: /manuals/configuration/using-fake-data.html        
+    - title: Batch Processor Configuration
+      path: /manuals/configuration/configure-batch-processor.html
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Enhancing the User Interface

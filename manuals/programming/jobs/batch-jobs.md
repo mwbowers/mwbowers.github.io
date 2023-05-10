@@ -106,19 +106,23 @@ There are two methods to start a Batch Job immediately as shown below:
 
 #### In Process
 
-When a Job is started in process, a separate .NET thread is created within the current process and the new batch job runs in that separate thread. 
+When a Job is started in process via the `BatchJobProfile.StartInProcess()` method, a separate .NET thread is created within the current process and the new batch job runs in that separate thread. 
 
 ![Starting Job Immediately in Process](images/starting-job-immediately-in-process.jpg){:width="65%"}
 
 _Starting Job Immediately in Process_
 
+<a name="{out-of-process}"></a>
+
 #### Out of Process
 
-If the Job is started out of process, a new OS process is created and the Batch Job runs in the new process.
+If the Job is started out of process via the `BatchJobProfile.StartOutOfProcess()` method, a new OS process is created and the Batch Job runs in the new process.
 
 ![Starting Job Immediately out of Process](images/starting-job-immediately-out-of-process.jpg){:width="65%"}
 
 _Starting Job Immediately out of Process_
+
+The entry point for the new process is the [ASNA.QSys.MonaBatchHost](#monabatchhost) executable.
 
 ## Monarch Batch Subsystem (MBS)
 
@@ -154,7 +158,7 @@ Here is a shortened example of a JQE file.
   "DLORoot": "\\QDLS",
   "MonarchMessageFileFolder": "C:\\Demos\\CAP\\CustApp\\MessageFiles\\",
   "MonaBatchHostFolder": "C:\\MOM",
-  "AssemblyLocation": "C:\\Demos\\CAP\\CustApp\\Acme.CUSTCRTS.dll",
+  "AssemblyListProfile": "REPORTS",
   "ProgramName": "Acme.CUSTCRTS",
   "ParmList": [
     "000068100",
@@ -172,7 +176,7 @@ Here is a shortened example of a JQE file.
 
 ### BatchDispatch
 
-The MBS program *ASNA.QSys.BatchDispatch.exe* (BatchDispatch) is a console program that ‘watches’ a job queue’s windows folder processing the entries found in it. The folder works as a Queue for Jobs. As the entries of the queue are being processed, BatchDispatch creates a process for the entry and invokes the program, it then waits for the process to complete.  BatchDispatch runs one job at a time.
+The MBS program `ASNA.QSys.BatchDispatch.exe` (BatchDispatch) is a console program that ‘watches’ a job queue’s windows folder processing the entries found in it. The folder works as a Queue for Jobs. As the entries of the queue are being processed, BatchDispatch creates a process for the entry and invokes the program, it then waits for the process to complete.  The entry point for the new process is the [ASNA.QSys.MonaBatchHost](#monabatchhost) executable. BatchDispatch runs one job at a time.
 
 ![Dispatching Job from a Queue](images/dispatching-job-from-queue.jpg){:width="75%"}
 
@@ -208,6 +212,18 @@ BatchDispatch:
 6/24/2022 5:05:16 PM Starting Program: 'Acme.CUSTCRTS' in Assembly 'C:\Source\Demos\CAP\CustApp_20220406\MonarchExecutable\CUSTCRTS_CS\bin\Debug\net5.0\Acme.CUSTCRTS.dll'
 6/24/2022 5:07:37 PM Time Elapsed: 00:02:20.69 Exit Code: 0x0
 ```
+Read how to [configure ASNA.QSys.BatchDispatch](/manuals/configuration/configure-batch-processor.html).
+
+
+### MonaBatchHost
+
+The console program `ASNA.QSys.MonaBatchHost.exe` (MonaBatchHost) serves as the entry point for jobs running on their own processes; these jobs get initiated immediately via the [BatchJobProfile.StartOutOfProcess()](#out-of-process) method or get placed in a queue via the [BatchJobProfile.Submit()](#submitting-the-job-to-a-queue) method.
+
+The source code for ASNA.QSys.MonaBatchHost is in GitHub in the MonaServer repositiory.
+
+ > ASNA.QSys.MonaBatchHost [Source](https://github.com/asnaqsys/ASNA.QSys.MonaServer/tree/main/src/ASNA.QSys.MonaBatchHost) is in the MonaServer Repository: [https://github.com/asnaqsys/ASNA.QSys.MonaServer](https://github.com/asnaqsys/ASNA.QSys.MonaServer)
+
+Read how to [configure ASNA.QSys.MonaBatchHost](/manuals/configuration/configure-batch-processor.html).
 
 ----------
 
