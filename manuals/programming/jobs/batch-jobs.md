@@ -140,9 +140,9 @@ The advantage of this naming convention is the ease in which the state of a job 
 The JQE file is a JSON document with the job attributes, for example:
  - program Name – fully qualified migrated program's name
  - parameters – for the program
- - AssemblyLocation - path to the DLL containing the migrated program
+ - AssemblyListProfile - name of the profile of the assembly list
  - libraryList – initial library list
- - outputQueue – default output Queue
+ - outputQueue – default output queue
  - switches – the 8 job switches
 
 
@@ -223,7 +223,7 @@ The source code for ASNA.QSys.MonaBatchHost is in GitHub in the MonaServer repos
 
  > ASNA.QSys.MonaBatchHost [Source](https://github.com/asnaqsys/ASNA.QSys.MonaServer/tree/main/src/ASNA.QSys.MonaBatchHost) is in the MonaServer Repository: [https://github.com/asnaqsys/ASNA.QSys.MonaServer](https://github.com/asnaqsys/ASNA.QSys.MonaServer)
 
-Read how to [configure ASNA.QSys.MonaBatchHost](/manuals/configuration/configure-batch-processor.html).
+Read how to [configure ASNA.QSys.MonaBatchHost](/manuals/configuration/configure-batch-processor.html) to set the dictionary of assembly lists. The JQE property AssemblyListProfile is used to select the AssemblyList for the dictionary.
 
 ----------
 
