@@ -2,9 +2,9 @@
 title: ASNA - Batch Dispatch
 ---
 
-Monarch provides the program `ASNA.QSys.BatchDispatch.exe` (*BatchDispatch*) to assist in the processing of jobs scheduled to run in batch. It also provides `ASNA.QSys.MonaBatchHost.exe` (*MonaBatchHost*).
+Monarch provides the program `ASNA.QSys.BatchDispatch.exe` (*BatchDispatch*) to assist in the processing of jobs scheduled to run in batch. It also provides `ASNA.QSys.BatchHost.exe` (*BatchHost*).
 
-*BatchDispatch* is a console program that ‘watches’ a job queue and creates a system process to run the program stated in the job queue entry.  The new process uses the console program *MonaBatchHost* as the the entry point for the new job.
+*BatchDispatch* is a console program that ‘watches’ a job queue and creates a system process to run the program stated in the job queue entry.  The new process uses the console program *BatchHost* as the the entry point for the new job.
 
 Read about [Batch Jobs](/manuals/programming/jobs/batch-jobs.html).
 

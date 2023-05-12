@@ -5,10 +5,10 @@ title: Configure Batch Processor
 
 Monarch provides these two programs to assist in the processing of Batch Jobs:
  - `ASNA.QSys.BatchDispatch.exe` (*BatchDispatch*)
- - `ASNA.QSys.MonaBatchHost.exe` (*MonaBatchHost*)
+ - `ASNA.QSys.BatchHost.exe` (*BatchHost*)
 
 
-*BatchDispatch* is a console program that ‘watches’ a job queue and creates a system process to run the program stated in the job queue entry.  The new process uses the console program *MonaBatchHost* as the the entry point for the new job.
+*BatchDispatch* is a console program that ‘watches’ a job queue and creates a system process to run the program stated in the job queue entry.  The new process uses the console program *BatchHost* as the the entry point for the new job.
 
 Read more about [Batch Jobs](/manuals/programming/jobs/batch-jobs.html).
 
@@ -17,9 +17,9 @@ Read more about [Batch Jobs](/manuals/programming/jobs/batch-jobs.html).
 See [Batch Dispatch](/manuals/mom/batch-dispatch.html).
 
 
-## Configuring MonaBatchHost
+## Configuring BatchHost
 
-The majority of the configuration parameters of the Batch Job comes directly from the job that submitted or started it.  However some of the characteristics of the process hosting the batch job can be, or should be, estblished directly on MonaBatchHost. The configuration of MonaBatchHost is done via an `appsettings.json` file stored in the working directory of the process.
+The majority of the configuration parameters of the Batch Job comes directly from the job that submitted or started it.  However some of the characteristics of the process hosting the batch job can be, or should be, estblished directly on BatchHost. The configuration of BatchHost is done via an `appsettings.json` file stored in the working directory of the process.
 
 ## `appsettings.json` File
 
