@@ -45,6 +45,8 @@ Concepts:
       path: /concepts/program-structure/qsys-program.html
     - title: CL Programs
       path: /concepts/program-structure/qsys-cl-program.html
+    - title: Migrated Program Source Files
+      path: /concepts/program-structure/migrated-program-source-files.html
     - sectiontitle: RPG Language - Files
       sectionpath: /concepts/program-structure/rpg-language-files.html
       section:
