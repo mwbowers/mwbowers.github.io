@@ -46,7 +46,7 @@ When looking at a Monarch application's architecture the first thing to note is 
 For this discussion, the database server is assumed to be running on its own server, however, it is entirely possible to run it on any of the application or web servers.
 
 ### Batch Job Architecture
-Batch jobs execute in their own .NET Process as console programs or in a dedicated thread alongside the the thread of the job that started it.
+[Batch jobs](/manuals/programming/jobs/batch-jobs.html) execute in their own .NET Process as console programs or in a dedicated thread alongside the the thread of the job that started it.
 
 ![Batch Job](images/batch-job-architecture.svg)
 

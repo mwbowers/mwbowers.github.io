@@ -23,7 +23,7 @@ There are three strategies for executing migrated batch programs:
 2. Start the Batch Job immediately either in a separate .NET process or in a separate thread of the same process as the Job that is starting the new Batch job.
 3. Use a Third Party Scheduler. 
 
-The first two strategies are supported directly by Monarch Base. The migration tools give preference to the strategy utilizing a job queue, but it is easy to convert the migrated code to bypass the job queue and start the new Batch Job immediately.
+The first two strategies are supported directly by Monarch Base. The migration tools give preference to the strategy of strarting the new batch job immediately, but it is easy to convert the migrated code to utilze a job queue.
 
 It is also possible to submit the jobs to a third-party scheduler if it provides an API with a good functionality set. The work involved in adapting the migrated code to utilizing the third-party scheduler is dependent on the scheduler's capabilities, this work may include creating a Console program to launch the initial Migrated program.
 
