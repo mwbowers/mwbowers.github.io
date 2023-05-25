@@ -8,7 +8,7 @@ Monarch provides the program `ASNA.QSys.BatchDispatch.exe` (*BatchDispatch*) to 
 
 Read about [Batch Jobs](/manuals/programming/jobs/batch-jobs.html).
 
-# BatchDispatch Command Line Parameters
+## BatchDispatch Command Line Parameters
 Start a Batch processor to execute programs on a single job queue. Command line arguments are given when invoking BatchDispatch to configure it.
 
 These are options that can be passed in the command line:
@@ -24,3 +24,14 @@ C:> C:/MOM/ASNA.QSys.BatchDispatch.exe /q=NIGHTLY -p="C:/MonarchQueues/JobQueues
 ```
 
 will start BatchDispatch processing entries with the extension of `.jqe` found in the job queue `NIGHTLY` which is located in folder `C:/MonarchQueues/JobQueues/NIGHTLY`, BatchDispatch will not be verbose but run silentely.
+
+## appsettings.json Configuration
+It is necessary to provide BatchDispatch with the directory path where the ASNA.QSys.BatchHost.exe is located, this folder path is set in the `appsettings.json` file as shown below:
+
+```JSON
+{
+  "BatchConfig": {
+    "BatchHostPath": "C:/Path/To/The/ASNA.QSys.BatchHost/Folder/"
+  }
+}
+```

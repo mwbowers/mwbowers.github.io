@@ -23,15 +23,48 @@ The majority of the configuration parameters of the Batch Job comes directly fro
 
 ## `appsettings.json` File
 
+### MonaJobConfig Section
+Starting with version `4.0.22` of `ASNA.QSys.Runtime`, certain attributes of batch jobs can be described in the `MonaJobConfig` section of the BatchHost `appsettings.json`. The main aspects that can be established in the `MonaJobConfig` section relates to directory locations for queues, the IFS and message files.
+
+Here is an example of the `MonaJobConfig` section:
+```json
+{
+  "MonaJobConfig": {
+    "OutputQueueRootPath": "C:/MonarchQueues/OutputQueues",
+    "DefaultOutputQueue": "QPRINT",
+    "IFSRootPath": "//MyServer/MyShare",
+    "DlsRootName": "QDLS",
+    "JobQueueBaseQueuesPath": "C:/MonarchQueues/JobQueues",
+    "MessageFilePath": "./MessageFiles"
+  },
+  . . .
+}
+```
+
+These are the `MonaJobConfig` values and their meaning:
+
+| Type | Name | Description 
+| ---  | ---  | --- 
+| String | DefaultOutputQueue | The name of the default Output Queue. Defaults to "QPRINT" | 
+| String | DlsRootName | The name of the directory, located within the IFSRootPath, where the Document Library Objects are located. Defaults to "QDLS" | 
+| String | IFSRootPath | The directory path where the IFS objects are located in the system. | 
+| String | JobQueueBaseQueuesPath | The directory path where the Job Queues are located in the system. | 
+| String | MessageFilePath | The directory path where the Message Files are located in the system. | 
+| String | OutputQueueRootPath | The directory path where the Output Queues are located in the system. | 
+
+If the `appsettings.json` file does not have these values set, then the batch job will inherit those found in the parent job. 
+
+A similar `MonaJobConfig` section can be [set for websites](/manuals/configuration/configure-expo-website.html#monajobconfig).
 
 ### AssemblyListProfiles Section
 
-The appsettings.json file can have a section called AssemblyListProfiles. The assembly list profiles section is a dictionary of [Assembly Lists](/manuals/programming/programs-and-procedures/call-program.html#namespace-list-and-assembly-list). Each list may have one or more folder or file paths pointing to the location of the .NET Assemblies containing  the programs used by the batch job.  When a batch job is being established, the parent job may set the Profile that should be used when the child batch job is started, if a profile is not set then the profile from the parent job is inherited and if it does not have one either, then the actual assembly list of the (ASP.NET Core or Batch) process is used.
+The `appsettings.json` file can also have a section called `AssemblyListProfiles`. The assembly list profiles section is a dictionary of [Assembly Lists](/manuals/programming/programs-and-procedures/call-program.html#namespace-list-and-assembly-list). Each list may have one or more directory or file paths pointing to the location of the .NET Assemblies containing  the programs used by the batch job.  When a batch job is being established, the parent job may set the Profile that should be used when the child batch job is started by providing a value to the [`MatchOptions.AssemblyListProfile`](reference/asna-qsys-runtime-job-support/classes/batch-options.html#properties) property. If a profile is not set then the profile from the parent job is inherited and if it does not have one either, then the actual assembly list of the (ASP.NET Core or Batch) process is used.
 
 The example below shows two profiles, `*Default` and `REPORTS`, each with different AssemblyList.
 
 ```json
 {
+  . . . 
   "AssemblyListProfiles": {
     "*Default": [
       "C:/SomeFolder/SubA/Acme.Lib.Utils.dll",

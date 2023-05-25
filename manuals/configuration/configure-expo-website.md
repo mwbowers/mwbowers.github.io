@@ -9,7 +9,7 @@ ASP.NET Core websites can have [many sources](https://docs.microsoft.com/en-us/a
 
 Monarch produced sites use the `appsettings.json` file to control some of the specific configuration values affecting the behavior of the ASNA.QSys.Expo libraries.
 
-While this document will refer to these configuration values in the `appseting.json` file, other configuration sources may be used as described in the [ASP.NET Core configuration documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration).
+While this document will refer to these configuration values in the `appseting.json` file, other configuration sources may be used as described in the [ASP.NET Core configuration documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration), with the notable exception of the `MonaJobConfig` [section](#monajobconfig).
 
 
 ## `appsettings.json` File
@@ -22,6 +22,7 @@ The following shows the typical `appsettings.json`  file produced by Monarch Coc
             "Default": "Warning"
         }
     },
+    "AllowedHosts": "*",
     "MonaServer": {
         "HostName": "*InProcess",
         "Port": 5555,
@@ -32,7 +33,15 @@ The following shows the typical `appsettings.json`  file produced by Monarch Coc
             ".\\binLogic\\Acme.PMP.CUST.dll"
         ]
     },
-    "AllowedHosts": "*",
+    "MonaJobConfig": {
+        "OutputQueueRootPath": "C:/MonarchQueues/OutputQueues",
+        "DefaultOutputQueue": "QPRINT",
+        "IFSRootPath": "//MyServer/MyShare",
+        "DlsRootName": "QDLS",
+        "JobQueueBaseQueuesPath": "C:/MonarchQueues/JobQueues",
+        "MessageFilePath": "../../../../MessageFiles",
+        "BatchHostPath": "C:/Path/To/The/ASNA.QSys.BatchHost/Folder/"
+    },
     "JobDescriptor": {
         "Class": "Acme.ERCAP.RUNCI_Job.MyJob",
         "Name": "MyJobName"
@@ -46,8 +55,9 @@ The following shows the typical `appsettings.json`  file produced by Monarch Coc
 ```
 The following sections describe the Expo related values.
  - `MonaServer`
+ - `MonaJobConfig`
  - `JobDescriptor`
- - `DisplayPages`
+ - `DisplayPages` 
 
 ### MonaServer
 The Monarch Server is responsible for loading and executing the migrated programs. The MonaServer section describes configuration options for executing
@@ -70,6 +80,43 @@ The HostName value contains the location of the Server, this value can be either
 When the Hostname is `*InProcess`, the Website will start the Monarch Server as part of website initiation. See the `Startup.cs` class.  
 
 When the Monarch Server runs out of process, it becomes the responsibility of the Operator to ensure that the Server is started prior to the Website initiation.
+
+### MonaJobConfig
+Starting with version `4.0.22` of `ASNA.QSys.Runtime`, certain attributes of batch jobs can be described in the `MonaJobConfig` section of the website's `appsettings.json`. The main aspects that can be established in the `MonaJobConfig` section relates to directory locations for queues, the IFS and message files.
+
+When the Monarch Server is running in process, it reads its settings from the `MonaJobConfig` found in the `appsettings.json` file of the web site. 
+
+> The MonaJobConfig configuration must be given in the appsettings.json file, other ASP.NET Core configurations methods (like environmental variables) are not supported.
+
+Here is an example of the `MonaJobConfig` section:
+```json
+{
+  . . .
+    "MonaJobConfig": {
+        "OutputQueueRootPath": "C:/MonarchQueues/OutputQueues",
+        "DefaultOutputQueue": "QPRINT",
+        "IFSRootPath": "//MyServer/MyShare",
+        "DlsRootName": "QDLS",
+        "JobQueueBaseQueuesPath": "C:/MonarchQueues/JobQueues",
+        "MessageFilePath": "C:/Path/To/The/MessageFiles",
+        "BatchHostPath": "C:/Path/To/The/ASNA.QSys.BatchHost/Folder"
+    }
+  . . .
+}
+```
+
+These are the `MonaJobConfig` values and their meaning:
+
+| Type | Name | Description 
+| ---  | ---  | --- 
+| String | BatchHostPath | The directory path where the ASNA.QSys.BatchHost.exe is located. | 
+| String | DefaultOutputQueue | The name of the default Output Queue. Defaults to "QPRINT" | 
+| String | DlsRootName | The name of the directory, located within the IFSRootPath, where the Document Library Objects are located. Defaults to "QDLS" | 
+| String | IFSRootPath | The directory path where the IFS objects are located in the system. | 
+| String | JobQueueBaseQueuesPath | The directory path where the Job Queues are located in the system. | 
+| String | MessageFilePath | The directory path where the Message Files are located in the system. | 
+| String | OutputQueueRootPath | The directory path where the Output Queues are located in the system. | 
+
 
 ### JobDescriptor
 The JobDescriptor section provides the parameters to the location of the entry point into the application.  It is composed of the valuing values:
