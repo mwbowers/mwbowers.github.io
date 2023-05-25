@@ -37,7 +37,7 @@ Setting file: *CustomerApp*`Site\libman.json`:
 
 > "jsdelivr" is the service ASNA migrated applications use during Development, to [restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore) files from the public [ASNA github public location](https://github.com/asnaqsys/asna-qsys-expo-web-content) to the local Application's `wwwroot` folder.
 
-Executing Visual Studio 2019[^1]'s "Restore Client-Side Libraries" command, will refresh the QSys Expo Web Content to the released version-level as indicated (in this case to Version 2.0.0 according to the configuration in the [JSON](https://en.wikipedia.org/wiki/JSON) file).
+Executing Visual Studio 2022[^1]'s "Restore Client-Side Libraries" command, will refresh the QSys Expo Web Content to the released version-level as indicated (in this case to Version 2.0.0 according to the configuration in the [JSON](https://en.wikipedia.org/wiki/JSON) file).
 
 > Note: The Visual Studio feature is available by calling the *context* menu option when the `libman.json` file is selected in the Visual Studio Explorer window.
 
@@ -128,7 +128,7 @@ This C# code is telling the page to set the "Title" item in the ViewData diction
 
 For this example, the concatenated string set to the Browser's Page title would be: **MYDSPFNAME - MyAppSite**. This may be useful for Tech Support, to quickly identify which Display Page is executing in an Application.[^5]  
 
-The two last `<head>` are *link* meta elements:
+The two last `<head>` elements are *link* meta elements:
 
 ```html
   <link rel="stylesheet" href="~/lib/asna-expo/css/expo.css" />
@@ -140,7 +140,7 @@ Each refers to an external resource[^6], which will will trigger a new `HTTP` re
 
 The first one deserves a particular importance, because it loads the styles used by [QSys Expo Client Library](/concepts/user-interface/qsys-expo-client-library).
 
-The second one refers to *user* defined Application styles.
+The second one refers to *user* defined Application styles.  This site.css can be used to [override the library styles](#). 
 
 
 **The [body](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body) Element**.
@@ -175,10 +175,17 @@ It first *imports* the object `Page` from the QSys Expo Client Library and immed
 The last C# code `@RenderSection("Scripts", required: false)` calls a method to generate the script in case a particular page has a "Script" section defined. By default there will not be any Display Page with *user-defined* scripting.
 
 > &#128161; The order of the code in <body> element is important. Do not alter it (unless you have a very good reason to do it).
-<br>
+
+## Overriding the Expo Library CSS Styles
+
+The definition of the Expo styles are in the file `./wwwroot/lib/asna-expo/css/expo.css`.  Migrated applications also include an empty file at `./wwwrott/css/site.css`.  As mentioned above, the `_Layout.cshtml` file used by Razor Pages (located at ./Pages/Shared/_Layout.cshtml) contains two `<link>` tags, with `expo.css` first followed by `site.css`.  Any style in site.css will override the classes in expo.css.
+
 <br>
 
-[^1]: At the time of the writing of this documentation "2019" was the version that supported "Client-Side" Library management feature.
+-----
+
+
+[^1]: At the time of the writing of this documentation versions "2019 " and "2022" support this feature.  "2019" was the first version that supported "Client-Side" Library management feature.
 [^2]: At the time of the writing of this documentation. There is no guarantee that they will appear in the future. Nor are they essential for the execution of Monarch migrated Applications.
 [^3]: On large Websites, partitioned into *Areas*, it is possible to have different Layouts for each Area.
 [^4]: The content may be a little different, depending of the Release.
