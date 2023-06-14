@@ -288,6 +288,8 @@ Manuals:
       path: /manuals/migrations/rpg-cycle.html
     - sectiontitle: Code Migration
       section:
+      - title: Migrating Indicators
+        path: /manuals/migrations/indicators.html
       - title: Field Name Special Characters Translation
         path: /manuals/migrations/translation-field-special-characters.html
       - title: Decimal Numbers Containing Dates
