@@ -4,11 +4,13 @@ title: Call Program
 
 Execution interaction between programs is achieved with the operations CALL and RETURN. At any point a program can transfer control to another program by calling it and any point the called program can return to the calling program yielding control back to it.
 
+A program is a class that extend the Monarch Base class ASNA.QSys.Runtime.JobSupport.Program.
+
 ## CALLD
-To call a program use the `CallD` method of the DynamicCaller class. Monarch defines a global field in each class called `DynamicCaller_` that is used throughout the class to make program calls.
+To call a program use the `CallD` method of the DynamicCaller class. Monarch migrated program have a global field called `_DynamicCaller` that is used throughout the class to make program calls.
 
 ```cs
-    DynamicCaller_.CallD("Acme.ERCAP.ORDHINQ", out _LR, ref ORDCUST);
+    _DynamicCaller.CallD("Acme.ERCAP.ORDHINQ", out _LR, ref ORDCUST);
 ```
 The `CallD` method takes a minimum of two parameters: a string with the name of the program to call and an Indicator out parameter set to '1' indicating whether the called program was deactivated. After these two initial parameters, ```CallD``` can take any additional parameters needed by the called program. These parameters can be passed by reference or by value.
 
@@ -17,7 +19,7 @@ In the *IBMi*, programs (as well as all other objects) reside in libraries.  Two
 
 To differentiate among various versions of a program, the Monarch runtime relies on the proper use of **.NET namespaces** as a qualifier. For example, a program named **CUSTINQ** on the *IBMi* may become **ACME.Accounting.CUSTINQ**, while a different version of **CUSTINQ** may become **ACME.CustSvc.CUSTINQ**.  A specific version of a program can be called by providing its fully qualified name to the `CallD` method. 
 
-### Namespace List and Assembly List
+### Namespace List
 
 It is also possible to call a program by providing its unqualified name and employing some form of a list to have the system locate the proper version of the program.
 
@@ -28,18 +30,54 @@ the same unqualified program may end up invoking different versions of the progr
 
 In .NET, the Monarch runtime supports a similar mechanism. Calling one version or another can be controlled with the use 
 of a ***Namespace List***. The namespace list is a property of the **Job** that is controlling
-a particular execution instance of the application;
-this property is called *NamespaceList*. If an application relies on namespaces,
-this list can be set up during **Job** initialization. In the prior example, the actual `CallD` call
-may have only **CUSTINQ** as parameter, and rely on setting the proper namespace in the **Job**
-via `NamespaceList.Add(...)`. For example, for user *A* it may be set as `NamespaceList.Add("ACME.Accounting")`, while
-for user *C* it may be set as `NamespaceList.Add("ACME.CustSvc")`. You can add as many namespaces as you
-need; the Monarch runtime will try them sequentially to match the fully qualified program name (*i.e. the namespace
-plus the program name*) to a class in an assembly. But which assembly and where to find it? 
+a particular execution instance of the application; this property is called *NamespaceList*. If an application relies on namespaces for program calls,
+this list can be set up during **Job** initialization or at any time during the execution of the Job.
 
-The answer is the ***Assembly List***. The assembly list is the list of all assemblies that compose
-the application, and it is part of the configuration settings of the *MonaServer* section of the website's
-*appsettings.json* file. This list can contain paths to individual assemblies, or paths with wildcard
+In the prior example, the actual `CallD` call may have only **CUSTINQ** as its parameter, and rely on setting the proper namespace in the **Job**
+via `NamespaceList.Add(...)`. For example, for user *A* it may be set as `NamespaceList.Add("ACME.Accounting")`, while
+for user *C* it may be set as `NamespaceList.Add("ACME.CustSvc")`. User *A* would end up calling `ACME.Accounting.CUSTINQ` and program *C* would call `ACME.CustSvc.CUSTINQ` You can add as many namespaces as you need; the Monarch runtime will try them sequentially to match the fully qualified program name (*i.e. the namespace
+plus the program name*) to a class in an assembly.
+
+But which assembly and where to find it? The answer is the [***Assembly List***](#assembly-list).
+
+`CallD` accepts program names that may be fully qualified, qualified with only a part of the namespace or completly unqualified.  For the examples in the next sections, assume a Job's `NamespaceList` is set as follows:
+ 1. ACME.Accounting
+ 2. ACME.ERP
+ 3. ACME
+
+#### Using an unqualified name:
+An unqualified `CallD` program call uses a name that contains no periods. Execution of the following line
+
+> `CallD ("AR0004")`
+
+would cause these names to be tried out until a program class is found with that name:
+ 1. ACME.Accounting.AR0004
+ 2. ACME.ERP.AR0004
+ 3. ACME.AR0004
+
+#### Using an partially qualified name:
+A partially qualified `CallD` program call uses a name that contains some periods. Execution of the following line
+
+> `CallD ("Patch.AR0004")`
+
+would cause these names to be tried out until a program class is found with that name:
+ 1. ACME.Accounting.Patch.AR0004
+ 2. ACME.ERP.Patch.AR0004
+ 3. ACME.Patch.AR0004
+
+#### Using an fully qualified name:
+It is also possible to bypass the use of the Namespace list facility all together by providing a fully qualified name to `CallD`. 
+The fully qualified name has to be prefixed with two colons, this is similar to the use of `global::` in C#.
+For example if a program wanted to call exactly program `ACME.ERP.AR0004`, regardless of the Namespace list for the Job, 
+it would use a program call like this one:
+
+> `CallD ("::ACME.ERP.AR0004")`
+
+
+### Assembly List
+
+The assembly list is the list of all assemblies that compose the application, it is part of the configuration settings 
+of the *MonaServer* section of the website's *appsettings.json* file. This list can contain paths to individual assemblies, or paths with wildcard
 [patterns](https://learn.microsoft.com/en-us/dotnet/core/extensions/file-globbing#pattern-formats) that match
 mutiple assemblies. For example:
 
@@ -57,7 +95,10 @@ mutiple assemblies. For example:
 ```
 
 Classes in assemblies can be organized in any way that is convenient as long as **each class in the application
-has a unique fully qualified name**.
+has a unique fully qualified name**.  It is also important to ensure that an assembly is listed only once avoiding 
+the scenario where an assembly is defined twice in the list by having to DLLs with different **file names** 
+(e.g.: MyAsembly.dll and MyAssembly.backup.dll) but with the same **assembly name** inside (i.e.: MyAssembly).
+
 
 ## RETURN
 The return operation is implemented as a long jump using the exception catching .NET mechanism.  When a program wants to return it simple throws the exception ```ASNA.QSys.Runtime```.
