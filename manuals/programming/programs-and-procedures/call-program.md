@@ -7,12 +7,12 @@ Execution interaction between programs is achieved with the operations CALL and 
 A program is a class that extend the Monarch Base class ASNA.QSys.Runtime.JobSupport.Program.
 
 ## CALLD
-To call a program use the `CallD` method of the DynamicCaller class. Monarch migrated program have a global field called `_DynamicCaller` that is used throughout the class to make program calls.
+Monarch migrated programs have a global field called `_DynamicCaller` that is used throughout the class to make program calls. To call a program use the `CallD` method of the DynamicCaller class.
 
 ```cs
     _DynamicCaller.CallD("Acme.ERCAP.ORDHINQ", out _LR, ref ORDCUST);
 ```
-The `CallD` method takes a minimum of two parameters: a string with the name of the program to call and an Indicator out parameter set to '1' indicating whether the called program was deactivated. After these two initial parameters, ```CallD``` can take any additional parameters needed by the called program. These parameters can be passed by reference or by value.
+The `CallD` method takes a minimum of two parameters: a string with the name of the program to call and an Indicator out-parameter which indicates whether the called program was deactivated. After these two initial parameters, ```CallD``` can take any additional parameters needed by the called program. These parameters can be passed by reference or by value.
 
 ### Multiple Versions of a Program
 In the *IBMi*, programs (as well as all other objects) reside in libraries.  Two different versions of a program can have the same name as long as they are kept in different libraries.  When a program is called its location can be provided by the calling program by qualifying the name with the name of the library where it resides, i.e.: MyLibrary/MyProgram.
@@ -41,9 +41,15 @@ plus the program name*) to a class in an assembly.
 But which assembly and where to find it? The answer is the [***Assembly List***](#assembly-list).
 
 `CallD` accepts program names that may be fully qualified, qualified with only a part of the namespace or completly unqualified.  For the examples in the next sections, assume a Job's `NamespaceList` is set as follows:
- 1. ACME.Accounting
- 2. ACME.ERP
- 3. ACME
+
+ In addition to the NamespaceList provided by the user, there is an implied *empty* Namespace as the first element of the list, so the actual list looks like this:
+ 
+ 0. `String.Empty`
+ 1. "ACME.Accounting"
+ 2. "ACME.ERP"
+ 3. "ACME"
+
+ This first *empty* Namespace ensures that the actual program class name passed to `CallD` is used as-is and, only if not found, then the attempt to find a qualifed name is attempte.
 
 #### Using an unqualified name:
 An unqualified `CallD` program call uses a name that contains no periods. Execution of the following line
@@ -51,9 +57,10 @@ An unqualified `CallD` program call uses a name that contains no periods. Execut
 > `CallD ("AR0004")`
 
 would cause these names to be tried out until a program class is found with that name:
- 1. ACME.Accounting.AR0004
- 2. ACME.ERP.AR0004
- 3. ACME.AR0004
+ 1. AR0004
+ 2. ACME.Accounting.AR0004
+ 3. ACME.ERP.AR0004
+ 4. ACME.AR0004
 
 #### Using an partially qualified name:
 A partially qualified `CallD` program call uses a name that contains some periods. Execution of the following line
@@ -61,17 +68,20 @@ A partially qualified `CallD` program call uses a name that contains some period
 > `CallD ("Patch.AR0004")`
 
 would cause these names to be tried out until a program class is found with that name:
- 1. ACME.Accounting.Patch.AR0004
- 2. ACME.ERP.Patch.AR0004
- 3. ACME.Patch.AR0004
+ 1. Patch.AR0004
+ 2. ACME.Accounting.Patch.AR0004
+ 3. ACME.ERP.Patch.AR0004
+ 4. ACME.Patch.AR0004
 
 #### Using an fully qualified name:
 It is also possible to bypass the use of the Namespace list facility all together by providing a fully qualified name to `CallD`. 
 The fully qualified name has to be prefixed with two colons, this is similar to the use of `global::` in C#.
-For example if a program wanted to call exactly program `ACME.ERP.AR0004`, regardless of the Namespace list for the Job, 
+For example if a program wanted to call exactly program `ACME.ERP.AR0004`, regardless of the Namespace list, 
 it would use a program call like this one:
 
 > `CallD ("::ACME.ERP.AR0004")`
+
+If there is no class named exactly `ACME.ERP.AR0004`, then an error would be given.
 
 
 ### Assembly List
