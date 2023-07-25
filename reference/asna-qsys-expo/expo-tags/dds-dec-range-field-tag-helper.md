@@ -14,13 +14,14 @@ Defines a numeric input-capable field that can be expressed as a finite range. T
 
 It is recommended to specify the **Min** (minimum) and **Max** (maximum) values to properly define the valid range.
 
-Whenever possible, it is also recommended to use a [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) attribute to validate the value, before the page can be submitted to the server. Foe example, for a field used as a four digit **PIN** (zero decimals), a pattern such as:
+Whenever possible, it is also recommended to use a [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern) attribute to validate the value, before the page can be submitted to the server. For example, for a field used as a four digit **PIN** (zero decimals), a pattern such as:
 
 ```html
 pattern="\d{4,4}"
 title="Valid PIN is four digits long."
 ```
 
+sets the client-side validation to allow values that are only digits with a length of four. Notice also the use of attribute [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern#usability) to assist the user when the Browser shows validation errors.
 <br>
 <br>
 
