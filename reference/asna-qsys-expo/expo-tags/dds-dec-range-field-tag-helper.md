@@ -4,6 +4,7 @@ title: DdsDecRangeFieldTagHelper Class
 
 Defines a numeric input-capable field that can be expressed as a finite range. The user interaction to change the value can be configured to display either buttons to increase/decrease the value (typically used with whole quantities), or a [Slider](https://developer.apple.com/design/human-interface-guidelines/sliders) to visually increment/decrement the value by a preset **step** amount.
 
+**Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
 
 <br>

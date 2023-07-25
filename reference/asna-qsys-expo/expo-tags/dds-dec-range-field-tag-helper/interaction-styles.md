@@ -1,29 +1,21 @@
 ---
-title: InteractionStyles Class
+title: InteractionStyles Enumeration
 ---
 
 Determines how the user interacts with the component.
 
+**Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
 
 <br>
 <br>
 
-## Remarks
+## Enumeration Values
 
-Determines how the user interacts with the component.
-
-[//]: # ($$TODO: Complete the Remarks section.)
-
-<br>
-<br>
-
-## Fields
-
-| Type | Name | Description
-| --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Buttons | Show two buttons around input field, the left reduces the value, the right increases the value.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | Slider | Show slider control to adjust the value by sliding the "runner" left or right toward the minimum or maximum allowable values.
+| Name | Description   
+| --- | ---     
+| Buttons | Show two buttons around input field, the left reduces the value, the right increases the value.
+| Slider  | Show slider control to adjust the value by sliding the **runner** (or **thumb**) left or right toward the minimum or maximum allowable values.
 
 <br>
 <br>
