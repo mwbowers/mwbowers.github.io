@@ -282,6 +282,19 @@ Manuals:
     section:
     - title: Considerations for Migrations
       path: /manuals/migrations/considerations-for-migration.html
+    - sectiontitle: Migrating to MS SQL Server
+      sectionpath: /manuals/migrations/migrating-to-mssql.html
+      section: 
+      - title: Migrating Record Locking/Unlocking to SQL Server
+        path: /manuals/migrations/mssql-record-locking.html
+      - title: Lack of support for Multi-format Files under SQL Server
+        path: /manuals/migrations/mssql-no-multi-format.html
+      - title: Logical Field Restrictions when moving to SQL Server
+        path: /manuals/migrations/mssql-logical-field-restriction.html
+      - title: Migrated Embedded SQL Statements to SQL Server
+        path: /manuals/migrations/mssql-embedded-sql.html
+      - title: Differences Between DG for IBM i and DG Linear for SQL Server
+        path: /manuals/migrations/differences-dgi-dgl.html
     - title: Support for IFS and DLO
       path: /manuals/migrations/ifs-and-dlo.html
     - title: RPG Cycle Support
