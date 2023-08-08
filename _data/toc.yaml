@@ -2720,6 +2720,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/dds-dec-date-field-tag-helper.html
     - title: DdsDecFieldTagHelper
       path: /reference/asna-qsys-expo/expo-tags/dds-dec-field-tag-helper.html
+    - title: DdsDecRangeFieldTagHelper
+      path: /reference/asna-qsys-expo/expo-tags/dds-dec-range-field-tag-helper.html
     - title: DdsFieldBase
       path: /reference/asna-qsys-expo/expo-tags/dds-field-base.html
     - title: DdsFileTagHelper
@@ -2748,8 +2750,12 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/field-base.html
     - title: Field as Dropdown Box
       path: /reference/asna-qsys-expo/expo-tags/field-as-dropdown-box.html
+    - title: InteractionStyles
+      path: /reference/asna-qsys-expo/expo-tags/dds-dec-range-field-tag-helper/interaction-styles.html
     - title: LeftPadOption
       path: /reference/asna-qsys-expo/expo-tags/field-base/left-pad-option.html
+    - title: NumericValueStyles
+      path: /reference/asna-qsys-expo/expo-tags/dds-dec-range-field-tag-helper/numeric-value-styles.html
     - title: RecordBaseTagHelper
       path: /reference/asna-qsys-expo/expo-tags/record-base-tag-helper.html
     - title: Terminal5250TagHelper
