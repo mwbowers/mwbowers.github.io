@@ -280,8 +280,27 @@ Manuals:
   - sectiontitle: Migrations
     sectionpath: /manuals/migrations/migrations-overview.html
     section:
-    - title: Considerations for Migrations
-      path: /manuals/migrations/considerations-for-migration.html
+    - title: Field Name Special Characters Translation
+      path: /manuals/migrations/translation-field-special-characters.html
+    - sectiontitle: Migrating RPG Programs
+      sectionpath: /manuals/migrations/rpg-migration.html
+      section: 
+      - title: Migrating Indicators
+        path: /manuals/migrations/rpg-indicators.html
+      - title: RPG Cycle Support
+        path: /manuals/migrations/rpg-cycle.html
+    - sectiontitle: Migrating CL Programs
+      sectionpath: /manuals/migrations/cl-migration.html
+      section: 
+      - title: Support for IFS and DLO
+        path: /manuals/migrations/ifs-and-dlo.html
+    - sectiontitle: Migrating Dispaly Files
+      sectionpath: /manuals/migrations/dspf-migration.html
+      section: 
+      - title: Decimal Numbers Containing Dates
+        path: /manuals/migrations/decimal-numbers-containing-dates.html
+    - title: Migrating Printer Files
+      path: /manuals/migrations/prtf-migration.html
     - sectiontitle: Migrating to MS SQL Server
       sectionpath: /manuals/migrations/migrating-to-mssql.html
       section: 
@@ -295,22 +314,12 @@ Manuals:
         path: /manuals/migrations/mssql-embedded-sql.html
       - title: Differences Between DG for IBM i and DG Linear for SQL Server
         path: /manuals/migrations/differences-dgi-dgl.html
-    - title: Support for IFS and DLO
-      path: /manuals/migrations/ifs-and-dlo.html
-    - title: RPG Cycle Support
-      path: /manuals/migrations/rpg-cycle.html
-    - sectiontitle: Code Migration
-      section:
-      - title: Migrating Indicators
-        path: /manuals/migrations/indicators.html
-      - title: Field Name Special Characters Translation
-        path: /manuals/migrations/translation-field-special-characters.html
-      - title: Decimal Numbers Containing Dates
-        path: /manuals/migrations/decimal-numbers-containing-dates.html
     - sectiontitle: Remediations
       section:
       - title: Remediation of Procedure Scoped Files
         path: /manuals/migrations/remediatiate-scoped-files.html
+      - title: Accessing the Database
+        path: /manuals/migrations/db-access.html
   - sectiontitle: Configuration
     section:
     - title: Database Names
