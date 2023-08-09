@@ -294,7 +294,7 @@ Manuals:
       section: 
       - title: Support for IFS and DLO
         path: /manuals/migrations/ifs-and-dlo.html
-    - sectiontitle: Migrating Dispaly Files
+    - sectiontitle: Migrating Display Files
       sectionpath: /manuals/migrations/dspf-migration.html
       section: 
       - title: Decimal Numbers Containing Dates

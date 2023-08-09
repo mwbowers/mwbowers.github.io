@@ -12,7 +12,7 @@ Monarch will continue to evolve as market requirements change; therefore, the in
 This section explores these areas for migrations:
   - [Migrating RPG Programs](rpg-migration.html)
   - [Migrating CL Programs](cl-migration.html)
-  - [Migrating Dispaly Files](dspf-migration.html)
+  - [Migrating Display Files](dspf-migration.html)
   - [Migrating Printer Files](prtf-migration.html)
   - [Targeting SQL Server](migrating-to-mssql.html)
 

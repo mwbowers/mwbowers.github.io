@@ -159,7 +159,7 @@ The following tables specify the level of support provided by Monarch for Displa
 
 ----
 
-[^1]: See table of display attributes supported later in this section.
+[^1]: See [supported Display Attributes](#display-attributes-for-dspatr-keyword)
 
 [^2]: Support is not provided for cursor positioning **within** a field.
 
