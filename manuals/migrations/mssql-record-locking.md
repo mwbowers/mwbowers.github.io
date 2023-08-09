@@ -14,7 +14,7 @@ The record locking problem arises in three areas:
 
 ## Some background on record locking
 
-**DataGate for IBM i**
+### DataGate for IBM i
 
 DG/400 determines the type and duration of record locks depending on how the file is opened.
 
@@ -22,7 +22,7 @@ DG/400 determines the type and duration of record locks depending on how the fil
 
  - For files open for update, every time a record is read it is write-locked so that other updating applications cannot read it. The write lock is held until the record is updated or explicitly unlocked by the application or when the program uses the file to position or read another record. <br/>Additionally for files opened for update, the read op-codes have an option `Access(*NoLock)`[^1] to avoid locking the record.
 
-**DataGate Linear for SQL Server**
+### DataGate Linear for SQL Server
 
 DGL (using server cursors) also determines the locking characteristics based on how the file is opened.
 
@@ -43,13 +43,14 @@ The most demanding change is the one requiring segments of code involving `CHAIN
 * If the `CHAIN-UPDATE` happens in a tight loop, then at the end of the loop an `UNLOCK` should be issued to release the last record updated. Note however that the record position will be lost after the `UNLOCK`.
 * If the `CHAIN-UPDATE` is sprinkled throughout the code, then each case has to be closely studied to see if the current position is used in a subsequent read operation.
 
-### Access(*NoLock) Option on Reads
+## Access(*NoLock) Option on Reads
 
 DGL uses _SQL Server_ Cursors to implement file access.  When a file is opened for update, it is not possible to tell _SQL Server_ to not lock the record on a read, so this option is not valid for files opened for Update.  If a read operation uses the `Access(*NoLock)`[^1] option a runtime error will be rised.
 
-You have two options to solve this problem: Declare a second instance of the file marked as input only and use it wherever the NoLock option was given on a read/chain. The other alternative is to leave the NoLock and follow the **READ/CHAIN** with an unlock (see the unlock challenge in the following paragraph).
-
-The better way to achieve this is to open the file twice, once for input only and the other for update. Where the read appears with the `Access(*NoLock)` option, the file should be substituted with the one open for input only. By doing this, the application can take advantage of network blocking - yielding better performance.
+You have two options to solve this problem: 
+ 1. A first alternative is to remove the `Access(*NoLock)` and follow the `READ' or 'CHAIN` with an `UNLOCK` operation. The challenge with this approach is the side efect that `Unlock` has of loosing the file's current position.
+ 
+ 2. Another approach is is to declare and open the file twice, once for input only and the other for update. Where the read appears with the `Access(*NoLock)` option, the file should be substituted with the one open for input only. By doing this, the application can take advantage of network blocking - yielding better performance. The challenge here is that it may be necessary to keep both files synchronized, particularly whenever a `SETLL` or `SETGT` (generically a seek) opeartion is done.
  
 
 ----
