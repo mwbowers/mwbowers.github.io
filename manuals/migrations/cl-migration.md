@@ -21,34 +21,270 @@ In its other personality, CL is used to set up the environment for RPG programs 
 
 These actions affect the OS/400 Job where programs are running and have an effect on all programs on the same job. Monarch Base provides these facilities through a set of classes that supplement .NET.
 
-### Commands Supported
-
 The following list of commands is supported [^1] by Monarch 11.4.
 
-| ADDLIBLE | ENDPGM |
-| ADDPFM | GOTO |
-| ALCOBJ | ENDCMTCTL |
-| CALL/CALLB | IF |
-| CALLPRC | INZPFM |
-| CHGDTAARA | MONMSG |
-| CHGJOB | OPNQRYF |
-| CHGVAR | OVRDBF |
-| CHKOBJ for ObjType \*FILE only | OVRDSPF |
-| CLOF | OVRPRTF |
-| CLRPFM | PGM |
-| COMMIT | QCLSCAN |
-| CRTDTAARA | RCVF |
-| CRTDUPOBJ for files only | RETURN |
-| DCL | RMVLIBLE |
-| DCLF | RMVMSG |
-| DLTF FILE (library/file name) only | ROLLBACK |
-| DLCOBJ | RTVDTAARA |
-| DLTDTAARA | RTVJOBA |
-| DLTF | SBMJOB |
-| DLTOVR | SNDF |
-| DO / ENDDO | SNDPGMMSG |
-| ELSE | SNDRCVF |
-| | STRCMTCTL |
+### Commands Supported
+
+```
+ADDLIBL
+ADDLFM
+ADDPFM
+ALCOBJ
+CALL
+CALLB
+CALLPRC
+CALLSUBR
+CHGACGCDE
+CHGDTAARA
+CHGJOB
+CHGLFM
+CHGLIBL
+CHGPFM
+CHGVAR
+CHKOBJ
+CHGSPLFA
+CLOF
+CLROUTQ
+CLRPFM
+CLRSPLF
+COMMIT
+CPYSPLF
+CRTDTAARA
+CRTDUPOBJ
+CRTOUTQ
+CVTDAT
+DCL
+DCLF
+DLCOBJ
+DLTDTAARA
+DLTF
+DLTOUTQ
+DLTOVR
+DLTSPLF
+DLYJOB
+DO
+DOUNTIL
+DOWHILE
+ELSE
+ENDCMTCTL
+ENDDO
+ENDPGM
+ENDSELECT
+ENDSUBR
+GO
+GOTO
+HLDOUTQ
+HLDSPLF
+IF
+INZPFM
+ITERATE
+LEAVE
+MONMSG
+OPNQRYF
+OTHERWISE
+OVRDBF
+OVRDSPF
+OVRMSGF
+OVRPRTF
+PGM
+POSDBF
+QCLSCAN
+RCLACTGRP
+RCLRSC
+RCVF
+RCVMSG
+RETURN
+RLSOUTQ
+RLSSPLF
+RMVLIBLE
+RMVM
+RMVMSG
+RNMM
+RNMOBJ
+ROLLBACK
+RTNSUBR
+RTVDTAARA
+RTVJOBA
+RTVMBRD
+RTVMSG
+RTVNETA
+RTVSYSVAL
+RTVUSRPRF
+SBMJOB
+SELECT
+SETATNPGM
+SNDF
+SNDPGMMSG
+SNDRCVF
+STRCMTCTL
+SUBR
+WHEN
+WRKOUTQ
+```
+
+### Commands Supported (Grouped)
+
+#### Branching 
+```
+CALL
+CALLB
+CALLPRC
+CALLSUBR
+GO
+GOTO
+LEAVE
+RETURN
+SBMJOB
+RTNSUBR
+```
+
+#### Conditional Execution
+```
+IF
+ELSE
+END
+OTHERWISE
+SELECT
+WHEN
+```
+
+#### Control Flow
+```
+DO
+DOUNTIL
+DOWHILE
+ENDDO
+ITERATE
+```
+
+#### Commitment Control
+```
+COMMIT
+ENDCMTCTL
+STRCMTCTL
+ROLLBACK
+```
+
+#### Dates
+```
+CVTDAT
+```
+
+#### Exception Handling
+```
+MONMSG
+```
+
+#### Files
+```
+ADDPFM
+ADDLFM
+DCLF
+CLRPFM
+CLOF
+DLTF
+INZPFM
+RCVF
+OPNQRYF
+POSDBF
+SNDF
+SNDRCVF
+```
+
+#### Job related
+```
+CHGJOB
+DLYJOB
+```
+
+#### Library List
+```
+ADDLIBL
+CHGLIBL
+RMVLIBLE
+```
+
+#### Messages
+```
+RCVMSG
+RMVM
+RMVMSG
+RNMM
+SNDPGMMSG
+RTVMSG
+```
+
+#### Object Management
+```
+ALCOBJ
+CHGDTAARA
+CHGLFM
+CHGPFM
+CHKOBJ
+CRTDUPOBJ
+CRTDTAARA
+DLCOBJ
+DLTDTAARA
+RCLRSC
+RNMOBJ
+RTVDTAARA
+RTVMBRD
+```
+
+#### Output Queues
+```
+CLROUTQ
+CRTOUTQ
+DLTOUTQ
+HLDOUTQ
+WRKOUTQ
+RLSOUTQ
+```
+
+#### Program Structure Definition
+```
+ENDPGM
+PGM
+ENDSUBR
+SUBR
+```
+
+#### Spoolfiles
+```
+CLRSPLF
+CPYSPLF
+CHGSPLFA
+DLTSPLF
+HLDSPLF
+RLSSPLF
+```
+
+#### System
+```
+CHGACGCDE
+DLTOVR
+OVRDBF
+OVRDSPF
+OVRMSGF
+OVRPRTF
+RCLACTGRP
+RTVJOBA
+RTVSYSVAL
+RTVUSRPRF
+RTVNETA
+```
+
+#### Variables
+```
+DCL
+CHGVAR
+```
+
+#### Others
+```
+QCLSCAN
+SETATNPGM
+```
 
 ----
 
