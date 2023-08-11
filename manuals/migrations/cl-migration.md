@@ -21,13 +21,35 @@ In its other personality, CL is used to set up the environment for RPG programs 
 
 These actions affect the OS/400 Job where programs are running and have an effect on all programs on the same job. Monarch Base provides these facilities through a set of classes that supplement .NET.
 
-The following list of commands is supported [^1] by Monarch 11.4.
+The migration of CL Programs supports [Built-In functions](#built-in-functions) and [Commands](#commands-listed-alphabetically).
 
-### Commands Supported
+## Built-In Functions
+
+These are the functions supported by the migration process.
 
 ```
-ADDLIBL
+%INK
+%LOWER
+%SCAN
+%SST
+%SUBSTRING
+%SWITCH
+%TRIM
+%TRIML
+%TRIMR
+%UPPER
+```
+
+When a call to the `QCLSCAN` command is found, it is treated as a 'built-in' function.
+
+
+## Commands Listed Alphabetically
+
+The following list of commands is supported by Monarch, please note that not all keywords are supported on all of the commands listed.
+
+```
 ADDLFM
+ADDLIBL
 ADDPFM
 ALCOBJ
 CALL
@@ -35,27 +57,40 @@ CALLB
 CALLPRC
 CALLSUBR
 CHGACGCDE
+CHGCURDIR / CD /CHDDIR 
 CHGDTAARA
 CHGJOB
 CHGLFM
 CHGLIBL
 CHGPFM
-CHGVAR
-CHKOBJ
 CHGSPLFA
+CHGVAR
+CHKDLO 
+CHKOBJ
 CLOF
 CLROUTQ
 CLRPFM
 CLRSPLF
 COMMIT
+CPY / COPY 
+CPYDOC 
+CPYFRMIMPF 
+CPYFRMPCD 
+CPYFRMSTMF 
 CPYSPLF
+CPYTOIMPF 
+CPYTOPCD
+CPYTOSTMF 
+CRTDIR /  MD / MKDIR 
 CRTDTAARA
 CRTDUPOBJ
+CRTFLR 
 CRTOUTQ
 CVTDAT
 DCL
 DCLF
 DLCOBJ
+DLTDLO 
 DLTDTAARA
 DLTF
 DLTOUTQ
@@ -65,6 +100,8 @@ DLYJOB
 DO
 DOUNTIL
 DOWHILE
+DSPCURDIR 
+DSPFLR 
 ELSE
 ENDCMTCTL
 ENDDO
@@ -80,6 +117,8 @@ INZPFM
 ITERATE
 LEAVE
 MONMSG
+MOV / MOVE 
+MOVDOC 
 OPNQRYF
 OTHERWISE
 OVRDBF
@@ -88,7 +127,6 @@ OVRMSGF
 OVRPRTF
 PGM
 POSDBF
-QCLSCAN
 RCLACTGRP
 RCLRSC
 RCVF
@@ -96,9 +134,12 @@ RCVMSG
 RETURN
 RLSOUTQ
 RLSSPLF
+RMVDIR / RD / RMDIR 
 RMVLIBLE
 RMVM
 RMVMSG
+RNM / REN 
+RNMDLO 
 RNMM
 RNMOBJ
 ROLLBACK
@@ -122,42 +163,39 @@ WHEN
 WRKOUTQ
 ```
 
-### Commands Supported (Grouped)
+## Commands Listed by Group
 
-#### Branching 
+The following lists group related commands.
+
+### Calls
 ```
 CALL
 CALLB
 CALLPRC
 CALLSUBR
-GO
-GOTO
-LEAVE
 RETURN
-SBMJOB
 RTNSUBR
 ```
 
-#### Conditional Execution
+### Control Flow
 ```
-IF
+DO
+DOUNTIL
+DOWHILE
 ELSE
 END
+ENDDO
+GO
+GOTO
+IF
+ITERATE
+LEAVE
 OTHERWISE
 SELECT
 WHEN
 ```
 
-#### Control Flow
-```
-DO
-DOUNTIL
-DOWHILE
-ENDDO
-ITERATE
-```
-
-#### Commitment Control
+### Commitment Control
 ```
 COMMIT
 ENDCMTCTL
@@ -165,20 +203,22 @@ STRCMTCTL
 ROLLBACK
 ```
 
-#### Dates
+### Dates
 ```
 CVTDAT
 ```
 
-#### Exception Handling
+### Exception Handling
 ```
 MONMSG
 ```
 
-#### Files
+### Files
 ```
 ADDPFM
 ADDLFM
+CHGLFM
+CHGPFM
 DCLF
 CLRPFM
 CLOF
@@ -191,20 +231,57 @@ SNDF
 SNDRCVF
 ```
 
-#### Job related
+### Integrated File System
 ```
-CHGJOB
-DLYJOB
+CHGCURDIR / CD /CHDDIR 
+CPY / COPY 
+CPYFRMIMPF 
+CPYFRMSTMF 
+CPYTOIMPF 
+CPYTOSTMF 
+DSPCURDIR 
+CRTDIR /  MD / MKDIR 
+MOV / MOVE 
+RMVDIR / RD / RMDIR 
+RNM / REN 
 ```
 
-#### Library List
+### Document Library Object
+```
+CHKDLO 
+CPYDOC 
+CPYFRMPCD 
+CPYTOPCD
+CRTFLR 
+DLTDLO 
+DSPFLR 
+MOVDOC 
+RNMDLO 
+```
+
+### Job Related
+```
+CHGACGCDE
+CHGJOB
+DLTOVR
+DLYJOB
+OVRDBF
+OVRDSPF
+OVRMSGF
+OVRPRTF
+RCLACTGRP
+RTVJOBA
+SBMJOB
+```
+
+### Library List
 ```
 ADDLIBL
 CHGLIBL
 RMVLIBLE
 ```
 
-#### Messages
+### Messages
 ```
 RCVMSG
 RMVM
@@ -214,12 +291,10 @@ SNDPGMMSG
 RTVMSG
 ```
 
-#### Object Management
+### Object Management
 ```
 ALCOBJ
 CHGDTAARA
-CHGLFM
-CHGPFM
 CHKOBJ
 CRTDUPOBJ
 CRTDTAARA
@@ -231,7 +306,7 @@ RTVDTAARA
 RTVMBRD
 ```
 
-#### Output Queues
+### Output Queues
 ```
 CLROUTQ
 CRTOUTQ
@@ -241,7 +316,7 @@ WRKOUTQ
 RLSOUTQ
 ```
 
-#### Program Structure Definition
+### Program Structure Definition
 ```
 ENDPGM
 PGM
@@ -249,7 +324,7 @@ ENDSUBR
 SUBR
 ```
 
-#### Spoolfiles
+### Spoolfiles
 ```
 CLRSPLF
 CPYSPLF
@@ -259,34 +334,25 @@ HLDSPLF
 RLSSPLF
 ```
 
-#### System
+### System
 ```
-CHGACGCDE
-DLTOVR
-OVRDBF
-OVRDSPF
-OVRMSGF
-OVRPRTF
-RCLACTGRP
-RTVJOBA
 RTVSYSVAL
 RTVUSRPRF
 RTVNETA
 ```
 
-#### Variables
+### Variables
 ```
 DCL
 CHGVAR
 ```
 
-#### Others
+### Other
 ```
-QCLSCAN
 SETATNPGM
 ```
 
 ----
 
-[^1]: Not all keywords are supported on all of the commands listed.
+
 
