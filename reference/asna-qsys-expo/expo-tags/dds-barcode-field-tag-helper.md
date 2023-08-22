@@ -31,9 +31,12 @@ As soon as the code in the Barcode is identified:
 2. The value (code) read is pasted into the value of the DdsBarcodeFieldTag input instance. 
 3. The Video preview (with the available options as buttons) is removed from the Page.
 
->Note: If no detection succeeds within 20 seconds timeout (since the scan started), the Preview User Interface is removed (as if canceled). The user may attempt again by clicking or tapping on the `scan` button.
+>Note: If no detection succeeds within 20 seconds timeout (since the scan started), the Preview User Interface is removed (as when canceling). The user may attempt again by clicking or tapping on the `scan` button.
 
 Normally the Application will expect only one or two Barcode formats to be used. The barcode detection performance can be improved if the Barcode format(s) is enabled by setting the appropriate `Hint` value to `true` (for any of the listed properties below).
+
+>Note: [Some browsers restrict the use of the camera for secure connections](https://www.digicert.com/blog/https-only-features-in-browsers). Beware that `http` protocol may **NOT** work for Barcode scanning. The development use of *Self-signed* certificate may require additional user consent to display pages on your site.
+
 <br>
 <br>
 
