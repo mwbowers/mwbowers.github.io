@@ -8,7 +8,10 @@ Alternatively, the character code may be typed using the keyboard.
 
 The captured value will be posted as the value entered into a field, for the Application to process.
 
+**Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper) --> [FieldBase](/reference/asna-qsys-expo/expo-tags/field-base.html) --> [DdsFieldBase](/reference/asna-qsys-expo/expo-tags/dds-field-base.html) --> [DdsCharFieldTagHelper](/reference/asna-qsys-expo/expo-tags/dds-char-field-tag-helper.html) --> DdsBarcodeFieldTagHelper
 
 <br>
 <br>
@@ -31,13 +34,10 @@ As soon as the code in the Barcode is identified:
 2. The value (code) read is pasted into the value of the DdsBarcodeFieldTag input instance. 
 3. The Video preview (with the available options as buttons) is removed from the Page.
 
->Note: If no detection succeeds within 20 seconds timeout (since the scan started), the Preview User Interface is removed (as when canceling). The user may attempt again by clicking or tapping on the `scan` button.
-
 Normally the Application will expect only one or two Barcode formats to be used. The barcode detection performance can be improved if the Barcode format(s) is enabled by setting the appropriate `Hint` value to `true` (for any of the listed properties below).
 
 >Note: [Some browsers restrict the use of the camera for secure connections](https://www.digicert.com/blog/https-only-features-in-browsers). Beware that `http` protocol may **NOT** work for Barcode scanning. The development use of *Self-signed* certificate may require additional user consent to display pages on your site.
 
-<br>
 <br>
 
 ## Properties
@@ -48,7 +48,7 @@ Normally the Application will expect only one or two Barcode formats to be used.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_CODABAR_1D | CODABAR 1D Barcode likely used to be used to represent the value for this field. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_Code_128_1D | Code 128 1D Barcode likely used to be used to represent the value for this field. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_Code_39_1D | Code 39 1D Barcode likely used to be used to represent the value for this field.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_Code_93_1D | Code 93 1D Barcode likely used to be used to represent the value for this field. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.int64)  | Hint_Code_93_1D | Code 93 1D Barcode likely used to be used to represent the value for this field. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_Data_Matrix_2D | Data Matrix 2D Barcode likely used to be used to represent the value for this field. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_EAN_13_1D | EAN-13 1D Barcode likely used to be used to represent the value for this field.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_EAN_8_1D | EAN-8 1D Barcode likely used to be used to represent the value for this field. 
@@ -61,6 +61,7 @@ Normally the Application will expect only one or two Barcode formats to be used.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_UPC_A_1D | UPC-A 1D Barcode likely used to be used to represent the value for this field. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_UPC_E_1D | UPC-E 1D Barcode likely used to be used to represent the value for this field. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)  | Hint_UPC_EAN_Extension | UPC/EAN Extension Barcode likely used to be used to represent the value for this field. 
+| [Long](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | ScanningTimeoutSeconds | Timeout (in seconds) for detection to succeed. If no detection succeeds within the timeout (since the scan started), the Preview User Interface is removed (as when canceling). The user may attempt again by clicking or tapping on the scan button. Default is 20 seconds.
 
 <br>
 <br>
