@@ -357,6 +357,8 @@ Manuals:
           path: /manuals/enhancements/enhancing-ui/unwinding-call-stack-via-endrequest.html
         - title: Accessing Session Values from MyJob Class
           path: /manuals/enhancements/enhancing-ui/session-values-from-myjob.html
+    - title: Display Report Manuscript as a PDF
+      path: /manuals/enhancements/enhancing-reports/display-manuscript-as-pdf.html
   - sectiontitle: Monarch Operations Management
     sectionpath: /manuals/mom/mom-overview.html
     section:

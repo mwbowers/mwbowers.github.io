@@ -9,6 +9,8 @@ The following tables describe the differences Between DataGate for IBM i (DG/400
 
 Other differences may require additional artifacts in SQL Server, for example, logical fields whose type differs from that of the corresponding physical field cannot be updated and would require a trigger to reflect in the physical file any changes to the logical field.
 
+For reference, here are the [Maximum capacity specifications for SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/maximum-capacity-specifications-for-sql-server).
+
 ## Object Considerations
 
 | **ITEM** | **DG/400** | **DGL** | **Code Remediation** |
@@ -29,7 +31,7 @@ Other differences may require additional artifacts in SQL Server, for example, l
 | Indexed logical files per physical file |  3,686   | 249 | 
 | Imposing 'uniqueness' via select/omit rules in logical files | Supported &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Not directly supported. <br/>See **work-around**  note below. | 
 | Logical field used as a key field must be based on a physical field with the same name | No  | Yes.  Notice that this eliminates the possibility of using Renamed, Concatenated and Sub-stringed fields as keys. | 
-| Maximum number of key fields per key |   120  | 16  | <span style="background-color:red"> Possibly</span>
+| Maximum number of key fields per key |   120  | 32  | <span style="background-color:red"> Possibly</span>
 | Maximum length of key in bytes | 2,000 | 900 | <span style="background-color:red"> Possibly </span>
 
 **Work-around:**
