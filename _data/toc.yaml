@@ -2707,6 +2707,8 @@ Reference:
       path: /reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper/active-key-bar-location.html
     - title: ButtonStyles
       path: /reference/asna-qsys-expo/expo-tags/dds-button-tag-helper/button-styles.html
+    - title: DdsBarcodeFieldTagHelper
+      path: /reference/asna-qsys-expo/expo-tags/dds-barcode-field-tag-helper.html
     - title: ColSpanTagHelper
       path: /reference/asna-qsys-expo/expo-tags/col-span-tag-helper.html
     - title: ColTagHelper
