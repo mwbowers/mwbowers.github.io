@@ -2848,9 +2848,28 @@ Articles:
   - sectiontitle: How-to Techniques
     sectionpath: /articles/how-to-techniques.html
     section:
-    - title: Logic Program Logger
-      path: /articles/how-to-technique-logger.html
     - title: SQL Parser Explorer
       path: /articles/sql-parser-explorer.html
     - title: Zebra Stripe Subfiles
-      path: /articles/zebra-stripe-subfiles.html                  
+      path: /articles/zebra-stripe-subfiles.html
+  - sectiontitle: Enhancing SunFarm Migration 
+    sectionpath: /articles/sunfarm/sunfarm.html
+    section:
+    - title: Remove Reverse Video
+      path: /articles/sunfarm/enhance-remove-reverse-video.html
+    - title: Application Logo Branding
+      path: /articles/sunfarm/enhance-logo-branding.html
+    - title: Modernize Font Appearance
+      path: /articles/sunfarm/enhance-modernize-font-appearance.html
+    - title: Remove Redundant Elements
+      path: /articles/sunfarm/enhance-remove-redundant-elements.html
+    - title: Replacing YES/NO fields with Check-boxes
+      path: /articles/sunfarm/enhance-replace-yesno-checkboxes.html
+    - title: Replacing Multiple selection fields with Radio-button Groups
+      path: /articles/sunfarm/enhance-replace-yesno-radio-groups.html
+    - title: Replacing Promptable fields by clickable icon
+      path: /articles/sunfarm/enhance-prompts-clickable-icon.html
+    - title: Replacing numeric Data points with a Chart
+      path: /articles/sunfarm/enhance-replace-data-with-chart.html
+
+                                                                                          
