@@ -1,4 +1,4 @@
 ---
-title: Modernize Font Appearance ans positioning
+title: Modernize Font Appearance and positioning
 ---
 

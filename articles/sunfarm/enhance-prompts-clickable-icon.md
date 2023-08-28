@@ -1,4 +1,4 @@
 ---
-title: Replacing numeric Data points with a Chart
+title: Replacing promptable field with clickable icon
 ---
 

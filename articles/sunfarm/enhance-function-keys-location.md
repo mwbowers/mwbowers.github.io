@@ -1,4 +1,4 @@
 ---
-title: Function Keys Location Enhancement. 
+title: Function Keys Location Enhancement
 ---
 
