@@ -75,10 +75,10 @@ skip_read_time: true
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 card-holder">
-        <a class="card articles" href="/articles/articles-overview">
-          <h5 class="title">Articles</h5>
+        <a class="card examples" href="/examples/examples-overview">
+          <h5 class="title">Examples</h5>
           <p>
-            Browse through a collection of interesting articles.
+            Browse through a collection of interesting code examples.
           </p>
         </a>
       </div>

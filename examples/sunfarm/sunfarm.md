@@ -1,10 +1,12 @@
 ---
-title: Enhancing a Sample IBM i Migrated Application 
+title: Enhancing User Interface 
 ---
 
 # Overview
 
 Using a sample IBM i Application application named `"M5"`, we start by comparing the User-Interface [Look and Feel](https://en.wikipedia.org/wiki/Look_and_feel) of the *RAW* migration compared with the Legacy Terminal Emulation look.
+
+Pretending that the Modernized Application will be used by a ficticious Company called **SunFarm**, we will use the name **SunFarm Application** for the remaining topic discussion on this Example.
 
 We present the original screen with the *RAW* migrated correspondig Page.
 
