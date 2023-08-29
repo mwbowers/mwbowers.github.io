@@ -2846,7 +2846,7 @@ Examples:
   - title: ASNA Site Articles
     path: https://www.asna.com/us/articles
   - sectiontitle: How-to Techniques
-    sectionpath: /examples/show-to-techniques.html
+    sectionpath: /examples/how-to-techniques.html
     section:
     - title: SQL Parser Explorer
       path: /examples/sql-parser-explorer.html
@@ -2859,6 +2859,8 @@ Examples:
       path: /examples/sunfarm/enhance-remove-reverse-video.html
     - title: Application Logo Branding
       path: /examples/sunfarm/enhance-logo-branding.html
+    - title: Function Keys Location Enhancement
+      path: /examples/sunfarm/enhance-function-keys-location.html
     - title: Modernize Font Appearance
       path: /examples/sunfarm/enhance-modernize-font-appearance.html
     - title: Remove Redundant Elements

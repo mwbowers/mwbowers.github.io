@@ -4,63 +4,11 @@ title: Enhancing User Interface
 
 # Overview
 
-Using a sample IBM i Application application named `"M5"`, we start by comparing the User-Interface [Look and Feel](https://en.wikipedia.org/wiki/Look_and_feel) of the *RAW* migration compared with the Legacy Terminal Emulation look.
+For the purpose of this Example, we use a sample IBM i Application application named `"M5"`. 
 
-Pretending that the Modernized Application will be used by a ficticious Company called **SunFarm**, we will use the name **SunFarm Application** for the remaining topic discussion on this Example.
+To compare the User-Interface [Look and Feel](https://en.wikipedia.org/wiki/Look_and_feel) of the Legacy vs *RAW* Migration, we will present - later in this section -, selected Screens (with side by side images). These selections highlight typical opportunities for User Interface enhancements, for your consideration as the final Modern Style is defined.
 
-We present the original screen with the *RAW* migrated correspondig Page.
-
-On the last paragraph we list ten simple techniques that will Enhance the Overall Look and Feel.
-
-## Main Screen
-
-When application runs, the screen shows the `M5 Customer Inquiry` Screen:
-
-![Customer Inquiry Screen](./images/raw-customer-inquiry.png)
-
-
-![Migrated Customer Inquiry Screen](./images/migrated-customer-inquiry.png)
-
-
-The terminal-emulator shown above displays the basic layout used by this sample application:
-
-1. Screen dimensions: 80 columns x 25 lines.
-2. There is *only one* font used, which happens to use Fixed-pitch characters also knowns as [Monospaced Font](https://en.wikipedia.org/wiki/Monospaced_font).
-3. Dark background.
-4. Use of font-face colors: Green, white and blue.
-5. Use of font attributes: Reverse-video and Underline.
-6. Main screen sections:
-
-   a) **Heading**: User, Title, System date/time.
-   
-   b) **Command selection options**: Short descriptions for the available command "Selection" options on the subfile records.
-
-   c) **Customer Subfile**: Showing fourteen records at a time with first column allowing for the command option to execute.
-
-   d) **Function key Footer**: At the bottom of the page, the *active* [Function keys](https://en.wikipedia.org/wiki/Function_key) displaying a short label describing the associated command.
-
-## Customer Maintenance Screen 
-As the top-level Customer Inquiry Screen describes, using option "2" on a record selected, invokes the screen to **Update**, that is the "Customer Maintanance" page.
-
-![Customer Maintenance Screen](./images/raw-option-update.png)
-
-![Migrated Customer Maintenance Screen](./images/migrated-option-update.png)
-
-
-### Prompting for State Codes Screen
-When the "cursor" is positioned on the "State/Zip" input field, function key `F4` brings an overlaid smaller Window to allow the selection of the fifty-two US two-letter code.
-
-![Select a State](./images/raw-state-prompt.png)
-
-![Migrated Select a State](./images/migrated-state-prompt.png)
-
-
-## Customer Sales/Returns Information Screen
-As the top-level Customer Inquiry Screen describes, using option "3" on a record selected, invokes the screen to **Display Sales**, that is the "Customer Sales/Returns Information" page.
-
-![Customer Sales/Returns Information](./images/raw-option-display-sales.png)
-
-![Migrated Customer Sales/Returns Information](./images/migrated-option-display-sales.png)
+Pretending that the Modernized Application will be used by a ficticious Company called **SunFarm**, we will brand it as such, and refer to it as **The SunFarm Application** for the remaining topic discussions on this Example.
 
 
 ## User-Interface Enhancement Objectives
@@ -82,5 +30,57 @@ As the top-level Customer Inquiry Screen describes, using option "3" on a record
 8. [Replacing Promptable fields by clickable icon](./enhance-prompts-clickable-icon.html) : Legacy IBM i Applications followed the IBM command User interface where `F4` function key is mostly reserved to prompt for the values by showing an overlayed window. Instead of showing `(F4)` label by the input field, a clickable icon enhances the usability of promptable fields.
 
 9. [Replacing numeric Data points with a Chart](./enhance-replace-data-with-chart.html) : A picture is worth one thousand words. Instead of showing total sales figures on a given year, we will show a line Chart.
+
+## Main Screen
+
+When application runs, the screen shows the `M5 Customer Inquiry` Screen:
+
+| Legacy Customer Inquiry Screen | Migrated Customer Inquiry Screen |
+| :-: | :-: |
+| ![Legacy Customer Inquiry Screen](./images/raw-customer-inquiry.png) | ![Migrated Customer Inquiry Screen](./images/migrated-customer-inquiry.png) |
+ 
+
+The legacy Look (to the right of image above) shows the basic layout used by this sample application:
+
+1. Screen dimensions: 80 columns x 25 lines.
+2. There is *only one* font used, which happens to use Fixed-pitch characters also knowns as [Monospaced Font](https://en.wikipedia.org/wiki/Monospaced_font).
+3. Dark background.
+4. Use of font-face colors: Green, white and blue.
+5. Use of font attributes: Reverse-video and Underline.
+6. Main screen sections:
+
+   a) **Heading**: User, Title, System date/time.
+   
+   b) **Command selection options**: Short descriptions for the available command "Selection" options on the subfile records.
+
+   c) **Customer Subfile**: Showing fourteen records at a time with first column allowing for the command option to execute.
+
+   d) **Function key Footer**: At the bottom of the page, the *active* [Function keys](https://en.wikipedia.org/wiki/Function_key) displaying a short label describing the associated command.
+
+## Customer Maintenance Screen 
+As the top-level Customer Inquiry Screen describes, using option "2" on a record selected, invokes the screen to **Update**, that is the "Customer Maintanance" page.
+
+| Legacy Customer Maintenance Screen | Migrated Customer Maintenance Screen |
+| :-: | :-: |
+| ![Customer Maintenance Screen](./images/raw-option-update.png) | ![Migrated Customer Maintenance Screen](./images/migrated-option-update.png) |
+
+
+## Prompting for State Codes Screen
+When the "cursor" is positioned on the "State/Zip" input field, function key `F4` brings an overlaid smaller Window to allow the selection of the fifty-two US two-letter code.
+
+| Legacy Prompting for State | Migrated Prompting for State |
+| :-: | :-: |
+| ![Legacy Prompting for State](./images/raw-state-prompt.png) | ![Migrated Prompting for State](./images/migrated-state-prompt.png) |
+
+
+## Customer Sales/Returns Information Screen
+As the top-level Customer Inquiry Screen describes, using option "3" on a record selected, invokes the screen to **Display Sales**, that is the "Customer Sales/Returns Information" page.
+
+| Legacy Customer Sales/Returns Information | Migrated Customer Sales/Returns Information |
+| :-: | :-: |
+| ![Legacy Customer Sales/Returns Information](./images/raw-option-display-sales.png) | ![Migrated Customer Sales/Returns Information](./images/migrated-option-display-sales.png) |
+
+
+
 
 
