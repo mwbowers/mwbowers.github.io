@@ -13,7 +13,7 @@ Pretending that the Modernized Application will be used by a fictitious Company 
 
 ## User-Interface Enhancement Objectives
 
-1. [Remove Reverse Image Attribute](./enhance-remove-reverse-video.html) : Compared to Legacy Terminal screens, modern Web Browsers provide a very rich graphic canvas to display elements on the Page. The simple technique to remove the use of reverse-image on a Migrated Application, makes it look much more clean and pleasing to the eye.
+1. [Remove Reverse Image Attributes](./enhance-remove-reverse-video.html) : Compared to Legacy Terminal screens, modern Web Browsers provide a very rich graphic canvas to display elements on the Page. The simple technique to remove the use of reverse-image on a Migrated Application, makes it look much more clean and pleasing to the eye.
 
 2. [Application Logo Branding](./enhance-logo-branding.html) : All Pages should show the Company Logo at the top.
 

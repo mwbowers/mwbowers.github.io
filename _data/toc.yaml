@@ -2855,7 +2855,7 @@ Examples:
   - sectiontitle: Enhancing User Interface 
     sectionpath: /examples/sunfarm/sunfarm.html
     section:
-    - title: Remove Reverse Image Attribute
+    - title: Remove Reverse Image Attributes
       path: /examples/sunfarm/enhance-remove-reverse-image.html
     - title: Application Logo Branding
       path: /examples/sunfarm/enhance-logo-branding.html

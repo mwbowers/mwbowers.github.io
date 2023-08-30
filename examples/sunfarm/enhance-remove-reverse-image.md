@@ -1,11 +1,15 @@
 ---
-title: Remove Reverse Image Attribute 
+title: Remove Reverse Image Attributes 
 ---
 ## Source
 
-You can get the [GitHub Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) here.
+You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) here.
+
+You can get the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
 
 ## Overview
+
+5250 emulators could display characters in reverse-image. When the intent of such use is for decoration only, this article shows how to avoid that effect which seems distracting on HTML-based User Interfaces.
 
 When the [User Interface](https://en.wikipedia.org/wiki/User_interface) was designed while developing Legacy Applications, the developer had as the [Display Canvas](https://en.wikipedia.org/wiki/Canvas_(GUI)) a [Computer Terminal](https://en.wikipedia.org/wiki/Computer_terminal).
 
@@ -35,7 +39,7 @@ The typical technique to highlight fields on a IBM i Terminal was accomplished b
 
 As you can see by analyzing the table above, only two of the attributes are *perfectly* mapped: Hi Intensity and Underline. The rest present challenges and possibly misinterpretation of intent.
 
-## Remove Reverse Image Enhancement
+## Remove Reverse Image Attributes
 
 The intent of Legacy use of **Reverse Image** is hard to predict when automatically Migrating Display files.
 
