@@ -13,7 +13,7 @@ Pretending that the Modernized Application will be used by a ficticious Company 
 
 ## User-Interface Enhancement Objectives
 
-1. [Remove Reverse-video](./enhance-remove-reverse-video.html) : Compared to Legacy Terminal screens, modern Web Browsers provide a very rich graphic canvas to display elements on the Page. The simple technique to remove the use of reverse-video on a Migrated Application, makes it look much more clean and pleasing to the eye.
+1. [Remove Reverse Image Attribute](./enhance-remove-reverse-video.html) : Compared to Legacy Terminal screens, modern Web Browsers provide a very rich graphic canvas to display elements on the Page. The simple technique to remove the use of reverse-image on a Migrated Application, makes it look much more clean and pleasing to the eye.
 
 2. [Application Logo Branding](./enhance-logo-branding.html) : All Pages should show the Company Logo at the top.
 
@@ -40,7 +40,7 @@ When application runs, the screen shows the `M5 Customer Inquiry` Screen:
 | ![Legacy Customer Inquiry Screen](./images/raw-customer-inquiry.png) | ![Migrated Customer Inquiry Screen](./images/migrated-customer-inquiry.png) |
  
 
-The legacy Look (to the right of image above) shows the basic layout used by this sample application:
+The legacy Look (on the left of image above) shows the basic layout used by this sample application:
 
 1. Screen dimensions: 80 columns x 25 lines.
 2. There is *only one* font used, which happens to use Fixed-pitch characters also knowns as [Monospaced Font](https://en.wikipedia.org/wiki/Monospaced_font).

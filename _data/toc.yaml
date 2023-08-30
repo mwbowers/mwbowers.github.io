@@ -2844,7 +2844,7 @@ Examples:
   sectionpath: /examples/examples-overview.html
   section:
   - title: ASNA Site Articles
-    path: https://www.asna.com/us/articles
+    path: https://asna.com/en?s=Articles
   - sectiontitle: How-to Techniques
     sectionpath: /examples/how-to-techniques.html
     section:
@@ -2855,8 +2855,8 @@ Examples:
   - sectiontitle: Enhancing User Interface 
     sectionpath: /examples/sunfarm/sunfarm.html
     section:
-    - title: Remove Reverse Video
-      path: /examples/sunfarm/enhance-remove-reverse-video.html
+    - title: Remove Reverse Image Attribute
+      path: /examples/sunfarm/enhance-remove-reverse-image.html
     - title: Application Logo Branding
       path: /examples/sunfarm/enhance-logo-branding.html
     - title: Function Keys Location Enhancement
