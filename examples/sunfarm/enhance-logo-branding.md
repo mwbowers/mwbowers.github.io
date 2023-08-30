@@ -108,7 +108,7 @@ We define a few Styles by adding the following definitions to `~/wwwroot/css/sit
 }
 ```
 
-Application Pages are Migrated to the *Areas* subfolder within the *CustomerAppSite*. Given that we want **ALL** Pages (in the Customer Area) to display the Logo header, the place where we want to define it, is:
+Application Pages are Migrated to the *Areas* subfolder within the *SunFarmSite*. Given that we want **ALL** Pages (in the Customer Area) to display the Logo header, the place where we want to define it, is:
 
 ~~~   
 ~SunFarmSite\Areas\SunFarmViews\_ViewStart.cshtml
