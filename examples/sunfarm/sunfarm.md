@@ -8,7 +8,7 @@ For the purpose of this Example, we use a sample IBM i Application application n
 
 To compare the User-Interface [Look and Feel](https://en.wikipedia.org/wiki/Look_and_feel) of the Legacy vs *RAW* Migration, we will present - later in this section -, selected Screens (with side by side images). These selections highlight typical opportunities for User Interface enhancements, for your consideration as the final Modern Style is defined.
 
-Pretending that the Modernized Application will be used by a ficticious Company called **SunFarm**, we will brand it as such, and refer to it as **The SunFarm Application** for the remaining topic discussions on this Example.
+Pretending that the Modernized Application will be used by a fictitious Company called **SunFarm**, we will brand it as such, and refer to it as **The SunFarm Application** for the remaining topic discussions on this Example.
 
 
 ## User-Interface Enhancement Objectives
@@ -17,7 +17,7 @@ Pretending that the Modernized Application will be used by a ficticious Company 
 
 2. [Application Logo Branding](./enhance-logo-branding.html) : All Pages should show the Company Logo at the top.
 
-3. [Function-Keys Location](./enhance-function-keys-location.html) : Experiment with different Function-key locations. Select moving the Funtion-keys banner to the bootom of the screen.
+3. [Function-Keys Location](./enhance-function-keys-location.html) : Experiment with different Function-key locations. Select moving the Function-keys banner to the bottom of the screen.
 
 4. [Modernize Font Appearance](./enhance-modernize-font-appearance.html) : In an attempt to preserve legacy label positioning, even when the constants use a Modern Font family, the Migration adds artificial inter-character spacing that gives the appearance of *Old style Look*.
 
