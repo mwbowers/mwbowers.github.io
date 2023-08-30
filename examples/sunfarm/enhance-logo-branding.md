@@ -82,30 +82,6 @@ We define a few Styles by adding the following definitions to `~/wwwroot/css/sit
     padding-top: 1em;
     font-weight: bold;
 }
-
-.right-aligned-constant {
-    text-align: right;
-}
-
-.left-aligned-field {
-    text-align: left;
-}
-
-#customer-icon {
-    position: relative;
-    margin-top: -109px;
-    top: 109px;
-    width: 109px;
-    border-color: gray;
-    border-width: thin;
-    border-style: solid;
-    background-color: white;
-}
-
-.large-bold-text {
-    font-size: large !important;
-    font-weight: bold;
-}
 ```
 
 Application Pages are Migrated to the *Areas* subfolder within the *SunFarmSite*. Given that we want **ALL** Pages (in the Customer Area) to display the Logo header, the place where we want to define it, is:
