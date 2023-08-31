@@ -14,9 +14,9 @@ The Application Page contains a [\<form\>](https://developer.mozilla.org/en-US/d
 1. The `Function keys` panel: Displays *active* command keys.
 2. The `main` panel: Displays *active* Application display records.
 
-The [flex box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) is very convinient, because the position and dimiensions of the two two panels are auto-adjusted according to the Web Browser Window size.
+The [flex box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) is very convenient, because the position and dimensions of the two two panels are auto-adjusted according to the Web Browser Window size.
 
-The following image ilustrates the layout of the two pannels, where the `Function keys` panel is represented by a pale blue rectagle, while the `main` panel is represented by a light-green rectangle. The label represents the `location` name.
+The following image illustrates the layout of the two panels, where the `Function keys` panel is represented by a pale blue rectangle, while the `main` panel is represented by a light-green rectangle. The label represents the `location` name.
 
 ![Location values](./images/function-key-location.svg)
 

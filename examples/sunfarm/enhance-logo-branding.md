@@ -81,9 +81,9 @@ We define a few Styles by adding the following definitions to `~/wwwroot/css/sit
 
 The structural design of our Logo Horizontal Banner is:
 
-1. A divison horizontal with a green background (`logo-banner` style).
+1. A division horizontal with a green background (`logo-banner` style).
 2. Inside that division, the image with some padding on the left (`logo` style).
-2. Next to the image (on the same 'line'), a division with the two legends. Notice how this divison is overlapped on the image such that it appears part of it (`logo-text` style).
+2. Next to the image (on the same 'line'), a division with the two legends. Notice how this division is overlapped on the image such that it appears part of it (`logo-text` style).
 
 Or in `HTML` syntax: 
 
@@ -97,7 +97,7 @@ Or in `HTML` syntax:
     </div>
 ```
 
-We need to place this markup in the `Layout` used by all the Razor Pages of our site, conviniently named `_Layout` and stored in the following *Shared* location:
+We need to place this markup in the `Layout` used by all the Razor Pages of our site, conveniently named `_Layout` and stored in the following *Shared* location:
 
 `
 ~SunFarmSite\Pages\Shared\_Layout.cshtml
