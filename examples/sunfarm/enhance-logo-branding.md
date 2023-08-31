@@ -33,7 +33,9 @@ There are several ways to achieve our goals.
 
 We use the following [static content](https://en.wikipedia.org/wiki/Static_web_page):
 
-1. An image of a sunrise. A raster png format image, designed with transparency. ![](./images/transparent-logo-no-text.png)
+1. An image of a sunrise. A raster png format image, designed with transparency. 
+![](./images/transparent-logo-no-text.png)
+
 2. Two lines of text:
 
    Application name (“sunfarm”)
@@ -53,13 +55,13 @@ We define a few Styles by adding the following definitions to `~/wwwroot/css/sit
 }
 
 #logo {
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 
 #logo-text {
     display: inline-block;
     vertical-align: top;
-    margin-left: -41px;
+    margin-left: -3rem;
 }
 
 #logo-title {
@@ -75,40 +77,71 @@ We define a few Styles by adding the following definitions to `~/wwwroot/css/sit
     font-size: medium;
     opacity: 0.5;
 }
-
-#page-title {
-    font-size: large;
-    padding-left: 4.0em;
-    padding-top: 1em;
-    font-weight: bold;
-}
 ```
 
-Application Pages are Migrated to the *Areas* subfolder within the *SunFarmSite*. Given that we want **ALL** Pages (in the Customer Area) to display the Logo header, the place where we want to define it, is:
+The structural design of our Logo Horizontal Banner is:
 
-~~~   
-~SunFarmSite\Areas\SunFarmViews\_ViewStart.cshtml
-~~~   
+1. A divison horizontal with a green background (`logo-banner` style).
+2. Inside that division, the image with some padding on the left (`logo` style).
+2. Next to the image (on the same 'line'), a division with the two legends. Notice how this divison is overlapped on the image such that it appears part of it (`logo-text` style).
 
-This file defines the layout shared by all Pages in the view **SunFarmViews**
+Or in `HTML` syntax: 
 
 ```html
-@{
-    Layout = "_Layout";
-}
-
-<div id="logo-banner">
-    <img id="logo" src="~/images/sun-farm.png" />
-    <div id="logo-text">
-        <div id="logo-title">sunfarm</div>
-        <div id="logo-subtitle">always fresh</div>
+    <div id="logo-banner">
+        <img id="logo" src="~/images/sun-farm.png" />
+        <div id="logo-text">
+            <div id="logo-title">sunfarm</div>
+            <div id="logo-subtitle">always fresh</div>
+        </div>
     </div>
-</div>
-```   
+```
 
-The top header for all pages will contain a *division* designated for the Logo Banner which contains:
-1. An image
-2. A division for two legends, positioned to produce the complete Logo.
+We need to place this markup in the `Layout` used by all the Razor Pages of our site, conviniently named `_Layout` and stored in the following *Shared* location:
+
+`
+~SunFarmSite\Pages\Shared\_Layout.cshtml
+`
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <title>@ViewData["Title"] - ExpoSite</title>
+
+    <link rel="stylesheet" href="~/lib/asna-expo/css/expo.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    @* --- Logo Branding on ALL Pages --- *@
+    <div id="logo-banner">
+        <img id="logo" src="~/images/sun-farm.png" />
+        <div id="logo-text">
+            <div id="logo-title">sunfarm</div>
+            <div id="logo-subtitle">always fresh</div>
+        </div>
+    </div>
+    @* ---------------------------------- *@
+
+    @RenderBody()
+
+    <script type="module">
+        import { Page } from '../lib/asna-expo/js/asna.js';
+
+        Page.init({ formId: 'MonarchForm' });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+```
+ 
+>Note: the new HTML code indicated with `@*` comments `*@`. The rest was already defining the existing Layout.
+
+
 
 
 ## Results
