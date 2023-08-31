@@ -2855,25 +2855,25 @@ Examples:
   - sectiontitle: 10 Basic UI Enhancements 
     sectionpath: /examples/sunfarm/sunfarm.html
     section:
-    - title: Remove Reverse Image Attributes
+    - title: 1. Remove Reverse Image Attributes
       path: /examples/sunfarm/enhance-remove-reverse-image.html
-    - title: Application Logo Branding
+    - title: 2. Application Logo Branding
       path: /examples/sunfarm/enhance-logo-branding.html
-    - title: Function Keys Location Enhancement
+    - title: 3. Function Keys Location Enhancement
       path: /examples/sunfarm/enhance-function-keys-location.html
-    - title: Modernize Constant Spacing
+    - title: 4. Modernize Constant Spacing
       path: /examples/sunfarm/enhance-modernize-font-appearance.html
-    - title: Properly center page titles
+    - title: 5. Properly center page titles
       path: /examples/sunfarm/enhance-title-centering.html
-    - title: Remove Redundant Elements
+    - title: 6. Remove Redundant Elements
       path: /examples/sunfarm/enhance-remove-redundant-elements.html
-    - title: Replacing YES/NO fields with Check-boxes
+    - title: 7. Replacing YES/NO fields with Check-boxes
       path: /examples/sunfarm/enhance-replace-yesno-checkboxes.html
-    - title: Replacing Multiple selection fields with Radio-button Groups
+    - title: 8. Replacing Multiple selection fields with Radio-button Groups
       path: /examples/sunfarm/enhance-replace-yesno-radio-groups.html
-    - title: Replacing Promptable fields by clickable icon
+    - title: 9. Replacing Promptable fields by clickable icon
       path: /examples/sunfarm/enhance-prompts-clickable-icon.html
-    - title: Replacing numeric Data points with a Chart
+    - title: 10. Replacing numeric Data points with a Chart
       path: /examples/sunfarm/enhance-replace-data-with-chart.html
 
                                                                                           

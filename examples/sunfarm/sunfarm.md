@@ -1,5 +1,5 @@
 ---
-title: Enhancing User Interface 
+title: 10 Basic UI Enhancements
 ---
 
 # Overview
@@ -11,9 +11,9 @@ To compare the User-Interface [Look and Feel](https://en.wikipedia.org/wiki/Look
 Pretending that the Modernized Application will be used by a fictitious Company called **SunFarm**, we will brand it as such, and refer to it as **The SunFarm Application** for the remaining topic discussions on this Example.
 
 
-## User-Interface Enhancement Objectives
+## Basic User Interface Enhancements
 
-1. [Remove Reverse Image Attributes](./enhance-remove-reverse-video.html) : Compared to Legacy Terminal screens, modern Web Browsers provide a very rich graphic canvas to display elements on the Page. The simple technique to remove the use of reverse-image on a Migrated Application, makes it look much more clean and pleasing to the eye.
+1. [Remove Reverse Image Attributes](./enhance-remove-reverse-image.html) : Compared to Legacy Terminal screens, modern Web Browsers provide a very rich graphic canvas to display elements on the Page. The simple technique to remove the use of reverse-image on a Migrated Application, makes it look much more clean and pleasing to the eye.
 
 2. [Application Logo Branding](./enhance-logo-branding.html) : All Pages should show the Company Logo at the top.
 
