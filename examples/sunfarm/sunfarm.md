@@ -19,17 +19,19 @@ Pretending that the Modernized Application will be used by a fictitious Company 
 
 3. [Function-Keys Location](./enhance-function-keys-location.html) : Experiment with different Function-key locations. Select moving the Function-keys banner to the bottom of the screen.
 
-4. [Modernize Font Appearance](./enhance-modernize-font-appearance.html) : In an attempt to preserve legacy label positioning, even when the constants use a Modern Font family, the Migration adds artificial inter-character spacing that gives the appearance of *Old style Look*.
+4. [Modernize Constant Spacing](./enhance-modernize-font-appearance.html) : In an attempt to preserve legacy label positioning, even when the constants use a Modern Font family, the Migration adds artificial inter-character spacing that gives the appearance of *Old style Look*.
 
-5. [Remove redundant elements](./enhance-remove-redundant-elements.html) : Modern Operating Systems running on today's Devices already present system information (date/time user, etc.). There are simple techniques to make better use of the Page by removing these redundant elements.
+5. [Properly center page titles](./enhance-title-centering.html) : It is common to use Titles on Legacy Pages. Titles are usually centered *by hand* counting character positions and lengths using the *single* Monospaced font. We will explore how to use CSS to do it automatically with high precision.
 
-6. [Replacing YES/NO fields with Check-boxes](./enhance-replace-yesno-checkboxes.html) : Check-box elements are much more effective than `YES/NO` fields. This two state input element is well identified by most users of Modern Web sites. 
+6. [Remove redundant elements](./enhance-remove-redundant-elements.html) : Modern Operating Systems running on today's Devices already present system information (date/time user, etc.). There are simple techniques to make better use of the Page by removing these redundant elements.
 
-7. [Replacing Multiple selection fields with Radio-button Groups](./enhance-replace-yesno-radio-groups.html): When the value of a field is expected to be a finite small set of options, the best User Interface element is a Radio button group.
+7. [Replacing YES/NO fields with Check-boxes](./enhance-replace-yesno-checkboxes.html) : Check-box elements are much more effective than `YES/NO` fields. This two state input element is well identified by most users of Modern Web sites. 
 
-8. [Replacing Promptable fields by clickable icon](./enhance-prompts-clickable-icon.html) : Legacy IBM i Applications followed the IBM command User interface where `F4` function key is mostly reserved to prompt for the values by showing an overlayed window. Instead of showing `(F4)` label by the input field, a clickable icon enhances the usability of promptable fields.
+8. [Replacing Multiple selection fields with Radio-button Groups](./enhance-replace-yesno-radio-groups.html): When the value of a field is expected to be a finite small set of options, the best User Interface element is a Radio button group.
 
-9. [Replacing numeric Data points with a Chart](./enhance-replace-data-with-chart.html) : A picture is worth one thousand words. Instead of showing total sales figures on a given year, we will show a line Chart.
+9. [Replacing Promptable fields by clickable icon](./enhance-prompts-clickable-icon.html) : Legacy IBM i Applications followed the IBM command User interface where `F4` function key is mostly reserved to prompt for the values by showing an overlayed window. Instead of showing `(F4)` label by the input field, a clickable icon enhances the usability of promptable fields.
+
+10. [Replacing numeric Data points with a Chart](./enhance-replace-data-with-chart.html) : A picture is worth one thousand words. Instead of showing total sales figures on a given year, we will show a line Chart.
 
 ## Main Screen
 

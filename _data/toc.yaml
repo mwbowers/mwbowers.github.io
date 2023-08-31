@@ -2852,7 +2852,7 @@ Examples:
       path: /examples/sql-parser-explorer.html
     - title: Zebra Stripe Subfiles
       path: /examples/zebra-stripe-subfiles.html
-  - sectiontitle: Enhancing User Interface 
+  - sectiontitle: 10 Basic UI Enhancements 
     sectionpath: /examples/sunfarm/sunfarm.html
     section:
     - title: Remove Reverse Image Attributes
@@ -2861,8 +2861,10 @@ Examples:
       path: /examples/sunfarm/enhance-logo-branding.html
     - title: Function Keys Location Enhancement
       path: /examples/sunfarm/enhance-function-keys-location.html
-    - title: Modernize Font Appearance
+    - title: Modernize Constant Spacing
       path: /examples/sunfarm/enhance-modernize-font-appearance.html
+    - title: Properly center page titles
+      path: /examples/sunfarm/enhance-title-centering.html
     - title: Remove Redundant Elements
       path: /examples/sunfarm/enhance-remove-redundant-elements.html
     - title: Replacing YES/NO fields with Check-boxes
