@@ -14,3 +14,8 @@ It is common to use **Titles** on Legacy Pages. Titles are usually centered *by 
 ## Properly center page titles
 
 ## Results
+
+| Constants stretching | Constant normal spacing (some with right-alignment) |
+| :-: | :-: |
+| ![Legacy Title Centering](./images/logo-branded-update-customer-non-stretch.png) | ![CSS Title Centering](./images/logo-branded-update-customer-center-title.png) |
+
