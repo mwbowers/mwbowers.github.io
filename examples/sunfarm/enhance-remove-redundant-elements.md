@@ -34,6 +34,47 @@ Eliminating elements from Markup, some re-ordering, combining rows and position 
 
 ![Mod file compare](./images/redundant-remove-compare-cust-inquiry.png)
 
+## VALUES and associated Text
+
+We have removed the Command key option labels from the screen the `Selection` column in the subfile now shows a dropdown-list.
+
+But the Legacy DDS VALUES keyword shows the valid values, but does not describe what each value means.
+
+```
+0010.00     A            SFSEL          2Y 0B  8  4VALUES(0 2 3 5 7 9 10 11)           000000
+0011.00     A                                      EDTCDE(Z)                           000000
+```
+
+| Migration VALUES | After updating TextValues |
+| :-: | :-: |
+| ![Migration of VALUES](./images/cust-inq-dropdown-values.png) | ![After updating TextValues](./images/cust-inq-dropdown-values-plus-text.png) |
+
+The definition for field `SFLSEL` was manually changed to:
+
+```html
+<DdsDecField Col="3" ColSpan="4" 
+    class="dds-text-left"
+    For="SFLC.SFL1[rrn].SFSEL"
+    ValuesText="' ','Update','Display sales','Deliv. Addresses','Create sales rec.','Print sales (Online)','Print sales (Batch)','Orders'"
+    ValuesTextOptionSeparator="="
+    VirtualRowCol="@row,4" 
+    EditCode="Z" 
+    tabIndex=@pageTabIndex++ />
+```
+
+For reference, the field is defined (in the Model) as:
+```cs
+    [Values(typeof(Decimal),"00","02","03","05","07","09","10","11")]
+    [Dec(2, 0)]
+    public decimal SFSEL { get; set; }
+```
+
+Note:
+1. To make it easier to present in this example, the field properties for `SFLC.SFL1[rrn].SFSEL` are shown using one property per line. (New lines in Markup are ignored).
+2. The `ColSpan` property was added to override the default (which is the largest length of the value text items).
+3. The number of `ValueText` items must match the number of `Values` in the Model definition.
+4. The optional property `ValuesTextOptionSeparator="="` was added to match the Legacy Option syntax. (If not given, oly the text labels are used).
+
 ## Results
 
 | Before | After |
