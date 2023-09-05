@@ -63,7 +63,7 @@ To replace Legacy titles.
 The following video illustrates how to remove the legacy `DdsConstant` and add a centered [span](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) in the right place.
 
 
-<video autoplay=true loop=true playsinline=true width="90%" src="./videos/replacing-constant-centered-span.mp4" controls title=""></video>
+![Replace Constant with Centered SPAN](./images/replacing-constant-centered-span.gif)
 
 
 ## Results
