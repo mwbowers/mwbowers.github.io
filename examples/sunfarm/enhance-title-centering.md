@@ -3,9 +3,7 @@ title: Properly center page titles
 ---
 ## Source
 
-You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) here.
-
-You can get the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
+You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) or the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
 
 ## Overview
 
@@ -62,9 +60,11 @@ To replace Legacy titles.
     <span class="page-title">SunFarm Customer Maintenance</span>
 ```
 
-The following image illustrates lines added, and removed.
+The following video illustrates how to remove the legacy `DdsConstant` and add a centered [span](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) in the right place.
 
-![](./images/replace-title-element.png)
+
+<video autoplay=true loop=true playsinline=true width="90%" src="./videos/replacing-constant-centered-span.mp4" controls title=""></video>
+
 
 ## Results
 

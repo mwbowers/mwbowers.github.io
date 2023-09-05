@@ -3,9 +3,7 @@ title: Modernize Constant Spacing
 ---
 ## Source
 
-You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) here.
-
-You can get the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
+You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) or the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
 
 ## Overview
 Legacy 5250 screens used a single system [Monospaced Font](https://en.wikipedia.org/wiki/Monospaced_font). The programming model for the developer was a grid-positioning system used to lay out labels with predictable end positioning.
@@ -40,7 +38,7 @@ Properly right adjusted constant:
 <DdsConstant Col="20" ColSpan="-1" class="right-aligned-constant" Text="Name:" />
 ```
 
-Add the following style to `~wwwroot/css/site.css`
+Add the following style to `~/wwwroot/css/site.css`
 
 ```css
 .right-aligned-constant {

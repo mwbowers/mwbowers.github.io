@@ -3,13 +3,11 @@ title: Replacing YES/NO fields with Check-boxes
 ---
 ## Source
 
-You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) here.
-
-You can get the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
+You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) or the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
 
 ## Overview
 
-Legacy displayfiles typically use `boolean fields` as a one-char fields expecting as their only valid value `Y` or `N`.
+Legacy display files typically use `boolean fields` as a one-char fields expecting as their only valid value `Y` or `N`.
 
 Even when Terminals can force the casing to be uppercase (reducing the possibility of error), this practice has been superseded by modern element called [Checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox).
 

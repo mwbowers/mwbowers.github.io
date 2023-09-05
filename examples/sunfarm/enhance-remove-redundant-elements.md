@@ -3,9 +3,7 @@ title: Remove Redundant elements
 ---
 ## Source
 
-You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) here.
-
-You can get the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
+You can get the [GitHub Encore Source Files](https://github.com/asnaqsys-examples/sunfarm-encore) or the [GitHub C# Source Files](https://github.com/asnaqsys-examples/sunfarm-csharp) here.
 
 ## Overview
 
@@ -73,7 +71,7 @@ Note:
 1. To make it easier to present in this example, the field properties for `SFLC.SFL1[rrn].SFSEL` are shown using one property per line. (New lines in Markup are ignored).
 2. The `ColSpan` property was added to override the default (which is the largest length of the value text items).
 3. The number of `ValueText` items must match the number of `Values` in the Model definition.
-4. The optional property `ValuesTextOptionSeparator="="` was added to match the Legacy Option syntax. (If not given, oly the text labels are used).
+4. The optional property `ValuesTextOptionSeparator="="` was added to match the Legacy Option syntax. (If not given, only the text labels are used).
 
 ## Results
 
