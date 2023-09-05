@@ -28,9 +28,13 @@ Notes:
 
 ## Remove Redundant elements
 
-Eliminating elements from Markup, some re-ordering, combining rows and position adjustments, as indicated by the following compare:
+Cleanup the Page Look by eliminating redundant items. Often, when removing full rows (as shown below), we can reuse empty space by moving remaining rows up.
 
-![Mod file compare](./images/redundant-remove-compare-cust-inquiry.png)
+Here we show the partial process required to remove redundant items and reorder some rows :
+
+![Eliminate redundant items](./images/eliminate-redundant-items.gif)
+
+
 
 ## VALUES and associated Text
 
