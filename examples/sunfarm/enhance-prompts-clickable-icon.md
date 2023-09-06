@@ -30,13 +30,13 @@ Notice the `DdsConstant` with Text="(F4)" right after the `DdsCharField CUSTREC.
 </div>
 ```
 
-The `DdsConstant` right after the `DdsCharField CUSTREC.SFSTATE`, can be replaced by a `DdsButton` with the shape *Search* (a magnifying glass), indicating that to be consistent with the value the legacy logic expects, to generate a `F4` *AidKey* code, as if the cursor was located setting the focus on the **Previous** field (in this case CUSTREC.SFSTATE).
+The `DdsConstant` right after the `DdsCharField CUSTREC.SFSTATE`, can be replaced by a `DdsButton` with the shape *Search* (a magnifying glass), indicating that to be consistent with the value the legacy logic expects, to generate a `F4` *AidKey* code, as if the cursor was located setting the focus on the **PREVIOUS** field (in this case CUSTREC.SFSTATE).
 
 ```html
 <div Row="10">
     <DdsConstant Col="15" ColSpan="-1" class="right-aligned-constant" Text="State/Zip:" />
     <DdsCharField Col="27" For="CUSTREC.SFSTATE" VirtualRowCol="11,27" PositionCursor="43" tabIndex=@pageTabIndex++ />
-    <DdsButton Col="40" IconId="search" ButtonStyle="Icon" AidKey="F4" FocusField="*Previous"/>
+    <DdsButton Col="40" IconId="search" ButtonStyle="Icon" AidKey="F4" FocusField="*PREVIOUS"/>
     .
     .
     .
