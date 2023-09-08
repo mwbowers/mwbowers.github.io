@@ -34,7 +34,7 @@ Here we show the partial process required to remove redundant items and reorder 
 
 ![Eliminate redundant items](./images/eliminate-redundant-items.gif)
 
-
+>Note: Use the [source repository](https://github.com/asnaqsys-examples/sunfarm-ui-enhancements/blob/main/SunFarmSite/Areas/SunFarmViews/Pages/CUSTDSPF.cshtml) to review the final state of this modification.
 
 ## VALUES and associated Text
 

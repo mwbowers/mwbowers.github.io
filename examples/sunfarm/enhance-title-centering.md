@@ -65,6 +65,7 @@ The following video illustrates how to remove the legacy `DdsConstant` and add a
 
 ![Replace Constant with Centered SPAN](./images/replacing-constant-centered-span.gif)
 
+>Note: Use the [source repository](https://github.com/asnaqsys-examples/sunfarm-ui-enhancements/blob/main/SunFarmSite/Areas/SunFarmViews/Pages/CUSTDSPF.cshtml) to review the final state of this modification.
 
 ## Results
 
