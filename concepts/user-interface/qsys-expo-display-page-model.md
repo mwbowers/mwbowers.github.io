@@ -135,4 +135,4 @@ All the fields declarations in the Record (model) that are *decorated* with QSys
 
 The *Order* in which the fields are declared is **important**. The same order is used to [serialize](https://en.wikipedia.org/wiki/Serialization) them to/from the DataSet.
 
-> [Dev Tools](enhancements/dev-tools) also rely on the *order* of fields to generate the partial class needed at the Program Logic to complete the `QSys Program`. 
+> [Dev Tools](/concepts/enhancements/dev-tools.html) also rely on the *order* of fields to generate the partial class needed at the Program Logic to complete the `QSys Program`. 
