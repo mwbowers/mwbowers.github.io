@@ -13,13 +13,11 @@ One page in `SunFarm` Application that could benefit of a Chart to display its d
 
 ## Replacing numeric Data points with a Chart
 
-To replace the two monetary values displaying the `Total Sales` and `Total Returns` we will use a simple Bar Chart.
+A simple Bar Chart replaces the the `Total Sales` and `Total Returns` values.
 
-The library that will render the Chart is [amcharts](https://www.amcharts.com/docs/v4/getting-started/basics/).
-
-This library was selected for this example because:
+The Chart is rendered by [amcharts](https://www.amcharts.com/docs/v4/getting-started/basics/) library. Its useful features include:
 1. It offers a very simple [API](https://en.wikipedia.org/wiki/API).
-2. It grants a [free license](https://www.amcharts.com/licenses/javascript-charts-free-license/), by imbedding a link to their website, prohibiting removing or covering such link. This is very suitable for an Example.
+2. It grants a [free license](https://www.amcharts.com/licenses/javascript-charts-free-license/), by imbedding a link to their website, prohibiting removing or covering such link. This is very suitable for an example.
 3. Produces high-quality [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) graphics.
 
 The basic steps to add a `amchart` are:
@@ -30,9 +28,9 @@ The basic steps to add a `amchart` are:
 
   c) Using the new chart object, push axis, data series and any other chart objects describing the chart and/or the data in the series.
 
-The `~\SunFarmSite\Areas\SunFarmViews\Pages\CUSTDSPF.cshtml` Razor Page, defines several Displayfile records, among them, one for `SALESREC` Model record. The migration was using the following fields defined in that record, namely: `SALESREC.SCPGM`, `SALESREC.SFCUSTNO`, `SALESREC.SFNAME`, `SALESREC.SFSALES` and `SALESREC.SFRETURNS`.
+The `~\SunFarmSite\Areas\SunFarmViews\Pages\CUSTDSPF.cshtml` Razor Page, defines several Displayfile records, among them, one for the `SALESREC` Model record. The migration uses the following fields defined in that record, namely: `SALESREC.SCPGM`, `SALESREC.SFCUSTNO`, `SALESREC.SFNAME`, `SALESREC.SFSALES` and `SALESREC.SFRETURNS`.
 
-The fields that have the Total Sales and Total Returns values are `SALESREC.SFSALES` and `SALESREC.SFRETURNS`. These will be used to Chart instead of just displaying its values (as the Legacy Application did).
+The fields that have the Total Sales and Total Returns values are `SALESREC.SFSALES` and `SALESREC.SFRETURNS`. These will be used to Chart instead of just displaying its values (as the Legacy Application does).
 
 The following is the modified `DdsRecord`. Rows `1` to `5` show standard output (very similar to the migration). At the bottom of the Display Record, we have added two [\<div\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) s : a container and the chart itself.
 
@@ -62,8 +60,8 @@ Note how the [\<div\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element
         <div id="sales-chart">Sales Chart</div>
     </div>
 ```
-
-To center the chart container and give the chart dimensions, we rely on the following CSS styles:
+<br>
+The following CSS centers the container and gives the chart dimensions:
 
 ```css
 #sales-chart-container div {
@@ -84,17 +82,17 @@ To center the chart container and give the chart dimensions, we rely on the foll
 
 At the bottom of the The `~\SunFarmSite\Areas\SunFarmViews\Pages\CUSTDSPF.cshtml` Razor Page, we write three small script blocks:
 
-1. A reference to the third-party `core.js` library file given its source URL.
-2. A reference to third-party `charts.js` library file given its source URL.
+1. A reference to the third-party `core.js` library file, given its source URL.
+2. A reference to third-party `charts.js` library file, given its source URL.
 3. Our explicit use of the library:
 
-   a) We only instantiate the chart object if the `div` with the `id='sales-chart'` exists as a rendered object (otherwise the `SALESREC` is not *active*).
+   a) Only if the `div` with the `id='sales-chart'` exists (as a rendered object) do we instantiate the chart object.  (The existence of the object with `id='sales-chart'` determines when the `SALESREC` record is *active*).
 
 
-   b) We instance the chart (naming the `id` where the graph should be drawn), and create a data-series with two values we want plotted `@Model.SALESREC.SFSALES` and `@Model.SALESREC.SFRETURNS`.
+   b) We instance the chart (naming the `id` where the graph should be drawn), and define the data-series with two values we want plotted: `@Model.SALESREC.SFSALES` and `@Model.SALESREC.SFRETURNS`.
 
 
->Note: The details of how the JavaScript code works is outside the scope of this example. If you want to use this particular charting library, please [read Here](https://www.amcharts.com/docs/v4/getting-started/basics/).
+>Note: The details of how to use `amcharts` library is outside the scope of this example. Please [read Here](https://www.amcharts.com/docs/v4/getting-started/basics/) for more information.
 
 
 ```html
@@ -146,22 +144,23 @@ At the bottom of the The `~\SunFarmSite\Areas\SunFarmViews\Pages\CUSTDSPF.cshtml
 
 ## Eliminating scrollbar that may appear when using standard HTML elements 
 
+Although we successfully achieved our goal to add a nice Chart by the technique introduced so far, we still have a minor challenge to solve. 
+
 Look closely at these two renderings of the Sales/Returns page.
 
 | After adding Chart, scrollbar appears | Scrollbar eliminated  |
 | :-: | :-: |
 | ![Unwanted Scrollbar](./images/with-scroll-sales-returns.png) | ![After having removed Scrollbar](./images/no-scroll-sales-returns-exclude-rows.png) |
 
-The image on the *left* shows a vertical scrollbar (the one on the right does not).
+The image on the *left* shows an *unexpected* vertical scrollbar (the one on the right does not).
 
 When something like this appears, you will find that the best practice is to use [Browser Developer Tools](https://www.geeksforgeeks.org/browser-developer-tools/) to inspect how a page got generated.
 
-Legacy Display files were designed to produce a square rendering with fixed number of rows (and character positions - aka *columns* -). Typical [Sizes](https://www.ibm.com/docs/en/i/7.5?topic=80-dspsiz-display-size-keyword-display-files) were `80x24` and `132x27`. Web Browser's canvas does not have such limitation, in fact, it is said that elements [Flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout) down and to the right as they are naturally placed in the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction). There are of course many ways to control how elements are positioned.
+Legacy Display files produce a square rendering with fixed number of rows (and character positions - aka *columns* -). Typical [Sizes](https://www.ibm.com/docs/en/i/7.5?topic=80-dspsiz-display-size-keyword-display-files) are `80x24` and `132x27`. Web Browser's canvas does not have such limitation, in fact, it is said that elements [Flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout) down and to the right as they are naturally placed in the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction). (There are of course many ways to control how elements are positioned, for this discussion we rely on the basics).
 
-Without getting into too much detail in this topic, suffice to say, the [Expo Display Pages](/concepts/user-interface/qsys-expo-display-pages.html) are processed by [Expo Client JavaScript Library](https://asnaqsys.github.io/concepts/user-interface/qsys-expo-client-advanced-css.html), to generate elements that will mimic a full legacy designed page.
+The [Expo Display Pages](/concepts/user-interface/qsys-expo-display-pages.html) uses the [Expo Client JavaScript Library](https://asnaqsys.github.io/concepts/user-interface/qsys-expo-client-advanced-css.html) to generate elements that mimic - *a full* - legacy page.
 
-
-The following *pseudo* HTML syntax exemplifies how the legacy height is accomplished on an Expo Display Page:
+The *pseudo* HTML code below shows how the legacy height is accomplished on an Expo Display Page:
 
 ```html
 <div Record="FIRST-ACTIVE-RECORD" >
@@ -189,9 +188,9 @@ The following *pseudo* HTML syntax exemplifies how the legacy height is accompli
 </div>
 ```
 
-Imagine now that the [CSS Style](https://developer.mozilla.org/en-US/docs/Web/CSS) used on each `div used as a Row` is such that its height is fixed (based on the Font selected). Having exactly `24` of this vertically positioned `div`s will render a constant height of `24 * height of Row` pixels.
+Imagine now that the [CSS Style](https://developer.mozilla.org/en-US/docs/Web/CSS) used on each `div` (for lines using Row attribute) is such that its height is fixed (based on the Font selected). Having exactly `24` of these vertically positioned `divs` will render a constant height of `24 * height of Row` pixels.
 
-In reality, seldom do legacy pages define elements on **ALL** rows, the definition may more likely be like this (again using *pseudo* HTML):
+In reality, seldom do legacy pages define elements on **ALL** rows, the definition may more likely be like the following (again using *pseudo* HTML):
 
 ```html
 <div Record="FIRST-ACTIVE-RECORD" >
@@ -212,7 +211,7 @@ In reality, seldom do legacy pages define elements on **ALL** rows, the definiti
 </div>
 ```
 
-Note how `Rows 2, 3, 8, 19, 20, 21 and 22` are not used in the legacy design. It is assumed that when rendering `Row=4`, the missing `Row=3` needs to be added to fill the gap (and so on, for rest of missing rows), that is:
+Note how `Rows 2, 3, 8, 19, 20, 21 and 22` are missing. It is assumed that when rendering `Row=4`, the missing rows: `2 and 3` need to be added to fill the gap. Same happens for the remaining row gaps, as illustrated below:
 
 ```html
 <div Record="FIRST-ACTIVE-RECORD" >
@@ -240,9 +239,17 @@ Note how `Rows 2, 3, 8, 19, 20, 21 and 22` are not used in the legacy design. It
 </div>
 ```
 
-If we can produce a `div` with a [CSS Style](https://developer.mozilla.org/en-US/docs/Web/CSS) such that it renders an *Empty* (blank) row with the same hight as `Row`, we have achieved our goal: render the Page with constant height of `17 * Row-height + 7 * Empty-Row-height` pixels, also equal to `24 * height of Row` pixels.
+>Note: Empty-row attributed `divs` have been added to fill gaps. This is done automatically by [Expo Client JavaScript Library](https://asnaqsys.github.io/concepts/user-interface/qsys-expo-client-advanced-css.html)
 
-What happens now if we suddenly added an element to the page, in the middle of our *square* geometry? Consider:
+Empty-row attributed `divs` use a [CSS Style](https://developer.mozilla.org/en-US/docs/Web/CSS) with a *Empty* (or blank) content with a `height` equal to the normal Row-attributed `divs`.
+
+If we compute the total Page height: `17 * Row-height + 7 * Empty-Row-height` pixels, matching the height we desire (same as `24 * height of Row` pixels).
+
+> For more on how how Expo Display files are rendered, read [here](/concepts/user-interface/qsys-expo-dds-elements.html).
+
+What happens now if we suddenly added an element to the page, in the middle of our *square* geometry? 
+
+Consider:
 
 ```html
 <div id="sales-chart-container">
@@ -250,16 +257,18 @@ What happens now if we suddenly added an element to the page, in the middle of o
 </div>
 ```
 
-The *height* of `div id="sales-chart-container"` will make our Page taller. With the Browser window height we had adjusted to a *normal* Display page, a vertical-scrollbar will appear.
-
-> Read more about how legacy Display file is rendered [here](/concepts/user-interface/qsys-expo-dds-elements.html).
+The *height* of `div id="sales-chart-container"` <mark>will make our Page taller </mark>. With the Browser window height we had adjusted to a *normal* Display page, a **vertical-scrollbar will appear**.
 
 We can use the [Browser Developer Tools](https://www.geeksforgeeks.org/browser-developer-tools/) to inspect how a page got generated. Looking at the elements rendered, we identify that <mark>The Empty Rows from 6 to 20 should be eliminated</mark>. (We could optionally use absolute positioned Chart, but this presents other challenges).
 
-We could use the property *ExcludeEmptyRows* on the [DdsRecord](http://localhost:4000/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html) to specify which *EmptyRow*s should be eliminated. This property takes a comma-separated list of either numeric ranges, or single values describing the EmptyRow we **DO NOT** want to inject to complete the (otherwise) constant vertical height.
+Using the property [ExcludeEmptyRows](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html#properties)
+we can eliminate <mark>Selected</mark> Empty-Row `divs`. 
+
+[ExcludeEmptyRows](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html#properties) property takes a comma-separated list of either numeric ranges, or single values describing the EmptyRow we **DO NOT** want to inject to complete the (otherwise) constant vertical height.
 
 ```html
-<DdsRecord For="SALESREC" StretchConstantText=false KeyNames="F12 'Cancel';" ExcludeEmptyRows="6-20">
+<DdsRecord For="SALESREC" StretchConstantText=false KeyNames="F12 'Cancel';" 
+           ExcludeEmptyRows="6-20">
 ```
 
 
@@ -267,5 +276,5 @@ We could use the property *ExcludeEmptyRows* on the [DdsRecord](http://localhost
 | :-: |
 | ![Excluding some Empty Rows with Inspector Open](./images/no-scroll-sales-returns-exclude-rows-inspector.png) |
 
->Note how in the inspector window, we see that record format `"MSGSFC"` is missing the `data-asna-row`s `6, 7, ... 20` with the style `dds-grid-empty-row`. These `div`s where unnecessarily adding height to our page (evidenced by the appearance of a vertical scrollbar).
+>Note how in the inspector window, we see that record format `"MSGSFC"` is missing the `data-asna-row`s `6, 7, ... 20` with the style `dds-grid-empty-row`. These `divs` where unnecessarily adding height to our page (evidenced by the appearance of a vertical scrollbar).
 
