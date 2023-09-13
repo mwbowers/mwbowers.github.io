@@ -276,5 +276,8 @@ we can eliminate <mark>Selected</mark> Empty-Row `divs`.
 | :-: |
 | ![Excluding some Empty Rows with Inspector Open](./images/no-scroll-sales-returns-exclude-rows-inspector.png) |
 
->Note how in the inspector window, we see that record format `"MSGSFC"` is missing the `data-asna-row`s `6, 7, ... 20` with the style `dds-grid-empty-row`. These `divs` where unnecessarily adding height to our page (evidenced by the appearance of a vertical scrollbar).
+Without the unnecessary Empty-row attributed `divs` <mark>the vertical scroll-bar is gone!</mark>
+
+The image above shows the Developer Tools Inspector open to observe the new HTML, where the empty-rows from 6 to 20 have been eliminated. The Page height is back to its normal `24` rows.
+
 
