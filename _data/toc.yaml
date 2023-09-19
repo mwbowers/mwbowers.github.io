@@ -2875,5 +2875,13 @@ Examples:
       path: /examples/sunfarm/enhance-prompts-clickable-icon.html
     - title: 10. Replacing numeric Data points with a Chart
       path: /examples/sunfarm/enhance-replace-data-with-chart.html
+  - sectiontitle: Basic Logic Enhancements
+    sectionpath: /examples/sunfarm/sunfarm-logic-change.html
+    section:
+    - title: Reading more Subfile records.
+      path: /examples/sunfarm/enhance-more-subfile-reords.html
+    - title: Reading from additional database files.
+      path: /examples/sunfarm/enhance-more-files-in-program.html
+
 
                                                                                           
