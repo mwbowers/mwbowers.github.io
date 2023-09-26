@@ -8,7 +8,7 @@ This is particularly important when enhancing the UI on a [ASNA Wings](https://d
 
 The [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) plays an important role as the UI Controller, and its responsible for sending and receiving the UI Data *to* the Application Logic and *from* the User (Browser response).
 
-There are two virtual methods on this class that allows us to *intercept* the Data that is flowing from the the Application to the User and from User to the Application:
+There are two virtual methods on [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) that allow us to *intercept* the Data that is flowing from the the Application to the User *or* from User to the Application:
 
 1. `OnCopyDisplayfileToBrowser`: right before the Application data is sent to the User (Browser) 
 2. `OnCopyBrowserToDisplayFile`: right before the User (Browser) response is sent back to the Application.
@@ -81,9 +81,61 @@ In the case of Subfile records, use indexer to get to proper field:
 ```cs
     if ( SFLC.IsActive && SFLC.SFL1.Count> 0 && SFLC.SFL1[0].IsActive ) 
     {
-        SFLC.SFL1[0].SFSEL = "2";
+        SFLC.SFL1[0].SFSEL = 2;
     }
 ```
 
 ## Testing or Modifying Record Indicators.
 
+There are two kind of indicators that are involved in Display Pages:
+1. Option indicators.
+
+    [IBM i DDS Manual](https://www.ibm.com/docs/en/i/7.5?topic=44-condition-display-files-positions-7-through-16), defines **Option** indicators as those that are placed in columns seven thru sixteen to *condition* Keywords and Fields. Syntax exist to combine indicators using logical operators such as **AND** and **OR**. When a keyword or field is conditioned and the expression evaluates to *True*, then the keyword is applied (if condition precedes a keyword) or the field is present/visible (if condition precedes a field definition). Otherwise (if expression is *False*), the keyword is ignored or the field is not included.
+
+    >Option indicators are two-state values. At the time of writing the record an indicator can be either *set* or *reset* (true or false).
+
+2. Response indicators. 
+
+    A response indicator is defined as part of a [DDS keyword entries](https://www.ibm.com/docs/en/i/7.5?topic=ddf-dds-keyword-entries-display-files-positions-45-through-80), indicating that the *function* it represents has *completed*. Not all of the DDS Keywords may define a response indicator.
+
+    >Response indicators are three-state values. When the *function* associated with the keyword executes, the response indicator can direct the indicator to be *set*, *reset* or *remain unchanged*. [Expo Model](/reference/asna-qsys-expo/expo-model/expo-model-intro.html) represents these three states as the characters: '1', '0' or 'X'.
+
+
+When writing code inside the two overridden methods described above, an **Option indicator** may be tested as follows:
+
+```cs
+
+    // *IN66 was true when record was written.
+    if (CUSTREC.GetOptionIndicator(61) ) 
+    {
+
+    }
+```
+
+Or a **Response indicator** may be tested in code, like:
+
+```cs
+    // Subfile record RRN 4 has changed, setting *IN03 to true. This is assuming that ChangeIndicator is defined on this record.
+    if (SFLC.SFL1[3].GetResponseIndicator(3) == '1')
+    {
+
+    }
+```
+
+To change the value of Indicators, the [RecordModel class](http://localhost:4000/reference/asna-qsys-expo/expo-model/record-model.html) provides the following two methods:
+
+```cs
+SetOptionIndicator(int indicator, bool newValue)
+
+SetResponseIndicator(int indicator, char newValue01X)
+```
+
+Additionally if **ALL** the *one-hundred* indicators are needed, the following [RecordModel class](http://localhost:4000/reference/asna-qsys-expo/expo-model/record-model.html) methods can be used to return *A Copy* of the indicator array:
+
+```cs
+bool[] GetOptionIndicators()
+
+char[] GetResponseIndicators()
+```
+
+>The use of these Intercepting Data during User Interface operations is considered an **Advanced** topic. It requires a good knowledge of the [Monarch User Interface  Concepts](https://asnaqsys.github.io/concepts/user-interface/ui-overview.html). The methods described in this topic have some validation regarding the state of the Page Model, but it is your responsibility to make good use of them.
