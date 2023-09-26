@@ -76,8 +76,11 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-library.html
     - title: Expo DDS-like TagHelpers
       path: /concepts/user-interface/qsys-expo-dds-elements.html
-    - title: Expo Display Page Model
-      path: /concepts/user-interface/qsys-expo-display-page-model.html
+    - sectiontitle: Expo Display Page Model
+      sectionpath: /concepts/user-interface/qsys-expo-display-page-model.html
+      section:
+      - title: Intercept Model <=> Program Data Flow
+        path: /concepts/user-interface/intercept-model-program-dataflow.html
     - title: Messagefile
       path: /concepts/user-interface/qsys-expo-messagefile.html
     - title: Expo Client Library Advanced CSS
@@ -86,6 +89,7 @@ Concepts:
       path: /concepts/user-interface/qsys-expo-client-subfile.html
     - title: Expo Window Design
       path: /concepts/user-interface/qsys-expo-window-design.html
+
   - sectiontitle: Reports
     sectionpath: /concepts/printing/printing-introduction.html
     section:
