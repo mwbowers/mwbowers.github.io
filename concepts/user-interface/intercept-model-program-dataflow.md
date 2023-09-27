@@ -140,7 +140,7 @@ char[] GetResponseIndicators()
 
 ## Direct Access to the DataSet
 
-The [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) provides for methods to access the DataSet internal DataTable for advanced customization:
+The [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) provides methods to access the DataSet internal DataTable for advanced customization:
 
 ```cs
 DataTable GetDataTable(string formatName)             // Access to DataTable for any active record (including subfile records)

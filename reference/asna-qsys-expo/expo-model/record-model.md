@@ -113,7 +113,10 @@ public class CUSTREC_Model : RecordModel
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetMessageText](#getmessagetextstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a string value with the text corresponding to the message requested. | The Message text
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetResultIndicator](#getresultindicatorstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the result indicator numeric value | if result less than 100, the value is the result indicator, otherwise no response indicator was requested
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean[])[]| GetOptionIndicators() | Gets a copy of the array of option indicators. | boolean array.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)| GetOptionIndicator([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the option indicator value. | Boolean value.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)[]| GetResponseIndicators() | Gets a copy of the response indicators. | Char array.
+| [Char](https://learn.microsoft.com/en-us/dotnet/api/system.char) | GetResponseIndicator([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the response indicator value. May be '0', '1' or 'X'. | Char value.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsAidKeyInEffect](#isaidkeyineffectaidkey-int32)([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a boolean value indicating if the Aid Key is in effect | true if the Aid key is in effect
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsAidKeyInEffect](#isaidkeyineffectconditionalproperty-int32)([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a boolean value indicating if the Aid Key is in effect given a conditional property | true if the Aid key is in effect
@@ -126,6 +129,8 @@ public class CUSTREC_Model : RecordModel
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ResolveConditionalProperty](#resolveconditionalpropertystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a string value that indicates the result of the condition in the property given as a string | The value corresponding to the condition
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ResolveConditionalProperty](#resolveconditionalpropertyconditionalproperty)([ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html)) | Gets a string value that indicates the result of the condition in the property given | The value corresponding to the condition
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void)| SetOptionIndicator([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Sets the option indicator value. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void)| SetResponseIndicator([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://learn.microsoft.com/en-us/dotnet/api/system.char)) | Sets the response indicator value. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [WasRecordPosted](#wasrecordpostedstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a boolean value that indicates if the Record was posted | true is the Record was posted
 
@@ -177,36 +182,12 @@ The Message text
 <br>
 <br>
 
-### GetResultIndicator([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-Gets the result indicator numeric value
-
-```cs
-GetResultIndicator(String indValue);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | indValue | the named indicator 
-
-#### Returns
-
-[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
-
-if result less than 100, the value is the result indicator, otherwise no response indicator was requested
-
-
-<br>
-<br>
-
 ### IsAidKeyInEffect([AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Gets a boolean value indicating if the Aid Key is in effect
 
 ```cs
-IsAidKeyInEffect(ASNA.QSys.Expo.Model.AidKey key, ref Int32 resultingIndicator);
+IsAidKeyInEffect(ASNA.QSys.Expo.Model.AidKey key, ref Int32 responseIndicator);
 ```
 
 #### Parameters
@@ -214,7 +195,7 @@ IsAidKeyInEffect(ASNA.QSys.Expo.Model.AidKey key, ref Int32 resultingIndicator);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) | key | Aid key 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | resultingIndicator | output resulting indicator number 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | responseIndicator | output response indicator number 
 
 #### Returns
 
@@ -231,7 +212,7 @@ true if the Aid key is in effect
 Gets a boolean value indicating if the Aid Key is in effect given a conditional property
 
 ```cs
-IsAidKeyInEffect(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty, ref Int32 resultingIndicator);
+IsAidKeyInEffect(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty, ref Int32 responseIndicator);
 ```
 
 #### Parameters
@@ -239,7 +220,7 @@ IsAidKeyInEffect(ASNA.QSys.Expo.Model.ConditionalProperty conditionalProperty, r
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ConditionalProperty](/reference/asna-qsys-expo/expo-model/conditional-property.html) | conditionalProperty | Conditional Property 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | resultingIndicator | output resulting indicator number 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | responseIndicator | output response indicator number 
 
 #### Returns
 
