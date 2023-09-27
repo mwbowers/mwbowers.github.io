@@ -138,4 +138,19 @@ bool[] GetOptionIndicators()
 char[] GetResponseIndicators()
 ```
 
+## Direct Access to the DataSet
+
+The [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) provides for methods to access the DataSet internal DataTable for advanced customization:
+
+```cs
+DataTable GetDataTable(string formatName)             // Access to DataTable for any active record (including subfile records)
+
+DataRow GetDataRow(string formatName)                 // Access to DataRow for any active record (non-subfile)
+
+DataRow GetSubfileDataRow(string formatName, int RRN) // Access to DataRow for any active subfile record (requires subfile-record RRN)
+```
+
+
+<br>
+
 >The use of these Intercepting Data during User Interface operations is considered an **Advanced** topic. It requires a good knowledge of the [Monarch User Interface  Concepts](https://asnaqsys.github.io/concepts/user-interface/ui-overview.html). The methods described in this topic have some validation regarding the state of the Page Model, but it is your responsibility to make good use of them.
