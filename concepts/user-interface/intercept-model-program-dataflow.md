@@ -105,7 +105,7 @@ When writing code inside the two overridden methods described above, an **Option
 
 ```cs
 
-    // *IN66 was true when record was written.
+    // *IN61 was true when record was written.
     if (CUSTREC.GetOptionIndicator(61) ) 
     {
 
