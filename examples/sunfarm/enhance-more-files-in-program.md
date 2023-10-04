@@ -328,6 +328,8 @@ The new file is named `Chart.js` and is created under `wwwroot\js` folder.
 
 ```js
 const LoadChart = (appData) => {
+    if (Object.keys(appData).length === 0) { return; } // Make sure object is NOT empty
+
     const CHART_ID = 'sales-chart';
     const chartEl = document.getElementById('sales-chart');
     if (chartEl) {
@@ -397,6 +399,144 @@ const LoadChart = (appData) => {
 }
 ```
 
+Without getting into too much detail regarding how the [amcharts JavaScript Library](https://www.amcharts.com/docs/v4/getting-started/using-javascript/) is used (topic outside the scope of this example), there are three important pieces of code needed to understand for the purposes of this example:
+
+1. Where this function is being called.
+2. What is expected on the only `appData` function parameter.
+3. How is the data in the two series used by the Chart.
+
+### CALLING THE JAVASCRIPT FUNCTION
+
+The RazorPage `~\SunFarmSite\Areas\SunFarmViews\Pages\CUSTDSPF.cshtml` has the following code at the end of the file.
+
+```html
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="~/js/Chart.js"></script>
+<script>
+    LoadChart(@Html.Raw(@Model.SALESREC.SalesReturnsChartData));
+</script>
+```
+
+The first two *script* lines *inject* the JavaScript library into the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
+The third *script* line *injects* the JavaScript file that has our listed above.
+The last script block has the call to our `LoadChart` function.
+
+Please note:
+
+1. We use [@Html.Raw](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.htmlhelper.raw?view=aspnet-mvc-5.2) RazorPage helper method to avoid additional Html escaping processing.
+2. The parameter `@Html.Raw(@Model.SALESREC.SalesReturnsChartData)` is evaluated on the Web server, as part of the `HTML` rendering phase, before the response is sent to the Client (Browser).
+3. The string that `@Html.Raw` returns is used *verbatim* in the script. In this case the syntax describes a JavaScript object. The JavaScript parser will instantiate an object and use it as the parameter to `LoadChart`.
+4. `SalesReturnsChartData` is a C# string property defined in the `SALESREC_Model` class, defaulting to `"{}"`. If the value for the string property is **NOT** changed by the `SALESREC_Model`, the JavaScript interpreter will instance an empty *object*. 
+
+Probably the easiest way to understand what is expected on the `appData` object parameter is to capture one example and show it in its string [JSON](https://www.json.org/json-en.html) notation:
+
+
+```cs
+{
+    "year": 1997,
+    "sales": [
+        35960.71, 107542.51, 66449.91, 46780.34, 67849.54, 52377.25, 102155.91, 70192.77, 115569.25, 98646.14, 112500.55, 132139.17 
+    ],
+    "returns": [
+        4805.42, 14669.42, 9301.03, 6372.28, 9502.68, 6991.5, 14102.82, 9375.55, 15596.11, 13298.68, 14903.11, 17813.95
+    ]
+}
+```
+
+The object defines three properties: 
+* `year` : numeric (expected valid 4 digit year).
+* `sales` : an array of twelve months (each valid decimal value representing dollar amount).
+* `returns`: an array of twelve months (each valid decimal value representing dollar amount).
+
+>Note: our *simplified* function does not validate the property values given.
+
+Given all this information, the implementation for `PopulateChartData` (to update the value of property `SalesReturnsChartData` used in step 4 above), is simple:
+
+```cs
+internal void PopulateChartData()
+{
+    if (SFL_SalesReturns.Count == 0)
+        return;
+
+    decimal[] chartSales = new decimal[12];
+    decimal[] chartReturns = new decimal[12];
+
+    for( int i =0; i < SFL_SalesReturns.Count; i++ )
+    {
+        chartSales[i] = SFL_SalesReturns[i].SALES;
+        chartReturns[i] = Math.Abs( SFL_SalesReturns[i].RETURNS ); // Easier to view positive values.
+    }
+
+    SalesReturnsChartData = "{";
+
+    SalesReturnsChartData += $"year: {SFL_SalesReturns[0].YEAR},";
+    SalesReturnsChartData += $"sales: [{ToCommaSeparatedValueStr(chartSales)}],";
+    SalesReturnsChartData += $"returns: [{ToCommaSeparatedValueStr(chartReturns)}]";
+
+    SalesReturnsChartData += "}";
+}
+
+private string ToCommaSeparatedValueStr(decimal[] data)
+{
+    string result = string.Empty;
+
+    foreach (var val in data)
+    {
+        result += $"{val},";
+    }
+
+    result = result.TrimEnd(',');
+
+    return result;
+}
+```
+
+Lastly, we proceed to describe how is `LoadChart` using `appData` object. 
+
+This object is only used when describing the series chart data [JSON](https://www.json.org/json-en.html) object.
+
+Let's take one of the series to talk about it. (The other uses the same technique):
+
+```js
+salesSeries.data = [
+    { "date": new Date(appData.year, 0), "value": appData.sales[0] },
+    { "date": new Date(appData.year, 1), "value": appData.sales[1] },
+    { "date": new Date(appData.year, 2), "value": appData.sales[2] },
+    { "date": new Date(appData.year, 3), "value": appData.sales[3] },
+    { "date": new Date(appData.year, 4), "value": appData.sales[4] },
+    { "date": new Date(appData.year, 5), "value": appData.sales[5] },
+    { "date": new Date(appData.year, 6), "value": appData.sales[6] },
+    { "date": new Date(appData.year, 7), "value": appData.sales[7] },
+    { "date": new Date(appData.year, 8), "value": appData.sales[8] },
+    { "date": new Date(appData.year, 9), "value": appData.sales[9] },
+    { "date": new Date(appData.year, 10), "value": appData.sales[10] },
+    { "date": new Date(appData.year, 11), "value": appData.sales[11] }
+];
+```
+
+The chart series is an array of *objects* to be plotted as x,y coordinates.
+
+You may notice (in the creation of each series) the code that maps fields with chart data-points:
+
+```js
+salesSeries.dataFields.dateX = 'date';
+salesSeries.dataFields.valueY = 'value';
+```
+Each object in the array has two properties:
+
+* "date"  : a JavaScript Date object.
+* "value" : a JavaScript floating point numeric value.
+
+>The names are not important as long as they match the `series.dataFields` `dateX` and `valueY` property values.
+
+We create twelve Date objects, each for every month of the Year. Notice that for the year we use our parameter `appData`, property `year`. When creating the Date (using *new* syntax), we pass the `year` and an integer value representing the month (0=Jan, 1=Feb, etc). We exclude the day of the month (and the rest of time-of-day information). Date constructor only requires `year, month` the rest are optional. This is exactly what we have.
+
+For the `value` properties, we simply refer to the value we have from our Subfile (sales or returns on each month, depending on the series we are loading).
+
+The rest of the code in this JavaScript function selects chart styles to make it appealing and allowing the user to get individual point information (by hovering the mouse over the bullets on the chart lines).
+
+Look at the results in next section. This Chart conveys - with little effort - significantly more information to the user. Information we already had in the database but inaccessible, until now.
 
 ## Results
 
