@@ -2882,7 +2882,7 @@ Examples:
     sectionpath: /examples/sunfarm/sunfarm-logic-change.html
     section:
     - title: Reading more Subfile records.
-      path: /examples/sunfarm/enhance-more-subfile-reords.html
+      path: /examples/sunfarm/enhance-more-subfile-records.html
     - title: Reading from additional database files.
       path: /examples/sunfarm/enhance-more-files-in-program.html
 

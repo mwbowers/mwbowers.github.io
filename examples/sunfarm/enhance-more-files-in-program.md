@@ -242,20 +242,18 @@ The new Subfile `SFL_SALESRETURNS` and corresponding RRN `SalesSflrrn` are decla
 
 To write the twelve records we have collected to the Subfile, we use the following code:
 
-```cs
+```vb
+DclConst MonthsInYear 12
+    .
+    .
+    .
+
 If LastRecordedYear *GT 0 
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[0], LastRecordedYearReturns[0]) // Jan
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[1], LastRecordedYearReturns[1]) // Feb
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[2], LastRecordedYearReturns[2]) // Mar
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[3], LastRecordedYearReturns[3]) // Apr
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[4], LastRecordedYearReturns[4]) // May
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[5], LastRecordedYearReturns[5]) // Jun
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[6], LastRecordedYearReturns[6]) // Jul
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[7], LastRecordedYearReturns[7]) // Aug
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[8], LastRecordedYearReturns[8]) // Sep
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[9], LastRecordedYearReturns[9]) // Oct
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[10], LastRecordedYearReturns[10]) // Nov
-    WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[11], LastRecordedYearReturns[11]) // Dec
+    If LastRecordedYear *GT 0 
+        For Index( month=0 ) To( MonthsInYear )  
+            WriteSalesReturnsSubfileRecord( LastRecordedYear, LastRecordedYearSales[month], LastRecordedYearReturns[month])
+        EndFor
+    EndIf
 EndIf
 ```
 
@@ -327,6 +325,8 @@ Instead of adding the required JavaScript to the RazorPage itself, we use a refe
 The new file is named `Chart.js` and is created under `wwwroot\js` folder.
 
 ```js
+const MONTHS_YEAR = 12;
+
 const LoadChart = (appData) => {
     if (Object.keys(appData).length === 0) { return; } // Make sure object is NOT empty
 
@@ -367,34 +367,17 @@ const LoadChart = (appData) => {
         returnsBullet.tooltipText = 'Returns {valueY}';
         returnsSeries.stroke = am4core.color('rgb(255,0,0)');
 
-        salesSeries.data = [
-            { "date": new Date(appData.year, 0), "value": appData.sales[0] },
-            { "date": new Date(appData.year, 1), "value": appData.sales[1] },
-            { "date": new Date(appData.year, 2), "value": appData.sales[2] },
-            { "date": new Date(appData.year, 3), "value": appData.sales[3] },
-            { "date": new Date(appData.year, 4), "value": appData.sales[4] },
-            { "date": new Date(appData.year, 5), "value": appData.sales[5] },
-            { "date": new Date(appData.year, 6), "value": appData.sales[6] },
-            { "date": new Date(appData.year, 7), "value": appData.sales[7] },
-            { "date": new Date(appData.year, 8), "value": appData.sales[8] },
-            { "date": new Date(appData.year, 9), "value": appData.sales[9] },
-            { "date": new Date(appData.year, 10), "value": appData.sales[10] },
-            { "date": new Date(appData.year, 11), "value": appData.sales[11] }
-        ];
-        returnsSeries.data = [
-            { "date": new Date(appData.year, 0), "value": appData.returns[0] },
-            { "date": new Date(appData.year, 1), "value": appData.returns[1] },
-            { "date": new Date(appData.year, 2), "value": appData.returns[2] },
-            { "date": new Date(appData.year, 3), "value": appData.returns[3] },
-            { "date": new Date(appData.year, 4), "value": appData.returns[4] },
-            { "date": new Date(appData.year, 5), "value": appData.returns[5] },
-            { "date": new Date(appData.year, 6), "value": appData.returns[6] },
-            { "date": new Date(appData.year, 7), "value": appData.returns[7] },
-            { "date": new Date(appData.year, 8), "value": appData.returns[8] },
-            { "date": new Date(appData.year, 9), "value": appData.returns[9] },
-            { "date": new Date(appData.year, 10), "value": appData.returns[10] },
-            { "date": new Date(appData.year, 11), "value": appData.returns[11] }
-        ];
+        salesSeries.data = [];
+        returnsSeries.data = [];
+
+        for (let month = 0; month < MONTHS_YEAR; month++) {
+            salesSeries.data.push({
+                "date": new Date(appData.year, month), "value": appData.sales[month]
+            });
+            returnsSeries.data.push({
+                "date": new Date(appData.year, month), "value": appData.returns[month]
+            });
+        }
     }
 }
 ```
@@ -499,20 +482,13 @@ This object is only used when describing the series chart data [JSON](https://ww
 Let's take one of the series to talk about it. (The other uses the same technique):
 
 ```js
-salesSeries.data = [
-    { "date": new Date(appData.year, 0), "value": appData.sales[0] },
-    { "date": new Date(appData.year, 1), "value": appData.sales[1] },
-    { "date": new Date(appData.year, 2), "value": appData.sales[2] },
-    { "date": new Date(appData.year, 3), "value": appData.sales[3] },
-    { "date": new Date(appData.year, 4), "value": appData.sales[4] },
-    { "date": new Date(appData.year, 5), "value": appData.sales[5] },
-    { "date": new Date(appData.year, 6), "value": appData.sales[6] },
-    { "date": new Date(appData.year, 7), "value": appData.sales[7] },
-    { "date": new Date(appData.year, 8), "value": appData.sales[8] },
-    { "date": new Date(appData.year, 9), "value": appData.sales[9] },
-    { "date": new Date(appData.year, 10), "value": appData.sales[10] },
-    { "date": new Date(appData.year, 11), "value": appData.sales[11] }
-];
+salesSeries.data = [];
+
+for (let month = 0; month < MONTHS_YEAR; month++) {
+    salesSeries.data.push({
+        "date": new Date(appData.year, month), "value": appData.sales[month]
+    });
+}
 ```
 
 The chart series is an array of *objects* to be plotted as x,y coordinates.

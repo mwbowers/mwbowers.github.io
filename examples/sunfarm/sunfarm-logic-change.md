@@ -6,7 +6,7 @@ title: Basic Logic Enhancements
 
 For the purposes of this Example, we use a a fork of [10 Basic UI Enhancements Example](\examples\sunfarm\sunfarm.html).
 
-Typically after we have [removed redundant elements from UI](\examples\sunfarm\enhance-remove-redundant-elements.html), we have more room on the page avilable to display more information.
+Typically after we have [removed redundant elements from UI](\examples\sunfarm\enhance-remove-redundant-elements.html), we have more room on the page available to display more information.
 
 Programs in the Application Logic Project control how much data is read from the database and make it available to the Website to present to the user.
 
