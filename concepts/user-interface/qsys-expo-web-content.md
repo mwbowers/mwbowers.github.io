@@ -57,7 +57,7 @@ Other files of interest:
 
 Any resource that is specific to the Application should go into `wwwroot` at the first level of folder under `wwwroot`, avoiding the `lib` which may get replaced by third-party released libraries.
 
-> You can look at [SunFarm sample Project](https://asna.github.io/SunFarm/logo-branding/) for a description on how to use Application dependent Web resources.
+> You can look at [SunFarm sample Project](/examples/sunfarm/enhance-logo-branding.html) for a description on how to use Application dependent Web resources.
 
 ## Razor Page Layout Pages
 

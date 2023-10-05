@@ -41,50 +41,91 @@ All ASNA Monarch .NET Projects have a specialized class derived from ASNA.QSys `
 
 [ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help150/Main_Monarch_90.htm) generates such class during migration and gives it the name `MyJob`. (The namespace for this class is the namespace provided by the migrator).
 
-The generated MyJob looks like the [following code](https://github.com/ASNA/SunFarm/blob/master/CustomerAppLogic/MyJob.cs):
+The generated MyJob looks like the following code:
 
-~~~cs
-public partial class MyJob : ASNA.QSys.HostServices.WebJob
+[Click here to see Encore RPG version of MyJob.er](https://github.com/asnaqsys-examples/sunfarm-logic-enhancements/blob/main/SunFarmLogic/MyJob.er)
+
+[Here is a copy C# version of MyJob.cs](https://github.com/asnaqsys-examples/sunfarm-logic-enhancements/blob/main/SunFarmLogic_CS/MyJob.cs):
+
+```cs
+using ASNA.QSys.Runtime;
+using ASNA.DataGate.Common;
+using System;
+using ACME.SunFarm;
+using ASNA.QSys.Runtime.JobSupport;
+namespace ACME.SunFarmCustomers_Job
 {
-    protected Indicator _INLR;
-    protected Indicator _INRT;
-    protected IndicatorArray<Len<_1, _0, _0>> _IN;
-    protected dynamic DynamicCaller_;
-    public Database MyDatabase = new Database(<dbname>);
-    public Database MyPrinterDB = new Database(<printer-db-name>);
-.
-.
-.
-    MyJob(ASNA.QSys.JobSupport.IJobServices JobServices)
-        : base(JobServices)
+    [ProgramIndicators(INLRName = "_INLR", INName = "_IN", INRTName = "_INRT")]
+    public partial class MyJob : InteractiveJob
     {
-        _IN = new IndicatorArray<Len<_1, _0, _0>>((char[])null);
-        _instanceInit();
-    }
+        protected Indicator _INLR;
+        protected Indicator _INRT;
+        protected IndicatorArray<Len<_1, _0, _0>> _IN;
+        protected dynamic _DynamicCaller;
+        public Database MyDatabase = new Database(<dbname>);
+        public Database MyPrinterDB = new Database(<printer-db-name>);
 
-    override public void Dispose(bool disposing)
-    {
-        if (disposing)
+        override protected Database getDatabase()
         {
-            MyDatabase.Close();
-            MyPrinterDB.Close();
+            return MyDatabase;
         }
-        base.Dispose(disposing);
-    }
 
-    override protected void ExecuteStartupProgram()
-    {
-        Indicator _LR = '0';
-        MyDatabase.Open();
-        MyPrinterDB.Open();
+        override protected Database getPrinterDB()
+        {
+            return MyPrinterDB;
+        }
 
-        DynamicCaller_.CallD(<entry-point>, out _LR);
+        override public void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+
+                MyDatabase.Close();
+                MyPrinterDB.Close();
+
+            }
+            base.Dispose(disposing);
+        }
+
+        static MyJob()
+        {
+            Database.PrepareNameStore<MyJob>(NameStoreOptions.UseJsonDefaultPath);
+        }
+
+        public static MyJob JobFactory()
+        {
+            MyJob job = null;
+
+            job = new MyJob();
+            return job;
+        }
+
+        override protected void ExecuteStartupProgram()
+        {
+            Indicator _LR = '0';
+            MyDatabase.Open();
+            MyPrinterDB.Open();
+
+            _DynamicCaller.CallD(<entry-point>, out _LR);
+        }
+
+        public MyJob()
+        {
+            _IN = new IndicatorArray<Len<_1, _0, _0>>((char[])null);
+            _instanceInit();
+        }
+
+        void _instanceInit()
+        {
+            _DynamicCaller = new DynamicCaller(this);
+        }
     }
-~~~
+}
+```
 
 > Note: `<dbname>`, `<printer-db-name>` and `<entry-point>` are placeholders for actual string constants, depending on the Application configuration. 
 
-As you can see in the code, in addition to the services the *base* class `WebJob` provides, the Project's Job (MyJob), adds support for:
+As you can see in the code, in addition to the services the *base* class `InteractiveJob` provides, the Project's Job (MyJob), adds support for:
 
 1. Indicators (100 of them)
 2. LR and RT indicators

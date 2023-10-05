@@ -36,8 +36,11 @@ Concepts:
       path: /concepts/architecture/activation-groups.html  
     - title: Program User Interface
       path: /concepts/architecture/program-user-interface.html  
-    - title: Monarch Base Architecture
-      path: /concepts/architecture/asna-qsys.html
+    - sectiontitle: Monarch Base Architecture
+      sectionpath: /concepts/architecture/asna-qsys.html
+      section:
+      - title: The Job 
+        path: /concepts/architecture/qsys-job.html
   - sectiontitle: Program Structure
     sectionpath: /concepts/program-structure/program-structure-overview.html
     section:
@@ -119,10 +122,6 @@ Concepts:
       path: /concepts/background/ibmi-job.html
     - title: IBM i Program
       path: /concepts/background/ibmi-program.html
-  - sectiontitle: Archive
-    section:
-    - title: The Job
-      path: /concepts/architecture/qsys-job.html
   - sectiontitle: Classic Monarch Framework Concepts
     sectionpath: /reference/monarch-fx/amfASNAMonarchFrameworkConceptsMain.html
     section:

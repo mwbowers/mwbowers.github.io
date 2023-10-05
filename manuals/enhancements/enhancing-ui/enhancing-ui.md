@@ -8,5 +8,5 @@ There are many ways in which the user interface of an application can be enhance
  + [Upgrading Subfiles to HTML Tables](upgrading-subfiles-to-tables.html)
  + [Using Non-Display File Pages](enhancing-with-non-display-file.html)
 
-## Guided Example
-[Here](//asna.github.io/SunFarm/) is an example of an application being enhanced step by step.
+## Guided Examples
+[10 Basic UI Enhancements](/examples/sunfarm/sunfarm.html) and [Basic Logic Enhancements](/examples/sunfarm/sunfarm-logic-change.html) are detailed examples provided with step by step instructions.

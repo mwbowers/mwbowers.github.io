@@ -153,7 +153,7 @@ There are two sides where the Application Developer will spend most of his time 
 1. Working on the Markup (Razor Page code) - The *input* -.
 2. Examining the generated HTML on the Web Browser - The *output* -.
 
-Working on the Markup: The following code is a section of the Markup for [Customer Maintenance](https://asna.github.io/SunFarm/customer-maintenance-enhancement/) Sample Page, which is shown with two *Active* records: `CUSTREC` and `MSGSFC`. We have eliminated code to focus primarily on how  Rows 4 and 5 are specified, and how `Address 1` constant and `SFADDR1` char field are described on the Page's markup. [^11]
+Working on the Markup: The following code is a section of the Markup for [Customer Maintenance](https://github.com/asnaqsys-examples/sunfarm-ui-enhancements/blob/main/SunFarmSite/Areas/SunFarmViews/Pages/CUSTDSPF.cshtml) Sample Page, which is shown with two *Active* records: `CUSTREC` and `MSGSFC`. We have eliminated code to focus primarily on how  Rows 4 and 5 are specified, and how `Address 1` constant and `SFADDR1` char field are described on the Page's markup. [^11]
 
 ```html
 <DdsRecord For="CUSTREC" StretchConstantText=false KeyNames="ENTER 'Submit'; F3 'Exit'; F4 'Prompt'; F6 'New Customer'; F11 'Remove Customer'; F12 'Back';">
@@ -230,7 +230,7 @@ Note how **not all the Rows** nor **all** the **Cols** need to be specified. The
 
 > Rows not included become *empty rows* and Cols become *unused* columns on a Row.
 
-The following image shows the partial rendering of `CUSTREC` and `MSGSFC` *Active* records to form the "Customer Maintenance" Page for the Sample [SunFarm](https://asna.github.io/SunFarm/) Application.
+The following image shows the partial rendering of `CUSTREC` and `MSGSFC` *Active* records to form the "Customer Maintenance" Page for the Sample [SunFarm](https://github.com/asnaqsys-examples/sunfarm-ui-enhancements) Application.
 
 ![Display Page Row](images/expo-grid-rows.png/)
 
@@ -412,7 +412,7 @@ The following shows the Markup for a Subfile Controller and the Subfile record c
 [^8]: The image shows the *next* pixel, one to the right of the cell.
 [^9]: Pre-formatted tag element to be used, but this implies Monospace font which does would not look as consistent and pleasing as the rest of the text.
 [^10]: [Non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) is acceptable, bt avoided when possible.
-[^11]: You can get the [Full listing here](https://github.com/ASNA/SunFarm/blob/master/CustomerAppSite/Areas/CustomerAppViews/Pages/CUSTDSPF.cshtml)
+[^11]: You can get the [Full listing here](https://github.com/asnaqsys-examples/sunfarm-ui-enhancements/blob/main/SunFarmSite/Areas/SunFarmViews/Pages/CUSTDSPF.cshtml)
 [^12]: The C# compiler is responsible to calculate the expression result. Razor is responsible to the syntax.
 [^13]: Actual code may differ depending on the version of the library used.
 [^14]: The default 132 can be configured to any value. There is logic in the JavaScript to expand this limit, if it is exceeded at runtime by any element.

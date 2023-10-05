@@ -14,7 +14,7 @@ There are several ways to enhance a Migrated Application:
 
 The best way to present techniques that may be applied to a Legacy Migrated Application, is by showing how the Original Migration looked *Before* and how it can look *After*.
 
-For that purpose, we have written a detailed [Enhancing Migration Guide](https://asna.github.io/SunFarm/)
+For that purpose, we have written a detailed [Examples](/examples/sunfarm/sunfarm.html) showing how to perform basic Enhancements.
 
 ## Improve Navigation
 
@@ -26,4 +26,4 @@ Just the hi-resolution *Surface* on any of the above mentioned devices, makes it
 
 Better visual representations, such as *Buttons*, *Checkboxes*, *Radio Groups*, *Drop down lists*, clickable *Icons*. The possibilities of Web-based Applications are almost limitless.
 
-Explore the [Enhancing Migration Guide](https://asna.github.io/SunFarm/) to get this process started.
+Explore the [10 Basic UI Enhancements](/examples/sunfarm/sunfarm.html) and [Basic Logic Enhancements](/examples/sunfarm/sunfarm-logic-change.html) to get this process started.
