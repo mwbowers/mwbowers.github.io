@@ -28,7 +28,7 @@ Since we have a feature to *Position* the Detail starting at any particular orde
 
 We start by defining a *Website Tab navigation area*. As depicted by the image, it consists of a `nav` HTML element as container of a collection of buttons (one per Tab):
 
-![Website Tab navigation area](./images/tab-navigation-area.mp4)
+![Website Tab navigation area](./images/tab-navigation-area.gif)
 
 The HTML is straightforward: 
 
@@ -190,4 +190,4 @@ When you group fields into different Tabs, keep in mind that *hidden* fields (fi
 
 | Before | After |
 | :-: | :-: |
-| ![Before](./images/orders-no-tabs.png) | ![After](./images/orders-fields-grouped-tabs.mp4) |
+| ![Before](./images/orders-no-tabs.png) | ![After](./images/orders-fields-grouped-tabs.gif) |
