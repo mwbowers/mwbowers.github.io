@@ -2881,10 +2881,15 @@ Examples:
   - sectiontitle: Basic Logic Enhancements
     sectionpath: /examples/sunfarm/sunfarm-logic-change.html
     section:
-    - title: Reading more Subfile records.
+    - title: Reading more Subfile records
       path: /examples/sunfarm/enhance-more-subfile-records.html
     - title: Reading from additional database files.
       path: /examples/sunfarm/enhance-more-files-in-program.html
+  - sectiontitle: Grouping fields on Multiple Tabs
+    sectionpath: /examples/sunfarm/grouping-fields-multiple-tabs.html
+    section:
+    - title: Grouping existing Record fields 
+      path: /examples/sunfarm/grouping-existing-record-fields.html
 
 
                                                                                           
