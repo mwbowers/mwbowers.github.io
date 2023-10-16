@@ -37,7 +37,7 @@ The HTML is straightforward:
 ```html
 <nav class="tab-navigation">
     <button type="button" class="tab-links" >Customer Info</button>
-    <button type="button" class="tab-links" >Order Details</button>
+    <button type="button" class="tab-links" >Order List</button>
 </nav>
 ```
 
