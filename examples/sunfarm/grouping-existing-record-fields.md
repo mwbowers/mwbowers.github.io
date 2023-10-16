@@ -19,10 +19,12 @@ The Legacy Application presented the Customer information (also known as *Header
 
 The *Customer Inquiry* is a good place to apply this technique, by grouping:
 
-1. The *Header* in one Website Tab.
-2. The *Detail* separate Tab.
+1. The *Header* in one Website Tab: Customer Info.
+2. The *Detail* separate Tab: Order List.
 
-Since we have a feature to *Position* the Detail starting at any particular order, we will keep the positioning field outside the Tab *grouping*.
+Since we have a feature to *Position* the "Order List" starting at any particular order, we will keep the positioning field outside the Tab *grouping*.
+
+>Note that the Tab technique described in this article, is a [presentation layer](https://en.wikipedia.org/wiki/Presentation_layer) modernization, no changes to the RPG logic are required.
 
 ## Website Tab navigation area
 
@@ -34,7 +36,7 @@ The HTML is straightforward:
 
 ```html
 <nav class="tab-navigation">
-    <button type="button" class="tab-links" >Order Header</button>
+    <button type="button" class="tab-links" >Customer Info</button>
     <button type="button" class="tab-links" >Order Details</button>
 </nav>
 ```
@@ -88,8 +90,8 @@ In `~\SunFarmSite\Areas\SunFarmViews\Pages\ORDHDSPF.cshtml` RazorPage, add the T
     </div>
 
     <nav class="tab-navigation">
-        <button type="button" class="tab-links">Order Header</button>
-        <button type="button" class="tab-links">Order Details</button>
+        <button type="button" class="tab-links">Customer Info</button>
+        <button type="button" class="tab-links">Order List</button>
     </nav>
 
     <div Row="3">
@@ -105,7 +107,7 @@ If you build and run the Application, opening a Customer's Order Inquiry page wi
 Grouping fields (and constants) consists on *wrapping* elements in a div defined as:
 
 ```html
-<div id="Order Header" class="tab-content">
+<div id="Customer Info" class="tab-content">
     .
     .
     .
@@ -120,14 +122,14 @@ If you tried running the Application, fields and constants inside `tab-content` 
 
 ## Website Tab Magic
 
-As we mentioned in the [Overview](./grouping-existing-record-fields.html#overview) the *magic* consist on appearing and disappearing groupings on demand, using the action that can be associated with any of the buttons in the *Tab navigation area*.
+As we mentioned in the [Overview](./grouping-existing-record-fields.html#overview) the *magic* consists on appearing and disappearing groupings on demand, using the action that can be associated with any of the buttons in the *Tab navigation area*.
 
-We need a rather simple change, complete the definition of the *Tab navigation area* as follows:
+We need a rather simple change. Complete the definition of the *Tab navigation area* as follows:
 
 ```html
 <nav class="tab-navigation">
-    <button id="initial-tab" type="button" class="tab-links" onclick="openTab(event.currentTarget)">Order Header</button>
-    <button type="button" class="tab-links" onclick="openTab(event.currentTarget)">Order Details</button>
+    <button id="initial-tab" type="button" class="tab-links" onclick="openTab(event.currentTarget)">Customer Info</button>
+    <button type="button" class="tab-links" onclick="openTab(event.currentTarget)">Order List</button>
 </nav>
 ```
 
