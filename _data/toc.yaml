@@ -2885,12 +2885,12 @@ Examples:
       path: /examples/sunfarm/enhance-more-subfile-records.html
     - title: Reading from additional database files.
       path: /examples/sunfarm/enhance-more-files-in-program.html
-  - sectiontitle: Grouping fields on Multiple Tabs
+  - sectiontitle: Grouping fields on multiple Tabs
     sectionpath: /examples/sunfarm/grouping-fields-multiple-tabs.html
     section:
-    - title: Grouping existing Record fields 
+    - title: Existing fields in separate Tabs 
       path: /examples/sunfarm/grouping-existing-record-fields.html
-    - title: Preserve user preferences 
+    - title: Preserving Tab user preferences 
       path: /examples/sunfarm/preserve-user-preferences.html
 
 

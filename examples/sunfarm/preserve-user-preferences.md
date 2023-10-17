@@ -1,5 +1,5 @@
 ---
-title: Preserve user preferences
+title: Preserving Tab user preferences
 ---
 ## Source
 

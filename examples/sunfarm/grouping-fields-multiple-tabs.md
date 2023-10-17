@@ -1,5 +1,5 @@
 ---
-title: Grouping fields on Multiple Tabs
+title: Grouping fields on multiple Tabs
 ---
 
 ## Overview
