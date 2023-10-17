@@ -2890,6 +2890,8 @@ Examples:
     section:
     - title: Grouping existing Record fields 
       path: /examples/sunfarm/grouping-existing-record-fields.html
+    - title: Preserve user preferences 
+      path: /examples/sunfarm/preserve-user-preferences.html
 
 
                                                                                           
