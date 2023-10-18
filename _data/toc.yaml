@@ -336,6 +336,19 @@ Manuals:
         path: /manuals/configuration/expo-client-side-library.html
       - title: Using Fake Data
         path: /manuals/configuration/using-fake-data.html        
+      - sectiontitle: BTerm Customization
+        sectionpath: /manuals/configuration/bterm/bterm-customization.html
+        section:
+        - title: BTerm Branding
+          path: /manuals/configuration/bterm/bterm-branding.html
+        - title: BTerm Menus
+          path: /manuals/configuration/bterm/bterm-menus.html
+        - title: BTerm Keyboard Mapping
+          path: /manuals/configuration/bterm/bterm-keyboard-mapping.html
+        - title: BTerm Macros
+          path: /manuals/configuration/bterm/bterm-macros.html
+        - title: BTerm Sizing
+          path: /manuals/configuration/bterm/bterm-sizing.html
     - title: Batch Processor Configuration
       path: /manuals/configuration/configure-batch-processor.html
   - sectiontitle: Enhancing your Migrated Application
