@@ -42,7 +42,9 @@ An instance of **SourceProfile** is an in-memory representation of the informati
 
 The [DatabaseName](source-profile-class-database-name-property.html) read-only property is the "database name" of the connection parameters. It can only be set by the constructor of **SourceProfile** , and it is the string used to reference registered database name information.
 
-The [Server](source-profile-class-server-property.html) property may either be 1) a Domain Name System (DNS) host name, 2) a TCP/IP address in "dotted decimal" notation (such as "127.0.0.1"), or 3) the special value " ***LOCAL** ", which is a synonym for the loopback TCP/IP address value "127.0.0.1".
+The [Server](source-profile-class-server-property.html) property may either be 1) a Domain Name System (DNS) host name, 2) a TCP/IP address in "dotted decimal" notation (such as "127.0.0.1"), or 3) the special value " ***LOCAL** ". In most cases ***LOCAL** is a synonym for the loopback TCP/IP address value "127.0.0.1".
+
+>For DataGate Linear, ***LOCAL** allows ADO to negotiate the best of available connection protocols with SQL Server, including TCP/IP. When TCP/IP is disabled in SQL Server, this is the only way to connect using Datagate Linear. 
 
 The [Label](source-profile-class-label-property.html) property specifies a particular database instance on the database provider for providers that allow more than one database instance, such as DataGate for Windows. For single-instance database providers, such as DataGate for iSeries, the **Label** property is ignored.
 
