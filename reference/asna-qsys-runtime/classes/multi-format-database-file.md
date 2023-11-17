@@ -70,7 +70,7 @@ MultiFormatDatabaseFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} p
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | BlockingFactor | Gets or sets the integer that determines if and optionally how many database records will be blocked across the Network for better performance when reading or writing groups of records. Network blocking significantly reduces the network burden of transferring records between server and client machines, and this is demonstrated by the substantial increase of data throughput.<br>(Inherited from [DatabaseFileBase](/reference/asna-qsys-runtime/classes/database-file-base.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CheckFormatID | AGets or sets the value that specifies if the Format IDs of the file should be checked when the file is opened.<br>(Inherited from [DatabaseFileBase](/reference/asna-qsys-runtime/classes/database-file-base.html)) | 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [FileAdapter]($$TODO-ASNA.DataGate.Client.FileAdapter.html) | fileAdapter | fileAdapter summary.<br>(Inherited from [DatabaseFileBase](/reference/asna-qsys-runtime/classes/database-file-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FilePath | Gets or sets the path to the file in the Database, given as "library/filename".<br>(Inherited from [DatabaseFileBase](/reference/asna-qsys-runtime/classes/database-file-base.html)) | 
@@ -110,7 +110,7 @@ MultiFormatDatabaseFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} p
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainstring-boolean-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Read a record format using a key. | True if the record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainstring-boolean-char-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Read a record format using a key. | True if the record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Chain](#chainstring-boolean-indicator-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Read a record format using a key. | True if the record is found, false otherwise.
@@ -217,7 +217,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 The DataSet.
 

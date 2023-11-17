@@ -121,7 +121,7 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Collate | Gets or sets whether collation will be used when printing multiple copies.  This property is of type *Boolean. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Copies | Gets or sets the number of copies to print.  This property is of type *Integer4. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CursorY | Gets the position, in Print Units, that the printer is from the top of the page.  This property is of type *Integer4. | 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclPrintFileName | Gets the name of this file field in the program. | 
 | [Duplex]($$TODO-Drawing.Printing.Duplex.html) | Duplex | Gets or sets whether the printer file is to print duplex (prints on both sides of the paper).  This property is of type ASNA.DataGate.Common.PrintDuplex. | 
@@ -169,7 +169,7 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [close](#close)() | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Close a file. | 
@@ -211,7 +211,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 The DataSet.
 

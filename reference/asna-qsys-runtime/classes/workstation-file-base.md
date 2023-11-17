@@ -75,7 +75,7 @@ WorkstationFileBase( String dclWorkstationFileName, String filePath, Boolean sha
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | DisplayFileSubfileCursorRRN | Gets the subfile record number where the cursor was position when the AID key was pressed. | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackActiveWindowCursor | Gets the display file feedback active window cursor position. | 
@@ -135,8 +135,8 @@ WorkstationFileBase( String dclWorkstationFileName, String filePath, Boolean sha
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](/reference/asna-qsys-runtime/classes/file-base.html#allocatebuffer)() | Allocate DataSet buffer.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | DataSet buffer.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [attachBuffer](#attachbufferadgdataset)([AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)) | When overriden in a derived class, set this file's DataSet to the given AdgDataSet. | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](/reference/asna-qsys-runtime/classes/file-base.html#allocatebuffer)() | Allocate DataSet buffer.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | DataSet buffer.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [attachBuffer](#attachbufferadgdataset)([AdgDataSet](/reference/datagate-client/adg-dataset-class.html)) | When overriden in a derived class, set this file's DataSet to the given AdgDataSet. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](/reference/asna-qsys-runtime/classes/file-base.html#chainbyrrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using the relative record number.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](/reference/asna-qsys-runtime/classes/file-base.html#chainkey)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using a key.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
@@ -202,7 +202,7 @@ WorkstationFileBase( String dclWorkstationFileName, String filePath, Boolean sha
 <br>
 <br>
 
-### attachBuffer([AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html))
+### attachBuffer([AdgDataSet](/reference/datagate-client/adg-dataset-class.html))
 
 When overriden in a derived class, set this file's DataSet to the given AdgDataSet.
 
@@ -214,7 +214,7 @@ attachBuffer(ASNA.DataGate.Client.AdgDataSet adgDataSet);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | adgDataSet | The dataset to attach. 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | adgDataSet | The dataset to attach. 
 
 
 <br>
