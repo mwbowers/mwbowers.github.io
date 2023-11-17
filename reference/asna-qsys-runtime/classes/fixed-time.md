@@ -23,7 +23,7 @@ Holds a fixed-time value in the specified format and with the given separator.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | IFixedDateTime Format implementation. Returns the format for this FixedTime value. | 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | IFixedDateTime Format implementation. Returns the format for this FixedTime value. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Hour | Returns the hour in this FixedTime value. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | Kind | IFixedDateTime Kind implementation. Returns DateTimeDataKind.Time. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the FixedTime value, given its format and separator. | 
@@ -44,7 +44,7 @@ Holds a fixed-time value in the specified format and with the given separator.
 | [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-date-time, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert a DateTime to a FixedTime of the same format and separator. | A new FixedTime value with the same format and separator.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToNumericString](#tonumericstring)() | Convert to numeric string representation of the FixedTime, according to its format with no separators. | The string representation of the FixedTime value with no separators.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to the string representation of the FixedTime, according to its format and separator. | The string representation of the FixedTime value.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to the string of the FixedTime, according to the given format and separator. | The string representation of the FixedTime value, with the given format and separator.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to the string of the FixedTime, according to the given format and separator. | The string representation of the FixedTime value, with the given format and separator.
 
 <br>
 <br>
@@ -133,7 +133,7 @@ The string representation of the FixedTime value.
 <br>
 <br>
 
-### ToString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### ToString([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Convert to the string of the FixedTime, according to the given format and separator.
 
@@ -145,7 +145,7 @@ ToString(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeS
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | DateTimeFormat of the FixedTime. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | DateTimeFormat of the FixedTime. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | DateTimeSeparator of the FixedTime. 
 
 #### Returns

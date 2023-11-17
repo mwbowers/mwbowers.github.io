@@ -23,7 +23,7 @@ Declares the basic functionality of a fixed datetime type.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | Gets the DateTimeFormat format. | 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | Gets the DateTimeFormat format. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | Kind | Gets the DateTimeDataKind kind. | 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | Separator | Gets the DateTimeSeparator separator. | 
 

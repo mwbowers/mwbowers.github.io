@@ -26,7 +26,7 @@ Defines a layout for a field in a data structure.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ArrayLength | If the layout describes an array, the number of elements in the array. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Decimals | If the layout describes a fixed decimal number, the number of decimal positions. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Digits | If the layout describes a fixed decimal number, the number of digits. | 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | For date/time/timestamps, the enum value representing the format of the data. | 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | For date/time/timestamps, the enum value representing the format of the data. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsArray | True if this layout describes an array, false otherwise. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | For arrays, the length on an array element. For scalars, this is the same as Length. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the field described by the layout. If the layout describes an array, the total length of all elements of the array. | 
@@ -47,8 +47,8 @@ Defines a layout for a field in a data structure.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [ByteArray](#bytearrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a byte array field. | The layout describing a byte array field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Char](#char)() | Creates a layout for a char field. | The layout describing a char field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [CharArray](#chararrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a character array field. | The layout describing a character array field.
-| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Date](#datedatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Creates a layout for a FixedDate field. | The layout describing a FixedDate field with the given format and separator.
-| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [DateArray](#datearrayint32-datetimeformat-datetimeseparator-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDate array field. | The layout describing a FixedDate array field.
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Date](#datedatetimeformat-datetimeseparator)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Creates a layout for a FixedDate field. | The layout describing a FixedDate field with the given format and separator.
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [DateArray](#datearrayint32-datetimeformat-datetimeseparator-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDate array field. | The layout describing a FixedDate array field.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Equality comparer. | True if the Layouts are equivalent, i.e. if all of their properties correspondingly have the same values.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [FixedString](#fixedstringint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedString field. | The layout describing a FixedString field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [FixedStringArray](#fixedstringarrayint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedString array field. | The layout describing a FixedString array field.
@@ -60,15 +60,15 @@ Defines a layout for a field in a data structure.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [IntegerArray](#integerarrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for an int array field. | The layout describing an int array field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Long](#long)() | Creates a layout for a long field. | The layout describing a long field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [LongArray](#longarrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a long array field. | The layout describing a long array field.
-| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [NewLayout](#newlayoutlayouttype-int32-int32-int32-datetimeformat-datetimeseparator-int32-int32)([LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout with the given values. | The new layout.
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [NewLayout](#newlayoutlayouttype-int32-int32-int32-datetimeformat-datetimeseparator-int32-int32)([LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout with the given values. | The new layout.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Equality](#op_equalitylayout-layout)([Layout](/reference/asna-qsys-runtime/classes/layout.html), [Layout](/reference/asna-qsys-runtime/classes/layout.html)) | Equality operator. | True if the Layouts are equivalent, i.e. if all of their properties correspondingly have the same values.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Inequality](#op_inequalitylayout-layout)([Layout](/reference/asna-qsys-runtime/classes/layout.html), [Layout](/reference/asna-qsys-runtime/classes/layout.html)) | Inequality operator. | True if the Layouts are different, i.e. if any of their properties correspondingly have different values.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Packed](#packedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDecimal field with a packed format. | The layout describing a FixedDecimal field with a packed format.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [PackedArray](#packedarrayint32-int32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDecimal array field with packed format. | The layout describing a FixedDecimal array field with packed format.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Short](#short)() | Creates a layout for a short field. | The layout describing a short field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [ShortArray](#shortarrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a short array field. | The layout describing a short array field.
-| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Time](#timedatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Creates a layout for a FixedTime field. | The layout describing a FixedTime field with the given format and separator.
-| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [TimeArray](#timearrayint32-datetimeformat-datetimeseparator-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedTime array field. | The layout describing a FixedTime array field.
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Time](#timedatetimeformat-datetimeseparator)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Creates a layout for a FixedTime field. | The layout describing a FixedTime field with the given format and separator.
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [TimeArray](#timearrayint32-datetimeformat-datetimeseparator-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedTime array field. | The layout describing a FixedTime array field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Timestamp](#timestampdatetimeseparator)([DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Creates a layout for a FixedTimestamp field. | The layout describing a FixedTimestamp field with the given separator.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [TimestampArray](#timestamparrayint32-datetimeseparator-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedTimestamp array field. | The layout describing a FixedTimestamp array field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Zoned](#zonedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDecimal field with a zoned format. | The layout describing a FixedDecimal field with a zoned format.
@@ -215,7 +215,7 @@ The layout describing a character array field.
 <br>
 <br>
 
-### Date([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### Date([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Creates a layout for a FixedDate field.
 
@@ -227,7 +227,7 @@ Date(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSepar
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The enum value describing the format of this FixedDate. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The enum value describing the format of this FixedDate. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The enum value describing the separator this FixedDate uses. 
 
 #### Returns
@@ -240,7 +240,7 @@ The layout describing a FixedDate field with the given format and separator.
 <br>
 <br>
 
-### DateArray([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### DateArray([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Creates a layout for a FixedDate array field.
 
@@ -253,7 +253,7 @@ DateArray(Int32 arrayLength, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Length (number of elements) of the array. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The enum value describing the format of this FixedDate. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The enum value describing the format of this FixedDate. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The enum value describing the separator this FixedDate uses. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skip | Number of positions to skip between elements in a non-contiguous array. 
 
@@ -512,7 +512,7 @@ The layout describing a long array field.
 <br>
 <br>
 
-### NewLayout([LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### NewLayout([LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Creates a layout with the given values.
 
@@ -528,7 +528,7 @@ NewLayout(ASNA.QSys.Runtime.LayoutType type, Int32 digits, Int32 decimals, Int32
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | If the layout is numeric, the number of digits. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | If the layout is decimal numeric, the number of decimal positions. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | For FixedString and Hex, length of the field. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | For Date and Time, the date or time format. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | For Date and Time, the date or time format. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | For Date, Time and Timestamp, the separator. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | For arrays, the size of the array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skip | For non-contiguous array, the number of positions to skip between elements. 
@@ -688,7 +688,7 @@ The layout describing a short array field.
 <br>
 <br>
 
-### Time([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### Time([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Creates a layout for a FixedTime field.
 
@@ -700,7 +700,7 @@ Time(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSepar
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The enum value describing the format of this FixedTime. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The enum value describing the format of this FixedTime. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The enum value describing the separator this FixedTime uses. 
 
 #### Returns
@@ -713,7 +713,7 @@ The layout describing a FixedTime field with the given format and separator.
 <br>
 <br>
 
-### TimeArray([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### TimeArray([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Creates a layout for a FixedTime array field.
 
@@ -726,7 +726,7 @@ TimeArray(Int32 arrayLength, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Length (number of elements) of the array. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The enum value describing the format of this FixedTime. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The enum value describing the format of this FixedTime. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The enum value describing the separator this FixedTime uses. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skip | Number of positions to skip between elements in a non-contiguous array. 
 

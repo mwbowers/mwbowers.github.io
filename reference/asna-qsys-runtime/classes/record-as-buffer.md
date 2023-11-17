@@ -29,14 +29,14 @@ Defines operations to move data between a file record, a row in a dataset, and a
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [BufferToRecord](#buffertorecordadgdataset-string-string)([AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Deserialize a string contining a record of RPG-encoded data into a DataRow. | True if the operation is successful.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetDateFormatString](#getdateformatstringdatetimeformat)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Creates the string pattern to format a fixed date value. | The string pattern for the requested fixed date format.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetDateFormatStringNoSeparator](#getdateformatstringnoseparatordatetimeformat)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Creates the string pattern to format a fixed date value without a separator character. | The string pattern for the requested fixed date format, with no separator character.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetDateFormatString](#getdateformatstringdatetimeformat)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Creates the string pattern to format a fixed date value. | The string pattern for the requested fixed date format.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetDateFormatStringNoSeparator](#getdateformatstringnoseparatordatetimeformat)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Creates the string pattern to format a fixed date value without a separator character. | The string pattern for the requested fixed date format, with no separator character.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetDateFormatStringNoSeparator](#getdateformatstringnoseparatorstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates the string pattern to format a fixed date value without a separator character. | The string pattern for the requested fixed date format, with no separator character.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFormatString](#getformatstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates the string pattern to format a fixed date/time/timestamp value. | The string pattern for the requested fixed date/time/timestamp format.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFormatString](#getformatstringint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates the string pattern to format a fixed date/time/timestamp value. | The string pattern for the requested fixed date/time/timestamp format.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetFormatStringNoSeparator](#getformatstringnoseparatorint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates the string pattern to format a fixed date/time/timestamp value without a separator character. | The string pattern for the requested fixed date/time/timestamp format, with no separator character.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetTimeFormatString](#gettimeformatstringdatetimeformat)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Creates the string pattern to format a fixed time value. | The string pattern for the requested fixed time format.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetTimeFormatString](#gettimeformatstringdatetimeformat)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Creates the string pattern to format a fixed time value. | The string pattern for the requested fixed time format.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetTimestampFormatString](#gettimestampformatstring)() | Creates the string pattern to format a fixed timestamp value. | The string pattern for a fixed timestamp in ISO format.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
@@ -99,7 +99,7 @@ True if the operation is successful.
 <br>
 <br>
 
-### GetDateFormatString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### GetDateFormatString([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Creates the string pattern to format a fixed date value.
 
@@ -111,7 +111,7 @@ GetDateFormatString(ASNA.DataGate.Common.DateTimeFormat format);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat enum value for the requested fixed date format. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat enum value for the requested fixed date format. 
 
 #### Returns
 
@@ -123,7 +123,7 @@ The string pattern for the requested fixed date format.
 <br>
 <br>
 
-### GetDateFormatStringNoSeparator([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### GetDateFormatStringNoSeparator([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Creates the string pattern to format a fixed date value without a separator character.
 
@@ -135,7 +135,7 @@ GetDateFormatStringNoSeparator(ASNA.DataGate.Common.DateTimeFormat format);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat enum value for the requested fixed date format. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat enum value for the requested fixed date format. 
 
 #### Returns
 
@@ -246,7 +246,7 @@ The string pattern for the requested fixed date/time/timestamp format, with no s
 <br>
 <br>
 
-### GetTimeFormatString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### GetTimeFormatString([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Creates the string pattern to format a fixed time value.
 
@@ -258,7 +258,7 @@ GetTimeFormatString(ASNA.DataGate.Common.DateTimeFormat format);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat enum value for the requested fixed time format. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat enum value for the requested fixed time format. 
 
 #### Returns
 

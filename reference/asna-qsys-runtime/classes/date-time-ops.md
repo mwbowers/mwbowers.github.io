@@ -52,7 +52,7 @@ Defines operations with RPG semantics on System.DateTime values.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetCommonYearAsDecimal2](#getcommonyearasdecimal2)() | Get the Job startup two-digit year as a decimal. | The value of the Job startup two-digit year as a decimal number.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetCommonYearAsDecimal4](#getcommonyearasdecimal4)() | Get the Job startup year as a decimal. | The value of the Job startup year as a decimal number.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetInitialDate](#getinitialdatedatetimeformat)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Gets the value of *DATE/UDATE depending on the given format. Use the proper format to obtain either a 6 (UDATE) or an 8 (*DATE) digit value. | The decimal number representing *DATE/UDATE for the given format.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetInitialDate](#getinitialdatedatetimeformat)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Gets the value of *DATE/UDATE depending on the given format. Use the proper format to obtain either a 6 (UDATE) or an 8 (*DATE) digit value. | The decimal number representing *DATE/UDATE for the given format.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [NormalizeYY](#normalizeyydatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Normalize the year portion of a DateTime value taken as a a two-digit year to the proper year in the range 1940 - 2039. | The DateTime value with the year in the 1940-2039 range.
@@ -595,7 +595,7 @@ The value of the Job startup year as a decimal number.
 <br>
 <br>
 
-### GetInitialDate([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### GetInitialDate([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Gets the value of *DATE/UDATE depending on the given format. Use the proper format to obtain either a 6 (UDATE) or an 8 (*DATE) digit value.
 
@@ -607,7 +607,7 @@ GetInitialDate(ASNA.DataGate.Common.DateTimeFormat format);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value that represents the *DATE/UDATE value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat value that represents the *DATE/UDATE value. 
 
 #### Returns
 

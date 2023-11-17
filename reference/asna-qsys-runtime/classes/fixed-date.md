@@ -24,7 +24,7 @@ Holds a fixed-date value in the specified format and with the given separator.
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Day | Returns the day in this FixedDate value. | 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | IFixedDateTime Format implementation. Returns the format for this FixedDate value. | 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | IFixedDateTime Format implementation. Returns the format for this FixedDate value. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | Kind | IFixedDateTime Kind implementation. Returns DateTimeDataKind.Date. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the FixedDate value, given its format and separator. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Month | Returns the month in this FixedDate value. | 
@@ -45,7 +45,7 @@ Holds a fixed-date value in the specified format and with the given separator.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToNumericString](#tonumericstring)() | Convert to numeric string. | The string result.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert ToString. | The string result.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Convert to String. | The converted string result.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to string. | The converted string result.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to string. | The converted string result.
 
 <br>
 <br>
@@ -158,7 +158,7 @@ The converted string result.
 <br>
 <br>
 
-### ToString([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### ToString([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Convert to string.
 
@@ -170,7 +170,7 @@ ToString(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeS
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | Input format. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | Input format. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | Input separator. 
 
 #### Returns

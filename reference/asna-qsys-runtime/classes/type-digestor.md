@@ -30,12 +30,12 @@ Contains methods that aid in the parsing of the generic type arguments of fixed-
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [computeDim](#computedimtype-int32)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Given the IDim type that represents the dimension of a FixedArray type, computes the actual value for the dimension. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [formatToType](#formattotypedatetimeformat)([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Returns the type corresponding to a DateTimeFormat. | The Type object corresponding to the format parameter value.
-| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | [GetDateTimeObject](#getdatetimeobjectdatetimedatakind-datetimeformat-datetimeseparator)([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Constructs a fixed date/time/timestamp object given its kind, format, and separator. | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [formatToType](#formattotypedatetimeformat)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Returns the type corresponding to a DateTimeFormat. | The Type object corresponding to the format parameter value.
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | [GetDateTimeObject](#getdatetimeobjectdatetimedatakind-datetimeformat-datetimeseparator)([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Constructs a fixed date/time/timestamp object given its kind, format, and separator. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [parseDateTimeType](#parsedatetimetypedatetimedatakind-type-type-datetimeformat-datetimeseparator)([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat@.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Finds the format and separator enum values of a fixed date/time/timestamp given the kind, IDateTimeFormat, and IDateTimeSeparator. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [parseDateTimeType](#parsedatetimetypedatetimedatakind-type-type-datetimeformat-datetimeseparator)([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Finds the format and separator enum values of a fixed date/time/timestamp given the kind, IDateTimeFormat, and IDateTimeSeparator. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [separatorToType](#separatortotypedatetimeseparator)([DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Returns the type corresponding to a DateTimeSeparator. | The Type object corresponding to the separator parameter value.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
@@ -102,7 +102,7 @@ computeDim(Type tDim, ref Int32 dim);
 <br>
 <br>
 
-### formatToType([DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### formatToType([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Returns the type corresponding to a DateTimeFormat.
 
@@ -114,7 +114,7 @@ formatToType(ASNA.DataGate.Common.DateTimeFormat format);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat value for which to return the corresponding type. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat value for which to return the corresponding type. 
 
 #### Returns
 
@@ -126,7 +126,7 @@ The Type object corresponding to the format parameter value.
 <br>
 <br>
 
-### GetDateTimeObject([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### GetDateTimeObject([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Constructs a fixed date/time/timestamp object given its kind, format, and separator.
 
@@ -139,7 +139,7 @@ GetDateTimeObject(ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Common.
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | The DateTimeDataKind to construct. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat of the date/time/timestamp object. This parameter is ignored when constructing a FixedTimestamp object. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat of the date/time/timestamp object. This parameter is ignored when constructing a FixedTimestamp object. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | sep | The DateTimeSeparator of the date/time/timestamp object 
 
 #### Returns
@@ -152,7 +152,7 @@ GetDateTimeObject(ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Common.
 <br>
 <br>
 
-### parseDateTimeType([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat@.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### parseDateTimeType([DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Finds the format and separator enum values of a fixed date/time/timestamp given the kind, IDateTimeFormat, and IDateTimeSeparator.
 
@@ -167,7 +167,7 @@ parseDateTimeType(ASNA.QSys.Runtime.DateTimeDataKind kind, Type Tformat, Type Ts
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | The DateTimeDataKind to use to find the separator when the Tseparator parameter is typeof(_Default). 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | Tformat | The IDatetimeFormat type that represents the fixed date/time/timestamp format. 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | Tseparator | The IDateTimeSeparator type that represents the fixed date/time/timestamp separator. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat@.html) | format | Returs the DateTimeFormat enum value correspoding to the given parameteres. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | Returs the DateTimeFormat enum value correspoding to the given parameteres. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | Returs the DateTimeSeparator enum value correspoding to the given parameteres. 
 
 
