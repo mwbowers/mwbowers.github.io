@@ -77,6 +77,8 @@ DecAttribute( Int32 length, Int32 decimals );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OutputData | Output Data<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Protect | Protect indicator<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProtectCodeFieldName | Protect Code field name<br>(Inherited from [FieldAttribute](/reference/asna-qsys-expo/expo-model/field-attribute.html)) | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReturnCursorLocationCol | Field to be set on input operations to the (virtual) Column number of the field where the cursor was positioned. | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReturnCursorLocationRow | Field to be be set on input operations to the (virtual) Row number of the field where the cursor was positioned. | 
 
 <br>
 <br>
