@@ -24,7 +24,7 @@ Holds a fixed-timestamp value with the given separator.
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Day | Returns the day in this FixedTimestamp value. | 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | IFixedDateTime Format implementation. Returns DateTimeFormat.ISO. | 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | IFixedDateTime Format implementation. Returns DateTimeFormat.ISO. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Hour | Returns the hour in this FixedTimestamp value. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | Kind | IFixedDateTime Kind implementation. Returns DateTimeDataKind.Timestamp. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the FixedTimestamp value, given its separator. | 

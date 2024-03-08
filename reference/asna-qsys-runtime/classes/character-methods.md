@@ -53,7 +53,7 @@ Contains extension methods for Char (onechar/indicator) conversions.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadchar-int32)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a character to a int with pad. | Returns the value of the move.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadchar-int64)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a character to a long with pad. | Returns the value of the move.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimestring-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Tests whether a string value represents a valid date/time/timestamp value. | True if num represents a valid date/time/timestamp with the given format and separator.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimestring-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Tests whether a string value represents a valid date/time/timestamp value. | True if num represents a valid date/time/timestamp with the given format and separator.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
@@ -615,7 +615,7 @@ Returns the value of the move.
 <br>
 <br>
 
-### TestTime([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
+### TestTime([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html))
 
 Tests whether a string value represents a valid date/time/timestamp value.
 
@@ -629,7 +629,7 @@ TestTime(String num, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Comm
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | num | The string to test. 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | The DateTimeDataKind value representing a test for a date, time, or timestamp. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The DateTimeFormat of the date/time/timestamp value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The DateTimeFormat of the date/time/timestamp value. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | separator | The DateTimeSeparator of the date/time/timestamp value. 
 
 #### Returns

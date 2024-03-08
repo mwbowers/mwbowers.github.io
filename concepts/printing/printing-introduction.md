@@ -114,6 +114,20 @@ Once an application has created a report (printer output) in the form of a manus
 3. The 'report' will be sent to some other subsystem like a document management facility or fax system.
 4. The report will be processed by a Printer Writer on a printer (potentially a PDF printer).
 
+### Rendering a Manuscript
+There are three mechanisms for users to typically consume the report.  
+1.	If they have access to the Windows Directory of the APM file, they can double click on the file and render the report to a preview window their PC, from there they can print it.  However, most users will not have access to the Windows Directory as it would be sitting on some ‘remote’ server and the user would be accessing the application via a web browser.  
+2.	The application can direct the runtime to directly render the APM to a Windows printer and produce an actual paper report.
+3.	The application can render the APM to a PDF (using the Microsoft Print to PDF ‘printer’) and present to the user the PDF in the user’s browser.
+
+If the generated report is not for direct application user consumption but is more of a batch processing, then the [Printer Writer](#the-printer-writer) can be set as a Windows Service to ‘watch’ the output queue directories and render the APM to a Windows printer (PDF or real).
+
+Whatever system is executing the ‘renderer’ program (to produce a PDF or real paper) must have access to:
+•	The renderer.exe program (typically located in some local drive)
+•	The APM file (either locally or thru a shared drive)
+•	The Windows Printer Driver for the printer where output will be directed (in the case of PDF, it must have the Microsoft Print to PDF printer driver).
+Notice that in the case noted above (2) where the user will consume the report as a PDF via the browser, there is no need to install anything on the user’s PC.
+
 ## The Printer Writer
 
 Monarch provides an [implementation of the Printer Writer](/manuals/mom/printer-writer.html) in the form of the executable program: ASNA.QSys.PrinterWriter.exe.

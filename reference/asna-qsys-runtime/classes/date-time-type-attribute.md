@@ -55,7 +55,7 @@ DateTimeTypeAttribute( Int32 kind, Int32 format, Int32 separator );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | Format | Gets the DateTimeFormat (*ISO, *USA, *HMS, etc.) of this item. | 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | Gets the DateTimeFormat (*ISO, *USA, *HMS, etc.) of this item. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | Kind | Gets the DateTimeDataKind (date, time, or timestamp) of this item. | 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | Separator | Gets the DateTimeSeparator ('/', '.', ':', etc.) of this item. | 
 

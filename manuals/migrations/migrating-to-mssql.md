@@ -11,7 +11,7 @@ Although DGL tries to make _SQL Server_ look like DB2 for IBM i, there are sever
 Even when the migrated application is intended to run initially against DB2, if there is a good chance that in the future it may run against SQL Server, then it is good to contemplate the possible changes that will be necessary to adapt the application for SQL Server access and decide if these modifications should be done as part of the original code migration or be left for a future project.
 
 The following items may have the most impact on the migrated code:
- - Some [Record Locking](mssql-record-locking.html) operations behave diferently:
+ - Some [Record Locking](mssql-record-locking.html) operations behave differently:
    + The Unlock op-code loses the 'current' position.
    + The Update op-code keeps the record locked.
    + Read operations can't use the `Access(*NoLock)` option.

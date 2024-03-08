@@ -7,7 +7,7 @@ Represents the dataset of a workstation file.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [MarshalByValueComponent]($$TODO-ComponentModel.MarshalByValueComponent.html) --> [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) --> [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) --> WorkstationDataSet
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [MarshalByValueComponent]($$TODO-ComponentModel.MarshalByValueComponent.html) --> [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) --> [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) --> WorkstationDataSet
 
 <br>
 <br>

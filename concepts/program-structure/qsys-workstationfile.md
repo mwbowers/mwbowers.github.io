@@ -39,14 +39,14 @@ ASNA.QSys Application Life-Cycle logic uses the `Session ID` to find the WebJob 
 > Job start: Initially, there will not be any `Session ID` and when the first Request comes into the Web Server, the Web Server will start a Session, instance a new Job, remember the Job in the newly created Session, instances the Entry Point Program (according to MyJob class) and starts executing the Program.
 
 ## Monarch Display Page Application Architecture
-Just as we have discussed how **ASP.NET 5 Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/razor-pages), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
+Just as we have discussed how **ASP.NET Core Website Architecture** [simplifies complexity by separating data from presentation logic](/concepts/user-interface/razor-pages), Monarch further architects the Interactive Application by separating the Business Logic from the `Display Page` Logic.
 
 ![Monarch Display Page Architecture](images/qsys-display-page-architecture.png)
 
 On each Web Request/Response cycle, *data flows* from the *Yellow* `Display Page` layer all the way to the *Blue* `Program` layer passing thru intermediate components.
 
 Components:
-1. Display Page "Yellow"- Presentation logic with a *thin* data-layer (PageModel). ASP.NET 5 extended with QSys Monarch Expo TagHelpers.
+1. Display Page "Yellow"- Presentation logic with a *thin* data-layer (PageModel). ASP.NET Core extended with QSys Monarch Expo TagHelpers.
 2. DataSet "Green"- Active Record's Field data (no markup or constants). The DataSet is serialized into an XML string.
 3. MonaLisa - Monarch Application Server. Coordinates which Session's Active Program should process the [DataSet](/concepts/user-interface/qsys-expo-display-pages) requested.
 4. Workstationfile - Application side abstraction of a **File** that represents to a Program the DataSet.

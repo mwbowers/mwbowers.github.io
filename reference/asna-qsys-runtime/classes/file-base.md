@@ -71,7 +71,7 @@ FileBase( String dclFileName, Action infSR );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program. | 
 | [Action]($$TODO-Action.html) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsEof | Gets or sets the IsEof flag of the file, true when the file is at End of File. | 
@@ -79,9 +79,10 @@ FileBase( String dclFileName, Action infSR );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFound | Gets or sets the IsFound flag of the file, true when a record is found. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open. | 
 | [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) | LastException | Gets the RuntimeException that resulted from a file operation. | 
-| [0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Action`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null],[System.String[], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset, and the array of field names as arguments. | 
-| [0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html) | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments. | 
+
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-3)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)[] >  | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset, and the array of field names as arguments. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StatusCode | Gets the status code resulting from a file operation. | 
 
 <br>
@@ -91,7 +92,7 @@ FileBase( String dclFileName, Action infSR );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocate DataSet buffer. | DataSet buffer.
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocate DataSet buffer. | DataSet buffer.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using the relative record number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using the relative record number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using the relative record number. | 
@@ -179,7 +180,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 DataSet buffer.
 

@@ -25,12 +25,12 @@ Provides a program with an interface to the user interactions, supporting read a
 
 | Name |  Description 
 | --- | --- 
-| [WebDisplayFile](#webdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of a web display file. 
+| [WebDisplayFile](#webdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of a web display file. 
 | [WebDisplayFile](#webdisplayfilestring-string-dataset)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset)) | Initializes a new instance of a web display file. 
 
 <br>
 
-### WebDisplayFile( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) )
+### WebDisplayFile( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) )
 
 Initializes a new instance of a web display file.
 
@@ -44,7 +44,7 @@ WebDisplayFile( String fileName, String pageName, ASNA.DataGate.Client.AdgDataSe
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fileName | Name of the display file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pageName | Web page name used to identify the display file. 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | dataSet | Dataset used as the data buffer for the records of the display file. 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | dataSet | Dataset used as the data buffer for the records of the display file. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | shared | true to indicate that the display file can be shared with other programs using the same device; otherwise false. 
 
 <br>
@@ -94,7 +94,7 @@ WebDisplayFile( String fileName, String pageName, Data.DataSet dataSet );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [Attach](#attach)() | Attaches a new use of the display file. | The dataset used as buffer for the records of the display file.
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [Attach](#attach)() | Attaches a new use of the display file. | The dataset used as buffer for the records of the display file.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearSubfile](#clearsubfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Clears the dataset's table used as the bufer for a subfile. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes the display file disposing of its resources. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeactivateFormats](#deactivateformatsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks a set of record formats as not being available for being displayed on the device. | 
@@ -130,7 +130,7 @@ Attach();
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 The dataset used as buffer for the records of the display file.
 

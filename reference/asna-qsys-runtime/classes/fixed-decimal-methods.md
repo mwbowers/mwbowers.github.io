@@ -65,13 +65,13 @@ Contains extension methods for handling RPG operations for FixedDecimal values.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq\\`\\`2](#sethiloeq\`\`2fixeddecimal{``0-``1}-indicator-indicator-indicator)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of source. | the same value that was passed in in source.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime\\`\\`2](#testtime\`\`2fixeddecimal{``0-``1}-datetimedatakind-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate\\`\\`2](#todate\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Converts a fixed decimal number to a date in the specified format. | The date value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime\\`\\`2](#testtime\`\`2fixeddecimal{``0-``1}-datetimedatakind-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate\\`\\`2](#todate\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Converts a fixed decimal number to a date in the specified format. | The date value as a DateTime object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringBinary\\`\\`2](#tostringbinary\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a binary decimal number. | The string containing the in-memory representation of the binary decimal number.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringPacked\\`\\`2](#tostringpacked\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a packed decimal number. | The string containing the in-memory representation of the packed number.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringZoned\\`\\`2](#tostringzoned\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a zoned decimal number. | The string containing the in-memory representation of the zoned number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTime\\`\\`2](#totime\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html)) | Converts a fixed decimal number to a time in the specified format. | The time value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTime\\`\\`2](#totime\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Converts a fixed decimal number to a time in the specified format. | The time value as a DateTime object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTimestamp\\`\\`2](#totimestamp\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Converts a fixed decimal number to a timestamp. | The timestamp value as a DateTime object.
 
 <br>
@@ -732,7 +732,7 @@ SetHiLoEq``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ref ASNA.QSys.Runti
 <br>
 <br>
 
-### TestTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### TestTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Tests whether a decimal number contains a valid date/time/timestamp value.
 
@@ -746,13 +746,13 @@ TestTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.Da
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | the decimal number to test. 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | the date/time/timestamp format in which the number is. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | the date/time/timestamp format in which the number is. 
 
 
 <br>
 <br>
 
-### ToDate\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### ToDate\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Converts a fixed decimal number to a date in the specified format.
 
@@ -765,7 +765,7 @@ ToDate``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.D
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The date format of decimal value to convert. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The date format of decimal value to convert. 
 
 
 <br>
@@ -825,7 +825,7 @@ ToStringZoned``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
 <br>
 <br>
 
-### ToTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html))
+### ToTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Converts a fixed decimal number to a time in the specified format.
 
@@ -838,7 +838,7 @@ ToTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.D
 | Type | Parameter name | Description
 | --- | --- | ---
 | [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
-| [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | format | The time format of decimal value to convert. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The time format of decimal value to convert. 
 
 
 <br>

@@ -59,8 +59,9 @@ WorkstationFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateB
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | DisplayFileSubfileCursorRRN | Gets the subfile record number where the cursor was position when the AID key was pressed.<br>(Inherited from [WorkstationFileBase](/reference/asna-qsys-runtime/classes/workstation-file-base.html)) | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackActiveWindowCursor | Gets the display file feedback active window cursor position.<br>(Inherited from [WorkstationFileBase](/reference/asna-qsys-runtime/classes/workstation-file-base.html)) | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackActiveWindowCursorCol | Gets the display file feedback active window cursor column.<br>(Inherited from [WorkstationFileBase](/reference/asna-qsys-runtime/classes/workstation-file-base.html)) | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackActiveWindowCursorRow | Gets the display file feedback active window cursor row.<br>(Inherited from [WorkstationFileBase](/reference/asna-qsys-runtime/classes/workstation-file-base.html)) | 
@@ -104,9 +105,9 @@ WorkstationFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateB
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFound | Gets or sets the IsFound flag of the file, true when a record is found.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) | LastException | Gets the RuntimeException that resulted from a file operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
-| [0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]]($$TODO-Action`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null],[System.String[], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].html) | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset, and the array of field names as arguments.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
-| [0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html) | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-3)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)[] >  | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset, and the array of field names as arguments.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SflRRN | Gets the current 1-based RRN.<br>(Inherited from [WorkstationFileBase](/reference/asna-qsys-runtime/classes/workstation-file-base.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ShareOpenDataPath | Gets or sets a value to indicate that the file can be shared with other programs.<br>(Inherited from [WorkstationFileBase](/reference/asna-qsys-runtime/classes/workstation-file-base.html)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StatusCode | Gets the status code resulting from a file operation.<br>(Inherited from [FileBase](/reference/asna-qsys-runtime/classes/file-base.html)) | 
@@ -118,8 +119,8 @@ WorkstationFile( Action{System.String,ASNA.DataGate.Client.AdgDataSet} populateB
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates internal objects and constructs the file DataSet. | The newly created DataGate AdgDataSet.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [attachBuffer](#attachbufferadgdataset)([AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)) | Set this file's DataSet to the given AdgDataSet. | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocates internal objects and constructs the file DataSet. | The newly created DataGate AdgDataSet.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [attachBuffer](#attachbufferadgdataset)([AdgDataSet](/reference/datagate-client/adg-dataset-class.html)) | Set this file's DataSet to the given AdgDataSet. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnstring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record by relative record number. | True if record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnstring-int32-indicator[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Read a record by relative record number. | True if record is found, false otherwise.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ChainByRRN](#chainbyrrnstring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record by relative record number. | True if record is found, False otherwise.
@@ -235,7 +236,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 The newly created DataGate AdgDataSet.
 
@@ -243,7 +244,7 @@ The newly created DataGate AdgDataSet.
 <br>
 <br>
 
-### attachBuffer([AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html))
+### attachBuffer([AdgDataSet](/reference/datagate-client/adg-dataset-class.html))
 
 Set this file's DataSet to the given AdgDataSet.
 
@@ -255,7 +256,7 @@ attachBuffer(ASNA.DataGate.Client.AdgDataSet adgDataSet);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | adgDataSet | The dataset to attach. 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | adgDataSet | The dataset to attach. 
 
 
 <br>

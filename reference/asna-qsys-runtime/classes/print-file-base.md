@@ -121,7 +121,7 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Collate | Gets or sets whether collation will be used when printing multiple copies.  This property is of type *Boolean. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Copies | Gets or sets the number of copies to print.  This property is of type *Integer4. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CursorY | Gets the position, in Print Units, that the printer is from the top of the page.  This property is of type *Integer4. | 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclPrintFileName | Gets the name of this file field in the program. | 
 | [Duplex]($$TODO-Drawing.Printing.Duplex.html) | Duplex | Gets or sets whether the printer file is to print duplex (prints on both sides of the paper).  This property is of type ASNA.DataGate.Common.PrintDuplex. | 
@@ -142,7 +142,8 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | [PaperKind]($$TODO-Drawing.Printing.PaperKind.html) | PaperSize | Gets or sets the paper size.  This property is of type ASNA.DataGate.Common.PaperSize. | 
 | [PaperSourceKind]($$TODO-Drawing.Printing.PaperSourceKind.html) | PaperSource | Gets or sets the paper source.  This property is of type ASNA.DataGate.Common.PaperSource. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PaperWidth | Gets or sets the paper width.  This property is of type *Integer4. | 
-| [0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
+
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
 | [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html) | Preview | Gets or sets whether the print preview dialog is to be displayed before printing.  This property is of type ASNA.DataGate.Common.AccessMode. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PrintableLength | Gets the printer's printable Length.  This property is of type *Integer4. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PrintableWidth | Gets the printer’s printable width.  This property is of type *Integer4. | 
@@ -168,7 +169,7 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [close](#close)() | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Close a file. | 
@@ -186,7 +187,7 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [open](#opendatabase)([Database](/reference/asna-qsys-runtime/classes/database.html)) | Open the print file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase)([Database](/reference/asna-qsys-runtime/classes/database.html)) | Open the print file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase-char)([Database](/reference/asna-qsys-runtime/classes/database.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open the print file. | 
-| [0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html) | [populateBuffer](#populatebufferstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBuffer](#populatebufferstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetPrintFieldPropertyValue](#setprintfieldpropertyvaluestring-string-string-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Set a field property value. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
@@ -210,7 +211,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 The DataSet.
 
@@ -455,12 +456,6 @@ populateBuffer(String formatName);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
-
-#### Returns
-
-[0, Culture=neutral, PublicKeyToken=null]]]($$TODO-Action`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ASNA.DataGate.Client.AdgDataSet, ASNA.QSys.DataGate.Client, Version=4.0.11.0, Culture=neutral, PublicKeyToken=null]].html)
-
-
 
 
 <br>

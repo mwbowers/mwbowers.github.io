@@ -23,8 +23,8 @@ Web Display File Provider Interface. It contains methods to handle all Input and
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | [Attach](#attachidisplayfile)([IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)) | Attach to DataSet. | The DataSet.
-| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetNewWebDisplayFile](#getnewwebdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance. | The Displayfile instance.
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [Attach](#attachidisplayfile)([IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html)) | Attach to DataSet. | The DataSet.
+| [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetNewWebDisplayFile](#getnewwebdisplayfilestring-string-adgdataset-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance. | The Displayfile instance.
 | [IDisplayFile](/reference/asna-qsys-runtime/classes/i-display-file.html) | [GetSharedFile](#getsharedfilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get shared file. | Display file instance.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetWRF](#getwrfstring-int32-int32-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Wings Record Format ID. | The Get Wings Record Format ID.
 
@@ -47,7 +47,7 @@ Attach(ASNA.QSys.Runtime.IDisplayFile webDisplayFile);
 
 #### Returns
 
-[AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html)
+[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
 
 The DataSet.
 
@@ -55,7 +55,7 @@ The DataSet.
 <br>
 <br>
 
-### GetNewWebDisplayFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### GetNewWebDisplayFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Get New Web DisplayFile instance.
 
@@ -69,7 +69,7 @@ GetNewWebDisplayFile(String DclFileName, String FilePath, ASNA.DataGate.Client.A
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Input declared file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FilePath | Input file path. 
-| [AdgDataSet]($$TODO-ASNA.DataGate.Client.AdgDataSet.html) | dataSet | Input DataSet. 
+| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | dataSet | Input DataSet. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bShareOpenDataPath | True if open data path is shared. 
 
 #### Returns

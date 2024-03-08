@@ -3,7 +3,7 @@ title: The Job
 ---
 
 
-ASP.NET 5 does not implement the concept of a *Job* like [IBM i does](/concepts/background/ibmi-job). The closest is [Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state), but it is not what the [IBM i Developer Model](/concepts/background/ibmi-developer-model) expects.
+ASP.NET Core does not implement the concept of a *Job* like [IBM i does](/concepts/background/ibmi-job). The closest is [Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state), but it is not what the [IBM i Developer Model](/concepts/background/ibmi-developer-model) expects.
 
 ASNA.QSys.Runtime assembly provides a more suitable class in the namespace ASNA.QSys.HostServices called `Job`.
 
@@ -19,7 +19,7 @@ ASNA.QSys `Job` provides the following support:
 
 ## ASNA.QSys Interactive Job
 
-**ASNA Monarch Base** is a framework to allow RPG-like Applications to run on ASP.NET 5, which is based on Web technology.
+**ASNA Monarch Base** is a framework to allow RPG-like Applications to run on ASP.NET Core, which is based on Web technology.
 
 The ASNA.QSys Interactive Job specialized for Web, is conveniently named `WebJob`, or fully qualified:
 
@@ -33,7 +33,7 @@ In addition to the *base* `Job` services, `WebJob` allows [Procedurally-Designed
 
 Simply put, when a `WebJob` starts, a new [.NET Thread](https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread) is allocated for the Procedural programs to run.
 
->&#128161; The `WebJob` instance is saved as part of [ASP.NET 5 Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state).
+>&#128161; An identifier for the `WebJob` instance is saved as part of [ASP.NET Core Session State](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/app-state).
 
 ## MyJob
 
