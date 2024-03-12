@@ -16,6 +16,50 @@ When a developer uses an SQL Statement within the RPG program, the statement may
  - Naming convention (`*SYS` vs `*SQL`)
  - Library List to locate DB objects
 
+### Host Variables
+
+A *host variable* is a field in the RPG legacy program that is specified in a SQL statement.
+
+Embedded SQL syntax allows the use of *host variables* by pre-pending a colon in front of the field names.
+
+For example,
+
+```cs
+0013.00        EXEC SQL                                                                                         
+0014.00            SELECT SUM(BCAQTY) into :total FROM HBC
+0015.00            WHERE BCCNUM = :piConsignment AND BCID = 'BC';                                                              
+```
+
+The fields `total` and `piConsignment` are used in this sample SQL statement indicated by pre-pending a colon to each field name.
+
+This sample statement is migrated as the following code:
+
+```cs
+QueryResults = ExecSQL_Query( 1,          +
+   "SELECT SUM(BCAQTY) FROM HBC         " + + 
+   "WHERE BCCNUM = @sql_parm_1 AND BCID = ""BC"";", + 
+   *New DBDecimalParm(piConsignment, %Len(piConsignment), %DecPos(piConsignment)) +
+)
+
+/region QueryResult Into total
+If ( QueryResults <> *nothing )
+    total = QueryResults[0].ToDecimal()
+EndIf
+/endregion
+```
+
+`QueryResults` is a Runtime defined collection that is used (temporarily) to hold the results of the SQL operation.
+
+Notice in the Migrated code, how the *host variables* are split between `input` and `output`. 
+
+The `input` *host variables* are used by the SQL statements and indicated using the `@sql_parm_n` placeholder name (where `n` is the ordinal number of the variable used ). Following the SQL statement, the *host variables* values are passed **in order** to the `ExecQSL_Query` method, using `DBxxxParm` parameter class helpers (where xxx is `Char`, `Str`, `Decimal`, etc. according to the field type).
+
+The `output` *host variables* appear in the migration in the *region* conditioned by `QueryResults` being different than  * nothing (or `null` in C#). Notice how each value in the `QueryResults` is retrieved using the indexer `[n]` (where `n` is a zero-based index), in the same order as the `output` *host variables* are referenced by the original Embedded SQL. (Each value is converted to the proper type using `ToXxx()` method helpers).
+
+>Note: When the runtime executes the query, the `@sql_parm_n` placeholder parameters will be replaced by `?` (one per parameter) when using [ODBC.NET Provider](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc.odbccommand.commandtext?view=dotnet-plat-ext-8.0). **ODBC** does not allow named parameter passing. Please check `MyJob` class to determine which ADO.NET connection object is being used by the Logic Assembly.
+
+
+
 ### Locating files via the library list
 
 > Notice that for 'regular' database access via record level file operations, the library list is supported by DataGate Linear. This section is concerned only with the resolution of the library list where needed in migrated **embedded sql** statements.
