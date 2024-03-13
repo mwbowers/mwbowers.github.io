@@ -9,14 +9,14 @@ When an RPG program with embedded SQL is migrated, the SQL statements are used t
    - Syntax may need updating to comply with T-SQL.
    - Use of Library List must be resolved in code.
 
-### IBM specific SQL syntax vs T-SQL
+## IBM specific SQL syntax vs T-SQL
 
 When a developer uses an SQL Statement within the RPG program, the statement may be standard SQL or it may contain elements that are specific to extensions supported by IBM.  When the statement is not standard SQL, then it will be necessary to modify it to conform to what can be supported by SQL Server's T-SQL. Some of these extensions include:
  - Operators like `¬>`, `'&'`, `*EQ`
  - Naming convention (`*SYS` vs `*SQL`)
  - Library List to locate DB objects
 
-### Host Variables
+## Host Variables
 
 A *host variable* is a field in the RPG legacy program that is specified in a SQL statement.
 
@@ -48,19 +48,19 @@ EndIf
 /endregion
 ```
 
-`QueryResults` is a Runtime defined collection that is used (temporarily) to hold the results of the SQL operation.
+[QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) is a Runtime defined collection that is used (temporarily) to hold the results of the SQL operation.
 
 Notice in the Migrated code, how the *host variables* are split between `input` and `output`. 
 
 The `input` *host variables* are used by the SQL statements and indicated using the `@sql_parm_n` placeholder name (where `n` is the ordinal number of the variable used ). Following the SQL statement, the *host variables* values are passed **in order** to the `ExecQSL_Query` method, using `DBxxxParm` parameter class helpers (where xxx is `Char`, `Str`, `Decimal`, etc. according to the field type).
 
-The `output` *host variables* appear in the migration in the *region* conditioned by `QueryResults` being different than  * nothing (or `null` in C#). Notice how each value in the `QueryResults` is retrieved using the indexer `[n]` (where `n` is a zero-based index), in the same order as the `output` *host variables* are referenced by the original Embedded SQL. (Each value is converted to the proper type using `ToXxx()` method helpers).
+The `output` *host variables* appear in the migration in the *region* conditioned by [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) being different than  * nothing (or `null` in C#). Notice how each value in the [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) is retrieved using the indexer `[n]` (where `n` is a zero-based index), in the same order as the `output` *host variables* are referenced by the original Embedded SQL. (Each value is converted to the proper type using `ToXxx()` method helpers).
 
->Note: When the runtime executes the query, the `@sql_parm_n` placeholder parameters will be replaced by `?` (one per parameter) when using [ODBC.NET Provider](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc.odbccommand.commandtext?view=dotnet-plat-ext-8.0). **ODBC** does not allow named parameter passing. Please check `MyJob` class to determine which ADO.NET connection object is being used by the Logic Assembly.
+>Note: When the runtime executes the query, the `@sql_parm_n` placeholder parameters will be replaced by `?` - question mark symbol - (one per parameter) when using [ODBC.NET Provider](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc.odbccommand.commandtext?view=dotnet-plat-ext-8.0). **ODBC** does not allow named parameter passing. Please check `MyJob` class to determine which ADO.NET connection object is being used by the Logic Assembly.
 
+<br>
 
-
-### Locating files via the library list
+## Locating files via the library list
 
 > Notice that for 'regular' database access via record level file operations, the library list is supported by DataGate Linear. This section is concerned only with the resolution of the library list where needed in migrated **embedded sql** statements.
 
@@ -101,3 +101,21 @@ using ASNA.DataGate.Common;
     }
     . . . 
 ```
+
+## Troubleshooting Complex SQL Statements
+
+[SQL language for Db2 for IBM® i](https://www.ibm.com/docs/en/i/7.5?topic=reference-sql) is a very powerful language with a very flexible and rich syntax.
+
+SQL statements remain as *text* during the compilation of a .NET Application. The SQL syntax validation *is deferred* until the the statement is executed. 
+
+During or after the Migration, it is **not** uncommon to end up with a SQL statement that is not valid. Invalid SQL statements are sometimes difficult to fix (particularly when they are large).  
+
+For those situations, the use of [SQL Parser Explorer Tool](/examples/sql-parser-explorer.html) is recommended.
+
+Once the syntax is corrected, the [ADO.NET Provider for SQL Server](https://learn.microsoft.com/en-us/sql/connect/ado-net/microsoft-ado-net-sql-server?view=sql-server-ver16) will report back error codes that can be analyzed to fix execution issues.
+
+Legacy RPG logic may depend on [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=reference-sqlca-sql-communication-area) which defines *program global* fields that provide access to execution state reporting fields like [SQLSTATE](https://www.ibm.com/docs/en/i/7.3?topic=area-field-descriptions) and [SQLCODE](https://www.ibm.com/docs/en/i/7.3?topic=area-field-descriptions).
+
+[ASNA.QSys.Runtime](/concepts/architecture/asna-qsys.md) implements RPG [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=reference-sqlca-sql-communication-area) by populating the [SQL_CommunicationsArea](program-sql-communications-area-class.html).
+
+>Note: In addition to the [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=area-field-descriptions) defined fields, [SQL_CommunicationsArea](/reference/asna-qsys-runtime-job-support/classes/sql-communications-area.html) provides [SQL_Exception](http://localhost:4000/reference/asna-qsys-runtime-job-support/classes/sql-communications-area.html#properties) giving access to the raw [.NET SqlClientException](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlexception?view=dotnet-plat-ext-8.0) instance.
