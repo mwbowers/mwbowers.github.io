@@ -29,6 +29,7 @@ Specifies the option to be overridden on a file.
 | FormName | The printer form name.
 | FormType | The type of form.
 | Hold | The value indicating if the printout should be held.
+| InhibitWrite | Prevents output operations to the file from actually updating it, effectively treating the operation as a no-op.
 | MaxOption | The number of options in this enumeration.
 | Mbr | The member name.
 | Orientation | The print paper orientation.
