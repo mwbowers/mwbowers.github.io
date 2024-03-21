@@ -24,7 +24,7 @@ Describes the valid durations to use in date/time operations.
 | Name | Description
 | --- | --- 
 | Days | DurationCode Days.
-| Hours | DurationCode Hours.
+| Hours | DurationCode Hours/
 | MicroSeconds | DurationCode MicroSeconds.
 | Minutes | DurationCode Minutes.
 | Months | DurationCode Months.

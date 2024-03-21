@@ -1631,7 +1631,7 @@ Reference:
             path: /reference/asna-qsys-runtime/classes/decimal-kind.html
           - title: DecimalOps
             path: /reference/asna-qsys-runtime/classes/decimal-ops.html
-          - title: Dim
+          - title: Dim<T,U,V,S,R>
             path: /reference/asna-qsys-runtime/classes/dim.html
           - title: DimArrayTypeAttribute
             path: /reference/asna-qsys-runtime/classes/dim-array-type-attribute.html

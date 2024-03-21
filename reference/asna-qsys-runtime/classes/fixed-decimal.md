@@ -1,5 +1,5 @@
 ---
-title: FixedDecimal`2 Class
+title: FixedDecimal<T,U> Class
 ---
 
 Holds a fixed-decimal value with the specified number of digits and decimal positions.
@@ -38,11 +38,11 @@ Holds a fixed-decimal value with the specified number of digits and decimal posi
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compare to object. | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
 | [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-decimal, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html) | [Convert](#convertdecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Convert to IFixedSizeType. | The resulting IFixedSizeType.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsifixedsizetype{system.decimal})([IFixedSizeType{System.Decimal}](/reference/asna-qsys-runtime/i-fixed-size-type{-system-decimal}.html)) | Determines whether two IFixedSizeType objects have the same value. | True if the value of the value parameter is the same as this IFixedSizeType; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsdecimal>)([Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type<-system-decimal>.html)) | Determines whether two IFixedSizeType objects have the same value. | True if the value of the value parameter is the same as this IFixedSizeType; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether two FixedDecimals have the same value. | true if the value of the value parameter is the same as this string; otherwise, false.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Returns the hash code for this instance. | A hash code for the current FixedDecimal.
-| [FixedDecimal\\`2](/reference/asna-qsys-runtime/fixed-decimal`2.html) | [MergeLeft](#mergeleftstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge left. | The FixedDecimal result.
-| [FixedDecimal\\`2](/reference/asna-qsys-runtime/fixed-decimal`2.html) | [MergeRight](#mergerightstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge right. | The FixedDecimal result.
+| [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html) | [MergeLeft](#mergeleftstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge left. | The FixedDecimal result.
+| [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html) | [MergeRight](#mergerightstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge right. | The FixedDecimal result.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToPackedRepresentation](#topackedrepresentation)() | Convert this FixedDecimal to its packed representation. | The string containing the packed representation.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to string. | The resulting numeric string, formatted in the current culture.
 
@@ -97,19 +97,19 @@ The resulting IFixedSizeType.
 <br>
 <br>
 
-### Equals([IFixedSizeType{System.Decimal}](/reference/asna-qsys-runtime/i-fixed-size-type{-system-decimal}.html))
+### Equals([Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type<-system-decimal>.html))
 
 Determines whether two IFixedSizeType objects have the same value.
 
 ```cs
-Equals(ASNA.QSys.Runtime.IFixedSizeType{System.Decimal} other);
+Equals(ASNA.QSys.Runtime.IFixedSizeType<System.Decimal> other);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IFixedSizeType{System.Decimal}](/reference/asna-qsys-runtime/i-fixed-size-type{-system-decimal}.html) | other | The decimal to compare to. 
+| [Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type<-system-decimal>.html) | other | The decimal to compare to. 
 
 #### Returns
 
@@ -176,11 +176,11 @@ MergeLeft(String s, Boolean pad);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | s | Input string. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True is padding with zeroes. Defualt is false. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True is padding with zeroes. Default is false. 
 
 #### Returns
 
-[FixedDecimal\\`2](/reference/asna-qsys-runtime/fixed-decimal`2.html)
+[FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)
 
 The FixedDecimal result.
 
@@ -201,11 +201,11 @@ MergeRight(String s, Boolean pad);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | s | Input string. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True if padding with zeroes. Defualt is false. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True if padding with zeroes. Default is false. 
 
 #### Returns
 
-[FixedDecimal\\`2](/reference/asna-qsys-runtime/fixed-decimal`2.html)
+[FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)
 
 The FixedDecimal result.
 

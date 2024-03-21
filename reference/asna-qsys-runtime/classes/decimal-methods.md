@@ -34,60 +34,59 @@ Contains extension methods for handling RPG operations for decimal numbers.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-decimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to a decimal. | returns a decimal value targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | returns a string value of the targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVEL. Moves left a decimal into a DateTime. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short). | returns a short value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int). | returns a int value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long). | returns a long value targetOperand of the move.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttochardecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves right a decimal to a char. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to a decimal with pad. | returns a decimal value targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string, with pad. | returns a string value of the targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVEL. Moves left a decimal into a DateTime with pad. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short) with pad. | returns a short value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int) with pad. | returns a int value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long) with pad. | returns a long value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-decimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to a decimal. | returns a decimal value targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string. | returns a string value of the targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVE. Moves right a decimal into a DateTime. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short). | returns a short value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int). | returns a int value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long). | returns a long value targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2decimal-fixeddecimal{``0-``1})([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a decimal to a decimal. | returns a decimal value targetOperand.
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttochardecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to a char. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to a decimal with pad. | returns a decimal value targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string, with pad. | returns a string value of the targetOperand.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVE. Moves right a decimal into a DateTime with pad. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short) with pad. | returns a short value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int) with pad. | returns a int value targetOperand of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long) with pad. | returns a long value targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2decimal-fixeddecimal{``0-``1})([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a decimal to a decimal with pad. | returns a decimal value targetOperand.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-decimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to a decimal. | The resulting decimal value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | The resulting string value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVEL. Moves left a decimal into a DateTime. | The resulting DateTime value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short). | The resulting short value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int). | The resulting int value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftdecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long). | The resulting long value of the operation.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttochardecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves right a decimal to a char. | The first character in the string representation of the decimal value.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to a decimal with pad. | The resulting decimal value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string, with pad. | The resulting string value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVEL. Moves left a decimal into a DateTime with pad. | The resulting DateTime value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short) with pad. | The resulting short value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int) with pad. | The resulting int value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpaddecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long) with pad. | The resulting long value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-decimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to a decimal. | The resulting decimal value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string. | The resulting string value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVE. Moves right a decimal into a DateTime. | The resulting DateTime value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short). | The resulting short value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int). | The resulting int value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightdecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;decimal-fixeddecimal(<t>-<t>))([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a decimal to a decimal. | The resulting decimal value of the operation.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttochardecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to a char. | The last character in the string representation of the decimal value.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to a decimal with pad. | The resulting decimal value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-string)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string, with pad. | The resulting string value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-datetime-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | RPG's MOVE. Moves right a decimal into a DateTime with pad. | The resulting DateTime value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-int16)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short) with pad. | The resulting short value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int) with pad. | The resulting int value of the operation.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpaddecimal-int32-int32-int64)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long) with pad. | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;decimal-fixeddecimal(<t>-<t>))([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a decimal to a decimal with pad. | The resulting decimal value of the operation.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [RoundUp](#roundupdecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds up a decimal number to the desired decimal positions. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RoundUp\\`\\`2](#roundup\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds up a decimal number to the desired decimal positions. | .
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [RoundUp](#roundupdecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds up a decimal number to the desired decimal positions. | The decimal value rounded up to the given decimal positions.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetDigits](#setdigitsdecimal-int32-int32-decimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetDigits](#setdigitsdecimal-int32-int32-decimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetDigits](#setdigitsdecimal-int32-int32-decimal-int32-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdecimal-indicator-indicator-indicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqsingle-indicator-indicator-indicator)([Single]($$TODO-Single.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdouble-indicator-indicator-indicator)([Double]($$TODO-Double.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | the same value that was passed in in num.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumdecimal[])([Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumsingle[])([Single[]]($$TODO-Single[].html)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumdouble[])([Double[]]($$TODO-Double[].html)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sum\\`\\`2](#sum\`\`2fixeddecimal{``0-``1}[])([FixedDecimal{\\`\\`0,\\`\\`1}[]](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sum\\`\\`3](#sum\`\`3fixeddecimalarrayinds{``0-``1-``2})([FixedDecimalArrayInDS{\\`\\`0,\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal-array-in-ds{``0,``1,``2}.html)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sum\\`\\`3](#sum\`\`3fixeddecimalarray{``0-``1-``2})([FixedDecimalArray{\\`\\`0,\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal-array{``0,``1,``2}.html)) | Returns the added values of each element in the array. | the added value of every element in the array.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimedecimal-int32-int32-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | .
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdecimal-indicator-indicator-indicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | The same value that was passed in in num.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqsingle-indicator-indicator-indicator)([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | The same value that was passed in in num.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [SetHiLoEq](#sethiloeqdouble-indicator-indicator-indicator)([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of num. | The same value that was passed in in num.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumdecimal[])([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Returns the added values of each element in the array. | The added value of every element in the array.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumsingle[])([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0)) | Returns the added values of each element in the array. | The added value of every element in the array.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Sum](#sumdouble[])([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0)) | Returns the added values of each element in the array. | The added value of every element in the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sum&lt;T,U,V&gt;](#sum&lt;t,u,v&gt;fixeddecimalarrayinds(<t>-<t>-<t-u>))([FixedDecimalArrayInDS](/reference/asna-qsys-runtime/classes/fixed-decimal-array-in-ds.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns the added values of each element in the array. | The added value of every element in the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sum&lt;T,U,V&gt;](#sum&lt;t,u,v&gt;fixeddecimalarray(<t>-<t>-<t-u>))([FixedDecimalArray](/reference/asna-qsys-runtime/classes/fixed-decimal-array.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns the added values of each element in the array. | The added value of every element in the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sum&lt;T,U&gt;](#sum&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns the added values of each element in the array. | The added value of every element in the array.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [TestTime](#testtimedecimal-int32-int32-datetimedatakind-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | True if the number represents a valid date/time/timestamp value in the given format. False otherwise.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDate](#todatedecimal-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | ToDate summary. | ToDate returns.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDecimal\\`\\`1](#todecimal\`\`1``0)([\\`\\`0]($$TODO-``0.html)) | Converts a value of type T to decimal. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimal](#tofixeddecimaldecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimal](#tofixeddecimaldecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Truncates a decimal to the specified number of decimal positions. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimalRounded](#tofixeddecimalroundeddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number using Away From Zero rounding. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimalRounded](#tofixeddecimalroundeddecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds a decimal to the specified number of decimal positions using Away From Zero rounding. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDecimal&lt;T&gt;](#todecimal&lt;t&gt;<t>)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | Converts a value of type T to decimal. | The decimal result of the conversion.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimal](#tofixeddecimaldecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number. | The decimal number adjusted to the given digits and decimal positions.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimal](#tofixeddecimaldecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Truncates a decimal to the specified number of decimal positions. | The decimal number adjusted to the given decimal positions.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimalRounded](#tofixeddecimalroundeddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number using Away From Zero rounding. | The decimal number adjusted to the given digits and decimal positions with rounding.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimalRounded](#tofixeddecimalroundeddecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds a decimal to the specified number of decimal positions using Away From Zero rounding. | The decimal number adjusted to the given decimal positions with rounding.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToStringBinary](#tostringbinarydecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns as a string the 'memory' representation of a binary decimal number. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToStringPacked](#tostringpackeddecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns as a string the 'memory' representation of a packed decimal number. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToStringZoned](#tostringzoneddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns as a string the 'memory' representation of a zoned decimal number. | .
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToStringBinary](#tostringbinarydecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns as a string the 'memory' representation of a binary decimal number. | The resulting binary decimal representation of the decimal number.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToStringPacked](#tostringpackeddecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns as a string the 'memory' representation of a packed decimal number. | The resulting packed decimal representation of the decimal number.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToStringZoned](#tostringzoneddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns as a string the 'memory' representation of a zoned decimal number. | The resulting zoned decimal representation of the decimal number.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToTime](#totimedecimal-datetimeformat)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | ToTime summary. | ToTime returns.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToTimestamp](#totimestampdecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | ToTimestamp summary. | ToTimestamp returns.
 
@@ -226,7 +225,7 @@ MoveLeft(Decimal num, Int32 sourceDig, Int32 sourceDec, Decimal targetOperand, I
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a decimal value targetOperand.
+The resulting decimal value of the operation.
 
 
 <br>
@@ -253,7 +252,7 @@ MoveLeft(Decimal num, Int32 sourceDig, Int32 sourceDec, String targetOperand);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a string value of the targetOperand.
+The resulting string value of the operation.
 
 
 <br>
@@ -282,7 +281,7 @@ MoveLeft(Decimal num, Int32 sourceDig, Int32 sourceDec, DateTime dateTime, ASNA.
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The resulting DateTime value of the operation.
 
 
 <br>
@@ -309,7 +308,7 @@ MoveLeft(Decimal num, Int32 sourceDig, Int32 sourceDec, Int16 targetOperand);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a short value targetOperand of the move.
+The resulting short value of the operation.
 
 
 <br>
@@ -330,13 +329,13 @@ MoveLeft(Decimal num, Int32 sourceDig, Int32 sourceDec, Int32 targetOperand);
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a int value targetOperand of the move.
+The resulting int value of the operation.
 
 
 <br>
@@ -357,13 +356,13 @@ MoveLeft(Decimal num, Int32 sourceDig, Int32 sourceDec, Int64 targetOperand);
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a long value targetOperand of the move.
+The resulting long value of the operation.
 
 
 <br>
@@ -389,7 +388,7 @@ MoveLeftToChar(Decimal num, Int32 sourceDig, Int32 sourceDec);
 
 [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
-.
+The first character in the string representation of the decimal value.
 
 
 <br>
@@ -417,7 +416,7 @@ MoveLeftWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int32 targetOpera
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a decimal value targetOperand.
+The resulting decimal value of the operation.
 
 
 <br>
@@ -444,7 +443,7 @@ MoveLeftWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, String targetOper
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a string value of the targetOperand.
+The resulting string value of the operation.
 
 
 <br>
@@ -473,7 +472,7 @@ MoveLeftWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, DateTime dateTime
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The resulting DateTime value of the operation.
 
 
 <br>
@@ -500,7 +499,7 @@ MoveLeftWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int16 targetOpera
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a short value targetOperand of the move.
+The resulting short value of the operation.
 
 
 <br>
@@ -521,13 +520,13 @@ MoveLeftWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int32 targetOpera
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a int value targetOperand of the move.
+The resulting int value of the operation.
 
 
 <br>
@@ -548,13 +547,13 @@ MoveLeftWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int64 targetOpera
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a long value targetOperand of the move.
+The resulting long value of the operation.
 
 
 <br>
@@ -581,7 +580,7 @@ MoveRight(Decimal num, Decimal targetOperand, Int32 targetOperandDig, Int32 targ
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a decimal value targetOperand.
+The resulting decimal value of the operation.
 
 
 <br>
@@ -608,7 +607,7 @@ MoveRight(Decimal num, Int32 sourceDig, Int32 sourceDec, String targetOperand);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a string value of the targetOperand.
+The resulting string value of the operation.
 
 
 <br>
@@ -637,7 +636,7 @@ MoveRight(Decimal num, Int32 sourceDig, Int32 sourceDec, DateTime dateTime, ASNA
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The resulting DateTime value of the operation.
 
 
 <br>
@@ -664,7 +663,7 @@ MoveRight(Decimal num, Int32 sourceDig, Int32 sourceDec, Int16 targetOperand);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a short value targetOperand of the move.
+The resulting short value of the operation.
 
 
 <br>
@@ -685,13 +684,13 @@ MoveRight(Decimal num, Int32 sourceDig, Int32 sourceDec, Int32 targetOperand);
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a int value targetOperand of the move.
+The resulting int value of the operation.
 
 
 <br>
@@ -712,24 +711,24 @@ MoveRight(Decimal num, Int32 sourceDig, Int32 sourceDec, Int64 targetOperand);
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a long value targetOperand of the move.
+The resulting long value of the operation.
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveRight&lt;T,U&gt;([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a decimal to a decimal.
 
 ```cs
-MoveRight``2(Decimal num, ASNA.QSys.Runtime.FixedDecimal{``0,``1} targetOperand);
+MoveRight<T,U>(Decimal num, ASNA.QSys.Runtime.FixedDecimal(``0,``1) targetOperand);
 ```
 
 #### Parameters
@@ -737,7 +736,7 @@ MoveRight``2(Decimal num, ASNA.QSys.Runtime.FixedDecimal{``0,``1} targetOperand)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | Decimal value of the targetOperand number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | Decimal value of the targetOperand number. 
 
 
 <br>
@@ -763,7 +762,7 @@ MoveRightToChar(Decimal num, Int32 sourceDig, Int32 sourceDec);
 
 [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)
 
-.
+The last character in the string representation of the decimal value.
 
 
 <br>
@@ -789,7 +788,7 @@ MoveRightWithPad(Decimal num, Int32 targetOperandDig, Int32 targetOperandDec);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a decimal value targetOperand.
+The resulting decimal value of the operation.
 
 
 <br>
@@ -816,7 +815,7 @@ MoveRightWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, String targetOpe
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a string value of the targetOperand.
+The resulting string value of the operation.
 
 
 <br>
@@ -845,7 +844,7 @@ MoveRightWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, DateTime dateTim
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The resulting DateTime value of the operation.
 
 
 <br>
@@ -872,7 +871,7 @@ MoveRightWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int16 targetOper
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a short value targetOperand of the move.
+The resulting short value of the operation.
 
 
 <br>
@@ -893,13 +892,13 @@ MoveRightWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int32 targetOper
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a int value targetOperand of the move.
+The resulting int value of the operation.
 
 
 <br>
@@ -920,24 +919,24 @@ MoveRightWithPad(Decimal num, Int32 sourceDig, Int32 sourceDec, Int64 targetOper
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDig | number of digits in the source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceDec | number of decimal places in the source. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-returns a long value targetOperand of the move.
+The resulting long value of the operation.
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveRightWithPad&lt;T,U&gt;([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a decimal to a decimal with pad.
 
 ```cs
-MoveRightWithPad``2(Decimal num, ASNA.QSys.Runtime.FixedDecimal{``0,``1} targetOperand);
+MoveRightWithPad<T,U>(Decimal num, ASNA.QSys.Runtime.FixedDecimal(``0,``1) targetOperand);
 ```
 
 #### Parameters
@@ -945,7 +944,7 @@ MoveRightWithPad``2(Decimal num, ASNA.QSys.Runtime.FixedDecimal{``0,``1} targetO
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | Fixed decimal value that is the target of the move. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | Fixed decimal value that is the target of the move. 
 
 
 <br>
@@ -963,33 +962,14 @@ RoundUp(Decimal num, Int32 decimalCount);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | . 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimalCount | . 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | The number to round up. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimalCount | The desired number of decimal positions. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
-
-
-<br>
-<br>
-
-### RoundUp\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-Rounds up a decimal number to the desired decimal positions.
-
-```cs
-RoundUp``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Int32 decimalCount);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num | . 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimalCount | . 
+The decimal value rounded up to the given decimal positions.
 
 
 <br>
@@ -1087,83 +1067,83 @@ The decimal number after replacing digits.
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
 ```cs
-SetHiLoEq(Decimal num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
+SetHiLoEq(Decimal num, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | The number to test. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | The greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | The less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | The equal flag. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-the same value that was passed in in num.
+The same value that was passed in in num.
 
 
 <br>
 <br>
 
-### SetHiLoEq([Single]($$TODO-Single.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### SetHiLoEq([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
 ```cs
-SetHiLoEq(Single num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
+SetHiLoEq(Single num, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Single]($$TODO-Single.html) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
+| [Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0) | num | The number to test. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | The greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | The less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | The equal flag. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-the same value that was passed in in num.
+The same value that was passed in in num.
 
 
 <br>
 <br>
 
-### SetHiLoEq([Double]($$TODO-Double.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### SetHiLoEq([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of num.
 
 ```cs
-SetHiLoEq(Double num, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
+SetHiLoEq(Double num, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Double]($$TODO-Double.html) | num | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | num | The number to test. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | The greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | The less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | The equal flag. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-the same value that was passed in in num.
+The same value that was passed in in num.
 
 
 <br>
 <br>
 
-### Sum([Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal))
+### Sum([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal))
 
 Returns the added values of each element in the array.
 
@@ -1175,19 +1155,19 @@ Sum(Decimal[] array);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | array | the array whose elements will be summed. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | array | The array whose elements will be summed. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-the added value of every element in the array.
+The added value of every element in the array.
 
 
 <br>
 <br>
 
-### Sum([Single[]]($$TODO-Single[].html))
+### Sum([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0))
 
 Returns the added values of each element in the array.
 
@@ -1199,19 +1179,19 @@ Sum(Single[] array);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Single[]]($$TODO-Single[].html) | array | the array whose elements will be summed. 
+| [Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0) | array | The array whose elements will be summed. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-the added value of every element in the array.
+The added value of every element in the array.
 
 
 <br>
 <br>
 
-### Sum([Double[]]($$TODO-Double[].html))
+### Sum([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0))
 
 Returns the added values of each element in the array.
 
@@ -1223,67 +1203,67 @@ Sum(Double[] array);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Double[]]($$TODO-Double[].html) | array | the array whose elements will be summed. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | array | The array whose elements will be summed. 
 
 #### Returns
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-the added value of every element in the array.
+The added value of every element in the array.
 
 
 <br>
 <br>
 
-### Sum\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}[]](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### Sum&lt;T,U,V&gt;([FixedDecimalArrayInDS](/reference/asna-qsys-runtime/classes/fixed-decimal-array-in-ds.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Returns the added values of each element in the array.
 
 ```cs
-Sum``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1}[] array);
+Sum<T,U,V>(ASNA.QSys.Runtime.FixedDecimalArrayInDS(``0,``1,``2) array);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}[]](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | array | the array whose elements will be summed. 
+| [FixedDecimalArrayInDS(&lt;T&gt;, &lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-decimal-array-in-ds.html) | array | The array whose elements will be summed. 
 
 
 <br>
 <br>
 
-### Sum\`\`3([FixedDecimalArrayInDS{\\`\\`0,\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal-array-in-ds{``0,``1,``2}.html))
+### Sum&lt;T,U,V&gt;([FixedDecimalArray](/reference/asna-qsys-runtime/classes/fixed-decimal-array.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Returns the added values of each element in the array.
 
 ```cs
-Sum``3(ASNA.QSys.Runtime.FixedDecimalArrayInDS{``0,``1,``2} array);
+Sum<T,U,V>(ASNA.QSys.Runtime.FixedDecimalArray(``0,``1,``2) array);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimalArrayInDS{\\`\\`0,\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal-array-in-ds{``0,``1,``2}.html) | array | the array whose elements will be summed. 
+| [FixedDecimalArray(&lt;T&gt;, &lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-decimal-array.html) | array | The array whose elements will be summed. 
 
 
 <br>
 <br>
 
-### Sum\`\`3([FixedDecimalArray{\\`\\`0,\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal-array{``0,``1,``2}.html))
+### Sum&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Returns the added values of each element in the array.
 
 ```cs
-Sum``3(ASNA.QSys.Runtime.FixedDecimalArray{``0,``1,``2} array);
+Sum<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) array);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimalArray{\\`\\`0,\\`\\`1,\\`\\`2}](/reference/asna-qsys-runtime/fixed-decimal-array{``0,``1,``2}.html) | array | the array whose elements will be summed. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | array | The array whose elements will be summed. 
 
 
 <br>
@@ -1301,17 +1281,17 @@ TestTime(Decimal num, Int32 digits, Int32 decimals, ASNA.QSys.Runtime.DateTimeDa
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | the decimal number to test. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | the length of the decimal number. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | the decimal positions of the decimal number. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | The decimal number to test. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The length of the decimal number. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The decimal positions of the decimal number. 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
-| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | the date/time/timestamp format in which the number is. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The date/time/timestamp format in which the number is. 
 
 #### Returns
 
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
-.
+True if the number represents a valid date/time/timestamp value in the given format. False otherwise.
 
 
 <br>
@@ -1342,19 +1322,19 @@ ToDate returns.
 <br>
 <br>
 
-### ToDecimal\`\`1([\\`\\`0]($$TODO-``0.html))
+### ToDecimal&lt;T&gt;([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))
 
 Converts a value of type T to decimal.
 
 ```cs
-ToDecimal``1(``0 val);
+ToDecimal<T>(<T> val);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`\\`0]($$TODO-``0.html) | val |  The value to convert. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | val |  The value to convert. 
 
 
 <br>
@@ -1380,7 +1360,7 @@ ToFixedDecimal(Decimal num, Int32 digits, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number adjusted to the given digits and decimal positions.
 
 
 <br>
@@ -1405,7 +1385,7 @@ ToFixedDecimal(Decimal num, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number adjusted to the given decimal positions.
 
 
 <br>
@@ -1431,7 +1411,7 @@ ToFixedDecimalRounded(Decimal num, Int32 digits, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number adjusted to the given digits and decimal positions with rounding.
 
 
 <br>
@@ -1456,7 +1436,7 @@ ToFixedDecimalRounded(Decimal num, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number adjusted to the given decimal positions with rounding.
 
 
 <br>
@@ -1482,7 +1462,7 @@ ToStringBinary(Decimal num, Int32 digits, Int32 decimals);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The resulting binary decimal representation of the decimal number.
 
 
 <br>
@@ -1507,7 +1487,7 @@ ToStringPacked(Decimal num, Int32 digits);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The resulting packed decimal representation of the decimal number.
 
 
 <br>
@@ -1533,7 +1513,7 @@ ToStringZoned(Decimal num, Int32 digits, Int32 decimals);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The resulting zoned decimal representation of the decimal number.
 
 
 <br>

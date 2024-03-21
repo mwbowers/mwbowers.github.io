@@ -32,30 +32,30 @@ Contains extension methods for handling Arrays according to RPG semantics.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetIndices](#getindicesarray-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Obtains the indices of an array based on the linear index. | The coordinate obtained from the linear position.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Initialize](#initializearray-object)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes the elements of an arbitrary array to the same value. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T,U,V&gt;](#lookup&lt;t,u,v&gt;``0[]-``0-searchtype-int32-fixeddecimal(``1-``2)-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), ASNA.QSys.Runtime.FixedDecimal([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T,U,V&gt;](#lookup&lt;t,u,v&gt;``0[]-``0-searchtype-int32-fixeddecimal(``1-``2)-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), ASNA.QSys.Runtime.FixedDecimal([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-int32-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-int32-outint32-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-int32-outint32-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | True if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-int32-outdecimal-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-searchtype-int32-outdecimal-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;``0[]-``0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE&lt;T&gt;](#lookupge&lt;t&gt;``0[]-``0-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE&lt;T&gt;](#lookupge&lt;t&gt;``0[]-``0-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE&lt;T&gt;](#lookupge&lt;t&gt;``0[]-``0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGT&lt;T&gt;](#lookupgt&lt;t&gt;``0[]-``0-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGT&lt;T&gt;](#lookupgt&lt;t&gt;``0[]-``0-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGT&lt;T&gt;](#lookupgt&lt;t&gt;``0[]-``0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLE&lt;T&gt;](#lookuple&lt;t&gt;``0[]-``0-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLE&lt;T&gt;](#lookuple&lt;t&gt;``0[]-``0-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLE&lt;T&gt;](#lookuple&lt;t&gt;``0[]-``0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLT&lt;T&gt;](#lookuplt&lt;t&gt;``0[]-``0-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLT&lt;T&gt;](#lookuplt&lt;t&gt;``0[]-``0-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLT&lt;T&gt;](#lookuplt&lt;t&gt;``0[]-``0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T,U,V&gt;](#lookup&lt;t,u,v&gt;<t>[]-<t>-searchtype-int32-fixeddecimal(<t>-<t-u>)-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T,U,V&gt;](#lookup&lt;t,u,v&gt;<t>[]-<t>-searchtype-int32-fixeddecimal(<t>-<t-u>)-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-int32-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-int32-outint32-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-int32-outint32-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | True if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-int32-outdecimal-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-searchtype-int32-outdecimal-indicator-indicator)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Searches an array for the specified element value. | Returns true if lookup is successful, false otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Lookup&lt;T&gt;](#lookup&lt;t&gt;<t>[]-<t>)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE&lt;T&gt;](#lookupge&lt;t&gt;<t>[]-<t>-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE&lt;T&gt;](#lookupge&lt;t&gt;<t>[]-<t>-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGE&lt;T&gt;](#lookupge&lt;t&gt;<t>[]-<t>)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGT&lt;T&gt;](#lookupgt&lt;t&gt;<t>[]-<t>-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGT&lt;T&gt;](#lookupgt&lt;t&gt;<t>[]-<t>-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupGT&lt;T&gt;](#lookupgt&lt;t&gt;<t>[]-<t>)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLE&lt;T&gt;](#lookuple&lt;t&gt;<t>[]-<t>-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLE&lt;T&gt;](#lookuple&lt;t&gt;<t>[]-<t>-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLE&lt;T&gt;](#lookuple&lt;t&gt;<t>[]-<t>)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLT&lt;T&gt;](#lookuplt&lt;t&gt;<t>[]-<t>-int32-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLT&lt;T&gt;](#lookuplt&lt;t&gt;<t>[]-<t>-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LookupLT&lt;T&gt;](#lookuplt&lt;t&gt;<t>[]-<t>)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument. | Returns the zero based starting index of a found value, otherwise a -1.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray](#movetoarrayarray-int32-array-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array, no padding. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayDiffFieldLength](#movetoarraydifffieldlengtharray-int32-array-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array of different field lengths, no padding. | 
@@ -157,12 +157,12 @@ Initialize(Array myArr, Object val);
 <br>
 <br>
 
-### Lookup&lt;T,U,V&gt;([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), ASNA.QSys.Runtime.FixedDecimal([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### Lookup&lt;T,U,V&gt;([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T,U,V>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, ASNA.QSys.Runtime.FixedDecimal(``1,``2) foundIndex, out ASNA.QSys.Runtime.Indicator ind);
+Lookup<T,U,V>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, ASNA.QSys.Runtime.FixedDecimal(``1,``2) foundIndex, out ASNA.QSys.Runtime.Indicator ind);
 ```
 
 #### Parameters
@@ -173,19 +173,19 @@ Lookup<T,U,V>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType sear
 | [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | searchArgument | The element value being searched for in the array. 
 | [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [FixedDecimal(\`\`1,\`\`2)](/reference/asna-qsys-runtime/fixed-decimal(``1,``2).html) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [FixedDecimal(&lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 
 
 <br>
 <br>
 
-### Lookup&lt;T,U,V&gt;([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), ASNA.QSys.Runtime.FixedDecimal([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### Lookup&lt;T,U,V&gt;([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [SearchType](/reference/asna-qsys-runtime/classes/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T,U,V>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, ASNA.QSys.Runtime.FixedDecimal(``1,``2) foundIndex, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
+Lookup<T,U,V>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, ASNA.QSys.Runtime.FixedDecimal(``1,``2) foundIndex, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
 ```
 
 #### Parameters
@@ -196,7 +196,7 @@ Lookup<T,U,V>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType sear
 | [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | searchArgument | The element value being searched for in the array. 
 | [SearchType](/reference/asna-qsys-runtime/classes/search-type.html) | searchType | The type of search being performed. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin. 
-| [FixedDecimal(\`\`1,\`\`2)](/reference/asna-qsys-runtime/fixed-decimal(``1,``2).html) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
+| [FixedDecimal(&lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | foundIndex | The index of the array element that matches the search, or 0 if not found. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array. 
 
@@ -209,7 +209,7 @@ Lookup<T,U,V>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType sear
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, out ASNA.QSys.Runtime.Indicator ind);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, out ASNA.QSys.Runtime.Indicator ind);
 ```
 
 #### Parameters
@@ -230,7 +230,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
 ```
 
 #### Parameters
@@ -252,7 +252,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out ASNA.QSys.Runtime.Indicator ind);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out ASNA.QSys.Runtime.Indicator ind);
 ```
 
 #### Parameters
@@ -274,7 +274,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Int32 foundIndex, out ASNA.QSys.Runtime.Indicator ind);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Int32 foundIndex, out ASNA.QSys.Runtime.Indicator ind);
 ```
 
 #### Parameters
@@ -297,7 +297,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Int32 foundIndex, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Int32 foundIndex, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
 ```
 
 #### Parameters
@@ -321,7 +321,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Decimal foundIndex, out ASNA.QSys.Runtime.Indicator ind);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Decimal foundIndex, out ASNA.QSys.Runtime.Indicator ind);
 ```
 
 #### Parameters
@@ -344,7 +344,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 Searches an array for the specified element value.
 
 ```cs
-Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Decimal foundIndex, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
+Lookup<T>(<T>[] array, <T> searchArgument, ASNA.QSys.Runtime.SearchType searchType, Int32 startPosition, out Decimal foundIndex, out ASNA.QSys.Runtime.Indicator hiLoInd, out ASNA.QSys.Runtime.Indicator eqInd);
 ```
 
 #### Parameters
@@ -368,7 +368,7 @@ Lookup<T>(``0[] array, ``0 searchArgument, ASNA.QSys.Runtime.SearchType searchTy
 RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
 
 ```cs
-Lookup<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLength);
+Lookup<T>(<T>[] argArray, <T> searchArgument, Int32 startPos, Int32 searchLength);
 ```
 
 #### Parameters
@@ -389,7 +389,7 @@ Lookup<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLength
 RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
 
 ```cs
-Lookup<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
+Lookup<T>(<T>[] argArray, <T> searchArgument, Int32 startPos);
 ```
 
 #### Parameters
@@ -409,7 +409,7 @@ Lookup<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
 RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
 
 ```cs
-Lookup<T>(``0[] argArray, ``0 searchArgument);
+Lookup<T>(<T>[] argArray, <T> searchArgument);
 ```
 
 #### Parameters
@@ -428,7 +428,7 @@ Lookup<T>(``0[] argArray, ``0 searchArgument);
 RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
 
 ```cs
-LookupGE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLength);
+LookupGE<T>(<T>[] argArray, <T> searchArgument, Int32 startPos, Int32 searchLength);
 ```
 
 #### Parameters
@@ -449,7 +449,7 @@ LookupGE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLeng
 RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
 
 ```cs
-LookupGE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
+LookupGE<T>(<T>[] argArray, <T> searchArgument, Int32 startPos);
 ```
 
 #### Parameters
@@ -469,7 +469,7 @@ LookupGE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
 RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
 
 ```cs
-LookupGE<T>(``0[] argArray, ``0 searchArgument);
+LookupGE<T>(<T>[] argArray, <T> searchArgument);
 ```
 
 #### Parameters
@@ -488,7 +488,7 @@ LookupGE<T>(``0[] argArray, ``0 searchArgument);
 RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
 
 ```cs
-LookupGT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLength);
+LookupGT<T>(<T>[] argArray, <T> searchArgument, Int32 startPos, Int32 searchLength);
 ```
 
 #### Parameters
@@ -509,7 +509,7 @@ LookupGT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLeng
 RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
 
 ```cs
-LookupGT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
+LookupGT<T>(<T>[] argArray, <T> searchArgument, Int32 startPos);
 ```
 
 #### Parameters
@@ -529,7 +529,7 @@ LookupGT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
 RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
 
 ```cs
-LookupGT<T>(``0[] argArray, ``0 searchArgument);
+LookupGT<T>(<T>[] argArray, <T> searchArgument);
 ```
 
 #### Parameters
@@ -548,7 +548,7 @@ LookupGT<T>(``0[] argArray, ``0 searchArgument);
 RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
 
 ```cs
-LookupLE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLength);
+LookupLE<T>(<T>[] argArray, <T> searchArgument, Int32 startPos, Int32 searchLength);
 ```
 
 #### Parameters
@@ -569,7 +569,7 @@ LookupLE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLeng
 RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
 
 ```cs
-LookupLE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
+LookupLE<T>(<T>[] argArray, <T> searchArgument, Int32 startPos);
 ```
 
 #### Parameters
@@ -589,7 +589,7 @@ LookupLE<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
 RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
 
 ```cs
-LookupLE<T>(``0[] argArray, ``0 searchArgument);
+LookupLE<T>(<T>[] argArray, <T> searchArgument);
 ```
 
 #### Parameters
@@ -608,7 +608,7 @@ LookupLE<T>(``0[] argArray, ``0 searchArgument);
 RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
 
 ```cs
-LookupLT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLength);
+LookupLT<T>(<T>[] argArray, <T> searchArgument, Int32 startPos, Int32 searchLength);
 ```
 
 #### Parameters
@@ -629,7 +629,7 @@ LookupLT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos, Int32 searchLeng
 RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
 
 ```cs
-LookupLT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
+LookupLT<T>(<T>[] argArray, <T> searchArgument, Int32 startPos);
 ```
 
 #### Parameters
@@ -649,7 +649,7 @@ LookupLT<T>(``0[] argArray, ``0 searchArgument, Int32 startPos);
 RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
 
 ```cs
-LookupLT<T>(``0[] argArray, ``0 searchArgument);
+LookupLT<T>(<T>[] argArray, <T> searchArgument);
 ```
 
 #### Parameters

@@ -1,5 +1,5 @@
 ---
-title: FixedDecimalArrayInDS`3 Class
+title: FixedDecimalArrayInDS<T,U,V> Class
 ---
 
 Describes a fixed size array of FixedDecimal contained in a DataStructure.
@@ -19,11 +19,31 @@ Describes a fixed size array of FixedDecimal contained in a DataStructure.
 <br>
 <br>
 
-## Constructor
+## Constructors
 
 | Name |  Description 
 | --- | --- 
-| **FixedDecimalArrayInDS**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Constructs a fixed size array of FixedDecimal in a Data Structure.
+| [FixedDecimalArrayInDS](#fixeddecimalarrayindsmultidatastructure-layouttype-int32-int32)([MultiDataStructure](/reference/asna-qsys-runtime/classes/multi-data-structure.html), [LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedDecimal in a Multiple Occurrence Data Structure. 
+| [FixedDecimalArrayInDS](#fixeddecimalarrayindsdatastructure-layouttype-int32-int32)([DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedDecimal in a Data Structure. 
+
+<br>
+
+### FixedDecimalArrayInDS( [MultiDataStructure](/reference/asna-qsys-runtime/classes/multi-data-structure.html), [LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
+
+Constructs a fixed size array of FixedDecimal in a Multiple Occurrence Data Structure.
+
+```cs
+FixedDecimalArrayInDS( ASNA.QSys.Runtime.MultiDataStructure parent, ASNA.QSys.Runtime.LayoutType decimalType, Int32 startPos, Int32 skipPositions );
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [MultiDataStructure](/reference/asna-qsys-runtime/classes/multi-data-structure.html) | parent | The MultiDataStructure containing this array of FixedDecimal. 
+| [LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html) | decimalType | The LayoutType describing the kind of fixed decimals, zoned, packed, or binary, the array contains. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements. 
 
 <br>
 
@@ -54,7 +74,7 @@ FixedDecimalArrayInDS( ASNA.QSys.Runtime.DataStructure parent, ASNA.QSys.Runtime
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [FixedDecimal\\`2]($$TODO-FixedDecimal`2.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the FixedDecimal element at that position. | index /* Index of the desired element. */
+| [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the FixedDecimal element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the total number of elements in the array. | 
 | [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SkipPositions | For non-contiguous arrays, gets the number of buffer positions between consecutive array elements. 0 otherwise. | 
@@ -68,9 +88,9 @@ FixedDecimalArrayInDS( ASNA.QSys.Runtime.DataStructure parent, ASNA.QSys.Runtime
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Sets all array elements to 0. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromfixeddecimal{`1-`2}[]-int32)([FixedDecimal{\\`1,\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{`1,`2}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a FixedDecimal[] into this array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromdecimal[]-int32)([Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a decimal[] into this array. | 
-| [IEnumerator\\`1]($$TODO-IEnumerator`1.html) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromfixeddecimal(<t>-<t-u>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a FixedDecimal[] into this array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromdecimal[]-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a decimal[] into this array. | 
+| [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [System#Collections#IEnumerable#GetEnumerator](#system#collections#ienumerable#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
@@ -90,26 +110,26 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([FixedDecimal{\\`1,\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{`1,`2}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copies elements from a FixedDecimal[] into this array.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedDecimal{`1,`2}[] sourceArray, Int32 targetStartAt);
+CopyFrom(ASNA.QSys.Runtime.FixedDecimal(`1,`2) sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`1,\\`2}[]](/reference/asna-qsys-runtime/fixed-decimal{`1,`2}.html) | sourceArray | The array to copy from. 
+| [FixedDecimal(\`1,\`2)](/reference/asna-qsys-runtime/fixed-decimal.html) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 
 <br>
 <br>
 
-### CopyFrom([Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copies elements from a decimal[] into this array.
 
@@ -121,7 +141,7 @@ CopyFrom(Decimal[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal[]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | sourceArray | The array to copy from. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 
@@ -138,7 +158,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator\\`1]($$TODO-IEnumerator`1.html)
+[IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator)
 
 An enumerator that can be used to iterate through the array.
 

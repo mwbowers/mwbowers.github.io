@@ -25,596 +25,951 @@ Contains extension methods for handling RPG operations for FixedDate values.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDuration\\`\\`2](#addduration\`\`2fixeddate{``0-``1}-double-durationcode)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Adds a duration span to a date or a timestamp value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDurationToTime\\`\\`2](#adddurationtotime\`\`2fixeddate{``0-``1}-double-durationcode)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Adds a duration span to a time value. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDuration&lt;T,U&gt;](#addduration&lt;t,u&gt;fixeddate(<t>-<t>)-double-durationcode)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Adds a duration span to a date or a timestamp value. | The resulting Date or Timestamp value after adding to it the given duration.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDurationToTime&lt;T,U&gt;](#adddurationtotime&lt;t,u&gt;fixeddate(<t>-<t>)-double-durationcode)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Adds a duration span to a time value. | The resulting Time value after adding to it the given duration.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddate{``0-``1}-string)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a fixed date to string. | returns a string value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddate{``0-``1}-int16)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a fixed date into a int2 (short). | short int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddate{``0-``1}-int32)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a fixed date into a int4 (int). | int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddate{``0-``1}-int64)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a fixed date into a int8 (long). | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`4](#moveleft\`\`4fixeddate{``0-``1}-fixeddecimal{``2-``3})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVEL. Moves left a fixed date to decimal. | returns a decimal value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftToChar\\`\\`2](#movelefttochar\`\`2fixeddate{``0-``1})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html)) | RPG's MOVEL. Moves left a date, time, timestamp in the given format to a char value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddate{``0-``1}-string)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a fixed date to string with pad. | returns a string value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddate{``0-``1}-int16)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short) with pad. | short int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddate{``0-``1}-int32)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a fixed date into a int4 (int). | int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddate{``0-``1}-int64)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a fixed date into a int8 (long). | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`4](#moveleftwithpad\`\`4fixeddate{``0-``1}-fixeddecimal{``2-``3})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVEL. Moves left a fixed date to decimal with pad. | returns a decimal value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddate{``0-``1}-string)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a fixed date to string. | returns a string value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddate{``0-``1}-int16)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short). | short int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddate{``0-``1}-int32)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a fixed date into a int4 (int). | int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddate{``0-``1}-int64)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a fixed date into a int8 (long). | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`4](#moveright\`\`4fixeddate{``0-``1}-fixeddecimal{``2-``3})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVE. Moves right a fixed date to decimal. | returns a decimal value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightToChar\\`\\`2](#moverighttochar\`\`2fixeddate{``0-``1})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html)) | RPG's MOVE. Moves right a date in the given format to a char value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddate{``0-``1}-string)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a fixed date to string with pad. | returns a string value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddate{``0-``1}-int16)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short) with pad. | short int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddate{``0-``1}-int32)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a fixed date into a int4 (int) with pad. | int targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddate{``0-``1}-int64)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a fixed date into a int8 (long) with pad. | long targetOperand of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`4](#moverightwithpad\`\`4fixeddate{``0-``1}-fixeddecimal{``2-``3})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVE. Moves right a fixed date to decimal with pad. | returns a decimal value of the targetOperand.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [NormalizeYear\\`\\`2](#normalizeyear\`\`2fixeddate{``0-``1})([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html)) | Turns a 4 digit year into a 2 digit year between 1940 and 2039 | FixedDate value.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U,V,S&gt;](#moveleft&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a fixed date to decimal. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U,V,S&gt;](#moveleft&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-datetimeformat-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a fixed date to decimal. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-string)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a fixed date to string. | The resulting string value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a fixed date into a int2 (short). | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a fixed date into a int2 (short). | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a fixed date into a int4 (int). | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a fixed date into a int4 (int). | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a fixed date into a int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a fixed date into a int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftToChar&lt;T,U&gt;](#movelefttochar&lt;t,u&gt;fixeddate(<t>-<t>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a date, time, timestamp in the given format to a char value. | The first character in the string representation of the DateTime value.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U,V,S&gt;](#moveleftwithpad&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a fixed date to decimal with pad. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U,V,S&gt;](#moveleftwithpad&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-datetimeformat-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a fixed date to decimal with pad. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-string)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a fixed date to string with pad. | The resulting string value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short) with pad. | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short) with pad. | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a fixed date into a int4 (int). | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a fixed date into a int4 (int). | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a fixed date into a int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a fixed date into a int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U,V,S&gt;](#moveright&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a fixed date to decimal. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U,V,S&gt;](#moveright&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-datetimeformat-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a fixed date to decimal. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-string)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a fixed date to string. | The resulting string value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short). | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short). | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a fixed date into a int4 (int). | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a fixed date into a int4 (int). | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a fixed date into a int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a fixed date into a int8 (long). | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightToChar&lt;T,U&gt;](#moverighttochar&lt;t,u&gt;fixeddate(<t>-<t>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a date in the given format to a char value. | The last character in the string representation of the DateTime value.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U,V,S&gt;](#moverightwithpad&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a fixed date to decimal with pad. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U,V,S&gt;](#moverightwithpad&lt;t,u,v,s&gt;fixeddate(<t>-<t>)-datetimeformat-fixeddecimal(<t-u>-<t-u-v>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a fixed date to decimal with pad. | The resulting decimal value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-string)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a fixed date to string with pad. | The resulting string value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short) with pad. | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int16)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a fixed date into a int2 (short) with pad. | The resulting short value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a fixed date into a int4 (int) with pad. | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a fixed date into a int4 (int) with pad. | The resulting int value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a fixed date into a int8 (long) with pad. | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddate(<t>-<t>)-datetimeformat-int64)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a fixed date into a int8 (long) with pad. | The resulting long value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [NormalizeYear&lt;T,U&gt;](#normalizeyear&lt;t,u&gt;fixeddate(<t>-<t>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Turns a 4 digit year into a 2 digit year between 1940 and 2039 | The DateTime value with the year portion normalized.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDuration\\`\\`2](#subtractduration\`\`2fixeddate{``0-``1}-double-durationcode)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a date or a timestamp value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDurationFromTime\\`\\`2](#subtractdurationfromtime\`\`2fixeddate{``0-``1}-double-durationcode)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a time value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDouble\\`\\`2](#todouble\`\`2fixeddate{``0-``1}-boolean)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to double. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal\\`\\`2](#tofixeddecimal\`\`2fixeddate{``0-``1}-int32-int32)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a fixed date value to a decimal. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFloat\\`\\`2](#tofloat\`\`2fixeddate{``0-``1}-boolean)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to float. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToInt16\\`\\`2](#toint16\`\`2fixeddate{``0-``1}-boolean)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to int 16. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToInt32\\`\\`2](#toint32\`\`2fixeddate{``0-``1}-boolean)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to int 32. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToInt64\\`\\`2](#toint64\`\`2fixeddate{``0-``1}-boolean)([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to int 64. | .
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDuration&lt;T,U&gt;](#subtractduration&lt;t,u&gt;fixeddate(<t>-<t>)-double-durationcode)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a date or a timestamp value. | The resulting Date or Timestamp value after subracting from it the given duration.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SubtractDurationFromTime&lt;T,U&gt;](#subtractdurationfromtime&lt;t,u&gt;fixeddate(<t>-<t>)-double-durationcode)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtracts a duration span from a time value. | The resulting Time value after subtracting from it the given duration.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TimestampToDate&lt;T,U&gt;](#timestamptodate&lt;t,u&gt;fixeddate(<t>-<t>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns the Date portion of a timestamp. | The DateTime value containing the date portion of the timestamp argument.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDouble&lt;T,U&gt;](#todouble&lt;t,u&gt;fixeddate(<t>-<t>)-boolean)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to double. | The Double number that results from the conversion.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimal&lt;T,U&gt;](#tofixeddecimal&lt;t,u&gt;fixeddate(<t>-<t>)-int32-int32)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a fixed date value to a decimal. | The decimal number that results from the conversion.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFloat&lt;T,U&gt;](#tofloat&lt;t,u&gt;fixeddate(<t>-<t>)-boolean)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to float. | The Float number that results from the conversion.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToInt16&lt;T,U&gt;](#toint16&lt;t,u&gt;fixeddate(<t>-<t>)-boolean)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to int 16. | The Int16 number that results from the conversion.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToInt32&lt;T,U&gt;](#toint32&lt;t,u&gt;fixeddate(<t>-<t>)-boolean)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to int 32. | The Int32 number that results from the conversion.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToInt64&lt;T,U&gt;](#toint64&lt;t,u&gt;fixeddate(<t>-<t>)-boolean)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a fixed date value to int 64. | The Int64 number that results from the conversion.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
 <br>
 
-### AddDuration\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
+### AddDuration&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
 
 Adds a duration span to a date or a timestamp value.
 
 ```cs
-AddDuration``2(ASNA.QSys.Runtime.FixedDate{``0,``1} dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+AddDuration<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | dateTime | .NET DateTime value. 
-| [Double]($$TODO-Double.html) | duration | A double value representing duration. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | dateTime | .NET DateTime value. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration. 
 | [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html) | durationCode | Code determining what duration represents. 
 
 
 <br>
 <br>
 
-### AddDurationToTime\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
+### AddDurationToTime&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
 
 Adds a duration span to a time value.
 
 ```cs
-AddDurationToTime``2(ASNA.QSys.Runtime.FixedDate{``0,``1} dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+AddDurationToTime<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | dateTime | .NET DateTime value specifying a time value. 
-| [Double]($$TODO-Double.html) | duration | A double value representing duration. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | dateTime | .NET DateTime value specifying a time value. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration. 
 | [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html) | durationCode | Code determining what duration represents. 
 
 
 <br>
 <br>
 
-### MoveLeft\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's MOVEL. Moves left a fixed date to string.
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, String targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The targetOperand string. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
-
-RPG's MOVEL. Moves left a fixed date into a int2 (short).
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int16 targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | short int value of the targetOperand. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-RPG's MOVEL. Moves left a fixed date into a int4 (int).
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int32 targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
-
-RPG's MOVEL. Moves left a fixed date into a int8 (long).
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int64 targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`4([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveLeft&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVEL. Moves left a fixed date to decimal.
 
 ```cs
-MoveLeft``4(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, ASNA.QSys.Runtime.FixedDecimal{``2,``3} targetOperand);
+MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | targetOperand | The targetOperand decimal. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
 
 
 <br>
 <br>
 
-### MoveLeftToChar\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html))
+### MoveLeft&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
-RPG's MOVEL. Moves left a date, time, timestamp in the given format to a char value.
+RPG's MOVEL. Moves left a fixed date to decimal.
 
 ```cs
-MoveLeftToChar``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate);
+MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-RPG's MOVEL. Moves left a fixed date to string with pad.
+RPG's MOVEL. Moves left a fixed date to string.
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, String targetOperand);
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, String targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The targetOperand string. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-RPG's MOVE. Moves right a fixed date into a int2 (short) with pad.
+RPG's MOVEL. Moves left a fixed date into a int2 (short).
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int16 targetOperand);
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int16 targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | short int value of the targetOperand. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+
+RPG's MOVEL. Moves left a fixed date into a int2 (short).
+
+```cs
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 RPG's MOVEL. Moves left a fixed date into a int4 (int).
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int32 targetOperand);
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int32 targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVEL. Moves left a fixed date into a int4 (int).
+
+```cs
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
 RPG's MOVEL. Moves left a fixed date into a int8 (long).
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int64 targetOperand);
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int64 targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`4([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveLeft&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVEL. Moves left a fixed date into a int8 (long).
+
+```cs
+MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveLeftToChar&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVEL. Moves left a date, time, timestamp in the given format to a char value.
+
+```cs
+MoveLeftToChar<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+
+
+<br>
+<br>
+
+### MoveLeftWithPad&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVEL. Moves left a fixed date to decimal with pad.
 
 ```cs
-MoveLeftWithPad``4(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, ASNA.QSys.Runtime.FixedDecimal{``2,``3} targetOperand);
+MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | targetOperand | The targetOperand decimal. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveLeftWithPad&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
-RPG's MOVE. Moves right a fixed date to string.
+RPG's MOVEL. Moves left a fixed date to decimal with pad.
 
 ```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, String targetOperand);
+MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
+
+
+<br>
+<br>
+
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+RPG's MOVEL. Moves left a fixed date to string with pad.
+
+```cs
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, String targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The targetOperand string. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
-
-RPG's MOVE. Moves right a fixed date into a int2 (short).
-
-```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int16 targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | short int value of the targetOperand. 
-
-
-<br>
-<br>
-
-### MoveRight\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-RPG's MOVE. Moves right a fixed date into a int4 (int).
-
-```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int32 targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
-
-
-<br>
-<br>
-
-### MoveRight\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
-
-RPG's MOVE. Moves right a fixed date into a int8 (long).
-
-```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int64 targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
-
-
-<br>
-<br>
-
-### MoveRight\`\`4([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
-
-RPG's MOVE. Moves right a fixed date to decimal.
-
-```cs
-MoveRight``4(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, ASNA.QSys.Runtime.FixedDecimal{``2,``3} targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | targetOperand | The targetOperand decimal. 
-
-
-<br>
-<br>
-
-### MoveRightToChar\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html))
-
-RPG's MOVE. Moves right a date in the given format to a char value.
-
-```cs
-MoveRightToChar``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-
-
-<br>
-<br>
-
-### MoveRightWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's MOVE. Moves right a fixed date to string with pad.
-
-```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, String targetOperand);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The targetOperand string. 
-
-
-<br>
-<br>
-
-### MoveRightWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 RPG's MOVE. Moves right a fixed date into a int2 (short) with pad.
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int16 targetOperand);
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int16 targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | short int value of the targetOperand. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-RPG's MOVE. Moves right a fixed date into a int4 (int) with pad.
+RPG's MOVE. Moves right a fixed date into a int2 (short) with pad.
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int32 targetOperand);
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | int value of the targetOperand. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-RPG's MOVE. Moves right a fixed date into a int8 (long) with pad.
+RPG's MOVEL. Moves left a fixed date into a int4 (int).
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int64 targetOperand);
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int32 targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | long value of the targetOperand. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`4([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVEL. Moves left a fixed date into a int4 (int).
+
+```cs
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVEL. Moves left a fixed date into a int8 (long).
+
+```cs
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveLeftWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVEL. Moves left a fixed date into a int8 (long).
+
+```cs
+MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVE. Moves right a fixed date to decimal.
+
+```cs
+MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVE. Moves right a fixed date to decimal.
+
+```cs
+MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+RPG's MOVE. Moves right a fixed date to string.
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, String targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The targetOperand string. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+
+RPG's MOVE. Moves right a fixed date into a int2 (short).
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int16 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+
+RPG's MOVE. Moves right a fixed date into a int2 (short).
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVE. Moves right a fixed date into a int4 (int).
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int32 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVE. Moves right a fixed date into a int4 (int).
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVE. Moves right a fixed date into a int8 (long).
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRight&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVE. Moves right a fixed date into a int8 (long).
+
+```cs
+MoveRight<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRightToChar&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVE. Moves right a date in the given format to a char value.
+
+```cs
+MoveRightToChar<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a fixed date to decimal with pad.
 
 ```cs
-MoveRightWithPad``4(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, ASNA.QSys.Runtime.FixedDecimal{``2,``3} targetOperand);
+MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | targetOperand | The targetOperand decimal. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
 
 
 <br>
 <br>
 
-### NormalizeYear\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html))
+### MoveRightWithPad&lt;T,U,V,S&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVE. Moves right a fixed date to decimal with pad.
+
+```cs
+MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | targetOperand | The targetOperand decimal. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+RPG's MOVE. Moves right a fixed date to string with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, String targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The targetOperand string. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+
+RPG's MOVE. Moves right a fixed date into a int2 (short) with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int16 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+
+RPG's MOVE. Moves right a fixed date into a int2 (short) with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | targetOperand | The short value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVE. Moves right a fixed date into a int4 (int) with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int32 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVE. Moves right a fixed date into a int4 (int) with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetOperand | The int value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVE. Moves right a fixed date into a int8 (long) with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVE. Moves right a fixed date into a int8 (long) with pad.
+
+```cs
+MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | The date/time format expected for the result. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | targetOperand | The long value target of the operation. 
+
+
+<br>
+<br>
+
+### NormalizeYear&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Turns a 4 digit year into a 2 digit year between 1940 and 2039
 
 ```cs
-NormalizeYear``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate);
+NormalizeYear<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 
 
 <br>
 <br>
 
-### SubtractDuration\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
+### SubtractDuration&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
 
 Subtracts a duration span from a date or a timestamp value.
 
 ```cs
-SubtractDuration``2(ASNA.QSys.Runtime.FixedDate{``0,``1} dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+SubtractDuration<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | dateTime | .NET DateTime type. 
-| [Double]($$TODO-Double.html) | duration | A double value representing duration. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | dateTime | .NET DateTime value. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration. 
 | [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html) | durationCode | Code determining what duration represents. 
 
 
 <br>
 <br>
 
-### SubtractDurationFromTime\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Double]($$TODO-Double.html), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
+### SubtractDurationFromTime&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html))
 
 Subtracts a duration span from a time value.
 
 ```cs
-SubtractDurationFromTime``2(ASNA.QSys.Runtime.FixedDate{``0,``1} dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+SubtractDurationFromTime<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) dateTime, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | dateTime | .NET DateTime value specifying a time value. 
-| [Double]($$TODO-Double.html) | duration | A double value representing duration. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | dateTime | .NET DateTime value specifying a time value. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration. 
 | [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html) | durationCode | Code determining what duration represents. 
 
 
 <br>
 <br>
 
-### ToDouble\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### TimestampToDate&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
-Converts a fixed date value to double.
+Returns the Date portion of a timestamp.
 
 ```cs
-ToDouble``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Boolean throwOnOverflow);
+TimestampToDate<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | .NET DateTime type. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | The timestamp value. 
+
+
+<br>
+<br>
+
+### ToDouble&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Converts a fixed date value to double.
+
+```cs
+ToDouble<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Boolean throwOnOverflow);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | .NET DateTime type. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | throwOnOverflow | Default is false. Pass true if a runtime exception is desired when the conversion doesn't fit. 
 
 
 <br>
 <br>
 
-### ToFixedDecimal\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ToFixedDecimal&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Converts a fixed date value to a decimal.
 
 ```cs
-ToFixedDecimal``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int32 digits, Int32 decimals);
+ToFixedDecimal<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Int32 digits, Int32 decimals);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | number of digits in the targetOperand. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | number of decimal places in the targetOperand. 
 
@@ -622,76 +977,76 @@ ToFixedDecimal``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Int32 digits, 
 <br>
 <br>
 
-### ToFloat\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ToFloat&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Converts a fixed date value to float.
 
 ```cs
-ToFloat``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Boolean throwOnOverflow);
+ToFloat<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Boolean throwOnOverflow);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | .NET DateTime type. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | .NET DateTime type. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | throwOnOverflow | Default is false. Pass true if a runtime exception is desired when the conversion doesn't fit. 
 
 
 <br>
 <br>
 
-### ToInt16\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ToInt16&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Converts a fixed date value to int 16.
 
 ```cs
-ToInt16``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Boolean throwOnOverflow);
+ToInt16<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Boolean throwOnOverflow);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | throwOnOverflow | Default is false. Pass true if a runtime exception is desired when the conversion doesn't fit. 
 
 
 <br>
 <br>
 
-### ToInt32\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ToInt32&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Converts a fixed date value to int 32.
 
 ```cs
-ToInt32``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Boolean throwOnOverflow);
+ToInt32<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Boolean throwOnOverflow);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | throwOnOverflow | Default is false. Pass true if a runtime exception is desired when the conversion doesn't fit. 
 
 
 <br>
 <br>
 
-### ToInt64\`\`2([FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ToInt64&lt;T,U&gt;([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Converts a fixed date value to int 64.
 
 ```cs
-ToInt64``2(ASNA.QSys.Runtime.FixedDate{``0,``1} fixedDate, Boolean throwOnOverflow);
+ToInt64<T,U>(ASNA.QSys.Runtime.FixedDate(``0,``1) fixedDate, Boolean throwOnOverflow);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | fixedDate | FixedDate value. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | fixedDate | FixedDate value. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | throwOnOverflow | Default is false. Pass true if a runtime exception is desired when the conversion doesn't fit. 
 
 

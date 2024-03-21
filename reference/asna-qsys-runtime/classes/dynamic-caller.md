@@ -64,11 +64,13 @@ DynamicCaller( ASNA.QSys.Runtime.ICaller caller );
 | --- | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [FindTypeInDynamicReferences](#findtypeindynamicreferencesstring-assembly)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly)) | Looks for a program in the list of dynamic references. | The type of the program.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [FindTypeInAssemblyList](#findtypeinassemblyliststring-assembly)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly)) | Looks for a program in the assemblies of the Process AssemblyList | The type of the program.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [DynamicMetaObject]($$TODO-Dynamic.DynamicMetaObject.html) | [GetMetaObject](#getmetaobjectexpression)([Expression]($$TODO-Linq.Expressions.Expression.html)) | Defines the object that supports CallD. | The CallDMetaCaller object to use for the dynamic call.
+| [DynamicMetaObject](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicmetaobject?view=net-8.0) | [GetMetaObject](#getmetaobjectexpression)([Expression](https://learn.microsoft.com/en-us/dotnet/api/system.linq.expressions.expression-1?view=net-8.0)) | Defines the object that supports CallD. | The CallDMetaCaller object to use for the dynamic call.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ProgramExists](#programexistsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines if a program exists in the given assembly lists. | true if program found, otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ProgramExists](#programexistsstring-outstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines if a program exists in the given assembly lists. | true if program found, otherwise false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDynamicAssemblyList](#setdynamicassemblyliststring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates the list of assemblies representing dynamic references. CALLD targets will be searched for in this list. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
@@ -76,12 +78,12 @@ DynamicCaller( ASNA.QSys.Runtime.ICaller caller );
 <br>
 <br>
 
-### FindTypeInDynamicReferences([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly))
+### FindTypeInAssemblyList([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly))
 
-Looks for a program in the list of dynamic references.
+Looks for a program in the assemblies of the Process AssemblyList
 
 ```cs
-FindTypeInDynamicReferences(String className, Reflection.Assembly callerAssembly);
+FindTypeInAssemblyList(String className, Reflection.Assembly callerAssembly);
 ```
 
 #### Parameters
@@ -101,7 +103,7 @@ The type of the program.
 <br>
 <br>
 
-### GetMetaObject([Expression]($$TODO-Linq.Expressions.Expression.html))
+### GetMetaObject([Expression](https://learn.microsoft.com/en-us/dotnet/api/system.linq.expressions.expression-1?view=net-8.0))
 
 Defines the object that supports CallD.
 
@@ -113,13 +115,62 @@ GetMetaObject(Linq.Expressions.Expression parameter);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Expression]($$TODO-Linq.Expressions.Expression.html) | parameter | The expression representing the DynamicMetaObject during the dynamic bunding process. 
+| [Expression](https://learn.microsoft.com/en-us/dotnet/api/system.linq.expressions.expression-1?view=net-8.0) | parameter | The expression representing the DynamicMetaObject during the dynamic bunding process. 
 
 #### Returns
 
-[DynamicMetaObject]($$TODO-Dynamic.DynamicMetaObject.html)
+[DynamicMetaObject](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicmetaobject?view=net-8.0)
 
 The CallDMetaCaller object to use for the dynamic call.
+
+
+<br>
+<br>
+
+### ProgramExists([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Determines if a program exists in the given assembly lists.
+
+```cs
+ProgramExists(String programName);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programName | Name of the program. Can be a simple name or fully qualified with its namespace. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if program found, otherwise false.
+
+
+<br>
+<br>
+
+### ProgramExists([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Determines if a program exists in the given assembly lists.
+
+```cs
+ProgramExists(String programName, out String fullProgramName);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programName | Name of the program. Can be a simple name or fully qualified with its namespace. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fullProgramName | If program found, the fully qualified name. 
+
+#### Returns
+
+[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
+
+true if program found, otherwise false.
 
 
 <br>

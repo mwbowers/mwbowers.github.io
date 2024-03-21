@@ -71,7 +71,7 @@ DSArrayField( ASNA.QSys.Runtime.DataStructure dataStructure, ASNA.QSys.Runtime.I
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearField](#clearfield)() | Sets all elements of the array to their default value. | 
-| [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html) | [Clone](#clone)() | Creates a copy of this IDSField object | 
+| [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html) | [Clone](#clone)() | Creates a copy of this IDSField object | The copy of the IDSField object.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -108,7 +108,7 @@ Clone();
 
 [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html)
 
-
+The copy of the IDSField object.
 
 
 <br>

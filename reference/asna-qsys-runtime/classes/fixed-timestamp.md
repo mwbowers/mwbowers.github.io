@@ -1,5 +1,5 @@
 ---
-title: FixedTimestamp`1 Class
+title: FixedTimestamp<T> Class
 ---
 
 Holds a fixed-timestamp value with the given separator.

@@ -1,5 +1,5 @@
 ---
-title: FixedTime`2 Class
+title: FixedTime<T,U> Class
 ---
 
 Holds a fixed-time value in the specified format and with the given separator.
@@ -30,6 +30,7 @@ Holds a fixed-time value in the specified format and with the given separator.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Minute | Returns the minutes in this FixedTime value. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Second | Returns the seconds in this FixedTime value. | 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | Separator | IFixedDateTime Separator implementation. Returns the separator for this FixedTime value. | 
+| [TimeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-8.0) | TimeValue | Gets the value of this FixedTime as a TimeOnly value. | 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | Value | Gets the value of this FixedTime as a System.DateTime value. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueAsObject | Returns the value of this FixedTime as an object. | 
 

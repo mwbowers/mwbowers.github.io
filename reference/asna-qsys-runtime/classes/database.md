@@ -72,16 +72,16 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | Connection | Gets the DataGate Connection instance. | 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CurrentUserLibl | Sets the current library list for the current connection. | 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | Connection | Gets the DataGate Connection instance. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | CurrentUserLibl | Sets the current library list for the current connection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DBName | Gets the Database Name. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | DefaultJobCodePageID | Gets or sets the Job's default Code Page ID. | 
-| [dgException]($$TODO-ASNA.DataGate.Common.dgException.html) | InitialException | Gets the initial DataGate exception. | 
-| [IEnumerable]($$TODO-Collections.Generic.IEnumerable.html) | InitialLibl | Gets or sets the current database initial library list. | 
+| [dgException](reference/asna-qsys-runtime/exceptions/data-gate-exception.html) | InitialException | Gets the initial DataGate exception. | 
+| [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | InitialLibl | Gets or sets the current database initial library list. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsInteractive | Gets a boolean value indicating that the Database is associated with an Interactive Job. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Returns a True or False indicating if the database is open. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Label | Gets or sets a string containing the label of the database to connect to. | 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NameStoreConfigFiles | Gets the list of the database name store configuration files. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NameStoreConfigFiles | Gets the list of the database name store configuration files. | 
 | [NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html) | NameStoreOptions | Gets the database name store options. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | NameStorePrepared | Gets whether the database name store has already been set for the process. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Password | Sets the password to be used in conjunction with User for connection authentication. | 
@@ -91,7 +91,7 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Server | The database server host machine name. | 
 | [ServerSupport](/reference/asna-qsys-runtime/classes/server-support.html) | ServerSupport | For interactive connections, determines if program can issue server requests like open file or call program. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | SslCertificateName | Gets or sets the SSL Certificate name for the database connection. | 
-| [SslOptions]($$TODO-ASNA.DataGate.Common.SslOptions.html) | SslOptions | Gets or sets the SLL Options for the database connection. | 
+| [SslOptions](https://docs.asna.com/documentation/Help150/DataGate/SSL/_HTML/DataGateSSLServer.htm) | SslOptions | Gets or sets the SLL Options for the database connection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TerminalDeviceName | For interactive connections, determines the name of the device. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Text | Gets or sets a description of the database connection. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | User | Gets or sets the user name that used to authorize the current database connection. | 
@@ -107,9 +107,9 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddMember](#addmemberstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Add a member to a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearMember](#clearmemberstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Clear a file member. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes a connection to a Database. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Closes a connection to a Database, trapping errors and returning an error condition. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closeoutchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Closes a connection to a Database, trapping errors and returning an error condition. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Commit](#commitstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits an open transaction. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Commit](#commitstring-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Commits an open transaction, trapping errors and returning an error condition. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Commit](#commitstring-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Commits an open transaction, trapping errors and returning an error condition. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Connect](#connect)() | Open a connection to a Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFileToDb](#copyfiletodbstring-database-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a file with all its members and data, if they exist, from the current Database to another Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyLogicalFileToDb](#copylogicalfiletodbstring-database-string-boolean-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/asna-qsys-runtime/classes/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a logical file and its base physical files from the current Database to another Database. | 
@@ -118,30 +118,30 @@ Database( String databaseName, ASNA.QSys.Runtime.VirtualTerminal virtualTerminal
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases resources. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#dispose)() | Releases resources. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndTpm](#endtpm)() | Ends a Database transaction operation. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndTpm](#endtpmchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Ends a Database transaction operation. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndTpm](#endtpmoutchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Ends a Database transaction operation. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNames](#getnamesboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Returns an array of strings with all of the database names found. | 
-| [SourceProfile]($$TODO-ASNA.DataGate.Providers.SourceProfile.html) | [GetSourceProfile](#getsourceprofilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a SourceProfile from the Database name store. | The SourceProfile corresponding to the given dbName parameter.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNames](#getnamesboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Returns an array of strings with all of the database names found. | 
+| [SourceProfile](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsSourceProfileClass.htm) | [GetSourceProfile](#getsourceprofilestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a SourceProfile from the Database name store. | The SourceProfile corresponding to the given dbName parameter.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitializeMember](#initializememberstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a file member with the specified number of deleted records. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Open a connection to a Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#openindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Open a connection to a Database. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#openchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open a connection to a Database. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PrepareNameStore\\`\\`1](#preparenamestore\`\`1namestoreoptions-string[])([NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#openoutchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open a connection to a Database. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [PrepareNameStore&lt;T&gt;](#preparenamestore&lt;t&gt;namestoreoptions-string[])([NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveDirectory](#removedirectorystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a directory (library) in the Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMember](#removememberstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a member from the specified file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RenameFile](#renamefilestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the name of a file in the Database. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RenameMember](#renamememberstring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the name of a member in a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Rollback](#rollback)() | Rollbacks, i.e. cancels, a transaction. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Rollback](#rollbackchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Rollbacks, i.e. cancels, a transaction. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Rollback](#rollbackoutchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Rollbacks, i.e. cancels, a transaction. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDatabaseName](#setdatabasenamestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the Database name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSourceProfile](#setsourceprofilesourceprofile)([SourceProfile]($$TODO-ASNA.DataGate.Providers.SourceProfile.html)) | Sets the Database name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSourceProfile](#setsourceprofilesourceprofile)([SourceProfile](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsSourceProfileClass.htm)) | Sets the Database name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [StartTpm](#starttpmint32-string-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Starts transaction processing. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [StartTpm](#starttpmint32-string-string-char)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Starts transaction processing. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [StartTpm](#starttpmint32-string-string-outchar)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Starts transaction processing. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
@@ -202,7 +202,7 @@ Close();
 Closes a connection to a Database, trapping errors and returning an error condition.
 
 ```cs
-Close(ref Char err);
+Close(out Char err);
 ```
 
 #### Parameters
@@ -238,7 +238,7 @@ Commit(String boundary);
 Commits an open transaction, trapping errors and returning an error condition.
 
 ```cs
-Commit(String boundary, ref Char err);
+Commit(String boundary, out Char err);
 ```
 
 #### Parameters
@@ -300,7 +300,8 @@ CopyLogicalFileToDb(String filePath, ASNA.QSys.Runtime.Database toDb, String toD
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path of the file to be copied, as "library/fileName". 
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | toDb | Database onto which the file will be copied. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toDirectory | Destination directory. 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceBaseFiles | If true, if a base file already exists in the target DB it will be replaced. If false, if a base file already exists it will not be replaced. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceBaseFiles | If true, if a base file already exists in the target DB it will be replaced.
+            If false, if a base file already exists it will not be replaced. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | copyData | True to copy also the physical file data. 
 
 
@@ -390,7 +391,7 @@ EndTpm();
 Ends a Database transaction operation.
 
 ```cs
-EndTpm(ref Char err);
+EndTpm(out Char err);
 ```
 
 #### Parameters
@@ -422,7 +423,7 @@ GetNames(Boolean publicDBs);
 
 #### Returns
 
-[String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 
 
@@ -446,7 +447,7 @@ GetSourceProfile(String dbName);
 
 #### Returns
 
-[SourceProfile]($$TODO-ASNA.DataGate.Providers.SourceProfile.html)
+[SourceProfile](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsSourceProfileClass.htm)
 
 The SourceProfile corresponding to the given dbName parameter.
 
@@ -491,7 +492,7 @@ Open();
 Open a connection to a Database.
 
 ```cs
-Open(ref ASNA.QSys.Runtime.Indicator err);
+Open(out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -509,7 +510,7 @@ Open(ref ASNA.QSys.Runtime.Indicator err);
 Open a connection to a Database.
 
 ```cs
-Open(ref Char err);
+Open(out Char err);
 ```
 
 #### Parameters
@@ -522,12 +523,12 @@ Open(ref Char err);
 <br>
 <br>
 
-### PrepareNameStore\`\`1([NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### PrepareNameStore&lt;T&gt;([NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name.
 
 ```cs
-PrepareNameStore``1(ASNA.QSys.Runtime.NameStoreOptions options, String[] configFiles);
+PrepareNameStore<T>(ASNA.QSys.Runtime.NameStoreOptions options, String[] configFiles);
 ```
 
 #### Parameters
@@ -535,7 +536,7 @@ PrepareNameStore``1(ASNA.QSys.Runtime.NameStoreOptions options, String[] configF
 | Type | Parameter name | Description
 | --- | --- | ---
 | [NameStoreOptions](/reference/asna-qsys-runtime/classes/name-store-options.html) | options | Tells the name store where to look for database connection information, e.g. config files, user secrets, and others. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | configFiles | Optional collection of configuration files containing database connection information. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | configFiles | Optional collection of configuration files containing database connection information. 
 
 
 <br>
@@ -634,7 +635,7 @@ Rollback();
 Rollbacks, i.e. cancels, a transaction.
 
 ```cs
-Rollback(ref Char err);
+Rollback(out Char err);
 ```
 
 #### Parameters
@@ -665,7 +666,7 @@ SetDatabaseName(String databaseName);
 <br>
 <br>
 
-### SetSourceProfile([SourceProfile]($$TODO-ASNA.DataGate.Providers.SourceProfile.html))
+### SetSourceProfile([SourceProfile](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsSourceProfileClass.htm))
 
 Sets the Database name.
 
@@ -677,7 +678,7 @@ SetSourceProfile(ASNA.DataGate.Providers.SourceProfile sourceProfile);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile]($$TODO-ASNA.DataGate.Providers.SourceProfile.html) | sourceProfile | The new source profile. 
+| [SourceProfile](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsSourceProfileClass.htm) | sourceProfile | The new source profile. 
 
 
 <br>
@@ -708,7 +709,7 @@ StartTpm(Int32 level, String name, String options);
 Starts transaction processing.
 
 ```cs
-StartTpm(Int32 level, String name, String options, ref Char err);
+StartTpm(Int32 level, String name, String options, out Char err);
 ```
 
 #### Parameters

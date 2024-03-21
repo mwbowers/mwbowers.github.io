@@ -1,5 +1,5 @@
 ---
-title: FixedArray`2 Class
+title: FixedArray<T,U> Class
 ---
 
 Defines the functionality of a fixed-sized unidimensional array.
@@ -23,11 +23,11 @@ Defines the functionality of a fixed-sized unidimensional array.
 
 | Name |  Description 
 | --- | --- 
-| **FixedArray**( [\\`1[]]($$TODO-`1[].html) ) | Initializes a FixedArray out of a T[].
+| **FixedArray**( [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) ) | Initializes a FixedArray out of a T[].
 
 <br>
 
-### FixedArray( [\\`1[]]($$TODO-`1[].html) )
+### FixedArray( [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) )
 
 Initializes a FixedArray out of a T[].
 
@@ -39,7 +39,7 @@ FixedArray( `1[] array );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`1[]]($$TODO-`1[].html) | array | The array of T elements. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | array | The array of T elements. 
 
 <br>
 
@@ -51,8 +51,8 @@ FixedArray( `1[] array );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [T[]]($$TODO-T[].html) | Array | Gets the array that holds the T elements of the FixedArray. | 
-| [T]($$TODO-T.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | Array | Gets the array that holds the T elements of the FixedArray. | 
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the FixedArray. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueAsObject | Gets a copy of the array that holds the T elements, as an object. | 
 
@@ -65,8 +65,8 @@ FixedArray( `1[] array );
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears all elements of the array to their default value. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compare To object. | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfrom`1[]-int32)([\\`1[]]($$TODO-`1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a T[] into this array, starting at the given position. | 
-| [IEnumerator\\`1]($$TODO-IEnumerator`1.html) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfrom`1[]-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a T[] into this array, starting at the given position. | 
+| [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array according to their value, using the default comparison for type T. | 
 
 <br>
@@ -108,7 +108,7 @@ A 32-bit signed integer that indicates whether this instance precedes, follows, 
 <br>
 <br>
 
-### CopyFrom([\\`1[]]($$TODO-`1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy elements of a T[] into this array, starting at the given position.
 
@@ -120,7 +120,7 @@ CopyFrom(`1[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`1[]]($$TODO-`1[].html) | sourceArray | The array from where to copy. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
@@ -137,7 +137,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator\\`1]($$TODO-IEnumerator`1.html)
+[IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator)
 
 The IEnumerator object.
 

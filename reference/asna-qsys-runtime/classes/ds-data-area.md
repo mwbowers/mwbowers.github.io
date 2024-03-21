@@ -62,13 +62,13 @@ DSDataArea( ASNA.QSys.Runtime.DataStructure dataStructure );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [In](#inidataarea)([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html)) | Retrieves the Data Structure from the given Data Area. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Out](#outidataarea)([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html)) | Stores the Data Structure in the given Data Area. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [In](#inidataarea)([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm)) | Retrieves the Data Structure from the given Data Area. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Out](#outidataarea)([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm)) | Stores the Data Structure in the given Data Area. | 
 
 <br>
 <br>
 
-### In([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html))
+### In([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm))
 
 Retrieves the Data Structure from the given Data Area.
 
@@ -80,13 +80,13 @@ In(ASNA.DataGate.Client.IDataArea iDataArea);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html) | iDataArea | The Data Area to access. 
+| [IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm) | iDataArea | The Data Area to access. 
 
 
 <br>
 <br>
 
-### Out([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html))
+### Out([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm))
 
 Stores the Data Structure in the given Data Area.
 
@@ -98,7 +98,7 @@ Out(ASNA.DataGate.Client.IDataArea iDataArea);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html) | iDataArea | The Data Area to access. 
+| [IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm) | iDataArea | The Data Area to access. 
 
 
 <br>

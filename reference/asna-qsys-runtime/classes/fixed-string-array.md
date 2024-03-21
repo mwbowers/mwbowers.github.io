@@ -1,5 +1,5 @@
 ---
-title: FixedStringArray`2 Class
+title: FixedStringArray<T,U> Class
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedString elements.
@@ -23,28 +23,28 @@ Defines the functionality of a fixed-sized unidimensional array of FixedString e
 
 | Name |  Description 
 | --- | --- 
-| [FixedStringArray](#fixedstringarrayfixedstring{`1}[])([FixedString{\\`1}[]](/reference/asna-qsys-runtime/fixed-string{`1}.html)) | Initializes a FixedStringArray out of an array of FixedString elements. 
-| [FixedStringArray](#fixedstringarraystring[])([String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a FixedStringArray out of an array of string elements. 
+| [FixedStringArray](#fixedstringarrayfixedstring<`1>)([FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html)) | Initializes a FixedStringArray out of an array of FixedString elements. 
+| [FixedStringArray](#fixedstringarraystring[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a FixedStringArray out of an array of string elements. 
 
 <br>
 
-### FixedStringArray( [FixedString{\\`1}[]](/reference/asna-qsys-runtime/fixed-string{`1}.html) )
+### FixedStringArray( [FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html) )
 
 Initializes a FixedStringArray out of an array of FixedString elements.
 
 ```cs
-FixedStringArray( ASNA.QSys.Runtime.FixedString{`1}[] array );
+FixedStringArray( ASNA.QSys.Runtime.FixedString<`1> array );
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`1}[]](/reference/asna-qsys-runtime/fixed-string{`1}.html) | array | The array of FixedString elements. 
+| [FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html) | array | The array of FixedString elements. 
 
 <br>
 
-### FixedStringArray( [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
+### FixedStringArray( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) )
 
 Initializes a FixedStringArray out of an array of string elements.
 
@@ -56,7 +56,7 @@ FixedStringArray( String[] array );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | array | The array of string elements. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | array | The array of string elements. 
 
 <br>
 
@@ -68,8 +68,8 @@ FixedStringArray( String[] array );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [FixedString\\`1[]]($$TODO-FixedString`1[].html) | Array | Gets the array that holds the values of the FixedStringArray. | 
-| [FixedString\\`1]($$TODO-FixedString`1.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
+| [FixedString](/reference/asna-qsys-runtime/classes/fixed-string.html) | Array | Gets the array that holds the values of the FixedStringArray. | 
+| [FixedString](/reference/asna-qsys-runtime/classes/fixed-string.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the FixedStringArray. | 
 
 <br>
@@ -80,9 +80,9 @@ FixedStringArray( String[] array );
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears all elements of the array to their default value. Set each element of the array to blanks. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromfixedstring{`1}[]-int32)([FixedString{\\`1}[]](/reference/asna-qsys-runtime/fixed-string{`1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a FixedString[] into this array, starting at the given position. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromstring[]-int32)([String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a string[] into this array, starting at the given position. | 
-| [IEnumerator\\`1]($$TODO-IEnumerator`1.html) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromfixedstring<`1>-int32)([FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a FixedString[] into this array, starting at the given position. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromstring[]-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a string[] into this array, starting at the given position. | 
+| [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array lexicographically according to their value. | 
 
 <br>
@@ -100,26 +100,26 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([FixedString{\\`1}[]](/reference/asna-qsys-runtime/fixed-string{`1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy elements of a FixedString[] into this array, starting at the given position.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedString{`1}[] sourceArray, Int32 targetStartAt);
+CopyFrom(ASNA.QSys.Runtime.FixedString<`1> sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`1}[]](/reference/asna-qsys-runtime/fixed-string{`1}.html) | sourceArray | The array from where to copy. 
+| [FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
 <br>
 <br>
 
-### CopyFrom([String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy elements of a string[] into this array, starting at the given position.
 
@@ -131,7 +131,7 @@ CopyFrom(String[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sourceArray | The array from where to copy. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
@@ -148,7 +148,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator\\`1]($$TODO-IEnumerator`1.html)
+[IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator)
 
 The IEnumerator object.
 

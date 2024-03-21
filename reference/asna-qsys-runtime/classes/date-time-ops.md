@@ -26,7 +26,7 @@ Defines operations with RPG semantics on System.DateTime values.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [AddDateAndTime](#adddateandtimedatetime-datetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merge the date portion of a DateTime value with the time portion of another. | The merged date/time values.
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [AddDuration](#adddurationdatetime-double-int32-boolean)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double]($$TODO-Double.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's ADDDUR. Adds a duration span to a DateTime value. | The result of adding the specified duration to dateTime.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [AddDuration](#adddurationdatetime-double-int32-boolean)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's ADDDUR. Adds a duration span to a DateTime value. | The result of adding the specified duration to dateTime.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ComputeDifference](#computedifferencedatetime-datetime-boolean)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Compute the difference, in years or months, between two DateTime values. | The difference, in years or months, between the two given DateTime values.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ConvertJulianToFormattedTimeDecimal](#convertjuliantoformattedtimedecimaldatetime-int32)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert a DateTime value to numeric in Julian format in 12 or 14 digits, according to RPG's specifications. | The decimal number representation of theDateTime in Julian format.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ConvertJulianToNumericString](#convertjuliantonumericstringdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert a DateTime value to a string in Julian format without separators. | The string representing the date portion of theDate in Julian format without separators.
@@ -37,8 +37,8 @@ Defines operations with RPG semantics on System.DateTime values.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ConvertStringToJulian](#convertstringtojulianstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Parse a string representing a Julian date with separator, returning its DateTime equivalent. | The DateTime value equivalent to theString interpreted as a Julian date.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [CopyDateToStamp](#copydatetostampdatetime-datetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Copy theDate to the date portion of theStamp. | CopyDateToStamp returns.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [CopyTimeToStamp](#copytimetostampdatetime-datetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Copy theTime to the time portion of theStamp. | CopyTimeToStamp returns.
-| [Double]($$TODO-Double.html) | [DiffDuration](#diffdurationdatetime-datetime-int32)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Subtract two DateTime objects giving the result in the specified duration. | The double number representing difference between the two DateTime values expressed in the given durationCode.
-| [Double]($$TODO-Double.html) | [DiffDuration](#diffdurationdatetime-datetime-durationcode)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtract two DateTime objects giving the result in the specified duration. | The double number representing difference between the two DateTime values expressed in the given durationCode.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | [DiffDuration](#diffdurationdatetime-datetime-int32)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Subtract two DateTime objects giving the result in the specified duration. | The double number representing difference between the two DateTime values expressed in the given durationCode.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | [DiffDuration](#diffdurationdatetime-datetime-durationcode)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DurationCode](/reference/asna-qsys-runtime/date-time-ops-duration-code.html)) | Subtract two DateTime objects giving the result in the specified duration. | The double number representing difference between the two DateTime values expressed in the given durationCode.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [GetCommonDate](#getcommondate)() | Get the date portion of the Job startup date. | The DateTime value with the date portion of the Job startup date.
@@ -57,7 +57,7 @@ Defines operations with RPG semantics on System.DateTime values.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [NormalizeYY](#normalizeyydatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Normalize the year portion of a DateTime value taken as a a two-digit year to the proper year in the range 1940 - 2039. | The DateTime value with the year in the 1940-2039 range.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [SubtractDuration](#subtractdurationdatetime-double-int32-boolean)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double]($$TODO-Double.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's SUBDUR. Subtracts a duration span from a DateTime value. | The result of subtracting the specified duration to dateTime.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [SubtractDuration](#subtractdurationdatetime-double-int32-boolean)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's SUBDUR. Subtracts a duration span from a DateTime value. | The result of subtracting the specified duration to dateTime.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [TruncToMicroseconds](#trunctomicrosecondsdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Truncate theStamp to the closest Microsecond (make it ISO format). | TruncToMicroseconds returns.
 
@@ -89,7 +89,7 @@ The merged date/time values.
 <br>
 <br>
 
-### AddDuration([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double]($$TODO-Double.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### AddDuration([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 RPG's ADDDUR. Adds a duration span to a DateTime value.
 
@@ -102,7 +102,7 @@ AddDuration(DateTime dateTime, Double duration, Int32 durationCode, Boolean just
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The DateTime value. 
-| [Double]($$TODO-Double.html) | duration | The duraction span. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | The duraction span. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | durationCode | The duration code (see: ASNA.QSys.Runtime.DateTimeOps.DurationCode) 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | justTheTime | True if the DateTime value represents an RPG time. 
 
@@ -381,7 +381,7 @@ DiffDuration(DateTime dateTime1, DateTime dateTime2, Int32 durationCode);
 
 #### Returns
 
-[Double]($$TODO-Double.html)
+[Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0)
 
 The double number representing difference between the two DateTime values expressed in the given durationCode.
 
@@ -407,7 +407,7 @@ DiffDuration(DateTime dateTime1, DateTime dateTime2, ASNA.QSys.Runtime.DateTimeO
 
 #### Returns
 
-[Double]($$TODO-Double.html)
+[Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0)
 
 The double number representing difference between the two DateTime values expressed in the given durationCode.
 
@@ -643,7 +643,7 @@ The DateTime value with the year in the 1940-2039 range.
 <br>
 <br>
 
-### SubtractDuration([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double]($$TODO-Double.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### SubtractDuration([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 RPG's SUBDUR. Subtracts a duration span from a DateTime value.
 
@@ -656,7 +656,7 @@ SubtractDuration(DateTime dateTime, Double duration, Int32 durationCode, Boolean
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The DateTime value. 
-| [Double]($$TODO-Double.html) | duration | The duraction span. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | The duraction span. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | durationCode | The duration code, as an integer (see: ASNA.QSys.Runtime.DateTimeOps.DurationCode) 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | justTheTime | True if the DateTime value represents an RPG time. 
 
