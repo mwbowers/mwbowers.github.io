@@ -33,7 +33,7 @@ Defines the functionality of a fixed-sized unidimensional array of FixedDate ele
 Initializes a FixedDateArray out of an array of FixedDate elements.
 
 ```cs
-FixedDateArray( ASNA.QSys.Runtime.FixedDate(`1,`2) array );
+FixedDateArray( Runtime.FixedDate(<T>, <T,U>) array );
 ```
 
 #### Parameters
@@ -105,14 +105,14 @@ Clear();
 Copy elements of a FixedDate[] into this array, starting at the given position.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedDate(`1,`2) sourceArray, Int32 targetStartAt);
+CopyFrom(Runtime.FixedDate(<T>, <T,U>) sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDate(\`1,\`2)](/reference/asna-qsys-runtime/fixed-date.html) | sourceArray | The array from where to copy. 
+| [FixedDate(&lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
