@@ -51,7 +51,7 @@ GetStartingPosition(Int32 index);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | index | THe index of the desired element position. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | index | The index of the desired element position. 
 
 #### Returns
 

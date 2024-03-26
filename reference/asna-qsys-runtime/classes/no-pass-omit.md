@@ -1,5 +1,5 @@
 ---
-title: NoPassOmit`1 Class
+title: NoPassOmit<T> Class
 ---
 
 Encapsulates a *OMIT wnd *NOPASS parameter.
@@ -7,7 +7,7 @@ Encapsulates a *OMIT wnd *NOPASS parameter.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) -->  --> NoPassOmit`1
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) -->  --> NoPassOmit<T>
 
 <br>
 <br>
@@ -25,12 +25,12 @@ Encapsulates a *OMIT wnd *NOPASS parameter.
 
 | Name |  Description 
 | --- | --- 
-| [NoPassOmit](#nopassomit`0)([\\`0]($$TODO-`0.html)) | Initializes a NoPassOmit object with a value. 
+| [NoPassOmit](#nopassomit`0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | Initializes a NoPassOmit object with a value. 
 | [NoPassOmit](#nopassomit)() | Initializes a NoPassOmit object without a value. 
 
 <br>
 
-### NoPassOmit( [\\`0]($$TODO-`0.html) )
+### NoPassOmit( [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) )
 
 Initializes a NoPassOmit object with a value.
 
@@ -42,7 +42,7 @@ NoPassOmit( `0 value );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`0]($$TODO-`0.html) | value |  
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | value | The value encapsulated by this object. 
 
 <br>
 

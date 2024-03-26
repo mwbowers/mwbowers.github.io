@@ -1,5 +1,5 @@
 ---
-title: IndicatorArray`1 Class
+title: IndicatorArray<T> Class
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of Indicator elements.
@@ -23,28 +23,28 @@ Defines the functionality of a fixed-sized unidimensional array of Indicator ele
 
 | Name |  Description 
 | --- | --- 
-| [IndicatorArray](#indicatorarrayindicator[])([Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html)) | Initializes an IndicatorArray using a .Net array of Indicator elements. 
-| [IndicatorArray](#indicatorarraychar[])([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initializes an IndicatorArray using a .Net array of char elements. 
+| [IndicatorArray](#indicatorarrayindicator[])([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Initializes an IndicatorArray using a .Net array of Indicator elements. 
+| [IndicatorArray](#indicatorarraychar[])([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initializes an IndicatorArray using a .Net array of char elements. 
 
 <br>
 
-### IndicatorArray( [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) )
+### IndicatorArray( [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) )
 
 Initializes an IndicatorArray using a .Net array of Indicator elements.
 
 ```cs
-IndicatorArray( ASNA.QSys.Runtime.Indicator[] array );
+IndicatorArray( Runtime.Indicator[] array );
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | array |  
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | array | The Indicator[] obect from which to initialize this IndicatorArray. 
 
 <br>
 
-### IndicatorArray( [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) )
+### IndicatorArray( [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) )
 
 Initializes an IndicatorArray using a .Net array of char elements.
 
@@ -56,7 +56,7 @@ IndicatorArray( Char[] array );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | array |  
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | array | The char[] obect from which to initialize this IndicatorArray. 
 
 <br>
 
@@ -68,7 +68,7 @@ IndicatorArray( Char[] array );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | Array | Gets the array that holds the values of the IndicatorArray. | 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | Array | Gets the array that holds the values of the IndicatorArray. | 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the IndicatorArray. | 
 
@@ -80,9 +80,9 @@ IndicatorArray( Char[] array );
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears all elements of the array to their default value. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromindicator[]-int32)([Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a Indicator[] into this array, starting at the given position. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromchar[]-int32)([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a char[] into this array, starting at the given position. | 
-| [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromindicator[]-int32)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a Indicator[] into this array, starting at the given position. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromchar[]-int32)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a char[] into this array, starting at the given position. | 
+| [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array according to their value. | 
 
 <br>
@@ -100,26 +100,26 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy elements of a Indicator[] into this array, starting at the given position.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.Indicator[] sourceArray, Int32 targetStartAt);
+CopyFrom(Runtime.Indicator[] sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | sourceArray | The array from where to copy. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
 <br>
 <br>
 
-### CopyFrom([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy elements of a char[] into this array, starting at the given position.
 
@@ -131,7 +131,7 @@ CopyFrom(Char[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | sourceArray | The array from where to copy. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
@@ -148,7 +148,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator]($$TODO-Collections.Generic.IEnumerator.html)
+[IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0)
 
 The IEnumerator object.
 

@@ -23,7 +23,7 @@ Describes the set of operations of a multi-occurrence data structure.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
 
 <br>
 <br>

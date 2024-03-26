@@ -30,8 +30,8 @@ RpgTypeExtensions class.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveL\\`\\`3](#movel\`\`3fixedstring{``2}-fixeddecimal{``0-``1}-boolean)([FixedString{\\`\\`2}](/reference/asna-qsys-runtime/fixed-string{``2}.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | MoveL extension. | Decimal result.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveR\\`\\`3](#mover\`\`3fixedstring{``2}-fixeddecimal{``0-``1}-boolean)([FixedString{\\`\\`2}](/reference/asna-qsys-runtime/fixed-string{``2}.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | MoveR extension. | Decimal result.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveL&lt;T,U,V&gt;](#movel&lt;t,u,v&gt;fixedstring<t-u>-fixeddecimal(<t>-<t>)-boolean)([FixedString&lt;T,U&gt;](/reference/asna-qsys-runtime/fixed-string.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | MoveL extension. | Decimal result.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveR&lt;T,U,V&gt;](#mover&lt;t,u,v&gt;fixedstring<t-u>-fixeddecimal(<t>-<t>)-boolean)([FixedString&lt;T,U&gt;](/reference/asna-qsys-runtime/fixed-string.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | MoveR extension. | Decimal result.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [RemoveDate](#removedatedatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | RemoveDate extension. | DateTime result.
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [RemoveTime](#removetimedatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | RemoveTime extension. | DateTime result.
@@ -40,40 +40,40 @@ RpgTypeExtensions class.
 <br>
 <br>
 
-### MoveL\`\`3([FixedString{\\`\\`2}](/reference/asna-qsys-runtime/fixed-string{``2}.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### MoveL&lt;T,U,V&gt;([FixedString&lt;T,U&gt;](/reference/asna-qsys-runtime/fixed-string.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 MoveL extension.
 
 ```cs
-MoveL``3(ASNA.QSys.Runtime.FixedString{``2} s, ASNA.QSys.Runtime.FixedDecimal{``0,``1} decNum, Boolean pad);
+MoveL<T,U,V>(Runtime.FixedString<T,U> s, Runtime.FixedDecimal(<T>, <T>) decNum, Boolean pad);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`2}](/reference/asna-qsys-runtime/fixed-string{``2}.html) | s | MoveL s param. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | decNum | MoveL decNum param. 
+| [FixedString&lt;T,U&gt;](/reference/asna-qsys-runtime/fixed-string.html) | s | MoveL s param. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | decNum | MoveL decNum param. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | MoveL pad param. 
 
 
 <br>
 <br>
 
-### MoveR\`\`3([FixedString{\\`\\`2}](/reference/asna-qsys-runtime/fixed-string{``2}.html), [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### MoveR&lt;T,U,V&gt;([FixedString&lt;T,U&gt;](/reference/asna-qsys-runtime/fixed-string.html), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 MoveR extension.
 
 ```cs
-MoveR``3(ASNA.QSys.Runtime.FixedString{``2} s, ASNA.QSys.Runtime.FixedDecimal{``0,``1} decNum, Boolean pad);
+MoveR<T,U,V>(Runtime.FixedString<T,U> s, Runtime.FixedDecimal(<T>, <T>) decNum, Boolean pad);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`2}](/reference/asna-qsys-runtime/fixed-string{``2}.html) | s | MoveR s param. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | decNum | MoveR decNum param. 
+| [FixedString&lt;T,U&gt;](/reference/asna-qsys-runtime/fixed-string.html) | s | MoveR s param. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | decNum | MoveR decNum param. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | MoveR pad param. 
 
 

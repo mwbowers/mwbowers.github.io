@@ -30,6 +30,7 @@ Display File Interface.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FeedbackField | Displayfile Feedback last field name where cursor was positioned. | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackFlags | Displayfile Feedback flags. | 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackLowestSubfile | Displayfile Feedback Lowest subfile Relative Record Number visible. | 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | FeedbackSubfileCursorRRN | Gets or sets the subfile record number where the cursor was position when the AID key was pressed. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | LastFormatName | Displayfile Feedback last format name where cursor was positioned. | 
 
 <br>
@@ -44,7 +45,7 @@ Display File Interface.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeactivateFormats](#deactivateformatsstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | De-activate Display File record formats. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DisplaySubfileRecords](#displaysubfilerecordsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Display subfile records. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetCurrentRow](#getcurrentrowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get current row. | Relative Record Number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitMessageSubfile](#initmessagesubfilestring-string-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initializes Message subfile. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [InitMessageSubfile](#initmessagesubfilestring-string-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initializes Message subfile. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsActive](#isactivestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines if Record format is Active. | True if active, False otherwise.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Open Display File. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#read)() | Read Display File. | 
@@ -147,7 +148,7 @@ Relative Record Number.
 <br>
 <br>
 
-### InitMessageSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### InitMessageSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Initializes Message subfile.
 
@@ -161,7 +162,7 @@ InitMessageSubfile(String subfileName, String programQ, Char[] optionIndicators)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | subfileName | Input subfile name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programQ | Input Program Q. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input option indicator collection. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Input option indicator collection. 
 
 
 <br>

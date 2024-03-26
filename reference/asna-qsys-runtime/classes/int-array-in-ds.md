@@ -1,5 +1,5 @@
 ---
-title: IntArrayInDS`1 Class
+title: IntArrayInDS<T> Class
 ---
 
 Describes a fixed size array of integers contained in a DataStructure.
@@ -19,11 +19,12 @@ Describes a fixed size array of integers contained in a DataStructure.
 <br>
 <br>
 
-## Constructor
+## Constructors
 
 | Name |  Description 
 | --- | --- 
-| **IntArrayInDS**( [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) ) | Constructs a fixed size array of integers in a Data Structure.
+| [IntArrayInDS](#intarrayindsdatastructure-int32-int32)([DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of integers in a Data Structure. 
+| [IntArrayInDS](#intarrayindsmultidatastructure-int32-int32)([MultiDataStructure](/reference/asna-qsys-runtime/classes/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of integers in a Multiple Occurrence Data Structure. 
 
 <br>
 
@@ -32,7 +33,7 @@ Describes a fixed size array of integers contained in a DataStructure.
 Constructs a fixed size array of integers in a Data Structure.
 
 ```cs
-IntArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 skipPositions );
+IntArrayInDS( Runtime.DataStructure parent, Int32 startPos, Int32 skipPositions );
 ```
 
 #### Parameters
@@ -40,6 +41,24 @@ IntArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 skip
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | parent | The DataStructure containing this array of integers. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements. 
+
+<br>
+
+### IntArrayInDS( [MultiDataStructure](/reference/asna-qsys-runtime/classes/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
+
+Constructs a fixed size array of integers in a Multiple Occurrence Data Structure.
+
+```cs
+IntArrayInDS( Runtime.MultiDataStructure parent, Int32 startPos, Int32 skipPositions );
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [MultiDataStructure](/reference/asna-qsys-runtime/classes/multi-data-structure.html) | parent | The MultiDataStructure containing this array of integers. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements. 
 
@@ -67,11 +86,11 @@ IntArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 skip
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Sets all array elements to 0. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromint32[]-int32)([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from an int[] into this array. | 
-| [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromint32[]-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from an int[] into this array. | 
+| [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [System#Collections#IEnumerable#GetEnumerator](#system#collections#ienumerable#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
+| [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 
 <br>
 <br>
@@ -88,7 +107,7 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copies elements from an int[] into this array.
 
@@ -100,7 +119,7 @@ CopyFrom(Int32[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceArray | The array to copy from. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 
@@ -117,7 +136,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator]($$TODO-Collections.Generic.IEnumerator.html)
+[IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0)
 
 An enumerator that can be used to iterate through the array.
 
@@ -169,13 +188,19 @@ Sort(Boolean ascending, Int32 start, Int32 length);
 <br>
 <br>
 
-### System#Collections#IEnumerable#GetEnumerator()
+### GetEnumerator()
 
 Returns an enumerator that iterates through the array.
 
 ```cs
-System#Collections#IEnumerable#GetEnumerator();
+GetEnumerator();
 ```
+
+#### Returns
+
+[IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0)
+
+An enumerator that can be used to iterate through the array.
 
 
 <br>

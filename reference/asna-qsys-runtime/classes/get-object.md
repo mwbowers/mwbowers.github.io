@@ -32,8 +32,8 @@ Class that contains methods to construct certain RPG objects.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MaxFixedDecimalValue](#maxfixeddecimalvalueint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's *HIVAL. Create a fixed decimal high value for the length and decimal positions given. | The *HIVAL decimal number of the proper size.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MinFixedDecimalValue](#minfixeddecimalvalueint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's *LOVAL. Create a fixed decimal low value for the length and decimal positions given. | The *LOVAL decimal number of the proper size.
-| [Array]($$TODO-Array.html) | [NewIndicatorArray](#newindicatorarrayint32[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new array of characters initialized to '0' | The array of indicators.
-| [Array]($$TODO-Array.html) | [NewStringArray](#newstringarrayint32[]-int32)([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new array of fixed-length strings initialized to a string of blanks. | THe array of fixed-length strings.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | [NewIndicatorArray](#newindicatorarrayint32[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new array of characters initialized to '0' | The array of indicators.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | [NewStringArray](#newstringarrayint32[]-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new array of fixed-length strings initialized to a string of blanks. | The array of fixed-length strings.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [RepeatAndMakeInt](#repeatandmakeintstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's *ALL. Creates an integer by repeating the digits in the pattern multiple times. | The largest integer number that can be formed repeating the pattern of digits.
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [RepeatAndMakeLong](#repeatandmakelongstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's *ALL. Creates a long by repeating the digits in the pattern multiple times. | The largest long number that can be formed repeating the pattern of digits.
@@ -95,7 +95,7 @@ The *LOVAL decimal number of the proper size.
 <br>
 <br>
 
-### NewIndicatorArray([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### NewIndicatorArray([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Creates a new array of characters initialized to '0'
 
@@ -107,11 +107,11 @@ NewIndicatorArray(Int32[] dimensions);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dimensions | Array dimensions. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dimensions | Array dimensions. 
 
 #### Returns
 
-[Array]($$TODO-Array.html)
+[Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)
 
 The array of indicators.
 
@@ -119,7 +119,7 @@ The array of indicators.
 <br>
 <br>
 
-### NewStringArray([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### NewStringArray([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Creates a new array of fixed-length strings initialized to a string of blanks.
 
@@ -131,14 +131,14 @@ NewStringArray(Int32[] dimensions, Int32 length);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dimensions | Array dimensions. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dimensions | Array dimensions. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Length of the strings in the array. 
 
 #### Returns
 
-[Array]($$TODO-Array.html)
+[Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)
 
-THe array of fixed-length strings.
+The array of fixed-length strings.
 
 
 <br>

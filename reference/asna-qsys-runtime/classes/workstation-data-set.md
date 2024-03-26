@@ -7,7 +7,7 @@ Represents the dataset of a workstation file.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [MarshalByValueComponent]($$TODO-ComponentModel.MarshalByValueComponent.html) --> [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) --> [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) --> WorkstationDataSet
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [MarshalByValueComponent](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.marshalbyvaluecomponent?view=net-8.0) --> [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset) --> [AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm) --> WorkstationDataSet
 
 <br>
 <br>
@@ -162,7 +162,7 @@ InitializeFormats();
 Set the status flag of the dataset to None or Read.
 
 ```cs
-SetStatusFlag(Data.DataSet ds, ASNA.QSys.Runtime.WsDsStatus statusFlag, Boolean turnFlagOn);
+SetStatusFlag(Data.DataSet ds, Runtime.WsDsStatus statusFlag, Boolean turnFlagOn);
 ```
 
 #### Parameters

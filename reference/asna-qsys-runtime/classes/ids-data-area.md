@@ -23,13 +23,13 @@ Describes a data structure that can be stored in a data area.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [In](#inidataarea)([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html)) | Gets a data area and copies its contents into the data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Out](#outidataarea)([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html)) | Copies the data structure into the given data area. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [In](#inidataarea)([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm)) | Gets a data area and copies its contents into the data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Out](#outidataarea)([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm)) | Copies the data structure into the given data area. | 
 
 <br>
 <br>
 
-### In([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html))
+### In([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm))
 
 Gets a data area and copies its contents into the data structure.
 
@@ -41,13 +41,13 @@ In(ASNA.DataGate.Client.IDataArea dataArea);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html) | dataArea | The data area to use. 
+| [IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm) | dataArea | The data area to use. 
 
 
 <br>
 <br>
 
-### Out([IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html))
+### Out([IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm))
 
 Copies the data structure into the given data area.
 
@@ -59,7 +59,7 @@ Out(ASNA.DataGate.Client.IDataArea dataArea);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataArea]($$TODO-ASNA.DataGate.Client.IDataArea.html) | dataArea | The data area to use. 
+| [IDataArea](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsIDataAreaClass.htm) | dataArea | The data area to use. 
 
 
 <br>

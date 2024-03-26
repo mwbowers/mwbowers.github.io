@@ -7,7 +7,7 @@ Holds information that the RowInsertedEvent requires.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [EventArgs]($$TODO-EventArgs.html) --> RowInsertedEventArgs
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-8.0) --> RowInsertedEventArgs
 
 <br>
 <br>

@@ -25,100 +25,101 @@ Contains extension methods for handling RPG operations and conversions for strin
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustEnd](#adjustendstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the end of a string. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustStart](#adjuststartstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the start of a string. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustVaryingLength](#adjustvaryinglengthstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Trims the end of a variable length string if needed so the string is at most as long as limit. | .
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustEnd](#adjustendstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjust the length of a string to a given value, by padding or truncating the string on the right. | The string at the desired length.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustStart](#adjuststartstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjust the length of a string to a given value, by padding or truncating the string on the left. | The string at the desired length.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustVaryingLength](#adjustvaryinglengthstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Trims the end of a variable length string if needed so the string is at most as long as limit. | The string value with length at most equal to limit.
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [BitOff](#bitoffbyte-string)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's BITOFF. | Returns the result of bitoff mask being applied to the target.
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [BitOn](#bitonbyte-string)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's BITON. | Returns the result of biton mask being applied to the target.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-outint32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-outint32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-array-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-array)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-array-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharacters](#checkcharactersstring-string-int32-array)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-outint32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-outint32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-array-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-array)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-array-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [CheckCharactersReverse](#checkcharactersreversestring-string-int32-array)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string. | Returns true if a mismatch is found.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CheckPosition](#checkpositionstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CheckPosition](#checkpositionstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CheckPositionReverse](#checkpositionreversestring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CheckPositionReverse](#checkpositionreversestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %CHECK. Verifies that each character in the baseString is among the characters in the comparator, starting from the right most position. | Returns the 1 based position of the first non-matched character in baseString that is not in the comparator.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FromStringBinary](#fromstringbinarystring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (binary) decimal number based on its 'memory' representation. | .
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [FromStringByte](#fromstringbytestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a short number based on its 'memory' representation. | .
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [FromStringInteger](#fromstringintegerstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an integer number based on its 'memory' representation. | .
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [FromStringLong](#fromstringlongstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a long number based on its 'memory' representation. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FromStringPacked](#fromstringpackedstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (packed) decimal number based on its 'memory' representation. | .
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [FromStringShort](#fromstringshortstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a short number based on its 'memory' representation. | .
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FromStringZoned](#fromstringzonedstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (zoned) decimal number based on its 'memory' representation. | .
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FromStringBinary](#fromstringbinarystring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (binary) decimal number based on its 'memory' representation. | The decimal number corresponding to the binary decimal representation.
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [FromStringByte](#fromstringbytestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a byte based on its 'memory' representation. | The byte value corresponding to the first byte in the byte[] representation of the string.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [FromStringInteger](#fromstringintegerstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an integer number based on its 'memory' representation. | The int value corresponding to the first 4 bytes in the byte[] representation of the string.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [FromStringLong](#fromstringlongstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a long number based on its 'memory' representation. | The long value corresponding to the first 8 bytes in the byte[] representation of the string.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FromStringPacked](#fromstringpackedstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (packed) decimal number based on its 'memory' representation. | The decimal number corresponding to the packed decimal representation.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [FromStringShort](#fromstringshortstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a short number based on its 'memory' representation. | The short value corresponding to the first 2 bytes in the byte[] representation of the string.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FromStringZoned](#fromstringzonedstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Returns a (zoned) decimal number based on its 'memory' representation. | The decimal number corresponding to the zoned decimal representation.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsBlanks](#isblanksstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Tests a string to see if it is spaces. | .
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [IsBlanks](#isblanksstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test a string to see if it is spaces. | True if the string characters are all blanks (space). False otherwise.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string to decimal, without pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with or without pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftstring-datetime-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short). | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int). | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeft](#moveleftstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a numeric string into an int8 (long). | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1string-fixedtimestamp{``0})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2string-fixeddate{``0-``1})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2string-fixedtime{``0-``1})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeft](#moveleftstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string to decimal, without pad. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeft](#moveleftstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with or without pad. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeft](#moveleftstring-datetime-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeft](#moveleftstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short). | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeft](#moveleftstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int). | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveLeft](#moveleftstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a numeric string into an int8 (long). | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;string-fixeddate(<t>-<t>))([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;string-fixedtime(<t>-<t>))([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T&gt;](#moveleft&lt;t&gt;string-fixedtimestamp<t>)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html)) | RPG's MOVEL. Moves left a string expressed in the given format into a date time type. | returns the value of the move.
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveLeftToChar](#movelefttocharstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves left a string into a character. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpadstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string to decimal, with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpadstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpadstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short) with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpadstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int) with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveLeftWithPad](#moveleftwithpadstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string to decimal, without pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string to string, without pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightstring-datetime-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short). | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int). | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRight](#moverightstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long). | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`1](#moveright\`\`1string-fixedtimestamp{``0})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2string-fixeddate{``0-``1})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2string-fixedtime{``0-``1})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveLeftWithPad](#moveleftwithpadstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string to decimal, with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveLeftWithPad](#moveleftwithpadstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveLeftWithPad](#moveleftwithpadstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a numeric string into an int2 (short) with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveLeftWithPad](#moveleftwithpadstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a numeric string into an int4 (int) with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveLeftWithPad](#moveleftwithpadstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRight](#moverightstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string to decimal, without pad. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRight](#moverightstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string to string, without pad. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRight](#moverightstring-datetime-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRight](#moverightstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short). | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRight](#moverightstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int). | returns the value of the move.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [MoveRight](#moverightstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long). | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;string-fixeddate(<t>-<t>))([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;string-fixedtime(<t>-<t>))([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T&gt;](#moveright&lt;t&gt;string-fixedtimestamp<t>)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html)) | RPG's MOVE. Moves right a string expressed in the given format into a date time type. | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [MoveRightToChar](#moverighttocharstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string into a character. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string to decimal, with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string to string, with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short) with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int) with pad. | returns the value of the move.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MoveRightWithPad](#moverightwithpadstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray](#movetoarraystring-array-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray\\`\\`2](#movetoarray\`\`2string-ifixedarraybase{``0-``1}-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad](#movetoarraywithpadstring-array-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad\\`\\`2](#movetoarraywithpad\`\`2string-ifixedarraybase{``0-``1}-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRightWithPad](#moverightwithpadstring-decimal-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string to decimal, with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRightWithPad](#moverightwithpadstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right a string to string, with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRightWithPad](#moverightwithpadstring-int16)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short) with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRightWithPad](#moverightwithpadstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a numeric string into an int4 (int) with pad. | returns the value of the move.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [MoveRightWithPad](#moverightwithpadstring-int64)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a numeric string into an int8 (long) with pad. | returns the value of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray](#movetoarraystring-array-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArray&lt;T,U&gt;](#movetoarray&lt;t,u&gt;string-ifixedarraybase(<t>-<t>)-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase](/reference/asna-qsys-runtime/classes/i-fixed-array-base.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad](#movetoarraywithpadstring-array-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveToArrayWithPad&lt;T,U&gt;](#movetoarraywithpad&lt;t,u&gt;string-ifixedarraybase(<t>-<t>)-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase](/reference/asna-qsys-runtime/classes/i-fixed-array-base.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Moves a source string into an array. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Replace](#replacestring-string-int32-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Replace](#replacestring-string-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Replace](#replacestring-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replace summary. | Replace returns.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ReplaceFixed](#replacefixedstring-int32-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | ReplaceFixed summary. | ReplaceFixed returns.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Replace](#replacestring-string-int32-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | The string after the replacement.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Replace](#replacestring-string-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST. Replaces characters in a string based on position and length. | The string after the replacement.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Replace](#replacestring-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SUBST. Replaces characters in a string based on position and length. | The string after the replacement.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ReplaceFixed](#replacefixedstring-int32-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SUBST. Replaces characters in a string based on position and length. | The string after the replacement.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found. | Returns the 1 based starting position of a match relative to the baseString.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found. | Returns the 1 based starting position of a match relative to the baseString.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32-int32-array)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32-int32-array-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1string-string-int32-int32-``0)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString\\`\\`1](#scanstring\`\`1string-string-int32-int32-``0-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32-int32-array)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ScanString](#scanstringstring-string-int32-int32-array-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString&lt;T&gt;](#scanstring&lt;t&gt;string-string-int32-int32-out``0)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ScanString&lt;T&gt;](#scanstring&lt;t&gt;string-string-int32-int32-out``0-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SCAN. Attempts to find cmpStr in the baseString. | Returns true if cmpStr is found in baseString.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetHiLoEq](#sethiloeqstring-indicator-indicator-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the flags according to the value of testString. | The test value.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetVaryingLength](#setvaryinglengthstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the variable length string to the indicated length, ensuring that it is no longer than limit. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStr](#substrstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | The string value of the result of the SubStr.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStr](#substrstring-int32-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | .
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixed](#substrfixedstring-int32-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value of the result of the SubStr.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixed](#substrfixedstring-int32-int32-string-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value of the result of the SubStr.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixedWithPad](#substrfixedwithpadstring-int32-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixedWithPad](#substrfixedwithpadstring-int32-int32-string-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value of the result of the SubStr.
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDateTime](#todatetimestring-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | .
-| [Double]($$TODO-Double.html) | [ToDouble](#todoublestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a double number. | double representation of given string.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetVaryingLength](#setvaryinglengthstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the variable length string to the indicated length, ensuring that it is no longer than limit. | The string value at the desired length, at most equal to limit.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStr](#substrstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | The string value resulting from the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStr](#substrstring-int32-int32-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length. | The string value resulting from the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixed](#substrfixedstring-int32-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value resulting from the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixed](#substrfixedstring-int32-int32-string-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding. | The string value resulting from the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixedWithPad](#substrfixedwithpadstring-int32-int32-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value resulting from the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SubStrFixedWithPad](#substrfixedwithpadstring-int32-int32-string-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result. | The string value resulting from the operation.
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | [ToByte](#tobytestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a byte number. | byte representation of given string.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | [ToDateTime](#todatetimestring-datetimedatakind-datetimeformat-datetimeseparator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Converts a string representation of a date/time/timestamp into a DateTime. | The DateTime value parsed from charStr.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | [ToDouble](#todoublestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a double number. | double representation of given string.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimal](#tofixeddecimalstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a numeric string into a RPG decimal. | decimal representation of given string.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [ToFixedDecimalRounded](#tofixeddecimalroundedstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a numeric string into a RPG decimal with rounding (half adjust). | decimal representation of given string.
-| [Single]($$TODO-Single.html) | [ToFloat](#tofloatstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a float number. | float representation of given string.
+| [Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0) | [ToFloat](#tofloatstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a float number. | float representation of given string.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [ToInt16](#toint16string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a short number. | short representation of given string.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [ToInt32](#toint32string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into an int number. | int representation of given string.
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [ToInt64](#toint64string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a numeric string into a long number. | long representation of given string.
@@ -139,7 +140,7 @@ Contains extension methods for handling RPG operations and conversions for strin
 
 ### AdjustEnd([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Adjusts the end of a string.
+Adjust the length of a string to a given value, by padding or truncating the string on the right.
 
 ```cs
 AdjustEnd(String charStr, Int32 length);
@@ -149,14 +150,14 @@ AdjustEnd(String charStr, Int32 length);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | any string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | number to adjust, if greater than length charStr will pad. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | The string to adjust. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The desired length. 
 
 #### Returns
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string at the desired length.
 
 
 <br>
@@ -164,7 +165,7 @@ AdjustEnd(String charStr, Int32 length);
 
 ### AdjustStart([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Adjusts the start of a string.
+Adjust the length of a string to a given value, by padding or truncating the string on the left.
 
 ```cs
 AdjustStart(String charStr, Int32 length);
@@ -174,14 +175,14 @@ AdjustStart(String charStr, Int32 length);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | any string. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | number to adjust, if greater than length charStr will pad the beginning. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | The string to adjust. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The desired length. 
 
 #### Returns
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string at the desired length.
 
 
 <br>
@@ -206,7 +207,7 @@ AdjustVaryingLength(String charStr, Int32 limit);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string value with length at most equal to limit.
 
 
 <br>
@@ -267,7 +268,7 @@ Returns the result of biton mask being applied to the target.
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters(String baseString, String comparator, Int32 startPos, ref Int32 noMatch, ref ASNA.QSys.Runtime.Indicator err);
+CheckCharacters(String baseString, String comparator, Int32 startPos, out Int32 noMatch, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -295,7 +296,7 @@ Returns true if a mismatch is found.
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters(String baseString, String comparator, Int32 startPos, ref ASNA.QSys.Runtime.Indicator err);
+CheckCharacters(String baseString, String comparator, Int32 startPos, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -322,7 +323,7 @@ Returns true if a mismatch is found.
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters(String baseString, String comparator, Int32 startPos, ref Int32 noMatch);
+CheckCharacters(String baseString, String comparator, Int32 startPos, out Int32 noMatch);
 ```
 
 #### Parameters
@@ -370,12 +371,12 @@ Returns true if a mismatch is found.
 <br>
 <br>
 
-### CheckCharacters([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### CheckCharacters([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharacters(String baseString, String comparator, Int32 startPos, Array noMatchArray, ref ASNA.QSys.Runtime.Indicator err);
+CheckCharacters(String baseString, String comparator, Int32 startPos, Array noMatchArray, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -385,7 +386,7 @@ CheckCharacters(String baseString, String comparator, Int32 startPos, Array noMa
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
-| [Array]($$TODO-Array.html) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 #### Returns
@@ -398,7 +399,7 @@ Returns true if a mismatch is found.
 <br>
 <br>
 
-### CheckCharacters([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html))
+### CheckCharacters([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0))
 
 RPG's CHECK. Verifies that each character in a base string or array is among the characters in the comparator string.
 
@@ -413,7 +414,7 @@ CheckCharacters(String baseString, String comparator, Int32 startPos, Array noMa
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the right of the baseString. 
-| [Array]($$TODO-Array.html) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | noMatchArray | Returns all of the 1-based positions of characters that don't match. The first element in the array contains the leftmost non-match. 
 
 #### Returns
 
@@ -430,7 +431,7 @@ Returns true if a mismatch is found.
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse(String baseString, String comparator, Int32 startPos, ref Int32 noMatch, ref ASNA.QSys.Runtime.Indicator err);
+CheckCharactersReverse(String baseString, String comparator, Int32 startPos, out Int32 noMatch, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -458,7 +459,7 @@ Returns true if a mismatch is found.
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse(String baseString, String comparator, Int32 startPos, ref ASNA.QSys.Runtime.Indicator err);
+CheckCharactersReverse(String baseString, String comparator, Int32 startPos, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -485,7 +486,7 @@ Returns true if a mismatch is found.
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse(String baseString, String comparator, Int32 startPos, ref Int32 noMatch);
+CheckCharactersReverse(String baseString, String comparator, Int32 startPos, out Int32 noMatch);
 ```
 
 #### Parameters
@@ -533,12 +534,12 @@ Returns true if a mismatch is found.
 <br>
 <br>
 
-### CheckCharactersReverse([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### CheckCharactersReverse([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
 ```cs
-CheckCharactersReverse(String baseString, String comparator, Int32 startPos, Array noMatchArray, ref ASNA.QSys.Runtime.Indicator err);
+CheckCharactersReverse(String baseString, String comparator, Int32 startPos, Array noMatchArray, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -548,7 +549,7 @@ CheckCharactersReverse(String baseString, String comparator, Int32 startPos, Arr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
-| [Array]($$TODO-Array.html) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
             The first index in NoMatchArray is the rightmost mismatch in the baseString. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
@@ -562,7 +563,7 @@ Returns true if a mismatch is found.
 <br>
 <br>
 
-### CheckCharactersReverse([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html))
+### CheckCharactersReverse([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0))
 
 RPG's CHECKR. Verifies that each character in a base string or array is among the characters in the comparator string.
 
@@ -577,7 +578,7 @@ CheckCharactersReverse(String baseString, String comparator, Int32 startPos, Arr
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | A character expression that contains the string to compare with comparator. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | comparator | A character expression that is used to compare against the baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Specifies the 1-based starting position and continues to the left of the baseString. 
-| [Array]($$TODO-Array.html) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | noMatchArray | Returns the 1-based position of the first non-matched character in baseString that is not in the comparator.
             The first index in NoMatchArray is the rightmost mismatch in the baseString. 
 
 #### Returns
@@ -712,7 +713,7 @@ FromStringBinary(String num, Int32 digits, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number corresponding to the binary decimal representation.
 
 
 <br>
@@ -720,7 +721,7 @@ FromStringBinary(String num, Int32 digits, Int32 decimals);
 
 ### FromStringByte([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Returns a short number based on its 'memory' representation.
+Returns a byte based on its 'memory' representation.
 
 ```cs
 FromStringByte(String num);
@@ -736,7 +737,7 @@ FromStringByte(String num);
 
 [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)
 
-.
+The byte value corresponding to the first byte in the byte[] representation of the string.
 
 
 <br>
@@ -760,7 +761,7 @@ FromStringInteger(String num);
 
 [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
-.
+The int value corresponding to the first 4 bytes in the byte[] representation of the string.
 
 
 <br>
@@ -784,7 +785,7 @@ FromStringLong(String num);
 
 [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)
 
-.
+The long value corresponding to the first 8 bytes in the byte[] representation of the string.
 
 
 <br>
@@ -809,7 +810,7 @@ FromStringPacked(String num, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number corresponding to the packed decimal representation.
 
 
 <br>
@@ -833,7 +834,7 @@ FromStringShort(String num);
 
 [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
-.
+The short value corresponding to the first 2 bytes in the byte[] representation of the string.
 
 
 <br>
@@ -859,7 +860,7 @@ FromStringZoned(String num, Int32 digits, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-.
+The decimal number corresponding to the zoned decimal representation.
 
 
 <br>
@@ -867,7 +868,7 @@ FromStringZoned(String num, Int32 digits, Int32 decimals);
 
 ### IsBlanks([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Tests a string to see if it is spaces.
+Test a string to see if it is spaces.
 
 ```cs
 IsBlanks(String arg);
@@ -877,13 +878,13 @@ IsBlanks(String arg);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | arg | . 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | arg | The string to test. 
 
 #### Returns
 
 [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
 
-.
+True if the string characters are all blanks (space). False otherwise.
 
 
 <br>
@@ -908,7 +909,7 @@ MoveLeft(String charStr, Decimal targetOperand, Int32 targetOperandDig, Int32 ta
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -933,7 +934,7 @@ MoveLeft(String charStr, String targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -946,7 +947,7 @@ returns the value of the move.
 RPG's MOVEL. Moves left a string expressed in the given format into a date time type.
 
 ```cs
-MoveLeft(String charStr, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.DateTimeSeparator dateTimeSeparator);
+MoveLeft(String charStr, DateTime dateTime, Runtime.DateTimeDataKind dateTimeKind, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.DateTimeSeparator dateTimeSeparator);
 ```
 
 #### Parameters
@@ -961,7 +962,7 @@ MoveLeft(String charStr, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind d
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -986,7 +987,7 @@ MoveLeft(String charStr, Int16 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1011,7 +1012,7 @@ MoveLeft(String charStr, Int32 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1036,7 +1037,7 @@ MoveLeft(String charStr, Int64 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1044,12 +1045,12 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveLeft\`\`1([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html))
+### MoveLeft&lt;T,U&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVEL. Moves left a string expressed in the given format into a date time type.
 
 ```cs
-MoveLeft``1(String charStr, ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
+MoveLeft<T,U>(String charStr, Runtime.FixedDate(<T>, <T>) date);
 ```
 
 #### Parameters
@@ -1057,18 +1058,18 @@ MoveLeft``1(String charStr, ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | Source FixedString. 
-| [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html) | timeStamp | Destination FixedTimestamp. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | date | Destination FixedDate. 
 
 
 <br>
 <br>
 
-### MoveLeft\`\`2([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html))
+### MoveLeft&lt;T,U&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVEL. Moves left a string expressed in the given format into a date time type.
 
 ```cs
-MoveLeft``2(String charStr, ASNA.QSys.Runtime.FixedDate{``0,``1} date);
+MoveLeft<T,U>(String charStr, Runtime.FixedTime(<T>, <T>) time);
 ```
 
 #### Parameters
@@ -1076,18 +1077,18 @@ MoveLeft``2(String charStr, ASNA.QSys.Runtime.FixedDate{``0,``1} date);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | Source FixedString. 
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | date | Destination FixedDate. 
+| [FixedTime(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-time.html) | time | Destination FixedTime. 
 
 
 <br>
 <br>
 
-### MoveLeft\`\`2([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html))
+### MoveLeft&lt;T&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html))
 
 RPG's MOVEL. Moves left a string expressed in the given format into a date time type.
 
 ```cs
-MoveLeft``2(String charStr, ASNA.QSys.Runtime.FixedTime{``0,``1} time);
+MoveLeft<T>(String charStr, Runtime.FixedTimestamp<T> timestamp);
 ```
 
 #### Parameters
@@ -1095,7 +1096,7 @@ MoveLeft``2(String charStr, ASNA.QSys.Runtime.FixedTime{``0,``1} time);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | Source FixedString. 
-| [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html) | time | Destination FixedTime. 
+| [FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html) | timestamp | Destination FixedTimestamp. 
 
 
 <br>
@@ -1144,7 +1145,7 @@ MoveLeftWithPad(String charStr, Decimal targetOperand, Int32 targetOperandDig, I
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1169,7 +1170,7 @@ MoveLeftWithPad(String charStr, String targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1194,7 +1195,7 @@ MoveLeftWithPad(String charStr, Int16 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1219,7 +1220,7 @@ MoveLeftWithPad(String charStr, Int32 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1244,7 +1245,7 @@ MoveLeftWithPad(String charStr, Int64 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1271,7 +1272,7 @@ MoveRight(String charStr, Decimal targetOperand, Int32 targetOperandDig, Int32 t
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1296,7 +1297,7 @@ MoveRight(String charStr, String targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1309,7 +1310,7 @@ returns the value of the move.
 RPG's MOVE. Moves right a string expressed in the given format into a date time type.
 
 ```cs
-MoveRight(String charStr, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.DateTimeSeparator dateTimeSeparator);
+MoveRight(String charStr, DateTime dateTime, Runtime.DateTimeDataKind dateTimeKind, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.DateTimeSeparator dateTimeSeparator);
 ```
 
 #### Parameters
@@ -1324,7 +1325,7 @@ MoveRight(String charStr, DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind 
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1349,7 +1350,7 @@ MoveRight(String charStr, Int16 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1374,7 +1375,7 @@ MoveRight(String charStr, Int32 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1399,7 +1400,7 @@ MoveRight(String charStr, Int64 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
 returns the value of the move.
 
@@ -1407,12 +1408,12 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveRight\`\`1([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html))
+### MoveRight&lt;T,U&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a string expressed in the given format into a date time type.
 
 ```cs
-MoveRight``1(String charStr, ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
+MoveRight<T,U>(String charStr, Runtime.FixedDate(<T>, <T>) date);
 ```
 
 #### Parameters
@@ -1420,18 +1421,18 @@ MoveRight``1(String charStr, ASNA.QSys.Runtime.FixedTimestamp{``0} timeStamp);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | Source FixedString. 
-| [FixedTimestamp{\\`\\`0}](/reference/asna-qsys-runtime/fixed-timestamp{``0}.html) | timeStamp | Destination FixedTimestamp. 
+| [FixedDate(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-date.html) | date | Destination FixedDate. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html))
+### MoveRight&lt;T,U&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a string expressed in the given format into a date time type.
 
 ```cs
-MoveRight``2(String charStr, ASNA.QSys.Runtime.FixedDate{``0,``1} date);
+MoveRight<T,U>(String charStr, Runtime.FixedTime(<T>, <T>) time);
 ```
 
 #### Parameters
@@ -1439,18 +1440,18 @@ MoveRight``2(String charStr, ASNA.QSys.Runtime.FixedDate{``0,``1} date);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | Source FixedString. 
-| [FixedDate{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-date{``0,``1}.html) | date | Destination FixedDate. 
+| [FixedTime(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-time.html) | time | Destination FixedTime. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html))
+### MoveRight&lt;T&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html))
 
 RPG's MOVE. Moves right a string expressed in the given format into a date time type.
 
 ```cs
-MoveRight``2(String charStr, ASNA.QSys.Runtime.FixedTime{``0,``1} time);
+MoveRight<T>(String charStr, Runtime.FixedTimestamp<T> timestamp);
 ```
 
 #### Parameters
@@ -1458,7 +1459,7 @@ MoveRight``2(String charStr, ASNA.QSys.Runtime.FixedTime{``0,``1} time);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | Source FixedString. 
-| [FixedTime{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-time{``0,``1}.html) | time | Destination FixedTime. 
+| [FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html) | timestamp | Destination FixedTimestamp. 
 
 
 <br>
@@ -1507,7 +1508,7 @@ MoveRightWithPad(String charStr, Decimal targetOperand, Int32 targetOperandDig, 
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1532,7 +1533,7 @@ MoveRightWithPad(String charStr, String targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1557,7 +1558,7 @@ MoveRightWithPad(String charStr, Int16 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1582,7 +1583,7 @@ MoveRightWithPad(String charStr, Int32 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1607,7 +1608,7 @@ MoveRightWithPad(String charStr, Int64 targetOperand);
 
 #### Returns
 
-[Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
+[Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)
 
 returns the value of the move.
 
@@ -1615,7 +1616,7 @@ returns the value of the move.
 <br>
 <br>
 
-### MoveToArray([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToArray([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Moves a source string into an array.
 
@@ -1627,35 +1628,35 @@ MoveToArray(String source, Array target, Int32 startPosition);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | Source string. 
-| [Array]($$TODO-Array.html) | target | Destination array. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The FixedString value to move. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | target | The array that will receive values from source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
 
 
 <br>
 <br>
 
-### MoveToArray\`\`2([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToArray&lt;T,U&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase](/reference/asna-qsys-runtime/classes/i-fixed-array-base.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Moves a source string into an array.
 
 ```cs
-MoveToArray``2(String source, ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} target, Int32 startPosition);
+MoveToArray<T,U>(String source, Runtime.IFixedArrayBase(<T>, <T>) target, Int32 startPosition);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | Source string. 
-| [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | target | Destination array. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The FixedString value to move. 
+| [IFixedArrayBase(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/i-fixed-array-base.html) | target | The array that will receive values from source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
 
 
 <br>
 <br>
 
-### MoveToArrayWithPad([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToArrayWithPad([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Moves a source string into an array.
 
@@ -1667,28 +1668,28 @@ MoveToArrayWithPad(String source, Array target, Int32 startPosition);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | Source string. 
-| [Array]($$TODO-Array.html) | target | Destination array. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The FixedString value to move. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | target | The array that will receive values from source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
 
 
 <br>
 <br>
 
-### MoveToArrayWithPad\`\`2([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveToArrayWithPad&lt;T,U&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFixedArrayBase](/reference/asna-qsys-runtime/classes/i-fixed-array-base.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Moves a source string into an array.
 
 ```cs
-MoveToArrayWithPad``2(String source, ASNA.QSys.Runtime.IFixedArrayBase{``0,``1} target, Int32 startPosition);
+MoveToArrayWithPad<T,U>(String source, Runtime.IFixedArrayBase(<T>, <T>) target, Int32 startPosition);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | Source string. 
-| [IFixedArrayBase{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/i-fixed-array-base{``0,``1}.html) | target | Destination array. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The FixedString value to move. 
+| [IFixedArrayBase(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/i-fixed-array-base.html) | target | The array that will receive values from source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts. 
 
 
@@ -1717,7 +1718,7 @@ Replace(String target, String from, Int32 startPos, Int32 length, Boolean isRigh
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string after the replacement.
 
 
 <br>
@@ -1744,7 +1745,7 @@ Replace(String target, String from, Int32 startPos, Boolean isRightAdg);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string after the replacement.
 
 
 <br>
@@ -1752,26 +1753,26 @@ Replace(String target, String from, Int32 startPos, Boolean isRightAdg);
 
 ### Replace([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Replace summary.
+RPG's %SUBST. Replaces characters in a string based on position and length.
 
 ```cs
-Replace(String baseString, String repString, Int32 startPos, Int32 lengthToReplace);
+Replace(String target, String from, Int32 startPos, Int32 length);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | Replace baseString param. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | Replace repString param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Replace startPos param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | Replace lengthToReplace param. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | The string where replacements will occur.. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | from | The replace string. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Starting position in target. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Length to replace, pass -1 to use the length of the replacement string. 
 
 #### Returns
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-Replace returns.
+The string after the replacement.
 
 
 <br>
@@ -1779,27 +1780,27 @@ Replace returns.
 
 ### ReplaceFixed([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-ReplaceFixed summary.
+RPG's %SUBST. Replaces characters in a string based on position and length.
 
 ```cs
-ReplaceFixed(String baseString, Int32 baseLenConst, String repString, Int32 startPos, Int32 lengthToReplace);
+ReplaceFixed(String target, Int32 baseLength, String from, Int32 startPos, Int32 length);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | ReplaceFixed baseString param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | baseLenConst | ReplaceFixed baseLenConst param. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | ReplaceFixed repString param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | ReplaceFixed startPos param. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | ReplaceFixed lengthToReplace param. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | The string where replacements will occur.. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | baseLength | The length of the resulting string. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | from | The replace string. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Starting position in target. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Length to replace, pass -1 to use the length of the replacement string. 
 
 #### Returns
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-ReplaceFixed returns.
+The string after the replacement.
 
 
 <br>
@@ -1888,7 +1889,7 @@ Returns true if cmpStr is found in baseString.
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref ASNA.QSys.Runtime.Indicator err);
+ScanString(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1911,7 +1912,7 @@ Returns true if cmpStr is found in baseString.
 <br>
 <br>
 
-### ScanString([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html))
+### ScanString([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
@@ -1927,7 +1928,7 @@ ScanString(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, Array
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [Array]($$TODO-Array.html) | fndPosArray | . 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | fndPosArray | The array on which to store all the positions in baseString where cmpStr starts. 
 
 #### Returns
 
@@ -1939,12 +1940,12 @@ Returns true if cmpStr is found in baseString.
 <br>
 <br>
 
-### ScanString([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array]($$TODO-Array.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### ScanString([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, Array fndPosArray, ref ASNA.QSys.Runtime.Indicator err);
+ScanString(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, Array fndPosArray, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1955,7 +1956,7 @@ ScanString(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, Array
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [Array]($$TODO-Array.html) | fndPosArray | . 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | fndPosArray | The array on which to store all the positions in baseString where cmpStr starts. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 #### Returns
@@ -1968,12 +1969,12 @@ Returns true if cmpStr is found in baseString.
 <br>
 <br>
 
-### ScanString\`\`1([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html))
+### ScanString&lt;T&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``1(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref ``0 fndPos);
+ScanString<T>(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, out ``0 fndPos);
 ```
 
 #### Parameters
@@ -1984,18 +1985,18 @@ ScanString``1(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, re
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [\\`\\`0]($$TODO-``0@.html) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1 based array index position of the beginning of the first match from the left. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1 based array index position of the beginning of the first match from the left. 
 
 
 <br>
 <br>
 
-### ScanString\`\`1([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [\\`\\`0]($$TODO-``0@.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### ScanString&lt;T&gt;([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 RPG's SCAN. Attempts to find cmpStr in the baseString.
 
 ```cs
-ScanString``1(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, ref ``0 fndPos, ref ASNA.QSys.Runtime.Indicator err);
+ScanString<T>(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, out ``0 fndPos, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -2006,7 +2007,7 @@ ScanString``1(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, re
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | A character expression that baseString is scanned for. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cmpLen | Default value is the length of cmpStr. Specifies the length of cmpStr that is scanned for in baseString. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1 based start position in baseString. 
-| [\\`\\`0]($$TODO-``0@.html) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1 based array index position of the beginning of the first match from the left. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | fndPos | Will be 0 if scan cannot find cmpStr in baseString. Otherwise will be the 1 based array index position of the beginning of the first match from the left. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Indicator will be set if a runtime error occurs. 
 
 
@@ -2018,7 +2019,7 @@ ScanString``1(String baseString, String cmpStr, Int32 cmpLen, Int32 startPos, re
 Sets the flags according to the value of testString.
 
 ```cs
-SetHiLoEq(String testString, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
+SetHiLoEq(String testString, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
@@ -2060,7 +2061,7 @@ SetVaryingLength(String charStr, Int32 length, Int32 limit);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string value at the desired length, at most equal to limit.
 
 
 <br>
@@ -2086,7 +2087,7 @@ SubStr(String baseString, Int32 startPos, Int32 subLen);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-The string value of the result of the SubStr.
+The string value resulting from the operation.
 
 
 <br>
@@ -2097,7 +2098,7 @@ The string value of the result of the SubStr.
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length.
 
 ```cs
-SubStr(String baseString, Int32 startPos, Int32 subLen, ref ASNA.QSys.Runtime.Indicator errInd);
+SubStr(String baseString, Int32 startPos, Int32 subLen, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -2113,7 +2114,7 @@ SubStr(String baseString, Int32 startPos, Int32 subLen, ref ASNA.QSys.Runtime.In
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-.
+The string value resulting from the operation.
 
 
 <br>
@@ -2140,7 +2141,7 @@ SubStrFixed(String baseString, Int32 startPos, Int32 subLen, String target);
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-The string value of the result of the SubStr.
+The string value resulting from the operation.
 
 
 <br>
@@ -2151,7 +2152,7 @@ The string value of the result of the SubStr.
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding.
 
 ```cs
-SubStrFixed(String baseString, Int32 startPos, Int32 subLen, String target, ref ASNA.QSys.Runtime.Indicator errInd);
+SubStrFixed(String baseString, Int32 startPos, Int32 subLen, String target, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -2168,7 +2169,7 @@ SubStrFixed(String baseString, Int32 startPos, Int32 subLen, String target, ref 
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-The string value of the result of the SubStr.
+The string value resulting from the operation.
 
 
 <br>
@@ -2195,7 +2196,7 @@ SubStrFixedWithPad(String baseString, Int32 startPos, Int32 subLen, String targe
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-The string value of the result of the SubStr.
+The string value resulting from the operation.
 
 
 <br>
@@ -2206,7 +2207,7 @@ The string value of the result of the SubStr.
 RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, and pads the result.
 
 ```cs
-SubStrFixedWithPad(String baseString, Int32 startPos, Int32 subLen, String target, ref ASNA.QSys.Runtime.Indicator errInd);
+SubStrFixedWithPad(String baseString, Int32 startPos, Int32 subLen, String target, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -2223,7 +2224,31 @@ SubStrFixedWithPad(String baseString, Int32 startPos, Int32 subLen, String targe
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
-The string value of the result of the SubStr.
+The string value resulting from the operation.
+
+
+<br>
+<br>
+
+### ToByte([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Converts a numeric string into a byte number.
+
+```cs
+ToByte(String charStr);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | string representing a byte number. 
+
+#### Returns
+
+[Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)
+
+byte representation of given string.
 
 
 <br>
@@ -2234,14 +2259,14 @@ The string value of the result of the SubStr.
 Converts a string representation of a date/time/timestamp into a DateTime.
 
 ```cs
-ToDateTime(String charStr, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.DateTimeSeparator dateTimeSeparator);
+ToDateTime(String charStr, Runtime.DateTimeDataKind dateTimeKind, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.DateTimeSeparator dateTimeSeparator);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | string representing a date/time/timestamp. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | charStr | The string value representing a date/time/timestamp. 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | dateTimeKind | Date, Time, Timestamp. 
 | [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | dateTimeFormat | DateTime format. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | dateTimeSeparator | string separator. 
@@ -2250,7 +2275,7 @@ ToDateTime(String charStr, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, ASNA
 
 [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)
 
-.
+The DateTime value parsed from charStr.
 
 
 <br>
@@ -2272,7 +2297,7 @@ ToDouble(String charStr);
 
 #### Returns
 
-[Double]($$TODO-Double.html)
+[Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0)
 
 double representation of given string.
 
@@ -2348,7 +2373,7 @@ ToFloat(String charStr);
 
 #### Returns
 
-[Single]($$TODO-Single.html)
+[Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0)
 
 float representation of given string.
 
@@ -2511,7 +2536,7 @@ The string resulting after the Xlate operation.
 RPG's %Xlate. Translates baseString according to the values of mapFrom, mapTo, and startPos. The parameter errInd will indicate if there was an error in the operation.
 
 ```cs
-Xlate(String baseString, String mapFrom, String mapTo, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
+Xlate(String baseString, String mapFrom, String mapTo, Int32 startPos, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -2567,7 +2592,7 @@ The string value of the result of the Xlate.
 RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString, no padding, no preservation of length.
 
 ```cs
-Xlate(String baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
+Xlate(String baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -2624,7 +2649,7 @@ The string value of the result of the Xlate.
 RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, does NOT pad.
 
 ```cs
-XlateFixed(String baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
+XlateFixed(String baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters
@@ -2681,7 +2706,7 @@ The string value of the result of the Xlate.
 RPG's XLATE. Translates characters in the baseString according to MapFrom, MapTo, startPos and targetString. This version preserves the length of the result, with padding.
 
 ```cs
-XlateFixedWithPad(String baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, ref ASNA.QSys.Runtime.Indicator errInd);
+XlateFixedWithPad(String baseString, String mapFrom, String mapTo, String targetString, Int32 startPos, out ASNA.QSys.Runtime.Indicator errInd);
 ```
 
 #### Parameters

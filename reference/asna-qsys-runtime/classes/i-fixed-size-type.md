@@ -23,7 +23,7 @@ Declares the basic functionality of a fixed-size generic type.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [T]($$TODO-T.html) | Value | Returns the value of type T. | 
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | Value | Returns the value of type T. | 
 
 <br>
 <br>
@@ -32,12 +32,12 @@ Declares the basic functionality of a fixed-size generic type.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [IFixedSizeType\\`1](/reference/asna-qsys-runtime/i-fixed-size-type`1.html) | [Convert](#convert`0)([\\`0]($$TODO-`0.html)) | Convert the value to FixedSize of a particular type. | The new FixedSize of type, converted value.
+| [IFixedSizeType](/reference/asna-qsys-runtime/classes/i-fixed-size-type.html) | [Convert](#convert`0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | Convert the value to FixedSize of a particular type. | The new FixedSize of type, converted value.
 
 <br>
 <br>
 
-### Convert([\\`0]($$TODO-`0.html))
+### Convert([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))
 
 Convert the value to FixedSize of a particular type.
 
@@ -49,11 +49,11 @@ Convert(`0 value);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`0]($$TODO-`0.html) | value | Input value. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | value | Input value. 
 
 #### Returns
 
-[IFixedSizeType\\`1](/reference/asna-qsys-runtime/i-fixed-size-type`1.html)
+[IFixedSizeType](/reference/asna-qsys-runtime/classes/i-fixed-size-type.html)
 
 The new FixedSize of type, converted value.
 

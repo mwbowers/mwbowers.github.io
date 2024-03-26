@@ -26,11 +26,11 @@ Multiple occurrence data structures encapsulate a collection of data structure o
 | Name |  Description 
 | --- | --- 
 | [MultiDataStructure](#multidatastructureint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a unidimensional MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32-int32-valuetuple{asna.qsys.runtime.ilayout-system.int32}[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[]]($$TODO-ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[].html)) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a unidimensional MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-int32)([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-ilayout[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-int32-valuetuple{asna.qsys.runtime.ilayout-system.int32}[])([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[]]($$TODO-ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[].html)) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-int32-int32))([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a unidimensional MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32[]-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32[]-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32[]-int32-int32))([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))) | Constructs a MultiDataStructure object. 
 
 <br>
 
@@ -51,12 +51,12 @@ MultiDataStructure( Int32 arrayLength, Int32 size );
 
 <br>
 
-### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[]]($$TODO-ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[].html) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) )
 
 Constructs a MultiDataStructure object.
 
 ```cs
-MultiDataStructure( Int32 arrayLength, Int32 size, ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[] fields );
+MultiDataStructure( Int32 arrayLength, Int32 size, ValueTuple(ASNA.QSys.Runtime.ILayout,System.Int32) fields );
 ```
 
 #### Parameters
@@ -65,16 +65,16 @@ MultiDataStructure( Int32 arrayLength, Int32 size, ValueTuple{ASNA.QSys.Runtime.
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | size | Size of the individual data structures. 
-| [ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[]]($$TODO-ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[].html) | fields | An array of tuples containing each field ILayout description with the starting position of the field, in order. 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), | fields | An array of tuples containing each field ILayout description with the starting position of the field, in order. 
 
 <br>
 
-### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Constructs a unidimensional MultiDataStructure object.
 
 ```cs
-MultiDataStructure( Int32 arrayLength, ASNA.QSys.Runtime.ILayout[] fields );
+MultiDataStructure( Int32 arrayLength, Runtime.ILayout[] fields );
 ```
 
 #### Parameters
@@ -82,11 +82,11 @@ MultiDataStructure( Int32 arrayLength, ASNA.QSys.Runtime.ILayout[] fields );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in the multi data structure. 
-| [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
 
 <br>
 
-### MultiDataStructure( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) )
 
 Constructs a MultiDataStructure object.
 
@@ -98,43 +98,43 @@ MultiDataStructure( Int32[] arrayLength, Int32 size );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | size | Size of the individual data structures. 
 
 <br>
 
-### MultiDataStructure( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) )
 
 Constructs a MultiDataStructure object.
 
 ```cs
-MultiDataStructure( Int32[] arrayLength, ASNA.QSys.Runtime.ILayout[] fields );
+MultiDataStructure( Int32[] arrayLength, Runtime.ILayout[] fields );
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
-| [ILayout[]](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | fields | An ILayout array of field descriptions. 
 
 <br>
 
-### MultiDataStructure( [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[]]($$TODO-ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[].html) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) )
 
 Constructs a MultiDataStructure object.
 
 ```cs
-MultiDataStructure( Int32[] arrayLength, Int32 size, ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[] fields );
+MultiDataStructure( Int32[] arrayLength, Int32 size, ValueTuple(ASNA.QSys.Runtime.ILayout,System.Int32) fields );
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | arrayLength | Number of elements in all dimensions of the multi data structure. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | size | Size of the individual data structures. 
-| [ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[]]($$TODO-ValueTuple{ASNA.QSys.Runtime.ILayout,System.Int32}[].html) | fields | An array of tuples containing each field ILayout description with the starting position of the field, in order. 
+| [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), | fields | An array of tuples containing each field ILayout description with the starting position of the field, in order. 
 
 <br>
 
@@ -150,10 +150,10 @@ MultiDataStructure( Int32[] arrayLength, Int32 size, ValueTuple{ASNA.QSys.Runtim
 | [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Current | Gets the current occurrence of this multiple occurrence data structure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of this multi data structure. | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Fields | Layout of the individual data structures, if it exists. | 
-| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Item([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataStructure object at the given index. | i /* Desired index. */
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataStructure object at the given index. | i /* Desired index. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | Gets the length of the individual data structures in this MODS. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the multi occurrence data structure. | 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
 
 <br>
 <br>
@@ -173,8 +173,8 @@ MultiDataStructure( Int32[] arrayLength, Int32 size, ValueTuple{ASNA.QSys.Runtim
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Load](#loadstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Loads the current occurrence from a string. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadAll](#loadallstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Copies the given string into the multi-occurrence data structure. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ObjectToParm](#objecttoparmas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ObjectToParm](#objecttoparmas400program-int32[]-int32)([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Gets the contents of all occurrences of the multi data structure as a string. | A copy of the contents of the multi-occurrence data structure as a string.
 
@@ -277,7 +277,7 @@ LoadAll(String source);
 <br>
 <br>
 
-### ObjectToParm([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ObjectToParm([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program.
 
@@ -289,15 +289,15 @@ ObjectToParm(ASNA.DataGate.Client.As400Program program, Int32[] indices, Int32 d
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html) | program | As400Program object describing the program call. 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
+| [As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm) | program | As400Program object describing the program call. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dim | The dimension nesting of the parameter. 
 
 
 <br>
 <br>
 
-### ParmToObject([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ParmToObject([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program.
 
@@ -309,8 +309,8 @@ ParmToObject(ASNA.DataGate.Client.As400Program program, Int32[] indices, Int32 d
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html) | program | As400Program object describing the program call. 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
+| [As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm) | program | As400Program object describing the program call. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dim | The dimension nesting of the parameter. 
 
 
@@ -339,7 +339,7 @@ A copy of the contents of the multi-occurrence data structure as a string.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ArrayLength | Length of the multi data structure in all dimensions.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ArrayLength | Length of the multi data structure in all dimensions.
 
 <br>
 <br>

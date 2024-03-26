@@ -1,5 +1,5 @@
 ---
-title: Omissible`1 Class
+title: Omissible<T> Class
 ---
 
 Encapsulates a *OMIT parameter.
@@ -7,7 +7,7 @@ Encapsulates a *OMIT parameter.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) -->  --> Omissible`1
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) -->  --> Omissible<T>
 
 <br>
 <br>
@@ -25,12 +25,12 @@ Encapsulates a *OMIT parameter.
 
 | Name |  Description 
 | --- | --- 
-| [Omissible](#omissible`0)([\\`0]($$TODO-`0.html)) | Initializes an Omissible object with a value. 
+| [Omissible](#omissible`0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | Initializes an Omissible object with a value. 
 | [Omissible](#omissible)() | Initializes an Omissible object without a value. 
 
 <br>
 
-### Omissible( [\\`0]($$TODO-`0.html) )
+### Omissible( [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) )
 
 Initializes an Omissible object with a value.
 
@@ -42,7 +42,7 @@ Omissible( `0 value );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`0]($$TODO-`0.html) | value |  
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | value | The value encapsulated by this object. 
 
 <br>
 

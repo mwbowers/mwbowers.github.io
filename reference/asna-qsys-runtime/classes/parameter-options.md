@@ -1,5 +1,5 @@
 ---
-title: ParameterOptions`1 Class
+title: ParameterOptions<T> Class
 ---
 
 Represents the base functionality of the special RPG parameters *OMIT and *NOPASS
@@ -7,7 +7,7 @@ Represents the base functionality of the special RPG parameters *OMIT and *NOPAS
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> ParameterOptions`1
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> ParameterOptions<T>
 
 <br>
 <br>
@@ -25,12 +25,12 @@ Represents the base functionality of the special RPG parameters *OMIT and *NOPAS
 
 | Name |  Description 
 | --- | --- 
-| [ParameterOptions](#parameteroptions`0)([\\`0]($$TODO-`0.html)) | Initializes a ParameterOptions object with a value. 
+| [ParameterOptions](#parameteroptions`0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | Initializes a ParameterOptions object with a value. 
 | [ParameterOptions](#parameteroptions)() | Initializes a ParameterOptions object without a value. 
 
 <br>
 
-### ParameterOptions( [\\`0]($$TODO-`0.html) )
+### ParameterOptions( [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) )
 
 Initializes a ParameterOptions object with a value.
 
@@ -42,7 +42,7 @@ ParameterOptions( `0 value );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`0]($$TODO-`0.html) | value | The value to stroe in this parameter. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | value | The value to stroe in this parameter. 
 
 <br>
 
@@ -68,7 +68,7 @@ ParameterOptions(  );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | IOPMessage | When overridden in a derived class, gets the message for the exception thrown when this object is being used but hasn't been initialized. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsValid | Returns true if the parameter has a value. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ToStringMessage | When overridden in a derived class, gets the default value returned by the ToString method when this object is being used but hasn't been initialized. | 
-| [T]($$TODO-T.html) | Value | THe value of the parameter. Trying to get the value before the value is set will throw an InvalidOperationException. | 
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | Value | THe value of the parameter. Trying to get the value before the value is set will throw an InvalidOperationException. | 
 
 <br>
 <br>

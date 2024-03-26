@@ -25,11 +25,11 @@ Describes a parameter sent into an IBMi program call.
 
 | Name |  Description 
 | --- | --- 
-| **Parameter**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) ) | Create a Parm object to represent an IBMi program parameter.
+| **Parameter**( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType](reference/datagate-client/field-type-class.html), [DataDirection](reference/datagate-client/data-direction-enumeration.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) ) | Create a Parm object to represent an IBMi program parameter.
 
 <br>
 
-### Parameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html), [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
+### Parameter( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [FieldType](reference/datagate-client/field-type-class.html), [DataDirection](reference/datagate-client/data-direction-enumeration.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
 
 Create a Parm object to represent an IBMi program parameter.
 
@@ -42,8 +42,8 @@ Parameter( String name, ASNA.DataGate.Common.FieldType type, ASNA.DataGate.Commo
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the parameter. 
-| [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html) | type | The FieldType of the parameter. 
-| [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | The DataDirection of the parameter. 
+| [FieldType](reference/datagate-client/field-type-class.html) | type | The FieldType of the parameter. 
+| [DataDirection](reference/datagate-client/data-direction-enumeration.html) | direction | The DataDirection of the parameter. 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The value of the parameter. 
 
 <br>
@@ -56,11 +56,11 @@ Parameter( String name, ASNA.DataGate.Common.FieldType type, ASNA.DataGate.Commo
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | Direction | Specifies if the parameter will be input, output, or update (both). | 
+| [DataDirection](reference/datagate-client/data-direction-enumeration.html) | Direction | Specifies if the parameter will be input, output, or update (both). | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | Name of the parameter. | 
-| [FieldType]($$TODO-ASNA.DataGate.Common.FieldType.html) | Type | Describes the type and size of the parameter. | 
+| [FieldType](reference/datagate-client/field-type-class.html) | Type | Describes the type and size of the parameter. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The value of the parameter. | 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueArray | The value of the parameter array. | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueArray | The value of the parameter array. | 
 
 <br>
 <br>
