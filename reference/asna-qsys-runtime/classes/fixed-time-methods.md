@@ -89,7 +89,7 @@ Contains extension methods for handling RPG operations for FixedTime values.
 Adds a duration span to a FixedTime value.
 
 ```cs
-AddDuration<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+AddDuration<T,U>(Runtime.FixedTime(<T>, <T>) time, Double duration, Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
@@ -109,7 +109,7 @@ AddDuration<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duration, ASN
 Adds a duration span to a FixedTime value.
 
 ```cs
-AddDurationToTime<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+AddDurationToTime<T,U>(Runtime.FixedTime(<T>, <T>) time, Double duration, Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
@@ -129,7 +129,7 @@ AddDurationToTime<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duratio
 RPG's MOVEL. Moves left a DateTime to decimal.
 
 ```cs
-MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveLeft<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -148,7 +148,7 @@ MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Runtime.F
 RPG's MOVEL. Moves left a DateTime to decimal.
 
 ```cs
-MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveLeft<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -168,7 +168,7 @@ MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Commo
 RPG's MOVEL. Moves left a DateTime to string.
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, String targetOperand);
 ```
 
 #### Parameters
@@ -187,7 +187,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOperand);
 RPG's MOVEL. Moves left a FixedTime into a int2 (short).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -206,7 +206,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOperand);
 RPG's MOVEL. Moves left a FixedTime into a int2 (short).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -226,7 +226,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.Da
 RPG's MOVEL. Moves left a FixedTime into a int4 (int).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -245,7 +245,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOperand);
 RPG's MOVEL. Moves left a FixedTime into a int4 (int).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -265,7 +265,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.Da
 RPG's MOVEL. Moves left a FixedTime into a int8 (long).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -284,7 +284,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOperand);
 RPG's MOVEL. Moves left a FixedTime into a int8 (long).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+MoveLeft<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -304,7 +304,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.Da
 RPG's MOVEL. Moves left a FixedTime in the given format to a char value.
 
 ```cs
-MoveLeftToChar<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time);
+MoveLeftToChar<T,U>(Runtime.FixedTime(<T>, <T>) time);
 ```
 
 #### Parameters
@@ -322,7 +322,7 @@ MoveLeftToChar<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time);
 RPG's MOVEL. Moves left a DateTime to decimal with pad.
 
 ```cs
-MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveLeftWithPad<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -341,7 +341,7 @@ MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Ru
 RPG's MOVEL. Moves left a DateTime to decimal with pad.
 
 ```cs
-MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveLeftWithPad<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -361,7 +361,7 @@ MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGat
 RPG's MOVEL. Moves left a DateTime to string with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, String targetOperand);
 ```
 
 #### Parameters
@@ -380,7 +380,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOpe
 RPG's MOVE. Moves right a FixedTime into a int2 (short) with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -399,7 +399,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOper
 RPG's MOVE. Moves right a FixedTime into a int2 (short) with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -419,7 +419,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Co
 RPG's MOVEL. Moves left a FixedTime into a int4 (int).
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -438,7 +438,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOper
 RPG's MOVEL. Moves left a FixedTime into a int4 (int).
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -458,7 +458,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Co
 RPG's MOVEL. Moves left a FixedTime into a int8 (long).
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -477,7 +477,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOper
 RPG's MOVEL. Moves left a FixedTime into a int8 (long).
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+MoveLeftWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -497,7 +497,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Co
 RPG's MOVE. Moves right s DateTime to decimal.
 
 ```cs
-MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveRight<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -516,7 +516,7 @@ MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Runtime.
 RPG's MOVE. Moves right s DateTime to decimal.
 
 ```cs
-MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveRight<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -536,7 +536,7 @@ MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Comm
 RPG's MOVE. Moves right a DateTime to string.
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, String targetOperand);
 ```
 
 #### Parameters
@@ -555,7 +555,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOperand);
 RPG's MOVE. Moves right a FixedTime into a int2 (short).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -574,7 +574,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOperand);
 RPG's MOVE. Moves right a FixedTime into a int2 (short).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -594,7 +594,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.D
 RPG's MOVE. Moves right a FixedTime into a int4 (int).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -613,7 +613,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOperand);
 RPG's MOVE. Moves right a FixedTime into a int4 (int).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -633,7 +633,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.D
 RPG's MOVE. Moves right a FixedTime into a int8 (long).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -652,7 +652,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOperand);
 RPG's MOVE. Moves right a FixedTime into a int8 (long).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+MoveRight<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -672,7 +672,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.D
 RPG's MOVE. Moves right a FixedTime in the given format to a char value.
 
 ```cs
-MoveRightToChar<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time);
+MoveRightToChar<T,U>(Runtime.FixedTime(<T>, <T>) time);
 ```
 
 #### Parameters
@@ -690,7 +690,7 @@ MoveRightToChar<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time);
 RPG's MOVE. Moves right a DateTime to decimal with pad.
 
 ```cs
-MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveRightWithPad<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -709,7 +709,7 @@ MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.QSys.R
 RPG's MOVE. Moves right a DateTime to decimal with pad.
 
 ```cs
-MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, ASNA.QSys.Runtime.FixedDecimal(``2,``3) targetOperand);
+MoveRightWithPad<T,U,V,S>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Runtime.FixedDecimal(<T,U>, <T,U,V>) targetOperand);
 ```
 
 #### Parameters
@@ -729,7 +729,7 @@ MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGa
 RPG's MOVE. Moves right a DateTime to string with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, String targetOperand);
 ```
 
 #### Parameters
@@ -748,7 +748,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, String targetOp
 RPG's MOVE. Moves right a FixedTime into a int2 (short) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -767,7 +767,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int16 targetOpe
 RPG's MOVE. Moves right a FixedTime into a int2 (short) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int16 targetOperand);
 ```
 
 #### Parameters
@@ -787,7 +787,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.C
 RPG's MOVE. Moves right a FixedTime into a int4 (int) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -806,7 +806,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 targetOpe
 RPG's MOVE. Moves right a FixedTime into a int4 (int) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int32 targetOperand);
 ```
 
 #### Parameters
@@ -826,7 +826,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.C
 RPG's MOVE. Moves right a FixedTime into a int8 (long) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -845,7 +845,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int64 targetOpe
 RPG's MOVE. Moves right a FixedTime into a int8 (long) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
+MoveRightWithPad<T,U>(Runtime.FixedTime(<T>, <T>) time, ASNA.DataGate.Common.DateTimeFormat dateTimeFormat, Int64 targetOperand);
 ```
 
 #### Parameters
@@ -865,7 +865,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, ASNA.DataGate.C
 Subtracts a duration span from a FixedTime or a timestamp value.
 
 ```cs
-SubtractDuration<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+SubtractDuration<T,U>(Runtime.FixedTime(<T>, <T>) time, Double duration, Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
@@ -885,7 +885,7 @@ SubtractDuration<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duration
 Subtracts a duration span from a FixedTime value.
 
 ```cs
-SubtractDurationFromTime<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double duration, ASNA.QSys.Runtime.DateTimeOps.DurationCode durationCode);
+SubtractDurationFromTime<T,U>(Runtime.FixedTime(<T>, <T>) time, Double duration, Runtime.DateTimeOps.DurationCode durationCode);
 ```
 
 #### Parameters
@@ -905,7 +905,7 @@ SubtractDurationFromTime<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Double 
 Converts a FixedTime value to double.
 
 ```cs
-ToDouble<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow);
+ToDouble<T,U>(Runtime.FixedTime(<T>, <T>) time, Boolean throwOnOverflow);
 ```
 
 #### Parameters
@@ -924,7 +924,7 @@ ToDouble<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow
 Converts a FixedTime value, converts it to a decimal.
 
 ```cs
-ToFixedDecimal<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 digits, Int32 decimals);
+ToFixedDecimal<T,U>(Runtime.FixedTime(<T>, <T>) time, Int32 digits, Int32 decimals);
 ```
 
 #### Parameters
@@ -944,7 +944,7 @@ ToFixedDecimal<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Int32 digits, Int
 Converts a FixedTime value to float.
 
 ```cs
-ToFloat<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow);
+ToFloat<T,U>(Runtime.FixedTime(<T>, <T>) time, Boolean throwOnOverflow);
 ```
 
 #### Parameters
@@ -963,7 +963,7 @@ ToFloat<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow)
 Converts a FixedTime value to int 16.
 
 ```cs
-ToInt16<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow);
+ToInt16<T,U>(Runtime.FixedTime(<T>, <T>) time, Boolean throwOnOverflow);
 ```
 
 #### Parameters
@@ -982,7 +982,7 @@ ToInt16<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow)
 Converts a FixedTime value to int 32.
 
 ```cs
-ToInt32<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow);
+ToInt32<T,U>(Runtime.FixedTime(<T>, <T>) time, Boolean throwOnOverflow);
 ```
 
 #### Parameters
@@ -1001,7 +1001,7 @@ ToInt32<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow)
 Converts a FixedTime value to int 64.
 
 ```cs
-ToInt64<T,U>(ASNA.QSys.Runtime.FixedTime(``0,``1) time, Boolean throwOnOverflow);
+ToInt64<T,U>(Runtime.FixedTime(<T>, <T>) time, Boolean throwOnOverflow);
 ```
 
 #### Parameters

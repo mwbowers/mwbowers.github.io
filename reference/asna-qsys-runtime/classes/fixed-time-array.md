@@ -33,7 +33,7 @@ Defines the functionality of a fixed-sized unidimensional array of FixedTime ele
 Initializes a FixedTimeArray out of an array of FixedTime elements.
 
 ```cs
-FixedTimeArray( ASNA.QSys.Runtime.FixedTime(`1,`2) array );
+FixedTimeArray( Runtime.FixedTime(<T>, <T,U>) array );
 ```
 
 #### Parameters
@@ -105,14 +105,14 @@ Clear();
 Copy elements of a FixedTime[] into this array, starting at the given position.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedTime(`1,`2) sourceArray, Int32 targetStartAt);
+CopyFrom(Runtime.FixedTime(<T>, <T,U>) sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedTime(\`1,\`2)](/reference/asna-qsys-runtime/fixed-time.html) | sourceArray | The array from where to copy. 
+| [FixedTime(&lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-time.html) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 

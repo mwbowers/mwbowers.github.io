@@ -33,7 +33,7 @@ Describes a fixed size array of FixedString contained in a DataStructure.
 Constructs a fixed size array of FixedString in a Data Structure.
 
 ```cs
-FixedStringArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 skipPositions );
+FixedStringArrayInDS( Runtime.DataStructure parent, Int32 startPos, Int32 skipPositions );
 ```
 
 #### Parameters
@@ -51,7 +51,7 @@ FixedStringArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, In
 Constructs a fixed size array of FixedString in a Multiple Occurrence Data Structure.
 
 ```cs
-FixedStringArrayInDS( ASNA.QSys.Runtime.MultiDataStructure parent, Int32 startPos, Int32 skipPositions );
+FixedStringArrayInDS( Runtime.MultiDataStructure parent, Int32 startPos, Int32 skipPositions );
 ```
 
 #### Parameters
@@ -86,12 +86,12 @@ FixedStringArrayInDS( ASNA.QSys.Runtime.MultiDataStructure parent, Int32 startPo
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Sets all array elements to blanks. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromfixedstring<`1>-int32)([FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a FixedString[] into this array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromfixedstring<t>-int32)([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a FixedString[] into this array. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromstring[]-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a string[] into this array. | 
 | [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [System#Collections#IEnumerable#GetEnumerator](#system#collections#ienumerable#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
+| [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 
 <br>
 <br>
@@ -108,19 +108,19 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copies elements from a FixedString[] into this array.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedString<`1> sourceArray, Int32 targetStartAt);
+CopyFrom(Runtime.FixedString<T> sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string<`1>.html) | sourceArray | The array to copy from. 
+| [FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string.html) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 
@@ -208,13 +208,19 @@ Sort(Boolean ascending, Int32 start, Int32 length);
 <br>
 <br>
 
-### System#Collections#IEnumerable#GetEnumerator()
+### GetEnumerator()
 
 Returns an enumerator that iterates through the array.
 
 ```cs
-System#Collections#IEnumerable#GetEnumerator();
+GetEnumerator();
 ```
+
+#### Returns
+
+[IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator)
+
+An enumerator that can be used to iterate through the array.
 
 
 <br>

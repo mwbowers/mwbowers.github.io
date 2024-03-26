@@ -33,7 +33,7 @@ Describes a fixed size array of FixedTime contained in a DataStructure.
 Constructs a fixed size array of FixedTime in a Data Structure.
 
 ```cs
-FixedTimeArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int32 skipPositions );
+FixedTimeArrayInDS( Runtime.DataStructure parent, Int32 startPos, Int32 skipPositions );
 ```
 
 #### Parameters
@@ -51,7 +51,7 @@ FixedTimeArrayInDS( ASNA.QSys.Runtime.DataStructure parent, Int32 startPos, Int3
 Constructs a fixed size array of FixedTime in a Multiple Occurrence Data Structure.
 
 ```cs
-FixedTimeArrayInDS( ASNA.QSys.Runtime.MultiDataStructure parent, Int32 startPos, Int32 skipPositions );
+FixedTimeArrayInDS( Runtime.MultiDataStructure parent, Int32 startPos, Int32 skipPositions );
 ```
 
 #### Parameters
@@ -91,7 +91,7 @@ FixedTimeArrayInDS( ASNA.QSys.Runtime.MultiDataStructure parent, Int32 startPos,
 | [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetStartingPosition](#getstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter. | The position in the buffer of the element at the given index.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [System#Collections#IEnumerable#GetEnumerator](#system#collections#ienumerable#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
+| [IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator) | [GetEnumerator](#getenumerator)() | Returns an enumerator that iterates through the array. | An enumerator that can be used to iterate through the array.
 
 <br>
 <br>
@@ -113,14 +113,14 @@ Clear();
 Copies elements from a FixedTime[] into this array.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedTime(`1,`2) sourceArray, Int32 targetStartAt);
+CopyFrom(Runtime.FixedTime(<T>, <T,U>) sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedTime(\`1,\`2)](/reference/asna-qsys-runtime/fixed-time.html) | sourceArray | The array to copy from. 
+| [FixedTime(&lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-time.html) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 
@@ -208,13 +208,19 @@ Sort(Boolean ascending, Int32 start, Int32 length);
 <br>
 <br>
 
-### System#Collections#IEnumerable#GetEnumerator()
+### GetEnumerator()
 
 Returns an enumerator that iterates through the array.
 
 ```cs
-System#Collections#IEnumerable#GetEnumerator();
+GetEnumerator();
 ```
+
+#### Returns
+
+[IEnumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerator)
+
+An enumerator that can be used to iterate through the array.
 
 
 <br>
