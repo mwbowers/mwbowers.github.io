@@ -33,7 +33,7 @@ Defines the functionality of a fixed-sized unidimensional array of FixedDecimal 
 Initializes a FixedDecimalArray out of an array of FixedDecimal elements.
 
 ```cs
-FixedDecimalArray( ASNA.QSys.Runtime.FixedDecimal(`1,`2) array );
+FixedDecimalArray( Runtime.FixedDecimal(<T>, <T,U>) array );
 ```
 
 #### Parameters
@@ -105,14 +105,14 @@ Clear();
 Copy elements of a FixedDecimal[] into this array, starting at the given position.
 
 ```cs
-CopyFrom(ASNA.QSys.Runtime.FixedDecimal(`1,`2) sourceArray, Int32 targetStartAt);
+CopyFrom(Runtime.FixedDecimal(<T>, <T,U>) sourceArray, Int32 targetStartAt);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal(\`1,\`2)](/reference/asna-qsys-runtime/fixed-decimal.html) | sourceArray | The array from where to copy. 
+| [FixedDecimal(&lt;T&gt;, &lt;T,U&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 

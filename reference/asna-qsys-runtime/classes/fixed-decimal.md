@@ -37,8 +37,8 @@ Holds a fixed-decimal value with the specified number of digits and decimal posi
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compare to object. | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-decimal, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html) | [Convert](#convertdecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Convert to IFixedSizeType. | The resulting IFixedSizeType.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsdecimal>)([Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type<-system-decimal>.html)) | Determines whether two IFixedSizeType objects have the same value. | True if the value of the value parameter is the same as this IFixedSizeType; otherwise, false.
+| [IFixedSizeType&lt;Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html) | [Convert](#convertdecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Convert to IFixedSizeType. | The resulting IFixedSizeType.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsdecimal>)([Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html)) | Determines whether two IFixedSizeType objects have the same value. | True if the value of the value parameter is the same as this IFixedSizeType; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether two FixedDecimals have the same value. | true if the value of the value parameter is the same as this string; otherwise, false.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](#gethashcode)() | Returns the hash code for this instance. | A hash code for the current FixedDecimal.
 | [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html) | [MergeLeft](#mergeleftstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Merge left. | The FixedDecimal result.
@@ -89,7 +89,7 @@ Convert(Decimal value);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-decimal, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html)
+[IFixedSizeType&lt;Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html)
 
 The resulting IFixedSizeType.
 
@@ -97,19 +97,19 @@ The resulting IFixedSizeType.
 <br>
 <br>
 
-### Equals([Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type<-system-decimal>.html))
+### Equals([Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html))
 
 Determines whether two IFixedSizeType objects have the same value.
 
 ```cs
-Equals(ASNA.QSys.Runtime.IFixedSizeType<System.Decimal> other);
+Equals(Runtime.IFixedSizeType<System.Decimal> other);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type<-system-decimal>.html) | other | The decimal to compare to. 
+| [Decimal&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html) | other | The decimal to compare to. 
 
 #### Returns
 

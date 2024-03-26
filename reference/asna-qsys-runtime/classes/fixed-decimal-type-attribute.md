@@ -34,7 +34,7 @@ A non-RPG class may stamp a decimal member with this attribute to be considered 
 Initializes a FixedDecimalTypeAttribute object. This attribute describes the implied fixed decimal size of a decimal value.
 
 ```cs
-FixedDecimalTypeAttribute( Byte prec, Byte scale, ASNA.QSys.Runtime.FixedDecimalTypeAttribute.DecimalKind kind );
+FixedDecimalTypeAttribute( Byte prec, Byte scale, Runtime.FixedDecimalTypeAttribute.DecimalKind kind );
 ```
 
 #### Parameters

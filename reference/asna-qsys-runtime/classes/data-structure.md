@@ -69,7 +69,7 @@ DataStructure( Int32 size, ValueTuple(ASNA.QSys.Runtime.ILayout,System.Int32) fi
 Constructs a Data Structure object given an array of layout-described fields. The Data Structure size is computed out of the sizes of the individual fields.
 
 ```cs
-DataStructure( ASNA.QSys.Runtime.ILayout[] layouts );
+DataStructure( Runtime.ILayout[] layouts );
 ```
 
 #### Parameters
@@ -114,19 +114,19 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] layouts );
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | [GetIndicator](#getindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwise.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetInteger](#getintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an integer (Int32) value starting at the specified position in the Data Structure buffer. | The integer number starting at the given position in the buffer.
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | [GetLong](#getlongint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an long (Int64) value starting at the specified position in the Data Structure buffer. | The long number starting at the given position in the buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableBinary](#getnullablebinaryint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Binary decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Binary decimal number.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableByte](#getnullablebyteint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte value from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableChar](#getnullablecharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableDate](#getnullabledateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableIndicator](#getnullableindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwise.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableInteger](#getnullableintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an integer (Int32) value starting at the specified position in the Data Structure buffer. | The integer number starting at the given position in the buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableLong](#getnullablelongint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an long (Int64) value starting at the specified position in the Data Structure buffer. | The long number starting at the given position in the buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullablePacked](#getnullablepackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableShort](#getnullableshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
+| [System.Decimal?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableBinary](#getnullablebinaryint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Binary decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Binary decimal number.
+| [System.Byte?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableByte](#getnullablebyteint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a byte value from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
+| [System.Char?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableChar](#getnullablecharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer. | The character at the given position in the buffer.
+| [System.DateTime?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableDate](#getnullabledateint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
+| [System.Char?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableIndicator](#getnullableindicatorint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1' if the character is anything else. | '0' if the character at the given position in the buffer is '0', or '1' otherwise.
+| [System.Int32?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableInteger](#getnullableintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an integer (Int32) value starting at the specified position in the Data Structure buffer. | The integer number starting at the given position in the buffer.
+| [System.Int64?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableLong](#getnullablelongint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets an long (Int64) value starting at the specified position in the Data Structure buffer. | The long number starting at the given position in the buffer.
+| [System.Decimal?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullablePacked](#getnullablepackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
+| [System.Int16?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableShort](#getnullableshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetNullableString](#getnullablestringint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a segment of the Data Structure buffer as a string. | The string of the given length that starts at the given position.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableTime](#getnullabletimeint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableTimestamp](#getnullabletimestampint32-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer. | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
-| [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableZoned](#getnullablezonedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Zoned decimal number.
+| [System.DateTime?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableTime](#getnullabletimeint32-datetimeformat-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer. | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
+| [System.DateTime?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableTimestamp](#getnullabletimestampint32-datetimeseparator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer. | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
+| [System.Decimal?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | [GetNullableZoned](#getnullablezonedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Zoned decimal number.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [GetPacked](#getpackedint32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer. | The decimal number value of the Packed decimal number.
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | [GetShort](#getshortint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a short (Int16) value starting at the specified position in the Data Structure buffer. | The short number starting at the given position in the buffer.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetString](#getstringint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a segment of the Data Structure buffer as a string. | The string of the given length that starts at the given position.
@@ -286,7 +286,7 @@ The character at the given position in the buffer.
 Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer.
 
 ```cs
-GetDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+GetDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -422,7 +422,7 @@ GetNullableBinary(Int32 start, Int32 digits, Int32 decimals);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Decimal?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The decimal number value of the Binary decimal number.
 
@@ -446,7 +446,7 @@ GetNullableByte(Int32 position);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Byte?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The character at the given position in the buffer.
 
@@ -470,7 +470,7 @@ GetNullableChar(Int32 position);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Char?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The character at the given position in the buffer.
 
@@ -483,7 +483,7 @@ The character at the given position in the buffer.
 Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer.
 
 ```cs
-GetNullableDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+GetNullableDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -496,7 +496,7 @@ GetNullableDate(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QS
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.DateTime?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
 
@@ -520,7 +520,7 @@ GetNullableIndicator(Int32 position);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Char?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 '0' if the character at the given position in the buffer is '0', or '1' otherwise.
 
@@ -544,7 +544,7 @@ GetNullableInteger(Int32 start);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Int32?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The integer number starting at the given position in the buffer.
 
@@ -568,7 +568,7 @@ GetNullableLong(Int32 start);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Int64?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The long number starting at the given position in the buffer.
 
@@ -594,7 +594,7 @@ GetNullablePacked(Int32 start, Int32 digits, Int32 decimals);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Decimal?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The decimal number value of the Packed decimal number.
 
@@ -618,7 +618,7 @@ GetNullableShort(Int32 start);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Int16?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The short number starting at the given position in the buffer.
 
@@ -656,7 +656,7 @@ The string of the given length that starts at the given position.
 Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer.
 
 ```cs
-GetNullableTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+GetNullableTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -669,7 +669,7 @@ GetNullableTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QS
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.DateTime?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
 
@@ -682,7 +682,7 @@ A DateTime value where the Time part is the value retrieved from the Data Struct
 Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer.
 
 ```cs
-GetNullableTimestamp(Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator);
+GetNullableTimestamp(Int32 start, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -694,7 +694,7 @@ GetNullableTimestamp(Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator)
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.DateTime?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
 
@@ -720,7 +720,7 @@ GetNullableZoned(Int32 start, Int32 digits, Int32 decimals);
 
 #### Returns
 
-[Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
+[System.Decimal?](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
 The decimal number value of the Zoned decimal number.
 
@@ -808,7 +808,7 @@ The string of the given length that starts at the given position.
 Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer.
 
 ```cs
-GetTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+GetTime(Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -834,7 +834,7 @@ A DateTime value where the Time part is the value retrieved from the Data Struct
 Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer.
 
 ```cs
-GetTimestamp(Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator);
+GetTimestamp(Int32 start, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -1020,7 +1020,7 @@ SetChar(Char val, Int32 position);
 Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer.
 
 ```cs
-SetDate(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+SetDate(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -1177,7 +1177,7 @@ SetNullableChar(Nullable<System.Char> val, Int32 position);
 Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer.
 
 ```cs
-SetNullableDate(Nullable<System.DateTime> value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+SetNullableDate(Nullable<System.DateTime> value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -1339,7 +1339,7 @@ SetNullableStringR(String val, Int32 start, Int32 len, Char padChar, Boolean pad
 Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer.
 
 ```cs
-SetNullableTime(Nullable<System.DateTime> value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+SetNullableTime(Nullable<System.DateTime> value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -1360,7 +1360,7 @@ SetNullableTime(Nullable<System.DateTime> value, Int32 start, ASNA.DataGate.Comm
 Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer.
 
 ```cs
-SetNullableTimestamp(Nullable<System.DateTime> value, Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator);
+SetNullableTimestamp(Nullable<System.DateTime> value, Int32 start, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -1529,7 +1529,7 @@ SetStringR(ReadOnlySpan<System.Char> val, Int32 start, Int32 len, Char padChar, 
 Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer.
 
 ```cs
-SetTime(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+SetTime(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -1550,7 +1550,7 @@ SetTime(DateTime value, Int32 start, ASNA.DataGate.Common.DateTimeFormat format,
 Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer.
 
 ```cs
-SetTimestamp(DateTime value, Int32 start, ASNA.QSys.Runtime.DateTimeSeparator separator);
+SetTimestamp(DateTime value, Int32 start, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters

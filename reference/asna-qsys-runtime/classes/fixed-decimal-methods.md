@@ -85,7 +85,7 @@ Contains extension methods for handling RPG operations for FixedDecimal values.
 Applies an edit word to a FixedDecimal number.
 
 ```cs
-ApplyEditWord<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, String editwordString);
+ApplyEditWord<T,U>(Runtime.FixedDecimal(<T>, <T>) num, String editwordString);
 ```
 
 #### Parameters
@@ -104,7 +104,7 @@ ApplyEditWord<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, String editwordS
 Extracts digits from a decimal number.
 
 ```cs
-GetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 start);
+GetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 start);
 ```
 
 #### Parameters
@@ -123,7 +123,7 @@ GetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 start);
 Extracts digits from a decimal number.
 
 ```cs
-GetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 start, Int32 length);
+GetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 start, Int32 length);
 ```
 
 #### Parameters
@@ -143,7 +143,7 @@ GetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 start, Int3
 Extracts digits from a decimal number.
 
 ```cs
-GetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 start, Int32 length, Int32 resDecimals);
+GetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 start, Int32 length, Int32 resDecimals);
 ```
 
 #### Parameters
@@ -164,7 +164,7 @@ GetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 start, Int3
 RPG's MOVEL. Moves left a decimal to a decimal.
 
 ```cs
-MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.FixedDecimal(``2,``3) target);
+MoveLeft<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
@@ -183,7 +183,7 @@ MoveLeft<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runt
 RPG's MOVEL. Moves left decimal to a string.
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
@@ -202,7 +202,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String target);
 RPG's MOVEL. Moves left a decimal into a DateTime.
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
@@ -221,7 +221,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.
 RPG's MOVEL. Moves left a decimal to an int2 (short).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
@@ -240,7 +240,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 target);
 RPG's MOVEL. Moves left a decimal to an int4 (int).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
@@ -259,7 +259,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 target);
 RPG's MOVEL. Moves left a decimal to an int8 (long).
 
 ```cs
-MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
@@ -278,7 +278,7 @@ MoveLeft<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 target);
 RPG's MOVEL. Moves left a decimal to a char.
 
 ```cs
-MoveLeftToChar<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
+MoveLeftToChar<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
@@ -296,7 +296,7 @@ MoveLeftToChar<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
 RPG's MOVEL. Moves left a decimal to a decimal with pad.
 
 ```cs
-MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.FixedDecimal(``2,``3) target);
+MoveLeftWithPad<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
@@ -315,7 +315,7 @@ MoveLeftWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QS
 RPG's MOVEL. Moves left decimal to a string, with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
@@ -334,7 +334,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String targ
 RPG's MOVEL. Moves left a decimal into a DateTime with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
@@ -353,7 +353,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.R
 RPG's MOVEL. Moves left a decimal to an int2 (short) with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
@@ -372,7 +372,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 targe
 RPG's MOVEL. Moves left a decimal to an int4 (int) with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
@@ -391,7 +391,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 targe
 RPG's MOVEL. Moves left a decimal to an int8 (long) with pad.
 
 ```cs
-MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
@@ -410,7 +410,7 @@ MoveLeftWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 targe
 RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal.
 
 ```cs
-MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.FixedDecimal(``2,``3) target);
+MoveRight<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
@@ -429,7 +429,7 @@ MoveRight<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Run
 RPG's MOVE. Moves right decimal to a string.
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
@@ -448,7 +448,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String target);
 RPG's MOVE. Moves right a decimal into a DateTime.
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
@@ -467,7 +467,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime
 RPG's MOVE. Moves right a decimal to an int2 (short).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
@@ -486,7 +486,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 target);
 RPG's MOVE. Moves right a decimal to an int4 (int).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
@@ -505,7 +505,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 target);
 RPG's MOVE. Moves right a decimal to an int8 (long).
 
 ```cs
-MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
@@ -524,7 +524,7 @@ MoveRight<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 target);
 RPG's MOVE. Moves right a decimal to a char.
 
 ```cs
-MoveRightToChar<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
+MoveRightToChar<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
@@ -542,7 +542,7 @@ MoveRightToChar<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
 RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal with pad.
 
 ```cs
-MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.FixedDecimal(``2,``3) target);
+MoveRightWithPad<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
@@ -561,7 +561,7 @@ MoveRightWithPad<T,U,V,S>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.Q
 RPG's MOVE. Moves right decimal to a string, with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String target);
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
@@ -580,7 +580,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, String tar
 RPG's MOVE. Moves right a decimal into a DateTime with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
@@ -599,7 +599,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.
 RPG's MOVE. Moves right a decimal to an int2 (short) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 target);
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
@@ -618,7 +618,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int16 targ
 RPG's MOVE. Moves right a decimal to an int4 (int) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 target);
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
@@ -637,7 +637,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int32 targ
 RPG's MOVE. Moves right a decimal to an int8 (long) with pad.
 
 ```cs
-MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 target);
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
@@ -656,7 +656,7 @@ MoveRightWithPad<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Int64 targ
 Rounds up a decimal number to the desired decimal positions.
 
 ```cs
-RoundUp<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Int32 decimalCount);
+RoundUp<T,U>(Runtime.FixedDecimal(<T>, <T>) num, Int32 decimalCount);
 ```
 
 #### Parameters
@@ -675,7 +675,7 @@ RoundUp<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Int32 decimalCount);
 Replaces contiguous digits in a decimal number.
 
 ```cs
-SetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Decimal replace, Int32 start);
+SetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Decimal replace, Int32 start);
 ```
 
 #### Parameters
@@ -695,7 +695,7 @@ SetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Decimal replace, 
 Replaces contiguous digits in a decimal number.
 
 ```cs
-SetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Decimal replace, Int32 start, Int32 length);
+SetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Decimal replace, Int32 start, Int32 length);
 ```
 
 #### Parameters
@@ -716,7 +716,7 @@ SetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Decimal replace, 
 Replaces contiguous digits in a decimal number.
 
 ```cs
-SetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Decimal replace, Int32 start, Int32 repDigits, Int32 repDecimals);
+SetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Decimal replace, Int32 start, Int32 repDigits, Int32 repDecimals);
 ```
 
 #### Parameters
@@ -738,7 +738,7 @@ SetDigits<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, Decimal replace, 
 Sets the HI, LO, and EQ flags passed in, based on the value of source.
 
 ```cs
-SetHiLoEq<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
+SetHiLoEq<T,U>(Runtime.FixedDecimal(<T>, <T>) source, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
@@ -759,7 +759,7 @@ SetHiLoEq<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, out ASNA.QSys.Run
 Tests whether a decimal number contains a valid date/time/timestamp value.
 
 ```cs
-TestTime<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Common.DateTimeFormat format);
+TestTime<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.DateTimeDataKind kind, ASNA.DataGate.Common.DateTimeFormat format);
 ```
 
 #### Parameters
@@ -779,7 +779,7 @@ TestTime<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.QSys.Runtime.
 Converts a fixed decimal number to a date in the specified format.
 
 ```cs
-ToDate<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.DataGate.Common.DateTimeFormat format);
+ToDate<T,U>(Runtime.FixedDecimal(<T>, <T>) source, ASNA.DataGate.Common.DateTimeFormat format);
 ```
 
 #### Parameters
@@ -798,7 +798,7 @@ ToDate<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.DataGate.Common
 Adjusts the digits and decimal positions of a fixed decimal number using Away From Zero rounding.
 
 ```cs
-ToFixedDecimalRounded<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Int32 digits, Int32 decimals);
+ToFixedDecimalRounded<T,U>(Runtime.FixedDecimal(<T>, <T>) num, Int32 digits, Int32 decimals);
 ```
 
 #### Parameters
@@ -818,7 +818,7 @@ ToFixedDecimalRounded<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Int32 di
 Rounds a fixed decimal to the specified number of decimal positions using Away From Zero rounding.
 
 ```cs
-ToFixedDecimalRounded<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Int32 decimals);
+ToFixedDecimalRounded<T,U>(Runtime.FixedDecimal(<T>, <T>) num, Int32 decimals);
 ```
 
 #### Parameters
@@ -837,7 +837,7 @@ ToFixedDecimalRounded<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Int32 de
 Returns as a string the 'memory' representation of a binary decimal number.
 
 ```cs
-ToStringBinary<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
+ToStringBinary<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
@@ -855,7 +855,7 @@ ToStringBinary<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
 Returns as a string the 'memory' representation of a packed decimal number.
 
 ```cs
-ToStringPacked<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
+ToStringPacked<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
@@ -873,7 +873,7 @@ ToStringPacked<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
 Returns as a string the 'memory' representation of a zoned decimal number.
 
 ```cs
-ToStringZoned<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
+ToStringZoned<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
@@ -891,7 +891,7 @@ ToStringZoned<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
 Converts a fixed decimal number to a time in the specified format.
 
 ```cs
-ToTime<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.DataGate.Common.DateTimeFormat format);
+ToTime<T,U>(Runtime.FixedDecimal(<T>, <T>) source, ASNA.DataGate.Common.DateTimeFormat format);
 ```
 
 #### Parameters
@@ -910,7 +910,7 @@ ToTime<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source, ASNA.DataGate.Common
 Converts a fixed decimal number to a timestamp.
 
 ```cs
-ToTimestamp<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) source);
+ToTimestamp<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
