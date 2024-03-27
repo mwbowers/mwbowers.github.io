@@ -26,11 +26,11 @@ Multiple occurrence data structures encapsulate a collection of data structure o
 | Name |  Description 
 | --- | --- 
 | [MultiDataStructure](#multidatastructureint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a unidimensional MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32-int32-int32))([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a unidimensional MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-ilayout[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a MultiDataStructure object. 
-| [MultiDataStructure](#multidatastructureint32[]-int32-int32))([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-int32-valuetuple-ilayout-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/system.valuetuple?view=net-8.0)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-ilayout-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a unidimensional MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-ilayout-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)) | Constructs a MultiDataStructure object. 
+| [MultiDataStructure](#multidatastructureint32-int32-valuetuple-ilayout-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/system.valuetuple?view=net-8.0)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))) | Constructs a MultiDataStructure object. 
 
 <br>
 
@@ -51,7 +51,7 @@ MultiDataStructure( Int32 arrayLength, Int32 size );
 
 <br>
 
-### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/system.valuetuple?view=net-8.0)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) )
 
 Constructs a MultiDataStructure object.
 
@@ -120,7 +120,7 @@ MultiDataStructure( Int32[] arrayLength, Runtime.ILayout[] fields );
 
 <br>
 
-### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple]($$TODO-ValueTuple.html)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) )
+### MultiDataStructure( [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ValueTuple](https://learn.microsoft.com/en-us/dotnet/api/system.valuetuple?view=net-8.0)([ILayout](/reference/asna-qsys-runtime/classes/i-layout.html),[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) )
 
 Constructs a MultiDataStructure object.
 
@@ -150,7 +150,7 @@ MultiDataStructure( Int32[] arrayLength, Int32 size, ValueTuple(ASNA.QSys.Runtim
 | [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Current | Gets the current occurrence of this multiple occurrence data structure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of this multi data structure. | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Fields | Layout of the individual data structures, if it exists. | 
-| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataStructure object at the given index. | i /* Desired index. */
+| [DataStructure](/reference/asna-qsys-runtime/classes/data-structure.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataStructure object at the given index. | Desired index.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | Gets the length of the individual data structures in this MODS. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the multi occurrence data structure. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 

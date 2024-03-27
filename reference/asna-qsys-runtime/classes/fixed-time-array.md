@@ -23,8 +23,8 @@ Defines the functionality of a fixed-sized unidimensional array of FixedTime ele
 
 | Name |  Description 
 | --- | --- 
-| [FixedTimeArray](#fixedtimearrayfixedtime(<t>-<t-u>))([FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Initializes a FixedTimeArray out of an array of FixedTime elements. 
-| [FixedTimeArray](#fixedtimearraydatetime[])([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedTimeArray out of an array of System.DateTime elements. 
+| [FixedTimeArray](#fixedtimearrayfixedtime-t-t-u-)([FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Initializes a FixedTimeArray out of an array of FixedTime elements. 
+| [FixedTimeArray](#fixedtimearraydatetime-)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedTimeArray out of an array of System.DateTime elements. 
 
 <br>
 
@@ -69,7 +69,7 @@ FixedTimeArray( DateTime[] array );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html) | Array | Gets the array that holds the values of the FixedTimeArray. | 
-| [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
+| [FixedTime](/reference/asna-qsys-runtime/classes/fixed-time.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | Index of the desired element.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the FixedTimeArray. | 
 
 <br>

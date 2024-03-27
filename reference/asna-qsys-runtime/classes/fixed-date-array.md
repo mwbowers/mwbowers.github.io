@@ -23,8 +23,8 @@ Defines the functionality of a fixed-sized unidimensional array of FixedDate ele
 
 | Name |  Description 
 | --- | --- 
-| [FixedDateArray](#fixeddatearrayfixeddate(<t>-<t-u>))([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Initializes a FixedDateArray out of an array of FixedDate elements. 
-| [FixedDateArray](#fixeddatearraydatetime[])([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedDateArray out of an array of System.DateTime elements. 
+| [FixedDateArray](#fixeddatearrayfixeddate-t-t-u-)([FixedDate](/reference/asna-qsys-runtime/classes/fixed-date.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Initializes a FixedDateArray out of an array of FixedDate elements. 
+| [FixedDateArray](#fixeddatearraydatetime-)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedDateArray out of an array of System.DateTime elements. 
 
 <br>
 

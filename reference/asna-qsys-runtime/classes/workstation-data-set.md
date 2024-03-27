@@ -100,10 +100,8 @@ GetObjectData(Runtime.Serialization.SerializationInfo info, Runtime.Serializatio
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo) | info | A System.Runtime.Serialization.SerializationInfo that holds the serialized data
-            associated with the System.Data.DataSet. 
-| [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext) | context | A System.Runtime.Serialization.StreamingContext that contains the source and
-            destination of the serialized stream associated with the System.Data.DataSet. 
+| [SerializationInfo](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo) | info | A System.Runtime.Serialization.SerializationInfo that holds the serialized data associated with the System.Data.DataSet. 
+| [StreamingContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext) | context | A System.Runtime.Serialization.StreamingContext that contains the source and destination of the serialized stream associated with the System.Data.DataSet. 
 
 
 <br>

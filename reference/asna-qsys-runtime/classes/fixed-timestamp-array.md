@@ -23,8 +23,8 @@ Defines the functionality of a fixed-sized unidimensional array of FixedTimestam
 
 | Name |  Description 
 | --- | --- 
-| [FixedTimestampArray](#fixedtimestamparrayfixedtimestamp<t>)([FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html)) | Initializes a FixedTimestampArray out of an array of FixedTimestamp elements. 
-| [FixedTimestampArray](#fixedtimestamparraydatetime[])([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedTimestampArray out of an array of System.DateTime elements. 
+| [FixedTimestampArray](#fixedtimestamparrayfixedtimestamp-t-)([FixedTimestamp&lt;T&gt;](/reference/asna-qsys-runtime/fixed-timestamp.html)) | Initializes a FixedTimestampArray out of an array of FixedTimestamp elements. 
+| [FixedTimestampArray](#fixedtimestamparraydatetime-)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedTimestampArray out of an array of System.DateTime elements. 
 
 <br>
 
@@ -69,7 +69,7 @@ FixedTimestampArray( DateTime[] array );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [FixedTimestamp](/reference/asna-qsys-runtime/classes/fixed-timestamp.html) | Array | Gets the array that holds the values of the FixedTimestampArray. | 
-| [FixedTimestamp](/reference/asna-qsys-runtime/classes/fixed-timestamp.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
+| [FixedTimestamp](/reference/asna-qsys-runtime/classes/fixed-timestamp.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | Index of the desired element.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the FixedTimestampArray. | 
 
 <br>

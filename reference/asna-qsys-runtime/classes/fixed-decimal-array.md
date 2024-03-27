@@ -23,8 +23,8 @@ Defines the functionality of a fixed-sized unidimensional array of FixedDecimal 
 
 | Name |  Description 
 | --- | --- 
-| [FixedDecimalArray](#fixeddecimalarrayfixeddecimal(<t>-<t-u>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Initializes a FixedDecimalArray out of an array of FixedDecimal elements. 
-| [FixedDecimalArray](#fixeddecimalarraydecimal[])([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Initializes a FixedDecimalArray out of an array of decimal elements. 
+| [FixedDecimalArray](#fixeddecimalarrayfixeddecimal-t-t-u-)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Initializes a FixedDecimalArray out of an array of FixedDecimal elements. 
+| [FixedDecimalArray](#fixeddecimalarraydecimal-)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Initializes a FixedDecimalArray out of an array of decimal elements. 
 
 <br>
 

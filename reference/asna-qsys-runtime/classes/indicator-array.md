@@ -23,8 +23,8 @@ Defines the functionality of a fixed-sized unidimensional array of Indicator ele
 
 | Name |  Description 
 | --- | --- 
-| [IndicatorArray](#indicatorarrayindicator[])([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Initializes an IndicatorArray using a .Net array of Indicator elements. 
-| [IndicatorArray](#indicatorarraychar[])([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initializes an IndicatorArray using a .Net array of char elements. 
+| [IndicatorArray](#indicatorarrayindicator-)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Initializes an IndicatorArray using a .Net array of Indicator elements. 
+| [IndicatorArray](#indicatorarraychar-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Initializes an IndicatorArray using a .Net array of char elements. 
 
 <br>
 

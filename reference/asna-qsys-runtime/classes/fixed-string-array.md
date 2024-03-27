@@ -23,8 +23,8 @@ Defines the functionality of a fixed-sized unidimensional array of FixedString e
 
 | Name |  Description 
 | --- | --- 
-| [FixedStringArray](#fixedstringarrayfixedstring<t>)([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string.html)) | Initializes a FixedStringArray out of an array of FixedString elements. 
-| [FixedStringArray](#fixedstringarraystring[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a FixedStringArray out of an array of string elements. 
+| [FixedStringArray](#fixedstringarrayfixedstring-t-)([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string.html)) | Initializes a FixedStringArray out of an array of FixedString elements. 
+| [FixedStringArray](#fixedstringarraystring-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a FixedStringArray out of an array of string elements. 
 
 <br>
 
@@ -69,7 +69,7 @@ FixedStringArray( String[] array );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [FixedString](/reference/asna-qsys-runtime/classes/fixed-string.html) | Array | Gets the array that holds the values of the FixedStringArray. | 
-| [FixedString](/reference/asna-qsys-runtime/classes/fixed-string.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
+| [FixedString](/reference/asna-qsys-runtime/classes/fixed-string.html) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | Index of the desired element.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the FixedStringArray. | 
 
 <br>
@@ -112,7 +112,7 @@ CopyFrom(Runtime.FixedString<T> sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString&lt;\`1&gt;](/reference/asna-qsys-runtime/fixed-string.html) | sourceArray | The array from where to copy. 
+| [FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string.html) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
