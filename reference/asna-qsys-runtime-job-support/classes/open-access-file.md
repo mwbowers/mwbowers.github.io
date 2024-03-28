@@ -73,7 +73,7 @@ OpenAccessFile( String displayFilePath );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Closes the display file disposing of its resources. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Closes the file and releases the resources used by the current instance of the OpenAccessFile class. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Extend](#extendstring-char[]-action{system.string-system.data.datarow-system.object}-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Extend](#extendstring-char[]-action(string-datarow-object)-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string),[DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0),[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
@@ -83,7 +83,7 @@ OpenAccessFile( String displayFilePath );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#read)() | Presents the current data on the device and waits for the user to enter new data. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-action{system.string-system.data.datarow-system.object}-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-action(string-datarow-object)-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string),[DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0),[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer. | 
 
 <br>
 <br>
@@ -136,12 +136,12 @@ Dispose(Boolean disposing);
 <br>
 <br>
 
-### Extend([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Extend([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string),[DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0),[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Adds a record to the record format's buffer.
 
 ```cs
-Extend(String formatName, Char[] optionIndicators, Action{System.String,System.Data.DataRow,System.Object} populateBuffer, Object popCookie);
+Extend(String formatName, Char[] optionIndicators, Action(System.String,System.Data.DataRow,System.Object) populateBuffer, Object popCookie);
 ```
 
 #### Parameters
@@ -149,8 +149,8 @@ Extend(String formatName, Char[] optionIndicators, Action{System.String,System.D
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | The name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | An array with the values of the indicators to associate with this record. 
-| [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html) | populateBuffer | The action that will populate individual fields of the new record. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | An array with the values of the indicators to associate with this record. 
+| [Object)](https://learn.microsoft.com/en-us/dotnet/api/system.action-1?view=net-8.0) | populateBuffer | The action that will populate individual fields of the new record. 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | popCookie | A user defined object passed thru to the action. 
 
 
@@ -199,12 +199,12 @@ Read();
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string),[DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0),[Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Adds a record to the record format's buffer.
 
 ```cs
-Write(String formatName, Char[] optionIndicators, Action{System.String,System.Data.DataRow,System.Object} populateBuffer, Object popCookie);
+Write(String formatName, Char[] optionIndicators, Action(System.String,System.Data.DataRow,System.Object) populateBuffer, Object popCookie);
 ```
 
 #### Parameters
@@ -212,8 +212,8 @@ Write(String formatName, Char[] optionIndicators, Action{System.String,System.Da
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | The name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | An array with the values of the indicators to associate with this record. 
-| [Action{System.String,System.Data.DataRow,System.Object}]($$TODO-Action{System.String,System.Data.DataRow,System.Object}.html) | populateBuffer | The action that will populate individual fields of the new record. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | An array with the values of the indicators to associate with this record. 
+| [Object)](https://learn.microsoft.com/en-us/dotnet/api/system.action-1?view=net-8.0) | populateBuffer | The action that will populate individual fields of the new record. 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | popCookie | A user defined object passed thru to the action. 
 
 

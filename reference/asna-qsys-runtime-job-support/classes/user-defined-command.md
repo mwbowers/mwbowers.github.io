@@ -34,7 +34,7 @@ Defines the core behavior of user defined commands and provide a base for derive
 Called from constructors in derived classes to initialize the command class.
 
 ```cs
-UserDefinedCommand( ASNA.QSys.Runtime.ICaller caller );
+UserDefinedCommand( Runtime.ICaller caller );
 ```
 
 #### Parameters

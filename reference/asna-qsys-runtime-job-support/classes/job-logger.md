@@ -79,7 +79,7 @@ JobLogger(  );
 Adds a message to the log.
 
 ```cs
-Add(ASNA.QSys.Runtime.JobSupport.MessageBase entry);
+Add(Runtime.JobSupport.MessageBase entry);
 ```
 
 #### Parameters
@@ -139,7 +139,7 @@ The logger.
 Determines if a message should be added to the log.
 
 ```cs
-ShouldLog(ASNA.QSys.Runtime.JobSupport.MessageBase msg);
+ShouldLog(Runtime.JobSupport.MessageBase msg);
 ```
 
 #### Parameters

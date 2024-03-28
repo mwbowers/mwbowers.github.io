@@ -21,11 +21,23 @@ Defines the core behavior of a Job that provides an environment to submit, contr
 <br>
 <br>
 
-## Constructor
+## Constructors
 
 | Name |  Description 
 | --- | --- 
-| **Job**( [JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html) ) | Called from constructors in derived classes to initializes the Job class with a Job Configuration.
+| [Job](#job)() | Called from constructors in derived classes to initializes the Job class with a configuration from appsettings. 
+| [Job](#jobjobconfig)([JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html)) | Called from constructors in derived classes to initializes the Job class with a Job Configuration. 
+
+<br>
+
+### Job(  )
+
+Called from constructors in derived classes to initializes the Job class with a configuration from appsettings.
+
+```cs
+Job(  );
+```
+
 
 <br>
 
@@ -34,7 +46,7 @@ Defines the core behavior of a Job that provides an environment to submit, contr
 Called from constructors in derived classes to initializes the Job class with a Job Configuration.
 
 ```cs
-Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
+Job( Runtime.JobSupport.JobConfig jobConfig );
 ```
 
 #### Parameters
@@ -105,7 +117,6 @@ Job( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveSystemValue](#retrievesystemvaluestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of an attribute of the current environment. | The value of the attribute requested.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveUserProfile](#retrieveuserprofilestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the name of a user. | The userProfileName value or the name of the current user.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SerializeLdaToBase64String](#serializeldatobase64string)() | Converts the value of the LDA to a string representation that is encoded with base-64 digits. | The string representation, in base 64, of the contents of the LDA.
-| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](#setenvironmentfromjobqueueentry)() | This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon. | Returns an empty dictionary.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](#setldafieldint32-int32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSwitch](#setswitchint32-char)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the value of one of the 8 job switches to '0' or '1'. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSwitches](#setswitchesstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the first n job switches to the values of the characters passed in a string. | 
@@ -375,24 +386,6 @@ The string representation, in base 64, of the contents of the LDA.
 <br>
 <br>
 
-### SetEnvironmentFromJobQueueEntry()
-
-This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon.
-
-```cs
-SetEnvironmentFromJobQueueEntry();
-```
-
-#### Returns
-
-[NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection)
-
-Returns an empty dictionary.
-
-
-<br>
-<br>
-
 ### SetLdaField([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Stores a value in the LDA.
@@ -444,7 +437,7 @@ SetSwitches(String switchesStr);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | switchesStr | A string of up to 8 '1' or '0' values. Switches are assigned left to right to switches 1 up to 8. Switches with un-passed values are not modified.  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | switchesStr | A string of up to 8 '1' or '0' values. Switches are assigned left to right to switches 1 up to 8. Switches with unpassed values are not modified.  
 
 
 <br>

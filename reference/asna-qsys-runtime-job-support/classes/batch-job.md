@@ -21,11 +21,23 @@ Defines the core behavior of a batch job.
 <br>
 <br>
 
-## Constructor
+## Constructors
 
 | Name |  Description 
 | --- | --- 
-| **BatchJob**( [JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html) ) | Called from constructors in derived classes to initializes the Job class with a Job Configuration.
+| [BatchJob](#batchjob)() | Called from constructors in derived classes to initializes the Job class with a configuration from appsettings. 
+| [BatchJob](#batchjobjobconfig)([JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html)) | Called from constructors in derived classes to initializes the Job class with a Job Configuration. 
+
+<br>
+
+### BatchJob(  )
+
+Called from constructors in derived classes to initializes the Job class with a configuration from appsettings.
+
+```cs
+BatchJob(  );
+```
+
 
 <br>
 
@@ -34,7 +46,7 @@ Defines the core behavior of a batch job.
 Called from constructors in derived classes to initializes the Job class with a Job Configuration.
 
 ```cs
-BatchJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
+BatchJob( Runtime.JobSupport.JobConfig jobConfig );
 ```
 
 #### Parameters
@@ -89,7 +101,7 @@ BatchJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Job class. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndPrograms](/reference/asna-qsys-runtime-job-support/classes/job.html#endprograms)() | Deactivates all programs in the job and calls Dispose().<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Execute](#executetype-list{system.string})([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [List{System.String}]($$TODO-Collections.Generic.List{System.String}.html)) | Execute a program with a parameter list. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Execute](#executemethodinfo-list<system.string>)([MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0), [List&lt;System.String&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0)) | Execute a program with a parameter list. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | [getADO_Connection](#getado_connection)() | Gets the ADO connection used for 'embedded SQL' | The ADO connection.
 | [Database](/reference/asna-qsys-runtime/classes/database.html) | [getDatabase](#getdatabase)() | Gets the main DataGate Database associated with the Job. | Returns de Database instance for the Job.
@@ -106,7 +118,6 @@ BatchJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveSystemValue](/reference/asna-qsys-runtime-job-support/classes/job.html#retrievesystemvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of an attribute of the current environment.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The value of the attribute requested.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveUserProfile](/reference/asna-qsys-runtime-job-support/classes/job.html#retrieveuserprofile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the name of a user.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The userProfileName value or the name of the current user.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SerializeLdaToBase64String](/reference/asna-qsys-runtime-job-support/classes/job.html#serializeldatobase64string)() | Converts the value of the LDA to a string representation that is encoded with base-64 digits.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The string representation, in base 64, of the contents of the LDA.
-| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](/reference/asna-qsys-runtime-job-support/classes/job.html#setenvironmentfromjobqueueentry)() | This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns an empty dictionary.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](/reference/asna-qsys-runtime-job-support/classes/job.html#setldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSwitch](/reference/asna-qsys-runtime-job-support/classes/job.html#setswitch)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the value of one of the 8 job switches to '0' or '1'.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSwitches](/reference/asna-qsys-runtime-job-support/classes/job.html#setswitches)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the first n job switches to the values of the characters passed in a string.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
@@ -134,20 +145,20 @@ Dispose(Boolean disposing);
 <br>
 <br>
 
-### Execute([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [List{System.String}]($$TODO-Collections.Generic.List{System.String}.html))
+### Execute([MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0), [List&lt;System.String&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0))
 
 Execute a program with a parameter list.
 
 ```cs
-Execute(Type programType, Collections.Generic.List{System.String} parmameterList);
+Execute(Reflection.MethodInfo entryMethod, Collections.Generic.List<System.String> parmameterList);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | programType | The Type for the program to be executed. 
-| [List{System.String}]($$TODO-Collections.Generic.List{System.String}.html) | parmameterList | The parameter list to be passed to the program. 
+| [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0) | entryMethod | The *ENTRY method info for the program to be executed. 
+| [List&lt;System.String&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0) | parmameterList | The parameter list to be passed to the program. 
 
 
 <br>

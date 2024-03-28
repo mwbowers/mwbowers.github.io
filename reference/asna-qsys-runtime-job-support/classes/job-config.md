@@ -25,10 +25,12 @@ Holds configuration values for the creation of new jobs.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | BatchHostPath | Gets or Sets the directory path where the Batch Host executable is located in the system. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DefaultOutputQueue | Gets or Sets the name of the default Output Queue. Defaults to "QPRINT" | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DlsRootName | Gets or Sets the name of the directory, located within the IFSRootPath, where the Document Library Objects are located. Defaults to "QDLS" | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | IFSRootPath | Gets or Sets the directory path where the IFS objects are located in the system. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | JobQueueBaseQueuesPath | Gets or Sets the directory path where the Job Queues are located in the system. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MessageFilePath | Gets or Sets the directory path where the Message Files are located in the system. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | OutputQueueRootPath | Gets or Sets the directory path where the Output Queues are located in the system. | 
 
 <br>

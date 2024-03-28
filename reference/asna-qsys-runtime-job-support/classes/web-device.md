@@ -34,7 +34,7 @@ Defines the core behavior of the device handling the user interface for an inter
 Called from constructors in derived classes to initialize the WebDevice class.
 
 ```cs
-WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
+WebDevice( Runtime.JobSupport.InteractiveJob job );
 ```
 
 #### Parameters
@@ -76,6 +76,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](#readwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Present a screen waiting for data to be ready and reads it. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RiseAbnormalEnd](#riseabnormalendstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks the device as being in a job that is ending abnormally. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SendHostResult](#sendhostresultwebdisplayfile)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Send the host service results in a display file and waits for new input. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SignalDataReadyForProgram](#signaldatareadyforprogram)() | Signals the fact that data is now available to the program so it can continue execution. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SignalDataReadyForUser](#signaldatareadyforuser)() | Signals the fact that data is now available to the user. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
@@ -90,7 +91,7 @@ WebDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 Associates a named display file to this device for future sharing.  Remembers the display file name for potential future sharing.
 
 ```cs
-Attach(String shareFileName, ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
+Attach(String shareFileName, Runtime.JobSupport.WebDisplayFile displayFile);
 ```
 
 #### Parameters
@@ -163,7 +164,7 @@ The attached display file. Null if there is no display file with the name seeked
 Associates a display file to this device.
 
 ```cs
-Attach(ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
+Attach(Runtime.JobSupport.WebDisplayFile displayFile);
 ```
 
 #### Parameters
@@ -181,7 +182,7 @@ Attach(ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
 Removes the association of a display file with the device.
 
 ```cs
-Detach(ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
+Detach(Runtime.JobSupport.WebDisplayFile displayFile);
 ```
 
 #### Parameters
@@ -199,7 +200,7 @@ Detach(ASNA.QSys.Runtime.JobSupport.WebDisplayFile displayFile);
 Present a screen waiting for data to be ready and reads it.
 
 ```cs
-Read(ASNA.QSys.Runtime.JobSupport.WebDisplayFile dspFile);
+Read(Runtime.JobSupport.WebDisplayFile dspFile);
 ```
 
 #### Parameters
@@ -226,6 +227,24 @@ RiseAbnormalEnd(String abEndMessage, String abEndStack);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | abEndMessage | A message text describing the abnormal termination. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | abEndStack | The execution stack at the moment of failure. 
+
+
+<br>
+<br>
+
+### SendHostResult([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html))
+
+Send the host service results in a display file and waits for new input.
+
+```cs
+SendHostResult(Runtime.JobSupport.WebDisplayFile dspFile);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html) | dspFile | The display file with host results. It becomes the active display file on the device. 
 
 
 <br>

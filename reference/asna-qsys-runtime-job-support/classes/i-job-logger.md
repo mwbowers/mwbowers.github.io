@@ -33,7 +33,7 @@ Defines a generalized way to to add messages to a log.
 Adds a message to the log.
 
 ```cs
-Add(ASNA.QSys.Runtime.JobSupport.MessageBase entry);
+Add(Runtime.JobSupport.MessageBase entry);
 ```
 
 #### Parameters

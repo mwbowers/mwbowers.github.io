@@ -25,11 +25,11 @@ Provides facilities to Allocate and De-Allocate object related.
 
 | Name |  Description 
 | --- | --- 
-| **ObjectLockRequest**( [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) ) | Initializes a new instance of the ObjectLockRequest.
+| **ObjectLockRequest**( [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) ) | Initializes a new instance of the ObjectLockRequest.
 
 <br>
 
-### ObjectLockRequest( [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) )
+### ObjectLockRequest( [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) )
 
 Initializes a new instance of the ObjectLockRequest.
 
@@ -41,7 +41,7 @@ ObjectLockRequest( ASNA.DataGate.Client.AdgConnection connection );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the objects to be allocate. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the objects to be allocate. 
 
 <br>
 
@@ -53,19 +53,19 @@ ObjectLockRequest( ASNA.DataGate.Client.AdgConnection connection );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDataArea](#adddataareastring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Adds a data area to the list of objects to allocate. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddFile](#addfilestring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Adds a file to the list of objects to allocate. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddLibrary](#addlibrarystring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Adds a library to the list of objects to allocate. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddMember](#addmemberstring-string-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Adds a file member to the list of objects to allocate. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateDataArea](#allocatedataareaadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Data Area. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateFile](#allocatefileadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual File. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateLibrary](#allocatelibraryadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Library. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateMember](#allocatememberadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual file Member. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateObjects](#allocateobjectswaitoptions-int16)([WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocate the objects in the list. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateDataArea](#deallocatedataareaadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual Data Area. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateFile](#deallocatefileadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual File. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateLibrary](#deallocatelibraryadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual Library. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateMember](#deallocatememberadgconnection-string-sharetypes)([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html)) | Deallocates an individual file Member. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddDataArea](#adddataareastring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Adds a data area to the list of objects to allocate. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddFile](#addfilestring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Adds a file to the list of objects to allocate. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddLibrary](#addlibrarystring-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Adds a library to the list of objects to allocate. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AddMember](#addmemberstring-string-sharetypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Adds a file member to the list of objects to allocate. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateDataArea](#allocatedataareaadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Data Area. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateFile](#allocatefileadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual File. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateLibrary](#allocatelibraryadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual Library. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateMember](#allocatememberadgconnection-string-sharetypes-waitoptions-int16)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocates an individual file Member. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [AllocateObjects](#allocateobjectswaitoptions-int16)([WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Allocate the objects in the list. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateDataArea](#deallocatedataareaadgconnection-string-sharetypes)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Deallocates an individual Data Area. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateFile](#deallocatefileadgconnection-string-sharetypes)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Deallocates an individual File. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateLibrary](#deallocatelibraryadgconnection-string-sharetypes)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Deallocates an individual Library. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateMember](#deallocatememberadgconnection-string-sharetypes)([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm)) | Deallocates an individual file Member. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [DeallocateObjects](#deallocateobjects)() | Deallocate all objects held in the list. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
@@ -78,7 +78,7 @@ ObjectLockRequest( ASNA.DataGate.Client.AdgConnection connection );
 <br>
 <br>
 
-### AddDataArea([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### AddDataArea([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Adds a data area to the list of objects to allocate.
 
@@ -91,13 +91,13 @@ AddDataArea(String dataAreaPath, ASNA.DataGate.Common.ShareTypes shareType);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dataAreaPath | Path of the data area to include in the allocation list. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
 
 
 <br>
 <br>
 
-### AddFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### AddFile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Adds a file to the list of objects to allocate.
 
@@ -110,13 +110,13 @@ AddFile(String filePath, ASNA.DataGate.Common.ShareTypes shareType);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path of the file to include in the allocation list. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
 
 
 <br>
 <br>
 
-### AddLibrary([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### AddLibrary([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Adds a library to the list of objects to allocate.
 
@@ -129,13 +129,13 @@ AddLibrary(String libraryName, ASNA.DataGate.Common.ShareTypes shareType);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | libraryName | Library to include in the allocation list. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
 
 
 <br>
 <br>
 
-### AddMember([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### AddMember([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Adds a file member to the list of objects to allocate.
 
@@ -149,13 +149,13 @@ AddMember(String filePath, String member, ASNA.DataGate.Common.ShareTypes shareT
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path of the member's parent file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | member | Name of member to include in the allocation list. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
 
 
 <br>
 <br>
 
-### AllocateDataArea([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### AllocateDataArea([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 Allocates an individual Data Area.
 
@@ -167,17 +167,17 @@ AllocateDataArea(ASNA.DataGate.Client.AdgConnection connection, String pathName,
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be allocate. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be allocate. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the data area to allocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
-| [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
+| [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | waitTime | Maximum number of seconds to wait for the object to be allocated. 
 
 
 <br>
 <br>
 
-### AllocateFile([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### AllocateFile([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 Allocates an individual File.
 
@@ -189,17 +189,17 @@ AllocateFile(ASNA.DataGate.Client.AdgConnection connection, String pathName, ASN
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be allocate. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be allocate. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the file to allocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
-| [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
+| [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | waitTime | Maximum number of seconds to wait for the object to be allocated. 
 
 
 <br>
 <br>
 
-### AllocateLibrary([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### AllocateLibrary([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 Allocates an individual Library.
 
@@ -211,17 +211,17 @@ AllocateLibrary(ASNA.DataGate.Client.AdgConnection connection, String pathName, 
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be allocate. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be allocate. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the library to allocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
-| [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
+| [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | waitTime | Maximum number of seconds to wait for the object to be allocated. 
 
 
 <br>
 <br>
 
-### AllocateMember([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### AllocateMember([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 Allocates an individual file Member.
 
@@ -233,17 +233,17 @@ AllocateMember(ASNA.DataGate.Client.AdgConnection connection, String pathName, A
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be allocate. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be allocate. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the member (library/file/member) to allocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share to request. 
-| [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share to request. 
+| [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm) | waitOption | One of enumeration values that specifies how to wait for the object allocation. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | waitTime | Maximum number of seconds to wait for the object to be allocated. 
 
 
 <br>
 <br>
 
-### AllocateObjects([WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### AllocateObjects([WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
 Allocate the objects in the list.
 
@@ -255,14 +255,14 @@ AllocateObjects(ASNA.DataGate.Common.WaitOptions waitOption, Int16 waitTime);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [WaitOptions]($$TODO-ASNA.DataGate.Common.WaitOptions.html) | waitOption | One of enumeration values that specifies how to wait for each object allocation. 
+| [WaitOptions](https://docs.asna.com/documentation/Help140/DCS/_HTML/dcsWaitOptionsEnumeration.htm) | waitOption | One of enumeration values that specifies how to wait for each object allocation. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | waitTime | Maximum number of seconds to wait for each object to be allocated. 
 
 
 <br>
 <br>
 
-### DeallocateDataArea([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### DeallocateDataArea([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Deallocates an individual Data Area.
 
@@ -274,15 +274,15 @@ DeallocateDataArea(ASNA.DataGate.Client.AdgConnection connection, String pathNam
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be released. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be released. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the data area to deallocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share used to originally allocate the object. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share used to originally allocate the object. 
 
 
 <br>
 <br>
 
-### DeallocateFile([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### DeallocateFile([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Deallocates an individual File.
 
@@ -294,15 +294,15 @@ DeallocateFile(ASNA.DataGate.Client.AdgConnection connection, String pathName, A
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be released. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be released. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the file to deallocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share used to originally allocate the object. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share used to originally allocate the object. 
 
 
 <br>
 <br>
 
-### DeallocateLibrary([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### DeallocateLibrary([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Deallocates an individual Library.
 
@@ -314,15 +314,15 @@ DeallocateLibrary(ASNA.DataGate.Client.AdgConnection connection, String pathName
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be released. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be released. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the library to deallocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share used to originally allocate the object. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share used to originally allocate the object. 
 
 
 <br>
 <br>
 
-### DeallocateMember([AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html))
+### DeallocateMember([AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm))
 
 Deallocates an individual file Member.
 
@@ -334,9 +334,9 @@ DeallocateMember(ASNA.DataGate.Client.AdgConnection connection, String pathName,
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection]($$TODO-ASNA.DataGate.Client.AdgConnection.html) | connection | The connection to the database holding the object to be released. 
+| [AdgConnection](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAdgConnectionClass.htm) | connection | The connection to the database holding the object to be released. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pathName | Path of the member to deallocate. 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | Type of share used to originally allocate the object. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | Type of share used to originally allocate the object. 
 
 
 <br>

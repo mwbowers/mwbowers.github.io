@@ -80,7 +80,7 @@ Clear();
 Removes the message from the queue.
 
 ```cs
-Dequeue(ASNA.QSys.Runtime.JobSupport.Message message);
+Dequeue(Runtime.JobSupport.Message message);
 ```
 
 #### Parameters
@@ -116,7 +116,7 @@ The IEnumerator for the MessageQueue.
 Enqueues a message at the end of the queue.
 
 ```cs
-Queue(ASNA.QSys.Runtime.JobSupport.Message message);
+Queue(Runtime.JobSupport.Message message);
 ```
 
 #### Parameters

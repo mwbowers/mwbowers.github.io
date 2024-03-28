@@ -71,7 +71,7 @@ QueryResults( Collections.Generic.IDictionary(System.String,System.Object) dicti
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | dictionary | The dictionary to duplicate. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), | dictionary | The dictionary to duplicate. 
 
 <br>
 

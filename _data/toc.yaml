@@ -2187,10 +2187,6 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/activation-group-attribute.html
           - title: ActivationManager
             path: /reference/asna-qsys-runtime-job-support/classes/activation-manager.html
-          - title: CallerActivationGroupAttribute
-            path: /reference/asna-qsys-runtime-job-support/classes/caller-activation-group-attribute.html
-          - title: CallHostSpecs
-            path: /reference/asna-qsys-runtime-job-support/classes/call-host-specs.html
           - title: BatchJobProfile
             path: /reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html
           - title: BatchJob
@@ -2199,6 +2195,10 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/batch-options.html
           - title: BatchPoint
             path: /reference/asna-qsys-runtime-job-support/classes/batch-point.html
+          - title: CallerActivationGroupAttribute
+            path: /reference/asna-qsys-runtime-job-support/classes/caller-activation-group-attribute.html
+          - title: CallHostSpecs
+            path: /reference/asna-qsys-runtime-job-support/classes/call-host-specs.html
           - title: CLProgram
             path: /reference/asna-qsys-runtime-job-support/classes/cl-program.html
           - title: CodePage
@@ -2287,14 +2287,14 @@ Reference:
             path: /reference/asna-qsys-runtime-job-support/classes/module-collection.html
           - title: ModuleImportAttribute
             path: /reference/asna-qsys-runtime-job-support/classes/module-import-attribute.html
-          - title: OutOfProcessBatchJob
-            path: /reference/asna-qsys-runtime-job-support/classes/out-of-process-batch-job.html
           - title: NewActivationGroupAttribute
             path: /reference/asna-qsys-runtime-job-support/classes/new-activation-group-attribute.html
           - title: ObjectLockRequest
             path: /reference/asna-qsys-runtime-job-support/classes/object-lock-request.html
           - title: OpenAccessFile
             path: /reference/asna-qsys-runtime-job-support/classes/open-access-file.html
+          - title: OutOfProcessBatchJob
+            path: /reference/asna-qsys-runtime-job-support/classes/out-of-process-batch-job.html
           - title: OverrideOption
             path: /reference/asna-qsys-runtime-job-support/classes/override-option.html
           - title: OverrideScope

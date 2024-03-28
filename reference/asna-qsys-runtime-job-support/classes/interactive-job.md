@@ -21,11 +21,23 @@ Defines the core behavior of an interactive job.
 <br>
 <br>
 
-## Constructor
+## Constructors
 
 | Name |  Description 
 | --- | --- 
-| **InteractiveJob**( [JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html) ) | Called from constructors in derived classes to initialize the InteractiveJob class.
+| [InteractiveJob](#interactivejob)() | Called from constructors in derived classes to initialize the InteractiveJob class with a configuration from appsettings. 
+| [InteractiveJob](#interactivejobjobconfig)([JobConfig](/reference/asna-qsys-runtime-job-support/classes/job-config.html)) | Called from constructors in derived classes to initialize the InteractiveJob class. 
+
+<br>
+
+### InteractiveJob(  )
+
+Called from constructors in derived classes to initialize the InteractiveJob class with a configuration from appsettings.
+
+```cs
+InteractiveJob(  );
+```
+
 
 <br>
 
@@ -34,7 +46,7 @@ Defines the core behavior of an interactive job.
 Called from constructors in derived classes to initialize the InteractiveJob class.
 
 ```cs
-InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
+InteractiveJob( Runtime.JobSupport.JobConfig jobConfig );
 ```
 
 #### Parameters
@@ -112,11 +124,10 @@ InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ReclaimResources](/reference/asna-qsys-runtime-job-support/classes/job.html#reclaimresources)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Reclaim the resources on the Job's default activation group.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RequestShutdown](#requestshutdown)() | Requests an orderly shutdown of the job but it forcibly shuts it down if not completed after a time period. | 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RequestYellowService](#requestyellowservicestring-string-string-string-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Request a service to be performed by the UI website. | The result of the command.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [RequestYellowService](#requestyellowservicestring-string-string-string-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Request a service to be performed by the UI website. | The result of the command.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveSystemValue](/reference/asna-qsys-runtime-job-support/classes/job.html#retrievesystemvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of an attribute of the current environment.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The value of the attribute requested.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [RetrieveUserProfile](/reference/asna-qsys-runtime-job-support/classes/job.html#retrieveuserprofile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the name of a user.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The userProfileName value or the name of the current user.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SerializeLdaToBase64String](/reference/asna-qsys-runtime-job-support/classes/job.html#serializeldatobase64string)() | Converts the value of the LDA to a string representation that is encoded with base-64 digits.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | The string representation, in base 64, of the contents of the LDA.
-| [NameValueCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.namevaluecollection) | [SetEnvironmentFromJobQueueEntry](/reference/asna-qsys-runtime-job-support/classes/job.html#setenvironmentfromjobqueueentry)() | This method does not do anything useful, it simply returns an empty dictionary.  It will be removed soon.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | Returns an empty dictionary.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SetJobSessionString](#setjobsessionstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the job session from a serialized string. | True if the sessionID corresponds to the job session, otherwise false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLdaField](/reference/asna-qsys-runtime-job-support/classes/job.html#setldafield)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA.<br>(Inherited from [Job](/reference/asna-qsys-runtime-job-support/classes/job.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetProgram](#setprogramstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Records the name of the program that is currently running in the job. | 
@@ -126,7 +137,7 @@ InteractiveJob( ASNA.QSys.Runtime.JobSupport.JobConfig jobConfig );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [SetUserDeviceID](#setuserdeviceidstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the UserDeviceID for the first time. | true if the job's UserDeviceID was null; otherwise false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ShowPage](#showpagestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Display an arbitrary page to the user. | The string set when the shown page returned.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ShutDown](#shutdown)() | Forcibly shuts down the job. | 
-| [WebDevice](/reference/asna-qsys-runtime-job-support/classes/web-device.html) | [Start](#startstring-socket-semaphoreslim-concurrentqueue{system.int32})([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [ConcurrentQueue{System.Int32}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1)) | Starts the execution of the InteractiveJob on a newly created thread. | The device assigned to the job.
+| [WebDevice](/reference/asna-qsys-runtime-job-support/classes/web-device.html) | [Start](#startstring-socket-semaphoreslim-concurrentqueue<system.int32>)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [ConcurrentQueue&lt;System.Int32&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-8.0)) | Starts the execution of the InteractiveJob on a newly created thread. | The device assigned to the job.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 
 <br>
@@ -270,7 +281,7 @@ RequestShutdown();
 <br>
 <br>
 
-### RequestYellowService([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### RequestYellowService([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Request a service to be performed by the UI website.
 
@@ -286,11 +297,11 @@ RequestYellowService(String command, String parm1, String parm2, String parm3, S
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parm1 | If any, the first parameter passed to the service. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parm2 | If any, the second parameter passed to the service. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parm3 | If any, the third parameter passed to the service. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | otherParms | If any, an array of other parameters to be passed to the service. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | otherParms | If any, an array of other parameters to be passsed to the service. 
 
 #### Returns
 
-[String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)
+[String](https://docs.microsoft.com/en-us/dotnet/api/system.string)
 
 The result of the command.
 
@@ -421,12 +432,12 @@ ShutDown();
 <br>
 <br>
 
-### Start([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [ConcurrentQueue{System.Int32}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1))
+### Start([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets), [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim), [ConcurrentQueue&lt;System.Int32&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-8.0))
 
 Starts the execution of the InteractiveJob on a newly created thread.
 
 ```cs
-Start(String jobName, Net.Sockets.Socket socket, Threading.SemaphoreSlim jobEndedSemaphore, Collections.Concurrent.ConcurrentQueue{System.Int32} endedJobsQueue);
+Start(String jobName, Net.Sockets.Socket socket, Threading.SemaphoreSlim jobEndedSemaphore, Collections.Concurrent.ConcurrentQueue<System.Int32> endedJobsQueue);
 ```
 
 #### Parameters
@@ -436,7 +447,7 @@ Start(String jobName, Net.Sockets.Socket socket, Threading.SemaphoreSlim jobEnde
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobName | The job name to be associated with this running job. 
 | [Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets) | socket | The socket used to communicate with the website providing the user interface display pages. 
 | [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim) | jobEndedSemaphore | The semaphore to signal that the job has ended. 
-| [ConcurrentQueue{System.Int32}](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1) | endedJobsQueue | The queue to register the ended job. 
+| [ConcurrentQueue&lt;System.Int32&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-8.0) | endedJobsQueue | The queue to register the ended job. 
 
 #### Returns
 

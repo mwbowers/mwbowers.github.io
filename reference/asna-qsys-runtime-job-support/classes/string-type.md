@@ -53,7 +53,7 @@ StringType( Object[] errorRepl );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | errorRepl | An array with the values for the error message placeholders. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | errorRepl | An array with the values for the error message placeholders. 
 
 <br>
 
@@ -69,8 +69,8 @@ StringType( Object[] errorRepl, Object[] causeRepl );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | errorRepl | An array with the values for the error message placeholders. 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | causeRepl | An array with the values for the cause message placeholders. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | errorRepl | An array with the values for the error message placeholders. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | causeRepl | An array with the values for the cause message placeholders. 
 
 <br>
 
@@ -86,9 +86,9 @@ StringType( Object[] errorRepl, Object[] causeRepl, Object[] recoveryRepl, Int32
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | errorRepl | An array with the values for the error message placeholders. 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | causeRepl | An array with the values for the cause message placeholders. 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | recoveryRepl | An array with the values for the recover message placeholders. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | errorRepl | An array with the values for the error message placeholders. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | causeRepl | An array with the values for the cause message placeholders. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | recoveryRepl | An array with the values for the recover message placeholders. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | priority | The priority of the exception in the job log. Defaults to 30. 
 
 <br>
