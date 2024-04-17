@@ -1,5 +1,5 @@
 ---
-title: Dim`5 Class
+title: Dim<T,U,V,S,R> Class
 ---
 
 Defines a 5-digit dimension, from 10000 to 99999, to be used in the declaration of fixed-length array types.
@@ -7,7 +7,7 @@ Defines a 5-digit dimension, from 10000 to 99999, to be used in the declaration 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> Dim`5
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> Dim<T,U,V,S,R>
 
 <br>
 <br>

@@ -35,7 +35,7 @@ Represent a message sent by a program.
 Initializes a new instance of the Message class using the specified message id and data from a message file and type.
 
 ```cs
-Message( String MsgId, String MsgDta, String MsgFile, ASNA.QSys.Runtime.JobSupport.MessageType MsgType );
+Message( String MsgId, String MsgDta, String MsgFile, Runtime.JobSupport.MessageType MsgType );
 ```
 
 #### Parameters
@@ -45,7 +45,7 @@ Message( String MsgId, String MsgDta, String MsgFile, ASNA.QSys.Runtime.JobSuppo
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgId | The message identification. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgDta | The replacement text, if any, for the message placeholders. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFile | The message file name where the message description is to be found. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 <br>
 
@@ -54,7 +54,7 @@ Message( String MsgId, String MsgDta, String MsgFile, ASNA.QSys.Runtime.JobSuppo
 Initializes a new instance of the Message class using a text string and type.
 
 ```cs
-Message( String text, ASNA.QSys.Runtime.JobSupport.MessageType type );
+Message( String text, Runtime.JobSupport.MessageType type );
 ```
 
 #### Parameters
@@ -62,7 +62,7 @@ Message( String text, ASNA.QSys.Runtime.JobSupport.MessageType type );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | The user provide text of the message. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | type | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | type | One of the enumeration values that specifies the severity of the message. 
 
 <br>
 

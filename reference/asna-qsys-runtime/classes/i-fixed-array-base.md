@@ -34,7 +34,7 @@ Base interface for all fixed sized arrays in the fixed-sized type framework. The
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears all elements of the array to their default value. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfrom`1[]-int32)([\\`1[]]($$TODO-`1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements of a .Net array of the same element type into this fixed sized array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfrom`1[]-int32)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements of a .Net array of the same element type into this fixed sized array. | 
 
 <br>
 <br>
@@ -51,7 +51,7 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([\\`1[]]($$TODO-`1[].html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copies elements of a .Net array of the same element type into this fixed sized array.
 
@@ -63,7 +63,7 @@ CopyFrom(`1[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`1[]]($$TODO-`1[].html) | sourceArray | The array to copy from. 
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | sourceArray | The array to copy from. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start. 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Len`5 Class
+title: Len<T,U,V,S,R> Class
 ---
 
 Defines a 5-digit length, from 10000 to 99999, to be used in the declaration of fixed-length types.
@@ -7,7 +7,7 @@ Defines a 5-digit length, from 10000 to 99999, to be used in the declaration of 
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> Len`5
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> Len<T,U,V,S,R>
 
 <br>
 <br>

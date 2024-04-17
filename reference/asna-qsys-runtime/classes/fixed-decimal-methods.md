@@ -25,109 +25,112 @@ Contains extension methods for handling RPG operations for FixedDecimal values.
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ApplyEditWord\\`\\`2](#applyeditword\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Applies an edit word to a FixedDecimal number. | The string containing the result of applying the edit work to the FixedDecimal number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ApplyEditWord&lt;T,U&gt;](#applyeditword&lt;t,u&gt;fixeddecimal(<t>-<t>)-string)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Applies an edit word to a FixedDecimal number. | The string containing the result of applying the edit work to the FixedDecimal number.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits&lt;T,U&gt;](#getdigits&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits&lt;T,U&gt;](#getdigits&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits&lt;T,U&gt;](#getdigits&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32-int32-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short). | returns a short value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int). | returns a int value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long). | returns a long value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`4](#moveleft\`\`4fixeddecimal{``0-``1}-fixeddecimal{``2-``3})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVEL. Moves left a decimal to a decimal. | The result of moving left the source value to the target value as a decimal number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftToChar\\`\\`2](#movelefttochar\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVEL. Moves right a decimal to a char. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string, with pad. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime with pad. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short) with pad. | returns a short value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int) with pad. | returns a int value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`2](#moveleftwithpad\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long) with pad. | returns a long value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad\\`\\`4](#moveleftwithpad\`\`4fixeddecimal{``0-``1}-fixeddecimal{``2-``3})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVEL. Moves left a decimal to a decimal with pad. | The result of moving left the source value to the target value as a decimal number, padding with zeros if necessary.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short). | returns a short value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int). | returns a int value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`2](#moveright\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long). | returns a long value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight\\`\\`4](#moveright\`\`4fixeddecimal{``0-``1}-fixeddecimal{``2-``3})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal. | The result of moving right the source value to the target value as a decimal number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightToChar\\`\\`2](#moverighttochar\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | RPG's MOVE. Moves right a decimal to a char. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string, with pad. | returns a string value of the target.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-ifixeddatetime)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime with pad. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-int16)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short) with pad. | returns a short value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int) with pad. | returns a int value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`2](#moverightwithpad\`\`2fixeddecimal{``0-``1}-int64)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long) with pad. | returns a long value target of the move.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad\\`\\`4](#moverightwithpad\`\`4fixeddecimal{``0-``1}-fixeddecimal{``2-``3})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html)) | RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal with pad. | The result of moving right the source value to the target value as a decimal number, padding with zeros if necessary.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U,V,S&gt;](#moveleft&lt;t,u,v,s&gt;fixeddecimal(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a decimal to a decimal. | The result of moving left the source value to the target value as a decimal number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddecimal(<t>-<t>)-string)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | returns a string value of the target.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddecimal(<t>-<t>)-ifixeddatetime)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime. | The resulting DateTime value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddecimal(<t>-<t>)-int16)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short). | returns a short value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int). | returns a int value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft&lt;T,U&gt;](#moveleft&lt;t,u&gt;fixeddecimal(<t>-<t>)-int64)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long). | returns a long value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftToChar&lt;T,U&gt;](#movelefttochar&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a decimal to a char. | The first character in the string representation of the decimal value.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U,V,S&gt;](#moveleftwithpad&lt;t,u,v,s&gt;fixeddecimal(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVEL. Moves left a decimal to a decimal with pad. | The result of moving left the source value to the target value as a decimal number, padding with zeros if necessary.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-string)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string, with pad. | returns a string value of the target.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-ifixeddatetime)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVEL. Moves left a decimal into a DateTime with pad. | The resulting DateTime value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-int16)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a decimal to an int2 (short) with pad. | returns a short value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEL. Moves left a decimal to an int4 (int) with pad. | returns a int value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeftWithPad&lt;T,U&gt;](#moveleftwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-int64)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVEL. Moves left a decimal to an int8 (long) with pad. | returns a long value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U,V,S&gt;](#moveright&lt;t,u,v,s&gt;fixeddecimal(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal. | The result of moving right the source value to the target value as a decimal number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddecimal(<t>-<t>)-string)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string. | returns a string value of the target.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddecimal(<t>-<t>)-ifixeddatetime)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime. | The resulting DateTime value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddecimal(<t>-<t>)-int16)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short). | returns a short value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int). | returns a int value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRight&lt;T,U&gt;](#moveright&lt;t,u&gt;fixeddecimal(<t>-<t>)-int64)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long). | returns a long value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightToChar&lt;T,U&gt;](#moverighttochar&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a decimal to a char. | The last character in the string representation of the decimal value.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U,V,S&gt;](#moverightwithpad&lt;t,u,v,s&gt;fixeddecimal(<t>-<t>)-fixeddecimal(<t-u>-<t-u-v>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal with pad. | The result of moving right the source value to the target value as a decimal number, padding with zeros if necessary.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-string)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVE. Moves right decimal to a string, with pad. | returns a string value of the target.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-ifixeddatetime)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html)) | RPG's MOVE. Moves right a decimal into a DateTime with pad. | The resulting DateTime value of the operation.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-int16)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a decimal to an int2 (short) with pad. | returns a short value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a decimal to an int4 (int) with pad. | returns a int value target of the move.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveRightWithPad&lt;T,U&gt;](#moverightwithpad&lt;t,u&gt;fixeddecimal(<t>-<t>)-int64)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a decimal to an int8 (long) with pad. | returns a long value target of the move.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits\\`\\`2](#setdigits\`\`2fixeddecimal{``0-``1}-decimal-int32-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq\\`\\`2](#sethiloeq\`\`2fixeddecimal{``0-``1}-indicator-indicator-indicator)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of source. | the same value that was passed in in source.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime\\`\\`2](#testtime\`\`2fixeddecimal{``0-``1}-datetimedatakind-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | .
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate\\`\\`2](#todate\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Converts a fixed decimal number to a date in the specified format. | The date value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RoundUp&lt;T,U&gt;](#roundup&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds up a decimal number to the desired decimal positions. | The decimal value rounded up to the given decimal positions.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits&lt;T,U&gt;](#setdigits&lt;t,u&gt;fixeddecimal(<t>-<t>)-decimal-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits&lt;T,U&gt;](#setdigits&lt;t,u&gt;fixeddecimal(<t>-<t>)-decimal-int32-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetDigits&lt;T,U&gt;](#setdigits&lt;t,u&gt;fixeddecimal(<t>-<t>)-decimal-int32-int32-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Replaces contiguous digits in a decimal number. | The decimal number after replacing digits.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetHiLoEq&lt;T,U&gt;](#sethiloeq&lt;t,u&gt;fixeddecimal(<t>-<t>)-indicator-indicator-indicator)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Sets the HI, LO, and EQ flags passed in, based on the value of source. | The same value that was passed in in source.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [TestTime&lt;T,U&gt;](#testtime&lt;t,u&gt;fixeddecimal(<t>-<t>)-datetimedatakind-datetimeformat)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. | True if the number represents a valid date/time/timestamp value in the given format. False otherwise.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToDate&lt;T,U&gt;](#todate&lt;t,u&gt;fixeddecimal(<t>-<t>)-datetimeformat)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Converts a fixed decimal number to a date in the specified format. | The date value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimalRounded&lt;T,U&gt;](#tofixeddecimalrounded&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number using Away From Zero rounding. | The decimal number adjusted to the given digits and decimal positions with rounding.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToFixedDecimalRounded&lt;T,U&gt;](#tofixeddecimalrounded&lt;t,u&gt;fixeddecimal(<t>-<t>)-int32)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Rounds a fixed decimal to the specified number of decimal positions using Away From Zero rounding. | The decimal number adjusted to the given decimal positions with rounding.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringBinary\\`\\`2](#tostringbinary\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a binary decimal number. | The string containing the in-memory representation of the binary decimal number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringPacked\\`\\`2](#tostringpacked\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a packed decimal number. | The string containing the in-memory representation of the packed number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringZoned\\`\\`2](#tostringzoned\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Returns as a string the 'memory' representation of a zoned decimal number. | The string containing the in-memory representation of the zoned number.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTime\\`\\`2](#totime\`\`2fixeddecimal{``0-``1}-datetimeformat)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Converts a fixed decimal number to a time in the specified format. | The time value as a DateTime object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTimestamp\\`\\`2](#totimestamp\`\`2fixeddecimal{``0-``1})([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html)) | Converts a fixed decimal number to a timestamp. | The timestamp value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringBinary&lt;T,U&gt;](#tostringbinary&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns as a string the 'memory' representation of a binary decimal number. | The string containing the in-memory representation of the binary decimal number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringPacked&lt;T,U&gt;](#tostringpacked&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns as a string the 'memory' representation of a packed decimal number. | The string containing the in-memory representation of the packed number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToStringZoned&lt;T,U&gt;](#tostringzoned&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Returns as a string the 'memory' representation of a zoned decimal number. | The string containing the in-memory representation of the zoned number.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTime&lt;T,U&gt;](#totime&lt;t,u&gt;fixeddecimal(<t>-<t>)-datetimeformat)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html)) | Converts a fixed decimal number to a time in the specified format. | The time value as a DateTime object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ToTimestamp&lt;T,U&gt;](#totimestamp&lt;t,u&gt;fixeddecimal(<t>-<t>))([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics))) | Converts a fixed decimal number to a timestamp. | The timestamp value as a DateTime object.
 
 <br>
 <br>
 
-### ApplyEditWord\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### ApplyEditWord&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Applies an edit word to a FixedDecimal number.
 
 ```cs
-ApplyEditWord``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, String editwordString);
+ApplyEditWord<T,U>(Runtime.FixedDecimal(<T>, <T>) num, String editwordString);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num | The FixedDecimal number to which apply the edit word. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | num | The FixedDecimal number to which apply the edit word. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | editwordString | The edit word to use. 
 
 
 <br>
 <br>
 
-### GetDigits\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetDigits&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Extracts digits from a decimal number.
 
 ```cs
-GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start);
+GetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 start);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The decimal number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The 0-based starting position. 
 
 
 <br>
 <br>
 
-### GetDigits\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetDigits&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Extracts digits from a decimal number.
 
 ```cs
-GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start, Int32 length);
+GetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 start, Int32 length);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The decimal number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The 0-based starting position. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The count of digits to extract. 
 
@@ -135,19 +138,19 @@ GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start, Int32 
 <br>
 <br>
 
-### GetDigits\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetDigits&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Extracts digits from a decimal number.
 
 ```cs
-GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start, Int32 length, Int32 resDecimals);
+GetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 start, Int32 length, Int32 resDecimals);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The decimal number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The 0-based starting position. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The count of digits to extract. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | resDecimals | The desired decimal positions of the resulting decimal number. 
@@ -156,511 +159,530 @@ GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start, Int32 
 <br>
 <br>
 
-### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's MOVEL. Moves left decimal to a string.
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | target string. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
-
-RPG's MOVEL. Moves left a decimal into a DateTime.
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
-
-RPG's MOVEL. Moves left a decimal to an int2 (short).
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int16 target);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | target | short value of the target. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
-
-RPG's MOVEL. Moves left a decimal to an int4 (int).
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 target);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | int value of the target. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
-
-RPG's MOVEL. Moves left a decimal to an int8 (long).
-
-```cs
-MoveLeft``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int64 target);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | target | long value of the target. 
-
-
-<br>
-<br>
-
-### MoveLeft\`\`4([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveLeft&lt;T,U,V,S&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVEL. Moves left a decimal to a decimal.
 
 ```cs
-MoveLeft``4(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.FixedDecimal{``2,``3} target);
+MoveLeft<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | FixedDecimal value of the source number. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | target | FixedDecimal target of the MOVE. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | FixedDecimal value of the source number. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | target | FixedDecimal target of the MOVE. 
 
 
 <br>
 <br>
 
-### MoveLeftToChar\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveLeft&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-RPG's MOVEL. Moves right a decimal to a char.
+RPG's MOVEL. Moves left decimal to a string.
 
 ```cs
-MoveLeftToChar``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-
-
-<br>
-<br>
-
-### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's MOVEL. Moves left decimal to a string, with pad.
-
-```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | target string. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
+### MoveLeft&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
-RPG's MOVEL. Moves left a decimal into a DateTime with pad.
+RPG's MOVEL. Moves left a decimal into a DateTime.
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveLeft&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-RPG's MOVEL. Moves left a decimal to an int2 (short) with pad.
+RPG's MOVEL. Moves left a decimal to an int2 (short).
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int16 target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | target | short value of the target. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveLeft&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-RPG's MOVEL. Moves left a decimal to an int4 (int) with pad.
+RPG's MOVEL. Moves left a decimal to an int4 (int).
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | int value of the target. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveLeft&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
-RPG's MOVEL. Moves left a decimal to an int8 (long) with pad.
+RPG's MOVEL. Moves left a decimal to an int8 (long).
 
 ```cs
-MoveLeftWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int64 target);
+MoveLeft<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | target | long value of the target. 
 
 
 <br>
 <br>
 
-### MoveLeftWithPad\`\`4([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveLeftToChar&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVEL. Moves left a decimal to a char.
+
+```cs
+MoveLeftToChar<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+
+
+<br>
+<br>
+
+### MoveLeftWithPad&lt;T,U,V,S&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVEL. Moves left a decimal to a decimal with pad.
 
 ```cs
-MoveLeftWithPad``4(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.FixedDecimal{``2,``3} target);
+MoveLeftWithPad<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | FixedDecimal value of the source number. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | target | FixedDecimal target of the MOVE. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | FixedDecimal value of the source number. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | target | FixedDecimal target of the MOVE. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-RPG's MOVE. Moves right decimal to a string.
+RPG's MOVEL. Moves left decimal to a string, with pad.
 
 ```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | target string. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
-RPG's MOVE. Moves right a decimal into a DateTime.
+RPG's MOVEL. Moves left a decimal into a DateTime with pad.
 
 ```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-RPG's MOVE. Moves right a decimal to an int2 (short).
+RPG's MOVEL. Moves left a decimal to an int2 (short) with pad.
 
 ```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int16 target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | target | short value of the target. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-RPG's MOVE. Moves right a decimal to an int4 (int).
+RPG's MOVEL. Moves left a decimal to an int4 (int) with pad.
 
 ```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | int value of the target. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveLeftWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
-RPG's MOVE. Moves right a decimal to an int8 (long).
+RPG's MOVEL. Moves left a decimal to an int8 (long) with pad.
 
 ```cs
-MoveRight``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int64 target);
+MoveLeftWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | target | long value of the target. 
 
 
 <br>
 <br>
 
-### MoveRight\`\`4([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveRight&lt;T,U,V,S&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal.
 
 ```cs
-MoveRight``4(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.FixedDecimal{``2,``3} target);
+MoveRight<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | FixedDecimal value of the source number. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | target | FixedDecimal target of the MOVE. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | FixedDecimal value of the source number. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | target | FixedDecimal target of the MOVE. 
 
 
 <br>
 <br>
 
-### MoveRightToChar\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### MoveRight&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-RPG's MOVE. Moves right a decimal to a char.
+RPG's MOVE. Moves right decimal to a string.
 
 ```cs
-MoveRightToChar``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
-
-
-<br>
-<br>
-
-### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
-
-RPG's MOVE. Moves right decimal to a string, with pad.
-
-```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, String target);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | target string. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
+### MoveRight&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
 
-RPG's MOVE. Moves right a decimal into a DateTime with pad.
+RPG's MOVE. Moves right a decimal into a DateTime.
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.IFixedDateTime dateTime);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+### MoveRight&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
 
-RPG's MOVE. Moves right a decimal to an int2 (short) with pad.
+RPG's MOVE. Moves right a decimal to an int2 (short).
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int16 target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | target | short value of the target. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveRight&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-RPG's MOVE. Moves right a decimal to an int4 (int) with pad.
+RPG's MOVE. Moves right a decimal to an int4 (int).
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | int value of the target. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+### MoveRight&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
 
-RPG's MOVE. Moves right a decimal to an int8 (long) with pad.
+RPG's MOVE. Moves right a decimal to an int8 (long).
 
 ```cs
-MoveRightWithPad``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int64 target);
+MoveRight<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | Decimal value of the source number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | target | long value of the target. 
 
 
 <br>
 <br>
 
-### MoveRightWithPad\`\`4([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html))
+### MoveRightToChar&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
+
+RPG's MOVE. Moves right a decimal to a char.
+
+```cs
+MoveRightToChar<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U,V,S&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T,U&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T,U,V&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 RPG's MOVE. Moves right a FixedDecimal to a FixedDecimal with pad.
 
 ```cs
-MoveRightWithPad``4(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.FixedDecimal{``2,``3} target);
+MoveRightWithPad<T,U,V,S>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.FixedDecimal(<T,U>, <T,U,V>) target);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | FixedDecimal value of the source number. 
-| [FixedDecimal{\\`\\`2,\\`\\`3}](/reference/asna-qsys-runtime/fixed-decimal{``2,``3}.html) | target | FixedDecimal target of the MOVE. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | FixedDecimal value of the source number. 
+| [FixedDecimal(&lt;T,U&gt;, &lt;T,U,V&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | target | FixedDecimal target of the MOVE. 
 
 
 <br>
 <br>
 
-### SetDigits\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### MoveRightWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+RPG's MOVE. Moves right decimal to a string, with pad.
+
+```cs
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, String target);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | target string. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html))
+
+RPG's MOVE. Moves right a decimal into a DateTime with pad.
+
+```cs
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.IFixedDateTime dateTime);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+| [IFixedDateTime](/reference/asna-qsys-runtime/classes/i-fixed-date-time.html) | dateTime | Date, Time, Timestamp. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16))
+
+RPG's MOVE. Moves right a decimal to an int2 (short) with pad.
+
+```cs
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int16 target);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | target | short value of the target. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's MOVE. Moves right a decimal to an int4 (int) with pad.
+
+```cs
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int32 target);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | target | int value of the target. 
+
+
+<br>
+<br>
+
+### MoveRightWithPad&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64))
+
+RPG's MOVE. Moves right a decimal to an int8 (long) with pad.
+
+```cs
+MoveRightWithPad<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Int64 target);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | Decimal value of the source number. 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | target | long value of the target. 
+
+
+<br>
+<br>
+
+### RoundUp&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Rounds up a decimal number to the desired decimal positions.
+
+```cs
+RoundUp<T,U>(Runtime.FixedDecimal(<T>, <T>) num, Int32 decimalCount);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | num | The number to round up. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimalCount | The desired number of decimal positions. 
+
+
+<br>
+<br>
+
+### SetDigits&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Replaces contiguous digits in a decimal number.
 
 ```cs
-SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, Int32 start);
+SetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Decimal replace, Int32 start);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The number that will have its digits replaced. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The number that will have its digits replaced. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | replace | The number that will replace the digits of source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The 0-based position in source where the replacement will start. 
 
@@ -668,19 +690,19 @@ SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, In
 <br>
 <br>
 
-### SetDigits\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### SetDigits&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Replaces contiguous digits in a decimal number.
 
 ```cs
-SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, Int32 start, Int32 length);
+SetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Decimal replace, Int32 start, Int32 length);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The number that will have its digits replaced. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The number that will have its digits replaced. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | replace | The number that will replace the digits of source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The 0-based position in source where the replacement will start. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length (digits) of the replacement. 
@@ -689,19 +711,19 @@ SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, In
 <br>
 <br>
 
-### SetDigits\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### SetDigits&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Replaces contiguous digits in a decimal number.
 
 ```cs
-SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, Int32 start, Int32 repDigits, Int32 repDecimals);
+SetDigits<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Decimal replace, Int32 start, Int32 repDigits, Int32 repDecimals);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The number that will have its digits replaced. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The number that will have its digits replaced. 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | replace | The number that will replace the digits of source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The 0-based position in source where the replacement will start. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | repDigits | The length (digits) of the replacement. 
@@ -711,152 +733,191 @@ SetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Decimal replace, In
 <br>
 <br>
 
-### SetHiLoEq\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### SetHiLoEq&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Sets the HI, LO, and EQ flags passed in, based on the value of source.
 
 ```cs
-SetHiLoEq``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ref ASNA.QSys.Runtime.Indicator hi, ref ASNA.QSys.Runtime.Indicator lo, ref ASNA.QSys.Runtime.Indicator eq);
+SetHiLoEq<T,U>(Runtime.FixedDecimal(<T>, <T>) source, out ASNA.QSys.Runtime.Indicator hi, out ASNA.QSys.Runtime.Indicator lo, out ASNA.QSys.Runtime.Indicator eq);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | the number to test. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | the greater-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | the less-than-zero flag. 
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | the equal flag. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The number to test. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | hi | The greater-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | lo | The less-than-zero flag. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | eq | The equal flag. 
 
 
 <br>
 <br>
 
-### TestTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
+### TestTime&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Tests whether a decimal number contains a valid date/time/timestamp value.
 
 ```cs
-TestTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.QSys.Runtime.DateTimeDataKind kind, ASNA.DataGate.Common.DateTimeFormat format);
+TestTime<T,U>(Runtime.FixedDecimal(<T>, <T>) source, Runtime.DateTimeDataKind kind, ASNA.DataGate.Common.DateTimeFormat format);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | the decimal number to test. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | whether the number represents a date, time, or timestamp. 
-| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | the date/time/timestamp format in which the number is. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number to test. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | kind | The date/time/timestamp type of the number. 
+| [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The date/time/timestamp format in which the number is. 
 
 
 <br>
 <br>
 
-### ToDate\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
+### ToDate&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Converts a fixed decimal number to a date in the specified format.
 
 ```cs
-ToDate``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.DateTimeFormat format);
+ToDate<T,U>(Runtime.FixedDecimal(<T>, <T>) source, ASNA.DataGate.Common.DateTimeFormat format);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The fixed decimal number to convert. 
 | [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The date format of decimal value to convert. 
 
 
 <br>
 <br>
 
-### ToStringBinary\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### ToFixedDecimalRounded&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Adjusts the digits and decimal positions of a fixed decimal number using Away From Zero rounding.
+
+```cs
+ToFixedDecimalRounded<T,U>(Runtime.FixedDecimal(<T>, <T>) num, Int32 digits, Int32 decimals);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | num |  The decimal number to round up. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The desired number of digits. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The desired number of decimal positions. 
+
+
+<br>
+<br>
+
+### ToFixedDecimalRounded&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Rounds a fixed decimal to the specified number of decimal positions using Away From Zero rounding.
+
+```cs
+ToFixedDecimalRounded<T,U>(Runtime.FixedDecimal(<T>, <T>) num, Int32 decimals);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | num | The decimal number to round up. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The desired number of decimal positions. 
+
+
+<br>
+<br>
+
+### ToStringBinary&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Returns as a string the 'memory' representation of a binary decimal number.
 
 ```cs
-ToStringBinary``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
+ToStringBinary<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The decimal number to convert. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number to convert. 
 
 
 <br>
 <br>
 
-### ToStringPacked\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### ToStringPacked&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Returns as a string the 'memory' representation of a packed decimal number.
 
 ```cs
-ToStringPacked``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
+ToStringPacked<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The decimal number to convert. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number to convert. 
 
 
 <br>
 <br>
 
-### ToStringZoned\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### ToStringZoned&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Returns as a string the 'memory' representation of a zoned decimal number.
 
 ```cs
-ToStringZoned``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
+ToStringZoned<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The decimal number to convert. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The decimal number to convert. 
 
 
 <br>
 <br>
 
-### ToTime\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
+### ToTime&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html))
 
 Converts a fixed decimal number to a time in the specified format.
 
 ```cs
-ToTime``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, ASNA.DataGate.Common.DateTimeFormat format);
+ToTime<T,U>(Runtime.FixedDecimal(<T>, <T>) source, ASNA.DataGate.Common.DateTimeFormat format);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The fixed decimal number to convert. 
 | [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | format | The time format of decimal value to convert. 
 
 
 <br>
 <br>
 
-### ToTimestamp\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html))
+### ToTimestamp&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)))
 
 Converts a fixed decimal number to a timestamp.
 
 ```cs
-ToTimestamp``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source);
+ToTimestamp<T,U>(Runtime.FixedDecimal(<T>, <T>) source);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | source | The fixed decimal number to convert. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | source | The fixed decimal number to convert. 
 
 
 <br>

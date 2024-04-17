@@ -2,7 +2,7 @@
 title: Spooler Class
 ---
 
-Provides the ifrastucture to manage spooled output from print files.
+Provides the infrastructure to manage spooled output from print files.
 
 **Namespace:** ASNA.QSys.Runtime.JobSupport <br/>
 **Assembly:** ASNA.QSys.Runtime
@@ -14,7 +14,7 @@ Provides the ifrastucture to manage spooled output from print files.
 
 ## Remarks
 
-Provides the ifrastucture to manage spooled output from print files.
+Provides the infrastructure to manage spooled output from print files.
 
 [//]: # ($$TODO: Complete the Remarks section.)
 
@@ -77,7 +77,7 @@ ClearQueue(String queueName);
 When overridden in a derived class, copies a Spooled File to a Database File.
 
 ```cs
-CopyFileToDatabaseFile(String spoolFileName, String toDatabaseFile, String job, String spoolNumber, String createdDate, String toMember, Boolean replaceRecords, ASNA.QSys.Runtime.JobSupport.SpoolerControlCharacter controlCharacter);
+CopyFileToDatabaseFile(String spoolFileName, String toDatabaseFile, String job, String spoolNumber, String createdDate, String toMember, Boolean replaceRecords, Runtime.JobSupport.SpoolerControlCharacter controlCharacter);
 ```
 
 #### Parameters
@@ -127,7 +127,7 @@ DeleteFile(String spoolFileName, String jobId, String spoolNumber);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 
@@ -213,7 +213,7 @@ HoldFile(String spoolFileName, String jobId, String spoolNumber);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 
@@ -251,7 +251,7 @@ MoveFile(String spoolFileName, String jobId, String spoolNumber, String newQueue
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newQueueName | The name of the output queue to have the spool file. 
@@ -290,7 +290,7 @@ ReleaseFile(String spoolFileName, String jobId, String spoolNumber);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 
@@ -347,7 +347,7 @@ SaveFile(String spoolFileName, String jobId, String spoolNumber);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 
@@ -367,7 +367,7 @@ SetFileFormType(String spoolFileName, String jobId, String spoolNumber, String n
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newFormType | The new form type for the spool file. 
@@ -388,7 +388,7 @@ SetFileSaveAfter(String spoolFileName, String jobId, String spoolNumber, Boolean
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | newValue | true to save the file after being printed; otherwise false. 
@@ -409,7 +409,7 @@ SetFileUserData(String spoolFileName, String jobId, String spoolNumber, String n
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spoolfile name. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Spool file name. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobId | The job identifier that created the spool file. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | The spool file number. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newUserData | The new value of the user data. 

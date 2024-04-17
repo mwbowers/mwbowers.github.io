@@ -1,5 +1,5 @@
 ---
-title: CharArray`1 Class
+title: CharArray<T> Class
 ---
 
 Represents a unidimensional fixed-size array of characters.
@@ -23,11 +23,11 @@ Represents a unidimensional fixed-size array of characters.
 
 | Name |  Description 
 | --- | --- 
-| **CharArray**( [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) ) | Initializes a CharArray out of an array of char elements.
+| **CharArray**( [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) ) | Initializes a CharArray out of an array of char elements.
 
 <br>
 
-### CharArray( [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) )
+### CharArray( [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) )
 
 Initializes a CharArray out of an array of char elements.
 
@@ -39,7 +39,7 @@ CharArray( Char[] array );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | array | The array of char elements 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | array | The array of char elements 
 
 <br>
 
@@ -51,7 +51,7 @@ CharArray( Char[] array );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | Array | Gets the array that holds the values of the CharArray. | 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | Array | Gets the array that holds the values of the CharArray. | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Indexer over the array, gets or sets the element at that position. | index /* Index of the desired element. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the number of elements in the CharArray. | 
 
@@ -63,8 +63,8 @@ CharArray( Char[] array );
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears all elements of the array to their default value. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromchar[]-int32)([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a char[] into this array, starting at the given position. | 
-| [IEnumerator]($$TODO-Collections.Generic.IEnumerator.html) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [CopyFrom](#copyfromchar[]-int32)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a char[] into this array, starting at the given position. | 
+| [IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0) | [GetEnumerator](#getenumerator)() | Get an IEnumerator to iterate over the elements of the array. | The IEnumerator object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Sort](#sortboolean-int32-int32)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array according to their value. | 
 
 <br>
@@ -82,7 +82,7 @@ Clear();
 <br>
 <br>
 
-### CopyFrom([Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### CopyFrom([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy elements of a char[] into this array, starting at the given position.
 
@@ -94,7 +94,7 @@ CopyFrom(Char[] sourceArray, Int32 targetStartAt);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | sourceArray | The array from where to copy. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | sourceArray | The array from where to copy. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0. 
 
 
@@ -111,7 +111,7 @@ GetEnumerator();
 
 #### Returns
 
-[IEnumerator]($$TODO-Collections.Generic.IEnumerator.html)
+[IEnumerator](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0)
 
 The IEnumerator object.
 

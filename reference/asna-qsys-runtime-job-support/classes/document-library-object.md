@@ -83,7 +83,7 @@ DocumentLibraryObject( String dlsRootName );
 Checks that an object exists in the DLO Root, if the object does not exists it throws a CPF exception.
 
 ```cs
-Check(String dloName, String parentFolder, ASNA.QSys.Runtime.JobSupport.DLOType objectType);
+Check(String dloName, String parentFolder, Runtime.JobSupport.DLOType objectType);
 ```
 
 #### Parameters

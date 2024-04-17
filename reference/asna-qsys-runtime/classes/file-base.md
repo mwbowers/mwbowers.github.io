@@ -26,7 +26,7 @@ Defines common functionality for files (Database, Printfile, Workstation)
 | Name |  Description 
 | --- | --- 
 | [FileBase](#filebasestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileBase class. 
-| [FileBase](#filebasestring-action)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Action]($$TODO-Action.html)) | Initializes a new instance of the FileBase class. 
+| [FileBase](#filebasestring-action)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)) | Initializes a new instance of the FileBase class. 
 
 <br>
 
@@ -46,7 +46,7 @@ FileBase( String dclFileName );
 
 <br>
 
-### FileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Action]($$TODO-Action.html) )
+### FileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) )
 
 Initializes a new instance of the FileBase class.
 
@@ -59,7 +59,7 @@ FileBase( String dclFileName, Action infSR );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dclFileName | Field name for this file in the program. 
-| [Action]($$TODO-Action.html) | infSR | InfSR delegate. This is the method to call when a file error occurs. 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | infSR | InfSR delegate. This is the method to call when a file error occurs. 
 
 <br>
 
@@ -71,18 +71,17 @@ FileBase( String dclFileName, Action infSR );
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
+| [AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program. | 
-| [Action]($$TODO-Action.html) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsEof | Gets or sets the IsEof flag of the file, true when the file is at End of File. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsEqual | Gets or sets the IsEqual flag of the file, true when a record with the same key was found in a file operation. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFound | Gets or sets the IsFound flag of the file, true when a record is found. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open. | 
 | [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) | LastException | Gets the RuntimeException that resulted from a file operation. | 
-
-| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
-| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-3)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)[] >  | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset, and the array of field names as arguments. | 
-| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset, and the array of field names as arguments. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StatusCode | Gets the status code resulting from a file operation. | 
 
 <br>
@@ -92,80 +91,80 @@ FileBase( String dclFileName, Action infSR );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocate DataSet buffer. | DataSet buffer.
+| [AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm) | [allocateBuffer](#allocatebuffer)() | Allocate DataSet buffer. | DataSet buffer.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using the relative record number. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using the relative record number. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using the relative record number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using the relative record number. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using the relative record number. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | When overriden in a derived class, read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using a key. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainByRRN](#chainbyrrnstring-int32-boolean-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using the relative record number. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | When overriden in a derived class, read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record format using a key. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ChainKey](#chainkeystring-adgkeytable-boolean-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Read a record format using a key. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using the relative record number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [chainRRN](#chainrrnstring-int32-boolean-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Read a record format using the relative record number. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [close](#close)() | When overriden in a derived class, close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Close a file. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Close a file. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closeoutchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [deleteByRRN](#deletebyrrnstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | When overriden in a derived class deletes a record using its relative record number. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Delete a record using its relative record number. | True if record was found, otherwise false.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Delete a record using its relative record number. | True if record was found, otherwise false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [DeleteByRRN](#deletebyrrnstring-int32-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Delete a record using its relative record number. | True if record was found, otherwise false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [dumpRecord](#dumprecord)() | Dumps the current DataSet record into a string buffer. The values are put in the string buffer according to the RPG type of the corresponding record field. | The record as a string buffer.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [DataColumn]($$TODO-Data.DataColumn.html) | [GetDataColumn](#getdatacolumnstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Data Column from DataSet. | The Data Column referenced by input parameters.
-| [DataTable]($$TODO-Data.DataTable.html) | [GetDataTable](#getdatatablestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Support for RPG's lack of indexed properties. | Data table.
+| [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-8.0) | [GetDataColumn](#getdatacolumnstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get Data Column from DataSet. | The Data Column referenced by input parameters.
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | [GetDataTable](#getdatatablestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Support for RPG's lack of indexed properties. | Data table.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [insert](#insertstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Add a new record to a file given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Insert](#insertstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Add a new record to a file given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Insert](#insertstring-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Add a new record to a file given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Insert](#insertstring-int32-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Add a new record to a file given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [loadRecord](#loadrecordstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Load a record in the DataSet with values extracted from a string buffer. The values are kept in the string buffer according to the RPG type of the corresponding record field. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBuffer](#populatebufferstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBufferWithFields](#populatebufferwithfieldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Invoke the delegate to copy values from the given program fields into the dataset record. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBufferWithFields](#populatebufferwithfieldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Invoke the delegate to copy values from the given program fields into the dataset record. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateFields](#populatefields)() | Invoke the delegate to copy values from the dataset record to the program fields. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [setStatusCodeFromLastException](#setstatuscodefromlastexception)() | Set and return the Status Code from last exception. | Last exception Status Code.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Update a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Update a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[]-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Update a record given its record format name using field values from a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Update a record given its record format name using field values from a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[]-ids-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Update a record given its record format name using field values from a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Update a record given its record format name using field values from a data structure. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-ids-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Update a record given its record format name using field values from a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-ids-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name using field values from a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[]-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name using field values from a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Update a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [updateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Update a record given its record format name, only those fields indicated in fieldNames. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name, only those fields indicated in fieldNames. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[]-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-ids-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name using field values from a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-char[]-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name using field values from a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Update](#updatestring-indicator[]-indicator)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Update a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [updateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Update a record given its record format name, only those fields indicated in fieldNames. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [UpdateFlds](#updatefldsstring-string[]-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record given its record format name, only those fields indicated in fieldNames. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Write a record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Write a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a record given its record format name, getting the field values out of a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a record given its record format name, getting the field values out of a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name, getting the field values out of a data structure. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a record given its record format name, getting the field values out of a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a record given its record format name, getting the field values out of a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name, getting the field values out of a data structure. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [writeSubfile](#writesubfilestring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Write a subfile record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Write a subfile record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [writeSubfile](#writesubfilestring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a subfile record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [writeSubfile](#writesubfilestring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [writeSubfile](#writesubfilestring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-ids)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html)) | Write a subfile record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-ids-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-ids-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [WriteSubfile](#writesubfilestring-int32-char[]-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record given its record format name. | 
 
 <br>
 <br>
@@ -180,7 +179,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
+[AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm)
 
 DataSet buffer.
 
@@ -213,7 +212,7 @@ ChainByRRN(String formatName, Int32 rrn, Boolean noLock);
 Read a record format using the relative record number.
 
 ```cs
-ChainByRRN(String formatName, Int32 rrn, Boolean noLock, ref Char err);
+ChainByRRN(String formatName, Int32 rrn, Boolean noLock, out Char err);
 ```
 
 #### Parameters
@@ -255,7 +254,7 @@ ChainByRRN(String formatName, Int32 rrn, Boolean noLock, ASNA.QSys.Runtime.IDS i
 Read a record format using the relative record number.
 
 ```cs
-ChainByRRN(String formatName, Int32 rrn, Boolean noLock, ASNA.QSys.Runtime.IDS intoDS, ref Char err);
+ChainByRRN(String formatName, Int32 rrn, Boolean noLock, ASNA.QSys.Runtime.IDS intoDS, out Char err);
 ```
 
 #### Parameters
@@ -272,7 +271,7 @@ ChainByRRN(String formatName, Int32 rrn, Boolean noLock, ASNA.QSys.Runtime.IDS i
 <br>
 <br>
 
-### chainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### chainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 When overriden in a derived class, read a record format using a key.
 
@@ -285,14 +284,14 @@ chainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 
 
 <br>
 <br>
 
-### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Read a record format using a key.
 
@@ -305,14 +304,14 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 
 
 <br>
 <br>
 
-### chainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### chainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Read a record format using a key.
 
@@ -325,7 +324,7 @@ chainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | IDS object that receives the data read. 
 
@@ -333,12 +332,12 @@ chainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 <br>
 <br>
 
-### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Read a record format using a key.
 
 ```cs
-ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, ref Char err);
+ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, out Char err);
 ```
 
 #### Parameters
@@ -346,7 +345,7 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
@@ -354,12 +353,12 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 <br>
 <br>
 
-### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Read a record format using a key.
 
 ```cs
-ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, ref ASNA.QSys.Runtime.Indicator err);
+ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -367,7 +366,7 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
@@ -375,7 +374,7 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 <br>
 <br>
 
-### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Read a record format using a key.
 
@@ -388,7 +387,7 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | IDS object that receives the data read. 
 
@@ -396,12 +395,12 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 <br>
 <br>
 
-### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Read a record format using a key.
 
 ```cs
-ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, ASNA.QSys.Runtime.IDS intoDS, ref Char err);
+ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, ASNA.QSys.Runtime.IDS intoDS, out Char err);
 ```
 
 #### Parameters
@@ -409,7 +408,7 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | IDS object that receives the data read. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
@@ -418,12 +417,12 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 <br>
 <br>
 
-### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### ChainKey([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Read a record format using a key.
 
 ```cs
-ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, ASNA.QSys.Runtime.IDS intoDS, ref ASNA.QSys.Runtime.Indicator err);
+ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock, ASNA.QSys.Runtime.IDS intoDS, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -431,7 +430,7 @@ ChainKey(String formatName, ASNA.DataGate.Client.AdgKeyTable key, Boolean noLock
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read. 
-| [AdgKeyTable]($$TODO-ASNA.DataGate.Client.AdgKeyTable.html) | key | An AdgKeyTable object containing the key of the record to read. 
+| [AdgKeyTable](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgKeyTableClassAdgKeyTableConstructor.htm) | key | An AdgKeyTable object containing the key of the record to read. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | intoDS | IDS object that receives the data read. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
@@ -510,7 +509,7 @@ Close();
 Close a file.
 
 ```cs
-Close(ref Char err);
+Close(out Char err);
 ```
 
 #### Parameters
@@ -572,7 +571,7 @@ True if record was found, otherwise false.
 Delete a record using its relative record number.
 
 ```cs
-DeleteByRRN(String formatName, Int32 rrn, ref Char err);
+DeleteByRRN(String formatName, Int32 rrn, out Char err);
 ```
 
 #### Parameters
@@ -628,7 +627,7 @@ GetDataColumn(String tableName, String columnName);
 
 #### Returns
 
-[DataColumn]($$TODO-Data.DataColumn.html)
+[DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-8.0)
 
 The Data Column referenced by input parameters.
 
@@ -652,7 +651,7 @@ GetDataTable(String tableName);
 
 #### Returns
 
-[DataTable]($$TODO-Data.DataTable.html)
+[DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0)
 
 Data table.
 
@@ -703,7 +702,7 @@ Insert(String formatName, Int32 rrn);
 Add a new record to a file given its record format name.
 
 ```cs
-Insert(String formatName, Int32 rrn, ref Char err);
+Insert(String formatName, Int32 rrn, out Char err);
 ```
 
 #### Parameters
@@ -755,7 +754,7 @@ populateBuffer(String formatName);
 <br>
 <br>
 
-### populateBufferWithFields([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### populateBufferWithFields([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Invoke the delegate to copy values from the given program fields into the dataset record.
 
@@ -768,7 +767,7 @@ populateBufferWithFields(String formatName, String[] fieldNames);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to fill. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | Array of the names of the fields to copy. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | Array of the names of the fields to copy. 
 
 
 <br>
@@ -822,7 +821,7 @@ Update(String formatName);
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Update a record given its record format name.
 
@@ -835,7 +834,7 @@ Update(String formatName, Char[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
 
 
 <br>
@@ -860,12 +859,12 @@ Update(String formatName, ASNA.QSys.Runtime.IDS indDS);
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Update a record given its record format name using field values from a data structure.
 
 ```cs
-Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, ref ASNA.QSys.Runtime.Indicator err);
+Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -873,7 +872,7 @@ Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.Q
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Indicator array to use in the update operation. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Indicator array to use in the update operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | IDS object where the data comes from. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
@@ -881,7 +880,7 @@ Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ASNA.Q
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Update a record given its record format name using field values from a data structure.
 
@@ -894,7 +893,7 @@ Update(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | IDS object where the data comes from. 
 
 
@@ -926,7 +925,7 @@ Update(String formatName, ASNA.QSys.Runtime.IDS optionIndicators, ASNA.QSys.Runt
 Update a record given its record format name.
 
 ```cs
-Update(String formatName, ref Char err);
+Update(String formatName, out Char err);
 ```
 
 #### Parameters
@@ -945,7 +944,7 @@ Update(String formatName, ref Char err);
 Update a record given its record format name.
 
 ```cs
-Update(String formatName, ASNA.QSys.Runtime.IDS indDS, ref Char err);
+Update(String formatName, ASNA.QSys.Runtime.IDS indDS, out Char err);
 ```
 
 #### Parameters
@@ -960,12 +959,12 @@ Update(String formatName, ASNA.QSys.Runtime.IDS indDS, ref Char err);
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Update a record given its record format name.
 
 ```cs
-Update(String formatName, Char[] optionIndicators, ref Char err);
+Update(String formatName, Char[] optionIndicators, out Char err);
 ```
 
 #### Parameters
@@ -973,7 +972,7 @@ Update(String formatName, Char[] optionIndicators, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
 
@@ -985,7 +984,7 @@ Update(String formatName, Char[] optionIndicators, ref Char err);
 Update a record given its record format name using field values from a data structure.
 
 ```cs
-Update(String formatName, ASNA.QSys.Runtime.IDS optionIndicators, ASNA.QSys.Runtime.IDS fromDS, ref Char err);
+Update(String formatName, ASNA.QSys.Runtime.IDS optionIndicators, ASNA.QSys.Runtime.IDS fromDS, out Char err);
 ```
 
 #### Parameters
@@ -1001,12 +1000,12 @@ Update(String formatName, ASNA.QSys.Runtime.IDS optionIndicators, ASNA.QSys.Runt
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Update a record given its record format name using field values from a data structure.
 
 ```cs
-Update(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, ref Char err);
+Update(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, out Char err);
 ```
 
 #### Parameters
@@ -1014,7 +1013,7 @@ Update(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS,
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | IDS object where the data comes from. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
@@ -1022,12 +1021,12 @@ Update(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS,
 <br>
 <br>
 
-### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
+### Update([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html), [Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
 
 Update a record given its record format name.
 
 ```cs
-Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ref ASNA.QSys.Runtime.Indicator err);
+Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, out ASNA.QSys.Runtime.Indicator err);
 ```
 
 #### Parameters
@@ -1035,14 +1034,14 @@ Update(String formatName, ASNA.QSys.Runtime.Indicator[] optionIndicators, ref AS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [Indicator[]](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Indicator array to use in the update operation. 
+| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | optionIndicators | Indicator array to use in the update operation. 
 | [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
 
 <br>
 <br>
 
-### updateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### updateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default.
 
@@ -1055,13 +1054,13 @@ updateFlds(String formatName, String[] fieldNames);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames |  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | The fields to update. 
 
 
 <br>
 <br>
 
-### UpdateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### UpdateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Update a record given its record format name, only those fields indicated in fieldNames.
 
@@ -1074,18 +1073,18 @@ UpdateFlds(String formatName, String[] fieldNames);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames |  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | The fields to update. 
 
 
 <br>
 <br>
 
-### UpdateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### UpdateFlds([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Update a record given its record format name, only those fields indicated in fieldNames.
 
 ```cs
-UpdateFlds(String formatName, String[] fieldNames, ref Char err);
+UpdateFlds(String formatName, String[] fieldNames, out Char err);
 ```
 
 #### Parameters
@@ -1093,7 +1092,7 @@ UpdateFlds(String formatName, String[] fieldNames, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update. 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames |  
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | The fields to update. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
 
@@ -1136,7 +1135,7 @@ Write(String formatName);
 <br>
 <br>
 
-### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name.
 
@@ -1149,7 +1148,7 @@ write(String formatName, Char[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 
 
 <br>
@@ -1193,7 +1192,7 @@ write(String formatName, ASNA.QSys.Runtime.IDS indDS);
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name.
 
@@ -1206,13 +1205,13 @@ Write(String formatName, Char[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 
 
 <br>
 <br>
 
-### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Write a record given its record format name, getting the field values out of a data structure.
 
@@ -1225,14 +1224,14 @@ write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | IDS object where the data comes from. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html))
 
 Write a record given its record format name, getting the field values out of a data structure.
 
@@ -1245,19 +1244,19 @@ Write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | IDS object where the data comes from. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/asna-qsys-runtime/classes/ids.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name, getting the field values out of a data structure.
 
 ```cs
-Write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, ref Char err);
+Write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, out Char err);
 ```
 
 #### Parameters
@@ -1265,7 +1264,7 @@ Write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, 
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 | [IDS](/reference/asna-qsys-runtime/classes/ids.html) | fromDS | IDS object where the data comes from. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
@@ -1273,12 +1272,12 @@ Write(String formatName, Char[] optionIndicators, ASNA.QSys.Runtime.IDS fromDS, 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name.
 
 ```cs
-Write(String formatName, Char[] optionIndicators, ref Char err);
+Write(String formatName, Char[] optionIndicators, out Char err);
 ```
 
 #### Parameters
@@ -1286,7 +1285,7 @@ Write(String formatName, Char[] optionIndicators, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
 
@@ -1298,7 +1297,7 @@ Write(String formatName, Char[] optionIndicators, ref Char err);
 Write a record given its record format name.
 
 ```cs
-Write(String formatName, ASNA.QSys.Runtime.IDS indDS, ref Char err);
+Write(String formatName, ASNA.QSys.Runtime.IDS indDS, out Char err);
 ```
 
 #### Parameters
@@ -1376,7 +1375,7 @@ writeSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS);
 Write a subfile record given its record format name.
 
 ```cs
-WriteSubfile(String formatName, Int32 rrn, ref Char err);
+WriteSubfile(String formatName, Int32 rrn, out Char err);
 ```
 
 #### Parameters
@@ -1391,7 +1390,7 @@ WriteSubfile(String formatName, Int32 rrn, ref Char err);
 <br>
 <br>
 
-### writeSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### writeSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a subfile record given its record format name.
 
@@ -1405,7 +1404,7 @@ writeSubfile(String formatName, Int32 rrn, Char[] optionIndicators);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number of the record to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 
 
 <br>
@@ -1436,7 +1435,7 @@ WriteSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS);
 Write a subfile record given its record format name.
 
 ```cs
-WriteSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS, ref Char err);
+WriteSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS, out Char err);
 ```
 
 #### Parameters
@@ -1452,7 +1451,7 @@ WriteSubfile(String formatName, Int32 rrn, ASNA.QSys.Runtime.IDS indDS, ref Char
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a subfile record given its record format name.
 
@@ -1466,18 +1465,18 @@ WriteSubfile(String formatName, Int32 rrn, Char[] optionIndicators);
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number of the record to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 
 
 <br>
 <br>
 
-### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### WriteSubfile([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a subfile record given its record format name.
 
 ```cs
-WriteSubfile(String formatName, Int32 rrn, Char[] optionIndicators, ref Char err);
+WriteSubfile(String formatName, Int32 rrn, Char[] optionIndicators, out Char err);
 ```
 
 #### Parameters
@@ -1486,7 +1485,7 @@ WriteSubfile(String formatName, Int32 rrn, Char[] optionIndicators, ref Char err
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number of the record to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
 

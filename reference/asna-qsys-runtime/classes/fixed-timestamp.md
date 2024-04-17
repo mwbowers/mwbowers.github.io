@@ -1,5 +1,5 @@
 ---
-title: FixedTimestamp`1 Class
+title: FixedTimestamp<T> Class
 ---
 
 Holds a fixed-timestamp value with the given separator.
@@ -45,7 +45,7 @@ Holds a fixed-timestamp value with the given separator.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compares this instance to a specified DateTime or FixedSize type and returns an indication of their relative values. | A signed number indicating the relative values of this instance and input value. If object cannot be compared, it throws exception.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-date-time, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert a DateTime to a FixedTimestamp of the same separator. | A new FixedTimestamp value with the same separator.
+| [IFixedSizeType&lt;System.DateTime&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert a DateTime to a FixedTimestamp of the same separator. | A new FixedTimestamp value with the same separator.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToNumericString](#tonumericstring)() | Convert to numeric string representation of the FixedTimestamp, according to its format with no separators. | The string representation of the FixedTimestamp value with no separators.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to the string representation of the FixedTimestamp, according to its format and separator. | The string representation of the FixedTimestamp value.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeseparator)([DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to the string of the FixedTimestamp, according to the given separator. | The string representation of the FixedTimestamp value, with the given separator.
@@ -93,7 +93,7 @@ Convert(DateTime value);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-date-time, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html)
+[IFixedSizeType&lt;System.DateTime&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html)
 
 A new FixedTimestamp value with the same separator.
 
@@ -142,7 +142,7 @@ The string representation of the FixedTimestamp value.
 Convert to the string of the FixedTimestamp, according to the given separator.
 
 ```cs
-ToString(ASNA.QSys.Runtime.DateTimeSeparator separator);
+ToString(Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters

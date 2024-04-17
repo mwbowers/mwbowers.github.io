@@ -25,7 +25,7 @@ Defines Fetch Orientation types.
 | --- | --- 
 | [FetchOrientation](#fetchorientationdbconnection-string)([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of QueryCursor class. 
 | [FetchOrientation](#fetchorientationsqlpreparedstatement)([SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html)) | Initializes a new instance of QueryCursor class. 
-| [FetchOrientation](#fetchorientationdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Initializes a new instance of QueryCursor class. 
+| [FetchOrientation](#fetchorientationdbconnection-string-dbparm-)([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Initializes a new instance of QueryCursor class. 
 
 <br>
 
@@ -51,7 +51,7 @@ FetchOrientation( Data.Common.DbConnection sqlConnection, String SelectStatement
 Initializes a new instance of QueryCursor class.
 
 ```cs
-FetchOrientation( ASNA.QSys.Runtime.JobSupport.SqlPreparedStatement preparedStatement );
+FetchOrientation( Runtime.JobSupport.SqlPreparedStatement preparedStatement );
 ```
 
 #### Parameters
@@ -62,12 +62,12 @@ FetchOrientation( ASNA.QSys.Runtime.JobSupport.SqlPreparedStatement preparedStat
 
 <br>
 
-### FetchOrientation( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) )
+### FetchOrientation( [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) )
 
 Initializes a new instance of QueryCursor class.
 
 ```cs
-FetchOrientation( Data.Common.DbConnection sqlConnection, String selectStatementWithParms, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters );
+FetchOrientation( Data.Common.DbConnection sqlConnection, String selectStatementWithParms, Runtime.JobSupport.DBParm[] parameters );
 ```
 
 #### Parameters
@@ -76,7 +76,7 @@ FetchOrientation( Data.Common.DbConnection sqlConnection, String selectStatement
 | --- | --- | ---
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | sqlConnection | SQL Connection. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | selectStatementWithParms | SELECT Statement (with parameters). 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | Parameter values. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | Parameter values. 
 
 <br>
 
@@ -104,7 +104,7 @@ FetchOrientation( Data.Common.DbConnection sqlConnection, String selectStatement
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Fetch](#fetchint32-fetchorientation)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/asna-qsys-runtime/job-support-query-cursor-fetch-orientation.html)) | Fetches a row according to the orientation requested. | True if the fetch was successful.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FetchAbsolute](#fetchabsoluteint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows until it gets to the indicated absolute row. | True if the fetch was successful.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [FetchRelative](#fetchrelativeint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows in a relative way. | True if the fetch was successful.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendbparm[])([DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Opens the Cursor using the parameters passed in. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendbparm[])([DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Opens the Cursor using the parameters passed in. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#open)() | Opens the Cursor. Throws exception if cursor already opened. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSelectStatement](#setselectstatementstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of SetSelectStatement class. | 
 
@@ -128,7 +128,7 @@ Close();
 Fetches a row according to the orientation requested.
 
 ```cs
-Fetch(Int32 expectedResults, ASNA.QSys.Runtime.JobSupport.QueryCursor.FetchOrientation orientation);
+Fetch(Int32 expectedResults, Runtime.JobSupport.QueryCursor.FetchOrientation orientation);
 ```
 
 #### Parameters
@@ -180,19 +180,19 @@ FetchRelative(Int32 expectedResults, Int32 relativeRowCount);
 <br>
 <br>
 
-### Open([DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### Open([DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Opens the Cursor using the parameters passed in.
 
 ```cs
-Open(ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+Open(Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | The array of parameters. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | The array of parameters. 
 
 
 <br>

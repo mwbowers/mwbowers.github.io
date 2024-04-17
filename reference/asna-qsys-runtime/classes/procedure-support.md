@@ -25,7 +25,7 @@ Provides static methods to support finding a class used in dynamic calls (RPG's 
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [Func&lt;object,object&gt;]($$TODO-Func<object,object>.html) | AssemblyLoader | Delegate to set a custom assembly loader. By default, assembly loading uses the DefaultLoader method in this class. | 
+| [Func&lt;object,object&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0) | AssemblyLoader | Delegate to set a custom assembly loader. By default, assembly loading uses the DefaultLoader method in this class. | 
 
 <br>
 <br>
@@ -37,7 +37,7 @@ Provides static methods to support finding a class used in dynamic calls (RPG's 
 | [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly) | [DefaultLoader](#defaultloaderstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Loads the assembly. | The loaded assembly instance or null if fails to find it.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [MethodInfo]($$TODO-Reflection.MethodInfo.html) | [FindEntryMethod](#findentrymethodtype)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Finds *Entry procedure method. | The method information if found; otherwise null.
+| [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0) | [FindEntryMethod](#findentrymethodtype)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Finds *Entry procedure method. | The method information if found; otherwise null.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [FindType](#findtypestring-assembly)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Assembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly)) | Finds a Type by name in an assembly. | The type if successful. If given assembly is no valid it throws an exception.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
@@ -88,7 +88,7 @@ FindEntryMethod(Type classType);
 
 #### Returns
 
-[MethodInfo]($$TODO-Reflection.MethodInfo.html)
+[MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0)
 
 The method information if found; otherwise null.
 

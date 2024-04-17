@@ -25,13 +25,13 @@ Provide fixed length decimal storage and operations.
 
 | Name |  Description 
 | --- | --- 
-| **DecimalOps**(  ) | Empty constuctor. Instantiates a new DecimalOps class.
+| **DecimalOps**(  ) | Empty constructor. Instantiates a new DecimalOps class.
 
 <br>
 
 ### DecimalOps(  )
 
-Empty constuctor. Instantiates a new DecimalOps class.
+Empty constructor. Instantiates a new DecimalOps class.
 
 ```cs
 DecimalOps(  );
@@ -51,7 +51,7 @@ DecimalOps(  );
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ConvertToString](#converttostringdecimal-int32-int32-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals and converts to string. | Fixed-length numeric result as string.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [DecimalToMemUnits](#decimaltomemunitsdecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert a decimal of the given size to its memory layout representation. | The string memory representation.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [DecimalToMemUnitsSigned](#decimaltomemunitssigneddecimal-int32-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert a decimal of the given size to its memory layout representation, encoding the sign in each of the digits. | The string memory representation.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Divide](#dividedecimal-decimal-decimal-int32-boolean-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Executes a DIVIDE operation. | 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [Divide](#dividedecimal-decimal-outdecimal-int32-boolean-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Executes a DIVIDE operation. | The result of the decimal division with the requested resulting decimal positions, truncated or rounded.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixateDecimal](#fixatedecimalint32-int32-decimal-boolean)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
@@ -59,9 +59,9 @@ DecimalOps(  );
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixDecimalH](#fixdecimalhdecimal-int32-int32-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals using half adjust. | Fixed-length numeric result.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [FixI4](#fixi4int32-int32-int32-boolean)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals. | Fixed-length numeric result.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetIndicators](#getindicatorsdecimal-boolean-boolean-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the HI-LO-EQ indicator conditions. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetIndicators](#getindicatorsdecimal-outboolean-outboolean-outboolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the HI-LO-EQ indicator conditions. | 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MakeHiVal](#makehivalint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Makes a HI-VALUE. | 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MakeHiVal](#makehivalint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Makes a decimal HI-VALUE. | The highest decimal value that fits in the given length and decimal positions.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MapFromPacked](#mapfrompackeddecimal-int32)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts Packed format number to a string. | The packed number converted to a string.
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | [MapToPacked](#maptopackedstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts number in a string to a Packed format numeric value. | The converted packed decimal.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
@@ -161,7 +161,7 @@ The string memory representation.
 Executes a DIVIDE operation.
 
 ```cs
-Divide(Decimal f1, Decimal f2, ref Decimal globalRemainder, Int32 resultDecimals, Boolean isRoundUp, Boolean checkOverflow);
+Divide(Decimal f1, Decimal f2, out Decimal globalRemainder, Int32 resultDecimals, Boolean isRoundUp, Boolean checkOverflow);
 ```
 
 #### Parameters
@@ -179,7 +179,7 @@ Divide(Decimal f1, Decimal f2, ref Decimal globalRemainder, Int32 resultDecimals
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-
+The result of the decimal division with the requested resulting decimal positions, truncated or rounded.
 
 
 <br>
@@ -298,7 +298,7 @@ Fixed-length numeric result.
 Gets the HI-LO-EQ indicator conditions.
 
 ```cs
-GetIndicators(Decimal number, ref Boolean HiIndicator, ref Boolean LoIndicator, ref Boolean EqIndicator);
+GetIndicators(Decimal number, out Boolean HiIndicator, out Boolean LoIndicator, out Boolean EqIndicator);
 ```
 
 #### Parameters
@@ -316,7 +316,7 @@ GetIndicators(Decimal number, ref Boolean HiIndicator, ref Boolean LoIndicator, 
 
 ### MakeHiVal([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Makes a HI-VALUE.
+Makes a decimal HI-VALUE.
 
 ```cs
 MakeHiVal(Int32 length, Int32 decimals);
@@ -333,7 +333,7 @@ MakeHiVal(Int32 length, Int32 decimals);
 
 [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)
 
-
+The highest decimal value that fits in the given length and decimal positions.
 
 
 <br>

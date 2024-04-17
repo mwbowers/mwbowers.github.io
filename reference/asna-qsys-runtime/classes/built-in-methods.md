@@ -26,17 +26,18 @@ Contains extension methods for handling Built-in functions according to RPG sema
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIInt](#biintdecimal-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIInt](#biintsingle-boolean)([Single]($$TODO-Single.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIInt](#biintdouble-boolean)([Double]($$TODO-Double.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIInt](#biintsingle-boolean)([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIInt](#biintdouble-boolean)([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIInt](#biintstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIInt\\`\\`1](#biint\`\`1fixedstring{``0}-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIInt\\`\\`2](#biint\`\`2fixeddecimal{``0-``1}-boolean)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIInt&lt;T,U&gt;](#biint&lt;t,u&gt;fixeddecimal(<t>-<t>)-boolean)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIInt&lt;T&gt;](#biint&lt;t&gt;fixedstring<t>-boolean)([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string<t>.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust. | The number converted.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunsdecimal-boolean)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunssingle-boolean)([Single]($$TODO-Single.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunsdouble-boolean)([Double]($$TODO-Double.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunsint32-boolean)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunssingle-boolean)([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunsdouble-boolean)([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [BIUns](#biunsstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIUns\\`\\`1](#biuns\`\`1fixedstring{``0}-boolean)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIUns\\`\\`2](#biuns\`\`2fixeddecimal{``0-``1}-boolean)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIUns&lt;T,U&gt;](#biuns&lt;t,u&gt;fixeddecimal(<t>-<t>)-boolean)([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [BIUns&lt;T&gt;](#biuns&lt;t&gt;fixedstring<t>-boolean)([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string<t>.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust. | The number converted.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
@@ -73,7 +74,7 @@ The number converted.
 <br>
 <br>
 
-### BIInt([Single]($$TODO-Single.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIInt([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Integer with half adjust.
 
@@ -85,7 +86,7 @@ BIInt(Single num, Boolean halfAdjust);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Single]($$TODO-Single.html) | num | Input floating number. 
+| [Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0) | num | Input floating number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 #### Returns
@@ -98,7 +99,7 @@ The number converted.
 <br>
 <br>
 
-### BIInt([Double]($$TODO-Double.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIInt([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Integer with half adjust.
 
@@ -110,7 +111,7 @@ BIInt(Double num, Boolean halfAdjust);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Double]($$TODO-Double.html) | num | Input double number. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | num | Input double number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 #### Returns
@@ -148,38 +149,38 @@ The number converted.
 <br>
 <br>
 
-### BIInt\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIInt&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Integer with half adjust.
 
 ```cs
-BIInt``1(ASNA.QSys.Runtime.FixedString{``0} num, Boolean halfAdjust);
+BIInt<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Boolean halfAdjust);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | num | Input fixed-string number. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | num | Input fixed-decimal number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 
 <br>
 <br>
 
-### BIInt\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIInt&lt;T&gt;([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string<t>.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Integer with half adjust.
 
 ```cs
-BIInt``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Boolean halfAdjust);
+BIInt<T>(ASNA.QSys.Runtime.FixedString<T> num, Boolean halfAdjust);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num | Input fixed-decimal number. 
+| [FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string<t>.html) | num | Input fixed-string number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 
@@ -211,19 +212,19 @@ The number converted.
 <br>
 <br>
 
-### BIUns([Single]($$TODO-Single.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIUns([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Unsigned Integer with half adjust.
 
 ```cs
-BIUns(Single num, Boolean halfAdjust);
+BIUns(Int32 num, Boolean halfAdjust);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Single]($$TODO-Single.html) | num | Input floating number. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | num | Input integer number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 #### Returns
@@ -236,7 +237,32 @@ The number converted.
 <br>
 <br>
 
-### BIUns([Double]($$TODO-Double.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIUns([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Convert to Unsigned Integer with half adjust.
+
+```cs
+BIUns(Single num, Boolean halfAdjust);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0) | num | Input floating number. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
+
+#### Returns
+
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+
+The number converted.
+
+
+<br>
+<br>
+
+### BIUns([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Unsigned Integer with half adjust.
 
@@ -248,7 +274,7 @@ BIUns(Double num, Boolean halfAdjust);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Double]($$TODO-Double.html) | num | Input double number. 
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | num | Input double number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 #### Returns
@@ -286,38 +312,38 @@ The number converted.
 <br>
 <br>
 
-### BIUns\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIUns&lt;T,U&gt;([FixedDecimal](/reference/asna-qsys-runtime/classes/fixed-decimal.html)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics),[&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Unsigned Integer with half adjust.
 
 ```cs
-BIUns``1(ASNA.QSys.Runtime.FixedString{``0} num, Boolean halfAdjust);
+BIUns<T,U>(ASNA.QSys.Runtime.FixedDecimal(``0,``1) num, Boolean halfAdjust);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html) | num | Input number as fixed-string. 
+| [FixedDecimal(&lt;T&gt;, &lt;T&gt;)](/reference/asna-qsys-runtime/fixed-decimal.html) | num | Input fixed-decimal number. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 
 <br>
 <br>
 
-### BIUns\`\`2([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### BIUns&lt;T&gt;([FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string<t>.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Convert to Unsigned Integer with half adjust.
 
 ```cs
-BIUns``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} num, Boolean halfAdjust);
+BIUns<T>(ASNA.QSys.Runtime.FixedString<T> num, Boolean halfAdjust);
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | num | Input fixed-decimal number. 
+| [FixedString&lt;T&gt;](/reference/asna-qsys-runtime/fixed-string<t>.html) | num | Input number as fixed-string. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise. 
 
 

@@ -1,5 +1,5 @@
 ---
-title: LocalScopeMultiDS`1 Class
+title: LocalScopeMultiDS<T> Class
 ---
 
 Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects.
@@ -7,7 +7,7 @@ Contains functionality to support locally scoped multiple occurrence data struct
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> LocalScopeMultiDS`1
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> LocalScopeMultiDS<T>
 
 <br>
 <br>
@@ -54,13 +54,13 @@ LocalScopeMultiDS( Int32 arrayLength );
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | BufferDescription | Returns the flat description of the data structure buffer. | 
-| [T]($$TODO-T.html) | Current | Gets the current occurrence of this multiple occurrence data structure. | 
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | Current | Gets the current occurrence of this multiple occurrence data structure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DSName | Gets the name of the current occurrence. | 
 | [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Fields | Gets the layout of the current occurrence. | 
-| [T]($$TODO-T.html) | Item([Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the LocalScopeDS object at the given index. | i /* Desired index. */
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | Item([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the LocalScopeDS object at the given index. | i /* Desired index. */
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ItemLength | Gets the length of the individual data structures in this MODS. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Length | Gets the length of the multi occurrence data structure. | 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Occurrence | Gets the indices of the current occurrence of the multi data structure. | 
 
 <br>
 <br>
@@ -80,11 +80,11 @@ LocalScopeMultiDS( Int32 arrayLength );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Load](#loadstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Loads the current occurrence from a string. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [LoadAll](#loadallstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Copies the given string into the multi-occurrence data structure. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ObjectToParm](#objecttoparmas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ObjectToParm](#objecttoparmas400program-int32[]-int32)([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Gets the contents of all occurrences of the multi data structure as a string. | A copy of the contents of the multi-occurrence data structure as a string.
-| [T]($$TODO-T.html) | [ToT](#tot)() | Get the current occurrence. | The current occurrence.
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | [ToT](#tot)() | Get the current occurrence. | The current occurrence.
 
 <br>
 <br>
@@ -185,7 +185,7 @@ LoadAll(String source);
 <br>
 <br>
 
-### ObjectToParm([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ObjectToParm([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program.
 
@@ -197,15 +197,15 @@ ObjectToParm(ASNA.DataGate.Client.As400Program program, Int32[] indices, Int32 d
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html) | program | As400Program object describing the program call. 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
+| [As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm) | program | As400Program object describing the program call. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dim | The dimension nesting of the parameter. 
 
 
 <br>
 <br>
 
-### ParmToObject([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ParmToObject([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program.
 
@@ -217,8 +217,8 @@ ParmToObject(ASNA.DataGate.Client.As400Program program, Int32[] indices, Int32 d
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html) | program | As400Program object describing the program call. 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
+| [As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm) | program | As400Program object describing the program call. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dim | The dimension nesting of the parameter. 
 
 
@@ -253,7 +253,7 @@ ToT();
 
 #### Returns
 
-[T]($$TODO-T.html)
+[T](https://learn.microsoft.com/en-us/dotnet/standard/generics)
 
 The current occurrence.
 

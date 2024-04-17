@@ -32,13 +32,13 @@ This interface should be implemented by any DataStructure class if an object of 
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [ProgParm]($$TODO-ASNA.DataGate.DataLink.ProgParm.html) | [GetProgParm](#getprogparmdatadirection)([DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html)) | Returns a ProgParm for a DS required by a Call to an external IBMi program. | A ProgParm used in CALL.
-| [ProgParm]($$TODO-ASNA.DataGate.DataLink.ProgParm.html) | [GetProgParm](#getprogparmdatadirection-int32)([DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a ProgParm for a MODS required by a Call to an external IBMi program. | A ProgParm used in CALL.
+| [ProgParm](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAs400ProgramClassAppendParmMethod.htm) | [GetProgParm](#getprogparmdatadirection)([DataDirection](reference/datagate-client/data-direction-enumeration.html)) | Returns a ProgParm for a DS required by a Call to an external IBMi program. | A ProgParm used in CALL.
+| [ProgParm](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAs400ProgramClassAppendParmMethod.htm) | [GetProgParm](#getprogparmdatadirection-int32)([DataDirection](reference/datagate-client/data-direction-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a ProgParm for a MODS required by a Call to an external IBMi program. | A ProgParm used in CALL.
 
 <br>
 <br>
 
-### GetProgParm([DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html))
+### GetProgParm([DataDirection](reference/datagate-client/data-direction-enumeration.html))
 
 Returns a ProgParm for a DS required by a Call to an external IBMi program.
 
@@ -50,11 +50,11 @@ GetProgParm(ASNA.DataGate.Common.DataDirection direction);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | The DataDirection value that indicates whether the parameter is Input, Output, or Both. 
+| [DataDirection](reference/datagate-client/data-direction-enumeration.html) | direction | The DataDirection value that indicates whether the parameter is Input, Output, or Both. 
 
 #### Returns
 
-[ProgParm]($$TODO-ASNA.DataGate.DataLink.ProgParm.html)
+[ProgParm](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAs400ProgramClassAppendParmMethod.htm)
 
 A ProgParm used in CALL.
 
@@ -62,7 +62,7 @@ A ProgParm used in CALL.
 <br>
 <br>
 
-### GetProgParm([DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetProgParm([DataDirection](reference/datagate-client/data-direction-enumeration.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Gets a ProgParm for a MODS required by a Call to an external IBMi program.
 
@@ -74,12 +74,12 @@ GetProgParm(ASNA.DataGate.Common.DataDirection direction, Int32 modsDimensions);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataDirection]($$TODO-ASNA.DataGate.Common.DataDirection.html) | direction | Direction of the data. 
+| [DataDirection](reference/datagate-client/data-direction-enumeration.html) | direction | Direction of the data. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | modsDimensions | Size of the MODS. 
 
 #### Returns
 
-[ProgParm]($$TODO-ASNA.DataGate.DataLink.ProgParm.html)
+[ProgParm](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAs400ProgramClassAppendParmMethod.htm)
 
 A ProgParm used in CALL.
 

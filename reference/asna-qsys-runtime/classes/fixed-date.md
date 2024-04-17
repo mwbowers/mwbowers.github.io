@@ -1,5 +1,5 @@
 ---
-title: FixedDate`2 Class
+title: FixedDate<T,U> Class
 ---
 
 Holds a fixed-date value in the specified format and with the given separator.
@@ -23,6 +23,7 @@ Holds a fixed-date value in the specified format and with the given separator.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
+| [DateOnly](https://learn.microsoft.com/en-us/dotnet/api/system.dateonly?view=net-8.0) | DateValue | Gets the value of this FixedDate as a DateOnly value. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Day | Returns the day in this FixedDate value. | 
 | [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html) | Format | IFixedDateTime Format implementation. Returns the format for this FixedDate value. | 
 | [DateTimeDataKind](/reference/asna-qsys-runtime/classes/date-time-data-kind.html) | Kind | IFixedDateTime Kind implementation. Returns DateTimeDataKind.Date. | 

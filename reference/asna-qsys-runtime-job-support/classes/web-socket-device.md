@@ -34,7 +34,7 @@ Implements a WebDevice using a socket to communicate with a website for its UI s
 Initializes a new instance of the WebSocketDevice class for a job.
 
 ```cs
-WebSocketDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
+WebSocketDevice( Runtime.JobSupport.InteractiveJob job );
 ```
 
 #### Parameters
@@ -74,6 +74,7 @@ WebSocketDevice( ASNA.QSys.Runtime.JobSupport.InteractiveJob job );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Read](/reference/asna-qsys-runtime-job-support/classes/web-device.html#read)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Present a screen waiting for data to be ready and reads it.<br>(Inherited from [WebDevice](/reference/asna-qsys-runtime-job-support/classes/web-device.html)) | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RiseAbnormalEnd](#riseabnormalendstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks the device as being in a job that is ending abnormally. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SendHostResult](/reference/asna-qsys-runtime-job-support/classes/web-device.html#sendhostresult)([WebDisplayFile](/reference/asna-qsys-runtime-job-support/classes/web-display-file.html)) | Send the host service results in a display file and waits for new input.<br>(Inherited from [WebDevice](/reference/asna-qsys-runtime-job-support/classes/web-device.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetSocket](#setsocketsocket)([Socket](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets)) | Sets the socket used to communicate with the website providing the UI services. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SignalDataReadyForProgram](/reference/asna-qsys-runtime-job-support/classes/web-device.html#signaldatareadyforprogram)() | Signals the fact that data is now available to the program so it can continue execution.<br>(Inherited from [WebDevice](/reference/asna-qsys-runtime-job-support/classes/web-device.html)) | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SignalDataReadyForUser](/reference/asna-qsys-runtime-job-support/classes/web-device.html#signaldatareadyforuser)() | Signals the fact that data is now available to the user.<br>(Inherited from [WebDevice](/reference/asna-qsys-runtime-job-support/classes/web-device.html)) | 

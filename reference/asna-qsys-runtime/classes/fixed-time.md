@@ -1,5 +1,5 @@
 ---
-title: FixedTime`2 Class
+title: FixedTime<T,U> Class
 ---
 
 Holds a fixed-time value in the specified format and with the given separator.
@@ -30,6 +30,7 @@ Holds a fixed-time value in the specified format and with the given separator.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Minute | Returns the minutes in this FixedTime value. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Second | Returns the seconds in this FixedTime value. | 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | Separator | IFixedDateTime Separator implementation. Returns the separator for this FixedTime value. | 
+| [TimeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-8.0) | TimeValue | Gets the value of this FixedTime as a TimeOnly value. | 
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | Value | Gets the value of this FixedTime as a System.DateTime value. | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValueAsObject | Returns the value of this FixedTime as an object. | 
 
@@ -41,7 +42,7 @@ Holds a fixed-time value in the specified format and with the given separator.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object. | A value that indicates the relative order of the objects being compared.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-date-time, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert a DateTime to a FixedTime of the same format and separator. | A new FixedTime value with the same format and separator.
+| [IFixedSizeType&lt;System.DateTime&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html) | [Convert](#convertdatetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Convert a DateTime to a FixedTime of the same format and separator. | A new FixedTime value with the same format and separator.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToNumericString](#tonumericstring)() | Convert to numeric string representation of the FixedTime, according to its format with no separators. | The string representation of the FixedTime value with no separators.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to the string representation of the FixedTime, according to its format and separator. | The string representation of the FixedTime value.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostringdatetimeformat-datetimeseparator)([DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html)) | Convert to the string of the FixedTime, according to the given format and separator. | The string representation of the FixedTime value, with the given format and separator.
@@ -89,7 +90,7 @@ Convert(DateTime value);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-date-time, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html)
+[IFixedSizeType&lt;System.DateTime&gt;](/reference/asna-qsys-runtime/i-fixed-size-type.html)
 
 A new FixedTime value with the same format and separator.
 
@@ -138,7 +139,7 @@ The string representation of the FixedTime value.
 Convert to the string of the FixedTime, according to the given format and separator.
 
 ```cs
-ToString(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+ToString(ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters

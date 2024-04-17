@@ -25,14 +25,14 @@ Base class for Database print files. Contains the print file setup information a
 
 | Name |  Description 
 | --- | --- 
-| [PrintFileBase](#printfilebasestring-string-string-boolean-action)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html)) | Initializes a new instance of the PrintFileBase class. 
+| [PrintFileBase](#printfilebasestring-string-string-boolean-action)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)) | Initializes a new instance of the PrintFileBase class. 
 | [PrintFileBase](#printfilebasestring-string-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the PrintFileBase class. 
-| [PrintFileBase](#printfilebasestring-string-sharetypes-boolean-action)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html)) | Initializes a new instance of the PrintFileBase class. 
-| [PrintFileBase](#printfilebasestring-string-sharetypes-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the PrintFileBase class. 
+| [PrintFileBase](#printfilebasestring-string-sharetypes-boolean-action)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)) | Initializes a new instance of the PrintFileBase class. 
+| [PrintFileBase](#printfilebasestring-string-sharetypes-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the PrintFileBase class. 
 
 <br>
 
-### PrintFileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html) )
+### PrintFileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) )
 
 Initializes a new instance of the PrintFileBase class.
 
@@ -48,7 +48,7 @@ PrintFileBase( String dclPrintFileName, String filePath, String shareType, Boole
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path to the file in the Database, given as "library/filename". 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | shareType | String value that selects the type of file sharing. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isFormatID | True to check format ID. 
-| [Action]($$TODO-Action.html) | infSR | Method called when there is an error in a file operation. Pass null if there is no infSR. 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | infSR | Method called when there is an error in a file operation. Pass null if there is no infSR. 
 
 <br>
 
@@ -71,7 +71,7 @@ PrintFileBase( String dclPrintFileName, String filePath, String shareType, Boole
 
 <br>
 
-### PrintFileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action]($$TODO-Action.html) )
+### PrintFileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) )
 
 Initializes a new instance of the PrintFileBase class.
 
@@ -85,13 +85,13 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dclPrintFileName | Field name for this file in the program. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path to the file in the Database, given as "library/filename". 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | ShareTypes value that selects the type of file sharing. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | ShareTypes value that selects the type of file sharing. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isFormatID | True to check format ID. 
-| [Action]($$TODO-Action.html) | infSR | Method called when there is an error in a file operation. Pass null if there is no infSR. 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | infSR | Method called when there is an error in a file operation. Pass null if there is no infSR. 
 
 <br>
 
-### PrintFileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) )
+### PrintFileBase( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) )
 
 Initializes a new instance of the PrintFileBase class.
 
@@ -105,7 +105,7 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dclPrintFileName | Field name for this file in the program. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path to the file in the Database, given as "library/filename". 
-| [ShareTypes]($$TODO-ASNA.DataGate.Common.ShareTypes.html) | shareType | ShareTypes value that selects the type of file sharing. 
+| [ShareTypes](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsFileOpenAttrClassShareTypesProperty.htm) | shareType | ShareTypes value that selects the type of file sharing. 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isFormatID | True to check format ID. 
 
 <br>
@@ -121,43 +121,42 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Collate | Gets or sets whether collation will be used when printing multiple copies.  This property is of type *Boolean. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Copies | Gets or sets the number of copies to print.  This property is of type *Integer4. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | CursorY | Gets the position, in Print Units, that the printer is from the top of the page.  This property is of type *Integer4. | 
-| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
+| [AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm) | DataSet | Gets the AdgDataSet that moves data between the program and the database. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclFileName | Gets the name of this file field in the program. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | DclPrintFileName | Gets the name of this file field in the program. | 
-| [Duplex]($$TODO-Drawing.Printing.Duplex.html) | Duplex | Gets or sets whether the printer file is to print duplex (prints on both sides of the paper).  This property is of type ASNA.DataGate.Common.PrintDuplex. | 
+| [Duplex](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.duplex?view=dotnet-plat-ext-8.0) | Duplex | Gets or sets whether the printer file is to print duplex (prints on both sides of the paper).  This property is of type ASNA.DataGate.Common.PrintDuplex. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FilePath | A string that specifies the path of the file. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | FooterSize | Gets the size of the page footer.  This property is of type *Integer4. | 
 | [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) | formatIDs | When overriden in a derived class, gets the mapping from record format names to formatIDs. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormName | Gets or sets the customized page size to use. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FormType | Gets or sets the type of forms used in the printer for printed output. | 
-| [Action]($$TODO-Action.html) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InOverflow | Return whether the printer has entered the overflow area of the page. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open. | 
 | [RuntimeException](/reference/asna-qsys-runtime/exceptions/runtime-exception.html) | LastException | Gets the last exception thrown for this file.  This is a protected public field of type ASNA.QSys.RuntimeException. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ManuscriptPath | Gets or sets the path and file name for the manuscript. | 
-| [PaperOrientation]($$TODO-ASNA.DataGate.Common.PaperOrientation.html) | Orientation | Gets or sets the printer’s paper orientation (Horizontal or Vertical). This property is of type ASNA.DataGate.Common.PaperOrientation. | 
+| [PaperOrientation](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsPrintDevAttrClassOrientationProperty.htm) | Orientation | Gets or sets the printer’s paper orientation (Horizontal or Vertical). This property is of type ASNA.DataGate.Common.PaperOrientation. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PageCount | Gets the count of pages already printed.  This property is of type *Integer4. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PaperLength | Gets or sets the paper length.  This property is of type *Integer4. | 
-| [PaperKind]($$TODO-Drawing.Printing.PaperKind.html) | PaperSize | Gets or sets the paper size.  This property is of type ASNA.DataGate.Common.PaperSize. | 
-| [PaperSourceKind]($$TODO-Drawing.Printing.PaperSourceKind.html) | PaperSource | Gets or sets the paper source.  This property is of type ASNA.DataGate.Common.PaperSource. | 
+| [PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-8.0) | PaperSize | Gets or sets the paper size.  This property is of type ASNA.DataGate.Common.PaperSize. | 
+| [PaperSourceKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.papersourcekind?view=dotnet-plat-ext-8.0) | PaperSource | Gets or sets the paper source.  This property is of type ASNA.DataGate.Common.PaperSource. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PaperWidth | Gets or sets the paper width.  This property is of type *Integer4. | 
-
-| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action-2)<[String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate-client/adg-dataset-class.html)> | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
-| [AccessMode]($$TODO-ASNA.DataGate.Common.AccessMode.html) | Preview | Gets or sets whether the print preview dialog is to be displayed before printing.  This property is of type ASNA.DataGate.Common.AccessMode. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. | 
+| [AccessMode](https://docs.asna.com/documentation/Help150/AVR/_HTML/AdgCommon_AccessMode.htm) | Preview | Gets or sets whether the print preview dialog is to be displayed before printing.  This property is of type ASNA.DataGate.Common.AccessMode. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PrintableLength | Gets the printer's printable Length.  This property is of type *Integer4. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | PrintableWidth | Gets the printer’s printable width.  This property is of type *Integer4. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Printer | Gets or sets the name of the printer to be used.  This property is of type *string. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | PrintSetup | Gets or sets whether the print setup dialog is to display before printing. This property is of type *Boolean. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PrintToFileName | Gets or sets the system file name, with path, where the report will be rendered. Setting the value to something other than *NOTHING will direct the printer to print to a file. This is particularly useful with the Microsoft Print To printers. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ProcessMacro | Gets or sets the whether DataGate is to search for “macros” and replace them with appropriate information before printing.  This property is of type *Boolean. | 
-| [PrinterResolutionKind]($$TODO-Drawing.Printing.PrinterResolutionKind.html) | Quality | Gets or sets the print quality.  This property is of type ASNA.DataGate.Common.PrintQuality. | 
+| [PrinterResolutionKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printerresolutionkind?view=dotnet-plat-ext-8.0) | Quality | Gets or sets the print quality.  This property is of type ASNA.DataGate.Common.PrintQuality. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ReportName | Gets or sets the name of the report.  If not assigned, the default name is the name given when the print file was declared.  This property is of type *string.  This is the name of the print file seen on the printer spool. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SaveAfter | Gets or sets the value that specifies whether the manuscript is saved after output is produced | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Scale | Gets or sets the percentage factor by which the printed document is to be scaled.  This property is of type *Integer4. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ShareType | A string defining how a file will be shared. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StatusCode | Gets the status code resulting from a file operation. | 
-| [PrintTrueType]($$TODO-ASNA.DataGate.Common.PrintTrueType.html) | TTOption | Gets or sets how true type fonts are to be printed.  This property is of type ASNA.DataGate.Common.PrintTrueType. | 
+| [PrintTrueType](https://docs.asna.com/documentation/Help140/AVR/_HTML/AdgCommon_PrintTrueType.htm) | TTOption | Gets or sets how true type fonts are to be printed.  This property is of type ASNA.DataGate.Common.PrintTrueType. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseColor | Gets or sets whether to use color when a color printer is specified.  This property is of type *Boolean. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | UserData | Gets or sets a user defined string | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | YResolution | Gets or sets the Y-Resolution in dot per inch.  This property is of type *Integer4. | 
@@ -169,16 +168,16 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [AdgDataSet](/reference/datagate-client/adg-dataset-class.html) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
+| [AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm) | [allocateBuffer](#allocatebuffer)() | Allocates a DataSet Buffer. | The DataSet.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [close](#close)() | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#close)() | Close a file. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closechar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Close a file. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Close](#closeoutchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Close a file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#dispose)() | Releases resources. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases resources. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [feod](#feodstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Force end of data on the given record. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feodstring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Force end of data on the given record. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feodstring-boolean-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Force end of data on the given record. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Feod](#feodstring-boolean-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Force end of data on the given record. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](#finalize)() | Releases resources when the instance is garbage-collected. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [GetPrintFieldPropertyValue](#getprintfieldpropertyvaluestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get a field property value. | The property value. Throws exception if file is not open.
@@ -186,17 +185,17 @@ PrintFileBase( String dclPrintFileName, String filePath, ASNA.DataGate.Common.Sh
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [open](#opendatabase)([Database](/reference/asna-qsys-runtime/classes/database.html)) | Open the print file. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase)([Database](/reference/asna-qsys-runtime/classes/database.html)) | Open the print file. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase-char)([Database](/reference/asna-qsys-runtime/classes/database.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open the print file. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [populateBuffer](#populatebufferstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Open](#opendatabase-outchar)([Database](/reference/asna-qsys-runtime/classes/database.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Open the print file. | 
+| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | [populateBuffer](#populatebufferstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetPrintFieldPropertyValue](#setprintfieldpropertyvaluestring-string-string-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Set a field property value. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Write a record. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Write a record. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-string-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-char)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-string-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Write](#writestring-char[]-outchar)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name. | 
 
 <br>
 <br>
@@ -211,7 +210,7 @@ allocateBuffer();
 
 #### Returns
 
-[AdgDataSet](/reference/datagate-client/adg-dataset-class.html)
+[AdgDataSet](https://docs.asna.com/documentation/Help160/DCS/_HTML/dcsAdgDataSetClass.htm)
 
 The DataSet.
 
@@ -248,7 +247,7 @@ Close();
 Close a file.
 
 ```cs
-Close(ref Char err);
+Close(out Char err);
 ```
 
 #### Parameters
@@ -285,8 +284,7 @@ Dispose(Boolean isDisposing);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | True when this method is called during nomral execution, when resources are guarantedd to be available to release.
-            False when called from the garbage collector. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | True when this method is called during normal execution, when resources are guaranteed to be available to release. False when called from the garbage collector. 
 
 
 <br>
@@ -335,7 +333,7 @@ Feod(String formatName, Boolean reset);
 Force end of data on the given record.
 
 ```cs
-Feod(String formatName, Boolean reset, ref Char err);
+Feod(String formatName, Boolean reset, out Char err);
 ```
 
 #### Parameters
@@ -393,7 +391,7 @@ The property value. Throws exception if file is not open.
 Open the print file.
 
 ```cs
-open(ASNA.QSys.Runtime.Database database);
+open(Runtime.Database database);
 ```
 
 #### Parameters
@@ -411,7 +409,7 @@ open(ASNA.QSys.Runtime.Database database);
 Open the print file.
 
 ```cs
-Open(ASNA.QSys.Runtime.Database database);
+Open(Runtime.Database database);
 ```
 
 #### Parameters
@@ -429,7 +427,7 @@ Open(ASNA.QSys.Runtime.Database database);
 Open the print file.
 
 ```cs
-Open(ASNA.QSys.Runtime.Database database, ref Char err);
+Open(Runtime.Database database, out Char err);
 ```
 
 #### Parameters
@@ -456,6 +454,12 @@ populateBuffer(String formatName);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name. 
+
+#### Returns
+
+[Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0)
+
+
 
 
 <br>
@@ -520,7 +524,7 @@ Write(String formatName, String indDsString);
 <br>
 <br>
 
-### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name.
 
@@ -533,7 +537,7 @@ write(String formatName, Char[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 
 
 <br>
@@ -544,7 +548,7 @@ write(String formatName, Char[] optionIndicators);
 Write a record.
 
 ```cs
-Write(String formatName, String indDsString, ref Char err);
+Write(String formatName, String indDsString, out Char err);
 ```
 
 #### Parameters
@@ -559,7 +563,7 @@ Write(String formatName, String indDsString, ref Char err);
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name.
 
@@ -572,18 +576,18 @@ Write(String formatName, Char[] optionIndicators);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 
 
 <br>
 <br>
 
-### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### Write([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Write a record given its record format name.
 
 ```cs
-Write(String formatName, Char[] optionIndicators, ref Char err);
+Write(String formatName, Char[] optionIndicators, out Char err);
 ```
 
 #### Parameters
@@ -591,7 +595,7 @@ Write(String formatName, Char[] optionIndicators, ref Char err);
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation. 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | err | Parameter that will be set to '1' or *ON if there was an error in the operation, '0' or *OFF otherwise. 
 
 

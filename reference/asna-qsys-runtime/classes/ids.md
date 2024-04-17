@@ -38,8 +38,8 @@ Defines the basic set of operations for a data structure.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears the data structure. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Dump](#dump)() | Gats the data structure contents as a string. | The contents of the data structure.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Load](#loadstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Loads the data structure from a string. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ObjectToParm](#objecttoparmas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the Data Structure field values into parameters for calling the given IBMi program. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the data structure field values returned from a call to an IBMi program. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ObjectToParm](#objecttoparmas400program-int32[]-int32)([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the Data Structure field values into parameters for calling the given IBMi program. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ParmToObject](#parmtoobjectas400program-int32[]-int32)([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the data structure field values returned from a call to an IBMi program. | 
 
 <br>
 <br>
@@ -92,7 +92,7 @@ Load(String source);
 <br>
 <br>
 
-### ObjectToParm([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ObjectToParm([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Converts the Data Structure field values into parameters for calling the given IBMi program.
 
@@ -104,15 +104,15 @@ ObjectToParm(ASNA.DataGate.Client.As400Program program, Int32[] indices, Int32 d
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html) | program | As400Program object describing the program call. 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
+| [As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm) | program | As400Program object describing the program call. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dimensions | The dimension nesting of the parameter. 
 
 
 <br>
 <br>
 
-### ParmToObject([As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html), [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### ParmToObject([As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Gets the data structure field values returned from a call to an IBMi program.
 
@@ -124,8 +124,8 @@ ParmToObject(ASNA.DataGate.Client.As400Program program, Int32[] indices, Int32 d
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [As400Program]($$TODO-ASNA.DataGate.Client.As400Program.html) | program | As400Program object describing the program call. 
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
+| [As400Program](https://docs.asna.com/documentation/Help170/DCS/_HTML/dcsAs400ProgramClass.htm) | program | As400Program object describing the program call. 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dimensions | The dimension nesting of the parameter. 
 
 

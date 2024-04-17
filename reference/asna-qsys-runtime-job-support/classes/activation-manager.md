@@ -36,7 +36,7 @@ Provides the facilities to manage the instances of programs and service programs
 Initializes a new instance of the ActivationManger class for a job.
 
 ```cs
-ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
+ActivationManager( Runtime.JobSupport.Job theJob );
 ```
 
 #### Parameters
@@ -52,7 +52,7 @@ ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
 Initializes a new instance of the Invocation class.
 
 ```cs
-ActivationManager( ASNA.QSys.Runtime.JobSupport.CommonProgram program, String activationGroupName, Int64 invocationMark, String moduleName, String procedureName );
+ActivationManager( Runtime.JobSupport.CommonProgram program, String activationGroupName, Int64 invocationMark, String moduleName, String procedureName );
 ```
 
 #### Parameters
@@ -72,7 +72,7 @@ ActivationManager( ASNA.QSys.Runtime.JobSupport.CommonProgram program, String ac
 Initializes a new instance of the InvocationManager class for a job.
 
 ```cs
-ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
+ActivationManager( Runtime.JobSupport.Job theJob );
 ```
 
 #### Parameters
@@ -113,6 +113,7 @@ ActivationManager( ASNA.QSys.Runtime.JobSupport.Job theJob );
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | [GetInstance&lt;T&gt;](#getinstance&lt;t&gt;icaller)([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html)) | Gets the instance of a program or service program of type T to be called by a caller. The instance may be a newly created program or may be one found in an activation group. | The instance of the common program.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvocationArrayCopy](#getinvocationarraycopy)() | Gets a copy of the invocation stack. | An array of invocation entries.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvocationStrings](#getinvocationstrings)() | Gets an array of formatted strings for the invocation stack. | An array of formatted strings for the invocation stack entries.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetInvokedMessageQueue](#getinvokedmessagequeueint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the message queue associated with an invocation. | The message queue of the invocation entry.
@@ -141,6 +142,30 @@ Removes all invocation entries from the stack.
 ```cs
 Clear();
 ```
+
+
+<br>
+<br>
+
+### GetInstance&lt;T&gt;([ICaller](/reference/asna-qsys-runtime/classes/i-caller.html))
+
+Gets the instance of a program or service program of type T to be called by a caller. The instance may be a newly created program or may be one found in an activation group.
+
+```cs
+GetInstance<T>(Runtime.ICaller caller);
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [ICaller](/reference/asna-qsys-runtime/classes/i-caller.html) | caller | The caller needing the instance. 
+
+#### Returns
+
+[T](https://learn.microsoft.com/en-us/dotnet/standard/generics)
+
+The instance of the common program.
 
 
 <br>
@@ -289,7 +314,7 @@ PopInvocation();
 Throw a RecursiveCallException exception if a program is in the invocation stack.
 
 ```cs
-preventRecursion(ASNA.QSys.Runtime.JobSupport.CommonProgram program);
+preventRecursion(Runtime.JobSupport.CommonProgram program);
 ```
 
 #### Parameters
@@ -307,7 +332,7 @@ preventRecursion(ASNA.QSys.Runtime.JobSupport.CommonProgram program);
 Create an invocation entry at the top of stack.
 
 ```cs
-pushInvocation(ASNA.QSys.Runtime.JobSupport.CommonProgram program, String activationGroupName, String moduleName, String procedureName);
+pushInvocation(Runtime.JobSupport.CommonProgram program, String activationGroupName, String moduleName, String procedureName);
 ```
 
 #### Parameters
@@ -328,7 +353,7 @@ pushInvocation(ASNA.QSys.Runtime.JobSupport.CommonProgram program, String activa
 Create an invocation entry at the top of stack for the current job.
 
 ```cs
-PushInvocation(ASNA.QSys.Runtime.JobSupport.CommonProgram program, String activationGroupName, String moduleName, String procedureName);
+PushInvocation(Runtime.JobSupport.CommonProgram program, String activationGroupName, String moduleName, String procedureName);
 ```
 
 #### Parameters

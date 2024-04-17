@@ -1,5 +1,5 @@
 ---
-title: Optional`1 Class
+title: Optional<T> Class
 ---
 
 Encapsulates a *NOPASS parameter.
@@ -7,7 +7,7 @@ Encapsulates a *NOPASS parameter.
 **Namespace:** ASNA.QSys.Runtime <br/>
 **Assembly:** ASNA.QSys.Runtime
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) -->  --> Optional`1
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) -->  --> Optional<T>
 
 <br>
 <br>
@@ -25,12 +25,12 @@ Encapsulates a *NOPASS parameter.
 
 | Name |  Description 
 | --- | --- 
-| [Optional](#optional`0)([\\`0]($$TODO-`0.html)) | Initializes an Optional object with a value. 
+| [Optional](#optional`0)([&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics)) | Initializes an Optional object with a value. 
 | [Optional](#optional)() | Initializes an Optional object without a value. 
 
 <br>
 
-### Optional( [\\`0]($$TODO-`0.html) )
+### Optional( [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) )
 
 Initializes an Optional object with a value.
 
@@ -42,7 +42,7 @@ Optional( `0 value );
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [\\`0]($$TODO-`0.html) | value |  
+| [&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/standard/generics) | value | The value encapsulated by this object. 
 
 <br>
 

@@ -34,7 +34,7 @@ Defines the core behavior of classes that were migrated from RPG or CL programs 
 Called from constructors in derived classes to initializes the Module class.
 
 ```cs
-Module( ASNA.QSys.Runtime.JobSupport.CommonProgram containerProgram );
+Module( Runtime.JobSupport.CommonProgram containerProgram );
 ```
 
 #### Parameters
@@ -74,18 +74,18 @@ Module( ASNA.QSys.Runtime.JobSupport.CommonProgram containerProgram );
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [EndModuleCall](#endmodulecall)() | Notifies the program that contains this module that the *ENTRY module call has ended. | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecOS400Command](#execos400commandstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Executes a command on the IBM i serving as the database server for the Job. | 
-| [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](#execsql_queryint32-dbconnection-string-dbparm[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an SQL Command producing a QueryResults. | The results produced by the server.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](#execsql_statementdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query SQL Command. | 
+| [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](#execsql_queryint32-dbconnection-string-dbparm[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an SQL Command producing a QueryResults. | The results produced by the server.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](#execsql_statementdbconnection-string-dbparm[])([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query SQL Command. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [FormatMessage](#formatmessagestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaced with values from the message data. | The formatted first level text of the message.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [FormatMessage](#formatmessagestring-string-string-outstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaced with values from the message data. | The formatted first level text of the message.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [GetLdaField](#getldafieldint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA. | The requested field value.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetModule\\`\\`1](#getmodule\`\`1)() | Gets a module contained in the same program or in one of the service programs. | The module requested. Returns null if there is no module of the type requested.
+| [T](https://learn.microsoft.com/en-us/dotnet/standard/generics) | [GetModule&lt;T&gt;](#getmodule&lt;t&gt;)() | Gets a module contained in the same program or in one of the service programs. | The module requested. Returns null if there is no module of the type requested.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](#execsql_queryint32-string-dbparm[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an SQL Command, on the default Job's ado connection, producing a QueryResults. | The results produced by the server.
-| [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](#execsql_queryint32-sqlpreparedstatement-dbparm[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an prepared SQL Command producing a QueryResults. | The results produced by the server.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](#execsql_statementstring-dbparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query SQL Command on the default Job's ado connection. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](#execsql_statementsqlpreparedstatement-dbparm[])([SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query prepared SQL Command. | 
+| [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](#execsql_queryint32-string-dbparm[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an SQL Command, on the default Job's ado connection, producing a QueryResults. | The results produced by the server.
+| [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) | [ExecSQL_Query](#execsql_queryint32-sqlpreparedstatement-dbparm[])([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an prepared SQL Command producing a QueryResults. | The results produced by the server.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](#execsql_statementstring-dbparm[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query SQL Command on the default Job's ado connection. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ExecSQL_Statement](#execsql_statementsqlpreparedstatement-dbparm[])([SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html)) | Execute an non-query prepared SQL Command. | 
 | [Message](/reference/asna-qsys-runtime-job-support/classes/message.html) | [ReceiveMessage](#receivemessagestring-messagetype-string-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Receive messages from the Program Queue. Messages are received in FIFO order. | The message specified or null if the message was not found in the queue.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMessage](#removemessageint32-string-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove messages from the Program Queue. | 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [RemoveMessage](#removemessagestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove messages from *PRVious program called. | 
@@ -157,12 +157,12 @@ ExecOS400Command(String cmdText);
 <br>
 <br>
 
-### ExecSQL_Query([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### ExecSQL_Query([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Execute an SQL Command producing a QueryResults.
 
 ```cs
-ExecSQL_Query(Int32 expectedResults, Data.Common.DbConnection sqlConnection, String sqlText, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+ExecSQL_Query(Int32 expectedResults, Data.Common.DbConnection sqlConnection, String sqlText, Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
@@ -172,7 +172,7 @@ ExecSQL_Query(Int32 expectedResults, Data.Common.DbConnection sqlConnection, Str
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | The number of expected results. 
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | sqlConnection | An open connection to the server where the SQL command will execute. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sqlText | The SQL command to execute. 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
 
 #### Returns
 
@@ -184,12 +184,12 @@ The results produced by the server.
 <br>
 <br>
 
-### ExecSQL_Statement([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### ExecSQL_Statement([DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Execute an non-query SQL Command.
 
 ```cs
-ExecSQL_Statement(Data.Common.DbConnection sqlConnection, String sqlText, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+ExecSQL_Statement(Data.Common.DbConnection sqlConnection, String sqlText, Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
@@ -198,7 +198,7 @@ ExecSQL_Statement(Data.Common.DbConnection sqlConnection, String sqlText, ASNA.Q
 | --- | --- | ---
 | [DbConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection) | sqlConnection | An open connection to the server where the SQL command will execute. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sqlText | The SQL command to execute. 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
 
 
 <br>
@@ -209,7 +209,7 @@ ExecSQL_Statement(Data.Common.DbConnection sqlConnection, String sqlText, ASNA.Q
 Produces the strings with the formatted first and second level text for a message. Any placeholders are replaced with values from the message data.
 
 ```cs
-FormatMessage(String MsgFile, String MsgId, String MsgData, ref String secondLevelText);
+FormatMessage(String MsgFile, String MsgId, String MsgData, out String secondLevelText);
 ```
 
 #### Parameters
@@ -256,24 +256,30 @@ The requested field value.
 <br>
 <br>
 
-### GetModule\`\`1()
+### GetModule&lt;T&gt;()
 
 Gets a module contained in the same program or in one of the service programs.
 
 ```cs
-GetModule``1();
+GetModule<T>();
 ```
 
+#### Returns
+
+[T](https://learn.microsoft.com/en-us/dotnet/standard/generics)
+
+The module requested. Returns null if there is no module of the type requested.
+
 
 <br>
 <br>
 
-### ExecSQL_Query([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### ExecSQL_Query([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Execute an SQL Command, on the default Job's ado connection, producing a QueryResults.
 
 ```cs
-ExecSQL_Query(Int32 expectedResults, String sqlText, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+ExecSQL_Query(Int32 expectedResults, String sqlText, Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
@@ -282,7 +288,7 @@ ExecSQL_Query(Int32 expectedResults, String sqlText, ASNA.QSys.Runtime.JobSuppor
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | The number of expected results. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sqlText | The SQL command to execute. 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
 
 #### Returns
 
@@ -294,12 +300,12 @@ The results produced by the server.
 <br>
 <br>
 
-### ExecSQL_Query([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### ExecSQL_Query([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Execute an prepared SQL Command producing a QueryResults.
 
 ```cs
-ExecSQL_Query(Int32 expectedResults, ASNA.QSys.Runtime.JobSupport.SqlPreparedStatement preparedStatement, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+ExecSQL_Query(Int32 expectedResults, Runtime.JobSupport.SqlPreparedStatement preparedStatement, Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
@@ -308,7 +314,7 @@ ExecSQL_Query(Int32 expectedResults, ASNA.QSys.Runtime.JobSupport.SqlPreparedSta
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | The number of expected results. 
 | [SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html) | preparedStatement | The prepared SQL command to execute. 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
 
 #### Returns
 
@@ -320,12 +326,12 @@ The results produced by the server.
 <br>
 <br>
 
-### ExecSQL_Statement([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### ExecSQL_Statement([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Execute an non-query SQL Command on the default Job's ado connection.
 
 ```cs
-ExecSQL_Statement(String sqlText, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+ExecSQL_Statement(String sqlText, Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
@@ -333,18 +339,18 @@ ExecSQL_Statement(String sqlText, ASNA.QSys.Runtime.JobSupport.DBParm[] paramete
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sqlText | The SQL command to execute. 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
 
 
 <br>
 <br>
 
-### ExecSQL_Statement([SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
+### ExecSQL_Statement([SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html), [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html))
 
 Execute an non-query prepared SQL Command.
 
 ```cs
-ExecSQL_Statement(ASNA.QSys.Runtime.JobSupport.SqlPreparedStatement preparedStatement, ASNA.QSys.Runtime.JobSupport.DBParm[] parameters);
+ExecSQL_Statement(Runtime.JobSupport.SqlPreparedStatement preparedStatement, Runtime.JobSupport.DBParm[] parameters);
 ```
 
 #### Parameters
@@ -352,7 +358,7 @@ ExecSQL_Statement(ASNA.QSys.Runtime.JobSupport.SqlPreparedStatement preparedStat
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SqlPreparedStatement](/reference/asna-qsys-runtime-job-support/classes/sql-prepared-statement.html) | preparedStatement | The prepared SQL command to execute. 
-| [DBParm[]](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
+| [DBParm](/reference/asna-qsys-runtime-job-support/classes/db-parm.html) | parameters | An array of parameters to be used with the command. 
 
 
 <br>
@@ -363,7 +369,7 @@ ExecSQL_Statement(ASNA.QSys.Runtime.JobSupport.SqlPreparedStatement preparedStat
 Receive messages from the Program Queue. Messages are received in FIFO order.
 
 ```cs
-ReceiveMessage(String pgmQ, ASNA.QSys.Runtime.JobSupport.MessageType MsgType, String MsgKey, Boolean Remove);
+ReceiveMessage(String pgmQ, Runtime.JobSupport.MessageType MsgType, String MsgKey, Boolean Remove);
 ```
 
 #### Parameters
@@ -428,7 +434,7 @@ RemoveMessage(String messageKey);
 Send text message to *EXTernal message queue.
 
 ```cs
-SendExternalMessage(String MsgText, ASNA.QSys.Runtime.JobSupport.MessageType MsgType);
+SendExternalMessage(String MsgText, Runtime.JobSupport.MessageType MsgType);
 ```
 
 #### Parameters
@@ -436,7 +442,7 @@ SendExternalMessage(String MsgText, ASNA.QSys.Runtime.JobSupport.MessageType Msg
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgText | The user provide text of the message. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 #### Returns
 
@@ -453,7 +459,7 @@ The message key.
 Send message to program message queue in the invocation stack.
 
 ```cs
-SendProgramMessage(String MsgId, String MsgData, String MsgFileName, Int32 stackPosition, String stackName, ASNA.QSys.Runtime.JobSupport.MessageType MsgType);
+SendProgramMessage(String MsgId, String MsgData, String MsgFileName, Int32 stackPosition, String stackName, Runtime.JobSupport.MessageType MsgType);
 ```
 
 #### Parameters
@@ -465,7 +471,7 @@ SendProgramMessage(String MsgId, String MsgData, String MsgFileName, Int32 stack
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFileName | The message file name where the message description is to be found. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | stackPosition | Relative position from the stackName starting at 0. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | stackName | Name of Program or Procedure in the stack. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 #### Returns
 
@@ -482,7 +488,7 @@ The message key.
 Send text message to program message entry queue in the invocation stack.
 
 ```cs
-SendProgramMessage(String MsgText, String pgmQ, ASNA.QSys.Runtime.JobSupport.MessageType MsgType);
+SendProgramMessage(String MsgText, String pgmQ, Runtime.JobSupport.MessageType MsgType);
 ```
 
 #### Parameters
@@ -491,7 +497,7 @@ SendProgramMessage(String MsgText, String pgmQ, ASNA.QSys.Runtime.JobSupport.Mes
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgText | The user provide text of the message. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pgmQ | The description of the program queue entry in the invocation stack. Composed of optional relative position (one of: *SAME, *PRV, number) and a procedure name (Use * for current procedure). 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 #### Returns
 
@@ -508,7 +514,7 @@ The message key.
 Send text message to program message queue in the invocation stack.
 
 ```cs
-SendProgramMessage(String MsgText, Int32 stackPosition, String stackName, ASNA.QSys.Runtime.JobSupport.MessageType MsgType);
+SendProgramMessage(String MsgText, Int32 stackPosition, String stackName, Runtime.JobSupport.MessageType MsgType);
 ```
 
 #### Parameters
@@ -518,7 +524,7 @@ SendProgramMessage(String MsgText, Int32 stackPosition, String stackName, ASNA.Q
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgText | The user provide text of the message. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | stackPosition | Relative position from the stackName starting at 0. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | stackName | Name of Program or Procedure in the stack. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 #### Returns
 
@@ -559,7 +565,7 @@ PushInvocation();
 Receive messages from the Program Queue. Messages are received in FIFO order.
 
 ```cs
-ReceiveMessage(Int32 stackPosition, String stackName, ASNA.QSys.Runtime.JobSupport.MessageType MsgType, String MsgKey, Boolean Remove);
+ReceiveMessage(Int32 stackPosition, String stackName, Runtime.JobSupport.MessageType MsgType, String MsgKey, Boolean Remove);
 ```
 
 #### Parameters
@@ -642,7 +648,7 @@ RemoveMessage(String pgmQ, String messageKey);
 Send a message to *EXTernal message queue.
 
 ```cs
-SendExternalMessage(String MsgId, String MsgData, String MsgFileName, ASNA.QSys.Runtime.JobSupport.MessageType MsgType);
+SendExternalMessage(String MsgId, String MsgData, String MsgFileName, Runtime.JobSupport.MessageType MsgType);
 ```
 
 #### Parameters
@@ -652,7 +658,7 @@ SendExternalMessage(String MsgId, String MsgData, String MsgFileName, ASNA.QSys.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgId | The message identification. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgData | The replacement text, if any, for the message placeholders. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFileName | The message file name where the message description is to be found. 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 #### Returns
 
@@ -669,7 +675,7 @@ The message key.
 Send message to program message entry queue in the invocation stack.
 
 ```cs
-SendProgramMessage(String MsgId, String MsgData, String MsgFileName, String pgmQ, ASNA.QSys.Runtime.JobSupport.MessageType MsgType);
+SendProgramMessage(String MsgId, String MsgData, String MsgFileName, String pgmQ, Runtime.JobSupport.MessageType MsgType);
 ```
 
 #### Parameters
@@ -680,7 +686,7 @@ SendProgramMessage(String MsgId, String MsgData, String MsgFileName, String pgmQ
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgData | The replacement text, if any, for the message placeholders. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFileName | The message file name where the message description is to be found. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | pgmQ | The description of the program queue entry in the invocation stack. Composed of optional relative position (one of: *SAME, *PRV, number) and a procedure name (Use * for current procedure). 
-| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specify the severity of the message. 
+| [MessageType](/reference/asna-qsys-runtime-job-support/classes/message-type.html) | MsgType | One of the enumeration values that specifies the severity of the message. 
 
 #### Returns
 

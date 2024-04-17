@@ -38,7 +38,7 @@ Describes the common operations over a field in a Data Structure.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [ClearField](#clearfield)() | Clears the field to its default value. | 
-| [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html) | [Clone](#clone)() | Creates a copy of this IDSField object | 
+| [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html) | [Clone](#clone)() | Creates a copy of this IDSField object | The copy of the IDSField object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetStartingPosition](#setstartingpositionint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the field starting position in the Data Structure buffer. | 
 
 <br>
@@ -68,7 +68,7 @@ Clone();
 
 [IDSField](/reference/asna-qsys-runtime/classes/ids-field.html)
 
-
+The copy of the IDSField object.
 
 
 <br>

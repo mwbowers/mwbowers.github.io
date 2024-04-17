@@ -23,7 +23,7 @@ Implement this interface to add your own CodePage conversion if Wings or the 525
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [MSCodePageFromIBMCodePage](#mscodepagefromibmcodepageint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts IBM i CodePage numbers to the corresponding .Net Encoding CodePage numbers. See "Code Page Identifiers" in MSDN help: http://msdn.microsoft.com/en-us/library/dd317756%28v=vs.85%29.aspx. | true if the conversion for a particular IBM i CodePage succeeded. False if not.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [MSCodePageFromIBMCodePage](#mscodepagefromibmcodepageint32-outint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts IBM i CodePage numbers to the corresponding .Net Encoding CodePage numbers. See "Code Page Identifiers" in MSDN help: http://msdn.microsoft.com/en-us/library/dd317756%28v=vs.85%29.aspx. | true if the conversion for a particular IBM i CodePage succeeded. False if not.
 
 <br>
 <br>
@@ -33,7 +33,7 @@ Implement this interface to add your own CodePage conversion if Wings or the 525
 Converts IBM i CodePage numbers to the corresponding .Net Encoding CodePage numbers. See "Code Page Identifiers" in MSDN help: http://msdn.microsoft.com/en-us/library/dd317756%28v=vs.85%29.aspx.
 
 ```cs
-MSCodePageFromIBMCodePage(Int32 ibmCodePage, ref Int32 msCodePage);
+MSCodePageFromIBMCodePage(Int32 ibmCodePage, out Int32 msCodePage);
 ```
 
 #### Parameters

@@ -61,8 +61,6 @@ Defines a layout for a field in a data structure.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Long](#long)() | Creates a layout for a long field. | The layout describing a long field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [LongArray](#longarrayint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a long array field. | The layout describing a long array field.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [NewLayout](#newlayoutlayouttype-int32-int32-int32-datetimeformat-datetimeseparator-int32-int32)([LayoutType](/reference/asna-qsys-runtime/classes/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate-client/date-time-format-enumeration.html), [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout with the given values. | The new layout.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Equality](#op_equalitylayout-layout)([Layout](/reference/asna-qsys-runtime/classes/layout.html), [Layout](/reference/asna-qsys-runtime/classes/layout.html)) | Equality operator. | True if the Layouts are equivalent, i.e. if all of their properties correspondingly have the same values.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_Inequality](#op_inequalitylayout-layout)([Layout](/reference/asna-qsys-runtime/classes/layout.html), [Layout](/reference/asna-qsys-runtime/classes/layout.html)) | Inequality operator. | True if the Layouts are different, i.e. if any of their properties correspondingly have different values.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Packed](#packedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDecimal field with a packed format. | The layout describing a FixedDecimal field with a packed format.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [PackedArray](#packedarrayint32-int32-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a layout for a FixedDecimal array field with packed format. | The layout describing a FixedDecimal array field with packed format.
 | [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html) | [Short](#short)() | Creates a layout for a short field. | The layout describing a short field.
@@ -220,7 +218,7 @@ The layout describing a character array field.
 Creates a layout for a FixedDate field.
 
 ```cs
-Date(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+Date(ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -245,7 +243,7 @@ The layout describing a FixedDate field with the given format and separator.
 Creates a layout for a FixedDate array field.
 
 ```cs
-DateArray(Int32 arrayLength, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator, Int32 skip);
+DateArray(Int32 arrayLength, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator, Int32 skip);
 ```
 
 #### Parameters
@@ -517,7 +515,7 @@ The layout describing a long array field.
 Creates a layout with the given values.
 
 ```cs
-NewLayout(ASNA.QSys.Runtime.LayoutType type, Int32 digits, Int32 decimals, Int32 length, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator, Int32 arrayLength, Int32 skip);
+NewLayout(Runtime.LayoutType type, Int32 digits, Int32 decimals, Int32 length, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator, Int32 arrayLength, Int32 skip);
 ```
 
 #### Parameters
@@ -538,56 +536,6 @@ NewLayout(ASNA.QSys.Runtime.LayoutType type, Int32 digits, Int32 decimals, Int32
 [ILayout](/reference/asna-qsys-runtime/classes/i-layout.html)
 
 The new layout.
-
-
-<br>
-<br>
-
-### op_Equality([Layout](/reference/asna-qsys-runtime/classes/layout.html), [Layout](/reference/asna-qsys-runtime/classes/layout.html))
-
-Equality operator.
-
-```cs
-op_Equality(ASNA.QSys.Runtime.Layout first, ASNA.QSys.Runtime.Layout second);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Layout](/reference/asna-qsys-runtime/classes/layout.html) | first | The first Layout to compare. 
-| [Layout](/reference/asna-qsys-runtime/classes/layout.html) | second | The second Layout to compare. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-True if the Layouts are equivalent, i.e. if all of their properties correspondingly have the same values.
-
-
-<br>
-<br>
-
-### op_Inequality([Layout](/reference/asna-qsys-runtime/classes/layout.html), [Layout](/reference/asna-qsys-runtime/classes/layout.html))
-
-Inequality operator.
-
-```cs
-op_Inequality(ASNA.QSys.Runtime.Layout first, ASNA.QSys.Runtime.Layout second);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Layout](/reference/asna-qsys-runtime/classes/layout.html) | first | The first Layout to compare. 
-| [Layout](/reference/asna-qsys-runtime/classes/layout.html) | second | The second Layout to compare. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-True if the Layouts are different, i.e. if any of their properties correspondingly have different values.
 
 
 <br>
@@ -693,7 +641,7 @@ The layout describing a short array field.
 Creates a layout for a FixedTime field.
 
 ```cs
-Time(ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator);
+Time(ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -718,7 +666,7 @@ The layout describing a FixedTime field with the given format and separator.
 Creates a layout for a FixedTime array field.
 
 ```cs
-TimeArray(Int32 arrayLength, ASNA.DataGate.Common.DateTimeFormat format, ASNA.QSys.Runtime.DateTimeSeparator separator, Int32 skip);
+TimeArray(Int32 arrayLength, ASNA.DataGate.Common.DateTimeFormat format, Runtime.DateTimeSeparator separator, Int32 skip);
 ```
 
 #### Parameters
@@ -745,7 +693,7 @@ The layout describing a FixedTime array field.
 Creates a layout for a FixedTimestamp field.
 
 ```cs
-Timestamp(ASNA.QSys.Runtime.DateTimeSeparator separator);
+Timestamp(Runtime.DateTimeSeparator separator);
 ```
 
 #### Parameters
@@ -769,7 +717,7 @@ The layout describing a FixedTimestamp field with the given separator.
 Creates a layout for a FixedTimestamp array field.
 
 ```cs
-TimestampArray(Int32 arrayLength, ASNA.QSys.Runtime.DateTimeSeparator separator, Int32 skip);
+TimestampArray(Int32 arrayLength, Runtime.DateTimeSeparator separator, Int32 skip);
 ```
 
 #### Parameters

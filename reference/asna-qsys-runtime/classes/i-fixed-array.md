@@ -23,7 +23,7 @@ Describes the minimum functionality of a free-standing fixed sized array.
 
 | Type | Name | Description | Indexer
 | --- | --- | --- | --- 
-| [TType[]]($$TODO-TType[].html) | Array | Gets the .Net array that holds the array elements. | 
+| [TType]($$TODO-TType[].html) | Array | Gets the .Net array that holds the array elements. | 
 
 <br>
 <br>

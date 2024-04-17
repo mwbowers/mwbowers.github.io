@@ -30,24 +30,24 @@ Provide fixed length character string storage and operations.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [AdjustRightLength](#adjustrightlengthstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjust the length of a string to a given value, by padding or truncating the string on the right. | The string at the desired length.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetArrayChars](#getarraycharsarray-char[]-int32-int32)([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from strings stored in an array to a char[]. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetArrayOneChars](#getarrayonecharsarray-char[]-int32)([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from an array to a one-dimensional array. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetChars](#getcharsstring-char[]-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from a string to an array of char. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetArrayChars](#getarraycharsarray-char[]-int32-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from strings stored in an array to a char[]. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetArrayOneChars](#getarrayonecharsarray-char[]-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from an array to a one-dimensional array. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetChars](#getcharsstring-char[]-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from a string to an array of char. | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
-| [Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetIndices](#getindicesarray-int32)([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Get the indices of a multidimensional array for the given position. | An in[] with the indices of the i-th element.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetIndices](#getindicesarray-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Get the indices of a multidimensional array for the given position. | An in[] with the indices of the i-th element.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MergeLeftString](#mergeleftstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MoveLeft. Merge the sourceValue into targetValue starting at position 0. | The result of the merge.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [MergeRightString](#mergerightstringstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's Move(Right). Merge the sourceValue into targetValue starting at the end of targetValue. | The result of the merge.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ReferenceEquals](https://docs.microsoft.com/en-us/dotnet/api/system.object.referenceequals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified Object instances are the same instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if objA is the same instance as objB or if both are null; otherwise, false.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetArrayChars](#setarraycharsarray-char[]-int32-int32)([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Load an array of strings with the strings constructed out of a char[]. | 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetArrayOneChars](#setarrayonecharsarray-char[]-int32)([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from a one-dimensional array to an array. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetChars](#setcharsstring-char[]-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Create a string out of character in a char[]. | The string created with characters from the array.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLengthOfField](#setlengthoffieldstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the length parameter to the length of the string. Throws an exception if the string is null. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetVaryingLengthChar](#setvaryinglengthcharstring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Keep a string with at most maxLength characters, and compute its current length. | The value of source adjusted to maxLength if needed.
-| [TestNumericResult]($$TODO-TestNumericResult.html) | [TestNumeric](#testnumericstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test a string for any of the conditions specified in the TestNumericResult enumeration. | A TestNumericResult value specifying the status of the string.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetArrayChars](#setarraycharsarray-char[]-int32-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Load an array of strings with the strings constructed out of a char[]. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetArrayOneChars](#setarrayonecharsarray-char[]-int32)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from a one-dimensional array to an array. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetChars](#setcharsstring-char[]-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Create a string out of character in a char[]. | The string created with characters from the array.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [SetLengthOfField](#setlengthoffieldstring-outint32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the length parameter to the length of the string. Throws an exception if the string is null. | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [SetVaryingLengthChar](#setvaryinglengthcharstring-int32-outint32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Keep a string with at most maxLength characters, and compute its current length. | The value of source adjusted to maxLength if needed.
+| [TestNumericResult](/reference/asna-qsys-runtime/classes/test-numeric-result.html) | [TestNumeric](#testnumericstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test a string for any of the conditions specified in the TestNumericResult enumeration. | A TestNumericResult value specifying the status of the string.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [ToString](https://docs.microsoft.com/en-us/dotnet/api/system.object.tostring)() | Returns a string that represents the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A string that represents the current object.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [VaryLength](#varylengthint32-string-int32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Set the length of source to the given length subject to maxLength, and return the newLength. | The value of source adjusted to the given length.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [VaryLength](#varylengthint32-string-int32-outint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Set the length of source to the given length subject to maxLength, and return the newLength. | The value of source adjusted to the given length.
 
 <br>
 <br>
@@ -128,7 +128,7 @@ The string at the desired length.
 <br>
 <br>
 
-### GetArrayChars([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetArrayChars([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy characters from strings stored in an array to a char[].
 
@@ -140,8 +140,8 @@ GetArrayChars(Array array, Char[] target, Int32 targetIndex, Int32 charLength);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Array]($$TODO-Array.html) | array | The source of the operation. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | target | The target char[]. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | array | The source of the operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | target | The target char[]. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetIndex | Position in target where the copying should start. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | charLength | Length of the strings in the source array. 
 
@@ -149,7 +149,7 @@ GetArrayChars(Array array, Char[] target, Int32 targetIndex, Int32 charLength);
 <br>
 <br>
 
-### GetArrayOneChars([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetArrayOneChars([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy characters from an array to a one-dimensional array.
 
@@ -161,15 +161,15 @@ GetArrayOneChars(Array array, Char[] target, Int32 targetIndex);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Array]($$TODO-Array.html) | array | The source of the operation. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | target | The target char[]. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | array | The source of the operation. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | target | The target char[]. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetIndex | Position in target where the copying should start. 
 
 
 <br>
 <br>
 
-### GetChars([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetChars([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy characters from a string to an array of char.
 
@@ -182,7 +182,7 @@ GetChars(String source, Char[] destination, Int32 destinationIndex, Int32 destin
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The string. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | destination | The char[] into which to copy source. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | destination | The char[] into which to copy source. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | destinationIndex | The starting position on the destination array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | destinationLength | How many characters to copy. 
 
@@ -190,7 +190,7 @@ GetChars(String source, Char[] destination, Int32 destinationIndex, Int32 destin
 <br>
 <br>
 
-### GetIndices([Array]($$TODO-Array.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### GetIndices([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Get the indices of a multidimensional array for the given position.
 
@@ -202,12 +202,12 @@ GetIndices(Array myArr, Int32 i);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Array]($$TODO-Array.html) | myArr | The multidimensional array. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | myArr | The multidimensional array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | i | The position of the element. 
 
 #### Returns
 
-[Int32[]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
+[Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)
 
 An in[] with the indices of the i-th element.
 
@@ -265,7 +265,7 @@ The result of the merge.
 <br>
 <br>
 
-### SetArrayChars([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### SetArrayChars([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Load an array of strings with the strings constructed out of a char[].
 
@@ -277,8 +277,8 @@ SetArrayChars(Array array, Char[] source, Int32 sourceIndex, Int32 charLength);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Array]($$TODO-Array.html) | array | Array of strings to load. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | source | the char[] that's the source of the strings. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | array | Array of strings to load. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | source | The char[] that's the source of the strings. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceIndex | Position in source where to start constructing strings. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | charLength | Length of the individual strings to be constructed. 
 
@@ -286,7 +286,7 @@ SetArrayChars(Array array, Char[] source, Int32 sourceIndex, Int32 charLength);
 <br>
 <br>
 
-### SetArrayOneChars([Array]($$TODO-Array.html), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### SetArrayOneChars([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Copy characters from a one-dimensional array to an array.
 
@@ -298,15 +298,15 @@ SetArrayOneChars(Array array, Char[] source, Int32 sourceIndex);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Array]($$TODO-Array.html) | array | The destination of the copy. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | source | The source char[]. 
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | array | The destination of the copy. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | source | The source char[]. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceIndex | Position in source where to start copying chars. 
 
 
 <br>
 <br>
 
-### SetChars([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### SetChars([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Create a string out of character in a char[].
 
@@ -319,7 +319,7 @@ SetChars(String destination, Char[] source, Int32 sourceIndex, Int32 sourceLengt
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | destination | String that serves as model for the created string. 
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | source | The char[]. 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | source | The char[]. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceIndex | The starting position in the array. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceLength | The length of the array. 
 
@@ -338,7 +338,7 @@ The string created with characters from the array.
 Sets the length parameter to the length of the string. Throws an exception if the string is null.
 
 ```cs
-SetLengthOfField(String source, ref Int32 length);
+SetLengthOfField(String source, out Int32 length);
 ```
 
 #### Parameters
@@ -357,7 +357,7 @@ SetLengthOfField(String source, ref Int32 length);
 Keep a string with at most maxLength characters, and compute its current length.
 
 ```cs
-SetVaryingLengthChar(String source, Int32 maxLength, ref Int32 length);
+SetVaryingLengthChar(String source, Int32 maxLength, out Int32 length);
 ```
 
 #### Parameters
@@ -394,7 +394,7 @@ TestNumeric(String candidate);
 
 #### Returns
 
-[TestNumericResult]($$TODO-TestNumericResult.html)
+[TestNumericResult](/reference/asna-qsys-runtime/classes/test-numeric-result.html)
 
 A TestNumericResult value specifying the status of the string.
 
@@ -407,7 +407,7 @@ A TestNumericResult value specifying the status of the string.
 Set the length of source to the given length subject to maxLength, and return the newLength.
 
 ```cs
-VaryLength(Int32 length, String source, Int32 maxLength, ref Int32 newLength);
+VaryLength(Int32 length, String source, Int32 maxLength, out Int32 newLength);
 ```
 
 #### Parameters

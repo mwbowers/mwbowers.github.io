@@ -32,7 +32,7 @@ Provides System Value attributes.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QDATFMT | Returns Date format Char(3). | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QDATSEP | Returns Date separator Char(1). | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QDAY | Returns Day of the month Char(2). Day of the year if the system date format is Julian. | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QDAYOFWEEK | Returns The day of the week Char(4). SUN - Sunday MON - Monday TUE - Tuesday WED - Wednesday THU - Thursday FRI - Friday SAT - Saturday | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QDAYOFWEEK | Returns The day of the week Char(4). *SUN - Sunday *MON - Monday *TUE - Tuesday *WED - Wednesday *THU - Thursday *FRI - Friday *SAT - Saturday | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QHOUR | Returns Hour of the day Char(2). | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QMINUTE | Returns Minute of the hour Char(2). | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QMONTH | Returns Month of the year Char(2). Not used for Julian dates. | 

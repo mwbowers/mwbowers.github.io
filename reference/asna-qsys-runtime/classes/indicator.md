@@ -35,8 +35,7 @@ This class represents an IBM i RPG Indicator.
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [CompareTo](#comparetoobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compares this instance with a specified object returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified object. | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
-| [0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-char, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html) | [Convert](#convertchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Convert char to Indicator. | A new Indicator instance with the char value.
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [op_LogicalNot](#op_logicalnotindicator)([Indicator](/reference/asna-qsys-runtime/classes/indicator.html)) | Operator negate. | True if indicator was false, False otherwise.
+| [Char]](/reference/asna-qsys-runtime/i-fixed-size-type`1[-system-char].html) | [Convert](#convertchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Convert char to Indicator. | A new Indicator instance with the char value.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [ToString](#tostring)() | Convert to string. | A new string wih the value converted.
 
 <br>
@@ -82,33 +81,9 @@ Convert(Char value);
 
 #### Returns
 
-[0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]](/reference/asna-qsys-runtime/i-fixed-size-type`1[[-system-char, -system-private-core-lib, -version=6000, -culture=neutral, -public-key-token=7cec85d7bea7798e]].html)
+[Char]](/reference/asna-qsys-runtime/i-fixed-size-type`1[-system-char].html)
 
 A new Indicator instance with the char value.
-
-
-<br>
-<br>
-
-### op_LogicalNot([Indicator](/reference/asna-qsys-runtime/classes/indicator.html))
-
-Operator negate.
-
-```cs
-op_LogicalNot(ASNA.QSys.Runtime.Indicator i);
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Indicator](/reference/asna-qsys-runtime/classes/indicator.html) | i | Input indicator. 
-
-#### Returns
-
-[Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-
-True if indicator was false, False otherwise.
 
 
 <br>

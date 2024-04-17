@@ -115,7 +115,7 @@ A string with the job's Function, Status and (E)state.
 Sets the new status of the Job.
 
 ```cs
-SetStatus(ASNA.QSys.Runtime.JobSupport.ExecStatus newExecStatus, String newFunction);
+SetStatus(Runtime.JobSupport.ExecStatus newExecStatus, String newFunction);
 ```
 
 #### Parameters

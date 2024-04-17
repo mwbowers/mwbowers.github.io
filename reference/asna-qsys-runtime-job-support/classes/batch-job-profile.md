@@ -25,17 +25,17 @@ Provides the facilities to configure and launch a batch job.
 
 | Name |  Description 
 | --- | --- 
-| [BatchJobProfile](#batchjobprofilebatchoptions-string-object[])([BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the BatchJobProfile class using the batch options, program and program parameters. 
-| [BatchJobProfile](#batchjobprofilestring-object[])([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the BatchJobProfile class using the program and program parameters with batch default options. 
+| [BatchJobProfile](#batchjobprofilebatchoptions-string-object-)([BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the BatchJobProfile class using the batch options, program and program parameters. 
+| [BatchJobProfile](#batchjobprofilestring-object-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the BatchJobProfile class using the program and program parameters with batch default options. 
 
 <br>
 
-### BatchJobProfile( [BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
+### BatchJobProfile( [BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
 
 Initializes a new instance of the BatchJobProfile class using the batch options, program and program parameters.
 
 ```cs
-BatchJobProfile( ASNA.QSys.Runtime.JobSupport.BatchOptions options, String programName, Object[] parmList );
+BatchJobProfile( Runtime.JobSupport.BatchOptions options, String programName, Object[] parmList );
 ```
 
 #### Parameters
@@ -44,11 +44,11 @@ BatchJobProfile( ASNA.QSys.Runtime.JobSupport.BatchOptions options, String progr
 | --- | --- | ---
 | [BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html) | options | The configuration options for the new Job. 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programName | Program to run in the new Job. 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parmList | List of parameters to be passed to the initial program. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parmList | List of parameters to be passed to the initial program. 
 
 <br>
 
-### BatchJobProfile( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
+### BatchJobProfile( [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) )
 
 Initializes a new instance of the BatchJobProfile class using the program and program parameters with batch default options.
 
@@ -61,7 +61,7 @@ BatchJobProfile( String programName, Object[] parmList );
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programName | Program to run in the new Job. 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parmList | List of parameters to be passed to the initial program. 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parmList | List of parameters to be passed to the initial program. 
 
 <br>
 
