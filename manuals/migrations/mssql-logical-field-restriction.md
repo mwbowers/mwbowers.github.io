@@ -11,9 +11,9 @@ Although DGL tries to make _SQL Server_ look like DB2 for IBM i, there are sever
 A logical field whose name has changed from its physical base field cannot be used as a key field in the logical file.
 
 ## Computed Key Fields
-When a field is retyped, most typically because the field is a concatenation or substring of the underlying physical fields, then the logical field becomes read-only and additionally it cannot be used as a key field.  
+When a logical field is retyped, most typically because the field is a concatenation or substring of the underlying physical fields, then the logical field becomes read-only and, additionally, it cannot be used as a key field.  
 
-One way of remediating this problem is to use a computed field.
+One way of remediating the usage of a retyped field as a key field is to use a computed field.
 
 Assume this DDS logical field definition fragment:
 ```
@@ -42,3 +42,4 @@ There are some caveats to consider when using this technique:
 
 2.	It is assumed that the logical field name is not already present on the table, otherwise, a new name should be used for the computed field and the field renamed via RNMFLDS in all of the programs that use it.
 
+Please note the [restrictions](mssql-input-only-physical-fields.html)  on using input-only physical fields.
