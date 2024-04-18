@@ -15,10 +15,10 @@ Although DGL tries to make _SQL Server_ look like DB2 for IBM i, there are sever
 
 These are the SQL types and constraints in tables and views that DataGate Linear recognizes as INPUT-only fields:
 
- - Rowversion columns (aka, timestamp type),
- - IDENTITY columns,
- - *Computed* columns,
- - all join file fields,
+ - Rowversion columns
+ - IDENTITY columns
+ - *Computed* columns
+ - Join file fields
 
 While DataGate does not create these type of columns, sometimes it is necesary or convinient to add them by hand as part of a remediation or optimization process.  For example, remediating a logical key field that is retyped will [require a computed field](mssql-logical-field-restriction.html) like this one:
 
