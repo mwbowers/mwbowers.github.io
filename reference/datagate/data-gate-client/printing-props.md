@@ -1,0 +1,78 @@
+---
+title: PrintingProps class
+---
+
+Provides properties related to printing configurations.
+
+**Namespace:** ASNA.DataGate.Client.Properties
+**Assembly:** ASNA.QSys.DataGate.Client.dll
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [SettingsBase](https://learn.microsoft.com/en-us/dotnet/api/) --> [ApplicationSettingsBase](https://learn.microsoft.com/en-us/dotnet/api/)
+<br>
+<br>
+
+## Remarks
+This class was automatically generated and contains application settings for printing.
+
+<br>
+<br>
+
+## Properties
+
+| Type | Name | Description
+| --- | --- | --- 
+| [PrintingProps](/reference/data-gate-client/printing-props.html) | Default | Gets the default instance of the PrintingProps class. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Renderer | Gets the renderer setting for the printing configuration. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | RenderInProc | Gets a value indicating whether rendering should be done in process. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [IsRendererPathMissing()](#isrendererpathmissing-) | Determines if the renderer path is missing.
+| [GetRendererPath()](#getrendererpath-) | Gets the renderer path.
+| [SetRendererPathInMachineConfig](#setrendererpathinmachineconfig-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
+| [SetRendererPath](#setrendererpath-string-configuration-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
+
+### bool IsRendererPathMissing()
+
+Determines if the renderer path is missing.
+
+```cs
+bool IsRendererPathMissing()
+```
+
+### string GetRendererPath()
+
+Gets the renderer path.
+
+```cs
+string GetRendererPath()
+```
+
+### void SetRendererPathInMachineConfig([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Sets the renderer path in the machine configuration.
+
+```cs
+void SetRendererPathInMachineConfig(string path)
+```
+
+#### Parameters
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
+
+### void SetRendererPath([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Configuration config](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0))
+
+Sets the renderer path in the machine configuration.
+
+```cs
+void SetRendererPath(string path, Configuration config)
+```
+
+#### Parameters
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
+| [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0) | config | 
