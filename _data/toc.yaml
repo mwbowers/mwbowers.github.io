@@ -313,6 +313,8 @@ Manuals:
         path: /manuals/migrations/mssql-no-multi-format.html
       - title: Logical Field Restrictions when moving to SQL Server
         path: /manuals/migrations/mssql-logical-field-restriction.html
+      - title: Input-Only Physical Field Restrictions
+        path: /manuals/migrations/mssql-input-only-physical-fields.html
       - title: Migrated Embedded SQL Statements to SQL Server
         path: /manuals/migrations/mssql-embedded-sql.html
       - title: Differences Between DG for IBM i and DG Linear for SQL Server
