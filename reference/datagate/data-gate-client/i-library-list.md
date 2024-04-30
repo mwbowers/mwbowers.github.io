@@ -44,6 +44,7 @@ void EnumerateCurrentSystem(AdgEnumerator enumerator)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgEnumerator](/reference/data-gate-client/adg-enumerator.html) | enumerator | 
@@ -57,6 +58,7 @@ void EnumerateCurrentUser(AdgEnumerator enumerator)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgEnumerator](/reference/data-gate-client/adg-enumerator.html) | enumerator | 
@@ -70,6 +72,7 @@ void AddEntry(string path, LiblPosition pos, string refLib)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
@@ -85,6 +88,7 @@ void RemoveEntry(string path)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 

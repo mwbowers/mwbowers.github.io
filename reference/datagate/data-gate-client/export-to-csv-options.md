@@ -32,6 +32,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -47,6 +48,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -63,6 +65,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -80,6 +83,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -98,6 +102,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -117,6 +122,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 

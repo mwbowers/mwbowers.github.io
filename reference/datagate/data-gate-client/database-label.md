@@ -41,6 +41,7 @@ void CreateDatabase(SourceProfile serverAndCredentials, bool bIsSecured, ILabel 
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | serverAndCredentials | 
@@ -64,6 +65,7 @@ void ChangeDatabase(SourceProfile serverAndCredentials, ILabel label)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | serverAndCredentials | 
@@ -78,15 +80,15 @@ ILabel[] GetLabels(SourceProfile sp)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-An array of labels.
-
 | [ILabel[]](/reference/data-gate-client/i-label.html) | An array of labels.
 
 ### ILabel GetLabel([SourceProfile sp](/reference/data-gate-providers/source-profile.html), [string lblName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -98,16 +100,16 @@ ILabel GetLabel(SourceProfile sp, string lblName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | lblName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The label with the specified name.
-
 | [ILabel](/reference/data-gate-client/i-label.html) | The label with the specified name.
 
 ### void LabelDatabase([SourceProfile serverAndCredentials](/reference/data-gate-providers/source-profile.html), [ILabel label](/reference/data-gate-client/i-label.html), [Boolean& bExists](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
@@ -119,6 +121,7 @@ void LabelDatabase(SourceProfile serverAndCredentials, ILabel label, Boolean& bE
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | serverAndCredentials | 
@@ -134,6 +137,7 @@ void UnlabelDatabase(SourceProfile source)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | source | 
@@ -147,6 +151,7 @@ void RemoveDatabase(SourceProfile sp)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
@@ -168,13 +173,13 @@ ILabel GetNextLabel(ClientDataLink dLink)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ClientDataLink](/reference/data-gate-data-link/client-data-link.html) | dLink | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-Next label in the enumeration
-
 | [ILabel](/reference/data-gate-client/i-label.html) | Next label in the enumeration

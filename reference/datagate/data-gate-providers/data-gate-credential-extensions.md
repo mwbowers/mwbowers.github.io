@@ -27,15 +27,15 @@ bool IsStarDomainCredential(IDataGateCredential dgc)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | dgc | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified IDataGateCredential is a StarDomain credential; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential is a StarDomain credential; otherwise, false.
 
 ### void ThrowIfNotUserPassword([IDataGateCredential dgc](/reference/data-gate-providers/i-data-gate-credential.html), [UserPasswordCredential& upc](/reference/data-gate-providers/user-password-credential.html))
@@ -47,6 +47,7 @@ void ThrowIfNotUserPassword(IDataGateCredential dgc, UserPasswordCredential& upc
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | dgc | 

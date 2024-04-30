@@ -29,16 +29,16 @@ object GetValue(string fieldName, string propName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | propName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The value of the property.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The value of the property.
 
 ### void SetValue([string fieldName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string propName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [object val](https://docs.microsoft.com/en-us/dotnet/api/system.object))
@@ -50,6 +50,7 @@ void SetValue(string fieldName, string propName, object val)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
@@ -65,15 +66,15 @@ Type GetBoundType(string fieldName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The type of the print control.
-
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | The type of the print control.
 
 ### object GetTypedObject([string fieldName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -85,13 +86,13 @@ object GetTypedObject(string fieldName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The typed object.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The typed object.

@@ -26,6 +26,7 @@ void Repair(SourceProfile sourceProfile, RepairOptions repairOptions, AdgObserve
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sourceProfile | 

@@ -29,6 +29,7 @@ SqlObjectName(String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
@@ -42,6 +43,7 @@ SqlObjectName(String, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | 
@@ -56,6 +58,7 @@ SqlObjectName(String, String, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | 
@@ -71,6 +74,7 @@ SqlObjectName(String, String, String, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | server | 
@@ -104,6 +108,7 @@ bool ParseInternal(string input, bool bThrowOnError, SqlObjectName& returnVal)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | 
@@ -111,10 +116,9 @@ bool ParseInternal(string input, bool bThrowOnError, SqlObjectName& returnVal)
 | [SqlObjectName&](/reference/data-gate-sql-server/sql-object-name.html) | returnVal | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
 
 ### SqlObjectName Parse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -126,15 +130,15 @@ SqlObjectName Parse(string input)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A SqlObjectName parsed from the input string.
-
 | [SqlObjectName](/reference/data-gate-sql-server/sql-object-name.html) | A SqlObjectName parsed from the input string.
 
 ### bool TryParse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [SqlObjectName& output](/reference/data-gate-sql-server/sql-object-name.html))
@@ -146,14 +150,14 @@ bool TryParse(string input, SqlObjectName& output)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | 
 | [SqlObjectName&](/reference/data-gate-sql-server/sql-object-name.html) | output | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the parse is successful; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the parse is successful; otherwise, false.

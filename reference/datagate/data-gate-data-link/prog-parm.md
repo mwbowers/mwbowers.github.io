@@ -61,6 +61,7 @@ void NewBuffer(IDataLinkProps dl)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
@@ -74,6 +75,7 @@ void SetZeroValue(IDataLinkProps dl)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
@@ -87,6 +89,7 @@ object ToObject(IDataLinkProps dl, Type objType, SubParmName subParm)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
@@ -94,10 +97,9 @@ object ToObject(IDataLinkProps dl, Type objType, SubParmName subParm)
 | [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/) | subParm | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The converted object.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
 ### void FromObject([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/), [object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName subParm](https://learn.microsoft.com/en-us/dotnet/api/))
@@ -109,6 +111,7 @@ void FromObject(IDataLinkProps dl, object obj, SubParmName subParm)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
@@ -124,6 +127,7 @@ void WriteXml(XmlWriter xw)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | xw | 

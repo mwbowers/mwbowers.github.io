@@ -39,6 +39,7 @@ FileAdapter(AdgConnection)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -52,6 +53,7 @@ FileAdapter(AdgConnection, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -66,6 +68,7 @@ FileAdapter(AdgConnection, String, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -81,6 +84,7 @@ FileAdapter(IFileObject, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | fileObject | 
@@ -95,6 +99,7 @@ FileAdapter(IFileObject)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | fileObject | 
@@ -211,6 +216,7 @@ void OpenNewAdgDataSet(AdgDataSet& ds)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet&](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -224,6 +230,7 @@ void Open(AdgDataSet ds)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -237,6 +244,7 @@ void OpenSimpleQuery(AdgDataSet& ds, string queryFile, string query, String[] ke
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet&](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -254,6 +262,7 @@ void AddRecord(AdgDataSet ds)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -283,6 +292,7 @@ void ChangeCurrent(AdgDataSet ds)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -296,6 +306,7 @@ void ChangeRRN(AdgDataSet ds, long RRN)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -310,6 +321,7 @@ void CheckKey(AdgKeyTable keyTable)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | keyTable | 
@@ -339,6 +351,7 @@ void DeleteKey(AdgKeyTable keyTable)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | keyTable | 
@@ -352,6 +365,7 @@ void DeleteRange(AdgKeyTable firstKey, RangeFirst rangeFirst, AdgKeyTable lastKe
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | firstKey | 
@@ -368,6 +382,7 @@ void DeleteRRN(long RRN)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
@@ -389,6 +404,7 @@ void ReadRandomKey(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, AdgKeyTab
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -405,6 +421,7 @@ void ReadRandomRRN(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, long RRN)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -421,6 +438,7 @@ void ReadRange(AdgDataSet ds, RangeMode mode, LockRequest lr, AdgKeyTable firstK
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -448,6 +466,7 @@ void ReadSequentialEqual(AdgDataSet ds, ReadEqualMode mode, LockRequest lr, AdgK
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -472,6 +491,7 @@ void ReleaseRRN(LockRequest lr, long RRN)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [LockRequest](https://learn.microsoft.com/en-us/dotnet/api/) | lr | 
@@ -486,6 +506,7 @@ void ReuseRRN(AdgDataSet ds, long RRN)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -500,6 +521,7 @@ void SeekKey(SeekMode mode, AdgKeyTable keyTable)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SeekMode](https://learn.microsoft.com/en-us/dotnet/api/) | mode | 
@@ -514,6 +536,7 @@ void SeekRange(RangeMode mode, AdgKeyTable firstKey, RangeFirst rangeFirst, AdgK
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [RangeMode](https://learn.microsoft.com/en-us/dotnet/api/) | mode | 
@@ -531,6 +554,7 @@ void SeekRRN(SeekMode mode, long RRN)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SeekMode](https://learn.microsoft.com/en-us/dotnet/api/) | mode | 
@@ -553,6 +577,7 @@ void SetFormat(string Format)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Format | 
@@ -566,15 +591,15 @@ string GetFormatName(int i)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | i | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The format name.
-
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The format name.
 
 ### IPrintProperties GetPrintProperties([string format](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -586,15 +611,15 @@ IPrintProperties GetPrintProperties(string format)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | format | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The print properties for the specified format.
-
 | [IPrintProperties](/reference/data-gate-providers/i-print-properties.html) | The print properties for the specified format.
 
 ### void ResetPrintAttr()

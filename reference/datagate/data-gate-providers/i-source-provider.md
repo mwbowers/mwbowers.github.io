@@ -58,6 +58,7 @@ void Open(SourceProfile dbName, CancellationToken ct)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | dbName | 
@@ -80,6 +81,7 @@ void PostOpenInit(AdgConnection cn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -101,6 +103,7 @@ void ChangeCurrentLibl(String[] newLibl)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newLibl | 
@@ -122,6 +125,7 @@ IFileData MakeFileDataProvider(IFileObject file, string memberName, AccessMode m
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | file | 
@@ -131,10 +135,9 @@ IFileData MakeFileDataProvider(IFileObject file, string memberName, AccessMode m
 | [AdgDataSet&](/reference/data-gate-client/adg-data-set.html) | ds | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The file data provider.
-
 | [IFileData](https://learn.microsoft.com/en-us/dotnet/api/) | The file data provider.
 
 ### void StartTransaction([TransactionLevel level](https://learn.microsoft.com/en-us/dotnet/api/), [TransactionAttributes attr](/reference/data-gate-providers/transaction-attributes.html), [string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -146,6 +149,7 @@ void StartTransaction(TransactionLevel level, TransactionAttributes attr, string
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | level | 
@@ -170,6 +174,7 @@ void Commit(string transactionName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | transactionName | 
@@ -191,6 +196,7 @@ void SetCanceler(CancellationToken token)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | token | 

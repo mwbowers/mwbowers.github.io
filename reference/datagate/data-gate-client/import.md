@@ -28,15 +28,15 @@ Task With(ImportOptions options)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ImportOptions](/reference/data-gate-client/import-options.html) | options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A task representing the asynchronous import operation.
-
 | [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task representing the asynchronous import operation.
 
 ### Task With([ImportOptions options](/reference/data-gate-client/import-options.html))

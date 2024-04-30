@@ -29,6 +29,7 @@ AdgConnection(String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbName | 
@@ -42,6 +43,7 @@ AdgConnection(String, IExchange5250)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbName | 
@@ -56,6 +58,7 @@ AdgConnection(SourceProfile)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
@@ -69,6 +72,7 @@ AdgConnection(SourceProfile, IExchange5250)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
@@ -192,16 +196,16 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-Transaction reference
-
 | [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | Transaction reference
 
 ### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -213,16 +217,16 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | Name | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-
-
 | [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | 
 
 ### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -242,15 +246,15 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The  representing the transaction.
-
 | [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The  representing the transaction.
 
 ### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/))
@@ -262,15 +266,15 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | Name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The  representing the transaction.
-
 | [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The  representing the transaction.
 
 ### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/))
@@ -306,6 +310,7 @@ void Open(CancellationToken ct)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
@@ -335,16 +340,16 @@ bool op_Equality(AdgConnection x, AdgConnection y)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | x | 
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | y | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are equal, otherwise false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, otherwise false.
 
 ### bool op_Inequality([AdgConnection x](/reference/data-gate-client/adg-connection.html), [AdgConnection y](/reference/data-gate-client/adg-connection.html))
@@ -356,16 +361,16 @@ bool op_Inequality(AdgConnection x, AdgConnection y)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | x | 
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | y | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are different, otherwise false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are different, otherwise false.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
@@ -377,15 +382,15 @@ bool Equals(object obj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are equal, otherwise false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, otherwise false.
 
 ### int GetHashCode()
@@ -405,15 +410,15 @@ AdgConnection Synchronized(AdgConnection cn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A synchronized AdgConnection instance.
-
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | A synchronized AdgConnection instance.
 
 ### bool IsCanceledException([Exception e](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
@@ -425,13 +430,13 @@ bool IsCanceledException(Exception e)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the exception has been cancelled, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the exception has been cancelled, False otherwise.

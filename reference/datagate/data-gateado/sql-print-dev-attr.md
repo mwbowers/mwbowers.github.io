@@ -36,6 +36,7 @@ SqlPrintDevAttr(PrintDevAttr)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | devAttr | 
@@ -49,6 +50,7 @@ SqlPrintDevAttr(BinaryReader, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0) | reader | 
@@ -69,6 +71,7 @@ void WriteTo(BinaryWriter writer, bool bIsOlePF)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0) | writer | 

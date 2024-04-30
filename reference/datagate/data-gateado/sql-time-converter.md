@@ -27,6 +27,7 @@ SqlTimeConverter(DateTimeFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/) | dtFmt | 
@@ -47,6 +48,7 @@ object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object v
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
@@ -54,10 +56,9 @@ object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object v
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A TimeSpan object that represents the converted value.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | A TimeSpan object that represents the converted value.
 
 ### object ConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
@@ -69,6 +70,7 @@ object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object val
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
@@ -77,8 +79,7 @@ object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object val
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | destinationType | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-An Object that represents the converted value.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object that represents the converted value.

@@ -49,6 +49,7 @@ void Initialize(InitMemberOptions Options, long Records)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [InitMemberOptions](/reference/data-gate-client/init-member-options.html) | Options | 

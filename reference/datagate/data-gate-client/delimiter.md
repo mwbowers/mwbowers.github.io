@@ -35,6 +35,7 @@ Delimiter(Char)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | 
@@ -78,16 +79,16 @@ bool op_Equality(Delimiter lval, Delimiter rval)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Delimiter](/reference/data-gate-client/delimiter.html) | lval | 
 | [Delimiter](/reference/data-gate-client/delimiter.html) | rval | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if instances are equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if instances are equal, False otherwise.
 
 ### bool op_Inequality([Delimiter lval](/reference/data-gate-client/delimiter.html), [Delimiter rval](/reference/data-gate-client/delimiter.html))
@@ -99,16 +100,16 @@ bool op_Inequality(Delimiter lval, Delimiter rval)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Delimiter](/reference/data-gate-client/delimiter.html) | lval | 
 | [Delimiter](/reference/data-gate-client/delimiter.html) | rval | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if instances are not equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if instances are not equal, False otherwise.
 
 ### char ToChar()
@@ -128,15 +129,15 @@ char op_Implicit(Delimiter delim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Delimiter](/reference/data-gate-client/delimiter.html) | delim | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The char value of the Delimiter instance.
-
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | The char value of the Delimiter instance.
 
 ### Delimiter FromChar([char ch](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
@@ -148,15 +149,15 @@ Delimiter FromChar(char ch)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | ch | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new Delimiter instance.
-
 | [Delimiter](/reference/data-gate-client/delimiter.html) | A new Delimiter instance.
 
 ### char op_Implicit([Delimiter delim](/reference/data-gate-client/delimiter.html))
@@ -168,15 +169,15 @@ char op_Implicit(Delimiter delim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Delimiter](/reference/data-gate-client/delimiter.html) | ch | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new Delimiter instance.
-
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | A new Delimiter instance.
 
 ### char op_Implicit([Delimiter delim](/reference/data-gate-client/delimiter.html))
@@ -188,15 +189,15 @@ char op_Implicit(Delimiter delim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Delimiter](/reference/data-gate-client/delimiter.html) | delim | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The string value of the Delimiter instance.
-
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | The string value of the Delimiter instance.
 
 ### void ClearValue()
@@ -224,15 +225,15 @@ bool Equals(object obj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
 
 ### string ToString()

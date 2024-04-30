@@ -28,15 +28,15 @@ Task With(ExportOptions options)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ExportOptions](/reference/data-gate-client/export-options.html) | options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A task that represents the asynchronous export operation.
-
 | [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task that represents the asynchronous export operation.
 
 ### Task With([ExportOptions options](/reference/data-gate-client/export-options.html))

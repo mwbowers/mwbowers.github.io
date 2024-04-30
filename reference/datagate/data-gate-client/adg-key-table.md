@@ -26,6 +26,7 @@ AdgKeyTable(DataTable)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | keyTableTemplate | 
@@ -52,13 +53,13 @@ bool Equals(DataRow other)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | other | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified DataRow is equal to the current DataRow; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified DataRow is equal to the current DataRow; otherwise, false.

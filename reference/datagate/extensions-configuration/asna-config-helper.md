@@ -35,15 +35,15 @@ IAsnaConfig LoadFromJson(Stream jsonStream)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | jsonStream | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-IAsnaConfig
-
 | [IAsnaConfig](/reference/extensions-configuration/i-asna-config.html) | IAsnaConfig
 
 ### IAsnaConfig LoadFromJson([Stream jsonStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
@@ -55,15 +55,15 @@ IAsnaConfig LoadFromJson(Stream jsonStream)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | jsonFilePath | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-
-
 | [IAsnaConfig](/reference/extensions-configuration/i-asna-config.html) | 
 
 ### bool TryLoadFromDefaultFile([IAsnaConfig& config](/reference/extensions-configuration/i-asna-config.html))
@@ -75,13 +75,13 @@ bool TryLoadFromDefaultFile(IAsnaConfig& config)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IAsnaConfig&](/reference/extensions-configuration/i-asna-config.html) | config | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if a configuration is loaded from thedefault config file; otherwise false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if a configuration is loaded from thedefault config file; otherwise false.

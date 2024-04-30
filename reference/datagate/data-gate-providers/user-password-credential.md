@@ -33,6 +33,7 @@ UserPasswordCredential(String, String, PasswordType)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | 
@@ -81,15 +82,15 @@ bool Equals(IDataGateCredential other)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | other | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified IDataGateCredential is equal to the current UserPasswordCredential; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential is equal to the current UserPasswordCredential; otherwise, false.
 
 ### int GetHashCodeInternal()

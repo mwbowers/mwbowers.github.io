@@ -45,6 +45,7 @@ void WriteByte(byte b)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
@@ -58,6 +59,7 @@ void Write(Byte[] inBuf, int iBegin, int cBytes)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 

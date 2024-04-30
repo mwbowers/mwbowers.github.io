@@ -53,15 +53,15 @@ bool Equals(Dependent other)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Dependent](/reference/data-gate-client/dependent.html) | other | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
 
 ### bool Equals([Dependent other](/reference/data-gate-client/dependent.html))
@@ -73,15 +73,15 @@ bool Equals(Dependent other)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Dependent](/reference/data-gate-client/dependent.html) | obj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified dependent object is equal to the current dependent object; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified dependent object is equal to the current dependent object; otherwise, false.
 
 ### int GetHashCode()

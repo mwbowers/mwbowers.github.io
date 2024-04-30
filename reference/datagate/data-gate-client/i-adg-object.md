@@ -84,6 +84,7 @@ void Duplicate(string ScopePath, string TargetPath, string NewName, DuplicateOpt
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScopePath | 
@@ -100,6 +101,7 @@ void GrantAuthority(string userName, AuthorityTypes authorityType)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | userName | 
@@ -114,15 +116,15 @@ bool HasLock(ShareTypes ShareType)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ShareTypes](https://learn.microsoft.com/en-us/dotnet/api/) | ShareType | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the object has a lock of the specified share type, false otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the object has a lock of the specified share type, false otherwise.
 
 ### void Lock([ShareTypes ShareType](https://learn.microsoft.com/en-us/dotnet/api/), [WaitOptions WaitOption](https://learn.microsoft.com/en-us/dotnet/api/), [short WaitTime](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -134,6 +136,7 @@ void Lock(ShareTypes ShareType, WaitOptions WaitOption, short WaitTime)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ShareTypes](https://learn.microsoft.com/en-us/dotnet/api/) | ShareType | 
@@ -149,6 +152,7 @@ void MoveTo(string NewPathName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewPathName | 
@@ -162,6 +166,7 @@ void ReadBases(XmlReader reader)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
@@ -183,6 +188,7 @@ void Rename(string NewName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewName | 
@@ -204,6 +210,7 @@ void RevokeAuthority(string userName, AuthorityTypes authorityType)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | userName | 
@@ -226,6 +233,7 @@ void Unlock(ShareTypes ShareType)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ShareTypes](https://learn.microsoft.com/en-us/dotnet/api/) | ShareType | 
@@ -239,6 +247,7 @@ void WriteBases(XmlWriter writer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
@@ -252,6 +261,7 @@ void WriteXml(XmlWriter writer, XmlOptions options)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 

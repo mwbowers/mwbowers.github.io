@@ -37,6 +37,7 @@ ChannelIOStreamException(String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
@@ -50,6 +51,7 @@ ChannelIOStreamException(String, Exception)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
@@ -64,6 +66,7 @@ ChannelIOStreamException(Exception)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
@@ -83,13 +86,13 @@ Exception Validate(Exception inner)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The validated inner exception.
-
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | The validated inner exception.

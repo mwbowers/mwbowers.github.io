@@ -32,6 +32,7 @@ ImportFromCsvOptions(IMember, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 
@@ -46,6 +47,7 @@ ImportFromCsvOptions(IMember, String, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 
@@ -61,6 +63,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 
@@ -77,6 +80,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 
@@ -94,6 +98,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 
@@ -112,6 +117,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>,
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 
@@ -131,6 +137,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>,
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 

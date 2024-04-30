@@ -30,15 +30,16 @@ int GetCommonValueKeyPartCount(AdgKeyTable key1, AdgKeyTable key2)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | key1 | 
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | key2 | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The count of common value key parts.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The count of common value key parts.
 
 ### AdgKeyTable GetKey([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0), [AdgDataSet ds](/reference/data-gate-client/adg-data-set.html), [int cKeyParts](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -50,6 +51,7 @@ AdgKeyTable GetKey(DataRow row, AdgDataSet ds, int cKeyParts)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | row | 
@@ -57,10 +59,9 @@ AdgKeyTable GetKey(DataRow row, AdgDataSet ds, int cKeyParts)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cKeyParts | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The AdgKeyTable instance.
-
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | The AdgKeyTable instance.
 
 ### AdgKeyTable Copy([AdgKeyTable kt](/reference/data-gate-client/adg-key-table.html))
@@ -72,15 +73,15 @@ AdgKeyTable Copy(AdgKeyTable kt)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | kt | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The copied AdgKeyTable instance.
-
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | The copied AdgKeyTable instance.
 
 ### int TotalMatchingParts([AdgKeyTable key](/reference/data-gate-client/adg-key-table.html), [int maxParts](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DataRow rightRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
@@ -92,6 +93,7 @@ int TotalMatchingParts(AdgKeyTable key, int maxParts, DataRow rightRow)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | key | 
@@ -99,10 +101,9 @@ int TotalMatchingParts(AdgKeyTable key, int maxParts, DataRow rightRow)
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | rightRow | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The count of total matching parts.
-
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The count of total matching parts.
 
 ### bool ExactMatch([AdgKeyTable key](/reference/data-gate-client/adg-key-table.html), [DataRow rightRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
@@ -114,14 +115,14 @@ bool ExactMatch(AdgKeyTable key, DataRow rightRow)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | key | 
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | rightRow | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if it matches exactly, false otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if it matches exactly, false otherwise.

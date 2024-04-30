@@ -29,6 +29,7 @@ ExportToXmlOptions(IMember, String, ExportAccessMode)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -44,6 +45,7 @@ ExportToXmlOptions(IMember, String, ExportAccessMode, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 
@@ -60,6 +62,7 @@ ExportToXmlOptions(IMember, String, ExportAccessMode, Boolean, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | src | 

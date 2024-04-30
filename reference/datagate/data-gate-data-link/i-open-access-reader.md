@@ -45,6 +45,7 @@ int Read(Byte[] inBuf, int iBegin, int cBytes)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
@@ -52,10 +53,9 @@ int Read(Byte[] inBuf, int iBegin, int cBytes)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The total number of bytes read into the buffer.
-
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The total number of bytes read into the buffer.
 
 ### void Receive()

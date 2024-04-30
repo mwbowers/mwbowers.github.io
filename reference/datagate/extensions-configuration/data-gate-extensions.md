@@ -32,13 +32,13 @@ IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles(IConfiguration conf
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | config | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A read-only dictionary of SourceProfiles.
-
 | [IReadOnlyDictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | A read-only dictionary of SourceProfiles.

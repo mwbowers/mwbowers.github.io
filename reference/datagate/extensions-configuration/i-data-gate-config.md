@@ -39,13 +39,13 @@ SourceProfile ResolveSourceName(string name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The resolved SourceProfile.
-
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | The resolved SourceProfile.

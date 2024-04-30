@@ -27,15 +27,15 @@ Stream MakeEncoder(Stream ostream)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | ostream | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A stream that encodes data.
-
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | A stream that encodes data.
 
 ### Stream MakeDecoder([Stream istream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
@@ -47,13 +47,13 @@ Stream MakeDecoder(Stream istream)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | istream | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A stream that decodes data.
-
 | [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | A stream that decodes data.

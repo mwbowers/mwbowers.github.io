@@ -59,6 +59,7 @@ void SetRendererPathInMachineConfig(string path)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
@@ -72,6 +73,7 @@ void SetRendererPath(string path, Configuration config)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 

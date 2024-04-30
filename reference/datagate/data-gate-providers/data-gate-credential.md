@@ -26,6 +26,7 @@ DataGateCredential(CredentialType)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [CredentialType](/reference/data-gate-providers/credential-type.html) | type | 
@@ -63,15 +64,15 @@ bool Equals(object obj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified object is equal to the current object; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current object; otherwise, false.
 
 ### int GetHashCode()
@@ -99,13 +100,13 @@ bool Equals(object obj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | other | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified IDataGateCredential is equal to the current object; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential is equal to the current object; otherwise, false.

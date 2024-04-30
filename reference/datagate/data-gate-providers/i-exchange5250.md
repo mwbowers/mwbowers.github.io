@@ -28,6 +28,7 @@ void Exchange5250DS(int iBegin, Byte[]& aInDs, int InDsLength, Byte[]& aOutDs, I
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | 
@@ -46,6 +47,7 @@ void GetDeviceInfo(String& deviceSN, String& deviceClient, String& deviceServer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | deviceSN | 
@@ -61,6 +63,7 @@ void CompleteOpen(int peerAltCodePageID)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | peerAltCodePageID | 

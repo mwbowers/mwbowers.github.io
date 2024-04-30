@@ -47,16 +47,16 @@ ISystemValue NewSystemValue(AdgConnection cn, bool withNewTransaction)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | withNewTransaction | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the ISystemValue interface.
-
 | [ISystemValue](/reference/data-gate-client/i-system-value.html) | A new instance of the ISystemValue interface.
 
 ### IServerLicense ServerLicense([AdgConnection cn](/reference/data-gate-client/adg-connection.html))
@@ -68,15 +68,15 @@ IServerLicense ServerLicense(AdgConnection cn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The server license for the specified AdgConnection.
-
 | [IServerLicense](/reference/data-gate-client/i-server-license.html) | The server license for the specified AdgConnection.
 
 ### ILibraryList NewLibraryList([AdgConnection cn](/reference/data-gate-client/adg-connection.html))
@@ -88,15 +88,15 @@ ILibraryList NewLibraryList(AdgConnection cn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the ILibraryList interface.
-
 | [ILibraryList](/reference/data-gate-client/i-library-list.html) | A new instance of the ILibraryList interface.
 
 ### IDataArea NewDataArea([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -108,16 +108,16 @@ IDataArea NewDataArea(AdgConnection cn, string PathName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the IDataArea interface.
-
 | [IDataArea](/reference/data-gate-client/i-data-area.html) | A new instance of the IDataArea interface.
 
 ### IDataArea NewDataArea([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -137,16 +137,16 @@ IDirectory NewDirectory(AdgConnection cn, string PathName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the IDirectory interface.
-
 | [IDirectory](/reference/data-gate-client/i-directory.html) | A new instance of the IDirectory interface.
 
 ### IFileObject NewFile([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -158,16 +158,16 @@ IFileObject NewFile(AdgConnection cn, string PathName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the IFileObject interface.
-
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | A new instance of the IFileObject interface.
 
 ### IMember NewMember([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -179,16 +179,16 @@ IMember NewMember(AdgConnection cn, string PathName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the IMember interface.
-
 | [IMember](/reference/data-gate-client/i-member.html) | A new instance of the IMember interface.
 
 ### IAdgObject NewObject([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [AdgObjectTypes type](https://learn.microsoft.com/en-us/dotnet/api/), [string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -200,6 +200,7 @@ IAdgObject NewObject(AdgConnection cn, AdgObjectTypes type, string path)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -207,10 +208,9 @@ IAdgObject NewObject(AdgConnection cn, AdgObjectTypes type, string path)
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the IAdgObject interface.
-
 | [IAdgObject](/reference/data-gate-client/i-adg-object.html) | A new instance of the IAdgObject interface.
 
 ### IAdgObject ReadXml([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](https://learn.microsoft.com/en-us/dotnet/api/), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/data-gate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/data-gate-client/xml-cancel-event-handler.html))
@@ -222,6 +222,7 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -233,10 +234,9 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 | [XmlCancelEventHandler](/reference/data-gate-client/xml-cancel-event-handler.html) | observer | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A new instance of the IAdgObject interface.
-
 | [IAdgObject](/reference/data-gate-client/i-adg-object.html) | A new instance of the IAdgObject interface.
 
 ### IAdgObject ReadXml([AdgConnection cn](/reference/data-gate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](https://learn.microsoft.com/en-us/dotnet/api/), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/data-gate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/data-gate-client/xml-cancel-event-handler.html))
@@ -272,15 +272,15 @@ IAdgObject Synchronized(IAdgObject adgObj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IAdgObject](/reference/data-gate-client/i-adg-object.html) | adgObj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The synchronized IAdgObject instance.
-
 | [IAdgObject](/reference/data-gate-client/i-adg-object.html) | The synchronized IAdgObject instance.
 
 ### IAdgObject Synchronized([IAdgObject adgObj](/reference/data-gate-client/i-adg-object.html))
@@ -292,13 +292,13 @@ IAdgObject Synchronized(IAdgObject adgObj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IAdgObject](/reference/data-gate-client/i-adg-object.html) | llObj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The synchronized IAdgObject instance.
-
 | [IAdgObject](/reference/data-gate-client/i-adg-object.html) | The synchronized IAdgObject instance.

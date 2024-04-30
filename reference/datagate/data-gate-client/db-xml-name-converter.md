@@ -42,16 +42,16 @@ string Encode(XPathNavigator context, string name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0) | context | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The encoded XML-compliant Name string.
-
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The encoded XML-compliant Name string.
 
 ### string Decode([XPathNavigator context](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -63,14 +63,14 @@ string Decode(XPathNavigator context, string name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0) | context | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The decoded original name.
-
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The decoded original name.

@@ -26,6 +26,7 @@ ImportOptions(IMember, String, Boolean, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [IMember](/reference/data-gate-client/i-member.html) | target | 

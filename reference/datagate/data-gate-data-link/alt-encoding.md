@@ -60,15 +60,15 @@ AltEncoding GetAltEncoding(string name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The alternative encoding.
-
 | [AltEncoding](/reference/data-gate-data-link/alt-encoding.html) | The alternative encoding.
 
 ### AltEncodingInfo GetAltEncodingInfo()
@@ -88,15 +88,15 @@ AltEncoder GetAltEncoder(ITransformProperties encProps)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | encProps | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The alternative encoder.
-
 | [AltEncoder](/reference/data-gate-data-link/alt-encoder.html) | The alternative encoder.
 
 ### AltDecoder GetAltDecoder([ITransformProperties decProps](/reference/data-gate-providers/i-transform-properties.html))
@@ -108,15 +108,15 @@ AltDecoder GetAltDecoder(ITransformProperties decProps)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | decProps | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The alternative decoder.
-
 | [AltDecoder](/reference/data-gate-data-link/alt-decoder.html) | The alternative decoder.
 
 ### Decoder GetDecoder()
@@ -160,15 +160,15 @@ Dictionary<string, object> DictionaryFromITransformProps(ITransformProperties pr
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | props | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The dictionary.
-
 | [Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) | The dictionary.
 
 ### ITransformProperties TransformPropertiesFromDictionary([Dictionary<string](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [object> dict](https://docs.microsoft.com/en-us/dotnet/api/system.object))
@@ -188,15 +188,15 @@ ITransformProperties TransformPropertiesFromStream(BinaryReader br)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0) | br | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The transform properties.
-
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | The transform properties.
 
 ### void TransformPropertiesToStream([ITransformProperties t](/reference/data-gate-providers/i-transform-properties.html), [BinaryWriter bw](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0))
@@ -208,6 +208,7 @@ void TransformPropertiesToStream(ITransformProperties t, BinaryWriter bw)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | t | 
@@ -222,14 +223,14 @@ bool Equal(ITransformProperties lhs, ITransformProperties rhs)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | lhs | 
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | rhs | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the transform properties are equal; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the transform properties are equal; otherwise, false.

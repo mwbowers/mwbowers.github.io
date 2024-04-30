@@ -44,6 +44,7 @@ void AttachRemoteDirectory(string remotePathName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | remotePathName | 
@@ -57,15 +58,15 @@ IDirectory CreateSubDirectory(string Name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The created subdirectory.
-
 | [IDirectory](/reference/data-gate-client/i-directory.html) | The created subdirectory.
 
 ### void Enumerate([AdgEnumerator enumerator](/reference/data-gate-client/adg-enumerator.html))
@@ -77,6 +78,7 @@ void Enumerate(AdgEnumerator enumerator)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgEnumerator](/reference/data-gate-client/adg-enumerator.html) | enumerator | 
@@ -90,6 +92,7 @@ void RepairObjects(RepairOptions repairOptions, AdgObserver observer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [RepairOptions](https://learn.microsoft.com/en-us/dotnet/api/) | repairOptions | 

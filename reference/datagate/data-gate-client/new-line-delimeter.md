@@ -38,16 +38,16 @@ bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [NewLineDelimeter](/reference/data-gate-client/new-line-delimeter.html) | ldlim | 
 | [Delimiter](/reference/data-gate-client/delimiter.html) | rdlim | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are not equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are not equal, False otherwise.
 
 ### bool op_Inequality([NewLineDelimeter ldlim](/reference/data-gate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/data-gate-client/delimiter.html))
@@ -59,16 +59,16 @@ bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [NewLineDelimeter](/reference/data-gate-client/new-line-delimeter.html) | ldlim | 
 | [Delimiter](/reference/data-gate-client/delimiter.html) | rdlim | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are not equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are not equal, False otherwise.
 
 ### bool op_Equality([NewLineDelimeter _](/reference/data-gate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/data-gate-client/delimiter.html))
@@ -80,16 +80,16 @@ bool op_Equality(NewLineDelimeter _, Delimiter rdlim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [NewLineDelimeter](/reference/data-gate-client/new-line-delimeter.html) | _ | 
 | [Delimiter](/reference/data-gate-client/delimiter.html) | rdlim | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
 
 ### bool op_Equality([NewLineDelimeter _](/reference/data-gate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/data-gate-client/delimiter.html))
@@ -101,16 +101,16 @@ bool op_Equality(NewLineDelimeter _, Delimiter rdlim)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [NewLineDelimeter](/reference/data-gate-client/new-line-delimeter.html) | ldlim | 
 | [Delimiter](/reference/data-gate-client/delimiter.html) | _ | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
 
 ### string ToString()
@@ -130,15 +130,15 @@ bool Equals(object obj)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-True if the instances are equal, False otherwise.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
 
 ### int GetHashCode()

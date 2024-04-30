@@ -27,6 +27,7 @@ SourceProfileConverter(SourceProfileConverterOptions)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfileConverterOptions](/reference/data-gate-providers/source-profile-converter-options.html) | opts | 
@@ -55,6 +56,7 @@ SourceProfile Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOpt
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Utf8JsonReader&](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0) | reader | 
@@ -62,10 +64,9 @@ SourceProfile Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOpt
 | [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-A SourceProfile object.
-
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | A SourceProfile object.
 
 ### void Write([Utf8JsonWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [SourceProfile value](/reference/data-gate-providers/source-profile.html), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
@@ -77,6 +78,7 @@ void Write(Utf8JsonWriter writer, SourceProfile value, JsonSerializerOptions opt
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | 

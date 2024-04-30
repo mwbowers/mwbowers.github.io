@@ -37,6 +37,7 @@ AuthorityEntry(String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
@@ -50,6 +51,7 @@ AuthorityEntry(String, AuthorityTypes)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
@@ -64,6 +66,7 @@ AuthorityEntry(String, AuthorityTypes, Boolean)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 

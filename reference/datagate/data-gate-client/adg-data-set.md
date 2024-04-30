@@ -26,6 +26,7 @@ AdgDataSet(String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
@@ -111,15 +112,15 @@ DataTable GetFormatTable(int iFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The DataTable associated with the specified format.
-
 | [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | The DataTable associated with the specified format.
 
 ### DataTable GetFormatTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -131,15 +132,15 @@ DataTable GetFormatTable(int iFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | strFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The DataTable associated with the specified format.
-
 | [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | The DataTable associated with the specified format.
 
 ### string GetFormatName([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -151,15 +152,15 @@ string GetFormatName(int iFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The name of the format.
-
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The name of the format.
 
 ### int GetFormatIndex([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -171,15 +172,15 @@ int GetFormatIndex(string strFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The format index.
-
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The format index.
 
 ### void DeleteRow([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -191,6 +192,7 @@ void DeleteRow(string strFormat, int rrn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
@@ -205,15 +207,15 @@ DataRow PrepareRow(string strFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-
-
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | 
 
 ### DataRow PrepareRow([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -233,15 +235,15 @@ DataRow PrepareRow(string strFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | iFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The prepared DataRow.
-
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | The prepared DataRow.
 
 ### void AddRow([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -253,6 +255,7 @@ void AddRow(string strFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
@@ -266,6 +269,7 @@ void InsertRow(string strFormat, int rrn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
@@ -280,6 +284,7 @@ void AddRow(string strFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | iFormat | 
@@ -293,6 +298,7 @@ void InsertRow(string strFormat, int rrn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | iFormat | 
@@ -307,15 +313,15 @@ bool AddPreparedRowAndSetActive(int iFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the row was added and set as active; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the row was added and set as active; otherwise, false.
 
 ### bool SetActive([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -327,16 +333,16 @@ bool SetActive(int iFormat, int rrn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the active DataRow was set successfully; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the active DataRow was set successfully; otherwise, false.
 
 ### bool SetActive([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -348,16 +354,16 @@ bool SetActive(int iFormat, int rrn)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | strFormat | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the active DataRow was set successfully; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the active DataRow was set successfully; otherwise, false.
 
 ### AdgKeyTable NewKeyTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -369,15 +375,15 @@ AdgKeyTable NewKeyTable(int iFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The newly created AdgKeyTable.
-
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | The newly created AdgKeyTable.
 
 ### AdgKeyTable NewKeyTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -389,15 +395,15 @@ AdgKeyTable NewKeyTable(int iFormat)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | strFormat | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The newly created AdgKeyTable.
-
 | [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | The newly created AdgKeyTable.
 
 ### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgTable& value](/reference/data-gate-client/adg-table.html))
@@ -409,16 +415,16 @@ bool TryGetValue(string key, AdgTable& value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
 | [AdgTable&](/reference/data-gate-client/adg-table.html) | value | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the dictionary contains an element with the specified key; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the dictionary contains an element with the specified key; otherwise, false.
 
 ### bool ContainsKey([int key](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -430,15 +436,15 @@ bool ContainsKey(int key)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | key | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the dictionary contains an element with the key; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the dictionary contains an element with the key; otherwise, false.
 
 ### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgTable& value](/reference/data-gate-client/adg-table.html))
@@ -450,16 +456,16 @@ bool TryGetValue(string key, AdgTable& value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
 | [AdgTable&](/reference/data-gate-client/adg-table.html) | value | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the dictionary contains an element with the specified key; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the dictionary contains an element with the specified key; otherwise, false.
 
 ### bool Contains([KeyValuePair<int](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable> item](/reference/data-gate-client/adg-table.html))

@@ -26,14 +26,14 @@ IDisposable GetValidatingReader(XmlReader& reader, XmlSchemaSet schema)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlReader&](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
 | [XmlSchemaSet](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschemaset?view=net-8.0) | schema | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-Returns an IDisposable instance if a reader was createdand returned in ref 'reader', otherwise null.  
-
 | [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0) | Returns an IDisposable instance if a reader was createdand returned in ref 'reader', otherwise null.  

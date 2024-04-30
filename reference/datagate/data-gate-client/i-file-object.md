@@ -61,16 +61,16 @@ IFileObject Copy(string targetDir, string newName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetDir | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The copied file object.
-
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | The copied file object.
 
 ### IFileObject CopyData([string targetDir](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string newName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string srcMember](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string newMember](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [CopyDataOptions options](https://learn.microsoft.com/en-us/dotnet/api/), [int fromRRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int toRRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cRecords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -82,6 +82,7 @@ IFileObject CopyData(string targetDir, string newName, string srcMember, string 
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetDir | 
@@ -94,10 +95,9 @@ IFileObject CopyData(string targetDir, string newName, string srcMember, string 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cRecords | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The new file object with the copied data.
-
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | The new file object with the copied data.
 
 ### IFileObject CopyFromImportFile([string filePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [CopyFromImportFileOptions options](/reference/data-gate-client/copy-from-import-file-options.html))
@@ -109,16 +109,16 @@ IFileObject CopyFromImportFile(string filePath, CopyFromImportFileOptions option
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | 
 | [CopyFromImportFileOptions](/reference/data-gate-client/copy-from-import-file-options.html) | options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The file object with the copied data.
-
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | The file object with the copied data.
 
 ### IFileObject AsyncCopyFromImportFile([string filePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [CopyFromImportFileOptions options](/reference/data-gate-client/copy-from-import-file-options.html))
@@ -130,16 +130,16 @@ IFileObject AsyncCopyFromImportFile(string filePath, CopyFromImportFileOptions o
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | 
 | [CopyFromImportFileOptions](/reference/data-gate-client/copy-from-import-file-options.html) | options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The file object with the copied data.
-
 | [IFileObject](/reference/data-gate-client/i-file-object.html) | The file object with the copied data.
 
 ### void ReadDefinition([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
@@ -151,6 +151,7 @@ void ReadDefinition(XmlReader reader)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
@@ -164,6 +165,7 @@ void WriteDefinition(XmlWriter writer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
@@ -177,6 +179,7 @@ void ReadCreationAttributes(XmlReader reader)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
@@ -190,6 +193,7 @@ void WriteCreationAttributes(XmlWriter writer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
@@ -203,15 +207,15 @@ AdgDataSet GetAdgDataSet(DataSetOptions opts)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DataSetOptions](https://learn.microsoft.com/en-us/dotnet/api/) | opts | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The AdgDataSet for the file object.
-
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | The AdgDataSet for the file object.
 
 ### void InspectFile([InspectFileParts parts](https://learn.microsoft.com/en-us/dotnet/api/), [InspectFileOutput output](https://learn.microsoft.com/en-us/dotnet/api/), [Int32& ErrorCount](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgObserver observer](/reference/data-gate-client/adg-observer.html))
@@ -223,6 +227,7 @@ void InspectFile(InspectFileParts parts, InspectFileOutput output, Int32& ErrorC
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [InspectFileParts](https://learn.microsoft.com/en-us/dotnet/api/) | parts | 
@@ -239,6 +244,7 @@ void RepairFile(RepairOptions repairOptions, AdgObserver observer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [RepairOptions](https://learn.microsoft.com/en-us/dotnet/api/) | repairOptions | 

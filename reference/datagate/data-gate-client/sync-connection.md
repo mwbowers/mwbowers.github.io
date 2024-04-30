@@ -26,6 +26,7 @@ SyncConnection(AdgConnection)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
@@ -72,6 +73,7 @@ void Open(OpenOptions options, CancellationToken ct)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [OpenOptions](/reference/data-gate-providers/open-options.html) | options | 
@@ -134,6 +136,7 @@ IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Option
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
@@ -141,10 +144,9 @@ IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Option
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The IAdgTransaction representing the transaction.
-
 | [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
 
 ### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -156,6 +158,7 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Op
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
@@ -163,10 +166,9 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Op
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The IAdgTransaction representing the transaction.
-
 | [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
 
 ### bool Reset()
@@ -186,6 +188,7 @@ void Dispose(bool isDisposing)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | 

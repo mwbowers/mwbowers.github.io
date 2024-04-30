@@ -32,13 +32,13 @@ AltEncoding GetEncoding(string name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-An instance of AltEncoding representing the desiredencoding translation facility.
-
 | [AltEncoding](/reference/data-gate-data-link/alt-encoding.html) | An instance of AltEncoding representing the desiredencoding translation facility.

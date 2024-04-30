@@ -36,6 +36,7 @@ void Open(AdgDataSet ds)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
@@ -49,6 +50,7 @@ void ReadSequentialEqual(AdgDataSet ds, ReadSequentialMode rm, LockRequest lr)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 

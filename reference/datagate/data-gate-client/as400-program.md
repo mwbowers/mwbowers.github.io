@@ -43,6 +43,7 @@ As400Program(AdgConnection)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | connection | 
@@ -56,6 +57,7 @@ As400Program(AdgConnection, String)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | connection | 
@@ -97,6 +99,7 @@ void SetProgramPath(string value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
@@ -110,6 +113,7 @@ void SetConnection(AdgConnection value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | value | 
@@ -171,15 +175,15 @@ ProgParm GetParmByName(string name)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The ProgParm object representing the parameter.
-
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | The ProgParm object representing the parameter.
 
 ### void AppendParms([ProgParm[] parameters](/reference/data-gate-data-link/prog-parm.html))
@@ -191,6 +195,7 @@ void AppendParms(ProgParm[] parameters)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm[]](/reference/data-gate-data-link/prog-parm.html) | parameters | 
@@ -204,6 +209,7 @@ void AppendParm(ProgParm parameter)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | parameter | 
@@ -217,6 +223,7 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | parameter | 
@@ -224,10 +231,9 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The converted object.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
 ### object ParmToObject([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -247,6 +253,7 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | parameter | 
@@ -270,6 +277,7 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | returnType | 
@@ -277,10 +285,9 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The converted object.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
 ### object ParmToObject([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -300,6 +307,7 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | value | 
@@ -331,6 +339,7 @@ void WriteParmXml(XmlWriter writer)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
@@ -344,6 +353,7 @@ void ReadParmXml(XmlReader reader)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 

@@ -35,6 +35,7 @@ SourceProfile(SourceProfile)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
@@ -102,15 +103,15 @@ bool IsKnownPlatformAttribute(string platformAttr)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | platformAttr | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the platform attribute is known; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the platform attribute is known; otherwise, false.
 
 ### bool op_Equality([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
@@ -122,16 +123,16 @@ bool op_Equality(SourceProfile x, SourceProfile y)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | x | 
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | y | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the SourceProfiles are equal; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the SourceProfiles are equal; otherwise, false.
 
 ### bool op_Inequality([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
@@ -143,16 +144,16 @@ bool op_Inequality(SourceProfile x, SourceProfile y)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | x | 
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | y | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the SourceProfiles are not equal; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the SourceProfiles are not equal; otherwise, false.
 
 ### bool Equals([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
@@ -180,16 +181,16 @@ bool Equals(SourceProfile x, SourceProfile y)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | obj | 
 | [SourceProfile](/reference/data-gate-providers/source-profile.html) | bIgnoreDatabaseName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-true if the specified object is equal to the current SourceProfile; otherwise, false.
-
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current SourceProfile; otherwise, false.
 
 ### int GetHashCode()

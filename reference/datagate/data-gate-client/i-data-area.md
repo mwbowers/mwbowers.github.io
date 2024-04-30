@@ -58,6 +58,7 @@ void SetInitialValue(string value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
@@ -71,6 +72,7 @@ void Change(bool Value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
@@ -84,6 +86,7 @@ void Change(bool Value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
@@ -97,6 +100,7 @@ void Change(bool Value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
@@ -134,6 +138,7 @@ void Change(bool Value)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
@@ -171,6 +176,7 @@ void AppendParm(ProgParm Parameter)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | Parameter | 
@@ -184,6 +190,7 @@ void ObjectToParm(object Value, string ParameterName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | 
@@ -198,6 +205,7 @@ void ObjectToParm(object Value, string ParameterName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Parameter | 
@@ -228,16 +236,16 @@ object ParmToObject(Type ReturnType, string ParameterName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The converted parameter value.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted parameter value.
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -249,16 +257,16 @@ object ParmToObject(Type ReturnType, string ParameterName)
 ```
 
 #### Parameters
+
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | Parameter | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ReturnType | 
 
 #### Returns
+
 | Type | Description
 | --- | ---
-The converted parameter value.
-
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted parameter value.
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
