@@ -22,8 +22,8 @@ This interface should be implemented by classes that represent a DataGate transa
 | Type | Name | Description
 | --- | --- | --- 
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | Connection | Gets the connection associated with the transaction. |
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | TransactionLevel | Gets the transaction level associated with the transaction. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Name | Gets or sets the name associated with the transaction. |
+| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | TransactionLevel | Gets the transaction level associated with the transaction. |
 
 ## Methods
 

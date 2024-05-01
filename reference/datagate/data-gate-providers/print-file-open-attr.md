@@ -29,11 +29,11 @@ PrintFileOpenAttr()
 
 | Type | Name | Description
 | --- | --- | --- 
+| [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | DevAttr | Gets or sets the device attributes. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DocumentName | Gets or sets the document name. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormType | Gets or sets the form type. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrintToFileName | Gets or sets the print to file name. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Prompt | Gets or sets a value indicating whether to prompt. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ProcessMacros | Gets or sets a value indicating whether to process macros. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Prompt | Gets or sets a value indicating whether to prompt. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SaveAfter | Gets or sets a value indicating whether to save after. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | UserData | Gets or sets the user data. |
-| [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | DevAttr | Gets or sets the device attributes. |

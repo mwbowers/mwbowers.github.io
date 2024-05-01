@@ -13,7 +13,7 @@ Copy data remove blank options.
 
 | Name | Description | Value
 | --- | --- | --- 
-| None | Do not remove blanks. |
-| Leading | Remove leading blanks. |
-| Trailing | Remove trailing blanks. |
-| Both | Remove both leading and trailing blanks. |
+| Both | Remove both leading and trailing blanks. | 3 |
+| Leading | Remove leading blanks. | 1 |
+| None | Do not remove blanks. | 0 |
+| Trailing | Remove trailing blanks. | 2 |

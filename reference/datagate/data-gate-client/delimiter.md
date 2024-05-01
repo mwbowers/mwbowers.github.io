@@ -44,14 +44,14 @@ Delimiter(Char)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Delimiter](/reference/data-gate-client/delimiter.html) | None | Get new Delimiter instance that represents no delimiter |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | NewLine | Constant new line delimiter |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarAll | Constant *ALL (default) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarCRLF | Constant *CRLF (carriage-return plus line-feed) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StartLF | Constant *LF (line-feed) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarCR | Constant *CR (carriage-return) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarLFCR | Constant *LFCR (line-feed plus carriage-return) delimiter. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsStarNone | Determines in the delimiter is *NONE. |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | NewLine | Constant new line delimiter |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | None | Get new Delimiter instance that represents no delimiter |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | StarAll | Constant *ALL (default) delimiter. |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | StarCR | Constant *CR (carriage-return) delimiter. |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | StarCRLF | Constant *CRLF (carriage-return plus line-feed) delimiter. |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | StarLFCR | Constant *LFCR (line-feed plus carriage-return) delimiter. |
+| [Delimiter](/reference/data-gate-client/delimiter.html) | StartLF | Constant *LF (line-feed) delimiter. |
 | [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | Value | Gets or sets the value of the delimiter. |
 
 ## Methods

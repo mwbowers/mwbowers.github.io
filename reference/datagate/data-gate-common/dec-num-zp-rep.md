@@ -1,0 +1,134 @@
+---
+title: DecNumZPRep class
+---
+
+DecNumZPRep provides methods for interpreting the Acceler8DB "ZPREP"
+code for packed and zoned decimal data representation, thereby
+describing the format of these data representations.
+
+**Namespace:** ASNA.DataGate.Common
+**Assembly:** ASNA.QSys.DataGate.Client.dll
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
+<br>
+<br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [DecNumZPRep](#decnumzprep-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the DecNumZPRep class with the specified format.
+
+### DecNumZPRep([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Initializes a new instance of the DecNumZPRep class with the specified format.
+
+```cs
+DecNumZPRep(Int32)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | format | 
+
+## Properties
+
+| Type | Name | Description
+| --- | --- | --- 
+|  | Default | The default zoned/packed decimal representation object forDG/Windows. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | NegPacked | Returns the 8-bit code for a packed decimal negative number.  Thecode is contained in the lower nibble, and the upper nibble iszero. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | NegZone | Returns the 8-bit code for a zoned decimal negative number.  Thecode is contained in the upper nibble, and the lower nibble iszero. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PosPacked | Returns the 8-bit code for a packed decimal positive number.  Thecode is contained in the lower nibble, and the upper nibble iszero. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PosZone | Returns the 8-bit code for a zoned decimal positive number.  Thecode is contained in the upper nibble, and the lower nibble iszero. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Value | Gets the format value used for interpreting the Acceler8DB "ZPREP" code for packed and zoned decimal data representation. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [IsNegativeZone](#isnegativezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative zoneddecimal byte.
+| [IsPositiveZone](#ispositivezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive zoneddecimal byte.
+| [IsNegativePacked](#isnegativepacked-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative packeddecimal byte.
+| [IsPositivePacked](#ispositivepacked-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive packeddecimal byte.
+
+### bool IsNegativeZone([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Returns true if the specified byte represents a negative zoneddecimal byte.
+
+```cs
+bool IsNegativeZone(byte b)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
+
+### bool IsPositiveZone([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Returns true if the specified byte represents a positive zoneddecimal byte.
+
+```cs
+bool IsPositiveZone(byte b)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
+
+### bool IsNegativePacked([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Returns true if the specified byte represents a negative packeddecimal byte.
+
+```cs
+bool IsNegativePacked(byte b)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
+
+### bool IsPositivePacked([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Returns true if the specified byte represents a positive packeddecimal byte.
+
+```cs
+bool IsPositivePacked(byte b)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 

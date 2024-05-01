@@ -15,7 +15,6 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 |  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | DbXmlNameConverter_DecodeExc | Looks up a localized string similar to Could not decode name '{0}'. See inner exception.. |
 |  | DbXmlNameConverter_EncodeExc | Looks up a localized string similar to Could not encode name '{0}'. See inner exception.. |
@@ -51,3 +50,4 @@ A strongly-typed resource class, for looking up localized strings, etc.
 |  | ImportFrom_SourcePathExc | Looks up a localized string similar to SourcePath property of argument must specify a valid file path to which you have permission.. |
 |  | ImportFrom_TargetNullExc | Looks up a localized string similar to TargetMember property of argument cannot be null.. |
 |  | InportFrom_TargetMemberNotSet | Looks up a localized string similar to TargetMember property not set.. |
+|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |

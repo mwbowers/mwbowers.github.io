@@ -406,24 +406,24 @@ Reference:
   sectionpath: /reference/reference-overview.html
   section:
   - sectiontitle: ASNA.DataGate.Client.Common
-    sectionpath: /reference/datagate/data-gate-client-common/asna-data-gate-client-common-namespace.html
+    sectionpath: /reference/datagate/data-gate-client-common/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/data-gate-client-common/asna-data-gate-client-common-classes.html
+      sectionpath: /reference/datagate/data-gate-client-common/landing-page-classes.html
       section:
       - title: DgNegotiateException class
         path: /reference/datagate/data-gate-client-common/dg-negotiate-exception.html
     section:
     - sectiontitle: Enumerations
-      sectionpath: /reference/datagate/data-gate-client-common/asna-data-gate-client-common-enumerations.html
+      sectionpath: /reference/datagate/data-gate-client-common/landing-page-enumerations.html
       section:
       - title: NegotiateErrorCode enum
         path: /reference/datagate/data-gate-client-common/negotiate-error-code.html
   - sectiontitle: ASNA.DataGate.Client
-    sectionpath: /reference/datagate/data-gate-client/asna-data-gate-client-namespace.html
+    sectionpath: /reference/datagate/data-gate-client/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/data-gate-client/asna-data-gate-client-classes.html
+      sectionpath: /reference/datagate/data-gate-client/landing-page-classes.html
       section:
       - title: AdgConnection class
         path: /reference/datagate/data-gate-client/adg-connection.html
@@ -517,7 +517,7 @@ Reference:
         path: /reference/datagate/data-gate-client/xml-cancel-event-handler.html
     section:
     - sectiontitle: Enumerations
-      sectionpath: /reference/datagate/data-gate-client/asna-data-gate-client-enumerations.html
+      sectionpath: /reference/datagate/data-gate-client/landing-page-enumerations.html
       section:
       - title: AuthenticationType enum
         path: /reference/datagate/data-gate-client/authentication-type.html
@@ -541,11 +541,205 @@ Reference:
         path: /reference/datagate/data-gate-client/xml-info-msg-type.html
       - title: XmlOptions enum
         path: /reference/datagate/data-gate-client/xml-options.html
-  - sectiontitle: ASNA.DataGate.DataLink
-    sectionpath: /reference/datagate/data-gate-data-link/asna-data-gate-data-link-namespace.html
+    section:
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/data-gate-client/landing-page-interfaces.html
+      section:
+      - title: ILabel interface
+        path: /reference/datagate/data-gate-client/i-label.html
+      - title: IAdgObject interface
+        path: /reference/datagate/data-gate-client/i-adg-object.html
+      - title: IAdgTransaction interface
+        path: /reference/datagate/data-gate-client/i-adg-transaction.html
+      - title: IChannelSecurity interface
+        path: /reference/datagate/data-gate-client/i-channel-security.html
+      - title: IClientMonitor interface
+        path: /reference/datagate/data-gate-client/i-client-monitor.html
+      - title: IConnectionHandler interface
+        path: /reference/datagate/data-gate-client/i-connection-handler.html
+      - title: IDataArea interface
+        path: /reference/datagate/data-gate-client/i-data-area.html
+      - title: IDirectory interface
+        path: /reference/datagate/data-gate-client/i-directory.html
+      - title: IFileObject interface
+        path: /reference/datagate/data-gate-client/i-file-object.html
+      - title: ILibraryList interface
+        path: /reference/datagate/data-gate-client/i-library-list.html
+      - title: ILock interface
+        path: /reference/datagate/data-gate-client/i-lock.html
+      - title: IMember interface
+        path: /reference/datagate/data-gate-client/i-member.html
+      - title: IMonitor interface
+        path: /reference/datagate/data-gate-client/i-monitor.html
+      - title: IOpenFile interface
+        path: /reference/datagate/data-gate-client/i-open-file.html
+      - title: IPhysicalMember interface
+        path: /reference/datagate/data-gate-client/i-physical-member.html
+      - title: IServerLicense interface
+        path: /reference/datagate/data-gate-client/i-server-license.html
+      - title: ISystemValue interface
+        path: /reference/datagate/data-gate-client/i-system-value.html
+      - title: ITransformProperties interface
+        path: /reference/datagate/data-gate-client/i-transform-properties.html
+  - sectiontitle: ASNA.DataGate.Common
+    sectionpath: /reference/datagate/data-gate-common/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/data-gate-data-link/asna-data-gate-data-link-classes.html
+      sectionpath: /reference/datagate/data-gate-common/landing-page-classes.html
+      section:
+      - title: AdgTrace class
+        path: /reference/datagate/data-gate-common/adg-trace.html
+      - title: Apples class
+        path: /reference/datagate/data-gate-common/apples.html
+      - title: DecNumZPRep class
+        path: /reference/datagate/data-gate-common/dec-num-zp-rep.html
+      - title: DgDateTimeConverter class
+        path: /reference/datagate/data-gate-common/dg-date-time-converter.html
+      - title: DgDateTimeConverterBase class
+        path: /reference/datagate/data-gate-common/dg-date-time-converter-base.html
+      - title: dgException class
+        path: /reference/datagate/data-gate-common/dg-exception.html
+      - title: DgSHA class
+        path: /reference/datagate/data-gate-common/dg-sha.html
+      - title: DssTimeConverter class
+        path: /reference/datagate/data-gate-common/dss-time-converter.html
+      - title: FieldType class
+        path: /reference/datagate/data-gate-common/field-type.html
+      - title: IndicatorExpression class
+        path: /reference/datagate/data-gate-common/indicator-expression.html
+      - title: InvariateCultureTypeConverter class
+        path: /reference/datagate/data-gate-common/invariate-culture-type-converter.html
+      - title: NoDbNameException class
+        path: /reference/datagate/data-gate-common/no-db-name-exception.html
+      - title: SchemaResolver class
+        path: /reference/datagate/data-gate-common/schema-resolver.html
+      - title: ClrStringHelpers class
+        path: /reference/datagate/data-gate-common/clr-string-helpers.html
+      - title: InputStreamAggregator class
+        path: /reference/datagate/data-gate-common/input-stream-aggregator.html
+      - title: ManualResetEvent class
+        path: /reference/datagate/data-gate-common/manual-reset-event.html
+      - title: XmlDataMarshaller class
+        path: /reference/datagate/data-gate-common/xml-data-marshaller.html
+      - title: XmlElementConverter class
+        path: /reference/datagate/data-gate-common/xml-element-converter.html
+      - title: XmlFileDef class
+        path: /reference/datagate/data-gate-common/xml-file-def.html
+    section:
+    - sectiontitle: Enumerations
+      sectionpath: /reference/datagate/data-gate-common/landing-page-enumerations.html
+      section:
+      - title: AccessMode enum
+        path: /reference/datagate/data-gate-common/access-mode.html
+      - title: AccessResult enum
+        path: /reference/datagate/data-gate-common/access-result.html
+      - title: AdgObjectTypes enum
+        path: /reference/datagate/data-gate-common/adg-object-types.html
+      - title: AdgSubTypes enum
+        path: /reference/datagate/data-gate-common/adg-sub-types.html
+      - title: AuthorityTypes enum
+        path: /reference/datagate/data-gate-common/authority-types.html
+      - title: ClientNameFields enum
+        path: /reference/datagate/data-gate-common/client-name-fields.html
+      - title: CopyDataOptions enum
+        path: /reference/datagate/data-gate-common/copy-data-options.html
+      - title: DataDirection enum
+        path: /reference/datagate/data-gate-common/data-direction.html
+      - title: DataSetOptions enum
+        path: /reference/datagate/data-gate-common/data-set-options.html
+      - title: DataTypes enum
+        path: /reference/datagate/data-gate-common/data-types.html
+      - title: DateTimeFormat enum
+        path: /reference/datagate/data-gate-common/date-time-format.html
+      - title: DbcsFormat enum
+        path: /reference/datagate/data-gate-common/dbcs-format.html
+      - title: DependentTypes enum
+        path: /reference/datagate/data-gate-common/dependent-types.html
+      - title: DgBoolean enum
+        path: /reference/datagate/data-gate-common/dg-boolean.html
+      - title: dgErrorClass enum
+        path: /reference/datagate/data-gate-common/dg-error-class.html
+      - title: dgErrorNumber enum
+        path: /reference/datagate/data-gate-common/dg-error-number.html
+      - title: DuplicateOptions enum
+        path: /reference/datagate/data-gate-common/duplicate-options.html
+      - title: FieldUsages enum
+        path: /reference/datagate/data-gate-common/field-usages.html
+      - title: FileLocks enum
+        path: /reference/datagate/data-gate-common/file-locks.html
+      - title: FileTypes enum
+        path: /reference/datagate/data-gate-common/file-types.html
+      - title: InspectFileOutput enum
+        path: /reference/datagate/data-gate-common/inspect-file-output.html
+      - title: InspectFileParts enum
+        path: /reference/datagate/data-gate-common/inspect-file-parts.html
+      - title: KeyUsages enum
+        path: /reference/datagate/data-gate-common/key-usages.html
+      - title: LockRequest enum
+        path: /reference/datagate/data-gate-common/lock-request.html
+      - title: PaperOrientation enum
+        path: /reference/datagate/data-gate-common/paper-orientation.html
+      - title: PaperSize enum
+        path: /reference/datagate/data-gate-common/paper-size.html
+      - title: PaperSource enum
+        path: /reference/datagate/data-gate-common/paper-source.html
+      - title: PasswordType enum
+        path: /reference/datagate/data-gate-common/password-type.html
+      - title: PrintDuplex enum
+        path: /reference/datagate/data-gate-common/print-duplex.html
+      - title: PrintQuality enum
+        path: /reference/datagate/data-gate-common/print-quality.html
+      - title: PrintTrueType enum
+        path: /reference/datagate/data-gate-common/print-true-type.html
+      - title: RangeFirst enum
+        path: /reference/datagate/data-gate-common/range-first.html
+      - title: RangeLast enum
+        path: /reference/datagate/data-gate-common/range-last.html
+      - title: RangeMode enum
+        path: /reference/datagate/data-gate-common/range-mode.html
+      - title: ReadEqualMode enum
+        path: /reference/datagate/data-gate-common/read-equal-mode.html
+      - title: ReadRandomMode enum
+        path: /reference/datagate/data-gate-common/read-random-mode.html
+      - title: ReadSequentialMode enum
+        path: /reference/datagate/data-gate-common/read-sequential-mode.html
+      - title: RepairOptions enum
+        path: /reference/datagate/data-gate-common/repair-options.html
+      - title: SeekMode enum
+        path: /reference/datagate/data-gate-common/seek-mode.html
+      - title: ServerCursors enum
+        path: /reference/datagate/data-gate-common/server-cursors.html
+      - title: ServerFlagsEx enum
+        path: /reference/datagate/data-gate-common/server-flags-ex.html
+      - title: ServerSslLevel enum
+        path: /reference/datagate/data-gate-common/server-ssl-level.html
+      - title: ShareTypes enum
+        path: /reference/datagate/data-gate-common/share-types.html
+      - title: SslOptions enum
+        path: /reference/datagate/data-gate-common/ssl-options.html
+      - title: SslRenegotiation enum
+        path: /reference/datagate/data-gate-common/ssl-renegotiation.html
+      - title: TraceConfig enum
+        path: /reference/datagate/data-gate-common/trace-config.html
+      - title: TraceID enum
+        path: /reference/datagate/data-gate-common/trace-id.html
+      - title: TraceSink enum
+        path: /reference/datagate/data-gate-common/trace-sink.html
+      - title: TransactionLevel enum
+        path: /reference/datagate/data-gate-common/transaction-level.html
+      - title: WaitOptions enum
+        path: /reference/datagate/data-gate-common/wait-options.html
+    section:
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/data-gate-common/landing-page-interfaces.html
+      section:
+      - title: ISchemaElementName interface
+        path: /reference/datagate/data-gate-common/i-schema-element-name.html
+  - sectiontitle: ASNA.DataGate.DataLink
+    sectionpath: /reference/datagate/data-gate-data-link/landing-page-namespace.html
+    section:
+    - sectiontitle: Classes
+      sectionpath: /reference/datagate/data-gate-data-link/landing-page-classes.html
       section:
       - title: AdgField class
         path: /reference/datagate/data-gate-data-link/adg-field.html
@@ -601,17 +795,33 @@ Reference:
         path: /reference/datagate/data-gate-data-link/ucs2-translator.html
     section:
     - sectiontitle: Enumerations
-      sectionpath: /reference/datagate/data-gate-data-link/asna-data-gate-data-link-enumerations.html
+      sectionpath: /reference/datagate/data-gate-data-link/landing-page-enumerations.html
       section:
       - title: MsgID enum
         path: /reference/datagate/data-gate-data-link/msg-id.html
       - title: ProtoLevel enum
         path: /reference/datagate/data-gate-data-link/proto-level.html
+    section:
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/data-gate-data-link/landing-page-interfaces.html
+      section:
+      - title: IOpenAccessReader interface
+        path: /reference/datagate/data-gate-data-link/i-open-access-reader.html
+      - title: IOpenAccessWriter interface
+        path: /reference/datagate/data-gate-data-link/i-open-access-writer.html
+      - title: IRecordBlock interface
+        path: /reference/datagate/data-gate-data-link/i-record-block.html
+      - title: Serializeable interface
+        path: /reference/datagate/data-gate-data-link/serializeable.html
+      - title: IAltEncodingFactory interface
+        path: /reference/datagate/data-gate-data-link/i-alt-encoding-factory.html
+      - title: IAltEncodingJsonSerializer interface
+        path: /reference/datagate/data-gate-data-link/i-alt-encoding-json-serializer.html
   - sectiontitle: ASNA.DataGate.Providers
-    sectionpath: /reference/datagate/data-gate-providers/asna-data-gate-providers-namespace.html
+    sectionpath: /reference/datagate/data-gate-providers/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/data-gate-providers/asna-data-gate-providers-classes.html
+      sectionpath: /reference/datagate/data-gate-providers/landing-page-classes.html
       section:
       - title: DatabaseAttributes class
         path: /reference/datagate/data-gate-providers/database-attributes.html
@@ -645,7 +855,7 @@ Reference:
         path: /reference/datagate/data-gate-providers/user-password-credential.html
     section:
     - sectiontitle: Enumerations
-      sectionpath: /reference/datagate/data-gate-providers/asna-data-gate-providers-enumerations.html
+      sectionpath: /reference/datagate/data-gate-providers/landing-page-enumerations.html
       section:
       - title: CredentialType enum
         path: /reference/datagate/data-gate-providers/credential-type.html
@@ -655,11 +865,31 @@ Reference:
         path: /reference/datagate/data-gate-providers/source-profile-converter-options.html
       - title: TransactionAttributes enum
         path: /reference/datagate/data-gate-providers/transaction-attributes.html
+    section:
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/data-gate-providers/landing-page-interfaces.html
+      section:
+      - title: IDataGateCredential interface
+        path: /reference/datagate/data-gate-providers/i-data-gate-credential.html
+      - title: IExchange5250 interface
+        path: /reference/datagate/data-gate-providers/i-exchange5250.html
+      - title: IFileAdapter interface
+        path: /reference/datagate/data-gate-providers/i-file-adapter.html
+      - title: IPrintProperties interface
+        path: /reference/datagate/data-gate-providers/i-print-properties.html
+      - title: ISimpleSerializer interface
+        path: /reference/datagate/data-gate-providers/i-simple-serializer.html
+      - title: ISourceProvider interface
+        path: /reference/datagate/data-gate-providers/i-source-provider.html
+      - title: IStreamTransformerFactory interface
+        path: /reference/datagate/data-gate-providers/i-stream-transformer-factory.html
+      - title: ITransformProperties interface
+        path: /reference/datagate/data-gate-providers/i-transform-properties.html
   - sectiontitle: ASNA.DataGate.ADO
-    sectionpath: /reference/datagate/data-gateado/asna-data-gateado-namespace.html
+    sectionpath: /reference/datagate/data-gateado/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/data-gateado/asna-data-gateado-classes.html
+      sectionpath: /reference/datagate/data-gateado/landing-page-classes.html
       section:
       - title: AdgKeyUtils class
         path: /reference/datagate/data-gateado/adg-key-utils.html
@@ -676,20 +906,20 @@ Reference:
       - title: SqlTimeConverter class
         path: /reference/datagate/data-gateado/sql-time-converter.html
   - sectiontitle: ASNA.DataGate.SqlServer
-    sectionpath: /reference/datagate/data-gate-sql-server/asna-data-gate-sql-server-namespace.html
+    sectionpath: /reference/datagate/data-gate-sql-server/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/data-gate-sql-server/asna-data-gate-sql-server-classes.html
+      sectionpath: /reference/datagate/data-gate-sql-server/landing-page-classes.html
       section:
       - title: DssTimeHiLoConverter class
         path: /reference/datagate/data-gate-sql-server/dss-time-hi-lo-converter.html
       - title: SqlObjectName class
         path: /reference/datagate/data-gate-sql-server/sql-object-name.html
   - sectiontitle: ASNA.Extensions.Configuration
-    sectionpath: /reference/datagate/extensions-configuration/asna-extensions-configuration-namespace.html
+    sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
     section:
     - sectiontitle: Classes
-      sectionpath: /reference/datagate/extensions-configuration/asna-extensions-configuration-classes.html
+      sectionpath: /reference/datagate/extensions-configuration/landing-page-classes.html
       section:
       - title: AsnaConfig class
         path: /reference/datagate/extensions-configuration/asna-config.html
@@ -701,6 +931,37 @@ Reference:
         path: /reference/datagate/extensions-configuration/lazy-read-only-source-dictionary.html
       - title: RootExtensions class
         path: /reference/datagate/extensions-configuration/root-extensions.html
+    section:
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
+      section:
+      - title: IAsnaConfig interface
+        path: /reference/datagate/extensions-configuration/i-asna-config.html
+      - title: IDataGateConfig interface
+        path: /reference/datagate/extensions-configuration/i-data-gate-config.html
+    sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
+    section:
+    - sectiontitle: Classes
+      sectionpath: /reference/datagate/extensions-configuration/landing-page-classes.html
+      section:
+      - title: AsnaConfig class
+        path: /reference/datagate/extensions-configuration/asna-config.html
+      - title: AsnaConfigHelper class
+        path: /reference/datagate/extensions-configuration/asna-config-helper.html
+      - title: DataGateExtensions class
+        path: /reference/datagate/extensions-configuration/data-gate-extensions.html
+      - title: LazyReadOnlySourceDictionary class
+        path: /reference/datagate/extensions-configuration/lazy-read-only-source-dictionary.html
+      - title: RootExtensions class
+        path: /reference/datagate/extensions-configuration/root-extensions.html
+    section:
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
+      section:
+      - title: IAsnaConfig interface
+        path: /reference/datagate/extensions-configuration/i-asna-config.html
+      - title: IDataGateConfig interface
+        path: /reference/datagate/extensions-configuration/i-data-gate-config.html
   - sectiontitle: ASNA.QSys.Runtime
     sectionpath: /reference/asna-qsys-runtime/asna-qsys-runtime-section-intro.html
     section:

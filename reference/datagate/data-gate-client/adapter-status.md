@@ -13,5 +13,5 @@ Represents the status of the FileAdapter.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Closed | Represents closed status of the FileAdapter. |
-| Open | Represents open status of the FileAdapter. |
+| Closed | Represents closed status of the FileAdapter. | 0 |
+| Open | Represents open status of the FileAdapter. | 1 |

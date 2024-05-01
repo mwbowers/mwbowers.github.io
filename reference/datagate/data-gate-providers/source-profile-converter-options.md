@@ -13,5 +13,5 @@ Enum for SourceProfileConverter options.
 
 | Name | Description | Value
 | --- | --- | --- 
-| None | Represents no options selected. |
-| OmitCredentialsOnWrite | Option to omit credentials when writing. |
+| None | Represents no options selected. | 0 |
+| OmitCredentialsOnWrite | Option to omit credentials when writing. | 1 |

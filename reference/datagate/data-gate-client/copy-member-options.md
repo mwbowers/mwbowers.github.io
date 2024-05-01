@@ -13,6 +13,6 @@ Copy member options.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Add | Add member. |
-| Replace | Replace member. |
-| UpdateAdd | Update member. |
+| Add | Add member. | 0 |
+| Replace | Replace member. | 1 |
+| UpdateAdd | Update member. | 2 |

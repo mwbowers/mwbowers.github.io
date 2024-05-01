@@ -77,6 +77,6 @@ AuthorityEntry(String, AuthorityTypes, Boolean)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGroupAccount | Gets or sets a value indicating whether the user account is a group account. |
 | [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/) | AuthorityType | Gets or sets the authority type. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGroupAccount | Gets or sets a value indicating whether the user account is a group account. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Username | Gets or sets the user name. |

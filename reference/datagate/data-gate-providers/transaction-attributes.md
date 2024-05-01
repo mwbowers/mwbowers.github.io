@@ -13,6 +13,6 @@ Specifies the attributes for a transaction.
 
 | Name | Description | Value
 | --- | --- | --- 
-| None | Represents no attributes. |
-| RollbackAndRestart | Specifies that the transaction should be rolled back and restarted. |
-| CommitAndRestart | Specifies that the transaction should be committed and restarted. |
+| CommitAndRestart | Specifies that the transaction should be committed and restarted. | 2 |
+| None | Represents no attributes. | 0 |
+| RollbackAndRestart | Specifies that the transaction should be rolled back and restarted. | 1 |

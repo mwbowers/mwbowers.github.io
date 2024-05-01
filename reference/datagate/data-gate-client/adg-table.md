@@ -29,8 +29,8 @@ AdgTable(DataTable, AdgDataSet)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | Row | Gets or sets the current DataRow in the AdgTable. |
 | [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | DataTable | Gets the DataTable associated with the AdgTable. |
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | Row | Gets or sets the current DataRow in the AdgTable. |
 
 ## Methods
 

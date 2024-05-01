@@ -44,25 +44,25 @@ SourceProfile(SourceProfile)
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | SQLOLEDBPLATFORM | Constant for SQL OLEDB platform. |
-|  | SQLCLIENTPLATFORM | Constant for SQL Client platform. |
-|  | DGPLATFORM | Constant for DataLink platform. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Server | Get or Set server name |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Label | Get or Set label name |
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | Credential | Gets or sets the credential. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PlatformAttribute | Gets or sets the platform attribute. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlPlatform | Gets a value indicating whether the platform is SQL. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlClientPlatform | Gets a value indicating whether the platform is SQL Client. |
-| [IEnumerable<String>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | InitialLibraryList | Get or Set initial library list |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | Gets or sets the text. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Port | Gets or sets the port. |
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | PoolingTimeout | Gets or sets the pooling timeout. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | AltEncodingName | Gets or sets the alternative encoding name. |
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | AltDecoderProps | Gets or sets the alternative decoder properties. |
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | AltEncoderProps | Gets or sets the alternative encoder properties. |
-| [SslOptions](https://learn.microsoft.com/en-us/dotnet/api/) | SslOptions | Gets or sets the SSL options. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SslCertificateName | Gets or sets the SSL certificate name. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | AltEncodingName | Gets or sets the alternative encoding name. |
+| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | Credential | Gets or sets the credential. |
+|  | DGPLATFORM | Constant for DataLink platform. |
+| [IEnumerable<String>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | InitialLibraryList | Get or Set initial library list |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlClientPlatform | Gets a value indicating whether the platform is SQL Client. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlPlatform | Gets a value indicating whether the platform is SQL. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Label | Get or Set label name |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PlatformAttribute | Gets or sets the platform attribute. |
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | PoolingTimeout | Gets or sets the pooling timeout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Port | Gets or sets the port. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Server | Get or Set server name |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ServicePrincipalName | Gets or sets the service principal name. |
+|  | SQLCLIENTPLATFORM | Constant for SQL Client platform. |
+|  | SQLOLEDBPLATFORM | Constant for SQL OLEDB platform. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SslCertificateName | Gets or sets the SSL certificate name. |
+| [SslOptions](https://learn.microsoft.com/en-us/dotnet/api/) | SslOptions | Gets or sets the SSL options. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | Gets or sets the text. |
 
 ## Methods
 

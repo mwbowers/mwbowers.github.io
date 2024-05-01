@@ -38,8 +38,8 @@ ImportOptions(IMember, String, Boolean, Boolean)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IMember](/reference/data-gate-client/i-member.html) | TargetMember | Gets or sets the target member to import data into. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SourcePath | Gets or sets the source file to be used as the import data. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseTargetConnection | Gets or sets the default value for the UseTargetConnection property. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ClearTargetBeforeImport | Gets or sets a value indicating whether to clear the target member before importing. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DetailedFeedback | Gets or sets a value indicating whether to clear the target member before importing. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SourcePath | Gets or sets the source file to be used as the import data. |
+| [IMember](/reference/data-gate-client/i-member.html) | TargetMember | Gets or sets the target member to import data into. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseTargetConnection | Gets or sets the default value for the UseTargetConnection property. |

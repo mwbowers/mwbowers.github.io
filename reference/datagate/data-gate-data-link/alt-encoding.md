@@ -30,8 +30,8 @@ AltEncoding()
 | Type | Name | Description
 | --- | --- | --- 
 | [IEnumerable<AltEncodingInfo>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | AvailableEncodings | Gets the available encodings. |
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | EncoderDefaultProps | Gets or sets the default encoder properties. |
 | [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | DecoderDefaultProps | Gets or sets the default decoder properties. |
+| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | EncoderDefaultProps | Gets or sets the default encoder properties. |
 
 ## Methods
 

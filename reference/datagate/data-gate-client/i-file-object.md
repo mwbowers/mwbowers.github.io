@@ -21,20 +21,20 @@ This interface should be implemented by classes that represent a DataGate file o
 
 | Type | Name | Description
 | --- | --- | --- 
+| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | CreationAttributes | Gets or sets the XML document that defines the creation attributes of the file object. |
+| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | Definition | Gets or sets the XML document that defines the file object. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FileWaitTime | Gets the file wait time for the file object. |
+| [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) | FormatIDs | Gets the format IDs for the file object. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | HasKeys | Gets a value indicating whether the file object has keys. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | MemberCount | Gets the number of members in the file. |
 | [IEnumerable<IMember>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | MemberObjects | Gets the collection of member objects in the file. |
-| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | Definition | Gets or sets the XML document that defines the file object. |
-| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | CreationAttributes | Gets or sets the XML document that defines the creation attributes of the file object. |
 | [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | PrintCreationAttributes | Gets or sets the XML document that defines the print creation attributes of the file object. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | HasKeys | Gets a value indicating whether the file object has keys. |
-| [ShareTypes](https://learn.microsoft.com/en-us/dotnet/api/) | ShareType | Gets the share type of the file object. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FileWaitTime | Gets the file wait time for the file object. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RecordWaitTime | Gets the record wait time for the file object. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReuseDeleted | Gets a value indicating whether the file object reuses deleted records. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RecordLength | Gets the record length of the file object. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RecordWaitTime | Gets the record wait time for the file object. |
 | [IEnumerable<String>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ReferencedFields | Gets the collection of fields referenced by the file object. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ReferenceFieldsFilePath | Gets the file path of the referenced fields for the file object. |
-| [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) | FormatIDs | Gets the format IDs for the file object. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReuseDeleted | Gets a value indicating whether the file object reuses deleted records. |
+| [ShareTypes](https://learn.microsoft.com/en-us/dotnet/api/) | ShareType | Gets the share type of the file object. |
 
 ## Methods
 

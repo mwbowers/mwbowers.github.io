@@ -38,9 +38,9 @@ ProgParm(StructureType, DataDirection)
 
 | Type | Name | Description
 | --- | --- | --- 
+| [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/) | Direction | Gets or sets the data direction of the program parameter. |
 |  | m_data | The data of the program parameter. |
 |  | m_meta | The metadata of the program parameter. |
-| [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/) | Direction | Gets or sets the data direction of the program parameter. |
 
 ## Methods
 

@@ -15,7 +15,6 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 |  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | dgALTXLAT | Looks up a localized string similar to alternate encoding text translation support errors. |
 |  | dgEaBADACCESS | Looks up a localized string similar to Bad Access. |
@@ -559,3 +558,4 @@ A strongly-typed resource class, for looking up localized strings, etc.
 |  | dgExMISSING | Looks up a localized string similar to Registered exit program not found. |
 |  | dgInnerExc_BaseFileParameter | Looks up a localized string similar to Base file count. |
 |  | dgInnerExc_MissingBaseFiles | Looks up a localized string similar to Logical file definition must specify a positive count of base files.. |
+|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |

@@ -23,27 +23,27 @@ This interface should be implemented by classes that represent a DataGate object
 | --- | --- | --- 
 | [AdgObjectTypes](https://learn.microsoft.com/en-us/dotnet/api/) | AdgObjectType | Gets the type of the ASNA DataGate object. |
 | [AdgSubTypes](https://learn.microsoft.com/en-us/dotnet/api/) | AdgSubType | Gets the subtype of the ASNA DataGate object. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ObjectID | Gets the ID of the ASNA DataGate object. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ParentID | Gets the ID of the ASNA DataGate object's parent. |
-| [IEnumerable<Dependent>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | DependentObjects | Gets the dependent objects of the ASNA DataGate object. |
+| [IEnumerable<AuthorityEntry>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | Authorities | Gets or sets the authorities for the ASNA DataGate object. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Basename | Gets the base name of the ASNA DataGate object. |
 | [IEnumerable<String>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | BaseObjects | Gets or sets the base objects of the ASNA DataGate object. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | Gets or sets the text of the ASNA DataGate object. |
-| [XmlSchemaSet](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschemaset?view=net-8.0) | Schema | Gets the XML schema set for the ASNA DataGate object. |
+| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | BasesXml | Gets or sets the XML document representing the base objects of the ASNA DataGate object. |
 | [IEnumerable<IAdgObject>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ChildObjects | Gets the child objects of the ASNA DataGate object. |
+| [AdgConnection](/reference/data-gate-client/adg-connection.html) | Connection | Gets the connection associated with the ASNA DataGate object. |
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | DateCreated | Gets the date and time when the ASNA DataGate object was created. |
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | DateModified | Gets the date and time when the ASNA DataGate object was last modified. |
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | DateReferenced | Gets the date and time when the ASNA DataGate object was last referenced. |
+| [IEnumerable<Dependent>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | DependentObjects | Gets the dependent objects of the ASNA DataGate object. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSystemObject | Gets a value indicating whether the ASNA DataGate object is a system object. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OwnerIsGroup | Gets a value indicating whether the owner of the ASNA DataGate object is a group. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | NameOnServer | Gets the name of the ASNA DataGate object on the server. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ObjectID | Gets the ID of the ASNA DataGate object. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Owner | Gets the owner of the ASNA DataGate object. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OwnerIsGroup | Gets a value indicating whether the owner of the ASNA DataGate object is a group. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ParentID | Gets the ID of the ASNA DataGate object's parent. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrimaryGroup | Gets the primary group of the ASNA DataGate object. |
-| [IEnumerable<AuthorityEntry>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | Authorities | Gets or sets the authorities for the ASNA DataGate object. |
+| [XmlSchemaSet](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschemaset?view=net-8.0) | Schema | Gets the XML schema set for the ASNA DataGate object. |
 | [IComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.icomparer?view=net-8.0) | SortByName | Provides a comparer for sorting objects by name. |
 | [IComparer](https://learn.microsoft.com/en-us/dotnet/api/system.collections.icomparer?view=net-8.0) | SortByNameCaseInsensitive | Provides a comparer for sorting objects by name in a case-insensitive manner. |
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | Connection | Gets the connection associated with the ASNA DataGate object. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Basename | Gets the base name of the ASNA DataGate object. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | NameOnServer | Gets the name of the ASNA DataGate object on the server. |
-| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | BasesXml | Gets or sets the XML document representing the base objects of the ASNA DataGate object. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | Gets or sets the text of the ASNA DataGate object. |
 
 ## Methods
 

@@ -82,16 +82,16 @@ AdgConnection(SourceProfile, IExchange5250)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | SourceProfile | A reference to the SourceProfile object representing the liveconnection parameters.  At AdgConnection construction, the valueof this property is initialized by the parameters of theconstructor.  Modifications to the instance have no effect untilthe connection is opened (or re-opened).  A deep-copy of the valueof this property is available via the GetSourceProfileCopy method. |
-| [OpenAccessRpg](/reference/data-gate-data-link/open-access-rpg.html) | OpenAccessRpg | Gets or sets the OpenAccessRpg object associated with the AdgConnection. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TerminalDeviceName | Gets or sets the terminal device name associated with the AdgConnection. |
-| [ProtoLevel](/reference/data-gate-data-link/proto-level.html) | CurrentProtocolVersion | Gets the current protocol version. |
-| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/) | State | Gets the current state of the AdgConnection. |
+| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | Canceler | Gets the canceler cancellation token instance. |
 | [IChannelSecurity](/reference/data-gate-client/i-channel-security.html) | ChannelInfo | Gets the channel security information associated with the AdgConnection. |
+| [ProtoLevel](/reference/data-gate-data-link/proto-level.html) | CurrentProtocolVersion | Gets the current protocol version. |
 | [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the decoder associated with the AdgConnection. |
 | [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the encoder associated with the AdgConnection. |
 | [IMonitor](/reference/data-gate-client/i-monitor.html) | Monitor | Gets the monitor associated with the AdgConnection. |
-| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | Canceler | Gets the canceler cancellation token instance. |
+| [OpenAccessRpg](/reference/data-gate-data-link/open-access-rpg.html) | OpenAccessRpg | Gets or sets the OpenAccessRpg object associated with the AdgConnection. |
+| [SourceProfile](/reference/data-gate-providers/source-profile.html) | SourceProfile | A reference to the SourceProfile object representing the liveconnection parameters.  At AdgConnection construction, the valueof this property is initialized by the parameters of theconstructor.  Modifications to the instance have no effect untilthe connection is opened (or re-opened).  A deep-copy of the valueof this property is available via the GetSourceProfileCopy method. |
+| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/) | State | Gets the current state of the AdgConnection. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TerminalDeviceName | Gets or sets the terminal device name associated with the AdgConnection. |
 
 ## Methods
 

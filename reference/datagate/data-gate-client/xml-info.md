@@ -15,8 +15,6 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
-|  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | AbandonMemberExport | Looks up a localized string similar to Cannot recover from data errors in this member.. |
 |  | AddDataOpenError | Looks up a localized string similar to Error opening or closing input file {0}; some or all records may not have been added to the file.. |
 |  | AddRecordBatchErrorCount | Looks up a localized string similar to Added unknown number of records from member {0} to {1} due to batch processing error.. |
@@ -50,6 +48,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 |  | CompletedPath | Looks up a localized string similar to Completed {0}.. |
 |  | CreateDirIfNecessary | Looks up a localized string similar to Verifying parent library {0}.. |
 |  | CreateObject | Looks up a localized string similar to Creating object {0}.. |
+|  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | DataAreaCreationFailure | Looks up a localized string similar to Data area {0} not created.. |
 |  | EndReadBases | Looks up a localized string similar to Bases document import complete.. |
 |  | EndReadCreateAttr | Looks up a localized string similar to Creation attributes document import complete.. |
@@ -93,6 +92,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 |  | ReadRecordDataError | Looks up a localized string similar to Data error in record {0} of {1}.. |
 |  | ReadRecordErrorCount | Looks up a localized string similar to Failed to export {0} records with invalid data.. |
 |  | RenamingObject | Looks up a localized string similar to Renaming object '{0}' to '{1}'. |
+|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 |  | SchemaValidationWarning | Looks up a localized string similar to Schema validation warning: '{0}'. |
 |  | SkippingAllMembers | Looks up a localized string similar to Disregarding file members.. |
 |  | SkippingDataArea | Looks up a localized string similar to Skipping dataarea element.. |

@@ -15,8 +15,6 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
-|  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | AdgConnection_DatabaseAlreadyOpen | Looks up a localized string similar to Database already open. |
 |  | AdgConnection_DatabaseNotOpen | Looks up a localized string similar to Database not open. |
 |  | AdgConnection_ShadowSourceProfileFailure | Looks up a localized string similar to SourceProfile serialization failed during prior connection close, possibly due to user impersonation.  For secure serialization in the thread impersonation scenario, the impersonated user profile must be loaded.  An alternative solution is to create a new AdgConnection object instead of re-opening a closed object.  See also the inner exception.. |
@@ -36,6 +34,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 |  | ClientSecurity_ContextError | Looks up a localized string similar to server and security exceptions occurred. |
 |  | ColumnConverters_ReaderUnavailable | Looks up a localized string similar to Accessing SQL '{0}' column '{1}' with .NET type '{2}' is not supported.. |
 |  | CopyFromImportFile_ExpectCloseQuote | Looks up a localized string similar to Expecting closing string quote but hit end of file.. |
+|  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | DataAreaHelper_ImportFail | Looks up a localized string similar to Data area definition import failure.. |
 |  | DataAreaHelper_ParmCollision | Looks up a localized string similar to Data area composition name collision.. |
 |  | DataAreaHelper_ParmNotFound | Looks up a localized string similar to Data area composition name not found.. |
@@ -157,6 +156,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 |  | PrintingProps_RendererSettingReadOnly | Looks up a localized string similar to Renderer setting's value element is read-only.. |
 |  | PrintingProps_SectionLocked | Looks up a localized string similar to PrintingProps section cannot be modified.. |
 |  | ProgParm_ArgExcDontCareDirectionNone | Looks up a localized string similar to DataTypes.DontCare may only be specified with DataDirection.None.. |
+|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 |  | RpcSync_Reentrancy | Looks up a localized string similar to Reentrancy detected.. |
 |  | SecureStringSafeBuffer_UpdateNotAllowed | Looks up a localized string similar to Cannot update a read-only SecureString. Either pass a SecureString instance that is not marked read-only, or change the value of the update parameter to 'false'.. |
 |  | SocketAsyncHelper_EOS | Looks up a localized string similar to TCP connection closed by remote host.. |

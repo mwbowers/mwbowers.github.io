@@ -108,23 +108,23 @@ FileAdapter(IFileObject)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [AdapterStatus](/reference/data-gate-client/adapter-status.html) | Status | Gets the status of the FileAdapter. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FileName | Gets or sets the file name associated with the FileAdapter. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MemberName | Gets or sets the member name associated with the FileAdapter. |
 | [AccessMode](https://learn.microsoft.com/en-us/dotnet/api/) | AccessMode | Gets or sets the access mode associated with the FileAdapter. |
-| [FileOpenAttr](/reference/data-gate-providers/file-open-attr.html) | OpenAttributes | Gets or sets the open attributes associated with the FileAdapter. |
 | [AdgConnection](/reference/data-gate-client/adg-connection.html) | Connection | Gets or sets the connection associated with the FileAdapter. |
-| [IFileObject](/reference/data-gate-client/i-file-object.html) | FileObject | Gets the file object associated with the FileAdapter. |
-| [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RecordCount | Gets the number of records in the file. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CurrentFormatIndex | Gets the index of the current format. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ExactSeek | Gets or sets a value indicating whether an exact seek is performed. |
+| [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) | ExtendedResults | Gets the extended results associated with the file. |
+| [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FileLength | Gets the length of the file. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FileName | Gets or sets the file name associated with the FileAdapter. |
+| [IFileObject](/reference/data-gate-client/i-file-object.html) | FileObject | Gets the file object associated with the FileAdapter. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FormatRequested | Gets or sets the requested format index. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FormatToUse | Gets or sets the format index to use. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ExactSeek | Gets or sets a value indicating whether an exact seek is performed. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | LibraryName | Gets or sets the library name. |
-| [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FileLength | Gets the length of the file. |
-| [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RRN | Gets or sets the Relative Record Number (RRN) of the file. |
-| [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) | ExtendedResults | Gets the extended results associated with the file. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsBulkWriter | Gets a value indicating whether the file is a bulk writer. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | LibraryName | Gets or sets the library name. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MemberName | Gets or sets the member name associated with the FileAdapter. |
+| [FileOpenAttr](/reference/data-gate-providers/file-open-attr.html) | OpenAttributes | Gets or sets the open attributes associated with the FileAdapter. |
+| [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RecordCount | Gets the number of records in the file. |
+| [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RRN | Gets or sets the Relative Record Number (RRN) of the file. |
+| [AdapterStatus](/reference/data-gate-client/adapter-status.html) | Status | Gets the status of the FileAdapter. |
 
 ## Methods
 

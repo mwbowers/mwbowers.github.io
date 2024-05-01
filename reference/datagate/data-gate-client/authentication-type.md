@@ -13,10 +13,10 @@ AuthenticationType
 
 | Name | Description | Value
 | --- | --- | --- 
-| None | No authentication. |
-| UserPassword | User/password credential authentication. |
-| SecurityToken | *DOMAIN v1 NTLM token protocol |
-| Unknown | AuthenticatedStream authentication of unknown type. |
-| SslServer | SslServer certificate accepted by client. |
-| SslMutual | Client/server certificates accepted. |
-| SpnegoSspi | Negotiate SSPI: NTLM, Kerberos, etc. |
+| None | No authentication. | 0 |
+| SecurityToken | *DOMAIN v1 NTLM token protocol | 2 |
+| SpnegoSspi | Negotiate SSPI: NTLM, Kerberos, etc. | 6 |
+| SslMutual | Client/server certificates accepted. | 5 |
+| SslServer | SslServer certificate accepted by client. | 4 |
+| Unknown | AuthenticatedStream authentication of unknown type. | 3 |
+| UserPassword | User/password credential authentication. | 1 |

@@ -35,16 +35,16 @@ AdgDataSet(String)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Formats | Gets or sets the number of formats in the AdgDataSet. |
-| [IEnumerable<Byte\[\]>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | FormatIdentifiers | Gets the format identifiers for the AdgDataSet. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CurrentFormatIndex | Gets or sets the current format index in the AdgDataSet. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CurrentFormatName | Gets the name of the current format in the AdgDataSet. |
 | [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | ActiveRow | Gets or sets the current DataRow in the AdgTable. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Count | Gets the number of elements in the dictionary. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CurrentFormatIndex | Gets or sets the current format index in the AdgDataSet. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CurrentFormatName | Gets the name of the current format in the AdgDataSet. |
+| [IEnumerable<Byte\[\]>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | FormatIdentifiers | Gets the format identifiers for the AdgDataSet. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Formats | Gets or sets the number of formats in the AdgDataSet. |
+|  | IntKeys | Gets the collection of integer keys in the dictionary. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsReadOnly | Gets a value indicating whether the dictionary is read-only. |
 | [AdgTable](/reference/data-gate-client/adg-table.html) | Item | Table accesor. |
 | [AdgTable](/reference/data-gate-client/adg-table.html) | Item | Table accesor. |
-|  | IntKeys | Gets the collection of integer keys in the dictionary. |
 |  | StringKeys | Gets the collection of string keys in the dictionary. |
 | [ICollection<AdgTable>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection) | Values | Gets the collection of AdgTable values in the dictionary. |
 

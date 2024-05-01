@@ -35,9 +35,9 @@ SyncConnection(AdgConnection)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/) | State | Gets the current state of the SyncConnection. |
 | [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the decoder associated with the SyncConnection. |
 | [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the encoder associated with the SyncConnection. |
+| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/) | State | Gets the current state of the SyncConnection. |
 
 ## Methods
 

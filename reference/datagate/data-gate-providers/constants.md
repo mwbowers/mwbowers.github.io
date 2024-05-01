@@ -15,5 +15,5 @@ Contains constants used in the FileOpenAttr class.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | OptimalBlockingFactor | Represents the optimal blocking factor. |
 |  | OmitBlocking | Represents the omission of blocking. |
+|  | OptimalBlockingFactor | Represents the optimal blocking factor. |

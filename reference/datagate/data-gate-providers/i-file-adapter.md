@@ -15,9 +15,9 @@ Interface for file adapter.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [AccessMode](https://learn.microsoft.com/en-us/dotnet/api/) | AccessMode | Gets or sets the access mode. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FileName | Gets or sets the file name. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MemberName | Gets or sets the member name. |
-| [AccessMode](https://learn.microsoft.com/en-us/dotnet/api/) | AccessMode | Gets or sets the access mode. |
 | [FileOpenAttr](/reference/data-gate-providers/file-open-attr.html) | OpenAttributes | Gets or sets the open attributes. |
 
 ## Methods

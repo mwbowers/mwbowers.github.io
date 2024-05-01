@@ -22,7 +22,7 @@ sessions for all DG functions at AdgConnection.Open().
 
 | Name | Description | Value
 | --- | --- | --- 
-| Default | Represents the default option. |
-| DoNotStartServer | Specifies that the server should not be started. |
-| StartServerIfUnlimited | Specifies that the server should be started if it is unlimited. |
-| ForceAllSessions | Specifies that sessions for all DataGate functions should be initiated at AdgConnection.Open(). |
+| Default | Represents the default option. | 0 |
+| DoNotStartServer | Specifies that the server should not be started. | 1 |
+| ForceAllSessions | Specifies that sessions for all DataGate functions should be initiated at AdgConnection.Open(). | 4 |
+| StartServerIfUnlimited | Specifies that the server should be started if it is unlimited. | 2 |

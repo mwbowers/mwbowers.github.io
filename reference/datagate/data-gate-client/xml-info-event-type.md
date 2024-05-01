@@ -13,13 +13,13 @@ Defines the event types for XML import/output operation result.
 
 | Name | Description | Value
 | --- | --- | --- 
-| ErrorL1 | Critical error information (level 1) event type. |
-| ErrorL2 | Critical error information (level 2) event type. |
-| Warning | Warning information event type. |
-| InfoL1 | General information (level 1) event type. |
-| InfoL2 | General information (level 2) event type. |
-| InfoDebug | Debug detailed information event type. |
-| InfoAll | All information event type. |
-| ErrorAll | All errors event type. |
-| ErrorsAndWarnings | All errors and warnings event type. |
-| NonDebugInfo | Non debug information event type. |
+| ErrorAll | All errors event type. | 48 |
+| ErrorL1 | Critical error information (level 1) event type. | 16 |
+| ErrorL2 | Critical error information (level 2) event type. | 32 |
+| ErrorsAndWarnings | All errors and warnings event type. | 255 |
+| InfoAll | All information event type. | 65280 |
+| InfoDebug | Debug detailed information event type. | 1024 |
+| InfoL1 | General information (level 1) event type. | 256 |
+| InfoL2 | General information (level 2) event type. | 512 |
+| NonDebugInfo | Non debug information event type. | 768 |
+| Warning | Warning information event type. | 64 |

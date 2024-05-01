@@ -86,10 +86,10 @@ SqlObjectName(String, String, String, String)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Server | Gets the server of the SQL object. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Database | Gets the database of the SQL object. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Owner | Gets the owner of the SQL object. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Object | Gets the name of the SQL object. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Owner | Gets the owner of the SQL object. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Server | Gets the server of the SQL object. |
 
 ## Methods
 

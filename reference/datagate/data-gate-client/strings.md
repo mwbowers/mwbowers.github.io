@@ -15,11 +15,11 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
-|  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | CommandHelper_AdoErrorsBanner | Looks up a localized string similar to ADO Errors. |
 |  | CommandHelper_InvDbName | Looks up a localized string similar to Invalid SQL database name.. |
+|  | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 |  | DataRowColumnComparer_CannotCompareDeletedRow | Looks up a localized string similar to The DataRowColumnComparer does not work with DataRows that have been deleted since it only compares current values.. |
+|  | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 |  | SqlCursor_CursorAlreadyOpen | Looks up a localized string similar to Cursor already open.. |
 |  | SqlCursor_InvalidFetchType | Looks up a localized string similar to Invalid fetch type.. |
 |  | SqlDataArea_ExpectedChar1 | Looks up a localized string similar to Expected DataTypes.Char(1) parameter.. |

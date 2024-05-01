@@ -13,6 +13,6 @@ Copy data ExportAccessMode enumeration.
 
 | Name | Description | Value
 | --- | --- | --- 
-| RRN | Relative-record- number export access mode. |
-| Key | Keyed export access mode. |
-| Query | Queried export access mode. |
+| Key | Keyed export access mode. | 1 |
+| Query | Queried export access mode. | 2 |
+| RRN | Relative-record- number export access mode. | 0 |

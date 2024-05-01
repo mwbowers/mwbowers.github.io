@@ -21,16 +21,16 @@ A source provider is responsible for managing the connection to a data source.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the connection is open. |
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | SourceProfile | Gets the source profile of the connection. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ServerUser | Gets the server user of the connection. |
-| [DatabaseAttributes](/reference/data-gate-providers/database-attributes.html) | DatabaseAttributes | Gets the database attributes. |
-| [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-8.0) | IdleTime | Gets or sets the idle time. |
-| [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the encoder for the connection. |
-| [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the decoder for the connection. |
 | [IChannelSecurity](/reference/data-gate-client/i-channel-security.html) | ChannelSecurity | Gets the channel security for the connection. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SupportsMultiMember | Gets a value indicating whether the source provider supports multi-member files. |
+| [DatabaseAttributes](/reference/data-gate-providers/database-attributes.html) | DatabaseAttributes | Gets the database attributes. |
+| [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the decoder for the connection. |
+| [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the encoder for the connection. |
+| [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?view=net-8.0) | IdleTime | Gets or sets the idle time. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the connection is open. |
 | [OpenOptions](/reference/data-gate-providers/open-options.html) | OpenOptions | Gets the open options for the connection. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ServerUser | Gets the server user of the connection. |
+| [SourceProfile](/reference/data-gate-providers/source-profile.html) | SourceProfile | Gets the source profile of the connection. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SupportsMultiMember | Gets a value indicating whether the source provider supports multi-member files. |
 
 ## Methods
 

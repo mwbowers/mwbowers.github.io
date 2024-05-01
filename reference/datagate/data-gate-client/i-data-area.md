@@ -21,8 +21,8 @@ This interface should be implemented by classes that represent a DataGate data a
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the length of the data area. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Decimals | Gets or sets the number of decimal places for the data area. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the length of the data area. |
 
 ## Methods
 

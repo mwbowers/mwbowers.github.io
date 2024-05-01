@@ -35,8 +35,8 @@ AdgKeyTable(DataTable)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | KeyPartCount | Gets or sets the number of key parts. |
 | [DataRowColumnComparer<DataRow>](https://learn.microsoft.com/en-us/dotnet/api/) | Comparer | Gets or sets the comparer for the AdgKeyTable. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | KeyPartCount | Gets or sets the number of key parts. |
 
 ## Methods
 
