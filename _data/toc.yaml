@@ -413,7 +413,6 @@ Reference:
       section:
       - title: DgNegotiateException class
         path: /reference/datagate/data-gate-client-common/dg-negotiate-exception.html
-    section:
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/data-gate-client-common/landing-page-enumerations.html
       section:
@@ -515,7 +514,6 @@ Reference:
         path: /reference/datagate/data-gate-client/xml-cancel-event-args.html
       - title: XmlCancelEventHandler class
         path: /reference/datagate/data-gate-client/xml-cancel-event-handler.html
-    section:
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/data-gate-client/landing-page-enumerations.html
       section:
@@ -541,7 +539,6 @@ Reference:
         path: /reference/datagate/data-gate-client/xml-info-msg-type.html
       - title: XmlOptions enum
         path: /reference/datagate/data-gate-client/xml-options.html
-    section:
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/data-gate-client/landing-page-interfaces.html
       section:
@@ -625,7 +622,6 @@ Reference:
         path: /reference/datagate/data-gate-common/xml-element-converter.html
       - title: XmlFileDef class
         path: /reference/datagate/data-gate-common/xml-file-def.html
-    section:
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/data-gate-common/landing-page-enumerations.html
       section:
@@ -729,7 +725,6 @@ Reference:
         path: /reference/datagate/data-gate-common/transaction-level.html
       - title: WaitOptions enum
         path: /reference/datagate/data-gate-common/wait-options.html
-    section:
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/data-gate-common/landing-page-interfaces.html
       section:
@@ -793,7 +788,6 @@ Reference:
         path: /reference/datagate/data-gate-data-link/alt-encoding-info.html
       - title: Ucs2Translator class
         path: /reference/datagate/data-gate-data-link/ucs2-translator.html
-    section:
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/data-gate-data-link/landing-page-enumerations.html
       section:
@@ -801,7 +795,6 @@ Reference:
         path: /reference/datagate/data-gate-data-link/msg-id.html
       - title: ProtoLevel enum
         path: /reference/datagate/data-gate-data-link/proto-level.html
-    section:
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/data-gate-data-link/landing-page-interfaces.html
       section:
@@ -853,7 +846,6 @@ Reference:
         path: /reference/datagate/data-gate-providers/source-profile.html
       - title: UserPasswordCredential class
         path: /reference/datagate/data-gate-providers/user-password-credential.html
-    section:
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/data-gate-providers/landing-page-enumerations.html
       section:
@@ -865,7 +857,6 @@ Reference:
         path: /reference/datagate/data-gate-providers/source-profile-converter-options.html
       - title: TransactionAttributes enum
         path: /reference/datagate/data-gate-providers/transaction-attributes.html
-    section:
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/data-gate-providers/landing-page-interfaces.html
       section:
@@ -931,30 +922,6 @@ Reference:
         path: /reference/datagate/extensions-configuration/lazy-read-only-source-dictionary.html
       - title: RootExtensions class
         path: /reference/datagate/extensions-configuration/root-extensions.html
-    section:
-    - sectiontitle: Interfaces
-      sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
-      section:
-      - title: IAsnaConfig interface
-        path: /reference/datagate/extensions-configuration/i-asna-config.html
-      - title: IDataGateConfig interface
-        path: /reference/datagate/extensions-configuration/i-data-gate-config.html
-    sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
-    section:
-    - sectiontitle: Classes
-      sectionpath: /reference/datagate/extensions-configuration/landing-page-classes.html
-      section:
-      - title: AsnaConfig class
-        path: /reference/datagate/extensions-configuration/asna-config.html
-      - title: AsnaConfigHelper class
-        path: /reference/datagate/extensions-configuration/asna-config-helper.html
-      - title: DataGateExtensions class
-        path: /reference/datagate/extensions-configuration/data-gate-extensions.html
-      - title: LazyReadOnlySourceDictionary class
-        path: /reference/datagate/extensions-configuration/lazy-read-only-source-dictionary.html
-      - title: RootExtensions class
-        path: /reference/datagate/extensions-configuration/root-extensions.html
-    section:
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
       section:
