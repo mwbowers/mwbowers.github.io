@@ -2,6 +2,10 @@
 title: ASNA.DataGate.Client Enumerations
 ---
 
+## Remarks
+
+The following are the enumerations provided by **ASNA DataGate Client** namespace.
+
 
 | Type | Description |
 | --- | --- |

@@ -49,7 +49,7 @@ SourceProfile(SourceProfile)
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | AltEncodingName | Gets or sets the alternative encoding name. |
 | [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | Credential | Gets or sets the credential. |
 |  | DGPLATFORM | Constant for DataLink platform. |
-| [IEnumerable<String>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | InitialLibraryList | Get or Set initial library list |
+| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | InitialLibraryList | Get or Set initial library list |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlClientPlatform | Gets a value indicating whether the platform is SQL Client. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlPlatform | Gets a value indicating whether the platform is SQL. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Label | Get or Set label name |
@@ -200,3 +200,12 @@ Serves as the default hash function.
 ```cs
 int GetHashCode()
 ```
+## Example
+
+```cs 
+  /* This creates a brand new database name using the
+   * old source profile.*/
+  SourceProfile newDbProfile2 = new SourceProfile("Brand New DB Name", sp);
+```
+
+

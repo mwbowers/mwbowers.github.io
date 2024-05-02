@@ -2,6 +2,10 @@
 title: ASNA.DataGate.SqlServer Classes
 ---
 
+## Remarks
+
+The following are the classes provided by **ASNA DataGate SQL Server** namespace.
+
 
 | Type | Description |
 | --- | --- |

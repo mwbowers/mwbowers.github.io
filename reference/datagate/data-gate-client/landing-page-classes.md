@@ -2,6 +2,10 @@
 title: ASNA.DataGate.Client Classes
 ---
 
+## Remarks
+
+The following are the classes provided by **ASNA DataGate Client** namespace.
+
 
 | Type | Description |
 | --- | --- |

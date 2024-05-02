@@ -22,7 +22,7 @@ allows resolving a source name to a configured SourceProfile.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IReadOnlyDictionary<String, SourceProfile>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | Sources | Gets a read-only dictionary of all configured database sources. |
+| [IReadOnlyDictionary\<String, SourceProfile\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | Sources | Gets a read-only dictionary of all configured database sources. |
 
 ## Methods
 

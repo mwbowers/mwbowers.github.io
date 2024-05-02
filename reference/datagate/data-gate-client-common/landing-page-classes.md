@@ -2,6 +2,9 @@
 title: ASNA.DataGate.Client.Common Classes
 ---
 
+## Remarks
+
+The following are the Common classes provided by **ASNA DataGate Client** namespace.
 
 | Type | Description |
 | --- | --- |

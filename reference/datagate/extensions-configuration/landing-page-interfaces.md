@@ -2,6 +2,10 @@
 title: ASNA.Extensions.Configuration Interfaces
 ---
 
+## Remarks
+
+The following are the interface provided by **ASNA Extensions Configuration** namespace.
+
 
 | Type | Description |
 | --- | --- |

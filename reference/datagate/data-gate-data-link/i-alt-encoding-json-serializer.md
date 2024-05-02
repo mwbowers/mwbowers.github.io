@@ -16,4 +16,4 @@ participate in DataGate JSON serialization.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [JsonConverter<ITransformProperties>](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-8.0) | JsonSerializer | Gets the JSON converter for the transformation properties. |
+| [JsonConverter\<ITransformProperties\>](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonconverter-1?view=net-8.0) | JsonSerializer | Gets the JSON converter for the transformation properties. |

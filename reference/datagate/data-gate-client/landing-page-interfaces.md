@@ -2,6 +2,10 @@
 title: ASNA.DataGate.Client Interfaces
 ---
 
+## Remarks
+
+The following are the interface provided by **ASNA DataGate Client** namespace.
+
 
 | Type | Description |
 | --- | --- |

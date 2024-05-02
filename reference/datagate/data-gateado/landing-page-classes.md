@@ -2,6 +2,10 @@
 title: ASNA.DataGate.ADO Classes
 ---
 
+## Remarks
+
+The following are the classes provided by **ASNA DataGateAdo** namespace.
+
 
 | Type | Description |
 | --- | --- |

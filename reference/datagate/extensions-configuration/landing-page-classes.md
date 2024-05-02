@@ -2,6 +2,10 @@
 title: ASNA.Extensions.Configuration Classes
 ---
 
+## Remarks
+
+The following are the classes and interfaces provided by **ASNA Extensions Configuration** namespace.
+
 
 | Type | Description |
 | --- | --- |

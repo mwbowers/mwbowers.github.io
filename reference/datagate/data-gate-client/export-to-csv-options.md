@@ -147,7 +147,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 | Type | Name | Description
 | --- | --- | --- 
 | [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | DecimalPoint | Gets or sets the character used as a decimal point in the exported data. |
-| [Nullable<Char>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | FieldDelimiter | Gets or sets the character used as a field delimiter in the exported data. |
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | FieldDelimiter | Gets or sets the character used as a field delimiter in the exported data. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IncludeNames | Gets or sets a value indicating whether to omit the trailing delimiter in the exported data. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OmitTrailingDelimiter | Gets or sets a value indicating whether to omit the trailing delimiter in the exported data. |
-| [Nullable<Char>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the character used as a text delimiter in the exported data. |
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the character used as a text delimiter in the exported data. |

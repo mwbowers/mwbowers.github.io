@@ -10,6 +10,18 @@ DataGate connection.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+## Thread Safety
+
+Any public static (Shared) members of this type are safe for multithreaded operations. 
+
+Any instance members are not guaranteed to be thread safe. 
+
+A single instance of AdgConnection should not be shared by multiple threads of an application, unless application access to the instance is protected by a mutual exclusion mechanism, or unpredictable results may occur. 
+
+For example, an ASP.NET application must take special care when using a shared instance of AdgConnection among multiple ASP.NET sessions. 
+
+As an alternative, consider using a separate instance of AdgConnection (optionally configured for connection pooling via the [PoolingTimeout](/reference/datagate/data-gate-providers/source-profile.html#properties) property of SourceProfile) in each ASP.NET session. Note also that other DG classes with properties and method parameters of type AdgConnection, such as FileAdapter, may employ the non-thread safe members of AdgConnection internally. By association, instance members of these classes are not guaranteed to be thread safe. 
+
 
 ## Constructors
 

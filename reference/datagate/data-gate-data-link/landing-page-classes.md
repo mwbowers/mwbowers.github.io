@@ -2,6 +2,9 @@
 title: ASNA.DataGate.DataLink Classes
 ---
 
+## Remarks
+
+The following are the classes provided by **ASNA DataGate Data Link** namespace.
 
 | Type | Description |
 | --- | --- |

@@ -2,6 +2,10 @@
 title: ASNA.DataGate.Providers Interfaces
 ---
 
+## Remarks
+
+The following are the interface provided by **ASNA DataGate Providers** namespace.
+
 
 | Type | Description |
 | --- | --- |

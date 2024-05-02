@@ -15,7 +15,7 @@ Defines a factory for creating alternative encodings.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IEnumerable<AltEncodingInfo>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | Encodings | Gets the available encodings supported by the factory. |
+| [IEnumerable\<AltEncodingInfo\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | Encodings | Gets the available encodings supported by the factory. |
 
 ## Methods
 

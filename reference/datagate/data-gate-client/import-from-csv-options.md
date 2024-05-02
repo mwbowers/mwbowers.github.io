@@ -154,6 +154,6 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>,
 | Type | Name | Description
 | --- | --- | --- 
 | [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | DecimalPoint | Gets or sets the character used as a decimal point in the CSV source. |
-| [Nullable<Char>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | FieldDelimiter | Gets or sets the character used as a field delimiter in the CSV source. |
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | FieldDelimiter | Gets or sets the character used as a field delimiter in the CSV source. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SkipFirstLine | Gets or sets a value indicating whether to skip the first line in the CSV source. |
-| [Nullable<Char>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the character used as a text delimiter in the CSV source. |
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the character used as a text delimiter in the CSV source. |
