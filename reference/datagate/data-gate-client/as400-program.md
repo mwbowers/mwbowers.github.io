@@ -186,7 +186,7 @@ ProgParm GetParmByName(string name)
 | --- | ---
 | [ProgParm](/reference/data-gate-data-link/prog-parm.html) | The ProgParm object representing the parameter.
 
-### void AppendParms([ProgParm[] parameters](/reference/data-gate-data-link/prog-parm.html))
+### void AppendParms([ProgParm\[\] parameters](/reference/data-gate-data-link/prog-parm.html))
 
 Appends the specified parameters to the As400Program instance.
 
@@ -198,7 +198,7 @@ void AppendParms(ProgParm[] parameters)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm[]](/reference/data-gate-data-link/prog-parm.html) | parameters | 
+| [ProgParm\[\]](/reference/data-gate-data-link/prog-parm.html) | parameters | 
 
 ### void AppendParm([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html))
 

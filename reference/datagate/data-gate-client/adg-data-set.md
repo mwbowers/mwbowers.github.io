@@ -474,7 +474,7 @@ bool TryGetValue(string key, AdgTable& value)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the dictionary contains an element with the specified key; otherwise, false.
 
-### bool Contains([KeyValuePair<int](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable> item](/reference/data-gate-client/adg-table.html))
+### bool Contains([KeyValuePair\<int, AdgTable\> item](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0))
 
 Determines whether the dictionary contains a specific key-value pair.
 
@@ -482,7 +482,7 @@ Determines whether the dictionary contains a specific key-value pair.
 bool Contains(KeyValuePair<int, AdgTable> item)
 ```
 
-### void CopyTo([KeyValuePair`2[] array](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [int arrayIndex](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void CopyTo([KeyValuePair`2\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [int arrayIndex](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Copies the elements of the dictionary to an array, starting at a particular array index.
 

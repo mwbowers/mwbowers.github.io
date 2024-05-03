@@ -36,7 +36,7 @@ Reads a single byte from the data stream.
 int ReadByte()
 ```
 
-### int Read([Byte[] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### int Read([Byte\[\] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Reads a sequence of bytes from the data stream.
 
@@ -48,7 +48,7 @@ int Read(Byte[] inBuf, int iBegin, int cBytes)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | 
 

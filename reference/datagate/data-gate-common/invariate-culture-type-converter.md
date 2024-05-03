@@ -213,7 +213,7 @@ Serves as the default hash function.
 int GetHashCode()
 ```
 
-### PropertyDescriptorCollection GetProperties([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Attribute[] attributes](https://docs.microsoft.com/en-us/dotnet/api/system.attribute))
+### PropertyDescriptorCollection GetProperties([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Attribute\[\] attributes](https://docs.microsoft.com/en-us/dotnet/api/system.attribute))
 
 Returns a collection of properties for the type of array specified by the value parameter, using the specified context and attributes.
 
@@ -227,7 +227,7 @@ PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, objec
 | --- | --- | ---
 | [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-| [Attribute[]](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) | attributes | 
+| [Attribute\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) | attributes | 
 
 #### Returns
 

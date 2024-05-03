@@ -94,7 +94,7 @@ Closes the connection.
 void Close()
 ```
 
-### void ChangeCurrentLibl([String[] newLibl](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### void ChangeCurrentLibl([String\[\] newLibl](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Changes the current library list.
 
@@ -106,7 +106,7 @@ void ChangeCurrentLibl(String[] newLibl)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newLibl | 
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newLibl | 
 
 ### bool ResetConnection()
 

@@ -15,10 +15,10 @@ Queue multiple, fixed-length, read-only streams into one stream.
 
 | Name | Description |
 | --- | --- |
-| [InputStreamAggregator](#inputstreamaggregator-ienumerable-valuetuple-int32-func-stream-)([IEnumerable<ValueTuple<Int32](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0), [Func<Stream>>>](https://learn.microsoft.com/en-us/dotnet/api/)) | Tuples passed to the constructor specify:* stream length* constructor for streamOrder given is the order each stream will be constructed thenread.  Only one stream is "current", and it will be read untildepleted, after which it is disposed.The length is provided to avoid (re)constructing the stream incases where it is either already disposed or not yet created.There is nothing threadsafe here.
+| [InputStreamAggregator](#inputstreamaggregator-ienumerable-valuetuple-int32-func-stream-)([IEnumerable\<ValueTuple\<Int32, Func\<Stream\>\>\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0)) | Tuples passed to the constructor specify:* stream length* constructor for streamOrder given is the order each stream will be constructed thenread.  Only one stream is "current", and it will be read untildepleted, after which it is disposed.The length is provided to avoid (re)constructing the stream incases where it is either already disposed or not yet created.There is nothing threadsafe here.
 | [InputStreamAggregator()](#inputstreamaggregator-) | Initializes a new instance of the  class.
 
-### InputStreamAggregator([IEnumerable<ValueTuple<Int32](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0), [Func<Stream>>>](https://learn.microsoft.com/en-us/dotnet/api/))
+### InputStreamAggregator([IEnumerable\<ValueTuple\<Int32, Func\<Stream\>\>\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0))
 
 Tuples passed to the constructor specify:* stream length* constructor for streamOrder given is the order each stream will be constructed thenread.  Only one stream is "current", and it will be read untildepleted, after which it is disposed.The length is provided to avoid (re)constructing the stream incases where it is either already disposed or not yet created.There is nothing threadsafe here.
 
@@ -48,7 +48,7 @@ InputStreamAggregator()
 
 | Signature | Description |
 | --- | --- |
-| [Append](#append-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Appends a new stream to the aggregator.
+| [Append](#append-int32-func`1-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/)) | Appends a new stream to the aggregator.
 | [Finalize()](#finalize-) | Finalizes an instance of the  class.
 | [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
 | [Flush()](#flush-) | Overrides the Flush method for the InputStreamAggregator.
@@ -58,7 +58,7 @@ InputStreamAggregator()
 | [SetLength](#setlength-int64-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream.
 | [Write](#write-byte-int32-int32-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
 
-### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func<Stream> cons](https://learn.microsoft.com/en-us/dotnet/api/))
+### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func\<Stream\> cons](https://learn.microsoft.com/en-us/dotnet/api/))
 
 Appends a new stream to the aggregator.
 
@@ -71,7 +71,7 @@ void Append(int len, Func<Stream> cons)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | len | 
-| [Func<Stream>](https://learn.microsoft.com/en-us/dotnet/api/) | cons | 
+| [Func\<Stream\>](https://learn.microsoft.com/en-us/dotnet/api/) | cons | 
 
 ### void Finalize()
 
@@ -103,7 +103,7 @@ Overrides the Flush method for the InputStreamAggregator.
 void Flush()
 ```
 
-### int Read([Byte[] buffer](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int count](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### int Read([Byte\[\] buffer](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int count](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
 
@@ -115,7 +115,7 @@ int Read(Byte[] buffer, int offset, int count)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | offset | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | count | 
 
@@ -168,7 +168,7 @@ void SetLength(long value)
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | value | 
 
-### void Write([Byte[] buffer](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int count](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void Write([Byte\[\] buffer](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int count](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
 
@@ -180,6 +180,6 @@ void Write(Byte[] buffer, int offset, int count)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | offset | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | count | 

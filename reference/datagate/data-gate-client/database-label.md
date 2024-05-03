@@ -89,7 +89,7 @@ ILabel[] GetLabels(SourceProfile sp)
 
 | Type | Description
 | --- | ---
-| [ILabel[]](/reference/data-gate-client/i-label.html) | An array of labels.
+| [ILabel\[\]](/reference/data-gate-client/i-label.html) | An array of labels.
 
 ### ILabel GetLabel([SourceProfile sp](/reference/data-gate-providers/source-profile.html), [string lblName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

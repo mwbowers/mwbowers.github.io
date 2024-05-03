@@ -235,7 +235,7 @@ void Open(AdgDataSet ds)
 | --- | --- | ---
 | [AdgDataSet](/reference/data-gate-client/adg-data-set.html) | ds | 
 
-### void OpenSimpleQuery([AdgDataSet& ds](/reference/data-gate-client/adg-data-set.html), [string queryFile](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string query](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String[] keyNames](https://docs.microsoft.com/en-us/dotnet/api/system.string), [KeyUsages[] keyFlags](https://learn.microsoft.com/en-us/dotnet/api/))
+### void OpenSimpleQuery([AdgDataSet& ds](/reference/data-gate-client/adg-data-set.html), [string queryFile](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string query](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] keyNames](https://docs.microsoft.com/en-us/dotnet/api/system.string), [KeyUsages\[\] keyFlags](https://learn.microsoft.com/en-us/dotnet/api/))
 
 Opens the FileAdapter with a simple query.
 
@@ -250,8 +250,8 @@ void OpenSimpleQuery(AdgDataSet& ds, string queryFile, string query, String[] ke
 | [AdgDataSet&](/reference/data-gate-client/adg-data-set.html) | ds | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | queryFile | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | query | 
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | keyNames | 
-| [KeyUsages[]](https://learn.microsoft.com/en-us/dotnet/api/) | keyFlags | 
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | keyNames | 
+| [KeyUsages\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | keyFlags | 
 
 ### void AddRecord([AdgDataSet ds](/reference/data-gate-client/adg-data-set.html))
 

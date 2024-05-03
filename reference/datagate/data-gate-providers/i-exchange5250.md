@@ -19,7 +19,7 @@ Defines a contract for exchanging 5250 data stream information.
 | [GetDeviceInfo](#getdeviceinfo-string-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the device information.
 | [CompleteOpen](#completeopen-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Completes the opening of a connection with a specific code page ID.
 
-### void Exchange5250DS([int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Byte[]& aInDs](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int InDsLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Byte[]& aOutDs](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32& OutDsLength](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte& TelnetFlags](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+### void Exchange5250DS([int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Byte\[\]& aInDs](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int InDsLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Byte\[\]& aOutDs](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32& OutDsLength](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte& TelnetFlags](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 
 Exchanges 5250 data stream information.
 
@@ -32,9 +32,9 @@ void Exchange5250DS(int iBegin, Byte[]& aInDs, int InDsLength, Byte[]& aOutDs, I
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | 
-| [Byte[]&](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | aInDs | 
+| [Byte\[\]&](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | aInDs | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | InDsLength | 
-| [Byte[]&](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | aOutDs | 
+| [Byte\[\]&](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | aOutDs | 
 | [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | OutDsLength | 
 | [Byte&](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | TelnetFlags | 
 

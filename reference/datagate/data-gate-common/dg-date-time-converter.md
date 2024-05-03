@@ -24,7 +24,7 @@ Represents a converter for AS/400 date/time/timestamp values.
 | [GetParseFormat](#getparseformat-datatypes-datetimeformat-)([DataTypes](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/)) | Retrieves the parse format for the specified field type and date/time format.
 | [Create](#create-datatypes-datetimeformat-nullable-nullable-)([DataTypes](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Creates an instance of  with the specified field type and format.
 
-### string GetTableString([DataTypes fieldType](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat dtFmt](https://learn.microsoft.com/en-us/dotnet/api/), [String[][] table](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### string GetTableString([DataTypes fieldType](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat dtFmt](https://learn.microsoft.com/en-us/dotnet/api/), [String\[\]\[\] table](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Retrieves a string from a specified table based on the provided field type and date/time format.
 
@@ -38,7 +38,7 @@ string GetTableString(DataTypes fieldType, DateTimeFormat dtFmt, String[][] tabl
 | --- | --- | ---
 | [DataTypes](https://learn.microsoft.com/en-us/dotnet/api/) | fieldType | 
 | [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/) | dtFmt | 
-| [String[][]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | table | 
+| [String\[\]\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | table | 
 
 #### Returns
 
@@ -65,9 +65,9 @@ String[] GetParseFormat(DataTypes fieldType, DateTimeFormat dtFmt)
 
 | Type | Description
 | --- | ---
-| [String[]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | An array containing the parse format.
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | An array containing the parse format.
 
-### DgDateTimeConverter Create([DataTypes fieldType](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat dtFmt](https://learn.microsoft.com/en-us/dotnet/api/), [Nullable<DateTime> hiVal](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable<DateTime> loVal](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
+### DgDateTimeConverter Create([DataTypes fieldType](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat dtFmt](https://learn.microsoft.com/en-us/dotnet/api/), [Nullable\<DateTime\> hiVal](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<DateTime\> loVal](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
 
 Creates an instance of  with the specified field type and format.
 
@@ -81,8 +81,8 @@ DgDateTimeConverter Create(DataTypes fieldType, DateTimeFormat dtFmt, Nullable<D
 | --- | --- | ---
 | [DataTypes](https://learn.microsoft.com/en-us/dotnet/api/) | fieldType | 
 | [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/) | dtFmt | 
-| [Nullable<DateTime>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | hiVal | 
-| [Nullable<DateTime>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | loVal | 
+| [Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | hiVal | 
+| [Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | loVal | 
 
 #### Returns
 

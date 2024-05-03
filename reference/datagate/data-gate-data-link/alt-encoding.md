@@ -171,7 +171,7 @@ Dictionary<string, object> DictionaryFromITransformProps(ITransformProperties pr
 | --- | ---
 | [Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) | The dictionary.
 
-### ITransformProperties TransformPropertiesFromDictionary([Dictionary<string](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [object> dict](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### ITransformProperties TransformPropertiesFromDictionary([Dictionary\<string, object\> dict](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0))
 
 Converts a dictionary to transform properties.
 

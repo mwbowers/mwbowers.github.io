@@ -50,7 +50,7 @@ void WriteByte(byte b)
 | --- | --- | ---
 | [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
 
-### void Write([Byte[] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void Write([Byte\[\] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Writes a sequence of bytes to the data stream.
 
@@ -62,6 +62,6 @@ void Write(Byte[] inBuf, int iBegin, int cBytes)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte[]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | 

@@ -82,7 +82,7 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 | [GetChildCount](#getchildcount-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the count of child elements of the current XmlElement that have the specified name and namespace.
 | [SetElementText](#setelementtext-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the text content of the current XmlElement.
 | [GetElementText()](#getelementtext-) | Gets the text content of the current XmlElement.
-| [GetElementText()](#getelementtext-) | Gets the text content of the specified XmlElement.
+| [GetElementText](#getelementtext-xmlelement-)([XmlElement](https://learn.microsoft.com/en-us/dotnet/api/)) | Gets the text content of the specified XmlElement.
 | [GetFirstElement()](#getfirstelement-) | Gets the first child element of the parent XmlNode that has the specified name and namespace.
 | [SetElementName](#setelementname-ischemaelementname-)([ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the name of the schema element that is currently being converted.
 

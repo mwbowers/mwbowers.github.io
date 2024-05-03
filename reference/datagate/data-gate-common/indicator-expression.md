@@ -45,7 +45,7 @@ IndicatorExpression(String)
 | --- | --- |
 | [Eval](#eval-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the expression using the indicator values passed in.
 
-### bool Eval([Char[] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+### bool Eval([Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Evaluates the expression using the indicator values passed in.
 
@@ -57,7 +57,7 @@ bool Eval(Char[] indicators)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char[]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | 
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | 
 
 #### Returns
 
