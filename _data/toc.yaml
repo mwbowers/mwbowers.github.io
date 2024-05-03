@@ -235,6 +235,8 @@ Manuals:
           path: /manuals/datagate/programmers-guide/database-file-recordsand-adg-dataset.html
         - title: Reading and Writing to Database Files
           path: /manuals/datagate/programmers-guide/readingand-writingto-database-files.html
+        - title: Importing and Exporting Records to Text Files
+          path: /manuals/datagate/programmers-guide/import-export-records.html
         - title: Efficient File Access
           path: /manuals/datagate/programmers-guide/efficient-file-access.html
         - title: Verifying Results with Exception Handling

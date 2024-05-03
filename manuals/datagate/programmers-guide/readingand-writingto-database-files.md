@@ -3,10 +3,48 @@ title: Reading and Writing to Database Files
 
 ---
 
-The following example in AVR <span>opens a database file</span> for "read" access as before and then reads the first record in the file.
+The following example <span>opens a database file</span> for "read" access and then reads the first record in the file.
 
 ```cs
- AdgDataSet
+ 
+  using ASNA.DataGate.Client;
+  using ASNA.DataGate.Common;
+  ...
+  AdgConnection Cx;
+  FileAdapter DBFile;
+  AdgDataSet Ds;
+  Cx = new AdgConnection("ASNA Local DB");
+  Cx.Open();
+  DbFile = new FileAdapter(Cx,"/cmmaster","*first");
+  DbFile.OpenNewAdgDataSet( ref Ds );
+  DbFile.ReadSequential (Ds, ReadSequentialMode.Next, LockRequest.Default);
+  Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"]);
+
+```
+
+Upon the successful completion of the `DbFile.ReadSequential` method in this example, the database file cursor represented by DbFile will rest on the first record of the file. Also, the data contained in the first record is available via the **AdgDataSet** object referred to by the Ds variable. The most recent record read into **AdgDataSet** is accessible via its `ActiveRow` property. In the last line of the example, the value of a field in the record (CMCustNo) is referenced from the ActiveRow property and displayed in a message box.
+
+Other FileAdapter methods provide the record-oriented "read" access functions familiar to RPG and AS/400 programmers, including reading by key and reading by RRN. Keyed-access is explained in more detail in the Advanced Topics section (coming soon).
+
+To update a database file record, the `ChangeCurrent` method of FileAdapter is used. First, the record to be updated is read as in the previous example. Then the fields whose values are to be changed are accessed by name as above.
+
+The following example illustrates one procedure for **updating a file**.
+
+
+```cs
+  AdgConnection cx; 
+  FileAdapter dbFile;
+  AdgDataSet ds;
+  cx = new AdgConnection("ASNA Local DB");
+  cx.Open();
+  dbFile = new FileAdapter(cx, "/cmmaster", "*first");
+  dbFile.AccessMode = AccessMode.Change + AccessMode.Read;
+  dbFile.OpenNewAdgDataSet(ds);
+  dbFile.ReadSequential(ds, ReadSequentialMode.Next, LockRequest.Default);
+  ds.ActiveRow.Item("CMCustNo") = 101;
+  dbFile.ChangeCurrent(ds);
+  dbFile.Close();
+  cx.Close();
 ```
 
 This example simply opens and reads the first record as in the previous example, then sets the value of the CMCustNo field before calling the [ ChangeCurrent](file-adapter-class-change-current-method.html) method to send the change to the server. Note that we have set the [AccessMode](file-adapter-class-access-mode-property.html) property of the **FileAdapter** object prior to calling the [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method. This informs the server that records in the opened file are to be read and updated. If not set explicitly, the <span> **AccessMode** </span> property value is Read, for read-only access.
@@ -46,16 +84,14 @@ The following example illustrates an appropriate sequence for **adding a databas
 ## See Also
 
 [AdgDataSet Class](adg-dataset-class.html)
-      <br />
-      [Database File Records and 
-				AdgDataSet](database-file-recordsand-adg-dataset.html)
-      <br />
+<br />
+[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)
+<br />
 [Efficient File Access](efficient-file-access.html)
-      <br />
+<br />
 [FileAdapter Class](file-adapter-class.html)
-      <br />
-      [Verifying Results with 
-				Exception Handling](verifying-resultswith-exception-handling.html)
-      <br />
+<br />
+[Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html)
+<br />
 [Using the FileAdapter Class](usingthe-file-adapter-class.html)
 
