@@ -793,8 +793,6 @@ Reference:
       section:
       - title: MsgID enum
         path: /reference/datagate/data-gate-data-link/msg-id.html
-      - title: ProtoLevel enum
-        path: /reference/datagate/data-gate-data-link/proto-level.html
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/data-gate-data-link/landing-page-interfaces.html
       section:
