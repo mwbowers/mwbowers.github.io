@@ -2,6 +2,9 @@
 title: ASNA.DataGate.Common Classes
 ---
 
+## Remarks
+
+The following are the Common classes provided by **ASNA DataGate Common** namespace.
 
 | Type | Description |
 | --- | --- |

@@ -12,6 +12,10 @@ Defines the methods and properties for a DataGate transaction.
 <br>
 
 ## Remarks
+## Thread Safety
+
+Instance members of this type are not guaranteed to be thread safe.
+
 This interface should be implemented by classes that represent a DataGate transaction.
 
 <br>

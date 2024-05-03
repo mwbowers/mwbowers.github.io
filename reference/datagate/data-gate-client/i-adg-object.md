@@ -12,6 +12,9 @@ Defines the methods and properties for an ASNA DataGate object.
 <br>
 
 ## Remarks
+## Thread Safety
+
+Implementations of **IAdgObject** are safe for multithreaded operations.
 This interface should be implemented by classes that represent a DataGate object.
 
 <br>

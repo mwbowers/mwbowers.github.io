@@ -10,6 +10,9 @@ Provides methods for managing print properties.
 **Inheritance:** 
 <br>
 <br>
+## Thread Safety
+
+In DG implementations of **IPrintProperties** , instance members are not guaranteed to be thread safe.
 
 ## Methods
 

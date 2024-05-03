@@ -10,6 +10,9 @@ DataGate key table, a specialized implementation of AdgTable.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [AdgTable](/reference/data-gate-client/adg-table.html)
 <br>
 <br>
+## Thread Safety
+
+Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
 ## Constructors
 

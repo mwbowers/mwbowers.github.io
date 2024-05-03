@@ -2,6 +2,10 @@
 title: ASNA.DataGate.Common Enumerations
 ---
 
+## Remarks
+
+The following are the Common enumerations provided by **ASNA DataGate Common** namespace.
+
 
 | Type | Description |
 | --- | --- |

@@ -12,6 +12,9 @@ Defines the methods and properties for a DataGate member.
 <br>
 
 ## Remarks
+### Thread Safety
+
+In DG implementations of **IMember**, instance members are not guaranteed to be thread safe.
 This interface should be implemented by classes that represent a DataGate member.
 
 <br>

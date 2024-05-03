@@ -12,6 +12,7 @@ Defines the methods and properties for a DataGate directory.
 <br>
 
 ## Remarks
+In DG implementations of **IDirectory** , instance members are not guaranteed to be thread safe.
 This interface should be implemented by classes that represent a DataGate directory.
 
 <br>

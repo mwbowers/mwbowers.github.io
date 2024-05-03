@@ -10,6 +10,10 @@ Compatibility class for dgPrintDeviceAttr structure.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0)
 <br>
 <br>
+## Thread Safety
+
+Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
+
 
 ## Constructors
 

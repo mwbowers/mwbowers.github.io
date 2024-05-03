@@ -10,6 +10,9 @@ Custom Exceptions thrown by DataGate.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)
 <br>
 <br>
+## Thread Safety
+
+Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
 ## Constructors
 

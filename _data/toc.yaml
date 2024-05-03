@@ -586,8 +586,6 @@ Reference:
       section:
       - title: AdgTrace class
         path: /reference/datagate/data-gate-common/adg-trace.html
-      - title: Apples class
-        path: /reference/datagate/data-gate-common/apples.html
       - title: DecNumZPRep class
         path: /reference/datagate/data-gate-common/dec-num-zp-rep.html
       - title: DgDateTimeConverter class
