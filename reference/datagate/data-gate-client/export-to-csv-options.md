@@ -7,7 +7,7 @@ Represents a set of options for exporting data to CSV.
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [ExportOptions](/reference/data-gate-client/export-options.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [ExportOptions](/reference/datagate/data-gate-client/export-options.html)
 <br>
 <br>
 
