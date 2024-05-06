@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://schema.asna.com/json/asna-qsys-schema.json",
+  "title": "ASNA QSys Configuration Schema",
+  "description": "Settings for ASNA QSys applications.",
+
+  "definitions": {
+    "dataGateProps": {
+      "type": "object",
+      "description": "DataGate-related settings for ASNA QSys applications.",
+      "properties": {
+        "sources": {
+          "description": "'Database name' client/server connection profiles as a collection of keyed properties.",
+          "patternProperties": {
+            "^.+$": {
+              "description": "Definition of a serialized SourceProfile instance.",
+              "allOf": [
+                { "$ref": "#/definitions/sourceRequiredProps" },
+                { "$ref": "#/definitions/sourceOptionalProps" },
+                { "$ref": "#/definitions/userPasswdCreds" }
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "altencProps": {
+      "type": "object",
+      "description": "Text encoding plugin interface.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The text encoding identifier recognized by the plugin."
+        },
+        "encProps": { "$ref": "#/definitions/encDecProps" },
+        "decProps": { "$ref": "#/definitions/encDecProps" }
+      }
+    },
+    "encDecProps": {
+      "type": "object",
+      "description": "Key/value string pairs that a plugin may use to serialize its encoder/decoder properties.",
+      "patternProperties": {
+        "^.+$": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceOptionalProps": {
+      "type": "object",
+      "description": "Serialized SourceProfile 'optional' properties. Each has a 'default' value defined.",
+      "properties": {
+        "altEncoding": { "$ref": "#/definitions/altencProps" },
+        "initialLibraryList": {
+          "type": "array",
+          "description": "An array of strings identifying libraries added to the library list upon connecting. Generally, use culture-neutral strings; other syntax is dependent upon the DataGate server implementation.",
+          "items": {
+            "type": "string",
+            "description": "Some valid SQL database names may not be valid according to this schema. DataGate will try to use them anyway.",
+            "pattern": "^[a-zA-Z$#@][a-zA-Z0-9$#@_]{0,127}$"
+          },
+          "default": []
+        },
+        "label": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 31,
+          "description": "A string of less than 32 characters used to identify legacy Acceler8DB and DataGate Engine for Windows databases. Ignored by all other database servers.",
+          "default": ""
+        },
+        "platformAttribute": {
+          "enum": [
+            "*DATALINK",
+            "*SQLOLEDB",
+            "*SQLCLIENT"
+          ],
+          "description": "Client directives for database interface selection.",
+          "default": "*DATALINK"
+        },
+        "poolingTimeout": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 255
+            },
+            {
+              "type": "string",
+              "pattern": "^25[0-5]$|^2[0-4][0-9]$|^1[0-9]{2}$|^[1-9][0-9]$|^[0-9]$"
+            }
+          ],
+          "description": "Number of minutes (between 0 and 255 inclusive) to allow a live DataGate connection created from this SourceProfile to remain available for reuse after an application \"closes\" it.",
+          "default": 0
+        },
+        "port": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 65535
+            },
+            {
+              "type": "string",
+              "pattern": "(^\\*[dD][eE][fF][aA][uU][lL][tT]$)|(^6553[0-5]$)|(^655[0-2][0-9]$)|(^65[0-4][0-9]{2}$)|(^6[0-4][0-9]{3}$)|(^[1-5][0-9]{4}$)|(^[1-9][0-9]{3}$)|(^[1-9][0-9]{2}$)|(^[1-9][0-9]{2}$)|(^[1-9][0-9]$)|(^[0-9]$)"
+            }
+          ],
+          "description": "TCP port number in the range [0-65535], or '*DEFAULT'",
+          "default": "*DEFAULT"
+        },
+        "servicePrincipalName": {
+          "type": "string",
+          "description": "The SPN identifier to use when authenticating *DOMAIN users against Kerberos hosts.",
+          "default": ""
+        },
+        "sslCertificateName": {
+          "type": "string",
+          "description": "Local machine identifier for the certificate to use with 'authName' SSL option.",
+          "default": ""
+        },
+        "sslOptions": {
+          "anyOf": [
+            {
+              "enum": [
+                "none",
+                "request",
+                "require",
+                "authName",
+                "authDns",
+                "authLocal",
+                "authPrompt",
+                "cASigned",
+                "noClearText",
+                "authRevoked"
+              ]
+            },
+            {
+              "type": "number",
+              "description": "Bit-wise combinations of the enumerated values (None=0). Request and Require are mutually exclusive, but all other combinations are valid."
+            }
+          ],
+          "description": "Options for securing the DataGate client/server connection with the client and server platforms' best available Secure Sockets protocol level. Disabled with \"none\".",
+          "default": "none"
+        },
+        "text": {
+          "type": "string",
+          "description": "User-defined text to associate with this database source; ignored by DataGate.",
+          "default": ""
+        }
+      },
+      "dependencies": {
+        "sslCertificateName": [ "sslOptions" ],
+        "servicePrincipalName": [ "user" ]
+      }
+    },
+    "sourceRequiredProps": {
+      "type": "object",
+      "description": "The required properties of a SourceProfile.",
+      "required": [ "server" ],
+      "properties": {
+        "server": {
+          "type": "string",
+          "pattern": "^\\s*([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])(\\.([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9]))*\\s*$|^\\s*(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))\\s*$|^\\s*\\*[lL][oO][cC][aA][lL]\\s*$",
+          "description": "Any valid IPv4 or IPv6 address, an optionally domain-qualified, RFC 1123 hostname, or the keyword \"*LOCAL\"."
+        }
+      }
+    },
+    "userPasswdCreds": {
+      "type": "object",
+      "description": "Properties associated with a user/password credential.",
+      "properties": {
+        "user": {
+          "type": "string",
+          "description": "A login name used to authenticate connections and authorize database access.",
+          "default": ""
+        },
+        "password": {
+          "type": "string",
+          "description": "An optional password for user authentication. Ideally this should never be specified in JSON texts. This property is a placeholder for secure configuration providers to override.",
+          "default":  ""
+        },
+        "passwordType": {
+          "enum": [
+            "legacy",
+            "securePassphrase"
+          ],
+          "description": "Deprecated: used for legacy server support and pre-V5R1M0 AS/400 passwords.",
+          "default": "securePassphrase"
+        }
+      },
+      "dependencies": {
+        "password": [ "user" ],
+        "passwordType": [ "password" ]
+      }
+    }
+  },
+
+  "type": "object",
+
+  "properties": {
+    "asna": {
+      "type": "object",
+      "description": "This is the root of the ASNA QSys configuration settings tree.",
+      "properties": {
+        "dataGate": {
+          "$ref": "#/definitions/dataGateProps"
+        }
+      }
+    }
+  }
+}
