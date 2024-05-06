@@ -34,7 +34,7 @@ StructureType(String, Int32, Object[])
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | 
-| [Object[]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | mbrs | 
+| [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | mbrs | 
 
 ## Properties
 
