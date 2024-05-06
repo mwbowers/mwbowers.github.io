@@ -15,11 +15,11 @@ Represents a class for importing data.
 
 | Signature | Description |
 | --- | --- |
-| [With](#with-importoptions-)([ImportOptions](/reference/data-gate-client/import-options.html)) | Executes the import operation with the specified options.
-| [With](#with-importoptions-nullable-)([ImportOptions](/reference/data-gate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Executes the import operation with the specified options and cancellation token.
-| [With](#with-importoptions-nullable-taskcreationoptions-)([ImportOptions](/reference/data-gate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [TaskCreationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskcreationoptions?view=net-8.0)) | Executes the import operation with the specified options.
+| [With](#with-importoptions-)([ImportOptions](/reference/datagate/data-gate-client/import-options.html)) | Executes the import operation with the specified options.
+| [With](#with-importoptions-nullable-)([ImportOptions](/reference/datagate/data-gate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Executes the import operation with the specified options and cancellation token.
+| [With](#with-importoptions-nullable-taskcreationoptions-)([ImportOptions](/reference/datagate/data-gate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [TaskCreationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskcreationoptions?view=net-8.0)) | Executes the import operation with the specified options.
 
-### Task With([ImportOptions options](/reference/data-gate-client/import-options.html))
+### Task With([ImportOptions options](/reference/datagate/data-gate-client/import-options.html))
 
 Executes the import operation with the specified options.
 
@@ -31,7 +31,7 @@ Task With(ImportOptions options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ImportOptions](/reference/data-gate-client/import-options.html) | options | 
+| [ImportOptions](/reference/datagate/data-gate-client/import-options.html) | options | 
 
 #### Returns
 
@@ -39,7 +39,7 @@ Task With(ImportOptions options)
 | --- | ---
 | [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task representing the asynchronous import operation.
 
-### Task With([ImportOptions options](/reference/data-gate-client/import-options.html))
+### Task With([ImportOptions options](/reference/datagate/data-gate-client/import-options.html))
 
 Executes the import operation with the specified options and cancellation token.
 
@@ -47,7 +47,7 @@ Executes the import operation with the specified options and cancellation token.
 Task With(ImportOptions options)
 ```
 
-### Task With([ImportOptions options](/reference/data-gate-client/import-options.html))
+### Task With([ImportOptions options](/reference/datagate/data-gate-client/import-options.html))
 
 Executes the import operation with the specified options.
 

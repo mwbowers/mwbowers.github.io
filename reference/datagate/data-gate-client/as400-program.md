@@ -26,8 +26,8 @@ executing the program, and handling the program's output parameters.
 | Name | Description |
 | --- | --- |
 | [As400Program()](#as400program-) | Initializes a new instance of the As400Program class.
-| [As400Program](#as400program-adgconnection-)([AdgConnection](/reference/data-gate-client/adg-connection.html)) | Initializes a new instance of the As400Program class with the specified connection.
-| [As400Program](#as400program-adgconnection-string-)([AdgConnection](/reference/data-gate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the As400Program class with the specified connection and program path.
+| [As400Program](#as400program-adgconnection-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)) | Initializes a new instance of the As400Program class with the specified connection.
+| [As400Program](#as400program-adgconnection-string-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the As400Program class with the specified connection and program path.
 
 ### As400Program()
 
@@ -37,7 +37,7 @@ Initializes a new instance of the As400Program class.
 As400Program()
 ```
 
-### As400Program([AdgConnection](/reference/data-gate-client/adg-connection.html))
+### As400Program([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html))
 
 Initializes a new instance of the As400Program class with the specified connection.
 
@@ -49,9 +49,9 @@ As400Program(AdgConnection)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | connection | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | connection | 
 
-### As400Program([AdgConnection](/reference/data-gate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### As400Program([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Initializes a new instance of the As400Program class with the specified connection and program path.
 
@@ -63,7 +63,7 @@ As400Program(AdgConnection, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | connection | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | connection | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programPath | 
 
 ## Methods
@@ -71,7 +71,7 @@ As400Program(AdgConnection, String)
 | Signature | Description |
 | --- | --- |
 | [SetProgramPath](#setprogrampath-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the program path for the As400Program instance.
-| [SetConnection](#setconnection-adgconnection-)([AdgConnection](/reference/data-gate-client/adg-connection.html)) | Sets the specified value for the connection of the As400Program instance.
+| [SetConnection](#setconnection-adgconnection-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)) | Sets the specified value for the connection of the As400Program instance.
 | [Finalize()](#finalize-) | Finalizes an instance of the As400Program class.
 | [Dispose()](#dispose-) | Disposes the As400Program instance.
 | [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the As400Program instance.
@@ -79,12 +79,12 @@ As400Program(AdgConnection, String)
 | [Execute()](#execute-) | Executes the AS/400 program.
 | [GetParameters()](#getparameters-) | Gets the parameters of the AS/400 program.
 | [GetParmByName](#getparmbyname-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter of the AS/400 program by name.
-| [AppendParms](#appendparms-progparm-)([ProgParm](/reference/data-gate-data-link/prog-parm.html)) | Appends the specified parameters to the As400Program instance.
-| [AppendParm](#appendparm-progparm-)([ProgParm](/reference/data-gate-data-link/prog-parm.html)) | Appends the specified parameter to the As400Program instance.
-| [ParmToObject](#parmtoobject-progparm-type-int32-)([ProgParm](/reference/data-gate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ParmToObject](#parmtoobject-progparm-type-)([ProgParm](/reference/data-gate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the specified ProgParm object to the specified return type.
-| [ObjectToParm](#objecttoparm-progparm-object-int32-)([ProgParm](/reference/data-gate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ObjectToParm](#objecttoparm-progparm-object-)([ProgParm](/reference/data-gate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified ProgParm object to the specified return type and element index.
+| [AppendParms](#appendparms-progparm-)([ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html)) | Appends the specified parameters to the As400Program instance.
+| [AppendParm](#appendparm-progparm-)([ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html)) | Appends the specified parameter to the As400Program instance.
+| [ParmToObject](#parmtoobject-progparm-type-int32-)([ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ParmToObject](#parmtoobject-progparm-type-)([ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the specified ProgParm object to the specified return type.
+| [ObjectToParm](#objecttoparm-progparm-object-int32-)([ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ObjectToParm](#objecttoparm-progparm-object-)([ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified ProgParm object to the specified return type and element index.
 | [ParmToObject](#parmtoobject-type-string-int32-)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
 | [ParmToObject](#parmtoobject-type-string-)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified ProgParm object to the specified return type and element index.
 | [ObjectToParm](#objecttoparm-object-string-int32-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
@@ -107,7 +107,7 @@ void SetProgramPath(string value)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
 
-### void SetConnection([AdgConnection value](/reference/data-gate-client/adg-connection.html))
+### void SetConnection([AdgConnection value](/reference/datagate/data-gate-client/adg-connection.html))
 
 Sets the specified value for the connection of the As400Program instance.
 
@@ -119,7 +119,7 @@ void SetConnection(AdgConnection value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | value | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | value | 
 
 ### void Finalize()
 
@@ -187,9 +187,9 @@ ProgParm GetParmByName(string name)
 
 | Type | Description
 | --- | ---
-| [ProgParm](/reference/data-gate-data-link/prog-parm.html) | The ProgParm object representing the parameter.
+| [ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html) | The ProgParm object representing the parameter.
 
-### void AppendParms([ProgParm\[\] parameters](/reference/data-gate-data-link/prog-parm.html))
+### void AppendParms([ProgParm\[\] parameters](/reference/datagate/data-gate-data-link/prog-parm.html))
 
 Appends the specified parameters to the As400Program instance.
 
@@ -201,9 +201,9 @@ void AppendParms(ProgParm[] parameters)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm\[\]](/reference/data-gate-data-link/prog-parm.html) | parameters | 
+| [ProgParm\[\]](/reference/datagate/data-gate-data-link/prog-parm.html) | parameters | 
 
-### void AppendParm([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html))
+### void AppendParm([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html))
 
 Appends the specified parameter to the As400Program instance.
 
@@ -215,9 +215,9 @@ void AppendParm(ProgParm parameter)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/data-gate-data-link/prog-parm.html) | parameter | 
+| [ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html) | parameter | 
 
-### object ParmToObject([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### object ParmToObject([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 
@@ -229,7 +229,7 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/data-gate-data-link/prog-parm.html) | parameter | 
+| [ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html) | parameter | 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | returnType | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | 
 
@@ -239,7 +239,7 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
-### object ParmToObject([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### object ParmToObject([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type.
 
@@ -247,7 +247,7 @@ Converts the specified ProgParm object to the specified return type.
 object ParmToObject(ProgParm parameter, Type returnType, int element)
 ```
 
-### void ObjectToParm([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void ObjectToParm([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 
@@ -259,11 +259,11 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/data-gate-data-link/prog-parm.html) | parameter | 
+| [ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html) | parameter | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | 
 
-### void ObjectToParm([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void ObjectToParm([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 
@@ -271,7 +271,7 @@ Converts the specified ProgParm object to the specified return type and element 
 void ObjectToParm(ProgParm parameter, object value, int element)
 ```
 
-### object ParmToObject([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### object ParmToObject([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 
@@ -283,7 +283,7 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/data-gate-data-link/prog-parm.html) | returnType | 
+| [ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html) | returnType | 
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | parameterName | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
 
@@ -293,7 +293,7 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
-### object ParmToObject([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### object ParmToObject([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 
@@ -301,7 +301,7 @@ Converts the specified ProgParm object to the specified return type and element 
 object ParmToObject(ProgParm parameter, Type returnType, int element)
 ```
 
-### void ObjectToParm([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void ObjectToParm([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 
@@ -313,11 +313,11 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/data-gate-data-link/prog-parm.html) | value | 
+| [ProgParm](/reference/datagate/data-gate-data-link/prog-parm.html) | value | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parameterName | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
 
-### void ObjectToParm([ProgParm parameter](/reference/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void ObjectToParm([ProgParm parameter](/reference/datagate/data-gate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified ProgParm object to the specified return type and element index.
 

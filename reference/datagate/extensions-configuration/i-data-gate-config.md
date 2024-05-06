@@ -48,4 +48,4 @@ SourceProfile ResolveSourceName(string name)
 
 | Type | Description
 | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | The resolved SourceProfile.
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | The resolved SourceProfile.

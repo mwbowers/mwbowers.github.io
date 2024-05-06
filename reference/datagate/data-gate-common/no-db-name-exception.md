@@ -7,7 +7,7 @@ Represents an exception that is thrown when a database name is missing.
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [dgException](https://learn.microsoft.com/en-us/dotnet/api/)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [dgException](/reference/datagate/data-gate-common/dg-exception.html)
 <br>
 <br>
 
@@ -60,9 +60,9 @@ NoDbNameException(String, Exception)
 
 | Signature | Description |
 | --- | --- |
-| [FormatMessage](#formatmessage-iformatprovider-string-)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the specified message with the database name.
+| [FormatMessage](#formatmessage-iformatprovider-string-)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the specified message with the database name.
 
-### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Formats the specified message with the database name.
 
@@ -74,7 +74,7 @@ string FormatMessage(IFormatProvider provider, string msg)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/) | provider | 
+| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0) | provider | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | msg | 
 
 #### Returns

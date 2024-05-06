@@ -7,7 +7,7 @@ Represents a SQL print device attributes.
 **Namespace:** ASNA.DataGate.ADO
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) --> [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) --> [PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html)
 <br>
 <br>
 
@@ -16,7 +16,7 @@ Represents a SQL print device attributes.
 | Name | Description |
 | --- | --- |
 | [SqlPrintDevAttr()](#sqlprintdevattr-) | Initializes a new instance of the SqlPrintDevAttr class.
-| [SqlPrintDevAttr](#sqlprintdevattr-printdevattr-)([PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html)) | Initializes a new instance of the SqlPrintDevAttr class with the specified PrintDevAttr.
+| [SqlPrintDevAttr](#sqlprintdevattr-printdevattr-)([PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html)) | Initializes a new instance of the SqlPrintDevAttr class with the specified PrintDevAttr.
 | [SqlPrintDevAttr](#sqlprintdevattr-binaryreader-boolean-)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the SqlPrintDevAttr class with the specified BinaryReader.
 
 ### SqlPrintDevAttr()
@@ -27,7 +27,7 @@ Initializes a new instance of the SqlPrintDevAttr class.
 SqlPrintDevAttr()
 ```
 
-### SqlPrintDevAttr([PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html))
+### SqlPrintDevAttr([PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html))
 
 Initializes a new instance of the SqlPrintDevAttr class with the specified PrintDevAttr.
 
@@ -39,7 +39,7 @@ SqlPrintDevAttr(PrintDevAttr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | devAttr | 
+| [PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html) | devAttr | 
 
 ### SqlPrintDevAttr([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

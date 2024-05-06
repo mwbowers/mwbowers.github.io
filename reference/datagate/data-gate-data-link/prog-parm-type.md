@@ -19,9 +19,9 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParmType](#progparmtype-string-int32-fieldtype-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes a new instance of the  class.
+| [ProgParmType](#progparmtype-string-int32-fieldtype-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/data-gate-common/field-type.html)) | Initializes a new instance of the  class.
 
-### ProgParmType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](https://learn.microsoft.com/en-us/dotnet/api/))
+### ProgParmType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/data-gate-common/field-type.html))
 
 Initializes a new instance of the  class.
 
@@ -35,7 +35,7 @@ ProgParmType(String, Int32, FieldType)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | 
-| [FieldType](https://learn.microsoft.com/en-us/dotnet/api/) | type | 
+| [FieldType](/reference/datagate/data-gate-common/field-type.html) | type | 
 
 ## Properties
 

@@ -23,10 +23,10 @@ and for getting the text content of an element.
 
 | Name | Description |
 | --- | --- |
-| [XmlElementConverter](#xmlelementconverter-xmlnode-ischemaelementname-)([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/), [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes a new instance of the  class.
-| [XmlElementConverter](#xmlelementconverter-xmlnode-xmlelement-ischemaelementname-)([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/), [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/), [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes a new instance of the  class.
+| [XmlElementConverter](#xmlelementconverter-xmlnode-ischemaelementname-)([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0), [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html)) | Initializes a new instance of the  class.
+| [XmlElementConverter](#xmlelementconverter-xmlnode-xmlelement-ischemaelementname-)([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0), [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0), [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html)) | Initializes a new instance of the  class.
 
-### XmlElementConverter([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/), [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/))
+### XmlElementConverter([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0), [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html))
 
 Initializes a new instance of the  class.
 
@@ -38,10 +38,10 @@ XmlElementConverter(XmlNode, ISchemaElementName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/) | container | 
-| [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/) | elementName | 
+| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | container | 
+| [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html) | elementName | 
 
-### XmlElementConverter([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/), [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/), [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/))
+### XmlElementConverter([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0), [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0), [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html))
 
 Initializes a new instance of the  class.
 
@@ -53,18 +53,18 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/) | container | 
-| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/) | element | 
-| [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/) | elementName | 
+| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | container | 
+| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | element | 
+| [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html) | elementName | 
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
 |  | Doc | Gets the XmlDocument that the current XmlElementConverter is working with. |
-| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/) | Element | Gets the XmlElement that is currently being converted. |
-| [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/) | ElementName | Gets the name of the schema element that is currently being converted. |
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/) | Parent | Gets or sets the XmlNode that contains the XmlElement to be converted. |
+| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | Element | Gets the XmlElement that is currently being converted. |
+| [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html) | ElementName | Gets the name of the schema element that is currently being converted. |
+| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | Parent | Gets or sets the XmlNode that contains the XmlElement to be converted. |
 |  | XsdFalse | Represents the string "false" as used in XML schema definitions. |
 |  | XsdTrue | Represents the string "true" as used in XML schema definitions. |
 
@@ -82,9 +82,9 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 | [GetChildCount](#getchildcount-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the count of child elements of the current XmlElement that have the specified name and namespace.
 | [SetElementText](#setelementtext-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the text content of the current XmlElement.
 | [GetElementText()](#getelementtext-) | Gets the text content of the current XmlElement.
-| [GetElementText](#getelementtext-xmlelement-)([XmlElement](https://learn.microsoft.com/en-us/dotnet/api/)) | Gets the text content of the specified XmlElement.
+| [GetElementText](#getelementtext-xmlelement-)([XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0)) | Gets the text content of the specified XmlElement.
 | [GetFirstElement()](#getfirstelement-) | Gets the first child element of the parent XmlNode that has the specified name and namespace.
-| [SetElementName](#setelementname-ischemaelementname-)([ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the name of the schema element that is currently being converted.
+| [SetElementName](#setelementname-ischemaelementname-)([ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html)) | Sets the name of the schema element that is currently being converted.
 
 ### XmlElement CreateElement([bool addXmlnsAttr](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -104,7 +104,7 @@ XmlElement CreateElement(bool addXmlnsAttr)
 
 | Type | Description
 | --- | ---
-| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/) | The newly created XmlElement.
+| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | The newly created XmlElement.
 
 ### string GetAttribute([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -209,7 +209,7 @@ XmlNodeList GetChildren(string childElementName, string childElementNamespace)
 
 | Type | Description
 | --- | ---
-| [XmlNodeList](https://learn.microsoft.com/en-us/dotnet/api/) | A XmlNodeList containing the child elements of the current XmlElement that have the specified name and namespace. If the current XmlElement is null, it returns null.
+| [XmlNodeList](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnodelist?view=net-8.0) | A XmlNodeList containing the child elements of the current XmlElement that have the specified name and namespace. If the current XmlElement is null, it returns null.
 
 ### int GetChildCount([string childElementName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string childElementNamespace](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -270,7 +270,7 @@ Gets the first child element of the parent XmlNode that has the specified name a
 void GetFirstElement()
 ```
 
-### void SetElementName([ISchemaElementName name](https://learn.microsoft.com/en-us/dotnet/api/))
+### void SetElementName([ISchemaElementName name](/reference/datagate/data-gate-common/i-schema-element-name.html))
 
 Sets the name of the schema element that is currently being converted.
 
@@ -282,4 +282,4 @@ void SetElementName(ISchemaElementName name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ISchemaElementName](https://learn.microsoft.com/en-us/dotnet/api/) | name | 
+| [ISchemaElementName](/reference/datagate/data-gate-common/i-schema-element-name.html) | name | 

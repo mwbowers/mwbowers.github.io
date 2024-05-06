@@ -16,7 +16,7 @@ Represents a source profile with various properties.
 | Name | Description |
 | --- | --- |
 | [SourceProfile()](#sourceprofile-) | Initializes a new instance of the SourceProfile class.
-| [SourceProfile](#sourceprofile-sourceprofile-)([SourceProfile](/reference/data-gate-providers/source-profile.html)) | Initializes a new instance of the SourceProfile class with the properties of an existing SourceProfile.
+| [SourceProfile](#sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html)) | Initializes a new instance of the SourceProfile class with the properties of an existing SourceProfile.
 
 ### SourceProfile()
 
@@ -26,7 +26,7 @@ Initializes a new instance of the SourceProfile class.
 SourceProfile()
 ```
 
-### SourceProfile([SourceProfile](/reference/data-gate-providers/source-profile.html))
+### SourceProfile([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html))
 
 Initializes a new instance of the SourceProfile class with the properties of an existing SourceProfile.
 
@@ -38,16 +38,16 @@ SourceProfile(SourceProfile)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | sp | 
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | AltDecoderProps | Gets or sets the alternative decoder properties. |
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | AltEncoderProps | Gets or sets the alternative encoder properties. |
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | AltDecoderProps | Gets or sets the alternative decoder properties. |
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | AltEncoderProps | Gets or sets the alternative encoder properties. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | AltEncodingName | Gets or sets the alternative encoding name. |
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | Credential | Gets or sets the credential. |
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | Credential | Gets or sets the credential. |
 |  | DGPLATFORM | Constant for DataLink platform. |
 | [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | InitialLibraryList | Get or Set initial library list |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsSqlClientPlatform | Gets a value indicating whether the platform is SQL Client. |
@@ -61,7 +61,7 @@ SourceProfile(SourceProfile)
 |  | SQLCLIENTPLATFORM | Constant for SQL Client platform. |
 |  | SQLOLEDBPLATFORM | Constant for SQL OLEDB platform. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SslCertificateName | Gets or sets the SSL certificate name. |
-| [SslOptions](https://learn.microsoft.com/en-us/dotnet/api/) | SslOptions | Gets or sets the SSL options. |
+| [SslOptions](/reference/datagate/data-gate-common/ssl-options.html) | SslOptions | Gets or sets the SSL options. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | Gets or sets the text. |
 
 ## Methods
@@ -71,9 +71,9 @@ SourceProfile(SourceProfile)
 | [ToString()](#tostring-) | Returns a string that represents the current SourceProfile.
 | [Clone()](#clone-) | Creates a new object that is a copy of the current instance.
 | [IsKnownPlatformAttribute](#isknownplatformattribute-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is known.
-| [op_Equality](#op_equality-sourceprofile-sourceprofile-)([SourceProfile](/reference/data-gate-providers/source-profile.html), [SourceProfile](/reference/data-gate-providers/source-profile.html)) | Determines whether two SourceProfile instances are equal.
-| [op_Inequality](#op_inequality-sourceprofile-sourceprofile-)([SourceProfile](/reference/data-gate-providers/source-profile.html), [SourceProfile](/reference/data-gate-providers/source-profile.html)) | Determines whether two SourceProfile instances are not equal.
-| [Equals](#equals-sourceprofile-)([SourceProfile](/reference/data-gate-providers/source-profile.html)) | Determines whether the specified SourceProfile is equal to the current SourceProfile.
+| [op_Equality](#op_equality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html)) | Determines whether two SourceProfile instances are equal.
+| [op_Inequality](#op_inequality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html)) | Determines whether two SourceProfile instances are not equal.
+| [Equals](#equals-sourceprofile-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html)) | Determines whether the specified SourceProfile is equal to the current SourceProfile.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current SourceProfile.
 | [Equals](#equals-object-boolean-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
 | [GetHashCode()](#gethashcode-) | Serves as the default hash function.
@@ -114,7 +114,7 @@ bool IsKnownPlatformAttribute(string platformAttr)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the platform attribute is known; otherwise, false.
 
-### bool op_Equality([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
+### bool op_Equality([SourceProfile x](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile y](/reference/datagate/data-gate-providers/source-profile.html))
 
 Determines whether two SourceProfile instances are equal.
 
@@ -126,8 +126,8 @@ bool op_Equality(SourceProfile x, SourceProfile y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | x | 
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | y | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | x | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | y | 
 
 #### Returns
 
@@ -135,7 +135,7 @@ bool op_Equality(SourceProfile x, SourceProfile y)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the SourceProfiles are equal; otherwise, false.
 
-### bool op_Inequality([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
+### bool op_Inequality([SourceProfile x](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile y](/reference/datagate/data-gate-providers/source-profile.html))
 
 Determines whether two SourceProfile instances are not equal.
 
@@ -147,8 +147,8 @@ bool op_Inequality(SourceProfile x, SourceProfile y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | x | 
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | y | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | x | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | y | 
 
 #### Returns
 
@@ -156,7 +156,7 @@ bool op_Inequality(SourceProfile x, SourceProfile y)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the SourceProfiles are not equal; otherwise, false.
 
-### bool Equals([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
+### bool Equals([SourceProfile x](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile y](/reference/datagate/data-gate-providers/source-profile.html))
 
 Determines whether the specified SourceProfile is equal to the current SourceProfile.
 
@@ -164,7 +164,7 @@ Determines whether the specified SourceProfile is equal to the current SourcePro
 bool Equals(SourceProfile x, SourceProfile y)
 ```
 
-### bool Equals([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
+### bool Equals([SourceProfile x](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile y](/reference/datagate/data-gate-providers/source-profile.html))
 
 Determines whether the specified object is equal to the current SourceProfile.
 
@@ -172,7 +172,7 @@ Determines whether the specified object is equal to the current SourceProfile.
 bool Equals(SourceProfile x, SourceProfile y)
 ```
 
-### bool Equals([SourceProfile x](/reference/data-gate-providers/source-profile.html), [SourceProfile y](/reference/data-gate-providers/source-profile.html))
+### bool Equals([SourceProfile x](/reference/datagate/data-gate-providers/source-profile.html), [SourceProfile y](/reference/datagate/data-gate-providers/source-profile.html))
 
 Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
 
@@ -184,8 +184,8 @@ bool Equals(SourceProfile x, SourceProfile y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | obj | 
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | bIgnoreDatabaseName | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | obj | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | bIgnoreDatabaseName | 
 
 #### Returns
 

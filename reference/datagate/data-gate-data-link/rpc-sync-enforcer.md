@@ -10,6 +10,6 @@ responsible for synchronizing access and avoiding reentrancy.
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [RpcSync](/reference/data-gate-data-link/rpc-sync.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [RpcSync](/reference/datagate/data-gate-data-link/rpc-sync.html)
 <br>
 <br>

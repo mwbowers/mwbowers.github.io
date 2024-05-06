@@ -48,17 +48,17 @@ InputStreamAggregator()
 
 | Signature | Description |
 | --- | --- |
-| [Append](#append-int32-func`1-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/)) | Appends a new stream to the aggregator.
+| [Append](#append-int32-func`1-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the aggregator.
 | [Finalize()](#finalize-) | Finalizes an instance of the  class.
 | [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
 | [Flush()](#flush-) | Overrides the Flush method for the InputStreamAggregator.
 | [Read](#read-byte-int32-int32-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
 | [ReadByte()](#readbyte-) | Reads a byte from the current InputStreamAggregator and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
-| [Seek](#seek-int64-seekorigin-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the position within the current stream.
+| [Seek](#seek-int64-seekorigin-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream.
 | [SetLength](#setlength-int64-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream.
 | [Write](#write-byte-int32-int32-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
 
-### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func\<Stream\> cons](https://learn.microsoft.com/en-us/dotnet/api/))
+### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func\<Stream\> cons](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0))
 
 Appends a new stream to the aggregator.
 
@@ -71,7 +71,7 @@ void Append(int len, Func<Stream> cons)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | len | 
-| [Func\<Stream\>](https://learn.microsoft.com/en-us/dotnet/api/) | cons | 
+| [Func\<Stream\>](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0) | cons | 
 
 ### void Finalize()
 
@@ -133,7 +133,7 @@ Reads a byte from the current InputStreamAggregator and advances the position wi
 int ReadByte()
 ```
 
-### long Seek([long offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [SeekOrigin origin](https://learn.microsoft.com/en-us/dotnet/api/))
+### long Seek([long offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [SeekOrigin origin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0))
 
 Sets the position within the current stream.
 
@@ -146,7 +146,7 @@ long Seek(long offset, SeekOrigin origin)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | offset | 
-| [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/) | origin | 
+| [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0) | origin | 
 
 #### Returns
 

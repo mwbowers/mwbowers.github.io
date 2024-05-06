@@ -24,7 +24,7 @@ IAsnaConfig properties encoded in JSON configuration texts.
 | --- | --- |
 | [LoadFromJson](#loadfromjson-stream-)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Returns an instance of IAsnaConfig, given a stream.
 | [LoadFromJson](#loadfromjson-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an instance of IAsnaConfig, given a path to aJSON-encoded file.
-| [TryLoadFromDefaultFile](#tryloadfromdefaultfile-iasnaconfig-)([IAsnaConfig](/reference/extensions-configuration/i-asna-config.html)) | Gets a configuration from the default file.
+| [TryLoadFromDefaultFile](#tryloadfromdefaultfile-iasnaconfig-)([IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html)) | Gets a configuration from the default file.
 
 ### IAsnaConfig LoadFromJson([Stream jsonStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 
@@ -44,7 +44,7 @@ IAsnaConfig LoadFromJson(Stream jsonStream)
 
 | Type | Description
 | --- | ---
-| [IAsnaConfig](/reference/extensions-configuration/i-asna-config.html) | IAsnaConfig
+| [IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html) | IAsnaConfig
 
 ### IAsnaConfig LoadFromJson([Stream jsonStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 
@@ -64,9 +64,9 @@ IAsnaConfig LoadFromJson(Stream jsonStream)
 
 | Type | Description
 | --- | ---
-| [IAsnaConfig](/reference/extensions-configuration/i-asna-config.html) | 
+| [IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html) | 
 
-### bool TryLoadFromDefaultFile([IAsnaConfig& config](/reference/extensions-configuration/i-asna-config.html))
+### bool TryLoadFromDefaultFile([IAsnaConfig& config](/reference/datagate/extensions-configuration/i-asna-config.html))
 
 Gets a configuration from the default file.
 
@@ -78,7 +78,7 @@ bool TryLoadFromDefaultFile(IAsnaConfig& config)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IAsnaConfig&](/reference/extensions-configuration/i-asna-config.html) | config | 
+| [IAsnaConfig&](/reference/datagate/extensions-configuration/i-asna-config.html) | config | 
 
 #### Returns
 

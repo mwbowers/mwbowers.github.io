@@ -20,4 +20,4 @@ Represents an alternative decoder that extends the base Decoder class.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | TransformProperties | Gets or sets the current custom transform properties associated with thedecoder. By default, this property returns null. |
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | TransformProperties | Gets or sets the current custom transform properties associated with thedecoder. By default, this property returns null. |

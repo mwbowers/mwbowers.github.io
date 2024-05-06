@@ -233,7 +233,7 @@ PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, objec
 
 | Type | Description
 | --- | ---
-| [PropertyDescriptorCollection](https://learn.microsoft.com/en-us/dotnet/api/) | A PropertyDescriptorCollection with the properties that are exposed for this data type, or null if there are no properties.
+| [PropertyDescriptorCollection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertydescriptorcollection?view=net-8.0) | A PropertyDescriptorCollection with the properties that are exposed for this data type, or null if there are no properties.
 
 ### bool GetPropertiesSupported([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
@@ -273,7 +273,7 @@ StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
 
 | Type | Description
 | --- | ---
-| [StandardValuesCollection](https://learn.microsoft.com/en-us/dotnet/api/) | A StandardValuesCollection that holds a standard set of valid values, or null if the data type does not support a standard set of values.
+| [StandardValuesCollection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter.standardvaluescollection.item?view=net-8.0) | A StandardValuesCollection that holds a standard set of valid values, or null if the data type does not support a standard set of values.
 
 ### bool GetStandardValuesExclusive([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 

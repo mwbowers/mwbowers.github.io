@@ -41,4 +41,4 @@ AltEncoding GetEncoding(string name)
 
 | Type | Description
 | --- | ---
-| [AltEncoding](/reference/data-gate-data-link/alt-encoding.html) | An instance of AltEncoding representing the desiredencoding translation facility.
+| [AltEncoding](/reference/datagate/data-gate-data-link/alt-encoding.html) | An instance of AltEncoding representing the desiredencoding translation facility.

@@ -13,7 +13,7 @@ never return null values.
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DataGateCredential](/reference/data-gate-providers/data-gate-credential.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [DataGateCredential](/reference/datagate/data-gate-providers/data-gate-credential.html)
 <br>
 <br>
 
@@ -21,10 +21,10 @@ never return null values.
 
 | Name | Description |
 | --- | --- |
-| [UserPasswordCredential](#userpasswordcredential-string-string-passwordtype-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](https://learn.microsoft.com/en-us/dotnet/api/)) | Construct a UserPasswordCredential instance from component parts.Note that the disposable password parameter reference is deep-copied, so the caller should dispose it.
+| [UserPasswordCredential](#userpasswordcredential-string-string-passwordtype-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/data-gate-common/password-type.html)) | Construct a UserPasswordCredential instance from component parts.Note that the disposable password parameter reference is deep-copied, so the caller should dispose it.
 | [UserPasswordCredential()](#userpasswordcredential-) | Construct a UserPasswordCredential with default values.  The Userand Password properties are initialized to empty values.  You mustset these properties to valid values before using this to attemptto authenticate a database connection.
 
-### UserPasswordCredential([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](https://learn.microsoft.com/en-us/dotnet/api/))
+### UserPasswordCredential([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/data-gate-common/password-type.html))
 
 Construct a UserPasswordCredential instance from component parts.Note that the disposable password parameter reference is deep-copied, so the caller should dispose it.
 
@@ -38,7 +38,7 @@ UserPasswordCredential(String, String, PasswordType)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | password | 
-| [PasswordType](https://learn.microsoft.com/en-us/dotnet/api/) | passwordType | 
+| [PasswordType](/reference/datagate/data-gate-common/password-type.html) | passwordType | 
 
 ### UserPasswordCredential()
 
@@ -53,7 +53,7 @@ UserPasswordCredential()
 | Type | Name | Description
 | --- | --- | --- 
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Password | Password information as a clear-text value. |
-| [PasswordType](https://learn.microsoft.com/en-us/dotnet/api/) | PasswordType | Gets or sets the type of the password associated with the UserPasswordCredential. |
+| [PasswordType](/reference/datagate/data-gate-common/password-type.html) | PasswordType | Gets or sets the type of the password associated with the UserPasswordCredential. |
 |  | StarDomain | Gets a UserPasswordCredential instance representing a domain user. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | User | Gets or sets a user name associated with the logon credential.Note that setting this to the special value "*DOMAIN" has the sideeffect of erasing the Password property value. |
 
@@ -62,7 +62,7 @@ UserPasswordCredential()
 | Signature | Description |
 | --- | --- |
 | [Clone()](#clone-) | Creates a new object that is a copy of the current UserPasswordCredential instance.
-| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
+| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
 | [GetHashCodeInternal()](#gethashcodeinternal-) | Serves as the default hash function.
 
 ### object Clone()
@@ -73,7 +73,7 @@ Creates a new object that is a copy of the current UserPasswordCredential instan
 object Clone()
 ```
 
-### bool Equals([IDataGateCredential other](/reference/data-gate-providers/i-data-gate-credential.html))
+### bool Equals([IDataGateCredential other](/reference/datagate/data-gate-providers/i-data-gate-credential.html))
 
 Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
 
@@ -85,7 +85,7 @@ bool Equals(IDataGateCredential other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | other | 
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | other | 
 
 #### Returns
 

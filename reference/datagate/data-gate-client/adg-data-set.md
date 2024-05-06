@@ -49,8 +49,8 @@ AdgDataSet(String)
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Formats | Gets or sets the number of formats in the AdgDataSet. |
 |  | IntKeys | Gets the collection of integer keys in the dictionary. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsReadOnly | Gets a value indicating whether the dictionary is read-only. |
-| [AdgTable](/reference/data-gate-client/adg-table.html) | Item | Table accesor. |
-| [AdgTable](/reference/data-gate-client/adg-table.html) | Item | Table accesor. |
+| [AdgTable](/reference/datagate/data-gate-client/adg-table.html) | Item | Table accesor. |
+| [AdgTable](/reference/datagate/data-gate-client/adg-table.html) | Item | Table accesor. |
 |  | StringKeys | Gets the collection of string keys in the dictionary. |
 | [ICollection\<AdgTable\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection) | Values | Gets the collection of AdgTable values in the dictionary. |
 
@@ -78,11 +78,11 @@ AdgDataSet(String)
 | [SetActive](#setactive-string-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the active DataRow in the AdgTable for the specified format and row number.
 | [NewKeyTable](#newkeytable-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new instance of AdgKeyTable for the specified format.
 | [NewKeyTable](#newkeytable-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of AdgKeyTable for the specified format.
-| [TryGetValue](#trygetvalue-string-adgtable-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgTable](/reference/data-gate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
+| [TryGetValue](#trygetvalue-string-adgtable-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgTable](/reference/datagate/data-gate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
 | [ContainsKey](#containskey-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Determines whether the dictionary contains an element with the specified key.
-| [TryGetValue](#trygetvalue-int32-adgtable-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgTable](/reference/data-gate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
-| [Contains](#contains-keyvaluepair-adgtable-)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/data-gate-client/adg-table.html)) | Determines whether the dictionary contains a specific key-value pair.
-| [CopyTo](#copyto-keyvaluepair-adgtable-int32-)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/data-gate-client/adg-table.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies the elements of the dictionary to an array, starting at a particular array index.
+| [TryGetValue](#trygetvalue-int32-adgtable-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgTable](/reference/datagate/data-gate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
+| [Contains](#contains-keyvaluepair-adgtable-)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/datagate/data-gate-client/adg-table.html)) | Determines whether the dictionary contains a specific key-value pair.
+| [CopyTo](#copyto-keyvaluepair-adgtable-int32-)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/datagate/data-gate-client/adg-table.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies the elements of the dictionary to an array, starting at a particular array index.
 | [GetEnumerator()](#getenumerator-) | Returns an enumerator that iterates through the key-value pairs in the dictionary.
 
 ### void InitializeCommon()
@@ -390,7 +390,7 @@ AdgKeyTable NewKeyTable(int iFormat)
 
 | Type | Description
 | --- | ---
-| [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | The newly created AdgKeyTable.
+| [AdgKeyTable](/reference/datagate/data-gate-client/adg-key-table.html) | The newly created AdgKeyTable.
 
 ### AdgKeyTable NewKeyTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -410,9 +410,9 @@ AdgKeyTable NewKeyTable(int iFormat)
 
 | Type | Description
 | --- | ---
-| [AdgKeyTable](/reference/data-gate-client/adg-key-table.html) | The newly created AdgKeyTable.
+| [AdgKeyTable](/reference/datagate/data-gate-client/adg-key-table.html) | The newly created AdgKeyTable.
 
-### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgTable& value](/reference/data-gate-client/adg-table.html))
+### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgTable& value](/reference/datagate/data-gate-client/adg-table.html))
 
 Tries to retrieve the value associated with the specified key.
 
@@ -425,7 +425,7 @@ bool TryGetValue(string key, AdgTable& value)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
-| [AdgTable&](/reference/data-gate-client/adg-table.html) | value | 
+| [AdgTable&](/reference/datagate/data-gate-client/adg-table.html) | value | 
 
 #### Returns
 
@@ -453,7 +453,7 @@ bool ContainsKey(int key)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the dictionary contains an element with the key; otherwise, false.
 
-### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgTable& value](/reference/data-gate-client/adg-table.html))
+### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgTable& value](/reference/datagate/data-gate-client/adg-table.html))
 
 Tries to retrieve the value associated with the specified key.
 
@@ -466,7 +466,7 @@ bool TryGetValue(string key, AdgTable& value)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
-| [AdgTable&](/reference/data-gate-client/adg-table.html) | value | 
+| [AdgTable&](/reference/datagate/data-gate-client/adg-table.html) | value | 
 
 #### Returns
 

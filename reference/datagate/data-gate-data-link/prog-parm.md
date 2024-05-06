@@ -18,10 +18,10 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParm](#progparm-progparmtype-datadirection-)([ProgParmType](/reference/data-gate-data-link/prog-parm-type.html), [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes a new instance of the  class from an XML reader.
-| [ProgParm](#progparm-structuretype-datadirection-)([StructureType](/reference/data-gate-data-link/structure-type.html), [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes a new instance of the  class with a specified data direction.
+| [ProgParm](#progparm-progparmtype-datadirection-)([ProgParmType](/reference/datagate/data-gate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/data-gate-common/data-direction.html)) | Initializes a new instance of the  class from an XML reader.
+| [ProgParm](#progparm-structuretype-datadirection-)([StructureType](/reference/datagate/data-gate-data-link/structure-type.html), [DataDirection](/reference/datagate/data-gate-common/data-direction.html)) | Initializes a new instance of the  class with a specified data direction.
 
-### ProgParm([ProgParmType](/reference/data-gate-data-link/prog-parm-type.html), [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/))
+### ProgParm([ProgParmType](/reference/datagate/data-gate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/data-gate-common/data-direction.html))
 
 Initializes a new instance of the  class from an XML reader.
 
@@ -29,7 +29,7 @@ Initializes a new instance of the  class from an XML reader.
 ProgParm(ProgParmType, DataDirection)
 ```
 
-### ProgParm([StructureType](/reference/data-gate-data-link/structure-type.html), [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/))
+### ProgParm([StructureType](/reference/datagate/data-gate-data-link/structure-type.html), [DataDirection](/reference/datagate/data-gate-common/data-direction.html))
 
 Initializes a new instance of the  class with a specified data direction.
 
@@ -41,7 +41,7 @@ ProgParm(StructureType, DataDirection)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataDirection](https://learn.microsoft.com/en-us/dotnet/api/) | Direction | Gets or sets the data direction of the program parameter. |
+| [DataDirection](/reference/datagate/data-gate-common/data-direction.html) | Direction | Gets or sets the data direction of the program parameter. |
 |  | m_data | The data of the program parameter. |
 |  | m_meta | The metadata of the program parameter. |
 

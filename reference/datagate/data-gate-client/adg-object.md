@@ -7,7 +7,7 @@ Root for all ASNA DataGate objects.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [ConnectionHandler](https://learn.microsoft.com/en-us/dotnet/api/) --> [AutoCloseConnectionHandler](/reference/data-gate-client/auto-close-connection-handler.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [ConnectionHandler](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.connections.connectionhandler?view=aspnetcore-8.0) --> [AutoCloseConnectionHandler](/reference/datagate/data-gate-client/auto-close-connection-handler.html)
 <br>
 <br>
 

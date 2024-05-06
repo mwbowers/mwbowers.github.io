@@ -15,9 +15,9 @@ Repair catalog.
 
 | Signature | Description |
 | --- | --- |
-| [Repair](#repair-sourceprofile-repairoptions-adgobserver-)([SourceProfile](/reference/data-gate-providers/source-profile.html), [RepairOptions](https://learn.microsoft.com/en-us/dotnet/api/), [AdgObserver](/reference/data-gate-client/adg-observer.html)) | Repair the catalog.
+| [Repair](#repair-sourceprofile-repairoptions-adgobserver-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html), [RepairOptions](/reference/datagate/data-gate-common/repair-options.html), [AdgObserver](/reference/datagate/data-gate-client/adg-observer.html)) | Repair the catalog.
 
-### void Repair([SourceProfile sourceProfile](/reference/data-gate-providers/source-profile.html), [RepairOptions repairOptions](https://learn.microsoft.com/en-us/dotnet/api/), [AdgObserver observer](/reference/data-gate-client/adg-observer.html))
+### void Repair([SourceProfile sourceProfile](/reference/datagate/data-gate-providers/source-profile.html), [RepairOptions repairOptions](/reference/datagate/data-gate-common/repair-options.html), [AdgObserver observer](/reference/datagate/data-gate-client/adg-observer.html))
 
 Repair the catalog.
 
@@ -29,6 +29,6 @@ void Repair(SourceProfile sourceProfile, RepairOptions repairOptions, AdgObserve
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | sourceProfile | 
-| [RepairOptions](https://learn.microsoft.com/en-us/dotnet/api/) | repairOptions | 
-| [AdgObserver](/reference/data-gate-client/adg-observer.html) | observer | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | sourceProfile | 
+| [RepairOptions](/reference/datagate/data-gate-common/repair-options.html) | repairOptions | 
+| [AdgObserver](/reference/datagate/data-gate-client/adg-observer.html) | observer | 

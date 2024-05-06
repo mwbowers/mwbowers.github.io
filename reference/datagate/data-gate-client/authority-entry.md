@@ -20,8 +20,8 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 | --- | --- |
 | [AuthorityEntry()](#authorityentry-) | Initializes authority for current user.
 | [AuthorityEntry](#authorityentry-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes authority for current user.
-| [AuthorityEntry](#authorityentry-string-authoritytypes-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes authority for a named user.
-| [AuthorityEntry](#authorityentry-string-authoritytypes-boolean-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes authority for a named user specifying authority type and group membership.
+| [AuthorityEntry](#authorityentry-string-authoritytypes-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html)) | Initializes authority for a named user.
+| [AuthorityEntry](#authorityentry-string-authoritytypes-boolean-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes authority for a named user specifying authority type and group membership.
 
 ### AuthorityEntry()
 
@@ -45,7 +45,7 @@ AuthorityEntry(String)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
 
-### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/))
+### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html))
 
 Initializes authority for a named user.
 
@@ -58,9 +58,9 @@ AuthorityEntry(String, AuthorityTypes)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
-| [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/) | authorityType | 
+| [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html) | authorityType | 
 
-### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Initializes authority for a named user specifying authority type and group membership.
 
@@ -73,13 +73,13 @@ AuthorityEntry(String, AuthorityTypes, Boolean)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
-| [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/) | authorityType | 
+| [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html) | authorityType | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isGroupAccount | 
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [AuthorityTypes](https://learn.microsoft.com/en-us/dotnet/api/) | AuthorityType | Gets or sets the authority type. |
+| [AuthorityTypes](/reference/datagate/data-gate-common/authority-types.html) | AuthorityType | Gets or sets the authority type. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGroupAccount | Gets or sets a value indicating whether the user account is a group account. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Username | Gets or sets the user name. |

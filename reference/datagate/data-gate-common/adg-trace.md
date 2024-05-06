@@ -25,7 +25,7 @@ ASNA DataGate Tracing class.
 | Signature | Description |
 | --- | --- |
 | [GetLogConfigs()](#getlogconfigs-) | Gets the trace options.
-| [IsTracing](#istracing-traceid-)([TraceID](https://learn.microsoft.com/en-us/dotnet/api/)) | Determines whether the specified trace ID is being traced.
+| [IsTracing](#istracing-traceid-)([TraceID](/reference/datagate/data-gate-common/trace-id.html)) | Determines whether the specified trace ID is being traced.
 
 ### TraceOption[] GetLogConfigs()
 
@@ -35,7 +35,7 @@ Gets the trace options.
 TraceOption[] GetLogConfigs()
 ```
 
-### bool IsTracing([TraceID id](https://learn.microsoft.com/en-us/dotnet/api/))
+### bool IsTracing([TraceID id](/reference/datagate/data-gate-common/trace-id.html))
 
 Determines whether the specified trace ID is being traced.
 
@@ -47,7 +47,7 @@ bool IsTracing(TraceID id)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TraceID](https://learn.microsoft.com/en-us/dotnet/api/) | id | 
+| [TraceID](/reference/datagate/data-gate-common/trace-id.html) | id | 
 
 #### Returns
 

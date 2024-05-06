@@ -27,7 +27,7 @@ This interface should be implemented by classes that need to monitor a DataGate 
 | [IEnumerable\<ILock\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentLocks | Get all locks created by this client |
 | [IEnumerable\<IOpenFile\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentOpenFiles | Get all files opened by this client |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Job | Get job associated with this client |
-| [ILibraryList](/reference/data-gate-client/i-library-list.html) | LibraryList | Get Library List in use by the client |
+| [ILibraryList](/reference/datagate/data-gate-client/i-library-list.html) | LibraryList | Get Library List in use by the client |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Number | Gets the number of the client. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Process | Get process running this client |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ServerUser | Get the server user associated with this client |

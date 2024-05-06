@@ -30,8 +30,8 @@ AltEncoding()
 | Type | Name | Description
 | --- | --- | --- 
 | [IEnumerable\<AltEncodingInfo\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | AvailableEncodings | Gets the available encodings. |
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | DecoderDefaultProps | Gets or sets the default decoder properties. |
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | EncoderDefaultProps | Gets or sets the default encoder properties. |
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | DecoderDefaultProps | Gets or sets the default decoder properties. |
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | EncoderDefaultProps | Gets or sets the default encoder properties. |
 
 ## Methods
 
@@ -39,17 +39,17 @@ AltEncoding()
 | --- | --- |
 | [GetAltEncoding](#getaltencoding-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves an alternative encoding by name.
 | [GetAltEncodingInfo()](#getaltencodinginfo-) | Gets the alternative encoding information.
-| [GetAltEncoder](#getaltencoder-itransformproperties-)([ITransformProperties](/reference/data-gate-providers/i-transform-properties.html)) | Gets an alternative encoder with the specified transform properties.
-| [GetAltDecoder](#getaltdecoder-itransformproperties-)([ITransformProperties](/reference/data-gate-providers/i-transform-properties.html)) | Gets an alternative decoder with the specified transform properties.
+| [GetAltEncoder](#getaltencoder-itransformproperties-)([ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html)) | Gets an alternative encoder with the specified transform properties.
+| [GetAltDecoder](#getaltdecoder-itransformproperties-)([ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html)) | Gets an alternative decoder with the specified transform properties.
 | [GetDecoder()](#getdecoder-) | Gets the default decoder.
 | [GetEncoder()](#getencoder-) | Gets the default encoder.
 | [GetDecoderImpl()](#getdecoderimpl-) | Gets the implementation of the alternative decoder.
 | [GetEncoderImpl()](#getencoderimpl-) | Gets the implementation of the alternative encoder.
-| [DictionaryFromITransformProps](#dictionaryfromitransformprops-itransformproperties-)([ITransformProperties](/reference/data-gate-providers/i-transform-properties.html)) | Converts transform properties to a dictionary.
+| [DictionaryFromITransformProps](#dictionaryfromitransformprops-itransformproperties-)([ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html)) | Converts transform properties to a dictionary.
 | [TransformPropertiesFromDictionary](#transformpropertiesfromdictionary-dictionary`2-object-)([Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a dictionary to transform properties.
 | [TransformPropertiesFromStream](#transformpropertiesfromstream-binaryreader-)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | Converts a binary reader to transform properties.
-| [TransformPropertiesToStream](#transformpropertiestostream-itransformproperties-binarywriter-)([ITransformProperties](/reference/data-gate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | Converts transform properties to a binary writer.
-| [Equal](#equal-itransformproperties-itransformproperties-)([ITransformProperties](/reference/data-gate-providers/i-transform-properties.html), [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html)) | Determines whether two transform properties are equal.
+| [TransformPropertiesToStream](#transformpropertiestostream-itransformproperties-binarywriter-)([ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | Converts transform properties to a binary writer.
+| [Equal](#equal-itransformproperties-itransformproperties-)([ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html), [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html)) | Determines whether two transform properties are equal.
 
 ### AltEncoding GetAltEncoding([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -69,7 +69,7 @@ AltEncoding GetAltEncoding(string name)
 
 | Type | Description
 | --- | ---
-| [AltEncoding](/reference/data-gate-data-link/alt-encoding.html) | The alternative encoding.
+| [AltEncoding](/reference/datagate/data-gate-data-link/alt-encoding.html) | The alternative encoding.
 
 ### AltEncodingInfo GetAltEncodingInfo()
 
@@ -79,7 +79,7 @@ Gets the alternative encoding information.
 AltEncodingInfo GetAltEncodingInfo()
 ```
 
-### AltEncoder GetAltEncoder([ITransformProperties encProps](/reference/data-gate-providers/i-transform-properties.html))
+### AltEncoder GetAltEncoder([ITransformProperties encProps](/reference/datagate/data-gate-providers/i-transform-properties.html))
 
 Gets an alternative encoder with the specified transform properties.
 
@@ -91,15 +91,15 @@ AltEncoder GetAltEncoder(ITransformProperties encProps)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | encProps | 
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | encProps | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [AltEncoder](/reference/data-gate-data-link/alt-encoder.html) | The alternative encoder.
+| [AltEncoder](/reference/datagate/data-gate-data-link/alt-encoder.html) | The alternative encoder.
 
-### AltDecoder GetAltDecoder([ITransformProperties decProps](/reference/data-gate-providers/i-transform-properties.html))
+### AltDecoder GetAltDecoder([ITransformProperties decProps](/reference/datagate/data-gate-providers/i-transform-properties.html))
 
 Gets an alternative decoder with the specified transform properties.
 
@@ -111,13 +111,13 @@ AltDecoder GetAltDecoder(ITransformProperties decProps)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | decProps | 
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | decProps | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [AltDecoder](/reference/data-gate-data-link/alt-decoder.html) | The alternative decoder.
+| [AltDecoder](/reference/datagate/data-gate-data-link/alt-decoder.html) | The alternative decoder.
 
 ### Decoder GetDecoder()
 
@@ -151,7 +151,7 @@ Gets the implementation of the alternative encoder.
 AltEncoder GetEncoderImpl()
 ```
 
-### Dictionary<string, object> DictionaryFromITransformProps([ITransformProperties props](/reference/data-gate-providers/i-transform-properties.html))
+### Dictionary<string, object> DictionaryFromITransformProps([ITransformProperties props](/reference/datagate/data-gate-providers/i-transform-properties.html))
 
 Converts transform properties to a dictionary.
 
@@ -163,7 +163,7 @@ Dictionary<string, object> DictionaryFromITransformProps(ITransformProperties pr
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | props | 
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | props | 
 
 #### Returns
 
@@ -197,9 +197,9 @@ ITransformProperties TransformPropertiesFromStream(BinaryReader br)
 
 | Type | Description
 | --- | ---
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | The transform properties.
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | The transform properties.
 
-### void TransformPropertiesToStream([ITransformProperties t](/reference/data-gate-providers/i-transform-properties.html), [BinaryWriter bw](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0))
+### void TransformPropertiesToStream([ITransformProperties t](/reference/datagate/data-gate-providers/i-transform-properties.html), [BinaryWriter bw](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0))
 
 Converts transform properties to a binary writer.
 
@@ -211,10 +211,10 @@ void TransformPropertiesToStream(ITransformProperties t, BinaryWriter bw)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | t | 
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | t | 
 | [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0) | bw | 
 
-### bool Equal([ITransformProperties lhs](/reference/data-gate-providers/i-transform-properties.html), [ITransformProperties rhs](/reference/data-gate-providers/i-transform-properties.html))
+### bool Equal([ITransformProperties lhs](/reference/datagate/data-gate-providers/i-transform-properties.html), [ITransformProperties rhs](/reference/datagate/data-gate-providers/i-transform-properties.html))
 
 Determines whether two transform properties are equal.
 
@@ -226,8 +226,8 @@ bool Equal(ITransformProperties lhs, ITransformProperties rhs)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | lhs | 
-| [ITransformProperties](/reference/data-gate-providers/i-transform-properties.html) | rhs | 
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | lhs | 
+| [ITransformProperties](/reference/datagate/data-gate-providers/i-transform-properties.html) | rhs | 
 
 #### Returns
 

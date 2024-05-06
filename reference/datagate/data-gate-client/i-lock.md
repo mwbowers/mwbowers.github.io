@@ -28,7 +28,7 @@ This interface should be implemented by classes that need to manage a lock.
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ShareNoUpdate | Gets the number of shared no-update locks. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ShareRead | Gets the number of shared read locks. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ShareUpdate | Gets the number of shared update locks. |
-| [AdgSubTypes](https://learn.microsoft.com/en-us/dotnet/api/) | SubType | Gets the path of the lock. |
-| [AdgObjectTypes](https://learn.microsoft.com/en-us/dotnet/api/) | Type | Gets the type of the object that the lock is associated with. |
+| [AdgSubTypes](/reference/datagate/data-gate-common/adg-sub-types.html) | SubType | Gets the path of the lock. |
+| [AdgObjectTypes](/reference/datagate/data-gate-common/adg-object-types.html) | Type | Gets the type of the object that the lock is associated with. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ValidFields | Gets the number of valid fields for the lock. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Waiting | Gets a value indicating whether the lock is waiting. |

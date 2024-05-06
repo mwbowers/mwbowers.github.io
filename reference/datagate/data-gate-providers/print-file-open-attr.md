@@ -7,7 +7,7 @@ Represents a set of attributes for opening a print file.
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) --> [FileOpenAttr](/reference/data-gate-providers/file-open-attr.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) --> [FileOpenAttr](/reference/datagate/data-gate-providers/file-open-attr.html)
 <br>
 <br>
 
@@ -29,7 +29,7 @@ PrintFileOpenAttr()
 
 | Type | Name | Description
 | --- | --- | --- 
-| [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | DevAttr | Gets or sets the device attributes. |
+| [PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html) | DevAttr | Gets or sets the device attributes. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DocumentName | Gets or sets the document name. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormType | Gets or sets the form type. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrintToFileName | Gets or sets the print to file name. |

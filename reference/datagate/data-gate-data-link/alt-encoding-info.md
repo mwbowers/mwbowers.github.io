@@ -15,9 +15,9 @@ Provides information about an alternative encoding.
 
 | Name | Description |
 | --- | --- |
-| [AltEncodingInfo](#altencodinginfo-altencoding-)([AltEncoding](/reference/data-gate-data-link/alt-encoding.html)) | Initializes a new instance of the  class.
+| [AltEncodingInfo](#altencodinginfo-altencoding-)([AltEncoding](/reference/datagate/data-gate-data-link/alt-encoding.html)) | Initializes a new instance of the  class.
 
-### AltEncodingInfo([AltEncoding](/reference/data-gate-data-link/alt-encoding.html))
+### AltEncodingInfo([AltEncoding](/reference/datagate/data-gate-data-link/alt-encoding.html))
 
 Initializes a new instance of the  class.
 

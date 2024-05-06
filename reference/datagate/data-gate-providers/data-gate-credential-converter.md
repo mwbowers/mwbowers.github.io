@@ -16,7 +16,7 @@ Provides a converter for the  interface for JSON serialization and deserializati
 | Signature | Description |
 | --- | --- |
 | [Read](#read-utf8jsonreader-type-jsonserializeroptions-)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads and converts the JSON to type .
-| [Write](#write-utf8jsonwriter-idatagatecredential-jsonserializeroptions-)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a  value to JSON.
+| [Write](#write-utf8jsonwriter-idatagatecredential-jsonserializeroptions-)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a  value to JSON.
 
 ### IDataGateCredential Read([Utf8JsonReader& reader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type typeToConvert](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 
@@ -38,9 +38,9 @@ IDataGateCredential Read(Utf8JsonReader& reader, Type typeToConvert, JsonSeriali
 
 | Type | Description
 | --- | ---
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | A value of type  which represents the deserialized JSON data.
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | A value of type  which represents the deserialized JSON data.
 
-### void Write([Utf8JsonWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [IDataGateCredential value](/reference/data-gate-providers/i-data-gate-credential.html), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
+### void Write([Utf8JsonWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [IDataGateCredential value](/reference/datagate/data-gate-providers/i-data-gate-credential.html), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 
 Writes a  value to JSON.
 
@@ -53,5 +53,5 @@ void Write(Utf8JsonWriter writer, IDataGateCredential value, JsonSerializerOptio
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | 
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | value | 
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | value | 
 | [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | 

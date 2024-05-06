@@ -8,7 +8,7 @@ This class extends the DgDateTimeConverter class.
 **Namespace:** ASNA.DataGate.ADO
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) --> [DateTimeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeconverter?view=net-8.0) --> [DgDateTimeConverterBase](https://learn.microsoft.com/en-us/dotnet/api/) --> [DgDateTimeConverter](https://learn.microsoft.com/en-us/dotnet/api/)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) --> [DateTimeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeconverter?view=net-8.0) --> [DgDateTimeConverterBase](/reference/datagate/data-gate-common/dg-date-time-converter-base.html) --> [DgDateTimeConverter](/reference/datagate/data-gate-common/dg-date-time-converter.html)
 <br>
 <br>
 
@@ -16,9 +16,9 @@ This class extends the DgDateTimeConverter class.
 
 | Name | Description |
 | --- | --- |
-| [SqlTimeConverter](#sqltimeconverter-datetimeformat-)([DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/)) | Initializes a new instance of the SqlTimeConverter class.
+| [SqlTimeConverter](#sqltimeconverter-datetimeformat-)([DateTimeFormat](/reference/datagate/data-gate-common/date-time-format.html)) | Initializes a new instance of the SqlTimeConverter class.
 
-### SqlTimeConverter([DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/))
+### SqlTimeConverter([DateTimeFormat](/reference/datagate/data-gate-common/date-time-format.html))
 
 Initializes a new instance of the SqlTimeConverter class.
 
@@ -30,7 +30,7 @@ SqlTimeConverter(DateTimeFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/) | dtFmt | 
+| [DateTimeFormat](/reference/datagate/data-gate-common/date-time-format.html) | dtFmt | 
 
 ## Methods
 

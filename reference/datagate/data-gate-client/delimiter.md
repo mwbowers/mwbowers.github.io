@@ -45,32 +45,32 @@ Delimiter(Char)
 | Type | Name | Description
 | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsStarNone | Determines in the delimiter is *NONE. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | NewLine | Constant new line delimiter |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | None | Get new Delimiter instance that represents no delimiter |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarAll | Constant *ALL (default) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarCR | Constant *CR (carriage-return) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarCRLF | Constant *CRLF (carriage-return plus line-feed) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StarLFCR | Constant *LFCR (line-feed plus carriage-return) delimiter. |
-| [Delimiter](/reference/data-gate-client/delimiter.html) | StartLF | Constant *LF (line-feed) delimiter. |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | NewLine | Constant new line delimiter |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | None | Get new Delimiter instance that represents no delimiter |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | StarAll | Constant *ALL (default) delimiter. |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | StarCR | Constant *CR (carriage-return) delimiter. |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | StarCRLF | Constant *CRLF (carriage-return plus line-feed) delimiter. |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | StarLFCR | Constant *LFCR (line-feed plus carriage-return) delimiter. |
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | StartLF | Constant *LF (line-feed) delimiter. |
 | [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | Value | Gets or sets the value of the delimiter. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [op_Equality](#op_equality-delimiter-delimiter-)([Delimiter](/reference/data-gate-client/delimiter.html), [Delimiter](/reference/data-gate-client/delimiter.html)) | Compares for equality.
-| [op_Inequality](#op_inequality-delimiter-delimiter-)([Delimiter](/reference/data-gate-client/delimiter.html), [Delimiter](/reference/data-gate-client/delimiter.html)) | Compares for inequality.
+| [op_Equality](#op_equality-delimiter-delimiter-)([Delimiter](/reference/datagate/data-gate-client/delimiter.html), [Delimiter](/reference/datagate/data-gate-client/delimiter.html)) | Compares for equality.
+| [op_Inequality](#op_inequality-delimiter-delimiter-)([Delimiter](/reference/datagate/data-gate-client/delimiter.html), [Delimiter](/reference/datagate/data-gate-client/delimiter.html)) | Compares for inequality.
 | [ToChar()](#tochar-) | Convert the Delimiter instance to a char value.
-| [op_Implicit](#op_implicit-delimiter-)([Delimiter](/reference/data-gate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a char value.
+| [op_Implicit](#op_implicit-delimiter-)([Delimiter](/reference/datagate/data-gate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a char value.
 | [FromChar](#fromchar-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance from a char value.
 | [op_Implicit](#op_implicit-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance from a char value.
-| [op_Implicit](#op_implicit-delimiter-)([Delimiter](/reference/data-gate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a string value.
+| [op_Implicit](#op_implicit-delimiter-)([Delimiter](/reference/datagate/data-gate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a string value.
 | [ClearValue()](#clearvalue-) | Clears the value of the delimiter.
 | [GetHashCode()](#gethashcode-) | Serves as the default delimiter hash function.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines if the current Delimiter instance is equal to the specified object.
 | [ToString()](#tostring-) | Returns a string representation of the Delimiter instance.
 
-### bool op_Equality([Delimiter lval](/reference/data-gate-client/delimiter.html), [Delimiter rval](/reference/data-gate-client/delimiter.html))
+### bool op_Equality([Delimiter lval](/reference/datagate/data-gate-client/delimiter.html), [Delimiter rval](/reference/datagate/data-gate-client/delimiter.html))
 
 Compares for equality.
 
@@ -82,8 +82,8 @@ bool op_Equality(Delimiter lval, Delimiter rval)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/data-gate-client/delimiter.html) | lval | 
-| [Delimiter](/reference/data-gate-client/delimiter.html) | rval | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | lval | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | rval | 
 
 #### Returns
 
@@ -91,7 +91,7 @@ bool op_Equality(Delimiter lval, Delimiter rval)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if instances are equal, False otherwise.
 
-### bool op_Inequality([Delimiter lval](/reference/data-gate-client/delimiter.html), [Delimiter rval](/reference/data-gate-client/delimiter.html))
+### bool op_Inequality([Delimiter lval](/reference/datagate/data-gate-client/delimiter.html), [Delimiter rval](/reference/datagate/data-gate-client/delimiter.html))
 
 Compares for inequality.
 
@@ -103,8 +103,8 @@ bool op_Inequality(Delimiter lval, Delimiter rval)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/data-gate-client/delimiter.html) | lval | 
-| [Delimiter](/reference/data-gate-client/delimiter.html) | rval | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | lval | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | rval | 
 
 #### Returns
 
@@ -120,7 +120,7 @@ Convert the Delimiter instance to a char value.
 char ToChar()
 ```
 
-### char op_Implicit([Delimiter delim](/reference/data-gate-client/delimiter.html))
+### char op_Implicit([Delimiter delim](/reference/datagate/data-gate-client/delimiter.html))
 
 Implicitly converts a Delimiter instance to a char value.
 
@@ -132,7 +132,7 @@ char op_Implicit(Delimiter delim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/data-gate-client/delimiter.html) | delim | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | delim | 
 
 #### Returns
 
@@ -158,9 +158,9 @@ Delimiter FromChar(char ch)
 
 | Type | Description
 | --- | ---
-| [Delimiter](/reference/data-gate-client/delimiter.html) | A new Delimiter instance.
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | A new Delimiter instance.
 
-### char op_Implicit([Delimiter delim](/reference/data-gate-client/delimiter.html))
+### char op_Implicit([Delimiter delim](/reference/datagate/data-gate-client/delimiter.html))
 
 Create a new Delimiter instance from a char value.
 
@@ -172,7 +172,7 @@ char op_Implicit(Delimiter delim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/data-gate-client/delimiter.html) | ch | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | ch | 
 
 #### Returns
 
@@ -180,7 +180,7 @@ char op_Implicit(Delimiter delim)
 | --- | ---
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | A new Delimiter instance.
 
-### char op_Implicit([Delimiter delim](/reference/data-gate-client/delimiter.html))
+### char op_Implicit([Delimiter delim](/reference/datagate/data-gate-client/delimiter.html))
 
 Implicitly converts a Delimiter instance to a string value.
 
@@ -192,7 +192,7 @@ char op_Implicit(Delimiter delim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/data-gate-client/delimiter.html) | delim | 
+| [Delimiter](/reference/datagate/data-gate-client/delimiter.html) | delim | 
 
 #### Returns
 

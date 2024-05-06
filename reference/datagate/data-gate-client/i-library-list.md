@@ -33,12 +33,12 @@ This interface should be implemented by classes that need to manage a library li
 
 | Signature | Description |
 | --- | --- |
-| [EnumerateCurrentSystem](#enumeratecurrentsystem-adgenumerator-)([AdgEnumerator](/reference/data-gate-client/adg-enumerator.html)) | Enumerates the current system libraries.
-| [EnumerateCurrentUser](#enumeratecurrentuser-adgenumerator-)([AdgEnumerator](/reference/data-gate-client/adg-enumerator.html)) | Enumerates the current user libraries.
-| [AddEntry](#addentry-string-liblposition-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/data-gate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at the specified position.
+| [EnumerateCurrentSystem](#enumeratecurrentsystem-adgenumerator-)([AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html)) | Enumerates the current system libraries.
+| [EnumerateCurrentUser](#enumeratecurrentuser-adgenumerator-)([AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html)) | Enumerates the current user libraries.
+| [AddEntry](#addentry-string-liblposition-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/data-gate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at the specified position.
 | [RemoveEntry](#removeentry-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the specified library from the "user" portion of the library list. (RMVLIBLE)
 
-### void EnumerateCurrentSystem([AdgEnumerator enumerator](/reference/data-gate-client/adg-enumerator.html))
+### void EnumerateCurrentSystem([AdgEnumerator enumerator](/reference/datagate/data-gate-client/adg-enumerator.html))
 
 Enumerates the current system libraries.
 
@@ -50,9 +50,9 @@ void EnumerateCurrentSystem(AdgEnumerator enumerator)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/data-gate-client/adg-enumerator.html) | enumerator | 
+| [AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html) | enumerator | 
 
-### void EnumerateCurrentUser([AdgEnumerator enumerator](/reference/data-gate-client/adg-enumerator.html))
+### void EnumerateCurrentUser([AdgEnumerator enumerator](/reference/datagate/data-gate-client/adg-enumerator.html))
 
 Enumerates the current user libraries.
 
@@ -64,9 +64,9 @@ void EnumerateCurrentUser(AdgEnumerator enumerator)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/data-gate-client/adg-enumerator.html) | enumerator | 
+| [AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html) | enumerator | 
 
-### void AddEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [LiblPosition pos](/reference/data-gate-client/libl-position.html), [string refLib](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### void AddEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [LiblPosition pos](/reference/datagate/data-gate-client/libl-position.html), [string refLib](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Adds a library to the library list at the specified position.
 
@@ -79,7 +79,7 @@ void AddEntry(string path, LiblPosition pos, string refLib)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
-| [LiblPosition](/reference/data-gate-client/libl-position.html) | pos | 
+| [LiblPosition](/reference/datagate/data-gate-client/libl-position.html) | pos | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | refLib | 
 
 ### void RemoveEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))

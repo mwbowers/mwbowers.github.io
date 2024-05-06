@@ -15,9 +15,9 @@ Represents a set of DataGate credentials.
 
 | Name | Description |
 | --- | --- |
-| [DataGateCredential](#datagatecredential-credentialtype-)([CredentialType](/reference/data-gate-providers/credential-type.html)) | Initializes a new instance of the DataGateCredential class with the specified credential type.
+| [DataGateCredential](#datagatecredential-credentialtype-)([CredentialType](/reference/datagate/data-gate-providers/credential-type.html)) | Initializes a new instance of the DataGateCredential class with the specified credential type.
 
-### DataGateCredential([CredentialType](/reference/data-gate-providers/credential-type.html))
+### DataGateCredential([CredentialType](/reference/datagate/data-gate-providers/credential-type.html))
 
 Initializes a new instance of the DataGateCredential class with the specified credential type.
 
@@ -29,13 +29,13 @@ DataGateCredential(CredentialType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [CredentialType](/reference/data-gate-providers/credential-type.html) | type | 
+| [CredentialType](/reference/datagate/data-gate-providers/credential-type.html) | type | 
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [CredentialType](/reference/data-gate-providers/credential-type.html) | CredentialType | Gets the type of the credentials. |
+| [CredentialType](/reference/datagate/data-gate-providers/credential-type.html) | CredentialType | Gets the type of the credentials. |
 
 ## Methods
 
@@ -45,7 +45,7 @@ DataGateCredential(CredentialType)
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.
 | [GetHashCode()](#gethashcode-) | Returns a hash code for the current object.
 | [GetHashCodeInternal()](#gethashcodeinternal-) | When overridden in a derived class, returns a hash code for the current object.
-| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current object.
+| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current object.
 
 ### object Clone()
 

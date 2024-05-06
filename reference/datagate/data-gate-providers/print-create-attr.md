@@ -30,7 +30,7 @@ PrintCreateAttr()
 | Type | Name | Description
 | --- | --- | --- 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CheckFormatLevels | Gets or sets a value indicating whether to check format levels. |
-| [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | DevAttr | Gets or sets the device attributes. |
+| [PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html) | DevAttr | Gets or sets the device attributes. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DocumentName | Gets or sets the document name. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ProcessMacros | Gets or sets a value indicating whether to process macros. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Prompt | Gets or sets a value indicating whether to prompt. |

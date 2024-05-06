@@ -26,8 +26,8 @@ the type of dependency, and the path of the dependent object.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [AdgObjectTypes](https://learn.microsoft.com/en-us/dotnet/api/) | AdgObjectType | Gets the type of the dependent object. |
-| [DependentTypes](https://learn.microsoft.com/en-us/dotnet/api/) | DependentType | Gets the type of the dependent object. |
+| [AdgObjectTypes](/reference/datagate/data-gate-common/adg-object-types.html) | AdgObjectType | Gets the type of the dependent object. |
+| [DependentTypes](/reference/datagate/data-gate-common/dependent-types.html) | DependentType | Gets the type of the dependent object. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PathName | Gets or sets the path name of the dependent object. |
 
 ## Methods
@@ -35,7 +35,7 @@ the type of dependency, and the path of the dependent object.
 | Signature | Description |
 | --- | --- |
 | [ToString()](#tostring-) | Overrides the ToString() method to return the PathName property.
-| [Equals](#equals-dependent-)([Dependent](/reference/data-gate-client/dependent.html)) | 
+| [Equals](#equals-dependent-)([Dependent](/reference/datagate/data-gate-client/dependent.html)) | 
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified dependent object is equal to the current dependent object.
 | [GetHashCode()](#gethashcode-) | Overrides the GetHashCode() method to calculate the hash code for the current dependent object.
 
@@ -47,7 +47,7 @@ Overrides the ToString() method to return the PathName property.
 string ToString()
 ```
 
-### bool Equals([Dependent other](/reference/data-gate-client/dependent.html))
+### bool Equals([Dependent other](/reference/datagate/data-gate-client/dependent.html))
 
 
 
@@ -59,7 +59,7 @@ bool Equals(Dependent other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Dependent](/reference/data-gate-client/dependent.html) | other | 
+| [Dependent](/reference/datagate/data-gate-client/dependent.html) | other | 
 
 #### Returns
 
@@ -67,7 +67,7 @@ bool Equals(Dependent other)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
 
-### bool Equals([Dependent other](/reference/data-gate-client/dependent.html))
+### bool Equals([Dependent other](/reference/datagate/data-gate-client/dependent.html))
 
 Determines whether the specified dependent object is equal to the current dependent object.
 
@@ -79,7 +79,7 @@ bool Equals(Dependent other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Dependent](/reference/data-gate-client/dependent.html) | obj | 
+| [Dependent](/reference/datagate/data-gate-client/dependent.html) | obj | 
 
 #### Returns
 

@@ -33,7 +33,7 @@ This interface should be implemented by classes that represent a DataGate member
 | Signature | Description |
 | --- | --- |
 | [Clear()](#clear-) | Clears the member.
-| [Initialize](#initialize-initmemberoptions-int64-)([InitMemberOptions](/reference/data-gate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with the specified options and number of records.
+| [Initialize](#initialize-initmemberoptions-int64-)([InitMemberOptions](/reference/datagate/data-gate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with the specified options and number of records.
 
 ### void Clear()
 
@@ -43,7 +43,7 @@ Clears the member.
 void Clear()
 ```
 
-### void Initialize([InitMemberOptions Options](/reference/data-gate-client/init-member-options.html), [long Records](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void Initialize([InitMemberOptions Options](/reference/datagate/data-gate-client/init-member-options.html), [long Records](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Initializes the member with the specified options and number of records.
 
@@ -55,5 +55,5 @@ void Initialize(InitMemberOptions Options, long Records)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [InitMemberOptions](/reference/data-gate-client/init-member-options.html) | Options | 
+| [InitMemberOptions](/reference/datagate/data-gate-client/init-member-options.html) | Options | 
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | Records | 

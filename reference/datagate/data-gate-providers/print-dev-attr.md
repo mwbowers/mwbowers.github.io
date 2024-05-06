@@ -48,7 +48,7 @@ PrintDevAttr()
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | LeftMargin | Gets or sets the LeftMargin attribute. |
 |  | LeftMarginKey | Gets the key for the LeftMargin attribute. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the Length attribute. |
-| [PaperOrientation](https://learn.microsoft.com/en-us/dotnet/api/system.printing.pageorientation?view=windowsdesktop-8.0) | Orientation | Gets or sets the Orientation attribute. |
+| [PaperOrientation](/reference/datagate/data-gate-common/paper-orientation.html) | Orientation | Gets or sets the Orientation attribute. |
 |  | OrientationKey | Gets the key for the Orientation attribute. |
 |  | PaperLengthKey | Gets the key for the PaperLength attribute. |
 |  | PaperSizeKey | Gets the key for the PaperSize attribute. |
@@ -62,7 +62,7 @@ PrintDevAttr()
 | [PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-8.0) | Size | Gets or sets the Size attribute. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | TopMargin | Gets or sets the TopMargin attribute. |
 |  | TopMarginKey | Gets the key for the TopMargin attribute. |
-| [PrintTrueType](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printersettings?view=dotnet-plat-ext-8.0) | TTOption | Gets or sets the TTOption attribute. |
+| [PrintTrueType](/reference/datagate/data-gate-common/print-true-type.html) | TTOption | Gets or sets the TTOption attribute. |
 |  | TTOptionKey | Gets the key for the TTOption attribute. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Width | Gets or sets the Width attribute. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | YResolution | Gets or sets the YResolution attribute. |

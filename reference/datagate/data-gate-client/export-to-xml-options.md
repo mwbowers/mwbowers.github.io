@@ -7,7 +7,7 @@ Represents a set of options for exporting data to XML.
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [ExportOptions](/reference/data-gate-client/export-options.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [ExportOptions](/reference/datagate/data-gate-client/export-options.html)
 <br>
 <br>
 
@@ -15,12 +15,12 @@ Represents a set of options for exporting data to XML.
 
 | Name | Description |
 | --- | --- |
-| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-)([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html)) | Initializes a new instance of the ExportToXmlOptions class with the specified source, target, sequence and sequence.
-| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-boolean-)([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ExportToXmlOptions class with the specified source, target, sequence and options.
-| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-boolean-boolean-)([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ExportToXmlOptions class with the specified source, target, and options.
-| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-boolean-boolean-string-idictionary-string-keyusages-)([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDictionary\<String, KeyUsages\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)) | 
+| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-)([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html)) | Initializes a new instance of the ExportToXmlOptions class with the specified source, target, sequence and sequence.
+| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-boolean-)([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ExportToXmlOptions class with the specified source, target, sequence and options.
+| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-boolean-boolean-)([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ExportToXmlOptions class with the specified source, target, and options.
+| [ExportToXmlOptions](#exporttoxmloptions-imember-string-exportaccessmode-boolean-boolean-string-idictionary-string-keyusages-)([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDictionary\<String, KeyUsages\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)) | 
 
-### ExportToXmlOptions([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html))
+### ExportToXmlOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html))
 
 Initializes a new instance of the ExportToXmlOptions class with the specified source, target, sequence and sequence.
 
@@ -32,11 +32,11 @@ ExportToXmlOptions(IMember, String, ExportAccessMode)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/data-gate-client/i-member.html) | src | 
+| [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
-| [ExportAccessMode](/reference/data-gate-client/export-access-mode.html) | seq | 
+| [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
 
-### ExportToXmlOptions([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ExportToXmlOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Initializes a new instance of the ExportToXmlOptions class with the specified source, target, sequence and options.
 
@@ -48,12 +48,12 @@ ExportToXmlOptions(IMember, String, ExportAccessMode, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/data-gate-client/i-member.html) | src | 
+| [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
-| [ExportAccessMode](/reference/data-gate-client/export-access-mode.html) | seq | 
+| [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bFieldsAsElements | 
 
-### ExportToXmlOptions([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### ExportToXmlOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Initializes a new instance of the ExportToXmlOptions class with the specified source, target, and options.
 
@@ -65,13 +65,13 @@ ExportToXmlOptions(IMember, String, ExportAccessMode, Boolean, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/data-gate-client/i-member.html) | src | 
+| [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
-| [ExportAccessMode](/reference/data-gate-client/export-access-mode.html) | seq | 
+| [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bFieldsAsElements | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSaveSchema | 
 
-### ExportToXmlOptions([IMember](/reference/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDictionary\<String, KeyUsages\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2))
+### ExportToXmlOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDictionary\<String, KeyUsages\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2))
 
 
 

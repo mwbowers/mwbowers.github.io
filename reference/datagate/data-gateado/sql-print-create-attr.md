@@ -7,7 +7,7 @@ Represents a SQL print creation attributes.
 **Namespace:** ASNA.DataGate.ADO
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) --> [PrintCreateAttr](/reference/data-gate-providers/print-create-attr.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Hashtable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-8.0) --> [PrintCreateAttr](/reference/datagate/data-gate-providers/print-create-attr.html)
 <br>
 <br>
 
@@ -52,7 +52,7 @@ SqlPrintCreateAttr(BinaryReader, Boolean)
 | Signature | Description |
 | --- | --- |
 | [NewEmptyDevAttr()](#newemptydevattr-) | Creates a new empty SqlPrintDevAttr.
-| [SetDevAttr](#setdevattr-printdevattr-)([PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html)) | Sets the device attributes for the SqlPrintCreateAttr.
+| [SetDevAttr](#setdevattr-printdevattr-)([PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html)) | Sets the device attributes for the SqlPrintCreateAttr.
 | [WriteTo](#writeto-binarywriter-boolean-)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintCreateAttr to the specified BinaryWriter.
 
 ### PrintDevAttr NewEmptyDevAttr()
@@ -63,7 +63,7 @@ Creates a new empty SqlPrintDevAttr.
 PrintDevAttr NewEmptyDevAttr()
 ```
 
-### void SetDevAttr([PrintDevAttr devAttr](/reference/data-gate-providers/print-dev-attr.html))
+### void SetDevAttr([PrintDevAttr devAttr](/reference/datagate/data-gate-providers/print-dev-attr.html))
 
 Sets the device attributes for the SqlPrintCreateAttr.
 
@@ -75,7 +75,7 @@ void SetDevAttr(PrintDevAttr devAttr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [PrintDevAttr](/reference/data-gate-providers/print-dev-attr.html) | devAttr | 
+| [PrintDevAttr](/reference/datagate/data-gate-providers/print-dev-attr.html) | devAttr | 
 
 ### void WriteTo([BinaryWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [bool bIsOlePF](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

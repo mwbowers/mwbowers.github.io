@@ -26,10 +26,10 @@ Provides a comparer for IDataGateCredential objects.
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#equals-idatagatecredential-idatagatecredential-)([IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html), [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html)) | Determines whether the specified IDataGateCredential objects are equal.
-| [GetHashCode](#gethashcode-idatagatecredential-)([IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html)) | Returns a hash code for the specified IDataGateCredential object.
+| [Equals](#equals-idatagatecredential-idatagatecredential-)([IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html), [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html)) | Determines whether the specified IDataGateCredential objects are equal.
+| [GetHashCode](#gethashcode-idatagatecredential-)([IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html)) | Returns a hash code for the specified IDataGateCredential object.
 
-### bool Equals([IDataGateCredential x](/reference/data-gate-providers/i-data-gate-credential.html), [IDataGateCredential y](/reference/data-gate-providers/i-data-gate-credential.html))
+### bool Equals([IDataGateCredential x](/reference/datagate/data-gate-providers/i-data-gate-credential.html), [IDataGateCredential y](/reference/datagate/data-gate-providers/i-data-gate-credential.html))
 
 Determines whether the specified IDataGateCredential objects are equal.
 
@@ -41,8 +41,8 @@ bool Equals(IDataGateCredential x, IDataGateCredential y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | x | 
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | y | 
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | x | 
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | y | 
 
 #### Returns
 
@@ -50,7 +50,7 @@ bool Equals(IDataGateCredential x, IDataGateCredential y)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential objects are equal; otherwise, false.
 
-### int GetHashCode([IDataGateCredential obj](/reference/data-gate-providers/i-data-gate-credential.html))
+### int GetHashCode([IDataGateCredential obj](/reference/datagate/data-gate-providers/i-data-gate-credential.html))
 
 Returns a hash code for the specified IDataGateCredential object.
 
@@ -62,7 +62,7 @@ int GetHashCode(IDataGateCredential obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/data-gate-providers/i-data-gate-credential.html) | obj | 
+| [IDataGateCredential](/reference/datagate/data-gate-providers/i-data-gate-credential.html) | obj | 
 
 #### Returns
 

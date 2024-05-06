@@ -30,15 +30,15 @@ DateTimeConverter (without *HIVAL/*LOVAL semantics).
 
 | Signature | Description |
 | --- | --- |
-| [GetBestFormat](#getbestformat-datatypes-datetimeformat-)([DataTypes](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/)) | Gets the best format for the given field type and candidate format.
-| [ParseString](#parsestring-string-string-iformatprovider-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/)) | Parses a string into a DateTime using the specified formats and format provider.
-| [FormatString](#formatstring-datetime-string-iformatprovider-)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/)) | Formats a DateTime into a string using the specified format and format provider.
+| [GetBestFormat](#getbestformat-datatypes-datetimeformat-)([DataTypes](/reference/datagate/data-gate-common/data-types.html), [DateTimeFormat](/reference/datagate/data-gate-common/date-time-format.html)) | Gets the best format for the given field type and candidate format.
+| [ParseString](#parsestring-string-string-iformatprovider-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0)) | Parses a string into a DateTime using the specified formats and format provider.
+| [FormatString](#formatstring-datetime-string-iformatprovider-)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0)) | Formats a DateTime into a string using the specified format and format provider.
 | [CanConvertFrom](#canconvertfrom-itypedescriptorcontext-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | 
 | [CanConvertTo](#canconvertto-itypedescriptorcontext-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | 
 | [ConvertFrom](#convertfrom-itypedescriptorcontext-cultureinfo-object-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
 | [ConvertTo](#convertto-itypedescriptorcontext-cultureinfo-object-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | 
 
-### DateTimeFormat GetBestFormat([DataTypes fieldType](https://learn.microsoft.com/en-us/dotnet/api/), [DateTimeFormat candidateFormat](https://learn.microsoft.com/en-us/dotnet/api/))
+### DateTimeFormat GetBestFormat([DataTypes fieldType](/reference/datagate/data-gate-common/data-types.html), [DateTimeFormat candidateFormat](/reference/datagate/data-gate-common/date-time-format.html))
 
 Gets the best format for the given field type and candidate format.
 
@@ -50,16 +50,16 @@ DateTimeFormat GetBestFormat(DataTypes fieldType, DateTimeFormat candidateFormat
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataTypes](https://learn.microsoft.com/en-us/dotnet/api/) | fieldType | 
-| [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/) | candidateFormat | 
+| [DataTypes](/reference/datagate/data-gate-common/data-types.html) | fieldType | 
+| [DateTimeFormat](/reference/datagate/data-gate-common/date-time-format.html) | candidateFormat | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [DateTimeFormat](https://learn.microsoft.com/en-us/dotnet/api/) | The best format for the given field type and candidate format.
+| [DateTimeFormat](/reference/datagate/data-gate-common/date-time-format.html) | The best format for the given field type and candidate format.
 
-### DateTime ParseString([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] aParseFormats](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFormatProvider formatter](https://learn.microsoft.com/en-us/dotnet/api/))
+### DateTime ParseString([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] aParseFormats](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IFormatProvider formatter](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0))
 
 Parses a string into a DateTime using the specified formats and format provider.
 
@@ -73,7 +73,7 @@ DateTime ParseString(string value, String[] aParseFormats, IFormatProvider forma
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
 | [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | aParseFormats | 
-| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/) | formatter | 
+| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0) | formatter | 
 
 #### Returns
 
@@ -81,7 +81,7 @@ DateTime ParseString(string value, String[] aParseFormats, IFormatProvider forma
 | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The parsed DateTime.
 
-### string FormatString([DateTime value](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [string fmt](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [IFormatProvider formatter](https://learn.microsoft.com/en-us/dotnet/api/))
+### string FormatString([DateTime value](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [string fmt](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [IFormatProvider formatter](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0))
 
 Formats a DateTime into a string using the specified format and format provider.
 
@@ -95,7 +95,7 @@ string FormatString(DateTime value, string fmt, IFormatProvider formatter)
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | value | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fmt | 
-| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/) | formatter | 
+| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0) | formatter | 
 
 #### Returns
 

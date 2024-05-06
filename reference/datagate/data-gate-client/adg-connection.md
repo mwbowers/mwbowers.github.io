@@ -28,9 +28,9 @@ As an alternative, consider using a separate instance of AdgConnection (optional
 | Name | Description |
 | --- | --- |
 | [AdgConnection](#adgconnection-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes AdgConnection instance.
-| [AdgConnection](#adgconnection-string-iexchange5250-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IExchange5250](/reference/data-gate-providers/i-exchange5250.html)) | Initializes AdgConnection instance.
-| [AdgConnection](#adgconnection-sourceprofile-)([SourceProfile](/reference/data-gate-providers/source-profile.html)) | Initializes a new instance of the  class with the specified .
-| [AdgConnection](#adgconnection-sourceprofile-iexchange5250-)([SourceProfile](/reference/data-gate-providers/source-profile.html), [IExchange5250](/reference/data-gate-providers/i-exchange5250.html)) | Initializes a new instance of the  class with the specified .
+| [AdgConnection](#adgconnection-string-iexchange5250-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IExchange5250](/reference/datagate/data-gate-providers/i-exchange5250.html)) | Initializes AdgConnection instance.
+| [AdgConnection](#adgconnection-sourceprofile-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html)) | Initializes a new instance of the  class with the specified .
+| [AdgConnection](#adgconnection-sourceprofile-iexchange5250-)([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html), [IExchange5250](/reference/datagate/data-gate-providers/i-exchange5250.html)) | Initializes a new instance of the  class with the specified .
 
 ### AdgConnection([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -46,7 +46,7 @@ AdgConnection(String)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbName | 
 
-### AdgConnection([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IExchange5250](/reference/data-gate-providers/i-exchange5250.html))
+### AdgConnection([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IExchange5250](/reference/datagate/data-gate-providers/i-exchange5250.html))
 
 Initializes AdgConnection instance.
 
@@ -59,9 +59,9 @@ AdgConnection(String, IExchange5250)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbName | 
-| [IExchange5250](/reference/data-gate-providers/i-exchange5250.html) | exchange5250 | 
+| [IExchange5250](/reference/datagate/data-gate-providers/i-exchange5250.html) | exchange5250 | 
 
-### AdgConnection([SourceProfile](/reference/data-gate-providers/source-profile.html))
+### AdgConnection([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html))
 
 Initializes a new instance of the  class with the specified .
 
@@ -73,9 +73,9 @@ AdgConnection(SourceProfile)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | sp | 
 
-### AdgConnection([SourceProfile](/reference/data-gate-providers/source-profile.html), [IExchange5250](/reference/data-gate-providers/i-exchange5250.html))
+### AdgConnection([SourceProfile](/reference/datagate/data-gate-providers/source-profile.html), [IExchange5250](/reference/datagate/data-gate-providers/i-exchange5250.html))
 
 Initializes a new instance of the  class with the specified .
 
@@ -87,22 +87,22 @@ AdgConnection(SourceProfile, IExchange5250)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | sp | 
-| [IExchange5250](/reference/data-gate-providers/i-exchange5250.html) | exchange5250 | 
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | sp | 
+| [IExchange5250](/reference/datagate/data-gate-providers/i-exchange5250.html) | exchange5250 | 
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
 | [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | Canceler | Gets the canceler cancellation token instance. |
-| [IChannelSecurity](/reference/data-gate-client/i-channel-security.html) | ChannelInfo | Gets the channel security information associated with the AdgConnection. |
-| [ProtoLevel](/reference/data-gate-data-link/proto-level.html) | CurrentProtocolVersion | Gets the current protocol version. |
+| [IChannelSecurity](/reference/datagate/data-gate-client/i-channel-security.html) | ChannelInfo | Gets the channel security information associated with the AdgConnection. |
+| [ProtoLevel](/reference/datagate/data-gate-data-link/proto-level.html) | CurrentProtocolVersion | Gets the current protocol version. |
 | [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the decoder associated with the AdgConnection. |
 | [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the encoder associated with the AdgConnection. |
-| [IMonitor](/reference/data-gate-client/i-monitor.html) | Monitor | Gets the monitor associated with the AdgConnection. |
-| [OpenAccessRpg](/reference/data-gate-data-link/open-access-rpg.html) | OpenAccessRpg | Gets or sets the OpenAccessRpg object associated with the AdgConnection. |
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | SourceProfile | A reference to the SourceProfile object representing the liveconnection parameters.  At AdgConnection construction, the valueof this property is initialized by the parameters of theconstructor.  Modifications to the instance have no effect untilthe connection is opened (or re-opened).  A deep-copy of the valueof this property is available via the GetSourceProfileCopy method. |
-| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/) | State | Gets the current state of the AdgConnection. |
+| [IMonitor](/reference/datagate/data-gate-client/i-monitor.html) | Monitor | Gets the monitor associated with the AdgConnection. |
+| [OpenAccessRpg](/reference/datagate/data-gate-data-link/open-access-rpg.html) | OpenAccessRpg | Gets or sets the OpenAccessRpg object associated with the AdgConnection. |
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | SourceProfile | A reference to the SourceProfile object representing the liveconnection parameters.  At AdgConnection construction, the valueof this property is initialized by the parameters of theconstructor.  Modifications to the instance have no effect untilthe connection is opened (or re-opened).  A deep-copy of the valueof this property is available via the GetSourceProfileCopy method. |
+| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/system.data.connectionstate?view=net-8.0) | State | Gets the current state of the AdgConnection. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TerminalDeviceName | Gets or sets the terminal device name associated with the AdgConnection. |
 
 ## Methods
@@ -117,22 +117,22 @@ AdgConnection(SourceProfile, IExchange5250)
 | [Close()](#close-) | Closes the connection and disposes the AdgConnection instance.
 | [Dispose()](#dispose-) | Disposes the AdgConnection instance.
 | [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the AdgConnection instance.
-| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begin auto transaction
+| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begin auto transaction
 | [BeginAutoTransaction](#beginautotransaction-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
-| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
-| [BeginTransaction](#begintransaction-transactionlevel-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/)) | Begins an automatic transaction with the specified transaction level
+| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#begintransaction-transactionlevel-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html)) | Begins an automatic transaction with the specified transaction level
 | [BeginTransaction](#begintransaction-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
-| [BeginTransaction](#begintransaction-transactionlevel-string-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
-| [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#begintransaction-transactionlevel-string-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
 | [GetDatabaseAttributes()](#getdatabaseattributes-) | Gets the database attributes of the connected database.
 | [Open](#open-cancellationtoken-)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancelation token.
-| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/data-gate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using optios and cancelation token.
+| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/datagate/data-gate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using optios and cancelation token.
 | [Clone()](#clone-) | Clones the AdgConnection instance.
-| [op_Equality](#op_equality-adgconnection-adgconnection-)([AdgConnection](/reference/data-gate-client/adg-connection.html), [AdgConnection](/reference/data-gate-client/adg-connection.html)) | Determines whether two AdgConnection instances are equal.
-| [op_Inequality](#op_inequality-adgconnection-adgconnection-)([AdgConnection](/reference/data-gate-client/adg-connection.html), [AdgConnection](/reference/data-gate-client/adg-connection.html)) | Determines whether two AdgConnection instances are different.
+| [op_Equality](#op_equality-adgconnection-adgconnection-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html), [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)) | Determines whether two AdgConnection instances are equal.
+| [op_Inequality](#op_inequality-adgconnection-adgconnection-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html), [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)) | Determines whether two AdgConnection instances are different.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the passed in connection is equal to the current connection instance.
 | [GetHashCode()](#gethashcode-) | Get connection instance hash code.
-| [Synchronized](#synchronized-adgconnection-)([AdgConnection](/reference/data-gate-client/adg-connection.html)) | Synchronizes the given AdgConnection instance.
+| [Synchronized](#synchronized-adgconnection-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)) | Synchronizes the given AdgConnection instance.
 | [IsCanceledException](#iscanceledexception-exception-)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Determines if the exception given has been cancelled.
 
 ### SourceProfile GetSourceProfileCopy()
@@ -199,7 +199,7 @@ Disposes the AdgConnection instance.
 void Dispose()
 ```
 
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begin auto transaction
 
@@ -211,16 +211,16 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
+| [TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html) | tl | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | Transaction reference
+| [IAdgTransaction](/reference/datagate/data-gate-client/i-adg-transaction.html) | Transaction reference
 
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 
 
@@ -232,16 +232,16 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | Name | 
+| [TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html) | Name | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | 
+| [IAdgTransaction](/reference/datagate/data-gate-client/i-adg-transaction.html) | 
 
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins an automatic transaction with the specified transaction level, name, and options.
 
@@ -249,7 +249,7 @@ Begins an automatic transaction with the specified transaction level, name, and 
 IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 ```
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/))
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html))
 
 Begins an automatic transaction with the specified transaction level
 
@@ -261,15 +261,15 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
+| [TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html) | tl | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The  representing the transaction.
+| [IAdgTransaction](/reference/datagate/data-gate-client/i-adg-transaction.html) | The  representing the transaction.
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/))
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html))
 
 Begins an automatic transaction with the specified transaction level, name, and options.
 
@@ -281,15 +281,15 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | Name | 
+| [TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html) | Name | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The  representing the transaction.
+| [IAdgTransaction](/reference/datagate/data-gate-client/i-adg-transaction.html) | The  representing the transaction.
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/))
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html))
 
 Begins a transaction with the specified transaction level, name, and options.
 
@@ -297,7 +297,7 @@ Begins a transaction with the specified transaction level, name, and options.
 IAdgTransaction BeginTransaction(TransactionLevel tl)
 ```
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/))
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html))
 
 Begins an automatic transaction with the specified transaction level, name, and options.
 
@@ -343,7 +343,7 @@ Clones the AdgConnection instance.
 object Clone()
 ```
 
-### bool op_Equality([AdgConnection x](/reference/data-gate-client/adg-connection.html), [AdgConnection y](/reference/data-gate-client/adg-connection.html))
+### bool op_Equality([AdgConnection x](/reference/datagate/data-gate-client/adg-connection.html), [AdgConnection y](/reference/datagate/data-gate-client/adg-connection.html))
 
 Determines whether two AdgConnection instances are equal.
 
@@ -355,8 +355,8 @@ bool op_Equality(AdgConnection x, AdgConnection y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | x | 
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | y | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | x | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | y | 
 
 #### Returns
 
@@ -364,7 +364,7 @@ bool op_Equality(AdgConnection x, AdgConnection y)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, otherwise false.
 
-### bool op_Inequality([AdgConnection x](/reference/data-gate-client/adg-connection.html), [AdgConnection y](/reference/data-gate-client/adg-connection.html))
+### bool op_Inequality([AdgConnection x](/reference/datagate/data-gate-client/adg-connection.html), [AdgConnection y](/reference/datagate/data-gate-client/adg-connection.html))
 
 Determines whether two AdgConnection instances are different.
 
@@ -376,8 +376,8 @@ bool op_Inequality(AdgConnection x, AdgConnection y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | x | 
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | y | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | x | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | y | 
 
 #### Returns
 
@@ -413,7 +413,7 @@ Get connection instance hash code.
 int GetHashCode()
 ```
 
-### AdgConnection Synchronized([AdgConnection cn](/reference/data-gate-client/adg-connection.html))
+### AdgConnection Synchronized([AdgConnection cn](/reference/datagate/data-gate-client/adg-connection.html))
 
 Synchronizes the given AdgConnection instance.
 
@@ -425,13 +425,13 @@ AdgConnection Synchronized(AdgConnection cn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | cn | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | A synchronized AdgConnection instance.
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | A synchronized AdgConnection instance.
 
 ### bool IsCanceledException([Exception e](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 

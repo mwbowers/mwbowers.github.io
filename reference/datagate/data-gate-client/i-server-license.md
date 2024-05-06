@@ -30,7 +30,7 @@ This interface should be implemented by classes that need to manage a server lic
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MachineID | Gets the machine ID for the server license. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ProductInfo | Gets the source profile for the server license. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ProductName | Gets the name of the product. |
-| [SourceProfile](/reference/data-gate-providers/source-profile.html) | Source | Gets the source profile for the server license. |
+| [SourceProfile](/reference/datagate/data-gate-providers/source-profile.html) | Source | Gets the source profile for the server license. |
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | Start | Gets the start date of the server license. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | UserLimit | Gets the user limit for the server license. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Version | Gets the version of the server license. |

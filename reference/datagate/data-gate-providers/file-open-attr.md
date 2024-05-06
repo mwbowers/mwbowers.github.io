@@ -35,11 +35,11 @@ FileOpenAttr()
 | --- | --- | --- 
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | BlockingFactor | Gets or sets the blocking factor. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | BulkCopyTimeout | Gets or sets the number of seconds to wait for a SQL bulk copy operation to complete. |
-| [FileLocks](https://learn.microsoft.com/en-us/dotnet/api/) | FileLocks | Gets or sets the file locks. |
+| [FileLocks](/reference/datagate/data-gate-common/file-locks.html) | FileLocks | Gets or sets the file locks. |
 | [Byte\[\]\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | FormatIDs | Gets or sets the format IDs. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InhibitWrite | Gets or sets a value indicating whether writing is inhibited. |
-| [ServerCursors](https://learn.microsoft.com/en-us/dotnet/api/) | ServerCursor | Gets or sets the server cursor. |
-| [ShareTypes](https://learn.microsoft.com/en-us/dotnet/api/) | ShareTypes | Gets or sets the share types. |
+| [ServerCursors](/reference/datagate/data-gate-common/server-cursors.html) | ServerCursor | Gets or sets the server cursor. |
+| [ShareTypes](/reference/datagate/data-gate-common/share-types.html) | ShareTypes | Gets or sets the share types. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | WaitForEOF | Gets or sets the wait time for the end of file (EOF). |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | WaitForFile | Gets or sets the wait time for the file. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | WaitForRecord | Gets or sets the wait time for the record. |

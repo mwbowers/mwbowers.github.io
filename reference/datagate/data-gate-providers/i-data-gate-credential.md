@@ -15,4 +15,4 @@ Defines a set of methods and properties that represent DataGate credentials.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [CredentialType](/reference/data-gate-providers/credential-type.html) | CredentialType | Gets the type of the credentials. |
+| [CredentialType](/reference/datagate/data-gate-providers/credential-type.html) | CredentialType | Gets the type of the credentials. |

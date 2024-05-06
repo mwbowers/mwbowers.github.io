@@ -7,7 +7,7 @@ Represents a synchronized AdgConnection instance.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [AdgConnection](/reference/data-gate-client/adg-connection.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)
 <br>
 <br>
 
@@ -15,9 +15,9 @@ Represents a synchronized AdgConnection instance.
 
 | Name | Description |
 | --- | --- |
-| [SyncConnection](#syncconnection-adgconnection-)([AdgConnection](/reference/data-gate-client/adg-connection.html)) | Initializes a new instance of the SyncConnection class.
+| [SyncConnection](#syncconnection-adgconnection-)([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html)) | Initializes a new instance of the SyncConnection class.
 
-### SyncConnection([AdgConnection](/reference/data-gate-client/adg-connection.html))
+### SyncConnection([AdgConnection](/reference/datagate/data-gate-client/adg-connection.html))
 
 Initializes a new instance of the SyncConnection class.
 
@@ -29,7 +29,7 @@ SyncConnection(AdgConnection)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/data-gate-client/adg-connection.html) | cn | 
+| [AdgConnection](/reference/datagate/data-gate-client/adg-connection.html) | cn | 
 
 ## Properties
 
@@ -37,22 +37,22 @@ SyncConnection(AdgConnection)
 | --- | --- | --- 
 | [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the decoder associated with the SyncConnection. |
 | [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the encoder associated with the SyncConnection. |
-| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/) | State | Gets the current state of the SyncConnection. |
+| [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/system.data.connectionstate?view=net-8.0) | State | Gets the current state of the SyncConnection. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
 | [Clone()](#clone-) | Clones the SyncConnection instance.
-| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/data-gate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using the specified options and cancellation token.
+| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/datagate/data-gate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using the specified options and cancellation token.
 | [Open](#open-cancellationtoken-)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancellation token.
 | [GetDeviceCodePageID()](#getdevicecodepageid-) | Gets the device code page ID associated with the SyncConnection.
 | [GetPeerAltCodePageID()](#getpeeraltcodepageid-) | Gets the Peer Alt Code Page ID associated with the SyncConnection.
 | [GetSupportsMultiMember()](#getsupportsmultimember-) | Gets the value indicating whether the connection supports multi-member.
 | [GetPeerVersion()](#getpeerversion-) | Gets the protocol version of the connected peer.
 | [GetDatabaseAttributes()](#getdatabaseattributes-) | Gets the database attributes of the connected database.
-| [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
-| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
+| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
 | [Reset()](#reset-) | Resets the connection.
 | [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the SyncConnection instance.
 
@@ -64,7 +64,7 @@ Clones the SyncConnection instance.
 object Clone()
 ```
 
-### void Open([OpenOptions options](/reference/data-gate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
+### void Open([OpenOptions options](/reference/datagate/data-gate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
 
 Opens the connection using the specified options and cancellation token.
 
@@ -76,10 +76,10 @@ void Open(OpenOptions options, CancellationToken ct)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [OpenOptions](/reference/data-gate-providers/open-options.html) | options | 
+| [OpenOptions](/reference/datagate/data-gate-providers/open-options.html) | options | 
 | [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
 
-### void Open([OpenOptions options](/reference/data-gate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
+### void Open([OpenOptions options](/reference/datagate/data-gate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
 
 Opens the connection using a cancellation token.
 
@@ -127,7 +127,7 @@ Gets the database attributes of the connected database.
 DatabaseAttributes GetDatabaseAttributes()
 ```
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins a transaction with the specified transaction level, name, and options.
 
@@ -139,7 +139,7 @@ IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Option
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
+| [TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html) | tl | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
@@ -147,9 +147,9 @@ IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Option
 
 | Type | Description
 | --- | ---
-| [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
+| [IAdgTransaction](/reference/datagate/data-gate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
 
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](https://learn.microsoft.com/en-us/dotnet/api/), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/data-gate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins an automatic transaction with the specified transaction level, name, and options.
 
@@ -161,7 +161,7 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Op
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](https://learn.microsoft.com/en-us/dotnet/api/) | tl | 
+| [TransactionLevel](/reference/datagate/data-gate-common/transaction-level.html) | tl | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
@@ -169,7 +169,7 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Op
 
 | Type | Description
 | --- | ---
-| [IAdgTransaction](/reference/data-gate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
+| [IAdgTransaction](/reference/datagate/data-gate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
 
 ### bool Reset()
 

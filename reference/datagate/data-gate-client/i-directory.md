@@ -32,9 +32,9 @@ This interface should be implemented by classes that represent a DataGate direct
 | --- | --- |
 | [AttachRemoteDirectory](#attachremotedirectory-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attaches the specified remote directory to the current directory.
 | [CreateSubDirectory](#createsubdirectory-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a subdirectory with the specified name in the current directory.
-| [Enumerate](#enumerate-adgenumerator-)([AdgEnumerator](/reference/data-gate-client/adg-enumerator.html)) | Enumerates the items in the directory using the specified enumerator.
-| [RepairObjects](#repairobjects-repairoptions-adgobserver-)([RepairOptions](https://learn.microsoft.com/en-us/dotnet/api/), [AdgObserver](/reference/data-gate-client/adg-observer.html)) | Repairs objects in the directory using the specified repair options and observer.
-| [Enumerate](#enumerate-adgenumerator-filetypes-boolean-)([AdgEnumerator](/reference/data-gate-client/adg-enumerator.html), [FileTypes](https://learn.microsoft.com/en-us/dotnet/api/), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enumerates the items in the directory using the specified enumerator.
+| [Enumerate](#enumerate-adgenumerator-)([AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html)) | Enumerates the items in the directory using the specified enumerator.
+| [RepairObjects](#repairobjects-repairoptions-adgobserver-)([RepairOptions](/reference/datagate/data-gate-common/repair-options.html), [AdgObserver](/reference/datagate/data-gate-client/adg-observer.html)) | Repairs objects in the directory using the specified repair options and observer.
+| [Enumerate](#enumerate-adgenumerator-filetypes-boolean-)([AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html), [FileTypes](/reference/datagate/data-gate-common/file-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enumerates the items in the directory using the specified enumerator.
 
 ### void AttachRemoteDirectory([string remotePathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -68,9 +68,9 @@ IDirectory CreateSubDirectory(string Name)
 
 | Type | Description
 | --- | ---
-| [IDirectory](/reference/data-gate-client/i-directory.html) | The created subdirectory.
+| [IDirectory](/reference/datagate/data-gate-client/i-directory.html) | The created subdirectory.
 
-### void Enumerate([AdgEnumerator enumerator](/reference/data-gate-client/adg-enumerator.html))
+### void Enumerate([AdgEnumerator enumerator](/reference/datagate/data-gate-client/adg-enumerator.html))
 
 Enumerates the items in the directory using the specified enumerator.
 
@@ -82,9 +82,9 @@ void Enumerate(AdgEnumerator enumerator)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/data-gate-client/adg-enumerator.html) | enumerator | 
+| [AdgEnumerator](/reference/datagate/data-gate-client/adg-enumerator.html) | enumerator | 
 
-### void RepairObjects([RepairOptions repairOptions](https://learn.microsoft.com/en-us/dotnet/api/), [AdgObserver observer](/reference/data-gate-client/adg-observer.html))
+### void RepairObjects([RepairOptions repairOptions](/reference/datagate/data-gate-common/repair-options.html), [AdgObserver observer](/reference/datagate/data-gate-client/adg-observer.html))
 
 Repairs objects in the directory using the specified repair options and observer.
 
@@ -96,10 +96,10 @@ void RepairObjects(RepairOptions repairOptions, AdgObserver observer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [RepairOptions](https://learn.microsoft.com/en-us/dotnet/api/) | repairOptions | 
-| [AdgObserver](/reference/data-gate-client/adg-observer.html) | observer | 
+| [RepairOptions](/reference/datagate/data-gate-common/repair-options.html) | repairOptions | 
+| [AdgObserver](/reference/datagate/data-gate-client/adg-observer.html) | observer | 
 
-### void Enumerate([AdgEnumerator enumerator](/reference/data-gate-client/adg-enumerator.html))
+### void Enumerate([AdgEnumerator enumerator](/reference/datagate/data-gate-client/adg-enumerator.html))
 
 Enumerates the items in the directory using the specified enumerator.
 

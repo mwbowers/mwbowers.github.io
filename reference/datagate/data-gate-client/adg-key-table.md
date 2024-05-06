@@ -7,7 +7,7 @@ DataGate key table, a specialized implementation of AdgTable.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [AdgTable](/reference/data-gate-client/adg-table.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [AdgTable](/reference/datagate/data-gate-client/adg-table.html)
 <br>
 <br>
 ## Thread Safety
