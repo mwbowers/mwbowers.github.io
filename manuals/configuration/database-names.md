@@ -50,7 +50,28 @@ The following sample JSON file defines two Database Names profiles, the first on
 }
 ```
 
-DataGate defines a [DataGate Schema](http://goldstar.asna.corp/schema/asna-qsys-schema.json) for JSON files defining named Source Profiles.
+DataGate defines a [DataGate Schema](asna-qsys-schema.json) for JSON files defining named Source Profiles. Adding a reference to the schema file can assist on editors that provide intelisense like VS Code and Visual Studio.
+
+```json
+{
+    "$schema": "asna-qsys-schema.json",
+    "asna": {
+        "dataGate": {
+            "sources": {
+                "AspenRND": {
+                    "server": "MyMSSQL",
+                    "label": "SQL",
+                    "platformAttribute": "*SQLCLIENT",
+                    "initialLibraryList": [
+                        "MY_LIB"
+                    ],
+                    "user": "*DOMAIN"
+                }
+            }
+        }
+    }
+}
+```
 
 ### The DataGate JSON File
 By convention a default JSON file called 'asnasettings.json' can be placed in the sub folder 'ASNA/DataGate' under the special folder [LocalApplicationData](https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder). 
