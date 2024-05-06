@@ -11,3 +11,17 @@ open files and connections.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [NetHandle()](#nethandle-) | 
+
+### NetHandle()
+
+
+
+```cs
+NetHandle()
+```

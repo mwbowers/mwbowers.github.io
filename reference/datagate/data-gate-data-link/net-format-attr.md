@@ -31,3 +31,23 @@ varlen-capable fields in the format).
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [NetFormatAttr](#netformatattr-formatattr-)([FormatAttr](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+
+### NetFormatAttr([FormatAttr](https://learn.microsoft.com/en-us/dotnet/api/))
+
+
+
+```cs
+NetFormatAttr(FormatAttr)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FormatAttr](https://learn.microsoft.com/en-us/dotnet/api/) | formatAttr | 

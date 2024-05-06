@@ -79,6 +79,18 @@ ExportToXmlOptions(IMember, String, ExportAccessMode, Boolean, Boolean)
 ExportToXmlOptions(IMember, String, ExportAccessMode, Boolean, Boolean, String, IDictionary<String, KeyUsages>)
 ```
 
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
+| [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bFieldsAsElements | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSaveSchema | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QueryExpression | 
+| [IDictionary`2](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | QueryKeys | 
+
 ## Properties
 
 | Type | Name | Description

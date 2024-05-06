@@ -106,7 +106,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>)
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
 
@@ -125,8 +125,8 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>,
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
@@ -145,8 +145,8 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>,
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | 
 
 ## Properties

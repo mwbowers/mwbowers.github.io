@@ -26,6 +26,12 @@ Tuples passed to the constructor specify:* stream length* constructor for stream
 InputStreamAggregator(IEnumerable<ValueTuple<Int32, Func<Stream>>>)
 ```
 
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IEnumerable`1](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | streamFactories | 
+
 ### InputStreamAggregator()
 
 Initializes a new instance of the  class.

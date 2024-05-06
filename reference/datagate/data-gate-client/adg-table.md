@@ -25,6 +25,13 @@ Initializes a new instance using the data table given.
 AdgTable(DataTable, AdgDataSet)
 ```
 
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | table | 
+| [AdgDataSet](/reference/datagate/data-gate-client/adg-data-set.html) | parent | 
+
 ## Properties
 
 | Type | Name | Description

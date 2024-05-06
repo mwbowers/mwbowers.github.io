@@ -18,3 +18,23 @@ services of the platform may or may not provide.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [RpcSync](#rpcsync-datalink-)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+
+### RpcSync([DataLink](https://learn.microsoft.com/en-us/dotnet/api/))
+
+
+
+```cs
+RpcSync(DataLink)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DataLink](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 

@@ -11,3 +11,24 @@ instances via its Transaction property.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [Transactor](#transactor-sqlobject-string-)([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
+
+### Transactor([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+
+
+```cs
+Transactor(SqlObject, String)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [SqlObject](https://learn.microsoft.com/en-us/dotnet/api/) | sqlObj | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 

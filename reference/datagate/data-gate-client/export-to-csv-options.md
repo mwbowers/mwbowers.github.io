@@ -54,7 +54,7 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>)
 | [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
 | [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
 
 ### ExportToCsvOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
 
@@ -71,8 +71,8 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 | [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
 | [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
 
 ### ExportToCsvOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
@@ -89,8 +89,8 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 | [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
 | [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | 
 
 ### ExportToCsvOptions([IMember](/reference/datagate/data-gate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
@@ -108,8 +108,8 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 | [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
 | [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIncludeNames | 
 
@@ -128,8 +128,8 @@ ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<C
 | [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
 | [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIncludeNames | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bOmitTrailingComma | 
@@ -141,6 +141,21 @@ Export data to CSV format with specified options.
 ```cs
 ExportToCsvOptions(IMember, String, ExportAccessMode, Nullable<Char>, Nullable<Char>, Char, Boolean, Boolean, String, IDictionary<String, KeyUsages>)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IMember](/reference/datagate/data-gate-client/i-member.html) | src | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | 
+| [ExportAccessMode](/reference/datagate/data-gate-client/export-access-mode.html) | seq | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIncludeNames | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bOmitTrailingComma | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | QueryExpression | 
+| [IDictionary`2](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | QueryKeys | 
 
 ## Properties
 

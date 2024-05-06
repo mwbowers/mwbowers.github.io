@@ -10,3 +10,17 @@ Represents the default transform properties.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [DefaultXFormProps()](#defaultxformprops-) | 
+
+### DefaultXFormProps()
+
+
+
+```cs
+DefaultXFormProps()
+```

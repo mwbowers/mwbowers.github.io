@@ -14,3 +14,24 @@ in deadlock.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [MarshalByRefObject](https://learn.microsoft.com/en-us/dotnet/api/system.marshalbyrefobject?view=net-8.0) --> [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [CircularMemoryStream](#circularmemorystream-int32-nullable-cancellationtoken-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Nullable\<CancellationToken\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | 
+
+### CircularMemoryStream([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Nullable\<CancellationToken\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
+
+
+
+```cs
+CircularMemoryStream(Int32, Nullable<CancellationToken>)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | bufferSize | 
+| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | token | 

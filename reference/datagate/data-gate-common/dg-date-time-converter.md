@@ -11,11 +11,6 @@ Represents a converter for AS/400 date/time/timestamp values.
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-
 ## Methods
 
 | Signature | Description |

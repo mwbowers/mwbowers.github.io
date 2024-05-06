@@ -14,11 +14,6 @@ XML-compliant Name string.  For example, "$ITEMTEST" is returned as
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-
 ## Properties
 
 | Type | Name | Description

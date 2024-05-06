@@ -17,3 +17,23 @@ objects on-demand.  IReadOnlyDictionary is thread safe.
 
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [LazyReadOnlySourceDictionary](#lazyreadonlysourcedictionary-iconfiguration-)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | 
+
+### LazyReadOnlySourceDictionary([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
+
+
+
+```cs
+LazyReadOnlySourceDictionary(IConfiguration)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | config | 

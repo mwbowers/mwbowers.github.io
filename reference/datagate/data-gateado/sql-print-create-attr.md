@@ -44,8 +44,8 @@ SqlPrintCreateAttr(BinaryReader, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0) | info | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | context | 
+| [BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0) | reader | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIsOlePF | 
 
 ## Methods
 

@@ -13,3 +13,23 @@ responsible for synchronizing access and avoiding reentrancy.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [RpcSync](/reference/datagate/data-gate-data-link/rpc-sync.html)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [RpcSyncEnforcer](#rpcsyncenforcer-datalink-)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+
+### RpcSyncEnforcer([DataLink](https://learn.microsoft.com/en-us/dotnet/api/))
+
+
+
+```cs
+RpcSyncEnforcer(DataLink)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DataLink](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 

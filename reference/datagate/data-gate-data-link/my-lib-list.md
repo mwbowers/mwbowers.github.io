@@ -10,3 +10,17 @@ Implementation of library list for monitor class
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [MyLibList()](#myliblist-) | 
+
+### MyLibList()
+
+
+
+```cs
+MyLibList()
+```

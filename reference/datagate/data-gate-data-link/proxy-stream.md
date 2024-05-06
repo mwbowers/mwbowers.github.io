@@ -34,3 +34,25 @@ been removed via DetachHelper.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [MarshalByRefObject](https://learn.microsoft.com/en-us/dotnet/api/system.marshalbyrefobject?view=net-8.0) --> [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [ProxyStream](#proxystream-isocketasynchelper-isocketasyncuser-int32-)([ISocketAsyncHelper](https://learn.microsoft.com/en-us/dotnet/api/), [ISocketAsyncUser](https://learn.microsoft.com/en-us/dotnet/api/), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | 
+
+### ProxyStream([ISocketAsyncHelper](https://learn.microsoft.com/en-us/dotnet/api/), [ISocketAsyncUser](https://learn.microsoft.com/en-us/dotnet/api/), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+
+
+```cs
+ProxyStream(ISocketAsyncHelper, ISocketAsyncUser, Int32)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [ISocketAsyncHelper](https://learn.microsoft.com/en-us/dotnet/api/) | proxy | 
+| [ISocketAsyncUser](https://learn.microsoft.com/en-us/dotnet/api/) | errorUser | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | subchannel | 

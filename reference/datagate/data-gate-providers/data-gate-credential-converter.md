@@ -11,6 +11,20 @@ Provides a converter for the  interface for JSON serialization and deserializati
 <br>
 <br>
 
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [DataGateCredentialConverter()](#datagatecredentialconverter-) | 
+
+### DataGateCredentialConverter()
+
+
+
+```cs
+DataGateCredentialConverter()
+```
+
 ## Methods
 
 | Signature | Description |

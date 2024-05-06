@@ -11,6 +11,20 @@ Converts a UserPasswordCredential to or from JSON.
 <br>
 <br>
 
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [UserPasswordCredentialInlineConverter()](#userpasswordcredentialinlineconverter-) | 
+
+### UserPasswordCredentialInlineConverter()
+
+
+
+```cs
+UserPasswordCredentialInlineConverter()
+```
+
 ## Methods
 
 | Signature | Description |

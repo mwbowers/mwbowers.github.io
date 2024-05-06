@@ -11,6 +11,20 @@ Contains constants used in the FileOpenAttr class.
 <br>
 <br>
 
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [Constants()](#constants-) | 
+
+### Constants()
+
+
+
+```cs
+Constants()
+```
+
 ## Properties
 
 | Type | Name | Description

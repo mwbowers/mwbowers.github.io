@@ -11,3 +11,17 @@ record "format ids" for RPG-style "level-check" functions.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [HashAlgorithm](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hashalgorithm?view=net-8.0)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [DgSHA()](#dgsha-) | 
+
+### DgSHA()
+
+
+
+```cs
+DgSHA()
+```

@@ -11,11 +11,6 @@ Provides a comparer for IDataGateCredential objects.
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-
 ## Properties
 
 | Type | Name | Description

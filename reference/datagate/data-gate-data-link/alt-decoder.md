@@ -11,11 +11,6 @@ Represents an alternative decoder that extends the base Decoder class.
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-
 ## Properties
 
 | Type | Name | Description

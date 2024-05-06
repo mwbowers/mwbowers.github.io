@@ -13,3 +13,32 @@ waiters, and the object remains in the signalled state thereafter
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [ManualResetEvent](#manualresetevent-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | 
+| [ManualResetEvent()](#manualresetevent-) | 
+
+### ManualResetEvent([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+
+
+```cs
+ManualResetEvent(Boolean)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | initialState | 
+
+### ManualResetEvent()
+
+
+
+```cs
+ManualResetEvent()
+```

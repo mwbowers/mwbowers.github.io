@@ -11,6 +11,20 @@ New-line delimiter class extending Delimiter class.
 <br>
 <br>
 
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [NewLineDelimeter()](#newlinedelimeter-) | 
+
+### NewLineDelimeter()
+
+
+
+```cs
+NewLineDelimeter()
+```
+
 ## Properties
 
 | Type | Name | Description

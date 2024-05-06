@@ -29,6 +29,13 @@ Initializes a new instance of the  class from an XML reader.
 ProgParm(ProgParmType, DataDirection)
 ```
 
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [ProgParmType](/reference/datagate/data-gate-data-link/prog-parm-type.html) | ppt | 
+| [DataDirection](/reference/datagate/data-gate-common/data-direction.html) | dir | 
+
 ### ProgParm([StructureType](/reference/datagate/data-gate-data-link/structure-type.html), [DataDirection](/reference/datagate/data-gate-common/data-direction.html))
 
 Initializes a new instance of the  class with a specified data direction.
@@ -36,6 +43,13 @@ Initializes a new instance of the  class with a specified data direction.
 ```cs
 ProgParm(StructureType, DataDirection)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [StructureType](/reference/datagate/data-gate-data-link/structure-type.html) | st | 
+| [DataDirection](/reference/datagate/data-gate-common/data-direction.html) | dir | 
 
 ## Properties
 

@@ -25,6 +25,12 @@ Initializes a new instance of the  class.
 AltEncodingInfo(AltEncoding)
 ```
 
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AltEncoding](/reference/datagate/data-gate-data-link/alt-encoding.html) | enc | 
+
 ## Properties
 
 | Type | Name | Description

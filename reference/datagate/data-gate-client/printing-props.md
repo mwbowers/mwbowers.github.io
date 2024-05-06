@@ -17,6 +17,20 @@ This class was automatically generated and contains application settings for pri
 <br>
 <br>
 
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [PrintingProps()](#printingprops-) | 
+
+### PrintingProps()
+
+
+
+```cs
+PrintingProps()
+```
+
 ## Properties
 
 | Type | Name | Description

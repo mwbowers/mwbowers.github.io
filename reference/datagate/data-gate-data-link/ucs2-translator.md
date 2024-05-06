@@ -12,3 +12,23 @@ external use with the negotiated byte ordering.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [CharTranslator](https://learn.microsoft.com/en-us/dotnet/api/)
 <br>
 <br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [Ucs2Translator](#ucs2translator-datalink-)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+
+### Ucs2Translator([DataLink](https://learn.microsoft.com/en-us/dotnet/api/))
+
+
+
+```cs
+Ucs2Translator(DataLink)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DataLink](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 

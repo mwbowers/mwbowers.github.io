@@ -14,11 +14,6 @@ DateTimeConverter (without *HIVAL/*LOVAL semantics).
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-
 ## Properties
 
 | Type | Name | Description
