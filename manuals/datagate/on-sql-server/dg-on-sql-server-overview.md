@@ -6,10 +6,10 @@ title: DataGate on SQL Server Overview
 DataGate (DG) connects .NET clients with MS SQL Server.  The concepts surfaced by the DG API are based on the IBM i database ISAM style record level access. The DG client is delivered in the ASNA.QSys.DataGate.Client .NET assembly. 
 
 There are two implementations, both available on the ASNA.QSys.DataGate.Client .NET assembly, of the DG client:
-1. _DataGate Linear_ communicates directly with SQL Server via ADO.NET. 
+1. _DataGate Linear_ communicates directly with SQL Server via ADO.NET. See [Configure MSSQL for DG Linear](configure-mssql-for-dglinear.html)
 2. _DataLink_ communicates with a DataGate Server via TCP/IP using its own proprietary protocol. The server is implemented as _DataGate for SQL Server_ (DSS) [^1]
 
-Most .NET 5.0 utilize the ADO.NET based protocol.
+**.NET Framework** applications use the _DataLink_ version while newer **.NET** applications use typically the _DataGate Linear_ implementation.
 
 In order to satisfy the ISAM style requests, DG makes use of Scrollable Server Cursors. DG associates a server cursor for each open file; it typically requests a single row at a time from the rowsets used in conjunction with the server cursor.  Each application can maintain a large set of active server cursors.  Record locks are maintained via row locks on the server cursor.
 
@@ -67,7 +67,7 @@ When a file is created, the creator specifies the maximum number of members (Max
 
 ![maximum-members-setting](images/maximum-members-setting.jpg)
 
-## Single Member Files
+### Single Member Files
 
 Single Member Files are a special case for those files allowing a maximum of one (1) member. The underlying SQL Server objects of Single Member Files are optimized to use a single table (or view) which represents both the file and the member. The name of the file is used to name the table (or view).
 
@@ -75,7 +75,7 @@ Single Member Files are forced to have exactly one member, and the member's assu
 
 DG Versions prior to 14.0 treated every file as a Single Member File.
 
-## Multi-Member Files
+### Multi-Member Files
 
 A file created with a Maximum Members greater than one is a Multi-Member File. These files employ one main table (or view) to represent the file and an additional table (or view) for each member.
 
@@ -87,7 +87,7 @@ The main table (or view) is named using the file's name and each member's table 
 
 The main table (or view) serves as the template for the record format and contains no record data. Records added to members are actually added to their corresponding table.
 
-## Installation Configuration
+### Installation Configuration
 
 The implementation of the Multi-Member Files facility could break compatibility for older programs that set a Maximum Member value greater than one while creating a new physical or logical file but expect to have a single table (or view) representing both the file and the member. ADBFM Classic users are particularly at risk.
 

@@ -250,8 +250,11 @@ Manuals:
           path: /manuals/datagate/programmers-guide/calling-stored-procedures.html
       - title: Error Handling
         path: /manuals/datagate/programmers-guide/error-handling.html
-    - title: DataGate on SQL Server
-      path: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
+    - sectiontitle: DataGate on SQL Server
+      sectionpath: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
+      section:
+        - title: Configure MS SQL Server for DataGate Linear
+          path: /manuals/datagate/on-sql-server/configure-mssql-for-dglinear.html
   - sectiontitle: Programming in Monarch Base
     section:
     - title: What's new in 4.0
