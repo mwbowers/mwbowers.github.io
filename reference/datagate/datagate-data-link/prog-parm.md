@@ -56,8 +56,6 @@ ProgParm(StructureType, DataDirection)
 | Type | Name | Description
 | --- | --- | --- 
 | [DataDirection](/reference/datagate/datagate-common/data-direction.html) | Direction | Gets or sets the data direction of the program parameter. |
-|  | m_data | The data of the program parameter. |
-|  | m_meta | The metadata of the program parameter. |
 
 ## Methods
 

@@ -16,6 +16,7 @@ Represents a delimiter that consists of multiple characters.
 | Type | Name | Description
 | --- | --- | --- 
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Value | Gets or sets the value of the delimiter. |
+| [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | Value | Gets or sets the value of the delimiter. |
 
 ## Methods
 

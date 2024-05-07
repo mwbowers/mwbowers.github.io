@@ -54,7 +54,6 @@ UserPasswordCredential()
 | --- | --- | --- 
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Password | Password information as a clear-text value. |
 | [PasswordType](/reference/datagate/datagate-common/password-type.html) | PasswordType | Gets or sets the type of the password associated with the UserPasswordCredential. |
-|  | StarDomain | Gets a UserPasswordCredential instance representing a domain user. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | User | Gets or sets a user name associated with the logon credential.Note that setting this to the special value "*DOMAIN" has the sideeffect of erasing the Password property value. |
 
 ## Methods

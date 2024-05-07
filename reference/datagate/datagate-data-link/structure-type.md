@@ -40,4 +40,3 @@ StructureType(String, Int32, Object[])
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | m_ptr | The internal representation of the parameter type. |

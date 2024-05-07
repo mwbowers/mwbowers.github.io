@@ -15,7 +15,6 @@ Provides extension methods for DataGate configuration.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | SECTION_SOURCES | Constant for the section name in the configuration that contains source profiles. |
 
 ## Methods
 

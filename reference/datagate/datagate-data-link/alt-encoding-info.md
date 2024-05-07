@@ -37,7 +37,6 @@ AltEncodingInfo(AltEncoding)
 | --- | --- | --- 
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CodePage | Gets the code page of the alternative encoding. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DisplayName | Gets the display name of the alternative encoding. |
-|  | m_enc | The alternative encoding. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Name | Gets the name of the alternative encoding. |
 
 ## Methods

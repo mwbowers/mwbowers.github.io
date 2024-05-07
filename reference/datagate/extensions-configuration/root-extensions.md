@@ -15,8 +15,6 @@ Provides extension methods for accessing ASNA and DataGate configuration section
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | SECTION_ASNA | Constant for the ASNA configuration section. |
-|  | SECTION_ASNA_DG | Constant for the DataGate configuration section within the ASNA section. |
 
 ## Methods
 

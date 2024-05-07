@@ -61,12 +61,10 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | Doc | Gets the XmlDocument that the current XmlElementConverter is working with. |
+| [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0) | Doc | Gets the XmlDocument that the current XmlElementConverter is working with. |
 | [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | Element | Gets the XmlElement that is currently being converted. |
 | [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html) | ElementName | Gets the name of the schema element that is currently being converted. |
 | [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | Parent | Gets or sets the XmlNode that contains the XmlElement to be converted. |
-|  | XsdFalse | Represents the string "false" as used in XML schema definitions. |
-|  | XsdTrue | Represents the string "true" as used in XML schema definitions. |
 
 ## Methods
 

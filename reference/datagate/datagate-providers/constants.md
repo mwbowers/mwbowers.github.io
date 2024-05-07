@@ -29,5 +29,3 @@ Constants()
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | OmitBlocking | Represents the omission of blocking. |
-|  | OptimalBlockingFactor | Represents the optimal blocking factor. |
