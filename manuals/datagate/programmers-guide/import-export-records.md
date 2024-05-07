@@ -61,7 +61,7 @@ public class CustomsAgent
 }
 ```
 
-It is also possible to use XML format instead of Comma Sparated Values to export and import data, to do so, use the [ImportOptions](/reference/datagate/datagate-client/import-options.html) and [ExportOptions](/reference/datagate/datagate-client/export-options.html)  classes instead of the [ImportFromCsvOptions](/reference/datagate/datagate-client/import-from-csv-options.html)  or [ExportToCsvOptions](/reference/datagate/datagate-client/export-to-csv-options.html.html)  classes.
+It is also possible to use XML format instead of Comma Sparated Values to export and import data, to do so, use the [ImportOptions](/reference/datagate/datagate-client/import-options.html) and [ExportOptions](/reference/datagate/datagate-client/export-options.html)  classes instead of the [ImportFromCsvOptions](/reference/datagate/datagate-client/import-from-csv-options.html)  or [ExportToCsvOptions](/reference/datagate/datagate-client/export-to-csv-options.html)  classes.
 
 ## See Also
 
