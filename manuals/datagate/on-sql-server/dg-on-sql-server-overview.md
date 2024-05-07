@@ -7,7 +7,7 @@ DataGate (DG) connects .NET clients with MS SQL Server.  The concepts surfaced b
 
 There are two implementations, both available on the ASNA.QSys.DataGate.Client .NET assembly, of the DG client:
 1. _DataGate Linear_ communicates directly with SQL Server via ADO.NET. See [Configure MSSQL for DG Linear](configure-mssql-for-dglinear.html)
-2. _DataLink_ communicates with a DataGate Server via TCP/IP using its own proprietary protocol. The server is implemented as _DataGate for SQL Server_ (DSS) [^1]
+2. _DataLink_ communicates with a DataGate Server via TCP/IP using its own [proprietary protocol](/manuals/datagate/programmers-guide/datagate-rpc-protocol.html). The server is implemented as _DataGate for SQL Server_ (DSS) [^1]
 
 **.NET Framework** applications use the _DataLink_ version while newer **.NET** applications use typically the _DataGate Linear_ implementation.
 

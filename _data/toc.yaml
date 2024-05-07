@@ -250,6 +250,8 @@ Manuals:
           path: /manuals/datagate/programmers-guide/calling-stored-procedures.html
       - title: Error Handling
         path: /manuals/datagate/programmers-guide/error-handling.html
+      - title: DataGate RPC Protocol Highlights
+        path: /manuals/datagate/programmers-guide/datagate-rpc-protocol.html        
     - sectiontitle: DataGate on SQL Server
       sectionpath: /manuals/datagate/on-sql-server/dg-on-sql-server-overview.html
       section:
