@@ -7,7 +7,7 @@ Declares an equitable interface used for schema element names.
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [IEquatable\<ISchemaElementName\>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-8.0)
 <br>
 <br>
 

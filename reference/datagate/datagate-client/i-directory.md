@@ -7,7 +7,7 @@ Defines the methods and properties for a DataGate directory.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable-1?view=net-8.0), [IConnectionHandler](/reference/datagate/datagate-client/i-connection-handler.html), [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0)
 <br>
 <br>
 In DG implementations of **IDirectory** , instance members are not guaranteed to be thread safe.

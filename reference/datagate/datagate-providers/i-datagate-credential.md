@@ -7,7 +7,7 @@ Defines a set of methods and properties that represent DataGate credentials.
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [ICloneable](https://learn.microsoft.com/en-us/dotnet/api/system.icloneable?view=net-8.0), [IEquatable\<IDataGateCredential\>](https://learn.microsoft.com/en-us/dotnet/api/system.iequatable-1?view=net-8.0)
 <br>
 <br>
 

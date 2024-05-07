@@ -7,7 +7,7 @@ Represents information on a database label
 **Namespace:** ASNA.DataGate.Client.DatabaseLabel
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

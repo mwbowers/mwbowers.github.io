@@ -19,7 +19,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CommandHelper_InvDbName | Looks up a localized string similar to Invalid SQL database name.. |
 | [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | Culture | Overrides the current thread's CurrentUICulture property for allresource lookups using this strongly typed resource class. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DataRowColumnComparer_CannotCompareDeletedRow | Looks up a localized string similar to The DataRowColumnComparer does not work with DataRows that have been deleted since it only compares current values.. |
-| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
+| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-8.0) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SqlCursor_CursorAlreadyOpen | Looks up a localized string similar to Cursor already open.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SqlCursor_InvalidFetchType | Looks up a localized string similar to Invalid fetch type.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SqlDataArea_ExpectedChar1 | Looks up a localized string similar to Expected DataTypes.Char(1) parameter.. |

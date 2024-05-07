@@ -7,7 +7,7 @@ Defines a factory for creating alternative encodings.
 **Namespace:** ASNA.DataGate.DataLink.Text
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

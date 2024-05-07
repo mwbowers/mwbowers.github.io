@@ -50,4 +50,4 @@ A strongly-typed resource class, for looking up localized strings, etc.
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ImportFrom_SourcePathExc | Looks up a localized string similar to SourcePath property of argument must specify a valid file path to which you have permission.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ImportFrom_TargetNullExc | Looks up a localized string similar to TargetMember property of argument cannot be null.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | InportFrom_TargetMemberNotSet | Looks up a localized string similar to TargetMember property not set.. |
-| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
+| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-8.0) | ResourceManager | Returns the cached ResourceManager instance used by this class. |

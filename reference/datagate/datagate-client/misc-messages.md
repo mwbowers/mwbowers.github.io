@@ -156,7 +156,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrintingProps_RendererSettingReadOnly | Looks up a localized string similar to Renderer setting's value element is read-only.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrintingProps_SectionLocked | Looks up a localized string similar to PrintingProps section cannot be modified.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ProgParm_ArgExcDontCareDirectionNone | Looks up a localized string similar to DataTypes.DontCare may only be specified with DataDirection.None.. |
-| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
+| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-8.0) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | RpcSync_Reentrancy | Looks up a localized string similar to Reentrancy detected.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SecureStringSafeBuffer_UpdateNotAllowed | Looks up a localized string similar to Cannot update a read-only SecureString. Either pass a SecureString instance that is not marked read-only, or change the value of the update parameter to 'false'.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SocketAsyncHelper_EOS | Looks up a localized string similar to TCP connection closed by remote host.. |

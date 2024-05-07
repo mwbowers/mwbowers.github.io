@@ -92,7 +92,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ReadRecordDataError | Looks up a localized string similar to Data error in record {0} of {1}.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ReadRecordErrorCount | Looks up a localized string similar to Failed to export {0} records with invalid data.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | RenamingObject | Looks up a localized string similar to Renaming object '{0}' to '{1}'. |
-| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
+| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-8.0) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SchemaValidationWarning | Looks up a localized string similar to Schema validation warning: '{0}'. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SkippingAllMembers | Looks up a localized string similar to Disregarding file members.. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SkippingDataArea | Looks up a localized string similar to Skipping dataarea element.. |

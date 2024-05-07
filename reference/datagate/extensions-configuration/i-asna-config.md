@@ -7,7 +7,7 @@ Defines a contract for ASNA configuration.
 **Namespace:** ASNA.Extensions.Configuration
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

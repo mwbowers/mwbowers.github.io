@@ -7,7 +7,7 @@ Defines methods for reading from an open access data stream.
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

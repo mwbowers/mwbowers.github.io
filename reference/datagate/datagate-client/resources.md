@@ -558,4 +558,4 @@ A strongly-typed resource class, for looking up localized strings, etc.
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | dgExMISSING | Looks up a localized string similar to Registered exit program not found. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | dgInnerExc_BaseFileParameter | Looks up a localized string similar to Base file count. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | dgInnerExc_MissingBaseFiles | Looks up a localized string similar to Logical file definition must specify a positive count of base files.. |
-| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
+| [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=net-8.0) | ResourceManager | Returns the cached ResourceManager instance used by this class. |
