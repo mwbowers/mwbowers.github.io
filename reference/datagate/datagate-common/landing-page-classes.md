@@ -9,7 +9,6 @@ The following are the Common classes provided by **ASNA DataGate Common** namesp
 | Type | Description |
 | --- | --- |
 | [AdgTrace](/reference/datagate/datagate-common/adg-trace.html) | ASNA DataGate Tracing class. |
-| [Apples](/reference/datagate/datagate-common/apples.html) | DG protocol-spec "reversible obfuscation". |
 | [ClrStringHelpers](/reference/datagate/datagate-common/clr-string-helpers.html) | Provides extension methods for .NET string functions with specific string comparison rules.These methods offer abstractions for .NET string functions peculiar to the .NET Core platform (and suggested by CA). |
 | [DecNumZPRep](/reference/datagate/datagate-common/dec-num-zp-rep.html) | DecNumZPRep provides methods for interpreting the Acceler8DB "ZPREP"code for packed and zoned decimal data representation, therebydescribing the format of these data representations. |
 | [DgDateTimeConverter](/reference/datagate/datagate-common/dg-date-time-converter.html) | Represents a converter for AS/400 date/time/timestamp values. |
