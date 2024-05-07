@@ -15,4 +15,4 @@ Defines a contract for ASNA configuration.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IDataGateConfig](/reference/datagate/extensions-configuration/i-data-gate-config.html) | DataGate | Gets the DataGate configuration. |
+| [IDataGateConfig](/reference/datagate/extensions-configuration/i-datagate-config.html) | DataGate | Gets the DataGate configuration. |

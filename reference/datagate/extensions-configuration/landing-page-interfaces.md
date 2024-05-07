@@ -10,4 +10,4 @@ The following are the interface provided by **ASNA Extensions Configuration** na
 | Type | Description |
 | --- | --- |
 | [IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html) | Defines a contract for ASNA configuration. |
-| [IDataGateConfig](/reference/datagate/extensions-configuration/i-data-gate-config.html) | Defines a contract for DataGate configuration. |
+| [IDataGateConfig](/reference/datagate/extensions-configuration/i-datagate-config.html) | Defines a contract for DataGate configuration. |
