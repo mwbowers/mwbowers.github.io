@@ -7,15 +7,15 @@ Defines the methods and properties for a DataGate transaction.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0)
 <br>
 <br>
-
-## Remarks
 ## Thread Safety
 
 Instance members of this type are not guaranteed to be thread safe.
 
+
+## Remarks
 This interface should be implemented by classes that represent a DataGate transaction.
 
 <br>

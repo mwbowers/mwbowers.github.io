@@ -26,9 +26,5 @@ Copy from import file options.
 | [Delimiter](/reference/datagate/datagate-client/delimiter.html) | RecordDelimiter | Record delimiter. |
 | [RemoveBlankOption](/reference/datagate/datagate-client/remove-blank-option.html) | RemoveBlanks | Remove blanks. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReplaceNullValues | Replace null values. |
-|  | STAR_END | *End. |
-|  | STAR_FIRST_INT | *First (integer). |
-|  | STAR_FIRST_STR | *First (string). |
-|  | STAR_NONE | *None. |
 | [Delimiter](/reference/datagate/datagate-client/delimiter.html) | StringDelimiter | String delimiter. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ToRecord | To record. |

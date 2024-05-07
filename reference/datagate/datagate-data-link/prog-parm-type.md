@@ -41,4 +41,3 @@ ProgParmType(String, Int32, FieldType)
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | m_ptr | The internal representation of the parameter type. |

@@ -7,7 +7,7 @@ Defines a contract for a source provider.
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [ICancelerProvider](https://learn.microsoft.com/en-us/dotnet/api/), [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0)
 <br>
 <br>
 

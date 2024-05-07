@@ -7,7 +7,7 @@ Defines the methods and properties for managing system values in DataGate.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0)
 <br>
 <br>
 

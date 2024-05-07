@@ -19,7 +19,6 @@ XML-compliant Name string.  For example, "$ITEMTEST" is returned as
 | Type | Name | Description
 | --- | --- | --- 
 | [DbXmlNameConverter](/reference/datagate/datagate-client/db-xml-name-converter.html) | Default | Gets the default XML name converter. |
-|  | Urn | XML converter Uniform resource name. |
 
 ## Methods
 

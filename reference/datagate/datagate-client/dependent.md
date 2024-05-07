@@ -10,11 +10,11 @@ Represents a dependent object in a DataGate client application.
 **Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)
 <br>
 <br>
-
-## Remarks
 ## Thread Safety
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
+
+## Remarks
 A dependent object is an object that is dependent on another object. 
 This class provides properties to get the type of the dependent object, 
 the type of dependency, and the path of the dependent object.

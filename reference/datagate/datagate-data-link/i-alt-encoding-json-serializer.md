@@ -8,7 +8,7 @@ participate in DataGate JSON serialization.
 **Namespace:** ASNA.DataGate.DataLink.Text
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

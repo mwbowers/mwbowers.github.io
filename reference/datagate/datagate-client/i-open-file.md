@@ -7,7 +7,7 @@ Defines the methods and properties for an open file in DataGate.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

@@ -18,8 +18,8 @@ DateTimeConverter (without *HIVAL/*LOVAL semantics).
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | ParseFormats | Gets the collection of formats that can be used to parse date/time strings. |
-|  | StringFormat | Gets the string format used for parsing and formatting date/time strings. |
+| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ParseFormats | Gets the collection of formats that can be used to parse date/time strings. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StringFormat | Gets the string format used for parsing and formatting date/time strings. |
 
 ## Methods
 

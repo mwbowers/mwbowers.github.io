@@ -7,14 +7,14 @@ Defines the methods and properties for managing a library list.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0)
 <br>
 <br>
-
-## Remarks
 ## Thread Safety
 
 In DG implementations of **ILibraryList** , instance members are not guaranteed to be thread safe.
+
+## Remarks
 This interface should be implemented by classes that need to manage a library list.
 
 <br>

@@ -7,7 +7,7 @@ Provides methods for creating encoder and decoder streams.
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

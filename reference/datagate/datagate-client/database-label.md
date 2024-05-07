@@ -15,7 +15,6 @@ Provides static methods for managing database labels.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | DefaultDgPort | Default DG port number. |
 
 ## Methods
 

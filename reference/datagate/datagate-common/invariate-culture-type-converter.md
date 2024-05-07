@@ -35,7 +35,6 @@ InvariateCultureTypeConverter(TypeConverter)
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | m_inner | The inner type converter used to perform the actual conversion. |
 
 ## Methods
 

@@ -7,14 +7,14 @@ Defines the methods and properties for a DataGate member.
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable-1?view=net-8.0), [IConnectionHandler](/reference/datagate/datagate-client/i-connection-handler.html), [IDisposable](https://learn.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-8.0)
 <br>
 <br>
-
-## Remarks
 ### Thread Safety
 
 In DG implementations of **IMember**, instance members are not guaranteed to be thread safe.
+
+## Remarks
 This interface should be implemented by classes that represent a DataGate member.
 
 <br>

@@ -37,7 +37,7 @@ DecNumZPRep(Int32)
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | Default | The default zoned/packed decimal representation object forDG/Windows. |
+| [DecNumZPRep](/reference/datagate/datagate-common/dec-num-zp-rep.html) | Default | The default zoned/packed decimal representation object forDG/Windows. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | NegPacked | Returns the 8-bit code for a packed decimal negative number.  Thecode is contained in the lower nibble, and the upper nibble iszero. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | NegZone | Returns the 8-bit code for a zoned decimal negative number.  Thecode is contained in the upper nibble, and the lower nibble iszero. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PosPacked | Returns the 8-bit code for a packed decimal positive number.  Thecode is contained in the lower nibble, and the upper nibble iszero. |

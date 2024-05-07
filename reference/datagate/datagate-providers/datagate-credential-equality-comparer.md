@@ -15,7 +15,6 @@ Provides a comparer for IDataGateCredential objects.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | Default | Gets the default instance of the DataGateCredentialEqualityComparer. |
 
 ## Methods
 

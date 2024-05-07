@@ -7,7 +7,7 @@ Defines a contract for exchanging 5250 data stream information.
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** 
+**Extends:** doesn't extend any other interfaces.
 <br>
 <br>
 

@@ -15,10 +15,9 @@ ASNA DataGate Tracing class.
 
 | Type | Name | Description
 | --- | --- | --- 
-|  | IsLogging | Gets a value indicating whether tracing is enabled. |
-|  | Queue | Gets the active trace queue. |
-|  | TraceConfigPrefix | Configuration prefix. |
-|  | TraceWriter | Gets the trace writer. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsLogging | Gets a value indicating whether tracing is enabled. |
+| [ActiveTraceQueue](https://learn.microsoft.com/en-us/dotnet/api/) | Queue | Gets the active trace queue. |
+| [ITraceWriter](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh944885\(v=vs.118\)) | TraceWriter | Gets the trace writer. |
 
 ## Methods
 
