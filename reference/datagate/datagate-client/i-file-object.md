@@ -10,9 +10,9 @@ Defines the methods and properties for a DataGate file object.
 **Inheritance:** 
 <br>
 <br>
+In DG implementations of **IFileObject** , instance members are not guaranteed to be thread safe.
 
 ## Remarks
-In DG implementations of **IFileObject** , instance members are not guaranteed to be thread safe.
 This interface should be implemented by classes that represent a DataGate file object.
 
 <br>
