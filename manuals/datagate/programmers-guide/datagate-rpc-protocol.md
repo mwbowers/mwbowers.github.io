@@ -5,17 +5,16 @@ title: DataGate RPC Protocol Highlights
 
 DataGate is a Client/Server middleware providing database access to .NET applications.
 
-DataGate Client implements two different ways of communicating with the database server.
-There are two implementations, both available on the ASNA.QSys.DataGate.Client .NET assembly, of the DG client:
-1. _DataLink_ communicates with a DataGate Server via TCP/IP using its own proprietary protocol. There are at least two implementations of the DataGate Server:
-    * DataGate for IBM i
-    * DataGate for SQL Server
-2. _DataGate Linear_ communicates **directly** with SQL Server via ADO.NET. 
-
+DataGate Client implements two different ways of communicating with the database server, both available on the ASNA.QSys.DataGate.Client .NET assembly:
+1. Via TCP/IP using DataGate's own proprietary protocol to communicate with a DataGate Server. There are at least two implementations of the DataGate Server:
+    * DataGate for IBM i, aka _DG/400_  ([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)`.PlatformAttribute = "*DATALINK"`)
+    * DataGate for SQL Server, aka _DSS_. ([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)`.PlatformAttribute = "*SQLOLEDB"`)
+2. Via ADO.NET to communicate **directly** with SQL Server. aka _DataGate Linear_. ([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)`.PlatformAttribute = "*SQLCLIENT"`)
 
 ![DataGate Client/Server Protocol](images/dg-dual-protocol.jpg)
 
-The following are highlights of the DataGate Protocol used by the _DataLink_ implementation.
+## Highlights
+The following are highlights of the DataGate Protocol.
 
 * DG is a proprietary RPC protocol implemented over TCP transport protocol. Each client connection "session" is a persistent TCP connection between the server’s configured TCP port (default, 5042) and a port assigned by the client system at connection initiation.  Transport mechanics and authentication of DG sessions are very similar to TELNET protocol-based console connections to IBM&nbsp;i and other console platforms.
 * DG servers are "passive listeners"; a session can only be initiated by a client application, such as an AVR or C# program.  When a client successfully opens a DG connection, the connection remains open until the client actively closes the connection, or a server/network exception occurs.
