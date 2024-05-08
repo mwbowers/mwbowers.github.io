@@ -15,8 +15,8 @@ Provides methods for simple serialization and deserialization of data.
 
 | Signature | Description |
 | --- | --- |
-| [Deserialize](#deserialize-stream-)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Deserializes data from the provided input stream.
-| [Serialize](#serialize-stream-)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Serializes data and writes it to the provided output stream.
+| [Deserialize](#deserializestream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Deserializes data from the provided input stream.
+| [Serialize](#serializestream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Serializes data and writes it to the provided output stream.
 
 ### void Deserialize([Stream istream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 

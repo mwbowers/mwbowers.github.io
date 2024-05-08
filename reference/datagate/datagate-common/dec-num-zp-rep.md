@@ -17,7 +17,7 @@ describing the format of these data representations.
 
 | Name | Description |
 | --- | --- |
-| [DecNumZPRep](#decnumzprep-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the DecNumZPRep class with the specified format.
+| [DecNumZPRep](#decnumzprepint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the DecNumZPRep class with the specified format.
 
 ### DecNumZPRep([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
@@ -48,10 +48,10 @@ DecNumZPRep(Int32)
 
 | Signature | Description |
 | --- | --- |
-| [IsNegativePacked](#isnegativepacked-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative packeddecimal byte.
-| [IsNegativeZone](#isnegativezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative zoneddecimal byte.
-| [IsPositivePacked](#ispositivepacked-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive packeddecimal byte.
-| [IsPositiveZone](#ispositivezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive zoneddecimal byte.
+| [IsNegativePacked](#isnegativepackedbyte)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative packeddecimal byte.
+| [IsNegativeZone](#isnegativezonebyte)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative zoneddecimal byte.
+| [IsPositivePacked](#ispositivepackedbyte)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive packeddecimal byte.
+| [IsPositiveZone](#ispositivezonebyte)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive zoneddecimal byte.
 
 ### bool IsNegativePacked([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 

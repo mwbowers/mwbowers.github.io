@@ -17,7 +17,7 @@ external use with the negotiated byte ordering.
 
 | Name | Description |
 | --- | --- |
-| [Ucs2Translator](#ucs2translator-datalink-)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [Ucs2Translator](#ucs2translatordatalink)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
 
 ### Ucs2Translator([DataLink](https://learn.microsoft.com/en-us/dotnet/api/))
 

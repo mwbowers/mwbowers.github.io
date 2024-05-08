@@ -15,8 +15,8 @@ Validation rule for the length of a given value
 
 | Name | Description |
 | --- | --- |
-| [ValidateLengthAttribute](#validatelengthattribute-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | 
-| [ValidateLengthAttribute](#validatelengthattribute-int32-string-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
+| [ValidateLengthAttribute](#validatelengthattributeint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | 
+| [ValidateLengthAttribute](#validatelengthattributeint32-string)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
 
 ### ValidateLengthAttribute([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 

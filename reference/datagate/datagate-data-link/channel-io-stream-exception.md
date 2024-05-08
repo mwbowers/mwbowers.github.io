@@ -15,10 +15,10 @@ Represents errors that occur during I/O operations in a ChannelIOStream.
 
 | Name | Description |
 | --- | --- |
-| [ChannelIOStreamException()](#channeliostreamexception-) | Initializes a new instance of the ChannelIOStreamException class.
-| [ChannelIOStreamException](#channeliostreamexception-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the ChannelIOStreamException class with a specified error message.
-| [ChannelIOStreamException](#channeliostreamexception-string-exception-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the ChannelIOStreamException class with a specified error message and a reference to the inner exception that is the cause of this exception.
-| [ChannelIOStreamException](#channeliostreamexception-exception-)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the ChannelIOStreamException class with a reference to the inner exception that is the cause of this exception.
+| [ChannelIOStreamException()](#channeliostreamexception) | Initializes a new instance of the ChannelIOStreamException class.
+| [ChannelIOStreamException](#channeliostreamexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the ChannelIOStreamException class with a specified error message.
+| [ChannelIOStreamException](#channeliostreamexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the ChannelIOStreamException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+| [ChannelIOStreamException](#channeliostreamexceptionexception)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the ChannelIOStreamException class with a reference to the inner exception that is the cause of this exception.
 
 ### ChannelIOStreamException()
 
@@ -75,7 +75,7 @@ ChannelIOStreamException(Exception)
 
 | Signature | Description |
 | --- | --- |
-| [Validate](#validate-exception-)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Validates the inner exception.
+| [Validate](#validateexception)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Validates the inner exception.
 
 ### Exception Validate([Exception inner](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 

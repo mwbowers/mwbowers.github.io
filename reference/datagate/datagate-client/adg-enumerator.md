@@ -15,7 +15,7 @@ Delegate for enumerating AdgObjects.
 
 | Name | Description |
 | --- | --- |
-| [AdgEnumerator](#adgenumerator-object-intptr-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
+| [AdgEnumerator](#adgenumeratorobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
 
 ### AdgEnumerator([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
 

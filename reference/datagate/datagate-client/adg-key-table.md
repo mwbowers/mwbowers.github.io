@@ -19,7 +19,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [AdgKeyTable](#adgkeytable-datatable-)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0)) | Prevent keyTableTemplate from accumulating row references (via PrepareRow()) by cloning a copy. 
+| [AdgKeyTable](#adgkeytabledatatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0)) | Prevent keyTableTemplate from accumulating row references (via PrepareRow()) by cloning a copy. 
 
 ### AdgKeyTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0))
 
@@ -46,7 +46,7 @@ AdgKeyTable(DataTable)
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#equals-datarow-)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Determines whether the specified DataRow is equal to the current DataRow.
+| [Equals](#equalsdatarow)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Determines whether the specified DataRow is equal to the current DataRow.
 
 ### bool Equals([DataRow other](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 

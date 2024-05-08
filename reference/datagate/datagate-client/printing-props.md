@@ -21,7 +21,7 @@ This class was automatically generated and contains application settings for pri
 
 | Name | Description |
 | --- | --- |
-| [PrintingProps()](#printingprops-) | 
+| [PrintingProps()](#printingprops) | 
 
 ### PrintingProps()
 
@@ -43,10 +43,10 @@ PrintingProps()
 
 | Signature | Description |
 | --- | --- |
-| [GetRendererPath()](#getrendererpath-) | Gets the renderer path.
-| [IsRendererPathMissing()](#isrendererpathmissing-) | Determines if the renderer path is missing.
-| [SetRendererPath](#setrendererpath-string-configuration-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
-| [SetRendererPathInMachineConfig](#setrendererpathinmachineconfig-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
+| [GetRendererPath()](#getrendererpath) | Gets the renderer path.
+| [IsRendererPathMissing()](#isrendererpathmissing) | Determines if the renderer path is missing.
+| [SetRendererPath](#setrendererpathstring-configuration)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
+| [SetRendererPathInMachineConfig](#setrendererpathinmachineconfigstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
 
 ### string GetRendererPath()
 

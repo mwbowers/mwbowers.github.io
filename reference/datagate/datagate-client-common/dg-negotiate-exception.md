@@ -15,9 +15,9 @@ DataGate specialized exception to deal with authority negotiation errors.
 
 | Name | Description |
 | --- | --- |
-| [DgNegotiateException()](#dgnegotiateexception-) | Initializes a new instance of the  class.
-| [DgNegotiateException](#dgnegotiateexception-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class.
-| [DgNegotiateException](#dgnegotiateexception-string-exception-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class.
+| [DgNegotiateException()](#dgnegotiateexception) | Initializes a new instance of the  class.
+| [DgNegotiateException](#dgnegotiateexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class.
+| [DgNegotiateException](#dgnegotiateexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class.
 
 ### DgNegotiateException()
 

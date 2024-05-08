@@ -16,7 +16,7 @@ open files and connections.
 
 | Name | Description |
 | --- | --- |
-| [NetHandle()](#nethandle-) | 
+| [NetHandle()](#nethandle) | 
 
 ### NetHandle()
 

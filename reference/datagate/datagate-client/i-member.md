@@ -32,8 +32,8 @@ This interface should be implemented by classes that represent a DataGate member
 
 | Signature | Description |
 | --- | --- |
-| [Clear()](#clear-) | Clears the member.
-| [Initialize](#initialize-initmemberoptions-int64-)([InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with the specified options and number of records.
+| [Clear()](#clear) | Clears the member.
+| [Initialize](#initializeinitmemberoptions-int64)([InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with the specified options and number of records.
 
 ### void Clear()
 

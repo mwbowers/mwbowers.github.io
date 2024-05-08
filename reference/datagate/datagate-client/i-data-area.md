@@ -28,26 +28,26 @@ This interface should be implemented by classes that represent a DataGate data a
 
 | Signature | Description |
 | --- | --- |
-| [AppendParm](#appendparm-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a ProgParm parameter to the data area.
-| [Change](#change-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Changes the value of the data area.
-| [Change](#change-decimal-)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Changes the value of the data area.
-| [Change](#change-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the value of the data area.
-| [Change](#change-string-int32-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
-| [Change](#change-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Changes the value of the data area.
-| [Change](#change-progparm-int32-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
-| [ObjectToParm](#objecttoparm-object-string-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the value of the specified parameter in the data area.
-| [ObjectToParm](#objecttoparm-progparm-object-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of the specified parameter in the data area.
-| [ObjectToParm](#objecttoparm-progparm-object-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
-| [ObjectToParm](#objecttoparm-object-string-int32-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
-| [ParmToObject](#parmtoobject-type-string-)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [ParmToObject](#parmtoobject-progparm-type-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [ParmToObject](#parmtoobject-progparm-type-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [ParmToObject](#parmtoobject-type-string-int32-)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [Retrieve()](#retrieve-) | Retrieves the value of the data area.
-| [Retrieve](#retrieve-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
-| [Retrieve](#retrieve-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Retrieves the value of the data area.
-| [Retrieve](#retrieve-progparm-int32-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
-| [SetInitialValue](#setinitialvalue-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the initial value of the data area.
+| [AppendParm](#appendparmprogparm)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a ProgParm parameter to the data area.
+| [Change](#changeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Changes the value of the data area.
+| [Change](#changedecimal)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Changes the value of the data area.
+| [Change](#changestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the value of the data area.
+| [Change](#changestring-int32-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
+| [Change](#changeprogparm)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Changes the value of the data area.
+| [Change](#changeprogparm-int32-int32)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
+| [ObjectToParm](#objecttoparmobject-string)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the value of the specified parameter in the data area.
+| [ObjectToParm](#objecttoparmprogparm-object)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of the specified parameter in the data area.
+| [ObjectToParm](#objecttoparmprogparm-object-int32)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
+| [ObjectToParm](#objecttoparmobject-string-int32)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
+| [ParmToObject](#parmtoobjecttype-string)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the value of the specified parameter in the data area to the specified return type.
+| [ParmToObject](#parmtoobjectprogparm-type)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the value of the specified parameter in the data area to the specified return type.
+| [ParmToObject](#parmtoobjectprogparm-type-int32)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
+| [ParmToObject](#parmtoobjecttype-string-int32)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
+| [Retrieve()](#retrieve) | Retrieves the value of the data area.
+| [Retrieve](#retrieveint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
+| [Retrieve](#retrieveprogparm)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Retrieves the value of the data area.
+| [Retrieve](#retrieveprogparm-int32-int32)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
+| [SetInitialValue](#setinitialvaluestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the initial value of the data area.
 
 ### void AppendParm([ProgParm Parameter](/reference/datagate/datagate-data-link/prog-parm.html))
 

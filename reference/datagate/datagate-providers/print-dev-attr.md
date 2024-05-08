@@ -20,7 +20,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [PrintDevAttr()](#printdevattr-) | Initializes a new instance of the  class.
+| [PrintDevAttr()](#printdevattr) | Initializes a new instance of the  class.
 
 ### PrintDevAttr()
 
@@ -73,8 +73,8 @@ PrintDevAttr()
 
 | Signature | Description |
 | --- | --- |
-| [ReadXml](#readxml-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads XML data into the PrintDevAttr object.
-| [WriteXml](#writexml-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the PrintDevAttr object into XML data.
+| [ReadXml](#readxmlxmlreader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads XML data into the PrintDevAttr object.
+| [WriteXml](#writexmlxmlwriter)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the PrintDevAttr object into XML data.
 
 ### void ReadXml([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 

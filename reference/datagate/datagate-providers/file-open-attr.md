@@ -20,7 +20,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [FileOpenAttr()](#fileopenattr-) | Initializes a new instance of the FileOpenAttr class.
+| [FileOpenAttr()](#fileopenattr) | Initializes a new instance of the FileOpenAttr class.
 
 ### FileOpenAttr()
 

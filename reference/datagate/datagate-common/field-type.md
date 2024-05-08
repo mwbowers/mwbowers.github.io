@@ -31,21 +31,21 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Signature | Description |
 | --- | --- |
-| [GetSystemTypeOfType](#getsystemtypeoftype-datatypes-int32-)([DataTypes](/reference/datagate/datagate-common/data-types.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the system type equivalent of the specified ASNA DataGate data type.
-| [NewBinary](#newbinary-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a binary data type.
-| [NewByte()](#newbyte-) | Creates a new FieldType instance representing a byte data type.
-| [NewChar](#newchar-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a character data type.
-| [NewDate](#newdate-datetimeformat-)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a date data type.
-| [NewDBCS](#newdbcs-int32-dbcsformat-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html)) | Creates a new FieldType instance representing a DBCS (Double-Byte Character Set) data type.
-| [NewDontCare](#newdontcare-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a data type that doesn't care about the specific type.
-| [NewFloat](#newfloat-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a floating point data type.
-| [NewHex](#newhex-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a hexadecimal data type.
-| [NewInteger](#newinteger-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing an integer data type.
-| [NewPacked](#newpacked-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a packed decimal data type.
-| [NewTime](#newtime-datetimeformat-)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a time data type.
-| [NewTimestamp()](#newtimestamp-) | Creates a new FieldType instance representing a timestamp data type.
-| [NewUnicode](#newunicode-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a Unicode data type.
-| [NewZoned](#newzoned-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a zoned decimal data type.
+| [GetSystemTypeOfType](#getsystemtypeoftypedatatypes-int32)([DataTypes](/reference/datagate/datagate-common/data-types.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the system type equivalent of the specified ASNA DataGate data type.
+| [NewBinary](#newbinaryint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a binary data type.
+| [NewByte()](#newbyte) | Creates a new FieldType instance representing a byte data type.
+| [NewChar](#newcharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a character data type.
+| [NewDate](#newdatedatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a date data type.
+| [NewDBCS](#newdbcsint32-dbcsformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html)) | Creates a new FieldType instance representing a DBCS (Double-Byte Character Set) data type.
+| [NewDontCare](#newdontcareint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a data type that doesn't care about the specific type.
+| [NewFloat](#newfloatint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a floating point data type.
+| [NewHex](#newhexint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a hexadecimal data type.
+| [NewInteger](#newintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing an integer data type.
+| [NewPacked](#newpackedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a packed decimal data type.
+| [NewTime](#newtimedatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a time data type.
+| [NewTimestamp()](#newtimestamp) | Creates a new FieldType instance representing a timestamp data type.
+| [NewUnicode](#newunicodeint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a Unicode data type.
+| [NewZoned](#newzonedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a zoned decimal data type.
 
 ### Type GetSystemTypeOfType([DataTypes dt](/reference/datagate/datagate-common/data-types.html), [int byteLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

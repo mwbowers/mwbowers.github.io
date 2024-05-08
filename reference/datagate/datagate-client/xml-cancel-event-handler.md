@@ -15,7 +15,7 @@ Import/export operations delegates.
 
 | Name | Description |
 | --- | --- |
-| [XmlCancelEventHandler](#xmlcanceleventhandler-object-intptr-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
+| [XmlCancelEventHandler](#xmlcanceleventhandlerobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
 
 ### XmlCancelEventHandler([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
 

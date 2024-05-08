@@ -15,7 +15,7 @@ Converts a UserPasswordCredential to or from JSON.
 
 | Name | Description |
 | --- | --- |
-| [UserPasswordCredentialInlineConverter()](#userpasswordcredentialinlineconverter-) | 
+| [UserPasswordCredentialInlineConverter()](#userpasswordcredentialinlineconverter) | 
 
 ### UserPasswordCredentialInlineConverter()
 
@@ -29,8 +29,8 @@ UserPasswordCredentialInlineConverter()
 
 | Signature | Description |
 | --- | --- |
-| [Read](#read-utf8jsonreader-type-jsonserializeroptions-)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads and converts the JSON to type UserPasswordCredential.
-| [Write](#write-utf8jsonwriter-userpasswordcredential-jsonserializeroptions-)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a UserPasswordCredential object to JSON.
+| [Read](#readutf8jsonreader-type-jsonserializeroptions)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads and converts the JSON to type UserPasswordCredential.
+| [Write](#writeutf8jsonwriter-userpasswordcredential-jsonserializeroptions)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a UserPasswordCredential object to JSON.
 
 ### UserPasswordCredential Read([Utf8JsonReader& reader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type typeToConvert](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 

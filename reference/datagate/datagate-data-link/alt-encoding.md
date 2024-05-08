@@ -15,7 +15,7 @@ Represents an alternative encoding that extends the base Encoding class.
 
 | Name | Description |
 | --- | --- |
-| [AltEncoding()](#altencoding-) | Initializes a new instance of the  class.
+| [AltEncoding()](#altencoding) | Initializes a new instance of the  class.
 
 ### AltEncoding()
 
@@ -37,19 +37,19 @@ AltEncoding()
 
 | Signature | Description |
 | --- | --- |
-| [DictionaryFromITransformProps](#dictionaryfromitransformprops-itransformproperties-)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Converts transform properties to a dictionary.
-| [Equal](#equal-itransformproperties-itransformproperties-)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Determines whether two transform properties are equal.
-| [GetAltDecoder](#getaltdecoder-itransformproperties-)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Gets an alternative decoder with the specified transform properties.
-| [GetAltEncoder](#getaltencoder-itransformproperties-)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Gets an alternative encoder with the specified transform properties.
-| [GetAltEncoding](#getaltencoding-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves an alternative encoding by name.
-| [GetAltEncodingInfo()](#getaltencodinginfo-) | Gets the alternative encoding information.
-| [GetDecoder()](#getdecoder-) | Gets the default decoder.
-| [GetDecoderImpl()](#getdecoderimpl-) | Gets the implementation of the alternative decoder.
-| [GetEncoder()](#getencoder-) | Gets the default encoder.
-| [GetEncoderImpl()](#getencoderimpl-) | Gets the implementation of the alternative encoder.
-| [TransformPropertiesFromDictionary](#transformpropertiesfromdictionary-dictionary`2-object-)([Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a dictionary to transform properties.
-| [TransformPropertiesFromStream](#transformpropertiesfromstream-binaryreader-)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | Converts a binary reader to transform properties.
-| [TransformPropertiesToStream](#transformpropertiestostream-itransformproperties-binarywriter-)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | Converts transform properties to a binary writer.
+| [DictionaryFromITransformProps](#dictionaryfromitransformpropsitransformproperties)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Converts transform properties to a dictionary.
+| [Equal](#equalitransformproperties-itransformproperties)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Determines whether two transform properties are equal.
+| [GetAltDecoder](#getaltdecoderitransformproperties)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Gets an alternative decoder with the specified transform properties.
+| [GetAltEncoder](#getaltencoderitransformproperties)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Gets an alternative encoder with the specified transform properties.
+| [GetAltEncoding](#getaltencodingstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves an alternative encoding by name.
+| [GetAltEncodingInfo()](#getaltencodinginfo) | Gets the alternative encoding information.
+| [GetDecoder()](#getdecoder) | Gets the default decoder.
+| [GetDecoderImpl()](#getdecoderimpl) | Gets the implementation of the alternative decoder.
+| [GetEncoder()](#getencoder) | Gets the default encoder.
+| [GetEncoderImpl()](#getencoderimpl) | Gets the implementation of the alternative encoder.
+| [TransformPropertiesFromDictionary](#transformpropertiesfromdictionarydictionary-2-object)([Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a dictionary to transform properties.
+| [TransformPropertiesFromStream](#transformpropertiesfromstreambinaryreader)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | Converts a binary reader to transform properties.
+| [TransformPropertiesToStream](#transformpropertiestostreamitransformproperties-binarywriter)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | Converts transform properties to a binary writer.
 
 ### Dictionary<string, object> DictionaryFromITransformProps([ITransformProperties props](/reference/datagate/datagate-providers/i-transform-properties.html))
 

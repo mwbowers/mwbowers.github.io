@@ -15,7 +15,7 @@ Convert a datalink file def stream to/from XML.
 
 | Name | Description |
 | --- | --- |
-| [XmlFileDef](#xmlfiledef-filedefinfo-)([FileDefInfo](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [XmlFileDef](#xmlfiledeffiledefinfo)([FileDefInfo](https://learn.microsoft.com/en-us/dotnet/api/)) | 
 
 ### XmlFileDef([FileDefInfo](https://learn.microsoft.com/en-us/dotnet/api/))
 

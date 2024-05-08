@@ -15,11 +15,11 @@ Utility class for operations related to AdgKeyTable.
 
 | Signature | Description |
 | --- | --- |
-| [Copy](#copy-adgkeytable-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Creates a copy of the AdgKeyTable instance.
-| [ExactMatch](#exactmatch-adgkeytable-datarow-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Checks if the AdgKeyTable exactly matches with a DataRow.
-| [GetCommonValueKeyPartCount](#getcommonvaluekeypartcount-adgkeytable-adgkeytable-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Gets the count of common value key parts between two AdgKeyTable instances.
-| [GetKey](#getkey-datarow-adgdataset-int32-)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the AdgKeyTable from a DataRow.
-| [TotalMatchingParts](#totalmatchingparts-adgkeytable-int32-datarow-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Gets the total matching parts between the AdgKeyTable and a DataRow.
+| [Copy](#copyadgkeytable)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Creates a copy of the AdgKeyTable instance.
+| [ExactMatch](#exactmatchadgkeytable-datarow)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Checks if the AdgKeyTable exactly matches with a DataRow.
+| [GetCommonValueKeyPartCount](#getcommonvaluekeypartcountadgkeytable-adgkeytable)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Gets the count of common value key parts between two AdgKeyTable instances.
+| [GetKey](#getkeydatarow-adgdataset-int32)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the AdgKeyTable from a DataRow.
+| [TotalMatchingParts](#totalmatchingpartsadgkeytable-int32-datarow)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Gets the total matching parts between the AdgKeyTable and a DataRow.
 
 ### AdgKeyTable Copy([AdgKeyTable kt](/reference/datagate/datagate-client/adg-key-table.html))
 

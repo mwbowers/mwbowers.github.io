@@ -18,8 +18,8 @@ waiters, and the object remains in the signalled state thereafter
 
 | Name | Description |
 | --- | --- |
-| [ManualResetEvent](#manualresetevent-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | 
-| [ManualResetEvent()](#manualresetevent-) | 
+| [ManualResetEvent](#manualreseteventboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | 
+| [ManualResetEvent()](#manualresetevent) | 
 
 ### ManualResetEvent([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

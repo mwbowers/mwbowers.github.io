@@ -20,7 +20,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParmType](#progparmtype-string-int32-fieldtype-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html)) | Initializes a new instance of the  class.
+| [ProgParmType](#progparmtypestring-int32-fieldtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html)) | Initializes a new instance of the  class.
 
 ### ProgParmType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html))
 

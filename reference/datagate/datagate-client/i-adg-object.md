@@ -52,23 +52,23 @@ This interface should be implemented by classes that represent a DataGate object
 
 | Signature | Description |
 | --- | --- |
-| [Create()](#create-) | Creates the ASNA DataGate object.
-| [Duplicate](#duplicate-string-string-string-duplicateoptions-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DuplicateOptions](/reference/datagate/datagate-common/duplicate-options.html)) | Duplicates the ASNA DataGate object.
-| [GrantAuthority](#grantauthority-string-authoritytypes-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Grants authority to a user for the ASNA DataGate object.
-| [HasLock](#haslock-sharetypes-)([ShareTypes](/reference/datagate/datagate-common/share-types.html)) | Checks if the ASNA DataGate object has a lock of the specified share type.
-| [Lock](#lock-sharetypes-waitoptions-int16-)([ShareTypes](/reference/datagate/datagate-common/share-types.html), [WaitOptions](/reference/datagate/datagate-common/wait-options.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Locks the ASNA DataGate object with the specified share type, wait option, and wait time.
-| [MoveTo](#moveto-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Moves the ASNA DataGate object to the specified path.
-| [ReadBases](#readbases-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the base objects of the ASNA DataGate object from the specified XML reader.
-| [Remove()](#remove-) | Removes the ASNA DataGate object.
-| [Rename](#rename-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Renames the ASNA DataGate object.
-| [ResolvePathName()](#resolvepathname-) | Resolves the path name of the ASNA DataGate object.
-| [RevokeAuthority](#revokeauthority-string-authoritytypes-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Revokes the specified authority from a user for the ASNA DataGate object.
-| [ToString()](#tostring-) | Returns a string representation of the object.
-| [Unlock](#unlock-sharetypes-)([ShareTypes](/reference/datagate/datagate-common/share-types.html)) | Unlocks the ASNA DataGate object with the specified share type.
-| [WriteBases](#writebases-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
-| [WriteXml](#writexml-xmlwriter-xmloptions-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
-| [WriteXml](#writexml-xmlwriter-xmloptions-xmlcanceleventhandler-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
-| [WriteXml](#writexml-xmlwriter-xmloptions-xmlcanceleventhandler-openfileadapterdelegate-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
+| [Create()](#create) | Creates the ASNA DataGate object.
+| [Duplicate](#duplicatestring-string-string-duplicateoptions)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DuplicateOptions](/reference/datagate/datagate-common/duplicate-options.html)) | Duplicates the ASNA DataGate object.
+| [GrantAuthority](#grantauthoritystring-authoritytypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Grants authority to a user for the ASNA DataGate object.
+| [HasLock](#haslocksharetypes)([ShareTypes](/reference/datagate/datagate-common/share-types.html)) | Checks if the ASNA DataGate object has a lock of the specified share type.
+| [Lock](#locksharetypes-waitoptions-int16)([ShareTypes](/reference/datagate/datagate-common/share-types.html), [WaitOptions](/reference/datagate/datagate-common/wait-options.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Locks the ASNA DataGate object with the specified share type, wait option, and wait time.
+| [MoveTo](#movetostring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Moves the ASNA DataGate object to the specified path.
+| [ReadBases](#readbasesxmlreader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the base objects of the ASNA DataGate object from the specified XML reader.
+| [Remove()](#remove) | Removes the ASNA DataGate object.
+| [Rename](#renamestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Renames the ASNA DataGate object.
+| [ResolvePathName()](#resolvepathname) | Resolves the path name of the ASNA DataGate object.
+| [RevokeAuthority](#revokeauthoritystring-authoritytypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Revokes the specified authority from a user for the ASNA DataGate object.
+| [ToString()](#tostring) | Returns a string representation of the object.
+| [Unlock](#unlocksharetypes)([ShareTypes](/reference/datagate/datagate-common/share-types.html)) | Unlocks the ASNA DataGate object with the specified share type.
+| [WriteBases](#writebasesxmlwriter)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
+| [WriteXml](#writexmlxmlwriter-xmloptions)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
+| [WriteXml](#writexmlxmlwriter-xmloptions-xmlcanceleventhandler)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
+| [WriteXml](#writexmlxmlwriter-xmloptions-xmlcanceleventhandler-openfileadapterdelegate)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html)) | Writes the base objects of the ASNA DataGate object to the specified XML writer.
 
 ### void Create()
 

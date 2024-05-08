@@ -15,7 +15,7 @@ Implementation of library list for monitor class
 
 | Name | Description |
 | --- | --- |
-| [MyLibList()](#myliblist-) | 
+| [MyLibList()](#myliblist) | 
 
 ### MyLibList()
 

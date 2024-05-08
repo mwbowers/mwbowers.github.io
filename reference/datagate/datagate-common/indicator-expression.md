@@ -23,7 +23,7 @@ example: 1 & 2 & !3 | 44 & 55 | 60
 
 | Name | Description |
 | --- | --- |
-| [IndicatorExpression](#indicatorexpression-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the indicator expression.
+| [IndicatorExpression](#indicatorexpressionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the indicator expression.
 
 ### IndicatorExpression([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -43,7 +43,7 @@ IndicatorExpression(String)
 
 | Signature | Description |
 | --- | --- |
-| [Eval](#eval-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the expression using the indicator values passed in.
+| [Eval](#evalchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the expression using the indicator values passed in.
 
 ### bool Eval([Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 

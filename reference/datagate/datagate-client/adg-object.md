@@ -15,7 +15,7 @@ Root for all ASNA DataGate objects.
 
 | Signature | Description |
 | --- | --- |
-| [GetValidatingReader](#getvalidatingreader-xmlreader-xmlschemaset-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlSchemaSet](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschemaset?view=net-8.0)) | Create a validating reader using the passed XmlReader forinitializing other settings.  Do NOT create a new validatingreader if the passed XmlReader is already a validating reader.Caller must dispose function return value if non-null.
+| [GetValidatingReader](#getvalidatingreaderxmlreader-xmlschemaset)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlSchemaSet](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschemaset?view=net-8.0)) | Create a validating reader using the passed XmlReader forinitializing other settings.  Do NOT create a new validatingreader if the passed XmlReader is already a validating reader.Caller must dispose function return value if non-null.
 
 ### IDisposable GetValidatingReader([XmlReader& reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlSchemaSet schema](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschemaset?view=net-8.0))
 

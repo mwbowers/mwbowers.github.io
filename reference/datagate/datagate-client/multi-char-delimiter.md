@@ -22,13 +22,13 @@ Represents a delimiter that consists of multiple characters.
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines if the current Delimiter instance is equal to the specified object.
-| [GetHashCode()](#gethashcode-) | Overrides the GetHashCode method of the base class.
-| [op_Equality](#op_equality-multichardelimiter-delimiter-)([MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of MultiCharDelimiter and Delimiter are equal.
-| [op_Equality](#op_equality-delimiter-multichardelimiter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines if the instances of Delimiter and MultiCharDelimiter are equal.
-| [op_Inequality](#op_inequality-multichardelimiter-delimiter-)([MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of MultiCharDelimiter and Delimiter are not equal.
-| [op_Inequality](#op_inequality-delimiter-multichardelimiter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines if the instances of Delimiter and MultiCharDelimiter  are not equal.
-| [ToString()](#tostring-) | Returns the string representation of the Delimiter instance.
+| [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines if the current Delimiter instance is equal to the specified object.
+| [GetHashCode()](#gethashcode) | Overrides the GetHashCode method of the base class.
+| [op_Equality](#op-equalitymultichardelimiter-delimiter)([MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of MultiCharDelimiter and Delimiter are equal.
+| [op_Equality](#op-equalitydelimiter-multichardelimiter)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines if the instances of Delimiter and MultiCharDelimiter are equal.
+| [op_Inequality](#op-inequalitymultichardelimiter-delimiter)([MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of MultiCharDelimiter and Delimiter are not equal.
+| [op_Inequality](#op-inequalitydelimiter-multichardelimiter)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines if the instances of Delimiter and MultiCharDelimiter  are not equal.
+| [ToString()](#tostring) | Returns the string representation of the Delimiter instance.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

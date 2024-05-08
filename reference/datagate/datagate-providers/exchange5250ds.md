@@ -15,7 +15,7 @@ Represents a method that exchanges 5250 data stream information.
 
 | Name | Description |
 | --- | --- |
-| [Exchange5250DS](#exchange5250ds-object-intptr-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
+| [Exchange5250DS](#exchange5250dsobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
 
 ### Exchange5250DS([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
 

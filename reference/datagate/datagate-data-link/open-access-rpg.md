@@ -15,7 +15,7 @@ Represents a method that handles I/O operations for an OpenAccessRpg.
 
 | Name | Description |
 | --- | --- |
-| [OpenAccessRpg](#openaccessrpg-object-intptr-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
+| [OpenAccessRpg](#openaccessrpgobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
 
 ### OpenAccessRpg([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
 

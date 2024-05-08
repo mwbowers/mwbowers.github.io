@@ -22,7 +22,7 @@ Any instance members are not guaranteed to be thread safe.
 
 | Name | Description |
 | --- | --- |
-| [AdgDataSet](#adgdataset-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the AdgDataSet class with the specified name.
+| [AdgDataSet](#adgdatasetstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the AdgDataSet class with the specified name.
 
 ### AdgDataSet([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -61,32 +61,32 @@ AdgDataSet(String)
 
 | Signature | Description |
 | --- | --- |
-| [AddPreparedRowAndSetActive](#addpreparedrowandsetactive-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a prepared row to the AdgDataSet for the specified format and sets it as the active row.
-| [AddRow](#addrow-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a new row to the AdgDataSet for the specified format.
-| [AddRow](#addrow-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a new row to the AdgDataSet for the specified format.
-| [Contains](#contains-keyvaluepair-adgtable-)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/datagate/datagate-client/adg-table.html)) | Determines whether the dictionary contains a specific key-value pair.
-| [ContainsKey](#containskey-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Determines whether the dictionary contains an element with the specified key.
-| [CopyTo](#copyto-keyvaluepair-adgtable-int32-)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/datagate/datagate-client/adg-table.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies the elements of the dictionary to an array, starting at a particular array index.
-| [DeleteRow](#deleterow-string-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Deletes a row from the AdgDataSet based on the specified format and row number.
-| [GetEnumerator()](#getenumerator-) | Returns an enumerator that iterates through the key-value pairs in the dictionary.
-| [GetFormatIndex](#getformatindex-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the format index for the specified format name in the AdgDataSet.
-| [GetFormatName](#getformatname-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the name of the format associated with the specified index in the AdgDataSet.
-| [GetFormatTable](#getformattable-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataTable associated with the specified format in the AdgDataSet.
-| [GetFormatTable](#getformattable-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the DataTable associated with the specified format in the AdgDataSet.
-| [Initialize()](#initialize-) | Initializes the AdgDataSet.
-| [InitializeCommon()](#initializecommon-) | Initializes common properties and formats for the AdgDataSet.
-| [InitializeFormats()](#initializeformats-) | Initializes the formats for the AdgDataSet.
-| [InsertRow](#insertrow-string-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Inserts a new row into the AdgDataSet for the specified format at the specified row number.
-| [InsertRow](#insertrow-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Inserts a new row into the AdgDataSet for the specified format at the specified row number.
-| [NewKeyTable](#newkeytable-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new instance of AdgKeyTable for the specified format.
-| [NewKeyTable](#newkeytable-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of AdgKeyTable for the specified format.
-| [PrepareRow](#preparerow-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
-| [PrepareRow](#preparerow-string-datarow-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Prepares a new DataRow for the specified format in the AdgDataSet.
-| [PrepareRow](#preparerow-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Prepares a new DataRow for the specified format in the AdgDataSet.
-| [SetActive](#setactive-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the active DataRow in the AdgTable for the specified format and row number.
-| [SetActive](#setactive-string-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the active DataRow in the AdgTable for the specified format and row number.
-| [TryGetValue](#trygetvalue-string-adgtable-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgTable](/reference/datagate/datagate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
-| [TryGetValue](#trygetvalue-int32-adgtable-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgTable](/reference/datagate/datagate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
+| [AddPreparedRowAndSetActive](#addpreparedrowandsetactiveint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a prepared row to the AdgDataSet for the specified format and sets it as the active row.
+| [AddRow](#addrowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a new row to the AdgDataSet for the specified format.
+| [AddRow](#addrowint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a new row to the AdgDataSet for the specified format.
+| [Contains](#containskeyvaluepair-adgtable)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/datagate/datagate-client/adg-table.html)) | Determines whether the dictionary contains a specific key-value pair.
+| [ContainsKey](#containskeyint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Determines whether the dictionary contains an element with the specified key.
+| [CopyTo](#copytokeyvaluepair-adgtable-int32)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [AdgTable](/reference/datagate/datagate-client/adg-table.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies the elements of the dictionary to an array, starting at a particular array index.
+| [DeleteRow](#deleterowstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Deletes a row from the AdgDataSet based on the specified format and row number.
+| [GetEnumerator()](#getenumerator) | Returns an enumerator that iterates through the key-value pairs in the dictionary.
+| [GetFormatIndex](#getformatindexstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the format index for the specified format name in the AdgDataSet.
+| [GetFormatName](#getformatnameint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the name of the format associated with the specified index in the AdgDataSet.
+| [GetFormatTable](#getformattableint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the DataTable associated with the specified format in the AdgDataSet.
+| [GetFormatTable](#getformattablestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the DataTable associated with the specified format in the AdgDataSet.
+| [Initialize()](#initialize) | Initializes the AdgDataSet.
+| [InitializeCommon()](#initializecommon) | Initializes common properties and formats for the AdgDataSet.
+| [InitializeFormats()](#initializeformats) | Initializes the formats for the AdgDataSet.
+| [InsertRow](#insertrowstring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Inserts a new row into the AdgDataSet for the specified format at the specified row number.
+| [InsertRow](#insertrowint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Inserts a new row into the AdgDataSet for the specified format at the specified row number.
+| [NewKeyTable](#newkeytableint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new instance of AdgKeyTable for the specified format.
+| [NewKeyTable](#newkeytablestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of AdgKeyTable for the specified format.
+| [PrepareRow](#preparerowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
+| [PrepareRow](#preparerowstring-datarow)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Prepares a new DataRow for the specified format in the AdgDataSet.
+| [PrepareRow](#preparerowint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Prepares a new DataRow for the specified format in the AdgDataSet.
+| [SetActive](#setactiveint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the active DataRow in the AdgTable for the specified format and row number.
+| [SetActive](#setactivestring-int32)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the active DataRow in the AdgTable for the specified format and row number.
+| [TryGetValue](#trygetvaluestring-adgtable)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgTable](/reference/datagate/datagate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
+| [TryGetValue](#trygetvalueint32-adgtable)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgTable](/reference/datagate/datagate-client/adg-table.html)) | Tries to retrieve the value associated with the specified key.
 
 ### bool AddPreparedRowAndSetActive([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

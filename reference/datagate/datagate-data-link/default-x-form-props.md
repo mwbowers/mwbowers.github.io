@@ -15,7 +15,7 @@ Represents the default transform properties.
 
 | Name | Description |
 | --- | --- |
-| [DefaultXFormProps()](#defaultxformprops-) | 
+| [DefaultXFormProps()](#defaultxformprops) | 
 
 ### DefaultXFormProps()
 

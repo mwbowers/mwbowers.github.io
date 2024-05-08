@@ -15,9 +15,9 @@ Represents a SQL print device attributes.
 
 | Name | Description |
 | --- | --- |
-| [SqlPrintDevAttr()](#sqlprintdevattr-) | Initializes a new instance of the SqlPrintDevAttr class.
-| [SqlPrintDevAttr](#sqlprintdevattr-printdevattr-)([PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html)) | Initializes a new instance of the SqlPrintDevAttr class with the specified PrintDevAttr.
-| [SqlPrintDevAttr](#sqlprintdevattr-binaryreader-boolean-)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the SqlPrintDevAttr class with the specified BinaryReader.
+| [SqlPrintDevAttr()](#sqlprintdevattr) | Initializes a new instance of the SqlPrintDevAttr class.
+| [SqlPrintDevAttr](#sqlprintdevattrprintdevattr)([PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html)) | Initializes a new instance of the SqlPrintDevAttr class with the specified PrintDevAttr.
+| [SqlPrintDevAttr](#sqlprintdevattrbinaryreader-boolean)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the SqlPrintDevAttr class with the specified BinaryReader.
 
 ### SqlPrintDevAttr()
 
@@ -60,7 +60,7 @@ SqlPrintDevAttr(BinaryReader, Boolean)
 
 | Signature | Description |
 | --- | --- |
-| [WriteTo](#writeto-binarywriter-boolean-)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintDevAttr to the specified BinaryWriter.
+| [WriteTo](#writetobinarywriter-boolean)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintDevAttr to the specified BinaryWriter.
 
 ### void WriteTo([BinaryWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [bool bIsOlePF](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

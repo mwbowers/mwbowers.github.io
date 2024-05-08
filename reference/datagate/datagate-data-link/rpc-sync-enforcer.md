@@ -18,7 +18,7 @@ responsible for synchronizing access and avoiding reentrancy.
 
 | Name | Description |
 | --- | --- |
-| [RpcSyncEnforcer](#rpcsyncenforcer-datalink-)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [RpcSyncEnforcer](#rpcsyncenforcerdatalink)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
 
 ### RpcSyncEnforcer([DataLink](https://learn.microsoft.com/en-us/dotnet/api/))
 

@@ -24,8 +24,8 @@ XML-compliant Name string.  For example, "$ITEMTEST" is returned as
 
 | Signature | Description |
 | --- | --- |
-| [Decode](#decode-xpathnavigator-string-)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Decodes the given XML-compliant Name string into its original name.
-| [Encode](#encode-xpathnavigator-string-)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Encodes the given name into an XML-compliant Name string.
+| [Decode](#decodexpathnavigator-string)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Decodes the given XML-compliant Name string into its original name.
+| [Encode](#encodexpathnavigator-string)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Encodes the given name into an XML-compliant Name string.
 
 ### string Decode([XPathNavigator context](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

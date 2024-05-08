@@ -16,9 +16,9 @@ themselves.
 
 | Name | Description |
 | --- | --- |
-| [FixedLengthStringArray](#fixedlengthstringarray-char--int32-arraycounttype-)([Char\[\]\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/)) | 
-| [FixedLengthStringArray](#fixedlengthstringarray-int32-int32-arraycounttype-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/)) | 
-| [FixedLengthStringArray](#fixedlengthstringarray-int32-arraycounttype-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [FixedLengthStringArray](#fixedlengthstringarraychar---int32-arraycounttype)([Char\[\]\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [FixedLengthStringArray](#fixedlengthstringarrayint32-int32-arraycounttype)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [FixedLengthStringArray](#fixedlengthstringarrayint32-arraycounttype)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/)) | 
 
 ### FixedLengthStringArray([Char\[\]\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [ArrayCountType](https://learn.microsoft.com/en-us/dotnet/api/))
 

@@ -16,7 +16,7 @@ This class extends the DgDateTimeConverter class.
 
 | Name | Description |
 | --- | --- |
-| [SqlTimeConverter](#sqltimeconverter-datetimeformat-)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Initializes a new instance of the SqlTimeConverter class.
+| [SqlTimeConverter](#sqltimeconverterdatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Initializes a new instance of the SqlTimeConverter class.
 
 ### SqlTimeConverter([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html))
 
@@ -36,8 +36,8 @@ SqlTimeConverter(DateTimeFormat)
 
 | Signature | Description |
 | --- | --- |
-| [ConvertFrom](#convertfrom-itypedescriptorcontext-cultureinfo-object-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a given value to a TimeSpan object.
-| [ConvertTo](#convertto-itypedescriptorcontext-cultureinfo-object-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts a given value to a specified type.
+| [ConvertFrom](#convertfromitypedescriptorcontext-cultureinfo-object)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a given value to a TimeSpan object.
+| [ConvertTo](#converttoitypedescriptorcontext-cultureinfo-object-type)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts a given value to a specified type.
 
 ### object ConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

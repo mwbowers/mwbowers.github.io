@@ -19,12 +19,12 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [FileAdapter()](#fileadapter-) | Initializes a new instance of the FileAdapter class.
-| [FileAdapter](#fileadapter-adgconnection-)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Initializes a new instance of the FileAdapter class.
-| [FileAdapter](#fileadapter-adgconnection-string-)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileAdapter class.
-| [FileAdapter](#fileadapter-adgconnection-string-string-)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileAdapter class.
-| [FileAdapter](#fileadapter-ifileobject-string-)([IFileObject](/reference/datagate/datagate-client/i-file-object.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileAdapter class.
-| [FileAdapter](#fileadapter-ifileobject-)([IFileObject](/reference/datagate/datagate-client/i-file-object.html)) | Initializes a new instance of the FileAdapter class.
+| [FileAdapter()](#fileadapter) | Initializes a new instance of the FileAdapter class.
+| [FileAdapter](#fileadapteradgconnection)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Initializes a new instance of the FileAdapter class.
+| [FileAdapter](#fileadapteradgconnection-string)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileAdapter class.
+| [FileAdapter](#fileadapteradgconnection-string-string)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileAdapter class.
+| [FileAdapter](#fileadapterifileobject-string)([IFileObject](/reference/datagate/datagate-client/i-file-object.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the FileAdapter class.
+| [FileAdapter](#fileadapterifileobject)([IFileObject](/reference/datagate/datagate-client/i-file-object.html)) | Initializes a new instance of the FileAdapter class.
 
 ### FileAdapter()
 
@@ -134,42 +134,42 @@ FileAdapter(IFileObject)
 
 | Signature | Description |
 | --- | --- |
-| [AddRecord](#addrecord-adgdataset-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Adds a record to the specified AdgDataSet.
-| [AddRecord](#addrecord-xmlreader-adgdataset-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Adds a record to the specified AdgDataSet.
-| [AddRecord](#addrecord-adgdataset-char-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Adds a record to the specified AdgDataSet with application indicators.
-| [ChangeCurrent](#changecurrent-adgdataset-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Changes the current record in the specified AdgDataSet.
-| [ChangeRRN](#changerrn-adgdataset-int64-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Changes the current record in the specified AdgDataSet.
-| [CheckKey](#checkkey-adgkeytable-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Checks the specified key table.
-| [Close()](#close-) | Closes the FileAdapter.
-| [CreateDataSet()](#createdataset-) | 
-| [DeleteAllRecords()](#deleteallrecords-) | Deletes all records in the file.
-| [DeleteCurrent()](#deletecurrent-) | Deletes the current record in the specified AdgDataSet.
-| [DeleteKey](#deletekey-adgkeytable-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Deletes the specified key from the file.
-| [DeleteRange](#deleterange-adgkeytable-rangefirst-adgkeytable-rangelast-)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Deletes a range of records in the file.
-| [DeleteRRN](#deleterrn-int64-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Deletes the record with the specified relative-record-number (RRN).
-| [Dispose()](#dispose-) | Performs the necessary cleanup operations and releases any resources used by the FileAdapter.
-| [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Performs the necessary cleanup operations and releases any resources used by the FileAdapter.
-| [Finalize()](#finalize-) | File adapter finalizer (called automatically by garbage collector to perform cleanup)
-| [ForceEOD()](#forceeod-) | Forces the end of data (EOD) for the file.
-| [GetFormatName](#getformatname-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Get the format name at the specified index.
-| [GetPrintProperties](#getprintproperties-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves the print properties for a specific format.
-| [Open](#open-adgdataset-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the FileAdapter with the specified AdgDataSet.
-| [OpenNewAdgDataSet](#opennewadgdataset-adgdataset-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens a new AdgDataSet and assigns it to the specified out parameter.
-| [OpenSimpleQuery](#opensimplequery-adgdataset-string-string-string-keyusages-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [KeyUsages](/reference/datagate/datagate-common/key-usages.html)) | Opens the FileAdapter with a simple query.
-| [ReadRandomKey](#readrandomkey-adgdataset-readrandommode-lockrequest-adgkeytable-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Reads a record randomly based on a key.
-| [ReadRandomRRN](#readrandomrrn-adgdataset-readrandommode-lockrequest-int64-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Reads a record from the file at the specified relative record number (RRN) in random mode.
-| [ReadRange](#readrange-adgdataset-rangemode-lockrequest-adgkeytable-rangefirst-adgkeytable-rangelast-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [RangeMode](/reference/datagate/datagate-common/range-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Reads a range of records from the file.
-| [ReadSequential](#readsequential-adgdataset-readsequentialmode-lockrequest-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html)) | 
-| [ReadSequentialEqual](#readsequentialequal-adgdataset-readequalmode-lockrequest-adgkeytable-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadEqualMode](/reference/datagate/datagate-common/read-equal-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Reads records from the file sequentially.
-| [ReleaseCurrent()](#releasecurrent-) | Releases the current record lock.
-| [ReleaseRRN](#releaserrn-lockrequest-int64-)([LockRequest](/reference/datagate/datagate-common/lock-request.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Releases the lock on a specific record by its relative record number (RRN).
-| [ResetFormat()](#resetformat-) | Resets the format of the file.
-| [ResetPrintAttr()](#resetprintattr-) | Resets the print attributes.
-| [ReuseRRN](#reuserrn-adgdataset-int64-)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Reuses the specified RRN in the given AdgDataSet.
-| [SeekKey](#seekkey-seekmode-adgkeytable-)([SeekMode](/reference/datagate/datagate-common/seek-mode.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Seeks the file based on the specified key table.
-| [SeekRange](#seekrange-rangemode-adgkeytable-rangefirst-adgkeytable-rangelast-)([RangeMode](/reference/datagate/datagate-common/range-mode.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Seek the file adapter to a specified range of keys.
-| [SeekRRN](#seekrrn-seekmode-int64-)([SeekMode](/reference/datagate/datagate-common/seek-mode.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Seeks the file to the specified RRN using the given seek mode.
-| [SetFormat](#setformat-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the format of the file.
+| [AddRecord](#addrecordadgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Adds a record to the specified AdgDataSet.
+| [AddRecord](#addrecordxmlreader-adgdataset)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Adds a record to the specified AdgDataSet.
+| [AddRecord](#addrecordadgdataset-char)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Adds a record to the specified AdgDataSet with application indicators.
+| [ChangeCurrent](#changecurrentadgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Changes the current record in the specified AdgDataSet.
+| [ChangeRRN](#changerrnadgdataset-int64)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Changes the current record in the specified AdgDataSet.
+| [CheckKey](#checkkeyadgkeytable)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Checks the specified key table.
+| [Close()](#close) | Closes the FileAdapter.
+| [CreateDataSet()](#createdataset) | 
+| [DeleteAllRecords()](#deleteallrecords) | Deletes all records in the file.
+| [DeleteCurrent()](#deletecurrent) | Deletes the current record in the specified AdgDataSet.
+| [DeleteKey](#deletekeyadgkeytable)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Deletes the specified key from the file.
+| [DeleteRange](#deleterangeadgkeytable-rangefirst-adgkeytable-rangelast)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Deletes a range of records in the file.
+| [DeleteRRN](#deleterrnint64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Deletes the record with the specified relative-record-number (RRN).
+| [Dispose()](#dispose) | Performs the necessary cleanup operations and releases any resources used by the FileAdapter.
+| [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Performs the necessary cleanup operations and releases any resources used by the FileAdapter.
+| [Finalize()](#finalize) | File adapter finalizer (called automatically by garbage collector to perform cleanup)
+| [ForceEOD()](#forceeod) | Forces the end of data (EOD) for the file.
+| [GetFormatName](#getformatnameint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Get the format name at the specified index.
+| [GetPrintProperties](#getprintpropertiesstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves the print properties for a specific format.
+| [Open](#openadgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the FileAdapter with the specified AdgDataSet.
+| [OpenNewAdgDataSet](#opennewadgdatasetadgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens a new AdgDataSet and assigns it to the specified out parameter.
+| [OpenSimpleQuery](#opensimplequeryadgdataset-string-string-string-keyusages)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [KeyUsages](/reference/datagate/datagate-common/key-usages.html)) | Opens the FileAdapter with a simple query.
+| [ReadRandomKey](#readrandomkeyadgdataset-readrandommode-lockrequest-adgkeytable)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Reads a record randomly based on a key.
+| [ReadRandomRRN](#readrandomrrnadgdataset-readrandommode-lockrequest-int64)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Reads a record from the file at the specified relative record number (RRN) in random mode.
+| [ReadRange](#readrangeadgdataset-rangemode-lockrequest-adgkeytable-rangefirst-adgkeytable-rangelast)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [RangeMode](/reference/datagate/datagate-common/range-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Reads a range of records from the file.
+| [ReadSequential](#readsequentialadgdataset-readsequentialmode-lockrequest)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html)) | 
+| [ReadSequentialEqual](#readsequentialequaladgdataset-readequalmode-lockrequest-adgkeytable)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadEqualMode](/reference/datagate/datagate-common/read-equal-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Reads records from the file sequentially.
+| [ReleaseCurrent()](#releasecurrent) | Releases the current record lock.
+| [ReleaseRRN](#releaserrnlockrequest-int64)([LockRequest](/reference/datagate/datagate-common/lock-request.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Releases the lock on a specific record by its relative record number (RRN).
+| [ResetFormat()](#resetformat) | Resets the format of the file.
+| [ResetPrintAttr()](#resetprintattr) | Resets the print attributes.
+| [ReuseRRN](#reuserrnadgdataset-int64)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Reuses the specified RRN in the given AdgDataSet.
+| [SeekKey](#seekkeyseekmode-adgkeytable)([SeekMode](/reference/datagate/datagate-common/seek-mode.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Seeks the file based on the specified key table.
+| [SeekRange](#seekrangerangemode-adgkeytable-rangefirst-adgkeytable-rangelast)([RangeMode](/reference/datagate/datagate-common/range-mode.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Seek the file adapter to a specified range of keys.
+| [SeekRRN](#seekrrnseekmode-int64)([SeekMode](/reference/datagate/datagate-common/seek-mode.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Seeks the file to the specified RRN using the given seek mode.
+| [SetFormat](#setformatstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the format of the file.
 
 ### void AddRecord([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 

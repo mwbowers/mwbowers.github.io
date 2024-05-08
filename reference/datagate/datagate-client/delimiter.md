@@ -15,8 +15,8 @@ Stream delimiter kinds.
 
 | Name | Description |
 | --- | --- |
-| [Delimiter()](#delimiter-) | Create a new Delimiter instance.
-| [Delimiter](#delimiter-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance with the specified value.
+| [Delimiter()](#delimiter) | Create a new Delimiter instance.
+| [Delimiter](#delimiterchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance with the specified value.
 
 ### Delimiter()
 
@@ -58,17 +58,17 @@ Delimiter(Char)
 
 | Signature | Description |
 | --- | --- |
-| [ClearValue()](#clearvalue-) | Clears the value of the delimiter.
-| [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines if the current Delimiter instance is equal to the specified object.
-| [FromChar](#fromchar-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance from a char value.
-| [GetHashCode()](#gethashcode-) | Serves as the default delimiter hash function.
-| [op_Equality](#op_equality-delimiter-delimiter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Compares for equality.
-| [op_Implicit](#op_implicit-delimiter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a char value.
-| [op_Implicit](#op_implicit-char-)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance from a char value.
-| [op_Implicit](#op_implicit-delimiter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a string value.
-| [op_Inequality](#op_inequality-delimiter-delimiter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Compares for inequality.
-| [ToChar()](#tochar-) | Convert the Delimiter instance to a char value.
-| [ToString()](#tostring-) | Returns a string representation of the Delimiter instance.
+| [ClearValue()](#clearvalue) | Clears the value of the delimiter.
+| [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines if the current Delimiter instance is equal to the specified object.
+| [FromChar](#fromcharchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance from a char value.
+| [GetHashCode()](#gethashcode) | Serves as the default delimiter hash function.
+| [op_Equality](#op-equalitydelimiter-delimiter)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Compares for equality.
+| [op_Implicit](#op-implicitdelimiter)([Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a char value.
+| [op_Implicit](#op-implicitchar)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Create a new Delimiter instance from a char value.
+| [op_Implicit](#op-implicitdelimiter)([Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Implicitly converts a Delimiter instance to a string value.
+| [op_Inequality](#op-inequalitydelimiter-delimiter)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Compares for inequality.
+| [ToChar()](#tochar) | Convert the Delimiter instance to a char value.
+| [ToString()](#tostring) | Returns a string representation of the Delimiter instance.
 
 ### void ClearValue()
 

@@ -15,7 +15,7 @@ QueryDatabase RPC parameter marshaller.
 
 | Name | Description |
 | --- | --- |
-| [NetDatabaseAttr](#netdatabaseattr-databaseattributes-)([DatabaseAttributes](/reference/datagate/datagate-providers/database-attributes.html)) | 
+| [NetDatabaseAttr](#netdatabaseattrdatabaseattributes)([DatabaseAttributes](/reference/datagate/datagate-providers/database-attributes.html)) | 
 
 ### NetDatabaseAttr([DatabaseAttributes](/reference/datagate/datagate-providers/database-attributes.html))
 

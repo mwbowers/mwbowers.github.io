@@ -15,7 +15,7 @@ Represents an option for BCP that requires a value
 
 | Name | Description |
 | --- | --- |
-| [BcpOptionWithValueAttribute](#bcpoptionwithvalueattribute-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
+| [BcpOptionWithValueAttribute](#bcpoptionwithvalueattributestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
 
 ### BcpOptionWithValueAttribute([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 

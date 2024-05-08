@@ -16,7 +16,7 @@ instances via its Transaction property.
 
 | Name | Description |
 | --- | --- |
-| [Transactor](#transactor-sqlobject-string-)([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
+| [Transactor](#transactorsqlobject-string)([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
 
 ### Transactor([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 

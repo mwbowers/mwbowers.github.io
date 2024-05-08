@@ -15,7 +15,7 @@ Convert a DataLink file def stream to/from XML.
 
 | Name | Description |
 | --- | --- |
-| [NetFileDef](#netfiledef-xmldocument-)([XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0)) | 
+| [NetFileDef](#netfiledefxmldocument)([XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0)) | 
 
 ### NetFileDef([XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-8.0))
 

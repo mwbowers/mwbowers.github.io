@@ -21,8 +21,8 @@ never return null values.
 
 | Name | Description |
 | --- | --- |
-| [UserPasswordCredential](#userpasswordcredential-string-string-passwordtype-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/datagate-common/password-type.html)) | Construct a UserPasswordCredential instance from component parts.Note that the disposable password parameter reference is deep-copied, so the caller should dispose it.
-| [UserPasswordCredential()](#userpasswordcredential-) | Construct a UserPasswordCredential with default values.  The Userand Password properties are initialized to empty values.  You mustset these properties to valid values before using this to attemptto authenticate a database connection.
+| [UserPasswordCredential](#userpasswordcredentialstring-string-passwordtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/datagate-common/password-type.html)) | Construct a UserPasswordCredential instance from component parts.Note that the disposable password parameter reference is deep-copied, so the caller should dispose it.
+| [UserPasswordCredential()](#userpasswordcredential) | Construct a UserPasswordCredential with default values.  The Userand Password properties are initialized to empty values.  You mustset these properties to valid values before using this to attemptto authenticate a database connection.
 
 ### UserPasswordCredential([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/datagate-common/password-type.html))
 
@@ -60,9 +60,9 @@ UserPasswordCredential()
 
 | Signature | Description |
 | --- | --- |
-| [Clone()](#clone-) | Creates a new object that is a copy of the current UserPasswordCredential instance.
-| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
-| [GetHashCodeInternal()](#gethashcodeinternal-) | Serves as the default hash function.
+| [Clone()](#clone) | Creates a new object that is a copy of the current UserPasswordCredential instance.
+| [Equals](#equalsidatagatecredential)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
+| [GetHashCodeInternal()](#gethashcodeinternal) | Serves as the default hash function.
 
 ### object Clone()
 

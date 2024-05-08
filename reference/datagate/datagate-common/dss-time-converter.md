@@ -15,7 +15,7 @@ Represents a converter for DSS time values.
 
 | Name | Description |
 | --- | --- |
-| [DssTimeConverter](#dsstimeconverter-datetimeformat-)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Initializes a new instance of the  class with the specified format.
+| [DssTimeConverter](#dsstimeconverterdatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Initializes a new instance of the  class with the specified format.
 
 ### DssTimeConverter([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html))
 
@@ -35,8 +35,8 @@ DssTimeConverter(DateTimeFormat)
 
 | Signature | Description |
 | --- | --- |
-| [ConvertFrom](#convertfrom-itypedescriptorcontext-cultureinfo-object-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
-| [ConvertTo](#convertto-itypedescriptorcontext-cultureinfo-object-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | 
+| [ConvertFrom](#convertfromitypedescriptorcontext-cultureinfo-object)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
+| [ConvertTo](#converttoitypedescriptorcontext-cultureinfo-object-type)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | 
 
 ### object ConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

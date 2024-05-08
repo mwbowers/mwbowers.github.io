@@ -19,7 +19,7 @@ in deadlock.
 
 | Name | Description |
 | --- | --- |
-| [CircularMemoryStream](#circularmemorystream-int32-nullable-cancellationtoken-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Nullable\<CancellationToken\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | 
+| [CircularMemoryStream](#circularmemorystreamint32-nullable-cancellationtoken)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Nullable\<CancellationToken\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | 
 
 ### CircularMemoryStream([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Nullable\<CancellationToken\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
 

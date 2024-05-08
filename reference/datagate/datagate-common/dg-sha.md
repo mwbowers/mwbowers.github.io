@@ -16,7 +16,7 @@ record "format ids" for RPG-style "level-check" functions.
 
 | Name | Description |
 | --- | --- |
-| [DgSHA()](#dgsha-) | 
+| [DgSHA()](#dgsha) | 
 
 ### DgSHA()
 

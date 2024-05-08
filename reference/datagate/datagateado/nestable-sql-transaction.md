@@ -16,7 +16,7 @@ in "nested" transaction scenarios.
 
 | Name | Description |
 | --- | --- |
-| [NestableSqlTransaction](#nestablesqltransaction-sqlobject-string-)([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
+| [NestableSqlTransaction](#nestablesqltransactionsqlobject-string)([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
 
 ### NestableSqlTransaction([SqlObject](https://learn.microsoft.com/en-us/dotnet/api/), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 

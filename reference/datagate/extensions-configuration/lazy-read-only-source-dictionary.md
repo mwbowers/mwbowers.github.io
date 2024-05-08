@@ -22,7 +22,7 @@ objects on-demand.  IReadOnlyDictionary is thread safe.
 
 | Name | Description |
 | --- | --- |
-| [LazyReadOnlySourceDictionary](#lazyreadonlysourcedictionary-iconfiguration-)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | 
+| [LazyReadOnlySourceDictionary](#lazyreadonlysourcedictionaryiconfiguration)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | 
 
 ### LazyReadOnlySourceDictionary([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 

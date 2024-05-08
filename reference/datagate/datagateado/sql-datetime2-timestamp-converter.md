@@ -16,7 +16,7 @@ strings literals as expected by ADODB.
 
 | Name | Description |
 | --- | --- |
-| [SqlDatetime2TimestampConverter()](#sqldatetime2timestampconverter-) | Initializes a new instance of the SqlDatetime2TimestampConverter class.This class is used to convert DateTime values to SQL 'datetime2'-compatible string literals.
+| [SqlDatetime2TimestampConverter()](#sqldatetime2timestampconverter) | Initializes a new instance of the SqlDatetime2TimestampConverter class.This class is used to convert DateTime values to SQL 'datetime2'-compatible string literals.
 
 ### SqlDatetime2TimestampConverter()
 

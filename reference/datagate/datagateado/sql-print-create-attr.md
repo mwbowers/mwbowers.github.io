@@ -21,8 +21,8 @@ DSS persists this as a memcpy()'ed dgPrintCreateAttr2 struct.
 
 | Name | Description |
 | --- | --- |
-| [SqlPrintCreateAttr()](#sqlprintcreateattr-) | Initializes a new instance of the SqlPrintCreateAttr class.
-| [SqlPrintCreateAttr](#sqlprintcreateattr-binaryreader-boolean-)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the SqlPrintCreateAttr class with the specified SerializationInfo and StreamingContext.
+| [SqlPrintCreateAttr()](#sqlprintcreateattr) | Initializes a new instance of the SqlPrintCreateAttr class.
+| [SqlPrintCreateAttr](#sqlprintcreateattrbinaryreader-boolean)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the SqlPrintCreateAttr class with the specified SerializationInfo and StreamingContext.
 
 ### SqlPrintCreateAttr()
 
@@ -51,9 +51,9 @@ SqlPrintCreateAttr(BinaryReader, Boolean)
 
 | Signature | Description |
 | --- | --- |
-| [NewEmptyDevAttr()](#newemptydevattr-) | Creates a new empty SqlPrintDevAttr.
-| [SetDevAttr](#setdevattr-printdevattr-)([PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html)) | Sets the device attributes for the SqlPrintCreateAttr.
-| [WriteTo](#writeto-binarywriter-boolean-)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintCreateAttr to the specified BinaryWriter.
+| [NewEmptyDevAttr()](#newemptydevattr) | Creates a new empty SqlPrintDevAttr.
+| [SetDevAttr](#setdevattrprintdevattr)([PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html)) | Sets the device attributes for the SqlPrintCreateAttr.
+| [WriteTo](#writetobinarywriter-boolean)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintCreateAttr to the specified BinaryWriter.
 
 ### PrintDevAttr NewEmptyDevAttr()
 

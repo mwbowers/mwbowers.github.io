@@ -39,7 +39,7 @@ been removed via DetachHelper.
 
 | Name | Description |
 | --- | --- |
-| [ProxyStream](#proxystream-isocketasynchelper-isocketasyncuser-int32-)([ISocketAsyncHelper](https://learn.microsoft.com/en-us/dotnet/api/), [ISocketAsyncUser](https://learn.microsoft.com/en-us/dotnet/api/), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | 
+| [ProxyStream](#proxystreamisocketasynchelper-isocketasyncuser-int32)([ISocketAsyncHelper](https://learn.microsoft.com/en-us/dotnet/api/), [ISocketAsyncUser](https://learn.microsoft.com/en-us/dotnet/api/), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | 
 
 ### ProxyStream([ISocketAsyncHelper](https://learn.microsoft.com/en-us/dotnet/api/), [ISocketAsyncUser](https://learn.microsoft.com/en-us/dotnet/api/), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 

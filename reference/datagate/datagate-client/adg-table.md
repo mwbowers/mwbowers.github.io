@@ -15,7 +15,7 @@ DataGate Table.
 
 | Name | Description |
 | --- | --- |
-| [AdgTable](#adgtable-datatable-adgdataset-)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Initializes a new instance using the data table given.
+| [AdgTable](#adgtabledatatable-adgdataset)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Initializes a new instance using the data table given.
 
 ### AdgTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html))
 
@@ -43,7 +43,7 @@ AdgTable(DataTable, AdgDataSet)
 
 | Signature | Description |
 | --- | --- |
-| [SetRowDefaultValues](#setrowdefaultvalues-datarow-)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Set row default values.
+| [SetRowDefaultValues](#setrowdefaultvaluesdatarow)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Set row default values.
 
 ### void SetRowDefaultValues([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 

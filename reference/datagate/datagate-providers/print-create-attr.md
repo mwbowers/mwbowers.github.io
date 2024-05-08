@@ -15,7 +15,7 @@ Represents the attributes for creating a print job.
 
 | Name | Description |
 | --- | --- |
-| [PrintCreateAttr()](#printcreateattr-) | Initializes a new instance of the  class.
+| [PrintCreateAttr()](#printcreateattr) | Initializes a new instance of the  class.
 
 ### PrintCreateAttr()
 
@@ -40,8 +40,8 @@ PrintCreateAttr()
 
 | Signature | Description |
 | --- | --- |
-| [ReadXml](#readxml-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the object from an XML reader.
-| [WriteXml](#writexml-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the object to an XML writer.
+| [ReadXml](#readxmlxmlreader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the object from an XML reader.
+| [WriteXml](#writexmlxmlwriter)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the object to an XML writer.
 
 ### void ReadXml([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 

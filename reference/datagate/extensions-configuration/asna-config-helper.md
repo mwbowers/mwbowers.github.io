@@ -16,7 +16,7 @@ IAsnaConfig properties encoded in JSON configuration texts.
 
 | Name | Description |
 | --- | --- |
-| [AsnaConfigHelper()](#asnaconfighelper-) | 
+| [AsnaConfigHelper()](#asnaconfighelper) | 
 
 ### AsnaConfigHelper()
 
@@ -36,9 +36,9 @@ AsnaConfigHelper()
 
 | Signature | Description |
 | --- | --- |
-| [LoadFromJson](#loadfromjson-stream-)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Returns an instance of IAsnaConfig, given a stream.
-| [LoadFromJson](#loadfromjson-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an instance of IAsnaConfig, given a path to aJSON-encoded file.
-| [TryLoadFromDefaultFile](#tryloadfromdefaultfile-iasnaconfig-)([IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html)) | Gets a configuration from the default file.
+| [LoadFromJson](#loadfromjsonstream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Returns an instance of IAsnaConfig, given a stream.
+| [LoadFromJson](#loadfromjsonstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an instance of IAsnaConfig, given a path to aJSON-encoded file.
+| [TryLoadFromDefaultFile](#tryloadfromdefaultfileiasnaconfig)([IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html)) | Gets a configuration from the default file.
 
 ### IAsnaConfig LoadFromJson([Stream jsonStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 

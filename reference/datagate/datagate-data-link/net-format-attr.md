@@ -36,7 +36,7 @@ varlen-capable fields in the format).
 
 | Name | Description |
 | --- | --- |
-| [NetFormatAttr](#netformatattr-formatattr-)([FormatAttr](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [NetFormatAttr](#netformatattrformatattr)([FormatAttr](https://learn.microsoft.com/en-us/dotnet/api/)) | 
 
 ### NetFormatAttr([FormatAttr](https://learn.microsoft.com/en-us/dotnet/api/))
 

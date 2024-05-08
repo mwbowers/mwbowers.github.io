@@ -19,10 +19,10 @@ In DG implementations of **IPrintProperties** , instance members are not guarant
 
 | Signature | Description |
 | --- | --- |
-| [GetBoundType](#getboundtype-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the type information for a print control bound to a specific field.
-| [GetTypedObject](#gettypedobject-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a typed object associated with a specific field.
-| [GetValue](#getvalue-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of a specific property for a given field.
-| [SetValue](#setvalue-string-string-object-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of a specific property for a given field.
+| [GetBoundType](#getboundtypestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the type information for a print control bound to a specific field.
+| [GetTypedObject](#gettypedobjectstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a typed object associated with a specific field.
+| [GetValue](#getvaluestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of a specific property for a given field.
+| [SetValue](#setvaluestring-string-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of a specific property for a given field.
 
 ### Type GetBoundType([string fieldName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

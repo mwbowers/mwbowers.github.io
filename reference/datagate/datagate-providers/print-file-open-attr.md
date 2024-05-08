@@ -15,7 +15,7 @@ Represents a set of attributes for opening a print file.
 
 | Name | Description |
 | --- | --- |
-| [PrintFileOpenAttr()](#printfileopenattr-) | Initializes a new instance of the PrintFileOpenAttr class.
+| [PrintFileOpenAttr()](#printfileopenattr) | Initializes a new instance of the PrintFileOpenAttr class.
 
 ### PrintFileOpenAttr()
 

@@ -15,7 +15,7 @@ Defines the delegate for opening a file adapter.
 
 | Name | Description |
 | --- | --- |
-| [OpenFileAdapterDelegate](#openfileadapterdelegate-object-intptr-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
+| [OpenFileAdapterDelegate](#openfileadapterdelegateobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
 
 ### OpenFileAdapterDelegate([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
 

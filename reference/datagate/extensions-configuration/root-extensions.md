@@ -20,8 +20,8 @@ Provides extension methods for accessing ASNA and DataGate configuration section
 
 | Signature | Description |
 | --- | --- |
-| [GetAsnaConfig](#getasnaconfig-iconfiguration-)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets the ASNA configuration section from the provided configuration.
-| [GetDataGateConfig](#getdatagateconfig-iconfiguration-)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets the DataGate configuration section from the provided configuration.
+| [GetAsnaConfig](#getasnaconfigiconfiguration)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets the ASNA configuration section from the provided configuration.
+| [GetDataGateConfig](#getdatagateconfigiconfiguration)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets the DataGate configuration section from the provided configuration.
 
 ### IConfigurationSection GetAsnaConfig([IConfiguration This](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 

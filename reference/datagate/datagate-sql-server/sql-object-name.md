@@ -15,10 +15,10 @@ Represents a SQL object name with various properties.
 
 | Name | Description |
 | --- | --- |
-| [SqlObjectName](#sqlobjectname-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified name.
-| [SqlObjectName](#sqlobjectname-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified owner and name.
-| [SqlObjectName](#sqlobjectname-string-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified database, owner, and name.
-| [SqlObjectName](#sqlobjectname-string-string-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified server, database, owner, and name.
+| [SqlObjectName](#sqlobjectnamestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified name.
+| [SqlObjectName](#sqlobjectnamestring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified owner and name.
+| [SqlObjectName](#sqlobjectnamestring-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified database, owner, and name.
+| [SqlObjectName](#sqlobjectnamestring-string-string-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the SqlObjectName class with the specified server, database, owner, and name.
 
 ### SqlObjectName([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -95,9 +95,9 @@ SqlObjectName(String, String, String, String)
 
 | Signature | Description |
 | --- | --- |
-| [Parse](#parse-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Parses a string input into a SqlObjectName.
-| [ParseInternal](#parseinternal-string-boolean-sqlobjectname-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Parse a T-SQL identifier of the form w.x.y.z, x.y.z, y.z, or z,where w is the name of the server, x is the name of the databasey is the name of the schema, and z is the name of the object.  Eachelement of the name may be quoted with brackets ([]) or single- ordouble-quotes.  Any missing prefixes (w, x, and/or y) will be givena null value.Valid examples:[server.asna.com].Examples..CustmastNorthwind."dbo".MainTblInvalid examples:'ironwood'.[mydb][schema].table   (missing '.')db."table                         (missing '"')$$TODO - Treats all IDs as quoted; does not use T-SQL rules forunquoted identifiers.
-| [TryParse](#tryparse-string-sqlobjectname-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Tries to parse a string input into a SqlObjectName.
+| [Parse](#parsestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Parses a string input into a SqlObjectName.
+| [ParseInternal](#parseinternalstring-boolean-sqlobjectname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Parse a T-SQL identifier of the form w.x.y.z, x.y.z, y.z, or z,where w is the name of the server, x is the name of the databasey is the name of the schema, and z is the name of the object.  Eachelement of the name may be quoted with brackets ([]) or single- ordouble-quotes.  Any missing prefixes (w, x, and/or y) will be givena null value.Valid examples:[server.asna.com].Examples..CustmastNorthwind."dbo".MainTblInvalid examples:'ironwood'.[mydb][schema].table   (missing '.')db."table                         (missing '"')$$TODO - Treats all IDs as quoted; does not use T-SQL rules forunquoted identifiers.
+| [TryParse](#tryparsestring-sqlobjectname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Tries to parse a string input into a SqlObjectName.
 
 ### SqlObjectName Parse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

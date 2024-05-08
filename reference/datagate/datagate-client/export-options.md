@@ -26,7 +26,7 @@ Abstract class that provides a base for different types of export options in the
 
 | Signature | Description |
 | --- | --- |
-| [RaiseLogMessage](#raiselogmessage-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Raises the LogMessageEvent.
+| [RaiseLogMessage](#raiselogmessagestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Raises the LogMessageEvent.
 
 ### void RaiseLogMessage([string message](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

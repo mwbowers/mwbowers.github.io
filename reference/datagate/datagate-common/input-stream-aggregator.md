@@ -15,8 +15,8 @@ Queue multiple, fixed-length, read-only streams into one stream.
 
 | Name | Description |
 | --- | --- |
-| [InputStreamAggregator](#inputstreamaggregator-ienumerable-valuetuple-int32-func-stream-)([IEnumerable\<ValueTuple\<Int32, Func\<Stream\>\>\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0)) | Tuples passed to the constructor specify:* stream length* constructor for streamOrder given is the order each stream will be constructed thenread.  Only one stream is "current", and it will be read untildepleted, after which it is disposed.The length is provided to avoid (re)constructing the stream incases where it is either already disposed or not yet created.There is nothing threadsafe here.
-| [InputStreamAggregator()](#inputstreamaggregator-) | Initializes a new instance of the  class.
+| [InputStreamAggregator](#inputstreamaggregatorienumerable-valuetuple-int32-func-stream)([IEnumerable\<ValueTuple\<Int32, Func\<Stream\>\>\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0)) | Tuples passed to the constructor specify:* stream length* constructor for streamOrder given is the order each stream will be constructed thenread.  Only one stream is "current", and it will be read untildepleted, after which it is disposed.The length is provided to avoid (re)constructing the stream incases where it is either already disposed or not yet created.There is nothing threadsafe here.
+| [InputStreamAggregator()](#inputstreamaggregator) | Initializes a new instance of the  class.
 
 ### InputStreamAggregator([IEnumerable\<ValueTuple\<Int32, Func\<Stream\>\>\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0))
 
@@ -54,15 +54,15 @@ InputStreamAggregator()
 
 | Signature | Description |
 | --- | --- |
-| [Append](#append-int32-func`1-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the aggregator.
-| [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
-| [Finalize()](#finalize-) | Finalizes an instance of the  class.
-| [Flush()](#flush-) | Overrides the Flush method for the InputStreamAggregator.
-| [Read](#read-byte-int32-int32-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
-| [ReadByte()](#readbyte-) | Reads a byte from the current InputStreamAggregator and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
-| [Seek](#seek-int64-seekorigin-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream.
-| [SetLength](#setlength-int64-)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream.
-| [Write](#write-byte-int32-int32-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
+| [Append](#appendint32-func-1)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the aggregator.
+| [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
+| [Finalize()](#finalize) | Finalizes an instance of the  class.
+| [Flush()](#flush) | Overrides the Flush method for the InputStreamAggregator.
+| [Read](#readbyte-int32-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
+| [ReadByte()](#readbyte) | Reads a byte from the current InputStreamAggregator and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
+| [Seek](#seekint64-seekorigin)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream.
+| [SetLength](#setlengthint64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream.
+| [Write](#writebyte-int32-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
 
 ### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func\<Stream\> cons](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0))
 

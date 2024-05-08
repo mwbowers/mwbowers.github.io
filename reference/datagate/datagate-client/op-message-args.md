@@ -15,7 +15,7 @@ Copy or export message event arguments.
 
 | Name | Description |
 | --- | --- |
-| [OpMessageArgs](#opmessageargs-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class.
+| [OpMessageArgs](#opmessageargsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class.
 
 ### OpMessageArgs([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 

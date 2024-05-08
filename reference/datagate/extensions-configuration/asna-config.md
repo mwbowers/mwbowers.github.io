@@ -15,7 +15,7 @@ Represents the ASNA configuration.
 
 | Name | Description |
 | --- | --- |
-| [AsnaConfig](#asnaconfig-iconfiguration-)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Initializes a new instance of the AsnaConfig class with the specified configuration.
+| [AsnaConfig](#asnaconfigiconfiguration)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Initializes a new instance of the AsnaConfig class with the specified configuration.
 
 ### AsnaConfig([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 

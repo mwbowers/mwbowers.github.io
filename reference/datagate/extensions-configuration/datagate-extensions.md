@@ -20,7 +20,7 @@ Provides extension methods for DataGate configuration.
 
 | Signature | Description |
 | --- | --- |
-| [GetSourceProfiles](#getsourceprofiles-iconfiguration-)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets a read-only dictionary of SourceProfiles from the provided configuration.
+| [GetSourceProfiles](#getsourceprofilesiconfiguration)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets a read-only dictionary of SourceProfiles from the provided configuration.
 
 ### IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles([IConfiguration config](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 

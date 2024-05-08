@@ -15,9 +15,9 @@ Represents an exception that is thrown when a database name is missing.
 
 | Name | Description |
 | --- | --- |
-| [NoDbNameException()](#nodbnameexception-) | Initializes a new instance of the  class.
-| [NoDbNameException](#nodbnameexception-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with the specified database name.
-| [NoDbNameException](#nodbnameexception-string-exception-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class with the specified database name and inner exception.
+| [NoDbNameException()](#nodbnameexception) | Initializes a new instance of the  class.
+| [NoDbNameException](#nodbnameexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with the specified database name.
+| [NoDbNameException](#nodbnameexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class with the specified database name and inner exception.
 
 ### NoDbNameException()
 
@@ -60,7 +60,7 @@ NoDbNameException(String, Exception)
 
 | Signature | Description |
 | --- | --- |
-| [FormatMessage](#formatmessage-iformatprovider-string-)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the specified message with the database name.
+| [FormatMessage](#formatmessageiformatprovider-string)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the specified message with the database name.
 
 ### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

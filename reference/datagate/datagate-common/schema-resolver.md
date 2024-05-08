@@ -15,7 +15,7 @@ Workaround for discrepancies in assembly namespaces.
 
 | Name | Description |
 | --- | --- |
-| [SchemaResolver()](#schemaresolver-) | 
+| [SchemaResolver()](#schemaresolver) | 
 
 ### SchemaResolver()
 

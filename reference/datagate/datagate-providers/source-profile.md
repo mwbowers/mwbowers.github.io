@@ -15,8 +15,8 @@ Represents a source profile with various properties.
 
 | Name | Description |
 | --- | --- |
-| [SourceProfile()](#sourceprofile-) | Initializes a new instance of the SourceProfile class.
-| [SourceProfile](#sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Initializes a new instance of the SourceProfile class with the properties of an existing SourceProfile.
+| [SourceProfile()](#sourceprofile) | Initializes a new instance of the SourceProfile class.
+| [SourceProfile](#sourceprofilesourceprofile)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Initializes a new instance of the SourceProfile class with the properties of an existing SourceProfile.
 
 ### SourceProfile()
 
@@ -65,15 +65,15 @@ SourceProfile(SourceProfile)
 
 | Signature | Description |
 | --- | --- |
-| [Clone()](#clone-) | Creates a new object that is a copy of the current instance.
-| [Equals](#equals-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether the specified SourceProfile is equal to the current SourceProfile.
-| [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current SourceProfile.
-| [Equals](#equals-object-boolean-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
-| [GetHashCode()](#gethashcode-) | Serves as the default hash function.
-| [IsKnownPlatformAttribute](#isknownplatformattribute-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is known.
-| [op_Equality](#op_equality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are equal.
-| [op_Inequality](#op_inequality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are not equal.
-| [ToString()](#tostring-) | Returns a string that represents the current SourceProfile.
+| [Clone()](#clone) | Creates a new object that is a copy of the current instance.
+| [Equals](#equalssourceprofile)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether the specified SourceProfile is equal to the current SourceProfile.
+| [Equals](#equalsobject)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current SourceProfile.
+| [Equals](#equalsobject-boolean)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
+| [GetHashCode()](#gethashcode) | Serves as the default hash function.
+| [IsKnownPlatformAttribute](#isknownplatformattributestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is known.
+| [op_Equality](#op-equalitysourceprofile-sourceprofile)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are equal.
+| [op_Inequality](#op-inequalitysourceprofile-sourceprofile)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are not equal.
+| [ToString()](#tostring) | Returns a string that represents the current SourceProfile.
 
 ### object Clone()
 

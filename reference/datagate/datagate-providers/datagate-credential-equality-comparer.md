@@ -20,8 +20,8 @@ Provides a comparer for IDataGateCredential objects.
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#equals-idatagatecredential-idatagatecredential-)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html), [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential objects are equal.
-| [GetHashCode](#gethashcode-idatagatecredential-)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Returns a hash code for the specified IDataGateCredential object.
+| [Equals](#equalsidatagatecredential-idatagatecredential)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html), [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential objects are equal.
+| [GetHashCode](#gethashcodeidatagatecredential)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Returns a hash code for the specified IDataGateCredential object.
 
 ### bool Equals([IDataGateCredential x](/reference/datagate/datagate-providers/i-datagate-credential.html), [IDataGateCredential y](/reference/datagate/datagate-providers/i-datagate-credential.html))
 

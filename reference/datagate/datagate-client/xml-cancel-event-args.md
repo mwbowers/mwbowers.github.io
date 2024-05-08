@@ -32,7 +32,7 @@ This class contains information about the event that applications can use to han
 
 | Signature | Description |
 | --- | --- |
-| [ToString()](#tostring-) | Returns a string representation of the object.
+| [ToString()](#tostring) | Returns a string representation of the object.
 
 ### string ToString()
 

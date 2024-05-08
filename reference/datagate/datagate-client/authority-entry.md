@@ -19,10 +19,10 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [AuthorityEntry()](#authorityentry-) | Initializes authority for current user.
-| [AuthorityEntry](#authorityentry-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes authority for current user.
-| [AuthorityEntry](#authorityentry-string-authoritytypes-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Initializes authority for a named user.
-| [AuthorityEntry](#authorityentry-string-authoritytypes-boolean-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes authority for a named user specifying authority type and group membership.
+| [AuthorityEntry()](#authorityentry) | Initializes authority for current user.
+| [AuthorityEntry](#authorityentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes authority for current user.
+| [AuthorityEntry](#authorityentrystring-authoritytypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Initializes authority for a named user.
+| [AuthorityEntry](#authorityentrystring-authoritytypes-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes authority for a named user specifying authority type and group membership.
 
 ### AuthorityEntry()
 

@@ -15,9 +15,9 @@ Represents errors that occur during end stream mode operations.
 
 | Name | Description |
 | --- | --- |
-| [EndStreamModeException()](#endstreammodeexception-) | Initializes a new instance of the EndStreamModeException class.
-| [EndStreamModeException](#endstreammodeexception-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the EndStreamModeException class with a specified error message.
-| [EndStreamModeException](#endstreammodeexception-string-exception-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the EndStreamModeException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+| [EndStreamModeException()](#endstreammodeexception) | Initializes a new instance of the EndStreamModeException class.
+| [EndStreamModeException](#endstreammodeexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the EndStreamModeException class with a specified error message.
+| [EndStreamModeException](#endstreammodeexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the EndStreamModeException class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ### EndStreamModeException()
 

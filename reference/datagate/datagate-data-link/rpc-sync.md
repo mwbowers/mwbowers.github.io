@@ -23,7 +23,7 @@ services of the platform may or may not provide.
 
 | Name | Description |
 | --- | --- |
-| [RpcSync](#rpcsync-datalink-)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
+| [RpcSync](#rpcsyncdatalink)([DataLink](https://learn.microsoft.com/en-us/dotnet/api/)) | 
 
 ### RpcSync([DataLink](https://learn.microsoft.com/en-us/dotnet/api/))
 

@@ -30,11 +30,11 @@ This interface should be implemented by classes that represent a DataGate direct
 
 | Signature | Description |
 | --- | --- |
-| [AttachRemoteDirectory](#attachremotedirectory-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attaches the specified remote directory to the current directory.
-| [CreateSubDirectory](#createsubdirectory-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a subdirectory with the specified name in the current directory.
-| [Enumerate](#enumerate-adgenumerator-)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the items in the directory using the specified enumerator.
-| [Enumerate](#enumerate-adgenumerator-filetypes-boolean-)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html), [FileTypes](/reference/datagate/datagate-common/file-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enumerates the items in the directory using the specified enumerator.
-| [RepairObjects](#repairobjects-repairoptions-adgobserver-)([RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repairs objects in the directory using the specified repair options and observer.
+| [AttachRemoteDirectory](#attachremotedirectorystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attaches the specified remote directory to the current directory.
+| [CreateSubDirectory](#createsubdirectorystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a subdirectory with the specified name in the current directory.
+| [Enumerate](#enumerateadgenumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the items in the directory using the specified enumerator.
+| [Enumerate](#enumerateadgenumerator-filetypes-boolean)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html), [FileTypes](/reference/datagate/datagate-common/file-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enumerates the items in the directory using the specified enumerator.
+| [RepairObjects](#repairobjectsrepairoptions-adgobserver)([RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repairs objects in the directory using the specified repair options and observer.
 
 ### void AttachRemoteDirectory([string remotePathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
