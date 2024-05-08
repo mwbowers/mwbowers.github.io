@@ -489,3 +489,12 @@ void WriteParmXml(XmlWriter writer)
         prog.ParmToObject(System.Type.GetType("System.String"), "CustName", 
         new int[]{}));  
 ```
+
+
+## Example 9. as400Program SetProgramPath property example.
+
+```cs 
+  As400Program prog = new As400Program();
+  prog.Connection = new AdgConnection("*Public/DG NET IBM i");
+  prog.SetProgramPath = "*Libl/Call400";
+```
