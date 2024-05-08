@@ -555,3 +555,34 @@ DataGate erro numbers
 | dgExINVLIC | Exit point support license not found or invalid | 1603 |
 | dgEXITPROG | AS400 exit points | 1600 |
 | dgExMISSING | Registered exit program not found | 1601 |
+
+## Example. Showing more details when opening a file fails due to Member or File not found.
+
+```cs 
+  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
+  dbFile.AccessMode = AccessMode.Read;
+
+  AdgDataSet myDS = null;
+  try
+  {
+      dbFile.OpenNewAdgDataSet(out myDS);
+  }
+  catch(dgException dgEx)
+  {
+      /* There are many reasons why opening a file can fail. Here, we
+       * catch some of the more general ones. */
+      if (dgEx.Error == dgErrorNumber.dgEmMNOTFND)
+          MessageBox.Show("Member " + dbFile.MemberName + " not found!", "Error opening file");
+      else if (dgEx.Error == dgErrorNumber.dgEmFNOTFND)
+          MessageBox.Show("File " + dbFile.FileName + " not found!", "Error opening file");
+      else
+          MessageBox.Show(dgEx.Message, "Error opening file");
+          //Exit procedure here.
+  }
+
+  /* Do some action here. */
+
+  dbFile.Close();
+  db.Close();
+```

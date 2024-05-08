@@ -14,6 +14,7 @@ Represents a program parameter.
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
+
 ## Constructors
 
 | Name | Description |
@@ -61,11 +62,27 @@ ProgParm(StructureType, DataDirection)
 
 | Signature | Description |
 | --- | --- |
+| [FromObject](#fromobject-idatalinkprops-object-subparmname-)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts an object to a program parameter.
 | [NewBuffer](#newbuffer-idatalinkprops-)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Creates a new buffer for the program parameter.
 | [SetZeroValue](#setzerovalue-idatalinkprops-)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the value of the program parameter to zero.
 | [ToObject](#toobject-idatalinkprops-type-subparmname-)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts the program parameter to an object.
-| [FromObject](#fromobject-idatalinkprops-object-subparmname-)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts an object to a program parameter.
 | [WriteXml](#writexml-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the program parameter to an XML writer.
+
+### void FromObject([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/), [object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName subParm](https://learn.microsoft.com/en-us/dotnet/api/))
+
+Converts an object to a program parameter.
+
+```cs
+void FromObject(IDataLinkProps dl, object obj, SubParmName subParm)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/) | subParm | 
 
 ### void NewBuffer([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/))
 
@@ -117,22 +134,6 @@ object ToObject(IDataLinkProps dl, Type objType, SubParmName subParm)
 | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
-### void FromObject([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/), [object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName subParm](https://learn.microsoft.com/en-us/dotnet/api/))
-
-Converts an object to a program parameter.
-
-```cs
-void FromObject(IDataLinkProps dl, object obj, SubParmName subParm)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
-| [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/) | subParm | 
-
 ### void WriteXml([XmlWriter xw](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
 Writes the program parameter to an XML writer.
@@ -146,3 +147,28 @@ void WriteXml(XmlWriter xw)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | xw | 
+
+## Example 1.Passing three parameters to an AS400 Program
+
+
+```cs 
+  /* Create paramerter list to send to the program being called.
+   * The first two parameters catch return values, the last will tell the
+   * external program to shut down if the value is '1'. */
+  char Quit400App = '1';
+
+  ProgParm[] parms = new ProgParm[]
+  {
+      new ProgParm(new ProgParmType("CustName", 0, FieldType.NewChar(40)), DataDirection.Output),
+      new ProgParm(new ProgParmType("TimeOfDay", 0, FieldType.NewPacked(6, 0)), DataDirection.Output),
+      new ProgParm(new ProgParmType("Quit400App", 0, FieldType.NewChar(1)), DataDirection.Input)
+  };
+
+  As400Program prog = new As400Program(ProdDB, "*Libl/Call400");
+  prog.AppendParms(parms); //Use our parm list defined above.
+  //Here, we make sure our variables are passed as the parms in ther parm list.
+  prog.ObjectToParm(Quit400App, "Quit400App", new int[]{});
+  //Now we execute the call to the As400Program, "Call400".
+  prog.Execute();
+```
+

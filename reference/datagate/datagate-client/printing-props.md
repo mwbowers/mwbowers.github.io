@@ -43,18 +43,10 @@ PrintingProps()
 
 | Signature | Description |
 | --- | --- |
-| [IsRendererPathMissing()](#isrendererpathmissing-) | Determines if the renderer path is missing.
 | [GetRendererPath()](#getrendererpath-) | Gets the renderer path.
-| [SetRendererPathInMachineConfig](#setrendererpathinmachineconfig-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
+| [IsRendererPathMissing()](#isrendererpathmissing-) | Determines if the renderer path is missing.
 | [SetRendererPath](#setrendererpath-string-configuration-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
-
-### bool IsRendererPathMissing()
-
-Determines if the renderer path is missing.
-
-```cs
-bool IsRendererPathMissing()
-```
+| [SetRendererPathInMachineConfig](#setrendererpathinmachineconfig-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
 
 ### string GetRendererPath()
 
@@ -64,19 +56,13 @@ Gets the renderer path.
 string GetRendererPath()
 ```
 
-### void SetRendererPathInMachineConfig([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### bool IsRendererPathMissing()
 
-Sets the renderer path in the machine configuration.
+Determines if the renderer path is missing.
 
 ```cs
-void SetRendererPathInMachineConfig(string path)
+bool IsRendererPathMissing()
 ```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
 
 ### void SetRendererPath([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Configuration config](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0))
 
@@ -92,3 +78,17 @@ void SetRendererPath(string path, Configuration config)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
 | [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0) | config | 
+
+### void SetRendererPathInMachineConfig([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Sets the renderer path in the machine configuration.
+
+```cs
+void SetRendererPathInMachineConfig(string path)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 

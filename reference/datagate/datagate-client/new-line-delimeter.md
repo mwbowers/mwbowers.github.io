@@ -35,55 +35,41 @@ NewLineDelimeter()
 
 | Signature | Description |
 | --- | --- |
-| [op_Inequality](#op_inequality-newlinedelimeter-delimiter-)([NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of NewLineDelimeter and Delimiter are not equal.
-| [op_Inequality](#op_inequality-delimiter-newlinedelimeter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines if the instances of Delimiter and NewLineDelimeter are not equal.
-| [op_Equality](#op_equality-newlinedelimeter-delimiter-)([NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of Delimiter and NewLineDelimeter are equal.
-| [op_Equality](#op_equality-delimiter-newlinedelimeter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines if the instances of Delimiter and NewLineDelimeter are equal.
-| [ToString()](#tostring-) | Returns the string representation of the Delimiter instance.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines if the current Delimiter instance is equal to the specified object.
 | [GetHashCode()](#gethashcode-) | Overrides the GetHashCode method of the base class.
+| [op_Equality](#op_equality-newlinedelimeter-delimiter-)([NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of Delimiter and NewLineDelimeter are equal.
+| [op_Equality](#op_equality-delimiter-newlinedelimeter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines if the instances of Delimiter and NewLineDelimeter are equal.
+| [op_Inequality](#op_inequality-newlinedelimeter-delimiter-)([NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines if the instances of NewLineDelimeter and Delimiter are not equal.
+| [op_Inequality](#op_inequality-delimiter-newlinedelimeter-)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines if the instances of Delimiter and NewLineDelimeter are not equal.
+| [ToString()](#tostring-) | Returns the string representation of the Delimiter instance.
 
-### bool op_Inequality([NewLineDelimeter ldlim](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
+### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Determines if the instances of NewLineDelimeter and Delimiter are not equal.
+Determines if the current Delimiter instance is equal to the specified object.
 
 ```cs
-bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
+bool Equals(object obj)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are not equal, False otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
 
-### bool op_Inequality([NewLineDelimeter ldlim](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
+### int GetHashCode()
 
-Determines if the instances of Delimiter and NewLineDelimeter are not equal.
+Overrides the GetHashCode method of the base class.
 
 ```cs
-bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
+int GetHashCode()
 ```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are not equal, False otherwise.
 
 ### bool op_Equality([NewLineDelimeter _](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
 
@@ -127,38 +113,52 @@ bool op_Equality(NewLineDelimeter _, Delimiter rdlim)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
 
-### string ToString()
+### bool op_Inequality([NewLineDelimeter ldlim](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
 
-Returns the string representation of the Delimiter instance.
-
-```cs
-string ToString()
-```
-
-### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines if the current Delimiter instance is equal to the specified object.
+Determines if the instances of NewLineDelimeter and Delimiter are not equal.
 
 ```cs
-bool Equals(object obj)
+bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, False otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are not equal, False otherwise.
 
-### int GetHashCode()
+### bool op_Inequality([NewLineDelimeter ldlim](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
 
-Overrides the GetHashCode method of the base class.
+Determines if the instances of Delimiter and NewLineDelimeter are not equal.
 
 ```cs
-int GetHashCode()
+bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are not equal, False otherwise.
+
+### string ToString()
+
+Returns the string representation of the Delimiter instance.
+
+```cs
+string ToString()
 ```

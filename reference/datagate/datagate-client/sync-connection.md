@@ -43,18 +43,62 @@ SyncConnection(AdgConnection)
 
 | Signature | Description |
 | --- | --- |
+| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
 | [Clone()](#clone-) | Clones the SyncConnection instance.
-| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using the specified options and cancellation token.
-| [Open](#open-cancellationtoken-)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancellation token.
+| [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the SyncConnection instance.
+| [GetDatabaseAttributes()](#getdatabaseattributes-) | Gets the database attributes of the connected database.
 | [GetDeviceCodePageID()](#getdevicecodepageid-) | Gets the device code page ID associated with the SyncConnection.
 | [GetPeerAltCodePageID()](#getpeeraltcodepageid-) | Gets the Peer Alt Code Page ID associated with the SyncConnection.
-| [GetSupportsMultiMember()](#getsupportsmultimember-) | Gets the value indicating whether the connection supports multi-member.
 | [GetPeerVersion()](#getpeerversion-) | Gets the protocol version of the connected peer.
-| [GetDatabaseAttributes()](#getdatabaseattributes-) | Gets the database attributes of the connected database.
-| [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
-| [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [GetSupportsMultiMember()](#getsupportsmultimember-) | Gets the value indicating whether the connection supports multi-member.
+| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using the specified options and cancellation token.
+| [Open](#open-cancellationtoken-)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancellation token.
 | [Reset()](#reset-) | Resets the connection.
-| [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the SyncConnection instance.
+
+### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Begins an automatic transaction with the specified transaction level, name, and options.
+
+```cs
+IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Options)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
+
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Begins a transaction with the specified transaction level, name, and options.
+
+```cs
+IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Options)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
 
 ### object Clone()
 
@@ -62,6 +106,60 @@ Clones the SyncConnection instance.
 
 ```cs
 object Clone()
+```
+
+### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Disposes the SyncConnection instance.
+
+```cs
+void Dispose(bool isDisposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | 
+
+### DatabaseAttributes GetDatabaseAttributes()
+
+Gets the database attributes of the connected database.
+
+```cs
+DatabaseAttributes GetDatabaseAttributes()
+```
+
+### int GetDeviceCodePageID()
+
+Gets the device code page ID associated with the SyncConnection.
+
+```cs
+int GetDeviceCodePageID()
+```
+
+### int GetPeerAltCodePageID()
+
+Gets the Peer Alt Code Page ID associated with the SyncConnection.
+
+```cs
+int GetPeerAltCodePageID()
+```
+
+### ProtoLevel GetPeerVersion()
+
+Gets the protocol version of the connected peer.
+
+```cs
+ProtoLevel GetPeerVersion()
+```
+
+### bool GetSupportsMultiMember()
+
+Gets the value indicating whether the connection supports multi-member.
+
+```cs
+bool GetSupportsMultiMember()
 ```
 
 ### void Open([OpenOptions options](/reference/datagate/datagate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
@@ -87,90 +185,6 @@ Opens the connection using a cancellation token.
 void Open(OpenOptions options, CancellationToken ct)
 ```
 
-### int GetDeviceCodePageID()
-
-Gets the device code page ID associated with the SyncConnection.
-
-```cs
-int GetDeviceCodePageID()
-```
-
-### int GetPeerAltCodePageID()
-
-Gets the Peer Alt Code Page ID associated with the SyncConnection.
-
-```cs
-int GetPeerAltCodePageID()
-```
-
-### bool GetSupportsMultiMember()
-
-Gets the value indicating whether the connection supports multi-member.
-
-```cs
-bool GetSupportsMultiMember()
-```
-
-### ProtoLevel GetPeerVersion()
-
-Gets the protocol version of the connected peer.
-
-```cs
-ProtoLevel GetPeerVersion()
-```
-
-### DatabaseAttributes GetDatabaseAttributes()
-
-Gets the database attributes of the connected database.
-
-```cs
-DatabaseAttributes GetDatabaseAttributes()
-```
-
-### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Begins a transaction with the specified transaction level, name, and options.
-
-```cs
-IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Options)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
-
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Begins an automatic transaction with the specified transaction level, name, and options.
-
-```cs
-IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Options)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | The IAdgTransaction representing the transaction.
-
 ### bool Reset()
 
 Resets the connection.
@@ -178,17 +192,3 @@ Resets the connection.
 ```cs
 bool Reset()
 ```
-
-### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Disposes the SyncConnection instance.
-
-```cs
-void Dispose(bool isDisposing)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | 

@@ -43,9 +43,9 @@ DataGateCredential(CredentialType)
 | --- | --- |
 | [Clone()](#clone-) | Creates a new object that is a copy of the current instance.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.
+| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current object.
 | [GetHashCode()](#gethashcode-) | Returns a hash code for the current object.
 | [GetHashCodeInternal()](#gethashcodeinternal-) | When overridden in a derived class, returns a hash code for the current object.
-| [Equals](#equals-idatagatecredential-)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current object.
 
 ### object Clone()
 
@@ -75,22 +75,6 @@ bool Equals(object obj)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current object; otherwise, false.
 
-### int GetHashCode()
-
-Returns a hash code for the current object.
-
-```cs
-int GetHashCode()
-```
-
-### int GetHashCodeInternal()
-
-When overridden in a derived class, returns a hash code for the current object.
-
-```cs
-int GetHashCodeInternal()
-```
-
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Determines whether the specified IDataGateCredential is equal to the current object.
@@ -110,3 +94,19 @@ bool Equals(object obj)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential is equal to the current object; otherwise, false.
+
+### int GetHashCode()
+
+Returns a hash code for the current object.
+
+```cs
+int GetHashCode()
+```
+
+### int GetHashCodeInternal()
+
+When overridden in a derived class, returns a hash code for the current object.
+
+```cs
+int GetHashCodeInternal()
+```

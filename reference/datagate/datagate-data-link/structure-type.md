@@ -14,6 +14,7 @@ Represents a structured type in a program parameter.
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
+
 ## Constructors
 
 | Name | Description |

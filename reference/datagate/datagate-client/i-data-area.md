@@ -28,18 +28,13 @@ This interface should be implemented by classes that represent a DataGate data a
 
 | Signature | Description |
 | --- | --- |
-| [SetInitialValue](#setinitialvalue-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the initial value of the data area.
+| [AppendParm](#appendparm-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a ProgParm parameter to the data area.
 | [Change](#change-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Changes the value of the data area.
 | [Change](#change-decimal-)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Changes the value of the data area.
 | [Change](#change-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the value of the data area.
 | [Change](#change-string-int32-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
-| [Retrieve()](#retrieve-) | Retrieves the value of the data area.
-| [Retrieve](#retrieve-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
 | [Change](#change-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Changes the value of the data area.
 | [Change](#change-progparm-int32-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
-| [Retrieve](#retrieve-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Retrieves the value of the data area.
-| [Retrieve](#retrieve-progparm-int32-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
-| [AppendParm](#appendparm-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a ProgParm parameter to the data area.
 | [ObjectToParm](#objecttoparm-object-string-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the value of the specified parameter in the data area.
 | [ObjectToParm](#objecttoparm-progparm-object-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of the specified parameter in the data area.
 | [ObjectToParm](#objecttoparm-progparm-object-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
@@ -48,124 +43,11 @@ This interface should be implemented by classes that represent a DataGate data a
 | [ParmToObject](#parmtoobject-progparm-type-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the value of the specified parameter in the data area to the specified return type.
 | [ParmToObject](#parmtoobject-progparm-type-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
 | [ParmToObject](#parmtoobject-type-string-int32-)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
-
-### void SetInitialValue([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Sets the initial value of the data area.
-
-```cs
-void SetInitialValue(string value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
-
-### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Changes the value of the data area.
-
-```cs
-void Change(bool Value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
-
-### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Changes the value of the data area.
-
-```cs
-void Change(bool Value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
-
-### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Changes the value of the data area.
-
-```cs
-void Change(bool Value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
-
-### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Changes the value of the data area.
-
-```cs
-void Change(bool Value)
-```
-
-### object Retrieve()
-
-Retrieves the value of the data area.
-
-```cs
-object Retrieve()
-```
-
-### object Retrieve()
-
-Retrieves the value of the data area.
-
-```cs
-object Retrieve()
-```
-
-### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Changes the value of the data area.
-
-```cs
-void Change(bool Value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
-
-### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
-
-Changes the value of the data area.
-
-```cs
-void Change(bool Value)
-```
-
-### object Retrieve()
-
-Retrieves the value of the data area.
-
-```cs
-object Retrieve()
-```
-
-### object Retrieve()
-
-Retrieves the value of the data area.
-
-```cs
-object Retrieve()
-```
+| [Retrieve()](#retrieve-) | Retrieves the value of the data area.
+| [Retrieve](#retrieve-int32-int32-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
+| [Retrieve](#retrieve-progparm-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Retrieves the value of the data area.
+| [Retrieve](#retrieve-progparm-int32-int32-)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
+| [SetInitialValue](#setinitialvalue-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the initial value of the data area.
 
 ### void AppendParm([ProgParm Parameter](/reference/datagate/datagate-data-link/prog-parm.html))
 
@@ -180,6 +62,78 @@ void AppendParm(ProgParm Parameter)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
+
+### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Changes the value of the data area.
+
+```cs
+void Change(bool Value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
+
+### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Changes the value of the data area.
+
+```cs
+void Change(bool Value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
+
+### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Changes the value of the data area.
+
+```cs
+void Change(bool Value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
+
+### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Changes the value of the data area.
+
+```cs
+void Change(bool Value)
+```
+
+### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Changes the value of the data area.
+
+```cs
+void Change(bool Value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
+
+### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Changes the value of the data area.
+
+```cs
+void Change(bool Value)
+```
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -284,3 +238,49 @@ Converts the value of the specified parameter in the data area to the specified 
 ```cs
 object ParmToObject(Type ReturnType, string ParameterName)
 ```
+
+### object Retrieve()
+
+Retrieves the value of the data area.
+
+```cs
+object Retrieve()
+```
+
+### object Retrieve()
+
+Retrieves the value of the data area.
+
+```cs
+object Retrieve()
+```
+
+### object Retrieve()
+
+Retrieves the value of the data area.
+
+```cs
+object Retrieve()
+```
+
+### object Retrieve()
+
+Retrieves the value of the data area.
+
+```cs
+object Retrieve()
+```
+
+### void SetInitialValue([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Sets the initial value of the data area.
+
+```cs
+void SetInitialValue(string value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 

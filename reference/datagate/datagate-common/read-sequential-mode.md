@@ -18,6 +18,7 @@ Enum representing the mode of reading values in a sequential manner.
 | Last | Represents a state where the last value is read in the sequence. | 6 |
 | Next | Represents a state where the next value is read in the sequence. | 1 |
 | Previous | Represents a state where the previous value is read in the sequence. | 2 |
+
 ## Examples
 
 The follwing code examples demonstrate how to use the `ReadSequentialMode` enumeration.

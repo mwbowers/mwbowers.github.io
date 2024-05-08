@@ -48,50 +48,10 @@ DecNumZPRep(Int32)
 
 | Signature | Description |
 | --- | --- |
-| [IsNegativeZone](#isnegativezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative zoneddecimal byte.
-| [IsPositiveZone](#ispositivezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive zoneddecimal byte.
 | [IsNegativePacked](#isnegativepacked-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative packeddecimal byte.
+| [IsNegativeZone](#isnegativezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a negative zoneddecimal byte.
 | [IsPositivePacked](#ispositivepacked-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive packeddecimal byte.
-
-### bool IsNegativeZone([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
-
-Returns true if the specified byte represents a negative zoneddecimal byte.
-
-```cs
-bool IsNegativeZone(byte b)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
-
-### bool IsPositiveZone([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
-
-Returns true if the specified byte represents a positive zoneddecimal byte.
-
-```cs
-bool IsPositiveZone(byte b)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
+| [IsPositiveZone](#ispositivezone-byte-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Returns true if the specified byte represents a positive zoneddecimal byte.
 
 ### bool IsNegativePacked([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 
@@ -113,12 +73,52 @@ bool IsNegativePacked(byte b)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
 
+### bool IsNegativeZone([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Returns true if the specified byte represents a negative zoneddecimal byte.
+
+```cs
+bool IsNegativeZone(byte b)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
+
 ### bool IsPositivePacked([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 
 Returns true if the specified byte represents a positive packeddecimal byte.
 
 ```cs
 bool IsPositivePacked(byte b)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
+
+### bool IsPositiveZone([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Returns true if the specified byte represents a positive zoneddecimal byte.
+
+```cs
+bool IsPositiveZone(byte b)
 ```
 
 #### Parameters

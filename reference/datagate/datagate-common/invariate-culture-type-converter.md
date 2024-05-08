@@ -40,9 +40,9 @@ InvariateCultureTypeConverter(TypeConverter)
 
 | Signature | Description |
 | --- | --- |
-| [ConvertFrom](#convertfrom-itypedescriptorcontext-cultureinfo-object-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the given value object to the type of this converter, using the invariant culture.
 | [CanConvertFrom](#canconvertfrom-itypedescriptorcontext-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Returns whether this converter can convert an object of the given type to the type of this converter, using the specified context.
 | [CanConvertTo](#canconvertto-itypedescriptorcontext-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Returns whether this converter can convert an object of its type to a specified type, using the specified context.
+| [ConvertFrom](#convertfrom-itypedescriptorcontext-cultureinfo-object-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the given value object to the type of this converter, using the invariant culture.
 | [ConvertTo](#convertto-itypedescriptorcontext-cultureinfo-object-type-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the given value object to the specified type, using the invariant culture.
 | [CreateInstance](#createinstance-itypedescriptorcontext-idictionary-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)) | Creates an instance of the type that this TypeConverter is associated with, using the specified context and the set of property values.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.
@@ -55,28 +55,6 @@ InvariateCultureTypeConverter(TypeConverter)
 | [GetStandardValuesSupported](#getstandardvaluessupported-itypedescriptorcontext-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether this object supports a standard set of values that can be picked from a list, using the specified context.
 | [IsValid](#isvalid-itypedescriptorcontext-object-)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Returns whether the given value object is valid for this type and for the specified context.
 | [ToString()](#tostring-) | Returns a string that represents the current object.
-
-### object ConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Converts the given value object to the type of this converter, using the invariant culture.
-
-```cs
-object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | culture | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object that represents the converted value.
 
 ### bool CanConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type sourceType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
@@ -119,6 +97,28 @@ bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if this converter can perform the conversion; otherwise, false.
+
+### object ConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Converts the given value object to the type of this converter, using the invariant culture.
+
+```cs
+object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
+| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | culture | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object that represents the converted value.
 
 ### object ConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 

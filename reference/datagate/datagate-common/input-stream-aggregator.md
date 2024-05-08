@@ -55,8 +55,8 @@ InputStreamAggregator()
 | Signature | Description |
 | --- | --- |
 | [Append](#append-int32-func`1-)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the aggregator.
-| [Finalize()](#finalize-) | Finalizes an instance of the  class.
 | [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
+| [Finalize()](#finalize-) | Finalizes an instance of the  class.
 | [Flush()](#flush-) | Overrides the Flush method for the InputStreamAggregator.
 | [Read](#read-byte-int32-int32-)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
 | [ReadByte()](#readbyte-) | Reads a byte from the current InputStreamAggregator and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
@@ -79,14 +79,6 @@ void Append(int len, Func<Stream> cons)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | len | 
 | [Func\<Stream\>](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0) | cons | 
 
-### void Finalize()
-
-Finalizes an instance of the  class.
-
-```cs
-void Finalize()
-```
-
 ### void Dispose([bool disposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
@@ -100,6 +92,14 @@ void Dispose(bool disposing)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | 
+
+### void Finalize()
+
+Finalizes an instance of the  class.
+
+```cs
+void Finalize()
+```
 
 ### void Flush()
 

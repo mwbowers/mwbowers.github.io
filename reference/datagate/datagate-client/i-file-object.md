@@ -41,17 +41,38 @@ This interface should be implemented by classes that represent a DataGate file o
 
 | Signature | Description |
 | --- | --- |
+| [AsyncCopyFromImportFile](#asynccopyfromimportfile-string-copyfromimportfileoptions-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html)) | Asynchronously copies data from the specified import file to the file object.
 | [Copy](#copy-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Copies the file object to the specified directory with the specified new name.
 | [CopyData](#copydata-string-string-string-string-copydataoptions-int32-int32-int32-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CopyDataOptions](/reference/datagate/datagate-common/copy-data-options.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies data from the file object to a new file object in the specified directory with the specified new name and member.
 | [CopyFromImportFile](#copyfromimportfile-string-copyfromimportfileoptions-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html)) | Copies data from the specified import file to the file object.
-| [AsyncCopyFromImportFile](#asynccopyfromimportfile-string-copyfromimportfileoptions-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html)) | Asynchronously copies data from the specified import file to the file object.
-| [ReadDefinition](#readdefinition-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the definition of the file object from the specified XML reader.
-| [WriteDefinition](#writedefinition-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the definition of the file object to the specified XML writer.
-| [ReadCreationAttributes](#readcreationattributes-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the creation attributes of the file object from the specified XML reader.
-| [WriteCreationAttributes](#writecreationattributes-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the creation attributes of the file object to the specified XML writer.
 | [GetAdgDataSet](#getadgdataset-datasetoptions-)([DataSetOptions](/reference/datagate/datagate-common/data-set-options.html)) | Gets the AdgDataSet for the file object according to the specified options.
 | [InspectFile](#inspectfile-inspectfileparts-inspectfileoutput-int32-adgobserver-)([InspectFileParts](/reference/datagate/datagate-common/inspect-file-parts.html), [InspectFileOutput](/reference/datagate/datagate-common/inspect-file-output.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Inspects the file object according to the specified parts and outputs the results.
+| [ReadCreationAttributes](#readcreationattributes-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the creation attributes of the file object from the specified XML reader.
+| [ReadDefinition](#readdefinition-xmlreader-)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the definition of the file object from the specified XML reader.
 | [RepairFile](#repairfile-repairoptions-adgobserver-)([RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repairs the file object according to the specified options.
+| [WriteCreationAttributes](#writecreationattributes-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the creation attributes of the file object to the specified XML writer.
+| [WriteDefinition](#writedefinition-xmlwriter-)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the definition of the file object to the specified XML writer.
+
+### IFileObject AsyncCopyFromImportFile([string filePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [CopyFromImportFileOptions options](/reference/datagate/datagate-client/copy-from-import-file-options.html))
+
+Asynchronously copies data from the specified import file to the file object.
+
+```cs
+IFileObject AsyncCopyFromImportFile(string filePath, CopyFromImportFileOptions options)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | 
+| [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | The file object with the copied data.
 
 ### IFileObject Copy([string targetDir](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string newName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -122,83 +143,6 @@ IFileObject CopyFromImportFile(string filePath, CopyFromImportFileOptions option
 | --- | ---
 | [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | The file object with the copied data.
 
-### IFileObject AsyncCopyFromImportFile([string filePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [CopyFromImportFileOptions options](/reference/datagate/datagate-client/copy-from-import-file-options.html))
-
-Asynchronously copies data from the specified import file to the file object.
-
-```cs
-IFileObject AsyncCopyFromImportFile(string filePath, CopyFromImportFileOptions options)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | 
-| [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | options | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | The file object with the copied data.
-
-### void ReadDefinition([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
-
-Reads the definition of the file object from the specified XML reader.
-
-```cs
-void ReadDefinition(XmlReader reader)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
-
-### void WriteDefinition([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
-
-Writes the definition of the file object to the specified XML writer.
-
-```cs
-void WriteDefinition(XmlWriter writer)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
-
-### void ReadCreationAttributes([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
-
-Reads the creation attributes of the file object from the specified XML reader.
-
-```cs
-void ReadCreationAttributes(XmlReader reader)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
-
-### void WriteCreationAttributes([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
-
-Writes the creation attributes of the file object to the specified XML writer.
-
-```cs
-void WriteCreationAttributes(XmlWriter writer)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
-
 ### AdgDataSet GetAdgDataSet([DataSetOptions opts](/reference/datagate/datagate-common/data-set-options.html))
 
 Gets the AdgDataSet for the file object according to the specified options.
@@ -236,6 +180,34 @@ void InspectFile(InspectFileParts parts, InspectFileOutput output, Int32& ErrorC
 | [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ErrorCount | 
 | [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | 
 
+### void ReadCreationAttributes([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
+
+Reads the creation attributes of the file object from the specified XML reader.
+
+```cs
+void ReadCreationAttributes(XmlReader reader)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+
+### void ReadDefinition([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
+
+Reads the definition of the file object from the specified XML reader.
+
+```cs
+void ReadDefinition(XmlReader reader)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+
 ### void RepairFile([RepairOptions repairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver observer](/reference/datagate/datagate-client/adg-observer.html))
 
 Repairs the file object according to the specified options.
@@ -250,3 +222,31 @@ void RepairFile(RepairOptions repairOptions, AdgObserver observer)
 | --- | --- | ---
 | [RepairOptions](/reference/datagate/datagate-common/repair-options.html) | repairOptions | 
 | [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | 
+
+### void WriteCreationAttributes([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
+
+Writes the creation attributes of the file object to the specified XML writer.
+
+```cs
+void WriteCreationAttributes(XmlWriter writer)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+
+### void WriteDefinition([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
+
+Writes the definition of the file object to the specified XML writer.
+
+```cs
+void WriteDefinition(XmlWriter writer)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 

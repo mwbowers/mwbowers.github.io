@@ -34,18 +34,10 @@ the type of dependency, and the path of the dependent object.
 
 | Signature | Description |
 | --- | --- |
-| [ToString()](#tostring-) | Overrides the ToString() method to return the PathName property.
 | [Equals](#equals-dependent-)([Dependent](/reference/datagate/datagate-client/dependent.html)) | 
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified dependent object is equal to the current dependent object.
 | [GetHashCode()](#gethashcode-) | Overrides the GetHashCode() method to calculate the hash code for the current dependent object.
-
-### string ToString()
-
-Overrides the ToString() method to return the PathName property.
-
-```cs
-string ToString()
-```
+| [ToString()](#tostring-) | Overrides the ToString() method to return the PathName property.
 
 ### bool Equals([Dependent other](/reference/datagate/datagate-client/dependent.html))
 
@@ -93,4 +85,12 @@ Overrides the GetHashCode() method to calculate the hash code for the current de
 
 ```cs
 int GetHashCode()
+```
+
+### string ToString()
+
+Overrides the ToString() method to return the PathName property.
+
+```cs
+string ToString()
 ```

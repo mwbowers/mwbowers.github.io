@@ -16,6 +16,7 @@ Enum representing the mode of reading values in a random manner.
 | Equal | Represents a state where an equal value is read in the sequence. | 13 |
 | Greater | Represents a state where a greater value is read in the sequence. | 14 |
 | GTEQ | Represents a state where a value greater than or equal to the current value is read in the sequence. | 15 |
+
 ## Examples
 
 

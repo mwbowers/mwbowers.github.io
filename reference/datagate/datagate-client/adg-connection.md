@@ -23,6 +23,7 @@ For example, an ASP.NET application must take special care when using a shared i
 As an alternative, consider using a separate instance of AdgConnection (optionally configured for connection pooling via the [PoolingTimeout](/reference/datagate/data-gate-providers/source-profile.html#properties) property of SourceProfile) in each ASP.NET session. Note also that other DG classes with properties and method parameters of type AdgConnection, such as FileAdapter, may employ the non-thread safe members of AdgConnection internally. By association, instance members of these classes are not guaranteed to be thread safe. 
 
 
+
 ## Constructors
 
 | Name | Description |
@@ -109,14 +110,6 @@ AdgConnection(SourceProfile, IExchange5250)
 
 | Signature | Description |
 | --- | --- |
-| [GetSourceProfileCopy()](#getsourceprofilecopy-) | Return a deep-copy of the SourceProfile associated with thisconnection.  Since the returned object is a copy, modifications toit have no effect on the AdgConnection instance.  
-| [GetDeviceCodePageID()](#getdevicecodepageid-) | Gets the device code page ID associated with the AdgConnection.
-| [GetPeerAltCodePageID()](#getpeeraltcodepageid-) | Gets the Peer Alt Code Page ID associated with the AdgConnection.
-| [GetSupportsMultiMember()](#getsupportsmultimember-) | Gets the value indicating whether the connection supports multi-member.
-| [GetPeerVersion()](#getpeerversion-) | Gets the protocol version of the connected peer.
-| [Close()](#close-) | Closes the connection and disposes the AdgConnection instance.
-| [Dispose()](#dispose-) | Disposes the AdgConnection instance.
-| [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the AdgConnection instance.
 | [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begin auto transaction
 | [BeginAutoTransaction](#beginautotransaction-string-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | 
 | [BeginAutoTransaction](#beginautotransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
@@ -124,80 +117,24 @@ AdgConnection(SourceProfile, IExchange5250)
 | [BeginTransaction](#begintransaction-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
 | [BeginTransaction](#begintransaction-transactionlevel-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
 | [BeginTransaction](#begintransaction-transactionlevel-string-string-)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
-| [GetDatabaseAttributes()](#getdatabaseattributes-) | Gets the database attributes of the connected database.
-| [Open](#open-cancellationtoken-)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancelation token.
-| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using optios and cancelation token.
 | [Clone()](#clone-) | Clones the AdgConnection instance.
+| [Close()](#close-) | Closes the connection and disposes the AdgConnection instance.
+| [Dispose()](#dispose-) | Disposes the AdgConnection instance.
+| [Dispose](#dispose-boolean-)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the AdgConnection instance.
+| [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the passed in connection is equal to the current connection instance.
+| [GetDatabaseAttributes()](#getdatabaseattributes-) | Gets the database attributes of the connected database.
+| [GetDeviceCodePageID()](#getdevicecodepageid-) | Gets the device code page ID associated with the AdgConnection.
+| [GetHashCode()](#gethashcode-) | Get connection instance hash code.
+| [GetPeerAltCodePageID()](#getpeeraltcodepageid-) | Gets the Peer Alt Code Page ID associated with the AdgConnection.
+| [GetPeerVersion()](#getpeerversion-) | Gets the protocol version of the connected peer.
+| [GetSourceProfileCopy()](#getsourceprofilecopy-) | Return a deep-copy of the SourceProfile associated with thisconnection.  Since the returned object is a copy, modifications toit have no effect on the AdgConnection instance.  
+| [GetSupportsMultiMember()](#getsupportsmultimember-) | Gets the value indicating whether the connection supports multi-member.
+| [IsCanceledException](#iscanceledexception-exception-)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Determines if the exception given has been cancelled.
 | [op_Equality](#op_equality-adgconnection-adgconnection-)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Determines whether two AdgConnection instances are equal.
 | [op_Inequality](#op_inequality-adgconnection-adgconnection-)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Determines whether two AdgConnection instances are different.
-| [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the passed in connection is equal to the current connection instance.
-| [GetHashCode()](#gethashcode-) | Get connection instance hash code.
+| [Open](#open-cancellationtoken-)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancelation token.
+| [Open](#open-openoptions-cancellationtoken-)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using optios and cancelation token.
 | [Synchronized](#synchronized-adgconnection-)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Synchronizes the given AdgConnection instance.
-| [IsCanceledException](#iscanceledexception-exception-)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Determines if the exception given has been cancelled.
-
-### SourceProfile GetSourceProfileCopy()
-
-Return a deep-copy of the SourceProfile associated with thisconnection.  Since the returned object is a copy, modifications toit have no effect on the AdgConnection instance.  
-
-```cs
-SourceProfile GetSourceProfileCopy()
-```
-
-### int GetDeviceCodePageID()
-
-Gets the device code page ID associated with the AdgConnection.
-
-```cs
-int GetDeviceCodePageID()
-```
-
-### int GetPeerAltCodePageID()
-
-Gets the Peer Alt Code Page ID associated with the AdgConnection.
-
-```cs
-int GetPeerAltCodePageID()
-```
-
-### bool GetSupportsMultiMember()
-
-Gets the value indicating whether the connection supports multi-member.
-
-```cs
-bool GetSupportsMultiMember()
-```
-
-### ProtoLevel GetPeerVersion()
-
-Gets the protocol version of the connected peer.
-
-```cs
-ProtoLevel GetPeerVersion()
-```
-
-### void Close()
-
-Closes the connection and disposes the AdgConnection instance.
-
-```cs
-void Close()
-```
-
-### void Dispose()
-
-Disposes the AdgConnection instance.
-
-```cs
-void Dispose()
-```
-
-### void Dispose()
-
-Disposes the AdgConnection instance.
-
-```cs
-void Dispose()
-```
 
 ### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -305,6 +242,58 @@ Begins an automatic transaction with the specified transaction level, name, and 
 IAdgTransaction BeginTransaction(TransactionLevel tl)
 ```
 
+### object Clone()
+
+Clones the AdgConnection instance.
+
+```cs
+object Clone()
+```
+
+### void Close()
+
+Closes the connection and disposes the AdgConnection instance.
+
+```cs
+void Close()
+```
+
+### void Dispose()
+
+Disposes the AdgConnection instance.
+
+```cs
+void Dispose()
+```
+
+### void Dispose()
+
+Disposes the AdgConnection instance.
+
+```cs
+void Dispose()
+```
+
+### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the passed in connection is equal to the current connection instance.
+
+```cs
+bool Equals(object obj)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, otherwise false.
+
 ### DatabaseAttributes GetDatabaseAttributes()
 
 Gets the database attributes of the connected database.
@@ -313,35 +302,73 @@ Gets the database attributes of the connected database.
 DatabaseAttributes GetDatabaseAttributes()
 ```
 
-### void Open([CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
+### int GetDeviceCodePageID()
 
-Opens the connection using a cancelation token.
+Gets the device code page ID associated with the AdgConnection.
 
 ```cs
-void Open(CancellationToken ct)
+int GetDeviceCodePageID()
+```
+
+### int GetHashCode()
+
+Get connection instance hash code.
+
+```cs
+int GetHashCode()
+```
+
+### int GetPeerAltCodePageID()
+
+Gets the Peer Alt Code Page ID associated with the AdgConnection.
+
+```cs
+int GetPeerAltCodePageID()
+```
+
+### ProtoLevel GetPeerVersion()
+
+Gets the protocol version of the connected peer.
+
+```cs
+ProtoLevel GetPeerVersion()
+```
+
+### SourceProfile GetSourceProfileCopy()
+
+Return a deep-copy of the SourceProfile associated with thisconnection.  Since the returned object is a copy, modifications toit have no effect on the AdgConnection instance.  
+
+```cs
+SourceProfile GetSourceProfileCopy()
+```
+
+### bool GetSupportsMultiMember()
+
+Gets the value indicating whether the connection supports multi-member.
+
+```cs
+bool GetSupportsMultiMember()
+```
+
+### bool IsCanceledException([Exception e](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
+
+Determines if the exception given has been cancelled.
+
+```cs
+bool IsCanceledException(Exception e)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | 
 
-### void Open([CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
+#### Returns
 
-Opens the connection using optios and cancelation token.
-
-```cs
-void Open(CancellationToken ct)
-```
-
-### object Clone()
-
-Clones the AdgConnection instance.
-
-```cs
-object Clone()
-```
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the exception has been cancelled, False otherwise.
 
 ### bool op_Equality([AdgConnection x](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection y](/reference/datagate/datagate-client/adg-connection.html))
 
@@ -385,32 +412,26 @@ bool op_Inequality(AdgConnection x, AdgConnection y)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are different, otherwise false.
 
-### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### void Open([CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
 
-Determines whether the passed in connection is equal to the current connection instance.
+Opens the connection using a cancelation token.
 
 ```cs
-bool Equals(object obj)
+void Open(CancellationToken ct)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
 
-#### Returns
+### void Open([CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
 
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the instances are equal, otherwise false.
-
-### int GetHashCode()
-
-Get connection instance hash code.
+Opens the connection using optios and cancelation token.
 
 ```cs
-int GetHashCode()
+void Open(CancellationToken ct)
 ```
 
 ### AdgConnection Synchronized([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html))
@@ -433,22 +454,68 @@ AdgConnection Synchronized(AdgConnection cn)
 | --- | ---
 | [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | A synchronized AdgConnection instance.
 
-### bool IsCanceledException([Exception e](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
+## Example 1. Constructor example.
 
-Determines if the exception given has been cancelled.
-
-```cs
-bool IsCanceledException(Exception e)
+```cs 
+  try
+  {
+      AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
+  }
+  catch(dgException e)
+  {
+      //At this point, dataBase will be set to null.  Do error handling here.
+      System.Windows.Forms.MessageBox.Show(e.Message, "Unable to create connection.");
+  }
 ```
 
-#### Parameters
+## Example 2. Use of ConnctionState Property.
 
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | 
+```cs 
+  /* Here we need to use an AdgConnection "dataBase" to open
+     a file.  We first check to make sure that the AdgConnection has 
+     been initialized and that the connection has been made to
+     avoid throwing an exception. */
+  FileAdapter dbFile =  null;
+  AdgDataSet dataSet = null;
+  if (dataBase != null &amp;&amp; dataBase.State == ConnectionState.Open)
+  {
+     dbFile = new FileAdapter(dataBase);
+     dbFile.OpenNewAdgDataSet(out dataSet);
+  }
+  else
+  { 
+     //If the AdgConnection was not ready, you cannot immediately
+     //open the file, so take alternative action here.
+  }
+```
 
-#### Returns
+## Example 3. Use of SourceProfile Property.
 
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the exception has been cancelled, False otherwise.
+
+```cs 
+  AdgConnection Cx;
+  Cx = new AdgConnection("*Public/DG NET IBM i");
+  MessageBox.Show("The database name \"*Public/DG NET IBM i\" refers to a connection to "
+           + Cx.SourceProfile.Server + " on port " + Cx.SourceProfile.Port.ToString());
+```
+
+## Example 4. Use of Open method.
+
+```cs 
+  try
+  {
+      AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
+      dataBase.Open();
+  }
+  catch(dgException e)
+  {
+      System.Windows.Forms.MessageBox.Show(e.Message, "Error establishing connection to database.");
+  }
+```
+
+## Example 5. Use of Close method.
+
+```cs 
+  //Disconnects from the dataBase by closing the connection.
+  adg.Close();
+```

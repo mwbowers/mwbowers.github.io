@@ -14,6 +14,7 @@ Custom Exceptions thrown by DataGate.
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
+
 ## Constructors
 
 | Name | Description |
@@ -145,9 +146,9 @@ dgException(dgErrorNumber, Exception)
 | Signature | Description |
 | --- | --- |
 | [FormatMessage](#formatmessage-iformatprovider-string-)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the error message.
-| [GetVerboseText()](#getverbosetext-) | Return a string containing a verbose description of thedgException. This string will most likely contain line separatorcharacters.  All dgException member variables are included in thestring.
 | [GetDefaultErrorClass](#getdefaulterrorclass-dgerrornumber-)([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html)) | Each dgErrorNumber has a default associated dgErrorClass.  Thismethod returns it.
 | [GetObjectData](#getobjectdata-serializationinfo-streamingcontext-)([SerializationInfo](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo?view=net-8.0), [StreamingContext](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext?view=net-8.0)) | Gets the object data.
+| [GetVerboseText()](#getverbosetext-) | Return a string containing a verbose description of thedgException. This string will most likely contain line separatorcharacters.  All dgException member variables are included in thestring.
 
 ### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -169,14 +170,6 @@ string FormatMessage(IFormatProvider provider, string msg)
 | Type | Description
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | 
-
-### string GetVerboseText()
-
-Return a string containing a verbose description of thedgException. This string will most likely contain line separatorcharacters.  All dgException member variables are included in thestring.
-
-```cs
-string GetVerboseText()
-```
 
 ### dgErrorClass GetDefaultErrorClass([dgErrorNumber err](/reference/datagate/datagate-common/dg-error-number.html))
 
@@ -212,3 +205,133 @@ void GetObjectData(SerializationInfo info, StreamingContext context)
 | --- | --- | ---
 | [SerializationInfo](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo?view=net-8.0) | info | 
 | [StreamingContext](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext?view=net-8.0) | context | 
+
+### string GetVerboseText()
+
+Return a string containing a verbose description of thedgException. This string will most likely contain line separatorcharacters.  All dgException member variables are included in thestring.
+
+```cs
+string GetVerboseText()
+```
+
+### Example 1. dgException ErrorClass and SystemError properties example.
+
+```cs 
+  /* This code attempts to open a file exclusively. 
+  * If it fails, we print out the IBM i exception responsible.
+  * "dbFile" is of type FileAdapter. */ 
+  dbFile.AccessMode = AccessMode.Write;
+  dbFile.OpenAttributes.ShareTypes = ShareTypes.Exclusive;
+  dbFile.OpenAttributes.WaitForFile = 0;
+
+  AdgDataSet dataSet = null;
+  try
+  {
+      dbFile.Open(dataSet);
+  }
+  catch(dgException dgEx)
+  {
+      /* Take special action if error is due to the IBM i exception
+       * "CPF1002". */
+      if (dgEx.ErrorClass == dgErrorClass.dgEC_AS400CPF &amp;&amp;
+          dgEx.SystemError.ToString("X") == "1002")
+      {
+          MessageBox.Show("iSeries threw exception CPF1002.");
+          // Take alternative action here.
+      }
+      else
+      {
+          /* Throw exception otherwise. */
+          throw dgEx;
+      }
+  }
+```
+
+### Example 2. dgException Message property example.
+
+
+```cs 
+  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
+  dbFile.AccessMode = AccessMode.Read;
+
+  AdgDataSet myDS = null;
+  try
+  {
+      dbFile.OpenNewAdgDataSet(out myDS);
+  }
+  catch(dgException dgEx)
+  {
+      /* This will show a somewhat specific message as to what 
+       * went wrong opening the file. */
+      MessageBox.Show(dgEx.Message, "Error opening file");
+      //Exit procedure here.
+  }
+```
+
+## Example 3. GetVerboseText method example.
+
+```cs 
+  /* Verbose text generates a large string which is a concatanation 
+   * of several of dgException's properties and also shows the
+   * stack trace. While not very user friendly, it can come in handy
+   * developing a program. */
+  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
+  dbFile.AccessMode = AccessMode.Read ;
+
+  AdgDataSet myDS = null;
+  dbFile.OpenNewAdgDataSet(out myDS);
+
+  /* We retrieve the record for customer number 7800. */
+  AdgKeyTable keyTbl = myDS.NewKeyTable("RCMMASTL1");
+  keyTbl.Row["CMCUSTNO"] = 7800;
+  try
+  {
+      dbFile.ReadRandomKey(myDS, ReadRandomMode.Equal, LockRequest.Write, keyTbl);
+      myDS.ActiveRow["CMCUSTNO"] = 300;
+      dbFile.ChangeCurrent(myDS);
+  }
+  catch(dgException dgEx)
+  { /* Print out Verbose text to figure out why ReadRandomKey is
+     * throwing an exception. */
+      MessageBox.Show(dgEx.GetVerboseText(), "Datagate Exception");
+  }
+
+  dbFile.Close();
+  db.Close();
+```
+
+## Example 4. dgErrorNumber property example.
+
+
+```cs 
+  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  FileAdapter dbFile = new FileAdapter(db, "*Libl/CMMASTERL1", "CMMASTERL1");
+  dbFile.AccessMode = AccessMode.Read;
+
+  AdgDataSet myDS = null;
+  try
+  {
+      dbFile.OpenNewAdgDataSet(out myDS);
+  }
+  catch(dgException dgEx)
+  {
+      /* There are many reasons why opening a file can fail. Here, we
+       * catch some of the more general ones. */
+      if (dgEx.Error == dgErrorNumber.dgEmMNOTFND)
+          MessageBox.Show("Member " + dbFile.MemberName + " not found!", "Error opening file");
+      else if (dgEx.Error == dgErrorNumber.dgEmFNOTFND)
+          MessageBox.Show("File " + dbFile.FileName + " not found!", "Error opening file");
+      else
+          MessageBox.Show(dgEx.Message, "Error opening file");
+          //Exit procedure here.
+  }
+
+  /* Do some action here. */
+
+  dbFile.Close();
+  db.Close();
+```
+
+

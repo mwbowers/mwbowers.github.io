@@ -14,6 +14,7 @@ DataGate key table, a specialized implementation of AdgTable.
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
+
 ## Constructors
 
 | Name | Description |
@@ -66,3 +67,33 @@ bool Equals(DataRow other)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified DataRow is equal to the current DataRow; otherwise, false.
+
+## Example 1. Creating a Key Table to read records by Key. Also uses Row property.
+
+```cs 
+/* This example will open a file and find the record for
+     the customer "Thilmany of Bread Co Resources".
+     It omits error trapping for clarity's sake. */
+
+  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  db.Open();
+  FileAdapter file = new FileAdapter(db);
+  file.FileName = "Examples//CMastNewL2";
+  AdgDataSet dataSet;
+  file.OpenNewAdgDataSet( out dataSet );
+
+  //This next line creates a key based on record format RCMMastL2
+  AdgKeyTable key = dataSet.NewKeyTable("RCMMastL2");
+
+  //We specify KeyPartCount to avoid specifying the second
+  //key field.
+  //We then set the keyfield "CMName" to our search argument.
+  key.KeyPartCount = 1;
+  key.Row["CMName"] = "Thilmany Of Bread Co Resources";
+
+  //The following read will find the record associated with the 
+  //customer name "Thilmany Of Bread Co Resources" and store it
+  //in dataSet.
+  file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);
+```
+

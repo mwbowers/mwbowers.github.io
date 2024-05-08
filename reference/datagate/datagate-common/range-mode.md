@@ -15,6 +15,7 @@ Enum representing the mode of a range.
 | --- | --- | --- 
 | First | Represents a state where the first item is selected in the range. | 5 |
 | Last | Represents a state where the last item is selected in the range. | 6 |
+
 ## Examples
 
 

@@ -65,23 +65,15 @@ SourceProfile(SourceProfile)
 
 | Signature | Description |
 | --- | --- |
-| [ToString()](#tostring-) | Returns a string that represents the current SourceProfile.
 | [Clone()](#clone-) | Creates a new object that is a copy of the current instance.
-| [IsKnownPlatformAttribute](#isknownplatformattribute-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is known.
-| [op_Equality](#op_equality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are equal.
-| [op_Inequality](#op_inequality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are not equal.
 | [Equals](#equals-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether the specified SourceProfile is equal to the current SourceProfile.
 | [Equals](#equals-object-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current SourceProfile.
 | [Equals](#equals-object-boolean-)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
 | [GetHashCode()](#gethashcode-) | Serves as the default hash function.
-
-### string ToString()
-
-Returns a string that represents the current SourceProfile.
-
-```cs
-string ToString()
-```
+| [IsKnownPlatformAttribute](#isknownplatformattribute-string-)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is known.
+| [op_Equality](#op_equality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are equal.
+| [op_Inequality](#op_inequality-sourceprofile-sourceprofile-)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two SourceProfile instances are not equal.
+| [ToString()](#tostring-) | Returns a string that represents the current SourceProfile.
 
 ### object Clone()
 
@@ -89,6 +81,51 @@ Creates a new object that is a copy of the current instance.
 
 ```cs
 object Clone()
+```
+
+### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
+
+Determines whether the specified SourceProfile is equal to the current SourceProfile.
+
+```cs
+bool Equals(SourceProfile x, SourceProfile y)
+```
+
+### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
+
+Determines whether the specified object is equal to the current SourceProfile.
+
+```cs
+bool Equals(SourceProfile x, SourceProfile y)
+```
+
+### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
+
+Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
+
+```cs
+bool Equals(SourceProfile x, SourceProfile y)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | obj | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | bIgnoreDatabaseName | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current SourceProfile; otherwise, false.
+
+### int GetHashCode()
+
+Serves as the default hash function.
+
+```cs
+int GetHashCode()
 ```
 
 ### bool IsKnownPlatformAttribute([string platformAttr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -153,50 +190,14 @@ bool op_Inequality(SourceProfile x, SourceProfile y)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the SourceProfiles are not equal; otherwise, false.
 
-### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
+### string ToString()
 
-Determines whether the specified SourceProfile is equal to the current SourceProfile.
-
-```cs
-bool Equals(SourceProfile x, SourceProfile y)
-```
-
-### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
-
-Determines whether the specified object is equal to the current SourceProfile.
+Returns a string that represents the current SourceProfile.
 
 ```cs
-bool Equals(SourceProfile x, SourceProfile y)
+string ToString()
 ```
 
-### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
-
-Determines whether the specified object is equal to the current SourceProfile, with an option to ignore the database name.
-
-```cs
-bool Equals(SourceProfile x, SourceProfile y)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | obj | 
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | bIgnoreDatabaseName | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current SourceProfile; otherwise, false.
-
-### int GetHashCode()
-
-Serves as the default hash function.
-
-```cs
-int GetHashCode()
-```
 ## Example 1. Most simple constructor.
 
 ```cs 

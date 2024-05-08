@@ -15,6 +15,7 @@ Enum representing the mode of reading equal values in a sequence.
 | --- | --- | --- 
 | NextEqual | Represents a state where the next equal value is read in the sequence. | 17 |
 | PreviousEqual | Represents a state where the previous equal value is read in the sequence. | 18 |
+
 ## Examples
 
 

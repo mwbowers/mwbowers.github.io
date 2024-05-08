@@ -43,3 +43,49 @@ cases do they signify a normal condition.
 | dgEC_System | System server error. | 15 |
 | dgEC_TCPIP | TCPIP server error. | 11 |
 | dgEC_Unknown | Unknown server error. | 0 |
+
+## Examples 
+
+
+```cs 
+  /* This code attempts to open a file exclusively. 
+   * If it fails, we print out the IBM i exception responsible.
+   * "dbFile" is of type FileAdapter. */ 
+  dbFile.AccessMode = AccessMode.Write;
+  dbFile.OpenAttributes.ShareTypes = ShareTypes.Exclusive;
+
+  AdgDataSet dataSet = null;
+  try
+  {
+      dbFile.Open(dataSet);
+  }
+  catch(dgException dgEx)
+  {
+      string msg;
+      switch(dgEx.ErrorClass)
+      {
+          case dgErrorClass.dgEC_AS400CPF:
+              msg = "CPF";
+              break;
+          case dgErrorClass.dgEC_AS400CPI:
+              msg = "CPI";
+              break;
+          case dgErrorClass.dgEC_AS400DG8:
+              msg = "DG8";
+              break;
+          case dgErrorClass.dgEC_AS400MCH:
+              msg = "MCH";
+              break;
+          default:
+              throw dgEx; /* Throw exception otherwise. */
+      }
+      /* Append the hexadecimal value of the SystemError to
+       * form the classic name of the IBM i exception. */
+      msg = msg + dgEx.SystemError.ToString("X");
+      MessageBox.Show("iSeries threw exception " + msg + 
+          " while opening file.", "iSeries exception.");
+      /* Throw exception otherwise. */
+      throw dgEx;
+  }
+```
+
