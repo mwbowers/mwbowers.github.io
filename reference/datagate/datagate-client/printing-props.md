@@ -43,10 +43,10 @@ PrintingProps()
 
 | Signature | Description |
 | --- | --- |
-| [GetRendererPath()](#getrendererpath) | Gets the renderer path.
-| [IsRendererPathMissing()](#isrendererpathmissing) | Determines if the renderer path is missing.
-| [SetRendererPath](#setrendererpathstring-configuration)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
-| [SetRendererPathInMachineConfig](#setrendererpathinmachineconfigstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
+| [GetRendererPath()](#string-getrendererpath) | Gets the renderer path.
+| [IsRendererPathMissing()](#bool-isrendererpathmissing) | Determines if the renderer path is missing.
+| [SetRendererPath](#void-setrendererpathstring-path-configuration-config)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
+| [SetRendererPathInMachineConfig](#void-setrendererpathinmachineconfigstring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
 
 ### string GetRendererPath()
 

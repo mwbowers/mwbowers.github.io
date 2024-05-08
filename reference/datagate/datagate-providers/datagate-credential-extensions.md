@@ -15,8 +15,8 @@ Provides extension methods for the IDataGateCredential interface.
 
 | Signature | Description |
 | --- | --- |
-| [IsStarDomainCredential](#isstardomaincredentialidatagatecredential)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is a StarDomain credential.
-| [ThrowIfNotUserPassword](#throwifnotuserpasswordidatagatecredential-userpasswordcredential)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html), [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html)) | Throws an exception if the specified IDataGateCredential is not a UserPasswordCredential.
+| [IsStarDomainCredential](#bool-isstardomaincredentialidatagatecredential-dgc)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is a StarDomain credential.
+| [ThrowIfNotUserPassword](#void-throwifnotuserpasswordidatagatecredential-dgc-userpasswordcredential-upc)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html), [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html)) | Throws an exception if the specified IDataGateCredential is not a UserPasswordCredential.
 
 ### bool IsStarDomainCredential([IDataGateCredential dgc](/reference/datagate/datagate-providers/i-datagate-credential.html))
 

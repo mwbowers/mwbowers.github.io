@@ -51,9 +51,9 @@ SqlPrintCreateAttr(BinaryReader, Boolean)
 
 | Signature | Description |
 | --- | --- |
-| [NewEmptyDevAttr()](#newemptydevattr) | Creates a new empty SqlPrintDevAttr.
-| [SetDevAttr](#setdevattrprintdevattr)([PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html)) | Sets the device attributes for the SqlPrintCreateAttr.
-| [WriteTo](#writetobinarywriter-boolean)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintCreateAttr to the specified BinaryWriter.
+| [NewEmptyDevAttr()](#printdevattr-newemptydevattr) | Creates a new empty SqlPrintDevAttr.
+| [SetDevAttr](#void-setdevattrprintdevattr-devattr)([PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html)) | Sets the device attributes for the SqlPrintCreateAttr.
+| [WriteTo](#void-writetobinarywriter-writer-bool-bisolepf)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintCreateAttr to the specified BinaryWriter.
 
 ### PrintDevAttr NewEmptyDevAttr()
 

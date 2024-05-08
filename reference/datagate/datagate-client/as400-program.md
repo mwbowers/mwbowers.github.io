@@ -70,28 +70,28 @@ As400Program(AdgConnection, String)
 
 | Signature | Description |
 | --- | --- |
-| [AppendParm](#appendparmprogparm)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends the specified parameter to the As400Program instance.
-| [AppendParms](#appendparmsprogparm)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends the specified parameters to the As400Program instance.
-| [CheckCx()](#checkcx) | Checks the connection status and disposes the As400Program instance if necessary.
-| [Dispose()](#dispose) | Disposes the As400Program instance.
-| [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the As400Program instance.
-| [Execute()](#execute) | Executes the AS/400 program.
-| [Finalize()](#finalize) | Finalizes an instance of the As400Program class.
-| [GetParameters()](#getparameters) | Gets the parameters of the AS/400 program.
-| [GetParmByName](#getparmbynamestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter of the AS/400 program by name.
-| [ObjectToParm](#objecttoparmprogparm-object-int32)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ObjectToParm](#objecttoparmprogparm-object)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ObjectToParm](#objecttoparmobject-string-int32)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ObjectToParm](#objecttoparmobject-string)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ParmToObject](#parmtoobjectprogparm-type-int32)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ParmToObject](#parmtoobjectprogparm-type)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the specified ProgParm object to the specified return type.
-| [ParmToObject](#parmtoobjecttype-string-int32)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ParmToObject](#parmtoobjecttype-string)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified ProgParm object to the specified return type and element index.
-| [ReadParmXml](#readparmxmlxmlreader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the parameters of the As400Program instance from an XML reader.
-| [SetConnection](#setconnectionadgconnection)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Sets the specified value for the connection of the As400Program instance.
-| [SetParmsZeroValue()](#setparmszerovalue) | Sets all parameters of the As400Program instance to their zero values.
-| [SetProgramPath](#setprogrampathstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the program path for the As400Program instance.
-| [WriteParmXml](#writeparmxmlxmlwriter)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the parameters of the As400Program instance to an XML writer.
+| [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends the specified parameter to the As400Program instance.
+| [AppendParms](#void-appendparmsprogparm--parameters)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends the specified parameters to the As400Program instance.
+| [CheckCx()](#idisposable-checkcx) | Checks the connection status and disposes the As400Program instance if necessary.
+| [Dispose()](#void-dispose) | Disposes the As400Program instance.
+| [Dispose](#void-dispose)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the As400Program instance.
+| [Execute()](#void-execute) | Executes the AS/400 program.
+| [Finalize()](#void-finalize) | Finalizes an instance of the As400Program class.
+| [GetParameters()](#ienumerable-progparm-getparameters) | Gets the parameters of the AS/400 program.
+| [GetParmByName](#progparm-getparmbynamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter of the AS/400 program by name.
+| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the specified ProgParm object to the specified return type.
+| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified ProgParm object to the specified return type and element index.
+| [ReadParmXml](#void-readparmxmlxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the parameters of the As400Program instance from an XML reader.
+| [SetConnection](#void-setconnectionadgconnection-value)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Sets the specified value for the connection of the As400Program instance.
+| [SetParmsZeroValue()](#void-setparmszerovalue) | Sets all parameters of the As400Program instance to their zero values.
+| [SetProgramPath](#void-setprogrampathstring-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the program path for the As400Program instance.
+| [WriteParmXml](#void-writeparmxmlxmlwriter-writer)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the parameters of the As400Program instance to an XML writer.
 
 ### void AppendParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html))
 

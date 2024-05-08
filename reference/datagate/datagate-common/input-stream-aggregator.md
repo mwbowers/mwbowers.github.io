@@ -54,15 +54,15 @@ InputStreamAggregator()
 
 | Signature | Description |
 | --- | --- |
-| [Append](#appendint32-func-1)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the aggregator.
-| [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
-| [Finalize()](#finalize) | Finalizes an instance of the  class.
-| [Flush()](#flush) | Overrides the Flush method for the InputStreamAggregator.
-| [Read](#readbyte-int32-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
-| [ReadByte()](#readbyte) | Reads a byte from the current InputStreamAggregator and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
-| [Seek](#seekint64-seekorigin)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream.
-| [SetLength](#setlengthint64)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream.
-| [Write](#writebyte-int32-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
+| [Append](#void-appendint-len-func-stream-cons)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func`1](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the aggregator.
+| [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the InputStreamAggregator and optionally releases the managed resources.
+| [Finalize()](#void-finalize) | Finalizes an instance of the  class.
+| [Flush()](#void-flush) | Overrides the Flush method for the InputStreamAggregator.
+| [Read](#int-readbyte--buffer-int-offset-int-count)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current InputStreamAggregator and advances the position within the stream by the number of bytes read.
+| [ReadByte()](#int-readbyte) | Reads a byte from the current InputStreamAggregator and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
+| [Seek](#long-seeklong-offset-seekorigin-origin)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream.
+| [SetLength](#void-setlengthlong-value)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream.
+| [Write](#void-writebyte--buffer-int-offset-int-count)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current InputStreamAggregator and advances the current position within this stream by the number of bytes written.
 
 ### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func\<Stream\> cons](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0))
 

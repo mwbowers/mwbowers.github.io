@@ -31,21 +31,21 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Signature | Description |
 | --- | --- |
-| [GetSystemTypeOfType](#getsystemtypeoftypedatatypes-int32)([DataTypes](/reference/datagate/datagate-common/data-types.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the system type equivalent of the specified ASNA DataGate data type.
-| [NewBinary](#newbinaryint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a binary data type.
-| [NewByte()](#newbyte) | Creates a new FieldType instance representing a byte data type.
-| [NewChar](#newcharint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a character data type.
-| [NewDate](#newdatedatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a date data type.
-| [NewDBCS](#newdbcsint32-dbcsformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html)) | Creates a new FieldType instance representing a DBCS (Double-Byte Character Set) data type.
-| [NewDontCare](#newdontcareint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a data type that doesn't care about the specific type.
-| [NewFloat](#newfloatint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a floating point data type.
-| [NewHex](#newhexint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a hexadecimal data type.
-| [NewInteger](#newintegerint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing an integer data type.
-| [NewPacked](#newpackedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a packed decimal data type.
-| [NewTime](#newtimedatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a time data type.
-| [NewTimestamp()](#newtimestamp) | Creates a new FieldType instance representing a timestamp data type.
-| [NewUnicode](#newunicodeint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a Unicode data type.
-| [NewZoned](#newzonedint32-int32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a zoned decimal data type.
+| [GetSystemTypeOfType](#type-getsystemtypeoftypedatatypes-dt-int-bytelength)([DataTypes](/reference/datagate/datagate-common/data-types.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the system type equivalent of the specified ASNA DataGate data type.
+| [NewBinary](#fieldtype-newbinaryint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a binary data type.
+| [NewByte()](#fieldtype-newbyte) | Creates a new FieldType instance representing a byte data type.
+| [NewChar](#fieldtype-newcharint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a character data type.
+| [NewDate](#fieldtype-newdatedatetimeformat-fmt)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a date data type.
+| [NewDBCS](#fieldtype-newdbcsint-length-dbcsformat-fmt)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html)) | Creates a new FieldType instance representing a DBCS (Double-Byte Character Set) data type.
+| [NewDontCare](#fieldtype-newdontcareint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a data type that doesn't care about the specific type.
+| [NewFloat](#fieldtype-newfloatint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a floating point data type.
+| [NewHex](#fieldtype-newhexint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a hexadecimal data type.
+| [NewInteger](#fieldtype-newintegerint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing an integer data type.
+| [NewPacked](#fieldtype-newpackedint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a packed decimal data type.
+| [NewTime](#fieldtype-newtimedatetimeformat-fmt)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a time data type.
+| [NewTimestamp()](#fieldtype-newtimestamp) | Creates a new FieldType instance representing a timestamp data type.
+| [NewUnicode](#fieldtype-newunicodeint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a Unicode data type.
+| [NewZoned](#fieldtype-newzonedint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a zoned decimal data type.
 
 ### Type GetSystemTypeOfType([DataTypes dt](/reference/datagate/datagate-common/data-types.html), [int byteLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

@@ -36,18 +36,18 @@ A source provider is responsible for managing the connection to a data source.
 
 | Signature | Description |
 | --- | --- |
-| [ChangeCurrentLibl](#changecurrentliblstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the current library list.
-| [Close()](#close) | Closes the connection.
-| [Commit](#commitstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the transaction.
-| [EndTransaction()](#endtransaction) | Ends the transaction.
-| [MakeFileDataProvider](#makefiledataproviderifileobject-string-accessmode-fileopenattr-adgdataset)([IFileObject](/reference/datagate/datagate-client/i-file-object.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AccessMode](/reference/datagate/datagate-common/access-mode.html), [FileOpenAttr](/reference/datagate/datagate-providers/file-open-attr.html), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Makes a file data provider.
-| [Open](#opensourceprofile-cancellationtoken)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the specified database.
-| [Open](#opensourceprofile-iexchange5250-openaccessrpg-openoptions-string-cancellationtoken)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [IExchange5250](/reference/datagate/datagate-providers/i-exchange5250.html), [OpenAccessRpg](/reference/datagate/datagate-data-link/open-access-rpg.html), [OpenOptions](/reference/datagate/datagate-providers/open-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the specified database with additional options.
-| [PostOpenInit](#postopeninitadgconnection)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Performs post-open initialization.
-| [ResetConnection()](#resetconnection) | Resets the connection.
-| [Rollback()](#rollback) | Rolls back the transaction.
-| [SetCanceler](#setcancelercancellationtoken)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Sets the cancellation token.
-| [StartTransaction](#starttransactiontransactionlevel-transactionattributes-string-string)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [TransactionAttributes](/reference/datagate/datagate-providers/transaction-attributes.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Starts a transaction.
+| [ChangeCurrentLibl](#void-changecurrentliblstring--newlibl)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the current library list.
+| [Close()](#void-close) | Closes the connection.
+| [Commit](#void-commitstring-transactionname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the transaction.
+| [EndTransaction()](#void-endtransaction) | Ends the transaction.
+| [MakeFileDataProvider](#ifiledata-makefiledataproviderifileobject-file-string-membername-accessmode-mode-fileopenattr-openattr-adgdataset-ds)([IFileObject](/reference/datagate/datagate-client/i-file-object.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AccessMode](/reference/datagate/datagate-common/access-mode.html), [FileOpenAttr](/reference/datagate/datagate-providers/file-open-attr.html), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Makes a file data provider.
+| [Open](#void-opensourceprofile-dbname-cancellationtoken-ct)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the specified database.
+| [Open](#void-opensourceprofile-dbname-cancellationtoken-ct)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [IExchange5250](/reference/datagate/datagate-providers/i-exchange5250.html), [OpenAccessRpg](/reference/datagate/datagate-data-link/open-access-rpg.html), [OpenOptions](/reference/datagate/datagate-providers/open-options.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the specified database with additional options.
+| [PostOpenInit](#void-postopeninitadgconnection-cn)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Performs post-open initialization.
+| [ResetConnection()](#bool-resetconnection) | Resets the connection.
+| [Rollback()](#void-rollback) | Rolls back the transaction.
+| [SetCanceler](#void-setcancelercancellationtoken-token)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Sets the cancellation token.
+| [StartTransaction](#void-starttransactiontransactionlevel-level-transactionattributes-attr-string-name-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [TransactionAttributes](/reference/datagate/datagate-providers/transaction-attributes.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Starts a transaction.
 
 ### void ChangeCurrentLibl([String\[\] newLibl](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 

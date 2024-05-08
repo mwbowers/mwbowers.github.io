@@ -40,7 +40,7 @@ This interface should be implemented by classes that need to monitor a DataGate 
 
 | Signature | Description |
 | --- | --- |
-| [Kill](#killint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Forcibly terminates the current client
+| [Kill](#void-killint-delay)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Forcibly terminates the current client
 
 ### void Kill([int delay](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

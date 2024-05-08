@@ -60,7 +60,7 @@ SqlPrintDevAttr(BinaryReader, Boolean)
 
 | Signature | Description |
 | --- | --- |
-| [WriteTo](#writetobinarywriter-boolean)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintDevAttr to the specified BinaryWriter.
+| [WriteTo](#void-writetobinarywriter-writer-bool-bisolepf)([BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Writes the SqlPrintDevAttr to the specified BinaryWriter.
 
 ### void WriteTo([BinaryWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0), [bool bIsOlePF](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

@@ -70,19 +70,19 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 
 | Signature | Description |
 | --- | --- |
-| [CreateElement](#createelementboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Creates a new XmlElement with the specified name and appends it to the parent XmlNode.
-| [GetAttribute](#getattributestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of the specified attribute from the current XmlElement.
-| [GetAttribute](#getattributestring-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets the value of the specified attribute from the current XmlElement, or returns a default value if the attribute is not found.
-| [GetChildCount](#getchildcountstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the count of child elements of the current XmlElement that have the specified name and namespace.
-| [GetChildren](#getchildrenstring-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a list of child elements of the current XmlElement that have the specified name and namespace.
-| [GetElementText()](#getelementtext) | Gets the text content of the current XmlElement.
-| [GetElementText](#getelementtextxmlelement)([XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0)) | Gets the text content of the specified XmlElement.
-| [GetFirstElement()](#getfirstelement) | Gets the first child element of the parent XmlNode that has the specified name and namespace.
-| [GetXsdBooleanAttribute](#getxsdbooleanattributestring-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the value of the specified boolean attribute from the current XmlElement, or returns a default value if the attribute is not found.
-| [HasAttribute](#hasattributestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Checks if the current XmlElement has the specified attribute.
-| [SetAttribute](#setattributestring-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of the specified attribute in the current XmlElement.
-| [SetElementName](#setelementnameischemaelementname)([ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html)) | Sets the name of the schema element that is currently being converted.
-| [SetElementText](#setelementtextstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the text content of the current XmlElement.
+| [CreateElement](#xmlelement-createelementbool-addxmlnsattr)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Creates a new XmlElement with the specified name and appends it to the parent XmlNode.
+| [GetAttribute](#string-getattributestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of the specified attribute from the current XmlElement.
+| [GetAttribute](#string-getattributestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets the value of the specified attribute from the current XmlElement, or returns a default value if the attribute is not found.
+| [GetChildCount](#int-getchildcountstring-childelementname-string-childelementnamespace)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the count of child elements of the current XmlElement that have the specified name and namespace.
+| [GetChildren](#xmlnodelist-getchildrenstring-childelementname-string-childelementnamespace)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a list of child elements of the current XmlElement that have the specified name and namespace.
+| [GetElementText()](#string-getelementtext) | Gets the text content of the current XmlElement.
+| [GetElementText](#string-getelementtext)([XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0)) | Gets the text content of the specified XmlElement.
+| [GetFirstElement()](#void-getfirstelement) | Gets the first child element of the parent XmlNode that has the specified name and namespace.
+| [GetXsdBooleanAttribute](#bool-getxsdbooleanattributestring-name-bool-defaultvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the value of the specified boolean attribute from the current XmlElement, or returns a default value if the attribute is not found.
+| [HasAttribute](#bool-hasattributestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Checks if the current XmlElement has the specified attribute.
+| [SetAttribute](#void-setattributestring-name-object-val)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of the specified attribute in the current XmlElement.
+| [SetElementName](#void-setelementnameischemaelementname-name)([ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html)) | Sets the name of the schema element that is currently being converted.
+| [SetElementText](#void-setelementtextstring-text)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the text content of the current XmlElement.
 
 ### XmlElement CreateElement([bool addXmlnsAttr](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

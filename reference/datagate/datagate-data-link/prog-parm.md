@@ -62,11 +62,11 @@ ProgParm(StructureType, DataDirection)
 
 | Signature | Description |
 | --- | --- |
-| [FromObject](#fromobjectidatalinkprops-object-subparmname)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts an object to a program parameter.
-| [NewBuffer](#newbufferidatalinkprops)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Creates a new buffer for the program parameter.
-| [SetZeroValue](#setzerovalueidatalinkprops)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the value of the program parameter to zero.
-| [ToObject](#toobjectidatalinkprops-type-subparmname)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts the program parameter to an object.
-| [WriteXml](#writexmlxmlwriter)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the program parameter to an XML writer.
+| [FromObject](#void-fromobjectidatalinkprops-dl-object-obj-subparmname-subparm)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts an object to a program parameter.
+| [NewBuffer](#void-newbufferidatalinkprops-dl)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Creates a new buffer for the program parameter.
+| [SetZeroValue](#void-setzerovalueidatalinkprops-dl)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the value of the program parameter to zero.
+| [ToObject](#object-toobjectidatalinkprops-dl-type-objtype-subparmname-subparm)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts the program parameter to an object.
+| [WriteXml](#void-writexmlxmlwriter-xw)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the program parameter to an XML writer.
 
 ### void FromObject([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/), [object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName subParm](https://learn.microsoft.com/en-us/dotnet/api/))
 

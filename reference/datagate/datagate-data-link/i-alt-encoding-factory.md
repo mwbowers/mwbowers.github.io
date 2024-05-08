@@ -21,7 +21,7 @@ Defines a factory for creating alternative encodings.
 
 | Signature | Description |
 | --- | --- |
-| [GetEncoding](#getencodingstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves an alternative encoding by name.
+| [GetEncoding](#altencoding-getencodingstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves an alternative encoding by name.
 
 ### AltEncoding GetEncoding([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

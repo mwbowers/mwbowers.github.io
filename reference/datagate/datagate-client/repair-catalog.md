@@ -15,7 +15,7 @@ Repair catalog.
 
 | Signature | Description |
 | --- | --- |
-| [Repair](#repairsourceprofile-repairoptions-adgobserver)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repair the catalog.
+| [Repair](#void-repairsourceprofile-sourceprofile-repairoptions-repairoptions-adgobserver-observer)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repair the catalog.
 
 ### void Repair([SourceProfile sourceProfile](/reference/datagate/datagate-providers/source-profile.html), [RepairOptions repairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver observer](/reference/datagate/datagate-client/adg-observer.html))
 

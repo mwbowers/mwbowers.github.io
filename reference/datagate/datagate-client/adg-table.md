@@ -43,7 +43,7 @@ AdgTable(DataTable, AdgDataSet)
 
 | Signature | Description |
 | --- | --- |
-| [SetRowDefaultValues](#setrowdefaultvaluesdatarow)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Set row default values.
+| [SetRowDefaultValues](#void-setrowdefaultvaluesdatarow-row)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Set row default values.
 
 ### void SetRowDefaultValues([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 

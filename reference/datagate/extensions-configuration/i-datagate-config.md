@@ -28,7 +28,7 @@ allows resolving a source name to a configured SourceProfile.
 
 | Signature | Description |
 | --- | --- |
-| [ResolveSourceName](#resolvesourcenamestring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Resolves a source name to a configured SourceProfile.
+| [ResolveSourceName](#sourceprofile-resolvesourcenamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Resolves a source name to a configured SourceProfile.
 
 ### SourceProfile ResolveSourceName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

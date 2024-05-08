@@ -15,10 +15,10 @@ Defines methods for writing to an open access data stream.
 
 | Signature | Description |
 | --- | --- |
-| [Flush()](#flush) | Flushes the data stream, ensuring all buffered data is written.
-| [Prepare()](#prepare) | Prepares the data stream for writing.
-| [Write](#writebyte-int32-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the data stream.
-| [WriteByte](#writebytebyte)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Writes a single byte to the data stream.
+| [Flush()](#void-flush) | Flushes the data stream, ensuring all buffered data is written.
+| [Prepare()](#void-prepare) | Prepares the data stream for writing.
+| [Write](#void-writebyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the data stream.
+| [WriteByte](#void-writebytebyte-b)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Writes a single byte to the data stream.
 
 ### void Flush()
 

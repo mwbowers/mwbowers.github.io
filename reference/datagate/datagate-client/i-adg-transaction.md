@@ -33,9 +33,9 @@ This interface should be implemented by classes that represent a DataGate transa
 
 | Signature | Description |
 | --- | --- |
-| [Commit()](#commit) | Commits the transaction.
-| [Commit](#commitstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the transaction with the specified name.
-| [Rollback()](#rollback) | Rolls back the transaction.
+| [Commit()](#void-commit) | Commits the transaction.
+| [Commit](#void-commit)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the transaction with the specified name.
+| [Rollback()](#void-rollback) | Rolls back the transaction.
 
 ### void Commit()
 

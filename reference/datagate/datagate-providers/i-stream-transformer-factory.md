@@ -15,8 +15,8 @@ Provides methods for creating encoder and decoder streams.
 
 | Signature | Description |
 | --- | --- |
-| [MakeDecoder](#makedecoderstream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Creates a decoder stream using the provided input stream.
-| [MakeEncoder](#makeencoderstream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Creates an encoder stream using the provided output stream.
+| [MakeDecoder](#stream-makedecoderstream-istream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Creates a decoder stream using the provided input stream.
+| [MakeEncoder](#stream-makeencoderstream-ostream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Creates an encoder stream using the provided output stream.
 
 ### Stream MakeDecoder([Stream istream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 

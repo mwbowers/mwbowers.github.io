@@ -21,7 +21,7 @@ This interface should be implemented by classes that need to manage a connection
 
 | Signature | Description |
 | --- | --- |
-| [EnsureConnectionOpened()](#ensureconnectionopened) | Ensure connection opened implementation.
+| [EnsureConnectionOpened()](#bool-ensureconnectionopened) | Ensure connection opened implementation.
 
 ### bool EnsureConnectionOpened()
 

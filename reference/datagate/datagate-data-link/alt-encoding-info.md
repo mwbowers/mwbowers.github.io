@@ -43,7 +43,7 @@ AltEncodingInfo(AltEncoding)
 
 | Signature | Description |
 | --- | --- |
-| [GetEncoding()](#getencoding) | Gets the alternative encoding.
+| [GetEncoding()](#altencoding-getencoding) | Gets the alternative encoding.
 
 ### AltEncoding GetEncoding()
 

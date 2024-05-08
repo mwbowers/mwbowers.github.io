@@ -33,10 +33,10 @@ This interface should be implemented by classes that need to manage a library li
 
 | Signature | Description |
 | --- | --- |
-| [AddEntry](#addentrystring-liblposition-string)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at the specified position.
-| [EnumerateCurrentSystem](#enumeratecurrentsystemadgenumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current system libraries.
-| [EnumerateCurrentUser](#enumeratecurrentuseradgenumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current user libraries.
-| [RemoveEntry](#removeentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the specified library from the "user" portion of the library list. (RMVLIBLE)
+| [AddEntry](#void-addentrystring-path-liblposition-pos-string-reflib)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at the specified position.
+| [EnumerateCurrentSystem](#void-enumeratecurrentsystemadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current system libraries.
+| [EnumerateCurrentUser](#void-enumeratecurrentuseradgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current user libraries.
+| [RemoveEntry](#void-removeentrystring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the specified library from the "user" portion of the library list. (RMVLIBLE)
 
 ### void AddEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [LiblPosition pos](/reference/datagate/datagate-client/libl-position.html), [string refLib](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

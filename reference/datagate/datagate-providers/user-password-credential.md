@@ -60,9 +60,9 @@ UserPasswordCredential()
 
 | Signature | Description |
 | --- | --- |
-| [Clone()](#clone) | Creates a new object that is a copy of the current UserPasswordCredential instance.
-| [Equals](#equalsidatagatecredential)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
-| [GetHashCodeInternal()](#gethashcodeinternal) | Serves as the default hash function.
+| [Clone()](#object-clone) | Creates a new object that is a copy of the current UserPasswordCredential instance.
+| [Equals](#bool-equalsidatagatecredential-other)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current UserPasswordCredential.
+| [GetHashCodeInternal()](#int-gethashcodeinternal) | Serves as the default hash function.
 
 ### object Clone()
 

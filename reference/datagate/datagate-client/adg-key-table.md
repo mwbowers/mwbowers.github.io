@@ -46,7 +46,7 @@ AdgKeyTable(DataTable)
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#equalsdatarow)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Determines whether the specified DataRow is equal to the current DataRow.
+| [Equals](#bool-equalsdatarow-other)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Determines whether the specified DataRow is equal to the current DataRow.
 
 ### bool Equals([DataRow other](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 

@@ -15,10 +15,10 @@ Defines methods for reading from an open access data stream.
 
 | Signature | Description |
 | --- | --- |
-| [Flush()](#flush) | Flushes the data stream, ensuring all buffered data is read.
-| [Read](#readbyte-int32-int32)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the data stream.
-| [ReadByte()](#readbyte) | Reads a single byte from the data stream.
-| [Receive()](#receive) | Receives data from the data stream.
+| [Flush()](#void-flush) | Flushes the data stream, ensuring all buffered data is read.
+| [Read](#int-readbyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the data stream.
+| [ReadByte()](#int-readbyte) | Reads a single byte from the data stream.
+| [Receive()](#void-receive) | Receives data from the data stream.
 
 ### void Flush()
 

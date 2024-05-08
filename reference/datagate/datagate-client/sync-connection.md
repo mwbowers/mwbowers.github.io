@@ -43,18 +43,18 @@ SyncConnection(AdgConnection)
 
 | Signature | Description |
 | --- | --- |
-| [BeginAutoTransaction](#beginautotransactiontransactionlevel-string-string)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
-| [BeginTransaction](#begintransactiontransactionlevel-string-string)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
-| [Clone()](#clone) | Clones the SyncConnection instance.
-| [Dispose](#disposeboolean)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the SyncConnection instance.
-| [GetDatabaseAttributes()](#getdatabaseattributes) | Gets the database attributes of the connected database.
-| [GetDeviceCodePageID()](#getdevicecodepageid) | Gets the device code page ID associated with the SyncConnection.
-| [GetPeerAltCodePageID()](#getpeeraltcodepageid) | Gets the Peer Alt Code Page ID associated with the SyncConnection.
-| [GetPeerVersion()](#getpeerversion) | Gets the protocol version of the connected peer.
-| [GetSupportsMultiMember()](#getsupportsmultimember) | Gets the value indicating whether the connection supports multi-member.
-| [Open](#openopenoptions-cancellationtoken)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using the specified options and cancellation token.
-| [Open](#opencancellationtoken)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancellation token.
-| [Reset()](#reset) | Resets the connection.
+| [BeginAutoTransaction](#iadgtransaction-beginautotransactiontransactionlevel-tl-string-name-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl-string-name-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
+| [Clone()](#object-clone) | Clones the SyncConnection instance.
+| [Dispose](#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Disposes the SyncConnection instance.
+| [GetDatabaseAttributes()](#databaseattributes-getdatabaseattributes) | Gets the database attributes of the connected database.
+| [GetDeviceCodePageID()](#int-getdevicecodepageid) | Gets the device code page ID associated with the SyncConnection.
+| [GetPeerAltCodePageID()](#int-getpeeraltcodepageid) | Gets the Peer Alt Code Page ID associated with the SyncConnection.
+| [GetPeerVersion()](#protolevel-getpeerversion) | Gets the protocol version of the connected peer.
+| [GetSupportsMultiMember()](#bool-getsupportsmultimember) | Gets the value indicating whether the connection supports multi-member.
+| [Open](#void-openopenoptions-options-cancellationtoken-ct)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using the specified options and cancellation token.
+| [Open](#void-openopenoptions-options-cancellationtoken-ct)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens the connection using a cancellation token.
+| [Reset()](#bool-reset) | Resets the connection.
 
 ### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

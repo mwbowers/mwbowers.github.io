@@ -24,8 +24,8 @@ Interface for file adapter.
 
 | Signature | Description |
 | --- | --- |
-| [Open](#openadgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the specified AdgDataSet.
-| [ReadSequentialEqual](#readsequentialequaladgdataset-readsequentialmode-lockrequest)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html)) | Reads the sequential equal.
+| [Open](#void-openadgdataset-ds)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the specified AdgDataSet.
+| [ReadSequentialEqual](#void-readsequentialequaladgdataset-ds-readsequentialmode-rm-lockrequest-lr)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html)) | Reads the sequential equal.
 
 ### void Open([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 

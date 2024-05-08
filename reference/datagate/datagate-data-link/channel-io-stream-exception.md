@@ -75,7 +75,7 @@ ChannelIOStreamException(Exception)
 
 | Signature | Description |
 | --- | --- |
-| [Validate](#validateexception)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Validates the inner exception.
+| [Validate](#exception-validateexception-inner)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Validates the inner exception.
 
 ### Exception Validate([Exception inner](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 

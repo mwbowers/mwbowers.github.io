@@ -23,8 +23,8 @@ ASNA DataGate Tracing class.
 
 | Signature | Description |
 | --- | --- |
-| [GetLogConfigs()](#getlogconfigs) | Gets the trace options.
-| [IsTracing](#istracingtraceid)([TraceID](/reference/datagate/datagate-common/trace-id.html)) | Determines whether the specified trace ID is being traced.
+| [GetLogConfigs()](#traceoption--getlogconfigs) | Gets the trace options.
+| [IsTracing](#bool-istracingtraceid-id)([TraceID](/reference/datagate/datagate-common/trace-id.html)) | Determines whether the specified trace ID is being traced.
 
 ### TraceOption[] GetLogConfigs()
 
