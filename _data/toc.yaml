@@ -261,6 +261,8 @@ Manuals:
     section:
     - title: What's new in 4.0
       path: /manuals/programming/what-s-new/new-in-4.0.html
+    - title: What's new in 5.0
+      path: /manuals/programming/what-s-new/new-in-5.0.html
     - title: Getting Asna.QSys Packages
       path: /manuals/programming/get-asna-qsys/get-asna-qsys-overview.html
     - sectiontitle: Programs
