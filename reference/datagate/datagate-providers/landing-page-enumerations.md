@@ -12,4 +12,3 @@ The following are the enumerations provided by **ASNA DataGate Providers** names
 | [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | Specifies the type of credentials used for authentication. |
 | [OpenOptions](/reference/datagate/datagate-providers/open-options.html) | Specifies options for opening a connection. |
 | [SourceProfileConverterOptions](/reference/datagate/datagate-providers/source-profile-converter-options.html) | Enum for SourceProfileConverter options. |
-| [TransactionAttributes](/reference/datagate/datagate-providers/transaction-attributes.html) | Specifies the attributes for a transaction. |

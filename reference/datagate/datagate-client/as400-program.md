@@ -374,7 +374,7 @@ void WriteParmXml(XmlWriter writer)
 ```cs 
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program(ProdDB);
-  prog.ProgramPath = "*Libl/Call400";
+  prog.SetProgramPath( "*Libl/Call400" );
 ```
 
 ## Example 3. As400Program constructor method example 3.
@@ -382,8 +382,8 @@ void WriteParmXml(XmlWriter writer)
 ```cs 
   //Here, "ProdDB" is an initialized AdgConnection.
   As400Program prog = new As400Program();
-  prog.Connection = ProdDB;
-  prog.ProgramPath = "*Libl/Call400";
+  prog.SetConnection( ProdDB );
+  prog.SetProgramPath("*Libl/Call400");
 ```
 
 ## Example 4. ParmToObject method example.
@@ -435,8 +435,8 @@ void WriteParmXml(XmlWriter writer)
 
 ```cs 
   As400Program prog = new As400Program();
-  prog.Connection = new AdgConnection("*Public/DG NET IBM i");
-  prog.ProgramPath = "*Libl/Call400";
+  prog.SetConnection( new AdgConnection("*Public/DG NET IBM i") );
+  prog.SetProgramPath( "*Libl/Call400" );
 ```
 
 
@@ -491,10 +491,10 @@ void WriteParmXml(XmlWriter writer)
 ```
 
 
-## Example 9. as400Program SetProgramPath property example.
+## Example 9. as400Program SetProgramPath method example.
 
 ```cs 
   As400Program prog = new As400Program();
-  prog.Connection = new AdgConnection("*Public/DG NET IBM i");
+  prog.SetConnection( new AdgConnection("*Public/DG NET IBM i") );
   prog.SetProgramPath = "*Libl/Call400";
 ```

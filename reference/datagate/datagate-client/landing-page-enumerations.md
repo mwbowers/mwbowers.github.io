@@ -12,7 +12,6 @@ The following are the enumerations provided by **ASNA DataGate Client** namespac
 | [AdapterStatus](/reference/datagate/datagate-client/adapter-status.html) | Represents the status of the FileAdapter. |
 | [AuthenticationType](/reference/datagate/datagate-client/authentication-type.html) | AuthenticationType |
 | [CopyMemberOptions](/reference/datagate/datagate-client/copy-member-options.html) | Copy member options. |
-| [DgLabelFlags](/reference/datagate/datagate-client/dg-label-flags.html) | Flags on a database label |
 | [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html) | Copy data ExportAccessMode enumeration. |
 | [InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html) | Specifies the options for initializing a member. |
 | [LiblPosition](/reference/datagate/datagate-client/libl-position.html) | Specifies the position of a library in the library list. |

@@ -25,7 +25,7 @@ Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to
       dbFile = new FileAdapter();
   if (dbFile.Status == FileAdapter.AdapterStatus.Closed)
   {
-      dbFile.Connection = myAdgConnection;
+      dbFile.SetConnection( myAdgConnection );
       dbFile.FileName = fileName;
       dbFile.MemberName = memberName;
       dbFile.OpenNewAdgDataSet(out myDataSet);

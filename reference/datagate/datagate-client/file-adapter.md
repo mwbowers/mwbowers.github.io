@@ -890,7 +890,7 @@ Using a fileAdapter object named "dbFile" but are unsure as to whether or not it
       dbFile = new FileAdapter();
   if (dbFile.Status == FileAdapter.AdapterStatus.Closed)
   {
-      dbFile.Connection = myAdgConnection;
+      dbFile.SetConnection( myAdgConnection );
       dbFile.FileName = fileName;
       dbFile.MemberName = memberName;
       dbFile.OpenNewAdgDataSet(out myDataSet);
@@ -1544,7 +1544,7 @@ db.Close();
    * operation and the need to reopen a file rarely occurs. */
 
   FileAdapter dbFile = new FileAdapter();
-  dbFile.Connection = new AdgConnection("*Public/DG NET Local");
+  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
   dbFile.FileName = "*Libl/CMASTNEW";
   dbFile.MemberName = "CMMASTER";
   AdgDataSet myDS = null;
@@ -1722,7 +1722,7 @@ db.Close();
 
 ```cs 
   FileAdapter dbFile = new FileAdapter();
-  dbFile.Connection = new AdgConnection("*Public/DG NET Local");
+  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
   dbFile.FileName = "*Libl/CMASTNEW";
   dbFile.MemberName = "CMMASTER";
   AdgDataSet myDS = null;
@@ -1754,7 +1754,7 @@ db.Close();
 ```cs 
   AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
   FileAdapter dbFile = new FileAdapter();
-  dbFile.Connection = dataBase;
+  dbFile.SetConnection( dataBase;
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";
 ```
@@ -1936,7 +1936,7 @@ db.Close();
    * only for this file adapter, it is created and destroyed using the
    * FileAdapter's Connection property. */
   FileAdapter dbFile = new FileAdapter();
-  dbFile.Connection = new AdgConnection("*Public/DG NET Local");
+  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
   dbFile.FileName = "*Libl/CMASTNEWL2";
   dbFile.MemberName = "CMMASTERL2";
   dbFile.AccessMode = AccessMode.Read;
@@ -2078,7 +2078,7 @@ db.Close();
 
 ```cs 
   FileAdapter dbFile = new FileAdapter();
-  dbFile.Connection = new AdgConnection("*Public/DG NET Local");
+  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";
 
