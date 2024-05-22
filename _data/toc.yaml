@@ -386,13 +386,18 @@ Manuals:
           path: /manuals/enhancements/enhancing-ui/session-values-from-myjob.html
     - title: Display Report Manuscript as a PDF
       path: /manuals/enhancements/enhancing-reports/display-manuscript-as-pdf.html
-  - sectiontitle: Monarch Operations Management
-    sectionpath: /manuals/mom/mom-overview.html
+  - sectiontitle: Hosting Monarch Applications
+    sectionpath: /manuals/hosting/mom/hosting-overview.html
     section:
-    - title: Printer Writer
-      path: /manuals/mom/printer-writer.html
-    - title: Batch Processor
-      path: /manuals/mom/batch-dispatch.html
+    - title: Hosting an Interactive Application
+      path: /manuals/hosting/host-interactive-application.html
+    - sectiontitle: Monarch Operations Management
+      sectionpath: /manuals/hosting/mom/mom-overview.html
+      section:
+      - title: Printer Writer
+        path: /manuals/hosting/mom/printer-writer.html
+      - title: Batch Processor
+        path: /manuals/hosting/mom/batch-dispatch.html
   - sectiontitle: Monarch Cocoon
     section:
     - title: Displayfile Function Key Text

@@ -130,7 +130,7 @@ Notice that in the case noted above (2) where the user will consume the report a
 
 ## The Printer Writer
 
-Monarch provides an [implementation of the Printer Writer](/manuals/mom/printer-writer.html) in the form of the executable program: ASNA.QSys.PrinterWriter.exe.
+Monarch provides an [implementation of the Printer Writer](/manuals/hosting/mom/printer-writer.html) in the form of the executable program: ASNA.QSys.PrinterWriter.exe.
 
 The program can be configured via the ```appsettings.json``` file, and by command line arguments that override those in the json file.
 

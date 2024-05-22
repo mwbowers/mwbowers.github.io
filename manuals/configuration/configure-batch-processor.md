@@ -14,7 +14,7 @@ Read more about [Batch Jobs](/manuals/programming/jobs/batch-jobs.html).
 
 ## Configuring BatchDispatch
 
-See [Batch Dispatch](/manuals/mom/batch-dispatch.html).
+See [Batch Dispatch](/manuals/hosting/mom/batch-dispatch.html).
 
 
 ## Configuring BatchHost
