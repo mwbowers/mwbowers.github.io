@@ -43,13 +43,13 @@ In addition to the assemblies that the ASNA.QSys.xxx NuGet Packages will add to 
 
 See the following articles for discussions on the [Monarch Batch Subsystem (MBS)](/manuals/programming/jobs/batch-jobs.html#monarch-batch-subsystem-mbs) and [Reporting in a Monarch Application](/concepts/printing/printing-introduction.html)
 
-The sources to build these subsystems can be obtained from GitHub:
- - BatchDispatch Repository: https://github.com/asnaqsys/ASNA.QSys.BatchDispatch
- - BatchHost source is in the MonaServer Repository: https://github.com/asnaqsys/ASNA.QSys.MonaServer
- - PrinterWriter Repository: https://github.com/asnaqsys/ASNA.QSys.PrinterWriter
- - Renderer Repository: https://github.com/asnaqsys/PrintRendering
+The sources to build these subsystems can be obtained from ASNA repositories in GitHub:
+ - [BatchDispatch Repository](https://github.com/asnaqsys/ASNA.QSys.BatchDispatch).
+ - [BatchHost source](https://github.com/asnaqsys/ASNA.QSys.MonaServer/tree/main/src/ASNA.QSys.BatchHost) is in the MonaServer Repository.
+ - [PrinterWriter Repository](https://github.com/asnaqsys/ASNA.QSys.PrinterWriter)
+ - [Renderer Repository](https://github.com/asnaqsys/PrintRendering) which includes the Open.Renderer executable and the Open.PrintControls.
 
-There are two versions of the Renderer and the Print Controls. Both of them are **.NET Framework**.  The first one is installed with many ASNA products as part of the ‘DataGate’ infrastructure; The other version is ‘open sourced’ for customers and can be found in the repository https://github.com/asnaqsys/PrintRendering.
+There are two versions of the Renderer and the Print Controls. Both of them are **.NET Framework**.  The first version does not have to get built as it is installed with many ASNA products as part of the ‘DataGate’ infrastructure; The other version is ‘open sourced’ for customers that do not install DataGate products and can be found in the [Renderer Repository](https://github.com/asnaqsys/PrintRendering).
 
 The DataGate version of the Print Controls is installed in the GAC, however the open-source version (Open.PrintControls) can be located anywhere in the file system and its location set on the Open.Renderer's App.config file.
 

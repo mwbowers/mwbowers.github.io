@@ -120,7 +120,9 @@ The ``options`` parameter, of enumerated type NameStoreOptions, has the followin
 
 Configuration sources provide values to the store in order of increasing priority as given by the integer value shown above.  When two sources define a value for a single attribute of a database name, the source with higher priority has precedence over the attribute value defined by the lower priority source.
 
-An optional list of configuration files specified by parameter ``configFiles`` are loaded in the order in which they are given, but after the default JSON file (if specified) and before the Secrets (if specified).
+An optional list of configuration files specified by parameter ``configFiles`` are loaded in the order in which they are given, but after the default JSON file (if specified) and before the Secrets (if specified). 
+
+> Notice that a website's `appsettings.json` file can be used a source for database names.
 
 The Secrets used are those associated with the assembly of the type `<T>` passed to `PrepareNameStore<T>()`
 
@@ -162,7 +164,7 @@ Here is an alternative example:
         static MyJob()
         {
             Database.PrepareNameStore<MyJob>(NameStoreOptions.UseEnvironmentalVars | NameStoreOptions.UseCommandLineArgs,
-                                             @"C:\AppMain\ProductionSettings.json");
+                                             @"C:\AppMain\ProductionSettings.json", @".\appsettings.json");
         }
 
         override protected void ExecuteStartupProgram()
