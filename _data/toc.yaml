@@ -387,7 +387,7 @@ Manuals:
     - title: Display Report Manuscript as a PDF
       path: /manuals/enhancements/enhancing-reports/display-manuscript-as-pdf.html
   - sectiontitle: Hosting Monarch Applications
-    sectionpath: /manuals/hosting/mom/hosting-overview.html
+    sectionpath: /manuals/hosting/hosting-overview.html
     section:
     - title: Hosting an Interactive Application
       path: /manuals/hosting/host-interactive-application.html
