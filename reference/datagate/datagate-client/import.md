@@ -2,7 +2,7 @@
 title: Import class
 ---
 
-Represents a class for importing data.
+Provides functionality for importing data into the application.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,17 +11,25 @@ Represents a class for importing data.
 <br>
 <br>
 
+## Remarks
+The Import class provides methods for importing data from various formats such as XML and CSV.
+It uses the ImportOptions class to specify options for the import operation, such as the target member where the data will be imported, the source path from where the data will be imported, whether the target member should be cleared before the import, whether the target connection should be used for the import, and whether detailed feedback should be provided during the import operation.
+The class also provides methods for validating the import options and for performing the actual import operation.
+
+<br>
+<br>
+
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html)) | Executes the import operation with the specified options.
-| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Executes the import operation with the specified options and cancellation token.
-| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [TaskCreationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskcreationoptions?view=net-8.0)) | Executes the import operation with the specified options.
+| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html)) | Initiates an import operation with the specified import options.
+| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Initiates an import operation with the specified import options and cancellation token.
+| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [TaskCreationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskcreationoptions?view=net-8.0)) | Initiates an import operation with the specified import options, cancellation token, and task creation options.
 
 ### Task With([ImportOptions options](/reference/datagate/datagate-client/import-options.html))
 
-Executes the import operation with the specified options.
+Initiates an import operation with the specified import options.
 
 ```cs
 Task With(ImportOptions options)
@@ -37,11 +45,11 @@ Task With(ImportOptions options)
 
 | Type | Description
 | --- | ---
-| [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task representing the asynchronous import operation.
+| [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task that represents the asynchronous import operation.
 
 ### Task With([ImportOptions options](/reference/datagate/datagate-client/import-options.html))
 
-Executes the import operation with the specified options and cancellation token.
+Initiates an import operation with the specified import options and cancellation token.
 
 ```cs
 Task With(ImportOptions options)
@@ -49,7 +57,7 @@ Task With(ImportOptions options)
 
 ### Task With([ImportOptions options](/reference/datagate/datagate-client/import-options.html))
 
-Executes the import operation with the specified options.
+Initiates an import operation with the specified import options, cancellation token, and task creation options.
 
 ```cs
 Task With(ImportOptions options)

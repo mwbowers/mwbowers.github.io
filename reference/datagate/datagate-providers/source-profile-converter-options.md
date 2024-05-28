@@ -2,7 +2,7 @@
 title: SourceProfileConverterOptions enum
 ---
 
-Enum for SourceProfileConverter options.
+Specifies options for converting a SourceProfile.
 
 **Namespace:** ASNA.DataGate.Providers.Serialization
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,5 +13,5 @@ Enum for SourceProfileConverter options.
 
 | Name | Description | Value
 | --- | --- | --- 
-| None | Represents no options selected. | 0 |
-| OmitCredentialsOnWrite | Option to omit credentials when writing. | 1 |
+| None | No special options. | 0 |
+| OmitCredentialsOnWrite | Omits credentials when writing a SourceProfile. | 1 |

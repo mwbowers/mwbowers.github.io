@@ -2,7 +2,7 @@
 title: UserPasswordCredentialInlineConverter class
 ---
 
-Converts a UserPasswordCredential to or from JSON.
+The UserPasswordCredentialInlineConverter class is responsible for converting UserPasswordCredential objects.
 
 **Namespace:** ASNA.DataGate.Providers.Serialization
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,30 +11,16 @@ Converts a UserPasswordCredential to or from JSON.
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-| [UserPasswordCredentialInlineConverter()](#userpasswordcredentialinlineconverter) | 
-
-### UserPasswordCredentialInlineConverter()
-
-
-
-```cs
-UserPasswordCredentialInlineConverter()
-```
-
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [Read](#userpasswordcredential-readutf8jsonreader-reader-type-typetoconvert-jsonserializeroptions-options)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads and converts the JSON to type UserPasswordCredential.
-| [Write](#void-writeutf8jsonwriter-writer-userpasswordcredential-value-jsonserializeroptions-options)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a UserPasswordCredential object to JSON.
+| [Read](#userpasswordcredential-readutf8jsonreader-reader-type-typetoconvert-jsonserializeroptions-options)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads a UserPasswordCredential from a Utf8JsonReader.
+| [Write](#void-writeutf8jsonwriter-writer-userpasswordcredential-value-jsonserializeroptions-options)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a UserPasswordCredential to a Utf8JsonWriter.
 
 ### UserPasswordCredential Read([Utf8JsonReader& reader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type typeToConvert](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 
-Reads and converts the JSON to type UserPasswordCredential.
+Reads a UserPasswordCredential from a Utf8JsonReader.
 
 ```cs
 UserPasswordCredential Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
@@ -52,11 +38,11 @@ UserPasswordCredential Read(Utf8JsonReader& reader, Type typeToConvert, JsonSeri
 
 | Type | Description
 | --- | ---
-| [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html) | A UserPasswordCredential object.
+| [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html) | A UserPasswordCredential that was read from the Utf8JsonReader.
 
 ### void Write([Utf8JsonWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [UserPasswordCredential value](/reference/datagate/datagate-providers/user-password-credential.html), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 
-Writes a UserPasswordCredential object to JSON.
+Writes a UserPasswordCredential to a Utf8JsonWriter.
 
 ```cs
 void Write(Utf8JsonWriter writer, UserPasswordCredential value, JsonSerializerOptions options)

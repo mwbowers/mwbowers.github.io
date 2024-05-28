@@ -2,7 +2,7 @@
 title: AccessMode enum
 ---
 
-Enum representing the different modes of access.
+Specifies the access mode for a data operation.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,23 +13,23 @@ Enum representing the different modes of access.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Arrival | Represents arrival access mode. | 2 |
-| CacheWrites | Represents cache writes access mode. | 32 |
-| Change | Represents change access mode. | 4 |
-| CommitmentControl | Represents commitment control access mode. | 16 |
-| Delete | Represents delete access mode. | 8 |
-| Output | Represents output access mode. | 76 |
-| OutputCache | Represents output cache access mode. | 108 |
-| PrintPreview | Represents print preview access mode. | 256 |
-| Read | Represents read access mode. | 129 |
-| ReadWrite | Represents read/write access mode. | 193 |
-| ReadWriteCache | Represents read/write cache access mode. | 225 |
-| RWCD | Represents RWCD access mode. | 205 |
-| RWCDCache | Represents RWCDCache access mode. | 237 |
-| SetLLAsILE | Represents SetLLAsILE access mode. | 1 |
-| Write | Represents write access mode. | 64 |
-| WriteCache | Represents write cache access mode. | 96 |
-| WriteCacheArrival | Represents write cache arrival access mode. | 98 |
+| Arrival | Specifies arrival access. | 2 |
+| CacheWrites | Specifies cache writes access. | 32 |
+| Change | Specifies change access. | 4 |
+| CommitmentControl | Specifies commitment control access. | 16 |
+| Delete | Specifies delete access. | 8 |
+| Output | Specifies output access. | 76 |
+| OutputCache | Specifies output cache access. | 108 |
+| PrintPreview | Specifies print preview access. | 256 |
+| Read | Specifies read access. | 129 |
+| ReadWrite | Specifies read/write access. | 193 |
+| ReadWriteCache | Specifies read/write cache access. | 225 |
+| RWCD | Specifies RWCD access. | 205 |
+| RWCDCache | Specifies RWCDCache access. | 237 |
+| SetLLAsILE | Specifies SetLLAsILE access. | 1 |
+| Write | Specifies write access. | 64 |
+| WriteCache | Specifies write cache access. | 96 |
+| WriteCacheArrival | Specifies write cache arrival access. | 98 |
 
 ## Examples 
 

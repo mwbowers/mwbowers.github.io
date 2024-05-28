@@ -2,7 +2,7 @@
 title: DataGateCredential class
 ---
 
-Represents a set of DataGate credentials.
+Provides a base class for DataGate credentials.
 
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,11 +15,11 @@ Represents a set of DataGate credentials.
 
 | Name | Description |
 | --- | --- |
-| [DataGateCredential](#datagatecredentialcredentialtype)([CredentialType](/reference/datagate/datagate-providers/credential-type.html)) | Initializes a new instance of the DataGateCredential class with the specified credential type.
+| [DataGateCredential](#datagatecredentialcredentialtype)([CredentialType](/reference/datagate/datagate-providers/credential-type.html)) | Initializes a new instance of the DataGateCredential class with the specified CredentialType.
 
 ### DataGateCredential([CredentialType](/reference/datagate/datagate-providers/credential-type.html))
 
-Initializes a new instance of the DataGateCredential class with the specified credential type.
+Initializes a new instance of the DataGateCredential class with the specified CredentialType.
 
 ```cs
 DataGateCredential(CredentialType)
@@ -35,7 +35,7 @@ DataGateCredential(CredentialType)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | CredentialType | Gets the type of the credentials. |
+| [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | CredentialType | Gets the type of credentials used for authentication. |
 
 ## Methods
 
@@ -73,7 +73,7 @@ bool Equals(object obj)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the specified object is equal to the current object; otherwise, false.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -93,7 +93,7 @@ bool Equals(object obj)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the specified IDataGateCredential is equal to the current object; otherwise, false.
 
 ### int GetHashCode()
 

@@ -2,7 +2,7 @@
 title: SourceProfileConverter class
 ---
 
-Converts a SourceProfile to or from JSON.
+The SourceProfileConverter class is responsible for converting source profiles.
 
 **Namespace:** ASNA.DataGate.Providers.Serialization
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,12 +15,12 @@ Converts a SourceProfile to or from JSON.
 
 | Name | Description |
 | --- | --- |
-| [SourceProfileConverter](#sourceprofileconvertersourceprofileconverteroptions)([SourceProfileConverterOptions](/reference/datagate/datagate-providers/source-profile-converter-options.html)) | Initializes a new instance of the SourceProfileConverter class with specified options.
-| [SourceProfileConverter()](#sourceprofileconverter) | Initializes a new instance of the SourceProfileConverter class with default options.
+| [SourceProfileConverter](#sourceprofileconvertersourceprofileconverteroptions)([SourceProfileConverterOptions](/reference/datagate/datagate-providers/source-profile-converter-options.html)) | Initializes a new instance of the  class with the specified options.
+| [SourceProfileConverter()](#sourceprofileconverter) | Initializes a new instance of the  class with default settings.
 
 ### SourceProfileConverter([SourceProfileConverterOptions](/reference/datagate/datagate-providers/source-profile-converter-options.html))
 
-Initializes a new instance of the SourceProfileConverter class with specified options.
+Initializes a new instance of the  class with the specified options.
 
 ```cs
 SourceProfileConverter(SourceProfileConverterOptions)
@@ -34,7 +34,7 @@ SourceProfileConverter(SourceProfileConverterOptions)
 
 ### SourceProfileConverter()
 
-Initializes a new instance of the SourceProfileConverter class with default options.
+Initializes a new instance of the  class with default settings.
 
 ```cs
 SourceProfileConverter()
@@ -44,12 +44,12 @@ SourceProfileConverter()
 
 | Signature | Description |
 | --- | --- |
-| [Read](#sourceprofile-readutf8jsonreader-reader-type-typetoconvert-jsonserializeroptions-options)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads and converts the JSON to type SourceProfile.
-| [Write](#void-writeutf8jsonwriter-writer-sourceprofile-value-jsonserializeroptions-options)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a SourceProfile object to JSON.
+| [Read](#sourceprofile-readutf8jsonreader-reader-type-typetoconvert-jsonserializeroptions-options)([Utf8JsonReader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Reads a SourceProfile from a Utf8JsonReader.
+| [Write](#void-writeutf8jsonwriter-writer-sourceprofile-value-jsonserializeroptions-options)([Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0)) | Writes a SourceProfile to a Utf8JsonWriter.
 
 ### SourceProfile Read([Utf8JsonReader& reader](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonreader?view=net-8.0), [Type typeToConvert](https://docs.microsoft.com/en-us/dotnet/api/system.type), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 
-Reads and converts the JSON to type SourceProfile.
+Reads a SourceProfile from a Utf8JsonReader.
 
 ```cs
 SourceProfile Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
@@ -67,11 +67,11 @@ SourceProfile Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOpt
 
 | Type | Description
 | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | A SourceProfile object.
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | A SourceProfile that was read from the Utf8JsonReader.
 
 ### void Write([Utf8JsonWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0), [SourceProfile value](/reference/datagate/datagate-providers/source-profile.html), [JsonSerializerOptions options](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0))
 
-Writes a SourceProfile object to JSON.
+Writes a SourceProfile to a Utf8JsonWriter.
 
 ```cs
 void Write(Utf8JsonWriter writer, SourceProfile value, JsonSerializerOptions options)

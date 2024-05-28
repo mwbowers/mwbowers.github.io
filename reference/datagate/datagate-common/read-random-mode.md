@@ -2,7 +2,7 @@
 title: ReadRandomMode enum
 ---
 
-Enum representing the mode of reading values in a random manner.
+Specifies the mode for reading data randomly.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,9 +13,9 @@ Enum representing the mode of reading values in a random manner.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Equal | Represents a state where an equal value is read in the sequence. | 13 |
-| Greater | Represents a state where a greater value is read in the sequence. | 14 |
-| GTEQ | Represents a state where a value greater than or equal to the current value is read in the sequence. | 15 |
+| Equal | Specifies that the reading starts from the record that equals the key. | 13 |
+| Greater | Specifies that the reading starts from the record that is greater than the key. | 14 |
+| GTEQ | Specifies that the reading starts from the record that is greater than or equal to the key. | 15 |
 
 ## Examples
 

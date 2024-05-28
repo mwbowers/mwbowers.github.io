@@ -2,7 +2,7 @@
 title: IDataGateCredential interface
 ---
 
-Defines a set of methods and properties that represent DataGate credentials.
+Defines methods and properties for DataGate credentials.
 
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,4 +15,4 @@ Defines a set of methods and properties that represent DataGate credentials.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | CredentialType | Gets the type of the credentials. |
+| [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | CredentialType | Gets the type of credentials used for authentication. |

@@ -2,7 +2,7 @@
 title: FieldType class
 ---
 
-Represents the type of a field in ASNA DataGate.
+Represents the type of a field in a data structure.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -14,42 +14,49 @@ Represents the type of a field in ASNA DataGate.
 
 Any public static (Shared) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
 
+## Remarks
+The FieldType class provides a way to define the type of a field in a data structure, 
+including its data type, length, precision, scale, and format for date/time and DBCS fields.
+It also provides methods to create new instances of FieldType for specific data types.
+
+<br>
+<br>
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ByteLength | Gets or sets the byte length of the field. |
-| [DataTypes](/reference/datagate/datagate-common/data-types.html) | DataType | Gets or sets the data type of the field. |
-| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | DateTime | Gets or sets the date and time format of the field. |
-| [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html) | Dbcs | Gets or sets the DBCS (Double-Byte Character Set) format of the field. |
-| [PropertyCollection](https://learn.microsoft.com/en-us/dotnet/api/system.data.propertycollection?view=net-8.0) | ExtendedProperties | Gets the extended properties of the field type. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Precision | Gets or sets the precision of the field. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Scale | Gets or sets the scale of the field. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ByteLength | Gets the byte length of the field. |
+| [DataTypes](/reference/datagate/datagate-common/data-types.html) | DataType | Gets the data type of the field. |
+| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | DateTime | Gets the date/time format of the field. This is used for date and time types. |
+| [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html) | Dbcs | Gets the DBCS format of the field. This is used for DBCS types. |
+| [PropertyCollection](https://learn.microsoft.com/en-us/dotnet/api/system.data.propertycollection?view=net-8.0) | ExtendedProperties | Gets the collection of extended properties for the field. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Precision | Gets the precision of the field. This is used for decimal types. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Scale | Gets the scale of the field. This is used for decimal types. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [GetSystemTypeOfType](#type-getsystemtypeoftypedatatypes-dt-int-bytelength)([DataTypes](/reference/datagate/datagate-common/data-types.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the system type equivalent of the specified ASNA DataGate data type.
-| [NewBinary](#fieldtype-newbinaryint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a binary data type.
-| [NewByte()](#fieldtype-newbyte) | Creates a new FieldType instance representing a byte data type.
-| [NewChar](#fieldtype-newcharint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a character data type.
-| [NewDate](#fieldtype-newdatedatetimeformat-fmt)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a date data type.
-| [NewDBCS](#fieldtype-newdbcsint-length-dbcsformat-fmt)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html)) | Creates a new FieldType instance representing a DBCS (Double-Byte Character Set) data type.
-| [NewDontCare](#fieldtype-newdontcareint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a data type that doesn't care about the specific type.
-| [NewFloat](#fieldtype-newfloatint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a floating point data type.
-| [NewHex](#fieldtype-newhexint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a hexadecimal data type.
-| [NewInteger](#fieldtype-newintegerint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing an integer data type.
-| [NewPacked](#fieldtype-newpackedint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a packed decimal data type.
-| [NewTime](#fieldtype-newtimedatetimeformat-fmt)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a time data type.
-| [NewTimestamp()](#fieldtype-newtimestamp) | Creates a new FieldType instance representing a timestamp data type.
-| [NewUnicode](#fieldtype-newunicodeint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a Unicode data type.
-| [NewZoned](#fieldtype-newzonedint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a zoned decimal data type.
+| [GetSystemTypeOfType](#type-getsystemtypeoftypedatatypes-dt-int-bytelength)([DataTypes](/reference/datagate/datagate-common/data-types.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the corresponding .NET type for a given DataTypes value and byte length.
+| [NewBinary](#fieldtype-newbinaryint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a binary field.
+| [NewByte()](#fieldtype-newbyte) | Creates a new FieldType instance representing a byte field.
+| [NewChar](#fieldtype-newcharint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a character field.
+| [NewDate](#fieldtype-newdatedatetimeformat-fmt)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a date field.
+| [NewDBCS](#fieldtype-newdbcsint-length-dbcsformat-fmt)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html)) | Creates a new FieldType instance representing a DBCS field.
+| [NewDontCare](#fieldtype-newdontcareint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a DontCare field.
+| [NewFloat](#fieldtype-newfloatint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a floating point field.
+| [NewHex](#fieldtype-newhexint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a hexadecimal field.
+| [NewInteger](#fieldtype-newintegerint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing an integer field.
+| [NewPacked](#fieldtype-newpackedint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a packed decimal field.
+| [NewTime](#fieldtype-newtimedatetimeformat-fmt)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Creates a new FieldType instance representing a time field.
+| [NewTimestamp()](#fieldtype-newtimestamp) | Creates a new FieldType instance representing a timestamp field.
+| [NewUnicode](#fieldtype-newunicodeint-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a Unicode field.
+| [NewZoned](#fieldtype-newzonedint-prec-int-scale)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Creates a new FieldType instance representing a zoned decimal field.
 
 ### Type GetSystemTypeOfType([DataTypes dt](/reference/datagate/datagate-common/data-types.html), [int byteLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Gets the system type equivalent of the specified ASNA DataGate data type.
+Gets the corresponding .NET type for a given DataTypes value and byte length.
 
 ```cs
 Type GetSystemTypeOfType(DataTypes dt, int byteLength)
@@ -66,11 +73,11 @@ Type GetSystemTypeOfType(DataTypes dt, int byteLength)
 
 | Type | Description
 | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | The system type equivalent of the specified ASNA DataGate data type.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | The corresponding .NET type, or null if no match is found.
 
 ### FieldType NewBinary([int prec](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int scale](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a binary data type.
+Creates a new FieldType instance representing a binary field.
 
 ```cs
 FieldType NewBinary(int prec, int scale)
@@ -87,11 +94,11 @@ FieldType NewBinary(int prec, int scale)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Binary, the Precision and Scale set to the provided values.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewByte()
 
-Creates a new FieldType instance representing a byte data type.
+Creates a new FieldType instance representing a byte field.
 
 ```cs
 FieldType NewByte()
@@ -99,7 +106,7 @@ FieldType NewByte()
 
 ### FieldType NewChar([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a character data type.
+Creates a new FieldType instance representing a character field.
 
 ```cs
 FieldType NewChar(int length)
@@ -115,11 +122,11 @@ FieldType NewChar(int length)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Char and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewDate([DateTimeFormat fmt](/reference/datagate/datagate-common/date-time-format.html))
 
-Creates a new FieldType instance representing a date data type.
+Creates a new FieldType instance representing a date field.
 
 ```cs
 FieldType NewDate(DateTimeFormat fmt)
@@ -135,11 +142,11 @@ FieldType NewDate(DateTimeFormat fmt)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Date and the DateTime set to the provided format. The ByteLength is set based on the format.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewDBCS([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DbcsFormat fmt](/reference/datagate/datagate-common/dbcs-format.html))
 
-Creates a new FieldType instance representing a DBCS (Double-Byte Character Set) data type.
+Creates a new FieldType instance representing a DBCS field.
 
 ```cs
 FieldType NewDBCS(int length, DbcsFormat fmt)
@@ -156,11 +163,11 @@ FieldType NewDBCS(int length, DbcsFormat fmt)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to DBCS, the Dbcs set to the provided format, and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewDontCare([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a data type that doesn't care about the specific type.
+Creates a new FieldType instance representing a DontCare field.
 
 ```cs
 FieldType NewDontCare(int length)
@@ -176,11 +183,11 @@ FieldType NewDontCare(int length)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to DontCare and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewFloat([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a floating point data type.
+Creates a new FieldType instance representing a floating point field.
 
 ```cs
 FieldType NewFloat(int length)
@@ -196,11 +203,11 @@ FieldType NewFloat(int length)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Float and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewHex([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a hexadecimal data type.
+Creates a new FieldType instance representing a hexadecimal field.
 
 ```cs
 FieldType NewHex(int length)
@@ -216,11 +223,11 @@ FieldType NewHex(int length)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Hex and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewInteger([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing an integer data type.
+Creates a new FieldType instance representing an integer field.
 
 ```cs
 FieldType NewInteger(int length)
@@ -236,11 +243,11 @@ FieldType NewInteger(int length)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Integer and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewPacked([int prec](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int scale](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a packed decimal data type.
+Creates a new FieldType instance representing a packed decimal field.
 
 ```cs
 FieldType NewPacked(int prec, int scale)
@@ -257,11 +264,11 @@ FieldType NewPacked(int prec, int scale)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Packed, the Precision and Scale set to the provided values, and the ByteLength calculated based on the precision.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewTime([DateTimeFormat fmt](/reference/datagate/datagate-common/date-time-format.html))
 
-Creates a new FieldType instance representing a time data type.
+Creates a new FieldType instance representing a time field.
 
 ```cs
 FieldType NewTime(DateTimeFormat fmt)
@@ -277,11 +284,11 @@ FieldType NewTime(DateTimeFormat fmt)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Time, the DateTime set to the provided format, and the ByteLength set to 8.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewTimestamp()
 
-Creates a new FieldType instance representing a timestamp data type.
+Creates a new FieldType instance representing a timestamp field.
 
 ```cs
 FieldType NewTimestamp()
@@ -289,7 +296,7 @@ FieldType NewTimestamp()
 
 ### FieldType NewUnicode([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a Unicode data type.
+Creates a new FieldType instance representing a Unicode field.
 
 ```cs
 FieldType NewUnicode(int length)
@@ -305,11 +312,11 @@ FieldType NewUnicode(int length)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Unicode and the ByteLength set to the provided length.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ### FieldType NewZoned([int prec](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int scale](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Creates a new FieldType instance representing a zoned decimal data type.
+Creates a new FieldType instance representing a zoned decimal field.
 
 ```cs
 FieldType NewZoned(int prec, int scale)
@@ -326,7 +333,7 @@ FieldType NewZoned(int prec, int scale)
 
 | Type | Description
 | --- | ---
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance with the DataType set to Zoned, the Precision and Scale set to the provided values, and the ByteLength set to the precision.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | A new FieldType instance.
 
 ## Example 1. Use of NewTimestamp method example.
 

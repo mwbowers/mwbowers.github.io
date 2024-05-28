@@ -2,13 +2,12 @@
 title: SqlTimeConverter class
 ---
 
-A converter class for SQL Server 'time' column string conversion and helpers.
-This class extends the DgDateTimeConverter class.
+SQL Server 'time' column string conversion and helpers.
 
 **Namespace:** ASNA.DataGate.ADO
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) --> [DateTimeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeconverter?view=net-8.0) --> [DgDateTimeConverterBase](/reference/datagate/datagate-common/dg-date-time-converter-base.html) --> [DgDateTimeConverter](/reference/datagate/datagate-common/dg-date-time-converter.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) --> [DateTimeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.datetimeconverter?view=net-8.0) --> [DgDateTimeConverterBase](/reference/datagate/datagate-common/dg-date-time-converter-base.html) --> [DgDateTimeConverter](https://learn.microsoft.com/en-us/dotnet/api/)
 <br>
 <br>
 
@@ -16,11 +15,11 @@ This class extends the DgDateTimeConverter class.
 
 | Name | Description |
 | --- | --- |
-| [SqlTimeConverter](#sqltimeconverterdatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Initializes a new instance of the SqlTimeConverter class.
+| [SqlTimeConverter](#sqltimeconverterdatetimeformat)([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Initializes a new instance of the  class.
 
 ### SqlTimeConverter([DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html))
 
-Initializes a new instance of the SqlTimeConverter class.
+Initializes a new instance of the  class.
 
 ```cs
 SqlTimeConverter(DateTimeFormat)
@@ -36,12 +35,12 @@ SqlTimeConverter(DateTimeFormat)
 
 | Signature | Description |
 | --- | --- |
-| [ConvertFrom](#object-convertfromitypedescriptorcontext-context-cultureinfo-culture-object-value)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a given value to a TimeSpan object.
-| [ConvertTo](#object-converttoitypedescriptorcontext-context-cultureinfo-culture-object-value-type-destinationtype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts a given value to a specified type.
+| [ConvertFrom](#object-convertfromitypedescriptorcontext-context-cultureinfo-culture-object-value)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a specified value to a TimeSpan representing the time of day.
+| [ConvertTo](#object-converttoitypedescriptorcontext-context-cultureinfo-culture-object-value-type-destinationtype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts a specified TimeSpan to a string representing the time of day.
 
 ### object ConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Converts a given value to a TimeSpan object.
+Converts a specified value to a TimeSpan representing the time of day.
 
 ```cs
 object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
@@ -59,11 +58,11 @@ object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object v
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | A TimeSpan object that represents the converted value.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | A TimeSpan representing the time of day of the value.
 
 ### object ConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
-Converts a given value to a specified type.
+Converts a specified TimeSpan to a string representing the time of day.
 
 ```cs
 object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
@@ -82,4 +81,4 @@ object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object val
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object that represents the converted value.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | A string representing the time of day of the value.

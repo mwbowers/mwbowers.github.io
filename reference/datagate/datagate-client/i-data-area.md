@@ -2,7 +2,7 @@
 title: IDataArea interface
 ---
 
-Defines the methods and properties for a DataGate data area.
+Defines the contract for managing a data area in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -12,7 +12,10 @@ Defines the methods and properties for a DataGate data area.
 <br>
 
 ## Remarks
-This interface should be implemented by classes that represent a DataGate data area.
+This interface provides properties and methods to manage a data area in the ASNA DataGate client. 
+It includes properties to get and set the length and number of decimal places of the data area, 
+methods to set the initial value, change the value, retrieve the value, 
+and convert between ProgParm parameters and objects.
 
 <br>
 <br>
@@ -21,32 +24,32 @@ This interface should be implemented by classes that represent a DataGate data a
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Decimals | Gets or sets the number of decimal places for the data area. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the length of the data area. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Decimals | Gets or sets the number of decimal places in the data area. The number of decimals can be between 0 and 9. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the length of the data area. The length can be between 1 and 2000. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
 | [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a ProgParm parameter to the data area.
-| [Change](#void-changebool-value)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Changes the value of the data area.
-| [Change](#void-changebool-value)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Changes the value of the data area.
-| [Change](#void-changebool-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the value of the data area.
-| [Change](#void-changebool-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
-| [Change](#void-changebool-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Changes the value of the data area.
-| [Change](#void-changebool-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes the value of the data area.
-| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the value of the specified parameter in the data area.
-| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Sets the value of the specified parameter in the data area.
-| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
-| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the specified parameter in the data area.
-| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
-| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the value of the specified parameter in the data area to the specified return type.
+| [Change](#void-changebool-value)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Changes the value of the data area to a boolean value.
+| [Change](#void-changebool-value)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Changes the value of the data area to a decimal value.
+| [Change](#void-changebool-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the value of the data area to a string value.
+| [Change](#void-changebool-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes a subset of the data area to a string value.
+| [Change](#void-changebool-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Changes the value of the data area to a ProgParm value.
+| [Change](#void-changebool-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Changes a subset of the data area to a ProgParm value.
+| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts an object to a ProgParm parameter and assigns it to the data area.
+| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts an object to a ProgParm parameter and assigns it to the data area.
+| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts an object to a ProgParm parameter and assigns it to the data area.
+| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts an object to a ProgParm parameter and assigns it to the data area.
+| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts a ProgParm parameter to an object.
+| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts a ProgParm parameter to an object.
+| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a ProgParm parameter to an object.
+| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a ProgParm parameter to an object.
 | [Retrieve()](#object-retrieve) | Retrieves the value of the data area.
-| [Retrieve](#object-retrieve)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
-| [Retrieve](#object-retrieve)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Retrieves the value of the data area.
-| [Retrieve](#object-retrieve)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the value of the data area.
+| [Retrieve](#object-retrieve)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Get a subset of the data in a character-type data area.
+| [Retrieve](#object-retrieve)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Retrieves the value of the data area into a ProgParm value.
+| [Retrieve](#object-retrieve)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves a subset of the data area into a ProgParm value.
 | [SetInitialValue](#void-setinitialvaluestring-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the initial value of the data area.
 
 ### void AppendParm([ProgParm Parameter](/reference/datagate/datagate-data-link/prog-parm.html))
@@ -65,7 +68,7 @@ void AppendParm(ProgParm Parameter)
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Changes the value of the data area.
+Changes the value of the data area to a boolean value.
 
 ```cs
 void Change(bool Value)
@@ -79,7 +82,7 @@ void Change(bool Value)
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Changes the value of the data area.
+Changes the value of the data area to a decimal value.
 
 ```cs
 void Change(bool Value)
@@ -93,7 +96,7 @@ void Change(bool Value)
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Changes the value of the data area.
+Changes the value of the data area to a string value.
 
 ```cs
 void Change(bool Value)
@@ -107,7 +110,7 @@ void Change(bool Value)
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Changes the value of the data area.
+Changes a subset of the data area to a string value.
 
 ```cs
 void Change(bool Value)
@@ -115,7 +118,7 @@ void Change(bool Value)
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Changes the value of the data area.
+Changes the value of the data area to a ProgParm value.
 
 ```cs
 void Change(bool Value)
@@ -129,7 +132,7 @@ void Change(bool Value)
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Changes the value of the data area.
+Changes a subset of the data area to a ProgParm value.
 
 ```cs
 void Change(bool Value)
@@ -137,7 +140,7 @@ void Change(bool Value)
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Sets the value of the specified parameter in the data area.
+Converts an object to a ProgParm parameter and assigns it to the data area.
 
 ```cs
 void ObjectToParm(object Value, string ParameterName)
@@ -152,7 +155,7 @@ void ObjectToParm(object Value, string ParameterName)
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Sets the value of the specified parameter in the data area.
+Converts an object to a ProgParm parameter and assigns it to the data area.
 
 ```cs
 void ObjectToParm(object Value, string ParameterName)
@@ -167,7 +170,7 @@ void ObjectToParm(object Value, string ParameterName)
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Sets the value of the specified parameter in the data area.
+Converts an object to a ProgParm parameter and assigns it to the data area.
 
 ```cs
 void ObjectToParm(object Value, string ParameterName)
@@ -175,7 +178,7 @@ void ObjectToParm(object Value, string ParameterName)
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Sets the value of the specified parameter in the data area.
+Converts an object to a ProgParm parameter and assigns it to the data area.
 
 ```cs
 void ObjectToParm(object Value, string ParameterName)
@@ -183,7 +186,7 @@ void ObjectToParm(object Value, string ParameterName)
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Converts the value of the specified parameter in the data area to the specified return type.
+Converts a ProgParm parameter to an object.
 
 ```cs
 object ParmToObject(Type ReturnType, string ParameterName)
@@ -200,11 +203,11 @@ object ParmToObject(Type ReturnType, string ParameterName)
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted parameter value.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Converts the value of the specified parameter in the data area to the specified return type.
+Converts a ProgParm parameter to an object.
 
 ```cs
 object ParmToObject(Type ReturnType, string ParameterName)
@@ -221,11 +224,11 @@ object ParmToObject(Type ReturnType, string ParameterName)
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted parameter value.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Converts the value of the specified parameter in the data area to the specified return type.
+Converts a ProgParm parameter to an object.
 
 ```cs
 object ParmToObject(Type ReturnType, string ParameterName)
@@ -233,7 +236,7 @@ object ParmToObject(Type ReturnType, string ParameterName)
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Converts the value of the specified parameter in the data area to the specified return type.
+Converts a ProgParm parameter to an object.
 
 ```cs
 object ParmToObject(Type ReturnType, string ParameterName)
@@ -249,7 +252,7 @@ object Retrieve()
 
 ### object Retrieve()
 
-Retrieves the value of the data area.
+Get a subset of the data in a character-type data area.
 
 ```cs
 object Retrieve()
@@ -257,7 +260,7 @@ object Retrieve()
 
 ### object Retrieve()
 
-Retrieves the value of the data area.
+Retrieves the value of the data area into a ProgParm value.
 
 ```cs
 object Retrieve()
@@ -265,7 +268,7 @@ object Retrieve()
 
 ### object Retrieve()
 
-Retrieves the value of the data area.
+Retrieves a subset of the data area into a ProgParm value.
 
 ```cs
 object Retrieve()

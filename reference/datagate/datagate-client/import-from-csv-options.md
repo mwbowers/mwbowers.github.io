@@ -2,7 +2,7 @@
 title: ImportFromCsvOptions class
 ---
 
-Provides options for importing data from a CSV source.
+Represents options for importing data from a CSV file.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,21 +11,29 @@ Provides options for importing data from a CSV source.
 <br>
 <br>
 
+## Remarks
+The ImportFromCsvOptions class inherits from the ImportOptions class and adds additional properties specific to CSV data import.
+These properties include SkipFirstLine, TextDelimiter, FieldDelimiter, and DecimalPoint.
+The SkipFirstLine property indicates whether the first line of the CSV data should be skipped during the import.
+The TextDelimiter property specifies the text delimiter for the CSV data.
+The FieldDelimiter property specifies the field delimiter for the CSV data.
+The DecimalPoint property specifies the decimal point for the CSV data.
+
+<br>
+<br>
+
 ## Constructors
 
 | Name | Description |
 | --- | --- |
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the ImportFromCsvOptions class.
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ImportFromCsvOptions class.
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ImportFromCsvOptions class.
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ImportFromCsvOptions class.
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean-boolean-nullable-char)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Initializes a new instance of the ImportFromCsvOptions class.
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean-boolean-nullable-char--nullable-char)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Initializes a new instance of the ImportFromCsvOptions class.
-| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean-boolean-nullable-char--nullable-char--char)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Imports data from a CSV file with specified options.
+| [ImportFromCsvOptions](#importfromcsvoptionsimember-string)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with the specified target member and source path.
+| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the  class with the specified target member, source path, and clear member flag.
+| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the  class with the specified target member, source path, clear member flag, use target connection flag, and detailed feedback flag.
+| [ImportFromCsvOptions](#importfromcsvoptionsimember-string-boolean-boolean-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the  class with the specified target member, source path, clear member flag, use target connection flag, and skip first line flag.
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Initializes a new instance of the ImportFromCsvOptions class.
+Initializes a new instance of the  class with the specified target member and source path.
 
 ```cs
 ImportFromCsvOptions(IMember, String)
@@ -40,7 +48,7 @@ ImportFromCsvOptions(IMember, String)
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Initializes a new instance of the ImportFromCsvOptions class.
+Initializes a new instance of the  class with the specified target member, source path, and clear member flag.
 
 ```cs
 ImportFromCsvOptions(IMember, String, Boolean)
@@ -56,7 +64,7 @@ ImportFromCsvOptions(IMember, String, Boolean)
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Initializes a new instance of the ImportFromCsvOptions class.
+Initializes a new instance of the  class with the specified target member, source path, clear member flag, use target connection flag, and detailed feedback flag.
 
 ```cs
 ImportFromCsvOptions(IMember, String, Boolean, Boolean)
@@ -73,7 +81,7 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean)
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Initializes a new instance of the ImportFromCsvOptions class.
+Initializes a new instance of the  class with the specified target member, source path, clear member flag, use target connection flag, and skip first line flag.
 
 ```cs
 ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean)
@@ -89,71 +97,11 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean)
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
 
-### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
-
-Initializes a new instance of the ImportFromCsvOptions class.
-
-```cs
-ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
-| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-
-### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types))
-
-Initializes a new instance of the ImportFromCsvOptions class.
-
-```cs
-ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>, Nullable<Char>)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
-| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
-
-### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char))
-
-Imports data from a CSV file with specified options.
-
-```cs
-ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean, Nullable<Char>, Nullable<Char>, Char)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
-| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | textDelim | 
-| [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | fieldDelim | 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | decimalPoint | 
-
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | DecimalPoint | Gets or sets the character used as a decimal point in the CSV source. |
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | FieldDelimiter | Gets or sets the character used as a field delimiter in the CSV source. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SkipFirstLine | Gets or sets a value indicating whether to skip the first line in the CSV source. |
-| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the character used as a text delimiter in the CSV source. |
+| [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | DecimalPoint | Gets or sets the decimal point for the CSV data. |
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | FieldDelimiter | Gets or sets the field delimiter for the CSV data. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SkipFirstLine | Gets or sets a value indicating whether the first line of the CSV data should be skipped during the import. |
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the text delimiter for the CSV data. |

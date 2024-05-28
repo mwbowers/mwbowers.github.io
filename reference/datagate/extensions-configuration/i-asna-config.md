@@ -2,7 +2,7 @@
 title: IAsnaConfig interface
 ---
 
-Defines a contract for ASNA configuration.
+Provides an interface for accessing ASNA configuration.
 
 **Namespace:** ASNA.Extensions.Configuration
 **Assembly:** ASNA.QSys.DataGate.Client.dll

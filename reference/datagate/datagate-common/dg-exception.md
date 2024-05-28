@@ -2,7 +2,8 @@
 title: dgException class
 ---
 
-Custom Exceptions thrown by DataGate.
+The dgException class is a custom exception class that extends the base Exception class.
+It provides additional functionality for handling errors specific to the application.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -19,9 +20,9 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [dgException()](#dgexception) | Default constructor.
-| [dgException](#dgexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Constructor that takes a message as input.
-| [dgException](#dgexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Constructor that takes a message as input and inner exception.
+| [dgException()](#dgexception) | Initializes a new instance of the dgException class.
+| [dgException](#dgexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the dgException class with a specified error message.
+| [dgException](#dgexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the dgException class with a specified error message and a reference to the inner exception that is the cause of this exception.
 | [dgException](#dgexceptiondgerrornumber-int32-dgerrorclass-string-string-exception)([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Create a dgException with the passed error code, system error code,error class, and text.  This dgException is constructed and thrownwhen the database server program returns an error.
 | [dgException](#dgexceptiondgerrornumber-int32-dgerrorclass-string-string)([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a dgException with the passed error code, system error code,error class, and text.  This dgException is constructed and thrownwhen the database server program returns an error.
 | [dgException](#dgexceptiondgerrornumber)([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html)) | Create a dgException with the passed error code.
@@ -29,7 +30,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 ### dgException()
 
-Default constructor.
+Initializes a new instance of the dgException class.
 
 ```cs
 dgException()
@@ -37,7 +38,7 @@ dgException()
 
 ### dgException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Constructor that takes a message as input.
+Initializes a new instance of the dgException class with a specified error message.
 
 ```cs
 dgException(String)
@@ -51,7 +52,7 @@ dgException(String)
 
 ### dgException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
-Constructor that takes a message as input and inner exception.
+Initializes a new instance of the dgException class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ```cs
 dgException(String, Exception)
@@ -134,25 +135,24 @@ dgException(dgErrorNumber, Exception)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | DefaultErrorClass | Gets the default error class. |
-| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | Error | The error code for this dgException. For server side errors, thisis the error code returned by the server following a databasetransaction. |
-| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | ErrorClass | The class of error for this dgException. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Message | Get the error message. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | SystemError | The system error code, if any for this dgException. This memberwill contain meaningful information only with the value ofErrorClass is one of the following: |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | The text message of this dgException. |
+| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | DefaultErrorClass | Gets or sets the default error class. This property is used to categorize the type of error that occurred. |
+| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | Error | The error code for this dgException.  For server side errors, thisis the error code returned by the server following a databasetransaction. |
+| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | ErrorClass | The error class for this dgException. This categorizes the type of error that occurred. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Message | Gets a message that describes the current exception. This property is overridden to provide custom error messages. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | SystemError | The system error code, if any for this dgException.  This memberwill contain meaningful information only with the value ofErrorClass is one of the following: |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Text | The text message for this dgException. This provides additional details about the error. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [FormatMessage](#string-formatmessageiformatprovider-provider-string-msg)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the error message.
+| [FormatMessage](#string-formatmessageiformatprovider-provider-string-msg)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the error message into a single string for logging or displaying to the user.
 | [GetDefaultErrorClass](#dgerrorclass-getdefaulterrorclassdgerrornumber-err)([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html)) | Each dgErrorNumber has a default associated dgErrorClass.  Thismethod returns it.
-| [GetObjectData](#void-getobjectdataserializationinfo-info-streamingcontext-context)([SerializationInfo](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo?view=net-8.0), [StreamingContext](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext?view=net-8.0)) | Gets the object data.
 | [GetVerboseText()](#string-getverbosetext) | Return a string containing a verbose description of thedgException. This string will most likely contain line separatorcharacters.  All dgException member variables are included in thestring.
 
 ### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Gets the error message.
+Formats the error message into a single string for logging or displaying to the user.
 
 ```cs
 string FormatMessage(IFormatProvider provider, string msg)
@@ -169,7 +169,7 @@ string FormatMessage(IFormatProvider provider, string msg)
 
 | Type | Description
 | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A formatted string containing the error message.
 
 ### dgErrorClass GetDefaultErrorClass([dgErrorNumber err](/reference/datagate/datagate-common/dg-error-number.html))
 
@@ -190,21 +190,6 @@ dgErrorClass GetDefaultErrorClass(dgErrorNumber err)
 | Type | Description
 | --- | ---
 | [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | 
-
-### void GetObjectData([SerializationInfo info](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo?view=net-8.0), [StreamingContext context](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext?view=net-8.0))
-
-Gets the object data.
-
-```cs
-void GetObjectData(SerializationInfo info, StreamingContext context)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [SerializationInfo](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.serializationinfo?view=net-8.0) | info | 
-| [StreamingContext](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.streamingcontext?view=net-8.0) | context | 
 
 ### string GetVerboseText()
 

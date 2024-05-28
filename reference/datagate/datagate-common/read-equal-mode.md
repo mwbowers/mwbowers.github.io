@@ -2,7 +2,7 @@
 title: ReadEqualMode enum
 ---
 
-Enum representing the mode of reading equal values in a sequence.
+Specifies the mode for reading equal data.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,8 +13,8 @@ Enum representing the mode of reading equal values in a sequence.
 
 | Name | Description | Value
 | --- | --- | --- 
-| NextEqual | Represents a state where the next equal value is read in the sequence. | 17 |
-| PreviousEqual | Represents a state where the previous equal value is read in the sequence. | 18 |
+| NextEqual | Specifies that the reading starts from the next equal record. | 17 |
+| PreviousEqual | Specifies that the reading starts from the previous equal record. | 18 |
 
 ## Examples
 

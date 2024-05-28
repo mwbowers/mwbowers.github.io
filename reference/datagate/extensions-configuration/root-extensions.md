@@ -2,7 +2,7 @@
 title: RootExtensions class
 ---
 
-Provides extension methods for accessing ASNA and DataGate configuration sections.
+Provides extension methods for the root configuration.
 
 **Namespace:** ASNA.Extensions.Configuration
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -20,12 +20,12 @@ Provides extension methods for accessing ASNA and DataGate configuration section
 
 | Signature | Description |
 | --- | --- |
-| [GetAsnaConfig](#iconfigurationsection-getasnaconfigiconfiguration-this)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets the ASNA configuration section from the provided configuration.
-| [GetDataGateConfig](#iconfigurationsection-getdatagateconfigiconfiguration-this)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets the DataGate configuration section from the provided configuration.
+| [GetAsnaConfig](#iconfigurationsection-getasnaconfigiconfiguration-this)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Retrieves the ASNA configuration section from the configuration.
+| [GetDataGateConfig](#iconfigurationsection-getdatagateconfigiconfiguration-this)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Retrieves the DataGate configuration section from the ASNA configuration.
 
 ### IConfigurationSection GetAsnaConfig([IConfiguration This](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 
-Gets the ASNA configuration section from the provided configuration.
+Retrieves the ASNA configuration section from the configuration.
 
 ```cs
 IConfigurationSection GetAsnaConfig(IConfiguration This)
@@ -45,7 +45,7 @@ IConfigurationSection GetAsnaConfig(IConfiguration This)
 
 ### IConfigurationSection GetDataGateConfig([IConfiguration This](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 
-Gets the DataGate configuration section from the provided configuration.
+Retrieves the DataGate configuration section from the ASNA configuration.
 
 ```cs
 IConfigurationSection GetDataGateConfig(IConfiguration This)

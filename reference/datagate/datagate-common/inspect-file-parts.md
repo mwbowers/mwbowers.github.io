@@ -2,7 +2,7 @@
 title: InspectFileParts enum
 ---
 
-Enum representing the different parts of a file to inspect.
+Specifies the parts of a file to inspect.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,6 +13,6 @@ Enum representing the different parts of a file to inspect.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Branch | Represents the branch part of a file. | 1 |
-| Leaf | Represents the leaf part of a file. | 2 |
-| LeafKey | Represents the key of the leaf part of a file. | 4 |
+| Branch | Specifies that the branch part of the file should be inspected. | 1 |
+| Leaf | Specifies that the leaf part of the file should be inspected. | 2 |
+| LeafKey | Specifies that the key of the leaf part of the file should be inspected. | 4 |

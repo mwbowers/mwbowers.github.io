@@ -2,7 +2,7 @@
 title: IMember interface
 ---
 
-Defines the methods and properties for a DataGate member.
+Defines the contract for managing a member in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,7 +15,10 @@ Defines the methods and properties for a DataGate member.
 In DG implementations of **IMember**, instance members are not guaranteed to be thread safe.
 
 ## Remarks
-This interface should be implemented by classes that represent a DataGate member.
+This interface provides properties and methods to manage a member in the ASNA DataGate client. 
+It includes properties to get the number of active and deleted records in the member, 
+and the extension of the member. It also provides methods to clear the member, 
+removing all records, and to initialize the member with a specified number of records.
 
 <br>
 <br>
@@ -32,12 +35,12 @@ This interface should be implemented by classes that represent a DataGate member
 
 | Signature | Description |
 | --- | --- |
-| [Clear()](#void-clear) | Clears the member.
-| [Initialize](#void-initializeinitmemberoptions-options-long-records)([InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with the specified options and number of records.
+| [Clear()](#void-clear) | Clears the member, removing all records.
+| [Initialize](#void-initializeinitmemberoptions-options-long-records)([InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with a specified number of records.
 
 ### void Clear()
 
-Clears the member.
+Clears the member, removing all records.
 
 ```cs
 void Clear()
@@ -45,7 +48,7 @@ void Clear()
 
 ### void Initialize([InitMemberOptions Options](/reference/datagate/datagate-client/init-member-options.html), [long Records](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Initializes the member with the specified options and number of records.
+Initializes the member with a specified number of records.
 
 ```cs
 void Initialize(InitMemberOptions Options, long Records)

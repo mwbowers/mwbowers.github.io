@@ -2,7 +2,7 @@
 title: XmlInfoEventType enum
 ---
 
-Defines the event types for XML import/output operation result.
+Enumerate the possible event types for XML information. This includes different levels of errors, warnings, and information.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,13 +13,13 @@ Defines the event types for XML import/output operation result.
 
 | Name | Description | Value
 | --- | --- | --- 
-| ErrorAll | All errors event type. | 48 |
-| ErrorL1 | Critical error information (level 1) event type. | 16 |
-| ErrorL2 | Critical error information (level 2) event type. | 32 |
-| ErrorsAndWarnings | All errors and warnings event type. | 255 |
-| InfoAll | All information event type. | 65280 |
-| InfoDebug | Debug detailed information event type. | 1024 |
-| InfoL1 | General information (level 1) event type. | 256 |
-| InfoL2 | General information (level 2) event type. | 512 |
-| NonDebugInfo | Non debug information event type. | 768 |
-| Warning | Warning information event type. | 64 |
+| ErrorAll | Option to include all errors. | 48 |
+| ErrorL1 | Critical error. | 16 |
+| ErrorL2 | Second level error. | 32 |
+| ErrorsAndWarnings | Option to include errors and warnings. | 255 |
+| InfoAll | Option to include all information. | 65280 |
+| InfoDebug | Detailed info. | 1024 |
+| InfoL1 | General info (line one) | 256 |
+| InfoL2 | General info (line two) | 512 |
+| NonDebugInfo | Option to include non-debug information. | 768 |
+| Warning | Warning. | 64 |

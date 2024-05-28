@@ -419,14 +419,6 @@ Reference:
 - sectiontitle: Framework Reference
   sectionpath: /reference/reference-overview.html
   section:
-  - sectiontitle: ASNA.DataGate.Client.Common
-    sectionpath: /reference/datagate/datagate-client-common/landing-page-namespace.html
-    section:
-    - sectiontitle: Classes
-      sectionpath: /reference/datagate/datagate-client-common/landing-page-classes.html
-      section:
-      - title: DgNegotiateException class
-        path: /reference/datagate/datagate-client-common/dg-negotiate-exception.html
   - sectiontitle: ASNA.DataGate.Client
     sectionpath: /reference/datagate/datagate-client/landing-page-namespace.html
     section:
@@ -487,8 +479,6 @@ Reference:
         path: /reference/datagate/datagate-client/open-file-adapter-delegate.html
       - title: PrintingProps class
         path: /reference/datagate/datagate-client/printing-props.html
-      - title: RepairCatalog class
-        path: /reference/datagate/datagate-client/repair-catalog.html
       - title: XmlCancelEventArgs class
         path: /reference/datagate/datagate-client/xml-cancel-event-args.html
       - title: XmlCancelEventHandler class
@@ -565,22 +555,20 @@ Reference:
         path: /reference/datagate/datagate-common/adg-trace.html
       - title: DecNumZPRep class
         path: /reference/datagate/datagate-common/dec-num-zp-rep.html
-      - title: DgDateTimeConverter class
-        path: /reference/datagate/datagate-common/dg-date-time-converter.html
       - title: DgDateTimeConverterBase class
         path: /reference/datagate/datagate-common/dg-date-time-converter-base.html
       - title: dgException class
         path: /reference/datagate/datagate-common/dg-exception.html
-      - title: DssTimeConverter class
-        path: /reference/datagate/datagate-common/dss-time-converter.html
       - title: FieldType class
         path: /reference/datagate/datagate-common/field-type.html
       - title: IndicatorExpression class
         path: /reference/datagate/datagate-common/indicator-expression.html
-      - title: InvariateCultureTypeConverter class
-        path: /reference/datagate/datagate-common/invariate-culture-type-converter.html
+      - title: InvariantCultureTypeConverter class
+        path: /reference/datagate/datagate-common/invariant-culture-type-converter.html
       - title: NoDbNameException class
         path: /reference/datagate/datagate-common/no-db-name-exception.html
+      - title: TraceSinkSectionHandler class
+        path: /reference/datagate/datagate-common/trace-sink-section-handler.html
       - title: ClrStringHelpers class
         path: /reference/datagate/datagate-common/clr-string-helpers.html
       - title: InputStreamAggregator class
@@ -790,10 +778,6 @@ Reference:
         path: /reference/datagate/datagateado/adg-key-utils.html
       - title: SqlDatetime2TimestampConverter class
         path: /reference/datagate/datagateado/sql-datetime2-timestamp-converter.html
-      - title: SqlPrintCreateAttr class
-        path: /reference/datagate/datagateado/sql-print-create-attr.html
-      - title: SqlPrintDevAttr class
-        path: /reference/datagate/datagateado/sql-print-dev-attr.html
       - title: SqlTimeConverter class
         path: /reference/datagate/datagateado/sql-time-converter.html
   - sectiontitle: ASNA.DataGate.SqlServer
@@ -824,7 +808,7 @@ Reference:
       - title: IAsnaConfig interface
         path: /reference/datagate/extensions-configuration/i-asna-config.html
       - title: IDataGateConfig interface
-        path: /reference/datagate/extensions-configuration/i-datagate-config.html
+        path: /reference/datagate/extensions-configuration/i-datagate-config.html  
   - sectiontitle: ASNA.QSys.Runtime
     sectionpath: /reference/asna-qsys-runtime/asna-qsys-runtime-section-intro.html
     section:

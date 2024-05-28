@@ -2,7 +2,7 @@
 title: IConnectionHandler interface
 ---
 
-Defines the methods for handling a connection.
+Defines the methods for handling connections.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -12,7 +12,8 @@ Defines the methods for handling a connection.
 <br>
 
 ## Remarks
-This interface should be implemented by classes that need to manage a connection.
+This interface provides methods for opening, closing, and managing connections. 
+It can be implemented by any class that needs to manage connections, such as a database connection handler or a network connection handler.
 
 <br>
 <br>
@@ -21,11 +22,11 @@ This interface should be implemented by classes that need to manage a connection
 
 | Signature | Description |
 | --- | --- |
-| [EnsureConnectionOpened()](#bool-ensureconnectionopened) | Ensure connection opened implementation.
+| [EnsureConnectionOpened()](#bool-ensureconnectionopened) | Ensures that the connection is open.
 
 ### bool EnsureConnectionOpened()
 
-Ensure connection opened implementation.
+Ensures that the connection is open.
 
 ```cs
 bool EnsureConnectionOpened()

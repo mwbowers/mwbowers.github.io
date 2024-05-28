@@ -2,7 +2,7 @@
 title: IOpenAccessReader interface
 ---
 
-Defines methods for reading from an open access data stream.
+Defines methods for reading data from an open access channel.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,14 +15,14 @@ Defines methods for reading from an open access data stream.
 
 | Signature | Description |
 | --- | --- |
-| [Flush()](#void-flush) | Flushes the data stream, ensuring all buffered data is read.
-| [Read](#int-readbyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the data stream.
-| [ReadByte()](#int-readbyte) | Reads a single byte from the data stream.
-| [Receive()](#void-receive) | Receives data from the data stream.
+| [Flush()](#void-flush) | Flushes the reader, clearing any buffered data.
+| [Read](#int-readbyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the channel into the specified buffer.
+| [ReadByte()](#int-readbyte) | Reads a single byte from the channel.
+| [Receive()](#void-receive) | Receives data from the channel.
 
 ### void Flush()
 
-Flushes the data stream, ensuring all buffered data is read.
+Flushes the reader, clearing any buffered data.
 
 ```cs
 void Flush()
@@ -30,7 +30,7 @@ void Flush()
 
 ### int Read([Byte\[\] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Reads a sequence of bytes from the data stream.
+Reads a sequence of bytes from the channel into the specified buffer.
 
 ```cs
 int Read(Byte[] inBuf, int iBegin, int cBytes)
@@ -52,7 +52,7 @@ int Read(Byte[] inBuf, int iBegin, int cBytes)
 
 ### int ReadByte()
 
-Reads a single byte from the data stream.
+Reads a single byte from the channel.
 
 ```cs
 int ReadByte()
@@ -60,7 +60,7 @@ int ReadByte()
 
 ### void Receive()
 
-Receives data from the data stream.
+Receives data from the channel.
 
 ```cs
 void Receive()

@@ -2,7 +2,7 @@
 title: ServerCursors enum
 ---
 
-Enum representing the different types of server cursors.
+Specifies the type of server cursor to use.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,9 +13,9 @@ Enum representing the different types of server cursors.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Default | Represents the default server cursor. | 0 |
-| Dynamic | Represents a dynamic server cursor. | 2 |
-| FastForwardOnly | Represents a fast-forward only server cursor. | 4 |
-| Keyset | Represents a key-set server cursor. | 5 |
-| None | Represents a state where no server cursor is used. | 1 |
-| Static | Represents a static server cursor. | 3 |
+| Default | Specifies the default server cursor. | 0 |
+| Dynamic | Specifies a dynamic server cursor. | 2 |
+| FastForwardOnly | Specifies a fast-forward only server cursor. | 4 |
+| Keyset | Specifies a key-set driven server cursor. | 5 |
+| None | Specifies no server cursor. | 1 |
+| Static | Specifies a static server cursor. | 3 |

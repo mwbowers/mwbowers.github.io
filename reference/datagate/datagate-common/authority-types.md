@@ -2,7 +2,7 @@
 title: AuthorityTypes enum
 ---
 
-Enum representing the different types of authorities.
+Specifies the authority types for a resource.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,16 +13,16 @@ Enum representing the different types of authorities.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Add | Represents add authority. | 2 |
-| All | Represents all authorities. | 511 |
-| Alter | Represents alter authority. | 128 |
-| Change | Represents a set of authorities for change. | 46 |
-| Delete | Represents delete authority. | 8 |
-| Exclude | Represents a state where all authorities are excluded. | 0 |
-| Execute | Represents execute authority. | 16 |
-| Existence | Represents existence authority. | 64 |
-| Management | Represents management authority. | 256 |
-| Operational | Represents operational authority. | 32 |
-| Read | Represents read authority. | 1 |
-| Update | Represents update authority. | 4 |
-| Use | Represents a set of authorities for use. | 49 |
+| Add | Specifies that the user has add access to the resource. | 2 |
+| All | Specifies that the user has all access to the resource. | 511 |
+| Alter | Specifies that the user has alter access to the resource. | 128 |
+| Change | Specifies that the user has change access to the resource. | 46 |
+| Delete | Specifies that the user has delete access to the resource. | 8 |
+| Exclude | Specifies that the user is excluded from the resource. | 0 |
+| Execute | Specifies that the user has execute access to the resource. | 16 |
+| Existence | Specifies that the user has existence access to the resource. | 64 |
+| Management | Specifies that the user has management access to the resource. | 256 |
+| Operational | Specifies that the user has operational access to the resource. | 32 |
+| Read | Specifies that the user has read access to the resource. | 1 |
+| Update | Specifies that the user has update access to the resource. | 4 |
+| Use | Specifies that the user has use access to the resource. | 49 |

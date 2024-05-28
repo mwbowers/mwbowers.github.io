@@ -14,4 +14,4 @@ Specifies the type of credentials used for authentication.
 | Name | Description | Value
 | --- | --- | --- 
 | None | Represents no credentials. | 0 |
-| UserPassword | Represents user name and password credentials. | 1 |
+| UserPassword | Represents user password credentials. | 1 |

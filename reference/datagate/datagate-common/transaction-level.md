@@ -2,7 +2,7 @@
 title: TransactionLevel enum
 ---
 
-Enum representing the different levels of a transaction.
+Specifies the transaction level for a database operation.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,7 +13,7 @@ Enum representing the different levels of a transaction.
 
 | Name | Description | Value
 | --- | --- | --- 
-| High | Represents a high level of transaction. | 3 |
-| Low | Represents a low level of transaction. | 1 |
-| Medium | Represents a medium level of transaction. | 2 |
-| Serial | Represents a serial level of transaction. | 4 |
+| High | Specifies a high transaction level. | 3 |
+| Low | Specifies a low transaction level. | 1 |
+| Medium | Specifies a medium transaction level. | 2 |
+| Serial | Specifies a serial transaction level. | 4 |

@@ -2,7 +2,7 @@
 title: PasswordType enum
 ---
 
-Enum representing the different types of passwords.
+Specifies the type of password.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,5 +13,5 @@ Enum representing the different types of passwords.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Legacy | Represents a legacy password, compatible with AS400 10-character passwords. | 0 |
-| SecurePassphrase | Represents a secure pass-phrase, which is a mixed-case, unlimited length string. | 1 |
+| Legacy | Specifies a legacy password, compatible with AS400 10-character passwords. | 0 |
+| SecurePassphrase | Specifies a secure passphrase, which is a mixed-case, unlimited length string. | 1 |

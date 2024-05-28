@@ -2,7 +2,7 @@
 title: IFileAdapter interface
 ---
 
-Interface for file adapter.
+Provides an interface for file operations.
 
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,21 +15,21 @@ Interface for file adapter.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [AccessMode](/reference/datagate/datagate-common/access-mode.html) | AccessMode | Gets or sets the access mode. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FileName | Gets or sets the file name. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MemberName | Gets or sets the member name. |
-| [FileOpenAttr](/reference/datagate/datagate-providers/file-open-attr.html) | OpenAttributes | Gets or sets the open attributes. |
+| [AccessMode](/reference/datagate/datagate-common/access-mode.html) | AccessMode | Gets or sets the access mode for the file. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FileName | Gets or sets the name of the file. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MemberName | Gets or sets the name of the member. |
+| [FileOpenAttr](/reference/datagate/datagate-providers/file-open-attr.html) | OpenAttributes | Gets or sets the attributes for opening the file. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [Open](#void-openadgdataset-ds)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the specified AdgDataSet.
-| [ReadSequentialEqual](#void-readsequentialequaladgdataset-ds-readsequentialmode-rm-lockrequest-lr)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html)) | Reads the sequential equal.
+| [Open](#void-openadgdataset-ds)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the file with the specified dataset.
+| [ReadSequentialEqual](#void-readsequentialequaladgdataset-ds-readsequentialmode-rm-lockrequest-lr)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html)) | Reads the file sequentially with the specified dataset, read mode, and lock request.
 
 ### void Open([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 
-Opens the specified AdgDataSet.
+Opens the file with the specified dataset.
 
 ```cs
 void Open(AdgDataSet ds)
@@ -43,7 +43,7 @@ void Open(AdgDataSet ds)
 
 ### void ReadSequentialEqual([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode rm](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html))
 
-Reads the sequential equal.
+Reads the file sequentially with the specified dataset, read mode, and lock request.
 
 ```cs
 void ReadSequentialEqual(AdgDataSet ds, ReadSequentialMode rm, LockRequest lr)

@@ -2,7 +2,7 @@
 title: FileLocks enum
 ---
 
-Enum representing the different types of file locks.
+Specifies the file lock mode.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,5 +13,5 @@ Enum representing the different types of file locks.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Auto | Represents an automatic file lock. | 1 |
-| Manual | Represents a manual file lock. | 0 |
+| Auto | Specifies that the file lock is applied automatically. | 1 |
+| Manual | Specifies that the file lock is applied manually. | 0 |

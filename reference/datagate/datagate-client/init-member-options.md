@@ -2,7 +2,7 @@
 title: InitMemberOptions enum
 ---
 
-Specifies the options for initializing a member.
+Specifies the options to use when initializing a member.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll

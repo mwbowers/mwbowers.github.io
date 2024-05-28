@@ -2,7 +2,7 @@
 title: AdgObserver class
 ---
 
-Delegate for observing registered state changes.
+Represents a method that processes a string.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,23 +11,10 @@ Delegate for observing registered state changes.
 <br>
 <br>
 
-## Constructors
+## Remarks
+This delegate is used to provide a reference to a method that takes a string as a parameter.
+The method referred by this delegate can be used to perform operations on the string instance.
+The specific operations to be performed are determined by the method implementation.
 
-| Name | Description |
-| --- | --- |
-| [AdgObserver](#adgobserverobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
-
-### AdgObserver([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
-
-
-
-```cs
-AdgObserver(Object, IntPtr)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | object | 
-| [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0) | method | 
+<br>
+<br>

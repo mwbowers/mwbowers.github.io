@@ -23,11 +23,11 @@ example: 1 & 2 & !3 | 44 & 55 | 60
 
 | Name | Description |
 | --- | --- |
-| [IndicatorExpression](#indicatorexpressionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the indicator expression.
+| [IndicatorExpression](#indicatorexpressionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with the specified expression string.
 
 ### IndicatorExpression([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Sets the indicator expression.
+Initializes a new instance of the  class with the specified expression string.
 
 ```cs
 IndicatorExpression(String)
@@ -43,11 +43,11 @@ IndicatorExpression(String)
 
 | Signature | Description |
 | --- | --- |
-| [Eval](#bool-evalchar--indicators)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the expression using the indicator values passed in.
+| [Eval](#bool-evalchar--indicators)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the indicator expression against the provided set of indicators.
 
 ### bool Eval([Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
-Evaluates the expression using the indicator values passed in.
+Evaluates the indicator expression against the provided set of indicators.
 
 ```cs
 bool Eval(Char[] indicators)
@@ -63,4 +63,4 @@ bool Eval(Char[] indicators)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | The result after evaluaating the expression.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents the result of the evaluation.

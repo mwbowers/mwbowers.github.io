@@ -34,51 +34,34 @@ PrintDevAttr()
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Collate | Gets or sets the Collate attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CollateKey | Gets the key for the Collate attribute. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Color | Gets or sets the Color attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ColorKey | Gets the key for the Color attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Copies | Gets or sets the Copies attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CopiesKey | Gets the key for the Copies attribute. |
-| [PaperSourceKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.papersourcekind?view=dotnet-plat-ext-8.0) | DefaultSource | Gets or sets the DefaultSource attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DefaultSourceKey | Gets the key for the DefaultSource attribute. |
-| [Duplex](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.duplex?view=dotnet-plat-ext-8.0) | Duplex | Gets or sets the Duplex attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DuplexKey | Gets the key for the Duplex attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormName | Gets or sets the FormName attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormNameKey | Gets the key for the FormName attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | LeftMargin | Gets or sets the LeftMargin attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | LeftMarginKey | Gets the key for the LeftMargin attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the Length attribute. |
-| [PaperOrientation](/reference/datagate/datagate-common/paper-orientation.html) | Orientation | Gets or sets the Orientation attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | OrientationKey | Gets the key for the Orientation attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PaperLengthKey | Gets the key for the PaperLength attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PaperSizeKey | Gets the key for the PaperSize attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PaperWidthKey | Gets the key for the PaperWidth attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrinterName | Gets or sets the PrinterName attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrinterNameKey | Gets the key for the PrinterName attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrintQualityKey | Gets the key for the PrintQuality attribute. |
-| [PrinterResolutionKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printerresolutionkind?view=dotnet-plat-ext-8.0) | Quality | Gets or sets the Quality attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Scale | Gets or sets the Scale attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ScaleKey | Gets the key for the Scale attribute. |
-| [PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-8.0) | Size | Gets or sets the Size attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | TopMargin | Gets or sets the TopMargin attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TopMarginKey | Gets the key for the TopMargin attribute. |
-| [PrintTrueType](/reference/datagate/datagate-common/print-true-type.html) | TTOption | Gets or sets the TTOption attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TTOptionKey | Gets the key for the TTOption attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Width | Gets or sets the Width attribute. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | YResolution | Gets or sets the YResolution attribute. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | YResolutionKey | Gets the key for the YResolution attribute. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Collate | Gets or sets a value indicating whether collation should be used when printing multiple copies. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Color | Gets or sets the color of the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Copies | Gets or sets the number of copies to print. |
+| [PaperSourceKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.papersourcekind?view=dotnet-plat-ext-8.0) | DefaultSource | Gets or sets the default source of the printout. |
+| [Duplex](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.duplex?view=dotnet-plat-ext-8.0) | Duplex | Gets or sets a value indicating whether duplex printing is enabled. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormName | Gets or sets the name of the form to be used for the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | LeftMargin | Gets or sets the left margin of the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets or sets the length of the printout. |
+| [PaperOrientation](/reference/datagate/datagate-common/paper-orientation.html) | Orientation | Gets or sets the orientation of the printout. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PrinterName | Gets or sets the name of the printer. |
+| [PrinterResolutionKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printerresolutionkind?view=dotnet-plat-ext-8.0) | Quality | Gets or sets the quality of the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Scale | Gets or sets the scale of the printout. |
+| [PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-8.0) | Size | Gets or sets the size of the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | TopMargin | Gets or sets the top margin of the printout. |
+| [PrintTrueType](/reference/datagate/datagate-common/print-true-type.html) | TTOption | Gets or sets the TrueType font option for the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Width | Gets or sets the width of the printout. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | YResolution | Gets or sets the vertical resolution of the printout. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [ReadXml](#void-readxmlxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads XML data into the PrintDevAttr object.
-| [WriteXml](#void-writexmlxmlwriter-writer)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the PrintDevAttr object into XML data.
+| [ReadXml](#void-readxmlxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Generates an object from its XML representation.
+| [WriteXml](#void-writexmlxmlwriter-writer)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Converts the current instance into an XML string.
 
 ### void ReadXml([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 
-Reads XML data into the PrintDevAttr object.
+Generates an object from its XML representation.
 
 ```cs
 void ReadXml(XmlReader reader)
@@ -92,7 +75,7 @@ void ReadXml(XmlReader reader)
 
 ### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
-Writes the PrintDevAttr object into XML data.
+Converts the current instance into an XML string.
 
 ```cs
 void WriteXml(XmlWriter writer)

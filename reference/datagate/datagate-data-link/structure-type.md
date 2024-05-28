@@ -2,7 +2,7 @@
 title: StructureType class
 ---
 
-Represents a structured type in a program parameter.
+Represents a structured type in a DataLink connection, which can contain multiple other types.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -19,11 +19,11 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [StructureType](#structuretypestring-int32-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the  class.
+| [StructureType](#structuretypestring-int32-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the  class with the specified name, number of elements, and members.
 
 ### StructureType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Initializes a new instance of the  class.
+Initializes a new instance of the  class with the specified name, number of elements, and members.
 
 ```cs
 StructureType(String, Int32, Object[])
@@ -35,9 +35,4 @@ StructureType(String, Int32, Object[])
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | 
-| [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | mbrs | 
-
-## Properties
-
-| Type | Name | Description
-| --- | --- | --- 
+| [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | members | 

@@ -2,7 +2,7 @@
 title: ServerSslLevel enum
 ---
 
-Enum representing the different SSL levels for a server connection.
+Specifies the SSL level for a server connection.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,6 +13,6 @@ Enum representing the different SSL levels for a server connection.
 
 | Name | Description | Value
 | --- | --- | --- 
-| BestAvailable | Represents a connection that can be either clear text or TLS 1.x. | 1 |
-| Tls1xRequired | Represents a connection that excludes clear text and is TLS 1.x only. | 2 |
-| Unavailable | Represents a clear text only connection. | 0 |
+| BestAvailable | Specifies that either clear text or TLS 1.x is available. | 1 |
+| Tls1xRequired | Specifies that clear text is excluded and only TLS 1.x is available. | 2 |
+| Unavailable | Specifies that only clear text is available. | 0 |

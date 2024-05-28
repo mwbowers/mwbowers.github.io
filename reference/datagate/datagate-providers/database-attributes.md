@@ -19,26 +19,40 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [DatabaseAttributes()](#databaseattributes) | 
+| [DatabaseAttributes](#databaseattributesstring-string-string-string-string-string-int32-int32-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the DatabaseAttributes class with the specified parameters.
 
-### DatabaseAttributes()
+### DatabaseAttributes([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-
+Initializes a new instance of the DatabaseAttributes class with the specified parameters.
 
 ```cs
-DatabaseAttributes()
+DatabaseAttributes(String, String, String, String, String, String, Int32, Int32, Boolean)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | proxyName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | proxyVersion | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operatingSystem | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | hardware | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | label | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | totalSeats | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | busySeats | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | secure | 
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | BusySeats | Gets or sets the number of busy license seats for the database. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | BusySeats | Gets or sets the number of busy seats. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Database | Gets or sets the name of the database. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Hardware | Gets or sets the hardware information of the database server. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | OperatingSystem | Gets or sets the operating system of the database server. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | OriginalLabel | Gets or sets the original label of the database. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Hardware | Gets or sets the hardware information. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | OperatingSystem | Gets or sets the operating system. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | OriginalLabel | Gets or sets the original label. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ProxyName | Gets or sets the name of the proxy. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ProxyVersion | Gets or sets the version of the proxy. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Secure | Gets or sets a value indicating whether the database is secure. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | TotalSeats | Gets or sets the total number of license seats for the database. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Secure | Gets or sets a value indicating whether the connection is secure. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | TotalSeats | Gets or sets the total number of seats. |

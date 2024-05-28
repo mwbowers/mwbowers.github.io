@@ -2,7 +2,7 @@
 title: IAdgTransaction interface
 ---
 
-Defines the methods and properties for a DataGate transaction.
+Defines the contract for a transaction in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -16,7 +16,9 @@ Instance members of this type are not guaranteed to be thread safe.
 
 
 ## Remarks
-This interface should be implemented by classes that represent a DataGate transaction.
+This interface is used to manage transactions in the ASNA DataGate client. 
+It provides methods for committing and rolling back transactions, 
+and properties to get the connection and transaction level details.
 
 <br>
 <br>
@@ -26,20 +28,20 @@ This interface should be implemented by classes that represent a DataGate transa
 | Type | Name | Description
 | --- | --- | --- 
 | [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | Connection | Gets the connection associated with the transaction. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Name | Gets or sets the name associated with the transaction. |
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | TransactionLevel | Gets the transaction level associated with the transaction. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Name | Gets the name of the transaction. |
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | TransactionLevel | Gets the transaction level for the current transaction. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [Commit()](#void-commit) | Commits the transaction.
-| [Commit](#void-commit)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the transaction with the specified name.
-| [Rollback()](#void-rollback) | Rolls back the transaction.
+| [Commit()](#void-commit) | Commits the current transaction.
+| [Commit](#void-commit)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the current transaction with a specified transaction name.
+| [Rollback()](#void-rollback) | Rolls back the current transaction.
 
 ### void Commit()
 
-Commits the transaction.
+Commits the current transaction.
 
 ```cs
 void Commit()
@@ -47,7 +49,7 @@ void Commit()
 
 ### void Commit()
 
-Commits the transaction with the specified name.
+Commits the current transaction with a specified transaction name.
 
 ```cs
 void Commit()
@@ -55,7 +57,7 @@ void Commit()
 
 ### void Rollback()
 
-Rolls back the transaction.
+Rolls back the current transaction.
 
 ```cs
 void Rollback()

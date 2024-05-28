@@ -2,15 +2,10 @@
 title: LockRequest enum
 ---
 
-Enum representing different types of lock requests.
+Specifies the type of lock to request on a resource.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
-<br>
-<br>
-
-## Remarks
-Default: No specific lock request.NoWait: Do not wait to acquire the lock.Read: Request a read lock.Write: Request a write lock.NoLock: Do not request a lock.ReadWrite: Request both a read and write lock.
 <br>
 <br>
 
@@ -18,12 +13,12 @@ Default: No specific lock request.NoWait: Do not wait to acquire the lock.Read: 
 
 | Name | Description | Value
 | --- | --- | --- 
-| Default | Represents the default state where no specific lock request is made. | 0 |
-| NoLock | Represents a state where no lock is requested. | 8 |
-| NoWait | Represents a state where the system does not wait to acquire the lock. | 1 |
-| Read | Represents a state where a read lock is requested. | 2 |
-| ReadWrite | Represents a state where both a read and write lock are requested. | 6 |
-| Write | Represents a state where a write lock is requested. | 4 |
+| Default | No specific lock request. The default behavior is used. | 0 |
+| NoLock | No lock is requested on the resource. | 8 |
+| NoWait | Requests a lock without waiting if the lock is not immediately available. | 1 |
+| Read | Requests a read lock on the resource. | 2 |
+| ReadWrite | Requests both a read and write lock on the resource. | 6 |
+| Write | Requests a write lock on the resource. | 4 |
 
 ## Example 1. Requesting to avoid locking records in a file, while we read sequentially through it.
 

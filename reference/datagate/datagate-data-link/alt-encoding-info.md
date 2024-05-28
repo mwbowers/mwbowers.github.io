@@ -2,7 +2,7 @@
 title: AltEncodingInfo class
 ---
 
-Provides information about an alternative encoding.
+Represents information about an alternative encoding.
 
 **Namespace:** ASNA.DataGate.DataLink.Text
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,11 +15,11 @@ Provides information about an alternative encoding.
 
 | Name | Description |
 | --- | --- |
-| [AltEncodingInfo](#altencodinginfoaltencoding)([AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html)) | Initializes a new instance of the  class.
+| [AltEncodingInfo](#altencodinginfoaltencoding)([AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html)) | Initializes a new instance of the AltEncodingInfo class with the specified AltEncoding.
 
 ### AltEncodingInfo([AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html))
 
-Initializes a new instance of the  class.
+Initializes a new instance of the AltEncodingInfo class with the specified AltEncoding.
 
 ```cs
 AltEncodingInfo(AltEncoding)
@@ -35,19 +35,19 @@ AltEncodingInfo(AltEncoding)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CodePage | Gets the code page of the alternative encoding. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DisplayName | Gets the display name of the alternative encoding. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Name | Gets the name of the alternative encoding. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CodePage | Gets the code page identifier of the AltEncoding for this instance of AltEncodingInfo. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DisplayName | Gets the display name of the AltEncoding for this instance of AltEncodingInfo. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Name | Gets the web name of the AltEncoding for this instance of AltEncodingInfo. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [GetEncoding()](#altencoding-getencoding) | Gets the alternative encoding.
+| [GetEncoding()](#altencoding-getencoding) | Returns the AltEncoding for this instance of AltEncodingInfo.
 
 ### AltEncoding GetEncoding()
 
-Gets the alternative encoding.
+Returns the AltEncoding for this instance of AltEncodingInfo.
 
 ```cs
 AltEncoding GetEncoding()

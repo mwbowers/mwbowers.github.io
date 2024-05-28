@@ -2,7 +2,7 @@
 title: IPrintProperties interface
 ---
 
-Provides methods for managing print properties.
+Provides an interface for managing print properties.
 
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll

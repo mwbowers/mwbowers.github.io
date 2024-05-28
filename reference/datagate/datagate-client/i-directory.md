@@ -2,7 +2,7 @@
 title: IDirectory interface
 ---
 
-Defines the methods and properties for a DataGate directory.
+Defines the contract for managing a directory in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,7 +13,11 @@ Defines the methods and properties for a DataGate directory.
 In DG implementations of **IDirectory** , instance members are not guaranteed to be thread safe.
 
 ## Remarks
-This interface should be implemented by classes that represent a DataGate directory.
+This interface provides properties and methods to manage a directory in the ASNA DataGate client. 
+It includes properties to get the list of items in the directory, the remote path name of the directory, 
+and the enumerator for the directory. It also provides methods to attach a remote directory, 
+create a subdirectory, enumerate the items in the directory, repair the objects in the directory, 
+and enumerate the items in the directory using specified file types.
 
 <br>
 <br>
@@ -22,23 +26,24 @@ This interface should be implemented by classes that represent a DataGate direct
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | Enumerator | Gets the remote path name of the directory. |
-| [ArrayList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.arraylist?view=net-8.0) | ItemList | Gets the list of items in the directory. |
+| [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | Enumerator | Gets the enumerator for the directory. |
+| [ArrayList](https://learn.microsoft.com/en-us/dotnet/api/system.collections.arraylist?view=net-8.0) | ItemList | Gets the list of items in the directory. This property is obsolete, use 'Items' instead. |
+| [List\<IAdgObject\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | Items | Gets the list of items in the directory. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | RemotePathName | Gets the remote path name of the directory. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [AttachRemoteDirectory](#void-attachremotedirectorystring-remotepathname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attaches the specified remote directory to the current directory.
-| [CreateSubDirectory](#idirectory-createsubdirectorystring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a subdirectory with the specified name in the current directory.
+| [AttachRemoteDirectory](#void-attachremotedirectorystring-remotepathname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attaches a remote directory to the current directory.
+| [CreateSubDirectory](#idirectory-createsubdirectorystring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a subdirectory in the current directory.
 | [Enumerate](#void-enumerateadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the items in the directory using the specified enumerator.
-| [Enumerate](#void-enumerateadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html), [FileTypes](/reference/datagate/datagate-common/file-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enumerates the items in the directory using the specified enumerator.
-| [RepairObjects](#void-repairobjectsrepairoptions-repairoptions-adgobserver-observer)([RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repairs objects in the directory using the specified repair options and observer.
+| [Enumerate](#void-enumerateadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html), [FileTypes](/reference/datagate/datagate-common/file-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enumerates the items in the directory using the specified enumerator and file types.
+| [RepairObjects](#void-repairobjectsrepairoptions-repairoptions-adgobserver-observer)([RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repairs the objects in the directory using the specified repair options and observer.
 
 ### void AttachRemoteDirectory([string remotePathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Attaches the specified remote directory to the current directory.
+Attaches a remote directory to the current directory.
 
 ```cs
 void AttachRemoteDirectory(string remotePathName)
@@ -52,7 +57,7 @@ void AttachRemoteDirectory(string remotePathName)
 
 ### IDirectory CreateSubDirectory([string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Creates a subdirectory with the specified name in the current directory.
+Creates a subdirectory in the current directory.
 
 ```cs
 IDirectory CreateSubDirectory(string Name)
@@ -86,7 +91,7 @@ void Enumerate(AdgEnumerator enumerator)
 
 ### void Enumerate([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
 
-Enumerates the items in the directory using the specified enumerator.
+Enumerates the items in the directory using the specified enumerator and file types.
 
 ```cs
 void Enumerate(AdgEnumerator enumerator)
@@ -94,7 +99,7 @@ void Enumerate(AdgEnumerator enumerator)
 
 ### void RepairObjects([RepairOptions repairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver observer](/reference/datagate/datagate-client/adg-observer.html))
 
-Repairs objects in the directory using the specified repair options and observer.
+Repairs the objects in the directory using the specified repair options and observer.
 
 ```cs
 void RepairObjects(RepairOptions repairOptions, AdgObserver observer)

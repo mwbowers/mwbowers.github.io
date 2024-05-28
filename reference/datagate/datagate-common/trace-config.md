@@ -2,7 +2,7 @@
 title: TraceConfig enum
 ---
 
-Thread related configuration.
+Enumerates the types of trace configurations used in the application.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,5 +13,5 @@ Thread related configuration.
 
 | Name | Description | Value
 | --- | --- | --- 
-| ThreadInfo | CSV data contains thread information if level 1 or greater | 0 |
-| ThreadPriority | logger thread priority :  1 or 0      = lowest priority2           = below normal priority3           = normal priority4 or greater= no logger thread - Trace outputis written in the caller'sthread and flushed afterevery call. | 1 |
+| ThreadInfo | If level is 1 or greater, the CSV data contains thread information. | 0 |
+| ThreadPriority | Sets the logger thread priority. 1 or 0 means lowest priority.2 means below normal priority.3 means normal priority.4 or greater means no logger thread - Trace output is written in the caller's thread and flushed after every call. | 1 |

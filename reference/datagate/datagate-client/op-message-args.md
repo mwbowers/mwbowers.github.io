@@ -2,7 +2,8 @@
 title: OpMessageArgs class
 ---
 
-Copy or export message event arguments.
+Represents the arguments for an operation message event.
+This class is derived from EventArgs and is used to pass a message string with an event.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -35,4 +36,4 @@ OpMessageArgs(String)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Message | Gets the message. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Message | Gets the message associated with the event. |

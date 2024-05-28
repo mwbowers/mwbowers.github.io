@@ -2,7 +2,7 @@
 title: AltDecoder class
 ---
 
-Represents an alternative decoder that extends the base Decoder class.
+Represents a decoder that converts a sequence of encoded bytes into a set of characters. This class is abstract.
 
 **Namespace:** ASNA.DataGate.DataLink.Text
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,4 +15,4 @@ Represents an alternative decoder that extends the base Decoder class.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | TransformProperties | Gets or sets the current custom transform properties associated with thedecoder. By default, this property returns null. |
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | TransformProperties | The current custom transform properties associated with thedecoder. By default, this property returns null. |

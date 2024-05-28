@@ -2,7 +2,7 @@
 title: AuthorityEntry class
 ---
 
-Authority entry.
+The AuthorityEntry class describes a user or group authorization to a database object.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -19,14 +19,14 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [AuthorityEntry()](#authorityentry) | Initializes authority for current user.
-| [AuthorityEntry](#authorityentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes authority for current user.
-| [AuthorityEntry](#authorityentrystring-authoritytypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Initializes authority for a named user.
-| [AuthorityEntry](#authorityentrystring-authoritytypes-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes authority for a named user specifying authority type and group membership.
+| [AuthorityEntry()](#authorityentry) | Initializes a new instance of the  class with default values.
+| [AuthorityEntry](#authorityentrystring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with the specified user-name and default values for other properties.
+| [AuthorityEntry](#authorityentrystring-authoritytypes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Initializes a new instance of the  class with the specified user-name and authority type, and sets the IsGroupAccount property to false.
+| [AuthorityEntry](#authorityentrystring-authoritytypes-boolean)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the  class with the specified user-name, authority type, and group account status.
 
 ### AuthorityEntry()
 
-Initializes authority for current user.
+Initializes a new instance of the  class with default values.
 
 ```cs
 AuthorityEntry()
@@ -34,7 +34,7 @@ AuthorityEntry()
 
 ### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Initializes authority for current user.
+Initializes a new instance of the  class with the specified user-name and default values for other properties.
 
 ```cs
 AuthorityEntry(String)
@@ -48,7 +48,7 @@ AuthorityEntry(String)
 
 ### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html))
 
-Initializes authority for a named user.
+Initializes a new instance of the  class with the specified user-name and authority type, and sets the IsGroupAccount property to false.
 
 ```cs
 AuthorityEntry(String, AuthorityTypes)
@@ -63,7 +63,7 @@ AuthorityEntry(String, AuthorityTypes)
 
 ### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Initializes authority for a named user specifying authority type and group membership.
+Initializes a new instance of the  class with the specified user-name, authority type, and group account status.
 
 ```cs
 AuthorityEntry(String, AuthorityTypes, Boolean)
@@ -81,6 +81,6 @@ AuthorityEntry(String, AuthorityTypes, Boolean)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | AuthorityType | Gets or sets the authority type. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGroupAccount | Gets or sets a value indicating whether the user account is a group account. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Username | Gets or sets the user name. |
+| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | AuthorityType | Gets or sets the type of authority for the authority entry. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsGroupAccount | Gets or sets a value indicating whether the authority entry is for a group account. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Username | Gets or sets the user-name for the authority entry. |

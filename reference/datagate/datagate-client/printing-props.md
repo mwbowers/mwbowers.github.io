@@ -2,7 +2,8 @@
 title: PrintingProps class
 ---
 
-Provides properties related to printing configurations.
+Represents the application settings for printing properties.
+This class is auto-generated and changes may be overwritten.
 
 **Namespace:** ASNA.DataGate.Client.Properties
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,46 +12,26 @@ Provides properties related to printing configurations.
 <br>
 <br>
 
-## Remarks
-This class was automatically generated and contains application settings for printing.
-
-<br>
-<br>
-
-## Constructors
-
-| Name | Description |
-| --- | --- |
-| [PrintingProps()](#printingprops) | 
-
-### PrintingProps()
-
-
-
-```cs
-PrintingProps()
-```
-
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
 | [PrintingProps](/reference/datagate/datagate-client/printing-props.html) | Default | Gets the default instance of the PrintingProps class. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Renderer | Gets the renderer setting for the printing configuration. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | RenderInProc | Gets a value indicating whether rendering should be done in process. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Renderer | Gets the Renderer setting from the application settings. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | RenderInProc | Gets the RenderInProc setting from the application settings. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [GetRendererPath()](#string-getrendererpath) | Gets the renderer path.
-| [IsRendererPathMissing()](#bool-isrendererpathmissing) | Determines if the renderer path is missing.
-| [SetRendererPath](#void-setrendererpathstring-path-configuration-config)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the renderer path in the machine configuration.
-| [SetRendererPathInMachineConfig](#void-setrendererpathinmachineconfigstring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the renderer path in the machine configuration.
+| [GetRendererPath()](#string-getrendererpath) | Retrieves the Renderer path from the application settings.
+| [IsRendererPathMissing()](#bool-isrendererpathmissing) | Checks if the Renderer path is missing in the application settings.
+| [SetRendererPath](#void-setrendererpathstring-path-configuration-config)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0)) | Sets the Renderer path in the specified configuration.
+| [SetRendererPathInMachineConfig](#void-setrendererpathinmachineconfigstring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the Renderer path in the machine configuration.
 
 ### string GetRendererPath()
 
-Gets the renderer path.
+Retrieves the Renderer path from the application settings.
 
 ```cs
 string GetRendererPath()
@@ -58,7 +39,7 @@ string GetRendererPath()
 
 ### bool IsRendererPathMissing()
 
-Determines if the renderer path is missing.
+Checks if the Renderer path is missing in the application settings.
 
 ```cs
 bool IsRendererPathMissing()
@@ -66,7 +47,7 @@ bool IsRendererPathMissing()
 
 ### void SetRendererPath([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Configuration config](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0))
 
-Sets the renderer path in the machine configuration.
+Sets the Renderer path in the specified configuration.
 
 ```cs
 void SetRendererPath(string path, Configuration config)
@@ -81,7 +62,7 @@ void SetRendererPath(string path, Configuration config)
 
 ### void SetRendererPathInMachineConfig([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Sets the renderer path in the machine configuration.
+Sets the Renderer path in the machine configuration.
 
 ```cs
 void SetRendererPathInMachineConfig(string path)

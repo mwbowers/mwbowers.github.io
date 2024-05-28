@@ -11,5 +11,5 @@ The following are the classes and interfaces provided by **ASNA Extensions Confi
 | --- | --- |
 | [AsnaConfig](/reference/datagate/extensions-configuration/asna-config.html) | Represents the ASNA configuration. |
 | [AsnaConfigHelper](/reference/datagate/extensions-configuration/asna-config-helper.html) | Provides helper functions and properties for accessingIAsnaConfig properties encoded in JSON configuration texts. |
-| [DataGateExtensions](/reference/datagate/extensions-configuration/datagate-extensions.html) | Provides extension methods for DataGate configuration. |
-| [RootExtensions](/reference/datagate/extensions-configuration/root-extensions.html) | Provides extension methods for accessing ASNA and DataGate configuration sections. |
+| [DataGateExtensions](/reference/datagate/extensions-configuration/datagate-extensions.html) | Provides extension methods for the DataGate configuration. |
+| [RootExtensions](/reference/datagate/extensions-configuration/root-extensions.html) | Provides extension methods for the root configuration. |

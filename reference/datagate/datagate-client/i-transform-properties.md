@@ -2,7 +2,7 @@
 title: ITransformProperties interface
 ---
 
-Defines the methods and properties for transforming properties in DataGate.
+Defines the contract for managing transform properties in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -12,7 +12,8 @@ Defines the methods and properties for transforming properties in DataGate.
 <br>
 
 ## Remarks
-This interface should be implemented by classes that need to transform properties in DataGate.
+This interface provides a mechanism to manage transform properties in the ASNA DataGate client. 
+It extends the ICloneable interface, which provides a method to create a new object that is a copy of the current instance.
 
 <br>
 <br>

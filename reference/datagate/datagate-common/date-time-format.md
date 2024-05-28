@@ -2,7 +2,7 @@
 title: DateTimeFormat enum
 ---
 
-Enum representing the different date and time formats.
+Specifies the format for a date/time field.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -20,6 +20,6 @@ Enum representing the different date and time formats.
 | JIS | Dates appear as yyyy-mm-dd. Times appear as hh:mm:ss. | 5 |
 | JUL | Dates appear as yy/ddd. | 9 |
 | MDY | Dates appear as mm/dd/yy. | 7 |
-| None | Represents no specific date and time format. | 0 |
+| None | Specifies no format. | 0 |
 | USA | Dates appear as mm/dd/yyyy. Times appear as hh:mm AM or hh:mm PM. | 3 |
 | YMD | Dates appear as yy/mm/dd. | 6 |

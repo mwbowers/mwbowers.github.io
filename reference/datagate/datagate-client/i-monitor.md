@@ -2,7 +2,7 @@
 title: IMonitor interface
 ---
 
-Defines the methods and properties for a DataGate monitor.
+Defines the contract for monitoring resources in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -12,7 +12,10 @@ Defines the methods and properties for a DataGate monitor.
 <br>
 
 ## Remarks
-This interface should be implemented by classes that need to monitor DataGate activities.
+This interface provides properties and methods to monitor resources in the ASNA DataGate client. 
+It includes properties to get the locks held by the monitor, the active clients monitored by the monitor, 
+the open members monitored by the monitor, the connection associated with the monitor, 
+and a value indicating whether the monitor should cache data.
 
 <br>
 <br>
@@ -21,8 +24,8 @@ This interface should be implemented by classes that need to monitor DataGate ac
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IEnumerable\<IClientMonitor\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ActiveClients | Gets the active clients being monitored. |
+| [IEnumerable\<IClientMonitor\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ActiveClients | Gets the active clients monitored by the monitor. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CacheData | Gets or sets a value indicating whether the monitor should cache data. |
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | Connection | Gets the DataGate connection associated with the monitor. |
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | Connection | Gets the connection associated with the monitor. |
 | [IEnumerable\<ILock\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | LocksHeld | Gets the locks held by the monitor. |
-| [IEnumerable\<IPhysicalMember\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | OpenMembers | Gets the connection associated with the monitor. |
+| [IEnumerable\<IPhysicalMember\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | OpenMembers | Gets the open members monitored by the monitor. |

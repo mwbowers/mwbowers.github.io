@@ -2,7 +2,7 @@
 title: AltEncoding class
 ---
 
-Represents an alternative encoding that extends the base Encoding class.
+Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data.
 
 **Namespace:** ASNA.DataGate.DataLink.Text
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,11 +15,11 @@ Represents an alternative encoding that extends the base Encoding class.
 
 | Name | Description |
 | --- | --- |
-| [AltEncoding()](#altencoding) | Initializes a new instance of the  class.
+| [AltEncoding()](#altencoding) | Initializes a new instance of the  class with default encoder and decoder properties.
 
 ### AltEncoding()
 
-Initializes a new instance of the  class.
+Initializes a new instance of the  class with default encoder and decoder properties.
 
 ```cs
 AltEncoding()
@@ -29,31 +29,31 @@ AltEncoding()
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IEnumerable\<AltEncodingInfo\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | AvailableEncodings | Gets the available encodings. |
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | DecoderDefaultProps | Gets or sets the default decoder properties. |
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | EncoderDefaultProps | Gets or sets the default encoder properties. |
+| [IEnumerable\<AltEncodingInfo\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | AvailableEncodings | Gets a list of all available AltEncoding objects. |
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | DecoderDefaultProps | Gets or sets the default properties for the decoder. |
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | EncoderDefaultProps | Gets or sets the default properties for the encoder. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [DictionaryFromITransformProps](#dictionary-string-object-dictionaryfromitransformpropsitransformproperties-props)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Converts transform properties to a dictionary.
-| [Equal](#bool-equalitransformproperties-lhs-itransformproperties-rhs)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Determines whether two transform properties are equal.
-| [GetAltDecoder](#altdecoder-getaltdecoderitransformproperties-decprops)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Gets an alternative decoder with the specified transform properties.
-| [GetAltEncoder](#altencoder-getaltencoderitransformproperties-encprops)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Gets an alternative encoder with the specified transform properties.
-| [GetAltEncoding](#altencoding-getaltencodingstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves an alternative encoding by name.
-| [GetAltEncodingInfo()](#altencodinginfo-getaltencodinginfo) | Gets the alternative encoding information.
-| [GetDecoder()](#decoder-getdecoder) | Gets the default decoder.
-| [GetDecoderImpl()](#altdecoder-getdecoderimpl) | Gets the implementation of the alternative decoder.
-| [GetEncoder()](#encoder-getencoder) | Gets the default encoder.
-| [GetEncoderImpl()](#altencoder-getencoderimpl) | Gets the implementation of the alternative encoder.
-| [TransformPropertiesFromDictionary](#itransformproperties-transformpropertiesfromdictionarydictionary-string-object-dict)([Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts a dictionary to transform properties.
-| [TransformPropertiesFromStream](#itransformproperties-transformpropertiesfromstreambinaryreader-br)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | Converts a binary reader to transform properties.
-| [TransformPropertiesToStream](#void-transformpropertiestostreamitransformproperties-t-binarywriter-bw)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | Converts transform properties to a binary writer.
+| [DictionaryFromITransformProps](#dictionary-string-object-dictionaryfromitransformpropsitransformproperties-props)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Converts the given ITransformProperties object into a dictionary.
+| [Equal](#bool-equalitransformproperties-lhs-itransformproperties-rhs)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Compares two ITransformProperties objects for equality.
+| [GetAltDecoder](#altdecoder-getaltdecoderitransformproperties-decprops)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Returns an AltDecoder object for this AltEncoding, using the specified properties.
+| [GetAltEncoder](#altencoder-getaltencoderitransformproperties-encprops)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html)) | Returns an AltEncoder object for this AltEncoding, using the specified properties.
+| [GetAltEncoding](#altencoding-getaltencodingstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an AltEncoding object for the specified name.
+| [GetAltEncodingInfo()](#altencodinginfo-getaltencodinginfo) | Gets information about the current AltEncoding instance.
+| [GetDecoder()](#decoder-getdecoder) | Returns an AltDecoder object for this AltEncoding, using the default properties.
+| [GetDecoderImpl()](#altdecoder-getdecoderimpl) | When overridden in a derived class, returns an AltDecoder object for this AltEncoding.
+| [GetEncoder()](#encoder-getencoder) | Returns an AltEncoder object for this AltEncoding, using the default properties.
+| [GetEncoderImpl()](#altencoder-getencoderimpl) | When overridden in a derived class, returns an AltEncoder object for this AltEncoding.
+| [TransformPropertiesFromDictionary](#itransformproperties-transformpropertiesfromdictionarydictionary-string-object-dict)([Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the given dictionary into an ITransformProperties object.
+| [TransformPropertiesFromStream](#itransformproperties-transformpropertiesfromstreambinaryreader-br)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | When overridden in a derived class, reads the given BinaryReader stream and converts it into an ITransformProperties object.
+| [TransformPropertiesToStream](#void-transformpropertiestostreamitransformproperties-t-binarywriter-bw)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | When overridden in a derived class, writes the given ITransformProperties object to the specified BinaryWriter stream.
 
 ### Dictionary<string, object> DictionaryFromITransformProps([ITransformProperties props](/reference/datagate/datagate-providers/i-transform-properties.html))
 
-Converts transform properties to a dictionary.
+Converts the given ITransformProperties object into a dictionary.
 
 ```cs
 Dictionary<string, object> DictionaryFromITransformProps(ITransformProperties props)
@@ -69,11 +69,11 @@ Dictionary<string, object> DictionaryFromITransformProps(ITransformProperties pr
 
 | Type | Description
 | --- | ---
-| [Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) | The dictionary.
+| [Dictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) | A dictionary representing the properties of the given ITransformProperties object.
 
 ### bool Equal([ITransformProperties lhs](/reference/datagate/datagate-providers/i-transform-properties.html), [ITransformProperties rhs](/reference/datagate/datagate-providers/i-transform-properties.html))
 
-Determines whether two transform properties are equal.
+Compares two ITransformProperties objects for equality.
 
 ```cs
 bool Equal(ITransformProperties lhs, ITransformProperties rhs)
@@ -90,11 +90,11 @@ bool Equal(ITransformProperties lhs, ITransformProperties rhs)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the transform properties are equal; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the two ITransformProperties objects are equal; otherwise, false.
 
 ### AltDecoder GetAltDecoder([ITransformProperties decProps](/reference/datagate/datagate-providers/i-transform-properties.html))
 
-Gets an alternative decoder with the specified transform properties.
+Returns an AltDecoder object for this AltEncoding, using the specified properties.
 
 ```cs
 AltDecoder GetAltDecoder(ITransformProperties decProps)
@@ -110,11 +110,11 @@ AltDecoder GetAltDecoder(ITransformProperties decProps)
 
 | Type | Description
 | --- | ---
-| [AltDecoder](/reference/datagate/datagate-data-link/alt-decoder.html) | The alternative decoder.
+| [AltDecoder](/reference/datagate/datagate-data-link/alt-decoder.html) | An AltDecoder object for this AltEncoding, using the specified properties.
 
 ### AltEncoder GetAltEncoder([ITransformProperties encProps](/reference/datagate/datagate-providers/i-transform-properties.html))
 
-Gets an alternative encoder with the specified transform properties.
+Returns an AltEncoder object for this AltEncoding, using the specified properties.
 
 ```cs
 AltEncoder GetAltEncoder(ITransformProperties encProps)
@@ -130,11 +130,11 @@ AltEncoder GetAltEncoder(ITransformProperties encProps)
 
 | Type | Description
 | --- | ---
-| [AltEncoder](/reference/datagate/datagate-data-link/alt-encoder.html) | The alternative encoder.
+| [AltEncoder](/reference/datagate/datagate-data-link/alt-encoder.html) | An AltEncoder object for this AltEncoding, using the specified properties.
 
 ### AltEncoding GetAltEncoding([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Retrieves an alternative encoding by name.
+Returns an AltEncoding object for the specified name.
 
 ```cs
 AltEncoding GetAltEncoding(string name)
@@ -150,11 +150,11 @@ AltEncoding GetAltEncoding(string name)
 
 | Type | Description
 | --- | ---
-| [AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html) | The alternative encoding.
+| [AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html) | An AltEncoding object for the specified name.
 
 ### AltEncodingInfo GetAltEncodingInfo()
 
-Gets the alternative encoding information.
+Gets information about the current AltEncoding instance.
 
 ```cs
 AltEncodingInfo GetAltEncodingInfo()
@@ -162,7 +162,7 @@ AltEncodingInfo GetAltEncodingInfo()
 
 ### Decoder GetDecoder()
 
-Gets the default decoder.
+Returns an AltDecoder object for this AltEncoding, using the default properties.
 
 ```cs
 Decoder GetDecoder()
@@ -170,7 +170,7 @@ Decoder GetDecoder()
 
 ### AltDecoder GetDecoderImpl()
 
-Gets the implementation of the alternative decoder.
+When overridden in a derived class, returns an AltDecoder object for this AltEncoding.
 
 ```cs
 AltDecoder GetDecoderImpl()
@@ -178,7 +178,7 @@ AltDecoder GetDecoderImpl()
 
 ### Encoder GetEncoder()
 
-Gets the default encoder.
+Returns an AltEncoder object for this AltEncoding, using the default properties.
 
 ```cs
 Encoder GetEncoder()
@@ -186,7 +186,7 @@ Encoder GetEncoder()
 
 ### AltEncoder GetEncoderImpl()
 
-Gets the implementation of the alternative encoder.
+When overridden in a derived class, returns an AltEncoder object for this AltEncoding.
 
 ```cs
 AltEncoder GetEncoderImpl()
@@ -194,7 +194,7 @@ AltEncoder GetEncoderImpl()
 
 ### ITransformProperties TransformPropertiesFromDictionary([Dictionary\<string, object\> dict](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0))
 
-Converts a dictionary to transform properties.
+Converts the given dictionary into an ITransformProperties object.
 
 ```cs
 ITransformProperties TransformPropertiesFromDictionary(Dictionary<string, object> dict)
@@ -202,7 +202,7 @@ ITransformProperties TransformPropertiesFromDictionary(Dictionary<string, object
 
 ### ITransformProperties TransformPropertiesFromStream([BinaryReader br](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0))
 
-Converts a binary reader to transform properties.
+When overridden in a derived class, reads the given BinaryReader stream and converts it into an ITransformProperties object.
 
 ```cs
 ITransformProperties TransformPropertiesFromStream(BinaryReader br)
@@ -218,11 +218,11 @@ ITransformProperties TransformPropertiesFromStream(BinaryReader br)
 
 | Type | Description
 | --- | ---
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | The transform properties.
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | An ITransformProperties object representing the properties read from the stream.
 
 ### void TransformPropertiesToStream([ITransformProperties t](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter bw](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0))
 
-Converts transform properties to a binary writer.
+When overridden in a derived class, writes the given ITransformProperties object to the specified BinaryWriter stream.
 
 ```cs
 void TransformPropertiesToStream(ITransformProperties t, BinaryWriter bw)

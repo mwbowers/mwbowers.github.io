@@ -2,7 +2,7 @@
 title: PaperOrientation enum
 ---
 
-Enum representing the different orientations of paper.
+Specifies the orientation of the paper.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,5 +13,5 @@ Enum representing the different orientations of paper.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Landscape | Represents landscape orientation. | 2 |
-| Portrait | Represents portrait orientation. | 1 |
+| Landscape | Specifies landscape orientation. | 2 |
+| Portrait | Specifies portrait orientation. | 1 |

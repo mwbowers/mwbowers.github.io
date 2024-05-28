@@ -2,10 +2,21 @@
 title: RemoveBlankOption enum
 ---
 
-Copy data remove blank options.
+Specifies the options for removing blank spaces from a string.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
+<br>
+<br>
+
+## Remarks
+This enumeration is used to control how blank spaces are removed from a string.
+The options are:
+- None: No blank spaces are removed.
+- Leading: Only the blank spaces at the start of the string are removed.
+- Trailing: Only the blank spaces at the end of the string are removed.
+- Both: Both the blank spaces at the start and the end of the string are removed.
+
 <br>
 <br>
 
@@ -13,7 +24,7 @@ Copy data remove blank options.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Both | Remove both leading and trailing blanks. | 3 |
-| Leading | Remove leading blanks. | 1 |
-| None | Do not remove blanks. | 0 |
-| Trailing | Remove trailing blanks. | 2 |
+| Both | Both the blank spaces at the start and the end of the string are removed. | 3 |
+| Leading | Only the blank spaces at the start of the string are removed. | 1 |
+| None | No blank spaces are removed. | 0 |
+| Trailing | Only the blank spaces at the end of the string are removed. | 2 |

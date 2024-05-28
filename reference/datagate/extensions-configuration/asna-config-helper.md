@@ -12,20 +12,6 @@ IAsnaConfig properties encoded in JSON configuration texts.
 <br>
 <br>
 
-## Constructors
-
-| Name | Description |
-| --- | --- |
-| [AsnaConfigHelper()](#asnaconfighelper) | 
-
-### AsnaConfigHelper()
-
-
-
-```cs
-AsnaConfigHelper()
-```
-
 ## Properties
 
 | Type | Name | Description

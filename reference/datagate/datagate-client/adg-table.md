@@ -2,7 +2,7 @@
 title: AdgTable class
 ---
 
-DataGate Table.
+The AdgTable class supports DG infrastructure and is not intended to be used directly from your code.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,11 +15,11 @@ DataGate Table.
 
 | Name | Description |
 | --- | --- |
-| [AdgTable](#adgtabledatatable-adgdataset)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Initializes a new instance using the data table given.
+| [AdgTable](#adgtabledatatable-adgdataset)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Initializes a new instance of the  class with a specified DataTable and parent AdgDataSet.
 
 ### AdgTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html))
 
-Initializes a new instance using the data table given.
+Initializes a new instance of the  class with a specified DataTable and parent AdgDataSet.
 
 ```cs
 AdgTable(DataTable, AdgDataSet)
@@ -36,18 +36,18 @@ AdgTable(DataTable, AdgDataSet)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | DataTable | Gets the DataTable associated with the AdgTable. |
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | Row | Gets or sets the current DataRow in the AdgTable. |
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | DataTable | Gets the DataTable associated with this instance of the AdgTable. |
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | Row | Gets the current active DataRow in the AdgTable. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [SetRowDefaultValues](#void-setrowdefaultvaluesdatarow-row)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Set row default values.
+| [SetRowDefaultValues](#void-setrowdefaultvaluesdatarow-row)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Sets the default values for each column in the provided DataRow.
 
 ### void SetRowDefaultValues([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 
-Set row default values.
+Sets the default values for each column in the provided DataRow.
 
 ```cs
 void SetRowDefaultValues(DataRow row)

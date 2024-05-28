@@ -1,8 +1,8 @@
 ---
-title: InvariateCultureTypeConverter class
+title: InvariantCultureTypeConverter class
 ---
 
-Provides a type converter to convert object types to and from string representations using invariant culture.
+Provides a type converter to convert object types to and from string representations, using the invariant culture.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,18 +11,25 @@ Provides a type converter to convert object types to and from string representat
 <br>
 <br>
 
+## Remarks
+This class is a wrapper around a  instance, and overrides its methods to ensure that all conversions are performed using the invariant culture.
+This is useful when you need to ensure that type conversions are not affected by the current culture settings of the system.
+
+<br>
+<br>
+
 ## Constructors
 
 | Name | Description |
 | --- | --- |
-| [InvariateCultureTypeConverter](#invariateculturetypeconvertertypeconverter)([TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0)) | Initializes a new instance of the  class.
+| [InvariantCultureTypeConverter](#invariantculturetypeconvertertypeconverter)([TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0)) | Initializes a new instance of the  class.
 
-### InvariateCultureTypeConverter([TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0))
+### InvariantCultureTypeConverter([TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0))
 
 Initializes a new instance of the  class.
 
 ```cs
-InvariateCultureTypeConverter(TypeConverter)
+InvariantCultureTypeConverter(TypeConverter)
 ```
 
 #### Parameters
@@ -31,34 +38,29 @@ InvariateCultureTypeConverter(TypeConverter)
 | --- | --- | ---
 | [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) | inner | 
 
-## Properties
-
-| Type | Name | Description
-| --- | --- | --- 
-
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [CanConvertFrom](#bool-canconvertfromitypedescriptorcontext-context-type-sourcetype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Returns whether this converter can convert an object of the given type to the type of this converter, using the specified context.
-| [CanConvertTo](#bool-canconverttoitypedescriptorcontext-context-type-destinationtype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Returns whether this converter can convert an object of its type to a specified type, using the specified context.
+| [CanConvertFrom](#bool-canconvertfromitypedescriptorcontext-context-type-sourcetype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Returns whether this converter can convert an object of the given type to the type of this converter, using the invariant culture.
+| [CanConvertTo](#bool-canconverttoitypedescriptorcontext-context-type-destinationtype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Returns whether this converter can convert an object of this converter's type to the specified type, using the invariant culture.
 | [ConvertFrom](#object-convertfromitypedescriptorcontext-context-cultureinfo-culture-object-value)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the given value object to the type of this converter, using the invariant culture.
 | [ConvertTo](#object-converttoitypedescriptorcontext-context-cultureinfo-culture-object-value-type-destinationtype)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the given value object to the specified type, using the invariant culture.
-| [CreateInstance](#object-createinstanceitypedescriptorcontext-context-idictionary-propertyvalues)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)) | Creates an instance of the type that this TypeConverter is associated with, using the specified context and the set of property values.
-| [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.
-| [GetCreateInstanceSupported](#bool-getcreateinstancesupporteditypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether changing a value on this object requires a call to the CreateInstance method to create a new value.
-| [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
+| [CreateInstance](#object-createinstanceitypedescriptorcontext-context-idictionary-propertyvalues)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2)) | Creates an instance of the type that this  is associated with, using the specified context and the set of property values.
+| [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object, using the wrapped converter's Equals method.
+| [GetCreateInstanceSupported](#bool-getcreateinstancesupporteditypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether changing a value on this object requires a call to the  method to create a new value.
+| [GetHashCode()](#int-gethashcode) | Serves as the default hash function, using the wrapped converter's GetHashCode method.
 | [GetProperties](#propertydescriptorcollection-getpropertiesitypedescriptorcontext-context-object-value-attribute--attributes)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute)) | Returns a collection of properties for the type of array specified by the value parameter, using the specified context and attributes.
-| [GetPropertiesSupported](#bool-getpropertiessupporteditypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether this object supports properties, using the specified context.
+| [GetPropertiesSupported](#bool-getpropertiessupporteditypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether this object supports properties, using the wrapped converter's method.
 | [GetStandardValues](#standardvaluescollection-getstandardvaluesitypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns a collection of standard values for the data type this type converter is designed for when provided with a format context.
-| [GetStandardValuesExclusive](#bool-getstandardvaluesexclusiveitypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether the collection of standard values returned from GetStandardValues is an exclusive list of possible values, using the specified context.
-| [GetStandardValuesSupported](#bool-getstandardvaluessupporteditypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether this object supports a standard set of values that can be picked from a list, using the specified context.
-| [IsValid](#bool-isvaliditypedescriptorcontext-context-object-value)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Returns whether the given value object is valid for this type and for the specified context.
-| [ToString()](#string-tostring) | Returns a string that represents the current object.
+| [GetStandardValuesExclusive](#bool-getstandardvaluesexclusiveitypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether the collection of standard values returned from  is an exclusive list of possible values, using the wrapped converter's method.
+| [GetStandardValuesSupported](#bool-getstandardvaluessupporteditypedescriptorcontext-context)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0)) | Returns whether this object supports a standard set of values that can be picked from a list, using the wrapped converter's method.
+| [IsValid](#bool-isvaliditypedescriptorcontext-context-object-value)([ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Returns whether the given value object is valid for this type and for the specified context, using the wrapped converter's method.
+| [ToString()](#string-tostring) | Returns a string that represents the current object, using the wrapped converter's ToString method.
 
 ### bool CanConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type sourceType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
-Returns whether this converter can convert an object of the given type to the type of this converter, using the specified context.
+Returns whether this converter can convert an object of the given type to the type of this converter, using the invariant culture.
 
 ```cs
 bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
@@ -75,11 +77,11 @@ bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if this converter can perform the conversion; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether the converter can perform the conversion.
 
 ### bool CanConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
-Returns whether this converter can convert an object of its type to a specified type, using the specified context.
+Returns whether this converter can convert an object of this converter's type to the specified type, using the invariant culture.
 
 ```cs
 bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
@@ -96,7 +98,7 @@ bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if this converter can perform the conversion; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether the converter can perform the conversion.
 
 ### object ConvertFrom([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -118,7 +120,7 @@ object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object v
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object that represents the converted value.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An  that represents the converted value.
 
 ### object ConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
@@ -141,11 +143,11 @@ object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object val
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object that represents the converted value.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An  that represents the converted value.
 
 ### object CreateInstance([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [IDictionary propertyValues](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2))
 
-Creates an instance of the type that this TypeConverter is associated with, using the specified context and the set of property values.
+Creates an instance of the type that this  is associated with, using the specified context and the set of property values.
 
 ```cs
 object CreateInstance(ITypeDescriptorContext context, IDictionary propertyValues)
@@ -162,11 +164,11 @@ object CreateInstance(ITypeDescriptorContext context, IDictionary propertyValues
 
 | Type | Description
 | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An Object representing the given IDictionary, or null if the object cannot be created.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An  that represents the created instance.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Determines whether the specified object is equal to the current object.
+Determines whether the specified object is equal to the current object, using the wrapped converter's Equals method.
 
 ```cs
 bool Equals(object obj)
@@ -182,11 +184,11 @@ bool Equals(object obj)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is equal to the current object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether the specified object is equal to the current object.
 
 ### bool GetCreateInstanceSupported([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
-Returns whether changing a value on this object requires a call to the CreateInstance method to create a new value.
+Returns whether changing a value on this object requires a call to the  method to create a new value.
 
 ```cs
 bool GetCreateInstanceSupported(ITypeDescriptorContext context)
@@ -202,11 +204,11 @@ bool GetCreateInstanceSupported(ITypeDescriptorContext context)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if changing a property on this object requires a call to CreateInstance to create a new value; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether changing a value on this object requires a call to  to create a new value.
 
 ### int GetHashCode()
 
-Serves as the default hash function.
+Serves as the default hash function, using the wrapped converter's GetHashCode method.
 
 ```cs
 int GetHashCode()
@@ -232,11 +234,11 @@ PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, objec
 
 | Type | Description
 | --- | ---
-| [PropertyDescriptorCollection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertydescriptorcollection?view=net-8.0) | A PropertyDescriptorCollection with the properties that are exposed for this data type, or null if there are no properties.
+| [PropertyDescriptorCollection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertydescriptorcollection?view=net-8.0) | A  with the properties that are exposed for this data type, or null if there are no properties.
 
 ### bool GetPropertiesSupported([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
-Returns whether this object supports properties, using the specified context.
+Returns whether this object supports properties, using the wrapped converter's method.
 
 ```cs
 bool GetPropertiesSupported(ITypeDescriptorContext context)
@@ -252,7 +254,7 @@ bool GetPropertiesSupported(ITypeDescriptorContext context)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if GetProperties should be called to find the properties of this object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether this object supports properties.
 
 ### StandardValuesCollection GetStandardValues([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
@@ -272,11 +274,11 @@ StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
 
 | Type | Description
 | --- | ---
-| [StandardValuesCollection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter.standardvaluescollection.item?view=net-8.0) | A StandardValuesCollection that holds a standard set of valid values, or null if the data type does not support a standard set of values.
+| [StandardValuesCollection](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter.standardvaluescollection.item?view=net-8.0) | A  that holds a standard set of valid values, or null if the data type does not support a standard set of values.
 
 ### bool GetStandardValuesExclusive([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
-Returns whether the collection of standard values returned from GetStandardValues is an exclusive list of possible values, using the specified context.
+Returns whether the collection of standard values returned from  is an exclusive list of possible values, using the wrapped converter's method.
 
 ```cs
 bool GetStandardValuesExclusive(ITypeDescriptorContext context)
@@ -292,11 +294,11 @@ bool GetStandardValuesExclusive(ITypeDescriptorContext context)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the GetStandardValues method returns a definitive set of values for the data type; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether the collection of standard values is an exclusive list.
 
 ### bool GetStandardValuesSupported([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
-Returns whether this object supports a standard set of values that can be picked from a list, using the specified context.
+Returns whether this object supports a standard set of values that can be picked from a list, using the wrapped converter's method.
 
 ```cs
 bool GetStandardValuesSupported(ITypeDescriptorContext context)
@@ -312,11 +314,11 @@ bool GetStandardValuesSupported(ITypeDescriptorContext context)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if GetStandardValues should be called to find a common set of values the object supports; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether this object supports a standard set of values that can be picked from a list.
 
 ### bool IsValid([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
-Returns whether the given value object is valid for this type and for the specified context.
+Returns whether the given value object is valid for this type and for the specified context, using the wrapped converter's method.
 
 ```cs
 bool IsValid(ITypeDescriptorContext context, object value)
@@ -333,11 +335,11 @@ bool IsValid(ITypeDescriptorContext context, object value)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified value is valid for this object; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | A boolean value that represents whether the specified object value is valid for this type and for the specified context.
 
 ### string ToString()
 
-Returns a string that represents the current object.
+Returns a string that represents the current object, using the wrapped converter's ToString method.
 
 ```cs
 string ToString()

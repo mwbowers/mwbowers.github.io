@@ -2,7 +2,7 @@
 title: ExportAccessMode enum
 ---
 
-Copy data ExportAccessMode enumeration.
+Enumeration for defining the access mode for data export.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,6 +13,6 @@ Copy data ExportAccessMode enumeration.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Key | Keyed export access mode. | 1 |
-| Query | Queried export access mode. | 2 |
-| RRN | Relative-record- number export access mode. | 0 |
+| Key | Represents the Key access mode. | 1 |
+| Query | Represents the Query access mode. | 2 |
+| RRN | Represents the Relative Record Number (RRN) access mode. | 0 |

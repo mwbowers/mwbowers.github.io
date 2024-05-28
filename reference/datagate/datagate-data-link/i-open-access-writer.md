@@ -2,7 +2,7 @@
 title: IOpenAccessWriter interface
 ---
 
-Defines methods for writing to an open access data stream.
+Defines methods for writing data to an open access channel.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,14 +15,14 @@ Defines methods for writing to an open access data stream.
 
 | Signature | Description |
 | --- | --- |
-| [Flush()](#void-flush) | Flushes the data stream, ensuring all buffered data is written.
-| [Prepare()](#void-prepare) | Prepares the data stream for writing.
-| [Write](#void-writebyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the data stream.
-| [WriteByte](#void-writebytebyte-b)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Writes a single byte to the data stream.
+| [Flush()](#void-flush) | Flushes the writer, sending any buffered data to the channel.
+| [Prepare()](#void-prepare) | Prepares the writer for a new write operation.
+| [Write](#void-writebyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the channel from the specified buffer.
+| [WriteByte](#void-writebytebyte-b)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Writes a single byte to the channel.
 
 ### void Flush()
 
-Flushes the data stream, ensuring all buffered data is written.
+Flushes the writer, sending any buffered data to the channel.
 
 ```cs
 void Flush()
@@ -30,7 +30,7 @@ void Flush()
 
 ### void Prepare()
 
-Prepares the data stream for writing.
+Prepares the writer for a new write operation.
 
 ```cs
 void Prepare()
@@ -38,7 +38,7 @@ void Prepare()
 
 ### void Write([Byte\[\] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Writes a sequence of bytes to the data stream.
+Writes a sequence of bytes to the channel from the specified buffer.
 
 ```cs
 void Write(Byte[] inBuf, int iBegin, int cBytes)
@@ -54,7 +54,7 @@ void Write(Byte[] inBuf, int iBegin, int cBytes)
 
 ### void WriteByte([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 
-Writes a single byte to the data stream.
+Writes a single byte to the channel.
 
 ```cs
 void WriteByte(byte b)

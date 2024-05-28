@@ -2,7 +2,7 @@
 title: InspectFileOutput enum
 ---
 
-Enum representing the different output formats for file inspection.
+Specifies the output format for a file inspection.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,7 +13,7 @@ Enum representing the different output formats for file inspection.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Ascii | Represents ASCII output format. | 1 |
-| Ebcdic | Represents EBCDIC output format. | 2 |
-| Hex | Represents hexadecimal output format. | 3 |
-| None | Represents a state where no output format is set. | 0 |
+| Ascii | Specifies ASCII output format. | 1 |
+| Ebcdic | Specifies EBCDIC output format. | 2 |
+| Hex | Specifies hexadecimal output format. | 3 |
+| None | Specifies no output format. | 0 |

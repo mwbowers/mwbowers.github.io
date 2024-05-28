@@ -2,7 +2,7 @@
 title: DataGateCredentialEqualityComparer class
 ---
 
-Provides a comparer for IDataGateCredential objects.
+Provides a comparer for IDataGateCredential objects, which supports equality comparisons.
 
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,6 +15,7 @@ Provides a comparer for IDataGateCredential objects.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [DataGateCredentialEqualityComparer](/reference/datagate/datagate-providers/datagate-credential-equality-comparer.html) | Default | Gets the default instance of the DataGateCredentialEqualityComparer class. |
 
 ## Methods
 
@@ -42,7 +43,7 @@ bool Equals(IDataGateCredential x, IDataGateCredential y)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified IDataGateCredential objects are equal; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the specified IDataGateCredential objects are equal; otherwise, false.
 
 ### int GetHashCode([IDataGateCredential obj](/reference/datagate/datagate-providers/i-datagate-credential.html))
 

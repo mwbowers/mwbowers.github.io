@@ -2,7 +2,8 @@
 title: ExportOptions class
 ---
 
-Abstract class that provides a base for different types of export options in the context of data export. It contains properties and methods that are common to all types of export options
+Provides methods for exporting data to XML or CSV formats.
+This class includes functionality for transforming data using XSLT, logging, and handling cancellation tokens.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,29 +16,9 @@ Abstract class that provides a base for different types of export options in the
 
 | Type | Name | Description
 | --- | --- | --- 
-| [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html) | AccessPath | Gets or sets the access mode for the export operation. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DetailedFeedback | Gets or sets a value indicating whether to include names in the exported data. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | QueryExpression | Gets or sets the query expression to be used if the AccessPath is set to Query. |
-| [IDictionary\<String, KeyUsages\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | QueryKeys | Gets or sets the dictionary of query keys to be used if the AccessPath is set to Query. |
-| [IMember](/reference/datagate/datagate-client/i-member.html) | SourceData | Source data. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TargetPath | Target data. |
-
-## Methods
-
-| Signature | Description |
-| --- | --- |
-| [RaiseLogMessage](#void-raiselogmessagestring-message)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Raises the LogMessageEvent.
-
-### void RaiseLogMessage([string message](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Raises the LogMessageEvent.
-
-```cs
-void RaiseLogMessage(string message)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
+| [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html) | AccessPath | Gets or sets the access mode for data export. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DetailedFeedback | Gets or sets a value indicating whether detailed feedback is enabled. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | QueryExpression | Gets or sets the query expression to be used for data export. |
+| [IDictionary\<String, KeyUsages\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | QueryKeys | Gets the query keys to be used for data export. |
+| [IMember](/reference/datagate/datagate-client/i-member.html) | SourceData | Gets or sets the source data to be exported. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TargetPath | Gets or sets the target path where the data will be exported. |

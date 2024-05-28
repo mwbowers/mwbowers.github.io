@@ -2,7 +2,7 @@
 title: PrintTrueType enum
 ---
 
-Enum representing the different modes of printing TrueType fonts.
+Specifies the handling of TrueType fonts during printing.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,6 +13,6 @@ Enum representing the different modes of printing TrueType fonts.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Bitmap | Represents a mode where TrueType fonts are printed as graphics. | 1 |
-| Download | Represents a mode where TrueType fonts are downloaded as soft fonts. | 2 |
-| Subdev | Represents a mode where device fonts are substituted for TrueType fonts. | 3 |
+| Bitmap | Print TrueType fonts as graphics. | 1 |
+| Download | Download TrueType fonts as soft fonts. | 2 |
+| Subdev | Substitute device fonts for TrueType fonts. | 3 |

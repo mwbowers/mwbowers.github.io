@@ -2,8 +2,8 @@
 title: ClrStringHelpers class
 ---
 
-Provides extension methods for .NET string functions with specific string comparison rules.
-These methods offer abstractions for .NET string functions peculiar to the .NET Core platform (and suggested by CA).
+This class offers some abstractions for .NET string functions peculiar
+to the net core platform (and suggested by CA).
 
 **Namespace:** ASNA.DataGate.Common.Util
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -16,22 +16,22 @@ These methods offer abstractions for .NET string functions peculiar to the .NET 
 
 | Signature | Description |
 | --- | --- |
-| [ContainsInvariantIgnoreCase](#bool-containsinvariantignorecasestring-this-string-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether a string is in this string, using InvariantCultureIgnoreCase string comparison.
-| [ContainsOrdinal](#bool-containsordinalstring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Determines whether a character is in this string, using Ordinal string comparison.
-| [ContainsOrdinal](#bool-containsordinalstring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether a string is in this string, using Ordinal string comparison.
-| [ContainsOrdinalIgnoreCase](#bool-containsordinalignorecasestring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Determines whether a character is in this string, using OrdinalIgnoreCase string comparison.
-| [ContainsOrdinalIgnoreCase](#bool-containsordinalignorecasestring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether a string is in this string, using OrdinalIgnoreCase string comparison.
-| [GetHashCodeCurrentCultureIgnoreCase](#int-gethashcodecurrentcultureignorecasestring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string with CurrentCultureIgnoreCase string comparison.
-| [GetHashCodeInvariantCultureIgnoreCase](#int-gethashcodeinvariantcultureignorecasestring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string with InvariantCultureIgnoreCase string comparison.
-| [GetHashCodeOrdinal](#int-gethashcodeordinalstring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string with Ordinal string comparison.
-| [GetHashCodeOrdinalIgnoreCase](#int-gethashcodeordinalignorecasestring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string with OrdinalIgnoreCase string comparison.
-| [IndexOfOrdinal](#int-indexofordinalstring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Reports the zero-based index of the first occurrence of the specified character in this string, using Ordinal string comparison.
-| [ReplaceOrdinal](#string-replaceordinalstring-this-string-oldvalue-string-newvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Replaces all occurrences of a specified string in this string with another specified string, using Ordinal string comparison.
-| [ReplaceOrdinalIgnoreCase](#string-replaceordinalignorecasestring-this-string-oldvalue-string-newvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Replaces all occurrences of a specified string in this string with another specified string, using OrdinalIgnoreCase string comparison.
+| [ContainsInvariantIgnoreCase](#bool-containsinvariantignorecasestring-this-string-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether a string is in the current string, using invariant culture and ignoring case.
+| [ContainsOrdinal](#bool-containsordinalstring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Determines whether a character is in the current string, using ordinal comparison.
+| [ContainsOrdinal](#bool-containsordinalstring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether a string is in the current string, using ordinal comparison.
+| [ContainsOrdinalIgnoreCase](#bool-containsordinalignorecasestring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Determines whether a character is in the current string, using ordinal comparison and ignoring case.
+| [ContainsOrdinalIgnoreCase](#bool-containsordinalignorecasestring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether a string is in the current string, using invariant culture and ignoring case.
+| [GetHashCodeCurrentCultureIgnoreCase](#int-gethashcodecurrentcultureignorecasestring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string using the current culture and ignoring case.
+| [GetHashCodeInvariantCultureIgnoreCase](#int-gethashcodeinvariantcultureignorecasestring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string using the invariant culture and ignoring case.
+| [GetHashCodeOrdinal](#int-gethashcodeordinalstring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string using the specified string comparison.
+| [GetHashCodeOrdinalIgnoreCase](#int-gethashcodeordinalignorecasestring-this)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the hash code for this string using the specified string comparison, ignoring case.
+| [IndexOfOrdinal](#int-indexofordinalstring-this-char-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Reports the zero-based index of the first occurrence of the specified character in the current string, using ordinal comparison.
+| [ReplaceOrdinal](#string-replaceordinalstring-this-string-oldvalue-string-newvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string, using ordinal comparison.
+| [ReplaceOrdinalIgnoreCase](#string-replaceordinalignorecasestring-this-string-oldvalue-string-newvalue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string, using ordinal comparison and ignoring case.
 
 ### bool ContainsInvariantIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Determines whether a string is in this string, using InvariantCultureIgnoreCase string comparison.
+Determines whether a string is in the current string, using invariant culture and ignoring case.
 
 ```cs
 bool ContainsInvariantIgnoreCase(string This, string value)
@@ -48,11 +48,11 @@ bool ContainsInvariantIgnoreCase(string This, string value)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string, or if value is the empty string (""); otherwise, false.
 
 ### bool ContainsOrdinal([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
 
-Determines whether a character is in this string, using Ordinal string comparison.
+Determines whether a character is in the current string, using ordinal comparison.
 
 ```cs
 bool ContainsOrdinal(string This, char value)
@@ -69,11 +69,11 @@ bool ContainsOrdinal(string This, char value)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string, or if value is the empty string (""); otherwise, false.
 
 ### bool ContainsOrdinal([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
 
-Determines whether a string is in this string, using Ordinal string comparison.
+Determines whether a string is in the current string, using ordinal comparison.
 
 ```cs
 bool ContainsOrdinal(string This, char value)
@@ -90,11 +90,11 @@ bool ContainsOrdinal(string This, char value)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string, or if value is the empty string (""); otherwise, false.
 
 ### bool ContainsOrdinalIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
 
-Determines whether a character is in this string, using OrdinalIgnoreCase string comparison.
+Determines whether a character is in the current string, using ordinal comparison and ignoring case.
 
 ```cs
 bool ContainsOrdinalIgnoreCase(string This, char value)
@@ -111,11 +111,11 @@ bool ContainsOrdinalIgnoreCase(string This, char value)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string, or if value is the empty string (""); otherwise, false.
 
 ### bool ContainsOrdinalIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
 
-Determines whether a string is in this string, using OrdinalIgnoreCase string comparison.
+Determines whether a string is in the current string, using invariant culture and ignoring case.
 
 ```cs
 bool ContainsOrdinalIgnoreCase(string This, char value)
@@ -132,11 +132,11 @@ bool ContainsOrdinalIgnoreCase(string This, char value)
 
 | Type | Description
 | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string; otherwise, false.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the value parameter occurs within this string, or if value is the empty string (""); otherwise, false.
 
 ### int GetHashCodeCurrentCultureIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Gets the hash code for this string with CurrentCultureIgnoreCase string comparison.
+Gets the hash code for this string using the current culture and ignoring case.
 
 ```cs
 int GetHashCodeCurrentCultureIgnoreCase(string This)
@@ -152,11 +152,11 @@ int GetHashCodeCurrentCultureIgnoreCase(string This)
 
 | Type | Description
 | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The hash code for this string.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The hash code for this string, using the current culture and ignoring case.
 
 ### int GetHashCodeInvariantCultureIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Gets the hash code for this string with InvariantCultureIgnoreCase string comparison.
+Gets the hash code for this string using the invariant culture and ignoring case.
 
 ```cs
 int GetHashCodeInvariantCultureIgnoreCase(string This)
@@ -172,11 +172,11 @@ int GetHashCodeInvariantCultureIgnoreCase(string This)
 
 | Type | Description
 | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The hash code for this string.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The hash code for this string, using the invariant culture and ignoring case.
 
 ### int GetHashCodeOrdinal([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Gets the hash code for this string with Ordinal string comparison.
+Gets the hash code for this string using the specified string comparison.
 
 ```cs
 int GetHashCodeOrdinal(string This)
@@ -196,7 +196,7 @@ int GetHashCodeOrdinal(string This)
 
 ### int GetHashCodeOrdinalIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Gets the hash code for this string with OrdinalIgnoreCase string comparison.
+Gets the hash code for this string using the specified string comparison, ignoring case.
 
 ```cs
 int GetHashCodeOrdinalIgnoreCase(string This)
@@ -212,11 +212,11 @@ int GetHashCodeOrdinalIgnoreCase(string This)
 
 | Type | Description
 | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The hash code for this string.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The hash code for this string, ignoring case.
 
 ### int IndexOfOrdinal([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
 
-Reports the zero-based index of the first occurrence of the specified character in this string, using Ordinal string comparison.
+Reports the zero-based index of the first occurrence of the specified character in the current string, using ordinal comparison.
 
 ```cs
 int IndexOfOrdinal(string This, char value)
@@ -237,7 +237,7 @@ int IndexOfOrdinal(string This, char value)
 
 ### string ReplaceOrdinal([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string oldValue](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string newValue](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Replaces all occurrences of a specified string in this string with another specified string, using Ordinal string comparison.
+Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string, using ordinal comparison.
 
 ```cs
 string ReplaceOrdinal(string This, string oldValue, string newValue)
@@ -255,11 +255,11 @@ string ReplaceOrdinal(string This, string oldValue, string newValue)
 
 | Type | Description
 | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A string that is equivalent to the current string except that all instances of oldValue are replaced with newValue.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A string that is equivalent to the current string except that all instances of oldValue are replaced with newValue. If oldValue is not found in the current instance, the method returns the current instance unchanged.
 
 ### string ReplaceOrdinalIgnoreCase([string This](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string oldValue](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string newValue](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Replaces all occurrences of a specified string in this string with another specified string, using OrdinalIgnoreCase string comparison.
+Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string, using ordinal comparison and ignoring case.
 
 ```cs
 string ReplaceOrdinalIgnoreCase(string This, string oldValue, string newValue)
@@ -277,4 +277,4 @@ string ReplaceOrdinalIgnoreCase(string This, string oldValue, string newValue)
 
 | Type | Description
 | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A string that is equivalent to the current string except that all instances of oldValue are replaced with newValue.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A string that is equivalent to the current string except that all instances of oldValue are replaced with newValue. If oldValue is not found in the current instance, the method returns the current instance unchanged.

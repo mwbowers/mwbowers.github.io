@@ -2,7 +2,7 @@
 title: ProgParmType class
 ---
 
-Represents a program parameter type.
+Represents the type of a program parameter in a DataLink connection.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -20,11 +20,11 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParmType](#progparmtypestring-int32-fieldtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html)) | Initializes a new instance of the  class.
+| [ProgParmType](#progparmtypestring-int32-fieldtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html)) | Initializes a new instance of the  class with the specified name, number of elements, and field type.
 
 ### ProgParmType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html))
 
-Initializes a new instance of the  class.
+Initializes a new instance of the  class with the specified name, number of elements, and field type.
 
 ```cs
 ProgParmType(String, Int32, FieldType)
@@ -37,8 +37,3 @@ ProgParmType(String, Int32, FieldType)
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | 
 | [FieldType](/reference/datagate/datagate-common/field-type.html) | type | 
-
-## Properties
-
-| Type | Name | Description
-| --- | --- | --- 

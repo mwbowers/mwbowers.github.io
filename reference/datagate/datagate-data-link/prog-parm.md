@@ -2,7 +2,7 @@
 title: ProgParm class
 ---
 
-Represents a program parameter.
+Represents a parameter in a program call in a DataLink connection.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -19,12 +19,12 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParm](#progparmprogparmtype-datadirection)([ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class from an XML reader.
-| [ProgParm](#progparmstructuretype-datadirection)([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with a specified data direction.
+| [ProgParm](#progparmprogparmtype-datadirection)([ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with the specified parameter type and data direction.
+| [ProgParm](#progparmstructuretype-datadirection)([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with the specified structure type and data direction.
 
 ### ProgParm([ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html))
 
-Initializes a new instance of the  class from an XML reader.
+Initializes a new instance of the  class with the specified parameter type and data direction.
 
 ```cs
 ProgParm(ProgParmType, DataDirection)
@@ -39,7 +39,7 @@ ProgParm(ProgParmType, DataDirection)
 
 ### ProgParm([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html))
 
-Initializes a new instance of the  class with a specified data direction.
+Initializes a new instance of the  class with the specified structure type and data direction.
 
 ```cs
 ProgParm(StructureType, DataDirection)
@@ -56,97 +56,7 @@ ProgParm(StructureType, DataDirection)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | Direction | Gets or sets the data direction of the program parameter. |
-
-## Methods
-
-| Signature | Description |
-| --- | --- |
-| [FromObject](#void-fromobjectidatalinkprops-dl-object-obj-subparmname-subparm)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts an object to a program parameter.
-| [NewBuffer](#void-newbufferidatalinkprops-dl)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Creates a new buffer for the program parameter.
-| [SetZeroValue](#void-setzerovalueidatalinkprops-dl)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/)) | Sets the value of the program parameter to zero.
-| [ToObject](#object-toobjectidatalinkprops-dl-type-objtype-subparmname-subparm)([IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/)) | Converts the program parameter to an object.
-| [WriteXml](#void-writexmlxmlwriter-xw)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the program parameter to an XML writer.
-
-### void FromObject([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/), [object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object), [SubParmName subParm](https://learn.microsoft.com/en-us/dotnet/api/))
-
-Converts an object to a program parameter.
-
-```cs
-void FromObject(IDataLinkProps dl, object obj, SubParmName subParm)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
-| [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/) | subParm | 
-
-### void NewBuffer([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/))
-
-Creates a new buffer for the program parameter.
-
-```cs
-void NewBuffer(IDataLinkProps dl)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
-
-### void SetZeroValue([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/))
-
-Sets the value of the program parameter to zero.
-
-```cs
-void SetZeroValue(IDataLinkProps dl)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
-
-### object ToObject([IDataLinkProps dl](https://learn.microsoft.com/en-us/dotnet/api/), [Type objType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [SubParmName subParm](https://learn.microsoft.com/en-us/dotnet/api/))
-
-Converts the program parameter to an object.
-
-```cs
-object ToObject(IDataLinkProps dl, Type objType, SubParmName subParm)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IDataLinkProps](https://learn.microsoft.com/en-us/dotnet/api/) | dl | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | objType | 
-| [SubParmName](https://learn.microsoft.com/en-us/dotnet/api/) | subParm | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The converted object.
-
-### void WriteXml([XmlWriter xw](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
-
-Writes the program parameter to an XML writer.
-
-```cs
-void WriteXml(XmlWriter xw)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | xw | 
+| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | Direction | Gets or sets the direction of the data for this parameter (input, output, or both). |
 
 ## Example 1.Passing three parameters to an AS400 Program
 

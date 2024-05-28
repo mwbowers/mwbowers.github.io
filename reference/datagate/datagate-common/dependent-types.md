@@ -2,7 +2,7 @@
 title: DependentTypes enum
 ---
 
-Enum representing the different types of dependencies.
+Specifies the type of a dependent object.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,6 +13,6 @@ Enum representing the different types of dependencies.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Base | Represents a base dependency type. | 0 |
-| Join | Represents a join dependency type. | 2 |
-| Reference | Represents a reference dependency type. | 1 |
+| Base | Specifies a base object. | 0 |
+| Join | Specifies a join object. | 2 |
+| Reference | Specifies a reference object. | 1 |

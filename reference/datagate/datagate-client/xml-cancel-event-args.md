@@ -2,7 +2,7 @@
 title: XmlCancelEventArgs class
 ---
 
-Provides data for the XmlCancel event.
+Provides data for the XmlCancelEvent event.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -12,7 +12,10 @@ Provides data for the XmlCancel event.
 <br>
 
 ## Remarks
-This class contains information about the event that applications can use to handle the event.
+This class contains information about an event that is raised when an XML operation is cancelled. 
+It includes properties for getting the message associated with the event, the type of the event, 
+any exception that occurred, and whether the operation should be cancelled. 
+This can be useful for handling errors or interruptions during XML operations.
 
 <br>
 <br>
@@ -21,22 +24,22 @@ This class contains information about the event that applications can use to han
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Cancel | Gets or sets a value indicating whether the operation should be canceled. |
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | Exception | Gets or sets the exception associated with the XmlCancel event. |
-| [IEnumerable\<Object\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ExtendedInfo | Gets the extended information associated with the XmlCancel event. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Message | Returns a string representation of the object. |
-| [XmlInfoMsgType](/reference/datagate/datagate-client/xml-info-msg-type.html) | MessageID | Gets or sets the event type for XML import/output operation result. |
-| [XmlInfoEventType](/reference/datagate/datagate-client/xml-info-event-type.html) | Type | Gets or sets the event type for XML import/output operation result. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Cancel | Gets or sets a value indicating whether the XML event should be cancelled. |
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | Exception | Gets or sets the exception associated with the XML event. |
+| [IEnumerable\<Object\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | ExtendedInfo | Gets the extended information for the XML event. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Message | Gets the formatted message for the XML event. |
+| [XmlInfoMsgType](/reference/datagate/datagate-client/xml-info-msg-type.html) | MessageID | Gets or sets the message ID for the XML event. |
+| [XmlInfoEventType](/reference/datagate/datagate-client/xml-info-event-type.html) | Type | Gets or sets the type of the XML event. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [ToString()](#string-tostring) | Returns a string representation of the object.
+| [ToString()](#string-tostring) | Returns a string that represents the current object.
 
 ### string ToString()
 
-Returns a string representation of the object.
+Returns a string that represents the current object.
 
 ```cs
 string ToString()

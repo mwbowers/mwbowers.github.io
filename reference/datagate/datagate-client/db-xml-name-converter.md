@@ -18,18 +18,18 @@ XML-compliant Name string.  For example, "$ITEMTEST" is returned as
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DbXmlNameConverter](/reference/datagate/datagate-client/db-xml-name-converter.html) | Default | Gets the default XML name converter. |
+| [DbXmlNameConverter](/reference/datagate/datagate-client/db-xml-name-converter.html) | Default | Gets the default instance of the  class. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [Decode](#string-decodexpathnavigator-context-string-name)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Decodes the given XML-compliant Name string into its original name.
-| [Encode](#string-encodexpathnavigator-context-string-name)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Encodes the given name into an XML-compliant Name string.
+| [Decode](#string-decodexpathnavigator-context-string-name)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Decodes the provided XML-compliant string back into its original name.
+| [Encode](#string-encodexpathnavigator-context-string-name)([XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Encodes the provided name into an XML-compliant string.
 
 ### string Decode([XPathNavigator context](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Decodes the given XML-compliant Name string into its original name.
+Decodes the provided XML-compliant string back into its original name.
 
 ```cs
 string Decode(XPathNavigator context, string name)
@@ -46,11 +46,11 @@ string Decode(XPathNavigator context, string name)
 
 | Type | Description
 | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The decoded original name.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The original name that was encoded into the provided XML-compliant string.
 
 ### string Encode([XPathNavigator context](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Encodes the given name into an XML-compliant Name string.
+Encodes the provided name into an XML-compliant string.
 
 ```cs
 string Encode(XPathNavigator context, string name)
@@ -67,4 +67,4 @@ string Encode(XPathNavigator context, string name)
 
 | Type | Description
 | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The encoded XML-compliant Name string.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | An XML-compliant string representation of the provided name.

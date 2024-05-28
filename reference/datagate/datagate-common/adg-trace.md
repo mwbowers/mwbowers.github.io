@@ -2,7 +2,8 @@
 title: AdgTrace class
 ---
 
-ASNA DataGate Tracing class.
+Provides methods and properties for tracing and logging in the application.
+This class cannot be inherited.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,41 +16,3 @@ ASNA DataGate Tracing class.
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsLogging | Gets a value indicating whether tracing is enabled. |
-| [ActiveTraceQueue](https://learn.microsoft.com/en-us/dotnet/api/) | Queue | Gets the active trace queue. |
-| [ITraceWriter](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh944885\(v=vs.118\)) | TraceWriter | Gets the trace writer. |
-
-## Methods
-
-| Signature | Description |
-| --- | --- |
-| [GetLogConfigs()](#traceoption--getlogconfigs) | Gets the trace options.
-| [IsTracing](#bool-istracingtraceid-id)([TraceID](/reference/datagate/datagate-common/trace-id.html)) | Determines whether the specified trace ID is being traced.
-
-### TraceOption[] GetLogConfigs()
-
-Gets the trace options.
-
-```cs
-TraceOption[] GetLogConfigs()
-```
-
-### bool IsTracing([TraceID id](/reference/datagate/datagate-common/trace-id.html))
-
-Determines whether the specified trace ID is being traced.
-
-```cs
-bool IsTracing(TraceID id)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [TraceID](/reference/datagate/datagate-common/trace-id.html) | id | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the trace ID is being traced; otherwise, false.

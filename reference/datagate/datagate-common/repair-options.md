@@ -2,7 +2,7 @@
 title: RepairOptions enum
 ---
 
-Enum representing the different options for repairing an object.
+Specifies the options for a repair operation.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,7 +13,7 @@ Enum representing the different options for repairing an object.
 
 | Name | Description | Value
 | --- | --- | --- 
-| ForceRebuild | Represents a state where the object is forcibly rebuilt during repair. | 4 |
-| KeepFile | Represents a state where the original file is kept after repair. | 2 |
-| None | Represents a state where no repair options are set. | 0 |
-| Verbose | Represents a state where verbose logging is enabled during repair. | 1 |
+| ForceRebuild | Specifies that the repair operation should force a rebuild. | 4 |
+| KeepFile | Specifies that the file should be kept after the repair operation. | 2 |
+| None | Specifies no options. | 0 |
+| Verbose | Specifies that the repair operation should be verbose. | 1 |

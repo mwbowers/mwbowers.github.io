@@ -2,7 +2,7 @@
 title: DataDirection enum
 ---
 
-Enum representing the direction of data flow.
+Specifies the direction of data flow for a data operation.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,10 +13,10 @@ Enum representing the direction of data flow.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Input | Represents a state where data is flowing inwards. | 1 |
-| InputOutput | Represents a state where data is flowing both inwards and outwards. | 3 |
-| None | Represents a state where no data flow is occurring. | 0 |
-| Output | Represents a state where data is flowing outwards. | 2 |
+| Input | Specifies that data is flowing in. | 1 |
+| InputOutput | Specifies that data is flowing both in and out. | 3 |
+| None | Specifies that there is no data flow. | 0 |
+| Output | Specifies that data is flowing out. | 2 |
 
 ## Examples
 

@@ -2,7 +2,7 @@
 title: DbcsFormat enum
 ---
 
-Enum representing the different DBCS (Double-Byte Character Set) formats.
+Specifies the format for a double-byte character set (DBCS).
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,8 +13,8 @@ Enum representing the different DBCS (Double-Byte Character Set) formats.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Either | Represents a format that can be either double byte with shift control or single byte. | 4 |
-| Graphic | Represents a double byte only format with no shift control. | 5 |
-| None | Represents no specific DBCS format. | 0 |
-| Only | Represents a double byte only format with shift control. | 3 |
-| Open | Represents a mixed single byte/double byte format with shift control. | 2 |
+| Either | Specifies a format that can be either double byte (with shift-control) or single byte. | 4 |
+| Graphic | Specifies a double byte only format (no shift-control). | 5 |
+| None | Specifies no format. | 0 |
+| Only | Specifies a double byte only format (with shift-control). | 3 |
+| Open | Specifies a mixed single byte/double byte format (with shift-control). | 2 |

@@ -2,7 +2,7 @@
 title: AdgObjectTypes enum
 ---
 
-Enum representing the different types of ADG objects.
+Specifies the type of an ADG object.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,8 +13,8 @@ Enum representing the different types of ADG objects.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Catalog | Represents a catalog type. | 89 |
-| DataArea | Represents a data area type. | 83 |
-| Directory | Represents a directory type. | 68 |
-| File | Represents a file type. | 70 |
-| Member | Represents a member type. | 77 |
+| Catalog | Specifies a catalog object. | 89 |
+| DataArea | Specifies a data area object. | 83 |
+| Directory | Specifies a directory object. | 68 |
+| File | Specifies a file object. | 70 |
+| Member | Specifies a member object. | 77 |

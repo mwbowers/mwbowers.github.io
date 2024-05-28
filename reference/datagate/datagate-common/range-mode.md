@@ -2,7 +2,7 @@
 title: RangeMode enum
 ---
 
-Enum representing the mode of a range.
+Specifies the range mode for reading data.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,8 +13,8 @@ Enum representing the mode of a range.
 
 | Name | Description | Value
 | --- | --- | --- 
-| First | Represents a state where the first item is selected in the range. | 5 |
-| Last | Represents a state where the last item is selected in the range. | 6 |
+| First | Specifies that the range starts from the first record. | 5 |
+| Last | Specifies that the range ends at the last record. | 6 |
 
 ## Examples
 

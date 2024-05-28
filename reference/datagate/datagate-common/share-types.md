@@ -2,7 +2,7 @@
 title: ShareTypes enum
 ---
 
-Enum representing the different types of share types.
+Specifies the type of sharing for a file or resource.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,10 +13,10 @@ Enum representing the different types of share types.
 
 | Name | Description | Value
 | --- | --- | --- 
-| cShareTypes | Represents the count of share types. | 5 |
-| Exclusive | Represents an exclusive share type. | 0 |
-| ExclusiveRead | Represents an exclusive read share type. | 1 |
-| File | Represents a file share type. This value is used by Runtime. | 100 |
-| ShareNoUpdate | Represents a share no update type. | 3 |
-| ShareRead | Represents a share read type. | 4 |
-| ShareUpdate | Represents a share update type. | 2 |
+| cShareTypes | Specifies the count of share types. | 5 |
+| Exclusive | Specifies exclusive access to the file or resource. | 0 |
+| ExclusiveRead | Specifies exclusive read access to the file or resource. | 1 |
+| File | Specifies file sharing. | 100 |
+| ShareNoUpdate | Specifies shared non-update access to the file or resource. | 3 |
+| ShareRead | Specifies shared read access to the file or resource. | 4 |
+| ShareUpdate | Specifies shared update access to the file or resource. | 2 |

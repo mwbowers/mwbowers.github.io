@@ -17,11 +17,11 @@ describing the format of these data representations.
 
 | Name | Description |
 | --- | --- |
-| [DecNumZPRep](#decnumzprepint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the DecNumZPRep class with the specified format.
+| [DecNumZPRep](#decnumzprepint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a new instance of the  class.
 
 ### DecNumZPRep([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Initializes a new instance of the DecNumZPRep class with the specified format.
+Initializes a new instance of the  class.
 
 ```cs
 DecNumZPRep(Int32)
@@ -42,7 +42,7 @@ DecNumZPRep(Int32)
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | NegZone | Returns the 8-bit code for a zoned decimal negative number.  Thecode is contained in the upper nibble, and the lower nibble iszero. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PosPacked | Returns the 8-bit code for a packed decimal positive number.  Thecode is contained in the lower nibble, and the upper nibble iszero. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PosZone | Returns the 8-bit code for a zoned decimal positive number.  Thecode is contained in the upper nibble, and the lower nibble iszero. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Value | Gets the format value used for interpreting the Acceler8DB "ZPREP" code for packed and zoned decimal data representation. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Value | Gets the format of the decimal number. |
 
 ## Methods
 

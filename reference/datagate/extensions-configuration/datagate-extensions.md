@@ -2,7 +2,7 @@
 title: DataGateExtensions class
 ---
 
-Provides extension methods for DataGate configuration.
+Provides extension methods for the DataGate configuration.
 
 **Namespace:** ASNA.Extensions.Configuration
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -20,11 +20,11 @@ Provides extension methods for DataGate configuration.
 
 | Signature | Description |
 | --- | --- |
-| [GetSourceProfiles](#ireadonlydictionary-string-sourceprofile-getsourceprofilesiconfiguration-config)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Gets a read-only dictionary of SourceProfiles from the provided configuration.
+| [GetSourceProfiles](#ireadonlydictionary-string-sourceprofile-getsourceprofilesiconfiguration-config)([IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0)) | Retrieves a read-only dictionary of source profiles from the configuration.
 
 ### IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles([IConfiguration config](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 
-Gets a read-only dictionary of SourceProfiles from the provided configuration.
+Retrieves a read-only dictionary of source profiles from the configuration.
 
 ```cs
 IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles(IConfiguration config)
@@ -40,4 +40,4 @@ IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles(IConfiguration conf
 
 | Type | Description
 | --- | ---
-| [IReadOnlyDictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | A read-only dictionary of SourceProfiles.
+| [IReadOnlyDictionary`2](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | A read-only dictionary of source profiles. The key is the name of the source profile, and the value is the source profile itself.

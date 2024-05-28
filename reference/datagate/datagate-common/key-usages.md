@@ -2,7 +2,7 @@
 title: KeyUsages enum
 ---
 
-Enum representing the different usages of a key.
+Specifies the usage of a key.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll

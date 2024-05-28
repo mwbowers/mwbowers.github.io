@@ -2,7 +2,7 @@
 title: IDataGateConfig interface
 ---
 
-Defines a contract for DataGate configuration.
+Provides an interface for accessing DataGate configuration.
 
 **Namespace:** ASNA.Extensions.Configuration
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,28 +11,21 @@ Defines a contract for DataGate configuration.
 <br>
 <br>
 
-## Remarks
-This interface provides access to all configured database sources and 
-allows resolving a source name to a configured SourceProfile.
-
-<br>
-<br>
-
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [IReadOnlyDictionary\<String, SourceProfile\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | Sources | Gets a read-only dictionary of all configured database sources. |
+| [IReadOnlyDictionary\<String, SourceProfile\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ireadonlydictionary-2?view=net-8.0) | Sources | Gets the table of all configured database sources. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [ResolveSourceName](#sourceprofile-resolvesourcenamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Resolves a source name to a configured SourceProfile.
+| [ResolveSourceName](#sourceprofile-resolvesourcenamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Resolves a configured SourceProfile with behavior similar to the DatabaseName.ToSourceProfile methods for traditional database names.
 
 ### SourceProfile ResolveSourceName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Resolves a source name to a configured SourceProfile.
+Resolves a configured SourceProfile with behavior similar to the DatabaseName.ToSourceProfile methods for traditional database names.
 
 ```cs
 SourceProfile ResolveSourceName(string name)

@@ -2,7 +2,7 @@
 title: ChannelIOStreamException class
 ---
 
-Represents errors that occur during I/O operations in a ChannelIOStream.
+Represents errors that occur during I/O operations on a channel stream.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,14 +15,14 @@ Represents errors that occur during I/O operations in a ChannelIOStream.
 
 | Name | Description |
 | --- | --- |
-| [ChannelIOStreamException()](#channeliostreamexception) | Initializes a new instance of the ChannelIOStreamException class.
-| [ChannelIOStreamException](#channeliostreamexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the ChannelIOStreamException class with a specified error message.
-| [ChannelIOStreamException](#channeliostreamexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the ChannelIOStreamException class with a specified error message and a reference to the inner exception that is the cause of this exception.
-| [ChannelIOStreamException](#channeliostreamexceptionexception)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the ChannelIOStreamException class with a reference to the inner exception that is the cause of this exception.
+| [ChannelIOStreamException()](#channeliostreamexception) | Initializes a new instance of the  class.
+| [ChannelIOStreamException](#channeliostreamexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with a specified error message.
+| [ChannelIOStreamException](#channeliostreamexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class with a specified error message and a reference to the inner exception that is the cause of this exception.
+| [ChannelIOStreamException](#channeliostreamexceptionexception)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class with a reference to the inner exception that is the cause of this exception.
 
 ### ChannelIOStreamException()
 
-Initializes a new instance of the ChannelIOStreamException class.
+Initializes a new instance of the  class.
 
 ```cs
 ChannelIOStreamException()
@@ -30,7 +30,7 @@ ChannelIOStreamException()
 
 ### ChannelIOStreamException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Initializes a new instance of the ChannelIOStreamException class with a specified error message.
+Initializes a new instance of the  class with a specified error message.
 
 ```cs
 ChannelIOStreamException(String)
@@ -44,7 +44,7 @@ ChannelIOStreamException(String)
 
 ### ChannelIOStreamException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
-Initializes a new instance of the ChannelIOStreamException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+Initializes a new instance of the  class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ```cs
 ChannelIOStreamException(String, Exception)
@@ -59,7 +59,7 @@ ChannelIOStreamException(String, Exception)
 
 ### ChannelIOStreamException([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
-Initializes a new instance of the ChannelIOStreamException class with a reference to the inner exception that is the cause of this exception.
+Initializes a new instance of the  class with a reference to the inner exception that is the cause of this exception.
 
 ```cs
 ChannelIOStreamException(Exception)
@@ -70,29 +70,3 @@ ChannelIOStreamException(Exception)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
-
-## Methods
-
-| Signature | Description |
-| --- | --- |
-| [Validate](#exception-validateexception-inner)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Validates the inner exception.
-
-### Exception Validate([Exception inner](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
-
-Validates the inner exception.
-
-```cs
-Exception Validate(Exception inner)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | The validated inner exception.

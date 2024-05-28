@@ -2,7 +2,7 @@
 title: ILibraryList interface
 ---
 
-Defines the methods and properties for managing a library list.
+Defines the contract for managing a library list in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,7 +15,10 @@ Defines the methods and properties for managing a library list.
 In DG implementations of **ILibraryList** , instance members are not guaranteed to be thread safe.
 
 ## Remarks
-This interface should be implemented by classes that need to manage a library list.
+This interface provides properties and methods to manage a library list in the ASNA DataGate client. 
+It includes properties to get and set the current system and user libraries as pathnames, 
+and the system and user libraries configuration as pathnames. It also provides methods to enumerate 
+the current system and user libraries as IAdgObject instances, and to add and remove libraries from the library list.
 
 <br>
 <br>
@@ -25,22 +28,22 @@ This interface should be implemented by classes that need to manage a library li
 | Type | Name | Description
 | --- | --- | --- 
 | [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentSystemLibraries | Gets the current system libraries as pathnames. |
-| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentUserLibraries | Gets or sets the current user libraries. |
-| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | SystemLibrariesConfig | Gets or sets the current system libraries as pathnames. |
-| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | UserLibrariesConfig | Gets or sets the current user libraries. |
+| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentUserLibraries | Gets or sets the current user libraries as pathnames. |
+| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | SystemLibrariesConfig | Gets or sets the system libraries configuration as pathnames. |
+| [IEnumerable\<String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | UserLibrariesConfig | Gets or sets the user libraries configuration as pathnames. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [AddEntry](#void-addentrystring-path-liblposition-pos-string-reflib)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at the specified position.
-| [EnumerateCurrentSystem](#void-enumeratecurrentsystemadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current system libraries.
-| [EnumerateCurrentUser](#void-enumeratecurrentuseradgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current user libraries.
-| [RemoveEntry](#void-removeentrystring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the specified library from the "user" portion of the library list. (RMVLIBLE)
+| [AddEntry](#void-addentrystring-path-liblposition-pos-string-reflib)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at a specified position.
+| [EnumerateCurrentSystem](#void-enumeratecurrentsystemadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current system libraries as IAdgObject instances.
+| [EnumerateCurrentUser](#void-enumeratecurrentuseradgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current user libraries as IAdgObject instances.
+| [RemoveEntry](#void-removeentrystring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a library from the user portion of the library list.
 
 ### void AddEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [LiblPosition pos](/reference/datagate/datagate-client/libl-position.html), [string refLib](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Adds a library to the library list at the specified position.
+Adds a library to the library list at a specified position.
 
 ```cs
 void AddEntry(string path, LiblPosition pos, string refLib)
@@ -56,7 +59,7 @@ void AddEntry(string path, LiblPosition pos, string refLib)
 
 ### void EnumerateCurrentSystem([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
 
-Enumerates the current system libraries.
+Enumerates the current system libraries as IAdgObject instances.
 
 ```cs
 void EnumerateCurrentSystem(AdgEnumerator enumerator)
@@ -70,7 +73,7 @@ void EnumerateCurrentSystem(AdgEnumerator enumerator)
 
 ### void EnumerateCurrentUser([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
 
-Enumerates the current user libraries.
+Enumerates the current user libraries as IAdgObject instances.
 
 ```cs
 void EnumerateCurrentUser(AdgEnumerator enumerator)
@@ -84,7 +87,7 @@ void EnumerateCurrentUser(AdgEnumerator enumerator)
 
 ### void RemoveEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
-Removes the specified library from the "user" portion of the library list. (RMVLIBLE)
+Removes a library from the user portion of the library list.
 
 ```cs
 void RemoveEntry(string path)

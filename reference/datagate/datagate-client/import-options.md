@@ -2,7 +2,8 @@
 title: ImportOptions class
 ---
 
-Provides options for importing data from a source.
+Provides options for importing data from XML or CSV format.
+This class includes properties for specifying the target member where the data will be imported, the source path from where the data will be imported, whether the target member should be cleared before the import, whether the target connection should be used for the import, and whether detailed feedback should be provided during the import operation.
 
 **Namespace:** ASNA.DataGate.Client.CopyData
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,11 +16,11 @@ Provides options for importing data from a source.
 
 | Name | Description |
 | --- | --- |
-| [ImportOptions](#importoptionsimember-string-boolean-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the ImportOptions class.
+| [ImportOptions](#importoptionsimember-string-boolean-boolean)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Initializes a new instance of the  class with the specified target member, source path, clear member flag, and use target connection flag.
 
 ### ImportOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
-Initializes a new instance of the ImportOptions class.
+Initializes a new instance of the  class with the specified target member, source path, clear member flag, and use target connection flag.
 
 ```cs
 ImportOptions(IMember, String, Boolean, Boolean)
@@ -38,8 +39,8 @@ ImportOptions(IMember, String, Boolean, Boolean)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ClearTargetBeforeImport | Gets or sets a value indicating whether to clear the target member before importing. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DetailedFeedback | Gets or sets a value indicating whether to clear the target member before importing. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SourcePath | Gets or sets the source file to be used as the import data. |
-| [IMember](/reference/datagate/datagate-client/i-member.html) | TargetMember | Gets or sets the target member to import data into. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseTargetConnection | Gets or sets the default value for the UseTargetConnection property. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ClearTargetBeforeImport | Gets or sets a value indicating whether the target member should be cleared before the import. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DetailedFeedback | Gets or sets a value indicating whether detailed feedback should be provided during the import operation. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SourcePath | Gets or sets the source path from where the data will be imported. |
+| [IMember](/reference/datagate/datagate-client/i-member.html) | TargetMember | Gets or sets the target member where the data will be imported. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseTargetConnection | Gets or sets a value indicating whether the target connection should be used for the import. |

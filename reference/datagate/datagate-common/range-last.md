@@ -2,7 +2,7 @@
 title: RangeLast enum
 ---
 
-Enum representing the last range of a sequence.
+Specifies the last range of a sequence.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,10 +13,10 @@ Enum representing the last range of a sequence.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Bottom | Represents a state where the last range is at the bottom. | 4 |
-| Exclude | Represents a state where the last range is excluded. | 0 |
-| Include | Represents a state where the last range is included. | 1 |
-| SameAsFirst | Represents a state where the last range is the same as the first. | 8 |
+| Bottom | The range ends at the bottom. | 4 |
+| Exclude | The last element is excluded from the range. | 0 |
+| Include | The last element is included in the range. | 1 |
+| SameAsFirst | The last element is the same as the first element in the range. | 8 |
 
 ## Examples
 

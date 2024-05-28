@@ -2,7 +2,7 @@
 title: IClientMonitor interface
 ---
 
-Defines the methods and properties for monitoring a DataGate client.
+Defines the contract for monitoring a client in the ASNA DataGate client.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -12,7 +12,10 @@ Defines the methods and properties for monitoring a DataGate client.
 <br>
 
 ## Remarks
-This interface should be implemented by classes that need to monitor a DataGate client.
+This interface provides properties and methods to monitor a client in the ASNA DataGate client. 
+It includes properties to get the client's application name, current function, status, start time, 
+process name, user name, job name, server user name, client number, current locks, library list, 
+and current open files. It also provides a method to forcibly terminate the client.
 
 <br>
 <br>
@@ -21,30 +24,30 @@ This interface should be implemented by classes that need to monitor a DataGate 
 
 | Type | Name | Description
 | --- | --- | --- 
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Application | Get name of the application using this client |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CacheData | Gets or sets a value indicating whether to cache data. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CurrentFunction | Get name of the function at the current time |
-| [IEnumerable\<ILock\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentLocks | Get all locks created by this client |
-| [IEnumerable\<IOpenFile\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentOpenFiles | Get all files opened by this client |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Job | Get job associated with this client |
-| [ILibraryList](/reference/datagate/datagate-client/i-library-list.html) | LibraryList | Get Library List in use by the client |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Number | Gets the number of the client. |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Process | Get process running this client |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ServerUser | Get the server user associated with this client |
-| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | Started | Get when client started |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Status | Get status of the client |
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | User | Get user name associated with this client |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ValidFields | Gets the number of valid fields. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Application | Gets the name of the application using this client. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CacheData | Gets or sets a value indicating whether data should be cached. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CurrentFunction | Gets the name of the function at the current time. |
+| [IEnumerable\<ILock\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentLocks | Gets all locks created by this client. |
+| [IEnumerable\<IOpenFile\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0) | CurrentOpenFiles | Gets all files opened by this client. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Job | Gets the job associated with this client. |
+| [ILibraryList](/reference/datagate/datagate-client/i-library-list.html) | LibraryList | Gets the Library List in use by the client. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Number | Gets the number associated with this client. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Process | Gets the process running this client. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ServerUser | Gets the server user associated with this client. |
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | Started | Gets the DateTime when the client started. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Status | Gets the status of the client. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | User | Gets the user name associated with this client. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ValidFields | Gets the number of valid fields in the client. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [Kill](#void-killint-delay)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Forcibly terminates the current client
+| [Kill](#void-killint-delay)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Forcibly terminates the current client.
 
 ### void Kill([int delay](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Forcibly terminates the current client
+Forcibly terminates the current client.
 
 ```cs
 void Kill(int delay)

@@ -2,7 +2,7 @@
 title: IExchange5250 interface
 ---
 
-Defines a contract for exchanging 5250 data stream information.
+Provides an interface for exchanging 5250 data streams.
 
 **Namespace:** ASNA.DataGate.Providers
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,13 +15,13 @@ Defines a contract for exchanging 5250 data stream information.
 
 | Signature | Description |
 | --- | --- |
-| [CompleteOpen](#void-completeopenint-peeraltcodepageid)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Completes the opening of a connection with a specific code page ID.
-| [Exchange5250DS](#void-exchange5250dsint-ibegin-byte--ainds-int-indslength-byte--aoutds-int32-outdslength-byte-telnetflags)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Exchanges 5250 data stream information.
+| [CompleteOpen](#void-completeopenint-peeraltcodepageid)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Completes the opening of a peer with a specific code page ID.
+| [Exchange5250DS](#void-exchange5250dsint-ibegin-byte--ainds-int-indslength-byte--aoutds-int32-outdslength-byte-telnetflags)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Exchanges 5250 data streams.
 | [GetDeviceInfo](#void-getdeviceinfostring-devicesn-string-deviceclient-string-deviceserver)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the device information.
 
 ### void CompleteOpen([int peerAltCodePageID](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Completes the opening of a connection with a specific code page ID.
+Completes the opening of a peer with a specific code page ID.
 
 ```cs
 void CompleteOpen(int peerAltCodePageID)
@@ -35,7 +35,7 @@ void CompleteOpen(int peerAltCodePageID)
 
 ### void Exchange5250DS([int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Byte\[\]& aInDs](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int InDsLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Byte\[\]& aOutDs](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32& OutDsLength](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Byte& TelnetFlags](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 
-Exchanges 5250 data stream information.
+Exchanges 5250 data streams.
 
 ```cs
 void Exchange5250DS(int iBegin, Byte[]& aInDs, int InDsLength, Byte[]& aOutDs, Int32& OutDsLength, Byte& TelnetFlags)

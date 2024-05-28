@@ -2,7 +2,7 @@
 title: AdgEnumerator class
 ---
 
-Delegate for enumerating AdgObjects.
+Represents a method that handles an IAdgObject.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -11,23 +11,10 @@ Delegate for enumerating AdgObjects.
 <br>
 <br>
 
-## Constructors
+## Remarks
+This delegate is used to provide a reference to a method that takes an IAdgObject as a parameter.
+The method referred by this delegate can be used to perform operations on the IAdgObject instance.
+The specific operations to be performed are determined by the method implementation.
 
-| Name | Description |
-| --- | --- |
-| [AdgEnumerator](#adgenumeratorobject-intptr)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0)) | 
-
-### AdgEnumerator([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0))
-
-
-
-```cs
-AdgEnumerator(Object, IntPtr)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | object | 
-| [IntPtr](https://learn.microsoft.com/en-us/dotnet/api/system.intptr?view=net-8.0) | method | 
+<br>
+<br>

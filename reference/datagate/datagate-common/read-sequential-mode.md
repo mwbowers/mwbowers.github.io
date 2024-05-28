@@ -2,7 +2,7 @@
 title: ReadSequentialMode enum
 ---
 
-Enum representing the mode of reading values in a sequential manner.
+Specifies the mode for reading data sequentially.
 
 **Namespace:** ASNA.DataGate.Common
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -13,11 +13,11 @@ Enum representing the mode of reading values in a sequential manner.
 
 | Name | Description | Value
 | --- | --- | --- 
-| Current | Represents a state where the current value is read in the sequence. | 3 |
-| First | Represents a state where the first value is read in the sequence. | 5 |
-| Last | Represents a state where the last value is read in the sequence. | 6 |
-| Next | Represents a state where the next value is read in the sequence. | 1 |
-| Previous | Represents a state where the previous value is read in the sequence. | 2 |
+| Current | Specifies that the reading starts from the current record. | 3 |
+| First | Specifies that the reading starts from the first record. | 5 |
+| Last | Specifies that the reading ends at the last record. | 6 |
+| Next | Specifies that the reading starts from the next record. | 1 |
+| Previous | Specifies that the reading starts from the previous record. | 2 |
 
 ## Examples
 

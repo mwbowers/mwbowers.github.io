@@ -2,7 +2,7 @@
 title: AdgKeyTable class
 ---
 
-DataGate key table, a specialized implementation of AdgTable.
+The AdgKeyTable class contains a DataTable object for manipulating key values.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -19,11 +19,11 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [AdgKeyTable](#adgkeytabledatatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0)) | Prevent keyTableTemplate from accumulating row references (via PrepareRow()) by cloning a copy. 
+| [AdgKeyTable](#adgkeytabledatatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0)) | Initializes a new instance of the  class with a specified key table template.
 
 ### AdgKeyTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0))
 
-Prevent keyTableTemplate from accumulating row references (via PrepareRow()) by cloning a copy. 
+Initializes a new instance of the  class with a specified key table template.
 
 ```cs
 AdgKeyTable(DataTable)
@@ -39,8 +39,8 @@ AdgKeyTable(DataTable)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataRowColumnComparer\<DataRow\>](https://learn.microsoft.com/en-us/dotnet/api/) | Comparer | Gets or sets the comparer for the AdgKeyTable. |
-| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | KeyPartCount | Gets or sets the number of key parts. |
+| [DataRowColumnComparer\<DataRow\>](https://learn.microsoft.com/en-us/dotnet/api/) | Comparer | Gets the DataRowColumnComparer used for comparing rows in the key table. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | KeyPartCount | Gets or sets the number of key parts in the key table. |
 
 ## Methods
 

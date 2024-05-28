@@ -2,7 +2,7 @@
 title: EndStreamModeException class
 ---
 
-Represents errors that occur during end stream mode operations.
+Represents errors that occur when the end of a stream mode is reached unexpectedly.
 
 **Namespace:** ASNA.DataGate.DataLink
 **Assembly:** ASNA.QSys.DataGate.Client.dll
@@ -15,13 +15,13 @@ Represents errors that occur during end stream mode operations.
 
 | Name | Description |
 | --- | --- |
-| [EndStreamModeException()](#endstreammodeexception) | Initializes a new instance of the EndStreamModeException class.
-| [EndStreamModeException](#endstreammodeexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the EndStreamModeException class with a specified error message.
-| [EndStreamModeException](#endstreammodeexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the EndStreamModeException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+| [EndStreamModeException()](#endstreammodeexception) | Initializes a new instance of the  class.
+| [EndStreamModeException](#endstreammodeexceptionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Initializes a new instance of the  class with a specified error message.
+| [EndStreamModeException](#endstreammodeexceptionstring-exception)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Initializes a new instance of the  class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ### EndStreamModeException()
 
-Initializes a new instance of the EndStreamModeException class.
+Initializes a new instance of the  class.
 
 ```cs
 EndStreamModeException()
@@ -29,7 +29,7 @@ EndStreamModeException()
 
 ### EndStreamModeException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
-Initializes a new instance of the EndStreamModeException class with a specified error message.
+Initializes a new instance of the  class with a specified error message.
 
 ```cs
 EndStreamModeException(String)
@@ -43,7 +43,7 @@ EndStreamModeException(String)
 
 ### EndStreamModeException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
-Initializes a new instance of the EndStreamModeException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+Initializes a new instance of the  class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ```cs
 EndStreamModeException(String, Exception)
