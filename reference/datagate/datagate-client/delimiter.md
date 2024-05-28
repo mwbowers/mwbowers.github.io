@@ -70,9 +70,6 @@ Delimiter(Char)
 | [FromChar](#delimiter-fromcharchar-ch)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Creates a new  instance from a given character.
 | [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
 | [op_Equality](#bool-op-equalitydelimiter-lval-delimiter-rval)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines whether two  instances are equal.
-| [op_Implicit](#char-op-implicitdelimiter-delim)([Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Converts the value of the given  instance to a .
-| [op_Implicit](#char-op-implicitdelimiter-delim)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Converts a character to a  instance.
-| [op_Implicit](#char-op-implicitdelimiter-delim)([Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Converts the value of the given  instance to a .
 | [op_Inequality](#bool-op-inequalitydelimiter-lval-delimiter-rval)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines whether two  instances are not equal.
 | [ToChar()](#char-tochar) | Converts the value of this instance to a .
 | [ToString()](#string-tostring) | Returns a string that represents the current object.
@@ -153,66 +150,6 @@ bool op_Equality(Delimiter lval, Delimiter rval)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the  instances are equal; otherwise, false.
-
-### char op_Implicit([Delimiter delim](/reference/datagate/datagate-client/delimiter.html))
-
-Converts the value of the given  instance to a .
-
-```cs
-char op_Implicit(Delimiter delim)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | delim | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | A  that represents the value of the given  instance.
-
-### char op_Implicit([Delimiter delim](/reference/datagate/datagate-client/delimiter.html))
-
-Converts a character to a  instance.
-
-```cs
-char op_Implicit(Delimiter delim)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ch | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | A  instance that represents the given character.
-
-### char op_Implicit([Delimiter delim](/reference/datagate/datagate-client/delimiter.html))
-
-Converts the value of the given  instance to a .
-
-```cs
-char op_Implicit(Delimiter delim)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | delim | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | A  that represents the value of the given  instance.
 
 ### bool op_Inequality([Delimiter lval](/reference/datagate/datagate-client/delimiter.html), [Delimiter rval](/reference/datagate/datagate-client/delimiter.html))
 

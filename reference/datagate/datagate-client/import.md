@@ -24,8 +24,6 @@ The class also provides methods for validating the import options and for perfor
 | Signature | Description |
 | --- | --- |
 | [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html)) | Initiates an import operation with the specified import options.
-| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Initiates an import operation with the specified import options and cancellation token.
-| [With](#task-withimportoptions-options)([ImportOptions](/reference/datagate/datagate-client/import-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [TaskCreationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskcreationoptions?view=net-8.0)) | Initiates an import operation with the specified import options, cancellation token, and task creation options.
 
 ### Task With([ImportOptions options](/reference/datagate/datagate-client/import-options.html))
 
@@ -46,19 +44,3 @@ Task With(ImportOptions options)
 | Type | Description
 | --- | ---
 | [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task that represents the asynchronous import operation.
-
-### Task With([ImportOptions options](/reference/datagate/datagate-client/import-options.html))
-
-Initiates an import operation with the specified import options and cancellation token.
-
-```cs
-Task With(ImportOptions options)
-```
-
-### Task With([ImportOptions options](/reference/datagate/datagate-client/import-options.html))
-
-Initiates an import operation with the specified import options, cancellation token, and task creation options.
-
-```cs
-Task With(ImportOptions options)
-```

@@ -63,7 +63,6 @@ UserPasswordCredential()
 | --- | --- |
 | [Clone()](#object-clone) | Creates a new object that is a copy of the current instance.
 | [Equals](#bool-equalsidatagatecredential-other)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the current instance of  is equal to the specified instance.
-| [GetHashCodeInternal()](#int-gethashcodeinternal) | Serves as the default hash function for the current instance.
 
 ### object Clone()
 
@@ -92,11 +91,3 @@ bool Equals(IDataGateCredential other)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the current instance is equal to the specified instance; otherwise, false.
-
-### int GetHashCodeInternal()
-
-Serves as the default hash function for the current instance.
-
-```cs
-int GetHashCodeInternal()
-```

@@ -36,7 +36,7 @@ and properties to get the connection and transaction level details.
 | Signature | Description |
 | --- | --- |
 | [Commit()](#void-commit) | Commits the current transaction.
-| [Commit](#void-commit)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the current transaction with a specified transaction name.
+| [Commit](#void-commitstring-transactionname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Commits the current transaction with a specified transaction name.
 | [Rollback()](#void-rollback) | Rolls back the current transaction.
 
 ### void Commit()
@@ -47,13 +47,19 @@ Commits the current transaction.
 void Commit()
 ```
 
-### void Commit()
+### void Commit([string TransactionName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Commits the current transaction with a specified transaction name.
 
 ```cs
-void Commit()
+void Commit(string TransactionName)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TransactionName | 
 
 ### void Rollback()
 

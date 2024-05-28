@@ -32,9 +32,9 @@ For example, it overrides the Value property to throw an exception when accessed
 | [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current  object.
 | [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
 | [op_Equality](#bool-op-equalitynewlinedelimeter--delimiter-rdlim)([NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines whether a  instance and a  instance are equal.
-| [op_Equality](#bool-op-equalitynewlinedelimeter--delimiter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines whether a  instance and a  instance are equal.
+| [op_Equality](#bool-op-equalitydelimiter-ldlim-newlinedelimeter)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines whether a  instance and a  instance are equal.
 | [op_Inequality](#bool-op-inequalitynewlinedelimeter-ldlim-delimiter-rdlim)([NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines whether a  instance and a  instance are not equal.
-| [op_Inequality](#bool-op-inequalitynewlinedelimeter-ldlim-delimiter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines whether a  instance and a  instance are not equal.
+| [op_Inequality](#bool-op-inequalitydelimiter-ldlim-newlinedelimeter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html)) | Determines whether a  instance and a  instance are not equal.
 | [ToString()](#string-tostring) | Returns a string that represents the current  object.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
@@ -86,20 +86,20 @@ bool op_Equality(NewLineDelimeter _, Delimiter rdlim)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the  instance is a ; otherwise, false.
 
-### bool op_Equality([NewLineDelimeter _](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
+### bool op_Equality([Delimiter ldlim](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter _](/reference/datagate/datagate-client/new-line-delimeter.html))
 
 Determines whether a  instance and a  instance are equal.
 
 ```cs
-bool op_Equality(NewLineDelimeter _, Delimiter rdlim)
+bool op_Equality(Delimiter ldlim, NewLineDelimeter _)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | _ | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | _ | 
 
 #### Returns
 
@@ -128,20 +128,20 @@ bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the instances are not equal; otherwise, false.
 
-### bool op_Inequality([NewLineDelimeter ldlim](/reference/datagate/datagate-client/new-line-delimeter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
+### bool op_Inequality([Delimiter ldlim](/reference/datagate/datagate-client/delimiter.html), [NewLineDelimeter rdlim](/reference/datagate/datagate-client/new-line-delimeter.html))
 
 Determines whether a  instance and a  instance are not equal.
 
 ```cs
-bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
+bool op_Inequality(Delimiter ldlim, NewLineDelimeter rdlim)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | rdlim | 
 
 #### Returns
 

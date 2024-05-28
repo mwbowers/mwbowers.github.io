@@ -17,7 +17,7 @@ Defines methods for writing data to an open access channel.
 | --- | --- |
 | [Flush()](#void-flush) | Flushes the writer, sending any buffered data to the channel.
 | [Prepare()](#void-prepare) | Prepares the writer for a new write operation.
-| [Write](#void-writebyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the channel from the specified buffer.
+| [Write](#void-writebyte--inbuf-int-ibegin-int-cbytes)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the channel from the specified buffer.
 | [WriteByte](#void-writebytebyte-b)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Writes a single byte to the channel.
 
 ### void Flush()

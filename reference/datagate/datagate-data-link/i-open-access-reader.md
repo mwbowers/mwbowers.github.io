@@ -16,7 +16,7 @@ Defines methods for reading data from an open access channel.
 | Signature | Description |
 | --- | --- |
 | [Flush()](#void-flush) | Flushes the reader, clearing any buffered data.
-| [Read](#int-readbyte--inbuf-int-ibegin-int-cbytes)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the channel into the specified buffer.
+| [Read](#int-readbyte--inbuf-int-ibegin-int-cbytes)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the channel into the specified buffer.
 | [ReadByte()](#int-readbyte) | Reads a single byte from the channel.
 | [Receive()](#void-receive) | Receives data from the channel.
 

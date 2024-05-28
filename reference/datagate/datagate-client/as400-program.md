@@ -74,23 +74,18 @@ As400Program(AdgConnection, String)
 | Signature | Description |
 | --- | --- |
 | [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a parameter to the program.
-| [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a parameter to the specified list of parameters.
-| [AppendParms](#void-appendparmsprogparm--parameters)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends an array of parameters to the program.
+| [AppendParms](#void-appendparmsprogparm--parameters)([ProgParm\[\]](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends an array of parameters to the program.
 | [Dispose()](#void-dispose) | Releases all resources used by the current instance of the  class.
-| [Dispose](#void-dispose)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the  and optionally releases the managed resources.
 | [Execute()](#void-execute) | Executes the program with the current parameters.
-| [Finalize()](#void-finalize) | Finalizes an instance of the  class.
 | [GetParameters()](#ienumerable-progparm-getparameters) | Gets the parameters of the program.
-| [GetParmByName](#progparm-getparmbynamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter with the specified name.
-| [GetParmByName](#progparm-getparmbynamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter with the specified name from the specified list of parameters.
 | [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified type.
-| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified object to a parameter.
-| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified name and element indices.
-| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified object to a parameter of the specified name.
+| [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified object to a parameter.
+| [ObjectToParm](#void-objecttoparmobject-value-string-parametername-int32--elementindices)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified name and element indices.
+| [ObjectToParm](#void-objecttoparmobject-value-string-parametername)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified object to a parameter of the specified name.
 | [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified parameter to an object of the specified type.
-| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the specified parameter to an object of the specified type.
-| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified parameter to an object of the specified type.
-| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype-int-element)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified parameter to an object of the specified type.
+| [ParmToObject](#object-parmtoobjectprogparm-parameter-type-returntype)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Converts the specified parameter to an object of the specified type.
+| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername-int32--elementindices)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified parameter to an object of the specified type.
+| [ParmToObject](#object-parmtoobjecttype-returntype-string-parametername)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the specified parameter to an object of the specified type.
 | [ReadParmXml](#void-readparmxmlxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the parameters of the program from an XML reader.
 | [SetConnection](#void-setconnectionadgconnection-value)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Sets the connection to be used by the program.
 | [SetParmsZeroValue()](#void-setparmszerovalue) | Sets all parameters of the program to their zero value.
@@ -110,14 +105,6 @@ void AppendParm(ProgParm parameter)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | 
-
-### void AppendParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html))
-
-Appends a parameter to the specified list of parameters.
-
-```cs
-void AppendParm(ProgParm parameter)
-```
 
 ### void AppendParms([ProgParm\[\] parameters](/reference/datagate/datagate-data-link/prog-parm.html))
 
@@ -141,14 +128,6 @@ Releases all resources used by the current instance of the  class.
 void Dispose()
 ```
 
-### void Dispose()
-
-Releases the unmanaged resources used by the  and optionally releases the managed resources.
-
-```cs
-void Dispose()
-```
-
 ### void Execute()
 
 Executes the program with the current parameters.
@@ -157,48 +136,12 @@ Executes the program with the current parameters.
 void Execute()
 ```
 
-### void Finalize()
-
-Finalizes an instance of the  class.
-
-```cs
-void Finalize()
-```
-
 ### IEnumerable<ProgParm> GetParameters()
 
 Gets the parameters of the program.
 
 ```cs
 IEnumerable<ProgParm> GetParameters()
-```
-
-### ProgParm GetParmByName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Gets the parameter with the specified name.
-
-```cs
-ProgParm GetParmByName(string name)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | The parameter with the specified name, or null if no such parameter exists.
-
-### ProgParm GetParmByName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Gets the parameter with the specified name from the specified list of parameters.
-
-```cs
-ProgParm GetParmByName(string name)
 ```
 
 ### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
@@ -217,37 +160,51 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | 
 
-### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Converts the specified object to a parameter.
 
 ```cs
-void ObjectToParm(ProgParm parameter, object value, int element)
-```
-
-### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-
-Converts the specified object to a parameter of the specified name and element indices.
-
-```cs
-void ObjectToParm(ProgParm parameter, object value, int element)
+void ObjectToParm(ProgParm parameter, object value)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | value | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parameterName | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
 
-### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void ObjectToParm([object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32\[\] elementIndices](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Converts the specified object to a parameter of the specified name and element indices.
+
+```cs
+void ObjectToParm(object value, string parameterName, Int32[] elementIndices)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | 
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
+
+### void ObjectToParm([object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Converts the specified object to a parameter of the specified name.
 
 ```cs
-void ObjectToParm(ProgParm parameter, object value, int element)
+void ObjectToParm(object value, string parameterName)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | 
 
 ### object ParmToObject([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -271,29 +228,20 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An object of the specified type, representing the specified parameter.
 
-### object ParmToObject([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### object ParmToObject([ProgParm Parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
 Converts the specified parameter to an object of the specified type.
 
 ```cs
-object ParmToObject(ProgParm parameter, Type returnType, int element)
-```
-
-### object ParmToObject([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-
-Converts the specified parameter to an object of the specified type.
-
-```cs
-object ParmToObject(ProgParm parameter, Type returnType, int element)
+object ParmToObject(ProgParm Parameter, Type ReturnType)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | returnType | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | parameterName | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
 
 #### Returns
 
@@ -301,13 +249,48 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An object of the specified type, representing the specified parameter.
 
-### object ParmToObject([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### object ParmToObject([Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32\[\] elementIndices](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Converts the specified parameter to an object of the specified type.
 
 ```cs
-object ParmToObject(ProgParm parameter, Type returnType, int element)
+object ParmToObject(Type returnType, string parameterName, Int32[] elementIndices)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | returnType | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | 
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An object of the specified type, representing the specified parameter.
+
+### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Converts the specified parameter to an object of the specified type.
+
+```cs
+object ParmToObject(Type ReturnType, string ParameterName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | An object of the specified type, representing the specified parameter.
 
 ### void ReadParmXml([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 

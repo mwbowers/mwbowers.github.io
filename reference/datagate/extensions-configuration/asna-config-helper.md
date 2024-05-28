@@ -23,8 +23,7 @@ IAsnaConfig properties encoded in JSON configuration texts.
 | Signature | Description |
 | --- | --- |
 | [LoadFromJson](#iasnaconfig-loadfromjsonstream-jsonstream)([Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0)) | Returns an instance of IAsnaConfig, given a stream.
-| [LoadFromJson](#iasnaconfig-loadfromjsonstream-jsonstream)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an instance of IAsnaConfig, given a path to aJSON-encoded file.
-| [TryLoadFromDefaultFile](#bool-tryloadfromdefaultfileiasnaconfig-config)([IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html)) | Gets a configuration from the default file.
+| [LoadFromJson](#iasnaconfig-loadfromjsonstring-jsonfilepath)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an instance of IAsnaConfig, given a path to aJSON-encoded file.
 
 ### IAsnaConfig LoadFromJson([Stream jsonStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 
@@ -46,42 +45,22 @@ IAsnaConfig LoadFromJson(Stream jsonStream)
 | --- | ---
 | [IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html) | IAsnaConfig
 
-### IAsnaConfig LoadFromJson([Stream jsonStream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
+### IAsnaConfig LoadFromJson([string jsonFilePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Returns an instance of IAsnaConfig, given a path to aJSON-encoded file.
 
 ```cs
-IAsnaConfig LoadFromJson(Stream jsonStream)
+IAsnaConfig LoadFromJson(string jsonFilePath)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | jsonFilePath | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jsonFilePath | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
 | [IAsnaConfig](/reference/datagate/extensions-configuration/i-asna-config.html) | 
-
-### bool TryLoadFromDefaultFile([IAsnaConfig& config](/reference/datagate/extensions-configuration/i-asna-config.html))
-
-Gets a configuration from the default file.
-
-```cs
-bool TryLoadFromDefaultFile(IAsnaConfig& config)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IAsnaConfig&](/reference/datagate/extensions-configuration/i-asna-config.html) | config | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if a configuration is loaded from thedefault config file; otherwise false.

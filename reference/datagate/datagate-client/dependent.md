@@ -34,7 +34,7 @@ Each `Dependent` has an `AdgObjectType` indicating the type of the ASNA DataGate
 | Signature | Description |
 | --- | --- |
 | [Equals](#bool-equalsdependent-other)([Dependent](/reference/datagate/datagate-client/dependent.html)) | Determines whether the specified  is equal to the current .
-| [Equals](#bool-equalsdependent-other)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current .
+| [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current .
 | [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
 | [ToString()](#string-tostring) | Returns a string that represents the current object.
 
@@ -58,19 +58,19 @@ bool Equals(Dependent other)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified  is equal to the current ; otherwise, false.
 
-### bool Equals([Dependent other](/reference/datagate/datagate-client/dependent.html))
+### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Determines whether the specified object is equal to the current .
 
 ```cs
-bool Equals(Dependent other)
+bool Equals(object obj)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Dependent](/reference/datagate/datagate-client/dependent.html) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
 
 #### Returns
 

@@ -80,16 +80,15 @@ AdgConnection(SourceProfile, IExchange5250)
 | Signature | Description |
 | --- | --- |
 | [BeginAutoTransaction](#iadgtransaction-beginautotransactiontransactionlevel-tl-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level and options.
-| [BeginAutoTransaction](#iadgtransaction-beginautotransactiontransactionlevel-tl-string-options)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified name and options.
-| [BeginAutoTransaction](#iadgtransaction-beginautotransactiontransactionlevel-tl-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
+| [BeginAutoTransaction](#iadgtransaction-beginautotransactionstring-name-string-options)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified name and options.
+| [BeginAutoTransaction](#iadgtransaction-beginautotransactiontransactionlevel-tl-string-name-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins an automatic transaction with the specified transaction level, name, and options.
 | [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html)) | Begins a transaction with the specified transaction level.
-| [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified name.
-| [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level and name.
-| [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
+| [BeginTransaction](#iadgtransaction-begintransactionstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified name.
+| [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl-string-name)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level and name.
+| [BeginTransaction](#iadgtransaction-begintransactiontransactionlevel-tl-string-name-string-options)([TransactionLevel](/reference/datagate/datagate-common/transaction-level.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Begins a transaction with the specified transaction level, name, and options.
 | [Clone()](#object-clone) | Creates a new AdgConnection that is a copy of the current instance.
 | [Close()](#void-close) | Closes the connection to the database.
 | [Dispose()](#void-dispose) | Releases all resources used by the AdgConnection.
-| [Dispose](#void-dispose)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the AdgConnection.
 | [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current AdgConnection instance is equal to the specified object.
 | [GetDatabaseAttributes()](#databaseattributes-getdatabaseattributes) | Gets the attributes of the database.
 | [GetDeviceCodePageID()](#int-getdevicecodepageid) | Gets the device code page ID.
@@ -102,7 +101,7 @@ AdgConnection(SourceProfile, IExchange5250)
 | [op_Equality](#bool-op-equalityadgconnection-x-adgconnection-y)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Determines whether two AdgConnection instances are equal.
 | [op_Inequality](#bool-op-inequalityadgconnection-x-adgconnection-y)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Determines whether two AdgConnection instances are not equal.
 | [Open](#void-opencancellationtoken-ct)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the database with default options.
-| [Open](#void-opencancellationtoken-ct)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the database with the specified options.
+| [Open](#void-openopenoptions-openoptions-cancellationtoken-ct)([OpenOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the database with the specified options.
 | [Synchronized](#adgconnection-synchronizedadgconnection-cn)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Returns a synchronized (thread-safe) wrapper for the AdgConnection.
 
 ### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -126,19 +125,19 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 | --- | ---
 | [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
 
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginAutoTransaction([string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins an automatic transaction with the specified name and options.
 
 ```cs
-IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
+IAdgTransaction BeginAutoTransaction(string Name, string Options)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
 
 #### Returns
@@ -147,13 +146,27 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 | --- | ---
 | [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
 
-### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IAdgTransaction BeginAutoTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins an automatic transaction with the specified transaction level, name, and options.
 
 ```cs
-IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
+IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Options)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
 
 ### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html))
 
@@ -175,19 +188,19 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 | --- | ---
 | [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html))
+### IAdgTransaction BeginTransaction([string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins a transaction with the specified name.
 
 ```cs
-IAdgTransaction BeginTransaction(TransactionLevel tl)
+IAdgTransaction BeginTransaction(string Name)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
 
 #### Returns
 
@@ -195,21 +208,48 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 | --- | ---
 | [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html))
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins a transaction with the specified transaction level and name.
 
 ```cs
-IAdgTransaction BeginTransaction(TransactionLevel tl)
+IAdgTransaction BeginTransaction(TransactionLevel tl, string Name)
 ```
 
-### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html))
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
+
+### IAdgTransaction BeginTransaction([TransactionLevel tl](/reference/datagate/datagate-common/transaction-level.html), [string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Options](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Begins a transaction with the specified transaction level, name, and options.
 
 ```cs
-IAdgTransaction BeginTransaction(TransactionLevel tl)
+IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Options)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgTransaction](/reference/datagate/datagate-client/i-adg-transaction.html) | A new IAdgTransaction representing the transaction.
 
 ### object Clone()
 
@@ -230,14 +270,6 @@ void Close()
 ### void Dispose()
 
 Releases all resources used by the AdgConnection.
-
-```cs
-void Dispose()
-```
-
-### void Dispose()
-
-Releases the resources used by the AdgConnection.
 
 ```cs
 void Dispose()
@@ -395,13 +427,20 @@ void Open(CancellationToken ct)
 | --- | --- | ---
 | [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
 
-### void Open([CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
+### void Open([OpenOptions openOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
 
 Opens a connection to the database with the specified options.
 
 ```cs
-void Open(CancellationToken ct)
+void Open(OpenOptions openOptions, CancellationToken ct)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [OpenOptions](/reference/datagate/datagate-providers/open-options.html) | openOptions | 
+| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
 
 ### AdgConnection Synchronized([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html))
 

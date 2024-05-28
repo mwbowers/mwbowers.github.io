@@ -29,7 +29,7 @@ Any instance members are not guaranteed to be thread safe.
 | Signature | Description |
 | --- | --- |
 | [NewDataArea](#idataarea-newdataareaadgconnection-cn-string-pathname)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of the  interface with an unknown subtype.
-| [NewDataArea](#idataarea-newdataareaadgconnection-cn-string-pathname)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgSubTypes](/reference/datagate/datagate-common/adg-sub-types.html)) | Creates a new instance of the  interface with a specified subtype.
+| [NewDataArea](#idataarea-newdataareaadgconnection-cn-string-pathname-adgsubtypes-dataareatype)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgSubTypes](/reference/datagate/datagate-common/adg-sub-types.html)) | Creates a new instance of the  interface with a specified subtype.
 | [NewDirectory](#idirectory-newdirectoryadgconnection-cn-string-pathname)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of the  interface.
 | [NewFile](#ifileobject-newfileadgconnection-cn-string-pathname)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of the  interface.
 | [NewLibraryList](#ilibrarylist-newlibrarylistadgconnection-cn)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Creates a new instance of the  interface.
@@ -37,11 +37,11 @@ Any instance members are not guaranteed to be thread safe.
 | [NewObject](#iadgobject-newobjectadgconnection-cn-adgobjecttypes-type-string-path)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new instance of the  interface.
 | [NewSystemValue](#isystemvalue-newsystemvalueadgconnection-cn-bool-withnewtransaction)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Creates a new instance of the  interface.
 | [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-string-docobjectnewname-xmlreader-reader-xmloptions-options-xmlcanceleventhandler-observer)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Reads an XML document and creates a new instance of the  interface.
-| [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-string-docobjectnewname-xmlreader-reader-xmloptions-options-xmlcanceleventhandler-observer)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Reads an XML document and creates a new instance of the  interface.
-| [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-string-docobjectnewname-xmlreader-reader-xmloptions-options-xmlcanceleventhandler-observer)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Reads an XML document and creates a new instance of the  interface.
-| [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-string-docobjectnewname-xmlreader-reader-xmloptions-options-xmlcanceleventhandler-observer)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Reads an XML document and creates a new instance of the  interface.
+| [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-string-docobjectnewname-xmlreader-reader-xmloptions-options)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Reads an XML document and creates a new instance of the  interface.
+| [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-xmlreader-reader-xmloptions-options-xmlcanceleventhandler-observer)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Reads an XML document and creates a new instance of the  interface.
+| [ReadXml](#iadgobject-readxmladgconnection-cn-string-containerpath-adgobjecttypes-docobjecttype-xmlreader-reader-xmloptions-options)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Reads an XML document and creates a new instance of the  interface.
 | [Synchronized](#iadgobject-synchronizediadgobject-adgobj)([IAdgObject](/reference/datagate/datagate-client/i-adg-object.html)) | Wraps an  in a synchronized (thread-safe) wrapper.
-| [Synchronized](#iadgobject-synchronizediadgobject-adgobj)([ILibraryList](/reference/datagate/datagate-client/i-library-list.html)) | Wraps an  in a synchronized (thread-safe) wrapper.
+| [Synchronized](#ilibrarylist-synchronizedilibrarylist-llobj)([ILibraryList](/reference/datagate/datagate-client/i-library-list.html)) | Wraps an  in a synchronized (thread-safe) wrapper.
 
 ### IDataArea NewDataArea([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -64,13 +64,27 @@ IDataArea NewDataArea(AdgConnection cn, string PathName)
 | --- | ---
 | [IDataArea](/reference/datagate/datagate-client/i-data-area.html) | A new instance of the  interface.
 
-### IDataArea NewDataArea([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IDataArea NewDataArea([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgSubTypes DataAreaType](/reference/datagate/datagate-common/adg-sub-types.html))
 
 Creates a new instance of the  interface with a specified subtype.
 
 ```cs
-IDataArea NewDataArea(AdgConnection cn, string PathName)
+IDataArea NewDataArea(AdgConnection cn, string PathName, AdgSubTypes DataAreaType)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
+| [AdgSubTypes](/reference/datagate/datagate-common/adg-sub-types.html) | DataAreaType | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IDataArea](/reference/datagate/datagate-client/i-data-area.html) | A new instance of the  interface.
 
 ### IDirectory NewDirectory([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -224,29 +238,79 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 | --- | ---
 | [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | A new instance of the  interface.
 
-### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
+### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html))
 
 Reads an XML document and creates a new instance of the  interface.
 
 ```cs
-IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, string docObjectNewName, XmlReader reader, XmlOptions options, XmlCancelEventHandler observer)
+IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, string docObjectNewName, XmlReader reader, XmlOptions options)
 ```
 
-### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | docObjectNewName | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | A new instance of the  interface.
+
+### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
 
 Reads an XML document and creates a new instance of the  interface.
 
 ```cs
-IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, string docObjectNewName, XmlReader reader, XmlOptions options, XmlCancelEventHandler observer)
+IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, XmlReader reader, XmlOptions options, XmlCancelEventHandler observer)
 ```
 
-### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | observer | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | A new instance of the  interface.
+
+### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html))
 
 Reads an XML document and creates a new instance of the  interface.
 
 ```cs
-IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, string docObjectNewName, XmlReader reader, XmlOptions options, XmlCancelEventHandler observer)
+IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, XmlReader reader, XmlOptions options)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | A new instance of the  interface.
 
 ### IAdgObject Synchronized([IAdgObject adgObj](/reference/datagate/datagate-client/i-adg-object.html))
 
@@ -268,22 +332,22 @@ IAdgObject Synchronized(IAdgObject adgObj)
 | --- | ---
 | [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | A thread-safe wrapper around the .
 
-### IAdgObject Synchronized([IAdgObject adgObj](/reference/datagate/datagate-client/i-adg-object.html))
+### ILibraryList Synchronized([ILibraryList llObj](/reference/datagate/datagate-client/i-library-list.html))
 
 Wraps an  in a synchronized (thread-safe) wrapper.
 
 ```cs
-IAdgObject Synchronized(IAdgObject adgObj)
+ILibraryList Synchronized(ILibraryList llObj)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | llObj | 
+| [ILibraryList](/reference/datagate/datagate-client/i-library-list.html) | llObj | 
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | A thread-safe wrapper around the .
+| [ILibraryList](/reference/datagate/datagate-client/i-library-list.html) | A thread-safe wrapper around the .

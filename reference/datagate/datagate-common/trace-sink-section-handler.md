@@ -38,7 +38,7 @@ TraceSinkSectionHandler()
 
 | Signature | Description |
 | --- | --- |
-| [Create](#object-createobject-parent-object-context-xmlnode-section)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Creates a new instance of the TraceSinkSectionHandler class.
+| [Create](#object-createobject-parent-object-context-xmlnode-section)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0)) | Creates a new instance of the TraceSinkSectionHandler class.
 
 ### object Create([object parent](https://docs.microsoft.com/en-us/dotnet/api/system.object), [object context](https://docs.microsoft.com/en-us/dotnet/api/system.object), [XmlNode section](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0))
 

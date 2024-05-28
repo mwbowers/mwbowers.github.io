@@ -17,8 +17,6 @@ This class includes methods for creating tasks to perform the export, logging me
 | Signature | Description |
 | --- | --- |
 | [With](#task-withexportoptions-options)([ExportOptions](/reference/datagate/datagate-client/export-options.html)) | Starts a new task to export data with the specified options.
-| [With](#task-withexportoptions-options)([ExportOptions](/reference/datagate/datagate-client/export-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)) | Starts a new task to export data with the specified options and cancellation token.
-| [With](#task-withexportoptions-options)([ExportOptions](/reference/datagate/datagate-client/export-options.html), [Nullable](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [TaskCreationOptions](https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskcreationoptions?view=net-8.0)) | Starts a new task to export data with the specified options, cancellation token, and task creation options.
 
 ### Task With([ExportOptions options](/reference/datagate/datagate-client/export-options.html))
 
@@ -39,19 +37,3 @@ Task With(ExportOptions options)
 | Type | Description
 | --- | ---
 | [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler) | A task that represents the asynchronous data export operation.
-
-### Task With([ExportOptions options](/reference/datagate/datagate-client/export-options.html))
-
-Starts a new task to export data with the specified options and cancellation token.
-
-```cs
-Task With(ExportOptions options)
-```
-
-### Task With([ExportOptions options](/reference/datagate/datagate-client/export-options.html))
-
-Starts a new task to export data with the specified options, cancellation token, and task creation options.
-
-```cs
-Task With(ExportOptions options)
-```

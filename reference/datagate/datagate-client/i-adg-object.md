@@ -69,8 +69,8 @@ such as methods for managing authorities, locks, and XML serialization, and prop
 | [Unlock](#void-unlocksharetypes-sharetype)([ShareTypes](/reference/datagate/datagate-common/share-types.html)) | Unlocks the ADG object with the specified share type.
 | [WriteBases](#void-writebasesxmlwriter-writer)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Writes the base objects of the ADG object to an XML writer.
 | [WriteXml](#void-writexmlxmlwriter-writer-xmloptions-options)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html)) | Writes the ADG object to an XML writer using the specified options.
-| [WriteXml](#void-writexmlxmlwriter-writer-xmloptions-options)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Writes the ADG object to an XML writer using the specified options and event handler.
-| [WriteXml](#void-writexmlxmlwriter-writer-xmloptions-options)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html)) | Writes the ADG object to an XML writer using the specified options, event handler, and file opener delegate.
+| [WriteXml](#void-writexmlxmlwriter-writer-xmloptions-options-xmlcanceleventhandler-hndlr)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html)) | Writes the ADG object to an XML writer using the specified options and event handler.
+| [WriteXml](#void-writexmlxmlwriter-writer-xmloptions-options-xmlcanceleventhandler-hndlr-openfileadapterdelegate-fileopener)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html)) | Writes the ADG object to an XML writer using the specified options, event handler, and file opener delegate.
 
 ### void Create()
 
@@ -272,18 +272,35 @@ void WriteXml(XmlWriter writer, XmlOptions options)
 | [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
 | [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
 
-### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html))
+### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler hndlr](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
 
 Writes the ADG object to an XML writer using the specified options and event handler.
 
 ```cs
-void WriteXml(XmlWriter writer, XmlOptions options)
+void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr)
 ```
 
-### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html))
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | hndlr | 
+
+### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler hndlr](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate fileOpener](/reference/datagate/datagate-client/open-file-adapter-delegate.html))
 
 Writes the ADG object to an XML writer using the specified options, event handler, and file opener delegate.
 
 ```cs
-void WriteXml(XmlWriter writer, XmlOptions options)
+void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr, OpenFileAdapterDelegate fileOpener)
 ```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | hndlr | 
+| [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html) | fileOpener | 

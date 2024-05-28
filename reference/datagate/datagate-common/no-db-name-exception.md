@@ -55,30 +55,3 @@ NoDbNameException(String, Exception)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbname | 
 | [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
-
-## Methods
-
-| Signature | Description |
-| --- | --- |
-| [FormatMessage](#string-formatmessageiformatprovider-provider-string-msg)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the error message and the database name into a single string for logging or displaying to the user.
-
-### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Formats the error message and the database name into a single string for logging or displaying to the user.
-
-```cs
-string FormatMessage(IFormatProvider provider, string msg)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0) | provider | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | msg | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A formatted string containing the error message and database name.

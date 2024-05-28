@@ -43,7 +43,7 @@ IndicatorExpression(String)
 
 | Signature | Description |
 | --- | --- |
-| [Eval](#bool-evalchar--indicators)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the indicator expression against the provided set of indicators.
+| [Eval](#bool-evalchar--indicators)([Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Evaluates the indicator expression against the provided set of indicators.
 
 ### bool Eval([Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 

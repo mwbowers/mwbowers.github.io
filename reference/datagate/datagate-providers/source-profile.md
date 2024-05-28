@@ -72,9 +72,9 @@ SourceProfile(SourceProfile)
 | Signature | Description |
 | --- | --- |
 | [Clone()](#object-clone) | Creates a new object that is a copy of the current instance.
-| [Equals](#bool-equalssourceprofile-x-sourceprofile-y)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether the current instance of  is equal to the specified instance.
-| [Equals](#bool-equalssourceprofile-x-sourceprofile-y)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current instance of  is equal to the specified instance.
-| [Equals](#bool-equalssourceprofile-x-sourceprofile-y)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the current instance of  is equal to the specified object.
+| [Equals](#bool-equalssourceprofile-other)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether the current instance of  is equal to the specified instance.
+| [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current instance of  is equal to the specified instance.
+| [Equals](#bool-equalsobject-obj-bool-bignoredatabasename)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the current instance of  is equal to the specified object.
 | [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
 | [IsKnownPlatformAttribute](#bool-isknownplatformattributestring-platformattr)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is a known platform attribute.
 | [op_Equality](#bool-op-equalitysourceprofile-x-sourceprofile-y)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether two instances of  are equal.
@@ -89,36 +89,60 @@ Creates a new object that is a copy of the current instance.
 object Clone()
 ```
 
-### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
+### bool Equals([SourceProfile other](/reference/datagate/datagate-providers/source-profile.html))
 
 Determines whether the current instance of  is equal to the specified instance.
 
 ```cs
-bool Equals(SourceProfile x, SourceProfile y)
-```
-
-### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
-
-Determines whether the current instance of  is equal to the specified instance.
-
-```cs
-bool Equals(SourceProfile x, SourceProfile y)
-```
-
-### bool Equals([SourceProfile x](/reference/datagate/datagate-providers/source-profile.html), [SourceProfile y](/reference/datagate/datagate-providers/source-profile.html))
-
-Determines whether the current instance of  is equal to the specified object.
-
-```cs
-bool Equals(SourceProfile x, SourceProfile y)
+bool Equals(SourceProfile other)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | obj | 
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | bIgnoreDatabaseName | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | other | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the current instance is equal to the specified instance; otherwise, false.
+
+### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Determines whether the current instance of  is equal to the specified instance.
+
+```cs
+bool Equals(object obj)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | other | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the current instance is equal to the specified instance; otherwise, false.
+
+### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object), [bool bIgnoreDatabaseName](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Determines whether the current instance of  is equal to the specified object.
+
+```cs
+bool Equals(object obj, bool bIgnoreDatabaseName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIgnoreDatabaseName | 
 
 #### Returns
 

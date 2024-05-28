@@ -52,14 +52,8 @@ FileOpenAttr()
 | Signature | Description |
 | --- | --- |
 | [Add](#void-addstring-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds an element with the provided key and value to the FileOpenAttr.
-| [Add](#void-addstring-key-object-value)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds an item to the FileOpenAttr.
-| [Contains](#bool-containskeyvaluepair-string-object-item)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the FileOpenAttr contains a specific value.
 | [ContainsKey](#bool-containskeystring-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the FileOpenAttr contains an element with the specified key.
-| [CopyTo](#void-copytokeyvaluepair-2--array-int-arrayindex)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies the elements of the FileOpenAttr to an Array, starting at a particular Array index.
 | [Remove](#bool-removestring-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the element with the specified key from the FileOpenAttr.
-| [Remove](#bool-removestring-key)([KeyValuePair](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Removes the first occurrence of a specific object from the FileOpenAttr.
-| [System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String,System#Object}}#GetEnumerator()](#) | Returns an enumerator that iterates through the FileOpenAttr.
-| [TryGetValue](#bool-trygetvaluestring-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets the value associated with the specified key.
 
 ### void Add([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -75,29 +69,6 @@ void Add(string key, object value)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-
-### void Add([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Adds an item to the FileOpenAttr.
-
-```cs
-void Add(string key, object value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | item | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) |  | 
-
-### bool Contains([KeyValuePair\<string, object\> item](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0))
-
-Determines whether the FileOpenAttr contains a specific value.
-
-```cs
-bool Contains(KeyValuePair<string, object> item)
-```
 
 ### bool ContainsKey([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -119,14 +90,6 @@ bool ContainsKey(string key)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the FileOpenAttr contains an element with the key; otherwise, false.
 
-### void CopyTo([KeyValuePair`2\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [int arrayIndex](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-
-Copies the elements of the FileOpenAttr to an Array, starting at a particular Array index.
-
-```cs
-void CopyTo(KeyValuePair`2[] array, int arrayIndex)
-```
-
 ### bool Remove([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Removes the element with the specified key from the FileOpenAttr.
@@ -146,32 +109,3 @@ bool Remove(string key)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the element is successfully found and removed; otherwise, false.
-
-### bool Remove([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Removes the first occurrence of a specific object from the FileOpenAttr.
-
-```cs
-bool Remove(string key)
-```
-
-### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Object& value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Gets the value associated with the specified key.
-
-```cs
-bool TryGetValue(string key, Object& value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
-| [Object&](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the FileOpenAttr contains an element with the specified key; otherwise, false.

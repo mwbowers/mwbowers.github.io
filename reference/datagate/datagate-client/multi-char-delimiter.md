@@ -32,9 +32,9 @@ It also provides methods and operators for comparing delimiters, converting them
 | [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current  object.
 | [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
 | [op_Equality](#bool-op-equalitymultichardelimiter-ldlim-delimiter-rdlim)([MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines whether a  instance and a  instance are equal.
-| [op_Equality](#bool-op-equalitymultichardelimiter-ldlim-delimiter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines whether a  instance and a  instance are equal.
+| [op_Equality](#bool-op-equalitydelimiter-ldlim-multichardelimiter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines whether a  instance and a  instance are equal.
 | [op_Inequality](#bool-op-inequalitymultichardelimiter-ldlim-delimiter-rdlim)([MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter](/reference/datagate/datagate-client/delimiter.html)) | Determines whether a  instance and a  instance are not equal.
-| [op_Inequality](#bool-op-inequalitymultichardelimiter-ldlim-delimiter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines whether a  instance and a  instance are not equal.
+| [op_Inequality](#bool-op-inequalitydelimiter-ldlim-multichardelimiter-rdlim)([Delimiter](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html)) | Determines whether a  instance and a  instance are not equal.
 | [ToString()](#string-tostring) | Returns a string that represents the current  object.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
@@ -86,20 +86,20 @@ bool op_Equality(MultiCharDelimiter ldlim, Delimiter rdlim)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the instances are equal; otherwise, false.
 
-### bool op_Equality([MultiCharDelimiter ldlim](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
+### bool op_Equality([Delimiter ldlim](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter rdlim](/reference/datagate/datagate-client/multi-char-delimiter.html))
 
 Determines whether a  instance and a  instance are equal.
 
 ```cs
-bool op_Equality(MultiCharDelimiter ldlim, Delimiter rdlim)
+bool op_Equality(Delimiter ldlim, MultiCharDelimiter rdlim)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
+| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | rdlim | 
 
 #### Returns
 
@@ -128,20 +128,20 @@ bool op_Inequality(MultiCharDelimiter ldlim, Delimiter rdlim)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the instances are not equal; otherwise, false.
 
-### bool op_Inequality([MultiCharDelimiter ldlim](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
+### bool op_Inequality([Delimiter ldlim](/reference/datagate/datagate-client/delimiter.html), [MultiCharDelimiter rdlim](/reference/datagate/datagate-client/multi-char-delimiter.html))
 
 Determines whether a  instance and a  instance are not equal.
 
 ```cs
-bool op_Inequality(MultiCharDelimiter ldlim, Delimiter rdlim)
+bool op_Inequality(Delimiter ldlim, MultiCharDelimiter rdlim)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
+| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | rdlim | 
 
 #### Returns
 

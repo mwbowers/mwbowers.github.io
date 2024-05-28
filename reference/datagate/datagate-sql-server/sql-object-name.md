@@ -102,8 +102,6 @@ SqlObjectName(String, String, String, String)
 | Signature | Description |
 | --- | --- |
 | [Parse](#sqlobjectname-parsestring-input)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Parses a string into a SqlObjectName.
-| [ParseInternal](#bool-parseinternalstring-input-bool-bthrowonerror-sqlobjectname-returnval)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Parse a T-SQL identifier of the form w.x.y.z, x.y.z, y.z, or z,where w is the name of the server, x is the name of the databasey is the name of the schema, and z is the name of the object.  Eachelement of the name may be quoted with brackets ([]) or single- ordouble-quotes.  Any missing prefixes (w, x, and/or y) will be givena null value.Valid examples:[server.asna.com].Examples..CustmastNorthwind."dbo".MainTblInvalid examples:'ironwood'.[mydb][schema].table   (missing '.')db."table                         (missing '"')$$TODO - Treats all IDs as quoted; does not use T-SQL rules forunquoted identifiers.
-| [TryParse](#bool-tryparsestring-input-sqlobjectname-output)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Tries to parse a string into a SqlObjectName.
 
 ### SqlObjectName Parse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -124,46 +122,3 @@ SqlObjectName Parse(string input)
 | Type | Description
 | --- | ---
 | [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html) | A SqlObjectName that represents the parsed string.
-
-### bool ParseInternal([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool bThrowOnError](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SqlObjectName& returnVal](/reference/datagate/datagate-sql-server/sql-object-name.html))
-
-Parse a T-SQL identifier of the form w.x.y.z, x.y.z, y.z, or z,where w is the name of the server, x is the name of the databasey is the name of the schema, and z is the name of the object.  Eachelement of the name may be quoted with brackets ([]) or single- ordouble-quotes.  Any missing prefixes (w, x, and/or y) will be givena null value.Valid examples:[server.asna.com].Examples..CustmastNorthwind."dbo".MainTblInvalid examples:'ironwood'.[mydb][schema].table   (missing '.')db."table                         (missing '"')$$TODO - Treats all IDs as quoted; does not use T-SQL rules forunquoted identifiers.
-
-```cs
-bool ParseInternal(string input, bool bThrowOnError, SqlObjectName& returnVal)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bThrowOnError | 
-| [SqlObjectName&](/reference/datagate/datagate-sql-server/sql-object-name.html) | returnVal | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | 
-
-### bool TryParse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [SqlObjectName& output](/reference/datagate/datagate-sql-server/sql-object-name.html))
-
-Tries to parse a string into a SqlObjectName.
-
-```cs
-bool TryParse(string input, SqlObjectName& output)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | 
-| [SqlObjectName&](/reference/datagate/datagate-sql-server/sql-object-name.html) | output | 
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the input was converted successfully; otherwise, false.
