@@ -50,7 +50,7 @@ bool Equals(Dependent other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Dependent](/reference/datagate/datagate-client/dependent.html) | other | 
+| [Dependent](/reference/datagate/datagate-client/dependent.html) | other | The  to compare with the current .
 
 #### Returns
 
@@ -70,7 +70,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current .
 
 #### Returns
 

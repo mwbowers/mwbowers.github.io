@@ -34,6 +34,6 @@ ProgParmType(String, Int32, FieldType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | 
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | type | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the program parameter.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | The number of elements in the program parameter.
+| [FieldType](/reference/datagate/datagate-common/field-type.html) | type | The field type of the program parameter.

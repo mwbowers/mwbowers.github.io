@@ -30,10 +30,10 @@ ImportOptions(IMember, String, Boolean, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
+| [IMember](/reference/datagate/datagate-client/i-member.html) | target | The target member where the data will be imported.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The source path from where the data will be imported.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | A flag indicating whether the target member should be cleared before the import.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | A flag indicating whether the target connection should be used for the import.
 
 ## Properties
 

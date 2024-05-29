@@ -53,9 +53,9 @@ void AddEntry(string path, LiblPosition pos, string refLib)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
-| [LiblPosition](/reference/datagate/datagate-client/libl-position.html) | pos | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | refLib | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The path of the library to add.
+| [LiblPosition](/reference/datagate/datagate-client/libl-position.html) | pos | The position to add the library at.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | refLib | Optional reference library.
 
 ### void EnumerateCurrentSystem([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
 
@@ -69,7 +69,7 @@ void EnumerateCurrentSystem(AdgEnumerator enumerator)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | 
+| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | The enumerator to use.
 
 ### void EnumerateCurrentUser([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
 
@@ -83,7 +83,7 @@ void EnumerateCurrentUser(AdgEnumerator enumerator)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | 
+| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | The enumerator to use.
 
 ### void RemoveEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -97,4 +97,4 @@ void RemoveEntry(string path)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The path of the library to remove.

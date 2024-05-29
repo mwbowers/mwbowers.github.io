@@ -33,15 +33,15 @@ DatabaseAttributes(String, String, String, String, String, String, Int32, Int32,
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | proxyName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | proxyVersion | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operatingSystem | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | hardware | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | label | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | totalSeats | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | busySeats | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | secure | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | The database name.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | proxyName | The proxy name.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | proxyVersion | The proxy version.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operatingSystem | The operating system.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | hardware | The hardware.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | label | The label.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | totalSeats | The total number of seats.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | busySeats | The number of busy seats.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | secure | Whether the connection is secure.
 
 ## Properties
 

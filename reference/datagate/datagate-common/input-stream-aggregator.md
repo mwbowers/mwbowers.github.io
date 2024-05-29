@@ -66,9 +66,9 @@ int Read(Byte[] buffer, int offset, int count)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | offset | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | count | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | offset | The zero-based byte offset in buffer at which to begin storing the data read from the current stream.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | count | The maximum number of bytes to be read from the current stream.
 
 #### Returns
 
@@ -96,8 +96,8 @@ long Seek(long offset, SeekOrigin origin)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | offset | 
-| [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0) | origin | 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | offset | A byte offset relative to the origin parameter.
+| [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0) | origin | A value of type SeekOrigin indicating the reference point used to obtain the new position.
 
 #### Returns
 
@@ -117,7 +117,7 @@ void SetLength(long value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | value | 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | value | The desired length of the current stream in bytes.
 
 ### void Write([Byte\[\] buffer](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int offset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int count](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -131,6 +131,6 @@ void Write(Byte[] buffer, int offset, int count)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | offset | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | count | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | buffer | An array of bytes. This method copies count bytes from buffer to the current stream.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | offset | The zero-based byte offset in buffer at which to begin copying bytes to the current stream.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | count | The number of bytes to be written to the current stream.

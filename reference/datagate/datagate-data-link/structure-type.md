@@ -33,6 +33,6 @@ StructureType(String, Int32, Object[])
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | 
-| [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | members | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the structure.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | The number of elements in the structure.
+| [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | members | The members of the structure.

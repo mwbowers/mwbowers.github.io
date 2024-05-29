@@ -55,8 +55,8 @@ IDataArea NewDataArea(AdgConnection cn, string PathName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | The path name of the data area.
 
 #### Returns
 
@@ -76,9 +76,9 @@ IDataArea NewDataArea(AdgConnection cn, string PathName, AdgSubTypes DataAreaTyp
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
-| [AdgSubTypes](/reference/datagate/datagate-common/adg-sub-types.html) | DataAreaType | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | The path name of the data area.
+| [AdgSubTypes](/reference/datagate/datagate-common/adg-sub-types.html) | DataAreaType | The subtype of the data area.
 
 #### Returns
 
@@ -98,8 +98,8 @@ IDirectory NewDirectory(AdgConnection cn, string PathName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | The path name of the directory.
 
 #### Returns
 
@@ -119,8 +119,8 @@ IFileObject NewFile(AdgConnection cn, string PathName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | The path name of the file.
 
 #### Returns
 
@@ -140,7 +140,7 @@ ILibraryList NewLibraryList(AdgConnection cn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
 
 #### Returns
 
@@ -160,8 +160,8 @@ IMember NewMember(AdgConnection cn, string PathName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | PathName | The path name of the member.
 
 #### Returns
 
@@ -181,9 +181,9 @@ IAdgObject NewObject(AdgConnection cn, AdgObjectTypes type, string path)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | type | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | type | The type of the object to create.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The path of the object to create.
 
 #### Returns
 
@@ -203,8 +203,8 @@ ISystemValue NewSystemValue(AdgConnection cn, bool withNewTransaction)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | withNewTransaction | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | withNewTransaction | A boolean value indicating whether to create a new transaction.
 
 #### Returns
 
@@ -224,13 +224,13 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
-| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | docObjectNewName | 
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
-| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | observer | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | The path of the container for the object.
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | The type of the object to create.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | docObjectNewName | The new name for the object, or null to use the existing name.
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The  to use to read the XML document.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The  to use when reading the XML document.
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | observer | An optional  to observe the reading process.
 
 #### Returns
 
@@ -250,12 +250,12 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
-| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | docObjectNewName | 
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | The path of the container for the object.
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | The type of the object to create.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | docObjectNewName | The new name for the object.
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The  to use to read the XML document.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The  to use when reading the XML document.
 
 #### Returns
 
@@ -275,12 +275,12 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
-| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
-| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | observer | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | The path of the container for the object.
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | The type of the object to create.
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The  to use to read the XML document.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The  to use when reading the XML document.
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | observer | An optional  to observe the reading process.
 
 #### Returns
 
@@ -300,11 +300,11 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | 
-| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | 
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The  to use for the operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | containerPath | The path of the container for the object.
+| [AdgObjectTypes](/reference/datagate/datagate-common/adg-object-types.html) | docObjectType | The type of the object to create.
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The  to use to read the XML document.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The  to use when reading the XML document.
 
 #### Returns
 
@@ -324,7 +324,7 @@ IAdgObject Synchronized(IAdgObject adgObj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | adgObj | 
+| [IAdgObject](/reference/datagate/datagate-client/i-adg-object.html) | adgObj | The  to wrap.
 
 #### Returns
 
@@ -344,7 +344,7 @@ ILibraryList Synchronized(ILibraryList llObj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ILibraryList](/reference/datagate/datagate-client/i-library-list.html) | llObj | 
+| [ILibraryList](/reference/datagate/datagate-client/i-library-list.html) | llObj | The  to wrap.
 
 #### Returns
 

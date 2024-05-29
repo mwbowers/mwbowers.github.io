@@ -29,7 +29,7 @@ DataGateCredential(CredentialType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | type | 
+| [CredentialType](/reference/datagate/datagate-providers/credential-type.html) | type | The type of credentials used for authentication.
 
 ## Properties
 
@@ -66,7 +66,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object.
 
 #### Returns
 
@@ -86,7 +86,7 @@ bool Equals(IDataGateCredential other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | other | 
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | other | The IDataGateCredential to compare with the current object.
 
 #### Returns
 

@@ -29,7 +29,7 @@ AltEncodingInfo(AltEncoding)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html) | enc | 
+| [AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html) | enc | The AltEncoding to use.
 
 ## Properties
 

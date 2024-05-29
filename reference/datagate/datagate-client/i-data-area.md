@@ -64,7 +64,7 @@ void AppendParm(ProgParm Parameter)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | The ProgParm parameter to append.
 
 ### void Change([bool Value](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -78,7 +78,7 @@ void Change(bool Value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Value | The boolean value to set.
 
 ### void Change([decimal Value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types))
 
@@ -92,7 +92,7 @@ void Change(decimal Value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | Value | 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | Value | The decimal value to set.
 
 ### void Change([string Value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -106,7 +106,7 @@ void Change(string Value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Value | The string value to set.
 
 ### void Change([string Value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int StartingOffset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int SubstringLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -120,9 +120,9 @@ void Change(string Value, int StartingOffset, int SubstringLength)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Value | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Value | The string value to set.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | The starting offset of the subset.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | The length of the subset.
 
 ### void Change([ProgParm Value](/reference/datagate/datagate-data-link/prog-parm.html))
 
@@ -136,7 +136,7 @@ void Change(ProgParm Value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | The ProgParm value to set.
 
 ### void Change([ProgParm Value](/reference/datagate/datagate-data-link/prog-parm.html), [int StartingOffset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int SubstringLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -150,9 +150,9 @@ void Change(ProgParm Value, int StartingOffset, int SubstringLength)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | The ProgParm value to set.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | The starting offset of the subset.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | The length of the subset.
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -166,8 +166,8 @@ void ObjectToParm(object Value, string ParameterName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The object to convert.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | The name of the ProgParm parameter.
 
 ### void ObjectToParm([ProgParm Parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -181,8 +181,8 @@ void ObjectToParm(ProgParm Parameter, object Value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | The ProgParm parameter to assign to.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The object to convert.
 
 ### void ObjectToParm([ProgParm Parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int Element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -196,9 +196,9 @@ void ObjectToParm(ProgParm Parameter, object Value, int Element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Element | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | The ProgParm parameter to assign to.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The object to convert.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Element | The element index in the ProgParm parameter.
 
 ### void ObjectToParm([object Value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32\[\] ElementIndices](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
@@ -212,9 +212,9 @@ void ObjectToParm(object Value, string ParameterName, Int32[] ElementIndices)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
-| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ElementIndices | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | Value | The object to convert.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | The name of the ProgParm parameter.
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ElementIndices | The element indices in the ProgParm parameter.
 
 ### object ParmToObject([Type ReturnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string ParameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -228,8 +228,8 @@ object ParmToObject(Type ReturnType, string ParameterName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | The type to convert to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | The name of the ProgParm parameter.
 
 #### Returns
 
@@ -249,8 +249,8 @@ object ParmToObject(ProgParm Parameter, Type ReturnType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | The ProgParm parameter to convert.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | The type to convert to.
 
 #### Returns
 
@@ -270,9 +270,9 @@ object ParmToObject(ProgParm Parameter, Type ReturnType, int Element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Element | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | The ProgParm parameter to convert.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | The type to convert to.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Element | The element index in the ProgParm parameter.
 
 #### Returns
 
@@ -292,9 +292,9 @@ object ParmToObject(Type ReturnType, string ParameterName, Int32[] ElementIndice
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
-| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ElementIndices | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | The type to convert to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | The name of the ProgParm parameter.
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ElementIndices | The element indices in the ProgParm parameter.
 
 #### Returns
 
@@ -322,8 +322,8 @@ string Retrieve(int StartingOffset, int SubstringLength)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | 0-based index of first character            of the subset.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | The non-negative length of the            subset.
 
 #### Returns
 
@@ -343,7 +343,7 @@ void Retrieve(ProgParm Value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | The ProgParm value to retrieve into.
 
 ### void Retrieve([ProgParm Value](/reference/datagate/datagate-data-link/prog-parm.html), [int StartingOffset](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int SubstringLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -357,9 +357,9 @@ void Retrieve(ProgParm Value, int StartingOffset, int SubstringLength)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Value | The ProgParm value to retrieve into.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | StartingOffset | The starting offset of the subset.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | SubstringLength | The length of the subset.
 
 ### void SetInitialValue([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -373,4 +373,4 @@ void SetInitialValue(string value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The initial value to set.

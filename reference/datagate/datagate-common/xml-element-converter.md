@@ -30,8 +30,8 @@ XmlElementConverter(XmlNode, ISchemaElementName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | container | 
-| [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html) | elementName | 
+| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | container | The XML container.
+| [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html) | elementName | The name of the element.
 
 ### XmlElementConverter([XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0), [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0), [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html))
 
@@ -45,9 +45,9 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | container | 
-| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | element | 
-| [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html) | elementName | 
+| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | container | The XML container.
+| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | element | The XML element to convert.
+| [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html) | elementName | The name of the element.
 
 ## Properties
 
@@ -86,7 +86,7 @@ XmlElement CreateElement(bool addXmlnsAttr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | addXmlnsAttr | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | addXmlnsAttr | If true, adds an xmlns attribute with the namespace of the element.
 
 #### Returns
 
@@ -106,8 +106,8 @@ int GetChildCount(string childElementName, string childElementNamespace)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementNamespace | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementName | The name of the child elements to count.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementNamespace | The namespace of the child elements to count.
 
 #### Returns
 
@@ -127,8 +127,8 @@ XmlNodeList GetChildren(string childElementName, string childElementNamespace)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementNamespace | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementName | The name of the child elements to get.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childElementNamespace | The namespace of the child elements to get.
 
 #### Returns
 
@@ -148,8 +148,8 @@ IEnumerable<XmlElement> GetChildrenOrThrow(string childName, string childNamespa
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childNamespace | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childName | The name of the child elements to get.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | childNamespace | The namespace of the child elements to get.
 
 #### Returns
 
@@ -193,7 +193,7 @@ string GetElementText(XmlElement element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | element | 
+| [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | element | The XmlElement to get the text from.
 
 #### Returns
 
@@ -221,7 +221,7 @@ string GetXsdBool(bool value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | value | 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | value | The boolean value to convert.
 
 #### Returns
 
@@ -241,4 +241,4 @@ void SetElementText(string text)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | The value to set as the text of the current XmlElement.

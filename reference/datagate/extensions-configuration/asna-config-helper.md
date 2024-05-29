@@ -37,7 +37,7 @@ IAsnaConfig LoadFromJson(Stream jsonStream)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | jsonStream | 
+| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | jsonStream | The input Stream.
 
 #### Returns
 

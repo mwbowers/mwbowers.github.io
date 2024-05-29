@@ -40,7 +40,7 @@ ChannelIOStreamException(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | The message that describes the error.
 
 ### ChannelIOStreamException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
@@ -54,8 +54,8 @@ ChannelIOStreamException(String, Exception)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | innerException | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | The error message that explains the reason for the exception.
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | innerException | The exception that is the cause of the current exception, or a null reference if no inner exception is specified.
 
 ### ChannelIOStreamException([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
@@ -69,4 +69,4 @@ ChannelIOStreamException(Exception)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | The exception that is the cause of the current exception.

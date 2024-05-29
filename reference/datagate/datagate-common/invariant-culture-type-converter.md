@@ -36,7 +36,7 @@ InvariantCultureTypeConverter(TypeConverter)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) | inner | 
+| [TypeConverter](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=net-8.0) | inner | The  instance that this converter wraps.
 
 ## Methods
 
@@ -70,8 +70,8 @@ bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | sourceType | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | sourceType | A  that represents the type you want to convert from.
 
 #### Returns
 
@@ -91,8 +91,8 @@ bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | destinationType | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | destinationType | A  that represents the type you want to convert to.
 
 #### Returns
 
@@ -112,9 +112,9 @@ object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object v
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | culture | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | culture | The  to use as the current culture. This is not used in this implementation, as the invariant culture is always used.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The  to convert.
 
 #### Returns
 
@@ -134,10 +134,10 @@ object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object val
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | culture | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | destinationType | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo) | culture | The  to use as the current culture. This is not used in this implementation, as the invariant culture is always used.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The  to convert.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | destinationType | The  that represents the type you want to convert to.
 
 #### Returns
 
@@ -157,8 +157,8 @@ object CreateInstance(ITypeDescriptorContext context, IDictionary propertyValues
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | propertyValues | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.idictionary-2) | propertyValues | An  of new property values.
 
 #### Returns
 
@@ -178,7 +178,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The  to compare with the current object.
 
 #### Returns
 
@@ -198,7 +198,7 @@ bool GetCreateInstanceSupported(ITypeDescriptorContext context)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
 
 #### Returns
 
@@ -226,9 +226,9 @@ PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, objec
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-| [Attribute\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) | attributes | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | An  that specifies the type of array for which to get properties.
+| [Attribute\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.attribute) | attributes | An array of type  that is used as a filter.
 
 #### Returns
 
@@ -248,7 +248,7 @@ bool GetPropertiesSupported(ITypeDescriptorContext context)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
 
 #### Returns
 
@@ -268,7 +268,7 @@ StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
 
 #### Returns
 
@@ -288,7 +288,7 @@ bool GetStandardValuesExclusive(ITypeDescriptorContext context)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
 
 #### Returns
 
@@ -308,7 +308,7 @@ bool GetStandardValuesSupported(ITypeDescriptorContext context)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
 
 #### Returns
 
@@ -328,8 +328,8 @@ bool IsValid(ITypeDescriptorContext context, object value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+| [ITypeDescriptorContext](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0) | context | An  that provides a format context.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The  to evaluate for validity.
 
 #### Returns
 

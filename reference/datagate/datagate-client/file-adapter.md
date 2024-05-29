@@ -45,7 +45,7 @@ FileAdapter(AdgConnection)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The connection to use for the FileAdapter.
 
 ### FileAdapter([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -59,8 +59,8 @@ FileAdapter(AdgConnection, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FileName | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The connection to use for the FileAdapter.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FileName | The name of the file to work with.
 
 ### FileAdapter([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -74,9 +74,9 @@ FileAdapter(AdgConnection, String, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FileNamePm | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MemberNamePm | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The connection to use for the FileAdapter.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FileNamePm | The name of the file to work with.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MemberNamePm | The name of the member to work with.
 
 ### FileAdapter([IFileObject](/reference/datagate/datagate-client/i-file-object.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -90,8 +90,8 @@ FileAdapter(IFileObject, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | fileObject | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | memberName | 
+| [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | fileObject | The FileObject to use for the FileAdapter.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | memberName | The name of the member to work with.
 
 ### FileAdapter([IFileObject](/reference/datagate/datagate-client/i-file-object.html))
 
@@ -105,7 +105,7 @@ FileAdapter(IFileObject)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | fileObject | 
+| [IFileObject](/reference/datagate/datagate-client/i-file-object.html) | fileObject | The FileObject to use for the FileAdapter.
 
 ## Properties
 
@@ -178,7 +178,7 @@ void AddRecord(AdgDataSet ds)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet containing the data for the new record.
 
 ### void AddRecord([XmlReader xr](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 
@@ -192,8 +192,8 @@ void AddRecord(XmlReader xr, AdgDataSet ds)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | xr | 
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | xr | The XmlReader containing the data for the new record.
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet containing the schema for the new record.
 
 ### void AddRecord([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [Char\[\] appIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
@@ -207,8 +207,8 @@ void AddRecord(AdgDataSet ds, Char[] appIndicators)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | appIndicators | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet containing the data for the new record.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | appIndicators | The application indicators for the new record.
 
 ### void ChangeCurrent([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 
@@ -222,7 +222,7 @@ void ChangeCurrent(AdgDataSet ds)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet containing the data for the new record.
 
 ### void ChangeRRN([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -236,8 +236,8 @@ void ChangeRRN(AdgDataSet ds, long RRN)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet containing the data for the new record.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | The relative record number of the record to change to.
 
 ### void CheckKey([AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
@@ -251,7 +251,7 @@ void CheckKey(AdgKeyTable keyTable)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | 
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | The AdgKeyTable to check.
 
 ### void Close()
 
@@ -297,7 +297,7 @@ void DeleteKey(AdgKeyTable keyTable)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | 
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | The AdgKeyTable containing the key of the record to delete.
 
 ### void DeleteRange([AdgKeyTable firstKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst rangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable lastKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast rangeLast](/reference/datagate/datagate-common/range-last.html))
 
@@ -311,10 +311,10 @@ void DeleteRange(AdgKeyTable firstKey, RangeFirst rangeFirst, AdgKeyTable lastKe
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | firstKey | 
-| [RangeFirst](/reference/datagate/datagate-common/range-first.html) | rangeFirst | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | lastKey | 
-| [RangeLast](/reference/datagate/datagate-common/range-last.html) | rangeLast | 
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | firstKey | The AdgKeyTable containing the key of the first record in the range to delete.
+| [RangeFirst](/reference/datagate/datagate-common/range-first.html) | rangeFirst | The RangeFirst value indicating whether to include the first record in the deletion.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | lastKey | The AdgKeyTable containing the key of the last record in the range to delete.
+| [RangeLast](/reference/datagate/datagate-common/range-last.html) | rangeLast | The RangeLast value indicating whether to include the last record in the deletion.
 
 ### void DeleteRRN([long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -328,7 +328,7 @@ void DeleteRRN(long RRN)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | The relative record number of the record to delete.
 
 ### void Dispose()
 
@@ -358,7 +358,7 @@ string GetFormatName(int i)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | i | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | i | The index of the format to get the name of.
 
 #### Returns
 
@@ -378,7 +378,7 @@ IPrintProperties GetPrintProperties(string format)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | format | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | format | The name of the format to get the print properties for.
 
 #### Returns
 
@@ -398,7 +398,7 @@ void Open(AdgDataSet ds)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to use for the FileAdapter.
 
 ### void ReadRandomKey([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode mode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
@@ -412,10 +412,10 @@ void ReadRandomKey(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, AdgKeyTab
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html) | mode | 
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to fill with the data from the record.
+| [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html) | mode | The ReadRandomMode to use when reading the record.
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The LockRequest to use when reading the record.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | The AdgKeyTable containing the key of the record to read.
 
 ### void ReadRandomRRN([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode mode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -429,10 +429,10 @@ void ReadRandomRRN(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, long RRN)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html) | mode | 
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to fill with the data from the record.
+| [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html) | mode | The ReadRandomMode to use when reading the record.
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The LockRequest to use when reading the record.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | The relative record number of the record to read.
 
 ### void ReadRange([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [RangeMode mode](/reference/datagate/datagate-common/range-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable firstKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst rangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable lastKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast rangeLast](/reference/datagate/datagate-common/range-last.html))
 
@@ -446,13 +446,13 @@ void ReadRange(AdgDataSet ds, RangeMode mode, LockRequest lr, AdgKeyTable firstK
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [RangeMode](/reference/datagate/datagate-common/range-mode.html) | mode | 
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | firstKey | 
-| [RangeFirst](/reference/datagate/datagate-common/range-first.html) | rangeFirst | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | lastKey | 
-| [RangeLast](/reference/datagate/datagate-common/range-last.html) | rangeLast | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to fill with the data from the records.
+| [RangeMode](/reference/datagate/datagate-common/range-mode.html) | mode | The RangeMode to use when reading the records.
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The LockRequest to use when reading the records.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | firstKey | The AdgKeyTable containing the key of the first record in the range to read.
+| [RangeFirst](/reference/datagate/datagate-common/range-first.html) | rangeFirst | The RangeFirst value indicating whether to include the first record in the read.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | lastKey | The AdgKeyTable containing the key of the last record in the range to read.
+| [RangeLast](/reference/datagate/datagate-common/range-last.html) | rangeLast | The RangeLast value indicating whether to include the last record in the read.
 
 ### void ReadSequential([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode mode](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html))
 
@@ -466,9 +466,9 @@ void ReadSequential(AdgDataSet ds, ReadSequentialMode mode, LockRequest lr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html) | mode | 
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to fill with the data from the record.
+| [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html) | mode | The ReadSequentialMode to use when reading the record.
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The LockRequest to use when reading the record.
 
 ### void ReadSequentialEqual([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadEqualMode mode](/reference/datagate/datagate-common/read-equal-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
@@ -482,10 +482,10 @@ void ReadSequentialEqual(AdgDataSet ds, ReadEqualMode mode, LockRequest lr, AdgK
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [ReadEqualMode](/reference/datagate/datagate-common/read-equal-mode.html) | mode | 
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to fill with the data from the record.
+| [ReadEqualMode](/reference/datagate/datagate-common/read-equal-mode.html) | mode | The ReadEqualMode to use when reading the record.
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The LockRequest to use when reading the record.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | The AdgKeyTable containing the key of the record to read.
 
 ### void ReleaseCurrent()
 
@@ -507,8 +507,8 @@ void ReleaseRRN(LockRequest lr, long RRN)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The LockRequest to use when releasing the lock.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | The relative record number of the record to release the lock on.
 
 ### void ResetFormat()
 
@@ -538,8 +538,8 @@ void ReuseRRN(AdgDataSet ds, long RRN)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to fill with the data from the record.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | The relative record number of the record to reuse.
 
 ### void SeekKey([SeekMode mode](/reference/datagate/datagate-common/seek-mode.html), [AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
@@ -553,8 +553,8 @@ void SeekKey(SeekMode mode, AdgKeyTable keyTable)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SeekMode](/reference/datagate/datagate-common/seek-mode.html) | mode | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | 
+| [SeekMode](/reference/datagate/datagate-common/seek-mode.html) | mode | The SeekMode to use when seeking the record.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | keyTable | The AdgKeyTable containing the key of the record to seek.
 
 ### void SeekRange([RangeMode mode](/reference/datagate/datagate-common/range-mode.html), [AdgKeyTable firstKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst rangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable lastKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast rangeLast](/reference/datagate/datagate-common/range-last.html))
 
@@ -568,11 +568,11 @@ void SeekRange(RangeMode mode, AdgKeyTable firstKey, RangeFirst rangeFirst, AdgK
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [RangeMode](/reference/datagate/datagate-common/range-mode.html) | mode | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | firstKey | 
-| [RangeFirst](/reference/datagate/datagate-common/range-first.html) | rangeFirst | 
-| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | lastKey | 
-| [RangeLast](/reference/datagate/datagate-common/range-last.html) | rangeLast | 
+| [RangeMode](/reference/datagate/datagate-common/range-mode.html) | mode | The SeekMode to use when seeking the record.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | firstKey | The AdgKeyTable containing the key of the first record in the range to seek.
+| [RangeFirst](/reference/datagate/datagate-common/range-first.html) | rangeFirst | The RangeFirst value indicating whether to include the first record in the seek.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | lastKey | The AdgKeyTable containing the key of the last record in the range to seek.
+| [RangeLast](/reference/datagate/datagate-common/range-last.html) | rangeLast | The RangeLast value indicating whether to include the last record in the seek.
 
 ### void SeekRRN([SeekMode mode](/reference/datagate/datagate-common/seek-mode.html), [long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -586,8 +586,8 @@ void SeekRRN(SeekMode mode, long RRN)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SeekMode](/reference/datagate/datagate-common/seek-mode.html) | mode | 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | 
+| [SeekMode](/reference/datagate/datagate-common/seek-mode.html) | mode | The SeekMode to use when seeking the record.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | RRN | The relative record number of the record to seek.
 
 ### void SetFormat([string Format](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -601,7 +601,7 @@ void SetFormat(string Format)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Format | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Format | The name of the format to set.
 
 ## Example 1. Use of WaitForRecord Open attribute property. 
 

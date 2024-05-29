@@ -34,8 +34,8 @@ ProgParm(ProgParmType, DataDirection)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html) | ppt | 
-| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | dir | 
+| [ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html) | ppt | The type of the parameter.
+| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | dir | The direction of the data (input, output, or both).
 
 ### ProgParm([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html))
 
@@ -49,8 +49,8 @@ ProgParm(StructureType, DataDirection)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [StructureType](/reference/datagate/datagate-data-link/structure-type.html) | st | 
-| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | dir | 
+| [StructureType](/reference/datagate/datagate-data-link/structure-type.html) | st | The structure type of the parameter.
+| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | dir | The direction of the data (input, output, or both).
 
 ## Properties
 

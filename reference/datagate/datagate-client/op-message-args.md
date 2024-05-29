@@ -30,7 +30,7 @@ OpMessageArgs(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | msg | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | msg | The message to be passed with the event.
 
 ## Properties
 

@@ -36,7 +36,7 @@ Type GetBoundType(string fieldName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | The name of the field.
 
 #### Returns
 
@@ -56,7 +56,7 @@ object GetTypedObject(string fieldName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | The name of the field.
 
 #### Returns
 
@@ -76,8 +76,8 @@ object GetValue(string fieldName, string propName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | propName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | The name of the field.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | propName | The name of the property.
 
 #### Returns
 
@@ -97,6 +97,6 @@ void SetValue(string fieldName, string propName, object val)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | propName | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | val | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | The name of the field.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | propName | The name of the property.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | val | The value to set.

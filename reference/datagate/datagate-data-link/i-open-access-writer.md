@@ -48,9 +48,9 @@ void Write(Byte[] inBuf, int iBegin, int cBytes)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | The buffer containing the data to write to the channel.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | The zero-based byte offset in inBuf at which to begin writing from.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | The number of bytes to write.
 
 ### void WriteByte([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
 
@@ -64,4 +64,4 @@ void WriteByte(byte b)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | The byte to write.

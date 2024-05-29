@@ -49,7 +49,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object.
 
 #### Returns
 
@@ -77,8 +77,8 @@ bool op_Equality(MultiCharDelimiter ldlim, Delimiter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | ldlim | The  instance to compare.
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | The  instance to compare.
 
 #### Returns
 
@@ -98,8 +98,8 @@ bool op_Equality(Delimiter ldlim, MultiCharDelimiter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
-| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | rdlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | The  instance to compare.
+| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | rdlim | The  instance to compare.
 
 #### Returns
 
@@ -119,8 +119,8 @@ bool op_Inequality(MultiCharDelimiter ldlim, Delimiter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | ldlim | The  instance to compare.
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | The  instance to compare.
 
 #### Returns
 
@@ -140,8 +140,8 @@ bool op_Inequality(Delimiter ldlim, MultiCharDelimiter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
-| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | rdlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | The  instance to compare.
+| [MultiCharDelimiter](/reference/datagate/datagate-client/multi-char-delimiter.html) | rdlim | The  instance to compare.
 
 #### Returns
 

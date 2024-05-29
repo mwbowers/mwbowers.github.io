@@ -35,7 +35,7 @@ AltEncoding GetEncoding(string name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the encoding, as returned by             AltEncoding.EncodingName.
 
 #### Returns
 

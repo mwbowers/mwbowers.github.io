@@ -43,7 +43,7 @@ AdgConnection(SourceProfile)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | The SourceProfile to be used for the connection.
 
 ### AdgConnection([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [IExchange5250](/reference/datagate/datagate-providers/i-exchange5250.html))
 
@@ -57,8 +57,8 @@ AdgConnection(SourceProfile, IExchange5250)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | 
-| [IExchange5250](/reference/datagate/datagate-providers/i-exchange5250.html) | exchange5250 | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | The SourceProfile to be used for the connection.
+| [IExchange5250](/reference/datagate/datagate-providers/i-exchange5250.html) | exchange5250 | The IExchange5250 to be used for the connection.
 
 ## Properties
 
@@ -116,8 +116,8 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | The transaction level for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | The options for the new transaction.
 
 #### Returns
 
@@ -137,8 +137,8 @@ IAdgTransaction BeginAutoTransaction(string Name, string Options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | The name for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | The options for the new transaction.
 
 #### Returns
 
@@ -158,9 +158,9 @@ IAdgTransaction BeginAutoTransaction(TransactionLevel tl, string Name, string Op
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | The transaction level for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | The name for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | The options for the new transaction.
 
 #### Returns
 
@@ -180,7 +180,7 @@ IAdgTransaction BeginTransaction(TransactionLevel tl)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | The transaction level for the new transaction.
 
 #### Returns
 
@@ -200,7 +200,7 @@ IAdgTransaction BeginTransaction(string Name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | The name for the new transaction.
 
 #### Returns
 
@@ -220,8 +220,8 @@ IAdgTransaction BeginTransaction(TransactionLevel tl, string Name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | The transaction level for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | The name for the new transaction.
 
 #### Returns
 
@@ -241,9 +241,9 @@ IAdgTransaction BeginTransaction(TransactionLevel tl, string Name, string Option
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | 
+| [TransactionLevel](/reference/datagate/datagate-common/transaction-level.html) | tl | The transaction level for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | The name for the new transaction.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Options | The options for the new transaction.
 
 #### Returns
 
@@ -287,7 +287,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current instance.
 
 #### Returns
 
@@ -363,7 +363,7 @@ bool IsCanceledException(Exception e)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | 
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | The exception to check.
 
 #### Returns
 
@@ -383,8 +383,8 @@ bool op_Equality(AdgConnection x, AdgConnection y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | x | 
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | y | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | x | The first AdgConnection to compare.
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | y | The second AdgConnection to compare.
 
 #### Returns
 
@@ -404,8 +404,8 @@ bool op_Inequality(AdgConnection x, AdgConnection y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | x | 
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | y | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | x | The first AdgConnection to compare.
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | y | The second AdgConnection to compare.
 
 #### Returns
 
@@ -425,7 +425,7 @@ void Open(CancellationToken ct)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
+| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | A cancellation token that can be used to cancel the operation.
 
 ### void Open([OpenOptions openOptions](/reference/datagate/datagate-providers/open-options.html), [CancellationToken ct](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0))
 
@@ -439,8 +439,8 @@ void Open(OpenOptions openOptions, CancellationToken ct)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [OpenOptions](/reference/datagate/datagate-providers/open-options.html) | openOptions | 
-| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | 
+| [OpenOptions](/reference/datagate/datagate-providers/open-options.html) | openOptions | The options for opening the connection.
+| [CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0) | ct | A cancellation token that can be used to cancel the operation.
 
 ### AdgConnection Synchronized([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html))
 
@@ -454,7 +454,7 @@ AdgConnection Synchronized(AdgConnection cn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | cn | The AdgConnection to synchronize.
 
 #### Returns
 

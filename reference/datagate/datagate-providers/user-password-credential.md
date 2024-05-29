@@ -36,9 +36,9 @@ UserPasswordCredential(String, String, PasswordType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | password | 
-| [PasswordType](/reference/datagate/datagate-common/password-type.html) | passwordType | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | Traditional user name for logon.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | password | Traditional character passphrase for logon,            or .            
+| [PasswordType](/reference/datagate/datagate-common/password-type.html) | passwordType | For old servers with limited password            length requirements, set this to .            In most cases use the default value.
 
 ### UserPasswordCredential()
 
@@ -84,7 +84,7 @@ bool Equals(IDataGateCredential other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | other | 
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | other | The instance to compare with the current instance.
 
 #### Returns
 

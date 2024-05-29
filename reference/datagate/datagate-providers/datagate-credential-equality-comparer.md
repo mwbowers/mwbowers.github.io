@@ -36,8 +36,8 @@ bool Equals(IDataGateCredential x, IDataGateCredential y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | x | 
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | y | 
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | x | The first IDataGateCredential object to compare.
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | y | The second IDataGateCredential object to compare.
 
 #### Returns
 
@@ -57,7 +57,7 @@ int GetHashCode(IDataGateCredential obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | obj | 
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | obj | The IDataGateCredential object for which a hash code is to be returned.
 
 #### Returns
 

@@ -49,7 +49,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object.
 
 #### Returns
 
@@ -77,8 +77,8 @@ bool op_Equality(NewLineDelimeter _, Delimiter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | _ | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | _ | The  instance to compare.
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | The  instance to compare.
 
 #### Returns
 
@@ -98,8 +98,8 @@ bool op_Equality(Delimiter ldlim, NewLineDelimeter _)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | _ | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | The  instance to compare.
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | _ | The  instance to compare.
 
 #### Returns
 
@@ -119,8 +119,8 @@ bool op_Inequality(NewLineDelimeter ldlim, Delimiter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | 
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | ldlim | The  instance to compare.
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rdlim | The  instance to compare.
 
 #### Returns
 
@@ -140,8 +140,8 @@ bool op_Inequality(Delimiter ldlim, NewLineDelimeter rdlim)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | 
-| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | rdlim | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | ldlim | The  instance to compare.
+| [NewLineDelimeter](/reference/datagate/datagate-client/new-line-delimeter.html) | rdlim | The  instance to compare.
 
 #### Returns
 

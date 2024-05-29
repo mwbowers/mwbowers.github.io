@@ -44,8 +44,8 @@ void ChangeDatabase(SourceProfile serverAndCredentials, ILabel label)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | 
-| [ILabel](/reference/datagate/datagate-client/i-label.html) | label | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | Object identifying the server,            user and password, or kerberos SPN.
+| [ILabel](/reference/datagate/datagate-client/i-label.html) | label | Label details
 
 ### void CreateDatabase([SourceProfile serverAndCredentials](/reference/datagate/datagate-providers/source-profile.html), [bool bIsSecured](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ILabel label](/reference/datagate/datagate-client/i-label.html))
 
@@ -59,9 +59,9 @@ void CreateDatabase(SourceProfile serverAndCredentials, bool bIsSecured, ILabel 
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIsSecured | 
-| [ILabel](/reference/datagate/datagate-client/i-label.html) | label | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | Object identifying the server            and client credentials.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIsSecured | Whether the database is secure
+| [ILabel](/reference/datagate/datagate-client/i-label.html) | label | Label details for the database
 
 ### void CreateDatabase([SourceProfile serverAndCredentials](/reference/datagate/datagate-providers/source-profile.html), [bool bIsSecured](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ILabel pLabel](/reference/datagate/datagate-client/i-label.html), [int tcpPort](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -75,10 +75,10 @@ void CreateDatabase(SourceProfile serverAndCredentials, bool bIsSecured, ILabel 
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIsSecured | 
-| [ILabel](/reference/datagate/datagate-client/i-label.html) | pLabel | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | tcpPort | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | Object identifying the server            and client credentials.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIsSecured | Whether the database is secure
+| [ILabel](/reference/datagate/datagate-client/i-label.html) | pLabel | Label details for the database
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | tcpPort | The TCP port number the server listens to.            
 
 ### ILabel CreateLabelObject()
 
@@ -100,8 +100,8 @@ ILabel GetLabel(SourceProfile sp, string lblName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | lblName | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | The source profile containing server and user credentials.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | lblName | The name of the label to retrieve.
 
 #### Returns
 
@@ -121,7 +121,7 @@ ILabel[] GetLabels(SourceProfile sp)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | Connection parameters defining the machine to            to search, server TCP port, user credentials, and Krb5 SPN.            
 
 #### Returns
 
@@ -141,7 +141,7 @@ void RemoveDatabase(SourceProfile sourceProfile)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sourceProfile | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sourceProfile | Provides server host name, port,            database label to delete, and user credentials.
 
 ### void UnlabelDatabase([SourceProfile source](/reference/datagate/datagate-providers/source-profile.html))
 
@@ -155,4 +155,4 @@ void UnlabelDatabase(SourceProfile source)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | source | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | source | Provides Label name, server, port, and access            credentials.

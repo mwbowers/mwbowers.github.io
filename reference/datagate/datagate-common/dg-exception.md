@@ -48,7 +48,7 @@ dgException(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | The message that describes the error.
 
 ### dgException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
@@ -62,8 +62,8 @@ dgException(String, Exception)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | The error message that explains the reason for the exception.
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | The exception that is the cause of the current exception, or a null reference if no inner exception is specified.
 
 ### dgException([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
@@ -77,12 +77,12 @@ dgException(dgErrorNumber, Int32, dgErrorClass, String, String, Exception)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | systemError | 
-| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | errorClass | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | 
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
+| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | The error code.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | systemError | The system error code.
+| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | errorClass | The class of the error.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | The error message.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | The error text.
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | The inner exception.
 
 ### dgException([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -96,11 +96,11 @@ dgException(dgErrorNumber, Int32, dgErrorClass, String, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | systemError | 
-| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | errorClass | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | 
+| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | The error code.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | systemError | The system error code.
+| [dgErrorClass](/reference/datagate/datagate-common/dg-error-class.html) | errorClass | The class of the error.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | message | The error message.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | The error text.
 
 ### dgException([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html))
 
@@ -114,7 +114,7 @@ dgException(dgErrorNumber)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | 
+| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | The error code.
 
 ### dgException([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
@@ -128,8 +128,8 @@ dgException(dgErrorNumber, Exception)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | 
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | 
+| [dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html) | error | The error code.
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | e | The Exception object.
 
 ## Properties
 

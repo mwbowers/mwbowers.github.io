@@ -53,7 +53,7 @@ void AttachRemoteDirectory(string remotePathName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | remotePathName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | remotePathName | The path name of the remote directory to attach.
 
 ### IDirectory CreateSubDirectory([string Name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -67,7 +67,7 @@ IDirectory CreateSubDirectory(string Name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Name | The name of the subdirectory to create.
 
 #### Returns
 
@@ -87,7 +87,7 @@ void Enumerate(AdgEnumerator enumerator)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | 
+| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | The enumerator to use.
 
 ### void Enumerate([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html), [FileTypes fType](/reference/datagate/datagate-common/file-types.html), [bool sysObjs](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -101,9 +101,9 @@ void Enumerate(AdgEnumerator enumerator, FileTypes fType, bool sysObjs)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | 
-| [FileTypes](/reference/datagate/datagate-common/file-types.html) | fType | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | sysObjs | 
+| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | The enumerator to use.
+| [FileTypes](/reference/datagate/datagate-common/file-types.html) | fType | The file types to enumerate.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | sysObjs | Whether to include system objects in the enumeration.
 
 ### void RepairObjects([RepairOptions repairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver observer](/reference/datagate/datagate-client/adg-observer.html))
 
@@ -117,5 +117,5 @@ void RepairObjects(RepairOptions repairOptions, AdgObserver observer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [RepairOptions](/reference/datagate/datagate-common/repair-options.html) | repairOptions | 
-| [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | 
+| [RepairOptions](/reference/datagate/datagate-common/repair-options.html) | repairOptions | The repair options to use.
+| [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | The observer to use.

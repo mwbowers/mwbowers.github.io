@@ -30,7 +30,7 @@ Stream MakeDecoder(Stream istream)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | istream | 
+| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | istream | The stream for which a decoder will be created.
 
 #### Returns
 
@@ -50,7 +50,7 @@ Stream MakeEncoder(Stream ostream)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | ostream | 
+| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | ostream | The stream for which an encoder will be created.
 
 #### Returns
 

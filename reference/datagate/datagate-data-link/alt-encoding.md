@@ -60,7 +60,7 @@ Dictionary<string, object> DictionaryFromITransformProps(ITransformProperties pr
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | props | 
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | props | The ITransformProperties object to convert.
 
 #### Returns
 
@@ -80,8 +80,8 @@ bool Equal(ITransformProperties lhs, ITransformProperties rhs)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | lhs | 
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | rhs | 
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | lhs | The first ITransformProperties object to compare.
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | rhs | The second ITransformProperties object to compare.
 
 #### Returns
 
@@ -101,7 +101,7 @@ AltDecoder GetAltDecoder(ITransformProperties decProps)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | decProps | 
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | decProps | The properties to use for the AltDecoder. If null, the default properties are used.
 
 #### Returns
 
@@ -121,7 +121,7 @@ AltEncoder GetAltEncoder(ITransformProperties encProps)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | encProps | 
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | encProps | The properties to use for the AltEncoder. If null, the default properties are used.
 
 #### Returns
 
@@ -141,7 +141,7 @@ AltEncoding GetAltEncoding(string name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name for which to get an AltEncoding.
 
 #### Returns
 
@@ -185,7 +185,7 @@ ITransformProperties TransformPropertiesFromStream(BinaryReader br)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0) | br | 
+| [BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0) | br | The BinaryReader stream to read from.
 
 #### Returns
 
@@ -205,5 +205,5 @@ void TransformPropertiesToStream(ITransformProperties t, BinaryWriter bw)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | t | 
-| [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0) | bw | 
+| [ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html) | t | The ITransformProperties object to write to the stream.
+| [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0) | bw | The BinaryWriter stream to write to.

@@ -29,6 +29,6 @@ void Write(Utf8JsonWriter writer, UserPasswordCredential value, JsonSerializerOp
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | 
-| [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html) | value | 
-| [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | 
+| [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | The Utf8JsonWriter to write to.
+| [UserPasswordCredential](/reference/datagate/datagate-providers/user-password-credential.html) | value | The UserPasswordCredential to write.
+| [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | Options for the serializer.

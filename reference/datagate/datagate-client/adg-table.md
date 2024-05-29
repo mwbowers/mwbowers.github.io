@@ -29,8 +29,8 @@ AdgTable(DataTable, AdgDataSet)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | table | 
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | parent | 
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | table | The DataTable to be associated with this instance.
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | parent | The parent AdgDataSet to which this AdgTable belongs.
 
 ## Properties
 
@@ -57,4 +57,4 @@ void SetRowDefaultValues(DataRow row)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | row | 
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | row | The DataRow for which to set default values.

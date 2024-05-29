@@ -37,7 +37,7 @@ Task With(ImportOptions options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ImportOptions](/reference/datagate/datagate-client/import-options.html) | options | 
+| [ImportOptions](/reference/datagate/datagate-client/import-options.html) | options | The options for the import operation.
 
 #### Returns
 

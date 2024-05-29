@@ -33,7 +33,7 @@ AdgKeyTable(DataTable)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | keyTableTemplate | 
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | keyTableTemplate | The DataTable to be used as a template for the key table.
 
 ## Properties
 
@@ -60,7 +60,7 @@ bool Equals(DataRow other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | other | 
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | other | The DataRow to compare with the current DataRow.
 
 #### Returns
 

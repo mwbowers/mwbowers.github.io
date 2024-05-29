@@ -43,8 +43,8 @@ ImportFromCsvOptions(IMember, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
+| [IMember](/reference/datagate/datagate-client/i-member.html) | target | The target member where the data will be imported.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The source path from where the data will be imported.
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -58,9 +58,9 @@ ImportFromCsvOptions(IMember, String, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
+| [IMember](/reference/datagate/datagate-client/i-member.html) | target | The target member where the data will be imported.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The source path from where the data will be imported.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | A flag indicating whether the target member should be cleared before the import.
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -74,10 +74,10 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
+| [IMember](/reference/datagate/datagate-client/i-member.html) | target | The target member where the data will be imported.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The source path from where the data will be imported.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | A flag indicating whether the target member should be cleared before the import.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | A flag indicating whether the target connection should be used for the import.
 
 ### ImportFromCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -91,11 +91,11 @@ ImportFromCsvOptions(IMember, String, Boolean, Boolean, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | target | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | 
+| [IMember](/reference/datagate/datagate-client/i-member.html) | target | The target member where the data will be imported.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The source path from where the data will be imported.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bClearMember | A flag indicating whether the target member should be cleared before the import.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bUseTargetConnection | A flag indicating whether the target connection should be used for the import.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bSkipFirstLine | A flag indicating whether the first line of the CSV data should be skipped during the import.
 
 ## Properties
 

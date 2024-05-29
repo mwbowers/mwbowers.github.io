@@ -58,5 +58,5 @@ void Initialize(InitMemberOptions Options, long Records)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html) | Options | 
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | Records | 
+| [InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html) | Options | The options to use when initializing the member.
+| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | Records | The number of records to initialize the member with.

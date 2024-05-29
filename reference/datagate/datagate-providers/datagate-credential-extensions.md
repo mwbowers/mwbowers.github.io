@@ -29,7 +29,7 @@ bool IsStarDomainCredential(IDataGateCredential dgc)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | dgc | 
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | dgc | The IDataGateCredential to check.
 
 #### Returns
 

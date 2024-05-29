@@ -41,8 +41,8 @@ bool ContainsInvariantIgnoreCase(string This, string value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string to search.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The string to seek.
 
 #### Returns
 
@@ -62,8 +62,8 @@ bool ContainsOrdinal(string This, char value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string to search.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | The character to seek.
 
 #### Returns
 
@@ -83,8 +83,8 @@ bool ContainsOrdinal(string This, string value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string to search.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The string to seek.
 
 #### Returns
 
@@ -104,8 +104,8 @@ bool ContainsOrdinalIgnoreCase(string This, char value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string to search.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | The character to seek.
 
 #### Returns
 
@@ -125,8 +125,8 @@ bool ContainsOrdinalIgnoreCase(string This, string value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string to search.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The string to seek.
 
 #### Returns
 
@@ -146,7 +146,7 @@ int GetHashCodeCurrentCultureIgnoreCase(string This)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string for which the hash code is to be obtained.
 
 #### Returns
 
@@ -166,7 +166,7 @@ int GetHashCodeInvariantCultureIgnoreCase(string This)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string for which the hash code is to be obtained.
 
 #### Returns
 
@@ -186,7 +186,7 @@ int GetHashCodeOrdinal(string This)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string for which the hash code is to be obtained.
 
 #### Returns
 
@@ -206,7 +206,7 @@ int GetHashCodeOrdinalIgnoreCase(string This)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string for which the hash code is to be obtained.
 
 #### Returns
 
@@ -226,8 +226,8 @@ int IndexOfOrdinal(string This, char value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string to search.
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | The character to seek.
 
 #### Returns
 
@@ -247,9 +247,9 @@ string ReplaceOrdinal(string This, string oldValue, string newValue)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | oldValue | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newValue | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string performing the replace operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | oldValue | The string to be replaced.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newValue | The string to replace all occurrences of oldValue.
 
 #### Returns
 
@@ -269,9 +269,9 @@ string ReplaceOrdinalIgnoreCase(string This, string oldValue, string newValue)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | oldValue | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newValue | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | This | The string performing the replace operation.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | oldValue | The string to be replaced.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newValue | The string to replace all occurrences of oldValue.
 
 #### Returns
 

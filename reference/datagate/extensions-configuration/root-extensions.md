@@ -35,7 +35,7 @@ IConfigurationSection GetAsnaConfig(IConfiguration This)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | This | 
+| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | This | The configuration.
 
 #### Returns
 
@@ -55,7 +55,7 @@ IConfigurationSection GetDataGateConfig(IConfiguration This)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | This | 
+| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | This | The configuration.
 
 #### Returns
 

@@ -39,7 +39,7 @@ NoDbNameException(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbname | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbname | The name of the database that caused the exception.
 
 ### NoDbNameException([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception))
 
@@ -53,5 +53,5 @@ NoDbNameException(String, Exception)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbname | 
-| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | dbname | The name of the database that caused the exception.
+| [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) | inner | The exception that is the cause of the current exception, or a null reference if no inner exception is specified.

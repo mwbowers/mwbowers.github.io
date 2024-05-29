@@ -52,9 +52,9 @@ object Create(object parent, object context, XmlNode section)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parent | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | context | 
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | section | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parent | The parent object.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | context | The context object.
+| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | section | The XML node that contains the configuration information to be handled.
 
 #### Returns
 

@@ -29,4 +29,4 @@ void CompleteOpen(int peerAltCodePageID)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | peerAltCodePageID | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | peerAltCodePageID | The alternative code page ID of the peer.

@@ -39,8 +39,8 @@ string Decode(XPathNavigator context, string name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0) | context | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0) | context | The  context in which the decoding is performed.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The XML-compliant string to be decoded.
 
 #### Returns
 
@@ -60,8 +60,8 @@ string Encode(XPathNavigator context, string name)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0) | context | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [XPathNavigator](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0) | context | The  context in which the encoding is performed.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name to be encoded.
 
 #### Returns
 

@@ -67,8 +67,8 @@ void Add(string key, object value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The object to use as the key of the element to add.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The object to use as the value of the element to add.
 
 ### bool ContainsKey([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -82,7 +82,7 @@ bool ContainsKey(string key)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The key to locate in the FileOpenAttr.
 
 #### Returns
 
@@ -102,7 +102,7 @@ bool Remove(string key)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The key of the element to remove.
 
 #### Returns
 

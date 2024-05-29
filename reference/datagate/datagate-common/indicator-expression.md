@@ -37,7 +37,7 @@ IndicatorExpression(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | expressionString | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | expressionString | The expression string that represents the indicator expression.
 
 ## Methods
 
@@ -57,7 +57,7 @@ bool Eval(Char[] indicators)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | 
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | An array of characters representing the indicators to be evaluated.
 
 #### Returns
 

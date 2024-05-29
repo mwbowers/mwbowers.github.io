@@ -38,7 +38,7 @@ SqlObjectName(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the SQL object.
 
 ### SqlObjectName([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -52,8 +52,8 @@ SqlObjectName(String, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | The name of the owner.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the object.
 
 ### SqlObjectName([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -67,9 +67,9 @@ SqlObjectName(String, String, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | The name of the database.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | The name of the owner.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the object.
 
 ### SqlObjectName([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -83,10 +83,10 @@ SqlObjectName(String, String, String, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | server | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | server | The name of the server.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | database | The name of the database.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | owner | The name of the owner.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the object.
 
 ## Properties
 
@@ -115,7 +115,7 @@ SqlObjectName Parse(string input)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | The string to parse.
 
 #### Returns
 

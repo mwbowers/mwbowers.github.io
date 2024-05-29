@@ -57,8 +57,8 @@ void SetRendererPath(string path, Configuration config)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
-| [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0) | config | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The new Renderer path.
+| [Configuration](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0) | config | The configuration in which to set the Renderer path.
 
 ### void SetRendererPathInMachineConfig([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -72,4 +72,4 @@ void SetRendererPathInMachineConfig(string path)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The new Renderer path.

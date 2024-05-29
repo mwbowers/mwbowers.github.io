@@ -30,7 +30,7 @@ SourceProfileConverter(SourceProfileConverterOptions)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfileConverterOptions](/reference/datagate/datagate-providers/source-profile-converter-options.html) | opts | 
+| [SourceProfileConverterOptions](/reference/datagate/datagate-providers/source-profile-converter-options.html) | opts | The options for the source profile converter.
 
 ### SourceProfileConverter()
 
@@ -58,6 +58,6 @@ void Write(Utf8JsonWriter writer, SourceProfile value, JsonSerializerOptions opt
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | 
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | value | 
-| [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | 
+| [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | The Utf8JsonWriter to write to.
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | value | The SourceProfile to write.
+| [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | Options for the serializer.

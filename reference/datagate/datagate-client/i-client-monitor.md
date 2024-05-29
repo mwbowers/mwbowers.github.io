@@ -57,4 +57,4 @@ void Kill(int delay)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | delay | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | delay | Wait time in milliseconds before terminating the client.

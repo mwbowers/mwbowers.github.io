@@ -52,7 +52,7 @@ As400Program(AdgConnection)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | connection | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | connection | The connection to be used by the program.
 
 ### As400Program([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
@@ -66,8 +66,8 @@ As400Program(AdgConnection, String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | connection | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programPath | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | connection | The connection to be used by the program.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programPath | The path of the program to be executed.
 
 ## Methods
 
@@ -104,7 +104,7 @@ void AppendParm(ProgParm parameter)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | The parameter to append.
 
 ### void AppendParms([ProgParm\[\] parameters](/reference/datagate/datagate-data-link/prog-parm.html))
 
@@ -118,7 +118,7 @@ void AppendParms(ProgParm[] parameters)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm\[\]](/reference/datagate/datagate-data-link/prog-parm.html) | parameters | 
+| [ProgParm\[\]](/reference/datagate/datagate-data-link/prog-parm.html) | parameters | The array of parameters to append.
 
 ### void Dispose()
 
@@ -156,9 +156,9 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | The parameter to convert the object to.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The object to convert.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | The index of the element to convert, if the parameter is an array.
 
 ### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -172,8 +172,8 @@ void ObjectToParm(ProgParm parameter, object value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | 
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | The parameter to convert the object to.
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The object to convert.
 
 ### void ObjectToParm([object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32\[\] elementIndices](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
@@ -187,9 +187,9 @@ void ObjectToParm(object value, string parameterName, Int32[] elementIndices)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | 
-| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The object to convert.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | The name of the parameter to convert the object to.
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | The indices of the elements to convert, if the parameter is an array.
 
 ### void ObjectToParm([object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -203,8 +203,8 @@ void ObjectToParm(object value, string parameterName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The object to convert.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | The name of the parameter to convert the object to.
 
 ### object ParmToObject([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -218,9 +218,9 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | returnType | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | The parameter to convert.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | returnType | The type to convert the parameter to.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | element | The index of the element to convert, if the parameter is an array.
 
 #### Returns
 
@@ -240,8 +240,8 @@ object ParmToObject(ProgParm Parameter, Type ReturnType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | 
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | Parameter | The parameter to convert.
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | The type to convert the parameter to.
 
 #### Returns
 
@@ -261,9 +261,9 @@ object ParmToObject(Type returnType, string parameterName, Int32[] elementIndice
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | returnType | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | 
-| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | returnType | The type to convert the parameter to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | parameterName | The name of the parameter to convert.
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | elementIndices | The indices of the elements to convert, if the parameter is an array.
 
 #### Returns
 
@@ -283,8 +283,8 @@ object ParmToObject(Type ReturnType, string ParameterName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | 
+| [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ReturnType | The type to convert the parameter to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParameterName | The name of the parameter to convert.
 
 #### Returns
 
@@ -304,7 +304,7 @@ void ReadParmXml(XmlReader reader)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The XML reader to read from.
 
 ### void SetConnection([AdgConnection value](/reference/datagate/datagate-client/adg-connection.html))
 
@@ -318,7 +318,7 @@ void SetConnection(AdgConnection value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | value | 
+| [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) | value | The connection to be used.
 
 ### void SetParmsZeroValue()
 
@@ -340,7 +340,7 @@ void SetProgramPath(string value)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The path of the program.
 
 ### void WriteParmXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
@@ -354,7 +354,7 @@ void WriteParmXml(XmlWriter writer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.
 
 ## Example 1. As400Program constructor method example.
 

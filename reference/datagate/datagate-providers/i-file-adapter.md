@@ -39,7 +39,7 @@ void Open(AdgDataSet ds)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The dataset to use when opening the file.
 
 ### void ReadSequentialEqual([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadSequentialMode rm](/reference/datagate/datagate-common/read-sequential-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html))
 
@@ -53,6 +53,6 @@ void ReadSequentialEqual(AdgDataSet ds, ReadSequentialMode rm, LockRequest lr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | 
-| [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html) | rm | 
-| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | 
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The dataset to use when reading the file.
+| [ReadSequentialMode](/reference/datagate/datagate-common/read-sequential-mode.html) | rm | The read mode to use when reading the file.
+| [LockRequest](/reference/datagate/datagate-common/lock-request.html) | lr | The lock request to use when reading the file.

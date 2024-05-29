@@ -30,7 +30,7 @@ void Deserialize(Stream istream)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | istream | 
+| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | istream | The stream from which the data will be deserialized.
 
 ### void Serialize([Stream ostream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0))
 
@@ -44,4 +44,4 @@ void Serialize(Stream ostream)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | ostream | 
+| [Stream](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-8.0) | ostream | The stream where the serialized data will be written.

@@ -44,7 +44,7 @@ SourceProfile(SourceProfile)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | sp | The source profile to initialize the new instance with.
 
 ## Properties
 
@@ -101,7 +101,7 @@ bool Equals(SourceProfile other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | other | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | other | The instance to compare with the current instance.
 
 #### Returns
 
@@ -121,7 +121,7 @@ bool Equals(object other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | other | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | other | The instance to compare with the current instance.
 
 #### Returns
 
@@ -141,8 +141,8 @@ bool Equals(object obj, bool bIgnoreDatabaseName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIgnoreDatabaseName | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current instance.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bIgnoreDatabaseName | A boolean value that indicates whether to ignore the database name in the comparison.
 
 #### Returns
 
@@ -170,7 +170,7 @@ bool IsKnownPlatformAttribute(string platformAttr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | platformAttr | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | platformAttr | The platform attribute to check.
 
 #### Returns
 
@@ -190,8 +190,8 @@ bool op_Equality(SourceProfile x, SourceProfile y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | x | 
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | y | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | x | The first instance to compare.
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | y | The second instance to compare.
 
 #### Returns
 
@@ -211,8 +211,8 @@ bool op_Inequality(SourceProfile x, SourceProfile y)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | x | 
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | y | 
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | x | The first instance to compare.
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | y | The second instance to compare.
 
 #### Returns
 

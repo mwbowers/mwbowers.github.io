@@ -71,8 +71,8 @@ IFileObject AsyncCopyFromImportFile(string filePath, CopyFromImportFileOptions o
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | 
-| [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | options | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | The path of the import file.
+| [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | options | The options to use when copying the data.
 
 #### Returns
 
@@ -92,8 +92,8 @@ IFileObject Copy(string targetDir, string newName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetDir | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetDir | The target directory to copy the file to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newName | The new name of the file.
 
 #### Returns
 
@@ -113,14 +113,14 @@ IFileObject CopyData(string targetDir, string newName, string srcMember, string 
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetDir | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newName | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | srcMember | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newMember | 
-| [CopyDataOptions](/reference/datagate/datagate-common/copy-data-options.html) | options | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | fromRRN | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | toRRN | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cRecords | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetDir | The target directory to copy the data to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newName | The name of the new file.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | srcMember | The source member to copy from.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | newMember | The new member to copy to.
+| [CopyDataOptions](/reference/datagate/datagate-common/copy-data-options.html) | options | The options to use when copying the data.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | fromRRN | The relative record number to start copying from.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | toRRN | The relative record number to stop copying at.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cRecords | The number of records to copy.
 
 #### Returns
 
@@ -140,8 +140,8 @@ IFileObject CopyFromImportFile(string filePath, CopyFromImportFileOptions option
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | 
-| [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | options | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | The path of the import file.
+| [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | options | The options to use when copying the data.
 
 #### Returns
 
@@ -161,7 +161,7 @@ AdgDataSet GetAdgDataSet(DataSetOptions opts)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataSetOptions](/reference/datagate/datagate-common/data-set-options.html) | opts | 
+| [DataSetOptions](/reference/datagate/datagate-common/data-set-options.html) | opts | The options to use when getting the AdgDataSet.
 
 #### Returns
 
@@ -181,7 +181,7 @@ void ReadCreationAttributes(XmlReader reader)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The XML reader to read from.
 
 ### void ReadDefinition([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 
@@ -195,7 +195,7 @@ void ReadDefinition(XmlReader reader)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The XML reader to read from.
 
 ### void RepairFile([RepairOptions repairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver observer](/reference/datagate/datagate-client/adg-observer.html))
 
@@ -209,8 +209,8 @@ void RepairFile(RepairOptions repairOptions, AdgObserver observer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [RepairOptions](/reference/datagate/datagate-common/repair-options.html) | repairOptions | 
-| [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | 
+| [RepairOptions](/reference/datagate/datagate-common/repair-options.html) | repairOptions | The options to use when repairing the file.
+| [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | The observer to use during the repair.
 
 ### void WriteCreationAttributes([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
@@ -224,7 +224,7 @@ void WriteCreationAttributes(XmlWriter writer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.
 
 ### void WriteDefinition([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
@@ -238,4 +238,4 @@ void WriteDefinition(XmlWriter writer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.

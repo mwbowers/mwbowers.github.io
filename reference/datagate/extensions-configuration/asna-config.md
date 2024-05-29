@@ -35,7 +35,7 @@ AsnaConfig(IConfiguration)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | config | 
+| [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0) | config | The configuration.
 
 ## Properties
 

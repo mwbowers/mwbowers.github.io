@@ -66,8 +66,8 @@ Type GetSystemTypeOfType(DataTypes dt, int byteLength)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataTypes](/reference/datagate/datagate-common/data-types.html) | dt | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | byteLength | 
+| [DataTypes](/reference/datagate/datagate-common/data-types.html) | dt | The DataTypes value to get the .NET type for.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | byteLength | The byte length of the data type.
 
 #### Returns
 
@@ -87,8 +87,8 @@ FieldType NewBinary(int prec, int scale)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | prec | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | scale | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | prec | The total number of digits in the binary field.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | scale | The number of digits to the right of the decimal point in the binary field.
 
 #### Returns
 
@@ -116,7 +116,7 @@ FieldType NewChar(int length)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the character field.
 
 #### Returns
 
@@ -136,7 +136,7 @@ FieldType NewDate(DateTimeFormat fmt)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | fmt | 
+| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | fmt | The format of the date field.
 
 #### Returns
 
@@ -156,8 +156,8 @@ FieldType NewDBCS(int length, DbcsFormat fmt)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
-| [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html) | fmt | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the DBCS field.
+| [DbcsFormat](/reference/datagate/datagate-common/dbcs-format.html) | fmt | The format of the DBCS field.
 
 #### Returns
 
@@ -177,7 +177,7 @@ FieldType NewDontCare(int length)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the DontCare field.
 
 #### Returns
 
@@ -197,7 +197,7 @@ FieldType NewFloat(int length)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the floating point field. It should be either 4 or 8.
 
 #### Returns
 
@@ -217,7 +217,7 @@ FieldType NewHex(int length)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the hexadecimal field.
 
 #### Returns
 
@@ -237,7 +237,7 @@ FieldType NewInteger(int length)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the integer field. It should be either 2, 4, or 8.
 
 #### Returns
 
@@ -257,8 +257,8 @@ FieldType NewPacked(int prec, int scale)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | prec | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | scale | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | prec | The total number of digits in the packed decimal field.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | scale | The number of digits to the right of the decimal point in the packed decimal field.
 
 #### Returns
 
@@ -278,7 +278,7 @@ FieldType NewTime(DateTimeFormat fmt)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | fmt | 
+| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | fmt | The format of the time field.
 
 #### Returns
 
@@ -306,7 +306,7 @@ FieldType NewUnicode(int length)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the Unicode field.
 
 #### Returns
 
@@ -326,8 +326,8 @@ FieldType NewZoned(int prec, int scale)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | prec | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | scale | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | prec | The total number of digits in the zoned decimal field.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | scale | The number of digits to the right of the decimal point in the zoned decimal field.
 
 #### Returns
 

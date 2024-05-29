@@ -45,7 +45,7 @@ Delimiter(Char)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | value | The character value to initialize the  instance with.
 
 ## Properties
 
@@ -94,7 +94,7 @@ bool Equals(object obj)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | 
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current object.
 
 #### Returns
 
@@ -114,7 +114,7 @@ Delimiter FromChar(char ch)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | ch | 
+| [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | ch | The character to create a  from.
 
 #### Returns
 
@@ -142,8 +142,8 @@ bool op_Equality(Delimiter lval, Delimiter rval)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | lval | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rval | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | lval | The first  to compare.
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rval | The second  to compare.
 
 #### Returns
 
@@ -163,8 +163,8 @@ bool op_Inequality(Delimiter lval, Delimiter rval)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | lval | 
-| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rval | 
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | lval | The first  to compare.
+| [Delimiter](/reference/datagate/datagate-client/delimiter.html) | rval | The second  to compare.
 
 #### Returns
 

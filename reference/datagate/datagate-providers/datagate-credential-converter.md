@@ -29,6 +29,6 @@ void Write(Utf8JsonWriter writer, IDataGateCredential value, JsonSerializerOptio
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | 
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | value | 
-| [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | 
+| [Utf8JsonWriter](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.utf8jsonwriter?view=net-8.0) | writer | The XmlWriter stream to which the credentials are serialized.
+| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | value | The DataGate credentials to write.
+| [JsonSerializerOptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions?view=net-8.0) | options | The options for writing the credentials.

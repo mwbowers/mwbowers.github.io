@@ -40,9 +40,9 @@ int Read(Byte[] inBuf, int iBegin, int cBytes)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | 
+| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | The buffer to store the data read from the channel.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | The zero-based byte offset in inBuf at which to begin storing the data read from the channel.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | The maximum number of bytes to read.
 
 #### Returns
 

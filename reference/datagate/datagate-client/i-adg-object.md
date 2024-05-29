@@ -92,10 +92,10 @@ void Duplicate(string ScopePath, string TargetPath, string NewName, DuplicateOpt
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScopePath | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TargetPath | 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewName | 
-| [DuplicateOptions](/reference/datagate/datagate-common/duplicate-options.html) | options | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ScopePath | The scope path of the object to duplicate.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TargetPath | The target path where the duplicate object will be placed.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewName | The new name for the duplicate object.
+| [DuplicateOptions](/reference/datagate/datagate-common/duplicate-options.html) | options | The options for the duplication operation.
 
 ### void GrantAuthority([string user](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AuthorityTypes authority](/reference/datagate/datagate-common/authority-types.html))
 
@@ -109,8 +109,8 @@ void GrantAuthority(string user, AuthorityTypes authority)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | 
-| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authority | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | The user or group to grant authority to.
+| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authority | The authority type to grant.
 
 ### bool HasLock([ShareTypes ShareType](/reference/datagate/datagate-common/share-types.html))
 
@@ -124,7 +124,7 @@ bool HasLock(ShareTypes ShareType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ShareTypes](/reference/datagate/datagate-common/share-types.html) | ShareType | 
+| [ShareTypes](/reference/datagate/datagate-common/share-types.html) | ShareType | The type of lock to check for.
 
 #### Returns
 
@@ -144,9 +144,9 @@ void Lock(ShareTypes ShareType, WaitOptions WaitOption, short WaitTime)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ShareTypes](/reference/datagate/datagate-common/share-types.html) | ShareType | 
-| [WaitOptions](/reference/datagate/datagate-common/wait-options.html) | WaitOption | 
-| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | WaitTime | 
+| [ShareTypes](/reference/datagate/datagate-common/share-types.html) | ShareType | The type of lock to apply.
+| [WaitOptions](/reference/datagate/datagate-common/wait-options.html) | WaitOption | The wait option to use if the lock cannot be immediately acquired.
+| [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | WaitTime | The wait time to use if the lock cannot be immediately acquired.
 
 ### void MoveTo([string NewPathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -160,7 +160,7 @@ void MoveTo(string NewPathName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewPathName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewPathName | The new path for the object.
 
 ### void ReadBases([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 
@@ -174,7 +174,7 @@ void ReadBases(XmlReader reader)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | 
+| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The XML reader to read from.
 
 ### void Remove()
 
@@ -196,7 +196,7 @@ void Rename(string NewName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewName | The new name for the object.
 
 ### string ResolvePathName()
 
@@ -218,8 +218,8 @@ void RevokeAuthority(string userName, AuthorityTypes authorityType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | userName | 
-| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authorityType | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | userName | The user to revoke the authority from.
+| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authorityType | The type of authority to revoke.
 
 ### string ToString()
 
@@ -241,7 +241,7 @@ void Unlock(ShareTypes ShareType)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ShareTypes](/reference/datagate/datagate-common/share-types.html) | ShareType | 
+| [ShareTypes](/reference/datagate/datagate-common/share-types.html) | ShareType | The type of lock to remove.
 
 ### void WriteBases([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
@@ -255,7 +255,7 @@ void WriteBases(XmlWriter writer)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.
 
 ### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html))
 
@@ -269,8 +269,8 @@ void WriteXml(XmlWriter writer, XmlOptions options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The options to use when writing the XML.
 
 ### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler hndlr](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
 
@@ -284,9 +284,9 @@ void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
-| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | hndlr | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The options to use when writing the XML.
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | hndlr | The event handler for handling cancel events during the write operation.
 
 ### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler hndlr](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate fileOpener](/reference/datagate/datagate-client/open-file-adapter-delegate.html))
 
@@ -300,7 +300,7 @@ void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr,
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | 
-| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | 
-| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | hndlr | 
-| [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html) | fileOpener | 
+| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XML writer to write to.
+| [XmlOptions](/reference/datagate/datagate-client/xml-options.html) | options | The options to use when writing the XML.
+| [XmlCancelEventHandler](/reference/datagate/datagate-client/xml-cancel-event-handler.html) | hndlr | The event handler for handling cancel events during the write operation.
+| [OpenFileAdapterDelegate](/reference/datagate/datagate-client/open-file-adapter-delegate.html) | fileOpener | The delegate for opening a file during the write operation.

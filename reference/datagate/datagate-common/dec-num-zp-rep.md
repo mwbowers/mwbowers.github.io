@@ -31,7 +31,7 @@ DecNumZPRep(Int32)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | format | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | format | The format of the decimal number.
 
 ## Properties
 
@@ -65,7 +65,7 @@ bool IsNegativePacked(byte b)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | The byte to check.
 
 #### Returns
 
@@ -85,7 +85,7 @@ bool IsNegativeZone(byte b)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | The byte to check.
 
 #### Returns
 
@@ -105,7 +105,7 @@ bool IsPositivePacked(byte b)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | The byte to check.
 
 #### Returns
 
@@ -125,7 +125,7 @@ bool IsPositiveZone(byte b)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | 
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | The byte to check.
 
 #### Returns
 

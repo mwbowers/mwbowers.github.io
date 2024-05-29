@@ -36,7 +36,7 @@ AdgDataSet(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name to give the new .
 
 ## Properties
 
@@ -95,7 +95,7 @@ bool AddPreparedRowAndSetActive(int iFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
 
 #### Returns
 
@@ -115,7 +115,7 @@ void AddRow(string strFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
 
 ### void AddRow([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -129,7 +129,7 @@ void AddRow(int iFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
 
 ### bool ContainsKey([int key](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -143,7 +143,7 @@ bool ContainsKey(int key)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | key | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | key | The format index to locate in the AdgDataSet.
 
 #### Returns
 
@@ -163,8 +163,8 @@ void DeleteRow(string strFormat, int rrn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | The relative record number of the row to delete.
 
 ### IEnumerator<KeyValuePair<int, AdgTable>> GetEnumerator()
 
@@ -186,7 +186,7 @@ int GetFormatIndex(string strFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name to retrieve the index for.
 
 #### Returns
 
@@ -206,7 +206,7 @@ string GetFormatName(int iFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index.
 
 #### Returns
 
@@ -226,7 +226,7 @@ DataTable GetFormatTable(int iFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable to retrieve.
 
 #### Returns
 
@@ -246,7 +246,7 @@ DataTable GetFormatTable(string strFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable to retrieve.
 
 #### Returns
 
@@ -282,8 +282,8 @@ void InsertRow(string strFormat, int rrn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | The relative record number at which to insert the new row.
 
 ### void InsertRow([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -297,8 +297,8 @@ void InsertRow(int iFormat, int rrn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | The relative record number at which to insert the new row.
 
 ### AdgKeyTable NewKeyTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -312,7 +312,7 @@ AdgKeyTable NewKeyTable(int iFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
 
 #### Returns
 
@@ -332,7 +332,7 @@ AdgKeyTable NewKeyTable(string strFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
 
 #### Returns
 
@@ -352,7 +352,7 @@ DataRow PrepareRow(string strFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
 
 #### Returns
 
@@ -372,8 +372,8 @@ void PrepareRow(string strFormat, DataRow row)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | row | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | row | The row to prepare.
 
 ### DataRow PrepareRow([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -387,7 +387,7 @@ DataRow PrepareRow(int iFormat)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
 
 #### Returns
 
@@ -407,8 +407,8 @@ bool SetActive(int iFormat, int rrn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | The relative record number of the row to set as active.
 
 #### Returns
 
@@ -428,8 +428,8 @@ bool SetActive(string strFormat, int rrn)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | 
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | The relative record number of the row to set as active.
 
 #### Returns
 

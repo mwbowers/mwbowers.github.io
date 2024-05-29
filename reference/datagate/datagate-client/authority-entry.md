@@ -44,7 +44,7 @@ AuthorityEntry(String)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | The user-name for the authority entry.
 
 ### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html))
 
@@ -58,8 +58,8 @@ AuthorityEntry(String, AuthorityTypes)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
-| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authorityType | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | The user-name for the authority entry.
+| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authorityType | The type of authority for the entry.
 
 ### AuthorityEntry([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -73,9 +73,9 @@ AuthorityEntry(String, AuthorityTypes, Boolean)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | 
-| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authorityType | 
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isGroupAccount | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | username | The user-name for the authority entry.
+| [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html) | authorityType | The type of authority for the entry.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isGroupAccount | A boolean value indicating whether the authority entry is for a group account.
 
 ## Properties
 

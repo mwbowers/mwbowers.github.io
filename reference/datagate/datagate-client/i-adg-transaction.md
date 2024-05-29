@@ -59,7 +59,7 @@ void Commit(string TransactionName)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TransactionName | 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | TransactionName | The name of the transaction to commit.
 
 ### void Rollback()
 

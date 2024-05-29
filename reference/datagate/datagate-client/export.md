@@ -30,7 +30,7 @@ Task With(ExportOptions options)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [ExportOptions](/reference/datagate/datagate-client/export-options.html) | options | 
+| [ExportOptions](/reference/datagate/datagate-client/export-options.html) | options | The options for the data export.
 
 #### Returns
 
