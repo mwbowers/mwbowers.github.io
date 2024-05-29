@@ -73,7 +73,7 @@ SourceProfile(SourceProfile)
 | --- | --- |
 | [Clone()](#object-clone) | Creates a new object that is a copy of the current instance.
 | [Equals](#bool-equalssourceprofile-other)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Determines whether the current instance of  is equal to the specified instance.
-| [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current instance of  is equal to the specified instance.
+| [Equals](#bool-equalsobject-other)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current instance of  is equal to the specified instance.
 | [Equals](#bool-equalsobject-obj-bool-bignoredatabasename)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Determines whether the current instance of  is equal to the specified object.
 | [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
 | [IsKnownPlatformAttribute](#bool-isknownplatformattributestring-platformattr)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the provided platform attribute is a known platform attribute.
@@ -109,12 +109,12 @@ bool Equals(SourceProfile other)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the current instance is equal to the specified instance; otherwise, false.
 
-### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+### bool Equals([object other](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Determines whether the current instance of  is equal to the specified instance.
 
 ```cs
-bool Equals(object obj)
+bool Equals(object other)
 ```
 
 #### Parameters

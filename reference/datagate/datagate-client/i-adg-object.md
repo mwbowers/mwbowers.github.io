@@ -56,7 +56,7 @@ such as methods for managing authorities, locks, and XML serialization, and prop
 | --- | --- |
 | [Create()](#void-create) | Creates the ADG object.
 | [Duplicate](#void-duplicatestring-scopepath-string-targetpath-string-newname-duplicateoptions-options)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DuplicateOptions](/reference/datagate/datagate-common/duplicate-options.html)) | Duplicates the ADG object.
-| [GrantAuthority](#void-grantauthoritystring-username-authoritytypes-authoritytype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Grants authority to a user or group for the ADG object.
+| [GrantAuthority](#void-grantauthoritystring-user-authoritytypes-authority)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AuthorityTypes](/reference/datagate/datagate-common/authority-types.html)) | Grants authority to a user or group for the ADG object.
 | [HasLock](#bool-haslocksharetypes-sharetype)([ShareTypes](/reference/datagate/datagate-common/share-types.html)) | Determines whether the ADG object has a lock of the specified type.
 | [Lock](#void-locksharetypes-sharetype-waitoptions-waitoption-short-waittime)([ShareTypes](/reference/datagate/datagate-common/share-types.html), [WaitOptions](/reference/datagate/datagate-common/wait-options.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | Locks the ADG object with the specified share type and wait option.
 | [MoveTo](#void-movetostring-newpathname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Moves the ADG object to a new path.
@@ -97,12 +97,12 @@ void Duplicate(string ScopePath, string TargetPath, string NewName, DuplicateOpt
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | NewName | 
 | [DuplicateOptions](/reference/datagate/datagate-common/duplicate-options.html) | options | 
 
-### void GrantAuthority([string userName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AuthorityTypes authorityType](/reference/datagate/datagate-common/authority-types.html))
+### void GrantAuthority([string user](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AuthorityTypes authority](/reference/datagate/datagate-common/authority-types.html))
 
 Grants authority to a user or group for the ADG object.
 
 ```cs
-void GrantAuthority(string userName, AuthorityTypes authorityType)
+void GrantAuthority(string user, AuthorityTypes authority)
 ```
 
 #### Parameters
