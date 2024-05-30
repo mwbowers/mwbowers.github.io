@@ -1,0 +1,95 @@
+---
+title: FixedDateArray`3 struct
+---
+
+Defines the functionality of a fixed-sized unidimensional array of FixedDate elements.
+
+**Namespace:** ASNA.QSys.Runtime
+**Assembly:** ASNA.QSys.Runtime.dll
+
+<br>
+<br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [FixedDateArray](#fixeddatearraydatetime)([DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Initializes a FixedDateArray out of an array of System.DateTime elements.
+
+### FixedDateArray([DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime))
+
+Initializes a FixedDateArray out of an array of System.DateTime elements.
+
+```cs
+FixedDateArray(DateTime[])
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | array | The array of System.DateTime elements.
+
+## Properties
+
+| Type | Name | Description
+| --- | --- | --- 
+| [FixedDate`2\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedDateArray. |
+| [FixedDate\<TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-date`2.html) | Item | Indexer over the array, gets or sets the element at that position. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedDateArray. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [Clear()](#void-clear) | Clears all elements of the array to their default value.
+| [CopyFrom](#void-copyfromdatetime--sourcearray-int-targetstartat)([DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a DateTime[] into this array, starting at the given position.
+| [GetEnumerator()](#ienumerator-fixeddate-tformat-tseparator--getenumerator) | Get an IEnumerator to iterate over the elements of the array.
+| [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array according to their value.
+
+### void Clear()
+
+Clears all elements of the array to their default value.
+
+```cs
+void Clear()
+```
+
+### void CopyFrom([DateTime\[\] sourceArray](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [int targetStartAt](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Copy elements of a DateTime[] into this array, starting at the given position.
+
+```cs
+void CopyFrom(DateTime[] sourceArray, int targetStartAt)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | sourceArray | The array from where to copy.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The starting index in this array. Default is 0.
+
+### IEnumerator<FixedDate<TFormat, TSeparator>> GetEnumerator()
+
+Get an IEnumerator to iterate over the elements of the array.
+
+```cs
+IEnumerator<FixedDate<TFormat, TSeparator>> GetEnumerator()
+```
+
+### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Order elements of the array according to their value.
+
+```cs
+void Sort(bool ascending, int start, int length)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ascending | True for ascending order. Default is true.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Index of the element where the sort starts. Default is 0.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | How many elements to sort. Default is -1, sort the whole array.
