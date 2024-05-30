@@ -1,0 +1,26 @@
+---
+title: IndicatorTypeAttribute class
+---
+
+A non-RPG class may stamp a char member with this attribute to be considered as an indicator field by a consumer RPG program.
+
+**Namespace:** ASNA.QSys.Runtime
+**Assembly:** ASNA.QSys.Runtime.dll
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Attribute](https://docs.microsoft.com/en-us/dotnet/api/system.attribute)
+<br>
+<br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [IndicatorTypeAttribute()](#indicatortypeattribute) | Initializes an IndicatorTypeAttribute object. The char item stamped with this attribute will be handled as an Indicator by RPG programs.
+
+### IndicatorTypeAttribute()
+
+Initializes an IndicatorTypeAttribute object. The char item stamped with this attribute will be handled as an Indicator by RPG programs.
+
+```cs
+IndicatorTypeAttribute()
+```

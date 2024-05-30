@@ -1,0 +1,26 @@
+---
+title: OpenSimpleQueryFileException class
+---
+
+An invalid QryKeyFlds string format has been entered.
+
+**Namespace:** ASNA.QSys.Runtime
+**Assembly:** ASNA.QSys.Runtime.dll
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html)
+<br>
+<br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [OpenSimpleQueryFileException()](#opensimplequeryfileexception) | Empty constructor. It sets a hard-coded exception message related to invalid QryKeyFlds string usage.
+
+### OpenSimpleQueryFileException()
+
+Empty constructor. It sets a hard-coded exception message related to invalid QryKeyFlds string usage.
+
+```cs
+OpenSimpleQueryFileException()
+```

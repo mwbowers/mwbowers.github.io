@@ -1,0 +1,26 @@
+---
+title: InvalidSourceLengthException class
+---
+
+Length of source is less than length of data structure exception.
+
+**Namespace:** ASNA.QSys.Runtime
+**Assembly:** ASNA.QSys.Runtime.dll
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception) --> [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html)
+<br>
+<br>
+
+## Constructors
+
+| Name | Description |
+| --- | --- |
+| [InvalidSourceLengthException()](#invalidsourcelengthexception) | Empty constructor. It sets a hard-coded exceptions message related to illegal length of data structure source.
+
+### InvalidSourceLengthException()
+
+Empty constructor. It sets a hard-coded exceptions message related to illegal length of data structure source.
+
+```cs
+InvalidSourceLengthException()
+```
