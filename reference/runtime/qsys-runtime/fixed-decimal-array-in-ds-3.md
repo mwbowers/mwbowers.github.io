@@ -1,8 +1,8 @@
 ---
-title: FixedTimeArrayInDS`3 struct
+title: FixedDecimalArrayInDS`3 struct
 ---
 
-Describes a fixed size array of FixedTime contained in a DataStructure.
+Describes a fixed size array of FixedDecimal contained in a DataStructure.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
@@ -14,38 +14,40 @@ Describes a fixed size array of FixedTime contained in a DataStructure.
 
 | Name | Description |
 | --- | --- |
-| [FixedTimeArrayInDS](#fixedtimearrayindsdatastructure-int32-int32)([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedTime in a Data Structure.
-| [FixedTimeArrayInDS](#fixedtimearrayindsmultidatastructure-int32-int32)([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedTime in a Multiple Occurrence Data Structure.
+| [FixedDecimalArrayInDS](#fixeddecimalarrayindsmultidatastructure-layouttype-int32-int32)([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [LayoutType](/reference/runtime/qsys-runtime/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedDecimal in a Multiple Occurrence Data Structure.
+| [FixedDecimalArrayInDS](#fixeddecimalarrayindsdatastructure-layouttype-int32-int32)([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [LayoutType](/reference/runtime/qsys-runtime/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedDecimal in a Data Structure.
 
-### FixedTimeArrayInDS([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### FixedDecimalArrayInDS([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [LayoutType](/reference/runtime/qsys-runtime/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Constructs a fixed size array of FixedTime in a Data Structure.
+Constructs a fixed size array of FixedDecimal in a Multiple Occurrence Data Structure.
 
 ```cs
-FixedTimeArrayInDS(DataStructure, Int32, Int32)
+FixedDecimalArrayInDS(MultiDataStructure, LayoutType, Int32, Int32)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | parent | The DataStructure containing this array of FixedTime.
+| [MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html) | parent | The MultiDataStructure containing this array of FixedDecimal.
+| [LayoutType](/reference/runtime/qsys-runtime/layout-type.html) | decimalType | The LayoutType describing the kind of fixed decimals, zoned, packed, or binary, the array contains.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements.
 
-### FixedTimeArrayInDS([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### FixedDecimalArrayInDS([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [LayoutType](/reference/runtime/qsys-runtime/layout-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Constructs a fixed size array of FixedTime in a Multiple Occurrence Data Structure.
+Constructs a fixed size array of FixedDecimal in a Data Structure.
 
 ```cs
-FixedTimeArrayInDS(MultiDataStructure, Int32, Int32)
+FixedDecimalArrayInDS(DataStructure, LayoutType, Int32, Int32)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html) | parent | The MultiDataStructure containing this array of FixedTime.
+| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | parent | The DataStructure containing this array of FixedDecimal.
+| [LayoutType](/reference/runtime/qsys-runtime/layout-type.html) | decimalType | The LayoutType describing the kind of fixed decimals, zoned, packed, or binary, the array contains.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements.
 
@@ -53,7 +55,7 @@ FixedTimeArrayInDS(MultiDataStructure, Int32, Int32)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedTime\<TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-time`2.html) | Item | Indexer over the array, gets or sets the FixedTime element at that position. |
+| [FixedDecimal\<TDigits, TDecimals\>](/reference/runtime/qsys-runtime/fixed-decimal-2.html) | Item | Indexer over the array, gets or sets the FixedDecimal element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the total number of elements in the array. |
 | [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | SkipPositions | For non-contiguous arrays, gets the number of buffer positions between consecutive array elements. 0 otherwise. |
@@ -63,41 +65,41 @@ FixedTimeArrayInDS(MultiDataStructure, Int32, Int32)
 
 | Signature | Description |
 | --- | --- |
-| [Clear()](#void-clear) | Sets all array elements to the Time default value.
-| [CopyFrom](#void-copyfromdatetime--sourcearray-int-targetstartat)([DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a DateTime[] into this array.
-| [GetEnumerator()](#ienumerator-fixedtime-tformat-tseparator--getenumerator) | Returns an enumerator that iterates through the array.
+| [Clear()](#void-clear) | Sets all array elements to 0.
+| [CopyFrom](#void-copyfromdecimal--sourcearray-int-targetstartat)([Decimal\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a decimal[] into this array.
+| [GetEnumerator()](#ienumerator-fixeddecimal-tdigits-tdecimals--getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
 
-Sets all array elements to the Time default value.
+Sets all array elements to 0.
 
 ```cs
 void Clear()
 ```
 
-### void CopyFrom([DateTime\[\] sourceArray](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [int targetStartAt](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### void CopyFrom([Decimal\[\] sourceArray](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [int targetStartAt](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
-Copies elements from a DateTime[] into this array.
+Copies elements from a decimal[] into this array.
 
 ```cs
-void CopyFrom(DateTime[] sourceArray, int targetStartAt)
+void CopyFrom(Decimal[] sourceArray, int targetStartAt)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | sourceArray | The array to copy from.
+| [Decimal\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | sourceArray | The array to copy from.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start.
 
-### IEnumerator<FixedTime<TFormat, TSeparator>> GetEnumerator()
+### IEnumerator<FixedDecimal<TDigits, TDecimals>> GetEnumerator()
 
 Returns an enumerator that iterates through the array.
 
 ```cs
-IEnumerator<FixedTime<TFormat, TSeparator>> GetEnumerator()
+IEnumerator<FixedDecimal<TDigits, TDecimals>> GetEnumerator()
 ```
 
 ### int GetStartingPosition([int index](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))

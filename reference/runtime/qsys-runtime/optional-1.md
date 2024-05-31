@@ -1,8 +1,8 @@
 ---
-title: NoPassOmit`1 class
+title: Optional&lt;T1&gt; class
 ---
 
-Encapsulates a *OMIT wnd *NOPASS parameter.
+Encapsulates a *NOPASS parameter.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
@@ -15,14 +15,14 @@ Encapsulates a *OMIT wnd *NOPASS parameter.
 
 | Name | Description |
 | --- | --- |
-| [NoPassOmit()](#nopassomit) | Initializes a NoPassOmit object without a value.
+| [Optional()](#optional) | Initializes an Optional object without a value.
 
-### NoPassOmit()
+### Optional()
 
-Initializes a NoPassOmit object without a value.
+Initializes an Optional object without a value.
 
 ```cs
-NoPassOmit()
+Optional()
 ```
 
 ## Properties

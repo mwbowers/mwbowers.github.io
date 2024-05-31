@@ -1,5 +1,5 @@
 ---
-title: ParameterOptions`1 class
+title: ParameterOptions&lt;T1&gt; class
 ---
 
 Represents the base functionality of the special RPG parameters *OMIT and *NOPASS

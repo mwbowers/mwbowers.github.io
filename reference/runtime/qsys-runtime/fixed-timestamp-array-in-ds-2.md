@@ -1,8 +1,8 @@
 ---
-title: FixedDateArrayInDS`3 struct
+title: FixedTimestampArrayInDS`2 struct
 ---
 
-Describes a fixed size array of FixedDate contained in a DataStructure.
+Describes a fixed size array of FixedTimestamp contained in a DataStructure.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
@@ -14,38 +14,38 @@ Describes a fixed size array of FixedDate contained in a DataStructure.
 
 | Name | Description |
 | --- | --- |
-| [FixedDateArrayInDS](#fixeddatearrayindsdatastructure-int32-int32)([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedDate in a Data Structure.
-| [FixedDateArrayInDS](#fixeddatearrayindsmultidatastructure-int32-int32)([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedDate in a Multiple Occurrence Data Structure.
+| [FixedTimestampArrayInDS](#fixedtimestamparrayindsdatastructure-int32-int32)([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedTimestamp in a Data Structure.
+| [FixedTimestampArrayInDS](#fixedtimestamparrayindsmultidatastructure-int32-int32)([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Constructs a fixed size array of FixedTimestamp in a Multiple Occurrence Data Structure.
 
-### FixedDateArrayInDS([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### FixedTimestampArrayInDS([DataStructure](/reference/runtime/qsys-runtime/data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Constructs a fixed size array of FixedDate in a Data Structure.
+Constructs a fixed size array of FixedTimestamp in a Data Structure.
 
 ```cs
-FixedDateArrayInDS(DataStructure, Int32, Int32)
+FixedTimestampArrayInDS(DataStructure, Int32, Int32)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | parent | The DataStructure containing this array of FixedDate.
+| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | parent | The DataStructure containing this array of FixedTimestamp.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements.
 
-### FixedDateArrayInDS([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+### FixedTimestampArrayInDS([MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
-Constructs a fixed size array of FixedDate in a Multiple Occurrence Data Structure.
+Constructs a fixed size array of FixedTimestamp in a Multiple Occurrence Data Structure.
 
 ```cs
-FixedDateArrayInDS(MultiDataStructure, Int32, Int32)
+FixedTimestampArrayInDS(MultiDataStructure, Int32, Int32)
 ```
 
 #### Parameters
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html) | parent | The MultiDataStructure containing this array of FixedDate.
+| [MultiDataStructure](/reference/runtime/qsys-runtime/multi-data-structure.html) | parent | The MultiDataStructure containing this array of FixedTimestamp.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting position of the array within the DataStructure buffer.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | skipPositions | For non-contiguous arrays, the number of position between two consecutive array elements.
 
@@ -53,7 +53,7 @@ FixedDateArrayInDS(MultiDataStructure, Int32, Int32)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedDate\<TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-date`2.html) | Item | Indexer over the array, gets or sets the FixedDate element at that position. |
+| [FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | Item | Indexer over the array, gets or sets the FixedTimestamp element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the total number of elements in the array. |
 | [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | SkipPositions | For non-contiguous arrays, gets the number of buffer positions between consecutive array elements. 0 otherwise. |
@@ -63,15 +63,15 @@ FixedDateArrayInDS(MultiDataStructure, Int32, Int32)
 
 | Signature | Description |
 | --- | --- |
-| [Clear()](#void-clear) | Sets all array elements to the Date default value.
+| [Clear()](#void-clear) | Sets all array elements to the Timestamp default value.
 | [CopyFrom](#void-copyfromdatetime--sourcearray-int-targetstartat)([DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a DateTime[] into this array.
-| [GetEnumerator()](#ienumerator-fixeddate-tformat-tseparator--getenumerator) | Returns an enumerator that iterates through the array.
+| [GetEnumerator()](#ienumerator-fixedtimestamp-tseparator--getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
 
-Sets all array elements to the Date default value.
+Sets all array elements to the Timestamp default value.
 
 ```cs
 void Clear()
@@ -92,12 +92,12 @@ void CopyFrom(DateTime[] sourceArray, int targetStartAt)
 | [DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | sourceArray | The array to copy from.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | The index in this array where the copying should start.
 
-### IEnumerator<FixedDate<TFormat, TSeparator>> GetEnumerator()
+### IEnumerator<FixedTimestamp<TSeparator>> GetEnumerator()
 
 Returns an enumerator that iterates through the array.
 
 ```cs
-IEnumerator<FixedDate<TFormat, TSeparator>> GetEnumerator()
+IEnumerator<FixedTimestamp<TSeparator>> GetEnumerator()
 ```
 
 ### int GetStartingPosition([int index](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))

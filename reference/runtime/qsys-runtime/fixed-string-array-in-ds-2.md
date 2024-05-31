@@ -53,7 +53,7 @@ FixedStringArrayInDS(MultiDataStructure, Int32, Int32)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string`1.html) | Item | Indexer over the array, gets or sets the FixedString element at that position. |
+| [FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string-1.html) | Item | Indexer over the array, gets or sets the FixedString element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the total number of elements in the array. |
 | [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | ParentDS | Gets the Data Structure to which this field belongs. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | SkipPositions | For non-contiguous arrays, gets the number of buffer positions between consecutive array elements. 0 otherwise. |

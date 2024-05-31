@@ -35,7 +35,7 @@ FixedDecimalArray(Decimal[])
 | Type | Name | Description
 | --- | --- | --- 
 | [FixedDecimal`2\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedDecimalArray. |
-| [FixedDecimal\<TDigits, TDecimals\>](/reference/runtime/qsys-runtime/fixed-decimal`2.html) | Item | Indexer over the array, gets or sets the element at that position. |
+| [FixedDecimal\<TDigits, TDecimals\>](/reference/runtime/qsys-runtime/fixed-decimal-2.html) | Item | Indexer over the array, gets or sets the element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedDecimalArray. |
 
 ## Methods

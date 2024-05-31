@@ -65,7 +65,7 @@ IFixedSizeType<char> Convert(char value)
 
 | Type | Description
 | --- | ---
-| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html) | A new Indicator instance with the char value.
+| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html) | A new Indicator instance with the char value.
 
 ### bool op_LogicalNot([Indicator i](/reference/runtime/qsys-runtime/indicator.html))
 

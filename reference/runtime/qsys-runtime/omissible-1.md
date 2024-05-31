@@ -1,8 +1,8 @@
 ---
-title: Optional`1 class
+title: Omissible&lt;T1&gt; class
 ---
 
-Encapsulates a *NOPASS parameter.
+Encapsulates a *OMIT parameter.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
@@ -15,14 +15,14 @@ Encapsulates a *NOPASS parameter.
 
 | Name | Description |
 | --- | --- |
-| [Optional()](#optional) | Initializes an Optional object without a value.
+| [Omissible()](#omissible) | Initializes an Omissible object without a value.
 
-### Optional()
+### Omissible()
 
-Initializes an Optional object without a value.
+Initializes an Omissible object without a value.
 
 ```cs
-Optional()
+Omissible()
 ```
 
 ## Properties

@@ -134,12 +134,12 @@ title: ASNA.QSys.Runtime Interfaces
 | [IDSCallParm](/reference/runtime/qsys-runtime/ids-call-parm.html) | This interface should be implemented by any DataStructure class if an object of its type will be passed as a parameter to a program in the IBMi. |
 | [IDSDataArea](/reference/runtime/qsys-runtime/ids-data-area.html) | Describes a data structure that can be stored in a data area. |
 | [IDSField](/reference/runtime/qsys-runtime/ids-field.html) | Describes the common operations over a field in a Data Structure. |
-| [IFixedArray`2](/reference/runtime/qsys-runtime/i-fixed-array`2.html) | Describes the minimum functionality of a free-standing fixed sized array. |
-| [IFixedArrayBase`2](/reference/runtime/qsys-runtime/i-fixed-array-base`2.html) | Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional. |
-| [IFixedArrayInDS`2](/reference/runtime/qsys-runtime/i-fixed-array-in-ds`2.html) | Describes minimum operations for a fixed size array contained in a DataStructure. |
+| [IFixedArray<T1, T2>](/reference/runtime/qsys-runtime/i-fixed-array-2.html) | Describes the minimum functionality of a free-standing fixed sized array. |
+| [IFixedArrayBase<T1, T2>](/reference/runtime/qsys-runtime/i-fixed-array-base-2.html) | Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional. |
+| [IFixedArrayInDS<T1, T2>](/reference/runtime/qsys-runtime/i-fixed-array-in-ds-2.html) | Describes minimum operations for a fixed size array contained in a DataStructure. |
 | [IFixedDateTime](/reference/runtime/qsys-runtime/i-fixed-date-time.html) | Declares the basic functionality of a fixed datetime type. |
 | [IFixedSizeType](/reference/runtime/qsys-runtime/i-fixed-size-type.html) | Declares the basic functionality of a fixed-size type. |
-| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html) | Declares the basic functionality of a fixed-size generic type. |
+| [IFixedSizeType<T1>](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html) | Declares the basic functionality of a fixed-size generic type. |
 | [ILayout](/reference/runtime/qsys-runtime/i-layout.html) | Defines operations for objects describing fields in a data structure. |
 | [ILen](/reference/runtime/qsys-runtime/i-len.html) | Interface that identifies types to be used as length type arguments in fixed type declarations. |
 | [IMODS](/reference/runtime/qsys-runtime/imods.html) | Describes the set of operations of a multi-occurrence data structure. |

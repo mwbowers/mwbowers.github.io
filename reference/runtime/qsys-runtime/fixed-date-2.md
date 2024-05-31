@@ -74,7 +74,7 @@ IFixedSizeType<DateTime> Convert(DateTime value)
 
 | Type | Description
 | --- | ---
-| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html) | The IFixedSizeType result.
+| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html) | The IFixedSizeType result.
 
 ### string ToNumericString()
 

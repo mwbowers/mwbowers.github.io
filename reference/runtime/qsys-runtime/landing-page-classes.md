@@ -31,9 +31,9 @@ title: ASNA.QSys.Runtime Classes
 | [DateTimeTypeAttribute](/reference/runtime/qsys-runtime/date-time-type-attribute.html) | A non-RPG class may stamp a System.DateTime member with this attribute to be considered as a fixed-sized date/time/timestamp field by a consumer RPG program. |
 | [DecimalMethods](/reference/runtime/qsys-runtime/decimal-methods.html) | Contains extension methods for handling RPG operations for decimal numbers. |
 | [DecimalOps](/reference/runtime/qsys-runtime/decimal-ops.html) | Provide fixed length decimal storage and operations. |
-| [Dim`3](/reference/runtime/qsys-runtime/dim`3.html) | Defines a 3-digit dimension, from 100 to 999, to be used in the declaration of fixed-length array types. |
-| [Dim`4](/reference/runtime/qsys-runtime/dim`4.html) | Defines a 4-digit dimension, from 1000 to 9999, to be used in the declaration of fixed-length array types. |
-| [Dim`5](/reference/runtime/qsys-runtime/dim`5.html) | Defines a 5-digit dimension, from 10000 to 99999, to be used in the declaration of fixed-length array types. |
+| [Dim<T1, T2, T3>](/reference/runtime/qsys-runtime/dim-3.html) | Defines a 3-digit dimension, from 100 to 999, to be used in the declaration of fixed-length array types. |
+| [Dim<T1, T2, T3, T4>](/reference/runtime/qsys-runtime/dim-4.html) | Defines a 4-digit dimension, from 1000 to 9999, to be used in the declaration of fixed-length array types. |
+| [Dim<T1, T2, T3, T4, T5>](/reference/runtime/qsys-runtime/dim-5.html) | Defines a 5-digit dimension, from 10000 to 99999, to be used in the declaration of fixed-length array types. |
 | [DimArrayTypeAttribute](/reference/runtime/qsys-runtime/dim-array-type-attribute.html) | A non-RPG class may stamp an array member with this attribute to be considered as a fixed-sized array by a consumer RPG program. |
 | [DimensionAttribute](/reference/runtime/qsys-runtime/dimension-attribute.html) | A non-RPG class, property or field may be stamped with this attribute to indicate a consumer RPG program to consider it as an array with the specified dimension. |
 | [DSArrayField](/reference/runtime/qsys-runtime/ds-array-field.html) | Describes a Data Structure field that is an array. |
@@ -83,12 +83,12 @@ title: ASNA.QSys.Runtime Classes
 | [InvalidSourceLengthException](/reference/runtime/qsys-runtime/invalid-source-length-exception.html) | Length of source is less than length of data structure exception. |
 | [InvalidVirtualTerminalException](/reference/runtime/qsys-runtime/invalid-virtual-terminal-exception.html) | Virtual Terminal value -mode- is not supported exception. |
 | [JobShutDownException](/reference/runtime/qsys-runtime/job-shut-down-exception.html) | The exception that is thrown to end a job. |
-| [Len`3](/reference/runtime/qsys-runtime/len`3.html) | Defines a 3-digit length, from 100 to 999, to be used in the declaration of fixed-length types. |
-| [Len`4](/reference/runtime/qsys-runtime/len`4.html) | Defines a 4-digit length, from 1000 to 9999, to be used in the declaration of fixed-length types. |
-| [Len`5](/reference/runtime/qsys-runtime/len`5.html) | Defines a 5-digit length, from 10000 to 99999, to be used in the declaration of fixed-length types. |
+| [Len<T1, T2, T3>](/reference/runtime/qsys-runtime/len-3.html) | Defines a 3-digit length, from 100 to 999, to be used in the declaration of fixed-length types. |
+| [Len<T1, T2, T3, T4>](/reference/runtime/qsys-runtime/len-4.html) | Defines a 4-digit length, from 1000 to 9999, to be used in the declaration of fixed-length types. |
+| [Len<T1, T2, T3, T4, T5>](/reference/runtime/qsys-runtime/len-5.html) | Defines a 5-digit length, from 10000 to 99999, to be used in the declaration of fixed-length types. |
 | [LibraryListException](/reference/runtime/qsys-runtime/library-list-exception.html) | There was an error of type -error- while trying to modify the library list. |
 | [LocalScopeDS](/reference/runtime/qsys-runtime/local-scope-ds.html) | Base class that contains functionality to support locally scoped data structures. |
-| [LocalScopeMultiDS`1](/reference/runtime/qsys-runtime/local-scope-multi-ds`1.html) | Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects. |
+| [LocalScopeMultiDS<T1>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html) | Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects. |
 | [MemUnit](/reference/runtime/qsys-runtime/mem-unit.html) | Defines methods to handle RPG MOVE semantics. |
 | [MessageFileReader](/reference/runtime/qsys-runtime/message-file-reader.html) | Provides the contents of a message file. |
 | [MissingFormatException](/reference/runtime/qsys-runtime/missing-format-exception.html) | The program was compiled to use format -format-, but it was not found in file -filename-. |
@@ -98,14 +98,14 @@ title: ASNA.QSys.Runtime Classes
 | [NetworkBlockingOutputException](/reference/runtime/qsys-runtime/network-blocking-output-exception.html) | Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-. |
 | [NetworkBlockingUpdateException](/reference/runtime/qsys-runtime/network-blocking-update-exception.html) | Network Blocking is not allowed for -filename- because it is opened for *UPDATE. |
 | [NonexistentDataAreaException](/reference/runtime/qsys-runtime/nonexistent-data-area-exception.html) | DataArea Exception issued when requesting a non-existing DataArea. |
-| [NoPassOmit`1](/reference/runtime/qsys-runtime/no-pass-omit`1.html) | Encapsulates a *OMIT wnd *NOPASS parameter. |
+| [NoPassOmit<T1>](/reference/runtime/qsys-runtime/no-pass-omit-1.html) | Encapsulates a *OMIT wnd *NOPASS parameter. |
 | [NullCapableFieldAttribute](/reference/runtime/qsys-runtime/null-capable-field-attribute.html) | A non-RPG class may stamp a property or field member with this attribute to be considered as a null capable field by a consumer RPG program. |
-| [Omissible`1](/reference/runtime/qsys-runtime/omissible`1.html) | Encapsulates a *OMIT parameter. |
+| [Omissible<T1>](/reference/runtime/qsys-runtime/omissible-1.html) | Encapsulates a *OMIT parameter. |
 | [OpenSimpleQueryFileException](/reference/runtime/qsys-runtime/open-simple-query-file-exception.html) | An invalid QryKeyFlds string format has been entered. |
-| [Optional`1](/reference/runtime/qsys-runtime/optional`1.html) | Encapsulates a *NOPASS parameter. |
+| [Optional<T1>](/reference/runtime/qsys-runtime/optional-1.html) | Encapsulates a *NOPASS parameter. |
 | [OSExecute](/reference/runtime/qsys-runtime/os-execute.html) | This class contains methods to start an external process. |
 | [Parameter](/reference/runtime/qsys-runtime/parameter.html) | Describes a parameter sent into an IBMi program call. |
-| [ParameterOptions`1](/reference/runtime/qsys-runtime/parameter-options`1.html) | Represents the base functionality of the special RPG parameters *OMIT and *NOPASS |
+| [ParameterOptions<T1>](/reference/runtime/qsys-runtime/parameter-options-1.html) | Represents the base functionality of the special RPG parameters *OMIT and *NOPASS |
 | [PrintFile](/reference/runtime/qsys-runtime/print-file.html) | Represents a Database print file. It contains methods to handle all Output operations on the file. |
 | [PrintFileBase](/reference/runtime/qsys-runtime/print-file-base.html) | Base class for Database print files. Contains the print file setup information and some output operations. |
 | [ProcedureSupport](/reference/runtime/qsys-runtime/procedure-support.html) | Provides static methods to support finding a class used in dynamic calls (RPG's CallD). |
@@ -127,7 +127,7 @@ title: ASNA.QSys.Runtime Classes
 | [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html) | Base class for all ASNA QSys Runtime generated exceptions. |
 | [StringMethods](/reference/runtime/qsys-runtime/string-methods.html) | Contains extension methods for handling RPG operations and conversions for string values. |
 | [StringOps](/reference/runtime/qsys-runtime/string-ops.html) | Provide fixed length character string storage and operations. |
-| [Table`1](/reference/runtime/qsys-runtime/table`1.html) | Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. |
+| [Table<T1>](/reference/runtime/qsys-runtime/table-1.html) | Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. |
 | [TableMethods](/reference/runtime/qsys-runtime/table-methods.html) | Contains extension methods for handling Table RPG semantics. |
 | [TooManySubfileRecordsException](/reference/runtime/qsys-runtime/too-many-subfile-records-exception.html) | Record -rrn- does not fit in subfile -subfile name- on file -filename- exception. |
 | [TransactionNotStartedException](/reference/runtime/qsys-runtime/transaction-not-started-exception.html) | The transaction has not been started exception. |

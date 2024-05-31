@@ -73,7 +73,7 @@ IFixedSizeType<string> Convert(string value)
 
 | Type | Description
 | --- | ---
-| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html) | A new FixedSize string of the indicated length.
+| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html) | A new FixedSize string of the indicated length.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

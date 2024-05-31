@@ -35,7 +35,7 @@ FixedTimeArray(DateTime[])
 | Type | Name | Description
 | --- | --- | --- 
 | [FixedTime`2\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedTimeArray. |
-| [FixedTime\<TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-time`2.html) | Item | Indexer over the array, gets or sets the element at that position. |
+| [FixedTime\<TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-time-2.html) | Item | Indexer over the array, gets or sets the element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedTimeArray. |
 
 ## Methods

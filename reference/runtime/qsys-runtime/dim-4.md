@@ -1,8 +1,8 @@
 ---
-title: Dim`3 class
+title: Dim&lt;T1, T2, T3, T4&gt; class
 ---
 
-Defines a 3-digit dimension, from 100 to 999, to be used in the declaration of fixed-length array types.
+Defines a 4-digit dimension, from 1000 to 9999, to be used in the declaration of fixed-length array types.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll

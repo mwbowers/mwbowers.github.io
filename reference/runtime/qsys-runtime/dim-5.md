@@ -1,8 +1,8 @@
 ---
-title: Len`5 class
+title: Dim&lt;T1, T2, T3, T4, T5&gt; class
 ---
 
-Defines a 5-digit length, from 10000 to 99999, to be used in the declaration of fixed-length types.
+Defines a 5-digit dimension, from 10000 to 99999, to be used in the declaration of fixed-length array types.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll

@@ -1,5 +1,5 @@
 ---
-title: LocalScopeMultiDS`1 class
+title: LocalScopeMultiDS&lt;T1&gt; class
 ---
 
 Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects.

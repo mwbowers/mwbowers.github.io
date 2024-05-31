@@ -71,7 +71,7 @@ IFixedSizeType<decimal> Convert(decimal value)
 
 | Type | Description
 | --- | ---
-| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html) | The resulting IFixedSizeType.
+| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html) | The resulting IFixedSizeType.
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -120,7 +120,7 @@ FixedDecimal<TDigits, TDecimals> MergeLeft(string s, bool pad)
 
 | Type | Description
 | --- | ---
-| [FixedDecimal`2](/reference/runtime/qsys-runtime/fixed-decimal`2.html) | The FixedDecimal result.
+| [FixedDecimal`2](/reference/runtime/qsys-runtime/fixed-decimal-2.html) | The FixedDecimal result.
 
 ### FixedDecimal<TDigits, TDecimals> MergeRight([string s](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool pad](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -141,7 +141,7 @@ FixedDecimal<TDigits, TDecimals> MergeRight(string s, bool pad)
 
 | Type | Description
 | --- | ---
-| [FixedDecimal`2](/reference/runtime/qsys-runtime/fixed-decimal`2.html) | The FixedDecimal result.
+| [FixedDecimal`2](/reference/runtime/qsys-runtime/fixed-decimal-2.html) | The FixedDecimal result.
 
 ### string ToPackedRepresentation()
 

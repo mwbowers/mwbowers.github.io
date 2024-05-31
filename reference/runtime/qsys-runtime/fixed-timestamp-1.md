@@ -76,7 +76,7 @@ IFixedSizeType<DateTime> Convert(DateTime value)
 
 | Type | Description
 | --- | ---
-| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html) | A new FixedTimestamp value with the same separator.
+| [IFixedSizeType`1](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html) | A new FixedTimestamp value with the same separator.
 
 ### string ToNumericString()
 

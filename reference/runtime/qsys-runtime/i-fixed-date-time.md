@@ -7,7 +7,7 @@ Declares the basic functionality of a fixed datetime type.
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
 
-**Extends:** [IFixedSizeType\<DateTime\>](/reference/runtime/qsys-runtime/i-fixed-size-type`1.html), [IFixedSizeType](/reference/runtime/qsys-runtime/i-fixed-size-type.html), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable-1?view=net-8.0)
+**Extends:** [IFixedSizeType\<DateTime\>](/reference/runtime/qsys-runtime/i-fixed-size-type-1.html), [IFixedSizeType](/reference/runtime/qsys-runtime/i-fixed-size-type.html), [IComparable](https://learn.microsoft.com/en-us/dotnet/api/system.icomparable-1?view=net-8.0)
 <br>
 <br>
 
