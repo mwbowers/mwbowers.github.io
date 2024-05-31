@@ -88,7 +88,7 @@ title: ASNA.QSys.Runtime Classes
 | [Len<T1, T2, T3, T4, T5>](/reference/runtime/qsys-runtime/len-5.html) | Defines a 5-digit length, from 10000 to 99999, to be used in the declaration of fixed-length types. |
 | [LibraryListException](/reference/runtime/qsys-runtime/library-list-exception.html) | There was an error of type -error- while trying to modify the library list. |
 | [LocalScopeDS](/reference/runtime/qsys-runtime/local-scope-ds.html) | Base class that contains functionality to support locally scoped data structures. |
-| [LocalScopeMultiDS<T1>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html) | Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects. |
+| [LocalScopeMultiDS<T>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html) | Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects. |
 | [MemUnit](/reference/runtime/qsys-runtime/mem-unit.html) | Defines methods to handle RPG MOVE semantics. |
 | [MessageFileReader](/reference/runtime/qsys-runtime/message-file-reader.html) | Provides the contents of a message file. |
 | [MissingFormatException](/reference/runtime/qsys-runtime/missing-format-exception.html) | The program was compiled to use format -format-, but it was not found in file -filename-. |
@@ -98,14 +98,14 @@ title: ASNA.QSys.Runtime Classes
 | [NetworkBlockingOutputException](/reference/runtime/qsys-runtime/network-blocking-output-exception.html) | Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-. |
 | [NetworkBlockingUpdateException](/reference/runtime/qsys-runtime/network-blocking-update-exception.html) | Network Blocking is not allowed for -filename- because it is opened for *UPDATE. |
 | [NonexistentDataAreaException](/reference/runtime/qsys-runtime/nonexistent-data-area-exception.html) | DataArea Exception issued when requesting a non-existing DataArea. |
-| [NoPassOmit<T1>](/reference/runtime/qsys-runtime/no-pass-omit-1.html) | Encapsulates a *OMIT wnd *NOPASS parameter. |
+| [NoPassOmit<T>](/reference/runtime/qsys-runtime/no-pass-omit-1.html) | Encapsulates a *OMIT wnd *NOPASS parameter. |
 | [NullCapableFieldAttribute](/reference/runtime/qsys-runtime/null-capable-field-attribute.html) | A non-RPG class may stamp a property or field member with this attribute to be considered as a null capable field by a consumer RPG program. |
-| [Omissible<T1>](/reference/runtime/qsys-runtime/omissible-1.html) | Encapsulates a *OMIT parameter. |
+| [Omissible<T>](/reference/runtime/qsys-runtime/omissible-1.html) | Encapsulates a *OMIT parameter. |
 | [OpenSimpleQueryFileException](/reference/runtime/qsys-runtime/open-simple-query-file-exception.html) | An invalid QryKeyFlds string format has been entered. |
-| [Optional<T1>](/reference/runtime/qsys-runtime/optional-1.html) | Encapsulates a *NOPASS parameter. |
+| [Optional<T>](/reference/runtime/qsys-runtime/optional-1.html) | Encapsulates a *NOPASS parameter. |
 | [OSExecute](/reference/runtime/qsys-runtime/os-execute.html) | This class contains methods to start an external process. |
 | [Parameter](/reference/runtime/qsys-runtime/parameter.html) | Describes a parameter sent into an IBMi program call. |
-| [ParameterOptions<T1>](/reference/runtime/qsys-runtime/parameter-options-1.html) | Represents the base functionality of the special RPG parameters *OMIT and *NOPASS |
+| [ParameterOptions<T>](/reference/runtime/qsys-runtime/parameter-options-1.html) | Represents the base functionality of the special RPG parameters *OMIT and *NOPASS |
 | [PrintFile](/reference/runtime/qsys-runtime/print-file.html) | Represents a Database print file. It contains methods to handle all Output operations on the file. |
 | [PrintFileBase](/reference/runtime/qsys-runtime/print-file-base.html) | Base class for Database print files. Contains the print file setup information and some output operations. |
 | [ProcedureSupport](/reference/runtime/qsys-runtime/procedure-support.html) | Provides static methods to support finding a class used in dynamic calls (RPG's CallD). |
@@ -127,7 +127,7 @@ title: ASNA.QSys.Runtime Classes
 | [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html) | Base class for all ASNA QSys Runtime generated exceptions. |
 | [StringMethods](/reference/runtime/qsys-runtime/string-methods.html) | Contains extension methods for handling RPG operations and conversions for string values. |
 | [StringOps](/reference/runtime/qsys-runtime/string-ops.html) | Provide fixed length character string storage and operations. |
-| [Table<T1>](/reference/runtime/qsys-runtime/table-1.html) | Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. |
+| [Table<T>](/reference/runtime/qsys-runtime/table-1.html) | Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. |
 | [TableMethods](/reference/runtime/qsys-runtime/table-methods.html) | Contains extension methods for handling Table RPG semantics. |
 | [TooManySubfileRecordsException](/reference/runtime/qsys-runtime/too-many-subfile-records-exception.html) | Record -rrn- does not fit in subfile -subfile name- on file -filename- exception. |
 | [TransactionNotStartedException](/reference/runtime/qsys-runtime/transaction-not-started-exception.html) | The transaction has not been started exception. |

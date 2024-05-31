@@ -1,5 +1,5 @@
 ---
-title: NoPassOmit&lt;T1&gt; class
+title: NoPassOmit&lt;T&gt; class
 ---
 
 Encapsulates a *OMIT wnd *NOPASS parameter.

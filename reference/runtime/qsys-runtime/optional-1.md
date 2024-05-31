@@ -1,5 +1,5 @@
 ---
-title: Optional&lt;T1&gt; class
+title: Optional&lt;T&gt; class
 ---
 
 Encapsulates a *NOPASS parameter.

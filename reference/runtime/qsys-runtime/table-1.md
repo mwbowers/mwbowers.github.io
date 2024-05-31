@@ -1,5 +1,5 @@
 ---
-title: Table&lt;T1&gt; class
+title: Table&lt;T&gt; class
 ---
 
 Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property.
