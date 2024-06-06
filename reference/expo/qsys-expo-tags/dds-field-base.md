@@ -1,0 +1,26 @@
+---
+title: DdsFieldBase class
+---
+
+Provides common methods for DdsFields.
+
+**Namespace:** ASNA.QSys.Expo.Tags
+**Assembly:** ASNA.QSys.Expo.Tags.dll
+
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper?view=aspnetcore-8.0) --> [FieldBase](/reference/model/qsys-expo-tags/field-base.html)
+<br>
+<br>
+
+## Properties
+
+| Type | Name | Description
+| --- | --- | --- 
+| [ConditionalProperty](/reference/expo/qsys-expo-model/conditional-property.html) | ErrorMessage | Gets or sets a value that indicates conditional property describing the Error Message.  |
+| [ConditionalProperty](/reference/expo/qsys-expo-model/conditional-property.html) | ErrorMessageId | Gets or sets a value that indicates conditional property describing the Error Message ID.  |
+| [FieldAttribute](/reference/expo/qsys-expo-model/field-attribute.html) | FieldAttribute | When overriden in a derived class, gets a value that indicates the Field Attribute. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FieldName | Gets the name of the Field. |
+| [ModelExpression](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression) | For | Gets or sets a value that indicates the Model associated with the Mvc tag helper. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PositionCursor | Gets or sets a value that indicates the conditional expression string determining if the cursor should be positioned to this input-capable field. |
+| [FieldUsages](/reference/expo/qsys-expo-model/field-usages.html) | Usage | Gets or sets a value that indicates the Field Usage. |
+| [ValuesAttribute](/reference/expo/qsys-expo-model/values-attribute.html) | ValuesAttribute | Gets the ValuesAttribute from the Model. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | VirtualRowCol | Gets or sets a value that indicates the legacy row, col position that the logic may be expecting to identify. Format is 'Row,Col'. May not represent the current position of the tag helper. |
