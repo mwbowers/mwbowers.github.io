@@ -7,7 +7,7 @@ Defines a character input element (code) that may be read from a video source, b
 **Namespace:** ASNA.QSys.Expo.Tags
 **Assembly:** ASNA.QSys.Expo.Tags.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper?view=aspnetcore-8.0) --> [FieldBase](/reference/model/qsys-expo-tags/field-base.html) --> [DdsFieldBase](/reference/model/qsys-expo-tags/dds-field-base.html) --> [DdsCharFieldTagHelper](/reference/model/qsys-expo-tags/dds-char-field-tag-helper.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper?view=aspnetcore-8.0) --> [FieldBase](/reference/expo/qsys-expo-tags/field-base.html) --> [DdsFieldBase](/reference/expo/qsys-expo-tags/dds-field-base.html) --> [DdsCharFieldTagHelper](/reference/expo/qsys-expo-tags/dds-char-field-tag-helper.html)
 <br>
 <br>
 

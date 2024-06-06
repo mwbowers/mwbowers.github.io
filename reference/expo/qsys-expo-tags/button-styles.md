@@ -9,6 +9,11 @@ Specifies the DdsButton rendering shape.
 <br>
 <br>
 
+## Remarks
+
+The `ButtonStyles Enumeration` lists the possible values for the [DdsButton's](/reference/model/qsys-expo-tags/dds-button-tag-helper.html) `ButtonStyle` property.
+
+
 ## Enum Values
 
 | Name | Description | Value

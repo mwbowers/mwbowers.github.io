@@ -16,7 +16,7 @@ Defines a clickable element that can be configured as a replacement of a DdsFiel
 | Type | Name | Description
 | --- | --- | --- 
 | [AidKey](/reference/expo/qsys-expo-model/aid-key.html) | AidKey | Attention or Function key to be posted when Button is clicked (as if the user had pressed than keyboard key). |
-| [ButtonStyles](/reference/model/qsys-expo-tags/button-styles.html) | ButtonStyle | Gets or sets a ButtonStyle to define the rendering shape. |
+| [ButtonStyles](/reference/expo/qsys-expo-tags/button-styles.html) | ButtonStyle | Gets or sets a ButtonStyle to define the rendering shape. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Col | Gets or sets a value that indicates the horizontal position within a Row. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Color | Gets or sets the name of a web color to be used to draw the element. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FieldValue | When used along with FocusField, gets or sets the value to be copied to the field prior to submitting the page. This allows compatibility with logic expecting to detect a particular value of a field at a particular cursor position.  |

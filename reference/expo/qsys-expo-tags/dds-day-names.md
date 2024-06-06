@@ -9,6 +9,13 @@ Specifies the names of the calendar days.
 <br>
 <br>
 
+## Remarks
+
+Used as valid values for property `FirstDayOfWeek` for [DdsDateField Tag Helper](/reference/model/qsys-expo-tags/dds-date-field-tag-helper.html)
+
+These are just a symbolic names. The Calendar labels are taken from Website Localized resources.
+
+
 ## Enum Values
 
 | Name | Description | Value

@@ -7,7 +7,7 @@ Defines a Subfile Controller element
 **Namespace:** ASNA.QSys.Expo.Tags
 **Assembly:** ASNA.QSys.Expo.Tags.dll
 
-**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper?view=aspnetcore-8.0) --> [RecordBaseTagHelper](/reference/model/qsys-expo-tags/record-base-tag-helper.html) --> [DdsRecordTagHelper](/reference/model/qsys-expo-tags/dds-record-tag-helper.html)
+**Inheritance:** [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) --> [TagHelper](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper?view=aspnetcore-8.0) --> [RecordBaseTagHelper](/reference/expo/qsys-expo-tags/record-base-tag-helper.html) --> [DdsRecordTagHelper](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html)
 <br>
 <br>
 

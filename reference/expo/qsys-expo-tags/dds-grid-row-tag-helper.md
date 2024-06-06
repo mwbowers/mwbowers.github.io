@@ -17,4 +17,4 @@ Defines a Page Row where elements are positioned
 | --- | --- | --- 
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Row | Gets or Sets the line number where Row will be rendered. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RowSpan | Gets or sets the number of Rows this element specifies (defaults to 1) |
-| [SpanStyles](/reference/model/qsys-expo-tags/span-styles.html) | SpanStyle |  |
+| [SpanStyles](/reference/expo/qsys-expo-tags/span-styles.html) | SpanStyle |  |

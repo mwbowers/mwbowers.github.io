@@ -15,5 +15,5 @@ Defines Application Aid Key banner
 
 | Type | Name | Description
 | --- | --- | --- 
-| [ActiveKeyBarLocation](/reference/model/qsys-expo-tags/active-key-bar-location.html) | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. |
+| [ActiveKeyBarLocation](/reference/expo/qsys-expo-tags/active-key-bar-location.html) | Location | Gets or sets the ActiveKeyBarLocation location where keys will be rendered. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ShowKeyMnemonics | Show the Function Key Mnemonics along with the Key Names, for example: (F3 - Exit). |
