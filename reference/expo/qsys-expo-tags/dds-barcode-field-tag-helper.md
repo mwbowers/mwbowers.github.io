@@ -11,6 +11,28 @@ Defines a character input element (code) that may be read from a video source, b
 <br>
 <br>
 
+## Remarks
+
+The Barcode scanning feature requires at least one video device accesible to the Web Browser. Typically the video device is the main Mobile Phone camera (with auto-focus).
+
+The Browser requires the appropriate permissions to access the Camera.
+
+Modern Mobile Phones may have more than one camera. The DdsBarcodeFieldTag looks for one with a title including one of these words: `Back` or `back`. If no camera identifies itself with a title containing one of these words, the first camera listed (with video capabilities) is selected by default.
+
+A video-preview window is presented (below the DdsBarcodeFieldTag instance - pushing momentarily the page down), with a collection of small buttons to the right of the window labeld "1", "2", "3", etc. These buttons represent the first, second, third, etc. cameras. Tapping (or clicking) any of the buttons will activate that camera.
+
+There is a button labeled "x" available to **Cancel** the scanning process prematurely.
+
+As soon as the code in the Barcode is identified:
+
+1. An audible alarm sounds to notify that the Barcode has been succesfuly read.
+2. The value (code) read is pasted into the value of the DdsBarcodeFieldTag input instance. 
+3. The Video preview (with the available options as buttons) is removed from the Page.
+
+Normally the Application will expect only one or two Barcode formats to be used. The barcode detection performance can be improved if the Barcode format(s) is enabled by setting the appropriate `Hint` value to `true` (for any of the listed properties below).
+
+>Note: [Some browsers restrict the use of the camera for secure connections](https://www.digicert.com/blog/https-only-features-in-browsers). Beware that `http` protocol may **NOT** work for Barcode scanning. The development use of *Self-signed* certificate may require additional user consent to display pages on your site.
+
 ## Properties
 
 | Type | Name | Description

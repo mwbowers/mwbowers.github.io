@@ -11,6 +11,61 @@ Renders the Monarch Base Application's Active records along with Active Aid Keys
 <br>
 <br>
 
+
+## Remarks
+
+There is one *- and only one -* `DdsFile` Tag Helper on a Display Page.
+
+The `DdsFile` is the placeholder for the Display Page. It is the parent element for the rest of the `DdsXXX` Tag Helpers.
+
+The following is the basic [Razor Page](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/) element markup structure that defines a Display Page:
+
+```html
+<form method="post">>
+    <DdsFile DisplayPageModel="Model">
+
+        <DdsFunctionKeys />
+
+        <main role="main" >
+            <DdsSubfileControl For="Record_1">...</DdsSubfileControl>
+            <DdsRecord For="Record_2">...</DdsRecord>
+            <DdsRecord For="Record_3">...</DdsRecord>
+            <DdsRecord For="Record_n">...</DdsRecord>
+            <DdsMessagePanel />
+        </main>
+    </DdsFile>
+</form>
+```
+
+>The Application controls which of the DdsRecords (including any DdsSubfileControl) are *active* at a time. The same can be said for the *active* Function keys.
+
+Only the *active* DdsRecords are rendered when the Display Page is presented to the user inside the Browser's form.
+
+Notice the Razor page meta-data at the top of the `.cshtml` file:
+
+```html
+@page
+@model MYPAGENAME
+```
+
+Which indicates that file `MYPAGENAME.cshtml.cs` defines the instance of the class `MYPAGENAME` which derives from [DisplayPageModel](/reference/expo/qsys-expo-model/display-page-model.html)
+
+By convention the model file has the name `MYPAGENAME.cshtml.cs` with content similar to this: 
+
+```cs
+namespace MyCompany.MyApplication.ApplicationViews
+{
+    [
+        BindProperties,
+        DisplayPage(FunctionKeys = "F3 03"),
+        ExportSource(CCSID = 37)
+    ]
+    public class MYPAGENAME : DisplayPageModel
+    {
+```
+
+Where all the `DdsRecords` are defined.
+
 ## Properties
 
 | Type | Name | Description

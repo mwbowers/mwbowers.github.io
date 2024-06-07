@@ -19,7 +19,7 @@ Such `start-position` is indicated with *string expression that evaluates* to an
 
 > Legacy [DDS for display files](https://www.ibm.com/docs/en/i/7.1?topic=dds-display-files) had a limitation of column positions according to the Terminal Device capabilities, typically 80 and 132. This limitation no longer applies, since a Web Page can scroll horizontally.
 
-The following markup, describes the layout of several [DdsConstants](/reference/asna-qsys-expo/expo-tags/dds-constant-tag-helper.html) and [DdsFields](/reference/asna-qsys-expo/expo-tags/dds-field-base.html) within a [DdsRecord](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html):
+The following markup, describes the layout of several [DdsConstants](/reference/expo/qsys-expo-tags/dds-constant-tag-helper.html) and [DdsFields](/reference/expo/qsys-expo-tags/dds-field-base.html) within a [DdsRecord](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html):
 
 ```html
 <DdsRecord For="CUSTREC" KeyNames="ENTER 'Enter'; F4 'Prompt'; F6 'New'; F11 'Delete'; F12 'Cancel';">

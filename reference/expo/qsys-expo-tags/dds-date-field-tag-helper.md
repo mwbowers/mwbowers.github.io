@@ -11,6 +11,40 @@ Defines an input element to capture Dates.
 <br>
 <br>
 
+## Remarks
+
+Date is a complex data type. It presents several presentation challenges (particularly with respect to [Localization](https://en.wikipedia.org/wiki/Internationalization_and_localization)). IBM i defined [Date Formats](https://www.ibm.com/docs/en/i/7.3?topic=design-date-formats) in a way that is not common for Web Development.
+
+The use of Selectable Calendar (native on a Web Browser, or Customized by QSys Expo) is very desirable and presents an immediate level of Modernization on a Legacy Application.
+
+The `DdsDateField` Tag Helper along with the Model definition of the field, provide a very convenient way preserve Application Logic with the IBM i defined [Date Formats](https://www.ibm.com/docs/en/i/7.3?topic=design-date-formats) specification.
+
+The following is an excerpt of a Display Page, with the markup needed to define the layout of a Date:
+
+```html
+<div Row="4">
+    <DdsConstant Col="23+2" Text="Date:" />
+    <DdsDateField Col="29+2" For="SFLC.SORDDATE"  Comment="ORDER DATE" />
+</div>
+```
+
+The following is the corresponding Model field definition:
+
+```cs
+public class SFLC_Model : SubfileControlModel
+{
+    public List<SFL1_Model> SFL1 { get; set; } = new List<SFL1_Model>();
+    .
+    .
+    .
+    [Date(DateFormat = DateAttribute.DdsDateFormat.USA)]
+    public DateTime SORDDATE { get; private set; } // ORDER DATE
+
+}
+```
+
+Notice how the [DateFormat attribute](/reference/expo/qsys-expo-model/date-attribute.html) is defined using the IBM i definition. (The default date-separator is `-`, it can be changed using `DateSeparator` attribute).
+
 ## Properties
 
 | Type | Name | Description

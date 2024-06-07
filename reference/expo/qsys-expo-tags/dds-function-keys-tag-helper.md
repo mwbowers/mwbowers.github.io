@@ -11,6 +11,29 @@ Defines Application Aid Key banner
 <br>
 <br>
 
+## Remarks
+
+All Display Pages have a `bar` that displays buttons to activate [AidKey](/reference/expo/qsys-expo-model/aid-key.html) codes to submit the Page to the server.
+
+The `DdsFunctionKeys` defines where this `bar` will be rendered, effectively defining the remaining area on the Page where the rest of the `DdsXXX` will render.
+
+Typically, the `DdsFunctionKeys` is defined as the first element inside `DdsFile`
+
+```html
+<form id="MonarchForm" method="post">
+    <DdsFile DisplayPageModel="Model">
+
+        <DdsFunctionKeys Location="HorizontalBottom" />
+        .
+        .
+        .
+    </DdsFile>
+<form>
+```
+
+>If you prefer not to display the `DdsFunctionKeys` bar (i.e. your Application has other navigation menus), include the `DdsFunctionKeys` instance on your Display Page with the `Location` property set to [Hidden](/reference/expo/qsys-expo-tags/active-key-bar-location.html). 
+
+
 ## Properties
 
 | Type | Name | Description

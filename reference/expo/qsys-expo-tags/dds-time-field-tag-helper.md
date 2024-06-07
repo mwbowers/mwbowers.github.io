@@ -11,6 +11,36 @@ Defines an input element to capture Times.
 <br>
 <br>
 
+## Remarks
+
+To define a field to capture or display time of day values, use the [DdsTimeField](/reference/expo/qsys-expo-tags/dds-time-field-tag-helper.html) Tag Helper.
+
+For example, the following markup defines a span text element for the field `ARRIVEAT` in the `PACKAGE` record (defined in the Model).
+
+```html
+<div Row="7">
+    .
+    .
+    .
+    <DdsTimeField Col="27" For="PACKAGE.ARRIVEAT" />
+</div>
+```
+
+The field `ARRIVEAT` is defined in the Model file, like so:
+
+```cs
+public class PACKAGE_Model : RecordModel
+{
+    .
+    .
+    [Time(USA)]
+    public DateTime ARRIVEAT { get; private set; }
+
+
+```
+
+Note how the `Time` attribute defines the [format of the Time field](/reference/asna-qsys-expo/expo-model/time-attribute/dds-time-format.html) to be USA. The property accessors define the field `Usage`. In this example, the field is public get and private set, defining it as `OUTPUT Only`.
+
 ## Properties
 
 | Type | Name | Description

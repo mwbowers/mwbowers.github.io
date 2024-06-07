@@ -11,6 +11,17 @@ Defines an element where a signature can be captured
 <br>
 <br>
 
+## Remarks
+
+`DdsSignature` Tag Helper provides a Display element that shows a depiction of a hand written [signature](https://en.wikipedia.org/wiki/Signature).
+When bound to an input-capable field in the Model, it allows to capture the [signature](https://en.wikipedia.org/wiki/Signature) by recording a series of line and curve sketches using an input device (such as mouse, or finger movements on a touch device).
+
+The `DdsSignature` Tag Helper can be configured to add a date stamp (in the form of a watermark), to set a reference for the signature creation.
+
+The field bound to the Model is a [FixedString](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixedstring) that holds the depiction of the signature as an [Base64-encoded](https://en.wikipedia.org/wiki/Base64) [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) image. SVG images provide a compact lossless image format that can be converted to any other [Raster image](https://en.wikipedia.org/wiki/Raster_graphics) format (png, jpeg, etc.)
+
+When the sketches of the signature being captured should exceeds the length of the field bound to it, the `DdsSignature` Tag Helper will `simplify` the [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) (lowering its quality) to make it fit into the allocated length.
+
 ## Properties
 
 | Type | Name | Description

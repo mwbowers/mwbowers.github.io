@@ -9,6 +9,9 @@ Describes the Left padding option.
 <br>
 <br>
 
+Left-Padding guarantees the position of the significant characters of a [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) field value, when not all the length is used. Application Logic may depend on those filled positions. 
+
+
 ## Enum Values
 
 | Name | Description | Value

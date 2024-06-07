@@ -11,6 +11,21 @@ Provides common methods for DdsFields.
 <br>
 <br>
 
+## Remarks
+
+A `FieldBase` is used by tag Helpers that may be bound to a Model field.
+
+As an [abstract class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members) it cannot be used directly. The `FieldBase` is the class that implements all the common behavior for the rest of the DdsXXXFields: 
+
+[DdsConstant](/reference/expo/qsys-expo-tags/dds-constant-tag-helper.html),
+[DdsCharField](/reference/expo/qsys-expo-tags/dds-char-field-tag-helper.html),
+[DdsDecField](/reference/expo/qsys-expo-tags/dds-dec-field-tag-helper.html),
+[DdsDateField](/reference/expo/qsys-expo-tags/dds-date-field-tag-helper.html),
+[DdsDecDateField](/reference/expo/qsys-expo-tags/dds-dec-date-field-tag-helper.html), 
+
+etc.
+
+
 ## Properties
 
 | Type | Name | Description
