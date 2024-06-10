@@ -2132,6 +2132,8 @@ Reference:
     section:
     - title: Icon Library
       path: /reference/expo/non-generated-reference/dds-button-icon-reference.html
+    - title: Displaying a Field as a Dropdown Box
+      path: /reference/expo/non-generated-reference/field-as-dropdown-box.html
  
 ## Dead Branch for now.
 Mobile:

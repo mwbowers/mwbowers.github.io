@@ -25,7 +25,7 @@ For the sake of this topic, we can also think of these three areas in the timing
 
 ASNA [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html) provides basic navigation panel with active Function Keys as defined by the [PageModel](/concepts/user-interface/razor-pages.html#pagemodel). The basic navigation consists of a Bar with named-links to submit the Page, sending the equivalent of keyboard [Command Key](https://www.ibm.com/docs/en/i/7.2?topic=80-cann-command-attention-keyword-display-files), to trigger an Action on the Application logic.
 
-The only customization for the Page Navigation Panel presented by the [DdsFunctionKeys](http://localhost:4000/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper.html) is the location:
+The only customization for the Page Navigation Panel presented by the [DdsFunctionKeys](/reference/expo/qsys-expo-tags/dds-function-keys-tag-helper.html) is the location:
 
 1. `VerticalLeft` (default). 
 2. `VerticalRight`.
@@ -185,7 +185,7 @@ Here is the complete [boilerplate code](https://en.wikipedia.org/wiki/Boilerplat
 
 ### When replacing the Panel, how do you obtain the Active Function-Keys?
 
-If the [DdsFunctionKeys](http://localhost:4000/reference/asna-qsys-expo/expo-tags/dds-function-keys-tag-helper.html) is chosen with its `location` property with the value 'Hidden', there is a simple [API](https://en.wikipedia.org/wiki/API) that can be used to retrieve the Application's *Active Function Keys* for the Page.
+If the [DdsFunctionKeys](/reference/expo/qsys-expo-tags/dds-function-keys-tag-helper.html) is chosen with its `location` property with the value 'Hidden', there is a simple [API](https://en.wikipedia.org/wiki/API) that can be used to retrieve the Application's *Active Function Keys* for the Page.
 
 The [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) allows *global* definition of symbols accessible to any JavaScript function. Any object may be added as a property to the global [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) object.
 
