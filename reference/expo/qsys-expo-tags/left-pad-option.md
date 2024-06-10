@@ -9,6 +9,8 @@ Describes the Left padding option.
 <br>
 <br>
 
+## Remarks
+
 Left-Padding guarantees the position of the significant characters of a [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) field value, when not all the length is used. Application Logic may depend on those filled positions. 
 
 

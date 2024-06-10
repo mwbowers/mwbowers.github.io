@@ -2,6 +2,25 @@
 title: ASNA.QSys.Expo.Model Classes
 ---
 
+## Remarks
+
+The `ASNA.QSys.Expo.Model` namespace contains a collection of classes that form the core of the ASNA QSys system. These classes provide the fundamental functionalities and structures needed to build, run, and manage ASNA applications.
+
+The classes in this namespace cover a wide range of functionalities, including but not limited to:
+
+- Managing and interacting with jobs and programs
+- Handling exceptions and errors
+- Managing message queues
+- Interacting with the integrated file system
+- Formatting numeric values according to Edit Code or Edit Word
+- Providing support for Posted form validation for fields with Edit Code or Edit Word
+- Defining attributes for various data types
+
+Each class in this namespace is designed to perform a specific function within the ASNA QSys system. They provide the building blocks that developers can use to create robust and efficient applications.
+
+This namespace is the parent topic in the Table of Contents, and it includes pages that describe the classes defined within it. Each of these pages provides detailed information about the usage, properties, methods, and events of each class.
+
+Developers working with the ASNA QSys system should familiarize themselves with the contents of this namespace, as it forms the basis for most ASNA development tasks.
 
 | Type | Description |
 | --- | --- |
