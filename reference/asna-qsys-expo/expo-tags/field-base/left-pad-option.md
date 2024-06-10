@@ -2,7 +2,7 @@
 title: LeftPadOption Enumeration
 ---
 
-Names the available Left Padding options (used by [LeftPad](/reference/asna-qsys-expo/expo-tags/field-base.html#properties)) FieldBase Property.
+Names the available Left Padding options (used by [LeftPad](/reference/expo/qsys-expo-tags/dds-field-base.html#properties)) FieldBase Property.
 
 **Namespace:** ASNA.QSys.Expo.Tags <br/>
 **Assembly:** ASNA.QSys.Expo.Tags

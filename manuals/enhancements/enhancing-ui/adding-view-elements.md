@@ -15,11 +15,11 @@ The DdsCharField and DdsDecField TagHelpers provide a mechanism to show values i
 
 ## Button
 
-A [DdsButton](/reference/asna-qsys-expo/expo-tags/dds-button-tag-helper.html) is a convenient way of adding a button to a display file page to provide the user to select the function key he would have to press.  
+A [DdsButton](/reference/expo/qsys-expo-tags/dds-button-tag-helper.html) is a convenient way of adding a button to a display file page to provide the user to select the function key he would have to press.  
 
 The `DdsButton` allows the programmer to associated the location of the cursor when the DdsButton is pressed along with the name of then input field and even provide some data on the field when the DdsButton is clicked.
 
-The button can be rendered to the user in one of four [styles](/reference/asna-qsys-expo/expo-tags/dds-button-tag-helper/button-styles.html):
+The button can be rendered to the user in one of four [styles](/reference/expo/qsys-expo-tags/button-styles.html):
  + Button
  + Icon
  + Image
@@ -27,27 +27,27 @@ The button can be rendered to the user in one of four [styles](/reference/asna-q
 
 ## Context Menu
 
-A [DdsContextMenu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html) is a convenient way of adding *contextual* menu-option listings (near input-capable fields) to execute **actions**. The *context* menu is presented as a  [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) in its *closed state*. 
+A [DdsContextMenu](/reference/expo/qsys-expo-tags/dds-context-menu-tag-helper.html) is a convenient way of adding *contextual* menu-option listings (near input-capable fields) to execute **actions**. The *context* menu is presented as a  [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) in its *closed state*. 
 
 To open the menu, the user clicks the **☰** button (using the left-mouse button or a finger *tap*). The list of available actions is presented in a pop-up window. Any action can be selected from the listing using the left-mouse button (or finger *tap*), or, to *collapse* the menu back to the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) the user may click on any record - in an area outside the menu -.
 
 ### Context Menu Option
 
-Each of the available *actions* in a [DdsContextMenu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html), is specified with a 
-[DdsMenuOption](/reference/asna-qsys-expo/expo-tags/dds-menu-option-tag-helper.html) tagHelper.
+Each of the available *actions* in a [DdsContextMenu](/reference/expo/qsys-expo-tags/dds-context-menu-tag-helper.html), is specified with a 
+[DdsMenuOption](/reference/expo/qsys-expo-tags/dds-menu-option-tag-helper.html) tagHelper.
 
 An *action* is described by a group of properties, allowing execution to:
 
 1. *Change* the value of an existing field on the page. Optionally setting the *row,col* values for the virtual legacy application cursor-location, to allow the program that executed this DisplayPage to test the *current* cursor-location to conditionally execute logic code.
-2. *Push* an [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) to submit the page.
-3. Combination of *(1)* and *(2)* above to *Change* a field and then *Push* an [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html) to submit the page.
+2. *Push* an [AidKey](/reference/expo/qsys-expo-model/aid-key.html) to submit the page.
+3. Combination of *(1)* and *(2)* above to *Change* a field and then *Push* an [AidKey](/reference/expo/qsys-expo-model/aid-key.html) to submit the page.
 
 
 <br>
 
 ## Checkbox
 
-A [DdsCheckbox](/reference/asna-qsys-expo/expo-tags/dds-checkbox-field-tag-helper.html) is a good candidate to replace the typical Legacy `Yes/No` - constant and field - combination, with a User-Friendly element.
+A [DdsCheckbox](/reference/expo/qsys-expo-tags/dds-checkbox-field-tag-helper.html) is a good candidate to replace the typical Legacy `Yes/No` - constant and field - combination, with a User-Friendly element.
 
 The `DdsCheckbox` allows the programmer to specify for a field the value to be associated with the check state and the one for unchecked state.
 
@@ -60,7 +60,7 @@ To display the [field as a dropdown box](/reference/asna-qsys-expo/expo-tags/fie
 ## Radio Button Group
 An alternative to using a Dropdown box to list the available options for a field is using a set of radio buttons for the user to make her selection. 
 
-The [DdsRadioButtonGroupField](/reference/asna-qsys-expo/expo-tags/dds-radio-button-group-field-tag-helper.html) facilitates the creation of a group of mutually exclusive radio buttons.
+The [DdsRadioButtonGroupField](/reference/expo/qsys-expo-tags/dds-radio-button-group-field-tag-helper.html) facilitates the creation of a group of mutually exclusive radio buttons.
 
 ## Signature
-The [DdsSignature](/reference/asna-qsys-expo/expo-tags/dds-signature-tag-helper.html) Tag Helper provides a Display element that shows a depiction of a hand written signature. When bound to an input-capable field in the Model, it allows to capture the signature by recording a series of line and curve sketches using an input device (such as mouse, or finger movements on a touch device).
+The [DdsSignature](/reference/expo/qsys-expo-tags/dds-signature-tag-helper.html) Tag Helper provides a Display element that shows a depiction of a hand written signature. When bound to an input-capable field in the Model, it allows to capture the signature by recording a series of line and curve sketches using an input device (such as mouse, or finger movements on a touch device).

@@ -30,11 +30,11 @@ In particular, the IBM i *Page Description Language*, or in IBM terms ["Data Des
 
 ## Migration for SFLEND (Last Page) keyword.
 
-There are three properties that may be generated on the [DdsSubfileControl](/reference/asna-qsys-expo/expo-tags/dds-subfile-control-tag-helper.html) tagHelper: `SubFileEnd`, `SubFileEndTextOn` and `SubfileEndTextOff`
+There are three properties that may be generated on the [DdsSubfileControl](/reference/expo/qsys-expo-tags/dds-subfile-control-tag-helper.html) tagHelper: `SubFileEnd`, `SubFileEndTextOn` and `SubfileEndTextOff`
 
 | Property                 | Description                                                                  |
 | ------------------------ | ---------------------------------------------------------------------------- |  
-| SubFileEnd               | [Conditional Property](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#conditional-property) which determines if Subfile is showing the *Last Page*. |
+| SubFileEnd               | [Conditional Property](/reference/expo/qsys-expo-model/conditional-property.html) which determines if Subfile is showing the *Last Page*. |
 | SubFileEndTextOn         | Text to show as icon *Tooltip* when **SubFileEnd** evaluates to *True*.      |
 | SubfileEndTextOff        | Text to show as icon *Tooltip* when **SubFileEnd** evaluates to *False*.     |
 

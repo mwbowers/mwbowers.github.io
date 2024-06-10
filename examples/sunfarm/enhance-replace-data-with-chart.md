@@ -261,10 +261,10 @@ The *height* of `div id="sales-chart-container"` <mark>will make our Page taller
 
 We can use the [Browser Developer Tools](https://www.geeksforgeeks.org/browser-developer-tools/) to inspect how a page got generated. Looking at the elements rendered, we identify that <mark>The Empty Rows from 6 to 20 should be eliminated</mark>. (We could optionally use absolute positioned Chart, but this presents other challenges).
 
-Using the property [ExcludeEmptyRows](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html#properties)
+Using the property [ExcludeEmptyRows](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html#properties)
 we can eliminate <mark>Selected</mark> Empty-Row `divs`. 
 
-[ExcludeEmptyRows](/reference/asna-qsys-expo/expo-tags/dds-record-tag-helper.html#properties) property takes a comma-separated list of either numeric ranges, or single values describing the EmptyRow we **DO NOT** want to inject to complete the (otherwise) constant vertical height.
+[ExcludeEmptyRows](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html#properties) property takes a comma-separated list of either numeric ranges, or single values describing the EmptyRow we **DO NOT** want to inject to complete the (otherwise) constant vertical height.
 
 ```html
 <DdsRecord For="SALESREC" StretchConstantText=false KeyNames="F12 'Cancel';" 

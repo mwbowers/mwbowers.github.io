@@ -16,7 +16,7 @@ Defines a Subfile Controller element
 
 A `DdsSubfileControl` Tag Helper is a specialized [DdsRecord](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html) that may contain a [Subfile Record](/reference/expo/qsys-expo-model/subfile-record-model). A `Subfile Record` is defined as a collection of [DdsSubfileRecord](/reference/expo/qsys-expo-tags/dds-subfile-record-tag-helper.html) Tag Helpers, nested `DdsSubfileControl` using a specified range of `DIV` rows, in as shown in the example code bellow).
 
-The following markup shows the specification of DdsSubfileControl named "SFLC". As any other [DdsRecord](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html) Tag Helper, `DdsSubfileControl` Tag Helper may contain [DdsConstants](/reference/expo/qsys-expo-tags/dds-constant-tag-helper.html) and [DdsFields](/reference/expo/qsys-expo-tags/dds-field-base.html) and up to one Subfile (collection of [DdsSubfileRecords](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html)).
+The following markup shows the specification of DdsSubfileControl named "SFLC". As any other [DdsRecord](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html) Tag Helper, `DdsSubfileControl` Tag Helper may contain [DdsConstants](/reference/expo/qsys-expo-tags/dds-constant-tag-helper.html) and [DdsFields](/reference/expo/qsys-expo-tags/dds-field-base.html) and up to one Subfile (collection of [DdsSubfileRecords](/reference/expo/qsys-expo-tags/dds-field-base.html#properties)).
 
 ```html
 @{

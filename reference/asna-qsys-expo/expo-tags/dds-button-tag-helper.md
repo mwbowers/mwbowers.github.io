@@ -109,7 +109,7 @@ To display the DdsButton as a link, set the `ButtonStyle="Button"` and the `Text
 
 #### Icon
 
-When displaying a DdsButton as an Icon, use one of the shapes provided by the library. The [*Icon Shapes*](/reference/asna-qsys-expo/expo-tags/dds-button-icon-reference.html) are simple and clean, monochrome (color can be changed to any solid color), scaled without loss and respect the background (use *transparent* background).
+When displaying a DdsButton as an Icon, use one of the shapes provided by the library. The [*Icon Shapes*](/reference/expo/non-generated-reference/dds-button-icon-reference.html) are simple and clean, monochrome (color can be changed to any solid color), scaled without loss and respect the background (use *transparent* background).
 
 To display the DdsButton as a link, set the `ButtonStyle="Button"` and set the name of the Icon to be used on the `IconID` property.
 

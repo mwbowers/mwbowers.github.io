@@ -39,7 +39,7 @@ public class PACKAGE_Model : RecordModel
 
 ```
 
-Note how the `Time` attribute defines the [format of the Time field](/reference/asna-qsys-expo/expo-model/time-attribute/dds-time-format.html) to be USA. The property accessors define the field `Usage`. In this example, the field is public get and private set, defining it as `OUTPUT Only`.
+Note how the `Time` attribute defines the [format of the Time field](/reference/expo/qsys-expo-model/dds-time-format.html) to be USA. The property accessors define the field `Usage`. In this example, the field is public get and private set, defining it as `OUTPUT Only`.
 
 ## Properties
 

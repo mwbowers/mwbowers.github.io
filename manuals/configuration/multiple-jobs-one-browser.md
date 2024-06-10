@@ -39,6 +39,6 @@ For websites configured to run multiple jobs, the Job Handle that is used to ide
 #### Beware of the ASP.NET Core Session
 If your web pages need to keep data on a per-job basis, beware that you are not able to use the [Session](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state) object to store data specific to each job as the Session is shared amongst all tabs.  Also note that the [Session state is not-locking](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-7.0#:~:text=Session%20state%20is%20non%2Dlocking).  If two request for the same session are processed simultaneously, changes to the Session done by one request may be overridden by the other request.
  
- To assist in the keeping of data on a per-job basis, Monarch provides the  [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) facilities which you can use.
+ To assist in the keeping of data on a per-job basis, Monarch provides the  [JobSession](/reference/expo/qsys-expo-model/job-session.html) facilities which you can use.
 
 

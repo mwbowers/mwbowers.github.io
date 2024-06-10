@@ -147,7 +147,7 @@ Let's look at an example of passing parameters to the called program. Say we wan
 ```
 The `Call` method receives an array of strings to be passed as parameters to the program.  Eventhough the parameters are passed as strings, these are casted to the type of parameter defined by the Program as long as they are: strings, decimals, FixedStrings and FixedDecimals. 
 
-Once the program returns, Monarch will redirect the browser back to /Minutes as requested on the `Call` method.  The values of the parameters returned by the program are concatenated into a single string, separated by newline characters, and stored in the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class property `CommandParm`.  These values can be retrieved as shown here:
+Once the program returns, Monarch will redirect the browser back to /Minutes as requested on the `Call` method.  The values of the parameters returned by the program are concatenated into a single string, separated by newline characters, and stored in the [JobSession](/reference/expo/qsys-expo-model/job-session.html) class property `CommandParm`.  These values can be retrieved as shown here:
 ```cs
 
         public IActionResult OnGet()

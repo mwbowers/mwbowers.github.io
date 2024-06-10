@@ -6,9 +6,9 @@ Sometimes it is desirable to introduce changes in the UI without affecting the A
 
 This is particularly important when enhancing the UI on a [ASNA Wings](https://docs.asna.com/documentation/Help170/Wings/_HTML/Welcome.htm) deployment.
 
-The [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) plays an important role as the UI Controller, and its responsible for sending and receiving the UI Data *to* the Application Logic and *from* the User (Browser response).
+The [DisplayPageModel class](/reference/expo/qsys-expo-model/display-page-model.html) plays an important role as the UI Controller, and its responsible for sending and receiving the UI Data *to* the Application Logic and *from* the User (Browser response).
 
-There are two virtual methods on [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) that allow us to *intercept* the Data that is flowing from the the Application to the User *or* from User to the Application:
+There are two virtual methods on [DisplayPageModel class](/reference/expo/qsys-expo-model/display-page-model.html) that allow us to *intercept* the Data that is flowing from the the Application to the User *or* from User to the Application:
 
 1. `OnCopyDisplayfileToBrowser`: right before the Application data is sent to the User (Browser) 
 2. `OnCopyBrowserToDisplayFile`: right before the User (Browser) response is sent back to the Application.
@@ -98,7 +98,7 @@ There are two kind of indicators that are involved in Display Pages:
 
     A response indicator is defined as part of a [DDS keyword entries](https://www.ibm.com/docs/en/i/7.5?topic=ddf-dds-keyword-entries-display-files-positions-45-through-80), indicating that the *function* it represents has *completed*. Not all of the DDS Keywords may define a response indicator.
 
-    >Response indicators are three-state values. When the *function* associated with the keyword executes, the response indicator can direct the indicator to be *set*, *reset* or *remain unchanged*. [Expo Model](/reference/asna-qsys-expo/expo-model/expo-model-intro.html) represents these three states as the characters: '1', '0' or 'X'.
+    >Response indicators are three-state values. When the *function* associated with the keyword executes, the response indicator can direct the indicator to be *set*, *reset* or *remain unchanged*. [Expo Model](/reference/expo/qsys-expo-model/landing-page-namespace.html) represents these three states as the characters: '1', '0' or 'X'.
 
 
 When writing code inside the two overridden methods described above, an **Option indicator** may be tested as follows:
@@ -122,7 +122,7 @@ Or a **Response indicator** may be tested in code, like:
     }
 ```
 
-To change the value of Indicators, the [RecordModel class](http://localhost:4000/reference/asna-qsys-expo/expo-model/record-model.html) provides the following two methods:
+To change the value of Indicators, the [RecordModel class](/reference/expo/qsys-expo-model/record-model.html) provides the following two methods:
 
 ```cs
 SetOptionIndicator(int indicator, bool newValue)
@@ -130,7 +130,7 @@ SetOptionIndicator(int indicator, bool newValue)
 SetResponseIndicator(int indicator, char newValue01X)
 ```
 
-Additionally if **ALL** the *one-hundred* indicators are needed, the following [RecordModel class](http://localhost:4000/reference/asna-qsys-expo/expo-model/record-model.html) methods can be used to return *A Copy* of the indicator array:
+Additionally if **ALL** the *one-hundred* indicators are needed, the following [RecordModel class](/reference/expo/qsys-expo-model/record-model.html) methods can be used to return *A Copy* of the indicator array:
 
 ```cs
 bool[] GetOptionIndicators()
@@ -140,7 +140,7 @@ char[] GetResponseIndicators()
 
 ## Direct Access to the DataSet
 
-The [DisplayPageModel class](/reference/asna-qsys-expo/expo-model/display-page-model.html) provides methods to access the DataSet internal DataTable for advanced customization:
+The [DisplayPageModel class](/reference/expo/qsys-expo-model/display-page-model.html) provides methods to access the DataSet internal DataTable for advanced customization:
 
 ```cs
 DataTable GetDataTable(string formatName)             // Access to DataTable for any active record (including subfile records)

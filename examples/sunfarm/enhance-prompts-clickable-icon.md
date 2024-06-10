@@ -43,7 +43,7 @@ The `DdsConstant` right after the `DdsCharField CUSTREC.SFSTATE`, can be replace
 </div>
 ```
 
->Note: For a list of available hi-resolution icons, visit this [Page](/reference/asna-qsys-expo/expo-tags/dds-button-icon-reference.html).
+>Note: For a list of available hi-resolution icons, visit this [Page](/reference/expo/non-generated-reference/dds-button-icon-reference.html).
 
 ## Results
 

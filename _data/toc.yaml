@@ -2127,7 +2127,12 @@ Reference:
         path: /reference/expo/qsys-expo-tags/span-styles.html
       - title: LeftPadOption
         path: /reference/expo/qsys-expo-tags/left-pad-option.html
-   
+  - sectiontitle: ASNA.QSys.Expo.Tag Resources
+    sectionpath: /reference/expo/non-generated-reference/landing-page.html
+    section:
+    - title: Icon Library
+      path: /reference/expo/non-generated-reference/dds-button-icon-reference.html
+ 
 ## Dead Branch for now.
 Mobile:
 - sectiontitle: ASNA Mobile Support

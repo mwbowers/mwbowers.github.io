@@ -16,17 +16,17 @@ Defines a Context Menu.
 Defines a Context Menu.
 
 A Context Menu is a *non-field* element that renders as a [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button).
-It should contain a list of [DdsMenuOption](/reference/asna-qsys-expo/expo-tags/dds-menu-option-tag-helper.html) *tagHelpers* that define the available **actions** a user may select for execution.
+It should contain a list of [DdsMenuOption](/reference/expo/qsys-expo-tags/dds-menu-option-tag-helper.html) *tagHelpers* that define the available **actions** a user may select for execution.
 
 Typically, the Context Menu is designed to be positioned *next* to an input field, to provide its *context*. 
 
-When a user *left-clicks* the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button), the list of [DdsMenuOption](/reference/asna-qsys-expo/expo-tags/dds-menu-option-tag-helper.html)s are rendered, overlapping the position of the **☰** Hamburger button, popping-up from the Page ready for the user to select the Menu option to execute.
+When a user *left-clicks* the [☰ Hamburger button](https://en.wikipedia.org/wiki/Hamburger_button), the list of [DdsMenuOption](/reference/expo/qsys-expo-tags/dds-menu-option-tag-helper.html)s are rendered, overlapping the position of the **☰** Hamburger button, popping-up from the Page ready for the user to select the Menu option to execute.
 
 To collapse the Context Menu, the user may *left-click* on an area outside the pop-up menu.
 
 A Context Menu is positioned by specifying a value to the the `Col` property (as any other `DdsField` or `DdsConstant` tagHelpers). When used inside a `DdsTableColumn` tagHelper, use `Name` instead of `Col` properties.
 
-When defined within a [DdsSubfileRecord](/reference/asna-qsys-expo/expo-tags/dds-subfile-record-tag-helper.html), the **☰** Hamburger button moves up and down the subfile records (as the user *hovers* over records using the mouse). The **☰** Hamburger button defines the context to be *the selected record* in the subfile.
+When defined within a [DdsSubfileRecord](/reference/expo/qsys-expo-tags/dds-field-base.html#properties), the **☰** Hamburger button moves up and down the subfile records (as the user *hovers* over records using the mouse). The **☰** Hamburger button defines the context to be *the selected record* in the subfile.
 
 More than one Context Menu, may be defined in a *DdsSubfileRecord*.
 

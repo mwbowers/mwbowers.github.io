@@ -139,8 +139,8 @@ We use a subfile to communicate the yearly data collected (in the Application Lo
 
 We need the following new code:
 1. Declaration of the Subfile in the UI Model class.
-2. Since we are using a subfile in `SALESREC` we need to change the `SALESREC_Model` type from [RecordModel](/reference/asna-qsys-expo/expo-model/record-model.html) to [SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html).
-3. Update the RazorPage to reflect the changes in the [DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) (done in step 2).
+2. Since we are using a subfile in `SALESREC` we need to change the `SALESREC_Model` type from [RecordModel](/reference/expo/qsys-expo-model/record-model.html) to [SubfileRecordModel](/reference/expo/qsys-expo-model/subfile-record-model.html).
+3. Update the RazorPage to reflect the changes in the [DisplayPageModel](/reference/expo/qsys-expo-model/display-page-model.html) (done in step 2).
 
 ### WEBSITE CHANGES
 
@@ -211,7 +211,7 @@ We need to upgrade it to match the Model by changing the tagHelper from `DdsReco
 
 If we recompile the Website, the new subfile is **now available** to the Application logic, were records will be written with yearly Sales and Returns information.
 
->Note: When new fields are added to the [DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) class, the RazorPage has more fields available to display, but it **is not required that the fields are used**. We will see later in this Example how we will pass this new information directly to the Chart object.
+>Note: When new fields are added to the [DisplayPageModel](/reference/expo/qsys-expo-model/display-page-model.html) class, the RazorPage has more fields available to display, but it **is not required that the fields are used**. We will see later in this Example how we will pass this new information directly to the Chart object.
 
 ### WRITING SUBFILE RECORDS IN THE APPLICATION LOGIC.
 
@@ -282,7 +282,7 @@ If you run the Website, you will not get the new Chart *yet*.
 
 We need to [Intercept the Data-Flow from Program to the Model](/concepts/user-interface/intercept-model-program-dataflow.html) so we can transform the data to the format the [amcharts JavaScript Library](https://www.amcharts.com/docs/v4/getting-started/using-javascript/) requires.
 
-Let's add the following method override to `CUSTDSPF` ([DisplayPageModel](/reference/asna-qsys-expo/expo-model/display-page-model.html) derived class):
+Let's add the following method override to `CUSTDSPF` ([DisplayPageModel](/reference/expo/qsys-expo-model/display-page-model.html) derived class):
 
 ```cs
 protected override void OnCopyDspFileToBrowser()

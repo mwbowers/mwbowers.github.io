@@ -5,7 +5,7 @@ title: Configuring the Database Name Store
 
 ## DataGate Source Profile
 
-In order for DataGate to establish a connection from an application to a database server it is necessary to provide information about the server, communication protocol to use, user and password for the connection, etc.  This information is captured in what DataGate calls a database [Source Profile](/reference/datagate-client/source-profile-class.html).
+In order for DataGate to establish a connection from an application to a database server it is necessary to provide information about the server, communication protocol to use, user and password for the connection, etc.  This information is captured in what DataGate calls a database [Source Profile](/reference/datagate/datagate-providers/source-profile.html).
 
 Monarch Base provides the class `QSys.Runtime.Database` to encapsulate a DataGate Source Profile and a DataGate connection to a database.
 
