@@ -2,6 +2,19 @@
 title: ASNA.QSys.Runtime.JobSupport Enumerations
 ---
 
+## Remarks
+
+The `ASNA.QSys.Runtime.JobSupport` namespace contains enumerations that are used throughout the ASNA QSys system. These enumerations define a type for variables that can hold a set of named constants, providing a way to encapsulate and organize related constants in a type-safe manner.
+
+These enumerations cover a wide range of functionalities, from specifying the type of a DLO document, to describing the execution status of a job, to defining the filter level of which messages should be logged, among others.
+
+Here are some key points to remember when working with these enumerations:
+
+- **Type Safety**: Enumerations provide a type-safe way to work with sets of related constants. This can help prevent bugs by ensuring that only valid values are used.
+- **Readability**: Enumerations can make your code more readable by replacing magic numbers or strings with meaningful names.
+- **Organization**: Enumerations provide a way to group related constants together, making your code more organized and easier to maintain.
+
+Remember to refer to the individual enumeration documentation for specific details about each enumeration's values and usage.
 
 | Type | Description |
 | --- | --- |

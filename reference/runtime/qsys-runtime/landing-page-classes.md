@@ -2,6 +2,21 @@
 title: ASNA.QSys.Runtime Classes
 ---
 
+## Remarks
+
+The `ASNA.QSys.Runtime` assembly contains a collection of classes that are integral to the operation of the ASNA QSys system. These classes provide a range of functionalities, from handling arrays and built-in functions according to RPG semantics, to managing database connections and performing operations on data files.
+
+The classes in this assembly are designed to work together to provide a comprehensive set of tools for interacting with the ASNA QSys system. They encapsulate complex operations into easy-to-use methods, making it easier for developers to build robust and efficient applications.
+
+Here are some key points to remember when working with these classes:
+
+- **Interoperability**: These classes are designed to work seamlessly with each other, providing a consistent and predictable interface for developers.
+- **RPG Semantics**: Many of these classes provide methods that follow RPG programming patterns, making it easier for developers familiar with RPG to use them.
+- **Exception Handling**: Several classes are dedicated to handling exceptions, providing detailed error information that can help with debugging and error handling.
+- **Database Operations**: There are classes that manage database connections and perform operations on data files, abstracting the complexities of these tasks away from the developer.
+
+Remember to refer to the individual class documentation for specific details about each class's behavior, usage, and special considerations.
+
 
 | Type | Description |
 | --- | --- |

@@ -20,6 +20,7 @@ The following are the classes provided by **ASNA DataGate Client** namespace.
 | [AuthorityEntry](/reference/datagate/datagate-client/authority-entry.html) | The AuthorityEntry class describes a user or group authorization to a database object. |
 | [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html) | Provides options for copying data from an import file. |
 | [DatabaseLabel](/reference/datagate/datagate-client/database-label.html) | The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment. |
+| [DataRowColumnComparer\<T\>](/reference/datagate/datagate-client/data-row-column-comparer-1.html) | This minor variation of the System.Data.DataRowComparer<T> classimplements IEqualityComparer<T> using value based semantics whencomparing certain columns of DataRow instances. |
 | [DbXmlNameConverter](/reference/datagate/datagate-client/db-xml-name-converter.html) | This class is a filter used in the XML transforms ExportToXml.xslt andImportToXml.xslt.  Encode() takes an arbitrary string and returns anXML-compliant Name string.  For example, "$ITEMTEST" is returned as"_x0024_ITEMTEST".  Decode() performs the inverse function. |
 | [Delimiter](/reference/datagate/datagate-client/delimiter.html) | Represents a delimiter in a data stream. |
 | [Dependent](/reference/datagate/datagate-client/dependent.html) | The `Dependent` class represents a dependency in the ASNA DataGate environment. |

@@ -2,6 +2,7 @@
 title: Fixed Size Type Length
 ---
 
+## Remarks
 
 | Type | Description |
 | --- | --- |

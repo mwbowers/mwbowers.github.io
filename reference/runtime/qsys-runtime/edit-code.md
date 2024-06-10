@@ -15,13 +15,13 @@ EditCode class.
 
 | Signature | Description |
 | --- | --- |
-| [Apply](#string-applydecimal-numeric-int-decimals-int-length-editcodes-editcode-int-isasteriskfill)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Applies Edit Code parameters.
-| [Apply](#string-applydecimal-numeric-int-decimals-int-length-editcodes-editcode-string-currencysymbol)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Applies Edit Code parameters.
-| [ApplyEditCode](#string-applyeditcodeeditcodes-editcode-int-decimals-int-length-string-inputstring-char-decimalpoint-char-thousandseparator-char-currencysymbol-bool-isasteriskfill)([EditCodes](/reference/runtime/qsys-runtime/edit-codes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Applies Edit Code.
+| [Apply](#string-applydecimal-numeric-int-decimals-int-length-editcodes-editcode-int-isasteriskfill)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Applies Edit Code parameters.
+| [Apply](#string-applydecimal-numeric-int-decimals-int-length-editcodes-editcode-string-currencysymbol)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Applies Edit Code parameters.
+| [ApplyEditCode](#string-applyeditcodeeditcodes-editcode-int-decimals-int-length-string-inputstring-char-decimalpoint-char-thousandseparator-char-currencysymbol-bool-isasteriskfill)([EditCodes](/reference/expo/qsys-expo-model/edit-codes.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Applies Edit Code.
 | [GetEditCodeEnumFromChar](#editcodes-geteditcodeenumfromcharchar-editcode)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Get EditCode enumeration member from input char.
-| [UsesThousandsSeparator](#bool-usesthousandsseparatoreditcodes-editcode)([EditCodes](/reference/runtime/qsys-runtime/edit-codes.html)) | Determines if Edit Code uses thousands separator symbol.
+| [UsesThousandsSeparator](#bool-usesthousandsseparatoreditcodes-editcode)([EditCodes](/reference/expo/qsys-expo-model/edit-codes.html)) | Determines if Edit Code uses thousands separator symbol.
 
-### string Apply([decimal numeric](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [EditCodes editCode](/reference/runtime/qsys-runtime/edit-codes.html), [int isAsteriskFill](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### string Apply([decimal numeric](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [EditCodes editCode](/reference/expo/qsys-expo-model/edit-codes.html), [int isAsteriskFill](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Applies Edit Code parameters.
 
@@ -36,7 +36,7 @@ string Apply(decimal numeric, int decimals, int length, EditCodes editCode, int 
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | numeric | Numeric input value.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Fixed length.
-| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | editCode | Edit Code.
+| [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html) | editCode | Edit Code.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | isAsteriskFill | True if value should be filled with asterisks, false otherwise.
 
 #### Returns
@@ -45,7 +45,7 @@ string Apply(decimal numeric, int decimals, int length, EditCodes editCode, int 
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Formatted value as string.
 
-### string Apply([decimal numeric](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [EditCodes editCode](/reference/runtime/qsys-runtime/edit-codes.html), [string currencySymbol](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### string Apply([decimal numeric](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [EditCodes editCode](/reference/expo/qsys-expo-model/edit-codes.html), [string currencySymbol](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Applies Edit Code parameters.
 
@@ -60,7 +60,7 @@ string Apply(decimal numeric, int decimals, int length, EditCodes editCode, stri
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | numeric | Numeric input value.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Fixed length.
-| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | editCode | Edit Code.
+| [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html) | editCode | Edit Code.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | currencySymbol | Currency symbol.
 
 #### Returns
@@ -69,7 +69,7 @@ string Apply(decimal numeric, int decimals, int length, EditCodes editCode, stri
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Formatted value as string.
 
-### string ApplyEditCode([EditCodes editCode](/reference/runtime/qsys-runtime/edit-codes.html), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string inputString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char decimalPoint](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [char thousandSeparator](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [char currencySymbol](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [bool isAsteriskFill](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### string ApplyEditCode([EditCodes editCode](/reference/expo/qsys-expo-model/edit-codes.html), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string inputString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [char decimalPoint](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [char thousandSeparator](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [char currencySymbol](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [bool isAsteriskFill](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Applies Edit Code.
 
@@ -81,7 +81,7 @@ string ApplyEditCode(EditCodes editCode, int decimals, int length, string inputS
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | editCode | Edit Code.
+| [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html) | editCode | Edit Code.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | Number of decimals.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Fixed length.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | inputString | Input string.
@@ -114,9 +114,9 @@ EditCodes GetEditCodeEnumFromChar(char editCode)
 
 | Type | Description
 | --- | ---
-| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | Edit Codes enumeration member.
+| [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html) | Edit Codes enumeration member.
 
-### bool UsesThousandsSeparator([EditCodes editCode](/reference/runtime/qsys-runtime/edit-codes.html))
+### bool UsesThousandsSeparator([EditCodes editCode](/reference/expo/qsys-expo-model/edit-codes.html))
 
 Determines if Edit Code uses thousands separator symbol.
 
@@ -128,7 +128,7 @@ bool UsesThousandsSeparator(EditCodes editCode)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | editCode | Edit code input.
+| [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html) | editCode | Edit code input.
 
 #### Returns
 

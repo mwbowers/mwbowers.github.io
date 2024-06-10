@@ -15,11 +15,11 @@ Web Display File Provider Interface. It contains methods to handle all Input and
 
 | Signature | Description |
 | --- | --- |
-| [Attach](#adgdataset-attachidisplayfile-webdisplayfile)([IDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html)) | Attach to DataSet. 
+| [Attach](#adgdataset-attachidisplayfile-webdisplayfile)([IDisplayFile](/reference/expo/qsys-expo-model/i-display-file.html)) | Attach to DataSet. 
 | [GetNewWebDisplayFile](#idisplayfile-getnewwebdisplayfilestring-dclfilename-string-filepath-adgdataset-dataset-bool-bshareopendatapath)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Get New Web DisplayFile instance.
 | [GetSharedFile](#idisplayfile-getsharedfilestring-dclfilename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get shared file.
 
-### AdgDataSet Attach([IDisplayFile webDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html))
+### AdgDataSet Attach([IDisplayFile webDisplayFile](/reference/expo/qsys-expo-model/i-display-file.html))
 
 Attach to DataSet. 
 
@@ -31,7 +31,7 @@ AdgDataSet Attach(IDisplayFile webDisplayFile)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [IDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html) | webDisplayFile | Input Web Displayfile instance.
+| [IDisplayFile](/reference/expo/qsys-expo-model/i-display-file.html) | webDisplayFile | Input Web Displayfile instance.
 
 #### Returns
 
@@ -60,7 +60,7 @@ IDisplayFile GetNewWebDisplayFile(string DclFileName, string FilePath, AdgDataSe
 
 | Type | Description
 | --- | ---
-| [IDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html) | The DisplayFile instance.
+| [IDisplayFile](/reference/expo/qsys-expo-model/i-display-file.html) | The DisplayFile instance.
 
 ### IDisplayFile GetSharedFile([string DclFileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -80,4 +80,4 @@ IDisplayFile GetSharedFile(string DclFileName)
 
 | Type | Description
 | --- | ---
-| [IDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html) | Display file instance.
+| [IDisplayFile](/reference/expo/qsys-expo-model/i-display-file.html) | Display file instance.

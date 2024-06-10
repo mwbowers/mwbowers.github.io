@@ -2,6 +2,19 @@
 title: ASNA.QSys.Runtime Enumerations
 ---
 
+## Remarks
+
+The `ASNA.QSys.Runtime` assembly contains a collection of enumerations that are used throughout the ASNA QSys system. These enumerations provide a set of predefined constants that make the code more readable and less prone to errors.
+
+These enumerations cover a wide range of functionalities, from defining the valid values for date/time fixed types, specifying the type of Cycle routine to call, to describing the flag that records the status of a workstation dataset as it is processed.
+
+Here are some key points to remember when working with these enumerations:
+
+- **Readability**: Using these enumerations makes your code more readable, as they provide meaningful names for a set of related values.
+- **Error Prevention**: By using enumerations, you can reduce the likelihood of errors caused by passing in invalid values.
+- **Consistency**: These enumerations provide a consistent way to handle sets of related values across your application.
+
+Remember to refer to the individual enumeration documentation for specific details about each enumeration's values and usage.
 
 | Type | Description |
 | --- | --- |

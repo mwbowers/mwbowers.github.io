@@ -2,6 +2,19 @@
 title: ASNA.QSys.Runtime Structs
 ---
 
+## Remarks
+
+The `ASNA.QSys.Runtime` assembly contains a collection of structs that are used throughout the ASNA QSys system. These structs are value types that encapsulate small groups of related variables, such as the parameters of a method or the elements of a data structure.
+
+These structs cover a wide range of functionalities, from defining fixed-size arrays of various data types, to holding fixed-date, fixed-time, and fixed-timestamp values in specified formats, to representing IBM i RPG Indicators.
+
+Here are some key points to remember when working with these structs:
+
+- **Efficiency**: Structs are value types and are typically more efficient than classes when they encapsulate small amounts of data.
+- **Immutability**: Structs are immutable by default, which can make your code safer and easier to reason about.
+- **Data Structures**: Many of these structs are used to define data structures, making it easier to work with complex data in a structured way.
+
+Remember to refer to the individual struct documentation for specific details about each struct's fields, properties, methods, and usage.
 
 | Type | Description |
 | --- | --- |
