@@ -12,7 +12,7 @@ It is possible to overload the function implementation to allow for different pa
 
 | Attribute | Description | Notes |
 | --- | --- | --- |   
-| base_cl_program_class         | The name of base class to extend.<br> (Derived from [CLProgram](/reference/asna-qsys-runtime-job-support/classes/cl-program) class)| (Required) |
+| base_cl_program_class         | The name of base class to extend.<br> (Derived from [CLProgram](/reference/runtime/qsys-runtime-job-support/cl-program.html) class)| (Required) |
 
 
 <br>
@@ -85,7 +85,7 @@ EndClass
 
 The new function lives inside a new class that we will name in this example `MyCLProgram`. We may decide that **ALL** the User defined commands in our Application will have their implementation in this new class (even if these are just placeholders to call complete programs in different classes). All of our CL legacy programs will use the "base" class `MyCLProgram`.
 
->Note that the class `MyCLProgram` extends (*has for base*) the [CLProgram](/reference/asna-qsys-runtime-job-support/classes/cl-program). We are just *aggregating* functionality to the ASNA Standard CL Program.
+>Note that the class `MyCLProgram` extends (*has for base*) the [CLProgram](/reference/runtime/qsys-runtime-job-support/cl-program.html). We are just *aggregating* functionality to the ASNA Standard CL Program.
 
 The *CL User Defined Commands* Dictionary may be defined as the following:
 

@@ -42,9 +42,8 @@ While the job is in state **D (Accepting Commands)**, a website page can use the
 |  | Enter Command Mode <br/> Blue Thread | Exit Command Mode <br/> Yellow Thread | Execute Commands <br/> Yellow Thread |
 | -------- | ------------------ | ----------------- | -------------------|
 | **Description** | Prepares a job to accept commands | Returns a Job to procedural processing | Allows code in website to invoke a function within a Job, particularly program calls.
-| **Class** | [Runtime.InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html) | [Expo.Model.Command](/reference/asna-qsys-expo/expo-model/command.html) | [Expo.Model.Command](/reference/asna-qsys-expo/expo-model/command.html)
-| **Methods** | [ShowPage](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#showpagestring-string) <br/> [AcceptCommands](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands) | [Return](amfCommandClassReturnMethod.htm) |  [Call](amfCommandClassCallMethods.htm) <br/> [CallSilent](amfCommandClassCallSilentMethod.htm) <br/> [SetLdaField](amfCommandClassSetLdaFieldMethod.htm) <br/> [GetLdaField](amfCommandClassGetLdaFieldMethod.htm) <br/> [SetLdcObject](amfCommandClassSetLdcObjectMethod.htm) <br/> [GetLdcObject](amfCommandClassPushKeyFocusMethod.htm) <br/> [RemoveLdcObject](amfCommandClassGetLdcObjectMethod.htm) <br/> [PushKeyFocus](amfCommandClassRemoveLdcObjectMethod.htm) <br/> [RequestShutdown](amfCommandClassRequestShutdownMethod.htm)
-
+| **Class** | [Runtime.InteractiveJob](/runtime/qsys-runtime-job-support/interactive-job.html) | [Expo.Model.Command](/reference/expo/qsys-expo-model/command.html) | [Expo.Model.Command](/reference/expo/qsys-expo-model/command.html)
+| **Methods** | [ShowPage](/reference/runtime/qsys-runtime-job-support/interactive-job.html#string-showpagestring-outsidepage-string-parameter) <br/> [AcceptCommands](/reference/runtime/qsys-runtime-job-support/interactive-job.html#string-acceptcommands) | [Return](/reference/runtime/qsys-runtime/return.html) |  ["CALL"](/reference/runtime/qsys-runtime/call.html) <br/>["SETLDAFIELD"](/reference/runtime/qsys-runtime-job-support/job.html#void-setldafieldint-start-int-length-string-newvalue) <br/> ["GETLDAFIELD"](/reference/runtime/qsys-runtime-job-support/job.html#string-getldafieldint-start-int-length) <br/>                     "INVQCMDEXC" <br/> "GETLDAFIELD"<br/>"SETLDAFIELD" <br/> "GETLDCOBJECT" <br/>                     "SETLDCOBJECT": <br/> "RMVLDCOBJECT" <br/> "RQSSHTDOWN" <br/> "RETURN" <br/> 
 
 ## A Word About Session Values
 Before getting into how to enter command mode and call programs from the yellow thread into the blue thread, we have to discuss the use of the ASP.NET Core [Session](//learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state) object.
@@ -53,7 +52,7 @@ ASP.NET Core maintains session state by providing a cookie to the client (the br
 
 If you have configured your application to [run multiple jobs](/manuals/configuration/multiple-jobs-one-browser.html) from a single browser, you will have to take special care to not use Session values.
 
-If your web pages needs to keep data on a per job basis, use the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) facilities provided via the [Command.JobSession](/reference/asna-qsys-expo/expo-model/command.html#properties) property.
+If your web pages needs to keep data on a per job basis, use the [JobSession](/reference/expo/qsys-expo-model/job-session.html) facilities provided via the [Command.JobSession](/reference/expo/qsys-expo-model/command.html#properties) property.
 
 ## Enter Command Mode (Blue thread)
 
@@ -72,7 +71,7 @@ The ShowPage and AcceptCommands commands prepare a job to accept commands.
 
 `AcceptCommands` enters a cycle of serving commands sent by the yellow thread, the serving cycle ends when a `Return` command is received and control passes back to the program that invoked `AcceptCommnads`. The `Return` method has a string parameter which is made available to the blue thread as the returned value of `AcceptCommands` and `ShowPage`.
 
-Both of these methods accept a single string parameter; the parameter will be stored in the JobSession object where the website page can retrieve it.  Using the Monarch [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class, the string parameter can be retrieved via the `CommandParm` property like this:
+Both of these methods accept a single string parameter; the parameter will be stored in the JobSession object where the website page can retrieve it.  Using the Monarch [JobSession](/reference/expo/qsys-expo-model/job-session.html) class, the string parameter can be retrieved via the `CommandParm` property like this:
 
 ```cs
     var command = Command.GetCommandFromRequest(HttpContext);
@@ -134,11 +133,11 @@ When a Razor Page wants to return the Job to the **B (Executing a Program)** sta
 
 ## See Also
 
-* [Calling a Program from a Non-DisplayFile Page](calling-program-from-non-displayfile-page.html)
-* [Showing a Non-DisplayFile Page](showing-non-displayfile-page.html)
-* [Command Class](/reference/asna-qsys-expo/expo-model/command.html)
-* [Interactive Job Class](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html)
-* [LocalDataCollection Class](/reference/asna-qsys-runtime-job-support/classes/local-data-collection.html)
+* [Calling a Program from a Non-DisplayFile Page](/manuals/enhancements/enhancing-ui/calling-program-from-non-displayfile-page.html)
+* [Showing a Non-DisplayFile Page](/manuals/enhancements/enhancing-ui/enhancing-with-non-display-file.html)
+* [Command Class](/reference/expo/qsys-expo-model/command.html)
+* [Interactive Job Class](/reference/runtime/qsys-runtime-job-support/interactive-job.html)
+* [LocalDataCollection Class](/reference/runtime/qsys-runtime-job-support/local-data-collection.html)
 
 
 

@@ -29,12 +29,12 @@ It is also possible to submit the jobs to a third-party scheduler if it provides
 
 ## Standard Batch Job Creation
 Monarch Base provides two classes to assist in the execution of Batch Jobs:
-- [BatchJobProfile](/reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html)
-- [BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html)
+- [BatchJobProfile](/reference/runtime/qsys-runtime-job-support/batch-job-profile.html)
+- [BatchOptions](/reference/runtime/qsys-runtime-job-support/batch-options.html)
 
-The Class [BatchJobProfile](/reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html) encapsulates the attributes for a Batch Job providing methods to Submit or Start the job.  When constructing a BatchJobProfile instance, it is necessary to provide the name of the migrated program that will be called in the new job along with the program's parameters.  Additionally, an instance of the Class BatchOptions is required.
+The Class [BatchJobProfile](/reference/runtime/qsys-runtime-job-support/batch-job-profile.html) encapsulates the attributes for a Batch Job providing methods to Submit or Start the job.  When constructing a BatchJobProfile instance, it is necessary to provide the name of the migrated program that will be called in the new job along with the program's parameters.  Additionally, an instance of the Class BatchOptions is required.
 
-The Class [BatchOptions](/reference/asna-qsys-runtime-job-support/classes/batch-options.html) provides many of the initial attributes for the new job. When an attribute is not set in the BatchOptions object, its value is taken from the parent Job.
+The Class [BatchOptions](/reference/runtime/qsys-runtime-job-support/batch-options.html) provides many of the initial attributes for the new job. When an attribute is not set in the BatchOptions object, its value is taken from the parent Job.
 
 Here is an example of creating first a BatchOptions object and using it to create a BatchJobProfile instance.
 
@@ -81,7 +81,7 @@ Once a BatchJobProfile has been created and configured, it can be submitted to a
     jobProfile.Submit("NIGHTQUEUE","7");       
 ```
 
-The [BatchJobProfile.Submit()](/reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html#submitstring-string-string-string) method creates a Job Queue Entry in the proper Job Queue with the attributes needed to run the new job.  
+The [BatchJobProfile.Submit()](/reference/runtime/qsys-runtime-job-support/batch-job-profile.html#void-submitstring-jobqueuename-string-jobqueuepriority-string-scheduledatestring-string-scheduletimestring) method creates a Job Queue Entry in the proper Job Queue with the attributes needed to run the new job.  
 
 ![Submitting the Job to a Queue](images/submitting-job-to-queue.jpg){:width="65%"}
 
@@ -106,7 +106,7 @@ There are two methods to start a Batch Job immediately as shown below:
 
 #### In Process
 
-When a Job is started in process via the [BatchJobProfile.StartInProcess()](/reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html#startinprocess) method, a separate .NET thread is created within the current process and the new batch job runs in that separate thread. 
+When a Job is started in process via the [BatchJobProfile.StartInProcess()](/reference/runtime/qsys-runtime-job-support/batch-job-profile.html#void-startinprocess) method, a separate .NET thread is created within the current process and the new batch job runs in that separate thread. 
 
 ![Starting Job Immediately in Process](images/starting-job-immediately-in-process.jpg){:width="65%"}
 
@@ -116,7 +116,7 @@ _Starting Job Immediately in Process_
 
 #### Out of Process
 
-If the Job is started out of process via the [BatchJobProfile.StartOutOfProcess()](/reference/asna-qsys-runtime-job-support/classes/batch-job-profile.html#startoutofprocess) method, a new OS process is created and the Batch Job runs in the new process.
+If the Job is started out of process via the [BatchJobProfile.StartOutOfProcess()](/reference/runtime/qsys-runtime-job-support/batch-job-profile.html#void-startoutofprocess) method, a new OS process is created and the Batch Job runs in the new process.
 
 ![Starting Job Immediately out of Process](images/starting-job-immediately-out-of-process.jpg){:width="65%"}
 

@@ -13,7 +13,7 @@ Defines the SubfileRecordModel class
 
 ## Remarks
 
-[SubfileRecordModel](/reference/asna-qsys-expo/expo-model/subfile-record-model.html) is a specialized class based on [RecordModel](/reference/expo/qsys-expo-model/record-model.html).
+[SubfileRecordModel](/reference/expo/qsys-expo-model/subfile-record-model.html) is a specialized class based on [RecordModel](/reference/expo/qsys-expo-model/record-model.html).
 
 The following excerpt shows the `MSGSF` `SubfileRecordModel class`, which describes the fact that this Subfile Record is the [Message Subfile](https://www.ibm.com/docs/en/i/7.4?topic=type-example-message-subfile-using-dds), which contains three fields: `@MSGKY, @PGMQ and MessageText`.
 

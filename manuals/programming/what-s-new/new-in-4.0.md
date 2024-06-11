@@ -5,7 +5,7 @@ title: What's new in Monarch Base 4.0
 The major new features on Monarch Base 4.0 are:
  * [Support for .NET 6.0](#support-for-net-60--70)
  * [Support for running multiple jobs from a single browser](#running-multiple-jobs-from-a-single-browser)
- * New [Context Menu](/reference/asna-qsys-expo/expo-tags/dds-context-menu-tag-helper.html) tag helper
+ * New [Context Menu](/reference/expo/qsys-expo-tags/dds-context-menu-tag-helper.html) tag helper
  * AssemblyList [configurable](/manuals/programming/programs-and-procedures/call-program.html#assembly-list) at the Website level
  * Program Call supports [Namespace List](/manuals/programming/programs-and-procedures/call-program.html#namespace-list) (Similar to Library List)
 
@@ -35,9 +35,9 @@ To add support to your application for running multiple jobs, please read these 
 Before upgrading the Monarch Base NuGet packages to version 4.0, please read this section.
 
 The following classes had some breaking changes:
- * The [Command](/reference/asna-qsys-expo/expo-model/command.html ) class had some method signature changes.
- * The [SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) class lost several properties and methods.
- * The new class [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) was added to replace or enhance the functionality of the previous two classes.
+ * The [Command](/reference/expo/qsys-expo-model/command.html) class had some method signature changes.
+ * The [SessionStorage](/reference/expo/qsys-expo-model/session-storage.html) class lost several properties and methods.
+ * The new class [JobSession](/reference/expo/qsys-expo-model/job-session.html) was added to replace or enhance the functionality of the previous two classes.
 
 ### Session Object
  There are also some values that version 3.0 used to save in the Session object that have been transferred to the JobSession class.  Of particular note is the value that used to be saved with key  `"ASNA_MonarchCommandParm"`. See the SessionStorage Class section below.
@@ -52,9 +52,9 @@ There is a new method to `CommitJobSession`.
 
 ### SessionStorage Class
 
-Some values that version 3.0 used to save in the Session object have been transferred to the [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) class. 
+Some values that version 3.0 used to save in the Session object have been transferred to the [JobSession](/reference/expo/qsys-expo-model/job-session.html) class. 
 
-The [SessionStorage](/reference/asna-qsys-expo/expo-model/session-storage.html) class provides an ordered way of getting and setting values in the `ASP.NET Core` ISession collection.  Since the session storage is shared by all the Tabs on a user browser, the session is not a convenient place to store job related values. Monarch Base 4.0 provides the new class [JobSession](/reference/asna-qsys-expo/expo-model/job-session.html) to facilitate the storage of job related items.  For this reason several properties and methods were lost from the SessionStorage class and 'transferred' to the `JobSession` class.
+The [SessionStorage](/reference/expo/qsys-expo-model/session-storage.html) class provides an ordered way of getting and setting values in the `ASP.NET Core` ISession collection.  Since the session storage is shared by all the Tabs on a user browser, the session is not a convenient place to store job related values. Monarch Base 4.0 provides the new class [JobSession](/reference/expo/qsys-expo-model/job-session.html) to facilitate the storage of job related items.  For this reason several properties and methods were lost from the SessionStorage class and 'transferred' to the [JobSession](/reference/expo/qsys-expo-model/job-session.html) class.
 
 SessionStorage lost these properties:
  * `JobNumber` - Use the `Command.GetRequestJobHandle` to find a JobHandle instead.  For sites configured to run with a single job per browser, you can use the new `SingleJobNumber` property.

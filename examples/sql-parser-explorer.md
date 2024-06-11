@@ -6,7 +6,7 @@ title: SQL Parser Explorer
 
 RPG ILE Applications that use SQL may embed SQL statements to be used by RPG logic. [Embedding is supported in both calculation sections and Free format blocks](https://www.ibm.com/docs/en/i/7.1?topic=cssiira-embedding-sql-statements-in-ile-rpg-applications-that-use-sql).
 
-Monarch Cocoon RPG Agent will extract these SQL Statements and migrate to methods defined in [Program](/reference/asna-qsys-runtime-job-support/classes/program.html) such as `ExecSQL_Statement`:
+Monarch Cocoon RPG Agent will extract these SQL Statements and migrate to methods defined in [Program](/reference/runtime/qsys-runtime-job-support/program.html) such as `ExecSQL_Statement`:
 
 ```cs
    ExecSQL_Statement( +

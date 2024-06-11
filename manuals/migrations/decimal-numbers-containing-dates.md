@@ -3,7 +3,7 @@ title: Decimal Numbers Containing Dates
 
 ---
 
-Display file decimal numbers that appear to be used as dates on the screen are migrated by Monarch using a Tag Helper called [DdsDecDateField](/reference/asna-qsys-expo/expo-tags/dds-dec-date-field-tag-helper.html). `DdsDecDateField` shows the decimal value as a date on the browser and places a button to allow the user to pop-up a calendar.
+Display file decimal numbers that appear to be used as dates on the screen are migrated by Monarch using a Tag Helper called [DdsDecDateField](/reference/expo/qsys-expo-tags/dds-dec-date-field-tag-helper.html). `DdsDecDateField` shows the decimal value as a date on the browser and places a button to allow the user to pop-up a calendar.
 
 In order to determine if a decimal number may be a date the following considerations are taken at migration time:
  - Field Size of (6,0) or (8,0)

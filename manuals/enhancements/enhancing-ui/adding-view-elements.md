@@ -55,7 +55,7 @@ The `DdsCheckbox` allows the programmer to specify for a field the value to be a
 
 When a decimal or character field's domain is limited by a finite set of discrete values the field can be displayed as a dropdown box. 
 
-To display the [field as a dropdown box](/reference/asna-qsys-expo/expo-tags/field-as-dropdown-box.html), set the `ValuesText` property of the TagHelpers (`DdsCharField`, `DdsDecField`) to the options the user will see and the `Values` property of the Model's field attribute with the corresponding program values associated with the user values.
+To display the [field as a dropdown box](/reference/expo/non-generated-reference/field-as-dropdown-box.html), set the `ValuesText` property of the TagHelpers (`DdsCharField`, `DdsDecField`) to the options the user will see and the `Values` property of the Model's field attribute with the corresponding program values associated with the user values.
 
 ## Radio Button Group
 An alternative to using a Dropdown box to list the available options for a field is using a set of radio buttons for the user to make her selection. 

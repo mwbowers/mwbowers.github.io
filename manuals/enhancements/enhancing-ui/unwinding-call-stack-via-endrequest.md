@@ -21,7 +21,7 @@ In addition to a program throwing the exception, Monarch Base provides two other
 
 
 # Some Code
-For the following discussion, please see first the topics [Enhancing Applications using Non-Display File Pages](enhancing-with-non-display-file.html) and [Calling a Program from a Non-DisplayFile Page](calling-program-from-non-displayfile-page.html). In the latter topic, a 'regular' Razor Page (Minutes) is used as a menu on the website where different programs are called via the [Command.Call](reference/asna-qsys-expo/expo-model/command.html#callstring-string-string-string) method while the Job awaited for commands via the [AcceptCommands](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands) method.
+For the following discussion, please see first the topics [Enhancing Applications using Non-Display File Pages](enhancing-with-non-display-file.html) and [Calling a Program from a Non-DisplayFile Page](calling-program-from-non-displayfile-page.html). In the latter topic, a 'regular' Razor Page (Minutes) is used as a menu on the website where different programs are called via the [Command.Call](reference/asna-qsys-expo/expo-model/command.html#callstring-string-string-string) method while the Job awaited for commands via the [AcceptCommands](/reference/runtime/qsys-runtime-job-support/interactive-job.html#string-acceptcommands) method.
 
 ## Returning to a Menu
 
@@ -29,7 +29,7 @@ Assume an application which wants to present a regular Razor Page as its menu.  
 
 ### On the Job
 
-The job will call [AcceptCommands](https://asnaqsys.github.io/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#acceptcommands) in a loop so that it can continue  processing commands even after receiving an EndRequest exception.
+The job will call [AcceptCommands](/reference/runtime/qsys-runtime-job-support/interactive-job.html#string-acceptcommands) in a loop so that it can continue  processing commands even after receiving an EndRequest exception.
 
 ```cs
     ...
@@ -97,7 +97,7 @@ and then individual pages could disable the button by setting the flag to 'N' li
 
 ### Starting EndRequest in the Model
 
-It is also possible to initiate an EndRequest from the code behind in a Page's Model; to do so use the method `PushEndRequest` from the [Command](/reference/asna-qsys-expo/expo-model/command.html) class.
+It is also possible to initiate an EndRequest from the code behind in a Page's Model; to do so use the method `PushEndRequest` from the [Command](/reference/expo/qsys-expo-model/command.htmll#void-pushendrequest) class.
 
 For this scenario, assume there are some programs that can allow the user to end the processing on their current screen and 'jump' to a different program of the application, for example the employee directory program.
 

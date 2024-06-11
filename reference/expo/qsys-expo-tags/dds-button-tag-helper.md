@@ -19,7 +19,7 @@ Expo applications function the same way, allowing users to use their keyboards t
 
 An attention identifier (AID) is the way of specifying the function key used by a user. To set the name of the function key being impersonated by the DdsButton use the property `AidKey`. 
 
-A programmer enables which function keys are available to the user by listing the keys in the Model at the File level, using the [DisplayPage](/reference/asna-qsys-expo/expo-model/display-page-attribute.html) attribute, or at the record level utilizing the [Record]((/reference/asna-qsys-expo/expo-model/record-attribute.html)) attribute, in both cases the attribute's `FunctionKeys` property is used.  If the key is to be enable only sometimes then an indicator expression can be provided.
+A programmer enables which function keys are available to the user by listing the keys in the Model at the File level, using the [DisplayPage](/reference/expo/qsys-expo-model/display-page-attribute.html) attribute, or at the record level utilizing the [Record](/reference/expo/qsys-expo-model/record-attribute.html) attribute, in both cases the attribute's `FunctionKeys` property is used.  If the key is to be enable only sometimes then an indicator expression can be provided.
 
 In order for the DdsButton to be rendered and available on the screen, the corresponding function key which it impersonates should be enabled by the application.  For instance, if the programmer adds a DdsButton with its `AidKey` set to `F4`, then the function key `F4` should be enabled by the application at either the File or the Record level.
 
@@ -30,7 +30,7 @@ Some legacy applications used a technique where the user was able to position th
 Modernized Applications may want to provide additional [HTML Button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button) elements in strategic places on the Page, to improve usability.
 
 #### Reporting a Field Name
-To maintain the Legacy Application logic intact, `DdsButton` Tag Helper can simulate the action of navigating to the desired input element and *pressing* a specified [AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html).
+To maintain the Legacy Application logic intact, `DdsButton` Tag Helper can simulate the action of navigating to the desired input element and *pressing* a specified [AidKey](/reference/expo/qsys-expo-model/aid-key.html).
 
 For example, assuming that a Display Page has a *Prompt* feature, indicated with `F4` valid for fields `SFSTATE` and `SFSTATUS` (record `CUSTREC`), the following two `DdsButtons` may be added to improve usability:
 
@@ -49,9 +49,9 @@ For example, assuming that a Display Page has a *Prompt* feature, indicated with
 <DdsRecord/>
 ```
 
-The first `DdsButton` will appear on `Row 2`, `Col 91` and when user clicks (or Taps with finger) on this button, it simulates that the `cursor` was located on field "CUSTREC.SFSTATUS" and the press of the `F4`[AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)
+The first `DdsButton` will appear on `Row 2`, `Col 91` and when user clicks (or Taps with finger) on this button, it simulates that the `cursor` was located on field "CUSTREC.SFSTATUS" and the press of the `F4`[AidKey](/reference/expo/qsys-expo-model/aid-key.html)
 
-The second `DdsButton` will appear on `Row 7`, `Col 40` and when user clicks (or Taps with finger) on this button, it simulates that the `cursor` was located on field "CUSTREC.SFSTATE" and the press of the `F4`[AidKey](/reference/asna-qsys-expo/expo-model/aid-key.html)
+The second `DdsButton` will appear on `Row 7`, `Col 40` and when user clicks (or Taps with finger) on this button, it simulates that the `cursor` was located on field "CUSTREC.SFSTATE" and the press of the `F4`[AidKey](/reference/expo/qsys-expo-model/aid-key.html)
 
 Both `DdsButton` appear as icons with the shape of a magnifying glass (typically used by *search*).
 
@@ -94,7 +94,7 @@ To set a DdsButton's `FocusField` property to a subfile field use this syntax:
 
 
 ### Button Styles
-The DdsButton can be rendered in one of four [styles](/reference/asna-qsys-expo/expo-tags/dds-button-tag-helper/button-styles.html):
+The DdsButton can be rendered in one of four [styles](/reference/expo/qsys-expo-tags/button-styles.html):
  + Button
  + Icon
  + Image

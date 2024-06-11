@@ -11,11 +11,6 @@ Provides extension methods for the root configuration.
 <br>
 <br>
 
-## Properties
-
-| Type | Name | Description
-| --- | --- | --- 
-
 ## Methods
 
 | Signature | Description |

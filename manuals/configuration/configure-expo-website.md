@@ -123,10 +123,10 @@ The JobDescriptor section provides the parameters to the location of the entry p
  - `Name`
 
 The Class value is the fully qualified name of the interactive job class within the
-application that represents the Job. This class should extend the [ASNA.QSys.Runtime.JobSupport.InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html). 
+application that represents the Job. This class should extend the [ASNA.QSys.Runtime.JobSupport.InteractiveJob](/reference/runtime/qsys-runtime-job-support/interactive-job.html). 
 
 When a new user connect to the server, a new instance of the interactive job class will be
-created and the [ExecuteStartupProgram](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#executestartupprogram)
+created and the [ExecuteStartupProgram](/reference/runtime/qsys-runtime-job-support/interactive-job.html)
 method will be invoked.
 
 Finally, the Name value provides the initial Job Name.  

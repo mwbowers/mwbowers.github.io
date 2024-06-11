@@ -16,7 +16,7 @@ The configuration settings are:
 
 |        Setting       | Usage |
 | -------------------- | ----- |
-| OutputQueueRootPath  | The path to the root folder of the output queue's subfolders. This should be the same as the <a ref="/reference/asna-qsys-runtime-job-support/classes/job-config.html"> <code>JobConfig.OutputQueueRootPath</code></a> property used to instantiate the application's jobs.
+| OutputQueueRootPath  | The path to the root folder of the output queue's subfolders. This should be the same as the <a ref="/reference/runtime/qsys-runtime-job-support/job-config.html"> <code>JobConfig.OutputQueueRootPath</code></a> property used to instantiate the application's jobs.
 | OutputQueueName      | The output queue's name.  The combination of the OutputQueueRootPath and OutputQueueName form the folder path where manuscripts will be expected. Each instance of PrinterWriter can only process manuscripts from a single queue.
 | PrinterName          | The name of the printer where all output should be forced to. If not given, the printer's name in each manuscript will be used.
 | TextOnly             | Set to ```true``` to direct the  Printer Writer to ignore all graphical settings and print only the output text.

@@ -8,7 +8,7 @@ Here is a [review](/concepts/architecture/monarch-programs.html) of Programs, Se
 
 ## Program Structure
 
-[Migrated programs](/concepts/architecture/monarch-programs.html) become classes extending the [ASNA.QSys.Runtime.JobSupport.Program](/reference/asna-qsys-runtime-job-support/classes/program.html) class. The source for a typical program (say MyProgram) is composed of three files:
+[Migrated programs](/concepts/architecture/monarch-programs.html) become classes extending the [ASNA.QSys.Runtime.JobSupport.Program](/reference/runtime/qsys-runtime-job-support/program.html) class. The source for a typical program (say MyProgram) is composed of three files:
  * MyProgram.cs - Main C# source with code deriving from the original IBM i program. 
  * MyProgram.io.xfu - An XML file stating the File Usage or 'Externally Defined Files' of the the original IBM i program.
  * MyProgram.io.cs - C# Code derived from the external definition of files in the original IBM i program. This code declares the fields defined in externally described files and data structures as well as helper methods to populate the fields and buffer of the files used by the program. 

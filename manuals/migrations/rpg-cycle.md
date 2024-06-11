@@ -181,7 +181,7 @@ void _TotalOutput()
 ## Database File Designations
 Certain Database files participate in the Cycle logic. Files with [Designation](https://www.ibm.com/docs/en/i/7.3?topic=statement-position-18-file-designation) `Primary` and `Secondary`, participate in the program `Cycle`.
 
-In the C# conversion, the file designation is indicated by the `isPrimary` parameter in the [DatabaseCycleFile](/reference/asna-qsys-runtime/classes/database-cycle-file.html) constructor ( *true* means Primary, *false* means Secondary ).
+In the C# conversion, the file designation is indicated by the `isPrimary` parameter in the [DatabaseCycleFile](/reference/runtime/qsys-runtime/database-cycle-file.html) constructor ( *true* means Primary, *false* means Secondary ).
 
 ## First Page
 
@@ -193,7 +193,7 @@ The first page indicator is turned on in the class constructor and turned off af
 
 ## Matching Records
 
-To process matching records in `QSys` programs, the fields defined as the matching record fields are assigned using M1...M9 on the `DclFmtCycleAttr` record for each file format on which the matching is to occur. For instance, if you have an order master file, an order detail file, and a backorder file matched by their respective order numbers you would specify the order number as the matching field in each file.
+To process matching records in `QSys` programs, the fields defined as the matching record fields are assigned using M1...M9 on the `DclFmtCycleAttr` record for each file format on which the matching is to occur. For instance, if you have an order master file, an order detail file, and a back-order file matched by their respective order numbers you would specify the order number as the matching field in each file.
 
 ## Level Breaks
 

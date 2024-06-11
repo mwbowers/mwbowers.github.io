@@ -11,11 +11,6 @@ Provides extension methods for the DataGate configuration.
 <br>
 <br>
 
-## Properties
-
-| Type | Name | Description
-| --- | --- | --- 
-
 ## Methods
 
 | Signature | Description |

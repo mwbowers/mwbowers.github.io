@@ -8,7 +8,7 @@ There are multiple ways in which a migrated field or constant can get its color 
  - DisplayAttrCode
 
 ## Color Property
-The Color property is a [conditional property](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#conditional-property) string composed of a sets of [conditional values](/reference/asna-qsys-expo/expo-model/conditional-properties-overview.html#conditional-value) that evaluates to a Web named color. Conditional values are separated by commas. Each conditional value is composed of a value and an expression which is a combination of indicator values and Boolean operators.
+The Color property is a [conditional property](/reference/expo/qsys-expo-model/landing-page-namespace.html#conditional-property) string composed of a sets of [conditional values](/reference/expo/qsys-expo-model/landing-page-namespace.html#conditional-value) that evaluates to a Web named color. Conditional values are separated by commas. Each conditional value is composed of a value and an expression which is a combination of indicator values and Boolean operators.
 
 Here are a couple of example that set the color to a fix value without using a full conditional expression features:
 ```html

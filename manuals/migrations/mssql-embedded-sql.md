@@ -48,13 +48,13 @@ EndIf
 /endregion
 ```
 
-[QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) is a Runtime defined collection that is used (temporarily) to hold the results of the SQL operation.
+[QueryResults](/reference/runtime/qsys-runtime-job-support/query-results.html) is a Runtime defined collection that is used (temporarily) to hold the results of the SQL operation.
 
 Notice in the Migrated code, how the *host variables* are split between `input` and `output`. 
 
 The `input` *host variables* are used by the SQL statements and indicated using the `@sql_parm_n` placeholder name (where `n` is the ordinal number of the variable used ). Following the SQL statement, the *host variables* values are passed **in order** to the `ExecQSL_Query` method, using `DBxxxParm` parameter class helpers (where xxx is `Char`, `Str`, `Decimal`, etc. according to the field type).
 
-The `output` *host variables* appear in the migration in the *region* conditioned by [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) being different than  * nothing (or `null` in C#). Notice how each value in the [QueryResults](/reference/asna-qsys-runtime-job-support/classes/query-results.html) is retrieved using the indexer `[n]` (where `n` is a zero-based index), in the same order as the `output` *host variables* are referenced by the original Embedded SQL. (Each value is converted to the proper type using `ToXxx()` method helpers).
+The `output` *host variables* appear in the migration in the *region* conditioned by [QueryResults](/reference/runtime/qsys-runtime-job-support/query-results.html) being different than  * nothing (or `null` in C#). Notice how each value in the [QueryResults](/reference/runtime/qsys-runtime-job-support/query-results.html) is retrieved using the indexer `[n]` (where `n` is a zero-based index), in the same order as the `output` *host variables* are referenced by the original Embedded SQL. (Each value is converted to the proper type using `ToXxx()` method helpers).
 
 >Note: When the runtime executes the query, the `@sql_parm_n` placeholder parameters will be replaced by `?` - question mark symbol - (one per parameter) when using [ODBC.NET Provider](https://learn.microsoft.com/en-us/dotnet/api/system.data.odbc.odbccommand.commandtext?view=dotnet-plat-ext-8.0). **ODBC** does not allow named parameter passing. Please check `MyJob` class to determine which ADO.NET connection object is being used by the Logic Assembly.
 
