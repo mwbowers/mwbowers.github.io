@@ -83,15 +83,11 @@ The following example illustrates an appropriate sequence for **adding a databas
 
 ## See Also
 
-[AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](/reference/datagate/datagate-client/adg-data-set.html)
 <br />
-[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)
+[FileAdapter Enumeration](/reference/datagate/datagate-providers/i-file-adapter.html)
 <br />
-[Efficient File Access](efficient-file-access.html)
+[Verifying Results with Exception Handling](/manuals/datagate/programmers-guide/verifying-resultswith-exception-handling.html)
 <br />
-[FileAdapter Class](file-adapter-class.html)
-<br />
-[Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html)
-<br />
-[Using the FileAdapter Class](usingthe-file-adapter-class.html)
+[Using the FileAdapter Class](/manuals/datagate/programmers-guide/usingthe-file-adapter-class.html)
 
