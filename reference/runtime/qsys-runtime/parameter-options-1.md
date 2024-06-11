@@ -29,6 +29,7 @@ ParameterOptions()
 
 | Type | Name | Description
 | --- | --- | --- 
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | _value | The internal value of the parameter. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | IOPMessage | When overridden in a derived class, gets the message for the exception thrown when this object is being used but hasn't been initialized. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsValid | Returns true if the parameter has a value. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ToStringMessage | When overridden in a derived class, gets the default value returned by the ToString method when this object is being used but hasn't been initialized. |

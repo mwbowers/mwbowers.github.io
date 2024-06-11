@@ -91,6 +91,7 @@ MultiDataStructure(Int32[], ILayout[])
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ArrayLength | Length of the multi data structure in all dimensions. |
 | [List\<IDSField\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | BufferDescription | Returns the flat description of the data structure buffer. |
 | [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | Current | Gets the current occurrence of this multiple occurrence data structure. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DSName | Gets the name of this multi data structure. |

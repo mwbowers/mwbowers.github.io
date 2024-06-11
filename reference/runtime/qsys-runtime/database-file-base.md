@@ -146,6 +146,7 @@ DatabaseFileBase(String, String, String, Int32, ShareTypes, Boolean, Int32, Stri
 | [Int64](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | RecNum | Gets the current RRN for input operations made to a database file opened with type of access as Input or Update. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ShareOpenDataPath | Gets or sets the value that specifies if the file can be shared with other programs. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ShareType | Gets or sets the string defining how a file will be shared.  |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | StarFile | Integer value of the *FILE constant.  |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | WaitRec | Gets or sets the integer specifying the waiting period for a record. |
 
 ## Methods

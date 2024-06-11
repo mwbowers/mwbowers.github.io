@@ -95,6 +95,16 @@ WorkstationFileBase(String, String, Boolean, Action)
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | INKY | F24 |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | SflRRN | Gets the relative record number (1-based) of the last Subfile operation. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ShareOpenDataPath | Gets or sets a value to indicate that the file can be shared with other programs. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionIn | String with the value "I" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionInAttn | String with the value "N" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionNotActive | String with the value "X" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionOut | String with the value "O" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionRead | String with the value "R" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionReadAttn | String with the value "A" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirectionVoid | String with the value "V" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDirFieldName | String with the value "*Direction" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarOptionIndFieldName | String with the value "*Indicators" |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarResponseIndFieldName | String with the value "*ResponseIndicators" |
 
 ## Methods
 

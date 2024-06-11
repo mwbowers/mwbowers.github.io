@@ -15,6 +15,7 @@ Provides facilities to probe an IBM i file's code page.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | StarHex | Constant representing an unecoded hexadecimal code. |
 
 ## Methods
 

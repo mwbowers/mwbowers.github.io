@@ -15,3 +15,6 @@ Constants for the size of integers, in digits.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Int | An int is 9 digits. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Long | A long is 19 digits. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Short | A short is 4 digits. |

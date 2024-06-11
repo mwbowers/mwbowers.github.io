@@ -44,7 +44,11 @@ ActivationGroupAttribute()
 
 | Type | Name | Description
 | --- | --- | --- 
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Caller | Defines the constant "*CALLER". |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Default | Defines the constant "*DFTACTGRP". |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Eligible | Defines the constant "*ELIGIBLE". |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | GroupName | Gets the name of the activation group. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsCaller | Gets a value that indicates whether the activation group attribute is the special value *CALLER. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsDefault | Gets a value that indicates whether the activation group attribute is the special value *DFTACTGRP. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsNew | Gets a value that indicates whether the activation group attribute is the special value *NEW. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | New | Defines the constant "*NEW". |

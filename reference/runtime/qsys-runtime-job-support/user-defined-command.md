@@ -36,3 +36,4 @@ UserDefinedCommand(ICaller)
 | Type | Name | Description
 | --- | --- | --- 
 | [ActivationGroup](/reference/runtime/qsys-runtime-job-support/activation-group.html) | ActivationGroup | Gets the command's activation group. |
+| [ICaller](/reference/runtime/qsys-runtime/i-caller.html) | caller | Holds the caller of the command. |

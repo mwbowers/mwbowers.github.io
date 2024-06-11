@@ -72,6 +72,7 @@ QueryCursor(DbConnection, String, DBParm[])
 | [ScrollTypes](/reference/runtime/qsys-runtime-job-support/scroll-types.html) | ScrollType | Gets the Cursor's scroll type. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | selectStatement | Gets the SELECT statement. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SelectStatement | Gets the SELECT statement. |
+| [SQL_CommunicationsArea](/reference/runtime/qsys-runtime-job-support/sql-communications-area.html) | SQLCA | The SQL Communications Area for the Cursor. |
 
 ## Methods
 

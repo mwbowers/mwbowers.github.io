@@ -35,6 +35,9 @@ Module(CommonProgram)
 
 | Type | Name | Description
 | --- | --- | --- 
+| [IndicatorArray\<Len\<_1, _0, _0\>\>](/reference/runtime/qsys-runtime/indicator-array-1.html) | _IN | The array of 100 main indicators. |
+| [Indicator](/reference/runtime/qsys-runtime/indicator.html) | _INLR | The Last Record indicator. |
+| [Indicator](/reference/runtime/qsys-runtime/indicator.html) | _INRT | The Return indicator. |
 | [ActivationGroup](/reference/runtime/qsys-runtime-job-support/activation-group.html) | ActivationGroup | Gets the program's activation group. |
 | [Job](/reference/runtime/qsys-runtime-job-support/job.html) | CurrentJob | Gets the module's Job. |
 | [DocumentLibraryObject](/reference/runtime/qsys-runtime-job-support/document-library-object.html) | DLO | Gets the Job's DLO. |

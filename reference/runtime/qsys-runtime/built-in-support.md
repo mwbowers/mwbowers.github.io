@@ -15,6 +15,8 @@ Contains static methods to perform certain RPG Built In functions.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | MaxDecimals | Maximum Decimals supported. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | MaxIntegrals | Maximum Integrals supported. |
 
 ## Methods
 

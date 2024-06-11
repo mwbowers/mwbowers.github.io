@@ -64,8 +64,11 @@ WebDisplayFile(String, String, DataSet)
 | [Int16](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FeedbackFlags | Gets an indication of the last key pressed: a value of 0 if it was a function key, otherwise a 4. |
 | [Int16](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FeedbackLowestSubfile | Gets or sets the subfile record number on first record displayed on the screen when the AID key was pressed. |
 | [Int16](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FeedbackSubfileCursorRRN | Gets or sets the subfile record number where the cursor was position when the AID key was pressed. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | HostResult | Result from HostService. |
+| [HostService](/reference/runtime/qsys-runtime-job-support/host-service.html) | HostService | Requested service from the (IBM i) Host. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | LastFormatName | Gets or sets the name of the last format name of the display file used to output data. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | PageName | Gets the page name that identifies this display file. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SvcString | Parameter of HostService. |
 
 ## Methods
 

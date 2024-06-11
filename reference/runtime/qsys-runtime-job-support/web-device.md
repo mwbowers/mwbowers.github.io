@@ -36,6 +36,7 @@ WebDevice(InteractiveJob)
 | Type | Name | Description
 | --- | --- | --- 
 | [WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html) | ActiveDisplayFile | Gets the active display file performing the current operation on the device. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | DeviceIsOpen | Indicates that the device is open. |
 
 ## Methods
 
