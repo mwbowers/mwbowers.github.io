@@ -15,11 +15,11 @@ Defines a ConditionalProperty
 
 Defines a ConditionalProperty.
 
-A ConditionalProperty represents a collection of [Conditional Values](/reference/expo/qsys-expo-model/conditional-value.html)
+A ConditionalProperty represents a collection of [Conditional Values](/reference/expo/qsys-expo-model/landing-page-namespace.html#conditional-value)
 
-The ConditionalProperty class instance may be instantiated with an array of [Conditional Values](/reference/expo/qsys-expo-model/conditional-value.html), or from a string representation.  
+The ConditionalProperty class instance may be instantiated with an array of [Conditional Values](/reference/expo/qsys-expo-model/landing-page-namespace.html#conditional-value), or from a string representation.  
 
-Here is an overview of [Conditional Property concepts](/reference/expo/qsys-expo-model/conditional-property.html).
+Here is an overview of [Conditional Property concepts](/reference/expo/qsys-expo-model/landing-page-namespace.html#conditional-property).
 
 
 ## Constructors

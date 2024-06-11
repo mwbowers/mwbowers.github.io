@@ -18,7 +18,7 @@ As shown below, a simplified (and collapsed) markup structure, the [DdsFile](/re
 1. A [DdsFunctionKeys](/reference/expo/qsys-expo-tags/dds-function-keys-tag-helper.html) Tag Helper.
 2. A [main HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main).
 
-> The rest of the DdsXXX Tag helpers, like [DdsRecord](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html), [DdsSubfileControl](/reference/expo/qsys-expo-tags/dds-subfile-record-tag-helper.html) Tag Helper and [DdsMessagePanel](/reference/expo/qsys-expo-tags/dds-message-panel-tag-helper.html) Tag Helper, are described inside the [main HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main).
+> The rest of the DdsXXX Tag helpers, like [DdsRecord](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html), [DdsSubfileControl](/reference/expo/qsys-expo-tags/dds-subfile-control-tag-helper.html) Tag Helper and [DdsMessagePanel](/reference/expo/qsys-expo-tags/dds-message-panel-tag-helper.html) Tag Helper, are described inside the [main HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main).
 
 ```html
 <form id="MonarchForm" method="post">

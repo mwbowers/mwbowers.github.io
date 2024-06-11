@@ -26,7 +26,7 @@ To collapse the Context Menu, the user may *left-click* on an area outside the p
 
 A Context Menu is positioned by specifying a value to the the `Col` property (as any other `DdsField` or `DdsConstant` tagHelpers). When used inside a `DdsTableColumn` tagHelper, use `Name` instead of `Col` properties.
 
-When defined within a [DdsSubfileRecord](/reference/expo/qsys-expo-tags/dds-field-base.html#properties), the **☰** Hamburger button moves up and down the subfile records (as the user *hovers* over records using the mouse). The **☰** Hamburger button defines the context to be *the selected record* in the subfile.
+When defined within a [DdsSubfileRecord](/reference/expo/qsys-expo-tags/dds-subfile-record-tag-helper.html), the **☰** Hamburger button moves up and down the subfile records (as the user *hovers* over records using the mouse). The **☰** Hamburger button defines the context to be *the selected record* in the subfile.
 
 More than one Context Menu, may be defined in a *DdsSubfileRecord*.
 
