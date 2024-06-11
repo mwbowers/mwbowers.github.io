@@ -45,6 +45,7 @@ DataGateCredential(CredentialType)
 | [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.
 | [Equals](#bool-equalsidatagatecredential-other)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the specified IDataGateCredential is equal to the current object.
 | [GetHashCode()](#int-gethashcode) | Returns a hash code for the current object.
+| [GetHashCodeInternal()](#int-gethashcodeinternal) | When overridden in a derived class, returns a hash code for the current object.
 
 ### object Clone()
 
@@ -100,4 +101,12 @@ Returns a hash code for the current object.
 
 ```cs
 int GetHashCode()
+```
+
+### int GetHashCodeInternal()
+
+When overridden in a derived class, returns a hash code for the current object.
+
+```cs
+int GetHashCodeInternal()
 ```

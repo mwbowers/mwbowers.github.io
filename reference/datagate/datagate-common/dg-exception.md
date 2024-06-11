@@ -146,8 +146,30 @@ dgException(dgErrorNumber, Exception)
 
 | Signature | Description |
 | --- | --- |
+| [FormatMessage](#string-formatmessageiformatprovider-provider-string-msg)([IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats the error message into a single string for logging or displaying to the user.
 | [GetDefaultErrorClass](#dgerrorclass-getdefaulterrorclassdgerrornumber-err)([dgErrorNumber](/reference/datagate/datagate-common/dg-error-number.html)) | Each dgErrorNumber has a default associated dgErrorClass.  Thismethod returns it.
 | [GetVerboseText()](#string-getverbosetext) | Return a string containing a verbose description of thedgException. This string will most likely contain line separatorcharacters.  All dgException member variables are included in thestring.
+
+### string FormatMessage([IFormatProvider provider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0), [string msg](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Formats the error message into a single string for logging or displaying to the user.
+
+```cs
+string FormatMessage(IFormatProvider provider, string msg)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IFormatProvider](https://learn.microsoft.com/en-us/dotnet/api/system.iformatprovider?view=net-8.0) | provider | An object that supplies culture-specific formatting information.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | msg | The error message.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | A formatted string containing the error message.
 
 ### dgErrorClass GetDefaultErrorClass([dgErrorNumber err](/reference/datagate/datagate-common/dg-error-number.html))
 

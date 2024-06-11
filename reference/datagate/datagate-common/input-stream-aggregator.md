@@ -39,12 +39,36 @@ InputStreamAggregator()
 
 | Signature | Description |
 | --- | --- |
+| [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases all resources used by the current instance of the  class.
+| [Finalize()](#void-finalize) | Finalizes an instance of the  class.
 | [Flush()](#void-flush) | Overrides the Stream.Flush method so that no action is performed.
 | [Read](#int-readbyte--buffer-int-offset-int-count)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.
 | [ReadByte()](#int-readbyte) | Reads a byte from the stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
 | [Seek](#long-seeklong-offset-seekorigin-origin)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream. Always throws a NotSupportedException.
 | [SetLength](#void-setlengthlong-value)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream. This method always throws a NotSupportedException.
 | [Write](#void-writebyte--buffer-int-offset-int-count)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written. This method always throws a NotSupportedException.
+
+### void Dispose([bool disposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Releases all resources used by the current instance of the  class.
+
+```cs
+void Dispose(bool disposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) |  | 
+
+### void Finalize()
+
+Finalizes an instance of the  class.
+
+```cs
+void Finalize()
+```
 
 ### void Flush()
 

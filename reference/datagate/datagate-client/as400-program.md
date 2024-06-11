@@ -76,8 +76,11 @@ As400Program(AdgConnection, String)
 | [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a parameter to the program.
 | [AppendParms](#void-appendparmsprogparm--parameters)([ProgParm\[\]](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends an array of parameters to the program.
 | [Dispose()](#void-dispose) | Releases all resources used by the current instance of the  class.
+| [Dispose](#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the  and optionally releases the managed resources.
 | [Execute()](#void-execute) | Executes the program with the current parameters.
+| [Finalize()](#void-finalize) | Finalizes an instance of the  class.
 | [GetParameters()](#ienumerable-progparm-getparameters) | Gets the parameters of the program.
+| [GetParmByName](#progparm-getparmbynamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter with the specified name.
 | [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified type.
 | [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified object to a parameter.
 | [ObjectToParm](#void-objecttoparmobject-value-string-parametername-int32--elementindices)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified name and element indices.
@@ -128,12 +131,34 @@ Releases all resources used by the current instance of the  class.
 void Dispose()
 ```
 
+### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Releases the unmanaged resources used by the  and optionally releases the managed resources.
+
+```cs
+void Dispose(bool isDisposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | True to release both managed and unmanaged resources; false to release only unmanaged resources.
+
 ### void Execute()
 
 Executes the program with the current parameters.
 
 ```cs
 void Execute()
+```
+
+### void Finalize()
+
+Finalizes an instance of the  class.
+
+```cs
+void Finalize()
 ```
 
 ### IEnumerable<ProgParm> GetParameters()
@@ -143,6 +168,26 @@ Gets the parameters of the program.
 ```cs
 IEnumerable<ProgParm> GetParameters()
 ```
+
+### ProgParm GetParmByName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Gets the parameter with the specified name.
+
+```cs
+ProgParm GetParmByName(string name)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the parameter.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | The parameter with the specified name, or null if no such parameter exists.
 
 ### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

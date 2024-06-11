@@ -147,6 +147,8 @@ FileAdapter(IFileObject)
 | [DeleteRange](#void-deleterangeadgkeytable-firstkey-rangefirst-rangefirst-adgkeytable-lastkey-rangelast-rangelast)([AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Deletes a range of records from the file that the FileAdapter is working with.
 | [DeleteRRN](#void-deleterrnlong-rrn)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Deletes the record at the specified relative record number (RRN) from the file that the FileAdapter is working with.
 | [Dispose()](#void-dispose) | Releases all resources used by the FileAdapter.
+| [Dispose](#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the FileAdapter and optionally releases the managed resources.
+| [Finalize()](#void-finalize) | Finalizes an instance of the FileAdapter class.
 | [ForceEOD()](#void-forceeod) | Forces the end of data (EOD) for the file that the FileAdapter is working with.
 | [GetFormatName](#string-getformatnameint-i)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the name of the format at the specified index in the file that the FileAdapter is working with.
 | [GetPrintProperties](#iprintproperties-getprintpropertiesstring-format)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the print properties for the specified format in the file that the FileAdapter is working with.
@@ -336,6 +338,28 @@ Releases all resources used by the FileAdapter.
 
 ```cs
 void Dispose()
+```
+
+### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Releases the unmanaged resources used by the FileAdapter and optionally releases the managed resources.
+
+```cs
+void Dispose(bool isDisposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | true to release both managed and unmanaged resources; false to release only unmanaged resources.
+
+### void Finalize()
+
+Finalizes an instance of the FileAdapter class.
+
+```cs
+void Finalize()
 ```
 
 ### void ForceEOD()

@@ -89,6 +89,7 @@ AdgConnection(SourceProfile, IExchange5250)
 | [Clone()](#object-clone) | Creates a new AdgConnection that is a copy of the current instance.
 | [Close()](#void-close) | Closes the connection to the database.
 | [Dispose()](#void-dispose) | Releases all resources used by the AdgConnection.
+| [Dispose](#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the AdgConnection.
 | [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current AdgConnection instance is equal to the specified object.
 | [GetDatabaseAttributes()](#databaseattributes-getdatabaseattributes) | Gets the attributes of the database.
 | [GetDeviceCodePageID()](#int-getdevicecodepageid) | Gets the device code page ID.
@@ -274,6 +275,20 @@ Releases all resources used by the AdgConnection.
 ```cs
 void Dispose()
 ```
+
+### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Releases the resources used by the AdgConnection.
+
+```cs
+void Dispose(bool isDisposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | A boolean value that indicates whether the method call comes from a Dispose method (its value is true) or from a finalizer (its value is false).
 
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

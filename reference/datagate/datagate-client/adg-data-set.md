@@ -75,6 +75,7 @@ AdgDataSet(String)
 | [GetFormatTable](#datatable-getformattableint-iformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Retrieves the DataTable associated with the specified format index.
 | [GetFormatTable](#datatable-getformattablestring-strformat)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves the DataTable associated with the specified format name.
 | [Initialize()](#void-initialize) | Initializes the instance of the  class.
+| [InitializeCommon()](#void-initializecommon) | Initializes common elements of the  instance.
 | [InitializeFormats()](#void-initializeformats) | Initializes the format strings of the  instance.
 | [InsertRow](#void-insertrowstring-strformat-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Inserts a new row at the specified relative record number (rrn) in the DataTable associated with the specified format name.
 | [InsertRow](#void-insertrowint-iformat-int-rrn)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Inserts a new row at the specified relative record number (rrn) in the DataTable associated with the specified format index.
@@ -263,6 +264,14 @@ Initializes the instance of the  class.
 
 ```cs
 void Initialize()
+```
+
+### void InitializeCommon()
+
+Initializes common elements of the  instance.
+
+```cs
+void InitializeCommon()
 ```
 
 ### void InitializeFormats()

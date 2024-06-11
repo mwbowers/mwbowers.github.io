@@ -44,7 +44,9 @@ AltEncoding()
 | [GetAltEncoding](#altencoding-getaltencodingstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Returns an AltEncoding object for the specified name.
 | [GetAltEncodingInfo()](#altencodinginfo-getaltencodinginfo) | Gets information about the current AltEncoding instance.
 | [GetDecoder()](#decoder-getdecoder) | Returns an AltDecoder object for this AltEncoding, using the default properties.
+| [GetDecoderImpl()](#altdecoder-getdecoderimpl) | When overridden in a derived class, returns an AltDecoder object for this AltEncoding.
 | [GetEncoder()](#encoder-getencoder) | Returns an AltEncoder object for this AltEncoding, using the default properties.
+| [GetEncoderImpl()](#altencoder-getencoderimpl) | When overridden in a derived class, returns an AltEncoder object for this AltEncoding.
 | [TransformPropertiesFromStream](#itransformproperties-transformpropertiesfromstreambinaryreader-br)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | When overridden in a derived class, reads the given BinaryReader stream and converts it into an ITransformProperties object.
 | [TransformPropertiesToStream](#void-transformpropertiestostreamitransformproperties-t-binarywriter-bw)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | When overridden in a derived class, writes the given ITransformProperties object to the specified BinaryWriter stream.
 
@@ -165,12 +167,28 @@ Returns an AltDecoder object for this AltEncoding, using the default properties.
 Decoder GetDecoder()
 ```
 
+### AltDecoder GetDecoderImpl()
+
+When overridden in a derived class, returns an AltDecoder object for this AltEncoding.
+
+```cs
+AltDecoder GetDecoderImpl()
+```
+
 ### Encoder GetEncoder()
 
 Returns an AltEncoder object for this AltEncoding, using the default properties.
 
 ```cs
 Encoder GetEncoder()
+```
+
+### AltEncoder GetEncoderImpl()
+
+When overridden in a derived class, returns an AltEncoder object for this AltEncoding.
+
+```cs
+AltEncoder GetEncoderImpl()
 ```
 
 ### ITransformProperties TransformPropertiesFromStream([BinaryReader br](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0))
