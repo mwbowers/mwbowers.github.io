@@ -30,6 +30,7 @@ Declares a read-only field of [Fixed Type](/concepts/program-structure/qsys-fixe
 | --- | --- | --- 
 | [DdsDateFormat](/reference/expo/qsys-expo-model/dds-date-format.html) | DateFormat | Gets or sets DDS Date Format (Defaults to ISO) |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DateSeparator | Gets or sets Date separator as a string (Defaults to "-") |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | STD_FORMAT | Standard Date Format |
 
 ## Methods
 

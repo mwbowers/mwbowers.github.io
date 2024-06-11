@@ -69,8 +69,10 @@ DisplayPageModel()
 
 | Type | Name | Description
 | --- | --- | --- 
+| [AidProperty](/reference/expo/qsys-expo-model/aid-property.html) | AttnKeys | Gets an array of AidProperty Attention values, as defined in the Page Model. Attention Aid keys do not post data. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CursorLocationFieldName | Gets a value that indicating the name of field where the Cursor was last located on the Page. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CursorLocationFormatName | Gets a value that indicating the name of the format where the Cursor was last located on the Page. |
+| [AidProperty](/reference/expo/qsys-expo-model/aid-property.html) | FuncKeys | Gets an array of AidProperty Function values, as defined in the Page Model.  |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InputDataAvailable | Provides a mechanism to override the input data available state. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarDate | Gets the current day formatted as *DATE |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | StarSystemName | Gets the System Name formatted as *SYSTEMDATE |

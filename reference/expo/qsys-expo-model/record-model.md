@@ -93,9 +93,11 @@ public class CUSTREC_Model : RecordModel
 
 | Type | Name | Description
 | --- | --- | --- 
+| [AidProperty](/reference/expo/qsys-expo-model/aid-property.html) | AttnKeys | Gets or sets the Attention Keys AID Property |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | BlueDirection | Internal use - Record direction code. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CursorLocationFieldName | Gets or sets the Cursor Location Field Name |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | CursorLocationFormatName | Gets or sets the Cursor Location Format Name |
+| [AidProperty](/reference/expo/qsys-expo-model/aid-property.html) | FuncKeys | Gets or sets the Function Keys AID Property |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsActive | Gets a boolean value indicating that the Record is active |
 
 ## Methods

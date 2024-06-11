@@ -107,6 +107,7 @@ AidProperty(String)
 
 | Type | Name | Description
 | --- | --- | --- 
+| [ConditionalProperty\[\]](/reference/expo/qsys-expo-model/conditional-property.html) | condAid | Gets or sets the Array of ConditionalProperty items  |
 | [ConditionalProperty\[\]](/reference/expo/qsys-expo-model/conditional-property.html) | ConditionalAid | Gets the Conditional Property collection |
 | [ConditionalProperty](/reference/expo/qsys-expo-model/conditional-property.html) | Item | Gets the element indexed by aidKey from the Conditional Property collection. |
 

@@ -62,6 +62,7 @@ SubfileControlAttribute(String)
 
 | Type | Name | Description
 | --- | --- | --- 
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ClearRecords | Gets the conditional indicator expression that determines if the records of the Subfile should be cleared  |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DisplayFields | Gets the conditional indicator expression that determines if the Fields in the Subfile Controller should display |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DisplayRecords | Gets the conditional indicator expression that determines if the Subfile Records should display |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | FoldDropIndicator | Gets or Sets the Fold/Drop toggle indicator numeric value. Defaults to zero (Fold/Drop does not apply) |
