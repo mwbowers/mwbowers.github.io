@@ -15,6 +15,8 @@ Represents a Workstation file. It contains methods to handle all Input and Outpu
 
 | Signature | Description |
 | --- | --- |
+| [allocateBuffer()](#adgdataset-allocatebuffer) | Allocates internal objects and constructs the file DataSet.
+| [attachBuffer](#void-attachbufferadgdataset-adgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Set this file's DataSet to the given AdgDataSet.
 | [ChainByRRN](#bool-chainbyrrnstring-formatname-int-rrn-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Read a record by relative record number.
 | [ChainByRRN](#bool-chainbyrrnstring-formatname-int-rrn-indicator--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html)) | Read a record by relative record number.
 | [ChainByRRN](#bool-chainbyrrnstring-formatname-int-rrn-ids-optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Read a record by relative record number.
@@ -36,6 +38,28 @@ Represents a Workstation file. It contains methods to handle all Input and Outpu
 | [WriteSubfile](#bool-writesubfilestring-formatname-int-rrn-indicator--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation.
 | [WriteSubfile](#bool-writesubfilestring-formatname-decimal-rrn-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE Subfile record operation.
 | [WriteSubfile](#bool-writesubfilestring-formatname-decimal-rrn-indicator--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html)) | Executes WRITE Subfile record operation.
+
+### AdgDataSet allocateBuffer()
+
+Allocates internal objects and constructs the file DataSet.
+
+```cs
+AdgDataSet allocateBuffer()
+```
+
+### void attachBuffer([AdgDataSet adgDataSet](/reference/datagate/datagate-client/adg-data-set.html))
+
+Set this file's DataSet to the given AdgDataSet.
+
+```cs
+void attachBuffer(AdgDataSet adgDataSet)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | adgDataSet | The dataset to attach.
 
 ### bool ChainByRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 

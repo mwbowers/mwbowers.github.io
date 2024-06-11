@@ -141,14 +141,39 @@ PrintFileBase(String, String, ShareTypes, Boolean)
 
 | Signature | Description |
 | --- | --- |
+| [allocateBuffer()](#adgdataset-allocatebuffer) | Allocates a DataSet Buffer.
+| [close()](#void-close) | Close a file.
 | [Close()](#void-close) | Close a file.
 | [Dispose()](#void-dispose) | Releases resources.
+| [Dispose](#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases resources.
+| [feod](#void-feodstring-formatname-bool-reset)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Force end of data on the given record.
 | [Feod](#void-feodstring-formatname-bool-reset)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Force end of data on the given record.
+| [Finalize()](#void-finalize) | Releases resources when the instance is garbage-collected.
 | [GetPrintFieldPropertyValue](#object-getprintfieldpropertyvaluestring-formatname-string-fieldname-string-propertyname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get a field property value.
+| [open](#void-opendatabase-database)([Database](/reference/runtime/qsys-runtime/database.html)) | Open the print file.
 | [Open](#void-opendatabase-database)([Database](/reference/runtime/qsys-runtime/database.html)) | Open the print file.
+| [populateBuffer](#void-populatebufferstring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Calls the delegate to populate buffer from fields.
 | [SetPrintFieldPropertyValue](#void-setprintfieldpropertyvaluestring-formatname-string-fieldname-string-propertyname-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Set a field property value.
+| [write](#void-writestring-formatname-string-inddsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Write a record.
+| [write](#void-writestring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name.
 | [Write](#void-writestring-formatname-string-inddsstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Write a record.
 | [Write](#void-writestring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record given its record format name.
+
+### AdgDataSet allocateBuffer()
+
+Allocates a DataSet Buffer.
+
+```cs
+AdgDataSet allocateBuffer()
+```
+
+### void close()
+
+Close a file.
+
+```cs
+void close()
+```
 
 ### void Close()
 
@@ -166,6 +191,35 @@ Releases resources.
 void Dispose()
 ```
 
+### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Releases resources.
+
+```cs
+void Dispose(bool isDisposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDisposing | True when this method is called during nomral execution, when resources are guarantedd to be available to release.            False when called from the garbage collector.
+
+### void feod([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool reset](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Force end of data on the given record.
+
+```cs
+void feod(string formatName, bool reset)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | reset | True to reset the print attributes.
+
 ### void Feod([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool reset](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Force end of data on the given record.
@@ -180,6 +234,14 @@ void Feod(string formatName, bool reset)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | reset | True to reset the print attributes.
+
+### void Finalize()
+
+Releases resources when the instance is garbage-collected.
+
+```cs
+void Finalize()
+```
 
 ### object GetPrintFieldPropertyValue([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string fieldName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string propertyName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -203,6 +265,20 @@ object GetPrintFieldPropertyValue(string formatName, string fieldName, string pr
 | --- | ---
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The property value. Throws exception if file is not open.
 
+### void open([Database database](/reference/runtime/qsys-runtime/database.html))
+
+Open the print file.
+
+```cs
+void open(Database database)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Database](/reference/runtime/qsys-runtime/database.html) | database | Database where the file is located.
+
 ### void Open([Database database](/reference/runtime/qsys-runtime/database.html))
 
 Open the print file.
@@ -216,6 +292,20 @@ void Open(Database database)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Database](/reference/runtime/qsys-runtime/database.html) | database | Database where the file is located.
+
+### void populateBuffer([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Calls the delegate to populate buffer from fields.
+
+```cs
+void populateBuffer(string formatName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name.
 
 ### void SetPrintFieldPropertyValue([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string fieldName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string propertyName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -233,6 +323,36 @@ void SetPrintFieldPropertyValue(string formatName, string fieldName, string prop
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldName | Name of the field.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | propertyName | Name of the property to set.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | Value to set on the property.
+
+### void write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string indDsString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Write a record.
+
+```cs
+void write(string formatName, string indDsString)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | indDsString | String of 100 character representing the indicator data structure.
+
+### void write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Write a record given its record format name.
+
+```cs
+void write(string formatName, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation.
 
 ### void Write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string indDsString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

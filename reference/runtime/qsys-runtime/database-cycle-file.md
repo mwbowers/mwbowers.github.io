@@ -24,6 +24,7 @@ at the proper time within the cycle to load the buffer into the program fields.
 | Signature | Description |
 | --- | --- |
 | [LoadBuffer()](#void-loadbuffer) | Copies data from the cycle file buffer to the program fields.
+| [open](#void-opendatabase-database-accessmode-accessmode-bool-iscachewrite-bool-iscommit-servercursors-servercursor)([Database](/reference/runtime/qsys-runtime/database.html), [AccessMode](/reference/datagate/datagate-common/access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors](/reference/datagate/datagate-common/server-cursors.html)) | Opens the file.
 | [Read()](#void-read) | Reads the next record into the cycle file buffer.
 
 ### void LoadBuffer()
@@ -33,6 +34,24 @@ Copies data from the cycle file buffer to the program fields.
 ```cs
 void LoadBuffer()
 ```
+
+### void open([Database database](/reference/runtime/qsys-runtime/database.html), [AccessMode accessMode](/reference/datagate/datagate-common/access-mode.html), [bool isCacheWrite](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool isCommit](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors serverCursor](/reference/datagate/datagate-common/server-cursors.html))
+
+Opens the file.
+
+```cs
+void open(Database database, AccessMode accessMode, bool isCacheWrite, bool isCommit, ServerCursors serverCursor)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Database](/reference/runtime/qsys-runtime/database.html) | database | Database object.
+| [AccessMode](/reference/datagate/datagate-common/access-mode.html) | accessMode | Access mode.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCacheWrite | True is writes are to be cached.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCommit | True if file participates in commitment control.
+| [ServerCursors](/reference/datagate/datagate-common/server-cursors.html) | serverCursor | Server cursor type.
 
 ### void Read()
 

@@ -22,6 +22,7 @@ Represents a single format Database data file. It contains methods to handle all
 
 | Signature | Description |
 | --- | --- |
+| [allocateBuffer()](#adgdataset-allocatebuffer) | Allocates internal objects and constructs the file DataSet.
 | [Chain](#bool-chainbool-lockrecord-object--keyparts)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Read a record format using a key.
 | [Chain](#bool-chainbool-lockrecord-ids-intods-object--keyparts)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/runtime/qsys-runtime/ids.html), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Read a record format using a key.
 | [ChainByRRN](#bool-chainbyrrnbool-lockrecord-int-rrn)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Read a record by relative record number.
@@ -56,6 +57,14 @@ Represents a single format Database data file. It contains methods to handle all
 | [UpdateFlds](#void-updatefldsstring--fields)([String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Update a record, only those fields listed.
 | [Write()](#void-write) | Write a record.
 | [Write](#void-writeids-fromds)([IDS](/reference/runtime/qsys-runtime/ids.html)) | Write a record.
+
+### AdgDataSet allocateBuffer()
+
+Allocates internal objects and constructs the file DataSet.
+
+```cs
+AdgDataSet allocateBuffer()
+```
 
 ### bool Chain([bool lockRecord](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object\[\] keyParts](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

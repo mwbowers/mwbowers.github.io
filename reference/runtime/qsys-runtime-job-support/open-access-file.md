@@ -50,6 +50,7 @@ OpenAccessFile(String)
 | --- | --- |
 | [ClearRecords](#void-clearrecordsstring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Clears all the data from a record format's buffer.
 | [Close()](#void-close) | Closes the display file disposing of its resources.
+| [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
 | [Dispose()](#void-dispose) | Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
 | [Open()](#int-open) | Opens the display file for IO operations, allocating the dataset buffer for the file's records.
 | [Read()](#void-read) | Presents the current data on the device and waits for the user to enter new data. 
@@ -75,6 +76,20 @@ Closes the display file disposing of its resources.
 ```cs
 void Close()
 ```
+
+### void Dispose([bool disposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
+
+```cs
+void Dispose(bool disposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | true to perfom the closing and releasing.
 
 ### void Dispose()
 

@@ -55,6 +55,7 @@ InteractiveJob(JobConfig)
 | --- | --- |
 | [AcceptCommands()](#string-acceptcommands) | Set the job in a state of accepting commands sent from the UI website.
 | [EndPrograms()](#void-endprograms) | Deactivates all programs in the job, closes the device and calls Dispose().
+| [ExecuteStartupProgram()](#void-executestartupprogram) | When overridden in a derived class, executes the first program in the job.
 | [GetJobSessionString](#string-getjobsessionstringstring-sessionid)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a string with the serialized job session.
 | [GetSessionValue](#string-getsessionvaluestring-sessionkey)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get a the value of a string in the website's session.
 | [InitJobSessionStore](#void-initjobsessionstorestring-sessionid)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Associate the JobSessionStore as belonging to the provided sessionId.
@@ -81,6 +82,14 @@ Deactivates all programs in the job, closes the device and calls Dispose().
 
 ```cs
 void EndPrograms()
+```
+
+### void ExecuteStartupProgram()
+
+When overridden in a derived class, executes the first program in the job.
+
+```cs
+void ExecuteStartupProgram()
 ```
 
 ### string GetJobSessionString([string sessionID](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))

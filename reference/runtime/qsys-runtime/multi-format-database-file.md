@@ -22,6 +22,7 @@ Represents a multiformat Database data file. It contains methods to handle all I
 
 | Signature | Description |
 | --- | --- |
+| [allocateBuffer()](#adgdataset-allocatebuffer) | Allocates a DataSet Buffer.
 | [Chain](#bool-chainstring-formatname-bool-lockrecord-object--keyparts)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Read a record format using a key.
 | [ChainByRRN](#bool-chainbyrrnstring-formatname-bool-lockrecord-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Read a record format using the relative record number.
 | [ChainByRRN](#bool-chainbyrrnstring-formatname-bool-lockrecord-decimal-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Read a record format using the relative record number.
@@ -38,6 +39,14 @@ Represents a multiformat Database data file. It contains methods to handle all I
 | [Seek](#bool-seekstring-formatname-seekmode-mode-object--keyparts)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode](/reference/datagate/datagate-common/seek-mode.html), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Positions the file cursor in the record indicated by key.
 | [SeekByRRN](#bool-seekbyrrnstring-formatname-seekmode-mode-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SeekMode](/reference/datagate/datagate-common/seek-mode.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Positions the file cursor in the record indicated by relative record number.
 | [SetRange](#void-setrangestring-formatname-object--firstkey-object--lastkey-rangemode-mode-rangefirst-rangefirstkey-rangelast-rangelastkey)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object), [RangeMode](/reference/datagate/datagate-common/range-mode.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Sets the range of records for input operations.
+
+### AdgDataSet allocateBuffer()
+
+Allocates a DataSet Buffer.
+
+```cs
+AdgDataSet allocateBuffer()
+```
 
 ### bool Chain([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool lockRecord](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Object\[\] keyParts](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 

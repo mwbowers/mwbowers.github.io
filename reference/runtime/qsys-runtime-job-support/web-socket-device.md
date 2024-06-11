@@ -35,8 +35,36 @@ WebSocketDevice(InteractiveJob)
 
 | Signature | Description |
 | --- | --- |
+| [close()](#void-close) | Closes the device and the associated socket.
+| [open()](#void-open) | Opens the device.
+| [read()](#void-read) | Waits for the user to enter new data on the web site.
 | [RiseAbnormalEnd](#void-riseabnormalendstring-abendmessage-string-abendstack)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks the device as being in a job that is ending abnormally.
+| [sendHostResult()](#void-sendhostresult) | Send the active display file's host service results and waits for new input.
 | [SetSocket](#void-setsocketsocket-socket)([Socket](https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.socket?view=net-8.0)) | Sets the socket used to communicate with the website providing the UI services.
+
+### void close()
+
+Closes the device and the assoiated socket.
+
+```cs
+void close()
+```
+
+### void open()
+
+Opens the device.
+
+```cs
+void open()
+```
+
+### void read()
+
+Waits for the user to enter new data on the web site.
+
+```cs
+void read()
+```
 
 ### void RiseAbnormalEnd([string abEndMessage](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string abEndStack](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -52,6 +80,14 @@ void RiseAbnormalEnd(string abEndMessage, string abEndStack)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | abEndMessage | A message text describing the abnormal termination.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | abEndStack | The execution stack at the moment of failure.
+
+### void sendHostResult()
+
+Send the active display file's host service results and waits for new input.
+
+```cs
+void sendHostResult()
+```
 
 ### void SetSocket([Socket socket](https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.socket?view=net-8.0))
 

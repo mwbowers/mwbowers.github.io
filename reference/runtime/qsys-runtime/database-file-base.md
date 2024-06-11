@@ -153,13 +153,20 @@ DatabaseFileBase(String, String, String, Int32, ShareTypes, Boolean, Int32, Stri
 
 | Signature | Description |
 | --- | --- |
+| [chainKey](#void-chainkeystring-formatname-adgkeytable-key-bool-nolock)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using a key.
+| [chainKey](#void-chainkeystring-formatname-adgkeytable-key-bool-nolock-ids-intods)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Read a record format using a key.
+| [chainRRN](#void-chainrrnstring-formatname-int-rrn-bool-nolock)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read a record format using the relative record number.
+| [chainRRN](#void-chainrrnstring-formatname-int-rrn-bool-nolock-ids-intods)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Read a record format using the relative record number.
 | [CheckKey](#bool-checkkeystring-formatname-adgkeytable-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Check whether a record exists.
+| [close()](#void-close) | Close the database file.
 | [DeleteByKey](#void-deletebykeystring-formatname-adgkeytable-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Delete a record.
+| [deleteByRRN](#void-deletebyrrnstring-formatname-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Delete a record using its relative record number.
 | [DeleteCurrent](#void-deletecurrentstring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete the current record.
 | [DeleteRange](#void-deleterangestring-formatname-adgkeytable-firstkey-adgkeytable-lastkey-bool-includefirstkey-int-includelastkey)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Delete a range of records.
 | [Feod](#void-feodstring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Force end of data on the given record.
 | [GetAlternateKeyTable](#adgkeytable-getalternatekeytablestring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | For multiformat files, get the alternate AdgKeyTable for a given record format.
 | [GetKeyTable](#adgkeytable-getkeytablestring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | For multiformat files, get the AdgKeyTable for a given record format.
+| [open](#void-opendatabase-database-accessmode-accessmode-bool-iscachewrite-bool-iscommit-servercursors-servercursor)([Database](/reference/runtime/qsys-runtime/database.html), [AccessMode](/reference/datagate/datagate-common/access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors](/reference/datagate/datagate-common/server-cursors.html)) | Open the database file.
 | [Open](#void-opendatabase-database-accessmode-accessmode-bool-iscachewrite-bool-iscommit-servercursors-servercursor)([Database](/reference/runtime/qsys-runtime/database.html), [AccessMode](/reference/datagate/datagate-common/access-mode.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors](/reference/datagate/datagate-common/server-cursors.html)) | Open the database file.
 | [ReadEqualIncompleteKey](#void-readequalincompletekeystring-formatname-adgkeytable-key-string-incompletekeybuffer-bool-nolock-bool-previous)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Read sequentially a record with an incomplete key buffer.
 | [ReadEqualIncompleteKey](#void-readequalincompletekeystring-formatname-adgkeytable-key-string-incompletekeybuffer-bool-nolock-bool-previous-ids-intods)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Read sequentially a record with an incomplete key buffer.
@@ -172,10 +179,81 @@ DatabaseFileBase(String, String, String, Int32, ShareTypes, Boolean, Int32, Stri
 | [SeekRRN](#void-seekrrnstring-formatname-int-rrn-int-readmode)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Seek to a particular record using its relative record number. Position the cursor according to the readMode parameter.
 | [SetRange](#void-setrangestring-formatname-adgkeytable-firstkey-adgkeytable-lastkey-bool-startat-bool-includefirstkey-int-includelastkey)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Seek a range of records.
 | [Unlock()](#void-unlock) | Unlock a record.
+| [update](#void-updatestring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Update a record.
+| [update](#void-updatestring-formatname-char--optionindicators-ids-fromds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Update a record.
 | [Update](#void-updatestring-formatname-indicator--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html)) | Update a record.
 | [Update](#void-updatestring-formatname-indicator--optionindicators-ids-fromds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Update a record.
+| [updateFlds](#void-updatefldsstring-formatname-string--fieldnames)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Update a record, only those fields listed in fieldNames.
+| [write](#void-writestring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a record.
+| [write](#void-writestring-formatname-char--optionindicators-ids-fromds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Write a record.
 | [Write](#void-writestring-formatname-indicator--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html)) | Write a record.
 | [Write](#void-writestring-formatname-indicator--optionindicators-ids-fromds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Write a record.
+
+### void chainKey([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgKeyTable key](/reference/datagate/datagate-client/adg-key-table.html), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Read a record format using a key.
+
+```cs
+void chainKey(string formatName, AdgKeyTable key, bool noLock)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | key | An AdgKeyTable object containing the key of the record to read.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation.
+
+### void chainKey([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgKeyTable key](/reference/datagate/datagate-client/adg-key-table.html), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS intoDS](/reference/runtime/qsys-runtime/ids.html))
+
+Read a record format using a key.
+
+```cs
+void chainKey(string formatName, AdgKeyTable key, bool noLock, IDS intoDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | key | An AdgKeyTable object containing the key of the record to read.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | intoDS | IDS object that receives the data read.
+
+### void chainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Read a record format using the relative record number.
+
+```cs
+void chainRRN(string formatName, int rrn, bool noLock)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number of the record to read.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation.
+
+### void chainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS intoDS](/reference/runtime/qsys-runtime/ids.html))
+
+Read a record format using the relative record number.
+
+```cs
+void chainRRN(string formatName, int rrn, bool noLock, IDS intoDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number of the record to read.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True to leave the record unlocked after the operation.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | intoDS | IDS object that receives the data read.
 
 ### bool CheckKey([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgKeyTable key](/reference/datagate/datagate-client/adg-key-table.html))
 
@@ -198,6 +276,14 @@ bool CheckKey(string formatName, AdgKeyTable key)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the record exists.
 
+### void close()
+
+Close the database file.
+
+```cs
+void close()
+```
+
 ### void DeleteByKey([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgKeyTable key](/reference/datagate/datagate-client/adg-key-table.html))
 
 Delete a record.
@@ -212,6 +298,21 @@ void DeleteByKey(string formatName, AdgKeyTable key)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to read.
 | [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | key | An AdgKeyTable object containing the key of the record to read.
+
+### void deleteByRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Delete a record using its relative record number.
+
+```cs
+void deleteByRRN(string formatName, int rrn)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to delete.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
 
 ### void DeleteCurrent([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -298,6 +399,24 @@ AdgKeyTable GetKeyTable(string formatName)
 | Type | Description
 | --- | ---
 | [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | The AdgKeyTable for the record format.
+
+### void open([Database database](/reference/runtime/qsys-runtime/database.html), [AccessMode accessMode](/reference/datagate/datagate-common/access-mode.html), [bool isCacheWrite](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool isCommit](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors serverCursor](/reference/datagate/datagate-common/server-cursors.html))
+
+Open the database file.
+
+```cs
+void open(Database database, AccessMode accessMode, bool isCacheWrite, bool isCommit, ServerCursors serverCursor)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Database](/reference/runtime/qsys-runtime/database.html) | database | Database where the file is located.
+| [AccessMode](/reference/datagate/datagate-common/access-mode.html) | accessMode | AccessMode of the file.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCacheWrite | True to enable cache writes.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isCommit | True to have file operations under commitment control.
+| [ServerCursors](/reference/datagate/datagate-common/server-cursors.html) | serverCursor | ServerCursors option value.
 
 ### void Open([Database database](/reference/runtime/qsys-runtime/database.html), [AccessMode accessMode](/reference/datagate/datagate-common/access-mode.html), [bool isCacheWrite](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool isCommit](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [ServerCursors serverCursor](/reference/datagate/datagate-common/server-cursors.html))
 
@@ -501,6 +620,37 @@ Unlock a record.
 void Unlock()
 ```
 
+### void update([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Update a record.
+
+```cs
+void update(string formatName, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation.
+
+### void update([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS fromDS](/reference/runtime/qsys-runtime/ids.html))
+
+Update a record.
+
+```cs
+void update(string formatName, Char[] optionIndicators, IDS fromDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the update operation.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | fromDS | IDS object where the data comes from.
+
 ### void Update([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Indicator\[\] optionIndicators](/reference/runtime/qsys-runtime/indicator.html))
 
 Update a record.
@@ -530,6 +680,52 @@ void Update(string formatName, Indicator[] optionIndicators, IDS fromDS)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update.
 | [Indicator\[\]](/reference/runtime/qsys-runtime/indicator.html) | optionIndicators | Indicator array to use in the update operation.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | fromDS | IDS object where the data comes from.
+
+### void updateFlds([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] fieldNames](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Update a record, only those fields listed in fieldNames.
+
+```cs
+void updateFlds(string formatName, String[] fieldNames)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to update.
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | Array of field names to update.
+
+### void write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Write a record.
+
+```cs
+void write(string formatName, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation.
+
+### void write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS fromDS](/reference/runtime/qsys-runtime/ids.html))
+
+Write a record.
+
+```cs
+void write(string formatName, Char[] optionIndicators, IDS fromDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation.
 | [IDS](/reference/runtime/qsys-runtime/ids.html) | fromDS | IDS object where the data comes from.
 
 ### void Write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Indicator\[\] optionIndicators](/reference/runtime/qsys-runtime/indicator.html))

@@ -110,15 +110,149 @@ WorkstationFileBase(String, String, Boolean, Action)
 
 | Signature | Description |
 | --- | --- |
+| [attachBuffer](#void-attachbufferadgdataset-adgdataset)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | When overriden in a derived class, set this file's DataSet to the given AdgDataSet.
+| [chainKey](#void-chainkeystring-formatname-adgkeytable-key-bool-nolock)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception.
+| [chainKey](#void-chainkeystring-formatname-adgkeytable-key-bool-nolock-ids-ds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception.
+| [chainRRN](#void-chainrrnstring-formatname-int-rrn-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes CHAIN by Relative Record Number.
+| [chainRRN](#void-chainrrnstring-formatname-int-rrn-char--indicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number.
+| [chainRRN](#void-chainrrnstring-formatname-int-rrn-bool-nolock)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | For backwards compatibility with programs compiled prior to v12.0
+| [chainRRN](#void-chainrrnstring-formatname-int-rrn-bool-nolock-ids-intods)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes CHAIN by Relative Record Number override. (Not implemented).
 | [ChainRRN](#void-chainrrnstring-formatname-int-rrn-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes CHAIN by Relative Record Number.
 | [ChainRRN](#void-chainrrnstring-formatname-int-rrn-char--indicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes CHAIN by Relative Record Number.
+| [close()](#void-close) | Closes Workstation file.
+| [deleteByRRN](#void-deletebyrrnstring-formatname-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Executes DELETE by Relative Record Number.
+| [exFmt](#void-exfmtstring-formatname-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes EXFMT operation.
+| [exFmt](#void-exfmtstring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation.
 | [ExFmt](#void-exfmtstring-formatname-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes EXFMT operation.
 | [ExFmt](#void-exfmtstring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes EXFMT operation.
+| [insert](#void-insertstring-formatname-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Insert a row in the current record.
+| [open()](#void-open) | Opens Workstation File.
 | [Open()](#void-open) | Opens Workstation File.
+| [read](#void-readstring-formatname-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes READ operation.
+| [read](#void-readstring-formatname-char--indicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation.
 | [Read](#void-readstring-formatname-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes READ operation.
 | [Read](#void-readstring-formatname-char--indicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes READ operation.
+| [readNextChanged](#int-readnextchangedstring-formatname-int-originalrrn-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes Workstationfile READ NEXT record CHANGED operation.
+| [readNextChanged](#int-readnextchangedstring-formatname-int-originalrrn-char--indicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation.
 | [ReadNextChanged](#int-readnextchangedstring-formatname-int-originalrrn-ids-indds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes Workstationfile READ NEXT record CHANGED operation.
 | [ReadNextChanged](#int-readnextchangedstring-formatname-int-originalrrn-char--indicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes Workstationfile READ NEXT record CHANGED operation.
+| [update](#void-updatestring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Execute UPDATE subfile record operation. 
+| [updateFlds](#void-updatefldsstring-formatname-string--fieldnames)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Execute UPDATE FIELDS operation.
+| [write](#void-writestring-formatname-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Executes WRITE record operation.
+| [write](#void-writestring-formatname-char--optionindicators-ids-fromds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS](/reference/runtime/qsys-runtime/ids.html)) | Executes WRITE record operation.
+| [writeSubfile](#void-writesubfilestring-formatname-int-rrn-char--optionindicators)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Write a subfile record.
+
+### void attachBuffer([AdgDataSet adgDataSet](/reference/datagate/datagate-client/adg-data-set.html))
+
+When overriden in a derived class, set this file's DataSet to the given AdgDataSet.
+
+```cs
+void attachBuffer(AdgDataSet adgDataSet)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | adgDataSet | The dataset to attach.
+
+### void chainKey([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgKeyTable key](/reference/datagate/datagate-client/adg-key-table.html), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception.
+
+```cs
+void chainKey(string formatName, AdgKeyTable key, bool noLock)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Not used.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | key | Not used.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | Not used.
+
+### void chainKey([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgKeyTable key](/reference/datagate/datagate-client/adg-key-table.html), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS ds](/reference/runtime/qsys-runtime/ids.html))
+
+Executes CHAIN by search Key override. Throws: CHAIN not supported on WorkstationFiles Exception.
+
+```cs
+void chainKey(string formatName, AdgKeyTable key, bool noLock, IDS ds)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Not used.
+| [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | key | Not used.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | Not used.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | ds | Not used.
+
+### void chainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
+
+Executes CHAIN by Relative Record Number.
+
+```cs
+void chainRRN(string formatName, int rrn, IDS indDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | indDS | Indicator Data Structure
+
+### void chainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Executes CHAIN by Relative Record Number.
+
+```cs
+void chainRRN(string formatName, int rrn, Char[] indicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | Indicator collection.
+
+### void chainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+For backwards compatibility with programs compiled prior to v12.0
+
+```cs
+void chainRRN(string formatName, int rrn, bool noLock)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | Not used.
+
+### void chainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool noLock](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [IDS intoDS](/reference/runtime/qsys-runtime/ids.html))
+
+Executes CHAIN by Relative Record Number override. (Not implemented).
+
+```cs
+void chainRRN(string formatName, int rrn, bool noLock, IDS intoDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | noLock | True if locking should be performed.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | intoDS | IDS object that receives the data read.
 
 ### void ChainRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
 
@@ -152,6 +286,59 @@ void ChainRRN(string formatName, int rrn, Char[] indicators)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
 | [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | Indicator collection.
 
+### void close()
+
+Closes Workstation file.
+
+```cs
+void close()
+```
+
+### void deleteByRRN([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Executes DELETE by Relative Record Number.
+
+```cs
+void deleteByRRN(string formatName, int rrn)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative Record Number.
+
+### void exFmt([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
+
+Executes EXFMT operation.
+
+```cs
+void exFmt(string formatName, IDS indDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | indDS | Output Indicator Data Structure.
+
+### void exFmt([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Executes EXFMT operation.
+
+```cs
+void exFmt(string formatName, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Option indicator collection.
+
 ### void ExFmt([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
 
 Executes EXFMT operation.
@@ -182,6 +369,29 @@ void ExFmt(string formatName, Char[] optionIndicators)
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
 | [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Option indicator collection.
 
+### void insert([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Insert a row in the current record.
+
+```cs
+void insert(string formatName, int rrn)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number.
+
+### void open()
+
+Opens Workstation File.
+
+```cs
+void open()
+```
+
 ### void Open()
 
 Opens Workstation File.
@@ -189,6 +399,36 @@ Opens Workstation File.
 ```cs
 void Open()
 ```
+
+### void read([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
+
+Executes READ operation.
+
+```cs
+void read(string formatName, IDS indDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | indDS | Indicator Data Structure.
+
+### void read([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Executes READ operation.
+
+```cs
+void read(string formatName, Char[] indicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | Option indicator collection.
 
 ### void Read([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
 
@@ -219,6 +459,50 @@ void Read(string formatName, Char[] indicators)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
 | [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | Option indicator collection.
+
+### int readNextChanged([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int originalRRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
+
+Executes Workstationfile READ NEXT record CHANGED operation.
+
+```cs
+int readNextChanged(string formatName, int originalRRN, IDS indDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | originalRRN | Input original Relative Record Number.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | indDS | Input Indicator Data Structure reference.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | If record exists Relative Record Number for record that changed, otherwise original RRN.
+
+### int readNextChanged([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int originalRRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Executes Workstationfile READ NEXT record CHANGED operation.
+
+```cs
+int readNextChanged(string formatName, int originalRRN, Char[] indicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Input record format name.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | originalRRN | Input original Relative Record Number.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | indicators | Input option indicators.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | If record exists Relative Record Number for record that changed, otherwise original RRN.
 
 ### int ReadNextChanged([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int originalRRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [IDS indDS](/reference/runtime/qsys-runtime/ids.html))
 
@@ -263,3 +547,80 @@ int ReadNextChanged(string formatName, int originalRRN, Char[] indicators)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | If record exists Relative Record Number for record that changed, otherwise throws exception.
+
+### void update([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Execute UPDATE subfile record operation. 
+
+```cs
+void update(string formatName, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Option indicators.
+
+### void updateFlds([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] fieldNames](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Execute UPDATE FIELDS operation.
+
+```cs
+void updateFlds(string formatName, String[] fieldNames)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name.
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | fieldNames | Collection of field names.
+
+### void write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Executes WRITE record operation.
+
+```cs
+void write(string formatName, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name/
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Option indicator collection.
+
+### void write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char), [IDS fromDS](/reference/runtime/qsys-runtime/ids.html))
+
+Executes WRITE record operation.
+
+```cs
+void write(string formatName, Char[] optionIndicators, IDS fromDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Record format name/
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Option indicator collection.
+| [IDS](/reference/runtime/qsys-runtime/ids.html) | fromDS | Input data from Data Structure.
+
+### void writeSubfile([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
+
+Write a subfile record.
+
+```cs
+void writeSubfile(string formatName, int rrn, Char[] optionIndicators)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | Name of the record format to write.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | Relative record number.
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | optionIndicators | Indicator array to use in the write operation.

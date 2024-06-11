@@ -76,11 +76,16 @@ Job(JobConfig)
 | --- | --- |
 | [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Job class.
 | [EndPrograms()](#void-endprograms) | Deactivates all programs in the job and calls Dispose().
+| [getADO_Connection()](#dbconnection-getado-connection) | Gets the ADO connection used for 'embedded SQL'
+| [getDatabase()](#database-getdatabase) | When overridden in a derived class, gets the main DataGate Database associated with the Job.
 | [GetInvokedMessageQueue](#messagequeue-getinvokedmessagequeuestring-programqueueid)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message queue associated with the newest invocation of a program.
 | [GetLdaField](#string-getldafieldint-start-int-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA.
+| [getPrinterDB()](#database-getprinterdb) | Gets the DataGate Database for Printer Files associated with the Job.
 | [GetSwitch](#char-getswitchint-iswitch)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value of one of the 8 job switches.
 | [GetSwitches()](#string-getswitches) | Gets a string representing the values of all 8 job's switches.
 | [ReclaimResources](#void-reclaimresourcesbool-caller)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Reclaim the resources on the Job's default activation group.
+| [RetrieveSystemValue](#object-retrievesystemvaluestring-sysvalname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value of an attribute of the current environment.
+| [RetrieveUserProfile](#object-retrieveuserprofilestring-keyname-string-userprofilename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the name of a user.
 | [SerializeLdaToBase64String()](#string-serializeldatobase64string) | Converts the value of the LDA to a string representation that is encoded with base-64 digits.
 | [SetLdaField](#void-setldafieldint-start-int-length-string-newvalue)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Stores a value in the LDA.
 | [SetSwitch](#void-setswitchint-iswitch-char-value)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char)) | Sets the value of one of the 8 job switches to '0' or '1'.
@@ -107,6 +112,22 @@ Deactivates all programs in the job and calls Dispose().
 
 ```cs
 void EndPrograms()
+```
+
+### DbConnection getADO_Connection()
+
+Gets the ADO connection used for 'embedded SQL'
+
+```cs
+DbConnection getADO_Connection()
+```
+
+### Database getDatabase()
+
+When overridden in a derived class, gets the main DataGate Database associated with the Job.
+
+```cs
+Database getDatabase()
 ```
 
 ### MessageQueue GetInvokedMessageQueue([string programQueueId](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
@@ -150,6 +171,14 @@ string GetLdaField(int start, int length)
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The requested field value.
 
+### Database getPrinterDB()
+
+Gets the DataGate Database for Printer Files associated with the Job.
+
+```cs
+Database getPrinterDB()
+```
+
 ### char GetSwitch([int iSwitch](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets the value of one of the 8 job switches.
@@ -191,6 +220,47 @@ void ReclaimResources(bool caller)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | caller | true to include the resource of the module's program making this call; otherwise, false.
+
+### object RetrieveSystemValue([string sysValName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Gets the value of an attribute of the current environment.
+
+```cs
+object RetrieveSystemValue(string sysValName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sysValName | A string with the name of of the attribute to return.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The value of the attribute requested.
+
+### object RetrieveUserProfile([string keyName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string userProfileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Gets the name of a user.
+
+```cs
+object RetrieveUserProfile(string keyName, string userProfileName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | keyName | A string with the value "RTNUSRPRF".
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | userProfileName | The name of a user or the special value "*CURRENT" to get the current user.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | The userProfileName value or the name of the current user.
 
 ### string SerializeLdaToBase64String()
 

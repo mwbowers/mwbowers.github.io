@@ -26,6 +26,7 @@ Defines the core behavior of a job message logger and provides a base for derive
 | [BeginLogging()](#void-beginlogging) | When overridden in a derived class, logging of messages gets started for the log.
 | [EndLogging()](#void-endlogging) | When overridden in a derived class, logging of messages is stopped.
 | [Get()](#ijoblogger-get) | Gets the logger.
+| [ShouldLog](#bool-shouldlogmessagebase-msg)([MessageBase](/reference/runtime/qsys-runtime-job-support/message-base.html)) | Determines if a message should be added to the log.
 
 ### void Add([MessageBase entry](/reference/runtime/qsys-runtime-job-support/message-base.html))
 
@@ -64,3 +65,23 @@ Gets the logger.
 ```cs
 IJobLogger Get()
 ```
+
+### bool ShouldLog([MessageBase msg](/reference/runtime/qsys-runtime-job-support/message-base.html))
+
+Determines if a message should be added to the log.
+
+```cs
+bool ShouldLog(MessageBase msg)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [MessageBase](/reference/runtime/qsys-runtime-job-support/message-base.html) | msg | Message in question.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the message should be logged; otherwise false.

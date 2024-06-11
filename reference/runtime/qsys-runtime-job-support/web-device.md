@@ -44,12 +44,16 @@ WebDevice(InteractiveJob)
 | --- | --- |
 | [Attach](#void-attachstring-sharefilename-webdisplayfile-displayfile)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html)) | Associates a named display file to this device for future sharing.  Remembers the display file name for potential future sharing.
 | [Attach](#void-attachwebdisplayfile-displayfile)([WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html)) | Associates a display file to this device.
+| [close()](#void-close) | When overridden in a derived class, closes this device.
 | [Detach](#void-detachstring-sharefilename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the association of a named display file with the device.
 | [Detach](#void-detachwebdisplayfile-displayfile)([WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html)) | Removes the association of a display file with the device. 
 | [Dispose()](#void-dispose) | Calls the close method on the device.
 | [GetSharedFile](#webdisplayfile-getsharedfilestring-sharefilename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a display file attached to the device.
+| [open()](#void-open) | When overridden in a derived class, opens this device.
+| [read()](#void-read) | When overridden in a derived class, waits for the user to enter new data on the device's screen.
 | [Read](#void-readwebdisplayfile-dspfile)([WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html)) | Present a screen waiting for data to be ready and reads it. 
 | [RiseAbnormalEnd](#void-riseabnormalendstring-abendmessage-string-abendstack)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks the device as being in a job that is ending abnormally.
+| [sendHostResult()](#void-sendhostresult) | When ovveridden in a derived class, sends the host service results in the active display file and waits for new input.
 | [SendHostResult](#void-sendhostresultwebdisplayfile-dspfile)([WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html)) | Send the host service results in a display file and waits for new input.
 | [SignalDataReadyForProgram()](#void-signaldatareadyforprogram) | Signals the fact that data is now available to the program so it can continue execution.
 | [SignalDataReadyForUser()](#void-signaldatareadyforuser) | Signals the fact that data is now available to the user.
@@ -84,6 +88,14 @@ void Attach(WebDisplayFile displayFile)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html) | displayFile | The display file being associated to this device.
+
+### void close()
+
+When overridden in a derived class, closes this device.
+
+```cs
+void close()
+```
 
 ### void Detach([string shareFileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -141,6 +153,22 @@ WebDisplayFile GetSharedFile(string shareFileName)
 | --- | ---
 | [WebDisplayFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html) | The attached display file. Null if there is no display file with the name seeked. 
 
+### void open()
+
+When overridden in a derived class, opens this device.
+
+```cs
+void open()
+```
+
+### void read()
+
+When overridden in a derived class, waits for the user to enter new data on the device's screen.
+
+```cs
+void read()
+```
+
 ### void Read([WebDisplayFile dspFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html))
 
 Present a screen waiting for data to be ready and reads it. 
@@ -169,6 +197,14 @@ void RiseAbnormalEnd(string abEndMessage, string abEndStack)
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | abEndMessage | A message text describing the abnormal termination.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | abEndStack | The execution stack at the moment of failure.
+
+### void sendHostResult()
+
+When ovveridden in a derived class, sends the host service results in the active display file and waits for new input.
+
+```cs
+void sendHostResult()
+```
 
 ### void SendHostResult([WebDisplayFile dspFile](/reference/runtime/qsys-runtime-job-support/web-display-file.html))
 

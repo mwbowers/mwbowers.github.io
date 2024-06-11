@@ -90,6 +90,7 @@ Database(String, VirtualTerminal, OpenAccessDspF)
 | [CopyLogicalFileToDb](#void-copylogicalfiletodbstring-filepath-database-todb-string-todirectory-bool-replacebasefiles-bool-copydata)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Database](/reference/runtime/qsys-runtime/database.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a logical file and its base physical files from the current Database to another Database.
 | [CreateDirectory](#void-createdirectorystring-directoryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Creates a new directory (library) in the Database.
 | [DeleteFile](#void-deletefilestring-filepath)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Deletes a file from the Database.
+| [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases resources.
 | [Dispose()](#void-dispose) | Releases resources.
 | [EndTpm()](#void-endtpm) | Ends a Database transaction operation.
 | [GetNames](#string--getnamesbool-publicdbs)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Returns an array of strings with all of the database names found. 
@@ -227,6 +228,20 @@ void DeleteFile(string filePath)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | filePath | Path to the file as "library/fileName".
+
+### void Dispose([bool disposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Releases resources.
+
+```cs
+void Dispose(bool disposing)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | If True, it is safe to dispose of class members.
 
 ### void Dispose()
 
