@@ -59,3 +59,26 @@ The Model defines a [decimal](https://docs.microsoft.com/en-us/dotnet/api/system
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DateSeparator | Gets the Date Separator from the Model. |
 | [DecAttribute](/reference/expo/qsys-expo-model/dec-attribute.html) | DecFieldAttribute | Gets the DecAttribute from the Model. |
 | [FieldAttribute](/reference/expo/qsys-expo-model/field-attribute.html) | FieldAttribute | Gets the Decimal FieldAttribute from the Model. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [GetDateFormat()](#ddsdateformat-getdateformat) | Get the DdsDateFormat attribute from the Model.
+| [GetDateSeparator()](#string-getdateseparator) | Gets the Data Separator from de Model.
+
+### DdsDateFormat GetDateFormat()
+
+Get the DdsDateFormat attribute from the Model.
+
+```cs
+DdsDateFormat GetDateFormat()
+```
+
+### string GetDateSeparator()
+
+Gets the Data Separator from de Model.
+
+```cs
+string GetDateSeparator()
+```

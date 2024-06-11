@@ -48,3 +48,17 @@ Note how the `Time` attribute defines the [format of the Time field](/reference/
 | [FieldAttribute](/reference/expo/qsys-expo-model/field-attribute.html) | FieldAttribute | Gets the Time FieldAttribute from the Model. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MapValues | Gets or sets a value that indicates a list of semicolon-separated output value mappings. Format of each mapping is 'program-value,display-value'. |
 | [TimeAttribute](/reference/expo/qsys-expo-model/time-attribute.html) | TimeFieldAttribute | Gets the Time Attribute from the Model. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [GetTimeFormat()](#ddstimeformat-gettimeformat) | Gets the DateFormat from the Model.
+
+### DdsTimeFormat GetTimeFormat()
+
+Gets the DateFormat from the Model.
+
+```cs
+DdsTimeFormat GetTimeFormat()
+```

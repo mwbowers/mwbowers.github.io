@@ -39,3 +39,24 @@ etc.
 | [FieldUsages](/reference/expo/qsys-expo-model/field-usages.html) | Usage | Gets or sets a value that indicates the Field Usage. |
 | [ValuesAttribute](/reference/expo/qsys-expo-model/values-attribute.html) | ValuesAttribute | Gets the ValuesAttribute from the Model. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | VirtualRowCol | Gets or sets a value that indicates the legacy row, col position that the logic may be expecting to identify. Format is 'Row,Col'. May not represent the current position of the tag helper. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [ProcessDdsField](#void-processddsfieldtaghelpercontext-context-taghelperoutput-output)([TagHelperContext](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext?view=aspnetcore-8.0), [TagHelperOutput](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput?view=aspnetcore-8.0)) | When overriden in a derived class, method is called by rendering engine to write the HTML output.  
+
+### void ProcessDdsField([TagHelperContext context](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext?view=aspnetcore-8.0), [TagHelperOutput output](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput?view=aspnetcore-8.0))
+
+When overriden in a derived class, method is called by rendering engine to write the HTML output.  
+
+```cs
+void ProcessDdsField(TagHelperContext context, TagHelperOutput output)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [TagHelperContext](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext?view=aspnetcore-8.0) | context | Tag Helper context.
+| [TagHelperOutput](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput?view=aspnetcore-8.0) | output | Tag Helper output.

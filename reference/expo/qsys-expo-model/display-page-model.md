@@ -88,12 +88,21 @@ DisplayPageModel()
 | --- | --- |
 | [ApplyEditCode](#string-applyeditcodedecimal-numeric-int-length-int-decimals-editcodes-editcode)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [EditCodes](/reference/expo/qsys-expo-model/edit-codes.html)) | Formats value according to the provided EditCode
 | [ApplyEditWord](#string-applyeditworddecimal-numeric-int-length-int-decimals-string-editword)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Formats value according to the provided EditWord
+| [ClearModelProperties()](#void-clearmodelproperties) | Resets all records properties to their default values.
+| [DumpModelPropertiesToDataSet()](#void-dumpmodelpropertiestodataset) | Updates the Dataset byc copying the field values from the Model properties
 | [GetAidKeyType](#char-getaidkeytypeaidkey-key)([AidKey](/reference/expo/qsys-expo-model/aid-key.html)) | Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function.
+| [GetDataRow](#datarow-getdatarowstring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the first DataRow from the DataTable with the given formatName from the active DataSet.
+| [GetDataTable](#datatable-getdatatablestring-formatname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the DataTable with the format name given from the active Dataset. 
 | [GetHasBeenRead()](#bool-gethasbeenread) | Gets value that indicates Workstation Dataset status
 | [GetLastRecordModelWritten()](#recordmodel-getlastrecordmodelwritten) | Gets a value that indicates the last RecordModel written by the application logic.
 | [GetMessageText](#string-getmessagetextstring-messagefilename-string-messageid-int-maxlength-string-replacementtext)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the message text from the external message file. Message files are external XML resources.
+| [GetSubfileDataRow](#datarow-getsubfiledatarowstring-formatname-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the first DataRow from the DataTable with the given subfile formatName from the active DataSet.
 | [IsKeyEnabled](#bool-iskeyenabledaidkey-aidkey)([AidKey](/reference/expo/qsys-expo-model/aid-key.html)) | Gets the state of the requested AidKey.
+| [LoadFeedbackValues()](#bool-loadfeedbackvalues) | Populates the Feedback values on the Active DisplayFile from posted data.
+| [LoadModelPropertiesFromDataSet](#void-loadmodelpropertiesfromdatasetbool-onlynonpostedfields)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Refreshes the Model properties by loading values from the active Dataset
 | [LoadModelStateErrors()](#void-loadmodelstateerrors) | Populates the collection of validation errors.
+| [SelectMyAction](#iactionresult-selectmyactionbool-valid)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Selects the appropriate action to format a response Page.
+| [SetResponseIndicators()](#void-setresponseindicators) | Sets the response indicators in the Dataset from the Display page attributes.
 
 ### string ApplyEditCode([decimal numeric](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [EditCodes editCode](/reference/expo/qsys-expo-model/edit-codes.html))
 
@@ -141,6 +150,22 @@ string ApplyEditWord(decimal numeric, int length, int decimals, string editWord)
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | the formatted value as string
 
+### void ClearModelProperties()
+
+Resets all records properties to their default values.
+
+```cs
+void ClearModelProperties()
+```
+
+### void DumpModelPropertiesToDataSet()
+
+Updates the Dataset byc copying the field values from the Model properties
+
+```cs
+void DumpModelPropertiesToDataSet()
+```
+
 ### char GetAidKeyType([AidKey key](/reference/expo/qsys-expo-model/aid-key.html))
 
 Gets a value that represents the code for the type of Aid key. 'A' for attention, 'F' for function.
@@ -160,6 +185,46 @@ char GetAidKeyType(AidKey key)
 | Type | Description
 | --- | ---
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | character 'A' for attention, 'F' for function
+
+### DataRow GetDataRow([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Gets the first DataRow from the DataTable with the given formatName from the active DataSet.
+
+```cs
+DataRow GetDataRow(string formatName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | The first DataRow.
+
+### DataTable GetDataTable([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Gets the DataTable with the format name given from the active Dataset. 
+
+```cs
+DataTable GetDataTable(string formatName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | The DataTable
 
 ### bool GetHasBeenRead()
 
@@ -200,6 +265,27 @@ string GetMessageText(string messageFileName, string messageId, int maxLength, s
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | the text as string
 
+### DataRow GetSubfileDataRow([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Gets the first DataRow from the DataTable with the given subfile formatName from the active DataSet.
+
+```cs
+DataRow GetSubfileDataRow(string formatName, int RRN)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | formatName | 
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | RRN | 
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | The first DataRow.
+
 ### bool IsKeyEnabled([AidKey aidKey](/reference/expo/qsys-expo-model/aid-key.html))
 
 Gets the state of the requested AidKey.
@@ -220,10 +306,60 @@ bool IsKeyEnabled(AidKey aidKey)
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the AidKey is enabled
 
+### bool LoadFeedbackValues()
+
+Populates the Feedback values on the Active DisplayFile from posted data.
+
+```cs
+bool LoadFeedbackValues()
+```
+
+### void LoadModelPropertiesFromDataSet([bool onlyNonPostedFields](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Refreshes the Model properties by loading values from the active Dataset
+
+```cs
+void LoadModelPropertiesFromDataSet(bool onlyNonPostedFields)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | onlyNonPostedFields | Determines which fields should be refreshed
+
 ### void LoadModelStateErrors()
 
 Populates the collection of validation errors.
 
 ```cs
 void LoadModelStateErrors()
+```
+
+### IActionResult SelectMyAction([bool valid](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Selects the appropriate action to format a response Page.
+
+```cs
+IActionResult SelectMyAction(bool valid)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | valid | indicates if the posted page passed validation
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IActionResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.iactionresult?view=aspnetcore-8.0) | Action method result
+
+### void SetResponseIndicators()
+
+Sets the response indicators in the Dataset from the Display page attributes.
+
+```cs
+void SetResponseIndicators()
 ```

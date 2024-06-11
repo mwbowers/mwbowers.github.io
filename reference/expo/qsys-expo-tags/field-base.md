@@ -50,3 +50,17 @@ etc.
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | TabIndex | Gets or sets a value indicating that its element can be focused, and where it participates in sequential keyboard navigation (usually with the Tab key, hence the name). |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Underline | Gets or sets conditional expression string that determines if text should be underlined. Underline is rendered as a bottom-border CSS style. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | VisibleCondition | Gets or sets conditional expression string that determines if field/constant is visible. Non-visible fields/constants are not rendered. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [IsVisible()](#bool-isvisible) | Gets a value that indicates if element should be rendered.
+
+### bool IsVisible()
+
+Gets a value that indicates if element should be rendered.
+
+```cs
+bool IsVisible()
+```

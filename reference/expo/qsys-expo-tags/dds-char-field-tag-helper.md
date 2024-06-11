@@ -53,3 +53,17 @@ Note how the `Char` attribute defines the fixed length of 40 characters. The pro
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SpellCheck | Gets or sets a value that indicates the HTML spellcheck attribute used during rendering. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ValuesText | Gets or sets a value that describes valid display values. Each text description is single-quoted. List is comma separated. [ValuesText](dds-field-vlues-text.html) can be used to display the field as a dropdown box. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ValuesTextOptionSeparator | Gets or sets the string that will be used to separate Value and Text for ValuesText. Defaults to not prepend values to ValuesText. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [getFieldValue()](#string-getfieldvalue) | Gets the value of the field from the Model.
+
+### string getFieldValue()
+
+Gets the value of the field from the Model.
+
+```cs
+string getFieldValue()
+```

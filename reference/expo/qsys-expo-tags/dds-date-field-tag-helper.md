@@ -54,3 +54,26 @@ Notice how the [DateFormat attribute](/reference/expo/qsys-expo-model/date-attri
 | [DdsDayNames](/reference/expo/qsys-expo-tags/dds-day-names.html) | FirstDayOfWeek | Gets or sets the countries first day of the week. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MapValues | Gets or sets a value that indicates a list of semicolon-separated output value mappings. Format of each mapping is 'program-value,display-value'. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | UseNativePicker | Gets or sets a value that indicates if the Browser's date picker should be used when capturing a date. |
+
+## Methods
+
+| Signature | Description |
+| --- | --- |
+| [GetDateFormat()](#ddsdateformat-getdateformat) | Gets the DateFormat from the Model.
+| [GetDateSeparator()](#string-getdateseparator) | Gets the Date Separator from the Model.
+
+### DdsDateFormat GetDateFormat()
+
+Gets the DateFormat from the Model.
+
+```cs
+DdsDateFormat GetDateFormat()
+```
+
+### string GetDateSeparator()
+
+Gets the Date Separator from the Model.
+
+```cs
+string GetDateSeparator()
+```
