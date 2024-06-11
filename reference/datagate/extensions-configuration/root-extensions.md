@@ -11,6 +11,13 @@ Provides extension methods for the root configuration.
 <br>
 <br>
 
+## Properties
+
+| Type | Name | Description
+| --- | --- | --- 
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SECTION_ASNA | Represents the section name in the configuration that contains the ASNA configuration. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SECTION_ASNA_DG | Represents the section name in the ASNA configuration that contains the DataGate configuration. |
+
 ## Methods
 
 | Signature | Description |

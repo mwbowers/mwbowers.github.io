@@ -39,7 +39,7 @@ AdgKeyTable(DataTable)
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataRowColumnComparer\<DataRow\>](https://learn.microsoft.com/en-us/dotnet/api/) | Comparer | Gets the DataRowColumnComparer used for comparing rows in the key table. |
+| [DataRowColumnComparer\<DataRow\>](/reference/datagate/datagate-client/data-row-column-comparer-1.html) | Comparer | Gets the DataRowColumnComparer used for comparing rows in the key table. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | KeyPartCount | Gets or sets the number of key parts in the key table. |
 
 ## Methods

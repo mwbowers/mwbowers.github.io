@@ -16,3 +16,4 @@ This class cannot be inherited.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TraceConfigPrefix | Represents the prefix for trace configuration keys in the application's configuration. |

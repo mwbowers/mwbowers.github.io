@@ -57,6 +57,8 @@ XmlElementConverter(XmlNode, XmlElement, ISchemaElementName)
 | [XmlElement](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlelement?view=net-8.0) | Element | Gets or sets the XmlElement that is being converted. |
 | [ISchemaElementName](/reference/datagate/datagate-common/i-schema-element-name.html) | ElementName | Gets the name of the current XmlElement. |
 | [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | Parent | Gets the parent XmlNode of the current XmlElement. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | XsdFalse | Represents the string "false" in XSD format. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | XsdTrue | Represents the string "true" in XSD format. |
 
 ## Methods
 

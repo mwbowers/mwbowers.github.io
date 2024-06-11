@@ -19,6 +19,7 @@ XML-compliant Name string.  For example, "$ITEMTEST" is returned as
 | Type | Name | Description
 | --- | --- | --- 
 | [DbXmlNameConverter](/reference/datagate/datagate-client/db-xml-name-converter.html) | Default | Gets the default instance of the  class. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | Urn | Defines the Uniform Resource Name (URN) for the  class. |
 
 ## Methods
 

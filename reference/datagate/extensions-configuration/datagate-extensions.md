@@ -11,6 +11,12 @@ Provides extension methods for the DataGate configuration.
 <br>
 <br>
 
+## Properties
+
+| Type | Name | Description
+| --- | --- | --- 
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SECTION_SOURCES | Represents the section name in the configuration that contains the source profiles. |
+
 ## Methods
 
 | Signature | Description |

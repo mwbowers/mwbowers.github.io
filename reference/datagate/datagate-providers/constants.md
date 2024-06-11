@@ -15,3 +15,5 @@ Contains constant values related to file opening attributes.
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | OmitBlocking | Represents the absence of blocking in file operations. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | OptimalBlockingFactor | Represents the optimal blocking factor for file operations. |

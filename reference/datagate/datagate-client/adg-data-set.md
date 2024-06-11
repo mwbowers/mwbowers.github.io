@@ -54,6 +54,9 @@ AdgDataSet(String)
 | [AdgTable](/reference/datagate/datagate-client/adg-table.html) | Item | Gets the AdgTable instance associated with the specified format index. |
 | [AdgTable](/reference/datagate/datagate-client/adg-table.html) | Item | Gets the AdgTable instance associated with the specified format name. |
 | [AdgTable](/reference/datagate/datagate-client/adg-table.html) | Item | Gets the AdgTable instance associated with the specified format name. |
+| [Dictionary\<Int32, AdgTable\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) | m_adgTables | A dictionary of AdgTable instances used in the dataset. |
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | m_aFormatStrings | An array of format strings used in the dataset. |
+| [DataTable\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | m_aKeyTablesTemplates | An array of DataTable templates used for key tables in the dataset. |
 | [ICollection\<String\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection) | StringKeys | Gets the collection of format names in the AdgDataSet. |
 | [ICollection\<AdgTable\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icollection) | Values | Gets the collection of AdgTable instances in the AdgDataSet. |
 

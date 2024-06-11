@@ -23,6 +23,8 @@ the option for removing blank spaces from the fields, the file and member names 
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | DefaultDelimiter | Represents the default delimiter used for separating fields in the import file. |
+| [Char](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char) | DefaultStringDelimiter | Represents the default delimiter used for encapsulating string fields in the import file. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ErrorFile | Path to a file that contains output for error messages |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ErrorRecordFile | Gets or sets the file name for storing error records during the import operation. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ErrorRecordMember | Gets or sets the member name for storing error records during the import operation. |
@@ -34,5 +36,9 @@ the option for removing blank spaces from the fields, the file and member names 
 | [Delimiter](/reference/datagate/datagate-client/delimiter.html) | RecordDelimiter | Gets or sets the delimiter used for separating records in the import file. |
 | [RemoveBlankOption](/reference/datagate/datagate-client/remove-blank-option.html) | RemoveBlanks | Gets or sets the option for removing blank spaces from the fields in the import file. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | ReplaceNullValues | Gets or sets the option for replacing null values in the import file. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | STAR_END | Represents the ending record number for operations. |
+| [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | STAR_FIRST_INT | Represents the starting record number for operations. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | STAR_FIRST_STR | Represents the starting record identifier for operations. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | STAR_NONE | Represents the absence of a value. |
 | [Delimiter](/reference/datagate/datagate-client/delimiter.html) | StringDelimiter | Gets or sets the delimiter used for encapsulating string fields in the import file. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ToRecord | Gets or sets the ending record number for the import operation. |
