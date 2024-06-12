@@ -47,7 +47,7 @@ Support for:
 2. Multi-member File.
 3. QTEMP.
 4. IBM i OS Execute.
-5. [Printfiles](/concepts/printing/printing-overview).
+5. [Printfiles](/concepts/printing/printing-introduction.html).
 6. DataAreas.
 7. CL File/IO Command support - Directory services, Copy Data, CopyFromImportFile, etc.
 8. Database Security - SSL.

@@ -170,7 +170,7 @@ All fields refereed to by the following TagHelpers, need support from the [Expo 
 
 ## DdsCharField
 
-The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length](/concepts/program-architecture/qsys-fixedtypes)
+The DdsCharField TagHelper is used to add a character field to the *Record*. The field must have been declared in the *Model* as a string with a [fixed length](/concepts/program-structure/qsys-fixedtypes.html)
 
 The attribute `For` is required and its value is the qualified name of the field in the *Model*.
 
@@ -192,7 +192,7 @@ public class CUSTREC_Model : RecordModel
 ```
 
 ## DdsDecField
-The DdsDecField TagHelper is used to add fixed decimal fields to the *Record*. The field must have been declared in the *Model* as a decimal with a [fixed](/concepts/program-architecture/qsys-fixedtypes) length and decimal positions.
+The DdsDecField TagHelper is used to add fixed decimal fields to the *Record*. The field must have been declared in the *Model* as a decimal with a [fixed](/concepts/program-structure/qsys-fixedtypes.html) length and decimal positions.
 
 The attribute `For` is required and its value is the qualified name of the field in the *Model*
 
@@ -217,7 +217,7 @@ public class CUSTREC_Model : RecordModel
 
 ## DdsDateField
 
-The DdsDateField TagHelper is used to add fixed DateTime fields to the *Record*. The field must have been declared in the *Model* as a DateTime with a [fixed](/concepts/program-architecture/qsys-fixedtypes) length according to a DDS-like *Date Format* and *Date Separator*.
+The DdsDateField TagHelper is used to add fixed DateTime fields to the *Record*. The field must have been declared in the *Model* as a DateTime with a [fixed](/concepts/program-structure/qsys-fixedtypes.html) length according to a DDS-like *Date Format* and *Date Separator*.
 
 **Date Formats**
 
@@ -271,7 +271,7 @@ The concept of a *Date* type came to RPG in a rather late stage. Older Legacy Ap
 
 > During Migration, if a DDS defined field is of numeric type and it uses an *Edit Word* keyword that *Looks like a Date* `    -  -  `, `    /  /  `, `  /  /    `, `0 /  /    `, `  .  .    ` the assumption will be that the field represents a date. 
 
-The DdsDecDateField TagHelper is used to add fixed decimal fields *that represent Dates* to the *Record*. The field must have been declared in the *Model* as a decimal with a [fixed](/concepts/program-architecture/qsys-fixedtypes) length according to a DDS-like *Date Format* and *Date Separator*.
+The DdsDecDateField TagHelper is used to add fixed decimal fields *that represent Dates* to the *Record*. The field must have been declared in the *Model* as a decimal with a [fixed](/concepts/program-structure/qsys-fixedtypes.html) length according to a DDS-like *Date Format* and *Date Separator*.
 
 
 Markup example:

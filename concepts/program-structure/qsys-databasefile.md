@@ -184,7 +184,7 @@ The **DatSet** is a collection of all **DataTable**s as defined by the records i
 
 The **DataTable** is a collection of **DataRow**s which are records that have been read from the file. 
 
-Referring to the concept [RPG language-provided Display and Database support](/concepts/program-structure/rpg-language-support), where we touched on the topic `one-record-at-a-time` access, RPG normally deals with one record per Table, known as the *Active* record, or *I/O Buffer*[^2].
+Referring to the concept [RPG language-provided Display and Database support](/concepts/program-structure/rpg-language-files.html), where we touched on the topic `one-record-at-a-time` access, RPG normally deals with one record per Table, known as the *Active* record, or *I/O Buffer*[^2].
 
 The *I/O* Buffer for a file, is the *Active* **DataRow** of the *DataTable*.
 

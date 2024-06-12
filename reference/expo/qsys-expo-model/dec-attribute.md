@@ -13,7 +13,7 @@ Provides Decimal Attributes (for Properties)
 
 ## Remarks
 
-Model Fields are declared as Record Properties. To annotate the [Fixed Type](/concepts/program-structure/qsys-fixed-types) as `Dec`, Model properties can use this attribute.
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) as `Dec`, Model properties can use this attribute.
 
 For example,
 

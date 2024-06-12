@@ -4,7 +4,7 @@ title: Monarch Base Dev Tools
 
 There are processes in Application development where trivial repetitive segments of code are need to be produced or maintained in sync with external resources. For the purposes of the contents of this chapter, we will call these segments `boilerplate` code.
 
-*Boilerplate code* is often [hidden from the view](/concepts/program-structure/rpg-language-support.html) and made part of the syntax in *Special Purpose* programming languages such as RPG.
+*Boilerplate code* is often [hidden from the view](/concepts/program-structure/rpg-language-files.html) and made part of the syntax in *Special Purpose* programming languages such as RPG.
 
 When a migration results in classes written in C#, which is a [General Purpose Programming Language](https://en.wikipedia.org/wiki/General-purpose_programming_language),  these *Boilerplate code* segments become explicit and visible.
 

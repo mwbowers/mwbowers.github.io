@@ -31,7 +31,7 @@ namespace MyCompany.MyApplication
 
 **Printfile Object Instantiation**
 
-The declaration of the printfile as indicated above, has the PrintFile object set to null. As we have described in the topic [QSys DatabaseFile](/concepts/program-structure/qsys-databasefile), the .NET Printfile object is *Instanced* in the [RPG language support](/concepts/program-structure/rpg-language-support) generated method `_instanceInit`, as follows: 
+The declaration of the printfile as indicated above, has the PrintFile object set to null. As we have described in the topic [QSys DatabaseFile](/concepts/program-structure/qsys-databasefile), the .NET Printfile object is *Instanced* in the [RPG language support](/concepts/program-structure/rpg-language-files.html) generated method `_instanceInit`, as follows: 
 
 ```cs
 void _instanceInit()

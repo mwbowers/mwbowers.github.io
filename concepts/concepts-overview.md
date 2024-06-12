@@ -31,7 +31,7 @@ This topic presents *Concepts* that are important in the understanding to effici
 
 [User Interface](/concepts/user-interface/ui-overview)
 
-[Reports](/concepts/printing/printing_overview.html)
+[Reports](/concepts/printing/printing-introduction.html)
 
 [Enhancing Migrated Applications](/concepts/enhancements/enhancements-overview.html)
 

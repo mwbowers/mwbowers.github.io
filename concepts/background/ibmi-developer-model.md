@@ -50,7 +50,7 @@ The collection of *Indicators* is shared with **ALL** *Active* Programs in a cal
 ## Embedded SQL
 Modern `RPG` allows the use of [SQL](https://www.ibm.com/docs/en/i/7.2?topic=p-sql) commands.
 
-In addition to the [RPG Language Database Support](/concepts/program-structure/rpg-language-support), `RPG` extends the operations that may be executed to affect Database operations with a subset of the  [Structured Query Language](https://www.ibm.com/docs/en/i/7.2?topic=p-sql)
+In addition to the [RPG Language Database Support](/concepts/program-structure/rpg-language-files.html), `RPG` extends the operations that may be executed to affect Database operations with a subset of the  [Structured Query Language](https://www.ibm.com/docs/en/i/7.2?topic=p-sql)
 
 ## The Program *Drives* the Displayfile
 
