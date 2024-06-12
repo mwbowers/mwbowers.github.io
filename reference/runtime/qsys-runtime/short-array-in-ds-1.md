@@ -1,5 +1,5 @@
 ---
-title: ShortArrayInDS`1 struct
+title: ShortArrayInDS<T> struct
 ---
 
 Describes a fixed size array of short numbers contained in a DataStructure.

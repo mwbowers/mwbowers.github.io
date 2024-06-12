@@ -1,5 +1,5 @@
 ---
-title: FixedStringArray`2 struct
+title: FixedStringArray<T1, T2> struct
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedString elements.
@@ -34,7 +34,7 @@ FixedStringArray(String[])
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedString`1\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedStringArray. |
+| [FixedString`1\[\]](/reference/runtime/qsys-runtime/fixed-string-1.html) | Array | Gets the array that holds the values of the FixedStringArray. |
 | [FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string-1.html) | Item | Indexer over the array, gets or sets the element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedStringArray. |
 

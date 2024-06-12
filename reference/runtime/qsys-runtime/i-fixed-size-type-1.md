@@ -1,5 +1,5 @@
 ---
-title: IFixedSizeType`1 interface
+title: IFixedSizeType<T> interface
 ---
 
 Declares the basic functionality of a fixed-size generic type.

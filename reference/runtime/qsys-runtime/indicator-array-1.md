@@ -1,5 +1,5 @@
 ---
-title: IndicatorArray`1 struct
+title: IndicatorArray<T> struct
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of Indicator elements.

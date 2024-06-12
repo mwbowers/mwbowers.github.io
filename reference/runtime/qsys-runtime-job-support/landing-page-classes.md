@@ -20,6 +20,7 @@ This namespace is crucial for developers working with ASNA, as it provides the n
 | [ActivationGroupProgramConstructorException](/reference/runtime/qsys-runtime-job-support/activation-group-program-constructor-exception.html) | The exception that is thrown when a program could not be constructed. |
 | [ActivationManager](/reference/runtime/qsys-runtime-job-support/activation-manager.html) | Provides the facilities to manage the instances of programs and service programs. |
 | [AssemblyListProfilesSetting](/reference/runtime/qsys-runtime-job-support/assembly-list-profiles-setting.html) | Gets or sets a dictionary of named assembly lists.  |
+| [BatchEntry](/reference/runtime/qsys-runtime-job-support/batch-entry.html) | Represents a single entry in a batch processing system. This class providesthe necessary properties and methods to manage the entry's data and state. |
 | [BatchJob](/reference/runtime/qsys-runtime-job-support/batch-job.html) | Defines the core behavior of a batch job. |
 | [BatchJobProfile](/reference/runtime/qsys-runtime-job-support/batch-job-profile.html) | Provides the facilities to configure and launch a batch job. |
 | [BatchOptions](/reference/runtime/qsys-runtime-job-support/batch-options.html) | Defines the options for a batch job. |
@@ -29,6 +30,7 @@ This namespace is crucial for developers working with ASNA, as it provides the n
 | [CLProgram](/reference/runtime/qsys-runtime-job-support/cl-program.html) | Defines the core behavior of programs migrated from CL program . |
 | [CodePage](/reference/runtime/qsys-runtime-job-support/code-page.html) | Provides facilities to probe an IBM i file's code page. |
 | [CommonProgram](/reference/runtime/qsys-runtime-job-support/common-program.html) | Defines the core behavior of programs and service programs. |
+| [DatabaseProfile](/reference/runtime/qsys-runtime-job-support/database-profile.html) | Represents the configuration settings for a database connection within a batch entry.This class encapsulates all necessary details required to establish a connectionto the database, including server information, authentication credentials, andother connection-specific settings. |
 | [DBCharParm](/reference/runtime/qsys-runtime-job-support/db-char-parm.html) | Represents a parameter for a Character type. |
 | [DBDateTimeParm](/reference/runtime/qsys-runtime-job-support/db-date-time-parm.html) | Represents a parameter for a date-time type. |
 | [DBDecimalParm](/reference/runtime/qsys-runtime-job-support/db-decimal-parm.html) | Represents a parameter for a decimal type. |

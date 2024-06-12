@@ -1,5 +1,5 @@
 ---
-title: FixedStringArrayInDS`2 struct
+title: FixedStringArrayInDS<T1, T2> struct
 ---
 
 Describes a fixed size array of FixedString contained in a DataStructure.

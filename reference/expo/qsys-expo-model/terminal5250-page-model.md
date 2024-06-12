@@ -41,7 +41,7 @@ Terminal5250_PageModel()
 | [DumpModelPropertiesToDataSet()](#void-dumpmodelpropertiestodataset) | Dumps model's properties to the DataSet
 | [LoadModelPropertiesFromDataSet](#void-loadmodelpropertiesfromdatasetbool-onlynonpostedfields)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Loads model's properties from the DataSet
 | [MyAjaxActionResult()](#jsonresult-myajaxactionresult) | Gets the AJAX JSON result
-| [MyAjaxActionResult](#jsonresult-myajaxactionresultredirectedexception-redirect)([RedirectedException](https://learn.microsoft.com/en-us/dotnet/api/)) | Gets the AJAX JSON result with redirect URL
+| [MyAjaxActionResult](#jsonresult-myajaxactionresultredirectedexception-redirect)([RedirectedException](/reference/expo/qsys-expo-model/redirected-exception.html)) | Gets the AJAX JSON result with redirect URL
 | [SetResponseIndicators()](#void-setresponseindicators) | Implements the required ovveride by doing nothing: There are no Response Indicators for 5250.
 
 ### void ClearModelProperties()
@@ -82,7 +82,7 @@ Gets the AJAX JSON result
 JsonResult MyAjaxActionResult()
 ```
 
-### JsonResult MyAjaxActionResult([RedirectedException redirect](https://learn.microsoft.com/en-us/dotnet/api/))
+### JsonResult MyAjaxActionResult([RedirectedException redirect](/reference/expo/qsys-expo-model/redirected-exception.html))
 
 Gets the AJAX JSON result with redirect URL
 
@@ -94,13 +94,13 @@ JsonResult MyAjaxActionResult(RedirectedException redirect)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [RedirectedException](https://learn.microsoft.com/en-us/dotnet/api/) | redirect | redirected exception instance
+| [RedirectedException](/reference/expo/qsys-expo-model/redirected-exception.html) | redirect | redirected exception instance
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [JsonResult](https://learn.microsoft.com/en-us/dotnet/api/) | JsonResult serialized respose
+| [JsonResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.jsonresult?view=aspnetcore-8.0) | JsonResult serialized respose
 
 ### void SetResponseIndicators()
 

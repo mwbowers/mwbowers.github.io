@@ -1,5 +1,5 @@
 ---
-title: FixedTimestampArrayInDS`2 struct
+title: FixedTimestampArrayInDS<T1, T2> struct
 ---
 
 Describes a fixed size array of FixedTimestamp contained in a DataStructure.

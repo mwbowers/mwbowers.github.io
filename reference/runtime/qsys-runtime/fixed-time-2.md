@@ -1,5 +1,5 @@
 ---
-title: FixedTime`2 struct
+title: FixedTime<T1, T2> struct
 ---
 
 Holds a fixed-time value in the specified format and with the given separator.

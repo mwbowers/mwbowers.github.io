@@ -1,5 +1,5 @@
 ---
-title: CharArray`1 struct
+title: CharArray<T> struct
 ---
 
 Represents a unidimensional fixed-size array of characters.

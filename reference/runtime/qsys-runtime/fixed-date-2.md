@@ -1,5 +1,5 @@
 ---
-title: FixedDate`2 struct
+title: FixedDate<T1, T2> struct
 ---
 
 Holds a fixed-date value in the specified format and with the given separator.

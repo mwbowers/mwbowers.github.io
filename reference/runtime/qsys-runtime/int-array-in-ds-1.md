@@ -1,5 +1,5 @@
 ---
-title: IntArrayInDS`1 struct
+title: IntArrayInDS<T> struct
 ---
 
 Describes a fixed size array of integers contained in a DataStructure.

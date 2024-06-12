@@ -1,5 +1,5 @@
 ---
-title: IFixedArray`2 interface
+title: IFixedArray<T1, T2> interface
 ---
 
 Describes the minimum functionality of a free-standing fixed sized array.

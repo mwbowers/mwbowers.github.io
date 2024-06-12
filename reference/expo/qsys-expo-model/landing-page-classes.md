@@ -51,6 +51,7 @@ Developers working with the ASNA QSys system should familiarize themselves with 
 | [FieldAttribute](/reference/expo/qsys-expo-model/field-attribute.html) | Provides Displayfile field attributes |
 | [From5250Screen_Model](/reference/expo/qsys-expo-model/from5250-screen-model.html) | Defines  the From5250Screen_Model class |
 | [HostResourceHandler](/reference/expo/qsys-expo-model/host-resource-handler.html) | Facilities to deal with resources available in the Host server. |
+| [IconShapeRequest](/reference/expo/qsys-expo-model/icon-shape-request.html) | Represents a request for icon shapes, specifying the elements and the icon identifier. |
 | [JobSession](/reference/expo/qsys-expo-model/job-session.html) | Stores user data while the user navigates the application. JobSession state uses a store maintained by the Job to persist data across requests. |
 | [LittleEndTextBuff](/reference/expo/qsys-expo-model/little-end-text-buff.html) | This is the Buffer for Little-endian UTF16 files. |
 | [MonaServerConfig](/reference/expo/qsys-expo-model/mona-server-config.html) | Provides Mona-Server Configuration functionality. |
@@ -58,6 +59,7 @@ Developers working with the ASNA QSys system should familiarize themselves with 
 | [RecordAttribute](/reference/expo/qsys-expo-model/record-attribute.html) | Defines  the Record Attribute on a type |
 | [RecordFormatLevelAttribute](/reference/expo/qsys-expo-model/record-format-level-attribute.html) | Defines the Record level value for a record in the class. |
 | [RecordModel](/reference/expo/qsys-expo-model/record-model.html) | Defines the RecordModel class |
+| [RedirectedException](/reference/expo/qsys-expo-model/redirected-exception.html) | Represents an exception used to indicate a redirection action within the application. |
 | [RowColException](/reference/expo/qsys-expo-model/row-col-exception.html) | Provides an Exception derived class with the detailed invalid row, col string format (typically from VirtualRowCol field property) |
 | [ScanBuff](/reference/expo/qsys-expo-model/scan-buff.html) | Summary Canonical example of GPLEX automaton |
 | [SessionStorage](/reference/expo/qsys-expo-model/session-storage.html) | Defines the SessionStorage class |

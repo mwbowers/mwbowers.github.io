@@ -1,5 +1,5 @@
 ---
-title: CharArrayInDS`1 struct
+title: CharArrayInDS<T> struct
 ---
 
 Describes a fixed size array of characters contained in a DataStructure.

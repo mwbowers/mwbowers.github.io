@@ -1,5 +1,5 @@
 ---
-title: FixedDecimalArray`3 struct
+title: FixedDecimalArray<T1, T2, T3> struct
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedDecimal elements.
@@ -34,7 +34,7 @@ FixedDecimalArray(Decimal[])
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedDecimal`2\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedDecimalArray. |
+| [FixedDecimal`2\[\]](/reference/runtime/qsys-runtime/fixed-decimal-2.html) | Array | Gets the array that holds the values of the FixedDecimalArray. |
 | [FixedDecimal\<TDigits, TDecimals\>](/reference/runtime/qsys-runtime/fixed-decimal-2.html) | Item | Indexer over the array, gets or sets the element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedDecimalArray. |
 

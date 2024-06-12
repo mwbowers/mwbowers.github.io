@@ -1,5 +1,5 @@
 ---
-title: FixedTimestampArray`2 struct
+title: FixedTimestampArray<T1, T2> struct
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedTimestamp elements.
@@ -34,7 +34,7 @@ FixedTimestampArray(DateTime[])
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedTimestamp`1\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedTimestampArray. |
+| [FixedTimestamp`1\[\]](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | Array | Gets the array that holds the values of the FixedTimestampArray. |
 | [FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | Item | Indexer over the array, gets or sets the element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedTimestampArray. |
 

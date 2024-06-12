@@ -471,6 +471,8 @@ Reference:
         path: /reference/datagate/datagate-client/op-message-args.html
       - title: DatabaseLabel
         path: /reference/datagate/datagate-client/database-label.html
+      - title: DataRowColumnComparer&lt;T&gt;
+        path: /reference/datagate/datagate-client/data-row-column-comparer-1.html
       - title: Dependent
         path: /reference/datagate/datagate-client/dependent.html
       - title: FileAdapter
@@ -1483,6 +1485,10 @@ Reference:
         path: /reference/runtime/qsys-runtime-job-support/activation-group-program-constructor-exception.html
       - title: ActivationManager
         path: /reference/runtime/qsys-runtime-job-support/activation-manager.html
+      - title: BatchEntry
+        path: /reference/runtime/qsys-runtime-job-support/batch-entry.html
+      - title: DatabaseProfile
+        path: /reference/runtime/qsys-runtime-job-support/database-profile.html
       - title: BatchJob
         path: /reference/runtime/qsys-runtime-job-support/batch-job.html
       - title: BatchJobProfile
@@ -1966,6 +1972,8 @@ Reference:
         path: /reference/expo/qsys-expo-model/field-attribute.html
       - title: HostResourceHandler
         path: /reference/expo/qsys-expo-model/host-resource-handler.html
+      - title: IconShapeRequest
+        path: /reference/expo/qsys-expo-model/icon-shape-request.html
       - title: JobSession
         path: /reference/expo/qsys-expo-model/job-session.html
       - title: MonaServerConfig
@@ -1978,6 +1986,8 @@ Reference:
         path: /reference/expo/qsys-expo-model/record-format-level-attribute.html
       - title: RecordModel
         path: /reference/expo/qsys-expo-model/record-model.html
+      - title: RedirectedException
+        path: /reference/expo/qsys-expo-model/redirected-exception.html
       - title: ScanBuff
         path: /reference/expo/qsys-expo-model/scan-buff.html
       - title: BigEndTextBuff

@@ -1,5 +1,5 @@
 ---
-title: FixedDateArrayInDS`3 struct
+title: FixedDateArrayInDS<T1, T2, T3> struct
 ---
 
 Describes a fixed size array of FixedDate contained in a DataStructure.

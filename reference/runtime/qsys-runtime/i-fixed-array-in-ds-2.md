@@ -1,5 +1,5 @@
 ---
-title: IFixedArrayInDS`2 interface
+title: IFixedArrayInDS<T1, T2> interface
 ---
 
 Describes minimum operations for a fixed size array contained in a DataStructure.

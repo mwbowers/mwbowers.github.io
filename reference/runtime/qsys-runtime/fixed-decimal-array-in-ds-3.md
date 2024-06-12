@@ -1,5 +1,5 @@
 ---
-title: FixedDecimalArrayInDS`3 struct
+title: FixedDecimalArrayInDS<T1, T2, T3> struct
 ---
 
 Describes a fixed size array of FixedDecimal contained in a DataStructure.

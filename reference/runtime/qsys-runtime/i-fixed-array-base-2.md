@@ -1,5 +1,5 @@
 ---
-title: IFixedArrayBase`2 interface
+title: IFixedArrayBase<T1, T2> interface
 ---
 
 Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional.

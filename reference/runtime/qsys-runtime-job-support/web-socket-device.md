@@ -35,7 +35,7 @@ WebSocketDevice(InteractiveJob)
 
 | Signature | Description |
 | --- | --- |
-| [close()](#void-close) | Closes the device and the associated socket.
+| [close()](#void-close) | Closes the device and the assoiated socket.
 | [open()](#void-open) | Opens the device.
 | [read()](#void-read) | Waits for the user to enter new data on the web site.
 | [RiseAbnormalEnd](#void-riseabnormalendstring-abendmessage-string-abendstack)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Marks the device as being in a job that is ending abnormally.

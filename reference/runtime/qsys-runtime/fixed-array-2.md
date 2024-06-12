@@ -1,5 +1,5 @@
 ---
-title: FixedArray`2 struct
+title: FixedArray<T1, T2> struct
 ---
 
 Defines the functionality of a fixed-sized unidimensional array.

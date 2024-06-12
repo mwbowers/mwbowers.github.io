@@ -1,5 +1,5 @@
 ---
-title: FixedDecimal`2 struct
+title: FixedDecimal<T1, T2> struct
 ---
 
 Holds a fixed-decimal value with the specified number of digits and decimal positions.

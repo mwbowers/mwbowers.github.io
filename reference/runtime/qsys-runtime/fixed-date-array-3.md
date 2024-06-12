@@ -1,5 +1,5 @@
 ---
-title: FixedDateArray`3 struct
+title: FixedDateArray<T1, T2, T3> struct
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedDate elements.
@@ -34,7 +34,7 @@ FixedDateArray(DateTime[])
 
 | Type | Name | Description
 | --- | --- | --- 
-| [FixedDate`2\[\]](https://learn.microsoft.com/en-us/dotnet/api/) | Array | Gets the array that holds the values of the FixedDateArray. |
+| [FixedDate`2\[\]](/reference/runtime/qsys-runtime/fixed-date-2.html) | Array | Gets the array that holds the values of the FixedDateArray. |
 | [FixedDate\<TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-date-2.html) | Item | Indexer over the array, gets or sets the element at that position. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Length | Gets the number of elements in the FixedDateArray. |
 

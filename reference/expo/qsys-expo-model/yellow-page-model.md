@@ -47,7 +47,7 @@ The `YellowPageModel` is the class that provides the *Yellow* component services
 | [LoadFeedbackValues()](#bool-loadfeedbackvalues) | Derived class implements method to load the Displayfile Feedback Area values.
 | [LoadModelPropertiesFromDataSet](#void-loadmodelpropertiesfromdatasetbool-onlynonpostedfields)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Derived class implements method to load properties from the DataSet, and which properties
 | [MyAjaxActionResult()](#jsonresult-myajaxactionresult) | Gets the JsonResult with a un-successful response code
-| [MyAjaxActionResult](#jsonresult-myajaxactionresultredirectedexception-redirect)([RedirectedException](https://learn.microsoft.com/en-us/dotnet/api/)) | Gets the JsonResult with a un-successful response code (redirect parameter ignored)
+| [MyAjaxActionResult](#jsonresult-myajaxactionresultredirectedexception-redirect)([RedirectedException](/reference/expo/qsys-expo-model/redirected-exception.html)) | Gets the JsonResult with a un-successful response code (redirect parameter ignored)
 | [OnCopyBrowserToDspFile()](#void-oncopybrowsertodspfile) | Callback method right before the data submitted from the Client (browser) is copied to the workstation data on the Web Server.
 | [OnCopyDspFileToBrowser()](#void-oncopydspfiletobrowser) | Callback method right before the workstation data is sent from the Web Server to the Client (browser)
 | [OnGet()](#iactionresult-onget) | Gets the User's Page's request response
@@ -187,7 +187,7 @@ Gets the JsonResult with a un-successful response code
 JsonResult MyAjaxActionResult()
 ```
 
-### JsonResult MyAjaxActionResult([RedirectedException redirect](https://learn.microsoft.com/en-us/dotnet/api/))
+### JsonResult MyAjaxActionResult([RedirectedException redirect](/reference/expo/qsys-expo-model/redirected-exception.html))
 
 Gets the JsonResult with a un-successful response code (redirect parameter ignored)
 
@@ -199,13 +199,13 @@ JsonResult MyAjaxActionResult(RedirectedException redirect)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [RedirectedException](https://learn.microsoft.com/en-us/dotnet/api/) | redirect | Redirected Exception
+| [RedirectedException](/reference/expo/qsys-expo-model/redirected-exception.html) | redirect | Redirected Exception
 
 #### Returns
 
 | Type | Description
 | --- | ---
-| [JsonResult](https://learn.microsoft.com/en-us/dotnet/api/) | the JsonResult
+| [JsonResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.jsonresult?view=aspnetcore-8.0) | the JsonResult
 
 ### void OnCopyBrowserToDspFile()
 

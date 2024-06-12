@@ -1,5 +1,5 @@
 ---
-title: FixedString`1 struct
+title: FixedString<T> struct
 ---
 
 Holds a fixed-string value with the specified length.

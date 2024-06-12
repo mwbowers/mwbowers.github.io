@@ -69,7 +69,7 @@ namespace MyCompany.MyApplication.MyAreaViews
 
 > Note how *Records* and *Fields* become properties of the *File* (Display Page), or of the Records in the *File*. Record properties are *public*, field accessibility varies (described later in the topic).
 
-And the Markup file will follow the description indicated by the [Expo DDS-like TagHelpers](concepts/user-interface/qsys-expo-dds-elements.html), with something like:
+And the Markup file will follow the description indicated by the [Expo DDS-like TagHelpers](/concepts/user-interface/qsys-expo-dds-elements.html), with something like:
 
 ```html
 @page
@@ -107,7 +107,7 @@ Combinations of *public* and *private* at the property level, or at the [getter]
 ## DDS-like meta information (keywords)
 QSys DisplayPageModel C# class uses [C# Custom Attributes](https://docs.microsoft.com/en-us/dotnet/standard/attributes/writing-custom-attributes) to *Decorate* Records and Fields to provide the *DDS-like* keyword information.
 
-For example, the [QSys Fixed Type](concepts/program-structure/qsys-fixedtypes) *meta* information is described for **all** fields in the *Record* that will be part of the **Dataset** (see [QSys WorkstationFile](concepts/program-structure/qsys-workstationfile.md)).
+For example, the [QSys Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) *meta* information is described for **all** fields in the *Record* that will be part of the **Dataset** (see [QSys WorkstationFile](concepts/program-structure/qsys-workstationfile.md)).
 
 Let's take a closer look to the declaration for field `MyDecSixCommaZeroField`:
 
@@ -116,9 +116,9 @@ Let's take a closer look to the declaration for field `MyDecSixCommaZeroField`:
 public decimal MyDecSixCommaZeroField { get; private set; }
 ```
 
-Field `MyDecSixCommaZeroField` is not just a C# `decimal` field, rather it is a [ASNA.QSys.FixedDecimal](/reference/runtime/fixed-types/fixed=decimal), with a length of **six** and **zero** decimals.
+Field `MyDecSixCommaZeroField` is not just a C# `decimal` field, rather it is a [ASNA.QSys.FixedDecimal](/reference/runtime/qsys-runtime/fixed-decimal-2.html), with a length of **six** and **zero** decimals.
 
-When field `MyDecSixCommaZeroField` is [serialized](https://en.wikipedia.org/wiki/Serialization) to the *DataSet* to communicate to the Logic Program about changes in the [WorkstationFile](program-structure/qsys-workstationfile), the [metadata](https://en.wikipedia.org/wiki/Metadata) about field `MyDecSixCommaZeroField` being a fixed type of a particular length and precision, is included in the *DataSet*.
+When field `MyDecSixCommaZeroField` is [serialized](https://en.wikipedia.org/wiki/Serialization) to the *DataSet* to communicate to the Logic Program about changes in the [WorkstationFile](/concepts/program-structure/qsys-workstationfile.html), the [metadata](https://en.wikipedia.org/wiki/Metadata) about field `MyDecSixCommaZeroField` being a fixed type of a particular length and precision, is included in the *DataSet*.
 
 Notice now the use of `public` and `private` C# specifications of the property. The field is *public* to the Model consumer (i.e. the Razor Page), but the value is **not** *settable*, only *gettable*, a C# way of saying *Output-Only* usage.
 
@@ -131,7 +131,7 @@ Not only *fields* are *decorated* with [C# Custom Attributes](https://docs.micro
 
 ## Order of fields declared in Record
 
-All the fields declarations in the Record (model) that are *decorated* with QSys C# Custom attributes will be collected when the [WorkstationFile](program-structure/qsys-workstationfile), the [metadata](https://en.wikipedia.org/wiki/Metadata) is *Read* or *Written* to. 
+All the fields declarations in the Record (model) that are *decorated* with QSys C# Custom attributes will be collected when the [WorkstationFile](/concepts/program-structure/qsys-workstationfile.html), the [metadata](https://en.wikipedia.org/wiki/Metadata) is *Read* or *Written* to. 
 
 The *Order* in which the fields are declared is **important**. The same order is used to [serialize](https://en.wikipedia.org/wiki/Serialization) them to/from the DataSet.
 
