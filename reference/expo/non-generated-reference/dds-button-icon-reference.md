@@ -7,7 +7,7 @@ title: DdsButton Icon Reference
 
 The *Icon Shapes* are simple and clean, monochrome (color can be changed to any solid color), scaled without loss and respect the background (use *transparent* background).
 
-*ASNA Monarch&reg;* Icon library contains 250 named shapes, which should be sufficient for most of the [DdsButtons](dds-button-tag-helper.html) TagHelpers you application may need.
+*ASNA Monarch&reg;* Icon library contains 250 named shapes, which should be sufficient for most of the [DdsButtons](/reference/expo/qsys-expo-tags/dds-button-tag-helper.html) TagHelpers you application may need.
 
 | Name ID | Icon Shape 
 | --- | --- 

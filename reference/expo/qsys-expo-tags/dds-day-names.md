@@ -11,7 +11,7 @@ Specifies the names of the calendar days.
 
 ## Remarks
 
-Used as valid values for property `FirstDayOfWeek` for [DdsDateField Tag Helper](/reference/model/qsys-expo-tags/dds-date-field-tag-helper.html)
+Used as valid values for property `FirstDayOfWeek` for [DdsDateField](/reference/expo/qsys-expo-tags/dds-date-field-tag-helper.html) Tag Helper.
 
 These are just a symbolic names. The Calendar labels are taken from Website Localized resources.
 
