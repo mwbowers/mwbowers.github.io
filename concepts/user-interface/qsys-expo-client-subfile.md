@@ -2,7 +2,7 @@
 title: Expo Client Subfile
 ---
 
-DdsSubfileControl record is a bit more complex than a regular DdsRecord as explained in topic [Expo Client Library](/concepts/user-interface//qsys-expo-client-library).
+DdsSubfileControl record is a bit more complex than a regular DdsRecord as explained in topic [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html).
 
 Let's review the page [Customer Inquiry](https://github.com/ASNA/SunFarm/blob/master/CustomerAppSite/Areas/CustomerAppViews/Pages/CUSTDSPF.cshtml) and focus our attention on the Subfile Control Record named `"SFLC"`, as follows:
 

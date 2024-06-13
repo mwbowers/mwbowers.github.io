@@ -330,7 +330,7 @@ Let's peek at the definition for the style `dds-grid-row`, on file:
 
 <br>
 
-> For better understanding, review [Library Advanced CSS](/concepts/user-interface//qsys-expo-client-advanced-css/) 
+> For better understanding, review [Library Advanced CSS](/concepts/user-interface/qsys-expo-client-advanced-css.html) 
 
 
 Now look again at the image we used previously (repeated here for clarity):
