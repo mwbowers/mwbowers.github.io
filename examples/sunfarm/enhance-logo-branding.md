@@ -11,7 +11,7 @@ You can get the [GitHub Source Files](https://github.com/asnaqsys-examples/sunfa
 
 The simplest Branding consists on presenting an image in the Page heading on **All** pages.
 
-As we [described in previous topic](examples/sunfarm/sunfarm.md) we are assuming the name of the Modernized App is "sunfarm".
+As we [described in previous topic](/examples/sunfarm/enhance-remove-reverse-image.html) we are assuming the name of the Modernized App is "sunfarm".
 
 Let's proceed to add a Logo to the App in a shared place where it can be used by **All** Pages.
 

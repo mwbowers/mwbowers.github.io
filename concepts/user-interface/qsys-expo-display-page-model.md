@@ -107,7 +107,7 @@ Combinations of *public* and *private* at the property level, or at the [getter]
 ## DDS-like meta information (keywords)
 QSys DisplayPageModel C# class uses [C# Custom Attributes](https://docs.microsoft.com/en-us/dotnet/standard/attributes/writing-custom-attributes) to *Decorate* Records and Fields to provide the *DDS-like* keyword information.
 
-For example, the [QSys Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) *meta* information is described for **all** fields in the *Record* that will be part of the **Dataset** (see [QSys WorkstationFile](concepts/program-structure/qsys-workstationfile.md)).
+For example, the [QSys Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) *meta* information is described for **all** fields in the *Record* that will be part of the **Dataset** (see [QSys WorkstationFile](/concepts/program-structure/qsys-workstationfile.html)).
 
 Let's take a closer look to the declaration for field `MyDecSixCommaZeroField`:
 

@@ -2,7 +2,7 @@
 title: QSys Expo Display Pages
 ---
 
-An `QSys Expo Display Page` is a [ASP.NET RazorPage](https://en.wikipedia.org/wiki/ASP.NET_Razor) that uses ASNA.Expo *TagHelpers* to Render a [Workstation file](/concepts/user-interface/qsys-workstationfile) using a flexible Grid Layout suitable to present *with fidelity* an [IBM i Displayfile](https://www.ibm.com/docs/en/i/7.2?topic=files-defining-display-file-dds). 
+An `QSys Expo Display Page` is a [ASP.NET RazorPage](https://en.wikipedia.org/wiki/ASP.NET_Razor) that uses ASNA.Expo *TagHelpers* to Render a [Workstation file](/concepts/program-structure/qsys-workstationfile.html) using a flexible Grid Layout suitable to present *with fidelity* an [IBM i Displayfile](https://www.ibm.com/docs/en/i/7.2?topic=files-defining-display-file-dds). 
 
 
 ## ASNA.QSys.Expo Assembly
@@ -50,7 +50,7 @@ Being able to describe the *data* definition outside of the *markup* definition,
 
 The ASNA.QSys DataSet is not a special class defined in any of the ASNA.QSys assemblies. It is more a *Design Concept*.
 
-As explained in the [topic ASNA.QSys WorkstationFile ](/concepts/user-interface/qsys-workstationfile), the ASNA.QSys DataSet is the component in the Application architecture that is shared between the "Presentation Layer" and the "Business Logic".
+As explained in the [topic ASNA.QSys WorkstationFile ](/concepts/program-structure/qsys-workstationfile.html), the ASNA.QSys DataSet is the component in the Application architecture that is shared between the "Presentation Layer" and the "Business Logic".
 
 ASNA.QSys uses the [.NET Dataset class](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) with the following considerations:
 

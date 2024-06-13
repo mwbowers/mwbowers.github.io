@@ -110,4 +110,4 @@ Just like a *File Object*, the Display `subfile` can be *written to*, *read from
 
 `Subfile` configuration and usage is **very** flexible, so much that a *special* Displayfile element had to be created to control them, the [Subfile Control Record](https://www.ibm.com/docs/en/i/7.1?topic=80-sflctl-subfile-control-keyword-display-files)
 
->Familiarity to these concepts is essential to understand  [ASNA Display Page's](/concepts/user-interface/asp-net-websites) markup.
+>Familiarity to these concepts is essential to understand  [ASNA Display Page's](/concepts/user-interface/qsys-expo-display-pages.html) markup.

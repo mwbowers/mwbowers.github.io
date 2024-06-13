@@ -18,7 +18,7 @@ For this example, the following are the items we consider redundant:
 |  System Date | Windows displays it already. |
 |  System Time | Windows displays it already. |
 |  Command key option labels | The subfile Selection column already lists the options. |
-|  Function key labels | The [Function key panel](/enhance-function-keys-location.html) already displays this information. |
+|  Function key labels | The [Function key panel](/reference/expo/qsys-expo-tags/dds-function-keys-tag-helper.html) already displays this information. |
 
 
 Notes: 
