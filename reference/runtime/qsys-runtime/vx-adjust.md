@@ -1,5 +1,7 @@
 ---
 title: vxAdjust enum
+description: Half adjust options.
+
 ---
 
 Half adjust options.

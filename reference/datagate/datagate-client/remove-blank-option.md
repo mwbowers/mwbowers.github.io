@@ -1,5 +1,7 @@
 ---
 title: RemoveBlankOption enum
+description: Specifies the options for removing blank spaces from a string.
+
 ---
 
 Specifies the options for removing blank spaces from a string.

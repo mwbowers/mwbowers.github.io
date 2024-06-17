@@ -1,5 +1,7 @@
 ---
 title: DecAttribute class
+description: Provides Decimal Attributes (for Properties)
+
 ---
 
 Provides Decimal Attributes (for Properties)

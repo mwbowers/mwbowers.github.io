@@ -1,5 +1,7 @@
 ---
 title: FixedTimeMethods class
+description: Contains extension methods for handling RPG operations for FixedTime values.
+
 ---
 
 Contains extension methods for handling RPG operations for FixedTime values.

@@ -1,5 +1,7 @@
 ---
 title: AuthorityTypes enum
+description: Specifies the authority types for a resource.
+
 ---
 
 Specifies the authority types for a resource.

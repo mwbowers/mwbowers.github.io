@@ -1,5 +1,7 @@
 ---
 title: Module class
+description: Defines the core behavior of classes that were migrated from RPG or CL programs and modules.
+
 ---
 
 Defines the core behavior of classes that were migrated from RPG or CL programs and modules.

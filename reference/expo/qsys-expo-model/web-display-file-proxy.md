@@ -1,5 +1,7 @@
 ---
 title: WebDisplayFileProxy class
+description: Defines a Proxy implementation for the WebDisplayFile
+
 ---
 
 Defines a Proxy implementation for the WebDisplayFile

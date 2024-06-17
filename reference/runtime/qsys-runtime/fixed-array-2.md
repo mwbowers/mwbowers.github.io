@@ -1,5 +1,7 @@
 ---
 title: FixedArray<T1, T2> struct
+description: Defines the functionality of a fixed-sized unidimensional array.
+
 ---
 
 Defines the functionality of a fixed-sized unidimensional array.

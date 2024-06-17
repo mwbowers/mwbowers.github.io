@@ -1,5 +1,7 @@
 ---
 title: FieldNotFoundException class
+description: -Field name- was not found in format -record format name- of -filename-.
+
 ---
 
 -Field name- was not found in format -record format name- of -filename-.

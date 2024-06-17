@@ -1,5 +1,7 @@
 ---
 title: OpenOptions enum
+description: Defines options for opening a connection.
+
 ---
 
 Defines options for opening a connection.

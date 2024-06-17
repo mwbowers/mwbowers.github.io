@@ -1,5 +1,7 @@
 ---
 title: EditedValueProviderFactory class
+description: Provides an Edited Value Provider factory
+
 ---
 
 Provides an Edited Value Provider factory

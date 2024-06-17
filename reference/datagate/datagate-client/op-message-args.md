@@ -1,5 +1,8 @@
 ---
 title: OpMessageArgs class
+description: Represents the arguments for an operation message event.
+This class is derived from EventArgs and is used to pass a message string with an event.
+
 ---
 
 Represents the arguments for an operation message event.

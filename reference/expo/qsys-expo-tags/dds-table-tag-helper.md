@@ -1,5 +1,7 @@
 ---
 title: DdsTableTagHelper class
+description: Defines a Subfile Table
+
 ---
 
 Defines a Subfile Table

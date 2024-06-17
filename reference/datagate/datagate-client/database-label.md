@@ -1,5 +1,7 @@
 ---
 title: DatabaseLabel class
+description: The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment.
+
 ---
 
 The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment.

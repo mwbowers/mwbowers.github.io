@@ -1,5 +1,7 @@
 ---
 title: SubfileControlModel class
+description: Defines the SubfileControlModel class
+
 ---
 
 Defines the SubfileControlModel class

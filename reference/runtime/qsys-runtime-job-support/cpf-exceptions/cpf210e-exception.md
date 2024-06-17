@@ -1,5 +1,7 @@
 ---
 title: CPF210EException class
+description: The exception that is thrown when Library {0} not available for reason code {1}
+
 ---
 
 The exception that is thrown when Library {0} not available for reason code {1}

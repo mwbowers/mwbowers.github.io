@@ -1,5 +1,7 @@
 ---
 title: CPF1095Exception class
+description: The exception that is thrown when CL variable length not valid for parameter {0}
+
 ---
 
 The exception that is thrown when CL variable length not valid for parameter {0}

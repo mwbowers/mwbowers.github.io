@@ -1,5 +1,7 @@
 ---
 title: PrintFileOpenAttr class
+description: Represents the attributes for opening a print file.
+
 ---
 
 Represents the attributes for opening a print file.

@@ -1,5 +1,7 @@
 ---
 title: WorkstationDataSet class
+description: Represents the dataset of a workstation file.
+
 ---
 
 Represents the dataset of a workstation file.

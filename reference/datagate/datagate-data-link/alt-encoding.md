@@ -1,5 +1,7 @@
 ---
 title: AltEncoding class
+description: Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data.
+
 ---
 
 Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data.

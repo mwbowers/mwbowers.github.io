@@ -1,5 +1,7 @@
 ---
 title: CPF2207Exception class
+description: The exception that is thrown when Not authorized to use object {0} type {1}
+
 ---
 
 The exception that is thrown when Not authorized to use object {0} type {1}

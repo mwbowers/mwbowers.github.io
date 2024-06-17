@@ -1,5 +1,7 @@
 ---
 title: MessageBase class
+description: Defines a message 
+
 ---
 
 Defines a message 

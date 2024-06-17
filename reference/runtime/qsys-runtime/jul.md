@@ -1,5 +1,7 @@
 ---
 title: _JUL interface
+description: Describes the JUL date/time format in the declaration of date/time types.
+
 ---
 
 Describes the JUL date/time format in the declaration of date/time types.

@@ -1,5 +1,7 @@
 ---
 title: IPhysicalMember interface
+description: Defines the contract for managing a physical member in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing a physical member in the ASNA DataGate client.

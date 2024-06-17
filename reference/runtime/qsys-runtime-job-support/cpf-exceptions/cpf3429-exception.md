@@ -1,5 +1,7 @@
 ---
 title: CPF3429Exception class
+description: The exception that is thrown when File {0} number {1} cannot be displayed, copied or sent.
+
 ---
 
 The exception that is thrown when File {0} number {1} cannot be displayed, copied or sent.

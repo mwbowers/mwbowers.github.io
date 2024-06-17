@@ -1,5 +1,7 @@
 ---
 title: CPF2877Exception class
+description: The exception that is thrown when *LIBL not allowed on TOFILE parameter with CRTFILE(*YES).
+
 ---
 
 The exception that is thrown when *LIBL not allowed on TOFILE parameter with CRTFILE(*YES).

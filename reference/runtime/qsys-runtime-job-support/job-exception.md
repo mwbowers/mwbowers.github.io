@@ -1,5 +1,7 @@
 ---
 title: JobException class
+description: Defines the core behavior of the the base class that is thrown when there is a job exception.
+
 ---
 
 Defines the core behavior of the the base class that is thrown when there is a job exception.

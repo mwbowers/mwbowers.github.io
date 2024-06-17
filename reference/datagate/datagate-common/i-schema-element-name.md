@@ -1,5 +1,7 @@
 ---
 title: ISchemaElementName interface
+description: Represents a schema element name with its local name, namespace URI, and name.
+
 ---
 
 Represents a schema element name with its local name, namespace URI, and name.

@@ -1,5 +1,7 @@
 ---
 title: EditCode class
+description: EditCode class.
+
 ---
 
 EditCode class.

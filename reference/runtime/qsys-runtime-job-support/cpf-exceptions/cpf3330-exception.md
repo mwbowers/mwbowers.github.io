@@ -1,5 +1,7 @@
 ---
 title: CPF3330Exception class
+description: The exception that is thrown when Necessary resource not available {0}
+
 ---
 
 The exception that is thrown when Necessary resource not available {0}

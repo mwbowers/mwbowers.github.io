@@ -1,5 +1,7 @@
 ---
 title: DBStrParm class
+description: Represents a String SQL Parameter.
+
 ---
 
 Represents a String SQL Parameter.

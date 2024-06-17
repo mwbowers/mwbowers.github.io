@@ -1,5 +1,7 @@
 ---
 title: MessageFileReader class
+description: Provides the contents of a message file.
+
 ---
 
 Provides the contents of a message file.

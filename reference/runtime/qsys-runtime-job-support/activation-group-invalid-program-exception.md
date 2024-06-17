@@ -1,5 +1,7 @@
 ---
 title: ActivationGroupInvalidProgramException class
+description: The exception that is thrown when an activation could not be created because the program is invalid.
+
 ---
 
 The exception that is thrown when an activation could not be created because the program is invalid.

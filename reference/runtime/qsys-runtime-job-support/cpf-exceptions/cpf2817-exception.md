@@ -1,5 +1,7 @@
 ---
 title: CPF2817Exception class
+description: The exception that is thrown when Copy command ended because of error.
+
 ---
 
 The exception that is thrown when Copy command ended because of error.

@@ -1,5 +1,7 @@
 ---
 title: CPF3100Exception class
+description: Defines the core behavior of CPF31xx exceptions.
+
 ---
 
 Defines the core behavior of CPF31xx exceptions.

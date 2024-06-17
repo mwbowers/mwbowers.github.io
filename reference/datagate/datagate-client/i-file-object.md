@@ -1,5 +1,7 @@
 ---
 title: IFileObject interface
+description: Defines the contract for managing a file in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing a file in the ASNA DataGate client.

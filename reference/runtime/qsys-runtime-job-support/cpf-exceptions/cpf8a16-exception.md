@@ -1,5 +1,7 @@
 ---
 title: CPF8A16Exception class
+description: The exception that is thrown when Document library objects not deleted. {0} objects deleted.
+
 ---
 
 The exception that is thrown when Document library objects not deleted. {0} objects deleted.

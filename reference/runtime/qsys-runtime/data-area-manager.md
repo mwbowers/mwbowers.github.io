@@ -1,5 +1,7 @@
 ---
 title: DataAreaManager class
+description: Handles DataArea operations.
+
 ---
 
 Handles DataArea operations.

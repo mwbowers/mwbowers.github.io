@@ -1,5 +1,7 @@
 ---
 title: RepairOptions enum
+description: Specifies the options for a repair operation.
+
 ---
 
 Specifies the options for a repair operation.

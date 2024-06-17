@@ -1,5 +1,7 @@
 ---
 title: IAltEncodingJsonSerializer interface
+description: Defines a method for JSON serialization of ITransformProperties objects in AltEncoding implementations.
+
 ---
 
 Defines a method for JSON serialization of ITransformProperties objects in AltEncoding implementations.

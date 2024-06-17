@@ -1,5 +1,7 @@
 ---
 title: DdsTableRowTagHelper class
+description: Defines a Subfile Row
+
 ---
 
 Defines a Subfile Row

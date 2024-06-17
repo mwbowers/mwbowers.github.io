@@ -1,5 +1,7 @@
 ---
 title: CurrentFormatException class
+description: -Format name- is not the current record format in the DataSet exception.
+
 ---
 
 -Format name- is not the current record format in the DataSet exception.

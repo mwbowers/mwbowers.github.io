@@ -1,5 +1,7 @@
 ---
 title: TimeAttribute class
+description: Provides Time Attribute (for Properties)
+
 ---
 
 Provides Time Attribute (for Properties)

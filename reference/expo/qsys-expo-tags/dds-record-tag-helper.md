@@ -1,5 +1,7 @@
 ---
 title: DdsRecordTagHelper class
+description: Defines a Display record
+
 ---
 
 Defines a Display record

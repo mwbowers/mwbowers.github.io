@@ -1,5 +1,7 @@
 ---
 title: FixedString<T> struct
+description: Holds a fixed-string value with the specified length.
+
 ---
 
 Holds a fixed-string value with the specified length.

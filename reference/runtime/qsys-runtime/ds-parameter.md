@@ -1,5 +1,7 @@
 ---
 title: DSParameter class
+description: Describes the datastructure parameters sent into an IBMi program call.
+
 ---
 
 Describes the datastructure parameters sent into an IBMi program call.

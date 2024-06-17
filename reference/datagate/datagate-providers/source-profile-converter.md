@@ -1,5 +1,7 @@
 ---
 title: SourceProfileConverter class
+description: The SourceProfileConverter class is responsible for converting source profiles.
+
 ---
 
 The SourceProfileConverter class is responsible for converting source profiles.

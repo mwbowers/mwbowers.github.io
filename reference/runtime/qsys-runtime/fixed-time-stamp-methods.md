@@ -1,5 +1,7 @@
 ---
 title: FixedTimeStampMethods class
+description: Contains extension methods for handling RPG operations for FixedTimestamp values.
+
 ---
 
 Contains extension methods for handling RPG operations for FixedTimestamp values.

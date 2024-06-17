@@ -1,5 +1,7 @@
 ---
 title: DatabaseFile class
+description: Represents a single format Database data file. It contains methods to handle all Input and Output operations on the file.
+
 ---
 
 Represents a single format Database data file. It contains methods to handle all Input and Output operations on the file.

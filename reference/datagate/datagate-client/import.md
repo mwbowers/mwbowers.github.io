@@ -1,5 +1,7 @@
 ---
 title: Import class
+description: Provides functionality for importing data into the application.
+
 ---
 
 Provides functionality for importing data into the application.

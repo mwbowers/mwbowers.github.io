@@ -1,5 +1,7 @@
 ---
 title: WebDisplayFile class
+description: Provides a program with an interface to the user interactions, supporting read and write operation to the user&#39;s screen.
+
 ---
 
 Provides a program with an interface to the user interactions, supporting read and write operation to the user's screen.

@@ -1,5 +1,7 @@
 ---
 title: CharAttribute class
+description: Provides Char Attributes (for Properties)
+
 ---
 
 Provides Char Attributes (for Properties)

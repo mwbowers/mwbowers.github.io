@@ -1,5 +1,7 @@
 ---
 title: CPF2166Exception class
+description: The exception that is thrown when Library name {0} not valid.
+
 ---
 
 The exception that is thrown when Library name {0} not valid.

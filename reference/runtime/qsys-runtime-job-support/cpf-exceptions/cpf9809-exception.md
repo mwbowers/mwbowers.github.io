@@ -1,5 +1,7 @@
 ---
 title: CPF9809Exception class
+description: The exception that is thrown when Library {0} cannot be accessed.
+
 ---
 
 The exception that is thrown when Library {0} cannot be accessed.

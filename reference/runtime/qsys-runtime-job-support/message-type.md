@@ -1,5 +1,7 @@
 ---
 title: MessageType enum
+description: Specifies the type of message.Message Type.
+
 ---
 
 Specifies the type of message.Message Type.

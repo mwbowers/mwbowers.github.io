@@ -1,5 +1,7 @@
 ---
 title: FileOpenAttr class
+description: Represents the attributes for opening a file.
+
 ---
 
 Represents the attributes for opening a file.

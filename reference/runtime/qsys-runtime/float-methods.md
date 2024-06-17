@@ -1,5 +1,7 @@
 ---
 title: FloatMethods class
+description: Contains extension methods for handling RPG operations for floating point numbers.
+
 ---
 
 Contains extension methods for handling RPG operations for floating point numbers.

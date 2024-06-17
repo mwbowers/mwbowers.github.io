@@ -1,5 +1,7 @@
 ---
 title: RangeFirst enum
+description: Specifies the first range of a sequence.
+
 ---
 
 Specifies the first range of a sequence.

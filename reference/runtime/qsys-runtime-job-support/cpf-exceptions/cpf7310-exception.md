@@ -1,5 +1,7 @@
 ---
 title: CPF7310Exception class
+description: The exception that is thrown when Member {0} not removed from file {1} in {2}
+
 ---
 
 The exception that is thrown when Member {0} not removed from file {1} in {2}

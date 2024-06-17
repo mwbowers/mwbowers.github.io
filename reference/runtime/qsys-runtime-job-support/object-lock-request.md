@@ -1,5 +1,7 @@
 ---
 title: ObjectLockRequest class
+description: Provides facilities to Allocate and De-Allocate object related.
+
 ---
 
 Provides facilities to Allocate and De-Allocate object related.

@@ -1,5 +1,7 @@
 ---
 title: IDateTimeFormat interface
+description: Base interface for interfaces used as date/time formats in the declaration of date/time types.
+
 ---
 
 Base interface for interfaces used as date/time formats in the declaration of date/time types.

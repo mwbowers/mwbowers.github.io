@@ -1,5 +1,7 @@
 ---
 title: CPF9814Exception class
+description: The exception that is thrown when Device {0} not found.
+
 ---
 
 The exception that is thrown when Device {0} not found.

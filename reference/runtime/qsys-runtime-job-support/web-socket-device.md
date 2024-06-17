@@ -1,5 +1,7 @@
 ---
 title: WebSocketDevice class
+description: Implements a WebDevice using a socket to communicate with a website for its UI services.
+
 ---
 
 Implements a WebDevice using a socket to communicate with a website for its UI services.

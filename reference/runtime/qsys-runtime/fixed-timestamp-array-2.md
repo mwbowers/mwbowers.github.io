@@ -1,5 +1,7 @@
 ---
 title: FixedTimestampArray<T1, T2> struct
+description: Defines the functionality of a fixed-sized unidimensional array of FixedTimestamp elements.
+
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedTimestamp elements.

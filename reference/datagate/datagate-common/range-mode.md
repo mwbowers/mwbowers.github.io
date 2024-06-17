@@ -1,5 +1,7 @@
 ---
 title: RangeMode enum
+description: Specifies the range mode for reading data.
+
 ---
 
 Specifies the range mode for reading data.

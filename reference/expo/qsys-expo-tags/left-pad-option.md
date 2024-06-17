@@ -1,5 +1,7 @@
 ---
 title: LeftPadOption enum
+description: Describes the Left padding option.
+
 ---
 
 Describes the Left padding option.

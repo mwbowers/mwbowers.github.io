@@ -1,5 +1,7 @@
 ---
 title: CPF3492Exception class
+description: The exception that is thrown when Not authorized to spooled file {0}
+
 ---
 
 The exception that is thrown when Not authorized to spooled file {0}

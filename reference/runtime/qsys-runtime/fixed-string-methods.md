@@ -1,5 +1,7 @@
 ---
 title: FixedStringMethods class
+description: Contains extension methods for handling RPG operations for FixedString values.
+
 ---
 
 Contains extension methods for handling RPG operations for FixedString values.

@@ -1,5 +1,7 @@
 ---
 title: DurationCode enum
+description: Describes the valid durations to use in date/time operations.
+
 ---
 
 Describes the valid durations to use in date/time operations.

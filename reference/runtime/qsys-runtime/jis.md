@@ -1,5 +1,7 @@
 ---
 title: _JIS interface
+description: Describes the JIS date/time format in the declaration of date/time types.
+
 ---
 
 Describes the JIS date/time format in the declaration of date/time types.

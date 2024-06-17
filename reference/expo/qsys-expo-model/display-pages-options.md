@@ -1,5 +1,7 @@
 ---
 title: DisplayPagesOptions class
+description: Provides configuration for Display Pages.
+
 ---
 
 Provides configuration for Display Pages.

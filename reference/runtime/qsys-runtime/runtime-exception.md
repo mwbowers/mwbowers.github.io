@@ -1,5 +1,7 @@
 ---
 title: RuntimeException class
+description: Base class for all ASNA QSys Runtime generated exceptions.
+
 ---
 
 Base class for all ASNA QSys Runtime generated exceptions.

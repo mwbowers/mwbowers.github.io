@@ -1,5 +1,7 @@
 ---
 title: IChannelSecurity interface
+description: Defines the contract for managing security in the ASNA DataGate client&#39;s communication channel.
+
 ---
 
 Defines the contract for managing security in the ASNA DataGate client's communication channel.

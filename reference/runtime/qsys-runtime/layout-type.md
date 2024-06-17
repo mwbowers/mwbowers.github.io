@@ -1,5 +1,7 @@
 ---
 title: LayoutType enum
+description: Contains enumeration values to identify the type of data in a layout.
+
 ---
 
 Contains enumeration values to identify the type of data in a layout.

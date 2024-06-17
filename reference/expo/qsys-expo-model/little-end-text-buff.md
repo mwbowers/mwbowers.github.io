@@ -1,5 +1,7 @@
 ---
 title: LittleEndTextBuff class
+description: This is the Buffer for Little-endian UTF16 files.
+
 ---
 
 This is the Buffer for Little-endian UTF16 files.

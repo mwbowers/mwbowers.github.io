@@ -1,5 +1,7 @@
 ---
 title: IFileAdapter interface
+description: Provides an interface for file operations.
+
 ---
 
 Provides an interface for file operations.

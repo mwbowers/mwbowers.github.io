@@ -1,5 +1,7 @@
 ---
 title: TransactionNotStartedException class
+description: The transaction has not been started exception.
+
 ---
 
 The transaction has not been started exception.

@@ -1,5 +1,7 @@
 ---
 title: _None interface
+description: Describes the Slash (/) as date/time separator in the declaration of date/time types.
+
 ---
 
 Describes the Slash (/) as date/time separator in the declaration of date/time types.

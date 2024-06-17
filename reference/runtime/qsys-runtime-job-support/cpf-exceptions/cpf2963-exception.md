@@ -1,5 +1,7 @@
 ---
 title: CPF2963Exception class
+description: The exception that is thrown when NFMTOPT(*NOCHK) required to copy file.
+
 ---
 
 The exception that is thrown when NFMTOPT(*NOCHK) required to copy file.

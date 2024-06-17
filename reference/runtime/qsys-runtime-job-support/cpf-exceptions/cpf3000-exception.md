@@ -1,5 +1,7 @@
 ---
 title: CPF3000Exception class
+description: Defines the core behavior of CPF30xx exceptions.
+
 ---
 
 Defines the core behavior of CPF30xx exceptions.

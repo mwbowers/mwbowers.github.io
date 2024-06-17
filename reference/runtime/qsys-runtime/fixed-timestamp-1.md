@@ -1,5 +1,7 @@
 ---
 title: FixedTimestamp<T> struct
+description: Holds a fixed-timestamp value with the given separator.
+
 ---
 
 Holds a fixed-timestamp value with the given separator.

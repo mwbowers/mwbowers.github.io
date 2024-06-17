@@ -1,5 +1,7 @@
 ---
 title: BatchJob class
+description: Defines the core behavior of a batch job.
+
 ---
 
 Defines the core behavior of a batch job.

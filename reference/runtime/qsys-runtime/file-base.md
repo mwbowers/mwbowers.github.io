@@ -1,5 +1,7 @@
 ---
 title: FileBase class
+description: Defines common functionality for files (Database, Printfile, Workstation)
+
 ---
 
 Defines common functionality for files (Database, Printfile, Workstation)

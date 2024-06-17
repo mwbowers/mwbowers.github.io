@@ -1,5 +1,7 @@
 ---
 title: ILayout interface
+description: Defines operations for objects describing fields in a data structure.
+
 ---
 
 Defines operations for objects describing fields in a data structure.

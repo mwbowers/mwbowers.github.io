@@ -1,5 +1,7 @@
 ---
 title: CPF7300Exception class
+description: Defines the core behavior of CPF73xx exceptions.
+
 ---
 
 Defines the core behavior of CPF73xx exceptions.

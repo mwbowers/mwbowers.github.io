@@ -1,5 +1,7 @@
 ---
 title: QueryCursor class
+description: Represents the SQL Query Cursor.
+
 ---
 
 Represents the SQL Query Cursor.

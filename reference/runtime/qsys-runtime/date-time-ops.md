@@ -1,5 +1,7 @@
 ---
 title: DateTimeOps class
+description: Defines operations with RPG semantics on System.DateTime values.
+
 ---
 
 Defines operations with RPG semantics on System.DateTime values.

@@ -1,5 +1,7 @@
 ---
 title: Terminal5250_PageModel class
+description: Defines Terminal5250_PageModel class
+
 ---
 
 Defines Terminal5250_PageModel class

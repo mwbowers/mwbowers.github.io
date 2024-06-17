@@ -1,5 +1,7 @@
 ---
 title: DBParm class
+description: Represents a SQL Parameter (used as base to specific parameter type)
+
 ---
 
 Represents a SQL Parameter (used as base to specific parameter type)

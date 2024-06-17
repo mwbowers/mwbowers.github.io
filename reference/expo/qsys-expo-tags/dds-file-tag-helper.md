@@ -1,5 +1,7 @@
 ---
 title: DdsFileTagHelper class
+description: Renders the Monarch Base Application&#39;s Active records along with Active Aid Keys.
+
 ---
 
 Renders the Monarch Base Application's Active records along with Active Aid Keys.

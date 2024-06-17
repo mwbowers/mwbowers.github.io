@@ -1,5 +1,7 @@
 ---
 title: SqlObjectName class
+description: Represents a SQL object name.
+
 ---
 
 Represents a SQL object name.

@@ -1,5 +1,7 @@
 ---
 title: CPF3400Exception class
+description: Defines the core behavior of CPF34xx exceptions.
+
 ---
 
 Defines the core behavior of CPF34xx exceptions.

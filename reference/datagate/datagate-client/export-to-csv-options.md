@@ -1,5 +1,7 @@
 ---
 title: ExportToCsvOptions class
+description: Provides options for exporting data to CSV format.
+This class includes properties for specifying whether field names should be included, whether trailing delimiters should be omitted, and what characters should be used for text delimiters, field delimiters, an
 ---
 
 Provides options for exporting data to CSV format.

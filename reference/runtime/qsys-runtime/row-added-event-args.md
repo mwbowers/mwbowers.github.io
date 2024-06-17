@@ -1,5 +1,7 @@
 ---
 title: RowAddedEventArgs class
+description: Holds information that the RowAddedEvent requires.
+
 ---
 
 Holds information that the RowAddedEvent requires.

@@ -1,5 +1,7 @@
 ---
 title: CPF2802Exception class
+description: The exception that is thrown when From-file {0} in {1} not found.
+
 ---
 
 The exception that is thrown when From-file {0} in {1} not found.

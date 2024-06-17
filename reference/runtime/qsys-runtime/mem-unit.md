@@ -1,5 +1,7 @@
 ---
 title: MemUnit class
+description: Defines methods to handle RPG MOVE semantics.
+
 ---
 
 Defines methods to handle RPG MOVE semantics.

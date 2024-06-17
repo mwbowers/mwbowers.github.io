@@ -1,5 +1,7 @@
 ---
 title: IDigit interface
+description: Interface that identifies a subset of length type arguments that represent digits, from 0 to 9.
+
 ---
 
 Interface that identifies a subset of length type arguments that represent digits, from 0 to 9.

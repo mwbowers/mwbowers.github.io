@@ -1,5 +1,7 @@
 ---
 title: Job class
+description: Defines the core behavior of a Job that provides an environment to submit, control, and keep track of Program activation and execution.
+
 ---
 
 Defines the core behavior of a Job that provides an environment to submit, control, and keep track of Program activation and execution.

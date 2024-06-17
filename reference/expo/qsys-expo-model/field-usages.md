@@ -1,5 +1,7 @@
 ---
 title: FieldUsages enum
+description: Provides Displayfile field usage: input, output, both, etc.
+
 ---
 
 Provides Displayfile field usage: input, output, both, etc.

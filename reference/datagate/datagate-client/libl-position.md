@@ -1,5 +1,7 @@
 ---
 title: LiblPosition enum
+description: Specifies the position to add a library in the library list.
+
 ---
 
 Specifies the position to add a library in the library list.

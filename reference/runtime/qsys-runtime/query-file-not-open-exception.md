@@ -1,5 +1,7 @@
 ---
 title: QueryFileNotOpenException class
+description: Query File -filename- is not open exception.
+
 ---
 
 Query File -filename- is not open exception.

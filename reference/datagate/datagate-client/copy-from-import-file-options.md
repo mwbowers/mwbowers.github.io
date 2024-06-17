@@ -1,5 +1,7 @@
 ---
 title: CopyFromImportFileOptions class
+description: Provides options for copying data from an import file.
+
 ---
 
 Provides options for copying data from an import file.

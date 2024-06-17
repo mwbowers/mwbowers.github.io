@@ -1,5 +1,7 @@
 ---
 title: CPF2182Exception class
+description: The exception that is thrown when Not authorized to library {0}
+
 ---
 
 The exception that is thrown when Not authorized to library {0}

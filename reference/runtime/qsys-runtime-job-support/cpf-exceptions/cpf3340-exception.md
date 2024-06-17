@@ -1,5 +1,7 @@
 ---
 title: CPF3340Exception class
+description: The exception that is thrown when *ONLY specified, but more than one file with specified name &#39;{0}&#39; found in job &#39;{1}/{2}/{3}&#39;
+
 ---
 
 The exception that is thrown when *ONLY specified, but more than one file with specified name '{0}' found in job '{1}/{2}/{3}'

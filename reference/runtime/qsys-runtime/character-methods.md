@@ -1,5 +1,7 @@
 ---
 title: CharacterMethods class
+description: Contains extension methods for Char (onechar/indicator) conversions.
+
 ---
 
 Contains extension methods for Char (onechar/indicator) conversions.

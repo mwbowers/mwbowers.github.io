@@ -1,5 +1,7 @@
 ---
 title: IDSArrayField interface
+description: Describes the common operations for an array field in a Data Structure.
+
 ---
 
 Describes the common operations for an array field in a Data Structure.

@@ -1,5 +1,7 @@
 ---
 title: JobShutDownException class
+description: The exception that is thrown to end a job.
+
 ---
 
 The exception that is thrown to end a job.

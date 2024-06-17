@@ -1,5 +1,7 @@
 ---
 title: IndicatorArrayInDS<T> struct
+description: Describes a fixed size array of Indicators contained in a DataStructure.
+
 ---
 
 Describes a fixed size array of Indicators contained in a DataStructure.

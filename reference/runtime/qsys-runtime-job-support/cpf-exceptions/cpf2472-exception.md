@@ -1,5 +1,7 @@
 ---
 title: CPF2472Exception class
+description: The exception that is thrown when Invalid wait time specified: {0}
+
 ---
 
 The exception that is thrown when Invalid wait time specified: {0}

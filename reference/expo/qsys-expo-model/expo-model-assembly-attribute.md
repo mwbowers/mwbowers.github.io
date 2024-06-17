@@ -1,5 +1,7 @@
 ---
 title: ExpoModelAssemblyAttribute class
+description: Defines an Assembly attribute to Expo.Model
+
 ---
 
 Defines an Assembly attribute to Expo.Model

@@ -1,5 +1,7 @@
 ---
 title: ExportAccessMode enum
+description: Enumeration for defining the access mode for data export.
+
 ---
 
 Enumeration for defining the access mode for data export.

@@ -1,5 +1,7 @@
 ---
 title: DdsRadioButtonGroupFieldTagHelper class
+description: Defines a group of radio-button elements.
+
 ---
 
 Defines a group of radio-button elements.

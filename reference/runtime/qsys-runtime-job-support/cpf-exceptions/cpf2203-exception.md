@@ -1,5 +1,7 @@
 ---
 title: CPF2203Exception class
+description: The exception that is thrown when User profile {0} not correct.
+
 ---
 
 The exception that is thrown when User profile {0} not correct.

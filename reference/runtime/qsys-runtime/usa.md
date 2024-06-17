@@ -1,5 +1,7 @@
 ---
 title: _USA interface
+description: Describes the USA date/time format in the declaration of date/time types.
+
 ---
 
 Describes the USA date/time format in the declaration of date/time types.

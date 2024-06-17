@@ -1,5 +1,7 @@
 ---
 title: IPrintProperties interface
+description: Provides an interface for managing print properties.
+
 ---
 
 Provides an interface for managing print properties.

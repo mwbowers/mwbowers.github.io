@@ -1,5 +1,7 @@
 ---
 title: ConditionalValue class
+description: Defines ConditionalValue class
+
 ---
 
 Defines ConditionalValue class

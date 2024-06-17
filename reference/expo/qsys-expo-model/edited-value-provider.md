@@ -1,5 +1,7 @@
 ---
 title: EditedValueProvider class
+description: Provides support for Posted form validation for fields with Edit Code or Edit Word. (This value provider is registered in Startup.ConfigureServices) 
+
 ---
 
 Provides support for Posted form validation for fields with Edit Code or Edit Word. (This value provider is registered in Startup.ConfigureServices) 

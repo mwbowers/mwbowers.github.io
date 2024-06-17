@@ -1,5 +1,7 @@
 ---
 title: DuplicateOptions enum
+description: Specifies the options for duplicating an object.
+
 ---
 
 Specifies the options for duplicating an object.

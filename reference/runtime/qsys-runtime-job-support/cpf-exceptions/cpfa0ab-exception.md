@@ -1,5 +1,7 @@
 ---
 title: CPFA0ABException class
+description: The exception that is thrown when Operation failed for object. Object is {0}
+
 ---
 
 The exception that is thrown when Operation failed for object. Object is {0}

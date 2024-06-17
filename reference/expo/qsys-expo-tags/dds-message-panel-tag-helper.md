@@ -1,5 +1,7 @@
 ---
 title: DdsMessagePanelTagHelper class
+description: Provides a placeholder for Page messages.
+
 ---
 
 Provides a placeholder for Page messages.

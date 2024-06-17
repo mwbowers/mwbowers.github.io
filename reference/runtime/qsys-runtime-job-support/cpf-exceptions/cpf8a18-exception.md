@@ -1,5 +1,7 @@
 ---
 title: CPF8A18Exception class
+description: The exception that is thrown when Folder {0} not created.
+
 ---
 
 The exception that is thrown when Folder {0} not created.

@@ -1,5 +1,7 @@
 ---
 title: DbcsFormat enum
+description: Specifies the format for a double-byte character set (DBCS).
+
 ---
 
 Specifies the format for a double-byte character set (DBCS).

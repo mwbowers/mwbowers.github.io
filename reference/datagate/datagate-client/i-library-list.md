@@ -1,5 +1,7 @@
 ---
 title: ILibraryList interface
+description: Defines the contract for managing a library list in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing a library list in the ASNA DataGate client.

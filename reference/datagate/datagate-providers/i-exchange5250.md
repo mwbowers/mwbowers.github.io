@@ -1,5 +1,7 @@
 ---
 title: IExchange5250 interface
+description: Provides an interface for exchanging 5250 data streams.
+
 ---
 
 Provides an interface for exchanging 5250 data streams.

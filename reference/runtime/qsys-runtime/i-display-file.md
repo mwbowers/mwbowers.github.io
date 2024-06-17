@@ -1,5 +1,7 @@
 ---
 title: IDisplayFile interface
+description: Display File Interface.
+
 ---
 
 Display File Interface.

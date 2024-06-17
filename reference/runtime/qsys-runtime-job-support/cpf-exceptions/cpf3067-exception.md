@@ -1,5 +1,7 @@
 ---
 title: CPF3067Exception class
+description: The exception that is thrown when Error while opening file {0} in {1}
+
 ---
 
 The exception that is thrown when Error while opening file {0} in {1}

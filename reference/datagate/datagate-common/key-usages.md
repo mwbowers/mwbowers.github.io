@@ -1,5 +1,7 @@
 ---
 title: KeyUsages enum
+description: Specifies the usage of a key.
+
 ---
 
 Specifies the usage of a key.

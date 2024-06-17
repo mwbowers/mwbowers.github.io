@@ -1,5 +1,7 @@
 ---
 title: InitializePFMOption enum
+description: Specifies constants that define the record values used to initialize a physical file member.
+
 ---
 
 Specifies constants that define the record values used to initialize a physical file member.

@@ -1,5 +1,7 @@
 ---
 title: CPF3011Exception class
+description: The exception that is thrown when TYPE not found for file {0} in library {1}
+
 ---
 
 The exception that is thrown when TYPE not found for file {0} in library {1}

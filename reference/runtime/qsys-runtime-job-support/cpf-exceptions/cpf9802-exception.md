@@ -1,5 +1,7 @@
 ---
 title: CPF9802Exception class
+description: The exception that is thrown when Not authorized to object {0} in {1}
+
 ---
 
 The exception that is thrown when Not authorized to object {0} in {1}

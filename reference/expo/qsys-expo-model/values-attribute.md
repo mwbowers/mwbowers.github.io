@@ -1,5 +1,7 @@
 ---
 title: ValuesAttribute class
+description: Defines ValuesAttribute class
+
 ---
 
 Defines ValuesAttribute class

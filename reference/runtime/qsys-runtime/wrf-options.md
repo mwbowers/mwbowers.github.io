@@ -1,5 +1,7 @@
 ---
 title: WrfOptions enum
+description: For future expansion, options when obtaining the record format of a display file.
+
 ---
 
 For future expansion, options when obtaining the record format of a display file.

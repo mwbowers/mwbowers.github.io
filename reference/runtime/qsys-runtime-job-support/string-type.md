@@ -1,5 +1,7 @@
 ---
 title: StringType enum
+description: Specifies the kind of message included in an exception message.
+
 ---
 
 Specifies the kind of message included in an exception message.

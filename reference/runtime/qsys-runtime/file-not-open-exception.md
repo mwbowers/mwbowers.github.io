@@ -1,5 +1,7 @@
 ---
 title: FileNotOpenException class
+description: File -filename- is not open exception.
+
 ---
 
 File -filename- is not open exception.

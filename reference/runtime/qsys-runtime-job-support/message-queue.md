@@ -1,5 +1,7 @@
 ---
 title: MessageQueue class
+description: Holds a group of messages in a queue.
+
 ---
 
 Holds a group of messages in a queue.

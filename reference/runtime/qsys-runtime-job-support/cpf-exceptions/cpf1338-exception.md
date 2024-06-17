@@ -1,5 +1,7 @@
 ---
 title: CPF1338Exception class
+description: The exception that is thrown when Errors occurred on while submitting a job..
+
 ---
 
 The exception that is thrown when Errors occurred on while submitting a job..

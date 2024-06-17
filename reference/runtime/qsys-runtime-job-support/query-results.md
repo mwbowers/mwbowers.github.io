@@ -1,5 +1,7 @@
 ---
 title: QueryResults class
+description: Dictionary with Query result items.
+
 ---
 
 Dictionary with Query result items.

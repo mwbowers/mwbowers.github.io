@@ -1,5 +1,7 @@
 ---
 title: CPF2800Exception class
+description: Defines the core behavior of CPF28xx exceptions.
+
 ---
 
 Defines the core behavior of CPF28xx exceptions.

@@ -1,5 +1,7 @@
 ---
 title: RecordFormatAttribute class
+description: A non-RPG class may stamp a field with this attribute to be considered as a record format by a consumer RPG program.
+
 ---
 
 A non-RPG class may stamp a field with this attribute to be considered as a record format by a consumer RPG program.

@@ -1,5 +1,7 @@
 ---
 title: ICycleFile interface
+description: Defines functionality that a file which participates in the RPG cycle must provide.
+
 ---
 
 Defines functionality that a file which participates in the RPG cycle must provide.

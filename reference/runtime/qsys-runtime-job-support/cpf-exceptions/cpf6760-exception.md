@@ -1,5 +1,7 @@
 ---
 title: CPF6760Exception class
+description: The exception that is thrown when Device {0} not ready.
+
 ---
 
 The exception that is thrown when Device {0} not ready.

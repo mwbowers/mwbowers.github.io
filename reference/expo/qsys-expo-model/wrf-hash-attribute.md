@@ -1,5 +1,7 @@
 ---
 title: WrfHashAttribute class
+description: Holds the computed hash value for the Wrf corresponding to this class.
+
 ---
 
 Holds the computed hash value for the Wrf corresponding to this class.

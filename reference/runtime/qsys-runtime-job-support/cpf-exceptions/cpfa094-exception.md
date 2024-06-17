@@ -1,5 +1,7 @@
 ---
 title: CPFA094Exception class
+description: The exception that is thrown when Path name not specified.
+
 ---
 
 The exception that is thrown when Path name not specified.

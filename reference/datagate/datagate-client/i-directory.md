@@ -1,5 +1,7 @@
 ---
 title: IDirectory interface
+description: Defines the contract for managing a directory in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing a directory in the ASNA DataGate client.

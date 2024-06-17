@@ -1,5 +1,7 @@
 ---
 title: CPF88C4Exception class
+description: The exception that is thrown when Value {0} for new object is not valid.
+
 ---
 
 The exception that is thrown when Value {0} for new object is not valid.

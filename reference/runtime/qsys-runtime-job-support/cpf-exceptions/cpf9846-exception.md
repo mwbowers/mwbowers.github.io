@@ -1,5 +1,7 @@
 ---
 title: CPF9846Exception class
+description: The exception that is thrown when Error while processing file {0} in library {1}
+
 ---
 
 The exception that is thrown when Error while processing file {0} in library {1}

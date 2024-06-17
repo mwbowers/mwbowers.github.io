@@ -1,5 +1,7 @@
 ---
 title: AltEncodingInfo class
+description: Represents information about an alternative encoding.
+
 ---
 
 Represents information about an alternative encoding.

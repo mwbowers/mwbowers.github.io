@@ -1,5 +1,7 @@
 ---
 title: ProgramIndicatorsAttribute class
+description: For a non-RPG class to be used as the base class of an RPG class (AVR or Encore), this attribute indicates the name of the *INLR, *IN, and *INRT indicators.
+
 ---
 
 For a non-RPG class to be used as the base class of an RPG class (AVR or Encore), this attribute indicates the name of the *INLR, *IN, and *INRT indicators.

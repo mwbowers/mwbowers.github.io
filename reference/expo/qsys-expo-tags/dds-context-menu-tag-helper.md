@@ -1,5 +1,7 @@
 ---
 title: DdsContextMenuTagHelper class
+description: Defines a Context Menu.
+
 ---
 
 Defines a Context Menu.

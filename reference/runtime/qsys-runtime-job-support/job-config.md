@@ -1,5 +1,7 @@
 ---
 title: JobConfig class
+description: Holds configuration values for the creation of new jobs.
+
 ---
 
 Holds configuration values for the creation of new jobs.

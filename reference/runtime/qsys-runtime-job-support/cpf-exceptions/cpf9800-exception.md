@@ -1,5 +1,7 @@
 ---
 title: CPF9800Exception class
+description: Defines the core behavior of CPF98xx exceptions.
+
 ---
 
 Defines the core behavior of CPF98xx exceptions.

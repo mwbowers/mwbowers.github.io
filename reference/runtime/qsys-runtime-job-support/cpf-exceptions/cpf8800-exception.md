@@ -1,5 +1,7 @@
 ---
 title: CPF8800Exception class
+description: Defines the core behavior of CPF88xx exceptions.
+
 ---
 
 Defines the core behavior of CPF88xx exceptions.

@@ -1,5 +1,7 @@
 ---
 title: CPF7000Exception class
+description: Defines the core behavior of CPF70xx exceptions.
+
 ---
 
 Defines the core behavior of CPF70xx exceptions.

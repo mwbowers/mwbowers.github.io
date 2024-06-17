@@ -1,5 +1,7 @@
 ---
 title: FieldAttribute class
+description: Provides Displayfile field attributes
+
 ---
 
 Provides Displayfile field attributes

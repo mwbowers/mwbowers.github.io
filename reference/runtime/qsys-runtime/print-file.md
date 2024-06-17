@@ -1,5 +1,7 @@
 ---
 title: PrintFile class
+description: Represents a Database print file. It contains methods to handle all Output operations on the file.
+
 ---
 
 Represents a Database print file. It contains methods to handle all Output operations on the file.

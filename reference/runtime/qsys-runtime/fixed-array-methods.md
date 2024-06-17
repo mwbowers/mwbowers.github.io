@@ -1,5 +1,7 @@
 ---
 title: FixedArrayMethods class
+description: Contains extension methods for handling FixedArrays according to RPG semantics.
+
 ---
 
 Contains extension methods for handling FixedArrays according to RPG semantics.

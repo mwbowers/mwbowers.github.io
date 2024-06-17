@@ -1,5 +1,7 @@
 ---
 title: HostService enum
+description: Specifies constants that define the type of service requested.
+
 ---
 
 Specifies constants that define the type of service requested.

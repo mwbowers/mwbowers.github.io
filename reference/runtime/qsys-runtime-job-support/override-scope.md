@@ -1,5 +1,7 @@
 ---
 title: OverrideScope enum
+description: Indicates the scope of the override option.
+
 ---
 
 Indicates the scope of the override option.

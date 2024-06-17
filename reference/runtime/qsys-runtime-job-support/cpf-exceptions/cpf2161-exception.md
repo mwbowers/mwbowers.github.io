@@ -1,5 +1,7 @@
 ---
 title: CPF2161Exception class
+description: The exception that is thrown when Cannot delete some objects in library {0}
+
 ---
 
 The exception that is thrown when Cannot delete some objects in library {0}

@@ -1,5 +1,7 @@
 ---
 title: SystemValue class
+description: Provides System Value attributes.
+
 ---
 
 Provides System Value attributes.

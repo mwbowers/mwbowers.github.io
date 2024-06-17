@@ -1,5 +1,7 @@
 ---
 title: ServerCursors enum
+description: Specifies the type of server cursor to use.
+
 ---
 
 Specifies the type of server cursor to use.

@@ -1,5 +1,7 @@
 ---
 title: XmlCancelEventArgs class
+description: Provides data for the XmlCancelEvent event.
+
 ---
 
 Provides data for the XmlCancelEvent event.

@@ -1,5 +1,7 @@
 ---
 title: DecimalOps class
+description: Provide fixed length decimal storage and operations.
+
 ---
 
 Provide fixed length decimal storage and operations.

@@ -1,5 +1,7 @@
 ---
 title: ScrollTypes enum
+description: Defines the SQL Cursor Scroll types.
+
 ---
 
 Defines the SQL Cursor Scroll types.

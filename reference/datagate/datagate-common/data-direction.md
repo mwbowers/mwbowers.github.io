@@ -1,5 +1,7 @@
 ---
 title: DataDirection enum
+description: Specifies the direction of data flow for a data operation.
+
 ---
 
 Specifies the direction of data flow for a data operation.

@@ -1,5 +1,7 @@
 ---
 title: CPF2176Exception class
+description: The exception that is thrown when Library {0} damaged.
+
 ---
 
 The exception that is thrown when Library {0} damaged.

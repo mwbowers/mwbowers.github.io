@@ -1,5 +1,7 @@
 ---
 title: CPF2136Exception class
+description: The exception that is thrown when Renaming library {0} failed.
+
 ---
 
 The exception that is thrown when Renaming library {0} failed.

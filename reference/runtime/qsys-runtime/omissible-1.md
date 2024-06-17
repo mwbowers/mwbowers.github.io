@@ -1,5 +1,7 @@
 ---
 title: Omissible&lt;T&gt; class
+description: Encapsulates a *OMIT parameter.
+
 ---
 
 Encapsulates a *OMIT parameter.

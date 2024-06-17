@@ -1,5 +1,7 @@
 ---
 title: FileAlreadyOpenException class
+description: File -filename- is already open exception.
+
 ---
 
 File -filename- is already open exception.

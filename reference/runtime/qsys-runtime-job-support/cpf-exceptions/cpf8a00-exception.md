@@ -1,5 +1,7 @@
 ---
 title: CPF8A00Exception class
+description: Defines the core behavior of CPF8Axx exceptions.
+
 ---
 
 Defines the core behavior of CPF8Axx exceptions.

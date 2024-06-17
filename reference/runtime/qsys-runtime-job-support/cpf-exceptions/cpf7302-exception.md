@@ -1,5 +1,7 @@
 ---
 title: CPF7302Exception class
+description: The exception that is thrown when File {0} not created in library {1}
+
 ---
 
 The exception that is thrown when File {0} not created in library {1}

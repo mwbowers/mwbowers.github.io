@@ -1,5 +1,7 @@
 ---
 title: CharTypeAttribute class
+description: A non-RPG class may stamp a string member with this attribute to be considered as a fixed-sized character field by a consumer RPG program.
+
 ---
 
 A non-RPG class may stamp a string member with this attribute to be considered as a fixed-sized character field by a consumer RPG program.

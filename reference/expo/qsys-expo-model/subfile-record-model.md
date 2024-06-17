@@ -1,5 +1,7 @@
 ---
 title: SubfileRecordModel class
+description: Defines the SubfileRecordModel class
+
 ---
 
 Defines the SubfileRecordModel class

@@ -1,5 +1,7 @@
 ---
 title: AdgKeyTable class
+description: The AdgKeyTable class contains a DataTable object for manipulating key values.
+
 ---
 
 The AdgKeyTable class contains a DataTable object for manipulating key values.

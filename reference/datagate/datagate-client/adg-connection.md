@@ -1,5 +1,7 @@
 ---
 title: AdgConnection class
+description: The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program. 
+
 ---
 
 The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program. 
@@ -20,7 +22,7 @@ A single instance of AdgConnection should not be shared by multiple threads of a
 
 For example, an ASP.NET application must take special care when using a shared instance of AdgConnection among multiple ASP.NET sessions. 
 
-As an alternative, consider using a separate instance of AdgConnection (optionally configured for connection pooling via the [PoolingTimeout](/reference/datagate/data-gate-providers/source-profile.html#properties) property of SourceProfile) in each ASP.NET session. Note also that other DG classes with properties and method parameters of type AdgConnection, such as FileAdapter, may employ the non-thread safe members of AdgConnection internally. By association, instance members of these classes are not guaranteed to be thread safe. 
+As an alternative, consider using a separate instance of AdgConnection (optionally configured for connection pooling via the [PoolingTimeout](/reference/datagate/datagate-providers/source-profile.html#properties) property of SourceProfile) in each ASP.NET session. Note also that other DG classes with properties and method parameters of type AdgConnection, such as FileAdapter, may employ the non-thread safe members of AdgConnection internally. By association, instance members of these classes are not guaranteed to be thread safe. 
 
 
 

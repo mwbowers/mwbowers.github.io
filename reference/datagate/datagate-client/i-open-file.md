@@ -1,5 +1,7 @@
 ---
 title: IOpenFile interface
+description: Defines the contract for managing an open file in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing an open file in the ASNA DataGate client.

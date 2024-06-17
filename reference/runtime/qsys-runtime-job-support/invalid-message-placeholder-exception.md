@@ -1,5 +1,7 @@
 ---
 title: InvalidMessagePlaceholderException class
+description: The exception that is thrown when an message string is missing matching curly braces on a placeholder.
+
 ---
 
 The exception that is thrown when an message string is missing matching curly braces on a placeholder.

@@ -1,5 +1,7 @@
 ---
 title: CPF2100Exception class
+description: Defines the core behavior of CPF21xx exceptions.
+
 ---
 
 Defines the core behavior of CPF21xx exceptions.

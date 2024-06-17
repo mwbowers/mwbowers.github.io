@@ -1,5 +1,11 @@
 ---
 title: UserPasswordCredential class
+description: The user name and password information of UserPasswordCredential may be
+used to establish authenticated connections to databases that require
+such information.
+
+User and Password properties may be set or initialized to null values,
+in which case the return val
 ---
 
 The user name and password information of UserPasswordCredential may be

@@ -1,5 +1,7 @@
 ---
 title: FixedStringComparer class
+description: FixedString Comparer.
+
 ---
 
 FixedString Comparer.

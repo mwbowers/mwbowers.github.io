@@ -1,5 +1,7 @@
 ---
 title: DSLengthAttribute class
+description: A non-RPG class may be stamped with this attribute to indicate a consumer RPG program to consider it as a Data Structure with the specified length.
+
 ---
 
 A non-RPG class may be stamped with this attribute to indicate a consumer RPG program to consider it as a Data Structure with the specified length.

@@ -1,5 +1,7 @@
 ---
 title: ShuttingDownException class
+description: The exception that is thrown to signal the Job is being shut down.
+
 ---
 
 The exception that is thrown to signal the Job is being shut down.

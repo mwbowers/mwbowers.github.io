@@ -1,5 +1,7 @@
 ---
 title: FieldBase class
+description: Provides common methods for DdsFields and DdsConstants.
+
 ---
 
 Provides common methods for DdsFields and DdsConstants.

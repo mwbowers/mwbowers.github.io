@@ -1,5 +1,7 @@
 ---
 title: ServiceProgram class
+description: Defines the core behavior of a service program and provides a base for migrated derived classes.
+
 ---
 
 Defines the core behavior of a service program and provides a base for migrated derived classes.

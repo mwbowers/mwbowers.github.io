@@ -1,5 +1,7 @@
 ---
 title: ModuleCollection class
+description: A dictionary of the modules making up this program.
+
 ---
 
 A dictionary of the modules making up this program.

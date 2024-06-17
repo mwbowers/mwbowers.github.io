@@ -1,5 +1,7 @@
 ---
 title: ExpoAjaxRequest class
+description: Defines the ExpoAjaxRequest class (used for JSON serialization)
+
 ---
 
 Defines the ExpoAjaxRequest class (used for JSON serialization)

@@ -1,5 +1,7 @@
 ---
 title: Program class
+description: Defines the core behavior of a program and provides a base for migrated derived classes.
+
 ---
 
 Defines the core behavior of a program and provides a base for migrated derived classes.

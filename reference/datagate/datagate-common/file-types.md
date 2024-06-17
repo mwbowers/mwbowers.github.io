@@ -1,5 +1,7 @@
 ---
 title: FileTypes enum
+description: Used for filtering results when enumerating a directory.
+
 ---
 
 Used for filtering results when enumerating a directory.

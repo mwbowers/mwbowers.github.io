@@ -1,5 +1,7 @@
 ---
 title: FixedDecimalMethods class
+description: Contains extension methods for handling RPG operations for FixedDecimal values.
+
 ---
 
 Contains extension methods for handling RPG operations for FixedDecimal values.

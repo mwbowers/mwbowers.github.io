@@ -1,5 +1,7 @@
 ---
 title: CPF2139Exception class
+description: The exception that is thrown when Rename of library {0} failed.
+
 ---
 
 The exception that is thrown when Rename of library {0} failed.

@@ -1,5 +1,7 @@
 ---
 title: DuplicateFieldException class
+description: Field -field- was specified more than once in -specification- exception.
+
 ---
 
 Field -field- was specified more than once in -specification- exception.

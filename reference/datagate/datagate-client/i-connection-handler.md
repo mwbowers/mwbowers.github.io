@@ -1,5 +1,7 @@
 ---
 title: IConnectionHandler interface
+description: Defines the methods for handling connections.
+
 ---
 
 Defines the methods for handling connections.

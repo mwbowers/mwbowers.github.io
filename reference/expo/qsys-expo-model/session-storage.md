@@ -1,5 +1,7 @@
 ---
 title: SessionStorage class
+description: Defines the SessionStorage class
+
 ---
 
 Defines the SessionStorage class

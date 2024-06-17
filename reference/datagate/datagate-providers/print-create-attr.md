@@ -1,5 +1,7 @@
 ---
 title: PrintCreateAttr class
+description: Represents the attributes for creating a print file.
+
 ---
 
 Represents the attributes for creating a print file.

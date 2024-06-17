@@ -1,5 +1,7 @@
 ---
 title: CPF2125Exception class
+description: The exception that is thrown when No objects were deleted for object {0}.
+
 ---
 
 The exception that is thrown when No objects were deleted for object {0}.

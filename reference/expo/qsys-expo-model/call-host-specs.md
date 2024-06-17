@@ -1,5 +1,7 @@
 ---
 title: CallHostSpecs class
+description: Defines CallHostSpecs class
+
 ---
 
 Defines CallHostSpecs class

@@ -1,5 +1,7 @@
 ---
 title: InspectFileOutput enum
+description: Specifies the output format for a file inspection.
+
 ---
 
 Specifies the output format for a file inspection.

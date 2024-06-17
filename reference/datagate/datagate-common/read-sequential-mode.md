@@ -1,5 +1,7 @@
 ---
 title: ReadSequentialMode enum
+description: Specifies the mode for reading data sequentially.
+
 ---
 
 Specifies the mode for reading data sequentially.

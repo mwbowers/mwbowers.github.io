@@ -1,5 +1,7 @@
 ---
 title: CPF2168Exception class
+description: The exception that is thrown when Library {0} not deleted.
+
 ---
 
 The exception that is thrown when Library {0} not deleted.

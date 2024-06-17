@@ -1,5 +1,7 @@
 ---
 title: SQL_CommunicationsArea class
+description: Implements SQLCA (SQL communications area)
+
 ---
 
 Implements SQLCA (SQL communications area)

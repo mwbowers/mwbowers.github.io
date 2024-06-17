@@ -1,5 +1,7 @@
 ---
 title: RpgTypeExtensions class
+description: RpgTypeExtensions class.
+
 ---
 
 RpgTypeExtensions class.

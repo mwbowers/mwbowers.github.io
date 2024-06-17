@@ -1,5 +1,7 @@
 ---
 title: MemberStringDescription enum
+description: Specifies a string member attribute.
+
 ---
 
 Specifies a string member attribute.

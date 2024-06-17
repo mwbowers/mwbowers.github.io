@@ -1,5 +1,7 @@
 ---
 title: CPF2900Exception class
+description: Defines the core behavior of CPF29xx exceptions.
+
 ---
 
 Defines the core behavior of CPF29xx exceptions.

@@ -1,5 +1,7 @@
 ---
 title: IJobLogger interface
+description: Defines a generalized way to to add messages to a log.
+
 ---
 
 Defines a generalized way to to add messages to a log.

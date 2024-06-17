@@ -1,5 +1,7 @@
 ---
 title: RecordModel class
+description: Defines the RecordModel class
+
 ---
 
 Defines the RecordModel class

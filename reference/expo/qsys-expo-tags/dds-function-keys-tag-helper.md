@@ -1,5 +1,7 @@
 ---
 title: DdsFunctionKeysTagHelper class
+description: Defines Application Aid Key banner
+
 ---
 
 Defines Application Aid Key banner

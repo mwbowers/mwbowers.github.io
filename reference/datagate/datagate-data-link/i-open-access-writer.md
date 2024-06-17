@@ -1,5 +1,7 @@
 ---
 title: IOpenAccessWriter interface
+description: Defines methods for writing data to an open access channel.
+
 ---
 
 Defines methods for writing data to an open access channel.

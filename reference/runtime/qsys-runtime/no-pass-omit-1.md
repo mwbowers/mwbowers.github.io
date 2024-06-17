@@ -1,5 +1,7 @@
 ---
 title: NoPassOmit&lt;T&gt; class
+description: Encapsulates a *OMIT wnd *NOPASS parameter.
+
 ---
 
 Encapsulates a *OMIT wnd *NOPASS parameter.

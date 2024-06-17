@@ -1,5 +1,7 @@
 ---
 title: SqlPreparedStatement class
+description: Used to implement SQL PREPARE statements.
+
 ---
 
 Used to implement SQL PREPARE statements.

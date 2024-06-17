@@ -1,5 +1,7 @@
 ---
 title: Constants class
+description: Contains constant values related to file opening attributes.
+
 ---
 
 Contains constant values related to file opening attributes.

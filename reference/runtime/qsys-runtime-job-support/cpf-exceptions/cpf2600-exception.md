@@ -1,5 +1,7 @@
 ---
 title: CPF2600Exception class
+description: Defines the core behavior of CPF26xx exceptions.
+
 ---
 
 Defines the core behavior of CPF26xx exceptions.

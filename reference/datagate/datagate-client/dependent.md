@@ -1,5 +1,7 @@
 ---
 title: Dependent class
+description: The `Dependent` class represents a dependency in the ASNA DataGate environment.
+
 ---
 
 The `Dependent` class represents a dependency in the ASNA DataGate environment.

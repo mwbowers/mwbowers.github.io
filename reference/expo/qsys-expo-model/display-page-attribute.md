@@ -1,5 +1,7 @@
 ---
 title: DisplayPageAttribute class
+description: Defines a Display Page Attribute 
+
 ---
 
 Defines a Display Page Attribute 

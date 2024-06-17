@@ -1,5 +1,7 @@
 ---
 title: IMember interface
+description: Defines the contract for managing a member in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing a member in the ASNA DataGate client.

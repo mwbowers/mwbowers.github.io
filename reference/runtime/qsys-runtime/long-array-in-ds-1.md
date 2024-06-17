@@ -1,5 +1,7 @@
 ---
 title: LongArrayInDS<T> struct
+description: Describes a fixed size array of long numbers contained in a DataStructure.
+
 ---
 
 Describes a fixed size array of long numbers contained in a DataStructure.

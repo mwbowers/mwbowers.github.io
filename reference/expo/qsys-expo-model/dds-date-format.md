@@ -1,5 +1,7 @@
 ---
 title: DdsDateFormat enum
+description: Define code names for the supported presentation Date Formattings.
+
 ---
 
 Define code names for the supported presentation Date Formattings.

@@ -1,5 +1,8 @@
 ---
 title: Transactor class
+description: Transaction support for use with ADO.NET commands in SqlObject
+instances via its Transaction property.
+
 ---
 
 Transaction support for use with ADO.NET commands in SqlObject

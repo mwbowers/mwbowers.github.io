@@ -1,5 +1,7 @@
 ---
 title: CPF8D05Exception class
+description: The exception that is thrown when Library {0} already exists.
+
 ---
 
 The exception that is thrown when Library {0} already exists.

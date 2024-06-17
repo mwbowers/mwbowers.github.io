@@ -1,5 +1,7 @@
 ---
 title: DdsGridRowTagHelper class
+description: Defines a Page Row where elements are positioned
+
 ---
 
 Defines a Page Row where elements are positioned

@@ -1,5 +1,7 @@
 ---
 title: DdsCheckboxFieldTagHelper class
+description: Defines a toggle two-state input element.
+
 ---
 
 Defines a toggle two-state input element.

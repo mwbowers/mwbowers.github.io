@@ -1,5 +1,7 @@
 ---
 title: Convert class
+description: Converts a base data type to another base data type, using RPG type conversion rules.
+
 ---
 
 Converts a base data type to another base data type, using RPG type conversion rules.

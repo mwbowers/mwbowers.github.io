@@ -1,5 +1,7 @@
 ---
 title: CPF2105Exception class
+description: The exception that is thrown when Object {1} in {0} type {2} not found.
+
 ---
 
 The exception that is thrown when Object {1} in {0} type {2} not found.

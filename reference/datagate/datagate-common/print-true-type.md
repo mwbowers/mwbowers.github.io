@@ -1,5 +1,7 @@
 ---
 title: PrintTrueType enum
+description: Specifies the handling of TrueType fonts during printing.
+
 ---
 
 Specifies the handling of TrueType fonts during printing.

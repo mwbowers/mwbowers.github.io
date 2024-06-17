@@ -1,5 +1,7 @@
 ---
 title: ShareTypes enum
+description: Specifies the type of sharing for a file or resource.
+
 ---
 
 Specifies the type of sharing for a file or resource.

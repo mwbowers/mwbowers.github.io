@@ -1,5 +1,7 @@
 ---
 title: OutOfProcessBatchJob class
+description: Defines the core behavior of an out of process batch job.
+
 ---
 
 Defines the core behavior of an out of process batch job.

@@ -1,5 +1,7 @@
 ---
 title: AdgSubTypes enum
+description: Specifies the subtype of an ADG object.
+
 ---
 
 Specifies the subtype of an ADG object.

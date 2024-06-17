@@ -1,5 +1,7 @@
 ---
 title: ProcedureSupport class
+description: Provides static methods to support finding a class used in dynamic calls (RPG&#39;s CallD).
+
 ---
 
 Provides static methods to support finding a class used in dynamic calls (RPG's CallD).

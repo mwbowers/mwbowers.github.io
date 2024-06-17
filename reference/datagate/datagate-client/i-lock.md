@@ -1,5 +1,7 @@
 ---
 title: ILock interface
+description: Defines the contract for managing a lock in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing a lock in the ASNA DataGate client.

@@ -1,5 +1,7 @@
 ---
 title: RecordFormatLevelAttribute class
+description: Defines the Record level value for a record in the class.
+
 ---
 
 Defines the Record level value for a record in the class.

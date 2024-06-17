@@ -1,5 +1,7 @@
 ---
 title: DisplayPageModel class
+description: Defines a specialized YellowPageModel class to provide support for fields in Records with data from the DataSet
+
 ---
 
 Defines a specialized YellowPageModel class to provide support for fields in Records with data from the DataSet

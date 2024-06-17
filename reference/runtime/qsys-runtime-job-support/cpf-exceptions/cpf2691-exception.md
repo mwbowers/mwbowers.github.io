@@ -1,5 +1,7 @@
 ---
 title: CPF2691Exception class
+description: The exception that is thrown when Rename of {0} type {1} did not complete.
+
 ---
 
 The exception that is thrown when Rename of {0} type {1} did not complete.

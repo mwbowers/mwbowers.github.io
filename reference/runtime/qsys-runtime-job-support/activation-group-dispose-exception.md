@@ -1,5 +1,7 @@
 ---
 title: ActivationGroupDisposeException class
+description: The exception that is thrown when an program has a null activation group at dispose time.
+
 ---
 
 The exception that is thrown when an program has a null activation group at dispose time.

@@ -1,5 +1,7 @@
 ---
 title: CPF2200Exception class
+description: Defines the core behavior of CPF22xx exceptions.
+
 ---
 
 Defines the core behavior of CPF22xx exceptions.

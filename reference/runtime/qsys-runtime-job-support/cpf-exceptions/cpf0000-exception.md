@@ -1,5 +1,7 @@
 ---
 title: CPF0000Exception class
+description: Defines the core behavior of all the CPFxxxx exceptions.
+
 ---
 
 Defines the core behavior of all the CPFxxxx exceptions.

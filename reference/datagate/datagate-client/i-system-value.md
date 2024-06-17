@@ -1,5 +1,7 @@
 ---
 title: ISystemValue interface
+description: Defines the contract for managing system values in the ASNA DataGate client.
+
 ---
 
 Defines the contract for managing system values in the ASNA DataGate client.

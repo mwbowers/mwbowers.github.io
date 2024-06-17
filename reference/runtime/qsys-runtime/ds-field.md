@@ -1,5 +1,7 @@
 ---
 title: DSField class
+description: Describes a field in a Data Structure.
+
 ---
 
 Describes a field in a Data Structure.

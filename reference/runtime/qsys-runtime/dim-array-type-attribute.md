@@ -1,5 +1,7 @@
 ---
 title: DimArrayTypeAttribute class
+description: A non-RPG class may stamp an array member with this attribute to be considered as a fixed-sized array by a consumer RPG program.
+
 ---
 
 A non-RPG class may stamp an array member with this attribute to be considered as a fixed-sized array by a consumer RPG program.

@@ -1,5 +1,7 @@
 ---
 title: FieldType class
+description: Represents the type of a field in a data structure.
+
 ---
 
 Represents the type of a field in a data structure.

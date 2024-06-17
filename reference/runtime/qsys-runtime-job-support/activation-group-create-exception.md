@@ -1,5 +1,7 @@
 ---
 title: ActivationGroupCreateException class
+description: The exception that is thrown when an activation could not be found or created.
+
 ---
 
 The exception that is thrown when an activation could not be found or created.

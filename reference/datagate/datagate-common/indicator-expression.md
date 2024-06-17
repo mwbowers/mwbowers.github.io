@@ -1,5 +1,9 @@
 ---
 title: IndicatorExpression class
+description: A condition is an ANDed grouping of two through nine indicators that
+must all be in effect (set off if N or ! is specified; set on if N
+or ! is not specified) before the field or keyword is selected. You can
+specify a maximum of nine indicators for each condit
 ---
 
 A condition is an ANDed grouping of two through nine indicators that

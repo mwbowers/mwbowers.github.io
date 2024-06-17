@@ -1,5 +1,7 @@
 ---
 title: CPF0001Exception class
+description: The exception that is thrown when an Error found on {0} command.  See Inner Exception.
+
 ---
 
 The exception that is thrown when an Error found on {0} command.  See Inner Exception.

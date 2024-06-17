@@ -1,5 +1,7 @@
 ---
 title: CPF7306Exception class
+description: The exception that is thrown when Member {0} not added to file {1} in {2}
+
 ---
 
 The exception that is thrown when Member {0} not added to file {1} in {2}
