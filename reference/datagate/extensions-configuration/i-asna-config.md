@@ -1,7 +1,6 @@
 ---
 title: IAsnaConfig interface
 description: Provides an interface for accessing ASNA configuration.
-
 ---
 
 Provides an interface for accessing ASNA configuration.

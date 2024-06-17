@@ -2,7 +2,6 @@
 title: dgException class
 description: The dgException class is a custom exception class that extends the base Exception class.
 It provides additional functionality for handling errors specific to the application.
-
 ---
 
 The dgException class is a custom exception class that extends the base Exception class.

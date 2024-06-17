@@ -1,7 +1,6 @@
 ---
 title: BatchOptions class
 description: Defines the options for a batch job.
-
 ---
 
 Defines the options for a batch job.

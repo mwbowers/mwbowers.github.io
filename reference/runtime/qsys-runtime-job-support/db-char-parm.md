@@ -1,7 +1,6 @@
 ---
 title: DBCharParm class
 description: Represents a parameter for a Character type.
-
 ---
 
 Represents a parameter for a Character type.

@@ -1,7 +1,6 @@
 ---
 title: IDSCallParm interface
 description: This interface should be implemented by any DataStructure class if an object of its type will be passed as a parameter to a program in the IBMi.
-
 ---
 
 This interface should be implemented by any DataStructure class if an object of its type will be passed as a parameter to a program in the IBMi.

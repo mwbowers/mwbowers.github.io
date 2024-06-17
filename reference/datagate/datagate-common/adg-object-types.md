@@ -1,7 +1,6 @@
 ---
 title: AdgObjectTypes enum
 description: Specifies the type of an ADG object.
-
 ---
 
 Specifies the type of an ADG object.

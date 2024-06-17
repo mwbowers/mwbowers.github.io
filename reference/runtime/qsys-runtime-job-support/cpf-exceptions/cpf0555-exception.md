@@ -1,7 +1,6 @@
 ---
 title: CPF0555Exception class
 description: The exception that is thrown when Date not in specified format or date not valid: {0}
-
 ---
 
 The exception that is thrown when Date not in specified format or date not valid: {0}

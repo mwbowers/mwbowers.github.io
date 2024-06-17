@@ -1,7 +1,6 @@
 ---
 title: IMonaServerConfig interface
 description: Exposes MonaServerConfig properties.
-
 ---
 
 Exposes MonaServerConfig properties.

@@ -1,7 +1,6 @@
 ---
 title: _HMS interface
 description: Describes the HMS date/time format in the declaration of date/time types.
-
 ---
 
 Describes the HMS date/time format in the declaration of date/time types.

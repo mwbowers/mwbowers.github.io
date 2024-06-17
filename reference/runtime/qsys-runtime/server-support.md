@@ -1,7 +1,6 @@
 ---
 title: ServerSupport enum
 description: For interactive applications that use a virtual terminal, this enum is used to select whether to start a server on the IBMi side.
-
 ---
 
 For interactive applications that use a virtual terminal, this enum is used to select whether to start a server on the IBMi side.

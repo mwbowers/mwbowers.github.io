@@ -1,7 +1,6 @@
 ---
 title: ServerSslLevel enum
 description: Specifies the SSL level for a server connection.
-
 ---
 
 Specifies the SSL level for a server connection.

@@ -1,7 +1,6 @@
 ---
 title: RedirectedException class
 description: Represents an exception used to indicate a redirection action within the application.
-
 ---
 
 Represents an exception used to indicate a redirection action within the application.

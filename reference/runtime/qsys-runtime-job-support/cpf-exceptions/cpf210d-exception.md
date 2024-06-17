@@ -1,7 +1,6 @@
 ---
 title: CPF210DException class
 description: The exception that is thrown when Library {0} in use.
-
 ---
 
 The exception that is thrown when Library {0} in use.

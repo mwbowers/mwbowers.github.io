@@ -1,7 +1,6 @@
 ---
 title: CPF338CException class
 description: The exception that is thrown when Internal spool control file/folder &#39;{0}&#39; not accessible.
-
 ---
 
 The exception that is thrown when Internal spool control file/folder '{0}' not accessible.

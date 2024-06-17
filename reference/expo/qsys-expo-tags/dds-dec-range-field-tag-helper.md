@@ -1,7 +1,6 @@
 ---
 title: DdsDecRangeFieldTagHelper class
 description: Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field. 
-
 ---
 
 Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field. 

@@ -1,7 +1,6 @@
 ---
 title: DateTimeSeparator enum
 description: DateTimeSeparator describes the character separator to use.
-
 ---
 
 DateTimeSeparator describes the character separator to use.

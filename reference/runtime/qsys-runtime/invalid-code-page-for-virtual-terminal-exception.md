@@ -1,7 +1,6 @@
 ---
 title: InvalidCodePageForVirtualTerminalException class
 description: Code page 0 is not valid when starting interactive job without server support.
-
 ---
 
 Code page 0 is not valid when starting interactive job without server support.

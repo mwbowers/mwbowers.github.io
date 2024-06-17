@@ -1,7 +1,6 @@
 ---
 title: DLOType enum
 description: Specifies the type of a DLO document.
-
 ---
 
 Specifies the type of a DLO document.

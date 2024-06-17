@@ -1,7 +1,6 @@
 ---
 title: DdsTimeFormat enum
 description: Define code names for the supported presentation Time Formattings.
-
 ---
 
 Define code names for the supported presentation Time Formattings.

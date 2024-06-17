@@ -1,7 +1,6 @@
 ---
 title: IFixedArrayBase<T1, T2> interface
 description: Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional.
-
 ---
 
 Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional.

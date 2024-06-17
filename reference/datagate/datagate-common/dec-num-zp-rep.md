@@ -3,7 +3,6 @@ title: DecNumZPRep class
 description: DecNumZPRep provides methods for interpreting the Acceler8DB &quot;ZPREP&quot;
 code for packed and zoned decimal data representation, thereby
 describing the format of these data representations.
-
 ---
 
 DecNumZPRep provides methods for interpreting the Acceler8DB "ZPREP"

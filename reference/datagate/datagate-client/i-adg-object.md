@@ -1,7 +1,6 @@
 ---
 title: IAdgObject interface
 description: Defines the properties and methods for an ADG (ASNA DataGate) object.
-
 ---
 
 Defines the properties and methods for an ADG (ASNA DataGate) object.

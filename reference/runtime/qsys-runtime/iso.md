@@ -1,7 +1,6 @@
 ---
 title: _ISO interface
 description: Describes the ISO date/time format in the declaration of date/time types.
-
 ---
 
 Describes the ISO date/time format in the declaration of date/time types.

@@ -1,7 +1,6 @@
 ---
 title: EndOperationException class
 description: Defines the core behavior of the the base class that is thrown to unwind the program call stack.
-
 ---
 
 Defines the core behavior of the the base class that is thrown to unwind the program call stack.

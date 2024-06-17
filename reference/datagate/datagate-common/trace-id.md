@@ -1,7 +1,6 @@
 ---
 title: TraceID enum
 description: Enumerates the types of trace identifiers used in the application.
-
 ---
 
 Enumerates the types of trace identifiers used in the application.

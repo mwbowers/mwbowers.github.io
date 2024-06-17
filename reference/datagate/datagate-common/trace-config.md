@@ -1,7 +1,6 @@
 ---
 title: TraceConfig enum
 description: Enumerates the types of trace configurations used in the application.
-
 ---
 
 Enumerates the types of trace configurations used in the application.

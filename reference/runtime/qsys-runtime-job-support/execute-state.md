@@ -1,7 +1,6 @@
 ---
 title: ExecuteState enum
 description: Indicates the execution state of a job.
-
 ---
 
 Indicates the execution state of a job.

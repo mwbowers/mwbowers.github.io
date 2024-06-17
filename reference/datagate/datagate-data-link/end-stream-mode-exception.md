@@ -1,7 +1,6 @@
 ---
 title: EndStreamModeException class
 description: Represents errors that occur when the end of a stream mode is reached unexpectedly.
-
 ---
 
 Represents errors that occur when the end of a stream mode is reached unexpectedly.

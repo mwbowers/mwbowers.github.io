@@ -1,7 +1,6 @@
 ---
 title: UnlockedDataAreaException class
 description: DataArea Exception issued when attempting to unlock a DataArea that is not locked.
-
 ---
 
 DataArea Exception issued when attempting to unlock a DataArea that is not locked.

@@ -1,7 +1,6 @@
 ---
 title: Message class
 description: Represent a message sent by a program.
-
 ---
 
 Represent a message sent by a program.

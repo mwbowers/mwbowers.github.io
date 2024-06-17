@@ -1,7 +1,6 @@
 ---
 title: QueryKeyFieldsLengthException class
 description: Expecting a string in the format: &#39;VALUE1 ORDER1 ... VALUEn ORDERn&#39;.
-
 ---
 
 Expecting a string in the format: 'VALUE1 ORDER1 ... VALUEn ORDERn'.

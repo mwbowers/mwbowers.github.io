@@ -1,7 +1,6 @@
 ---
 title: CPF3357Exception class
 description: The exception that is thrown when Output queue {0} does not exist.
-
 ---
 
 The exception that is thrown when Output queue {0} does not exist.

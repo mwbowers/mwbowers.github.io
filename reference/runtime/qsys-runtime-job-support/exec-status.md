@@ -1,7 +1,6 @@
 ---
 title: ExecStatus enum
 description: Describes the execution status of a job.
-
 ---
 
 Describes the execution status of a job.

@@ -1,7 +1,6 @@
 ---
 title: CPF2111Exception class
 description: The exception that is thrown when Library {0} already exists.
-
 ---
 
 The exception that is thrown when Library {0} already exists.

@@ -1,5 +1,6 @@
 ---
 title: User Defined Command translated to a CALL to function.
+description: Describes one of the alternatives to translate User Defined commands (calling a class function).
 ---
 
 The migrator provides a new `Base` class that has functions (methods in C# terms) for User Defined Command(s).

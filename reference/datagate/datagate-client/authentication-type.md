@@ -1,7 +1,6 @@
 ---
 title: AuthenticationType enum
 description: Specifies the type of authentication used in the ASNA DataGate client.
-
 ---
 
 Specifies the type of authentication used in the ASNA DataGate client.

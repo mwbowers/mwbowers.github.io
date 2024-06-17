@@ -1,7 +1,6 @@
 ---
 title: IntegratedFileSystem class
 description: Holds the Integrated File System (IFS) root folder.
-
 ---
 
 Holds the Integrated File System (IFS) root folder.

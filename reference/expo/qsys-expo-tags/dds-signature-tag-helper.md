@@ -1,7 +1,6 @@
 ---
 title: DdsSignatureTagHelper class
 description: Defines an element where a signature can be captured
-
 ---
 
 Defines an element where a signature can be captured

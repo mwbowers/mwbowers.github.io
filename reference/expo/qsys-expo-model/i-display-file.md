@@ -1,7 +1,6 @@
 ---
 title: IDisplayFile interface
 description: Exposes DisplayFile properties and methods
-
 ---
 
 Exposes DisplayFile properties and methods

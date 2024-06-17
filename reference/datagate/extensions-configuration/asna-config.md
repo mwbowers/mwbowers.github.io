@@ -1,7 +1,6 @@
 ---
 title: AsnaConfig class
 description: Represents the ASNA configuration.
-
 ---
 
 Represents the ASNA configuration.

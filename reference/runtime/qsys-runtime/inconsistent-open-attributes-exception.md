@@ -1,7 +1,6 @@
 ---
 title: InconsistentOpenAttributesException class
 description: The following Open attributes were inconsistent with the Query File: -attributes- exception.
-
 ---
 
 The following Open attributes were inconsistent with the Query File: -attributes- exception.

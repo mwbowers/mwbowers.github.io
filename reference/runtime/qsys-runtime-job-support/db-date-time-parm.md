@@ -1,7 +1,6 @@
 ---
 title: DBDateTimeParm class
 description: Represents a parameter for a date-time type.
-
 ---
 
 Represents a parameter for a date-time type.

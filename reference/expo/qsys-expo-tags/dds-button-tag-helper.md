@@ -1,7 +1,6 @@
 ---
 title: DdsButtonTagHelper class
 description: Defines a clickable element that can be configured as a replacement of a DdsField. 
-
 ---
 
 Defines a clickable element that can be configured as a replacement of a DdsField. 

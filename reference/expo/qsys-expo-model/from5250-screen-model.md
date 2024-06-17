@@ -1,7 +1,6 @@
 ---
 title: From5250Screen_Model class
 description: Defines  the From5250Screen_Model class
-
 ---
 
 Defines  the From5250Screen_Model class

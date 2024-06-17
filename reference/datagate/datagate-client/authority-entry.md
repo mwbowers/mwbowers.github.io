@@ -1,7 +1,6 @@
 ---
 title: AuthorityEntry class
 description: The AuthorityEntry class describes a user or group authorization to a database object.
-
 ---
 
 The AuthorityEntry class describes a user or group authorization to a database object.

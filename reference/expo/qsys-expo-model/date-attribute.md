@@ -1,7 +1,6 @@
 ---
 title: DateAttribute class
 description: Provides Date Attribute (for Properties)
-
 ---
 
 Provides Date Attribute (for Properties)

@@ -1,7 +1,6 @@
 ---
 title: RecordAttribute class
 description: Defines  the Record Attribute on a type
-
 ---
 
 Defines  the Record Attribute on a type

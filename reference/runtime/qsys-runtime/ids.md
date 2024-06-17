@@ -1,7 +1,6 @@
 ---
 title: IDS interface
 description: Defines the basic set of operations for a data structure.
-
 ---
 
 Defines the basic set of operations for a data structure.

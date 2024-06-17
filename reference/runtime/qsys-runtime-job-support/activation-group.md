@@ -1,7 +1,6 @@
 ---
 title: ActivationGroup class
 description: Provides the facilities to organize the instances of programs and service programs into related groups.
-
 ---
 
 Provides the facilities to organize the instances of programs and service programs into related groups.

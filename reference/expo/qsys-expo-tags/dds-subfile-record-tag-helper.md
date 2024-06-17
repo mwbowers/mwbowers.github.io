@@ -1,7 +1,6 @@
 ---
 title: DdsSubfileRecordTagHelper class
 description: Defines a Subfile record element
-
 ---
 
 Defines a Subfile record element

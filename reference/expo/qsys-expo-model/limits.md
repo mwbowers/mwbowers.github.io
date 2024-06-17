@@ -1,7 +1,6 @@
 ---
 title: Limits enum
 description: Specifies numeric limits used by EditCode data formatting.
-
 ---
 
 Specifies numeric limits used by EditCode data formatting.

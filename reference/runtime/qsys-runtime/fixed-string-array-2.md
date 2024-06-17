@@ -1,7 +1,6 @@
 ---
 title: FixedStringArray<T1, T2> struct
 description: Defines the functionality of a fixed-sized unidimensional array of FixedString elements.
-
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedString elements.

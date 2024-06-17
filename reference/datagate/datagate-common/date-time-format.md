@@ -1,7 +1,6 @@
 ---
 title: DateTimeFormat enum
 description: Specifies the format for a date/time field.
-
 ---
 
 Specifies the format for a date/time field.

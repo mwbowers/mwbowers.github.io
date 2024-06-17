@@ -1,7 +1,6 @@
 ---
 title: InvalidFileOperationException class
 description: Invalid Operation: -operation- on file: -filename- exception.
-
 ---
 
 Invalid Operation: -operation- on file: -filename- exception.

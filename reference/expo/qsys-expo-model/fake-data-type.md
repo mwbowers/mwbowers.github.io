@@ -1,7 +1,6 @@
 ---
 title: FakeDataType enum
 description: Specifies the type of fake data to use for the display pages.
-
 ---
 
 Specifies the type of fake data to use for the display pages.

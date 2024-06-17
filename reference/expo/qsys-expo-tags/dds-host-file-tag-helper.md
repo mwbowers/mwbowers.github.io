@@ -1,7 +1,6 @@
 ---
 title: DdsHostFileTagHelper class
 description: Renders a file stored on the Host server.
-
 ---
 
 Renders a file stored on the Host server.

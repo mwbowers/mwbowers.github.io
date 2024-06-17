@@ -1,7 +1,6 @@
 ---
 title: CopyMemberOptions enum
 description: Specifies the options for copying members.
-
 ---
 
 Specifies the options for copying members.

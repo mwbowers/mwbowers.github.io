@@ -1,7 +1,6 @@
 ---
 title: MonaServerConfig class
 description: Provides Mona-Server Configuration functionality.
-
 ---
 
 Provides Mona-Server Configuration functionality.

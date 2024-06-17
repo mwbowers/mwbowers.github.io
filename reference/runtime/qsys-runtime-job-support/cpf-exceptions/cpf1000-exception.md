@@ -1,7 +1,6 @@
 ---
 title: CPF1000Exception class
 description: Defines the core behavior of CPF10xx exceptions.
-
 ---
 
 Defines the core behavior of CPF10xx exceptions.

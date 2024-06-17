@@ -1,7 +1,6 @@
 ---
 title: InvalidDSFieldsException class
 description: Exception that is thrown when a data structure contains a field of a not supported type.
-
 ---
 
 Exception that is thrown when a data structure contains a field of a not supported type.

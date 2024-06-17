@@ -1,7 +1,6 @@
 ---
 title: DgNegotiateException class
 description: Specialized Exception dealing with DataGate protocol negotiation.
-
 ---
 
 Specialized Exception dealing with DataGate protocol negotiation.

@@ -1,7 +1,6 @@
 ---
 title: LDACapacityException class
 description: The exception that is thrown when a field being get or set on the LDA is beyond the LDA length.
-
 ---
 
 The exception that is thrown when a field being get or set on the LDA is beyond the LDA length.

@@ -1,7 +1,6 @@
 ---
 title: CPF9870Exception class
 description: The exception that is thrown when Object {0} type {2} already exists in library {1}
-
 ---
 
 The exception that is thrown when Object {0} type {2} already exists in library {1}

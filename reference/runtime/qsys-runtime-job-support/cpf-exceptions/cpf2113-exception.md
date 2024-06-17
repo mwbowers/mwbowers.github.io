@@ -1,7 +1,6 @@
 ---
 title: CPF2113Exception class
 description: The exception that is thrown when Cannot allocate library {0}
-
 ---
 
 The exception that is thrown when Cannot allocate library {0}

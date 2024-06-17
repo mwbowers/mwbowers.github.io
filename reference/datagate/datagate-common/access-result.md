@@ -1,7 +1,6 @@
 ---
 title: AccessResult enum
 description: Specifies the result of an access operation.
-
 ---
 
 Specifies the result of an access operation.

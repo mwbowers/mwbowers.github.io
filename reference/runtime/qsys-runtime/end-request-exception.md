@@ -1,7 +1,6 @@
 ---
 title: EndRequestException class
 description: The exception that is thrown for an EndRequest operation.
-
 ---
 
 The exception that is thrown for an EndRequest operation.

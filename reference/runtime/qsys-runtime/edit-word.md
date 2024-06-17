@@ -1,7 +1,6 @@
 ---
 title: EditWord class
 description: EditWord class.
-
 ---
 
 EditWord class.

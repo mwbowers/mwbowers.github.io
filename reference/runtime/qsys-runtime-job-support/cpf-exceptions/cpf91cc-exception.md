@@ -1,7 +1,6 @@
 ---
 title: CPF91CCException class
 description: The exception that is thrown when Command did not complete successfully.
-
 ---
 
 The exception that is thrown when Command did not complete successfully.

@@ -1,7 +1,6 @@
 ---
 title: BuiltInMethods class
 description: Contains extension methods for handling Built-in functions according to RPG semantics.
-
 ---
 
 Contains extension methods for handling Built-in functions according to RPG semantics.

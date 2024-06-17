@@ -1,7 +1,6 @@
 ---
 title: CPF3092Exception class
 description: The exception that is thrown when FILEATR specified not valid for {0} file {1}
-
 ---
 
 The exception that is thrown when FILEATR specified not valid for {0} file {1}

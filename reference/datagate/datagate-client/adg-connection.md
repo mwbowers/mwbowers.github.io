@@ -1,7 +1,6 @@
 ---
 title: AdgConnection class
 description: The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program. 
-
 ---
 
 The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program. 

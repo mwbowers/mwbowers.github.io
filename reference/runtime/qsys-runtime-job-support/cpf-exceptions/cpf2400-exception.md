@@ -1,7 +1,6 @@
 ---
 title: CPF2400Exception class
 description: Defines the core behavior of CPF24xx exceptions.
-
 ---
 
 Defines the core behavior of CPF24xx exceptions.

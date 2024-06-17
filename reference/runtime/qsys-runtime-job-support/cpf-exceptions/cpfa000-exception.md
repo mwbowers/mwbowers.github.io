@@ -1,7 +1,6 @@
 ---
 title: CPFA000Exception class
 description: Defines the core behavior of CPFA0xx exceptions.
-
 ---
 
 Defines the core behavior of CPFA0xx exceptions.

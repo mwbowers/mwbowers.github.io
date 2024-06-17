@@ -1,7 +1,6 @@
 ---
 title: InitMemberOptions enum
 description: Specifies the options to use when initializing a member.
-
 ---
 
 Specifies the options to use when initializing a member.

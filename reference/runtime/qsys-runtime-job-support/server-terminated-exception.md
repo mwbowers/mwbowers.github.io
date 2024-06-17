@@ -1,7 +1,6 @@
 ---
 title: ServerTerminatedException class
 description: The exception that is thrown to signal the host server is being shut down.
-
 ---
 
 The exception that is thrown to signal the host server is being shut down.

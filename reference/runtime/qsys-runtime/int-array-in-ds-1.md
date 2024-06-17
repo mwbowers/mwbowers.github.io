@@ -1,7 +1,6 @@
 ---
 title: IntArrayInDS<T> struct
 description: Describes a fixed size array of integers contained in a DataStructure.
-
 ---
 
 Describes a fixed size array of integers contained in a DataStructure.

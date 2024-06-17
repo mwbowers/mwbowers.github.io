@@ -1,7 +1,6 @@
 ---
 title: FixedTime<T1, T2> struct
 description: Holds a fixed-time value in the specified format and with the given separator.
-
 ---
 
 Holds a fixed-time value in the specified format and with the given separator.

@@ -1,7 +1,6 @@
 ---
 title: FixedDateMethods class
 description: Contains extension methods for handling RPG operations for FixedDate values.
-
 ---
 
 Contains extension methods for handling RPG operations for FixedDate values.

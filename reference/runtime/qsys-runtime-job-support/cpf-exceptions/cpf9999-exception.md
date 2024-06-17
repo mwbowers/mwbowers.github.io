@@ -1,7 +1,6 @@
 ---
 title: CPF9999Exception class
 description: The exception that is thrown when a generic abnormal condition is found.
-
 ---
 
 The exception that is thrown when a generic abnormal condition is found.

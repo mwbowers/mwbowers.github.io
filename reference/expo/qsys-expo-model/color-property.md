@@ -1,7 +1,6 @@
 ---
 title: ColorProperty class
 description: Defines ColorProperty
-
 ---
 
 Defines ColorProperty

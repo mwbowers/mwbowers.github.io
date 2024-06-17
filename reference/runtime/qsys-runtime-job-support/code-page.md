@@ -1,7 +1,6 @@
 ---
 title: CodePage class
 description: Provides facilities to probe an IBM i file&#39;s code page.
-
 ---
 
 Provides facilities to probe an IBM i file's code page.

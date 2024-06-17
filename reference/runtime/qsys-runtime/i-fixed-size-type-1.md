@@ -1,7 +1,6 @@
 ---
 title: IFixedSizeType<T> interface
 description: Declares the basic functionality of a fixed-size generic type.
-
 ---
 
 Declares the basic functionality of a fixed-size generic type.

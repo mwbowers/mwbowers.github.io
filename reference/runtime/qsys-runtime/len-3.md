@@ -1,7 +1,6 @@
 ---
 title: Len&lt;T1, T2, T3&gt; class
 description: Defines a 3-digit length, from 100 to 999, to be used in the declaration of fixed-length types.
-
 ---
 
 Defines a 3-digit length, from 100 to 999, to be used in the declaration of fixed-length types.

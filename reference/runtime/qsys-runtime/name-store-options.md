@@ -1,7 +1,6 @@
 ---
 title: NameStoreOptions enum
 description: Defines flags that tell the name store which name sources to use.
-
 ---
 
 Defines flags that tell the name store which name sources to use.

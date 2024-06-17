@@ -1,7 +1,6 @@
 ---
 title: CharArrayInDS<T> struct
 description: Describes a fixed size array of characters contained in a DataStructure.
-
 ---
 
 Describes a fixed size array of characters contained in a DataStructure.

@@ -1,7 +1,6 @@
 ---
 title: CPF2189Exception class
 description: The exception that is thrown when Not authorized to object {0} in {1} type {2}
-
 ---
 
 The exception that is thrown when Not authorized to object {0} in {1} type {2}

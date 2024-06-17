@@ -1,7 +1,6 @@
 ---
 title: IFixedSizeType interface
 description: Declares the basic functionality of a fixed-size type.
-
 ---
 
 Declares the basic functionality of a fixed-size type.

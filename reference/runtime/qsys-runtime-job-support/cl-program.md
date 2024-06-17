@@ -1,7 +1,6 @@
 ---
 title: CLProgram class
 description: Defines the core behavior of programs migrated from CL program .
-
 ---
 
 Defines the core behavior of programs migrated from CL program .

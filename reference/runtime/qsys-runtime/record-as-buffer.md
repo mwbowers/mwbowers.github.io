@@ -1,7 +1,6 @@
 ---
 title: RecordAsBuffer class
 description: Defines operations to move data between a file record, a row in a dataset, and a string buffer.
-
 ---
 
 Defines operations to move data between a file record, a row in a dataset, and a string buffer.

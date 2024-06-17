@@ -1,7 +1,6 @@
 ---
 title: IClientMonitor interface
 description: Defines the contract for monitoring a client in the ASNA DataGate client.
-
 ---
 
 Defines the contract for monitoring a client in the ASNA DataGate client.

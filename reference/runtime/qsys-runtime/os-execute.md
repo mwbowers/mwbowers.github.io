@@ -1,7 +1,6 @@
 ---
 title: OSExecute class
 description: This class contains methods to start an external process.
-
 ---
 
 This class contains methods to start an external process.

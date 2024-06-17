@@ -1,7 +1,6 @@
 ---
 title: ExpoCssClassName class
 description: Defines ExpoCssClassName class
-
 ---
 
 Defines ExpoCssClassName class

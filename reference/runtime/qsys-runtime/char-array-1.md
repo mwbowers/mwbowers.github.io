@@ -1,7 +1,6 @@
 ---
 title: CharArray<T> struct
 description: Represents a unidimensional fixed-size array of characters.
-
 ---
 
 Represents a unidimensional fixed-size array of characters.

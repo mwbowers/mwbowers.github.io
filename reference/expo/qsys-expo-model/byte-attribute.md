@@ -1,7 +1,6 @@
 ---
 title: ByteAttribute class
 description: Provides Byte Attributes (for Properties)
-
 ---
 
 Provides Byte Attributes (for Properties)

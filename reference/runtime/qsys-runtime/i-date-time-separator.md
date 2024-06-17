@@ -1,7 +1,6 @@
 ---
 title: IDateTimeSeparator interface
 description: Base interface for interfaces used as date/time separators in the declaration of date/time types.
-
 ---
 
 Base interface for interfaces used as date/time separators in the declaration of date/time types.

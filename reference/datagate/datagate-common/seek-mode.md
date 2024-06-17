@@ -1,7 +1,6 @@
 ---
 title: SeekMode enum
 description: Specifies the mode for seeking data in a data structure.
-
 ---
 
 Specifies the mode for seeking data in a data structure.

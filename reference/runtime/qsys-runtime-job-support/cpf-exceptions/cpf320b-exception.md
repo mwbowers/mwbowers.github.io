@@ -1,7 +1,6 @@
 ---
 title: CPF320BException class
 description: The exception that is thrown when Operation was not valid for database file {0}.
-
 ---
 
 The exception that is thrown when Operation was not valid for database file {0}.

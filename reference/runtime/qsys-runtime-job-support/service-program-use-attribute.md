@@ -1,7 +1,6 @@
 ---
 title: ServiceProgramUseAttribute class
 description: Attribute to indicate the list of service programs to which a program is bound.
-
 ---
 
 Attribute to indicate the list of service programs to which a program is bound.

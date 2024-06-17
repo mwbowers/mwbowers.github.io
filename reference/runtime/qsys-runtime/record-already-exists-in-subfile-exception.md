@@ -1,7 +1,6 @@
 ---
 title: RecordAlreadyExistsInSubfileException class
 description: Record already exists in subfile: -subfile record name- exception.
-
 ---
 
 Record already exists in subfile: -subfile record name- exception.

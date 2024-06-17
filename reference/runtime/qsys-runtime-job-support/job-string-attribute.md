@@ -1,7 +1,6 @@
 ---
 title: JobStringAttribute enum
 description: Specifies a string job attribute.
-
 ---
 
 Specifies a string job attribute.

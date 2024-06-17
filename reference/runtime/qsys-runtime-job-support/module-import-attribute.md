@@ -1,7 +1,6 @@
 ---
 title: ModuleImportAttribute class
 description: Attribute to indicate the list of (external) modules this program will contain.
-
 ---
 
 Attribute to indicate the list of (external) modules this program will contain.

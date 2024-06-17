@@ -1,7 +1,6 @@
 ---
 title: IConverterFactory interface
 description: Defines the functionality to create an object that implements the IConverter interface.
-
 ---
 
 Defines the functionality to create an object that implements the IConverter interface.

@@ -1,7 +1,6 @@
 ---
 title: DateTimeDataKind enum
 description: Describes the valid values for Kind in a date/time fixed type.
-
 ---
 
 Describes the valid values for Kind in a date/time fixed type.

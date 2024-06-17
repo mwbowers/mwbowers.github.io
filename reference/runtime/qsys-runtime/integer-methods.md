@@ -1,7 +1,6 @@
 ---
 title: IntegerMethods class
 description: Contains extension methods for handling RPG operations and conversions for Integer (2, 4, and 8-byte long) values.
-
 ---
 
 Contains extension methods for handling RPG operations and conversions for Integer (2, 4, and 8-byte long) values.

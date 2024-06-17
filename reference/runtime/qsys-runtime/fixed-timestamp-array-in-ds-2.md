@@ -1,7 +1,6 @@
 ---
 title: FixedTimestampArrayInDS<T1, T2> struct
 description: Describes a fixed size array of FixedTimestamp contained in a DataStructure.
-
 ---
 
 Describes a fixed size array of FixedTimestamp contained in a DataStructure.

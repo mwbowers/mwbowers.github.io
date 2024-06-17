@@ -1,7 +1,6 @@
 ---
 title: _Blank interface
 description: Describes the Blank as date/time separator in the declaration of date/time types.
-
 ---
 
 Describes the Blank as date/time separator in the declaration of date/time types.

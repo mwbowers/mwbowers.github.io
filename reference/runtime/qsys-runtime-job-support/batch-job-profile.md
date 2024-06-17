@@ -1,7 +1,6 @@
 ---
 title: BatchJobProfile class
 description: Provides the facilities to configure and launch a batch job.
-
 ---
 
 Provides the facilities to configure and launch a batch job.

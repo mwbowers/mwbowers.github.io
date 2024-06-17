@@ -1,7 +1,6 @@
 ---
 title: RecordBaseTagHelper class
 description: Provides common properties for DdsRecords
-
 ---
 
 Provides common properties for DdsRecords

@@ -1,7 +1,6 @@
 ---
 title: Spooler class
 description: Provides the infrastructure to manage spooled output from print files. 
-
 ---
 
 Provides the infrastructure to manage spooled output from print files. 

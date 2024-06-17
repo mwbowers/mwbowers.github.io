@@ -3,7 +3,6 @@ title: DataRowColumnComparer&lt;T&gt; class
 description: This minor variation of the System.Data.DataRowComparer&lt;T&gt; class
 implements IEqualityComparer&lt;T&gt; using value based semantics when
 comparing certain columns of DataRow instances.
-
 ---
 
 This minor variation of the System.Data.DataRowComparer<T> class

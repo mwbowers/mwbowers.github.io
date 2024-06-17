@@ -1,7 +1,6 @@
 ---
 title: _EUR interface
 description: Describes the EUR date/time format in the declaration of date/time types.
-
 ---
 
 Describes the EUR date/time format in the declaration of date/time types.

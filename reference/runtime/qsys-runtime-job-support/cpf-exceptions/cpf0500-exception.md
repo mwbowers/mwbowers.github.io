@@ -1,7 +1,6 @@
 ---
 title: CPF0500Exception class
 description: Defines the core behavior of CPF05xx exceptions.
-
 ---
 
 Defines the core behavior of CPF05xx exceptions.

@@ -1,7 +1,6 @@
 ---
 title: CPF8A12Exception class
 description: The exception that is thrown when Document {0} in folder {1} not copied.
-
 ---
 
 The exception that is thrown when Document {0} in folder {1} not copied.

@@ -1,7 +1,6 @@
 ---
 title: ReadEqualMode enum
 description: Specifies the mode for reading equal data.
-
 ---
 
 Specifies the mode for reading equal data.

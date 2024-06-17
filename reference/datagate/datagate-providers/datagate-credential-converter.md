@@ -1,7 +1,6 @@
 ---
 title: DataGateCredentialConverter class
 description: Provides a converter for DataGate credentials.
-
 ---
 
 Provides a converter for DataGate credentials.

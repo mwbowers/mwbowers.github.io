@@ -1,7 +1,6 @@
 ---
 title: JobFrameworkException class
 description: Defined the core behavior of exceptions thrown by Monarch Base and provides a base for derived exceptions.
-
 ---
 
 Defined the core behavior of exceptions thrown by Monarch Base and provides a base for derived exceptions.

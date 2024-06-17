@@ -1,7 +1,6 @@
 ---
 title: CPF9100Exception class
 description: Defines the core behavior of CPF91xx exceptions.
-
 ---
 
 Defines the core behavior of CPF91xx exceptions.

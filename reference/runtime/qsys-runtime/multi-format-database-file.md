@@ -1,7 +1,6 @@
 ---
 title: MultiFormatDatabaseFile class
 description: Represents a multiformat Database data file. It contains methods to handle all Input and Output operations on the file. 
-
 ---
 
 Represents a multiformat Database data file. It contains methods to handle all Input and Output operations on the file. 

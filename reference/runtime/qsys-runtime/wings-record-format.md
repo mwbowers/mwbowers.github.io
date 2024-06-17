@@ -1,7 +1,6 @@
 ---
 title: WingsRecordFormat class
 description: Contains functionality to construct the WRF, an XML representation of a file.
-
 ---
 
 Contains functionality to construct the WRF, an XML representation of a file.

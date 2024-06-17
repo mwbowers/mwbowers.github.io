@@ -1,7 +1,6 @@
 ---
 title: WorkstationFile class
 description: Represents a Workstation file. It contains methods to handle all Input and Output operations on the file.
-
 ---
 
 Represents a Workstation file. It contains methods to handle all Input and Output operations on the file.

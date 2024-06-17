@@ -1,7 +1,6 @@
 ---
 title: ActivationManager class
 description: Provides the facilities to manage the instances of programs and service programs.
-
 ---
 
 Provides the facilities to manage the instances of programs and service programs.

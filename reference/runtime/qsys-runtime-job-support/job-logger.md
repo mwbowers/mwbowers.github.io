@@ -1,7 +1,6 @@
 ---
 title: JobLogger class
 description: Defines the core behavior of a job message logger and provides a base for derived classes.
-
 ---
 
 Defines the core behavior of a job message logger and provides a base for derived classes.

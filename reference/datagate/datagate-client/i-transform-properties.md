@@ -1,7 +1,6 @@
 ---
 title: ITransformProperties interface
 description: Defines the contract for managing transform properties in the ASNA DataGate client.
-
 ---
 
 Defines the contract for managing transform properties in the ASNA DataGate client.

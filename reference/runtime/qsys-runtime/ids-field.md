@@ -1,7 +1,6 @@
 ---
 title: IDSField interface
 description: Describes the common operations over a field in a Data Structure.
-
 ---
 
 Describes the common operations over a field in a Data Structure.

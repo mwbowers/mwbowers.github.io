@@ -1,7 +1,6 @@
 ---
 title: UnsupportedOperationException class
 description: The exception that is thrown when an unsupported operation is attempted.
-
 ---
 
 The exception that is thrown when an unsupported operation is attempted.

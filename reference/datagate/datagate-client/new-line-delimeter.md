@@ -1,7 +1,6 @@
 ---
 title: NewLineDelimeter class
 description: Represents a newline delimiter in a data stream.
-
 ---
 
 Represents a newline delimiter in a data stream.

@@ -1,5 +1,6 @@
 ---
 title: User Defined Command translated to a CALL to Execute method on new Class.
+description: Describes one of the alternatives to translate User Defined commands (calling a class method).
 ---
 
 The migrator provides a new class that has properties for all possible parameters the User Defined command may have.

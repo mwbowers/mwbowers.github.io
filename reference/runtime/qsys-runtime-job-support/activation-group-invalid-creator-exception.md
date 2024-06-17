@@ -1,7 +1,6 @@
 ---
 title: ActivationGroupInvalidCreatorException class
 description: The exception that is thrown when an activation group&#39;s dynamic creator is being overwritten.
-
 ---
 
 The exception that is thrown when an activation group's dynamic creator is being overwritten.

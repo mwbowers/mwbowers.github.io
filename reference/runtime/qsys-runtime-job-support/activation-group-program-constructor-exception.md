@@ -1,7 +1,6 @@
 ---
 title: ActivationGroupProgramConstructorException class
 description: The exception that is thrown when a program could not be constructed.
-
 ---
 
 The exception that is thrown when a program could not be constructed.

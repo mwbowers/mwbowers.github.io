@@ -1,7 +1,6 @@
 ---
 title: CPF3300Exception class
 description: Defines the core behavior of CPF33xx exceptions.
-
 ---
 
 Defines the core behavior of CPF33xx exceptions.

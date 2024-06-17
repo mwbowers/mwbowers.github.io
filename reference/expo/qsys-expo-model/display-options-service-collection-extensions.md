@@ -1,7 +1,6 @@
 ---
 title: DisplayOptionsServiceCollectionExtensions class
 description: Provides helper class to assist server configuration
-
 ---
 
 Provides helper class to assist server configuration

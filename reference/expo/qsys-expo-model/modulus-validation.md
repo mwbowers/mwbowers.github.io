@@ -1,7 +1,6 @@
 ---
 title: ModulusValidation enum
 description: Specifies the type of modulus validation
-
 ---
 
 Specifies the type of modulus validation

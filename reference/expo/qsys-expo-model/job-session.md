@@ -1,7 +1,6 @@
 ---
 title: JobSession class
 description: Stores user data while the user navigates the application. JobSession state uses a store maintained by the Job to persist data across requests.
-
 ---
 
 Stores user data while the user navigates the application. JobSession state uses a store maintained by the Job to persist data across requests.

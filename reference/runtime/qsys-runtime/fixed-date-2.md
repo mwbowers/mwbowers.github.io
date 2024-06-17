@@ -1,7 +1,6 @@
 ---
 title: FixedDate<T1, T2> struct
 description: Holds a fixed-date value in the specified format and with the given separator.
-
 ---
 
 Holds a fixed-date value in the specified format and with the given separator.

@@ -1,7 +1,6 @@
 ---
 title: AssemblyListProfilesSetting class
 description: Gets or sets a dictionary of named assembly lists. 
-
 ---
 
 Gets or sets a dictionary of named assembly lists. 

@@ -1,7 +1,6 @@
 ---
 title: TraceSink enum
 description: Enumerates the types of trace sinks used in the application.
-
 ---
 
 Enumerates the types of trace sinks used in the application.

@@ -1,7 +1,6 @@
 ---
 title: NullCapableFieldAttribute class
 description: A non-RPG class may stamp a property or field member with this attribute to be considered as a null capable field by a consumer RPG program.
-
 ---
 
 A non-RPG class may stamp a property or field member with this attribute to be considered as a null capable field by a consumer RPG program.

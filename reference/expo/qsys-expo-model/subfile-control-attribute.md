@@ -1,7 +1,6 @@
 ---
 title: SubfileControlAttribute class
 description: Defines Subfile Control Attribute on a type
-
 ---
 
 Defines Subfile Control Attribute on a type

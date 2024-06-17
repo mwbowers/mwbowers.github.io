@@ -1,7 +1,6 @@
 ---
 title: ProgParm class
 description: Represents a parameter in a program call in a DataLink connection.
-
 ---
 
 Represents a parameter in a program call in a DataLink connection.

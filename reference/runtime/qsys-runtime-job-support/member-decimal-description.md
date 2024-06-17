@@ -1,7 +1,6 @@
 ---
 title: MemberDecimalDescription enum
 description: Specifies a numerical member attribute.
-
 ---
 
 Specifies a numerical member attribute.

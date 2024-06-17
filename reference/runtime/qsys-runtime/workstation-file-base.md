@@ -1,7 +1,6 @@
 ---
 title: WorkstationFileBase class
 description: Base class for Workstation files. It contains functionality to support common input/output operations on Workstation files.
-
 ---
 
 Base class for Workstation files. It contains functionality to support common input/output operations on Workstation files.

@@ -1,7 +1,6 @@
 ---
 title: SubfileRecordAttribute class
 description: Defines Subfile Record Attribute on a type
-
 ---
 
 Defines Subfile Record Attribute on a type

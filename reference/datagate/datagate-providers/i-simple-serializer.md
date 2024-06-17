@@ -1,7 +1,6 @@
 ---
 title: ISimpleSerializer interface
 description: Provides an interface for simple serialization and deserialization operations.
-
 ---
 
 Provides an interface for simple serialization and deserialization operations.

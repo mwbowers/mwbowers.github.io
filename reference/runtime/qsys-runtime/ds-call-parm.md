@@ -1,7 +1,6 @@
 ---
 title: DSCallParm class
 description: Describes a Data Structure (either single or Multi) as a parameter for a CALL to an IBMi program.
-
 ---
 
 Describes a Data Structure (either single or Multi) as a parameter for a CALL to an IBMi program.

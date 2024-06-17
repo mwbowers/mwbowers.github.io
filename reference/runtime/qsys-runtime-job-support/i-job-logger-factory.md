@@ -1,7 +1,6 @@
 ---
 title: IJobLoggerFactory interface
 description: Defines a generalized way to to get hold of a message logger.
-
 ---
 
 Defines a generalized way to to get hold of a message logger.

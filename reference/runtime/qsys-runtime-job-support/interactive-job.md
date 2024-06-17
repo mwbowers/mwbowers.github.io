@@ -1,7 +1,6 @@
 ---
 title: InteractiveJob class
 description: Defines the core behavior of an interactive job.
-
 ---
 
 Defines the core behavior of an interactive job.

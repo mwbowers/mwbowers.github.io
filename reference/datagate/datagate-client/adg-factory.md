@@ -1,7 +1,6 @@
 ---
 title: AdgFactory class
 description: The AdgFactory class static methods construct instances of IAdgObject representing database files, libraries, and members along with IDataArea for data areas.
-
 ---
 
 The AdgFactory class static methods construct instances of IAdgObject representing database files, libraries, and members along with IDataArea for data areas.

@@ -1,7 +1,6 @@
 ---
 title: DataGateExtensions class
 description: Provides extension methods for the DataGate configuration.
-
 ---
 
 Provides extension methods for the DataGate configuration.

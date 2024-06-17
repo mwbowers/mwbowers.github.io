@@ -1,7 +1,6 @@
 ---
 title: IMonitor interface
 description: Defines the contract for monitoring resources in the ASNA DataGate client.
-
 ---
 
 Defines the contract for monitoring resources in the ASNA DataGate client.

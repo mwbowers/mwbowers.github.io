@@ -1,7 +1,6 @@
 ---
 title: ArrayMethods class
 description: Contains extension methods for handling Arrays according to RPG semantics.
-
 ---
 
 Contains extension methods for handling Arrays according to RPG semantics.

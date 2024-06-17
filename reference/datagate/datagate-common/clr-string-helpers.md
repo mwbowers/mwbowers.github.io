@@ -2,7 +2,6 @@
 title: ClrStringHelpers class
 description: This class offers some abstractions for .NET string functions peculiar
 to the net core platform (and suggested by CA).
-
 ---
 
 This class offers some abstractions for .NET string functions peculiar

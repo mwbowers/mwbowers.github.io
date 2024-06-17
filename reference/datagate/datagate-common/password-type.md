@@ -1,7 +1,6 @@
 ---
 title: PasswordType enum
 description: Specifies the type of password.
-
 ---
 
 Specifies the type of password.

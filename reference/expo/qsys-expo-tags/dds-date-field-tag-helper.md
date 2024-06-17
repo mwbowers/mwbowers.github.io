@@ -1,7 +1,6 @@
 ---
 title: DdsDateFieldTagHelper class
 description: Defines an input element to capture Dates.
-
 ---
 
 Defines an input element to capture Dates.

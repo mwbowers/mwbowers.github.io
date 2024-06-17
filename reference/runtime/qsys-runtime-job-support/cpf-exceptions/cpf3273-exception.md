@@ -1,7 +1,6 @@
 ---
 title: CPF3273Exception class
 description: The exception that is thrown when File or member not created, deleted or changed.
-
 ---
 
 The exception that is thrown when File or member not created, deleted or changed.

@@ -1,7 +1,6 @@
 ---
 title: FixedDateArrayInDS<T1, T2, T3> struct
 description: Describes a fixed size array of FixedDate contained in a DataStructure.
-
 ---
 
 Describes a fixed size array of FixedDate contained in a DataStructure.

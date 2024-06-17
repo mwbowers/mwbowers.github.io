@@ -1,7 +1,6 @@
 ---
 title: InfSrException class
 description: Exception that can be thrown from InfSr to return or report an error condition.
-
 ---
 
 Exception that can be thrown from InfSr to return or report an error condition.

@@ -2,7 +2,6 @@
 title: ExportOptions class
 description: Provides methods for exporting data to XML or CSV formats.
 This class includes functionality for transforming data using XSLT, logging, and handling cancellation tokens.
-
 ---
 
 Provides methods for exporting data to XML or CSV formats.

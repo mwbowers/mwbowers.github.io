@@ -1,7 +1,6 @@
 ---
 title: NoDeviceAvailableException class
 description: The exception that is thrown when an operation is attempted when the job is not attached to a device.
-
 ---
 
 The exception that is thrown when an operation is attempted when the job is not attached to a device.

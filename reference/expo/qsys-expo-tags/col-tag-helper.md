@@ -1,7 +1,6 @@
 ---
 title: ColTagHelper class
 description: Provides a Col tag helper to Razor elements. 
-
 ---
 
 Provides a Col tag helper to Razor elements. 

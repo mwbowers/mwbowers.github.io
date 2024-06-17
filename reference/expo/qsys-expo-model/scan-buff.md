@@ -1,7 +1,6 @@
 ---
 title: ScanBuff class
 description: Summary Canonical example of GPLEX automaton
-
 ---
 
 Summary Canonical example of GPLEX automaton

@@ -1,7 +1,6 @@
 ---
 title: _YMD interface
 description: Describes the YMD date/time format in the declaration of date/time types.
-
 ---
 
 Describes the YMD date/time format in the declaration of date/time types.

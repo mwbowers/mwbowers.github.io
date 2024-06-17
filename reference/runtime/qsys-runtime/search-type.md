@@ -1,7 +1,6 @@
 ---
 title: SearchType enum
 description: Type of search to perform.
-
 ---
 
 Type of search to perform.

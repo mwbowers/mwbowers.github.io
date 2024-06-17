@@ -1,7 +1,6 @@
 ---
 title: IServerLicense interface
 description: Defines the contract for managing a server license in the ASNA DataGate client.
-
 ---
 
 Defines the contract for managing a server license in the ASNA DataGate client.

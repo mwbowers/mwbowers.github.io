@@ -1,7 +1,6 @@
 ---
 title: JobStatus class
 description: Represents the status of a job.
-
 ---
 
 Represents the status of a job.

@@ -1,7 +1,6 @@
 ---
 title: ILabel interface
 description: Represents information on a database label
-
 ---
 
 Represents information on a database label

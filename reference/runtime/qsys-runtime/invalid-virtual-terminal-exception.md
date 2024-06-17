@@ -1,7 +1,6 @@
 ---
 title: InvalidVirtualTerminalException class
 description: Virtual Terminal value -mode- is not supported exception.
-
 ---
 
 Virtual Terminal value -mode- is not supported exception.

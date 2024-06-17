@@ -1,7 +1,6 @@
 ---
 title: SourceProfileConverterOptions enum
 description: Specifies options for converting a SourceProfile.
-
 ---
 
 Specifies options for converting a SourceProfile.

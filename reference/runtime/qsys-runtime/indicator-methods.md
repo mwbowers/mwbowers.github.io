@@ -1,7 +1,6 @@
 ---
 title: IndicatorMethods class
 description: Contains extension methods for handling RPG operations for Indicator values.
-
 ---
 
 Contains extension methods for handling RPG operations for Indicator values.

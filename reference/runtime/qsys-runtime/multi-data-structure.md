@@ -1,7 +1,6 @@
 ---
 title: MultiDataStructure class
 description: Contains functionality to support multiple occurrence data structures.
-
 ---
 
 Contains functionality to support multiple occurrence data structures.

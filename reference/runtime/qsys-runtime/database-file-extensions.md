@@ -1,7 +1,6 @@
 ---
 title: DatabaseFileExtensions class
 description: Defines a collection of extension methods to aid in operating with the file&#39;s dataset.
-
 ---
 
 Defines a collection of extension methods to aid in operating with the file's dataset.

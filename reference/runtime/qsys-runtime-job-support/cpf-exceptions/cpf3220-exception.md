@@ -1,7 +1,6 @@
 ---
 title: CPF3220Exception class
 description: The exception that is thrown when Cannot do operation on {0} in {1}.
-
 ---
 
 The exception that is thrown when Cannot do operation on {0} in {1}.

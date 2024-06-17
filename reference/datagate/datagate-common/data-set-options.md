@@ -1,7 +1,6 @@
 ---
 title: DataSetOptions enum
 description: Specifies options for a DataSet.
-
 ---
 
 Specifies options for a DataSet.

@@ -1,7 +1,6 @@
 ---
 title: DataGateCredentialExtensions class
 description: Provides extension methods for the IDataGateCredential interface.
-
 ---
 
 Provides extension methods for the IDataGateCredential interface.

@@ -1,7 +1,6 @@
 ---
 title: IFixedArray<T1, T2> interface
 description: Describes the minimum functionality of a free-standing fixed sized array.
-
 ---
 
 Describes the minimum functionality of a free-standing fixed sized array.

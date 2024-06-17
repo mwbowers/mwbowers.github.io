@@ -1,7 +1,6 @@
 ---
 title: SslOptions enum
 description: Specifies the SSL options for a connection.
-
 ---
 
 Specifies the SSL options for a connection.

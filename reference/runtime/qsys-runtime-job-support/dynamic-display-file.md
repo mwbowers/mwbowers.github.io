@@ -1,7 +1,6 @@
 ---
 title: DynamicDisplayFile class
 description: Provides the facilities to use a display file without prior infrastructure.
-
 ---
 
 Provides the facilities to use a display file without prior infrastructure.

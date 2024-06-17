@@ -1,7 +1,6 @@
 ---
 title: CPF2883Exception class
 description: The exception that is thrown when Error creating file {0} in library {1}.
-
 ---
 
 The exception that is thrown when Error creating file {0} in library {1}.

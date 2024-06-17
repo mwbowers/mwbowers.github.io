@@ -1,7 +1,6 @@
 ---
 title: DatabaseFileBase class
 description: Common base class for Database data files, single format and multiformat. It contains methods common to both kinds.
-
 ---
 
 Common base class for Database data files, single format and multiformat. It contains methods common to both kinds.

@@ -1,7 +1,6 @@
 ---
 title: CPF2151Exception class
 description: The exception that is thrown when Operation failed for {1} in {0} type{2}
-
 ---
 
 The exception that is thrown when Operation failed for {1} in {0} type{2}

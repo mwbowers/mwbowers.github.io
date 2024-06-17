@@ -1,7 +1,6 @@
 ---
 title: Terminal5250TagHelper class
 description: Defines the element where the 5250 Terminal will be rendered
-
 ---
 
 Defines the element where the 5250 Terminal will be rendered

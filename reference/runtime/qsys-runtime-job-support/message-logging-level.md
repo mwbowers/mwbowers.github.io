@@ -1,7 +1,6 @@
 ---
 title: MessageLoggingLevel enum
 description: Defines the filter level of which messages should be logged.
-
 ---
 
 Defines the filter level of which messages should be logged.

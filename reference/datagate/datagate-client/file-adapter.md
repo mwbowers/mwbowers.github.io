@@ -3,6 +3,7 @@ title: FileAdapter class
 ---
 
 
+
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 

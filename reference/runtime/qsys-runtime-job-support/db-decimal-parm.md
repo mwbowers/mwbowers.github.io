@@ -1,7 +1,6 @@
 ---
 title: DBDecimalParm class
 description: Represents a parameter for a decimal type.
-
 ---
 
 Represents a parameter for a decimal type.

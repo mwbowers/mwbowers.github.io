@@ -1,7 +1,6 @@
 ---
 title: PrintDevAttr class
 description: Compatibility class for dgPrintDeviceAttr structure.
-
 ---
 
 Compatibility class for dgPrintDeviceAttr structure.

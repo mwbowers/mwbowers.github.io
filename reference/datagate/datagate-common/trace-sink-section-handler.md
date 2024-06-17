@@ -2,7 +2,6 @@
 title: TraceSinkSectionHandler class
 description: Handles the configuration section for trace sinks in the application.
 Implements the  interface.
-
 ---
 
 Handles the configuration section for trace sinks in the application.

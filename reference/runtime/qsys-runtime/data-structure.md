@@ -1,7 +1,6 @@
 ---
 title: DataStructure class
 description: Contains the functionality to support the semantics of a RPG Data Structure with a memory layout.
-
 ---
 
 Contains the functionality to support the semantics of a RPG Data Structure with a memory layout.

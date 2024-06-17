@@ -1,7 +1,6 @@
 ---
 title: Return class
 description: RETURN operation is implemented as a long jump using the exception catching C# mechanism.
-
 ---
 
 RETURN operation is implemented as a long jump using the exception catching C# mechanism.

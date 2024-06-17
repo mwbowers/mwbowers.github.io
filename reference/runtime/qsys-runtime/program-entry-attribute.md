@@ -1,7 +1,6 @@
 ---
 title: ProgramEntryAttribute class
 description: A non-RPG class may use this attribute to indicate which method in it corresponds to RPG&#39;s *ENTRY.
-
 ---
 
 A non-RPG class may use this attribute to indicate which method in it corresponds to RPG's *ENTRY.

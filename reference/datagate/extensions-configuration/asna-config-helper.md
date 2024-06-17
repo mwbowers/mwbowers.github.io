@@ -2,7 +2,6 @@
 title: AsnaConfigHelper class
 description: Provides helper functions and properties for accessing
 IAsnaConfig properties encoded in JSON configuration texts.
-
 ---
 
 Provides helper functions and properties for accessing

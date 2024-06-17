@@ -1,7 +1,6 @@
 ---
 title: CPF2167Exception class
 description: The exception that is thrown when Library {0} on library list and cannot be deleted.
-
 ---
 
 The exception that is thrown when Library {0} on library list and cannot be deleted.

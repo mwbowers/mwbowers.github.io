@@ -1,7 +1,6 @@
 ---
 title: CPF323DException class
 description: The exception that is thrown when User does not have correct authority.
-
 ---
 
 The exception that is thrown when User does not have correct authority.

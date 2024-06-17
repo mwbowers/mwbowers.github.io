@@ -1,7 +1,6 @@
 ---
 title: GlobalFlagProperty class
 description: GlobalFlagProperty class.
-
 ---
 
 GlobalFlagProperty class.

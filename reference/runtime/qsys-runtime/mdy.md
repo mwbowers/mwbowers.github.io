@@ -1,7 +1,6 @@
 ---
 title: _MDY interface
 description: Describes the MDY date/time format in the declaration of date/time types.
-
 ---
 
 Describes the MDY date/time format in the declaration of date/time types.

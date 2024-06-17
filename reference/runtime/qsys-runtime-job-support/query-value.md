@@ -1,7 +1,6 @@
 ---
 title: QueryValue class
 description: Represents a Value stored in a SQL Query Result.
-
 ---
 
 Represents a Value stored in a SQL Query Result.

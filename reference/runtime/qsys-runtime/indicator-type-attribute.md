@@ -1,7 +1,6 @@
 ---
 title: IndicatorTypeAttribute class
 description: A non-RPG class may stamp a char member with this attribute to be considered as an indicator field by a consumer RPG program.
-
 ---
 
 A non-RPG class may stamp a char member with this attribute to be considered as an indicator field by a consumer RPG program.

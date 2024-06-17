@@ -1,7 +1,6 @@
 ---
 title: NetworkBlockingUpdateException class
 description: Network Blocking is not allowed for -filename- because it is opened for *UPDATE.
-
 ---
 
 Network Blocking is not allowed for -filename- because it is opened for *UPDATE.

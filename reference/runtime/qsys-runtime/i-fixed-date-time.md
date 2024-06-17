@@ -1,7 +1,6 @@
 ---
 title: IFixedDateTime interface
 description: Declares the basic functionality of a fixed datetime type.
-
 ---
 
 Declares the basic functionality of a fixed datetime type.

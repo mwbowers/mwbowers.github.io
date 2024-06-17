@@ -1,7 +1,6 @@
 ---
 title: Delimiter class
 description: Represents a delimiter in a data stream.
-
 ---
 
 Represents a delimiter in a data stream.

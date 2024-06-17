@@ -1,7 +1,6 @@
 ---
 title: FixedDecimal<T1, T2> struct
 description: Holds a fixed-decimal value with the specified number of digits and decimal positions.
-
 ---
 
 Holds a fixed-decimal value with the specified number of digits and decimal positions.

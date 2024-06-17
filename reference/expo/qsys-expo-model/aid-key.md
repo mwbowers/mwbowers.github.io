@@ -1,7 +1,6 @@
 ---
 title: AidKey enum
 description: Specifies the Attention indicator index
-
 ---
 
 Specifies the Attention indicator index

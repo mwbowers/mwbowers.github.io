@@ -1,7 +1,6 @@
 ---
 title: OpenAccessRpg class
 description: Represents a method that handles I/O operations with an open access RPG program.
-
 ---
 
 Represents a method that handles I/O operations with an open access RPG program.

@@ -1,7 +1,6 @@
 ---
 title: FileLocks enum
 description: Specifies the file lock mode.
-
 ---
 
 Specifies the file lock mode.

@@ -1,7 +1,6 @@
 ---
 title: ExportSourceAttribute class
 description: Defines Export Source Attribute on a type
-
 ---
 
 Defines Export Source Attribute on a type

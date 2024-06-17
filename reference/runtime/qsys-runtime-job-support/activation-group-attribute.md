@@ -1,7 +1,6 @@
 ---
 title: ActivationGroupAttribute class
 description: Defines the Activation Group Attribute used to mark a program or service program class.
-
 ---
 
 Defines the Activation Group Attribute used to mark a program or service program class.

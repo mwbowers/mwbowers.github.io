@@ -1,7 +1,6 @@
 ---
 title: DynamicCaller class
 description: Support for CALLD as a dynamic call.
-
 ---
 
 Support for CALLD as a dynamic call.

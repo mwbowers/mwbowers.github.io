@@ -1,7 +1,6 @@
 ---
 title: ClientNameFields enum
 description: Specifies the fields for a client name.
-
 ---
 
 Specifies the fields for a client name.

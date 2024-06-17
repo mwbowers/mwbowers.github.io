@@ -1,7 +1,6 @@
 ---
 title: INumber interface
 description: Interface that identifies a subset of length type arguments, fron 0 to 29.
-
 ---
 
 Interface that identifies a subset of length type arguments, fron 0 to 29.

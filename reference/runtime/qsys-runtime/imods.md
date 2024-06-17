@@ -1,7 +1,6 @@
 ---
 title: IMODS interface
 description: Describes the set of operations of a multi-occurrence data structure.
-
 ---
 
 Describes the set of operations of a multi-occurrence data structure.

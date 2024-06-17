@@ -1,7 +1,6 @@
 ---
 title: CPF3061Exception class
 description: The exception that is thrown when Record format {0} not found for outfile {1}.
-
 ---
 
 The exception that is thrown when Record format {0} not found for outfile {1}.

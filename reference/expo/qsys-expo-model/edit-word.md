@@ -1,7 +1,6 @@
 ---
 title: EditWord class
 description: Provides methods to format numeric values according to Edit Word
-
 ---
 
 Provides methods to format numeric values according to Edit Word

@@ -1,7 +1,6 @@
 ---
 title: WaitOptions enum
 description: Specifies the wait options for a process or operation.
-
 ---
 
 Specifies the wait options for a process or operation.

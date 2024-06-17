@@ -1,7 +1,6 @@
 ---
 title: CPF6700Exception class
 description: Defines the core behavior of CPF67xx exceptions.
-
 ---
 
 Defines the core behavior of CPF67xx exceptions.

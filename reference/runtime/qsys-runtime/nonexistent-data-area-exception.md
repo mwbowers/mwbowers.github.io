@@ -1,7 +1,6 @@
 ---
 title: NonexistentDataAreaException class
 description: DataArea Exception issued when requesting a non-existing DataArea.
-
 ---
 
 DataArea Exception issued when requesting a non-existing DataArea.

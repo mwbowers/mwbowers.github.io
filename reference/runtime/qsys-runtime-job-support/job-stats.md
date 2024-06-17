@@ -1,7 +1,6 @@
 ---
 title: JobStats class
 description: Tracks lifetime metrics for the job.
-
 ---
 
 Tracks lifetime metrics for the job.

@@ -1,7 +1,6 @@
 ---
 title: RecursiveCallException class
 description: The exception that is thrown when a program is being called recursively.
-
 ---
 
 The exception that is thrown when a program is being called recursively.

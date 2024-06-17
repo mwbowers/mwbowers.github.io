@@ -1,7 +1,6 @@
 ---
 title: CPF9899Exception class
 description: The exception that is thrown when Error occurred during processing of command.
-
 ---
 
 The exception that is thrown when Error occurred during processing of command.

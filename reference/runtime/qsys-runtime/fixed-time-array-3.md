@@ -1,7 +1,6 @@
 ---
 title: FixedTimeArray<T1, T2, T3> struct
 description: Defines the functionality of a fixed-sized unidimensional array of FixedTime elements.
-
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedTime elements.

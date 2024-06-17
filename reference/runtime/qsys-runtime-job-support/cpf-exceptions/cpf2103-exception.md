@@ -1,7 +1,6 @@
 ---
 title: CPF2103Exception class
 description: The exception that is thrown when Duplicate Library List entry {0}
-
 ---
 
 The exception that is thrown when Duplicate Library List entry {0}

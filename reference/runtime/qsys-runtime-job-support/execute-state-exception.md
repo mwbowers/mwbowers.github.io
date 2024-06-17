@@ -1,7 +1,6 @@
 ---
 title: ExecuteStateException class
 description: The exception that is thrown when a job is artificially being set to a state of &#39;Running&#39;.
-
 ---
 
 The exception that is thrown when a job is artificially being set to a state of 'Running'.

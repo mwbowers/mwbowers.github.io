@@ -1,7 +1,6 @@
 ---
 title: ProgParmType class
 description: Represents the type of a program parameter in a DataLink connection.
-
 ---
 
 Represents the type of a program parameter in a DataLink connection.

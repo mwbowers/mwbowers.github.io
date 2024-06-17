@@ -1,7 +1,6 @@
 ---
 title: DdsFieldBase class
 description: Provides common methods for DdsFields.
-
 ---
 
 Provides common methods for DdsFields.

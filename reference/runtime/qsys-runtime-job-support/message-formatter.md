@@ -1,7 +1,6 @@
 ---
 title: MessageFormatter class
 description: Provides functionality to format a message.
-
 ---
 
 Provides functionality to format a message.

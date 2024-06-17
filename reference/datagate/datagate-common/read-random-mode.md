@@ -1,7 +1,6 @@
 ---
 title: ReadRandomMode enum
 description: Specifies the mode for reading data randomly.
-
 ---
 
 Specifies the mode for reading data randomly.

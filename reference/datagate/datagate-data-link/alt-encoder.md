@@ -1,7 +1,6 @@
 ---
 title: AltEncoder class
 description: Represents an encoder that converts a set of characters into a sequence of encoded bytes. This class is abstract.
-
 ---
 
 Represents an encoder that converts a set of characters into a sequence of encoded bytes. This class is abstract.

@@ -1,7 +1,6 @@
 ---
 title: Layout struct
 description: Defines a layout for a field in a data structure.
-
 ---
 
 Defines a layout for a field in a data structure.

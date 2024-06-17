@@ -1,7 +1,6 @@
 ---
 title: IDataGateConfig interface
 description: Provides an interface for accessing DataGate configuration.
-
 ---
 
 Provides an interface for accessing DataGate configuration.

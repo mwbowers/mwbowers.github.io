@@ -1,7 +1,6 @@
 ---
 title: DdsConstantTagHelper class
 description: Defines an constant label.
-
 ---
 
 Defines an constant label.

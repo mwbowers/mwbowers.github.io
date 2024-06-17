@@ -2,7 +2,6 @@
 title: AdgTrace class
 description: Provides methods and properties for tracing and logging in the application.
 This class cannot be inherited.
-
 ---
 
 Provides methods and properties for tracing and logging in the application.

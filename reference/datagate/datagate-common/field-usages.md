@@ -1,7 +1,6 @@
 ---
 title: FieldUsages enum
 description: Specifies the usage of a field.
-
 ---
 
 Specifies the usage of a field.

@@ -1,7 +1,6 @@
 ---
 title: IndicatorArray<T> struct
 description: Defines the functionality of a fixed-sized unidimensional array of Indicator elements.
-
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of Indicator elements.

@@ -1,7 +1,6 @@
 ---
 title: ColSpanTagHelper class
 description: Provides a ColSpan tag helper to Razor elements. 
-
 ---
 
 Provides a ColSpan tag helper to Razor elements. 

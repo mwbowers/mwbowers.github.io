@@ -1,7 +1,6 @@
 ---
 title: MessageSource enum
 description: Specifies the component generating a message.
-
 ---
 
 Specifies the component generating a message.

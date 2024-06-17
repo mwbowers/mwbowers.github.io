@@ -1,7 +1,6 @@
 ---
 title: CPF8A13Exception class
 description: The exception that is thrown when Document {0} in folder {1} not moved.
-
 ---
 
 The exception that is thrown when Document {0} in folder {1} not moved.

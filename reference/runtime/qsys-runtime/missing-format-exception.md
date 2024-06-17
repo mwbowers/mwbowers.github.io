@@ -1,7 +1,6 @@
 ---
 title: MissingFormatException class
 description: The program was compiled to use format -format-, but it was not found in file -filename-.
-
 ---
 
 The program was compiled to use format -format-, but it was not found in file -filename-.

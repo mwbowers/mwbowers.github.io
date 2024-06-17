@@ -1,7 +1,6 @@
 ---
 title: CPF2117Exception class
 description: The exception that is thrown when {0} Objects of type {1} were deleted but {2} were not deleted.
-
 ---
 
 The exception that is thrown when {0} Objects of type {1} were deleted but {2} were not deleted.
