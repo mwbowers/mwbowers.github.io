@@ -770,14 +770,6 @@ Reference:
         path: /reference/datagate/datagate-providers/i-stream-transformer-factory.html
       - title: ITransformProperties
         path: /reference/datagate/datagate-providers/i-transform-properties.html
-  - sectiontitle: ASNA.DataGate.ADO
-    sectionpath: /reference/datagate/datagateado/landing-page-namespace.html
-    section:
-    - sectiontitle: Classes
-      sectionpath: /reference/datagate/datagateado/landing-page-classes.html
-      section:
-      - title: Transactor
-        path: /reference/datagate/datagateado/transactor.html
   - sectiontitle: ASNA.DataGate.SqlServer
     sectionpath: /reference/datagate/datagate-sql-server/landing-page-namespace.html
     section:
