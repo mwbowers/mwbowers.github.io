@@ -1,6 +1,7 @@
 ---
 title: AdapterStatus enum
 description: Enumerates the possible statuses of the FileAdapter.
+last_modified_at: 2024-06-17
 ---
 
 Enumerates the possible statuses of the FileAdapter.
