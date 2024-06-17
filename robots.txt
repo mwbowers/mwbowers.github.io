@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: 
-
+Sitemap: https://asnaqsys.github.io/sitemap.xml
