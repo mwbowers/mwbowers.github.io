@@ -1,6 +1,7 @@
 ---
 title: DataTypes enum
-description: Specifies the data types for a field.
+description: "Specifies the data types for a field. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the data types for a field.

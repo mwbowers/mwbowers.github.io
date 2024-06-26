@@ -1,6 +1,7 @@
 ---
 title: AdgEnumerator class
-description: Represents a method that handles an IAdgObject.
+description: "Represents a method that handles an IAdgObject. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents a method that handles an IAdgObject.

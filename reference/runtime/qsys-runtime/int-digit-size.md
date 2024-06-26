@@ -1,6 +1,7 @@
 ---
 title: IntDigitSize class
-description: Constants for the size of integers, in digits.
+description: "Constants for the size of integers, in digits. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Constants for the size of integers, in digits.

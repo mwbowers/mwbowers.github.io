@@ -1,6 +1,7 @@
 ---
 title: TypeDigestor class
-description: Contains methods that aid in the parsing of the generic type arguments of fixed-sized types.
+description: "Contains methods that aid in the parsing of the generic type arguments of fixed-sized types. "
+last_modified_at: 2024-06-26T20:27:06Z
 ---
 
 Contains methods that aid in the parsing of the generic type arguments of fixed-sized types.

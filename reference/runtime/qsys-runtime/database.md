@@ -1,6 +1,7 @@
 ---
 title: Database class
-description: Handles connections to a Database.
+description: "Handles connections to a Database. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Handles connections to a Database.

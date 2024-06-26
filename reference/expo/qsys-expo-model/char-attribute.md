@@ -1,6 +1,7 @@
 ---
 title: CharAttribute class
-description: Provides Char Attributes (for Properties)
+description: "Provides Char Attributes (for Properties) "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Provides Char Attributes (for Properties)

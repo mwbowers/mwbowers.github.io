@@ -1,6 +1,7 @@
 ---
 title: InvalidMessageLengthException class
-description: The exception that is thrown when the replacement data length does not correspond to placeholder length.
+description: "The exception that is thrown when the replacement data length does not correspond to placeholder length. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when the replacement data length does not correspond to placeholder length.

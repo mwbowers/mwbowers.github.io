@@ -1,6 +1,7 @@
 ---
 title: VirtualTerminal enum
-description: Available virtual terminal options for Monarch applications against the IBMi.
+description: "Available virtual terminal options for Monarch applications against the IBMi. "
+last_modified_at: 2024-06-26T20:27:06Z
 ---
 
 Available virtual terminal options for Monarch applications against the IBMi.

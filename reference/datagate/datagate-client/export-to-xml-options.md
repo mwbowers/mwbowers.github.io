@@ -1,7 +1,7 @@
 ---
 title: ExportToXmlOptions class
-description: Provides options for exporting data to XML format.
-This class includes properties for specifying whether fields should be exported as elements and whether the schema should be included in the exported data.
+description: "Provides options for exporting data to XML format. This class includes properties for specifying whether fields should be exported as elements and whe"
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides options for exporting data to XML format.

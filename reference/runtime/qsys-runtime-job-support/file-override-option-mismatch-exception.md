@@ -1,6 +1,7 @@
 ---
 title: FileOverrideOptionMismatchException class
-description: The exception that is thrown when a file override has an option value that does not match expected by the named option.
+description: "The exception that is thrown when a file override has an option value that does not match expected by the named option. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when a file override has an option value that does not match expected by the named option.

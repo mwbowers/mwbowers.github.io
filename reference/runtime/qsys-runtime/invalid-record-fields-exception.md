@@ -1,6 +1,7 @@
 ---
 title: InvalidRecordFieldsException class
-description: Record Format contains fields with types not compatible for this operation exception.
+description: "Record Format contains fields with types not compatible for this operation exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Record Format contains fields with types not compatible for this operation exception.

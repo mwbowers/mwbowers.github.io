@@ -1,6 +1,7 @@
 ---
 title: NetworkBlockingOutputException class
-description: Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-.
+description: "Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-.

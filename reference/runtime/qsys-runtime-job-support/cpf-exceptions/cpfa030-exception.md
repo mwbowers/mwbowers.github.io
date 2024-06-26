@@ -1,6 +1,7 @@
 ---
 title: CPFA030Exception class
-description: The exception that is thrown when Object {0} already in use.
+description: "The exception that is thrown when Object {0} already in use. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Object {0} already in use.

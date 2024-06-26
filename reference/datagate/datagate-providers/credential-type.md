@@ -1,6 +1,7 @@
 ---
 title: CredentialType enum
-description: Specifies the type of credentials used for authentication.
+description: "Specifies the type of credentials used for authentication. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the type of credentials used for authentication.

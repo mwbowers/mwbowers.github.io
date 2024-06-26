@@ -1,6 +1,7 @@
 ---
 title: DateTimeMethods class
-description: Contains extension methods for handling Date/Time/Timestamp conversions.
+description: "Contains extension methods for handling Date/Time/Timestamp conversions. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Contains extension methods for handling Date/Time/Timestamp conversions.

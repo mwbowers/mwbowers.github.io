@@ -1,6 +1,7 @@
 ---
 title: InvalidDataAreaTypeException class
-description: DataArea Exception issued when the DataArea type is not valid.
+description: "DataArea Exception issued when the DataArea type is not valid. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 DataArea Exception issued when the DataArea type is not valid.

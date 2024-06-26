@@ -1,6 +1,7 @@
 ---
 title: XmlCancelEventHandler class
-description: Represents the method that will handle an event when an XML operation can be canceled.
+description: "Represents the method that will handle an event when an XML operation can be canceled. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents the method that will handle an event when an XML operation can be canceled.

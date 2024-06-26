@@ -1,6 +1,7 @@
 ---
 title: INumber interface
-description: Interface that identifies a subset of length type arguments, fron 0 to 29.
+description: "Interface that identifies a subset of length type arguments, fron 0 to 29. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Interface that identifies a subset of length type arguments, fron 0 to 29.

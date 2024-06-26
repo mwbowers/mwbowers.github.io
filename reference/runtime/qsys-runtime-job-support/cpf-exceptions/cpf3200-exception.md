@@ -1,6 +1,7 @@
 ---
 title: CPF3200Exception class
-description: Defines the core behavior of CPF32xx exceptions.
+description: "Defines the core behavior of CPF32xx exceptions. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines the core behavior of CPF32xx exceptions.

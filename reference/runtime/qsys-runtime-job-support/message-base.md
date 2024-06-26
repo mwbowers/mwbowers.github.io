@@ -1,6 +1,7 @@
 ---
 title: MessageBase class
-description: Defines a message 
+description: "Defines a message  "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines a message 

@@ -1,6 +1,7 @@
 ---
 title: JobConfig class
-description: Holds configuration values for the creation of new jobs.
+description: "Holds configuration values for the creation of new jobs. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Holds configuration values for the creation of new jobs.

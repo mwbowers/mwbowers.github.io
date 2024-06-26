@@ -1,6 +1,7 @@
 ---
 title: DdsDayNames enum
-description: Specifies the names of the calendar days.
+description: "Specifies the names of the calendar days. "
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Specifies the names of the calendar days.

@@ -1,6 +1,7 @@
 ---
 title: IDSDataArea interface
-description: Describes a data structure that can be stored in a data area.
+description: "Describes a data structure that can be stored in a data area. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes a data structure that can be stored in a data area.

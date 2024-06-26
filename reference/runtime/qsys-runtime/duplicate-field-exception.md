@@ -1,6 +1,7 @@
 ---
 title: DuplicateFieldException class
-description: Field -field- was specified more than once in -specification- exception.
+description: "Field -field- was specified more than once in -specification- exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Field -field- was specified more than once in -specification- exception.

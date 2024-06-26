@@ -1,6 +1,7 @@
 ---
 title: CallHostSpecs class
-description: Packages the specification of a remote program call command and its parameters.
+description: "Packages the specification of a remote program call command and its parameters. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Packages the specification of a remote program call command and its parameters.

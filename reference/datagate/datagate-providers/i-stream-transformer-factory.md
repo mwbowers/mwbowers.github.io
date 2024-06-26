@@ -1,6 +1,7 @@
 ---
 title: IStreamTransformerFactory interface
-description: Provides an interface for creating encoders and decoders for streams.
+description: "Provides an interface for creating encoders and decoders for streams. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides an interface for creating encoders and decoders for streams.

@@ -1,6 +1,7 @@
 ---
 title: ButtonStyles enum
-description: Specifies the DdsButton rendering shape.
+description: "Specifies the DdsButton rendering shape. "
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Specifies the DdsButton rendering shape.

@@ -1,6 +1,7 @@
 ---
 title: NumericValueStyles enum
-description: Sets or gets the named style used when the InteractionStyle is Slider, indicating the position of the numeric input display.
+description: "Sets or gets the named style used when the InteractionStyle is Slider, indicating the position of the numeric input display. "
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Sets or gets the named style used when the InteractionStyle is Slider, indicating the position of the numeric input display.

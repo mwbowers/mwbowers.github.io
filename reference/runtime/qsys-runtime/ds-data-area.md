@@ -1,6 +1,7 @@
 ---
 title: DSDataArea class
-description: Describes and manages the use of a Data Structure as a Data Area value.
+description: "Describes and manages the use of a Data Structure as a Data Area value. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes and manages the use of a Data Structure as a Data Area value.

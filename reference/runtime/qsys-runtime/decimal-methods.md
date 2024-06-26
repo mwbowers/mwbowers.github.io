@@ -1,6 +1,7 @@
 ---
 title: DecimalMethods class
-description: Contains extension methods for handling RPG operations for decimal numbers.
+description: "Contains extension methods for handling RPG operations for decimal numbers. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Contains extension methods for handling RPG operations for decimal numbers.

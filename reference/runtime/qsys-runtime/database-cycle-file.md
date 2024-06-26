@@ -1,8 +1,7 @@
 ---
 title: DatabaseCycleFile class
-description: Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database,
-the file buffer values are not immediately copied into the program fields. The RPG cycle explicitly issues a LoadBuffer call
-at the proper time within
+description: "Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database, the file buffer values are not immediate"
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database,

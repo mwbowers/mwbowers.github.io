@@ -1,6 +1,7 @@
 ---
 title: CommonProgram class
-description: Defines the core behavior of programs and service programs.
+description: "Defines the core behavior of programs and service programs. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines the core behavior of programs and service programs.

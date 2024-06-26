@@ -1,6 +1,7 @@
 ---
 title: DependentTypes enum
-description: Specifies the type of a dependent object.
+description: "Specifies the type of a dependent object. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the type of a dependent object.

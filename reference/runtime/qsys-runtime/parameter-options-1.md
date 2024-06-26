@@ -1,6 +1,7 @@
 ---
 title: ParameterOptions&lt;T&gt; class
-description: Represents the base functionality of the special RPG parameters *OMIT and *NOPASS
+description: "Represents the base functionality of the special RPG parameters *OMIT and *NOPASS "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Represents the base functionality of the special RPG parameters *OMIT and *NOPASS

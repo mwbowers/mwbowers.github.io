@@ -1,6 +1,7 @@
 ---
 title: As400Program class
-description: Represents a program in the ASNA DataGate client.
+description: "Represents a program in the ASNA DataGate client. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents a program in the ASNA DataGate client.

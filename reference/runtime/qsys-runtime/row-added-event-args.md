@@ -1,6 +1,7 @@
 ---
 title: RowAddedEventArgs class
-description: Holds information that the RowAddedEvent requires.
+description: "Holds information that the RowAddedEvent requires. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Holds information that the RowAddedEvent requires.

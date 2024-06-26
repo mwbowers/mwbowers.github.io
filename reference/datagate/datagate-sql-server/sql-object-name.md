@@ -1,6 +1,7 @@
 ---
 title: SqlObjectName class
-description: Represents a SQL object name.
+description: "Represents a SQL object name. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents a SQL object name.

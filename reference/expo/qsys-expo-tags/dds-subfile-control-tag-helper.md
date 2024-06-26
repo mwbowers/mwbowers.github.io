@@ -1,6 +1,7 @@
 ---
 title: DdsSubfileControlTagHelper class
-description: Defines a Subfile Controller element
+description: "Defines a Subfile Controller element "
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Defines a Subfile Controller element

@@ -1,6 +1,7 @@
 ---
 title: RequiredOpenConnectionException class
-description: Operation not available on un-opened Database -database name- exception.
+description: "Operation not available on un-opened Database -database name- exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Operation not available on un-opened Database -database name- exception.

@@ -1,6 +1,7 @@
 ---
 title: DSArrayField class
-description: Describes a Data Structure field that is an array.
+description: "Describes a Data Structure field that is an array. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes a Data Structure field that is an array.

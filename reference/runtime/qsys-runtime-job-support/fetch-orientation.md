@@ -1,6 +1,7 @@
 ---
 title: FetchOrientation enum
-description: Defines Fetch Orientation types.
+description: "Defines Fetch Orientation types. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines Fetch Orientation types.

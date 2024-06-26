@@ -1,6 +1,7 @@
 ---
 title: Exchange5250DS class
-description: Represents a method that exchanges 5250 data stream.
+description: "Represents a method that exchanges 5250 data stream. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents a method that exchanges 5250 data stream.

@@ -1,6 +1,7 @@
 ---
 title: DBScaledParm class
-description: Represents a parameter for a Scalar type.
+description: "Represents a parameter for a Scalar type. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Represents a parameter for a Scalar type.

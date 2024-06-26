@@ -1,6 +1,7 @@
 ---
 title: DdsTableTagHelper class
-description: Defines a Subfile Table
+description: "Defines a Subfile Table "
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Defines a Subfile Table

@@ -1,6 +1,7 @@
 ---
 title: To5250Screen_Model class
-description: Defines  the To5250Screen_Model class
+description: "Defines  the To5250Screen_Model class "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines  the To5250Screen_Model class

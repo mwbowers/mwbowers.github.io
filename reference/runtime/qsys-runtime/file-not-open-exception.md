@@ -1,6 +1,7 @@
 ---
 title: FileNotOpenException class
-description: File -filename- is not open exception.
+description: "File -filename- is not open exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 File -filename- is not open exception.

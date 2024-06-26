@@ -1,6 +1,7 @@
 ---
 title: PasswordType enum
-description: Specifies the type of password.
+description: "Specifies the type of password. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the type of password.

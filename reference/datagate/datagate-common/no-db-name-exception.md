@@ -1,6 +1,7 @@
 ---
 title: NoDbNameException class
-description: The NoDbNameException class is a custom exception class that is thrown when a database name is not provided where it is required.
+description: "The NoDbNameException class is a custom exception class that is thrown when a database name is not provided where it is required. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 The NoDbNameException class is a custom exception class that is thrown when a database name is not provided where it is required.

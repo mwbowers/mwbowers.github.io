@@ -1,6 +1,7 @@
 ---
 title: SpoolerControlCharacter enum
-description: Indicates the manner in which control characters will be represented in the database.
+description: "Indicates the manner in which control characters will be represented in the database. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Indicates the manner in which control characters will be represented in the database.

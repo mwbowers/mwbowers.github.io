@@ -1,6 +1,7 @@
 ---
 title: ConnectionNotOpenException class
-description: File -filename- cannot be opened because a connection to database -database- has not been established exception.
+description: "File -filename- cannot be opened because a connection to database -database- has not been established exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 File -filename- cannot be opened because a connection to database -database- has not been established exception.

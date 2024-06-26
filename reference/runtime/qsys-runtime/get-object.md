@@ -1,6 +1,7 @@
 ---
 title: GetObject class
-description: Class that contains methods to construct certain RPG objects.
+description: "Class that contains methods to construct certain RPG objects. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Class that contains methods to construct certain RPG objects.

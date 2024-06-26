@@ -1,6 +1,7 @@
 ---
 title: NewActivationGroupAttribute class
-description: Defines the special Attribute used to mark a program or service program class for it to be activated in a brand new Activation Group.
+description: "Defines the special Attribute used to mark a program or service program class for it to be activated in a brand new Activation Group. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines the special Attribute used to mark a program or service program class for it to be activated in a brand new Activation Group.

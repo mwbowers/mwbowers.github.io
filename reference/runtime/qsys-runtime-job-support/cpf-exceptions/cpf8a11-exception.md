@@ -1,6 +1,7 @@
 ---
 title: CPF8A11Exception class
-description: The exception that is thrown when An error occurred while checking document {0} in folder {1}
+description: "The exception that is thrown when An error occurred while checking document {0} in folder {1} "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when An error occurred while checking document {0} in folder {1}

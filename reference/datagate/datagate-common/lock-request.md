@@ -1,6 +1,7 @@
 ---
 title: LockRequest enum
-description: Specifies the type of lock to request on a resource.
+description: "Specifies the type of lock to request on a resource. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the type of lock to request on a resource.

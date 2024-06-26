@@ -1,6 +1,7 @@
 ---
 title: IAdgTransaction interface
-description: Defines the contract for a transaction in the ASNA DataGate client.
+description: "Defines the contract for a transaction in the ASNA DataGate client. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Defines the contract for a transaction in the ASNA DataGate client.

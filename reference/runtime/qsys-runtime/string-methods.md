@@ -1,6 +1,7 @@
 ---
 title: StringMethods class
-description: Contains extension methods for handling RPG operations and conversions for string values.
+description: "Contains extension methods for handling RPG operations and conversions for string values. "
+last_modified_at: 2024-06-26T20:27:06Z
 ---
 
 Contains extension methods for handling RPG operations and conversions for string values.

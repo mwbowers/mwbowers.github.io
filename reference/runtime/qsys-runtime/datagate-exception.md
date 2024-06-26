@@ -1,6 +1,7 @@
 ---
 title: DataGateException class
-description: DataGate operation on file -filename- caused -datagate exception- exception.
+description: "DataGate operation on file -filename- caused -datagate exception- exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 DataGate operation on file -filename- caused -datagate exception- exception.

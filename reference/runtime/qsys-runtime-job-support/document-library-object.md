@@ -1,6 +1,7 @@
 ---
 title: DocumentLibraryObject class
-description: Provides functionality to manipulate Document Library Objects (DLO).
+description: "Provides functionality to manipulate Document Library Objects (DLO). "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Provides functionality to manipulate Document Library Objects (DLO).

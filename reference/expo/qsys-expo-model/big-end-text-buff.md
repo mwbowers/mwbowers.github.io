@@ -1,6 +1,7 @@
 ---
 title: BigEndTextBuff class
-description: This is the Buffer for Big-endian UTF16 files.
+description: "This is the Buffer for Big-endian UTF16 files. "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 This is the Buffer for Big-endian UTF16 files.

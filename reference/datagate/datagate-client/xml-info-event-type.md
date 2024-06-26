@@ -1,6 +1,7 @@
 ---
 title: XmlInfoEventType enum
-description: Enumerate the possible event types for XML information. This includes different levels of errors, warnings, and information.
+description: "Enumerate the possible event types for XML information. This includes different levels of errors, warnings, and information. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Enumerate the possible event types for XML information. This includes different levels of errors, warnings, and information.

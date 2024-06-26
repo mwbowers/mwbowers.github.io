@@ -1,6 +1,7 @@
 ---
 title: AsnaConfig class
-description: Represents the ASNA configuration.
+description: "Represents the ASNA configuration. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents the ASNA configuration.

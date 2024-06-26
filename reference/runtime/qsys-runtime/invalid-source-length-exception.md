@@ -1,6 +1,7 @@
 ---
 title: InvalidSourceLengthException class
-description: Length of source is less than length of data structure exception.
+description: "Length of source is less than length of data structure exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Length of source is less than length of data structure exception.

@@ -1,6 +1,7 @@
 ---
 title: IAsnaConfig interface
-description: Provides an interface for accessing ASNA configuration.
+description: "Provides an interface for accessing ASNA configuration. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides an interface for accessing ASNA configuration.

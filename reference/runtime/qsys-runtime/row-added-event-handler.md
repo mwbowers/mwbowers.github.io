@@ -1,6 +1,7 @@
 ---
 title: RowAddedEventHandler class
-description: Event raised when a row was added to a subfile.
+description: "Event raised when a row was added to a subfile. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Event raised when a row was added to a subfile.

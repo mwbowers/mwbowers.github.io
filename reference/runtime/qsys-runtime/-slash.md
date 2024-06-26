@@ -1,6 +1,7 @@
 ---
 title: _Slash interface
-description: Describes the Slash (/) as date/time separator in the declaration of date/time types.
+description: "Describes the Slash (/) as date/time separator in the declaration of date/time types. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes the Slash (/) as date/time separator in the declaration of date/time types.

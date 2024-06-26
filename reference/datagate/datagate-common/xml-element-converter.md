@@ -1,6 +1,7 @@
 ---
 title: XmlElementConverter class
-description: Provides methods for converting between XmlElement objects and their string, boolean, and child element representations.
+description: "Provides methods for converting between XmlElement objects and their string, boolean, and child element representations. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides methods for converting between XmlElement objects and their string, boolean, and child element representations.

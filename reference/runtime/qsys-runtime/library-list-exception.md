@@ -1,6 +1,7 @@
 ---
 title: LibraryListException class
-description: There was an error of type -error- while trying to modify the library list.
+description: "There was an error of type -error- while trying to modify the library list. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 There was an error of type -error- while trying to modify the library list.

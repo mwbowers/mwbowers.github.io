@@ -1,6 +1,7 @@
 ---
 title: ValuesAttribute class
-description: Defines ValuesAttribute class
+description: "Defines ValuesAttribute class "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines ValuesAttribute class

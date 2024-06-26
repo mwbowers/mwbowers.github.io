@@ -1,6 +1,7 @@
 ---
 title: BuiltInSupport class
-description: Contains static methods to perform certain RPG Built In functions.
+description: "Contains static methods to perform certain RPG Built In functions. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Contains static methods to perform certain RPG Built In functions.

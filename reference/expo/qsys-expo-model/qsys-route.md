@@ -1,6 +1,7 @@
 ---
 title: QSysRoute class
-description: Defines Route values for redirecting pages when switching display files
+description: "Defines Route values for redirecting pages when switching display files "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines Route values for redirecting pages when switching display files

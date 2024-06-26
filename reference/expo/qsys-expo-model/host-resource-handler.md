@@ -1,6 +1,7 @@
 ---
 title: HostResourceHandler class
-description: Facilities to deal with resources available in the Host server.
+description: "Facilities to deal with resources available in the Host server. "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Facilities to deal with resources available in the Host server.

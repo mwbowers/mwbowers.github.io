@@ -1,6 +1,7 @@
 ---
 title: IWebDisplayFileProvider interface
-description: Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file.
+description: "Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file.

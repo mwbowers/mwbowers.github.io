@@ -1,6 +1,7 @@
 ---
 title: StringOps class
-description: Provide fixed length character string storage and operations.
+description: "Provide fixed length character string storage and operations. "
+last_modified_at: 2024-06-26T20:27:06Z
 ---
 
 Provide fixed length character string storage and operations.

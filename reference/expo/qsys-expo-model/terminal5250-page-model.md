@@ -1,6 +1,7 @@
 ---
 title: Terminal5250_PageModel class
-description: Defines Terminal5250_PageModel class
+description: "Defines Terminal5250_PageModel class "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines Terminal5250_PageModel class

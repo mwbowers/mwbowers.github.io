@@ -1,6 +1,7 @@
 ---
 title: GlobalFlags class
-description: Holds the application flags that correspond to RPG&#39;s %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread.
+description: "Holds the application flags that correspond to RPG&#39;s %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Holds the application flags that correspond to RPG's %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread.

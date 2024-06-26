@@ -1,6 +1,7 @@
 ---
 title: IDisplayFile interface
-description: Display File Interface.
+description: "Display File Interface. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Display File Interface.

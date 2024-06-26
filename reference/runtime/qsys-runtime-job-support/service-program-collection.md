@@ -1,6 +1,7 @@
 ---
 title: ServiceProgramCollection class
-description: A dictionary of the service programs used by this program.
+description: "A dictionary of the service programs used by this program. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 A dictionary of the service programs used by this program.

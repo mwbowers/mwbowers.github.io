@@ -1,6 +1,7 @@
 ---
 title: PrintFileBase class
-description: Base class for Database print files. Contains the print file setup information and some output operations.
+description: "Base class for Database print files. Contains the print file setup information and some output operations. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Base class for Database print files. Contains the print file setup information and some output operations.

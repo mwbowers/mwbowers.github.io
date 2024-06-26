@@ -1,6 +1,7 @@
 ---
 title: RowColException class
-description: Provides an Exception derived class with the detailed invalid row, col string format (typically from VirtualRowCol field property)
+description: "Provides an Exception derived class with the detailed invalid row, col string format (typically from VirtualRowCol field property) "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Provides an Exception derived class with the detailed invalid row, col string format (typically from VirtualRowCol field property)

@@ -1,6 +1,7 @@
 ---
 title: SourceProfile class
-description: The SourceProfile class represents a profile in the source system.
+description: "The SourceProfile class represents a profile in the source system. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 The SourceProfile class represents a profile in the source system.

@@ -1,6 +1,7 @@
 ---
 title: DatabaseAttributes class
-description: Database properties, as reported by ISourceProvider.DatabaseAttributes.
+description: "Database properties, as reported by ISourceProvider.DatabaseAttributes. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Database properties, as reported by ISourceProvider.DatabaseAttributes.

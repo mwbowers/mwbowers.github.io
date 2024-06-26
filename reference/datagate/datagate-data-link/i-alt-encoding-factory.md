@@ -1,6 +1,7 @@
 ---
 title: IAltEncodingFactory interface
-description: Defines methods for creating instances of AltEncoding and getting information about the encodings supported by the factory.
+description: "Defines methods for creating instances of AltEncoding and getting information about the encodings supported by the factory. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Defines methods for creating instances of AltEncoding and getting information about the encodings supported by the factory.

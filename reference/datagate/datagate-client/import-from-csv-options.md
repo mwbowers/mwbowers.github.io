@@ -1,6 +1,7 @@
 ---
 title: ImportFromCsvOptions class
-description: Represents options for importing data from a CSV file.
+description: "Represents options for importing data from a CSV file. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents options for importing data from a CSV file.

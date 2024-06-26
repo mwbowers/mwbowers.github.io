@@ -1,9 +1,7 @@
 ---
 title: DbXmlNameConverter class
-description: This class is a filter used in the XML transforms ExportToXml.xslt and
-ImportToXml.xslt.  Encode() takes an arbitrary string and returns an
-XML-compliant Name string.  For example, &quot;$ITEMTEST&quot; is returned as
-&quot;_x0024_ITEMTEST&quot;.  Decode() performs the inverse fu
+description: "This class is a filter used in the XML transforms ExportToXml.xslt and ImportToXml.xslt.  Encode() takes an arbitrary string and returns an XML-compli"
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 This class is a filter used in the XML transforms ExportToXml.xslt and

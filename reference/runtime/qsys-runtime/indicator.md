@@ -1,6 +1,7 @@
 ---
 title: Indicator struct
-description: This class represents an IBM i RPG Indicator. 
+description: "This class represents an IBM i RPG Indicator.  "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 This class represents an IBM i RPG Indicator. 

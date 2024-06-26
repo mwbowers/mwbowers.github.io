@@ -1,6 +1,7 @@
 ---
 title: DynamicReferenceAttribute class
-description: Declares an assembly to be used as a dynamic reference, which will be queried at runtime to find CALLD targets.
+description: "Declares an assembly to be used as a dynamic reference, which will be queried at runtime to find CALLD targets. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Declares an assembly to be used as a dynamic reference, which will be queried at runtime to find CALLD targets.

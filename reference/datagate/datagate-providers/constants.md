@@ -1,6 +1,7 @@
 ---
 title: Constants class
-description: Contains constant values related to file opening attributes.
+description: "Contains constant values related to file opening attributes. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Contains constant values related to file opening attributes.

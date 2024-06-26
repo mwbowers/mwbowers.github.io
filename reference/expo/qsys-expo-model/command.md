@@ -1,6 +1,7 @@
 ---
 title: Command class
-description: Provides functionality to interact directly with a Job.
+description: "Provides functionality to interact directly with a Job. "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Provides functionality to interact directly with a Job.

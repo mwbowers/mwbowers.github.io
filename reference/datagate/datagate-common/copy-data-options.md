@@ -1,6 +1,7 @@
 ---
 title: CopyDataOptions enum
-description: Specifies the options for copying data.
+description: "Specifies the options for copying data. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the options for copying data.

@@ -1,6 +1,7 @@
 ---
 title: CPF2969Exception class
-description: The exception that is thrown when FMTOPT(*MAP *DROP) or FMTOPT(*NOCHK) required.
+description: "The exception that is thrown when FMTOPT(*MAP *DROP) or FMTOPT(*NOCHK) required. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when FMTOPT(*MAP *DROP) or FMTOPT(*NOCHK) required.

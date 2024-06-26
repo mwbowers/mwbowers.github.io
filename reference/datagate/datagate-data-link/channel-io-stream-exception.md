@@ -1,6 +1,7 @@
 ---
 title: ChannelIOStreamException class
-description: Represents errors that occur during I/O operations on a channel stream.
+description: "Represents errors that occur during I/O operations on a channel stream. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents errors that occur during I/O operations on a channel stream.

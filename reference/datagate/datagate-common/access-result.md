@@ -1,6 +1,7 @@
 ---
 title: AccessResult enum
-description: Specifies the result of an access operation.
+description: "Specifies the result of an access operation. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the result of an access operation.

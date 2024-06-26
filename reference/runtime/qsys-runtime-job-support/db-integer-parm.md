@@ -1,6 +1,7 @@
 ---
 title: DBIntegerParm class
-description: Represents a parameter for an integer type.
+description: "Represents a parameter for an integer type. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Represents a parameter for an integer type.

@@ -1,6 +1,7 @@
 ---
 title: ServerCursors enum
-description: Specifies the type of server cursor to use.
+description: "Specifies the type of server cursor to use. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the type of server cursor to use.

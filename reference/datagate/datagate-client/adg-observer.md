@@ -1,6 +1,7 @@
 ---
 title: AdgObserver class
-description: Represents a method that processes a string.
+description: "Represents a method that processes a string. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents a method that processes a string.

@@ -1,6 +1,7 @@
 ---
 title: DataAreaNotLockableException class
-description: DataArea Exception issued when a DataArea fails to Unlock.
+description: "DataArea Exception issued when a DataArea fails to Unlock. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 DataArea Exception issued when a DataArea fails to Unlock.

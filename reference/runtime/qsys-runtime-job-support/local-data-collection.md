@@ -1,6 +1,7 @@
 ---
 title: LocalDataCollection class
-description: Represents a versioned collection of name/value pairs.
+description: "Represents a versioned collection of name/value pairs. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Represents a versioned collection of name/value pairs.

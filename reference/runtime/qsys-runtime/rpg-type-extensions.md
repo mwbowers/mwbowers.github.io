@@ -1,6 +1,7 @@
 ---
 title: RpgTypeExtensions class
-description: RpgTypeExtensions class.
+description: "RpgTypeExtensions class. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 RpgTypeExtensions class.

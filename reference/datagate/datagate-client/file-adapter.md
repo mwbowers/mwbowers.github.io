@@ -1,5 +1,6 @@
 ---
 title: FileAdapter class
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 

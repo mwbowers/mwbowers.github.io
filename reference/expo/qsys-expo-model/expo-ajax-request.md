@@ -1,6 +1,7 @@
 ---
 title: ExpoAjaxRequest class
-description: Defines the ExpoAjaxRequest class (used for JSON serialization)
+description: "Defines the ExpoAjaxRequest class (used for JSON serialization) "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines the ExpoAjaxRequest class (used for JSON serialization)

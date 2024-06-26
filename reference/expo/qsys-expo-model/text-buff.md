@@ -1,9 +1,7 @@
 ---
 title: TextBuff class
-description: This is the Buffer for UTF8 files.
-It attempts to read the encoding preamble, which for 
-this encoding should be unicode point \uFEFF which is 
-encoded as EF BB BF
+description: "This is the Buffer for UTF8 files. It attempts to read the encoding preamble, which for  this encoding should be unicode point \uFEFF which is  encode"
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 This is the Buffer for UTF8 files.

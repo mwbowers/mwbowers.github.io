@@ -1,6 +1,7 @@
 ---
 title: Parameter class
-description: Describes a parameter sent into an IBMi program call.
+description: "Describes a parameter sent into an IBMi program call. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes a parameter sent into an IBMi program call.

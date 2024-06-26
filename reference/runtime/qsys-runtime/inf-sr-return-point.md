@@ -1,6 +1,7 @@
 ---
 title: InfSrReturnPoint enum
-description: Defines the possible execution state where the program cycle is at any given time.
+description: "Defines the possible execution state where the program cycle is at any given time. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines the possible execution state where the program cycle is at any given time.

@@ -1,6 +1,7 @@
 ---
 title: CPF9801Exception class
-description: The exception that is thrown when Object {0} in library {1} not found.
+description: "The exception that is thrown when Object {0} in library {1} not found. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Object {0} in library {1} not found.

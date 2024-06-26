@@ -1,6 +1,7 @@
 ---
 title: InvalidFileOperationException class
-description: Invalid Operation: -operation- on file: -filename- exception.
+description: "Invalid Operation: -operation- on file: -filename- exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Invalid Operation: -operation- on file: -filename- exception.

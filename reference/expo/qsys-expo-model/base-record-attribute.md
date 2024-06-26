@@ -1,6 +1,7 @@
 ---
 title: BaseRecordAttribute class
-description: Defines Base Record Attributes on a type
+description: "Defines Base Record Attributes on a type "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines Base Record Attributes on a type

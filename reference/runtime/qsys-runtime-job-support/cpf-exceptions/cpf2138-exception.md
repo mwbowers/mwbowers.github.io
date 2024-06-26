@@ -1,6 +1,7 @@
 ---
 title: CPF2138Exception class
-description: The exception that is thrown when Creation of library {0} not allowed.
+description: "The exception that is thrown when Creation of library {0} not allowed. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Creation of library {0} not allowed.

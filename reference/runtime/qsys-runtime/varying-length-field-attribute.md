@@ -1,6 +1,7 @@
 ---
 title: VaryingLengthFieldAttribute class
-description: A non-RPG class may stamp a property or field member with this attribute to be considered as a varying length field by a consumer RPG program.
+description: "A non-RPG class may stamp a property or field member with this attribute to be considered as a varying length field by a consumer RPG program. "
+last_modified_at: 2024-06-26T20:27:06Z
 ---
 
 A non-RPG class may stamp a property or field member with this attribute to be considered as a varying length field by a consumer RPG program.

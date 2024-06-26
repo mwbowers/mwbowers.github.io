@@ -1,6 +1,7 @@
 ---
 title: EditCodes enum
-description: Defines the equivalent code-names for the supported [IBM i Edit Codes.
+description: "Defines the equivalent code-names for the supported [IBM i Edit Codes. "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines the equivalent code-names for the supported [IBM i Edit Codes.

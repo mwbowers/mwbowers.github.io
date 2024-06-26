@@ -1,6 +1,7 @@
 ---
 title: InvalidKeySpecException class
-description: Key part -name- is invalid exception.
+description: "Key part -name- is invalid exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Key part -name- is invalid exception.

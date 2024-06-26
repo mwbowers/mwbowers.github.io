@@ -1,6 +1,7 @@
 ---
 title: FixedDateArray<T1, T2, T3> struct
-description: Defines the functionality of a fixed-sized unidimensional array of FixedDate elements.
+description: "Defines the functionality of a fixed-sized unidimensional array of FixedDate elements. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedDate elements.

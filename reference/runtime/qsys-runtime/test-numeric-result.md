@@ -1,6 +1,7 @@
 ---
 title: TestNumericResult enum
-description: The possible results of a TestNumeric operation.
+description: "The possible results of a TestNumeric operation. "
+last_modified_at: 2024-06-26T20:27:06Z
 ---
 
 The possible results of a TestNumeric operation.

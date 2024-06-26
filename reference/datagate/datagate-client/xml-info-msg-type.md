@@ -1,6 +1,7 @@
 ---
 title: XmlInfoMsgType enum
-description: Enum representing various types of XML information messages.
+description: "Enum representing various types of XML information messages. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Enum representing various types of XML information messages.

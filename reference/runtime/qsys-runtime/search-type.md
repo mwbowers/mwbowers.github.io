@@ -1,6 +1,7 @@
 ---
 title: SearchType enum
-description: Type of search to perform.
+description: "Type of search to perform. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Type of search to perform.

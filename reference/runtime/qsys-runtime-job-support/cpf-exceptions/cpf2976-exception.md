@@ -1,6 +1,7 @@
 ---
 title: CPF2976Exception class
-description: The exception that is thrown when Number of errors greater than ERRLVL value.
+description: "The exception that is thrown when Number of errors greater than ERRLVL value. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Number of errors greater than ERRLVL value.

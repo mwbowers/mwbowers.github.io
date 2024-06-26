@@ -1,6 +1,7 @@
 ---
 title: ITransformProperties interface
-description: Provides an interface for transforming properties.
+description: "Provides an interface for transforming properties. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides an interface for transforming properties.

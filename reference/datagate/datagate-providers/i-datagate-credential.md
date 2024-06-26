@@ -1,6 +1,7 @@
 ---
 title: IDataGateCredential interface
-description: Defines methods and properties for DataGate credentials.
+description: "Defines methods and properties for DataGate credentials. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Defines methods and properties for DataGate credentials.

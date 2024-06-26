@@ -1,6 +1,7 @@
 ---
 title: DataGateCredential class
-description: Provides a base class for DataGate credentials.
+description: "Provides a base class for DataGate credentials. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides a base class for DataGate credentials.

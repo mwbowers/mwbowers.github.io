@@ -1,6 +1,7 @@
 ---
 title: YellowPageModel class
-description: Defines YellowPageModel class and provides a base for the &#39;Yellow&#39; Page Model
+description: "Defines YellowPageModel class and provides a base for the &#39;Yellow&#39; Page Model "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines YellowPageModel class and provides a base for the 'Yellow' Page Model

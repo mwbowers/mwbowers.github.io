@@ -1,6 +1,7 @@
 ---
 title: InvalidRRNException class
-description: Invalid RRN Value: -rrn- on file: -filename- exception.
+description: "Invalid RRN Value: -rrn- on file: -filename- exception. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Invalid RRN Value: -rrn- on file: -filename- exception.

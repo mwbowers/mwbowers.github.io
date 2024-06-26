@@ -1,9 +1,7 @@
 ---
 title: DatabaseProfile class
-description: Represents the configuration settings for a database connection within a batch entry.
-This class encapsulates all necessary details required to establish a connection
-to the database, including server information, authentication credentials, and
-other connecti
+description: "Represents the configuration settings for a database connection within a batch entry. This class encapsulates all necessary details required to establ"
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Represents the configuration settings for a database connection within a batch entry.

@@ -1,6 +1,7 @@
 ---
 title: OverrideOption enum
-description: Specifies the option to be overridden on a file.
+description: "Specifies the option to be overridden on a file. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Specifies the option to be overridden on a file.

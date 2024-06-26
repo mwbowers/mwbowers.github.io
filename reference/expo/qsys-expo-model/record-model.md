@@ -1,6 +1,7 @@
 ---
 title: RecordModel class
-description: Defines the RecordModel class
+description: "Defines the RecordModel class "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines the RecordModel class

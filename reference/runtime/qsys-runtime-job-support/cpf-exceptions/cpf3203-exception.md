@@ -1,6 +1,7 @@
 ---
 title: CPF3203Exception class
-description: The exception that is thrown when Cannot allocate object for file {0} in {1}.
+description: "The exception that is thrown when Cannot allocate object for file {0} in {1}. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Cannot allocate object for file {0} in {1}.

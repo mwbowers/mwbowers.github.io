@@ -1,6 +1,7 @@
 ---
 title: CPF2108Exception class
-description: The exception that is thrown when Object {1} type {2} not added to library {0}
+description: "The exception that is thrown when Object {1} type {2} not added to library {0} "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Object {1} type {2} not added to library {0}

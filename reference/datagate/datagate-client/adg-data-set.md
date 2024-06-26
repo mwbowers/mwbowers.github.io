@@ -1,6 +1,7 @@
 ---
 title: AdgDataSet class
-description: A DataGate-compatible DataSet class for record-oriented database access.
+description: "A DataGate-compatible DataSet class for record-oriented database access. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 A DataGate-compatible DataSet class for record-oriented database access.

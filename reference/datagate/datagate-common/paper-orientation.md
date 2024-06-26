@@ -1,6 +1,7 @@
 ---
 title: PaperOrientation enum
-description: Specifies the orientation of the paper.
+description: "Specifies the orientation of the paper. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the orientation of the paper.

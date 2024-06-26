@@ -1,6 +1,7 @@
 ---
 title: XmlOptions enum
-description: Enumerate the possible options for an XML operation.
+description: "Enumerate the possible options for an XML operation. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Enumerate the possible options for an XML operation.

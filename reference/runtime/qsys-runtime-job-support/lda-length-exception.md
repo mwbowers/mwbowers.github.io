@@ -1,6 +1,7 @@
 ---
 title: LDALengthException class
-description: The exception that is thrown when a field being get or set from the LDA has a negative length.
+description: "The exception that is thrown when a field being get or set from the LDA has a negative length. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when a field being get or set from the LDA has a negative length.

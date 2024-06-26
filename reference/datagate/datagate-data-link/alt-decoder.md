@@ -1,6 +1,7 @@
 ---
 title: AltDecoder class
-description: Represents a decoder that converts a sequence of encoded bytes into a set of characters. This class is abstract.
+description: "Represents a decoder that converts a sequence of encoded bytes into a set of characters. This class is abstract. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents a decoder that converts a sequence of encoded bytes into a set of characters. This class is abstract.

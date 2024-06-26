@@ -1,6 +1,7 @@
 ---
 title: Limits enum
-description: Defines decimal limits.
+description: "Defines decimal limits. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Defines decimal limits.

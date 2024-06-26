@@ -1,6 +1,7 @@
 ---
 title: UserPasswordCredentialInlineConverter class
-description: The UserPasswordCredentialInlineConverter class is responsible for converting UserPasswordCredential objects.
+description: "The UserPasswordCredentialInlineConverter class is responsible for converting UserPasswordCredential objects. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 The UserPasswordCredentialInlineConverter class is responsible for converting UserPasswordCredential objects.

@@ -1,6 +1,7 @@
 ---
 title: InspectFileParts enum
-description: Specifies the parts of a file to inspect.
+description: "Specifies the parts of a file to inspect. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the parts of a file to inspect.

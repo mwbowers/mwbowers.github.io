@@ -1,6 +1,7 @@
 ---
 title: dgErrorClass enum
-description: Represents the different error classes generated as a result of Acceler8DB or Datagate/400 server errors.
+description: "Represents the different error classes generated as a result of Acceler8DB or Datagate/400 server errors. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents the different error classes generated as a result of Acceler8DB or Datagate/400 server errors.

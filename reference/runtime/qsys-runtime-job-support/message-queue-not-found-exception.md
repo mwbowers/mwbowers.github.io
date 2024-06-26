@@ -1,6 +1,7 @@
 ---
 title: MessageQueueNotFoundException class
-description: The exception that is thrown when a program message queue is not found in the invocation stack.
+description: "The exception that is thrown when a program message queue is not found in the invocation stack. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when a program message queue is not found in the invocation stack.

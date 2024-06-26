@@ -1,6 +1,7 @@
 ---
 title: RangeLast enum
-description: Specifies the last range of a sequence.
+description: "Specifies the last range of a sequence. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the last range of a sequence.

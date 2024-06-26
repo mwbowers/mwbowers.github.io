@@ -1,6 +1,7 @@
 ---
 title: DdsTimeFieldTagHelper class
-description: Defines an input element to capture Times.
+description: "Defines an input element to capture Times. "
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Defines an input element to capture Times.

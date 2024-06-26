@@ -1,6 +1,7 @@
 ---
 title: DateTimeTypeAttribute class
-description: A non-RPG class may stamp a System.DateTime member with this attribute to be considered as a fixed-sized date/time/timestamp field by a consumer RPG program.
+description: "A non-RPG class may stamp a System.DateTime member with this attribute to be considered as a fixed-sized date/time/timestamp field by a consumer RPG p"
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 A non-RPG class may stamp a System.DateTime member with this attribute to be considered as a fixed-sized date/time/timestamp field by a consumer RPG program.

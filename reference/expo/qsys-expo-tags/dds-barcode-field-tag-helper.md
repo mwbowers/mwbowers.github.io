@@ -1,6 +1,7 @@
 ---
 title: DdsBarcodeFieldTagHelper class
-description: Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Barcode or QR Code pictorial representation.
+description: "Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Bar"
+last_modified_at: 2024-06-26T20:27:25Z
 ---
 
 Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Barcode or QR Code pictorial representation.

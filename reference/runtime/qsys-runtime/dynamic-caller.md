@@ -1,6 +1,7 @@
 ---
 title: DynamicCaller class
-description: Support for CALLD as a dynamic call.
+description: "Support for CALLD as a dynamic call. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Support for CALLD as a dynamic call.

@@ -1,6 +1,7 @@
 ---
 title: JobStringAttribute enum
-description: Specifies a string job attribute.
+description: "Specifies a string job attribute. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Specifies a string job attribute.

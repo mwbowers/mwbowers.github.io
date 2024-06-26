@@ -1,6 +1,7 @@
 ---
 title: AccessMode enum
-description: Specifies the access mode for a data operation.
+description: "Specifies the access mode for a data operation. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Specifies the access mode for a data operation.

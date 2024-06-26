@@ -1,6 +1,7 @@
 ---
 title: JobStats class
-description: Tracks lifetime metrics for the job.
+description: "Tracks lifetime metrics for the job. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Tracks lifetime metrics for the job.

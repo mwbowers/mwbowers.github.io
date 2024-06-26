@@ -1,6 +1,7 @@
 ---
 title: CPF1028Exception class
-description: The exception that is thrown when {0} not valid for parameter SYSVAL.
+description: "The exception that is thrown when {0} not valid for parameter SYSVAL. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when {0} not valid for parameter SYSVAL.

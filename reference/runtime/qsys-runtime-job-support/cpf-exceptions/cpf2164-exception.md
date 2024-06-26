@@ -1,6 +1,7 @@
 ---
 title: CPF2164Exception class
-description: The exception that is thrown when Rename of library {0} not complete.
+description: "The exception that is thrown when Rename of library {0} not complete. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Rename of library {0} not complete.

@@ -1,6 +1,7 @@
 ---
 title: FixedStringArrayInDS<T1, T2> struct
-description: Describes a fixed size array of FixedString contained in a DataStructure.
+description: "Describes a fixed size array of FixedString contained in a DataStructure. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes a fixed size array of FixedString contained in a DataStructure.

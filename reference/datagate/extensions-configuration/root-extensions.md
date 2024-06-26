@@ -1,6 +1,7 @@
 ---
 title: RootExtensions class
-description: Provides extension methods for the root configuration.
+description: "Provides extension methods for the root configuration. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Provides extension methods for the root configuration.

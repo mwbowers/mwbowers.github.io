@@ -1,6 +1,7 @@
 ---
 title: DateAttribute class
-description: Provides Date Attribute (for Properties)
+description: "Provides Date Attribute (for Properties) "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Provides Date Attribute (for Properties)

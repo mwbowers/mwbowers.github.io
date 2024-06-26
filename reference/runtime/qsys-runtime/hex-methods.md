@@ -1,6 +1,7 @@
 ---
 title: HexMethods class
-description: Contains extension methods for handling RPG conversions between character strings and their hexadecimal representation.
+description: "Contains extension methods for handling RPG conversions between character strings and their hexadecimal representation. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Contains extension methods for handling RPG conversions between character strings and their hexadecimal representation.

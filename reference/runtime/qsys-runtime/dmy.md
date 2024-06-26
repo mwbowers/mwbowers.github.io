@@ -1,6 +1,7 @@
 ---
 title: _DMY interface
-description: Describes the DMY date/time format in the declaration of date/time types.
+description: "Describes the DMY date/time format in the declaration of date/time types. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 Describes the DMY date/time format in the declaration of date/time types.

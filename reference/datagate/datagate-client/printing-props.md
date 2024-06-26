@@ -1,7 +1,7 @@
 ---
 title: PrintingProps class
-description: Represents the application settings for printing properties.
-This class is auto-generated and changes may be overwritten.
+description: "Represents the application settings for printing properties. This class is auto-generated and changes may be overwritten. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents the application settings for printing properties.

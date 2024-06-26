@@ -1,6 +1,7 @@
 ---
 title: OpenFileAdapterDelegate class
-description: Represents the method that will handle the opening of a file adapter.
+description: "Represents the method that will handle the opening of a file adapter. "
+last_modified_at: 2024-06-26T20:26:58Z
 ---
 
 Represents the method that will handle the opening of a file adapter.

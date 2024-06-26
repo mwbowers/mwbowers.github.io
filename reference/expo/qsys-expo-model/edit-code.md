@@ -1,6 +1,7 @@
 ---
 title: EditCode class
-description: Provides methods to format numeric values according to Edit Code
+description: "Provides methods to format numeric values according to Edit Code "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Provides methods to format numeric values according to Edit Code

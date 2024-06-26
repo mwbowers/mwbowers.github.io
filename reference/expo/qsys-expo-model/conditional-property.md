@@ -1,6 +1,7 @@
 ---
 title: ConditionalProperty class
-description: Defines a ConditionalProperty
+description: "Defines a ConditionalProperty "
+last_modified_at: 2024-06-26T20:27:13Z
 ---
 
 Defines a ConditionalProperty

@@ -1,6 +1,7 @@
 ---
 title: CPF2123Exception class
-description: The exception that is thrown when Description for object {0} not changed.
+description: "The exception that is thrown when Description for object {0} not changed. "
+last_modified_at: 2024-06-26T20:27:05Z
 ---
 
 The exception that is thrown when Description for object {0} not changed.
