@@ -1,5 +1,5 @@
 ---
-title: Configuring Job Idle Tiemout
+title: Configuring Job Idle Timeout
 ---
 
 Similar to a website session timeout, there is a Job Idle Timeout. The JobIdleTime is specified in minutes and direct the Monarch Server to terminate those jobs that have been idle for that length of time.  A Job is considered to be idle if it has been ‘sitting’ on a screen waiting for user input for a ‘long’ period of time.  The default is 20 minutes.
