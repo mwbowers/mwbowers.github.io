@@ -10,7 +10,7 @@ ASNA.QSys.Expo is the implementation of the Application Presentation Layer. *Pre
 
 The ASNA.QSys.Expo Assembly is the subsystem of ASNA.QSys that implements the classes to Render a [Workstation file](/concepts/program-structure/qsys-workstationfile.html) on a Web Page.
 
-The QSys Expo Display Page extends the [Razor Pages](/concepts/user-interface/razor-pages) model, providing [DDS-like](https://www.ibm.com/docs/en/i/7.2?topic=dds-display-files) TagHelpers.
+The QSys Expo Display Page extends the [Razor Pages](/concepts/user-interface/razor-pages.html) model, providing [DDS-like](https://www.ibm.com/docs/en/i/7.2?topic=dds-display-files) TagHelpers.
 
 ASNA.QSys.Expo.Tags
 : DDS-like Presentation TagHelper implementation.

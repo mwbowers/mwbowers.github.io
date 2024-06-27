@@ -3,7 +3,7 @@ title: RPG Language Support
 ---
 
 ## Externally Described Files
-As we have discussed in the topic [IBM i Developer's model](/concepts/background/ibmi-developer-model), we will *focus* on files that are Described Externally, in particular:
+As we have discussed in the topic [IBM i Developer's model](/concepts/background/ibmi-developer-model.html), we will *focus* on files that are Described Externally, in particular:
 1. Displayfile.
 2. Database file.
 3. Message file. 
@@ -39,9 +39,9 @@ Legacy Source *Members* used a fixed position System that came from the [Punched
 
 Note how typically, listings were presented with a ruler at the top, to provide a clue regarding the positions of the data columns.
 
-Focus for a minute on positions from `col 7` to `col 16`. You can see codes being used such as `N01`, `02`, `72 73`, `60 61 62`, etc. These codes represent *Conditions*, and are indicated in a particular expression `syntax`. The basic element used for a *condition* is the [Indicator](/concepts/background/ibmi-developer-model) explained before.
+Focus for a minute on positions from `col 7` to `col 16`. You can see codes being used such as `N01`, `02`, `72 73`, `60 61 62`, etc. These codes represent *Conditions*, and are indicated in a particular expression `syntax`. The basic element used for a *condition* is the [Indicator](/concepts/background/ibmi-developer-model.html) explained before.
 
-Without going into too much detail, the *validity* of the combined *Indicator* expression, determines if the rest of the line is *included* or not. As you may recall from [IBM i Developer's Model](/concepts/background/ibmi-developer-model) an IBM i Program shares its *Indicators* with the Displayfile being used, and *the Program* is responsible for establishing the *state* of the *Indicators* before records are *written* to the Displayfile. 
+Without going into too much detail, the *validity* of the combined *Indicator* expression, determines if the rest of the line is *included* or not. As you may recall from [IBM i Developer's Model](/concepts/background/ibmi-developer-model.html) an IBM i Program shares its *Indicators* with the Displayfile being used, and *the Program* is responsible for establishing the *state* of the *Indicators* before records are *written* to the Displayfile. 
 
 Now, focus on positions from `col 19` to `col 28`. You can see names like `FLDA`, `FLDB`, `FLDC`. These are names that identify elements in `DDS`. For *records* that define `fields` such as `FLDA`, `FLDB`, `FLDC`, `columns 30 through 37` define the *Type*. 
 
@@ -71,7 +71,7 @@ Generally speaking, `column positions 45 to 80` are used as [DDS Keywords](https
 
 Modern Relational DBMS operates on *Sets*. A *Set* is a result of a *Database Query* where you join several *Tables* and describe in detail how the *Set* should be processed by the DBMS to produce a result (typically with many rows). DBMS that operate on *Sets* are better suited to implement [Commitment control](https://www.ibm.com/docs/en/i/7.1?topic=database-commitment-control) 
 
->[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch](/concepts/architecture/asna-qsys)
+>[We will discuss later how Database files operate on ASP.NET with the help of ASNA Monarch](/concepts/architecture/asna-qsys.html)
 
 ## Message Files
 The management of User messages when working with Programs for the IBM i, is also an area that is very well integrated into the IBM i Operating System.
@@ -80,7 +80,7 @@ A Message File is another File *object* IBM i manages and provides an convenient
 
 Messages files provide a dictionary collection of text messages, where the *key* is a string identifier. The IBM i Operating System uses message files to interact with the user as well.
 
-In addition to well integrated Dictionary collection of text messages, [Message Files](/concepts/user-interface/qsys-expo-messagefile) allow a Program to deal with variable text that is merged with the message text *body*, using current field values programmatically.
+In addition to well integrated Dictionary collection of text messages, [Message Files](/concepts/user-interface/qsys-expo-messagefile.html) allow a Program to deal with variable text that is merged with the message text *body*, using current field values programmatically.
 
 >Message files are converted to XML documents as ASNA Monarch Cocoon migrates the Legacy Application.
 

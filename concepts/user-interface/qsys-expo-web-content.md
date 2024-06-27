@@ -138,7 +138,7 @@ The two last `<head>` elements are *link* meta elements:
 Both are of type "rel" (relationship) indicated as *stylesheet*.
 Each refers to an external resource[^6], which will will trigger a new `HTTP` request to the server. 
 
-The first one deserves a particular importance, because it loads the styles used by [QSys Expo Client Library](/concepts/user-interface/qsys-expo-client-library).
+The first one deserves a particular importance, because it loads the styles used by [QSys Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html).
 
 The second one refers to *user* defined Application styles.  This site.css can be used to [override the library styles](#). 
 
@@ -166,11 +166,11 @@ The `@RenderBody()` calls a method that generates the HTML for the Display Page,
 
 Next is a `script` block of type [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
 
-The `module` Script loads and starts the [QSys Expo Client Library](/concepts/user-interface/qsys-expo-client-library).
+The `module` Script loads and starts the [QSys Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html).
 
 It first *imports* the object `Page` from the QSys Expo Client Library and immediately calls the method `init` passing the name of the main HTML `form` element[^7].
 
-> For detail description of the Client side architecture used by Monarch [Read this](/concepts/user-interface/qsys-expo-client-library)
+> For detail description of the Client side architecture used by Monarch [Read this](/concepts/user-interface/qsys-expo-client-library.html)
 
 The last C# code `@RenderSection("Scripts", required: false)` calls a method to generate the script in case a particular page has a "Script" section defined. By default there will not be any Display Page with *user-defined* scripting.
 

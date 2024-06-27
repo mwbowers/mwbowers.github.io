@@ -8,7 +8,7 @@ Interactive Applications include at least one .NET Website Project.
 
 To present a rich User Interface on a Browser, most Websites rely on `Client-Side` JavaScript and CSS libraries that are downloaded from the Application server, and are cached in the browser for optimal performance.
 
-The Website `Server-Side` in ASNA Monarch Base Applications relies on [ASNA.QSys.Expo](reference/asna-qsys-expo/expo-tags/expo-tags-intro.md). The `Client-Side` is conveniently called [ASNA QSys Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content).
+The Website `Server-Side` in ASNA Monarch Base Applications relies on [ASNA.QSys.Expo](/reference/asna-qsys-expo/expo-tags/expo-tags-intro.html). The `Client-Side` is conveniently called [ASNA QSys Expo Web Content](https://github.com/asnaqsys/asna-qsys-expo-web-content).
 
 >*Client-Side Library*, *Web Content* and *Client-Side Framework* are all terms used in association to `Client-Side` resources on a Website.
 

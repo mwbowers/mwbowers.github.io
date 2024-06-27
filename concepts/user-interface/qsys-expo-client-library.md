@@ -16,10 +16,10 @@ There are two CSS files in the library:
 
 Web Technology:
 * Javascript is implemented using [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-* CSS layout styles rely heavily on [advanced CSS features](/concepts/user-interface/qsys-expo-client-advanced-css) 
+* CSS layout styles rely heavily on [advanced CSS features](/concepts/user-interface/qsys-expo-client-advanced-css.html) 
 
 
-Every Display Page will loads the Expo Client Library as described by [Expo Web Content](/concepts/user-interface/qsys-expo-web-content)
+Every Display Page will loads the Expo Client Library as described by [Expo Web Content](/concepts/user-interface/qsys-expo-web-content.html)
 
 > The Browser *cache* technology optimizes the loading of these web resources.
 
@@ -397,7 +397,7 @@ The following shows the Markup for a Subfile Controller and the Subfile record c
 </DdsSubfileControl>
 ```
 
-[Continue with Subfile Design ...](/concepts/user-interface/qsys-expo-client-subfile)
+[Continue with Subfile Design ...](/concepts/user-interface/qsys-expo-client-subfile.html)
 
 <br>
 <br>

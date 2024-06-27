@@ -48,9 +48,9 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 
 ## Migration Targets to handle User Defined CL Commands
 
-1. User Defined Command [translated to a CALLD](/manuals/cocoon/cl-user-def-calld-to-program) (Call to a migrated Program).
-2. User Defined Command [translated to a CALL to a function](/manuals/cocoon/cl-user-def-call-to-function)) (method in C# terms). Alternatively allowing CL Program to specify the extended CL Program class to be overridden to a different base class (where the User Defined functions are implemented).
-3. User Defined Command [translated to instantiation of a new user-defined class and call a to "Execute" method](/manuals/cocoon/cl-user-def-call-to-execute-on-class). The new user-defined class defines properties for each possible parameter. The Migration consists on the instantiation of the class, population of the properties, and then a call to a `Execute` function (method in C# terms).
+1. User Defined Command [translated to a CALLD](/manuals/cocoon/cl-user-def-calld-to-program.html) (Call to a migrated Program).
+2. User Defined Command [translated to a CALL to a function](/manuals/cocoon/cl-user-def-call-to-function.html)) (method in C# terms). Alternatively allowing CL Program to specify the extended CL Program class to be overridden to a different base class (where the User Defined functions are implemented).
+3. User Defined Command [translated to instantiation of a new user-defined class and call a to "Execute" method](/manuals/cocoon/cl-user-def-call-to-execute-on-class.html). The new user-defined class defines properties for each possible parameter. The Migration consists on the instantiation of the class, population of the properties, and then a call to a `Execute` function (method in C# terms).
 
 <br>
 
@@ -59,5 +59,5 @@ The contents of the Dictionary can be edited in place, or text can be copied/pas
 <br>
 <br>
 
-See also [CL User Defined Commands Dictionary XML Schema](/manuals/cocoon/cl-user-def-schema) 
+See also [CL User Defined Commands Dictionary XML Schema](/manuals/cocoon/cl-user-def-schema.html) 
 

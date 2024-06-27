@@ -29,7 +29,7 @@ This topic presents *Concepts* that are important in the understanding to effici
 
 [Program Structure](/concepts/program-structure/program-structure-overview.html)
 
-[User Interface](/concepts/user-interface/ui-overview)
+[User Interface](/concepts/user-interface/ui-overview.html)
 
 [Reports](/concepts/printing/printing-introduction.html)
 

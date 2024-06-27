@@ -2,7 +2,7 @@
 title: Adding New Functionality
 ---
 
-If you are reading this Topic, most likely is because your [Legacy Application](/concepts/background/background-overview) has been successfully migrated to ASP.NET Core, and you have verified that all the Legacy features work correctly.
+If you are reading this Topic, most likely is because your [Legacy Application](/concepts/background/background-overview.html) has been successfully migrated to ASP.NET Core, and you have verified that all the Legacy features work correctly.
 
 Now you want to take advantage of the new [Computing Platform](https://en.wikipedia.org/wiki/Computing_platform).
 
@@ -21,7 +21,7 @@ Every company has unique requirements and Application needs, the following are v
 
 ## Extending Application for new Areas or Processes
 
-If there is the need of a completely new area of your business and your developers are mostly C# developers unfamiliar with [Legacy Developer model](/concepts/background/ibmi-developer-model), perhaps the best option is to write the new features using other Application frameworks such as [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0).
+If there is the need of a completely new area of your business and your developers are mostly C# developers unfamiliar with [Legacy Developer model](/concepts/background/ibmi-developer-model.html), perhaps the best option is to write the new features using other Application frameworks such as [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0).
 
 > ASNA Monarch Base extends ASP.NET Core and can be combined seamlessly with any other ASP.NET Base.
 
@@ -56,5 +56,4 @@ If the Legacy Application had all the features your Business needs, but needs to
 
 There may be some Areas of your Legacy Application where Mobile users are the most common users, or Display Pages that need more advanced input devices (economically offered by Smart Phones such as GPS, cameras, finger signature, etc.).
 
-If this meets your needs, please refer to [ASNA Monarch Base Mobile Support](/mobile/mobile-overview).
 

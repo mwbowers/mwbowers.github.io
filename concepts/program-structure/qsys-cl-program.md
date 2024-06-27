@@ -4,7 +4,7 @@ title: ASNA.QSys CL Program
 
 IBM i Command Language uses free-format syntax, similar to modern programming languages such as C#.
 
-[ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help150/Main_Monarch_90.htm) migrates CL Programs as classes derived from `QSys CLProgram` which is a specialized version of [QSys Program](/concepts/program-structure/qsys-program)
+[ASNA Monarch Cocoon](https://docs.asna.com/documentation/Help150/Main_Monarch_90.htm) migrates CL Programs as classes derived from `QSys CLProgram` which is a specialized version of [QSys Program](/concepts/program-structure/qsys-program.html)
 
 CL Program extends `QSys Program` by adding support for: 
 1. %Switch, *BCAT, *TCAT methods.
@@ -18,4 +18,4 @@ CL Program extends `QSys Program` by adding support for:
 
 ## Notes: 
 1. CL Programs do not have an [implicit logic cycle](https://www.ibm.com/docs/en/i/7.2?topic=cycle-rpg-other-implicit-logic).
-2. CL Programs are de-activated when program completes. [For information about Program Activation read this](/concepts/program-structure/qsys-program). 
+2. CL Programs are de-activated when program completes. [For information about Program Activation read this](/concepts/program-structure/qsys-program.html). 

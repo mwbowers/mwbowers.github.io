@@ -4,7 +4,7 @@ title: QSys Program Structure
 
 IBM i Programs written in [RPG](https://www.ibm.com/docs/en/i/7.2?topic=languages-rpg) and [CL](https://www.ibm.com/docs/en/i/7.2?topic=language-control-overview) are Migrated as C# classes derived from `ASNA.QSys.HostServices.Program` (which we will refer in this document as a `QSys Program` - for short -).
 
-In order for a QSys Program class to support the [IBM i Developer's model](/concepts/background/ibmi-developer-model), it must rely on other classes such that it may :
+In order for a QSys Program class to support the [IBM i Developer's model](/concepts/background/ibmi-developer-model.html), it must rely on other classes such that it may :
 
 - *Use* [Display Pages](/concepts/user-interface/qsys-expo-display-pages.html).
 - *Perform* record-at-time [File Access](/concepts/program-structure/qsys-databasefile.html) logic: SetLL, Chain, Update, Delete, etc.

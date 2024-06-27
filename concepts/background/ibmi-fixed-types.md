@@ -66,7 +66,7 @@ Typical Terminal data speed was 9600 bauds (bits per second). That is: 1,200 byt
 
 `RPG` also allows to optimize memory footprint on decimal fields. [See Packed-decimal format.](https://www.ibm.com/docs/en/i/7.3?topic=type-packed-decimal-format)
 
->All these optimizations are not *natively* supported by .NET, but Legacy `RPG` logic must have a target which produces the exact effect. This is where [ASNA.QSys comes to the rescue](/concepts/architecture/asna-qsys)
+>All these optimizations are not *natively* supported by .NET, but Legacy `RPG` logic must have a target which produces the exact effect. This is where [ASNA.QSys comes to the rescue](/concepts/architecture/asna-qsys.html)
 
 ## IBM i RPG Fixed Types
 

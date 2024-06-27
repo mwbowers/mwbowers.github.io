@@ -15,7 +15,7 @@ Provides Date Attribute (for Properties)
 
 ## Remarks
 
-Model Fields are declared as Record Properties. To annotate the [Fixed Type](/concepts/program-structure/qsys-fixedtypes) as `Date`, Model properties can use this attribute.
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) as `Date`, Model properties can use this attribute.
 
 For example,
 
@@ -24,7 +24,7 @@ For example,
 public DateTime SORDDATE { get; private set; } // ORDER DATE
 ```
 
-Declares a read-only field of [Fixed Type](/concepts/program-structure/qsys-fixedtypes) `Date`, with `"USA"` presentation `Date Format`, named `SORDDATE` on a particular Model Record.
+Declares a read-only field of [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) `Date`, with `"USA"` presentation `Date Format`, named `SORDDATE` on a particular Model Record.
 
 ## Properties
 

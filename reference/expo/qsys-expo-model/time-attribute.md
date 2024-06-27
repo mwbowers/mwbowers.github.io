@@ -15,7 +15,7 @@ Provides Time Attribute (for Properties)
 
 ## Remarks
 
-Model Fields are declared as Record Properties. To annotate the [Fixed Type](/concepts/program-structure/qsys-fixedtypes) as `Time`, Model properties can use this attribute.
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) as `Time`, Model properties can use this attribute.
 
 For example,
 
@@ -24,7 +24,7 @@ For example,
 public DateTime OPENTIME { get; private set; } // Opening Time
 ```
 
-Declares a read-only field of [Fixed Type](/concepts/program-structure/qsys-fixedtypes) `Time`, with `"USA"` presentation `Time Format`, named `OPENTIME` on a particular Model Record.
+Declares a read-only field of [Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) `Time`, with `"USA"` presentation `Time Format`, named `OPENTIME` on a particular Model Record.
 
 ## Properties
 

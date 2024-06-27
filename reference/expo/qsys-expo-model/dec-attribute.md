@@ -24,7 +24,7 @@ For example,
 public decimal SORDNUM { get; private set; } // ORDER NUMBER
 ```
 
-Declares a read-only field of [Decimal Fixed Type](/concepts/program-structure/qsys-fixedtypes) `Dec`, with length nine and zero decimal positions, named `SORDNUM` on a particular Model Record.
+Declares a read-only field of [Decimal Fixed Type](/concepts/program-structure/qsys-fixedtypes.html) `Dec`, with length nine and zero decimal positions, named `SORDNUM` on a particular Model Record.
 
 
 ## Constructors

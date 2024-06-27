@@ -116,6 +116,6 @@ Once the syntax is corrected, the [ADO.NET Provider for SQL Server](https://lear
 
 Legacy RPG logic may depend on [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=reference-sqlca-sql-communication-area) which defines *program global* fields that provide access to execution state reporting fields like [SQLSTATE](https://www.ibm.com/docs/en/i/7.3?topic=area-field-descriptions) and [SQLCODE](https://www.ibm.com/docs/en/i/7.3?topic=area-field-descriptions).
 
-[ASNA.QSys.Runtime](/concepts/architecture/asna-qsys.md) implements RPG [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=reference-sqlca-sql-communication-area) by populating the [SQL_CommunicationsArea](program-sql-communications-area-class.html).
+[ASNA.QSys.Runtime](/concepts/architecture/asna-qsys.html) implements RPG [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=reference-sqlca-sql-communication-area) by populating the [SQL_CommunicationsArea](program-sql-communications-area-class.html).
 
 >Note: In addition to the [SQLCA](https://www.ibm.com/docs/en/i/7.3?topic=area-field-descriptions) defined fields, [SQL_CommunicationsArea](/reference/runtime/qsys-runtime-job-support/sql-communications-area.html) provides [SQL_Exception](/reference/runtime/qsys-runtime-job-support/sql-communications-area.html#properties) giving access to the raw [.NET SqlClientException](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlexception?view=dotnet-plat-ext-8.0) instance.

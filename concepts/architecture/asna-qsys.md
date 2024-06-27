@@ -20,22 +20,22 @@ The following sections will go in detail, describing the concepts behind the des
 
 ## ASNA.QSys.Runtime Assembly
 Support for:
-1. [Job](/concepts/architecture/qsys-job).
-2. [Programs and Procedures](/concepts/program-structure/qsys-program).
-3. [Workstation file](/concepts/program-structure/qsys-workstationfile).
-4. [Database file](/concepts/program-structure/qsys-databasefile).
-5. [Fixed Types](/concepts/program-structure/qsys-fixedtypes).
-6. [Command Language (CL) Programs](/concepts/program-structure/qsys-cl-program).
+1. [Job](/concepts/architecture/qsys-job.html).
+2. [Programs and Procedures](/concepts/program-structure/qsys-program.html).
+3. [Workstation file](/concepts/program-structure/qsys-workstationfile.html).
+4. [Database file](/concepts/program-structure/qsys-databasefile.html).
+5. [Fixed Types](/concepts/program-structure/qsys-fixedtypes.html).
+6. [Command Language (CL) Programs](/concepts/program-structure/qsys-cl-program.html).
 
 <br>
 
 ## ASNA.QSys.Expo Assembly
 Support for:
-1. [Display Pages](/concepts/user-interface/qsys-expo-display-pages).
-2. [DDS-like TagHelpers](/concepts/user-interface/qsys-expo-dds-elements).
-3. [Display Page Model](/concepts/user-interface/qsys-expo-display-page-model).
-4. [Expo Web Content](/concepts/user-interface/qsys-expo-web-content).
-5. [Expo Client Library](/concepts/user-interface/qsys-expo-client-library).
+1. [Display Pages](/concepts/user-interface/qsys-expo-display-pages.html).
+2. [DDS-like TagHelpers](/concepts/user-interface/qsys-expo-dds-elements.html).
+3. [Display Page Model](/concepts/user-interface/qsys-expo-display-page-model.html).
+4. [Expo Web Content](/concepts/user-interface/qsys-expo-web-content.html).
+5. [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html).
 
 
 <br>
@@ -43,7 +43,7 @@ Support for:
 ## ASNA.QSys.DataGate.Client Assembly
 Support for:
 
-1. [Record-level File Access](/concepts/program-structure/qsys-databasefile).
+1. [Record-level File Access](/concepts/program-structure/qsys-databasefile.html).
 2. Multi-member File.
 3. QTEMP.
 4. IBM i OS Execute.
