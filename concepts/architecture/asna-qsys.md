@@ -1,5 +1,5 @@
 ---
-title: Monarch Base Architecture
+title: Monarch Base Assemblies
 ---
 
 The ASNA Monarch Base Architecture uses a layered architecture, where each of the layers is packaged into a [.NET Assembly](https://docs.microsoft.com/en-us/dotnet/standard/assembly/).
