@@ -1,7 +1,8 @@
 ---
 title: ILen interface
 description: "Interface that identifies types to be used as length type arguments in fixed type declarations. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T15:48:21Z
+sitemap: false
 ---
 
 Interface that identifies types to be used as length type arguments in fixed type declarations.

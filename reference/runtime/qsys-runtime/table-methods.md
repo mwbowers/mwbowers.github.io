@@ -1,7 +1,8 @@
 ---
 title: TableMethods class
 description: "Contains extension methods for handling Table RPG semantics. "
-last_modified_at: 2024-06-26T20:27:06Z
+last_modified_at: 2024-06-28T15:48:21Z
+sitemap: false
 ---
 
 Contains extension methods for handling Table RPG semantics.

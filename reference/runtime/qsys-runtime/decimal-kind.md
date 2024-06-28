@@ -1,7 +1,8 @@
 ---
 title: DecimalKind enum
 description: "Indicates the kind of decimal field. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T15:48:21Z
+sitemap: false
 ---
 
 Indicates the kind of decimal field.

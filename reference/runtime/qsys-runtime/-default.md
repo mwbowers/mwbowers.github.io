@@ -1,7 +1,8 @@
 ---
 title: _Default interface
 description: "Describes the Default date/time separator in the declaration of date/time types. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T15:48:21Z
+sitemap: false
 ---
 
 Describes the Default date/time separator in the declaration of date/time types.
