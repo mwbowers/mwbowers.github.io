@@ -1,6 +1,6 @@
 ---
 title: DataGate on SQL Server Overview
-
+description: This document provides an overview of deploying DataGate on SQL Server, including prerequisites, installation steps, and initial configuration to integrate DataGate with SQL Server environments.
 ---
 
 DataGate (DG) connects .NET clients with MS SQL Server.  The concepts surfaced by the DG API are based on the IBM i database ISAM style record level access. The DG client is delivered in the ASNA.QSys.DataGate.Client .NET assembly. 

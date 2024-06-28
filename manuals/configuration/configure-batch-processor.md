@@ -1,6 +1,6 @@
 ---
 title: Configure Batch Processor
-
+description: Provides instructions for configuring the batch processor, including setting up the environment, adjusting processing parameters, and ensuring optimal performance.
 ---
 
 Monarch provides these two programs to assist in the processing of Batch Jobs:

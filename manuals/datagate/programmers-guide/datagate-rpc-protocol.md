@@ -1,6 +1,6 @@
 ---
 title: DataGate RPC Protocol Highlights
-
+description: This document highlights the key aspects of the DataGate RPC Protocol, including its architecture, communication methods, and how it facilitates remote procedure calls in distributed systems.
 ---
 
 DataGate is a Client/Server middleware providing database access to .NET applications.

@@ -1,6 +1,6 @@
 ---
 title: Migrated Embedded SQL Statements to SQL Server
-
+description: This document outlines the process and considerations for migrating embedded SQL statements to SQL Server, including syntax adjustments, performance implications, and compatibility issues.
 ---
 
 ## Overview

@@ -1,6 +1,6 @@
 ---
 title: Differences Between DataGate for IBM i and DataGate Linear for SQL Server
-
+description: This document highlights the key differences between DataGate for IBM i and DataGate Linear for SQL Server, focusing on architecture, data handling, and feature set to guide users in choosing the right solution for their needs.
 ---
 
 ## Overview

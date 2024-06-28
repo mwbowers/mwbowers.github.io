@@ -1,6 +1,6 @@
 ---
 title: Efficient File Access
-
+description: This document explores strategies for efficient file access, focusing on techniques to improve read/write performance, methods for handling large files, and best practices for file system interaction.
 ---
 
 Previously, we saw how a file can be read using the [ FileAdapter](file-adapter-class.html) and [AdgDataSet](adg-dataset-class.html) objects. FileAdapter’s [ReadSequential](file-adapter-class-read-sequential-method.html) method is the best way to read each record of a file in succession. For large files, using this method to find a particular record of interest can be inefficient. The [ReadRandomRRN](file-adapter-class-read-random-rrn-method.html), [ReadRandomKey](file-adapter-class-read-random-key-method.html), [ ReadRange](file-adapter-class-read-range-method.html), and [ReadSequentialEqual](file-adapter-class-read-sequential-equal-method.html) methods are provided for this reason.

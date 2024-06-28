@@ -1,6 +1,6 @@
 ---
 title: Enhancing Applications using Non-Display File Pages
-
+description: This document outlines strategies for enhancing applications by incorporating non-display file pages, including techniques for integration, benefits, and examples of use cases.
 ---
 
 ## The Job

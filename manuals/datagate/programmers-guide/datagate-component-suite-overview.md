@@ -1,6 +1,6 @@
 ---
 title: ASNA DataGate Client
-
+description: This document provides an overview of the ASNA DataGate Client, including its features, how it integrates with various development environments, and guidance on setup and configuration for optimal use.
 ---
 
 The ASNA DataGate assembly provides managed-code access to data and objects residing in DataGate for IBM i and DataGate for Windows (formerly, Acceler8DB) databases. Leveraging the strength of the .NET Framework, DG for Visual Studio 2019 programs can be created using any .NET development language, including ASNA Visual RPG, Visual Basic, C#, and others. Data access mechanisms in DG for Visual Studio 2019 support and enhance the System.Data namespace, including the DataSet model, while maintaining traditional DataGate record-level characteristics.

@@ -1,6 +1,6 @@
 ---
 title: Accessing the DG Assembly
-
+description: This document outlines the process for accessing the DG Assembly, including prerequisites, step-by-step access instructions, and troubleshooting common issues encountered during access.
 ---
 
 The first step to accessing and using DataGate in your project after it has been installed is to reference the assembly so you can "see" the objects it contains. 

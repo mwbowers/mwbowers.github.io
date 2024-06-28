@@ -1,6 +1,6 @@
 ---
 title: Migrating to SQL Server
-
+description: This document offers a detailed guide on migrating databases to SQL Server, covering preparation steps, migration strategies, and post-migration considerations to ensure a successful transition.
 ---
 
 

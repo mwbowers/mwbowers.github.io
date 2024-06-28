@@ -1,6 +1,6 @@
 ---
 title: Accessing Session Values from MyJob Class
-
+description: This document provides guidance on how to access session values within the MyJob class, including code examples and best practices for managing session data effectively.
 ---
 
 The Monarch Base architecture of an [interactive applications](/concepts/architecture/application-architecture.html#interactive-job-architecture) divides the user interface from the business logic.  The user interface runs in a Razor Pages based Website while the business logic DLLs may be run in a separate thread within the website or potentially in a separate process.  

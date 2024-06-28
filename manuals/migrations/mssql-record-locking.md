@@ -1,6 +1,6 @@
 ---
 title: Migrating Record Locking/Unlocking to SQL Server
-
+description: This document provides a detailed guide on migrating record locking and unlocking mechanisms from legacy systems to SQL Server, including best practices, potential challenges, and solutions to ensure data integrity and concurrency control.
 ---
 
 ## Overview

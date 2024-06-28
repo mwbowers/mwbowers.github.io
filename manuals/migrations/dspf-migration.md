@@ -1,6 +1,6 @@
 ---
 title: Migration of Display Files
-
+description: This document provides a comprehensive guide on migrating display files from traditional systems to modern platforms, covering strategies, tools, and best practices to ensure a smooth transition.
 ---
 
 ## Display Files

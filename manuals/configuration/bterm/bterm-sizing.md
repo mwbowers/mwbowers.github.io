@@ -1,6 +1,6 @@
 ---
 title: BTerm Sizing
-
+description: This document provides guidance on adjusting the size and layout of BTerm windows, including tips for optimizing workspace efficiency and customizing the terminal interface to fit user preferences.
 ---
 
 ## Changing the Terminal Display Size

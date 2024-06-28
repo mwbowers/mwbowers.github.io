@@ -1,6 +1,6 @@
 ---
 title: BTerm Macros
-
+description: This document introduces the concept of macros in BTerm, explaining how to create, manage, and use macros to automate repetitive tasks and enhance efficiency within the terminal.
 ---
 
 The ASNA 5250 Terminal Emulator code provides a function that accepts an array of Actions and/or characters, and executes each in the sequence specified by the array positions.

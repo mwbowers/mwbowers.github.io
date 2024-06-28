@@ -1,6 +1,6 @@
 ---
 title: Configuring the Expo Website
-
+description: This guide covers the steps necessary to configure the Expo website, including setting up the project environment, customizing settings, and deploying the site for public access.
 ---
 
 ## Application Settings

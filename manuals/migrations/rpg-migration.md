@@ -1,6 +1,6 @@
 ---
 title: Migration of RPG Programs
-
+description: This document outlines the process and best practices for migrating RPG programs to new platforms or languages, focusing on strategies for code conversion, data compatibility, and minimizing disruption to existing operations.
 ---
 
 

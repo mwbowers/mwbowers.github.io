@@ -1,6 +1,6 @@
 ---
 title: Accessing a File
-
+description: This document provides detailed instructions on how to access a file, covering various methods and tools that can be used to locate, open, and modify files across different operating systems.
 ---
 
 ## Contents

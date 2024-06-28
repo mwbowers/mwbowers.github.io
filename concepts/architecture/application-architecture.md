@@ -1,6 +1,6 @@
 ---
 title: Application Architecture
-
+description: This document outlines the architecture of the application, detailing its components, how they interact, and the principles guiding its design.
 ---
 
 

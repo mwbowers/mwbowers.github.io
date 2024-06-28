@@ -1,6 +1,6 @@
 ---
 title: Calling Stored Procedures
-
+description: This document guides you through the process of calling stored procedures within a database, including the necessary syntax, parameters, and examples for various database management systems.
 ---
 
 #### Program Call Example Tutorial

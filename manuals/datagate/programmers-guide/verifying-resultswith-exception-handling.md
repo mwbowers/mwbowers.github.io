@@ -1,6 +1,6 @@
 ---
 title: Verifying Results with Exception Handling
-
+description: This document discusses strategies for verifying results in software applications through the use of exception handling, outlining best practices for error detection and management to ensure program correctness and reliability.
 ---
 
 Results of [FileAdapter](file-adapter-class.html) and [ AdgDataSet](adg-dataset-class.html) methods are provided via .NET exception handling. The standard exception object in DG is [dgException](dgexception-class.html). DG uses **dgException** to transmit both error conditions and "normal" procedural conditions, such as "end-of-file". In the examples shown so far, tests for dgException have been omitted for clarity. In your own DG programs, you would use these checks to improve the reliability of your program. The DG reference documentation for access and other methods lists the common **dgException** objects thrown. 

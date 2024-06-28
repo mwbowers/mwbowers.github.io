@@ -1,6 +1,6 @@
 ---
 title: Remediation of Procedure Scoped Files
-
+description: This document provides strategies and best practices for the remediation of procedure scoped files, focusing on addressing scope limitations and enhancing file management within procedures.
 ---
 
 ## Remediation

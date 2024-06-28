@@ -1,6 +1,6 @@
 ---
 title: Configure MS SQL Server for DataGate Linear
-
+description: This guide provides step-by-step instructions on configuring Microsoft SQL Server to work with DataGate Linear, including setup procedures, configuration options, and troubleshooting tips.
 ---
 
 DataGate Linear is the implementation of DataGate used to communicate to SQL Server directly via ADO.NET.  

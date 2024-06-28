@@ -1,6 +1,6 @@
 ---
 title: Connecting To/From a Database
-
+description: This document provides a comprehensive guide on establishing connections to and from a database, covering various database systems, connection strings, troubleshooting tips, and best practices for secure and efficient database connectivity.
 ---
 
 Database access with DG follows the traditional client/server pattern: 

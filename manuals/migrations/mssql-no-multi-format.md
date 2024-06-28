@@ -1,6 +1,6 @@
 ---
 title: Lack of support for Multi-format Files under SQL Server
-
+description: This document addresses the limitations of SQL Server in handling multi-format files, detailing the challenges and potential workarounds for managing such files within SQL Server environments.
 ---
 
 ## Overview

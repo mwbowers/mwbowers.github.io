@@ -1,6 +1,6 @@
 ---
 title: Programmers Guide
-
+description: This guide provides programmers with comprehensive information on coding standards, best practices, and tools to enhance productivity and ensure the development of high-quality software.
 ---
 
 This section of the documentation contains the basics to assist you in using DG.

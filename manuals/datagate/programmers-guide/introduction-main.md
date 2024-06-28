@@ -1,6 +1,6 @@
 ---
 title: Introduction
-
+description: This document serves as an introduction, providing an overview of the main topics, objectives, and structure of the content that follows.
 ---
 
 This section contains an overview of the DataGate client facilities.

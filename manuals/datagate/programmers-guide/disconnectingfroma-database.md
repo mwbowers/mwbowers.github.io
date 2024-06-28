@@ -1,6 +1,6 @@
 ---
 title: Disconnecting From a Database
-
+description: This document provides instructions and best practices for safely disconnecting from a database, including steps to ensure data integrity and minimize disruption to ongoing operations.
 ---
 
 After database connection and access are complete, applications *must* disconnect from the database to properly release unmanaged resources. These unmanaged resources are provided to DG by the <span>Common Language Runtime (CLR)</span> for network access. In general, DG and the CLR will not release these unmanaged resources for you, and if not released, unexpected results, including loss of data, can occur. You must explicitly release unmanaged resources associated with **AdgConnection** objects using the [ AdgConnection.Close](adg-connection-class-close-method.html) or [AdgConnection.Dispose](adg-connection-class-dispose-method.html) methods. You should call one of these methods before the **AdgConnection** variable loses scope or is reassigned.

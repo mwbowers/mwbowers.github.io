@@ -1,6 +1,6 @@
 ---
 title: Input-Only Physical Field Restrictions
-
+description: This document discusses the limitations and considerations for using input-only physical fields in database design, including their impact on data integrity and application functionality.
 ---
 
 ## Overview

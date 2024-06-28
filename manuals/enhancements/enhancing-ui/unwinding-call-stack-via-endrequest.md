@@ -1,6 +1,6 @@
 ---
 title: Unwinding the Call Stack via EndRequest
-
+description: This document explores the technique of unwinding the call stack in web applications using the EndRequest event, including scenarios where this approach is beneficial and how to implement it effectively.
 ---
 
 # Introduction
