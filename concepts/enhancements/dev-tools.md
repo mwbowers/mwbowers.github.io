@@ -67,7 +67,7 @@ The `AdgFileUsageGenerator` custom tool takes as **input**:
 
 The `AdgFileUsageGenerator` custom tool produces as **output**: The `.io.cs` C# partial class, containing:
 
-1. External field declarations as C# [Fixed Types](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes).
+1. External field declarations as C# [Fixed Types](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes.html).
 2. An explicit copy of the bytes representing the *Record format ID* for all files to be used by the *Open* method to implement *run-time* [Level checking](https://www.ibm.com/docs/en/i/7.2?topic=files-level-checking).
 3. Implementation of methods for every file to populate fields in/out of the shared *DataSet*.
 

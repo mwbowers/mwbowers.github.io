@@ -15,7 +15,7 @@ Provides Byte Attributes (for Properties)
 
 ## Remarks
 
-Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) as `Byte`, Model properties can use this attribute.
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes.html) as `Byte`, Model properties can use this attribute.
 
 For example,
 
@@ -23,7 +23,7 @@ For example,
 [Byte()]
 public byte MY_BYTE_FIELD { get; set; }
 ```
-Declares a read/write field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Byte` named `MY_BYTE_FIELD` on a particular Model Record.
+Declares a read/write field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes.html) `Byte` named `MY_BYTE_FIELD` on a particular Model Record.
 
 Note that there is no need to indicate the field length, one is the only possible length.
 

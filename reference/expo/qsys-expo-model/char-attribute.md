@@ -15,7 +15,7 @@ Provides Char Attributes (for Properties)
 
 ## Remarks
 
-Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) as `Char`, Model properties can use this attribute.
+Model Fields are declared as Record Properties. To annotate the [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes.html) as `Char`, Model properties can use this attribute.
 
 For example,
 
@@ -24,7 +24,7 @@ For example,
 public string SFCSZ { get; private set; } // CITY-STATE-ZIP
 ```
 
-Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes) `Char`, with length of 25 chars, named `SFCSZ` on a particular Model Record.
+Declares a read-only field of [Fixed Type](https://asnaqsys.github.io/concepts/program-structure/qsys-fixedtypes.html) `Char`, with length of 25 chars, named `SFCSZ` on a particular Model Record.
 
 
 ## Constructors

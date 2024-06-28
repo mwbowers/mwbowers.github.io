@@ -59,7 +59,7 @@ skip_read_time: true
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 card-holder">
-        <a class="card manuals" href="/manuals/manuals-overview">
+        <a class="card manuals" href="/manuals/manuals-overview.html">
           <h5 class="title">Manuals</h5>
           <p>
             Learn how to setup and operate the application environment.
@@ -67,7 +67,7 @@ skip_read_time: true
         </a>
       </div>      
       <div class="col-xs-12 col-sm-6 col-lg-4 card-holder">
-        <a class="card reference" href="/reference/reference-overview">
+        <a class="card reference" href="/reference/reference-overview.html">
           <h5 class="title">Reference</h5>
           <p>
             Browse through the CLI and API reference documentation.
@@ -75,7 +75,7 @@ skip_read_time: true
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-lg-4 card-holder">
-        <a class="card examples" href="/examples/examples-overview">
+        <a class="card examples" href="/examples/examples-overview.html">
           <h5 class="title">Examples</h5>
           <p>
             Browse through a collection of interesting code examples.
