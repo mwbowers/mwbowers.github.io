@@ -1,7 +1,7 @@
 ---
 title: Table&lt;T&gt; class
 description: "Supports RPG&#39;s table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. "
-last_modified_at: 2024-06-26T20:27:06Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property.

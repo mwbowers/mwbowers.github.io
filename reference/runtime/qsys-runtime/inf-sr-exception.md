@@ -1,7 +1,7 @@
 ---
 title: InfSrException class
 description: "Exception that can be thrown from InfSr to return or report an error condition. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Exception that can be thrown from InfSr to return or report an error condition.

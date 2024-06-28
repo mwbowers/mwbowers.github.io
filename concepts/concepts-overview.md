@@ -1,5 +1,6 @@
 ---
 title: ASNA Monarch® Base - Concepts
+description: Explains the Basic Concepts that should become before ASNA Monarch® Base can be used. 
 ---
 
 The application you are enhancing, maintaining or trying to understand probably originated on an IBM i and was migrated with ASNA Monarch technology.

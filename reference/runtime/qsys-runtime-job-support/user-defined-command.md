@@ -1,7 +1,7 @@
 ---
 title: UserDefinedCommand class
 description: "Defines the core behavior of user defined commands and provide a base for derived classes. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines the core behavior of user defined commands and provide a base for derived classes.

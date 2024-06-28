@@ -1,7 +1,7 @@
 ---
 title: IOpenAccessReader interface
 description: "Defines methods for reading data from an open access channel. "
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Defines methods for reading data from an open access channel.

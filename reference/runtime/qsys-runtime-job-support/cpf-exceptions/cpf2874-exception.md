@@ -1,7 +1,7 @@
 ---
 title: CPF2874Exception class
 description: "The exception that is thrown when Both to-file and from-file are the same. To-file {0} in library {1} is the same as the from-file. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The exception that is thrown when Both to-file and from-file are the same. To-file {0} in library {1} is the same as the from-file.

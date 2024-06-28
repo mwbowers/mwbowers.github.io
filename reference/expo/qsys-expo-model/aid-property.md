@@ -1,7 +1,7 @@
 ---
 title: AidProperty class
 description: "Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an bool"
-last_modified_at: 2024-06-26T20:27:13Z
+last_modified_at: 2024-06-28T18:18:50Z
 ---
 
 Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an boolean expression.

@@ -1,7 +1,7 @@
 ---
 title: TransactionLevel enum
 description: "Specifies the transaction level for a database operation. "
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Specifies the transaction level for a database operation.

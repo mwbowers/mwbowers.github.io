@@ -1,7 +1,7 @@
 ---
 title: StructureType class
 description: "Represents a structured type in a DataLink connection, which can contain multiple other types. "
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Represents a structured type in a DataLink connection, which can contain multiple other types.

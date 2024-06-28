@@ -1,7 +1,7 @@
 ---
 title: Call class
 description: "Provides functionality to handle calling a program residing in an IBMi server. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Provides functionality to handle calling a program residing in an IBMi server.

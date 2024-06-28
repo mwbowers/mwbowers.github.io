@@ -1,5 +1,6 @@
 ---
 title: IBM i Fixed Types
+description: Explore the intricacies of IBM i fixed types with our comprehensive guide, designed for developers and IT professionals working with IBM i systems. This document delves into the fixed data types unique to the IBM i environment, providing a detailed explanation of each type, its characteristics, and its role in application development on IBM i. Whether you're dealing with legacy systems or integrating IBM i with modern applications, understanding these fixed types is crucial for effective data management and application performance. Our guide aims to equip you with the knowledge needed to navigate the complexities of IBM i data types, enhancing your development practices and interaction with IBM i systems.
 ---
 
 The Data handling aspect of the `RPG` Developer's Model, assumed a *conscious* mental data-representation, with the following concerns:

@@ -1,7 +1,7 @@
 ---
 title: WebDevice class
 description: "Defines the core behavior of the device handling the user interface for an interactive job and provides a base for derived classes. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines the core behavior of the device handling the user interface for an interactive job and provides a base for derived classes.

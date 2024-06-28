@@ -1,5 +1,6 @@
 ---
 title: Batch Jobs
+description: Dive into the world of batch jobs with our comprehensive guide, designed to empower developers, system administrators, and IT professionals with the knowledge to efficiently manage and execute batch processing tasks. This resource covers everything from the basics of batch job creation to advanced techniques for optimizing performance and scalability. Learn how to design, schedule, and monitor batch jobs to automate repetitive tasks, process large volumes of data, and streamline your operations. Whether you're working in a Unix/Linux environment, Windows, or cloud-based platforms, our guide provides practical insights and tips to enhance your batch processing capabilities.
 ---
 
 

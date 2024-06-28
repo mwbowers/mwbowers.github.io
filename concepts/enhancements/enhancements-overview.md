@@ -1,5 +1,6 @@
 ---
 title: Enhancing Migrated Applications
+description: Explore effective strategies for enhancing migrated applications, focusing on modernization, performance optimization, and seamless integration with contemporary technologies. This guide offers insights into maximizing the potential of applications post-migration, ensuring they meet current and future business needs.
 ---
 
 Once a Legacy Application has been migrated and tested, the next step is to improve it.

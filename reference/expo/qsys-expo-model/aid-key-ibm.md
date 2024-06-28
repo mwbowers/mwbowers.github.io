@@ -1,7 +1,7 @@
 ---
 title: AidKeyIBM enum
 description: "Specifies the IBM i Attention Key (AID) hex code "
-last_modified_at: 2024-06-26T20:27:13Z
+last_modified_at: 2024-06-28T18:18:50Z
 ---
 
 Specifies the IBM i Attention Key (AID) hex code

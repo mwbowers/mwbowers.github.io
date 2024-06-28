@@ -1,7 +1,7 @@
 ---
 title: DdsTableColumnTagHelper class
 description: "Defines a Table Column "
-last_modified_at: 2024-06-26T20:27:25Z
+last_modified_at: 2024-06-28T18:19:00Z
 ---
 
 Defines a Table Column

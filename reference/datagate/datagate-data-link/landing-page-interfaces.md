@@ -1,5 +1,6 @@
 ---
 title: ASNA.DataGate.DataLink Interfaces
+description: TOC Landing page for ASNA.DataGate.DataLink Interfaces
 ---
 
 ## Remarks

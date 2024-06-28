@@ -1,5 +1,6 @@
 ---
 title: What's new in Monarch Base 5.0
+description: Step into the future with Monarch Base 5.0, as we unveil the latest enhancements and features that redefine the capabilities of our platform. This guide is meticulously crafted for developers, system administrators, and end-users, offering a deep dive into the groundbreaking improvements and new functionalities introduced in version 5.0. From cutting-edge technology integrations to significant performance upgrades, and user experience enhancements, Monarch Base 5.0 is designed to elevate your operational efficiency and productivity. Explore the comprehensive changes that set a new standard for what you can achieve with Monarch Base, ensuring you're fully equipped to leverage the full power of these updates in your projects and workflows.
 ---
 
 The major new features on Monarch Base 5.0 are:

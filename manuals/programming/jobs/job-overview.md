@@ -1,5 +1,6 @@
 ---
 title: Jobs
+description: Unlock the fundamentals of computing jobs with our comprehensive overview, designed to provide a foundational understanding for developers, system administrators, and IT professionals. This guide introduces the concept of jobs in the computing world, encompassing batch jobs, interactive jobs, and other job types. Learn about the roles these jobs play in system operations, data processing, and user interaction. From scheduling and execution to monitoring and optimization, our resource offers a broad perspective on how jobs are managed and utilized in various computing environments. Whether you're new to the field or looking to refresh your knowledge, this guide lays the groundwork for mastering job management and execution.
 ---
 
 ### Background

@@ -1,7 +1,7 @@
 ---
 title: FixedTimestamp<T> struct
 description: "Holds a fixed-timestamp value with the given separator. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Holds a fixed-timestamp value with the given separator.

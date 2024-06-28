@@ -1,7 +1,7 @@
 ---
 title: UserPasswordCredential class
 description: "The user name and password information of UserPasswordCredential may be used to establish authenticated connections to databases that require such inf"
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 The user name and password information of UserPasswordCredential may be

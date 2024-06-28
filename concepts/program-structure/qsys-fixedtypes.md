@@ -1,5 +1,6 @@
 ---
 title: ASNA.QSys Fixed Types
+description: Dive into the essentials of ASNA.QSys Fixed Types with this comprehensive guide. Understand the definitions, characteristics, and applications of fixed data types in the ASNA.QSys environment, offering developers a solid foundation for data manipulation and application development.
 ---
 
 IBM i RPG applications were coded using a [Fixed Type System](/concepts/background/ibmi-fixed-types.html).

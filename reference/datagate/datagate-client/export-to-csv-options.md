@@ -1,7 +1,7 @@
 ---
 title: ExportToCsvOptions class
 description: "Provides options for exporting data to CSV format. This class includes properties for specifying whether field names should be included, whether trail"
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Provides options for exporting data to CSV format.

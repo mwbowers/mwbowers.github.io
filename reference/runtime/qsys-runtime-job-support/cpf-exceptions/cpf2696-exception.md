@@ -1,7 +1,7 @@
 ---
 title: CPF2696Exception class
 description: "The exception that is thrown when Object {0} type {1} not renamed. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The exception that is thrown when Object {0} type {1} not renamed.

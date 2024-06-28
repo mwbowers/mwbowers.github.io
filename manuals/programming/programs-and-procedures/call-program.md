@@ -1,5 +1,6 @@
 ---
 title: Call Program
+description: Dive into the intricacies of calling programs within your applications with our detailed guide. Designed for developers and IT professionals, this resource provides a step-by-step approach to invoking external or internal programs from your code. Whether you're working in a high-level programming language, dealing with system scripts, or integrating third-party services, our guide covers the essential techniques and best practices for effective program calls. Learn about the different methods of calling programs, including synchronous and asynchronous execution, passing parameters, handling outputs, and managing errors. Enhance your application's functionality and efficiency by mastering the art of program invocation.
 ---
 
 Execution interaction between programs is achieved with the operations CALL and RETURN. At any point a program can transfer control to another program by calling it and any point the called program can return to the calling program yielding control back to it.

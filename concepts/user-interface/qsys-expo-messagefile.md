@@ -1,5 +1,6 @@
 ---
 title: QSys Expo Messagefile
+description: Unlock the capabilities of the QSys Expo Messagefile system with this in-depth guide. Learn how to effectively utilize message files to streamline communication within your QSys Expo applications. This resource provides essential insights into the structure, usage, and advantages of implementing a robust messaging system, enhancing both developer and user experiences.
 ---
 
 An IBM i Message file *Object* is an external file with a pre-defined format, that provides to the RPG Developer a way to keep the text associated to the Application external to the Program Objects.

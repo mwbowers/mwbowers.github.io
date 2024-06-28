@@ -1,7 +1,7 @@
 ---
 title: DbcsType enum
 description: "Defines values that describe the kind of DBCS character string of a DBCS field. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines values that describe the kind of DBCS character string of a DBCS field.

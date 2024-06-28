@@ -1,5 +1,6 @@
 ---
 title: CL User Defined Commands
+description: Master the art of customization with our guide on CL User Defined Commands. This comprehensive resource is designed to empower users to extend the functionality of their systems by creating custom commands in Command Language (CL). Whether you're looking to automate routine tasks, streamline operations, or introduce new functionalities, our guide provides step-by-step instructions, best practices, and practical examples to help you craft effective and efficient custom commands. Perfect for system administrators, developers, and IT professionals seeking to leverage the full potential of CL for customization and automation.
 ---
 
 Migrating User defined CL commands automatically poses challenges due to the staggering number of possible combinations of: unique name, possible parameters, parameter elements, and value types. To successfully migrate as many user defined commands as possible, an XML Command Definition Dictionary is provided that serves as table-driven template in support of this effort.

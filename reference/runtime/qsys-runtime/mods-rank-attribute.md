@@ -1,7 +1,7 @@
 ---
 title: MODSRankAttribute class
 description: "A non-RPG class may be stamped with this attribute to indicate a consumer RPG program to consider it as a Multiple Occurrence Data Structure with the "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 A non-RPG class may be stamped with this attribute to indicate a consumer RPG program to consider it as a Multiple Occurrence Data Structure with the rank

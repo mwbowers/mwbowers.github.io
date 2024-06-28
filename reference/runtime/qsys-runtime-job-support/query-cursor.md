@@ -1,7 +1,7 @@
 ---
 title: QueryCursor class
 description: "Represents the SQL Query Cursor. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Represents the SQL Query Cursor.

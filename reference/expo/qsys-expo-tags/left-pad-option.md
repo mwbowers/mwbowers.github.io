@@ -1,7 +1,7 @@
 ---
 title: LeftPadOption enum
 description: "Describes the Left padding option. "
-last_modified_at: 2024-06-26T20:27:25Z
+last_modified_at: 2024-06-28T18:19:00Z
 ---
 
 Describes the Left padding option.

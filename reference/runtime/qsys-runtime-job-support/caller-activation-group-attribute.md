@@ -1,7 +1,7 @@
 ---
 title: CallerActivationGroupAttribute class
 description: "Defines the special Attribute used to mark a program or service program class for it to be activated in the caller&#39;s Activation Group. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines the special Attribute used to mark a program or service program class for it to be activated in the caller's Activation Group.

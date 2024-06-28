@@ -1,7 +1,7 @@
 ---
 title: WorkstationDataSet class
 description: "Represents the dataset of a workstation file. "
-last_modified_at: 2024-06-26T20:27:06Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Represents the dataset of a workstation file.

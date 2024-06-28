@@ -1,7 +1,7 @@
 ---
 title: CannotCallException class
 description: "Exception thrown when trying to use a multidimensional multi data structure in a CALL. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Exception thrown when trying to use a multidimensional multi data structure in a CALL.

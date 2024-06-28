@@ -1,5 +1,6 @@
 ---
 title: Configuring Job Idle Timeout
+description: Maximize your system's efficiency and ensure optimal resource utilization with our step-by-step guide on Configuring Job Idle Timeout. This essential guide is tailored for system administrators and IT professionals looking to effectively manage job processes by setting appropriate idle timeouts. By adjusting the idle timeout settings, you can prevent unnecessary resource consumption by idle jobs, enhancing system performance and reliability. Whether you're working in a cloud computing environment, managing a server, or overseeing a network of computers, this guide provides the insights and instructions needed to fine-tune your job management strategy for better operational efficiency.
 ---
 
 Similar to a website session timeout, there is a Job Idle Timeout. The JobIdleTime is specified in minutes and direct the Monarch Server to terminate those jobs that have been idle for that length of time.  A Job is considered to be idle if it has been ‘sitting’ on a screen waiting for user input for a ‘long’ period of time.  The default is 20 minutes.

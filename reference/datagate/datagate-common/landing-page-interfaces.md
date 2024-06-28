@@ -1,5 +1,6 @@
 ---
 title: ASNA.DataGate.Common Interfaces
+description: TOC Landing page for ASNA.DataGate.Common Interfaces
 ---
 
 ## Remarks

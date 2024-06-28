@@ -1,7 +1,7 @@
 ---
 title: IMonaServerConfig interface
 description: "Exposes MonaServerConfig properties. "
-last_modified_at: 2024-06-26T20:27:13Z
+last_modified_at: 2024-06-28T18:18:51Z
 ---
 
 Exposes MonaServerConfig properties.

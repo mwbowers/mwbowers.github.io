@@ -1,7 +1,7 @@
 ---
 title: ICaller interface
 description: "Identifies a class that participates in the ActivationGroup logic. A class that uses CALLD must implement this interface. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Identifies a class that participates in the ActivationGroup logic. A class that uses CALLD must implement this interface.

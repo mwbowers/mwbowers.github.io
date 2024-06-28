@@ -1,5 +1,6 @@
 ---
 title: DdsButton Icon Reference
+description: Explore the comprehensive icon reference for the `DdsButton` component, designed to enhance your user interfaces with visually appealing and intuitive icons. This guide provides a detailed overview of available icons, including visual examples, usage guidelines, and code snippets for easy implementation. Whether you're looking to add standard icons for common actions or seeking unique icons to differentiate your application, this reference is your go-to resource for integrating icons with `DdsButton` components. Elevate your application's user experience by seamlessly incorporating these icons into your design.
 ---
 
 

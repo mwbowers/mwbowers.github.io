@@ -1,7 +1,7 @@
 ---
 title: MemberStringDescription enum
 description: "Specifies a string member attribute. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Specifies a string member attribute.

@@ -1,7 +1,7 @@
 ---
 title: Export class
 description: "Provides functionality for exporting data to XML or CSV format. This class includes methods for creating tasks to perform the export, logging messages"
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Provides functionality for exporting data to XML or CSV format.

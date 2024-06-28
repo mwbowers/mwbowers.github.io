@@ -1,5 +1,6 @@
 ---
 title: Adding New Functionality
+description: Unlock the potential of your application by seamlessly adding new functionality. This guide provides a comprehensive overview of the processes and best practices for integrating new features, from initial concept through to development, testing, and deployment, ensuring a smooth and successful enhancement of your application.
 ---
 
 If you are reading this Topic, most likely is because your [Legacy Application](/concepts/background/background-overview.html) has been successfully migrated to ASP.NET Core, and you have verified that all the Legacy features work correctly.

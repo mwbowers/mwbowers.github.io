@@ -1,7 +1,7 @@
 ---
 title: WsDsStatus enum
 description: "Describes the flag that records the status of a workstation dataset as it is processed. "
-last_modified_at: 2024-06-26T20:27:06Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Describes the flag that records the status of a workstation dataset as it is processed.

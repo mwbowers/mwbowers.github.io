@@ -1,7 +1,7 @@
 ---
 title: DBCharParm class
 description: "Represents a parameter for a Character type. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Represents a parameter for a Character type.

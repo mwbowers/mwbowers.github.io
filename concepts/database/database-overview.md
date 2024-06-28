@@ -1,5 +1,6 @@
 ---
 title: Databases for Monarch Applications
+description: Explore the essential database technologies and strategies for Monarch Applications. This overview provides insights into selecting, integrating, and managing databases to optimize performance and scalability in Monarch-based projects.
 ---
 
 Database support for Monarch Applications is provided by ASNA DataGate.

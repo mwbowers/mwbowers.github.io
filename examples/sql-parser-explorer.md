@@ -1,5 +1,6 @@
 ---
 title: SQL Parser Explorer
+description: Discover the intricacies of SQL queries with SQL Parser Explorer, a tool designed to dissect and analyze SQL statements. This guide introduces you to the capabilities of SQL Parser Explorer, offering a deep dive into the structure, syntax, and semantics of SQL. Whether you're a student learning SQL, a developer debugging queries, or simply curious about how SQL parsers work, this resource is your gateway to understanding SQL parsing in depth.
 ---
 
 # Remediating Monarch RPG Migration *Unsupported SQL Statements*

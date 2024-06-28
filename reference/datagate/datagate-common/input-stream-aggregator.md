@@ -1,7 +1,7 @@
 ---
 title: InputStreamAggregator class
 description: "Queue multiple, fixed-length, read-only streams into one stream. "
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Queue multiple, fixed-length, read-only streams into one stream.

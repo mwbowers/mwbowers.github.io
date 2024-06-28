@@ -1,5 +1,6 @@
 ---
 title: QSys Expo Display Pages
+description: Explore the fundamentals of creating and managing display pages in QSys Expo applications with this detailed guide. Learn about the methodologies, design principles, and technical implementations that ensure a seamless and dynamic user experience. This resource is essential for developers and designers aiming to build engaging and responsive pages in their QSys Expo projects.
 ---
 
 An `QSys Expo Display Page` is a [ASP.NET RazorPage](https://en.wikipedia.org/wiki/ASP.NET_Razor) that uses ASNA.Expo *TagHelpers* to Render a [Workstation file](/concepts/program-structure/qsys-workstationfile.html) using a flexible Grid Layout suitable to present *with fidelity* an [IBM i Displayfile](https://www.ibm.com/docs/en/i/7.2?topic=files-defining-display-file-dds). 

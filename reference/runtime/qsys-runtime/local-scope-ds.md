@@ -1,7 +1,7 @@
 ---
 title: LocalScopeDS class
 description: "Base class that contains functionality to support locally scoped data structures. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Base class that contains functionality to support locally scoped data structures.

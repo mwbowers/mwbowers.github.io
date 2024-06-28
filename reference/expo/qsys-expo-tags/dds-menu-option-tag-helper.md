@@ -1,7 +1,7 @@
 ---
 title: DdsMenuOptionTagHelper class
 description: "Defines a Context Menu Option "
-last_modified_at: 2024-06-26T20:27:25Z
+last_modified_at: 2024-06-28T18:18:59Z
 ---
 
 Defines a Context Menu Option

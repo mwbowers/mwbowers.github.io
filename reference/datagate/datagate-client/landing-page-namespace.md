@@ -1,5 +1,6 @@
 ---
 title: ASNA.DataGate.Client Namespace
+description: TOC Landing page for ASNA.DataGate.Client Namespace
 ---
 
 ## Remarks

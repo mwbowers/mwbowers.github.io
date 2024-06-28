@@ -1,7 +1,7 @@
 ---
 title: OverrideScope enum
 description: "Indicates the scope of the override option. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Indicates the scope of the override option.

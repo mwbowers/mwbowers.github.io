@@ -1,5 +1,6 @@
 ---
 title: IBM i Job
+description: Unlock the full potential of IBM i jobs with our detailed guide, tailored for system administrators, developers, and IT professionals working with the IBM i operating system. This document provides an in-depth exploration of IBM i jobs, including their definition, various types, how to manage them, and best practices for optimizing job performance. Whether you're scheduling batch jobs, managing interactive jobs, or troubleshooting job issues, this guide offers valuable insights and practical tips to enhance your productivity and ensure smooth operations on your IBM i system.
 ---
 
 ## Some Facts
@@ -9,7 +10,7 @@ title: IBM i Job
 
 - All jobs, with the exception of system jobs, run within subsystems. 
 
-- A job can enter the subsystem from any of the work entries, such as a job queue entry, workstation entry, communications entry, autostart job entry, or prestart job entry.
+- A job can enter the subsystem from any of the work entries, such as a job queue entry, workstation entry, communications entry, autostart job entry, or restart job entry.
 
 - Each active job contains at least one thread (the initial thread) and may contain additional secondary threads. 
 

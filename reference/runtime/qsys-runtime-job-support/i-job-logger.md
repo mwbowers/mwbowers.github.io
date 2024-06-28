@@ -1,7 +1,7 @@
 ---
 title: IJobLogger interface
 description: "Defines a generalized way to to add messages to a log. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines a generalized way to to add messages to a log.

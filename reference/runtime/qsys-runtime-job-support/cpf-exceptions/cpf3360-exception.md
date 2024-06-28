@@ -1,7 +1,7 @@
 ---
 title: CPF3360Exception class
 description: "The exception that is thrown when Output queue {0} not deleted. Output queue in use. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The exception that is thrown when Output queue {0} not deleted. Output queue in use.

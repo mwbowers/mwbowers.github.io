@@ -1,5 +1,6 @@
 ---
 title: Support for IFS and DLO
+description: Navigate the complexities of integrating and supporting the Integrated File System (IFS) and Document Library Objects (DLO) with our expert guide. Designed for system administrators, developers, and IT professionals, this resource offers a deep dive into the functionalities, best practices, and troubleshooting tips for working with IFS and DLO. Whether you're aiming to optimize file management, enhance data accessibility, or secure document storage within your systems, our guide provides the essential knowledge and strategies to effectively manage and leverage these powerful features. Discover how to seamlessly integrate IFS and DLO into your environment, ensuring efficient operations and maximizing the benefits of these systems.
 ---
 
 ## IFS - Integrated File System

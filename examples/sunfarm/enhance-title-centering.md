@@ -1,5 +1,6 @@
 ---
 title: Properly center page titles
+description: Master the art of typography and design with our guide on Properly center page titles. Learn the nuances of aligning titles perfectly within your web pages or documents, ensuring they capture attention while maintaining balance and harmony in your layout. This guide covers various techniques, including CSS, HTML, and design principles, to achieve professional and aesthetically pleasing title alignment. Ideal for web developers, designers, and anyone keen on elevating their content presentation skills.
 ---
 ## Source
 

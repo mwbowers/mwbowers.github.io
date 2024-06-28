@@ -1,7 +1,7 @@
 ---
 title: FileOverrideSettingsException class
 description: "The exception that is thrown when a file override specified in the config file is invalid. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The exception that is thrown when a file override specified in the config file is invalid.

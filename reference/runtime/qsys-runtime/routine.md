@@ -1,7 +1,7 @@
 ---
 title: Routine enum
 description: "Specifies the type of Cycle routine to call. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Specifies the type of Cycle routine to call.

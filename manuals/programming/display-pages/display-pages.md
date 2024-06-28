@@ -1,5 +1,6 @@
 ---
 title: Expo Display Pages
+description: Master the art of creating engaging and dynamic display pages in your Expo applications with our comprehensive guide. Tailored for developers of all skill levels, this resource dives deep into the best practices, design tips, and technical strategies for building display pages that captivate and inform. Whether you're looking to showcase products, present information, or create interactive experiences, our guide equips you with the knowledge to design display pages that enhance user engagement and elevate your application's overall user experience. From layout design to data integration, discover how to leverage Expo's powerful features to create display pages that stand out.
 ---
 
 An [Expo Display Page](/concepts/user-interface/qsys-expo-display-pages.html) is an ASP.NET RazorPage that uses ASNA.Expo TagHelpers to Render a Workstation file using a flexible Grid Layout suitable to present with fidelity a migrated IBM i Displayfile.

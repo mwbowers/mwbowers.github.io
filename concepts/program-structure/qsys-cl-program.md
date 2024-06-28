@@ -1,5 +1,6 @@
 ---
 title: ASNA.QSys CL Program
+description: Explore the capabilities and integration of the ASNA.QSys CL Program, a pivotal component in the ASNA.QSys environment. This guide provides an in-depth look at its functionality, usage scenarios, and how it enhances system operations, offering valuable insights for developers and system administrators.
 ---
 
 IBM i Command Language uses free-format syntax, similar to modern programming languages such as C#.

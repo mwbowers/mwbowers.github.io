@@ -1,5 +1,6 @@
 ---
 title: Razor Pages
+description: Explore the power of Razor Pages in ASP.NET Core with this comprehensive guide. Learn how Razor Pages provides a simpler and more focused model for building web applications, offering a page-based programming model that makes web development easier and more productive. This resource is perfect for developers seeking to understand and leverage Razor Pages for their web projects.
 ---
 
 ## Razor Pages

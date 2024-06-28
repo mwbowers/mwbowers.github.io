@@ -1,7 +1,7 @@
 ---
 title: ImportOptions class
 description: "Provides options for importing data from XML or CSV format. This class includes properties for specifying the target member where the data will be imp"
-last_modified_at: 2024-06-26T20:26:58Z
+last_modified_at: 2024-06-28T18:18:27Z
 ---
 
 Provides options for importing data from XML or CSV format.

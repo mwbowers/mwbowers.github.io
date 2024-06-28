@@ -1,7 +1,7 @@
 ---
 title: DimensionAttribute class
 description: "A non-RPG class, property or field may be stamped with this attribute to indicate a consumer RPG program to consider it as an array with the specified"
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 A non-RPG class, property or field may be stamped with this attribute to indicate a consumer RPG program to consider it as an array with the specified dimension.

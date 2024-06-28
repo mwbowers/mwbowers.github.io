@@ -1,5 +1,6 @@
 ---
 title: Activation Groups
+description: Explore the concept of Activation Groups, a crucial mechanism for managing related sets of activations or processes in a system. This guide covers their importance, usage, and impact on system performance and organization.
 ---
 
 An Activation Group is a substructure of a Job that serves to control the state of groups of programs. The Activation Group keeps a reference for each program that belongs to it.

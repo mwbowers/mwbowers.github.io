@@ -1,7 +1,7 @@
 ---
 title: InteractionStyles enum
 description: "Determines how the user interacts with the component. "
-last_modified_at: 2024-06-26T20:27:25Z
+last_modified_at: 2024-06-28T18:18:59Z
 ---
 
 Determines how the user interacts with the component.

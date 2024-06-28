@@ -1,7 +1,7 @@
 ---
 title: InvalidMessageIntValueException class
 description: "The exception that is thrown when an exception placeholder integer is not an integer value string. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The exception that is thrown when an exception placeholder integer is not an integer value string.

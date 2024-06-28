@@ -1,7 +1,7 @@
 ---
 title: DdsDecFieldTagHelper class
 description: "Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field.  "
-last_modified_at: 2024-06-26T20:27:25Z
+last_modified_at: 2024-06-28T18:18:59Z
 ---
 
 Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field. 
@@ -15,7 +15,7 @@ Defines an input element where numbers can be typed using a keyboard. The captur
 
 ## Remarks
 
-To define a [Fixed Decimal](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixeddecimal) field, use the `DdsDecField` Tag Helper.
+To define a [Fixed Decimal](/concepts/program-structure/qsys-fixedtypes.html#asnaqsysfixeddecimal.html) field, use the `DdsDecField` Tag Helper.
 
 For example, the following markup defines a decimal element for the field `SFCUSTNO` in the `CUSTREC` record (defined in the Model).
 

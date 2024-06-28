@@ -1,7 +1,7 @@
 ---
 title: IconShapeRequest class
 description: "Represents a request for icon shapes, specifying the elements and the icon identifier. "
-last_modified_at: 2024-06-26T20:27:13Z
+last_modified_at: 2024-06-28T18:18:51Z
 ---
 
 Represents a request for icon shapes, specifying the elements and the icon identifier.

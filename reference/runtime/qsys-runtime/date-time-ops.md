@@ -1,7 +1,7 @@
 ---
 title: DateTimeOps class
 description: "Defines operations with RPG semantics on System.DateTime values. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines operations with RPG semantics on System.DateTime values.

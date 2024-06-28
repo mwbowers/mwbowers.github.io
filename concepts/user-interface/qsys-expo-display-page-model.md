@@ -1,5 +1,6 @@
 ---
 title: Expo Display Page Model
+description: Dive into the intricacies of the Expo Display Page Model with this comprehensive guide. Learn about the structure and functionality that underpin the creation and management of page displays in Expo applications. This resource is designed for developers looking to enhance the user experience of their Expo projects through efficient and effective page modeling.
 ---
 
 For every Display Page, there is an associated C# source file that defines the *Model* class.

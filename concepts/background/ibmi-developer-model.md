@@ -1,5 +1,6 @@
 ---
 title: IBM i Developer's model
+description: Dive into the IBM i Developer's model, a comprehensive guide designed to equip developers with the knowledge, tools, and best practices essential for building robust applications on the IBM i platform. Explore the unique aspects of the development lifecycle in the IBM i environment.
 ---
 
 Most IBM i Applications start by running a Program (or command) [object](https://www.ibm.com/docs/en/i/7.2?topic=concepts-objects), which starts executing business-logic *commands*.

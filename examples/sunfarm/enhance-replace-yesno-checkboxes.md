@@ -1,5 +1,6 @@
 ---
 title: Replacing YES/NO fields with Check-boxes
+description: Revolutionize your forms' user experience with our guide on Replacing YES/NO fields with Check-boxes. This resource offers a deep dive into the benefits of using checkboxes over traditional YES/NO fields, providing a more intuitive and efficient way for users to interact with your forms. Learn how to implement this change in your applications or websites, including best practices for design and accessibility. Ideal for web developers, UI/UX designers, and anyone looking to improve their digital interfaces.
 ---
 ## Source
 

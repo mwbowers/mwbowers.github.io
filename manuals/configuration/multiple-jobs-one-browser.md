@@ -1,5 +1,6 @@
 ---
 title: Running Multiple Jobs from a Single Browser
+description: Explore the efficient management of multiple tasks without the need to juggle between different browser windows or sessions with our guide on Running Multiple Jobs from a Single Browser. This practical resource is designed for users who wish to streamline their workflow by executing and managing multiple jobs within a single browser interface. Whether you're a developer running tests, a data analyst processing datasets, or simply a multitasker looking to enhance productivity, this guide offers valuable insights and step-by-step instructions on how to effectively organize and execute multiple jobs. Discover tips, tricks, and tools that can help you save time and increase efficiency in your web-based tasks.
 ---
 
 The `DisplayPages` section of the [website configuration](configure-expo-website.html#displaypages) provides the ability to decide the relationship of multiple tabs on a browser with the user jobs. 

@@ -1,5 +1,6 @@
 ---
 title: Displayfile Function Key Text Migration
+description: Navigate the complexities of migrating display file function key text with ease using our comprehensive guide. This document is designed to assist developers and system administrators in the seamless transition of function key text within display files, ensuring compatibility and optimal functionality across different environments or system upgrades. From planning and preparation to execution and verification, our guide covers all the essential steps and best practices to make your migration process as smooth and efficient as possible. Whether you're modernizing your system or ensuring consistency across platforms, this guide is an invaluable resource for a successful migration.
 ---
 
 ## Overview

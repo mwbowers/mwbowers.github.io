@@ -1,7 +1,7 @@
 ---
 title: BatchPoint class
 description: "Defines the location and time or a batch job. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines the location and time or a batch job.

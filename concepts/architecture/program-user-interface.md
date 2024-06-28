@@ -1,5 +1,6 @@
 ---
 title: Program User Interface
+description: Delve into the intricacies of the Program User Interface, highlighting key design considerations, user interaction principles, and implementation strategies to enhance user experience across software applications.
 ---
 
 The document provides an overview of the interaction between a program's  **Workstation File** and the Razor **Display Page** on the website.

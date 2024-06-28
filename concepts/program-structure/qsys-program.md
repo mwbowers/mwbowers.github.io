@@ -1,5 +1,6 @@
 ---
 title: QSys Programs and Procedures
+description: Gain a comprehensive understanding of QSys Programs and Procedures with this detailed guide. Learn about their key characteristics, how they differ, and their roles within the QSys environment. This resource is designed to equip developers with the knowledge to effectively develop, deploy, and manage these essential components.
 ---
 
 The Concept of a `Program` in [.NET](https://docs.microsoft.com/en-us/dotnet/core/introduction) is significantly different than that on the IBM i.

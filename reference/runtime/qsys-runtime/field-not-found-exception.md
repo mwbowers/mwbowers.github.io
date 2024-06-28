@@ -1,7 +1,7 @@
 ---
 title: FieldNotFoundException class
 description: "-Field name- was not found in format -record format name- of -filename-. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 -Field name- was not found in format -record format name- of -filename-.

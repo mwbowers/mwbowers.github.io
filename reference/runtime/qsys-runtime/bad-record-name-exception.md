@@ -1,7 +1,7 @@
 ---
 title: BadRecordNameException class
 description: "Exception thrown when a bad record name is encountered when constructing a WRF (Wings Record Format). "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Exception thrown when a bad record name is encountered when constructing a WRF (Wings Record Format).

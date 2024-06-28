@@ -1,7 +1,7 @@
 ---
 title: CPF8A14Exception class
 description: "The exception that is thrown when {0} of type {1} not renamed to {2} in folder {3}. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The exception that is thrown when {0} of type {1} not renamed to {2} in folder {3}.

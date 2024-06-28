@@ -1,5 +1,6 @@
 ---
 title: Migrated Program Source Files
+description: Uncover the intricacies of managing source files for programs that have undergone migration. This guide delves into the challenges and best practices for handling migrated program source files, ensuring their integrity, compatibility, and optimal performance in their new environment.
 ---
 
 ## Two C# Sources: .cs & .io.cs

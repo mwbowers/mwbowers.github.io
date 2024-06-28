@@ -1,5 +1,6 @@
 ---
 title: Logic Program Logger
+description: Unlock the full potential of logging within your logic programs with this essential guide. Learn the methods and best practices for implementing effective logging strategies that can help in debugging, monitoring, and optimizing your applications. This resource is designed for developers looking to enhance their programming toolkit with robust logging techniques.
 ---
 
 Visual Studio has a sophisticated [Output Window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/output-window?view=vs-2019) where lots of messages are displayed as the Application executes.

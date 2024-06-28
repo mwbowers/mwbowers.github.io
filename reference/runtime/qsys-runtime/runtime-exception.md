@@ -1,7 +1,7 @@
 ---
 title: RuntimeException class
 description: "Base class for all ASNA QSys Runtime generated exceptions. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Base class for all ASNA QSys Runtime generated exceptions.

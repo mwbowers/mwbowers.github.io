@@ -1,7 +1,7 @@
 ---
 title: TransactionNotStartedException class
 description: "The transaction has not been started exception. "
-last_modified_at: 2024-06-26T20:27:06Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 The transaction has not been started exception.

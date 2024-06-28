@@ -1,7 +1,7 @@
 ---
 title: IConverter interface
 description: "Defines functionality to perform conversions between EBCDIC and Unicode. "
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Defines functionality to perform conversions between EBCDIC and Unicode.

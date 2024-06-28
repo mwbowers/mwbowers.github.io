@@ -1,5 +1,6 @@
 ---
 title: ASNA.DataGate.DataLink Classes
+description: TOC Landing page for ASNA.DataGate.DataLink Classes
 ---
 
 ## Remarks

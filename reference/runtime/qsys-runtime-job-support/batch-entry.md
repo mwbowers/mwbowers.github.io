@@ -1,7 +1,7 @@
 ---
 title: BatchEntry class
 description: "Represents a single entry in a batch processing system. This class provides the necessary properties and methods to manage the entry&#39;s data and st"
-last_modified_at: 2024-06-26T20:27:05Z
+last_modified_at: 2024-06-28T18:18:37Z
 ---
 
 Represents a single entry in a batch processing system. This class provides

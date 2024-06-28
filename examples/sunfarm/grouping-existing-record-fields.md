@@ -1,5 +1,6 @@
 ---
 title: Existing fields in separate Tabs
+description: Enhance your application's usability with our guide on Grouping Existing Fields in Separate Tabs. Discover how to organize your interface more effectively by distributing fields across tabs, making information more accessible and the user experience more intuitive. This guide offers insights into design strategies, technical implementation tips, and best practices for creating tabbed interfaces that are both user-friendly and efficient. Ideal for web developers, UI/UX designers, and anyone interested in improving their application's navigational structure.
 ---
 ## Source
 

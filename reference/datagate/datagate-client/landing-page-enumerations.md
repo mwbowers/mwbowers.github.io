@@ -1,5 +1,6 @@
 ---
 title: ASNA.DataGate.Client Enumerations
+description: TOC Landing page for ASNA.DataGate.Client Enumerations
 ---
 
 ## Remarks

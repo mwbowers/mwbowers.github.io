@@ -1,7 +1,7 @@
 ---
 title: ActiveKeyBarLocation enum
 description: "Specifies the Active Function Key Bar location and direction. "
-last_modified_at: 2024-06-26T20:27:25Z
+last_modified_at: 2024-06-28T18:18:59Z
 ---
 
 Specifies the Active Function Key Bar location and direction.

@@ -1,5 +1,6 @@
 ---
 title: Expo Client Library Advanced CSS
+description: Dive deep into the advanced CSS capabilities of the Expo Client Library with this detailed guide. Learn how to leverage sophisticated CSS techniques to elevate the UI/UX of your Expo applications, ensuring a compelling and responsive design. This resource is designed for developers looking to push the boundaries of style and aesthetics in their mobile projects.
 ---
 
 There are two CSS features that are extensively used in the definition of the Expo Library styles:
