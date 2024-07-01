@@ -8,9 +8,9 @@
         {%- assign page_description = content | strip_html | strip | truncatewords: 30 -%}
     {%- endif -%}
 {%- endif -%}
-{%- assign domain_name = 'https://asnaqsys.github.io/' -%}
+{%- assign domain_name = 'https://asnaqsys.github.io' -%}  <!-- Removed the trailing slash -->
 {%- if jekyll.environment == 'development' -%}
-{%- assign domain_name = 'https://localhost:4000' -%}
+{%- assign domain_name = 'https://localhost:4000' -%} <!-- Ensure no trailing slash -->
 {%- endif -%}
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
