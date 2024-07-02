@@ -3,7 +3,7 @@ title: Unwinding the Call Stack via EndRequest
 description: This document explores the technique of unwinding the call stack in web applications using the EndRequest event, including scenarios where this approach is beneficial and how to implement it effectively.
 ---
 
-# Introduction
+## Introduction
 Monarch Base defines the exception `ASNA.QSys.Runtime.EndRequestException` which can be used to orderly unwind an activation stack of program calls. 
 
 The EndRequest exception is monitored within the CallD (Dynamic Call) infrastructure, when the exception is seen, CallD deactivates the called program and bubbles up the exception through the activation call stack.  
@@ -20,7 +20,7 @@ In addition to a program throwing the exception, Monarch Base provides two other
 
 
 
-# Some Code
+## Some Code
 For the following discussion, please see first the topics [Enhancing Applications using Non-Display File Pages](enhancing-with-non-display-file.html) and [Calling a Program from a Non-DisplayFile Page](calling-program-from-non-displayfile-page.html). In the latter topic, a 'regular' Razor Page (Minutes) is used as a menu on the website where different programs are called via the [Command.Call](reference/asna-qsys-expo/expo-model/command.html#callstring-string-string-string) method while the Job awaited for commands via the [AcceptCommands](/reference/runtime/qsys-runtime-job-support/interactive-job.html#string-acceptcommands) method.
 
 ## Returning to a Menu

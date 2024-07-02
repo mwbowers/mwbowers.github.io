@@ -3,7 +3,7 @@ title: 10 Basic UI Enhancements
 description: Elevate your application's user interface with our curated list of 10 Basic UI Enhancements. This guide offers practical tips and straightforward improvements that can significantly boost the usability and visual appeal of your software or website. From color schemes and typography to navigation and responsiveness, discover how to make your UI more engaging and user-friendly. Ideal for web developers, UI/UX designers, and anyone looking to make quick yet effective enhancements to their digital products.
 ---
 
-# Overview
+## Overview
 
 For the purpose of this Example, we use a sample IBM i Application application named `"M5"`. 
 

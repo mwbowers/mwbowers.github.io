@@ -37,7 +37,7 @@ For more details on the QDLS, please see these IBM links:
 
 [Comparison of the QDLS and "Root" File Systems for Storing User Documents and Other PC Files](https://www.ibm.com/;www-01.ibm.com/support/docview.wss?uid=nas8N1015584)
 
-# IFS Related Commands
+## IFS Related Commands
 
 The following IFS commands are recognized and migrated by Monarch. Only a subset of keywords and special values are supported as noted on the next table.
 
@@ -68,7 +68,7 @@ The following IFS commands are recognized and migrated by Monarch. Only a subset
 | CPYFRMIMPF | FROMSTMF <br/> TOFILE <br/> MBROPT <br/> STMFLEN <br/> RCDDLM <br/> DTAFMT <br/> STRDLM <br/> STRESCCHR <br/> RMVBLANK <br/> FLDDLM <br/> FLDDFNFILE <br/> DECPNT <br/> DATEFMT <br/> DATSEP <br/> TIMFMT <br/> TIMSEP <br/> FROMRCD |  | **Copy From Import File** <br/> Copies all or part of a stream file to a database file member. The stream file is an import file originally created for the purpose of copying data between heterogeneous databases. |
 | CPYTOIMPF | FROMFILE <br/> TOSTMF <br/> MBROPT <br/> RCDDLM <br/> DTAFMT <br/> STRDLM <br/> STRESCCHR <br/> RMVBLANK <br/> FLDDLM <br/> DECPNT <br/> DATEFMT <br/> TIMFMT |  | **Copy To Import File** <br/> Copies a database file member to a stream file. The stream file is an 'import file' created for the purpose of copying data between heterogeneous databases. |
 
-# DLO Related Commands
+## DLO Related Commands
 
 The following DLO commands are recognized and migrated by Monarch. Only a subset of keywords and special values are supported as noted on the next table.
 
