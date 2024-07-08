@@ -1,6 +1,6 @@
 ---
-title: Expo Client Library Advanced CSS
-description: Dive deep into the advanced CSS capabilities of the Expo Client Library with this detailed guide. Learn how to leverage sophisticated CSS techniques to elevate the UI/UX of your Expo applications, ensuring a compelling and responsive design. This resource is designed for developers looking to push the boundaries of style and aesthetics in their mobile projects.
+title: "Advanced CSS for QSYS Expo Clients"
+description: "Elevate your QSYS Expo client designs with advanced CSS techniques. This guide covers tips and strategies for sophisticated styling."
 ---
 
 There are two CSS features that are extensively used in the definition of the Expo Library styles:

@@ -1,6 +1,6 @@
 ---
-title: The Job
-description: Gain insights into 'The Job'—a detailed exploration of its role, functionality, and impact within the system. Understand how this process integrates with and supports the overarching objectives of the project or application.
+title: "Understanding The Job in ASNA QSys"
+description: "Explore 'The Job' in ASNA QSys: its role, functionality, and system integration. A concise guide for developers."
 ---
 
 

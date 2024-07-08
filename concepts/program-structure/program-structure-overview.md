@@ -1,7 +1,8 @@
 ---
-title: QSys Program Structure
-description: Dive into the foundational elements of QSys program structure with this detailed guide. Learn about the architecture, components, and best practices for organizing programs within the QSys environment, ensuring efficient management and scalability of your applications.
+title: "Program Structure Overview in Monarch Apps"
+description: "Explore the fundamental structure of programs in Monarch Apps. This guide provides a clear overview for developers."
 ---
+
 
 IBM i Programs written in [RPG](https://www.ibm.com/docs/en/i/7.2?topic=languages-rpg) and [CL](https://www.ibm.com/docs/en/i/7.2?topic=language-control-overview) are Migrated as C# classes derived from `ASNA.QSys.HostServices.Program` (which we will refer in this document as a `QSys Program` - for short -).
 

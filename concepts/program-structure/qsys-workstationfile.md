@@ -1,6 +1,6 @@
 ---
-title: ASNA.QSys WorkstationFile
-description: Discover the capabilities and configurations of the ASNA.QSys WorkstationFile, a crucial component for interactive applications within the ASNA.QSys environment. This guide offers insights into the WorkstationFile's role in facilitating user input and output, enhancing the user experience, and streamlining application workflows.
+title: "Workstation File Handling in QSYS"
+description: "Learn the essentials of managing workstation files in QSYS. This guide covers creation, usage, and tips for efficient file handling."
 ---
 
 [The IBM i RPG Application development Model](/concepts/background/ibmi-developer-model.html) includes the concept of a [WORKSTN File](https://www.ibm.com/docs/en/i/7.2?topic=devices-using-workstn-files)

@@ -1,6 +1,6 @@
 ---
-title: Replacing promptable field with clickable icon
-description: Transform your application's user interface with our guide on Replacing promptable field with clickable icon. This resource provides a step-by-step approach to enhancing user experience by integrating clickable icons in place of traditional promptable fields. Learn how to make your application more intuitive and efficient, reducing user input effort and streamlining interactions. Ideal for developers and UI/UX designers looking to modernize their applications and improve user engagement.
+title: "Clickable Icons in Prompts: A UX Guide"
+description: "Improve user experience with clickable icons in prompts. Our guide covers best practices for designing interactive and intuitive UI elements."
 ---
 ## Source
 

@@ -1,6 +1,6 @@
 ---
-title: QSys Expo Web Content
-description: Explore the strategies and best practices for managing and displaying web content in QSys Expo applications with this comprehensive guide. Learn how to seamlessly integrate web technologies, optimize content for performance, and enhance user engagement. This resource is essential for developers and content creators aiming to leverage web content effectively in their QSys Expo projects.
+title: "Effectively Maintaining QSys Expo Web Content"
+description: "This resource is essential for developers and content creators aiming to leverage web content effectively in their QSys Expo projects."
 ---
 
 *Website Content* is the term ASNA.QSys refers to when talking about the *public* server-side web resources.

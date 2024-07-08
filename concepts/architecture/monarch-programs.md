@@ -1,6 +1,6 @@
 ---
-title: Monarch Programs
-description: Dive into the diverse range of Monarch Programs, designed to cater to different aspects of our ecosystem. This section outlines each program's objectives, benefits, and how they contribute to the overarching goals of the Monarch initiative.
+title: "Guide to Monarch Programs: Enhance Your Skills"
+description: "Dive into Monarch programs with our comprehensive guide. Learn to create, manage, and optimize with expert tips."
 ---
 
 Application migrations performed by ASNA targeting the .NET platform rely on the ASNA Monarch Base framework. This framework supplements the .NET facilities to create an extended platform capable of supporting the original RPG/CL applications with a high level of automation on the migration and fidelity in the execution.

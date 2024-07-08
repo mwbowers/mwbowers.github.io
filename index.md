@@ -1,7 +1,7 @@
 ---
-description: Home page for ASNA Monarch Base's documentation
+title: "ASNA Monarch Base Documentation"
+description: "Explore the official ASNA Monarch Base docs for guides, commands, and more. Get all the information you need to get started."
 layout: landing
-title: ASNA Monarch® Base - Docs
 notoc: true
 notags: true
 skip_read_time: true

@@ -1,6 +1,6 @@
 ---
-title: RPG Feedback Data Structures
-description: Delve into the intricacies of RPG Feedback Data Structures with this comprehensive guide. Learn about the critical role these structures play in error handling and inter-program communication, providing a foundation for robust and efficient RPG applications. This resource is essential for developers looking to enhance their understanding of RPG's feedback mechanisms.
+title: "RPG Feedback Data Structures Explained"
+description: "Dive into RPG feedback data structures with our guide. Understand their design, purpose, and how to effectively use them in your applications."
 ---
 
 RPG Programs define two different data structure kinds that are used by the IBM i operating system to provide *feedback information* to the RPG logic.

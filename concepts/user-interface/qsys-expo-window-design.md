@@ -1,6 +1,6 @@
 ---
-title: Expo Window Design
-description: Delve into the art and science of designing windows in Expo applications with this essential guide. Discover the principles, strategies, and best practices that lead to effective window design, focusing on UI/UX considerations, layout strategies, and technical implementations. This resource is invaluable for developers and designers aiming to create intuitive and engaging interfaces in their Expo projects.
+title: "Effective QSYS Expo Window Design"
+description: "Master QSYS Expo window design with our guide. Learn key strategies for creating user-friendly and visually appealing application windows."
 ---
 
 ## IBM i DDS WINDOWS

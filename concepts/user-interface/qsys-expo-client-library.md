@@ -1,6 +1,6 @@
 ---
-title: Expo Client Library
-description: Explore the capabilities of the Expo Client Library in this comprehensive guide. Discover how this powerful library can streamline your mobile application development process with Expo, offering a wide range of features and tools designed to enhance functionality, usability, and performance. Ideal for developers seeking to maximize their productivity and the quality of their Expo projects.
+title: "QSYS Expo Client Library Overview"
+description: "Discover the capabilities of the QSYS Expo Client Library. Learn how it enhances app development with comprehensive features and tools."
 ---
 
 The Expo Client Library consists of the following Web resources:

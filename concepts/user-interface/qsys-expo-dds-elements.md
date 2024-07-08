@@ -1,6 +1,6 @@
 ---
-title: Expo DDS-like TagHelpers
-description: Discover the power of Expo DDS-like TagHelpers in this essential guide. Learn how these TagHelpers can mimic the functionality of the Data Distribution Service (DDS) to enhance data management and distribution in your Expo applications. This resource is invaluable for developers seeking to implement efficient, real-time data exchange mechanisms in their projects.
+title: "Exploring QSYS Expo DDS Elements"
+description: "Dive into the world of QSYS Expo DDS elements. Learn how these elements shape user interfaces and enhance application design."
 ---
 
 IBM i *Data Description Specifications for Displayfiles* or [DDS for Displayfiles](https://www.ibm.com/docs/en/i/7.2?topic=programming-dds) defines a *cascading* keyword description language with the following entries [^1]:

@@ -1,6 +1,6 @@
 ---
-title: Monarch Base Dev Tools
-description: Discover the core development tools within the Monarch framework, designed to streamline and enhance the development process. This guide covers the essential tools and their functionalities, providing insights on how to effectively utilize them in Monarch-based projects.
+title: "Essential Developer Tools for Monarch Apps"
+description: "Explore the must-have developer tools for Monarch Apps. Enhance your productivity and project quality with these essential utilities."
 ---
 
 There are processes in Application development where trivial repetitive segments of code are need to be produced or maintained in sync with external resources. For the purposes of the contents of this chapter, we will call these segments `boilerplate` code.

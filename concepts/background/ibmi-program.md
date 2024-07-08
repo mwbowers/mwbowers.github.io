@@ -1,6 +1,6 @@
 ---
-title: IBM i Program
-description: Dive deep into the world of IBM i programs with our comprehensive guide, designed for developers, system administrators, and IT professionals working with the IBM i operating system. This document offers a thorough overview of IBM i programs, including how to create, manage, and optimize them for maximum efficiency and performance. From understanding program types and their uses to exploring advanced programming techniques and best practices, this guide is your essential resource for all aspects of IBM i program development and management. Enhance your skills and knowledge to develop robust, efficient IBM i programs that meet the demands of modern business environments.
+title: "IBM i Programming Essentials"
+description: "Discover the core concepts of IBM i programming. This guide covers everything from basic operations to advanced techniques."
 ---
 
 IBM i defines a Program as a particular Operating System *Object type*, that can be "Called". (The closest .NET concept is a Console program, but even that is significantly different).

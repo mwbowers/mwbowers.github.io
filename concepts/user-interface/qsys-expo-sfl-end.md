@@ -1,6 +1,6 @@
 ---
-title: Subfile "More" or "Bottom"
-description: Delve into the functionality and significance of the 'More' and 'Bottom' elements in QSys Expo subfiles with this detailed guide. Understand how these elements are crucial for managing content display and navigation within your applications, providing a seamless user experience. This resource is invaluable for developers looking to optimize content organization and accessibility in their QSys Expo projects.
+title: "Implementing QSYS Expo Subfile Page Boundaries Handling"
+description: "Delve into the functionality and significance of the 'More' and 'Bottom' elements in QSys Expo subfiles with this detailed guide."
 ---
 
 ## IBM i Subfile User Interface

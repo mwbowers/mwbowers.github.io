@@ -1,6 +1,6 @@
 ---
-title: IBM i Job
-description: Unlock the full potential of IBM i jobs with our detailed guide, tailored for system administrators, developers, and IT professionals working with the IBM i operating system. This document provides an in-depth exploration of IBM i jobs, including their definition, various types, how to manage them, and best practices for optimizing job performance. Whether you're scheduling batch jobs, managing interactive jobs, or troubleshooting job issues, this guide offers valuable insights and practical tips to enhance your productivity and ensure smooth operations on your IBM i system.
+title: "Mastering IBM i Jobs: A Complete Guide"
+description: "Explore the intricacies of IBM i jobs with our comprehensive guide. Understand job types, management techniques, and optimization strategies for peak performance."
 ---
 
 ## Some Facts

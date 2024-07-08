@@ -1,6 +1,6 @@
 ---
-title: Zebra-Stripe Subfiles
-description: Enhance the readability and navigation of your subfiles with the Zebra-Stripe technique. This guide provides insights into applying alternating row colors to subfiles in a file system or application, making it easier to distinguish between them at a glance. Ideal for developers and users looking to improve file organization and visual clarity, this resource offers practical steps and considerations for implementing zebra-striping in various contexts.
+title: "Zebra Striping Subfiles: A Visual Guide"
+description: "Enhance your UI with zebra striping for subfiles. This guide offers insights on implementing alternating row colors for better readability."
 ---
 
 Zebra striping—also known as candy striping or half-shadow—is the application of faint shading to alternate lines or rows in data tables or forms.

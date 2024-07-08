@@ -1,6 +1,6 @@
 ---
-title: CL User Defined Commands Dictionary XML Schema
-description: Dive into the structured world of custom command creation with the CL User Defined Commands Dictionary XML Schema. This guide introduces the XML schema designed for meticulously documenting and defining custom commands in Command Language (CL), ensuring a standardized approach to command customization. Ideal for developers and system administrators, this resource offers detailed insights into the schema elements, attributes, and structure, enabling you to create well-defined, robust custom commands. Enhance your system's functionality with precision and clarity by leveraging this comprehensive XML schema guide.
+title: "CL User Defined Commands Dictionary XML Schema"
+description: "Master the creation of User Defined Commands Dictionary with our guide. Learn the steps to define and implement schemas for enhanced data structuring."
 ---
 
 ## Basic CL User Defined Commands Dictionary Syntax

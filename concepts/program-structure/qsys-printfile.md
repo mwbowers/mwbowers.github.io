@@ -1,6 +1,6 @@
 ---
-title: ASNA.QSys PrintFile
-description: Explore the functionality and configuration of the ASNA.QSys PrintFile component. This guide provides a deep dive into how PrintFile enhances application reporting and document generation within the ASNA.QSys environment, offering practical insights for developers on leveraging this component for efficient output management.
+title: "Guide to QSYS Print Files Management"
+description: "Master QSYS print files with our comprehensive guide. Learn to create, configure, and manage print files for optimal output."
 ---
 
 `ASNA.QSys.Printfile` or `QSys Printfile` (for short), is the ASNA.QSys class that abstracts the concept of a [IBM i Printer file](https://www.ibm.com/docs/en/i/7.3?topic=file-printer-overview).

@@ -1,6 +1,6 @@
 ---
-title: Reporting in a Monarch Application
-description: Master the art of reporting within Monarch applications with this comprehensive guide. Learn how to generate dynamic reports, customize them to meet your specific needs, and manage reporting processes efficiently to enhance decision-making and provide valuable insights.
+title: "Printing in Monarch Apps: An Introduction"
+description: "Learn the basics of printing in Monarch Apps. This guide covers essential concepts and practices for effective print management."
 ---
 
 This document discusses the general concepts and some implementation details of the facilities provided by the Monarch Base meant to replace the IBM i artifacts used to generate printed output.

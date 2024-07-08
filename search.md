@@ -1,9 +1,13 @@
 ---
-description: ASNA Monarch Base documentation search results
+title: "Search ASNA Monarch Base Docs"
+description: "Find guides, commands, and more in the ASNA Monarch Base documentation. Efficiently search through extensive resources."
 noratings: true
 notoc: true
 notags: true
-title: "Docs search"
+skip_read_time: true
+---noratings: true
+notoc: true
+notags: true
 skip_read_time: true
 ---
 

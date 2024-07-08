@@ -1,6 +1,6 @@
 ---
-title: Legacy Application Background
-description: Explore the origins, evolution, and enduring significance of legacy applications. This overview provides a comprehensive background, shedding light on the challenges and opportunities these systems present in today's technological landscape.
+title: "Legacy Applications: A Comprehensive Background Overview"
+description: "Explore the essentials of legacy applications with our guide. Understand their impact, evolution, and modern integration strategies."
 ---
 
 In the context of ASNA Monarch Base, **Legacy Applications**  are those that:

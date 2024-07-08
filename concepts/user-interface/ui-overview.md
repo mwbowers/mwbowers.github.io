@@ -1,6 +1,6 @@
 ---
-title: User Interface of a Monarch Application
-description: Dive into the design principles, components, and overall structure of the user interface in a Monarch application with this detailed guide. Understand how each element contributes to creating a seamless and intuitive user experience, enhancing the functionality and usability of Monarch applications. This resource is essential for developers and designers looking to build or improve the user interface of their Monarch projects.
+title: "Comprehensive UI Design Overview"
+description: "Explore the fundamentals of QSYS UI design in this overview. Learn about principles, trends, and best practices for creating user-friendly interfaces."
 ---
 
 The QSys Application architecture has a Layer that deals with the *Presentation*.

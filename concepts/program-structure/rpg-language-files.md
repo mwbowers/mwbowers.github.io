@@ -1,6 +1,6 @@
 ---
-title: RPG Language Support
-description: Explore the comprehensive support for the RPG Language, a cornerstone of business computing. This guide covers the features, capabilities, and integration of RPG with modern development environments, offering valuable insights for developers looking to leverage this powerful language in their applications.
+title: "IBM i RPG Language Support: A Guide"
+description: "Master RPG language IBM i RPG Language Support with this guide. Learn to create, organize, and optimize your RPG files for better application development."
 ---
 
 ## Externally Described Files

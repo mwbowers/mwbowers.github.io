@@ -1,6 +1,6 @@
 ---
-title: Expo Client Subfile
-description: Gain insights into the Expo Client Subfile system with this detailed guide. Learn how subfiles are utilized within the Expo Client to organize and manage project assets and configurations efficiently. This resource is essential for developers looking to optimize their Expo project structure and streamline their development workflow.
+title: "QSYS Expo Client Subfile Techniques"
+description: "Master subfile handling in QSYS Expo clients. This guide provides essential techniques for efficient subfile management and usage."
 ---
 
 DdsSubfileControl record is a bit more complex than a regular DdsRecord as explained in topic [Expo Client Library](/concepts/user-interface/qsys-expo-client-library.html).

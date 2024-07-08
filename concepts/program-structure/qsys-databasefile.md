@@ -1,6 +1,6 @@
 ---
-title: ASNA.QSys DatabaseFile
-description: Unlock the full potential of data management with the ASNA.QSys DatabaseFile. This guide delves into the structure, functionality, and strategic importance of DatabaseFile within the ASNA.QSys environment, providing essential insights for developers on leveraging this component for efficient data handling and integration.
+title: "QSYS Database File Essentials"
+description: "Explore the core aspects of QSYS database files. This guide covers creation, management, and best practices for efficient database handling."
 ---
 
 IBM i RPG [File Description Specifications](https://www.ibm.com/docs/en/i/7.2?topic=specifications-file-description) are implemented in `ASNA.QSys` by the class `DatabaseFile`.

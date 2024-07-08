@@ -1,6 +1,6 @@
 ---
-title: User Defined Command translated to a CALLD
-description: Describes one of the alternatives to translate User Defined commands (calling a class method).
+title: "User Defined Command translated to a CALLD"
+description: "Describes one of the alternatives to translate User Defined commands (calling a class method). This guide offers essential tips for integrating custom calls effectively."
 ---
 
 This is possible the simplest Migration Target to define.

@@ -1,6 +1,6 @@
 ---
-title: Application Architecture
-description: This document outlines the architecture of the application, detailing its components, how they interact, and the principles guiding its design.
+title: "Effective App Architecture Strategies"
+description: "Master application architecture with our strategies guide. Enhance scalability, maintainability, and performance."
 ---
 
 

@@ -1,6 +1,6 @@
 ---
-title: Intercept Model <=> Program Data Flow
-description: Uncover the dynamics of the Intercept Model and Program Data Flow with this insightful guide. Learn about the methodologies and architectures that enable the interception and manipulation of data flow within software programs. This resource is invaluable for developers seeking to understand and implement effective data flow management strategies.
+title: "Intercept Model to Program (and back) Data Flow Guide"
+description: "Uncover the dynamics of the intercepting Model and Program Data Flow with this insightful guide.. This guide offers insights into structuring and optimizing data movement."
 ---
 
 Sometimes it is desirable to introduce changes in the UI without affecting the Application Logic.

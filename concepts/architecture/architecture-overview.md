@@ -1,6 +1,6 @@
 ---
-title: Monarch Base Architecture
-description: Provides an in-depth look at the foundational architecture of Monarch, including its design principles and key components.
+title: "Monarch Base: Architecture Deep Dive"
+description: "Explore Monarch Base's architecture, design principles, and key components. A comprehensive guide for developers."
 ---
 
 The following sections describe the architecture of the ecosystem of a migrated application.

@@ -1,6 +1,6 @@
 ---
-title: Grouping fields on multiple Tabs
-description: Streamline your forms and enhance user experience with our comprehensive guide on Grouping Fields on Multiple Tabs. Learn how to effectively organize your application's or website's forms by categorizing related fields into separate tabs. This approach not only improves the visual appeal of your forms but also makes them more intuitive and user-friendly. Our guide covers the principles of effective tab design, technical implementation tips, and best practices to ensure your forms are both efficient and accessible. Ideal for web developers, UI/UX designers, and anyone looking to improve their digital interfaces.
+title: "Field Grouping Across Tabs: A How-To Guide"
+description: "Master the art of grouping fields across multiple tabs to enhance user interface design. Learn best practices for efficient data organization."
 ---
 
 ## Overview
