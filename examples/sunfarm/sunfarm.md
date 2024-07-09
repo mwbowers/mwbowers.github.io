@@ -1,6 +1,6 @@
 ---
-title: "Sunfarm Project Overview: 10 Innovations & their Impact"
-description: "Elevate your application's user interface with our curated list of 10 Basic UI Enhancements. This guide offers practical tips and straightforward improvements that can significantly boost the usability and visual appeal."
+title: "SunFarm Project Overview: 10 Innovations & their Impact"
+description: "Elevate your application's user interface with our curated list of 10 Basic UI Enhancements."
 ---
 
 ## Overview

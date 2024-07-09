@@ -1,6 +1,6 @@
 ---
 title: "ASNA Monarch® Base: Downloading Components Explained"
-description: "Learn how to download the components required to execute applications migrated to ASNA Monarch® Base. Discover the essential steps to get started, from installation to basic configuration."
+description: "Learn how to download the components required to execute applications migrated to ASNA Monarch® Base."
 ---
 
 ## NuGet Packages

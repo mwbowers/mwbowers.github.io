@@ -1,6 +1,6 @@
 ---
 title: "IBM i Developer Model: A Modern Guide"
-description: "Unlock the potential of the IBM i Developer Model with our guide. Learn modern techniques for effective development on the IBM i platform, enhancing your skills and projects."
+description: "Unlock potential of IBM i Developer Model with our guide. Learn modern techniques for effective development on the IBM i platform."
 ---
 
 Most IBM i Applications start by running a Program (or command) [object](https://www.ibm.com/docs/en/i/7.2?topic=concepts-objects), which starts executing business-logic *commands*.
