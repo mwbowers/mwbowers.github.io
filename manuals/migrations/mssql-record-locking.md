@@ -1,11 +1,11 @@
 ---
 title: "Migrating Record Locking/Unlocking to MSSQL: Best Practices"
-description: "This document provides a detailed guide on migrating record locking and unlocking mechanisms from legacy systems to SQL Server, including best practices, potential challenges, and solutions to ensure data integrity and concurrency control."
+description: "This document provides a detailed guide on migrating record locking and unlocking mechanisms from legacy systems to SQL Server."
 ---
 
 ## Overview
 
-Although DGL tries to make _SQL Server_ look like DB2 for IBM i, for some operations record locking bahaves diferently under DGL.
+Although DGL tries to make _SQL Server_ look like DB2 for IBM i, for some operations record locking behaves differently under DGL.
 
 The record locking problem arises in three areas: 
  1. The `Unlock` operation loses the 'current' position.

@@ -1,6 +1,6 @@
 ---
 title: "Equivalent CL Print Commands Guide"
-description: "Navigate the complexities of Command Language (CL) print commands with this detailed comparison guide. Discover the equivalent CL print commands in the migrated target platform, understanding their functionalities and differences"
+description: "Discover the equivalent CL print commands in the migrated target platform, understanding their functionalities and differences."
 ---
 
 The following tables lists the CL commands migrated by Monarch and the keywords supported by each command. The Output Queue and Spooled File commands are implemented in the `ASNA.Monarch.Spooler` class.

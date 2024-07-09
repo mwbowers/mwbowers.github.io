@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /google109c8f2fc939b216.html
+Disallow: /fonts/geomanist/demo.html
 Sitemap: https://asnaqsys.github.io/sitemap.xml

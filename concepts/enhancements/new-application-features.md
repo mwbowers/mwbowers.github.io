@@ -1,6 +1,6 @@
 ---
 title: "Monarch Apps: Adding New Functionality"
-description: "Unlock the potential of your application by seamlessly adding new functionality. This guide highlights the latest updates, enhancing your app development and user experience."
+description: "Unlock the potential of your application by seamlessly adding new functionality."
 ---
 
 If you are reading this Topic, most likely is because your [Legacy Application](/concepts/background/background-overview.html) has been successfully migrated to ASP.NET Core, and you have verified that all the Legacy features work correctly.

@@ -1,6 +1,6 @@
 ---
-title: "Intercept Model to Program (and back) Data Flow Guide"
-description: "Uncover the dynamics of the intercepting Model and Program Data Flow with this insightful guide.. This guide offers insights into structuring and optimizing data movement."
+title: "Intercept Model to Program <=> Data Flow Guide"
+description: "Uncover the dynamics of the intercepting Model and Program Data Flow with this insightful guide." 
 ---
 
 Sometimes it is desirable to introduce changes in the UI without affecting the Application Logic.

@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive DataGate Tutorials for Beginners"
-description: "This collection of tutorials provides step-by-step guidance on using DataGate with Visual Studio, covering installation, configuration, and development of applications using the DataGate database."
+description: "This collection of tutorials provides step-by-step guidance on using DataGate with Visual Studio."
 ---
 
 ## In This Section

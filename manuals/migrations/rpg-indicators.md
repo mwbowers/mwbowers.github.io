@@ -1,6 +1,6 @@
 ---
 title: "RPG Indicators: Migration & Best Practices"
-description: "This document provides a comprehensive overview of migrating RPG indicators to modern programming paradigms, including strategies for replacement, mapping to new constructs, and maintaining application logic integrity."
+description: "Comprehensive overview of migrating RPG indicators to modern programming paradigms, replacement and mapping to new constructs"
 ---
 
 ## RPG Arrays vs C# Arrays
