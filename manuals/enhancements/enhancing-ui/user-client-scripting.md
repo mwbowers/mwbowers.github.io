@@ -1,6 +1,6 @@
 ---
-title: Extending Functionality with Client-side Scripting
-description: Unlock the full potential of your web applications with our expert guide on Extending Functionality with Client-side Scripting. This essential resource is designed for web developers, both novice and experienced, looking to leverage the power of client-side languages like JavaScript to create dynamic, responsive, and interactive web experiences. From manipulating the DOM to making asynchronous requests with AJAX, our guide covers a wide array of techniques and best practices to enhance user interaction, improve site performance, and integrate third-party APIs. Whether you're aiming to add sophisticated features to your site or simply want to improve its responsiveness, this guide provides the knowledge and tools you need to elevate your web development skills.
+title: "Client-Side Scripting Essentials for Developers"
+description: "Dive into client-side scripting basics. Perfect for developers looking to understand and leverage scripting in web applications."
 ---
 
 Functionality of any [Expo Display Page](/concepts/user-interface/qsys-expo-display-pages.html) can be expanded using [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript).

@@ -1,7 +1,7 @@
 ---
-title: IAltEncodingFactory interface
+title: "IAltEncodingFactory interface | QSYS API Reference Guide"
 description: "Defines methods for creating instances of AltEncoding and getting information about the encodings supported by the factory. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Defines methods for creating instances of AltEncoding and getting information about the encodings supported by the factory.

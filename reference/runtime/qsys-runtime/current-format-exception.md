@@ -1,7 +1,7 @@
 ---
-title: CurrentFormatException class
+title: "CurrentFormatException class | QSYS API Reference Guide"
 description: "-Format name- is not the current record format in the DataSet exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 -Format name- is not the current record format in the DataSet exception.

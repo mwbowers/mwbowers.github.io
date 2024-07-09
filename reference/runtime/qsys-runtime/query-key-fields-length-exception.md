@@ -1,7 +1,7 @@
 ---
-title: QueryKeyFieldsLengthException class
+title: "QueryKeyFieldsLengthException class | QSYS API Reference Guide"
 description: "Expecting a string in the format: &#39;VALUE1 ORDER1 ... VALUEn ORDERn&#39;. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:50Z
 ---
 
 Expecting a string in the format: 'VALUE1 ORDER1 ... VALUEn ORDERn'.

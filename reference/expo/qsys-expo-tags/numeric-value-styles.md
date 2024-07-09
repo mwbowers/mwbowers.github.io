@@ -1,7 +1,7 @@
 ---
-title: NumericValueStyles enum
+title: "NumericValueStyles enum | QSYS API Reference Guide"
 description: "Sets or gets the named style used when the InteractionStyle is Slider, indicating the position of the numeric input display. "
-last_modified_at: 2024-06-28T18:18:59Z
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 Sets or gets the named style used when the InteractionStyle is Slider, indicating the position of the numeric input display.

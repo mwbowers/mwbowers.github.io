@@ -1,7 +1,8 @@
 ---
-title: Expo Client-Side Content
-description: Unlock the full potential of your React applications with our guide on Expo Client-Side Content. This detailed resource is designed for developers looking to deepen their understanding of Expo's client-side capabilities, offering insights into how to effectively use Expo to build, deploy, and manage the client-side of their React applications. From setting up your development environment to leveraging Expo's rich library of components and APIs for enhanced app functionality, this guide covers everything you need to know to make the most out of Expo in your development projects. Whether you're new to Expo or looking to expand your skills, this guide is your go-to resource for all things Expo client-side.
+title: "Expo for Monarch Apps: A Client-Side Guide"
+description: "Master Expo for Monarch app development. Learn to build, deploy, and manage client-side content with our concise Expo guide."
 ---
+
 
 Interactive Applications include at least one .NET Website Project.
 

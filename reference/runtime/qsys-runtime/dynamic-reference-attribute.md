@@ -1,7 +1,7 @@
 ---
-title: DynamicReferenceAttribute class
+title: "DynamicReferenceAttribute class | QSYS API Reference Guide"
 description: "Declares an assembly to be used as a dynamic reference, which will be queried at runtime to find CALLD targets. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Declares an assembly to be used as a dynamic reference, which will be queried at runtime to find CALLD targets.

@@ -1,7 +1,7 @@
 ---
-title: DBDateTimeParm class
+title: "DBDateTimeParm class | QSYS API Reference Guide"
 description: "Represents a parameter for a date-time type. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Represents a parameter for a date-time type.

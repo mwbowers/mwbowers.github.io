@@ -1,7 +1,7 @@
 ---
-title: DdsTimeFormat enum
+title: "DdsTimeFormat enum | QSYS API Reference Guide"
 description: "Define code names for the supported presentation Time Formattings. "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Define code names for the supported presentation Time Formattings.

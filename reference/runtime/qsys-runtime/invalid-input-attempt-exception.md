@@ -1,7 +1,7 @@
 ---
-title: InvalidInputAttemptException class
+title: "InvalidInputAttemptException class | QSYS API Reference Guide"
 description: "Invalid input attempt on format : -record format name- on file: -filename- exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Invalid input attempt on format : -record format name- on file: -filename- exception.

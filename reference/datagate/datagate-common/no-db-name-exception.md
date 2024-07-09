@@ -1,7 +1,7 @@
 ---
-title: NoDbNameException class
+title: "NoDbNameException class | QSYS API Reference Guide"
 description: "The NoDbNameException class is a custom exception class that is thrown when a database name is not provided where it is required. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 The NoDbNameException class is a custom exception class that is thrown when a database name is not provided where it is required.

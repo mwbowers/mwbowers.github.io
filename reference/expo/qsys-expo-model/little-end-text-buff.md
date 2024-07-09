@@ -1,7 +1,7 @@
 ---
-title: LittleEndTextBuff class
+title: "LittleEndTextBuff class | QSYS API Reference Guide"
 description: "This is the Buffer for Little-endian UTF16 files. "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 This is the Buffer for Little-endian UTF16 files.

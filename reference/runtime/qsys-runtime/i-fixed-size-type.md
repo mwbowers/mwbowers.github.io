@@ -1,7 +1,7 @@
 ---
-title: IFixedSizeType interface
+title: "IFixedSizeType interface | QSYS API Reference Guide"
 description: "Declares the basic functionality of a fixed-size type. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Declares the basic functionality of a fixed-size type.

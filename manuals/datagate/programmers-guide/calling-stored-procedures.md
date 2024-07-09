@@ -1,6 +1,6 @@
 ---
-title: Calling Stored Procedures
-description: This document guides you through the process of calling stored procedures within a database, including the necessary syntax, parameters, and examples for various database management systems.
+title: "Calling Stored Procedures with DataGate"
+description: "Master the process of calling stored procedures in DataGate. This guide offers step-by-step instructions for seamless integration."
 ---
 
 #### Program Call Example Tutorial

@@ -1,6 +1,6 @@
 ---
-title: Configuring the Database Name Store
-description: This document provides detailed instructions on how to configure the database name store, including setting up the initial environment, defining database names, and ensuring secure access.
+title: "Effective Database Store Naming Conventions Guide"
+description: "This document provides detailed instructions on how to configure the database name store, including setting up the initial environment, defining database names, and ensuring secure access."
 ---
 
 ## DataGate Source Profile

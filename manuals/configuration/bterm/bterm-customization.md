@@ -1,6 +1,6 @@
 ---
-title: BTerm Customization
-description: This document details the process for customizing BTerm, including changing themes, configuring settings, and adding plugins to enhance functionality and user experience.
+title: "Customizing BTerm: A Comprehensive Guide"
+description: "Unlock the full potential of BTerm with our customization guide. Tailor your experience with tips on themes, shortcuts, and more."
 ---
 
 The Browser 5250 Terminal (BTerm) is fully customizable.

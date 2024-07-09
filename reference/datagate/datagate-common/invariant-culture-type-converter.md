@@ -1,7 +1,7 @@
 ---
-title: InvariantCultureTypeConverter class
+title: "InvariantCultureTypeConverter class | QSYS API Reference Guide"
 description: "Provides a type converter to convert object types to and from string representations, using the invariant culture. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Provides a type converter to convert object types to and from string representations, using the invariant culture.

@@ -1,7 +1,7 @@
 ---
-title: CPF0001Exception class
+title: "CPF0001Exception class | QSYS API Reference Guide"
 description: "The exception that is thrown when an Error found on {0} command.  See Inner Exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 The exception that is thrown when an Error found on {0} command.  See Inner Exception.

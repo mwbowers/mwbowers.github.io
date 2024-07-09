@@ -1,7 +1,7 @@
 ---
-title: AdgConnection class
+title: "AdgConnection class | QSYS API Reference Guide"
 description: "The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program.  "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program. 

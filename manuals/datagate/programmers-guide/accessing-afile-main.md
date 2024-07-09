@@ -1,6 +1,6 @@
 ---
-title: Accessing a File
-description: This document provides detailed instructions on how to access a file, covering various methods and tools that can be used to locate, open, and modify files across different operating systems.
+title: "Accessing Files with DataGate: A Guide"
+description: "Learn how to access and manage files using DataGate. This guide provides essential tips for efficient file handling and operations."
 ---
 
 ## Contents
@@ -14,6 +14,7 @@ description: This document provides detailed instructions on how to access a fil
 [Efficient File Access](efficient-file-access.html) 
 
 [Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html) 
+
 ## See Also
 
 

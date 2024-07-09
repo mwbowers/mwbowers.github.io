@@ -1,7 +1,7 @@
 ---
-title: IStreamTransformerFactory interface
+title: "IStreamTransformerFactory interface | QSYS API Reference Guide"
 description: "Provides an interface for creating encoders and decoders for streams. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Provides an interface for creating encoders and decoders for streams.

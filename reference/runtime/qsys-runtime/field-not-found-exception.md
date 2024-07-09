@@ -1,7 +1,7 @@
 ---
-title: FieldNotFoundException class
+title: "FieldNotFoundException class | QSYS API Reference Guide"
 description: "-Field name- was not found in format -record format name- of -filename-. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 -Field name- was not found in format -record format name- of -filename-.

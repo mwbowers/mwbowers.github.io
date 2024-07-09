@@ -1,7 +1,7 @@
 ---
-title: InconsistentOpenAttributesException class
+title: "InconsistentOpenAttributesException class | QSYS API Reference Guide"
 description: "The following Open attributes were inconsistent with the Query File: -attributes- exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 The following Open attributes were inconsistent with the Query File: -attributes- exception.

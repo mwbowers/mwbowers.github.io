@@ -1,6 +1,6 @@
 ---
-title: Migration of CL Programs
-description: This document outlines the process and best practices for migrating CL programs to a new environment, ensuring compatibility and performance optimization.
+title: "Migration of CL Programs: A Step-by-Step Guide"
+description: "Learn the essentials of migrating CL programs to a new environment, ensuring compatibility and performance optimization."
 ---
 
 ## CL Programs

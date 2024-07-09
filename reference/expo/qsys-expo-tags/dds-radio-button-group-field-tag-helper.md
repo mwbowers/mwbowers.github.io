@@ -1,7 +1,7 @@
 ---
-title: DdsRadioButtonGroupFieldTagHelper class
+title: "DdsRadioButtonGroupFieldTagHelper class | QSYS API Reference Guide"
 description: "Defines a group of radio-button elements. "
-last_modified_at: 2024-06-28T18:18:59Z
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 Defines a group of radio-button elements.

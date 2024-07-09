@@ -1,7 +1,7 @@
 ---
-title: IAltEncodingJsonSerializer interface
+title: "IAltEncodingJsonSerializer interface | QSYS API Reference Guide"
 description: "Defines a method for JSON serialization of ITransformProperties objects in AltEncoding implementations. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Defines a method for JSON serialization of ITransformProperties objects in AltEncoding implementations.

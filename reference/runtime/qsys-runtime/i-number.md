@@ -1,7 +1,7 @@
 ---
-title: INumber interface
+title: "INumber interface | QSYS API Reference Guide"
 description: "Interface that identifies a subset of length type arguments, fron 0 to 29. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 sitemap: false
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Render-in-Process Options
-description: This document details the options available for rendering content in-process, including configuration settings, performance considerations, and best practices for utilizing in-process rendering effectively.
+title: "Guide: Setting Render-in-Process during Printing"
+description: "This document details the options available for rendering content in-process, including configuration settings, performance considerations, and best practices for utilizing in-process print rendering effectively."
 ---
 
 Occasionally the requirement to run the application with asp.net "impersonation" may arise, and in this case the IIS7 worker process starts a thread which runs under the credentials of the impersonated user. This is similar too, but slightly different than, logging onto the Windows workstation with the same credentials. In particular, when the worker process is running as the "Network Service" identity (as per default IIS7 configuration), the impersonation thread is not allowed to create new processes with the same authority as a logged-on user with its credentials. 

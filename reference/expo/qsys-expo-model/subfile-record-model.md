@@ -1,7 +1,7 @@
 ---
-title: SubfileRecordModel class
+title: "SubfileRecordModel class | QSYS API Reference Guide"
 description: "Defines the SubfileRecordModel class "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Defines the SubfileRecordModel class

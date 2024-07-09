@@ -1,6 +1,6 @@
 ---
-title: ASNA Monarch® Base - Reference
-description: Welcome to the comprehensive reference guide for ASNA Monarch® Base, your essential resource for in-depth information on all aspects of this powerful software platform. Designed for developers, IT professionals, and system administrators, this guide offers detailed descriptions of Monarch Base's features, functionalities, and how to effectively utilize them in your projects. Whether you're looking for syntax examples, feature explanations, or configuration options, this reference guide is your go-to source for all things Monarch Base. Enhance your understanding and maximize the potential of Monarch Base with this authoritative and exhaustive reference.
+title: "ASNA Monarch® Base: Comprehensive Reference Guide Overview"
+description: "Get a quick overview of our complete reference guide. This summary provides insights into the resources available for your needs."
 ---
 
 The ASNA Monarch Base consists of the following assemblies:

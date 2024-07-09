@@ -1,7 +1,7 @@
 ---
-title: dgException class
+title: "dgException class | QSYS API Reference Guide"
 description: "The dgException class is a custom exception class that extends the base Exception class. It provides additional functionality for handling errors spec"
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 The dgException class is a custom exception class that extends the base Exception class.

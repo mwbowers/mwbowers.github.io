@@ -1,6 +1,6 @@
 ---
-title: FileAdapter class
-last_modified_at: 2024-06-28T18:18:27Z
+title: "FileAdapter class | QSYS API Reference Guide"
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 

@@ -1,7 +1,7 @@
 ---
-title: LDALengthException class
+title: "LDALengthException class | QSYS API Reference Guide"
 description: "The exception that is thrown when a field being get or set from the LDA has a negative length. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 The exception that is thrown when a field being get or set from the LDA has a negative length.

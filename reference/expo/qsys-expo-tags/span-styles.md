@@ -1,6 +1,6 @@
 ---
-title: SpanStyles enum
-last_modified_at: 2024-06-28T18:18:59Z
+title: "SpanStyles enum | QSYS API Reference Guide"
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 

@@ -1,6 +1,6 @@
 ---
-title: BTerm Menus
-description: This document introduces the concept of Menus in BTerm, explaining how to create, manage, and use them to automate repetitive tasks and enhance efficiency within the terminal.
+title: "Navigating BTerm Menus: A User's Guide"
+description: "Master the BTerm menus with our guide. Learn to navigate and customize menus for a more efficient and personalized user experience."
 sitemap: false
 ---
 

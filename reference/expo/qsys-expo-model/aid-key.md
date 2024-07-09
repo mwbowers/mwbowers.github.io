@@ -1,7 +1,7 @@
 ---
-title: AidKey enum
+title: "AidKey enum | QSYS API Reference Guide"
 description: "Specifies the Attention indicator index "
-last_modified_at: 2024-06-28T18:18:50Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Specifies the Attention indicator index

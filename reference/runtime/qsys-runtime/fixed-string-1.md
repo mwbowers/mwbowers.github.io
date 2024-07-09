@@ -1,7 +1,7 @@
 ---
-title: FixedString<T> struct
+title: "FixedString<T> struct | QSYS API Reference Guide"
 description: "Holds a fixed-string value with the specified length. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Holds a fixed-string value with the specified length.

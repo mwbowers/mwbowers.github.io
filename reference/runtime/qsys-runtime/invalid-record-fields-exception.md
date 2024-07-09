@@ -1,7 +1,7 @@
 ---
-title: InvalidRecordFieldsException class
+title: "InvalidRecordFieldsException class | QSYS API Reference Guide"
 description: "Record Format contains fields with types not compatible for this operation exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Record Format contains fields with types not compatible for this operation exception.

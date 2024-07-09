@@ -1,6 +1,6 @@
 ---
-title: Showing a Non-DisplayFile Page
-description: This document provides a step-by-step guide on how to display a page in your application that does not rely on a traditional DisplayFile, including examples and best practices for implementation.
+title: "Showing a Non-DisplayFile Pages"
+description: "Learn how to show Non-DisplayFile Page in your application without using display files, enhancing flexibility and user interface design."
 ---
 
 ## On the Job (Blue Thread)

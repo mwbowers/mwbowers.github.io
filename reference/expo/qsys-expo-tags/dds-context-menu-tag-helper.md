@@ -1,7 +1,7 @@
 ---
-title: DdsContextMenuTagHelper class
+title: "DdsContextMenuTagHelper class | QSYS API Reference Guide"
 description: "Defines a Context Menu. "
-last_modified_at: 2024-06-28T18:18:59Z
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 Defines a Context Menu.

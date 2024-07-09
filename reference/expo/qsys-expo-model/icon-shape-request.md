@@ -1,7 +1,7 @@
 ---
-title: IconShapeRequest class
+title: "IconShapeRequest class | QSYS API Reference Guide"
 description: "Represents a request for icon shapes, specifying the elements and the icon identifier. "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Represents a request for icon shapes, specifying the elements and the icon identifier.

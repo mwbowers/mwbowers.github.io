@@ -1,6 +1,6 @@
 ---
-title: Reading and Writing to Database Files
-description: This document covers the techniques and best practices for reading from and writing to database files, including handling various data types, optimizing performance, and ensuring data integrity.
+title: "Read & Write Database Files Efficiently"
+description: "Master the techniques for reading and writing to database files with our guide, ensuring data accuracy and performance."
 ---
 
 The following example <span>opens a database file</span> for "read" access and then reads the first record in the file.

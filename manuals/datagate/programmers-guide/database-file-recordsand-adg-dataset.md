@@ -1,6 +1,6 @@
 ---
-title: Database File Records and AdgDataSet
-description: This document delves into the specifics of database file records and the AdgDataSet, detailing their structure, usage, and how they interact within database management systems.
+title: "Managing Database File Records and ADG Dataset"
+description: "Learn how to manage and manipulate database file records and ADG datasets effectively. This guide covers techniques, tips, and best practices."
 ---
 
 The .NET Framework provides the ( **DataSet** ) class as a general-purpose container for relational database data. **DataSet** objects offer many useful functions and are used throughout the framework and in data-centric components for access, update, and display. For example, **DataSet** objects can be bound to certain Windows forms controls at design-time. DG builds on this foundation by sub-classing **DataSet** in its own [ AdgDataSet](adg-dataset-class.html) class. **AdgDataSet** effectively provides a bridge between the record-oriented access world of DataGate and AVR and set-oriented access methods. For a complete introduction to **DataSet** , please consult the .NET Framework documentation.

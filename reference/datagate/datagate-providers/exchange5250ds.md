@@ -1,7 +1,7 @@
 ---
-title: Exchange5250DS class
+title: "Exchange5250DS class | QSYS API Reference Guide"
 description: "Represents a method that exchanges 5250 data stream. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Represents a method that exchanges 5250 data stream.

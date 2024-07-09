@@ -1,7 +1,7 @@
 ---
-title: IFixedArrayBase<T1, T2> interface
+title: "IFixedArrayBase<T1, T2> interface | QSYS API Reference Guide"
 description: "Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional.

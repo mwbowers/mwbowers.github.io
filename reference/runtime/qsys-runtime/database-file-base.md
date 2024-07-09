@@ -1,7 +1,7 @@
 ---
-title: DatabaseFileBase class
+title: "DatabaseFileBase class | QSYS API Reference Guide"
 description: "Common base class for Database data files, single format and multiformat. It contains methods common to both kinds. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Common base class for Database data files, single format and multiformat. It contains methods common to both kinds.

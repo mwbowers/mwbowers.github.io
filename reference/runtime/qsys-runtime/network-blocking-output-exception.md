@@ -1,7 +1,7 @@
 ---
-title: NetworkBlockingOutputException class
+title: "NetworkBlockingOutputException class | QSYS API Reference Guide"
 description: "Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Network Blocking is not allowed for *OUTPUT if CacheWrites is *NO on file -filename-.

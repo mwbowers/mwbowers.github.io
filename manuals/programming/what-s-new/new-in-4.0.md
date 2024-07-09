@@ -1,6 +1,6 @@
 ---
-title: What's new in Monarch Base 4.0
-description: Dive into the latest advancements of Monarch Base with our comprehensive overview of what's new in version 4.0. This guide is tailored for developers, system administrators, and users of Monarch Base, providing detailed insights into the enhancements, new features, and improvements that make version 4.0 a significant update. Whether you're interested in exploring new functionalities, understanding changes to existing features, or getting up to speed with the latest performance optimizations, our guide ensures you have all the information you need to make the most out of Monarch Base 4.0. Discover how these updates can streamline your workflows, improve your user experience, and boost your productivity.
+title: "What's New in Version 4.0: Key Features"
+description: "Discover the latest updates in Version 4.0. This guide highlights new features, improvements, and how they benefit your projects."
 ---
 
 The major new features on Monarch Base 4.0 are:

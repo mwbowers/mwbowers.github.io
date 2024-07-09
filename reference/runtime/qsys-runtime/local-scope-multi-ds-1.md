@@ -1,7 +1,7 @@
 ---
-title: LocalScopeMultiDS&lt;T&gt; class
+title: "LocalScopeMultiDS&lt;T&gt; class | QSYS API Reference Guide"
 description: "Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS obj"
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects.

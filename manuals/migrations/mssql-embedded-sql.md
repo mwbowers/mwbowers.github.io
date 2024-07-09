@@ -1,6 +1,6 @@
 ---
-title: Migrated Embedded SQL Statements to SQL Server
-description: This document outlines the process and considerations for migrating embedded SQL statements to SQL Server, including syntax adjustments, performance implications, and compatibility issues.
+title: "Mastering Migration of RPG Embedded SQL: Tips & Tricks"
+description: "Unlock the power of RPG embedded SQL in MSSQL. This guide offers insights, best practices, and tips for effective database management and queries."
 ---
 
 ## Overview

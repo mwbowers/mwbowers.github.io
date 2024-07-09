@@ -1,9 +1,10 @@
 ---
-title: Introduction
-description: This document serves as an introduction, providing an overview of the main topics, objectives, and structure of the content that follows.
+title: "Comprehensive DataGate Introduction Guide"
+description: "Dive into our guide for a comprehensive introduction to our key concepts, tools, and practices. Perfect for beginners."
 ---
 
 This section contains an overview of the DataGate client facilities.
+
 ## In This Section
 
 

@@ -1,6 +1,6 @@
 ---
-title: Connecting to a Database Using a Database Name
-description: This document explains the process of connecting to a database by specifying a database name, including detailed steps for various database management systems and troubleshooting common connection issues.
+title: "Connecting to named Databases: Essential Guide"
+description: "Discover how to establish database connections using a name effectively. This guide covers essential techniques, tips, and best practices for developers."
 ---
 
 The DataGate notions of "database name" (a registered client-side reference to a set of database connection parameters) and "database label" (the server-side identifier for database servers) are provided to help you identify and connect to a database.

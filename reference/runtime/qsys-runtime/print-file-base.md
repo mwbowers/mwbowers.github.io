@@ -1,7 +1,7 @@
 ---
-title: PrintFileBase class
+title: "PrintFileBase class | QSYS API Reference Guide"
 description: "Base class for Database print files. Contains the print file setup information and some output operations. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Base class for Database print files. Contains the print file setup information and some output operations.

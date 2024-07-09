@@ -1,6 +1,6 @@
 ---
-title: Controlling the Color of a Screen Constant or Field
-description: This guide provides detailed instructions on how to control the color of screen constants or fields in your application, including code examples and customization tips.
+title: "Control Display Fields and Constants Color: Easy Guide"
+description: "Master the art of changing display field colors in your UI. This concise guide offers practical tips for dynamic color control."
 ---
 
 There are multiple ways in which a migrated field or constant can get its color set.  Traditional html/css means can be used for the color selection or one of these two properties of the DdsConstant or DdsXxxField tag-helpers can be employed:

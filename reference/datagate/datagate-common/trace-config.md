@@ -1,7 +1,7 @@
 ---
-title: TraceConfig enum
+title: "TraceConfig enum | QSYS API Reference Guide"
 description: "Enumerates the types of trace configurations used in the application. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Enumerates the types of trace configurations used in the application.

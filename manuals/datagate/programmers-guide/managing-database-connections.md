@@ -1,6 +1,6 @@
 ---
-title: Managing Database Connections
-description: This document offers guidance on managing database connections, including establishing, maintaining, and closing connections efficiently to ensure optimal performance and resource utilization.
+title: "Database Connection Management Tips"
+description: "Learn how to manage database connections effectively. Our guide covers best practices for stability and performance."
 ---
 
 [AdgConnection](adg-connection-class.html) objects exist in one of two modes, as reflected by the [State](adg-connection-class-state-property.html) property. Initially, <span> **AdgConnection** </span> objects are in the <span>Closed</span> state. After successful execution of the [ Open](adg-connection-class-open-method.html) method, the **AdgConnection** object is in the <span>Open</span> state. When open, <span> **AdgConnection** </span> objects represent a live connection to the database and can be used with other DG objects and methods to perform access operations.

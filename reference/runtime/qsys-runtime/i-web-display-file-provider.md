@@ -1,7 +1,7 @@
 ---
-title: IWebDisplayFileProvider interface
+title: "IWebDisplayFileProvider interface | QSYS API Reference Guide"
 description: "Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Web Display File Provider Interface. It contains methods to handle all Input and Output operations on the file.

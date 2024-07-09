@@ -1,7 +1,7 @@
 ---
-title: JobConfig class
+title: "JobConfig class | QSYS API Reference Guide"
 description: "Holds configuration values for the creation of new jobs. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Holds configuration values for the creation of new jobs.

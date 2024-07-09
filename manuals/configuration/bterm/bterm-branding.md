@@ -1,6 +1,6 @@
 ---
-title: BTerm Branding
-description: This document provides guidelines and standards for BTerm branding, including logo usage, color schemes, and typography to ensure consistent brand representation across all platforms.
+title: "BTerm Branding Guidelines: Enhance Your Identity"
+description: "Elevate your brand with our BTerm branding guidelines. Learn to apply our visual and verbal identity principles for maximum impact."
 ---
 
 ## Changing Color and/or Background Defaults

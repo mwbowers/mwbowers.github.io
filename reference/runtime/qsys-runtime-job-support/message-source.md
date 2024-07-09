@@ -1,7 +1,7 @@
 ---
-title: MessageSource enum
+title: "MessageSource enum | QSYS API Reference Guide"
 description: "Specifies the component generating a message. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Specifies the component generating a message.

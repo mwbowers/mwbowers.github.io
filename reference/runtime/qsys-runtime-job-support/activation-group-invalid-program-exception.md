@@ -1,7 +1,7 @@
 ---
-title: ActivationGroupInvalidProgramException class
+title: "ActivationGroupInvalidProgramException class | QSYS API Reference Guide"
 description: "The exception that is thrown when an activation could not be created because the program is invalid. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 The exception that is thrown when an activation could not be created because the program is invalid.

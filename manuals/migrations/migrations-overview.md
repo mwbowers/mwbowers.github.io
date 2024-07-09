@@ -1,6 +1,6 @@
 ---
-title: Migrations Overview
-description: This document provides an overview of the migration process.
+title: "Comprehensive Guide to Application Migrations"
+description: "Explore the fundamentals of system migrations, including planning, execution, and best practices for a smooth transition."
 ---
 
 ASNA Monarch® is a set of technologies that assist in the migration of RPG applications to the .NET platform. While it strives to provide seamless flow of the applications objects to the new platform, there are several considerations that must be undertaken and instances where complete like-to-like transformation is not possible.

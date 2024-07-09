@@ -1,7 +1,7 @@
 ---
-title: DatabaseCycleFile class
+title: "DatabaseCycleFile class | QSYS API Reference Guide"
 description: "Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database, the file buffer values are not immediate"
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Database file that participates in the RPG program Cycle. When a Cycle file record is read from the Database,

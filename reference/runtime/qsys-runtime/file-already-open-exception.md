@@ -1,7 +1,7 @@
 ---
-title: FileAlreadyOpenException class
+title: "FileAlreadyOpenException class | QSYS API Reference Guide"
 description: "File -filename- is already open exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 File -filename- is already open exception.

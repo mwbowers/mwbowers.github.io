@@ -1,8 +1,7 @@
 ---
-title: Migrating to SQL Server
-description: This document offers a detailed guide on migrating databases to SQL Server, covering preparation steps, migration strategies, and post-migration considerations to ensure a successful transition.
+title: "Migrating to MS SQL: A Step-by-Step Guide"
+description: "Learn how to seamlessly migrate your database to Microsoft SQL Server. This guide covers preparation, execution, and optimization tips."
 ---
-
 
 If the database is to be moved to SQL Server in the final stage of the application and will be accessed via DataGate Linear for SQL Server (DGL), then DGL restrictions apply to the migrated application.
 

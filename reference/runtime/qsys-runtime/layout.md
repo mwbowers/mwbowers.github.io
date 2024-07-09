@@ -1,7 +1,7 @@
 ---
-title: Layout struct
+title: "Layout struct | QSYS API Reference Guide"
 description: "Defines a layout for a field in a data structure. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Defines a layout for a field in a data structure.

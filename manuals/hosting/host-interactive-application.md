@@ -1,6 +1,6 @@
 ---
-title: Hosting an Interactive Application
-description: Discover the essential steps and best practices for hosting an interactive application with our comprehensive guide. Designed for developers, IT professionals, and anyone involved in the deployment of web or mobile applications, this resource provides in-depth insights into selecting the right hosting environment, setting up servers, ensuring security, and optimizing performance for interactive applications. Whether you're working with a complex web app requiring real-time data interactions or a mobile application with dynamic content, our guide will help you navigate the challenges of hosting to ensure a seamless, efficient, and secure user experience. Learn how to leverage cloud services, manage resources effectively, and scale your application to meet user demand.
+title: "Hosting Interactive Applications: A Guide"
+description: "Learn how to host interactive applications effectively. This guide covers essential tips for seamless user engagement and performance."
 ---
 
 There are several ways in which systems can be setup to run migrated applications.  This article discusses the typical environment where the ‘application server’ and the ‘website’ are both hosted on the same system and as noted in the overview of a Monarch [application architecture](/concepts/architecture/application-architecture.html#interactive-job-architecture), in its simplest configuration, the migrated code along with the website can be run in a single process. 

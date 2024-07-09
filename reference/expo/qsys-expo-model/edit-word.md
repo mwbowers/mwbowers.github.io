@@ -1,7 +1,7 @@
 ---
-title: EditWord class
+title: "EditWord class | QSYS API Reference Guide"
 description: "Provides methods to format numeric values according to Edit Word "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Provides methods to format numeric values according to Edit Word

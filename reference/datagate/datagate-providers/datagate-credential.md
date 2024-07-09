@@ -1,7 +1,7 @@
 ---
-title: DataGateCredential class
+title: "DataGateCredential class | QSYS API Reference Guide"
 description: "Provides a base class for DataGate credentials. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Provides a base class for DataGate credentials.

@@ -1,7 +1,7 @@
 ---
-title: FileOverrideOptionMismatchException class
+title: "FileOverrideOptionMismatchException class | QSYS API Reference Guide"
 description: "The exception that is thrown when a file override has an option value that does not match expected by the named option. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 The exception that is thrown when a file override has an option value that does not match expected by the named option.

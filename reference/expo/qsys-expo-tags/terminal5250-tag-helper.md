@@ -1,7 +1,7 @@
 ---
-title: Terminal5250TagHelper class
+title: "Terminal5250TagHelper class | QSYS API Reference Guide"
 description: "Defines the element where the 5250 Terminal will be rendered "
-last_modified_at: 2024-06-28T18:19:00Z
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 Defines the element where the 5250 Terminal will be rendered

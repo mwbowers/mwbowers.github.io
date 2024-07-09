@@ -1,7 +1,7 @@
 ---
-title: SubfileControlAttribute class
+title: "SubfileControlAttribute class | QSYS API Reference Guide"
 description: "Defines Subfile Control Attribute on a type "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Defines Subfile Control Attribute on a type

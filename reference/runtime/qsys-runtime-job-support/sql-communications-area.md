@@ -1,7 +1,7 @@
 ---
-title: SQL_CommunicationsArea class
+title: "SQL_CommunicationsArea class | QSYS API Reference Guide"
 description: "Implements SQLCA (SQL communications area) "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Implements SQLCA (SQL communications area)

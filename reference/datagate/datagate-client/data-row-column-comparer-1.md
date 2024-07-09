@@ -1,7 +1,7 @@
 ---
-title: DataRowColumnComparer&lt;T&gt; class
+title: "DataRowColumnComparer&lt;T&gt; class | QSYS API Reference Guide"
 description: "This minor variation of the System.Data.DataRowComparer&lt;T&gt; class implements IEqualityComparer&lt;T&gt; using value based semantics when comparin"
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 This minor variation of the System.Data.DataRowComparer<T> class

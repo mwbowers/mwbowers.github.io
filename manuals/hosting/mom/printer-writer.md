@@ -1,8 +1,7 @@
 ---
-title: Printer Writer
-description: Unlock the capabilities of Printer Writer, a powerful tool designed to streamline and enhance your printing processes. This guide is an invaluable resource for developers, IT professionals, and anyone involved in software development or system administration that requires efficient management of printing tasks. Dive into the functionalities of Printer Writer, from setting up print jobs to customizing output for various requirements. Learn how to integrate Printer Writer into your applications, ensuring high-quality, efficient, and customizable printing solutions. Whether you're automating batch printing, managing complex print jobs, or simply looking to improve your application's printing capabilities, this guide provides the insights and instructions needed to leverage Printer Writer effectively.
+title: "Guide to Printer Writer Configuration"
+description: "Explore how to use Printer Writer Configuration for writing formatted text to output streams with ease, including error handling tips."
 ---
-
 
 Monarch provides the program ```ASNA.QSys.PrinterWriter.exe``` to assist in the processing of spooled printouts waiting in an output queue.
 

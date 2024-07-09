@@ -1,7 +1,7 @@
 ---
-title: WebSocketDevice class
+title: "WebSocketDevice class | QSYS API Reference Guide"
 description: "Implements a WebDevice using a socket to communicate with a website for its UI services. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Implements a WebDevice using a socket to communicate with a website for its UI services.

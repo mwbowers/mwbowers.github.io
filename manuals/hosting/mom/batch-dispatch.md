@@ -1,6 +1,6 @@
 ---
-title: ASNA - Batch Dispatch
-description: Dive into the efficient world of batch processing with our guide on ASNA - Batch Dispatch. This comprehensive resource is designed for developers, system administrators, and IT professionals working with the ASNA system, providing a deep dive into the functionalities and best practices of batch dispatching. Learn how to streamline your batch jobs, optimize processing times, and ensure your operations run smoothly and efficiently. Whether you're scheduling regular data backups, running extensive data processing tasks, or managing system updates, our guide covers the essential knowledge and tools needed to maximize the performance and reliability of your batch dispatch processes.
+title: "Efficient Batch Dispatching Techniques"
+description: "Explore strategies for efficient batch dispatching to optimize processing time and resource utilization in your applications."
 ---
 
 Monarch provides the program `ASNA.QSys.BatchDispatch.exe` (*BatchDispatch*) to assist in the processing of jobs scheduled to run in batch. It also provides `ASNA.QSys.BatchHost.exe` (*BatchHost*).

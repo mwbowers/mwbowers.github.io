@@ -1,6 +1,6 @@
 ---
-title: DataGate Overview
-description: This document offers a comprehensive overview of DataGate, detailing its purpose, core features, and how it facilitates data management and integration across various platforms.
+title: "DataGate Overview: Unlocking Data Access"
+description: "Explore DataGate's capabilities to manage and analyze data efficiently. This overview introduces features, benefits, and use cases."
 ---
 
 The ASNA DataGate Client provides managed-code access to data and objects residing in an IBM i, SQL Server or on a DataGate for Windows database. Data access mechanisms in DataGate Client support and enhance the System.Data namespace, including the DataSet model, while maintaining traditional DataGate record-level characteristics.

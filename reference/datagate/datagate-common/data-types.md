@@ -1,7 +1,7 @@
 ---
-title: DataTypes enum
+title: "DataTypes enum | QSYS API Reference Guide"
 description: "Specifies the data types for a field. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Specifies the data types for a field.

@@ -1,6 +1,6 @@
 ---
-title: Decimal Numbers Containing Dates
-description: This document explores the concept of representing dates as decimal numbers, including methods for conversion, storage, and retrieval of date information in decimal format.
+title: "Handling Dates in Decimal Formats: A Guide"
+description: "Learn to manage dates stored as decimal numbers. This guide provides techniques for conversion and interpretation, simplifying data handling."
 ---
 
 Display file decimal numbers that appear to be used as dates on the screen are migrated by Monarch using a Tag Helper called [DdsDecDateField](/reference/expo/qsys-expo-tags/dds-dec-date-field-tag-helper.html). `DdsDecDateField` shows the decimal value as a date on the browser and places a button to allow the user to pop-up a calendar.

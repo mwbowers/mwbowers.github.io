@@ -1,7 +1,7 @@
 ---
-title: RowInsertedEventHandler class
+title: "RowInsertedEventHandler class | QSYS API Reference Guide"
 description: "Event raised when a row was inserted in a subfile. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:50Z
 ---
 
 Event raised when a row was inserted in a subfile.

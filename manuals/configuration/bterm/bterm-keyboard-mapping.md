@@ -1,6 +1,6 @@
 ---
-title: BTerm Keyboard Mapping
-description: This document outlines the steps to customize keyboard mappings in BTerm, providing a guide to reassign keys, create shortcuts, and enhance overall productivity within the terminal environment.
+title: "BTerm Keyboard Mapping: Customize Your Actions"
+description: "Effortlessly customize your keyboard with BTerm mapping. This guide helps you tailor key functions for an optimized typing experience."
 ---
 
 ## 5250 Terminal Keyboard Mapping

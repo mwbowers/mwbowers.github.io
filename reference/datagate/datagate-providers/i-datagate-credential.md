@@ -1,7 +1,7 @@
 ---
-title: IDataGateCredential interface
+title: "IDataGateCredential interface | QSYS API Reference Guide"
 description: "Defines methods and properties for DataGate credentials. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Defines methods and properties for DataGate credentials.

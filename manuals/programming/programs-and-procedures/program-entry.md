@@ -1,6 +1,6 @@
 ---
-title: Program Entry
-description: Unlock the gateway to program execution with our detailed guide on Program Entry. This essential resource is designed for developers and programmers seeking to understand the core principles behind starting a program, including the intricacies of main methods, entry points, and initial execution flows. Whether you're working with compiled languages like C and Java, or scripting languages such as Python and JavaScript, our guide provides a comprehensive overview of how programs begin their lifecycle. Learn about the conventions, best practices, and differences in program entry across various programming environments and platforms. This guide is your first step towards mastering the foundational aspects of program execution.
+title: "Program Entry Points: A Comprehensive Guide"
+description: "Learn about program entry points, their importance in software development, and how to effectively manage them for optimal program execution."
 ---
 
 A [Monarch Program](/concepts/architecture/monarch-programs.html) migrated from the IBM i should have the ability to be called by other programs providing similar semantics to the original call/return facilities as well as respecting the expectation of the program's instantiation in an [Activation Group](/concepts/architecture/activation-groups.html).

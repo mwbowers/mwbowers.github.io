@@ -1,7 +1,7 @@
 ---
-title: AdgObjectTypes enum
+title: "AdgObjectTypes enum | QSYS API Reference Guide"
 description: "Specifies the type of an ADG object. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Specifies the type of an ADG object.

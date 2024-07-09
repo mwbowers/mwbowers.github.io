@@ -214,7 +214,7 @@ Manuals:
         - title: ASNA DataGate in Visual Studio
           path: /manuals/datagate/programmers-guide/datagate-component-suite-overview.html
         - title: Accessing the DG Assembly
-          path: /manuals/datagate/programmers-guide/accessing_the-dcs-assembly.html
+          path: /manuals/datagate/programmers-guide/accessing-the-dcs-assembly.html
       - sectiontitle: Connecting To/From a Database
         sectionpath: /manuals/datagate/programmers-guide/connectingtoa-database-main.html
         section:

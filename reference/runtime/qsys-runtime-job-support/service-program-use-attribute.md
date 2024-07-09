@@ -1,7 +1,7 @@
 ---
-title: ServiceProgramUseAttribute class
+title: "ServiceProgramUseAttribute class | QSYS API Reference Guide"
 description: "Attribute to indicate the list of service programs to which a program is bound. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Attribute to indicate the list of service programs to which a program is bound.

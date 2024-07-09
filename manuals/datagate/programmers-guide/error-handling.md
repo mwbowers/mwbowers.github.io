@@ -1,6 +1,6 @@
 ---
-title: Error Handling
-description: This document provides a comprehensive guide on error handling strategies, including best practices for detecting, logging, and recovering from errors in software applications.
+title: "DataGate Error Handling Best Practices Guide"
+description: "Learn the essentials of effective error handling to improve application reliability and user experience with our concise guide."
 ---
 
 In client/server environments such as the ASNA DataGate (DG) runtime, certain exceptions can occur that the programmer may wish to allow the program to recover from. For example, suppose that the network between your program (the client) and the database (the server) is disrupted. Instead of crashing or reporting the error and exiting, you could allow the user to try the procedure again when the network has been restored.

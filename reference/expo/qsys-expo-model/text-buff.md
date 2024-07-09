@@ -1,7 +1,7 @@
 ---
-title: TextBuff class
+title: "TextBuff class | QSYS API Reference Guide"
 description: "This is the Buffer for UTF8 files. It attempts to read the encoding preamble, which for  this encoding should be unicode point \uFEFF which is  encode"
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 This is the Buffer for UTF8 files.

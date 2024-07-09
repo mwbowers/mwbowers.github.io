@@ -1,7 +1,7 @@
 ---
-title: DecNumZPRep class
+title: "DecNumZPRep class | QSYS API Reference Guide"
 description: "DecNumZPRep provides methods for interpreting the Acceler8DB &quot;ZPREP&quot; code for packed and zoned decimal data representation, thereby describi"
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 DecNumZPRep provides methods for interpreting the Acceler8DB "ZPREP"

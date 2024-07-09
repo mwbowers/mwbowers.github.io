@@ -1,7 +1,7 @@
 ---
-title: DdsBarcodeFieldTagHelper class
+title: "DdsBarcodeFieldTagHelper class | QSYS API Reference Guide"
 description: "Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Bar"
-last_modified_at: 2024-06-28T18:18:59Z
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Barcode or QR Code pictorial representation.

@@ -1,7 +1,7 @@
 ---
-title: GlobalFlags class
+title: "GlobalFlags class | QSYS API Reference Guide"
 description: "Holds the application flags that correspond to RPG&#39;s %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Holds the application flags that correspond to RPG's %ERROR, not %FOUND, %EOF, and %EQUAL. These flags are local per thread.

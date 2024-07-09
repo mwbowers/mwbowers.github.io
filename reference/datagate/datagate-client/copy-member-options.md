@@ -1,7 +1,7 @@
 ---
-title: CopyMemberOptions enum
+title: "CopyMemberOptions enum | QSYS API Reference Guide"
 description: "Specifies the options for copying members. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Specifies the options for copying members.

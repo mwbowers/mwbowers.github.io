@@ -1,7 +1,7 @@
 ---
-title: EditWord class
+title: "EditWord class | QSYS API Reference Guide"
 description: "EditWord class. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 EditWord class.

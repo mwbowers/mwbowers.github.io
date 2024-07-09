@@ -1,7 +1,7 @@
 ---
-title: InputStreamAggregator class
+title: "InputStreamAggregator class | QSYS API Reference Guide"
 description: "Queue multiple, fixed-length, read-only streams into one stream. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Queue multiple, fixed-length, read-only streams into one stream.

@@ -1,7 +1,7 @@
 ---
-title: CPF9100Exception class
+title: "CPF9100Exception class | QSYS API Reference Guide"
 description: "Defines the core behavior of CPF91xx exceptions. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Defines the core behavior of CPF91xx exceptions.

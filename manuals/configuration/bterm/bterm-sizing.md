@@ -1,6 +1,6 @@
 ---
-title: BTerm Sizing
-description: This document provides guidance on adjusting the size and layout of BTerm windows, including tips for optimizing workspace efficiency and customizing the terminal interface to fit user preferences.
+title: "Optimizing BTerm Window Sizing for Productivity"
+description: "Enhance your workflow with our guide on BTerm window sizing. Learn to adjust and optimize window dimensions for maximum efficiency."
 ---
 
 ## Changing the Terminal Display Size

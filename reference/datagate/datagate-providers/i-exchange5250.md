@@ -1,7 +1,7 @@
 ---
-title: IExchange5250 interface
+title: "IExchange5250 interface | QSYS API Reference Guide"
 description: "Provides an interface for exchanging 5250 data streams. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Provides an interface for exchanging 5250 data streams.

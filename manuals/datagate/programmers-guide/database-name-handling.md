@@ -1,6 +1,6 @@
 ---
-title: Database Name Handling
-description: This document focuses on the methods and best practices for handling database names within applications, including naming conventions, case sensitivity issues, and strategies for avoiding naming conflicts.
+title: "Effective Database Name Handling Techniques"
+description: "This document focuses on the methods and best practices for handling database names within applications, including naming conventions, case sensitivity issues, and strategies for avoiding naming conflicts."
 ---
 
 DG for Visual Studio 2019 is adept at handling the standard "database name" conventions familiar to AVR programmers and users of tools such as DataGate Database Manager. A database name is simply a shorthand notation, redirecting the client-side engine to a set of client/server database connection parameters stored in the system registry. These registry entries can be accessed and manipulated with the [ SourceProfile](source-profile-class.html) object. **SourceProfile** provides the programmer with some of the functionality of DataGate Database Manager’s "Work with Database Names" option. The object constructor and methods [ Register](source-profile-class-register-method.html) and [Unregister](source-profile-class-unregister-method.html) are used to retrieve, persist, and delete respectively, database name registry entries.

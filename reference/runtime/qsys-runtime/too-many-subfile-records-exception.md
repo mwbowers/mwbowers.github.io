@@ -1,7 +1,7 @@
 ---
-title: TooManySubfileRecordsException class
+title: "TooManySubfileRecordsException class | QSYS API Reference Guide"
 description: "Record -rrn- does not fit in subfile -subfile name- on file -filename- exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:50Z
 ---
 
 Record -rrn- does not fit in subfile -subfile name- on file -filename- exception.

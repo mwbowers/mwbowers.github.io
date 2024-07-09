@@ -1,7 +1,7 @@
 ---
-title: TimeAttribute class
+title: "TimeAttribute class | QSYS API Reference Guide"
 description: "Provides Time Attribute (for Properties) "
-last_modified_at: 2024-06-28T18:18:51Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Provides Time Attribute (for Properties)

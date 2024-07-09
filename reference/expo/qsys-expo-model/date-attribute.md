@@ -1,7 +1,7 @@
 ---
-title: DateAttribute class
+title: "DateAttribute class | QSYS API Reference Guide"
 description: "Provides Date Attribute (for Properties) "
-last_modified_at: 2024-06-28T18:18:50Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Provides Date Attribute (for Properties)

@@ -1,6 +1,6 @@
 ---
-title: Programmers Guide
-description: This guide provides programmers with comprehensive information on coding standards, best practices, and tools to enhance productivity and ensure the development of high-quality software.
+title: "DataGate Programmer's Guide: Key Concepts & Tools"
+description: "Unlock the full potential of our platform with this DataGate Programmer's Guide. Learn the key concepts and tools essential for development."
 ---
 
 This section of the documentation contains the basics to assist you in using DG.

@@ -1,6 +1,6 @@
 ---
-title: Translation of Special Characters in Field Names
-description: This document provides guidelines for translating special characters in field names, ensuring compatibility and avoiding errors in database and application interactions.
+title: "Handling Special Characters in Translations"
+description: "Learn to manage special characters in translation fields effectively. This guide offers insights and best practices for accurate translations."
 ---
 
 The valid characters in RPG and DDS include some special characters that have to be translated when migrating to .NET.

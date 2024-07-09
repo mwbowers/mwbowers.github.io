@@ -1,7 +1,7 @@
 ---
-title: OpenFileAdapterDelegate class
+title: "OpenFileAdapterDelegate class | QSYS API Reference Guide"
 description: "Represents the method that will handle the opening of a file adapter. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Represents the method that will handle the opening of a file adapter.

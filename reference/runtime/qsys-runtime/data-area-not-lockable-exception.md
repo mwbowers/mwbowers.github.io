@@ -1,7 +1,7 @@
 ---
-title: DataAreaNotLockableException class
+title: "DataAreaNotLockableException class | QSYS API Reference Guide"
 description: "DataArea Exception issued when a DataArea fails to Unlock. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 DataArea Exception issued when a DataArea fails to Unlock.

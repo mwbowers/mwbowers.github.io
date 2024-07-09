@@ -1,6 +1,6 @@
 ---
-title: Connecting To/From a Database
-description: This document provides a comprehensive guide on establishing connections to and from a database, covering various database systems, connection strings, troubleshooting tips, and best practices for secure and efficient database connectivity.
+title: "Database Connectivity: A Complete Guide"
+description: "Learn how to connect to and from databases with our guide. Covers connection strings, troubleshooting, and secure connectivity practices."
 ---
 
 Database access with DG follows the traditional client/server pattern: 
@@ -20,8 +20,8 @@ Database access with DG follows the traditional client/server pattern:
 
 [AdgConnection Class](adg-connection-class.html)
       <br />
-      [Connecting to a Database Using a Database 
-					Name Property](connectingtoa-database.html)
+      [Connecting to a Database Using a Database Name Property](connectingtoa-database.html)
       <br />
+
 [Disconnecting From a Database](disconnectingfroma-database.html) <br />[Managing Database Connections](managing-database-connections.html)<br />
 

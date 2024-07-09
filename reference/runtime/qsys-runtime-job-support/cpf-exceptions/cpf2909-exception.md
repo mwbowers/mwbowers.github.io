@@ -1,7 +1,7 @@
 ---
-title: CPF2909Exception class
+title: "CPF2909Exception class | QSYS API Reference Guide"
 description: "The exception that is thrown when Error clearing member {0} in file {1} in {2}. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 The exception that is thrown when Error clearing member {0} in file {1} in {2}.

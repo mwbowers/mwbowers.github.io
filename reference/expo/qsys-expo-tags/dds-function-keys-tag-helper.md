@@ -1,7 +1,7 @@
 ---
-title: DdsFunctionKeysTagHelper class
+title: "DdsFunctionKeysTagHelper class | QSYS API Reference Guide"
 description: "Defines Application Aid Key banner "
-last_modified_at: 2024-06-28T18:18:59Z
+last_modified_at: 2024-07-09T17:01:12Z
 ---
 
 Defines Application Aid Key banner

@@ -1,7 +1,7 @@
 ---
-title: RecordAlreadyExistsInSubfileException class
+title: "RecordAlreadyExistsInSubfileException class | QSYS API Reference Guide"
 description: "Record already exists in subfile: -subfile record name- exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:50Z
 ---
 
 Record already exists in subfile: -subfile record name- exception.

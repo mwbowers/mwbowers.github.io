@@ -1,7 +1,7 @@
 ---
-title: FixedTime<T1, T2> struct
+title: "FixedTime<T1, T2> struct | QSYS API Reference Guide"
 description: "Holds a fixed-time value in the specified format and with the given separator. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Holds a fixed-time value in the specified format and with the given separator.

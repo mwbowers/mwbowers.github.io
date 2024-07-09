@@ -1,7 +1,7 @@
 ---
-title: IMODS interface
+title: "IMODS interface | QSYS API Reference Guide"
 description: "Describes the set of operations of a multi-occurrence data structure. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Describes the set of operations of a multi-occurrence data structure.

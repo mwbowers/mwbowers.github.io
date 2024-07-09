@@ -1,7 +1,7 @@
 ---
-title: IOpenAccessReader interface
+title: "IOpenAccessReader interface | QSYS API Reference Guide"
 description: "Defines methods for reading data from an open access channel. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Defines methods for reading data from an open access channel.

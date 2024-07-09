@@ -1,7 +1,7 @@
 ---
-title: _Dot interface
+title: "_Dot interface | QSYS API Reference Guide"
 description: "Describes the Dot (.) as date/time separator in the declaration of date/time types. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 sitemap: false
 ---
 

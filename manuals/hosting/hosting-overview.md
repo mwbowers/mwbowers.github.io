@@ -1,8 +1,7 @@
 ---
-title: Hosting a Monarch Application
-description: Embark on the journey of hosting a Monarch Application with our detailed guide. Tailored for developers, system administrators, and IT professionals, this guide demystifies the process of deploying and managing a Monarch Application. Whether you're new to hosting or looking to optimize your current setup, our resource offers valuable insights into selecting the right hosting platform, configuring servers, ensuring high availability, and maintaining security standards. Discover best practices for scaling your application, managing data effectively, and providing a seamless user experience. Our guide ensures you have the knowledge and tools to successfully host your Monarch Application, keeping it secure, fast, and reliable for your users.
+title: "Web Hosting Overview: Key Concepts & Tips"
+description: "Get a comprehensive overview of web hosting. Learn key concepts, tips, and best practices to host your website effectively."
 ---
-
 
 There are two main types of applications:
  - Interactive

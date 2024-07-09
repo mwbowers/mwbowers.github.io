@@ -1,7 +1,7 @@
 ---
-title: AdgDataSet class
+title: "AdgDataSet class | QSYS API Reference Guide"
 description: "A DataGate-compatible DataSet class for record-oriented database access. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 A DataGate-compatible DataSet class for record-oriented database access.

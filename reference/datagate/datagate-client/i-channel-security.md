@@ -1,7 +1,7 @@
 ---
-title: IChannelSecurity interface
+title: "IChannelSecurity interface | QSYS API Reference Guide"
 description: "Defines the contract for managing security in the ASNA DataGate client&#39;s communication channel. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Defines the contract for managing security in the ASNA DataGate client's communication channel.

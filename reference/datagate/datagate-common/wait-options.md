@@ -1,7 +1,7 @@
 ---
-title: WaitOptions enum
+title: "WaitOptions enum | QSYS API Reference Guide"
 description: "Specifies the wait options for a process or operation. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Specifies the wait options for a process or operation.

@@ -1,6 +1,6 @@
 ---
-title: Accessing a File Using the FileAdapter Class
-description: This document explains how to access files using the FileAdapter class, detailing the methods available for file operations such as reading, writing, and managing file metadata.
+title: "Mastering DataGate File Adapter Class"
+description: "This document explains how to access files using the FileAdapter class, detailing the methods available for file operations such as reading, writing, and managing file metadata."
 ---
 
 The [ASNA.DataGate.Client.FileAdapter](file-adapter-class.html) class is the entry point for data access in DG. **FileAdapter** consists of a reference to an [AdgConnection](adg-connection-class.html) object and a set of path strings naming the database file being accessed. **FileAdapter** methods allow the standard set of access functions including reading, writing, updating, and deleting file records. It also contains several properties defining constraints on the access to be performed on the file. These properties, such as the [ AccessMode](file-adapter-class-access-mode-property.html) property, should be set prior to opening the file.

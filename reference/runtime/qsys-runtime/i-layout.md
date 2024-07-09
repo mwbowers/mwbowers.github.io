@@ -1,7 +1,7 @@
 ---
-title: ILayout interface
+title: "ILayout interface | QSYS API Reference Guide"
 description: "Defines operations for objects describing fields in a data structure. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Defines operations for objects describing fields in a data structure.

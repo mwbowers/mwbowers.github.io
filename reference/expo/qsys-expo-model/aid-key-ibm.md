@@ -1,7 +1,7 @@
 ---
-title: AidKeyIBM enum
+title: "AidKeyIBM enum | QSYS API Reference Guide"
 description: "Specifies the IBM i Attention Key (AID) hex code "
-last_modified_at: 2024-06-28T18:18:50Z
+last_modified_at: 2024-07-09T17:01:01Z
 ---
 
 Specifies the IBM i Attention Key (AID) hex code

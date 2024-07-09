@@ -1,7 +1,7 @@
 ---
-title: SqlPreparedStatement class
+title: "SqlPreparedStatement class | QSYS API Reference Guide"
 description: "Used to implement SQL PREPARE statements. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Used to implement SQL PREPARE statements.

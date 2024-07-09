@@ -1,7 +1,7 @@
 ---
-title: NewActivationGroupAttribute class
+title: "NewActivationGroupAttribute class | QSYS API Reference Guide"
 description: "Defines the special Attribute used to mark a program or service program class for it to be activated in a brand new Activation Group. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Defines the special Attribute used to mark a program or service program class for it to be activated in a brand new Activation Group.

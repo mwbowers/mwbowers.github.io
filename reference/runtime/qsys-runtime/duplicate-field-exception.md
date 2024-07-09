@@ -1,7 +1,7 @@
 ---
-title: DuplicateFieldException class
+title: "DuplicateFieldException class | QSYS API Reference Guide"
 description: "Field -field- was specified more than once in -specification- exception. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Field -field- was specified more than once in -specification- exception.

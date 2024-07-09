@@ -1,7 +1,7 @@
 ---
-title: XmlInfoMsgType enum
+title: "XmlInfoMsgType enum | QSYS API Reference Guide"
 description: "Enum representing various types of XML information messages. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 Enum representing various types of XML information messages.

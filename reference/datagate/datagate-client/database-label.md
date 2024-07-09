@@ -1,7 +1,7 @@
 ---
-title: DatabaseLabel class
+title: "DatabaseLabel class | QSYS API Reference Guide"
 description: "The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment. "
-last_modified_at: 2024-06-28T18:18:27Z
+last_modified_at: 2024-07-09T17:00:40Z
 ---
 
 The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment.

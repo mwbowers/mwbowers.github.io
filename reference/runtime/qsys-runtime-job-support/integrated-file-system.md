@@ -1,7 +1,7 @@
 ---
-title: IntegratedFileSystem class
+title: "IntegratedFileSystem class | QSYS API Reference Guide"
 description: "Holds the Integrated File System (IFS) root folder. "
-last_modified_at: 2024-06-28T18:18:37Z
+last_modified_at: 2024-07-09T17:00:49Z
 ---
 
 Holds the Integrated File System (IFS) root folder.
