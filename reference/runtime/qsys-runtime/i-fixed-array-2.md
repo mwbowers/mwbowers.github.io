@@ -1,7 +1,7 @@
 ---
-title: "IFixedArray<T1, T2> interface | QSYS API Reference Guide"
+title: "IFixedArray&lt;T1, T2&gt; interface | QSYS API Reference Guide"
 description: "Describes the minimum functionality of a free-standing fixed sized array. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
 Describes the minimum functionality of a free-standing fixed sized array.

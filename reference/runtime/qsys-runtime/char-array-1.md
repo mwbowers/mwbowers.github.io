@@ -1,7 +1,7 @@
 ---
-title: "CharArray<T> struct | QSYS API Reference Guide"
+title: "CharArray&lt;T&gt; struct           | QSYS API Reference Guide"
 description: "Represents a unidimensional fixed-size array of characters. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
 Represents a unidimensional fixed-size array of characters.

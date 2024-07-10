@@ -1,7 +1,7 @@
 ---
-title: "FixedStringArray<T1, T2> struct | QSYS API Reference Guide"
+title: "FixedStringArray&lt;T1, T2&gt; struct"
 description: "Defines the functionality of a fixed-sized unidimensional array of FixedString elements. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedString elements.

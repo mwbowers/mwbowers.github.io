@@ -1,7 +1,7 @@
 ---
-title: "FixedDate<T1, T2> struct | QSYS API Reference Guide"
+title: "FixedDate&lt;T1, T2&gt; struct      | QSYS API Reference Guide"
 description: "Holds a fixed-date value in the specified format and with the given separator. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
 Holds a fixed-date value in the specified format and with the given separator.

@@ -1,7 +1,7 @@
 ---
 title: "FixedDecimalArray&lt;T1, T2, T3&gt; struct"
 description: "Defines the functionality of a fixed-sized unidimensional array of FixedDecimal elements. "
-last_modified_at: 2024-07-10T15:31:10Z
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedDecimal elements.
