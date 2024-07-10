@@ -1,9 +1,10 @@
 ---
-title: "FileAdapter class | QSYS API Reference Guide"
-last_modified_at: 2024-07-09T17:00:40Z
+title: "FileAdapter class             | QSYS API Reference Guide"
+description: "The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings. "
+last_modified_at: 2024-07-10T21:20:15Z
 ---
 
-
+The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings.
 
 **Namespace:** ASNA.DataGate.Client
 **Assembly:** ASNA.QSys.DataGate.Client.dll

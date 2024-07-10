@@ -1,10 +1,10 @@
 ---
 title: "DdsTableColumnTagHelper class | QSYS API Reference Guide"
-description: "Defines a Table Column "
-last_modified_at: 2024-07-09T17:01:12Z
+description: "Defines one of the many Table Columns within a DdsTableRow. "
+last_modified_at: 2024-07-10T21:34:30Z
 ---
 
-Defines a Table Column
+Defines one of the many Table Columns within a DdsTableRow.
 
 **Namespace:** ASNA.QSys.Expo.Tags
 **Assembly:** ASNA.QSys.Expo.Tags.dll

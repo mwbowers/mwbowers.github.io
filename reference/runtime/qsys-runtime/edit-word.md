@@ -1,10 +1,10 @@
 ---
-title: "EditWord class | QSYS API Reference Guide"
-description: "EditWord class. "
-last_modified_at: 2024-07-09T17:00:49Z
+title: "EditWord class                | QSYS API Reference Guide"
+description: "Provides methods for applying edit word parameters to numeric values, including formatting and manipulating the output string based on specified patte"
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
-EditWord class.
+Provides methods for applying edit word parameters to numeric values, including formatting and manipulating the output string based on specified patterns.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll

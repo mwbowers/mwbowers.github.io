@@ -1,10 +1,10 @@
 ---
-title: "DdsTableTagHelper class | QSYS API Reference Guide"
-description: "Defines a Subfile Table "
-last_modified_at: 2024-07-09T17:01:12Z
+title: "DdsTableTagHelper class       | QSYS API Reference Guide"
+description: "Defines a Subfile Table to be rendered as a standard Table. "
+last_modified_at: 2024-07-10T21:34:30Z
 ---
 
-Defines a Subfile Table
+Defines a Subfile Table to be rendered as a standard Table.
 
 **Namespace:** ASNA.QSys.Expo.Tags
 **Assembly:** ASNA.QSys.Expo.Tags.dll

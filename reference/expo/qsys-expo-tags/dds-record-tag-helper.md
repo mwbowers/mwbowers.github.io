@@ -1,10 +1,10 @@
 ---
-title: "DdsRecordTagHelper class | QSYS API Reference Guide"
-description: "Defines a Display record "
-last_modified_at: 2024-07-09T17:01:12Z
+title: "DdsRecordTagHelper class      | QSYS API Reference Guide"
+description: "Defines a Display record where fields or constants are contained to display application data. "
+last_modified_at: 2024-07-10T21:34:30Z
 ---
 
-Defines a Display record
+Defines a Display record where fields or constants are contained to display application data.
 
 **Namespace:** ASNA.QSys.Expo.Tags
 **Assembly:** ASNA.QSys.Expo.Tags.dll

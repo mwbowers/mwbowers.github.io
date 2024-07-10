@@ -1,10 +1,10 @@
 ---
-title: "RpgTypeExtensions class | QSYS API Reference Guide"
-description: "RpgTypeExtensions class. "
-last_modified_at: 2024-07-09T17:00:50Z
+title: "RpgTypeExtensions class       | QSYS API Reference Guide"
+description: "Provides extension methods for RPG types, including methods for moving and manipulating fixed-length strings and decimal numbers. "
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
-RpgTypeExtensions class.
+Provides extension methods for RPG types, including methods for moving and manipulating fixed-length strings and decimal numbers.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
