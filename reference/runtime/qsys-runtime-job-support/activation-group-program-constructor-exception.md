@@ -1,7 +1,7 @@
 ---
-title: "ActivationGroupProgramConstructorException class | QSYS API Reference Guide"
+title: "ActivationGroupProgramConstructorException class"
 description: "The exception that is thrown when a program could not be constructed. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T15:31:10Z
 ---
 
 The exception that is thrown when a program could not be constructed.

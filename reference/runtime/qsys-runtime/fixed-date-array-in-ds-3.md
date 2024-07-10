@@ -1,7 +1,7 @@
 ---
-title: "FixedDateArrayInDS<T1, T2, T3> struct | QSYS API Reference Guide"
+title: "FixedDateArrayInDS&lt;T1, T2, T3&gt; struct"
 description: "Describes a fixed size array of FixedDate contained in a DataStructure. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T15:31:10Z
 ---
 
 Describes a fixed size array of FixedDate contained in a DataStructure.

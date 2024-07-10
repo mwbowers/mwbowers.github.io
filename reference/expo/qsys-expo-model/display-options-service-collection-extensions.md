@@ -1,7 +1,7 @@
 ---
-title: "DisplayOptionsServiceCollectionExtensions class | QSYS API Reference Guide"
+title: "DisplayOptionsServiceCollectionExtensions class"
 description: "Provides helper class to assist server configuration "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-10T15:33:55Z
 ---
 
 Provides helper class to assist server configuration

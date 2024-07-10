@@ -1,7 +1,7 @@
 ---
-title: "FixedTimeArray<T1, T2, T3> struct | QSYS API Reference Guide"
+title: "FixedTimeArray&lt;T1, T2, T3&gt; struct"
 description: "Defines the functionality of a fixed-sized unidimensional array of FixedTime elements. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T15:31:10Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedTime elements.

@@ -1,7 +1,7 @@
 ---
-title: "InvalidCodePageForVirtualTerminalException class | QSYS API Reference Guide"
+title: "InvalidCodePageForVirtualTerminalException class"
 description: "Code page 0 is not valid when starting interactive job without server support. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T15:31:10Z
 ---
 
 Code page 0 is not valid when starting interactive job without server support.
