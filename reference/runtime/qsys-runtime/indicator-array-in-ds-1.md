@@ -1,7 +1,7 @@
 ---
-title: "IndicatorArrayInDS<T> struct | QSYS API Reference Guide"
+title: "IndicatorArrayInDS&lt;T&gt; struct  | QSYS API Reference Guide"
 description: "Describes a fixed size array of Indicators contained in a DataStructure. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
 Describes a fixed size array of Indicators contained in a DataStructure.

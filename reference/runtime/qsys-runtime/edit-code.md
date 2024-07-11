@@ -1,10 +1,10 @@
 ---
-title: "EditCode class | QSYS API Reference Guide"
-description: "EditCode class. "
-last_modified_at: 2024-07-09T17:00:49Z
+title: "EditCode class                | QSYS API Reference Guide"
+description: "Provides methods for applying and manipulating edit codes, which define output formatting patterns for business numeric data. "
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
-EditCode class.
+Provides methods for applying and manipulating edit codes, which define output formatting patterns for business numeric data.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll

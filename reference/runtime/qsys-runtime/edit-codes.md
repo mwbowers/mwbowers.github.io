@@ -1,10 +1,10 @@
 ---
-title: "EditCodes enum | QSYS API Reference Guide"
-description: "Edit Codes. "
-last_modified_at: 2024-07-09T17:00:49Z
+title: "EditCodes enum                | QSYS API Reference Guide"
+description: "Name of Edit-Codes which define output formatting patterns for business numeric data. "
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
-Edit Codes.
+Name of Edit-Codes which define output formatting patterns for business numeric data.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll

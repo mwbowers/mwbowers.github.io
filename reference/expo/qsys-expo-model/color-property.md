@@ -1,10 +1,10 @@
 ---
-title: "ColorProperty class | QSYS API Reference Guide"
-description: "Defines ColorProperty "
-last_modified_at: 2024-07-09T17:01:01Z
+title: "ColorProperty class           | QSYS API Reference Guide"
+description: "Defines ColorProperty. Encapsulates the name of a color to be use when rendering fields and constants. "
+last_modified_at: 2024-07-10T21:34:04Z
 ---
 
-Defines ColorProperty
+Defines ColorProperty. Encapsulates the name of a color to be use when rendering fields and constants.
 
 **Namespace:** ASNA.QSys.Expo.Model
 **Assembly:** ASNA.QSys.Expo.Model.dll

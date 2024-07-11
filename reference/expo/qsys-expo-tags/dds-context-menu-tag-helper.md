@@ -1,10 +1,10 @@
 ---
 title: "DdsContextMenuTagHelper class | QSYS API Reference Guide"
-description: "Defines a Context Menu. "
-last_modified_at: 2024-07-09T17:01:12Z
+description: "Defines a Context Menu container. Children elements define its options. "
+last_modified_at: 2024-07-10T21:34:30Z
 ---
 
-Defines a Context Menu.
+Defines a Context Menu container. Children elements define its options.
 
 **Namespace:** ASNA.QSys.Expo.Tags
 **Assembly:** ASNA.QSys.Expo.Tags.dll

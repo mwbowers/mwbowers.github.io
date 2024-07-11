@@ -1,10 +1,10 @@
 ---
-title: "Limits enum | QSYS API Reference Guide"
-description: "Defines decimal limits. "
-last_modified_at: 2024-07-09T17:00:49Z
+title: "Limits enum                   | QSYS API Reference Guide"
+description: "Defines the maximum limits for decimal values, including the maximum number of digits, integral digits, and decimal positions. "
+last_modified_at: 2024-07-10T21:22:30Z
 ---
 
-Defines decimal limits.
+Defines the maximum limits for decimal values, including the maximum number of digits, integral digits, and decimal positions.
 
 **Namespace:** ASNA.QSys.Runtime
 **Assembly:** ASNA.QSys.Runtime.dll
