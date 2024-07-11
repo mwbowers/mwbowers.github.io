@@ -61,8 +61,8 @@ Remember to refer to the individual class documentation for specific details abo
 | [DuplicateFieldException](/reference/runtime/qsys-runtime/duplicate-field-exception.html) | Field -field- was specified more than once in -specification- exception. |
 | [DynamicCaller](/reference/runtime/qsys-runtime/dynamic-caller.html) | Support for CALLD as a dynamic call. |
 | [DynamicReferenceAttribute](/reference/runtime/qsys-runtime/dynamic-reference-attribute.html) | Declares an assembly to be used as a dynamic reference, which will be queried at runtime to find CALLD targets. |
-| [EditCode](/reference/runtime/qsys-runtime/edit-code.html) | EditCode class. |
-| [EditWord](/reference/runtime/qsys-runtime/edit-word.html) | EditWord class. |
+| [EditCode](/reference/runtime/qsys-runtime/edit-code.html) | Provides methods for applying and manipulating edit codes, which define output formatting patterns for business numeric data. |
+| [EditWord](/reference/runtime/qsys-runtime/edit-word.html) | Provides methods for applying edit word parameters to numeric values, including formatting and manipulating the output string based on specified patterns. |
 | [EndOperationException](/reference/runtime/qsys-runtime/end-operation-exception.html) | Defines the core behavior of the the base class that is thrown to unwind the program call stack. |
 | [EndRequestException](/reference/runtime/qsys-runtime/end-request-exception.html) | The exception that is thrown for an EndRequest operation. |
 | [FieldNotFoundException](/reference/runtime/qsys-runtime/field-not-found-exception.html) | -Field name- was not found in format -record format name- of -filename-. |
@@ -73,7 +73,7 @@ Remember to refer to the individual class documentation for specific details abo
 | [FixedDateMethods](/reference/runtime/qsys-runtime/fixed-date-methods.html) | Contains extension methods for handling RPG operations for FixedDate values. |
 | [FixedDecimalMethods](/reference/runtime/qsys-runtime/fixed-decimal-methods.html) | Contains extension methods for handling RPG operations for FixedDecimal values. |
 | [FixedDecimalTypeAttribute](/reference/runtime/qsys-runtime/fixed-decimal-type-attribute.html) | A non-RPG class may stamp a decimal member with this attribute to be considered as a fixed-sized decimal field by a consumer RPG program. |
-| [FixedStringComparer](/reference/runtime/qsys-runtime/fixed-string-comparer.html) | FixedString Comparer. |
+| [FixedStringComparer](/reference/runtime/qsys-runtime/fixed-string-comparer.html) | Provides a comparer for fixed-length strings, allowing for consistent comparison of strings with fixed lengths. |
 | [FixedStringMethods](/reference/runtime/qsys-runtime/fixed-string-methods.html) | Contains extension methods for handling RPG operations for FixedString values. |
 | [FixedTimeMethods](/reference/runtime/qsys-runtime/fixed-time-methods.html) | Contains extension methods for handling RPG operations for FixedTime values. |
 | [FixedTimeStampMethods](/reference/runtime/qsys-runtime/fixed-time-stamp-methods.html) | Contains extension methods for handling RPG operations for FixedTimestamp values. |
@@ -139,7 +139,7 @@ Remember to refer to the individual class documentation for specific details abo
 | [RowAddedEventHandler](/reference/runtime/qsys-runtime/row-added-event-handler.html) | Event raised when a row was added to a subfile. |
 | [RowInsertedEventArgs](/reference/runtime/qsys-runtime/row-inserted-event-args.html) | Holds information that the RowInsertedEvent requires. |
 | [RowInsertedEventHandler](/reference/runtime/qsys-runtime/row-inserted-event-handler.html) | Event raised when a row was inserted in a subfile. |
-| [RpgTypeExtensions](/reference/runtime/qsys-runtime/rpg-type-extensions.html) | RpgTypeExtensions class. |
+| [RpgTypeExtensions](/reference/runtime/qsys-runtime/rpg-type-extensions.html) | Provides extension methods for RPG types, including methods for moving and manipulating fixed-length strings and decimal numbers. |
 | [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html) | Base class for all ASNA QSys Runtime generated exceptions. |
 | [StringMethods](/reference/runtime/qsys-runtime/string-methods.html) | Contains extension methods for handling RPG operations and conversions for string values. |
 | [StringOps](/reference/runtime/qsys-runtime/string-ops.html) | Provide fixed length character string storage and operations. |

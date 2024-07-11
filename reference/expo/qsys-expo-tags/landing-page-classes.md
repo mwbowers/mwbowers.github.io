@@ -40,7 +40,7 @@ Developers working with the ASNA QSys system should familiarize themselves with 
 | [DdsCharFieldTagHelper](/reference/expo/qsys-expo-tags/dds-char-field-tag-helper.html) | Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value entered into a field.  |
 | [DdsCheckboxFieldTagHelper](/reference/expo/qsys-expo-tags/dds-checkbox-field-tag-helper.html) | Defines a toggle two-state input element. |
 | [DdsConstantTagHelper](/reference/expo/qsys-expo-tags/dds-constant-tag-helper.html) | Defines an constant label. |
-| [DdsContextMenuTagHelper](/reference/expo/qsys-expo-tags/dds-context-menu-tag-helper.html) | Defines a Context Menu. |
+| [DdsContextMenuTagHelper](/reference/expo/qsys-expo-tags/dds-context-menu-tag-helper.html) | Defines a Context Menu container. Children elements define its options. |
 | [DdsDateFieldTagHelper](/reference/expo/qsys-expo-tags/dds-date-field-tag-helper.html) | Defines an input element to capture Dates. |
 | [DdsDecDateFieldTagHelper](/reference/expo/qsys-expo-tags/dds-dec-date-field-tag-helper.html) | Defines an input element to capture Dates for fields defined as decimal values. |
 | [DdsDecFieldTagHelper](/reference/expo/qsys-expo-tags/dds-dec-field-tag-helper.html) | Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field.  |
@@ -50,16 +50,16 @@ Developers working with the ASNA QSys system should familiarize themselves with 
 | [DdsFunctionKeysTagHelper](/reference/expo/qsys-expo-tags/dds-function-keys-tag-helper.html) | Defines Application Aid Key banner |
 | [DdsGridRowTagHelper](/reference/expo/qsys-expo-tags/dds-grid-row-tag-helper.html) | Defines a Page Row where elements are positioned |
 | [DdsHostFileTagHelper](/reference/expo/qsys-expo-tags/dds-host-file-tag-helper.html) | Renders a file stored on the Host server. |
-| [DdsMenuOptionTagHelper](/reference/expo/qsys-expo-tags/dds-menu-option-tag-helper.html) | Defines a Context Menu Option |
+| [DdsMenuOptionTagHelper](/reference/expo/qsys-expo-tags/dds-menu-option-tag-helper.html) | Defines a Context Menu Option. DdsMenuOptions on a DdsContextMenu container define actions identified by AidKeys. |
 | [DdsMessagePanelTagHelper](/reference/expo/qsys-expo-tags/dds-message-panel-tag-helper.html) | Provides a placeholder for Page messages. |
 | [DdsRadioButtonGroupFieldTagHelper](/reference/expo/qsys-expo-tags/dds-radio-button-group-field-tag-helper.html) | Defines a group of radio-button elements. |
-| [DdsRecordTagHelper](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html) | Defines a Display record |
+| [DdsRecordTagHelper](/reference/expo/qsys-expo-tags/dds-record-tag-helper.html) | Defines a Display record where fields or constants are contained to display application data. |
 | [DdsSignatureTagHelper](/reference/expo/qsys-expo-tags/dds-signature-tag-helper.html) | Defines an element where a signature can be captured |
 | [DdsSubfileControlTagHelper](/reference/expo/qsys-expo-tags/dds-subfile-control-tag-helper.html) | Defines a Subfile Controller element |
 | [DdsSubfileRecordTagHelper](/reference/expo/qsys-expo-tags/dds-subfile-record-tag-helper.html) | Defines a Subfile record element |
-| [DdsTableColumnTagHelper](/reference/expo/qsys-expo-tags/dds-table-column-tag-helper.html) | Defines a Table Column |
-| [DdsTableRowTagHelper](/reference/expo/qsys-expo-tags/dds-table-row-tag-helper.html) | Defines a Subfile Row |
-| [DdsTableTagHelper](/reference/expo/qsys-expo-tags/dds-table-tag-helper.html) | Defines a Subfile Table |
+| [DdsTableColumnTagHelper](/reference/expo/qsys-expo-tags/dds-table-column-tag-helper.html) | Defines one of the many Table Columns within a DdsTableRow. |
+| [DdsTableRowTagHelper](/reference/expo/qsys-expo-tags/dds-table-row-tag-helper.html) | Defines a Subfile Row to be rendered as a standard Table line. |
+| [DdsTableTagHelper](/reference/expo/qsys-expo-tags/dds-table-tag-helper.html) | Defines a Subfile Table to be rendered as a standard Table. |
 | [DdsTimeFieldTagHelper](/reference/expo/qsys-expo-tags/dds-time-field-tag-helper.html) | Defines an input element to capture Times. |
 | [FieldBase](/reference/expo/qsys-expo-tags/field-base.html) | Provides common methods for DdsFields and DdsConstants. |
 | [RecordBaseTagHelper](/reference/expo/qsys-expo-tags/record-base-tag-helper.html) | Provides common properties for DdsRecords |

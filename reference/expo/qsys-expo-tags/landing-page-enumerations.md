@@ -30,4 +30,4 @@ Developers working with the ASNA QSys system should familiarize themselves with 
 | [InteractionStyles](/reference/expo/qsys-expo-tags/interaction-styles.html) | Determines how the user interacts with the component. |
 | [LeftPadOption](/reference/expo/qsys-expo-tags/left-pad-option.html) | Describes the Left padding option. |
 | [NumericValueStyles](/reference/expo/qsys-expo-tags/numeric-value-styles.html) | Sets or gets the named style used when the InteractionStyle is Slider, indicating the position of the numeric input display. |
-| [SpanStyles](/reference/expo/qsys-expo-tags/span-styles.html) |  |
+| [SpanStyles](/reference/expo/qsys-expo-tags/span-styles.html) | Defines the styles for the span of the grid row. |

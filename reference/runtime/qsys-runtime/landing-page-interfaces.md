@@ -43,7 +43,7 @@ Remember to refer to the individual interface documentation for specific details
 | [IDateTimeSeparator](/reference/runtime/qsys-runtime/i-date-time-separator.html) | Base interface for interfaces used as date/time separators in the declaration of date/time types. |
 | [IDigit](/reference/runtime/qsys-runtime/i-digit.html) | Interface that identifies a subset of length type arguments that represent digits, from 0 to 9. |
 | [IDim](/reference/runtime/qsys-runtime/i-dim.html) | Interface that identifies types to be used as dimension type arguments in fixed array declarations. |
-| [IDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html) | Display File Interface. |
+| [IDisplayFile](/reference/runtime/qsys-runtime/i-display-file.html) | Defines the interface for display files, providing methods and properties for interacting with display file records and formats. |
 | [IDS](/reference/runtime/qsys-runtime/ids.html) | Defines the basic set of operations for a data structure. |
 | [IDSArrayField](/reference/runtime/qsys-runtime/ids-array-field.html) | Describes the common operations for an array field in a Data Structure. |
 | [IDSCallParm](/reference/runtime/qsys-runtime/ids-call-parm.html) | This interface should be implemented by any DataStructure class if an object of its type will be passed as a parameter to a program in the IBMi. |

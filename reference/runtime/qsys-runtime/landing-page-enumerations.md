@@ -24,10 +24,10 @@ Remember to refer to the individual enumeration documentation for specific detai
 | [DbcsType](/reference/runtime/qsys-runtime/dbcs-type.html) | Defines values that describe the kind of DBCS character string of a DBCS field. |
 | [DecimalKind](/reference/runtime/qsys-runtime/decimal-kind.html) | Indicates the kind of decimal field. |
 | [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | Describes the valid durations to use in date/time operations. |
-| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | Edit Codes. |
+| [EditCodes](/reference/runtime/qsys-runtime/edit-codes.html) | Name of Edit-Codes which define output formatting patterns for business numeric data. |
 | [InfSrReturnPoint](/reference/runtime/qsys-runtime/inf-sr-return-point.html) | Defines the possible execution state where the program cycle is at any given time. |
 | [LayoutType](/reference/runtime/qsys-runtime/layout-type.html) | Contains enumeration values to identify the type of data in a layout. |
-| [Limits](/reference/runtime/qsys-runtime/limits.html) | Defines decimal limits. |
+| [Limits](/reference/runtime/qsys-runtime/limits.html) | Defines the maximum limits for decimal values, including the maximum number of digits, integral digits, and decimal positions. |
 | [NameStoreOptions](/reference/runtime/qsys-runtime/name-store-options.html) | Defines flags that tell the name store which name sources to use. |
 | [OpenAccessDspF](/reference/runtime/qsys-runtime/open-access-dsp-f.html) | Enumerates the various supported files for Open Access RPG. |
 | [Routine](/reference/runtime/qsys-runtime/routine.html) | Specifies the type of Cycle routine to call. |

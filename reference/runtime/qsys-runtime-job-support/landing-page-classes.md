@@ -61,7 +61,7 @@ This namespace is crucial for developers working with ASNA, as it provides the n
 | [LDAOffsetException](/reference/runtime/qsys-runtime-job-support/lda-offset-exception.html) | The exception that is thrown when a field being get or set from the LDA has a negative offset. |
 | [LocalDataCollection](/reference/runtime/qsys-runtime-job-support/local-data-collection.html) | Represents a versioned collection of name/value pairs. |
 | [Message](/reference/runtime/qsys-runtime-job-support/message.html) | Represent a message sent by a program. |
-| [MessageBase](/reference/runtime/qsys-runtime-job-support/message-base.html) | Defines a message  |
+| [MessageBase](/reference/runtime/qsys-runtime-job-support/message-base.html) | Represents a base class for messages, providing properties and methods for message text, cause, recovery suggestions, and logging functionality. |
 | [MessageFormatter](/reference/runtime/qsys-runtime-job-support/message-formatter.html) | Provides functionality to format a message. |
 | [MessageQueue](/reference/runtime/qsys-runtime-job-support/message-queue.html) | Holds a group of messages in a queue. |
 | [MessageQueueNotFoundException](/reference/runtime/qsys-runtime-job-support/message-queue-not-found-exception.html) | The exception that is thrown when a program message queue is not found in the invocation stack. |

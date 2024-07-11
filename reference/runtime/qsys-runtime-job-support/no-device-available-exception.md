@@ -1,7 +1,7 @@
 ---
-title: "NoDeviceAvailableException class | QSYS API Reference Guide"
+title: "NoDeviceAvailableException class"
 description: "The exception that is thrown when an operation is attempted when the job is not attached to a device. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-11T16:06:07Z
 ---
 
 The exception that is thrown when an operation is attempted when the job is not attached to a device.

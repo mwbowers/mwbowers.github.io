@@ -31,7 +31,7 @@ Developers working with the ASNA QSys system should familiarize themselves with 
 | [ByteAttribute](/reference/expo/qsys-expo-model/byte-attribute.html) | Provides Byte Attributes (for Properties) |
 | [CallHostSpecs](/reference/expo/qsys-expo-model/call-host-specs.html) | Defines CallHostSpecs class |
 | [CharAttribute](/reference/expo/qsys-expo-model/char-attribute.html) | Provides Char Attributes (for Properties) |
-| [ColorProperty](/reference/expo/qsys-expo-model/color-property.html) | Defines ColorProperty |
+| [ColorProperty](/reference/expo/qsys-expo-model/color-property.html) | Defines ColorProperty. Encapsulates the name of a color to be use when rendering fields and constants. |
 | [Command](/reference/expo/qsys-expo-model/command.html) | Provides functionality to interact directly with a Job. |
 | [ConditionalProperty](/reference/expo/qsys-expo-model/conditional-property.html) | Defines a ConditionalProperty |
 | [ConditionalValue](/reference/expo/qsys-expo-model/conditional-value.html) | Defines ConditionalValue class |
