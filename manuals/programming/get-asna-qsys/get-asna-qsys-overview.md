@@ -18,6 +18,8 @@ There are two main ways to get ahold of the NuGet packages:
 ## Accessing ASNA QSys NuGet Packages on GitHub
 The NuGet packages are available at [GitHub](https://github.com/orgs/asnaqsys/packages). In order to download them from this location you will need to have access to the AsnaQSys repository. Contact ASNA to be added to the ASNA QSys organization on the customer team.
 
+In addition to the GA packages on the main GitHub repository, there is also a channel available to obtain [**BETA** versions](https://github.com/orgs/asnaqsys-beta/packages) of the packages. Once again, please contact ASNA to obtain access to this channel.
+
 Most developers will be using Visual Studio for their projects.  Visual Studio can be configured to directly access the NuGet packages.
 
 ## Configure Visual Studio with GitHub NuGet Packages
